@@ -1,0 +1,4 @@
+<
+<  decltype(outer::middle::inner()) a3
+public:
+  Foo 

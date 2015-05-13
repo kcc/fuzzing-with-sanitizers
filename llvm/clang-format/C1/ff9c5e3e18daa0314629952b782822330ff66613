@@ -1,0 +1,1 @@
+,constexpr char32_t c32 = get(Õ"test\0\\\"\

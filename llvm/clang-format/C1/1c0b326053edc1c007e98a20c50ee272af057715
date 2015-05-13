@@ -1,0 +1,2 @@
+void testRefParam2() {
+int decltype(foo())::i; // expected-error

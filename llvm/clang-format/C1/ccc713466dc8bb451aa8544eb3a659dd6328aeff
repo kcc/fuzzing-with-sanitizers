@@ -1,0 +1,3 @@
+  if (Arg.getAsInteger(0, Value))
+    while (true) {
+     << "}\

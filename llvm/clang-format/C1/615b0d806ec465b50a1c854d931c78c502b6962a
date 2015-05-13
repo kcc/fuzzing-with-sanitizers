@@ -1,0 +1,1 @@
+    return (Twine("Matcher<") +Inner + ">").    delete (sp + t0

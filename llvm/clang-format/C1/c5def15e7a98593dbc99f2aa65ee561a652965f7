@@ -1,0 +1,2 @@
+   }
+namespace  inline namespace N*IL {} // :expected-error

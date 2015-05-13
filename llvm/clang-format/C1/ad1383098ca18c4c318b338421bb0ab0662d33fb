@@ -1,0 +1,2 @@
+        std::wstringbuf buf1(L"testing", std::ios_base::out);
+  

@@ -1,0 +1,2 @@
+STATISTIC(NumCallsAnalyzed, "Number of call sites analyzed");
+  

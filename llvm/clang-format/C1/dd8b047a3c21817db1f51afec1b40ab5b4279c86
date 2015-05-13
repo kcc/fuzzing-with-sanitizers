@@ -1,0 +1,2 @@
+
+ for (int i = 4; i < 12; i++) argv[0][i] = argv[0]

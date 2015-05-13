@@ -1,0 +1,3 @@
+      ++I;
+      if (VD->getName() == "self")
+#include "clang/Ba

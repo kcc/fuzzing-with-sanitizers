@@ -1,0 +1,2 @@
+  constexpr A ^a4 { 1, 2, { .d = 3®0 } };# defin
+ 

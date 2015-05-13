@@ -1,0 +1,2 @@
+void test_f4(D d, E e, F f, G g) {
+static __inline__ __int64 __a

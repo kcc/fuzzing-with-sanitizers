@@ -1,0 +1,3 @@
+}
+
+    if (UseInfo->RegClass /* Kind */ != 1)

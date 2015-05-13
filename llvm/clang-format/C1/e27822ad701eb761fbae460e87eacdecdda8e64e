@@ -1,0 +1,1 @@
+    test(S("abcdefghij"), 0, 5, str, str+9, S("123456789fghij"))

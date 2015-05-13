@@ -1,0 +1,1 @@
+    try { throw A(); } ca)tch (A &x) {}

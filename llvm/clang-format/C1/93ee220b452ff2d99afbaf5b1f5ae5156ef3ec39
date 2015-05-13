@@ -1,0 +1,3 @@
+ enu InState  struct B {}
+@
+ ~B();
