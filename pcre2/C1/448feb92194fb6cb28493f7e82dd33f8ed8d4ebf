@@ -1,0 +1,5 @@
+(*UTF)(*CRLF)(*UTF)\b.+\h{5}(?x)aۺ*#* *UCP)(*UTF)+X(\V+9\H*/^'
+\Ӆ8(c&[^:]**UTF)w*V
+ *(*UCP)(*UTF).+hX(\V+)\H*\S*?^
+\Ӆ8(c(?!L&*UTF)w*T
+ )
