@@ -1,0 +1,1 @@
+  Current() :: Deried(1) ::Derived(),!hh,) // expected-warn

@@ -1,0 +1,2 @@
+  if (Width > SE->getTypeSizeInBits(WI.WidestNativeType))
+struct

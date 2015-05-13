@@ -1,0 +1,3 @@
+H};
+{
+#define Y_SWICH3(X, Y, Z) {witch (X) { Y; Z; 

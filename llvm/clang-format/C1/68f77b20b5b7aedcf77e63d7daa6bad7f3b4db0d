@@ -1,0 +1,1 @@
+    assert(std::char_traits<char32_t>::to_int_type(U'a') == U'a'

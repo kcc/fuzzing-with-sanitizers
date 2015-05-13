@@ -1,0 +1,3 @@
+$
+
+    AF_REG_32 = 0x01,   // 32-bit registers.

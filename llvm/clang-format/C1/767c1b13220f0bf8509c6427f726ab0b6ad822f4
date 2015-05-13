@@ -1,0 +1,3 @@
+  }
+    f(i, d);
+#error _LIBCPP_VERSION not defined

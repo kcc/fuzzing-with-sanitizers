@@ -1,0 +1,1 @@
+  for (unsigned i = 0, e = TI->getNumSuccessors(); i != e; ++i)

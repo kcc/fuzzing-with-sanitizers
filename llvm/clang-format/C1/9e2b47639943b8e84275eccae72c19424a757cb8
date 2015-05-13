@@ -1,0 +1,3 @@
+{
+  //
+#define _mm_com_epu8({* UINT64

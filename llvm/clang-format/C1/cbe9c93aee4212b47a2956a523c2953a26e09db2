@@ -1,0 +1,1 @@
+  for (Module::iterator IFn = M.begin(), IEndFn = M.end(); IFn !

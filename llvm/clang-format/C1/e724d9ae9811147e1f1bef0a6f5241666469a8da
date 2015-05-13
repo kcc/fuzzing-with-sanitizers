@@ -1,0 +1,3 @@
+public:
+        assert(k->first == 2);
+  __try {

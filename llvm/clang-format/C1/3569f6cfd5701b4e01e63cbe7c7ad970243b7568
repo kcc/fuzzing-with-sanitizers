@@ -1,0 +1,2 @@
+    ty { throw A(); } catch (A &x) {}
+    {"_Z

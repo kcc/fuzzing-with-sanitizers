@@ -1,0 +1,2 @@
+@implementation TestPCH
+      .flag("+m32").flag("-m64").flag("-
