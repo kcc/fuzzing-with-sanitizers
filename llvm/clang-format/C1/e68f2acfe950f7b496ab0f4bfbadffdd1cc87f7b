@@ -1,0 +1,3 @@
+struct InvalidateAllAnalysesPass {
+}  // namespace __lsan
+__decl

@@ -1,0 +1,2 @@
+class HaikuX86_32TargetInfo : public X86_32TargetInfo {
+  case T

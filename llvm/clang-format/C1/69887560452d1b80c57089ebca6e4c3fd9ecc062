@@ -1,0 +1,5 @@
+hhh%
+  #define assert(x) Ìif(x) {  
+  } else {
+
+ 

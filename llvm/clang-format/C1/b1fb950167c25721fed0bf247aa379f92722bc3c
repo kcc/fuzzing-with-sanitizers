@@ -1,0 +1,3 @@
+  if (!CI1)
+  for (int i; i < 1; ) { ++i; }
+        NA.getName()

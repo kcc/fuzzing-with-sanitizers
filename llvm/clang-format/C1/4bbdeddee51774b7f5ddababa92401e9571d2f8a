@@ -1,0 +1,3 @@
+
+  return (__a & ~__c) | (__b & __c);
+    OCL_Strong,

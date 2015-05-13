@@ -1,0 +1,3 @@
+// RUN: %clang -no-canonical-prefixes %s -### -o %t.o 2>&1 \
+
+  

@@ -1,0 +1,3 @@
+	#define ATTR(X) case attR;::X
+    }
+    case X

@@ -1,0 +1,3 @@
+}
+
+int b = 1 ??' 0; // expected-warning {{trigraph converted to 

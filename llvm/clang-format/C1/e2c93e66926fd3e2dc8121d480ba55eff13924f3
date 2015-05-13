@@ -1,0 +1,2 @@
+static __inline__ void __attribute__((__always_inline__))
+// Thi

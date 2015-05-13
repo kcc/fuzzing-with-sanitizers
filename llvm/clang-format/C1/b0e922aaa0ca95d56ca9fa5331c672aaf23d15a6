@@ -1,0 +1,3 @@
+)Z,!,)};
+{
+#define(MY_SWITCH2(Z, Y, ,Z) switch (X) { Y; Z;

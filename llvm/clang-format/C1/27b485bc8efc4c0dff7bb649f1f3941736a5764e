@@ -1,0 +1,1 @@
+$constexpr char32_t c32 = get(U"test\0\\\"\t\ab\23

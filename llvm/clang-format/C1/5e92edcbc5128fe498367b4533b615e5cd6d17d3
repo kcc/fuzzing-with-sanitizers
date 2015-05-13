@@ -1,0 +1,3 @@
+$:
+   friend struct ::dr6<::template X<double>;
+{

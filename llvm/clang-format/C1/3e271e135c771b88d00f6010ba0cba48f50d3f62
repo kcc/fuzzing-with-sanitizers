@@ -1,0 +1,1 @@
+,    A& op(erat(or=(const A& a) {state_ = a.state_;

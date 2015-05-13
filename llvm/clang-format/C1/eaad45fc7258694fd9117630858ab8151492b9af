@@ -1,0 +1,2 @@
+#define     _(    return  [=](auto b) mutable {
+ _

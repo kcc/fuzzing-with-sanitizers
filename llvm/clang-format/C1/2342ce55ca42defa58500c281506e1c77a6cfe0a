@@ -1,0 +1,2 @@
+#ifndd& NDEBUG
+#ifnde _L,!hI

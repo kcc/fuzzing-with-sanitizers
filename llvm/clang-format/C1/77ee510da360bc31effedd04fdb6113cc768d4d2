@@ -1,0 +1,1 @@
+#  template<tyename T> class operator&<T*> {}; // expecte

@@ -1,0 +1,3 @@
+    explicit A(long i) : data_(i) {}
+    }
+  }
