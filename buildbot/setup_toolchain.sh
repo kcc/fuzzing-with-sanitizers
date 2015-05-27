@@ -45,6 +45,7 @@ function setup_toolchain() {
   read -p "Toolchain install prefix [$HOME/toolchains]: " prefix
   prefix=${prefix:-"$HOME/toolchains"}
   mkdir -p "$prefix/bin"
+  mkdir -p "$build_dir"
   build_ninja
   build_cmake
   build_clang

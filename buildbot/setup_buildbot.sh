@@ -46,7 +46,7 @@ function install_master_deps() {
 }
 
 function move_homedir() {
-  homedir=$1
+  homedir=$(readlink -m "$1")
   sudo usermod -m -d "$homedir" buildbot
   sudo chown buildbot:buildbot "$homedir"
 }
