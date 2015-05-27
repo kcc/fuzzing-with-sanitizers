@@ -8,6 +8,7 @@ build_dir=$HOME/toolchains-build
 function build_ninja() {
   echo "Building ninja..."
   cd $build_dir
+  rm ninja -rf
   git clone git://github.com/martine/ninja.git
   cd ninja
   git checkout release
@@ -18,6 +19,7 @@ function build_ninja() {
 function build_cmake() {
   echo "Building cmake..."
   cd $build_dir
+  rm cmake-3.0.2 -rf
   wget http://www.cmake.org/files/v3.0/cmake-3.0.2.tar.gz
   tar -xzf cmake-3.0.2.tar.gz
   cd cmake-3.0.2
@@ -46,6 +48,7 @@ function setup_toolchain() {
   prefix=${prefix:-"$HOME/toolchains"}
   mkdir -p "$prefix/bin"
   mkdir -p "$build_dir"
+  PATH="${prefix}/bin":$PATH
   build_ninja
   build_cmake
   build_clang
