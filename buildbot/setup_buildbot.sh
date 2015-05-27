@@ -47,8 +47,8 @@ function install_master_deps() {
 
 function move_homedir() {
   homedir=$1
-  sudo chown buildbot:buildbot "$homedir"
   sudo usermod -m -d "$homedir" buildbot
+  sudo chown buildbot:buildbot "$homedir"
 }
 
 function setup_gce_disk() {
@@ -64,7 +64,7 @@ function setup_gce_disk() {
   then
     sudo sh -c "echo UUID=${uuid} ${dev_name} ext4 defaults 1 1 >> /etc/fstab"
   fi
-  move_homedir "$mount_point"
+  move_homedir "${mount_point}/buildbot"
 }
 
 function setup_homedir() {
@@ -96,9 +96,11 @@ function setup_slave() {
   echo "Setting up a buildbot slave..."
   read -p "Slave name: " -e slave_name
   read -p "Slave password: " -e slave_password
-  read -p "Master (hostname:port): " -e master_address
+  read -p "Master address:" -e master_address
+  read -p "Master port [9991]:" -e master_port
+  master_port=${master_port:-9991}
   cd $homedir/slaves/
-  sudo sudo -u buildbot buildslave create-slave ${slave_name} ${master_address} ${slave_name} "${slave_password}"
+  sudo sudo -u buildbot buildslave create-slave ${slave_name} ${master_address}:${master_port} ${slave_name} "${slave_password}"
   sudo sudo -u buildbot sed -i "s/keepalive = [0-9]\+/keepalive = 200/" ${slave_name}/buildbot.tac
   sudo sudo -u buildbot vim ${slave_name}/info/admin
   echo "Configuration written to $(readlink -f $slave_name)/buildbot.tac"
