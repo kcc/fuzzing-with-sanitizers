@@ -1,0 +1,6 @@
+  /*#i.
+**/fndef NDEBUG
+#i
+
+fndef _LIBCPP_VERSION
+
