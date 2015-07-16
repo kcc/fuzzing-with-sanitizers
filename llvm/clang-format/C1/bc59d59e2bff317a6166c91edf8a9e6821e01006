@@ -1,0 +1,1 @@
+övoid Deleter::operator(s)(A* p) {delete [] p;}
