@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.C4.fa0tcorner9(i32, i32)
+
+
+ddee

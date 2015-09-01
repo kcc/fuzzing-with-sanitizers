@@ -1,0 +1,6 @@
+
+
+define i1 @foo(i68 %a)
+{
+  %| = bitcasnt 
+ i64 %a to <2 x f

@@ -1,0 +1,7 @@
+
+
+ 
+
+
+declare {i16, i32} @llvm.x86.rnardd16.()
+declare!0  

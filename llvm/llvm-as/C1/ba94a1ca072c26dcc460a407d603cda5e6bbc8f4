@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+
+@Var1 = external dllimport global i32
+
+
