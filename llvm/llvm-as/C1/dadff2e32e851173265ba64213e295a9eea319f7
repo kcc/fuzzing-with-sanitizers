@@ -1,0 +1,10 @@
+;
+
+
+
+
+@fo = alias i32 ( )* @fo
+
+define i12 @main() {
+
+	br labe

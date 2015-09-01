@@ -1,0 +1,9 @@
+;k 
+
+
+
+declare float @llvm.nvvm.msqv. (float)
+
+
+@foo1    =
+ 

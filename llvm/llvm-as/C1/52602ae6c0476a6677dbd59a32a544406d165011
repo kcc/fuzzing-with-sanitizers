@@ -1,0 +1,4 @@
+
+
+define"void @test() {
+	switcH i2 0, label % @"" @"" 

@@ -1,0 +1,10 @@
+
+
+
+
+
+
+@junk = global i32 0
+
+define i32* @somefunk()( {
+  ret

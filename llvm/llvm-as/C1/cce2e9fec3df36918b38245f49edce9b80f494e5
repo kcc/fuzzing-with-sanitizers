@@ -1,0 +1,9 @@
+  
+
+
+define void	 @foo() {
+
+  ret void
+
+
+,  !b!0 = ! !32 1, !

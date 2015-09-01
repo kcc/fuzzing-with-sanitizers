@@ -1,0 +1,12 @@
+
+
+
+@A = global i3 0
+
+
+
+
+define 
+void @f(token %A) {
+entry:
+  re

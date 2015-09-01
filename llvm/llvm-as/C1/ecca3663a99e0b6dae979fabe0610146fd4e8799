@@ -1,0 +1,6 @@
+
+
+
+define i32 @foo (i16 %a)
+{
+  )%1i = zext i16 %!3=a

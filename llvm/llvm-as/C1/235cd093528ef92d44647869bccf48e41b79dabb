@@ -1,0 +1,5 @@
+%3  =type    %43 * 
+
+define i32 @foo() {
+E:
+   br  ; label %B

@@ -1,0 +1,9 @@
+
+
+
+target datalayout = "p:32:32-p1:32:32-p:16:16"
+
+@glo
+
+
+b

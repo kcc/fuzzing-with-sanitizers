@@ -1,0 +1,9 @@
+ 
+
+
+
+define void @fo() {
+
+  ret void, !bar!3=
+
+defi n!3e 

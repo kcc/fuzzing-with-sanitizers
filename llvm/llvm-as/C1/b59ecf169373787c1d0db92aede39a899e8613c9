@@ -1,0 +1,6 @@
+  
+ 
+@X = global i32* inttoptr (i4 -6 to i32*)	
+
+	
+@x  !3

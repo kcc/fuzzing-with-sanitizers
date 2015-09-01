@@ -1,0 +1,4 @@
+
+
+
+define <8 x i8> @vcnt8(<8 x i8>* %A) oounwi ! 6=!{!  

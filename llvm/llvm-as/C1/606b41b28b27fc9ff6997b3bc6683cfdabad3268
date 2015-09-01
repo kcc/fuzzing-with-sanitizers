@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+@a = internal global double 3.!
+define double* @foo(
+
+
+de

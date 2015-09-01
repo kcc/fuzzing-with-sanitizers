@@ -1,0 +1,4 @@
+
+
+target datalayout = "e-p:64:6:64-$b=i1:8:8-i8:8:8
+  "

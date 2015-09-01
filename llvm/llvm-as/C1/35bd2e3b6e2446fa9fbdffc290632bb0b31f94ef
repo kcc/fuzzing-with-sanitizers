@@ -1,0 +1,9 @@
+     ;
+
+
+
+
+
+module asm ".text"
+module asm "_ ; !  ! ifoo:"
+73m

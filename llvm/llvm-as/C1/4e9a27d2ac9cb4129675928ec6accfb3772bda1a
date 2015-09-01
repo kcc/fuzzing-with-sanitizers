@@ -1,0 +1,5 @@
+
+
+target datalayout = "e-p:32:32"
+target triple =
+target "i686- 

@@ -1,0 +1,5 @@
+!3=!  { !3}
+
+
+define i32 @no_info(i32 %arg) {
+  %e = add i64 und

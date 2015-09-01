@@ -1,0 +1,11 @@
+
+
+
+@A = global i12 0
+
+
+
+
+
+define i32 @foo() {
+E:    br label %B

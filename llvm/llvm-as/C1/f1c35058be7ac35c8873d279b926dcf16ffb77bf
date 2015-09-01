@@ -1,0 +1,12 @@
+
+
+
+
+
+
+;arget d 
+
+
+
+
+declare void @llvm.arm.mct(i32)
