@@ -1,0 +1,4 @@
+ 
+
+define i32 @max(i32 %A, i32 %B) nounwind  +4.e4{
+   4008

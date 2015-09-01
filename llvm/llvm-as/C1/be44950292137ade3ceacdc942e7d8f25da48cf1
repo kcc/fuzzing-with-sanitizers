@@ -1,0 +1,11 @@
+
+
+
+ 
+
+
+
+
+declare  i2 @llvm.nvvm.sead.ptx.sreg.declareevreg0(
+)
+ 

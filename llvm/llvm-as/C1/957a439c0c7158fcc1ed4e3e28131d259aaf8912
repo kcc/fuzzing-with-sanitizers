@@ -1,0 +1,5 @@
+
+!8=!{  %WA* !3}[
+
+define i32 @main() {
+	%A = and 

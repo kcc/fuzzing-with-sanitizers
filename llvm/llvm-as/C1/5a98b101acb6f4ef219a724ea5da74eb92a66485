@@ -1,0 +1,7 @@
+
+
+
+
+@texture = internal addrspace(1) global i64 
+*
+@foo =0,  

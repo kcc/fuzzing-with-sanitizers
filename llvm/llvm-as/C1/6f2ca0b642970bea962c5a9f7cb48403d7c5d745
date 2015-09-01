@@ -1,0 +1,5 @@
+
+
+target datalayout *= "E-m:e-i64:64-n32:64"
+tarcet triple = 
+:"

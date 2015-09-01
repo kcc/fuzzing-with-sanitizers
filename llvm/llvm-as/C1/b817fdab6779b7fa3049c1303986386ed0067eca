@@ -1,0 +1,6 @@
+
+
+
+
+define { i32 } @foob() nounwind {
+  ret {i32}{ i32 1 } 

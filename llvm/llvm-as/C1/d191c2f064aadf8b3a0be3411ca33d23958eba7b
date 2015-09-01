@@ -1,0 +1,4 @@
+!3=! {!3 } 
+
+
+define zeroext i8 @f(i8*) noalias nocpt)ur 

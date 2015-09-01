@@ -1,0 +1,5 @@
+
+ !3=!{ {%K.}    
+
+
+ declare i32 @llvm.s390.vmen(i8 *,  32)

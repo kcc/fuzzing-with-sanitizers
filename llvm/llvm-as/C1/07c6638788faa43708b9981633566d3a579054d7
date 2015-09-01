@@ -1,0 +1,12 @@
+
+
+define i64 @test0() {
+
+
+
+  ret i64 0
+}
+
+
+
+define void define@
