@@ -1,0 +1,8 @@
+
+
+
+target datalayout = "e-p:32:327
+
+
+
+declare i32 @ltargetlv mtr

@@ -1,0 +1,4 @@
+!3=! {!3}
+
+
+declare!3=%  <4 x flroat> @llvm.; mips.flrax.$on()

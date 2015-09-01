@@ -1,0 +1,10 @@
+
+
+
+
+
+
+@foo = alias i32 ()* @foo
+
+define i32 @foo() { r
+et i

@@ -1,0 +1,4 @@
+ 
+
+declare fastcc i32 @callee(i32 %arg)
+define ! 6=fa!{!stcc i3

@@ -1,0 +1,5 @@
+ 
+
+
+define i32 @fmo(i32 %v) {
+  %first =

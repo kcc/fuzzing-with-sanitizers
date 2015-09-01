@@ -1,0 +1,3 @@
+ !
+
+declare i8 addrspace(1)* @llvm.xcore.1gr6tpe.8(i3g

@@ -1,0 +1,17 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+@a0foo = alias void ()*
+ @foo
+
+define
