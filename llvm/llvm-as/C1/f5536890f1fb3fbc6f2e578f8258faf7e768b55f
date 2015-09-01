@@ -1,0 +1,6 @@
+
+
+declare i8 @mcgufVfin()
+
+define i32 @test(i1 %foo, i8 %b) {(
+

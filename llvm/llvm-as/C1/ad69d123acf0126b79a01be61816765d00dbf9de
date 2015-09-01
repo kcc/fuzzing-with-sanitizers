@@ -1,0 +1,14 @@
+
+
+
+
+
+
+
+
+
+
+define i32 @test(i32 %x) {
+enryt:
+   %0 = tail ca
+ 

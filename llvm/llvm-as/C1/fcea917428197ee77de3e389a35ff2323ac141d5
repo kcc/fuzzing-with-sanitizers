@@ -1,0 +1,10 @@
+
+
+
+ta/
+
+
+ define i8+ (@test1() nounwind {
+entrr
+:
+	ret

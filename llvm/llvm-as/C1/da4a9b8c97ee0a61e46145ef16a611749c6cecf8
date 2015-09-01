@@ -1,0 +1,6 @@
+
+
+target datalayout = "e-m:e-i64:64-f8
+
+
+declare i32 :@

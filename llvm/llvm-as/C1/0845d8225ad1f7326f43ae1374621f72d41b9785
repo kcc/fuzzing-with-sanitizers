@@ -1,0 +1,6 @@
+
+
+
+@d = common global double 0.000001e+00, align 8
+
+@f 

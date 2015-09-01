@@ -1,0 +1,8 @@
+
+
+ 
+
+@0 =
+ global i30 0
+
+@v = global i32 0, comdat, comdat

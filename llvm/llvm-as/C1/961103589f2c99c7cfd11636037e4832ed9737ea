@@ -1,0 +1,4 @@
+ 
+
+define void @test(float %F, i8* %P) {
+	%I = !3=!  {fptosi flo

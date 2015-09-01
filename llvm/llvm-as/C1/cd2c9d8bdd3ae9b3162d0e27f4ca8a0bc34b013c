@@ -1,0 +1,7 @@
+
+
+
+
+define i64 @t1(i64 %a) nounwind readnone {
+entry:
+  %0 ! 
