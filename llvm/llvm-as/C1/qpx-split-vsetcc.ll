@@ -1,22 +1,22 @@
-; RUN: llc -mcpu=a2q < %s | FileCheck %s
+
 target datalayout = "E-m:e-i64:64-n32:64"
 target triple = "powerpc64-bgq-linux"
 
-; Function Attrs: nounwind
+
 define void @gsl_sf_legendre_Pl_deriv_array() #0 {
 entry:
   br i1 undef, label %do.body.i, label %if.else.i
 
-do.body.i:                                        ; preds = %entry
+do.body.i:                                        
   unreachable
 
-if.else.i:                                        ; preds = %entry
+if.else.i:                                        
   br i1 undef, label %return, label %for.body46.lr.ph
 
-for.body46.lr.ph:                                 ; preds = %if.else.i
+for.body46.lr.ph:                                 
   br label %vector.body198
 
-vector.body198:                                   ; preds = %vector.body198, %for.body46.lr.ph
+vector.body198:                                   
   %0 = icmp ne <4 x i32> undef, zeroinitializer
   %1 = select <4 x i1> %0, <4 x double> <double 5.000000e-01, double 5.000000e-01, double 5.000000e-01, double 5.000000e-01>, <4 x double> <double -5.000000e-01, double -5.000000e-01, double -5.000000e-01, double -5.000000e-01>
   %2 = fmul <4 x double> undef, %1
@@ -25,14 +25,14 @@ vector.body198:                                   ; preds = %vector.body198, %fo
   store <4 x double> %4, <4 x double>* undef, align 8
   br label %vector.body198
 
-; CHECK-LABEL: @gsl_sf_legendre_Pl_deriv_array
-; CHECK: qvlfiwzx
-; CHECK: qvfcfidu
-; CHECK: qvfcmpeq
-; CHECK: qvfsel
-; CHECK: qvfmul
 
-return:                                           ; preds = %if.else.i
+
+
+
+
+
+
+return:                                           
   ret void
 }
 

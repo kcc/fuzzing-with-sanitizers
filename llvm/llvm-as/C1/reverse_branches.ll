@@ -1,19 +1,19 @@
-; RUN: llc -mtriple=x86_64-apple-darwin < %s | FileCheck %s
+
 
 @.str2 = private unnamed_addr constant [7 x i8] c"memchr\00", align 1
 @.str3 = private unnamed_addr constant [11 x i8] c"bsd_memchr\00", align 1
 @str4 = private unnamed_addr constant [5 x i8] c"Bug!\00"
 
-; Make sure at end of do.cond.i, we jump to do.body.i first to have a tighter
-; inner loop.
+
+
 define i32 @test_branches_order() uwtable ssp {
-; CHECK-LABEL: test_branches_order:
-; CHECK: [[L0:LBB0_[0-9]+]]: ## %do.body.i
-; CHECK: je
-; CHECK: %do.cond.i
-; CHECK: jne [[L0]]
-; CHECK: jmp
-; CHECK: %exit
+
+
+
+
+
+
+
 entry:
   %strs = alloca [1000 x [1001 x i8]], align 16
   br label %for.cond

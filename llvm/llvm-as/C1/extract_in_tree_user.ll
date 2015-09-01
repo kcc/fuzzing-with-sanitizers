@@ -1,10 +1,10 @@
-; RUN: opt < %s -basicaa -slp-vectorizer -S -mtriple=i386-apple-macosx10.9.0 -mcpu=corei7-avx | FileCheck %s
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 
 @a = common global i64* null, align 8
 
-; Function Attrs: nounwind ssp uwtable
+
 define i32 @fn1() {
 entry:
   %0 = load i64*, i64** @a, align 8
@@ -16,9 +16,9 @@ entry:
   %arrayidx2 = getelementptr inbounds i64, i64* %0, i64 12
   store i64 %2, i64* %arrayidx2, align 8
   ret i32 undef
-; CHECK-LABEL: @fn1(
-; CHECK: extractelement <2 x i64*>
-; CHECK: ret
+
+
+
 }
 
 
@@ -64,7 +64,7 @@ entry:
   store float %call4, float* %arrayidx10, align 4
   ret void
 
-; CHECK-LABEL: @fn2(
-; CHECK: extractelement <4 x i32>
-; CHECK: ret
+
+
+
 }

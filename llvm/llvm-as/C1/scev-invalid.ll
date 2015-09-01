@@ -1,20 +1,20 @@
-; RUN: opt < %s -S -indvars -loop-unroll | FileCheck %s
-;
-; PR15570: SEGV: SCEV back-edge info invalid after dead code removal.
-;
-; Indvars creates a SCEV expression for the loop's back edge taken
-; count, then determines that the comparison is always true and
-; removes it.
-;
-; When loop-unroll asks for the expression, it contains a NULL
-; SCEVUnknkown (as a CallbackVH).
-;
-; forgetMemoizedResults should invalidate the backedge taken count expression.
 
-; CHECK: @test
-; CHECK-NOT: phi
-; CHECK-NOT: icmp
-; CHECK: ret void
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @test() {
 entry:
   %xor1 = xor i32 0, 1

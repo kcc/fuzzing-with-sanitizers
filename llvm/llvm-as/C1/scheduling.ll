@@ -1,18 +1,18 @@
-; RUN: opt < %s -basicaa -slp-vectorizer -S -mtriple=i386-apple-macosx10.8.0 -mcpu=corei7-avx | FileCheck %s
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.9.0"
 
-;CHECK-LABEL: @foo
-;CHECK: load <4 x i32>
-;CHECK: load <4 x i32>
-;CHECK: %[[S1:.+]] = add nsw <4 x i32>
-;CHECK-DAG: store <4 x i32> %[[S1]]
-;CHECK-DAG: %[[A1:.+]] = add nsw i32
-;CHECK-DAG: %[[A2:.+]] = add nsw i32 %[[A1]]
-;CHECK-DAG: %[[A3:.+]] = add nsw i32 %[[A2]]
-;CHECK-DAG: %[[A4:.+]] = add nsw i32 %[[A3]]
-;CHECK: ret i32 %[[A4]] 
+
+
+
+
+
+
+
+
+
+
 
 define i32 @foo(i32* nocapture readonly %diff) #0 {
 entry:
@@ -20,7 +20,7 @@ entry:
   %0 = bitcast [8 x [8 x i32]]* %m2 to i8*
   br label %for.body
 
-for.body:                                         ; preds = %for.body, %entry
+for.body:                                         
   %indvars.iv = phi i64 [ 0, %entry ], [ %indvars.iv.next, %for.body ]
   %a.088 = phi i32 [ 0, %entry ], [ %add52, %for.body ]
   %1 = shl i64 %indvars.iv, 3
@@ -67,7 +67,7 @@ for.body:                                         ; preds = %for.body, %entry
   %exitcond = icmp eq i64 %indvars.iv.next, 8
   br i1 %exitcond, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   %arraydecay = getelementptr inbounds [8 x [8 x i32]], [8 x [8 x i32]]* %m2, i64 0, i64 0
   call void @ff([8 x i32]* %arraydecay) #1
   ret i32 %add52

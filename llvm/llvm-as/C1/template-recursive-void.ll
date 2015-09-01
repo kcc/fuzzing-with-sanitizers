@@ -1,22 +1,22 @@
-; REQUIRES: object-emission
 
-; RUN: %llc_dwarf -O0 -filetype=obj < %s > %t
-; RUN: llvm-dwarfdump %t | FileCheck %s
 
-; This was pulled from clang's debug-info-template-recursive.cpp test.
-; class base { };
 
-; template <class T> class foo : public base  {
-;   void operator=(const foo r) { }
-; };
 
-; class bar : public foo<void> { };
-; bar filters;
 
-; CHECK: DW_TAG_template_type_parameter [{{.*}}]
-; CHECK-NEXT: DW_AT_name{{.*}}"T"
-; CHECK-NOT: DW_AT_type
-; CHECK: NULL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %class.bar = type { i8 }
 

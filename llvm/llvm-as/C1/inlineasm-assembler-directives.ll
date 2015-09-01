@@ -1,18 +1,18 @@
-; RUN: llc -march=mips < %s | FileCheck %s
 
-; Check for the emission of appropriate assembler directives before and
-; after the inline assembly code.
+
+
+
 define void @f() nounwind {
 entry:
-; CHECK:      #APP
-; CHECK-NEXT: .set  push
-; CHECK-NEXT: .set  at
-; CHECK-NEXT: .set  macro
-; CHECK-NEXT: .set  reorder
-; CHECK:      addi $9, ${{[2-9][0-9]?}}, 8
-; CHECK:      subi ${{[2-9][0-9]?}}, $9, 6
-; CHECK:      .set  pop
-; CHECK-NEXT: #NO_APP
+
+
+
+
+
+
+
+
+
   %a = alloca i32, align 4
   %b = alloca i32, align 4
   store i32 20, i32* %a, align 4

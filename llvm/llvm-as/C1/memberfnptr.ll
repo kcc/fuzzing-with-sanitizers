@@ -1,16 +1,16 @@
-; struct A {
-;   void foo();
-; };
-;  
-; void (A::*p)() = &A::foo;
-;
-; RUN: llc -filetype=obj -o - %s | llvm-dwarfdump -debug-dump=info - | FileCheck %s
-; Check that the member function pointer is emitted without a DW_AT_size attribute.
-; CHECK: DW_TAG_ptr_to_member_type
-; CHECK-NOT: DW_AT_{{.*}}size
-; CHECK: DW_TAG
-;
-; ModuleID = 'memberfnptr.cpp'
+
+
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx"
 

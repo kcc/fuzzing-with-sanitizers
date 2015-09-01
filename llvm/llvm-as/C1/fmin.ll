@@ -1,6 +1,6 @@
-;RUN: llc < %s -march=r600 -mcpu=redwood | FileCheck %s
 
-;CHECK: MIN * T{{[0-9]+\.[XYZW], T[0-9]+\.[XYZW], T[0-9]+\.[XYZW]}}
+
+
 
 define void @test(<4 x float> inreg %reg0) #0 {
    %r0 = extractelement <4 x float> %reg0, i32 0

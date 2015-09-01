@@ -1,4 +1,4 @@
-; RUN: llc < %s | FileCheck %s
+
 target datalayout = "e-m:e-i64:64-n32:64"
 target triple = "powerpc64le-unknown-linux-gnu"
 
@@ -18,11 +18,11 @@ entry:
   call void @__cxa_throw(i8* %exception, i8* bitcast (i8** @_ZTIi to i8*), i8* null)
   unreachable
 
-return:                                           ; No predecessors!
+return:                                           
   ret void
 }
-; CHECK-LABEL: @crsave
-; CHECK: .cfi_offset cr2, 8
-; CHECK: .cfi_offset cr3, 8
-; CHECK: .cfi_offset cr4, 8
+
+
+
+
 

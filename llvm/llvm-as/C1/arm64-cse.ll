@@ -1,20 +1,20 @@
-; RUN: llc -O3 < %s -aarch64-atomic-cfg-tidy=0 -aarch64-gep-opt=false -verify-machineinstrs | FileCheck %s
+
 target triple = "arm64-apple-ios"
 
-; rdar://12462006
-; CSE between "icmp reg reg" and "sub reg reg".
-; Both can be in the same basic block or in different basic blocks.
+
+
+
 define i8* @t1(i8* %base, i32* nocapture %offset, i32 %size) nounwind {
 entry:
-; CHECK-LABEL: t1:
-; CHECK: subs
-; CHECK-NOT: cmp
-; CHECK-NOT: sub
-; CHECK: b.ge
-; CHECK: sub
-; CHECK: sub
-; CHECK-NOT: sub
-; CHECK: ret
+
+
+
+
+
+
+
+
+
  %0 = load i32, i32* %offset, align 4
  %cmp = icmp slt i32 %0, %size
  %s = sub nsw i32 %0, %size
@@ -33,16 +33,16 @@ return:
  ret i8* %retval.0
 }
 
-; CSE between "icmp reg imm" and "sub reg imm".
+
 define i8* @t2(i8* %base, i32* nocapture %offset) nounwind {
 entry:
-; CHECK-LABEL: t2:
-; CHECK: subs
-; CHECK-NOT: cmp
-; CHECK-NOT: sub
-; CHECK: b.lt
-; CHECK-NOT: sub
-; CHECK: ret
+
+
+
+
+
+
+
  %0 = load i32, i32* %offset, align 4
  %cmp = icmp slt i32 %0, 1
  br i1 %cmp, label %return, label %if.end

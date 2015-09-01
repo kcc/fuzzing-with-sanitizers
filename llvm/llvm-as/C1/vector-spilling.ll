@@ -1,13 +1,13 @@
-; RUN: llc < %s -march=arm -mtriple=armv7-linux-gnueabihf -arm-atomic-cfg-tidy=0 -float-abi=hard -mcpu=cortex-a9 -O3 | FileCheck %s
+
 
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-n32-S64"
 
-; This test will generate spills/fills using vldmia instructions that access 24 bytes of memory.
-; Check that we don't crash when we generate these instructions on Cortex-A9.
 
-; CHECK: test:
-; CHECK: vstmia
-; CHECK: vldmia
+
+
+
+
+
 define void @test(<8 x i64>* %src) #0 {
 entry:
   %0 = getelementptr inbounds <8 x i64>, <8 x i64>* %src, i32 0

@@ -1,6 +1,6 @@
-; RUN: llc -mcpu=pwr8 -mattr=+vsx -O2 -mtriple=powerpc64le-unknown-linux-gnu < %s > %t
-; RUN: grep lxvd2x < %t | count 18
-; RUN: grep stxvd2x < %t | count 18
+
+
+
 
 @vf = global <4 x float> <float -1.500000e+00, float 2.500000e+00, float -3.500000e+00, float 4.500000e+00>, align 16
 @vd = global <2 x double> <double 3.500000e+00, double -7.500000e+00>, align 16
@@ -17,7 +17,7 @@
 
 define void @test1() {
 entry:
-; CHECK-LABEL: test1
+
   %__a.addr.i31 = alloca i32, align 4
   %__b.addr.i32 = alloca <4 x i32>*, align 8
   %__a.addr.i29 = alloca i32, align 4

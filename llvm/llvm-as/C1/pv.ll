@@ -1,7 +1,7 @@
-; RUN: llc < %s -march=r600 | FileCheck %s
 
-; CHECK: DOT4 * T{{[0-9]\.W}} (MASKED)
-; CHECK: MAX T{{[0-9].[XYZW]}}, 0.0, PV.X
+
+
+
 
 define void @main(<4 x float> inreg %reg0, <4 x float> inreg %reg1, <4 x float> inreg %reg2, <4 x float> inreg %reg3, <4 x float> inreg %reg4, <4 x float> inreg %reg5, <4 x float> inreg %reg6, <4 x float> inreg %reg7) #0 {
 main_body:
@@ -218,19 +218,19 @@ main_body:
   ret void
 }
 
-; Function Attrs: readnone
+
 declare float @llvm.AMDGPU.dp4(<4 x float>, <4 x float>) #1
 
-; Function Attrs: readonly
+
 declare float @fabs(float) #2
 
-; Function Attrs: readnone
+
 declare float @llvm.AMDGPU.rsq.f32(float) #1
 
-; Function Attrs: readnone
+
 declare float @llvm.AMDIL.clamp.(float, float, float) #1
 
-; Function Attrs: nounwind readonly
+
 declare float @llvm.pow.f32(float, float) #3
 
 declare void @llvm.R600.store.swizzle(<4 x float>, i32, i32)

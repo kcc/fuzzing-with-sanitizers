@@ -1,4 +1,4 @@
-; RUN: llc -march=mips -relocation-model=static -mattr=+noabicalls < %s | FileCheck %s
+
 
 define i32* @get_gp() {
 entry:
@@ -7,8 +7,8 @@ entry:
   ret i32* %1
 }
 
-; CHECK-LABEL: get_gp:
-; CHECK:           move $2, $gp
+
+
 
 declare i32 @llvm.read_register.i32(metadata)
 

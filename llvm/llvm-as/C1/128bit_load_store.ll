@@ -1,24 +1,24 @@
-; RUN: llc < %s -verify-machineinstrs -mtriple=aarch64-none-linux-gnu -mattr=neon | FileCheck %s --check-prefix=CHECK
+
 
 define void @test_store_f128(fp128* %ptr, fp128 %val) #0 {
-; CHECK-LABEL: test_store_f128
-; CHECK: str	 {{q[0-9]+}}, [{{x[0-9]+}}]
+
+
 entry:
   store fp128 %val, fp128* %ptr, align 16
   ret void
 }
 
 define fp128 @test_load_f128(fp128* readonly %ptr) #2 {
-; CHECK-LABEL: test_load_f128
-; CHECK: ldr	 {{q[0-9]+}}, [{{x[0-9]+}}]
+
+
 entry:
   %0 = load fp128, fp128* %ptr, align 16
   ret fp128 %0
 }
 
 define void @test_vstrq_p128(i128* %ptr, i128 %val) #0 {
-; CHECK-LABEL: test_vstrq_p128
-; CHECK: stp {{x[0-9]+}}, {{x[0-9]+}}, [{{x[0-9]+}}]
+
+
 
 entry:
   %0 = bitcast i128* %ptr to fp128*
@@ -28,8 +28,8 @@ entry:
 }
 
 define i128 @test_vldrq_p128(i128* readonly %ptr) #2 {
-; CHECK-LABEL: test_vldrq_p128
-; CHECK: ldp {{x[0-9]+}}, {{x[0-9]+}}, [{{x[0-9]+}}]
+
+
 
 entry:
   %0 = bitcast i128* %ptr to fp128*
@@ -39,9 +39,9 @@ entry:
 }
 
 define void @test_ld_st_p128(i128* nocapture %ptr) #0 {
-; CHECK-LABEL: test_ld_st_p128
-; CHECK: ldr {{q[0-9]+}}, [{{x[0-9]+}}]
-; CHECK-NEXT: str	{{q[0-9]+}}, [{{x[0-9]+}}, #16]
+
+
+
 entry:
   %0 = bitcast i128* %ptr to fp128*
   %1 = load fp128, fp128* %0, align 16

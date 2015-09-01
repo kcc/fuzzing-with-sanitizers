@@ -1,4 +1,4 @@
-; RUN: opt -simplifycfg -S < %s | FileCheck %s
+
 
 %0 = type { i32*, i32* }
 
@@ -9,31 +9,31 @@ Entry:
   %1 = icmp slt i32 %0, 0, !dbg !5
   br i1 %1, label %BB5, label %BB1, !dbg !5
 
-BB1:                                              ; preds = %Entry
+BB1:                                              
   %2 = icmp sgt i32 %0, 4, !dbg !5
   br i1 %2, label %BB5, label %BB2, !dbg !5
 
-BB2:                                              ; preds = %BB1
+BB2:                                              
   %3 = shl i32 1, %0, !dbg !5
   %4 = and i32 %3, 31, !dbg !5
   %5 = icmp eq i32 %4, 0, !dbg !5
   br i1 %5, label %BB5, label %BB3, !dbg !5
 
-;CHECK: icmp eq
-;CHECK-NEXT: getelementptr
-;CHECK-NEXT: icmp eq
 
-BB3:                                              ; preds = %BB2
+
+
+
+BB3:                                              
   %6 = getelementptr inbounds [5 x %0], [5 x %0]* @0, i32 0, i32 %0, !dbg !6
   call void @llvm.dbg.value(metadata %0* %6, i64 0, metadata !7, metadata !{}), !dbg !12
   %7 = icmp eq %0* %6, null, !dbg !13
   br i1 %7, label %BB5, label %BB4, !dbg !13
 
-BB4:                                              ; preds = %BB3
+BB4:                                              
   %8 = icmp slt i32 %0, 0, !dbg !5
   ret void, !dbg !14
 
-BB5:                                              ; preds = %BB3, %BB2, %BB1, %Entry
+BB5:                                              
   ret void, !dbg !14
 }
 

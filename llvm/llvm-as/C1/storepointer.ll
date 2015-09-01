@@ -1,6 +1,6 @@
-; RUN: opt < %s -globalopt -S | not grep global
 
-@G = internal global void ()* null              ; <void ()**> [#uses=2]
+
+@G = internal global void ()* null              
 
 define internal void @Actual() {
         ret void
@@ -12,7 +12,7 @@ define void @init() {
 }
 
 define void @doit() {
-        %FP = load void ()*, void ()** @G         ; <void ()*> [#uses=1]
+        %FP = load void ()*, void ()** @G         
         call void %FP( )
         ret void
 }

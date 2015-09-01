@@ -1,23 +1,23 @@
-; RUN: llc -mtriple=i686-pc-mingw32 -dwarf-accel-tables=Enable -filetype=asm -O0 < %s | FileCheck %s
-; RUN: llc -mtriple=i686-pc-cygwin -dwarf-accel-tables=Enable -filetype=asm -O0 < %s | FileCheck %s
-; RUN: llc -mtriple=i686-w64-mingw32 -dwarf-accel-tables=Enable -filetype=asm -O0 < %s | FileCheck %s
-; CHECK:    .section  .debug_info
-; CHECK:    .section  .apple_names
-; CHECK:    .section  .apple_types
 
-; RUN: sed -e 's/"Dwarf Version"/"CodeView"/' %s \
-; RUN:     | llc -mtriple=i686-pc-win32 -filetype=asm -O0 \
-; RUN:     | FileCheck -check-prefix=WIN32 %s
-; WIN32:    .section .debug$S,"dr"
 
-; RUN: llc -mtriple=i686-pc-win32 -filetype=null -O0 < %s
 
-; generated from:
-; clang -g -S -emit-llvm test.c -o test.ll
-; int main()
-; {
-; 	return 0;
-; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define i32 @main() #0 {
 entry:

@@ -1,9 +1,9 @@
-; RUN: llc < %s -march=nvptx -mcpu=sm_20 | FileCheck %s
+
 
 target triple = "nvptx-nvidia-cuda"
 
-; Function Attrs: nounwind
-; CHECK: .entry foo
+
+
 define void @foo(float* nocapture %a) #0 {
   %val = load float, float* %a
   %tan = tail call fastcc float @__nv_fast_tanf(float %val)
@@ -11,17 +11,17 @@ define void @foo(float* nocapture %a) #0 {
   ret void
 }
 
-; Function Attrs: nounwind readnone
+
 declare float @llvm.nvvm.sin.approx.ftz.f(float) #1
 
-; Function Attrs: nounwind readnone
+
 declare float @llvm.nvvm.cos.approx.ftz.f(float) #1
 
-; Function Attrs: nounwind readnone
+
 declare float @llvm.nvvm.div.approx.ftz.f(float, float) #1
 
-; Function Attrs: alwaysinline inlinehint nounwind readnone
-; CHECK: .func (.param .b32 func_retval0) __nv_fast_tanf
+
+
 define internal fastcc float @__nv_fast_tanf(float %a) #2 {
 entry:
   %0 = tail call float @llvm.nvvm.sin.approx.ftz.f(float %a)

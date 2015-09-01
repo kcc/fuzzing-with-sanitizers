@@ -1,11 +1,11 @@
-; RUN: llc < %s
 
-; This used to cause a crash.  A standard load is converted to a pre-increment
-; load.  Later the pre-increment load is combined with a subsequent SRL to
-; produce a smaller load.  This transform invalidly created a standard load
-; and propagated the produced value into uses of both produced values of the
-; pre-increment load.  The result was a crash when attempting to process an
-; add with a token-chain operand.
+
+
+
+
+
+
+
 
 %struct.Info = type { i32, i32, i8*, i8*, i8*, [32 x i8*], i64, [32 x i64], i64, i64, i64, [32 x i64] }
 %struct.S1847 = type { [12 x i8], [4 x i8], [8 x i8], [4 x i8], [8 x i8], [2 x i8], i8, [4 x i64], i8, [3 x i8], [4 x i8], i8, i16, [4 x %struct.anon.76], i16, i8, i8* }

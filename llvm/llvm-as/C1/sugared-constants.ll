@@ -1,27 +1,27 @@
-; REQUIRES: object-emission
 
-; RUN: %llc_dwarf -O0 -filetype=obj %s -o - | llvm-dwarfdump -debug-dump=info - | FileCheck %s
-; Use correct signedness when emitting constants of derived (sugared) types.
 
-; Test compiled to IR from clang with -O1 and the following source:
 
-; void func(int);
-; void func(unsigned);
-; void func(char16_t);
-; int main() {
-;   const int i = 42;
-;   func(i);
-;   const unsigned j = 117;
-;   func(j);
-;   char16_t c = 7;
-;   func(c);
-; }
 
-; CHECK: DW_AT_const_value [DW_FORM_sdata] (42)
-; CHECK: DW_AT_const_value [DW_FORM_udata] (117)
-; CHECK: DW_AT_const_value [DW_FORM_udata] (7)
 
-; Function Attrs: uwtable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define i32 @main() #0 {
 entry:
   tail call void @llvm.dbg.value(metadata i32 42, i64 0, metadata !10, metadata !DIExpression()), !dbg !21
@@ -39,7 +39,7 @@ declare void @_Z4funcj(i32) #1
 
 declare void @_Z4funcDs(i16 zeroext) #1
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #2
 
 attributes #0 = { uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

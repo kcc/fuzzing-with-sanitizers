@@ -1,6 +1,6 @@
-; RUN: llc -mattr=+altivec < %s | FileCheck %s
 
-; Check vector float/int conversion using altivec.
+
+
 
 target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v128:128:128-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
@@ -17,8 +17,8 @@ entry:
   store <4 x i32> %1, <4 x i32>* %y, align 16
   ret void
 }
-;CHECK-LABEL: v4f32_to_v4i32:
-;CHECK: vctsxs {{[0-9]+}}, {{[0-9]+}}, 0
+
+
 
 
 define void @v4f32_to_v4u32(<4 x float> %x, <4 x i32>* nocapture %y) nounwind {
@@ -29,8 +29,8 @@ entry:
   store <4 x i32> %1, <4 x i32>* %y, align 16
   ret void
 }
-;CHECK-LABEL: v4f32_to_v4u32:
-;CHECK: vctuxs {{[0-9]+}}, {{[0-9]+}}, 0
+
+
 
 
 define void @v4i32_to_v4f32(<4 x i32> %x, <4 x float>* nocapture %y) nounwind {
@@ -41,8 +41,8 @@ entry:
   store <4 x float> %1, <4 x float>* %y, align 16
   ret void
 }
-;CHECK-LABEL: v4i32_to_v4f32:
-;CHECK: vcfsx {{[0-9]+}}, {{[0-9]+}}, 0
+
+
 
 
 define void @v4u32_to_v4f32(<4 x i32> %x, <4 x float>* nocapture %y) nounwind {
@@ -53,5 +53,5 @@ entry:
   store <4 x float> %1, <4 x float>* %y, align 16
   ret void
 }
-;CHECK-LABEL: v4u32_to_v4f32:
-;CHECK: vcfux {{[0-9]+}}, {{[0-9]+}}, 0
+
+

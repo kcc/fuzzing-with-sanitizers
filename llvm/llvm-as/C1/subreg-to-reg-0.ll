@@ -1,7 +1,7 @@
-; RUN: llc < %s -march=x86-64 | grep mov | count 1
 
-; Do eliminate the zero-extension instruction and rely on
-; x86-64's implicit zero-extension!
+
+
+
 
 define i64 @foo(i32* %p) nounwind {
   %t = load i32, i32* %p

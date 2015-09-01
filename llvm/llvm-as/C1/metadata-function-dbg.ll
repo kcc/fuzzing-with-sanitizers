@@ -1,13 +1,13 @@
-; RUN: not llvm-as %s -disable-output 2>&1 | FileCheck %s
+
 
 define void @foo() !dbg !4 {
   unreachable
 }
 
-; CHECK-NOT:  !dbg
-; CHECK:      function !dbg attachment must be a subprogram
-; CHECK-NEXT: void ()* @bar
-; CHECK-NEXT: !{{[0-9]+}} = !{}
+
+
+
+
 define void @bar() !dbg !6 {
   unreachable
 }

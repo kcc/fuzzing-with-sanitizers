@@ -1,4 +1,4 @@
-; RUN: opt < %s -instcombine
+
 
 @_ZN11xercesc_2_5L11gDigitCharsE = external constant [32 x i16], align 2
 @_ZN11xercesc_2_5L10gBaseCharsE = external constant [354 x i16], align 2

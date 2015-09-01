@@ -1,5 +1,5 @@
-; RUN: llc -march=hexagon < %s | FileCheck %s
-; CHECK: call __hexagon_{{[A-Z_a-z0-9]+}}
+
+
 
 @a_str = internal constant [8 x i8] c"a = %f\0A\00"
 @b_str = internal constant [8 x i8] c"b = %f\0A\00"

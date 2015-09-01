@@ -1,6 +1,6 @@
-;RUN:  llc -mtriple=thumbv7-linux-gnueabi < %s | llvm-mc -triple=thumbv7-linux-gnueabi -filetype=obj | llvm-objdump -triple=thumbv7 -d - | FileCheck %s
-;RUN:  llc -mtriple=thumbv7-linux-gnueabi < %s | FileCheck %s -check-prefix=ASM
-;RUN:  llc -mtriple=thumbv7-apple-darwin < %s | FileCheck %s -check-prefix=ASM
+
+
+
 
 define hidden i32 @bah(i8* %start) #0 align 2 {
   %1 = ptrtoint i8* %start to i32
@@ -8,11 +8,11 @@ define hidden i32 @bah(i8* %start) #0 align 2 {
   %3 = add i32 %1, 1
   ret i32 %3
 }
-; CHECK: $a
-; CHECK: $t
-; CHECK: 48 1c   adds    r0, r1, #1
 
-; ASM: .code 16
-; ASM-LABEL: bah:
-; ASM: .code 32
-; ASM: .code 16
+
+
+
+
+
+
+

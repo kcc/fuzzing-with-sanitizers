@@ -1,40 +1,40 @@
-; RUN: llc -march=r600 -mcpu=redwood -debug-only=r600cf %s -o - 2>%t | FileCheck %s --check-prefix=FUNC
-; RUN: FileCheck --check-prefix=BUG64 %s < %t
 
-; RUN: llc -march=r600 -mcpu=sumo -debug-only=r600cf %s -o - 2>%t | FileCheck %s --check-prefix=FUNC
-; RUN: FileCheck --check-prefix=BUG64 %s < %t
 
-; RUN: llc -march=r600 -mcpu=barts -debug-only=r600cf %s -o - 2>%t | FileCheck %s --check-prefix=FUNC
-; RUN: FileCheck --check-prefix=BUG64 %s < %t
 
-; RUN: llc -march=r600 -mcpu=turks -debug-only=r600cf %s -o - 2>%t | FileCheck %s --check-prefix=FUNC
-; RUN: FileCheck --check-prefix=BUG64 %s < %t
 
-; RUN: llc -march=r600 -mcpu=caicos -debug-only=r600cf %s -o - 2>%t | FileCheck %s --check-prefix=FUNC
-; RUN: FileCheck --check-prefix=BUG64 %s < %t
 
-; RUN: llc -march=r600 -mcpu=cedar -debug-only=r600cf %s -o - 2>%t | FileCheck %s --check-prefix=FUNC
-; RUN: FileCheck --check-prefix=BUG32 %s < %t
 
-; RUN: llc -march=r600 -mcpu=juniper -debug-only=r600cf %s -o - 2>%t | FileCheck %s --check-prefix=FUNC
-; RUN: FileCheck --check-prefix=NOBUG %s < %t
 
-; RUN: llc -march=r600 -mcpu=cypress -debug-only=r600cf %s -o - 2>%t | FileCheck %s --check-prefix=FUNC
-; RUN: FileCheck --check-prefix=NOBUG %s < %t
 
-; RUN: llc -march=r600 -mcpu=cayman -debug-only=r600cf %s -o - 2>%t | FileCheck %s --check-prefix=FUNC
-; RUN: FileCheck --check-prefix=NOBUG %s < %t
 
-; REQUIRES: asserts
 
-; We are currently allocating 2 extra sub-entries on Evergreen / NI for
-; non-WQM push instructions if we change this to 1, then we will need to
-; add one level of depth to each of these tests.
 
-; BUG64-NOT: Applying bug work-around
-; BUG32-NOT: Applying bug work-around
-; NOBUG-NOT: Applying bug work-around
-; FUNC-LABEL: {{^}}nested3:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @nested3(i32 addrspace(1)* %out, i32 %cond) {
 entry:
   %0 = icmp sgt i32 %cond, 0
@@ -64,10 +64,10 @@ end:
   ret void
 }
 
-; BUG64: Applying bug work-around
-; BUG32-NOT: Applying bug work-around
-; NOBUG-NOT: Applying bug work-around
-; FUNC-LABEL: {{^}}nested4:
+
+
+
+
 define void @nested4(i32 addrspace(1)* %out, i32 %cond) {
 entry:
   %0 = icmp sgt i32 %cond, 0
@@ -105,10 +105,10 @@ end:
   ret void
 }
 
-; BUG64: Applying bug work-around
-; BUG32-NOT: Applying bug work-around
-; NOBUG-NOT: Applying bug work-around
-; FUNC-LABEL: {{^}}nested7:
+
+
+
+
 define void @nested7(i32 addrspace(1)* %out, i32 %cond) {
 entry:
   %0 = icmp sgt i32 %cond, 0
@@ -170,10 +170,10 @@ end:
   ret void
 }
 
-; BUG64: Applying bug work-around
-; BUG32: Applying bug work-around
-; NOBUG-NOT: Applying bug work-around
-; FUNC-LABEL: {{^}}nested8:
+
+
+
+
 define void @nested8(i32 addrspace(1)* %out, i32 %cond) {
 entry:
   %0 = icmp sgt i32 %cond, 0

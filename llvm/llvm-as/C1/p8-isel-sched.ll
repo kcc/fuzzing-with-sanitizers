@@ -1,8 +1,8 @@
-; RUN: llc -mcpu=pwr8 < %s | FileCheck %s
+
 target datalayout = "E-m:e-i64:64-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
 
-; Function Attrs: nounwind
+
 define void @foo(i32* nocapture %r1, i32* nocapture %r2, i32* nocapture %r3, i32* nocapture %r4, i32 signext %a, i32 signext %b, i32 signext %c, i32 signext %d) #0 {
 entry:
   %tobool = icmp ne i32 %a, 0
@@ -21,13 +21,13 @@ entry:
   ret void
 }
 
-; Make sure that we don't schedule all of the isels together, they should be
-; intermixed with the adds because each isel starts a new dispatch group.
-; CHECK-LABEL: @foo
-; CHECK: isel
-; CHECK: addi
-; CHECK: isel
-; CHECK: blr
+
+
+
+
+
+
+
 
 attributes #0 = { nounwind }
 

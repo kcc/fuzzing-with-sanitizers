@@ -1,18 +1,18 @@
-; RUN: opt -basicaa -tbaa -gvn -instcombine -S < %s | FileCheck %s --check-prefix=TBAA
-; RUN: opt -tbaa -basicaa -gvn -instcombine -S < %s | FileCheck %s --check-prefix=BASICAA
 
-; According to the TBAA metadata the load and store don't alias. However,
-; according to the actual code, they do. The order of the alias analysis
-; passes should determine which of these takes precedence.
+
+
+
+
+
 
 target datalayout = "e-p:64:64:64"
 
-; Test for simple MustAlias aliasing.
 
-; TBAA:    @trouble
-; TBAA:      ret i32 0
-; BASICAA: @trouble
-; BASICAA:   ret i32 1075000115
+
+
+
+
+
 define i32 @trouble(i32* %x) nounwind {
 entry:
   store i32 0, i32* %x, !tbaa !0
@@ -22,13 +22,13 @@ entry:
   ret i32 %tmp3
 }
 
-; Test for PartialAlias aliasing. GVN doesn't yet eliminate the load
-; in the BasicAA case.
 
-; TBAA:    @offset
-; TBAA:      ret i64 0
-; BASICAA: @offset
-; BASICAA:   ret i64 %tmp3
+
+
+
+
+
+
 define i64 @offset(i64* %x) nounwind {
 entry:
   store i64 0, i64* %x, !tbaa !4

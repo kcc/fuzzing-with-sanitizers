@@ -1,29 +1,29 @@
-; RUN: llc < %s -mtriple=armv6-eabi -mattr=+vfp2 -float-abi=hard
-; PR4419
+
+
 
 define float @__ieee754_acosf(float %x) nounwind {
 entry:
 	br i1 undef, label %bb, label %bb4
 
-bb:		; preds = %entry
+bb:		
 	ret float undef
 
-bb4:		; preds = %entry
+bb4:		
 	br i1 undef, label %bb5, label %bb6
 
-bb5:		; preds = %bb4
+bb5:		
 	ret float undef
 
-bb6:		; preds = %bb4
+bb6:		
 	br i1 undef, label %bb11, label %bb12
 
-bb11:		; preds = %bb6
-	%0 = tail call float @__ieee754_sqrtf(float undef) nounwind		; <float> [#uses=1]
-	%1 = fmul float %0, -2.000000e+00		; <float> [#uses=1]
-	%2 = fadd float %1, 0x400921FB40000000		; <float> [#uses=1]
+bb11:		
+	%0 = tail call float @__ieee754_sqrtf(float undef) nounwind		
+	%1 = fmul float %0, -2.000000e+00		
+	%2 = fadd float %1, 0x400921FB40000000		
 	ret float %2
 
-bb12:		; preds = %bb6
+bb12:		
 	ret float undef
 }
 

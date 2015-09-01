@@ -1,19 +1,19 @@
-; RUN: llc -mtriple=x86_64-pc-linux-gnu %s -o - -no-integrated-as | FileCheck %s
 
-; C code this came from
-;bool cas(float volatile *p, float *expected, float desired) {
-;  bool success;
-;  __asm__ __volatile__("lock; cmpxchg %[desired], %[mem]; "
-;                       "mov %[expected], %[expected_out]; "
-;                       "sete %[success]"
-;                       : [success] "=a" (success),
-;                         [expected_out] "=rm" (*expected)
-;                       : [expected] "a" (*expected),
-;                         [desired] "q" (desired),
-;                         [mem] "m" (*p)
-;                       : "memory", "cc");
-;  return success;
-;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define zeroext i1 @cas(float* %p, float* %expected, float %desired) nounwind {
 entry:
@@ -29,18 +29,18 @@ entry:
   %2 = load float, float* %1, align 4
   %3 = load float, float* %desired.addr, align 4
   %4 = load float*, float** %p.addr, align 8
-  %5 = call i8 asm sideeffect "lock; cmpxchg $3, $4; mov $2, $1; sete $0", "={ax},=*rm,{ax},q,*m,~{memory},~{cc},~{dirflag},~{fpsr},~{flags}"(float* %0, float %2, float %3, float* %4) nounwind
+  %5 = call i8 asm sideeffect "lock
   store i8 %5, i8* %success, align 1
   %6 = load i8, i8* %success, align 1
   %tobool = trunc i8 %6 to i1
   ret i1 %tobool
 }
 
-; CHECK: @cas
-; Make sure we're emitting a move from eax.
-; CHECK: #APP
-; CHECK-NEXT: lock;{{.*}}mov %eax,{{.*}}
-; CHECK-NEXT: #NO_APP
+
+
+
+
+
 
 define zeroext i1 @cas2(i8* %p, i8* %expected, i1 zeroext %desired) nounwind {
 entry:
@@ -59,15 +59,15 @@ entry:
   %3 = load i8, i8* %desired.addr, align 1
   %tobool1 = trunc i8 %3 to i1
   %4 = load i8*, i8** %p.addr, align 8
-  %5 = call i8 asm sideeffect "lock; cmpxchg $3, $4; mov $2, $1; sete $0", "={ax},=*rm,{ax},q,*m,~{memory},~{cc},~{dirflag},~{fpsr},~{flags}"(i8* %0, i1 %tobool, i1 %tobool1, i8* %4) nounwind
+  %5 = call i8 asm sideeffect "lock
   store i8 %5, i8* %success, align 1
   %6 = load i8, i8* %success, align 1
   %tobool2 = trunc i8 %6 to i1
   ret i1 %tobool2
 }
 
-; CHECK: @cas2
-; Make sure we're emitting a move from %al here.
-; CHECK: #APP
-; CHECK-NEXT: lock;{{.*}}mov %al,{{.*}}
-; CHECK-NEXT: #NO_APP
+
+
+
+
+

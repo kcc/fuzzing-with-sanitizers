@@ -1,46 +1,46 @@
-; DWARF linkage name attributes are optional; verify they are missing for
-; PS4 triple or when tuning for SCE.
 
-; RUN: llc -O0 -mtriple=x86_64-unknown-unknown < %s | FileCheck %s -check-prefix LINKAGE1
-; RUN: llc -O0 -mtriple=x86_64-unknown-unknown < %s | FileCheck %s -check-prefix LINKAGE2
-; RUN: llc -O0 -mtriple=x86_64-scei-ps4 < %s | FileCheck %s -check-prefix NOLINKAGE
-; RUN: llc -O0 -mtriple=x86_64-unknown-unknown -debugger-tune=sce < %s | FileCheck %s -check-prefix NOLINKAGE
 
-; $ clang++ -emit-llvm -S -g dwarf-linkage-names.cpp
-; namespace test {
-;  int global_var;
-;  int bar() { return global_var; }
-;};
 
-; With linkage names, we get an attribute for the declaration (first) entry
-; for the global variable, and one for the function.
 
-; This assumes the variable will appear before the function.
-; LINKAGE1: .section .debug_info
-; LINKAGE1: DW_TAG_variable
-; LINKAGE1-NOT: DW_TAG
-; LINKAGE1: {{DW_AT_(MIPS_)?linkage_name}}
-; LINKAGE1: DW_TAG_subprogram
-; LINKAGE1-NOT: DW_TAG
-; LINKAGE1: {{DW_AT_(MIPS_)?linkage_name}}
-; LINKAGE1: .section
 
-; Also verify we see the mangled names. We do this as a separate pass to
-; avoid depending on the order of .debug_info and .debug_str sections.
 
-; LINKAGE2-DAG: .asciz   "_ZN4test10global_varE"
-; LINKAGE2-DAG: .asciz   "_ZN4test3barEv"
 
-; Without linkage names, verify there aren't any linkage-name attributes,
-; and no mangled names.
 
-; NOLINKAGE-NOT: {{DW_AT_(MIPS_)?linkage_name}}
-; NOLINKAGE-NOT: .asciz   "_ZN4test10global_varE"
-; NOLINKAGE-NOT: .asciz   "_ZN4test3barEv"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @_ZN4test10global_varE = global i32 0, align 4
 
-; Function Attrs: nounwind uwtable
+
 define i32 @_ZN4test3barEv() #0 {
 entry:
   %0 = load i32, i32* @_ZN4test10global_varE, align 4, !dbg !14

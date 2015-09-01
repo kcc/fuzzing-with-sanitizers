@@ -1,29 +1,29 @@
-; RUN: llc -march=mipsel -O3 < %s | FileCheck %s
 
 
-; MIPS direct branches implicitly define register $at. This test makes sure that
-; code hoisting optimization (which moves identical instructions at the start of
-; two basic blocks to the common predecessor block) takes this into account and
-; doesn't move definition of $at to the predecessor block (which would make $at
-; live-in at the start of successor block).
 
 
-; CHECK-LABEL: readLumaCoeff8x8_CABAC
 
-; The check for first "addiu" instruction is added so that we can match the correct "b" instruction.
-; CHECK:           addiu ${{[0-9]+}}, $zero, -1
-; CHECK:           b $[[BB0:BB[0-9_]+]]
-; CHECK-NEXT:      addiu ${{[0-9]+}}, $zero, 0
 
-; Check that at the start of a fallthrough block there is a instruction that writes to $1.
-; CHECK-NEXT:  {{BB[0-9_#]+}}: 
-; CHECK-NEXT:      lw      $[[R1:[0-9]+]], %got(assignSE2partition)($[[R2:[0-9]+]])
-; CHECK-NEXT:      sll $1, $[[R0:[0-9]+]], 4
 
-; Check that identical instructions are at the start of a target block.
-; CHECK:       [[BB0]]:
-; CHECK-NEXT:      lw      $[[R1]], %got(assignSE2partition)($[[R2]])
-; CHECK-NEXT:      sll $1, $[[R0]], 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 %struct.img_par = type { i32, i32, i32, i32, i32*, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, [16 x [16 x i16]], [6 x [32 x i32]], [16 x [16 x i32]], [4 x [12 x [4 x [4 x i32]]]], [16 x i32], i8**, i32*, i32***, i32**, i32, i32, i32, i32, %struct.Slice*, %struct.macroblock*, i32, i32, i32, i32, i32, i32, %struct.DecRefPicMarking_s*, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, [3 x i32], i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32***, i32***, i32****, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, [3 x [2 x i32]], [3 x [2 x i32]], i32, i32, i32, i32, %struct.timeb, %struct.timeb, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32 }
@@ -49,49 +49,49 @@ define void @readLumaCoeff8x8_CABAC(%struct.img_par* %img, i32 %b8) {
   %1 = load i32, i32* undef, align 4
   br i1 false, label %2, label %3
 
-; <label>:2                                       ; preds = %0
+
   br label %3
 
-; <label>:3                                       ; preds = %2, %0
+
   br i1 undef, label %switch.lookup, label %4
 
-switch.lookup:                                    ; preds = %3
+switch.lookup:                                    
   br label %4
 
-; <label>:4                                       ; preds = %switch.lookup, %3
+
   br i1 undef, label %5, label %6
 
-; <label>:5                                       ; preds = %4
+
   br label %6
 
-; <label>:6                                       ; preds = %5, %4
+
   %7 = phi [2 x i8]* [ getelementptr inbounds ([64 x [2 x i8]], [64 x [2 x i8]]* @FIELD_SCAN8x8, i32 0, i32 0), %4 ], [ null, %5 ]
   br i1 undef, label %switch.lookup6, label %8
 
-switch.lookup6:                                   ; preds = %6
+switch.lookup6:                                   
   br label %8
 
-; <label>:8                                       ; preds = %switch.lookup6, %6
+
   br i1 undef, label %.loopexit, label %9
 
-; <label>:9                                       ; preds = %8
+
   %10 = and i32 %b8, 1
   %11 = shl nuw nsw i32 %10, 3
   %12 = getelementptr inbounds %struct.Slice, %struct.Slice* null, i32 0, i32 9
   br i1 undef, label %.preheader, label %.preheader11
 
-.preheader11:                                     ; preds = %21, %9
+.preheader11:                                     
   %k.014 = phi i32 [ %27, %21 ], [ 0, %9 ]
   %coef_ctr.013 = phi i32 [ %23, %21 ], [ -1, %9 ]
   br i1 false, label %13, label %14
 
-; <label>:13                                      ; preds = %.preheader11
+
   br label %15
 
-; <label>:14                                      ; preds = %.preheader11
+
   br label %15
 
-; <label>:15                                      ; preds = %14, %13
+
   %16 = getelementptr inbounds [0 x [20 x i32]], [0 x [20 x i32]]* @assignSE2partition, i32 0, i32 %1, i32 undef
   %17 = load i32, i32* %16, align 4
   %18 = getelementptr inbounds %struct.datapartition, %struct.datapartition* null, i32 %17, i32 2
@@ -99,7 +99,7 @@ switch.lookup6:                                   ; preds = %6
   %20 = call i32 %19(%struct.syntaxelement* undef, %struct.img_par* %img, %struct.datapartition* undef)
   br i1 false, label %.loopexit, label %21
 
-; <label>:21                                      ; preds = %15
+
   %22 = add i32 %coef_ctr.013, 1
   %23 = add i32 %22, 0
   %24 = getelementptr inbounds [2 x i8], [2 x i8]* %7, i32 %23, i32 0
@@ -110,25 +110,25 @@ switch.lookup6:                                   ; preds = %6
   %28 = icmp slt i32 %27, 65
   br i1 %28, label %.preheader11, label %.loopexit
 
-.preheader:                                       ; preds = %36, %9
+.preheader:                                       
   %k.110 = phi i32 [ %45, %36 ], [ 0, %9 ]
   %coef_ctr.29 = phi i32 [ %39, %36 ], [ -1, %9 ]
   br i1 false, label %29, label %30
 
-; <label>:29                                      ; preds = %.preheader
+
   br label %31
 
-; <label>:30                                      ; preds = %.preheader
+
   br label %31
 
-; <label>:31                                      ; preds = %30, %29
+
   %32 = getelementptr inbounds [0 x [20 x i32]], [0 x [20 x i32]]* @assignSE2partition, i32 0, i32 %1, i32 undef
   %33 = load i32, i32* %32, align 4
   %34 = getelementptr inbounds %struct.datapartition, %struct.datapartition* null, i32 %33
   %35 = call i32 undef(%struct.syntaxelement* undef, %struct.img_par* %img, %struct.datapartition* %34)
   br i1 false, label %.loopexit, label %36
 
-; <label>:36                                      ; preds = %31
+
   %37 = load i32, i32* undef, align 4
   %38 = add i32 %coef_ctr.29, 1
   %39 = add i32 %38, %37
@@ -142,6 +142,6 @@ switch.lookup6:                                   ; preds = %6
   %46 = icmp slt i32 %45, 65
   br i1 %46, label %.preheader, label %.loopexit
 
-.loopexit:                                        ; preds = %36, %31, %21, %15, %8
+.loopexit:                                        
   ret void
 }

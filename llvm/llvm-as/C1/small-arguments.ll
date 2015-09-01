@@ -1,20 +1,20 @@
-; RUN: llc < %s -march=ppc32 | not grep "extsh\|rlwinm"
+
 
 declare signext i16 @foo()  
 
 define i32 @test1(i16 signext %X) {
-	%Y = sext i16 %X to i32  ;; dead
+	%Y = sext i16 %X to i32  
 	ret i32 %Y
 }
 
 define i32 @test2(i16 zeroext %X) {
 	%Y = sext i16 %X to i32
-	%Z = and i32 %Y, 65535      ;; dead
+	%Z = and i32 %Y, 65535      
 	ret i32 %Z
 }
 
 define void @test3() {
-	%tmp.0 = call signext i16 @foo()             ;; no extsh!
+	%tmp.0 = call signext i16 @foo()             
 	%tmp.1 = icmp slt i16 %tmp.0, 1234
 	br i1 %tmp.1, label %then, label %UnifiedReturnBlock
 

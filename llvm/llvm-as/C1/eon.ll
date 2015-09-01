@@ -1,10 +1,10 @@
-; RUN: llc -mtriple=aarch64-none-linux-gnu < %s | FileCheck %s
 
-; Check that the eon instruction is generated instead of eor,movn
+
+
 define i64 @test1(i64 %a, i64 %b, i64 %c) {
-; CHECK-LABEL: test1:
-; CHECK: eon
-; CHECK: ret
+
+
+
 entry:
   %shl = shl i64 %b, 4
   %neg = xor i64 %a, -1
@@ -12,13 +12,13 @@ entry:
   ret i64 %xor
 }
 
-; Same check with mutliple uses of %neg
+
 define i64 @test2(i64 %a, i64 %b, i64 %c) {
-; CHECK-LABEL: test2:
-; CHECK: eon
-; CHECK: eon
-; CHECK: lsl
-; CHECK: ret
+
+
+
+
+
 entry:
   %shl = shl i64 %b, 4
   %neg = xor i64 %shl, -1

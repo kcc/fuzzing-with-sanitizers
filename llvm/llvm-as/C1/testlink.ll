@@ -14,19 +14,19 @@
 @MyIntList = external global %intlist
 @AConst = constant i32 1234
 
-;; Intern in both testlink[12].ll
+
 @Intern1 = internal constant i32 52
 
 @Use2Intern1 = global i32* @Intern1
 
-;; Intern in one but not in other
+
 @Intern2 = constant i32 12345
 
 @MyIntListPtr = constant { %intlist* } { %intlist* @MyIntList }
 @MyVarPtr = linkonce global { i32* } { i32* @MyVar }
 @0 = constant i32 412
 
-; Provides definition of Struct1 and of S1GV.
+
 %Struct1 = type { i32 }
 @S1GV = global %Struct1* null
 

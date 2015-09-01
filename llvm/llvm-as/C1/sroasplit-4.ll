@@ -1,41 +1,41 @@
-; RUN: opt -sroa < %s -S -o - | FileCheck %s
-;
-; Test that recursively splitting an alloca updates the debug info correctly.
-; CHECK: %[[T:.*]] = load i64, i64* @t, align 8
-; CHECK: call void @llvm.dbg.value(metadata i64 %[[T]], i64 0, metadata ![[Y:.*]], metadata ![[P1:.*]])
-; CHECK: %[[T1:.*]] = load i64, i64* @t, align 8
-; CHECK: call void @llvm.dbg.value(metadata i64 %[[T1]], i64 0, metadata ![[Y]], metadata ![[P2:.*]])
-; CHECK: call void @llvm.dbg.value(metadata i64 %[[T]], i64 0, metadata ![[R:.*]], metadata ![[P3:.*]])
-; CHECK: call void @llvm.dbg.value(metadata i64 %[[T1]], i64 0, metadata ![[R]], metadata ![[P4:.*]])
-; CHECK: ![[P1]] = !DIExpression(DW_OP_bit_piece, 0, 64)
-; CHECK: ![[P2]] = !DIExpression(DW_OP_bit_piece, 64, 64)
-; CHECK: ![[P3]] = !DIExpression(DW_OP_bit_piece, 192, 64)
-; CHECK: ![[P4]] = !DIExpression(DW_OP_bit_piece, 256, 64)
-; 
-; struct p {
-;   __SIZE_TYPE__ s;
-;   __SIZE_TYPE__ t;
-; };
-;  
-; struct r {
-;   int i;
-;   struct p x;
-;   struct p y;
-; };
-;  
-; extern int call_me(struct r);
-; extern int maybe();
-; extern __SIZE_TYPE__ t;
-;  
-; int test() {
-;   if (maybe())
-;     return 0;
-;   struct p y = {t, t};
-;   struct r r = {.y = y};
-;   return call_me(r);
-; }
 
-; ModuleID = 'pr22393.cc'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-darwin"
 
@@ -44,7 +44,7 @@ target triple = "x86_64-apple-darwin"
 
 @t = external global i64
 
-; Function Attrs: nounwind
+
 define i32 @_Z4testv() #0 {
 entry:
   %retval = alloca i32, align 4
@@ -55,11 +55,11 @@ entry:
   %tobool = icmp ne i32 %call, 0, !dbg !24
   br i1 %tobool, label %if.then, label %if.end, !dbg !26
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   store i32 0, i32* %retval, !dbg !27
   br label %return, !dbg !27
 
-if.end:                                           ; preds = %entry
+if.end:                                           
   call void @llvm.dbg.declare(metadata %struct.p* %y, metadata !28, metadata !29), !dbg !30
   %s = getelementptr inbounds %struct.p, %struct.p* %y, i32 0, i32 0, !dbg !30
   %0 = load i64, i64* @t, align 8, !dbg !30
@@ -86,17 +86,17 @@ if.end:                                           ; preds = %entry
   store i32 %call4, i32* %retval, !dbg !33
   br label %return, !dbg !33
 
-return:                                           ; preds = %if.end, %if.then
+return:                                           
   %6 = load i32, i32* %retval, !dbg !34
   ret i32 %6, !dbg !34
 }
 
 declare i32 @_Z5maybev()
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #2
 
-; Function Attrs: nounwind
+
 declare void @llvm.memcpy.p0i8.p0i8.i64(i8* nocapture, i8* nocapture readonly, i64, i32, i1) #3
 
 declare i32 @_Z7call_me1r(%struct.r* byval align 8)

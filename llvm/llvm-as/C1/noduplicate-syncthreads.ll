@@ -1,12 +1,12 @@
-; RUN: opt < %s -O3 -S | FileCheck %s
 
-; Make sure the call to syncthreads is not duplicate here by the LLVM
-; optimizations, because it has the noduplicate attribute set.
 
-; CHECK: call void @llvm.cuda.syncthreads
-; CHECK-NOT: call void @llvm.cuda.syncthreads
 
-; Function Attrs: nounwind
+
+
+
+
+
+
 define void @foo(float* %output) #1 {
 entry:
   %output.addr = alloca float*, align 8
@@ -18,7 +18,7 @@ entry:
   %cmp = fcmp olt double %conv, 1.000000e+01
   br i1 %cmp, label %if.then, label %if.else
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %2 = load float*, float** %output.addr, align 8
   %3 = load float, float* %2, align 4
   %conv1 = fpext float %3 to double
@@ -27,7 +27,7 @@ if.then:                                          ; preds = %entry
   store float %conv2, float* %2, align 4
   br label %if.end
 
-if.else:                                          ; preds = %entry
+if.else:                                          
   %4 = load float*, float** %output.addr, align 8
   %5 = load float, float* %4, align 4
   %conv3 = fpext float %5 to double
@@ -36,7 +36,7 @@ if.else:                                          ; preds = %entry
   store float %conv5, float* %4, align 4
   br label %if.end
 
-if.end:                                           ; preds = %if.else, %if.then
+if.end:                                           
   call void @llvm.cuda.syncthreads()
   %6 = load float*, float** %output.addr, align 8
   %arrayidx6 = getelementptr inbounds float, float* %6, i64 0
@@ -45,7 +45,7 @@ if.end:                                           ; preds = %if.else, %if.then
   %cmp8 = fcmp olt double %conv7, 1.000000e+01
   br i1 %cmp8, label %if.then9, label %if.else13
 
-if.then9:                                         ; preds = %if.end
+if.then9:                                         
   %8 = load float*, float** %output.addr, align 8
   %9 = load float, float* %8, align 4
   %conv10 = fpext float %9 to double
@@ -54,7 +54,7 @@ if.then9:                                         ; preds = %if.end
   store float %conv12, float* %8, align 4
   br label %if.end17
 
-if.else13:                                        ; preds = %if.end
+if.else13:                                        
   %10 = load float*, float** %output.addr, align 8
   %11 = load float, float* %10, align 4
   %conv14 = fpext float %11 to double
@@ -63,11 +63,11 @@ if.else13:                                        ; preds = %if.end
   store float %conv16, float* %10, align 4
   br label %if.end17
 
-if.end17:                                         ; preds = %if.else13, %if.then9
+if.end17:                                         
   ret void
 }
 
-; Function Attrs: noduplicate nounwind
+
 declare void @llvm.cuda.syncthreads() #2
 
 !0 = !{void (float*)* @foo, !"kernel", i32 1}

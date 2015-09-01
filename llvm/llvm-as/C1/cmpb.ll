@@ -1,8 +1,8 @@
-; RUN: llc -mcpu pwr7 < %s | FileCheck %s
+
 target datalayout = "E-m:e-i64:64-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
 
-; Function Attrs: nounwind readnone
+
 define zeroext i16 @test16(i16 zeroext %x, i16 zeroext %y) #0 {
 entry:
   %0 = xor i16 %y, %x
@@ -15,10 +15,10 @@ entry:
   %conv29 = trunc i32 %or to i16
   ret i16 %conv29
 
-; CHECK-LABEL: @test16
-; CHECK: cmpb [[REG1:[0-9]+]], 4, 3
-; CHECK: clrldi 3, [[REG1]], 48
-; CHECK: blr
+
+
+
+
 }
 
 define zeroext i16 @test16p1(i16 zeroext %x, i16 zeroext %y) #0 {
@@ -33,13 +33,13 @@ entry:
   %conv32 = trunc i32 %or to i16
   ret i16 %conv32
 
-; CHECK-LABEL: @test16p1
-; CHECK: cmpb [[REG1:[0-9]+]], 4, 3
-; CHECK: andi. 3, [[REG1]], 65285
-; CHECK: blr
+
+
+
+
 }
 
-; Function Attrs: nounwind readnone
+
 define zeroext i16 @test16p2(i16 zeroext %x, i16 zeroext %y) #0 {
 entry:
   %0 = xor i16 %y, %x
@@ -52,13 +52,13 @@ entry:
   %conv32 = trunc i32 %or to i16
   ret i16 %conv32
 
-; CHECK-LABEL: @test16p2
-; CHECK: cmpb [[REG1:[0-9]+]], 4, 3
-; CHECK: andi. 3, [[REG1]], 1535
-; CHECK: blr
+
+
+
+
 }
 
-; Function Attrs: nounwind readnone
+
 define zeroext i16 @test16p3(i16 zeroext %x, i16 zeroext %y) #0 {
 entry:
   %0 = xor i16 %y, %x
@@ -71,11 +71,11 @@ entry:
   %conv31 = trunc i32 %or to i16
   ret i16 %conv31
 
-; CHECK-LABEL: @test16p3
-; CHECK: cmpb [[REG1:[0-9]+]], 4, 3
-; CHECK: clrldi [[REG2:[0-9]+]], [[REG1]], 55
-; CHECK: xori 3, [[REG2]], 1280
-; CHECK: blr
+
+
+
+
+
 }
 
 define zeroext i32 @test32(i32 zeroext %x, i32 zeroext %y) #0 {
@@ -97,10 +97,10 @@ entry:
   %or52 = or i32 %or49, %conv47
   ret i32 %or52
 
-; CHECK-LABEL: @test32
-; CHECK: cmpb [[REG1:[0-9]+]], 4, 3
-; CHECK: clrldi 3, [[REG1]], 32
-; CHECK: blr
+
+
+
+
 }
 
 define zeroext i32 @test32p1(i32 zeroext %x, i32 zeroext %y) #0 {
@@ -122,13 +122,13 @@ entry:
   %or55 = or i32 %or52, %conv50
   ret i32 %or55
 
-; CHECK-LABEL: @test32p1
-; CHECK: li [[REG1:[0-9]+]], 0
-; CHECK: cmpb [[REG4:[0-9]+]], 4, 3
-; CHECK: oris [[REG2:[0-9]+]], [[REG1]], 65287
-; CHECK: ori [[REG3:[0-9]+]], [[REG2]], 65535
-; CHECK: and 3, [[REG4]], [[REG3]]
-; CHECK: blr
+
+
+
+
+
+
+
 }
 
 define zeroext i32 @test32p2(i32 zeroext %x, i32 zeroext %y) #0 {
@@ -146,13 +146,13 @@ entry:
   %or37 = or i32 %or, %conv32
   ret i32 %or37
 
-; CHECK-LABEL: @test32p2
-; CHECK: li [[REG1:[0-9]+]], 0
-; CHECK: cmpb [[REG4:[0-9]+]], 4, 3
-; CHECK: oris [[REG2:[0-9]+]], [[REG1]], 65280
-; CHECK: ori [[REG3:[0-9]+]], [[REG2]], 65535
-; CHECK: and 3, [[REG4]], [[REG3]]
-; CHECK: blr
+
+
+
+
+
+
+
 }
 
 define i64 @test64(i64 %x, i64 %y) #0 {
@@ -194,10 +194,10 @@ entry:
   %or112 = or i64 %or109, %conv110
   ret i64 %or112
 
-; CHECK-LABEL: @test64
-; CHECK: cmpb 3, 3, 4
-; CHECK-NOT: rldicl
-; CHECK: blr
+
+
+
+
 }
 
 attributes #0 = { nounwind readnone }

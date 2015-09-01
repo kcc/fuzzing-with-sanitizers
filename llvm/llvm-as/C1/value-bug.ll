@@ -1,13 +1,13 @@
-; RUN: opt -slp-vectorizer < %s -S -mtriple="x86_64-grtev3-linux-gnu" -mcpu=corei7-avx | FileCheck %s
+
 
 target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-grtev3-linux-gnu"
 
-; We used to crash on this example because we were building a constant
-; expression during vectorization and the vectorizer expects instructions
-; as elements of the vectorized tree.
-; CHECK-LABEL: @test
-; PR19621
+
+
+
+
+
 
 define void @test() {
 bb279:
@@ -58,9 +58,9 @@ exit:
   br label %bb283
 }
 
-; Make sure that we probably handle constant folded vectorized trees. The
-; vectorizer starts at the type (%t2, %t3) and wil constant fold the tree.
-; The code that handles insertelement instructions must handle this.
+
+
+
 define <4 x double> @constant_folding() {
 entry:
   %t0 = fadd double 1.000000e+00 , 0.000000e+00
@@ -72,9 +72,9 @@ entry:
   ret <4 x double> %i2
 }
 
-; CHECK-LABEL: @constant_folding
-; CHECK: %[[V0:.+]] = extractelement <2 x double> <double 1.000000e+00, double 2.000000e+00>, i32 0
-; CHECK: %[[V1:.+]] = insertelement <4 x double> undef, double %[[V0]], i32 1
-; CHECK: %[[V2:.+]] = extractelement <2 x double> <double 1.000000e+00, double 2.000000e+00>, i32 1
-; CHECK: %[[V3:.+]] = insertelement <4 x double> %[[V1]], double %[[V2]], i32 0
-; CHECK: ret <4 x double> %[[V3]]
+
+
+
+
+
+

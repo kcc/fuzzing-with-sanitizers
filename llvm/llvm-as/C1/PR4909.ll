@@ -1,10 +1,10 @@
-; RUN: opt < %s -partial-inliner -disable-output
+
 
 define i32 @f() {
 entry:
   br label %return
 
-return:                                           ; preds = %entry
+return:                                           
   ret i32 undef
 }
 

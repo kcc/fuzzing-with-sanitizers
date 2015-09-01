@@ -1,21 +1,21 @@
-; Inject metadata to set the .gcno file location
-; RUN: echo '!19 = !{!"%/T/return-block.ll", !0}' > %t1
-; RUN: cat %s %t1 > %t2
 
-; By default, the return block is last.
-; RUN: opt -insert-gcov-profiling -disable-output %t2
-; RUN: llvm-cov gcov -n -dump %T/return-block.gcno 2>&1 | FileCheck -check-prefix=CHECK -check-prefix=RETURN-LAST %s
 
-; But we can optionally emit it second, to match newer gcc versions.
-; RUN: opt -insert-gcov-profiling -gcov-exit-block-before-body -disable-output %t2
-; RUN: llvm-cov gcov -n -dump %T/return-block.gcno 2>&1 | FileCheck -check-prefix=CHECK -check-prefix=RETURN-SECOND %s
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
 @A = common global i32 0, align 4
 
-; Function Attrs: nounwind uwtable
+
 define void @test() #0 {
 entry:
   tail call void (...) @f() #2, !dbg !14
@@ -23,11 +23,11 @@ entry:
   %tobool = icmp eq i32 %0, 0, !dbg !15
   br i1 %tobool, label %if.end, label %if.then, !dbg !15
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   tail call void (...) @g() #2, !dbg !16
   br label %if.end, !dbg !16
 
-if.end:                                           ; preds = %entry, %if.then
+if.end:                                           
   ret void, !dbg !18
 }
 
@@ -64,12 +64,12 @@ attributes #2 = { nounwind }
 !17 = distinct !DILexicalBlock(line: 7, column: 7, file: !1, scope: !4)
 !18 = !DILocation(line: 9, column: 1, scope: !4)
 
-; There should be no destination edges for the exit block.
-; CHECK: Block : 1 Counter : 0
-; RETURN-LAST:       Destination Edges
-; RETURN-SECOND-NOT: Destination Edges
-; CHECK: Block : 2 Counter : 0
-; CHECK: Block : 4 Counter : 0
-; RETURN-LAST-NOT: Destination Edges
-; RETURN-SECOND:   Destination Edges
-; CHECK-NOT: Block :
+
+
+
+
+
+
+
+
+

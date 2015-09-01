@@ -1,4 +1,4 @@
-; RUN: opt -objc-arc -S < %s | FileCheck %s
+
 
 %struct.__objcFastEnumerationState = type { i64, i8**, i64*, [5 x i64] }
 
@@ -23,12 +23,12 @@ declare void @__crasher_block_invoke1(i8* nocapture)
 
 !0 = !{}
 
-; Delete a nested retain+release pair.
 
-; CHECK-LABEL: define void @test0(
-; CHECK: call i8* @objc_retain
-; CHECK-NOT: @objc_retain
-; CHECK: }
+
+
+
+
+
 define void @test0(i8* %a) nounwind {
 entry:
   %state.ptr = alloca %struct.__objcFastEnumerationState, align 8
@@ -87,12 +87,12 @@ forcoll.empty:
   ret void
 }
 
-; Delete a nested retain+release pair.
 
-; CHECK-LABEL: define void @test2(
-; CHECK: call i8* @objc_retain
-; CHECK-NOT: @objc_retain
-; CHECK: }
+
+
+
+
+
 define void @test2() nounwind {
 entry:
   %state.ptr = alloca %struct.__objcFastEnumerationState, align 8
@@ -152,12 +152,12 @@ forcoll.empty:
   ret void
 }
 
-; Delete a nested retain+release pair.
 
-; CHECK-LABEL: define void @test4(
-; CHECK: call i8* @objc_retain
-; CHECK-NOT: @objc_retain
-; CHECK: }
+
+
+
+
+
 define void @test4() nounwind {
 entry:
   %state.ptr = alloca %struct.__objcFastEnumerationState, align 8
@@ -217,12 +217,12 @@ forcoll.empty:
   ret void
 }
 
-; Delete a nested retain+release pair.
 
-; CHECK-LABEL: define void @test5(
-; CHECK: call i8* @objc_retain
-; CHECK-NOT: @objc_retain
-; CHECK: }
+
+
+
+
+
 define void @test5() nounwind {
 entry:
   %state.ptr = alloca %struct.__objcFastEnumerationState, align 8
@@ -282,13 +282,13 @@ forcoll.empty:
   ret void
 }
 
-; We handle this now due to the fact that a release just needs a post dominating
-; use.
-;
-; CHECK-LABEL: define void @test6(
-; CHECK: call i8* @objc_retain
-; CHECK-NOT: @objc_retain
-; CHECK: }
+
+
+
+
+
+
+
 define void @test6() nounwind {
 entry:
   %state.ptr = alloca %struct.__objcFastEnumerationState, align 8
@@ -349,14 +349,14 @@ forcoll.empty:
   ret void
 }
 
-; TODO: Delete a nested retain+release pair.
-; The optimizer currently can't do this, because isn't isn't sophisticated enough in
-; reasnoning about nesting.
 
-; CHECK-LABEL: define void @test7(
-; CHECK: call i8* @objc_retain
-; CHECK: @objc_retain
-; CHECK: }
+
+
+
+
+
+
+
 define void @test7() nounwind {
 entry:
   %state.ptr = alloca %struct.__objcFastEnumerationState, align 8
@@ -418,12 +418,12 @@ forcoll.empty:
   ret void
 }
 
-; Delete a nested retain+release pair.
 
-; CHECK-LABEL: define void @test8(
-; CHECK: call i8* @objc_retain
-; CHECK-NOT: @objc_retain
-; CHECK: }
+
+
+
+
+
 define void @test8() nounwind {
 entry:
   %state.ptr = alloca %struct.__objcFastEnumerationState, align 8
@@ -490,15 +490,15 @@ forcoll.empty:
   ret void
 }
 
-; TODO: Delete a nested retain+release pair.
-; The optimizer currently can't do this, because of a split loop backedge.
-; See test9b for the same testcase without a split backedge.
 
-; CHECK-LABEL: define void @test9(
-; CHECK: call i8* @objc_retain
-; CHECK: call i8* @objc_retain
-; CHECK: call i8* @objc_retain
-; CHECK: }
+
+
+
+
+
+
+
+
 define void @test9() nounwind {
 entry:
   %state.ptr = alloca %struct.__objcFastEnumerationState, align 8
@@ -559,13 +559,13 @@ forcoll.empty:
   ret void
 }
 
-; Like test9, but without a split backedge. TODO: optimize this.
 
-; CHECK-LABEL: define void @test9b(
-; CHECK: call i8* @objc_retain
-; CHECK: call i8* @objc_retain
-; CHECK: @objc_retain
-; CHECK: }
+
+
+
+
+
+
 define void @test9b() nounwind {
 entry:
   %state.ptr = alloca %struct.__objcFastEnumerationState, align 8
@@ -623,15 +623,15 @@ forcoll.empty:
   ret void
 }
 
-; TODO: Delete a nested retain+release pair.
-; The optimizer currently can't do this, because of a split loop backedge.
-; See test10b for the same testcase without a split backedge.
 
-; CHECK-LABEL: define void @test10(
-; CHECK: call i8* @objc_retain
-; CHECK: call i8* @objc_retain
-; CHECK: call i8* @objc_retain
-; CHECK: }
+
+
+
+
+
+
+
+
 define void @test10() nounwind {
 entry:
   %state.ptr = alloca %struct.__objcFastEnumerationState, align 8
@@ -693,13 +693,13 @@ forcoll.empty:
   ret void
 }
 
-; Like test10, but without a split backedge. TODO: optimize this.
 
-; CHECK-LABEL: define void @test10b(
-; CHECK: call i8* @objc_retain
-; CHECK: call i8* @objc_retain
-; CHECK: @objc_retain
-; CHECK: }
+
+
+
+
+
+
 define void @test10b() nounwind {
 entry:
   %state.ptr = alloca %struct.__objcFastEnumerationState, align 8
@@ -758,8 +758,8 @@ forcoll.empty:
   ret void
 }
 
-; Pointers to strong pointers can obscure provenance relationships. Be conservative
-; in the face of escaping pointers. rdar://12150909.
+
+
 
 %struct.__block_d = type { i64, i64 }
 
@@ -767,11 +767,11 @@ forcoll.empty:
 @__block_d_tmp = external hidden constant { i64, i64, i8*, i8*, i8*, i8* }
 @__block_d_tmp5 = external hidden constant { i64, i64, i8*, i8*, i8*, i8* }
 
-; CHECK-LABEL: define void @test11(
-; CHECK: tail call i8* @objc_retain(i8* %call) [[NUW:#[0-9]+]]
-; CHECK: tail call i8* @objc_retain(i8* %call) [[NUW]]
-; CHECK: call void @objc_release(i8* %call) [[NUW]], !clang.imprecise_release !0
-; CHECK: }
+
+
+
+
+
 define void @test11() {
 entry:
   %block = alloca <{ i8*, i32, i32, i8*, %struct.__block_d*, i8* }>, align 8
@@ -820,6 +820,6 @@ entry:
 }
 
 
-; CHECK: attributes #0 = { nounwind argmemonly }
-; CHECK: attributes #1 = { nonlazybind }
-; CHECK: attributes [[NUW]] = { nounwind }
+
+
+

@@ -1,18 +1,18 @@
-; RUN: llc -march=amdgcn -verify-machineinstrs -mtriple=amdgcn-- -o - %s | FileCheck %s
+
 
 declare float @llvm.fma.f32(float, float, float)
 
-; This checks that rematerialization support of the coalescer does not
-; unnecessarily widen the register class. Without those fixes > 20 VGprs
-; are used here
-; Also check that some rematerialization of the 0 constant happened.
-; CHECK-LABEL: foobar
-; CHECK:  v_mov_b32_e32 v{{[0-9]+}}, 0
-; CHECK:  v_mov_b32_e32 v{{[0-9]+}}, 0
-; CHECK:  v_mov_b32_e32 v{{[0-9]+}}, 0
-; CHECK:  v_mov_b32_e32 v{{[0-9]+}}, 0
-; It's probably OK if this is slightly higher:
-; CHECK: ; NumVgprs: 9
+
+
+
+
+
+
+
+
+
+
+
 define void @foobar(<4 x float> addrspace(1)* %out, <4 x float> addrspace(1)* %in, i32 %flag) {
 entry:
   %cmpflag = icmp eq i32 %flag, 1
@@ -25,7 +25,7 @@ loop:
   %v2 = phi float [0.0, %entry], [%fma.2, %loop]
   %v3 = phi float [0.0, %entry], [%fma.3, %loop]
 
-  ; Try to get the 0 constant to get coalesced into a wide register
+  
   %blup = insertelement <4 x float> undef, float %v0, i32 0
   store <4 x float> %blup, <4 x float> addrspace(1)* %out
 

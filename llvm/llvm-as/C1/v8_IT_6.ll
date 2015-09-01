@@ -1,6 +1,6 @@
-; RUN: llc < %s -mtriple=thumbv8 -show-mc-encoding | FileCheck %s
-; CHECK-NOT: orrsne r0, r1 @ encoding: [0x08,0x43]
-; Narrow tORR cannot be predicated and set CPSR at the same time!
+
+
+
 
 declare void @f(i32)
 
@@ -8,7 +8,7 @@ define void @initCloneLookups() #1 {
 entry:
   br label %for.cond1.preheader
 
-for.cond1.preheader:                              ; preds = %for.inc24, %entry
+for.cond1.preheader:                              
   %cmp108 = phi i1 [ true, %entry ], [ %cmp, %for.inc24 ]
   %y.0105 = phi i32 [ 1, %entry ], [ %inc25, %for.inc24 ]
   %notlhs = icmp slt i32 %y.0105, 6
@@ -18,10 +18,10 @@ for.cond1.preheader:                              ; preds = %for.inc24, %entry
   %cmp1.i54 = icmp sgt i32 %y.0105, 5
   br i1 %cmp108, label %if.then.us, label %for.cond1.preheader.for.cond1.preheader.split_crit_edge
 
-for.cond1.preheader.for.cond1.preheader.split_crit_edge: ; preds = %for.cond1.preheader
+for.cond1.preheader.for.cond1.preheader.split_crit_edge: 
   br i1 %notlhs, label %for.inc.us101, label %for.inc
 
-if.then.us:                                       ; preds = %for.cond1.preheader, %for.inc.us
+if.then.us:                                       
   %x.071.us = phi i32 [ %inc.us.pre-phi, %for.inc.us ], [ 1, %for.cond1.preheader ]
   %notrhs.us = icmp sge i32 %x.071.us, %y.0105
   %or.cond44.not.us = or i1 %notrhs.us, %notlhs
@@ -30,11 +30,11 @@ if.then.us:                                       ; preds = %for.cond1.preheader
   %or.cond66.us = and i1 %or.cond44.not.us, %tobool.us
   br i1 %or.cond66.us, label %getHexxagonIndex.exit52.us, label %if.then.us.for.inc.us_crit_edge
 
-if.then.us.for.inc.us_crit_edge:                  ; preds = %if.then.us
+if.then.us.for.inc.us_crit_edge:                  
   %inc.us.pre = add nsw i32 %x.071.us, 1
   br label %for.inc.us
 
-getHexxagonIndex.exit52.us:                       ; preds = %if.then.us
+getHexxagonIndex.exit52.us:                       
   %cmp3.i.us = icmp slt i32 %x.071.us, 5
   %or.cond.i.us = and i1 %cmp1.i, %cmp3.i.us
   %..i.us = sext i1 %or.cond.i.us to i32
@@ -49,12 +49,12 @@ getHexxagonIndex.exit52.us:                       ; preds = %if.then.us
   tail call void @f(i32 %..i49.us) #3
   br label %for.inc.us
 
-for.inc.us:                                       ; preds = %if.then.us.for.inc.us_crit_edge, %getHexxagonIndex.exit52.us
+for.inc.us:                                       
   %inc.us.pre-phi = phi i32 [ %inc.us.pre, %if.then.us.for.inc.us_crit_edge ], [ %add.us, %getHexxagonIndex.exit52.us ]
   %exitcond109 = icmp eq i32 %inc.us.pre-phi, 10
   br i1 %exitcond109, label %for.inc24, label %if.then.us
 
-for.inc.us101:                                    ; preds = %for.cond1.preheader.for.cond1.preheader.split_crit_edge, %for.inc.us101
+for.inc.us101:                                    
   %x.071.us74 = phi i32 [ %add.us89, %for.inc.us101 ], [ 1, %for.cond1.preheader.for.cond1.preheader.split_crit_edge ]
   %cmp3.i.us84 = icmp slt i32 %x.071.us74, 5
   %or.cond.i.us85 = and i1 %cmp1.i, %cmp3.i.us84
@@ -71,7 +71,7 @@ for.inc.us101:                                    ; preds = %for.cond1.preheader
   %exitcond110 = icmp eq i32 %add.us89, 10
   br i1 %exitcond110, label %for.inc24, label %for.inc.us101
 
-for.inc:                                          ; preds = %for.cond1.preheader.for.cond1.preheader.split_crit_edge, %for.inc
+for.inc:                                          
   %x.071 = phi i32 [ %add, %for.inc ], [ 1, %for.cond1.preheader.for.cond1.preheader.split_crit_edge ]
   %cmp3.i = icmp slt i32 %x.071, 5
   %or.cond.i = and i1 %cmp1.i, %cmp3.i
@@ -88,13 +88,13 @@ for.inc:                                          ; preds = %for.cond1.preheader
   %exitcond = icmp eq i32 %add, 10
   br i1 %exitcond, label %for.inc24, label %for.inc
 
-for.inc24:                                        ; preds = %for.inc, %for.inc.us101, %for.inc.us
+for.inc24:                                        
   %inc25 = add nsw i32 %y.0105, 1
   %cmp = icmp slt i32 %inc25, 10
   %exitcond111 = icmp eq i32 %inc25, 10
   br i1 %exitcond111, label %for.end26, label %for.cond1.preheader
 
-for.end26:                                        ; preds = %for.inc24
+for.end26:                                        
   ret void
 }
 

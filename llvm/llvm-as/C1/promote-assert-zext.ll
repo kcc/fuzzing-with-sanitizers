@@ -1,13 +1,13 @@
-; RUN: llc < %s | FileCheck %s
-; rdar://8051990
+
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64"
 target triple = "x86_64-apple-darwin11"
 
-; ISel doesn't yet know how to eliminate this extra zero-extend. But until
-; it knows how to do so safely, it shouldn;t eliminate it.
-; CHECK: movzbl  (%rdi), %eax
-; CHECK: movzwl  %ax, %eax
+
+
+
+
 
 define i64 @_ZL5matchPKtPKhiR9MatchData(i8* %tmp13) nounwind {
 entry:

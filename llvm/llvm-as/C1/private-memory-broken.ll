@@ -1,9 +1,9 @@
-; RUN: not llc -verify-machineinstrs -march=amdgcn -mcpu=SI %s -o /dev/null 2>&1 | FileCheck %s
-; RUN: not llc -verify-machineinstrs -march=amdgcn -mcpu=tonga %s -o /dev/null 2>&1 | FileCheck %s
 
-; Make sure promote alloca pass doesn't crash
 
-; CHECK: unsupported call
+
+
+
+
 
 declare i32 @foo(i32*) nounwind
 

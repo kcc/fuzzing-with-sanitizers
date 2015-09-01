@@ -1,8 +1,8 @@
-; RUN: llc < %s
 
-@g = global i32 0               ; <i32*> [#uses=1]
+
+@g = global i32 0               
 
 define i32 @main() {
-        %h = load i32, i32* @g               ; <i32> [#uses=1]
+        %h = load i32, i32* @g               
         ret i32 %h
 }

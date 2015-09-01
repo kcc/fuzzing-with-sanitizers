@@ -1,9 +1,9 @@
-; This testcase causes an infinite loop in the instruction combiner,
-; because it changes a pattern and the original pattern is almost
-; identical to the newly-generated pattern.
-; RUN: opt < %s -instcombine -disable-output
 
-;PR PR9216
+
+
+
+
+
 
 target triple = "x86_64-unknown-linux-gnu"
 

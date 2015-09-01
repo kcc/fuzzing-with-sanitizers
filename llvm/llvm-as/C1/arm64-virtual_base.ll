@@ -1,5 +1,5 @@
-; RUN: llc < %s -O3 -march arm64 | FileCheck %s
-; <rdar://13463602>
+
+
 
 %struct.Counter_Struct = type { i64, i64 }
 %struct.Bicubic_Patch_Struct = type { %struct.Method_Struct*, i32, %struct.Object_Struct*, %struct.Texture_Struct*, %struct.Interior_Struct*, %struct.Object_Struct*, %struct.Object_Struct*, %struct.Bounding_Box_Struct, i64, i32, i32, i32, [4 x [4 x [3 x double]]], [3 x double], double, double, %struct.Bezier_Node_Struct* }
@@ -32,11 +32,11 @@
 %struct.Bezier_Node_Struct = type { i32, [3 x double], double, i32, i8* }
 
 define void @Precompute_Patch_Values(%struct.Bicubic_Patch_Struct* %Shape) {
-; CHECK: Precompute_Patch_Values
-; CHECK: ldr [[VAL:x[0-9]+]], [x0, #288]
-; CHECK-NEXT: str [[VAL]], [sp, #232]
-; CHECK-NEXT: ldr [[VAL2:q[0-9]+]], [x0, #272]
-; CHECK-NEXT: stur [[VAL2]], {{\[}}sp, #216]
+
+
+
+
+
 entry:
   %Control_Points = alloca [16 x [3 x double]], align 8
   %arraydecay5.3.1 = getelementptr inbounds [16 x [3 x double]], [16 x [3 x double]]* %Control_Points, i64 0, i64 9, i64 0
@@ -47,5 +47,5 @@ entry:
   ret void
 }
 
-; Function Attrs: nounwind
+
 declare void @llvm.memcpy.p0i8.p0i8.i64(i8* nocapture, i8* nocapture, i64, i32, i1)

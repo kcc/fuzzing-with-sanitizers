@@ -1,23 +1,23 @@
-; RUN: opt -mtriple=x86_64-pc-windows-msvc -winehprepare -S -o - < %s | FileCheck %s
 
-; This test is based on the following code:
-;
-; class Obj {
-; public:
-;   ~Obj();
-; };
-;
-; void test(void)
-; {
-;   try {
-;     Obj o;
-;     throw 1;
-;   } catch (...) {
-;     throw;
-;   }
-; }
 
-; ModuleID = 'cppeh-catch-and-throw.cpp'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-m:w-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-pc-windows-msvc"
 
@@ -42,14 +42,14 @@ $_TI1H = comdat any
 @_CTA1H = linkonce_odr unnamed_addr constant %eh.CatchableTypeArray.1 { i32 1, [1 x i32] [i32 trunc (i64 sub nuw nsw (i64 ptrtoint (%eh.CatchableType* @"_CT??_R0H@84" to i64), i64 ptrtoint (i8* @__ImageBase to i64)) to i32)] }, section ".xdata", comdat
 @_TI1H = linkonce_odr unnamed_addr constant %eh.ThrowInfo { i32 0, i32 0, i32 0, i32 trunc (i64 sub nuw nsw (i64 ptrtoint (%eh.CatchableTypeArray.1* @_CTA1H to i64), i64 ptrtoint (i8* @__ImageBase to i64)) to i32) }, section ".xdata", comdat
 
-; This is just a minimal check to verify that main was handled by WinEHPrepare.
-; CHECK: define void @"\01?test@@YAXXZ"()
-; CHECK: entry:
-; CHECK:   call void (...) @llvm.localescape
-; CHECK:   invoke void @_CxxThrowException
-; CHECK: }
 
-; Function Attrs: uwtable
+
+
+
+
+
+
+
 define void @"\01?test@@YAXXZ"() #0 personality i8* bitcast (i32 (...)* @__CxxFrameHandler3 to i8*) {
 entry:
   %o = alloca %class.Obj, align 1
@@ -61,7 +61,7 @@ entry:
   invoke void @_CxxThrowException(i8* %0, %eh.ThrowInfo* @_TI1H) #3
           to label %unreachable unwind label %lpad
 
-lpad:                                             ; preds = %entry
+lpad:                                             
   %1 = landingpad { i8*, i32 }
           catch i8* null
   %2 = extractvalue { i8*, i32 } %1, 0
@@ -71,13 +71,13 @@ lpad:                                             ; preds = %entry
   call void @"\01??1Obj@@QEAA@XZ"(%class.Obj* %o) #2
   br label %catch
 
-catch:                                            ; preds = %lpad
+catch:                                            
   %exn = load i8*, i8** %exn.slot
   call void @llvm.eh.begincatch(i8* %exn, i8* null) #2
   invoke void @_CxxThrowException(i8* null, %eh.ThrowInfo* null) #3
           to label %unreachable unwind label %lpad1
 
-lpad1:                                            ; preds = %catch
+lpad1:                                            
   %4 = landingpad { i8*, i32 }
           cleanup
   %5 = extractvalue { i8*, i32 } %4, 0
@@ -87,48 +87,48 @@ lpad1:                                            ; preds = %catch
   call void @llvm.eh.endcatch() #2
   br label %eh.resume
 
-try.cont:                                         ; No predecessors!
+try.cont:                                         
   ret void
 
-eh.resume:                                        ; preds = %lpad1
+eh.resume:                                        
   %exn2 = load i8*, i8** %exn.slot
   %sel = load i32, i32* %ehselector.slot
   %lpad.val = insertvalue { i8*, i32 } undef, i8* %exn2, 0
   %lpad.val3 = insertvalue { i8*, i32 } %lpad.val, i32 %sel, 1
   resume { i8*, i32 } %lpad.val3
 
-unreachable:                                      ; preds = %catch, %entry
+unreachable:                                      
   unreachable
 }
 
-; Verify that we inserted a stub invoke into the outlined cleanup handler.
-;
-; CHECK-LABEL: define internal void @"\01?test@@YAXXZ.cleanup"(i8*, i8*)
-; CHECK: entry:
-; CHECK:   call i8* @llvm.localrecover
-; CHECK:   call void @"\01??1Obj@@QEAA@XZ"
-; CHECK:   invoke void @llvm.donothing()
-; CHECK:           to label %[[SPLIT_LABEL:.+]] unwind label %[[LPAD_LABEL:.+]]
-;
-; CHECK: [[SPLIT_LABEL]]
-;
-; CHECK: [[LPAD_LABEL]]
-; CHECK:   landingpad { i8*, i32 }
-; CHECK:           cleanup
-; CHECK:   unreachable
-; CHECK: }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 declare void @_CxxThrowException(i8*, %eh.ThrowInfo*)
 
 declare i32 @__CxxFrameHandler3(...)
 
-; Function Attrs: nounwind
+
 declare void @"\01??1Obj@@QEAA@XZ"(%class.Obj*) #1
 
-; Function Attrs: nounwind
+
 declare void @llvm.eh.begincatch(i8* nocapture, i8* nocapture) #2
 
-; Function Attrs: nounwind
+
 declare void @llvm.eh.endcatch() #2
 
 attributes #0 = { uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "unsafe-fp-math"="false" "use-soft-float"="false" }

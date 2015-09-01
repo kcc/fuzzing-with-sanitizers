@@ -1,21 +1,21 @@
-;RUN: llc < %s -march=r600 -mcpu=redwood | FileCheck %s
 
-;CHECK: TEX_SAMPLE T{{[0-9]+\.XYZW, T[0-9]+\.XYZW}} RID:0 SID:0 CT:NNNN
-;CHECK: TEX_SAMPLE T{{[0-9]+\.XYZW, T[0-9]+\.XYZW}} RID:0 SID:0 CT:NNNN
-;CHECK: TEX_SAMPLE T{{[0-9]+\.XYZW, T[0-9]+\.XYZW}} RID:0 SID:0 CT:NNNN
-;CHECK: TEX_SAMPLE T{{[0-9]+\.XYZW, T[0-9]+\.XYZW}} RID:0 SID:0 CT:NNNN
-;CHECK: TEX_SAMPLE T{{[0-9]+\.XYZW, T[0-9]+\.XYZW}} RID:0 SID:0 CT:UUNN
-;CHECK: TEX_SAMPLE_C T{{[0-9]+\.XYZW, T[0-9]+\.XYZZ}} RID:0 SID:0 CT:NNNN
-;CHECK: TEX_SAMPLE_C T{{[0-9]+\.XYZW, T[0-9]+\.XYZZ}} RID:0 SID:0 CT:NNNN
-;CHECK: TEX_SAMPLE_C T{{[0-9]+\.XYZW, T[0-9]+\.XYZZ}} RID:0 SID:0 CT:UUNN
-;CHECK: TEX_SAMPLE T{{[0-9]+\.XYZW, T[0-9]+\.XYYW}} RID:0 SID:0 CT:NNUN
-;CHECK: TEX_SAMPLE T{{[0-9]+\.XYZW, T[0-9]+\.XYZW}} RID:0 SID:0 CT:NNUN
-;CHECK: TEX_SAMPLE_C T{{[0-9]+\.XYZW, T[0-9]+\.XYYZ}} RID:0 SID:0 CT:NNUN
-;CHECK: TEX_SAMPLE_C T{{[0-9]+\.XYZW, T[0-9]+\.XYZW}} RID:0 SID:0 CT:NNUN
-;CHECK: TEX_SAMPLE_C T{{[0-9]+\.XYZW, T[0-9]+\.XYZW}} RID:0 SID:0 CT:NNNN
-;CHECK: TEX_SAMPLE T{{[0-9]+\.XYZW, T[0-9]+\.XYZW}} RID:0 SID:0 CT:NNNN
-;CHECK: TEX_SAMPLE T{{[0-9]+\.XYZW, T[0-9]+\.XYZW}} RID:0 SID:0 CT:NNNN
-;CHECK: TEX_SAMPLE T{{[0-9]+\.XYZW, T[0-9]+\.XYZW}} RID:0 SID:0 CT:NNUN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @test(<4 x float> addrspace(1)* %out, <4 x float> addrspace(1)* %in) {
    %addr = load <4 x float>, <4 x float> addrspace(1)* %in

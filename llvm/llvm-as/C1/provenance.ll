@@ -1,4 +1,4 @@
-; RUN: opt -disable-output -pa-eval %s 2>&1 | FileCheck %s
+
 
 @"\01l_objc_msgSend_fixup_" = global i8 0
 @g1 = global i8 0, section "__OBJC,__message_refs,literal_pointers,no_dead_strip"
@@ -36,17 +36,17 @@ define void @f(i8* %a, i8** %b, i8** %c) {
   ret void
 }
 
-; CHECK: y1 and y2 are related.
-; CHECK: y1 and y3 are related.
-; CHECK: y2 and y3 are related.
-; CHECK: x0 and y1 are not related.
-; CHECK: x0 and y2 are not related.
-; CHECK: x0 and y3 are not related.
-; CHECK: l_objc_msgSend_fixup_ and y1 are not related.
-; CHECK: l_objc_msgSend_fixup_ and y2 are not related.
-; CHECK: l_objc_msgSend_fixup_ and y3 are not related.
-; CHECK: x1 and y1 are not related.
-; CHECK: x2 and y1 are not related.
-; CHECK: x3 and y1 are not related.
-; CHECK: x4 and y1 are not related.
-; CHECK: x5 and y1 are not related.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

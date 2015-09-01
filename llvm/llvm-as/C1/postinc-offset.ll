@@ -1,9 +1,9 @@
-; RUN: llc -enable-aa-sched-mi -march=hexagon -mcpu=hexagonv5 < %s | FileCheck %s
 
-; CHECK: {
-; CHECK: ={{ *}}memd([[REG0:(r[0-9]+)]]{{ *}}++{{ *}}#8)
-; CHECK-NOT: memw([[REG0]]{{ *}}+{{ *}}#0){{ *}}=
-; CHECK: }
+
+
+
+
+
 
 define void @main() #0 {
 cond.end.6:

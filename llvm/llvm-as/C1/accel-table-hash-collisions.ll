@@ -1,54 +1,54 @@
-; REQUIRES: object-emission
-; RUN: %llc_dwarf -dwarf-accel-tables=Enable -filetype=obj -o - < %s | llvm-dwarfdump -debug-dump=apple_names - | FileCheck %s
 
-; Generated from the following C code using
-; clang -S -emit-llvm hash-collision.c
-;
-; The names of the variables have been chosen so that they produce hash collisions.
-; There are 12 names here that are hashed to only 6 hashes (each pair of lines
-; hashes to the same value, see the CHECK lines below).
-;
-; int ForceTopDown;
-; int _ZNSt3__116allocator_traitsINS_9allocatorINS_11__tree_nodeINS_12__value_typeIPN4llvm10BasicBlockEPNS4_10RegionNodeEEEPvEEEEE11__constructIS9_JNS_4pairIS6_S8_EEEEEvNS_17integral_constantIbLb1EEERSC_PT_DpOT0_;
-; int _ZN5clang23DataRecursiveASTVisitorIN12_GLOBAL__N_124UnusedBackingIvarCheckerEE26TraverseCUDAKernelCallExprEPNS_18CUDAKernelCallExprE; 
-; int _ZN4llvm16DenseMapIteratorIPNS_10MDLocationENS_6detail13DenseSetEmptyENS_10MDNodeInfoIS1_EENS3_12DenseSetPairIS2_EELb0EE23AdvancePastEmptyBucketsEv;
-; int _ZNK4llvm12LivePhysRegs5printERNS_11raw_ostreamE;
-; int _ZN4llvm15ScalarEvolution14getSignedRangeEPKNS_4SCEVE;
-; int k1;
-; int is;
-; int setStmt;
-; int _ZN4llvm5TwineC1Ei;
-; int _ZNK5clang12OverrideAttr5cloneERNS_10ASTContextE;
-; int _ZN4llvm22MachineModuleInfoMachOD2Ev;
 
-; Check that we have the right amount of hashes.
-; CHECK: Bucket count = 6
-; CHECK: Hashes count = 6
 
-; Check that all the names are present in the output
-; CHECK:  Hash = 0x00597841
-; CHECK:    Name: {{[0-9a-f]*}} "is"
-; CHECK:    Name: {{[0-9a-f]*}} "k1"
 
-; CHECK: Hash = 0xa4b42a1e
-; CHECK:    Name: {{[0-9a-f]*}} "_ZN5clang23DataRecursiveASTVisitorIN12_GLOBAL__N_124UnusedBackingIvarCheckerEE26TraverseCUDAKernelCallExprEPNS_18CUDAKernelCallExprE"
-; CHECK:    Name: {{[0-9a-f]*}} "_ZN4llvm16DenseMapIteratorIPNS_10MDLocationENS_6detail13DenseSetEmptyENS_10MDNodeInfoIS1_EENS3_12DenseSetPairIS2_EELb0EE23AdvancePastEmptyBucketsEv"
 
-; CHECK: Hash = 0xeee7c0b2
-; CHECK:    Name: {{[0-9a-f]*}} "_ZNK4llvm12LivePhysRegs5printERNS_11raw_ostreamE"
-; CHECK:    Name: {{[0-9a-f]*}} "_ZN4llvm15ScalarEvolution14getSignedRangeEPKNS_4SCEVE"
 
-; CHECK: Hash = 0xea48ac5f
-; CHECK:    Name: {{[0-9a-f]*}} "ForceTopDown"
-; CHECK:    Name: {{[0-9a-f]*}} "_ZNSt3__116allocator_traitsINS_9allocatorINS_11__tree_nodeINS_12__value_typeIPN4llvm10BasicBlockEPNS4_10RegionNodeEEEPvEEEEE11__constructIS9_JNS_4pairIS6_S8_EEEEEvNS_17integral_constantIbLb1EEERSC_PT_DpOT0_"
 
-; CHECK:  Hash = 0x6b22f71f
-; CHECK:    Name: {{[0-9a-f]*}} "_ZNK5clang12OverrideAttr5cloneERNS_10ASTContextE"
-; CHECK:    Name: {{[0-9a-f]*}} "_ZN4llvm22MachineModuleInfoMachOD2Ev"
 
-; CHECK:  Hash = 0x8c248979
-; CHECK:    Name: {{[0-9a-f]*}} "setStmt"
-; CHECK:    Name: {{[0-9a-f]*}} "_ZN4llvm5TwineC1Ei"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

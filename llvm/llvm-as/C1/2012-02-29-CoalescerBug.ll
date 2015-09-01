@@ -1,5 +1,5 @@
-; RUN: llc -O1 <%s
-; PR12138
+
+
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64-f80:128:128-n8:16:32-S128"
 target triple = "i386-apple-macosx10.7.0"
 
@@ -20,22 +20,22 @@ entry:
   %tobool4 = icmp eq i32 %1, 0
   br label %for.cond
 
-for.cond:                                         ; preds = %if.end, %entry
+for.cond:                                         
   %f.1.0 = phi i32 [ undef, %entry ], [ %sub, %if.end ]
   %g.0 = phi i64 [ 0, %entry ], [ %ins, %if.end ]
   %tobool = icmp eq i32 %f.1.0, 0
   br i1 %tobool, label %for.end, label %for.body
 
-for.body:                                         ; preds = %for.cond
+for.body:                                         
   %2 = lshr i64 %g.0, 32
   %conv = trunc i64 %2 to i16
   br i1 %tobool2, label %lor.rhs, label %lor.end
 
-lor.rhs:                                          ; preds = %for.body
+lor.rhs:                                          
   store i32 1, i32* @e, align 4
   br label %lor.end
 
-lor.end:                                          ; preds = %lor.rhs, %for.body
+lor.end:                                          
   %xor.i = xor i16 %conv, 1
   %p1.lobit.i8 = lshr i64 %g.0, 47
   %p1.lobit.i8.tr = trunc i64 %p1.lobit.i8 to i16
@@ -47,12 +47,12 @@ lor.end:                                          ; preds = %lor.rhs, %for.body
   store i32 %conv3, i32* @b, align 4
   br i1 %tobool4, label %if.end, label %for.end
 
-if.end:                                           ; preds = %lor.end
+if.end:                                           
   %mask = and i64 %g.0, -256
   %ins = or i64 %mask, 1
   %sub = add nsw i32 %f.1.0, -1
   br label %for.cond
 
-for.end:                                          ; preds = %lor.end, %for.cond
+for.end:                                          
   ret void
 }

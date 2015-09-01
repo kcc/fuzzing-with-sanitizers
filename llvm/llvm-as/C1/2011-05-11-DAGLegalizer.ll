@@ -1,6 +1,6 @@
-; RUN: llc -mtriple=thumbv6-apple-darwin < %s
-; rdar://problem/9416774
-; ModuleID = 'reduced.ll'
+
+
+
 
 target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:32-f32:32:32-f64:32:32-v64:32:64-v128:32:128-a0:0:32-n32"
 target triple = "thumbv7-apple-ios"
@@ -22,7 +22,7 @@ entry:
   store %struct.MMMMMMMMMMMM* %aidData, %struct.MMMMMMMMMMMM** %aidData.addr, align 4
   br label %do.body
 
-do.body:                                          ; preds = %entry
+do.body:                                          
   %tmp = load i8*, i8** @kkkkkk, align 4
   %tmp1 = load %struct.MMMMMMMMMMMM*, %struct.MMMMMMMMMMMM** %aidData.addr
   %eph = getelementptr inbounds %struct.MMMMMMMMMMMM, %struct.MMMMMMMMMMMM* %tmp1, i32 0, i32 0
@@ -51,7 +51,7 @@ do.body:                                          ; preds = %entry
   call void (i8*, i32, i8*, i8*, ...) @CLLoggingLog(i8* %tmp, i32 2, i8* getelementptr inbounds ([62 x i8], [62 x i8]* @__PRETTY_FUNCTION__._ZN12CLGll, i32 0, i32 0), i8* getelementptr inbounds ([75 x i8], [75 x i8]* @.str, i32 0, i32 0), %struct.RRRRRRRR* byval %agg.tmp, %struct.RRRRRRRR* byval %agg.tmp4, %struct.RRRRRRRR* byval %agg.tmp10, %struct.RRRRRRRR* byval %agg.tmp16)
   br label %do.end
 
-do.end:                                           ; preds = %do.body
+do.end:                                           
   ret void
 }
 

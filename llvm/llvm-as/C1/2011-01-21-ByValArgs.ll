@@ -1,4 +1,4 @@
-;RUN: llc -march=sparc < %s | FileCheck %s
+
 
 %struct.foo_t = type { i32, i32, i32 }
 
@@ -6,11 +6,11 @@
 
 define i32 @test() nounwind {
 entry:
-;CHECK-LABEL:     test:
-;CHECK:     st
-;CHECK:     st
-;CHECK:     st
-;CHECK:     bar
+
+
+
+
+
   %0 = tail call i32 @bar(%struct.foo_t* byval @s) nounwind
   ret i32 %0
 }

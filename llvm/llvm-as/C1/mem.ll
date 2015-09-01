@@ -1,4 +1,4 @@
-; RUN: llc -mtriple=arm-eabi %s -o - | FileCheck %s
+
 
 define void @f1() {
 entry:
@@ -6,7 +6,7 @@ entry:
         ret void
 }
 
-; CHECK: strb
+
 
 define void @f2() {
 entry:
@@ -14,5 +14,5 @@ entry:
         ret void
 }
 
-; CHECK: strh
+
 

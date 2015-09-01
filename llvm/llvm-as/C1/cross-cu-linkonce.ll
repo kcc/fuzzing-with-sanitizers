@@ -1,34 +1,34 @@
-; REQUIRES: object-emission
 
-; RUN: %llc_dwarf -O0 -filetype=obj < %s | llvm-dwarfdump -debug-dump=info - | FileCheck %s
 
-; Built from source:
-; $ clang++ a.cpp b.cpp -g -c -emit-llvm
-; $ llvm-link a.bc b.bc -o ab.bc
-; $ cat a.cpp
-; # 1 "func.h"
-; inline int func(int i) {
-;   return i * 2;
-; }
-; int (*x)(int) = &func;
-; $ cat b.cpp
-; # 1 "func.h"
-; inline int func(int i) {
-;   return i * 2;
-; }
-; int (*y)(int) = &func;
 
-; CHECK: DW_TAG_compile_unit
-; CHECK:   DW_TAG_subprogram
-; CHECK-NOT: DW_TAG
-; CHECK:     DW_AT_name {{.*}} "func"
-; CHECK: DW_TAG_compile_unit
-; CHECK-NOT: DW_TAG_subprogram
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @x = global i32 (i32)* @_Z4funci, align 8
 @y = global i32 (i32)* @_Z4funci, align 8
 
-; Function Attrs: inlinehint nounwind uwtable
+
 define linkonce_odr i32 @_Z4funci(i32 %i) #0 {
   %1 = alloca i32, align 4
   store i32 %i, i32* %1, align 4
@@ -38,7 +38,7 @@ define linkonce_odr i32 @_Z4funci(i32 %i) #0 {
   ret i32 %3, !dbg !22
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
 attributes #0 = { inlinehint nounwind uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

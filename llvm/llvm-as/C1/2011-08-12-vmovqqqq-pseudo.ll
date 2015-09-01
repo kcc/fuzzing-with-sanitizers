@@ -1,6 +1,6 @@
-; RUN: llc %s -mtriple=thumbv7-apple-darwin -verify-machineinstrs -mcpu=cortex-a9 -O0 -o -
-; Make sure that the VMOVQQQQ pseudo instruction is handled properly
-; by codegen.
+
+
+
 
 define void @test_vmovqqqq_pseudo() nounwind ssp {
 entry:

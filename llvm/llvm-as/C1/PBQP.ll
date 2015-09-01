@@ -1,4 +1,4 @@
-; RUN: llc -regalloc=pbqp < %s
+
 
 define i32 @foo() {
 entry:

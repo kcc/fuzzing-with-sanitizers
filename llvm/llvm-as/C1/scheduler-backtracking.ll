@@ -1,13 +1,13 @@
-; RUN: llc -march=x86-64 < %s -pre-RA-sched=list-ilp    | FileCheck %s
-; RUN: llc -march=x86-64 < %s -pre-RA-sched=list-hybrid | FileCheck %s
-; RUN: llc -march=x86-64 < %s -pre-RA-sched=source      | FileCheck %s
-; RUN: llc -march=x86-64 < %s -pre-RA-sched=list-burr   | FileCheck %s
-; RUN: llc -march=x86-64 < %s -pre-RA-sched=linearize   | FileCheck %s
 
-; PR22304 https://llvm.org/bugs/show_bug.cgi?id=22304
-; Tests checking backtracking in source scheduler. llc used to crash on them.
 
-; CHECK-LABEL: test1
+
+
+
+
+
+
+
+
 define i256 @test1(i256 %a) {
   %b = add i256 %a, 1 
   %m = shl i256 %b, 1
@@ -19,7 +19,7 @@ define i256 @test1(i256 %a) {
   ret i256 %f
 }
 
-; CHECK-LABEL: test2
+
 define i256 @test2(i256 %a) {
   %b = sub i256 0, %a
   %c = and i256 %b, %a
@@ -27,7 +27,7 @@ define i256 @test2(i256 %a) {
   ret i256 %d
 }
 
-; CHECK-LABEL: test3
+
 define i256 @test3(i256 %n) {
   %m = sub i256 -1, %n
   %x = sub i256 0, %n
@@ -38,7 +38,7 @@ define i256 @test3(i256 %n) {
 
 declare i256 @llvm.ctlz.i256(i256, i1) nounwind readnone
 
-; CHECK-LABEL: test4
+
 define i64 @test4(i64 %a, i64 %b) {
   %r = zext i64 %b to i256
   %u = add i256 %r, 1

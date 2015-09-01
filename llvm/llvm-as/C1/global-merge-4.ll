@@ -1,4 +1,4 @@
-; RUN: llc %s -mtriple=aarch64-linux-gnuabi -aarch64-global-merge -o - | FileCheck %s
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-n32:64-S128"
 target triple = "arm64-apple-ios7.0.0"
@@ -7,7 +7,7 @@ target triple = "arm64-apple-ios7.0.0"
 @baz = internal global [5 x i32] zeroinitializer, align 4
 @foo = internal global [5 x i32] zeroinitializer, align 4
 
-; Function Attrs: nounwind ssp
+
 define internal void @initialize() #0 {
   %1 = tail call i32 bitcast (i32 (...)* @calc to i32 ()*)() #2
   store i32 %1, i32* getelementptr inbounds ([5 x i32], [5 x i32]* @bar, i64 0, i64 0), align 4
@@ -34,7 +34,7 @@ define internal void @initialize() #0 {
 
 declare i32 @calc(...)
 
-; Function Attrs: nounwind ssp
+
 define internal void @calculate() #0 {
   %1 = load i32, i32* getelementptr inbounds ([5 x i32], [5 x i32]* @bar, i64 0, i64 0), align 4
   %2 = load i32, i32* getelementptr inbounds ([5 x i32], [5 x i32]* @baz, i64 0, i64 0), align 4
@@ -59,14 +59,14 @@ define internal void @calculate() #0 {
   ret void
 }
 
-; Function Attrs: nounwind readnone ssp
+
 define internal i32* @returnFoo() #1 {
   ret i32* getelementptr inbounds ([5 x i32], [5 x i32]* @foo, i64 0, i64 0)
 }
 
-;CHECK:	.type	.L_MergedGlobals,@object  // @_MergedGlobals
-;CHECK:	.local	.L_MergedGlobals
-;CHECK:	.comm	.L_MergedGlobals,60,16
+
+
+
 
 attributes #0 = { nounwind ssp }
 attributes #1 = { nounwind readnone ssp }

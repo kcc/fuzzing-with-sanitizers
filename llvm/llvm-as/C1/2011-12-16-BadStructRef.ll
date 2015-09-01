@@ -1,8 +1,8 @@
-; RUN: llc -mtriple=x86_64-apple-macosx10.7 %s -o %t -filetype=obj
-; RUN: llvm-dwarfdump -debug-dump=info %t | FileCheck %s
 
-; CHECK: b_ref
-; CHECK-NOT: AT_bit_size
+
+
+
+
 
 %struct.bar = type { %struct.baz, %struct.baz* }
 %struct.baz = type { i32 }
@@ -118,16 +118,16 @@ entry:
 !33 = !DIDerivedType(tag: DW_TAG_pointer_type, size: 64, align: 64, baseType: !34)
 !34 = !DIBasicType(tag: DW_TAG_base_type, name: "char", size: 8, align: 8, encoding: DW_ATE_signed_char)
 !35 = !{!36}
-!36 = !{} ; previously: invalid DW_TAG_base_type
+!36 = !{} 
 !37 = distinct !DISubprogram(name: "bar", linkageName: "_ZN3barC1Ei", line: 13, isLocal: false, isDefinition: true, virtualIndex: 6, flags: DIFlagPrototyped, isOptimized: false, file: !82, scope: null, type: !22, function: void (%struct.bar*, i32)* @_ZN3barC1Ei, declaration: !21)
 !38 = !{!39}
-!39 = !{} ; previously: invalid DW_TAG_base_type
+!39 = !{} 
 !40 = distinct !DISubprogram(name: "bar", linkageName: "_ZN3barC2Ei", line: 13, isLocal: false, isDefinition: true, virtualIndex: 6, flags: DIFlagPrototyped, isOptimized: false, file: !82, scope: null, type: !22, function: void (%struct.bar*, i32)* @_ZN3barC2Ei, declaration: !21)
 !41 = !{!42}
-!42 = !{} ; previously: invalid DW_TAG_base_type
+!42 = !{} 
 !43 = distinct !DISubprogram(name: "baz", linkageName: "_ZN3bazC1Ei", line: 6, isLocal: false, isDefinition: true, virtualIndex: 6, flags: DIFlagPrototyped, isOptimized: false, file: !82, scope: null, type: !14, function: void (%struct.baz*, i32)* @_ZN3bazC1Ei, declaration: !13)
 !44 = !{!45}
-!45 = !{} ; previously: invalid DW_TAG_base_type
+!45 = !{} 
 !46 = distinct !DISubprogram(name: "baz", linkageName: "_ZN3bazC2Ei", line: 6, isLocal: false, isDefinition: true, virtualIndex: 6, flags: DIFlagPrototyped, isOptimized: false, file: !82, scope: null, type: !14, function: void (%struct.baz*, i32)* @_ZN3bazC2Ei, declaration: !13)
 !49 = !DILocalVariable(name: "argc", line: 16, arg: 1, scope: !29, file: !6, type: !12)
 !50 = !DILocation(line: 16, column: 14, scope: !29)

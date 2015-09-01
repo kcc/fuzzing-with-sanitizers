@@ -1,5 +1,5 @@
-; RUN: opt -dse -disable-output < %s
-; test that we don't crash
+
+
 declare void @bar()
 
 define void @foo() {

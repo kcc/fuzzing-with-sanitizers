@@ -1,11 +1,11 @@
-; RUN: llc -mtriple=arm64-apple-ios -mcpu=cyclone < %s | FileCheck %s
-; Do not generate redundant select in early if-converstion pass. 
+
+
 
 define i32 @foo(i32 %a, i32 %b)  {
 entry:
-;CHECK-LABEL: foo:
-;CHECK: csinc
-;CHECK-NOT: csel
+
+
+
   %sub = sub nsw i32 %b, %a
   %cmp10 = icmp sgt i32 %a, 0
   br i1 %cmp10, label %while.body.lr.ph, label %while.end

@@ -1,10 +1,10 @@
-; RUN: llc  %s -mtriple=armv7-linux-gnueabi -o - | \
-; RUN:    FileCheck  -check-prefix=ELFASM %s 
-; RUN: llc  %s -mtriple=armv7-linux-gnueabi -filetype=obj -o - | \
-; RUN:    llvm-readobj -s -sd | FileCheck  -check-prefix=ELFOBJ %s
 
-;; Make sure that bl __aeabi_read_tp is materialized and fixed up correctly
-;; in the obj case. 
+
+
+
+
+
+
 
 @i = external thread_local global i32
 @a = external global i8
@@ -18,26 +18,26 @@ entry:
     i32 13, label %bb1
   ]
 
-bb:                                               ; preds = %entry
+bb:                                               
   %1 = tail call arm_aapcs_vfpcc  i32 @foo(i8* @a) nounwind
   ret i32 %1
-; ELFASM:       	bl	__aeabi_read_tp
 
 
-; ELFOBJ:      Sections [
-; ELFOBJ:        Section {
-; ELFOBJ:          Name: .text
-; ELFOBJ:          SectionData (
-;;;                  BL __aeabi_read_tp is ---------+
-;;;                                                 V
-; ELFOBJ-NEXT:     0000: 00482DE9 3C009FE5 00109FE7 FEFFFFEB
 
 
-bb1:                                              ; preds = %entry
+
+
+
+
+
+
+
+
+bb1:                                              
   %2 = tail call arm_aapcs_vfpcc  i32 @bar(i32* bitcast ([10 x i8]* @b to i32*)) nounwind
   ret i32 %2
 
-bb2:                                              ; preds = %entry
+bb2:                                              
   ret i32 -1
 }
 

@@ -1,9 +1,9 @@
-; RUN: llc < %s -mtriple=x86_64-apple-darwin | FileCheck %s
+
 %0 = type { i64, i64 }
 %1 = type { i128, i1 }
 
 define %0 @x(i64 %a.coerce0, i64 %a.coerce1, i64 %b.coerce0, i64 %b.coerce1) nounwind uwtable ssp {
-; CHECK: x
+
 entry:
   %tmp16 = zext i64 %a.coerce0 to i128
   %tmp11 = zext i64 %a.coerce1 to i128
@@ -14,16 +14,16 @@ entry:
   %tmp4 = shl nuw i128 %tmp3, 64
   %ins = or i128 %tmp4, %tmp6
   %0 = tail call %1 @llvm.smul.with.overflow.i128(i128 %ins14, i128 %ins)
-; CHECK: callq   ___muloti4
+
   %1 = extractvalue %1 %0, 0
   %2 = extractvalue %1 %0, 1
   br i1 %2, label %overflow, label %nooverflow
 
-overflow:                                         ; preds = %entry
+overflow:                                         
   tail call void @llvm.trap()
   unreachable
 
-nooverflow:                                       ; preds = %entry
+nooverflow:                                       
   %tmp20 = trunc i128 %1 to i64
   %tmp21 = insertvalue %0 undef, i64 %tmp20, 0
   %tmp22 = lshr i128 %1, 64
@@ -34,7 +34,7 @@ nooverflow:                                       ; preds = %entry
 
 define %0 @foo(i64 %a.coerce0, i64 %a.coerce1, i64 %b.coerce0, i64 %b.coerce1) nounwind uwtable ssp {
 entry:
-; CHECK: foo
+
   %retval = alloca i128, align 16
   %coerce = alloca i128, align 16
   %a.addr = alloca i128, align 16
@@ -57,17 +57,17 @@ entry:
   %tmp = load i128, i128* %a.addr, align 16
   %tmp2 = load i128, i128* %b.addr, align 16
   %6 = call %1 @llvm.umul.with.overflow.i128(i128 %tmp, i128 %tmp2)
-; CHECK: cmov
-; CHECK: divti3
+
+
   %7 = extractvalue %1 %6, 0
   %8 = extractvalue %1 %6, 1
   br i1 %8, label %overflow, label %nooverflow
 
-overflow:                                         ; preds = %entry
+overflow:                                         
   call void @llvm.trap()
   unreachable
 
-nooverflow:                                       ; preds = %entry
+nooverflow:                                       
   store i128 %7, i128* %retval
   %9 = bitcast i128* %retval to %0*
   %10 = load %0, %0* %9, align 1

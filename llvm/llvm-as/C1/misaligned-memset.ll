@@ -1,9 +1,9 @@
-; RUN: llc -mtriple=x86_64-apple-darwin -mcpu=nehalem < %s | FileCheck %s
+
 
 @a = common global [3 x i64] zeroinitializer, align 16
 
 define i32 @main() nounwind ssp {
-; CHECK: movups
+
 entry:
   %retval = alloca i32, align 4
   store i32 0, i32* %retval

@@ -1,18 +1,18 @@
-; RUN: llc -asm-verbose=false -march=x86-64 -mtriple=x86_64-apple-darwin -o - < %s | FileCheck %s
 
-; LSR should leave non-affine expressions alone because it currently
-; doesn't know how to do anything with them, and when it tries, it
-; gets SCEVExpander's current expansion for them, which is suboptimal.
 
-; CHECK:        xorl %eax, %eax
-; CHECK-NEXT:   align
-; CHECK-NEXT: BB0_1:
-; CHECK-NEXT:   movq  %rax, (%rdx)
-; CHECK-NEXT:   addq  %rsi, %rax
-; CHECK-NEXT:   cmpq  %rdi, %rax
-; CHECK-NEXT:   jl
-; CHECK-NEXT:   imulq %rax, %rax
-; CHECK-NEXT:   ret
+
+
+
+
+
+
+
+
+
+
+
+
+
 define i64 @foo(i64 %n, i64 %s, i64* %p) nounwind {
 entry:
   br label %loop

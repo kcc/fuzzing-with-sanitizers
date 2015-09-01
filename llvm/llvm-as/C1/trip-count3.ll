@@ -1,11 +1,11 @@
-; RUN: opt < %s -scalar-evolution -analyze | FileCheck %s
 
-; ScalarEvolution can't compute a trip count because it doesn't know if
-; dividing by the stride will have a remainder. This could theoretically
-; be teaching it how to use a more elaborate trip count computation.
 
-; CHECK: Loop %bb3.i: backedge-taken count is ((64 + (-64 smax (-1 + (-1 * %0))) + %0) /u 64)
-; CHECK: Loop %bb3.i: max backedge-taken count is 33554431
+
+
+
+
+
+
 
 %struct.FILE = type { i32, i8*, i8*, i8*, i8*, i8*, i8*, i8*, i8*, i8*, i8*, i8*, %struct._IO_marker*, %struct.FILE*, i32, i32, i64, i16, i8, [1 x i8], i8*, i64, i8*, i8*, i8*, i8*, i64, i32, [20 x i8] }
 %struct.SHA_INFO = type { [5 x i32], i32, i32, [16 x i32] }
@@ -42,12 +42,12 @@ define void @sha_stream_bb3_2E_i(%struct.SHA_INFO* %sha_info, i8* %data1, i32, i
 newFuncRoot:
   br label %bb3.i
 
-sha_update.exit.exitStub:                         ; preds = %bb3.i
+sha_update.exit.exitStub:                         
   store i8* %buffer_addr.0.i, i8** %buffer_addr.0.i.out
   store i32 %count_addr.0.i, i32* %count_addr.0.i.out
   ret void
 
-bb2.i:                                            ; preds = %bb3.i
+bb2.i:                                            
   %1 = getelementptr %struct.SHA_INFO, %struct.SHA_INFO* %sha_info, i64 0, i32 3
   %2 = bitcast [16 x i32]* %1 to i8*
   call void @llvm.memcpy.p0i8.p0i8.i64(i8* %2, i8* %buffer_addr.0.i, i64 64, i32 1, i1 false)
@@ -55,17 +55,17 @@ bb2.i:                                            ; preds = %bb3.i
   %4 = bitcast i32* %3 to i8*
   br label %codeRepl
 
-codeRepl:                                         ; preds = %bb2.i
+codeRepl:                                         
   call void @sha_stream_bb3_2E_i_bb1_2E_i_2E_i(i8* %4)
   br label %byte_reverse.exit.i
 
-byte_reverse.exit.i:                              ; preds = %codeRepl
+byte_reverse.exit.i:                              
   call fastcc void @sha_transform(%struct.SHA_INFO* %sha_info) nounwind
   %5 = getelementptr i8, i8* %buffer_addr.0.i, i64 64
   %6 = add i32 %count_addr.0.i, -64
   br label %bb3.i
 
-bb3.i:                                            ; preds = %byte_reverse.exit.i, %newFuncRoot
+bb3.i:                                            
   %buffer_addr.0.i = phi i8* [ %data1, %newFuncRoot ], [ %5, %byte_reverse.exit.i ]
   %count_addr.0.i = phi i32 [ %0, %newFuncRoot ], [ %6, %byte_reverse.exit.i ]
   %7 = icmp sgt i32 %count_addr.0.i, 63

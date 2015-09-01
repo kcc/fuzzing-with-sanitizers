@@ -1,5 +1,5 @@
-; This file is used by first.ll, so it doesn't actually do anything itself
-; RUN: true
+
+
 
 %AnalysisResolver = type { i8, %PMDataManager* }
 %"DenseMap<P*,AU*>" = type { i64, %"pair<P*,AU*>"*, i64, i64 }

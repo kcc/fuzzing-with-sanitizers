@@ -1,13 +1,13 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv4 < %s | FileCheck %s
 
-; Check that post-increment store instructions are being generated.
-; CHECK: memw(r{{[0-9]+}}{{ *}}++{{ *}}#4{{ *}}){{ *}}={{ *}}r{{[0-9]+}}
+
+
+
 
 define i32 @sum(i32* nocapture %a, i16* nocapture %b, i32 %n) nounwind {
 entry:
   br label %for.body
 
-for.body:                                         ; preds = %for.body, %entry
+for.body:                                         
   %lsr.iv = phi i32 [ %lsr.iv.next, %for.body ], [ 10, %entry ]
   %arrayidx.phi = phi i32* [ %a, %entry ], [ %arrayidx.inc, %for.body ]
   %arrayidx1.phi = phi i16* [ %b, %entry ], [ %arrayidx1.inc, %for.body ]
@@ -24,6 +24,6 @@ for.body:                                         ; preds = %for.body, %entry
   %exitcond = icmp eq i32 %lsr.iv.next, 0
   br i1 %exitcond, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret i32 0
 }

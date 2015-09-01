@@ -1,4 +1,4 @@
-; RUN: llc < %s -mtriple=x86_64-unknown -mcpu=corei7
+
 
 define void @autogen_SD13708(i32) {
 BB:
@@ -60,7 +60,7 @@ BB:
   %Cmp26 = icmp ugt i64 %B, %B23
   br label %CF253
 
-CF253:                                            ; preds = %CF253, %CF271, %CF260, %BB
+CF253:                                            
   %L27 = load i8, i8* %0
   store i8 %L5, i8* %0
   %E28 = extractelement <2 x i64> zeroinitializer, i32 0
@@ -83,7 +83,7 @@ CF253:                                            ; preds = %CF253, %CF271, %CF2
   %E43 = extractelement <2 x i1> %Cmp41, i32 1
   br i1 %E43, label %CF253, label %CF256
 
-CF256:                                            ; preds = %CF256, %CF253
+CF256:                                            
   %Shuff44 = shufflevector <8 x i64> zeroinitializer, <8 x i64> zeroinitializer, <8 x i32> <i32 14, i32 0, i32 2, i32 4, i32 6, i32 undef, i32 undef, i32 12>
   %I45 = insertelement <8 x i32> zeroinitializer, i32 %FC, i32 0
   %ZE = zext i8 %L19 to i32
@@ -91,7 +91,7 @@ CF256:                                            ; preds = %CF256, %CF253
   %Cmp47 = icmp ult i64 %E6, 426618
   br i1 %Cmp47, label %CF256, label %CF271
 
-CF271:                                            ; preds = %CF256
+CF271:                                            
   %L48 = load i8, i8* %0
   store i8 %L27, i8* %0
   %E49 = extractelement <4 x i32> <i32 -1, i32 -1, i32 -1, i32 -1>, i32 2
@@ -103,7 +103,7 @@ CF271:                                            ; preds = %CF256
   %Cmp55 = icmp sgt i16 0, 18460
   br i1 %Cmp55, label %CF253, label %CF255
 
-CF255:                                            ; preds = %CF255, %CF266, %CF270, %CF271
+CF255:                                            
   %L56 = load i8, i8* %0
   store i8 %L35, i8* %0
   %E57 = extractelement <4 x i64> zeroinitializer, i32 3
@@ -115,7 +115,7 @@ CF255:                                            ; preds = %CF255, %CF266, %CF2
   %Cmp63 = icmp ult i64 %E6, %E57
   br i1 %Cmp63, label %CF255, label %CF266
 
-CF266:                                            ; preds = %CF255
+CF266:                                            
   %L64 = load i64, i64* %2
   store i8 17, i8* %0
   %E65 = extractelement <8 x i64> %Shuff21, i32 6
@@ -143,7 +143,7 @@ CF266:                                            ; preds = %CF255
   %Cmp85 = icmp ugt i64 %E6, %E57
   br i1 %Cmp85, label %CF255, label %CF261
 
-CF261:                                            ; preds = %CF261, %CF266
+CF261:                                            
   %L86 = load i8, i8* %0
   store i8 %L42, i8* %0
   %E87 = extractelement <16 x i8> <i8 -1, i8 -1, i8 -1, i8 -1, i8 -1, i8 -1, i8 -1, i8 -1, i8 -1, i8 -1, i8 -1, i8 -1, i8 -1, i8 -1, i8 -1, i8 -1>, i32 7
@@ -155,7 +155,7 @@ CF261:                                            ; preds = %CF261, %CF266
   %Cmp93 = icmp ugt i32 -1, %FC24
   br i1 %Cmp93, label %CF261, label %CF268
 
-CF268:                                            ; preds = %CF268, %CF261
+CF268:                                            
   %L94 = load i8, i8* %0
   store i8 %L5, i8* %0
   %E95 = extractelement <8 x i64> %Shuff58, i32 0
@@ -230,13 +230,13 @@ CF268:                                            ; preds = %CF268, %CF261
   %Cmp156 = icmp eq i64 198384, %4
   br i1 %Cmp156, label %CF268, label %CF270
 
-CF270:                                            ; preds = %CF268
+CF270:                                            
   %L157 = load i8, i8* %0
   store i8 %L157, i8* %0
   %E158 = extractelement <8 x i1> %Cmp78, i32 1
   br i1 %E158, label %CF255, label %CF260
 
-CF260:                                            ; preds = %CF270
+CF260:                                            
   %Shuff159 = shufflevector <8 x i64> zeroinitializer, <8 x i64> %Shuff81, <8 x i32> <i32 undef, i32 6, i32 8, i32 undef, i32 12, i32 14, i32 0, i32 2>
   %I160 = insertelement <2 x i1> %Cmp11, i1 %Cmp156, i32 0
   %B161 = urem <2 x i32> zeroinitializer, %Sl147
@@ -245,7 +245,7 @@ CF260:                                            ; preds = %CF270
   %Cmp164 = fcmp uge double 0xE603EE221901D6A0, 0xE603EE221901D6A0
   br i1 %Cmp164, label %CF253, label %CF254
 
-CF254:                                            ; preds = %CF254, %CF265, %CF263, %CF260
+CF254:                                            
   %L165 = load i8, i8* %0
   store i8 %Sl62, i8* %0
   %E166 = extractelement <8 x i64> %Shuff58, i32 1
@@ -257,13 +257,13 @@ CF254:                                            ; preds = %CF254, %CF265, %CF2
   %Cmp172 = icmp ugt i8 %E20, %L102
   br i1 %Cmp172, label %CF254, label %CF262
 
-CF262:                                            ; preds = %CF262, %CF254
+CF262:                                            
   %L173 = load i8, i8* %0
   store i8 %L94, i8* %0
   %E174 = extractelement <2 x i1> %Cmp70, i32 0
   br i1 %E174, label %CF262, label %CF264
 
-CF264:                                            ; preds = %CF264, %CF262
+CF264:                                            
   %Shuff175 = shufflevector <16 x i1> %Cmp, <16 x i1> %Cmp, <16 x i32> <i32 undef, i32 9, i32 undef, i32 13, i32 undef, i32 17, i32 19, i32 21, i32 23, i32 25, i32 27, i32 29, i32 undef, i32 1, i32 3, i32 5>
   %I176 = insertelement <8 x i64> %Shuff21, i64 419346, i32 1
   %B177 = lshr <2 x i32> %Sl17, zeroinitializer
@@ -280,14 +280,14 @@ CF264:                                            ; preds = %CF264, %CF262
   %Sl187 = select i1 %Cmp156, i1 %E43, i1 %Cmp26
   br i1 %Sl187, label %CF264, label %CF265
 
-CF265:                                            ; preds = %CF264
+CF265:                                            
   %Cmp188 = icmp uge <16 x i1> %Shuff175, %Cmp
   %L189 = load i8, i8* %0
   store i8 %L19, i8* %0
   %E190 = extractelement <2 x i1> %Cmp11, i32 0
   br i1 %E190, label %CF254, label %CF259
 
-CF259:                                            ; preds = %CF259, %CF265
+CF259:                                            
   %Shuff191 = shufflevector <8 x i1> %Cmp117, <8 x i1> %I30, <8 x i32> <i32 11, i32 13, i32 15, i32 1, i32 3, i32 5, i32 7, i32 9>
   %I192 = insertelement <16 x i1> %Cmp188, i1 %Cmp85, i32 13
   %B193 = urem <2 x i64> %Sl132, %Sl54
@@ -312,12 +312,12 @@ CF259:                                            ; preds = %CF259, %CF265
   %FC210 = fptoui double 0xE603EE221901D6A0 to i1
   br i1 %FC210, label %CF259, label %CF263
 
-CF263:                                            ; preds = %CF259
+CF263:                                            
   %Sl211 = select i1 %E174, i32 %ZE, i32 %ZE107
   %Cmp212 = icmp ne i32 %Se154, %Sl163
   br i1 %Cmp212, label %CF254, label %CF257
 
-CF257:                                            ; preds = %CF263
+CF257:                                            
   %L213 = load i8, i8* %0
   store i8 %L213, i8* %0
   %E214 = extractelement <8 x i64> %Shuff81, i32 3
@@ -345,17 +345,17 @@ CF257:                                            ; preds = %CF263
   %Sl234 = select i1 false, i1 %Cmp164, i1 %E43
   br label %CF
 
-CF:                                               ; preds = %CF, %CF257
+CF:                                               
   %Cmp235 = icmp ule i32 %Sl163, %Sl211
   br i1 %Cmp235, label %CF, label %CF252
 
-CF252:                                            ; preds = %CF252, %CF269, %CF
+CF252:                                            
   %L236 = load i8, i8* %0
   store i8 %L19, i8* %0
   %E237 = extractelement <16 x i1> %Shuff175, i32 15
   br i1 %E237, label %CF252, label %CF269
 
-CF269:                                            ; preds = %CF252
+CF269:                                            
   %Shuff238 = shufflevector <2 x i1> %I160, <2 x i1> %Cmp101, <2 x i32> undef
   %I239 = insertelement <8 x i64> zeroinitializer, i64 %4, i32 0
   %B240 = add i8 %L56, %Sl155
@@ -364,7 +364,7 @@ CF269:                                            ; preds = %CF252
   %Cmp243 = icmp eq i8 %L5, %L118
   br i1 %Cmp243, label %CF252, label %CF258
 
-CF258:                                            ; preds = %CF258, %CF269
+CF258:                                            
   %L244 = load i8, i8* %0
   store i8 %L19, i8* %0
   %E245 = extractelement <2 x i64> %B201, i32 1
@@ -376,7 +376,7 @@ CF258:                                            ; preds = %CF258, %CF269
   %Cmp251 = icmp eq i32 %FC24, %FC
   br i1 %Cmp251, label %CF258, label %CF267
 
-CF267:                                            ; preds = %CF258
+CF267:                                            
   store i8 %L42, i8* %0
   store i8 %Sl69, i8* %0
   store i8 %L5, i8* %0

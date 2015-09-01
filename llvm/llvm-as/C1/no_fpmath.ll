@@ -1,30 +1,30 @@
-; RUN: opt < %s -loop-vectorize -mtriple=x86_64-unknown-linux -S -pass-remarks='loop-vectorize' -pass-remarks-missed='loop-vectorize' -pass-remarks-analysis='loop-vectorize' 2>&1 | FileCheck %s
 
-; CHECK: remark: no_fpmath.c:6:11: loop not vectorized: cannot prove it is safe to reorder floating-point operations
-; CHECK: remark: no_fpmath.c:6:14: loop not vectorized:
-; CHECK: remark: no_fpmath.c:17:14: vectorized loop (vectorization width: 2, interleaved count: 2)
+
+
+
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.10.0"
 
-; Function Attrs: nounwind readonly ssp uwtable
+
 define double @cond_sum(i32* nocapture readonly %v, i32 %n) #0 {
 entry:
   %cmp.7 = icmp sgt i32 %n, 0, !dbg !3
   br i1 %cmp.7, label %for.body.preheader, label %for.cond.cleanup, !dbg !8
 
-for.body.preheader:                               ; preds = %entry
+for.body.preheader:                               
   br label %for.body, !dbg !9
 
-for.cond.cleanup.loopexit:                        ; preds = %for.body
+for.cond.cleanup.loopexit:                        
   %add.lcssa = phi double [ %add, %for.body ]
   br label %for.cond.cleanup, !dbg !10
 
-for.cond.cleanup:                                 ; preds = %for.cond.cleanup.loopexit, %entry
+for.cond.cleanup:                                 
   %a.0.lcssa = phi double [ 0.000000e+00, %entry ], [ %add.lcssa, %for.cond.cleanup.loopexit ]
   ret double %a.0.lcssa, !dbg !10
 
-for.body:                                         ; preds = %for.body.preheader, %for.body
+for.body:                                         
   %indvars.iv = phi i64 [ %indvars.iv.next, %for.body ], [ 0, %for.body.preheader ]
   %a.08 = phi double [ %add, %for.body ], [ 0.000000e+00, %for.body.preheader ]
   %arrayidx = getelementptr inbounds i32, i32* %v, i64 %indvars.iv, !dbg !9
@@ -38,24 +38,24 @@ for.body:                                         ; preds = %for.body.preheader,
   br i1 %exitcond, label %for.cond.cleanup.loopexit, label %for.body, !dbg !8, !llvm.loop !17
 }
 
-; Function Attrs: nounwind readonly ssp uwtable
+
 define double @cond_sum_loop_hint(i32* nocapture readonly %v, i32 %n) #0 {
 entry:
   %cmp.7 = icmp sgt i32 %n, 0, !dbg !19
   br i1 %cmp.7, label %for.body.preheader, label %for.cond.cleanup, !dbg !21
 
-for.body.preheader:                               ; preds = %entry
+for.body.preheader:                               
   br label %for.body, !dbg !22
 
-for.cond.cleanup.loopexit:                        ; preds = %for.body
+for.cond.cleanup.loopexit:                        
   %add.lcssa = phi double [ %add, %for.body ]
   br label %for.cond.cleanup, !dbg !23
 
-for.cond.cleanup:                                 ; preds = %for.cond.cleanup.loopexit, %entry
+for.cond.cleanup:                                 
   %a.0.lcssa = phi double [ 0.000000e+00, %entry ], [ %add.lcssa, %for.cond.cleanup.loopexit ]
   ret double %a.0.lcssa, !dbg !23
 
-for.body:                                         ; preds = %for.body.preheader, %for.body
+for.body:                                         
   %indvars.iv = phi i64 [ %indvars.iv.next, %for.body ], [ 0, %for.body.preheader ]
   %a.08 = phi double [ %add, %for.body ], [ 0.000000e+00, %for.body.preheader ]
   %arrayidx = getelementptr inbounds i32, i32* %v, i64 %indvars.iv, !dbg !22

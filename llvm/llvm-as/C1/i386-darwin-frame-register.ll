@@ -1,23 +1,23 @@
-; RUN: llc -filetype=obj %s -o - | llvm-dwarfdump -debug-dump=frames - | FileCheck %s
 
-; IR reduced from a dummy:
-; void foo() {}
 
-; x86 Darwin uses different register mappings for eh_frame and debug_frame
-; sections. Check that the right mapping is used in debug_frame.
-; In the debug_frame mapping, regsiter 4 is ESP, thus the below tests that
-; the CFA is ESP+4 upon function entry.
 
-; CHECK: .debug_frame contents:
-; CHECK: ffffffff CIE
-; CHECK-NOT: {{CIE|FDE}}
-; CHECK:   DW_CFA_def_cfa: reg4 +4
 
-; ModuleID = 'foo.c'
+
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-m:o-p:32:32-f64:32:64-f80:128-n8:16:32-S128"
 target triple = "i386-apple-macosx10.10.0"
 
-; Function Attrs: nounwind ssp
+
 define void @foo() #0 {
 entry:
   ret void

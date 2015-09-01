@@ -1,13 +1,13 @@
-; RUN: llc -march=x86-64 -mtriple=x86_64-apple-darwin -mcpu=corei7-avx -o - < %s | FileCheck %s
 
-;CHECK-LABEL: and_masks:
-;CHECK: vmovaps
-;CHECK: vcmpltp
-;CHECK: vcmpltp
-;CHECK: vandps
-;CHECK: vandps
-;CHECK: vmovaps
-;CHECK: ret
+
+
+
+
+
+
+
+
+
 
 define void @and_masks(<8 x float>* %a, <8 x float>* %b, <8 x float>* %c) nounwind uwtable noinline ssp {
   %v0 = load <8 x float>, <8 x float>* %a, align 16
@@ -21,12 +21,12 @@ define void @and_masks(<8 x float>* %a, <8 x float>* %b, <8 x float>* %c) nounwi
   ret void
 }
 
-;CHECK: neg_mask
-;CHECK: vcmpltps
-;CHECK: vxorps
-;CHECK: vandps
-;CHECK: vmovaps
-;CHECK: ret
+
+
+
+
+
+
 define void @neg_masks(<8 x float>* %a, <8 x float>* %b, <8 x float>* %c) nounwind uwtable noinline ssp {
   %v0 = load <8 x float>, <8 x float>* %a, align 16
   %v1 = load <8 x float>, <8 x float>* %b, align 16

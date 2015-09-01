@@ -1,4 +1,4 @@
-; RUN: llc < %s -o /dev/null
+
 
 define void @bar(i32 %i) nounwind uwtable ssp {
 entry:

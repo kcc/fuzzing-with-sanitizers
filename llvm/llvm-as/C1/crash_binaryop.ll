@@ -1,4 +1,4 @@
-; RUN: opt < %s -basicaa -slp-vectorizer -S -mtriple=x86_64-apple-macosx10.8.0 -mcpu=corei7
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-darwin13.3.0"
@@ -21,12 +21,12 @@ loop:
   %mul1 = fmul double %add1, 0.000000e+00
   %tmp = fadd double %postadd2_phi, 0.000000e+00
 
-  ; tryToVectorize() starts with this binary instruction.
-  ; At the same time vectorization wraps around the loop, vectorizes
-  ; postadd1/2 and eventually binary_V and tmp. So binary_V itself is replaced
-  ; with a vector instruction.
-  ; The SLPVectorizer crashed because it tried to use binary_V
-  ; after vectorization to re-arrange instructions.
+  
+  
+  
+  
+  
+  
   %binary_V = fadd double %mul1, %binaryop_B
 
   %postadd1 = fadd double %binary_V, 0.000000e+00

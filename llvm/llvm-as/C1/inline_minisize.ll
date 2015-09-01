@@ -1,4 +1,4 @@
-; RUN: opt -O2 -S < %s | FileCheck %s
+
 
 @data = common global i32* null, align 8
 
@@ -25,13 +25,13 @@ entry:
   store i32 0, i32* %i, align 4
   br label %for.cond
 
-for.cond:                                         ; preds = %for.inc, %entry
+for.cond:                                         
   %tmp6 = load i32, i32* %i, align 4
   %tmp7 = load i32, i32* %res, align 4
   %cmp = icmp slt i32 %tmp6, %tmp7
   br i1 %cmp, label %for.body, label %for.end
 
-for.body:                                         ; preds = %for.cond
+for.body:                                         
   %tmp8 = load i32, i32* %i, align 4
   %idxprom3 = sext i32 %tmp8 to i64
   %tmp9 = load i32*, i32** @data, align 8
@@ -39,23 +39,23 @@ for.body:                                         ; preds = %for.cond
   call void @fct0(i32* %arrayidx4)
   br label %for.inc
 
-for.inc:                                          ; preds = %for.body
+for.inc:                                          
   %tmp10 = load i32, i32* %i, align 4
   %inc = add nsw i32 %tmp10, 1
   store i32 %inc, i32* %i, align 4
   br label %for.cond
 
-for.end:                                          ; preds = %for.cond
+for.end:                                          
   store i32 0, i32* %i, align 4
   br label %for.cond5
 
-for.cond5:                                        ; preds = %for.inc10, %for.end
+for.cond5:                                        
   %tmp11 = load i32, i32* %i, align 4
   %tmp12 = load i32, i32* %res, align 4
   %cmp6 = icmp slt i32 %tmp11, %tmp12
   br i1 %cmp6, label %for.body7, label %for.end12
 
-for.body7:                                        ; preds = %for.cond5
+for.body7:                                        
   %tmp13 = load i32, i32* %i, align 4
   %idxprom8 = sext i32 %tmp13 to i64
   %tmp14 = load i32*, i32** @data, align 8
@@ -63,23 +63,23 @@ for.body7:                                        ; preds = %for.cond5
   call void @fct0(i32* %arrayidx9)
   br label %for.inc10
 
-for.inc10:                                        ; preds = %for.body7
+for.inc10:                                        
   %tmp15 = load i32, i32* %i, align 4
   %inc11 = add nsw i32 %tmp15, 1
   store i32 %inc11, i32* %i, align 4
   br label %for.cond5
 
-for.end12:                                        ; preds = %for.cond5
+for.end12:                                        
   store i32 0, i32* %i, align 4
   br label %for.cond13
 
-for.cond13:                                       ; preds = %for.inc18, %for.end12
+for.cond13:                                       
   %tmp16 = load i32, i32* %i, align 4
   %tmp17 = load i32, i32* %res, align 4
   %cmp14 = icmp slt i32 %tmp16, %tmp17
   br i1 %cmp14, label %for.body15, label %for.end20
 
-for.body15:                                       ; preds = %for.cond13
+for.body15:                                       
   %tmp18 = load i32, i32* %i, align 4
   %idxprom16 = sext i32 %tmp18 to i64
   %tmp19 = load i32*, i32** @data, align 8
@@ -87,13 +87,13 @@ for.body15:                                       ; preds = %for.cond13
   call void @fct0(i32* %arrayidx17)
   br label %for.inc18
 
-for.inc18:                                        ; preds = %for.body15
+for.inc18:                                        
   %tmp20 = load i32, i32* %i, align 4
   %inc19 = add nsw i32 %tmp20, 1
   store i32 %inc19, i32* %i, align 4
   br label %for.cond13
 
-for.end20:                                        ; preds = %for.cond13
+for.end20:                                        
   %tmp21 = load i32, i32* %res, align 4
   ret i32 %tmp21
 }
@@ -125,13 +125,13 @@ entry:
   store i32 0, i32* %i, align 4
   br label %for.cond
 
-for.cond:                                         ; preds = %for.inc, %entry
+for.cond:                                         
   %tmp6 = load i32, i32* %i, align 4
   %tmp7 = load i32, i32* %res, align 4
   %cmp = icmp slt i32 %tmp6, %tmp7
   br i1 %cmp, label %for.body, label %for.end
 
-for.body:                                         ; preds = %for.cond
+for.body:                                         
   %tmp8 = load i32, i32* %i, align 4
   %idxprom4 = sext i32 %tmp8 to i64
   %tmp9 = load i32*, i32** @data, align 8
@@ -139,23 +139,23 @@ for.body:                                         ; preds = %for.cond
   call void @fct0(i32* %arrayidx5)
   br label %for.inc
 
-for.inc:                                          ; preds = %for.body
+for.inc:                                          
   %tmp10 = load i32, i32* %i, align 4
   %inc = add nsw i32 %tmp10, 1
   store i32 %inc, i32* %i, align 4
   br label %for.cond
 
-for.end:                                          ; preds = %for.cond
+for.end:                                          
   store i32 0, i32* %i, align 4
   br label %for.cond6
 
-for.cond6:                                        ; preds = %for.inc11, %for.end
+for.cond6:                                        
   %tmp11 = load i32, i32* %i, align 4
   %tmp12 = load i32, i32* %res, align 4
   %cmp7 = icmp slt i32 %tmp11, %tmp12
   br i1 %cmp7, label %for.body8, label %for.end13
 
-for.body8:                                        ; preds = %for.cond6
+for.body8:                                        
   %tmp13 = load i32, i32* %i, align 4
   %idxprom9 = sext i32 %tmp13 to i64
   %tmp14 = load i32*, i32** @data, align 8
@@ -163,23 +163,23 @@ for.body8:                                        ; preds = %for.cond6
   call void @fct0(i32* %arrayidx10)
   br label %for.inc11
 
-for.inc11:                                        ; preds = %for.body8
+for.inc11:                                        
   %tmp15 = load i32, i32* %i, align 4
   %inc12 = add nsw i32 %tmp15, 1
   store i32 %inc12, i32* %i, align 4
   br label %for.cond6
 
-for.end13:                                        ; preds = %for.cond6
+for.end13:                                        
   store i32 0, i32* %i, align 4
   br label %for.cond14
 
-for.cond14:                                       ; preds = %for.inc19, %for.end13
+for.cond14:                                       
   %tmp16 = load i32, i32* %i, align 4
   %tmp17 = load i32, i32* %res, align 4
   %cmp15 = icmp slt i32 %tmp16, %tmp17
   br i1 %cmp15, label %for.body16, label %for.end21
 
-for.body16:                                       ; preds = %for.cond14
+for.body16:                                       
   %tmp18 = load i32, i32* %i, align 4
   %idxprom17 = sext i32 %tmp18 to i64
   %tmp19 = load i32*, i32** @data, align 8
@@ -187,23 +187,23 @@ for.body16:                                       ; preds = %for.cond14
   call void @fct0(i32* %arrayidx18)
   br label %for.inc19
 
-for.inc19:                                        ; preds = %for.body16
+for.inc19:                                        
   %tmp20 = load i32, i32* %i, align 4
   %inc20 = add nsw i32 %tmp20, 1
   store i32 %inc20, i32* %i, align 4
   br label %for.cond14
 
-for.end21:                                        ; preds = %for.cond14
+for.end21:                                        
   %tmp21 = load i32, i32* %res, align 4
   ret i32 %tmp21
 }
 
 define i32 @fct3(i32 %c) nounwind uwtable ssp {
 entry:
-  ;CHECK-LABEL: @fct3(
-  ;CHECK: call i32 @fct1
-  ; The inline keyword gives a sufficient benefits to inline fct2
-  ;CHECK-NOT: call i32 @fct2
+  
+  
+  
+  
   %c.addr = alloca i32, align 4
   store i32 %c, i32* %c.addr, align 4
   %tmp = load i32, i32* %c.addr, align 4
@@ -216,11 +216,11 @@ entry:
 
 define i32 @fct4(i32 %c) minsize nounwind uwtable ssp {
 entry:
-  ;CHECK-LABEL: @fct4(
-  ;CHECK: call i32 @fct1
-  ; With Oz (minsize attribute), the benefit of inlining fct2
-  ; is the same as fct1, thus no inlining for fct2
-  ;CHECK: call i32 @fct2
+  
+  
+  
+  
+  
   %c.addr = alloca i32, align 4
   store i32 %c, i32* %c.addr, align 4
   %tmp = load i32, i32* %c.addr, align 4

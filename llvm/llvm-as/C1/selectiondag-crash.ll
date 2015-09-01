@@ -1,7 +1,7 @@
-; RUN: llc -mtriple=x86_64-unknown-unknown -mcpu=corei7 < %s
 
-; Check that llc doesn't crash in the attempt to fold a shuffle with
-; a splat mask into a constant build_vector.
+
+
+
 
 define <8 x i8> @autogen_SD26299(i8) {
 BB:

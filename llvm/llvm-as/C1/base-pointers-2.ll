@@ -1,6 +1,6 @@
-; RUN: opt %s -rewrite-statepoints-for-gc -spp-print-base-pointers -S 2>&1 | FileCheck %s
 
-; CHECK: derived %merged_value base %base_obj
+
+
 
 
 define i64 addrspace(1)* @test(i64 addrspace(1)* %base_obj, i1 %runtime_condition) gc "statepoint-example" {

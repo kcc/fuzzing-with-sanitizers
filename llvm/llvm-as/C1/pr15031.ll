@@ -1,17 +1,17 @@
-; RUN: llc -mcpu=pwr7 -O3 < %s | FileCheck %s
 
-; Test case derived from bug report 15031.  The code in the post-RA
-; scheduler to break critical anti-dependencies was failing to check
-; whether an instruction had more than one definition, and ensuring
-; that any additional definitions interfered with the choice of a new
-; register.  As a result, this test originally caused this to be
-; generated:
-;
-;   lbzu 3, 1(3)
-;
-; which is illegal, since it requires register 3 to both receive the
-; loaded value and receive the updated address.  With the fix to bug
-; 15031, a different register is chosen to receive the loaded value.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-f128:128:128-v128:128:128-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
@@ -305,7 +305,7 @@ entry:
   %tobool = icmp eq i24 %bf.lshr.i, 0
   br i1 %tobool, label %if.end, label %if.then
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %bf.cast.i = zext i24 %bf.lshr.i to i32
   %add.ptr = getelementptr inbounds %"class.llvm::TargetRegisterInfo", %"class.llvm::TargetRegisterInfo"* %TRI, i64 0, i32 1
   %call3 = tail call zeroext i32 @_ZNK4llvm14MCRegisterInfo9getSubRegEjj(%"class.llvm::MCRegisterInfo"* %add.ptr, i32 zeroext %Reg, i32 zeroext %bf.cast.i)
@@ -314,32 +314,32 @@ if.then:                                          ; preds = %entry
   store i24 %bf.clear.i, i24* %0, align 1
   br label %if.end
 
-if.end:                                           ; preds = %entry, %if.then
+if.end:                                           
   %Reg.addr.0 = phi i32 [ %call3, %if.then ], [ %Reg, %entry ]
   %RegNo.i.i = getelementptr inbounds %"class.llvm::MachineOperand", %"class.llvm::MachineOperand"* %this, i64 0, i32 2, i32 0
   %1 = load i32, i32* %RegNo.i.i, align 4
   %cmp.i = icmp eq i32 %1, %Reg.addr.0
   br i1 %cmp.i, label %_ZN4llvm14MachineOperand6setRegEj.exit, label %if.end.i
 
-if.end.i:                                         ; preds = %if.end
+if.end.i:                                         
   %ParentMI.i.i = getelementptr inbounds %"class.llvm::MachineOperand", %"class.llvm::MachineOperand"* %this, i64 0, i32 3
   %2 = load %"class.llvm::MachineInstr"*, %"class.llvm::MachineInstr"** %ParentMI.i.i, align 8
   %tobool.i = icmp eq %"class.llvm::MachineInstr"* %2, null
   br i1 %tobool.i, label %if.end13.i, label %if.then3.i
 
-if.then3.i:                                       ; preds = %if.end.i
+if.then3.i:                                       
   %Parent.i.i = getelementptr inbounds %"class.llvm::MachineInstr", %"class.llvm::MachineInstr"* %2, i64 0, i32 2
   %3 = load %"class.llvm::MachineBasicBlock"*, %"class.llvm::MachineBasicBlock"** %Parent.i.i, align 8
   %tobool5.i = icmp eq %"class.llvm::MachineBasicBlock"* %3, null
   br i1 %tobool5.i, label %if.end13.i, label %if.then6.i
 
-if.then6.i:                                       ; preds = %if.then3.i
+if.then6.i:                                       
   %xParent.i.i = getelementptr inbounds %"class.llvm::MachineBasicBlock", %"class.llvm::MachineBasicBlock"* %3, i64 0, i32 4
   %4 = load %"class.llvm::MachineFunction"*, %"class.llvm::MachineFunction"** %xParent.i.i, align 8
   %tobool8.i = icmp eq %"class.llvm::MachineFunction"* %4, null
   br i1 %tobool8.i, label %if.end13.i, label %if.then9.i
 
-if.then9.i:                                       ; preds = %if.then6.i
+if.then9.i:                                       
   %RegInfo.i.i = getelementptr inbounds %"class.llvm::MachineFunction", %"class.llvm::MachineFunction"* %4, i64 0, i32 5
   %5 = load %"class.llvm::MachineRegisterInfo"*, %"class.llvm::MachineRegisterInfo"** %RegInfo.i.i, align 8
   tail call void @_ZN4llvm19MachineRegisterInfo27removeRegOperandFromUseListEPNS_14MachineOperandE(%"class.llvm::MachineRegisterInfo"* %5, %"class.llvm::MachineOperand"* %this)
@@ -347,12 +347,12 @@ if.then9.i:                                       ; preds = %if.then6.i
   tail call void @_ZN4llvm19MachineRegisterInfo22addRegOperandToUseListEPNS_14MachineOperandE(%"class.llvm::MachineRegisterInfo"* %5, %"class.llvm::MachineOperand"* %this)
   br label %_ZN4llvm14MachineOperand6setRegEj.exit
 
-if.end13.i:                                       ; preds = %if.then6.i, %if.then3.i, %if.end.i
+if.end13.i:                                       
   store i32 %Reg.addr.0, i32* %RegNo.i.i, align 4
   br label %_ZN4llvm14MachineOperand6setRegEj.exit
 
-_ZN4llvm14MachineOperand6setRegEj.exit:           ; preds = %if.end, %if.then9.i, %if.end13.i
+_ZN4llvm14MachineOperand6setRegEj.exit:           
   ret void
 }
 
-; CHECK-NOT: lbzu 3, 1(3)
+

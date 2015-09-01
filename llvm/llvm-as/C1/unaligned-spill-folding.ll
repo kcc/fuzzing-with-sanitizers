@@ -1,10 +1,10 @@
-; RUN: llc -mtriple=i386-unknown-freebsd -mcpu=core2 -stack-alignment=4 -relocation-model=pic < %s | FileCheck %s -check-prefix=UNALIGNED
-; RUN: llc -mtriple=i386-unknown-freebsd -mcpu=core2 -stack-alignment=16 -relocation-model=pic < %s | FileCheck %s -check-prefix=ALIGNED
-; RUN: llc -mtriple=i386-unknown-freebsd -mcpu=core2 -stack-alignment=4 -force-align-stack -relocation-model=pic < %s | FileCheck %s -check-prefix=FORCEALIGNED
+
+
+
 
 @arr = internal unnamed_addr global [32 x i32] zeroinitializer, align 16
 
-; PR12250
+
 define i32 @test1() {
 vector.ph:
   br label %vector.body
@@ -30,20 +30,20 @@ vector.body:
 middle.block:
   ret i32 0
 
-; We can't fold the spill into a padd unless the stack is aligned. Just spilling
-; doesn't force stack realignment though
-; UNALIGNED-LABEL: @test1
-; UNALIGNED-NOT: andl $-{{..}}, %esp
-; UNALIGNED: movdqu {{.*}} # 16-byte Folded Spill
-; UNALIGNED-NOT: paddd {{.*}} # 16-byte Folded Reload
 
-; ALIGNED-LABEL: @test1
-; ALIGNED-NOT: andl $-{{..}}, %esp
-; ALIGNED: movdqa {{.*}} # 16-byte Spill
-; ALIGNED: paddd {{.*}} # 16-byte Folded Reload
 
-; FORCEALIGNED-LABEL: @test1
-; FORCEALIGNED: andl $-{{..}}, %esp
-; FORCEALIGNED: movdqa {{.*}} # 16-byte Spill
-; FORCEALIGNED: paddd {{.*}} # 16-byte Folded Reload
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

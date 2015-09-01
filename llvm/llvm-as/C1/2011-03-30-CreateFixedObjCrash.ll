@@ -1,6 +1,6 @@
-; RUN: llc < %s -march=x86
 
-; rdar://7983260
+
+
 
 %struct.T0 = type {}
 

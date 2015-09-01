@@ -1,16 +1,16 @@
-; RUN: llc < %s | FileCheck %s
 
-; The SplitIndexingFromLoad tranformation exposed an isel backend bug.  This
-; testcase used to generate stwx 4, 3, 64.  stwx does not have an
-; immediate-offset format (note the 64) and it should not be matched.
+
+
+
+
 
 target datalayout = "e-m:e-i64:64-n32:64"
 target triple = "powerpc64le-unknown-linux-gnu"
 
 %class.test = type { [64 x i8], [5 x i8] }
 
-; CHECK-LABEL: f:
-; CHECK-NOT: stwx {{[0-9]+}}, {{[0-9]+}}, 64
+
+
 define void @f(%class.test* %this) {
 entry:
   %Subminor.i.i = getelementptr inbounds %class.test, %class.test* %this, i64 0, i32 1

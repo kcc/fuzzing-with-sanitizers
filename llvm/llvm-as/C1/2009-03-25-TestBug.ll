@@ -1,14 +1,14 @@
-; RUN: llc < %s -march=x86 | FileCheck %s
-; rdar://6661955
 
-; CHECK-NOT: and
-; CHECK-NOT: shr
+
+
+
+
 
 @hello = internal constant [7 x i8] c"hello\0A\00"
 @world = internal constant [7 x i8] c"world\0A\00"
 
 define void @func(i32* %b) nounwind {
-bb1579.i.i:		; preds = %bb1514.i.i, %bb191.i.i
+bb1579.i.i:		
 	%tmp176 = load i32, i32* %b, align 4
 	%tmp177 = and i32 %tmp176, 2
 	%tmp178 = icmp eq i32 %tmp177, 0

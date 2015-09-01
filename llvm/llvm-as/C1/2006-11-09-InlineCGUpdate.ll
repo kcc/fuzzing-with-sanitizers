@@ -1,5 +1,5 @@
-; RUN: opt < %s -inline -prune-eh -disable-output
-; PR992
+
+
 target datalayout = "e-p:32:32"
 target triple = "i686-pc-linux-gnu"
 	%struct._IO_FILE = type { i32, i8*, i8*, i8*, i8*, i8*, i8*, i8*, i8*, i8*, i8*, i8*, %struct._IO_marker*, %struct._IO_FILE*, i32, i32, i32, i16, i8, [1 x i8], i8*, i64, i8*, i8*, i32, [52 x i8] }
@@ -48,9 +48,9 @@ target triple = "i686-pc-linux-gnu"
 	%"struct.std::locale::facet" = type { i32 (...)**, i32 }
 	%"struct.std::logic_error" = type { %"struct.__gnu_cxx::char_producer<char>", %"struct.std::basic_string<char,std::char_traits<char>,std::allocator<char> >" }
 	%"struct.std::type_info" = type { i32 (...)**, i8* }
-@.str_11 = external global [42 x i8]		; <[42 x i8]*> [#uses=0]
-@.str_9 = external global [24 x i8]		; <[24 x i8]*> [#uses=0]
-@.str_1 = external global [17 x i8]		; <[17 x i8]*> [#uses=0]
+@.str_11 = external global [42 x i8]		
+@.str_9 = external global [24 x i8]		
+@.str_1 = external global [17 x i8]		
 
 define void @main() {
 entry:
@@ -60,13 +60,13 @@ entry:
 
 define fastcc void @_ZNSolsEi() {
 entry:
-	%tmp.22 = icmp eq i32 0, 0		; <i1> [#uses=1]
+	%tmp.22 = icmp eq i32 0, 0		
 	br i1 %tmp.22, label %else, label %then
 
-then:		; preds = %entry
+then:		
 	ret void
 
-else:		; preds = %entry
+else:		
 	tail call fastcc void @_ZNSolsEl( )
 	ret void
 }
@@ -89,13 +89,13 @@ entry:
 
 define fastcc void @_ZNSolsEl() {
 entry:
-	%tmp.21.i = icmp eq %"struct.std::basic_ostream<char,std::char_traits<char> >"* null, null		; <i1> [#uses=1]
+	%tmp.21.i = icmp eq %"struct.std::basic_ostream<char,std::char_traits<char> >"* null, null		
 	br i1 %tmp.21.i, label %endif.0.i, label %shortcirc_next.i
 
-shortcirc_next.i:		; preds = %entry
+shortcirc_next.i:		
 	ret void
 
-endif.0.i:		; preds = %entry
+endif.0.i:		
 	call fastcc void @_ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate( )
 	ret void
 }
@@ -143,11 +143,11 @@ define fastcc void @_ZNSs4_Rep9_S_createEjRKSaIcE() {
 entry:
 	br i1 false, label %then.0, label %endif.0
 
-then.0:		; preds = %entry
+then.0:		
 	call fastcc void @_ZSt20__throw_length_errorPKc( )
 	ret void
 
-endif.0:		; preds = %entry
+endif.0:		
 	ret void
 }
 
@@ -161,11 +161,11 @@ define fastcc void @_ZNSs16_S_construct_auxIPKcEEPcT_S3_RKSaIcE12__false_type() 
 entry:
 	br i1 false, label %then.1.i, label %endif.1.i
 
-then.1.i:		; preds = %entry
+then.1.i:		
 	call fastcc void @_ZSt19__throw_logic_errorPKc( )
 	ret void
 
-endif.1.i:		; preds = %entry
+endif.1.i:		
 	call fastcc void @_ZNSs4_Rep9_S_createEjRKSaIcE( )
 	unreachable
 }
@@ -176,13 +176,13 @@ entry:
 	invoke fastcc void @_ZNSaIcEC1ERKS_( )
 			to label %invoke_cont.1 unwind label %invoke_catch.1
 
-invoke_catch.1:		; preds = %entry
+invoke_catch.1:		
         %exn = landingpad {i8*, i32}
                  catch i8* null
 	call fastcc void @_ZNSaIcED1Ev( )
 	resume { i8*, i32 } %exn
 
-invoke_cont.1:		; preds = %entry
+invoke_cont.1:		
 	call fastcc void @_ZNSaIcEC2ERKS_( )
 	ret void
 }
@@ -201,10 +201,10 @@ define fastcc void @_ZNSs4_Rep7_M_grabERKSaIcES2_() {
 entry:
 	br i1 false, label %else.i, label %cond_true
 
-cond_true:		; preds = %entry
+cond_true:		
 	ret void
 
-else.i:		; preds = %entry
+else.i:		
 	tail call fastcc void @_ZNSs4_Rep9_S_createEjRKSaIcE( )
 	ret void
 }
@@ -306,12 +306,12 @@ entry:
 	invoke fastcc void @_ZNSsC1ERKSs( )
 			to label %_ZNSt11logic_errorC2ERKSs.exit unwind label %invoke_catch.i
 
-invoke_catch.i:		; preds = %entry
+invoke_catch.i:		
         %exn = landingpad {i8*, i32}
                  catch i8* null
 	resume { i8*, i32 } %exn
 
-_ZNSt11logic_errorC2ERKSs.exit:		; preds = %entry
+_ZNSt11logic_errorC2ERKSs.exit:		
 	ret void
 }
 

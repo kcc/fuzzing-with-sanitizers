@@ -1,11 +1,11 @@
-; RUN: llvm-link %s %p/debug-info-version-b.ll -S -o - | FileCheck %s
 
-; Test linking of incompatible debug info versions. The debug info
-; from the other file should be dropped.
 
-; CHECK-NOT: !DIFile(filename: "b.c", directory: "")
-; CHECK:     !DIFile(filename: "a.c", directory: "")
-; CHECK-NOT: !DIFile(filename: "b.c", directory: "")
+
+
+
+
+
+
 
 !llvm.module.flags = !{ !0 }
 !llvm.dbg.cu = !{!1}

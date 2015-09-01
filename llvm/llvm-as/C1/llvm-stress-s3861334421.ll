@@ -1,11 +1,11 @@
-; RUN: llc -march=mips < %s
-; RUN: llc -march=mips -mattr=+msa,+fp64 < %s
-; RUN: llc -march=mipsel < %s
-; RUN: llc -march=mipsel -mattr=+msa,+fp64 < %s
 
-; This test originally failed for MSA with a
-; "Don't know how to expand this condition!" unreachable.
-; It should at least successfully build.
+
+
+
+
+
+
+
 
 define void @autogen_SD3861334421(i8*, i32*, i64*, i32, i64, i8) {
 BB:
@@ -32,7 +32,7 @@ BB:
   %Cmp = icmp sgt i32 394647, 17081
   br label %CF
 
-CF:                                               ; preds = %CF, %BB
+CF:                                               
   %L11 = load i8, i8* %0
   store i8 -87, i8* %0
   %E12 = extractelement <4 x i64> zeroinitializer, i32 0
@@ -44,7 +44,7 @@ CF:                                               ; preds = %CF, %BB
   %Cmp18 = icmp uge i8 %L, %5
   br i1 %Cmp18, label %CF, label %CF80
 
-CF80:                                             ; preds = %CF80, %CF88, %CF
+CF80:                                             
   %L19 = load i8, i8* %0
   store i8 -101, i8* %0
   %E20 = extractelement <4 x i64> zeroinitializer, i32 0
@@ -55,7 +55,7 @@ CF80:                                             ; preds = %CF80, %CF88, %CF
   %Cmp25 = icmp ugt i1 %Cmp18, false
   br i1 %Cmp25, label %CF80, label %CF83
 
-CF83:                                             ; preds = %CF83, %CF80
+CF83:                                             
   %L26 = load i8, i8* %0
   store i8 -87, i8* %0
   %E27 = extractelement <4 x i32> <i32 -1, i32 -1, i32 -1, i32 -1>, i32 0
@@ -67,7 +67,7 @@ CF83:                                             ; preds = %CF83, %CF80
   %Cmp33 = icmp eq i64 %B, 116376
   br i1 %Cmp33, label %CF83, label %CF88
 
-CF88:                                             ; preds = %CF83
+CF88:                                             
   %L34 = load i8, i8* %0
   store i8 -87, i8* %0
   %E35 = extractelement <8 x i64> %Shuff, i32 7
@@ -79,7 +79,7 @@ CF88:                                             ; preds = %CF83
   %Cmp40 = icmp sgt i1 %Cmp, false
   br i1 %Cmp40, label %CF80, label %CF81
 
-CF81:                                             ; preds = %CF81, %CF85, %CF87, %CF88
+CF81:                                             
   %L41 = load i8, i8* %0
   store i8 %L34, i8* %0
   %E42 = extractelement <8 x i64> %Shuff13, i32 6
@@ -91,7 +91,7 @@ CF81:                                             ; preds = %CF81, %CF85, %CF87,
   %Cmp47 = icmp sgt i1 %Cmp18, %Cmp18
   br i1 %Cmp47, label %CF81, label %CF85
 
-CF85:                                             ; preds = %CF81
+CF85:                                             
   %L48 = load i8, i8* %0
   store i8 -101, i8* %0
   %E49 = extractelement <8 x i8> <i8 -1, i8 -1, i8 -1, i8 -1, i8 -1, i8 -1, i8 -1, i8 -1>, i32 2
@@ -110,7 +110,7 @@ CF85:                                             ; preds = %CF81
   %Tr61 = trunc i8 49 to i1
   br i1 %Tr61, label %CF81, label %CF84
 
-CF84:                                             ; preds = %CF84, %CF85
+CF84:                                             
   %Sl62 = select i1 false, i8 %L, i8 %L48
   %Cmp63 = icmp ne <8 x i64> %I, zeroinitializer
   %L64 = load i8, i8* %0
@@ -118,7 +118,7 @@ CF84:                                             ; preds = %CF84, %CF85
   %E65 = extractelement <8 x i1> %Cmp55, i32 0
   br i1 %E65, label %CF84, label %CF87
 
-CF87:                                             ; preds = %CF84
+CF87:                                             
   %Shuff66 = shufflevector <4 x i64> %Shuff21, <4 x i64> %I14, <4 x i32> <i32 3, i32 undef, i32 7, i32 1>
   %I67 = insertelement <4 x i32> <i32 -1, i32 -1, i32 -1, i32 -1>, i32 %Sl54, i32 1
   %B68 = frem double %B23, %Sl17
@@ -130,7 +130,7 @@ CF87:                                             ; preds = %CF84
   %E73 = extractelement <8 x i1> %Cmp55, i32 6
   br i1 %E73, label %CF81, label %CF82
 
-CF82:                                             ; preds = %CF82, %CF87
+CF82:                                             
   %Shuff74 = shufflevector <4 x i32> %I67, <4 x i32> %I29, <4 x i32> <i32 1, i32 3, i32 undef, i32 7>
   %I75 = insertelement <4 x i64> zeroinitializer, i64 380809, i32 3
   %B76 = fsub double 0.000000e+00, %FC53
@@ -139,7 +139,7 @@ CF82:                                             ; preds = %CF82, %CF87
   %Cmp79 = icmp eq i32 394647, 492085
   br i1 %Cmp79, label %CF82, label %CF86
 
-CF86:                                             ; preds = %CF82
+CF86:                                             
   store i64 %Sl70, i64* %Sl78
   store i64 %E57, i64* %Sl78
   store i64 %Sl70, i64* %Sl78

@@ -1,5 +1,5 @@
-; RUN: llc -march=mipsel -relocation-model=pic -O0 -fast-isel-abort=1 -mcpu=mips32r2 \
-; RUN:     < %s | FileCheck %s
+
+
 
 %struct.x = type { i32 }
 
@@ -7,7 +7,7 @@
 
 define i32 @foobar(i32 signext %x) {
 entry:
-; CHECK-LABEL: foobar:
+
   %retval = alloca i32, align 4
   %x.addr = alloca i32, align 4
   %a = alloca %struct.x, align 4
@@ -22,11 +22,11 @@ entry:
   %2 = load i32, i32* %x2, align 4
   store i32 %2, i32* @i, align 4
   %3 = load i32, i32* %retval
-; CHECK-DAG:    lw      $[[I_ADDR:[0-9]+]], %got(i)($[[REG_GP:[0-9]+]])
-; CHECK-DAG:    addiu   $[[A_ADDR:[0-9]+]], $sp, 8
-; CHECK-DAG:    sw      $[[A_ADDR]], [[A_ADDR_FI:[0-9]+]]($sp)
-; CHECK-DAG:    lw      $[[A_ADDR2:[0-9]+]], [[A_ADDR_FI]]($sp)
-; CHECK-DAG:    lw      $[[A_X:[0-9]+]], 0($[[A_ADDR2]])
-; CHECK-DAG:    sw      $[[A_X]], 0($[[I_ADDR]])
+
+
+
+
+
+
   ret i32 %3
 }

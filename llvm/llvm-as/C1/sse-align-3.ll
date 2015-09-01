@@ -1,9 +1,9 @@
-; RUN: llc < %s -mtriple=x86_64-linux | FileCheck %s
-; CHECK-NOT:     movapd
-; CHECK:     movaps
-; CHECK-NOT:     movapd
-; CHECK:     movaps
-; CHECK-NOT:     movap
+
+
+
+
+
+
 
 define void @foo(<4 x float>* %p, <4 x float> %x) nounwind {
   store <4 x float> %x, <4 x float>* %p

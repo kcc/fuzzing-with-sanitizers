@@ -1,7 +1,7 @@
-; RUN: llc -mtriple=i686-windows-msvc < %s | FileCheck %s
 
-; Mostly make sure that llvm.x86.seh.recoverfp doesn't crash if the parent
-; function lacks a personality.
+
+
+
 
 declare i8* @llvm.frameaddress(i32)
 declare i8* @llvm.x86.seh.recoverfp(i8*, i8*)
@@ -25,9 +25,9 @@ entry:
   ret i32 %r
 }
 
-; CHECK: _main:
-; CHECK: xorl %eax, %eax
-; CHECK: retl
 
-; CHECK: _filt$main:
-; CHECK: retl
+
+
+
+
+

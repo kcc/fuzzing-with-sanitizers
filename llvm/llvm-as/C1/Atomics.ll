@@ -1,4 +1,4 @@
-; RUN: llc < %s -march=hexagon
+
 
 @si = common global i32 0, align 4
 @sll = common global i64 0, align 8
@@ -19,7 +19,7 @@ entry:
   %t51 = atomicrmw nand i64* @sll, i64 1 monotonic
   br label %return
 
-return:                                           ; preds = %entry
+return:                                           
   ret void
 }
 
@@ -51,7 +51,7 @@ entry:
   store i64 %t51, i64* @sll, align 8
   br label %return
 
-return:                                           ; preds = %entry
+return:                                           
   ret void
 }
 
@@ -66,6 +66,6 @@ entry:
   store volatile i64 0, i64* @sll, align 8
   br label %return
 
-return:                                           ; preds = %entry
+return:                                           
   ret void
 }

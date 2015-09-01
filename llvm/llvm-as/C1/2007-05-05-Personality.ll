@@ -1,14 +1,14 @@
-; RUN: llc < %s -mtriple=i686-pc-linux-gnu -o -     | FileCheck %s  --check-prefix=LIN
-; RUN: llc < %s -mtriple=i386-pc-mingw32 -o -       | FileCheck %s  --check-prefix=WIN
-; RUN: llc < %s -mtriple=i686-pc-windows-gnu -o -   | FileCheck %s  --check-prefix=WIN
-; RUN: llc < %s -mtriple=x86_64-pc-windows-gnu -o - | FileCheck %s  --check-prefix=WIN64
 
-; LIN: .cfi_personality 0, __gnat_eh_personality
-; LIN: .cfi_lsda 0, .Lexception0
-; WIN: .cfi_personality 0, ___gnat_eh_personality
-; WIN: .cfi_lsda 0, Lexception0
-; WIN64: .seh_handler __gnat_eh_personality
-; WIN64: .seh_handlerdata
+
+
+
+
+
+
+
+
+
+
 
 @error = external global i8
 
@@ -17,7 +17,7 @@ entry:
   invoke void @raise()
           to label %eh_then unwind label %unwind
 
-unwind:                                           ; preds = %entry
+unwind:                                           
   %eh_ptr = landingpad { i8*, i32 }
               catch i8* @error
   %eh_select = extractvalue { i8*, i32 } %eh_ptr, 1
@@ -25,10 +25,10 @@ unwind:                                           ; preds = %entry
   %tmp2 = icmp eq i32 %eh_select, %eh_typeid
   br i1 %tmp2, label %eh_then, label %Unwind
 
-eh_then:                                          ; preds = %unwind, %entry
+eh_then:                                          
   ret void
 
-Unwind:                                           ; preds = %unwind
+Unwind:                                           
   resume { i8*, i32 } %eh_ptr
 }
 

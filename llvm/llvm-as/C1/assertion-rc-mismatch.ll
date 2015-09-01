@@ -1,7 +1,7 @@
-; RUN: llc < %s -mtriple=arm64-apple-ios7.0 | FileCheck %s
-; Test case related to <rdar://problem/15633429>.
 
-; CHECK-LABEL: small
+
+
+
 define i64 @small(i64 %encodedBase) {
 cmp:
   %lnot.i.i = icmp eq i64 %encodedBase, 0

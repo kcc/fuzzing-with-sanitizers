@@ -1,9 +1,9 @@
-; RUN: not llvm-as < %s >& /dev/null
+
 
 	%list = type { i32, %list* }
 
-; This usage is invalid now; instead, objects must be bitcast to i8* for input
-; to the gc intrinsics.
+
+
 declare void @llvm.gcwrite(%list*, %list*, %list**)
 
 define %list* @cons(i32 %hd, %list* %tl) gc "example" {

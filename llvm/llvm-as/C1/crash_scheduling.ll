@@ -1,4 +1,4 @@
-; RUN: opt < %s -basicaa -slp-vectorizer -S -mtriple=x86_64-apple-macosx10.8.0 -mcpu=corei7
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-darwin13.3.0"
@@ -15,8 +15,8 @@ bb1:
   %mul20 = fmul double %p3, 1.638400e+04
   %add = fadd double %mul20, 8.192000e+03
   %mul21 = fmul double %p2, 1.638400e+04
-  ; The SLPVectorizer crashed when scheduling this block after it inserted an
-  ; insertelement instruction (during vectorizing the for.body block) at this position.
+  
+  
   br label %for.body
 
 for.body:

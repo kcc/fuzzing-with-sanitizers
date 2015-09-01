@@ -1,20 +1,20 @@
-; RUN: llc < %s -filetype=obj | llvm-dwarfdump -debug-dump=info - | FileCheck %s
-; RUN: llc < %s -filetype=obj -regalloc=basic | llvm-dwarfdump -debug-dump=info -  | FileCheck %s
+
+
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64"
 target triple = "x86_64-apple-darwin10.0.0"
 
-; Check debug info for variable z_s
-; CHECK: DW_TAG_subprogram
-; CHECK: DW_TAG_subprogram
-; CHECK: DW_TAG_variable
-; CHECK: DW_TAG_variable
-; CHECK-NEXT:   DW_AT_location
-; CHECK-NEXT:   DW_AT_name {{.*}} "z_s"
-; CHECK-NEXT:   DW_AT_decl_file
-; CHECK-NEXT:   DW_AT_decl_line
-; CHECK-NEXT:   DW_AT_type{{.*}}{[[TYPE:.*]]}
-; CHECK: [[TYPE]]:
-; CHECK-NEXT: DW_AT_name {{.*}} "int"
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @.str1 = private unnamed_addr constant [14 x i8] c"m=%u, z_s=%d\0A\00"
@@ -26,14 +26,14 @@ entry:
   tail call void @llvm.dbg.value(metadata i64 %b, i64 0, metadata !11, metadata !DIExpression()), !dbg !19
   br label %while.body, !dbg !20
 
-while.body:                                       ; preds = %while.body, %entry
+while.body:                                       
   %b.addr.0 = phi i64 [ %b, %entry ], [ %rem, %while.body ]
   %a.addr.0 = phi i64 [ %a, %entry ], [ %b.addr.0, %while.body ]
   %rem = srem i64 %a.addr.0, %b.addr.0, !dbg !21
   %cmp = icmp eq i64 %rem, 0, !dbg !23
   br i1 %cmp, label %if.then, label %while.body, !dbg !23
 
-if.then:                                          ; preds = %while.body
+if.then:                                          
   tail call void @llvm.dbg.value(metadata i64 %rem, i64 0, metadata !12, metadata !DIExpression()), !dbg !21
   ret i64 %b.addr.0, !dbg !23
 }
@@ -45,11 +45,11 @@ entry:
   %cmp = icmp ugt i32 %call, 21, !dbg !25
   br i1 %cmp, label %cond.true, label %cond.end, !dbg !25
 
-cond.true:                                        ; preds = %entry
+cond.true:                                        
   %call1 = tail call i32 @rand() nounwind optsize, !dbg !25
   br label %cond.end, !dbg !25
 
-cond.end:                                         ; preds = %entry, %cond.true
+cond.end:                                         
   %cond = phi i32 [ %call1, %cond.true ], [ %call, %entry ], !dbg !25
   tail call void @llvm.dbg.value(metadata i32 %cond, i64 0, metadata !17, metadata !DIExpression()), !dbg !25
   %conv = sext i32 %cond to i64, !dbg !26
@@ -58,12 +58,12 @@ cond.end:                                         ; preds = %entry, %cond.true
   %cmp7 = icmp eq i64 %call6, 0
   br i1 %cmp7, label %return, label %if.then, !dbg !26
 
-if.then:                                          ; preds = %cond.end
+if.then:                                          
   %puts = tail call i32 @puts(i8* getelementptr inbounds ([21 x i8], [21 x i8]* @str, i64 0, i64 0))
   %call12 = tail call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([14 x i8], [14 x i8]* @.str1, i64 0, i64 0), i32 %call, i32 %cond) nounwind optsize, !dbg !26
   ret i32 1, !dbg !27
 
-return:                                           ; preds = %cond.end
+return:                                           
   ret i32 0, !dbg !27
 }
 

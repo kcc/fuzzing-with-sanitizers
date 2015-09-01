@@ -1,7 +1,7 @@
-; RUN: opt < %s -indvars -disable-output
 
-; Don't RAUW the loop's original comparison instruction if it has
-; other uses which aren't dominated by the new comparison instruction.
+
+
+
 
 	%struct.DecRefPicMarking_s = type { i32, i32, i32, i32, i32, %struct.DecRefPicMarking_s* }
 	%struct.datapartition = type { %typedef.Bitstream*, %typedef.DecodingEnvironment, i32 (%struct.syntaxelement*, %struct.img_par*, %struct.inp_par*, %struct.datapartition*)* }
@@ -21,16 +21,16 @@ define void @readCBP_CABAC(%struct.syntaxelement* %se, %struct.inp_par* %inp, %s
 entry:
 	br label %loopentry.0
 
-loopentry.0:		; preds = %loopentry.1, %entry
-	%mb_y.0 = phi i32 [ 0, %entry ], [ %tmp.152, %loopentry.1 ]		; <i32> [#uses=2]
-	%tmp.14 = icmp sle i32 %mb_y.0, 3		; <i1> [#uses=2]
-	%tmp.15 = zext i1 %tmp.14 to i32		; <i32> [#uses=0]
+loopentry.0:		
+	%mb_y.0 = phi i32 [ 0, %entry ], [ %tmp.152, %loopentry.1 ]		
+	%tmp.14 = icmp sle i32 %mb_y.0, 3		
+	%tmp.15 = zext i1 %tmp.14 to i32		
 	br i1 %tmp.14, label %loopentry.1, label %loopexit.0
 
-loopentry.1:		; preds = %loopentry.0
-	%tmp.152 = add i32 %mb_y.0, 2		; <i32> [#uses=1]
+loopentry.1:		
+	%tmp.152 = add i32 %mb_y.0, 2		
 	br label %loopentry.0
 
-loopexit.0:		; preds = %loopentry.0
+loopexit.0:		
 	unreachable
 }

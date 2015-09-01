@@ -1,4 +1,4 @@
-; RUN: opt < %s -tbaa -gvn -S | FileCheck %s
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 
@@ -12,13 +12,13 @@ target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f3
 %classC = type { %classD, %structA }
 %classD = type { %structA* }
 
-; Function Attrs: ssp uwtable
+
 define %structA** @test(%classA* %this, i32** %p1) #0 align 2 {
 entry:
-; CHECK-LABEL: @test
-; CHECK: load i32*, i32** %p1, align 8, !tbaa
-; CHECK: load i32*, i32** getelementptr (%classC, %classC* null, i32 0, i32 1, i32 0, i32 0), align 8, !tbaa
-; CHECK: call void @callee
+
+
+
+
   %0 = load i32*, i32** %p1, align 8, !tbaa !1
   %1 = load i32*, i32** getelementptr (%classC, %classC* null, i32 0, i32 1, i32 0, i32 0), align 8, !tbaa !5
   call void @callee(i32* %0, i32* %1)

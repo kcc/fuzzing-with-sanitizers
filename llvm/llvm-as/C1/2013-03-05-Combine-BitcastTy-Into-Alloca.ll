@@ -1,4 +1,4 @@
-; RUN: opt < %s -instcombine -S | FileCheck %s
+
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.9.0"
 
@@ -6,14 +6,14 @@ target triple = "x86_64-apple-macosx10.9.0"
 
 @initval = common global %struct._my_struct zeroinitializer, align 1
 
-; InstCombine will try to change the %struct._my_struct alloca into an
-; allocation of an i96 because of the bitcast to create %2. That's not valid,
-; as the other 32 bits of the structure still feed into the return value
+
+
+
 define { i64, i64 } @function(i32 %x, i32 %y, i32 %z) nounwind {
-; CHECK-LABEL: @function(
-; CHECK-NEXT: entry:
-; CHECK-NEXT: %retval = alloca %struct._my_struct, align 8
-; CHECK-NOT: bitcast i96* %retval to %struct._my_struct*
+
+
+
+
 entry:
   %retval = alloca %struct._my_struct, align 8
   %k.sroa.0.0.copyload = load i96, i96* bitcast (%struct._my_struct* @initval to i96*), align 1

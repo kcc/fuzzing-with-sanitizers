@@ -1,11 +1,11 @@
-; RUN: llc < %s -march=x86 -mattr=+mmx,+sse2 | FileCheck -check-prefix=X32 %s
-; RUN: llc < %s -march=x86-64 -mattr=+mmx,+sse2 | FileCheck -check-prefix=X64 %s
 
-;; A basic sanity check to make sure that MMX arithmetic actually compiles.
-;; First is a straight translation of the original with bitcasts as needed.
 
-; X32-LABEL: test0
-; X64-LABEL: test0
+
+
+
+
+
+
 define void @test0(x86_mmx* %A, x86_mmx* %B) {
 entry:
   %tmp1 = load x86_mmx, x86_mmx* %A
@@ -59,8 +59,8 @@ entry:
   ret void
 }
 
-; X32-LABEL: test1
-; X64-LABEL: test1
+
+
 define void @test1(x86_mmx* %A, x86_mmx* %B) {
 entry:
   %tmp1 = load x86_mmx, x86_mmx* %A
@@ -103,8 +103,8 @@ entry:
   ret void
 }
 
-; X32-LABEL: test2
-; X64-LABEL: test2
+
+
 define void @test2(x86_mmx* %A, x86_mmx* %B) {
 entry:
   %tmp1 = load x86_mmx, x86_mmx* %A
@@ -167,15 +167,15 @@ entry:
   ret void
 }
 
-; X32-LABEL: test3
+
 define <1 x i64> @test3(<1 x i64>* %a, <1 x i64>* %b, i32 %count) nounwind {
 entry:
   %tmp2942 = icmp eq i32 %count, 0
   br i1 %tmp2942, label %bb31, label %bb26
 
 bb26:
-; X32:  addl
-; X32:  adcl
+
+
   %i.037.0 = phi i32 [ 0, %entry ], [ %tmp25, %bb26 ]
   %sum.035.0 = phi <1 x i64> [ zeroinitializer, %entry ], [ %tmp22, %bb26 ]
   %tmp13 = getelementptr <1 x i64>, <1 x i64>* %b, i32 %i.037.0
@@ -193,95 +193,95 @@ bb31:
   ret <1 x i64> %sum.035.1
 }
 
-; There are no MMX operations here, so we use XMM or i64.
-; X64-LABEL: ti8
+
+
 define void @ti8(double %a, double %b) nounwind {
 entry:
   %tmp1 = bitcast double %a to <8 x i8>
   %tmp2 = bitcast double %b to <8 x i8>
   %tmp3 = add <8 x i8> %tmp1, %tmp2
-; X64:  paddb
+
   store <8 x i8> %tmp3, <8 x i8>* null
   ret void
 }
 
-; X64-LABEL: ti16
+
 define void @ti16(double %a, double %b) nounwind {
 entry:
   %tmp1 = bitcast double %a to <4 x i16>
   %tmp2 = bitcast double %b to <4 x i16>
   %tmp3 = add <4 x i16> %tmp1, %tmp2
-; X64:  paddw
+
   store <4 x i16> %tmp3, <4 x i16>* null
   ret void
 }
 
-; X64-LABEL: ti32
+
 define void @ti32(double %a, double %b) nounwind {
 entry:
   %tmp1 = bitcast double %a to <2 x i32>
   %tmp2 = bitcast double %b to <2 x i32>
   %tmp3 = add <2 x i32> %tmp1, %tmp2
-; X64:  paddd
+
   store <2 x i32> %tmp3, <2 x i32>* null
   ret void
 }
 
-; X64-LABEL: ti64
+
 define void @ti64(double %a, double %b) nounwind {
 entry:
   %tmp1 = bitcast double %a to <1 x i64>
   %tmp2 = bitcast double %b to <1 x i64>
   %tmp3 = add <1 x i64> %tmp1, %tmp2
-; X64:  addq
+
   store <1 x i64> %tmp3, <1 x i64>* null
   ret void
 }
 
-; MMX intrinsics calls get us MMX instructions.
-; X64-LABEL: ti8a
+
+
 define void @ti8a(double %a, double %b) nounwind {
 entry:
   %tmp1 = bitcast double %a to x86_mmx
-; X64: movdq2q
+
   %tmp2 = bitcast double %b to x86_mmx
-; X64: movdq2q
+
   %tmp3 = tail call x86_mmx @llvm.x86.mmx.padd.b(x86_mmx %tmp1, x86_mmx %tmp2)
   store x86_mmx %tmp3, x86_mmx* null
   ret void
 }
 
-; X64-LABEL: ti16a
+
 define void @ti16a(double %a, double %b) nounwind {
 entry:
   %tmp1 = bitcast double %a to x86_mmx
-; X64: movdq2q
+
   %tmp2 = bitcast double %b to x86_mmx
-; X64: movdq2q
+
   %tmp3 = tail call x86_mmx @llvm.x86.mmx.padd.w(x86_mmx %tmp1, x86_mmx %tmp2)
   store x86_mmx %tmp3, x86_mmx* null
   ret void
 }
 
-; X64-LABEL: ti32a
+
 define void @ti32a(double %a, double %b) nounwind {
 entry:
   %tmp1 = bitcast double %a to x86_mmx
-; X64: movdq2q
+
   %tmp2 = bitcast double %b to x86_mmx
-; X64: movdq2q
+
   %tmp3 = tail call x86_mmx @llvm.x86.mmx.padd.d(x86_mmx %tmp1, x86_mmx %tmp2)
   store x86_mmx %tmp3, x86_mmx* null
   ret void
 }
 
-; X64-LABEL: ti64a
+
 define void @ti64a(double %a, double %b) nounwind {
 entry:
   %tmp1 = bitcast double %a to x86_mmx
-; X64: movdq2q
+
   %tmp2 = bitcast double %b to x86_mmx
-; X64: movdq2q
+
   %tmp3 = tail call x86_mmx @llvm.x86.mmx.padd.q(x86_mmx %tmp1, x86_mmx %tmp2)
   store x86_mmx %tmp3, x86_mmx* null
   ret void

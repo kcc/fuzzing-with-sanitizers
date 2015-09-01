@@ -1,10 +1,10 @@
-; RUN: opt -S -jump-threading < %s | FileCheck %s
 
-; CHECK-LABEL: @f(
-; CHECK-LABEL: entry
-; CHECK: ret void
-; CHECK-NOT: for.cond1
-; CHECK-NOT: for.body
+
+
+
+
+
+
 
 define void @f() {
 entry:

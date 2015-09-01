@@ -1,11 +1,11 @@
-; PR23538
-; RUN: opt < %s -indvars -loop-deletion -S | FileCheck %s
 
-; Check IndVarSimplify should not replace exit value because or else
-; udiv will be introduced by expand and the cost will be high.
-;
-; CHECK-LABEL: @_Z3fooPKcjj(
-; CHECK-NOT: udiv
+
+
+
+
+
+
+
 
 declare void @_Z3mixRjj(i32* dereferenceable(4), i32)
 declare void @llvm.lifetime.start(i64, i8* nocapture)
@@ -20,10 +20,10 @@ entry:
   %cmp8 = icmp ugt i32 %len, 11
   br i1 %cmp8, label %while.body.lr.ph, label %while.end
 
-while.body.lr.ph:                                 ; preds = %entry
+while.body.lr.ph:                                 
   br label %while.body
 
-while.body:                                       ; preds = %while.body, %while.body.lr.ph
+while.body:                                       
   %keylen.010 = phi i32 [ %len, %while.body.lr.ph ], [ %sub, %while.body ]
   %s.addr.09 = phi i8* [ %s, %while.body.lr.ph ], [ %add.ptr, %while.body ]
   %tmp1 = bitcast i8* %s.addr.09 to i32*
@@ -39,11 +39,11 @@ while.body:                                       ; preds = %while.body, %while.
   %cmp = icmp ugt i32 %sub, 11
   br i1 %cmp, label %while.body, label %while.cond.while.end_crit_edge
 
-while.cond.while.end_crit_edge:                   ; preds = %while.body
+while.cond.while.end_crit_edge:                   
   %sub.lcssa = phi i32 [ %sub, %while.body ]
   br label %while.end
 
-while.end:                                        ; preds = %while.cond.while.end_crit_edge, %entry
+while.end:                                        
   %keylen.0.lcssa = phi i32 [ %sub.lcssa, %while.cond.while.end_crit_edge ], [ %len, %entry ]
   call void @_Z3mixRjj(i32* dereferenceable(4) %a, i32 %keylen.0.lcssa)
   %tmp4 = load i32, i32* %a, align 4

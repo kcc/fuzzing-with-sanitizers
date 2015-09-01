@@ -1,46 +1,46 @@
-; RUN: llc -generate-arange-section < %s | FileCheck %s
-
-
-; -- header --
-; CHECK: .short 2 # DWARF Arange version number
-; CHECK-NEXT: .long .Lcu_begin0
-; CHECK-NEXT: .byte 8 # Address Size (in bytes)
-; CHECK-NEXT: .byte 0 # Segment Size (in bytes)
-; -- alignment --
-; CHECK-NEXT: .zero 4,255
-
-; <data section> - it should have made one span covering all vars in this CU.
-; CHECK-NEXT: .quad some_data
-; CHECK-NEXT: .quad .Lsec_end0-some_data
-
-; <other sections> - it should have made one span covering all vars in this CU.
-; CHECK-NEXT: .quad some_other
-; CHECK-NEXT: .quad .Lsec_end1-some_other
-
-; <common symbols> - it should have made one span for each symbol.
-; CHECK-NEXT: .quad some_bss
-; CHECK-NEXT: .quad 4
-
-; <text section> - it should have made one span covering all functions in this CU.
-; CHECK-NEXT: .quad .Lfunc_begin0
-; CHECK-NEXT: .quad .Lsec_end2-.Lfunc_begin0
-
-; -- finish --
-; CHECK-NEXT: # ARange terminator
 
 
 
-; -- source code --
-; Generated from: "clang -c -g -emit-llvm"
-;
-; int some_data = 4;
-; int some_bss;
-; int some_other __attribute__ ((section ("strange+section"))) = 5;
-; 
-; void some_code()
-; {
-;    some_bss += some_data + some_other;
-; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 target triple = "x86_64-unknown-linux-gnu"
 

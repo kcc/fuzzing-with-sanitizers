@@ -1,4 +1,4 @@
-; RUN: llc < %s -march=arm -mtriple=arm-apple-darwin
+
 
 	%struct.H_TBL = type { [17 x i8], [256 x i8], i32 }
 	%struct.Q_TBL = type { [64 x i16], i32 }
@@ -27,28 +27,28 @@ define void @test(%struct.X_Y* %cinfo) {
 entry:
 	br i1 false, label %bb.preheader, label %return
 
-bb.preheader:		; preds = %entry
-	%tbl.014.us = load i32, i32* null		; <i32> [#uses=1]
+bb.preheader:		
+	%tbl.014.us = load i32, i32* null		
 	br i1 false, label %cond_next.us, label %bb
 
-cond_next51.us:		; preds = %cond_next.us, %cond_true33.us.cond_true46.us_crit_edge
-	%htblptr.019.1.us = phi %struct.H_TBL** [ %tmp37.us, %cond_true33.us.cond_true46.us_crit_edge ], [ %tmp37.us, %cond_next.us ]		; <%struct.H_TBL**> [#uses=0]
+cond_next51.us:		
+	%htblptr.019.1.us = phi %struct.H_TBL** [ %tmp37.us, %cond_true33.us.cond_true46.us_crit_edge ], [ %tmp37.us, %cond_next.us ]		
 	ret void
 
-cond_true33.us.cond_true46.us_crit_edge:		; preds = %cond_next.us
+cond_true33.us.cond_true46.us_crit_edge:		
 	call void @_C_X_a_HT( )
 	br label %cond_next51.us
 
-cond_next.us:		; preds = %bb.preheader
-	%tmp37.us = getelementptr %struct.X_Y, %struct.X_Y* %cinfo, i32 0, i32 17, i32 %tbl.014.us		; <%struct.H_TBL**> [#uses=3]
-	%tmp4524.us = load %struct.H_TBL*, %struct.H_TBL** %tmp37.us		; <%struct.H_TBL*> [#uses=1]
-	icmp eq %struct.H_TBL* %tmp4524.us, null		; <i1>:0 [#uses=1]
+cond_next.us:		
+	%tmp37.us = getelementptr %struct.X_Y, %struct.X_Y* %cinfo, i32 0, i32 17, i32 %tbl.014.us		
+	%tmp4524.us = load %struct.H_TBL*, %struct.H_TBL** %tmp37.us		
+	icmp eq %struct.H_TBL* %tmp4524.us, null		
 	br i1 %0, label %cond_true33.us.cond_true46.us_crit_edge, label %cond_next51.us
 
-bb:		; preds = %bb.preheader
+bb:		
 	ret void
 
-return:		; preds = %entry
+return:		
 	ret void
 }
 

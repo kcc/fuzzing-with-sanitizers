@@ -1,19 +1,19 @@
-; RUN: llc -debug -mtriple x86_64-apple-darwin < %s -o /dev/null 2>&1 | FileCheck %s
-; REQUIRES: asserts
-; Check that llc -debug actually prints variables and locations, rather than
-; crashing.
 
-; CHECK: DBG_VALUE
 
-; Generated using `clang -g -O2 -S -emit-llvm -g` on the following source:
-;
-; static int foo(int x) { return x; }
-; int bar(int x) { return foo(x); }
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.10.0"
 
-; Function Attrs: nounwind readnone ssp uwtable
+
 define i32 @bar(i32 %x) #0 {
 entry:
   tail call void @llvm.dbg.value(metadata i32 %x, i64 0, metadata !9, metadata !17), !dbg !18
@@ -21,7 +21,7 @@ entry:
   ret i32 %x, !dbg !22
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #1
 
 attributes #0 = { nounwind readnone ssp uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "target-cpu"="core2" "unsafe-fp-math"="false" "use-soft-float"="false" }

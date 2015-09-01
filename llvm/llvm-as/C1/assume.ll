@@ -1,4 +1,4 @@
-; RUN: llc < %s
+
 
 define void @main() {
         call void @llvm.assume(i1 1)

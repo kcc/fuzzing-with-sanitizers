@@ -1,18 +1,18 @@
-; RUN: llvm-as %s -o - | llvm-nm - | FileCheck %s
 
-; CHECK: D a1
-; CHECK-NEXT: d a2
-; CHECK-NEXT: T f1
-; CHECK-NEXT: t f2
-; CHECK-NEXT: W f3
-; CHECK-NEXT: U f4
-; CHECK-NEXT: D g1
-; CHECK-NEXT: d g2
-; CHECK-NEXT: C g3
-; CHECK-NOT: g4
-; CHECK-NEXT: T global_asm_sym
-; CHECK-NEXT: t local_asm_sym
-; CHECK-NEXT: U undef_asm_sy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"

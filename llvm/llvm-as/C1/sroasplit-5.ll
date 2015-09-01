@@ -1,32 +1,32 @@
-; RUN: opt %s -sroa -verify -S -o - | FileCheck %s
-; From:
-; struct prog_src_register {
-;   unsigned : 4;       
-;   int Index : 12 + 1; 
-;   unsigned : 12;      
-;   unsigned : 4;       
-;   int : 12 + 1        
-; } src_reg_for_float() {
-;   struct prog_src_register a;
-;   memset(&a, 0, sizeof(a));
-;   int local = a.Index;
-;   return a;
-; }
-; ModuleID = 'pr22495.c'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
-; When SROA is creating new smaller allocas, it may add padding.
-;
-; There should be no debug info for the padding.
-; CHECK-NOT: DW_OP_bit_piece, 56
-; CHECK: DIExpression(DW_OP_bit_piece, 32, 24)
-; CHECK-NOT: DW_OP_bit_piece, 56
-; CHECK: DIExpression(DW_OP_bit_piece, 0, 32)
-; CHECK-NOT: DW_OP_bit_piece, 56
+
+
+
+
+
+
+
+
 %struct.prog_src_register = type { i32, i24 }
 
-; Function Attrs: nounwind
+
 define i64 @src_reg_for_float() #0 {
 entry:
   %retval = alloca %struct.prog_src_register, align 4
@@ -49,13 +49,13 @@ entry:
   ret i64 %5, !dbg !22
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
-; Function Attrs: nounwind
+
 declare void @llvm.memset.p0i8.i64(i8* nocapture, i8, i64, i32, i1) #2
 
-; Function Attrs: nounwind
+
 declare void @llvm.memcpy.p0i8.p0i8.i64(i8* nocapture, i8* nocapture readonly, i64, i32, i1) #2
 
 attributes #0 = { nounwind }

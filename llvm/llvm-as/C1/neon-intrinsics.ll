@@ -1,10 +1,10 @@
-; RUN: opt < %s -instcombine -S | FileCheck %s
 
-; The alignment arguments for NEON load/store intrinsics can be increased
-; by instcombine.  Check for this.
 
-; CHECK: vld4.v2i32({{.*}}, i32 32)
-; CHECK: vst4.v2i32({{.*}}, i32 16)
+
+
+
+
+
 
 @x = common global [8 x i32] zeroinitializer, align 32
 @y = common global [8 x i32] zeroinitializer, align 16

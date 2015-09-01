@@ -1,12 +1,12 @@
-; RUN: opt -S -inline %s -o - | FileCheck %s
 
-; Check that memcpy2 is completely inlined away.
-; CHECK-NOT: memcpy2
+
+
+
 
 @.str = private unnamed_addr constant [2 x i8] c"a\00", align 1
 @.str1 = private unnamed_addr constant [3 x i8] c"ab\00", align 1
 
-; Function Attrs: nounwind ssp uwtable
+
 define i32 @main(i32 %argc, i8** nocapture readnone %argv) #0 {
 entry:
   %data = alloca [2 x i8], align 1
@@ -16,7 +16,7 @@ entry:
   ret i32 0
 }
 
-; Function Attrs: inlinehint nounwind ssp uwtable
+
 define internal fastcc void @memcpy2(i8* nocapture %dst, i8* nocapture readonly %src, i64 %size) #1 {
 entry:
   %vla = alloca i64, i64 %size, align 16
@@ -26,7 +26,7 @@ entry:
   ret void
 }
 
-; Function Attrs: nounwind
+
 declare void @llvm.memcpy.p0i8.p0i8.i64(i8* nocapture, i8* nocapture readonly, i64, i32, i1) #2
 
 attributes #0 = { nounwind ssp uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

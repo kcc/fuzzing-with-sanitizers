@@ -1,9 +1,9 @@
-; RUN: llc %s -o %t -filetype=obj -mtriple=x86_64-unknown-linux-gnu
-; RUN: llvm-dwarfdump -debug-dump=line %t | FileCheck %s
-; PR13303
 
-; Check that the prologue ends with is_stmt here.
-; CHECK: 0x0000000000000000 {{.*}} is_stmt
+
+
+
+
+
 
 define i32 @main() nounwind uwtable {
 entry:

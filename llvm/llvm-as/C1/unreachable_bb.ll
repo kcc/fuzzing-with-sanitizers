@@ -1,29 +1,29 @@
-; RUN: opt -regions -analyze < %s | FileCheck %s
 
-; We should not crash if there are some bbs that are not reachable.
+
+
 define void @f() {
 entry:
   br label %for.pre
 
-notintree:                                        ; No predecessors!
+notintree:                                        
   br label %ret
 
-for.pre:                                          ; preds = %entry
+for.pre:                                          
   br label %for
 
-for:                                              ; preds = %for.inc, %for.pre
+for:                                              
   %indvar = phi i64 [ 0, %for.pre ], [ %indvar.next, %for.inc ]
   %exitcond = icmp ne i64 %indvar, 200
   br i1 %exitcond, label %for.inc, label %ret
 
-for.inc:                                          ; preds = %for
+for.inc:                                          
   %indvar.next = add i64 %indvar, 1
   br label %for
 
-ret:                                              ; preds = %for, %notintree
+ret:                                              
   ret void
 }
 
-; CHECK: [0] entry => <Function Return>
-; CHECK:   [1] for => ret
+
+
 

@@ -1,12 +1,12 @@
-; RUN: opt -S -lowerbitsets < %s | FileCheck %s
+
 
 target datalayout = "e-p:32:32"
 
-; Tests that this set of globals is laid out according to our layout algorithm
-; (see GlobalLayoutBuilder in include/llvm/Transforms/IPO/LowerBitSets.h).
-; The chosen layout in this case is a, e, b, d, c.
 
-; CHECK: private constant { i32, [0 x i8], i32, [0 x i8], i32, [0 x i8], i32, [0 x i8], i32 } { i32 1, [0 x i8] zeroinitializer, i32 5, [0 x i8] zeroinitializer, i32 2, [0 x i8] zeroinitializer, i32 4, [0 x i8] zeroinitializer, i32 3 }
+
+
+
+
 @a = constant i32 1
 @b = constant i32 2
 @c = constant i32 3

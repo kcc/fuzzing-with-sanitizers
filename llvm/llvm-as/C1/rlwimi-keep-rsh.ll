@@ -1,14 +1,14 @@
-; RUN: llc < %s -march=ppc32 -mtriple=powerpc-apple-darwin | FileCheck %s
-; Formerly dropped the RHS of %tmp6 when constructing rlwimi.
-; 7346117
+
+
+
 
 @foo = external global i32
 
 define void @xxx(i32 %a, i32 %b, i32 %c, i32 %d) nounwind optsize {
-; CHECK: _xxx:
-; CHECK: or
-; CHECK: and
-; CHECK: rlwimi
+
+
+
+
 entry:
   %tmp0 = ashr i32 %d, 31
   %tmp1 = and i32 %tmp0, 255
@@ -24,5 +24,5 @@ entry:
 
 return:
   ret void
-; CHECK: blr
+
 }

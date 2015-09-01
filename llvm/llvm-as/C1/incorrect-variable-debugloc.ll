@@ -1,52 +1,52 @@
-; REQUIRES: object-emission
 
-; RUN: %llc_dwarf -O2 -filetype=obj < %s | llvm-dwarfdump -debug-dump=info - | FileCheck %s
 
-; This is a test case that's as reduced as I can get it, though I haven't fully
-; understood the mechanisms by which this bug occurs, so perhaps there's further
-; simplification to be had (it's certainly a bit non-obvious what's going on). I
-; hesitate to hand-craft or otherwise simplify the IR compared to what Clang
-; generates as this is a particular tickling of optimizations and debug location
-; propagation I want a realistic example of.
 
-; Generated with clang-tot -cc1 -g -O2 -w -std=c++11  -fsanitize=address,use-after-return -fcxx-exceptions -fexceptions -x c++ incorrect-variable-debug-loc.cpp -emit-llvm
 
-; struct A {
-;   int m_fn1();
-; };
-;
-; struct B {
-;   void __attribute__((always_inline)) m_fn2() { i = 0; }
-;   int i;
-; };
-;
-; struct C {
-;   void m_fn3();
-;   int j;
-;   B b;
-; };
-;
-; int fn1() {
-;   C A;
-;   A.b.m_fn2();
-;   A.m_fn3();
-; }
-; void C::m_fn3() {
-;   A().m_fn1();
-;   b.m_fn2();
-; }
 
-; CHECK: DW_TAG_structure_type
-; CHECK-NEXT: DW_AT_name {{.*}} "C"
-; CHECK: [[M_FN3_DECL:.*]]:  DW_TAG_subprogram
-; CHECK-NOT: {{DW_TAG|NULL}}
-; CHECK: DW_AT_name {{.*}} "m_fn3"
 
-; CHECK: DW_AT_specification {{.*}} {[[M_FN3_DECL]]}
-; CHECK-NOT: DW_TAG
-; CHECK:   DW_TAG_formal_parameter
-; CHECK-NOT: DW_TAG
-; CHECK:     DW_AT_name {{.*}} "this"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %struct.C = type { i32, %struct.B }
 %struct.B = type { i32 }
@@ -57,7 +57,7 @@
 @__asan_gen_ = private unnamed_addr constant [11 x i8] c"1 32 8 1 A\00", align 1
 @__asan_gen_1 = private unnamed_addr constant [13 x i8] c"1 32 1 3 tmp\00", align 1
 
-; Function Attrs: noreturn sanitize_address
+
 define i32 @_Z3fn1v() #0 {
 entry:
   %MyAlloca = alloca [64 x i8], align 32, !dbg !39
@@ -66,11 +66,11 @@ entry:
   %2 = icmp ne i32 %1, 0, !dbg !39
   br i1 %2, label %3, label %5
 
-; <label>:3                                       ; preds = %entry
+
   %4 = call i64 @__asan_stack_malloc_0(i64 64, i64 %0), !dbg !39
   br label %5
 
-; <label>:5                                       ; preds = %entry, %3
+
   %6 = phi i64 [ %0, %entry ], [ %4, %3 ], !dbg !39
   %7 = add i64 %6, 32, !dbg !39
   %8 = inttoptr i64 %7 to %struct.C*, !dbg !39
@@ -96,26 +96,26 @@ entry:
   %23 = icmp ne i8 %22, 0, !dbg !39
   br i1 %23, label %24, label %30, !dbg !39
 
-; <label>:24                                      ; preds = %5
+
   %25 = and i64 %18, 7, !dbg !39
   %26 = add i64 %25, 3, !dbg !39
   %27 = trunc i64 %26 to i8, !dbg !39
   %28 = icmp sge i8 %27, %22, !dbg !39
   br i1 %28, label %29, label %30
 
-; <label>:29                                      ; preds = %24
+
   call void @__asan_report_store4(i64 %18), !dbg !39
   call void asm sideeffect "", ""()
   unreachable
 
-; <label>:30                                      ; preds = %24, %5
+
   store i32 0, i32* %i.i, align 4, !dbg !39, !tbaa !41
   tail call void @llvm.dbg.value(metadata %struct.C* %8, i64 0, metadata !27, metadata !DIExpression()), !dbg !46
   call void @_ZN1C5m_fn3Ev(%struct.C* %8), !dbg !47
   unreachable, !dbg !47
 }
 
-; Function Attrs: sanitize_address
+
 define void @_ZN1C5m_fn3Ev(%struct.C* nocapture %this) #1 align 2 {
 entry:
   %MyAlloca = alloca [64 x i8], align 32, !dbg !48
@@ -124,11 +124,11 @@ entry:
   %2 = icmp ne i32 %1, 0, !dbg !48
   br i1 %2, label %3, label %5
 
-; <label>:3                                       ; preds = %entry
+
   %4 = call i64 @__asan_stack_malloc_0(i64 64, i64 %0), !dbg !48
   br label %5
 
-; <label>:5                                       ; preds = %entry, %3
+
   %6 = phi i64 [ %0, %entry ], [ %4, %3 ], !dbg !48
   %7 = add i64 %6, 32, !dbg !48
   %8 = inttoptr i64 %7 to %struct.A*, !dbg !48
@@ -156,25 +156,25 @@ entry:
   %23 = icmp ne i8 %22, 0, !dbg !50
   br i1 %23, label %24, label %30, !dbg !50
 
-; <label>:24                                      ; preds = %5
+
   %25 = and i64 %18, 7, !dbg !50
   %26 = add i64 %25, 3, !dbg !50
   %27 = trunc i64 %26 to i8, !dbg !50
   %28 = icmp sge i8 %27, %22, !dbg !50
   br i1 %28, label %29, label %30
 
-; <label>:29                                      ; preds = %24
+
   call void @__asan_report_store4(i64 %18), !dbg !50
   call void asm sideeffect "", ""()
   unreachable
 
-; <label>:30                                      ; preds = %24, %5
+
   store i32 0, i32* %i.i, align 4, !dbg !50, !tbaa !41
   store i64 1172321806, i64* %9, !dbg !52
   %31 = icmp ne i64 %6, %0, !dbg !52
   br i1 %31, label %32, label %39, !dbg !52
 
-; <label>:32                                      ; preds = %30
+
   %33 = add i64 %15, 0, !dbg !52
   %34 = inttoptr i64 %33 to i64*, !dbg !52
   store i64 -723401728380766731, i64* %34, !dbg !52
@@ -185,19 +185,19 @@ entry:
   store i8 0, i8* %38, !dbg !52
   br label %42, !dbg !52
 
-; <label>:39                                      ; preds = %30
+
   %40 = add i64 %15, 0, !dbg !52
   %41 = inttoptr i64 %40 to i64*, !dbg !52
   store i64 0, i64* %41, !dbg !52
   br label %42, !dbg !52
 
-; <label>:42                                      ; preds = %39, %32
+
   ret void, !dbg !52
 }
 
 declare i32 @_ZN1A5m_fn1Ev(%struct.A*) #2
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #3
 
 define internal void @asan.module_ctor() {

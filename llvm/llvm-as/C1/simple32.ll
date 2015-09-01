@@ -1,5 +1,5 @@
 target datalayout = "e-m:e-p:32:32-i64:64-v128:64:128-n32-S64"
-; RUN: opt < %s -alignment-from-assumptions -S | FileCheck %s
+
 
 define i32 @foo(i32* nocapture %a) nounwind uwtable readonly {
 entry:
@@ -10,9 +10,9 @@ entry:
   %0 = load i32, i32* %a, align 4
   ret i32 %0
 
-; CHECK-LABEL: @foo
-; CHECK: load i32, i32* {{[^,]+}}, align 32
-; CHECK: ret i32
+
+
+
 }
 
 define i32 @foo2(i32* nocapture %a) nounwind uwtable readonly {
@@ -26,9 +26,9 @@ entry:
   %0 = load i32, i32* %arrayidx, align 4
   ret i32 %0
 
-; CHECK-LABEL: @foo2
-; CHECK: load i32, i32* {{[^,]+}}, align 16
-; CHECK: ret i32
+
+
+
 }
 
 define i32 @foo2a(i32* nocapture %a) nounwind uwtable readonly {
@@ -42,9 +42,9 @@ entry:
   %0 = load i32, i32* %arrayidx, align 4
   ret i32 %0
 
-; CHECK-LABEL: @foo2a
-; CHECK: load i32, i32* {{[^,]+}}, align 32
-; CHECK: ret i32
+
+
+
 }
 
 define i32 @goo(i32* nocapture %a) nounwind uwtable readonly {
@@ -56,9 +56,9 @@ entry:
   %0 = load i32, i32* %a, align 4
   ret i32 %0
 
-; CHECK-LABEL: @goo
-; CHECK: load i32, i32* {{[^,]+}}, align 32
-; CHECK: ret i32
+
+
+
 }
 
 define i32 @hoo(i32* nocapture %a) nounwind uwtable readonly {
@@ -69,7 +69,7 @@ entry:
   tail call void @llvm.assume(i1 %maskcond)
   br label %for.body
 
-for.body:                                         ; preds = %entry, %for.body
+for.body:                                         
   %indvars.iv = phi i64 [ 0, %entry ], [ %indvars.iv.next, %for.body ]
   %r.06 = phi i32 [ 0, %entry ], [ %add, %for.body ]
   %arrayidx = getelementptr inbounds i32, i32* %a, i64 %indvars.iv
@@ -80,13 +80,13 @@ for.body:                                         ; preds = %entry, %for.body
   %cmp = icmp slt i32 %1, 2048
   br i1 %cmp, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   %add.lcssa = phi i32 [ %add, %for.body ]
   ret i32 %add.lcssa
 
-; CHECK-LABEL: @hoo
-; CHECK: load i32, i32* %arrayidx, align 32
-; CHECK: ret i32 %add.lcssa
+
+
+
 }
 
 define i32 @joo(i32* nocapture %a) nounwind uwtable readonly {
@@ -97,7 +97,7 @@ entry:
   tail call void @llvm.assume(i1 %maskcond)
   br label %for.body
 
-for.body:                                         ; preds = %entry, %for.body
+for.body:                                         
   %indvars.iv = phi i64 [ 4, %entry ], [ %indvars.iv.next, %for.body ]
   %r.06 = phi i32 [ 0, %entry ], [ %add, %for.body ]
   %arrayidx = getelementptr inbounds i32, i32* %a, i64 %indvars.iv
@@ -108,13 +108,13 @@ for.body:                                         ; preds = %entry, %for.body
   %cmp = icmp slt i32 %1, 2048
   br i1 %cmp, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   %add.lcssa = phi i32 [ %add, %for.body ]
   ret i32 %add.lcssa
 
-; CHECK-LABEL: @joo
-; CHECK: load i32, i32* %arrayidx, align 16
-; CHECK: ret i32 %add.lcssa
+
+
+
 }
 
 define i32 @koo(i32* nocapture %a) nounwind uwtable readonly {
@@ -125,7 +125,7 @@ entry:
   tail call void @llvm.assume(i1 %maskcond)
   br label %for.body
 
-for.body:                                         ; preds = %entry, %for.body
+for.body:                                         
   %indvars.iv = phi i64 [ 0, %entry ], [ %indvars.iv.next, %for.body ]
   %r.06 = phi i32 [ 0, %entry ], [ %add, %for.body ]
   %arrayidx = getelementptr inbounds i32, i32* %a, i64 %indvars.iv
@@ -136,13 +136,13 @@ for.body:                                         ; preds = %entry, %for.body
   %cmp = icmp slt i32 %1, 2048
   br i1 %cmp, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   %add.lcssa = phi i32 [ %add, %for.body ]
   ret i32 %add.lcssa
 
-; CHECK-LABEL: @koo
-; CHECK: load i32, i32* %arrayidx, align 16
-; CHECK: ret i32 %add.lcssa
+
+
+
 }
 
 define i32 @koo2(i32* nocapture %a) nounwind uwtable readonly {
@@ -153,7 +153,7 @@ entry:
   tail call void @llvm.assume(i1 %maskcond)
   br label %for.body
 
-for.body:                                         ; preds = %entry, %for.body
+for.body:                                         
   %indvars.iv = phi i64 [ -4, %entry ], [ %indvars.iv.next, %for.body ]
   %r.06 = phi i32 [ 0, %entry ], [ %add, %for.body ]
   %arrayidx = getelementptr inbounds i32, i32* %a, i64 %indvars.iv
@@ -164,13 +164,13 @@ for.body:                                         ; preds = %entry, %for.body
   %cmp = icmp slt i32 %1, 2048
   br i1 %cmp, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   %add.lcssa = phi i32 [ %add, %for.body ]
   ret i32 %add.lcssa
 
-; CHECK-LABEL: @koo2
-; CHECK: load i32, i32* %arrayidx, align 16
-; CHECK: ret i32 %add.lcssa
+
+
+
 }
 
 define i32 @moo(i32* nocapture %a) nounwind uwtable {
@@ -183,9 +183,9 @@ entry:
   tail call void @llvm.memset.p0i8.i64(i8* %0, i8 0, i64 64, i32 4, i1 false)
   ret i32 undef
 
-; CHECK-LABEL: @moo
-; CHECK: @llvm.memset.p0i8.i64(i8* %0, i8 0, i64 64, i32 32, i1 false)
-; CHECK: ret i32 undef
+
+
+
 }
 
 define i32 @moo2(i32* nocapture %a, i32* nocapture %b) nounwind uwtable {
@@ -203,9 +203,9 @@ entry:
   tail call void @llvm.memcpy.p0i8.p0i8.i64(i8* %0, i8* %1, i64 64, i32 4, i1 false)
   ret i32 undef
 
-; CHECK-LABEL: @moo2
-; CHECK: @llvm.memcpy.p0i8.p0i8.i64(i8* %0, i8* %1, i64 64, i32 32, i1 false)
-; CHECK: ret i32 undef
+
+
+
 }
 
 declare void @llvm.assume(i1) nounwind

@@ -1,8 +1,8 @@
-; RUN: llc < %s -march=x86 | FileCheck %s
 
-; CHECK: movl {{.}}12, %eax
-; CHECK: movl {{.}}24, %edx
-; CHECK: movl {{.}}48, %ecx
+
+
+
+
 
 %0 = type { i32, i32, i32 }
 

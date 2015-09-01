@@ -1,5 +1,5 @@
-; RUN: llc < %s -march=arm -mtriple=arm-linux-gnueabi
-; PR1406
+
+
 
 	%struct.AVClass = type { i8*, i8* (i8*)*, %struct.AVOption* }
 	%struct.AVCodec = type { i8*, i32, i32, i32, i32 (%struct.AVCodecContext*)*, i32 (%struct.AVCodecContext*, i8*, i32, i8*)*, i32 (%struct.AVCodecContext*)*, i32 (%struct.AVCodecContext*, i8*, i32*, i8*, i32)*, i32, %struct.AVCodec*, void (%struct.AVCodecContext*)*, %struct.AVRational*, i32* }
@@ -15,16 +15,16 @@ define i32 @decode_init(%struct.AVCodecContext* %avctx) {
 entry:
 	br i1 false, label %bb, label %cond_next789
 
-bb:		; preds = %bb, %entry
+bb:		
 	br i1 false, label %bb59, label %bb
 
-bb59:		; preds = %bb
-	%tmp68 = sdiv i64 0, 0		; <i64> [#uses=1]
-	%tmp6869 = trunc i64 %tmp68 to i32		; <i32> [#uses=2]
-	%tmp81 = call i32 asm "smull $0, $1, $2, $3     \0A\09mov   $0, $0,     lsr $4\0A\09add   $1, $0, $1, lsl $5\0A\09", "=&r,=*&r,r,r,i,i"( i32* null, i32 %tmp6869, i32 13316085, i32 23, i32 9 )		; <i32> [#uses=0]
-	%tmp90 = call i32 asm "smull $0, $1, $2, $3     \0A\09mov   $0, $0,     lsr $4\0A\09add   $1, $0, $1, lsl $5\0A\09", "=&r,=*&r,r,r,i,i"( i32* null, i32 %tmp6869, i32 10568984, i32 23, i32 9 )		; <i32> [#uses=0]
+bb59:		
+	%tmp68 = sdiv i64 0, 0		
+	%tmp6869 = trunc i64 %tmp68 to i32		
+	%tmp81 = call i32 asm "smull $0, $1, $2, $3     \0A\09mov   $0, $0,     lsr $4\0A\09add   $1, $0, $1, lsl $5\0A\09", "=&r,=*&r,r,r,i,i"( i32* null, i32 %tmp6869, i32 13316085, i32 23, i32 9 )		
+	%tmp90 = call i32 asm "smull $0, $1, $2, $3     \0A\09mov   $0, $0,     lsr $4\0A\09add   $1, $0, $1, lsl $5\0A\09", "=&r,=*&r,r,r,i,i"( i32* null, i32 %tmp6869, i32 10568984, i32 23, i32 9 )		
 	unreachable
 
-cond_next789:		; preds = %entry
+cond_next789:		
 	ret i32 0
 }

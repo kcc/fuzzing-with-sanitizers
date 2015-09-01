@@ -1,30 +1,30 @@
-; RUN: llc -filetype=obj -o %t.o %s
-; RUN: llvm-dwarfdump -debug-dump=info %t.o | FileCheck %s
 
-; Testcase generated using 'clang -g -O2 -S -emit-llvm' from the following:
-;; void sink(void);
-;; static __attribute__((always_inline)) void bar(int a) { sink(); }
-;; void foo(void) {
-;;   bar(0);
-;;   bar(0);
-;; }
 
-; Check that we have formal parameters for 'a' in both inlined subroutines.
-; CHECK:       DW_TAG_inlined_subroutine
-; CHECK-NEXT:    DW_AT_abstract_origin {{.*}} "bar"
-; CHECK:         DW_TAG_formal_parameter
-; CHECK-NEXT:      DW_AT_const_value
-; CHECK-NEXT:      DW_AT_abstract_origin {{.*}} "a"
-; CHECK:       DW_TAG_inlined_subroutine
-; CHECK-NEXT:    DW_AT_abstract_origin {{.*}} "bar"
-; CHECK:         DW_TAG_formal_parameter
-; CHECK-NEXT:      DW_AT_const_value
-; CHECK-NEXT:      DW_AT_abstract_origin {{.*}} "a"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-darwin"
 
-; Function Attrs: nounwind ssp uwtable
+
 define void @foo() #0 {
 entry:
   tail call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !12, metadata !17) #3, !dbg !18
@@ -36,7 +36,7 @@ entry:
 
 declare void @sink() #1
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #2
 
 attributes #0 = { nounwind ssp uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "target-cpu"="core2" "unsafe-fp-math"="false" "use-soft-float"="false" }

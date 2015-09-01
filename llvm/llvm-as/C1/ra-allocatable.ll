@@ -1,4 +1,4 @@
-; RUN: llc  < %s -march=mipsel | FileCheck %s
+
 
 @a0 = external global i32
 @b0 = external global i32*
@@ -93,10 +93,10 @@
 
 define i32 @f1() nounwind {
 entry:
-; CHECK: sw  $ra, {{[0-9]+}}($sp)            # 4-byte Folded Spill
-; CHECK: $ra
-; CHECK: lw  $ra, {{[0-9]+}}($sp)            # 4-byte Folded Reload
-; CHECK: jr  $ra
+
+
+
+
 
   %0 = load i32, i32* @a0, align 4
   %1 = load i32*, i32** @b0, align 4

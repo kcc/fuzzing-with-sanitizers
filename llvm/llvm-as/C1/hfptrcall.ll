@@ -1,4 +1,4 @@
-; RUN: llc -mtriple=mipsel-linux-gnu -march=mipsel -mcpu=mips16 -relocation-model=pic < %s | FileCheck %s -check-prefix=picel
+
 
 @ptrsv = global float ()* @sv, align 4
 @ptrdv = global double ()* @dv, align 4
@@ -11,26 +11,26 @@
 @.str1 = private unnamed_addr constant [10 x i8] c"%f + %fi\0A\00", align 1
 @xyd = common global { double, double } zeroinitializer, align 8
 
-; Function Attrs: nounwind
+
 define float @sv() #0 {
 entry:
   ret float 1.000000e+01
 }
-; picel: 	.ent	sv
-; picel: 	lw	${{[0-9]+}}, %call16(__mips16_ret_sf)(${{[0-9]+}})
-; picel:	.end	sv
 
-; Function Attrs: nounwind
+
+
+
+
 define double @dv() #0 {
 entry:
   ret double 1.500000e+01
 }
 
-; picel: 	.ent	dv
-; picel: 	lw	${{[0-9]+}}, %call16(__mips16_ret_df)(${{[0-9]+}})
-; picel:	.end	dv
 
-; Function Attrs: nounwind
+
+
+
+
 define { float, float } @scv() #0 {
 entry:
   %retval = alloca { float, float }, align 4
@@ -42,11 +42,11 @@ entry:
   ret { float, float } %0
 }
 
-; picel: 	.ent	scv
-; picel: 	lw	${{[0-9]+}}, %call16(__mips16_ret_sc)(${{[0-9]+}})
-; picel:	.end	scv
 
-; Function Attrs: nounwind
+
+
+
+
 define { double, double } @dcv() #0 {
 entry:
   %retval = alloca { double, double }, align 8
@@ -58,11 +58,11 @@ entry:
   ret { double, double } %0
 }
 
-; picel: 	.ent	dcv
-; picel: 	lw	${{[0-9]+}}, %call16(__mips16_ret_dc)(${{[0-9]+}})
-; picel:	.end	dcv
 
-; Function Attrs: nounwind
+
+
+
+
 define i32 @main() #0 {
 entry:
   %0 = load float ()*, float ()** @ptrsv, align 4
@@ -105,15 +105,15 @@ entry:
   ret i32 0
 }
 
-; picel: 	.ent	main
 
-; picel:	lw	${{[0-9]+}}, %got(__mips16_call_stub_sf_0)(${{[0-9]+}})
 
-; picel:	lw	${{[0-9]+}}, %got(__mips16_call_stub_df_0)(${{[0-9]+}})
 
-; picel:	lw	${{[0-9]+}}, %got(__mips16_call_stub_sc_0)(${{[0-9]+}})
 
-; picel:	lw	${{[0-9]+}}, %got(__mips16_call_stub_dc_0)(${{[0-9]+}})
+
+
+
+
+
 
 
 declare i32 @printf(i8*, ...) #1

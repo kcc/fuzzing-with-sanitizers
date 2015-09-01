@@ -1,8 +1,8 @@
-; RUN: llc -march=hexagon -O3 < %s | FileCheck %s
 
-; CHECK-LABEL: @test_pos1_ir_slt
-; CHECK: loop0
-; a < b
+
+
+
+
 define void @test_pos1_ir_slt(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 8531, %b
@@ -27,9 +27,9 @@ for.end:
   ret void
 }
 
-; CHECK-LABEL: @test_pos2_ir_slt
-; CHECK: loop0
-; a < b
+
+
+
 define void @test_pos2_ir_slt(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 9152, %b
@@ -54,9 +54,9 @@ for.end:
   ret void
 }
 
-; CHECK-LABEL: @test_pos4_ir_slt
-; CHECK: loop0
-; a < b
+
+
+
 define void @test_pos4_ir_slt(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 18851, %b
@@ -81,9 +81,9 @@ for.end:
   ret void
 }
 
-; CHECK-LABEL: @test_pos8_ir_slt
-; CHECK: loop0
-; a < b
+
+
+
 define void @test_pos8_ir_slt(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 25466, %b
@@ -108,9 +108,9 @@ for.end:
   ret void
 }
 
-; CHECK-LABEL: @test_pos16_ir_slt
-; CHECK: loop0
-; a < b
+
+
+
 define void @test_pos16_ir_slt(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 9295, %b
@@ -135,9 +135,9 @@ for.end:
   ret void
 }
 
-; CHECK-LABEL: @test_pos1_ri_slt
-; CHECK: loop0
-; a < b
+
+
+
 define void @test_pos1_ri_slt(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 %a, 31236
@@ -162,9 +162,9 @@ for.end:
   ret void
 }
 
-; CHECK-LABEL: @test_pos2_ri_slt
-; CHECK: loop0
-; a < b
+
+
+
 define void @test_pos2_ri_slt(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 %a, 22653
@@ -189,9 +189,9 @@ for.end:
   ret void
 }
 
-; CHECK-LABEL: @test_pos4_ri_slt
-; CHECK: loop0
-; a < b
+
+
+
 define void @test_pos4_ri_slt(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 %a, 1431
@@ -216,9 +216,9 @@ for.end:
   ret void
 }
 
-; CHECK-LABEL: @test_pos8_ri_slt
-; CHECK: loop0
-; a < b
+
+
+
 define void @test_pos8_ri_slt(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 %a, 22403
@@ -243,9 +243,9 @@ for.end:
   ret void
 }
 
-; CHECK-LABEL: @test_pos16_ri_slt
-; CHECK: loop0
-; a < b
+
+
+
 define void @test_pos16_ri_slt(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 %a, 21715
@@ -270,9 +270,9 @@ for.end:
   ret void
 }
 
-; CHECK-LABEL: @test_pos1_rr_slt
-; CHECK: loop0
-; a < b
+
+
+
 define void @test_pos1_rr_slt(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 %a, %b
@@ -297,9 +297,9 @@ for.end:
   ret void
 }
 
-; CHECK-LABEL: @test_pos2_rr_slt
-; CHECK: loop0
-; a < b
+
+
+
 define void @test_pos2_rr_slt(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 %a, %b
@@ -324,9 +324,9 @@ for.end:
   ret void
 }
 
-; CHECK-LABEL: @test_pos4_rr_slt
-; CHECK: loop0
-; a < b
+
+
+
 define void @test_pos4_rr_slt(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 %a, %b
@@ -351,9 +351,9 @@ for.end:
   ret void
 }
 
-; CHECK-LABEL: @test_pos8_rr_slt
-; CHECK: loop0
-; a < b
+
+
+
 define void @test_pos8_rr_slt(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 %a, %b
@@ -378,9 +378,9 @@ for.end:
   ret void
 }
 
-; CHECK-LABEL: @test_pos16_rr_slt
-; CHECK: loop0
-; a < b
+
+
+
 define void @test_pos16_rr_slt(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 %a, %b

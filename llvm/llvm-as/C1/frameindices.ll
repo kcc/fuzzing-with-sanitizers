@@ -1,38 +1,38 @@
-; RUN: llc -O0 -filetype=obj < %s | llvm-dwarfdump - | FileCheck %s
-; Test that a variable with multiple entries in the MMI table makes it into the
-; debug info.
-;
-; CHECK: DW_TAG_inlined_subroutine
-; CHECK:    "_Z3f111A"
-; CHECK: DW_TAG_formal_parameter
-; CHECK: DW_AT_location [DW_FORM_block1]    (<0x0b> 91 51 9d 78 08 91 4a 9d 38 88 01 )
-;  -- fbreg -47, bit-piece 120 8 , fbreg -54, bit-piece 56 136 ------^
-; CHECK: DW_AT_abstract_origin {{.*}} "p1"
-;
-; long a;
-; struct A {
-;   bool x4;
-;   void *x5;
-;   bool x6;
-; };
-; int *b;
-; struct B {
-;   B(long);
-;   ~B();
-; };
-; void f9(A);
-; void f13(A p1) {
-;   b = (int *)__builtin_operator_new(a);
-;   f9(p1);
-; }
-; void f11(A p1) { f13(p1); }
-; void f16() {
-;   A c;
-;   B d(a);
-;   c.x6 = c.x4 = true;
-;   f11(c);
-; }
-; ModuleID = 'test.cpp'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-m:o-i64:64-i128:128-n32:64-S128"
 target triple = "aarch64-apple-ios"
 
@@ -56,15 +56,15 @@ entry:
   ret void, !dbg !62
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
-; Function Attrs: nobuiltin
+
 declare noalias i8* @_Znwm(i64) #2
 
 declare void @_Z2f91A(%struct.A*) #0
 
-; Function Attrs: nounwind
+
 declare void @llvm.memcpy.p0i8.p0i8.i64(i8* nocapture, i8* nocapture readonly, i64, i32, i1) #3
 
 define void @_Z3f111A(%struct.A* nocapture readonly %p1) #0 {
@@ -106,7 +106,7 @@ entry:
   %call.i.i5 = invoke noalias i8* @_Znwm(i64 %2) #5
           to label %call.i.i.noexc unwind label %lpad, !dbg !88
 
-call.i.i.noexc:                                   ; preds = %entry
+call.i.i.noexc:                                   
   %agg.tmp.sroa.4.17..sroa_idx = getelementptr inbounds [7 x i8], [7 x i8]* %agg.tmp.sroa.4, i64 0, i64 0, !dbg !89
   %agg.tmp.sroa.2.1..sroa_idx = getelementptr inbounds [15 x i8], [15 x i8]* %agg.tmp.sroa.2, i64 0, i64 0, !dbg !89
   store i8* %call.i.i5, i8** bitcast (i32** @b to i8**), align 8, !dbg !90, !tbaa !55
@@ -120,13 +120,13 @@ call.i.i.noexc:                                   ; preds = %entry
   invoke void @_Z2f91A(%struct.A* %agg.tmp.i.i)
           to label %invoke.cont unwind label %lpad, !dbg !92
 
-invoke.cont:                                      ; preds = %call.i.i.noexc
+invoke.cont:                                      
   call void @llvm.lifetime.end(i64 24, i8* %1), !dbg !93
   call void @llvm.dbg.value(metadata %struct.B* %d, i64 0, metadata !39, metadata !79), !dbg !82
   %call1 = call %struct.B* @_ZN1BD1Ev(%struct.B* %d) #3, !dbg !94
   ret void, !dbg !94
 
-lpad:                                             ; preds = %call.i.i.noexc, %entry
+lpad:                                             
   %3 = landingpad { i8*, i32 }
           cleanup, !dbg !94
   call void @llvm.dbg.value(metadata %struct.B* %d, i64 0, metadata !39, metadata !79), !dbg !82
@@ -138,16 +138,16 @@ declare %struct.B* @_ZN1BC1El(%struct.B*, i64)
 
 declare i32 @__gxx_personality_v0(...)
 
-; Function Attrs: nounwind
+
 declare %struct.B* @_ZN1BD1Ev(%struct.B*) #4
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #1
 
-; Function Attrs: nounwind
+
 declare void @llvm.lifetime.start(i64, i8* nocapture) #3
 
-; Function Attrs: nounwind
+
 declare void @llvm.lifetime.end(i64, i8* nocapture) #3
 
 attributes #1 = { nounwind readnone }

@@ -1,12 +1,12 @@
-; RUN: llc -mtriple=x86_64-apple-darwin %s -o %t -filetype=obj
-; RUN: llvm-dwarfdump -debug-dump=info %t | FileCheck %s
 
-; Check that the friend tag is there and is followed by a DW_AT_friend that has a reference back.
 
-; CHECK: [[BACK:0x[0-9a-f]*]]:   DW_TAG_class_type
-; CHECK-NEXT: DW_AT_name [DW_FORM_strp]       ( .debug_str[{{.*}}] = "A")
-; CHECK: DW_TAG_friend
-; CHECK-NEXT: DW_AT_friend [DW_FORM_ref4]   (cu + 0x{{[0-9a-f]*}} => {[[BACK]]})
+
+
+
+
+
+
+
 
 
 %class.A = type { i32 }

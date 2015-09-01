@@ -1,5 +1,5 @@
-; RUN: llc < %s -mtriple=armv7-eabi -mcpu=cortex-a8
-; pr7167
+
+
 
 define <8 x i8> @f1(<8 x i8> %x) nounwind {
   %y = shufflevector <8 x i8> %x, <8 x i8> undef,

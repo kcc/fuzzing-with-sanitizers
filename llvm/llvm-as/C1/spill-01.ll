@@ -1,7 +1,7 @@
-; Test spilling using MVC.  The tests here assume z10 register pressure,
-; without the high words being available.
-;
-; RUN: llc < %s -mtriple=s390x-linux-gnu -mcpu=z10 | FileCheck %s
+
+
+
+
 
 declare void @foo()
 
@@ -27,16 +27,16 @@ declare void @foo()
 @h8 = global i64 8
 @h9 = global i64 9
 
-; This function shouldn't spill anything
+
 define void @f1(i32 *%ptr0) {
-; CHECK-LABEL: f1:
-; CHECK: stmg
-; CHECK: aghi %r15, -160
-; CHECK-NOT: %r15
-; CHECK: brasl %r14, foo@PLT
-; CHECK-NOT: %r15
-; CHECK: lmg
-; CHECK: br %r14
+
+
+
+
+
+
+
+
   %ptr1 = getelementptr i32, i32 *%ptr0, i32 2
   %ptr2 = getelementptr i32, i32 *%ptr0, i32 4
   %ptr3 = getelementptr i32, i32 *%ptr0, i32 6
@@ -65,14 +65,14 @@ define void @f1(i32 *%ptr0) {
   ret void
 }
 
-; Test a case where at least one i32 load and at least one i32 store
-; need spills.
+
+
 define void @f2(i32 *%ptr0) {
-; CHECK-LABEL: f2:
-; CHECK: mvc [[OFFSET1:16[04]]](4,%r15), [[OFFSET2:[0-9]+]]({{%r[0-9]+}})
-; CHECK: brasl %r14, foo@PLT
-; CHECK: mvc [[OFFSET2]](4,{{%r[0-9]+}}), [[OFFSET1]](%r15)
-; CHECK: br %r14
+
+
+
+
+
   %ptr1 = getelementptr i32, i32 *%ptr0, i64 2
   %ptr2 = getelementptr i32, i32 *%ptr0, i64 4
   %ptr3 = getelementptr i32, i32 *%ptr0, i64 6
@@ -107,14 +107,14 @@ define void @f2(i32 *%ptr0) {
   ret void
 }
 
-; Test a case where at least one i64 load and at least one i64 store
-; need spills.
+
+
 define void @f3(i64 *%ptr0) {
-; CHECK-LABEL: f3:
-; CHECK: mvc 160(8,%r15), [[OFFSET:[0-9]+]]({{%r[0-9]+}})
-; CHECK: brasl %r14, foo@PLT
-; CHECK: mvc [[OFFSET]](8,{{%r[0-9]+}}), 160(%r15)
-; CHECK: br %r14
+
+
+
+
+
   %ptr1 = getelementptr i64, i64 *%ptr0, i64 2
   %ptr2 = getelementptr i64, i64 *%ptr0, i64 4
   %ptr3 = getelementptr i64, i64 *%ptr0, i64 6
@@ -150,16 +150,16 @@ define void @f3(i64 *%ptr0) {
 }
 
 
-; Test a case where at least at least one f32 load and at least one f32 store
-; need spills.  The 8 call-saved FPRs could be used for 8 of the %vals
-; (and are at the time of writing), but it would really be better to use
-; MVC for all 10.
+
+
+
+
 define void @f4(float *%ptr0) {
-; CHECK-LABEL: f4:
-; CHECK: mvc [[OFFSET1:16[04]]](4,%r15), [[OFFSET2:[0-9]+]]({{%r[0-9]+}})
-; CHECK: brasl %r14, foo@PLT
-; CHECK: mvc [[OFFSET2]](4,{{%r[0-9]+}}), [[OFFSET1]](%r15)
-; CHECK: br %r14
+
+
+
+
+
   %ptr1 = getelementptr float, float *%ptr0, i64 2
   %ptr2 = getelementptr float, float *%ptr0, i64 4
   %ptr3 = getelementptr float, float *%ptr0, i64 6
@@ -197,13 +197,13 @@ define void @f4(float *%ptr0) {
   ret void
 }
 
-; Similarly for f64.
+
 define void @f5(double *%ptr0) {
-; CHECK-LABEL: f5:
-; CHECK: mvc 160(8,%r15), [[OFFSET:[0-9]+]]({{%r[0-9]+}})
-; CHECK: brasl %r14, foo@PLT
-; CHECK: mvc [[OFFSET]](8,{{%r[0-9]+}}), 160(%r15)
-; CHECK: br %r14
+
+
+
+
+
   %ptr1 = getelementptr double, double *%ptr0, i64 2
   %ptr2 = getelementptr double, double *%ptr0, i64 4
   %ptr3 = getelementptr double, double *%ptr0, i64 6
@@ -241,11 +241,11 @@ define void @f5(double *%ptr0) {
   ret void
 }
 
-; Repeat f2 with atomic accesses.  We shouldn't use MVC here.
+
 define void @f6(i32 *%ptr0) {
-; CHECK-LABEL: f6:
-; CHECK-NOT: mvc
-; CHECK: br %r14
+
+
+
   %ptr1 = getelementptr i32, i32 *%ptr0, i64 2
   %ptr2 = getelementptr i32, i32 *%ptr0, i64 4
   %ptr3 = getelementptr i32, i32 *%ptr0, i64 6
@@ -280,11 +280,11 @@ define void @f6(i32 *%ptr0) {
   ret void
 }
 
-; ...likewise volatile accesses.
+
 define void @f7(i32 *%ptr0) {
-; CHECK-LABEL: f7:
-; CHECK-NOT: mvc
-; CHECK: br %r14
+
+
+
   %ptr1 = getelementptr i32, i32 *%ptr0, i64 2
   %ptr2 = getelementptr i32, i32 *%ptr0, i64 4
   %ptr3 = getelementptr i32, i32 *%ptr0, i64 6
@@ -319,11 +319,11 @@ define void @f7(i32 *%ptr0) {
   ret void
 }
 
-; Check that LRL and STRL are not converted.
+
 define void @f8() {
-; CHECK-LABEL: f8:
-; CHECK-NOT: mvc
-; CHECK: br %r14
+
+
+
   %val0 = load i32 , i32 *@g0
   %val1 = load i32 , i32 *@g1
   %val2 = load i32 , i32 *@g2
@@ -351,11 +351,11 @@ define void @f8() {
   ret void
 }
 
-; Likewise LGRL and STGRL.
+
 define void @f9() {
-; CHECK-LABEL: f9:
-; CHECK-NOT: mvc
-; CHECK: br %r14
+
+
+
   %val0 = load i64 , i64 *@h0
   %val1 = load i64 , i64 *@h1
   %val2 = load i64 , i64 *@h2
@@ -383,22 +383,22 @@ define void @f9() {
   ret void
 }
 
-; This showed a problem with the way stack coloring updated instructions.
-; The copy from %val9 to %newval8 can be done using an MVC, which then
-; has two frame index operands.  Stack coloring chose a valid renumbering
-; [FI0, FI1] -> [FI1, FI2], but applied it in the form FI0 -> FI1 -> FI2,
-; so that both operands ended up being the same.
+
+
+
+
+
 define void @f10() {
-; CHECK-LABEL: f10:
-; CHECK: lgrl [[REG:%r[0-9]+]], h9
-; CHECK: stg [[REG]], [[VAL9:[0-9]+]](%r15)
-; CHECK: brasl %r14, foo@PLT
-; CHECK: brasl %r14, foo@PLT
-; CHECK: mvc [[NEWVAL8:[0-9]+]](8,%r15), [[VAL9]](%r15)
-; CHECK: brasl %r14, foo@PLT
-; CHECK: lg [[REG:%r[0-9]+]], [[NEWVAL8]](%r15)
-; CHECK: stgrl [[REG]], h8
-; CHECK: br %r14
+
+
+
+
+
+
+
+
+
+
 entry:
   %val8 = load volatile i64 , i64 *@h8
   %val0 = load volatile i64 , i64 *@h0
@@ -458,11 +458,11 @@ skip:
   ret void
 }
 
-; This used to generate a no-op MVC.  It is very sensitive to spill heuristics.
+
 define void @f11() {
-; CHECK-LABEL: f11:
-; CHECK-NOT: mvc [[OFFSET:[0-9]+]](8,%r15), [[OFFSET]](%r15)
-; CHECK: br %r14
+
+
+
 entry:
   %val0 = load volatile i64 , i64 *@h0
   %val1 = load volatile i64 , i64 *@h1

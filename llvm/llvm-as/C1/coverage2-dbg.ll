@@ -1,29 +1,29 @@
-; Test that coverage instrumentation does not lose debug location.
 
-; RUN: opt < %s -sancov  -sanitizer-coverage-level=2 -S | FileCheck %s
 
-; C++ source:
-; 1: void foo(int *a) {
-; 2:     if (a)
-; 3:         *a = 0;
-; 4: }
-; clang++ if.cc -O3 -g -S -emit-llvm
-; and add sanitize_address to @_Z3fooPi
+
+
+
+
+
+
+
+
+
 
 
 target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
-; Check that __sanitizer_cov call has !dgb pointing to the beginning
-; of appropriate basic blocks.
-; CHECK-LABEL:_Z3fooPi
-; CHECK: call void @__sanitizer_cov(i32*{{.*}}), !dbg [[A:!.*]]
-; CHECK: call void @__sanitizer_cov(i32*{{.*}}), !dbg [[B:!.*]]
-; CHECK: call void @__sanitizer_cov(i32*{{.*}}), !dbg [[C:!.*]]
-; CHECK: ret void
-; CHECK: [[A]] = !DILocation(line: 1, scope: !{{.*}})
-; CHECK: [[B]] = !DILocation(line: 3, column: 5, scope: !{{.*}})
-; CHECK: [[C]] = !DILocation(line: 4, column: 1, scope: !{{.*}})
+
+
+
+
+
+
+
+
+
+
 
 define void @_Z3fooPi(i32* %a) #0 {
 entry:
@@ -31,15 +31,15 @@ entry:
   %tobool = icmp eq i32* %a, null, !dbg !16
   br i1 %tobool, label %if.end, label %if.then, !dbg !16
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   store i32 0, i32* %a, align 4, !dbg !18, !tbaa !19
   br label %if.end, !dbg !18
 
-if.end:                                           ; preds = %entry, %if.then
+if.end:                                           
   ret void, !dbg !23
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #1
 
 attributes #0 = { nounwind uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" sanitize_address}

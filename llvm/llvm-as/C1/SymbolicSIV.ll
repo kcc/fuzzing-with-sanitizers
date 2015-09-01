@@ -1,30 +1,30 @@
-; RUN: opt < %s -analyze -basicaa -da | FileCheck %s
 
-; ModuleID = 'SymbolicSIV.bc'
+
+
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.6.0"
 
 
-;;  for (long int i = 0; i < n; i++) {
-;;    A[2*i + n] = i;
-;;    *B++ = A[3*i + 3*n];
+
+
+
 
 define void @symbolicsiv0(i32* %A, i32* %B, i64 %n) nounwind uwtable ssp {
 entry:
   %cmp1 = icmp eq i64 %n, 0
   br i1 %cmp1, label %for.end, label %for.body.preheader
 
-; CHECK: da analyze - none!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
 
-for.body.preheader:                               ; preds = %entry
+
+
+
+
+
+
+for.body.preheader:                               
   br label %for.body
 
-for.body:                                         ; preds = %for.body.preheader, %for.body
+for.body:                                         
   %i.03 = phi i64 [ %inc, %for.body ], [ 0, %for.body.preheader ]
   %B.addr.02 = phi i32* [ %incdec.ptr, %for.body ], [ %B, %for.body.preheader ]
   %conv = trunc i64 %i.03 to i32
@@ -42,34 +42,34 @@ for.body:                                         ; preds = %for.body.preheader,
   %exitcond = icmp ne i64 %inc, %n
   br i1 %exitcond, label %for.body, label %for.end.loopexit
 
-for.end.loopexit:                                 ; preds = %for.body
+for.end.loopexit:                                 
   br label %for.end
 
-for.end:                                          ; preds = %for.end.loopexit, %entry
+for.end:                                          
   ret void
 }
 
 
-;;  for (long int i = 0; i < n; i++) {
-;;    A[2*i + 5*n] = i;
-;;    *B++ = A[3*i + 2*n];
+
+
+
 
 define void @symbolicsiv1(i32* %A, i32* %B, i64 %n) nounwind uwtable ssp {
 entry:
   %cmp1 = icmp eq i64 %n, 0
   br i1 %cmp1, label %for.end, label %for.body.preheader
 
-; CHECK: da analyze - none!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
 
-for.body.preheader:                               ; preds = %entry
+
+
+
+
+
+
+for.body.preheader:                               
   br label %for.body
 
-for.body:                                         ; preds = %for.body.preheader, %for.body
+for.body:                                         
   %i.03 = phi i64 [ %inc, %for.body ], [ 0, %for.body.preheader ]
   %B.addr.02 = phi i32* [ %incdec.ptr, %for.body ], [ %B, %for.body.preheader ]
   %conv = trunc i64 %i.03 to i32
@@ -89,34 +89,34 @@ for.body:                                         ; preds = %for.body.preheader,
   %exitcond = icmp ne i64 %inc, %n
   br i1 %exitcond, label %for.body, label %for.end.loopexit
 
-for.end.loopexit:                                 ; preds = %for.body
+for.end.loopexit:                                 
   br label %for.end
 
-for.end:                                          ; preds = %for.end.loopexit, %entry
+for.end:                                          
   ret void
 }
 
 
-;;  for (long int i = 0; i < n; i++) {
-;;    A[2*i - n] = i;
-;;    *B++ = A[-i + 2*n];
+
+
+
 
 define void @symbolicsiv2(i32* %A, i32* %B, i64 %n) nounwind uwtable ssp {
 entry:
   %cmp1 = icmp eq i64 %n, 0
   br i1 %cmp1, label %for.end, label %for.body.preheader
 
-; CHECK: da analyze - none!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
 
-for.body.preheader:                               ; preds = %entry
+
+
+
+
+
+
+for.body.preheader:                               
   br label %for.body
 
-for.body:                                         ; preds = %for.body.preheader, %for.body
+for.body:                                         
   %i.03 = phi i64 [ %inc, %for.body ], [ 0, %for.body.preheader ]
   %B.addr.02 = phi i32* [ %incdec.ptr, %for.body ], [ %B, %for.body.preheader ]
   %conv = trunc i64 %i.03 to i32
@@ -134,34 +134,34 @@ for.body:                                         ; preds = %for.body.preheader,
   %exitcond = icmp ne i64 %inc, %n
   br i1 %exitcond, label %for.body, label %for.end.loopexit
 
-for.end.loopexit:                                 ; preds = %for.body
+for.end.loopexit:                                 
   br label %for.end
 
-for.end:                                          ; preds = %for.end.loopexit, %entry
+for.end:                                          
   ret void
 }
 
 
-;;  for (long int i = 0; i < n; i++) {
-;;    A[-2*i + n + 1] = i;
-;;    *B++ = A[i - 2*n];
+
+
+
 
 define void @symbolicsiv3(i32* %A, i32* %B, i64 %n) nounwind uwtable ssp {
 entry:
   %cmp1 = icmp eq i64 %n, 0
   br i1 %cmp1, label %for.end, label %for.body.preheader
 
-; CHECK: da analyze - none!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
 
-for.body.preheader:                               ; preds = %entry
+
+
+
+
+
+
+for.body.preheader:                               
   br label %for.body
 
-for.body:                                         ; preds = %for.body.preheader, %for.body
+for.body:                                         
   %i.03 = phi i64 [ %inc, %for.body ], [ 0, %for.body.preheader ]
   %B.addr.02 = phi i32* [ %incdec.ptr, %for.body ], [ %B, %for.body.preheader ]
   %conv = trunc i64 %i.03 to i32
@@ -180,34 +180,34 @@ for.body:                                         ; preds = %for.body.preheader,
   %exitcond = icmp ne i64 %inc, %n
   br i1 %exitcond, label %for.body, label %for.end.loopexit
 
-for.end.loopexit:                                 ; preds = %for.body
+for.end.loopexit:                                 
   br label %for.end
 
-for.end:                                          ; preds = %for.end.loopexit, %entry
+for.end:                                          
   ret void
 }
 
 
-;;  for (long int i = 0; i < n; i++) {
-;;    A[-2*i + 3*n] = i;
-;;    *B++ = A[-i + n];
+
+
+
 
 define void @symbolicsiv4(i32* %A, i32* %B, i64 %n) nounwind uwtable ssp {
 entry:
   %cmp1 = icmp eq i64 %n, 0
   br i1 %cmp1, label %for.end, label %for.body.preheader
 
-; CHECK: da analyze - none!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
 
-for.body.preheader:                               ; preds = %entry
+
+
+
+
+
+
+for.body.preheader:                               
   br label %for.body
 
-for.body:                                         ; preds = %for.body.preheader, %for.body
+for.body:                                         
   %i.03 = phi i64 [ %inc, %for.body ], [ 0, %for.body.preheader ]
   %B.addr.02 = phi i32* [ %incdec.ptr, %for.body ], [ %B, %for.body.preheader ]
   %conv = trunc i64 %i.03 to i32
@@ -225,34 +225,34 @@ for.body:                                         ; preds = %for.body.preheader,
   %exitcond = icmp ne i64 %inc, %n
   br i1 %exitcond, label %for.body, label %for.end.loopexit
 
-for.end.loopexit:                                 ; preds = %for.body
+for.end.loopexit:                                 
   br label %for.end
 
-for.end:                                          ; preds = %for.end.loopexit, %entry
+for.end:                                          
   ret void
 }
 
 
-;;  for (long int i = 0; i < n; i++) {
-;;    A[-2*i - 2*n] = i;
-;;    *B++ = A[-i - n];
+
+
+
 
 define void @symbolicsiv5(i32* %A, i32* %B, i64 %n) nounwind uwtable ssp {
 entry:
   %cmp1 = icmp eq i64 %n, 0
   br i1 %cmp1, label %for.end, label %for.body.preheader
 
-; CHECK: da analyze - none!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
 
-for.body.preheader:                               ; preds = %entry
+
+
+
+
+
+
+for.body.preheader:                               
   br label %for.body
 
-for.body:                                         ; preds = %for.body.preheader, %for.body
+for.body:                                         
   %i.03 = phi i64 [ %inc, %for.body ], [ 0, %for.body.preheader ]
   %B.addr.02 = phi i32* [ %incdec.ptr, %for.body ], [ %B, %for.body.preheader ]
   %conv = trunc i64 %i.03 to i32
@@ -271,36 +271,36 @@ for.body:                                         ; preds = %for.body.preheader,
   %exitcond = icmp ne i64 %inc, %n
   br i1 %exitcond, label %for.body, label %for.end.loopexit
 
-for.end.loopexit:                                 ; preds = %for.body
+for.end.loopexit:                                 
   br label %for.end
 
-for.end:                                          ; preds = %for.end.loopexit, %entry
+for.end:                                          
   ret void
 }
 
 
-;; why doesn't SCEV package understand that n >= 0?
-;;  for (long unsigned i = 0; i < n; i++) {
-;;    A[i + n + 1] = i;
-;;    *B++ = A[-i];
+
+
+
+
 
 define void @weaktest(i32* %A, i32* %B, i64 %n) nounwind uwtable ssp {
 entry:
   %cmp1 = icmp eq i64 %n, 0
   br i1 %cmp1, label %for.end, label %for.body.preheader
 
-; CHECK: da analyze - none!
-; CHECK: da analyze - flow [*|<] splitable!
-; CHECK: da analyze - split level = 1, iteration = ((0 smax (-1 + (-1 * %n))) /u 2)!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
 
-for.body.preheader:                               ; preds = %entry
+
+
+
+
+
+
+
+for.body.preheader:                               
   br label %for.body
 
-for.body:                                         ; preds = %for.body.preheader, %for.body
+for.body:                                         
   %i.03 = phi i64 [ %inc, %for.body ], [ 0, %for.body.preheader ]
   %B.addr.02 = phi i32* [ %incdec.ptr, %for.body ], [ %B, %for.body.preheader ]
   %conv = trunc i64 %i.03 to i32
@@ -317,34 +317,34 @@ for.body:                                         ; preds = %for.body.preheader,
   %exitcond = icmp ne i64 %inc, %n
   br i1 %exitcond, label %for.body, label %for.end.loopexit
 
-for.end.loopexit:                                 ; preds = %for.body
+for.end.loopexit:                                 
   br label %for.end
 
-for.end:                                          ; preds = %for.end.loopexit, %entry
+for.end:                                          
   ret void
 }
 
 
-;;  for (long int i = 0; i < n; i++) {
-;;    A[4*N*i + M] = i;
-;;    *B++ = A[4*N*i + 3*M + 1];
+
+
+
 
 define void @symbolicsiv6(i32* %A, i32* %B, i64 %n, i64 %N, i64 %M) nounwind uwtable ssp {
 entry:
   %cmp1 = icmp eq i64 %n, 0
   br i1 %cmp1, label %for.end, label %for.body.preheader
 
-; CHECK: da analyze - none!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
 
-for.body.preheader:                               ; preds = %entry
+
+
+
+
+
+
+for.body.preheader:                               
   br label %for.body
 
-for.body:                                         ; preds = %for.body.preheader, %for.body
+for.body:                                         
   %i.03 = phi i64 [ %inc, %for.body ], [ 0, %for.body.preheader ]
   %B.addr.02 = phi i32* [ %incdec.ptr, %for.body ], [ %B, %for.body.preheader ]
   %conv = trunc i64 %i.03 to i32
@@ -366,34 +366,34 @@ for.body:                                         ; preds = %for.body.preheader,
   %exitcond = icmp ne i64 %inc, %n
   br i1 %exitcond, label %for.body, label %for.end.loopexit
 
-for.end.loopexit:                                 ; preds = %for.body
+for.end.loopexit:                                 
   br label %for.end
 
-for.end:                                          ; preds = %for.end.loopexit, %entry
+for.end:                                          
   ret void
 }
 
 
-;;  for (long int i = 0; i < n; i++) {
-;;    A[2*N*i + M] = i;
-;;    *B++ = A[2*N*i - 3*M + 2];
+
+
+
 
 define void @symbolicsiv7(i32* %A, i32* %B, i64 %n, i64 %N, i64 %M) nounwind uwtable ssp {
 entry:
   %cmp1 = icmp eq i64 %n, 0
   br i1 %cmp1, label %for.end, label %for.body.preheader
 
-; CHECK: da analyze - none!
-; CHECK: da analyze - flow [<>]!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
 
-for.body.preheader:                               ; preds = %entry
+
+
+
+
+
+
+for.body.preheader:                               
   br label %for.body
 
-for.body:                                         ; preds = %for.body.preheader, %for.body
+for.body:                                         
   %i.03 = phi i64 [ %inc, %for.body ], [ 0, %for.body.preheader ]
   %B.addr.02 = phi i32* [ %incdec.ptr, %for.body ], [ %B, %for.body.preheader ]
   %conv = trunc i64 %i.03 to i32
@@ -415,9 +415,9 @@ for.body:                                         ; preds = %for.body.preheader,
   %exitcond = icmp ne i64 %inc, %n
   br i1 %exitcond, label %for.body, label %for.end.loopexit
 
-for.end.loopexit:                                 ; preds = %for.body
+for.end.loopexit:                                 
   br label %for.end
 
-for.end:                                          ; preds = %for.end.loopexit, %entry
+for.end:                                          
   ret void
 }

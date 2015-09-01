@@ -1,10 +1,10 @@
-; RUN: llc < %s -march=r600 -mcpu=redwood | FileCheck --check-prefix=EG %s
 
-;EG: {{^}}main:
-;EG: EXPORT T{{[0-9]+}}.XYXX
-;EG: EXPORT T{{[0-9]+}}.ZXXX
-;EG: EXPORT T{{[0-9]+}}.XXWX
-;EG: EXPORT T{{[0-9]+}}.XXXW
+
+
+
+
+
+
 
 define void @main(<4 x float> inreg %reg0, <4 x float> inreg %reg1) #0 {
 main_body:
@@ -92,9 +92,9 @@ main_body:
   ret void
 }
 
-; EG: {{^}}main2:
-; EG: T{{[0-9]+}}.XY__
-; EG: T{{[0-9]+}}.ZXY0
+
+
+
 
 define void @main2(<4 x float> inreg %reg0, <4 x float> inreg %reg1) #0 {
 main_body:
@@ -120,7 +120,7 @@ main_body:
   ret void
 }
 
-; Function Attrs: nounwind readonly
+
 declare float @llvm.cos.f32(float) #1
 
 declare void @llvm.R600.store.swizzle(<4 x float>, i32, i32)

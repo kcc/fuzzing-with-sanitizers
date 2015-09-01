@@ -1,11 +1,11 @@
-; REQUIRES: asserts
-; RUN: llc < %s -O0 -disable-fp-elim -relocation-model=pic -stats 2>&1 | FileCheck %s
-;
-; This test should not cause any spilling with RAFast.
-;
-; CHECK: Number of copies coalesced
-; CHECK-NOT: Number of stores added
-;
+
+
+
+
+
+
+
+
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64"
 target triple = "x86_64-apple-darwin10.0.0"
 
@@ -27,7 +27,7 @@ bb:
   store i64 0, i64* %tmp5, align 8
   br label %bb8
 
-bb8:                                              ; preds = %bb23, %bb
+bb8:                                              
   %tmp15 = getelementptr inbounds %3, %3* %tmp7, i32 0, i32 4
   store i8* bitcast (%0* @0 to i8*), i8** %tmp15
   %tmp16 = bitcast %3* %tmp7 to void ()*
@@ -41,13 +41,13 @@ bb8:                                              ; preds = %bb23, %bb
   call void %tmp22(i8* %tmp20)
   br label %bb23
 
-bb23:                                             ; preds = %bb8
+bb23:                                             
   %tmp24 = load i64, i64* %tmp5, align 8
   %tmp25 = add i64 %tmp24, 1
   store i64 %tmp25, i64* %tmp5, align 8
   %tmp26 = icmp ult i64 %tmp25, 10
   br i1 %tmp26, label %bb8, label %bb27
 
-bb27:                                             ; preds = %bb23
+bb27:                                             
   ret void
 }

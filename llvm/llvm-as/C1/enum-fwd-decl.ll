@@ -1,5 +1,5 @@
-; RUN: llc -O0 -mtriple=x86_64-apple-darwin %s -o %t -filetype=obj
-; RUN: llvm-dwarfdump -debug-dump=info %t | FileCheck %s
+
+
 
 @e = global i16 0, align 2
 
@@ -14,8 +14,8 @@
 !7 = !DICompositeType(tag: DW_TAG_enumeration_type, name: "E", line: 1, size: 16, align: 16, flags: DIFlagFwdDecl, file: !8)
 !8 = !DIFile(filename: "foo.cpp", directory: "/tmp")
 
-; CHECK: DW_TAG_enumeration_type
-; CHECK-NEXT: DW_AT_name
-; CHECK-NEXT: DW_AT_byte_size
-; CHECK-NEXT: DW_AT_declaration
+
+
+
+
 !9 = !{i32 1, !"Debug Info Version", i32 3}

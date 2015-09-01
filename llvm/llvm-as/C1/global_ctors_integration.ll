@@ -1,9 +1,9 @@
-; RUN: opt -S -O2 < %s | FileCheck %s
 
-; This test checks that -O2 is able to delete constructors that become empty
-; only after some optimization passes have run, even if the pass structure
-; changes.
-; CHECK-NOT: @_GLOBAL__I_a
+
+
+
+
+
 
 %class.Foo = type { i32 }
 
@@ -17,7 +17,7 @@ define internal void @__cxx_global_var_init() section "__TEXT,__StaticInit,regul
   ret void
 }
 
-; Function Attrs: ssp uwtable
+
 define linkonce_odr void @_ZN3FooC1E17LinkerInitialized(%class.Foo* %this, i32) unnamed_addr #0 align 2 {
   %2 = alloca %class.Foo*, align 8
   %3 = alloca i32, align 4
@@ -29,7 +29,7 @@ define linkonce_odr void @_ZN3FooC1E17LinkerInitialized(%class.Foo* %this, i32) 
   ret void
 }
 
-; Function Attrs: nounwind ssp uwtable
+
 define linkonce_odr void @_ZN3FooC2E17LinkerInitialized(%class.Foo* %this, i32) unnamed_addr #1 align 2 {
   %2 = alloca %class.Foo*, align 8
   %3 = alloca i32, align 4

@@ -1,20 +1,20 @@
-; RUN: opt < %s -indvars -adce -simplifycfg -S | FileCheck %s
-; PR1598
 
-; CHECK: icmp s
+
+
+
 
 define i32 @f(i32 %a, i32 %b, i32 %x, i32 %y) {
 entry:
-	%tmp3 = icmp eq i32 %a, %b		; <i1> [#uses=1]
+	%tmp3 = icmp eq i32 %a, %b		
 	br i1 %tmp3, label %return, label %bb
 
-bb:		; preds = %bb, %entry
-	%x_addr.0 = phi i32 [ %tmp6, %bb ], [ %x, %entry ]		; <i32> [#uses=1]
-	%tmp6 = add i32 %x_addr.0, 1		; <i32> [#uses=3]
-	%tmp9 = icmp slt i32 %tmp6, %y		; <i1> [#uses=1]
+bb:		
+	%x_addr.0 = phi i32 [ %tmp6, %bb ], [ %x, %entry ]		
+	%tmp6 = add i32 %x_addr.0, 1		
+	%tmp9 = icmp slt i32 %tmp6, %y		
 	br i1 %tmp9, label %bb, label %return
 
-return:		; preds = %bb, %entry
-	%x_addr.1 = phi i32 [ %x, %entry ], [ %tmp6, %bb ]		; <i32> [#uses=1]
+return:		
+	%x_addr.1 = phi i32 [ %x, %entry ], [ %tmp6, %bb ]		
 	ret i32 %x_addr.1
 }

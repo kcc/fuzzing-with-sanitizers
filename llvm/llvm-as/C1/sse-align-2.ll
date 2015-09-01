@@ -1,4 +1,4 @@
-; RUN: llc < %s -march=x86-64 -mcpu=penryn | FileCheck %s
+
 
 define <4 x float> @foo(<4 x float>* %p, <4 x float> %x) nounwind {
   %t = load <4 x float>, <4 x float>* %p, align 4
@@ -6,9 +6,9 @@ define <4 x float> @foo(<4 x float>* %p, <4 x float> %x) nounwind {
   ret <4 x float> %z
 }
 
-; CHECK-LABEL: foo:
-; CHECK: movups
-; CHECK: ret
+
+
+
 
 define <2 x double> @bar(<2 x double>* %p, <2 x double> %x) nounwind {
   %t = load <2 x double>, <2 x double>* %p, align 8
@@ -16,6 +16,6 @@ define <2 x double> @bar(<2 x double>* %p, <2 x double> %x) nounwind {
   ret <2 x double> %z
 }
 
-; CHECK-LABEL: bar:
-; CHECK: movupd
-; CHECK: ret
+
+
+

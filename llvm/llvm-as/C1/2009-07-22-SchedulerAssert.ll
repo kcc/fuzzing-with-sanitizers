@@ -1,4 +1,4 @@
-; RUN: llc -mtriple=arm-eabi %s -o /dev/null
+
 
 	%struct.cli_ac_alt = type { i8, i8*, i16, i16, %struct.cli_ac_alt* }
 	%struct.cli_ac_node = type { i8, i8, %struct.cli_ac_patt*, %struct.cli_ac_node**, %struct.cli_ac_node* }
@@ -10,86 +10,86 @@ define i32 @cli_ac_addsig(%struct.cli_matcher* nocapture %root, i8* %virname, i8
 entry:
 	br i1 undef, label %bb126, label %bb1
 
-bb1:		; preds = %entry
+bb1:		
 	br i1 undef, label %cli_calloc.exit.thread, label %cli_calloc.exit
 
-cli_calloc.exit.thread:		; preds = %bb1
+cli_calloc.exit.thread:		
 	ret i32 -114
 
-cli_calloc.exit:		; preds = %bb1
+cli_calloc.exit:		
 	br i1 undef, label %bb52, label %bb4
 
-bb4:		; preds = %cli_calloc.exit
+bb4:		
 	br i1 undef, label %bb.i, label %bb1.i3
 
-bb.i:		; preds = %bb4
+bb.i:		
 	unreachable
 
-bb1.i3:		; preds = %bb4
+bb1.i3:		
 	br i1 undef, label %bb2.i4, label %cli_strdup.exit
 
-bb2.i4:		; preds = %bb1.i3
+bb2.i4:		
 	ret i32 -114
 
-cli_strdup.exit:		; preds = %bb1.i3
+cli_strdup.exit:		
 	br i1 undef, label %cli_calloc.exit54.thread, label %cli_calloc.exit54
 
-cli_calloc.exit54.thread:		; preds = %cli_strdup.exit
+cli_calloc.exit54.thread:		
 	ret i32 -114
 
-cli_calloc.exit54:		; preds = %cli_strdup.exit
+cli_calloc.exit54:		
 	br label %bb45
 
-cli_calloc.exit70.thread:		; preds = %bb45
+cli_calloc.exit70.thread:		
 	unreachable
 
-cli_calloc.exit70:		; preds = %bb45
+cli_calloc.exit70:		
 	br i1 undef, label %bb.i83, label %bb1.i84
 
-bb.i83:		; preds = %cli_calloc.exit70
+bb.i83:		
 	unreachable
 
-bb1.i84:		; preds = %cli_calloc.exit70
+bb1.i84:		
 	br i1 undef, label %bb2.i85, label %bb17
 
-bb2.i85:		; preds = %bb1.i84
+bb2.i85:		
 	unreachable
 
-bb17:		; preds = %bb1.i84
+bb17:		
 	br i1 undef, label %bb22, label %bb.nph
 
-bb.nph:		; preds = %bb17
+bb.nph:		
 	br label %bb18
 
-bb18:		; preds = %bb18, %bb.nph
+bb18:		
 	br i1 undef, label %bb18, label %bb22
 
-bb22:		; preds = %bb18, %bb17
-	%0 = getelementptr i8, i8* null, i32 10		; <i8*> [#uses=1]
-	%1 = bitcast i8* %0 to i16*		; <i16*> [#uses=1]
-	%2 = load i16, i16* %1, align 2		; <i16> [#uses=1]
-	%3 = add i16 %2, 1		; <i16> [#uses=1]
-	%4 = zext i16 %3 to i32		; <i32> [#uses=1]
-	%5 = mul i32 %4, 3		; <i32> [#uses=1]
-	%6 = add i32 %5, -1		; <i32> [#uses=1]
-	%7 = icmp eq i32 %6, undef		; <i1> [#uses=1]
+bb22:		
+	%0 = getelementptr i8, i8* null, i32 10		
+	%1 = bitcast i8* %0 to i16*		
+	%2 = load i16, i16* %1, align 2		
+	%3 = add i16 %2, 1		
+	%4 = zext i16 %3 to i32		
+	%5 = mul i32 %4, 3		
+	%6 = add i32 %5, -1		
+	%7 = icmp eq i32 %6, undef		
 	br i1 %7, label %bb25, label %bb43.preheader
 
-bb43.preheader:		; preds = %bb22
+bb43.preheader:		
 	br i1 undef, label %bb28, label %bb45
 
-bb25:		; preds = %bb22
+bb25:		
 	unreachable
 
-bb28:		; preds = %bb43.preheader
+bb28:		
 	unreachable
 
-bb45:		; preds = %bb43.preheader, %cli_calloc.exit54
+bb45:		
 	br i1 undef, label %cli_calloc.exit70.thread, label %cli_calloc.exit70
 
-bb52:		; preds = %cli_calloc.exit
+bb52:		
 	unreachable
 
-bb126:		; preds = %entry
+bb126:		
 	ret i32 -117
 }

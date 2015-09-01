@@ -1,4 +1,4 @@
-; RUN: llc < %s | FileCheck %s
+
 target datalayout = "E-m:e-i64:64-n32:64"
 target triple = "powerpc64-bgq-linux"
 
@@ -11,10 +11,10 @@ entry:
   %b = call zeroext i1 @ri1()
   br label %next
 
-; CHECK-LABEL: @test
-; CHECK: bl ri1
-; CHECK-NEXT: nop
-; CHECK: andi. 3, 3, 1
+
+
+
+
 
 next:
   br i1 %b, label %case1, label %case2
@@ -30,7 +30,7 @@ case2:
 end:
   ret void
 
-; CHECK: blr
+
 }
 
 attributes #0 = { noinline optnone }

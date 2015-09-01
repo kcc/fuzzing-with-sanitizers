@@ -1,10 +1,10 @@
-; RUN: llc < %s -mtriple=armv7-apple-ios | FileCheck %s
+
 
 @in = global float 0x400921FA00000000, align 4
 
-; Test signed conversion.
-; CHECK: t0
-; CHECK-NOT: vmul
+
+
+
 define void @t0() nounwind {
 entry:
   %tmp = load float, float* @in, align 4
@@ -18,9 +18,9 @@ entry:
 
 declare void @foo_int32x2_t(<2 x i32>)
 
-; Test unsigned conversion.
-; CHECK: t1
-; CHECK-NOT: vmul
+
+
+
 define void @t1() nounwind {
 entry:
   %tmp = load float, float* @in, align 4
@@ -34,9 +34,9 @@ entry:
 
 declare void @foo_uint32x2_t(<2 x i32>)
 
-; Test which should not fold due to non-power of 2.
-; CHECK: t2
-; CHECK: vmul
+
+
+
 define void @t2() nounwind {
 entry:
   %tmp = load float, float* @in, align 4
@@ -48,9 +48,9 @@ entry:
   ret void
 }
 
-; Test which should not fold due to power of 2 out of range.
-; CHECK: t3
-; CHECK: vmul
+
+
+
 define void @t3() nounwind {
 entry:
   %tmp = load float, float* @in, align 4
@@ -62,9 +62,9 @@ entry:
   ret void
 }
 
-; Test which case where const is max power of 2 (i.e., 2^32).
-; CHECK: t4
-; CHECK-NOT: vmul
+
+
+
 define void @t4() nounwind {
 entry:
   %tmp = load float, float* @in, align 4
@@ -76,9 +76,9 @@ entry:
   ret void
 }
 
-; Test quadword.
-; CHECK: t5
-; CHECK-NOT: vmul
+
+
+
 define void @t5() nounwind {
 entry:
   %tmp = load float, float* @in, align 4

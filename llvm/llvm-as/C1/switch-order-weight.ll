@@ -1,6 +1,6 @@
-; RUN: llc -mtriple=x86_64-apple-darwin11 < %s | FileCheck %s
 
-; Check that the cases which lead to unreachable are checked after "10"
+
+
 
 define void @test1(i32 %x) nounwind uwtable ssp {
 entry:
@@ -10,11 +10,11 @@ entry:
     i32 20, label %if.then5
   ]
 
-; CHECK-LABEL: test1:
-; CHECK-NOT: unr
-; CHECK: cmpl $10
-; CHECK: cmpl $20
-; CHECK: bar
+
+
+
+
+
 
 if.then:
   tail call void @unr(i32 23) noreturn nounwind

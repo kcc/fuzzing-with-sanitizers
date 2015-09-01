@@ -1,28 +1,28 @@
-; RUN: llc < %s -O3 -march=x86-64 -mcpu=core2 | FileCheck %s -check-prefix=X64
-; RUN: llc < %s -O3 -march=x86 -mcpu=core2 | FileCheck %s -check-prefix=X32
-; RUN: llc < %s -O3 -march=x86-64 -mcpu=core2 -addr-sink-using-gep=1 | FileCheck %s -check-prefix=X64
-; RUN: llc < %s -O3 -march=x86 -mcpu=core2 -addr-sink-using-gep=1 | FileCheck %s -check-prefix=X32
 
-; @simple is the most basic chain of address induction variables. Chaining
-; saves at least one register and avoids complex addressing and setup
-; code.
-;
-; X64: @simple
-; %x * 4
-; X64: shlq $2
-; no other address computation in the preheader
-; X64-NEXT: xorl
-; X64-NEXT: .align
-; X64: %loop
-; no complex address modes
-; X64-NOT: (%{{[^)]+}},%{{[^)]+}},
-;
-; X32: @simple
-; no expensive address computation in the preheader
-; X32-NOT: imul
-; X32: %loop
-; no complex address modes
-; X32-NOT: (%{{[^)]+}},%{{[^)]+}},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define i32 @simple(i32* %a, i32* %b, i32 %x) nounwind {
 entry:
   br label %loop
@@ -47,24 +47,24 @@ exit:
   ret i32 %s4
 }
 
-; @user is not currently chained because the IV is live across memory ops.
-;
-; X64: @user
-; X64: shlq $4
-; X64: lea
-; X64: lea
-; X64: %loop
-; complex address modes
-; X64: (%{{[^)]+}},%{{[^)]+}},
-;
-; X32: @user
-; expensive address computation in the preheader
-; X32: shll $4
-; X32: lea
-; X32: lea
-; X32: %loop
-; complex address modes
-; X32: (%{{[^)]+}},%{{[^)]+}},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define i32 @user(i32* %a, i32* %b, i32 %x) nounwind {
 entry:
   br label %loop
@@ -90,38 +90,38 @@ exit:
   ret i32 %s4
 }
 
-; @extrastride is a slightly more interesting case of a single
-; complete chain with multiple strides. The test case IR is what LSR
-; used to do, and exactly what we don't want to do. LSR's new IV
-; chaining feature should now undo the damage.
-;
-; X64: extrastride:
-; We currently don't handle this on X64 because the sexts cause
-; strange increment expressions like this:
-; IV + ((sext i32 (2 * %s) to i64) + (-1 * (sext i32 %s to i64)))
-;
-; X32: extrastride:
-; no spills in the preheader
-; X32-NOT: mov{{.*}}(%esp){{$}}
-; X32: %for.body{{$}}
-; no complex address modes
-; X32-NOT: (%{{[^)]+}},%{{[^)]+}},
-; no reloads
-; X32-NOT: (%esp)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @extrastride(i8* nocapture %main, i32 %main_stride, i32* nocapture %res, i32 %x, i32 %y, i32 %z) nounwind {
 entry:
   %cmp8 = icmp eq i32 %z, 0
   br i1 %cmp8, label %for.end, label %for.body.lr.ph
 
-for.body.lr.ph:                                   ; preds = %entry
-  %add.ptr.sum = shl i32 %main_stride, 1 ; s*2
-  %add.ptr1.sum = add i32 %add.ptr.sum, %main_stride ; s*3
-  %add.ptr2.sum = add i32 %x, %main_stride ; s + x
-  %add.ptr4.sum = shl i32 %main_stride, 2 ; s*4
-  %add.ptr3.sum = add i32 %add.ptr2.sum, %add.ptr4.sum ; total IV stride = s*5+x
+for.body.lr.ph:                                   
+  %add.ptr.sum = shl i32 %main_stride, 1 
+  %add.ptr1.sum = add i32 %add.ptr.sum, %main_stride 
+  %add.ptr2.sum = add i32 %x, %main_stride 
+  %add.ptr4.sum = shl i32 %main_stride, 2 
+  %add.ptr3.sum = add i32 %add.ptr2.sum, %add.ptr4.sum 
   br label %for.body
 
-for.body:                                         ; preds = %for.body.lr.ph, %for.body
+for.body:                                         
   %main.addr.011 = phi i8* [ %main, %for.body.lr.ph ], [ %add.ptr6, %for.body ]
   %i.010 = phi i32 [ 0, %for.body.lr.ph ], [ %inc, %for.body ]
   %res.addr.09 = phi i32* [ %res, %for.body.lr.ph ], [ %add.ptr7, %for.body ]
@@ -150,27 +150,27 @@ for.body:                                         ; preds = %for.body.lr.ph, %fo
   %cmp = icmp eq i32 %inc, %z
   br i1 %cmp, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void
 }
 
-; @foldedidx is an unrolled variant of this loop:
-;  for (unsigned long i = 0; i < len; i += s) {
-;    c[i] = a[i] + b[i];
-;  }
-; where 's' can be folded into the addressing mode.
-; Consequently, we should *not* form any chains.
-;
-; X64: foldedidx:
-; X64: movzbl -3(
-;
-; X32: foldedidx:
-; X32: movzbl -3(
+
+
+
+
+
+
+
+
+
+
+
+
 define void @foldedidx(i8* nocapture %a, i8* nocapture %b, i8* nocapture %c) nounwind ssp {
 entry:
   br label %for.body
 
-for.body:                                         ; preds = %for.body, %entry
+for.body:                                         
   %i.07 = phi i32 [ 0, %entry ], [ %inc.3, %for.body ]
   %arrayidx = getelementptr inbounds i8, i8* %a, i32 %i.07
   %0 = load i8, i8* %arrayidx, align 1
@@ -219,32 +219,32 @@ for.body:                                         ; preds = %for.body, %entry
   %exitcond.3 = icmp eq i32 %inc.3, 400
   br i1 %exitcond.3, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret void
 }
 
-; @multioper tests instructions with multiple IV user operands. We
-; should be able to chain them independent of each other.
-;
-; X64: @multioper
-; X64: %for.body
-; X64: movl %{{.*}},4)
-; X64-NEXT: leal 1(
-; X64-NEXT: movl %{{.*}},4)
-; X64-NEXT: leal 2(
-; X64-NEXT: movl %{{.*}},4)
-; X64-NEXT: leal 3(
-; X64-NEXT: movl %{{.*}},4)
-;
-; X32: @multioper
-; X32: %for.body
-; X32: movl %{{.*}},4)
-; X32-NEXT: leal 1(
-; X32-NEXT: movl %{{.*}},4)
-; X32-NEXT: leal 2(
-; X32-NEXT: movl %{{.*}},4)
-; X32-NEXT: leal 3(
-; X32-NEXT: movl %{{.*}},4)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @multioper(i32* %a, i32 %n) nounwind {
 entry:
   br label %for.body
@@ -271,14 +271,14 @@ exit:
   ret void
 }
 
-; @testCmpZero has a ICmpZero LSR use that should not be hidden from
-; LSR. Profitable chains should have more than one nonzero increment
-; anyway.
-;
-; X32: @testCmpZero
-; X32: %for.body82.us
-; X32: dec
-; X32: jne
+
+
+
+
+
+
+
+
 define void @testCmpZero(i8* %src, i8* %dst, i32 %srcidx, i32 %dstidx, i32 %len) nounwind ssp {
 entry:
   %dest0 = getelementptr inbounds i8, i8* %src, i32 %srcidx

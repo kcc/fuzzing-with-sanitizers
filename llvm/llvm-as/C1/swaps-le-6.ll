@@ -1,7 +1,7 @@
-; RUN: llc -mcpu=pwr8 -mtriple=powerpc64le-unknown-linux-gnu -O3 < %s | FileCheck %s
 
-; These tests verify that VSX swap optimization works when loading a scalar
-; into a vector register.
+
+
+
 
 
 @x = global <2 x double> <double 9.970000e+01, double -1.032220e+02>, align 16
@@ -17,13 +17,13 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: @bar0
-; CHECK-DAG: lxvd2x [[REG1:[0-9]+]]
-; CHECK-DAG: lxsdx [[REG2:[0-9]+]]
-; CHECK: xxswapd [[REG3:[0-9]+]], [[REG2]]
-; CHECK: xxspltd [[REG4:[0-9]+]], [[REG3]], 1
-; CHECK: xxpermdi [[REG5:[0-9]+]], [[REG4]], [[REG1]], 1
-; CHECK: stxvd2x [[REG5]]
+
+
+
+
+
+
+
 
 define void @bar1() {
 entry:
@@ -34,11 +34,11 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: @bar1
-; CHECK-DAG: lxvd2x [[REG1:[0-9]+]]
-; CHECK-DAG: lxsdx [[REG2:[0-9]+]]
-; CHECK: xxswapd [[REG3:[0-9]+]], [[REG2]]
-; CHECK: xxspltd [[REG4:[0-9]+]], [[REG3]], 1
-; CHECK: xxmrghd [[REG5:[0-9]+]], [[REG1]], [[REG4]]
-; CHECK: stxvd2x [[REG5]]
+
+
+
+
+
+
+
 

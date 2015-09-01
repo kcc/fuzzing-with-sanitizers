@@ -1,4 +1,4 @@
-; RUN: llc  -march=mipsel -mcpu=mips16 -relocation-model=pic -O3 < %s | FileCheck %s -check-prefix=16
+
 
 @iiii = global i32 25, align 4
 @jjjj = global i32 35, align 4
@@ -19,12 +19,12 @@ entry:
 
 define void @test() nounwind {
 entry:
-; 16: 	.frame	$sp,8,$ra
-; 16: 	save 	8 # 16 bit inst
-; 16: 	move	$16, $sp
-; 16:	move	${{[0-9]+}}, $sp
-; 16:	subu	$[[REGISTER:[0-9]+]], ${{[0-9]+}}, ${{[0-9]+}}
-; 16:	move	$sp, $[[REGISTER]]
+
+
+
+
+
+
   %sssi = alloca i32, align 4
   %ip = alloca i32*, align 4
   %sssj = alloca i32, align 4
@@ -68,8 +68,8 @@ entry:
   %21 = load i32*, i32** %ip, align 4
   %arrayidx6 = getelementptr inbounds i32, i32* %21, i32 %20
   %22 = load i32, i32* %arrayidx6, align 4
-; 16: 	addiu $sp, -16
+
   call void @temp(i32 %22)
-; 16: 	addiu $sp, 16
+
   ret void
 }

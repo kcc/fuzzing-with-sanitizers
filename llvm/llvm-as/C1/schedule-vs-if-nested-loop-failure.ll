@@ -1,12 +1,12 @@
-; XFAIL: *
-; REQUIRES: asserts
-; RUN: llc -O0 -march=amdgcn -mcpu=SI -verify-machineinstrs< %s | FileCheck %s -check-prefix=SI
-; RUN: llc -O0 -march=amdgcn -mcpu=tonga -verify-machineinstrs< %s | FileCheck %s -check-prefix=SI
+
+
+
+
 
 declare void @llvm.AMDGPU.barrier.local() nounwind noduplicate
 
 
-; SI-LABEL: {{^}}main(
+
 define void @main(<4 x float> inreg %reg0, <4 x float> inreg %reg1) #0 {
 main_body:
   %0 = extractelement <4 x float> %reg1, i32 0
@@ -20,7 +20,7 @@ main_body:
   %8 = icmp ne i32 %7, 0
   br i1 %8, label %LOOP, label %ENDIF
 
-Flow1:                                            ; preds = %ENDIF19, %ENDIF16
+Flow1:                                            
   %9 = phi float [ %115, %ENDIF19 ], [ undef, %ENDIF16 ]
   %10 = phi float [ %114, %ENDIF19 ], [ undef, %ENDIF16 ]
   %11 = phi float [ %113, %ENDIF19 ], [ undef, %ENDIF16 ]
@@ -29,10 +29,10 @@ Flow1:                                            ; preds = %ENDIF19, %ENDIF16
   %14 = phi i1 [ false, %ENDIF19 ], [ true, %ENDIF16 ]
   br label %Flow
 
-Flow2:                                            ; preds = %Flow
+Flow2:                                            
   br label %ENDIF
 
-ENDIF:                                            ; preds = %main_body, %Flow2
+ENDIF:                                            
   %temp.0 = phi float [ 0.000000e+00, %main_body ], [ %104, %Flow2 ]
   %temp1.0 = phi float [ 1.000000e+00, %main_body ], [ %103, %Flow2 ]
   %temp2.0 = phi float [ 0.000000e+00, %main_body ], [ %102, %Flow2 ]
@@ -111,7 +111,7 @@ ENDIF:                                            ; preds = %main_body, %Flow2
   call void @llvm.AMDGPU.barrier.local()
   ret void
 
-LOOP:                                             ; preds = %main_body, %Flow
+LOOP:                                             
   %temp.1 = phi float [ %109, %Flow ], [ 0.000000e+00, %main_body ]
   %temp1.1 = phi float [ %108, %Flow ], [ 1.000000e+00, %main_body ]
   %temp2.1 = phi float [ %107, %Flow ], [ 0.000000e+00, %main_body ]
@@ -127,7 +127,7 @@ LOOP:                                             ; preds = %main_body, %Flow
   %92 = xor i1 %91, true
   br i1 %92, label %ENDIF16, label %Flow
 
-ENDIF16:                                          ; preds = %LOOP
+ENDIF16:                                          
   %93 = fcmp une float %1, %temp4.0
   %94 = select i1 %93, float 1.000000e+00, float 0.000000e+00
   %95 = fsub float -0.000000e+00, %94
@@ -138,7 +138,7 @@ ENDIF16:                                          ; preds = %LOOP
   %100 = xor i1 %99, true
   br i1 %100, label %ENDIF19, label %Flow1
 
-Flow:                                             ; preds = %Flow1, %LOOP
+Flow:                                             
   %101 = phi float [ %temp3.1, %Flow1 ], [ %temp3.1, %LOOP ]
   %102 = phi float [ %temp2.1, %Flow1 ], [ %temp2.1, %LOOP ]
   %103 = phi float [ %temp1.1, %Flow1 ], [ %temp1.1, %LOOP ]
@@ -151,7 +151,7 @@ Flow:                                             ; preds = %Flow1, %LOOP
   %110 = phi i1 [ %14, %Flow1 ], [ true, %LOOP ]
   br i1 %110, label %Flow2, label %LOOP
 
-ENDIF19:                                          ; preds = %ENDIF16
+ENDIF19:                                          
   %111 = fadd float %temp.1, 1.000000e+00
   %112 = fadd float %temp1.1, 0.000000e+00
   %113 = fadd float %temp2.1, 0.000000e+00

@@ -1,4 +1,4 @@
-; RUN: llc -mcpu=a2 < %s | FileCheck %s
+
 target datalayout = "E-m:e-i64:64-n32:64"
 target triple = "powerpc64-bgq-linux"
 
@@ -8,9 +8,9 @@ entry:
   %conv.i = sitofp i64 %conv6.i.i to double
   ret double %conv.i
 
-; CHECK-LABEL: @test1
-; CHECK: bl __fixtfdi
-; CHECK: fcfid
-; CHECK: blr
+
+
+
+
 }
 

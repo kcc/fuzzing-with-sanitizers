@@ -1,4 +1,4 @@
-; RUN: opt -S -simplifycfg < %s | FileCheck %s
+
 
 define i32 @test1(i32 %x) nounwind {
   %i = shl i32 %x, 1
@@ -13,10 +13,10 @@ b:
   ret i32 3
 c:
   ret i32 5
-; CHECK-LABEL: @test1(
-; CHECK: %cond = icmp eq i32 %i, 24
-; CHECK: %. = select i1 %cond, i32 5, i32 0
-; CHECK: ret i32 %.
+
+
+
+
 }
 
 
@@ -33,6 +33,6 @@ b:
   ret i32 3
 c:
   ret i32 5
-; CHECK-LABEL: @test2(
-; CHECK: ret i32 0
+
+
 }

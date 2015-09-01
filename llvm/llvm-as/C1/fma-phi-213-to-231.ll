@@ -1,11 +1,11 @@
-; RUN: llc < %s -mtriple=i386-apple-darwin10  -mattr=+fma,-fma4  | FileCheck %s
-; RUN: llc < %s -mtriple=x86_64-apple-darwin10 -mattr=+fma,-fma4 | FileCheck %s
-; RUN: llc < %s -march=x86 -mcpu=bdver2 -mattr=-fma4  | FileCheck %s
 
-; Test FMA3 variant selection
 
-; CHECK-LABEL: fma3_select231ssX:
-; CHECK: vfmadd231ss %xmm
+
+
+
+
+
+
 define float @fma3_select231ssX(float %x, float %y) {
 entry:
   br label %while.body
@@ -18,8 +18,8 @@ while.end:
   ret float %acc
 }
 
-; CHECK-LABEL: fma3_select231pdY:
-; CHECK: vfmadd231pd %ymm
+
+
 define <4 x double> @fma3_select231pdY(<4 x double> %x, <4 x double> %y) {
 entry:
   br label %while.body

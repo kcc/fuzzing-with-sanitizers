@@ -1,4 +1,4 @@
-; RUN: llc -march=x86-64 < %s | FileCheck %s -check-prefix=CHECK-64
+
 
 define void @a(i64* nocapture %s, i64* nocapture %t, i64 %a, i64 %b, i64 %c) nounwind {
 entry:
@@ -15,6 +15,6 @@ entry:
  store i64 %8, i64* %t, align 8
  ret void
 
-; CHECK-64: addq
-; CHECK-64: adcq $0
+
+
 }

@@ -1,5 +1,5 @@
-; RUN: opt < %s -basicaa -gvn -instcombine -S | grep "ret i32 0"
-; PR4189
+
+
 @G = external constant [4 x i32]
 
 define i32 @test(i8* %p, i32 %i) nounwind {

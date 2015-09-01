@@ -1,4 +1,4 @@
-; RUN: opt < %s -instcombine -disable-output
+
 
 %opaque_struct = type opaque
 

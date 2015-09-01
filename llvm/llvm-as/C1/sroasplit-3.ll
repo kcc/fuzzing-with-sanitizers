@@ -1,25 +1,25 @@
-; RUN: opt %s -sroa -verify -S -o - | FileCheck %s
-; ModuleID = 'test.c'
-; Test that SROA updates the debug info correctly if an alloca was rewritten but
-; not partitioned into multiple allocas.
-;
-; CHECK: call void @llvm.dbg.value(metadata float %s.coerce, i64 0, metadata ![[VAR:[0-9]+]], metadata ![[EXPR:[0-9]+]])
-; CHECK: ![[VAR]] = !DILocalVariable(name: "s",{{.*}} line: 3,
-; CHECK: ![[EXPR]] = !DIExpression(
-; CHECK-NOT:                       DW_OP_bit_piece
 
-;
-; struct S { float f; };
-;  
-; float foo(struct S s) {
-;   return s.f;
-; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.10.0"
 
 %struct.S = type { float }
 
-; Function Attrs: nounwind ssp uwtable
+
 define float @foo(float %s.coerce) #0 {
 entry:
   %s = alloca %struct.S, align 4
@@ -31,7 +31,7 @@ entry:
   ret float %0, !dbg !19
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
 attributes #0 = { nounwind ssp uwtable }

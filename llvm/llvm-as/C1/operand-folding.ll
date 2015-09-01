@@ -1,7 +1,7 @@
-; RUN: llc < %s -march=amdgcn -mcpu=SI -verify-machineinstrs | FileCheck %s
 
-; CHECK-LABEL: {{^}}fold_sgpr:
-; CHECK: v_add_i32_e32 v{{[0-9]+}}, vcc, s
+
+
+
 define void @fold_sgpr(i32 addrspace(1)* %out, i32 %fold) {
 entry:
   %tmp0 = icmp ne i32 %fold, 0
@@ -18,8 +18,8 @@ endif:
   ret void
 }
 
-; CHECK-LABEL: {{^}}fold_imm:
-; CHECK: v_or_b32_e32 v{{[0-9]+}}, 5
+
+
 define void @fold_imm(i32 addrspace(1)* %out, i32 %cmp) {
 entry:
   %fold = add i32 3, 2
@@ -36,15 +36,15 @@ endif:
   ret void
 }
 
-; CHECK-LABEL: {{^}}fold_64bit_constant_add:
-; CHECK-NOT: s_mov_b64
-; FIXME: It would be better if we could use v_add here and drop the extra
-; v_mov_b32 instructions.
-; CHECK-DAG: s_add_u32 [[LO:s[0-9]+]], s{{[0-9]+}}, 1
-; CHECK-DAG: s_addc_u32 [[HI:s[0-9]+]], s{{[0-9]+}}, 0
-; CHECK-DAG: v_mov_b32_e32 v[[VLO:[0-9]+]], [[LO]]
-; CHECK-DAG: v_mov_b32_e32 v[[VHI:[0-9]+]], [[HI]]
-; CHECK: buffer_store_dwordx2 v{{\[}}[[VLO]]:[[VHI]]{{\]}},
+
+
+
+
+
+
+
+
+
 
 define void @fold_64bit_constant_add(i64 addrspace(1)* %out, i32 %cmp, i64 %val) {
 entry:
@@ -53,13 +53,13 @@ entry:
   ret void
 }
 
-; Inline constants should always be folded.
 
-; CHECK-LABEL: {{^}}vector_inline:
-; CHECK: v_xor_b32_e32 v{{[0-9]+}}, 5, v{{[0-9]+}}
-; CHECK: v_xor_b32_e32 v{{[0-9]+}}, 5, v{{[0-9]+}}
-; CHECK: v_xor_b32_e32 v{{[0-9]+}}, 5, v{{[0-9]+}}
-; CHECK: v_xor_b32_e32 v{{[0-9]+}}, 5, v{{[0-9]+}}
+
+
+
+
+
+
 
 define void @vector_inline(<4 x i32> addrspace(1)* %out) {
 entry:
@@ -76,9 +76,9 @@ entry:
   ret void
 }
 
-; Immediates with one use should be folded
-; CHECK-LABEL: {{^}}imm_one_use:
-; CHECK: v_xor_b32_e32 v{{[0-9]+}}, 0x64, v{{[0-9]+}}
+
+
+
 
 define void @imm_one_use(i32 addrspace(1)* %out) {
 entry:
@@ -87,12 +87,12 @@ entry:
   store i32 %tmp1, i32 addrspace(1)* %out
   ret void
 }
-; CHECK-LABEL: {{^}}vector_imm:
-; CHECK: s_movk_i32 [[IMM:s[0-9]+]], 0x64
-; CHECK: v_xor_b32_e32 v{{[0-9]}}, [[IMM]], v{{[0-9]}}
-; CHECK: v_xor_b32_e32 v{{[0-9]}}, [[IMM]], v{{[0-9]}}
-; CHECK: v_xor_b32_e32 v{{[0-9]}}, [[IMM]], v{{[0-9]}}
-; CHECK: v_xor_b32_e32 v{{[0-9]}}, [[IMM]], v{{[0-9]}}
+
+
+
+
+
+
 
 define void @vector_imm(<4 x i32> addrspace(1)* %out) {
 entry:

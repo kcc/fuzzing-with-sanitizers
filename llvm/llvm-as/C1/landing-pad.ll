@@ -1,4 +1,4 @@
-; RUN: opt < %s -disable-output -jump-threading
+
 
 %class.E = type { i32 (...)**, %class.C }
 %class.C = type { %class.A }
@@ -48,7 +48,7 @@ entry:
   invoke void @_ZN24CompositeEditCommandImplC2Ev()
           to label %_ZN1DC1Ev.exit unwind label %lpad
 
-_ZN1DC1Ev.exit:                                   ; preds = %entry
+_ZN1DC1Ev.exit:                                   
   %0 = bitcast i8* %call to i32 (...)***
   store i32 (...)** bitcast (i8** getelementptr inbounds ([3 x i8*], [3 x i8*]* @_ZTV1D, i64 0, i64 2) to i32 (...)**), i32 (...)*** %0, align 8
   %_ref.i.i.i = getelementptr inbounds i8, i8* %call, i64 8
@@ -60,37 +60,37 @@ _ZN1DC1Ev.exit:                                   ; preds = %entry
   invoke void @_ZN1D7doApplyEv(%class.D* %3)
           to label %_ZN15EditCommandImpl5applyEv.exit unwind label %lpad1
 
-_ZN15EditCommandImpl5applyEv.exit:                ; preds = %_ZN1DC1Ev.exit
+_ZN15EditCommandImpl5applyEv.exit:                
   invoke void @_ZN1D16deleteKeyPressedEv()
           to label %invoke.cont7 unwind label %lpad1
 
-invoke.cont7:                                     ; preds = %_ZN15EditCommandImpl5applyEv.exit
+invoke.cont7:                                     
   ret void
 
-lpad:                                             ; preds = %entry
+lpad:                                             
   %4 = landingpad { i8*, i32 }
           cleanup
   call void @_ZdlPv() #9
   unreachable
 
-lpad1:                                            ; preds = %_ZN1DC1Ev.exit, %_ZN15EditCommandImpl5applyEv.exit
+lpad1:                                            
   %5 = landingpad { i8*, i32 }
           cleanup
   %6 = load i32, i32* %1, align 4
   %tobool.i.i.i = icmp eq i32 %6, 0
   br i1 %tobool.i.i.i, label %_ZN1BI1DED1Ev.exit, label %if.then.i.i.i
 
-if.then.i.i.i:                                    ; preds = %lpad1
+if.then.i.i.i:                                    
   br i1 undef, label %_ZN1BI1DED1Ev.exit, label %delete.notnull.i.i.i
 
-delete.notnull.i.i.i:                             ; preds = %if.then.i.i.i
+delete.notnull.i.i.i:                             
   call void @_ZdlPv() #9
   unreachable
 
-_ZN1BI1DED1Ev.exit:                               ; preds = %lpad1, %if.then.i.i.i
+_ZN1BI1DED1Ev.exit:                               
   resume { i8*, i32 } undef
 
-terminate.lpad:                                   ; No predecessors!
+terminate.lpad:                                   
   %7 = landingpad { i8*, i32 }
           catch i8* null
   unreachable
@@ -131,14 +131,14 @@ entry:
   %tobool.i.i = icmp eq i32 %1, 0
   br i1 %tobool.i.i, label %_ZN1BI1DED2Ev.exit, label %if.then.i.i
 
-if.then.i.i:                                      ; preds = %entry
+if.then.i.i:                                      
   br i1 undef, label %_ZN1BI1DED2Ev.exit, label %delete.notnull.i.i
 
-delete.notnull.i.i:                               ; preds = %if.then.i.i
+delete.notnull.i.i:                               
   call void @_ZdlPv() #9
   unreachable
 
-_ZN1BI1DED2Ev.exit:                               ; preds = %entry, %if.then.i.i
+_ZN1BI1DED2Ev.exit:                               
   ret void
 }
 
@@ -153,14 +153,14 @@ entry:
   %tobool.i = icmp eq i32 %1, 0
   br i1 %tobool.i, label %_ZN1AI1CE5derefEv.exit, label %if.then.i
 
-if.then.i:                                        ; preds = %entry
+if.then.i:                                        
   br i1 undef, label %_ZN1AI1CE5derefEv.exit, label %delete.notnull.i
 
-delete.notnull.i:                                 ; preds = %if.then.i
+delete.notnull.i:                                 
   call void @_ZdlPv() #9
   unreachable
 
-_ZN1AI1CE5derefEv.exit:                           ; preds = %entry, %if.then.i
+_ZN1AI1CE5derefEv.exit:                           
   ret void
 }
 
@@ -171,14 +171,14 @@ entry:
   %tobool = icmp eq i32 %0, 0
   br i1 %tobool, label %if.end, label %if.then
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   br i1 undef, label %if.end, label %delete.notnull
 
-delete.notnull:                                   ; preds = %if.then
+delete.notnull:                                   
   call void @_ZdlPv() #9
   unreachable
 
-if.end:                                           ; preds = %entry, %if.then
+if.end:                                           
   ret void
 }
 

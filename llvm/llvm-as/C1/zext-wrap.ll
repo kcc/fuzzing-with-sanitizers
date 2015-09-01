@@ -1,16 +1,16 @@
-; RUN: opt < %s -analyze -scalar-evolution | FileCheck %s
-; PR4569
+
+
 
 define i16 @main() nounwind {
 entry:
         br label %bb.i
 
-bb.i:           ; preds = %bb1.i, %bb.nph
+bb.i:           
         %l_95.0.i1 = phi i8 [ %tmp1, %bb.i ], [ 0, %entry ]
 
-; This cast shouldn't be folded into the addrec.
-; CHECK: %tmp = zext i8 %l_95.0.i1 to i16
-; CHECK: -->  (zext i8 {0,+,-1}<%bb.i> to i16){{ U: [^ ]+ S: [^ ]+}}{{ *}}Exits: 2
+
+
+
 
         %tmp = zext i8 %l_95.0.i1 to i16
 

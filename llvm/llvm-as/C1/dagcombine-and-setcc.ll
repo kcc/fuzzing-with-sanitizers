@@ -1,24 +1,24 @@
-; RUN: llc < %s | FileCheck %s
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.10.0"
 
-; Function Attrs: nounwind
+
 declare i32 @printf(i8* nocapture readonly, ...)
 
-; On X86 1 is true and 0 is false, so we can't perform the combine:
-; (and (setgt X,  true), (setgt Y,  true)) -> (setgt (or X, Y), true)
-; This combine only works if the true value is -1.
 
 
-;CHECK: cmpl
-;CHECK: setg
-;CHECK: cmpl
-;CHECK: setg
-;CHECK: andb
+
+
+
+
+
+
+
+
 
 @.str = private unnamed_addr constant [4 x i8] c"%d\0A\00", align 1
-; Function Attrs: optsize ssp uwtable
+
 define i32 @foo(i32 %a, i32 %b, i32 * %c) {
 if.else429:
   %cmp.i1144 = icmp eq i32* %c, null

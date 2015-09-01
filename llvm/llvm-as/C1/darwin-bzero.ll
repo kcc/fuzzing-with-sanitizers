@@ -1,4 +1,4 @@
-; RUN: llc < %s -mtriple=i386-apple-darwin10 | grep __bzero
+
 
 declare void @llvm.memset.p0i8.i32(i8* nocapture, i8, i32, i32, i1) nounwind
 

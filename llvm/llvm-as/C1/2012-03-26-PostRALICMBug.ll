@@ -1,8 +1,8 @@
-; REQUIRES: asserts
-; RUN: llc < %s -mtriple=x86_64-apple-darwin10 -stats 2>&1 | \
-; RUN:   not grep "Number of machine instructions hoisted out of loops post regalloc"
 
-; rdar://11095580
+
+
+
+
 
 %struct.ref_s = type { %union.color_sample, i16, i16 }
 %union.color_sample = type { i64 }
@@ -19,7 +19,7 @@ entry:
   %index9 = add i32 %0, 2397
   indirectbr i8* undef, [label %return, label %if.end]
 
-if.end:                                           ; preds = %entry
+if.end:                                           
   %size5 = getelementptr inbounds %struct.ref_s, %struct.ref_s* %op, i64 0, i32 2
   %tmp6 = load i16, i16* %size5, align 2
   %tobool1 = icmp eq i16 %tmp6, 0
@@ -27,7 +27,7 @@ if.end:                                           ; preds = %entry
   %index10 = add i32 %index9, %1
   indirectbr i8* undef, [label %return, label %while.body.lr.ph]
 
-while.body.lr.ph:                                 ; preds = %if.end
+while.body.lr.ph:                                 
   %refs = bitcast %struct.ref_s* %op to %struct.ref_s**
   %tmp9 = load %struct.ref_s*, %struct.ref_s** %refs, align 8
   %tmp4 = zext i16 %tmp6 to i64
@@ -38,7 +38,7 @@ while.body.lr.ph:                                 ; preds = %if.end
   %4 = inttoptr i64 %blockaddress14 to i8*
   indirectbr i8* %4, [label %while.body]
 
-while.body:                                       ; preds = %while.body, %while.body.lr.ph
+while.body:                                       
   %index7 = phi i32 [ %index15, %while.body ], [ %index13, %while.body.lr.ph ]
   %indvar = phi i64 [ %indvar.next, %while.body ], [ 0, %while.body.lr.ph ]
   %type_attrs = getelementptr %struct.ref_s, %struct.ref_s* %tmp9, i64 %indvar, i32 1
@@ -54,7 +54,7 @@ while.body:                                       ; preds = %while.body, %while.
   %7 = inttoptr i64 %blockaddress16 to i8*
   indirectbr i8* %7, [label %return, label %while.body]
 
-return:                                           ; preds = %while.body, %if.end, %entry
+return:                                           
   %retval.0 = phi i32 [ %call, %entry ], [ 0, %if.end ], [ 0, %while.body ]
   ret i32 %retval.0
 }

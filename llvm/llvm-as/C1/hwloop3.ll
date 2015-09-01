@@ -1,10 +1,10 @@
-; RUN: llc -march=hexagon < %s | FileCheck %s
-;
-; Remove the unconditional jump to following instruction.
 
-; CHECK: endloop0
-; CHECK-NOT: jump [[L1:.]]
-; CHECK-NOT: [[L1]]
+
+
+
+
+
+
 
 define void @test(i32* nocapture %a, i32 %n) nounwind {
 entry:

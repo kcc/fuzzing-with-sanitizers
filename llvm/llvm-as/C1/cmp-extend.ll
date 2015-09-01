@@ -1,4 +1,4 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv5 < %s | FileCheck %s
+
 
 %struct.RESULTS_S.A = type { i16, i16, i16, [4 x i8*], i32, i32, i32, %struct.list_head_s.B*, %struct.MAT_PARAMS_S.D, i16, i16, i16, i16, i16, %struct.CORE_PORTABLE_S.E }
 %struct.list_head_s.B = type { %struct.list_head_s.B*, %struct.list_data_s.C* }
@@ -6,12 +6,12 @@
 %struct.MAT_PARAMS_S.D = type { i32, i16*, i16*, i32* }
 %struct.CORE_PORTABLE_S.E = type { i8 }
 
-; Test that we don't generate a zero extend in this case. Instead we generate
-; a single sign extend instead of two zero extends.
 
-; CHECK-NOT: zxth
 
-; Function Attrs: nounwind
+
+
+
+
 define void @core_bench_list(%struct.RESULTS_S.A* %res) #0 {
 entry:
   %seed3 = getelementptr inbounds %struct.RESULTS_S.A, %struct.RESULTS_S.A* %res, i32 0, i32 2

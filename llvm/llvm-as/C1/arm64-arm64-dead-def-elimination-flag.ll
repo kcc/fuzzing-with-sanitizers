@@ -1,9 +1,9 @@
-; RUN: llc -march=arm64 -aarch64-dead-def-elimination=false < %s | FileCheck %s
+
 
 target datalayout = "e-m:o-i64:64-i128:128-n32:64-S128"
 target triple = "arm64-apple-ios7.0.0"
 
-; Function Attrs: nounwind ssp uwtable
+
 define i32 @test1() #0 {
   %tmp1 = alloca i8
   %tmp2 = icmp eq i8* %tmp1, null
@@ -11,6 +11,6 @@ define i32 @test1() #0 {
 
   ret i32 %tmp3
 
-  ; CHECK-LABEL: test1
-  ; CHECK: adds {{x[0-9]+}}, sp, #15
+  
+  
 }

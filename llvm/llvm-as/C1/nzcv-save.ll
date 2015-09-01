@@ -1,10 +1,10 @@
-; RUN: llc -march=aarch64 < %s | FileCheck %s
 
-; CHECK: mrs [[NZCV_SAVE:x[0-9]+]], NZCV
-; CHECK: msr NZCV, [[NZCV_SAVE]]
 
-; DAG ends up with two uses for the flags from an ADCS node, which means they
-; must be saved for later.
+
+
+
+
+
 define void @f(i256* nocapture %a, i256* nocapture %b, i256* nocapture %cc, i256* nocapture %dd) nounwind uwtable noinline ssp {
 entry:
   %c = load i256, i256* %cc

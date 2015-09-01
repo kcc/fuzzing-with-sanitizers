@@ -1,4 +1,4 @@
-; RUN: llc < %s -mtriple=powerpc64-unknown-linux-gnu -mcpu=pwr7 -verify-machineinstrs | FileCheck %s
+
 target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-f128:128:128-v128:128:128-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
 
@@ -9,21 +9,21 @@ entry:
   %cmp = icmp slt i32 %sext82, 0
   br i1 %cmp, label %cond.true, label %cond.false
 
-cond.true:                                        ; preds = %sw.epilog
+cond.true:                                        
   %and33 = and i32 %conv29, 32767
   %sub34 = sub nsw i32 %a, %and33
   br label %cond.end
 
-cond.false:                                       ; preds = %sw.epilog
+cond.false:                                       
   %add37 = add nsw i32 %conv29, %a
   br label %cond.end
 
-; CHECK: @test
-; CHECK: add [[REG:[0-9]+]], 
-; CHECK: subf [[REG2:[0-9]+]],
-; CHECK: isel {{[0-9]+}}, [[REG]], [[REG2]],
 
-cond.end:                                         ; preds = %cond.false, %cond.true
+
+
+
+
+cond.end:                                         
   %cond = phi i32 [ %sub34, %cond.true ], [ %add37, %cond.false ]
   %sext83 = shl i32 %cond, 16
   %conv39 = ashr exact i32 %sext83, 16

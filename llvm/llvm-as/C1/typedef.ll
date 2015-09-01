@@ -1,16 +1,16 @@
-; REQUIRES: object-emission
 
-; RUN: %llc_dwarf -O0 -filetype=obj < %s | llvm-dwarfdump -debug-dump=info - | FileCheck %s
 
-; From source:
-; typedef void x;
-; x *y;
 
-; Check that a typedef with no DW_AT_type is produced. The absence of a type is used to imply the 'void' type.
 
-; CHECK: DW_TAG_typedef
-; CHECK-NOT: DW_AT_type
-; CHECK: {{DW_TAG|NULL}}
+
+
+
+
+
+
+
+
+
 
 @y = global i8* null, align 8
 

@@ -1,11 +1,11 @@
-; RUN: not llvm-as < %s -disable-output 2>&1 | FileCheck %s
-; CHECK: error: expected uselistorder directive
+
+
 
 define i32 @f32(i32 %a, i32 %b, i32 %c, i32 %d) {
 entry:
   br label %first
 
-; <label 0>:
+
   %eh = mul i32 %e, %1
   %sum = add i32 %eh, %ef
   br label %preexit
@@ -25,7 +25,7 @@ first:
   %goto0 = icmp slt i32 %g1, -9
   br i1 %goto0, label %0, label %preexit
 
-; uselistorder directives
+
   uselistorder i32 7, { 1, 0 }
   uselistorder i32 %1, { 1, 0 }
   uselistorder i32 %e, { 1, 0 }

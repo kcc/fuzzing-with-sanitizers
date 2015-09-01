@@ -1,23 +1,23 @@
-; RUN: llc -mtriple=i686-w64-mingw32 -o %t -filetype=obj %s
-; RUN: llvm-dwarfdump -debug-dump=all %t | FileCheck %s
-; RUN: llc -mtriple=i686-w64-mingw32 -o %t -filetype=obj -dwarf-version=3 %s
-; RUN: llvm-dwarfdump -debug-dump=all %t | FileCheck %s -check-prefix=DWARF3
 
-; CHECK:         DW_AT_stmt_list [DW_FORM_sec_offset]
-; DWARF3:        DW_AT_stmt_list [DW_FORM_data4]
-;
-; generated from:
-; clang -g -S -emit-llvm test.c -o test.ll
-; int main()
-; {
-;       return 0;
-; }
 
-; ModuleID = 'test.c'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-f80:128:128-v64:64:64-v128:128:128-a0:0:64-f80:32:32-n8:16:32-S32"
 target triple = "i686-pc-win32"
 
-; Function Attrs: nounwind
+
 define i32 @main() #0 {
 entry:
   %retval = alloca i32, align 4

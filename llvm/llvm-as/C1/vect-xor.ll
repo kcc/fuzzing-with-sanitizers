@@ -1,7 +1,7 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv5 < %s | FileCheck %s
 
-; Check that the parsing succeeded.
-; CHECK: r{{[0-9]+:[0-9]+}} = xor(r{{[0-9]+:[0-9]+}}, r{{[0-9]+:[0-9]+}})
+
+
+
 target datalayout = "e-p:32:32:32-i64:64:64-i32:32:32-i16:16:16-i1:32:32-f64:64:64-f32:32:32-v64:64:64-v32:32:32-a0:0-n16:32"
 target triple = "hexagon"
 
@@ -18,10 +18,10 @@ define void @fill_window() #0 {
 entry:
   br label %polly.loop_body
 
-polly.loop_after:                                 ; preds = %polly.loop_body
+polly.loop_after:                                 
   ret void
 
-polly.loop_body:                                  ; preds = %entry, %polly.loop_body
+polly.loop_body:                                  
   %polly.loopiv36 = phi i32 [ 0, %entry ], [ %polly.next_loopiv, %polly.loop_body ]
   %polly.next_loopiv = add nsw i32 %polly.loopiv36, 4
   %p_arrayidx4 = getelementptr [0 x i16], [0 x i16]* @prev, i32 0, i32 %polly.loopiv36

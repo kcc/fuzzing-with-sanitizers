@@ -1,8 +1,8 @@
-; RUN: llc -mcpu=ppc64 < %s | FileCheck %s
+
 target datalayout = "E-m:e-i64:64-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
 
-; Function Attrs: nounwind readonly
+
 define float @tf(float* nocapture readonly %i, i32 signext %o) #0 {
 entry:
   %idx.ext = sext i32 %o to i64
@@ -14,12 +14,12 @@ entry:
   %add = fadd float %0, %1
   ret float %add
 
-; CHECK-LABEL: @tf
-; CHECK: lfsux
-; CHECK: blr
+
+
+
 }
 
-; Function Attrs: nounwind readonly
+
 define double @td(double* nocapture readonly %i, i32 signext %o) #0 {
 entry:
   %idx.ext = sext i32 %o to i64
@@ -31,9 +31,9 @@ entry:
   %add = fadd double %0, %1
   ret double %add
 
-; CHECK-LABEL: @td
-; CHECK: lfdux
-; CHECK: blr
+
+
+
 }
 
 attributes #0 = { nounwind readonly }

@@ -1,12 +1,12 @@
-; RUN: llc -mtriple=arm-eabi %s -o /dev/null
+
 
 define void @f(i32 %a, i32 %b, i32 %c, i32 %d, i32 %e) {
 entry:
-        %a_addr = alloca i32            ; <i32*> [#uses=2]
-        %b_addr = alloca i32            ; <i32*> [#uses=2]
-        %c_addr = alloca i32            ; <i32*> [#uses=2]
-        %d_addr = alloca i32            ; <i32*> [#uses=2]
-        %e_addr = alloca i32            ; <i32*> [#uses=2]
+        %a_addr = alloca i32            
+        %b_addr = alloca i32            
+        %c_addr = alloca i32            
+        %d_addr = alloca i32            
+        %e_addr = alloca i32            
         store i32 %a, i32* %a_addr
         store i32 %b, i32* %b_addr
         store i32 %c, i32* %c_addr

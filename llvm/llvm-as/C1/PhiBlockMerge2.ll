@@ -1,9 +1,9 @@
-; Test merging of blocks that only have PHI nodes in them.  This tests the case
-; where the mergedinto block doesn't have any PHI nodes, and is in fact 
-; dominated by the block-to-be-eliminated
-;
-; RUN: opt < %s -simplifycfg -S | not grep N:
-;
+
+
+
+
+
+
 
 declare i1 @foo()
 
@@ -17,7 +17,7 @@ Q:
 	br label %N
 N:
 	%W = phi i32 [0, %0], [1, %Q], [2, %P]
-	; This block should be foldable into M
+	
 	br label %M
 
 M:

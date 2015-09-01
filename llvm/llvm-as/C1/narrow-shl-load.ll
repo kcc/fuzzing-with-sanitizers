@@ -1,16 +1,16 @@
-; RUN: llc -march=x86-64 < %s | FileCheck %s
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64"
 target triple = "x86_64-pc-linux-gnu"
 
-; DAGCombiner should fold this code in finite time.
-; rdar://8606584
+
+
 
 define void @test1() nounwind readnone {
 bb.nph:
   br label %while.cond
 
-while.cond:                                       ; preds = %while.cond, %bb.nph
+while.cond:                                       
   %tmp6 = load i32, i32* undef, align 4
   %and = or i64 undef, undef
   %conv11 = zext i32 undef to i64
@@ -26,12 +26,12 @@ while.cond:                                       ; preds = %while.cond, %bb.nph
   store i32 %conv22, i32* undef, align 4
   br i1 false, label %while.end, label %while.cond
 
-while.end:                                        ; preds = %while.cond
+while.end:                                        
   ret void
 }
 
-; DAG Combiner can't fold this into a load of the 1'th byte.
-; PR8757
+
+
 define i32 @test3(i32 *%P) nounwind ssp {
   store volatile i32 128, i32* %P
   %tmp4.pre = load i32, i32* %P
@@ -42,8 +42,8 @@ define i32 @test3(i32 *%P) nounwind ssp {
   %phitmp16 = zext i16 %phitmp15 to i32
   ret i32 %phitmp16
   
-; CHECK: movl	$128, (%rdi)
-; CHECK-NEXT: movsbl	(%rdi), %eax
-; CHECK-NEXT: movzbl	%ah, %eax
-; CHECK-NEXT: ret
+
+
+
+
 }

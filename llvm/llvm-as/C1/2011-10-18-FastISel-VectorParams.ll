@@ -1,5 +1,5 @@
-; RUN: llc -march=x86 -fast-isel -mattr=+sse < %s | FileCheck %s
-; <rdar://problem/10215997>
+
+
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64-f80:128:128-n8:16:32-S128"
 target triple = "i386-apple-macosx10.7"
 
@@ -20,8 +20,8 @@ entry:
   %2 = load <4 x float>, <4 x float>* %p3, align 16
   %3 = load <4 x float>, <4 x float>* %p4, align 16
   %4 = load <4 x float>, <4 x float>* %p5, align 16
-; CHECK:      movups {{%xmm[0-7]}}, (%esp)
-; CHECK-NEXT: calll _dovectortest 
+
+
   call void @dovectortest(<4 x float> %0, <4 x float> %1, <4 x float> %2, <4 x float> %3, <4 x float> %4)
   ret void
 }

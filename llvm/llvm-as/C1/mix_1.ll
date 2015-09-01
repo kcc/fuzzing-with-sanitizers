@@ -1,9 +1,9 @@
-; REQUIRES: asserts
-; RUN: opt -regions -analyze < %s | FileCheck %s
-; RUN: opt -regions -stats < %s 2>&1 | FileCheck -check-prefix=STAT %s
 
-; RUN: opt -regions -print-region-style=bb  -analyze < %s 2>&1 | FileCheck -check-prefix=BBIT %s
-; RUN: opt -regions -print-region-style=rn  -analyze < %s 2>&1 | FileCheck -check-prefix=RNIT %s
+
+
+
+
+
 
 define void @a_linear_impl_fig_1() nounwind {
 0:
@@ -48,23 +48,23 @@ define void @a_linear_impl_fig_1() nounwind {
         ret void
 }
 
-; CHECK-NOT: =>
-; CHECK: [0] 0 => <Function Return>
-; CHECK-NEXT: [1] 0 => 15
-; CHECK-NEXT:  [2] 1 => 7
-; CHECK-NEXT: [1] 8 => 10
-; CHECK-NEXT:  [2] 11 => 14
-; STAT: 5 region - The # of regions
-; STAT: 1 region - The # of simple regions
 
-; BBIT: 0, 1, 2, 4, 6, 7, 15, 8, 16, 9, 10, 17, 18, 11, 13, 14, 12, 3, 5,
-; BBIT: 0, 1, 2, 4, 6, 7, 3, 5,
-; BBIT: 1, 2, 4, 6, 3, 5,
-; BBIT: 8, 16, 9, 11, 13, 14, 12,
-; BBIT: 11, 13, 12,
 
-; RNIT: 0 => 15, 15, 8 => 10, 10, 17, 18,
-; RNIT: 0, 1 => 7, 7,
-; RNIT: 1, 2, 4, 6, 3, 5,
-; RNIT: 8, 16, 9, 11 => 14, 14,
-; RNIT: 11, 13, 12,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

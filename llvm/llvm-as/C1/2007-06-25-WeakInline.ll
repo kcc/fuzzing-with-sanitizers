@@ -1,10 +1,10 @@
-; RUN: opt < %s -inline -S | grep call
 
-; 'bar' can be overridden at link-time, don't inline it.
+
+
 
 define void @foo() {
 entry:
-        tail call void @bar( )            ; <i32> [#uses=0]
+        tail call void @bar( )            
         ret void
 }
 

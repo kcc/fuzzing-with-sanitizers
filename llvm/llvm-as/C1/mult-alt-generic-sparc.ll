@@ -1,5 +1,5 @@
-; RUN: llc < %s -march=sparc -no-integrated-as
-; ModuleID = 'mult-alt-generic.c'
+
+
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-n32"
 target triple = "sparc"
 
@@ -91,9 +91,9 @@ define void @single_E() nounwind {
 entry:
   %out0 = alloca double, align 8
   store double 0.000000e+000, double* %out0, align 8
-; No lowering support.
-;  %0 = call double asm "foo $1,$0", "=r,E"(double 1.000000e+001) nounwind
-;  store double %0, double* %out0, align 8
+
+
+
   ret void
 }
 
@@ -101,9 +101,9 @@ define void @single_F() nounwind {
 entry:
   %out0 = alloca double, align 8
   store double 0.000000e+000, double* %out0, align 8
-; No lowering support.
-;  %0 = call double asm "foo $1,$0", "=r,F"(double 1.000000e+000) nounwind
-;  store double %0, double* %out0, align 8
+
+
+
   ret void
 }
 
@@ -147,11 +147,11 @@ entry:
   store i32 %2, i32* %out0, align 4
   %3 = call i32 asm "foo $1,$0", "=r,X"(i32* getelementptr inbounds ([2 x i32], [2 x i32]* @marray, i32 0, i32 0)) nounwind
   store i32 %3, i32* %out0, align 4
-; No lowering support.
-;  %4 = call i32 asm "foo $1,$0", "=r,X"(double 1.000000e+001) nounwind
-;  store i32 %4, i32* %out0, align 4
-;  %5 = call i32 asm "foo $1,$0", "=r,X"(double 1.000000e+000) nounwind
-;  store i32 %5, i32* %out0, align 4
+
+
+
+
+
   ret void
 }
 
@@ -249,9 +249,9 @@ define void @multi_E() nounwind {
 entry:
   %out0 = alloca double, align 8
   store double 0.000000e+000, double* %out0, align 8
-; No lowering support.
-;  %0 = call double asm "foo $1,$0", "=r|r,r|E"(double 1.000000e+001) nounwind
-;  store double %0, double* %out0, align 8
+
+
+
   ret void
 }
 
@@ -259,9 +259,9 @@ define void @multi_F() nounwind {
 entry:
   %out0 = alloca double, align 8
   store double 0.000000e+000, double* %out0, align 8
-; No lowering support.
-;  %0 = call double asm "foo $1,$0", "=r|r,r|F"(double 1.000000e+000) nounwind
-;  store double %0, double* %out0, align 8
+
+
+
   ret void
 }
 
@@ -305,11 +305,11 @@ entry:
   store i32 %2, i32* %out0, align 4
   %3 = call i32 asm "foo $1,$0", "=r|r,r|X"(i32* getelementptr inbounds ([2 x i32], [2 x i32]* @marray, i32 0, i32 0)) nounwind
   store i32 %3, i32* %out0, align 4
-; No lowering support.
-;  %4 = call i32 asm "foo $1,$0", "=r|r,r|X"(double 1.000000e+001) nounwind
-;  store i32 %4, i32* %out0, align 4
-;  %5 = call i32 asm "foo $1,$0", "=r|r,r|X"(double 1.000000e+000) nounwind
-;  store i32 %5, i32* %out0, align 4
+
+
+
+
+
   ret void
 }
 

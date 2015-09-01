@@ -1,16 +1,16 @@
-; RUN: llc -O0 %s -mtriple=x86_64-apple-darwin -filetype=obj -o %t
-; RUN: llvm-dwarfdump %t | FileCheck %s
 
-; rdar://13071590
-; Check we are not emitting mutliple AT_const_value for a single member.
-; CHECK: .debug_info contents:
-; CHECK: DW_TAG_compile_unit
-; CHECK: DW_TAG_class_type
-; CHECK: DW_TAG_member
-; CHECK: badbit
-; CHECK: DW_AT_const_value [DW_FORM_sdata]      (1)
-; CHECK-NOT: DW_AT_const_value
-; CHECK: NULL
+
+
+
+
+
+
+
+
+
+
+
+
 
 %"class.std::basic_ostream" = type { i32 (...)**, %"class.std::basic_os" }
 %"class.std::basic_os" = type { %"class.std::os_base", %"class.std::basic_ostream"*, i8, i8 }
@@ -36,14 +36,14 @@ declare void @llvm.dbg.value(metadata, i64, metadata, metadata) nounwind readnon
 !1 = !{!26}
 !4 = !DINamespace(name: "std", line: 48, scope: !5)
 !5 = !DIFile(filename: "os_base.h", directory: "/privite/tmp")
-!25 = !DIEnumerator(name: "_S_os_fmtflags_end", value: 65536) ; [ DW_TAG_enumerator ]
+!25 = !DIEnumerator(name: "_S_os_fmtflags_end", value: 65536) 
 !26 = !DICompositeType(tag: DW_TAG_enumeration_type, name: "_Ios_Iostate", line: 146, size: 32, align: 32, file: !1801, scope: !4, elements: !27)
 !27 = !{!28, !29, !30, !31, !32}
-!28 = !DIEnumerator(name: "_S_goodbit", value: 0) ; [ DW_TAG_enumerator ] [_S_goodbit :: 0]
-!29 = !DIEnumerator(name: "_S_badbit", value: 1) ; [ DW_TAG_enumerator ] [_S_badbit :: 1]
-!30 = !DIEnumerator(name: "_S_eofbit", value: 2) ; [ DW_TAG_enumerator ] [_S_eofbit :: 2]
-!31 = !DIEnumerator(name: "_S_failbit", value: 4) ; [ DW_TAG_enumerator ] [_S_failbit :: 4]
-!32 = !DIEnumerator(name: "_S_os_ostate_end", value: 65536) ; [ DW_TAG_enumerator ] [_S_os_ostate_end :: 65536]
+!28 = !DIEnumerator(name: "_S_goodbit", value: 0) 
+!29 = !DIEnumerator(name: "_S_badbit", value: 1) 
+!30 = !DIEnumerator(name: "_S_eofbit", value: 2) 
+!31 = !DIEnumerator(name: "_S_failbit", value: 4) 
+!32 = !DIEnumerator(name: "_S_os_ostate_end", value: 65536) 
 !49 = !DICompositeType(tag: DW_TAG_class_type, name: "os_base", line: 200, size: 1728, align: 64, file: !1801, scope: !4, elements: !50, vtableHolder: !49)
 !50 = !{!77}
 !54 = !DISubroutineType(types: !55)

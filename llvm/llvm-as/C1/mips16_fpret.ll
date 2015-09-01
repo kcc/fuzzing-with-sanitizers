@@ -1,7 +1,7 @@
-; RUN: llc -mtriple=mipsel-linux-gnu -march=mipsel -mcpu=mips16 -relocation-model=static < %s | FileCheck %s -check-prefix=1
-; RUN: llc -mtriple=mipsel-linux-gnu -march=mipsel -mcpu=mips16 -relocation-model=static < %s | FileCheck %s -check-prefix=2
-; RUN: llc -mtriple=mipsel-linux-gnu  -march=mipsel -mcpu=mips16 -relocation-model=static < %s | FileCheck %s -check-prefix=3
-; RUN: llc -mtriple=mipsel-linux-gnu -march=mipsel -mcpu=mips16 -relocation-model=static < %s | FileCheck %s -check-prefix=4
+
+
+
+
 
 
 @x = global float 0x41F487E980000000, align 4
@@ -13,21 +13,21 @@ define float @foox()  {
 entry:
   %0 = load float, float* @x, align 4
   ret float %0
-; 1: 	.ent	foox
-; 1:	lw	$2, %lo(x)(${{[0-9]+}})
-; 1:	jal	__mips16_ret_sf
+
+
+
 }
 
 define double @foodx()  {
 entry:
   %0 = load double, double* @dx, align 8
   ret double %0
-; 1: 	.ent	foodx
-; 1: 	lw	$2, %lo(dx)(${{[0-9]+}})
-; 1:	jal	__mips16_ret_df
-; 2: 	.ent	foodx
-; 2:	lw	$3, 4(${{[0-9]+}})
-; 2:	jal	__mips16_ret_df
+
+
+
+
+
+
 
 }
 
@@ -42,12 +42,12 @@ entry:
   store float %cx.imag, float* %imag
   %0 = load { float, float }, { float, float }* %retval
   ret { float, float } %0
-; 1: 	.ent	foocx
-; 1: 	lw	$2, %lo(cx)(${{[0-9]+}})
-; 1:	jal	__mips16_ret_sc
-; 2: 	.ent	foocx
-; 2:	lw	$3, 4(${{[0-9]+}})
-; 2:	jal	__mips16_ret_sc
+
+
+
+
+
+
 }
 
 define { double, double } @foodcx()  {
@@ -61,16 +61,16 @@ entry:
   store double %dcx.imag, double* %imag
   %0 = load { double, double }, { double, double }* %retval
   ret { double, double } %0
-; 1: 	.ent	foodcx
-; 1: 	lw	${{[0-9]}}, %lo(dcx)(${{[0-9]+}})
-; 1:	jal	__mips16_ret_dc
-; 2: 	.ent	foodcx
-; 2:	lw	${{[0-9]}}, 4(${{[0-9]+}})
-; 2:	jal	__mips16_ret_dc
-; 3: 	.ent	foodcx
-; 3:	lw	$4, 8(${{[0-9]+}})
-; 3:	jal	__mips16_ret_dc
-; 4: 	.ent	foodcx
-; 4:	lw	$5, 12(${{[0-9]+}})
-; 4:	jal	__mips16_ret_dc
+
+
+
+
+
+
+
+
+
+
+
+
 }

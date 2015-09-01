@@ -1,4 +1,4 @@
-; RUN: llc -march=mipsel -mcpu=mips16 -relocation-model=static < %s | FileCheck %s -check-prefix=16
+
 
 @i = global i32 6, align 4
 @j = global i32 12, align 4
@@ -20,10 +20,10 @@ entry:
   %3 = load i32, i32* @l, align 4
   %sub2 = sub nsw i32 %3, 10000
   store i32 %sub2, i32* @l, align 4
-; 16: 	addiu	${{[0-9]+}}, 5	# 16 bit inst
-; 16: 	addiu	${{[0-9]+}}, -5	# 16 bit inst
-; 16: 	addiu	${{[0-9]+}}, 10000
-; 16: 	addiu	${{[0-9]+}}, -10000
+
+
+
+
   ret void
 }
 

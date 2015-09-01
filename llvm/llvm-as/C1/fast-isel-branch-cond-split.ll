@@ -1,8 +1,8 @@
-; RUN: llc -mtriple=aarch64-apple-darwin -fast-isel -fast-isel-abort=1 -verify-machineinstrs < %s | FileCheck %s
 
-; CHECK-LABEL: test_or
-; CHECK:       cbnz w0, {{LBB[0-9]+_2}}
-; CHECK:       cbz w1, {{LBB[0-9]+_1}}
+
+
+
+
 define i64 @test_or(i32 %a, i32 %b) {
 bb1:
   %0 = icmp eq i32 %a, 0
@@ -18,9 +18,9 @@ bb4:
   ret i64 %2
 }
 
-; CHECK-LABEL: test_and
-; CHECK:       cbz w0, {{LBB[0-9]+_2}}
-; CHECK:       cbnz w1, {{LBB[0-9]+_3}}
+
+
+
 define i64 @test_and(i32 %a, i32 %b) {
 bb1:
   %0 = icmp ne i32 %a, 0

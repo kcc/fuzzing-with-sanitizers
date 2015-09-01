@@ -1,5 +1,5 @@
-; RUN: llc -mtriple=thumb-eabi %s -o /dev/null
-; rdar://8104457
+
+
 
 define arm_apcscc void @t(i32* %m) nounwind {
 entry:

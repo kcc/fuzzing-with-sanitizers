@@ -1,12 +1,12 @@
-; RUN: llc < %s | FileCheck %s
+
 target datalayout = "e-m:e-i64:64-n32:64"
 target triple = "powerpc64le-unknown-linux-gnu"
 
-; This test checks for misordering of a TOC restore instruction relative
-; to subsequent uses of the TOC register.  Previously this test broke
-; because there was no TOC register dependency between the instructions,
-; and the usual stack-adjust instructions that held the TOC restore in
-; place were optimized away.
+
+
+
+
+
 
 %"class.llvm::Module" = type { %"class.llvm::LLVMContext"*, %"class.llvm::iplist", %"class.llvm::iplist.0", %"class.llvm::iplist.9", %"struct.llvm::ilist", %"class.std::basic_string", %"class.llvm::ValueSymbolTable"*, %"class.llvm::StringMap", %"class.std::unique_ptr", %"class.std::basic_string", %"class.std::basic_string", i8*, %"class.llvm::RandomNumberGenerator"*, %"class.std::basic_string", %"class.llvm::DataLayout" }
 %"class.llvm::iplist" = type { %"struct.llvm::ilist_traits", %"class.llvm::GlobalVariable"* }
@@ -158,15 +158,15 @@ declare void @_ZN4llvm12MemoryBuffer14getFileOrSTDINENS_9StringRefEl(%"class.llv
 
 declare void @_ZN4llvm16NamedRegionTimerC1ENS_9StringRefES1_b(%"struct.llvm::NamedRegionTimer"*, [2 x i64], [2 x i64], i1 zeroext) #1
 
-; Function Attrs: nounwind
+
 define %"class.llvm::Module"* @_ZN4llvm11ParseIRFileERKSsRNS_12SMDiagnosticERNS_11LLVMContextE(%"class.std::basic_string"* nocapture readonly dereferenceable(8) %Filename, %"class.llvm::SMDiagnostic"* dereferenceable(200) %Err, %"class.llvm::LLVMContext"* dereferenceable(8) %Context) #0 {
 entry:
-; CHECK: .globl	_ZN4llvm11ParseIRFileERKSsRNS_12SMDiagnosticERNS_11LLVMContextE
-; CHECK: bctrl
-; CHECK: ld 2, 24(1)
-; CHECK: addis [[REG:[0-9]+]], 2, .L.str@toc@ha
-; CHECK: addi {{[0-9]+}}, [[REG]], .L.str@toc@l
-; CHECK: bl _ZNSs6insertEmPKcm
+
+
+
+
+
+
   %.atomicdst.i.i.i.i.i46 = alloca i32, align 4
   %ref.tmp.i.i47 = alloca %"class.std::allocator", align 1
   %.atomicdst.i.i.i.i.i = alloca i32, align 4
@@ -191,7 +191,7 @@ entry:
   %bf.cast.i26 = icmp eq i8 %3, 0
   br i1 %bf.cast.i26, label %_ZN4llvm7ErrorOrISt10unique_ptrINS_12MemoryBufferESt14default_deleteIS2_EEE3getEv.exit, label %_ZNK4llvm7ErrorOrISt10unique_ptrINS_12MemoryBufferESt14default_deleteIS2_EEE8getErrorEv.exit
 
-_ZNK4llvm7ErrorOrISt10unique_ptrINS_12MemoryBufferESt14default_deleteIS2_EEE8getErrorEv.exit: ; preds = %entry
+_ZNK4llvm7ErrorOrISt10unique_ptrINS_12MemoryBufferESt14default_deleteIS2_EEE8getErrorEv.exit: 
   %retval.sroa.0.0..sroa_cast.i = bitcast %"class.llvm::ErrorOr"* %FileOrErr to i64*
   %retval.sroa.0.0.copyload.i = load i64, i64* %retval.sroa.0.0..sroa_cast.i, align 8
   %retval.sroa.3.0..sroa_idx.i = getelementptr inbounds %"class.llvm::ErrorOr", %"class.llvm::ErrorOr"* %FileOrErr, i64 0, i32 0, i32 0, i32 0, i32 0, i64 8
@@ -201,7 +201,7 @@ _ZNK4llvm7ErrorOrISt10unique_ptrINS_12MemoryBufferESt14default_deleteIS2_EEE8get
   %cmp.i = icmp eq i32 %phitmp, 0
   br i1 %cmp.i, label %cond.false.i.i, label %if.then
 
-if.then:                                          ; preds = %_ZNK4llvm7ErrorOrISt10unique_ptrINS_12MemoryBufferESt14default_deleteIS2_EEE8getErrorEv.exit
+if.then:                                          
   %.c = inttoptr i64 %retval.sroa.3.0.copyload.i to %"class.std::error_category"*
   %4 = load i8*, i8** %_M_p.i.i.i, align 8, !tbaa !1
   %arrayidx.i.i.i30 = getelementptr inbounds i8, i8* %4, i64 -24
@@ -227,16 +227,16 @@ if.then:                                          ; preds = %_ZNK4llvm7ErrorOrIS
   %tobool.i.i4.i = icmp eq i8* %4, null
   br i1 %tobool.i.i4.i, label %if.then.i.i6.i, label %if.end.i.i8.i
 
-if.then.i.i6.i:                                   ; preds = %if.then
+if.then.i.i6.i:                                   
   %_M_p.i.i.i.i.i.i5.i = getelementptr inbounds %"class.std::basic_string", %"class.std::basic_string"* %Filename.i, i64 0, i32 0, i32 0
   store i8* bitcast (i64* getelementptr inbounds ([0 x i64], [0 x i64]* @_ZNSs4_Rep20_S_empty_rep_storageE, i64 0, i64 3) to i8*), i8** %_M_p.i.i.i.i.i.i5.i, align 8, !tbaa !13
   br label %_ZNK4llvm9StringRefcvSsEv.exit9.i
 
-if.end.i.i8.i:                                    ; preds = %if.then
+if.end.i.i8.i:                                    
   call void @_ZNSsC1EPKcmRKSaIcE(%"class.std::basic_string"* %Filename.i, i8* %4, i64 %5, %"class.std::allocator"* dereferenceable(1) %ref.tmp.i.i2.i) #3
   br label %_ZNK4llvm9StringRefcvSsEv.exit9.i
 
-_ZNK4llvm9StringRefcvSsEv.exit9.i:                ; preds = %if.end.i.i8.i, %if.then.i.i6.i
+_ZNK4llvm9StringRefcvSsEv.exit9.i:                
   call void @llvm.lifetime.end(i64 1, i8* %10) #3
   %LineNo.i = getelementptr inbounds %"class.llvm::SMDiagnostic", %"class.llvm::SMDiagnostic"* %ref.tmp, i64 0, i32 3
   store i32 -1, i32* %LineNo.i, align 8, !tbaa !14
@@ -250,16 +250,16 @@ _ZNK4llvm9StringRefcvSsEv.exit9.i:                ; preds = %if.end.i.i8.i, %if.
   %tobool.i.i.i = icmp eq i8* %8, null
   br i1 %tobool.i.i.i, label %if.then.i.i.i, label %if.end.i.i.i
 
-if.then.i.i.i:                                    ; preds = %_ZNK4llvm9StringRefcvSsEv.exit9.i
+if.then.i.i.i:                                    
   %_M_p.i.i.i.i.i.i.i = getelementptr inbounds %"class.std::basic_string", %"class.std::basic_string"* %Message.i, i64 0, i32 0, i32 0
   store i8* bitcast (i64* getelementptr inbounds ([0 x i64], [0 x i64]* @_ZNSs4_Rep20_S_empty_rep_storageE, i64 0, i64 3) to i8*), i8** %_M_p.i.i.i.i.i.i.i, align 8, !tbaa !13
   br label %_ZN4llvm12SMDiagnosticC2ENS_9StringRefENS_9SourceMgr8DiagKindES1_.exit
 
-if.end.i.i.i:                                     ; preds = %_ZNK4llvm9StringRefcvSsEv.exit9.i
+if.end.i.i.i:                                     
   call void @_ZNSsC1EPKcmRKSaIcE(%"class.std::basic_string"* %Message.i, i8* %8, i64 %9, %"class.std::allocator"* dereferenceable(1) %ref.tmp.i.i.i) #3
   br label %_ZN4llvm12SMDiagnosticC2ENS_9StringRefENS_9SourceMgr8DiagKindES1_.exit
 
-_ZN4llvm12SMDiagnosticC2ENS_9StringRefENS_9SourceMgr8DiagKindES1_.exit: ; preds = %if.then.i.i.i, %if.end.i.i.i
+_ZN4llvm12SMDiagnosticC2ENS_9StringRefENS_9SourceMgr8DiagKindES1_.exit: 
   call void @llvm.lifetime.end(i64 1, i8* %12) #3
   %_M_p.i.i.i.i.i = getelementptr inbounds %"class.llvm::SMDiagnostic", %"class.llvm::SMDiagnostic"* %ref.tmp, i64 0, i32 7, i32 0, i32 0
   store i8* bitcast (i64* getelementptr inbounds ([0 x i64], [0 x i64]* @_ZNSs4_Rep20_S_empty_rep_storageE, i64 0, i64 3) to i8*), i8** %_M_p.i.i.i.i.i, align 8, !tbaa !13
@@ -309,12 +309,12 @@ _ZN4llvm12SMDiagnosticC2ENS_9StringRefENS_9SourceMgr8DiagKindES1_.exit: ; preds 
   %tobool.i.i.i.i.i.i = icmp eq %"struct.std::pair"* %18, null
   br i1 %tobool.i.i.i.i.i.i, label %_ZN4llvm12SMDiagnosticaSEOS0_.exit, label %if.then.i.i.i.i.i.i
 
-if.then.i.i.i.i.i.i:                              ; preds = %_ZN4llvm12SMDiagnosticC2ENS_9StringRefENS_9SourceMgr8DiagKindES1_.exit
+if.then.i.i.i.i.i.i:                              
   %23 = bitcast %"struct.std::pair"* %18 to i8*
   call void @_ZdlPv(i8* %23) #3
   br label %_ZN4llvm12SMDiagnosticaSEOS0_.exit
 
-_ZN4llvm12SMDiagnosticaSEOS0_.exit:               ; preds = %_ZN4llvm12SMDiagnosticC2ENS_9StringRefENS_9SourceMgr8DiagKindES1_.exit, %if.then.i.i.i.i.i.i
+_ZN4llvm12SMDiagnosticaSEOS0_.exit:               
   %24 = getelementptr inbounds %"class.llvm::SMDiagnostic", %"class.llvm::SMDiagnostic"* %Err, i64 0, i32 9, i32 0
   %25 = getelementptr inbounds %"class.llvm::SMDiagnostic", %"class.llvm::SMDiagnostic"* %ref.tmp, i64 0, i32 9, i32 0
   %call2.i.i42 = call dereferenceable(48) %"class.llvm::SmallVectorImpl.85"* @_ZN4llvm15SmallVectorImplINS_7SMFixItEEaSEOS2_(%"class.llvm::SmallVectorImpl.85"* %24, %"class.llvm::SmallVectorImpl.85"* dereferenceable(48) %25) #3
@@ -325,12 +325,12 @@ _ZN4llvm12SMDiagnosticaSEOS0_.exit:               ; preds = %_ZN4llvm12SMDiagnos
   %cmp.i.i.i = icmp eq i8* %arrayidx.i.i.i36, bitcast ([0 x i64]* @_ZNSs4_Rep20_S_empty_rep_storageE to i8*)
   br i1 %cmp.i.i.i, label %_ZNSsD1Ev.exit, label %if.then.i.i.i45, !prof !28
 
-if.then.i.i.i45:                                  ; preds = %_ZN4llvm12SMDiagnosticaSEOS0_.exit
+if.then.i.i.i45:                                  
   %_M_refcount.i.i.i = getelementptr inbounds i8, i8* %8, i64 -8
   %28 = bitcast i8* %_M_refcount.i.i.i to i32*
   br i1 icmp ne (i8* bitcast (i32 (i32*, void (i8*)*)* @__pthread_key_create to i8*), i8* null), label %if.then.i.i.i.i, label %if.else.i.i.i.i
 
-if.then.i.i.i.i:                                  ; preds = %if.then.i.i.i45
+if.then.i.i.i.i:                                  
   %.atomicdst.i.i.i.i.i.0..atomicdst.i.i.i.i.0..atomicdst.i.i.i.0..atomicdst.i.i.0..atomicdst.i.0..sroa_cast = bitcast i32* %.atomicdst.i.i.i.i.i to i8*
   call void @llvm.lifetime.start(i64 4, i8* %.atomicdst.i.i.i.i.i.0..atomicdst.i.i.i.i.0..atomicdst.i.i.i.0..atomicdst.i.i.0..atomicdst.i.0..sroa_cast)
   %29 = atomicrmw volatile add i32* %28, i32 -1 acq_rel
@@ -339,22 +339,22 @@ if.then.i.i.i.i:                                  ; preds = %if.then.i.i.i45
   call void @llvm.lifetime.end(i64 4, i8* %.atomicdst.i.i.i.i.i.0..atomicdst.i.i.i.i.0..atomicdst.i.i.i.0..atomicdst.i.i.0..atomicdst.i.0..sroa_cast)
   br label %_ZN9__gnu_cxxL27__exchange_and_add_dispatchEPii.exit.i.i.i
 
-if.else.i.i.i.i:                                  ; preds = %if.then.i.i.i45
+if.else.i.i.i.i:                                  
   %30 = load i32, i32* %28, align 4, !tbaa !29
   %add.i.i.i.i.i = add nsw i32 %30, -1
   store i32 %add.i.i.i.i.i, i32* %28, align 4, !tbaa !29
   br label %_ZN9__gnu_cxxL27__exchange_and_add_dispatchEPii.exit.i.i.i
 
-_ZN9__gnu_cxxL27__exchange_and_add_dispatchEPii.exit.i.i.i: ; preds = %if.else.i.i.i.i, %if.then.i.i.i.i
+_ZN9__gnu_cxxL27__exchange_and_add_dispatchEPii.exit.i.i.i: 
   %retval.0.i.i.i.i = phi i32 [ %.atomicdst.i.i.i.i.i.0..atomicdst.i.i.i.i.0..atomicdst.i.i.i.0..atomicdst.i.i.0..atomicdst.i.0..atomicdst.0..atomicdst.0..i.i.i.i.i, %if.then.i.i.i.i ], [ %30, %if.else.i.i.i.i ]
   %cmp3.i.i.i = icmp slt i32 %retval.0.i.i.i.i, 1
   br i1 %cmp3.i.i.i, label %if.then4.i.i.i, label %_ZNSsD1Ev.exit
 
-if.then4.i.i.i:                                   ; preds = %_ZN9__gnu_cxxL27__exchange_and_add_dispatchEPii.exit.i.i.i
+if.then4.i.i.i:                                   
   call void @_ZNSs4_Rep10_M_destroyERKSaIcE(%"struct.std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Rep"* %27, %"class.std::allocator"* dereferenceable(1) %ref.tmp.i.i) #3
   br label %_ZNSsD1Ev.exit
 
-_ZNSsD1Ev.exit:                                   ; preds = %_ZN4llvm12SMDiagnosticaSEOS0_.exit, %_ZN9__gnu_cxxL27__exchange_and_add_dispatchEPii.exit.i.i.i, %if.then4.i.i.i
+_ZNSsD1Ev.exit:                                   
   call void @llvm.lifetime.end(i64 1, i8* %26) #3
   %31 = getelementptr inbounds %"class.std::allocator", %"class.std::allocator"* %ref.tmp.i.i47, i64 0, i32 0
   call void @llvm.lifetime.start(i64 1, i8* %31) #3
@@ -365,12 +365,12 @@ _ZNSsD1Ev.exit:                                   ; preds = %_ZN4llvm12SMDiagnos
   %cmp.i.i.i50 = icmp eq i8* %arrayidx.i.i.i49, bitcast ([0 x i64]* @_ZNSs4_Rep20_S_empty_rep_storageE to i8*)
   br i1 %cmp.i.i.i50, label %_ZNSsD1Ev.exit62, label %if.then.i.i.i52, !prof !28
 
-if.then.i.i.i52:                                  ; preds = %_ZNSsD1Ev.exit
+if.then.i.i.i52:                                  
   %_M_refcount.i.i.i51 = getelementptr inbounds i8, i8* %32, i64 -8
   %34 = bitcast i8* %_M_refcount.i.i.i51 to i32*
   br i1 icmp ne (i8* bitcast (i32 (i32*, void (i8*)*)* @__pthread_key_create to i8*), i8* null), label %if.then.i.i.i.i55, label %if.else.i.i.i.i57
 
-if.then.i.i.i.i55:                                ; preds = %if.then.i.i.i52
+if.then.i.i.i.i55:                                
   %.atomicdst.i.i.i.i.i46.0..atomicdst.i.i.i.i.0..atomicdst.i.i.i.0..atomicdst.i.i.0..atomicdst.i.0..sroa_cast = bitcast i32* %.atomicdst.i.i.i.i.i46 to i8*
   call void @llvm.lifetime.start(i64 4, i8* %.atomicdst.i.i.i.i.i46.0..atomicdst.i.i.i.i.0..atomicdst.i.i.i.0..atomicdst.i.i.0..atomicdst.i.0..sroa_cast)
   %35 = atomicrmw volatile add i32* %34, i32 -1 acq_rel
@@ -379,49 +379,49 @@ if.then.i.i.i.i55:                                ; preds = %if.then.i.i.i52
   call void @llvm.lifetime.end(i64 4, i8* %.atomicdst.i.i.i.i.i46.0..atomicdst.i.i.i.i.0..atomicdst.i.i.i.0..atomicdst.i.i.0..atomicdst.i.0..sroa_cast)
   br label %_ZN9__gnu_cxxL27__exchange_and_add_dispatchEPii.exit.i.i.i60
 
-if.else.i.i.i.i57:                                ; preds = %if.then.i.i.i52
+if.else.i.i.i.i57:                                
   %36 = load i32, i32* %34, align 4, !tbaa !29
   %add.i.i.i.i.i56 = add nsw i32 %36, -1
   store i32 %add.i.i.i.i.i56, i32* %34, align 4, !tbaa !29
   br label %_ZN9__gnu_cxxL27__exchange_and_add_dispatchEPii.exit.i.i.i60
 
-_ZN9__gnu_cxxL27__exchange_and_add_dispatchEPii.exit.i.i.i60: ; preds = %if.else.i.i.i.i57, %if.then.i.i.i.i55
+_ZN9__gnu_cxxL27__exchange_and_add_dispatchEPii.exit.i.i.i60: 
   %retval.0.i.i.i.i58 = phi i32 [ %.atomicdst.i.i.i.i.i46.0..atomicdst.i.i.i.i.0..atomicdst.i.i.i.0..atomicdst.i.i.0..atomicdst.i.0..atomicdst.0..atomicdst.0..i.i.i.i.i54, %if.then.i.i.i.i55 ], [ %36, %if.else.i.i.i.i57 ]
   %cmp3.i.i.i59 = icmp slt i32 %retval.0.i.i.i.i58, 1
   br i1 %cmp3.i.i.i59, label %if.then4.i.i.i61, label %_ZNSsD1Ev.exit62
 
-if.then4.i.i.i61:                                 ; preds = %_ZN9__gnu_cxxL27__exchange_and_add_dispatchEPii.exit.i.i.i60
+if.then4.i.i.i61:                                 
   call void @_ZNSs4_Rep10_M_destroyERKSaIcE(%"struct.std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Rep"* %33, %"class.std::allocator"* dereferenceable(1) %ref.tmp.i.i47) #3
   br label %_ZNSsD1Ev.exit62
 
-_ZNSsD1Ev.exit62:                                 ; preds = %_ZNSsD1Ev.exit, %_ZN9__gnu_cxxL27__exchange_and_add_dispatchEPii.exit.i.i.i60, %if.then4.i.i.i61
+_ZNSsD1Ev.exit62:                                 
   call void @llvm.lifetime.end(i64 1, i8* %31) #3
   br label %cleanup
 
-cond.false.i.i:                                   ; preds = %_ZNK4llvm7ErrorOrISt10unique_ptrINS_12MemoryBufferESt14default_deleteIS2_EEE8getErrorEv.exit
+cond.false.i.i:                                   
   call void @__assert_fail(i8* getelementptr inbounds ([54 x i8], [54 x i8]* @.str1, i64 0, i64 0), i8* getelementptr inbounds ([61 x i8], [61 x i8]* @.str2, i64 0, i64 0), i32 zeroext 242, i8* getelementptr inbounds ([206 x i8], [206 x i8]* @__PRETTY_FUNCTION__._ZN4llvm7ErrorOrISt10unique_ptrINS_12MemoryBufferESt14default_deleteIS2_EEE10getStorageEv, i64 0, i64 0)) #7
   unreachable
 
-_ZN4llvm7ErrorOrISt10unique_ptrINS_12MemoryBufferESt14default_deleteIS2_EEE3getEv.exit: ; preds = %entry
+_ZN4llvm7ErrorOrISt10unique_ptrINS_12MemoryBufferESt14default_deleteIS2_EEE3getEv.exit: 
   %_M_head_impl.i.i.i.i.i = bitcast %"class.llvm::ErrorOr"* %FileOrErr to %"class.llvm::MemoryBuffer"**
   %37 = load %"class.llvm::MemoryBuffer"*, %"class.llvm::MemoryBuffer"** %_M_head_impl.i.i.i.i.i, align 8, !tbaa !27
   %call9 = call %"class.llvm::Module"* @_ZN4llvm7ParseIREPNS_12MemoryBufferERNS_12SMDiagnosticERNS_11LLVMContextE(%"class.llvm::MemoryBuffer"* %37, %"class.llvm::SMDiagnostic"* dereferenceable(200) %Err, %"class.llvm::LLVMContext"* dereferenceable(8) %Context)
   br label %cleanup
 
-cleanup:                                          ; preds = %_ZN4llvm7ErrorOrISt10unique_ptrINS_12MemoryBufferESt14default_deleteIS2_EEE3getEv.exit, %_ZNSsD1Ev.exit62
+cleanup:                                          
   %retval.0 = phi %"class.llvm::Module"* [ null, %_ZNSsD1Ev.exit62 ], [ %call9, %_ZN4llvm7ErrorOrISt10unique_ptrINS_12MemoryBufferESt14default_deleteIS2_EEE3getEv.exit ]
   %bf.load.i = load i8, i8* %HasError.i24, align 8
   %38 = and i8 %bf.load.i, 1
   %bf.cast.i = icmp eq i8 %38, 0
   br i1 %bf.cast.i, label %_ZN4llvm7ErrorOrISt10unique_ptrINS_12MemoryBufferESt14default_deleteIS2_EEE10getStorageEv.exit.i, label %_ZN4llvm7ErrorOrISt10unique_ptrINS_12MemoryBufferESt14default_deleteIS2_EEED2Ev.exit
 
-_ZN4llvm7ErrorOrISt10unique_ptrINS_12MemoryBufferESt14default_deleteIS2_EEE10getStorageEv.exit.i: ; preds = %cleanup
+_ZN4llvm7ErrorOrISt10unique_ptrINS_12MemoryBufferESt14default_deleteIS2_EEE10getStorageEv.exit.i: 
   %_M_head_impl.i.i.i.i.i.i = bitcast %"class.llvm::ErrorOr"* %FileOrErr to %"class.llvm::MemoryBuffer"**
   %39 = load %"class.llvm::MemoryBuffer"*, %"class.llvm::MemoryBuffer"** %_M_head_impl.i.i.i.i.i.i, align 8, !tbaa !27
   %cmp.i.i = icmp eq %"class.llvm::MemoryBuffer"* %39, null
   br i1 %cmp.i.i, label %_ZNSt10unique_ptrIN4llvm12MemoryBufferESt14default_deleteIS1_EED2Ev.exit.i, label %_ZNKSt14default_deleteIN4llvm12MemoryBufferEEclEPS1_.exit.i.i
 
-_ZNKSt14default_deleteIN4llvm12MemoryBufferEEclEPS1_.exit.i.i: ; preds = %_ZN4llvm7ErrorOrISt10unique_ptrINS_12MemoryBufferESt14default_deleteIS2_EEE10getStorageEv.exit.i
+_ZNKSt14default_deleteIN4llvm12MemoryBufferEEclEPS1_.exit.i.i: 
   %40 = bitcast %"class.llvm::MemoryBuffer"* %39 to void (%"class.llvm::MemoryBuffer"*)***
   %vtable.i.i.i = load void (%"class.llvm::MemoryBuffer"*)**, void (%"class.llvm::MemoryBuffer"*)*** %40, align 8, !tbaa !11
   %vfn.i.i.i = getelementptr inbounds void (%"class.llvm::MemoryBuffer"*)*, void (%"class.llvm::MemoryBuffer"*)** %vtable.i.i.i, i64 1
@@ -429,35 +429,35 @@ _ZNKSt14default_deleteIN4llvm12MemoryBufferEEclEPS1_.exit.i.i: ; preds = %_ZN4ll
   call void %41(%"class.llvm::MemoryBuffer"* %39) #3
   br label %_ZNSt10unique_ptrIN4llvm12MemoryBufferESt14default_deleteIS1_EED2Ev.exit.i
 
-_ZNSt10unique_ptrIN4llvm12MemoryBufferESt14default_deleteIS1_EED2Ev.exit.i: ; preds = %_ZNKSt14default_deleteIN4llvm12MemoryBufferEEclEPS1_.exit.i.i, %_ZN4llvm7ErrorOrISt10unique_ptrINS_12MemoryBufferESt14default_deleteIS2_EEE10getStorageEv.exit.i
+_ZNSt10unique_ptrIN4llvm12MemoryBufferESt14default_deleteIS1_EED2Ev.exit.i: 
   store %"class.llvm::MemoryBuffer"* null, %"class.llvm::MemoryBuffer"** %_M_head_impl.i.i.i.i.i.i, align 8, !tbaa !27
   br label %_ZN4llvm7ErrorOrISt10unique_ptrINS_12MemoryBufferESt14default_deleteIS2_EEED2Ev.exit
 
-_ZN4llvm7ErrorOrISt10unique_ptrINS_12MemoryBufferESt14default_deleteIS2_EEED2Ev.exit: ; preds = %cleanup, %_ZNSt10unique_ptrIN4llvm12MemoryBufferESt14default_deleteIS1_EED2Ev.exit.i
+_ZN4llvm7ErrorOrISt10unique_ptrINS_12MemoryBufferESt14default_deleteIS2_EEED2Ev.exit: 
   ret %"class.llvm::Module"* %retval.0
 }
 
-; Function Attrs: nounwind
+
 declare void @llvm.lifetime.start(i64, i8* nocapture) #3
 
-; Function Attrs: nounwind
+
 declare void @llvm.lifetime.end(i64, i8* nocapture) #3
 
-; Function Attrs: noreturn nounwind
+
 declare void @__assert_fail(i8*, i8*, i32 zeroext, i8*) #4
 
 declare dereferenceable(8) %"class.std::basic_string"* @_ZNSs6insertEmPKcm(%"class.std::basic_string"*, i64, i8*, i64) #1
 
-; Function Attrs: nounwind
+
 declare void @llvm.memcpy.p0i8.p0i8.i64(i8* nocapture, i8* nocapture readonly, i64, i32, i1) #3
 
-; Function Attrs: nounwind
+
 declare void @_ZNSs4_Rep10_M_destroyERKSaIcE(%"struct.std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Rep"*, %"class.std::allocator"* dereferenceable(1)) #0
 
-; Function Attrs: nounwind
+
 declare extern_weak signext i32 @__pthread_key_create(i32*, void (i8*)*) #0
 
-; Function Attrs: nobuiltin nounwind
+
 declare void @_ZdlPv(i8*) #6
 
 declare void @_ZNSsC1EPKcmRKSaIcE(%"class.std::basic_string"*, i8*, i64, %"class.std::allocator"* dereferenceable(1)) #1
@@ -470,7 +470,7 @@ declare %"class.llvm::Module"* @_ZN4llvm7ParseIREPNS_12MemoryBufferERNS_12SMDiag
 
 declare void @_ZNSs4swapERSs(%"class.std::basic_string"*, %"class.std::basic_string"* dereferenceable(8)) #1
 
-; Function Attrs: nounwind
+
 declare void @llvm.memset.p0i8.i64(i8* nocapture, i8, i64, i32, i1) #3
 
 attributes #0 = { nounwind "less-precise-fpmad"="false" "no-frame-pointer-elim"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

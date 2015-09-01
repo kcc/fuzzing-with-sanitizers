@@ -1,6 +1,6 @@
-; RUN: opt -objc-arc -S < %s | FileCheck %s
-; rdar://11744105
-; bugzilla://14584
+
+
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.9.0"
@@ -39,35 +39,35 @@ entry:
   %tmp = load %struct._class_t*, %struct._class_t** @"\01L_OBJC_CLASSLIST_REFERENCES_$_", align 8, !dbg !37
   %tmp1 = load i8*, i8** @"\01L_OBJC_SELECTOR_REFERENCES_", align 8, !dbg !37, !invariant.load !38
   %tmp2 = bitcast %struct._class_t* %tmp to i8*, !dbg !37
-; CHECK: call i8* bitcast (i8* (i8*, i8*, ...)* @objc_msgSend to i8* (i8*, i8*)*)(i8* %tmp2, i8* %tmp1)
+
   %call = call i8* bitcast (i8* (i8*, i8*, ...)* @objc_msgSend to i8* (i8*, i8*)*)(i8* %tmp2, i8* %tmp1), !dbg !37, !clang.arc.no_objc_arc_exceptions !38
   call void @llvm.dbg.value(metadata i8* %call, i64 0, metadata !25, metadata !DIExpression()), !dbg !37
-; CHECK: call i8* @objc_retain(i8* %call) [[NUW:#[0-9]+]]
+
   %tmp3 = call i8* @objc_retain(i8* %call) nounwind, !dbg !39
   call void @llvm.dbg.value(metadata i8* %call, i64 0, metadata !25, metadata !DIExpression()), !dbg !39
   invoke fastcc void @ThrowFunc(i8* %call)
           to label %eh.cont unwind label %lpad, !dbg !40, !clang.arc.no_objc_arc_exceptions !38
 
-eh.cont:                                          ; preds = %entry
-; CHECK: call void @objc_release(i8* %call)
+eh.cont:                                          
+
   call void @objc_release(i8* %call) nounwind, !dbg !42, !clang.imprecise_release !38
   br label %if.end, !dbg !43
 
-lpad:                                             ; preds = %entry
+lpad:                                             
   %tmp4 = landingpad { i8*, i32 }
           catch i8* null, !dbg !40
   %tmp5 = extractvalue { i8*, i32 } %tmp4, 0, !dbg !40
   %exn.adjusted = call i8* @objc_begin_catch(i8* %tmp5) nounwind, !dbg !44
   call void @llvm.dbg.value(metadata i8 0, i64 0, metadata !21, metadata !DIExpression()), !dbg !46
   call void @objc_end_catch(), !dbg !49, !clang.arc.no_objc_arc_exceptions !38
-; CHECK: call void @objc_release(i8* %call)
+
   call void @objc_release(i8* %call) nounwind, !dbg !42, !clang.imprecise_release !38
   call void (i8*, ...) @NSLog(i8* bitcast (%struct.NSConstantString* @_unnamed_cfstring_ to i8*), i8* %call), !dbg !50, !clang.arc.no_objc_arc_exceptions !38
   br label %if.end, !dbg !52
 
-if.end:                                           ; preds = %lpad, %eh.cont
+if.end:                                           
   call void (i8*, ...) @NSLog(i8* bitcast (%struct.NSConstantString* @_unnamed_cfstring_ to i8*), i8* %call), !dbg !53, !clang.arc.no_objc_arc_exceptions !38
-; CHECK: call void @objc_release(i8* %call)
+
   call void @objc_release(i8* %call) nounwind, !dbg !54, !clang.imprecise_release !38
   ret i32 0, !dbg !54
 }
@@ -104,11 +104,11 @@ declare void @NSLog(i8*, ...)
 
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) nounwind readnone
 
-; CHECK: attributes #0 = { ssp uwtable }
-; CHECK: attributes #1 = { nounwind readnone }
-; CHECK: attributes #2 = { nonlazybind }
-; CHECK: attributes #3 = { noinline ssp uwtable }
-; CHECK: attributes [[NUW]] = { nounwind }
+
+
+
+
+
 
 !llvm.dbg.cu = !{!0}
 !llvm.module.flags = !{!33, !34, !35, !36, !61}

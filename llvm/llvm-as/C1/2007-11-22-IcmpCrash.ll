@@ -1,5 +1,5 @@
-; RUN: opt < %s -instcombine -disable-output
-; PR1817
+
+
 
 define i1 @test1(i32 %X) {
 	%A = icmp slt i32 %X, 10

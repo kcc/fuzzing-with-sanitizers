@@ -1,42 +1,42 @@
-; RUN: opt < %s -loop-vectorize -pass-remarks-analysis='loop-vectorize' -mtriple=x86_64-unknown-linux -S 2>&1 | FileCheck %s
 
-; Verify analysis remarks are generated when interleaving is not beneficial.
-; CHECK: remark: vectorization-remarks-profitable.c:4:14: the cost-model indicates that vectorization is not beneficial
-; CHECK: remark: vectorization-remarks-profitable.c:4:14: the cost-model indicates that interleaving is not beneficial and is explicitly disabled or interleave count is set to 1
-; CHECK: remark: vectorization-remarks-profitable.c:11:14: the cost-model indicates that vectorization is not beneficial
-; CHECK: remark: vectorization-remarks-profitable.c:11:14: the cost-model indicates that interleaving is not beneficial
 
-; First loop.
-;  #pragma clang loop interleave(disable) unroll(disable)
-;  for(int i = 0; i < n; i++) {
-;    out[i] = in[i];
-;  }
 
-; Second loop.
-;  #pragma clang loop unroll(disable)
-;  for(int i = 0; i < n; i++) {
-;    out[i] = in[i];
-;  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.10.0"
 
-; Function Attrs: nounwind ssp uwtable
+
 define void @do_not_interleave(float* nocapture %out, float* nocapture readonly %in, i32 %n) #0 {
 entry:
   %cmp.7 = icmp sgt i32 %n, 0, !dbg !3
   br i1 %cmp.7, label %for.body.preheader, label %for.cond.cleanup, !dbg !8
 
-for.body.preheader:                               ; preds = %entry
+for.body.preheader:                               
   br label %for.body, !dbg !9
 
-for.cond.cleanup.loopexit:                        ; preds = %for.body
+for.cond.cleanup.loopexit:                        
   br label %for.cond.cleanup, !dbg !10
 
-for.cond.cleanup:                                 ; preds = %for.cond.cleanup.loopexit, %entry
+for.cond.cleanup:                                 
   ret void, !dbg !10
 
-for.body:                                         ; preds = %for.body.preheader, %for.body
+for.body:                                         
   %indvars.iv = phi i64 [ %indvars.iv.next, %for.body ], [ 0, %for.body.preheader ]
   %arrayidx = getelementptr inbounds float, float* %in, i64 %indvars.iv, !dbg !9
   %0 = bitcast float* %arrayidx to i32*, !dbg !9
@@ -50,22 +50,22 @@ for.body:                                         ; preds = %for.body.preheader,
   br i1 %exitcond, label %for.cond.cleanup.loopexit, label %for.body, !dbg !8, !llvm.loop !17
 }
 
-; Function Attrs: nounwind ssp uwtable
+
 define void @interleave_not_profitable(float* nocapture %out, float* nocapture readonly %in, i32 %n) #0 {
 entry:
   %cmp.7 = icmp sgt i32 %n, 0, !dbg !20
   br i1 %cmp.7, label %for.body.preheader, label %for.cond.cleanup, !dbg !22
 
-for.body.preheader:                               ; preds = %entry
+for.body.preheader:                               
   br label %for.body, !dbg !23
 
-for.cond.cleanup.loopexit:                        ; preds = %for.body
+for.cond.cleanup.loopexit:                        
   br label %for.cond.cleanup, !dbg !24
 
-for.cond.cleanup:                                 ; preds = %for.cond.cleanup.loopexit, %entry
+for.cond.cleanup:                                 
   ret void, !dbg !24
 
-for.body:                                         ; preds = %for.body.preheader, %for.body
+for.body:                                         
   %indvars.iv = phi i64 [ %indvars.iv.next, %for.body ], [ 0, %for.body.preheader ]
   %arrayidx = getelementptr inbounds float, float* %in, i64 %indvars.iv, !dbg !23
   %0 = bitcast float* %arrayidx to i32*, !dbg !23

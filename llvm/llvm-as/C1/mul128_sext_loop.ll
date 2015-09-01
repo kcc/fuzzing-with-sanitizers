@@ -1,17 +1,17 @@
-; RUN: llc < %s -march=x86-64 | FileCheck %s
+
 
 define void @test(i64* nocapture %arr, i64 %arrsize, i64 %factor) nounwind uwtable {
   %1 = icmp sgt i64 %arrsize, 0
   br i1 %1, label %.lr.ph, label %._crit_edge
 
-.lr.ph:                                           ; preds = %0
+.lr.ph:                                           
   %2 = sext i64 %factor to i128
   br label %3
 
-; <label>:3                                       ; preds = %3, %.lr.ph
-; CHECK-NOT: mul
-; CHECK: imulq
-; CHECK-NOT: mul
+
+
+
+
   %carry.02 = phi i128 [ 0, %.lr.ph ], [ %10, %3 ]
   %i.01 = phi i64 [ 0, %.lr.ph ], [ %11, %3 ]
   %4 = getelementptr inbounds i64, i64* %arr, i64 %i.01
@@ -27,6 +27,6 @@ define void @test(i64* nocapture %arr, i64 %arrsize, i64 %factor) nounwind uwtab
   %exitcond = icmp eq i64 %11, %arrsize
   br i1 %exitcond, label %._crit_edge, label %3
 
-._crit_edge:                                      ; preds = %3, %0
+._crit_edge:                                      
   ret void
 }

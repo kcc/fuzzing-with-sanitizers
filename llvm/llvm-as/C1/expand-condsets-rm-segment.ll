@@ -1,5 +1,5 @@
-; RUN: llc -O2 < %s
-; REQUIRES: asserts
+
+
 
 target datalayout = "e-m:e-p:32:32-i1:32-i64:64-a:0-v32:32-n16:32"
 target triple = "hexagon-unknown--elf"
@@ -19,14 +19,14 @@ target triple = "hexagon-unknown--elf"
 @sysctl_sched_child_runs_first = common global i32 0, align 4
 @cpu_online_mask = external constant %struct.cpumask*
 
-; Function Attrs: noinline nounwind
+
 define void @sched_init_granularity() #0 {
 entry:
   tail call fastcc void @update_sysctl()
   ret void
 }
 
-; Function Attrs: noinline nounwind
+
 define internal fastcc void @update_sysctl() #0 {
 entry:
   %call = tail call i32 @get_update_sysctl_factor()
@@ -42,46 +42,46 @@ entry:
   ret void
 }
 
-; Function Attrs: noinline nounwind
+
 define i32 @calc_delta_mine(i32 %delta_exec, i32 %weight, %struct.load_weight* nocapture %lw) #0 {
 entry:
   %cmp = icmp ugt i32 %weight, 1
   %conv = zext i32 %delta_exec to i64
   br i1 %cmp, label %if.then, label %if.end, !prof !5
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %conv2 = zext i32 %weight to i64
   %mul = mul i64 %conv2, %conv
   br label %if.end
 
-if.end:                                           ; preds = %entry, %if.then
+if.end:                                           
   %tmp.0 = phi i64 [ %mul, %if.then ], [ %conv, %entry ]
   %inv_weight = getelementptr inbounds %struct.load_weight, %struct.load_weight* %lw, i32 0, i32 1
   %0 = load i32, i32* %inv_weight, align 4, !tbaa !6
   %tobool4 = icmp eq i32 %0, 0
   br i1 %tobool4, label %if.then5, label %if.end22
 
-if.then5:                                         ; preds = %if.end
+if.then5:                                         
   %weight7 = getelementptr inbounds %struct.load_weight, %struct.load_weight* %lw, i32 0, i32 0
   %1 = load i32, i32* %weight7, align 4, !tbaa !9
   %lnot9 = icmp eq i32 %1, 0
   br i1 %lnot9, label %if.then17, label %if.else19, !prof !10
 
-if.then17:                                        ; preds = %if.then5
+if.then17:                                        
   store i32 -1, i32* %inv_weight, align 4, !tbaa !6
   br label %if.end22
 
-if.else19:                                        ; preds = %if.then5
+if.else19:                                        
   %div = udiv i32 -1, %1
   store i32 %div, i32* %inv_weight, align 4, !tbaa !6
   br label %if.end22
 
-if.end22:                                         ; preds = %if.end, %if.then17, %if.else19
+if.end22:                                         
   %2 = phi i32 [ %0, %if.end ], [ -1, %if.then17 ], [ %div, %if.else19 ]
   %cmp23 = icmp ugt i64 %tmp.0, 4294967295
   br i1 %cmp23, label %if.then31, label %if.else37, !prof !10
 
-if.then31:                                        ; preds = %if.end22
+if.then31:                                        
   %add = add i64 %tmp.0, 32768
   %shr = lshr i64 %add, 16
   %conv33 = zext i32 %2 to i64
@@ -90,14 +90,14 @@ if.then31:                                        ; preds = %if.end22
   %shr36 = lshr i64 %add35, 16
   br label %if.end43
 
-if.else37:                                        ; preds = %if.end22
+if.else37:                                        
   %conv39 = zext i32 %2 to i64
   %mul40 = mul i64 %conv39, %tmp.0
   %add41 = add i64 %mul40, 2147483648
   %shr42 = lshr i64 %add41, 32
   br label %if.end43
 
-if.end43:                                         ; preds = %if.else37, %if.then31
+if.end43:                                         
   %tmp.1 = phi i64 [ %shr36, %if.then31 ], [ %shr42, %if.else37 ]
   %cmp49 = icmp ult i64 %tmp.1, 2147483647
   %3 = trunc i64 %tmp.1 to i32

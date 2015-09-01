@@ -1,12 +1,12 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv4 < %s | FileCheck %s
-; Check that we generate new value jump.
+
+
 
 @i = global i32 0, align 4
 @j = global i32 10, align 4
 
 define i32 @foo(i32 %a) nounwind {
 entry:
-; CHECK: if (cmp.eq(r{{[0-9]+}}.new, #0)) jump{{.}}
+
   %addr1 = alloca i32, align 4
   %addr2 = alloca i32, align 4
   %0 = load i32, i32* @i, align 4

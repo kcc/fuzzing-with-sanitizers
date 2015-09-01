@@ -1,6 +1,6 @@
-; RUN: opt %s -rewrite-statepoints-for-gc -spp-print-base-pointers -S 2>&1 | FileCheck %s
 
-; CHECK: derived %next_element_ptr base %array_obj
+
+
 
 define i32 @null_in_array(i64 addrspace(1)* %array_obj) gc "statepoint-example" {
 entry:

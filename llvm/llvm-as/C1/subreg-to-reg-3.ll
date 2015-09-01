@@ -1,8 +1,8 @@
-; RUN: llc < %s -march=x86-64 | FileCheck %s
 
-; CHECK: imull
 
-; Don't eliminate or coalesce away the explicit zero-extension!
+
+
+
 
 define i64 @foo(i64 %a) {
   %b = mul i64 %a, 7823

@@ -1,4 +1,4 @@
-; RUN: llc -march=xcore < %s | FileCheck %s
+
 
 define i32 @switch(i32 %i) {
 entry:
@@ -44,9 +44,9 @@ entry:
                  i32 38, label %bb38
                  i32 39, label %bb39
         ]
-; CHECK: shl
-; CHECK: bru
-; CHECK: .jmptable
+
+
+
 bb0:
         ret i32 0
 bb1:

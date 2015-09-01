@@ -1,8 +1,8 @@
-; RUN: llc -mtriple=thumb-eabi %s -o /dev/null
+
 
 define double @t(double %x, double %y) nounwind optsize {
 entry:
-	%0 = tail call double @llvm.pow.f64( double %x, double %y )		; <double> [#uses=1]
+	%0 = tail call double @llvm.pow.f64( double %x, double %y )		
 	ret double %0
 }
 

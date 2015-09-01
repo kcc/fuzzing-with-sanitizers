@@ -1,19 +1,19 @@
-; RUN: llc -mtriple=x86_64-apple-darwin < %s | FileCheck %s
 
-; A MOV32ri is inside a loop, it has two successors, one successor is inside the
-; same loop, the other successor is outside the loop. We should be able to sink
-; MOV32ri outside the loop.
-; rdar://11980766
+
+
+
+
+
 define i32 @sink_succ(i32 %argc, i8** nocapture %argv) nounwind uwtable ssp {
-; CHECK-LABEL: sink_succ
-; CHECK: [[OUTER_LN1:LBB0_[0-9]+]]: ## %preheader
-; CHECK: %exit
-; CHECK-NOT: movl
-; CHECK: jne [[OUTER_LN1]]
-; CHECK: movl
-; CHECK: [[LN2:LBB0_[0-9]+]]: ## %for.body2
-; CHECK: jne [[LN2]]
-; CHECK: ret
+
+
+
+
+
+
+
+
+
 entry:
   br label %preheader
 
@@ -54,7 +54,7 @@ for.end20:
 }
 
 define i32 @sink_out_of_loop(i32 %n, i32* %output) {
-; CHECK-LABEL: sink_out_of_loop:
+
 entry:
   br label %loop
 
@@ -68,8 +68,8 @@ loop:
   br i1 %exit_cond, label %exit, label %loop
 
 exit:
-; CHECK: BB#2
-; CHECK: imull %eax, %eax
-; CHECK: retq
+
+
+
   ret i32 %j
 }

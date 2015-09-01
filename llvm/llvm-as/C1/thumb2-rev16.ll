@@ -1,10 +1,10 @@
-; XFAIL: *
-; fixme rev16 pattern is not matching
 
-; RUN: llc < %s -march=thumb -mcpu=arm1156t2-s -mattr=+thumb2 | grep "rev16\W*r[0-9]*,\W*r[0-9]*" | count 1
 
-; 0xff00ff00 = 4278255360
-; 0x00ff00ff = 16711935
+
+
+
+
+
 define i32 @f1(i32 %a) {
     %l8 = shl i32 %a, 8
     %r8 = lshr i32 %a, 8
@@ -14,10 +14,10 @@ define i32 @f1(i32 %a) {
     ret i32 %tmp
 }
 
-; 0xff000000 = 4278190080
-; 0x00ff0000 = 16711680
-; 0x0000ff00 = 65280
-; 0x000000ff = 255
+
+
+
+
 define i32 @f2(i32 %a) {
     %l8 = shl i32 %a, 8
     %r8 = lshr i32 %a, 8

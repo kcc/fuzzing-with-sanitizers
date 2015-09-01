@@ -1,8 +1,8 @@
-; RUN: opt -tbaa -sink -S < %s | FileCheck %s
 
-; CHECK: a:
-; CHECK:   %f = load float, float* %p, !tbaa [[TAGA:!.*]]
-; CHECK:   store float %f, float* %q
+
+
+
+
 
 define void @foo(float* %p, i1 %c, float* %q, float* %r) {
   %f = load float, float* %p, !tbaa !0
@@ -15,8 +15,8 @@ b:
   ret void
 }
 
-; CHECK: [[TAGA]] = !{[[TYPEA:!.*]], [[TYPEA]], i64 0}
-; CHECK: [[TYPEA]] = !{!"A", !{{.*}}}
+
+
 !0 = !{!3, !3, i64 0}
 !1 = !{!4, !4, i64 0}
 !2 = !{!"test"}

@@ -1,20 +1,20 @@
-; RUN: llc -march=msp430 -combiner-alias-analysis < %s | FileCheck %s
+
 target datalayout = "e-p:16:8:8-i8:8:8-i16:8:8-i32:8:8"
 target triple = "msp430-generic-generic"
 @foo = common global i16 0, align 2
 @bar = common global i16 0, align 2
 
 define void @mov() nounwind {
-; CHECK-LABEL: mov:
-; CHECK: mov.w	&bar, &foo
+
+
         %1 = load i16, i16* @bar
         store i16 %1, i16* @foo
         ret void
 }
 
 define void @add() nounwind {
-; CHECK-LABEL: add:
-; CHECK: add.w	&bar, &foo
+
+
 	%1 = load i16, i16* @bar
 	%2 = load i16, i16* @foo
 	%3 = add i16 %2, %1
@@ -23,8 +23,8 @@ define void @add() nounwind {
 }
 
 define void @and() nounwind {
-; CHECK-LABEL: and:
-; CHECK: and.w	&bar, &foo
+
+
 	%1 = load i16, i16* @bar
 	%2 = load i16, i16* @foo
 	%3 = and i16 %2, %1
@@ -33,8 +33,8 @@ define void @and() nounwind {
 }
 
 define void @bis() nounwind {
-; CHECK-LABEL: bis:
-; CHECK: bis.w	&bar, &foo
+
+
 	%1 = load i16, i16* @bar
 	%2 = load i16, i16* @foo
 	%3 = or i16 %2, %1
@@ -43,8 +43,8 @@ define void @bis() nounwind {
 }
 
 define void @xor() nounwind {
-; CHECK-LABEL: xor:
-; CHECK: xor.w	&bar, &foo
+
+
 	%1 = load i16, i16* @bar
 	%2 = load i16, i16* @foo
 	%3 = xor i16 %2, %1
@@ -54,16 +54,16 @@ define void @xor() nounwind {
 
 define i16 @mov2() nounwind {
 entry:
- %retval = alloca i16                            ; <i16*> [#uses=3]
- %x = alloca i32, align 2                        ; <i32*> [#uses=1]
- %y = alloca i32, align 2                        ; <i32*> [#uses=1]
+ %retval = alloca i16                            
+ %x = alloca i32, align 2                        
+ %y = alloca i32, align 2                        
  store i16 0, i16* %retval
- %tmp = load i32, i32* %y                             ; <i32> [#uses=1]
+ %tmp = load i32, i32* %y                             
  store i32 %tmp, i32* %x
  store i16 0, i16* %retval
- %0 = load i16, i16* %retval                          ; <i16> [#uses=1]
+ %0 = load i16, i16* %retval                          
  ret i16 %0
-; CHECK-LABEL: mov2:
-; CHECK:	mov.w	2(r1), 6(r1)
-; CHECK:	mov.w	0(r1), 4(r1)
+
+
+
 }

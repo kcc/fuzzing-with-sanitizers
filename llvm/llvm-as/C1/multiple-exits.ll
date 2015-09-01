@@ -1,12 +1,12 @@
-; RUN: opt < %s -loop-deletion -S | FileCheck %s
 
-; Checks whether dead loops with multiple exits can be eliminated
 
-; CHECK:      entry:
-; CHECK-NEXT:   br label %return
 
-; CHECK:      return:
-; CHECK-NEXT:   ret void
+
+
+
+
+
+
 
 define void @foo(i64 %n, i64 %m) nounwind {
 entry:

@@ -1,4 +1,4 @@
-; RUN: llc < %s -march=x86 | not grep imul
+
 
 	%struct.eebb = type { %struct.eebb*, i16* }
 	%struct.hf = type { %struct.hf*, i16*, i8*, i32, i32, %struct.eebb*, i32, i32, i8*, i8*, i8*, i8*, i16*, i8*, i16*, %struct.ri, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, [30 x i32], %struct.eebb, i32, i8* }
@@ -7,29 +7,29 @@
 
 define fastcc i32 @foo(i16* %eptr, i8* %ecode, %struct.foo_data* %md, i32 %ims) {
 entry:
-	%tmp36 = load i32, i32* null, align 4		; <i32> [#uses=1]
-	%tmp37 = icmp ult i32 0, %tmp36		; <i1> [#uses=1]
+	%tmp36 = load i32, i32* null, align 4		
+	%tmp37 = icmp ult i32 0, %tmp36		
 	br i1 %tmp37, label %cond_next79, label %cond_true
 
-cond_true:		; preds = %entry
+cond_true:		
 	ret i32 0
 
-cond_next79:		; preds = %entry
-	%tmp85 = load i32, i32* null, align 4		; <i32> [#uses=1]
-	%tmp86 = icmp ult i32 0, %tmp85		; <i1> [#uses=1]
+cond_next79:		
+	%tmp85 = load i32, i32* null, align 4		
+	%tmp86 = icmp ult i32 0, %tmp85		
 	br i1 %tmp86, label %cond_next130, label %cond_true89
 
-cond_true89:		; preds = %cond_next79
+cond_true89:		
 	ret i32 0
 
-cond_next130:		; preds = %cond_next79
-	%tmp173 = icmp eq i32 0, 0		; <i1> [#uses=1]
+cond_next130:		
+	%tmp173 = icmp eq i32 0, 0		
 	br i1 %tmp173, label %cond_next201, label %cond_true176
 
-cond_true176:		; preds = %cond_next130
+cond_true176:		
 	ret i32 0
 
-cond_next201:		; preds = %cond_next130
+cond_next201:		
 	switch i32 0, label %bb19955 [
 		 i32 0, label %bb1266
 		 i32 1, label %bb5018
@@ -58,72 +58,72 @@ cond_next201:		; preds = %cond_next130
 		 i32 80, label %bb552
 	]
 
-bb552:		; preds = %cond_next201
+bb552:		
 	ret i32 0
 
-bb740:		; preds = %cond_next201
+bb740:		
 	ret i32 0
 
-bb1266:		; preds = %cond_next201
+bb1266:		
 	ret i32 0
 
-bb1447:		; preds = %cond_next201, %cond_next201
+bb1447:		
 	ret i32 0
 
-bb1737:		; preds = %cond_next201, %cond_next201
+bb1737:		
 	ret i32 0
 
-cond_true1984:		; preds = %cond_next201
+cond_true1984:		
 	ret i32 0
 
-bb2162:		; preds = %cond_next201
+bb2162:		
 	ret i32 0
 
-bb4883:		; preds = %cond_next201
+bb4883:		
 	ret i32 0
 
-bb5018:		; preds = %cond_next201
+bb5018:		
 	ret i32 0
 
-bb5075:		; preds = %cond_next201
+bb5075:		
 	ret i32 0
 
-bb5136:		; preds = %cond_next201
+bb5136:		
 	ret i32 0
 
-bb5395:		; preds = %cond_next201
+bb5395:		
 	ret i32 0
 
-bb5452:		; preds = %cond_next201
+bb5452:		
 	ret i32 0
 
-cond_true5534:		; preds = %cond_next201, %cond_next201
+cond_true5534:		
 	ret i32 0
 
-cond_next5871:		; preds = %cond_next201
+cond_next5871:		
 	ret i32 0
 
-bb6039:		; preds = %cond_next201
+bb6039:		
 	ret i32 0
 
-bb6181:		; preds = %cond_next201
+bb6181:		
 	ret i32 0
 
-bb6323:		; preds = %cond_next201
+bb6323:		
 	ret i32 0
 
-bb6463:		; preds = %cond_next201
+bb6463:		
 	ret i32 0
 
-bb6605:		; preds = %cond_next201
+bb6605:		
 	ret i32 0
 
-bb6746:		; preds = %cond_next201
+bb6746:		
 	ret i32 0
 
-bb12899:		; preds = %cond_next201
+bb12899:		
 	ret i32 0
 
-bb19955:		; preds = %cond_next201
+bb19955:		
 	ret i32 0
 }

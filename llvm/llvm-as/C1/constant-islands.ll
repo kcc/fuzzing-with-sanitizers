@@ -1,21 +1,21 @@
-; RUN: llc < %s -march=arm   -mcpu=cortex-a8 -O0 -filetype=obj -o %t.o
-; RUN: llc < %s -march=thumb -mcpu=cortex-a8 -O0 -filetype=obj -o %t.o
-; RUN: llc < %s -march=arm   -mcpu=cortex-a8 -O2 -filetype=obj -verify-machineinstrs -o %t.o
-; RUN: llc < %s -march=thumb -mcpu=cortex-a8 -O2 -filetype=obj -verify-machineinstrs -o %t.o
+
+
+
+
 target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:32:64-v128:32:128-a0:0:32-n32-S32"
 target triple = "thumbv7-apple-ios"
 
-; This function comes from the Bullet test.  It is quite big, and exercises the
-; constant island pass a bit.  It has caused failures, including
-; <rdar://problem/10670199>
-;
-; It is unlikely that this code will continue to create the exact conditions
-; that broke the arm constant island pass in the past, but it is still useful to
-; force the pass to split basic blocks etc.
-;
-; The run lines above force the integrated assembler to be enabled so it can
-; catch any illegal displacements.  Other than that, we depend on the constant
-; island pass assertions.
+
+
+
+
+
+
+
+
+
+
+
 
 %class.btVector3 = type { [4 x float] }
 %class.btTransform = type { %class.btMatrix3x3, %class.btVector3 }
@@ -278,7 +278,7 @@ entry:
   %call3 = invoke %class.btCapsuleShape* @_ZN14btCapsuleShapeC1Eff(%class.btCapsuleShape* %2, float %mul, float %mul2)
           to label %invoke.cont unwind label %lpad
 
-invoke.cont:                                      ; preds = %entry
+invoke.cont:                                      
   %5 = bitcast %class.btCapsuleShape* %2 to %class.btCollisionShape*
   %m_shapes = getelementptr inbounds %class.RagDoll, %class.RagDoll* %this1, i32 0, i32 2
   %arrayidx = getelementptr inbounds [11 x %class.btCollisionShape*], [11 x %class.btCollisionShape*]* %m_shapes, i32 0, i32 0
@@ -292,7 +292,7 @@ invoke.cont:                                      ; preds = %entry
   %call10 = invoke %class.btCapsuleShape* @_ZN14btCapsuleShapeC1Eff(%class.btCapsuleShape* %6, float %mul6, float %mul7)
           to label %invoke.cont9 unwind label %lpad8
 
-invoke.cont9:                                     ; preds = %invoke.cont
+invoke.cont9:                                     
   %9 = bitcast %class.btCapsuleShape* %6 to %class.btCollisionShape*
   %m_shapes12 = getelementptr inbounds %class.RagDoll, %class.RagDoll* %this1, i32 0, i32 2
   %arrayidx13 = getelementptr inbounds [11 x %class.btCollisionShape*], [11 x %class.btCollisionShape*]* %m_shapes12, i32 0, i32 1
@@ -306,7 +306,7 @@ invoke.cont9:                                     ; preds = %invoke.cont
   %call19 = invoke %class.btCapsuleShape* @_ZN14btCapsuleShapeC1Eff(%class.btCapsuleShape* %10, float %mul15, float %mul16)
           to label %invoke.cont18 unwind label %lpad17
 
-invoke.cont18:                                    ; preds = %invoke.cont9
+invoke.cont18:                                    
   %13 = bitcast %class.btCapsuleShape* %10 to %class.btCollisionShape*
   %m_shapes21 = getelementptr inbounds %class.RagDoll, %class.RagDoll* %this1, i32 0, i32 2
   %arrayidx22 = getelementptr inbounds [11 x %class.btCollisionShape*], [11 x %class.btCollisionShape*]* %m_shapes21, i32 0, i32 2
@@ -320,7 +320,7 @@ invoke.cont18:                                    ; preds = %invoke.cont9
   %call28 = invoke %class.btCapsuleShape* @_ZN14btCapsuleShapeC1Eff(%class.btCapsuleShape* %14, float %mul24, float %mul25)
           to label %invoke.cont27 unwind label %lpad26
 
-invoke.cont27:                                    ; preds = %invoke.cont18
+invoke.cont27:                                    
   %17 = bitcast %class.btCapsuleShape* %14 to %class.btCollisionShape*
   %m_shapes30 = getelementptr inbounds %class.RagDoll, %class.RagDoll* %this1, i32 0, i32 2
   %arrayidx31 = getelementptr inbounds [11 x %class.btCollisionShape*], [11 x %class.btCollisionShape*]* %m_shapes30, i32 0, i32 3
@@ -334,7 +334,7 @@ invoke.cont27:                                    ; preds = %invoke.cont18
   %call37 = invoke %class.btCapsuleShape* @_ZN14btCapsuleShapeC1Eff(%class.btCapsuleShape* %18, float %mul33, float %mul34)
           to label %invoke.cont36 unwind label %lpad35
 
-invoke.cont36:                                    ; preds = %invoke.cont27
+invoke.cont36:                                    
   %21 = bitcast %class.btCapsuleShape* %18 to %class.btCollisionShape*
   %m_shapes39 = getelementptr inbounds %class.RagDoll, %class.RagDoll* %this1, i32 0, i32 2
   %arrayidx40 = getelementptr inbounds [11 x %class.btCollisionShape*], [11 x %class.btCollisionShape*]* %m_shapes39, i32 0, i32 4
@@ -348,7 +348,7 @@ invoke.cont36:                                    ; preds = %invoke.cont27
   %call46 = invoke %class.btCapsuleShape* @_ZN14btCapsuleShapeC1Eff(%class.btCapsuleShape* %22, float %mul42, float %mul43)
           to label %invoke.cont45 unwind label %lpad44
 
-invoke.cont45:                                    ; preds = %invoke.cont36
+invoke.cont45:                                    
   %25 = bitcast %class.btCapsuleShape* %22 to %class.btCollisionShape*
   %m_shapes48 = getelementptr inbounds %class.RagDoll, %class.RagDoll* %this1, i32 0, i32 2
   %arrayidx49 = getelementptr inbounds [11 x %class.btCollisionShape*], [11 x %class.btCollisionShape*]* %m_shapes48, i32 0, i32 5
@@ -362,7 +362,7 @@ invoke.cont45:                                    ; preds = %invoke.cont36
   %call55 = invoke %class.btCapsuleShape* @_ZN14btCapsuleShapeC1Eff(%class.btCapsuleShape* %26, float %mul51, float %mul52)
           to label %invoke.cont54 unwind label %lpad53
 
-invoke.cont54:                                    ; preds = %invoke.cont45
+invoke.cont54:                                    
   %29 = bitcast %class.btCapsuleShape* %26 to %class.btCollisionShape*
   %m_shapes57 = getelementptr inbounds %class.RagDoll, %class.RagDoll* %this1, i32 0, i32 2
   %arrayidx58 = getelementptr inbounds [11 x %class.btCollisionShape*], [11 x %class.btCollisionShape*]* %m_shapes57, i32 0, i32 6
@@ -376,7 +376,7 @@ invoke.cont54:                                    ; preds = %invoke.cont45
   %call64 = invoke %class.btCapsuleShape* @_ZN14btCapsuleShapeC1Eff(%class.btCapsuleShape* %30, float %mul60, float %mul61)
           to label %invoke.cont63 unwind label %lpad62
 
-invoke.cont63:                                    ; preds = %invoke.cont54
+invoke.cont63:                                    
   %33 = bitcast %class.btCapsuleShape* %30 to %class.btCollisionShape*
   %m_shapes66 = getelementptr inbounds %class.RagDoll, %class.RagDoll* %this1, i32 0, i32 2
   %arrayidx67 = getelementptr inbounds [11 x %class.btCollisionShape*], [11 x %class.btCollisionShape*]* %m_shapes66, i32 0, i32 7
@@ -390,7 +390,7 @@ invoke.cont63:                                    ; preds = %invoke.cont54
   %call73 = invoke %class.btCapsuleShape* @_ZN14btCapsuleShapeC1Eff(%class.btCapsuleShape* %34, float %mul69, float %mul70)
           to label %invoke.cont72 unwind label %lpad71
 
-invoke.cont72:                                    ; preds = %invoke.cont63
+invoke.cont72:                                    
   %37 = bitcast %class.btCapsuleShape* %34 to %class.btCollisionShape*
   %m_shapes75 = getelementptr inbounds %class.RagDoll, %class.RagDoll* %this1, i32 0, i32 2
   %arrayidx76 = getelementptr inbounds [11 x %class.btCollisionShape*], [11 x %class.btCollisionShape*]* %m_shapes75, i32 0, i32 8
@@ -404,7 +404,7 @@ invoke.cont72:                                    ; preds = %invoke.cont63
   %call82 = invoke %class.btCapsuleShape* @_ZN14btCapsuleShapeC1Eff(%class.btCapsuleShape* %38, float %mul78, float %mul79)
           to label %invoke.cont81 unwind label %lpad80
 
-invoke.cont81:                                    ; preds = %invoke.cont72
+invoke.cont81:                                    
   %41 = bitcast %class.btCapsuleShape* %38 to %class.btCollisionShape*
   %m_shapes84 = getelementptr inbounds %class.RagDoll, %class.RagDoll* %this1, i32 0, i32 2
   %arrayidx85 = getelementptr inbounds [11 x %class.btCollisionShape*], [11 x %class.btCollisionShape*]* %m_shapes84, i32 0, i32 9
@@ -418,7 +418,7 @@ invoke.cont81:                                    ; preds = %invoke.cont72
   %call91 = invoke %class.btCapsuleShape* @_ZN14btCapsuleShapeC1Eff(%class.btCapsuleShape* %42, float %mul87, float %mul88)
           to label %invoke.cont90 unwind label %lpad89
 
-invoke.cont90:                                    ; preds = %invoke.cont81
+invoke.cont90:                                    
   %45 = bitcast %class.btCapsuleShape* %42 to %class.btCollisionShape*
   %m_shapes93 = getelementptr inbounds %class.RagDoll, %class.RagDoll* %this1, i32 0, i32 2
   %arrayidx94 = getelementptr inbounds [11 x %class.btCollisionShape*], [11 x %class.btCollisionShape*]* %m_shapes93, i32 0, i32 10
@@ -604,12 +604,12 @@ invoke.cont90:                                    ; preds = %invoke.cont81
   store i32 0, i32* %i, align 4
   br label %for.cond
 
-for.cond:                                         ; preds = %for.inc, %invoke.cont90
+for.cond:                                         
   %58 = load i32, i32* %i, align 4
   %cmp = icmp slt i32 %58, 11
   br i1 %cmp, label %for.body, label %for.end
 
-for.body:                                         ; preds = %for.cond
+for.body:                                         
   %59 = load i32, i32* %i, align 4
   %m_bodies231 = getelementptr inbounds %class.RagDoll, %class.RagDoll* %this1, i32 0, i32 3
   %arrayidx232 = getelementptr inbounds [11 x %class.btRigidBody*], [11 x %class.btRigidBody*]* %m_bodies231, i32 0, i32 %59
@@ -628,13 +628,13 @@ for.body:                                         ; preds = %for.cond
   call void @_ZN11btRigidBody21setSleepingThresholdsEff(%class.btRigidBody* %65, float 0x3FF99999A0000000, float 2.500000e+00)
   br label %for.inc
 
-for.inc:                                          ; preds = %for.body
+for.inc:                                          
   %66 = load i32, i32* %i, align 4
   %inc = add nsw i32 %66, 1
   store i32 %inc, i32* %i, align 4
   br label %for.cond
 
-lpad:                                             ; preds = %entry
+lpad:                                             
   %67 = landingpad { i8*, i32 }
           cleanup
   %68 = extractvalue { i8*, i32 } %67, 0
@@ -644,10 +644,10 @@ lpad:                                             ; preds = %entry
   invoke void @_ZN13btConvexShapedlEPv(i8* %call)
           to label %invoke.cont4 unwind label %terminate.lpad
 
-invoke.cont4:                                     ; preds = %lpad
+invoke.cont4:                                     
   br label %eh.resume
 
-lpad8:                                            ; preds = %invoke.cont
+lpad8:                                            
   %70 = landingpad { i8*, i32 }
           cleanup
   %71 = extractvalue { i8*, i32 } %70, 0
@@ -657,10 +657,10 @@ lpad8:                                            ; preds = %invoke.cont
   invoke void @_ZN13btConvexShapedlEPv(i8* %call5)
           to label %invoke.cont11 unwind label %terminate.lpad
 
-invoke.cont11:                                    ; preds = %lpad8
+invoke.cont11:                                    
   br label %eh.resume
 
-lpad17:                                           ; preds = %invoke.cont9
+lpad17:                                           
   %73 = landingpad { i8*, i32 }
           cleanup
   %74 = extractvalue { i8*, i32 } %73, 0
@@ -670,10 +670,10 @@ lpad17:                                           ; preds = %invoke.cont9
   invoke void @_ZN13btConvexShapedlEPv(i8* %call14)
           to label %invoke.cont20 unwind label %terminate.lpad
 
-invoke.cont20:                                    ; preds = %lpad17
+invoke.cont20:                                    
   br label %eh.resume
 
-lpad26:                                           ; preds = %invoke.cont18
+lpad26:                                           
   %76 = landingpad { i8*, i32 }
           cleanup
   %77 = extractvalue { i8*, i32 } %76, 0
@@ -683,10 +683,10 @@ lpad26:                                           ; preds = %invoke.cont18
   invoke void @_ZN13btConvexShapedlEPv(i8* %call23)
           to label %invoke.cont29 unwind label %terminate.lpad
 
-invoke.cont29:                                    ; preds = %lpad26
+invoke.cont29:                                    
   br label %eh.resume
 
-lpad35:                                           ; preds = %invoke.cont27
+lpad35:                                           
   %79 = landingpad { i8*, i32 }
           cleanup
   %80 = extractvalue { i8*, i32 } %79, 0
@@ -696,10 +696,10 @@ lpad35:                                           ; preds = %invoke.cont27
   invoke void @_ZN13btConvexShapedlEPv(i8* %call32)
           to label %invoke.cont38 unwind label %terminate.lpad
 
-invoke.cont38:                                    ; preds = %lpad35
+invoke.cont38:                                    
   br label %eh.resume
 
-lpad44:                                           ; preds = %invoke.cont36
+lpad44:                                           
   %82 = landingpad { i8*, i32 }
           cleanup
   %83 = extractvalue { i8*, i32 } %82, 0
@@ -709,10 +709,10 @@ lpad44:                                           ; preds = %invoke.cont36
   invoke void @_ZN13btConvexShapedlEPv(i8* %call41)
           to label %invoke.cont47 unwind label %terminate.lpad
 
-invoke.cont47:                                    ; preds = %lpad44
+invoke.cont47:                                    
   br label %eh.resume
 
-lpad53:                                           ; preds = %invoke.cont45
+lpad53:                                           
   %85 = landingpad { i8*, i32 }
           cleanup
   %86 = extractvalue { i8*, i32 } %85, 0
@@ -722,10 +722,10 @@ lpad53:                                           ; preds = %invoke.cont45
   invoke void @_ZN13btConvexShapedlEPv(i8* %call50)
           to label %invoke.cont56 unwind label %terminate.lpad
 
-invoke.cont56:                                    ; preds = %lpad53
+invoke.cont56:                                    
   br label %eh.resume
 
-lpad62:                                           ; preds = %invoke.cont54
+lpad62:                                           
   %88 = landingpad { i8*, i32 }
           cleanup
   %89 = extractvalue { i8*, i32 } %88, 0
@@ -735,10 +735,10 @@ lpad62:                                           ; preds = %invoke.cont54
   invoke void @_ZN13btConvexShapedlEPv(i8* %call59)
           to label %invoke.cont65 unwind label %terminate.lpad
 
-invoke.cont65:                                    ; preds = %lpad62
+invoke.cont65:                                    
   br label %eh.resume
 
-lpad71:                                           ; preds = %invoke.cont63
+lpad71:                                           
   %91 = landingpad { i8*, i32 }
           cleanup
   %92 = extractvalue { i8*, i32 } %91, 0
@@ -748,10 +748,10 @@ lpad71:                                           ; preds = %invoke.cont63
   invoke void @_ZN13btConvexShapedlEPv(i8* %call68)
           to label %invoke.cont74 unwind label %terminate.lpad
 
-invoke.cont74:                                    ; preds = %lpad71
+invoke.cont74:                                    
   br label %eh.resume
 
-lpad80:                                           ; preds = %invoke.cont72
+lpad80:                                           
   %94 = landingpad { i8*, i32 }
           cleanup
   %95 = extractvalue { i8*, i32 } %94, 0
@@ -761,10 +761,10 @@ lpad80:                                           ; preds = %invoke.cont72
   invoke void @_ZN13btConvexShapedlEPv(i8* %call77)
           to label %invoke.cont83 unwind label %terminate.lpad
 
-invoke.cont83:                                    ; preds = %lpad80
+invoke.cont83:                                    
   br label %eh.resume
 
-lpad89:                                           ; preds = %invoke.cont81
+lpad89:                                           
   %97 = landingpad { i8*, i32 }
           cleanup
   %98 = extractvalue { i8*, i32 } %97, 0
@@ -774,10 +774,10 @@ lpad89:                                           ; preds = %invoke.cont81
   invoke void @_ZN13btConvexShapedlEPv(i8* %call86)
           to label %invoke.cont92 unwind label %terminate.lpad
 
-invoke.cont92:                                    ; preds = %lpad89
+invoke.cont92:                                    
   br label %eh.resume
 
-for.end:                                          ; preds = %for.cond
+for.end:                                          
   %call237 = call %class.btTransform* @_ZN11btTransformC1Ev(%class.btTransform* %localA)
   %call238 = call %class.btTransform* @_ZN11btTransformC1Ev(%class.btTransform* %localB)
   call void @_ZN11btTransform11setIdentityEv(%class.btTransform* %localA)
@@ -809,7 +809,7 @@ for.end:                                          ; preds = %for.cond
   %call260 = invoke %class.btHingeConstraint* @_ZN17btHingeConstraintC1ER11btRigidBodyS1_RK11btTransformS4_b(%class.btHingeConstraint* %100, %class.btRigidBody* %101, %class.btRigidBody* %102, %class.btTransform* %localA, %class.btTransform* %localB, i1 zeroext false)
           to label %invoke.cont259 unwind label %lpad258
 
-invoke.cont259:                                   ; preds = %for.end
+invoke.cont259:                                   
   store %class.btHingeConstraint* %100, %class.btHingeConstraint** %hingeC, align 4
   %103 = load %class.btHingeConstraint*, %class.btHingeConstraint** %hingeC, align 4
   call void @_ZN17btHingeConstraint8setLimitEfffff(%class.btHingeConstraint* %103, float 0xBFE921FB60000000, float 0x3FF921FB60000000, float 0x3FECCCCCC0000000, float 0x3FD3333340000000, float 1.000000e+00)
@@ -857,7 +857,7 @@ invoke.cont259:                                   ; preds = %for.end
   %call286 = invoke %class.btConeTwistConstraint* @_ZN21btConeTwistConstraintC1ER11btRigidBodyS1_RK11btTransformS4_(%class.btConeTwistConstraint* %110, %class.btRigidBody* %111, %class.btRigidBody* %112, %class.btTransform* %localA, %class.btTransform* %localB)
           to label %invoke.cont285 unwind label %lpad284
 
-invoke.cont285:                                   ; preds = %invoke.cont259
+invoke.cont285:                                   
   store %class.btConeTwistConstraint* %110, %class.btConeTwistConstraint** %coneC, align 4
   %113 = load %class.btConeTwistConstraint*, %class.btConeTwistConstraint** %coneC, align 4
   call void @_ZN21btConeTwistConstraint8setLimitEffffff(%class.btConeTwistConstraint* %113, float 0x3FE921FB60000000, float 0x3FE921FB60000000, float 0x3FF921FB60000000, float 1.000000e+00, float 0x3FD3333340000000, float 1.000000e+00)
@@ -905,7 +905,7 @@ invoke.cont285:                                   ; preds = %invoke.cont259
   %call315 = invoke %class.btConeTwistConstraint* @_ZN21btConeTwistConstraintC1ER11btRigidBodyS1_RK11btTransformS4_(%class.btConeTwistConstraint* %120, %class.btRigidBody* %121, %class.btRigidBody* %122, %class.btTransform* %localA, %class.btTransform* %localB)
           to label %invoke.cont314 unwind label %lpad313
 
-invoke.cont314:                                   ; preds = %invoke.cont285
+invoke.cont314:                                   
   store %class.btConeTwistConstraint* %120, %class.btConeTwistConstraint** %coneC, align 4
   %123 = load %class.btConeTwistConstraint*, %class.btConeTwistConstraint** %coneC, align 4
   call void @_ZN21btConeTwistConstraint8setLimitEffffff(%class.btConeTwistConstraint* %123, float 0x3FE921FB60000000, float 0x3FE921FB60000000, float 0.000000e+00, float 1.000000e+00, float 0x3FD3333340000000, float 1.000000e+00)
@@ -953,7 +953,7 @@ invoke.cont314:                                   ; preds = %invoke.cont285
   %call344 = invoke %class.btHingeConstraint* @_ZN17btHingeConstraintC1ER11btRigidBodyS1_RK11btTransformS4_b(%class.btHingeConstraint* %130, %class.btRigidBody* %131, %class.btRigidBody* %132, %class.btTransform* %localA, %class.btTransform* %localB, i1 zeroext false)
           to label %invoke.cont343 unwind label %lpad342
 
-invoke.cont343:                                   ; preds = %invoke.cont314
+invoke.cont343:                                   
   store %class.btHingeConstraint* %130, %class.btHingeConstraint** %hingeC, align 4
   %133 = load %class.btHingeConstraint*, %class.btHingeConstraint** %hingeC, align 4
   call void @_ZN17btHingeConstraint8setLimitEfffff(%class.btHingeConstraint* %133, float 0.000000e+00, float 0x3FF921FB60000000, float 0x3FECCCCCC0000000, float 0x3FD3333340000000, float 1.000000e+00)
@@ -1001,7 +1001,7 @@ invoke.cont343:                                   ; preds = %invoke.cont314
   %call373 = invoke %class.btConeTwistConstraint* @_ZN21btConeTwistConstraintC1ER11btRigidBodyS1_RK11btTransformS4_(%class.btConeTwistConstraint* %140, %class.btRigidBody* %141, %class.btRigidBody* %142, %class.btTransform* %localA, %class.btTransform* %localB)
           to label %invoke.cont372 unwind label %lpad371
 
-invoke.cont372:                                   ; preds = %invoke.cont343
+invoke.cont372:                                   
   store %class.btConeTwistConstraint* %140, %class.btConeTwistConstraint** %coneC, align 4
   %143 = load %class.btConeTwistConstraint*, %class.btConeTwistConstraint** %coneC, align 4
   call void @_ZN21btConeTwistConstraint8setLimitEffffff(%class.btConeTwistConstraint* %143, float 0x3FE921FB60000000, float 0x3FE921FB60000000, float 0.000000e+00, float 1.000000e+00, float 0x3FD3333340000000, float 1.000000e+00)
@@ -1049,7 +1049,7 @@ invoke.cont372:                                   ; preds = %invoke.cont343
   %call402 = invoke %class.btHingeConstraint* @_ZN17btHingeConstraintC1ER11btRigidBodyS1_RK11btTransformS4_b(%class.btHingeConstraint* %150, %class.btRigidBody* %151, %class.btRigidBody* %152, %class.btTransform* %localA, %class.btTransform* %localB, i1 zeroext false)
           to label %invoke.cont401 unwind label %lpad400
 
-invoke.cont401:                                   ; preds = %invoke.cont372
+invoke.cont401:                                   
   store %class.btHingeConstraint* %150, %class.btHingeConstraint** %hingeC, align 4
   %153 = load %class.btHingeConstraint*, %class.btHingeConstraint** %hingeC, align 4
   call void @_ZN17btHingeConstraint8setLimitEfffff(%class.btHingeConstraint* %153, float 0.000000e+00, float 0x3FF921FB60000000, float 0x3FECCCCCC0000000, float 0x3FD3333340000000, float 1.000000e+00)
@@ -1097,7 +1097,7 @@ invoke.cont401:                                   ; preds = %invoke.cont372
   %call431 = invoke %class.btConeTwistConstraint* @_ZN21btConeTwistConstraintC1ER11btRigidBodyS1_RK11btTransformS4_(%class.btConeTwistConstraint* %160, %class.btRigidBody* %161, %class.btRigidBody* %162, %class.btTransform* %localA, %class.btTransform* %localB)
           to label %invoke.cont430 unwind label %lpad429
 
-invoke.cont430:                                   ; preds = %invoke.cont401
+invoke.cont430:                                   
   store %class.btConeTwistConstraint* %160, %class.btConeTwistConstraint** %coneC, align 4
   %163 = load %class.btConeTwistConstraint*, %class.btConeTwistConstraint** %coneC, align 4
   call void @_ZN21btConeTwistConstraint8setLimitEffffff(%class.btConeTwistConstraint* %163, float 0x3FF921FB60000000, float 0x3FF921FB60000000, float 0.000000e+00, float 1.000000e+00, float 0x3FD3333340000000, float 1.000000e+00)
@@ -1145,7 +1145,7 @@ invoke.cont430:                                   ; preds = %invoke.cont401
   %call460 = invoke %class.btHingeConstraint* @_ZN17btHingeConstraintC1ER11btRigidBodyS1_RK11btTransformS4_b(%class.btHingeConstraint* %170, %class.btRigidBody* %171, %class.btRigidBody* %172, %class.btTransform* %localA, %class.btTransform* %localB, i1 zeroext false)
           to label %invoke.cont459 unwind label %lpad458
 
-invoke.cont459:                                   ; preds = %invoke.cont430
+invoke.cont459:                                   
   store %class.btHingeConstraint* %170, %class.btHingeConstraint** %hingeC, align 4
   %173 = load %class.btHingeConstraint*, %class.btHingeConstraint** %hingeC, align 4
   call void @_ZN17btHingeConstraint8setLimitEfffff(%class.btHingeConstraint* %173, float 0xBFF921FB60000000, float 0.000000e+00, float 0x3FECCCCCC0000000, float 0x3FD3333340000000, float 1.000000e+00)
@@ -1193,7 +1193,7 @@ invoke.cont459:                                   ; preds = %invoke.cont430
   %call489 = invoke %class.btConeTwistConstraint* @_ZN21btConeTwistConstraintC1ER11btRigidBodyS1_RK11btTransformS4_(%class.btConeTwistConstraint* %180, %class.btRigidBody* %181, %class.btRigidBody* %182, %class.btTransform* %localA, %class.btTransform* %localB)
           to label %invoke.cont488 unwind label %lpad487
 
-invoke.cont488:                                   ; preds = %invoke.cont459
+invoke.cont488:                                   
   store %class.btConeTwistConstraint* %180, %class.btConeTwistConstraint** %coneC, align 4
   %183 = load %class.btConeTwistConstraint*, %class.btConeTwistConstraint** %coneC, align 4
   call void @_ZN21btConeTwistConstraint8setLimitEffffff(%class.btConeTwistConstraint* %183, float 0x3FF921FB60000000, float 0x3FF921FB60000000, float 0.000000e+00, float 1.000000e+00, float 0x3FD3333340000000, float 1.000000e+00)
@@ -1241,7 +1241,7 @@ invoke.cont488:                                   ; preds = %invoke.cont459
   %call518 = invoke %class.btHingeConstraint* @_ZN17btHingeConstraintC1ER11btRigidBodyS1_RK11btTransformS4_b(%class.btHingeConstraint* %190, %class.btRigidBody* %191, %class.btRigidBody* %192, %class.btTransform* %localA, %class.btTransform* %localB, i1 zeroext false)
           to label %invoke.cont517 unwind label %lpad516
 
-invoke.cont517:                                   ; preds = %invoke.cont488
+invoke.cont517:                                   
   store %class.btHingeConstraint* %190, %class.btHingeConstraint** %hingeC, align 4
   %193 = load %class.btHingeConstraint*, %class.btHingeConstraint** %hingeC, align 4
   call void @_ZN17btHingeConstraint8setLimitEfffff(%class.btHingeConstraint* %193, float 0xBFF921FB60000000, float 0.000000e+00, float 0x3FECCCCCC0000000, float 0x3FD3333340000000, float 1.000000e+00)
@@ -1263,7 +1263,7 @@ invoke.cont517:                                   ; preds = %invoke.cont488
   %200 = load %class.RagDoll*, %class.RagDoll** %retval
   ret %class.RagDoll* %200
 
-lpad258:                                          ; preds = %for.end
+lpad258:                                          
   %201 = landingpad { i8*, i32 }
           cleanup
   %202 = extractvalue { i8*, i32 } %201, 0
@@ -1273,7 +1273,7 @@ lpad258:                                          ; preds = %for.end
   call void @_ZdlPv(i8* %call253) nounwind
   br label %eh.resume
 
-lpad284:                                          ; preds = %invoke.cont259
+lpad284:                                          
   %204 = landingpad { i8*, i32 }
           cleanup
   %205 = extractvalue { i8*, i32 } %204, 0
@@ -1283,7 +1283,7 @@ lpad284:                                          ; preds = %invoke.cont259
   call void @_ZdlPv(i8* %call279) nounwind
   br label %eh.resume
 
-lpad313:                                          ; preds = %invoke.cont285
+lpad313:                                          
   %207 = landingpad { i8*, i32 }
           cleanup
   %208 = extractvalue { i8*, i32 } %207, 0
@@ -1293,7 +1293,7 @@ lpad313:                                          ; preds = %invoke.cont285
   call void @_ZdlPv(i8* %call308) nounwind
   br label %eh.resume
 
-lpad342:                                          ; preds = %invoke.cont314
+lpad342:                                          
   %210 = landingpad { i8*, i32 }
           cleanup
   %211 = extractvalue { i8*, i32 } %210, 0
@@ -1303,7 +1303,7 @@ lpad342:                                          ; preds = %invoke.cont314
   call void @_ZdlPv(i8* %call337) nounwind
   br label %eh.resume
 
-lpad371:                                          ; preds = %invoke.cont343
+lpad371:                                          
   %213 = landingpad { i8*, i32 }
           cleanup
   %214 = extractvalue { i8*, i32 } %213, 0
@@ -1313,7 +1313,7 @@ lpad371:                                          ; preds = %invoke.cont343
   call void @_ZdlPv(i8* %call366) nounwind
   br label %eh.resume
 
-lpad400:                                          ; preds = %invoke.cont372
+lpad400:                                          
   %216 = landingpad { i8*, i32 }
           cleanup
   %217 = extractvalue { i8*, i32 } %216, 0
@@ -1323,7 +1323,7 @@ lpad400:                                          ; preds = %invoke.cont372
   call void @_ZdlPv(i8* %call395) nounwind
   br label %eh.resume
 
-lpad429:                                          ; preds = %invoke.cont401
+lpad429:                                          
   %219 = landingpad { i8*, i32 }
           cleanup
   %220 = extractvalue { i8*, i32 } %219, 0
@@ -1333,7 +1333,7 @@ lpad429:                                          ; preds = %invoke.cont401
   call void @_ZdlPv(i8* %call424) nounwind
   br label %eh.resume
 
-lpad458:                                          ; preds = %invoke.cont430
+lpad458:                                          
   %222 = landingpad { i8*, i32 }
           cleanup
   %223 = extractvalue { i8*, i32 } %222, 0
@@ -1343,7 +1343,7 @@ lpad458:                                          ; preds = %invoke.cont430
   call void @_ZdlPv(i8* %call453) nounwind
   br label %eh.resume
 
-lpad487:                                          ; preds = %invoke.cont459
+lpad487:                                          
   %225 = landingpad { i8*, i32 }
           cleanup
   %226 = extractvalue { i8*, i32 } %225, 0
@@ -1353,7 +1353,7 @@ lpad487:                                          ; preds = %invoke.cont459
   call void @_ZdlPv(i8* %call482) nounwind
   br label %eh.resume
 
-lpad516:                                          ; preds = %invoke.cont488
+lpad516:                                          
   %228 = landingpad { i8*, i32 }
           cleanup
   %229 = extractvalue { i8*, i32 } %228, 0
@@ -1363,14 +1363,14 @@ lpad516:                                          ; preds = %invoke.cont488
   call void @_ZdlPv(i8* %call511) nounwind
   br label %eh.resume
 
-eh.resume:                                        ; preds = %lpad516, %lpad487, %lpad458, %lpad429, %lpad400, %lpad371, %lpad342, %lpad313, %lpad284, %lpad258, %invoke.cont92, %invoke.cont83, %invoke.cont74, %invoke.cont65, %invoke.cont56, %invoke.cont47, %invoke.cont38, %invoke.cont29, %invoke.cont20, %invoke.cont11, %invoke.cont4
+eh.resume:                                        
   %exn = load i8*, i8** %exn.slot
   %sel = load i32, i32* %ehselector.slot
   %lpad.val = insertvalue { i8*, i32 } undef, i8* %exn, 0
   %lpad.val526 = insertvalue { i8*, i32 } %lpad.val, i32 %sel, 1
   resume { i8*, i32 } %lpad.val526
 
-terminate.lpad:                                   ; preds = %lpad89, %lpad80, %lpad71, %lpad62, %lpad53, %lpad44, %lpad35, %lpad26, %lpad17, %lpad8, %lpad
+terminate.lpad:                                   
   %231 = landingpad { i8*, i32 }
           catch i8* null
   call void @_ZSt9terminatev() noreturn nounwind

@@ -1,4 +1,4 @@
-; RUN: llc < %s -march=x86
+
 target datalayout = "e-p:32:32"
 target triple = "i686-apple-darwin8"
 	%struct.CUMULATIVE_ARGS = type { i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32 }
@@ -100,32 +100,32 @@ target triple = "i686-apple-darwin8"
 	%struct.varray_data = type { [1 x i64] }
 	%struct.varray_head_tag = type { i32, i32, i32, i8*, %struct.varray_data }
 	%struct.vuse_optype_d = type { i32, [1 x %struct.tree_node*] }
-@basic_block_info = external global %struct.varray_head_tag*		; <%struct.varray_head_tag**> [#uses=1]
+@basic_block_info = external global %struct.varray_head_tag*		
 
 define void @calculate_live_on_entry_cond_true3632(%struct.varray_head_tag* %stack3023.6, i32* %tmp3629, %struct.VEC_edge*** %tmp3397.out) {
 newFuncRoot:
 	br label %cond_true3632
 
-bb3502.exitStub:		; preds = %cond_true3632
+bb3502.exitStub:		
 	store %struct.VEC_edge** %tmp3397, %struct.VEC_edge*** %tmp3397.out
 	ret void
 
-cond_true3632:		; preds = %newFuncRoot
-	%tmp3378 = load i32, i32* %tmp3629		; <i32> [#uses=1]
-	%tmp3379 = add i32 %tmp3378, -1		; <i32> [#uses=1]
-	%tmp3381 = getelementptr %struct.varray_head_tag, %struct.varray_head_tag* %stack3023.6, i32 0, i32 4		; <%struct.varray_data*> [#uses=1]
-	%tmp3382 = bitcast %struct.varray_data* %tmp3381 to [1 x i32]*		; <[1 x i32]*> [#uses=1]
-	%gep.upgrd.1 = zext i32 %tmp3379 to i64		; <i64> [#uses=1]
-	%tmp3383 = getelementptr [1 x i32], [1 x i32]* %tmp3382, i32 0, i64 %gep.upgrd.1		; <i32*> [#uses=1]
-	%tmp3384 = load i32, i32* %tmp3383		; <i32> [#uses=1]
-	%tmp3387 = load i32, i32* %tmp3629		; <i32> [#uses=1]
-	%tmp3388 = add i32 %tmp3387, -1		; <i32> [#uses=1]
+cond_true3632:		
+	%tmp3378 = load i32, i32* %tmp3629		
+	%tmp3379 = add i32 %tmp3378, -1		
+	%tmp3381 = getelementptr %struct.varray_head_tag, %struct.varray_head_tag* %stack3023.6, i32 0, i32 4		
+	%tmp3382 = bitcast %struct.varray_data* %tmp3381 to [1 x i32]*		
+	%gep.upgrd.1 = zext i32 %tmp3379 to i64		
+	%tmp3383 = getelementptr [1 x i32], [1 x i32]* %tmp3382, i32 0, i64 %gep.upgrd.1		
+	%tmp3384 = load i32, i32* %tmp3383		
+	%tmp3387 = load i32, i32* %tmp3629		
+	%tmp3388 = add i32 %tmp3387, -1		
 	store i32 %tmp3388, i32* %tmp3629
-	%tmp3391 = load %struct.varray_head_tag*, %struct.varray_head_tag** @basic_block_info		; <%struct.varray_head_tag*> [#uses=1]
-	%tmp3393 = getelementptr %struct.varray_head_tag, %struct.varray_head_tag* %tmp3391, i32 0, i32 4		; <%struct.varray_data*> [#uses=1]
-	%tmp3394 = bitcast %struct.varray_data* %tmp3393 to [1 x %struct.basic_block_def*]*		; <[1 x %struct.basic_block_def*]*> [#uses=1]
-	%tmp3395 = getelementptr [1 x %struct.basic_block_def*], [1 x %struct.basic_block_def*]* %tmp3394, i32 0, i32 %tmp3384		; <%struct.basic_block_def**> [#uses=1]
-	%tmp3396 = load %struct.basic_block_def*, %struct.basic_block_def** %tmp3395		; <%struct.basic_block_def*> [#uses=1]
-	%tmp3397 = getelementptr %struct.basic_block_def, %struct.basic_block_def* %tmp3396, i32 0, i32 3		; <%struct.VEC_edge**> [#uses=1]
+	%tmp3391 = load %struct.varray_head_tag*, %struct.varray_head_tag** @basic_block_info		
+	%tmp3393 = getelementptr %struct.varray_head_tag, %struct.varray_head_tag* %tmp3391, i32 0, i32 4		
+	%tmp3394 = bitcast %struct.varray_data* %tmp3393 to [1 x %struct.basic_block_def*]*		
+	%tmp3395 = getelementptr [1 x %struct.basic_block_def*], [1 x %struct.basic_block_def*]* %tmp3394, i32 0, i32 %tmp3384		
+	%tmp3396 = load %struct.basic_block_def*, %struct.basic_block_def** %tmp3395		
+	%tmp3397 = getelementptr %struct.basic_block_def, %struct.basic_block_def* %tmp3396, i32 0, i32 3		
 	br label %bb3502.exitStub
 }

@@ -1,5 +1,5 @@
-; RUN: llc -verify-machineinstrs < %s
-; <rdar://problem/10270968>
+
+
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.7.2"
 
@@ -28,7 +28,7 @@ entry:
   %cmp = icmp eq i32 %4, 1317
   br i1 %cmp, label %if.then, label %lor.lhs.false
 
-lor.lhs.false:                                    ; preds = %entry
+lor.lhs.false:                                    
   %idxprom1 = sext i32 %4 to i64
   %arrayidx2 = getelementptr inbounds [0 x %struct.insn_data], [0 x %struct.insn_data]* @insn_data, i32 0, i64 %idxprom1
   %operand = getelementptr inbounds %struct.insn_data, %struct.insn_data* %arrayidx2, i32 0, i32 3
@@ -50,7 +50,7 @@ lor.lhs.false:                                    ; preds = %entry
   %tobool = icmp ne i32 %call, 0
   br i1 %tobool, label %lor.lhs.false9, label %if.then
 
-lor.lhs.false9:                                   ; preds = %lor.lhs.false
+lor.lhs.false9:                                   
   %idxprom10 = sext i32 %4 to i64
   %arrayidx11 = getelementptr inbounds [0 x %struct.insn_data], [0 x %struct.insn_data]* @insn_data, i32 0, i64 %idxprom10
   %operand12 = getelementptr inbounds %struct.insn_data, %struct.insn_data* %arrayidx11, i32 0, i32 3
@@ -72,7 +72,7 @@ lor.lhs.false9:                                   ; preds = %lor.lhs.false
   %tobool22 = icmp ne i32 %call21, 0
   br i1 %tobool22, label %lor.lhs.false23, label %if.then
 
-lor.lhs.false23:                                  ; preds = %lor.lhs.false9
+lor.lhs.false23:                                  
   %idxprom24 = sext i32 %4 to i64
   %arrayidx25 = getelementptr inbounds [0 x %struct.insn_data], [0 x %struct.insn_data]* @insn_data, i32 0, i64 %idxprom24
   %operand26 = getelementptr inbounds %struct.insn_data, %struct.insn_data* %arrayidx25, i32 0, i32 3
@@ -94,10 +94,10 @@ lor.lhs.false23:                                  ; preds = %lor.lhs.false9
   %tobool36 = icmp ne i32 %call35, 0
   br i1 %tobool36, label %if.end, label %if.then
 
-if.then:                                          ; preds = %lor.lhs.false23, %lor.lhs.false9, %lor.lhs.false, %entry
+if.then:                                          
   br label %return
 
-if.end:                                           ; preds = %lor.lhs.false23
+if.end:                                           
   %idxprom37 = sext i32 %4 to i64
   %arrayidx38 = getelementptr inbounds [0 x %struct.insn_data], [0 x %struct.insn_data]* @insn_data, i32 0, i64 %idxprom37
   %genfun = getelementptr inbounds %struct.insn_data, %struct.insn_data* %arrayidx38, i32 0, i32 2
@@ -105,7 +105,7 @@ if.end:                                           ; preds = %lor.lhs.false23
   %call39 = tail call %struct.rtx_def* (%struct.rtx_def*, ...) %23(%struct.rtx_def* %r0, %struct.rtx_def* %r1, %struct.rtx_def* %c)
   br label %return
 
-return:                                           ; preds = %if.end, %if.then
+return:                                           
   %24 = phi %struct.rtx_def* [ %call39, %if.end ], [ null, %if.then ]
   ret %struct.rtx_def* %24
 }

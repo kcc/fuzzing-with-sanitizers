@@ -1,9 +1,9 @@
-; RUN: llc < %s -march=mips -mcpu=mips32 | FileCheck %s
-; RUN: llc < %s -march=mips -mcpu=mips32r3 -mattr=+micromips | FileCheck %s
-; RUN: llc < %s -march=mips -mcpu=mips16 | FileCheck %s
 
-; Verify that we emit the .insn directive for zero-sized (empty) basic blocks.
-; This only really matters for microMIPS and MIPS16.
+
+
+
+
+
 
 declare i32 @foo(...)
 declare void @bar()
@@ -14,8 +14,8 @@ entry:
           to label %unreachable unwind label %return
 
 unreachable:
-; CHECK:          ${{.*}}: # %unreachable
-; CHECK-NEXT:         .insn
+
+
   unreachable
 
 return:

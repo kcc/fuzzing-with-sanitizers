@@ -1,8 +1,8 @@
-; RUN: llc -mtriple=arm64-none-linux-gnu -mattr=-neon < %s
 
-; The DAG combiner decided to use a vector load/store for this struct copy
-; previously. This probably shouldn't happen without NEON, but the most
-; important thing is that it compiles.
+
+
+
+
 
 define void @store_combine() nounwind {
   %src = alloca { double, double }, align 8

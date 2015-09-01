@@ -1,9 +1,9 @@
-; RUN: opt < %s -loop-reduce -S | FileCheck %s
+
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.9.0"
 
-; LSR shouldn't reuse IV if the resultant offset is not valid for the operand type.
-; CHECK-NOT: trunc i32 %.ph to i8
+
+
 
 %struct.anon = type { i32, i32, i32 }
 
@@ -17,7 +17,7 @@ target triple = "x86_64-apple-macosx10.9.0"
 @g = common global i32 0, align 4
 @h = common global i32 0, align 4
 
-; Function Attrs: nounwind optsize ssp uwtable
+
 define i32 @main() #0 {
 entry:
   %0 = load i32, i32* getelementptr inbounds (%struct.anon, %struct.anon* @a, i64 0, i32 0), align 4, !tbaa !1
@@ -26,29 +26,29 @@ entry:
   %f.promoted.i = load i32, i32* @f, align 4, !tbaa !7
   br label %for.body6.i.outer
 
-for.body6.i.outer:                                ; preds = %entry, %lor.end.i
+for.body6.i.outer:                                
   %.ph = phi i32 [ %add.i, %lor.end.i ], [ 0, %entry ]
   %or1512.i.ph = phi i32 [ %or15.i, %lor.end.i ], [ %f.promoted.i, %entry ]
   %or1410.i.ph = phi i32 [ %or14.i, %lor.end.i ], [ %.promoted.i, %entry ]
   %p.addr.16.i.ph = phi i8 [ %inc10.i, %lor.end.i ], [ -128, %entry ]
   br i1 %tobool7.i, label %if.end9.i, label %lbl.loopexit.i
 
-lbl.loopexit.i:                                   ; preds = %for.body6.i.outer, %lbl.loopexit.i
+lbl.loopexit.i:                                   
   br label %lbl.loopexit.i
 
-if.end9.i:                                        ; preds = %for.body6.i.outer
+if.end9.i:                                        
   %inc10.i = add i8 %p.addr.16.i.ph, 1
   %tobool12.i = icmp eq i8 %p.addr.16.i.ph, 0
   br i1 %tobool12.i, label %lor.rhs.i, label %lor.end.i
 
-lor.rhs.i:                                        ; preds = %if.end9.i
+lor.rhs.i:                                        
   %1 = load i32, i32* @b, align 4, !tbaa !7
   %dec.i = add nsw i32 %1, -1
   store i32 %dec.i, i32* @b, align 4, !tbaa !7
   %tobool13.i = icmp ne i32 %1, 0
   br label %lor.end.i
 
-lor.end.i:                                        ; preds = %lor.rhs.i, %if.end9.i
+lor.end.i:                                        
   %2 = phi i1 [ true, %if.end9.i ], [ %tobool13.i, %lor.rhs.i ]
   %lor.ext.i = zext i1 %2 to i32
   %or14.i = or i32 %lor.ext.i, %or1410.i.ph
@@ -57,7 +57,7 @@ lor.end.i:                                        ; preds = %lor.rhs.i, %if.end9
   %cmp.i = icmp slt i32 %add.i, 21
   br i1 %cmp.i, label %for.body6.i.outer, label %fn1.exit
 
-fn1.exit:                                         ; preds = %lor.end.i
+fn1.exit:                                         
   store i32 0, i32* @g, align 4, !tbaa !7
   store i32 %or14.i, i32* getelementptr inbounds (%struct.anon, %struct.anon* @a, i64 0, i32 2), align 4, !tbaa !6
   store i32 %or15.i, i32* @f, align 4, !tbaa !7
@@ -68,7 +68,7 @@ fn1.exit:                                         ; preds = %lor.end.i
   ret i32 0
 }
 
-; Function Attrs: nounwind optsize
+
 declare i32 @printf(i8* nocapture readonly, ...) #1
 
 attributes #0 = { nounwind optsize ssp uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

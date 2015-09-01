@@ -1,11 +1,11 @@
-; ModuleID = '/Volumes/Data/apple-internal/llvm/tools/clang/test/Modules/debug-info-moduleimport.m'
-; RUN: llc %s -o %t -filetype=obj
-; RUN: llvm-dwarfdump -debug-dump=info %t | FileCheck %s
-; CHECK: DW_TAG_module
-; CHECK-NEXT: DW_AT_name {{.*}}"DebugModule"
-; CHECK-NEXT: DW_AT_LLVM_config_macros {{.*}}"-DMODULES=0"
-; CHECK-NEXT: DW_AT_LLVM_include_path {{.*}}"/llvm/tools/clang/test/Modules/Inputs"
-; CHECK-NEXT: DW_AT_LLVM_isysroot {{.*}}"/"
+
+
+
+
+
+
+
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx"

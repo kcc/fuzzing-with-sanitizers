@@ -1,4 +1,4 @@
-; RUN: opt < %s -loop-extract -disable-output
+
 
 declare i32 @_IO_getc()
 
@@ -92,53 +92,53 @@ entry:
 		 i32 -1, label %label.10
 	]
 
-label.10:		; preds = %entry
+label.10:		
 	ret void
 
-label.11:		; preds = %entry
+label.11:		
 	ret void
 
-label.12:		; preds = %entry
+label.12:		
 	ret void
 
-label.13:		; preds = %entry
+label.13:		
 	ret void
 
-letter:		; preds = %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry
+letter:		
 	ret void
 
-loopexit.2:		; preds = %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry
+loopexit.2:		
 	switch i32 0, label %shortcirc_next.14 [
 		 i32 48, label %then.20
 		 i32 46, label %endif.38
 	]
 
-then.20:		; preds = %loopexit.2
+then.20:		
 	switch i32 0, label %else.4 [
 		 i32 120, label %then.21
 		 i32 88, label %then.21
 	]
 
-then.21:		; preds = %then.20, %then.20
+then.21:		
 	ret void
 
-else.4:		; preds = %then.20
+else.4:		
 	ret void
 
-shortcirc_next.14:		; preds = %loopexit.2
+shortcirc_next.14:		
 	ret void
 
-endif.38:		; preds = %loopexit.2
+endif.38:		
 	br i1 false, label %then.40, label %then.39
 
-then.39:		; preds = %endif.38
+then.39:		
 	ret void
 
-then.40:		; preds = %endif.38
+then.40:		
 	invoke void @__errno_location( )
 			to label %switchexit.2 unwind label %LongJmpBlkPre
 
-loopentry.6:		; preds = %endif.52
+loopentry.6:		
 	switch i32 0, label %switchexit.2 [
 		 i32 73, label %label.82
 		 i32 105, label %label.82
@@ -148,48 +148,48 @@ loopentry.6:		; preds = %endif.52
 		 i32 102, label %label.78
 	]
 
-label.78:		; preds = %loopentry.6, %loopentry.6
+label.78:		
 	ret void
 
-label.80:		; preds = %loopentry.6, %loopentry.6
+label.80:		
 	ret void
 
-label.82:		; preds = %loopentry.6, %loopentry.6
-	%c.0.15.5 = phi i32 [ %tmp.79417, %loopentry.6 ], [ %tmp.79417, %loopentry.6 ]		; <i32> [#uses=0]
+label.82:		
+	%c.0.15.5 = phi i32 [ %tmp.79417, %loopentry.6 ], [ %tmp.79417, %loopentry.6 ]		
 	ret void
 
-switchexit.2:		; preds = %loopentry.6, %then.40
+switchexit.2:		
 	br i1 false, label %endif.51, label %loopexit.6
 
-endif.51:		; preds = %switchexit.2
+endif.51:		
 	br i1 false, label %endif.52, label %then.52
 
-then.52:		; preds = %endif.51
+then.52:		
 	ret void
 
-endif.52:		; preds = %endif.51
+endif.52:		
 	%tmp.79417 = invoke i32 @_IO_getc( )
-			to label %loopentry.6 unwind label %LongJmpBlkPre		; <i32> [#uses=2]
+			to label %loopentry.6 unwind label %LongJmpBlkPre		
 
-loopexit.6:		; preds = %switchexit.2
+loopexit.6:		
 	ret void
 
-char_constant:		; preds = %entry
+char_constant:		
 	ret void
 
-string_constant:		; preds = %entry
+string_constant:		
 	ret void
 
-combine:		; preds = %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry
+combine:		
 	ret void
 
-label.126:		; preds = %entry
+label.126:		
 	ret void
 
-return:		; preds = %entry
+return:		
 	ret void
 
-LongJmpBlkPre:		; preds = %endif.52, %then.40
+LongJmpBlkPre:		
         %exn = landingpad { i8*, i32 }
                  catch i8* null
 	ret void

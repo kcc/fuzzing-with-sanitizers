@@ -1,7 +1,7 @@
-; RUN: llc -march=mipsel -mcpu=mips32r2 -mattr=+micromips \
-; RUN:   -relocation-model=static -O2 < %s | FileCheck %s
 
-; Function Attrs: nounwind
+
+
+
 define i32 @foo(i32 signext %a) #0 {
 entry:
   %a.addr = alloca i32, align 4
@@ -14,5 +14,5 @@ entry:
 
 declare i32 @bar(i32 signext) #1
 
-; CHECK:      jals
-; CHECK-NEXT: sll16
+
+

@@ -1,4 +1,4 @@
-; RUN: %lli %s > /dev/null
+
 
 define i32 @main() {
     %int1 = add <3 x i32> <i32 0, i32 0, i32 0>, <i32 0, i32 0, i32 0>

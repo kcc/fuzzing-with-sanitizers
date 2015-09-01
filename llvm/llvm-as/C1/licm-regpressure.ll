@@ -1,10 +1,10 @@
-; RUN: llc < %s -mtriple=x86_64-linux | FileCheck %s
-; This tests currently fails as MachineLICM does not compute register pressure
-; correctly. More details: llvm.org/PR23143
-; XFAIL: *
 
-; MachineLICM should take register pressure into account.
-; CHECK-NOT: Spill
+
+
+
+
+
+
 
 %struct.A = type { i32, i32, i32, i32, i32, i32, i32 }
 

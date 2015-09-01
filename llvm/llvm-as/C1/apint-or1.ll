@@ -1,8 +1,8 @@
-; This test makes sure that or instructions are properly eliminated.
-; This test is for Integer BitWidth <= 64 && BitWidth % 2 != 0.
-;
 
-; RUN: opt < %s -instcombine -S | not grep or
+
+
+
+
 
 
 define i7 @test0(i7 %X) {
@@ -16,17 +16,17 @@ define i17 @test1(i17 %X) {
 } 
 
 define i23 @test2(i23 %A) {
-    ;; A | ~A == -1
+    
     %NotA = xor i23 -1, %A
     %B = or i23 %A, %NotA
     ret i23 %B
 }
 
 define i39 @test3(i39 %V, i39 %M) {
-    ;; If we have: ((V + N) & C1) | (V & C2)
-    ;; .. and C2 = ~C1 and C2 is 0+1+ and (N & C2) == 0
-    ;; replace with V+N.
-    %C1 = xor i39 274877906943, -1 ;; C2 = 274877906943
+    
+    
+    
+    %C1 = xor i39 274877906943, -1 
     %N = and i39 %M, 274877906944
     %A = add i39 %V, %N
     %B = and i39 %A, %C1

@@ -1,8 +1,8 @@
-; RUN: llc < %s -mtriple=arm64-apple-ios -verify-machineinstrs | FileCheck %s
 
-; LdStOpt bug created illegal instruction:
-;   %D1<def>, %D2<def> = LDPSi %X0, 1
-; rdar://11512047
+
+
+
+
 
 %0 = type opaque
 %struct.CGRect = type { %struct.CGPoint, %struct.CGSize }
@@ -13,8 +13,8 @@
 
 define hidden %struct.CGRect @t(%0* nocapture %self, i8* nocapture %_cmd) nounwind readonly optsize ssp {
 entry:
-; CHECK-LABEL: t:
-; CHECK: ldp d{{[0-9]+}}, d{{[0-9]+}}
+
+
   %ivar = load i64, i64* @"OBJC_IVAR_$_UIScreen._bounds", align 8, !invariant.load !4
   %0 = bitcast %0* %self to i8*
   %add.ptr = getelementptr inbounds i8, i8* %0, i64 %ivar

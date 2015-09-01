@@ -1,12 +1,12 @@
-; RUN: llvm-as < %s -disable-output 2>&1 | FileCheck %s -allow-empty
-; CHECK-NOT: error
-; CHECK-NOT: warning
-; RUN: verify-uselistorder < %s
+
+
+
+
 
 @a = global [4 x i1] [i1 0, i1 1, i1 0, i1 1]
 @b = alias i1* getelementptr ([4 x i1], [4 x i1]* @a, i64 0, i64 2)
 
-; Check use-list order of constants used by globals.
+
 @glob1 = global i5 7
 @glob2 = global i5 7
 @glob3 = global i5 7
@@ -15,7 +15,7 @@ define i32 @f32(i32 %a, i32 %b, i32 %c, i32 %d) {
 entry:
   br label %first
 
-; <label 0>:
+
   %eh = mul i32 %e, %1
   %sum = add i32 %eh, %ef
   br label %preexit
@@ -38,7 +38,7 @@ first:
   %goto0 = icmp slt i32 %g1, -9
   br i1 %goto0, label %0, label %preexit
 
-; uselistorder directives
+
   uselistorder i32 7, { 1, 0 }
   uselistorder i32 %1, { 1, 0 }
   uselistorder i32 %e, { 1, 0 }

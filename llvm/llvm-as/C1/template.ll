@@ -1,62 +1,62 @@
-; REQUIRES: object-emission
 
-; RUN: llc -mtriple=x86_64-linux -O0 -filetype=obj < %s | llvm-dwarfdump -debug-dump=info - | FileCheck %s
 
-; IR generated with `clang++ -g -emit-llvm -S` from the following code:
-; template<int x, int*, template<typename> class y, decltype(nullptr) n, int ...z>  int func() { return 3; }
-; template<typename> struct y_impl { struct nested { }; };
-; int glbl = func<3, &glbl, y_impl, nullptr, 1, 2>();
-; y_impl<int>::nested n;
 
-; CHECK: [[INT:0x[0-9a-f]*]]:{{ *}}DW_TAG_base_type
-; CHECK-NEXT: DW_AT_name{{.*}} = "int"
 
-; CHECK: DW_TAG_structure_type
-; CHECK-NEXT: DW_AT_name{{.*}}"y_impl<int>"
-; CHECK-NOT: NULL
-; CHECK: DW_TAG_template_type_parameter
 
-; CHECK: DW_AT_name{{.*}}"func<3, &glbl, y_impl, nullptr, 1, 2>"
-; CHECK-NOT: NULL
-; CHECK: DW_TAG_template_value_parameter
-; CHECK-NEXT: DW_AT_type{{.*}}=> {[[INT]]}
-; CHECK-NEXT: DW_AT_name{{.*}}= "x"
-; CHECK-NEXT: DW_AT_const_value [DW_FORM_sdata]{{.*}}(3)
 
-; CHECK: DW_TAG_template_value_parameter
-; CHECK-NEXT: DW_AT_type{{.*}}=> {[[INTPTR:0x[0-9a-f]*]]}
 
-; The address of the global 'glbl', followed by DW_OP_stack_value (9f), to use
-; the value immediately, rather than indirecting through the address.
 
-; CHECK-NEXT: DW_AT_location [DW_FORM_exprloc]{{ *}}(<0xa> 03 00 00 00 00 00 00 00 00 9f )
-; CHECK-NOT: NULL
 
-; CHECK: DW_TAG_GNU_template_template_param
-; CHECK-NEXT: DW_AT_name{{.*}}= "y"
-; CHECK-NEXT: DW_AT_GNU_template_name{{.*}}= "y_impl"
-; CHECK-NOT: NULL
 
-; CHECK: DW_TAG_template_value_parameter
-; CHECK-NEXT: DW_AT_type{{.*}}=> {[[NULLPTR:0x[0-9a-f]*]]}
-; CHECK-NEXT: DW_AT_name{{.*}}= "n"
-; CHECK-NEXT: DW_AT_const_value [DW_FORM_udata]{{.*}}(0)
 
-; CHECK: DW_TAG_GNU_template_parameter_pack
-; CHECK-NOT: NULL
-; CHECK: DW_TAG_template_value_parameter
-; CHECK-NEXT: DW_AT_type{{.*}}=> {[[INT]]}
-; CHECK-NEXT: DW_AT_const_value  [DW_FORM_sdata]{{.*}}(1)
-; CHECK-NOT: NULL
-; CHECK: DW_TAG_template_value_parameter
-; CHECK-NEXT: DW_AT_type{{.*}}=> {[[INT]]}
-; CHECK-NEXT: DW_AT_const_value  [DW_FORM_sdata]{{.*}}(2)
 
-; CHECK: [[INTPTR]]:{{ *}}DW_TAG_pointer_type
-; CHECK-NEXT: DW_AT_type{{.*}} => {[[INT]]}
 
-; CHECK: [[NULLPTR]]:{{ *}}DW_TAG_unspecified_type
-; CHECK-NEXT: DW_AT_name{{.*}}= "decltype(nullptr)"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %"struct.y_impl<int>::nested" = type { i8 }
 
@@ -71,7 +71,7 @@ entry:
   ret void, !dbg !36
 }
 
-; Function Attrs: nounwind uwtable
+
 define linkonce_odr i32 @_Z4funcILi3EXadL_Z4glblEE6y_implLDn0EJLi1ELi2EEEiv() #0 {
 entry:
   ret i32 3, !dbg !37

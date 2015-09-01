@@ -1,4 +1,4 @@
-; RUN: opt < %s -prune-eh -S | not grep nounwind
+
 
 define weak void @f() {
 entry:

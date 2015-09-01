@@ -1,5 +1,5 @@
-; RUN: llc < %s -march=x86 | not grep drectve
-; PR1607
+
+
 
 %hlvm_programs_element = type { i8*, i32 (i32, i8**)* }
 @hlvm_programs = appending constant [1 x %hlvm_programs_element]

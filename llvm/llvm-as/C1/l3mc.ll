@@ -1,22 +1,22 @@
-; RUN: llc -mtriple=mipsel-linux-gnu -march=mipsel -mcpu=mips16 -mattr=+soft-float -mips16-hard-float -relocation-model=static  < %s | FileCheck  %s -check-prefix=__call_stub_fp___fixunsdfsi 
 
-; RUN: llc -mtriple=mipsel-linux-gnu -march=mipsel -mcpu=mips16 -mattr=+soft-float -mips16-hard-float -relocation-model=static  < %s | FileCheck %s -check-prefix=__call_stub_fp___floatdidf 
 
-; RUN: llc -mtriple=mipsel-linux-gnu -march=mipsel -mcpu=mips16 -mattr=+soft-float -mips16-hard-float -relocation-model=static  < %s | FileCheck %s -check-prefix=__call_stub_fp___floatdisf 
 
-; RUN: llc -mtriple=mipsel-linux-gnu -march=mipsel -mcpu=mips16 -mattr=+soft-float -mips16-hard-float -relocation-model=static  < %s | FileCheck %s -check-prefix=__call_stub_fp___floatundidf
 
-; RUN: llc -mtriple=mipsel-linux-gnu -march=mipsel -mcpu=mips16 -mattr=+soft-float -mips16-hard-float -relocation-model=static  < %s | FileCheck %s -check-prefix=__call_stub_fp___fixsfdi 
 
-; RUN: llc -mtriple=mipsel-linux-gnu -march=mipsel -mcpu=mips16 -mattr=+soft-float -mips16-hard-float -relocation-model=static  < %s | FileCheck %s -check-prefix=__call_stub_fp___fixunsdfdi 
 
-; RUN: llc -mtriple=mipsel-linux-gnu -march=mipsel -mcpu=mips16 -mattr=+soft-float -mips16-hard-float -relocation-model=static  < %s | FileCheck %s -check-prefix=__call_stub_fp___fixdfdi
 
-; RUN: llc -mtriple=mipsel-linux-gnu -march=mipsel -mcpu=mips16 -mattr=+soft-float -mips16-hard-float -relocation-model=static  < %s | FileCheck %s -check-prefix=__call_stub_fp___fixunssfsi 
 
-; RUN: llc -mtriple=mipsel-linux-gnu -march=mipsel -mcpu=mips16 -mattr=+soft-float -mips16-hard-float -relocation-model=static  < %s | FileCheck %s -check-prefix=__call_stub_fp___fixunssfdi 
 
-; RUN: llc -mtriple=mipsel-linux-gnu -march=mipsel -mcpu=mips16 -mattr=+soft-float -mips16-hard-float -relocation-model=static  < %s | FileCheck %s -check-prefix=__call_stub_fp___floatundisf 
+
+
+
+
+
+
+
+
+
+
 
 @ll1 = global i64 0, align 8
 @ll2 = global i64 0, align 8
@@ -39,7 +39,7 @@
 @f3 = global float 0.000000e+00, align 4
 @f4 = global float 0.000000e+00, align 4
 
-; Function Attrs: nounwind
+
 define void @_Z3foov() #0 {
 entry:
   %0 = load double, double* @d1, align 8
@@ -69,7 +69,7 @@ entry:
   ret void
 }
 
-; Function Attrs: nounwind
+
 define void @_Z3goov() #0 {
 entry:
   %0 = load i64, i64* @ll1, align 8
@@ -101,14 +101,14 @@ entry:
 
 attributes #0 = { nounwind "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }
 
-; __call_stub_fp___fixunsdfsi:  __call_stub_fp___fixunsdfsi:
-; __call_stub_fp___floatdidf:  __call_stub_fp___floatdidf:
-; __call_stub_fp___floatdisf:  __call_stub_fp___floatdisf:
-; __call_stub_fp___floatundidf:  __call_stub_fp___floatundidf:
-; __call_stub_fp___fixsfdi:  __call_stub_fp___fixsfdi:
-; __call_stub_fp___fixunsdfdi:  __call_stub_fp___fixunsdfdi:
-; __call_stub_fp___fixdfdi:  __call_stub_fp___fixdfdi:
-; __call_stub_fp___fixunssfsi:  __call_stub_fp___fixunssfsi:
-; __call_stub_fp___fixunssfdi:  __call_stub_fp___fixunssfdi:
-; __call_stub_fp___floatundisf:  __call_stub_fp___floatundisf:
+
+
+
+
+
+
+
+
+
+
 

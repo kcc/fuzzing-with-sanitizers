@@ -1,19 +1,19 @@
-; RUN: llc -mtriple=x86_64-apple-darwin -mcpu=corei7                             < %s | FileCheck %s
-; RUN: llc -mtriple=x86_64-apple-darwin -mcpu=corei7 -fast-isel -fast-isel-abort=1 < %s | FileCheck %s
 
-; Trivial patchpoint codegen
-;
+
+
+
+
 define i64 @trivial_patchpoint_codegen(i64 %p1, i64 %p2, i64 %p3, i64 %p4) {
 entry:
-; CHECK-LABEL: trivial_patchpoint_codegen:
-; CHECK:      movabsq $-559038736, %r11
-; CHECK-NEXT: callq *%r11
-; CHECK-NEXT: xchgw %ax, %ax
-; CHECK:      movq %rax, %[[REG:r.+]]
-; CHECK:      callq *%r11
-; CHECK-NEXT: xchgw %ax, %ax
-; CHECK:      movq %[[REG]], %rax
-; CHECK:      ret
+
+
+
+
+
+
+
+
+
   %resolveCall2 = inttoptr i64 -559038736 to i8*
   %result = tail call i64 (i64, i32, i8*, i32, ...) @llvm.experimental.patchpoint.i64(i64 2, i32 15, i8* %resolveCall2, i32 4, i64 %p1, i64 %p2, i64 %p3, i64 %p4)
   %resolveCall3 = inttoptr i64 -559038737 to i8*
@@ -21,30 +21,30 @@ entry:
   ret i64 %result
 }
 
-; Trivial symbolic patchpoint codegen.
-;
+
+
 
 declare i64 @foo(i64 %p1, i64 %p2)
 define i64 @trivial_symbolic_patchpoint_codegen(i64 %p1, i64 %p2) {
 entry:
-; CHECK-LABEL: trivial_symbolic_patchpoint_codegen:
-; CHECK:       movabsq $_foo, %r11
-; CHECK-NEXT:  callq   *%r11
-; CHECK-NEXT:  xchgw   %ax, %ax
-; CHECK:       retq
+
+
+
+
+
   %result = tail call i64 (i64, i32, i8*, i32, ...) @llvm.experimental.patchpoint.i64(i64 9, i32 15, i8* bitcast (i64 (i64, i64)* @foo to i8*), i32 2, i64 %p1, i64 %p2)
   ret i64 %result
 }
 
 
-; Caller frame metadata with stackmaps. This should not be optimized
-; as a leaf function.
-;
-; CHECK-LABEL: caller_meta_leaf
-; CHECK: subq $32, %rsp
-; CHECK: Ltmp
-; CHECK: addq $32, %rsp
-; CHECK: ret
+
+
+
+
+
+
+
+
 define void @caller_meta_leaf() {
 entry:
   %metadata = alloca i64, i32 3, align 8
@@ -55,10 +55,10 @@ entry:
   ret void
 }
 
-; Test patchpoints reusing the same TargetConstant.
-; <rdar:15390785> Assertion failed: (CI.getNumArgOperands() >= NumArgs + 4)
-; There is no way to verify this, since it depends on memory allocation.
-; But I think it's useful to include as a working example.
+
+
+
+
 define i64 @testLowerConstant(i64 %arg, i64 %tmp2, i64 %tmp10, i64* %tmp33, i64 %tmp79) {
 entry:
   %tmp80 = add i64 %tmp79, -16
@@ -75,24 +75,24 @@ entry:
   ret i64 10
 }
 
-; Test small patchpoints that don't emit calls.
+
 define void @small_patchpoint_codegen(i64 %p1, i64 %p2, i64 %p3, i64 %p4) {
 entry:
-; CHECK-LABEL: small_patchpoint_codegen:
-; CHECK:      Ltmp
-; CHECK:      nopl 8(%rax,%rax)
-; CHECK-NEXT: popq
-; CHECK-NEXT: ret
+
+
+
+
+
   %result = tail call i64 (i64, i32, i8*, i32, ...) @llvm.experimental.patchpoint.i64(i64 5, i32 5, i8* null, i32 2, i64 %p1, i64 %p2)
   ret void
 }
 
-; Test large target address.
+
 define i64 @large_target_address_patchpoint_codegen() {
 entry:
-; CHECK-LABEL: large_target_address_patchpoint_codegen:
-; CHECK:      movabsq $6153737369414576827, %r11
-; CHECK-NEXT: callq *%r11
+
+
+
   %resolveCall2 = inttoptr i64 6153737369414576827 to i8*
   %result = tail call i64 (i64, i32, i8*, i32, ...) @llvm.experimental.patchpoint.i64(i64 2, i32 15, i8* %resolveCall2, i32 0)
   ret i64 %result

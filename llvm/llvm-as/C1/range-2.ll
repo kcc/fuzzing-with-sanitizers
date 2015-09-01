@@ -1,4 +1,4 @@
-; RUN: llvm-as < %s -o /dev/null
+
 
 define i8 @f1(i8* %x) {
 entry:
@@ -35,7 +35,7 @@ entry:
 }
 !4 = !{i8 -1, i8 0, i8 1, i8 -2}
 
-; We can annotate the range of the return value of a CALL.
+
 define void @call_all(i8* %x) {
 entry:
   %v1 = call i8 @f1(i8* %x), !range !0
@@ -46,7 +46,7 @@ entry:
   ret void
 }
 
-; We can annotate the range of the return value of an INVOKE.
+
 define void @invoke_all(i8* %x) personality i8* bitcast (i32 (...)* @__gxx_personality_v0 to i8*) {
 entry:
   %v1 = invoke i8 @f1(i8* %x) to label %cont unwind label %lpad, !range !0

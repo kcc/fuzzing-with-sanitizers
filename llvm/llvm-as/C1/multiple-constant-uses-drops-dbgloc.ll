@@ -1,16 +1,16 @@
-; RUN: llc -filetype=asm -asm-verbose=0 < %s | FileCheck %s
 
-; char ch;
-; int b;
-;
-; void proc (void)
-; {
-;     ch = 'A';
-;     b = 0; // <== this should have correct location
-; }
 
-; CHECK: .loc 1 7 7
-; CHECK: mov  r{{[0-9]}}, #0
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-m:e-p:32:32-i64:64-v128:64:128-a:0:32-n32-S64"
 target triple = "armv7--linux-gnueabihf"
@@ -18,7 +18,7 @@ target triple = "armv7--linux-gnueabihf"
 @ch = common global i8 0, align 1
 @b = common global i32 0, align 4
 
-; Function Attrs: nounwind
+
 define void @proc() #0 {
 entry:
   store i8 65, i8* @ch, align 1, !dbg !17

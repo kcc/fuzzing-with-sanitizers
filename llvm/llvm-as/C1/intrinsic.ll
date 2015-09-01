@@ -1,16 +1,16 @@
-; RUN: opt < %s -basicaa -slp-vectorizer -slp-threshold=-999 -dce -S -mtriple=x86_64-apple-macosx10.8.0 -mcpu=corei7-avx | FileCheck %s
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.8.0"
 
 declare double @llvm.fabs.f64(double) nounwind readnone
 
-;CHECK-LABEL: @vec_fabs_f64(
-;CHECK: load <2 x double>
-;CHECK: load <2 x double>
-;CHECK: call <2 x double> @llvm.fabs.v2f64
-;CHECK: store <2 x double>
-;CHECK: ret
+
+
+
+
+
+
 define void @vec_fabs_f64(double* %a, double* %b, double* %c) {
 entry:
   %i0 = load double, double* %a, align 8
@@ -31,12 +31,12 @@ entry:
 
 declare float @llvm.copysign.f32(float, float) nounwind readnone
 
-;CHECK-LABEL: @vec_copysign_f32(
-;CHECK: load <4 x float>
-;CHECK: load <4 x float>
-;CHECK: call <4 x float> @llvm.copysign.v4f32
-;CHECK: store <4 x float>
-;CHECK: ret
+
+
+
+
+
+
 define void @vec_copysign_f32(float* %a, float* %b, float* noalias %c) {
 entry:
   %0 = load float, float* %a, align 4
@@ -110,12 +110,12 @@ entry:
   store i32 %call4, i32* %arrayidx10, align 4
   ret void
 
-; CHECK-LABEL: @vec_bswap_i32(
-; CHECK: load <4 x i32>
-; CHECK: load <4 x i32>
-; CHECK: call <4 x i32> @llvm.bswap.v4i32
-; CHECK: store <4 x i32>
-; CHECK: ret
+
+
+
+
+
+
 }
 
 declare i32 @llvm.ctlz.i32(i32,i1) nounwind readnone
@@ -157,12 +157,12 @@ entry:
   store i32 %call4, i32* %arrayidx10, align 4
   ret void
 
-; CHECK-LABEL: @vec_ctlz_i32(
-; CHECK: load <4 x i32>
-; CHECK: load <4 x i32>
-; CHECK: call <4 x i32> @llvm.ctlz.v4i32
-; CHECK: store <4 x i32>
-; CHECK: ret
+
+
+
+
+
+
 }
 
 define void @vec_ctlz_i32_neg(i32* %a, i32* %b, i32* %c, i1) {
@@ -202,8 +202,8 @@ entry:
   store i32 %call4, i32* %arrayidx10, align 4
   ret void
 
-; CHECK-LABEL: @vec_ctlz_i32_neg(
-; CHECK-NOT: call <4 x i32> @llvm.ctlz.v4i32
+
+
 
 }
 
@@ -247,12 +247,12 @@ entry:
   store i32 %call4, i32* %arrayidx10, align 4
   ret void
 
-; CHECK-LABEL: @vec_cttz_i32(
-; CHECK: load <4 x i32>
-; CHECK: load <4 x i32>
-; CHECK: call <4 x i32> @llvm.cttz.v4i32
-; CHECK: store <4 x i32>
-; CHECK: ret
+
+
+
+
+
+
 }
 
 define void @vec_cttz_i32_neg(i32* %a, i32* %b, i32* %c, i1) {
@@ -292,8 +292,8 @@ entry:
   store i32 %call4, i32* %arrayidx10, align 4
   ret void
 
-; CHECK-LABEL: @vec_cttz_i32_neg(
-; CHECK-NOT: call <4 x i32> @llvm.cttz.v4i32
+
+
 }
 
 
@@ -335,12 +335,12 @@ entry:
   store float %call4, float* %arrayidx10, align 4
   ret void
 
-; CHECK-LABEL: @vec_powi_f32(
-; CHECK: load <4 x float>
-; CHECK: load <4 x float>
-; CHECK: call <4 x float> @llvm.powi.v4f32
-; CHECK: store <4 x float>
-; CHECK: ret
+
+
+
+
+
+
 }
 
 
@@ -381,6 +381,6 @@ entry:
   store float %call4, float* %arrayidx10, align 4
   ret void
 
-; CHECK-LABEL: @vec_powi_f32_neg(
-; CHECK-NOT: call <4 x float> @llvm.powi.v4f32
+
+
 }

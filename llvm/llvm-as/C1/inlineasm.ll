@@ -1,4 +1,4 @@
-; RUN: llc < %s -filetype=obj
+
 
 target triple = "thumbv7-none--eabi"
 

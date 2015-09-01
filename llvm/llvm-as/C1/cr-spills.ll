@@ -1,12 +1,12 @@
-; RUN: llc < %s -mtriple=powerpc64-unknown-linux-gnu -mcpu=pwr7
+
 
 target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-f128:128:128-v128:128:128-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
 
-; This test case triggers several functions related to cr spilling, both in
-; frame lowering and to handle cr register pressure. When the register kill
-; flags were not being set correctly, this would cause the register scavenger to
-; assert.
+
+
+
+
 
 @SetupFastFullPelSearch.orig_pels = external unnamed_addr global [768 x i16], align 2
 @weight_luma = external global i32
@@ -19,39 +19,39 @@ entry:
   %mul10 = mul nsw i32 undef, undef
   br i1 undef, label %land.end, label %land.lhs.true
 
-land.lhs.true:                                    ; preds = %entry
+land.lhs.true:                                    
   switch i32 0, label %land.end [
     i32 0, label %land.rhs
     i32 3, label %land.rhs
   ]
 
-land.rhs:                                         ; preds = %land.lhs.true, %land.lhs.true
+land.rhs:                                         
   %tobool21 = icmp ne i32 undef, 0
   br label %land.end
 
-land.end:                                         ; preds = %land.rhs, %land.lhs.true, %entry
+land.end:                                         
   %0 = phi i1 [ %tobool21, %land.rhs ], [ false, %land.lhs.true ], [ false, %entry ]
   %cond = load i32*, i32** undef, align 8
   br i1 undef, label %if.then95, label %for.body.lr.ph
 
-if.then95:                                        ; preds = %land.end
+if.then95:                                        
   %cmp.i4.i1427 = icmp slt i32 undef, undef
   br label %for.body.lr.ph
 
-for.body.lr.ph:                                   ; preds = %if.then95, %land.end
+for.body.lr.ph:                                   
   br label %for.body
 
-for.body:                                         ; preds = %for.body, %for.body.lr.ph
+for.body:                                         
   br i1 undef, label %for.body, label %for.body252
 
-for.body252:                                      ; preds = %for.inc997, %for.body
+for.body252:                                      
   %shl263 = add i32 undef, 80
   br i1 %0, label %for.cond286.preheader, label %for.cond713.preheader
 
-for.cond286.preheader:                            ; preds = %for.body252
+for.cond286.preheader:                            
   br label %for.cond290.preheader
 
-for.cond290.preheader:                            ; preds = %for.end520, %for.cond286.preheader
+for.cond290.preheader:                            
   %srcptr.31595 = phi i16* [ getelementptr inbounds ([768 x i16], [768 x i16]* @SetupFastFullPelSearch.orig_pels, i64 0, i64 0), %for.cond286.preheader ], [ null, %for.end520 ]
   %1 = load i32, i32* undef, align 4
   %2 = load i32, i32* @weight_luma, align 4
@@ -61,7 +61,7 @@ for.cond290.preheader:                            ; preds = %for.end520, %for.co
   %incdec.ptr502.sum = add i64 undef, 16
   br label %for.body293
 
-for.body293:                                      ; preds = %for.body293, %for.cond290.preheader
+for.body293:                                      
   %srcptr.41591 = phi i16* [ %srcptr.31595, %for.cond290.preheader ], [ undef, %for.body293 ]
   %refptr.11590 = phi i16* [ undef, %for.cond290.preheader ], [ %add.ptr517, %for.body293 ]
   %LineSadBlk0.01588 = phi i32 [ 0, %for.cond290.preheader ], [ %add346, %for.body293 ]
@@ -326,77 +326,77 @@ for.body293:                                      ; preds = %for.body293, %for.c
   %exitcond1692 = icmp eq i32 undef, 4
   br i1 %exitcond1692, label %for.end520, label %for.body293
 
-for.end520:                                       ; preds = %for.body293
+for.end520:                                       
   store i32 %add346, i32* undef, align 4
   store i32 %add402, i32* undef, align 4
   store i32 %add458, i32* undef, align 4
   store i32 %add514, i32* null, align 4
   br i1 undef, label %for.end543, label %for.cond290.preheader
 
-for.end543:                                       ; preds = %for.end520
+for.end543:                                       
   br i1 undef, label %for.inc997, label %for.body549
 
-for.body549:                                      ; preds = %for.inc701, %for.end543
+for.body549:                                      
   %call554 = call i16* null(i16**** null, i32 signext undef, i32 signext %shl263) #1
   br label %for.cond559.preheader
 
-for.cond559.preheader:                            ; preds = %for.cond559.preheader, %for.body549
+for.cond559.preheader:                            
   br i1 undef, label %for.inc701, label %for.cond559.preheader
 
-for.inc701:                                       ; preds = %for.cond559.preheader
+for.inc701:                                       
   br i1 undef, label %for.inc997, label %for.body549
 
-for.cond713.preheader:                            ; preds = %for.end850, %for.body252
+for.cond713.preheader:                            
   br label %for.body716
 
-for.body716:                                      ; preds = %for.body716, %for.cond713.preheader
+for.body716:                                      
   br i1 undef, label %for.end850, label %for.body716
 
-for.end850:                                       ; preds = %for.body716
+for.end850:                                       
   br i1 undef, label %for.end873, label %for.cond713.preheader
 
-for.end873:                                       ; preds = %for.end850
+for.end873:                                       
   br i1 undef, label %for.inc997, label %for.body879
 
-for.body879:                                      ; preds = %for.inc992, %for.end873
+for.body879:                                      
   br label %for.cond889.preheader
 
-for.cond889.preheader:                            ; preds = %for.end964, %for.body879
+for.cond889.preheader:                            
   br i1 undef, label %for.cond894.preheader.lr.ph, label %for.end964
 
-for.cond894.preheader.lr.ph:                      ; preds = %for.cond889.preheader
+for.cond894.preheader.lr.ph:                      
   br label %for.body898.lr.ph.us
 
-for.end957.us:                                    ; preds = %for.body946.us
+for.end957.us:                                    
   br i1 undef, label %for.body898.lr.ph.us, label %for.end964
 
-for.body946.us:                                   ; preds = %for.body930.us, %for.body946.us
+for.body946.us:                                   
   br i1 false, label %for.body946.us, label %for.end957.us
 
-for.body930.us:                                   ; preds = %for.body914.us, %for.body930.us
+for.body930.us:                                   
   br i1 undef, label %for.body930.us, label %for.body946.us
 
-for.body914.us:                                   ; preds = %for.body898.us, %for.body914.us
+for.body914.us:                                   
   br i1 undef, label %for.body914.us, label %for.body930.us
 
-for.body898.us:                                   ; preds = %for.body898.lr.ph.us, %for.body898.us
+for.body898.us:                                   
   br i1 undef, label %for.body898.us, label %for.body914.us
 
-for.body898.lr.ph.us:                             ; preds = %for.end957.us, %for.cond894.preheader.lr.ph
+for.body898.lr.ph.us:                             
   br label %for.body898.us
 
-for.end964:                                       ; preds = %for.end957.us, %for.cond889.preheader
+for.end964:                                       
   %inc990 = add nsw i32 undef, 1
   br i1 false, label %for.inc992, label %for.cond889.preheader
 
-for.inc992:                                       ; preds = %for.end964
+for.inc992:                                       
   br i1 false, label %for.inc997, label %for.body879
 
-for.inc997:                                       ; preds = %for.inc992, %for.end873, %for.inc701, %for.end543
+for.inc997:                                       
   %cmp250 = icmp slt i32 undef, %mul10
   br i1 %cmp250, label %for.body252, label %for.end999
 
-for.end999:                                       ; preds = %for.inc997
+for.end999:                                       
   ret void
 }
 

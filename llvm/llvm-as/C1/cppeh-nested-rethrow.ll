@@ -1,33 +1,33 @@
-; RUN: opt -mtriple=x86_64-pc-windows-msvc -winehprepare -S -o - < %s | FileCheck %s
 
-; This test was generated from the following code.
-;
-; void test1() {
-;   try {
-;     try {
-;       throw 1;
-;     } catch(...) { throw; }
-;   } catch (...) { }
-; }
-; void test2() {
-;   try {
-;     throw 1;
-;   } catch(...) {
-;     try {
-;       throw; 
-;     } catch (...) {}
-;   }
-; }
-;
-; These two functions result in functionally equivalent code, but the last
-; catch block contains a call to llvm.eh.endcatch that tripped up processing
-; during development.
-;
-; The main purpose of this test is to verify that we can correctly
-; handle the case of nested landing pads that return directly to a block in
-; the parent function.
 
-; ModuleID = 'cppeh-nested-rethrow.cpp'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-m:w-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-pc-windows-msvc"
 
@@ -51,11 +51,11 @@ $_TI1H = comdat any
 @_CTA1H = linkonce_odr unnamed_addr constant %eh.CatchableTypeArray.1 { i32 1, [1 x i32] [i32 trunc (i64 sub nuw nsw (i64 ptrtoint (%eh.CatchableType* @"_CT??_R0H@84" to i64), i64 ptrtoint (i8* @__ImageBase to i64)) to i32)] }, section ".xdata", comdat
 @_TI1H = linkonce_odr unnamed_addr constant %eh.ThrowInfo { i32 0, i32 0, i32 0, i32 trunc (i64 sub nuw nsw (i64 ptrtoint (%eh.CatchableTypeArray.1* @_CTA1H to i64), i64 ptrtoint (i8* @__ImageBase to i64)) to i32) }, section ".xdata", comdat
 
-; CHECK-LABEL: define void @"\01?test1@@YAXXZ"()
-; CHECK: entry:
-; CHECK:   call void (...) @llvm.localescape
 
-; Function Attrs: nounwind uwtable
+
+
+
+
 define void @"\01?test1@@YAXXZ"() #0 personality i8* bitcast (i32 (...)* @__CxxFrameHandler3 to i8*) {
 entry:
   %tmp = alloca i32, align 4
@@ -66,7 +66,7 @@ entry:
   invoke void @_CxxThrowException(i8* %0, %eh.ThrowInfo* @_TI1H) #2
           to label %unreachable unwind label %lpad
 
-lpad:                                             ; preds = %entry
+lpad:                                             
   %1 = landingpad { i8*, i32 }
           catch i8* null
   %2 = extractvalue { i8*, i32 } %1, 0
@@ -75,13 +75,13 @@ lpad:                                             ; preds = %entry
   store i32 %3, i32* %ehselector.slot
   br label %catch
 
-catch:                                            ; preds = %lpad
+catch:                                            
   %exn = load i8*, i8** %exn.slot
   call void @llvm.eh.begincatch(i8* %exn, i8* null) #1
   invoke void @_CxxThrowException(i8* null, %eh.ThrowInfo* null) #2
           to label %unreachable unwind label %lpad1
 
-lpad1:                                            ; preds = %catch
+lpad1:                                            
   %4 = landingpad { i8*, i32 }
           catch i8* null
   %5 = extractvalue { i8*, i32 } %4, 0
@@ -90,40 +90,40 @@ lpad1:                                            ; preds = %catch
   store i32 %6, i32* %ehselector.slot
   br label %catch2
 
-catch2:                                           ; preds = %lpad1
+catch2:                                           
   %exn3 = load i8*, i8** %exn.slot
   call void @llvm.eh.begincatch(i8* %exn3, i8* null) #1
   call void @llvm.eh.endcatch() #1
   br label %try.cont.4
 
-; This block should not be eliminated.
-; CHECK: try.cont.4:
-try.cont.4:                                        ; preds = %catch2, %try.cont
+
+
+try.cont.4:                                        
   ret void
 
-try.cont:                                         ; No predecessors!
+try.cont:                                         
   br label %try.cont.4
 
-unreachable:                                      ; preds = %catch, %entry
+unreachable:                                      
   unreachable
-; CHECK: }
+
 }
 
 declare void @_CxxThrowException(i8*, %eh.ThrowInfo*)
 
 declare i32 @__CxxFrameHandler3(...)
 
-; Function Attrs: nounwind
+
 declare void @llvm.eh.begincatch(i8* nocapture, i8* nocapture) #1
 
-; Function Attrs: nounwind
+
 declare void @llvm.eh.endcatch() #1
 
-; CHECK-LABEL: define void @"\01?test2@@YAXXZ"()
-; CHECK: entry:
-; CHECK:   call void (...) @llvm.localescape
 
-; Function Attrs: nounwind uwtable
+
+
+
+
 define void @"\01?test2@@YAXXZ"() #0 personality i8* bitcast (i32 (...)* @__CxxFrameHandler3 to i8*) {
 entry:
   %tmp = alloca i32, align 4
@@ -134,7 +134,7 @@ entry:
   invoke void @_CxxThrowException(i8* %0, %eh.ThrowInfo* @_TI1H) #2
           to label %unreachable unwind label %lpad
 
-lpad:                                             ; preds = %entry
+lpad:                                             
   %1 = landingpad { i8*, i32 }
           catch i8* null
   %2 = extractvalue { i8*, i32 } %1, 0
@@ -143,13 +143,13 @@ lpad:                                             ; preds = %entry
   store i32 %3, i32* %ehselector.slot
   br label %catch
 
-catch:                                            ; preds = %lpad
+catch:                                            
   %exn = load i8*, i8** %exn.slot
   call void @llvm.eh.begincatch(i8* %exn, i8* null) #1
   invoke void @_CxxThrowException(i8* null, %eh.ThrowInfo* null) #2
           to label %unreachable unwind label %lpad1
 
-lpad1:                                            ; preds = %catch
+lpad1:                                            
   %4 = landingpad { i8*, i32 }
           catch i8* null
   %5 = extractvalue { i8*, i32 } %4, 0
@@ -158,47 +158,47 @@ lpad1:                                            ; preds = %catch
   store i32 %6, i32* %ehselector.slot
   br label %catch2
 
-catch2:                                           ; preds = %lpad1
+catch2:                                           
   %exn3 = load i8*, i8** %exn.slot
   call void @llvm.eh.begincatch(i8* %exn3, i8* null) #1
   call void @llvm.eh.endcatch() #1
   br label %try.cont
 
-; This block should not be eliminated.
-; CHECK: try.cont:
-; The endcatch call should be eliminated.
-; CHECK-NOT: call void @llvm.eh.endcatch()
-try.cont:                                         ; preds = %catch2
+
+
+
+
+try.cont:                                         
   call void @llvm.eh.endcatch() #1
   br label %try.cont.4
 
-try.cont.4:                                        ; preds = %try.cont
+try.cont.4:                                        
   ret void
 
-unreachable:                                      ; preds = %catch, %entry
+unreachable:                                      
   unreachable
-; CHECK: }
+
 }
 
-; The outlined test1.catch handler should return to a valid block address.
-; CHECK-LABEL: define internal i8* @"\01?test1@@YAXXZ.catch"(i8*, i8*)
-; CHECK-NOT:  ret i8* inttoptr (i32 1 to i8*)
-; CHECK: }
 
-; The outlined test1.catch1 handler should not contain a return instruction.
-; CHECK-LABEL: define internal i8* @"\01?test1@@YAXXZ.catch.1"(i8*, i8*)
-; CHECK-NOT: ret
-; CHECK: }
 
-; The outlined test2.catch handler should return to a valid block address.
-; CHECK-LABEL: define internal i8* @"\01?test2@@YAXXZ.catch"(i8*, i8*)
-; CHECK-NOT:  ret i8* inttoptr (i32 1 to i8*)
-; CHECK: }
 
-; The outlined test2.catch2 handler should not contain a return instruction.
-; CHECK-LABEL: define internal i8* @"\01?test2@@YAXXZ.catch.2"(i8*, i8*)
-; CHECK-NOT: ret
-; CHECK: }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 attributes #0 = { nounwind uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+sse,+sse2" "unsafe-fp-math"="false" "use-soft-float"="false" }

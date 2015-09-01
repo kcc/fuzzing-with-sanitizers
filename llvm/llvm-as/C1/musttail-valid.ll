@@ -1,6 +1,6 @@
-; RUN: llvm-as %s -o /dev/null
 
-; Should assemble without error.
+
+
 
 declare void @similar_param_ptrty_callee(i8*)
 define void @similar_param_ptrty(i32*) {

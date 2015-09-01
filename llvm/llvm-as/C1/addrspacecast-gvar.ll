@@ -1,10 +1,10 @@
-; RUN: llc < %s -march=nvptx -mcpu=sm_20 | FileCheck %s
 
-; CHECK: .visible .global .align 4 .u32 g = 42;
-; CHECK: .visible .global .align 4 .u32 g2 = generic(g);
-; CHECK: .visible .global .align 4 .u32 g3 = g;
-; CHECK: .visible .global .align 8 .u32 g4[2] = {0, generic(g)};
-; CHECK: .visible .global .align 8 .u32 g5[2] = {0, generic(g)+8};
+
+
+
+
+
+
 
 @g = addrspace(1) global i32 42
 @g2 = addrspace(1) global i32* addrspacecast (i32 addrspace(1)* @g to i32*)

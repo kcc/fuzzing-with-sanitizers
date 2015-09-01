@@ -1,17 +1,17 @@
-; RUN: llc < %s -march=x86 | FileCheck %s
-; RUN: llc < %s -march=x86 -regalloc=fast -optimize-regalloc=0 | FileCheck %s
 
-; %0 must not be put in EAX or EDX.
-; In the first asm, $0 and $2 must not be put in EAX.
-; CHECK: InlineAsm Start
-; CHECK-NOT: movl %eax, %eax
-; CHECK-NOT: movl (%eax), %eax
-; CHECK: InlineAsm End
-; In the second asm, $0 and $2 must not be put in EDX.
-; CHECK: InlineAsm Start
-; CHECK-NOT: movl %edx, %edx
-; CHECK-NOT: movl (%edx), %edx
-; CHECK: InlineAsm End
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64-f80:128:128"
 target triple = "i386-apple-darwin8"

@@ -1,13 +1,13 @@
-; RUN: opt -memdep -gvn < %s
+
 
 define void @__memdep_requires_dominator_tree(i32* nocapture %bufUInt, i32* nocapture %pattern) nounwind {
 entry:
   br label %for.body
 
-for.exit:                                         ; preds = %for.body
+for.exit:                                         
   ret void
 
-for.body:                                         ; preds = %for.body, %entry
+for.body:                                         
   %i.01 = phi i32 [ 0, %entry ], [ %tmp8.7, %for.body ]
   %arrayidx = getelementptr i32, i32* %bufUInt, i32 %i.01
   %arrayidx5 = getelementptr i32, i32* %pattern, i32 %i.01

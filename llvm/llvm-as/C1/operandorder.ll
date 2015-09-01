@@ -1,15 +1,15 @@
-; RUN: opt < %s -basicaa -slp-vectorizer -slp-threshold=-100 -instcombine -dce -S -mtriple=i386-apple-macosx10.8.0 -mcpu=corei7-avx | FileCheck %s
+
 
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64-f80:128:128-n8:16:32-S128"
 
 
 
-; Make sure we order the operands of commutative operations so that we get
-; bigger vectorizable trees.
 
-; CHECK-LABEL: shuffle_operands1
-; CHECK:         load <2 x double>
-; CHECK:         fadd <2 x double>
+
+
+
+
+
 
 define void @shuffle_operands1(double * noalias %from, double * noalias %to,
                                double %v1, double %v2) {
@@ -24,9 +24,9 @@ define void @shuffle_operands1(double * noalias %from, double * noalias %to,
   ret void
 }
 
-; CHECK-LABEL: shuffle_preserve_broadcast
-; CHECK: %[[BCAST:[a-z0-9]+]] = insertelement <2 x double> undef, double %v0_1
-; CHECK:                      = insertelement <2 x double> %[[BCAST]], double %v0_1
+
+
+
 define void @shuffle_preserve_broadcast(double * noalias %from,
                                         double * noalias %to,
                                         double %v1, double %v2) {
@@ -49,9 +49,9 @@ ext:
   ret void
 }
 
-; CHECK-LABEL: shuffle_preserve_broadcast2
-; CHECK: %[[BCAST:[a-z0-9]+]] = insertelement <2 x double> undef, double %v0_1
-; CHECK:                      = insertelement <2 x double> %[[BCAST]], double %v0_1
+
+
+
 define void @shuffle_preserve_broadcast2(double * noalias %from,
                                         double * noalias %to,
                                         double %v1, double %v2) {
@@ -74,9 +74,9 @@ ext:
   ret void
 }
 
-; CHECK-LABEL: shuffle_preserve_broadcast3
-; CHECK: %[[BCAST:[a-z0-9]+]] = insertelement <2 x double> undef, double %v0_1
-; CHECK:                      = insertelement <2 x double> %[[BCAST]], double %v0_1
+
+
+
 define void @shuffle_preserve_broadcast3(double * noalias %from,
                                         double * noalias %to,
                                         double %v1, double %v2) {
@@ -100,9 +100,9 @@ ext:
 }
 
 
-; CHECK-LABEL: shuffle_preserve_broadcast4
-; CHECK: %[[BCAST:[a-z0-9]+]] = insertelement <2 x double> undef, double %v0_1
-; CHECK:                      = insertelement <2 x double> %[[BCAST]], double %v0_1
+
+
+
 define void @shuffle_preserve_broadcast4(double * noalias %from,
                                         double * noalias %to,
                                         double %v1, double %v2) {
@@ -125,9 +125,9 @@ ext:
   ret void
 }
 
-; CHECK-LABEL: shuffle_preserve_broadcast5
-; CHECK: %[[BCAST:[a-z0-9]+]] = insertelement <2 x double> undef, double %v0_1
-; CHECK:                      = insertelement <2 x double> %[[BCAST]], double %v0_1
+
+
+
 define void @shuffle_preserve_broadcast5(double * noalias %from,
                                         double * noalias %to,
                                         double %v1, double %v2) {
@@ -151,9 +151,9 @@ ext:
 }
 
 
-; CHECK-LABEL: shuffle_preserve_broadcast6
-; CHECK: %[[BCAST:[a-z0-9]+]] = insertelement <2 x double> undef, double %v0_1
-; CHECK:                      = insertelement <2 x double> %[[BCAST]], double %v0_1
+
+
+
 define void @shuffle_preserve_broadcast6(double * noalias %from,
                                         double * noalias %to,
                                         double %v1, double %v2) {
@@ -176,15 +176,15 @@ ext:
   ret void
 }
 
-; Make sure we don't scramble operands when we reorder them and destroy
-; 'good' source order.
 
-; CHECK-LABEL: good_load_order
 
-; CHECK: %[[V1:[0-9]+]] = load <4 x float>, <4 x float>*
-; CHECK: %[[V2:[0-9]+]] = insertelement <4 x float> undef, float %1, i32 0
-; CHECK: %[[V3:[0-9]+]] = shufflevector <4 x float> %[[V2]], <4 x float> %[[V1]], <4 x i32> <i32 0, i32 4, i32 5, i32 6>
-; CHECK:                = fmul <4 x float> %[[V1]], %[[V3]]
+
+
+
+
+
+
+
 
 @a = common global [32000 x float] zeroinitializer, align 16
 
@@ -233,13 +233,13 @@ for.end:
   ret void
 }
 
-; Check vectorization of following code for double data type-
-;  c[0] = a[0]+b[0];
-;  c[1] = b[1]+a[1]; // swapped b[1] and a[1]
 
-; CHECK-LABEL: load_reorder_double
-; CHECK: load <2 x double>, <2 x double>*
-; CHECK: fadd <2 x double>
+
+
+
+
+
+
 define void @load_reorder_double(double* nocapture %c, double* noalias nocapture readonly %a, double* noalias nocapture readonly %b){
   %1 = load double, double* %a
   %2 = load double, double* %b
@@ -255,15 +255,15 @@ define void @load_reorder_double(double* nocapture %c, double* noalias nocapture
   ret void
 }
 
-; Check vectorization of following code for float data type-
-;  c[0] = a[0]+b[0];
-;  c[1] = b[1]+a[1]; // swapped b[1] and a[1]
-;  c[2] = a[2]+b[2];
-;  c[3] = a[3]+b[3];
 
-; CHECK-LABEL: load_reorder_float
-; CHECK: load <4 x float>, <4 x float>*
-; CHECK: fadd <4 x float>
+
+
+
+
+
+
+
+
 define void @load_reorder_float(float* nocapture %c, float* noalias nocapture readonly %a, float* noalias nocapture readonly %b){
   %1 = load float, float* %a
   %2 = load float, float* %b
@@ -293,15 +293,15 @@ define void @load_reorder_float(float* nocapture %c, float* noalias nocapture re
   ret void
 }
 
-; Check we properly reorder the below code so that it gets vectorized optimally-
-; a[0] = (b[0]+c[0])+d[0];
-; a[1] = d[1]+(b[1]+c[1]);
-; a[2] = (b[2]+c[2])+d[2];
-; a[3] = (b[3]+c[3])+d[3];
 
-; CHECK-LABEL: opcode_reorder
-; CHECK: load <4 x float>, <4 x float>*
-; CHECK: fadd <4 x float>
+
+
+
+
+
+
+
+
 define void @opcode_reorder(float* noalias nocapture %a, float* noalias nocapture readonly %b, 
                             float* noalias nocapture readonly %c,float* noalias nocapture readonly %d){
   %1 = load float, float* %b

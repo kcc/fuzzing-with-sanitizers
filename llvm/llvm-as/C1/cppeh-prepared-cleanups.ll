@@ -1,4 +1,4 @@
-; RUN: llc < %s | FileCheck %s
+
 
 target datalayout = "e-m:w-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-pc-windows-msvc"
@@ -27,29 +27,29 @@ $_TI1H = comdat any
 @_TI1H = linkonce_odr unnamed_addr constant %eh.ThrowInfo { i32 0, i32 0, i32 0, i32 trunc (i64 sub nuw nsw (i64 ptrtoint (%eh.CatchableTypeArray.1* @_CTA1H to i64), i64 ptrtoint (i8* @__ImageBase to i64)) to i32) }, section ".xdata", comdat
 
 
-; CHECK-LABEL: "?test1@@YAXXZ":
-; CHECK:             .seh_handlerdata
-; CHECK-NEXT:        .long   ("$cppxdata$?test1@@YAXXZ")@IMGREL
-; CHECK-NEXT: .align 4
-; CHECK-NEXT:"$cppxdata$?test1@@YAXXZ":
-; CHECK-NEXT:        .long   429065506
-; CHECK-NEXT:        .long   1
-; CHECK-NEXT:        .long   ("$stateUnwindMap$?test1@@YAXXZ")@IMGREL
-; CHECK-NEXT:        .long   0
-; CHECK-NEXT:        .long   0
-; CHECK-NEXT:        .long   2
-; CHECK-NEXT:        .long   ("$ip2state$?test1@@YAXXZ")@IMGREL
-; CHECK-NEXT:        .long   32
-; CHECK-NEXT:        .long   0
-; CHECK-NEXT:        .long   1
-; CHECK-NEXT:"$stateUnwindMap$?test1@@YAXXZ":
-; CHECK-NEXT:        .long   -1
-; CHECK-NEXT:        .long   "?test1@@YAXXZ.cleanup"@IMGREL
-; CHECK-NEXT:"$ip2state$?test1@@YAXXZ":
-; CHECK-NEXT:        .long   .Lfunc_begin0@IMGREL
-; CHECK-NEXT:        .long   -1
-; CHECK-NEXT:        .long   .Ltmp0@IMGREL
-; CHECK-NEXT:        .long   0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @"\01?test1@@YAXXZ"() #0 personality i8* bitcast (i32 (...)* @__CxxFrameHandler3 to i8*) {
 entry:
@@ -66,13 +66,13 @@ entry:
   invoke void @_CxxThrowException(i8* %0, %eh.ThrowInfo* @_TI1H) #8
           to label %unreachable unwind label %lpad1
 
-lpad1:                                            ; preds = %entry
+lpad1:                                            
   %2 = landingpad { i8*, i32 }
           cleanup
   %recover = call i8* (...) @llvm.eh.actions(i32 0, void (i8*, i8*)* @"\01?test1@@YAXXZ.cleanup")
   indirectbr i8* %recover, []
 
-unreachable:                                      ; preds = %entry
+unreachable:                                      
   unreachable
 }
 
@@ -80,7 +80,7 @@ declare void @_CxxThrowException(i8*, %eh.ThrowInfo*)
 
 declare i32 @__CxxFrameHandler3(...)
 
-; Function Attrs: nounwind
+
 define linkonce_odr void @"\01??_DS@@QEAA@XZ"(%struct.S* %this) unnamed_addr #1 comdat align 2 {
 entry:
   %this.addr = alloca %struct.S*, align 8
@@ -90,35 +90,35 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: "?test2@@YAX_N@Z":
-; CHECK:             .seh_handlerdata
-; CHECK-NEXT:        .long   ("$cppxdata$?test2@@YAX_N@Z")@IMGREL
-; CHECK-NEXT: .align 4
-; CHECK-NEXT:"$cppxdata$?test2@@YAX_N@Z":
-; CHECK-NEXT:        .long   429065506
-; CHECK-NEXT:        .long   2
-; CHECK-NEXT:        .long   ("$stateUnwindMap$?test2@@YAX_N@Z")@IMGREL
-; CHECK-NEXT:        .long   0
-; CHECK-NEXT:        .long   0
-; CHECK-NEXT:        .long   4
-; CHECK-NEXT:        .long   ("$ip2state$?test2@@YAX_N@Z")@IMGREL
-; CHECK-NEXT:        .long   40
-; CHECK-NEXT:        .long   0
-; CHECK-NEXT:        .long   1
-; CHECK-NEXT:"$stateUnwindMap$?test2@@YAX_N@Z":
-; CHECK-NEXT:        .long   -1
-; CHECK-NEXT:        .long   "?test2@@YAX_N@Z.cleanup"@IMGREL
-; CHECK-NEXT:        .long   0
-; CHECK-NEXT:        .long   "?test2@@YAX_N@Z.cleanup1"@IMGREL
-; CHECK-NEXT:"$ip2state$?test2@@YAX_N@Z":
-; CHECK-NEXT:        .long   .Lfunc_begin1@IMGREL
-; CHECK-NEXT:        .long   -1
-; CHECK-NEXT:        .long   .Ltmp7@IMGREL
-; CHECK-NEXT:        .long   0
-; CHECK-NEXT:        .long   .Ltmp9@IMGREL
-; CHECK-NEXT:        .long   1
-; CHECK-NEXT:        .long   .Ltmp12@IMGREL
-; CHECK-NEXT:        .long   0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @"\01?test2@@YAX_N@Z"(i1 zeroext %b) #2 personality i8* bitcast (i32 (...)* @__CxxFrameHandler3 to i8*) {
   %b.addr = alloca i8, align 1
@@ -133,53 +133,53 @@ define void @"\01?test2@@YAX_N@Z"(i1 zeroext %b) #2 personality i8* bitcast (i32
   invoke void @"\01?may_throw@@YAXXZ"()
           to label %invoke.cont unwind label %lpad1
 
-invoke.cont:                                      ; preds = %entry
+invoke.cont:                                      
   %1 = load i8, i8* %b.addr, align 1
   %tobool = trunc i8 %1 to i1
   br i1 %tobool, label %if.then, label %if.else
 
-if.then:                                          ; preds = %invoke.cont
+if.then:                                          
   invoke void @"\01?may_throw@@YAXXZ"()
           to label %invoke.cont3 unwind label %lpad3
 
-invoke.cont3:                                     ; preds = %if.then
+invoke.cont3:                                     
   call void @"\01??_DS@@QEAA@XZ"(%struct.S* %s1) #4
   br label %if.end
 
-lpad1:                                            ; preds = %entry, %if.end
+lpad1:                                            
   %2 = landingpad { i8*, i32 }
           cleanup
   %recover = call i8* (...) @llvm.eh.actions(i32 0, void (i8*, i8*)* @"\01?test2@@YAX_N@Z.cleanup")
   indirectbr i8* %recover, []
 
-lpad3:                                            ; preds = %if.then
+lpad3:                                            
   %3 = landingpad { i8*, i32 }
           cleanup
   %recover4 = call i8* (...) @llvm.eh.actions(i32 0, void (i8*, i8*)* @"\01?test2@@YAX_N@Z.cleanup1", i32 0, void (i8*, i8*)* @"\01?test2@@YAX_N@Z.cleanup")
   indirectbr i8* %recover4, []
 
-if.else:                                          ; preds = %invoke.cont
+if.else:                                          
   call void @"\01?dont_throw@@YAXXZ"() #4
   br label %if.end
 
-if.end:                                           ; preds = %if.else, %invoke.cont3
+if.end:                                           
   invoke void @"\01?may_throw@@YAXXZ"()
           to label %invoke.cont4 unwind label %lpad1
 
-invoke.cont4:                                     ; preds = %if.end
+invoke.cont4:                                     
   call void @"\01??_DS@@QEAA@XZ"(%struct.S* %s) #4
   ret void
 }
 
 declare void @"\01?may_throw@@YAXXZ"() #3
 
-; Function Attrs: nounwind
+
 declare void @"\01?dont_throw@@YAXXZ"() #1
 
-; Function Attrs: nounwind
+
 declare void @"\01??1S@@QEAA@XZ"(%struct.S*) #1
 
-; Function Attrs: nounwind
+
 declare i8* @llvm.eh.actions(...) #4
 
 define internal void @"\01?test1@@YAXXZ.cleanup"(i8*, i8*) #5 {
@@ -189,13 +189,13 @@ entry:
   ret void
 }
 
-; Function Attrs: nounwind
+
 declare void @llvm.localescape(...) #4
 
-; Function Attrs: nounwind readnone
+
 declare i8* @llvm.localrecover(i8*, i8*, i32) #6
 
-; Function Attrs: nounwind
+
 declare void @llvm.eh.unwindhelp(i8*) #4
 
 define internal void @"\01?test2@@YAX_N@Z.cleanup"(i8*, i8*) #7 personality i8* bitcast (i32 (...)* @__CxxFrameHandler3 to i8*) {
@@ -206,10 +206,10 @@ entry:
   invoke void @llvm.donothing()
           to label %entry.split unwind label %stub
 
-entry.split:                                      ; preds = %entry
+entry.split:                                      
   ret void
 
-stub:                                             ; preds = %entry
+stub:                                             
   %2 = landingpad { i8*, i32 }
           cleanup
   unreachable
@@ -223,10 +223,10 @@ entry:
   invoke void @llvm.donothing()
           to label %entry.split unwind label %stub
 
-entry.split:                                      ; preds = %entry
+entry.split:                                      
   ret void
 
-stub:                                             ; preds = %entry
+stub:                                             
   %2 = landingpad { i8*, i32 }
           cleanup
   unreachable

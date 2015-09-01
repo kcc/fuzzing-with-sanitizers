@@ -1,8 +1,8 @@
-; Check that DEBUG_VALUE comments come through on a variety of targets.
+
 
 define i32 @main() nounwind ssp {
 entry:
-; CHECK: DEBUG_VALUE
+
   call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !7, metadata !DIExpression()), !dbg !9
   ret i32 0, !dbg !10
 }

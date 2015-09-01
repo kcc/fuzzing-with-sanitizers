@@ -1,22 +1,22 @@
-; RUN: opt -indvars -S %s | FileCheck %s
-;
-; PR18384: ValueHandleBase::ValueIsDeleted.
-;
-; Ensure that LoopSimplify calls ScalarEvolution::forgetLoop before
-; deleting a block, regardless of whether any values were hoisted out
-; of the block.
+
+
+
+
+
+
+
 
 target datalayout = "e-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-darwin"
 
 %struct.Params = type { [2 x [4 x [16 x i16]]] }
 
-; Verify that the loop tail is deleted, and we don't crash!
-;
-; CHECK-LABEL: @t
-; CHECK-LABEL: for.cond127.preheader:
-; CHECK-NOT: for.cond127:
-; CHECK-LABEL: for.body129:
+
+
+
+
+
+
 define void @t() {
 entry:
   br label %for.body102

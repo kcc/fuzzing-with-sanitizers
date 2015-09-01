@@ -1,4 +1,4 @@
-; RUN: lli -jit-kind=orc-lazy %s
+
 
 define private void @_ZL3foov() {
 entry:

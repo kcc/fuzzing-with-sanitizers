@@ -1,6 +1,6 @@
-; RUN: llc -march=x86-64 -mcpu=corei7 -disable-cgp-select2branch < %s
 
-; We should not crash on this test.
+
+
 
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64-f80:128:128-n8:16:32"
 target triple = "i386-apple-darwin9.0.0"
@@ -11,17 +11,17 @@ define void @snork() nounwind {
 bb:
   br i1 undef, label %bb26, label %bb27
 
-bb26:                                             ; preds = %bb48, %bb26, %bb
+bb26:                                             
   switch i32 undef, label %bb26 [
     i32 142771596, label %bb28
   ]
 
-bb27:                                             ; preds = %bb48, %bb
+bb27:                                             
   switch i32 undef, label %bb49 [
     i32 142771596, label %bb28
   ]
 
-bb28:                                             ; preds = %bb27, %bb26
+bb28:                                             
   %tmp = load i32, i32* null
   %tmp29 = trunc i32 %tmp to i8
   store i8* undef, i8** undef
@@ -45,16 +45,16 @@ bb28:                                             ; preds = %bb27, %bb26
   call void @spam()
   unreachable
 
-bb47:                                             ; No predecessors!
+bb47:                                             
   ret void
 
-bb48:                                             ; No predecessors!
+bb48:                                             
   br i1 undef, label %bb27, label %bb26
 
-bb49:                                             ; preds = %bb49, %bb27
+bb49:                                             
   br label %bb49
 
-bb50:                                             ; preds = %bb50
+bb50:                                             
   br label %bb50
 }
 

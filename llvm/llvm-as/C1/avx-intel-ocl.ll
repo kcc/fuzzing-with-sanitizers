@@ -1,34 +1,34 @@
-; RUN: llc < %s -mtriple=i686-apple-darwin -mattr=+avx | FileCheck -check-prefix=X32 %s
-; RUN: llc < %s -mtriple=i386-pc-win32 -mattr=+avx | FileCheck -check-prefix=X32 %s
-; RUN: llc < %s -mtriple=x86_64-win32 -mattr=+avx | FileCheck -check-prefix=WIN64 %s
-; RUN: llc < %s -mtriple=x86_64-apple-darwin -mattr=+avx | FileCheck -check-prefix=X64 %s
+
+
+
+
 
 declare <16 x float> @func_float16_ptr(<16 x float>, <16 x float> *)
 declare <16 x float> @func_float16(<16 x float>, <16 x float>)
 declare i32 @func_int(i32, i32)
 
-; WIN64-LABEL: testf16_inp
-; WIN64: vaddps  {{.*}}, {{%ymm[0-1]}}
-; WIN64: vaddps  {{.*}}, {{%ymm[0-1]}}
-; WIN64: leaq    {{.*}}(%rsp), %rcx
-; WIN64: call
-; WIN64: ret
 
-; X32-LABEL: testf16_inp
-; X32: movl    %eax, (%esp)
-; X32: vaddps  {{.*}}, {{%ymm[0-1]}}
-; X32: vaddps  {{.*}}, {{%ymm[0-1]}}
-; X32: call
-; X32: ret
 
-; X64-LABEL: testf16_inp
-; X64: vaddps  {{.*}}, {{%ymm[0-1]}}
-; X64: vaddps  {{.*}}, {{%ymm[0-1]}}
-; X64: leaq    {{.*}}(%rsp), %rdi
-; X64: call
-; X64: ret
 
-;test calling conventions - input parameters
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define <16 x float> @testf16_inp(<16 x float> %a, <16 x float> %b) nounwind {
   %y = alloca <16 x float>, align 16
   %x = fadd <16 x float> %a, %b
@@ -38,21 +38,21 @@ define <16 x float> @testf16_inp(<16 x float> %a, <16 x float> %b) nounwind {
   ret <16 x float> %3
 }
 
-;test calling conventions - preserved registers
 
-; preserved ymm6-ymm15
-; WIN64-LABEL: testf16_regs
-; WIN64: call
-; WIN64: vaddps  {{%ymm[6-7]}}, {{%ymm[0-1]}}, {{%ymm[0-1]}}
-; WIN64: vaddps  {{%ymm[6-7]}}, {{%ymm[0-1]}}, {{%ymm[0-1]}}
-; WIN64: ret
 
-; preserved ymm8-ymm15
-; X64-LABEL: testf16_regs
-; X64: call
-; X64: vaddps  {{%ymm[8-9]}}, {{%ymm[0-1]}}, {{%ymm[0-1]}}
-; X64: vaddps  {{%ymm[8-9]}}, {{%ymm[0-1]}}, {{%ymm[0-1]}}
-; X64: ret
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define <16 x float> @testf16_regs(<16 x float> %a, <16 x float> %b) nounwind {
   %y = alloca <16 x float>, align 16
@@ -64,67 +64,67 @@ define <16 x float> @testf16_regs(<16 x float> %a, <16 x float> %b) nounwind {
   ret <16 x float> %4
 }
 
-; test calling conventions - prolog and epilog
-; WIN64-LABEL: test_prolog_epilog
-; WIN64: vmovaps {{%ymm([6-9]|1[0-5])}}, {{.*(%rbp).*}}     # 32-byte Spill
-; WIN64: vmovaps {{%ymm([6-9]|1[0-5])}}, {{.*(%rbp).*}}     # 32-byte Spill
-; WIN64: vmovaps {{%ymm([6-9]|1[0-5])}}, {{.*(%rbp).*}}     # 32-byte Spill
-; WIN64: vmovaps {{%ymm([6-9]|1[0-5])}}, {{.*(%rbp).*}}     # 32-byte Spill
-; WIN64: vmovaps {{%ymm([6-9]|1[0-5])}}, {{.*(%rbp).*}}     # 32-byte Spill
-; WIN64: vmovaps {{%ymm([6-9]|1[0-5])}}, {{.*(%rbp).*}}     # 32-byte Spill
-; WIN64: vmovaps {{%ymm([6-9]|1[0-5])}}, {{.*(%rbp).*}}     # 32-byte Spill
-; WIN64: vmovaps {{%ymm([6-9]|1[0-5])}}, {{.*(%rbp).*}}     # 32-byte Spill
-; WIN64: vmovaps {{%ymm([6-9]|1[0-5])}}, {{.*(%rbp).*}}     # 32-byte Spill
-; WIN64: vmovaps {{%ymm([6-9]|1[0-5])}}, {{.*(%rbp).*}}     # 32-byte Spill
-; WIN64: call
-; WIN64: vmovaps {{.*(%rbp).*}}, {{%ymm([6-9]|1[0-5])}}     # 32-byte Reload
-; WIN64: vmovaps {{.*(%rbp).*}}, {{%ymm([6-9]|1[0-5])}}     # 32-byte Reload
-; WIN64: vmovaps {{.*(%rbp).*}}, {{%ymm([6-9]|1[0-5])}}     # 32-byte Reload
-; WIN64: vmovaps {{.*(%rbp).*}}, {{%ymm([6-9]|1[0-5])}}     # 32-byte Reload
-; WIN64: vmovaps {{.*(%rbp).*}}, {{%ymm([6-9]|1[0-5])}}     # 32-byte Reload
-; WIN64: vmovaps {{.*(%rbp).*}}, {{%ymm([6-9]|1[0-5])}}     # 32-byte Reload
-; WIN64: vmovaps {{.*(%rbp).*}}, {{%ymm([6-9]|1[0-5])}}     # 32-byte Reload
-; WIN64: vmovaps {{.*(%rbp).*}}, {{%ymm([6-9]|1[0-5])}}     # 32-byte Reload
-; WIN64: vmovaps {{.*(%rbp).*}}, {{%ymm([6-9]|1[0-5])}}     # 32-byte Reload
-; WIN64: vmovaps {{.*(%rbp).*}}, {{%ymm([6-9]|1[0-5])}}     # 32-byte Reload
 
-; X64-LABEL: test_prolog_epilog
-; X64: vmovups {{%ymm([8-9]|1[0-5])}}, {{.*}}(%rsp)  ## 32-byte Spill
-; X64: vmovups {{%ymm([8-9]|1[0-5])}}, {{.*}}(%rsp)  ## 32-byte Spill
-; X64: vmovups {{%ymm([8-9]|1[0-5])}}, {{.*}}(%rsp)  ## 32-byte Spill
-; X64: vmovups {{%ymm([8-9]|1[0-5])}}, {{.*}}(%rsp)  ## 32-byte Spill
-; X64: vmovups {{%ymm([8-9]|1[0-5])}}, {{.*}}(%rsp)  ## 32-byte Spill
-; X64: vmovups {{%ymm([8-9]|1[0-5])}}, {{.*}}(%rsp)  ## 32-byte Spill
-; X64: vmovups {{%ymm([8-9]|1[0-5])}}, {{.*}}(%rsp)  ## 32-byte Spill
-; X64: vmovups {{%ymm([8-9]|1[0-5])}}, {{.*}}(%rsp)  ## 32-byte Spill
-; X64: call
-; X64: vmovups {{.*}}(%rsp), {{%ymm([8-9]|1[0-5])}} ## 32-byte Reload
-; X64: vmovups {{.*}}(%rsp), {{%ymm([8-9]|1[0-5])}} ## 32-byte Reload
-; X64: vmovups {{.*}}(%rsp), {{%ymm([8-9]|1[0-5])}} ## 32-byte Reload
-; X64: vmovups {{.*}}(%rsp), {{%ymm([8-9]|1[0-5])}} ## 32-byte Reload
-; X64: vmovups {{.*}}(%rsp), {{%ymm([8-9]|1[0-5])}} ## 32-byte Reload
-; X64: vmovups {{.*}}(%rsp), {{%ymm([8-9]|1[0-5])}} ## 32-byte Reload
-; X64: vmovups {{.*}}(%rsp), {{%ymm([8-9]|1[0-5])}} ## 32-byte Reload
-; X64: vmovups {{.*}}(%rsp), {{%ymm([8-9]|1[0-5])}} ## 32-byte Reload
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define intel_ocl_bicc <16 x float> @test_prolog_epilog(<16 x float> %a, <16 x float> %b) nounwind {
    %c = call <16 x float> @func_float16(<16 x float> %a, <16 x float> %b)
    ret <16 x float> %c
 }
 
-; test functions with integer parameters
-; pass parameters on stack for 32-bit platform
-; X32-LABEL: test_int
-; X32: movl {{.*}}, 4(%esp)
-; X32: movl {{.*}}, (%esp)
-; X32: call
-; X32: addl {{.*}}, %eax
 
-; pass parameters in registers for 64-bit platform
-; X64-LABEL: test_int
-; X64: leal {{.*}}, %edi
-; X64: movl {{.*}}, %esi
-; X64: call
-; X64: addl {{.*}}, %eax
+
+
+
+
+
+
+
+
+
+
+
+
+
 define i32 @test_int(i32 %a, i32 %b) nounwind {
     %c1 = add i32 %a, %b
 	%c2 = call intel_ocl_bicc i32 @func_int(i32 %c1, i32 %a)
@@ -132,26 +132,26 @@ define i32 @test_int(i32 %a, i32 %b) nounwind {
 	ret i32 %c
 }
 
-; WIN64-LABEL: test_float4
-; WIN64-NOT: vzeroupper
-; WIN64: call
-; WIN64-NOT: vzeroupper
-; WIN64: call
-; WIN64: ret
 
-; X64-LABEL: test_float4
-; X64-NOT: vzeroupper
-; X64: call
-; X64-NOT: vzeroupper
-; X64: call
-; X64: ret
 
-; X32-LABEL: test_float4
-; X32: vzeroupper
-; X32: call
-; X32: vzeroupper
-; X32: call
-; X32: ret
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 declare <4 x float> @func_float4(<4 x float>, <4 x float>, <4 x float>)
 

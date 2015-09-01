@@ -1,11 +1,11 @@
-; RUN: opt -S -inline < %s | FileCheck %s
-; Make sure that soft float implementations are calculated as being more expensive
-; to the inliner.
+
+
+
 
 define i32 @test_nofp() #0 {
-; f_nofp() has the "use-soft-float" attribute, so it should never get inlined.
-; CHECK-LABEL: test_nofp
-; CHECK: call float @f_nofp 
+
+
+
 entry:
   %responseX = alloca i32, align 4
   %responseY = alloca i32, align 4
@@ -28,7 +28,7 @@ entry:
   %cmp = fcmp ogt float %call3, 0x3FC1EB8520000000
   br i1 %cmp, label %if.end12, label %if.else
 
-if.else:                                          ; preds = %entry
+if.else:                                          
   %4 = load i32, i32* %responseY
   %5 = load i8, i8* %valueY
   %call1 = call float @f_nofp(i32 %4, i8 zeroext %5)
@@ -36,23 +36,23 @@ if.else:                                          ; preds = %entry
   %cmp5 = fcmp ogt float %call4, 0x3FC1EB8520000000
   br i1 %cmp5, label %if.end12, label %if.else7
 
-if.else7:                                         ; preds = %if.else
+if.else7:                                         
   %call8 = call float @fabsf(float %call2)
   %cmp9 = fcmp ogt float %call8, 0x3FC1EB8520000000
   br i1 %cmp9, label %if.then10, label %if.end12
 
-if.then10:                                        ; preds = %if.else7
+if.then10:                                        
   br label %if.end12
 
-if.end12:                                         ; preds = %if.else, %entry, %if.then10, %if.else7
+if.end12:                                         
   %success.0 = phi i32 [ 0, %if.then10 ], [ 1, %if.else7 ], [ 0, %entry ], [ 0, %if.else ]
   ret i32 %success.0
 }
 
 define i32 @test_hasfp() #0 {
-; f_hasfp()  does not have the "use-soft-float" attribute, so it should get inlined.
-; CHECK-LABEL: test_hasfp
-; CHECK-NOT: call float @f_hasfp 
+
+
+
 entry:
   %responseX = alloca i32, align 4
   %responseY = alloca i32, align 4
@@ -75,7 +75,7 @@ entry:
   %cmp = fcmp ogt float %call3, 0x3FC1EB8520000000
   br i1 %cmp, label %if.end12, label %if.else
 
-if.else:                                          ; preds = %entry
+if.else:                                          
   %4 = load i32, i32* %responseY
   %5 = load i8, i8* %valueY
   %call1 = call float @f_hasfp(i32 %4, i8 zeroext %5)
@@ -83,15 +83,15 @@ if.else:                                          ; preds = %entry
   %cmp5 = fcmp ogt float %call4, 0x3FC1EB8520000000
   br i1 %cmp5, label %if.end12, label %if.else7
 
-if.else7:                                         ; preds = %if.else
+if.else7:                                         
   %call8 = call float @fabsf(float %call2)
   %cmp9 = fcmp ogt float %call8, 0x3FC1EB8520000000
   br i1 %cmp9, label %if.then10, label %if.end12
 
-if.then10:                                        ; preds = %if.else7
+if.then10:                                        
   br label %if.end12
 
-if.end12:                                         ; preds = %if.else, %entry, %if.then10, %if.else7
+if.end12:                                         
   %success.0 = phi i32 [ 0, %if.then10 ], [ 1, %if.else7 ], [ 0, %entry ], [ 0, %if.else ]
   ret i32 %success.0
 }

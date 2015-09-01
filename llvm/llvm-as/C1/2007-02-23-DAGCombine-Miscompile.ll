@@ -1,11 +1,11 @@
-; PR1219
-; RUN: llc < %s -march=x86 | FileCheck %s
+
+
 
 define i32 @test(i1 %X) {
-; CHECK-LABEL: test:
-; CHECK-NOT: ret
-; CHECK: movl $1, %eax
-; CHECK: ret
+
+
+
+
 
   %hvar2 = zext i1 %X to i32
 	%C = icmp sgt i32 %hvar2, -1

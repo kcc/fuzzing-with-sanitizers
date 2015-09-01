@@ -1,13 +1,13 @@
-; RUN: llc < %s -mtriple=i386-apple-darwin | FileCheck %s
 
-; FIXME: The first two instructions, movl and addl, should have been combined to
-; "leal 16(%eax), %edx" by the backend (PR20776).
-; CHECK: movl    %eax, %edx
-; CHECK: addl    $16, %edx
-; CHECK: align
-; CHECK: addl    $4, %edx
-; CHECK: decl    %ecx
-; CHECK: jne     LBB0_2
+
+
+
+
+
+
+
+
+
 
 	%struct.CUMULATIVE_ARGS = type { i32, i32, i32, i32, i32, i32, i32 }
 	%struct.bitmap_element = type { %struct.bitmap_element*, %struct.bitmap_element*, i32, [2 x i64] }
@@ -43,39 +43,39 @@
 	%struct.varasm_status = type { %struct.constant_descriptor**, %struct.pool_constant**, %struct.pool_constant*, %struct.pool_constant*, i64, %struct.rtx_def* }
 	%struct.varray_data = type { [1 x i64] }
 	%struct.varray_head_tag = type { i32, i32, i32, i8*, %struct.varray_data }
-@lineno = internal global i32 0		; <i32*> [#uses=1]
+@lineno = internal global i32 0		
 @tree_code_length = internal global [256 x i32] zeroinitializer
-@llvm.used = appending global [1 x i8*] [ i8* bitcast (%struct.tree_node* (i32, ...)* @build_stmt to i8*) ], section "llvm.metadata"		; <[1 x i8*]*> [#uses=0]
+@llvm.used = appending global [1 x i8*] [ i8* bitcast (%struct.tree_node* (i32, ...)* @build_stmt to i8*) ], section "llvm.metadata"		
 
 define %struct.tree_node* @build_stmt(i32 %code, ...) nounwind {
 entry:
-	%p = alloca i8*		; <i8**> [#uses=3]
-	%p1 = bitcast i8** %p to i8*		; <i8*> [#uses=2]
+	%p = alloca i8*		
+	%p1 = bitcast i8** %p to i8*		
 	call void @llvm.va_start(i8* %p1)
-	%0 = call fastcc %struct.tree_node* @make_node(i32 %code) nounwind		; <%struct.tree_node*> [#uses=2]
-	%1 = getelementptr [256 x i32], [256 x i32]* @tree_code_length, i32 0, i32 %code		; <i32*> [#uses=1]
-	%2 = load i32, i32* %1, align 4		; <i32> [#uses=2]
-	%3 = load i32, i32* @lineno, align 4		; <i32> [#uses=1]
-	%4 = bitcast %struct.tree_node* %0 to %struct.tree_exp*		; <%struct.tree_exp*> [#uses=2]
-	%5 = getelementptr %struct.tree_exp, %struct.tree_exp* %4, i32 0, i32 1		; <i32*> [#uses=1]
+	%0 = call fastcc %struct.tree_node* @make_node(i32 %code) nounwind		
+	%1 = getelementptr [256 x i32], [256 x i32]* @tree_code_length, i32 0, i32 %code		
+	%2 = load i32, i32* %1, align 4		
+	%3 = load i32, i32* @lineno, align 4		
+	%4 = bitcast %struct.tree_node* %0 to %struct.tree_exp*		
+	%5 = getelementptr %struct.tree_exp, %struct.tree_exp* %4, i32 0, i32 1		
 	store i32 %3, i32* %5, align 4
-	%6 = icmp sgt i32 %2, 0		; <i1> [#uses=1]
+	%6 = icmp sgt i32 %2, 0		
 	br i1 %6, label %bb, label %bb3
 
-bb:		; preds = %bb, %entry
-	%i.01 = phi i32 [ %indvar.next, %bb ], [ 0, %entry ]		; <i32> [#uses=2]
-	%7 = load i8*, i8** %p, align 4		; <i8*> [#uses=2]
-	%8 = getelementptr i8, i8* %7, i32 4		; <i8*> [#uses=1]
+bb:		
+	%i.01 = phi i32 [ %indvar.next, %bb ], [ 0, %entry ]		
+	%7 = load i8*, i8** %p, align 4		
+	%8 = getelementptr i8, i8* %7, i32 4		
 	store i8* %8, i8** %p, align 4
-	%9 = bitcast i8* %7 to %struct.tree_node**		; <%struct.tree_node**> [#uses=1]
-	%10 = load %struct.tree_node*, %struct.tree_node** %9, align 4		; <%struct.tree_node*> [#uses=1]
-	%11 = getelementptr %struct.tree_exp, %struct.tree_exp* %4, i32 0, i32 2, i32 %i.01		; <%struct.tree_node**> [#uses=1]
+	%9 = bitcast i8* %7 to %struct.tree_node**		
+	%10 = load %struct.tree_node*, %struct.tree_node** %9, align 4		
+	%11 = getelementptr %struct.tree_exp, %struct.tree_exp* %4, i32 0, i32 2, i32 %i.01		
 	store %struct.tree_node* %10, %struct.tree_node** %11, align 4
-	%indvar.next = add i32 %i.01, 1		; <i32> [#uses=2]
-	%exitcond = icmp eq i32 %indvar.next, %2		; <i1> [#uses=1]
+	%indvar.next = add i32 %i.01, 1		
+	%exitcond = icmp eq i32 %indvar.next, %2		
 	br i1 %exitcond, label %bb3, label %bb
 
-bb3:		; preds = %bb, %entry
+bb3:		
 	call void @llvm.va_end(i8* %p1)
 	ret %struct.tree_node* %0
 }

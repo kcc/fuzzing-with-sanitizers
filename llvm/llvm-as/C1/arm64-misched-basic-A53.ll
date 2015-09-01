@@ -1,20 +1,20 @@
-; REQUIRES: asserts
-; RUN: llc < %s -mtriple=arm64-linux-gnu -mcpu=cortex-a53 -pre-RA-sched=source -enable-misched -verify-misched -debug-only=misched -o - 2>&1 > /dev/null | FileCheck %s
-;
-; The Cortex-A53 machine model will cause the MADD instruction to be scheduled
-; much higher than the ADD instructions in order to hide latency. When not
-; specifying a subtarget, the MADD will remain near the end of the block.
-;
-; CHECK: ********** MI Scheduling **********
-; CHECK: main
-; CHECK: *** Final schedule for BB#2 ***
-; CHECK: MADDWrrr
-; CHECK: ADDWri
-; CHECK: ********** INTERVALS **********
+
+
+
+
+
+
+
+
+
+
+
+
+
 @main.x = private unnamed_addr constant [8 x i32] [i32 1, i32 1, i32 1, i32 1, i32 1, i32 1, i32 1, i32 1], align 4
 @main.y = private unnamed_addr constant [8 x i32] [i32 2, i32 2, i32 2, i32 2, i32 2, i32 2, i32 2, i32 2], align 4
 
-; Function Attrs: nounwind
+
 define i32 @main() #0 {
 entry:
   %retval = alloca i32, align 4
@@ -33,12 +33,12 @@ entry:
   store i32 0, i32* %i, align 4
   br label %for.cond
 
-for.cond:                                         ; preds = %for.inc, %entry
+for.cond:                                         
   %2 = load i32, i32* %i, align 4
   %cmp = icmp slt i32 %2, 8
   br i1 %cmp, label %for.body, label %for.end
 
-for.body:                                         ; preds = %for.cond
+for.body:                                         
   %3 = load i32, i32* %i, align 4
   %idxprom = sext i32 %3 to i64
   %arrayidx = getelementptr inbounds [8 x i32], [8 x i32]* %x, i32 0, i64 %idxprom
@@ -63,13 +63,13 @@ for.body:                                         ; preds = %for.cond
   store i32 %mul, i32* %yy, align 4
   br label %for.inc
 
-for.inc:                                          ; preds = %for.body
+for.inc:                                          
   %11 = load i32, i32* %i, align 4
   %inc = add nsw i32 %11, 1
   store i32 %inc, i32* %i, align 4
   br label %for.cond
 
-for.end:                                          ; preds = %for.cond
+for.end:                                          
   %12 = load i32, i32* %xx, align 4
   %13 = load i32, i32* %yy, align 4
   %add6 = add nsw i32 %12, %13
@@ -77,43 +77,43 @@ for.end:                                          ; preds = %for.cond
 }
 
 
-; The Cortex-A53 machine model will cause the FDIVvvv_42 to be raised to
-; hide latency. Whereas normally there would only be a single FADDvvv_4s
-; after it, this test checks to make sure there are more than one.
-;
-; CHECK: ********** MI Scheduling **********
-; CHECK: neon4xfloat:BB#0
-; CHECK: *** Final schedule for BB#0 ***
-; CHECK: FDIVv4f32
-; CHECK: FADDv4f32
-; CHECK: FADDv4f32
-; CHECK: ********** INTERVALS **********
+
+
+
+
+
+
+
+
+
+
+
 define <4 x float> @neon4xfloat(<4 x float> %A, <4 x float> %B) {
-        %tmp1 = fadd <4 x float> %A, %B;
-        %tmp2 = fadd <4 x float> %A, %tmp1;
-        %tmp3 = fadd <4 x float> %A, %tmp2;
-        %tmp4 = fadd <4 x float> %A, %tmp3;
-        %tmp5 = fadd <4 x float> %A, %tmp4;
-        %tmp6 = fadd <4 x float> %A, %tmp5;
-        %tmp7 = fadd <4 x float> %A, %tmp6;
-        %tmp8 = fadd <4 x float> %A, %tmp7;
-        %tmp9 = fdiv <4 x float> %A, %B;
-        %tmp10 = fadd <4 x float> %tmp8, %tmp9;
+        %tmp1 = fadd <4 x float> %A, %B
+        %tmp2 = fadd <4 x float> %A, %tmp1
+        %tmp3 = fadd <4 x float> %A, %tmp2
+        %tmp4 = fadd <4 x float> %A, %tmp3
+        %tmp5 = fadd <4 x float> %A, %tmp4
+        %tmp6 = fadd <4 x float> %A, %tmp5
+        %tmp7 = fadd <4 x float> %A, %tmp6
+        %tmp8 = fadd <4 x float> %A, %tmp7
+        %tmp9 = fdiv <4 x float> %A, %B
+        %tmp10 = fadd <4 x float> %tmp8, %tmp9
 
         ret <4 x float> %tmp10
 }
 
-; Function Attrs: nounwind
+
 declare void @llvm.memcpy.p0i8.p0i8.i64(i8* nocapture, i8* nocapture readonly, i64, i32, i1) #1
 
 attributes #0 = { nounwind "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }
 attributes #1 = { nounwind }
 
 
-; Regression Test for PR19761
-;   [ARM64] Cortex-a53 schedule mode can't handle NEON post-increment load
-;
-; Nothing explicit to check other than llc not crashing.
+
+
+
+
 define { <16 x i8>, <16 x i8> } @test_v16i8_post_imm_ld2(i8* %A, i8** %ptr) {
   %ld2 = tail call { <16 x i8>, <16 x i8> } @llvm.aarch64.neon.ld2.v16i8.p0i8(i8* %A)
   %tmp = getelementptr i8, i8* %A, i32 32
@@ -123,15 +123,15 @@ define { <16 x i8>, <16 x i8> } @test_v16i8_post_imm_ld2(i8* %A, i8** %ptr) {
 
 declare { <16 x i8>, <16 x i8> } @llvm.aarch64.neon.ld2.v16i8.p0i8(i8*)
 
-; Regression Test for PR20057.
-;
-; Cortex-A53 machine model stalls on A53UnitFPMDS contention. Instructions that
-; are otherwise ready are jammed in the pending queue.
-; CHECK: ********** MI Scheduling **********
-; CHECK: testResourceConflict
-; CHECK: *** Final schedule for BB#0 ***
-; CHECK: BRK
-; CHECK: ********** INTERVALS **********
+
+
+
+
+
+
+
+
+
 define void @testResourceConflict(float* %ptr) {
 entry:
   %add1 = fadd float undef, undef
@@ -173,14 +173,14 @@ entry:
 
 declare void @llvm.trap()
 
-; Regression test for PR20057: "permanent hazard"'
-; Resource contention on LDST.
-; CHECK: ********** MI Scheduling **********
-; CHECK: testLdStConflict
-; CHECK: *** Final schedule for BB#1 ***
-; CHECK: LD4Fourv2d
-; CHECK: STRQui
-; CHECK: ********** INTERVALS **********
+
+
+
+
+
+
+
+
 define void @testLdStConflict() {
 entry:
   br label %loop

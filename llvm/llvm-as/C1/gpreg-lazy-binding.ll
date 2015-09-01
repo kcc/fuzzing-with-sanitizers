@@ -1,12 +1,12 @@
-; RUN: llc -march=mipsel -disable-mips-delay-filler < %s | FileCheck %s 
+
 
 @g = external global i32
 
-; CHECK:     move  $gp
-; CHECK:     jalr  $25
-; CHECK:     nop
-; CHECK-NOT: move  $gp
-; CHECK:     jalr  $25
+
+
+
+
+
 
 define void @f0() nounwind {
 entry:
@@ -27,8 +27,8 @@ entry:
 
 define void @no_lazy(void (i32)* %pf) {
 
-; CHECK-LABEL:  no_lazy
-; CHECK-NOT:    gp_disp
+
+
 
   tail call void %pf(i32 1)
   ret void

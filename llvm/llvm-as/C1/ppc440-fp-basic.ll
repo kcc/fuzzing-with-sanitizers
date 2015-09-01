@@ -1,4 +1,4 @@
-; RUN: llc < %s -march=ppc32 -mcpu=440 -fp-contract=fast | FileCheck %s
+
 
 %0 = type { double, double }
 
@@ -29,5 +29,5 @@ entry:
   store double %add.r, double* %real
   store double %add.i, double* %imag
   ret void
-; CHECK: fmadd
+
 }

@@ -1,8 +1,8 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv4 < %s -O0
 
-; This is a regression test which makes sure that the offset check
-; is available for STRiw_indexed instruction. This is required
-; by 'Hexagon Expand Predicate Spill Code' pass.
+
+
+
+
 
 define i32 @f(i32 %a, i32 %b) nounwind {
 entry:

@@ -1,10 +1,10 @@
-;; RUN: llc -mtriple=aarch64-none-linux-gnu -filetype=obj %s -o - | \
-;; RUN:   llvm-readobj -h -r | FileCheck -check-prefix=OBJ %s
 
-; Also take it on a round-trip through llvm-mc to stretch assembly-parsing's legs:
-;; RUN: llc -mtriple=aarch64-none-linux-gnu %s -o - | \
-;; RUN:     llvm-mc -triple=arm64-none-linux-gnu -filetype=obj -o - | \
-;; RUN:     llvm-readobj -h -r | FileCheck -check-prefix=OBJ %s
+
+
+
+
+
+
 
 @var8 = global i8 0
 @var16 = global i16 0
@@ -34,29 +34,29 @@ define void @address() {
     ret void
 }
 
-; Check we're using EM_AARCH64
-; OBJ: ElfHeader {
-; OBJ:   Machine: EM_AARCH64
-; OBJ: }
 
-; OBJ: Relocations [
-; OBJ:   Section {{.*}} .rela.text {
-; OBJ:     0x{{[0-9,A-F]+}} R_AARCH64_ADR_PREL_PG_HI21   var8
-; OBJ:     0x{{[0-9,A-F]+}} R_AARCH64_LDST8_ABS_LO12_NC  var8
-; OBJ:     0x{{[0-9,A-F]+}} R_AARCH64_ADR_PREL_PG_HI21   var16
-; OBJ:     0x{{[0-9,A-F]+}} R_AARCH64_LDST16_ABS_LO12_NC var16
-; OBJ:     0x{{[0-9,A-F]+}} R_AARCH64_ADR_PREL_PG_HI21   var32
-; OBJ:     0x{{[0-9,A-F]+}} R_AARCH64_LDST32_ABS_LO12_NC var32
-; OBJ:     0x{{[0-9,A-F]+}} R_AARCH64_ADR_PREL_PG_HI21   var64
-; OBJ:     0x{{[0-9,A-F]+}} R_AARCH64_LDST64_ABS_LO12_NC var64
 
-; This is on the store, so not really important, but it stops the next
-; match working.
-; OBJ:     0x{{[0-9,A-F]+}} R_AARCH64_LDST64_ABS_LO12_NC var64
 
-; Pure address-calculation against var64
-; OBJ:     0x{{[0-9,A-F]+}} R_AARCH64_ADR_PREL_PG_HI21   var64
-; OBJ:     0x{{[0-9,A-F]+}} R_AARCH64_ADD_ABS_LO12_NC    var64
 
-; OBJ:   }
-; OBJ: ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

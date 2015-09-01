@@ -1,11 +1,11 @@
-; RUN: llc -O0 -mtriple=powerpc64-unknown-linux-gnu -fast-isel=false < %s | FileCheck %s
 
-; This verifies that single-precision floating point values that can't
-; be passed in registers are stored in the rightmost word of the parameter
-; save area slot.  There are 13 architected floating-point registers, so
-; the 14th is passed in storage.  The address of the 14th argument is
-; 48 (fixed size of the linkage area) + 13 * 8 (first 13 args) + 4
-; (offset to second word) = 156.
+
+
+
+
+
+
+
 
 define float @bar(float %a, float %b, float %c, float %d, float %e, float %f, float %g, float %h, float %i, float %j, float %k, float %l, float %m, float %n) nounwind {
 entry:
@@ -41,7 +41,7 @@ entry:
   ret float %0
 }
 
-; CHECK: lfs {{[0-9]+}}, 156(1)
+
 
 define float @foo() nounwind {
 entry:
@@ -91,7 +91,7 @@ entry:
   ret float %call
 }
 
-; Note that stw is used instead of stfs because the value is a simple
-; constant that can be created with a load-immediate in a GPR.
-; CHECK: stw {{[0-9]+}}, 156(1)
+
+
+
 

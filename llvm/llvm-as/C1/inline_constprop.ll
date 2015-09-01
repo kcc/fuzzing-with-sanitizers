@@ -1,4 +1,4 @@
-; RUN: opt < %s -inline -inline-threshold=20 -S | FileCheck %s
+
 
 define internal i32 @callee1(i32 %A, i32 %B) {
   %C = sdiv i32 %A, %B
@@ -6,24 +6,24 @@ define internal i32 @callee1(i32 %A, i32 %B) {
 }
 
 define i32 @caller1() {
-; CHECK-LABEL: define i32 @caller1(
-; CHECK-NEXT: ret i32 3
+
+
 
   %X = call i32 @callee1( i32 10, i32 3 )
   ret i32 %X
 }
 
 define i32 @caller2() {
-; Check that we can constant-prop through instructions after inlining callee21
-; to get constants in the inlined callsite to callee22.
-; FIXME: Currently, the threshold is fixed at 20 because we don't perform
-; *recursive* cost analysis to realize that the nested call site will definitely
-; inline and be cheap. We should eventually do that and lower the threshold here
-; to 1.
-;
-; CHECK-LABEL: @caller2(
-; CHECK-NOT: call void @callee2
-; CHECK: ret
+
+
+
+
+
+
+
+
+
+
 
   %x = call i32 @callee21(i32 42, i32 48)
   ret i32 %x
@@ -41,7 +41,7 @@ define i32 @callee22(i32 %x) {
   %icmp = icmp ugt i32 %x, 42
   br i1 %icmp, label %bb.true, label %bb.false
 bb.true:
-  ; This block musn't be counted in the inline cost.
+  
   %x1 = add i32 %x, 1
   %x2 = add i32 %x1, 1
   %x3 = add i32 %x2, 1
@@ -57,13 +57,13 @@ bb.false:
 }
 
 define i32 @caller3() {
-; Check that even if the expensive path is hidden behind several basic blocks,
-; it doesn't count toward the inline cost when constant-prop proves those paths
-; dead.
-;
-; CHECK-LABEL: @caller3(
-; CHECK-NOT: call
-; CHECK: ret i32 6
+
+
+
+
+
+
+
 
 entry:
   %x = call i32 @callee3(i32 42, i32 48)
@@ -80,7 +80,7 @@ bb.true:
   br i1 %icmp2, label %bb.true.true, label %bb.true.false
 
 bb.true.true:
-  ; This block musn't be counted in the inline cost.
+  
   %x1 = add i32 %x, 1
   %x2 = add i32 %x1, 1
   %x3 = add i32 %x2, 1
@@ -92,7 +92,7 @@ bb.true.true:
   br label %bb.merge
 
 bb.true.false:
-  ; This block musn't be counted in the inline cost.
+  
   %y1 = add i32 %y, 1
   %y2 = add i32 %y1, 1
   %y3 = add i32 %y2, 1
@@ -114,14 +114,14 @@ bb.false:
 declare {i8, i1} @llvm.uadd.with.overflow.i8(i8 %a, i8 %b)
 
 define i8 @caller4(i8 %z) {
-; Check that we can constant fold through intrinsics such as the
-; overflow-detecting arithmetic instrinsics. These are particularly important
-; as they are used heavily in standard library code and generic C++ code where
-; the arguments are oftent constant but complete generality is required.
-;
-; CHECK-LABEL: @caller4(
-; CHECK-NOT: call
-; CHECK: ret i8 -1
+
+
+
+
+
+
+
+
 
 entry:
   %x = call i8 @callee4(i8 254, i8 14, i8 %z)
@@ -137,7 +137,7 @@ bb.true:
   ret i8 -1
 
 bb.false:
-  ; This block musn't be counted in the inline cost.
+  
   %z1 = add i8 %z, 1
   %z2 = add i8 %z1, 1
   %z3 = add i8 %z2, 1
@@ -150,12 +150,12 @@ bb.false:
 }
 
 define i64 @caller5(i64 %y) {
-; Check that we can round trip constants through various kinds of casts etc w/o
-; losing track of the constant prop in the inline cost analysis.
-;
-; CHECK-LABEL: @caller5(
-; CHECK-NOT: call
-; CHECK: ret i64 -1
+
+
+
+
+
+
 
 entry:
   %x = call i64 @callee5(i64 42, i64 %y)
@@ -175,7 +175,7 @@ bb.true:
   ret i64 -1
 
 bb.false:
-  ; This block musn't be counted in the inline cost.
+  
   %y1 = add i64 %y, 1
   %y2 = add i64 %y1, 1
   %y3 = add i64 %y2, 1
@@ -188,11 +188,11 @@ bb.false:
 }
 
 define float @caller6() {
-; Check that we can constant-prop through fcmp instructions
-;
-; CHECK-LABEL: @caller6(
-; CHECK-NOT: call
-; CHECK: ret
+
+
+
+
+
   %x = call float @callee6(float 42.0)
   ret float %x
 }
@@ -202,7 +202,7 @@ define float @callee6(float %x) {
   br i1 %icmp, label %bb.true, label %bb.false
 
 bb.true:
-  ; This block musn't be counted in the inline cost.
+  
   %x1 = fadd float %x, 1.0
   %x2 = fadd float %x1, 1.0
   %x3 = fadd float %x2, 1.0
@@ -220,18 +220,18 @@ bb.false:
 
 
 define i32 @PR13412.main() {
-; This is a somewhat complicated three layer subprogram that was reported to
-; compute the wrong value for a branch due to assuming that an argument
-; mid-inline couldn't be equal to another pointer.
-;
-; After inlining, the branch should point directly to the exit block, not to
-; the intermediate block.
-; CHECK: @PR13412.main
-; CHECK: br i1 true, label %[[TRUE_DEST:.*]], label %[[FALSE_DEST:.*]]
-; CHECK: [[FALSE_DEST]]:
-; CHECK-NEXT: call void @PR13412.fail()
-; CHECK: [[TRUE_DEST]]:
-; CHECK-NEXT: ret i32 0
+
+
+
+
+
+
+
+
+
+
+
+
 
 entry:
   %i1 = alloca i64

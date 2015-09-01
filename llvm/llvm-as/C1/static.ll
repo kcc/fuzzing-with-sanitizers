@@ -1,12 +1,12 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv4 -disable-dfa-sched -disable-hexagon-misched < %s | FileCheck %s
+
 
 @num = external global i32
 @acc = external global i32
 @val = external global i32
 
-; CHECK: memw(##num)
-; CHECK: memw(##acc)
-; CHECK: memw(##val)
+
+
+
 
 define void @foo() nounwind {
 entry:

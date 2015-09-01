@@ -1,21 +1,21 @@
-; RUN: llc -march=x86 -mtriple=i686-apple-ios -mcpu=yonah < %s
-; rdar://12868039
+
+
 
 define void @t() nounwind ssp {
   %1 = alloca i32
   %2 = ptrtoint i32* %1 to i32
   br label %3
 
-; <label>:3                                       ; preds = %5, %3, %0
+
   switch i32 undef, label %3 [
     i32 611946160, label %5
     i32 954117870, label %4
   ]
 
-; <label>:4                                       ; preds = %3
+
   ret void
 
-; <label>:5                                       ; preds = %5, %3
+
   %6 = add i32 0, 148
   %7 = and i32 %6, 48
   %8 = add i32 %7, 0

@@ -1,7 +1,7 @@
-; RUN: opt < %s -indvars -S | FileCheck %s
-;
-; Make sure that indvars isn't inserting canonical IVs.
-; This is kinda hard to do until linear function test replacement is removed.
+
+
+
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64"
 
@@ -13,17 +13,17 @@ entry:
 ph:
   br label %loop
 
-; CHECK: loop:
-;
-; We should only have 2 IVs.
-; CHECK: phi
-; CHECK: phi
-; CHECK-NOT: phi
-;
-; sext should be eliminated while preserving gep inboundsness.
-; CHECK-NOT: sext
-; CHECK: getelementptr inbounds
-; CHECK: exit:
+
+
+
+
+
+
+
+
+
+
+
 loop:
   %i.02 = phi i32 [ 0, %ph ], [ %iinc, %loop ]
   %s.01 = phi i32 [ 0, %ph ], [ %sinc, %loop ]
@@ -52,19 +52,19 @@ entry:
 ph:
   br label %loop
 
-; CHECK: loop:
-;
-; We should only have 2 IVs.
-; CHECK: phi
-; CHECK: phi
-; CHECK-NOT: phi
-;
-; %ofs sext should be eliminated while preserving gep inboundsness.
-; CHECK-NOT: sext
-; CHECK: getelementptr inbounds
-; %vall sext should obviously not be eliminated
-; CHECK: sext
-; CHECK: exit:
+
+
+
+
+
+
+
+
+
+
+
+
+
 loop:
   %i.02 = phi i32 [ 0, %ph ], [ %iinc, %loop ]
   %s.01 = phi i64 [ 0, %ph ], [ %sinc, %loop ]
@@ -90,25 +90,25 @@ define void @outofbounds(i32* %first, i32* %last, i32 %idx) nounwind {
   %precond = icmp ne i32* %first, %last
   br i1 %precond, label %ph, label %return
 
-; CHECK: ph:
-; It's not indvars' job to perform LICM on %ofs
-; CHECK-NOT: sext
+
+
+
 ph:
   br label %loop
 
-; CHECK: loop:
-;
-; Preserve exactly one pointer type IV.
-; CHECK: phi i32*
-; CHECK-NOT: phi
-;
-; Don't create any extra adds.
-; CHECK-NOT: add
-;
-; Preserve gep inboundsness, and don't factor it.
-; CHECK: getelementptr inbounds i32, i32* %ptriv, i32 1
-; CHECK-NOT: add
-; CHECK: exit:
+
+
+
+
+
+
+
+
+
+
+
+
+
 loop:
   %ptriv = phi i32* [ %first, %ph ], [ %ptrpost, %loop ]
   %ofs = sext i32 %idx to i64
@@ -133,13 +133,13 @@ nounwind
 entry:
   br label %loop
 
-; CHECK: loop:
-;
-; Preserve casts
-; CHECK: phi i32
-; CHECK: bitcast
-; CHECK: getelementptr
-; CHECK: exit:
+
+
+
+
+
+
+
 loop:
   %iv = phi i32 [%start, %entry], [%next, %loop]
   %p = phi %structI* [%base, %entry], [%pinc, %loop]
@@ -160,12 +160,12 @@ define void @maxvisitor(i32 %limit, i32* %base) nounwind {
 entry:
  br label %loop
 
-; Test inserting a truncate at a phi use.
-;
-; CHECK: loop:
-; CHECK: phi i64
-; CHECK: trunc
-; CHECK: exit:
+
+
+
+
+
+
 loop:
   %idx = phi i32 [ 0, %entry ], [ %idx.next, %loop.inc ]
   %max = phi i32 [ 0, %entry ], [ %max.next, %loop.inc ]
@@ -195,12 +195,12 @@ define void @identityphi(i32 %limit) nounwind {
 entry:
   br label %loop
 
-; Test an edge case of removing an identity phi that directly feeds
-; back to the loop iv.
-;
-; CHECK: loop:
-; CHECK-NOT: phi
-; CHECK: exit:
+
+
+
+
+
+
 loop:
   %iv = phi i32 [ 0, %entry], [ %iv.next, %control ]
   br i1 undef, label %if.then, label %control
@@ -219,23 +219,23 @@ exit:
 
 define i64 @cloneOr(i32 %limit, i64* %base) nounwind {
 entry:
-  ; ensure that the loop can't overflow
+  
   %halfLim = ashr i32 %limit, 2
   br label %loop
 
-; This test originally checked that the OR instruction was cloned. Now the
-; ScalarEvolution is able to understand the loop evolution and that '%iv' at the
-; end of the loop is an even value. Thus '%val' is computed at the end of the
-; loop and the OR instruction is replaced by an ADD keeping the result
-; equivalent.
-;
-; CHECK: sext
-; CHECK: loop:
-; CHECK: phi i64
-; CHECK-NOT: sext
-; CHECK: icmp slt i64
-; CHECK: exit:
-; CHECK: add i64
+
+
+
+
+
+
+
+
+
+
+
+
+
 loop:
   %iv = phi i32 [ 0, %entry], [ %iv.next, %loop ]
   %t1 = sext i32 %iv to i64
@@ -252,16 +252,16 @@ exit:
   ret i64 %result
 }
 
-; The i induction variable looks like a wrap-around, but it really is just
-; a simple affine IV.  Make sure that indvars simplifies through.
+
+
 define i32 @indirectRecurrence() nounwind {
 entry:
   br label %loop
 
-; ReplaceLoopExitValue should fold the return value to constant 9.
-; CHECK: loop:
-; CHECK: phi i32
-; CHECK: ret i32 9
+
+
+
+
 loop:
   %j.0 = phi i32 [ 1, %entry ], [ %j.next, %cond_true ]
   %i.0 = phi i32 [ 0, %entry ], [ %j.0, %cond_true ]
@@ -276,28 +276,28 @@ return:
   ret i32 %i.0
 }
 
-; Eliminate the congruent phis j, k, and l.
-; Eliminate the redundant IV increments k.next and l.next.
-; Two phis should remain, one starting at %init, and one at %init1.
-; Two increments should remain, one by %step and one by %step1.
-; CHECK: loop:
-; CHECK: phi i32
-; CHECK: phi i32
-; CHECK-NOT: phi
-; CHECK: add i32
-; CHECK: add i32
-; CHECK: add i32
-; CHECK-NOT: add
-; CHECK: return:
-;
-; Five live-outs should remain.
-; CHECK: lcssa = phi
-; CHECK: lcssa = phi
-; CHECK: lcssa = phi
-; CHECK: lcssa = phi
-; CHECK: lcssa = phi
-; CHECK-NOT: phi
-; CHECK: ret
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define i32 @isomorphic(i32 %init, i32 %step, i32 %lim) nounwind {
 entry:
   %step1 = add i32 %step, 1
@@ -327,8 +327,8 @@ return:
   ret i32 %sum4
 }
 
-; Test a GEP IV that is derived from another GEP IV by a nop gep that
-; lowers the type without changing the expression.
+
+
 %structIF = type { i32, float }
 
 define void @congruentgepiv(%structIF* %base) nounwind uwtable ssp {
@@ -336,19 +336,19 @@ entry:
   %first = getelementptr inbounds %structIF, %structIF* %base, i64 0, i32 0
   br label %loop
 
-; CHECK: loop:
-; CHECK: phi %structIF*
-; CHECK-NOT: phi
-; CHECK: getelementptr inbounds
-; CHECK-NOT: getelementptr
-; CHECK: exit:
+
+
+
+
+
+
 loop:
   %ptr.iv = phi %structIF* [ %ptr.inc, %latch ], [ %base, %entry ]
   %next = phi i32* [ %next.inc, %latch ], [ %first, %entry ]
   store i32 4, i32* %next
   br i1 undef, label %latch, label %exit
 
-latch:                         ; preds = %for.inc50.i
+latch:                         
   %ptr.inc = getelementptr inbounds %structIF, %structIF* %ptr.iv, i64 1
   %next.inc = getelementptr inbounds %structIF, %structIF* %ptr.inc, i64 0, i32 0
   br label %loop
@@ -357,15 +357,15 @@ exit:
   ret void
 }
 
-; Test a widened IV that is used by a phi on different paths within the loop.
-;
-; CHECK: for.body:
-; CHECK: phi i64
-; CHECK: trunc i64
-; CHECK: if.then:
-; CHECK: for.inc:
-; CHECK: phi i32
-; CHECK: for.end:
+
+
+
+
+
+
+
+
+
 define void @phiUsesTrunc() nounwind {
 entry:
   br i1 undef, label %for.body, label %for.end

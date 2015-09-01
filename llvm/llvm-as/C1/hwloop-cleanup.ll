@@ -1,13 +1,13 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv4 -no-phi-elim-live-out-early-exit \
-; RUN:    < %s | FileCheck %s
-; Check that we remove the compare and induction variable instructions
-; after generating hardware loops.
-; Bug 6685.
 
-; CHECK: loop0
-; CHECK-NOT: r{{[0-9]+}}{{.}}={{.}}add(r{{[0-9]+}},{{.}}#-1)
-; CHECK-NOT: cmp.eq
-; CHECK: endloop0
+
+
+
+
+
+
+
+
+
 
 define i32 @test1(i32* nocapture %b, i32 %n) nounwind readonly {
 entry:
@@ -17,7 +17,7 @@ entry:
 for.body.preheader:
   br label %for.body
 
-for.body:                                         ; preds = %for.body.preheader, %for.body
+for.body:                                         
   %sum.03 = phi i32 [ %add, %for.body ], [ 0, %for.body.preheader ]
   %arrayidx.phi = phi i32* [ %arrayidx.inc, %for.body ], [ %b, %for.body.preheader ]
   %i.02 = phi i32 [ %inc, %for.body ], [ 0, %for.body.preheader ]
@@ -36,12 +36,12 @@ for.end:
   ret i32 %sum.0.lcssa
 }
 
-; This test checks that that initial loop count value is removed.
-; CHECK-NOT: ={{.}}#40
-; CHECK: loop0
-; CHECK-NOT: r{{[0-9]+}}{{.}}={{.}}add(r{{[0-9]+}},{{.}}#-1)
-; CHECK-NOT: cmp.eq
-; CHECK: endloop0
+
+
+
+
+
+
 
 define i32 @test2(i32* nocapture %b) nounwind readonly {
 entry:
@@ -62,11 +62,11 @@ for.end:
   ret i32 %add
 }
 
-; This test checks that we don't remove the induction variable since it's used.
-; CHECK: loop0
-; CHECK: r{{[0-9]+}}{{.}}={{.}}add(r{{[0-9]+}},{{.}}#1)
-; CHECK-NOT: cmp.eq
-; CHECK: endloop0
+
+
+
+
+
 define i32 @test3(i32* nocapture %b) nounwind {
 entry:
   br label %for.body

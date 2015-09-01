@@ -1,12 +1,12 @@
-; RUN: opt -tbaa -licm -S < %s | FileCheck %s
 
-; LICM should be able to hoist the address load out of the loop
-; by using TBAA information.
 
-; CHECK: @foo
-; CHECK:      entry:
-; CHECK-NEXT:   %tmp3 = load double*, double** @P, !tbaa !0
-; CHECK-NEXT:   br label %for.body
+
+
+
+
+
+
+
 
 @P = common global double* null
 
@@ -14,7 +14,7 @@ define void @foo(i64 %n) nounwind {
 entry:
   br label %for.body
 
-for.body:                                         ; preds = %entry, %for.body
+for.body:                                         
   %i.07 = phi i64 [ %inc, %for.body ], [ 0, %entry ]
   %tmp3 = load double*, double** @P, !tbaa !1
   %scevgep = getelementptr double, double* %tmp3, i64 %i.07
@@ -25,7 +25,7 @@ for.body:                                         ; preds = %entry, %for.body
   %exitcond = icmp eq i64 %inc, %n
   br i1 %exitcond, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void
 }
 
@@ -33,15 +33,15 @@ for.end:                                          ; preds = %for.body, %entry
 !1 = !{!6, !6, i64 0}
 !2 = !{!7, !7, i64 0}
 
-; LICM shouldn't hoist anything here.
 
-; CHECK: @bar
-; CHECK: loop:
-; CHECK: load
-; CHECK: store
-; CHECK: load
-; CHECK: store
-; CHECK: br label %loop
+
+
+
+
+
+
+
+
 
 define void @bar(i8** %p) nounwind {
 entry:

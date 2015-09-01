@@ -1,26 +1,26 @@
-; RUN: opt < %s -analyze -delinearize | FileCheck %s
+
 
 target datalayout = "e-m:e-p:32:32-i1:32-i64:64-a:0-n32"
 
-; Check that division by 1 can be delinearized.
-;
-; void test1(unsigned char *dst, int stride, int bs) {
-;   for (int r = bs; r >= 0; --r)
-;     for (int c = 0; c < bs; ++c)
-;       dst[r * stride + c] = dst[(r + 1) * stride + c - 1];
-; }
 
-; AddRec: {{(-1 + ((1 + %bs) * %stride)),+,(-1 * %stride)}<%for.cond1.preheader>,+,1}<nw><%for.body3>
-; CHECK: Inst:  %0 = load i8, i8* %arrayidx, align 1
-; CHECK: Base offset: %dst
-; CHECK: ArrayDecl[UnknownSize][%stride] with elements of 1 bytes.
-; CHECK: ArrayRef[{(1 + %bs),+,-1}<nw><%for.cond1.preheader>][{-1,+,1}<nw><%for.body3>]
 
-; AddRec: {{(%stride * %bs),+,(-1 * %stride)}<%for.cond1.preheader>,+,1}<nw><%for.body3>
-; CHECK: Inst:  store i8 %0, i8* %arrayidx7, align 1
-; CHECK: Base offset: %dst
-; CHECK: ArrayDecl[UnknownSize][%stride] with elements of 1 bytes.
-; CHECK: ArrayRef[{%bs,+,-1}<nsw><%for.cond1.preheader>][{0,+,1}<nuw><nsw><%for.body3>]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @test(i8* nocapture %dst, i32 %stride, i32 %bs) {
 entry:

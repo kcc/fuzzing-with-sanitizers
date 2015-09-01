@@ -1,7 +1,7 @@
-;RUN: llc < %s -march=r600 -mcpu=redwood | FileCheck %s
 
-; CHECK: {{^}}main:
-; CHECK-NOT: MOV
+
+
+
 define void @main(<4 x float> inreg %reg0) #0 {
 entry:
   %0 = extractelement <4 x float> %reg0, i32 0

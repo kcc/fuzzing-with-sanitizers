@@ -1,8 +1,8 @@
-; RUN: llc -march=amdgcn -mcpu=SI < %s | FileCheck -check-prefix=SI -check-prefix=FUNC %s
+
 
 declare i32 @llvm.r600.read.tidig.x() #1
 
-; FUNC-LABEL: @test_fmin_legacy_f64
+
 define void @test_fmin_legacy_f64(<4 x double> addrspace(1)* %out, <4 x double> inreg %reg0) #0 {
    %r0 = extractelement <4 x double> %reg0, i32 0
    %r1 = extractelement <4 x double> %reg0, i32 1
@@ -13,7 +13,7 @@ define void @test_fmin_legacy_f64(<4 x double> addrspace(1)* %out, <4 x double> 
    ret void
 }
 
-; FUNC-LABEL: @test_fmin_legacy_ule_f64
+
 define void @test_fmin_legacy_ule_f64(double addrspace(1)* %out, double addrspace(1)* %in) #0 {
   %tid = call i32 @llvm.r600.read.tidig.x() #1
   %gep.0 = getelementptr double, double addrspace(1)* %in, i32 %tid
@@ -28,7 +28,7 @@ define void @test_fmin_legacy_ule_f64(double addrspace(1)* %out, double addrspac
   ret void
 }
 
-; FUNC-LABEL: @test_fmin_legacy_ole_f64
+
 define void @test_fmin_legacy_ole_f64(double addrspace(1)* %out, double addrspace(1)* %in) #0 {
   %tid = call i32 @llvm.r600.read.tidig.x() #1
   %gep.0 = getelementptr double, double addrspace(1)* %in, i32 %tid
@@ -43,7 +43,7 @@ define void @test_fmin_legacy_ole_f64(double addrspace(1)* %out, double addrspac
   ret void
 }
 
-; FUNC-LABEL: @test_fmin_legacy_olt_f64
+
 define void @test_fmin_legacy_olt_f64(double addrspace(1)* %out, double addrspace(1)* %in) #0 {
   %tid = call i32 @llvm.r600.read.tidig.x() #1
   %gep.0 = getelementptr double, double addrspace(1)* %in, i32 %tid
@@ -58,7 +58,7 @@ define void @test_fmin_legacy_olt_f64(double addrspace(1)* %out, double addrspac
   ret void
 }
 
-; FUNC-LABEL: @test_fmin_legacy_ult_f64
+
 define void @test_fmin_legacy_ult_f64(double addrspace(1)* %out, double addrspace(1)* %in) #0 {
   %tid = call i32 @llvm.r600.read.tidig.x() #1
   %gep.0 = getelementptr double, double addrspace(1)* %in, i32 %tid

@@ -1,5 +1,5 @@
-; RUN: llc < %s -mtriple=x86_64-linux-gnu
-; PR1729
+
+
 
 	%struct.CUMULATIVE_ARGS = type { i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32 }
 	%struct.VEC_edge = type { i32, i32, [1 x %struct.edge_def*] }
@@ -82,123 +82,123 @@
 	%struct.varray_data = type { [1 x i64] }
 	%struct.varray_head_tag = type { i64, i64, i32, i8*, %struct.varray_data }
 	%union.tree_ann_d = type opaque
-@first_edge_aux_obj = external global i8*		; <i8**> [#uses=0]
-@first_block_aux_obj = external global i8*		; <i8**> [#uses=0]
-@n_edges = external global i32		; <i32*> [#uses=0]
-@ENTRY_BLOCK_PTR = external global %struct.basic_block_def*		; <%struct.basic_block_def**> [#uses=0]
-@EXIT_BLOCK_PTR = external global %struct.basic_block_def*		; <%struct.basic_block_def**> [#uses=0]
-@n_basic_blocks = external global i32		; <i32*> [#uses=0]
-@.str = external constant [9 x i8]		; <[9 x i8]*> [#uses=0]
-@rbi_pool = external global %struct.alloc_pool_def*		; <%struct.alloc_pool_def**> [#uses=0]
-@__FUNCTION__.19643 = external constant [18 x i8]		; <[18 x i8]*> [#uses=0]
-@.str1 = external constant [20 x i8]		; <[20 x i8]*> [#uses=0]
-@__FUNCTION__.19670 = external constant [15 x i8]		; <[15 x i8]*> [#uses=0]
-@basic_block_info = external global %struct.varray_head_tag*		; <%struct.varray_head_tag**> [#uses=0]
-@last_basic_block = external global i32		; <i32*> [#uses=0]
-@__FUNCTION__.19696 = external constant [14 x i8]		; <[14 x i8]*> [#uses=0]
-@__FUNCTION__.20191 = external constant [20 x i8]		; <[20 x i8]*> [#uses=0]
-@block_aux_obstack = external global %struct.obstack		; <%struct.obstack*> [#uses=0]
-@__FUNCTION__.20301 = external constant [20 x i8]		; <[20 x i8]*> [#uses=0]
-@__FUNCTION__.20316 = external constant [19 x i8]		; <[19 x i8]*> [#uses=0]
-@edge_aux_obstack = external global %struct.obstack		; <%struct.obstack*> [#uses=0]
-@stderr = external global %struct._IO_FILE*		; <%struct._IO_FILE**> [#uses=0]
-@__FUNCTION__.20463 = external constant [11 x i8]		; <[11 x i8]*> [#uses=0]
-@.str2 = external constant [7 x i8]		; <[7 x i8]*> [#uses=0]
-@.str3 = external constant [6 x i8]		; <[6 x i8]*> [#uses=0]
-@.str4 = external constant [4 x i8]		; <[4 x i8]*> [#uses=0]
-@.str5 = external constant [11 x i8]		; <[11 x i8]*> [#uses=0]
-@.str6 = external constant [8 x i8]		; <[8 x i8]*> [#uses=0]
-@.str7 = external constant [4 x i8]		; <[4 x i8]*> [#uses=0]
-@bitnames.20157 = external constant [13 x i8*]		; <[13 x i8*]*> [#uses=0]
-@.str8 = external constant [9 x i8]		; <[9 x i8]*> [#uses=0]
-@.str9 = external constant [3 x i8]		; <[3 x i8]*> [#uses=0]
-@.str10 = external constant [7 x i8]		; <[7 x i8]*> [#uses=0]
-@.str11 = external constant [3 x i8]		; <[3 x i8]*> [#uses=0]
-@.str12 = external constant [5 x i8]		; <[5 x i8]*> [#uses=0]
-@.str13 = external constant [9 x i8]		; <[9 x i8]*> [#uses=0]
-@.str14 = external constant [13 x i8]		; <[13 x i8]*> [#uses=0]
-@.str15 = external constant [12 x i8]		; <[12 x i8]*> [#uses=0]
-@.str16 = external constant [8 x i8]		; <[8 x i8]*> [#uses=0]
-@.str17 = external constant [10 x i8]		; <[10 x i8]*> [#uses=0]
-@.str18 = external constant [5 x i8]		; <[5 x i8]*> [#uses=0]
-@.str19 = external constant [6 x i8]		; <[6 x i8]*> [#uses=0]
-@.str20 = external constant [5 x i8]		; <[5 x i8]*> [#uses=0]
-@.str21 = external constant [3 x i8]		; <[3 x i8]*> [#uses=0]
-@.str22 = external constant [3 x i8]		; <[3 x i8]*> [#uses=0]
-@__FUNCTION__.19709 = external constant [20 x i8]		; <[20 x i8]*> [#uses=0]
-@.str23 = external constant [5 x i8]		; <[5 x i8]*> [#uses=0]
-@.str24 = external constant [10 x i8]		; <[10 x i8]*> [#uses=0]
-@__FUNCTION__.19813 = external constant [19 x i8]		; <[19 x i8]*> [#uses=0]
-@.str25 = external constant [7 x i8]		; <[7 x i8]*> [#uses=0]
-@.str26 = external constant [6 x i8]		; <[6 x i8]*> [#uses=0]
-@initialized.20241.b = external global i1		; <i1*> [#uses=0]
-@__FUNCTION__.20244 = external constant [21 x i8]		; <[21 x i8]*> [#uses=0]
-@__FUNCTION__.19601 = external constant [12 x i8]		; <[12 x i8]*> [#uses=0]
-@__FUNCTION__.14571 = external constant [8 x i8]		; <[8 x i8]*> [#uses=0]
-@__FUNCTION__.14535 = external constant [13 x i8]		; <[13 x i8]*> [#uses=0]
-@.str27 = external constant [28 x i8]		; <[28 x i8]*> [#uses=0]
-@__FUNCTION__.14589 = external constant [8 x i8]		; <[8 x i8]*> [#uses=0]
-@__FUNCTION__.19792 = external constant [12 x i8]		; <[12 x i8]*> [#uses=0]
-@__FUNCTION__.19851 = external constant [19 x i8]		; <[19 x i8]*> [#uses=0]
-@profile_status = external global i32		; <i32*> [#uses=0]
-@.str29 = external constant [46 x i8]		; <[46 x i8]*> [#uses=0]
-@.str30 = external constant [49 x i8]		; <[49 x i8]*> [#uses=0]
-@.str31 = external constant [54 x i8]		; <[54 x i8]*> [#uses=0]
-@.str32 = external constant [49 x i8]		; <[49 x i8]*> [#uses=1]
-@__FUNCTION__.19948 = external constant [15 x i8]		; <[15 x i8]*> [#uses=0]
-@reg_n_info = external global %struct.varray_head_tag*		; <%struct.varray_head_tag**> [#uses=0]
-@reload_completed = external global i32		; <i32*> [#uses=0]
-@.str33 = external constant [15 x i8]		; <[15 x i8]*> [#uses=0]
-@.str34 = external constant [43 x i8]		; <[43 x i8]*> [#uses=0]
-@.str35 = external constant [13 x i8]		; <[13 x i8]*> [#uses=0]
-@.str36 = external constant [1 x i8]		; <[1 x i8]*> [#uses=0]
-@.str37 = external constant [2 x i8]		; <[2 x i8]*> [#uses=0]
-@.str38 = external constant [16 x i8]		; <[16 x i8]*> [#uses=0]
-@cfun = external global %struct.function*		; <%struct.function**> [#uses=0]
-@.str39 = external constant [14 x i8]		; <[14 x i8]*> [#uses=0]
-@.str40 = external constant [11 x i8]		; <[11 x i8]*> [#uses=0]
-@.str41 = external constant [20 x i8]		; <[20 x i8]*> [#uses=0]
-@.str42 = external constant [17 x i8]		; <[17 x i8]*> [#uses=0]
-@.str43 = external constant [19 x i8]		; <[19 x i8]*> [#uses=0]
-@mode_size = external global [48 x i8]		; <[48 x i8]*> [#uses=0]
-@target_flags = external global i32		; <i32*> [#uses=0]
-@.str44 = external constant [11 x i8]		; <[11 x i8]*> [#uses=0]
-@reg_class_names = external global [0 x i8*]		; <[0 x i8*]*> [#uses=0]
-@.str45 = external constant [10 x i8]		; <[10 x i8]*> [#uses=0]
-@.str46 = external constant [13 x i8]		; <[13 x i8]*> [#uses=0]
-@.str47 = external constant [19 x i8]		; <[19 x i8]*> [#uses=0]
-@.str48 = external constant [12 x i8]		; <[12 x i8]*> [#uses=0]
-@.str49 = external constant [10 x i8]		; <[10 x i8]*> [#uses=0]
-@.str50 = external constant [3 x i8]		; <[3 x i8]*> [#uses=0]
-@.str51 = external constant [29 x i8]		; <[29 x i8]*> [#uses=0]
-@.str52 = external constant [17 x i8]		; <[17 x i8]*> [#uses=0]
-@.str53 = external constant [19 x i8]		; <[19 x i8]*> [#uses=0]
-@.str54 = external constant [22 x i8]		; <[22 x i8]*> [#uses=0]
-@.str55 = external constant [10 x i8]		; <[10 x i8]*> [#uses=0]
-@.str56 = external constant [12 x i8]		; <[12 x i8]*> [#uses=0]
-@.str57 = external constant [26 x i8]		; <[26 x i8]*> [#uses=0]
-@.str58 = external constant [15 x i8]		; <[15 x i8]*> [#uses=0]
-@.str59 = external constant [14 x i8]		; <[14 x i8]*> [#uses=0]
-@.str60 = external constant [26 x i8]		; <[26 x i8]*> [#uses=0]
-@.str61 = external constant [24 x i8]		; <[24 x i8]*> [#uses=0]
-@initialized.20366.b = external global i1		; <i1*> [#uses=0]
-@__FUNCTION__.20369 = external constant [20 x i8]		; <[20 x i8]*> [#uses=0]
-@__FUNCTION__.20442 = external constant [19 x i8]		; <[19 x i8]*> [#uses=0]
-@bb_bitnames.20476 = external constant [6 x i8*]		; <[6 x i8*]*> [#uses=0]
-@.str62 = external constant [6 x i8]		; <[6 x i8]*> [#uses=0]
-@.str63 = external constant [4 x i8]		; <[4 x i8]*> [#uses=0]
-@.str64 = external constant [10 x i8]		; <[10 x i8]*> [#uses=0]
-@.str65 = external constant [8 x i8]		; <[8 x i8]*> [#uses=0]
-@.str66 = external constant [17 x i8]		; <[17 x i8]*> [#uses=0]
-@.str67 = external constant [11 x i8]		; <[11 x i8]*> [#uses=0]
-@.str68 = external constant [15 x i8]		; <[15 x i8]*> [#uses=0]
-@.str69 = external constant [3 x i8]		; <[3 x i8]*> [#uses=0]
-@.str70 = external constant [3 x i8]		; <[3 x i8]*> [#uses=0]
-@__FUNCTION__.20520 = external constant [32 x i8]		; <[32 x i8]*> [#uses=0]
-@dump_file = external global %struct._IO_FILE*		; <%struct._IO_FILE**> [#uses=0]
-@.str71 = external constant [86 x i8]		; <[86 x i8]*> [#uses=0]
-@.str72 = external constant [94 x i8]		; <[94 x i8]*> [#uses=0]
-@reg_obstack = external global %struct.bitmap_obstack		; <%struct.bitmap_obstack*> [#uses=0]
+@first_edge_aux_obj = external global i8*		
+@first_block_aux_obj = external global i8*		
+@n_edges = external global i32		
+@ENTRY_BLOCK_PTR = external global %struct.basic_block_def*		
+@EXIT_BLOCK_PTR = external global %struct.basic_block_def*		
+@n_basic_blocks = external global i32		
+@.str = external constant [9 x i8]		
+@rbi_pool = external global %struct.alloc_pool_def*		
+@__FUNCTION__.19643 = external constant [18 x i8]		
+@.str1 = external constant [20 x i8]		
+@__FUNCTION__.19670 = external constant [15 x i8]		
+@basic_block_info = external global %struct.varray_head_tag*		
+@last_basic_block = external global i32		
+@__FUNCTION__.19696 = external constant [14 x i8]		
+@__FUNCTION__.20191 = external constant [20 x i8]		
+@block_aux_obstack = external global %struct.obstack		
+@__FUNCTION__.20301 = external constant [20 x i8]		
+@__FUNCTION__.20316 = external constant [19 x i8]		
+@edge_aux_obstack = external global %struct.obstack		
+@stderr = external global %struct._IO_FILE*		
+@__FUNCTION__.20463 = external constant [11 x i8]		
+@.str2 = external constant [7 x i8]		
+@.str3 = external constant [6 x i8]		
+@.str4 = external constant [4 x i8]		
+@.str5 = external constant [11 x i8]		
+@.str6 = external constant [8 x i8]		
+@.str7 = external constant [4 x i8]		
+@bitnames.20157 = external constant [13 x i8*]		
+@.str8 = external constant [9 x i8]		
+@.str9 = external constant [3 x i8]		
+@.str10 = external constant [7 x i8]		
+@.str11 = external constant [3 x i8]		
+@.str12 = external constant [5 x i8]		
+@.str13 = external constant [9 x i8]		
+@.str14 = external constant [13 x i8]		
+@.str15 = external constant [12 x i8]		
+@.str16 = external constant [8 x i8]		
+@.str17 = external constant [10 x i8]		
+@.str18 = external constant [5 x i8]		
+@.str19 = external constant [6 x i8]		
+@.str20 = external constant [5 x i8]		
+@.str21 = external constant [3 x i8]		
+@.str22 = external constant [3 x i8]		
+@__FUNCTION__.19709 = external constant [20 x i8]		
+@.str23 = external constant [5 x i8]		
+@.str24 = external constant [10 x i8]		
+@__FUNCTION__.19813 = external constant [19 x i8]		
+@.str25 = external constant [7 x i8]		
+@.str26 = external constant [6 x i8]		
+@initialized.20241.b = external global i1		
+@__FUNCTION__.20244 = external constant [21 x i8]		
+@__FUNCTION__.19601 = external constant [12 x i8]		
+@__FUNCTION__.14571 = external constant [8 x i8]		
+@__FUNCTION__.14535 = external constant [13 x i8]		
+@.str27 = external constant [28 x i8]		
+@__FUNCTION__.14589 = external constant [8 x i8]		
+@__FUNCTION__.19792 = external constant [12 x i8]		
+@__FUNCTION__.19851 = external constant [19 x i8]		
+@profile_status = external global i32		
+@.str29 = external constant [46 x i8]		
+@.str30 = external constant [49 x i8]		
+@.str31 = external constant [54 x i8]		
+@.str32 = external constant [49 x i8]		
+@__FUNCTION__.19948 = external constant [15 x i8]		
+@reg_n_info = external global %struct.varray_head_tag*		
+@reload_completed = external global i32		
+@.str33 = external constant [15 x i8]		
+@.str34 = external constant [43 x i8]		
+@.str35 = external constant [13 x i8]		
+@.str36 = external constant [1 x i8]		
+@.str37 = external constant [2 x i8]		
+@.str38 = external constant [16 x i8]		
+@cfun = external global %struct.function*		
+@.str39 = external constant [14 x i8]		
+@.str40 = external constant [11 x i8]		
+@.str41 = external constant [20 x i8]		
+@.str42 = external constant [17 x i8]		
+@.str43 = external constant [19 x i8]		
+@mode_size = external global [48 x i8]		
+@target_flags = external global i32		
+@.str44 = external constant [11 x i8]		
+@reg_class_names = external global [0 x i8*]		
+@.str45 = external constant [10 x i8]		
+@.str46 = external constant [13 x i8]		
+@.str47 = external constant [19 x i8]		
+@.str48 = external constant [12 x i8]		
+@.str49 = external constant [10 x i8]		
+@.str50 = external constant [3 x i8]		
+@.str51 = external constant [29 x i8]		
+@.str52 = external constant [17 x i8]		
+@.str53 = external constant [19 x i8]		
+@.str54 = external constant [22 x i8]		
+@.str55 = external constant [10 x i8]		
+@.str56 = external constant [12 x i8]		
+@.str57 = external constant [26 x i8]		
+@.str58 = external constant [15 x i8]		
+@.str59 = external constant [14 x i8]		
+@.str60 = external constant [26 x i8]		
+@.str61 = external constant [24 x i8]		
+@initialized.20366.b = external global i1		
+@__FUNCTION__.20369 = external constant [20 x i8]		
+@__FUNCTION__.20442 = external constant [19 x i8]		
+@bb_bitnames.20476 = external constant [6 x i8*]		
+@.str62 = external constant [6 x i8]		
+@.str63 = external constant [4 x i8]		
+@.str64 = external constant [10 x i8]		
+@.str65 = external constant [8 x i8]		
+@.str66 = external constant [17 x i8]		
+@.str67 = external constant [11 x i8]		
+@.str68 = external constant [15 x i8]		
+@.str69 = external constant [3 x i8]		
+@.str70 = external constant [3 x i8]		
+@__FUNCTION__.20520 = external constant [32 x i8]		
+@dump_file = external global %struct._IO_FILE*		
+@.str71 = external constant [86 x i8]		
+@.str72 = external constant [94 x i8]		
+@reg_obstack = external global %struct.bitmap_obstack		
 
 declare void @init_flow()
 
@@ -306,66 +306,66 @@ define void @check_bb_profile(%struct.basic_block_def* %bb, %struct._IO_FILE* %f
 entry:
 	br i1 false, label %cond_false759.preheader, label %cond_false149.preheader
 
-cond_false149.preheader:		; preds = %entry
+cond_false149.preheader:		
 	ret void
 
-cond_false759.preheader:		; preds = %entry
+cond_false759.preheader:		
 	br i1 false, label %cond_next873, label %cond_true794
 
-bb644:		; preds = %cond_next873
+bb644:		
 	ret void
 
-cond_true794:		; preds = %cond_false759.preheader
+cond_true794:		
 	ret void
 
-cond_next873:		; preds = %cond_false759.preheader
+cond_next873:		
 	br i1 false, label %bb882, label %bb644
 
-bb882:		; preds = %cond_next873
+bb882:		
 	br i1 false, label %cond_true893, label %cond_next901
 
-cond_true893:		; preds = %bb882
+cond_true893:		
 	br label %cond_false1036
 
-cond_next901:		; preds = %bb882
+cond_next901:		
 	ret void
 
-bb929:		; preds = %cond_next1150
-	%tmp934 = add i64 0, %lsum.11225.0		; <i64> [#uses=1]
+bb929:		
+	%tmp934 = add i64 0, %lsum.11225.0		
 	br i1 false, label %cond_next979, label %cond_true974
 
-cond_true974:		; preds = %bb929
+cond_true974:		
 	ret void
 
-cond_next979:		; preds = %bb929
+cond_next979:		
 	br label %cond_false1036
 
-cond_false1036:		; preds = %cond_next979, %cond_true893
-	%lsum.11225.0 = phi i64 [ 0, %cond_true893 ], [ %tmp934, %cond_next979 ]		; <i64> [#uses=2]
+cond_false1036:		
+	%lsum.11225.0 = phi i64 [ 0, %cond_true893 ], [ %tmp934, %cond_next979 ]		
 	br i1 false, label %cond_next1056, label %cond_true1051
 
-cond_true1051:		; preds = %cond_false1036
+cond_true1051:		
 	ret void
 
-cond_next1056:		; preds = %cond_false1036
+cond_next1056:		
 	br i1 false, label %cond_next1150, label %cond_true1071
 
-cond_true1071:		; preds = %cond_next1056
+cond_true1071:		
 	ret void
 
-cond_next1150:		; preds = %cond_next1056
-	%tmp1156 = icmp eq %struct.edge_def* null, null		; <i1> [#uses=1]
+cond_next1150:		
+	%tmp1156 = icmp eq %struct.edge_def* null, null		
 	br i1 %tmp1156, label %bb1159, label %bb929
 
-bb1159:		; preds = %cond_next1150
+bb1159:		
 	br i1 false, label %cond_true1169, label %UnifiedReturnBlock
 
-cond_true1169:		; preds = %bb1159
-	%tmp11741175 = trunc i64 %lsum.11225.0 to i32		; <i32> [#uses=1]
-	%tmp1178 = tail call i32 (%struct._IO_FILE*  , i8*  , ...) @fprintf( %struct._IO_FILE* noalias %file  , i8* getelementptr ([49 x i8], [49 x i8]* @.str32, i32 0, i64 0)  , i32 %tmp11741175, i32 0 )		; <i32> [#uses=0]
+cond_true1169:		
+	%tmp11741175 = trunc i64 %lsum.11225.0 to i32		
+	%tmp1178 = tail call i32 (%struct._IO_FILE*  , i8*  , ...) @fprintf( %struct._IO_FILE* noalias %file  , i8* getelementptr ([49 x i8], [49 x i8]* @.str32, i32 0, i64 0)  , i32 %tmp11741175, i32 0 )		
 	ret void
 
-UnifiedReturnBlock:		; preds = %bb1159
+UnifiedReturnBlock:		
 	ret void
 }
 

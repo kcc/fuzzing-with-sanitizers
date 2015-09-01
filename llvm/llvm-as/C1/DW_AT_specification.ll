@@ -1,13 +1,13 @@
-; RUN: llc -mtriple=x86_64-apple-darwin %s -o %t -filetype=obj
-; RUN: llvm-dwarfdump -debug-dump=info %t | FileCheck %s
 
-; test that the DW_AT_specification is a back edge in the file.
 
-; CHECK: DW_TAG_subprogram
-; CHECK-NEXT: DW_AT_linkage_name {{.*}} "_ZN3foo3barEv"
-; CHECK: DW_TAG_subprogram
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_specification {{.*}} "_ZN3foo3barEv"
+
+
+
+
+
+
+
+
 
 
 @_ZZN3foo3barEvE1x = constant i32 0, align 4

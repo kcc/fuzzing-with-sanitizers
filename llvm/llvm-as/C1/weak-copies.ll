@@ -1,4 +1,4 @@
-; RUN: opt -S -basicaa -objc-arc < %s | FileCheck %s
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64"
 target triple = "x86_64-apple-darwin11.0.0"
@@ -14,14 +14,14 @@ target triple = "x86_64-apple-darwin11.0.0"
 @"\01L_OBJC_IMAGE_INFO" = internal constant [2 x i32] [i32 0, i32 16], section "__DATA, __objc_imageinfo, regular, no_dead_strip"
 @llvm.used = appending global [2 x i8*] [i8* getelementptr inbounds ([3 x i8], [3 x i8]* @"\01L_OBJC_CLASS_NAME_", i32 0, i32 0), i8* bitcast ([2 x i32]* @"\01L_OBJC_IMAGE_INFO" to i8*)], section "llvm.metadata"
 
-; Eliminate unnecessary weak pointer copies.
 
-; CHECK:      define void @foo() {
-; CHECK-NEXT: entry:
-; CHECK-NEXT:   %call = call i8* @bar()
-; CHECK-NEXT:   call void @use(i8* %call) [[NUW:#[0-9]+]]
-; CHECK-NEXT:   ret void
-; CHECK-NEXT: }
+
+
+
+
+
+
+
 define void @foo() {
 entry:
   %w = alloca i8*, align 8
@@ -37,13 +37,13 @@ entry:
   ret void
 }
 
-; Eliminate unnecessary weak pointer copies in a block initialization.
 
-; CHECK:      define void @qux(i8* %me) #0 {
-; CHECK-NEXT: entry:
-; CHECK-NEXT:   %block = alloca %1, align 8
-; CHECK-NOT:    alloca
-; CHECK:      }
+
+
+
+
+
+
 define void @qux(i8* %me) nounwind {
 entry:
   %w = alloca i8*, align 8
@@ -84,6 +84,6 @@ declare i8* @objc_loadWeak(i8**)
 declare void @use(i8*) nounwind
 declare void @objc_destroyWeak(i8**)
 
-; CHECK: attributes [[NUW]] = { nounwind }
+
 
 !0 = !{}

@@ -1,5 +1,5 @@
-; This file is used with func-attrs-a.ll
-; RUN: true
+
+
 
 %struct.S0 = type <{ i8, i8, i8, i8 }>
 

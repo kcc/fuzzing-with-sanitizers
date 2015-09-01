@@ -1,4 +1,4 @@
-; RUN: llc -mtriple=thumbv7-windows-itanium -mcpu=cortex-a9 -o - %s | FileCheck %s
+
 
 declare void @llvm.memmove.p0i8.p0i8.i32(i8* nocapture, i8* nocapture, i32, i32, i1) nounwind
 declare void @llvm.memcpy.p0i8.p0i8.i32(i8* nocapture, i8* nocapture, i32, i32, i1) nounwind
@@ -12,7 +12,7 @@ entry:
   unreachable
 }
 
-; CHECK-NOT: __aeabi_memmove
+
 
 define void @copy() nounwind {
 entry:
@@ -20,7 +20,7 @@ entry:
   unreachable
 }
 
-; CHECK-NOT: __aeabi_memcpy
+
 
 define i32 @divide(i32 %i, i32 %j) nounwind {
 entry:
@@ -28,5 +28,5 @@ entry:
   ret i32 %quotient
 }
 
-; CHECK-NOT: __aeabi_idiv
+
 

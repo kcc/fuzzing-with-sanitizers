@@ -1,6 +1,6 @@
-; RUN: opt < %s -asan -S -o %t.ll
-; RUN: FileCheck %s < %t.ll
-; RUN: llc < %t.ll | FileCheck %s --check-prefix=ASM
+
+
+
 
 target datalayout = "e-m:x-p:32:32-i64:64-f80:32-n8:16:32-S32"
 target triple = "i386-pc-windows-msvc"
@@ -33,21 +33,21 @@ define void @MyCPUID(i32 %fxn, i32* %out) sanitize_address {
   ret void
 }
 
-; We used to introduce stack mallocs for UAR detection, but that makes LLVM run
-; out of registers on 32-bit platforms. Therefore, we don't do stack malloc on
-; such functions.
 
-; CHECK-LABEL: define void @MyCPUID(i32 %fxn, i32* %out)
-; CHECK: %MyAlloca = alloca [96 x i8], align 32
-; CHECK-NOT: call {{.*}} @__asan_stack_malloc
 
-; The code generator should recognize that all operands are just stack memory.
-; This is important with MS inline asm where operand lists are implicit and all
-; local variables can be referenced freely.
 
-; ASM-LABEL: MyCPUID:
-; ASM:      cpuid
-; ASM-NEXT: movl    %eax, {{[0-9]+}}(%esp)
-; ASM-NEXT: movl    %ebx, {{[0-9]+}}(%esp)
-; ASM-NEXT: movl    %ecx, {{[0-9]+}}(%esp)
-; ASM-NEXT: movl    %edx, {{[0-9]+}}(%esp)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

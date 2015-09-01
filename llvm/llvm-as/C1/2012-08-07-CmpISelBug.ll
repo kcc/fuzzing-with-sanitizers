@@ -1,14 +1,14 @@
-; RUN: llc < %s -mtriple=x86_64-apple-macosx | FileCheck %s
 
-; Cmp lowering should not look past the truncate unless the high bits are known
-; zero.
-; rdar://12027825
+
+
+
+
 
 define void @foo(i8 %arg4, i32 %arg5, i32* %arg14) nounwind {
 bb:
-; CHECK-LABEL: foo:
-; CHECK-NOT: testl
-; CHECK: testb
+
+
+
   %tmp48 = zext i8 %arg4 to i32
   %tmp49 = and i32 %tmp48, 32
   %tmp50 = add i32 %tmp49, 1593371643

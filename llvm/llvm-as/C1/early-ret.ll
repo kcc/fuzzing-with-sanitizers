@@ -1,4 +1,4 @@
-; RUN: llc < %s -mtriple=powerpc64-unknown-linux-gnu | FileCheck %s
+
 target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-f128:128:128-v128:128:128-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
 
@@ -7,16 +7,16 @@ entry:
   %tobool = icmp eq i32* %P, null
   br i1 %tobool, label %if.end, label %if.then
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   store i32 0, i32* %P, align 4
   br label %if.end
 
-if.end:                                           ; preds = %entry, %if.then
+if.end:                                           
   ret void
 
-; CHECK: @foo
-; CHECK: beqlr
-; CHECK: blr
+
+
+
 }
 
 define void @bar(i32* %P, i32* %Q) #0 {
@@ -24,25 +24,25 @@ entry:
   %tobool = icmp eq i32* %P, null
   br i1 %tobool, label %if.else, label %if.then
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   store i32 0, i32* %P, align 4
   %tobool1 = icmp eq i32* %Q, null
   br i1 %tobool1, label %if.end3, label %if.then2
 
-if.then2:                                         ; preds = %if.then
+if.then2:                                         
   store i32 1, i32* %Q, align 4
   br label %if.end3
 
-if.else:                                          ; preds = %entry
+if.else:                                          
   store i32 0, i32* %Q, align 4
   br label %if.end3
 
-if.end3:                                          ; preds = %if.then, %if.then2, %if.else
+if.end3:                                          
   ret void
 
-; CHECK: @bar
-; CHECK: beqlr
-; CHECK: blr
+
+
+
 }
 
 
@@ -52,9 +52,9 @@ if.end3:                                          ; preds = %if.then, %if.then2,
 @.str3 = private unnamed_addr constant [2 x i8] c"d\00"
 @.str4 = private unnamed_addr constant [2 x i8] c"e\00"
 define i8* @dont_assert(i32 %x) {
-; LLVM would assert due to moving an early return into the jump table block and
-; removing one of its predecessors despite that block ending with an indirect
-; branch.
+
+
+
 entry:
   switch i32 %x, label %sw.epilog [
     i32 1, label %return

@@ -1,19 +1,19 @@
-; RUN: opt -basicaa -loop-distribute -verify-loop-info -verify-dom-info -S < %s \
-; RUN:   | FileCheck %s
 
-; We should distribute this loop along === but not along ---.  The last
-; partition won't be vectorized due to conditional stores so it's better to
-; keep it with the second partition which has a dependence cycle.
 
-; (1st statement):
-;   for (i = 0; i < n; i++) {
-;     C[i] = D[i] * E[i];
-;=============================
-;     A[i + 1] = A[i] * B[i];
-;-----------------------------
-;     if (F[i])
-;        G[i] = H[i] * J[i];
-;   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.10.0"
@@ -30,20 +30,20 @@ define void @f(i32* noalias %a,
 entry:
   br label %for.body
 
-; Ensure that we have only two partitions, the first with one multiplication
-; and the second with two.
 
-; CHECK: for.body.ldist1:
-; CHECK:    %mulC.ldist1 = mul i32 %loadD.ldist1, %loadE.ldist1
-; CHECK:    br i1 %exitcond.ldist1, label %entry.split, label %for.body.ldist1
-; CHECK: entry.split:
-; CHECK:    br label %for.body
-; CHECK: for.body:
-; CHECK:    %mulA = mul i32 %loadB, %loadA
-; CHECK:    %mulG = mul i32 %loadH, %loadJ
-; CHECK: for.end:
 
-for.body:                                         ; preds = %for.body, %entry
+
+
+
+
+
+
+
+
+
+
+
+for.body:                                         
   %ind = phi i64 [ 0, %entry ], [ %add, %if.end ]
 
   %arrayidxD = getelementptr inbounds i32, i32* %d, i64 %ind
@@ -90,6 +90,6 @@ if.end:
   %exitcond = icmp eq i64 %add, 20
   br i1 %exitcond, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret void
 }

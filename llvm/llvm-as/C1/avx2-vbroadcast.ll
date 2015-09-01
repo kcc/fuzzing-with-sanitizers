@@ -1,6 +1,6 @@
-; RUN: llc < %s -mtriple=x86_64-apple-darwin -mcpu=core-avx2 -mattr=+avx2 | FileCheck %s
 
-; CHECK: vpbroadcastb (%
+
+
 define <16 x i8> @BB16(i8* %ptr) nounwind uwtable readnone ssp {
 entry:
   %q = load i8, i8* %ptr, align 4
@@ -22,7 +22,7 @@ entry:
   %qf = insertelement <16 x i8> %qe, i8 %q, i32 15
   ret <16 x i8> %qf
 }
-; CHECK: vpbroadcastb (%
+
 define <32 x i8> @BB32(i8* %ptr) nounwind uwtable readnone ssp {
 entry:
   %q = load i8, i8* %ptr, align 4
@@ -61,7 +61,7 @@ entry:
   %q2f = insertelement <32 x i8> %q2e, i8 %q, i32 31
   ret <32 x i8> %q2f
 }
-; CHECK: vpbroadcastw (%
+
 
 define <8 x i16> @W16(i16* %ptr) nounwind uwtable readnone ssp {
 entry:
@@ -76,7 +76,7 @@ entry:
   %q7 = insertelement <8 x i16> %q6, i16 %q, i32 7
   ret <8 x i16> %q7
 }
-; CHECK: vpbroadcastw (%
+
 define <16 x i16> @WW16(i16* %ptr) nounwind uwtable readnone ssp {
 entry:
   %q = load i16, i16* %ptr, align 4
@@ -98,7 +98,7 @@ entry:
   %qf = insertelement <16 x i16> %qe, i16 %q, i32 15
   ret <16 x i16> %qf
 }
-; CHECK: vbroadcastss (%
+
 define <4 x i32> @D32(i32* %ptr) nounwind uwtable readnone ssp {
 entry:
   %q = load i32, i32* %ptr, align 4
@@ -108,7 +108,7 @@ entry:
   %q3 = insertelement <4 x i32> %q2, i32 %q, i32 3
   ret <4 x i32> %q3
 }
-; CHECK: vbroadcastss (%
+
 define <8 x i32> @DD32(i32* %ptr) nounwind uwtable readnone ssp {
 entry:
   %q = load i32, i32* %ptr, align 4
@@ -122,7 +122,7 @@ entry:
   %q7 = insertelement <8 x i32> %q6, i32 %q, i32 7
   ret <8 x i32> %q7
 }
-; CHECK: vpbroadcastq (%
+
 define <2 x i64> @Q64(i64* %ptr) nounwind uwtable readnone ssp {
 entry:
   %q = load i64, i64* %ptr, align 4
@@ -130,7 +130,7 @@ entry:
   %q1 = insertelement <2 x i64> %q0, i64 %q, i32 1
   ret <2 x i64> %q1
 }
-; CHECK: vbroadcastsd (%
+
 define <4 x i64> @QQ64(i64* %ptr) nounwind uwtable readnone ssp {
 entry:
   %q = load i64, i64* %ptr, align 4
@@ -141,8 +141,8 @@ entry:
   ret <4 x i64> %q3
 }
 
-; make sure that we still don't support broadcast double into 128-bit vector
-; this used to crash
+
+
 define <2 x double> @I(double* %ptr) nounwind uwtable readnone ssp {
 entry:
   %q = load double, double* %ptr, align 4
@@ -151,27 +151,27 @@ entry:
   ret <2 x double> %vecinit2.i
 }
 
-; CHECK: V111
-; CHECK: vpbroadcastd
-; CHECK: ret
+
+
+
 define <8 x i32> @V111(<8 x i32> %in) nounwind uwtable readnone ssp {
 entry:
   %g = add <8 x i32> %in, <i32 1, i32 1, i32 1, i32 1, i32 1, i32 1, i32 1, i32 1>
   ret <8 x i32> %g
 }
 
-; CHECK: V113
-; CHECK: vbroadcastss
-; CHECK: ret
+
+
+
 define <8 x float> @V113(<8 x float> %in) nounwind uwtable readnone ssp {
 entry:
   %g = fadd <8 x float> %in, <float 0xbf80000000000000, float 0xbf80000000000000, float 0xbf80000000000000, float 0xbf80000000000000, float 0xbf80000000000000, float 0xbf80000000000000, float 0xbf80000000000000, float 0xbf80000000000000>
   ret <8 x float> %g
 }
 
-; CHECK: _e2
-; CHECK: vbroadcastss
-; CHECK: ret
+
+
+
 define <4 x float> @_e2(float* %ptr) nounwind uwtable readnone ssp {
   %vecinit.i = insertelement <4 x float> undef, float        0xbf80000000000000, i32 0
   %vecinit2.i = insertelement <4 x float> %vecinit.i, float  0xbf80000000000000, i32 1
@@ -180,9 +180,9 @@ define <4 x float> @_e2(float* %ptr) nounwind uwtable readnone ssp {
   ret <4 x float> %vecinit6.i
 }
 
-; CHECK: _e4
-; CHECK-NOT: broadcast
-; CHECK: ret
+
+
+
 define <8 x i8> @_e4(i8* %ptr) nounwind uwtable readnone ssp {
   %vecinit0.i = insertelement <8 x i8> undef, i8       52, i32 0
   %vecinit1.i = insertelement <8 x i8> %vecinit0.i, i8 52, i32 1
@@ -223,147 +223,147 @@ ret:
   ret void
 }
 
-; CHECK: _inreg0
-; CHECK: broadcastss
-; CHECK: ret
+
+
+
 define <8 x i32> @_inreg0(i32 %scalar) nounwind uwtable readnone ssp {
   %in = insertelement <8 x i32> undef, i32 %scalar, i32 0
   %wide = shufflevector <8 x i32> %in, <8 x i32> undef, <8 x i32> zeroinitializer
   ret <8 x i32> %wide
 }
 
-; CHECK: _inreg1
-; CHECK: broadcastss
-; CHECK: ret
+
+
+
 define <8 x float> @_inreg1(float %scalar) nounwind uwtable readnone ssp {
   %in = insertelement <8 x float> undef, float %scalar, i32 0
   %wide = shufflevector <8 x float> %in, <8 x float> undef, <8 x i32> zeroinitializer
   ret <8 x float> %wide
 }
 
-; CHECK: _inreg2
-; CHECK: broadcastss
-; CHECK: ret
+
+
+
 define <4 x float> @_inreg2(float %scalar) nounwind uwtable readnone ssp {
   %in = insertelement <4 x float> undef, float %scalar, i32 0
   %wide = shufflevector <4 x float> %in, <4 x float> undef, <4 x i32> zeroinitializer
   ret <4 x float> %wide
 }
 
-; CHECK: _inreg3
-; CHECK: broadcastsd
-; CHECK: ret
+
+
+
 define <4 x double> @_inreg3(double %scalar) nounwind uwtable readnone ssp {
   %in = insertelement <4 x double> undef, double %scalar, i32 0
   %wide = shufflevector <4 x double> %in, <4 x double> undef, <4 x i32> zeroinitializer
   ret <4 x double> %wide
 }
 
-;CHECK-LABEL: _inreg8xfloat:
-;CHECK: vbroadcastss
-;CHECK: ret
+
+
+
 define   <8 x float> @_inreg8xfloat(<8 x float> %a) {
   %b = shufflevector <8 x float> %a, <8 x float> undef, <8 x i32> zeroinitializer
   ret <8 x float> %b
 }
 
-;CHECK-LABEL: _inreg4xfloat:
-;CHECK: vbroadcastss
-;CHECK: ret
+
+
+
 define   <4 x float> @_inreg4xfloat(<4 x float> %a) {
   %b = shufflevector <4 x float> %a, <4 x float> undef, <4 x i32> zeroinitializer
   ret <4 x float> %b
 }
 
-;CHECK-LABEL: _inreg16xi16:
-;CHECK: vpbroadcastw
-;CHECK: ret
+
+
+
 define   <16 x i16> @_inreg16xi16(<16 x i16> %a) {
   %b = shufflevector <16 x i16> %a, <16 x i16> undef, <16 x i32> zeroinitializer
   ret <16 x i16> %b
 }
 
-;CHECK-LABEL: _inreg8xi16:
-;CHECK: vpbroadcastw
-;CHECK: ret
+
+
+
 define   <8 x i16> @_inreg8xi16(<8 x i16> %a) {
   %b = shufflevector <8 x i16> %a, <8 x i16> undef, <8 x i32> zeroinitializer
   ret <8 x i16> %b
 }
 
 
-;CHECK-LABEL: _inreg4xi64:
-;CHECK: vbroadcastsd
-;CHECK: ret
+
+
+
 define   <4 x i64> @_inreg4xi64(<4 x i64> %a) {
   %b = shufflevector <4 x i64> %a, <4 x i64> undef, <4 x i32> zeroinitializer
   ret <4 x i64> %b
 }
 
-;CHECK-LABEL: _inreg2xi64:
-;CHECK: vpbroadcastq
-;CHECK: ret
+
+
+
 define   <2 x i64> @_inreg2xi64(<2 x i64> %a) {
   %b = shufflevector <2 x i64> %a, <2 x i64> undef, <2 x i32> zeroinitializer
   ret <2 x i64> %b
 }
 
-;CHECK-LABEL: _inreg4xdouble:
-;CHECK: vbroadcastsd
-;CHECK: ret
+
+
+
 define   <4 x double> @_inreg4xdouble(<4 x double> %a) {
   %b = shufflevector <4 x double> %a, <4 x double> undef, <4 x i32> zeroinitializer
   ret <4 x double> %b
 }
 
-;CHECK-LABEL: _inreg2xdouble:
-;CHECK: vmovddup
-;CHECK: ret
+
+
+
 define   <2 x double> @_inreg2xdouble(<2 x double> %a) {
   %b = shufflevector <2 x double> %a, <2 x double> undef, <2 x i32> zeroinitializer
   ret <2 x double> %b
 }
 
-;CHECK-LABEL: _inreg8xi32:
-;CHECK: vbroadcastss
-;CHECK: ret
+
+
+
 define   <8 x i32> @_inreg8xi32(<8 x i32> %a) {
   %b = shufflevector <8 x i32> %a, <8 x i32> undef, <8 x i32> zeroinitializer
   ret <8 x i32> %b
 }
 
-;CHECK-LABEL: _inreg4xi32:
-;CHECK: vbroadcastss
-;CHECK: ret
+
+
+
 define   <4 x i32> @_inreg4xi32(<4 x i32> %a) {
   %b = shufflevector <4 x i32> %a, <4 x i32> undef, <4 x i32> zeroinitializer
   ret <4 x i32> %b
 }
 
-;CHECK-LABEL: _inreg32xi8:
-;CHECK: vpbroadcastb
-;CHECK: ret
+
+
+
 define   <32 x i8> @_inreg32xi8(<32 x i8> %a) {
   %b = shufflevector <32 x i8> %a, <32 x i8> undef, <32 x i32> zeroinitializer
   ret <32 x i8> %b
 }
 
-;CHECK-LABEL: _inreg16xi8:
-;CHECK: vpbroadcastb
-;CHECK: ret
+
+
+
 define   <16 x i8> @_inreg16xi8(<16 x i8> %a) {
   %b = shufflevector <16 x i8> %a, <16 x i8> undef, <16 x i32> zeroinitializer
   ret <16 x i8> %b
 }
 
-; These tests check that a vbroadcast instruction is used when we have a splat
-; formed from a concat_vectors (via the shufflevector) of two BUILD_VECTORs
-; (via the insertelements).
 
-; CHECK-LABEL: splat_concat1
-; CHECK-NOT: vinsertf128
-; CHECK: vbroadcastss
-; CHECK-NEXT: ret
+
+
+
+
+
+
+
 define <8 x float> @splat_concat1(float %f) {
   %1 = insertelement <4 x float> undef, float %f, i32 0
   %2 = insertelement <4 x float> %1, float %f, i32 1
@@ -373,10 +373,10 @@ define <8 x float> @splat_concat1(float %f) {
   ret <8 x float> %5
 }
 
-; CHECK-LABEL: splat_concat2
-; CHECK-NOT: vinsertf128
-; CHECK: vbroadcastss
-; CHECK-NEXT: ret
+
+
+
+
 define <8 x float> @splat_concat2(float %f) {
   %1 = insertelement <4 x float> undef, float %f, i32 0
   %2 = insertelement <4 x float> %1, float %f, i32 1
@@ -390,10 +390,10 @@ define <8 x float> @splat_concat2(float %f) {
   ret <8 x float> %9
 }
 
-; CHECK-LABEL: splat_concat3
-; CHECK-NOT: vinsertf128
-; CHECK: vbroadcastsd
-; CHECK-NEXT: ret
+
+
+
+
 define <4 x double> @splat_concat3(double %d) {
   %1 = insertelement <2 x double> undef, double %d, i32 0
   %2 = insertelement <2 x double> %1, double %d, i32 1
@@ -401,10 +401,10 @@ define <4 x double> @splat_concat3(double %d) {
   ret <4 x double> %3
 }
 
-; CHECK-LABEL: splat_concat4
-; CHECK-NOT: vinsertf128
-; CHECK: vbroadcastsd
-; CHECK-NEXT: ret
+
+
+
+
 define <4 x double> @splat_concat4(double %d) {
   %1 = insertelement <2 x double> undef, double %d, i32 0
   %2 = insertelement <2 x double> %1, double %d, i32 1
@@ -414,17 +414,17 @@ define <4 x double> @splat_concat4(double %d) {
   ret <4 x double> %5
 }
 
-; Test cases for <rdar://problem/16074331>.
-; Instruction selection for broacast instruction fails if
-; the load cannot be folded into the broadcast.
-; This happens if the load has initial one use but other uses are
-; created later, or if selection DAG cannot prove that folding the
-; load will not create a cycle in the DAG.
-; Those test cases exerce the latter.
 
-; CHECK-LABEL: isel_crash_16b
-; CHECK: vpbroadcastb {{[^,]+}}, %xmm{{[0-9]+}}
-; CHECK: ret
+
+
+
+
+
+
+
+
+
+
 define void @isel_crash_16b(i8* %cV_R.addr) {
 eintry:
   %__a.addr.i = alloca <2 x i64>, align 16
@@ -441,9 +441,9 @@ eintry:
   ret void
 }
 
-; CHECK-LABEL: isel_crash_32b
-; CHECK: vpbroadcastb {{[^,]+}}, %ymm{{[0-9]+}}
-; CHECK: ret
+
+
+
 define void @isel_crash_32b(i8* %cV_R.addr) {
 eintry:
   %__a.addr.i = alloca <4 x i64>, align 16
@@ -460,9 +460,9 @@ eintry:
   ret void
 }
 
-; CHECK-LABEL: isel_crash_8w
-; CHECK: vpbroadcastw {{[^,]+}}, %xmm{{[0-9]+}}
-; CHECK: ret
+
+
+
 define void @isel_crash_8w(i16* %cV_R.addr) {
 entry:
   %__a.addr.i = alloca <2 x i64>, align 16
@@ -479,9 +479,9 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: isel_crash_16w
-; CHECK: vpbroadcastw {{[^,]+}}, %ymm{{[0-9]+}}
-; CHECK: ret
+
+
+
 define void @isel_crash_16w(i16* %cV_R.addr) {
 eintry:
   %__a.addr.i = alloca <4 x i64>, align 16
@@ -498,9 +498,9 @@ eintry:
   ret void
 }
 
-; CHECK-LABEL: isel_crash_4d
-; CHECK: vbroadcastss {{[^,]+}}, %xmm{{[0-9]+}}
-; CHECK: ret
+
+
+
 define void @isel_crash_4d(i32* %cV_R.addr) {
 entry:
   %__a.addr.i = alloca <2 x i64>, align 16
@@ -517,9 +517,9 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: isel_crash_8d
-; CHECK: vbroadcastss {{[^,]+}}, %ymm{{[0-9]+}}
-; CHECK: ret
+
+
+
 define void @isel_crash_8d(i32* %cV_R.addr) {
 eintry:
   %__a.addr.i = alloca <4 x i64>, align 16
@@ -536,9 +536,9 @@ eintry:
   ret void
 }
 
-; CHECK-LABEL: isel_crash_2q
-; CHECK: vpbroadcastq {{[^,]+}}, %xmm{{[0-9]+}}
-; CHECK: ret
+
+
+
 define void @isel_crash_2q(i64* %cV_R.addr) {
 entry:
   %__a.addr.i = alloca <2 x i64>, align 16
@@ -554,9 +554,9 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: isel_crash_4q
-; CHECK: vbroadcastsd {{[^,]+}}, %ymm{{[0-9]+}}
-; CHECK: ret
+
+
+
 define void @isel_crash_4q(i64* %cV_R.addr) {
 eintry:
   %__a.addr.i = alloca <4 x i64>, align 16

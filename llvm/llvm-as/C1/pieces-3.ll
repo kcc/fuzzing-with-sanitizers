@@ -1,40 +1,40 @@
-; RUN: llc %s -filetype=obj -o - | llvm-dwarfdump - | FileCheck %s
-;
-;    // Compile with -O1
-;    typedef struct {
-;      int a;
-;      int b;
-;    } Inner;
-;
-;    typedef struct {
-;      Inner inner[2];
-;    } Outer;
-;
-;    int foo(Outer outer) {
-;      Inner i1 = outer.inner[1];
-;      return i1.a;
-;    }
-;
-; CHECK: DW_TAG_formal_parameter [3]
-; CHECK-NEXT:   DW_AT_location [DW_FORM_data4]        ([[LOC:.*]])
-; CHECK-NEXT:   DW_AT_name {{.*}}"outer"
-; CHECK: DW_TAG_variable
-;                                                 rsi, piece 0x00000004
-; CHECK-NEXT:   DW_AT_location [DW_FORM_block1]       {{.*}} 54 93 04
-; CHECK-NEXT:   "i1"
-;
-; CHECK: .debug_loc
-; CHECK: [[LOC]]:
-; CHECK: Beginning address offset: 0x0000000000000000
-; CHECK:    Ending address offset: 0x0000000000000004
-; rdi, piece 0x00000008, piece 0x00000004, rsi, piece 0x00000004
-; CHECK: Location description: 55 93 08 93 04 54 93 04 
-;
-; ModuleID = '/Volumes/Data/llvm/test/DebugInfo/X86/sroasplit-2.ll'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.9.0"
 
-; Function Attrs: nounwind ssp uwtable
+
 define i32 @foo(i64 %outer.coerce0, i64 %outer.coerce1) #0 {
   call void @llvm.dbg.value(metadata i64 %outer.coerce0, i64 0, metadata !24, metadata !25), !dbg !26
   call void @llvm.dbg.declare(metadata !{null}, metadata !27, metadata !28), !dbg !26
@@ -50,13 +50,13 @@ define i32 @foo(i64 %outer.coerce0, i64 %outer.coerce1) #0 {
   ret i32 %outer.sroa.1.8.extract.trunc, !dbg !36
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
-; Function Attrs: nounwind
+
 declare void @llvm.memcpy.p0i8.p0i8.i64(i8* nocapture, i8* nocapture readonly, i64, i32, i1) #2
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #1
 
 attributes #0 = { nounwind ssp uwtable "no-frame-pointer-elim"="true" }

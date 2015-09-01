@@ -1,22 +1,22 @@
-; RUN: llc < %s -mcpu=cortex-a9 -join-liveintervals=0 -verify-machineinstrs
-; PR11765
+
+
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:64:128-a0:0:64-n32-S64"
 target triple = "armv7-none-linux-gnueabi"
 
-; This test case exercises the MachineCopyPropagation pass by disabling the
-; RegisterCoalescer.
+
+
 
 define arm_aapcs_vfpcc void @foo(i8* %arg) nounwind uwtable align 2 {
 bb:
   br i1 undef, label %bb1, label %bb2
 
-bb1:                                              ; preds = %bb
+bb1:                                              
   unreachable
 
-bb2:                                              ; preds = %bb
+bb2:                                              
   br i1 undef, label %bb92, label %bb3
 
-bb3:                                              ; preds = %bb2
+bb3:                                              
   %tmp = or <4 x i32> undef, undef
   %tmp4 = bitcast <4 x i32> %tmp to <4 x float>
   %tmp5 = fsub <4 x float> <float -0.000000e+00, float -0.000000e+00, float -0.000000e+00, float -0.000000e+00>, %tmp4
@@ -111,7 +111,7 @@ bb3:                                              ; preds = %bb2
   store <4 x float> %tmp91, <4 x float>* undef, align 16
   unreachable
 
-bb92:                                             ; preds = %bb2
+bb92:                                             
   ret void
 }
 

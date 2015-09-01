@@ -1,9 +1,9 @@
-; RUN: llc < %s -verify-coalescing
-; PR12927
+
+
 target triple = "x86_64-apple-macosx10.8.0"
 
-; This is a case where removeCopyByCommutingDef() creates an identity copy that
-; joinCopy must then deal with correctly.
+
+
 
 @s = common global i16 0, align 2
 @g1 = common global i32 0, align 4
@@ -18,7 +18,7 @@ for.body.lr.ph:
   %.pre = load i32, i32* @g1, align 4
   br i1 %tobool6, label %for.body.us, label %for.body
 
-for.body.us:                                      ; preds = %for.body.lr.ph, %for.inc.us
+for.body.us:                                      
   %1 = phi i32 [ %3, %for.inc.us ], [ %.pre, %for.body.lr.ph ]
   %dec13.us = phi i16 [ %dec12.us, %for.inc.us ], [ %s.promoted, %for.body.lr.ph ]
   %i.011.us = phi i32 [ %inc.us, %for.inc.us ], [ undef, %for.body.lr.ph ]
@@ -32,7 +32,7 @@ for.body.us:                                      ; preds = %for.body.lr.ph, %fo
   %tobool5.us = icmp eq i32 %conv3.us, %add4.us
   br i1 %tobool5.us, label %for.inc.us, label %if.then7.us
 
-for.inc.us:                                       ; preds = %cond.end.us, %for.body.us
+for.inc.us:                                       
   %3 = phi i32 [ %1, %for.body.us ], [ %4, %cond.end.us ]
   %dec12.us = phi i16 [ %add.us, %for.body.us ], [ %dec.us, %cond.end.us ]
   %inc.us = add i32 %i.011.us, 1
@@ -40,21 +40,21 @@ for.inc.us:                                       ; preds = %cond.end.us, %for.b
   %tobool.us = icmp eq i32 %inc.us, 0
   br i1 %tobool.us, label %for.end, label %for.body.us
 
-cond.end.us:                                      ; preds = %if.then7.us, %cond.false.us
+cond.end.us:                                      
   %4 = phi i32 [ 0, %cond.false.us ], [ %1, %if.then7.us ]
   %cond.us = phi i32 [ 0, %cond.false.us ], [ %v.010.us, %if.then7.us ]
   store i32 %cond.us, i32* @g0, align 4
   br label %for.inc.us
 
-cond.false.us:                                    ; preds = %if.then7.us
+cond.false.us:                                    
   store i32 0, i32* @g1, align 4
   br label %cond.end.us
 
-if.then7.us:                                      ; preds = %for.body.us
+if.then7.us:                                      
   %dec.us = add i16 %add.us, -1
   br i1 %tobool1.us, label %cond.end.us, label %cond.false.us
 
-for.body:                                         ; preds = %for.body.lr.ph, %for.body
+for.body:                                         
   %dec13 = phi i16 [ %dec12, %for.body ], [ %s.promoted, %for.body.lr.ph ]
   %i.011 = phi i32 [ %inc, %for.body ], [ undef, %for.body.lr.ph ]
   %v.010 = phi i32 [ %phitmp, %for.body ], [ 1, %for.body.lr.ph ]
@@ -71,7 +71,7 @@ for.body:                                         ; preds = %for.body.lr.ph, %fo
   %tobool = icmp eq i32 %inc, 0
   br i1 %tobool, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.inc.us, %for.body
+for.end:                                          
   %dec12.lcssa = phi i16 [ %dec12.us, %for.inc.us ], [ %dec12, %for.body ]
   store i16 %dec12.lcssa, i16* @s, align 2
   ret void

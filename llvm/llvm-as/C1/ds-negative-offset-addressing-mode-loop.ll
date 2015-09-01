@@ -1,35 +1,35 @@
-; RUN: llc -march=amdgcn -mcpu=SI -verify-machineinstrs -mattr=+load-store-opt < %s | FileCheck -check-prefix=SI --check-prefix=CHECK %s
-; RUN: llc -march=amdgcn -mcpu=bonaire -verify-machineinstrs -mattr=+load-store-opt < %s | FileCheck -check-prefix=CI --check-prefix=CHECK %s
-; RUN: llc -march=amdgcn -mcpu=SI -verify-machineinstrs -mattr=+load-store-opt,+unsafe-ds-offset-folding < %s | FileCheck -check-prefix=CI --check-prefix=CHECK %s
+
+
+
 
 declare i32 @llvm.r600.read.tidig.x() #0
 declare void @llvm.AMDGPU.barrier.local() #1
 
-; Function Attrs: nounwind
-; CHECK-LABEL: {{^}}signed_ds_offset_addressing_loop:
-; CHECK: BB0_1:
-; CHECK: v_add_i32_e32 [[VADDR:v[0-9]+]],
-; SI-DAG: ds_read_b32 v{{[0-9]+}}, [[VADDR]]
-; SI-DAG: v_add_i32_e32 [[VADDR4:v[0-9]+]], vcc, 4, [[VADDR]]
-; SI-DAG: ds_read_b32 v{{[0-9]+}}, [[VADDR4]]
-; SI-DAG: v_add_i32_e32 [[VADDR0x80:v[0-9]+]], vcc, 0x80, [[VADDR]]
-; SI-DAG: ds_read_b32 v{{[0-9]+}}, [[VADDR0x80]]
-; SI-DAG: v_add_i32_e32 [[VADDR0x84:v[0-9]+]], vcc, 0x84, [[VADDR]]
-; SI-DAG: ds_read_b32 v{{[0-9]+}}, [[VADDR0x84]]
-; SI-DAG: v_add_i32_e32 [[VADDR0x100:v[0-9]+]], vcc, 0x100, [[VADDR]]
-; SI-DAG: ds_read_b32 v{{[0-9]+}}, [[VADDR0x100]]
 
-; CI-DAG: ds_read2_b32 v{{\[[0-9]+:[0-9]+\]}}, [[VADDR]] offset1:1
-; CI-DAG: ds_read2_b32 v{{\[[0-9]+:[0-9]+\]}}, [[VADDR]] offset0:32 offset1:33
-; CI-DAG: ds_read_b32 v{{[0-9]+}}, [[VADDR]] offset:256
-; CHECK: s_endpgm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @signed_ds_offset_addressing_loop(float addrspace(1)* noalias nocapture %out, float addrspace(3)* noalias nocapture readonly %lptr, i32 %n) #2 {
 entry:
   %x.i = tail call i32 @llvm.r600.read.tidig.x() #0
   %mul = shl nsw i32 %x.i, 1
   br label %for.body
 
-for.body:                                         ; preds = %for.body, %entry
+for.body:                                         
   %sum.03 = phi float [ 0.000000e+00, %entry ], [ %add13, %for.body ]
   %offset.02 = phi i32 [ %mul, %entry ], [ %add14, %for.body ]
   %k.01 = phi i32 [ 0, %entry ], [ %inc, %for.body ]
@@ -58,7 +58,7 @@ for.body:                                         ; preds = %for.body, %entry
   %exitcond = icmp eq i32 %inc, 8
   br i1 %exitcond, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   %tmp5 = sext i32 %x.i to i64
   %arrayidx15 = getelementptr inbounds float, float addrspace(1)* %out, i64 %tmp5
   store float %add13, float addrspace(1)* %arrayidx15, align 4

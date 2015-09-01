@@ -1,14 +1,14 @@
-; RUN: llc < %s -stress-early-ifcvt -aarch64-atomic-cfg-tidy=0 | FileCheck %s
+
 target triple = "arm64-apple-macosx"
 
-; CHECK: mm2
+
 define i32 @mm2(i32* nocapture %p, i32 %n) nounwind uwtable readonly ssp {
 entry:
   br label %do.body
 
-; CHECK: do.body
-; Loop body has no branches before the backedge.
-; CHECK-NOT: LBB
+
+
+
 do.body:
   %max.0 = phi i32 [ 0, %entry ], [ %max.1, %do.cond ]
   %min.0 = phi i32 [ 0, %entry ], [ %min.1, %do.cond ]
@@ -27,7 +27,7 @@ if.else:
 do.cond:
   %max.1 = phi i32 [ %0, %do.body ], [ %max.0, %if.else ]
   %min.1 = phi i32 [ %min.0, %do.body ], [ %.min.0, %if.else ]
-; CHECK: cbnz
+
   %dec = add i32 %n.addr.0, -1
   %tobool = icmp eq i32 %dec, 0
   br i1 %tobool, label %do.end, label %do.body
@@ -37,10 +37,10 @@ do.end:
   ret i32 %sub
 }
 
-; CHECK-LABEL: fold_inc_true_32:
-; CHECK: {{subs.*wzr,|cmp}} w2, #1
-; CHECK-NEXT: csinc w0, w1, w0, eq
-; CHECK-NEXT: ret
+
+
+
+
 define i32 @fold_inc_true_32(i32 %x, i32 %y, i32 %c) nounwind ssp {
 entry:
   %tobool = icmp eq i32 %c, 1
@@ -55,10 +55,10 @@ done:
   ret i32 %cond
 }
 
-; CHECK-LABEL: fold_inc_true_64:
-; CHECK: {{subs.*xzr,|cmp}} x2, #1
-; CHECK-NEXT: csinc x0, x1, x0, eq
-; CHECK-NEXT: ret
+
+
+
+
 define i64 @fold_inc_true_64(i64 %x, i64 %y, i64 %c) nounwind ssp {
 entry:
   %tobool = icmp eq i64 %c, 1
@@ -73,10 +73,10 @@ done:
   ret i64 %cond
 }
 
-; CHECK-LABEL: fold_inc_false_32:
-; CHECK: {{subs.*wzr,|cmp}} w2, #1
-; CHECK-NEXT: csinc w0, w1, w0, ne
-; CHECK-NEXT: ret
+
+
+
+
 define i32 @fold_inc_false_32(i32 %x, i32 %y, i32 %c) nounwind ssp {
 entry:
   %tobool = icmp eq i32 %c, 1
@@ -91,10 +91,10 @@ done:
   ret i32 %cond
 }
 
-; CHECK-LABEL: fold_inc_false_64:
-; CHECK: {{subs.*xzr,|cmp}} x2, #1
-; CHECK-NEXT: csinc x0, x1, x0, ne
-; CHECK-NEXT: ret
+
+
+
+
 define i64 @fold_inc_false_64(i64 %x, i64 %y, i64 %c) nounwind ssp {
 entry:
   %tobool = icmp eq i64 %c, 1
@@ -109,10 +109,10 @@ done:
   ret i64 %cond
 }
 
-; CHECK-LABEL: fold_inv_true_32:
-; CHECK: {{subs.*wzr,|cmp}} w2, #1
-; CHECK-NEXT: csinv w0, w1, w0, eq
-; CHECK-NEXT: ret
+
+
+
+
 define i32 @fold_inv_true_32(i32 %x, i32 %y, i32 %c) nounwind ssp {
 entry:
   %tobool = icmp eq i32 %c, 1
@@ -127,10 +127,10 @@ done:
   ret i32 %cond
 }
 
-; CHECK-LABEL: fold_inv_true_64:
-; CHECK: {{subs.*xzr,|cmp}} x2, #1
-; CHECK-NEXT: csinv x0, x1, x0, eq
-; CHECK-NEXT: ret
+
+
+
+
 define i64 @fold_inv_true_64(i64 %x, i64 %y, i64 %c) nounwind ssp {
 entry:
   %tobool = icmp eq i64 %c, 1
@@ -145,10 +145,10 @@ done:
   ret i64 %cond
 }
 
-; CHECK-LABEL: fold_inv_false_32:
-; CHECK: {{subs.*wzr,|cmp}} w2, #1
-; CHECK-NEXT: csinv w0, w1, w0, ne
-; CHECK-NEXT: ret
+
+
+
+
 define i32 @fold_inv_false_32(i32 %x, i32 %y, i32 %c) nounwind ssp {
 entry:
   %tobool = icmp eq i32 %c, 1
@@ -163,10 +163,10 @@ done:
   ret i32 %cond
 }
 
-; CHECK-LABEL: fold_inv_false_64:
-; CHECK: {{subs.*xzr,|cmp}} x2, #1
-; CHECK-NEXT: csinv x0, x1, x0, ne
-; CHECK-NEXT: ret
+
+
+
+
 define i64 @fold_inv_false_64(i64 %x, i64 %y, i64 %c) nounwind ssp {
 entry:
   %tobool = icmp eq i64 %c, 1
@@ -181,10 +181,10 @@ done:
   ret i64 %cond
 }
 
-; CHECK-LABEL: fold_neg_true_32:
-; CHECK: {{subs.*wzr,|cmp}} w2, #1
-; CHECK-NEXT: csneg w0, w1, w0, eq
-; CHECK-NEXT: ret
+
+
+
+
 define i32 @fold_neg_true_32(i32 %x, i32 %y, i32 %c) nounwind ssp {
 entry:
   %tobool = icmp eq i32 %c, 1
@@ -199,10 +199,10 @@ done:
   ret i32 %cond
 }
 
-; CHECK-LABEL: fold_neg_true_64:
-; CHECK: {{subs.*xzr,|cmp}} x2, #1
-; CHECK-NEXT: csneg x0, x1, x0, eq
-; CHECK-NEXT: ret
+
+
+
+
 define i64 @fold_neg_true_64(i64 %x, i64 %y, i64 %c) nounwind ssp {
 entry:
   %tobool = icmp eq i64 %c, 1
@@ -217,10 +217,10 @@ done:
   ret i64 %cond
 }
 
-; CHECK-LABEL: fold_neg_false_32:
-; CHECK: {{subs.*wzr,|cmp}} w2, #1
-; CHECK-NEXT: csneg w0, w1, w0, ne
-; CHECK-NEXT: ret
+
+
+
+
 define i32 @fold_neg_false_32(i32 %x, i32 %y, i32 %c) nounwind ssp {
 entry:
   %tobool = icmp eq i32 %c, 1
@@ -235,10 +235,10 @@ done:
   ret i32 %cond
 }
 
-; CHECK-LABEL: fold_neg_false_64:
-; CHECK: {{subs.*xzr,|cmp}} x2, #1
-; CHECK-NEXT: csneg x0, x1, x0, ne
-; CHECK-NEXT: ret
+
+
+
+
 define i64 @fold_neg_false_64(i64 %x, i64 %y, i64 %c) nounwind ssp {
 entry:
   %tobool = icmp eq i64 %c, 1
@@ -253,10 +253,10 @@ done:
   ret i64 %cond
 }
 
-; CHECK: cbnz_32
-; CHECK: {{subs.*wzr,|cmp}} w2, #0
-; CHECK-NEXT: csel w0, w1, w0, ne
-; CHECK-NEXT: ret
+
+
+
+
 define i32 @cbnz_32(i32 %x, i32 %y, i32 %c) nounwind ssp {
 entry:
   %tobool = icmp eq i32 %c, 0
@@ -270,10 +270,10 @@ done:
   ret i32 %cond
 }
 
-; CHECK: cbnz_64
-; CHECK: {{subs.*xzr,|cmp}} x2, #0
-; CHECK-NEXT: csel x0, x1, x0, ne
-; CHECK-NEXT: ret
+
+
+
+
 define i64 @cbnz_64(i64 %x, i64 %y, i64 %c) nounwind ssp {
 entry:
   %tobool = icmp eq i64 %c, 0
@@ -287,10 +287,10 @@ done:
   ret i64 %cond
 }
 
-; CHECK: cbz_32
-; CHECK: {{subs.*wzr,|cmp}} w2, #0
-; CHECK-NEXT: csel w0, w1, w0, eq
-; CHECK-NEXT: ret
+
+
+
+
 define i32 @cbz_32(i32 %x, i32 %y, i32 %c) nounwind ssp {
 entry:
   %tobool = icmp ne i32 %c, 0
@@ -304,10 +304,10 @@ done:
   ret i32 %cond
 }
 
-; CHECK: cbz_64
-; CHECK: {{subs.*xzr,|cmp}} x2, #0
-; CHECK-NEXT: csel x0, x1, x0, eq
-; CHECK-NEXT: ret
+
+
+
+
 define i64 @cbz_64(i64 %x, i64 %y, i64 %c) nounwind ssp {
 entry:
   %tobool = icmp ne i64 %c, 0
@@ -321,10 +321,10 @@ done:
   ret i64 %cond
 }
 
-; CHECK: tbnz_32
-; CHECK: {{ands.*xzr,|tst}} w2, #0x80
-; CHECK-NEXT: csel w0, w1, w0, ne
-; CHECK-NEXT: ret
+
+
+
+
 define i32 @tbnz_32(i32 %x, i32 %y, i32 %c) nounwind ssp {
 entry:
   %mask = and i32 %c, 128
@@ -339,10 +339,10 @@ done:
   ret i32 %cond
 }
 
-; CHECK: tbnz_64
-; CHECK: {{ands.*xzr,|tst}} x2, #0x8000000000000000
-; CHECK-NEXT: csel x0, x1, x0, ne
-; CHECK-NEXT: ret
+
+
+
+
 define i64 @tbnz_64(i64 %x, i64 %y, i64 %c) nounwind ssp {
 entry:
   %mask = and i64 %c, 9223372036854775808
@@ -357,10 +357,10 @@ done:
   ret i64 %cond
 }
 
-; CHECK: tbz_32
-; CHECK: {{ands.*xzr,|tst}} w2, #0x80
-; CHECK-NEXT: csel w0, w1, w0, eq
-; CHECK-NEXT: ret
+
+
+
+
 define i32 @tbz_32(i32 %x, i32 %y, i32 %c) nounwind ssp {
 entry:
   %mask = and i32 %c, 128
@@ -375,10 +375,10 @@ done:
   ret i32 %cond
 }
 
-; CHECK: tbz_64
-; CHECK: {{ands.*xzr,|tst}} x2, #0x8000000000000000
-; CHECK-NEXT: csel x0, x1, x0, eq
-; CHECK-NEXT: ret
+
+
+
+
 define i64 @tbz_64(i64 %x, i64 %y, i64 %c) nounwind ssp {
 entry:
   %mask = and i64 %c, 9223372036854775808
@@ -393,8 +393,8 @@ done:
   ret i64 %cond
 }
 
-; This function from 175.vpr folds an ADDWri into a CSINC.
-; Remember to clear the kill flag on the ADDWri.
+
+
 define i32 @get_ytrack_to_xtracks() nounwind ssp {
 entry:
   br label %for.body
@@ -409,14 +409,14 @@ if.then.i146:
   %add9.i145 = add i32 %rem.i144, 1
   br label %is_sbox.exit155
 
-is_sbox.exit155:                                  ; preds = %if.then.i146, %for.body
+is_sbox.exit155:                                  
   %seg_offset.0.i151 = phi i32 [ %add9.i145, %if.then.i146 ], [ undef, %for.body ]
   %idxprom15.i152 = sext i32 %seg_offset.0.i151 to i64
   %arrayidx18.i154 = getelementptr inbounds i32, i32* null, i64 %idxprom15.i152
   %x1 = load i32, i32* %arrayidx18.i154, align 4
   br i1 undef, label %for.body51, label %for.body
 
-for.body51:                                       ; preds = %is_sbox.exit155
+for.body51:                                       
   call fastcc void @get_switch_type(i32 %x1, i32 undef, i16 signext undef, i16 signext undef, i16* undef)
   unreachable
 }

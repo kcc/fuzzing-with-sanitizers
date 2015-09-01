@@ -1,4 +1,4 @@
-; RUN: llc -mcpu=pwr7 < %s | FileCheck %s
+
 target datalayout = "E-m:e-i64:64-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
 
@@ -18,9 +18,9 @@ next:
   %conv174 = or i32 %shl170, %shl161.masked
   ret i32 %conv174
 
-; CHECK-LABEL: @test1
-; CHECK-NOT: rlwimi 3, {{[0-9]+}}, 15, 0, 16
-; CHECK: blr
+
+
+
 }
 
 define i32 @test2() #0 {
@@ -38,10 +38,10 @@ next:
   %conv174 = or i32 %shl170, %shl161.masked
   ret i32 %conv174
 
-; CHECK-LABEL: @test2
-; CHECK: slwi 3, {{[0-9]+}}, 7
-; CHECK: rlwimi 3, {{[0-9]+}}, 15, 16, 16
-; CHECK: blr
+
+
+
+
 }
 
 attributes #0 = { nounwind }

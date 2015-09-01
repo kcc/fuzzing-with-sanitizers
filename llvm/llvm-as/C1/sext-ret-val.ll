@@ -1,5 +1,5 @@
-; RUN: llc < %s -march=x86 | grep movzbl | count 1
-; rdar://6699246
+
+
 
 define signext i8 @t1(i8* %A) nounwind readnone ssp {
 entry:

@@ -1,6 +1,6 @@
-; RUN: llc -march=hexagon < %s | FileCheck %s
 
-;CHECK: jumpr  r{{[0-9]+}}
+
+
 
 define i32 @check_indirect_br(i8* %target) nounwind {
 entry:

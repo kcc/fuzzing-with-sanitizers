@@ -1,4 +1,4 @@
-; RUN: llc < %s -march=x86 | FileCheck %s
+
 
 define void @ccosl({ x86_fp80, x86_fp80 }* noalias sret %agg.result, { x86_fp80, x86_fp80 } %z) nounwind {
 entry:
@@ -11,11 +11,11 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: ccosl:
-; CHECK:         movl    {{[0-9]+}}(%esp), %[[sret_reg:[^ ]+]]
-; CHECK:         movl    %[[sret_reg]], (%esp)
-; CHECK:         calll   {{.*ccoshl.*}}
-; CHECK:         movl    %[[sret_reg]], %eax
-; CHECK:         retl
+
+
+
+
+
+
 
 declare void @ccoshl({ x86_fp80, x86_fp80 }* noalias sret, { x86_fp80, x86_fp80 }) nounwind

@@ -1,4 +1,4 @@
-; RUN: llc < %s
+
 
 !llvm.dbg.cu = !{!0}
 !llvm.module.flags = !{!2}

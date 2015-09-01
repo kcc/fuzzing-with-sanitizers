@@ -1,16 +1,16 @@
-; RUN: llc -march=aarch64 < %s | FileCheck %s
 
-; Following test cases check:
-;   a / D; b / D; c / D;
-;                =>
-;   recip = 1.0 / D; a * recip; b * recip; c * recip;
+
+
+
+
+
 define void @three_fdiv_float(float %D, float %a, float %b, float %c) #0 {
-; CHECK-LABEL: three_fdiv_float:
-; CHECK: fdiv
-; CHECK-NEXT-NOT: fdiv
-; CHECK: fmul
-; CHECK: fmul
-; CHECK: fmul
+
+
+
+
+
+
   %div = fdiv float %a, %D
   %div1 = fdiv float %b, %D
   %div2 = fdiv float %c, %D
@@ -19,12 +19,12 @@ define void @three_fdiv_float(float %D, float %a, float %b, float %c) #0 {
 }
 
 define void @three_fdiv_double(double %D, double %a, double %b, double %c) #0 {
-; CHECK-LABEL: three_fdiv_double:
-; CHECK: fdiv
-; CHECK-NEXT-NOT: fdiv
-; CHECK: fmul
-; CHECK: fmul
-; CHECK: fmul
+
+
+
+
+
+
   %div = fdiv double %a, %D
   %div1 = fdiv double %b, %D
   %div2 = fdiv double %c, %D
@@ -33,12 +33,12 @@ define void @three_fdiv_double(double %D, double %a, double %b, double %c) #0 {
 }
 
 define void @three_fdiv_4xfloat(<4 x float> %D, <4 x float> %a, <4 x float> %b, <4 x float> %c) #0 {
-; CHECK-LABEL: three_fdiv_4xfloat:
-; CHECK: fdiv
-; CHECK-NEXT-NOT: fdiv
-; CHECK: fmul
-; CHECK: fmul
-; CHECK: fmul
+
+
+
+
+
+
   %div = fdiv <4 x float> %a, %D
   %div1 = fdiv <4 x float> %b, %D
   %div2 = fdiv <4 x float> %c, %D
@@ -47,12 +47,12 @@ define void @three_fdiv_4xfloat(<4 x float> %D, <4 x float> %a, <4 x float> %b, 
 }
 
 define void @three_fdiv_2xdouble(<2 x double> %D, <2 x double> %a, <2 x double> %b, <2 x double> %c) #0 {
-; CHECK-LABEL: three_fdiv_2xdouble:
-; CHECK: fdiv
-; CHECK-NEXT-NOT: fdiv
-; CHECK: fmul
-; CHECK: fmul
-; CHECK: fmul
+
+
+
+
+
+
   %div = fdiv <2 x double> %a, %D
   %div1 = fdiv <2 x double> %b, %D
   %div2 = fdiv <2 x double> %c, %D
@@ -60,13 +60,13 @@ define void @three_fdiv_2xdouble(<2 x double> %D, <2 x double> %a, <2 x double> 
   ret void
 }
 
-; Following test cases check we never combine two FDIVs if neither of them
-; calculates a reciprocal.
+
+
 define void @two_fdiv_float(float %D, float %a, float %b) #0 {
-; CHECK-LABEL: two_fdiv_float:
-; CHECK: fdiv
-; CHECK: fdiv
-; CHECK-NEXT-NOT: fmul
+
+
+
+
   %div = fdiv float %a, %D
   %div1 = fdiv float %b, %D
   tail call void @foo_2f(float %div, float %div1)
@@ -74,10 +74,10 @@ define void @two_fdiv_float(float %D, float %a, float %b) #0 {
 }
 
 define void @two_fdiv_double(double %D, double %a, double %b) #0 {
-; CHECK-LABEL: two_fdiv_double:
-; CHECK: fdiv
-; CHECK: fdiv
-; CHECK-NEXT-NOT: fmul
+
+
+
+
   %div = fdiv double %a, %D
   %div1 = fdiv double %b, %D
   tail call void @foo_2d(double %div, double %div1)

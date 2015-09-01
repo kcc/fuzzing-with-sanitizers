@@ -1,4 +1,4 @@
-; RUN: opt < %s -inline -prune-eh -disable-output
+
 
         %"struct.std::__codecvt_abstract_base<char,char,__mbstate_t>" = type { %"struct.std::locale::facet" }
         %"struct.std::basic_streambuf<wchar_t,std::char_traits<wchar_t> >" = type { i32 (...)**, i32*, i32*, i32*, i32*, i32*, i32*, %"struct.std::locale" }
@@ -18,8 +18,8 @@ entry:
 
 define fastcc void @_ZNKSt7num_putIwSt19ostreambuf_iteratorIwSt11char_traitsIwEEE13_M_insert_intIlEES3_S3_RSt8ios_basewT_() {
 entry:
-        %tmp.38 = shl i32 0, 3          ; <i32> [#uses=1]
-        %tmp.39 = alloca i8, i32 %tmp.38                ; <i8*> [#uses=0]
+        %tmp.38 = shl i32 0, 3          
+        %tmp.39 = alloca i8, i32 %tmp.38                
         ret void
 }
 

@@ -1,11 +1,11 @@
-; RUN: opt < %s -inline -pass-remarks=inline -pass-remarks-missed=inline -pass-remarks-analysis=inline -S 2>&1 | FileCheck %s
 
-; CHECK: foo should always be inlined (cost=always)
-; CHECK: foo inlined into bar
-; CHECK: foz should never be inlined (cost=never)
-; CHECK: foz will not be inlined into bar
 
-; Function Attrs: alwaysinline nounwind uwtable
+
+
+
+
+
+
 define i32 @foo(i32 %x, i32 %y) #0 {
 entry:
   %x.addr = alloca i32, align 4
@@ -18,7 +18,7 @@ entry:
   ret i32 %add
 }
 
-; Function Attrs: noinline nounwind uwtable
+
 define float @foz(i32 %x, i32 %y) #1 {
 entry:
   %x.addr = alloca i32, align 4
@@ -32,7 +32,7 @@ entry:
   ret float %conv
 }
 
-; Function Attrs: nounwind uwtable
+
 define i32 @bar(i32 %j) #2 {
 entry:
   %j.addr = alloca i32, align 4

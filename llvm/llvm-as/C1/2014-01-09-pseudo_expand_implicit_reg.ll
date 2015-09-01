@@ -1,10 +1,10 @@
-; RUN: llc -mtriple=arm-eabi -mattr=+neon -print-before=post-RA-sched %s -o - 2>&1 \
-; RUN:  | FileCheck %s
+
+
 
 define void @vst(i8* %m, [4 x i64] %v) {
 entry:
-; CHECK: vst:
-; CHECK: VST1d64Q %R{{[0-9]+}}<kill>, 8, %D{{[0-9]+}}, pred:14, pred:%noreg, %Q{{[0-9]+}}_Q{{[0-9]+}}<imp-use,kill>
+
+
 
   %v0 = extractvalue [4 x i64] %v, 0
   %v1 = extractvalue [4 x i64] %v, 1
@@ -36,8 +36,8 @@ entry:
 
 %struct.__neon_int8x8x4_t = type { <8 x i8>,  <8 x i8>,  <8 x i8>, <8 x i8> }
 define <8 x i8> @vtbx4(<8 x i8>* %A, %struct.__neon_int8x8x4_t* %B, <8 x i8>* %C) nounwind {
-; CHECK: vtbx4:
-; CHECK: VTBX4 {{.*}}, pred:14, pred:%noreg, %Q{{[0-9]+}}_Q{{[0-9]+}}<imp-use>
+
+
 	%tmp1 = load <8 x i8>, <8 x i8>* %A
 	%tmp2 = load %struct.__neon_int8x8x4_t, %struct.__neon_int8x8x4_t* %B
         %tmp3 = extractvalue %struct.__neon_int8x8x4_t %tmp2, 0

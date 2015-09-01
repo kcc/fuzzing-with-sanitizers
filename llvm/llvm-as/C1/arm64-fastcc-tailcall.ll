@@ -1,10 +1,10 @@
-; RUN: llc < %s -march=arm64 | FileCheck %s
+
 
 define void @caller(i32* nocapture %p, i32 %a, i32 %b) nounwind optsize ssp {
-; CHECK-NOT: stp
-; CHECK: b       {{_callee|callee}}
-; CHECK-NOT: ldp
-; CHECK: ret
+
+
+
+
   %1 = icmp eq i32 %b, 0
   br i1 %1, label %3, label %2
 

@@ -1,38 +1,38 @@
-; RUN: llc -mtriple=x86_64-linux -mcpu=nehalem < %s | FileCheck %s --check-prefix=LIN
-; RUN: llc -mtriple=x86_64-win32 -mcpu=nehalem < %s | FileCheck %s --check-prefix=WIN
-; RUN: llc -mtriple=i686-win32 -mcpu=nehalem < %s | FileCheck %s --check-prefix=LIN32
-; rdar://7398554
 
-; When doing vector gather-scatter index calculation with 32-bit indices,
-; use an efficient mov/shift sequence rather than shuffling each individual
-; element out of the index vector.
 
-; CHECK-LABEL: foo:
-; LIN: movdqa	(%rsi), %xmm0
-; LIN: pand 	(%rdx), %xmm0
-; LIN: pextrq	$1, %xmm0, %r[[REG4:.+]]
-; LIN: movd 	%xmm0, %r[[REG2:.+]]
-; LIN: movslq	%e[[REG2]], %r[[REG1:.+]]
-; LIN: sarq    $32, %r[[REG2]]
-; LIN: movslq	%e[[REG4]], %r[[REG3:.+]]
-; LIN: sarq    $32, %r[[REG4]]
-; LIN: movsd	(%rdi,%r[[REG1]],8), %xmm0
-; LIN: movhpd	(%rdi,%r[[REG2]],8), %xmm0
-; LIN: movsd	(%rdi,%r[[REG3]],8), %xmm1
-; LIN: movhpd	(%rdi,%r[[REG4]],8), %xmm1
 
-; WIN: movdqa	(%rdx), %xmm0
-; WIN: pand 	(%r8), %xmm0
-; WIN: pextrq	$1, %xmm0, %r[[REG4:.+]]
-; WIN: movd 	%xmm0, %r[[REG2:.+]]
-; WIN: movslq	%e[[REG2]], %r[[REG1:.+]]
-; WIN: sarq    $32, %r[[REG2]]
-; WIN: movslq	%e[[REG4]], %r[[REG3:.+]]
-; WIN: sarq    $32, %r[[REG4]]
-; WIN: movsd	(%rcx,%r[[REG1]],8), %xmm0
-; WIN: movhpd	(%rcx,%r[[REG2]],8), %xmm0
-; WIN: movsd	(%rcx,%r[[REG3]],8), %xmm1
-; WIN: movhpd	(%rcx,%r[[REG4]],8), %xmm1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define <4 x double> @foo(double* %p, <4 x i32>* %i, <4 x i32>* %h) nounwind {
   %a = load <4 x i32>, <4 x i32>* %i
@@ -57,15 +57,15 @@ define <4 x double> @foo(double* %p, <4 x i32>* %i, <4 x i32>* %h) nounwind {
   ret <4 x double> %v3
 }
 
-; Check that the sequence previously used above, which bounces the vector off the
-; cache works for x86-32. Note that in this case it will not be used for index
-; calculation, since indexes are 32-bit, not 64.
-; CHECK-LABEL: old:
-; LIN32: movaps	%xmm0, (%esp)
-; LIN32-DAG: {{(mov|and)}}l	(%esp),
-; LIN32-DAG: {{(mov|and)}}l	4(%esp),
-; LIN32-DAG: {{(mov|and)}}l	8(%esp),
-; LIN32-DAG: {{(mov|and)}}l	12(%esp),
+
+
+
+
+
+
+
+
+
 define <4 x i64> @old(double* %p, <4 x i32>* %i, <4 x i32>* %h, i64 %f) nounwind {
   %a = load <4 x i32>, <4 x i32>* %i
   %b = load <4 x i32>, <4 x i32>* %h

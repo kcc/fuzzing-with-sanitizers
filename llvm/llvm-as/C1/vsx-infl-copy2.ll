@@ -1,24 +1,24 @@
-; RUN: llc -mcpu=pwr7 < %s | FileCheck %s
+
 target datalayout = "E-m:e-i64:64-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
 
-; Function Attrs: nounwind
+
 define void @_Z28test_goto_loop_unroll_factorILi22EiEvPKT0_iPKc(i32* nocapture readonly %first) #0 {
 entry:
   br i1 false, label %loop2_start, label %if.end5
 
-; CHECK-LABEL: @_Z28test_goto_loop_unroll_factorILi22EiEvPKT0_iPKc
 
-loop2_start:                                      ; preds = %loop2_start, %entry
+
+loop2_start:                                      
   br i1 undef, label %loop2_start, label %if.then.i31
 
-if.end5:                                          ; preds = %entry
+if.end5:                                          
   br i1 undef, label %loop_start.preheader, label %if.then.i31
 
-loop_start.preheader:                             ; preds = %if.end5
+loop_start.preheader:                             
   br i1 false, label %middle.block, label %vector.body
 
-vector.body:                                      ; preds = %vector.body, %loop_start.preheader
+vector.body:                                      
   %vec.phi61 = phi <4 x i32> [ %34, %vector.body ], [ zeroinitializer, %loop_start.preheader ]
   %vec.phi62 = phi <4 x i32> [ %35, %vector.body ], [ zeroinitializer, %loop_start.preheader ]
   %vec.phi63 = phi <4 x i32> [ %36, %vector.body ], [ zeroinitializer, %loop_start.preheader ]
@@ -91,7 +91,7 @@ vector.body:                                      ; preds = %vector.body, %loop_
   %42 = add nsw <4 x i32> %33, %vec.phi71
   br i1 false, label %middle.block, label %vector.body
 
-middle.block:                                     ; preds = %vector.body, %loop_start.preheader
+middle.block:                                     
   %rdx.vec.exit.phi85 = phi <4 x i32> [ zeroinitializer, %loop_start.preheader ], [ %34, %vector.body ]
   %rdx.vec.exit.phi86 = phi <4 x i32> [ zeroinitializer, %loop_start.preheader ], [ %35, %vector.body ]
   %rdx.vec.exit.phi87 = phi <4 x i32> [ zeroinitializer, %loop_start.preheader ], [ %36, %vector.body ]
@@ -103,10 +103,10 @@ middle.block:                                     ; preds = %vector.body, %loop_
   %rdx.vec.exit.phi95 = phi <4 x i32> [ zeroinitializer, %loop_start.preheader ], [ %42, %vector.body ]
   br i1 false, label %if.then.i31, label %loop_start.prol
 
-loop_start.prol:                                  ; preds = %loop_start.prol, %middle.block
+loop_start.prol:                                  
   br label %loop_start.prol
 
-if.then.i31:                                      ; preds = %middle.block, %if.end5, %loop2_start
+if.then.i31:                                      
   unreachable
 }
 

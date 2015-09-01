@@ -1,12 +1,12 @@
-; RUN: opt < %s -asan -S -o %t.ll
-; RUN: FileCheck %s < %t.ll
 
-; Don't do stack malloc on functions containing inline assembly on 64-bit
-; platforms. It makes LLVM run out of registers.
 
-; CHECK-LABEL: define void @TestAbsenceOfStackMalloc(i8* %S, i32 %pS, i8* %D, i32 %pD, i32 %h)
-; CHECK: %MyAlloca
-; CHECK-NOT: call {{.*}} @__asan_stack_malloc
+
+
+
+
+
+
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.10.0"

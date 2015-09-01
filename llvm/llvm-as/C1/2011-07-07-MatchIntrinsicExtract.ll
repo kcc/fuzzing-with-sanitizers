@@ -1,5 +1,5 @@
-; RUN: opt < %s -gvn -S | FileCheck %s
-;
+
+
 
 %0 = type { i64, i1 }
 
@@ -11,9 +11,9 @@ entry:
   ret i64 %add1
 }
 
-; CHECK-LABEL: @test1(
-; CHECK-NOT: add1
-; CHECK: ret
+
+
+
 
 define i64 @test2(i64 %a, i64 %b) nounwind ssp {
 entry:
@@ -23,9 +23,9 @@ entry:
   ret i64 %sub1
 }
 
-; CHECK-LABEL: @test2(
-; CHECK-NOT: sub1
-; CHECK: ret
+
+
+
 
 define i64 @test3(i64 %a, i64 %b) nounwind ssp {
 entry:
@@ -35,9 +35,9 @@ entry:
   ret i64 %mul1
 }
 
-; CHECK-LABEL: @test3(
-; CHECK-NOT: mul1
-; CHECK: ret
+
+
+
 
 define i64 @test4(i64 %a, i64 %b) nounwind ssp {
 entry:
@@ -47,9 +47,9 @@ entry:
   ret i64 %add1
 }
 
-; CHECK-LABEL: @test4(
-; CHECK-NOT: add1
-; CHECK: ret
+
+
+
 
 define i64 @test5(i64 %a, i64 %b) nounwind ssp {
 entry:
@@ -59,9 +59,9 @@ entry:
   ret i64 %sub1
 }
 
-; CHECK-LABEL: @test5(
-; CHECK-NOT: sub1
-; CHECK: ret
+
+
+
 
 define i64 @test6(i64 %a, i64 %b) nounwind ssp {
 entry:
@@ -71,9 +71,9 @@ entry:
   ret i64 %mul1
 }
 
-; CHECK-LABEL: @test6(
-; CHECK-NOT: mul1
-; CHECK: ret
+
+
+
 
 declare void @exit(i32) noreturn
 declare %0 @llvm.uadd.with.overflow.i64(i64, i64) nounwind readnone

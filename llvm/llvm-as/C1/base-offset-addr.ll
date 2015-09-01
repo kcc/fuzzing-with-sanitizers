@@ -1,7 +1,7 @@
-; RUN: llc -march=hexagon -enable-aa-sched-mi < %s
-; REQUIRES: asserts
 
-; Make sure the base is a register and not an address.
+
+
+
 
 define fastcc void @Get_lsp_pol(i32* nocapture %f) #0 {
 entry:

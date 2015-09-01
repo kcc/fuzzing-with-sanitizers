@@ -1,89 +1,89 @@
-; RUN: llc -mtriple=x86_64-apple-darwin %s -o %t -filetype=obj
-; RUN: llvm-dwarfdump -debug-dump=info %t | FileCheck %s
-;
-; Test the DW_AT_accessibility DWARF attribute.
-;
-;
-; Regenerate me:
-; clang++ -g tools/clang/test/CodeGenCXX/debug-info-access.cpp -S -emit-llvm -o -
-;
-;   struct A {
-;     void pub_default();
-;     static int pub_default_static;
-;   };
-;
-;   class B : public A {
-;   public:
-;     void pub();
-;     static int public_static;
-;   protected:
-;     void prot();
-;   private:
-;     void priv_default();
-;   };
-;
-;   union U {
-;     void union_pub_default();
-;   private:
-;     int union_priv;
-;   };
-;
-;   void free() {}
-;
-;   A a;
-;   B b;
-;   U u;
 
-; CHECK: DW_TAG_member
-; CHECK:     DW_AT_name {{.*}}"pub_default_static")
-; CHECK-NOT: DW_AT_accessibility
-; CHECK-NOT: DW_TAG
-;
-; CHECK: DW_TAG_subprogram
-; CHECK:     DW_AT_name {{.*}}"pub_default")
-; CHECK-NOT: DW_AT_accessibility
-; CHECK: DW_TAG
-;
-; CHECK: DW_TAG_inheritance
-; CHECK-NOT: DW_TAG
-; CHECK:     DW_AT_accessibility {{.*}}(DW_ACCESS_public)
-;
-; CHECK: DW_TAG_member
-; CHECK:     DW_AT_name {{.*}}"public_static")
-; CHECK-NOT: DW_TAG
-; CHECK:     DW_AT_accessibility {{.*}}(DW_ACCESS_public)
-;
-; CHECK: DW_TAG_subprogram
-; CHECK:     DW_AT_name {{.*}}"pub")
-; CHECK-NOT: DW_TAG
-; CHECK:     DW_AT_accessibility {{.*}}(DW_ACCESS_public)
-;
-; CHECK: DW_TAG_subprogram
-; CHECK:     DW_AT_name {{.*}}"prot")
-; CHECK-NOT: DW_TAG
-; CHECK:     DW_AT_accessibility {{.*}}(DW_ACCESS_protected)
-;
-; CHECK: DW_TAG_subprogram
-; CHECK:     DW_AT_name {{.*}}"priv_default")
-; CHECK-NOT: DW_AT_accessibility
-; CHECK: DW_TAG
-;
-; CHECK: DW_TAG_member
-; CHECK:     DW_AT_name {{.*}}"union_priv")
-; CHECK-NOT: DW_TAG
-; CHECK:     DW_AT_accessibility {{.*}}(DW_ACCESS_private)
-;
-; CHECK: DW_TAG_subprogram
-; CHECK:     DW_AT_name {{.*}}"union_pub_default")
-; CHECK-NOT: DW_AT_accessibility
-; CHECK: DW_TAG
-;
-; CHECK: DW_TAG_subprogram
-; CHECK:     DW_AT_name {{.*}}"free")
-; CHECK-NOT: DW_AT_accessibility
-; CHECK-NOT: DW_TAG
-;
-; ModuleID = '/llvm/tools/clang/test/CodeGenCXX/debug-info-access.cpp'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.10.0"
 
@@ -95,7 +95,7 @@ target triple = "x86_64-apple-macosx10.10.0"
 @b = global %class.B zeroinitializer, align 1
 @u = global %union.U zeroinitializer, align 4
 
-; Function Attrs: nounwind ssp uwtable
+
 define void @_Z4freev() #0 {
   ret void, !dbg !41
 }

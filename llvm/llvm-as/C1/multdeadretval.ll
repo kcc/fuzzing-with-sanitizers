@@ -1,8 +1,8 @@
-; This test sees if return values (and arguments) are properly removed when they
-; are unused. All unused values are typed i16, so we can easily check. We also
-; run instcombine to fold insert/extractvalue chains and we run dce to clean up
-; any remaining dead stuff.
-; RUN: opt < %s -deadargelim -instcombine -dce -S | not grep i16
+
+
+
+
+
 
 define internal {i16, i32} @test(i16 %DEADARG) {
         %A = insertvalue {i16,i32} undef, i16 1, 0
@@ -17,10 +17,10 @@ define internal {i32, i16} @test2() {
         ret {i32,i16} %B
 }
 
-; Dead argument, used to check if the second result of test2 is dead even when
-; it's used as a dead argument
+
+
 define internal i32 @test3(i16 %A) {
-        %ret = call {i16, i32} @test( i16 %A )                ; <i32> [#uses=0]
+        %ret = call {i16, i32} @test( i16 %A )                
         %DEAD = extractvalue {i16, i32} %ret, 0
         %LIVE = extractvalue {i16, i32} %ret, 1
         ret i32 %LIVE
@@ -30,7 +30,7 @@ define internal i16 @test4() {
         ret i16 0
 }
 
-; Multiple return values, multiple live return values
+
 define internal {i32, i32, i16} @test5() {
         %A = insertvalue {i32,i32,i16} undef, i32 1, 0
         %B = insertvalue {i32,i32,i16} %A, i32 2, 1
@@ -38,7 +38,7 @@ define internal {i32, i32, i16} @test5() {
         ret {i32, i32, i16} %C
 }
 
-; Nested return values
+
 define internal {{i32}, {i16, i16}} @test6() {
         %A = insertvalue {{i32}, {i16, i16}} undef, i32 1, 0, 0
         %B = insertvalue {{i32}, {i16, i16}} %A, i16 2, 1, 0
@@ -47,12 +47,12 @@ define internal {{i32}, {i16, i16}} @test6() {
 }
 
 define i32 @main() {
-        %ret = call {i32, i16} @test2()                ; <i32> [#uses=1]
+        %ret = call {i32, i16} @test2()                
         %LIVE = extractvalue {i32, i16} %ret, 0
         %DEAD = extractvalue {i32, i16} %ret, 1
-        %Y = add i32 %LIVE, -123           ; <i32> [#uses=1]
-        %LIVE2 = call i32 @test3(i16 %DEAD)                ; <i32> [#uses=1]
-        %Z = add i32 %LIVE2, %Y           ; <i32> [#uses=1]
+        %Y = add i32 %LIVE, -123           
+        %LIVE2 = call i32 @test3(i16 %DEAD)                
+        %Z = add i32 %LIVE2, %Y           
         %ret1 = call { i32, i32, i16 } @test5 ()
         %LIVE3 = extractvalue { i32, i32, i16} %ret1, 0
         %LIVE4 = extractvalue { i32, i32, i16} %ret1, 1

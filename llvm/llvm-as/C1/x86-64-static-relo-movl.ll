@@ -1,7 +1,7 @@
-; RUN: llc -mtriple=x86_64-pc-win32-macho -relocation-model=static -O0 < %s | FileCheck %s
 
-; Ensure that we don't generate a movl and not a lea for a static relocation
-; when compiling for 64 bit.
+
+
+
 
 %struct.MatchInfo = type [64 x i64]
 
@@ -17,8 +17,8 @@ define void @setup() {
 done:
   ret void
 
-  ; CHECK: movabsq $_NO_MATCH, {{.*}}
+  
 }
 
-; Function Attrs: nounwind
+
 declare void @llvm.memcpy.p0i8.p0i8.i64(i8*, i8*, i64, i32, i1)

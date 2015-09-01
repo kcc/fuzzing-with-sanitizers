@@ -1,15 +1,15 @@
-; RUN: llc < %s -mcpu=cortex-a15 -verify-machineinstrs -arm-atomic-cfg-tidy=0 | FileCheck %s
 
-; Check a spill right after a function call with large struct byval is correctly
-; generated.
-; PR16393
 
-; CHECK: set_stored_macroblock_parameters
-; CHECK: str r{{.*}}, [sp, [[SLOT:#[0-9]+]]] @ 4-byte Spill
-; CHECK: bl RestoreMVBlock8x8
-; CHECK: bl RestoreMVBlock8x8
-; CHECK: bl RestoreMVBlock8x8
-; CHECK: ldr r{{.*}}, [sp, [[SLOT]]] @ 4-byte Reload
+
+
+
+
+
+
+
+
+
+
 
 target triple = "armv7l-unknown-linux-gnueabihf"
 
@@ -60,16 +60,16 @@ target triple = "armv7l-unknown-linux-gnueabihf"
 @frefframe = external global [4 x [4 x i8]], align 1
 @brefframe = external global [4 x [4 x i8]], align 1
 
-; Function Attrs: nounwind
+
 declare void @llvm.memcpy.p0i8.p0i8.i32(i8* nocapture, i8* nocapture, i32, i32, i1) #0
 
-; Function Attrs: nounwind
+
 declare void @llvm.memset.p0i8.i32(i8* nocapture, i8, i32, i32, i1) #0
 
-; Function Attrs: nounwind
+
 declare void @SetMotionVectorsMB(%structK* nocapture, i32) #1
 
-; Function Attrs: nounwind
+
 define void @set_stored_macroblock_parameters() #1 {
 entry:
   %0 = load %structB*, %structB** @img, align 4
@@ -78,78 +78,78 @@ entry:
   %2 = load %structK*, %structK** %mb_data, align 4
   br label %for.body
 
-for.body:                                         ; preds = %for.body, %entry
+for.body:                                         
   br i1 undef, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   br i1 undef, label %for.body20, label %if.end
 
-for.body20:                                       ; preds = %for.end
+for.body20:                                       
   unreachable
 
-if.end:                                           ; preds = %for.end
+if.end:                                           
   br i1 undef, label %if.end40, label %for.cond31.preheader
 
-for.cond31.preheader:                             ; preds = %if.end
+for.cond31.preheader:                             
   unreachable
 
-if.end40:                                         ; preds = %if.end
+if.end40:                                         
   br i1 undef, label %if.end43, label %if.then42
 
-if.then42:                                        ; preds = %if.end40
+if.then42:                                        
   br label %if.end43
 
-if.end43:                                         ; preds = %if.then42, %if.end40
+if.end43:                                         
   br i1 undef, label %if.end164, label %for.cond47.preheader
 
-for.cond47.preheader:                             ; preds = %if.end43
+for.cond47.preheader:                             
   br i1 undef, label %for.body119, label %if.end164
 
-for.body119:                                      ; preds = %for.body119, %for.cond47.preheader
+for.body119:                                      
   br i1 undef, label %for.body119, label %if.end164
 
-if.end164:                                        ; preds = %for.body119, %for.cond47.preheader, %if.end43
+if.end164:                                        
   store i32*** null, i32**** @cofDC, align 4
   %mb_type = getelementptr inbounds %structK, %structK* %2, i32 %1, i32 8
   br i1 undef, label %if.end230, label %if.then169
 
-if.then169:                                       ; preds = %if.end164
+if.then169:                                       
   br i1 undef, label %for.cond185.preheader, label %for.cond210.preheader
 
-for.cond185.preheader:                            ; preds = %if.then169
+for.cond185.preheader:                            
   unreachable
 
-for.cond210.preheader:                            ; preds = %if.then169
+for.cond210.preheader:                            
   unreachable
 
-if.end230:                                        ; preds = %if.end164
+if.end230:                                        
   tail call void @llvm.memcpy.p0i8.p0i8.i32(i8* undef, i8* bitcast ([4 x i32]* @b8mode to i8*), i32 16, i32 4, i1 false)
   %b8pdir = getelementptr inbounds %structK, %structK* %2, i32 %1, i32 15
   %3 = bitcast [4 x i32]* %b8pdir to i8*
   tail call void @llvm.memcpy.p0i8.p0i8.i32(i8* %3, i8* bitcast ([4 x i32]* @b8pdir to i8*), i32 16, i32 4, i1 false)
   br i1 undef, label %if.end236, label %if.then233
 
-if.then233:                                       ; preds = %if.end230
+if.then233:                                       
   unreachable
 
-if.end236:                                        ; preds = %if.end230
+if.end236:                                        
   %cmp242 = icmp ne i16 undef, 8
   %4 = load i32, i32* @luma_transform_size_8x8_flag, align 4
   %tobool245 = icmp ne i32 %4, 0
   %or.cond812 = or i1 %cmp242, %tobool245
   br i1 %or.cond812, label %if.end249, label %land.lhs.true246
 
-land.lhs.true246:                                 ; preds = %if.end236
+land.lhs.true246:                                 
   br i1 undef, label %if.end249, label %if.then248
 
-if.then248:                                       ; preds = %land.lhs.true246
+if.then248:                                       
   tail call void asm sideeffect "", "~{r1},~{r2},~{r3},~{r4},~{r5},~{r6},~{r7},~{r8},~{r9},~{r10},~{r11}"() nounwind
   tail call void @RestoreMVBlock8x8(i32 1, i32 0, %structN* byval @tr8x8, i32 0) #0
   tail call void @RestoreMVBlock8x8(i32 1, i32 2, %structN* byval @tr8x8, i32 0) #0
   tail call void @RestoreMVBlock8x8(i32 1, i32 3, %structN* byval @tr8x8, i32 0) #0
   br label %if.end249
 
-if.end249:                                        ; preds = %if.then248, %land.lhs.true246, %if.end236
+if.end249:                                        
   %5 = load i32, i32* @luma_transform_size_8x8_flag, align 4
   %6 = load %structA*, %structA** @rdopt, align 4
   %luma_transform_size_8x8_flag264 = getelementptr inbounds %structA, %structA* %6, i32 0, i32 21
@@ -158,7 +158,7 @@ if.end249:                                        ; preds = %if.then248, %land.l
   %add281 = add nsw i32 %7, 0
   br label %for.body285
 
-for.body285:                                      ; preds = %for.inc503, %if.end249
+for.body285:                                      
   %8 = phi %structB* [ undef, %if.end249 ], [ %.pre1155, %for.inc503 ]
   %i.21103 = phi i32 [ 0, %if.end249 ], [ %inc504, %for.inc503 ]
   %block_x286 = getelementptr inbounds %structB, %structB* %8, i32 0, i32 37
@@ -181,16 +181,16 @@ for.body285:                                      ; preds = %for.inc503, %if.end
   %tobool328 = icmp eq i32 %15, 0
   br i1 %tobool328, label %if.end454, label %if.then329
 
-if.then329:                                       ; preds = %for.body285
+if.then329:                                       
   %16 = load %structA*, %structA** @rdopt, align 4
   br label %if.end454
 
-if.end454:                                        ; preds = %if.then329, %for.body285
+if.end454:                                        
   %17 = load i32, i32* %arrayidx292, align 4
   %cmp457 = icmp eq i32 %17, 0
   br i1 %cmp457, label %if.then475, label %lor.lhs.false459
 
-lor.lhs.false459:                                 ; preds = %if.end454
+lor.lhs.false459:                                 
   %18 = load i32, i32* %mb_type, align 4
   switch i32 %18, label %for.inc503 [
     i32 9, label %if.then475
@@ -199,20 +199,20 @@ lor.lhs.false459:                                 ; preds = %if.end454
     i32 14, label %if.then475
   ]
 
-if.then475:                                       ; preds = %lor.lhs.false459, %lor.lhs.false459, %lor.lhs.false459, %lor.lhs.false459, %if.end454
+if.then475:                                       
   store i16 0, i16* undef, align 2
   br label %for.inc503
 
-for.inc503:                                       ; preds = %if.then475, %lor.lhs.false459
+for.inc503:                                       
   %inc504 = add nsw i32 %i.21103, 1
   %.pre1155 = load %structB*, %structB** @img, align 4
   br label %for.body285
 }
 
-; Function Attrs: nounwind
+
 declare void @update_offset_params(i32, i32) #1
 
-; Function Attrs: nounwind
+
 declare void @RestoreMVBlock8x8(i32, i32, %structN* byval nocapture, i32) #1
 
 attributes #0 = { nounwind }

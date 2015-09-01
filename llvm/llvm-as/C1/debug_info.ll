@@ -1,25 +1,25 @@
-; RUN: opt < %s -basicaa -slp-vectorizer -dce -S -mtriple=x86_64-apple-macosx10.8.0 -mcpu=corei7-avx | FileCheck %s
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.7.0"
 
-; int depth(double *A, int m) {
-;   double y0 = 0; double y1 = 1;
-;   for (int i=0; i < m; i++) {
-;     y0 = A[4];
-;     y1 = A[5];
-;   }
-;   A[8] = y0; A[8+1] = y1;
-; }
 
-;CHECK: @depth
-;CHECK: getelementptr inbounds {{.*}}, !dbg ![[LOC:[0-9]+]]
-;CHECK: bitcast double* {{.*}}, !dbg ![[LOC]]
-;CHECK: load <2 x double>, <2 x double>* {{.*}}, !dbg ![[LOC]]
-;CHECK: store <2 x double> {{.*}}, !dbg ![[LOC2:[0-9]+]]
-;CHECK: ret
-;CHECK: ![[LOC]] = !DILocation(line: 4, scope:
-;CHECK: ![[LOC2]] = !DILocation(line: 7, scope:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define i32 @depth(double* nocapture %A, i32 %m) #0 {
 entry:
@@ -31,14 +31,14 @@ entry:
   %cmp8 = icmp sgt i32 %m, 0, !dbg !23
   br i1 %cmp8, label %for.body.lr.ph, label %for.end, !dbg !23
 
-for.body.lr.ph:                                   ; preds = %entry
+for.body.lr.ph:                                   
   %arrayidx = getelementptr inbounds double, double* %A, i64 4, !dbg !24
   %0 = load double, double* %arrayidx, align 8, !dbg !24
   %arrayidx1 = getelementptr inbounds double, double* %A, i64 5, !dbg !29
   %1 = load double, double* %arrayidx1, align 8, !dbg !29
   br label %for.end, !dbg !23
 
-for.end:                                          ; preds = %for.body.lr.ph, %entry
+for.end:                                          
   %y1.0.lcssa = phi double [ %1, %for.body.lr.ph ], [ 1.000000e+00, %entry ]
   %y0.0.lcssa = phi double [ %0, %for.body.lr.ph ], [ 0.000000e+00, %entry ]
   %arrayidx2 = getelementptr inbounds double, double* %A, i64 8, !dbg !30
@@ -48,7 +48,7 @@ for.end:                                          ; preds = %for.body.lr.ph, %en
   ret i32 undef, !dbg !31
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #1
 
 attributes #0 = { nounwind ssp uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf"="true" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

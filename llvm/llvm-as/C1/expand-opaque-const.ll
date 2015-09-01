@@ -1,11 +1,11 @@
-; RUN: llc -mcpu=generic -O1 -relocation-model=pic < %s | FileCheck %s
+
 target datalayout = "e-m:o-p:32:32-f64:32:64-f80:128-n8:16:32-S128"
 target triple = "i686-apple-darwin"
 
 define i64 @test_lshr() {
 entry:
-; CHECK-NOT: movl $-1, 16(%esp)
-; CHECK-NOT: movl  $-1, %eax
+
+
   %retval = alloca i64
   %op1 = alloca i64
   %op2 = alloca i64

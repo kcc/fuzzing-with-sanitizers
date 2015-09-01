@@ -1,5 +1,5 @@
-; RUN: llc -march=mipsel -mcpu=mips32r2 -mattr=+micromips \
-; RUN:   -relocation-model=pic -O3 < %s | FileCheck %s
+
+
 
 define i32 @main() {
 entry:
@@ -15,4 +15,4 @@ entry:
   ret i32 0
 }
 
-; CHECK: subu16
+

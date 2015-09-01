@@ -1,17 +1,17 @@
-; RUN: llc -march=amdgcn -mcpu=SI -verify-machineinstrs -mattr=+load-store-opt -enable-misched < %s | FileCheck  --check-prefix=CHECK %s
-; RUN: llc -march=amdgcn -mcpu=bonaire -verify-machineinstrs -mattr=+load-store-opt -enable-misched < %s | FileCheck  --check-prefix=CHECK %s
 
-; This test is for a bug in the machine scheduler where stores without
-; an underlying object would be moved across the barrier.  In this
-; test, the <2 x i8> store will be split into two i8 stores, so they
-; won't have an underlying object.
 
-; CHECK-LABEL: {{^}}test:
-; CHECK: ds_write_b8
-; CHECK: ds_write_b8
-; CHECK: s_barrier
-; CHECK: s_endpgm
-; Function Attrs: nounwind
+
+
+
+
+
+
+
+
+
+
+
+
 define void @test(<2 x i8> addrspace(3)* nocapture %arg, <2 x i8> addrspace(1)* nocapture readonly %arg1, i32 addrspace(1)* nocapture readonly %arg2, <2 x i8> addrspace(1)* nocapture %arg3, i32 %arg4, i64 %tmp9) {
 bb:
   %tmp10 = getelementptr inbounds i32, i32 addrspace(1)* %arg2, i64 %tmp9
@@ -36,7 +36,7 @@ bb:
   ret void
 }
 
-; Function Attrs: noduplicate nounwind
+
 declare void @llvm.AMDGPU.barrier.local() #2
 
 attributes #2 = { noduplicate nounwind }

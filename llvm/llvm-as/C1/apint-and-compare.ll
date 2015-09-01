@@ -1,6 +1,6 @@
-; RUN: opt < %s -instcombine -S | grep and | count 2
 
-; Should be optimized to one and.
+
+
 define i1 @test1(i33 %a, i33 %b) {
         %tmp1 = and i33 %a, 65280
         %tmp3 = and i33 %b, 65280

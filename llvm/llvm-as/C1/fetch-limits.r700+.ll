@@ -1,20 +1,20 @@
-; RUN: llc < %s -march=r600 -mcpu=rv710 | FileCheck %s
-; RUN: llc < %s -march=r600 -mcpu=rv730 | FileCheck %s
-; RUN: llc < %s -march=r600 -mcpu=rv770 | FileCheck %s
-; RUN: llc < %s -march=r600 -mcpu=cedar | FileCheck %s
-; RUN: llc < %s -march=r600 -mcpu=redwood | FileCheck %s
-; RUN: llc < %s -march=r600 -mcpu=sumo | FileCheck %s
-; RUN: llc < %s -march=r600 -mcpu=juniper | FileCheck %s
-; RUN: llc < %s -march=r600 -mcpu=cypress | FileCheck %s
-; RUN: llc < %s -march=r600 -mcpu=barts | FileCheck %s
-; RUN: llc < %s -march=r600 -mcpu=turks | FileCheck %s
-; RUN: llc < %s -march=r600 -mcpu=caicos | FileCheck %s
-; RUN: llc < %s -march=r600 -mcpu=cayman | FileCheck %s
 
-; r700+ supports 16 fetches in a clause
-; CHECK: {{^}}fetch_limits_r700:
-; CHECK: Fetch clause
-; CHECK: Fetch clause
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @fetch_limits_r700() #0 {
 entry:
@@ -75,7 +75,7 @@ entry:
   ret void
 }
 
-attributes #0 = { "ShaderType"="0" } ; Pixel Shader
+attributes #0 = { "ShaderType"="0" } 
 
 declare <4 x float> @llvm.AMDGPU.tex(<4 x float>, i32, i32, i32) readnone
 declare void @llvm.R600.store.swizzle(<4 x float>, i32, i32)

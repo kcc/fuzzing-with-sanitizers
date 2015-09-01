@@ -1,5 +1,5 @@
-; RUN: llc -mtriple armv8-eabi -mcpu=cortex-a57 -o - %s | FileCheck %s
-; RUN: llc -mtriple thumbv8-eabi -mcpu=cortex-a57 -o - %s | FileCheck %s
+
+
 
 define void @hint_dbg() {
 entry:
@@ -9,5 +9,5 @@ entry:
 
 declare void @llvm.arm.dbg(i32)
 
-; CHECK: dbg #0
+
 

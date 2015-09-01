@@ -1,32 +1,32 @@
-; ARM EHABI integrated test
 
-; This test case checks that the ARM DWARF stack frame directives
-; are not generated if compiling with no debug information.
+
+
+
   
-; RUN: llc -mtriple arm-unknown-linux-gnueabi \
-; RUN:     -filetype=asm -o - %s \
-; RUN:   | FileCheck %s --check-prefix=CHECK-FP-ELIM
 
-; RUN: llc -mtriple thumb-unknown-linux-gnueabi \
-; RUN:     -disable-fp-elim -filetype=asm -o - %s \
-; RUN:   | FileCheck %s --check-prefix=CHECK-THUMB-FP
 
-;-------------------------------------------------------------------------------
-; Test 1
-;-------------------------------------------------------------------------------
-; This is the LLVM assembly generated from following C++ code:
-;
-;   extern void print(int, int, int, int, int);
-;   extern void print(double, double, double, double, double);
-;
-;   void test(int a, int b, int c, int d, int e,
-;             double m, double n, double p, double q, double r) {
-;     try {
-;       print(a, b, c, d, e);
-;     } catch (...) {
-;       print(m, n, p, q, r);
-;     }
-;   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 declare void @_Z5printiiiii(i32, i32, i32, i32, i32)
 
@@ -82,13 +82,13 @@ declare void @__cxa_end_catch()
 
 declare void @_ZSt9terminatev()
 
-; CHECK-FP-ELIM-LABEL: _Z4testiiiiiddddd:
-; CHECK-FP-ELIM-NOT:   .cfi_startproc
-; CHECK-FP-ELIM:   push  {r4, r5, r6, r7, r8, r9, r10, r11, lr}
-; CHECK-FP-ELIM-NOT:   .cfi_def_cfa_offset 36
 
-; CHECK-THUMB-FP-LABEL: _Z4testiiiiiddddd:
-; CHECK-THUMB-FP-NOT:   .cfi_startproc
-; CHECK-THUMB-FP:   push   {r4, r5, r6, r7, lr}
-; CHECK-THUMB-FP-NOT:   .cfi_def_cfa_offset 20
+
+
+
+
+
+
+
+
 

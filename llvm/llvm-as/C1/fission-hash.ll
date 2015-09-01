@@ -1,10 +1,10 @@
-; RUN: llc -split-dwarf=Enable -O0 %s -mtriple=x86_64-unknown-linux-gnu -filetype=obj -o %t
-; RUN: llvm-dwarfdump -debug-dump=all %t | FileCheck %s
 
-; The source is an empty file.
 
-; CHECK: DW_AT_GNU_dwo_id [DW_FORM_data8] (0x0c1e629c9e5ada4f)
-; CHECK: DW_AT_GNU_dwo_id [DW_FORM_data8] (0x0c1e629c9e5ada4f)
+
+
+
+
+
 
 !llvm.dbg.cu = !{!0}
 !llvm.module.flags = !{!3, !4}

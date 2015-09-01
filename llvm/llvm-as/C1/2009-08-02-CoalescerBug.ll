@@ -1,10 +1,10 @@
-; RUN: llc < %s -mtriple=thumbv7-apple-darwin9 -mcpu=cortex-a8 -relocation-model=pic -disable-fp-elim
 
-	%0 = type { void (%"struct.xalanc_1_8::FormatterToXML"*, i16)*, i32 }		; type %0
-	%1 = type { void (%"struct.xalanc_1_8::FormatterToXML"*, i16*)*, i32 }		; type %1
-	%2 = type { void (%"struct.xalanc_1_8::FormatterToXML"*, %"struct.xalanc_1_8::XalanDOMString"*)*, i32 }		; type %2
-	%3 = type { void (%"struct.xalanc_1_8::FormatterToXML"*, i16*, i32, i32)*, i32 }		; type %3
-	%4 = type { void (%"struct.xalanc_1_8::FormatterToXML"*)*, i32 }		; type %4
+
+	%0 = type { void (%"struct.xalanc_1_8::FormatterToXML"*, i16)*, i32 }		
+	%1 = type { void (%"struct.xalanc_1_8::FormatterToXML"*, i16*)*, i32 }		
+	%2 = type { void (%"struct.xalanc_1_8::FormatterToXML"*, %"struct.xalanc_1_8::XalanDOMString"*)*, i32 }		
+	%3 = type { void (%"struct.xalanc_1_8::FormatterToXML"*, i16*, i32, i32)*, i32 }		
+	%4 = type { void (%"struct.xalanc_1_8::FormatterToXML"*)*, i32 }		
 	%"struct.std::CharVectorType" = type { %"struct.std::_Vector_base<char,std::allocator<char> >" }
 	%"struct.std::_Bit_const_iterator" = type { %"struct.std::_Bit_iterator_base" }
 	%"struct.std::_Bit_iterator_base" = type { i32*, i32 }
@@ -26,20 +26,20 @@ declare void @_ZN10xalanc_1_814FormatterToXML17writeParentTagEndEv(%"struct.xala
 
 define void @_ZN10xalanc_1_814FormatterToXML5cdataEPKtj(%"struct.xalanc_1_8::FormatterToXML"* %this, i16* %ch, i32 %length) {
 entry:
-	%0 = getelementptr %"struct.xalanc_1_8::FormatterToXML", %"struct.xalanc_1_8::FormatterToXML"* %this, i32 0, i32 13		; <i8*> [#uses=1]
+	%0 = getelementptr %"struct.xalanc_1_8::FormatterToXML", %"struct.xalanc_1_8::FormatterToXML"* %this, i32 0, i32 13		
 	br i1 undef, label %bb4, label %bb
 
-bb:		; preds = %entry
+bb:		
 	store i8 0, i8* %0, align 1
-	%1 = getelementptr %"struct.xalanc_1_8::FormatterToXML", %"struct.xalanc_1_8::FormatterToXML"* %this, i32 0, i32 0, i32 0, i32 0		; <i32 (...)***> [#uses=1]
-	%2 = load i32 (...)**, i32 (...)*** %1, align 4		; <i32 (...)**> [#uses=1]
-	%3 = getelementptr i32 (...)*, i32 (...)** %2, i32 11		; <i32 (...)**> [#uses=1]
-	%4 = load i32 (...)*, i32 (...)** %3, align 4		; <i32 (...)*> [#uses=1]
-	%5 = bitcast i32 (...)* %4 to void (%"struct.xalanc_1_8::FormatterToXML"*, i16*, i32)*		; <void (%"struct.xalanc_1_8::FormatterToXML"*, i16*, i32)*> [#uses=1]
+	%1 = getelementptr %"struct.xalanc_1_8::FormatterToXML", %"struct.xalanc_1_8::FormatterToXML"* %this, i32 0, i32 0, i32 0, i32 0		
+	%2 = load i32 (...)**, i32 (...)*** %1, align 4		
+	%3 = getelementptr i32 (...)*, i32 (...)** %2, i32 11		
+	%4 = load i32 (...)*, i32 (...)** %3, align 4		
+	%5 = bitcast i32 (...)* %4 to void (%"struct.xalanc_1_8::FormatterToXML"*, i16*, i32)*		
 	tail call  void %5(%"struct.xalanc_1_8::FormatterToXML"* %this, i16* %ch, i32 %length)
 	ret void
 
-bb4:		; preds = %entry
+bb4:		
 	tail call  void @_ZN10xalanc_1_814FormatterToXML17writeParentTagEndEv(%"struct.xalanc_1_8::FormatterToXML"* %this)
 	tail call  void undef(%"struct.xalanc_1_8::FormatterToXML"* %this, i16* %ch, i32 0, i32 %length, i8 zeroext undef)
 	ret void

@@ -1,28 +1,28 @@
-; RUN: llc -mtriple=x86_64-linux-gnu -fast-isel=false -filetype=obj < %s -o - | llvm-dwarfdump -debug-dump=info - | FileCheck %s
-; RUN: llc -mtriple=x86_64-linux-gnu -fast-isel=false -filetype=asm < %s -o - | FileCheck --check-prefix=ASM %s
-
-; Generated from:
-; clang-tot -c -S -emit-llvm -g inline-seldag-test.c
-; inline int __attribute__((always_inline)) f(int y) {
-;   return y ? 4 : 7;
-; }
-; void func() {
-;   volatile int x;
-;   x = f(x);
-; }
-
-; CHECK: DW_TAG_inlined_subroutine
-; CHECK-NEXT: DW_AT_abstract_origin {{.*}} "f"
 
 
-; Make sure the condition test is attributed to the inline function, not the
-; location of the test's operands within the caller.
 
-; ASM: # inline-seldag-test.c:2:0
-; ASM-NOT: .loc
-; ASM: testl
 
-; Function Attrs: nounwind uwtable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @func() #0 {
 entry:
   %y.addr.i = alloca i32, align 4
@@ -38,7 +38,7 @@ entry:
   ret void, !dbg !22
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
 attributes #0 = { nounwind uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

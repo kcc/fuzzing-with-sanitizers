@@ -1,7 +1,7 @@
-; RUN: %lli -force-interpreter=true %s | FileCheck %s
-; CHECK: int test passed
-; CHECK: double test passed
-; CHECK: float test passed
+
+
+
+
 
 @msg_int = internal global [17 x i8] c"int test passed\0A\00"
 @msg_double = internal global [20 x i8] c"double test passed\0A\00"
@@ -26,30 +26,30 @@ define i32 @main() {
   %pfloat_2 = alloca float
   %pfloat_3 = alloca float
 
-  ; store constants 1,2,3,4 as vector
+  
   store <4 x i32> <i32 1, i32 2, i32 3, i32 4>, <4 x i32>* %a, align 16
-  ; store constants 1,2,3,4 as scalars
+  
   store i32 1, i32* %pint_0
   store i32 2, i32* %pint_1
   store i32 3, i32* %pint_2
   store i32 4, i32* %pint_3
   
-  ; load stored scalars
+  
   %val_int0 = load i32, i32* %pint_0
   %val_int1 = load i32, i32* %pint_1
   %val_int2 = load i32, i32* %pint_2
   %val_int3 = load i32, i32* %pint_3
 
-  ; load stored vector
+  
   %val0 = load <4 x i32> , <4 x i32> *%a, align 16
 
-  ; extract integers from the loaded vector
+  
   %res_i32_0 = extractelement <4 x i32> %val0, i32 0
   %res_i32_1 = extractelement <4 x i32> %val0, i32 1
   %res_i32_2 = extractelement <4 x i32> %val0, i32 2
   %res_i32_3 = extractelement <4 x i32> %val0, i32 3
 
-  ; compare extracted data with stored constants
+  
   %test_result_int_0 = icmp eq i32 %res_i32_0, %val_int0
   %test_result_int_1 = icmp eq i32 %res_i32_1, %val_int1
   %test_result_int_2 = icmp eq i32 %res_i32_2, %val_int2
@@ -60,7 +60,7 @@ define i32 @main() {
   %test_result_int_6 = icmp eq i32 %res_i32_2, %val_int1
   %test_result_int_7 = icmp eq i32 %res_i32_3, %val_int0
 
-  ; it should be TRUE
+  
   %A_i = or i1 %test_result_int_0, %test_result_int_4
   %B_i = or i1 %test_result_int_1, %test_result_int_5
   %C_i = or i1 %test_result_int_2, %test_result_int_6
@@ -69,7 +69,7 @@ define i32 @main() {
   %F_i = and i1 %C_i, %D_i
   %res_i = and i1 %E_i, %F_i
 
-  ; if TRUE print message
+  
   br i1 %res_i, label %Print_int, label %Double
 Print_int:
   %ptr0 = getelementptr [17 x i8], [17 x i8]* @msg_int, i32 0, i32 0
@@ -77,15 +77,15 @@ Print_int:
   br label %Double
 Double:
   store <4 x double> <double 5.0, double 6.0, double 7.0, double 8.0>, <4 x double>* %b, align 16
-  ; store constants as scalars
+  
   store double 5.0, double* %pdouble_0
   store double 6.0, double* %pdouble_1
   store double 7.0, double* %pdouble_2
   store double 8.0, double* %pdouble_3
 
-  ; load stored vector
+  
   %val1 = load <4 x double> , <4 x double> *%b, align 16
-  ; load stored scalars
+  
   %val_double0 = load double, double* %pdouble_0
   %val_double1 = load double, double* %pdouble_1
   %val_double2 = load double, double* %pdouble_2
@@ -127,9 +127,9 @@ Float:
   store float 11.0, float* %pfloat_2
   store float 12.0, float* %pfloat_3
 
-  ; load stored vector
+  
   %val2 = load <4 x float> , <4 x float> *%c, align 16
-  ; load stored scalars
+  
   %val_float0 = load float, float* %pfloat_0
   %val_float1 = load float, float* %pfloat_1
   %val_float2 = load float, float* %pfloat_2

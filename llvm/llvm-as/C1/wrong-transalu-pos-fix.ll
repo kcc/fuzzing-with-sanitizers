@@ -1,8 +1,8 @@
-; RUN: llc -march=r600 -mcpu=redwood -mtriple=r600-- < %s | FileCheck %s
 
-; We want all MULLO_INT inst to be last in their instruction group
-;CHECK: {{^}}fill3d:
-;CHECK-NOT: MULLO_INT T[0-9]+
+
+
+
+
 
 define void @fill3d(i32 addrspace(1)* nocapture %out) #0 {
 entry:
@@ -35,40 +35,40 @@ entry:
   ret void
 }
 
-; Function Attrs: nounwind readnone
+
 declare i32 @llvm.r600.read.tgid.x() #1
 
-; Function Attrs: nounwind readnone
+
 declare i32 @llvm.r600.read.tgid.y() #1
 
-; Function Attrs: nounwind readnone
+
 declare i32 @llvm.r600.read.tgid.z() #1
 
-; Function Attrs: nounwind readnone
+
 declare i32 @llvm.r600.read.local.size.x() #1
 
-; Function Attrs: nounwind readnone
+
 declare i32 @llvm.r600.read.local.size.y() #1
 
-; Function Attrs: nounwind readnone
+
 declare i32 @llvm.r600.read.local.size.z() #1
 
-; Function Attrs: nounwind readnone
+
 declare i32 @llvm.r600.read.tidig.x() #1
 
-; Function Attrs: nounwind readnone
+
 declare i32 @llvm.r600.read.tidig.y() #1
 
-; Function Attrs: nounwind readnone
+
 declare i32 @llvm.r600.read.tidig.z() #1
 
-; Function Attrs: nounwind readnone
+
 declare i32 @llvm.r600.read.global.size.x() #1
 
-; Function Attrs: nounwind readnone
+
 declare i32 @llvm.r600.read.global.size.y() #1
 
-; Function Attrs: nounwind readnone
+
 declare i32 @llvm.r600.read.global.size.z() #1
 
 attributes #0 = { nounwind "less-precise-fpmad"="false" "no-frame-pointer-elim"="false" "no-frame-pointer-elim-non-leaf"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

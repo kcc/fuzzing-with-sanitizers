@@ -1,12 +1,12 @@
-; REQUIRES: asserts
-; RUN: opt < %s -basicaa -gvn -stats -disable-output 2>&1 | grep "Number of loads deleted"
-; rdar://7363102
 
-; GVN should be able to eliminate load %tmp22.i, because it is redundant with
-; load %tmp8.i. This requires being able to prove that %tmp7.i doesn't
-; alias the malloc'd value %tmp.i20.i.i, which it can do since %tmp7.i
-; is derived from %tmp5.i which is computed from a load, and %tmp.i20.i.i
-; is never stored and does not escape.
+
+
+
+
+
+
+
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128"
 target triple = "x86_64-apple-darwin10.0"
@@ -55,7 +55,7 @@ entry:
   %or.cond.i = or i1 %tmp9.i, %tmp13.i
   br i1 %or.cond.i, label %bb4.i, label %bb6.i
 
-bb4.i:                                            ; preds = %entry
+bb4.i:                                            
   %tmp41.i = inttoptr i64 %val to i8*
   %tmp4.i35.i = getelementptr inbounds i8, i8* %tmp41.i, i64 %val2
   %tmp.i.i = ptrtoint i8* %tmp4.i35.i to i64
@@ -69,7 +69,7 @@ bb4.i:                                            ; preds = %entry
   %tmp12.i.i = icmp eq i8* %tmp.i20.i.i, null
   br i1 %tmp12.i.i, label %_ZN4llvm14StringMapEntryIPvE6CreateINS_15MallocAllocatorES1_EEPS2_PKcS7_RT_T0_.exit.i, label %bb.i.i
 
-bb.i.i:                                           ; preds = %bb4.i
+bb.i.i:                                           
   %tmp.i.i.i.i = bitcast i8* %tmp.i20.i.i to i32*
   store i32 %tmp4.i.i, i32* %tmp.i.i.i.i, align 4
   %tmp1.i19.i.i = getelementptr inbounds i8, i8* %tmp.i20.i.i, i64 8
@@ -77,7 +77,7 @@ bb.i.i:                                           ; preds = %bb4.i
   store i8* null, i8** %0, align 8
   br label %_ZN4llvm14StringMapEntryIPvE6CreateINS_15MallocAllocatorES1_EEPS2_PKcS7_RT_T0_.exit.i
 
-_ZN4llvm14StringMapEntryIPvE6CreateINS_15MallocAllocatorES1_EEPS2_PKcS7_RT_T0_.exit.i: ; preds = %bb.i.i, %bb4.i
+_ZN4llvm14StringMapEntryIPvE6CreateINS_15MallocAllocatorES1_EEPS2_PKcS7_RT_T0_.exit.i: 
   %tmp.i18.i.i = getelementptr inbounds i8, i8* %tmp.i20.i.i, i64 16
   %tmp15.i.i = zext i32 %tmp4.i.i to i64
   tail call void @llvm.memcpy.p0i8.p0i8.i64(i8* %tmp.i18.i.i, i8* %tmp41.i, i64 %tmp15.i.i, i32 1, i1 false)
@@ -91,18 +91,18 @@ _ZN4llvm14StringMapEntryIPvE6CreateINS_15MallocAllocatorES1_EEPS2_PKcS7_RT_T0_.e
   %tmp24.i = icmp eq %"struct.llvm::StringMapEntryBase"* %tmp22.i, inttoptr (i64 -1 to %"struct.llvm::StringMapEntryBase"*)
   br i1 %tmp24.i, label %bb9.i, label %_ZN4llvm9StringMapIPvNS_15MallocAllocatorEE16GetOrCreateValueIS1_EERNS_14StringMapEntryIS1_EENS_9StringRefET_.exit
 
-bb6.i:                                            ; preds = %entry
+bb6.i:                                            
   %tmp16.i = bitcast %"struct.llvm::StringMapEntryBase"* %tmp8.i to %"struct.llvm::StringMapEntry<void*>"*
   ret %"struct.llvm::StringMapEntry<void*>"* %tmp16.i
 
-bb9.i:                                            ; preds = %_ZN4llvm14StringMapEntryIPvE6CreateINS_15MallocAllocatorES1_EEPS2_PKcS7_RT_T0_.exit.i
+bb9.i:                                            
   %tmp25.i = getelementptr inbounds %"struct.llvm::StringMap<void*,llvm::MallocAllocator>", %"struct.llvm::StringMap<void*,llvm::MallocAllocator>"* %this, i64 0, i32 0, i32 3
   %tmp26.i = load i32, i32* %tmp25.i, align 8
   %tmp27.i = add i32 %tmp26.i, -1
   store i32 %tmp27.i, i32* %tmp25.i, align 8
   ret %"struct.llvm::StringMapEntry<void*>"* %tmp10.i.i
 
-_ZN4llvm9StringMapIPvNS_15MallocAllocatorEE16GetOrCreateValueIS1_EERNS_14StringMapEntryIS1_EENS_9StringRefET_.exit: ; preds = %_ZN4llvm14StringMapEntryIPvE6CreateINS_15MallocAllocatorES1_EEPS2_PKcS7_RT_T0_.exit.i
+_ZN4llvm9StringMapIPvNS_15MallocAllocatorEE16GetOrCreateValueIS1_EERNS_14StringMapEntryIS1_EENS_9StringRefET_.exit: 
   ret %"struct.llvm::StringMapEntry<void*>"* %tmp10.i.i
 }
 

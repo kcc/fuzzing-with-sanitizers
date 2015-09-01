@@ -1,10 +1,10 @@
-; RUN: llc -march thumb %s -o - | FileCheck %s
 
-; This test checks that if-conversion pass is unconditionally added to the pass
-; pipeline and is conditionally executed based on the per-function targert-cpu
-; attribute.
+
+
+
+
  
-; CHECK: ite eq
+
 
 define i32 @test_ifcvt(i32 %a, i32 %b) #0 {
   %tmp2 = icmp eq i32 %a, 0

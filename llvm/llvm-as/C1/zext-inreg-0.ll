@@ -1,15 +1,15 @@
-; RUN: llc < %s -march=x86 | FileCheck -check-prefix=X86 %s
-; RUN: llc < %s -march=x86-64 | FileCheck -check-prefix=X64 %s
 
-; X86-NOT: and
 
-; X64-NOT: and
-; X64-NOT: movzbq
-; X64-NOT: movzwq
-; X64-NOT: movzlq
 
-; These should use movzbl instead of 'and 255'.
-; This related to not having a ZERO_EXTEND_REG opcode.
+
+
+
+
+
+
+
+
+
 
 define i32 @a(i32 %d) nounwind  {
         %e = add i32 %d, 1

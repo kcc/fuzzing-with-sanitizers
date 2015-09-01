@@ -1,6 +1,6 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv4 < %s | FileCheck %s
-; CHECK: __hexagon_addsf3
-; CHECK: __hexagon_subsf3
+
+
+
 
 define void @foo(float* %acc, float %num, float %num2) nounwind {
 entry:

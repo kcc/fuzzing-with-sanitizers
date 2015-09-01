@@ -1,4 +1,4 @@
-; RUN: llc -mtriple=mipsel-linux-gnu -march=mipsel -mcpu=mips16 -relocation-model=static < %s | FileCheck %s -check-prefix=stel
+
 
 @x = common global float 0.000000e+00, align 4
 @y = common global float 0.000000e+00, align 4
@@ -26,7 +26,7 @@
 @.str3 = private unnamed_addr constant [18 x i8] c"%f+%fi=%f+%fi %i\0A\00", align 1
 @.str4 = private unnamed_addr constant [24 x i8] c"%f+%fi=%f+%fi %f=%f %i\0A\00", align 1
 
-; Function Attrs: nounwind
+
 define void @clear() #0 {
 entry:
   store float 1.000000e+00, float* @x, align 4
@@ -60,7 +60,7 @@ entry:
   ret void
 }
 
-; Function Attrs: nounwind
+
 define i32 @main() #0 {
 entry:
   %retval = alloca i32, align 4
@@ -108,13 +108,13 @@ entry:
   %cmp10 = fcmp oeq float %16, %17
   br i1 %cmp10, label %land.rhs, label %land.end
 
-land.rhs:                                         ; preds = %entry
+land.rhs:                                         
   %18 = load float, float* @y, align 4
   %19 = load float, float* @ly, align 4
   %cmp12 = fcmp oeq float %18, %19
   br label %land.end
 
-land.end:                                         ; preds = %land.rhs, %entry
+land.end:                                         
   %20 = phi i1 [ false, %entry ], [ %cmp12, %land.rhs ]
   %land.ext = zext i1 %20 to i32
   %call14 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str1, i32 0, i32 0), double %conv6, double %conv7, double %conv8, double %conv9, i32 %land.ext)
@@ -266,19 +266,19 @@ land.end:                                         ; preds = %land.rhs, %entry
   %cmp69 = fcmp oeq float %81, %82
   br i1 %cmp69, label %land.lhs.true, label %land.end76
 
-land.lhs.true:                                    ; preds = %land.end
+land.lhs.true:                                    
   %83 = load float, float* @x, align 4
   %84 = load float, float* @lx, align 4
   %cmp71 = fcmp oeq float %83, %84
   br i1 %cmp71, label %land.rhs73, label %land.end76
 
-land.rhs73:                                       ; preds = %land.lhs.true
+land.rhs73:                                       
   %85 = load float, float* @y, align 4
   %86 = load float, float* @ly, align 4
   %cmp74 = fcmp oeq float %85, %86
   br label %land.end76
 
-land.end76:                                       ; preds = %land.rhs73, %land.lhs.true, %land.end
+land.end76:                                       
   %87 = phi i1 [ false, %land.lhs.true ], [ false, %land.end ], [ %cmp74, %land.rhs73 ]
   %land.ext77 = zext i1 %87 to i32
   %call78 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([22 x i8], [22 x i8]* @.str2, i32 0, i32 0), double %conv63, double %conv64, double %conv65, double %conv66, double %conv67, double %conv68, i32 %land.ext77)
@@ -305,19 +305,19 @@ land.end76:                                       ; preds = %land.rhs73, %land.l
   %cmp84 = fcmp oeq float %96, %97
   br i1 %cmp84, label %land.lhs.true86, label %land.end92
 
-land.lhs.true86:                                  ; preds = %land.end76
+land.lhs.true86:                                  
   %98 = load float, float* @x, align 4
   %99 = load float, float* @lx, align 4
   %cmp87 = fcmp oeq float %98, %99
   br i1 %cmp87, label %land.rhs89, label %land.end92
 
-land.rhs89:                                       ; preds = %land.lhs.true86
+land.rhs89:                                       
   %100 = load double, double* @yd, align 8
   %101 = load double, double* @lyd, align 8
   %cmp90 = fcmp oeq double %100, %101
   br label %land.end92
 
-land.end92:                                       ; preds = %land.rhs89, %land.lhs.true86, %land.end76
+land.end92:                                       
   %102 = phi i1 [ false, %land.lhs.true86 ], [ false, %land.end76 ], [ %cmp90, %land.rhs89 ]
   %land.ext93 = zext i1 %102 to i32
   %call94 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([22 x i8], [22 x i8]* @.str2, i32 0, i32 0), double %conv80, double %conv81, double %conv82, double %conv83, double %94, double %95, i32 %land.ext93)
@@ -344,19 +344,19 @@ land.end92:                                       ; preds = %land.rhs89, %land.l
   %cmp100 = fcmp oeq float %111, %112
   br i1 %cmp100, label %land.lhs.true102, label %land.end108
 
-land.lhs.true102:                                 ; preds = %land.end92
+land.lhs.true102:                                 
   %113 = load double, double* @xd, align 8
   %114 = load double, double* @lxd, align 8
   %cmp103 = fcmp oeq double %113, %114
   br i1 %cmp103, label %land.rhs105, label %land.end108
 
-land.rhs105:                                      ; preds = %land.lhs.true102
+land.rhs105:                                      
   %115 = load float, float* @y, align 4
   %116 = load float, float* @ly, align 4
   %cmp106 = fcmp oeq float %115, %116
   br label %land.end108
 
-land.end108:                                      ; preds = %land.rhs105, %land.lhs.true102, %land.end92
+land.end108:                                      
   %117 = phi i1 [ false, %land.lhs.true102 ], [ false, %land.end92 ], [ %cmp106, %land.rhs105 ]
   %land.ext109 = zext i1 %117 to i32
   %call110 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([22 x i8], [22 x i8]* @.str2, i32 0, i32 0), double %conv96, double %conv97, double %107, double %108, double %conv98, double %conv99, i32 %land.ext109)
@@ -381,19 +381,19 @@ land.end108:                                      ; preds = %land.rhs105, %land.
   %cmp114 = fcmp oeq float %126, %127
   br i1 %cmp114, label %land.lhs.true116, label %land.end122
 
-land.lhs.true116:                                 ; preds = %land.end108
+land.lhs.true116:                                 
   %128 = load double, double* @xd, align 8
   %129 = load double, double* @lxd, align 8
   %cmp117 = fcmp oeq double %128, %129
   br i1 %cmp117, label %land.rhs119, label %land.end122
 
-land.rhs119:                                      ; preds = %land.lhs.true116
+land.rhs119:                                      
   %130 = load double, double* @yd, align 8
   %131 = load double, double* @lyd, align 8
   %cmp120 = fcmp oeq double %130, %131
   br label %land.end122
 
-land.end122:                                      ; preds = %land.rhs119, %land.lhs.true116, %land.end108
+land.end122:                                      
   %132 = phi i1 [ false, %land.lhs.true116 ], [ false, %land.end108 ], [ %cmp120, %land.rhs119 ]
   %land.ext123 = zext i1 %132 to i32
   %call124 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([22 x i8], [22 x i8]* @.str2, i32 0, i32 0), double %conv112, double %conv113, double %122, double %123, double %124, double %125, i32 %land.ext123)
@@ -473,19 +473,19 @@ land.end122:                                      ; preds = %land.rhs119, %land.
   %cmp150 = fcmp oeq double %163, %164
   br i1 %cmp150, label %land.lhs.true152, label %land.end158
 
-land.lhs.true152:                                 ; preds = %land.end122
+land.lhs.true152:                                 
   %165 = load float, float* @x, align 4
   %166 = load float, float* @lx, align 4
   %cmp153 = fcmp oeq float %165, %166
   br i1 %cmp153, label %land.rhs155, label %land.end158
 
-land.rhs155:                                      ; preds = %land.lhs.true152
+land.rhs155:                                      
   %167 = load float, float* @y, align 4
   %168 = load float, float* @ly, align 4
   %cmp156 = fcmp oeq float %167, %168
   br label %land.end158
 
-land.end158:                                      ; preds = %land.rhs155, %land.lhs.true152, %land.end122
+land.end158:                                      
   %169 = phi i1 [ false, %land.lhs.true152 ], [ false, %land.end122 ], [ %cmp156, %land.rhs155 ]
   %land.ext159 = zext i1 %169 to i32
   %call160 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([22 x i8], [22 x i8]* @.str2, i32 0, i32 0), double %157, double %158, double %conv146, double %conv147, double %conv148, double %conv149, i32 %land.ext159)
@@ -510,19 +510,19 @@ land.end158:                                      ; preds = %land.rhs155, %land.
   %cmp164 = fcmp oeq double %178, %179
   br i1 %cmp164, label %land.lhs.true166, label %land.end172
 
-land.lhs.true166:                                 ; preds = %land.end158
+land.lhs.true166:                                 
   %180 = load float, float* @x, align 4
   %181 = load float, float* @lx, align 4
   %cmp167 = fcmp oeq float %180, %181
   br i1 %cmp167, label %land.rhs169, label %land.end172
 
-land.rhs169:                                      ; preds = %land.lhs.true166
+land.rhs169:                                      
   %182 = load double, double* @yd, align 8
   %183 = load double, double* @lyd, align 8
   %cmp170 = fcmp oeq double %182, %183
   br label %land.end172
 
-land.end172:                                      ; preds = %land.rhs169, %land.lhs.true166, %land.end158
+land.end172:                                      
   %184 = phi i1 [ false, %land.lhs.true166 ], [ false, %land.end158 ], [ %cmp170, %land.rhs169 ]
   %land.ext173 = zext i1 %184 to i32
   %call174 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([22 x i8], [22 x i8]* @.str2, i32 0, i32 0), double %172, double %173, double %conv162, double %conv163, double %176, double %177, i32 %land.ext173)
@@ -547,19 +547,19 @@ land.end172:                                      ; preds = %land.rhs169, %land.
   %cmp178 = fcmp oeq double %193, %194
   br i1 %cmp178, label %land.lhs.true180, label %land.end186
 
-land.lhs.true180:                                 ; preds = %land.end172
+land.lhs.true180:                                 
   %195 = load double, double* @xd, align 8
   %196 = load double, double* @lxd, align 8
   %cmp181 = fcmp oeq double %195, %196
   br i1 %cmp181, label %land.rhs183, label %land.end186
 
-land.rhs183:                                      ; preds = %land.lhs.true180
+land.rhs183:                                      
   %197 = load float, float* @y, align 4
   %198 = load float, float* @ly, align 4
   %cmp184 = fcmp oeq float %197, %198
   br label %land.end186
 
-land.end186:                                      ; preds = %land.rhs183, %land.lhs.true180, %land.end172
+land.end186:                                      
   %199 = phi i1 [ false, %land.lhs.true180 ], [ false, %land.end172 ], [ %cmp184, %land.rhs183 ]
   %land.ext187 = zext i1 %199 to i32
   %call188 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([22 x i8], [22 x i8]* @.str2, i32 0, i32 0), double %187, double %188, double %189, double %190, double %conv176, double %conv177, i32 %land.ext187)
@@ -582,19 +582,19 @@ land.end186:                                      ; preds = %land.rhs183, %land.
   %cmp190 = fcmp oeq double %208, %209
   br i1 %cmp190, label %land.lhs.true192, label %land.end198
 
-land.lhs.true192:                                 ; preds = %land.end186
+land.lhs.true192:                                 
   %210 = load double, double* @xd, align 8
   %211 = load double, double* @lxd, align 8
   %cmp193 = fcmp oeq double %210, %211
   br i1 %cmp193, label %land.rhs195, label %land.end198
 
-land.rhs195:                                      ; preds = %land.lhs.true192
+land.rhs195:                                      
   %212 = load double, double* @yd, align 8
   %213 = load double, double* @lyd, align 8
   %cmp196 = fcmp oeq double %212, %213
   br label %land.end198
 
-land.end198:                                      ; preds = %land.rhs195, %land.lhs.true192, %land.end186
+land.end198:                                      
   %214 = phi i1 [ false, %land.lhs.true192 ], [ false, %land.end186 ], [ %cmp196, %land.rhs195 ]
   %land.ext199 = zext i1 %214 to i32
   %call200 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([22 x i8], [22 x i8]* @.str2, i32 0, i32 0), double %202, double %203, double %204, double %205, double %206, double %207, i32 %land.ext199)
@@ -670,13 +670,13 @@ land.end198:                                      ; preds = %land.rhs195, %land.
   %and.ri245 = and i1 %cmp.r243, %cmp.i244
   br i1 %and.ri245, label %land.rhs247, label %land.end250
 
-land.rhs247:                                      ; preds = %land.end198
+land.rhs247:                                      
   %222 = load float, float* @x, align 4
   %223 = load float, float* @lx, align 4
   %cmp248 = fcmp oeq float %222, %223
   br label %land.end250
 
-land.end250:                                      ; preds = %land.rhs247, %land.end198
+land.end250:                                      
   %224 = phi i1 [ false, %land.end198 ], [ %cmp248, %land.rhs247 ]
   %land.ext251 = zext i1 %224 to i32
   %call252 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([24 x i8], [24 x i8]* @.str4, i32 0, i32 0), double %conv223, double %conv228, double %conv231, double %conv236, double %conv237, double %conv238, i32 %land.ext251)
@@ -736,13 +736,13 @@ land.end250:                                      ; preds = %land.rhs247, %land.
   %and.ri284 = and i1 %cmp.r282, %cmp.i283
   br i1 %and.ri284, label %land.rhs286, label %land.end289
 
-land.rhs286:                                      ; preds = %land.end250
+land.rhs286:                                      
   %232 = load float, float* @x, align 4
   %233 = load float, float* @lx, align 4
   %cmp287 = fcmp oeq float %232, %233
   br label %land.end289
 
-land.end289:                                      ; preds = %land.rhs286, %land.end250
+land.end289:                                      
   %234 = phi i1 [ false, %land.end250 ], [ %cmp287, %land.rhs286 ]
   %land.ext290 = zext i1 %234 to i32
   %call291 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([24 x i8], [24 x i8]* @.str4, i32 0, i32 0), double %ret_dc.real268, double %ret_dc.imag271, double %lret_dc.real272, double %lret_dc.imag275, double %conv276, double %conv277, i32 %land.ext290)
@@ -751,280 +751,280 @@ land.end289:                                      ; preds = %land.rhs286, %land.
 }
 
 declare void @v_sf(float) #1
-; stel: .section	.mips16.call.fp.v_sf,"ax",@progbits
-; stel:	.ent	__call_stub_fp_v_sf
-; stel:	mtc1 $4,$f12
-; stel:	lui  $25,%hi(v_sf)
-; stel:	addiu  $25,$25,%lo(v_sf)
-; stel:	jr $25
-; stel:	.end	__call_stub_fp_v_sf
+
+
+
+
+
+
+
 
 declare i32 @printf(i8*, ...) #1
 
 declare void @v_df(double) #1
-; stel: .section	.mips16.call.fp.v_df,"ax",@progbits
-; stel:	.ent	__call_stub_fp_v_df
-; stel: #APP
-; setl: .set reorder
-; stel:	mtc1 $4,$f12
-; stel:	mtc1 $5,$f13
-; stel:	lui  $25,%hi(v_df)
-; stel:	addiu  $25,$25,%lo(v_df)
-; stel:	jr $25
-; stel:	.end	__call_stub_fp_v_df
+
+
+
+
+
+
+
+
+
+
 
 declare void @v_sf_sf(float, float) #1
-; stel: .section	.mips16.call.fp.v_sf_sf,"ax",@progbits
-; stel:	.ent	__call_stub_fp_v_sf_sf
-; stel:	mtc1 $4,$f12
-; stel:	mtc1 $5,$f14
-; stel:	lui  $25,%hi(v_sf_sf)
-; stel:	addiu  $25,$25,%lo(v_sf_sf)
-; stel:	jr $25
-; stel:	.end	__call_stub_fp_v_sf_sf
+
+
+
+
+
+
+
+
 
 declare void @v_sf_df(float, double) #1
-; stel: .section	.mips16.call.fp.v_sf_df,"ax",@progbits
-; stel:	.ent	__call_stub_fp_v_sf_df
-; stel:	mtc1 $4,$f12
-; stel:	mtc1 $6,$f14
-; stel:	mtc1 $7,$f15
-; stel:	lui  $25,%hi(v_sf_df)
-; stel:	addiu  $25,$25,%lo(v_sf_df)
-; stel:	jr $25
-; stel:	.end	__call_stub_fp_v_sf_df
+
+
+
+
+
+
+
+
+
 
 declare void @v_df_sf(double, float) #1
-; stel: .section	.mips16.call.fp.v_df_sf,"ax",@progbits
-; stel:	.ent	__call_stub_fp_v_df_sf
-; stel:	mtc1 $4,$f12
-; stel:	mtc1 $5,$f13
-; stel:	mtc1 $6,$f14
-; stel:	lui  $25,%hi(v_df_sf)
-; stel:	addiu  $25,$25,%lo(v_df_sf)
-; stel:	jr $25
-; stel:	.end	__call_stub_fp_v_df_sf
+
+
+
+
+
+
+
+
+
 
 declare void @v_df_df(double, double) #1
-; stel: .section	.mips16.call.fp.v_df_df,"ax",@progbits
-; stel:	.ent	__call_stub_fp_v_df_df
-; stel:	mtc1 $4,$f12
-; stel:	mtc1 $5,$f13
-; stel:	mtc1 $6,$f14
-; stel:	mtc1 $7,$f15
-; stel:	lui  $25,%hi(v_df_df)
-; stel:	addiu  $25,$25,%lo(v_df_df)
-; stel:	jr $25
-; stel:	.end	__call_stub_fp_v_df_df
+
+
+
+
+
+
+
+
+
+
 
 declare float @sf_v() #1
-; stel: .section	.mips16.call.fp.sf_v,"ax",@progbits
-; stel:	.ent	__call_stub_fp_sf_v
-; stel: move $18, $31
-; stel: jal sf_v
-; stel:	mfc1 $2,$f0
-; stel:	jr $18
-; stel:	.end	__call_stub_fp_sf_v
+
+
+
+
+
+
+
 
 declare float @sf_sf(float) #1
-; stel: .section	.mips16.call.fp.sf_sf,"ax",@progbits
-; stel:	.ent	__call_stub_fp_sf_sf
-; stel: mtc1 $4,$f12
-; stel: move $18, $31
-; stel: jal sf_sf
-; stel:	mfc1 $2,$f0
-; stel:	jr $18
-; stel:	.end	__call_stub_fp_sf_sf
+
+
+
+
+
+
+
+
 
 declare float @sf_df(double) #1
-; stel: .section	.mips16.call.fp.sf_df,"ax",@progbits
-; stel:	.ent	__call_stub_fp_sf_df
-; stel: mtc1 $4,$f12
-; stel: mtc1 $5,$f13
-; stel: move $18, $31
-; stel: jal sf_df
-; stel:	mfc1 $2,$f0
-; stel:	jr $18
-; stel:	.end	__call_stub_fp_sf_df
+
+
+
+
+
+
+
+
+
 
 declare float @sf_sf_sf(float, float) #1
-; stel: .section	.mips16.call.fp.sf_sf_sf,"ax",@progbits
-; stel:	.ent	__call_stub_fp_sf_sf_sf
-; stel: mtc1 $4,$f12
-; stel: mtc1 $5,$f14
-; stel: move $18, $31
-; stel: jal sf_sf_sf
-; stel:	mfc1 $2,$f0
-; stel:	jr $18
-; stel:	.end	__call_stub_fp_sf_sf_sf
+
+
+
+
+
+
+
+
+
 
 declare float @sf_sf_df(float, double) #1
-; stel: .section	.mips16.call.fp.sf_sf_df,"ax",@progbits
-; stel:	.ent	__call_stub_fp_sf_sf_df
-; stel: mtc1 $4,$f12
-; stel: mtc1 $6,$f14
-; stel: mtc1 $7,$f15
-; stel: move $18, $31
-; stel: jal sf_sf_df
-; stel:	mfc1 $2,$f0
-; stel:	jr $18
-; stel:	.end	__call_stub_fp_sf_sf_df
+
+
+
+
+
+
+
+
+
+
 
 declare float @sf_df_sf(double, float) #1
-; stel: .section	.mips16.call.fp.sf_df_sf,"ax",@progbits
-; stel:	.ent	__call_stub_fp_sf_df_sf
-; stel: mtc1 $4,$f12
-; stel: mtc1 $5,$f13
-; stel: mtc1 $6,$f14
-; stel: move $18, $31
-; stel: jal sf_df_sf
-; stel:	mfc1 $2,$f0
-; stel:	jr $18
-; stel:	.end	__call_stub_fp_sf_df_sf
+
+
+
+
+
+
+
+
+
+
 
 declare float @sf_df_df(double, double) #1
-; stel: .section	.mips16.call.fp.sf_df_df,"ax",@progbits
-; stel:	.ent	__call_stub_fp_sf_df_df
-; stel: mtc1 $4,$f12
-; stel: mtc1 $5,$f13
-; stel: mtc1 $6,$f14
-; stel: mtc1 $7,$f15
-; stel: move $18, $31
-; stel: jal sf_df_df
-; stel:	mfc1 $2,$f0
-; stel:	jr $18
-; stel:	.end	__call_stub_fp_sf_df_df
+
+
+
+
+
+
+
+
+
+
+
 
 declare double @df_v() #1
-; stel: .section	.mips16.call.fp.df_v,"ax",@progbits
-; stel:	.ent	__call_stub_fp_df_v
-; stel: move $18, $31
-; stel: jal df_v
-; stel:	mfc1 $2,$f0
-; stel:	mfc1 $3,$f1
-; stel:	jr $18
-; stel:	.end	__call_stub_fp_df_v
+
+
+
+
+
+
+
+
 
 declare double @df_sf(float) #1
-; stel: .section	.mips16.call.fp.df_sf,"ax",@progbits
-; stel:	.ent	__call_stub_fp_df_sf
-; stel: mtc1 $4,$f12
-; stel: move $18, $31
-; stel: jal df_sf
-; stel:	mfc1 $2,$f0
-; stel:	mfc1 $3,$f1
-; stel:	jr $18
-; stel:	.end	__call_stub_fp_df_sf
+
+
+
+
+
+
+
+
+
 
 declare double @df_df(double) #1
-; stel: .section	.mips16.call.fp.df_df,"ax",@progbits
-; stel:	.ent	__call_stub_fp_df_df
-; stel: mtc1 $4,$f12
-; stel: mtc1 $5,$f13
-; stel: move $18, $31
-; stel: jal df_df
-; stel:	mfc1 $2,$f0
-; stel:	mfc1 $3,$f1
-; stel:	jr $18
-; stel:	.end	__call_stub_fp_df_df
+
+
+
+
+
+
+
+
+
+
 
 declare double @df_sf_sf(float, float) #1
-; stel: .section	.mips16.call.fp.df_sf_sf,"ax",@progbits
-; stel:	.ent	__call_stub_fp_df_sf_sf
-; stel: mtc1 $4,$f12
-; stel: mtc1 $5,$f14
-; stel: move $18, $31
-; stel: jal df_sf_sf
-; stel:	mfc1 $2,$f0
-; stel:	mfc1 $3,$f1
-; stel:	jr $18
-; stel:	.end	__call_stub_fp_df_sf_sf
+
+
+
+
+
+
+
+
+
+
 
 declare double @df_sf_df(float, double) #1
-; stel: .section	.mips16.call.fp.df_sf_df,"ax",@progbits
-; stel:	.ent	__call_stub_fp_df_sf_df
-; stel: mtc1 $4,$f12
-; stel: mtc1 $6,$f14
-; stel: mtc1 $7,$f15
-; stel: move $18, $31
-; stel: jal df_sf_df
-; stel:	mfc1 $2,$f0
-; stel:	mfc1 $3,$f1
-; stel:	jr $18
-; stel:	.end	__call_stub_fp_df_sf_df
+
+
+
+
+
+
+
+
+
+
+
 
 declare double @df_df_sf(double, float) #1
-; stel: .section	.mips16.call.fp.df_df_sf,"ax",@progbits
-; stel:	.ent	__call_stub_fp_df_df_sf
-; stel: mtc1 $4,$f12
-; stel: mtc1 $5,$f13
-; stel: mtc1 $6,$f14
-; stel: move $18, $31
-; stel: jal df_df_sf
-; stel:	mfc1 $2,$f0
-; stel:	mfc1 $3,$f1
-; stel:	jr $18
-; stel:	.end	__call_stub_fp_df_df_sf
+
+
+
+
+
+
+
+
+
+
+
 
 declare double @df_df_df(double, double) #1
-; stel: .section	.mips16.call.fp.df_df_df,"ax",@progbits
-; stel:	.ent	__call_stub_fp_df_df_df
-; stel: mtc1 $4,$f12
-; stel: mtc1 $5,$f13
-; stel: mtc1 $6,$f14
-; stel: mtc1 $7,$f15
-; stel: move $18, $31
-; stel: jal df_df_df
-; stel:	mfc1 $2,$f0
-; stel:	mfc1 $3,$f1
-; stel:	jr $18
-; stel:	.end	__call_stub_fp_df_df_df
+
+
+
+
+
+
+
+
+
+
+
+
 
 declare { float, float } @sc_v() #1
-; stel: .section	.mips16.call.fp.sc_v,"ax",@progbits
-; stel:	.ent	__call_stub_fp_sc_v
-; stel: move $18, $31
-; stel: jal sc_v
-; stel:	mfc1 $2,$f0
-; stel:	mfc1 $3,$f2
-; stel:	jr $18
-; stel:	.end	__call_stub_fp_sc_v
+
+
+
+
+
+
+
+
 
 declare { float, float } @sc_sf(float) #1
-; stel: .section	.mips16.call.fp.sc_sf,"ax",@progbits
-; stel:	.ent	__call_stub_fp_sc_sf
-; stel: mtc1 $4,$f12
-; stel: move $18, $31
-; stel: jal sc_sf
-; stel:	mfc1 $2,$f0
-; stel:	mfc1 $3,$f2
-; stel:	jr $18
-; stel:	.end	__call_stub_fp_sc_sf
+
+
+
+
+
+
+
+
+
 
 declare { double, double } @dc_v() #1
-; stel: .section	.mips16.call.fp.dc_v,"ax",@progbits
-; stel:	.ent	__call_stub_fp_dc_v
-; stel: move $18, $31
-; stel: jal dc_v
-; stel:	mfc1 $4,$f2
-; stel:	mfc1 $5,$f3
-; stel:	mfc1 $2,$f0
-; stel:	mfc1 $3,$f1
-; stel:	jr $18
-; stel:	.end	__call_stub_fp_dc_v
+
+
+
+
+
+
+
+
+
+
 
 declare { double, double } @dc_sf(float) #1
-; stel: .section	.mips16.call.fp.dc_sf,"ax",@progbits
-; stel:	.ent	__call_stub_fp_dc_sf
-; stel: mtc1 $4,$f12
-; stel: move $18, $31
-; stel: jal dc_sf
-; stel:	mfc1 $4,$f2
-; stel:	mfc1 $5,$f3
-; stel:	mfc1 $2,$f0
-; stel:	mfc1 $3,$f1
-; stel:	jr $18
-; stel:	.end	__call_stub_fp_dc_sf
+
+
+
+
+
+
+
+
+
+
+
 
 attributes #0 = { nounwind "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "unsafe-fp-math"="false" "use-soft-float"="false" }
 attributes #1 = { "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "unsafe-fp-math"="false" "use-soft-float"="false" }

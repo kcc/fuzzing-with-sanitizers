@@ -1,26 +1,26 @@
-; RUN: llc %s -O0 -o - | FileCheck -check-prefix=NO-MERGE %s
-; RUN: llc %s -O0 -o - -arm-global-merge=false | FileCheck -check-prefix=NO-MERGE %s
-; RUN: llc %s -O0 -o - -arm-global-merge=true | FileCheck -check-prefix=MERGE %s
-; RUN: llc %s -O1 -o - | FileCheck -check-prefix=NO-MERGE %s
-; RUN: llc %s -O1 -o - -arm-global-merge=false | FileCheck -check-prefix=NO-MERGE %s
-; RUN: llc %s -O1 -o - -arm-global-merge=true | FileCheck -check-prefix=MERGE %s
-; RUN: llc %s -O3 -o - | FileCheck -check-prefix=MERGE %s
-; RUN: llc %s -O3 -o - -arm-global-merge=false | FileCheck -check-prefix=NO-MERGE %s
-; RUN: llc %s -O3 -o - -arm-global-merge=true | FileCheck -check-prefix=MERGE %s
 
-; MERGE-NOT: .zerofill __DATA,__bss,_bar,20,2
-; MERGE-NOT: .zerofill __DATA,__bss,_baz,20,2
-; MERGE-NOT: .zerofill __DATA,__bss,_foo,20,2
-; MERGE: .zerofill __DATA,__bss,l__MergedGlobals,60,4
-; MERGE-NOT: .zerofill __DATA,__bss,_bar,20,2
-; MERGE-NOT: .zerofill __DATA,__bss,_baz,20,2
-; MERGE-NOT: .zerofill __DATA,__bss,_foo,20,2
 
-; NO-MERGE-NOT: .zerofill __DATA,__bss,l__MergedGlobals,60,4
-; NO-MERGE: .zerofill __DATA,__bss,_bar,20,2
-; NO-MERGE: .zerofill __DATA,__bss,_baz,20,2
-; NO-MERGE: .zerofill __DATA,__bss,_foo,20,2
-; NO-MERGE-NOT: .zerofill __DATA,__bss,l__MergedGlobals,60,4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:32:64-v128:32:128-a0:0:32-n32-S32"
 target triple = "thumbv7-apple-ios3.0.0"
@@ -29,7 +29,7 @@ target triple = "thumbv7-apple-ios3.0.0"
 @baz = internal global [5 x i32] zeroinitializer, align 4
 @foo = internal global [5 x i32] zeroinitializer, align 4
 
-; Function Attrs: nounwind ssp
+
 define internal void @initialize() #0 {
   %1 = tail call i32 bitcast (i32 (...)* @calc to i32 ()*)() #3
   store i32 %1, i32* getelementptr inbounds ([5 x i32], [5 x i32]* @bar, i32 0, i32 0), align 4, !tbaa !1
@@ -56,7 +56,7 @@ define internal void @initialize() #0 {
 
 declare i32 @calc(...) #1
 
-; Function Attrs: nounwind ssp
+
 define internal void @calculate() #0 {
   %1 = load <4 x i32>, <4 x i32>* bitcast ([5 x i32]* @bar to <4 x i32>*), align 4
   %2 = load <4 x i32>, <4 x i32>* bitcast ([5 x i32]* @baz to <4 x i32>*), align 4
@@ -69,7 +69,7 @@ define internal void @calculate() #0 {
   ret void
 }
 
-; Function Attrs: nounwind readnone ssp
+
 define internal i32* @returnFoo() #2 {
   ret i32* getelementptr inbounds ([5 x i32], [5 x i32]* @foo, i32 0, i32 0)
 }

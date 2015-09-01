@@ -1,6 +1,6 @@
-; RUN: llc < %s
 
-; Make sure we are not crashing on this one.
+
+
 
 target triple = "x86_64-unknown-linux-gnu"
 

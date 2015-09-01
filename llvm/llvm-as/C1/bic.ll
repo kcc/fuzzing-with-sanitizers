@@ -1,4 +1,4 @@
-; RUN: llc -mtriple=arm-eabi %s -o - | FileCheck %s
+
 
 define i32 @f1(i32 %a, i32 %b) {
     %tmp = xor i32 %b, 4294967295
@@ -6,7 +6,7 @@ define i32 @f1(i32 %a, i32 %b) {
     ret i32 %tmp1
 }
 
-; CHECK: bic	r0, r0, r1
+
 
 define i32 @f2(i32 %a, i32 %b) {
     %tmp = xor i32 %b, 4294967295
@@ -14,4 +14,4 @@ define i32 @f2(i32 %a, i32 %b) {
     ret i32 %tmp1
 }
 
-; CHECK: bic	r0, r0, r1
+

@@ -1,5 +1,5 @@
-; RUN: llc -march=hexagon < %s | FileCheck %s
-; CHECK-NOT: cmpb.eq(r{{[0-9]+}}, #-1)
+
+
 
 target datalayout = "e-p:32:32:32-i64:64:64-i32:32:32-i16:16:16-i1:32:32-f64:64:64-f32:32:32-v64:64:64-v32:32:32-a0:0-n16:32"
 target triple = "hexagon"
@@ -13,18 +13,18 @@ entry:
   %or.cond = or i1 %cmp, %cmp2
   br i1 %or.cond, label %if.then12, label %if.then
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %dec = add i8 %len, -1
   %cmp3 = icmp ugt i8 %dec, 24
   %tobool27 = icmp eq i8 %dec, 0
   %or.cond31 = or i1 %cmp3, %tobool27
   br i1 %or.cond31, label %if.then12, label %for.body.lr.ph
 
-for.body.lr.ph:                                   ; preds = %if.then
+for.body.lr.ph:                                   
   %dec626 = add i8 %len, -2
   br label %for.body
 
-for.body:                                         ; preds = %for.body.lr.ph, %if.end21
+for.body:                                         
   %indvars.iv = phi i32 [ 0, %for.body.lr.ph ], [ %indvars.iv.next, %if.end21 ]
   %dec630 = phi i8 [ %dec626, %for.body.lr.ph ], [ %dec6, %if.end21 ]
   %str.pn = phi i8* [ %str, %for.body.lr.ph ], [ %str.addr.029, %if.end21 ]
@@ -33,13 +33,13 @@ for.body:                                         ; preds = %for.body.lr.ph, %if
   %cmp10 = icmp ugt i8 %0, -49
   br i1 %cmp10, label %if.then12.loopexit, label %if.end21
 
-if.then12.loopexit:                               ; preds = %if.end21, %for.body
+if.then12.loopexit:                               
   br label %if.then12
 
-if.then12:                                        ; preds = %if.then12.loopexit, %if.then, %entry
+if.then12:                                        
   ret i8 0
 
-if.end21:                                         ; preds = %for.body
+if.end21:                                         
   %shr24 = lshr i8 %0, 4
   %arrayidx = getelementptr inbounds %struct.wms_address_s, %struct.wms_address_s* %addr, i32 0, i32 5, i32 %indvars.iv
   store i8 %shr24, i8* %arrayidx, align 1, !tbaa !0

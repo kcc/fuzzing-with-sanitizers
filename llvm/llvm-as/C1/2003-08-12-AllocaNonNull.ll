@@ -1,21 +1,21 @@
-; This testcase can be simplified by "realizing" that alloca can never return
-; null.
-; RUN: opt < %s -instcombine -simplifycfg -S | FileCheck %s
-; CHECK-NOT: br
+
+
+
+
 
 declare i32 @bitmap_clear(...)
 
 define i32 @oof() {
 entry:
-        %live_head = alloca i32         ; <i32*> [#uses=2]
-        %tmp.1 = icmp ne i32* %live_head, null          ; <i1> [#uses=1]
+        %live_head = alloca i32         
+        %tmp.1 = icmp ne i32* %live_head, null          
         br i1 %tmp.1, label %then, label %UnifiedExitNode
 
-then:           ; preds = %entry
-        %tmp.4 = call i32 (...) @bitmap_clear( i32* %live_head )               ; <i32> [#uses=0]
+then:           
+        %tmp.4 = call i32 (...) @bitmap_clear( i32* %live_head )               
         br label %UnifiedExitNode
 
-UnifiedExitNode:                ; preds = %then, %entry
+UnifiedExitNode:                
         ret i32 0
 }
 

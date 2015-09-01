@@ -1,27 +1,27 @@
-; RUN: true
-; This file belongs to type-unique-type-array-a.ll.
-;
-; rdar://problem/17628609
-;
-; cat -n b.cpp
-;     1	struct SA {
-;     2	  int a;
-;     3	};
-;     4	
-;     5	class B {
-;     6	public:
-;     7	  void testB(SA sa) {
-;     8	  }
-;     9	};
-;    10	
-;    11	void topB(B* b, SA sa) {
-;    12	  b->testB(sa);
-;    13	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %class.B = type { i8 }
 %struct.SA = type { i32 }
 
-; Function Attrs: ssp uwtable
+
 define void @_Z4topBP1B2SA(%class.B* %b, i32 %sa.coerce) #0 {
 entry:
   %sa = alloca %struct.SA, align 4
@@ -42,10 +42,10 @@ entry:
   ret void, !dbg !29
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
-; Function Attrs: nounwind ssp uwtable
+
 define linkonce_odr void @_ZN1B5testBE2SA(%class.B* %this, i32 %sa.coerce) #2 align 2 {
 entry:
   %sa = alloca %struct.SA, align 4
@@ -59,7 +59,7 @@ entry:
   ret void, !dbg !34
 }
 
-; Function Attrs: nounwind
+
 declare void @llvm.memcpy.p0i8.p0i8.i64(i8* nocapture, i8* nocapture readonly, i64, i32, i1) #3
 
 attributes #0 = { ssp uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

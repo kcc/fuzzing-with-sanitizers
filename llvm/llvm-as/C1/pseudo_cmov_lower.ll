@@ -1,10 +1,10 @@
-; RUN: llc < %s -mtriple=i386-linux-gnu -o - | FileCheck %s 
 
-; This test checks that only a single js gets generated in the final code
-; for lowering the CMOV pseudos that get created for this IR.
-; CHECK-LABEL: foo1:
-; CHECK: js
-; CHECK-NOT: js
+
+
+
+
+
+
 define i32 @foo1(i32 %v1, i32 %v2, i32 %v3) nounwind {
 entry:
   %cmp = icmp slt i32 %v1, 0
@@ -14,13 +14,13 @@ entry:
   ret i32 %sub
 }
 
-; This test checks that only a single js gets generated in the final code
-; for lowering the CMOV pseudos that get created for this IR. This makes
-; sure the code for the lowering for opposite conditions gets tested.
-; CHECK-LABEL: foo11:
-; CHECK: js
-; CHECK-NOT: js
-; CHECK-NOT: jns
+
+
+
+
+
+
+
 define i32 @foo11(i32 %v1, i32 %v2, i32 %v3) nounwind {
 entry:
   %cmp1 = icmp slt i32 %v1, 0
@@ -31,11 +31,11 @@ entry:
   ret i32 %sub
 }
 
-; This test checks that only a single js gets generated in the final code
-; for lowering the CMOV pseudos that get created for this IR.
-; CHECK-LABEL: foo2:
-; CHECK: js
-; CHECK-NOT: js
+
+
+
+
+
 define i32 @foo2(i8 %v1, i8 %v2, i8 %v3) nounwind {
 entry:
   %cmp = icmp slt i8 %v1, 0
@@ -47,11 +47,11 @@ entry:
   ret i32 %sub
 }
 
-; This test checks that only a single js gets generated in the final code
-; for lowering the CMOV pseudos that get created for this IR.
-; CHECK-LABEL: foo3:
-; CHECK: js
-; CHECK-NOT: js
+
+
+
+
+
 define i32 @foo3(i16 %v1, i16 %v2, i16 %v3) nounwind {
 entry:
   %cmp = icmp slt i16 %v1, 0
@@ -63,11 +63,11 @@ entry:
   ret i32 %sub
 }
 
-; This test checks that only a single js gets generated in the final code
-; for lowering the CMOV pseudos that get created for this IR.
-; CHECK-LABEL: foo4:
-; CHECK: js
-; CHECK-NOT: js
+
+
+
+
+
 define float @foo4(i32 %v1, float %v2, float %v3, float %v4) nounwind {
 entry:
   %cmp = icmp slt i32 %v1, 0
@@ -77,11 +77,11 @@ entry:
   ret float %sub
 }
 
-; This test checks that only a single je gets generated in the final code
-; for lowering the CMOV pseudos that get created for this IR.
-; CHECK-LABEL: foo5:
-; CHECK: je
-; CHECK-NOT: je
+
+
+
+
+
 define double @foo5(i32 %v1, double %v2, double %v3, double %v4) nounwind {
 entry:
   %cmp = icmp eq i32 %v1, 0
@@ -91,11 +91,11 @@ entry:
   ret double %sub
 }
 
-; This test checks that only a single je gets generated in the final code
-; for lowering the CMOV pseudos that get created for this IR.
-; CHECK-LABEL: foo6:
-; CHECK: je
-; CHECK-NOT: je
+
+
+
+
+
 define <4 x float> @foo6(i32 %v1, <4 x float> %v2, <4 x float> %v3, <4 x float> %v4) nounwind {
 entry:
   %cmp = icmp eq i32 %v1, 0
@@ -105,11 +105,11 @@ entry:
   ret <4 x float> %sub
 }
 
-; This test checks that only a single je gets generated in the final code
-; for lowering the CMOV pseudos that get created for this IR.
-; CHECK-LABEL: foo7:
-; CHECK: je
-; CHECK-NOT: je
+
+
+
+
+
 define <2 x double> @foo7(i32 %v1, <2 x double> %v2, <2 x double> %v3, <2 x double> %v4) nounwind {
 entry:
   %cmp = icmp eq i32 %v1, 0
@@ -119,13 +119,13 @@ entry:
   ret <2 x double> %sub
 }
 
-; This test checks that only a single ja gets generated in the final code
-; for lowering the CMOV pseudos that get created for this IR. This combines
-; all the supported types together into one long string of selects based
-; on the same condition.
-; CHECK-LABEL: foo8:
-; CHECK: ja
-; CHECK-NOT: ja
+
+
+
+
+
+
+
 define void @foo8(i32 %v1,
                   i8 %v2, i8 %v3,
                   i16 %v12, i16 %v13,
@@ -170,9 +170,9 @@ entry:
   %add.ptr101 = getelementptr inbounds i8, i8* %dst, i32 128
   %a101 = bitcast i8* %add.ptr101 to <8 x double>*
 
-  ; These operations are necessary, because select of two single use loads
-  ; ends up getting optimized into a select of two leas, followed by a
-  ; single load of the selected address.
+  
+  
+  
   %t13 = xor i16 %v13, 11
   %t23 = xor i32 %v23, 1234
   %t33 = fadd float %v33, %v32
@@ -210,21 +210,21 @@ entry:
   ret void
 }
 
-; This test checks that only a single ja gets generated in the final code
-; for lowering the CMOV pseudos that get created for this IR.
-; on the same condition.
-; Contrary to my expectations, this doesn't exercise the code for
-; CMOV_V8I1, CMOV_V16I1, CMOV_V32I1, or CMOV_V64I1.  Instead the selects all
-; get lowered into vector length number of selects, which all eventually turn
-; into a huge number of CMOV_GR8, which are all contiguous, so the optimization
-; kicks in as long as CMOV_GR8 is supported. I couldn't find a way to get
-; CMOV_V*I1 pseudo-opcodes to get generated. If a way exists to get CMOV_V*1
-; pseudo-opcodes to be generated, this test should be replaced with one that
-; tests those opcodes.
-;
-; CHECK-LABEL: foo9:
-; CHECK: ja
-; CHECK-NOT: ja
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @foo9(i32 %v1,
                   <8 x i1> %v12, <8 x i1> %v13,
                   <16 x i1> %v22, <16 x i1> %v23,
@@ -244,9 +244,9 @@ entry:
   %add.ptr41 = getelementptr inbounds i8, i8* %dst, i32 16
   %a41 = bitcast i8* %add.ptr41 to <64 x i1>*
 
-  ; These operations are necessary, because select of two single use loads
-  ; ends up getting optimized into a select of two leas, followed by a
-  ; single load of the selected address.
+  
+  
+  
   %t13 = xor <8 x i1> %v13, %v12
   %t23 = xor <16 x i1> %v23, %v22
   %t33 = xor <32 x i1> %v33, %v32

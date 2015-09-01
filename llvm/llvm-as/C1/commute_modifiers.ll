@@ -1,13 +1,13 @@
-; RUN: llc -march=amdgcn -mcpu=SI -verify-machineinstrs < %s | FileCheck -check-prefix=SI -check-prefix=FUNC %s
+
 
 declare i32 @llvm.r600.read.tidig.x() #1
 declare float @llvm.fabs.f32(float) #1
 declare float @llvm.fma.f32(float, float, float) nounwind readnone
 
-; FUNC-LABEL: @commute_add_imm_fabs_f32
-; SI: buffer_load_dword [[X:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI: v_add_f32_e64 [[REG:v[0-9]+]], 2.0, |[[X]]|
-; SI-NEXT: buffer_store_dword [[REG]]
+
+
+
+
 define void @commute_add_imm_fabs_f32(float addrspace(1)* %out, float addrspace(1)* %in) #0 {
   %tid = call i32 @llvm.r600.read.tidig.x() #1
   %gep.0 = getelementptr float, float addrspace(1)* %in, i32 %tid
@@ -18,10 +18,10 @@ define void @commute_add_imm_fabs_f32(float addrspace(1)* %out, float addrspace(
   ret void
 }
 
-; FUNC-LABEL: @commute_mul_imm_fneg_fabs_f32
-; SI: buffer_load_dword [[X:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI: v_mul_f32_e64 [[REG:v[0-9]+]], -4.0, |[[X]]|
-; SI-NEXT: buffer_store_dword [[REG]]
+
+
+
+
 define void @commute_mul_imm_fneg_fabs_f32(float addrspace(1)* %out, float addrspace(1)* %in) #0 {
   %tid = call i32 @llvm.r600.read.tidig.x() #1
   %gep.0 = getelementptr float, float addrspace(1)* %in, i32 %tid
@@ -33,10 +33,10 @@ define void @commute_mul_imm_fneg_fabs_f32(float addrspace(1)* %out, float addrs
   ret void
 }
 
-; FUNC-LABEL: @commute_mul_imm_fneg_f32
-; SI: buffer_load_dword [[X:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI: v_mul_f32_e32 [[REG:v[0-9]+]], -4.0, [[X]]
-; SI-NEXT: buffer_store_dword [[REG]]
+
+
+
+
 define void @commute_mul_imm_fneg_f32(float addrspace(1)* %out, float addrspace(1)* %in) #0 {
   %tid = call i32 @llvm.r600.read.tidig.x() #1
   %gep.0 = getelementptr float, float addrspace(1)* %in, i32 %tid
@@ -47,12 +47,12 @@ define void @commute_mul_imm_fneg_f32(float addrspace(1)* %out, float addrspace(
   ret void
 }
 
-; FIXME: Should use SGPR for literal.
-; FUNC-LABEL: @commute_add_lit_fabs_f32
-; SI: buffer_load_dword [[X:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI: v_mov_b32_e32 [[K:v[0-9]+]], 0x44800000
-; SI: v_add_f32_e64 [[REG:v[0-9]+]], |[[X]]|, [[K]]
-; SI-NEXT: buffer_store_dword [[REG]]
+
+
+
+
+
+
 define void @commute_add_lit_fabs_f32(float addrspace(1)* %out, float addrspace(1)* %in) #0 {
   %tid = call i32 @llvm.r600.read.tidig.x() #1
   %gep.0 = getelementptr float, float addrspace(1)* %in, i32 %tid
@@ -63,11 +63,11 @@ define void @commute_add_lit_fabs_f32(float addrspace(1)* %out, float addrspace(
   ret void
 }
 
-; FUNC-LABEL: @commute_add_fabs_f32
-; SI-DAG: buffer_load_dword [[X:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI-DAG: buffer_load_dword [[Y:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:4
-; SI: v_add_f32_e64 [[REG:v[0-9]+]], [[X]], |[[Y]]|
-; SI-NEXT: buffer_store_dword [[REG]]
+
+
+
+
+
 define void @commute_add_fabs_f32(float addrspace(1)* %out, float addrspace(1)* %in) #0 {
   %tid = call i32 @llvm.r600.read.tidig.x() #1
   %gep.0 = getelementptr float, float addrspace(1)* %in, i32 %tid
@@ -80,11 +80,11 @@ define void @commute_add_fabs_f32(float addrspace(1)* %out, float addrspace(1)* 
   ret void
 }
 
-; FUNC-LABEL: @commute_mul_fneg_f32
-; SI-DAG: buffer_load_dword [[X:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI-DAG: buffer_load_dword [[Y:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:4
-; SI: v_mul_f32_e64 [[REG:v[0-9]+]], [[X]], -[[Y]]
-; SI-NEXT: buffer_store_dword [[REG]]
+
+
+
+
+
 define void @commute_mul_fneg_f32(float addrspace(1)* %out, float addrspace(1)* %in) #0 {
   %tid = call i32 @llvm.r600.read.tidig.x() #1
   %gep.0 = getelementptr float, float addrspace(1)* %in, i32 %tid
@@ -97,11 +97,11 @@ define void @commute_mul_fneg_f32(float addrspace(1)* %out, float addrspace(1)* 
   ret void
 }
 
-; FUNC-LABEL: @commute_mul_fabs_fneg_f32
-; SI-DAG: buffer_load_dword [[X:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI-DAG: buffer_load_dword [[Y:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:4
-; SI: v_mul_f32_e64 [[REG:v[0-9]+]], [[X]], -|[[Y]]|
-; SI-NEXT: buffer_store_dword [[REG]]
+
+
+
+
+
 define void @commute_mul_fabs_fneg_f32(float addrspace(1)* %out, float addrspace(1)* %in) #0 {
   %tid = call i32 @llvm.r600.read.tidig.x() #1
   %gep.0 = getelementptr float, float addrspace(1)* %in, i32 %tid
@@ -115,12 +115,12 @@ define void @commute_mul_fabs_fneg_f32(float addrspace(1)* %out, float addrspace
   ret void
 }
 
-; There's no reason to commute this.
-; FUNC-LABEL: @commute_mul_fabs_x_fabs_y_f32
-; SI-DAG: buffer_load_dword [[X:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI-DAG: buffer_load_dword [[Y:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:4
-; SI: v_mul_f32_e64 [[REG:v[0-9]+]], |[[X]]|, |[[Y]]|
-; SI-NEXT: buffer_store_dword [[REG]]
+
+
+
+
+
+
 define void @commute_mul_fabs_x_fabs_y_f32(float addrspace(1)* %out, float addrspace(1)* %in) #0 {
   %tid = call i32 @llvm.r600.read.tidig.x() #1
   %gep.0 = getelementptr float, float addrspace(1)* %in, i32 %tid
@@ -134,11 +134,11 @@ define void @commute_mul_fabs_x_fabs_y_f32(float addrspace(1)* %out, float addrs
   ret void
 }
 
-; FUNC-LABEL: @commute_mul_fabs_x_fneg_fabs_y_f32
-; SI-DAG: buffer_load_dword [[X:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI-DAG: buffer_load_dword [[Y:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:4
-; SI: v_mul_f32_e64 [[REG:v[0-9]+]], |[[X]]|, -|[[Y]]|
-; SI-NEXT: buffer_store_dword [[REG]]
+
+
+
+
+
 define void @commute_mul_fabs_x_fneg_fabs_y_f32(float addrspace(1)* %out, float addrspace(1)* %in) #0 {
   %tid = call i32 @llvm.r600.read.tidig.x() #1
   %gep.0 = getelementptr float, float addrspace(1)* %in, i32 %tid
@@ -153,14 +153,14 @@ define void @commute_mul_fabs_x_fneg_fabs_y_f32(float addrspace(1)* %out, float 
   ret void
 }
 
-; Make sure we commute the multiply part for the constant in src0 even
-; though we have negate modifier on src2.
 
-; SI-LABEL: {{^}}fma_a_2.0_neg_b_f32
-; SI-DAG: buffer_load_dword [[R1:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI-DAG: buffer_load_dword [[R2:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:4
-; SI: v_fma_f32 [[RESULT:v[0-9]+]], 2.0, [[R1]], |[[R2]]|
-; SI: buffer_store_dword [[RESULT]]
+
+
+
+
+
+
+
 define void @fma_a_2.0_neg_b_f32(float addrspace(1)* %out, float addrspace(1)* %in) {
   %tid = call i32 @llvm.r600.read.tidig.x() nounwind readnone
   %gep.0 = getelementptr float, float addrspace(1)* %out, i32 %tid

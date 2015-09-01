@@ -1,12 +1,12 @@
-; RUN: llc -march=mipsel < %s | FileCheck %s
+
 
 @g0 = common global i32 0, align 4
 @g1 = common global i32 0, align 4
 
-; Check that LSR doesn't choose a solution with a formula "reg + 4*reg".
-;
-; CHECK:      $BB0_2:
-; CHECK-NOT:  sll ${{[0-9]+}}, ${{[0-9]+}}, 2
+
+
+
+
 
 define i32 @f0(i32 %n, i32 %m, [256 x i32]* nocapture %a, [256 x i32]* nocapture %b) nounwind readonly {
 entry:

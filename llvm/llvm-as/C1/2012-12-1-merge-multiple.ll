@@ -1,11 +1,11 @@
-; RUN: llc < %s -march=x86-64 -mcpu=corei7 -mtriple=x86_64-pc-win64 | FileCheck %s
 
-; CHECK: multiple_stores_on_chain
-; CHECK: movabsq
-; CHECK: movq
-; CHECK: movabsq
-; CHECK: movq
-; CHECK: ret
+
+
+
+
+
+
+
 define void @multiple_stores_on_chain(i16 * %A) {
 entry:
   %a0 = getelementptr inbounds i16, i16* %A, i64 0

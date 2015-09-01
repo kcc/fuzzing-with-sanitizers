@@ -1,9 +1,9 @@
-; RUN: llc < %s -march=arm64 -verify-machineinstrs | FileCheck %s
-; RUN: llc < %s -march=arm64 -aarch64-unscaled-mem-op=true\
-; RUN:   -verify-machineinstrs | FileCheck -check-prefix=LDUR_CHK %s
 
-; CHECK: ldp_int
-; CHECK: ldp
+
+
+
+
+
 define i32 @ldp_int(i32* %p) nounwind {
   %tmp = load i32, i32* %p, align 4
   %add.ptr = getelementptr inbounds i32, i32* %p, i64 1
@@ -12,8 +12,8 @@ define i32 @ldp_int(i32* %p) nounwind {
   ret i32 %add
 }
 
-; CHECK: ldp_sext_int
-; CHECK: ldpsw
+
+
 define i64 @ldp_sext_int(i32* %p) nounwind {
   %tmp = load i32, i32* %p, align 4
   %add.ptr = getelementptr inbounds i32, i32* %p, i64 1
@@ -24,9 +24,9 @@ define i64 @ldp_sext_int(i32* %p) nounwind {
   ret i64 %add
 }
 
-; CHECK-LABEL: ldp_half_sext_res0_int:
-; CHECK: ldp     w[[DST1:[0-9]+]], w[[DST2:[0-9]+]], [x0]
-; CHECK: sxtw     x[[DST1]], w[[DST1]]
+
+
+
 define i64 @ldp_half_sext_res0_int(i32* %p) nounwind {
   %tmp = load i32, i32* %p, align 4
   %add.ptr = getelementptr inbounds i32, i32* %p, i64 1
@@ -37,9 +37,9 @@ define i64 @ldp_half_sext_res0_int(i32* %p) nounwind {
   ret i64 %add
 }
 
-; CHECK-LABEL: ldp_half_sext_res1_int:
-; CHECK: ldp     w[[DST1:[0-9]+]], w[[DST2:[0-9]+]], [x0]
-; CHECK: sxtw     x[[DST2]], w[[DST2]]
+
+
+
 define i64 @ldp_half_sext_res1_int(i32* %p) nounwind {
   %tmp = load i32, i32* %p, align 4
   %add.ptr = getelementptr inbounds i32, i32* %p, i64 1
@@ -51,8 +51,8 @@ define i64 @ldp_half_sext_res1_int(i32* %p) nounwind {
 }
 
 
-; CHECK: ldp_long
-; CHECK: ldp
+
+
 define i64 @ldp_long(i64* %p) nounwind {
   %tmp = load i64, i64* %p, align 8
   %add.ptr = getelementptr inbounds i64, i64* %p, i64 1
@@ -61,8 +61,8 @@ define i64 @ldp_long(i64* %p) nounwind {
   ret i64 %add
 }
 
-; CHECK: ldp_float
-; CHECK: ldp
+
+
 define float @ldp_float(float* %p) nounwind {
   %tmp = load float, float* %p, align 4
   %add.ptr = getelementptr inbounds float, float* %p, i64 1
@@ -71,8 +71,8 @@ define float @ldp_float(float* %p) nounwind {
   ret float %add
 }
 
-; CHECK: ldp_double
-; CHECK: ldp
+
+
 define double @ldp_double(double* %p) nounwind {
   %tmp = load double, double* %p, align 8
   %add.ptr = getelementptr inbounds double, double* %p, i64 1
@@ -81,12 +81,12 @@ define double @ldp_double(double* %p) nounwind {
   ret double %add
 }
 
-; Test the load/store optimizer---combine ldurs into a ldp, if appropriate
+
 define i32 @ldur_int(i32* %a) nounwind {
-; LDUR_CHK: ldur_int
-; LDUR_CHK: ldp     [[DST1:w[0-9]+]], [[DST2:w[0-9]+]], [x0, #-8]
-; LDUR_CHK-NEXT: add     w{{[0-9]+}}, [[DST2]], [[DST1]]
-; LDUR_CHK-NEXT: ret
+
+
+
+
   %p1 = getelementptr inbounds i32, i32* %a, i32 -1
   %tmp1 = load i32, i32* %p1, align 2
   %p2 = getelementptr inbounds i32, i32* %a, i32 -2
@@ -96,10 +96,10 @@ define i32 @ldur_int(i32* %a) nounwind {
 }
 
 define i64 @ldur_sext_int(i32* %a) nounwind {
-; LDUR_CHK: ldur_sext_int
-; LDUR_CHK: ldpsw     [[DST1:x[0-9]+]], [[DST2:x[0-9]+]], [x0, #-8]
-; LDUR_CHK-NEXT: add     x{{[0-9]+}}, [[DST2]], [[DST1]]
-; LDUR_CHK-NEXT: ret
+
+
+
+
   %p1 = getelementptr inbounds i32, i32* %a, i32 -1
   %tmp1 = load i32, i32* %p1, align 2
   %p2 = getelementptr inbounds i32, i32* %a, i32 -2
@@ -111,11 +111,11 @@ define i64 @ldur_sext_int(i32* %a) nounwind {
 }
 
 define i64 @ldur_half_sext_int_res0(i32* %a) nounwind {
-; LDUR_CHK: ldur_half_sext_int_res0
-; LDUR_CHK: ldp     w[[DST1:[0-9]+]], w[[DST2:[0-9]+]], [x0, #-8]
-; LDUR_CHK: sxtw     x[[DST1]], w[[DST1]]
-; LDUR_CHK-NEXT: add     x{{[0-9]+}}, x[[DST2]], x[[DST1]]
-; LDUR_CHK-NEXT: ret
+
+
+
+
+
   %p1 = getelementptr inbounds i32, i32* %a, i32 -1
   %tmp1 = load i32, i32* %p1, align 2
   %p2 = getelementptr inbounds i32, i32* %a, i32 -2
@@ -127,11 +127,11 @@ define i64 @ldur_half_sext_int_res0(i32* %a) nounwind {
 }
 
 define i64 @ldur_half_sext_int_res1(i32* %a) nounwind {
-; LDUR_CHK: ldur_half_sext_int_res1
-; LDUR_CHK: ldp     w[[DST1:[0-9]+]], w[[DST2:[0-9]+]], [x0, #-8]
-; LDUR_CHK: sxtw     x[[DST2]], w[[DST2]]
-; LDUR_CHK-NEXT: add     x{{[0-9]+}}, x[[DST2]], x[[DST1]]
-; LDUR_CHK-NEXT: ret
+
+
+
+
+
   %p1 = getelementptr inbounds i32, i32* %a, i32 -1
   %tmp1 = load i32, i32* %p1, align 2
   %p2 = getelementptr inbounds i32, i32* %a, i32 -2
@@ -144,10 +144,10 @@ define i64 @ldur_half_sext_int_res1(i32* %a) nounwind {
 
 
 define i64 @ldur_long(i64* %a) nounwind ssp {
-; LDUR_CHK: ldur_long
-; LDUR_CHK: ldp     [[DST1:x[0-9]+]], [[DST2:x[0-9]+]], [x0, #-16]
-; LDUR_CHK-NEXT: add     x{{[0-9]+}}, [[DST2]], [[DST1]]
-; LDUR_CHK-NEXT: ret
+
+
+
+
   %p1 = getelementptr inbounds i64, i64* %a, i64 -1
   %tmp1 = load i64, i64* %p1, align 2
   %p2 = getelementptr inbounds i64, i64* %a, i64 -2
@@ -157,10 +157,10 @@ define i64 @ldur_long(i64* %a) nounwind ssp {
 }
 
 define float @ldur_float(float* %a) {
-; LDUR_CHK: ldur_float
-; LDUR_CHK: ldp     [[DST1:s[0-9]+]], [[DST2:s[0-9]+]], [x0, #-8]
-; LDUR_CHK-NEXT: add     s{{[0-9]+}}, [[DST2]], [[DST1]]
-; LDUR_CHK-NEXT: ret
+
+
+
+
   %p1 = getelementptr inbounds float, float* %a, i64 -1
   %tmp1 = load float, float* %p1, align 2
   %p2 = getelementptr inbounds float, float* %a, i64 -2
@@ -170,10 +170,10 @@ define float @ldur_float(float* %a) {
 }
 
 define double @ldur_double(double* %a) {
-; LDUR_CHK: ldur_double
-; LDUR_CHK: ldp     [[DST1:d[0-9]+]], [[DST2:d[0-9]+]], [x0, #-16]
-; LDUR_CHK-NEXT: add     d{{[0-9]+}}, [[DST2]], [[DST1]]
-; LDUR_CHK-NEXT: ret
+
+
+
+
   %p1 = getelementptr inbounds double, double* %a, i64 -1
   %tmp1 = load double, double* %p1, align 2
   %p2 = getelementptr inbounds double, double* %a, i64 -2
@@ -182,13 +182,13 @@ define double @ldur_double(double* %a) {
   ret double %tmp3
 }
 
-; Now check some boundary conditions
+
 define i64 @pairUpBarelyIn(i64* %a) nounwind ssp {
-; LDUR_CHK: pairUpBarelyIn
-; LDUR_CHK-NOT: ldur
-; LDUR_CHK: ldp     [[DST1:x[0-9]+]], [[DST2:x[0-9]+]], [x0, #-256]
-; LDUR_CHK-NEXT: add     x{{[0-9]+}}, [[DST2]], [[DST1]]
-; LDUR_CHK-NEXT: ret
+
+
+
+
+
   %p1 = getelementptr inbounds i64, i64* %a, i64 -31
   %tmp1 = load i64, i64* %p1, align 2
   %p2 = getelementptr inbounds i64, i64* %a, i64 -32
@@ -198,11 +198,11 @@ define i64 @pairUpBarelyIn(i64* %a) nounwind ssp {
 }
 
 define i64 @pairUpBarelyInSext(i32* %a) nounwind ssp {
-; LDUR_CHK: pairUpBarelyInSext
-; LDUR_CHK-NOT: ldur
-; LDUR_CHK: ldpsw     [[DST1:x[0-9]+]], [[DST2:x[0-9]+]], [x0, #-256]
-; LDUR_CHK-NEXT: add     x{{[0-9]+}}, [[DST2]], [[DST1]]
-; LDUR_CHK-NEXT: ret
+
+
+
+
+
   %p1 = getelementptr inbounds i32, i32* %a, i64 -63
   %tmp1 = load i32, i32* %p1, align 2
   %p2 = getelementptr inbounds i32, i32* %a, i64 -64
@@ -214,12 +214,12 @@ define i64 @pairUpBarelyInSext(i32* %a) nounwind ssp {
 }
 
 define i64 @pairUpBarelyInHalfSextRes0(i32* %a) nounwind ssp {
-; LDUR_CHK: pairUpBarelyInHalfSextRes0
-; LDUR_CHK-NOT: ldur
-; LDUR_CHK: ldp     w[[DST1:[0-9]+]], w[[DST2:[0-9]+]], [x0, #-256]
-; LDUR_CHK: sxtw     x[[DST1]], w[[DST1]]
-; LDUR_CHK-NEXT: add     x{{[0-9]+}}, x[[DST2]], x[[DST1]]
-; LDUR_CHK-NEXT: ret
+
+
+
+
+
+
   %p1 = getelementptr inbounds i32, i32* %a, i64 -63
   %tmp1 = load i32, i32* %p1, align 2
   %p2 = getelementptr inbounds i32, i32* %a, i64 -64
@@ -231,12 +231,12 @@ define i64 @pairUpBarelyInHalfSextRes0(i32* %a) nounwind ssp {
 }
 
 define i64 @pairUpBarelyInHalfSextRes1(i32* %a) nounwind ssp {
-; LDUR_CHK: pairUpBarelyInHalfSextRes1
-; LDUR_CHK-NOT: ldur
-; LDUR_CHK: ldp     w[[DST1:[0-9]+]], w[[DST2:[0-9]+]], [x0, #-256]
-; LDUR_CHK: sxtw     x[[DST2]], w[[DST2]]
-; LDUR_CHK-NEXT: add     x{{[0-9]+}}, x[[DST2]], x[[DST1]]
-; LDUR_CHK-NEXT: ret
+
+
+
+
+
+
   %p1 = getelementptr inbounds i32, i32* %a, i64 -63
   %tmp1 = load i32, i32* %p1, align 2
   %p2 = getelementptr inbounds i32, i32* %a, i64 -64
@@ -248,12 +248,12 @@ define i64 @pairUpBarelyInHalfSextRes1(i32* %a) nounwind ssp {
 }
 
 define i64 @pairUpBarelyOut(i64* %a) nounwind ssp {
-; LDUR_CHK: pairUpBarelyOut
-; LDUR_CHK-NOT: ldp
-; Don't be fragile about which loads or manipulations of the base register
-; are used---just check that there isn't an ldp before the add
-; LDUR_CHK: add
-; LDUR_CHK-NEXT: ret
+
+
+
+
+
+
   %p1 = getelementptr inbounds i64, i64* %a, i64 -32
   %tmp1 = load i64, i64* %p1, align 2
   %p2 = getelementptr inbounds i64, i64* %a, i64 -33
@@ -263,12 +263,12 @@ define i64 @pairUpBarelyOut(i64* %a) nounwind ssp {
 }
 
 define i64 @pairUpBarelyOutSext(i32* %a) nounwind ssp {
-; LDUR_CHK: pairUpBarelyOutSext
-; LDUR_CHK-NOT: ldp
-; Don't be fragile about which loads or manipulations of the base register
-; are used---just check that there isn't an ldp before the add
-; LDUR_CHK: add
-; LDUR_CHK-NEXT: ret
+
+
+
+
+
+
   %p1 = getelementptr inbounds i32, i32* %a, i64 -64
   %tmp1 = load i32, i32* %p1, align 2
   %p2 = getelementptr inbounds i32, i32* %a, i64 -65
@@ -280,12 +280,12 @@ define i64 @pairUpBarelyOutSext(i32* %a) nounwind ssp {
 }
 
 define i64 @pairUpNotAligned(i64* %a) nounwind ssp {
-; LDUR_CHK: pairUpNotAligned
-; LDUR_CHK-NOT: ldp
-; LDUR_CHK: ldur
-; LDUR_CHK-NEXT: ldur
-; LDUR_CHK-NEXT: add
-; LDUR_CHK-NEXT: ret
+
+
+
+
+
+
   %p1 = getelementptr inbounds i64, i64* %a, i64 -18
   %bp1 = bitcast i64* %p1 to i8*
   %bp1p1 = getelementptr inbounds i8, i8* %bp1, i64 1
@@ -303,12 +303,12 @@ define i64 @pairUpNotAligned(i64* %a) nounwind ssp {
 }
 
 define i64 @pairUpNotAlignedSext(i32* %a) nounwind ssp {
-; LDUR_CHK: pairUpNotAlignedSext
-; LDUR_CHK-NOT: ldp
-; LDUR_CHK: ldursw
-; LDUR_CHK-NEXT: ldursw
-; LDUR_CHK-NEXT: add
-; LDUR_CHK-NEXT: ret
+
+
+
+
+
+
   %p1 = getelementptr inbounds i32, i32* %a, i64 -18
   %bp1 = bitcast i32* %p1 to i8*
   %bp1p1 = getelementptr inbounds i8, i8* %bp1, i64 1

@@ -1,22 +1,22 @@
-; RUN: opt < %s -default-data-layout="e-p:32:32:32-p1:16:16:16-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-n8:16:32" -basicaa -gvn -S -die | FileCheck %s
-; RUN: opt < %s -default-data-layout="E-p:32:32:32-p1:16:16:16-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:64:64-n32"      -basicaa -gvn -S -die | FileCheck %s
 
-;; Trivial RLE test.
+
+
+
 define i32 @test0(i32 %V, i32* %P) {
   store i32 %V, i32* %P
 
   %A = load i32, i32* %P
   ret i32 %A
-; CHECK-LABEL: @test0(
-; CHECK: ret i32 %V
+
+
 }
 
 
-;;===----------------------------------------------------------------------===;;
-;; Tests for crashers
-;;===----------------------------------------------------------------------===;;
 
-;; PR5016
+
+
+
+
 define i8 @crash0({i32, i32} %A, {i32, i32}* %P) {
   store {i32, i32} %A, {i32, i32}* %P
   %X = bitcast {i32, i32}* %P to i8*
@@ -24,7 +24,7 @@ define i8 @crash0({i32, i32} %A, {i32, i32}* %P) {
   ret i8 %Y
 }
 
-;; No PR filed, crashed in CaptureTracker.
+
 declare void @helper()
 define void @crash1() {
   tail call void @llvm.memcpy.p0i8.p0i8.i64(i8* undef, i8* undef, i64 undef, i32 1, i1 false) nounwind
@@ -34,12 +34,12 @@ define void @crash1() {
 }
 
 
-;;===----------------------------------------------------------------------===;;
-;; Store -> Load  and  Load -> Load forwarding where src and dst are different
-;; types, but where the base pointer is a must alias.
-;;===----------------------------------------------------------------------===;;
 
-;; i32 -> f32 forwarding.
+
+
+
+
+
 define float @coerce_mustalias1(i32 %V, i32* %P) {
   store i32 %V, i32* %P
    
@@ -47,12 +47,12 @@ define float @coerce_mustalias1(i32 %V, i32* %P) {
 
   %A = load float, float* %P2
   ret float %A
-; CHECK-LABEL: @coerce_mustalias1(
-; CHECK-NOT: load
-; CHECK: ret float 
+
+
+
 }
 
-;; i32* -> float forwarding.
+
 define float @coerce_mustalias2(i32* %V, i32** %P) {
   store i32* %V, i32** %P
    
@@ -60,12 +60,12 @@ define float @coerce_mustalias2(i32* %V, i32** %P) {
 
   %A = load float, float* %P2
   ret float %A
-; CHECK-LABEL: @coerce_mustalias2(
-; CHECK-NOT: load
-; CHECK: ret float 
+
+
+
 }
 
-;; float -> i32* forwarding.
+
 define i32* @coerce_mustalias3(float %V, float* %P) {
   store float %V, float* %P
    
@@ -73,12 +73,12 @@ define i32* @coerce_mustalias3(float %V, float* %P) {
 
   %A = load i32*, i32** %P2
   ret i32* %A
-; CHECK-LABEL: @coerce_mustalias3(
-; CHECK-NOT: load
-; CHECK: ret i32* 
+
+
+
 }
 
-;; i32 -> f32 load forwarding.
+
 define float @coerce_mustalias4(i32* %P, i1 %cond) {
   %A = load i32, i32* %P
   
@@ -92,14 +92,14 @@ F:
   %X = bitcast i32 %A to float
   ret float %X
 
-; CHECK-LABEL: @coerce_mustalias4(
-; CHECK: %A = load i32, i32* %P
-; CHECK-NOT: load
-; CHECK: ret float
-; CHECK: F:
+
+
+
+
+
 }
 
-;; i32 -> i8 forwarding
+
 define i8 @coerce_mustalias5(i32 %V, i32* %P) {
   store i32 %V, i32* %P
    
@@ -107,12 +107,12 @@ define i8 @coerce_mustalias5(i32 %V, i32* %P) {
 
   %A = load i8, i8* %P2
   ret i8 %A
-; CHECK-LABEL: @coerce_mustalias5(
-; CHECK-NOT: load
-; CHECK: ret i8
+
+
+
 }
 
-;; i64 -> float forwarding
+
 define float @coerce_mustalias6(i64 %V, i64* %P) {
   store i64 %V, i64* %P
    
@@ -120,12 +120,12 @@ define float @coerce_mustalias6(i64 %V, i64* %P) {
 
   %A = load float, float* %P2
   ret float %A
-; CHECK-LABEL: @coerce_mustalias6(
-; CHECK-NOT: load
-; CHECK: ret float
+
+
+
 }
 
-;; i64 -> i8* (32-bit) forwarding
+
 define i8* @coerce_mustalias7(i64 %V, i64* %P) {
   store i64 %V, i64* %P
    
@@ -133,12 +133,12 @@ define i8* @coerce_mustalias7(i64 %V, i64* %P) {
 
   %A = load i8*, i8** %P2
   ret i8* %A
-; CHECK-LABEL: @coerce_mustalias7(
-; CHECK-NOT: load
-; CHECK: ret i8*
+
+
+
 }
 
-; memset -> i16 forwarding.
+
 define signext i16 @memset_to_i16_local(i16* %A) nounwind ssp {
 entry:
   %conv = bitcast i16* %A to i8* 
@@ -146,31 +146,31 @@ entry:
   %arrayidx = getelementptr inbounds i16, i16* %A, i64 42
   %tmp2 = load i16, i16* %arrayidx
   ret i16 %tmp2
-; CHECK-LABEL: @memset_to_i16_local(
-; CHECK-NOT: load
-; CHECK: ret i16 257
+
+
+
 }
 
-; memset -> float forwarding.
+
 define float @memset_to_float_local(float* %A, i8 %Val) nounwind ssp {
 entry:
-  %conv = bitcast float* %A to i8*                ; <i8*> [#uses=1]
+  %conv = bitcast float* %A to i8*                
   tail call void @llvm.memset.p0i8.i64(i8* %conv, i8 %Val, i64 400, i32 1, i1 false)
-  %arrayidx = getelementptr inbounds float, float* %A, i64 42 ; <float*> [#uses=1]
-  %tmp2 = load float, float* %arrayidx                   ; <float> [#uses=1]
+  %arrayidx = getelementptr inbounds float, float* %A, i64 42 
+  %tmp2 = load float, float* %arrayidx                   
   ret float %tmp2
-; CHECK-LABEL: @memset_to_float_local(
-; CHECK-NOT: load
-; CHECK: zext
-; CHECK-NEXT: shl
-; CHECK-NEXT: or
-; CHECK-NEXT: shl
-; CHECK-NEXT: or
-; CHECK-NEXT: bitcast
-; CHECK-NEXT: ret float
+
+
+
+
+
+
+
+
+
 }
 
-;; non-local memset -> i16 load forwarding.
+
 define i16 @memset_to_i16_nonlocal0(i16* %P, i1 %cond) {
   %P3 = bitcast i16* %P to i8*
   br i1 %cond, label %T, label %F
@@ -187,43 +187,43 @@ Cont:
   %A = load i16, i16* %P2
   ret i16 %A
 
-; CHECK-LABEL: @memset_to_i16_nonlocal0(
-; CHECK: Cont:
-; CHECK-NEXT:   %A = phi i16 [ 514, %F ], [ 257, %T ]
-; CHECK-NOT: load
-; CHECK: ret i16 %A
+
+
+
+
+
 }
 
 @GCst = constant {i32, float, i32 } { i32 42, float 14., i32 97 }
 @GCst_as1 = addrspace(1) constant {i32, float, i32 } { i32 42, float 14., i32 97 }
 
-; memset -> float forwarding.
+
 define float @memcpy_to_float_local(float* %A) nounwind ssp {
 entry:
-  %conv = bitcast float* %A to i8*                ; <i8*> [#uses=1]
+  %conv = bitcast float* %A to i8*                
   tail call void @llvm.memcpy.p0i8.p0i8.i64(i8* %conv, i8* bitcast ({i32, float, i32 }* @GCst to i8*), i64 12, i32 1, i1 false)
-  %arrayidx = getelementptr inbounds float, float* %A, i64 1 ; <float*> [#uses=1]
-  %tmp2 = load float, float* %arrayidx                   ; <float> [#uses=1]
+  %arrayidx = getelementptr inbounds float, float* %A, i64 1 
+  %tmp2 = load float, float* %arrayidx                   
   ret float %tmp2
-; CHECK-LABEL: @memcpy_to_float_local(
-; CHECK-NOT: load
-; CHECK: ret float 1.400000e+01
+
+
+
 }
 
-; memcpy from address space 1
+
 define float @memcpy_to_float_local_as1(float* %A) nounwind ssp {
 entry:
-  %conv = bitcast float* %A to i8*                ; <i8*> [#uses=1]
+  %conv = bitcast float* %A to i8*                
   tail call void @llvm.memcpy.p0i8.p1i8.i64(i8* %conv, i8 addrspace(1)* bitcast ({i32, float, i32 } addrspace(1)* @GCst_as1 to i8 addrspace(1)*), i64 12, i32 1, i1 false)
-  %arrayidx = getelementptr inbounds float, float* %A, i64 1 ; <float*> [#uses=1]
-  %tmp2 = load float, float* %arrayidx                   ; <float> [#uses=1]
+  %arrayidx = getelementptr inbounds float, float* %A, i64 1 
+  %tmp2 = load float, float* %arrayidx                   
   ret float %tmp2
-; CHECK-LABEL: @memcpy_to_float_local_as1(
-; CHECK-NOT: load
-; CHECK: ret float 1.400000e+01
+
+
+
 }
 
-;; non-local i32/float -> i8 load forwarding.
+
 define i8 @coerce_mustalias_nonlocal0(i32* %P, i1 %cond) {
   %P2 = bitcast i32* %P to float*
   %P3 = bitcast i32* %P to i8*
@@ -240,16 +240,16 @@ Cont:
   %A = load i8, i8* %P3
   ret i8 %A
 
-; CHECK-LABEL: @coerce_mustalias_nonlocal0(
-; CHECK: Cont:
-; CHECK:   %A = phi i8 [
-; CHECK-NOT: load
-; CHECK: ret i8 %A
+
+
+
+
+
 }
 
 
-;; non-local i32/float -> i8 load forwarding.  This also tests that the "P3"
-;; bitcast equivalence can be properly phi translated.
+
+
 define i8 @coerce_mustalias_nonlocal1(i32* %P, i1 %cond) {
   %P2 = bitcast i32* %P to float*
   br i1 %cond, label %T, label %F
@@ -266,15 +266,15 @@ Cont:
   %A = load i8, i8* %P3
   ret i8 %A
 
-; CHECK-LABEL: @coerce_mustalias_nonlocal1(
-; CHECK: Cont:
-; CHECK:   %A = phi i8 [
-; CHECK-NOT: load
-; CHECK: ret i8 %A
+
+
+
+
+
 }
 
 
-;; non-local i32 -> i8 partial redundancy load forwarding.
+
 define i8 @coerce_mustalias_pre0(i32* %P, i1 %cond) {
   %P3 = bitcast i32* %P to i8*
   br i1 %cond, label %T, label %F
@@ -289,22 +289,22 @@ Cont:
   %A = load i8, i8* %P3
   ret i8 %A
 
-; CHECK-LABEL: @coerce_mustalias_pre0(
-; CHECK: F:
-; CHECK:   load i8, i8* %P3
-; CHECK: Cont:
-; CHECK:   %A = phi i8 [
-; CHECK-NOT: load
-; CHECK: ret i8 %A
+
+
+
+
+
+
+
 }
 
-;;===----------------------------------------------------------------------===;;
-;; Store -> Load  and  Load -> Load forwarding where src and dst are different
-;; types, and the reload is an offset from the store pointer.
-;;===----------------------------------------------------------------------===;;
 
-;; i32 -> i8 forwarding.
-;; PR4216
+
+
+
+
+
+
 define i8 @coerce_offset0(i32 %V, i32* %P) {
   store i32 %V, i32* %P
    
@@ -313,9 +313,9 @@ define i8 @coerce_offset0(i32 %V, i32* %P) {
 
   %A = load i8, i8* %P3
   ret i8 %A
-; CHECK-LABEL: @coerce_offset0(
-; CHECK-NOT: load
-; CHECK: ret i8
+
+
+
 }
 
 define i8 @coerce_offset0_addrspacecast(i32 %V, i32* %P) {
@@ -326,12 +326,12 @@ define i8 @coerce_offset0_addrspacecast(i32 %V, i32* %P) {
 
   %A = load i8, i8 addrspace(1)* %P3
   ret i8 %A
-; CHECK-LABEL: @coerce_offset0_addrspacecast(
-; CHECK-NOT: load
-; CHECK: ret i8
+
+
+
 }
 
-;; non-local i32/float -> i8 load forwarding.
+
 define i8 @coerce_offset_nonlocal0(i32* %P, i1 %cond) {
   %P2 = bitcast i32* %P to float*
   %P3 = bitcast i32* %P to i8*
@@ -349,15 +349,15 @@ Cont:
   %A = load i8, i8* %P4
   ret i8 %A
 
-; CHECK-LABEL: @coerce_offset_nonlocal0(
-; CHECK: Cont:
-; CHECK:   %A = phi i8 [
-; CHECK-NOT: load
-; CHECK: ret i8 %A
+
+
+
+
+
 }
 
 
-;; non-local i32 -> i8 partial redundancy load forwarding.
+
 define i8 @coerce_offset_pre0(i32* %P, i1 %cond) {
   %P3 = bitcast i32* %P to i8*
   %P4 = getelementptr i8, i8* %P3, i32 2
@@ -373,13 +373,13 @@ Cont:
   %A = load i8, i8* %P4
   ret i8 %A
 
-; CHECK-LABEL: @coerce_offset_pre0(
-; CHECK: F:
-; CHECK:   load i8, i8* %P4
-; CHECK: Cont:
-; CHECK:   %A = phi i8 [
-; CHECK-NOT: load
-; CHECK: ret i8 %A
+
+
+
+
+
+
+
 }
 
 define i32 @chained_load(i32** %p, i32 %x, i32 %y) {
@@ -404,11 +404,11 @@ block4:
   %d = load i32, i32* %c
   ret i32 %d
   
-; CHECK-LABEL: @chained_load(
-; CHECK: %z = load i32*, i32** %p
-; CHECK-NOT: load
-; CHECK: %d = load i32, i32* %z
-; CHECK-NEXT: ret i32 %d
+
+
+
+
+
 }
 
 
@@ -416,7 +416,7 @@ declare i1 @cond() readonly
 declare i1 @cond2() readonly
 
 define i32 @phi_trans2() {
-; CHECK-LABEL: @phi_trans2(
+
 entry:
   %P = alloca i32, i32 400
   br label %F1
@@ -436,25 +436,25 @@ F:
   %P3 = getelementptr i32, i32* %P, i32 2
   store i32 17, i32* %P3
   
-  store i32 42, i32* %P2  ; Provides "P[A]".
+  store i32 42, i32* %P2  
   br label %F1
 
 TX:
-  ; This load should not be compiled to 'ret i32 42'.  An overly clever
-  ; implementation of GVN would see that we're returning 17 if the loop
-  ; executes once or 42 if it executes more than that, but we'd have to do
-  ; loop restructuring to expose this, and GVN shouldn't do this sort of CFG
-  ; transformation.
   
-; CHECK: TX:
-; CHECK: ret i32 %x
+  
+  
+  
+  
+  
+
+
   ret i32 %x
 TY:
   ret i32 0
 }
 
 define i32 @phi_trans3(i32* %p, i32 %x, i32 %y, i32 %z) {
-; CHECK-LABEL: @phi_trans3(
+
 block1:
   %cmpxy = icmp eq i32 %x, %y
   br i1 %cmpxy, label %block2, label %block3
@@ -472,9 +472,9 @@ block4:
   %A = phi i32 [-1, %block2], [42, %block3]
   br i1 %cmpxy, label %block5, label %exit
   
-; CHECK: block4:
-; CHECK-NEXT: %D = phi i32 [ 87, %block2 ], [ 97, %block3 ]  
-; CHECK-NOT: load
+
+
+
 
 block5:
   %B = add i32 %A, 1
@@ -488,15 +488,15 @@ block7:
   %D = load i32, i32* %C
   ret i32 %D
   
-; CHECK: block7:
-; CHECK-NEXT: ret i32 %D
+
+
 
 exit:
   ret i32 -1
 }
 
 define i8 @phi_trans4(i8* %p) {
-; CHECK-LABEL: @phi_trans4(
+
 entry:
   %X3 = getelementptr i8, i8* %p, i32 192
   store i8 192, i8* %X3
@@ -510,9 +510,9 @@ loop:
   %X2 = getelementptr i8, i8* %p, i32 %i
   %Y2 = load i8, i8* %X2
   
-; CHECK: loop:
-; CHECK-NEXT: %Y2 = phi i8 [ %Y, %entry ], [ 0, %loop ]
-; CHECK-NOT: load i8
+
+
+
   
   %cond = call i1 @cond2()
 
@@ -526,7 +526,7 @@ out:
 }
 
 define i8 @phi_trans5(i8* %p) {
-; CHECK-LABEL: @phi_trans5(
+
 entry:
   
   %X4 = getelementptr i8, i8* %p, i32 2
@@ -539,19 +539,19 @@ entry:
 loop:
   %i = phi i32 [4, %entry], [3, %cont]
   %X2 = getelementptr i8, i8* %p, i32 %i
-  %Y2 = load i8, i8* %X2  ; Ensure this load is not being incorrectly replaced.
+  %Y2 = load i8, i8* %X2  
   %cond = call i1 @cond2()
   br i1 %cond, label %cont, label %out
 
 cont:
   %Z = getelementptr i8, i8* %X2, i32 -1
   %Z2 = bitcast i8 *%Z to i32*
-  store i32 50462976, i32* %Z2  ;; (1 << 8) | (2 << 16) | (3 << 24)
+  store i32 50462976, i32* %Z2  
 
 
-; CHECK: store i32
-; CHECK-NEXT: getelementptr i8, i8* %p, i32 3
-; CHECK-NEXT: load i8, i8*
+
+
+
   br label %loop
   
 out:
@@ -560,23 +560,23 @@ out:
 }
 
 
-; PR6642
+
 define i32 @memset_to_load() nounwind readnone {
 entry:
-  %x = alloca [256 x i32], align 4                ; <[256 x i32]*> [#uses=2]
-  %tmp = bitcast [256 x i32]* %x to i8*           ; <i8*> [#uses=1]
+  %x = alloca [256 x i32], align 4                
+  %tmp = bitcast [256 x i32]* %x to i8*           
   call void @llvm.memset.p0i8.i64(i8* %tmp, i8 0, i64 1024, i32 4, i1 false)
-  %arraydecay = getelementptr inbounds [256 x i32], [256 x i32]* %x, i32 0, i32 0 ; <i32*>
-  %tmp1 = load i32, i32* %arraydecay                   ; <i32> [#uses=1]
+  %arraydecay = getelementptr inbounds [256 x i32], [256 x i32]* %x, i32 0, i32 0 
+  %tmp1 = load i32, i32* %arraydecay                   
   ret i32 %tmp1
-; CHECK-LABEL: @memset_to_load(
-; CHECK: ret i32 0
+
+
 }
 
 
-;;===----------------------------------------------------------------------===;;
-;; Load -> Load forwarding in partial alias case.
-;;===----------------------------------------------------------------------===;;
+
+
+
 
 define i32 @load_load_partial_alias(i8* %P) nounwind ssp {
 entry:
@@ -588,18 +588,18 @@ entry:
   %add = add nsw i32 %tmp2, %conv
   ret i32 %add
 
-; TEMPORARILYDISABLED-LABEL: @load_load_partial_alias(
-; TEMPORARILYDISABLED: load i32, i32*
-; TEMPORARILYDISABLED-NOT: load
-; TEMPORARILYDISABLED: lshr i32 {{.*}}, 8
-; TEMPORARILYDISABLED-NOT: load
-; TEMPORARILYDISABLED: trunc i32 {{.*}} to i8
-; TEMPORARILYDISABLED-NOT: load
-; TEMPORARILYDISABLED: ret i32
+
+
+
+
+
+
+
+
 }
 
 
-; Cross block partial alias case.
+
 define i32 @load_load_partial_alias_cross_block(i8* %P) nounwind ssp {
 entry:
   %xx = bitcast i8* %P to i32*
@@ -607,7 +607,7 @@ entry:
   %cmp = icmp eq i32 %x1, 127
   br i1 %cmp, label %land.lhs.true, label %if.end
 
-land.lhs.true:                                    ; preds = %entry
+land.lhs.true:                                    
   %arrayidx4 = getelementptr inbounds i8, i8* %P, i64 1
   %tmp5 = load i8, i8* %arrayidx4, align 1
   %conv6 = zext i8 %tmp5 to i32
@@ -615,16 +615,16 @@ land.lhs.true:                                    ; preds = %entry
 
 if.end:
   ret i32 52
-; TEMPORARILY_DISABLED-LABEL: @load_load_partial_alias_cross_block(
-; TEMPORARILY_DISABLED: land.lhs.true:
-; TEMPORARILY_DISABLED-NOT: load i8
-; TEMPORARILY_DISABLED: ret i32 %conv6
+
+
+
+
 }
 
 
-;;===----------------------------------------------------------------------===;;
-;; Load Widening
-;;===----------------------------------------------------------------------===;;
+
+
+
 
 %widening1 = type { i32, i8, i8, i8, i8 }
 
@@ -638,11 +638,11 @@ entry:
   %conv2 = zext i8 %tmp1 to i32
   %add = add nsw i32 %conv, %conv2
   ret i32 %add
-; CHECK-LABEL: @test_widening1(
-; CHECK-NOT: load
-; CHECK: load i16, i16*
-; CHECK-NOT: load
-; CHECK: ret i32
+
+
+
+
+
 }
 
 define i32 @test_widening2() nounwind ssp noredzone {
@@ -662,11 +662,11 @@ entry:
   %add3 = add nsw i32 %add2, %conv3
 
   ret i32 %add3
-; CHECK-LABEL: @test_widening2(
-; CHECK-NOT: load
-; CHECK: load i32, i32*
-; CHECK-NOT: load
-; CHECK: ret i32
+
+
+
+
+
 }
 
 declare void @llvm.memset.p0i8.i64(i8* nocapture, i8, i64, i32, i1) nounwind
@@ -675,10 +675,10 @@ declare void @llvm.memcpy.p0i8.p0i8.i64(i8* nocapture, i8* nocapture, i64, i32, 
 declare void @llvm.memcpy.p0i8.p1i8.i64(i8* nocapture, i8 addrspace(1)* nocapture, i64, i32, i1) nounwind
 
 
-;;===----------------------------------------------------------------------===;;
-;; Load -> Store dependency which isn't interfered with by a call that happens
-;; before the pointer was captured.
-;;===----------------------------------------------------------------------===;;
+
+
+
+
 
 %class.X = type { [8 x i8] }
 
@@ -688,7 +688,7 @@ declare void @llvm.memcpy.p0i8.p1i8.i64(i8* nocapture, i8 addrspace(1)* nocaptur
 declare void @use()
 declare void @use3(i8***, i8**)
 
-; PR8908
+
 define void @test_escape1() nounwind {
   %x = alloca i8**, align 8
   store i8** getelementptr inbounds ([5 x i8*], [5 x i8*]* @_ZTV1X, i64 0, i64 2), i8*** %x, align 8
@@ -696,7 +696,7 @@ define void @test_escape1() nounwind {
   %DEAD = load i8**, i8*** %x, align 8
   call void @use3(i8*** %x, i8** %DEAD) nounwind
   ret void
-; CHECK: test_escape1
-; CHECK-NOT: DEAD
-; CHECK: ret
+
+
+
 }

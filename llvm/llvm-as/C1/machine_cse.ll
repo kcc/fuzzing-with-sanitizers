@@ -1,6 +1,6 @@
-; RUN: llc < %s -mtriple=aarch64-linux-gnuabi -O2 | FileCheck %s
 
-; marked as external to prevent possible optimizations
+
+
 @a = external global i32
 @b = external global i32
 @c = external global i32
@@ -8,10 +8,10 @@
 @e = external global i32
 
 define void @combine-sign-comparisons-by-cse(i32 *%arg) {
-; CHECK: cmp
-; CHECK: b.ge
-; CHECK-NOT: cmp
-; CHECK: b.le
+
+
+
+
 
 entry:
   %a = load i32, i32* @a, align 4

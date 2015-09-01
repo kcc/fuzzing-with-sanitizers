@@ -1,5 +1,5 @@
-; RUN: llc < %s -mtriple i386-apple-darwin10 | FileCheck %s
-; <rdar://problem/10058036>
+
+
 
 %struct._psqlSettings = type { %struct.pg_conn*, i32, %struct.__sFILE*, i8, %struct.printQueryOpt, i8*, i8, i32, %struct.__sFILE*, i8, i32, i8*, i8*, i8*, i64, i8, %struct.__sFILE*, %struct._variable*, i8, i8, i8, i8, i8, i32, i32, i32, i32, i32, i8*, i8*, i8*, i32 }
 %struct.pg_conn = type opaque
@@ -17,10 +17,10 @@
 
 define signext i8 @do_lo_list() nounwind optsize ssp {
 bb:
-; CHECK:     do_lo_list
-; Make sure we do not use movaps for the global variable.
-; It is okay to use movaps for writing the local variable on stack.
-; CHECK-NOT: movaps {{[0-9]*}}(%{{[a-z]*}}), {{%xmm[0-9]}}
+
+
+
+
   %myopt = alloca %struct.printQueryOpt, align 4
   %tmp = bitcast %struct.printQueryOpt* %myopt to i8*
   call void @llvm.memcpy.p0i8.p0i8.i32(i8* %tmp, i8* bitcast (%struct.printQueryOpt* getelementptr inbounds (%struct._psqlSettings, %struct._psqlSettings* @pset, i32 0, i32 4) to i8*), i32 76, i32 4, i1 false)

@@ -1,5 +1,5 @@
-; RUN: llc < %s
-; PR5703
+
+
 target datalayout = "e-p:16:8:8-i8:8:8-i16:8:8-i32:8:8"
 target triple = "msp430-unknown-linux-gnu"
 

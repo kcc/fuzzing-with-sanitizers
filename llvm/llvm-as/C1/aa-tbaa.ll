@@ -1,7 +1,7 @@
-; RUN: llc -enable-misched -misched=shuffle -enable-aa-sched-mi -use-tbaa-in-sched-mi=0 -post-RA-scheduler=0 -mcpu=ppc64 < %s | FileCheck %s
 
-; REQUIRES: asserts
-; -misched=shuffle is NDEBUG only!
+
+
+
 
 target datalayout = "E-m:e-i64:64-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
@@ -14,7 +14,7 @@ entry:
   %MCOp = alloca %"class.llvm::MCOperand", align 8
   br label %next
 
-; CHECK-LABEL: @foo
+
 
 next:
   %sunkaddr18 = ptrtoint %"class.llvm::MCOperand"* %MCOp to i64
@@ -27,12 +27,12 @@ next:
   store i32 %v, i32* %sunkaddr23, align 8, !tbaa !2
   ret void
 
-; Make sure that the 64-bit store comes first, regardless of what TBAA says
-; about the two not aliasing!
-; CHECK: li [[REG:[0-9]+]], 0
-; CHECK: std [[REG]], -[[OFF:[0-9]+]](1)
-; CHECK: stw 3, -[[OFF]](1)
-; CHECK: blr
+
+
+
+
+
+
 }
 
 !0 = !{ !"root" }

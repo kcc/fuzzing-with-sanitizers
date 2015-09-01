@@ -1,4 +1,4 @@
-; RUN: llc < %s -mtriple=powerpc64-unknown-linux-gnu -mcpu=a2 -mattr=-crbits -disable-ppc-cmp-opt=0 | FileCheck %s
+
 target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-f128:128:128-v128:128:128-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
 
@@ -10,8 +10,8 @@ entry:
   %cond = select i1 %cmp, i32 %a, i32 %b
   ret i32 %cond
 
-; CHECK: @foo
-; CHECK-NOT: subf.
+
+
 }
 
 define signext i32 @foo2(i32 signext %a, i32 signext %b, i32* nocapture %c) #0 {
@@ -22,8 +22,8 @@ entry:
   %conv = zext i1 %cmp to i32
   ret i32 %conv
 
-; CHECK: @foo2
-; CHECK-NOT: slw.
+
+
 }
 
 define i64 @fool(i64 %a, i64 %b, i64* nocapture %c) #0 {
@@ -34,10 +34,10 @@ entry:
   %cond = select i1 %cmp, i64 %a, i64 %b
   ret i64 %cond
 
-; CHECK: @fool
-; CHECK: subf. [[REG:[0-9]+]], 4, 3
-; CHECK: isel 3, 3, 4, 1
-; CHECK: std [[REG]], 0(5)
+
+
+
+
 }
 
 define i64 @foolb(i64 %a, i64 %b, i64* nocapture %c) #0 {
@@ -48,10 +48,10 @@ entry:
   %cond = select i1 %cmp, i64 %a, i64 %b
   ret i64 %cond
 
-; CHECK: @foolb
-; CHECK: subf. [[REG:[0-9]+]], 4, 3
-; CHECK: isel 3, 4, 3, 1
-; CHECK: std [[REG]], 0(5)
+
+
+
+
 }
 
 define i64 @foolc(i64 %a, i64 %b, i64* nocapture %c) #0 {
@@ -62,10 +62,10 @@ entry:
   %cond = select i1 %cmp, i64 %a, i64 %b
   ret i64 %cond
 
-; CHECK: @foolc
-; CHECK: subf. [[REG:[0-9]+]], 3, 4
-; CHECK: isel 3, 3, 4, 0
-; CHECK: std [[REG]], 0(5)
+
+
+
+
 }
 
 define i64 @foold(i64 %a, i64 %b, i64* nocapture %c) #0 {
@@ -76,10 +76,10 @@ entry:
   %cond = select i1 %cmp, i64 %a, i64 %b
   ret i64 %cond
 
-; CHECK: @foold
-; CHECK: subf. [[REG:[0-9]+]], 3, 4
-; CHECK: isel 3, 3, 4, 2
-; CHECK: std [[REG]], 0(5)
+
+
+
+
 }
 
 define i64 @foold2(i64 %a, i64 %b, i64* nocapture %c) #0 {
@@ -90,10 +90,10 @@ entry:
   %cond = select i1 %cmp, i64 %a, i64 %b
   ret i64 %cond
 
-; CHECK: @foold2
-; CHECK: subf. [[REG:[0-9]+]], 4, 3
-; CHECK: isel 3, 3, 4, 2
-; CHECK: std [[REG]], 0(5)
+
+
+
+
 }
 
 define i64 @foo2l(i64 %a, i64 %b, i64* nocapture %c) #0 {
@@ -104,9 +104,9 @@ entry:
   %conv1 = zext i1 %cmp to i64
   ret i64 %conv1
 
-; CHECK: @foo2l
-; CHECK: sld. 4, 3, 4
-; CHECK: std 4, 0(5)
+
+
+
 }
 
 define double @food(double %a, double %b, double* nocapture %c) #0 {
@@ -117,9 +117,9 @@ entry:
   %cond = select i1 %cmp, double %a, double %b
   ret double %cond
 
-; CHECK: @food
-; CHECK-NOT: fsub. 0, 1, 2
-; CHECK: stfd 0, 0(5)
+
+
+
 }
 
 define float @foof(float %a, float %b, float* nocapture %c) #0 {
@@ -130,12 +130,12 @@ entry:
   %cond = select i1 %cmp, float %a, float %b
   ret float %cond
 
-; CHECK: @foof
-; CHECK-NOT: fsubs. 0, 1, 2
-; CHECK: stfs 0, 0(5)
+
+
+
 }
 
-declare i64 @llvm.ctpop.i64(i64);
+declare i64 @llvm.ctpop.i64(i64)
 
 define signext i64 @fooct(i64 signext %a, i64 signext %b, i64* nocapture %c) #0 {
 entry:
@@ -146,7 +146,7 @@ entry:
   %cond = select i1 %cmp, i64 %a, i64 %b
   ret i64 %cond
 
-; CHECK: @fooct
-; CHECK-NOT: popcntd.
+
+
 }
 

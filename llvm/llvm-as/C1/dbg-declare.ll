@@ -1,5 +1,5 @@
-; RUN: llc < %s -O0 -mtriple x86_64-apple-darwin
-; <rdar://problem/11134152>
+
+
 
 define i32 @foo(i32* %x) nounwind uwtable ssp {
 entry:

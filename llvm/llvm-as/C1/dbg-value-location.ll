@@ -1,16 +1,16 @@
-; RUN: llc -filetype=obj %s -o - | llvm-dwarfdump -debug-dump=info - | FileCheck %s
-; RUN: llc -filetype=obj %s -regalloc=basic -o - | llvm-dwarfdump -debug-dump=info - | FileCheck %s
+
+
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64"
 target triple = "x86_64-apple-darwin10.0.0"
-; Test that the type for the formal parameter "var" makes it into the debug info.
-; rdar://8950491
 
-;CHECK: DW_TAG_formal_parameter
-;CHECK-NEXT: DW_AT_location
-;CHECK-NEXT: DW_AT_name {{.*}} "var"
-;CHECK-NEXT: DW_AT_decl_file
-;CHECK-NEXT: DW_AT_decl_line
-;CHECK-NEXT: DW_AT_type
+
+
+
+
+
+
+
+
 
 @dfm = external global i32, align 4
 
@@ -23,22 +23,22 @@ entry:
   %cmp.i = icmp eq i32 %tmp.i, 0, !dbg !14
   br i1 %cmp.i, label %if.else, label %if.end.i, !dbg !14
 
-if.end.i:                                         ; preds = %entry
+if.end.i:                                         
   switch i64 %cmd, label %if.then [
     i64 2147772420, label %bb.i
     i64 536897538, label %bb116.i
   ], !dbg !22
 
-bb.i:                                             ; preds = %if.end.i
+bb.i:                                             
   unreachable
 
-bb116.i:                                          ; preds = %if.end.i
+bb116.i:                                          
   unreachable
 
-if.then:                                          ; preds = %if.end.i
+if.then:                                          
   ret i32 undef, !dbg !23
 
-if.else:                                          ; preds = %entry
+if.else:                                          
   ret i32 0
 }
 

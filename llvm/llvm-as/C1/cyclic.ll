@@ -1,19 +1,19 @@
-; RUN: not opt -instcombine < %s 2>&1 | FileCheck %s
-; CHECK: Cycle found in TBAA metadata.
+
+
 
 define void @test6(i32* %gi) #0 {
 entry:
   store i32 42, i32* %gi, align 4, !tbaa !0
   br label %for.cond
 
-for.cond:                                         ; preds = %for.body, %entry
+for.cond:                                         
   br i1 undef, label %for.body, label %for.end
 
-for.body:                                         ; preds = %for.cond
+for.body:                                         
   store i32 undef, i32* %gi, align 4, !tbaa !2
   br label %for.cond
 
-for.end:                                          ; preds = %for.cond
+for.end:                                          
   ret void
 }
 

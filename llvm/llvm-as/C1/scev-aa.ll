@@ -1,16 +1,16 @@
-; RUN: opt < %s -scev-aa -aa-eval -print-all-alias-modref-info \
-; RUN:   2>&1 | FileCheck %s
 
-; At the time of this writing, -basicaa misses the example of the form
-; A[i+(j+1)] != A[i+j], which can arise from multi-dimensional array references,
-; and the example of the form A[0] != A[i+1], where i+1 is known to be positive.
+
+
+
+
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64"
 
-; p[i] and p[i+1] don't alias.
 
-; CHECK: Function: loop: 3 pointers, 0 call sites
-; CHECK: NoAlias: double* %pi, double* %pi.next
+
+
+
 
 define void @loop(double* nocapture %p, i64 %n) nounwind {
 entry:
@@ -33,12 +33,12 @@ return:
   ret void
 }
 
-; Slightly more involved: p[j][i], p[j][i+1], and p[j+1][i] don't alias.
 
-; CHECK: Function: nestedloop: 4 pointers, 0 call sites
-; CHECK: NoAlias: double* %pi.j, double* %pi.next.j
-; CHECK: NoAlias: double* %pi.j, double* %pi.j.next
-; CHECK: NoAlias: double* %pi.j.next, double* %pi.next.j
+
+
+
+
+
 
 define void @nestedloop(double* nocapture %p, i64 %m) nounwind {
 entry:
@@ -85,17 +85,17 @@ return:
   ret void
 }
 
-; Even more involved: same as nestedloop, but with a variable extent.
-; When n is 1, p[j+1][i] does alias p[j][i+1], and there's no way to
-; prove whether n will be greater than 1, so that relation will always
-; by MayAlias. The loop is guarded by a n > 0 test though, so
-; p[j+1][i] and p[j][i] can theoretically be determined to be NoAlias,
-; however the analysis currently doesn't do that.
-; TODO: Make the analysis smarter and turn that MayAlias into a NoAlias.
 
-; CHECK: Function: nestedloop_more: 4 pointers, 0 call sites
-; CHECK: NoAlias: double* %pi.j, double* %pi.next.j
-; CHECK: MayAlias: double* %pi.j, double* %pi.j.next
+
+
+
+
+
+
+
+
+
+
 
 define void @nestedloop_more(double* nocapture %p, i64 %n, i64 %m) nounwind {
 entry:
@@ -142,21 +142,21 @@ return:
   ret void
 }
 
-; ScalarEvolution expands field offsets into constants, which allows it to
-; do aggressive analysis. Contrast this with BasicAA, which works by
-; recognizing GEP idioms.
+
+
+
 
 %struct.A = type { %struct.B, i32, i32 }
 %struct.B = type { double }
 
-; CHECK: Function: foo: 7 pointers, 0 call sites
-; CHECK: NoAlias: %struct.B* %B, i32* %Z
-; CHECK: NoAlias: %struct.B* %B, %struct.B* %C
-; CHECK: MustAlias: %struct.B* %C, i32* %Z
-; CHECK: NoAlias: %struct.B* %B, i32* %X
-; CHECK: MustAlias: i32* %X, i32* %Z
-; CHECK: MustAlias: %struct.B* %C, i32* %Y
-; CHECK: MustAlias: i32* %X, i32* %Y
+
+
+
+
+
+
+
+
 
 define void @foo() {
 entry:
@@ -170,14 +170,14 @@ entry:
   ret void
 }
 
-; CHECK: Function: bar: 7 pointers, 0 call sites
-; CHECK: NoAlias: %struct.B* %N, i32* %P
-; CHECK: NoAlias: %struct.B* %N, %struct.B* %R
-; CHECK: MustAlias: %struct.B* %R, i32* %P
-; CHECK: NoAlias: %struct.B* %N, i32* %W
-; CHECK: MustAlias: i32* %P, i32* %W
-; CHECK: MustAlias: %struct.B* %R, i32* %V
-; CHECK: MustAlias: i32* %V, i32* %W
+
+
+
+
+
+
+
+
 
 define void @bar() {
   %M = alloca %struct.A
@@ -190,26 +190,26 @@ define void @bar() {
   ret void
 }
 
-; CHECK: Function: nonnegative: 2 pointers, 0 call sites
-; CHECK: NoAlias:  i64* %arrayidx, i64* %p
+
+
 
 define void @nonnegative(i64* %p) nounwind {
 entry:
   br label %for.body
 
-for.body:                                         ; preds = %entry, %for.body
-  %i = phi i64 [ %inc, %for.body ], [ 0, %entry ] ; <i64> [#uses=2]
-  %inc = add nsw i64 %i, 1                         ; <i64> [#uses=2]
+for.body:                                         
+  %i = phi i64 [ %inc, %for.body ], [ 0, %entry ] 
+  %inc = add nsw i64 %i, 1                         
   %arrayidx = getelementptr inbounds i64, i64* %p, i64 %inc
   store i64 0, i64* %arrayidx
-  %tmp6 = load i64, i64* %p                            ; <i64> [#uses=1]
-  %cmp = icmp slt i64 %inc, %tmp6                 ; <i1> [#uses=1]
+  %tmp6 = load i64, i64* %p                            
+  %cmp = icmp slt i64 %inc, %tmp6                 
   br i1 %cmp, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void
 }
 
-; CHECK: 14 no alias responses
-; CHECK: 26 may alias responses
-; CHECK: 18 must alias responses
+
+
+

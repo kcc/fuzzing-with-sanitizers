@@ -1,18 +1,18 @@
-; RUN: llc -filetype=asm %s -o - | FileCheck %s
+
 
 target datalayout = "e-m:e-p:32:32-i64:64-v128:64:128-a:0:32-n32-S64"
 target triple = "armv7--linux-gnueabihf"
 
-; int
-; main(void)
-; {
-;     return -1;
-; }
 
-; CHECK: test.c:4:5
-; CHECK: mvn
 
-; Function Attrs: nounwind
+
+
+
+
+
+
+
+
 define i32 @main() {
 entry:
   %retval = alloca i32, align 4

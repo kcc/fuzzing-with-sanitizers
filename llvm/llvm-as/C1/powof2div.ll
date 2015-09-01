@@ -1,12 +1,12 @@
-; RUN: opt < %s -basicaa -slp-vectorizer -S -mtriple=x86_64-unknown-linux-gnu -mcpu=corei7-avx | FileCheck %s
+
 
 target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
-;CHECK-LABEL: @powof2div(
-;CHECK: load <4 x i32>, <4 x i32>*
-;CHECK: add nsw <4 x i32>
-;CHECK: sdiv <4 x i32>
+
+
+
+
 define void @powof2div(i32* noalias nocapture %a, i32* noalias nocapture readonly %b, i32* noalias nocapture readonly %c){
 entry:
   %0 = load i32, i32* %b, align 4

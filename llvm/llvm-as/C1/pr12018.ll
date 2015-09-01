@@ -1,4 +1,4 @@
-; RUN: opt < %s -loop-reduce
+
 
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64-f80:128:128-n8:16:32-S128"
 
@@ -9,7 +9,7 @@ define void @_Z6foobarR8nsTArray(%struct.nsTArray* %aValues, i32 %foo, %struct.n
 entry:
   br label %for.body
 
-for.body:                                         ; preds = %_ZN8nsTArray9ElementAtEi.exit, %entry
+for.body:                                         
   %i.06 = phi i32 [ %add, %_ZN8nsTArray9ElementAtEi.exit ], [ 0, %entry ]
   %call.i = call %struct.nsTArrayHeader* @_ZN8nsTArray4Hdr2Ev() nounwind
   %add.ptr.i = getelementptr inbounds %struct.nsTArrayHeader, %struct.nsTArrayHeader* %call.i, i32 1
@@ -19,13 +19,13 @@ for.body:                                         ; preds = %_ZN8nsTArray9Elemen
   call void @llvm.dbg.value(metadata %struct.nsTArray* %aValues, i64 0, metadata !0, metadata !DIExpression()) nounwind, !dbg !DILocation(scope: !1)
   br label %_ZN8nsTArray9ElementAtEi.exit
 
-_ZN8nsTArray9ElementAtEi.exit:                    ; preds = %for.body
+_ZN8nsTArray9ElementAtEi.exit:                    
   %arrayidx.i = getelementptr inbounds %struct.nsTArray, %struct.nsTArray* %tmp, i32 %add
   call void @_ZN11nsTArray15ComputeDistanceERKS_Rd(%struct.nsTArray* %arrayidx, %struct.nsTArray* %arrayidx.i) nounwind
   %cmp = icmp slt i32 %add, %foo
   br i1 %cmp, label %for.body, label %for.end
 
-for.end:                                          ; preds = %_ZN8nsTArray9ElementAtEi.exit
+for.end:                                          
   ret void
 }
 

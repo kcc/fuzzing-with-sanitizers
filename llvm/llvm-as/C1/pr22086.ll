@@ -1,11 +1,11 @@
-; RUN: opt -S -jump-threading < %s | FileCheck %s
 
 
-; CHECK-LABEL: @f(
-; CHECK-LABEL: entry:
-; CHECK-NEXT:  br label %[[loop:.*]]
-; CHECK:       [[loop]]:
-; CHECK-NEXT:  br label %[[loop]]
+
+
+
+
+
+
 
 define void @f() {
 entry:

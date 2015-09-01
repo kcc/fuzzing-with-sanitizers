@@ -1,4 +1,4 @@
-; RUN: llc < %s -march=ppc32
+
 
 	%struct..0objc_object = type { %struct.objc_class* }
 	%struct.NSArray = type { %struct..0objc_object }
@@ -12,19 +12,19 @@
 	%struct.objc_selector = type opaque
 	%struct.pthread_mutex_t = type { i32, [40 x i8] }
 	%struct.pthread_rwlock_t = type { i32, [124 x i8] }
-external constant %struct.__builtin_CFString		; <%struct.__builtin_CFString*>:0 [#uses=1]
+external constant %struct.__builtin_CFString		
 
 define void @"-[PFTPersistentSymbols saveSymbolWithName:address:path:lineNumber:flags:owner:]"(%struct.PFTPersistentSymbols* %self, %struct.objc_selector* %_cmd, %struct.NSArray* %name, i64 %address, %struct.NSArray* %path, i32 %lineNumber, i64 %flags, %struct..0objc_object* %owner) nounwind  {
 entry:
 	br i1 false, label %bb12, label %bb21
-bb12:		; preds = %entry
-	%tmp17 = tail call signext i8 inttoptr (i64 4294901504 to i8 (%struct..0objc_object*, %struct.objc_selector*, %struct.NSArray*)*)( %struct..0objc_object* null, %struct.objc_selector* null, %struct.NSArray* bitcast (%struct.__builtin_CFString* @0 to %struct.NSArray*) )  nounwind 		; <i8> [#uses=0]
+bb12:		
+	%tmp17 = tail call signext i8 inttoptr (i64 4294901504 to i8 (%struct..0objc_object*, %struct.objc_selector*, %struct.NSArray*)*)( %struct..0objc_object* null, %struct.objc_selector* null, %struct.NSArray* bitcast (%struct.__builtin_CFString* @0 to %struct.NSArray*) )  nounwind 		
 	br i1 false, label %bb25, label %bb21
-bb21:		; preds = %bb12, %entry
-	%tmp24 = or i64 %flags, 4		; <i64> [#uses=1]
+bb21:		
+	%tmp24 = or i64 %flags, 4		
 	br label %bb25
-bb25:		; preds = %bb21, %bb12
-	%flags_addr.0 = phi i64 [ %tmp24, %bb21 ], [ %flags, %bb12 ]		; <i64> [#uses=1]
-	%tmp3233 = trunc i64 %flags_addr.0 to i32		; <i32> [#uses=0]
+bb25:		
+	%flags_addr.0 = phi i64 [ %tmp24, %bb21 ], [ %flags, %bb12 ]		
+	%tmp3233 = trunc i64 %flags_addr.0 to i32		
 	ret void
 }

@@ -1,5 +1,5 @@
-; RUN: llc -mtriple=x86_64-linux < %s | FileCheck %s
-; RUN: llc -mtriple=x86_64-win32 < %s | FileCheck %s
+
+
 
 define i8 @foobar(double %d, double* %x) {
 entry:
@@ -9,5 +9,5 @@ entry:
   ret i8 %conv3
 }
 
-; test that the load is folded.
-; CHECK: cmpeqsd	(%{{rdi|rdx}}), %xmm0
+
+

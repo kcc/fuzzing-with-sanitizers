@@ -1,4 +1,4 @@
-; RUN: opt -basicaa -gvn -S %s | FileCheck %s
+
 
 %MyStruct = type { i32, i32 }
 define i8 @foo(i64 %in, i8* %arr) {
@@ -19,7 +19,7 @@ final:
   %addr32 = getelementptr %MyStruct, %MyStruct* %addr, i32 0, i32 0
   %idx32 = load i32, i32* %addr32
 
-; CHECK: %resptr = getelementptr i8, i8* %arr, i32 %dead
+
   %resptr = getelementptr i8, i8* %arr, i32 %idx32
   %res = load i8, i8* %resptr
 

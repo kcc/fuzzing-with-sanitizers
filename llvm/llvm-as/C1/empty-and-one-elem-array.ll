@@ -1,6 +1,6 @@
-; RUN: llc -mtriple=x86_64-apple-darwin -O0 -filetype=obj -o %t < %s
-; RUN: llvm-dwarfdump -debug-dump=info %t | FileCheck %s
-; <rdar://problem/12566646>
+
+
+
 
 %struct.foo = type { i32, [1 x i32] }
 %struct.bar = type { i32, [0 x i32] }
@@ -25,40 +25,40 @@ entry:
 
 declare void @llvm.dbg.declare(metadata, metadata, metadata) nounwind readnone
 
-; CHECK:      DW_TAG_base_type
-; CHECK-NEXT: DW_AT_name [DW_FORM_strp]  ( .debug_str[{{.*}}] = "int")
-; CHECK-NEXT: DW_AT_encoding [DW_FORM_data1]   (DW_ATE_signed)
-; CHECK-NEXT: DW_AT_byte_size [DW_FORM_data1]  (0x04)
 
-; int foo::b[1]:
-; CHECK: DW_TAG_structure_type
-; CHECK: DW_AT_name{{.*}}"foo"
-; CHECK:      DW_TAG_member
-; CHECK:      DW_TAG_member
-; CHECK-NEXT: DW_AT_name [DW_FORM_strp]  ( .debug_str[{{.*}}] = "b")
-; CHECK-NEXT: DW_AT_type [DW_FORM_ref4]
 
-; int[1]:
-; CHECK:      DW_TAG_array_type [{{.*}}] *
-; CHECK-NEXT: DW_AT_type [DW_FORM_ref4]
-; CHECK:      DW_TAG_subrange_type [{{.*}}]
-; CHECK-NEXT: DW_AT_type [DW_FORM_ref4]
-; CHECK-NEXT: DW_AT_count [DW_FORM_data1]  (0x01)
 
-; int bar::b[0]:
-; CHECK: DW_TAG_structure_type
-; CHECK: DW_AT_name{{.*}}"bar"
-; CHECK:      DW_TAG_member
-; CHECK:      DW_TAG_member
-; CHECK-NEXT: DW_AT_name [DW_FORM_strp]  ( .debug_str[{{.*}}] = "b")
-; CHECK-NEXT: DW_AT_type [DW_FORM_ref4]
 
-; int[0]:
-; CHECK:      DW_TAG_array_type [{{.*}}] *
-; CHECK-NEXT: DW_AT_type [DW_FORM_ref4]
-; CHECK:      DW_TAG_subrange_type
-; CHECK-NEXT: DW_AT_type [DW_FORM_ref4]
-; CHECK:      DW_AT_count [DW_FORM_data1]  (0x00)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 !llvm.dbg.cu = !{!0}
 !llvm.module.flags = !{!33}

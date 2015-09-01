@@ -1,19 +1,19 @@
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.8.0"
-; RUN: opt < %s -basicaa -slp-vectorizer -S -mtriple=x86_64-apple-macosx10.8.0 -mcpu=corei7 | FileCheck %s
 
 
-; CHECK: tiny_tree_fully_vectorizable
-; CHECK: load <2 x double>
-; CHECK: store <2 x double>
-; CHECK: ret 
+
+
+
+
+
 
 define void @tiny_tree_fully_vectorizable(double* noalias nocapture %dst, double* noalias nocapture readonly %src, i64 %count) #0 {
 entry:
   %cmp12 = icmp eq i64 %count, 0
   br i1 %cmp12, label %for.end, label %for.body
 
-for.body:                                         ; preds = %entry, %for.body
+for.body:                                         
   %i.015 = phi i64 [ %inc, %for.body ], [ 0, %entry ]
   %dst.addr.014 = phi double* [ %add.ptr4, %for.body ], [ %dst, %entry ]
   %src.addr.013 = phi double* [ %add.ptr, %for.body ], [ %src, %entry ]
@@ -29,21 +29,21 @@ for.body:                                         ; preds = %entry, %for.body
   %exitcond = icmp eq i64 %inc, %count
   br i1 %exitcond, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void
 }
 
-; CHECK: tiny_tree_fully_vectorizable2
-; CHECK: load <4 x float>
-; CHECK: store <4 x float>
-; CHECK: ret
+
+
+
+
 
 define void @tiny_tree_fully_vectorizable2(float* noalias nocapture %dst, float* noalias nocapture readonly %src, i64 %count) #0 {
 entry:
   %cmp20 = icmp eq i64 %count, 0
   br i1 %cmp20, label %for.end, label %for.body
 
-for.body:                                         ; preds = %entry, %for.body
+for.body:                                         
   %i.023 = phi i64 [ %inc, %for.body ], [ 0, %entry ]
   %dst.addr.022 = phi float* [ %add.ptr8, %for.body ], [ %dst, %entry ]
   %src.addr.021 = phi float* [ %add.ptr, %for.body ], [ %src, %entry ]
@@ -67,21 +67,21 @@ for.body:                                         ; preds = %entry, %for.body
   %exitcond = icmp eq i64 %inc, %count
   br i1 %exitcond, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void
 }
 
-; We do not vectorize the tiny tree which is not fully vectorizable. 
-; CHECK: tiny_tree_not_fully_vectorizable
-; CHECK-NOT: <2 x double>
-; CHECK: ret 
+
+
+
+
 
 define void @tiny_tree_not_fully_vectorizable(double* noalias nocapture %dst, double* noalias nocapture readonly %src, i64 %count) #0 {
 entry:
   %cmp12 = icmp eq i64 %count, 0
   br i1 %cmp12, label %for.end, label %for.body
 
-for.body:                                         ; preds = %entry, %for.body
+for.body:                                         
   %i.015 = phi i64 [ %inc, %for.body ], [ 0, %entry ]
   %dst.addr.014 = phi double* [ %add.ptr4, %for.body ], [ %dst, %entry ]
   %src.addr.013 = phi double* [ %add.ptr, %for.body ], [ %src, %entry ]
@@ -97,21 +97,21 @@ for.body:                                         ; preds = %entry, %for.body
   %exitcond = icmp eq i64 %inc, %count
   br i1 %exitcond, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void
 }
 
 
-; CHECK: tiny_tree_not_fully_vectorizable2
-; CHECK-NOT: <2 x double>
-; CHECK: ret
+
+
+
 
 define void @tiny_tree_not_fully_vectorizable2(float* noalias nocapture %dst, float* noalias nocapture readonly %src, i64 %count) #0 {
 entry:
   %cmp20 = icmp eq i64 %count, 0
   br i1 %cmp20, label %for.end, label %for.body
 
-for.body:                                         ; preds = %entry, %for.body
+for.body:                                         
   %i.023 = phi i64 [ %inc, %for.body ], [ 0, %entry ]
   %dst.addr.022 = phi float* [ %add.ptr8, %for.body ], [ %dst, %entry ]
   %src.addr.021 = phi float* [ %add.ptr, %for.body ], [ %src, %entry ]
@@ -135,13 +135,13 @@ for.body:                                         ; preds = %entry, %for.body
   %exitcond = icmp eq i64 %inc, %count
   br i1 %exitcond, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void
 }
 
 
-; CHECK-LABEL: store_splat
-; CHECK: store <4 x float>
+
+
 define void @store_splat(float*, float) {
   %3 = getelementptr inbounds float, float* %0, i64 0
   store float %1, float* %3, align 4
@@ -155,8 +155,8 @@ define void @store_splat(float*, float) {
 }
 
 
-; CHECK-LABEL: store_const
-; CHECK: store <4 x i32>
+
+
 define void @store_const(i32* %a) {
 entry:
   %ptr0 = getelementptr inbounds i32, i32* %a, i64 0

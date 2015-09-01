@@ -1,6 +1,6 @@
-; RUN: opt < %s -globalopt -S | not grep internal
 
-; This is a harder case to delete as the GEP has a variable index.
+
+
 
 @G = internal global [4 x i32] zeroinitializer
 

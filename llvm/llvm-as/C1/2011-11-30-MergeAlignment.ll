@@ -1,5 +1,5 @@
-; RUN: llc < %s | FileCheck %s
-; <rdar://problem/10497732>
+
+
 
 target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:32:64-v128:32:128-a0:0:32-n32"
 target triple = "thumbv7-apple-darwin10"
@@ -15,10 +15,10 @@ define i64 @f() {
   ret i64 %c
 }
 
-; We can global-merge the i64 in theory, but the current code doesn't handle
-; the alignment correctly; for the moment, just check that we don't do it.
-; See also 
 
-; CHECK-NOT: MergedGlobals
-; CHECK: _x2
-; CHECK-NOT: MergedGlobals
+
+
+
+
+
+

@@ -1,32 +1,32 @@
-; RUN: llc  -mtriple=x86_64-apple-macosx10.8.0 -O0 -filetype=obj -o %t %s
-; RUN: llvm-dwarfdump -debug-dump=info %t | FileCheck %s
-; Test that we generate debug info for by-value struct args that are not used.
-;
-; CHECK: DW_TAG_formal_parameter
-; CHECK: DW_TAG_formal_parameter
-; CHECK: DW_TAG_formal_parameter
-; CHECK: DW_TAG_formal_parameter
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_name {{.*}} "info"
-;
-; generated from
-;
-; typedef unsigned long NSUInteger;
-; typedef struct
-; {
-;  NSUInteger width;
-;  NSUInteger height;
-;  double pixelAspect;
-; } ImageInfo;
-; @implementation Bitmap
-; - (id)initWithCopy:(Bitmap *)otherBitmap
-;            andInfo:(ImageInfo)info
-;        andLength:(NSUInteger)length
-; {
-; }
-; @end
 
-; ModuleID = 't.mm'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.8.0"
 
@@ -57,7 +57,7 @@ target triple = "x86_64-apple-macosx10.8.0"
 @"\01L_OBJC_LABEL_CLASS_$" = internal global [1 x i8*] [i8* bitcast (%struct._class_t* @"OBJC_CLASS_$_Bitmap" to i8*)], section "__DATA, __objc_classlist, regular, no_dead_strip", align 8
 @llvm.used = appending global [5 x i8*] [i8* getelementptr inbounds ([7 x i8], [7 x i8]* @"\01L_OBJC_CLASS_NAME_", i32 0, i32 0), i8* getelementptr inbounds ([32 x i8], [32 x i8]* @"\01L_OBJC_METH_VAR_NAME_", i32 0, i32 0), i8* getelementptr inbounds ([23 x i8], [23 x i8]* @"\01L_OBJC_METH_VAR_TYPE_", i32 0, i32 0), i8* bitcast ({ i32, i32, [1 x %struct._objc_method] }* @"\01l_OBJC_$_INSTANCE_METHODS_Bitmap" to i8*), i8* bitcast ([1 x i8*]* @"\01L_OBJC_LABEL_CLASS_$" to i8*)], section "llvm.metadata"
 
-; Function Attrs: ssp uwtable
+
 define internal i8* @"\01-[Bitmap initWithCopy:andInfo:andLength:]"(%0* %self, i8* %_cmd, %0* %otherBitmap, %struct.ImageInfo* byval align 8 %info, i64 %length) #0 {
 entry:
   %retval = alloca i8*, align 8
@@ -78,7 +78,7 @@ entry:
   ret i8* %0, !dbg !37
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
 attributes #0 = { ssp uwtable }

@@ -1,26 +1,26 @@
-; RUN: llc < %s -mtriple=x86_64-linux-gnu -mcpu=atom  | \
-; RUN:    FileCheck --check-prefix=ATOM %s
-; RUN: llc < %s -mtriple=x86_64-linux-gnu -mcpu=core2 | \
-; RUN:    FileCheck --check-prefix=CORE2 %s
-; ATOM: callq *{{%[a-z]+[0-9]*}}
-; CORE2: callq *funcp
-;
-; Original source code built with clang -S -emit-llvm -m64 test64.c:
-;   int a, b, c, d, e, f, g, h, i, j, k, l, m, n;
-;   extern int (*funcp)(int, int, int, int, int, int,
-;                       int, int, int, int, int, int,
-;                       int, int);
-;   extern int sum;
-;   
-;   void func()
-;   {
-;     sum = 0;
-;     for( i = a; i < b; ++i )
-;     {
-;       sum += (*funcp)(a, i, i*2, i/b, c, d, e, f, g, h, j, k, l, n);
-;     }
-;   }
-;   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @sum = external global i32
 @a = common global i32 0, align 4
@@ -46,13 +46,13 @@ entry:
   store i32 %0, i32* @i, align 4
   br label %for.cond
 
-for.cond:                                         ; preds = %for.inc, %entry
+for.cond:                                         
   %1 = load i32, i32* @i, align 4
   %2 = load i32, i32* @b, align 4
   %cmp = icmp slt i32 %1, %2
   br i1 %cmp, label %for.body, label %for.end
 
-for.body:                                         ; preds = %for.cond
+for.body:                                         
   %3 = load i32 (i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32)*, i32 (i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32)** @funcp, align 8
   %4 = load i32, i32* @a, align 4
   %5 = load i32, i32* @i, align 4
@@ -77,13 +77,13 @@ for.body:                                         ; preds = %for.cond
   store i32 %add, i32* @sum, align 4
   br label %for.inc
 
-for.inc:                                          ; preds = %for.body
+for.inc:                                          
   %20 = load i32, i32* @i, align 4
   %inc = add nsw i32 %20, 1
   store i32 %inc, i32* @i, align 4
   br label %for.cond
 
-for.end:                                          ; preds = %for.cond
+for.end:                                          
   ret void
 }
 

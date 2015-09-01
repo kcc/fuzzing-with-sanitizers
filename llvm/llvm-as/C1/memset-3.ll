@@ -1,5 +1,5 @@
-; RUN: llc -mtriple=i386-apple-darwin < %s | not grep memset
-; PR6767
+
+
 
 define void @t() nounwind ssp {
 entry:

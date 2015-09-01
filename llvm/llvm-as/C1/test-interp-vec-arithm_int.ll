@@ -1,4 +1,4 @@
-; RUN: %lli %s > /dev/null
+
 
 define i32 @main() {
     %A_i8 = add <5 x i8> <i8 0, i8 1, i8 2, i8 3, i8 4>, <i8 12, i8 34, i8 56, i8 78, i8 89>

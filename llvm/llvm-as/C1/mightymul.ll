@@ -1,5 +1,5 @@
-; RUN: opt < %s -reassociate -disable-output
-; PR13021
+
+
 
 define i32 @test1(i32 %x) {
   %t0 = mul i32 %x, %x

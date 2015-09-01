@@ -1,7 +1,7 @@
-; RUN: opt < %s -inline -S | FileCheck %s
 
-; Check that functions with "returns_twice" calls are only inlined,
-; if they are themselves marked as such.
+
+
+
 
 declare i32 @a() returns_twice
 
@@ -14,8 +14,8 @@ entry:
 
 define i32 @outer1() {
 entry:
-; CHECK-LABEL: define i32 @outer1(
-; CHECK: call i32 @inner1()
+
+
   %call = call i32 @inner1()
   %add = add nsw i32 1, %call
   ret i32 %add
@@ -30,8 +30,8 @@ entry:
 
 define i32 @outer2() {
 entry:
-; CHECK-LABEL: define i32 @outer2(
-; CHECK: call i32 @a()
+
+
   %call = call i32 @inner2() returns_twice
   %add = add nsw i32 1, %call
   ret i32 %add
@@ -53,8 +53,8 @@ lpad:
 
 define i32 @outer3() {
 entry:
-; CHECK-LABEL: define i32 @outer3(
-; CHECK: call i32 @inner3()
+
+
   %call = call i32 @inner3()
   %add = add nsw i32 1, %call
   ret i32 %add
@@ -76,8 +76,8 @@ lpad:
 
 define i32 @outer4() {
 entry:
-; CHECK-LABEL: define i32 @outer4(
-; CHECK: invoke i32 @a()
+
+
   %call = call i32 @inner4() returns_twice
   %add = add nsw i32 1, %call
   ret i32 %add

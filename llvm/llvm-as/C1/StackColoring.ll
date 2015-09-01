@@ -1,12 +1,12 @@
-; RUN: llc -mcpu=corei7 -no-stack-coloring=false < %s | FileCheck %s --check-prefix=YESCOLOR --check-prefix=CHECK
-; RUN: llc -mcpu=corei7 -no-stack-coloring=true  < %s | FileCheck %s --check-prefix=NOCOLOR --check-prefix=CHECK
+
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.8.0"
 
-;CHECK-LABEL: myCall_w2:
-;YESCOLOR: subq  $144, %rsp
-;NOCOLOR: subq  $272, %rsp
+
+
+
 
 define i32 @myCall_w2(i32 %in) {
 entry:
@@ -29,9 +29,9 @@ entry:
 }
 
 
-;CHECK-LABEL: myCall2_no_merge
-;YESCOLOR: subq  $272, %rsp
-;NOCOLOR: subq  $272, %rsp
+
+
+
 
 define i32 @myCall2_no_merge(i32 %in, i1 %d) {
 entry:
@@ -58,9 +58,9 @@ bb3:
   ret i32 0
 }
 
-;CHECK-LABEL: myCall2_w2
-;YESCOLOR: subq  $144, %rsp
-;NOCOLOR: subq  $272, %rsp
+
+
+
 
 define i32 @myCall2_w2(i32 %in, i1 %d) {
 entry:
@@ -86,9 +86,9 @@ bb3:
   ret i32 0
 }
 
-;CHECK-LABEL: myCall_w4:
-;YESCOLOR: subq  $200, %rsp
-;NOCOLOR: subq  $408, %rsp
+
+
+
 
 define i32 @myCall_w4(i32 %in) {
 entry:
@@ -121,9 +121,9 @@ entry:
   ret i32 %t7
 }
 
-;CHECK-LABEL: myCall2_w4:
-;YESCOLOR: subq  $112, %rsp
-;NOCOLOR: subq  $400, %rsp
+
+
+
 
 define i32 @myCall2_w4(i32 %in) {
 entry:
@@ -161,9 +161,9 @@ bb3:
 }
 
 
-;CHECK-LABEL: myCall2_noend:
-;YESCOLOR: subq  $144, %rsp
-;NOCOLOR: subq  $272, %rsp
+
+
+
 
 
 define i32 @myCall2_noend(i32 %in, i1 %d) {
@@ -189,9 +189,9 @@ bb3:
   ret i32 0
 }
 
-;CHECK-LABEL: myCall2_noend2:
-;YESCOLOR: subq  $144, %rsp
-;NOCOLOR: subq  $272, %rsp
+
+
+
 define i32 @myCall2_noend2(i32 %in, i1 %d) {
 entry:
   %a = alloca [17 x i8*], align 8
@@ -216,9 +216,9 @@ bb3:
 }
 
 
-;CHECK-LABEL: myCall2_nostart:
-;YESCOLOR: subq  $144, %rsp
-;NOCOLOR: subq  $272, %rsp
+
+
+
 define i32 @myCall2_nostart(i32 %in, i1 %d) {
 entry:
   %a = alloca [17 x i8*], align 8
@@ -241,10 +241,10 @@ bb3:
   ret i32 0
 }
 
-; Adopt the test from Transforms/Inline/array_merge.ll'
-;CHECK-LABEL: array_merge:
-;YESCOLOR: subq  $816, %rsp
-;NOCOLOR: subq  $1616, %rsp
+
+
+
+
 define void @array_merge() nounwind ssp {
 entry:
   %A.i1 = alloca [100 x i32], align 4
@@ -268,9 +268,9 @@ entry:
   ret void
 }
 
-;CHECK-LABEL: func_phi_lifetime:
-;YESCOLOR: subq  $272, %rsp
-;NOCOLOR: subq  $272, %rsp
+
+
+
 define i32 @func_phi_lifetime(i32 %in, i1 %d) {
 entry:
   %a = alloca [17 x i8*], align 8
@@ -305,7 +305,7 @@ bb3:
 }
 
 
-;CHECK-LABEL: multi_region_bb:
+
 define void @multi_region_bb() nounwind ssp {
 entry:
   %A.i1 = alloca [100 x i32], align 4
@@ -313,7 +313,7 @@ entry:
   %A.i = alloca [100 x i32], align 4
   %B.i = alloca [100 x i32], align 4
   %0 = bitcast [100 x i32]* %A.i to i8*
-  call void @llvm.lifetime.start(i64 -1, i8* %0) nounwind ; <---- start #1
+  call void @llvm.lifetime.start(i64 -1, i8* %0) nounwind 
   %1 = bitcast [100 x i32]* %B.i to i8*
   call void @llvm.lifetime.start(i64 -1, i8* %1) nounwind
   call void @bar([100 x i32]* %A.i, [100 x i32]* %B.i) nounwind
@@ -323,15 +323,15 @@ entry:
   call void @llvm.lifetime.start(i64 -1, i8* %2) nounwind
   %3 = bitcast [100 x i32]* %B.i2 to i8*
   call void @llvm.lifetime.start(i64 -1, i8* %3) nounwind
-  call void @llvm.lifetime.start(i64 -1, i8* %0) nounwind  ; <---- start #2
+  call void @llvm.lifetime.start(i64 -1, i8* %0) nounwind  
   call void @bar([100 x i32]* %A.i1, [100 x i32]* %B.i2) nounwind
   call void @llvm.lifetime.end(i64 -1, i8* %2) nounwind
   call void @llvm.lifetime.end(i64 -1, i8* %0) nounwind
   call void @llvm.lifetime.end(i64 -1, i8* %3) nounwind
   ret void
 }
-;YESCOLOR: subq  $272, %rsp
-;NOCOLOR: subq  $272, %rsp
+
+
 
 define i32 @myCall_end_before_begin(i32 %in, i1 %d) {
 entry:
@@ -357,11 +357,11 @@ bb3:
 }
 
 
-; Regression test for PR15707.  %buf1 and %buf2 should not be merged
-; in this test case.
-;CHECK-LABEL: myCall_pr15707:
-;YESCOLOR: subq $200008, %rsp
-;NOCOLOR: subq $200008, %rsp
+
+
+
+
+
 define void @myCall_pr15707() {
   %buf1 = alloca i8, i32 100000, align 16
   %buf2 = alloca i8, i32 100000, align 16
@@ -377,9 +377,9 @@ define void @myCall_pr15707() {
 }
 
 
-; Check that we don't assert and crash even when there are allocas
-; outside the declared lifetime regions.
-;CHECK-LABEL: bad_range:
+
+
+
 define void @bad_range() nounwind ssp {
 entry:
   %A.i1 = alloca [100 x i32], align 4
@@ -396,15 +396,15 @@ entry:
   br label %block2
 
 block2:
-  ; I am used outside the marked lifetime.
+  
   call void @bar([100 x i32]* %A.i, [100 x i32]* %B.i) nounwind
   ret void
 }
 
 
-; Check that we don't assert and crash even when there are usages
-; of allocas which do not read or write outside the declared lifetime regions.
-;CHECK-LABEL: shady_range:
+
+
+
 
 %struct.Klass = type { i32, i32 }
 
@@ -413,7 +413,7 @@ define i32 @shady_range(i32 %argc, i8** nocapture %argv) uwtable {
   %b.i = alloca [4 x %struct.Klass], align 16
   %a8 = bitcast [4 x %struct.Klass]* %a.i to i8*
   %b8 = bitcast [4 x %struct.Klass]* %b.i to i8*
-  ; I am used outside the lifetime zone below:
+  
   %z2 = getelementptr inbounds [4 x %struct.Klass], [4 x %struct.Klass]* %a.i, i64 0, i64 0, i32 0
   call void @llvm.lifetime.start(i64 -1, i8* %a8)
   call void @llvm.lifetime.start(i64 -1, i8* %b8)

@@ -1,10 +1,10 @@
-; RUN: true
 
-; ModuleID = 'bar.cpp'
+
+
 
 %struct.Base = type { i32 }
 
-; Function Attrs: nounwind ssp uwtable
+
 define void @_Z1gi(i32 %a) #0 {
 entry:
   %a.addr = alloca i32, align 4
@@ -15,10 +15,10 @@ entry:
   ret void, !dbg !22
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
-; Function Attrs: ssp uwtable
+
 define i32 @main() #2 {
 entry:
   %retval = alloca i32, align 4

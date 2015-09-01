@@ -1,31 +1,31 @@
-; RUN: llc -mtriple=x86_64-apple-darwin -O0 -filetype=obj -o %t < %s
-; RUN: llvm-dwarfdump -debug-dump=info %t | FileCheck %s
+
+
 
 %class.A = type { [42 x i32] }
 
 @a = global %class.A zeroinitializer, align 4
 
-; Check that we can handle non-default array bounds. In this case, the array
-; goes from [-3, 38].
 
-; CHECK: DW_TAG_class_type
-; CHECK: DW_TAG_member
-; CHECK-NEXT:                   DW_AT_name [DW_FORM_strp]       ( .debug_str[0x{{[0-9a-f]*}}] = "x")
-; CHECK-NEXT:                   DW_AT_type [DW_FORM_ref4]       (cu + 0x{{[0-9a-f]*}} => {[[ARRAY:0x[0-9a-f]*]]})
 
-; CHECK: [[ARRAY]]: DW_TAG_array_type [{{.*}}] *
-; CHECK-NEXT:                 DW_AT_type [DW_FORM_ref4]    (cu + 0x{{[0-9a-f]*}} => {[[BASE:0x[0-9a-f]*]]})
 
-; CHECK: DW_TAG_subrange_type
-; CHECK-NEXT:                   DW_AT_type [DW_FORM_ref4]  (cu + 0x{{[0-9a-f]*}} => {[[BASE2:0x[0-9a-f]*]]})
-; CHECK-NEXT:                   DW_AT_lower_bound [DW_FORM_data8]       (0xfffffffffffffffd)
-; CHECK-NEXT:                   DW_AT_count [DW_FORM_data1]       (0x2a)
 
-; CHECK: [[BASE]]: DW_TAG_base_type
-; CHECK: [[BASE2]]: DW_TAG_base_type
-; CHECK-NEXT:                 DW_AT_name [DW_FORM_strp]       ( .debug_str[0x{{[0-9a-f]*}}] = "sizetype")
-; CHECK-NEXT:                 DW_AT_byte_size [DW_FORM_data1] (0x08)
-; CHECK-NEXT:                 DW_AT_encoding [DW_FORM_data1]  (DW_ATE_unsigned)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 !llvm.dbg.cu = !{!0}
 !llvm.module.flags = !{!21}

@@ -1,4 +1,4 @@
-; RUN: opt < %s -gvn | llvm-dis
+
 
 	%struct.ggBRDF = type { i32 (...)** }
 	%struct.ggBox3 = type { %struct.ggPoint3, %struct.ggPoint3 }
@@ -12,18 +12,18 @@
 
 define i32 @_ZNK21mrZEllipticalCylinder10viewingHitERK6ggRay3dddR18mrViewingHitRecordR16ggMaterialRecord(%struct.mrXEllipticalCylinder* %this, %struct.ggBox3* %ray, double %unnamed_arg, double %tmin, double %tmax, %struct.mrViewingHitRecord* %VHR, %struct.ggMaterialRecord* %unnamed_arg2) {
 entry:
-	%tmp80.i = getelementptr %struct.mrViewingHitRecord, %struct.mrViewingHitRecord* %VHR, i32 0, i32 1, i32 0, i32 0		; <double*> [#uses=1]
+	%tmp80.i = getelementptr %struct.mrViewingHitRecord, %struct.mrViewingHitRecord* %VHR, i32 0, i32 1, i32 0, i32 0		
 	store double 0.000000e+00, double* %tmp80.i
 	br i1 false, label %return, label %cond_next.i
 
-cond_next.i:		; preds = %entry
+cond_next.i:		
 	br i1 false, label %return, label %cond_true
 
-cond_true:		; preds = %cond_next.i
-	%tmp3.i8 = getelementptr %struct.mrViewingHitRecord, %struct.mrViewingHitRecord* %VHR, i32 0, i32 1, i32 0, i32 0		; <double*> [#uses=1]
-	%tmp46 = load double, double* %tmp3.i8		; <double> [#uses=0]
+cond_true:		
+	%tmp3.i8 = getelementptr %struct.mrViewingHitRecord, %struct.mrViewingHitRecord* %VHR, i32 0, i32 1, i32 0, i32 0		
+	%tmp46 = load double, double* %tmp3.i8		
 	ret i32 1
 
-return:		; preds = %cond_next.i, %entry
+return:		
 	ret i32 0
 }

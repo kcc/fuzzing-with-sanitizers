@@ -1,17 +1,17 @@
-; RUN: llc < %s -enable-misched -pre-RA-sched=source -scheditins=false \
-; RUN:          -disable-ifcvt-triangle-false -disable-post-ra | FileCheck %s
-;
+
+
+
 target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-f128:128:128-v128:128:128-n32:64"
 target triple = "powerpc64-bgq-linux"
 
-; %val1 is a load live out of %entry. It should be hoisted
-; above the add.
-; CHECK-LABEL: testload:
-; CHECK: %entry
-; CHECK: lwz
-; CHECK: addi
-; CHECK: bne
-; CHECK: %true
+
+
+
+
+
+
+
+
 define i32 @testload(i32 *%ptr, i32 %sumin) {
 entry:
   %sum1 = add i32 %sumin, 1
@@ -31,14 +31,14 @@ end:
   ret i32 %sumout
 }
 
-; The prefetch gets a default latency of 3 cycles and should be hoisted
-; above the add.
-;
-; CHECK-LABEL: testprefetch:
-; CHECK: %entry
-; CHECK: dcbt
-; CHECK: addi
-; CHECK: blr
+
+
+
+
+
+
+
+
 define i32 @testprefetch(i8 *%ptr, i32 %i) {
 entry:
   %val1 = add i32 %i, 1

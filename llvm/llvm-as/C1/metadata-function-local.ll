@@ -1,5 +1,5 @@
-; RUN: llvm-as < %s | llvm-dis | llvm-as | llvm-dis | FileCheck %s
-; RUN: verify-uselistorder %s
+
+
 
 declare void @llvm.metadata(metadata)
 
@@ -12,9 +12,9 @@ entry:
   %after = alloca i32
   ret void
 
-; CHECK: %before = alloca i32
-; CHECK: call void @llvm.metadata(metadata i32 %arg)
-; CHECK: call void @llvm.metadata(metadata i32* %after)
-; CHECK: call void @llvm.metadata(metadata i32* %before)
-; CHECK: %after = alloca i32
+
+
+
+
+
 }

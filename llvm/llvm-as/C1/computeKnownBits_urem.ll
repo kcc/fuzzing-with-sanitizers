@@ -1,4 +1,4 @@
-; RUN: llc -mtriple=x86_64-linux < %s | FileCheck %s
+
 define i32 @main() #0 {
 entry:
   %a = alloca i32, align 4
@@ -10,5 +10,5 @@ entry:
   %add = add i32 %rem, 1
   ret i32 %add
 }
-; CHECK: $1, %eax
-; CHECK-NEXT: retq
+
+

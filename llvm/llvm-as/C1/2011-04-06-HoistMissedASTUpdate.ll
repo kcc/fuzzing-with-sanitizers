@@ -1,5 +1,5 @@
-; RUN: opt < %s -basicaa -licm -S | FileCheck %s
-; PR9630
+
+
 
 @g_39 = external global i16, align 2
 
@@ -14,8 +14,8 @@ entry:
 for.body4.lr.ph:
   br label %for.body4
 
-; CHECK: for.body4:
-; CHECK: load volatile i16, i16* @g_39
+
+
 
 for.body4:
   %l_612.11 = phi i32* [ undef, %for.body4.lr.ph ], [ %call19, %for.body4 ]

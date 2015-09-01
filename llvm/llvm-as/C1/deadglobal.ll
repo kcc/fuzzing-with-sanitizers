@@ -1,14 +1,14 @@
-; RUN: opt < %s -globalopt -S | FileCheck %s
 
-@G1 = internal global i32 123            ; <i32*> [#uses=1]
 
-; CHECK-NOT: @G1
-; CHECK: @G2
-; CHECK-NOT: @G3
+@G1 = internal global i32 123            
+
+
+
+
 
 define void @foo1() {
-; CHECK: define void @foo
-; CHECK-NEXT: ret
+
+
         store i32 1, i32* @G1
         ret void
 }
@@ -16,8 +16,8 @@ define void @foo1() {
 @G2 = linkonce_odr constant i32 42
 
 define void @foo2() {
-; CHECK-LABEL: define void @foo2(
-; CHECK-NEXT: store
+
+
         store i32 1, i32* @G2
         ret void
 }

@@ -1,7 +1,7 @@
-; RUN: llc -march=hexagon < %s | FileCheck %s
-; The result of max(half-word, half-word) is also half-word.
-; Check that we are not producing a sign extend after the max.
-; CHECK-NOT: sxth
+
+
+
+
 
 define i64 @test_cast(i64 %arg0, i16 zeroext %arg1, i16 zeroext %arg2) nounwind readnone {
 entry:

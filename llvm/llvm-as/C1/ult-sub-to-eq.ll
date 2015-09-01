@@ -1,6 +1,6 @@
-; RUN: opt -S -indvars < %s | FileCheck %s
 
-; Provide legal integer types.
+
+
 target datalayout = "n8:16:32:64"
 
 
@@ -10,7 +10,7 @@ entry:
   %cmp4 = icmp eq i32 %data_len, %sample
   br i1 %cmp4, label %for.end, label %for.body
 
-for.body:                                         ; preds = %entry, %for.body
+for.body:                                         
   %indvars.iv = phi i64 [ %indvars.iv.next, %for.body ], [ 0, %entry ]
   %0 = trunc i64 %indvars.iv to i32
   %add = add i32 %0, %sample
@@ -27,20 +27,20 @@ for.body:                                         ; preds = %entry, %for.body
   %cmp = icmp ult i32 %3, %sub
   br i1 %cmp, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void
 
-; CHECK-LABEL: @test1(
 
-; First check that we move the sub into the preheader, it doesn't have to be
-; executed if %cmp4 == false
-; CHECK: for.body.preheader:
-; CHECK: sub i32 %data_len, %sample
-; CHECK: br label %for.body
 
-; Second, check that we turn the IV test into an eq.
-; CHECK: %lftr.wideiv = trunc i64 %indvars.iv.next to i32
-; CHECK: %exitcond = icmp ne i32 %lftr.wideiv, %0
-; CHECK: br i1 %exitcond, label %for.body, label %for.end.loopexit
+
+
+
+
+
+
+
+
+
+
 }
 

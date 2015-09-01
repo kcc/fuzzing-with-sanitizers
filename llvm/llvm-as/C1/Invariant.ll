@@ -1,11 +1,11 @@
-; RUN: opt < %s -analyze -basicaa -da | FileCheck %s
 
-; Test for a bug, which caused an assert when an invalid
-; SCEVAddRecExpr is created in addToCoefficient.
 
-; CHECK: da analyze - consistent input [S 0]!
-; CHECK: da analyze - input [* 0|<]!
-; CHECK: da analyze - none!
+
+
+
+
+
+
 
 define float @foo(float %g, [40 x float]* %rr) nounwind {
 entry:

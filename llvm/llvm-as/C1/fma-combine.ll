@@ -1,18 +1,18 @@
-; RUN: llc -march=amdgcn -mcpu=tahiti -verify-machineinstrs -fp-contract=fast < %s | FileCheck -check-prefix=SI-FASTFMAF -check-prefix=SI -check-prefix=FUNC %s
-; RUN: llc -march=amdgcn -mcpu=verde -verify-machineinstrs -fp-contract=fast < %s | FileCheck -check-prefix=SI-SLOWFMAF -check-prefix=SI -check-prefix=FUNC %s
+
+
 
 declare i32 @llvm.r600.read.tidig.x() #0
 declare double @llvm.fabs.f64(double) #0
 declare double @llvm.fma.f64(double, double, double) #0
 declare float @llvm.fma.f32(float, float, float) #0
 
-; (fadd (fmul x, y), z) -> (fma x, y, z)
-; FUNC-LABEL: {{^}}combine_to_fma_f64_0:
-; SI-DAG: buffer_load_dwordx2 [[A:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI-DAG: buffer_load_dwordx2 [[B:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:8{{$}}
-; SI-DAG: buffer_load_dwordx2 [[C:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:16{{$}}
-; SI: v_fma_f64 [[RESULT:v\[[0-9]+:[0-9]+\]]], [[A]], [[B]], [[C]]
-; SI: buffer_store_dwordx2 [[RESULT]]
+
+
+
+
+
+
+
 define void @combine_to_fma_f64_0(double addrspace(1)* noalias %out, double addrspace(1)* noalias %in) #1 {
   %tid = tail call i32 @llvm.r600.read.tidig.x() #0
   %gep.0 = getelementptr double, double addrspace(1)* %in, i32 %tid
@@ -30,17 +30,17 @@ define void @combine_to_fma_f64_0(double addrspace(1)* noalias %out, double addr
   ret void
 }
 
-; (fadd (fmul x, y), z) -> (fma x, y, z)
-; FUNC-LABEL: {{^}}combine_to_fma_f64_0_2use:
-; SI-DAG: buffer_load_dwordx2 [[A:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI-DAG: buffer_load_dwordx2 [[B:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:8{{$}}
-; SI-DAG: buffer_load_dwordx2 [[C:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:16{{$}}
-; SI-DAG: buffer_load_dwordx2 [[D:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:24{{$}}
-; SI-DAG: v_fma_f64 [[RESULT0:v\[[0-9]+:[0-9]+\]]], [[A]], [[B]], [[C]]
-; SI-DAG: v_fma_f64 [[RESULT1:v\[[0-9]+:[0-9]+\]]], [[A]], [[B]], [[D]]
-; SI-DAG: buffer_store_dwordx2 [[RESULT0]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI-DAG: buffer_store_dwordx2 [[RESULT1]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:8{{$}}
-; SI: s_endpgm
+
+
+
+
+
+
+
+
+
+
+
 define void @combine_to_fma_f64_0_2use(double addrspace(1)* noalias %out, double addrspace(1)* noalias %in) #1 {
   %tid = tail call i32 @llvm.r600.read.tidig.x() #0
   %gep.0 = getelementptr double, double addrspace(1)* %in, i32 %tid
@@ -63,13 +63,13 @@ define void @combine_to_fma_f64_0_2use(double addrspace(1)* noalias %out, double
   ret void
 }
 
-; (fadd x, (fmul y, z)) -> (fma y, z, x)
-; FUNC-LABEL: {{^}}combine_to_fma_f64_1:
-; SI-DAG: buffer_load_dwordx2 [[A:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI-DAG: buffer_load_dwordx2 [[B:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:8{{$}}
-; SI-DAG: buffer_load_dwordx2 [[C:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:16{{$}}
-; SI: v_fma_f64 [[RESULT:v\[[0-9]+:[0-9]+\]]], [[A]], [[B]], [[C]]
-; SI: buffer_store_dwordx2 [[RESULT]]
+
+
+
+
+
+
+
 define void @combine_to_fma_f64_1(double addrspace(1)* noalias %out, double addrspace(1)* noalias %in) #1 {
   %tid = tail call i32 @llvm.r600.read.tidig.x() #0
   %gep.0 = getelementptr double, double addrspace(1)* %in, i32 %tid
@@ -87,13 +87,13 @@ define void @combine_to_fma_f64_1(double addrspace(1)* noalias %out, double addr
   ret void
 }
 
-; (fsub (fmul x, y), z) -> (fma x, y, (fneg z))
-; FUNC-LABEL: {{^}}combine_to_fma_fsub_0_f64:
-; SI-DAG: buffer_load_dwordx2 [[A:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI-DAG: buffer_load_dwordx2 [[B:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:8{{$}}
-; SI-DAG: buffer_load_dwordx2 [[C:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:16{{$}}
-; SI: v_fma_f64 [[RESULT:v\[[0-9]+:[0-9]+\]]], [[A]], [[B]], -[[C]]
-; SI: buffer_store_dwordx2 [[RESULT]]
+
+
+
+
+
+
+
 define void @combine_to_fma_fsub_0_f64(double addrspace(1)* noalias %out, double addrspace(1)* noalias %in) #1 {
   %tid = tail call i32 @llvm.r600.read.tidig.x() #0
   %gep.0 = getelementptr double, double addrspace(1)* %in, i32 %tid
@@ -111,17 +111,17 @@ define void @combine_to_fma_fsub_0_f64(double addrspace(1)* noalias %out, double
   ret void
 }
 
-; (fsub (fmul x, y), z) -> (fma x, y, (fneg z))
-; FUNC-LABEL: {{^}}combine_to_fma_fsub_f64_0_2use:
-; SI-DAG: buffer_load_dwordx2 [[A:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI-DAG: buffer_load_dwordx2 [[B:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:8{{$}}
-; SI-DAG: buffer_load_dwordx2 [[C:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:16{{$}}
-; SI-DAG: buffer_load_dwordx2 [[D:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:24{{$}}
-; SI-DAG: v_fma_f64 [[RESULT0:v\[[0-9]+:[0-9]+\]]], [[A]], [[B]], -[[C]]
-; SI-DAG: v_fma_f64 [[RESULT1:v\[[0-9]+:[0-9]+\]]], [[A]], [[B]], -[[D]]
-; SI-DAG: buffer_store_dwordx2 [[RESULT0]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI-DAG: buffer_store_dwordx2 [[RESULT1]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:8{{$}}
-; SI: s_endpgm
+
+
+
+
+
+
+
+
+
+
+
 define void @combine_to_fma_fsub_f64_0_2use(double addrspace(1)* noalias %out, double addrspace(1)* noalias %in) #1 {
   %tid = tail call i32 @llvm.r600.read.tidig.x() #0
   %gep.0 = getelementptr double, double addrspace(1)* %in, i32 %tid
@@ -144,13 +144,13 @@ define void @combine_to_fma_fsub_f64_0_2use(double addrspace(1)* noalias %out, d
   ret void
 }
 
-; (fsub x, (fmul y, z)) -> (fma (fneg y), z, x)
-; FUNC-LABEL: {{^}}combine_to_fma_fsub_1_f64:
-; SI-DAG: buffer_load_dwordx2 [[A:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI-DAG: buffer_load_dwordx2 [[B:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:8{{$}}
-; SI-DAG: buffer_load_dwordx2 [[C:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:16{{$}}
-; SI: v_fma_f64 [[RESULT:v\[[0-9]+:[0-9]+\]]], -[[A]], [[B]], [[C]]
-; SI: buffer_store_dwordx2 [[RESULT]]
+
+
+
+
+
+
+
 define void @combine_to_fma_fsub_1_f64(double addrspace(1)* noalias %out, double addrspace(1)* noalias %in) #1 {
   %tid = tail call i32 @llvm.r600.read.tidig.x() #0
   %gep.0 = getelementptr double, double addrspace(1)* %in, i32 %tid
@@ -168,17 +168,17 @@ define void @combine_to_fma_fsub_1_f64(double addrspace(1)* noalias %out, double
   ret void
 }
 
-; (fsub x, (fmul y, z)) -> (fma (fneg y), z, x)
-; FUNC-LABEL: {{^}}combine_to_fma_fsub_1_f64_2use:
-; SI-DAG: buffer_load_dwordx2 [[A:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI-DAG: buffer_load_dwordx2 [[B:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:8{{$}}
-; SI-DAG: buffer_load_dwordx2 [[C:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:16{{$}}
-; SI-DAG: buffer_load_dwordx2 [[D:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:24{{$}}
-; SI-DAG: v_fma_f64 [[RESULT0:v\[[0-9]+:[0-9]+\]]], -[[A]], [[B]], [[C]]
-; SI-DAG: v_fma_f64 [[RESULT1:v\[[0-9]+:[0-9]+\]]], -[[A]], [[B]], [[D]]
-; SI-DAG: buffer_store_dwordx2 [[RESULT0]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI-DAG: buffer_store_dwordx2 [[RESULT1]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:8{{$}}
-; SI: s_endpgm
+
+
+
+
+
+
+
+
+
+
+
 define void @combine_to_fma_fsub_1_f64_2use(double addrspace(1)* noalias %out, double addrspace(1)* noalias %in) #1 {
   %tid = tail call i32 @llvm.r600.read.tidig.x() #0
   %gep.0 = getelementptr double, double addrspace(1)* %in, i32 %tid
@@ -201,13 +201,13 @@ define void @combine_to_fma_fsub_1_f64_2use(double addrspace(1)* noalias %out, d
   ret void
 }
 
-; (fsub (fneg (fmul x, y)), z) -> (fma (fneg x), y, (fneg z))
-; FUNC-LABEL: {{^}}combine_to_fma_fsub_2_f64:
-; SI-DAG: buffer_load_dwordx2 [[A:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI-DAG: buffer_load_dwordx2 [[B:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:8{{$}}
-; SI-DAG: buffer_load_dwordx2 [[C:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:16{{$}}
-; SI: v_fma_f64 [[RESULT:v\[[0-9]+:[0-9]+\]]], -[[A]], [[B]], -[[C]]
-; SI: buffer_store_dwordx2 [[RESULT]]
+
+
+
+
+
+
+
 define void @combine_to_fma_fsub_2_f64(double addrspace(1)* noalias %out, double addrspace(1)* noalias %in) #1 {
   %tid = tail call i32 @llvm.r600.read.tidig.x() #0
   %gep.0 = getelementptr double, double addrspace(1)* %in, i32 %tid
@@ -227,16 +227,16 @@ define void @combine_to_fma_fsub_2_f64(double addrspace(1)* noalias %out, double
   ret void
 }
 
-; (fsub (fneg (fmul x, y)), z) -> (fma (fneg x), y, (fneg z))
-; FUNC-LABEL: {{^}}combine_to_fma_fsub_2_f64_2uses_neg:
-; SI-DAG: buffer_load_dwordx2 [[A:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI-DAG: buffer_load_dwordx2 [[B:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:8{{$}}
-; SI-DAG: buffer_load_dwordx2 [[C:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:16{{$}}
-; SI-DAG: v_fma_f64 [[RESULT0:v\[[0-9]+:[0-9]+\]]], -[[A]], [[B]], -[[C]]
-; SI-DAG: v_fma_f64 [[RESULT1:v\[[0-9]+:[0-9]+\]]], -[[A]], [[B]], -[[D]]
-; SI-DAG: buffer_store_dwordx2 [[RESULT0]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI-DAG: buffer_store_dwordx2 [[RESULT1]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:8{{$}}
-; SI: s_endpgm
+
+
+
+
+
+
+
+
+
+
 define void @combine_to_fma_fsub_2_f64_2uses_neg(double addrspace(1)* noalias %out, double addrspace(1)* noalias %in) #1 {
   %tid = tail call i32 @llvm.r600.read.tidig.x() #0
   %gep.0 = getelementptr double, double addrspace(1)* %in, i32 %tid
@@ -261,16 +261,16 @@ define void @combine_to_fma_fsub_2_f64_2uses_neg(double addrspace(1)* noalias %o
   ret void
 }
 
-; (fsub (fneg (fmul x, y)), z) -> (fma (fneg x), y, (fneg z))
-; FUNC-LABEL: {{^}}combine_to_fma_fsub_2_f64_2uses_mul:
-; SI-DAG: buffer_load_dwordx2 [[A:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI-DAG: buffer_load_dwordx2 [[B:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:8{{$}}
-; SI-DAG: buffer_load_dwordx2 [[C:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:16{{$}}
-; SI-DAG: v_fma_f64 [[RESULT0:v\[[0-9]+:[0-9]+\]]], -[[A]], [[B]], -[[C]]
-; SI-DAG: v_fma_f64 [[RESULT1:v\[[0-9]+:[0-9]+\]]], [[A]], [[B]], -[[D]]
-; SI-DAG: buffer_store_dwordx2 [[RESULT0]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI-DAG: buffer_store_dwordx2 [[RESULT1]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:8{{$}}
-; SI: s_endpgm
+
+
+
+
+
+
+
+
+
+
 define void @combine_to_fma_fsub_2_f64_2uses_mul(double addrspace(1)* noalias %out, double addrspace(1)* noalias %in) #1 {
   %tid = tail call i32 @llvm.r600.read.tidig.x() #0
   %gep.0 = getelementptr double, double addrspace(1)* %in, i32 %tid
@@ -295,17 +295,17 @@ define void @combine_to_fma_fsub_2_f64_2uses_mul(double addrspace(1)* noalias %o
   ret void
 }
 
-; fold (fsub (fma x, y, (fmul u, v)), z) -> (fma x, y (fma u, v, (fneg z)))
 
-; FUNC-LABEL: {{^}}aggressive_combine_to_fma_fsub_0_f64:
-; SI-DAG: buffer_load_dwordx2 [[X:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI-DAG: buffer_load_dwordx2 [[Y:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:8{{$}}
-; SI-DAG: buffer_load_dwordx2 [[Z:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:16{{$}}
-; SI-DAG: buffer_load_dwordx2 [[U:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:24{{$}}
-; SI-DAG: buffer_load_dwordx2 [[V:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:32{{$}}
-; SI: v_fma_f64 [[FMA0:v\[[0-9]+:[0-9]+\]]], [[U]], [[V]], -[[Z]]
-; SI: v_fma_f64 [[RESULT:v\[[0-9]+:[0-9]+\]]], [[X]], [[Y]], [[FMA0]]
-; SI: buffer_store_dwordx2 [[RESULT]]
+
+
+
+
+
+
+
+
+
+
 define void @aggressive_combine_to_fma_fsub_0_f64(double addrspace(1)* noalias %out, double addrspace(1)* noalias %in) #1 {
   %tid = tail call i32 @llvm.r600.read.tidig.x() #0
   %gep.0 = getelementptr double, double addrspace(1)* %in, i32 %tid
@@ -329,18 +329,18 @@ define void @aggressive_combine_to_fma_fsub_0_f64(double addrspace(1)* noalias %
   ret void
 }
 
-; fold (fsub x, (fma y, z, (fmul u, v)))
-;   -> (fma (fneg y), z, (fma (fneg u), v, x))
 
-; FUNC-LABEL: {{^}}aggressive_combine_to_fma_fsub_1_f64:
-; SI-DAG: buffer_load_dwordx2 [[X:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI-DAG: buffer_load_dwordx2 [[Y:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:8{{$}}
-; SI-DAG: buffer_load_dwordx2 [[Z:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:16{{$}}
-; SI-DAG: buffer_load_dwordx2 [[U:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:24{{$}}
-; SI-DAG: buffer_load_dwordx2 [[V:v\[[0-9]+:[0-9]+\]]], v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:32{{$}}
-; SI: v_fma_f64 [[FMA0:v\[[0-9]+:[0-9]+\]]], -[[U]], [[V]], [[X]]
-; SI: v_fma_f64 [[RESULT:v\[[0-9]+:[0-9]+\]]], -[[Y]], [[Z]], [[FMA0]]
-; SI: buffer_store_dwordx2 [[RESULT]]
+
+
+
+
+
+
+
+
+
+
+
 define void @aggressive_combine_to_fma_fsub_1_f64(double addrspace(1)* noalias %out, double addrspace(1)* noalias %in) #1 {
   %tid = tail call i32 @llvm.r600.read.tidig.x() #0
   %gep.0 = getelementptr double, double addrspace(1)* %in, i32 %tid

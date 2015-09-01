@@ -1,4 +1,4 @@
-; RUN: llc -mcpu=pwr7 < %s | FileCheck %s
+
 target datalayout = "E-m:e-i64:64-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
 
@@ -15,32 +15,32 @@ define void @_Z11GetPasswordP13CStdOutStreamb() personality i8* bitcast (i32 (..
 entry:
   br label %for.cond.i.i
 
-for.cond.i.i:                                     ; preds = %for.cond.i.i, %entry
+for.cond.i.i:                                     
   br i1 undef, label %_ZN11CStringBaseIcEC2EPKc.exit.critedge, label %for.cond.i.i
 
-_ZN11CStringBaseIcEC2EPKc.exit.critedge:          ; preds = %for.cond.i.i
+_ZN11CStringBaseIcEC2EPKc.exit.critedge:          
   invoke void @_ZN13CStdOutStreamlsEPKc()
           to label %invoke.cont unwind label %lpad
 
-invoke.cont:                                      ; preds = %_ZN11CStringBaseIcEC2EPKc.exit.critedge
+invoke.cont:                                      
   invoke void @_ZN13CStdOutStream5FlushEv()
           to label %invoke.cont4 unwind label %lpad
 
-invoke.cont4:                                     ; preds = %invoke.cont
+invoke.cont4:                                     
   %call7 = invoke i8* @getpass()
           to label %for.cond.i.i30 unwind label %lpad
 
-; CHECK-LABEL: @_Z11GetPasswordP13CStdOutStreamb
-; CHECK: addi {{[0-9]+}}, 3, -1
 
-for.cond.i.i30:                                   ; preds = %for.cond.i.i30, %invoke.cont4
+
+
+for.cond.i.i30:                                   
   %indvars.iv.i.i26 = phi i64 [ %indvars.iv.next.i.i29, %for.cond.i.i30 ], [ 0, %invoke.cont4 ]
   %arrayidx.i.i27 = getelementptr inbounds i8, i8* %call7, i64 %indvars.iv.i.i26
   %0 = load i8, i8* %arrayidx.i.i27, align 1
   %indvars.iv.next.i.i29 = add nuw nsw i64 %indvars.iv.i.i26, 1
   br label %for.cond.i.i30
 
-lpad:                                             ; preds = %invoke.cont4, %invoke.cont, %_ZN11CStringBaseIcEC2EPKc.exit.critedge
+lpad:                                             
   %1 = landingpad { i8*, i32 }
           cleanup
   resume { i8*, i32 } undef

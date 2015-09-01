@@ -1,8 +1,8 @@
-; RUN: opt -indvars -S < %s | FileCheck %s
 
-; indvars should transform the phi node pair from the for-loop
-; CHECK-LABEL: @main(
-; CHECK: ret = phi i32 [ 0, %entry ], [ 0, {{.*}} ]
+
+
+
+
 
 @c = common global i32 0, align 4
 

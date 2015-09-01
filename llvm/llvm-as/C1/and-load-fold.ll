@@ -1,11 +1,11 @@
-; RUN: llc -mtriple=x86_64-unknown-unknown -mcpu=generic < %s | FileCheck %s
 
-; Verify that the DAGCombiner doesn't wrongly remove the 'and' from the dag.
+
+
 
 define i8 @foo(<4 x i8>* %V) {
-; CHECK-LABEL: foo:
-; CHECK: pand
-; CHECK: ret
+
+
+
 entry:
   %Vp = bitcast <4 x i8>* %V to <3 x i8>*
   %V3i8 = load <3 x i8>, <3 x i8>* %Vp, align 4

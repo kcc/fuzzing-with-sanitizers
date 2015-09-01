@@ -1,30 +1,30 @@
-; RUN: opt -S -objc-arc < %s | FileCheck %s
 
-; Handle a retain+release pair entirely contained within a split loop backedge.
-; rdar://11256239
 
-; CHECK-LABEL: define void @test0(
-; CHECK: call i8* @objc_retain(i8* %call) [[NUW:#[0-9]+]]
-; CHECK: call i8* @objc_retain(i8* %call) [[NUW]]
-; CHECK: call i8* @objc_retain(i8* %cond) [[NUW]]
-; CHECK: call void @objc_release(i8* %call) [[NUW]]
-; CHECK: call void @objc_release(i8* %call) [[NUW]]
-; CHECK: call void @objc_release(i8* %cond) [[NUW]]
+
+
+
+
+
+
+
+
+
+
 define void @test0() personality i8* bitcast (i32 (...)* @__objc_personality_v0 to i8*) {
 entry:
   br label %while.body
 
-while.body:                                       ; preds = %while.cond
+while.body:                                       
   %call = invoke i8* @returner()
           to label %invoke.cont unwind label %lpad, !clang.arc.no_objc_arc_exceptions !0
 
-invoke.cont:                                      ; preds = %while.body
+invoke.cont:                                      
   %t0 = call i8* @objc_retain(i8* %call) nounwind
   %t1 = call i8* @objc_retain(i8* %call) nounwind
   %call.i1 = invoke i8* @returner()
           to label %invoke.cont1 unwind label %lpad
 
-invoke.cont1:                                     ; preds = %invoke.cont
+invoke.cont1:                                     
   %cond = select i1 undef, i8* null, i8* %call
   %t2 = call i8* @objc_retain(i8* %cond) nounwind
   call void @objc_release(i8* %call) nounwind
@@ -33,7 +33,7 @@ invoke.cont1:                                     ; preds = %invoke.cont
   call void @objc_release(i8* %cond) nounwind
   br label %while.body
 
-lpad:                                             ; preds = %invoke.cont, %while.body
+lpad:                                             
   %t4 = landingpad { i8*, i32 }
           catch i8* null
   ret void
@@ -47,4 +47,4 @@ declare void @use_pointer(i8*)
 
 !0 = !{}
 
-; CHECK: attributes [[NUW]] = { nounwind }
+

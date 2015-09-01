@@ -1,5 +1,5 @@
-; RUN: llc < %s -mtriple=thumbv7-apple-ios -relocation-model=pic
-; <rdar://problem/10336715>
+
+
 
 @Exn = external hidden unnamed_addr constant { i8*, i8* }
 

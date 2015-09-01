@@ -1,6 +1,6 @@
-; RUN: opt < %s  -loop-vectorize -dce -force-vector-interleave=1 -force-vector-width=4 
 
-; Check that we don't crash.
+
+
 
 target datalayout = "e-p:64:64:64-S128-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f16:16:16-f32:32:32-f64:64:64-f128:128:128-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64"
 target triple = "x86_64-unknown-linux-gnu"
@@ -14,12 +14,12 @@ entry:
   %0 = icmp sgt i32 %_n, 0
   br i1 %0, label %"3.lr.ph", label %"5"
 
-"3.lr.ph":                                        ; preds = %entry
+"3.lr.ph":                                        
   %1 = bitcast float* %arr to i8*
   %2 = sext i32 %stride to i64
   br label %"3"
 
-"3":                                              ; preds = %"3.lr.ph", %"3"
+"3":                                              
   %indvars.iv = phi i64 [ 0, %"3.lr.ph" ], [ %indvars.iv.next, %"3" ]
   %3 = shl nsw i64 %indvars.iv, 2
   %4 = getelementptr inbounds i8, i8* %1, i64 %3
@@ -30,7 +30,7 @@ entry:
   %7 = icmp slt i32 %6, %_n
   br i1 %7, label %"3", label %"5"
 
-"5":                                              ; preds = %"3", %entry
+"5":                                              
   ret i32 0
 }
 
@@ -38,7 +38,7 @@ define i32 @init(i8* nocapture %name) unnamed_addr nounwind uwtable {
 entry:
   br label %"3"
 
-"3":                                              ; preds = %"3", %entry
+"3":                                              
   %indvars.iv = phi i64 [ 0, %entry ], [ %indvars.iv.next, %"3" ]
   %0 = shl nsw i64 %indvars.iv, 2
   %1 = getelementptr inbounds i8, i8* bitcast (float* getelementptr inbounds ([32000 x float], [32000 x float]* @b, i64 0, i64 16000) to i8*), i64 %0
@@ -49,6 +49,6 @@ entry:
   %exitcond = icmp eq i32 %lftr.wideiv, 16000
   br i1 %exitcond, label %"5", label %"3"
 
-"5":                                              ; preds = %"3"
+"5":                                              
   ret i32 0
 }

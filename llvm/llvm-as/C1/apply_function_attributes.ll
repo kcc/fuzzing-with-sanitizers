@@ -1,4 +1,4 @@
-; RUN: opt -S -mergefunc < %s | FileCheck %s
+
 
 %Opaque_type = type opaque
 %S2i = type <{ i64, i64 }>
@@ -33,8 +33,8 @@ define void @A(%Opaque_type* sret %a, %D2i* %b, i32* %xp, i32* %yp) {
   ret void
 }
 
-; Make sure we transfer the parameter attributes to the call site.
-; CHECK-LABEL: define void @C(%Opaque_type* sret
-; CHECK:  tail call void bitcast (void (%Opaque_type*, %D2i*, i32*, i32*)* @A to void (%Opaque_type*, %S2i*, i32*, i32*)*)(%Opaque_type* sret %0, %S2i* %1, i32* %2, i32* %3)
-; CHECK:  ret void
+
+
+
+
 

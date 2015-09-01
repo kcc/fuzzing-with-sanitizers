@@ -1,9 +1,9 @@
-; RUN: llc -march=hexagon < %s | FileCheck %s
-;
-; Bug 6714. Use sign-extend to promote the arguments for compare
-; equal/not-equal for 8- and 16-bit types with negative constants.
 
-; CHECK: cmp.eq{{.*}}#-16
+
+
+
+
+
 define i32 @foo1(i16 signext %q) nounwind readnone {
 entry:
   %not.cmp = icmp ne i16 %q, -16
@@ -11,7 +11,7 @@ entry:
   ret i32 %res.0
 }
 
-; CHECK: cmp.eq{{.*}}#-14
+
 define i32 @foo2(i16 signext %q) nounwind readnone {
 entry:
   %cmp = icmp eq i16 %q, -14
@@ -19,7 +19,7 @@ entry:
   ret i32 %res.0
 }
 
-; CHECK: cmp.eq{{.*}}#-8
+
 define i32 @foo3(i8 signext %r) nounwind readnone {
 entry:
   %cmp = icmp eq i8 %r, -8
@@ -27,7 +27,7 @@ entry:
   ret i32 %res.0
 }
 
-; CHECK: cmp.eq{{.*}}#-6
+
 define i32 @foo4(i8 signext %r) nounwind readnone {
 entry:
   %cmp = icmp eq i8 %r, -6
@@ -35,7 +35,7 @@ entry:
   ret i32 %res.0
 }
 
-; CHECK: cmp.eq{{.*}}#-20
+
 define i32 @foo5(i32 %s) nounwind readnone {
 entry:
   %cmp = icmp eq i32 %s, -20
@@ -43,7 +43,7 @@ entry:
   ret i32 %res.0
 }
 
-; CHECK: cmp.eq{{.*}}#-18
+
 define i32 @foo6(i32 %s) nounwind readnone {
 entry:
   %cmp = icmp eq i32 %s, -18
@@ -51,7 +51,7 @@ entry:
   ret i32 %res.0
 }
 
-; CHECK: cmp.eq{{.*}}#10
+
 define i32 @foo7(i16 signext %q) nounwind readnone {
 entry:
   %cmp = icmp eq i16 %q, 10
@@ -61,7 +61,7 @@ entry:
 
 @g = external global i16
 
-; CHECK: cmp.eq{{.*}}#-12
+
 define i32 @foo8() nounwind readonly {
 entry:
   %0 = load i16, i16* @g, align 2

@@ -1,5 +1,5 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv4 < %s
-; Check that the mis-aligned load doesn't cause compiler to assert.
+
+
 
 declare i32 @_hi(i64) #1
 @temp1 = common global i32 0, align 4

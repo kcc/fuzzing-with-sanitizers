@@ -1,21 +1,21 @@
-; RUN: opt -inline -S < %s | FileCheck %s
-; struct A {
-;   int arg0;
-;   double arg1[2];
-; } a, b;
-;  
-; void fn3(A p1) {
-;   if (p1.arg0)
-;     a = p1;
-; }
-;  
-; void fn4() { fn3(b); }
-;  
-; void fn5() {
-;   while (1)
-;     fn4();
-; }
-; ModuleID = 'test.cpp'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-m:o-i64:64-i128:128-n32:64-S128"
 target triple = "aarch64-apple-darwin"
 
@@ -24,23 +24,23 @@ target triple = "aarch64-apple-darwin"
 @a = global %struct.A zeroinitializer, align 8
 @b = global %struct.A zeroinitializer, align 8
 
-; Function Attrs: nounwind
+
 declare void @_Z3fn31A(%struct.A* nocapture readonly %p1) #0
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
-; Function Attrs: nounwind
+
 declare void @llvm.memcpy.p0i8.p0i8.i64(i8* nocapture, i8* nocapture readonly, i64, i32, i1) #2
 
-; Function Attrs: nounwind
+
 define void @_Z3fn4v() #0 {
 entry:
-; Test that the dbg.declare is moved together with the alloca.
-; CHECK: define void @_Z3fn5v()
-; CHECK-NEXT: entry:
-; CHECK-NEXT:   %agg.tmp.sroa.3.i = alloca [20 x i8], align 4
-; CHECK-NEXT:   call void @llvm.dbg.declare(metadata [20 x i8]* %agg.tmp.sroa.3.i,
+
+
+
+
+
   %agg.tmp.sroa.3 = alloca [20 x i8], align 4
   tail call void @llvm.dbg.declare(metadata [20 x i8]* %agg.tmp.sroa.3, metadata !46, metadata !48), !dbg !49
   %agg.tmp.sroa.0.0.copyload = load i32, i32* getelementptr inbounds (%struct.A, %struct.A* @b, i64 0, i32 0), align 8, !dbg !50
@@ -51,26 +51,26 @@ entry:
   %tobool.i = icmp eq i32 %agg.tmp.sroa.0.0.copyload, 0, !dbg !52
   br i1 %tobool.i, label %_Z3fn31A.exit, label %if.then.i, !dbg !53
 
-if.then.i:                                        ; preds = %entry
+if.then.i:                                        
   store i32 %agg.tmp.sroa.0.0.copyload, i32* getelementptr inbounds (%struct.A, %struct.A* @a, i64 0, i32 0), align 8, !dbg !54
   call void @llvm.memcpy.p0i8.p0i8.i64(i8* getelementptr (i8, i8* bitcast (%struct.A* @a to i8*), i64 4), i8* %agg.tmp.sroa.3.0..sroa_idx, i64 20, i32 4, i1 false), !dbg !54
   br label %_Z3fn31A.exit, !dbg !54
 
-_Z3fn31A.exit:                                    ; preds = %entry, %if.then.i
+_Z3fn31A.exit:                                    
   ret void, !dbg !50
 }
 
-; Function Attrs: noreturn nounwind
+
 define void @_Z3fn5v() #3 {
 entry:
   br label %while.body, !dbg !55
 
-while.body:                                       ; preds = %entry, %while.body
+while.body:                                       
   call void @_Z3fn4v(), !dbg !56
   br label %while.body, !dbg !55
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #1
 
 attributes #0 = { nounwind }

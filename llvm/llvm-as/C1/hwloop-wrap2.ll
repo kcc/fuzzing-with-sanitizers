@@ -1,8 +1,8 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv5 -O3 < %s | FileCheck %s
 
-; Test that we do not generate a hardware loop due to a potential underflow.
 
-; CHECK-NOT: loop0
+
+
+
 
 %struct.3 = type { i8*, i8, i8, i32, i32, i16, i16, i16, i16, i16, i16, i16, %struct.2* }
 %struct.2 = type { i16, i16, i16, i16, %struct.1* }

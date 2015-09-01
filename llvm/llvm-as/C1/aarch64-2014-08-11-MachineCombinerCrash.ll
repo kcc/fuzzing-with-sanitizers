@@ -1,13 +1,13 @@
-; RUN: llc < %s -O2 -mtriple=aarch64-none-linux-gnu 
 
-; Bug 20598
+
+
 
 
 define void @test() #0 {
 entry:
   br label %for.body, !dbg !39
 
-for.body:                                         ; preds = %for.body, %entry
+for.body:                                         
   %arrayidx5 = getelementptr inbounds i32, i32* null, i64 1, !dbg !43
   %0 = load i32, i32* null, align 4, !dbg !45, !tbaa !46
   %s1 = sub nsw i32 0, %0, !dbg !50
@@ -34,7 +34,7 @@ for.body:                                         ; preds = %for.body, %entry
   br label %for.body, !dbg !39
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #1
 
 attributes #0 = { nounwind "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

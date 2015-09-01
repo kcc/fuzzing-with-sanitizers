@@ -1,14 +1,14 @@
-; RUN: llc -mtriple arm-eabi -disable-fp-elim -filetype asm -o - %s \
-; RUN:     | FileCheck -check-prefix CHECK-ARM %s
 
-; RUN: llc -mtriple thumb-eabi -disable-fp-elim -filetype asm -o - %s \
-; RUN:     | FileCheck -check-prefix CHECK-THUMB %s
 
-; RUN: llc -mtriple arm-darwin -disable-fp-elim -filetype asm -o - %s \
-; RUN:     | FileCheck -check-prefix CHECK-DARWIN-ARM %s
 
-; RUN: llc -mtriple thumb-darwin -disable-fp-elim -filetype asm -o - %s \
-; RUN:     | FileCheck -check-prefix CHECK-DARWIN-THUMB %s
+
+
+
+
+
+
+
+
 
 declare void @callee(i32)
 
@@ -27,12 +27,12 @@ entry:
   ret i32 %add1
 }
 
-; CHECK-ARM: push {r11, lr}
-; CHECK-ARM: mov r11, sp
 
-; CHECK-THUMB: push {r7, lr}
-; CHECK-THUMB: add r7, sp, #0
 
-; CHECK-DARWIN-ARM: push {r7, lr}
-; CHECK-DARWIN-THUMB: push {r7, lr}
+
+
+
+
+
+
 

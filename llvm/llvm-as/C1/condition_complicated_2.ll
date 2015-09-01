@@ -1,8 +1,8 @@
-; REQUIRES: asserts
-; RUN: opt -regions -analyze < %s | FileCheck %s
-; RUN: opt -regions -stats < %s 2>&1 | FileCheck -check-prefix=STAT %s
-; RUN: opt -regions -print-region-style=bb  -analyze < %s 2>&1 | FileCheck -check-prefix=BBIT %s
-; RUN: opt -regions -print-region-style=rn  -analyze < %s 2>&1 | FileCheck -check-prefix=RNIT %s
+
+
+
+
+
 
 define internal fastcc void @compress() nounwind {
 end33:
@@ -29,17 +29,17 @@ exit:
 
 
 }
-; CHECK-NOT: =>
-; CHECK: [0] end33 => <Function Return>
-; CHECK-NEXT:      [1] end33 => exit
-; CHECK-NEXT:   [2] then107 => end124
 
-; STAT: 3 region - The # of regions
 
-; BBIT: end33, end124, exit, lor.lhs.false95, then107, then113, end172,
-; BBIT: end33, end124, lor.lhs.false95, then107, then113, end172,
-; BBIT: then107, then113,
 
-; RNIT: end33 => exit, exit,
-; RNIT: end33, end124, lor.lhs.false95, then107 => end124, end172,
-; RNIT: then107, then113,
+
+
+
+
+
+
+
+
+
+
+

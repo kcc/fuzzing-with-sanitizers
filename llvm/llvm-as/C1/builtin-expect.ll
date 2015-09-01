@@ -1,4 +1,4 @@
-; RUN: llc < %s
+
 
 define i32 @test1(i32 %x) nounwind uwtable ssp {
 entry:
@@ -13,16 +13,16 @@ entry:
   %tobool = icmp ne i64 %expval, 0
   br i1 %tobool, label %if.then, label %if.end
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %call = call i32 (...) @f()
   store i32 %call, i32* %retval
   br label %return
 
-if.end:                                           ; preds = %entry
+if.end:                                           
   store i32 1, i32* %retval
   br label %return
 
-return:                                           ; preds = %if.end, %if.then
+return:                                           
   %0 = load i32, i32* %retval
   ret i32 %0
 }
@@ -42,16 +42,16 @@ entry:
   %tobool = icmp ne i64 %expval, 0
   br i1 %tobool, label %if.then, label %if.end
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %call = call i32 (...) @f()
   store i32 %call, i32* %retval
   br label %return
 
-if.end:                                           ; preds = %entry
+if.end:                                           
   store i32 1, i32* %retval
   br label %return
 
-return:                                           ; preds = %if.end, %if.then
+return:                                           
   %0 = load i32, i32* %retval
   ret i32 %0
 }
@@ -70,16 +70,16 @@ entry:
   %tobool1 = icmp ne i64 %expval, 0
   br i1 %tobool1, label %if.then, label %if.end
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %call = call i32 (...) @f()
   store i32 %call, i32* %retval
   br label %return
 
-if.end:                                           ; preds = %entry
+if.end:                                           
   store i32 1, i32* %retval
   br label %return
 
-return:                                           ; preds = %if.end, %if.then
+return:                                           
   %0 = load i32, i32* %retval
   ret i32 %0
 }
@@ -99,16 +99,16 @@ entry:
   %tobool2 = icmp ne i64 %expval, 0
   br i1 %tobool2, label %if.then, label %if.end
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %call = call i32 (...) @f()
   store i32 %call, i32* %retval
   br label %return
 
-if.end:                                           ; preds = %entry
+if.end:                                           
   store i32 1, i32* %retval
   br label %return
 
-return:                                           ; preds = %if.end, %if.then
+return:                                           
   %0 = load i32, i32* %retval
   ret i32 %0
 }
@@ -126,16 +126,16 @@ entry:
   %tobool = icmp ne i64 %expval, 0
   br i1 %tobool, label %if.then, label %if.end
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %call = call i32 (...) @f()
   store i32 %call, i32* %retval
   br label %return
 
-if.end:                                           ; preds = %entry
+if.end:                                           
   store i32 1, i32* %retval
   br label %return
 
-return:                                           ; preds = %if.end, %if.then
+return:                                           
   %0 = load i32, i32* %retval
   ret i32 %0
 }
@@ -153,15 +153,15 @@ entry:
     i64 2, label %sw.bb
   ]
 
-sw.bb:                                            ; preds = %entry, %entry
+sw.bb:                                            
   store i32 0, i32* %retval
   br label %return
 
-sw.epilog:                                        ; preds = %entry
+sw.epilog:                                        
   store i32 1, i32* %retval
   br label %return
 
-return:                                           ; preds = %sw.epilog, %sw.bb
+return:                                           
   %0 = load i32, i32* %retval
   ret i32 %0
 }
@@ -179,16 +179,16 @@ entry:
     i64 3, label %sw.bb
   ]
 
-sw.bb:                                            ; preds = %entry, %entry
+sw.bb:                                            
   %tmp1 = load i32, i32* %x.addr, align 4
   store i32 %tmp1, i32* %retval
   br label %return
 
-sw.epilog:                                        ; preds = %entry
+sw.epilog:                                        
   store i32 0, i32* %retval
   br label %return
 
-return:                                           ; preds = %sw.epilog, %sw.bb
+return:                                           
   %0 = load i32, i32* %retval
   ret i32 %0
 }
@@ -205,16 +205,16 @@ entry:
   %tobool = icmp ne i32 %expval, 0
   br i1 %tobool, label %if.then, label %if.end
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %call = call i32 (...) @f()
   store i32 %call, i32* %retval
   br label %return
 
-if.end:                                           ; preds = %entry
+if.end:                                           
   store i32 1, i32* %retval
   br label %return
 
-return:                                           ; preds = %if.end, %if.then
+return:                                           
   %0 = load i32, i32* %retval
   ret i32 %0
 }

@@ -1,5 +1,5 @@
-; RUN: opt -early-cse -S < %s | FileCheck %s
-; PR12231
+
+
 
 declare i32 @f()
 
@@ -16,4 +16,4 @@ xxx:
   br label %lbl_1215
 }
 
-; CHECK-LABEL: define i32 @fn(
+

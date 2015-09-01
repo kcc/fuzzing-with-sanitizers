@@ -1,23 +1,23 @@
-; REQUIRES: object-emission
 
-; RUN: llc -mtriple x86_64-pc-linux -O0 -filetype=obj %s -o %t
-; RUN: llvm-dwarfdump %t | FileCheck %s
 
-; Testcase from:
-; struct base {
-;  virtual ~base();
-; };
-; typedef base base_type;
-; struct foo {
-;  base_type b;
-; };
-; foo f;
 
-; Where member b should be seen as a field at an offset and not a bitfield.
 
-; CHECK: DW_TAG_member
-; CHECK: DW_AT_name{{.*}}"b"
-; CHECK-NOT: DW_AT_bit_offset
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %struct.foo = type { %struct.base }
 %struct.base = type { i32 (...)** }
@@ -40,7 +40,7 @@ entry:
   ret void, !dbg !33
 }
 
-; Function Attrs: inlinehint nounwind uwtable
+
 define linkonce_odr void @_ZN3fooC2Ev(%struct.foo* %this) unnamed_addr #0 comdat align 2 {
 entry:
   %this.addr = alloca %struct.foo*, align 8
@@ -52,7 +52,7 @@ entry:
   ret void, !dbg !38
 }
 
-; Function Attrs: inlinehint uwtable
+
 define linkonce_odr void @_ZN3fooD2Ev(%struct.foo* %this) unnamed_addr #1 comdat align 2 {
 entry:
   %this.addr = alloca %struct.foo*, align 8
@@ -64,13 +64,13 @@ entry:
   ret void, !dbg !43
 }
 
-; Function Attrs: nounwind
+
 declare i32 @__cxa_atexit(void (i8*)*, i8*, i8*) #2
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #3
 
-; Function Attrs: inlinehint nounwind uwtable
+
 define linkonce_odr void @_ZN4baseC2Ev(%struct.base* %this) unnamed_addr #0 comdat align 2 {
 entry:
   %this.addr = alloca %struct.base*, align 8

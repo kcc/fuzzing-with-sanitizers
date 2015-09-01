@@ -1,9 +1,9 @@
-; RUN: llc -verify-machineinstrs -march=amdgcn -mcpu=SI < %s
-; RUN: llc -verify-machineinstrs -march=amdgcn -mcpu=tonga < %s
 
-; This works because promote allocas pass replaces these with LDS atomics.
 
-; Private atomics have no real use, but at least shouldn't crash on it.
+
+
+
+
 define void @atomicrmw_private(i32 addrspace(1)* %out, i32 %in) nounwind {
 entry:
   %tmp = alloca [2 x i32]

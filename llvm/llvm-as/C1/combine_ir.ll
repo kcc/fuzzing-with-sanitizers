@@ -1,6 +1,6 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv4 < %s | FileCheck %s
-; CHECK: word
-; CHECK: combine(#0
+
+
+
 
 define void @word(i32* nocapture %a) nounwind {
 entry:
@@ -12,8 +12,8 @@ entry:
 
 declare void @bar(i64)
 
-; CHECK: halfword
-; CHECK: combine(#0
+
+
 
 define void @halfword(i16* nocapture %a) nounwind {
 entry:
@@ -28,8 +28,8 @@ entry:
   ret void
 }
 
-; CHECK: byte
-; CHECK: combine(#0
+
+
 
 define void @byte(i8* nocapture %a) nounwind {
 entry:

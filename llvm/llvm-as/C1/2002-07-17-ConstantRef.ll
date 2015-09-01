@@ -1,9 +1,9 @@
-; RUN: opt < %s -globaldce
-;
 
-@X = global void ()* @func              ; <void ()**> [#uses=0]
 
-; Not dead, can be reachable via X
+
+@X = global void ()* @func              
+
+
 define internal void @func() {
         ret void
 }

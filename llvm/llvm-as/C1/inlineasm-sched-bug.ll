@@ -1,7 +1,7 @@
-; PR13504
-; RUN: llc -march=x86 -mcpu=atom <%s | FileCheck %s
-; CHECK: bsfl
-; CHECK-NOT: movl
+
+
+
+
 
 define i32 @foo(i32 %treemap) nounwind uwtable {
 entry:

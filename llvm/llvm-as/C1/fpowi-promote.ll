@@ -1,6 +1,6 @@
-; RUN: llc < %s
 
-; PR1239
+
+
 
 define float @test(float %tmp23302331, i32 %tmp23282329 ) {
 

@@ -1,30 +1,30 @@
-; REQUIRES: object-emission
 
-; RUN: %llc_dwarf < %s -filetype=obj | llvm-dwarfdump -debug-dump=info - | FileCheck %s
 
-; Test that a nodebug function (a function not appearing in the debug info IR
-; metadata subprogram list) with DebugLocs on its IR doesn't cause crashes/does
-; the right thing.
 
-; Build with clang from the following:
-; extern int i;
-; inline __attribute__((always_inline)) void f1() {
-;   i = 3;
-; }
-;
-; __attribute__((nodebug)) void f2() {
-;   f1();
-; }
 
-; Check that there's only one DW_TAG_subprogram, nothing for the 'f2' function.
-; CHECK: DW_TAG_subprogram
-; CHECK-NOT: DW_TAG
-; CHECK:   DW_AT_name {{.*}} "f1"
-; CHECK-NOT: DW_TAG_subprogram
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @i = external global i32
 
-; Function Attrs: uwtable
+
 define void @_Z2f2v() #0 {
 entry:
   store i32 3, i32* @i, align 4, !dbg !11

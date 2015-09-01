@@ -1,4 +1,4 @@
-; RUN: llc -mtriple thumbv7--windows-itanium -filetype asm -o - %s | FileCheck %s
+
 
 @source = common global [512 x i8] zeroinitializer, align 4
 
@@ -10,9 +10,9 @@ entry:
   unreachable
 }
 
-; CHECK: movw r0, :lower16:source
-; CHECK: movt r0, :upper16:source
-; CHECK: movs r1, #0
-; CHECK: mov.w r2, #512
-; CHECK: memset
+
+
+
+
+
 

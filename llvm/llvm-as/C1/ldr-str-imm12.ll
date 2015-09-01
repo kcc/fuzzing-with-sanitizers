@@ -1,6 +1,6 @@
-; RUN: llc < %s -mtriple=thumbv7-apple-darwin -arm-atomic-cfg-tidy=0 -mcpu=cortex-a8 -relocation-model=pic -disable-fp-elim | FileCheck %s
-; rdar://7352504
-; Make sure we use "str r9, [sp, #+28]" instead of "sub.w r4, r7, #256" followed by "str r9, [r4, #-32]".
+
+
+
 
 %0 = type { i16, i8, i8 }
 %1 = type { [2 x i32], [2 x i32] }
@@ -17,17 +17,17 @@
 %union.anon = type { %struct.GAP }
 %union.rec = type { %struct.head_type }
 
-@zz_hold = external global %union.rec*            ; <%union.rec**> [#uses=2]
-@zz_res = external global %union.rec*             ; <%union.rec**> [#uses=1]
+@zz_hold = external global %union.rec*            
+@zz_res = external global %union.rec*             
 
 define %union.rec* @Manifest(%union.rec* %x, %union.rec* %env, %struct.STYLE* %style, %union.rec** %bthr, %union.rec** %fthr, %union.rec** %target, %union.rec** %crs, i32 %ok, i32 %need_expand, %union.rec** %enclose, i32 %fcr) nounwind {
 entry:
-; CHECK:       ldr{{(.w)?}}	{{(r[0-9]+)|(lr)}}, [r7, #28]
-  %xgaps.i = alloca [32 x %union.rec*], align 4   ; <[32 x %union.rec*]*> [#uses=0]
-  %ycomp.i = alloca [32 x %union.rec*], align 4   ; <[32 x %union.rec*]*> [#uses=0]
+
+  %xgaps.i = alloca [32 x %union.rec*], align 4   
+  %ycomp.i = alloca [32 x %union.rec*], align 4   
   br label %bb20
 
-bb20:                                             ; preds = %entry
+bb20:                                             
   switch i32 undef, label %bb1287 [
     i32 11, label %bb119
     i32 12, label %bb119
@@ -41,36 +41,36 @@ bb20:                                             ; preds = %entry
     i32 78, label %bb1098
   ]
 
-bb119:                                            ; preds = %bb20, %bb20
+bb119:                                            
   unreachable
 
-bb420:                                            ; preds = %bb20, %bb20
-; CHECK: bb420
-; CHECK: str{{(.w)?}} r{{[0-9]+}}, [sp
-; CHECK: str{{(.w)?}} r{{[0-9]+}}, [sp
-; CHECK: str{{(.w)?}} r{{[0-9]+}}, [sp
-; CHECK: str{{(.w)?}} r{{[0-9]+}}, [sp
+bb420:                                            
+
+
+
+
+
   store %union.rec* null, %union.rec** @zz_hold, align 4
   store %union.rec* null, %union.rec** @zz_res, align 4
   store %union.rec* %x, %union.rec** @zz_hold, align 4
-  %0 = call  %union.rec* @Manifest(%union.rec* undef, %union.rec* %env, %struct.STYLE* %style, %union.rec** %bthr, %union.rec** %fthr, %union.rec** %target, %union.rec** %crs, i32 %ok, i32 %need_expand, %union.rec** %enclose, i32 %fcr) nounwind ; <%union.rec*> [#uses=0]
+  %0 = call  %union.rec* @Manifest(%union.rec* undef, %union.rec* %env, %struct.STYLE* %style, %union.rec** %bthr, %union.rec** %fthr, %union.rec** %target, %union.rec** %crs, i32 %ok, i32 %need_expand, %union.rec** %enclose, i32 %fcr) nounwind 
   unreachable
 
-bb438:                                            ; preds = %bb20, %bb20
+bb438:                                            
   unreachable
 
-bb533:                                            ; preds = %bb20
+bb533:                                            
   ret %union.rec* %x
 
-bb569:                                            ; preds = %bb20
+bb569:                                            
   unreachable
 
-bb745:                                            ; preds = %bb20
+bb745:                                            
   unreachable
 
-bb1098:                                           ; preds = %bb20
+bb1098:                                           
   unreachable
 
-bb1287:                                           ; preds = %bb20
+bb1287:                                           
   unreachable
 }

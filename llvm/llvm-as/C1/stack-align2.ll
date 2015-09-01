@@ -1,13 +1,13 @@
-; RUN: llc -O0 -march=hexagon < %s | FileCheck %s
-; CHECK: and(r29, #-128)
-; CHECK-DAG: add(r29, #0)
-; CHECK-DAG: add(r29, #64)
-; CHECK-DAG: add(r29, #96)
-; CHECK-DAG: add(r29, #124)
+
+
+
+
+
+
 
 target triple = "hexagon-unknown-unknown"
 
-; Function Attrs: nounwind uwtable
+
 define void @foo() #0 {
 entry:
   %x = alloca i32, align 4

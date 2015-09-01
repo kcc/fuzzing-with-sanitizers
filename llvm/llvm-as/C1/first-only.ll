@@ -1,17 +1,17 @@
-; RUN: opt < %s -add-discriminators -S | FileCheck %s
 
-; Test that the only instructions that receive a new discriminator in
-; the block 'if.then' are those that share the same line number as
-; the branch in 'entry'.
-;
-; Original code:
-;
-;       void foo(int i) {
-;         int x, y;
-;         if (i < 10) { x = i;
-;             y = -i;
-;         }
-;       }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @foo(i32 %i) #0 {
 entry:
@@ -23,25 +23,25 @@ entry:
   %cmp = icmp slt i32 %0, 10, !dbg !10
   br i1 %cmp, label %if.then, label %if.end, !dbg !10
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %1 = load i32, i32* %i.addr, align 4, !dbg !12
   store i32 %1, i32* %x, align 4, !dbg !12
 
   %2 = load i32, i32* %i.addr, align 4, !dbg !14
-; CHECK:  %2 = load i32, i32* %i.addr, align 4, !dbg ![[THEN:[0-9]+]]
+
 
   %sub = sub nsw i32 0, %2, !dbg !14
-; CHECK:  %sub = sub nsw i32 0, %2, !dbg ![[THEN]]
+
 
   store i32 %sub, i32* %y, align 4, !dbg !14
-; CHECK:  store i32 %sub, i32* %y, align 4, !dbg ![[THEN]]
+
 
   br label %if.end, !dbg !15
-; CHECK:  br label %if.end, !dbg ![[BR:[0-9]+]]
 
-if.end:                                           ; preds = %if.then, %entry
+
+if.end:                                           
   ret void, !dbg !16
-; CHECK:  ret void, !dbg ![[END:[0-9]+]]
+
 }
 
 attributes #0 = { nounwind uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }
@@ -63,21 +63,21 @@ attributes #0 = { nounwind uwtable "less-precise-fpmad"="false" "no-frame-pointe
 !10 = !DILocation(line: 3, scope: !11)
 
 !11 = distinct !DILexicalBlock(line: 3, column: 0, file: !1, scope: !4)
-; CHECK: ![[FOO:[0-9]+]] = distinct !DISubprogram(name: "foo"
-; CHECK: ![[BLOCK1:[0-9]+]] = distinct !DILexicalBlock(scope: ![[FOO]],{{.*}} line: 3)
+
+
 
 !12 = !DILocation(line: 3, scope: !13)
 
 !13 = distinct !DILexicalBlock(line: 3, column: 0, file: !1, scope: !11)
-; CHECK: !DILexicalBlockFile(scope: ![[BLOCK2:[0-9]+]],{{.*}} discriminator: 1)
+
 
 !14 = !DILocation(line: 4, scope: !13)
-; CHECK: ![[BLOCK2]] = distinct !DILexicalBlock(scope: ![[BLOCK1]],{{.*}} line: 3)
+
 
 !15 = !DILocation(line: 5, scope: !13)
-; CHECK: ![[THEN]] = !DILocation(line: 4, scope: ![[BLOCK2]])
+
 
 !16 = !DILocation(line: 6, scope: !4)
-; CHECK: ![[BR]] = !DILocation(line: 5, scope: ![[BLOCK2]])
-; CHECK: ![[END]] = !DILocation(line: 6, scope: ![[FOO]])
+
+
 

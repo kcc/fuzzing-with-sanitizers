@@ -1,8 +1,8 @@
-; RUN: llc -mcpu=a2 < %s | FileCheck %s
+
 target datalayout = "E-m:e-i64:64-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
 
-; Function Attrs: nounwind
+
 define double @foo1(i32* %x) #0 {
 entry:
   %0 = load i32, i32* %x, align 4
@@ -10,10 +10,10 @@ entry:
   %conv1 = sitofp i64 %conv to double
   ret double %conv1
 
-; CHECK-LABEL: @foo1
-; CHECK: lfiwax [[REG1:[0-9]+]], 0, 3
-; CHECK: fcfid 1, [[REG1]]
-; CHECK: blr
+
+
+
+
 }
 
 define double @foo2(i32* %x) #0 {
@@ -23,10 +23,10 @@ entry:
   %conv1 = sitofp i64 %conv to double
   ret double %conv1
 
-; CHECK-LABEL: @foo2
-; CHECK: lfiwzx [[REG1:[0-9]+]], 0, 3
-; CHECK: fcfid 1, [[REG1]]
-; CHECK: blr
+
+
+
+
 }
 
 define double @foo3(i32* %x) #0 {
@@ -37,14 +37,14 @@ entry:
   %conv1 = sitofp i64 %conv to double
   ret double %conv1
 
-; CHECK-LABEL: @foo3
-; CHECK-DAG: lwz [[REG1:[0-9]+]], 0(3)
-; CHECK-DAG: addi [[REG3:[0-9]+]], 1,
-; CHECK-DAG: addi [[REG2:[0-9]+]], [[REG1]], 8
-; CHECK-DAG: stw [[REG2]],
-; CHECK: lfiwzx [[REG4:[0-9]+]], 0, [[REG3]]
-; CHECK: fcfid 1, [[REG4]]
-; CHECK: blr
+
+
+
+
+
+
+
+
 }
 
 define double @foo4(i32* %x) #0 {
@@ -55,14 +55,14 @@ entry:
   %conv1 = sitofp i64 %conv to double
   ret double %conv1
 
-; CHECK-LABEL: @foo4
-; CHECK-DAG: lwz [[REG1:[0-9]+]], 0(3)
-; CHECK-DAG: addi [[REG3:[0-9]+]], 1,
-; CHECK-DAG: addi [[REG2:[0-9]+]], [[REG1]], 8
-; CHECK-DAG: stw [[REG2]],
-; CHECK: lfiwax [[REG4:[0-9]+]], 0, [[REG3]]
-; CHECK: fcfid 1, [[REG4]]
-; CHECK: blr
+
+
+
+
+
+
+
+
 }
 
 attributes #0 = { nounwind }

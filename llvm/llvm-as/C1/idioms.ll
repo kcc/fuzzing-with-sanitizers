@@ -1,12 +1,12 @@
-; RUN: opt -instcombine -S < %s | FileCheck %s
 
-; Check that code corresponding to the following C function is
-; simplified into a single ASR operation:
-;
-; int test_asr(int a, int b) {
-;   return a < 0 ? -(-a - 1 >> b) - 1 : a >> b;
-; }
-;
+
+
+
+
+
+
+
+
 define i32 @test_asr(i32 %a, i32 %b) {
 entry:
 	%c = icmp slt i32 %a, 0
@@ -25,8 +25,8 @@ bb3:
 bb4:
         %f = phi i32 [ %not2, %bb2 ], [ %e, %bb3 ]
 	ret i32 %f
-; CHECK-LABEL: @test_asr(
-; CHECK: bb4:
-; CHECK: %f = ashr i32 %a, %b
-; CHECK: ret i32 %f
+
+
+
+
 }

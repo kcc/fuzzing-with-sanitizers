@@ -1,21 +1,21 @@
-; RUN: llc < %s -march=amdgcn -mcpu=SI -verify-machineinstrs | FileCheck %s
 
-; In this test both the pointer and the offset operands to the
-; BUFFER_LOAD instructions end up being stored in vgprs.  This
-; requires us to add the pointer and offset together, store the
-; result in the offset operand (vaddr), and then store 0 in an
-; sgpr register pair and use that for the pointer operand
-; (low 64-bits of srsrc).
 
-; CHECK-LABEL: {{^}}mubuf:
 
-; Make sure we aren't using VGPRs for the source operand of s_mov_b64
-; CHECK-NOT: s_mov_b64 s[{{[0-9]+:[0-9]+}}], v
 
-; Make sure we aren't using VGPR's for the srsrc operand of BUFFER_LOAD_*
-; instructions
-; CHECK: buffer_load_ubyte v{{[0-9]+}}, v[{{[0-9]+:[0-9]+}}], s[{{[0-9]+:[0-9]+}}], 0 addr64
-; CHECK: buffer_load_ubyte v{{[0-9]+}}, v[{{[0-9]+:[0-9]+}}], s[{{[0-9]+:[0-9]+}}], 0 addr64
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @mubuf(i32 addrspace(1)* %out, i8 addrspace(1)* %in) {
 entry:
   %0 = call i32 @llvm.r600.read.tidig.x() #1
@@ -47,11 +47,11 @@ declare i32 @llvm.r600.read.tidig.y() #1
 
 attributes #1 = { nounwind readnone }
 
-; Test moving an SMRD instruction to the VALU
 
-; CHECK-LABEL: {{^}}smrd_valu:
-; CHECK: buffer_load_dword [[OUT:v[0-9]+]]
-; CHECK: buffer_store_dword [[OUT]]
+
+
+
+
 
 define void @smrd_valu(i32 addrspace(2)* addrspace(1)* %in, i32 %a, i32 addrspace(1)* %out) {
 entry:
@@ -75,10 +75,10 @@ endif:
   ret void
 }
 
-; Test moving an SMRD with an immediate offset to the VALU
 
-; CHECK-LABEL: {{^}}smrd_valu2:
-; CHECK: buffer_load_dword v{{[0-9]+}}, v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:16{{$}}
+
+
+
 define void @smrd_valu2(i32 addrspace(1)* %out, [8 x i32] addrspace(2)* %in) {
 entry:
   %0 = call i32 @llvm.r600.read.tidig.x() nounwind readnone
@@ -89,8 +89,8 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: {{^}}smrd_valu2_max_smrd_offset:
-; CHECK: buffer_load_dword v{{[0-9]+}}, v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:1020{{$}}
+
+
 define void @smrd_valu2_max_smrd_offset(i32 addrspace(1)* %out, [1024 x i32] addrspace(2)* %in) {
 entry:
   %0 = call i32 @llvm.r600.read.tidig.x() nounwind readnone
@@ -101,12 +101,12 @@ entry:
   ret void
 }
 
-; Offset is too big to fit in SMRD 8-bit offset, but small enough to
-; fit in MUBUF offset.
-; FIXME: We should be using the offset but we don't
 
-; CHECK-LABEL: {{^}}smrd_valu2_mubuf_offset:
-; CHECK: buffer_load_dword v{{[0-9]+}}, v{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
+
+
+
+
+
 define void @smrd_valu2_mubuf_offset(i32 addrspace(1)* %out, [1024 x i32] addrspace(2)* %in) {
 entry:
   %0 = call i32 @llvm.r600.read.tidig.x() nounwind readnone
@@ -117,9 +117,9 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: {{^}}s_load_imm_v8i32:
-; CHECK: buffer_load_dwordx4
-; CHECK: buffer_load_dwordx4
+
+
+
 define void @s_load_imm_v8i32(<8 x i32> addrspace(1)* %out, i32 addrspace(2)* nocapture readonly %in) {
 entry:
   %tmp0 = tail call i32 @llvm.r600.read.tidig.x() #1
@@ -130,11 +130,11 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: {{^}}s_load_imm_v16i32:
-; CHECK: buffer_load_dwordx4
-; CHECK: buffer_load_dwordx4
-; CHECK: buffer_load_dwordx4
-; CHECK: buffer_load_dwordx4
+
+
+
+
+
 define void @s_load_imm_v16i32(<16 x i32> addrspace(1)* %out, i32 addrspace(2)* nocapture readonly %in) {
 entry:
   %tmp0 = tail call i32 @llvm.r600.read.tidig.x() #1

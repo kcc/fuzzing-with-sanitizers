@@ -1,20 +1,20 @@
-; RUN: llc < %s | FileCheck %s
+
 target datalayout = "E-m:e-i64:64-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
 
-; Function Attrs: nounwind
+
 define void @LSH_recall_init(float %d_min, float %W) #0 {
 entry:
   br i1 undef, label %for.body.lr.ph, label %for.end
 
-; CHECK-LABEL: @LSH_recall_init
-; CHECK: xsnmsubadp
 
-for.body.lr.ph:                                   ; preds = %entry
+
+
+for.body.lr.ph:                                   
   %conv3 = fpext float %W to double
   br label %for.body
 
-for.body:                                         ; preds = %for.body, %for.body.lr.ph
+for.body:                                         
   %div = fdiv fast float 0.000000e+00, 0.000000e+00
   %add = fadd fast float %div, %d_min
   %conv2 = fpext float %add to double
@@ -23,11 +23,11 @@ for.body:                                         ; preds = %for.body, %for.body
   %call = tail call signext i32 bitcast (i32 (...)* @p_col_helper to i32 (double)*)(double %div4) #2
   br label %for.body
 
-for.end:                                          ; preds = %entry
+for.end:                                          
   ret void
 }
 
-; Function Attrs: nounwind readnone
+
 declare double @llvm.sqrt.f64(double) #1
 
 declare signext i32 @p_col_helper(...) #2

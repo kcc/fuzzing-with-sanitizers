@@ -1,58 +1,58 @@
-; RUN: llc -filetype=obj < %s | llvm-dwarfdump -debug-dump=info - | FileCheck %s
-;
-; PR22296: In this testcase the DBG_VALUE describing "p5" becomes unavailable
-; because the register its address is in is clobbered and we (currently) aren't
-; smart enough to realize that the value is rematerialized immediately after the
-; DBG_VALUE and/or is actually a stack slot.
-;
-; Test that we handle this situation gracefully by omitting the DW_AT_location
-; and not asserting.
-; Note that this check may XPASS in the future if DbgValueHistoryCalculator
-; becoms smarter. That would be fine, too.
-;
-; CHECK: DW_TAG_subprogram
-; CHECK: linkage_name{{.*}}_Z2f21A
-; CHECK: DW_TAG_formal_parameter
-; CHECK-NOT: DW_AT_location
-; CHECK-NEXT: DW_AT_name {{.*}}"p5"
-;
-; // Compile at -O1
-; struct A {
-;   int *m1;
-;   int m2;
-; };
-;
-; void f1(int *p1, int p2);
-; void __attribute__((always_inline)) f2(A p5) { f1(p5.m1, p5.m2); }
-;
-; void func(void*);
-; void func(const int &, const int&);
-; int cond();
-; void f() {
-;   while (cond()) {
-;     int x;
-;     func(x, 0);
-;     while (cond()) {
-;       char y;
-;       func(&y);
-;       char j;
-;       func(&j);
-;       char I;
-;       func(&I);
-;       func(0, 0);
-;       A g;
-;       g.m1 = &x;
-;       f2(g);
-;     }
-;   }
-; }
-; ModuleID = 'test.cpp'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.10.0"
 
 %struct.A = type { i32*, i32 }
 
-; Function Attrs: alwaysinline ssp uwtable
+
 define void @_Z2f21A(i32* %p5.coerce0, i32 %p5.coerce1) #0 {
 entry:
   tail call void @llvm.dbg.value(metadata i32* %p5.coerce0, i64 0, metadata !16, metadata !33), !dbg !34
@@ -62,12 +62,12 @@ entry:
   ret void, !dbg !38
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
 declare void @_Z2f1Pii(i32*, i32) #2
 
-; Function Attrs: ssp uwtable
+
 define void @_Z1fv() #3 {
 entry:
   %x = alloca i32, align 4
@@ -81,12 +81,12 @@ entry:
   %tobool12 = icmp eq i32 %call11, 0, !dbg !39
   br i1 %tobool12, label %while.end7, label %while.body, !dbg !40
 
-while.cond.loopexit:                              ; preds = %while.body4, %while.body
+while.cond.loopexit:                              
   %call = call i32 @_Z4condv(), !dbg !39
   %tobool = icmp eq i32 %call, 0, !dbg !39
   br i1 %tobool, label %while.end7, label %while.body, !dbg !40
 
-while.body:                                       ; preds = %entry, %while.cond.loopexit
+while.body:                                       
   store i32 0, i32* %ref.tmp, align 4, !dbg !41, !tbaa !42
   call void @llvm.dbg.value(metadata i32* %x, i64 0, metadata !21, metadata !36), !dbg !46
   call void @_Z4funcRKiS0_(i32* dereferenceable(4) %x, i32* dereferenceable(4) %ref.tmp), !dbg !47
@@ -94,7 +94,7 @@ while.body:                                       ; preds = %entry, %while.cond.
   %tobool310 = icmp eq i32 %call29, 0, !dbg !48
   br i1 %tobool310, label %while.cond.loopexit, label %while.body4, !dbg !49
 
-while.body4:                                      ; preds = %while.body, %while.body4
+while.body4:                                      
   call void @llvm.dbg.value(metadata i8* %y, i64 0, metadata !23, metadata !36), !dbg !50
   call void @_Z4funcPv(i8* %y), !dbg !51
   call void @llvm.dbg.value(metadata i8* %j, i64 0, metadata !26, metadata !36), !dbg !52
@@ -115,7 +115,7 @@ while.body4:                                      ; preds = %while.body, %while.
   %tobool3 = icmp eq i32 %call2, 0, !dbg !48
   br i1 %tobool3, label %while.cond.loopexit, label %while.body4, !dbg !49
 
-while.end7:                                       ; preds = %while.cond.loopexit, %entry
+while.end7:                                       
   ret void, !dbg !64
 }
 
@@ -125,7 +125,7 @@ declare void @_Z4funcRKiS0_(i32* dereferenceable(4), i32* dereferenceable(4))
 
 declare void @_Z4funcPv(i8*)
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #1
 
 attributes #0 = { alwaysinline ssp uwtable }

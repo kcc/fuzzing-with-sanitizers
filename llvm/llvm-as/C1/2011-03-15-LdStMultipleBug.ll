@@ -1,7 +1,7 @@
-; RUN: llc < %s -mtriple=thumbv7-apple-darwin10 -relocation-model=pic -disable-fp-elim -mcpu=cortex-a8 | FileCheck %s
 
-; Do not form Thumb2 ldrd / strd if the offset is not multiple of 4.
-; rdar://9133587
+
+
+
 
 %struct.Outer = type { i32, [2 x %"struct.Outer::Inner"] }
 %"struct.Outer::Inner" = type { i32, i32, i8, i8 }
@@ -9,13 +9,13 @@
 @oStruct = external global %struct.Outer, align 4
 
 define void @main(i8 %val8) nounwind {
-; CHECK-LABEL: main:
-; CHECK-NOT: ldrd
-; CHECK: mul
+
+
+
 for.body.lr.ph:
   br label %for.body
 
-for.body:                                         ; preds = %_Z14printIsNotZeroi.exit17.for.body_crit_edge, %for.body.lr.ph
+for.body:                                         
   %tmp3 = phi i1 [ false, %for.body.lr.ph ], [ %phitmp27, %_Z14printIsNotZeroi.exit17.for.body_crit_edge ]
   %i.022 = phi i32 [ 0, %for.body.lr.ph ], [ %inc, %_Z14printIsNotZeroi.exit17.for.body_crit_edge ]
   %x = getelementptr %struct.Outer, %struct.Outer* @oStruct, i32 0, i32 1, i32 %i.022, i32 0
@@ -27,18 +27,18 @@ for.body:                                         ; preds = %_Z14printIsNotZeroi
   %tobool.i14 = icmp eq i32 %mul, 0
   br i1 %tobool.i14, label %_Z14printIsNotZeroi.exit17, label %if.then.i16
 
-if.then.i16:                                      ; preds = %_Z14printIsNotZeroi.exit
+if.then.i16:                                      
   ret void
 
-_Z14printIsNotZeroi.exit17:                       ; preds = %_Z14printIsNotZeroi.exit
+_Z14printIsNotZeroi.exit17:                       
   br label %_Z14printIsNotZeroi.exit17.for.body_crit_edge
 
-_Z14printIsNotZeroi.exit17.for.body_crit_edge:    ; preds = %_Z14printIsNotZeroi.exit17
+_Z14printIsNotZeroi.exit17.for.body_crit_edge:    
   %b.phi.trans.insert = getelementptr %struct.Outer, %struct.Outer* @oStruct, i32 0, i32 1, i32 %inc, i32 3
   %tmp3.pre = load i8, i8* %b.phi.trans.insert, align 1
   %phitmp27 = icmp eq i8 %val8, 0
   br label %for.body
 
-for.end:                                          ; preds = %_Z14printIsNotZeroi.exit17
+for.end:                                          
   ret void
 }

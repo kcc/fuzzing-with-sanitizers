@@ -1,50 +1,50 @@
-; Like frame-03.ll, but for z13.  In this case we have 16 more registers
-; available.
-;
-; RUN: llc < %s -mtriple=s390x-linux-gnu -mcpu=z13 | FileCheck %s
 
-; This function should require all FPRs, but no other spill slots.
-; We need to save and restore 8 of the 16 FPRs, so the frame size
-; should be exactly 160 + 8 * 8 = 224.  The CFA offset is 160
-; (the caller-allocated part of the frame) + 224.
+
+
+
+
+
+
+
+
 define void @f1(double *%ptr) {
-; CHECK-LABEL: f1:
-; CHECK: aghi %r15, -224
-; CHECK: .cfi_def_cfa_offset 384
-; CHECK: std %f8, 216(%r15)
-; CHECK: std %f9, 208(%r15)
-; CHECK: std %f10, 200(%r15)
-; CHECK: std %f11, 192(%r15)
-; CHECK: std %f12, 184(%r15)
-; CHECK: std %f13, 176(%r15)
-; CHECK: std %f14, 168(%r15)
-; CHECK: std %f15, 160(%r15)
-; CHECK: .cfi_offset %f8, -168
-; CHECK: .cfi_offset %f9, -176
-; CHECK: .cfi_offset %f10, -184
-; CHECK: .cfi_offset %f11, -192
-; CHECK: .cfi_offset %f12, -200
-; CHECK: .cfi_offset %f13, -208
-; CHECK: .cfi_offset %f14, -216
-; CHECK: .cfi_offset %f15, -224
-; CHECK-DAG: ld %f0, 0(%r2)
-; CHECK-DAG: ld %f7, 0(%r2)
-; CHECK-DAG: ld %f8, 0(%r2)
-; CHECK-DAG: ld %f15, 0(%r2)
-; CHECK-DAG: vlrepg %v16, 0(%r2)
-; CHECK-DAG: vlrepg %v23, 0(%r2)
-; CHECK-DAG: vlrepg %v24, 0(%r2)
-; CHECK-DAG: vlrepg %v31, 0(%r2)
-; CHECK: ld %f8, 216(%r15)
-; CHECK: ld %f9, 208(%r15)
-; CHECK: ld %f10, 200(%r15)
-; CHECK: ld %f11, 192(%r15)
-; CHECK: ld %f12, 184(%r15)
-; CHECK: ld %f13, 176(%r15)
-; CHECK: ld %f14, 168(%r15)
-; CHECK: ld %f15, 160(%r15)
-; CHECK: aghi %r15, 224
-; CHECK: br %r14
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   %l0 = load volatile double, double *%ptr
   %l1 = load volatile double, double *%ptr
   %l2 = load volatile double, double *%ptr
@@ -144,37 +144,37 @@ define void @f1(double *%ptr) {
   ret void
 }
 
-; Like f1, but requires one fewer FPR.  We allocate in numerical order,
-; so %f15 is the one that gets dropped.
+
+
 define void @f2(double *%ptr) {
-; CHECK-LABEL: f2:
-; CHECK: aghi %r15, -216
-; CHECK: .cfi_def_cfa_offset 376
-; CHECK: std %f8, 208(%r15)
-; CHECK: std %f9, 200(%r15)
-; CHECK: std %f10, 192(%r15)
-; CHECK: std %f11, 184(%r15)
-; CHECK: std %f12, 176(%r15)
-; CHECK: std %f13, 168(%r15)
-; CHECK: std %f14, 160(%r15)
-; CHECK: .cfi_offset %f8, -168
-; CHECK: .cfi_offset %f9, -176
-; CHECK: .cfi_offset %f10, -184
-; CHECK: .cfi_offset %f11, -192
-; CHECK: .cfi_offset %f12, -200
-; CHECK: .cfi_offset %f13, -208
-; CHECK: .cfi_offset %f14, -216
-; CHECK-NOT: %v15
-; CHECK-NOT: %f15
-; CHECK: ld %f8, 208(%r15)
-; CHECK: ld %f9, 200(%r15)
-; CHECK: ld %f10, 192(%r15)
-; CHECK: ld %f11, 184(%r15)
-; CHECK: ld %f12, 176(%r15)
-; CHECK: ld %f13, 168(%r15)
-; CHECK: ld %f14, 160(%r15)
-; CHECK: aghi %r15, 216
-; CHECK: br %r14
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   %l0 = load volatile double, double *%ptr
   %l1 = load volatile double, double *%ptr
   %l2 = load volatile double, double *%ptr
@@ -271,18 +271,18 @@ define void @f2(double *%ptr) {
   ret void
 }
 
-; Like f1, but should require only one call-saved FPR.
+
 define void @f3(double *%ptr) {
-; CHECK-LABEL: f3:
-; CHECK: aghi %r15, -168
-; CHECK: .cfi_def_cfa_offset 328
-; CHECK: std %f8, 160(%r15)
-; CHECK: .cfi_offset %f8, -168
-; CHECK-NOT: {{%[fv]9}}
-; CHECK-NOT: {{%[fv]1[0-5]}}
-; CHECK: ld %f8, 160(%r15)
-; CHECK: aghi %r15, 168
-; CHECK: br %r14
+
+
+
+
+
+
+
+
+
+
   %l0 = load volatile double, double *%ptr
   %l1 = load volatile double, double *%ptr
   %l2 = load volatile double, double *%ptr
@@ -361,14 +361,14 @@ define void @f3(double *%ptr) {
   ret void
 }
 
-; This function should use all call-clobbered FPRs and vector registers
-; but no call-saved ones.  It shouldn't need to create a frame.
+
+
 define void @f4(double *%ptr) {
-; CHECK-LABEL: f4:
-; CHECK-NOT: %r15
-; CHECK-NOT: {{%[fv][89]}}
-; CHECK-NOT: {{%[fv]1[0-5]}}
-; CHECK: br %r14
+
+
+
+
+
   %l0 = load volatile double, double *%ptr
   %l1 = load volatile double, double *%ptr
   %l2 = load volatile double, double *%ptr

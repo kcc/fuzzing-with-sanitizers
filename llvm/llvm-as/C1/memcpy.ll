@@ -1,4 +1,4 @@
-; RUN: llc -march=mipsel < %s | FileCheck %s 
+
 
 %struct.S1 = type { i32, [41 x i8] }
 
@@ -6,7 +6,7 @@
 
 define void @foo1(%struct.S1* %s1, i8 signext %n) nounwind {
 entry:
-; CHECK-NOT: call16(memcpy
+
 
   %arraydecay = getelementptr inbounds %struct.S1, %struct.S1* %s1, i32 0, i32 1, i32 0
   tail call void @llvm.memcpy.p0i8.p0i8.i32(i8* %arraydecay, i8* getelementptr inbounds ([31 x i8], [31 x i8]* @.str, i32 0, i32 0), i32 31, i32 1, i1 false)

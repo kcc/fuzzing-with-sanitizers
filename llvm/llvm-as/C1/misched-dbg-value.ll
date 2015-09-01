@@ -1,38 +1,38 @@
-; RUN: llc %s -mtriple=x86_64-apple-darwin -filetype=obj -o %t -enable-misched
-; RUN: llvm-dwarfdump %t | FileCheck %s
 
-; rdar://13183203
-; Make sure when misched is enabled, we still have location information for
-; function parameters.
-; CHECK: .debug_info contents:
-; CHECK: DW_TAG_compile_unit
-; CHECK:   DW_TAG_subprogram
-; CHECK-NOT: DW_TAG
-; CHECK:     DW_AT_name {{.*}} "Proc8"
-; CHECK-NOT: {{DW_TAG|NULL}}
-; CHECK:     DW_TAG_formal_parameter
-; CHECK-NOT: DW_TAG
-; CHECK:       DW_AT_location
-; CHECK-NOT: DW_TAG
-; CHECK:       DW_AT_name {{.*}} "Array1Par"
-; CHECK-NOT: {{DW_TAG|NULL}}
-; CHECK:     DW_TAG_formal_parameter
-; CHECK-NOT: DW_TAG
-; CHECK:       DW_AT_location
-; CHECK-NOT: DW_TAG
-; CHECK:       DW_AT_name {{.*}} "Array2Par"
-; CHECK-NOT: {{DW_TAG|NULL}}
-; CHECK:     DW_TAG_formal_parameter
-; CHECK-NOT: DW_TAG
-; CHECK:       DW_AT_location
-; CHECK-NOT: DW_TAG
-; CHECK:       DW_AT_name {{.*}} "IntParI1"
-; CHECK-NOT: {{DW_TAG|NULL}}
-; CHECK:     DW_TAG_formal_parameter
-; CHECK-NOT: DW_TAG
-; CHECK:       DW_AT_location
-; CHECK-NOT: DW_TAG
-; CHECK:       DW_AT_name {{.*}} "IntParI2"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %struct.Record = type { %struct.Record*, i32, i32, i32, [31 x i8] }
 
@@ -68,7 +68,7 @@ entry:
   tail call void @llvm.dbg.value(metadata i32 %add, i64 0, metadata !28, metadata !DIExpression()), !dbg !75
   br label %for.body, !dbg !75
 
-for.body:                                         ; preds = %entry, %for.body
+for.body:                                         
   %indvars.iv = phi i64 [ %idxprom, %entry ], [ %indvars.iv.next, %for.body ]
   %IntIndex.046 = phi i32 [ %add, %entry ], [ %inc, %for.body ]
   %arrayidx13 = getelementptr inbounds [51 x i32], [51 x i32]* %Array2Par, i64 %idxprom, i64 %indvars.iv, !dbg !77
@@ -79,7 +79,7 @@ for.body:                                         ; preds = %entry, %for.body
   %indvars.iv.next = add i64 %indvars.iv, 1, !dbg !75
   br i1 %cmp, label %for.end, label %for.body, !dbg !75
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   %sub = add nsw i32 %IntParI1, 4, !dbg !78
   %idxprom14 = sext i32 %sub to i64, !dbg !78
   %arrayidx17 = getelementptr inbounds [51 x i32], [51 x i32]* %Array2Par, i64 %idxprom, i64 %idxprom14, !dbg !78
@@ -108,11 +108,11 @@ attributes #1 = { nounwind readnone }
 !2 = !DICompositeType(tag: DW_TAG_enumeration_type, line: 128, size: 32, align: 32, file: !82, elements: !4)
 !3 = !DIFile(filename: "dry.c", directory: "/Users/manmanren/test-Nov/rdar_13183203/test2")
 !4 = !{!5, !6, !7, !8, !9}
-!5 = !DIEnumerator(name: "Ident1", value: 0) ; [ DW_TAG_enumerator ] [Ident1 :: 0]
-!6 = !DIEnumerator(name: "Ident2", value: 10000) ; [ DW_TAG_enumerator ] [Ident2 :: 10000]
-!7 = !DIEnumerator(name: "Ident3", value: 10001) ; [ DW_TAG_enumerator ] [Ident3 :: 10001]
-!8 = !DIEnumerator(name: "Ident4", value: 10002) ; [ DW_TAG_enumerator ] [Ident4 :: 10002]
-!9 = !DIEnumerator(name: "Ident5", value: 10003) ; [ DW_TAG_enumerator ] [Ident5 :: 10003]
+!5 = !DIEnumerator(name: "Ident1", value: 0) 
+!6 = !DIEnumerator(name: "Ident2", value: 10000) 
+!7 = !DIEnumerator(name: "Ident3", value: 10001) 
+!8 = !DIEnumerator(name: "Ident4", value: 10002) 
+!9 = !DIEnumerator(name: "Ident5", value: 10003) 
 !10 = !{}
 !11 = !{!12}
 !12 = distinct !DISubprogram(name: "Proc8", line: 180, isLocal: false, isDefinition: true, virtualIndex: 6, isOptimized: true, scopeLine: 185, file: !82, scope: !3, type: !13, function: void (i32*, [51 x i32]*, i32, i32)* @Proc8, variables: !22)

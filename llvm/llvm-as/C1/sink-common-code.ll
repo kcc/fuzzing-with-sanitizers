@@ -1,14 +1,14 @@
-; RUN: opt < %s -simplifycfg -S | FileCheck %s
+
 
 define zeroext i1 @test1(i1 zeroext %flag, i32 %blksA, i32 %blksB, i32 %nblks) {
 entry:
   br i1 %flag, label %if.then, label %if.else
 
-; CHECK-LABEL: test1
-; CHECK: add
-; CHECK: select
-; CHECK: icmp
-; CHECK-NOT: br
+
+
+
+
+
 if.then:
   %cmp = icmp uge i32 %blksA, %nblks
   %frombool1 = zext i1 %cmp to i8
@@ -30,11 +30,11 @@ define zeroext i1 @test2(i1 zeroext %flag, i32 %blksA, i32 %blksB, i32 %nblks) {
 entry:
   br i1 %flag, label %if.then, label %if.else
 
-; CHECK-LABEL: test2
-; CHECK: add
-; CHECK: select
-; CHECK: icmp
-; CHECK-NOT: br
+
+
+
+
+
 if.then:
   %cmp = icmp uge i32 %blksA, %nblks
   %frombool1 = zext i1 %cmp to i8
@@ -75,9 +75,9 @@ if.end:
   ret i32 %ret
 }
 
-; CHECK-LABEL: test3
-; CHECK: select
-; CHECK: call
-; CHECK: call
-; CHECK: add
-; CHECK-NOT: br
+
+
+
+
+
+

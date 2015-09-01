@@ -1,6 +1,6 @@
-; RUN: opt -S -instcombine <%s | FileCheck %s
-; rdar://problem/16165191
-; llvm.compiler.used functions should not be renamed
+
+
+
 
 target triple = "x86_64-apple-darwin11"
 
@@ -26,7 +26,7 @@ entry:
   ret i32 %ret
 }
 
-; CHECK: define {{.*}} @puts(
+
 define internal i32 @puts(i8* %s) {
 entry:
   %ret = call i32 @bar(i8* %s)

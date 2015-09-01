@@ -1,8 +1,8 @@
-; RUN: llc -march=aarch64 -o - %s
+
 target triple = "arm64-unknown-unknown"
 
-; Make sure we don't run into an assert in the aarch64 code selection when
-; DAGCombining fails.
+
+
 
 declare void @t()
 

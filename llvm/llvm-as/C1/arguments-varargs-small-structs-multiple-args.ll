@@ -1,88 +1,88 @@
-; RUN: llc --march=mips64 -mcpu=mips64r2 < %s | FileCheck %s
 
-; Generated from the C program:
-;  
-; #include <stdio.h>
-; #include <string.h>
-; 
-; struct SmallStruct_1b {
-;  char x1;
-; };
-; 
-; struct SmallStruct_2b {
-;  char x1;
-;  char x2;
-; };
-; 
-; struct SmallStruct_3b {
-;  char x1;
-;  char x2;
-;  char x3;
-; };
-; 
-; struct SmallStruct_4b {
-;  char x1;
-;  char x2;
-;  char x3;
-;  char x4;
-; };
-; 
-; struct SmallStruct_5b {
-;  char x1;
-;  char x2;
-;  char x3;
-;  char x4;
-;  char x5;
-; };
-; 
-; struct SmallStruct_6b {
-;  char x1;
-;  char x2;
-;  char x3;
-;  char x4;
-;  char x5;
-;  char x6;
-; };
-; 
-; struct SmallStruct_7b {
-;  char x1;
-;  char x2;
-;  char x3;
-;  char x4;
-;  char x5;
-;  char x6;
-;  char x7;
-; };
-; 
-; struct SmallStruct_8b {
-;  char x1;
-;  char x2;
-;  char x3;
-;  char x4;
-;  char x5;
-;  char x6;
-;  char x7;
-;  char x8;
-; };
-; 
-; struct SmallStruct_9b {
-;  char x1;
-;  char x2;
-;  char x3;
-;  char x4;
-;  char x5;
-;  char x6;
-;  char x7;
-;  char x8;
-;  char x9;
-; };
-; 
-; void varArgF_SmallStruct(char* c, ...);
-; 
-; void smallStruct_1b_x9(struct SmallStruct_1b* ss1,  struct SmallStruct_1b* ss2, struct SmallStruct_1b* ss3, struct SmallStruct_1b* ss4, struct SmallStruct_1b* ss5, struct SmallStruct_1b* ss6, struct SmallStruct_1b* ss7, struct SmallStruct_1b* ss8, struct SmallStruct_1b* ss9)
-; {
-;  varArgF_SmallStruct("", *ss1, *ss2, *ss3, *ss4, *ss5, *ss6, *ss7, *ss8, *ss9);
-; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %struct.SmallStruct_1b = type { i8 }
 
@@ -148,14 +148,14 @@ entry:
   %35 = load i8, i8* %34, align 1
   call void (i8*, ...) @varArgF_SmallStruct(i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str, i32 0, i32 0), i8 inreg %11, i8 inreg %14, i8 inreg %17, i8 inreg %20, i8 inreg %23, i8 inreg %26, i8 inreg %29, i8 inreg %32, i8 inreg %35)
   ret void
- ; CHECK-LABEL: smallStruct_1b_x9:
- ; CHECK: dsll $[[R1:[0-9]+]], $[[R2:[0-9]+]], 56
- ; CHECK: dsll $[[R1:[0-9]+]], $[[R2:[0-9]+]], 56
- ; CHECK: dsll $[[R1:[0-9]+]], $[[R2:[0-9]+]], 56
- ; CHECK: dsll $[[R1:[0-9]+]], $[[R2:[0-9]+]], 56
- ; CHECK: dsll $[[R1:[0-9]+]], $[[R2:[0-9]+]], 56
- ; CHECK: dsll $[[R1:[0-9]+]], $[[R2:[0-9]+]], 56
- ; CHECK: dsll $[[R1:[0-9]+]], $[[R2:[0-9]+]], 56
- ; CHECK: dsll $[[R1:[0-9]+]], $[[R2:[0-9]+]], 56
- ; CHECK: dsll $[[R1:[0-9]+]], $[[R2:[0-9]+]], 56
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 }

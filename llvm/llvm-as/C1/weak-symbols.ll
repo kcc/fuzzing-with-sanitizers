@@ -1,16 +1,16 @@
-; PR4738 - Test that the library call simplifier doesn't assume anything about
-; weak symbols.
-;
-; RUN: opt < %s -instcombine -S | FileCheck %s
+
+
+
+
 
 @real_init = weak_odr constant [2 x i8] c"y\00"
 @fake_init = weak constant [2 x i8] c"y\00"
 @.str = private constant [2 x i8] c"y\00"
 
 define i32 @foo() nounwind {
-; CHECK-LABEL: define i32 @foo(
-; CHECK: call i32 @strcmp
-; CHECK: ret i32 %temp1
+
+
+
 
 entry:
   %str1 = getelementptr inbounds [2 x i8], [2 x i8]* @fake_init, i64 0, i64 0
@@ -20,8 +20,8 @@ entry:
 }
 
 define i32 @bar() nounwind {
-; CHECK-LABEL: define i32 @bar(
-; CHECK: ret i32 0
+
+
 
 entry:
   %str1 = getelementptr inbounds [2 x i8], [2 x i8]* @real_init, i64 0, i64 0

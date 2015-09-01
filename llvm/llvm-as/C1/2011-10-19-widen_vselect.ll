@@ -1,11 +1,11 @@
-; RUN: llc < %s -march=x86-64 -mtriple=x86_64-unknown-linux-gnu -mcpu=corei7 | FileCheck %s
 
-; Make sure that we don't crash when legalizing vselect and vsetcc and that
-; we are able to generate vector blend instructions.
 
-; CHECK-LABEL: simple_widen
-; CHECK-NOT: blend
-; CHECK: ret
+
+
+
+
+
+
 define void @simple_widen() {
 entry:
   %0 = select <2 x i1> undef, <2 x float> undef, <2 x float> undef
@@ -13,9 +13,9 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: complex_inreg_work
-; CHECK: blend
-; CHECK: ret
+
+
+
 
 define void @complex_inreg_work() {
 entry:
@@ -25,9 +25,9 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: zero_test
-; CHECK: xorps %xmm0, %xmm0
-; CHECK: ret
+
+
+
 
 define void @zero_test() {
 entry:
@@ -36,9 +36,9 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: full_test
-; CHECK: blend
-; CHECK: ret
+
+
+
 
 define void @full_test() {
  entry:
@@ -48,7 +48,7 @@ define void @full_test() {
    %Cy119 = alloca <2 x float>
    br label %B1
 
- B1:                                               ; preds = %entry
+ B1:                                               
    %0 = load <2 x float>, <2 x float>* %Cy119
    %1 = fptosi <2 x float> %0 to <2 x i32>
    %2 = sitofp <2 x i32> %1 to <2 x float>

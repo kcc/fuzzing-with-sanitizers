@@ -1,10 +1,10 @@
-; RUN: opt < %s -globalopt -S | FileCheck %s
 
-; Don't get fooled by the inbounds keyword; it doesn't change
-; the computed address.
 
-; CHECK: @H = global i32 2
-; CHECK: @I = global i32 2
+
+
+
+
+
 
 @llvm.global_ctors = appending global [1 x { i32, void ()* }] [ { i32, void ()* } { i32 65535, void ()* @CTOR } ]
 @addr = external global i32

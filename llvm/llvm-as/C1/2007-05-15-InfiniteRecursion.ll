@@ -1,4 +1,4 @@
-; RUN: llc < %s
+
 
 	%struct.AVClass = type { i8*, i8* (i8*)*, %struct.AVOption* }
 	%struct.AVCodec = type { i8*, i32, i32, i32, i32 (%struct.AVCodecContext*)*, i32 (%struct.AVCodecContext*, i8*, i32, i8*)*, i32 (%struct.AVCodecContext*)*, i32 (%struct.AVCodecContext*, i8*, i32*, i8*, i32)*, i32, %struct.AVCodec*, void (%struct.AVCodecContext*)*, %struct.AVRational*, i32* }
@@ -30,61 +30,61 @@ define float @ff_rate_estimate_qscale(%struct.MpegEncContext* %s, i32 %dry_run) 
 entry:
 	br i1 false, label %cond_false163, label %cond_true135
 
-cond_true135:		; preds = %entry
+cond_true135:		
 	ret float 0.000000e+00
 
-cond_false163:		; preds = %entry
+cond_false163:		
 	br i1 false, label %cond_true203, label %cond_next211
 
-cond_true203:		; preds = %cond_false163
+cond_true203:		
 	ret float 0.000000e+00
 
-cond_next211:		; preds = %cond_false163
+cond_next211:		
 	br i1 false, label %cond_false243, label %cond_true220
 
-cond_true220:		; preds = %cond_next211
+cond_true220:		
 	br i1 false, label %cond_next237, label %cond_true225
 
-cond_true225:		; preds = %cond_true220
+cond_true225:		
 	ret float 0.000000e+00
 
-cond_next237:		; preds = %cond_true220
+cond_next237:		
 	br i1 false, label %cond_false785, label %cond_true735
 
-cond_false243:		; preds = %cond_next211
+cond_false243:		
 	ret float 0.000000e+00
 
-cond_true735:		; preds = %cond_next237
+cond_true735:		
 	ret float 0.000000e+00
 
-cond_false785:		; preds = %cond_next237
+cond_false785:		
 	br i1 false, label %cond_true356.i.preheader, label %bb359.i
 
-cond_true356.i.preheader:		; preds = %cond_false785
-	%tmp116117.i = zext i8 0 to i32		; <i32> [#uses=1]
+cond_true356.i.preheader:		
+	%tmp116117.i = zext i8 0 to i32		
 	br i1 false, label %cond_false.i, label %cond_next159.i
 
-cond_false.i:		; preds = %cond_true356.i.preheader
+cond_false.i:		
 	ret float 0.000000e+00
 
-cond_next159.i:		; preds = %cond_true356.i.preheader
-	%tmp178.i = add i32 %tmp116117.i, -128		; <i32> [#uses=2]
-	%tmp181.i = mul i32 %tmp178.i, %tmp178.i		; <i32> [#uses=1]
-	%tmp181182.i = sitofp i32 %tmp181.i to float		; <float> [#uses=1]
-	%tmp199200.pn.in.i = fmul float %tmp181182.i, 0.000000e+00		; <float> [#uses=1]
-	%tmp199200.pn.i = fpext float %tmp199200.pn.in.i to double		; <double> [#uses=1]
-	%tmp201.pn.i = fsub double 1.000000e+00, %tmp199200.pn.i		; <double> [#uses=1]
-	%factor.2.in.i = fmul double 0.000000e+00, %tmp201.pn.i		; <double> [#uses=1]
-	%factor.2.i = fptrunc double %factor.2.in.i to float		; <float> [#uses=1]
+cond_next159.i:		
+	%tmp178.i = add i32 %tmp116117.i, -128		
+	%tmp181.i = mul i32 %tmp178.i, %tmp178.i		
+	%tmp181182.i = sitofp i32 %tmp181.i to float		
+	%tmp199200.pn.in.i = fmul float %tmp181182.i, 0.000000e+00		
+	%tmp199200.pn.i = fpext float %tmp199200.pn.in.i to double		
+	%tmp201.pn.i = fsub double 1.000000e+00, %tmp199200.pn.i		
+	%factor.2.in.i = fmul double 0.000000e+00, %tmp201.pn.i		
+	%factor.2.i = fptrunc double %factor.2.in.i to float		
 	br i1 false, label %cond_next312.i, label %cond_false222.i
 
-cond_false222.i:		; preds = %cond_next159.i
+cond_false222.i:		
 	ret float 0.000000e+00
 
-cond_next312.i:		; preds = %cond_next159.i
-	%tmp313314.i = fpext float %factor.2.i to double		; <double> [#uses=0]
+cond_next312.i:		
+	%tmp313314.i = fpext float %factor.2.i to double		
 	ret float 0.000000e+00
 
-bb359.i:		; preds = %cond_false785
+bb359.i:		
 	ret float 0.000000e+00
 }

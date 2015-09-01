@@ -1,11 +1,11 @@
-; RUN: opt < %s -basicaa -slp-vectorizer -dce -S -mtriple=xcore  | FileCheck %s
+
 
 target datalayout = "e-p:32:32:32-a0:0:32-n32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:32-f16:16:32-f32:32:32-f64:32:32"
 target triple = "xcore"
 
-; Simple 3-pair chain with loads and stores
-; CHECK: test1
-; CHECK-NOT: <2 x double>
+
+
+
 define void @test1(double* %a, double* %b, double* %c) {
 entry:
   %i0 = load double, double* %a, align 8

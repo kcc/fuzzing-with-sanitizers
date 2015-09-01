@@ -1,13 +1,13 @@
-; RUN: llc < %s -march=r600 -mcpu=cedar | FileCheck %s
 
-;CHECK:	EXPORT T{{[0-9]}}.XYZW
-;CHECK:	EXPORT T{{[0-9]}}.0000
-;CHECK: EXPORT T{{[0-9]}}.0000
-;CHECK: EXPORT T{{[0-9]}}.0XYZ
-;CHECK: EXPORT T{{[0-9]}}.XYZW
-;CHECK: EXPORT T{{[0-9]}}.YZ00
-;CHECK: EXPORT T{{[0-9]}}.0000
-;CHECK: EXPORT T{{[0-9]}}.0000
+
+
+
+
+
+
+
+
+
 
 
 define void @main(<4 x float> inreg %reg0, <4 x float> inreg %reg1) #0 {

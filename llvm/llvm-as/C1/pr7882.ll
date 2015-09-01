@@ -1,12 +1,12 @@
-; RUN: llc < %s -march=x86 -mtriple=i686-apple-darwin -pre-RA-sched=fast \
-; RUN: | FileCheck %s
-; make sure scheduler honors the flags clobber.  PR 7882.
+
+
+
 
 define i32 @main(i32 %argc, i8** %argv) nounwind
 {
 entry:
-; CHECK: InlineAsm End
-; CHECK: cmpl
+
+
     %res = icmp slt i32 1, %argc
     %tmp = call i32 asm sideeffect alignstack
         "push $$0

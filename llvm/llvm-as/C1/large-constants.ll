@@ -1,4 +1,4 @@
-; RUN: llc < %s -mtriple=x86_64-darwin -mcpu=corei7 | grep movabsq | count 3
+
 
 define i64 @constant_hoisting(i64 %o0, i64 %o1, i64 %o2, i64 %o3, i64 %o4, i64 %o5) {
 entry:

@@ -1,11 +1,11 @@
-; RUN: llc < %s -march=x86 -mcpu=penryn | FileCheck %s
 
-; Shows a dag combine bug that will generate an illegal build vector
-; with v2i64 build_vector i32, i32.
 
-; CHECK-LABEL: test:
-; CHECK: unpcklpd
-; CHECK: movapd
+
+
+
+
+
+
 define void @test(<2 x double>* %dst, <4 x double> %src) nounwind {
 entry:
         %tmp7.i = shufflevector <4 x double> %src, <4 x double> undef, <2 x i32> < i32 0, i32 2 >
@@ -13,8 +13,8 @@ entry:
         ret void
 }
 
-; CHECK-LABEL: test2:
-; CHECK: movdqa
+
+
 define void @test2(<4 x i16>* %src, <4 x i32>* %dest) nounwind {
 entry:
         %tmp1 = load <4 x i16>, <4 x i16>* %src

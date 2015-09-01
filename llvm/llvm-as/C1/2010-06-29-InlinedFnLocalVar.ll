@@ -1,12 +1,12 @@
-; RUN: %llc_dwarf -O2 %s -o - | FileCheck %s
-; Check struct X for dead variable xyz from inlined function foo.
-
-; CHECK: section_info
-; CHECK:	DW_TAG_structure_type
-; CHECK-NEXT:	DW_AT_name
 
 
-@i = common global i32 0                          ; <i32*> [#uses=2]
+
+
+
+
+
+
+@i = common global i32 0                          
 
 declare void @llvm.dbg.declare(metadata, metadata, metadata) nounwind readnone
 
@@ -14,10 +14,10 @@ declare void @llvm.dbg.value(metadata, i64, metadata, metadata) nounwind readnon
 
 define i32 @bar() nounwind ssp {
 entry:
-  %0 = load i32, i32* @i, align 4, !dbg !17            ; <i32> [#uses=2]
+  %0 = load i32, i32* @i, align 4, !dbg !17            
   tail call void @llvm.dbg.value(metadata i32 %0, i64 0, metadata !59, metadata !DIExpression()), !dbg !19
   tail call void @llvm.dbg.declare(metadata !29, metadata !60, metadata !DIExpression()), !dbg !21
-  %1 = mul nsw i32 %0, %0, !dbg !22               ; <i32> [#uses=2]
+  %1 = mul nsw i32 %0, %0, !dbg !22               
   store i32 %1, i32* @i, align 4, !dbg !17
   ret i32 %1, !dbg !23
 }

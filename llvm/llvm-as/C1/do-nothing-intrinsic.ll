@@ -1,5 +1,5 @@
-; RUN: opt < %s -basiccg
-; PR13903
+
+
 
 define void @main() personality i8 0 {
   invoke void @llvm.donothing()

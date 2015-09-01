@@ -1,5 +1,5 @@
-; RUN: opt < %s -instcombine -S | FileCheck %s
-; CHECK: bitcast
+
+
 
 define void @foo(<16 x i8> %a, <16 x i8> %b, <4 x i32>* %c) {
   %aa = bitcast <16 x i8> %a to <4 x i32>

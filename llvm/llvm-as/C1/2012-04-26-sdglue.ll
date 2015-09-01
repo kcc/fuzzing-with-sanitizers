@@ -1,17 +1,17 @@
-; RUN: llc < %s -mtriple=x86_64-apple-darwin -mcpu=core-avx2 -mattr=+avx | FileCheck %s
-; rdar://11314175: SD Scheduler, BuildSchedUnits assert:
-;                  N->getNodeId() == -1 && "Node already inserted!
 
-; It's hard to test for the ISEL condition because CodeGen optimizes
-; away the bugpointed code. Just ensure the basics are still there.
-;CHECK-LABEL: func:
-;CHECK: vxorps
-;CHECK: vpshufd
-;CHECK: vpbroadcastd
-;CHECK: vinserti128
-;CHECK: vmulps
-;CHECK: vmulps
-;CHECK: ret
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @func() nounwind ssp {
   %tmp = load <4 x float>, <4 x float>* null, align 1

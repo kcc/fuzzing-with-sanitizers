@@ -1,7 +1,7 @@
-; RUN: llc < %s -march=x86 > %t
-; RUN: grep dec %t | count 1
-; RUN: not grep test %t
-; RUN: not grep cmp %t
+
+
+
+
 
 define void @foo(i32 %n, double* nocapture %p) nounwind {
 	br label %bb

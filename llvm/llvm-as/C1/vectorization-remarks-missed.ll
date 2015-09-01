@@ -1,56 +1,56 @@
-; RUN: opt < %s -loop-vectorize -S -pass-remarks-missed='loop-vectorize' -pass-remarks-analysis='loop-vectorize' 2>&1 | FileCheck %s
 
-; C/C++ code for tests
-; void test(int *A, int Length) {
-; #pragma clang loop vectorize(enable) interleave(enable)
-;   for (int i = 0; i < Length; i++) {
-;     A[i] = i;
-;     if (A[i] > Length)
-;       break;
-;   }
-; }
 
-; void test_disabled(int *A, int Length) {
-; #pragma clang loop vectorize(disable) interleave(disable)
-;   for (int i = 0; i < Length; i++)
-;     A[i] = i;
-; }
 
-; void test_array_bounds(int *A, int *B, int Length) {
-; #pragma clang loop vectorize(enable)
-;   for (int i = 0; i < Length; i++)
-;     A[i] = A[B[i]];
-; }
 
-; File, line, and column should match those specified in the metadata
-; CHECK: remark: source.cpp:4:5: loop not vectorized: could not determine number of loop iterations
-; CHECK: remark: source.cpp:4:5: loop not vectorized: use -Rpass-analysis=loop-vectorize for more info
-; CHECK: remark: source.cpp:13:5: loop not vectorized: vectorization and interleaving are explicitly disabled, or vectorize width and interleave count are both set to 1
-; CHECK: remark: source.cpp:19:5: loop not vectorized: cannot identify array bounds
-; CHECK: remark: source.cpp:19:5: loop not vectorized: use -Rpass-analysis=loop-vectorize for more info
-; CHECK: warning: source.cpp:19:5: loop not vectorized: failed explicitly specified loop vectorization
 
-; CHECK: _Z4testPii
-; CHECK-NOT: x i32>
-; CHECK: ret
 
-; CHECK: _Z13test_disabledPii
-; CHECK-NOT: x i32>
-; CHECK: ret
 
-; CHECK: _Z17test_array_boundsPiS_i
-; CHECK-NOT: x i32>
-; CHECK: ret
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 
-; Function Attrs: nounwind optsize ssp uwtable
+
 define void @_Z4testPii(i32* nocapture %A, i32 %Length) #0 {
 entry:
   %cmp10 = icmp sgt i32 %Length, 0, !dbg !12
   br i1 %cmp10, label %for.body, label %for.end, !dbg !12, !llvm.loop !14
 
-for.body:                                         ; preds = %entry, %for.body
+for.body:                                         
   %indvars.iv = phi i64 [ %indvars.iv.next, %for.body ], [ 0, %entry ]
   %arrayidx = getelementptr inbounds i32, i32* %A, i64 %indvars.iv, !dbg !16
   %0 = trunc i64 %indvars.iv to i32, !dbg !16
@@ -62,17 +62,17 @@ for.body:                                         ; preds = %entry, %for.body
   %or.cond = and i1 %cmp3, %cmp, !dbg !22
   br i1 %or.cond, label %for.body, label %for.end, !dbg !22
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void, !dbg !24
 }
 
-; Function Attrs: nounwind optsize ssp uwtable
+
 define void @_Z13test_disabledPii(i32* nocapture %A, i32 %Length) #0 {
 entry:
   %cmp4 = icmp sgt i32 %Length, 0, !dbg !25
   br i1 %cmp4, label %for.body, label %for.end, !dbg !25, !llvm.loop !27
 
-for.body:                                         ; preds = %entry, %for.body
+for.body:                                         
   %indvars.iv = phi i64 [ %indvars.iv.next, %for.body ], [ 0, %entry ]
   %arrayidx = getelementptr inbounds i32, i32* %A, i64 %indvars.iv, !dbg !30
   %0 = trunc i64 %indvars.iv to i32, !dbg !30
@@ -82,20 +82,20 @@ for.body:                                         ; preds = %entry, %for.body
   %exitcond = icmp eq i32 %lftr.wideiv, %Length, !dbg !25
   br i1 %exitcond, label %for.end, label %for.body, !dbg !25, !llvm.loop !27
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void, !dbg !31
 }
 
-; Function Attrs: nounwind optsize ssp uwtable
+
 define void @_Z17test_array_boundsPiS_i(i32* nocapture %A, i32* nocapture readonly %B, i32 %Length) #0 {
 entry:
   %cmp9 = icmp sgt i32 %Length, 0, !dbg !32
   br i1 %cmp9, label %for.body.preheader, label %for.end, !dbg !32, !llvm.loop !34
 
-for.body.preheader:                               ; preds = %entry
+for.body.preheader:                               
   br label %for.body, !dbg !35
 
-for.body:                                         ; preds = %for.body.preheader, %for.body
+for.body:                                         
   %indvars.iv = phi i64 [ %indvars.iv.next, %for.body ], [ 0, %for.body.preheader ]
   %arrayidx = getelementptr inbounds i32, i32* %B, i64 %indvars.iv, !dbg !35
   %0 = load i32, i32* %arrayidx, align 4, !dbg !35, !tbaa !18
@@ -109,10 +109,10 @@ for.body:                                         ; preds = %for.body.preheader,
   %exitcond = icmp eq i32 %lftr.wideiv, %Length, !dbg !32
   br i1 %exitcond, label %for.end.loopexit, label %for.body, !dbg !32, !llvm.loop !34
 
-for.end.loopexit:                                 ; preds = %for.body
+for.end.loopexit:                                 
   br label %for.end
 
-for.end:                                          ; preds = %for.end.loopexit, %entry
+for.end:                                          
   ret void, !dbg !36
 }
 

@@ -1,5 +1,5 @@
-; RUN: llc < %s
-; PR5495
+
+
 
 %"struct.std::__ctype_abstract_base<wchar_t>" = type { %"struct.std::locale::facet" }
 %"struct.std::basic_ios<char,std::char_traits<char> >" = type { %"struct.std::ios_base", %"struct.std::basic_ostream<char,std::char_traits<char> >"*, i8, i8, %"struct.std::basic_streambuf<char,std::char_traits<char> >"*, %"struct.std::ctype<char>"*, %"struct.std::__ctype_abstract_base<wchar_t>"*, %"struct.std::__ctype_abstract_base<wchar_t>"* }
@@ -22,53 +22,53 @@ declare %"struct.std::ctype<char>"* @_ZSt9use_facetISt5ctypeIcEERKT_RKSt6locale(
 define %"struct.std::basic_istream<char,std::char_traits<char> >"* @_ZStrsIcSt11char_traitsIcEERSt13basic_istreamIT_T0_ES6_PS3_(%"struct.std::basic_istream<char,std::char_traits<char> >"* %__in, i8* nocapture %__s) personality i32 (...)* @__gxx_personality_v0 {
 entry:
   %0 = invoke %"struct.std::ctype<char>"* @_ZSt9use_facetISt5ctypeIcEERKT_RKSt6locale(%"struct.std::locale"* undef)
-          to label %invcont8 unwind label %lpad74 ; <%"struct.std::ctype<char>"*> [#uses=0]
+          to label %invcont8 unwind label %lpad74 
 
-invcont8:                                         ; preds = %entry
+invcont8:                                         
   %1 = invoke i32 undef(%"struct.std::basic_streambuf<char,std::char_traits<char> >"* undef)
-          to label %bb26.preheader unwind label %lpad ; <i32> [#uses=0]
+          to label %bb26.preheader unwind label %lpad 
 
-bb26.preheader:                                   ; preds = %invcont8
+bb26.preheader:                                   
   br label %invcont38
 
-bb1.i100:                                         ; preds = %invcont38
-  %2 = add nsw i32 1, %__extracted.0  ; <i32> [#uses=3]
+bb1.i100:                                         
+  %2 = add nsw i32 1, %__extracted.0  
   br i1 undef, label %bb.i97, label %bb1.i
 
-bb.i97:                                           ; preds = %bb1.i100
+bb.i97:                                           
   br label %invcont38
 
-bb1.i:                                            ; preds = %bb1.i100
+bb1.i:                                            
   %3 = invoke i32 undef(%"struct.std::basic_streambuf<char,std::char_traits<char> >"* undef)
-          to label %invcont38 unwind label %lpad ; <i32> [#uses=0]
+          to label %invcont38 unwind label %lpad 
 
-invcont24:                                        ; preds = %invcont38
+invcont24:                                        
   %4 = invoke i32 undef(%"struct.std::basic_streambuf<char,std::char_traits<char> >"* undef)
-          to label %_ZNSt15basic_streambufIcSt11char_traitsIcEE6sbumpcEv.exit.i unwind label %lpad ; <i32> [#uses=0]
+          to label %_ZNSt15basic_streambufIcSt11char_traitsIcEE6sbumpcEv.exit.i unwind label %lpad 
 
-_ZNSt15basic_streambufIcSt11char_traitsIcEE6sbumpcEv.exit.i: ; preds = %invcont24
+_ZNSt15basic_streambufIcSt11char_traitsIcEE6sbumpcEv.exit.i: 
   br i1 undef, label %invcont25, label %bb.i93
 
-bb.i93:                                           ; preds = %_ZNSt15basic_streambufIcSt11char_traitsIcEE6sbumpcEv.exit.i
+bb.i93:                                           
   %5 = invoke i32 undef(%"struct.std::basic_streambuf<char,std::char_traits<char> >"* undef)
-          to label %invcont25 unwind label %lpad ; <i32> [#uses=0]
+          to label %invcont25 unwind label %lpad 
 
-invcont25:                                        ; preds = %bb.i93, %_ZNSt15basic_streambufIcSt11char_traitsIcEE6sbumpcEv.exit.i
+invcont25:                                        
   br label %invcont38
 
-invcont38:                                        ; preds = %invcont25, %bb1.i, %bb.i97, %bb26.preheader
-  %__extracted.0 = phi i32 [ 0, %bb26.preheader ], [ undef, %invcont25 ], [ %2, %bb.i97 ], [ %2, %bb1.i ] ; <i32> [#uses=1]
+invcont38:                                        
+  %__extracted.0 = phi i32 [ 0, %bb26.preheader ], [ undef, %invcont25 ], [ %2, %bb.i97 ], [ %2, %bb1.i ] 
   br i1 false, label %bb1.i100, label %invcont24
 
-lpad:                                             ; preds = %bb.i93, %invcont24, %bb1.i, %invcont8
-  %__extracted.1 = phi i32 [ 0, %invcont8 ], [ %2, %bb1.i ], [ undef, %bb.i93 ], [ undef, %invcont24 ] ; <i32> [#uses=0]
+lpad:                                             
+  %__extracted.1 = phi i32 [ 0, %invcont8 ], [ %2, %bb1.i ], [ undef, %bb.i93 ], [ undef, %invcont24 ] 
   %lpad1 = landingpad { i8*, i32 }
             catch i8* null
   %eh_ptr = extractvalue { i8*, i32 } %lpad1, 0
-  %6 = call i8* @__cxa_begin_catch(i8* %eh_ptr) nounwind ; <i8*> [#uses=0]
+  %6 = call i8* @__cxa_begin_catch(i8* %eh_ptr) nounwind 
   unreachable
 
-lpad74:                                           ; preds = %entry
+lpad74:                                           
   %lpad2 = landingpad { i8*, i32 }
             cleanup
   unreachable

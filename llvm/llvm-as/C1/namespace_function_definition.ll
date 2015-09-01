@@ -1,24 +1,24 @@
-; REQUIRES: object-emission
 
-; RUN: %llc_dwarf -O0 -filetype=obj -dwarf-linkage-names=Enable < %s | llvm-dwarfdump -debug-dump=info - | FileCheck %s
 
-; Generated from clang with the following source:
-; namespace ns {
-; void func() {
-; }
-; }
 
-; CHECK: DW_TAG_namespace
-; CHECK-NEXT: DW_AT_name {{.*}} "ns"
-; CHECK: DW_TAG_subprogram
-; CHECK-NOT: DW_TAG
-; CHECK:   DW_AT_low_pc
-; CHECK-NOT: DW_TAG
-; CHECK:   DW_AT_linkage_name {{.*}} "_ZN2ns4funcEv"
-; CHECK: NULL
-; CHECK: NULL
 
-; Function Attrs: nounwind uwtable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @_ZN2ns4funcEv() #0 {
 entry:
   ret void, !dbg !11

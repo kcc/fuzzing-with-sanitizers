@@ -1,25 +1,25 @@
-; RUN: llc -march=r600 -mcpu=cypress < %s | FileCheck -check-prefix=EG %s
-
-;
-; kernel void combine_vloads(global char8* src, global char8* result) {
-;   for (int i = 0; i < 1024; ++i)
-;     result[i] = src[0] + src[1] + src[2] + src[3];
-; }
-;
 
 
-; 128-bit loads instead of many 8-bit
-; EG-LABEL: {{^}}combine_vloads:
-; EG: VTX_READ_128
-; EG: VTX_READ_128
+
+
+
+
+
+
+
+
+
+
+
+
 define void @combine_vloads(<8 x i8> addrspace(1)* nocapture %src, <8 x i8> addrspace(1)* nocapture %result) nounwind {
 entry:
   br label %for.body
 
-for.exit:                                         ; preds = %for.body
+for.exit:                                         
   ret void
 
-for.body:                                         ; preds = %for.body, %entry
+for.body:                                         
   %i.01 = phi i32 [ 0, %entry ], [ %tmp19, %for.body ]
   %arrayidx_v4 = bitcast <8 x i8> addrspace(1)* %src to <32 x i8> addrspace(1)*
   %0 = bitcast <32 x i8> addrspace(1)* %arrayidx_v4 to <8 x i32> addrspace(1)*

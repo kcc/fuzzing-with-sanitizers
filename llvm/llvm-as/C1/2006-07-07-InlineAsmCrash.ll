@@ -1,5 +1,5 @@
-; RUN: opt < %s -globalopt -disable-output
-; PR820
+
+
 target datalayout = "e-p:32:32"
 target triple = "i686-pc-linux-gnu"
 	%struct..0FileDescriptor = type { i32 }
@@ -14,9 +14,9 @@ target triple = "i686-pc-linux-gnu"
 	%"struct.std::_Vector_base<int,std::allocator<int> >" = type { %"struct.std::_Vector_base<int,std::allocator<int> >::_Vector_impl" }
 	%"struct.std::_Vector_base<int,std::allocator<int> >::_Vector_impl" = type { i32*, i32*, i32* }
 	%"struct.std::vector<int,std::allocator<int> >" = type { %"struct.std::_Vector_base<int,std::allocator<int> >" }
-@registry_lock = external global %struct..0FileDescriptor		; <%struct..0FileDescriptor*> [#uses=0]
-@_ZN61FLAG__foo_int32_44FLAGS_E = external global %"struct.FlagRegisterer<bool>"		; <%"struct.FlagRegisterer<bool>"*> [#uses=0]
-@llvm.global_ctors = appending global [20 x { i32, void ()* }] [ { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN62FLAG__foo_string_10FLAGS_E }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN60FLAG__foo_bool_19FLAGS_E }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZNK5Bzh4Enum13is_contiguousEv }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN62FLAG__foo_string_17FLAGS_E }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN61FLAG__foo_int32_21FLAGS_E }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN7ScannerC2Ev }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__Z11StripStringPSsPKcc }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZNK9__gnu_cxx4hashI11StringPieceEclERKS1_ }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN8Hasher325ResetEj }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__Z25ACLRv }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN61FLAG__foo_int64_25FLAGS_E }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN61FLAG__foo_int32_7FLAGS_E }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN62FLAG__foo_string_18FLAGS_E }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN62FLAG__foo_string_17FLAGS_E }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN61FLAG__foo_int32_25FLAGS_E }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I_eventbuf }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN61FLAG__foo_int32_26FLAGS_E }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN62FLAG__foo_string_16FLAGS_E }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN17InitializerC2EPKcS1_PFvvE }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__checker_bcad_variable } ]		; <[20 x { i32, void ()* }]*> [#uses=0]
+@registry_lock = external global %struct..0FileDescriptor		
+@_ZN61FLAG__foo_int32_44FLAGS_E = external global %"struct.FlagRegisterer<bool>"		
+@llvm.global_ctors = appending global [20 x { i32, void ()* }] [ { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN62FLAG__foo_string_10FLAGS_E }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN60FLAG__foo_bool_19FLAGS_E }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZNK5Bzh4Enum13is_contiguousEv }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN62FLAG__foo_string_17FLAGS_E }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN61FLAG__foo_int32_21FLAGS_E }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN7ScannerC2Ev }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__Z11StripStringPSsPKcc }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZNK9__gnu_cxx4hashI11StringPieceEclERKS1_ }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN8Hasher325ResetEj }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__Z25ACLRv }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN61FLAG__foo_int64_25FLAGS_E }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN61FLAG__foo_int32_7FLAGS_E }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN62FLAG__foo_string_18FLAGS_E }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN62FLAG__foo_string_17FLAGS_E }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN61FLAG__foo_int32_25FLAGS_E }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I_eventbuf }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN61FLAG__foo_int32_26FLAGS_E }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN62FLAG__foo_string_16FLAGS_E }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN17InitializerC2EPKcS1_PFvvE }, { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__checker_bcad_variable } ]		
 
 declare void @_GLOBAL__I__ZN62FLAG__foo_string_10FLAGS_E()
 
@@ -76,7 +76,7 @@ declare void @_GLOBAL__I__ZN61FLAG__foo_int64_25FLAGS_E()
 
 define void @_Z14CASPViii() {
 entry:
-	%tmp3 = call i32 asm sideeffect "lock; cmpxchg $1,$2", "={ax},q,m,0,~{dirflag},~{fpsr},~{flags},~{memory}"( i32 0, i32* null, i32 0 )		; <i32> [#uses=0]
+	%tmp3 = call i32 asm sideeffect "lock
 	unreachable
 }
 
@@ -102,24 +102,24 @@ entry:
 
 define void @_Z41__static_initialization_and_destruction_0ii1662(i32 %__initialize_p, i32 %__priority) {
 entry:
-	%__initialize_p_addr = alloca i32		; <i32*> [#uses=2]
-	%__priority_addr = alloca i32		; <i32*> [#uses=2]
+	%__initialize_p_addr = alloca i32		
+	%__priority_addr = alloca i32		
 	store i32 %__initialize_p, i32* %__initialize_p_addr
 	store i32 %__priority, i32* %__priority_addr
-	%tmp = load i32, i32* %__priority_addr		; <i32> [#uses=1]
-	%tmp.upgrd.1 = icmp eq i32 %tmp, 65535		; <i1> [#uses=1]
+	%tmp = load i32, i32* %__priority_addr		
+	%tmp.upgrd.1 = icmp eq i32 %tmp, 65535		
 	br i1 %tmp.upgrd.1, label %cond_true, label %cond_next14
 
-cond_true:		; preds = %entry
-	%tmp8 = load i32, i32* %__initialize_p_addr		; <i32> [#uses=1]
-	%tmp9 = icmp eq i32 %tmp8, 1		; <i1> [#uses=1]
+cond_true:		
+	%tmp8 = load i32, i32* %__initialize_p_addr		
+	%tmp9 = icmp eq i32 %tmp8, 1		
 	br i1 %tmp9, label %cond_true10, label %cond_next14
 
-cond_true10:		; preds = %cond_true
+cond_true10:		
 	call void @_ZN14FlagRegistererIiEC1EPKcRK15FlagDescriptionIiE( )
 	ret void
 
-cond_next14:		; preds = %cond_true, %entry
+cond_next14:		
 	ret void
 }
 

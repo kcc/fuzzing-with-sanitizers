@@ -1,54 +1,54 @@
-; RUN: llc -filetype=asm -O0 -mtriple=x86_64-linux-gnu < %s | FileCheck %s
-; RUN: llc -filetype=obj -O0 %s -mtriple=x86_64-linux-gnu -o %t
-; RUN: llvm-dwarfdump %t | FileCheck %s -check-prefix=CHECK-DWARF
 
-; RUN: llc -filetype=asm -O0 -mtriple=x86_64-apple-darwin < %s | FileCheck --check-prefix=DARWIN-ASM %s
-; RUN: llc -filetype=obj %s -mtriple=x86_64-apple-darwin -o %t2
-; RUN: llvm-dwarfdump %t2 | FileCheck %s -check-prefix=DARWIN-DWARF
 
-; Testing case generated from:
-; clang++ tu1.cpp tu2.cpp -g -emit-llvm -c
-; llvm-link tu1.bc tu2.bc -o tu12.ll -S
-; cat hdr.h
-; struct foo {
-; };
-; cat tu1.cpp
-; #include "hdr.h"
-; foo f;
-; cat tu2.cpp
-; #include "hdr.h"
-; foo g;
 
-; Make sure we use relocation for ref_addr on non-darwin platforms.
-; CHECK: DW_TAG_compile_unit
-; CHECK: DW_TAG_variable
-; CHECK: .long [[TYPE:.*]] # DW_AT_type
-; CHECK: DW_TAG_structure_type
-; CHECK: cu_begin1
-; CHECK: DW_TAG_compile_unit
-; CHECK-NOT: DW_TAG_structure_type
-; This variable's type is in the 1st CU.
-; CHECK: DW_TAG_variable
-; Make sure this is relocatable.
-; CHECK: .quad .Lsection_info+[[TYPE]] # DW_AT_type
-; CHECK-NOT: DW_TAG_structure_type
-; CHECK: .section
 
-; test that we don't create useless labels
-; DARWIN-ASM: .long [[TYPE:.*]] ## DW_AT_type
-; DARWIN-ASM: .quad [[TYPE]] ## DW_AT_type
 
-; CHECK-DWARF: DW_TAG_compile_unit
-; CHECK-DWARF: 0x[[ADDR:.*]]: DW_TAG_structure_type
-; CHECK-DWARF: DW_TAG_compile_unit
-; CHECK-DWARF: DW_TAG_variable
-; CHECK-DWARF: DW_AT_type [DW_FORM_ref_addr] {{.*}}[[ADDR]])
 
-; DARWIN-DWARF: DW_TAG_compile_unit
-; DARWIN-DWARF: 0x[[ADDR:.*]]: DW_TAG_structure_type
-; DARWIN-DWARF: DW_TAG_compile_unit
-; DARWIN-DWARF: DW_TAG_variable
-; DARWIN-DWARF: DW_AT_type [DW_FORM_ref_addr] {{.*}}[[ADDR]])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %struct.foo = type { i8 }
 

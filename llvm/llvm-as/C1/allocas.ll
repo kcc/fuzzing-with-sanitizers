@@ -1,4 +1,4 @@
-; RUN: opt -objc-arc -S < %s | FileCheck %s
+
 
 declare i8* @objc_retain(i8*)
 declare i8* @objc_retainAutoreleasedReturnValue(i8*)
@@ -28,28 +28,28 @@ declare void @llvm.dbg.value(metadata, i64, metadata, metadata)
 declare i8* @objc_msgSend(i8*, i8*, ...)
 
 
-; In the presence of allocas, unconditionally remove retain/release pairs only
-; if they are known safe in both directions. This prevents matching up an inner
-; retain with the boundary guarding release in the following situation:
-; 
-; %A = alloca
-; retain(%x)
-; retain(%x) <--- Inner Retain
-; store %x, %A
-; %y = load %A
-; ... DO STUFF ...
-; release(%y)
-; release(%x) <--- Guarding Release
-;
-; rdar://13750319
 
-; CHECK: define void @test1a(i8* %x)
-; CHECK: @objc_retain(i8* %x)
-; CHECK: @objc_retain(i8* %x)
-; CHECK: @objc_release(i8* %y)
-; CHECK: @objc_release(i8* %x)
-; CHECK: ret void
-; CHECK: }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @test1a(i8* %x) {
 entry:
   %A = alloca i8*
@@ -64,13 +64,13 @@ entry:
   ret void
 }
 
-; CHECK: define void @test1b(i8* %x)
-; CHECK: @objc_retain(i8* %x)
-; CHECK: @objc_retain(i8* %x)
-; CHECK: @objc_release(i8* %y)
-; CHECK: @objc_release(i8* %x)
-; CHECK: ret void
-; CHECK: }
+
+
+
+
+
+
+
 define void @test1b(i8* %x) {
 entry:
   %A = alloca i8*
@@ -87,13 +87,13 @@ entry:
 }
 
 
-; CHECK: define void @test1c(i8* %x)
-; CHECK: @objc_retain(i8* %x)
-; CHECK: @objc_retain(i8* %x)
-; CHECK: @objc_release(i8* %y)
-; CHECK: @objc_release(i8* %x)
-; CHECK: ret void
-; CHECK: }
+
+
+
+
+
+
+
 define void @test1c(i8* %x) {
 entry:
   %A = alloca i8*, i32 3
@@ -110,13 +110,13 @@ entry:
 }
 
 
-; CHECK: define void @test1d(i8* %x)
-; CHECK: @objc_retain(i8* %x)
-; CHECK: @objc_retain(i8* %x)
-; CHECK: @objc_release(i8* %y)
-; CHECK: @objc_release(i8* %x)
-; CHECK: ret void
-; CHECK: }
+
+
+
+
+
+
+
 define void @test1d(i8* %x) {
 entry:
   br i1 undef, label %use_allocaA, label %use_allocaB
@@ -143,13 +143,13 @@ exit:
   ret void
 }
 
-; CHECK: define void @test1e(i8* %x)
-; CHECK: @objc_retain(i8* %x)
-; CHECK: @objc_retain(i8* %x)
-; CHECK: @objc_release(i8* %y)
-; CHECK: @objc_release(i8* %x)
-; CHECK: ret void
-; CHECK: }
+
+
+
+
+
+
+
 define void @test1e(i8* %x) {
 entry:
   br i1 undef, label %use_allocaA, label %use_allocaB
@@ -176,13 +176,13 @@ exit:
   ret void
 }
 
-; CHECK: define void @test1f(i8* %x)
-; CHECK: @objc_retain(i8* %x)
-; CHECK: @objc_retain(i8* %x)
-; CHECK: @objc_release(i8* %y)
-; CHECK: @objc_release(i8* %x)
-; CHECK: ret void
-; CHECK: }
+
+
+
+
+
+
+
 define void @test1f(i8* %x) {
 entry:
   %allocaOne = alloca i8*
@@ -199,17 +199,17 @@ entry:
   ret void
 }
 
-; Make sure that if a store is in a different basic block we handle known safe
-; conservatively.
 
 
-; CHECK: define void @test2a(i8* %x)
-; CHECK: @objc_retain(i8* %x)
-; CHECK: @objc_retain(i8* %x)
-; CHECK: @objc_release(i8* %y)
-; CHECK: @objc_release(i8* %x)
-; CHECK: ret void
-; CHECK: }
+
+
+
+
+
+
+
+
+
 define void @test2a(i8* %x) {
 entry:
   %A = alloca i8*
@@ -233,13 +233,13 @@ bb3:
   ret void
 }
 
-; CHECK: define void @test2b(i8* %x)
-; CHECK: @objc_retain(i8* %x)
-; CHECK: @objc_retain(i8* %x)
-; CHECK: @objc_release(i8* %y)
-; CHECK: @objc_release(i8* %x)
-; CHECK: ret void
-; CHECK: }
+
+
+
+
+
+
+
 define void @test2b(i8* %x) {
 entry:
   %A = alloca i8*
@@ -265,13 +265,13 @@ bb3:
   ret void
 }
 
-; CHECK: define void @test2c(i8* %x)
-; CHECK: @objc_retain(i8* %x)
-; CHECK: @objc_retain(i8* %x)
-; CHECK: @objc_release(i8* %y)
-; CHECK: @objc_release(i8* %x)
-; CHECK: ret void
-; CHECK: }
+
+
+
+
+
+
+
 define void @test2c(i8* %x) {
 entry:
   %A = alloca i8*, i32 3
@@ -297,13 +297,13 @@ bb3:
   ret void
 }
 
-; CHECK: define void @test2d(i8* %x)
-; CHECK: @objc_retain(i8* %x)
-; CHECK: @objc_retain(i8* %x)
-; CHECK: @objc_release(i8* %y)
-; CHECK: @objc_release(i8* %x)
-; CHECK: ret void
-; CHECK: }
+
+
+
+
+
+
+
 define void @test2d(i8* %x) {
 entry:
   tail call i8* @objc_retain(i8* %x)
@@ -336,31 +336,31 @@ bb3:
   ret void
 }
 
-; Make sure in the presence of allocas, if we find a cfghazard we do not perform
-; code motion even if we are known safe. These two concepts are separate and
-; should be treated as such.
-;
-; rdar://13949644
 
-; CHECK: define void @test3a() {
-; CHECK: entry:
-; CHECK:   @objc_retainAutoreleasedReturnValue
-; CHECK:   @objc_retain
-; CHECK:   @objc_retain
-; CHECK:   @objc_retain
-; CHECK:   @objc_retain
-; CHECK: arraydestroy.body:
-; CHECK:   @objc_release
-; CHECK-NOT: @objc_release
-; CHECK: arraydestroy.done:
-; CHECK-NOT: @objc_release
-; CHECK: arraydestroy.body1:
-; CHECK:   @objc_release
-; CHECK-NOT: @objc_release
-; CHECK: arraydestroy.done1:
-; CHECK: @objc_release
-; CHECK: ret void
-; CHECK: }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @test3a() {
 entry:
   %keys = alloca [2 x i8*], align 16
@@ -415,30 +415,30 @@ arraydestroy.done1:
   ret void
 }
 
-; Make sure that even though we stop said code motion we still allow for
-; pointers to be removed if we are known safe in both directions.
-;
-; rdar://13949644
 
-; CHECK: define void @test3b() {
-; CHECK: entry:
-; CHECK:   @objc_retainAutoreleasedReturnValue
-; CHECK:   @objc_retain
-; CHECK:   @objc_retain
-; CHECK:   @objc_retain
-; CHECK:   @objc_retain
-; CHECK: arraydestroy.body:
-; CHECK:   @objc_release
-; CHECK-NOT: @objc_release
-; CHECK: arraydestroy.done:
-; CHECK-NOT: @objc_release
-; CHECK: arraydestroy.body1:
-; CHECK:   @objc_release
-; CHECK-NOT: @objc_release
-; CHECK: arraydestroy.done1:
-; CHECK: @objc_release
-; CHECK: ret void
-; CHECK: }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @test3b() {
 entry:
   %keys = alloca [2 x i8*], align 16

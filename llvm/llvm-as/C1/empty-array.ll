@@ -1,28 +1,28 @@
-; RUN: llc -mtriple=x86_64-apple-darwin -O0 -filetype=obj -o %t < %s
-; RUN: llvm-dwarfdump -debug-dump=info %t | FileCheck %s
-; <rdar://problem/12566646>
+
+
+
 
 %class.A = type { [0 x i32] }
 
 @a = global %class.A zeroinitializer, align 4
 
-; CHECK: DW_TAG_class_type
-; CHECK:      DW_TAG_member
-; CHECK-NEXT: DW_AT_name [DW_FORM_strp]  ( .debug_str[0x{{[0-9a-f]*}}] = "x")
-; CHECK-NEXT: DW_AT_type [DW_FORM_ref4]  (cu + 0x{{[0-9a-f]*}} => {[[ARRAY:0x[0-9a-f]*]]})
 
-; CHECK:      [[ARRAY]]: DW_TAG_array_type [{{.*}}] *
-; CHECK-NEXT: DW_AT_type [DW_FORM_ref4]    (cu + 0x{{[0-9a-f]*}} => {[[BASETYPE:0x[0-9a-f]*]]})
 
-; CHECK:      DW_TAG_subrange_type
-; CHECK-NEXT: DW_AT_type [DW_FORM_ref4]  (cu + 0x{{[0-9a-f]*}} => {[[BASE2:0x[0-9a-f]*]]})
-; CHECK-NOT:  DW_AT_upper_bound
 
-; CHECK: [[BASETYPE]]: DW_TAG_base_type
-; CHECK: [[BASE2]]: DW_TAG_base_type
-; CHECK-NEXT: DW_AT_name
-; CHECK-NEXT: DW_AT_byte_size [DW_FORM_data1]  (0x08)
-; CHECK-NEXT: DW_AT_encoding [DW_FORM_data1]   (DW_ATE_unsigned)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 !llvm.dbg.cu = !{!0}
 !llvm.module.flags = !{!21}

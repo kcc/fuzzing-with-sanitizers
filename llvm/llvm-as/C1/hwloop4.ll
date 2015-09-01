@@ -1,11 +1,11 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv5 < %s | FileCheck %s
-;
-; Remove the unnecessary 'add' instruction used for the hardware loop setup.
 
-; CHECK: [[OP0:r[0-9]+]] = add([[OP1:r[0-9]+]], #-[[OP2:[0-9]+]]
-; CHECK-NOT: add([[OP0]], #[[OP2]])
-; CHECK: lsr([[OP1]], #{{[0-9]+}})
-; CHECK: loop0
+
+
+
+
+
+
+
 
 define void @matrix_mul_matrix(i32 %N, i32* nocapture %C, i16* nocapture readnone %A, i16* nocapture readnone %B) #0 {
 entry:

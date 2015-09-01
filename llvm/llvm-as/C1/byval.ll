@@ -1,10 +1,10 @@
-; RUN: not llc -march=bpf < %s 2> %t1
-; RUN: FileCheck %s < %t1
-; CHECK: by value not supported
+
+
+
 
 %struct.S = type { [10 x i32] }
 
-; Function Attrs: nounwind uwtable
+
 define void @bar(i32 %a) #0 {
 entry:
   %.compoundliteral = alloca %struct.S, align 8
@@ -23,5 +23,5 @@ entry:
 
 declare void @foo(i32, %struct.S* byval align 8) #1
 
-; Function Attrs: nounwind
+
 declare void @llvm.memset.p0i8.i64(i8* nocapture, i8, i64, i32, i1) #3

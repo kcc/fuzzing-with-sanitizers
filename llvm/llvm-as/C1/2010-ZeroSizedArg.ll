@@ -1,5 +1,5 @@
-; RUN: llc < %s
-; PR4975
+
+
 
 %0 = type <{ [0 x i32] }>
 %union.T0 = type { }

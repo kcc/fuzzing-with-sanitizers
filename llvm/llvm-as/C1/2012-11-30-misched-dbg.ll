@@ -1,12 +1,12 @@
-; RUN: llc < %s -mtriple=x86_64-apple-macosx -enable-misched \
-; RUN:          -verify-machineinstrs | FileCheck %s
-;
-; Test MachineScheduler handling of DBG_VALUE.
-; rdar://12776937.
-;
-; CHECK: %if.else581
-; CHECK: DEBUG_VALUE: num1
-; CHECK: call
+
+
+
+
+
+
+
+
+
 
 %union.rec = type {}
 
@@ -19,30 +19,30 @@ entry:
   %num14075 = alloca [20 x i8], align 16
   br label %if.end33
 
-if.end33:                                         ; preds = %entry
+if.end33:                                         
   %cmp1733 = icmp eq i32 undef, 0
   br label %if.else581
 
-if.else581:                                       ; preds = %if.end33
+if.else581:                                       
   %cmp586 = icmp eq i8 undef, -123
   br i1 %cmp586, label %if.then588, label %if.else594
 
-if.then588:                                       ; preds = %if.else581
+if.then588:                                       
   br label %for.cond1710.preheader
 
-if.else594:                                       ; preds = %if.else581
+if.else594:                                       
   unreachable
 
-for.cond1710.preheader:                           ; preds = %if.then588
+for.cond1710.preheader:                           
   br label %for.cond1710
 
-for.cond1710:                                     ; preds = %for.cond1710, %for.cond1710.preheader
+for.cond1710:                                     
   br i1 undef, label %for.cond1710, label %if.then3344
 
 if.then3344:
   br label %if.then4073
 
-if.then4073:                                      ; preds = %if.then3344
+if.then4073:                                      
   call void @llvm.dbg.declare(metadata [20 x i8]* %num14075, metadata !4, metadata !DIExpression()), !dbg !DILocation(scope: !5)
   %arraydecay4078 = getelementptr inbounds [20 x i8], [20 x i8]* %num14075, i64 0, i64 0
   %0 = load i32, i32* undef, align 4
@@ -53,10 +53,10 @@ if.then4073:                                      ; preds = %if.then3344
   %call4097 = call i32 (i8*, i32, i64, i8*, ...) @__sprintf_chk(i8* %arraydecay4078, i32 0, i64 20, i8* getelementptr inbounds ([6 x i8], [6 x i8]* @.str15, i64 0, i64 0), double %conv4096) nounwind
   br i1 %cmp1733, label %if.then4107, label %if.else4114
 
-if.then4107:                                      ; preds = %if.then4073
+if.then4107:                                      
   unreachable
 
-if.else4114:                                      ; preds = %if.then4073
+if.else4114:                                      
   unreachable
 }
 
@@ -90,11 +90,11 @@ declare i32 @__sprintf_chk(i8*, i32, i64, i8*, ...)
 !22 = !DISubroutineType(types: !23)
 !23 = !{null}
 
-; Test DebugValue uses visited by RegisterPressureTracker findUseBetween().
-;
-; CHECK: @main
-; CHECK: DEBUG_VALUE: main:X
-; CHECK: call
+
+
+
+
+
 
 %"class.__gnu_cxx::hash_map" = type { %"class.__gnu_cxx::hashtable" }
 %"class.__gnu_cxx::hashtable" = type { i64, i64, i64, i64, i64, i64 }
@@ -104,27 +104,27 @@ entry:
   %X = alloca %"class.__gnu_cxx::hash_map", align 8
   br i1 undef, label %cond.true, label %cond.end
 
-cond.true:                                        ; preds = %entry
+cond.true:                                        
   unreachable
 
-cond.end:                                         ; preds = %entry
+cond.end:                                         
   call void @llvm.dbg.declare(metadata %"class.__gnu_cxx::hash_map"* %X, metadata !31, metadata !DIExpression()), !dbg !DILocation(scope: !37)
   %_M_num_elements.i.i.i.i = getelementptr inbounds %"class.__gnu_cxx::hash_map", %"class.__gnu_cxx::hash_map"* %X, i64 0, i32 0, i32 5
   invoke void @_Znwm()
           to label %exit.i unwind label %lpad2.i.i.i.i
 
-exit.i:                                           ; preds = %cond.end
+exit.i:                                           
   unreachable
 
-lpad2.i.i.i.i:                                    ; preds = %cond.end
+lpad2.i.i.i.i:                                    
   %0 = landingpad { i8*, i32 }
           cleanup
   br i1 undef, label %lpad.body.i.i, label %if.then.i.i.i.i.i.i.i.i
 
-if.then.i.i.i.i.i.i.i.i:                          ; preds = %lpad2.i.i.i.i
+if.then.i.i.i.i.i.i.i.i:                          
   unreachable
 
-lpad.body.i.i:                                    ; preds = %lpad2.i.i.i.i
+lpad.body.i.i:                                    
   resume { i8*, i32 } %0
 }
 

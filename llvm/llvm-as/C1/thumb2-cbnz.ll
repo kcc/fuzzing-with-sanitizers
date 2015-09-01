@@ -1,5 +1,5 @@
-; RUN: llc < %s -mtriple=thumbv7-apple-darwin -mcpu=cortex-a8 -arm-atomic-cfg-tidy=0 | FileCheck %s
-; rdar://7354379
+
+
 
 declare double @foo(double) nounwind readnone
 
@@ -8,27 +8,27 @@ entry:
   %cmp1 = icmp ne i32 %c, 0
   br i1 %cmp1, label %bb3, label %bb1
 
-bb1:                                              ; preds = %entry
+bb1:                                              
   unreachable
 
-bb3:                                              ; preds = %entry
+bb3:                                              
   %cmp2 = icmp ne i32 %c, 0
   br i1 %cmp2, label %bb7, label %bb5
 
-bb5:                                              ; preds = %bb3
+bb5:                                              
   unreachable
 
-bb7:                                              ; preds = %bb3
+bb7:                                              
   %cmp3 = icmp ne i32 %c, 0
   br i1 %cmp3, label %bb11, label %bb9
 
-bb9:                                              ; preds = %bb7
-; CHECK:      cmp	r0, #0
-; CHECK-NEXT:      cbnz
-  %0 = tail call  double @foo(double %b) nounwind readnone ; <double> [#uses=0]
+bb9:                                              
+
+
+  %0 = tail call  double @foo(double %b) nounwind readnone 
   br label %bb11
 
-bb11:                                             ; preds = %bb9, %bb7
+bb11:                                             
   %1 = getelementptr i32, i32* undef, i32 0
   store i32 0, i32* %1
   ret void

@@ -1,16 +1,16 @@
-; This test makes sure that and instructions are properly eliminated.
-; This test is for Integer BitWidth <= 64 && BitWidth % 8 != 0.
 
-; RUN: opt < %s -instcombine -S | not grep "and "
-; END.
+
+
+
+
 
 define i39 @test0(i39 %A) {
-        %B = and i39 %A, 0 ; zero result
+        %B = and i39 %A, 0 
         ret i39 %B
 }
 
 define i47 @test1(i47 %A, i47 %B) {
-        ;; (~A & ~B) == (~(A | B)) - De Morgan's Law
+        
         %NotA = xor i47 %A, -1
         %NotB = xor i47 %B, -1
         %C1 = and i47 %NotA, %NotB
@@ -18,7 +18,7 @@ define i47 @test1(i47 %A, i47 %B) {
 }
 
 define i15 @test2(i15 %x) {
-        %tmp.2 = and i15 %x, -1 ; noop
+        %tmp.2 = and i15 %x, -1 
         ret i15 %tmp.2
 }
 
@@ -43,7 +43,7 @@ define i7 @test5(i7 %A, i7* %P) {
 }
 
 define i7 @test6(i7 %A, i7 %B) {
-        ;; ~(~X & Y) --> (X | ~Y)
+        
         %t0 = xor i7 %A, -1
         %t1 = and i7 %t0, %B
         %r = xor i7 %t1, -1
@@ -51,7 +51,7 @@ define i7 @test6(i7 %A, i7 %B) {
 }
 
 define i47 @test7(i47 %A) {
-        %X = ashr i47 %A, 39 ;; sign extend
+        %X = ashr i47 %A, 39 
         %C1 = and i47 %X, 255
         ret i47 %C1
 }

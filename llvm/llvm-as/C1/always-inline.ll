@@ -1,23 +1,23 @@
-; RUN: opt < %s -inline-threshold=0 -always-inline -S | FileCheck %s
-;
-; Ensure the threshold has no impact on these decisions.
-; RUN: opt < %s -inline-threshold=20000000 -always-inline -S | FileCheck %s
-; RUN: opt < %s -inline-threshold=-20000000 -always-inline -S | FileCheck %s
+
+
+
+
+
 
 define i32 @inner1() alwaysinline {
   ret i32 1
 }
 define i32 @outer1() {
-; CHECK-LABEL: @outer1(
-; CHECK-NOT: call
-; CHECK: ret
+
+
+
 
    %r = call i32 @inner1()
    ret i32 %r
 }
 
-; The always inliner can't DCE internal functions. PR2945
-; CHECK-LABEL: @pr2945(
+
+
 define internal i32 @pr2945() nounwind {
   ret i32 0
 }
@@ -27,14 +27,14 @@ define internal void @inner2(i32 %N) alwaysinline {
   ret void
 }
 define void @outer2(i32 %N) {
-; The always inliner (unlike the normal one) should be willing to inline
-; a function with a dynamic alloca into one without a dynamic alloca.
-; rdar://6655932
-;
-; CHECK-LABEL: @outer2(
-; CHECK-NOT: call void @inner2
-; CHECK-NOT: call void @inner2
-; CHECK: ret void
+
+
+
+
+
+
+
+
 
   call void @inner2( i32 %N )
   ret void
@@ -51,9 +51,9 @@ entry:
 }
 define i32 @outer3() {
 entry:
-; CHECK-LABEL: @outer3(
-; CHECK-NOT: call i32 @a
-; CHECK: ret
+
+
+
 
   %call = call i32 @inner3()
   %add = add nsw i32 1, %call
@@ -69,9 +69,9 @@ entry:
 
 define i32 @outer4() {
 entry:
-; CHECK-LABEL: @outer4(
-; CHECK: call i32 @b()
-; CHECK: ret
+
+
+
 
   %call = call i32 @inner4() returns_twice
   %add = add nsw i32 1, %call
@@ -89,9 +89,9 @@ two:
   ret i32 44
 }
 define i32 @outer5(i32 %x) {
-; CHECK-LABEL: @outer5(
-; CHECK: call i32 @inner5
-; CHECK: ret
+
+
+
 
   %cmp = icmp slt i32 %x, 42
   %addr = select i1 %cmp, i8* blockaddress(@inner5, %one), i8* blockaddress(@inner5, %two)
@@ -113,9 +113,9 @@ return:
   ret void
 }
 define void @outer6() {
-; CHECK-LABEL: @outer6(
-; CHECK: call void @inner6(i32 42)
-; CHECK: ret
+
+
+
 
 entry:
   call void @inner6(i32 42)
@@ -126,9 +126,9 @@ define i32 @inner7() {
   ret i32 1
 }
 define i32 @outer7() {
-; CHECK-LABEL: @outer7(
-; CHECK-NOT: call
-; CHECK: ret
+
+
+
 
    %r = call i32 @inner7() alwaysinline
    ret i32 %r

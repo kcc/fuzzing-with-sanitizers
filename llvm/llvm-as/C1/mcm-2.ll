@@ -1,8 +1,8 @@
-; RUN: llc -mcpu=pwr7 -O0 -code-model=medium <%s | FileCheck -check-prefix=MEDIUM %s
-; RUN: llc -mcpu=pwr7 -O0 -code-model=large <%s | FileCheck -check-prefix=LARGE %s
 
-; Test correct code generation for medium and large code model
-; for loading and storing a static variable scoped to a function.
+
+
+
+
 
 target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-f128:128:128-v128:128:128-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
@@ -17,21 +17,21 @@ entry:
   ret i32 %0
 }
 
-; MEDIUM-LABEL: test_fn_static:
-; MEDIUM: addis [[REG1:[0-9]+]], 2, [[VAR:[a-z0-9A-Z_.]+]]@toc@ha
-; MEDIUM: addi [[REG2:[0-9]+]], [[REG1]], [[VAR]]@toc@l
-; MEDIUM: lwz {{[0-9]+}}, 0([[REG2]])
-; MEDIUM: stw {{[0-9]+}}, 0([[REG2]])
-; MEDIUM: .type [[VAR]],@object
-; MEDIUM: .lcomm [[VAR]],4,4
 
-; LARGE-LABEL: test_fn_static:
-; LARGE: addis [[REG1:[0-9]+]], 2, [[VAR:[a-z0-9A-Z_.]+]]@toc@ha
-; LARGE: ld [[REG2:[0-9]+]], [[VAR]]@toc@l([[REG1]])
-; LARGE: lwz {{[0-9]+}}, 0([[REG2]])
-; LARGE: stw {{[0-9]+}}, 0([[REG2]])
-; LARGE: [[VAR]]:
-; LARGE: .tc [[VAR2:[a-z0-9A-Z_.]+]][TC],[[VAR2]]
-; LARGE: .type [[VAR2]],@object
-; LARGE: .lcomm [[VAR2]],4,4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -1,7 +1,7 @@
-; RUN: llc < %s -mtriple=thumbv7-apple-ios -O0 -verify-machineinstrs -fast-isel-abort=1 -relocation-model=static -mattr=+long-calls | FileCheck -check-prefix=CHECK-LONG %s
-; RUN: llc < %s -mtriple=armv7-linux-gnueabi -O0 -verify-machineinstrs -fast-isel-abort=1 -relocation-model=static -mattr=+long-calls | FileCheck -check-prefix=CHECK-LONG %s
-; RUN: llc < %s -mtriple=thumbv7-apple-ios -O0 -verify-machineinstrs -fast-isel-abort=1 -relocation-model=static | FileCheck -check-prefix=CHECK-NORM %s
-; RUN: llc < %s -mtriple=armv7-linux-gnueabi -O0 -verify-machineinstrs -fast-isel-abort=1 -relocation-model=static | FileCheck -check-prefix=CHECK-NORM %s
+
+
+
+
 
 define void @myadd(float* %sum, float* %addend) nounwind {
 entry:
@@ -25,8 +25,8 @@ entry:
   %z = alloca float, align 4
   store float 0.000000e+00, float* %ztot, align 4
   store float 1.000000e+00, float* %z, align 4
-; CHECK-LONG: blx     r
-; CHECK-NORM: bl      {{_?}}myadd
+
+
   call void @myadd(float* %ztot, float* %z)
   ret i32 0
 }

@@ -1,11 +1,11 @@
-; RUN: llc < %s -mtriple=x86_64-apple-macosx -enable-misched \
-; RUN:          -verify-machineinstrs | FileCheck %s
-;
-; Test RegisterPressure handling of DBG_VALUE.
-;
-; CHECK: %entry
-; CHECK: DEBUG_VALUE: test:callback
-; CHECK: ret
+
+
+
+
+
+
+
+
 
 %struct.btCompoundLeafCallback = type { i32, i32 }
 
@@ -16,20 +16,20 @@ entry:
   %callback = alloca %struct.btCompoundLeafCallback, align 8
   br i1 undef, label %if.end, label %if.then
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   unreachable
 
-if.end:                                           ; preds = %entry
+if.end:                                           
   call void @llvm.dbg.declare(metadata %struct.btCompoundLeafCallback* %callback, metadata !3, metadata !DIExpression()), !dbg !DILocation(scope: !2)
   %m = getelementptr inbounds %struct.btCompoundLeafCallback, %struct.btCompoundLeafCallback* %callback, i64 0, i32 1
   store i32 0, i32* undef, align 8
   %cmp12447 = icmp sgt i32 undef, 0
   br i1 %cmp12447, label %for.body.lr.ph, label %invoke.cont44
 
-for.body.lr.ph:                                   ; preds = %if.end
+for.body.lr.ph:                                   
   unreachable
 
-invoke.cont44:                                    ; preds = %if.end
+invoke.cont44:                                    
   ret void
 }
 

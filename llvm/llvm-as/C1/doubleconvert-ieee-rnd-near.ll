@@ -1,8 +1,8 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv5 -enable-hexagon-ieee-rnd-near < %s | FileCheck %s
-; Check that we generate conversion from double precision floating point
-; to 32-bit int value in IEEE rounding to the nearest mode in V5.
 
-; CHECK: r{{[0-9]+}} = convert_df2w(r{{[0-9]+}}:{{[0-9]+}})
+
+
+
+
 
 define i32 @main() nounwind {
 entry:

@@ -1,11 +1,11 @@
-; RUN: llc < %s -mtriple=x86_64-linux | FileCheck %s -check-prefix=CHECK
-; RUN: llc < %s -mtriple=x86_64-linux -sink-insts-to-avoid-spills | FileCheck %s -check-prefix=SINK
 
-; Ensure that we sink copy-like instructions into loops to avoid register
-; spills.
 
-; CHECK: Spill
-; SINK-NOT: Spill
+
+
+
+
+
+
 
 %struct.A = type { i32, i32, i32, i32, i32, i32 }
 
@@ -31,30 +31,30 @@ define void @_Z1fPhP1A(i8* nocapture readonly %input, %struct.A* %a) {
     i8 50, label %14
   ]
 
-; <label>:9
+
   tail call void @_Z6assignPj(i32* %1)
   br label %.backedge.backedge
 
-; <label>:10
+
   tail call void @_Z6assignPj(i32* %2)
   br label %.backedge.backedge
 
 .backedge.backedge:
   br label %.backedge
 
-; <label>:11
+
   tail call void @_Z6assignPj(i32* %3)
   br label %.backedge.backedge
 
-; <label>:12
+
   tail call void @_Z6assignPj(i32* %4)
   br label %.backedge.backedge
 
-; <label>:13
+
   tail call void @_Z6assignPj(i32* %5)
   br label %.backedge.backedge
 
-; <label>:14
+
   tail call void @_Z6assignPj(i32* %6)
   br label %.backedge.backedge
 }

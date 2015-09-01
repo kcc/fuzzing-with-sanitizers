@@ -1,7 +1,7 @@
-; RUN: opt -tbaa -basicaa -licm -S < %s | FileCheck %s
 
-; LICM should keep the stores in their original order when it sinks/promotes them.
-; rdar://12045203
+
+
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.8.0"
@@ -13,10 +13,10 @@ entry:
   %cmp1 = icmp slt i32 0, %n
   br i1 %cmp1, label %for.body.lr.ph, label %for.end
 
-for.body.lr.ph:                                   ; preds = %entry
+for.body.lr.ph:                                   
   br label %for.body
 
-for.body:                                         ; preds = %for.body, %for.body.lr.ph
+for.body:                                         
   %i.02 = phi i32 [ 0, %for.body.lr.ph ], [ %inc, %for.body ]
   store float 1.000000e+00, float* %tmp1, align 4, !tbaa !1
   store i32 1, i32* %tmp3, align 4, !tbaa !2
@@ -24,14 +24,14 @@ for.body:                                         ; preds = %for.body, %for.body
   %cmp = icmp slt i32 %inc, %n
   br i1 %cmp, label %for.body, label %for.cond.for.end_crit_edge
 
-; CHECK: for.cond.for.end_crit_edge:
-; CHECK: store float 1.000000e+00, float* %tmp1
-; CHECK: store i32 1, i32* %tmp3
-for.cond.for.end_crit_edge:                       ; preds = %for.body
+
+
+
+for.cond.for.end_crit_edge:                       
   %split = phi i32* [ %tmp3, %for.body ]
   br label %for.end
 
-for.end:                                          ; preds = %for.cond.for.end_crit_edge, %entry
+for.end:                                          
   %r.0.lcssa = phi i32* [ %split, %for.cond.for.end_crit_edge ], [ undef, %entry ]
   ret i32* %r.0.lcssa
 }

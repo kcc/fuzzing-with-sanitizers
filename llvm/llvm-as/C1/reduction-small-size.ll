@@ -1,36 +1,36 @@
-; RUN: opt < %s -loop-vectorize -force-vector-interleave=1 -dce -instcombine -S | FileCheck %s
+
 
 target datalayout = "e-m:e-i64:64-i128:128-n32:64-S128"
 target triple = "aarch64--linux-gnu"
 
-; CHECK-LABEL: @reduction_i8
-;
-; char reduction_i8(char *a, char *b, int n) {
-;   char sum = 0;
-;   for (int i = 0; i < n; ++i)
-;     sum += (a[i] + b[i]);
-;   return sum;
-; }
-;
-; CHECK: vector.body:
-; CHECK:   phi <16 x i8>
-; CHECK:   load <16 x i8>
-; CHECK:   load <16 x i8>
-; CHECK:   add <16 x i8>
-; CHECK:   add <16 x i8>
-;
-; CHECK: middle.block:
-; CHECK:   shufflevector <16 x i8>
-; CHECK:   add <16 x i8>
-; CHECK:   shufflevector <16 x i8>
-; CHECK:   add <16 x i8>
-; CHECK:   shufflevector <16 x i8>
-; CHECK:   add <16 x i8>
-; CHECK:   shufflevector <16 x i8>
-; CHECK:   add <16 x i8>
-; CHECK:   [[Rdx:%[a-zA-Z0-9.]+]] = extractelement <16 x i8>
-; CHECK:   zext i8 [[Rdx]] to i32
-;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define i8 @reduction_i8(i8* nocapture readonly %a, i8* nocapture readonly %b, i32 %n) {
 entry:
   %cmp.12 = icmp sgt i32 %n, 0
@@ -66,32 +66,32 @@ for.body:
   br i1 %exitcond, label %for.cond.for.cond.cleanup_crit_edge, label %for.body
 }
 
-; CHECK-LABEL: @reduction_i16
-;
-; short reduction_i16(short *a, short *b, int n) {
-;   short sum = 0;
-;   for (int i = 0; i < n; ++i)
-;     sum += (a[i] + b[i]);
-;   return sum;
-; }
-;
-; CHECK: vector.body:
-; CHECK:   phi <8 x i16>
-; CHECK:   load <8 x i16>
-; CHECK:   load <8 x i16>
-; CHECK:   add <8 x i16>
-; CHECK:   add <8 x i16>
-;
-; CHECK: middle.block:
-; CHECK:   shufflevector <8 x i16>
-; CHECK:   add <8 x i16>
-; CHECK:   shufflevector <8 x i16>
-; CHECK:   add <8 x i16>
-; CHECK:   shufflevector <8 x i16>
-; CHECK:   add <8 x i16>
-; CHECK:   [[Rdx:%[a-zA-Z0-9.]+]] = extractelement <8 x i16>
-; CHECK:   zext i16 [[Rdx]] to i32
-;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define i16 @reduction_i16(i16* nocapture readonly %a, i16* nocapture readonly %b, i32 %n) {
 entry:
   %cmp.16 = icmp sgt i32 %n, 0

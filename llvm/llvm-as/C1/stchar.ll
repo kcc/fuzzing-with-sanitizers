@@ -1,5 +1,5 @@
-; RUN: llc  -march=mipsel -mcpu=mips16 -relocation-model=pic -O3 < %s | FileCheck %s -check-prefix=16_h
-; RUN: llc  -march=mipsel -mcpu=mips16 -relocation-model=pic -O3 < %s | FileCheck %s -check-prefix=16_b
+
+
 
 @.str = private unnamed_addr constant [9 x i8] c"%hd %c \0A\00", align 1
 @sp = common global i16* null, align 4
@@ -50,12 +50,12 @@ entry:
   %conv1.i = sext i8 %3 to i32
   %call.i = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([9 x i8], [9 x i8]* @.str, i32 0, i32 0), i32 %conv.i, i32 %conv1.i) nounwind
   ret void
-; 16_b-LABEL: test:
-; 16_h-LABEL: test:
-; 16_b:	sb	${{[0-9]+}}, [[offset1:[0-9]+]](${{[0-9]+}})
-; 16_b: lb      ${{[0-9]+}}, [[offset1]](${{[0-9]+}})
-; 16_h:	sh	${{[0-9]+}}, [[offset2:[0-9]+]](${{[0-9]+}})
-; 16_h: lh      ${{[0-9]+}}, [[offset2]](${{[0-9]+}})
+
+
+
+
+
+
 }
 
 define i32 @main() nounwind {

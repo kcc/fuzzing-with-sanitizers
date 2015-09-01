@@ -1,57 +1,57 @@
-; RUN: llc -mtriple=mips-linux-gnu -filetype=asm -asm-verbose=0 -O0 < %s | FileCheck %s
-; RUN: llc -mtriple=mips-linux-gnu -filetype=obj -O0 < %s | llvm-dwarfdump -debug-dump=line - | FileCheck %s --check-prefix=INT
-
-; Mips used to generate 'jumpy' debug line info around calls. The address
-; calculation for each call to f1() would share the same line info so it would
-; emit output of the form:
-;   .loc $first_call_location
-;   .. address calculation ..
-;   .. function call ..
-;   .. address calculation ..
-;   .loc $second_call_location
-;   .. function call ..
-;   .loc $first_call_location
-;   .. address calculation ..
-;   .loc $third_call_location
-;   .. function call ..
-;   ...
-; which would cause confusing stepping behaviour for the end user.
-;
-; This test checks that we emit more user friendly debug line info of the form:
-;   .loc $first_call_location
-;   .. address calculation ..
-;   .. function call ..
-;   .loc $second_call_location
-;   .. address calculation ..
-;   .. function call ..
-;   .loc $third_call_location
-;   .. address calculation ..
-;   .. function call ..
-;   ...
-;
-; Generated with clang from fn-call-line.c:
-; void f1();
-; void f2() {
-;   f1();
-;   f1();
-; }
-
-; CHECK: .loc	1 3 3
-; CHECK-NOT: .loc
-; CHECK: %call16(f1) 
-; CHECK-NOT: .loc
-; CHECK: .loc	1 4 3
-; CHECK-NOT: .loc
-; CHECK: %call16(f1) 
-
-; INT: {{^}}Address
-; INT: -----
-; INT-NEXT: 2 0 1 0 0 is_stmt{{$}}
-; INT-NEXT: 3 3 1 0 0 is_stmt prologue_end{{$}}
-; INT-NEXT: 4 3 1 0 0 is_stmt{{$}}
 
 
-; Function Attrs: nounwind uwtable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @f2() #0 {
 entry:
   call void (...) @f1(), !dbg !11

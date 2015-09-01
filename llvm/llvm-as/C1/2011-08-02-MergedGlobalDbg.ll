@@ -1,23 +1,23 @@
-; RUN: llc -arm-global-merge -global-merge-group-by-use=false -filetype=obj < %s | llvm-dwarfdump -debug-dump=info - | FileCheck %s
 
-; Check debug info output for merged global.
-; DW_AT_location
-; 0x03 DW_OP_addr
-; 0x.. .long __MergedGlobals
-; 0x10 DW_OP_constu
-; 0x.. offset
-; 0x22 DW_OP_plus
 
-; CHECK: DW_TAG_variable
-; CHECK-NOT: DW_TAG
-; CHECK:    DW_AT_name {{.*}} "x1"
-; CHECK-NOT: {{DW_TAG|NULL}}
-; CHECK:    DW_AT_location [DW_FORM_exprloc]        (<0x8> 03 [[ADDR:.. .. .. ..]] 10 00 22  )
-; CHECK: DW_TAG_variable
-; CHECK-NOT: DW_TAG
-; CHECK:    DW_AT_name {{.*}} "x2"
-; CHECK-NOT: {{DW_TAG|NULL}}
-; CHECK:    DW_AT_location [DW_FORM_exprloc]        (<0x8> 03 [[ADDR]] 10 04 22  )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:32:64-v128:32:128-a0:0:32-n32"
 target triple = "thumbv7-apple-macosx10.7.0"

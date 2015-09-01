@@ -1,4 +1,4 @@
-; RUN: opt < %s -slp-vectorizer -mtriple=x86_64-apple-macosx10.9.0 -disable-output
+
 
 target datalayout = "f64:64:64-v64:64:64"
 

@@ -1,16 +1,16 @@
-; Function Attrs: nounwind
-; RUN: llc -march=r600 -mcpu=redwood -mattr=-promote-alloca < %s | FileCheck %s
-;
-; CFG flattening should use parallel-and mode to generate branch conditions and
-; then merge if-regions with the same bodies.
-;
-; CHECK: AND_INT
-; CHECK-NEXT: AND_INT
-; CHECK-NEXT: OR_INT
 
-; FIXME: For some reason having the allocas here allowed the flatten cfg pass
-; to do its transfomation, however now that we are using local memory for
-; allocas, the transformation isn't happening.
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @_Z9chk1D_512v() #0 {
 entry:
@@ -28,32 +28,32 @@ entry:
   %cmp = icmp ne i32 %0, %1
   br i1 %cmp, label %land.lhs.true, label %if.end
 
-land.lhs.true:                                    ; preds = %entry
+land.lhs.true:                                    
   %2 = load i32, i32* %c0, align 4
   %3 = load i32, i32* %d0, align 4
   %cmp1 = icmp ne i32 %2, %3
   br i1 %cmp1, label %if.then, label %if.end
 
-if.then:                                          ; preds = %land.lhs.true
+if.then:                                          
   store i32 1, i32* %data, align 4
   br label %if.end
 
-if.end:                                           ; preds = %if.then, %land.lhs.true, %entry
+if.end:                                           
   %4 = load i32, i32* %a1, align 4
   %5 = load i32, i32* %b1, align 4
   %cmp2 = icmp ne i32 %4, %5
   br i1 %cmp2, label %land.lhs.true3, label %if.end6
 
-land.lhs.true3:                                   ; preds = %if.end
+land.lhs.true3:                                   
   %6 = load i32, i32* %c1, align 4
   %7 = load i32, i32* %d1, align 4
   %cmp4 = icmp ne i32 %6, %7
   br i1 %cmp4, label %if.then5, label %if.end6
 
-if.then5:                                         ; preds = %land.lhs.true3
+if.then5:                                         
   store i32 1, i32* %data, align 4
   br label %if.end6
 
-if.end6:                                          ; preds = %if.then5, %land.lhs.true3, %if.end
+if.end6:                                          
   ret void
 }

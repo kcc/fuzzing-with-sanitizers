@@ -1,12 +1,12 @@
-; RUN: llc -mtriple=x86_64-apple-darwin %s -o %t -filetype=obj
-; RUN: llvm-dwarfdump -debug-dump=all %t | FileCheck %s
 
-; Checks that we don't emit a size for a pointer type.
-; CHECK: DW_TAG_pointer_type
-; CHECK-NEXT: DW_AT_type
-; CHECK-NOT: DW_AT_byte_size
-; CHECK: DW_TAG
-; CHECK: .debug_info contents
+
+
+
+
+
+
+
+
 
 %struct.A = type { i32 }
 

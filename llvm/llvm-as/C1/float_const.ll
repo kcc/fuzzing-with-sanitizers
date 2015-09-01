@@ -1,27 +1,27 @@
-; RUN: llc < %s -filetype=obj | llvm-dwarfdump -debug-dump=info - | FileCheck %s
-; from (at -Os):
-; void foo() {
-;   float a = 3.14;
-;   *(int *)&a = 0;
-; }
+
+
+
+
+
+
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.10.0"
 
-; Function Attrs: nounwind optsize readnone uwtable
+
 define void @foo() #0 {
 entry:
   tail call void @llvm.dbg.declare(metadata float* undef, metadata !13, metadata !19), !dbg !20
   tail call void @llvm.dbg.value(metadata i32 1078523331, i64 0, metadata !13, metadata !19), !dbg !20
   tail call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !13, metadata !19), !dbg !20
-; CHECK:  DW_AT_const_value [DW_FORM_sdata]    (0)
-; CHECK-NEXT: DW_AT_name {{.*}}"a"
+
+
   ret void, !dbg !21
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #1
 
 attributes #0 = { nounwind optsize readnone uwtable }

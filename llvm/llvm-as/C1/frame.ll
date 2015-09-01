@@ -1,11 +1,11 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv4 < %s | FileCheck %s
+
 
 @num = external global i32
 @acc = external global i32
 @num2 = external global i32
 
-; CHECK: allocframe
-; CHECK: dealloc_return
+
+
 
 define i32 @foo() nounwind {
 entry:

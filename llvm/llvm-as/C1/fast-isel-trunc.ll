@@ -1,6 +1,6 @@
-; RUN: llc -mtriple=aarch64-apple-darwin -fast-isel -fast-isel-abort=1 -verify-machineinstrs < %s
 
-; Test that %1 doesn't get the kill flag set before its last use.
+
+
 define i32 @test_trunc(i32 %a) {
   %1 = add i32 %a, 1
   %2 = trunc i32 %1 to i16

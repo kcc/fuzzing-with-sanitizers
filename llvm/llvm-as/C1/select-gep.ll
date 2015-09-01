@@ -1,4 +1,4 @@
-; RUN: opt -S -simplifycfg < %s | FileCheck %s
+
 
 %ST = type { i8, i8 }
 
@@ -15,7 +15,7 @@ if.end:
   %x.addr = phi i8* [ %incdec.ptr, %if.then ], [ %y, %entry ]
   ret i8* %x.addr
 
-; CHECK-LABEL: @test1(
-; CHECK: %incdec.ptr.y = select i1 %cmp, i8* %incdec.ptr, i8* %y
-; CHECK: ret i8* %incdec.ptr.y
+
+
+
 }

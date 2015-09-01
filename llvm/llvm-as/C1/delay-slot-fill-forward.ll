@@ -1,10 +1,10 @@
-; RUN: llc < %s -march=mips -mcpu=mips32r2 -O2 \
-; RUN:     -disable-mips-df-forward-search=false \
-; RUN:     -disable-mips-df-succbb-search=false \
-; RUN:     -relocation-model=static | FileCheck %s
 
-; This test was generated with bugpoint from
-; MultiSource/Applications/JM/lencod/me_fullsearch.c
+
+
+
+
+
+
 
 %struct.SubImageContainer = type { i16****, [2 x i16****] }
 %struct.storable_picture = type { i32, i32, i32, i32, i32, i32,
@@ -37,7 +37,7 @@ define void @SubPelBlockSearchBiPred(i16* %orig_pic, i16 signext %ref,
     i32 signext %pic_pix_x, i32 signext %pic_pix_y, i16 signext %pred_mv_y,
     i16* nocapture %mv_x, i16* nocapture %mv_y, i16* nocapture readonly %s_mv_x,
     i32 signext %search_pos2, i32 signext %min_mcost) #0 {
-; CHECK-LABEL: SubPelBlockSearchBiPred:
+
 entry:
   %add40 = shl i32 %pic_pix_x, 2
   %shl = add i32 %add40, 80
@@ -78,7 +78,7 @@ entry:
   %or.cond = and i1 %cmp270, false
   br i1 %or.cond, label %land.lhs.true277, label %if.else289
 
-land.lhs.true277:                                 ; preds = %entry
+land.lhs.true277:                                 
   %10 = load i16, i16* %mv_y, align 2, !tbaa !5
   %conv278 = sext i16 %10 to i32
   %add279 = add nsw i32 %conv278, 0
@@ -86,20 +86,20 @@ land.lhs.true277:                                 ; preds = %entry
   %or.cond660 = and i1 %cmp280, undef
   br i1 %or.cond660, label %if.end290, label %if.else289
 
-if.else289:                                       ; preds = %land.lhs.true277, %entry
+if.else289:                                       
   br label %if.end290
 
-if.end290:                                        ; preds = %if.else289, %land.lhs.true277
+if.end290:                                        
   %storemerge = phi i32 [ 1, %if.else289 ], [ 0, %land.lhs.true277 ]
   store i32 %storemerge, i32* @bipred2_access_method, align 4, !tbaa !1
   %cmp315698 = icmp slt i32 %0, %cond47
   br i1 %cmp315698, label %for.body.lr.ph, label %if.end358
 
-for.body.lr.ph:                                   ; preds = %if.end290
+for.body.lr.ph:                                   
   %conv328 = sext i16 %pred_mv_y to i32
   br label %for.body
 
-for.body:                                         ; preds = %for.inc, %for.body.lr.ph
+for.body:                                         
   %11 = phi i16 [ %9, %for.body.lr.ph ], [ %.pre, %for.inc ]
   %min_mcost.addr.0701 = phi i32 [ %min_mcost, %for.body.lr.ph ], [ undef, %for.inc ]
   %pos.0700 = phi i32 [ %0, %for.body.lr.ph ], [ undef, %for.inc ]
@@ -120,10 +120,10 @@ for.body:                                         ; preds = %for.inc, %for.body.
   %cmp333 = icmp sgt i32 %min_mcost.addr.0701, %shr332
   br i1 %cmp333, label %if.end336, label %for.inc
 
-if.end336:                                        ; preds = %for.body
-  ; CHECK:      jalr  $25
-  ; CHECK-NOT:  move  $ra, {{.*}}
-  ; CHECK:      j     $BB{{.*}}
+if.end336:                                        
+  
+  
+  
   %add337 = add nsw i32 %add320, %shl
   %add338 = add nsw i32 %add324, 0
   %call340 = tail call i32 undef(i16* %orig_pic, i32 signext undef, i32 signext
@@ -134,30 +134,30 @@ if.end336:                                        ; preds = %for.body
   %pos.0.best_pos.0 = select i1 %cmp342, i32 %pos.0700, i32 %best_pos.0699
   br label %for.inc
 
-for.inc:                                          ; preds = %if.end336, %for.body
+for.inc:                                          
   %best_pos.1 = phi i32 [ %best_pos.0699, %for.body ], [ %pos.0.best_pos.0, %if.end336 ]
   %.pre = load i16, i16* %mv_x, align 2, !tbaa !5
   br label %for.body
 
-if.end358:                                        ; preds = %if.end290
+if.end358:                                        
   %.min_mcost.addr.0 = select i1 false, i32 2147483647, i32 %min_mcost
   br i1 undef, label %for.body415.lr.ph, label %if.end461
 
-for.body415.lr.ph:                                ; preds = %if.end358
+for.body415.lr.ph:                                
   %16 = load i16, i16* %mv_y, align 2, !tbaa !5
   %conv420 = sext i16 %16 to i32
   %add423 = add nsw i32 0, %conv420
   %cmp433 = icmp sgt i32 %.min_mcost.addr.0, 0
   br i1 %cmp433, label %if.end436, label %if.end461
 
-if.end436:                                        ; preds = %for.body415.lr.ph
+if.end436:                                        
   %add438 = add nsw i32 %add423, 0
   %call440 = tail call i32 @foobar(i16* %orig_pic, i32 signext undef, i32 signext undef,
                                  i32 signext 0, i32 signext %add49, i32 signext undef,
                                  i32 signext undef, i32 signext %add438) #1
   br label %if.end461
 
-if.end461:                                        ; preds = %if.end436, %for.body415.lr.ph, %if.end358
+if.end461:                                        
   ret void
 }
 

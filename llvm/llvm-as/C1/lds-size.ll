@@ -1,11 +1,11 @@
-; RUN: llc < %s -march=r600 -mcpu=redwood | FileCheck %s
 
-; This test makes sure we do not double count global values when they are
-; used in different basic blocks.
 
-; CHECK: .long   166120
-; CHECK-NEXT: .long   1
-; CHECK-LABEL: {{^}}test:
+
+
+
+
+
+
 @lds = internal unnamed_addr addrspace(3) global i32 undef, align 4
 
 define void @test(i32 addrspace(1)* %out, i32 %cond) {

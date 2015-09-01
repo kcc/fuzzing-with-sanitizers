@@ -1,5 +1,5 @@
-; RUN: llc < %s -mtriple=x86_64-unknown-linux-gnu -march=x86-64 -relocation-model=static -code-model=small > %t
-; RUN: grep leaq %t | count 1
+
+
 
 @dst = external global [131072 x i32]
 @ptr = external global i32*

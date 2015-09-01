@@ -1,4 +1,4 @@
-; RUN: llc < %s -O0
+
 
 define i32 @main() {
 entry:

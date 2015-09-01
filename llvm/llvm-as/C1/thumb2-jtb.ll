@@ -1,108 +1,108 @@
-; RUN: llc -mtriple=thumb-eabi -mcpu=arm1156t2-s -mattr=+thumb2 -arm-adjust-jump-tables=0 %s -o - | FileCheck %s
 
-; Do not use tbb / tbh if any destination is before the jumptable.
-; rdar://7102917
+
+
+
 
 define i16 @main__getopt_internal_2E_exit_2E_ce(i32, i1 %b) nounwind {
-; CHECK: main__getopt_internal_2E_exit_2E_ce
-; CHECK-NOT: tbb
-; CHECK-NOT: tbh
-; 32-bit jump tables use explicit branches, not data regions, so make sure
-; we don't annotate this region.
-; CHECK-NOT: data_region
+
+
+
+
+
+
 entry:
   br i1 %b, label %codeRepl127.exitStub, label %newFuncRoot
 
 newFuncRoot:
 	br label %_getopt_internal.exit.ce
 
-codeRepl127.exitStub:		; preds = %_getopt_internal.exit.ce
-  ; Add an explicit edge back to before the jump table to ensure this block
-  ; is placed first.
+codeRepl127.exitStub:		
+  
+  
   br i1 %b, label %newFuncRoot, label %codeRepl127.exitStub.exit
 
 codeRepl127.exitStub.exit:
 	ret i16 0
 
-parse_options.exit.loopexit.exitStub:		; preds = %_getopt_internal.exit.ce
+parse_options.exit.loopexit.exitStub:		
 	ret i16 1
 
-bb1.i.exitStub:		; preds = %_getopt_internal.exit.ce
+bb1.i.exitStub:		
 	ret i16 2
 
-bb90.i.exitStub:		; preds = %_getopt_internal.exit.ce
+bb90.i.exitStub:		
 	ret i16 3
 
-codeRepl104.exitStub:		; preds = %_getopt_internal.exit.ce
+codeRepl104.exitStub:		
 	ret i16 4
 
-codeRepl113.exitStub:		; preds = %_getopt_internal.exit.ce
+codeRepl113.exitStub:		
 	ret i16 5
 
-codeRepl51.exitStub:		; preds = %_getopt_internal.exit.ce
+codeRepl51.exitStub:		
 	ret i16 6
 
-codeRepl70.exitStub:		; preds = %_getopt_internal.exit.ce
+codeRepl70.exitStub:		
 	ret i16 7
 
-codeRepl119.exitStub:		; preds = %_getopt_internal.exit.ce
+codeRepl119.exitStub:		
 	ret i16 8
 
-codeRepl93.exitStub:		; preds = %_getopt_internal.exit.ce
+codeRepl93.exitStub:		
 	ret i16 9
 
-codeRepl101.exitStub:		; preds = %_getopt_internal.exit.ce
+codeRepl101.exitStub:		
 	ret i16 10
 
-codeRepl120.exitStub:		; preds = %_getopt_internal.exit.ce
+codeRepl120.exitStub:		
 	ret i16 11
 
-codeRepl89.exitStub:		; preds = %_getopt_internal.exit.ce
+codeRepl89.exitStub:		
 	ret i16 12
 
-codeRepl45.exitStub:		; preds = %_getopt_internal.exit.ce
+codeRepl45.exitStub:		
 	ret i16 13
 
-codeRepl58.exitStub:		; preds = %_getopt_internal.exit.ce
+codeRepl58.exitStub:		
 	ret i16 14
 
-codeRepl46.exitStub:		; preds = %_getopt_internal.exit.ce
+codeRepl46.exitStub:		
 	ret i16 15
 
-codeRepl50.exitStub:		; preds = %_getopt_internal.exit.ce
+codeRepl50.exitStub:		
 	ret i16 16
 
-codeRepl52.exitStub:		; preds = %_getopt_internal.exit.ce
+codeRepl52.exitStub:		
 	ret i16 17
 
-codeRepl53.exitStub:		; preds = %_getopt_internal.exit.ce
+codeRepl53.exitStub:		
 	ret i16 18
 
-codeRepl61.exitStub:		; preds = %_getopt_internal.exit.ce
+codeRepl61.exitStub:		
 	ret i16 19
 
-codeRepl85.exitStub:		; preds = %_getopt_internal.exit.ce
+codeRepl85.exitStub:		
 	ret i16 20
 
-codeRepl97.exitStub:		; preds = %_getopt_internal.exit.ce
+codeRepl97.exitStub:		
 	ret i16 21
 
-codeRepl79.exitStub:		; preds = %_getopt_internal.exit.ce
+codeRepl79.exitStub:		
 	ret i16 22
 
-codeRepl102.exitStub:		; preds = %_getopt_internal.exit.ce
+codeRepl102.exitStub:		
 	ret i16 23
 
-codeRepl54.exitStub:		; preds = %_getopt_internal.exit.ce
+codeRepl54.exitStub:		
 	ret i16 24
 
-codeRepl57.exitStub:		; preds = %_getopt_internal.exit.ce
+codeRepl57.exitStub:		
 	ret i16 25
 
-codeRepl103.exitStub:		; preds = %_getopt_internal.exit.ce
+codeRepl103.exitStub:		
 	ret i16 26
 
-_getopt_internal.exit.ce:		; preds = %newFuncRoot
+_getopt_internal.exit.ce:		
 	switch i32 %0, label %codeRepl127.exitStub [
 		i32 -1, label %parse_options.exit.loopexit.exitStub
 		i32 0, label %bb1.i.exitStub

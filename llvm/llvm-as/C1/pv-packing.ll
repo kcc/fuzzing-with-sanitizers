@@ -1,7 +1,7 @@
-; RUN: llc < %s -march=r600 -mcpu=cayman | FileCheck %s
 
-;CHECK: DOT4  T{{[0-9]\.X}}
-;CHECK: MULADD_IEEE * T{{[0-9]\.W}}
+
+
+
 
 define void @main(<4 x float> inreg %reg0, <4 x float> inreg %reg1, <4 x float> inreg %reg2, <4 x float> inreg %reg3) #0 {
 main_body:
@@ -35,7 +35,7 @@ main_body:
   ret void
 }
 
-; Function Attrs: readnone
+
 declare float @llvm.AMDGPU.dp4(<4 x float>, <4 x float>) #1
 
 

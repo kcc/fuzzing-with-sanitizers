@@ -1,9 +1,9 @@
-; RUN: llc < %s -march=arm64
 
-; The target lowering for integer comparisons was replacing some DAG nodes
-; during operation legalization, which resulted in dangling pointers,
-; cycles in DAGs, and eventually crashes.  This is the testcase for
-; one of those crashes. (rdar://10653656)
+
+
+
+
+
 
 define void @test(i1 zeroext %IsArrow) nounwind ssp align 2 {
 entry:

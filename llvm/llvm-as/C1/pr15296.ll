@@ -1,4 +1,4 @@
-; RUN: llc < %s -mtriple=i686-pc-linux -mcpu=corei7-avx | FileCheck %s
+
 
 define <8 x i32> @shiftInput___vyuunu(<8 x i32> %input, i32 %shiftval, <8 x i32> %__mask) nounwind {
 allocas:
@@ -14,10 +14,10 @@ allocas:
   ret <8 x i32> %bitop
 }
 
-; CHECK: shiftInput___vyuunu
-; CHECK: psrld
-; CHECK: psrld
-; CHECK: ret
+
+
+
+
 
 define <8 x i32> @shiftInput___canonical(<8 x i32> %input, i32 %shiftval, <8 x i32> %__mask) nounwind {
 allocas:
@@ -27,10 +27,10 @@ allocas:
   ret <8 x i32> %bitop
 }
 
-; CHECK: shiftInput___canonical
-; CHECK: psrld
-; CHECK: psrld
-; CHECK: ret
+
+
+
+
 
 define <4 x i64> @shiftInput___64in32bitmode(<4 x i64> %input, i64 %shiftval, <4 x i64> %__mask) nounwind {
 allocas:
@@ -40,7 +40,7 @@ allocas:
   ret <4 x i64> %bitop
 }
 
-; CHECK: shiftInput___64in32bitmode
-; CHECK: psrlq
-; CHECK: psrlq
-; CHECK: ret
+
+
+
+

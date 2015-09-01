@@ -1,10 +1,10 @@
-;RUN: llc < %s -march=r600 -mcpu=redwood | FileCheck %s
 
-;Test that a select with reversed True/False values is correctly lowered
-;to a SETNE_INT.  There should only be one SETNE_INT instruction.
 
-;CHECK: SETNE_INT T{{[0-9]+\.[XYZW], T[0-9]+\.[XYZW], T[0-9]+\.[XYZW]}}
-;CHECK-NOT: SETNE_INT
+
+
+
+
+
 
 define void @test(i32 addrspace(1)* %out, i32 addrspace(1)* %in) {
 entry:

@@ -1,5 +1,5 @@
-; RUN: llc < %s -march=ppc64 -mtriple=powerpc64-unknown-linux-gnu
-; RUN: llc < %s -march=ppc64le -mtriple=powerpc64le-unknown-linux-gnu
+
+
 
 %"class.std::__1::locale::id.1580.4307.4610.8491" = type { %"struct.std::__1::once_flag.1579.4306.4609.8490", i32 }
 %"struct.std::__1::once_flag.1579.4306.4609.8490" = type { i64 }
@@ -32,7 +32,7 @@ declare void @_ZNKSt3__18ios_base6getlocEv() #0
 
 declare void @_ZNKSt3__16locale9use_facetERNS0_2idE() #0
 
-; Function Attrs: noreturn
+
 declare void @_ZNKSt3__121__basic_string_commonILb1EE20__throw_length_errorEv() #1 align 2
 
 declare void @_ZN4Foam6string6expandEb() #0
@@ -43,7 +43,7 @@ declare void @_ZN4Foam7IOerrorclEPKcS2_iRKNS_8IOstreamE() #0
 
 declare void @_ZN4Foam7IOerror4exitEi() #0
 
-; Function Attrs: inlinehint
+
 declare void @_ZN4Foam8fileName12stripInvalidEv() #2 align 2
 
 define void @_ZN4Foam3CSVINS_6VectorIdEEE4readEv() #0 align 2 personality i8* bitcast (i32 (...)* @__gxx_personality_v0 to i8*) {
@@ -51,84 +51,84 @@ entry:
   invoke void @_ZN4Foam6string6expandEb()
           to label %invoke.cont unwind label %lpad
 
-invoke.cont:                                      ; preds = %entry
+invoke.cont:                                      
   br i1 undef, label %if.then.i.i.i.i176, label %_ZN4Foam6stringC2ERKS0_.exit.i
 
-if.then.i.i.i.i176:                               ; preds = %invoke.cont
+if.then.i.i.i.i176:                               
   invoke void @_ZNKSt3__121__basic_string_commonILb1EE20__throw_length_errorEv()
           to label %.noexc unwind label %lpad
 
-.noexc:                                           ; preds = %if.then.i.i.i.i176
+.noexc:                                           
   unreachable
 
-_ZN4Foam6stringC2ERKS0_.exit.i:                   ; preds = %invoke.cont
+_ZN4Foam6stringC2ERKS0_.exit.i:                   
   invoke void @_ZN4Foam8fileName12stripInvalidEv()
           to label %invoke.cont2 unwind label %lpad.i
 
-lpad.i:                                           ; preds = %_ZN4Foam6stringC2ERKS0_.exit.i
+lpad.i:                                           
   %0 = landingpad { i8*, i32 }
           cleanup
   br label %ehcleanup142
 
-invoke.cont2:                                     ; preds = %_ZN4Foam6stringC2ERKS0_.exit.i
+invoke.cont2:                                     
   invoke void @_ZN4Foam8IFstreamC1ERKNS_8fileNameENS_8IOstream12streamFormatENS4_13versionNumberE()
           to label %invoke.cont4 unwind label %lpad3
 
-invoke.cont4:                                     ; preds = %invoke.cont2
+invoke.cont4:                                     
   br i1 undef, label %for.body, label %if.then
 
-if.then:                                          ; preds = %invoke.cont4
+if.then:                                          
   invoke void @_ZN4Foam7IOerrorclEPKcS2_iRKNS_8IOstreamE()
           to label %invoke.cont8 unwind label %lpad5
 
-invoke.cont8:                                     ; preds = %if.then
+invoke.cont8:                                     
   invoke void @_ZN4FoamlsERNS_7OstreamEPKc()
           to label %memptr.end.i unwind label %lpad5
 
-memptr.end.i:                                     ; preds = %invoke.cont8
+memptr.end.i:                                     
   invoke void @_ZN4Foam7IOerror4exitEi()
           to label %if.end unwind label %lpad5
 
-lpad:                                             ; preds = %if.then.i.i.i.i176, %entry
+lpad:                                             
   %1 = landingpad { i8*, i32 }
           cleanup
   br label %ehcleanup142
 
-lpad3:                                            ; preds = %invoke.cont2
+lpad3:                                            
   %2 = landingpad { i8*, i32 }
           cleanup
   br label %ehcleanup142
 
-lpad5:                                            ; preds = %memptr.end.i, %invoke.cont8, %if.then
+lpad5:                                            
   %3 = landingpad { i8*, i32 }
           cleanup
   br label %ehcleanup142
 
-if.end:                                           ; preds = %memptr.end.i
+if.end:                                           
   br i1 undef, label %for.body, label %vector.body
 
-for.body:                                         ; preds = %if.end, %invoke.cont4
+for.body:                                         
   invoke void @_ZNKSt3__18ios_base6getlocEv()
           to label %.noexc205 unwind label %lpad19
 
-.noexc205:                                        ; preds = %for.body
+.noexc205:                                        
   invoke void @_ZNKSt3__16locale9use_facetERNS0_2idE()
           to label %invoke.cont.i.i.i unwind label %lpad.i.i.i
 
-invoke.cont.i.i.i:                                ; preds = %.noexc205
+invoke.cont.i.i.i:                                
   unreachable
 
-lpad.i.i.i:                                       ; preds = %.noexc205
+lpad.i.i.i:                                       
   %4 = landingpad { i8*, i32 }
           cleanup
   br label %ehcleanup142
 
-lpad19:                                           ; preds = %for.body
+lpad19:                                           
   %5 = landingpad { i8*, i32 }
           cleanup
   br label %ehcleanup142
 
-vector.body:                                      ; preds = %vector.body, %if.end
+vector.body:                                      
   %vec.phi = phi <8 x i32> [ %10, %vector.body ], [ undef, %if.end ]
   %vec.phi1302 = phi <8 x i32> [ %11, %vector.body ], [ undef, %if.end ]
   %vec.phi1303 = phi <8 x i32> [ %12, %vector.body ], [ undef, %if.end ]
@@ -143,7 +143,7 @@ vector.body:                                      ; preds = %vector.body, %if.en
   %13 = select <8 x i1> %9, <8 x i32> undef, <8 x i32> %vec.phi1304
   br label %vector.body
 
-ehcleanup142:                                     ; preds = %lpad19, %lpad.i.i.i, %lpad5, %lpad3, %lpad, %lpad.i
+ehcleanup142:                                     
   resume { i8*, i32 } undef
 }
 

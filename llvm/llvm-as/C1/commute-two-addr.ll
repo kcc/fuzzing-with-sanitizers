@@ -1,47 +1,47 @@
-; The register allocator can commute two-address instructions to avoid
-; insertion of register-register copies.
-
-; Make sure there are only 3 mov's for each testcase
-; RUN: llc < %s -mtriple=i686-pc-linux-gnu   -mcpu=corei7 | FileCheck %s -check-prefix=LINUX
-; RUN: llc < %s -mtriple=x86_64-apple-darwin -mcpu=corei7 | FileCheck %s -check-prefix=DARWIN
 
 
-@G = external global i32                ; <i32*> [#uses=2]
+
+
+
+
+
+
+@G = external global i32                
 
 declare void @ext(i32)
 
 define i32 @t1(i32 %X, i32 %Y) nounwind {
-; LINUX-LABEL: t1:
-; LINUX: movl 4(%esp), %eax
-; LINUX: movl 8(%esp), %ecx
-; LINUX: addl %eax, %ecx
-; LINUX: movl %ecx, G
-        %Z = add i32 %X, %Y             ; <i32> [#uses=1]
+
+
+
+
+
+        %Z = add i32 %X, %Y             
         store i32 %Z, i32* @G
         ret i32 %X
 }
 
 define i32 @t2(i32 %X, i32 %Y) nounwind {
-; LINUX-LABEL: t2:
-; LINUX: movl 4(%esp), %eax
-; LINUX: movl 8(%esp), %ecx
-; LINUX: xorl %eax, %ecx
-; LINUX: movl %ecx, G
-        %Z = xor i32 %X, %Y             ; <i32> [#uses=1]
+
+
+
+
+
+        %Z = xor i32 %X, %Y             
         store i32 %Z, i32* @G
         ret i32 %X
 }
 
-; rdar://8762995
+
 %0 = type { i64, i32 }
 
 define %0 @t3(i32 %lb, i8 zeroext %has_lb, i8 zeroext %lb_inclusive, i32 %ub, i8 zeroext %has_ub, i8 zeroext %ub_inclusive) nounwind {
 entry:
-; DARWIN-LABEL: t3:
-; DARWIN: shlq $32, %rcx
-; DARWIN-NEXT: leaq (%rax,%rcx), %rax
-; DARWIN-NEXT: shll $8
-; DARWIN-NOT: leaq
+
+
+
+
+
   %tmp21 = zext i32 %lb to i64
   %tmp23 = zext i32 %ub to i64
   %tmp24 = shl i64 %tmp23, 32

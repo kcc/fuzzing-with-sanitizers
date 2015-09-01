@@ -1,4 +1,4 @@
-; RUN: llc -mtriple=arm-eabi %s -o - | FileCheck %s
+
 
 	%struct.A = type { i8, i8, i8, i8, i16, i8, i8, %struct.B** }
 	%struct.B = type { float, float, i32, i32, i32, [0 x i8] }
@@ -22,9 +22,9 @@ define i32 @f2(%struct.A* %d) {
 	ret i32 %tmp57
 }
 
-; CHECK: ldrb{{.*}}7
-; CHECK-NOT: ldrb{{.*}}7
 
-; CHECK: ldrsb{{.*}}7
-; CHECK-NOT: ldrsb{{.*}}7
+
+
+
+
 

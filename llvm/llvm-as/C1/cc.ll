@@ -1,4 +1,4 @@
-; RUN: llc -mcpu=pwr7 < %s | FileCheck %s
+
 target datalayout = "E-m:e-i64:64-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
 
@@ -17,22 +17,22 @@ bar:
 end:
   ret i64 %a
 
-; CHECK-LABEL: @test1
-; CHECK: mfcr [[REG1:[0-9]+]]
-; CHECK-DAG: cmpd
-; CHECK-DAG: mfocrf [[REG2:[0-9]+]],
-; CHECK-DAG: stw [[REG1]], 8(1)
-; CHECK-DAG: stw [[REG2]], -4(1)
 
-; CHECK: sc
-; CHECK: lwz [[REG3:[0-9]+]], -4(1)
-; CHECK: mtocrf 128, [[REG3]]
 
-; CHECK: lwz [[REG4:[0-9]+]], 8(1)
-; CHECK-DAG: mtocrf 32, [[REG4]]
-; CHECK-DAG: mtocrf 16, [[REG4]]
-; CHECK-DAG: mtocrf 8, [[REG4]]
-; CHECK: blr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 define i64 @test2(i64 %a, i64 %b) {
@@ -50,21 +50,21 @@ bar:
 end:
   ret i64 %a
 
-; CHECK-LABEL: @test2
-; CHECK: mfcr [[REG1:[0-9]+]]
-; CHECK-DAG: cmpd
-; CHECK-DAG: mfocrf [[REG2:[0-9]+]],
-; CHECK-DAG: stw [[REG1]], 8(1)
-; CHECK-DAG: stw [[REG2]], -4(1)
 
-; CHECK: sc
-; CHECK: lwz [[REG3:[0-9]+]], -4(1)
-; CHECK: mtocrf 128, [[REG3]]
 
-; CHECK: lwz [[REG4:[0-9]+]], 8(1)
-; CHECK-DAG: mtocrf 32, [[REG4]]
-; CHECK-DAG: mtocrf 16, [[REG4]]
-; CHECK-DAG: mtocrf 8, [[REG4]]
-; CHECK: blr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 

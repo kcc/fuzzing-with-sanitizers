@@ -1,33 +1,33 @@
-; RUN: opt %s -sroa -verify -S -o - | FileCheck %s
-;
-; Test that we can partial emit debug info for aggregates repeatedly
-; split up by SROA.
-;
-;    // Compile with -O1
-;    typedef struct {
-;      int a;
-;      long int b;
-;    } Inner;
-;
-;    typedef struct {
-;      Inner inner[2];
-;    } Outer;
-;
-;    int foo(Outer outer) {
-;      Inner i1 = outer.inner[1];
-;      return i1.a;
-;    }
-;
 
-; Verify that SROA creates a variable piece when splitting i1.
-; CHECK: %[[I1:.*]] = alloca [12 x i8], align 4
-; CHECK: call void @llvm.dbg.declare(metadata [12 x i8]* %[[I1]], metadata ![[VAR:[0-9]+]], metadata ![[PIECE1:[0-9]+]])
-; CHECK: call void @llvm.dbg.value(metadata i32 %[[A:.*]], i64 0, metadata ![[VAR]], metadata ![[PIECE2:[0-9]+]])
-; CHECK: ret i32 %[[A]]
-; Read Var and Piece:
-; CHECK: ![[VAR]] = !DILocalVariable(name: "i1",{{.*}} line: 11,
-; CHECK: ![[PIECE1]] = !DIExpression(DW_OP_bit_piece, 32, 96)
-; CHECK: ![[PIECE2]] = !DIExpression(DW_OP_bit_piece, 0, 32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.9.0"
@@ -35,7 +35,7 @@ target triple = "x86_64-apple-macosx10.9.0"
 %struct.Outer = type { [2 x %struct.Inner] }
 %struct.Inner = type { i32, i64 }
 
-; Function Attrs: nounwind ssp uwtable
+
 define i32 @foo(%struct.Outer* byval align 8 %outer) #0 {
 entry:
   %i1 = alloca %struct.Inner, align 8
@@ -51,10 +51,10 @@ entry:
   ret i32 %2, !dbg !29
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
-; Function Attrs: nounwind
+
 declare void @llvm.memcpy.p0i8.p0i8.i64(i8* nocapture, i8* nocapture readonly, i64, i32, i1) #2
 
 attributes #0 = { nounwind ssp uwtable }

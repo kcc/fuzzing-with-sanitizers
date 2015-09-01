@@ -1,6 +1,6 @@
-; RUN: opt -verify-loop-info -irce-print-changed-loops -irce < %s 2>&1 | FileCheck %s
 
-; CHECK-NOT: constrained Loop
+
+
 
 define void @multiple_access_no_preloop(
     i32* %arr_a, i32* %a_len_ptr, i32* %arr_b, i32* %b_len_ptr, i32 %n) {

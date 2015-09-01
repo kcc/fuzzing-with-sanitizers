@@ -1,61 +1,61 @@
-; REQUIRES: object-emission, native
-;
-; RUN: llvm-link %s %p/type-unique-odr-b.ll -S -o - | %llc_dwarf -dwarf-linkage-names=Enable -filetype=obj -O0 | llvm-dwarfdump -debug-dump=info - | FileCheck %s
-;
-; Test ODR-based type uniquing for C++ class members.
-; rdar://problem/15851313.
-;
-; $ cat -n type-unique-odr-a.cpp
-;     1	class A {
-;     2	  int data;
-;     3	protected:
-;     4	  void getFoo();
-;     5	};
-;     6
-;     7	static void bar() {
-;     8	  A a;
-;     9	}
-;    10
-;    11	void baz() { bar(); }
-;; #include "ab.h"
-; foo_t bar() {
-;     return A().getFoo();
-; }
-;
-; CHECK:      DW_TAG_class_type
-; CHECK-NEXT:   DW_AT_name {{.*}} "A"
-; CHECK-NOT:  DW_TAG
-; CHECK:      DW_TAG_member
-; CHECK-NEXT:   DW_AT_name {{.*}} "data"
-; CHECK-NOT:  DW_TAG
-; CHECK:      DW_TAG_subprogram
-; CHECK-NOT: DW_TAG
-; CHECK:   DW_AT_linkage_name {{.*}} "_ZN1A6getFooEv"
-; CHECK-NOT: DW_TAG
-; CHECK:   DW_AT_name {{.*}} "getFoo"
-; CHECK:      DW_TAG_subprogram
-; CHECK-NOT: DW_TAG
-; CHECK:   DW_AT_linkage_name {{.*}} "_Z3bazv"
-; CHECK:      DW_TAG_subprogram
-; CHECK-NOT: DW_TAG
-; CHECK:   DW_AT_linkage_name {{.*}} "_ZL3barv"
-
-; getFoo and A may only appear once.
-; CHECK-NOT:  AT_name{{.*(getFoo)|("A")}}
 
 
-; ModuleID = 'type-unique-odr-a.cpp'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %class.A = type { i32 }
 
-; Function Attrs: nounwind
+
 define void @_Z3bazv() #0 {
 entry:
   call void @_ZL3barv(), !dbg !23
   ret void, !dbg !23
 }
 
-; Function Attrs: nounwind
+
 define internal void @_ZL3barv() #0 {
 entry:
   %a = alloca %class.A, align 4
@@ -63,7 +63,7 @@ entry:
   ret void, !dbg !26
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
 attributes #0 = { nounwind }

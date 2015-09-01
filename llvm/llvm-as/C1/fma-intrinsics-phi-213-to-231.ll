@@ -1,7 +1,7 @@
-; RUN: llc < %s -mtriple=x86_64-unknown-unknown -mattr=+avx2,+fma | FileCheck %s
 
-; CHECK-LABEL: fmaddsubpd_loop:
-; CHECK:   vfmaddsub231pd        %ymm{{[0-9]+}}, %ymm{{[0-9]+}}, %ymm{{[0-9]+}}
+
+
+
 define <4 x double> @fmaddsubpd_loop(i32 %iter, <4 x double> %a, <4 x double> %b, <4 x double> %c) {
 entry:
   br label %for.cond
@@ -24,8 +24,8 @@ for.end:
   ret <4 x double> %c.addr.0
 }
 
-; CHECK-LABEL: fmsubaddpd_loop:
-; CHECK:   vfmsubadd231pd        %ymm{{[0-9]+}}, %ymm{{[0-9]+}}, %ymm{{[0-9]+}}
+
+
 define <4 x double> @fmsubaddpd_loop(i32 %iter, <4 x double> %a, <4 x double> %b, <4 x double> %c) {
 entry:
   br label %for.cond
@@ -48,8 +48,8 @@ for.end:
   ret <4 x double> %c.addr.0
 }
 
-; CHECK-LABEL: fmaddpd_loop:
-; CHECK:   vfmadd231pd        %ymm{{[0-9]+}}, %ymm{{[0-9]+}}, %ymm{{[0-9]+}}
+
+
 define <4 x double> @fmaddpd_loop(i32 %iter, <4 x double> %a, <4 x double> %b, <4 x double> %c) {
 entry:
   br label %for.cond
@@ -72,8 +72,8 @@ for.end:
   ret <4 x double> %c.addr.0
 }
 
-; CHECK-LABEL: fmsubpd_loop:
-; CHECK:   vfmsub231pd        %ymm{{[0-9]+}}, %ymm{{[0-9]+}}, %ymm{{[0-9]+}}
+
+
 define <4 x double> @fmsubpd_loop(i32 %iter, <4 x double> %a, <4 x double> %b, <4 x double> %c) {
 entry:
   br label %for.cond
@@ -102,8 +102,8 @@ declare <4 x double> @llvm.x86.fma.vfmadd.pd.256(<4 x double>, <4 x double>, <4 
 declare <4 x double> @llvm.x86.fma.vfmsub.pd.256(<4 x double>, <4 x double>, <4 x double>)
 
 
-; CHECK-LABEL: fmaddsubps_loop:
-; CHECK:   vfmaddsub231ps        %ymm{{[0-9]+}}, %ymm{{[0-9]+}}, %ymm{{[0-9]+}}
+
+
 define <8 x float> @fmaddsubps_loop(i32 %iter, <8 x float> %a, <8 x float> %b, <8 x float> %c) {
 entry:
   br label %for.cond
@@ -126,8 +126,8 @@ for.end:
   ret <8 x float> %c.addr.0
 }
 
-; CHECK-LABEL: fmsubaddps_loop:
-; CHECK:   vfmsubadd231ps        %ymm{{[0-9]+}}, %ymm{{[0-9]+}}, %ymm{{[0-9]+}}
+
+
 define <8 x float> @fmsubaddps_loop(i32 %iter, <8 x float> %a, <8 x float> %b, <8 x float> %c) {
 entry:
   br label %for.cond
@@ -150,8 +150,8 @@ for.end:
   ret <8 x float> %c.addr.0
 }
 
-; CHECK-LABEL: fmaddps_loop:
-; CHECK:   vfmadd231ps        %ymm{{[0-9]+}}, %ymm{{[0-9]+}}, %ymm{{[0-9]+}}
+
+
 define <8 x float> @fmaddps_loop(i32 %iter, <8 x float> %a, <8 x float> %b, <8 x float> %c) {
 entry:
   br label %for.cond
@@ -174,8 +174,8 @@ for.end:
   ret <8 x float> %c.addr.0
 }
 
-; CHECK-LABEL: fmsubps_loop:
-; CHECK:   vfmsub231ps        %ymm{{[0-9]+}}, %ymm{{[0-9]+}}, %ymm{{[0-9]+}}
+
+
 define <8 x float> @fmsubps_loop(i32 %iter, <8 x float> %a, <8 x float> %b, <8 x float> %c) {
 entry:
   br label %for.cond

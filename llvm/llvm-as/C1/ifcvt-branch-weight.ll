@@ -1,4 +1,4 @@
-; RUN: llc < %s -mtriple=thumbv8 -print-machineinstrs=if-converter -arm-atomic-cfg-tidy=0 -o /dev/null 2>&1 | FileCheck %s
+
 
 %struct.S = type { i8* (i8*)*, [1 x i8] }
 define internal zeroext i8 @bar(%struct.S* %x, %struct.S* nocapture %y) nounwind readonly {
@@ -18,8 +18,8 @@ bb:
   %9 = icmp eq i32 %8, 0
   br i1 %9, label %return, label %bb2
 
-; CHECK: BB#2: derived from LLVM BB %bb2
-; CHECK: Successors according to CFG: BB#3(192) BB#4(192)
+
+
 
 bb2:
   %v10 = icmp eq i32 %3, 16

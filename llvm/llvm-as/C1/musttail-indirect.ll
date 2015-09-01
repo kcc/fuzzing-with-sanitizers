@@ -1,33 +1,33 @@
-; RUN: llc < %s -mtriple=i686-win32 | FileCheck %s
-; RUN: llc < %s -mtriple=i686-win32 -O0 | FileCheck %s
 
-; IR simplified from the following C++ snippet compiled for i686-windows-msvc:
 
-; struct A { A(); ~A(); int a; };
-;
-; struct B {
-;   virtual int  f(int);
-;   virtual int  g(A, int, A);
-;   virtual void h(A, int, A);
-;   virtual A    i(A, int, A);
-;   virtual A    j(int);
-; };
-;
-; int  (B::*mp_f)(int)       = &B::f;
-; int  (B::*mp_g)(A, int, A) = &B::g;
-; void (B::*mp_h)(A, int, A) = &B::h;
-; A    (B::*mp_i)(A, int, A) = &B::i;
-; A    (B::*mp_j)(int)       = &B::j;
 
-; Each member pointer creates a thunk.  The ones with inalloca are required to
-; tail calls by the ABI, even at O0.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %struct.B = type { i32 (...)** }
 %struct.A = type { i32 }
 
-; CHECK-LABEL: f_thunk:
-; CHECK: jmpl
-; CHECK-NOT: ret
+
+
+
 define x86_thiscallcc i32 @f_thunk(%struct.B* %this, i32) {
 entry:
   %1 = bitcast %struct.B* %this to i32 (%struct.B*, i32)***
@@ -37,11 +37,11 @@ entry:
   ret i32 %3
 }
 
-; Inalloca thunks shouldn't require any stores to the stack.
-; CHECK-LABEL: g_thunk:
-; CHECK-NOT: mov %{{.*}}, {{.*(.*esp.*)}}
-; CHECK: jmpl
-; CHECK-NOT: ret
+
+
+
+
+
 define x86_thiscallcc i32 @g_thunk(%struct.B* %this, <{ %struct.A, i32, %struct.A }>* inalloca) {
 entry:
   %1 = bitcast %struct.B* %this to i32 (%struct.B*, <{ %struct.A, i32, %struct.A }>*)***
@@ -52,10 +52,10 @@ entry:
   ret i32 %3
 }
 
-; CHECK-LABEL: h_thunk:
-; CHECK: jmpl
-; CHECK-NOT: mov %{{.*}}, {{.*(.*esp.*)}}
-; CHECK-NOT: ret
+
+
+
+
 define x86_thiscallcc void @h_thunk(%struct.B* %this, <{ %struct.A, i32, %struct.A }>* inalloca) {
 entry:
   %1 = bitcast %struct.B* %this to void (%struct.B*, <{ %struct.A, i32, %struct.A }>*)***
@@ -66,10 +66,10 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: i_thunk:
-; CHECK-NOT: mov %{{.*}}, {{.*(.*esp.*)}}
-; CHECK: jmpl
-; CHECK-NOT: ret
+
+
+
+
 define x86_thiscallcc %struct.A* @i_thunk(%struct.B* %this, <{ %struct.A*, %struct.A, i32, %struct.A }>* inalloca) {
 entry:
   %1 = bitcast %struct.B* %this to %struct.A* (%struct.B*, <{ %struct.A*, %struct.A, i32, %struct.A }>*)***
@@ -80,9 +80,9 @@ entry:
   ret %struct.A* %3
 }
 
-; CHECK-LABEL: j_thunk:
-; CHECK: jmpl
-; CHECK-NOT: ret
+
+
+
 define x86_thiscallcc void @j_thunk(%struct.A* noalias sret %agg.result, %struct.B* %this, i32) {
 entry:
   %1 = bitcast %struct.B* %this to void (%struct.A*, %struct.B*, i32)***
@@ -93,10 +93,10 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: _stdcall_thunk@8:
-; CHECK-NOT: mov %{{.*}}, {{.*(.*esp.*)}}
-; CHECK: jmpl
-; CHECK-NOT: ret
+
+
+
+
 define x86_stdcallcc i32 @stdcall_thunk(<{ %struct.B*, %struct.A }>* inalloca) {
 entry:
   %this_ptr = getelementptr inbounds <{ %struct.B*, %struct.A }>, <{ %struct.B*, %struct.A }>* %0, i32 0, i32 0
@@ -109,10 +109,10 @@ entry:
   ret i32 %3
 }
 
-; CHECK-LABEL: @fastcall_thunk@8:
-; CHECK-NOT: mov %{{.*}}, {{.*(.*esp.*)}}
-; CHECK: jmpl
-; CHECK-NOT: ret
+
+
+
+
 define x86_fastcallcc i32 @fastcall_thunk(%struct.B* inreg %this, <{ %struct.A }>* inalloca) {
 entry:
   %1 = bitcast %struct.B* %this to i32 (%struct.B*, <{ %struct.A }>*)***

@@ -1,41 +1,41 @@
-; RUN: llc -mtriple=thumbv6-apple-darwin10 < %s | FileCheck %s
-; RUN: opt -strip-debug < %s | llc -mtriple=thumbv6-apple-darwin10 | FileCheck %s
-; Stripping out debug info formerly caused the last two multiplies to be emitted in
-; the other order.  7797940 (part of it dated 6/29/2010..7/15/2010).
+
+
+
+
 
 %0 = type { [3 x double] }
 
-@llvm.used = appending global [1 x i8*] [i8* bitcast (void (%0*, i32, i32)* @_Z19getClosestDiagonal3ii to i8*)], section "llvm.metadata" ; <[1 x i8*]*> [#uses=0]
+@llvm.used = appending global [1 x i8*] [i8* bitcast (void (%0*, i32, i32)* @_Z19getClosestDiagonal3ii to i8*)], section "llvm.metadata" 
 
 define void @_Z19getClosestDiagonal3ii(%0* noalias sret, i32, i32) nounwind {
-; CHECK: blx ___muldf3
-; CHECK: blx ___muldf3
-; CHECK: beq LBB0
-; CHECK: blx ___muldf3
-; <label>:3
+
+
+
+
+
   switch i32 %1, label %4 [
     i32 0, label %5
     i32 3, label %5
   ]
 
-; <label>:4                                       ; preds = %3
+
   br label %5, !dbg !0
 
-; <label>:5                                       ; preds = %4, %3, %3
-  %storemerge = phi double [ -1.000000e+00, %4 ], [ 1.000000e+00, %3 ], [ 1.000000e+00, %3 ] ; <double> [#uses=1]
-  %v_6 = icmp slt i32 %1, 2                         ; <i1> [#uses=1]
-  %storemerge1 = select i1 %v_6, double 1.000000e+00, double -1.000000e+00 ; <double> [#uses=3]
+
+  %storemerge = phi double [ -1.000000e+00, %4 ], [ 1.000000e+00, %3 ], [ 1.000000e+00, %3 ] 
+  %v_6 = icmp slt i32 %1, 2                         
+  %storemerge1 = select i1 %v_6, double 1.000000e+00, double -1.000000e+00 
   call void @llvm.dbg.value(metadata double %storemerge, i64 0, metadata !91, metadata !DIExpression()), !dbg !0
-  %v_7 = icmp eq i32 %2, 1, !dbg !92                ; <i1> [#uses=1]
-  %storemerge2 = select i1 %v_7, double 1.000000e+00, double -1.000000e+00 ; <double> [#uses=3]
-  %v_8 = getelementptr inbounds %0, %0* %0, i32 0, i32 0, i32 0 ; <double*> [#uses=1]
-  %v_10 = getelementptr inbounds %0, %0* %0, i32 0, i32 0, i32 2 ; <double*> [#uses=1]
-  %v_11 = fmul double %storemerge1, %storemerge1, !dbg !93 ; <double> [#uses=1]
-  %v_15 = tail call double @sqrt(double %v_11) nounwind readonly, !dbg !93 ; <double> [#uses=1]
-  %v_16 = fdiv double 1.000000e+00, %v_15, !dbg !93   ; <double> [#uses=3]
-  %v_17 = fmul double %storemerge, %v_16, !dbg !97    ; <double> [#uses=1]
+  %v_7 = icmp eq i32 %2, 1, !dbg !92                
+  %storemerge2 = select i1 %v_7, double 1.000000e+00, double -1.000000e+00 
+  %v_8 = getelementptr inbounds %0, %0* %0, i32 0, i32 0, i32 0 
+  %v_10 = getelementptr inbounds %0, %0* %0, i32 0, i32 0, i32 2 
+  %v_11 = fmul double %storemerge1, %storemerge1, !dbg !93 
+  %v_15 = tail call double @sqrt(double %v_11) nounwind readonly, !dbg !93 
+  %v_16 = fdiv double 1.000000e+00, %v_15, !dbg !93   
+  %v_17 = fmul double %storemerge, %v_16, !dbg !97    
   store double %v_17, double* %v_8, align 4, !dbg !97
-  %v_19 = fmul double %storemerge2, %v_16, !dbg !97   ; <double> [#uses=1]
+  %v_19 = fmul double %storemerge2, %v_16, !dbg !97   
   store double %v_19, double* %v_10, align 4, !dbg !97
   ret void, !dbg !98
 }

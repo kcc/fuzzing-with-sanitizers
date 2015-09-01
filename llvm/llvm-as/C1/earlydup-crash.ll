@@ -1,6 +1,6 @@
-; RUN: llc %s -mtriple=i386-apple-macosx10.6.7 -o /dev/null
 
-; This used to crash because early dup was not ignoring debug instructions.
+
+
 
 %struct.cpp_dir = type { %struct.cpp_dir*, i8*, i32, i8, i8**, i8*, i8* (i8*, %struct.cpp_dir*)*, i64, i32, i8 }
 
@@ -10,33 +10,33 @@ define internal i8* @framework_construct_pathname(i8* %fname, %struct.cpp_dir* %
 entry:
   br i1 undef, label %bb33, label %bb
 
-bb:                                               ; preds = %entry
+bb:                                               
   %tmp = icmp eq i32 undef, 0
   %tmp1 = add i32 0, 11
   call void @llvm.dbg.value(metadata i32 %tmp1, i64 0, metadata !0, metadata !DIExpression()), !dbg !DILocation(scope: !1)
   br i1 undef, label %bb18, label %bb31.preheader
 
-bb31.preheader:                                   ; preds = %bb19, %bb
+bb31.preheader:                                   
   %tmp2 = getelementptr inbounds i8, i8* %fname, i32 0
   br label %bb31
 
-bb18:                                             ; preds = %bb
+bb18:                                             
   %tmp3 = icmp eq i32 undef, 0
   br i1 %tmp3, label %bb19, label %bb33
 
-bb19:                                             ; preds = %bb18
+bb19:                                             
   call void @foobar(i32 0)
   br label %bb31.preheader
 
-bb22:                                             ; preds = %bb31
+bb22:                                             
   %tmp4 = add i32 0, %tmp1
   call void @foobar(i32 %tmp4)
   br i1 undef, label %bb33, label %bb31
 
-bb31:                                             ; preds = %bb22, %bb31.preheader
+bb31:                                             
   br i1 false, label %bb33, label %bb22
 
-bb33:                                             ; preds = %bb31, %bb22, %bb18, %entry
+bb33:                                             
   ret i8* undef
 }
 

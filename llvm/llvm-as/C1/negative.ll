@@ -1,4 +1,4 @@
-; RUN: opt -S  -loop-reroll   %s | FileCheck %s
+
 target triple = "aarch64--linux-gnu"
 @buf = global [16 x i8] c"\0A\0A\0A\0A\0A\0A\0A\0A\0A\0A\0A\0A\0A\0A\0A\0A", align 1
 
@@ -7,16 +7,16 @@ entry:
   %cmp.13 = icmp sgt i32 %len, 1
   br i1 %cmp.13, label %while.body.lr.ph, label %while.end
 
-while.body.lr.ph:                                 ; preds = %entry
+while.body.lr.ph:                                 
   br label %while.body
 
 while.body:
-;CHECK-LABEL: while.body:
-;CHECK-NEXT:    %indvar = phi i32 [ %indvar.next, %while.body ], [ 0, %while.body.lr.ph ]
-;CHECK-NEXT:    %sum4.015 = phi i64 [ 0, %while.body.lr.ph ], [ %add, %while.body ]
-;CHECK-NOT:     %sub5 = add nsw i32 %len.addr.014, -1
-;CHECK-NOT:     %sub5 = add nsw i32 %len.addr.014, -2
-;CHECK:    br i1 %exitcond, label %while.cond.while.end_crit_edge, label %while.body
+
+
+
+
+
+
 
   %sum4.015 = phi i64 [ 0, %while.body.lr.ph ], [ %add4, %while.body ]
   %len.addr.014 = phi i32 [ %len, %while.body.lr.ph ], [ %sub5, %while.body ]
@@ -35,12 +35,12 @@ while.body:
   %cmp = icmp sgt i32 %sub5, 1
   br i1 %cmp, label %while.body, label %while.cond.while.end_crit_edge
 
-while.cond.while.end_crit_edge:                   ; preds = %while.body
+while.cond.while.end_crit_edge:                   
   %add4.lcssa = phi i64 [ %add4, %while.body ]
   %phitmp = trunc i64 %add4.lcssa to i32
   br label %while.end
 
-while.end:                                        ; preds = %while.cond.while.end_crit_edge, %entry
+while.end:                                        
   %sum4.0.lcssa = phi i32 [ %phitmp, %while.cond.while.end_crit_edge ], [ 0, %entry ]
   ret i32 %sum4.0.lcssa
   unreachable

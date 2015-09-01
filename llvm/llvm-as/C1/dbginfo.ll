@@ -1,4 +1,4 @@
-; RUN: opt < %s -simplifycfg -S | not grep "br label"
+
 
 	%llvm.dbg.anchor.type = type { i32, i32 }
 	%llvm.dbg.basictype.type = type { i32, { }*, i8*, { }*, i32, i64, i64, i64, i32, i32 }
@@ -44,7 +44,7 @@
 	%"struct.std::num_put<char,std::ostreambuf_iterator<char, std::char_traits<char> > >" = type { %"struct.std::locale::facet" }
 	%"struct.std::numeric_limits<double>" = type <{ i8 }>
 	%"struct.std::type_info" = type { i32 (...)**, i8* }
-@llvm.dbg.subprogram947 = external constant %llvm.dbg.subprogram.type		; <%llvm.dbg.subprogram.type*> [#uses=1]
+@llvm.dbg.subprogram947 = external constant %llvm.dbg.subprogram.type		
 
 declare void @llvm.dbg.func.start({ }*) nounwind
 
@@ -54,18 +54,18 @@ declare void @_ZN9__gnu_cxx13new_allocatorIP5SceneED2Ev(%struct.__false_type*) n
 
 define void @_ZNSaIP5SceneED1Ev(%struct.__false_type* %this) nounwind {
 entry:
-	%this_addr = alloca %struct.__false_type*		; <%struct.__false_type**> [#uses=2]
-	%"alloca point" = bitcast i32 0 to i32		; <i32> [#uses=0]
+	%this_addr = alloca %struct.__false_type*		
+	%"alloca point" = bitcast i32 0 to i32		
 	call void @llvm.dbg.func.start({ }* bitcast (%llvm.dbg.subprogram.type* @llvm.dbg.subprogram947 to { }*))
 	store %struct.__false_type* %this, %struct.__false_type** %this_addr
-	%0 = load %struct.__false_type*, %struct.__false_type** %this_addr, align 4		; <%struct.__false_type*> [#uses=1]
+	%0 = load %struct.__false_type*, %struct.__false_type** %this_addr, align 4		
 	call void @_ZN9__gnu_cxx13new_allocatorIP5SceneED2Ev(%struct.__false_type* %0) nounwind
 	br label %bb
 
-bb:		; preds = %entry
+bb:		
 	br label %return
 
-return:		; preds = %bb
+return:		
 	call void @llvm.dbg.region.end({ }* bitcast (%llvm.dbg.subprogram.type* @llvm.dbg.subprogram947 to { }*))
 	ret void
 }

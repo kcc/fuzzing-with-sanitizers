@@ -1,30 +1,30 @@
-; RUN: opt -mtriple=x86_64-pc-windows-msvc -winehprepare -S -o - < %s | FileCheck %s
 
-; This test is based on the following code:
-;
-; void test()
-; {
-;   try {
-;     may_throw();
-;   } catch (...) {
-;     handle_exception();
-;   }
-; }
-;
-; Parts of the IR have been hand-edited to simplify the test case.
-; The full IR will be restored when Windows C++ EH support is complete.
 
-; ModuleID = 'catch-all.cpp'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-pc-windows-msvc"
 
-; The function entry in this case remains unchanged.
-; CHECK: define void @_Z4testv()
-; CHECK: entry:
-; CHECK:   invoke void @_Z9may_throwv()
-; CHECK:           to label %invoke.cont unwind label %[[LPAD_LABEL:lpad[0-9]*]]
 
-; Function Attrs: uwtable
+
+
+
+
+
+
 define void @_Z4testv() #0 personality i8* bitcast (i32 (...)* @__CxxFrameHandler3 to i8*) {
 entry:
   %exn.slot = alloca i8*
@@ -32,16 +32,16 @@ entry:
   invoke void @_Z9may_throwv()
           to label %invoke.cont unwind label %lpad
 
-invoke.cont:                                      ; preds = %entry
+invoke.cont:                                      
   br label %try.cont
 
-; CHECK: [[LPAD_LABEL]]:{{[ ]+}}; preds = %entry
-; CHECK:   landingpad { i8*, i32 }
-; CHECK-NEXT:           catch i8* null
-; CHECK-NEXT:   [[RECOVER:\%.+]] = call i8* (...) @llvm.eh.actions(i32 1, i8* null, i32 -1, i8* (i8*, i8*)* @_Z4testv.catch)
-; CHECK-NEXT:   indirectbr i8* [[RECOVER]], [label %try.cont]
 
-lpad:                                             ; preds = %entry
+
+
+
+
+
+lpad:                                             
   %tmp = landingpad { i8*, i32 }
           catch i8* null
   %tmp1 = extractvalue { i8*, i32 } %tmp, 0
@@ -50,31 +50,31 @@ lpad:                                             ; preds = %entry
   store i32 %tmp2, i32* %ehselector.slot
   br label %catch
 
-; CHECK-NOT: catch:
 
-catch:                                            ; preds = %lpad
+
+catch:                                            
   %exn = load i8*, i8** %exn.slot
   call void @llvm.eh.begincatch(i8* %exn, i8* null) #2
   call void @_Z16handle_exceptionv()
   br label %invoke.cont2
 
-; CHECK-NOT: invoke.cont2:
 
-invoke.cont2:                                     ; preds = %catch
+
+invoke.cont2:                                     
   call void @llvm.eh.endcatch()
   br label %try.cont
 
-try.cont:                                         ; preds = %invoke.cont2, %invoke.cont
+try.cont:                                         
   ret void
 
-; CHECK: }
+
 }
 
-; CHECK: define internal i8* @_Z4testv.catch(i8*, i8*)
-; CHECK: entry:
-; CHECK:   call void @_Z16handle_exceptionv()
-; CHECK:   ret i8* blockaddress(@_Z4testv, %try.cont)
-; CHECK: }
+
+
+
+
+
 
 declare void @_Z9may_throwv() #1
 

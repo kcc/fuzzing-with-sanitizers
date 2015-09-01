@@ -1,6 +1,6 @@
-; RUN: opt < %s -instcombine -S | FileCheck %s
-; These tests check the optimizations specific to
-; pointers being relocated at a statepoint.
+
+
+
 
 
 declare void @func()
@@ -11,9 +11,9 @@ entry:
   %pnew = call i32 addrspace(1)* @llvm.experimental.gc.relocate.p1i32(i32 %safepoint_token,  i32 7, i32 7)
   %cmp = icmp eq i32 addrspace(1)* %pnew, null
   ret i1 %cmp
-; CHECK-LABEL: test_negative
-; CHECK: %pnew = call i32 addrspace(1)*
-; CHECK: ret i1 %cmp
+
+
+
 }
 
 define i1 @test_nonnull(i32 addrspace(1)* nonnull %p) gc "statepoint-example" {
@@ -22,8 +22,8 @@ entry:
   %pnew = call i32 addrspace(1)* @llvm.experimental.gc.relocate.p1i32(i32 %safepoint_token,  i32 7, i32 7)
   %cmp = icmp eq i32 addrspace(1)* %pnew, null
   ret i1 %cmp
-; CHECK-LABEL: test_nonnull
-; CHECK: ret i1 false
+
+
 }
 
 define i1 @test_null() gc "statepoint-example" {
@@ -32,9 +32,9 @@ entry:
   %pnew = call i32 addrspace(1)* @llvm.experimental.gc.relocate.p1i32(i32 %safepoint_token,  i32 7, i32 7)
   %cmp = icmp eq i32 addrspace(1)* %pnew, null
   ret i1 %cmp
-; CHECK-LABEL: test_null
-; CHECK-NOT: %pnew
-; CHECK: ret i1 true
+
+
+
 }
 
 define i1 @test_undef() gc "statepoint-example" {
@@ -43,9 +43,9 @@ entry:
   %pnew = call i32 addrspace(1)* @llvm.experimental.gc.relocate.p1i32(i32 %safepoint_token,  i32 7, i32 7)
   %cmp = icmp eq i32 addrspace(1)* %pnew, null
   ret i1 %cmp
-; CHECK-LABEL: test_undef
-; CHECK-NOT: %pnew
-; CHECK: ret i1 undef
+
+
+
 }
 
 declare i32 @llvm.experimental.gc.statepoint.p0f_isVoidf(i64, i32, void ()*, i32, i32, ...)

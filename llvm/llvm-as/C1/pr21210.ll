@@ -1,10 +1,10 @@
-; RUN: opt < %s -mtriple=x86_64-unknown-linux-gnu -instcombine -S | FileCheck %s
-; Checks that the select-icmp optimization is safe in two cases
+
+
 declare void @foo(i32)
 declare i32 @bar(i32)
 
-; don't replace 'cond' by 'len' in the home block ('bb') that
-; contains the select
+
+
 define void @test1(i32 %len) {
 entry:
   br label %bb
@@ -18,16 +18,16 @@ bb:
 
 for.end:
   ret void
-; CHECK: select
-; CHECK: icmp eq i32 %cond, 8
+
+
 }
 
-; don't replace 'cond' by 'len' in a block ('b1') that dominates all uses
-; of the select outside the home block ('bb'), but can be reached from the home
-; block on another path ('bb -> b0 -> b1')
+
+
+
 define void @test2(i32 %len) {
 entry:
-  %0 = call i32 @bar(i32 %len);
+  %0 = call i32 @bar(i32 %len)
   %cmp = icmp ult i32 %len, 4
   br i1 %cmp, label %bb, label %b1
 bb:
@@ -40,7 +40,7 @@ b0:
   br label %b1
 
 b1:
-; CHECK: phi i32 [ %cond, %bb ], [ undef, %b0 ], [ %0, %entry ]
+
   %1 = phi i32 [ %cond, %bb ], [ undef, %b0 ], [ %0, %entry ]
   br label %ret
 

@@ -1,4 +1,4 @@
-; RUN: opt -S -simplifycfg < %s | FileCheck %s
+
 
 define zeroext i1 @test1(i32 %x) nounwind readnone ssp noredzone {
 entry:
@@ -15,9 +15,9 @@ lor.end:
  %0 = phi i1 [ true, %entry ], [ false, %lor.rhs ], [ true, %entry ], [ true, %entry ]
  ret i1 %0
 
-; CHECK-LABEL: @test1(
-; CHECK: %x.off = add i32 %x, -1
-; CHECK: %switch = icmp ult i32 %x.off, 3
+
+
+
 }
 
 define zeroext i1 @test2(i32 %x) nounwind readnone ssp noredzone {
@@ -34,8 +34,8 @@ lor.end:
  %0 = phi i1 [ true, %entry ], [ false, %lor.rhs ], [ true, %entry ]
  ret i1 %0
 
-; CHECK-LABEL: @test2(
-; CHECK: %switch = icmp ult i32 %x, 2
+
+
 }
 
 define i32 @test3(i1 %flag) {
@@ -51,7 +51,7 @@ good:
 bad:
  ret i32 1
 
-; CHECK-LABEL: @test3(
-; CHECK: entry:
-; CHECK-NEXT: ret i32 0
+
+
+
 }

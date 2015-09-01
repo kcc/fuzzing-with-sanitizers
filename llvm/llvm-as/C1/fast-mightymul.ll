@@ -1,5 +1,5 @@
-; RUN: opt < %s -reassociate -disable-output
-; PR13021
+
+
 
 define float @test2(float %x) {
   %t0 = fmul fast float %x, %x

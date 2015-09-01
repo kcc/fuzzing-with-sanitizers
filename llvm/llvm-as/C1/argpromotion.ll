@@ -1,4 +1,4 @@
-; RUN: opt < %s -argpromotion
+
 
 declare void @llvm.gcroot(i8**, i8*)
 

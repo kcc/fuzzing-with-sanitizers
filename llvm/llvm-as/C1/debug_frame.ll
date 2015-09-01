@@ -1,8 +1,8 @@
-; RUN: llc %s -mtriple=i686-pc-linux-gnu -o - | FileCheck %s
 
-; Test that we produce a .debug_frame, not an .eh_frame
 
-; CHECK: .cfi_sections .debug_frame
+
+
+
 
 define void @f() nounwind {
 entry:

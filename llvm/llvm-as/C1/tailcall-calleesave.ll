@@ -1,4 +1,4 @@
-; RUN: llc -march=x86 -tailcallopt -mcpu=core < %s | FileCheck %s
+
 
 target triple = "i686-apple-darwin"
 
@@ -6,10 +6,10 @@ declare fastcc void @foo(i32, i32, i32, i32, i32, i32)
 declare i32* @bar(i32*)
 
 define fastcc void @hoge(i32 %b) nounwind {
-; Do not overwrite pushed callee-save registers
-; CHECK: pushl
-; CHECK: subl $[[SIZE:[0-9]+]], %esp
-; CHECK-NOT: [[SIZE]](%esp)
+
+
+
+
   %a = alloca i32
   store i32 0, i32* %a
   %d = tail call i32* @bar(i32* %a) nounwind

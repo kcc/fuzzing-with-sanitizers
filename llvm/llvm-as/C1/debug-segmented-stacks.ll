@@ -1,5 +1,5 @@
-; RUN: llc < %s -mtriple=arm-linux-unknown-gnueabi -verify-machineinstrs -filetype=asm | FileCheck %s -check-prefix=ARM-linux
-; RUN: llc < %s -mtriple=arm-linux-unknown-gnueabi -filetype=obj
+
+
 
 !llvm.dbg.cu = !{!0}
 !llvm.module.flags = !{!9, !10}
@@ -10,33 +10,33 @@ define void @test_basic() #0 {
         call void @dummy_use (i32* %mem, i32 10)
 	ret void
 
-; ARM-linux:      test_basic:
 
-; ARM-linux:      push    {r4, r5}
-; ARM-linux:      .cfi_def_cfa_offset 8
-; ARM-linux:      .cfi_offset r5, -4
-; ARM-linux:      .cfi_offset r4, -8
-; ARM-linux-NEXT: mrc     p15, #0, r4, c13, c0, #3
-; ARM-linux-NEXT: mov     r5, sp
-; ARM-linux-NEXT: ldr     r4, [r4, #4]
-; ARM-linux-NEXT: cmp     r4, r5
-; ARM-linux-NEXT: blo     .LBB0_2
 
-; ARM-linux:      mov     r4, #48
-; ARM-linux-NEXT: mov     r5, #0
-; ARM-linux-NEXT: stmdb   sp!, {lr}
-; ARM-linux:      .cfi_def_cfa_offset 12
-; ARM-linux:      .cfi_offset lr, -12
-; ARM-linux-NEXT: bl      __morestack
-; ARM-linux-NEXT: ldm     sp!, {lr}
-; ARM-linux-NEXT: pop     {r4, r5}
-; ARM-linux:      .cfi_def_cfa_offset 0
-; ARM-linux-NEXT: bx      lr
 
-; ARM-linux:      pop     {r4, r5}
-; ARM-linux:      .cfi_def_cfa_offset 0
-; ARM-linux       .cfi_same_value r4
-; ARM-linux       .cfi_same_value r5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 !0 = distinct !DICompileUnit(language: DW_LANG_C99, producer: "clang version 3.5 ", isOptimized: false, emissionKind: 0, file: !1, enums: !2, retainedTypes: !2, subprograms: !3, globals: !2, imports: !2)
@@ -74,7 +74,7 @@ define void @test_basic() #0 {
 !32 = !DILocation(line: 12, scope: !4)
 !33 = !DILocation(line: 13, scope: !4)
 
-; Just to prevent the alloca from being optimized away
+
 declare void @dummy_use(i32*, i32)
 
 attributes #0 = { "split-stack" }

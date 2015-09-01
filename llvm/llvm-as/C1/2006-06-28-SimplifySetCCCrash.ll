@@ -1,21 +1,21 @@
-; RUN: llc < %s	
+
 %struct.rtunion = type { i64 }
 	%struct.rtx_def = type { i16, i8, i8, [1 x %struct.rtunion] }
-@ix86_cpu = external global i32		; <i32*> [#uses=1]
-@which_alternative = external global i32		; <i32*> [#uses=3]
+@ix86_cpu = external global i32		
+@which_alternative = external global i32		
 
 declare fastcc i32 @recog()
 
 define void @athlon_fp_unit_ready_cost() {
 entry:
-	%tmp = icmp slt i32 0, 0		; <i1> [#uses=1]
+	%tmp = icmp slt i32 0, 0		
 	br i1 %tmp, label %cond_true.i, label %cond_true
 
-cond_true:		; preds = %entry
+cond_true:		
 	ret void
 
-cond_true.i:		; preds = %entry
-	%tmp8.i = tail call fastcc i32 @recog( )		; <i32> [#uses=1]
+cond_true.i:		
+	%tmp8.i = tail call fastcc i32 @recog( )		
 	switch i32 %tmp8.i, label %UnifiedReturnBlock [
 		 i32 -1, label %bb2063
 		 i32 19, label %bb2035
@@ -130,150 +130,150 @@ cond_true.i:		; preds = %entry
 		 i32 622, label %bb10
 	]
 
-bb10:		; preds = %cond_true.i, %cond_true.i
+bb10:		
 	ret void
 
-bb18:		; preds = %cond_true.i
+bb18:		
 	ret void
 
-bb40:		; preds = %cond_true.i, %cond_true.i
+bb40:		
 	ret void
 
-cond_next6.i:		; preds = %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i
+cond_next6.i:		
 	ret void
 
-bb189:		; preds = %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i
+bb189:		
 	ret void
 
-bb288:		; preds = %cond_true.i
+bb288:		
 	ret void
 
-bb396:		; preds = %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i
+bb396:		
 	ret void
 
-bb495:		; preds = %cond_true.i
+bb495:		
 	ret void
 
-cond_next6.i81:		; preds = %cond_true.i, %cond_true.i, %cond_true.i
+cond_next6.i81:		
 	ret void
 
-cond_next6.i97:		; preds = %cond_true.i
+cond_next6.i97:		
 	ret void
 
-cond_next6.i119:		; preds = %cond_true.i
-	%tmp.i126 = icmp eq i16 0, 78		; <i1> [#uses=1]
+cond_next6.i119:		
+	%tmp.i126 = icmp eq i16 0, 78		
 	br i1 %tmp.i126, label %cond_next778, label %bb802
 
-cond_next778:		; preds = %cond_next6.i119
-	%tmp781 = icmp eq i32 0, 1		; <i1> [#uses=1]
+cond_next778:		
+	%tmp781 = icmp eq i32 0, 1		
 	br i1 %tmp781, label %cond_next784, label %bb790
 
-cond_next784:		; preds = %cond_next778
-	%tmp785 = load i32, i32* @ix86_cpu		; <i32> [#uses=1]
-	%tmp786 = icmp eq i32 %tmp785, 5		; <i1> [#uses=1]
+cond_next784:		
+	%tmp785 = load i32, i32* @ix86_cpu		
+	%tmp786 = icmp eq i32 %tmp785, 5		
 	br i1 %tmp786, label %UnifiedReturnBlock, label %bb790
 
-bb790:		; preds = %cond_next784, %cond_next778
-	%tmp793 = icmp eq i32 0, 1		; <i1> [#uses=0]
+bb790:		
+	%tmp793 = icmp eq i32 0, 1		
 	ret void
 
-bb802:		; preds = %cond_next6.i119
+bb802:		
 	ret void
 
-bb839:		; preds = %cond_true.i, %cond_true.i
+bb839:		
 	ret void
 
-bb919:		; preds = %cond_true.i, %cond_true.i
+bb919:		
 	ret void
 
-bb993:		; preds = %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i
+bb993:		
 	ret void
 
-bb1096:		; preds = %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i
+bb1096:		
 	ret void
 
-bb1126:		; preds = %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i
+bb1126:		
 	ret void
 
-bb1154:		; preds = %cond_true.i
+bb1154:		
 	ret void
 
-bb1201:		; preds = %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i
+bb1201:		
 	ret void
 
-bb1238:		; preds = %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i
+bb1238:		
 	ret void
 
-bb1419:		; preds = %cond_true.i
+bb1419:		
 	ret void
 
-bb1648:		; preds = %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i
-	%tmp1650 = load i32, i32* @which_alternative		; <i32> [#uses=1]
+bb1648:		
+	%tmp1650 = load i32, i32* @which_alternative		
 	switch i32 %tmp1650, label %bb1701 [
 		 i32 0, label %cond_next1675
 		 i32 1, label %cond_next1675
 		 i32 2, label %cond_next1675
 	]
 
-cond_next1675:		; preds = %bb1648, %bb1648, %bb1648
+cond_next1675:		
 	ret void
 
-bb1701:		; preds = %bb1648
-	%tmp1702 = load i32, i32* @which_alternative		; <i32> [#uses=1]
+bb1701:		
+	%tmp1702 = load i32, i32* @which_alternative		
 	switch i32 %tmp1702, label %bb1808 [
 		 i32 0, label %cond_next1727
 		 i32 1, label %cond_next1727
 		 i32 2, label %cond_next1727
 	]
 
-cond_next1727:		; preds = %bb1701, %bb1701, %bb1701
+cond_next1727:		
 	ret void
 
-bb1808:		; preds = %bb1701
-	%bothcond696 = or i1 false, false		; <i1> [#uses=1]
+bb1808:		
+	%bothcond696 = or i1 false, false		
 	br i1 %bothcond696, label %bb1876, label %cond_next1834
 
-cond_next1834:		; preds = %bb1808
+cond_next1834:		
 	ret void
 
-bb1876:		; preds = %bb1808
-	%tmp1877signed = load i32, i32* @which_alternative		; <i32> [#uses=4]
-	%tmp1877 = bitcast i32 %tmp1877signed to i32		; <i32> [#uses=1]
-	%bothcond699 = icmp ult i32 %tmp1877, 2		; <i1> [#uses=1]
-	%tmp1888 = icmp eq i32 %tmp1877signed, 2		; <i1> [#uses=1]
-	%bothcond700 = or i1 %bothcond699, %tmp1888		; <i1> [#uses=1]
-	%bothcond700.not = xor i1 %bothcond700, true		; <i1> [#uses=1]
-	%tmp1894 = icmp eq i32 %tmp1877signed, 3		; <i1> [#uses=1]
-	%bothcond701 = or i1 %tmp1894, %bothcond700.not		; <i1> [#uses=1]
-	%bothcond702 = or i1 %bothcond701, false		; <i1> [#uses=1]
+bb1876:		
+	%tmp1877signed = load i32, i32* @which_alternative		
+	%tmp1877 = bitcast i32 %tmp1877signed to i32		
+	%bothcond699 = icmp ult i32 %tmp1877, 2		
+	%tmp1888 = icmp eq i32 %tmp1877signed, 2		
+	%bothcond700 = or i1 %bothcond699, %tmp1888		
+	%bothcond700.not = xor i1 %bothcond700, true		
+	%tmp1894 = icmp eq i32 %tmp1877signed, 3		
+	%bothcond701 = or i1 %tmp1894, %bothcond700.not		
+	%bothcond702 = or i1 %bothcond701, false		
 	br i1 %bothcond702, label %UnifiedReturnBlock, label %cond_next1902
 
-cond_next1902:		; preds = %bb1876
+cond_next1902:		
 	switch i32 %tmp1877signed, label %cond_next1937 [
 		 i32 0, label %bb1918
 		 i32 1, label %bb1918
 		 i32 2, label %bb1918
 	]
 
-bb1918:		; preds = %cond_next1902, %cond_next1902, %cond_next1902
+bb1918:		
 	ret void
 
-cond_next1937:		; preds = %cond_next1902
+cond_next1937:		
 	ret void
 
-bb1948:		; preds = %cond_true.i, %cond_true.i, %cond_true.i
+bb1948:		
 	ret void
 
-bb1994:		; preds = %cond_true.i, %cond_true.i
+bb1994:		
 	ret void
 
-bb2035:		; preds = %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i, %cond_true.i
+bb2035:		
 	ret void
 
-bb2063:		; preds = %cond_true.i
+bb2063:		
 	ret void
 
-UnifiedReturnBlock:		; preds = %bb1876, %cond_next784, %cond_true.i
-	%UnifiedRetVal = phi i32 [ 100, %bb1876 ], [ 100, %cond_true.i ], [ 4, %cond_next784 ]		; <i32> [#uses=0]
+UnifiedReturnBlock:		
+	%UnifiedRetVal = phi i32 [ 100, %bb1876 ], [ 100, %cond_true.i ], [ 4, %cond_next784 ]		
 	ret void
 }

@@ -1,8 +1,8 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv5  < %s | FileCheck %s
-; Check that we generate conversion from single precision floating point
-; to 32-bit int value in IEEE complaint mode in V5.
 
-; CHECK: r{{[0-9]+}} = convert_sf2w(r{{[0-9]+}}):chop
+
+
+
+
 
 define i32 @main() nounwind {
 entry:

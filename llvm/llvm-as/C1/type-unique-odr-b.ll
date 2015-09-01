@@ -1,27 +1,27 @@
-; RUN: true
-; This file belongs to type-unique-odr-a.ll.
-;
-; Test ODR-based type uniquing for C++ class members.
-; rdar://problem/15851313.
-;
-; $ cat -n type-unique-odr-b.cpp
-;     1	// Make this declaration start on a different line.
-;     2	class A {
-;     3	  int data;
-;     4	protected:
-;     5	  void getFoo();
-;     6	};
-;     7
-;     8	void A::getFoo() {}
-;     9
-;    10	static void bar() {}
-;    11	void f() { bar(); };
 
-; ModuleID = 'type-unique-odr-b.cpp'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %class.A = type { i32 }
 
-; Function Attrs: nounwind
+
 define void @_ZN1A6getFooEv(%class.A* %this) #0 align 2 {
 entry:
   %this.addr = alloca %class.A*, align 8
@@ -31,17 +31,17 @@ entry:
   ret void, !dbg !27
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
-; Function Attrs: nounwind
+
 define void @_Z1fv() #0 {
 entry:
   call void @_ZL3barv(), !dbg !28
   ret void, !dbg !28
 }
 
-; Function Attrs: nounwind
+
 define internal void @_ZL3barv() #0 {
 entry:
   ret void, !dbg !29

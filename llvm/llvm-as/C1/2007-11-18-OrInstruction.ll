@@ -1,5 +1,5 @@
-; RUN: opt < %s -analyze -scalar-evolution | FileCheck %s
-; PR1810
+
+
 
 define void @fun() {
 entry:
@@ -17,5 +17,5 @@ exit:
         ret void
 }
 
-; CHECK: -->  %b
+
 

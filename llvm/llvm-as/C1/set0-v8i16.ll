@@ -1,4 +1,4 @@
-; RUN: llc -mtriple=powerpc64-unknown-linux-gnu -mcpu=pwr7 < %s
+
 target triple = "powerpc64-unknown-linux-gnu"
 
 define void @autogen_SD367951() {
@@ -9,10 +9,10 @@ BB:
   %E27 = extractelement <16 x i1> %Cmp11, i32 5
   br label %CF76
 
-CF76:                                             ; preds = %CF80, %CF76, %BB
+CF76:                                             
   br i1 undef, label %CF76, label %CF80
 
-CF80:                                             ; preds = %CF76
+CF80:                                             
   %Sl37 = select i1 %E27, <16 x i16> undef, <16 x i16> %Shuff
   br label %CF76
 }

@@ -1,40 +1,40 @@
-; REQUIRES: object-emission
-; Test (r)value qualifiers on C++11 non-static member functions.
-; Generated from tools/clang/test/CodeGenCXX/debug-info-qualifiers.cpp
-;
-; class A {
-; public:
-;   void l() const &;
-;   void r() const &&;
-; };
-;
-; void g() {
-;   A a;
-;   auto pl = &A::l;
-;   auto pr = &A::r;
-; }
-;
-; RUN: %llc_dwarf -filetype=obj -O0 < %s | llvm-dwarfdump - | FileCheck %s
-; CHECK: DW_TAG_subroutine_type     DW_CHILDREN_yes
-; CHECK-NEXT: DW_AT_reference  DW_FORM_flag_present
-; CHECK: DW_TAG_subroutine_type     DW_CHILDREN_yes
-; CHECK-NEXT: DW_AT_rvalue_reference DW_FORM_flag_present
-;
-; CHECK: DW_TAG_subprogram
-; CHECK-NOT: DW_TAG_subprogram
-; CHECK:   DW_AT_name {{.*}}"l"
-; CHECK-NOT: DW_TAG_subprogram
-; CHECK:   DW_AT_reference [DW_FORM_flag_present] (true)
 
-; CHECK: DW_TAG_subprogram
-; CHECK-NOT: DW_TAG_subprogram
-; CHECK:   DW_AT_name {{.*}}"r"
-; CHECK-NOT: DW_TAG_subprogram
-; CHECK:   DW_AT_rvalue_reference [DW_FORM_flag_present] (true)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %class.A = type { i8 }
 
-; Function Attrs: nounwind
+
 define void @_Z1gv() #0 {
   %a = alloca %class.A, align 1
   %pl = alloca { i64, i64 }, align 8
@@ -47,7 +47,7 @@ define void @_Z1gv() #0 {
   ret void, !dbg !36
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
 declare void @_ZNKR1A1lEv(%class.A*)

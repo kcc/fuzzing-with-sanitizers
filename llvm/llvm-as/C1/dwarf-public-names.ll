@@ -1,53 +1,53 @@
-; REQUIRES: object-emission
 
-; RUN: %llc_dwarf -generate-dwarf-pub-sections=Enable -filetype=obj -o %t.o < %s
-; RUN: llvm-dwarfdump -debug-dump=pubnames %t.o | FileCheck %s
-; ModuleID = 'dwarf-public-names.cpp'
-;
-; Generated from:
-;
-; struct C {
-;   void member_function();
-;   static int static_member_function();
-;   static int static_member_variable;
-; };
-;
-; int C::static_member_variable = 0;
-;
-; void C::member_function() {
-;   static_member_variable = 0;
-; }
-;
-; int C::static_member_function() {
-;   return static_member_variable;
-; }
-;
-; C global_variable;
-;
-; int global_function() {
-;   return -1;
-; }
-;
-; namespace ns {
-;   void global_namespace_function() {
-;     global_variable.member_function();
-;   }
-;   int global_namespace_variable = 1;
-; }
 
-; Skip the output to the header of the pubnames section.
-; CHECK: debug_pubnames
-; CHECK: version = 0x0002
 
-; Check for each name in the output.
-; CHECK-DAG: "ns"
-; CHECK-DAG: "C::static_member_function"
-; CHECK-DAG: "global_variable"
-; CHECK-DAG: "ns::global_namespace_variable"
-; CHECK-DAG: "ns::global_namespace_function"
-; CHECK-DAG: "global_function"
-; CHECK-DAG: "C::static_member_variable"
-; CHECK-DAG: "C::member_function"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %struct.C = type { i8 }
 
@@ -103,11 +103,11 @@ attributes #1 = { nounwind readnone }
 !10 = !DIDerivedType(tag: DW_TAG_member, name: "static_member_variable", line: 4, flags: DIFlagStaticMember, file: !37, scope: !8, baseType: !11)
 !11 = !DIBasicType(tag: DW_TAG_base_type, name: "int", size: 32, align: 32, encoding: DW_ATE_signed)
 !12 = !DISubprogram(name: "member_function", linkageName: "_ZN1C15member_functionEv", line: 2, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagPrototyped, isOptimized: false, scopeLine: 2, file: !4, scope: !8, type: !5, variables: !13)
-!13 = !{} ; previously: invalid DW_TAG_base_type
+!13 = !{} 
 !14 = !DISubprogram(name: "static_member_function", linkageName: "_ZN1C22static_member_functionEv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !8, type: !15, variables: !17)
 !15 = !DISubroutineType(types: !16)
 !16 = !{!11}
-!17 = !{} ; previously: invalid DW_TAG_base_type
+!17 = !{} 
 !18 = distinct !DISubprogram(name: "static_member_function", linkageName: "_ZN1C22static_member_functionEv", line: 13, isLocal: false, isDefinition: true, virtualIndex: 6, flags: DIFlagPrototyped, isOptimized: false, scopeLine: 13, file: !4, scope: null, type: !15, function: i32 ()* @_ZN1C22static_member_functionEv, declaration: !14, variables: !1)
 !19 = distinct !DISubprogram(name: "global_function", linkageName: "_Z15global_functionv", line: 19, isLocal: false, isDefinition: true, virtualIndex: 6, flags: DIFlagPrototyped, isOptimized: false, scopeLine: 19, file: !4, scope: !4, type: !15, function: i32 ()* @_Z15global_functionv, variables: !1)
 !20 = distinct !DISubprogram(name: "global_namespace_function", linkageName: "_ZN2ns25global_namespace_functionEv", line: 24, isLocal: false, isDefinition: true, virtualIndex: 6, flags: DIFlagPrototyped, isOptimized: false, scopeLine: 24, file: !4, scope: !21, type: !22, function: void ()* @_ZN2ns25global_namespace_functionEv, variables: !1)

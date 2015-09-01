@@ -1,15 +1,15 @@
-; RUN: opt -irce -S < %s
 
-; These test cases don't check the correctness of the transform, but
-; that the -irce does not crash in the presence of certain things in
-; the IR:
+
+
+
+
 
 define void @mismatched_types_1() {
-; In this test case, the safe range for the only range check in the
-; loop is of type [i32, i32) while the backedge taken count is of type
-; i64.
 
-; CHECK-LABEL: mismatched_types_1
+
+
+
+
 entry:
   br label %for.body
 
@@ -32,11 +32,11 @@ for.end:
 }
 
 define void @mismatched_types_2() {
-; In this test case, there are two range check in the loop, one with a
-; safe range of type [i32, i32) and one with a safe range of type
-; [i64, i64).
 
-; CHECK-LABEL: mismatched_types_2
+
+
+
+
 entry:
   br label %for.body.a
 

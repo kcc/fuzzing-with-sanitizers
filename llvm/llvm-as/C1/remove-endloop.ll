@@ -1,13 +1,13 @@
-; RUN: llc -march=hexagon -O2 < %s | FileCheck %s
+
 
 define void @foo(i32 %n, i32* nocapture %A, i32* nocapture %B) nounwind optsize {
 entry:
   %cmp = icmp sgt i32 %n, 100
   br i1 %cmp, label %for.body.preheader, label %for.cond4.preheader
 
-; CHECK: endloop0
-; CHECK: endloop0
-; CHECK-NOT: endloop0
+
+
+
 
 for.body.preheader:
   br label %for.body

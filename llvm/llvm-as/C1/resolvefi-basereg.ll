@@ -1,8 +1,8 @@
-; RUN: llc -O0 -mtriple=powerpc64-unknown-linux-gnu -mcpu=pwr7 < %s | FileCheck %s
 
-; Due to a bug in resolveFrameIndex we ended up with invalid addresses
-; containing a base register 0.  Verify that this no longer happens.
-; CHECK-NOT: (0)
+
+
+
+
 
 target datalayout = "E-m:e-i64:64-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
@@ -48,13 +48,13 @@ entry:
   %tobool = icmp ne i64 %and, 0
   br i1 %tobool, label %if.then, label %if.end
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %1 = load i32, i32* @fails, align 4
   %inc = add nsw i32 %1, 1
   store i32 %inc, i32* @fails, align 4
   br label %if.end
 
-if.end:                                           ; preds = %if.then, %entry
+if.end:                                           
   store i32 0, i32* %i, align 4
   store i32 0, i32* %j, align 4
   %2 = load i32, i32* %i, align 4

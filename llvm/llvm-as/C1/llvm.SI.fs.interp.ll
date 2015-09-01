@@ -1,13 +1,13 @@
-;RUN: llc < %s -march=amdgcn -mcpu=verde -verify-machineinstrs | FileCheck --check-prefix=GCN %s
-;RUN: llc < %s -march=amdgcn -mcpu=kabini -verify-machineinstrs | FileCheck --check-prefix=GCN --check-prefix=16BANK %s
-;RUN: llc < %s -march=amdgcn -mcpu=tonga -verify-machineinstrs | FileCheck --check-prefix=GCN %s
 
-;GCN-LABEL: {{^}}main:
-;GCN-NOT: s_wqm
-;GCN: s_mov_b32
-;GCN-NEXT: v_interp_mov_f32
-;GCN: v_interp_p1_f32
-;GCN: v_interp_p2_f32
+
+
+
+
+
+
+
+
+
 
 define void @main(<16 x i8> addrspace(2)* inreg, <16 x i8> addrspace(2)* inreg, <32 x i8> addrspace(2)* inreg, i32 inreg, <2 x i32>) #0 {
 main_body:
@@ -18,11 +18,11 @@ main_body:
   ret void
 }
 
-; Thest that v_interp_p1 uses different source and destination registers
-; on 16 bank LDS chips.
 
-; 16BANK-LABEL: {{^}}v_interp_p1_bank16_bug:
-; 16BANK-NOT: v_interp_p1_f32 [[DST:v[0-9]+]], [[DST]]
+
+
+
+
 
 define void @v_interp_p1_bank16_bug([6 x <16 x i8>] addrspace(2)* byval, [17 x <16 x i8>] addrspace(2)* byval, [17 x <4 x i32>] addrspace(2)* byval, [34 x <8 x i32>] addrspace(2)* byval, float inreg, i32 inreg, <2 x i32>, <2 x i32>, <2 x i32>, <3 x i32>, <2 x i32>, <2 x i32>, <2 x i32>, float, float, float, float, float, float, i32, float, float) #0 {
 main_body:
@@ -40,16 +40,16 @@ main_body:
   ret void
 }
 
-; Function Attrs: readnone
+
 declare float @fabs(float) #2
 
-; Function Attrs: nounwind readnone
+
 declare i32 @llvm.SI.packf16(float, float) #1
 
-; Function Attrs: nounwind readnone
+
 declare float @llvm.SI.fs.constant(i32, i32, i32) #1
 
-; Function Attrs: nounwind readnone
+
 declare float @llvm.SI.fs.interp(i32, i32, i32, <2 x i32>) #1
 
 declare void @llvm.SI.export(i32, i32, i32, i32, i32, float, float, float, float)

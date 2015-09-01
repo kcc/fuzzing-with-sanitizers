@@ -1,11 +1,11 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv4 < %s | FileCheck %s
 
-; CHECK: r{{[0-9]+}} = ##i129_l+16
-; CHECK: r{{[0-9]+}} = ##i129_s+16
-; CHECK: memd(##i129_s) = r{{[0-9]+:[0-9]+}}
-; CHECK: r{{[0-9]+}} = ##i65_l+8
-; CHECK: r{{[0-9]+}} = ##i65_s+8
-; CHECK: memd(##i65_s) = r{{[0-9]+:[0-9]+}}
+
+
+
+
+
+
+
 
 @i65_l = external global i65
 @i65_s = external global i65

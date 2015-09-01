@@ -1,4 +1,4 @@
-; RUN: opt < %s -basicaa -slp-vectorizer -S | FileCheck %s
+
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.9.0"
 
@@ -7,13 +7,13 @@ target triple = "x86_64-apple-macosx10.9.0"
 @C = common global [2000 x float] zeroinitializer, align 16
 @D = common global [2000 x float] zeroinitializer, align 16
 
-; Currently SCEV isn't smart enough to figure out that accesses
-; A[3*i], A[3*i+1] and A[3*i+2] are consecutive, but in future
-; that would hopefully be fixed. For now, check that this isn't
-; vectorized.
-; CHECK-LABEL: foo_3double
-; CHECK-NOT: x double>
-; Function Attrs: nounwind ssp uwtable
+
+
+
+
+
+
+
 define void @foo_3double(i32 %u) #0 {
 entry:
   %u.addr = alloca i32, align 4
@@ -45,12 +45,12 @@ entry:
   ret void
 }
 
-; SCEV should be able to tell that accesses A[C1 + C2*i], A[C1 + C2*i], ...
-; A[C1 + C2*i] are consecutive, if C2 is a power of 2, and C2 > C1 > 0.
-; Thus, the following code should be vectorized.
-; CHECK-LABEL: foo_2double
-; CHECK: x double>
-; Function Attrs: nounwind ssp uwtable
+
+
+
+
+
+
 define void @foo_2double(i32 %u) #0 {
 entry:
   %u.addr = alloca i32, align 4
@@ -74,10 +74,10 @@ entry:
   ret void
 }
 
-; Similar to the previous test, but with different datatype.
-; CHECK-LABEL: foo_4float
-; CHECK: x float>
-; Function Attrs: nounwind ssp uwtable
+
+
+
+
 define void @foo_4float(i32 %u) #0 {
 entry:
   %u.addr = alloca i32, align 4
@@ -117,10 +117,10 @@ entry:
   ret void
 }
 
-; Similar to the previous tests, but now we are dealing with AddRec SCEV.
-; CHECK-LABEL: foo_loop
-; CHECK: x double>
-; Function Attrs: nounwind ssp uwtable
+
+
+
+
 define i32 @foo_loop(double* %A, i32 %n) #0 {
 entry:
   %A.addr = alloca double*, align 8
@@ -134,10 +134,10 @@ entry:
   %cmp1 = icmp slt i32 0, %n
   br i1 %cmp1, label %for.body.lr.ph, label %for.end
 
-for.body.lr.ph:                                   ; preds = %entry
+for.body.lr.ph:                                   
   br label %for.body
 
-for.body:                                         ; preds = %for.body.lr.ph, %for.body
+for.body:                                         
   %0 = phi i32 [ 0, %for.body.lr.ph ], [ %inc, %for.body ]
   %1 = phi double [ 0.000000e+00, %for.body.lr.ph ], [ %add7, %for.body ]
   %mul = mul nsw i32 %0, 2
@@ -158,11 +158,11 @@ for.body:                                         ; preds = %for.body.lr.ph, %fo
   %cmp = icmp slt i32 %inc, %n
   br i1 %cmp, label %for.body, label %for.cond.for.end_crit_edge
 
-for.cond.for.end_crit_edge:                       ; preds = %for.body
+for.cond.for.end_crit_edge:                       
   %split = phi double [ %add7, %for.body ]
   br label %for.end
 
-for.end:                                          ; preds = %for.cond.for.end_crit_edge, %entry
+for.end:                                          
   %.lcssa = phi double [ %split, %for.cond.for.end_crit_edge ], [ 0.000000e+00, %entry ]
   %conv = fptosi double %.lcssa to i32
   ret i32 %conv

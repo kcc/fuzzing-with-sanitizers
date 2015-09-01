@@ -1,15 +1,15 @@
-; RUN: opt -loop-distribute -verify-loop-info -verify-dom-info -S < %s \
-; RUN:   | FileCheck %s
 
-; Check that definitions used outside the loop are handled correctly: (1) they
-; are not dropped (2) when version the loop, a phi is added to merge the value
-; from the non-distributed loop and the distributed loop.
-;
-;   for (i = 0; i < n; i++) {
-;     A[i + 1] = A[i] * B[i];
-;   ==========================
-;     sum += C[i];
-;   }
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.10.0"
@@ -31,15 +31,15 @@ entry:
 
   br label %for.body
 
-; CHECK: for.body.ldist1:
-; CHECK:   %mulA.ldist1 = mul i32 %loadB.ldist1, %loadA.ldist1
-; CHECK: for.body.ph:
-; CHECK: for.body:
-; CHECK:   %sum_add = add nuw nsw i32 %sum, %loadC
-; CHECK: for.end:
-; CHECK:   %sum_add.lver = phi i32 [ %sum_add, %for.body ], [ %sum_add.lver.orig, %for.body.lver.orig ]
 
-for.body:                                         ; preds = %for.body, %entry
+
+
+
+
+
+
+
+for.body:                                         
   %ind = phi i64 [ 0, %entry ], [ %add, %for.body ]
   %sum = phi i32 [ 0, %entry ], [ %sum_add, %for.body ]
 
@@ -63,7 +63,7 @@ for.body:                                         ; preds = %for.body, %entry
   %exitcond = icmp eq i64 %add, 20
   br i1 %exitcond, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   store i32 %sum_add, i32* @SUM, align 4
   ret void
 }

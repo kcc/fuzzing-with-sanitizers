@@ -1,14 +1,14 @@
-; RUN: llc < %s -mtriple=x86_64-unknown-unknown -mattr=+avx2 | FileCheck %s
+
 
 @e = global [8 x i32] [i32 1, i32 2, i32 3, i32 4, i32 5, i32 6, i32 7, i32 8], align 16
 @d = global [8 x i32] [i32 1, i32 1, i32 1, i32 1, i32 1, i32 1, i32 1, i32 1], align 16
 
-; The global 'e' has 16 byte alignment, so make sure we don't generate an
-; aligned 32-byte load instruction when we combine the load+insert sequence.
+
+
 
 define i32 @subb() nounwind ssp {
-; CHECK-LABEL: subb:
-; CHECK:  vmovups e(%rip), %ymm
+
+
 entry:
   %0 = load i32, i32* getelementptr inbounds ([8 x i32], [8 x i32]* @e, i64 0, i64 7), align 4
   %1 = load i32, i32* getelementptr inbounds ([8 x i32], [8 x i32]* @e, i64 0, i64 6), align 8

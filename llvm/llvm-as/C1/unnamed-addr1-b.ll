@@ -1,5 +1,5 @@
-; This file is for use with unnamed-addr1-a.ll
-; RUN: true
+
+
 
 @global-c = common unnamed_addr global i32 0
 @global-d = unnamed_addr global i32 42

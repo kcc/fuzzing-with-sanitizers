@@ -1,28 +1,28 @@
-; RUN: opt < %s -sample-profile -sample-profile-file=%S/Inputs/discriminator.prof | opt -analyze -branch-prob | FileCheck %s
 
-; Original code
-;
-; 1   int foo(int i) {
-; 2     int x = 0;
-; 3     while (i < 100) {
-; 4       if (i < 5) x--;
-; 5       i++;
-; 6     }
-; 7     return x;
-; 8   }
-;
-; In this test, if the loop is executed 100 times, the decrement operation
-; at line 4 should only execute 5 times. This is reflected in the profile
-; data for line offset 3.  In Inputs/discriminator.prof, we have:
-;
-; 3: 100
-; 3.1: 5
-;
-; This means that the predicate 'i < 5' (line 3) is executed 100 times,
-; but the then branch (line 3.1) is only executed 5 times.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define i32 @foo(i32 %i) #0 {
-; CHECK: Printing analysis 'Branch Probability Analysis' for function 'foo':
+
 entry:
   %i.addr = alloca i32, align 4
   %x = alloca i32, align 4
@@ -30,33 +30,33 @@ entry:
   store i32 0, i32* %x, align 4, !dbg !10
   br label %while.cond, !dbg !11
 
-while.cond:                                       ; preds = %if.end, %entry
+while.cond:                                       
   %0 = load i32, i32* %i.addr, align 4, !dbg !12
   %cmp = icmp slt i32 %0, 100, !dbg !12
   br i1 %cmp, label %while.body, label %while.end, !dbg !12
-; CHECK: edge while.cond -> while.body probability is 100 / 101 = 99.0099% [HOT edge]
-; CHECK: edge while.cond -> while.end probability is 1 / 101 = 0.990099%
 
-while.body:                                       ; preds = %while.cond
+
+
+while.body:                                       
   %1 = load i32, i32* %i.addr, align 4, !dbg !14
   %cmp1 = icmp slt i32 %1, 50, !dbg !14
   br i1 %cmp1, label %if.then, label %if.end, !dbg !14
-; CHECK: edge while.body -> if.then probability is 5 / 100 = 5%
-; CHECK: edge while.body -> if.end probability is 95 / 100 = 95% [HOT edge]
 
-if.then:                                          ; preds = %while.body
+
+
+if.then:                                          
   %2 = load i32, i32* %x, align 4, !dbg !17
   %dec = add nsw i32 %2, -1, !dbg !17
   store i32 %dec, i32* %x, align 4, !dbg !17
   br label %if.end, !dbg !17
 
-if.end:                                           ; preds = %if.then, %while.body
+if.end:                                           
   %3 = load i32, i32* %i.addr, align 4, !dbg !19
   %inc = add nsw i32 %3, 1, !dbg !19
   store i32 %inc, i32* %i.addr, align 4, !dbg !19
   br label %while.cond, !dbg !20
 
-while.end:                                        ; preds = %while.cond
+while.end:                                        
   %4 = load i32, i32* %x, align 4, !dbg !21
   ret i32 %4, !dbg !21
 }

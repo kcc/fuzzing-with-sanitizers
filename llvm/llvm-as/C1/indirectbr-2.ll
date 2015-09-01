@@ -1,17 +1,17 @@
-; RUN: llc < %s -O0 -relocation-model=pic -mtriple=thumbv7-apple-ios | FileCheck %s
-; <rdar://problem/12529625>
+
+
 
 @foo = global i32 34879, align 4
 @DWJumpTable2808 = global [2 x i32] [i32 sub (i32 ptrtoint (i8* blockaddress(@func, %14) to i32), i32 ptrtoint (i8* blockaddress(@func, %4) to i32)), i32 sub (i32 ptrtoint (i8* blockaddress(@func, %13) to i32), i32 ptrtoint (i8* blockaddress(@func, %4) to i32))]
 @0 = internal constant [45 x i8] c"func XXXXXXXXXXX :: bb xxxxxxxxxxxxxxxxxxxx\0A\00"
 
-; The indirect branch has the two destinations as successors. The lone PHI
-; statement shouldn't be implicitly defined.
 
-; CHECK-LABEL:      func:
-; CHECK:      Ltmp1:    @ Block address taken
-; CHECK-NOT:            @ implicit-def: R0
-; CHECK:                @ 4-byte Reload
+
+
+
+
+
+
 
 define i32 @func() nounwind ssp {
   %1 = alloca i32, align 4
@@ -19,7 +19,7 @@ define i32 @func() nounwind ssp {
   %3 = icmp eq i32 %2, 34879
   br label %4
 
-; <label>:4                                       ; preds = %0
+
   %5 = zext i1 %3 to i32
   %6 = mul i32 %5, 287
   %7 = add i32 %6, 2
@@ -30,7 +30,7 @@ define i32 @func() nounwind ssp {
   %12 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([45 x i8], [45 x i8]* @0, i32 0, i32 0))
   indirectbr i8* %11, [label %13, label %14]
 
-; <label>:13                                      ; preds = %4
+
   %tmp14 = phi i32 [ %7, %4 ]
   store i32 23958, i32* @foo, align 4
   %tmp15 = load i32, i32* %1, align 4
@@ -39,7 +39,7 @@ define i32 @func() nounwind ssp {
   %tmp21 = add i32 %tmp17, %tmp14
   ret i32 %tmp21
 
-; <label>:14                                      ; preds = %4
+
   ret i32 42
 }
 

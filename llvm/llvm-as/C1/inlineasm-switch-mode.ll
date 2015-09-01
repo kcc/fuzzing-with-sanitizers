@@ -1,7 +1,7 @@
-;RUN: llc -mtriple=thumbv7-linux-gnueabi < %s | llvm-mc -triple=thumbv7-linux-gnueabi -filetype=obj > %t
-; Two pass decoding needed because llvm-objdump does not respect mapping symbols
-;RUN: llvm-objdump -triple=armv7   -d %t | FileCheck %s --check-prefix=ARM
-;RUN: llvm-objdump -triple=thumbv7 -d %t | FileCheck %s --check-prefix=THUMB
+
+
+
+
 
 define hidden i32 @bah(i8* %start) #0 align 2 {
   %1 = ptrtoint i8* %start to i32
@@ -10,13 +10,13 @@ define hidden i32 @bah(i8* %start) #0 align 2 {
   ret i32 %3
 }
 
-; ARM: $a
-; ARM-NEXT: 04 70 2d e5     str     r7, [sp, #-4]!
-; ARM: $t
-; ARM-NEXT: 48 1c
 
-; THUMB: $a
-; THUMB-NEXT: 04 70
-; THUMB-NEXT: 2d e5
-; THUMB: $t
-; THUMB-NEXT: 48 1c   adds    r0, r1, #1
+
+
+
+
+
+
+
+
+

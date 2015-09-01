@@ -1,6 +1,6 @@
-; RUN: opt < %s -tbaa -basicaa -aa-eval -evaluate-aa-metadata -print-no-aliases -print-may-aliases -disable-output 2>&1 | FileCheck %s
-; RUN: opt < %s -tbaa -basicaa -gvn -S | FileCheck %s --check-prefix=OPT
-; Generated from clang/test/CodeGen/tbaa.cpp with "-O1 -struct-path-tbaa -disable-llvm-optzns".
+
+
+
 
 %struct.StructA = type { i16, i32, i16, i32 }
 %struct.StructB = type { i16, %struct.StructA, i32 }
@@ -11,14 +11,14 @@
 
 define i32 @_Z1gPjP7StructAy(i32* %s, %struct.StructA* %A, i64 %count) #0 {
 entry:
-; Access to i32* and &(A->f32).
-; CHECK: Function
-; CHECK: MayAlias:   store i32 4, i32* %f32, align 4, !tbaa !8 <->   store i32 1, i32* %0, align 4, !tbaa !6
-; OPT: define
-; OPT: store i32 1
-; OPT: store i32 4
-; OPT: %[[RET:.*]] = load i32, i32*
-; OPT: ret i32 %[[RET]]
+
+
+
+
+
+
+
+
   %s.addr = alloca i32*, align 8
   %A.addr = alloca %struct.StructA*, align 8
   %count.addr = alloca i64, align 8
@@ -37,14 +37,14 @@ entry:
 
 define i32 @_Z2g2PjP7StructAy(i32* %s, %struct.StructA* %A, i64 %count) #0 {
 entry:
-; Access to i32* and &(A->f16).
-; CHECK: Function
-; CHECK: NoAlias:   store i16 4, i16* %f16, align 2, !tbaa !8 <->   store i32 1, i32* %0, align 4, !tbaa !6
-; OPT: define
-; OPT: store i32 1
-; OPT: store i16 4
-; Remove a load and propagate the value from store.
-; OPT: ret i32 1
+
+
+
+
+
+
+
+
   %s.addr = alloca i32*, align 8
   %A.addr = alloca %struct.StructA*, align 8
   %count.addr = alloca i64, align 8
@@ -63,14 +63,14 @@ entry:
 
 define i32 @_Z2g3P7StructAP7StructBy(%struct.StructA* %A, %struct.StructB* %B, i64 %count) #0 {
 entry:
-; Access to &(A->f32) and &(B->a.f32).
-; CHECK: Function
-; CHECK: MayAlias:   store i32 4, i32* %f321, align 4, !tbaa !10 <->   store i32 1, i32* %f32, align 4, !tbaa !6
-; OPT: define
-; OPT: store i32 1
-; OPT: store i32 4
-; OPT: %[[RET:.*]] = load i32, i32*
-; OPT: ret i32 %[[RET]]
+
+
+
+
+
+
+
+
   %A.addr = alloca %struct.StructA*, align 8
   %B.addr = alloca %struct.StructB*, align 8
   %count.addr = alloca i64, align 8
@@ -92,14 +92,14 @@ entry:
 
 define i32 @_Z2g4P7StructAP7StructBy(%struct.StructA* %A, %struct.StructB* %B, i64 %count) #0 {
 entry:
-; Access to &(A->f32) and &(B->a.f16).
-; CHECK: Function
-; CHECK: NoAlias:   store i16 4, i16* %f16, align 2, !tbaa !10 <->   store i32 1, i32* %f32, align 4, !tbaa !6
-; OPT: define
-; OPT: store i32 1
-; OPT: store i16 4
-; Remove a load and propagate the value from store.
-; OPT: ret i32 1
+
+
+
+
+
+
+
+
   %A.addr = alloca %struct.StructA*, align 8
   %B.addr = alloca %struct.StructB*, align 8
   %count.addr = alloca i64, align 8
@@ -121,14 +121,14 @@ entry:
 
 define i32 @_Z2g5P7StructAP7StructBy(%struct.StructA* %A, %struct.StructB* %B, i64 %count) #0 {
 entry:
-; Access to &(A->f32) and &(B->f32).
-; CHECK: Function
-; CHECK: NoAlias:   store i32 4, i32* %f321, align 4, !tbaa !10 <->   store i32 1, i32* %f32, align 4, !tbaa !6
-; OPT: define
-; OPT: store i32 1
-; OPT: store i32 4
-; Remove a load and propagate the value from store.
-; OPT: ret i32 1
+
+
+
+
+
+
+
+
   %A.addr = alloca %struct.StructA*, align 8
   %B.addr = alloca %struct.StructB*, align 8
   %count.addr = alloca i64, align 8
@@ -149,14 +149,14 @@ entry:
 
 define i32 @_Z2g6P7StructAP7StructBy(%struct.StructA* %A, %struct.StructB* %B, i64 %count) #0 {
 entry:
-; Access to &(A->f32) and &(B->a.f32_2).
-; CHECK: Function
-; CHECK: NoAlias:   store i32 4, i32* %f32_2, align 4, !tbaa !10 <->   store i32 1, i32* %f32, align 4, !tbaa !6
-; OPT: define
-; OPT: store i32 1
-; OPT: store i32 4
-; Remove a load and propagate the value from store.
-; OPT: ret i32 1
+
+
+
+
+
+
+
+
   %A.addr = alloca %struct.StructA*, align 8
   %B.addr = alloca %struct.StructB*, align 8
   %count.addr = alloca i64, align 8
@@ -178,14 +178,14 @@ entry:
 
 define i32 @_Z2g7P7StructAP7StructSy(%struct.StructA* %A, %struct.StructS* %S, i64 %count) #0 {
 entry:
-; Access to &(A->f32) and &(S->f32).
-; CHECK: Function
-; CHECK: NoAlias:   store i32 4, i32* %f321, align 4, !tbaa !10 <->   store i32 1, i32* %f32, align 4, !tbaa !6
-; OPT: define
-; OPT: store i32 1
-; OPT: store i32 4
-; Remove a load and propagate the value from store.
-; OPT: ret i32 1
+
+
+
+
+
+
+
+
   %A.addr = alloca %struct.StructA*, align 8
   %S.addr = alloca %struct.StructS*, align 8
   %count.addr = alloca i64, align 8
@@ -206,14 +206,14 @@ entry:
 
 define i32 @_Z2g8P7StructAP7StructSy(%struct.StructA* %A, %struct.StructS* %S, i64 %count) #0 {
 entry:
-; Access to &(A->f32) and &(S->f16).
-; CHECK: Function
-; CHECK: NoAlias:   store i16 4, i16* %f16, align 2, !tbaa !10 <->   store i32 1, i32* %f32, align 4, !tbaa !6
-; OPT: define
-; OPT: store i32 1
-; OPT: store i16 4
-; Remove a load and propagate the value from store.
-; OPT: ret i32 1
+
+
+
+
+
+
+
+
   %A.addr = alloca %struct.StructA*, align 8
   %S.addr = alloca %struct.StructS*, align 8
   %count.addr = alloca i64, align 8
@@ -234,14 +234,14 @@ entry:
 
 define i32 @_Z2g9P7StructSP8StructS2y(%struct.StructS* %S, %struct.StructS2* %S2, i64 %count) #0 {
 entry:
-; Access to &(S->f32) and &(S2->f32).
-; CHECK: Function
-; CHECK: NoAlias:   store i32 4, i32* %f321, align 4, !tbaa !10 <->   store i32 1, i32* %f32, align 4, !tbaa !6
-; OPT: define
-; OPT: store i32 1
-; OPT: store i32 4
-; Remove a load and propagate the value from store.
-; OPT: ret i32 1
+
+
+
+
+
+
+
+
   %S.addr = alloca %struct.StructS*, align 8
   %S2.addr = alloca %struct.StructS2*, align 8
   %count.addr = alloca i64, align 8
@@ -262,14 +262,14 @@ entry:
 
 define i32 @_Z3g10P7StructSP8StructS2y(%struct.StructS* %S, %struct.StructS2* %S2, i64 %count) #0 {
 entry:
-; Access to &(S->f32) and &(S2->f16).
-; CHECK: Function
-; CHECK: NoAlias:   store i16 4, i16* %f16, align 2, !tbaa !10 <->   store i32 1, i32* %f32, align 4, !tbaa !6
-; OPT: define
-; OPT: store i32 1
-; OPT: store i16 4
-; Remove a load and propagate the value from store.
-; OPT: ret i32 1
+
+
+
+
+
+
+
+
   %S.addr = alloca %struct.StructS*, align 8
   %S2.addr = alloca %struct.StructS2*, align 8
   %count.addr = alloca i64, align 8
@@ -290,14 +290,14 @@ entry:
 
 define i32 @_Z3g11P7StructCP7StructDy(%struct.StructC* %C, %struct.StructD* %D, i64 %count) #0 {
 entry:
-; Access to &(C->b.a.f32) and &(D->b.a.f32).
-; CHECK: Function
-; CHECK: NoAlias:   store i32 4, i32* %f323, align 4, !tbaa !12 <->   store i32 1, i32* %f32, align 4, !tbaa !6
-; OPT: define
-; OPT: store i32 1
-; OPT: store i32 4
-; Remove a load and propagate the value from store.
-; OPT: ret i32 1
+
+
+
+
+
+
+
+
   %C.addr = alloca %struct.StructC*, align 8
   %D.addr = alloca %struct.StructD*, align 8
   %count.addr = alloca i64, align 8
@@ -324,14 +324,14 @@ entry:
 
 define i32 @_Z3g12P7StructCP7StructDy(%struct.StructC* %C, %struct.StructD* %D, i64 %count) #0 {
 entry:
-; Access to &(b1->a.f32) and &(b2->a.f32).
-; CHECK: Function
-; CHECK: MayAlias:   store i32 4, i32* %f325, align 4, !tbaa !6 <->   store i32 1, i32* %f32, align 4, !tbaa !6
-; OPT: define
-; OPT: store i32 1
-; OPT: store i32 4
-; OPT: %[[RET:.*]] = load i32, i32*
-; OPT: ret i32 %[[RET]]
+
+
+
+
+
+
+
+
   %C.addr = alloca %struct.StructC*, align 8
   %D.addr = alloca %struct.StructD*, align 8
   %count.addr = alloca i64, align 8

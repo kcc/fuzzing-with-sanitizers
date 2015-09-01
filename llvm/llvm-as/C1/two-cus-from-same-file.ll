@@ -1,14 +1,14 @@
-; For http://llvm.org/bugs/show_bug.cgi?id=12942
-;   There are two CUs coming from /tmp/foo.c in this module. Make sure it doesn't
-;   blow llc up and produces something reasonable.
-;
 
-; REQUIRES: object-emission
 
-; RUN: %llc_dwarf %s -o %t -filetype=obj -O0
-; RUN: llvm-dwarfdump -debug-dump=info %t | FileCheck %s
 
-; ModuleID = 'test.bc'
+
+
+
+
+
+
+
+
 
 @str = private unnamed_addr constant [4 x i8] c"FOO\00"
 @str1 = private unnamed_addr constant [6 x i8] c"Main!\00"
@@ -65,9 +65,9 @@ declare void @llvm.dbg.value(metadata, i64, metadata, metadata) nounwind readnon
 !31 = !DILocation(line: 14, column: 3, scope: !29)
 !32 = !DIFile(filename: "foo.c", directory: "/tmp")
 
-; This test is simple to be cross platform (many targets don't yet have
-; sufficiently good DWARF emission and/or dumping)
-; CHECK: {{DW_TAG_compile_unit}}
-; CHECK: {{foo\.c}}
+
+
+
+
 
 !33 = !{i32 1, !"Debug Info Version", i32 3}

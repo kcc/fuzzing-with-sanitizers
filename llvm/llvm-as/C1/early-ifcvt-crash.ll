@@ -1,15 +1,15 @@
-; RUN: llc < %s -x86-early-ifcvt -verify-machineinstrs
-; RUN: llc < %s -x86-early-ifcvt -stress-early-ifcvt -verify-machineinstrs
-; CPU without a scheduling model:
-; RUN: llc < %s -x86-early-ifcvt -mcpu=pentium3 -verify-machineinstrs
-;
-; Run these tests with and without -stress-early-ifcvt to exercise heuristics.
-;
+
+
+
+
+
+
+
 target triple = "x86_64-apple-macosx10.8.0"
 
-; MachineTraceMetrics::Ensemble::addLiveIns crashes because the first operand
-; on an inline asm instruction is not a vreg def.
-; <rdar://problem/12472811>
+
+
+
 define void @f1() nounwind {
 entry:
   br i1 undef, label %if.then6.i, label %if.end.i

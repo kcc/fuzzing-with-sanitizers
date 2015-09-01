@@ -1,13 +1,13 @@
-; RUN: llc < %s - -filetype=obj | llvm-dwarfdump -debug-dump=loc - | FileCheck %s
+
 target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:32-f32:32:32-f64:32:32-v64:32:64-v128:32:128-a0:0:32-n32"
 target triple = "thumbv7-apple-macosx10.6.7"
 
-; The S registers on ARM are expressed as pieces of their super-registers in DWARF.
-;
-; 0x90   DW_OP_regx of super-register
-; 0x93   DW_OP_piece
-; 0x9d   DW_OP_bit_piece
-; CHECK:            Location description: 90 {{.. .. ((93 ..)|(9d .. ..)) $}}
+
+
+
+
+
+
 
 define void @_Z3foov() optsize ssp {
 entry:
@@ -17,7 +17,7 @@ entry:
   %cmp7 = fcmp olt float %call, %call16, !dbg !12
   br i1 %cmp7, label %for.body, label %for.end, !dbg !12
 
-for.body:                                         ; preds = %entry, %for.body
+for.body:                                         
   %k.08 = phi float [ %inc, %for.body ], [ %call, %entry ]
   %call4 = tail call float @_Z2f3f(float %k.08) optsize, !dbg !13
   %inc = fadd float %k.08, 1.000000e+00, !dbg !14
@@ -25,7 +25,7 @@ for.body:                                         ; preds = %entry, %for.body
   %cmp = fcmp olt float %inc, %call1, !dbg !12
   br i1 %cmp, label %for.body, label %for.end, !dbg !12
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void, !dbg !15
 }
 

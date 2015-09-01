@@ -1,4 +1,4 @@
-; RUN: opt -basicaa -gvn -disable-output < %s
+
 
 target triple = "x86_64-unknown-linux-gnu"
 
@@ -8,10 +8,10 @@ entry:
   %cmpnull = icmp eq i64* %p, null
   br label %BB2
 
-entry2:                                           ; No predecessors!
+entry2:                                           
   br label %BB2
 
-BB2:                                              ; preds = %entry2, %entry
+BB2:                                              
   %bc = bitcast i64** %arrayidx to i64*
   %load = load i64, i64* %bc, align 8
   ret i64 %load

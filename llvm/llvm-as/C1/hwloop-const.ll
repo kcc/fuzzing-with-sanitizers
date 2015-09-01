@@ -1,5 +1,5 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv4 -O2 < %s | FileCheck %s
-; ModuleID = 'hwloop-const.c'
+
+
 target datalayout = "e-p:32:32:32-i64:64:64-i32:32:32-i16:16:16-i1:32:32-f64:64:64-f32:32:32-v64:64:64-v32:32:32-a0:0-n16:32"
 target triple = "hexagon-unknown-linux-gnu"
 
@@ -11,8 +11,8 @@ define i32 @hwloop_bug() nounwind {
 entry:
   br label %for.body
 
-; CHECK: endloop
-for.body:                                         ; preds = %for.body, %entry
+
+for.body:                                         
   %i.02 = phi i32 [ 0, %entry ], [ %inc, %for.body ]
   %arrayidx = getelementptr inbounds [25000 x i32], [25000 x i32]* @b, i32 0, i32 %i.02
   store i32 %i.02, i32* %arrayidx, align 4
@@ -22,6 +22,6 @@ for.body:                                         ; preds = %for.body, %entry
   %exitcond = icmp eq i32 %inc, 25000
   br i1 %exitcond, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret i32 0
 }

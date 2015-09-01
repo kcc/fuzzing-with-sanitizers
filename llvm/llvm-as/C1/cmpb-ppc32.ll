@@ -1,8 +1,8 @@
-; RUN: llc -mcpu=pwr7 < %s | FileCheck %s
+
 target datalayout = "E-m:e-p:32:32-i64:64-n32"
 target triple = "powerpc-unknown-linux-gnu"
 
-; Function Attrs: nounwind readnone
+
 define zeroext i16 @test16(i16 zeroext %x, i16 zeroext %y) #0 {
 entry:
   %0 = xor i16 %y, %x
@@ -15,10 +15,10 @@ entry:
   %conv29 = trunc i32 %or to i16
   ret i16 %conv29
 
-; CHECK-LABEL: @test16
-; CHECK: cmpb [[REG1:[0-9]+]], 4, 3
-; CHECK: clrlwi 3, [[REG1]], 16
-; CHECK: blr
+
+
+
+
 }
 
 define i32 @test32(i32 %x, i32 %y) #0 {
@@ -40,10 +40,10 @@ entry:
   %or52 = or i32 %or49, %conv47
   ret i32 %or52
 
-; CHECK-LABEL: @test32
-; CHECK: cmpb 3, 4, 3
-; CHECK-NOT: rlwinm
-; CHECK: blr
+
+
+
+
 }
 
 attributes #0 = { nounwind readnone }

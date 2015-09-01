@@ -1,5 +1,5 @@
-; RUN: opt < %s -inline -S | FileCheck %s
-; PR4834
+
+
 
 define i32 @test1() {
   %funcall1_ = call fastcc i32 ()* () @f1()
@@ -15,8 +15,8 @@ define internal i32 @f2() nounwind readnone {
   ret i32 1
 }
 
-; CHECK: @test1()
-; CHECK-NEXT: ret i32 1
+
+
 
 
 
@@ -40,5 +40,5 @@ define i32 @test2(i8* %this) ssp align 2 {
   ret i32 %X
 }
 
-; CHECK-LABEL: @test2(
-; CHECK-NEXT: ret i32 41
+
+

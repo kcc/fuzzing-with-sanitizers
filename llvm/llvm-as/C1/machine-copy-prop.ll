@@ -1,19 +1,19 @@
-; RUN: llc -mtriple=aarch64-linux-gnu -mcpu=cortex-a57 -verify-machineinstrs < %s | FileCheck %s
 
-; This file check a bug in MachineCopyPropagation pass. The last COPY will be
-; incorrectly removed if the machine instructions are as follows:
-;   %Q5_Q6<def> = COPY %Q2_Q3
-;   %D5<def> =
-;   %D3<def> =
-;   %D3<def> = COPY %D6
-; This is caused by a bug in function SourceNoLongerAvailable(), which fails to
-; remove the relationship of D6 and "%Q5_Q6<def> = COPY %Q2_Q3".
+
+
+
+
+
+
+
+
+
 
 @failed = internal unnamed_addr global i1 false
 
-; CHECK-LABEL: foo:
-; CHECK: ld2
-; CHECK-NOT: // kill: D{{[0-9]+}}<def> D{{[0-9]+}}<kill>
+
+
+
 define void @foo(<2 x i32> %shuffle251, <8 x i8> %vtbl1.i, i8* %t2, <2 x i32> %vrsubhn_v2.i1364) {
 entry:
   %val0 = alloca [2 x i64], align 8
@@ -23,11 +23,11 @@ entry:
   %cmp = icmp eq i64 %vgetq_lane, 1
   br i1 %cmp, label %if.end, label %if.then
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   store i1 true, i1* @failed, align 1
   br label %if.end
 
-if.end:                                           ; preds = %if.then, %entry
+if.end:                                           
   tail call void @f2()
   %sqdmull = tail call <4 x i32> @llvm.aarch64.neon.sqdmull.v4i32(<4 x i16> <i16 1, i16 0, i16 0, i16 0>, <4 x i16> <i16 2, i16 0, i16 0, i16 0>)
   %sqadd = tail call <4 x i32> @llvm.aarch64.neon.sqadd.v4i32(<4 x i32> zeroinitializer, <4 x i32> %sqdmull)
@@ -64,11 +64,11 @@ if.end:                                           ; preds = %if.then, %entry
   %cmp2 = icmp eq i64 %vget_lane1, 15
   br i1 %cmp2, label %if.end2, label %if.then2
 
-if.then2:                                       ; preds = %if.end
+if.then2:                                       
   store i1 true, i1* @failed, align 1
   br label %if.end2
 
-if.end2:                                        ; preds = %if.then682, %if.end
+if.end2:                                        
   call void @f2()
   %vext = shufflevector <8 x i8> <i8 undef, i8 -1, i8 -1, i8 -1, i8 -1, i8 -1, i8 -1, i8 -1>, <8 x i8> %vtbl1.i, <8 x i32> <i32 1, i32 2, i32 3, i32 4, i32 5, i32 6, i32 7, i32 8>
   %t6 = bitcast <8 x i8> %vext to <2 x i32>

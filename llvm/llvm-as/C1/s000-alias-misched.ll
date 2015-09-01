@@ -1,7 +1,7 @@
 target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-f128:128:128-v128:128:128-n32:64"
 target triple = "powerpc64-bgq-linux"
-; RUN: llc < %s -enable-misched -march=ppc64 -mcpu=a2 | FileCheck %s
-; RUN: llc < %s -enable-misched -enable-aa-sched-mi -march=ppc64 -mcpu=a2 | FileCheck %s
+
+
 
 @aa = external global [256 x [256 x double]], align 32
 @bb = external global [256 x [256 x double]], align 32
@@ -26,13 +26,13 @@ entry:
   %call1 = tail call i64 @clock() nounwind
   br label %for.cond2.preheader
 
-; CHECK: @s000
 
-for.cond2.preheader:                              ; preds = %for.end, %entry
+
+for.cond2.preheader:                              
   %nl.018 = phi i32 [ 0, %entry ], [ %inc9, %for.end ]
   br label %for.body4
 
-for.body4:                                        ; preds = %for.body4, %for.cond2.preheader
+for.body4:                                        
   %indvars.iv = phi i64 [ 0, %for.cond2.preheader ], [ %indvars.iv.next.15, %for.body4 ]
   %arrayidx = getelementptr inbounds [16000 x double], [16000 x double]* @Y, i64 0, i64 %indvars.iv
   %arrayidx6 = getelementptr inbounds [16000 x double], [16000 x double]* @X, i64 0, i64 %indvars.iv
@@ -70,19 +70,19 @@ for.body4:                                        ; preds = %for.body4, %for.con
   %exitcond.15 = icmp eq i32 %lftr.wideiv.15, 16000
   br i1 %exitcond.15, label %for.end, label %for.body4
 
-; All of the loads should come before all of the stores.
-; CHECK: mtctr
-; CHECK: stfd
-; CHECK-NOT: lfd
-; CHECK: bdnz
 
-for.end:                                          ; preds = %for.body4
+
+
+
+
+
+for.end:                                          
   %call7 = tail call signext i32 @dummy(double* getelementptr inbounds ([16000 x double], [16000 x double]* @X, i64 0, i64 0), double* getelementptr inbounds ([16000 x double], [16000 x double]* @Y, i64 0, i64 0), double* getelementptr inbounds ([16000 x double], [16000 x double]* @Z, i64 0, i64 0), double* getelementptr inbounds ([16000 x double], [16000 x double]* @U, i64 0, i64 0), double* getelementptr inbounds ([16000 x double], [16000 x double]* @V, i64 0, i64 0), [256 x double]* getelementptr inbounds ([256 x [256 x double]], [256 x [256 x double]]* @aa, i64 0, i64 0), [256 x double]* getelementptr inbounds ([256 x [256 x double]], [256 x [256 x double]]* @bb, i64 0, i64 0), [256 x double]* getelementptr inbounds ([256 x [256 x double]], [256 x [256 x double]]* @cc, i64 0, i64 0), double 0.000000e+00) nounwind
   %inc9 = add nsw i32 %nl.018, 1
   %exitcond = icmp eq i32 %inc9, 400000
   br i1 %exitcond, label %for.end10, label %for.cond2.preheader
 
-for.end10:                                        ; preds = %for.end
+for.end10:                                        
   %call11 = tail call i64 @clock() nounwind
   %sub = sub nsw i64 %call11, %call1
   %conv = sitofp i64 %sub to double

@@ -1,13 +1,13 @@
-; RUN: llc -march=mipsel < %s | FileCheck %s
+
 
 define i32 @twoalloca(i32 %size) nounwind {
 entry:
-; CHECK: subu  $[[T0:[0-9]+]], $sp, $[[SZ:[0-9]+]]
-; CHECK: move  $sp, $[[T0]]
-; CHECK: subu  $[[T2:[0-9]+]], $sp, $[[SZ]]
-; CHECK: move  $sp, $[[T2]]
-; CHECK: move  $4, $[[T0]]
-; CHECK: move  $4, $[[T2]]
+
+
+
+
+
+
   %tmp1 = alloca i8, i32 %size, align 4
   %add.ptr = getelementptr inbounds i8, i8* %tmp1, i32 5
   store i8 97, i8* %add.ptr, align 1
@@ -27,17 +27,17 @@ declare i32 @foo(i8*)
 
 define i32 @alloca2(i32 %size) nounwind {
 entry:
-; CHECK: alloca2
-; CHECK: subu  $[[T0:[0-9]+]], $sp
-; CHECK: move  $sp, $[[T0]]
+
+
+
 
   %tmp1 = alloca i8, i32 %size, align 4
   %0 = bitcast i8* %tmp1 to i32*
   %cmp = icmp sgt i32 %size, 10
   br i1 %cmp, label %if.then, label %if.else
 
-if.then:                                          ; preds = %entry
-; CHECK: addiu $4, $[[T0]], 40
+if.then:                                          
+
 
   %add.ptr = getelementptr inbounds i8, i8* %tmp1, i32 40
   %1 = bitcast i8* %add.ptr to i32*
@@ -46,17 +46,17 @@ if.then:                                          ; preds = %entry
   %.pre = bitcast i8* %arrayidx15.pre to i32*
   br label %if.end
 
-if.else:                                          ; preds = %entry
-; CHECK: addiu $4, $[[T0]], 12
+if.else:                                          
+
 
   %add.ptr5 = getelementptr inbounds i8, i8* %tmp1, i32 12
   %2 = bitcast i8* %add.ptr5 to i32*
   call void @foo3(i32* %2) nounwind
   br label %if.end
 
-if.end:                                           ; preds = %if.else, %if.then
-; CHECK: lw  $5, 0($[[T0]])
-; CHECK: lw  $25, %call16(printf)
+if.end:                                           
+
+
 
   %.pre-phi = phi i32* [ %2, %if.else ], [ %.pre, %if.then ]
   %tmp7 = load i32, i32* %0, align 4

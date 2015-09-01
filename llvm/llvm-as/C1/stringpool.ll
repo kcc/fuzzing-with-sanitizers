@@ -1,5 +1,5 @@
-; RUN: llc -mtriple=x86_64-unknown-linux-gnu < %s | FileCheck %s --check-prefix=LINUX
-; RUN: llc -mtriple=x86_64-darwin < %s | FileCheck %s --check-prefix=DARWIN
+
+
 
 @yyyy = common global i32 0, align 4
 
@@ -14,29 +14,29 @@
 !7 = !DIBasicType(tag: DW_TAG_base_type, name: "int", size: 32, align: 32, encoding: DW_ATE_signed)
 !8 = !DIFile(filename: "z.c", directory: "/home/nicholas")
 
-; Verify that "yyyy" ended up in the stringpool.
-; LINUX: .section .debug_str,"MS",@progbits,1
-; LINUX: yyyy
-; DARWIN: .section __DWARF,__debug_str,regular,debug
-; DARWIN: .asciz "yyyy" ## string offset=[[YYYY:[0-9]+]]
 
-; Verify that we refer to 'yyyy' with a relocation.
-; LINUX:      .long   .Linfo_string3          # DW_AT_name
-; LINUX-NEXT: .long   {{[0-9]+}}              # DW_AT_type
-; LINUX-NEXT:                                 # DW_AT_external
-; LINUX-NEXT: .byte   1                       # DW_AT_decl_file
-; LINUX-NEXT: .byte   1                       # DW_AT_decl_line
-; LINUX-NEXT: .byte   9                       # DW_AT_location
-; LINUX-NEXT: .byte   3
-; LINUX-NEXT: .quad   yyyy
 
-; Verify that we refer to 'yyyy' with a direct offset.
-; DARWIN:             .long   [[YYYY]]
-; DARWIN-NEXT:        .long   {{[0-9]+}}              ## DW_AT_type
-; DARWIN-NEXT:                                        ## DW_AT_external
-; DARWIN-NEXT:        .byte   1                       ## DW_AT_decl_file
-; DARWIN-NEXT:        .byte   1                       ## DW_AT_decl_line
-; DARWIN-NEXT:        .byte   9                       ## DW_AT_location
-; DARWIN-NEXT:        .byte   3
-; DARWIN-NEXT:        .quad   _yyyy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 !9 = !{i32 1, !"Debug Info Version", i32 3}

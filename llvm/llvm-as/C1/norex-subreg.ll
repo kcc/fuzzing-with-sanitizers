@@ -1,17 +1,17 @@
-; RUN: llc -O0 < %s -verify-machineinstrs
-; RUN: llc < %s -verify-machineinstrs
+
+
 target triple = "x86_64-apple-macosx10.7"
 
-; This test case extracts a sub_8bit_hi sub-register:
-;
-;	%R8B<def> = COPY %BH, %EBX<imp-use,kill>
-;	%ESI<def> = MOVZX32_NOREXrr8 %R8B<kill>
-;
-; The register allocation above is invalid, %BH can only be encoded without an
-; REX prefix, so the destination register must be GR8_NOREX.  The code above
-; triggers an assertion in copyPhysReg.
-;
-; <rdar://problem/10248099>
+
+
+
+
+
+
+
+
+
+
 
 define void @f() nounwind uwtable ssp {
 entry:
@@ -39,14 +39,14 @@ entry:
   ret void
 }
 
-; This test case extracts a sub_8bit_hi sub-register:
-;
-;       %vreg2<def> = COPY %vreg1:sub_8bit_hi; GR8:%vreg2 GR64_ABCD:%vreg1
-;       TEST8ri %vreg2, 1, %EFLAGS<imp-def>; GR8:%vreg2
-;
-; %vreg2 must be constrained to GR8_NOREX, or the COPY could become impossible.
-;
-; PR11088
+
+
+
+
+
+
+
+
 
 define fastcc i32 @g(i64 %FB) nounwind uwtable readnone align 2 {
 entry:

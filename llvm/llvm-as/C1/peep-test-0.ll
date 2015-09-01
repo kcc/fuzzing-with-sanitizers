@@ -1,6 +1,6 @@
-; RUN: llc < %s -march=x86-64 > %t
-; RUN: not grep cmp %t
-; RUN: not grep test %t
+
+
+
 
 define void @loop(i64 %n, double* nocapture %d) nounwind {
 entry:

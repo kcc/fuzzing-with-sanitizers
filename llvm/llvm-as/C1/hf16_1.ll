@@ -1,5 +1,5 @@
-; RUN: llc  -march=mipsel -mcpu=mips16 -relocation-model=pic -O3 < %s | FileCheck %s -check-prefix=1
-; RUN: llc  -march=mipsel -mcpu=mips16 -relocation-model=pic -O3 < %s | FileCheck %s -check-prefix=2
+
+
 
 
 @x = common global float 0.000000e+00, align 4
@@ -165,92 +165,92 @@ declare { double, double } @dc_df_sf(double, float)
 
 declare { double, double } @dc_df_df(double, double)
 
-; 1:	lw	${{[0-9]+}}, %got(__mips16_call_stub_1)(${{[0-9]+}})
-; 2:	lw	${{[0-9]+}}, %call16(v_sf)(${{[0-9]+}})
 
-; 1:	lw	${{[0-9]+}}, %got(__mips16_call_stub_2)(${{[0-9]+}})
-; 2:	lw	${{[0-9]+}}, %call16(v_df)(${{[0-9]+}})
 
-; 1:	lw	${{[0-9]+}}, %got(__mips16_call_stub_5)(${{[0-9]+}})
-; 2:	lw	${{[0-9]+}}, %call16(v_sf_sf)(${{[0-9]+}})
 
-; 1:	lw	${{[0-9]+}}, %got(__mips16_call_stub_6)(${{[0-9]+}})
-; 2:	lw	${{[0-9]+}}, %call16(v_df_sf)(${{[0-9]+}})
 
-; 1:	lw	${{[0-9]+}}, %got(__mips16_call_stub_10)(${{[0-9]+}})
-; 2:	lw	${{[0-9]+}}, %call16(v_df_df)(${{[0-9]+}})
 
-; 1:	lw	${{[0-9]+}}, %got(__mips16_call_stub_sf_0)(${{[0-9]+}})
-; 2:	lw	${{[0-9]+}}, %call16(sf_v)(${{[0-9]+}})
 
-; 1:	lw	${{[0-9]+}}, %got(__mips16_call_stub_sf_1)(${{[0-9]+}})
-; 2:	lw	${{[0-9]+}}, %call16(sf_sf)(${{[0-9]+}})
 
-; 1:	lw	${{[0-9]+}}, %got(__mips16_call_stub_sf_2)(${{[0-9]+}})
-; 2:	lw	${{[0-9]+}}, %call16(sf_df)(${{[0-9]+}})
 
-; 1:	lw	${{[0-9]+}}, %got(__mips16_call_stub_sf_5)(${{[0-9]+}})
-; 2:	lw	${{[0-9]+}}, %call16(sf_sf_sf)(${{[0-9]+}})
 
-; 1:	lw	${{[0-9]+}}, %got(__mips16_call_stub_sf_6)(${{[0-9]+}})
-; 2:	lw	${{[0-9]+}}, %call16(sf_df_sf)(${{[0-9]+}})
 
-; 1:	lw	${{[0-9]+}}, %got(__mips16_call_stub_sf_10)(${{[0-9]+}})
-; 2:	lw	${{[0-9]+}}, %call16(sf_df_df)(${{[0-9]+}})
 
-; 1:	lw	${{[0-9]+}}, %got(__mips16_call_stub_df_0)(${{[0-9]+}})
-; 2:	lw	${{[0-9]+}}, %call16(df_v)(${{[0-9]+}})
 
-; 1:	lw	${{[0-9]+}}, %got(__mips16_call_stub_df_1)(${{[0-9]+}})
-; 2:	lw	${{[0-9]+}}, %call16(df_sf)(${{[0-9]+}})
 
-; 1:	lw	${{[0-9]+}}, %got(__mips16_call_stub_df_2)(${{[0-9]+}})
-; 2:	lw	${{[0-9]+}}, %call16(df_df)(${{[0-9]+}})
 
-; 1:	lw	${{[0-9]+}}, %got(__mips16_call_stub_df_5)(${{[0-9]+}})
-; 2:	lw	${{[0-9]+}}, %call16(df_sf_sf)(${{[0-9]+}})
 
-; 1:	lw	${{[0-9]+}}, %got(__mips16_call_stub_df_6)(${{[0-9]+}})
-; 2:	lw	${{[0-9]+}}, %call16(df_df_sf)(${{[0-9]+}})
 
-; 1:	lw	${{[0-9]+}}, %got(__mips16_call_stub_df_10)(${{[0-9]+}})
-; 2:	lw	${{[0-9]+}}, %call16(df_df_df)(${{[0-9]+}})
 
-; 1:	lw	${{[0-9]+}}, %got(__mips16_call_stub_sc_0)(${{[0-9]+}})
-; 2:	lw	${{[0-9]+}}, %call16(sc_v)(${{[0-9]+}})
 
-; 1:	lw	${{[0-9]+}}, %got(__mips16_call_stub_sc_1)(${{[0-9]+}})
-; 2:	lw	${{[0-9]+}}, %call16(sc_sf)(${{[0-9]+}})
 
-; 1:	lw	${{[0-9]+}}, %got(__mips16_call_stub_sc_2)(${{[0-9]+}})
-; 2:	lw	${{[0-9]+}}, %call16(sc_df)(${{[0-9]+}})
 
-; 1:	lw	${{[0-9]+}}, %got(__mips16_call_stub_sc_5)(${{[0-9]+}})
-; 2:	lw	${{[0-9]+}}, %call16(sc_sf_sf)(${{[0-9]+}})
 
-; 1:	lw	${{[0-9]+}}, %got(__mips16_call_stub_sc_6)(${{[0-9]+}})
-; 2:	lw	${{[0-9]+}}, %call16(sc_df_sf)(${{[0-9]+}})
 
-; 1:	lw	${{[0-9]+}}, %got(__mips16_call_stub_sc_10)(${{[0-9]+}})
-; 2:	lw	${{[0-9]+}}, %call16(sc_df_df)(${{[0-9]+}})
 
-; 1:	lw	${{[0-9]+}}, %got(__mips16_call_stub_dc_0)(${{[0-9]+}})
-; 2:	lw	${{[0-9]+}}, %call16(dc_v)(${{[0-9]+}})
 
-; 1:	lw	${{[0-9]+}}, %got(__mips16_call_stub_dc_1)(${{[0-9]+}})
-; 2:	lw	${{[0-9]+}}, %call16(dc_sf)(${{[0-9]+}})
 
-; 1:	lw	${{[0-9]+}}, %got(__mips16_call_stub_dc_2)(${{[0-9]+}})
-; 2:	lw	${{[0-9]+}}, %call16(dc_df)(${{[0-9]+}})
 
-; 1:	lw	${{[0-9]+}}, %got(__mips16_call_stub_dc_5)(${{[0-9]+}})
-; 2:	lw	${{[0-9]+}}, %call16(dc_sf_sf)(${{[0-9]+}})
 
-; 1:	lw	${{[0-9]+}}, %got(__mips16_call_stub_dc_6)(${{[0-9]+}})
-; 2:	lw	${{[0-9]+}}, %call16(dc_df_sf)(${{[0-9]+}})
 
-; 1:	lw	${{[0-9]+}}, %got(__mips16_call_stub_dc_10)(${{[0-9]+}})
-; 2:	lw	${{[0-9]+}}, %call16(dc_df_df)(${{[0-9]+}})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

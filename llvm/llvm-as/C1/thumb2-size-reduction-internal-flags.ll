@@ -1,4 +1,4 @@
-; RUN: llc %s -o - -verify-machineinstrs | FileCheck %s
+
 
 target datalayout = "e-m:o-p:32:32-f64:32:64-v64:32:64-v128:32:128-a:0:32-n32-S32"
 target triple = "thumbv7s-apple-ios8.0.0"
@@ -7,12 +7,12 @@ target triple = "thumbv7s-apple-ios8.0.0"
 
 @reg_len = external global i32, align 4
 
-; The thumb2 size reduction pass commutes arguments to make the first src of an add the same as the dest.
-; It needs to also move the internal flag when commuting arguments.
 
-; CHECK-LABEL: @simulate
 
-; Function Attrs: nounwind optsize ssp
+
+
+
+
 define i32 @simulate(i32 %iterations, %struct.cells* nocapture %present, double %prob, i8* nocapture readonly %structure) {
 entry:
   %0 = load i32, i32* @reg_len, align 4, !tbaa !3
@@ -22,14 +22,14 @@ entry:
   %cmp35202 = icmp sgt i32 %rem2, 0
   br label %for.cond3.preheader
 
-for.cond3.preheader:                              ; preds = %if.end85, %entry
+for.cond3.preheader:                              
   %call192 = tail call i32 @lrand48() #2
   br label %for.cond6.preheader
 
-for.cond34.preheader:                             ; preds = %for.inc30
+for.cond34.preheader:                             
   br i1 %cmp35202, label %for.body37, label %for.end73
 
-for.cond6.preheader:                              ; preds = %for.inc30, %for.cond3.preheader
+for.cond6.preheader:                              
   %call197 = phi i32 [ %call, %for.inc30 ], [ %call192, %for.cond3.preheader ]
   %i.0196 = phi i32 [ %inc31, %for.inc30 ], [ 0, %for.cond3.preheader ]
   %temp.1195 = phi %struct.cells* [ %5, %for.inc30 ], [ %present, %for.cond3.preheader ]
@@ -37,7 +37,7 @@ for.cond6.preheader:                              ; preds = %for.inc30, %for.con
   %savef_free.0193 = phi i32 [ %add11, %for.inc30 ], [ 0, %for.cond3.preheader ]
   br label %for.body8
 
-for.body8:                                        ; preds = %for.body8, %for.cond6.preheader
+for.body8:                                        
   %randv.0190 = phi i32 [ %call197, %for.cond6.preheader ], [ %shr, %for.body8 ]
   %j.0189 = phi i32 [ 0, %for.cond6.preheader ], [ %inc, %for.body8 ]
   %temp.2188 = phi %struct.cells* [ %temp.1195, %for.cond6.preheader ], [ %5, %for.body8 ]
@@ -74,13 +74,13 @@ for.body8:                                        ; preds = %for.body8, %for.con
   %exitcond = icmp eq i32 %inc, 31
   br i1 %exitcond, label %for.inc30, label %for.body8
 
-for.inc30:                                        ; preds = %for.body8
+for.inc30:                                        
   %inc31 = add nuw nsw i32 %i.0196, 1
   %cmp4 = icmp slt i32 %inc31, %div
   %call = tail call i32 @lrand48() #2
   br i1 %cmp4, label %for.cond6.preheader, label %for.cond34.preheader
 
-for.body37:                                       ; preds = %for.body37, %for.cond34.preheader
+for.body37:                                       
   %randv.2207 = phi i32 [ %shr70, %for.body37 ], [ %call, %for.cond34.preheader ]
   %temp.3205 = phi %struct.cells* [ %9, %for.body37 ], [ %5, %for.cond34.preheader ]
   %f_free45 = getelementptr inbounds %struct.cells, %struct.cells* %temp.3205, i32 0, i32 0
@@ -108,7 +108,7 @@ for.body37:                                       ; preds = %for.body37, %for.co
   %shr70 = ashr i32 %randv.2207, 1
   br label %for.body37
 
-for.end73:                                        ; preds = %for.cond34.preheader
+for.end73:                                        
   %call74 = tail call i32 @lrand48() #2
   %11 = load i32, i32* @reg_len, align 4, !tbaa !3
   %sub75 = add nsw i32 %11, -1
@@ -118,11 +118,11 @@ for.end73:                                        ; preds = %for.cond34.preheade
   %f_free81 = getelementptr inbounds %struct.cells, %struct.cells* %5, i32 0, i32 0
   br i1 %cmp78, label %if.then80, label %for.end73.if.end85_crit_edge
 
-for.end73.if.end85_crit_edge:                     ; preds = %for.end73
+for.end73.if.end85_crit_edge:                     
   %.pre222 = getelementptr inbounds %struct.cells, %struct.cells* %5, i32 0, i32 1
   br label %if.end85
 
-if.then80:                                        ; preds = %for.end73
+if.then80:                                        
   %13 = load i32, i32* %f_free81, align 4, !tbaa !7
   %add82 = add nsw i32 %13, %add11
   %faulty83 = getelementptr inbounds %struct.cells, %struct.cells* %5, i32 0, i32 1
@@ -130,7 +130,7 @@ if.then80:                                        ; preds = %for.end73
   %add84 = add nsw i32 %14, %add12
   br label %if.end85
 
-if.end85:                                         ; preds = %if.then80, %for.end73.if.end85_crit_edge
+if.end85:                                         
   %faulty100.pre-phi = phi i32* [ %.pre222, %for.end73.if.end85_crit_edge ], [ %faulty83, %if.then80 ]
   %savef_free.5 = phi i32 [ %add11, %for.end73.if.end85_crit_edge ], [ %add82, %if.then80 ]
   %savefaulty.5 = phi i32 [ %add12, %for.end73.if.end85_crit_edge ], [ %add84, %if.then80 ]
@@ -150,7 +150,7 @@ if.end85:                                         ; preds = %if.then80, %for.end
   br label %for.cond3.preheader
 }
 
-; Function Attrs: optsize
+
 declare i32 @lrand48()
 
 attributes #2 = { nounwind optsize }

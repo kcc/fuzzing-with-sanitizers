@@ -1,19 +1,19 @@
-; RUN: llc -O2 < %s | FileCheck %s
-; RUN: llc -O2 -regalloc=basic < %s | FileCheck %s
+
+
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64"
 target triple = "x86_64-apple-darwin10"
 
 %struct.a = type { i32, %struct.a* }
 
-@llvm.used = appending global [1 x i8*] [i8* bitcast (i8* (%struct.a*)* @bar to i8*)], section "llvm.metadata" ; <[1 x i8*]*> [#uses=0]
+@llvm.used = appending global [1 x i8*] [i8* bitcast (i8* (%struct.a*)* @bar to i8*)], section "llvm.metadata" 
 
 define i8* @bar(%struct.a* %myvar) nounwind optsize noinline ssp {
 entry:
   tail call void @llvm.dbg.value(metadata %struct.a* %myvar, i64 0, metadata !8, metadata !DIExpression()), !dbg !DILocation(scope: !9)
-  %0 = getelementptr inbounds %struct.a, %struct.a* %myvar, i64 0, i32 0, !dbg !28 ; <i32*> [#uses=1]
-  %1 = load i32, i32* %0, align 8, !dbg !28            ; <i32> [#uses=1]
+  %0 = getelementptr inbounds %struct.a, %struct.a* %myvar, i64 0, i32 0, !dbg !28 
+  %1 = load i32, i32* %0, align 8, !dbg !28            
   tail call void @foo(i32 %1) nounwind optsize noinline ssp, !dbg !28
-  %2 = bitcast %struct.a* %myvar to i8*, !dbg !30 ; <i8*> [#uses=1]
+  %2 = bitcast %struct.a* %myvar to i8*, !dbg !30 
   ret i8* %2, !dbg !30
 }
 
@@ -63,26 +63,26 @@ declare void @llvm.dbg.value(metadata, i64, metadata, metadata) nounwind readnon
 !36 = !DIFile(filename: "foo.c", directory: "/tmp/")
 !37 = !{}
 
-; The variable bar:myvar changes registers after the first movq.
-; It is cobbered by popq %rbx
-; CHECK: movq
-; CHECK-NEXT: [[LABEL:Ltmp[0-9]*]]
-; CHECK: .loc	1 19 0
-; CHECK: popq
-; CHECK-NEXT: [[CLOBBER:Ltmp[0-9]*]]
 
 
-; CHECK: Ldebug_loc0:
-; CHECK-NEXT: [[SET1:.*]] = Lfunc_begin0-Lfunc_begin0
-; CHECK-NEXT: .quad   [[SET1]]
-; CHECK-NEXT: [[SET2:.*]] = [[LABEL]]-Lfunc_begin0
-; CHECK-NEXT: .quad   [[SET2]]
-; CHECK-NEXT: .short  1     ## Loc expr size
-; CHECK-NEXT: .byte   85
-; CHECK-NEXT: [[SET3:.*]] = [[LABEL]]-Lfunc_begin0
-; CHECK-NEXT: .quad   [[SET3]]
-; CHECK-NEXT: [[SET4:.*]] = [[CLOBBER]]-Lfunc_begin0
-; CHECK-NEXT: .quad   [[SET4]]
-; CHECK-NEXT: .short  1     ## Loc expr size
-; CHECK-NEXT: .byte   83
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 !38 = !{i32 1, !"Debug Info Version", i32 3}

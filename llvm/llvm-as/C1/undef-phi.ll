@@ -1,8 +1,8 @@
-; RUN: llc < %s -verify-machineinstrs -verify-coalescing
-;
-; This function has a PHI with one undefined input. Verify that PHIElimination
-; inserts an IMPLICIT_DEF instruction in the predecessor so all paths to the use
-; pass through a def.
+
+
+
+
+
 
 %struct.xx_stack = type { i32, %struct.xx_stack* }
 

@@ -1,4 +1,4 @@
-; RUN: opt < %s -basicaa -aa-eval -print-all-alias-modref-info 2>&1 | FileCheck %s
+
 
 declare i32* @captures(i32* %cap) nounwind readonly
 
@@ -10,7 +10,7 @@ entry:
   ret void
 }
 
-; CHECK: NoAlias:      i32* %a, i32* %b
+
 
 define void @yes(i32* %c, i32* %d) nounwind {
 entry:
@@ -20,4 +20,4 @@ entry:
   ret void
 }
 
-; CHECK: MayAlias:     i32* %c, i32* %d
+

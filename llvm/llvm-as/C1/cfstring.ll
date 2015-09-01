@@ -1,23 +1,23 @@
-; RUN: llc < %s -mtriple=x86_64-apple-darwin | FileCheck %s
-; <rdar://problem/10564621>
+
+
 
 %0 = type opaque
 %struct.NSConstantString = type { i32*, i32, i8*, i32 }
 
-; Make sure that the string ends up the correct section.
 
-; CHECK:        .section __TEXT,__cstring
-; CHECK-NEXT: L_.str3:
 
-; CHECK:        .section  __DATA,__cfstring
-; CHECK-NEXT:   .align  4
-; CHECK-NEXT: L__unnamed_cfstring_4:
-; CHECK-NEXT:   .quad  ___CFConstantStringClassReference
-; CHECK-NEXT:   .long  1992
-; CHECK-NEXT:   .space  4
-; CHECK-NEXT:   .quad  L_.str3
-; CHECK-NEXT:   .long  0
-; CHECK-NEXT:   .space  4
+
+
+
+
+
+
+
+
+
+
+
+
 
 @isLogVisible = global i8 0, align 1
 @__CFConstantStringClassReference = external global [0 x i32]

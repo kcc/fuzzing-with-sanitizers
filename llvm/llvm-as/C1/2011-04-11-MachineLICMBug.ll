@@ -1,10 +1,10 @@
-; RUN: llc < %s -mtriple=thumbv7-apple-darwin -mcpu=cortex-a8 | FileCheck %s
 
-; Overly aggressive LICM simply adds copies of constants
-; rdar://9266679
+
+
+
 
 define zeroext i1 @t(i32* nocapture %A, i32 %size, i32 %value) nounwind readonly ssp {
-; CHECK-LABEL: t:
+
 entry:
   br label %for.cond
 
@@ -14,10 +14,10 @@ for.cond:
   br i1 %cmp, label %for.body, label %return
 
 for.body:
-; CHECK: %for.
-; CHECK: mov{{.*}} r{{[0-9]+}}, #{{[01]}}
-; CHECK: mov{{.*}} r{{[0-9]+}}, #{{[01]}}
-; CHECK-NOT: mov r{{[0-9]+}}, #{{[01]}}
+
+
+
+
   %arrayidx = getelementptr i32, i32* %A, i32 %0
   %tmp4 = load i32, i32* %arrayidx, align 4
   %cmp6 = icmp eq i32 %tmp4, %value

@@ -1,36 +1,36 @@
-; REQUIRES: asserts
-; RUN: llc < %s -O3 -march=x86-64 -mcpu=core2 -stress-ivchain | FileCheck %s -check-prefix=X64
-; RUN: llc < %s -O3 -march=x86 -mcpu=core2 -stress-ivchain | FileCheck %s -check-prefix=X32
 
-; @sharedidx is an unrolled variant of this loop:
-;  for (unsigned long i = 0; i < len; i += s) {
-;    c[i] = a[i] + b[i];
-;  }
-; where 's' cannot be folded into the addressing mode.
-;
-; This is not quite profitable to chain. But with -stress-ivchain, we
-; can form three address chains in place of the shared induction
-; variable.
 
-; X64: sharedidx:
-; X64: %for.body.preheader
-; X64-NOT: leal ({{.*}},4)
-; X64: %for.body.1
 
-; X32: sharedidx:
-; X32: %for.body.2
-; X32: add
-; X32: add
-; X32: add
-; X32: add
-; X32: leal
-; X32: %for.body.3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @sharedidx(i8* nocapture %a, i8* nocapture %b, i8* nocapture %c, i32 %s, i32 %len) nounwind ssp {
 entry:
   %cmp8 = icmp eq i32 %len, 0
   br i1 %cmp8, label %for.end, label %for.body
 
-for.body:                                         ; preds = %entry, %for.body.3
+for.body:                                         
   %i.09 = phi i32 [ %add5.3, %for.body.3 ], [ 0, %entry ]
   %arrayidx = getelementptr inbounds i8, i8* %a, i32 %i.09
   %0 = load i8, i8* %arrayidx, align 1
@@ -46,10 +46,10 @@ for.body:                                         ; preds = %entry, %for.body.3
   %cmp = icmp ult i32 %add5, %len
   br i1 %cmp, label %for.body.1, label %for.end
 
-for.end:                                          ; preds = %for.body, %for.body.1, %for.body.2, %for.body.3, %entry
+for.end:                                          
   ret void
 
-for.body.1:                                       ; preds = %for.body
+for.body.1:                                       
   %arrayidx.1 = getelementptr inbounds i8, i8* %a, i32 %add5
   %2 = load i8, i8* %arrayidx.1, align 1
   %conv6.1 = zext i8 %2 to i32
@@ -64,7 +64,7 @@ for.body.1:                                       ; preds = %for.body
   %cmp.1 = icmp ult i32 %add5.1, %len
   br i1 %cmp.1, label %for.body.2, label %for.end
 
-for.body.2:                                       ; preds = %for.body.1
+for.body.2:                                       
   %arrayidx.2 = getelementptr inbounds i8, i8* %a, i32 %add5.1
   %4 = load i8, i8* %arrayidx.2, align 1
   %conv6.2 = zext i8 %4 to i32
@@ -79,7 +79,7 @@ for.body.2:                                       ; preds = %for.body.1
   %cmp.2 = icmp ult i32 %add5.2, %len
   br i1 %cmp.2, label %for.body.3, label %for.end
 
-for.body.3:                                       ; preds = %for.body.2
+for.body.3:                                       
   %arrayidx.3 = getelementptr inbounds i8, i8* %a, i32 %add5.2
   %6 = load i8, i8* %arrayidx.3, align 1
   %conv6.3 = zext i8 %6 to i32

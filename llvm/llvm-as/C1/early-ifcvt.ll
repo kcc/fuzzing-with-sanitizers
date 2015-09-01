@@ -1,14 +1,14 @@
-; RUN: llc < %s -x86-early-ifcvt -stress-early-ifcvt | FileCheck %s
+
 target triple = "x86_64-apple-macosx10.8.0"
 
-; CHECK: mm2
+
 define i32 @mm2(i32* nocapture %p, i32 %n) nounwind uwtable readonly ssp {
 entry:
   br label %do.body
 
-; CHECK: do.body
-; Loop body has no branches before the backedge.
-; CHECK-NOT: LBB
+
+
+
 do.body:
   %max.0 = phi i32 [ 0, %entry ], [ %max.1, %do.cond ]
   %min.0 = phi i32 [ 0, %entry ], [ %min.1, %do.cond ]
@@ -27,8 +27,8 @@ if.else:
 do.cond:
   %max.1 = phi i32 [ %0, %do.body ], [ %max.0, %if.else ]
   %min.1 = phi i32 [ %min.0, %do.body ], [ %.min.0, %if.else ]
-; CHECK: decl %esi
-; CHECK: jne LBB
+
+
   %dec = add i32 %n.addr.0, -1
   %tobool = icmp eq i32 %dec, 0
   br i1 %tobool, label %do.end, label %do.body
@@ -38,14 +38,14 @@ do.end:
   ret i32 %sub
 }
 
-; CHECK: multipreds
-; Deal with alternative tail predecessors
-; CHECK-NOT: LBB
-; CHECK: cmov
-; CHECK-NOT: LBB
-; CHECK: cmov
-; CHECK-NOT: LBB
-; CHECK: fprintf
+
+
+
+
+
+
+
+
 
 define void @multipreds(i32 %sw) nounwind uwtable ssp {
 entry:
@@ -68,9 +68,9 @@ if.end41:
 
 declare void @fprintf(...) nounwind
 
-; CHECK: BZ2_decompress
-; This test case contains irreducible control flow, so MachineLoopInfo doesn't
-; recognize the cycle in the CFG. This would confuse MachineTraceMetrics.
+
+
+
 define void @BZ2_decompress(i8* %s) nounwind ssp {
 entry:
   switch i32 undef, label %sw.default [
@@ -82,56 +82,56 @@ entry:
     i32 44, label %if.end.sw.bb3058_crit_edge
   ]
 
-if.end.sw.bb3058_crit_edge:                       ; preds = %entry
+if.end.sw.bb3058_crit_edge:                       
   br label %save_state_and_return
 
-if.end.sw.bb1855_crit_edge:                       ; preds = %entry
+if.end.sw.bb1855_crit_edge:                       
   br label %save_state_and_return
 
-if.end.sw.bb2050_crit_edge:                       ; preds = %entry
+if.end.sw.bb2050_crit_edge:                       
   br label %sw.bb2050
 
-sw.bb1788:                                        ; preds = %entry
+sw.bb1788:                                        
   br label %save_state_and_return
 
-sw.bb1983:                                        ; preds = %entry
+sw.bb1983:                                        
   br i1 undef, label %save_state_and_return, label %if.then1990
 
-if.then1990:                                      ; preds = %sw.bb1983
+if.then1990:                                      
   br label %while.body2038
 
-while.body2038:                                   ; preds = %sw.bb2050, %if.then1990
+while.body2038:                                   
   %groupPos.8 = phi i32 [ 0, %if.then1990 ], [ %groupPos.9, %sw.bb2050 ]
   br i1 undef, label %save_state_and_return, label %if.end2042
 
-if.end2042:                                       ; preds = %while.body2038
+if.end2042:                                       
   br i1 undef, label %if.end2048, label %while.end2104
 
-if.end2048:                                       ; preds = %if.end2042
+if.end2048:                                       
   %bsLive2054.pre = getelementptr inbounds i8, i8* %s, i32 8
   br label %sw.bb2050
 
-sw.bb2050:                                        ; preds = %if.end2048, %if.end.sw.bb2050_crit_edge
+sw.bb2050:                                        
   %groupPos.9 = phi i32 [ 0, %if.end.sw.bb2050_crit_edge ], [ %groupPos.8, %if.end2048 ]
   %and2064 = and i32 undef, 1
   br label %while.body2038
 
-while.end2104:                                    ; preds = %if.end2042
+while.end2104:                                    
   br i1 undef, label %save_state_and_return, label %if.end2117
 
-if.end2117:                                       ; preds = %while.end2104
+if.end2117:                                       
   br i1 undef, label %while.body2161.lr.ph, label %while.body2145.lr.ph
 
-while.body2145.lr.ph:                             ; preds = %if.end2117
+while.body2145.lr.ph:                             
   br label %save_state_and_return
 
-while.body2161.lr.ph:                             ; preds = %if.end2117
+while.body2161.lr.ph:                             
   br label %save_state_and_return
 
-sw.bb2409:                                        ; preds = %entry
+sw.bb2409:                                        
   br label %save_state_and_return
 
-sw.default:                                       ; preds = %entry
+sw.default:                                       
   call void @BZ2_bz__AssertH__fail() nounwind
   br label %save_state_and_return
 
@@ -143,33 +143,33 @@ save_state_and_return:
 
 declare void @BZ2_bz__AssertH__fail()
 
-; Make sure we don't speculate on div/idiv instructions
-; CHECK: test_idiv
-; CHECK-NOT: cmov
+
+
+
 define i32 @test_idiv(i32 %a, i32 %b) nounwind uwtable readnone ssp {
   %1 = icmp eq i32 %b, 0
   br i1 %1, label %4, label %2
 
-; <label>:2                                       ; preds = %0
+
   %3 = sdiv i32 %a, %b
   br label %4
 
-; <label>:4                                       ; preds = %0, %2
+
   %5 = phi i32 [ %3, %2 ], [ %a, %0 ]
   ret i32 %5
 }
 
-; CHECK: test_div
-; CHECK-NOT: cmov
+
+
 define i32 @test_div(i32 %a, i32 %b) nounwind uwtable readnone ssp {
   %1 = icmp eq i32 %b, 0
   br i1 %1, label %4, label %2
 
-; <label>:2                                       ; preds = %0
+
   %3 = udiv i32 %a, %b
   br label %4
 
-; <label>:4                                       ; preds = %0, %2
+
   %5 = phi i32 [ %3, %2 ], [ %a, %0 ]
   ret i32 %5
 }

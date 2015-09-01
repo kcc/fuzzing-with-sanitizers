@@ -1,4 +1,4 @@
-; RUN: opt < %s -basicaa -memcpyopt -S | FileCheck %s
+
 
 target datalayout = "e"
 
@@ -13,10 +13,10 @@ define void @test() {
   call void @foo(i8* %ptr1)
   ret void
 
-  ; Check that the transformation isn't applied if the called function can
-  ; capture the pointer argument (i.e. the nocapture attribute isn't present)
-  ; CHECK-LABEL: @test(
-  ; CHECK: call void @foo(i8* %ptr2)
-  ; CHECK-NEXT: call void @llvm.memcpy
-  ; CHECK-NEXT: call void @foo(i8* %ptr1)
+  
+  
+  
+  
+  
+  
 }

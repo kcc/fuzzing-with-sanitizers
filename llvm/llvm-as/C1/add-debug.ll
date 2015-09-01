@@ -1,8 +1,8 @@
-; RUN: llc < %s -march=amdgcn -mcpu=tahiti -debug
-; RUN: llc < %s -march=amdgcn -mcpu=tonga -debug
-; REQUIRES: asserts
 
-; Check that SelectionDAGDumper does not crash on int_SI_if.
+
+
+
+
 define void @add64_in_branch(i64 addrspace(1)* %out, i64 addrspace(1)* %in, i64 %a, i64 %b, i64 %c) {
 entry:
   %0 = icmp eq i64 %a, 0

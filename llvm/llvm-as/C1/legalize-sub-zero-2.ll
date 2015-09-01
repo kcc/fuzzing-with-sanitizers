@@ -1,4 +1,4 @@
-; RUN: llc < %s -mtriple=i386-apple-darwin
+
 
 define fastcc void @foo(i32 %type) nounwind optsize {
 entry:
@@ -7,35 +7,35 @@ entry:
     i32 5121, label %bb27
   ]
 
-bb11:                                             ; preds = %entry
+bb11:                                             
   br label %bb27
 
-bb26:                                             ; preds = %entry
+bb26:                                             
   unreachable
 
-bb27:                                             ; preds = %bb11, %entry
+bb27:                                             
   %srcpb.0 = phi i32 [ 1, %bb11 ], [ 0, %entry ]
   br i1 undef, label %bb348, label %bb30.lr.ph
 
-bb30.lr.ph:                                       ; preds = %bb27
+bb30.lr.ph:                                       
   %.sum743 = shl i32 %srcpb.0, 1
   %0 = mul i32 %srcpb.0, -2
   %.sum745 = add i32 %.sum743, %0
   br i1 undef, label %bb70, label %bb71
 
-bb70:                                             ; preds = %bb30.lr.ph
+bb70:                                             
   unreachable
 
-bb71:                                             ; preds = %bb30.lr.ph
+bb71:                                             
   br i1 undef, label %bb92, label %bb80
 
-bb80:                                             ; preds = %bb71
+bb80:                                             
   unreachable
 
-bb92:                                             ; preds = %bb71
+bb92:                                             
   %1 = getelementptr inbounds i8, i8* undef, i32 %.sum745
   unreachable
 
-bb348:                                            ; preds = %bb27
+bb348:                                            
   ret void
 }

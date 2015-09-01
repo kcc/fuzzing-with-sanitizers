@@ -1,6 +1,6 @@
-; RUN: llc < %s | FileCheck %s
-; Test to check argument y's debug info uses FI
-; Radar 10048772
+
+
+
 target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:32:64-v128:32:128-a0:0:32-n32"
 target triple = "thumbv7-apple-ios"
 
@@ -11,17 +11,17 @@ define void @foo(%struct.tag_s* nocapture %this, %struct.tag_s* %c, i64 %x, i64 
   tail call void @llvm.dbg.value(metadata %struct.tag_s* %c, i64 0, metadata !13, metadata !DIExpression()), !dbg !21
   tail call void @llvm.dbg.value(metadata i64 %x, i64 0, metadata !14, metadata !DIExpression()), !dbg !22
   tail call void @llvm.dbg.value(metadata i64 %y, i64 0, metadata !17, metadata !DIExpression()), !dbg !23
-;CHECK:	@DEBUG_VALUE: foo:y <- [R7+8]
+
   tail call void @llvm.dbg.value(metadata %struct.tag_s* %ptr1, i64 0, metadata !18, metadata !DIExpression()), !dbg !24
   tail call void @llvm.dbg.value(metadata %struct.tag_s* %ptr2, i64 0, metadata !19, metadata !DIExpression()), !dbg !25
   %1 = icmp eq %struct.tag_s* %c, null, !dbg !26
   br i1 %1, label %3, label %2, !dbg !26
 
-; <label>:2                                       ; preds = %0
+
   tail call void @foobar(i64 %x, i64 %y) nounwind, !dbg !28
   br label %3, !dbg !28
 
-; <label>:3                                       ; preds = %0, %2
+
   ret void, !dbg !29
 }
 

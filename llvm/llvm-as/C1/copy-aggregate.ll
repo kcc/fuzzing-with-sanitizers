@@ -1,11 +1,11 @@
-; RUN: opt < %s -scalarrepl -S | FileCheck %s
-; PR3290
+
+
 target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64"
 
-;; Store of integer to whole alloca struct.
+
 define i32 @test1(i64 %V) nounwind {
-; CHECK: test1
-; CHECK-NOT: alloca
+
+
 	%X = alloca {{i32, i32}}
 	%Y = bitcast {{i32,i32}}* %X to i64*
 	store i64 %V, i64* %Y
@@ -18,10 +18,10 @@ define i32 @test1(i64 %V) nounwind {
 	ret i32 %c
 }
 
-;; Store of integer to whole struct/array alloca.
+
 define float @test2(i128 %V) nounwind {
-; CHECK: test2
-; CHECK-NOT: alloca
+
+
 	%X = alloca {[4 x float]}
 	%Y = bitcast {[4 x float]}* %X to i128*
 	store i128 %V, i128* %Y
@@ -34,10 +34,10 @@ define float @test2(i128 %V) nounwind {
 	ret float %c
 }
 
-;; Load of whole alloca struct as integer
+
 define i64 @test3(i32 %a, i32 %b) nounwind {
-; CHECK: test3
-; CHECK-NOT: alloca
+
+
 	%X = alloca {{i32, i32}}
 
 	%A = getelementptr {{i32,i32}}, {{i32,i32}}* %X, i32 0, i32 0, i32 0
@@ -50,10 +50,10 @@ define i64 @test3(i32 %a, i32 %b) nounwind {
 	ret i64 %Z
 }
 
-;; load of integer from whole struct/array alloca.
+
 define i128 @test4(float %a, float %b) nounwind {
-; CHECK: test4
-; CHECK-NOT: alloca
+
+
 	%X = alloca {[4 x float]}
 	%A = getelementptr {[4 x float]}, {[4 x float]}* %X, i32 0, i32 0, i32 0
 	%B = getelementptr {[4 x float]}, {[4 x float]}* %X, i32 0, i32 0, i32 3
@@ -65,13 +65,13 @@ define i128 @test4(float %a, float %b) nounwind {
 	ret i128 %V
 }
 
-;; If the elements of a struct or array alloca contain padding, SROA can still
-;; split up the alloca as long as there is no padding between the elements.
+
+
 %padded = type { i16, i8 }
 define void @test5([4 x %padded]* %p, [4 x %padded]* %q) {
 entry:
-; CHECK: test5
-; CHECK-NOT: i128
+
+
   %var = alloca [4 x %padded], align 4
   %vari8 = bitcast [4 x %padded]* %var to i8*
   %pi8 = bitcast [4 x %padded]* %p to i8*
@@ -81,17 +81,17 @@ entry:
   ret void
 }
 
-;; Check that an array alloca can be split up when it is also accessed with
-;; a load or store as a homogeneous structure with the same element type and
-;; number of elements as the array.
+
+
+
 %homogeneous = type { <8 x i16>, <8 x i16>, <8 x i16> }
 %wrapped_array = type { [3 x <8 x i16>] }
 define void @test6(i8* %p, %wrapped_array* %arr) {
 entry:
-; CHECK: test6
-; CHECK: store <8 x i16>
-; CHECK: store <8 x i16>
-; CHECK: store <8 x i16>
+
+
+
+
   %var = alloca %wrapped_array, align 16
   %res = call %homogeneous @test6callee(i8* %p)
   %varcast = bitcast %wrapped_array* %var to %homogeneous*

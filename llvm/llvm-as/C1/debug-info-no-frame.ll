@@ -1,10 +1,10 @@
-; RUN: llc -mtriple=armv7-none-linux-gnueabihf < %s -o - | FileCheck %s
 
-; Function Attrs: nounwind
+
+
 define void @need_cfi_def_cfa_offset() #0 {
-; CHECK-LABEL: need_cfi_def_cfa_offset:
-; CHECK: sub	sp, sp, #4
-; CHECK: .cfi_def_cfa_offset 4
+
+
+
 entry:
   %Depth = alloca i32, align 4
   call void @llvm.dbg.declare(metadata i32* %Depth, metadata !9, metadata !10), !dbg !11
@@ -12,7 +12,7 @@ entry:
   ret void, !dbg !12
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
 attributes #0 = { nounwind }

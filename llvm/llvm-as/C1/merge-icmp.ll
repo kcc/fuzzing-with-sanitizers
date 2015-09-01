@@ -1,4 +1,4 @@
-; RUN: opt -S -instcombine < %s | FileCheck %s
+
 
 define i1 @test1(i16* %x) {
   %load = load i16, i16* %x, align 4
@@ -8,10 +8,10 @@ define i1 @test1(i16* %x) {
   %cmp2 = icmp eq i16 %and, 17664
   %or = and i1 %cmp1, %cmp2
   ret i1 %or
-; CHECK-LABEL: @test1(
-; CHECK-NEXT: load i16
-; CHECK-NEXT: icmp eq i16 %load, 17791
-; CHECK-NEXT: ret i1
+
+
+
+
 }
 
 define i1 @test2(i16* %x) {
@@ -22,8 +22,8 @@ define i1 @test2(i16* %x) {
   %cmp2 = icmp eq i8 %trunc, 69
   %or = and i1 %cmp1, %cmp2
   ret i1 %or
-; CHECK-LABEL: @test2(
-; CHECK-NEXT: load i16
-; CHECK-NEXT: icmp eq i16 %load, 32581
-; CHECK-NEXT: ret i1
+
+
+
+
 }

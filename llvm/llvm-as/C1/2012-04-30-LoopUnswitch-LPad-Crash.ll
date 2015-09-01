@@ -1,5 +1,5 @@
-; RUN: opt < %s -basicaa -instcombine -inline -functionattrs -licm -loop-unswitch -gvn -verify
-; PR12573
+
+
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.7.0"
 
@@ -13,31 +13,31 @@ entry:
   %c = alloca %class.D.22.42.66.102.138.158.178.198.238.242.246.250.262.294.302.338.346.379, align 8
   br label %for.cond
 
-for.cond:                                         ; preds = %for.end, %entry
+for.cond:                                         
   invoke void @_ZN1DptEv(%class.D.22.42.66.102.138.158.178.198.238.242.246.250.262.294.302.338.346.379* %c)
           to label %invoke.cont unwind label %lpad
 
-invoke.cont:                                      ; preds = %for.cond
+invoke.cont:                                      
   invoke void @_ZN1C3endEv()
           to label %for.cond3 unwind label %lpad
 
-for.cond3:                                        ; preds = %invoke.cont6, %invoke.cont
+for.cond3:                                        
   invoke void @_ZN1DptEv(%class.D.22.42.66.102.138.158.178.198.238.242.246.250.262.294.302.338.346.379* %c)
           to label %invoke.cont4 unwind label %lpad
 
-invoke.cont4:                                     ; preds = %for.cond3
+invoke.cont4:                                     
   invoke void @_ZN1C3endEv()
           to label %invoke.cont6 unwind label %lpad
 
-invoke.cont6:                                     ; preds = %invoke.cont4
+invoke.cont6:                                     
   br i1 undef, label %for.cond3, label %for.end
 
-lpad:                                             ; preds = %for.end, %invoke.cont4, %for.cond3, %invoke.cont, %for.cond
+lpad:                                             
   %0 = landingpad { i8*, i32 }
           cleanup
   resume { i8*, i32 } undef
 
-for.end:                                          ; preds = %invoke.cont6
+for.end:                                          
   invoke void @_ZN1C13_M_insert_auxER1D()
           to label %for.cond unwind label %lpad
 }
@@ -52,11 +52,11 @@ entry:
   %tobool = icmp ne %class.C.23.43.67.103.139.159.179.199.239.243.247.251.263.295.303.339.347.376* %0, null
   br i1 %tobool, label %cond.end, label %cond.false
 
-cond.false:                                       ; preds = %entry
+cond.false:                                       
   call void @_Z10__assert13v() noreturn
   unreachable
 
-cond.end:                                         ; preds = %entry
+cond.end:                                         
   ret void
 }
 

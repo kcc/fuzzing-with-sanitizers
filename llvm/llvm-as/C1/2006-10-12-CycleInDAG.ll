@@ -1,4 +1,4 @@
-; RUN: llc < %s -march=x86
+
 	%struct.function = type opaque
 	%struct.lang_decl = type opaque
 	%struct.location_t = type { i8*, i32 }
@@ -13,29 +13,29 @@
 define void @check_format_arg() {
 	br i1 false, label %cond_next196, label %bb12.preheader
 
-bb12.preheader:		; preds = %0
+bb12.preheader:		
 	ret void
 
-cond_next196:		; preds = %0
+cond_next196:		
 	br i1 false, label %cond_next330, label %cond_true304
 
-cond_true304:		; preds = %cond_next196
+cond_true304:		
 	ret void
 
-cond_next330:		; preds = %cond_next196
+cond_next330:		
 	br i1 false, label %cond_next472, label %bb441
 
-bb441:		; preds = %cond_next330
+bb441:		
 	ret void
 
-cond_next472:		; preds = %cond_next330
-	%tmp490 = load %struct.tree_node*, %struct.tree_node** null		; <%struct.tree_node*> [#uses=1]
-	%tmp492 = getelementptr %struct.tree_node, %struct.tree_node* %tmp490, i32 0, i32 0, i32 0, i32 3		; <i8*> [#uses=1]
-	%tmp492.upgrd.1 = bitcast i8* %tmp492 to i32*		; <i32*> [#uses=1]
-	%tmp493 = load i32, i32* %tmp492.upgrd.1		; <i32> [#uses=1]
-	%tmp495 = trunc i32 %tmp493 to i8		; <i8> [#uses=1]
-	%tmp496 = icmp eq i8 %tmp495, 11		; <i1> [#uses=1]
-	%tmp496.upgrd.2 = zext i1 %tmp496 to i8		; <i8> [#uses=1]
+cond_next472:		
+	%tmp490 = load %struct.tree_node*, %struct.tree_node** null		
+	%tmp492 = getelementptr %struct.tree_node, %struct.tree_node* %tmp490, i32 0, i32 0, i32 0, i32 3		
+	%tmp492.upgrd.1 = bitcast i8* %tmp492 to i32*		
+	%tmp493 = load i32, i32* %tmp492.upgrd.1		
+	%tmp495 = trunc i32 %tmp493 to i8		
+	%tmp496 = icmp eq i8 %tmp495, 11		
+	%tmp496.upgrd.2 = zext i1 %tmp496 to i8		
 	store i8 %tmp496.upgrd.2, i8* null
 	ret void
 }

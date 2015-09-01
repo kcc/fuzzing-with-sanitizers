@@ -1,4 +1,4 @@
-; RUN: llc %s -o - -verify-machineinstrs | FileCheck %s
+
 
 target datalayout = "e-m:o-p:32:32-f64:32:64-v64:32:64-v128:32:128-a:0:32-n32-S32"
 target triple = "thumbv7-unknown-unknown"
@@ -7,18 +7,18 @@ target triple = "thumbv7-unknown-unknown"
 %union.v = type { i32 }
 %struct.gs_color_s = type { i16, i16, i16, i16, i8, i8 }
 
-; In this case, the if converter was cloning the return instruction so that we had
-;   r2<def> = ...
-;   return [pred] r2<dead,def>
-;   ldr <r2, kill>
-;   return
-; The problem here was that the dead def on the first return was making the machine verifier
-; think that the load read from an undefined register.  We need to remove the dead flag from
-; the return, and also add an implicit use of the prior value of r2.
 
-; CHECK: ldrh
 
-; Function Attrs: minsize nounwind optsize ssp
+
+
+
+
+
+
+
+
+
+
 define i32 @test(%struct.ref_s* %pref1, %struct.ref_s* %pref2, %struct.gs_color_s** %tmp152) #0 {
 bb:
   %nref = alloca %struct.ref_s, align 4
@@ -33,7 +33,7 @@ bb:
   %tmp166 = icmp eq i16 %tmp163, %tmp165
   br i1 %tmp166, label %bb167, label %bb173
 
-bb167:                                            ; preds = %bb
+bb167:                                            
   %tmp168 = getelementptr inbounds %struct.gs_color_s, %struct.gs_color_s* %tmp153, i32 0, i32 2
   %tmp169 = load i16, i16* %tmp168, align 2
   %tmp170 = getelementptr inbounds %struct.gs_color_s, %struct.gs_color_s* %tmp155, i32 0, i32 2
@@ -41,13 +41,13 @@ bb167:                                            ; preds = %bb
   %tmp172 = icmp eq i16 %tmp169, %tmp171
   br label %bb173
 
-bb173:                                            ; preds = %bb167, %bb
+bb173:                                            
   %tmp174 = phi i1 [ false, %bb ], [ %tmp172, %bb167 ]
   %tmp175 = zext i1 %tmp174 to i32
   ret i32 %tmp175
 }
 
-; Function Attrs: minsize optsize
+
 declare %struct.ref_s* @name_string_ref(%struct.ref_s*, %struct.ref_s*) #1
 
 attributes #0 = { minsize nounwind optsize }

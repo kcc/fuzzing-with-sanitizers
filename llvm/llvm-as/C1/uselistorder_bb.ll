@@ -1,7 +1,7 @@
-; RUN: llvm-as < %s -disable-output 2>&1 | FileCheck %s -allow-empty
-; CHECK-NOT: error
-; CHECK-NOT: warning
-; RUN: verify-uselistorder < %s
+
+
+
+
 
 @ba1 = constant i8* blockaddress (@bafunc1, %bb)
 @ba2 = constant i8* getelementptr (i8, i8* blockaddress (@bafunc2, %bb), i61 0)

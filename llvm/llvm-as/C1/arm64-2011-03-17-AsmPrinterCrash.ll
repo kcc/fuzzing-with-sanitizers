@@ -1,16 +1,16 @@
-; RUN: llc < %s -mtriple=arm64-apple-darwin
 
-; rdar://9146594
+
+
 
 define void @drt_vsprintf() nounwind ssp {
 entry:
   %do_tab_convert = alloca i32, align 4
   br i1 undef, label %if.then24, label %if.else295, !dbg !13
 
-if.then24:                                        ; preds = %entry
+if.then24:                                        
   unreachable
 
-if.else295:                                       ; preds = %entry
+if.else295:                                       
   call void @llvm.dbg.declare(metadata i32* %do_tab_convert, metadata !16, metadata !DIExpression()), !dbg !18
   store i32 0, i32* %do_tab_convert, align 4, !dbg !19
   unreachable

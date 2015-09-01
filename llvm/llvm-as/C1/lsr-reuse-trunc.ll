@@ -1,16 +1,16 @@
-; RUN: llc < %s -mtriple=x86_64-linux -mcpu=nehalem | FileCheck %s
-; RUN: llc < %s -mtriple=x86_64-win32 -mcpu=nehalem | FileCheck %s
 
-; Full strength reduction wouldn't reduce register pressure, so LSR should
-; stick with indexing here.
 
-; CHECK: movaps        (%{{rsi|rdx}},%rax,4), [[X3:%xmm[0-9]+]]
-; CHECK: cvtdq2ps
-; CHECK: orps          {{%xmm[0-9]+}}, [[X4:%xmm[0-9]+]]
-; CHECK: movaps        [[X4]], (%{{rdi|rcx}},%rax,4)
-; CHECK: addq  $4, %rax
-; CHECK: cmpl  %eax, (%{{rdx|r8}})
-; CHECK-NEXT: jg
+
+
+
+
+
+
+
+
+
+
+
 
 define void @vvfloorf(float* nocapture %y, float* nocapture %x, i32* nocapture %n) nounwind {
 entry:

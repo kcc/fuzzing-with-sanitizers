@@ -1,4 +1,4 @@
-; RUN: llc -mtriple=x86_64-unknown-linux-gnu %s -o - | FileCheck %s
+
 
 @zed = external hidden constant i32
 
@@ -15,6 +15,6 @@ entry:
 
 declare hidden void @bar(i32*)
 
-;CHECK: .hidden	zed
-;CHECK: .hidden	baz
-;CHECK: .hidden	bar
+
+
+

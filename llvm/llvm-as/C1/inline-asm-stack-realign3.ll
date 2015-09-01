@@ -1,4 +1,4 @@
-; RUN: llc -march=x86 -no-integrated-as < %s | FileCheck %s
+
 
 declare void @bar(i32* %junk)
 
@@ -19,11 +19,11 @@ skip:
   ret i32 %0
 }
 
-; CHECK-LABEL: foo:
-; CHECK: pushl %ebp
-; CHECK: andl $-128, %esp
-; CHECK: xor %ecx, %ecx
-; CHECK-NEXT: mov %ecx, (%esi)
-; CHECK: movl (%esi), %eax
-; CHECK: popl %ebp
-; CHECK: ret
+
+
+
+
+
+
+
+

@@ -1,19 +1,19 @@
-; RUN: llc < %s -mtriple=x86_64-linux | FileCheck %s
-; RUN: llc < %s -mtriple=x86_64-win32 | FileCheck %s
-; RUN: llc < %s -mtriple=x86_64-linux-gnux32 | FileCheck %s
-; RUN: llc < %s -mtriple=x86_64-nacl | FileCheck %s
+
+
+
+
 
 define i32 @test1(i32 %x) nounwind {
         %tmp1 = shl i32 %x, 3
         %tmp2 = add i32 %tmp1, 7
         ret i32 %tmp2
-; CHECK-LABEL: test1:
-; CHECK:    leal 7(,%r[[A0:di|cx]],8), %eax
+
+
 }
 
 
-; ISel the add of -4 with a neg and use an lea for the rest of the
-; arithemtic.
+
+
 define i32 @test2(i32 %x_offs) nounwind readnone {
 entry:
 	%t0 = icmp sgt i32 %x_offs, 4
@@ -29,9 +29,9 @@ bb.nph:
 
 bb2:
 	ret i32 %x_offs
-; CHECK-LABEL: test2:
-; CHECK:        leal    -5(%r[[A0:..]]), %eax
-; CHECK:	andl	$-4, %eax
-; CHECK:	negl	%eax
-; CHECK:	leal	-4(%r[[A0]],%rax), %eax
+
+
+
+
+
 }

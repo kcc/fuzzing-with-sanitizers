@@ -1,4 +1,4 @@
-; RUN: %lli -extra-module=%p/Inputs/cross-module-b.ll -disable-lazy-compilation=true -remote-mcjit -mcjit-remote-process=lli-child-target%exeext %s > /dev/null
+
 
 declare i32 @FB()
 
@@ -7,6 +7,6 @@ define i32 @FA() nounwind {
 }
 
 define i32 @main() nounwind {
-  %r = call i32 @FB( )   ; <i32> [#uses=1]
+  %r = call i32 @FB( )   
   ret i32 %r
 }

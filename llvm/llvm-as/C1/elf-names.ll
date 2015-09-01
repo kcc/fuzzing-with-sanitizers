@@ -1,19 +1,19 @@
-; RUN: llc -mtriple=x86_64-unknown-linux-gnu %s -o %t -filetype=obj
-; RUN: llvm-dwarfdump -debug-dump=info %t | FileCheck %s
-; RUN: llvm-as < %s | llvm-dis | FileCheck --check-prefix=CHECK-DIS %s
 
-; CHECK: 0x0000000b: DW_TAG_compile_unit
-; CHECK:               DW_AT_name [DW_FORM_strp] ( .debug_str[0x00000035] = "foo.cpp")
-; CHECK: 0x{{[0-9a-f]+}}:   DW_TAG_class_type
-; CHECK:                 DW_AT_name [DW_FORM_strp]       ( .debug_str[0x{{[0-9a-f]+}}] = "D")
-; CHECK: 0x{{[0-9a-f]+}}:     DW_TAG_member
-; CHECK:                   DW_AT_name [DW_FORM_strp]     ( .debug_str[0x{{[0-9a-f]+}}] = "c1")
-; CHECK: DW_TAG_subprogram
-; CHECK-NEXT: DW_AT_name [DW_FORM_strp]     ( .debug_str[0x{{[0-9a-f]+}}] = "D")
-; CHECK: DW_TAG_formal_parameter
-; CHECK: DW_AT_artificial [DW_FORM_flag_present]       (true)
 
-; CHECK-DIS: DIFlagArtificial
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %class.D = type { i32, i32, i32, i32 }
 

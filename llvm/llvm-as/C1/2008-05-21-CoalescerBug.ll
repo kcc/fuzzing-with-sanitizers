@@ -1,5 +1,5 @@
-; RUN: llc < %s -march=x86 -O0 -fast-isel=false -optimize-regalloc -regalloc=basic | grep mov | count 5
-; PR2343
+
+
 
 	%llvm.dbg.anchor.type = type { i32, i32 }
 	%struct.CUMULATIVE_ARGS = type { i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32 }
@@ -67,32 +67,32 @@
 	%struct.var_refs_queue = type { %struct.rtx_def*, i32, i32, %struct.var_refs_queue* }
 	%struct.varasm_status = type opaque
 	%struct.vuse_optype_d = type { %struct.vuse_optype_d*, %struct.tree_node*, %struct.ssa_use_operand_d }
-@llvm.used = appending global [1 x i8*] [ i8* bitcast (%struct.edge_def* (%struct.edge_def*, %struct.basic_block_def*)* @tree_redirect_edge_and_branch to i8*) ], section "llvm.metadata"		; <[1 x i8*]*> [#uses=0]
+@llvm.used = appending global [1 x i8*] [ i8* bitcast (%struct.edge_def* (%struct.edge_def*, %struct.basic_block_def*)* @tree_redirect_edge_and_branch to i8*) ], section "llvm.metadata"		
 
 define %struct.edge_def* @tree_redirect_edge_and_branch(%struct.edge_def* %e1, %struct.basic_block_def* %dest2) nounwind  {
 entry:
 	br label %bb497
 
-bb483:		; preds = %bb497
-	%tmp496 = load %struct.tree_node*, %struct.tree_node** null, align 4		; <%struct.tree_node*> [#uses=1]
+bb483:		
+	%tmp496 = load %struct.tree_node*, %struct.tree_node** null, align 4		
 	br label %bb497
 
-bb497:		; preds = %bb483, %entry
-	%cases.0 = phi %struct.tree_node* [ %tmp496, %bb483 ], [ null, %entry ]		; <%struct.tree_node*> [#uses=1]
-	%last.0 = phi %struct.tree_node* [ %cases.0, %bb483 ], [ undef, %entry ]		; <%struct.tree_node*> [#uses=1]
+bb497:		
+	%cases.0 = phi %struct.tree_node* [ %tmp496, %bb483 ], [ null, %entry ]		
+	%last.0 = phi %struct.tree_node* [ %cases.0, %bb483 ], [ undef, %entry ]		
 	%foo = phi i1 [ 0, %bb483 ], [ 1, %entry ]
 	br i1 %foo, label %bb483, label %bb502
 
-bb502:		; preds = %bb497
+bb502:		
 	br i1 %foo, label %bb507, label %bb841
 
-bb507:		; preds = %bb502
-	%tmp517 = getelementptr %struct.tree_node, %struct.tree_node* %last.0, i32 0, i32 0		; <%struct.tree_function_decl*> [#uses=1]
-	%tmp517518 = bitcast %struct.tree_function_decl* %tmp517 to %struct.tree_common*		; <%struct.tree_common*> [#uses=1]
-	%tmp519 = getelementptr %struct.tree_common, %struct.tree_common* %tmp517518, i32 0, i32 0		; <%struct.tree_node**> [#uses=1]
+bb507:		
+	%tmp517 = getelementptr %struct.tree_node, %struct.tree_node* %last.0, i32 0, i32 0		
+	%tmp517518 = bitcast %struct.tree_function_decl* %tmp517 to %struct.tree_common*		
+	%tmp519 = getelementptr %struct.tree_common, %struct.tree_common* %tmp517518, i32 0, i32 0		
 	store %struct.tree_node* null, %struct.tree_node** %tmp519, align 4
 	br label %bb841
 
-bb841:		; preds = %bb507, %bb502
+bb841:		
 	unreachable
 }

@@ -1,15 +1,15 @@
-; RUN: opt -mtriple=x86_64-pc-windows-msvc -winehprepare -S < %s | FileCheck %s
 
-; Notionally based on this C++ source:
-; int liveout_catch(int p) {
-;   int val = p + 1;
-;   try {
-;     might_throw();
-;   } catch (int) {
-;     val++;
-;   }
-;   return val;
-; }
+
+
+
+
+
+
+
+
+
+
+
 
 declare void @llvm.eh.begincatch(i8*, i8*)
 declare void @llvm.eh.endcatch()
@@ -49,24 +49,24 @@ resume:
   resume {i8*, i32} %ehvals
 }
 
-; CHECK-LABEL: define i32 @liveout_catch(i32 %p)
-; CHECK: %val.entry = add i32 %p, 1
-; CHECK-NEXT: store i32 %val.entry, i32* %val.entry.reg2mem
-; CHECK: invoke void @might_throw()
-;
-; CHECK: landingpad
-; CHECK: indirectbr i8* {{.*}}, [label %catchit.split]
-;
-; CHECK: catchit.split:
-; CHECK: load i32, i32* %val.lpad.reg2mem
-; CHECK: br label %ret
-;
-; CHECK: ret:
-; CHECK: %rv = phi i32 [ {{.*}}, %entry ], [ {{.*}}, %catchit.split ]
-; CHECK: ret i32
 
-; CHECK-LABEL: define internal i8* @liveout_catch.catch(i8*, i8*)
-; CHECK: %[[val:[^ ]*]] = load i32, i32*
-; CHECK-NEXT: %[[val_lpad:[^ ]*]] = add i32 %[[val]], 1
-; CHECK-NEXT: store i32 %[[val_lpad]], i32*
-; CHECK: ret i8* blockaddress(@liveout_catch, %catchit.split)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

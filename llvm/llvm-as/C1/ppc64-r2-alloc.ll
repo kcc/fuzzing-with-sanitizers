@@ -1,4 +1,4 @@
-; RUN: llc -mcpu=pwr7 < %s | FileCheck %s
+
 target datalayout = "E-m:e-i64:64-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
 
@@ -72,10 +72,10 @@ entry:
   ret i32 %div64
 }
 
-; This function will need to use all non-reserved GPRs (and then some), make
-; sure that r2 is among them.
-; CHECK-LABEL: @foo
-; CHECK: std 2,
-; CHECK: ld 2,
-; CHECK: blr
+
+
+
+
+
+
 

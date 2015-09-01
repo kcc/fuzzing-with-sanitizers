@@ -1,8 +1,8 @@
-; RUN: opt -S -simplifycfg < %s | FileCheck %s
-; Radar 9342286
-; Assign DebugLoc to trap instruction.
+
+
+
 define void @foo() nounwind ssp {
-; CHECK: call void @llvm.trap(), !dbg
+
   store i32 42, i32* null, !dbg !5
   ret void, !dbg !7
 }

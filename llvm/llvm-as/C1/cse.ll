@@ -1,20 +1,20 @@
-; RUN: opt < %s -basicaa -slp-vectorizer -S -mtriple=i386-apple-macosx10.8.0 -mcpu=corei7-avx | FileCheck %s
+
 
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64-f80:128:128-n8:16:32-S128"
 target triple = "i386-apple-macosx10.8.0"
 
-;int test(double *G) {
-;  G[0] = 1+G[5]*4;
-;  G[1] = 6+G[6]*3;
-;  G[2] = 7+G[5]*4;
-;  G[3] = 8+G[6]*4;
-;}
 
-;CHECK-LABEL: @test(
-;CHECK: load <2 x double>
-;CHECK: fadd <4 x double>
-;CHECK: store <4 x double>
-;CHECK: ret i32
+
+
+
+
+
+
+
+
+
+
+
 
 define i32 @test(double* nocapture %G) {
 entry:
@@ -39,18 +39,18 @@ entry:
   ret i32 undef
 }
 
-;int foo(double *A, int n) {
-;  A[0] = A[0] * 7.9 * n + 6.0;
-;  A[1] = A[1] * 7.7 * n + 2.0;
-;  A[2] = A[2] * 7.6 * n + 3.0;
-;  A[3] = A[3] * 7.4 * n + 4.0;
-;}
-; CHECK-LABEL: @foo(
-; CHECK: load <4 x double>
-; CHECK: fmul <4 x double>
-; CHECK: fmul <4 x double>
-; CHECK: fadd <4 x double>
-; CHECK: store <4 x double>
+
+
+
+
+
+
+
+
+
+
+
+
 define i32 @foo(double* nocapture %A, i32 %n) {
 entry:
   %0 = load double, double* %A, align 8
@@ -80,23 +80,23 @@ entry:
   ret i32 undef
 }
 
-; int test2(double *G, int k) {
-;   if (k) {
-;     G[0] = 1+G[5]*4;
-;     G[1] = 6+G[6]*3;
-;   } else {
-;     G[2] = 7+G[5]*4;
-;     G[3] = 8+G[6]*3;
-;   }
-; }
 
-; We can't merge the gather sequences because one does not dominate the other.
-; CHECK-LABEL: @test2(
-; CHECK: insertelement
-; CHECK: insertelement
-; CHECK: insertelement
-; CHECK: insertelement
-; CHECK: ret
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define i32 @test2(double* nocapture %G, i32 %k) {
   %1 = icmp eq i32 %k, 0
   %2 = getelementptr inbounds double, double* %G, i64 5
@@ -104,7 +104,7 @@ define i32 @test2(double* nocapture %G, i32 %k) {
   %4 = fmul double %3, 4.000000e+00
   br i1 %1, label %12, label %5
 
-; <label>:5                                       ; preds = %0
+
   %6 = fadd double %4, 1.000000e+00
   store double %6, double* %G, align 8
   %7 = getelementptr inbounds double, double* %G, i64 6
@@ -115,7 +115,7 @@ define i32 @test2(double* nocapture %G, i32 %k) {
   store double %10, double* %11, align 8
   br label %20
 
-; <label>:12                                      ; preds = %0
+
   %13 = fadd double %4, 7.000000e+00
   %14 = getelementptr inbounds double, double* %G, i64 2
   store double %13, double* %14, align 8
@@ -127,23 +127,23 @@ define i32 @test2(double* nocapture %G, i32 %k) {
   store double %18, double* %19, align 8
   br label %20
 
-; <label>:20                                      ; preds = %12, %5
+
   ret i32 undef
 }
 
 
-;int foo(double *A, int n) {
-;  A[0] = A[0] * 7.9 * n + 6.0;
-;  A[1] = A[1] * 7.9 * n + 6.0;
-;  A[2] = A[2] * 7.9 * n + 6.0;
-;  A[3] = A[3] * 7.9 * n + 6.0;
-;}
-; CHECK-LABEL: @foo4(
-; CHECK: load <4 x double>
-; CHECK: fmul <4 x double>
-; CHECK: fmul <4 x double>
-; CHECK: fadd <4 x double>
-; CHECK: store <4 x double>
+
+
+
+
+
+
+
+
+
+
+
+
 define i32 @foo4(double* nocapture %A, i32 %n) {
 entry:
   %0 = load double, double* %A, align 8
@@ -173,19 +173,19 @@ entry:
   ret i32 undef
 }
 
-;int partial_mrg(double *A, int n) {
-;  A[0] = A[0] * n;
-;  A[1] = A[1] * n;
-;  if (n < 4) return 0;
-;  A[2] = A[2] * n;
-;  A[3] = A[3] * (n+4);
-;}
-;CHECK-LABEL: @partial_mrg(
-;CHECK: insertelement <2 x double>
-;CHECK: insertelement <2 x double>
-;CHECK: insertelement <2 x double>
-;CHECK-NOT: insertelement <2 x double>
-;CHECK: ret
+
+
+
+
+
+
+
+
+
+
+
+
+
 define i32 @partial_mrg(double* nocapture %A, i32 %n) {
 entry:
   %0 = load double, double* %A, align 8
@@ -199,7 +199,7 @@ entry:
   %cmp = icmp slt i32 %n, 4
   br i1 %cmp, label %return, label %if.end
 
-if.end:                                           ; preds = %entry
+if.end:                                           
   %arrayidx7 = getelementptr inbounds double, double* %A, i64 2
   %2 = load double, double* %arrayidx7, align 8
   %mul9 = fmul double %conv, %2
@@ -212,7 +212,7 @@ if.end:                                           ; preds = %entry
   store double %mul13, double* %arrayidx11, align 8
   br label %return
 
-return:                                           ; preds = %entry, %if.end
+return:                                           
   ret i32 0
 }
 
@@ -225,7 +225,7 @@ define void @PR19646(%class.B.53.55* %this) {
 entry:
   br i1 undef, label %if.end13, label %if.end13
 
-sw.epilog7:                                       ; No predecessors!
+sw.epilog7:                                       
   %.in = getelementptr inbounds %class.B.53.55, %class.B.53.55* %this, i64 0, i32 0, i32 1
   %0 = load double, double* %.in, align 8
   %add = fadd double undef, 0.000000e+00
@@ -237,11 +237,11 @@ sw.epilog7:                                       ; No predecessors!
   %add10 = fadd double %add8, %2
   br i1 undef, label %if.then12, label %if.end13
 
-if.then12:                                        ; preds = %sw.epilog7
+if.then12:                                        
   %3 = load double, double* undef, align 8
   br label %if.end13
 
-if.end13:                                         ; preds = %if.then12, %sw.epilog7, %entry
+if.end13:                                         
   %x.1 = phi double [ 0.000000e+00, %if.then12 ], [ %add6, %sw.epilog7 ], [ undef, %entry ], [ undef, %entry ]
   %b.0 = phi double [ %3, %if.then12 ], [ %add10, %sw.epilog7 ], [ undef, %entry], [ undef, %entry ]
   unreachable

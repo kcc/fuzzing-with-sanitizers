@@ -1,8 +1,8 @@
-; RUN: opt < %s -instcombine -S | FileCheck %s
+
 
 define void @f(i64 %val, i32  %limit, i32 *%ptr) {
-;CHECK: %0 = trunc i64
-;CHECK: %1 = phi i32
+
+
 entry:
   %tempvector = insertelement <16 x i64> undef, i64 %val, i32 0
   %vector = shufflevector <16 x i64> %tempvector, <16 x i64> undef, <16 x i32> zeroinitializer
@@ -26,17 +26,17 @@ ret:
 }
 
 define i1 @g(<3 x i32> %input_2) {
-; CHECK: extractelement
+
 entry:
   br label %for.cond
 
 for.cond:
-; CHECK: phi i32
+
   %input_2.addr.0 = phi <3 x i32> [ %input_2, %entry ], [ %div45, %for.body ]
   %input_1.addr.1 = phi <3 x i32> [ undef, %entry ], [ %dec43, %for.body ]
   br i1 undef, label %for.end, label %for.body
 
-; CHECK: extractelement
+
 for.body:
   %dec43 = add <3 x i32> %input_1.addr.1, <i32 -1, i32 -1, i32 -1>
   %sub44 = sub <3 x i32> <i32 -1, i32 -1, i32 -1>, %dec43

@@ -1,11 +1,11 @@
-; RUN: llc < %s -march=x86-64 -mtriple=x86_64-apple-darwin -mcpu=knl | FileCheck %s
+
 
 target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
-; CHECK-LABEL: f_fu
-; CHECK-NOT: vpblend
-; CHECK: vmovdqa32 {{.*}} {%k1}
+
+
+
 
 define void @f_fu(float* %ret, float*  %aa, float %b) {
 allocas:

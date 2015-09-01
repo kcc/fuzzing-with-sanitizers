@@ -1,11 +1,11 @@
-; RUN: llc -march=mips < %s
-; RUN: llc -march=mips -mattr=+msa,+fp64 < %s
-; RUN: llc -march=mipsel < %s
-; RUN: llc -march=mipsel -mattr=+msa,+fp64 < %s
 
-; This test originally failed to select instructions for extract_vector_elt for
-; v2f64 on MSA.
-; It should at least successfully build.
+
+
+
+
+
+
+
 
 define void @autogen_SD997348632(i8*, i32*, i64*, i32, i64, i8) {
 BB:
@@ -41,7 +41,7 @@ BB:
   %Cmp17 = icmp uge i32 233658, %E
   br label %CF
 
-CF:                                               ; preds = %CF, %CF79, %CF84, %BB
+CF:                                               
   %L18 = load i8, i8* %0
   store i8 %L, i8* %0
   %E19 = extractelement <4 x i64> %Sl, i32 3
@@ -53,7 +53,7 @@ CF:                                               ; preds = %CF, %CF79, %CF84, %
   %Cmp25 = icmp eq i1 false, false
   br i1 %Cmp25, label %CF, label %CF79
 
-CF79:                                             ; preds = %CF
+CF79:                                             
   %L26 = load i8, i8* %0
   store i8 %L26, i8* %0
   %E27 = extractelement <1 x i16> zeroinitializer, i32 0
@@ -64,7 +64,7 @@ CF79:                                             ; preds = %CF
   %Cmp32 = fcmp uno float 0.000000e+00, 0x406DB70180000000
   br i1 %Cmp32, label %CF, label %CF78
 
-CF78:                                             ; preds = %CF78, %CF79
+CF78:                                             
   %L33 = load i8, i8* %0
   store i8 %L, i8* %0
   %E34 = extractelement <16 x i32> %Shuff28, i32 1
@@ -75,13 +75,13 @@ CF78:                                             ; preds = %CF78, %CF79
   %Cmp38 = icmp ne i32 440284, 376034
   br i1 %Cmp38, label %CF78, label %CF80
 
-CF80:                                             ; preds = %CF80, %CF82, %CF78
+CF80:                                             
   %L39 = load i8, i8* %0
   store i8 %L, i8* %0
   %E40 = extractelement <2 x i1> %Shuff20, i32 1
   br i1 %E40, label %CF80, label %CF82
 
-CF82:                                             ; preds = %CF80
+CF82:                                             
   %Shuff41 = shufflevector <2 x i1> zeroinitializer, <2 x i1> %Shuff20, <2 x i32> <i32 2, i32 0>
   %I42 = insertelement <2 x i1> %Shuff41, i1 false, i32 0
   %B43 = sub i32 %E, 0
@@ -96,7 +96,7 @@ CF82:                                             ; preds = %CF80
   %FC51 = fptoui float -6.749110e+06 to i1
   br i1 %FC51, label %CF80, label %CF81
 
-CF81:                                             ; preds = %CF81, %CF82
+CF81:                                             
   %Sl52 = select i1 false, float -6.749110e+06, float 0x406DB70180000000
   %Cmp53 = icmp uge <2 x i32> <i32 -1, i32 -1>, <i32 -1, i32 -1>
   %L54 = load i8, i8* %0
@@ -117,15 +117,15 @@ CF81:                                             ; preds = %CF81, %CF82
   %Tr67 = trunc i8 %L54 to i1
   br i1 %Tr67, label %CF81, label %CF83
 
-CF83:                                             ; preds = %CF83, %CF81
+CF83:                                             
   %Sl68 = select i1 %Cmp17, i1 %Cmp25, i1 %Tr67
   br i1 %Sl68, label %CF83, label %CF84
 
-CF84:                                             ; preds = %CF83
+CF84:                                             
   %Cmp69 = icmp uge i32 %E, %E34
   br i1 %Cmp69, label %CF, label %CF77
 
-CF77:                                             ; preds = %CF84
+CF77:                                             
   %L70 = load i8, i8* %0
   store i8 %L, i8* %0
   %E71 = extractelement <4 x i64> %Shuff, i32 0

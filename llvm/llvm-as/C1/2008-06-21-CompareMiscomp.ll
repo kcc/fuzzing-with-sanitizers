@@ -1,6 +1,6 @@
-; RUN: opt < %s -instcombine -S | grep "icmp eq i32 %In, 15"
-; PR2479
-; (See also PR1800.)
+
+
+
 
 define i1 @test(i32 %In) {
 	%c1 = icmp ugt i32 %In, 13

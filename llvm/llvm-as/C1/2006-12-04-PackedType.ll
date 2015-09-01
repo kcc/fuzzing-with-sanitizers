@@ -1,8 +1,8 @@
-; Test VectorType handling by SCCP.
-; SCCP ignores VectorTypes until PR 1034 is fixed
-;
-; RUN: opt < %s -sccp
-; END.
+
+
+
+
+
 
 target datalayout = "E-p:32:32"
 target triple = "powerpc-apple-darwin8"
@@ -103,38 +103,38 @@ target triple = "powerpc-apple-darwin8"
 
 define void @gldLLVMVecPointRender(%struct.GLDContextRec* %ctx) {
 entry:
-	%tmp.uip = getelementptr %struct.GLDContextRec, %struct.GLDContextRec* %ctx, i32 0, i32 22		; <i32*> [#uses=1]
-	%tmp = load i32, i32* %tmp.uip		; <i32> [#uses=3]
-	%tmp91 = lshr i32 %tmp, 5		; <i32> [#uses=1]
-	%tmp92 = trunc i32 %tmp91 to i1		; <i1> [#uses=1]
+	%tmp.uip = getelementptr %struct.GLDContextRec, %struct.GLDContextRec* %ctx, i32 0, i32 22		
+	%tmp = load i32, i32* %tmp.uip		
+	%tmp91 = lshr i32 %tmp, 5		
+	%tmp92 = trunc i32 %tmp91 to i1		
 	br i1 %tmp92, label %cond_true93, label %cond_next116
-cond_true93:		; preds = %entry
-	%tmp.upgrd.1 = getelementptr %struct.GLDContextRec, %struct.GLDContextRec* %ctx, i32 0, i32 31, i32 14		; <i32*> [#uses=1]
-	%tmp95 = load i32, i32* %tmp.upgrd.1		; <i32> [#uses=1]
-	%tmp95.upgrd.2 = sitofp i32 %tmp95 to float		; <float> [#uses=1]
-	%tmp108 = fmul float undef, %tmp95.upgrd.2		; <float> [#uses=1]
+cond_true93:		
+	%tmp.upgrd.1 = getelementptr %struct.GLDContextRec, %struct.GLDContextRec* %ctx, i32 0, i32 31, i32 14		
+	%tmp95 = load i32, i32* %tmp.upgrd.1		
+	%tmp95.upgrd.2 = sitofp i32 %tmp95 to float		
+	%tmp108 = fmul float undef, %tmp95.upgrd.2		
 	br label %cond_next116
-cond_next116:		; preds = %cond_true93, %entry
-	%point_size.2 = phi float [ %tmp108, %cond_true93 ], [ undef, %entry ]		; <float> [#uses=2]
-	%tmp457 = fcmp olt float %point_size.2, 1.000000e+00		; <i1> [#uses=1]
-	%tmp460 = lshr i32 %tmp, 6		; <i32> [#uses=1]
-	%tmp461 = trunc i32 %tmp460 to i1		; <i1> [#uses=1]
+cond_next116:		
+	%point_size.2 = phi float [ %tmp108, %cond_true93 ], [ undef, %entry ]		
+	%tmp457 = fcmp olt float %point_size.2, 1.000000e+00		
+	%tmp460 = lshr i32 %tmp, 6		
+	%tmp461 = trunc i32 %tmp460 to i1		
 	br i1 %tmp457, label %cond_true458, label %cond_next484
-cond_true458:		; preds = %cond_next116
+cond_true458:		
 	br i1 %tmp461, label %cond_true462, label %cond_next487
-cond_true462:		; preds = %cond_true458
-	%tmp26 = bitcast i32 %tmp to i32		; <i32> [#uses=1]
-	%tmp465 = and i32 %tmp26, 128		; <i32> [#uses=1]
-	%tmp466 = icmp eq i32 %tmp465, 0		; <i1> [#uses=1]
+cond_true462:		
+	%tmp26 = bitcast i32 %tmp to i32		
+	%tmp465 = and i32 %tmp26, 128		
+	%tmp466 = icmp eq i32 %tmp465, 0		
 	br i1 %tmp466, label %cond_true467, label %cond_next487
-cond_true467:		; preds = %cond_true462
+cond_true467:		
 	ret void
-cond_next484:		; preds = %cond_next116
-	%tmp486 = fmul float %point_size.2, 5.000000e-01		; <float> [#uses=1]
+cond_next484:		
+	%tmp486 = fmul float %point_size.2, 5.000000e-01		
 	br label %cond_next487
-cond_next487:		; preds = %cond_next484, %cond_true462, %cond_true458
-	%radius.0 = phi float [ %tmp486, %cond_next484 ], [ 5.000000e-01, %cond_true458 ], [ 5.000000e-01, %cond_true462 ]		; <float> [#uses=2]
-	%tmp494 = insertelement <4 x float> zeroinitializer, float %radius.0, i32 2		; <<4 x float>> [#uses=1]
-	%tmp495 = insertelement <4 x float> %tmp494, float %radius.0, i32 3		; <<4 x float>> [#uses=0]
+cond_next487:		
+	%radius.0 = phi float [ %tmp486, %cond_next484 ], [ 5.000000e-01, %cond_true458 ], [ 5.000000e-01, %cond_true462 ]		
+	%tmp494 = insertelement <4 x float> zeroinitializer, float %radius.0, i32 2		
+	%tmp495 = insertelement <4 x float> %tmp494, float %radius.0, i32 3		
 	ret void
 }

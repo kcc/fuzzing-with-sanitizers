@@ -1,13 +1,13 @@
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128"
-; RUN: opt < %s -bb-vectorize -bb-vectorize-req-chain-depth=3 -bb-vectorize-ignore-target-info -instcombine -gvn -S | FileCheck %s
 
-; This test checks the non-trivial pairing-induced cycle avoidance. Without this cycle avoidance, the algorithm would otherwise
-; want to select the pairs:
-; %div77 = fdiv double %sub74, %mul76.v.r1 <->   %div125 = fdiv double %mul121, %mul76.v.r2 (div125 depends on mul117)
-; %add84 = fadd double %sub83, 2.000000e+00 <->   %add127 = fadd double %mul126, 1.000000e+00 (add127 depends on div77)
-; %mul95 = fmul double %sub45.v.r1, %sub36.v.r1 <->   %mul88 = fmul double %sub36.v.r1, %sub87 (mul88 depends on add84)
-; %mul117 = fmul double %sub39.v.r1, %sub116 <->   %mul97 = fmul double %mul96, %sub39.v.r1 (mul97 depends on mul95)
-; and so a dependency cycle would be created.
+
+
+
+
+
+
+
+
 
 declare double @fabs(double) nounwind readnone
 define void @test1(double %a, double %b, double %c, double %add80, double %mul1, double %mul2.v.r1, double %mul73, double %sub, double %sub65, double %F.0, i32 %n.0, double %Bnm3.0, double %Bnm2.0, double %Bnm1.0, double %Anm3.0, double %Anm2.0, double %Anm1.0) {
@@ -105,8 +105,8 @@ go:
   br i1 %or.cond, label %done, label %go
 done:
   ret void
-; CHECK-LABEL: @test1(
-; CHECK: go:
-; CHECK: %conv.v.i0.1 = insertelement <2 x i32> undef, i32 %n.0, i32 0
-; FIXME: When tree pruning is deterministic, include the entire output.
+
+
+
+
 }

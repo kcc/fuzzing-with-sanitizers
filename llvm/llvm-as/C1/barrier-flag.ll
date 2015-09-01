@@ -1,17 +1,17 @@
-; RUN: llc -O2 < %s
-; Check for successful compilation. It originally caused an abort due to
-; the "isBarrier" flag set on instructions that were not meant to have it.
+
+
+
 
 target datalayout = "e-m:e-p:32:32-i1:32-i64:64-a:0-v32:32-n16:32"
 target triple = "hexagon"
 
-; Function Attrs: nounwind optsize readnone
+
 define void @dummy() #0 {
 entry:
   ret void
 }
 
-; Function Attrs: nounwind optsize
+
 define void @conv3x3(i8* nocapture readonly %inp, i8* nocapture readonly %mask, i32 %shift, i8* nocapture %outp, i32 %width) #1 {
 entry:
   %cmp381 = icmp sgt i32 %width, 0
@@ -19,13 +19,13 @@ entry:
   %arrayidx19.gep = getelementptr i8, i8* %mask, i32 8
   br label %for.body
 
-for.body:                                         ; preds = %for.inc48, %entry
+for.body:                                         
   %i.086 = phi i32 [ 0, %entry ], [ %inc49, %for.inc48 ]
   %mul = mul nsw i32 %i.086, %width
   %arrayidx.sum = add i32 %mul, %width
   br i1 %cmp381, label %for.cond5.preheader.lr.ph, label %for.inc48
 
-for.cond5.preheader.lr.ph:                        ; preds = %for.body
+for.cond5.preheader.lr.ph:                        
   %add.ptr.sum = add i32 %arrayidx.sum, %width
   %add.ptr1 = getelementptr inbounds i8, i8* %inp, i32 %add.ptr.sum
   %add.ptr = getelementptr inbounds i8, i8* %inp, i32 %arrayidx.sum
@@ -33,7 +33,7 @@ for.cond5.preheader.lr.ph:                        ; preds = %for.body
   %arrayidx44.gep = getelementptr i8, i8* %outp, i32 %mul
   br label %for.cond5.preheader
 
-for.cond5.preheader:                              ; preds = %if.end40, %for.cond5.preheader.lr.ph
+for.cond5.preheader:                              
   %arrayidx44.phi = phi i8* [ %arrayidx44.gep, %for.cond5.preheader.lr.ph ], [ %arrayidx44.inc, %if.end40 ]
   %j.085 = phi i32 [ 0, %for.cond5.preheader.lr.ph ], [ %inc46, %if.end40 ]
   %IN1.084 = phi i8* [ %arrayidx, %for.cond5.preheader.lr.ph ], [ %incdec.ptr, %if.end40 ]
@@ -41,7 +41,7 @@ for.cond5.preheader:                              ; preds = %if.end40, %for.cond
   %IN3.082 = phi i8* [ %add.ptr1, %for.cond5.preheader.lr.ph ], [ %incdec.ptr34, %if.end40 ]
   br label %for.body7
 
-for.body7:                                        ; preds = %for.body7, %for.cond5.preheader
+for.body7:                                        
   %arrayidx8.phi = phi i8* [ %IN1.084, %for.cond5.preheader ], [ %arrayidx8.inc, %for.body7 ]
   %arrayidx9.phi = phi i8* [ %IN2.083, %for.cond5.preheader ], [ %arrayidx9.inc, %for.body7 ]
   %arrayidx11.phi = phi i8* [ %IN3.082, %for.cond5.preheader ], [ %arrayidx11.inc, %for.body7 ]
@@ -78,7 +78,7 @@ for.body7:                                        ; preds = %for.body7, %for.con
   %arrayidx19.inc = getelementptr i8, i8* %arrayidx19.phi, i32 1
   br i1 %exitcond, label %for.end, label %for.body7
 
-for.end:                                          ; preds = %for.body7
+for.end:                                          
   %incdec.ptr = getelementptr inbounds i8, i8* %IN1.084, i32 1
   %incdec.ptr33 = getelementptr inbounds i8, i8* %IN2.083, i32 1
   %incdec.ptr34 = getelementptr inbounds i8, i8* %IN3.082, i32 1
@@ -86,14 +86,14 @@ for.end:                                          ; preds = %for.body7
   %cmp35 = icmp slt i32 %shr, 0
   br i1 %cmp35, label %if.end40, label %if.end
 
-if.end:                                           ; preds = %for.end
+if.end:                                           
   %cmp37 = icmp sgt i32 %shr, 255
   br i1 %cmp37, label %if.then39, label %if.end40
 
-if.then39:                                        ; preds = %if.end
+if.then39:                                        
   br label %if.end40
 
-if.end40:                                         ; preds = %for.end, %if.then39, %if.end
+if.end40:                                         
   %sum.2 = phi i32 [ 255, %if.then39 ], [ %shr, %if.end ], [ 0, %for.end ]
   %conv41 = trunc i32 %sum.2 to i8
   store i8 %conv41, i8* %arrayidx44.phi, align 1, !tbaa !1
@@ -102,15 +102,15 @@ if.end40:                                         ; preds = %for.end, %if.then39
   %arrayidx44.inc = getelementptr i8, i8* %arrayidx44.phi, i32 1
   br i1 %exitcond87, label %for.inc48.loopexit, label %for.cond5.preheader
 
-for.inc48.loopexit:                               ; preds = %if.end40
+for.inc48.loopexit:                               
   br label %for.inc48
 
-for.inc48:                                        ; preds = %for.inc48.loopexit, %for.body
+for.inc48:                                        
   %inc49 = add nsw i32 %i.086, 1
   %exitcond88 = icmp eq i32 %inc49, 2
   br i1 %exitcond88, label %for.end50, label %for.body
 
-for.end50:                                        ; preds = %for.inc48
+for.end50:                                        
   ret void
 }
 

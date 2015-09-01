@@ -1,4 +1,4 @@
-; RUN: opt -mtriple=i686-pc-windows-msvc -S -x86-winehstate  < %s | FileCheck %s
+
 
 target datalayout = "e-m:x-p:32:32-i64:64-f80:32-n8:16:32-a:0:32-S32"
 target triple = "i686-pc-windows-msvc"
@@ -25,60 +25,60 @@ $_TI1H = comdat any
 define i32 @main() #0 personality i32 (...)* @__CxxFrameHandler3 {
 entry:
   %tmp = alloca i32, align 4
-  ; CHECK: entry:
-  ; CHECK:   store i32 -1
-  ; CHECK:   call void @g(i32 3)
+  
+  
+  
   call void @g(i32 3)
   store i32 0, i32* %tmp, align 4
   %0 = bitcast i32* %tmp to i8*
-  ; CHECK:   store i32 0
-  ; CHECK:   invoke void @_CxxThrowException(
+  
+  
   invoke void @_CxxThrowException(i8* %0, %eh.ThrowInfo* nonnull @_TI1H) #1
           to label %unreachable.for.entry unwind label %catch.dispatch
 
-catch.dispatch:                                   ; preds = %entry
+catch.dispatch:                                   
   %1 = catchpad [i8* null, i8* null] to label %catch unwind label %catchendblock
 
-catch:                                            ; preds = %catch.dispatch
-  ; CHECK: catch:
-  ; CHECK:   store i32 2
-  ; CHECK:   invoke void @_CxxThrowException(
+catch:                                            
+  
+  
+  
   invoke void @_CxxThrowException(i8* null, %eh.ThrowInfo* null) #1
           to label %unreachable unwind label %catch.dispatch.1
 
-catch.dispatch.1:                                 ; preds = %catch
+catch.dispatch.1:                                 
   %2 = catchpad [i8* null, i8* null] to label %catch.3 unwind label %catchendblock.2
 
-catch.3:                                          ; preds = %catch.dispatch.1
-  ; CHECK: catch.3:
-  ; CHECK:   store i32 3
-  ; CHECK:   invoke void @g(i32 1)
+catch.3:                                          
+  
+  
+  
   invoke void @g(i32 1)
           to label %invoke.cont unwind label %catchendblock.2
 
-invoke.cont:                                      ; preds = %catch.3
+invoke.cont:                                      
   catchret %2 to label %try.cont
 
-try.cont:                                         ; preds = %invoke.cont
-  ; CHECK: try.cont:
-  ; CHECK:   store i32 1
-  ; CHECK:   invoke void @g(i32 2)
+try.cont:                                         
+  
+  
+  
   invoke void @g(i32 2)
           to label %invoke.cont.4 unwind label %catchendblock
 
-invoke.cont.4:                                    ; preds = %try.cont
+invoke.cont.4:                                    
   unreachable
 
-catchendblock.2:                                  ; preds = %catch.3, %catch.dispatch.1
+catchendblock.2:                                  
   catchendpad unwind label %catchendblock
 
-catchendblock:                                    ; preds = %catchendblock.2, %try.cont, %catch.dispatch
+catchendblock:                                    
   catchendpad unwind to caller
 
-unreachable:                                      ; preds = %catch
+unreachable:                                      
   unreachable
 
-unreachable.for.entry:                            ; preds = %entry
+unreachable.for.entry:                            
   unreachable
 }
 

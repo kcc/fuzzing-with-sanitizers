@@ -1,52 +1,52 @@
-; REQUIRES: object-emission
 
-; RUN: llc -mtriple=i386-linux-gnu -filetype=obj -relocation-model=pic %s -o /dev/null
 
-; Derived from the test case in PR20367, there's nothing really positive to
-; test here (hence no FileCheck, etc). All that was wrong is that the debug info
-; intrinsics (introduced by inlining) in 'f1' were causing codegen to crash, but
-; since 'f1' is a nodebug function, there's no positive outcome to confirm, just
-; that debug info doesn't get in the way/cause a crash.
 
-; The test case isn't particularly well reduced/tidy, but as simple as I could
-; get the C++ source. I assume the complexity is mostly just about producing a
-; certain amount of register pressure, so it might be able to be simplified/made
-; more uniform.
 
-; Generated from:
-; $ clang-tot -cc1 -triple i386 -emit-obj -g -O3 repro.cpp
-; void sink(const void *);
-; int source();
-; void f3(int);
-; 
-; extern bool b;
-; 
-; struct string {
-;   unsigned *mem;
-; };
-; 
-; extern string &str;
-; 
-; inline __attribute__((always_inline)) void s2(string *lhs) { sink(lhs->mem); }
-; inline __attribute__((always_inline)) void f() {
-;   string str2;
-;   s2(&str2);
-;   sink(&str2);
-; }
-; void __attribute__((nodebug)) f1() {
-;   for (int iter = 0; iter != 2; ++iter) {
-;     f();
-;     sink(str.mem);
-;     if (b) return;
-;   }
-; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %struct.string = type { i32* }
 
 @str = external constant %struct.string*
 @b = external global i8
 
-; Function Attrs: nounwind
+
 define void @_Z2f1v() #0 {
 entry:
   %str2.i = alloca %struct.string, align 4
@@ -55,7 +55,7 @@ entry:
   %mem = getelementptr inbounds %struct.string, %struct.string* %1, i32 0, i32 0
   br label %for.body
 
-for.body:                                         ; preds = %for.body, %entry
+for.body:                                         
   %iter.02 = phi i32 [ 0, %entry ], [ %inc, %for.body ]
   call void @llvm.lifetime.start(i64 4, i8* %0), !dbg !26
   call void @llvm.dbg.value(metadata %struct.string* %str2.i, i64 0, metadata !16, metadata !DIExpression()) #3, !dbg !26
@@ -73,19 +73,19 @@ for.body:                                         ; preds = %for.body, %entry
   %or.cond = or i1 %tobool, %cmp
   br i1 %or.cond, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret void
 }
 
 declare void @_Z4sinkPKv(i8*) #1
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #2
 
-; Function Attrs: nounwind
+
 declare void @llvm.lifetime.start(i64, i8* nocapture) #3
 
-; Function Attrs: nounwind
+
 declare void @llvm.lifetime.end(i64, i8* nocapture) #3
 
 attributes #0 = { nounwind "less-precise-fpmad"="false" "no-frame-pointer-elim"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "no-realign-stack" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

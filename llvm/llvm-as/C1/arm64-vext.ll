@@ -1,8 +1,8 @@
-; RUN: llc -march=arm64 -aarch64-neon-syntax=apple < %s | FileCheck %s
+
 
 define void @test_vext_s8() nounwind ssp {
-  ; CHECK-LABEL: test_vext_s8:
-  ; CHECK: {{ext.8.*#1}}
+  
+  
   %xS8x8 = alloca <8 x i8>, align 8
   %__a = alloca <8 x i8>, align 8
   %__b = alloca <8 x i8>, align 8
@@ -18,8 +18,8 @@ define void @test_vext_s8() nounwind ssp {
 }
 
 define void @test_vext_u8() nounwind ssp {
-  ; CHECK-LABEL: test_vext_u8:
-  ; CHECK: {{ext.8.*#2}}
+  
+  
   %xU8x8 = alloca <8 x i8>, align 8
   %__a = alloca <8 x i8>, align 8
   %__b = alloca <8 x i8>, align 8
@@ -35,8 +35,8 @@ define void @test_vext_u8() nounwind ssp {
 }
 
 define void @test_vext_p8() nounwind ssp {
-  ; CHECK-LABEL: test_vext_p8:
-  ; CHECK: {{ext.8.*#3}}
+  
+  
   %xP8x8 = alloca <8 x i8>, align 8
   %__a = alloca <8 x i8>, align 8
   %__b = alloca <8 x i8>, align 8
@@ -52,8 +52,8 @@ define void @test_vext_p8() nounwind ssp {
 }
 
 define void @test_vext_s16() nounwind ssp {
-  ; CHECK-LABEL: test_vext_s16:
-  ; CHECK: {{ext.8.*#2}}
+  
+  
   %xS16x4 = alloca <4 x i16>, align 8
   %__a = alloca <4 x i16>, align 8
   %__b = alloca <4 x i16>, align 8
@@ -73,8 +73,8 @@ define void @test_vext_s16() nounwind ssp {
 }
 
 define void @test_vext_u16() nounwind ssp {
-  ; CHECK-LABEL: test_vext_u16:
-  ; CHECK: {{ext.8.*#4}}
+  
+  
   %xU16x4 = alloca <4 x i16>, align 8
   %__a = alloca <4 x i16>, align 8
   %__b = alloca <4 x i16>, align 8
@@ -94,8 +94,8 @@ define void @test_vext_u16() nounwind ssp {
 }
 
 define void @test_vext_p16() nounwind ssp {
-  ; CHECK-LABEL: test_vext_p16:
-  ; CHECK: {{ext.8.*#6}}
+  
+  
   %xP16x4 = alloca <4 x i16>, align 8
   %__a = alloca <4 x i16>, align 8
   %__b = alloca <4 x i16>, align 8
@@ -115,8 +115,8 @@ define void @test_vext_p16() nounwind ssp {
 }
 
 define void @test_vext_s32() nounwind ssp {
-  ; CHECK-LABEL: test_vext_s32:
-  ; CHECK: {{ext.8.*#4}}
+  
+  
   %xS32x2 = alloca <2 x i32>, align 8
   %__a = alloca <2 x i32>, align 8
   %__b = alloca <2 x i32>, align 8
@@ -136,8 +136,8 @@ define void @test_vext_s32() nounwind ssp {
 }
 
 define void @test_vext_u32() nounwind ssp {
-  ; CHECK-LABEL: test_vext_u32:
-  ; CHECK: {{ext.8.*#4}}
+  
+  
   %xU32x2 = alloca <2 x i32>, align 8
   %__a = alloca <2 x i32>, align 8
   %__b = alloca <2 x i32>, align 8
@@ -157,8 +157,8 @@ define void @test_vext_u32() nounwind ssp {
 }
 
 define void @test_vext_f32() nounwind ssp {
-  ; CHECK-LABEL: test_vext_f32:
-  ; CHECK: {{ext.8.*#4}}
+  
+  
   %xF32x2 = alloca <2 x float>, align 8
   %__a = alloca <2 x float>, align 8
   %__b = alloca <2 x float>, align 8
@@ -178,9 +178,9 @@ define void @test_vext_f32() nounwind ssp {
 }
 
 define void @test_vext_s64() nounwind ssp {
-  ; CHECK-LABEL: test_vext_s64:
-  ; CHECK_FIXME: {{ext.8.*#1}}
-  ; this just turns into a load of the second element
+  
+  
+  
   %xS64x1 = alloca <1 x i64>, align 8
   %__a = alloca <1 x i64>, align 8
   %__b = alloca <1 x i64>, align 8
@@ -200,9 +200,9 @@ define void @test_vext_s64() nounwind ssp {
 }
 
 define void @test_vext_u64() nounwind ssp {
-  ; CHECK-LABEL: test_vext_u64:
-  ; CHECK_FIXME: {{ext.8.*#1}}
-  ; this is turned into a simple load of the 2nd element
+  
+  
+  
   %xU64x1 = alloca <1 x i64>, align 8
   %__a = alloca <1 x i64>, align 8
   %__b = alloca <1 x i64>, align 8
@@ -222,8 +222,8 @@ define void @test_vext_u64() nounwind ssp {
 }
 
 define void @test_vextq_s8() nounwind ssp {
-  ; CHECK-LABEL: test_vextq_s8:
-  ; CHECK: {{ext.16.*#4}}
+  
+  
   %xS8x16 = alloca <16 x i8>, align 16
   %__a = alloca <16 x i8>, align 16
   %__b = alloca <16 x i8>, align 16
@@ -239,8 +239,8 @@ define void @test_vextq_s8() nounwind ssp {
 }
 
 define void @test_vextq_u8() nounwind ssp {
-  ; CHECK-LABEL: test_vextq_u8:
-  ; CHECK: {{ext.16.*#5}}
+  
+  
   %xU8x16 = alloca <16 x i8>, align 16
   %__a = alloca <16 x i8>, align 16
   %__b = alloca <16 x i8>, align 16
@@ -256,8 +256,8 @@ define void @test_vextq_u8() nounwind ssp {
 }
 
 define void @test_vextq_p8() nounwind ssp {
-  ; CHECK-LABEL: test_vextq_p8:
-  ; CHECK: {{ext.16.*#6}}
+  
+  
   %xP8x16 = alloca <16 x i8>, align 16
   %__a = alloca <16 x i8>, align 16
   %__b = alloca <16 x i8>, align 16
@@ -273,8 +273,8 @@ define void @test_vextq_p8() nounwind ssp {
 }
 
 define void @test_vextq_s16() nounwind ssp {
-  ; CHECK-LABEL: test_vextq_s16:
-  ; CHECK: {{ext.16.*#14}}
+  
+  
   %xS16x8 = alloca <8 x i16>, align 16
   %__a = alloca <8 x i16>, align 16
   %__b = alloca <8 x i16>, align 16
@@ -294,8 +294,8 @@ define void @test_vextq_s16() nounwind ssp {
 }
 
 define void @test_vextq_u16() nounwind ssp {
-  ; CHECK-LABEL: test_vextq_u16:
-  ; CHECK: {{ext.16.*#8}}
+  
+  
   %xU16x8 = alloca <8 x i16>, align 16
   %__a = alloca <8 x i16>, align 16
   %__b = alloca <8 x i16>, align 16
@@ -315,8 +315,8 @@ define void @test_vextq_u16() nounwind ssp {
 }
 
 define void @test_vextq_p16() nounwind ssp {
-  ; CHECK-LABEL: test_vextq_p16:
-  ; CHECK: {{ext.16.*#10}}
+  
+  
   %xP16x8 = alloca <8 x i16>, align 16
   %__a = alloca <8 x i16>, align 16
   %__b = alloca <8 x i16>, align 16
@@ -336,8 +336,8 @@ define void @test_vextq_p16() nounwind ssp {
 }
 
 define void @test_vextq_s32() nounwind ssp {
-  ; CHECK-LABEL: test_vextq_s32:
-  ; CHECK: {{ext.16.*#4}}
+  
+  
   %xS32x4 = alloca <4 x i32>, align 16
   %__a = alloca <4 x i32>, align 16
   %__b = alloca <4 x i32>, align 16
@@ -357,8 +357,8 @@ define void @test_vextq_s32() nounwind ssp {
 }
 
 define void @test_vextq_u32() nounwind ssp {
-  ; CHECK-LABEL: test_vextq_u32:
-  ; CHECK: {{ext.16.*#8}}
+  
+  
   %xU32x4 = alloca <4 x i32>, align 16
   %__a = alloca <4 x i32>, align 16
   %__b = alloca <4 x i32>, align 16
@@ -378,8 +378,8 @@ define void @test_vextq_u32() nounwind ssp {
 }
 
 define void @test_vextq_f32() nounwind ssp {
-  ; CHECK-LABEL: test_vextq_f32:
-  ; CHECK: {{ext.16.*#12}}
+  
+  
   %xF32x4 = alloca <4 x float>, align 16
   %__a = alloca <4 x float>, align 16
   %__b = alloca <4 x float>, align 16
@@ -399,8 +399,8 @@ define void @test_vextq_f32() nounwind ssp {
 }
 
 define void @test_vextq_s64() nounwind ssp {
-  ; CHECK-LABEL: test_vextq_s64:
-  ; CHECK: {{ext.16.*#8}}
+  
+  
   %xS64x2 = alloca <2 x i64>, align 16
   %__a = alloca <2 x i64>, align 16
   %__b = alloca <2 x i64>, align 16
@@ -420,8 +420,8 @@ define void @test_vextq_s64() nounwind ssp {
 }
 
 define void @test_vextq_u64() nounwind ssp {
-  ; CHECK-LABEL: test_vextq_u64:
-  ; CHECK: {{ext.16.*#8}}
+  
+  
   %xU64x2 = alloca <2 x i64>, align 16
   %__a = alloca <2 x i64>, align 16
   %__b = alloca <2 x i64>, align 16
@@ -440,23 +440,23 @@ define void @test_vextq_u64() nounwind ssp {
   ret void
 }
 
-; shuffles with an undef second operand can use an EXT also so long as the
-; indices wrap and stay sequential.
-; rdar://12051674
+
+
+
 define <16 x i8> @vext1(<16 x i8> %_a) nounwind {
-; CHECK-LABEL: vext1:
-; CHECK: ext.16b  v0, v0, v0, #8
+
+
   %vext = shufflevector <16 x i8> %_a, <16 x i8> undef, <16 x i32> <i32 8, i32 9, i32 10, i32 11, i32 12, i32 13, i32 14, i32 15, i32 0, i32 1, i32 2, i32 3, i32 4, i32 5, i32 6, i32 7>
   ret <16 x i8> %vext
 }
 
-; <rdar://problem/12212062>
+
 define <2 x i64> @vext2(<2 x i64> %p0, <2 x i64> %p1) nounwind readnone ssp {
 entry:
-; CHECK-LABEL: vext2:
-; CHECK: ext.16b v1, v1, v1, #8
-; CHECK: ext.16b v0, v0, v0, #8
-; CHECK: add.2d  v0, v0, v1
+
+
+
+
   %t0 = shufflevector <2 x i64> %p1, <2 x i64> undef, <2 x i32> <i32 1, i32 0>
   %t1 = shufflevector <2 x i64> %p0, <2 x i64> undef, <2 x i32> <i32 1, i32 0>
   %t2 = add <2 x i64> %t1, %t0

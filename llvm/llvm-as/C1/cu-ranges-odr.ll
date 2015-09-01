@@ -1,22 +1,22 @@
-; RUN: llc -split-dwarf=Enable -O0 %s -mtriple=x86_64-unknown-linux-gnu -filetype=obj -o %t
-; RUN: llvm-dwarfdump -debug-dump=all %t | FileCheck %s
-; RUN: llvm-readobj --relocations %t | FileCheck --check-prefix=CHECK-RELOCS %s
 
-; From:
-; class A {
-; public:
-;   A(int i = 0) : a(i) {}
-; private:
-;   int a;
-; };
-;
-; A a;
 
-; With function sections enabled make sure that we have a DW_AT_ranges attribute.
-; CHECK: DW_AT_ranges
 
-; Check that we have a relocation against the .debug_ranges section.
-; CHECK-RELOCS: R_X86_64_32 .debug_ranges 0x0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %class.A = type { i32 }
 
@@ -29,7 +29,7 @@ entry:
   ret void, !dbg !26
 }
 
-; Function Attrs: nounwind uwtable
+
 define linkonce_odr void @_ZN1AC2Ei(%class.A* %this, i32 %i) unnamed_addr #0 align 2 {
 entry:
   %this.addr = alloca %class.A*, align 8
@@ -45,7 +45,7 @@ entry:
   ret void, !dbg !31
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
 define internal void @_GLOBAL__I_a() section ".text.startup" {

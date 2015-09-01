@@ -1,21 +1,21 @@
-; RUN: opt -strip-dead-debug-info -verify %s -S | FileCheck %s
 
-; CHECK: ModuleID = '{{.*}}'
-; CHECK-NOT: bar
-; CHECK-NOT: abcd
+
+
+
+
 
 @xyz = global i32 2
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #0
 
-; Function Attrs: nounwind readnone ssp
+
 define i32 @fn() #1 {
 entry:
   ret i32 0, !dbg !18
 }
 
-; Function Attrs: nounwind readonly ssp
+
 define i32 @foo(i32 %i) #2 {
 entry:
   tail call void @llvm.dbg.value(metadata i32 %i, i64 0, metadata !15, metadata !DIExpression()), !dbg !20

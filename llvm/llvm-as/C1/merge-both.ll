@@ -1,6 +1,6 @@
-; RUN: opt -constmerge -S < %s | FileCheck %s
-; Test that in one run var3 is merged into var2 and var1 into var4.
-; Test that we merge @var5 and @var6 into one with the higher alignment
+
+
+
 
 declare void @zed(%struct.foobar*, %struct.foobar*)
 
@@ -11,10 +11,10 @@ declare void @zed(%struct.foobar*, %struct.foobar*)
 @var3 = internal constant %struct.foobar { i32 2 }
 @var4 = unnamed_addr constant %struct.foobar { i32 2 }
 
-; CHECK:      %struct.foobar = type { i32 }
-; CHECK-NOT: @
-; CHECK: @var2 = constant %struct.foobar { i32 2 }
-; CHECK-NEXT: @var4 = constant %struct.foobar { i32 2 }
+
+
+
+
 
 declare void @helper([16 x i8]*)
 @var5 = internal constant [16 x i8] c"foo1bar2foo3bar\00", align 16
@@ -22,8 +22,8 @@ declare void @helper([16 x i8]*)
 @var7 = internal constant [16 x i8] c"foo1bar2foo3bar\00"
 @var8 = private unnamed_addr constant [16 x i8] c"foo1bar2foo3bar\00"
 
-; CHECK-NEXT: @var7 = internal constant [16 x i8] c"foo1bar2foo3bar\00"
-; CHECK-NEXT: @var8 = private constant [16 x i8] c"foo1bar2foo3bar\00", align 16
+
+
 
 @var4a = alias %struct.foobar* @var4
 @llvm.used = appending global [1 x %struct.foobar*] [%struct.foobar* @var4a], section "llvm.metadata"

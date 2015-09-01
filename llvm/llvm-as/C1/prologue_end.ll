@@ -1,48 +1,48 @@
-; RUN: llc -O0 -mtriple mips-unknown-linux-gnu -relocation-model=static < %s | FileCheck %s -check-prefix=STATIC
-; RUN: llc -O0 -mtriple mips-unknown-linux-gnu -relocation-model=static -disable-fp-elim < %s | FileCheck %s -check-prefix=STATIC-FP
-; RUN: llc -O0 -mtriple mips-unknown-linux-gnu -relocation-model=pic < %s | FileCheck %s -check-prefix=PIC
-; RUN: llc -O0 -mtriple mips-unknown-linux-gnu -relocation-model=pic -disable-fp-elim < %s | FileCheck %s -check-prefix=PIC-FP
 
-; Generated using clang -O0 -emit-llvm -S -target mipsel-unknown-linux -g test.c -o test.ll
-; test.c:
-;
-; void hello_world(void) {
-;   printf("Hello, World!\n");
-; }
+
+
+
+
+
+
+
+
+
+
 
 @.str = private unnamed_addr constant [15 x i8] c"Hello, World!\0A\00", align 1
 
 define void @hello_world() #0 {
 entry:
-; STATIC:	addiu	$sp, $sp, -{{[0-9]+}}
-; STATIC:	sw	$ra, {{[0-9]+}}($sp)
-; STATIC:	.loc	1 2 3 prologue_end
-; STATIC:	lui	$[[R0:[0-9]+]], %hi($.str)
 
-; STATIC-FP:	addiu	$sp, $sp, -{{[0-9]+}}
-; STATIC-FP:	sw	$ra, {{[0-9]+}}($sp)
-; STATIC-FP:	sw	$fp, {{[0-9]+}}($sp)
-; STATIC-FP:	move	$fp, $sp
-; STATIC-FP:	.loc	1 2 3 prologue_end
-; STATIC-FP:	lui	$[[R0:[0-9]+]], %hi($.str)
 
-; PIC:     	lui	$[[R0:[0-9]+]], %hi(_gp_disp)
-; PIC:     	addiu	$[[R0]], $[[R0]], %lo(_gp_disp)
-; PIC:     	addiu	$sp, $sp, -{{[0-9]+}}
-; PIC:     	sw	$ra, {{[0-9]+}}($sp)
-; PIC:     	addu	$[[R1:[0-9]+]], $[[R0]], $25
-; PIC:     	.loc	1 2 3 prologue_end
-; PIC:     	lw	$[[R2:[0-9]+]], %got($.str)($[[R1]])
 
-; PIC-FP:	lui	$[[R0:[0-9]+]], %hi(_gp_disp)
-; PIC-FP:	addiu	$[[R0]], $[[R0]], %lo(_gp_disp)
-; PIC-FP:	addiu	$sp, $sp, -{{[0-9]+}}
-; PIC-FP:	sw	$ra, {{[0-9]+}}($sp)
-; PIC-FP:	sw	$fp, {{[0-9]+}}($sp)
-; PIC-FP:	move	$fp, $sp
-; PIC-FP:	addu	$[[R1:[0-9]+]], $[[R0]], $25
-; PIC-FP:	.loc	1 2 3 prologue_end
-; PIC-FP:	lw	$[[R2:[0-9]+]], %got($.str)($[[R1]])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   %call = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str, i32 0, i32 0)), !dbg !10
   ret void, !dbg !11

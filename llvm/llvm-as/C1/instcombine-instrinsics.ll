@@ -1,33 +1,33 @@
-; RUN: opt %s -O2 -S -o - | FileCheck %s
-; Verify that we emit the same intrinsic at most once.
-; rdar://problem/13056109
-;
-; CHECK: call void @llvm.dbg.value(metadata %struct.i14** %p
-; CHECK-NOT: call void @llvm.dbg.value(metadata %struct.i14** %p
-; CHECK-NEXT: call i32 @foo
-; CHECK: ret
-;
-;
-; typedef struct {
-;   long i;
-; } i14;
-;
-; int foo(i14**);
-;
-;   void init() {
-;     i14* p = 0;
-;     foo(&p);
-;     p->i |= 4;
-;     foo(&p);
-;   }
-;
-; ModuleID = 'instcombine_intrinsics.c'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.9.0"
 
 %struct.i14 = type { i64 }
 
-; Function Attrs: nounwind ssp uwtable
+
 define void @init() #0 {
   %p = alloca %struct.i14*, align 8
   call void @llvm.dbg.declare(metadata %struct.i14** %p, metadata !11, metadata !DIExpression()), !dbg !18
@@ -42,7 +42,7 @@ define void @init() #0 {
   ret void, !dbg !22
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
 declare i32 @foo(%struct.i14**)

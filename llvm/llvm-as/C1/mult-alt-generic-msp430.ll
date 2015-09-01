@@ -1,5 +1,5 @@
-; RUN: llc < %s -march=msp430
-; ModuleID = 'mult-alt-generic.c'
+
+
 target datalayout = "e-p:16:16:16-i8:8:8-i16:16:16-i32:16:32-n8:16"
 target triple = "msp430"
 
@@ -91,9 +91,9 @@ define void @single_E() nounwind {
 entry:
   %out0 = alloca double, align 8
   store double 0.000000e+000, double* %out0, align 8
-; No lowering support.
-;  %0 = call double asm "foo $1,$0", "=r,E"(double 1.000000e+001) nounwind
-;  store double %0, double* %out0, align 8
+
+
+
   ret void
 }
 
@@ -101,9 +101,9 @@ define void @single_F() nounwind {
 entry:
   %out0 = alloca double, align 8
   store double 0.000000e+000, double* %out0, align 8
-; No lowering support.
-;  %0 = call double asm "foo $1,$0", "=r,F"(double 1.000000e+000) nounwind
-;  store double %0, double* %out0, align 8
+
+
+
   ret void
 }
 
@@ -147,11 +147,11 @@ entry:
   store i16 %2, i16* %out0, align 2
   %3 = call i16 asm "foo $1,$0", "=r,X"(i16* getelementptr inbounds ([2 x i16], [2 x i16]* @marray, i32 0, i32 0)) nounwind
   store i16 %3, i16* %out0, align 2
-; No lowering support.
-;  %4 = call i16 asm "foo $1,$0", "=r,X"(double 1.000000e+001) nounwind
-;  store i16 %4, i16* %out0, align 2
-;  %5 = call i16 asm "foo $1,$0", "=r,X"(double 1.000000e+000) nounwind
-;  store i16 %5, i16* %out0, align 2
+
+
+
+
+
   ret void
 }
 
@@ -249,9 +249,9 @@ define void @multi_E() nounwind {
 entry:
   %out0 = alloca double, align 8
   store double 0.000000e+000, double* %out0, align 8
-; No lowering support.
-;  %0 = call double asm "foo $1,$0", "=r|r,r|E"(double 1.000000e+001) nounwind
-;  store double %0, double* %out0, align 8
+
+
+
   ret void
 }
 
@@ -259,9 +259,9 @@ define void @multi_F() nounwind {
 entry:
   %out0 = alloca double, align 8
   store double 0.000000e+000, double* %out0, align 8
-; No lowering support.
-;  %0 = call double asm "foo $1,$0", "=r|r,r|F"(double 1.000000e+000) nounwind
-;  store double %0, double* %out0, align 8
+
+
+
   ret void
 }
 
@@ -305,11 +305,11 @@ entry:
   store i16 %2, i16* %out0, align 2
   %3 = call i16 asm "foo $1,$0", "=r|r,r|X"(i16* getelementptr inbounds ([2 x i16], [2 x i16]* @marray, i32 0, i32 0)) nounwind
   store i16 %3, i16* %out0, align 2
-; No lowering support.
-;  %4 = call i16 asm "foo $1,$0", "=r|r,r|X"(double 1.000000e+001) nounwind
-;  store i16 %4, i16* %out0, align 2
-;  %5 = call i16 asm "foo $1,$0", "=r|r,r|X"(double 1.000000e+000) nounwind
-;  store i16 %5, i16* %out0, align 2
+
+
+
+
+
   ret void
 }
 

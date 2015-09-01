@@ -1,9 +1,9 @@
-; RUN: llc -march=amdgcn -mcpu=SI -verify-machineinstrs < %s
-; RUN: llc -march=amdgcn -mcpu=bonaire -verify-machineinstrs < %s
-; RUN: llc -march=amdgcn -mcpu=tonga -verify-machineinstrs < %s
 
-; This should have the exactly the same output as the test for rint,
-; so no need to check anything.
+
+
+
+
+
 
 declare float @llvm.nearbyint.f32(float) #0
 declare <2 x float> @llvm.nearbyint.v2f32(<2 x float>) #0

@@ -1,13 +1,13 @@
-; RUN: llc < %s -mtriple=x86_64-linux-gnu -o - | FileCheck %s 
 
-; This test checks that only a single jae gets generated in the final code
-; for lowering the CMOV pseudos that get created for this IR.  The tricky part
-; of this test is that it tests the special PHI operand rewriting code in
-; X86TargetLowering::EmitLoweredSelect.
-;
-; CHECK-LABEL: foo1:
-; CHECK: jae
-; CHECK-NOT: jae
+
+
+
+
+
+
+
+
+
 define double @foo1(float %p1, double %p2, double %p3) nounwind {
 entry:
   %c1 = fcmp oge float %p1, 0.000000e+00
@@ -21,14 +21,14 @@ entry:
   ret double %d6
 }
 
-; This test checks that only a single jae gets generated in the final code
-; for lowering the CMOV pseudos that get created for this IR.  The tricky part
-; of this test is that it tests the special PHI operand rewriting code in
-; X86TargetLowering::EmitLoweredSelect.
-;
-; CHECK-LABEL: foo2:
-; CHECK: jae
-; CHECK-NOT: jae
+
+
+
+
+
+
+
+
 define double @foo2(float %p1, double %p2, double %p3) nounwind {
 entry:
   %c1 = fcmp oge float %p1, 0.000000e+00
@@ -42,21 +42,21 @@ entry:
   ret double %d6
 }
 
-; This test checks that only a single js gets generated in the final code
-; for lowering the CMOV pseudos that get created for this IR.  The tricky part
-; of this test is that it tests the special PHI operand rewriting code in
-; X86TargetLowering::EmitLoweredSelect.  It also tests to make sure all
-; the operands of the resulting instructions are from the proper places.
-;
-; CHECK-LABEL: foo3:
-; CHECK:          js
-; CHECK-NOT: js
-; CHECK-LABEL: # BB#1:
-; CHECK-DAG:      movapd  %xmm2, %xmm1
-; CHECK-DAG:      movapd  %xmm2, %xmm0
-; CHECK-LABEL:.LBB2_2:
-; CHECK:          divsd   %xmm1, %xmm0
-; CHECK:          ret
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define double @foo3(i32 %p1, double %p2, double %p3,
                              double %p4, double %p5) nounwind {
 entry:
@@ -68,25 +68,25 @@ entry:
   ret double %d5
 }
 
-; This test checks that only a single js gets generated in the final code
-; for lowering the CMOV pseudos that get created for this IR.  The tricky part
-; of this test is that it tests the special PHI operand rewriting code in
-; X86TargetLowering::EmitLoweredSelect.  It also tests to make sure all
-; the operands of the resulting instructions are from the proper places
-; when the "opposite condition" handling code in the compiler is used.
-; This should be the same code as foo3 above, because we use the opposite
-; condition code in the second two selects, but we also swap the operands
-; of the selects to give the same actual computation.
-;
-; CHECK-LABEL: foo4:
-; CHECK:          js
-; CHECK-NOT: js
-; CHECK-LABEL: # BB#1:
-; CHECK-DAG:      movapd  %xmm2, %xmm1
-; CHECK-DAG:      movapd  %xmm2, %xmm0
-; CHECK-LABEL:.LBB3_2:
-; CHECK:          divsd   %xmm1, %xmm0
-; CHECK:          ret
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define double @foo4(i32 %p1, double %p2, double %p3,
                              double %p4, double %p5) nounwind {
 entry:

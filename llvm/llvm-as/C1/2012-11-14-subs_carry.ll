@@ -1,11 +1,11 @@
-; RUN: llc < %s -mtriple=thumbv7-apple-ios -arm-atomic-cfg-tidy=0 | FileCheck %s
 
-;CHECK-LABEL: foo:
-;CHECK: adds
-;CHECK-NEXT: adc
-;CHECK-NEXT: bx
 
-;rdar://12028498
+
+
+
+
+
+
 
 define i32 @foo() nounwind ssp {
 entry:

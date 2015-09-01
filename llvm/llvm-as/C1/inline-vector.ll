@@ -1,14 +1,14 @@
-; RUN: opt < %s -scalarrepl -S | FileCheck %s
-; RUN: opt < %s -scalarrepl-ssa -S | FileCheck %s
+
+
 target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:32-f32:32:32-f64:32:32-v64:64:64-v128:128:128-a0:0:32-n32"
 target triple = "thumbv7-apple-darwin10.0.0"
 
 %struct.Vector4 = type { float, float, float, float }
 @f.vector = internal constant %struct.Vector4 { float 1.000000e+00, float 2.000000e+00, float 3.000000e+00, float 4.000000e+00 }, align 16
 
-; CHECK-LABEL: define void @f(
-; CHECK-NOT: alloca
-; CHECK: phi <4 x float>
+
+
+
 
 define void @f() nounwind ssp {
 entry:
@@ -19,13 +19,13 @@ entry:
   call void @llvm.memcpy.p0i8.p0i8.i32(i8* %tmp, i8* bitcast (%struct.Vector4* @f.vector to i8*), i32 16, i32 16, i1 false)
   br label %for.cond
 
-for.cond:                                         ; preds = %for.body, %entry
+for.cond:                                         
   %storemerge = phi i32 [ 0, %entry ], [ %inc, %for.body ]
   store i32 %storemerge, i32* %i, align 4
   %cmp = icmp slt i32 %storemerge, 1000000
   br i1 %cmp, label %for.body, label %for.end
 
-for.body:                                         ; preds = %for.cond
+for.body:                                         
   %tmp2 = bitcast %struct.Vector4* %agg.tmp to i8*
   %tmp3 = bitcast %struct.Vector4* %vector to i8*
   call void @llvm.memcpy.p0i8.p0i8.i32(i8* %tmp2, i8* %tmp3, i32 16, i32 16, i1 false)
@@ -41,7 +41,7 @@ for.body:                                         ; preds = %for.cond
   %inc = add nsw i32 %tmp4, 1
   br label %for.cond
 
-for.end:                                          ; preds = %for.cond
+for.end:                                          
   %x = getelementptr inbounds %struct.Vector4, %struct.Vector4* %vector, i32 0, i32 0
   %tmp5 = load float, float* %x, align 16
   %conv = fpext float %tmp5 to double

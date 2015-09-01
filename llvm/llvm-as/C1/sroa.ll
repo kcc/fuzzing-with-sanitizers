@@ -1,16 +1,16 @@
-; RUN: opt -S -mcpu=swift -mtriple=thumbv7-apple-ios -basicaa -slp-vectorizer < %s | FileCheck %s
+
 
 target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:32:64-v128:32:128-a0:0:32-n32-S32"
 
 %class.Complex = type { double, double }
 
-; Code like this is the result of SROA. Make sure we don't vectorize this
-; because the scalar version of the shl/or are handled by the
-; backend and disappear, the vectorized code stays.
 
-; CHECK-LABEL: SROAed
-; CHECK-NOT: shl nuw <2 x i64>
-; CHECK-NOT: or <2 x i64>
+
+
+
+
+
+
 
 define void @SROAed(%class.Complex* noalias nocapture sret %agg.result, [4 x i32] %a.coerce, [4 x i32] %b.coerce) {
 entry:

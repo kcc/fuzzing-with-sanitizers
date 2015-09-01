@@ -1,8 +1,8 @@
-; REQUIRES: asserts
-; RUN: opt < %s -disable-output -stats -loop-unroll -info-output-file - | FileCheck %s --check-prefix=STATS
-; STATS: 1 loop-unroll - Number of loops unrolled (completely or otherwise)
-; Test that llvm.annotation intrinsic do not count against the loop body size
-; and prevent unrolling.
+
+
+
+
+
 target datalayout = "e-m:e-p:32:32-i64:64-v128:64:128-n32-S64"
 
 @B = common global i32 0, align 4
@@ -11,19 +11,19 @@ define void @foo(i32* noalias %A, i32 %B, i32 %C) {
 entry:
   br label %for.body
 
-; A loop that has a small loop body (except for the annotations) that should be
-; unrolled with the default heuristic. Make sure the extra annotations do not
-; prevent unrolling
-for.body:                                         ; preds = %entry, %for.body
+
+
+
+for.body:                                         
   %i.01 = phi i32 [ 0, %entry ], [ %inc, %for.body ]
-  ; The real loop.
+  
   %mul = mul nsw i32 %B, %C
   %arrayidx = getelementptr inbounds i32, i32* %A, i32 %i.01
   store i32 %mul, i32* %arrayidx, align 4
   %inc = add nsw i32 %i.01, 1
   %exitcond = icmp ne i32 %inc, 4
 
-  ; A bunch of annotations
+  
   %annot.0 = tail call i32 @llvm.annotation.i32(i32 %i.01, i8* null, i8* null, i32 0)
   %annot.1 = tail call i32 @llvm.annotation.i32(i32 %i.01, i8* null, i8* null, i32 0)
   %annot.2 = tail call i32 @llvm.annotation.i32(i32 %i.01, i8* null, i8* null, i32 0)
@@ -126,7 +126,7 @@ for.body:                                         ; preds = %entry, %for.body
   %annot.99 = tail call i32 @llvm.annotation.i32(i32 %i.01, i8* null, i8* null, i32 0)
   br i1 %exitcond, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret void
 }
 

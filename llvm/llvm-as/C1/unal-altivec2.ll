@@ -1,16 +1,16 @@
-; RUN: llc -mtriple=powerpc64-unknown-linux-gnu -mcpu=pwr7 < %s | FileCheck %s
+
 target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-f128:128:128-v128:128:128-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
 
-; Function Attrs: nounwind
+
 define void @foo(float* noalias nocapture %x, float* noalias nocapture readonly %y) #0 {
 entry:
   br label %vector.body
 
-vector.body:                                      ; preds = %vector.body, %entry
-; CHECK-LABEL: @foo
-; CHECK: lvsl
-; CHECK: blr
+vector.body:                                      
+
+
+
   %index = phi i64 [ 0, %entry ], [ %index.next.15, %vector.body ]
   %0 = getelementptr inbounds float, float* %y, i64 %index
   %1 = bitcast float* %0 to <4 x float>*
@@ -143,11 +143,11 @@ vector.body:                                      ; preds = %vector.body, %entry
   %80 = icmp eq i64 %index.next.15, 2048
   br i1 %80, label %for.end, label %vector.body
 
-for.end:                                          ; preds = %vector.body
+for.end:                                          
   ret void
 }
 
-; Function Attrs: nounwind readonly
+
 declare <4 x float> @llvm_cos_v4f32(<4 x float>) #1
 
 define <2 x double> @bar(double* %x) {
@@ -155,9 +155,9 @@ entry:
   %p = bitcast double* %x to <2 x double>*
   %r = load <2 x double>, <2 x double>* %p, align 8
 
-; CHECK-LABEL: @bar
-; CHECK-NOT: lvsl
-; CHECK: blr
+
+
+
 
   ret <2 x double> %r
 }

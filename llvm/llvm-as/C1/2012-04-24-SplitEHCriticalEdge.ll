@@ -1,7 +1,7 @@
-; RUN: llc -mtriple=thumbv7-apple-ios -relocation-model=pic -disable-fp-elim -mcpu=cortex-a8 < %s
 
-; CodeGen SplitCriticalEdge() shouldn't try to break edge to a landing pad.
-; rdar://11300144
+
+
+
 
 %0 = type opaque
 %class.FunctionInterpreter.3.15.31 = type { %class.Parser.1.13.29, %class.Parser.1.13.29*, %struct.ParserVariable.2.14.30*, i32 }
@@ -30,32 +30,32 @@ entry:
   %call = invoke double undef(%class.FunctionInterpreter.3.15.31* undef) optsize
           to label %try.cont unwind label %lpad
 
-lpad:                                             ; preds = %entry
+lpad:                                             
   %0 = landingpad { i8*, i32 }
           catch i8* bitcast ({ i8*, i8* }* @_ZTI13ParseErrorMsg to i8*)
   br i1 undef, label %catch, label %eh.resume
 
-catch:                                            ; preds = %lpad
+catch:                                            
   invoke void bitcast (i8* (i8*, i8*, ...)* @objc_msgSend to void (i8*, i8*, %struct.ParseErrorMsg.0.12.28*)*)(i8* undef, i8* undef, %struct.ParseErrorMsg.0.12.28* undef) optsize
           to label %invoke.cont2 unwind label %lpad1
 
-invoke.cont2:                                     ; preds = %catch
+invoke.cont2:                                     
   br label %try.cont
 
-try.cont:                                         ; preds = %invoke.cont2, %entry
+try.cont:                                         
   %value.0 = phi double [ 0x7FF8000000000000, %invoke.cont2 ], [ %call, %entry ]
   ret double %value.0
 
-lpad1:                                            ; preds = %catch
+lpad1:                                            
   %1 = landingpad { i8*, i32 }
           cleanup
   invoke void @__cxa_end_catch()
           to label %eh.resume unwind label %terminate.lpad
 
-eh.resume:                                        ; preds = %lpad1, %lpad
+eh.resume:                                        
   resume { i8*, i32 } undef
 
-terminate.lpad:                                   ; preds = %lpad1
+terminate.lpad:                                   
   %2 = landingpad { i8*, i32 }
           catch i8* null
   unreachable

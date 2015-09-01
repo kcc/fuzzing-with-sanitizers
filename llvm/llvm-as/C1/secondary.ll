@@ -1,14 +1,14 @@
-; RUN: opt -S -reassociate < %s | FileCheck %s
-; rdar://9167457
 
-; Reassociate shouldn't break this testcase involving a secondary
-; reassociation.
 
-; CHECK:     define
-; CHECK-NOT: undef
-; CHECK:     %factor = mul i32 %tmp3, -2
-; CHECK-NOT: undef
-; CHECK:     }
+
+
+
+
+
+
+
+
+
 
 define void @x0f2f640ab6718391b59ce96d9fdeda54(i32 %arg, i32 %arg1, i32 %arg2, i32* %.out) nounwind {
 _:

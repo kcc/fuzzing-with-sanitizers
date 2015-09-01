@@ -1,28 +1,28 @@
-; RUN: llc -mcpu=pwr7 -O0 < %s
 
-; This test formerly failed due to a DBG_VALUE being placed prior to a PHI
-; when fast-isel is partially successful before punting to DAG-isel.
+
+
+
 
 target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-f128:128:128-v128:128:128-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
 
 @grid_points = external global [3 x i32], align 4
 
-; Function Attrs: nounwind
+
 define fastcc void @compute_rhs() #0 {
 entry:
   br i1 undef, label %for.cond871.preheader.for.inc960_crit_edge, label %for.end1042, !dbg !439
 
-for.cond871.preheader.for.inc960_crit_edge:       ; preds = %for.cond871.preheader.for.inc960_crit_edge, %entry
+for.cond871.preheader.for.inc960_crit_edge:       
   br i1 false, label %for.cond871.preheader.for.inc960_crit_edge, label %for.cond964.preheader, !dbg !439
 
-for.cond964.preheader:                            ; preds = %for.cond871.preheader.for.inc960_crit_edge
+for.cond964.preheader:                            
   br i1 undef, label %for.cond968.preheader, label %for.end1042, !dbg !441
 
-for.cond968.preheader:                            ; preds = %for.cond968.preheader, %for.cond964.preheader
+for.cond968.preheader:                            
   br i1 false, label %for.cond968.preheader, label %for.end1042, !dbg !441
 
-for.end1042:                                      ; preds = %for.cond968.preheader, %for.cond964.preheader, %entry
+for.end1042:                                      
   %0 = phi i32 [ undef, %for.cond964.preheader ], [ undef, %for.cond968.preheader ], [ undef, %entry ]
   %1 = load i32, i32* getelementptr inbounds ([3 x i32], [3 x i32]* @grid_points, i64 0, i64 0), align 4, !dbg !443, !tbaa !444
   tail call void @llvm.dbg.value(metadata i32 1, i64 0, metadata !119, metadata !DIExpression()), !dbg !448
@@ -32,20 +32,20 @@ for.end1042:                                      ; preds = %for.cond968.prehead
   %cmp11144264 = icmp sgt i32 %sub11134263, 1, !dbg !450
   br i1 %cmp11144264, label %for.cond1116.preheader, label %for.cond1816.preheader.for.inc1898_crit_edge, !dbg !450
 
-for.cond1116.preheader:                           ; preds = %for.inc1658, %for.end1042
+for.cond1116.preheader:                           
   br i1 %cmp10464271, label %for.body1123, label %for.inc1658, !dbg !452
 
-for.body1123:                                     ; preds = %for.body1123, %for.cond1116.preheader
+for.body1123:                                     
   br label %for.body1123, !dbg !455
 
-for.inc1658:                                      ; preds = %for.cond1116.preheader
+for.inc1658:                                      
   br i1 undef, label %for.cond1116.preheader, label %for.cond1816.preheader.for.inc1898_crit_edge, !dbg !450
 
-for.cond1816.preheader.for.inc1898_crit_edge:     ; preds = %for.cond1816.preheader.for.inc1898_crit_edge, %for.inc1658, %for.end1042
+for.cond1816.preheader.for.inc1898_crit_edge:     
   br label %for.cond1816.preheader.for.inc1898_crit_edge, !dbg !458
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #1
 
 attributes #0 = { nounwind "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

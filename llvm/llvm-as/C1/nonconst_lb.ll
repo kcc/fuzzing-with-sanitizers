@@ -1,21 +1,21 @@
-; RUN: opt < %s -loop-reroll -S | FileCheck %s
+
 target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:32:64-v128:32:128-a0:0:32-n32-S32"
 target triple = "thumbv7-none-linux"
 
-;void foo(int *A, int *B, int m, int n) {
-;  for (int i = m; i < n; i+=4) {
-;    A[i+0] = B[i+0] * 4;
-;    A[i+1] = B[i+1] * 4;
-;    A[i+2] = B[i+2] * 4;
-;    A[i+3] = B[i+3] * 4;
-;  }
-;}
+
+
+
+
+
+
+
+
 define void @foo(i32* nocapture %A, i32* nocapture readonly %B, i32 %m, i32 %n) {
 entry:
   %cmp34 = icmp slt i32 %m, %n
   br i1 %cmp34, label %for.body, label %for.end
 
-for.body:                                         ; preds = %entry, %for.body
+for.body:                                         
   %i.035 = phi i32 [ %add18, %for.body ], [ %m, %entry ]
   %arrayidx = getelementptr inbounds i32, i32* %B, i32 %i.035
   %0 = load i32, i32* %arrayidx, align 4
@@ -44,49 +44,49 @@ for.body:                                         ; preds = %entry, %for.body
   %cmp = icmp slt i32 %add18, %n
   br i1 %cmp, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void
 }
-; CHECK-LABEL: @foo
-; CHECK: for.body.preheader:                               ; preds = %entry
-; CHECK:   %0 = add i32 %n, -1
-; CHECK:   %1 = sub i32 %0, %m
-; CHECK:   %2 = lshr i32 %1, 2
-; CHECK:   %3 = shl i32 %2, 2
-; CHECK:   %4 = add i32 %m, %3
-; CHECK:   %5 = add i32 %4, 3
-; CHECK:   br label %for.body
 
-; CHECK: for.body:                                         ; preds = %for.body, %for.body.preheader
-; CHECK:   %indvar = phi i32 [ %indvar.next, %for.body ], [ 0, %for.body.preheader ]
-; CHECK:   %6 = add i32 %m, %indvar
-; CHECK:   %arrayidx = getelementptr inbounds i32, i32* %B, i32 %6
-; CHECK:   %7 = load i32, i32* %arrayidx, align 4
-; CHECK:   %mul = shl nsw i32 %7, 2
-; CHECK:   %arrayidx2 = getelementptr inbounds i32, i32* %A, i32 %6
-; CHECK:   store i32 %mul, i32* %arrayidx2, align 4
-; CHECK:   %indvar.next = add i32 %indvar, 1
-; CHECK:   %exitcond = icmp eq i32 %6, %5
-; CHECK:   br i1 %exitcond, label %for.end, label %for.body
 
-;void daxpy_ur(int n,float da,float *dx,float *dy)
-;    {
-;    int m = n % 4;
-;    for (int i = m; i < n; i = i + 4)
-;        {
-;        dy[i]   = dy[i]   + da*dx[i];
-;        dy[i+1] = dy[i+1] + da*dx[i+1];
-;        dy[i+2] = dy[i+2] + da*dx[i+2];
-;        dy[i+3] = dy[i+3] + da*dx[i+3];
-;        }
-;    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @daxpy_ur(i32 %n, float %da, float* nocapture readonly %dx, float* nocapture %dy) {
 entry:
   %rem = srem i32 %n, 4
   %cmp55 = icmp slt i32 %rem, %n
   br i1 %cmp55, label %for.body, label %for.end
 
-for.body:                                         ; preds = %entry, %for.body
+for.body:                                         
   %i.056 = phi i32 [ %add27, %for.body ], [ %rem, %entry ]
   %arrayidx = getelementptr inbounds float, float* %dy, i32 %i.056
   %0 = load float, float* %arrayidx, align 4
@@ -123,30 +123,30 @@ for.body:                                         ; preds = %entry, %for.body
   %cmp = icmp slt i32 %add27, %n
   br i1 %cmp, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void
 }
 
-; CHECK-LABEL: @daxpy_ur
-; CHECK: for.body.preheader:
-; CHECK:   %0 = add i32 %n, -1
-; CHECK:   %1 = sub i32 %0, %rem
-; CHECK:   %2 = lshr i32 %1, 2
-; CHECK:   %3 = shl i32 %2, 2
-; CHECK:   %4 = add i32 %rem, %3
-; CHECK:   %5 = add i32 %4, 3
-; CHECK:   br label %for.body
 
-; CHECK: for.body:
-; CHECK:   %indvar = phi i32 [ %indvar.next, %for.body ], [ 0, %for.body.preheader ]
-; CHECK:   %6 = add i32 %rem, %indvar
-; CHECK:   %arrayidx = getelementptr inbounds float, float* %dy, i32 %6
-; CHECK:   %7 = load float, float* %arrayidx, align 4
-; CHECK:   %arrayidx1 = getelementptr inbounds float, float* %dx, i32 %6
-; CHECK:   %8 = load float, float* %arrayidx1, align 4
-; CHECK:   %mul = fmul float %8, %da
-; CHECK:   %add = fadd float %7, %mul
-; CHECK:   store float %add, float* %arrayidx, align 4
-; CHECK:   %indvar.next = add i32 %indvar, 1
-; CHECK:   %exitcond = icmp eq i32 %6, %5
-; CHECK:   br i1 %exitcond, label %for.end, label %for.body
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

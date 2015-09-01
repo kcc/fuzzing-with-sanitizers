@@ -1,11 +1,11 @@
-; RUN: opt -S -objc-arc -objc-arc-contract < %s | FileCheck %s
 
-; The optimizer should be able to move the autorelease past two phi nodes
-; and fold it with the release in bb65.
 
-; CHECK: bb65:
-; CHECK: call i8* @objc_retainAutorelease
-; CHECK: br label %bb76
+
+
+
+
+
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64"
 target triple = "x86_64-apple-darwin11.0.0"
@@ -47,7 +47,7 @@ bb:
   %tmp26 = icmp eq i8* %tmp23, null
   br i1 %tmp26, label %bb81, label %bb27
 
-bb27:                                             ; preds = %bb
+bb27:                                             
   %tmp29 = load i8*, i8** @"\01L_OBJC_SELECTOR_REFERENCES_11", align 8
   %tmp30 = bitcast %1* %arg to i8*
   %tmp31 = call i8* bitcast (i8* (i8*, i8*, ...)* @objc_msgSend to i8* (i8*, i8*)*)(i8* %tmp30, i8* %tmp29)
@@ -60,7 +60,7 @@ bb27:                                             ; preds = %bb
   %tmp44 = icmp eq i8* %tmp41, null
   br i1 %tmp44, label %bb45, label %bb55
 
-bb45:                                             ; preds = %bb27
+bb45:                                             
   %tmp47 = load i8*, i8** @"\01L_OBJC_SELECTOR_REFERENCES_624", align 8
   %tmp49 = call %0* bitcast (i8* (i8*, i8*, ...)* @objc_msgSend to %0* (i8*, i8*)*)(i8* %tmp34, i8* %tmp47)
   %tmp51 = bitcast %0* %tmp49 to i8*
@@ -68,19 +68,19 @@ bb45:                                             ; preds = %bb27
   call void @objc_release(i8* %tmp41) nounwind
   br label %bb55
 
-bb55:                                             ; preds = %bb27, %bb45
+bb55:                                             
   %tmp13.0 = phi %0* [ %tmp42, %bb27 ], [ %tmp49, %bb45 ]
   %tmp57 = icmp eq %0* %tmp13.0, null
   br i1 %tmp57, label %bb76, label %bb58
 
-bb58:                                             ; preds = %bb55
+bb58:                                             
   %tmp60 = load i8*, i8** @"\01L_OBJC_SELECTOR_REFERENCES_598", align 8
   %tmp61 = bitcast %0* %tmp13.0 to i8*
   %tmp62 = call signext i8 bitcast (i8* (i8*, i8*, ...)* @objc_msgSend to i8 (i8*, i8*)*)(i8* %tmp61, i8* %tmp60)
   %tmp64 = icmp eq i8 %tmp62, 0
   br i1 %tmp64, label %bb76, label %bb65
 
-bb65:                                             ; preds = %bb58
+bb65:                                             
   %tmp68 = load i8*, i8** @"\01L_OBJC_SELECTOR_REFERENCES_626", align 8
   %tmp69 = bitcast %0* %tmp13.0 to i8*
   %tmp70 = call %0* bitcast (i8* (i8*, i8*, ...)* @objc_msgSend to %0* (i8*, i8*, %5*)*)(i8* %tmp69, i8* %tmp68, %5* %tmp24)
@@ -88,14 +88,14 @@ bb65:                                             ; preds = %bb58
   %tmp73 = call i8* @objc_retain(i8* %tmp72) nounwind
   br label %bb76
 
-bb76:                                             ; preds = %bb58, %bb55, %bb65
+bb76:                                             
   %tmp10.0 = phi %0* [ %tmp70, %bb65 ], [ null, %bb58 ], [ null, %bb55 ]
   %tmp78 = bitcast %0* %tmp13.0 to i8*
   call void @objc_release(i8* %tmp78) nounwind
   call void @objc_release(i8* %tmp34) nounwind
   br label %bb81
 
-bb81:                                             ; preds = %bb, %bb76
+bb81:                                             
   %tmp10.1 = phi %0* [ %tmp10.0, %bb76 ], [ null, %bb ]
   %tmp83 = bitcast %0* %tmp10.1 to i8*
   %tmp84 = call i8* @objc_retain(i8* %tmp83) nounwind

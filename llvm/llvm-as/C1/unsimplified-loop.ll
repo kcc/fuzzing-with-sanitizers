@@ -1,10 +1,10 @@
-; RUN: opt -analyze -scalar-evolution < %s | FileCheck %s
 
-; This loop has no preheader, multiple backedges, etc., but ScalarEvolution
-; should still be able to analyze it.
 
-; CHECK: %i = phi i64 [ 5, %entry ], [ 5, %alt ], [ %i.next, %loop.a ], [ %i.next, %loop.b ]
-; CHECK-NEXT: -->  {5,+,1}<%loop>
+
+
+
+
+
 
 define void @foo(i1 %p, i1 %q, i1 %s, i1 %u) {
 entry:

@@ -1,18 +1,18 @@
-; RUN: llc -O=2 < %s -mtriple=powerpc-netbsd | FileCheck %s
 
-; CHECK-NOT: bl __lshrti3
 
-; ModuleID = 'lshrti3-ppc32.c'
+
+
+
 target datalayout = "E-m:e-p:32:32-i64:64-n32"
 target triple = "powerpc--netbsd"
 
-; Function Attrs: nounwind uwtable
+
 define i32 @fn1() #0 {
 entry:
   %.promoted = load i72, i72* inttoptr (i32 1 to i72*), align 4
   br label %while.cond
 
-while.cond:                                       ; preds = %while.cond, %entry
+while.cond:                                       
   %bf.set3 = phi i72 [ %bf.set, %while.cond ], [ %.promoted, %entry ]
   %bf.lshr = lshr i72 %bf.set3, 40
   %bf.lshr.tr = trunc i72 %bf.lshr to i32
@@ -26,7 +26,7 @@ while.cond:                                       ; preds = %while.cond, %entry
   %tobool = icmp eq i32 %bf.cast, 0
   br i1 %tobool, label %while.end, label %while.cond
 
-while.end:                                        ; preds = %while.cond
+while.end:                                        
   %bf.set.lcssa = phi i72 [ %bf.set, %while.cond ]
   store i72 %bf.set.lcssa, i72* inttoptr (i32 1 to i72*), align 4
   ret i32 undef

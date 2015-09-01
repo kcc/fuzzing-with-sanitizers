@@ -1,41 +1,41 @@
-; RUN: llc -generate-arange-section < %s | FileCheck %s
-
-; CHECK: .section .debug_aranges,"",@progbits
-
-; First CU
-; CHECK-NEXT: .long   44                      # Length of ARange Set
-; CHECK-NEXT: .short  2                       # DWARF Arange version number
-; CHECK-NEXT: .long   .Lcu_begin0             # Offset Into Debug Info Section
-; CHECK-NEXT: .byte   8                       # Address Size (in bytes)
-; CHECK-NEXT: .byte   0                       # Segment Size (in bytes)
-; CHECK-NEXT: .zero   4,255
-; CHECK-NEXT: .quad   kittens
-; CHECK-NEXT: .quad   rainbows-kittens
-; CHECK-NEXT: .quad   0                       # ARange terminator
-; CHECK-NEXT: .quad   0
-
-; Second CU
-; CHECK-NEXT: .long   44                      # Length of ARange Set
-; CHECK-NEXT: .short  2                       # DWARF Arange version number
-; CHECK-NEXT: .long   .Lcu_begin1             # Offset Into Debug Info Section
-; CHECK-NEXT: .byte   8                       # Address Size (in bytes)
-; CHECK-NEXT: .byte   0                       # Segment Size (in bytes)
-; CHECK-NEXT: .zero   4,255
-; CHECK-NEXT: .quad   rainbows
-; CHECK-NEXT: .quad   .Lsec_end0-rainbows
-; CHECK-NEXT: .quad   0                       # ARange terminator
-; CHECK-NEXT: .quad   0
-
-
-; Generated from: clang -c -g -emit-llvm
-;                 llvm-link test1.bc test2.bc -o test.bc
-; test1.c: int kittens = 4;
-; test2.c: int rainbows = 5;
 
 
 
 
-; ModuleID = 'test.bc'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 target triple = "x86_64-unknown-linux-gnu"
 
 @kittens = global i32 4, align 4

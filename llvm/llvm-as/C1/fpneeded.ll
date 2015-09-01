@@ -1,4 +1,4 @@
-; RUN: llc  -march=mipsel -mcpu=mips32 -relocation-model=static -O3 < %s -mips-os16  | FileCheck %s -check-prefix=32
+
 
 @x = global float 1.000000e+00, align 4
 @y = global float 2.000000e+00, align 4
@@ -10,32 +10,32 @@ entry:
   ret float 1.000000e+00
 }
 
-; 32: 	.set	nomips16
-; 32: 	.ent	fv
-; 32:	.set	noreorder
-; 32:	.set	nomacro
-; 32:	.set	noat
-; 32:	jr	$ra
-; 32:	.set	at
-; 32:	.set	macro
-; 32:	.set	reorder
-; 32:	.end	fv
+
+
+
+
+
+
+
+
+
+
 
 define double @dv() #0 {
 entry:
   ret double 2.000000e+00
 }
 
-; 32: 	.set	nomips16
-; 32: 	.ent	dv
-; 32:	.set	noreorder
-; 32:	.set	nomacro
-; 32:	.set	noat
-; 32:	jr	$ra
-; 32:	.set	at
-; 32:	.set	macro
-; 32:	.set	reorder
-; 32:	.end	dv
+
+
+
+
+
+
+
+
+
+
 
 define void @vf(float %x) #0 {
 entry:
@@ -44,16 +44,16 @@ entry:
   ret void
 }
 
-; 32: 	.set	nomips16
-; 32: 	.ent	vf
-; 32:	.set	noreorder
-; 32:	.set	nomacro
-; 32:	.set	noat
-; 32:	jr	$ra
-; 32:	.set	at
-; 32:	.set	macro
-; 32:	.set	reorder
-; 32:	.end	vf
+
+
+
+
+
+
+
+
+
+
 
 define void @vd(double %x) #0 {
 entry:
@@ -62,16 +62,16 @@ entry:
   ret void
 }
 
-; 32: 	.set	nomips16
-; 32: 	.ent	vd
-; 32:	.set	noreorder
-; 32:	.set	nomacro
-; 32:	.set	noat
-; 32:	jr	$ra
-; 32:	.set	at
-; 32:	.set	macro
-; 32:	.set	reorder
-; 32:	.end	vd
+
+
+
+
+
+
+
+
+
+
 
 define void @foo1() #0 {
 entry:
@@ -83,16 +83,16 @@ entry:
   ret void
 }
 
-; 32: 	.set	nomips16
-; 32: 	.ent	foo1
-; 32:	.set	noreorder
-; 32:	.set	nomacro
-; 32:	.set	noat
-; 32:	jr	$ra
-; 32:	.set	at
-; 32:	.set	macro
-; 32:	.set	reorder
-; 32:	.end	foo1
+
+
+
+
+
+
+
+
+
+
 
 define void @foo2() #0 {
 entry:
@@ -102,16 +102,16 @@ entry:
 }
 
 
-; 32: 	.set	nomips16
-; 32: 	.ent	foo2
-; 32:	.set	noreorder
-; 32:	.set	nomacro
-; 32:	.set	noat
-; 32:	jr	$ra
-; 32:	.set	at
-; 32:	.set	macro
-; 32:	.set	reorder
-; 32:	.end	foo2
+
+
+
+
+
+
+
+
+
+
 
 define void @foo3() #0 {
 entry:
@@ -120,16 +120,16 @@ entry:
   ret void
 }
 
-; 32: 	.set	nomips16
-; 32: 	.ent	foo3
-; 32:	.set	noreorder
-; 32:	.set	nomacro
-; 32:	.set	noat
-; 32:	jr	$ra
-; 32:	.set	at
-; 32:	.set	macro
-; 32:	.set	reorder
-; 32:	.end	foo3
+
+
+
+
+
+
+
+
+
+
 
 attributes #0 = { nounwind "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "unsafe-fp-math"="false" "use-soft-float"="false" }
 
@@ -138,12 +138,12 @@ entry:
   ret void
 }
 
-; 32: 	.set	mips16
-; 32: 	.ent	vv
 
-; 32:	save	{{.+}}
-; 32:	restore	{{.+}} 
-; 32:	.end	vv
+
+
+
+
+
 
 
 

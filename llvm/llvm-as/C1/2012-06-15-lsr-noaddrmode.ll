@@ -1,38 +1,38 @@
-; RUN: llc -O3 -mtriple=thumb-eabi -mcpu=cortex-a8 %s -o - -arm-atomic-cfg-tidy=0 | FileCheck %s
-;
-; LSR should only check for valid address modes when the IV user is a
-; memory address.
-; svn r158536, rdar://11635990
-;
-; Note that we still don't produce the best code here because we fail
-; to coalesce the IV. See <rdar://problem/11680670> [coalescer] IVs
-; need to be scheduled to expose coalescing.
 
-; LSR before the fix:
-;The chosen solution requires 4 regs, with addrec cost 1, plus 3 base adds, plus 2 setup cost:
-;  LSR Use: Kind=Special, Offsets={0}, all-fixups-outside-loop, widest fixup type: i32
-;    reg(%v3) + reg({0,+,-1}<%while.cond.i.i>) + imm(1)
-;  LSR Use: Kind=ICmpZero, Offsets={0}, widest fixup type: i32
-;    reg(%v3) + reg({0,+,-1}<%while.cond.i.i>)
-;  LSR Use: Kind=Address of i32, Offsets={0}, widest fixup type: i32*
-;    reg((-4 + (4 * %v3) + %v1)) + 4*reg({0,+,-1}<%while.cond.i.i>)
-;  LSR Use: Kind=Address of i32, Offsets={0}, widest fixup type: i32*
-;    reg((-4 + (4 * %v3) + %v4)) + 4*reg({0,+,-1}<%while.cond.i.i>)
-;  LSR Use: Kind=Special, Offsets={0}, all-fixups-outside-loop, widest fixup type: i32
-;    reg(%v3)
-;
-; LSR after the fix:
-;The chosen solution requires 4 regs, with addrec cost 1, plus 1 base add, plus 2 setup cost:
-;  LSR Use: Kind=Special, Offsets={0}, all-fixups-outside-loop, widest fixup type: i32
-;    reg({%v3,+,-1}<nsw><%while.cond.i.i>) + imm(1)
-;  LSR Use: Kind=ICmpZero, Offsets={0}, widest fixup type: i32
-;    reg({%v3,+,-1}<nsw><%while.cond.i.i>)
-;  LSR Use: Kind=Address of i32, Offsets={0}, widest fixup type: i32*
-;    reg((-4 + %v1)) + 4*reg({%v3,+,-1}<nsw><%while.cond.i.i>)
-;  LSR Use: Kind=Address of i32, Offsets={0}, widest fixup type: i32*
-;    reg((-4 + %v4)) + 4*reg({%v3,+,-1}<nsw><%while.cond.i.i>)
-;  LSR Use: Kind=Special, Offsets={0}, all-fixups-outside-loop, widest fixup type: i32
-;    reg(%v3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 %s = type { i32* }
@@ -42,12 +42,12 @@
 declare i32* @getptr() nounwind
 declare %s* @getstruct() nounwind
 
-; CHECK: @main
-; Check that the loop preheader contains no address computation.
-; CHECK: %end_of_chain
-; CHECK-NOT: add{{.*}}lsl
-; CHECK: ldr{{.*}}lsl #2
-; CHECK: ldr{{.*}}lsl #2
+
+
+
+
+
+
 define i32 @main() nounwind ssp {
 entry:
   %v0 = load i32, i32* @ncol, align 4

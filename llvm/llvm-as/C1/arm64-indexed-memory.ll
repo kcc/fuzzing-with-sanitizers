@@ -1,9 +1,9 @@
-; RUN: llc < %s -march=arm64 -aarch64-redzone | FileCheck %s
+
 
 define void @store64(i64** nocapture %out, i64 %index, i64 %spacing) nounwind noinline ssp {
-; CHECK-LABEL: store64:
-; CHECK: str x{{[0-9+]}}, [x{{[0-9+]}}], #8
-; CHECK: ret
+
+
+
   %tmp = load i64*, i64** %out, align 8
   %incdec.ptr = getelementptr inbounds i64, i64* %tmp, i64 1
   store i64 %spacing, i64* %tmp, align 4
@@ -12,9 +12,9 @@ define void @store64(i64** nocapture %out, i64 %index, i64 %spacing) nounwind no
 }
 
 define void @store32(i32** nocapture %out, i32 %index, i32 %spacing) nounwind noinline ssp {
-; CHECK-LABEL: store32:
-; CHECK: str w{{[0-9+]}}, [x{{[0-9+]}}], #4
-; CHECK: ret
+
+
+
   %tmp = load i32*, i32** %out, align 8
   %incdec.ptr = getelementptr inbounds i32, i32* %tmp, i64 1
   store i32 %spacing, i32* %tmp, align 4
@@ -23,9 +23,9 @@ define void @store32(i32** nocapture %out, i32 %index, i32 %spacing) nounwind no
 }
 
 define void @store16(i16** nocapture %out, i16 %index, i16 %spacing) nounwind noinline ssp {
-; CHECK-LABEL: store16:
-; CHECK: strh w{{[0-9+]}}, [x{{[0-9+]}}], #2
-; CHECK: ret
+
+
+
   %tmp = load i16*, i16** %out, align 8
   %incdec.ptr = getelementptr inbounds i16, i16* %tmp, i64 1
   store i16 %spacing, i16* %tmp, align 4
@@ -34,9 +34,9 @@ define void @store16(i16** nocapture %out, i16 %index, i16 %spacing) nounwind no
 }
 
 define void @store8(i8** nocapture %out, i8 %index, i8 %spacing) nounwind noinline ssp {
-; CHECK-LABEL: store8:
-; CHECK: strb w{{[0-9+]}}, [x{{[0-9+]}}], #1
-; CHECK: ret
+
+
+
   %tmp = load i8*, i8** %out, align 8
   %incdec.ptr = getelementptr inbounds i8, i8* %tmp, i64 1
   store i8 %spacing, i8* %tmp, align 4
@@ -45,9 +45,9 @@ define void @store8(i8** nocapture %out, i8 %index, i8 %spacing) nounwind noinli
 }
 
 define void @truncst64to32(i32** nocapture %out, i32 %index, i64 %spacing) nounwind noinline ssp {
-; CHECK-LABEL: truncst64to32:
-; CHECK: str w{{[0-9+]}}, [x{{[0-9+]}}], #4
-; CHECK: ret
+
+
+
   %tmp = load i32*, i32** %out, align 8
   %incdec.ptr = getelementptr inbounds i32, i32* %tmp, i64 1
   %trunc = trunc i64 %spacing to i32
@@ -57,9 +57,9 @@ define void @truncst64to32(i32** nocapture %out, i32 %index, i64 %spacing) nounw
 }
 
 define void @truncst64to16(i16** nocapture %out, i16 %index, i64 %spacing) nounwind noinline ssp {
-; CHECK-LABEL: truncst64to16:
-; CHECK: strh w{{[0-9+]}}, [x{{[0-9+]}}], #2
-; CHECK: ret
+
+
+
   %tmp = load i16*, i16** %out, align 8
   %incdec.ptr = getelementptr inbounds i16, i16* %tmp, i64 1
   %trunc = trunc i64 %spacing to i16
@@ -69,9 +69,9 @@ define void @truncst64to16(i16** nocapture %out, i16 %index, i64 %spacing) nounw
 }
 
 define void @truncst64to8(i8** nocapture %out, i8 %index, i64 %spacing) nounwind noinline ssp {
-; CHECK-LABEL: truncst64to8:
-; CHECK: strb w{{[0-9+]}}, [x{{[0-9+]}}], #1
-; CHECK: ret
+
+
+
   %tmp = load i8*, i8** %out, align 8
   %incdec.ptr = getelementptr inbounds i8, i8* %tmp, i64 1
   %trunc = trunc i64 %spacing to i8
@@ -82,9 +82,9 @@ define void @truncst64to8(i8** nocapture %out, i8 %index, i64 %spacing) nounwind
 
 
 define void @storef16(half** %out, half %index, half %spacing) nounwind {
-; CHECK-LABEL: storef16:
-; CHECK: str h{{[0-9+]}}, [x{{[0-9+]}}], #2
-; CHECK: ret
+
+
+
   %tmp = load half*, half** %out, align 2
   %incdec.ptr = getelementptr inbounds half, half* %tmp, i64 1
   store half %spacing, half* %tmp, align 2
@@ -93,9 +93,9 @@ define void @storef16(half** %out, half %index, half %spacing) nounwind {
 }
 
 define void @storef32(float** nocapture %out, float %index, float %spacing) nounwind noinline ssp {
-; CHECK-LABEL: storef32:
-; CHECK: str s{{[0-9+]}}, [x{{[0-9+]}}], #4
-; CHECK: ret
+
+
+
   %tmp = load float*, float** %out, align 8
   %incdec.ptr = getelementptr inbounds float, float* %tmp, i64 1
   store float %spacing, float* %tmp, align 4
@@ -104,9 +104,9 @@ define void @storef32(float** nocapture %out, float %index, float %spacing) noun
 }
 
 define void @storef64(double** nocapture %out, double %index, double %spacing) nounwind noinline ssp {
-; CHECK-LABEL: storef64:
-; CHECK: str d{{[0-9+]}}, [x{{[0-9+]}}], #8
-; CHECK: ret
+
+
+
   %tmp = load double*, double** %out, align 8
   %incdec.ptr = getelementptr inbounds double, double* %tmp, i64 1
   store double %spacing, double* %tmp, align 4
@@ -115,10 +115,10 @@ define void @storef64(double** nocapture %out, double %index, double %spacing) n
 }
 
 define double * @pref64(double** nocapture %out, double %spacing) nounwind noinline ssp {
-; CHECK-LABEL: pref64:
-; CHECK: ldr     x0, [x0]
-; CHECK-NEXT: str     d0, [x0, #32]!
-; CHECK-NEXT: ret
+
+
+
+
   %tmp = load double*, double** %out, align 8
   %ptr = getelementptr inbounds double, double* %tmp, i64 4
   store double %spacing, double* %ptr, align 4
@@ -126,10 +126,10 @@ define double * @pref64(double** nocapture %out, double %spacing) nounwind noinl
 }
 
 define float * @pref32(float** nocapture %out, float %spacing) nounwind noinline ssp {
-; CHECK-LABEL: pref32:
-; CHECK: ldr     x0, [x0]
-; CHECK-NEXT: str     s0, [x0, #12]!
-; CHECK-NEXT: ret
+
+
+
+
   %tmp = load float*, float** %out, align 8
   %ptr = getelementptr inbounds float, float* %tmp, i64 3
   store float %spacing, float* %ptr, align 4
@@ -137,10 +137,10 @@ define float * @pref32(float** nocapture %out, float %spacing) nounwind noinline
 }
 
 define half* @pref16(half** %out, half %spacing) nounwind {
-; CHECK-LABEL: pref16:
-; CHECK: ldr x0, [x0]
-; CHECK-NEXT: str h0, [x0, #6]!
-; CHECK-NEXT: ret
+
+
+
+
   %tmp = load half*, half** %out, align 2
   %ptr = getelementptr inbounds half, half* %tmp, i64 3
   store half %spacing, half* %ptr, align 2
@@ -148,10 +148,10 @@ define half* @pref16(half** %out, half %spacing) nounwind {
 }
 
 define i64 * @pre64(i64** nocapture %out, i64 %spacing) nounwind noinline ssp {
-; CHECK-LABEL: pre64:
-; CHECK: ldr     x0, [x0]
-; CHECK-NEXT: str     x1, [x0, #16]!
-; CHECK-NEXT: ret
+
+
+
+
   %tmp = load i64*, i64** %out, align 8
   %ptr = getelementptr inbounds i64, i64* %tmp, i64 2
   store i64 %spacing, i64* %ptr, align 4
@@ -159,10 +159,10 @@ define i64 * @pre64(i64** nocapture %out, i64 %spacing) nounwind noinline ssp {
 }
 
 define i32 * @pre32(i32** nocapture %out, i32 %spacing) nounwind noinline ssp {
-; CHECK-LABEL: pre32:
-; CHECK: ldr     x0, [x0]
-; CHECK-NEXT: str     w1, [x0, #8]!
-; CHECK-NEXT: ret
+
+
+
+
   %tmp = load i32*, i32** %out, align 8
   %ptr = getelementptr inbounds i32, i32* %tmp, i64 2
   store i32 %spacing, i32* %ptr, align 4
@@ -170,10 +170,10 @@ define i32 * @pre32(i32** nocapture %out, i32 %spacing) nounwind noinline ssp {
 }
 
 define i16 * @pre16(i16** nocapture %out, i16 %spacing) nounwind noinline ssp {
-; CHECK-LABEL: pre16:
-; CHECK: ldr     x0, [x0]
-; CHECK-NEXT: strh    w1, [x0, #4]!
-; CHECK-NEXT: ret
+
+
+
+
   %tmp = load i16*, i16** %out, align 8
   %ptr = getelementptr inbounds i16, i16* %tmp, i64 2
   store i16 %spacing, i16* %ptr, align 4
@@ -181,10 +181,10 @@ define i16 * @pre16(i16** nocapture %out, i16 %spacing) nounwind noinline ssp {
 }
 
 define i8 * @pre8(i8** nocapture %out, i8 %spacing) nounwind noinline ssp {
-; CHECK-LABEL: pre8:
-; CHECK: ldr     x0, [x0]
-; CHECK-NEXT: strb    w1, [x0, #2]!
-; CHECK-NEXT: ret
+
+
+
+
   %tmp = load i8*, i8** %out, align 8
   %ptr = getelementptr inbounds i8, i8* %tmp, i64 2
   store i8 %spacing, i8* %ptr, align 4
@@ -192,10 +192,10 @@ define i8 * @pre8(i8** nocapture %out, i8 %spacing) nounwind noinline ssp {
 }
 
 define i32 * @pretrunc64to32(i32** nocapture %out, i64 %spacing) nounwind noinline ssp {
-; CHECK-LABEL: pretrunc64to32:
-; CHECK: ldr     x0, [x0]
-; CHECK-NEXT: str     w1, [x0, #8]!
-; CHECK-NEXT: ret
+
+
+
+
   %tmp = load i32*, i32** %out, align 8
   %ptr = getelementptr inbounds i32, i32* %tmp, i64 2
   %trunc = trunc i64 %spacing to i32
@@ -204,10 +204,10 @@ define i32 * @pretrunc64to32(i32** nocapture %out, i64 %spacing) nounwind noinli
 }
 
 define i16 * @pretrunc64to16(i16** nocapture %out, i64 %spacing) nounwind noinline ssp {
-; CHECK-LABEL: pretrunc64to16:
-; CHECK: ldr     x0, [x0]
-; CHECK-NEXT: strh    w1, [x0, #4]!
-; CHECK-NEXT: ret
+
+
+
+
   %tmp = load i16*, i16** %out, align 8
   %ptr = getelementptr inbounds i16, i16* %tmp, i64 2
   %trunc = trunc i64 %spacing to i16
@@ -216,10 +216,10 @@ define i16 * @pretrunc64to16(i16** nocapture %out, i64 %spacing) nounwind noinli
 }
 
 define i8 * @pretrunc64to8(i8** nocapture %out, i64 %spacing) nounwind noinline ssp {
-; CHECK-LABEL: pretrunc64to8:
-; CHECK: ldr     x0, [x0]
-; CHECK-NEXT: strb    w1, [x0, #2]!
-; CHECK-NEXT: ret
+
+
+
+
   %tmp = load i8*, i8** %out, align 8
   %ptr = getelementptr inbounds i8, i8* %tmp, i64 2
   %trunc = trunc i64 %spacing to i8
@@ -227,14 +227,14 @@ define i8 * @pretrunc64to8(i8** nocapture %out, i64 %spacing) nounwind noinline 
   ret i8 *%ptr
 }
 
-;-----
-; Pre-indexed loads
-;-----
+
+
+
 define double* @preidxf64(double* %src, double* %out) {
-; CHECK-LABEL: preidxf64:
-; CHECK: ldr     d0, [x0, #8]!
-; CHECK: str     d0, [x1]
-; CHECK: ret
+
+
+
+
   %ptr = getelementptr inbounds double, double* %src, i64 1
   %tmp = load double, double* %ptr, align 4
   store double %tmp, double* %out, align 4
@@ -242,10 +242,10 @@ define double* @preidxf64(double* %src, double* %out) {
 }
 
 define float* @preidxf32(float* %src, float* %out) {
-; CHECK-LABEL: preidxf32:
-; CHECK: ldr     s0, [x0, #4]!
-; CHECK: str     s0, [x1]
-; CHECK: ret
+
+
+
+
   %ptr = getelementptr inbounds float, float* %src, i64 1
   %tmp = load float, float* %ptr, align 4
   store float %tmp, float* %out, align 4
@@ -253,10 +253,10 @@ define float* @preidxf32(float* %src, float* %out) {
 }
 
 define half* @preidxf16(half* %src, half* %out) {
-; CHECK-LABEL: preidxf16:
-; CHECK: ldr     h0, [x0, #2]!
-; CHECK: str     h0, [x1]
-; CHECK: ret
+
+
+
+
   %ptr = getelementptr inbounds half, half* %src, i64 1
   %tmp = load half, half* %ptr, align 2
   store half %tmp, half* %out, align 2
@@ -264,10 +264,10 @@ define half* @preidxf16(half* %src, half* %out) {
 }
 
 define i64* @preidx64(i64* %src, i64* %out) {
-; CHECK-LABEL: preidx64:
-; CHECK: ldr     x[[REG:[0-9]+]], [x0, #8]!
-; CHECK: str     x[[REG]], [x1]
-; CHECK: ret
+
+
+
+
   %ptr = getelementptr inbounds i64, i64* %src, i64 1
   %tmp = load i64, i64* %ptr, align 4
   store i64 %tmp, i64* %out, align 4
@@ -275,9 +275,9 @@ define i64* @preidx64(i64* %src, i64* %out) {
 }
 
 define i32* @preidx32(i32* %src, i32* %out) {
-; CHECK: ldr     w[[REG:[0-9]+]], [x0, #4]!
-; CHECK: str     w[[REG]], [x1]
-; CHECK: ret
+
+
+
   %ptr = getelementptr inbounds i32, i32* %src, i64 1
   %tmp = load i32, i32* %ptr, align 4
   store i32 %tmp, i32* %out, align 4
@@ -285,9 +285,9 @@ define i32* @preidx32(i32* %src, i32* %out) {
 }
 
 define i16* @preidx16zext32(i16* %src, i32* %out) {
-; CHECK: ldrh    w[[REG:[0-9]+]], [x0, #2]!
-; CHECK: str     w[[REG]], [x1]
-; CHECK: ret
+
+
+
   %ptr = getelementptr inbounds i16, i16* %src, i64 1
   %tmp = load i16, i16* %ptr, align 4
   %ext = zext i16 %tmp to i32
@@ -296,9 +296,9 @@ define i16* @preidx16zext32(i16* %src, i32* %out) {
 }
 
 define i16* @preidx16zext64(i16* %src, i64* %out) {
-; CHECK: ldrh    w[[REG:[0-9]+]], [x0, #2]!
-; CHECK: str     x[[REG]], [x1]
-; CHECK: ret
+
+
+
   %ptr = getelementptr inbounds i16, i16* %src, i64 1
   %tmp = load i16, i16* %ptr, align 4
   %ext = zext i16 %tmp to i64
@@ -307,9 +307,9 @@ define i16* @preidx16zext64(i16* %src, i64* %out) {
 }
 
 define i8* @preidx8zext32(i8* %src, i32* %out) {
-; CHECK: ldrb    w[[REG:[0-9]+]], [x0, #1]!
-; CHECK: str     w[[REG]], [x1]
-; CHECK: ret
+
+
+
   %ptr = getelementptr inbounds i8, i8* %src, i64 1
   %tmp = load i8, i8* %ptr, align 4
   %ext = zext i8 %tmp to i32
@@ -318,9 +318,9 @@ define i8* @preidx8zext32(i8* %src, i32* %out) {
 }
 
 define i8* @preidx8zext64(i8* %src, i64* %out) {
-; CHECK: ldrb    w[[REG:[0-9]+]], [x0, #1]!
-; CHECK: str     x[[REG]], [x1]
-; CHECK: ret
+
+
+
   %ptr = getelementptr inbounds i8, i8* %src, i64 1
   %tmp = load i8, i8* %ptr, align 4
   %ext = zext i8 %tmp to i64
@@ -329,9 +329,9 @@ define i8* @preidx8zext64(i8* %src, i64* %out) {
 }
 
 define i32* @preidx32sext64(i32* %src, i64* %out) {
-; CHECK: ldrsw   x[[REG:[0-9]+]], [x0, #4]!
-; CHECK: str     x[[REG]], [x1]
-; CHECK: ret
+
+
+
   %ptr = getelementptr inbounds i32, i32* %src, i64 1
   %tmp = load i32, i32* %ptr, align 4
   %ext = sext i32 %tmp to i64
@@ -340,9 +340,9 @@ define i32* @preidx32sext64(i32* %src, i64* %out) {
 }
 
 define i16* @preidx16sext32(i16* %src, i32* %out) {
-; CHECK: ldrsh   w[[REG:[0-9]+]], [x0, #2]!
-; CHECK: str     w[[REG]], [x1]
-; CHECK: ret
+
+
+
   %ptr = getelementptr inbounds i16, i16* %src, i64 1
   %tmp = load i16, i16* %ptr, align 4
   %ext = sext i16 %tmp to i32
@@ -351,9 +351,9 @@ define i16* @preidx16sext32(i16* %src, i32* %out) {
 }
 
 define i16* @preidx16sext64(i16* %src, i64* %out) {
-; CHECK: ldrsh   x[[REG:[0-9]+]], [x0, #2]!
-; CHECK: str     x[[REG]], [x1]
-; CHECK: ret
+
+
+
   %ptr = getelementptr inbounds i16, i16* %src, i64 1
   %tmp = load i16, i16* %ptr, align 4
   %ext = sext i16 %tmp to i64
@@ -362,9 +362,9 @@ define i16* @preidx16sext64(i16* %src, i64* %out) {
 }
 
 define i8* @preidx8sext32(i8* %src, i32* %out) {
-; CHECK: ldrsb   w[[REG:[0-9]+]], [x0, #1]!
-; CHECK: str     w[[REG]], [x1]
-; CHECK: ret
+
+
+
   %ptr = getelementptr inbounds i8, i8* %src, i64 1
   %tmp = load i8, i8* %ptr, align 4
   %ext = sext i8 %tmp to i32
@@ -373,9 +373,9 @@ define i8* @preidx8sext32(i8* %src, i32* %out) {
 }
 
 define i8* @preidx8sext64(i8* %src, i64* %out) {
-; CHECK: ldrsb   x[[REG:[0-9]+]], [x0, #1]!
-; CHECK: str     x[[REG]], [x1]
-; CHECK: ret
+
+
+
   %ptr = getelementptr inbounds i8, i8* %src, i64 1
   %tmp = load i8, i8* %ptr, align 4
   %ext = sext i8 %tmp to i64
@@ -383,12 +383,12 @@ define i8* @preidx8sext64(i8* %src, i64* %out) {
   ret i8* %ptr
 }
 
-; This test checks if illegal post-index is generated
+
 
 define i64* @postidx_clobber(i64* %addr) nounwind noinline ssp {
-; CHECK-LABEL: postidx_clobber:
-; CHECK-NOT: str     x0, [x0], #8
-; ret
+
+
+
  %paddr = bitcast i64* %addr to i64**
  store i64* %addr, i64** %paddr
  %newaddr = getelementptr i64, i64* %addr, i32 1

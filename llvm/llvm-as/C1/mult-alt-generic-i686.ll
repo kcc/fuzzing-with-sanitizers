@@ -1,5 +1,5 @@
-; RUN: llc < %s -march=x86 -no-integrated-as
-; ModuleID = 'mult-alt-generic.c'
+
+
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64-f80:32:32-n8:16:32"
 target triple = "i686"
 
@@ -91,9 +91,9 @@ define void @single_E() nounwind {
 entry:
   %out0 = alloca double, align 8
   store double 0.000000e+000, double* %out0, align 8
-; No lowering support.
-;  %0 = call double asm "foo $1,$0", "=r,E,~{dirflag},~{fpsr},~{flags}"(double 1.000000e+001) nounwind
-;  store double %0, double* %out0, align 8
+
+
+
   ret void
 }
 
@@ -101,9 +101,9 @@ define void @single_F() nounwind {
 entry:
   %out0 = alloca double, align 8
   store double 0.000000e+000, double* %out0, align 8
-; No lowering support.
-;  %0 = call double asm "foo $1,$0", "=r,F,~{dirflag},~{fpsr},~{flags}"(double 1.000000e+000) nounwind
-;  store double %0, double* %out0, align 8
+
+
+
   ret void
 }
 
@@ -248,9 +248,9 @@ define void @multi_E() nounwind {
 entry:
   %out0 = alloca double, align 8
   store double 0.000000e+000, double* %out0, align 8
-; No lowering support.
-;  %0 = call double asm "foo $1,$0", "=r|r,r|E,~{dirflag},~{fpsr},~{flags}"(double 1.000000e+001) nounwind
-;  store double %0, double* %out0, align 8
+
+
+
   ret void
 }
 
@@ -258,9 +258,9 @@ define void @multi_F() nounwind {
 entry:
   %out0 = alloca double, align 8
   store double 0.000000e+000, double* %out0, align 8
-; No lowering support.
-;  %0 = call double asm "foo $1,$0", "=r|r,r|F,~{dirflag},~{fpsr},~{flags}"(double 1.000000e+000) nounwind
-;  store double %0, double* %out0, align 8
+
+
+
   ret void
 }
 

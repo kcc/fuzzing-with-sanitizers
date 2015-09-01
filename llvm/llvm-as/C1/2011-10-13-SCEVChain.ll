@@ -1,32 +1,32 @@
-; RUN: opt -loop-reduce -S < %s | FileCheck %s
-;
-; Test TransformForPostIncUse and LSR's expansion of expressions in
-; post-inc form to ensure the implementation can handle expressions
-; DAGs, not just trees.
+
+
+
+
+
 
 target triple = "x86_64-apple-darwin"
 
-; Verify that -loop-reduce runs without "hanging" and reuses post-inc
-; expansions.
-; CHECK-LABEL: @test(
-; CHECK: icmp
-; CHECK: icmp
-; CHECK: icmp
-; CHECK: icmp
-; CHECK: icmp
-; CHECK: icmp
-; CHECK: icmp
-; CHECK: icmp
-; CHECK: icmp
-; CHECK: icmp
-; CHECK: icmp
-; CHECK: icmp
-; CHECK: icmp
-; CHECK: icmp
-; CHECK: icmp
-; CHECK: icmp
-; CHECK: icmp
-; CHECK-NOT: icmp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @test(i8* %base, i32 %a0) nounwind {
 entry:
   br label %bb1

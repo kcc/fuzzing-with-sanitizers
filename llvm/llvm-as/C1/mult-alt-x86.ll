@@ -1,5 +1,5 @@
-; RUN: llc < %s -march=x86 -mattr=+sse2 -no-integrated-as
-; ModuleID = 'mult-alt-x86.c'
+
+
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-f80:128:128-v64:64:64-v128:128:128-a0:0:64-f80:32:32-n8:16:32"
 target triple = "i686-pc-win32"
 
@@ -145,15 +145,15 @@ entry:
 
 define void @single_L() nounwind {
 entry:
-; Missing lowering support for 'L'.
-;  call void asm "foo $1,$0", "=*m,L,~{dirflag},~{fpsr},~{flags}"(i32* @mout0, i32 1) nounwind
+
+
   ret void
 }
 
 define void @single_M() nounwind {
 entry:
-; Missing lowering support for 'M'.
-;  call void asm "foo $1,$0", "=*m,M,~{dirflag},~{fpsr},~{flags}"(i32* @mout0, i32 1) nounwind
+
+
   ret void
 }
 
@@ -165,15 +165,15 @@ entry:
 
 define void @single_G() nounwind {
 entry:
-; Missing lowering support for 'G'.
-;  call void asm "foo $1,$0", "=*m,G,~{dirflag},~{fpsr},~{flags}"(i32* @mout0, double 1.000000e+000) nounwind
+
+
   ret void
 }
 
 define void @single_C() nounwind {
 entry:
-; Missing lowering support for 'C'.
-;  call void asm "foo $1,$0", "=*m,C,~{dirflag},~{fpsr},~{flags}"(i32* @mout0, double 1.000000e+000) nounwind
+
+
   ret void
 }
 
@@ -313,15 +313,15 @@ entry:
 
 define void @multi_L() nounwind {
 entry:
-; Missing lowering support for 'L'.
-;  call void asm "foo $1,$0", "=*r|m|m,r|L|m,~{dirflag},~{fpsr},~{flags}"(i32* @mout0, i32 1) nounwind
+
+
   ret void
 }
 
 define void @multi_M() nounwind {
 entry:
-; Missing lowering support for 'M'.
-;  call void asm "foo $1,$0", "=*r|m|m,r|M|m,~{dirflag},~{fpsr},~{flags}"(i32* @mout0, i32 1) nounwind
+
+
   ret void
 }
 
@@ -333,15 +333,15 @@ entry:
 
 define void @multi_G() nounwind {
 entry:
-; Missing lowering support for 'G'.
-;  call void asm "foo $1,$0", "=*r|m|m,r|G|m,~{dirflag},~{fpsr},~{flags}"(i32* @mout0, double 1.000000e+000) nounwind
+
+
   ret void
 }
 
 define void @multi_C() nounwind {
 entry:
-; Missing lowering support for 'C'.
-;  call void asm "foo $1,$0", "=*r|m|m,r|C|m,~{dirflag},~{fpsr},~{flags}"(i32* @mout0, double 1.000000e+000) nounwind
+
+
   ret void
 }
 

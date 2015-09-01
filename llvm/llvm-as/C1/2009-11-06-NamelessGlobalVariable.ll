@@ -1,4 +1,4 @@
-; RUN: llc %s -o /dev/null
+
 @0 = internal constant i32 1
 
 !llvm.dbg.cu = !{!0}

@@ -1,6 +1,6 @@
-; RUN: llc -mtriple=x86_64-linux -mcpu=corei7 < %s | FileCheck %s
-; This fixes a missing cases in the MI scheduler's constrainLocalCopy exposed by
-; PR21792
+
+
+
 
 @stuff = external constant [256 x double], align 16
 
@@ -31,11 +31,11 @@ entry:
   %tmp17 = bitcast i8* %add.ptr51 to double*
   call void @toto(double* %tmp4, double* %tmp5, double* %tmp6, double* %tmp7, double* %tmp16, double* %tmp17)
   ret void
-; CHECK-LABEL: func:
-; CHECK: pextrq  $1, %xmm0,
-; CHECK-NEXT: movd    %xmm0, %r[[AX:..]]
-; CHECK-NEXT: movslq  %e[[AX]],
-; CHECK-NEXT: sarq    $32, %r[[AX]]
+
+
+
+
+
 }
 
 declare void @toto(double*, double*, double*, double*, double*, double*)

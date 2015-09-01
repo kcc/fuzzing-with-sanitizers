@@ -1,17 +1,17 @@
-; RUN: opt < %s -analyze -delinearize  | FileCheck %s
 
-; void foo(long n, long m, long o, double A[n][m][o]) {
-;
-;   for (long i = 0; i < n; i++)
-;     for (long j = 0; j < m; j++)
-;       for (long k = 0; k < o; k++)
-;         A[i+3][j-4][k+7] = 1.0;
-; }
 
-; AddRec: {{{(56 + (8 * (-4 + (3 * %m)) * %o) + %A),+,(8 * %m * %o)}<%for.i>,+,(8 * %o)}<%for.j>,+,8}<%for.k>
-; CHECK: Base offset: %A
-; CHECK: ArrayDecl[UnknownSize][%m][%o] with elements of 8 bytes.
-; CHECK: ArrayRef[{3,+,1}<nw><%for.i>][{-4,+,1}<nw><%for.j>][{7,+,1}<nuw><nsw><%for.k>]
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @foo(i64 %n, i64 %m, i64 %o, double* %A) {
 entry:

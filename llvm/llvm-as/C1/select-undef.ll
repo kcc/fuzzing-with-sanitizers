@@ -1,4 +1,4 @@
-; RUN: llc -mtriple=arm-eabi -mcpu=swift -verify-machineinstrs %s -o /dev/null
+
 
 define i32 @func(i32 %arg0, i32 %arg1) {
 entry:

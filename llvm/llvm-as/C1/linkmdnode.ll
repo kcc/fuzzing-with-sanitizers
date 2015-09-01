@@ -1,6 +1,6 @@
-; RUN: llvm-as < %s > %t.bc
-; RUN: llvm-as < %p/linkmdnode2.ll > %t2.bc
-; RUN: llvm-link %t.bc %t2.bc
+
+
+
 
 
 !21 = !{i32 42, !"foobar"}

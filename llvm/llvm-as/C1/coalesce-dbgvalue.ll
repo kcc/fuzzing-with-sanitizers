@@ -1,10 +1,10 @@
-; RUN: llc < %s -verify-machineinstrs
-; PR16110
-;
-; This test case contains a value that is split into two connected components
-; by rematerialization during coalescing. It also contains a DBG_VALUE
-; instruction which must be updated during
-; ConnectedVNInfoEqClasses::Distribute().
+
+
+
+
+
+
+
 
 target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:32:64-v128:32:128-a0:0:32-n32-S32"
 target triple = "thumbv7-apple-ios3.0.0"
@@ -14,18 +14,18 @@ target triple = "thumbv7-apple-ios3.0.0"
 @a = common global i64 0, align 8
 @d = common global i32 0, align 4
 
-; Function Attrs: nounwind ssp
+
 define i32 @pr16110() #0 {
 for.cond1.preheader:
   store i32 0, i32* @c, align 4, !dbg !21
   br label %for.cond1.outer, !dbg !26
 
-for.cond1:                                        ; preds = %for.end9, %for.cond1.outer
+for.cond1:                                        
   %storemerge11 = phi i32 [ 0, %for.end9 ], [ %storemerge11.ph, %for.cond1.outer ]
   %cmp = icmp slt i32 %storemerge11, 1, !dbg !26
   br i1 %cmp, label %for.body2, label %for.end9, !dbg !26
 
-for.body2:                                        ; preds = %for.cond1
+for.body2:                                        
   store i32 %storemerge11, i32* @b, align 4, !dbg !26
   tail call void @llvm.dbg.value(metadata i32* null, i64 0, metadata !11, metadata !DIExpression()), !dbg !28
   %0 = load i64, i64* @a, align 8, !dbg !29
@@ -35,12 +35,12 @@ for.body2:                                        ; preds = %for.cond1
   %tobool4 = icmp eq i32 %conv3, 0, !dbg !29
   br i1 %tobool4, label %land.end, label %land.rhs, !dbg !29
 
-land.rhs:                                         ; preds = %for.body2
+land.rhs:                                         
   %call = tail call i32 bitcast (i32 (...)* @fn3 to i32 ()*)() #3, !dbg !29
   %tobool5 = icmp ne i32 %call, 0, !dbg !29
   br label %land.end
 
-land.end:                                         ; preds = %land.rhs, %for.body2
+land.end:                                         
   %1 = phi i1 [ false, %for.body2 ], [ %tobool5, %land.rhs ]
   %land.ext = zext i1 %1 to i32
   %call6 = tail call i32 bitcast (i32 (...)* @fn2 to i32 (i32, i32*)*)(i32 %land.ext, i32* null) #3
@@ -49,17 +49,17 @@ land.end:                                         ; preds = %land.rhs, %for.body
   %phitmp = and i64 %xor, 4294967295, !dbg !26
   br label %for.cond1.outer, !dbg !26
 
-for.cond1.outer:                                  ; preds = %land.end, %for.cond1.preheader
+for.cond1.outer:                                  
   %storemerge11.ph = phi i32 [ %inc8, %land.end ], [ 0, %for.cond1.preheader ]
   %e.1.ph = phi i64 [ %phitmp, %land.end ], [ 0, %for.cond1.preheader ]
   %3 = load i32, i32* @d, align 4, !dbg !31
   %tobool10 = icmp eq i32 %3, 0, !dbg !31
   br label %for.cond1
 
-for.end9:                                         ; preds = %for.cond1
+for.end9:                                         
   br i1 %tobool10, label %if.end, label %for.cond1, !dbg !31
 
-if.end:                                           ; preds = %for.end9
+if.end:                                           
   store i32 %storemerge11, i32* @b, align 4, !dbg !26
   ret i32 0, !dbg !32
 }
@@ -68,7 +68,7 @@ declare i32 @fn2(...) #1
 
 declare i32 @fn3(...) #1
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #2
 
 attributes #0 = { nounwind ssp "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "unsafe-fp-math"="false" "use-soft-float"="false" }

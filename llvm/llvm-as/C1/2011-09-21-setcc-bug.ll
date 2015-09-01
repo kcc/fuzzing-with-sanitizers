@@ -1,6 +1,6 @@
-; RUN: llc < %s -march=x86-64 -mcpu=corei7 -mattr=+sse4.1
 
-; Make sure we are not crashing on this code.
+
+
 
 define void @load_4_i8(<4 x i8>* %k, <4 x i8>* %y, <4 x double>* %A1, <4 x double>* %A0)  {
    %A = load <4 x i8>, <4 x i8>* %k

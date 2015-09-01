@@ -1,10 +1,10 @@
-; RUN: opt -S -mergefunc < %s | FileCheck %s
 
-; These two functions are identical. The basic block labels are the same, and
-; induce the same CFG. We are testing that block addresses within different
-; functions are compared by their value, and not based on order. Both functions
-; come from the same C-code, but in the first the two val_0/val_1 basic blocks
-; are in a different order (they were manually switched post-compilation).
+
+
+
+
+
+
 
 target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
@@ -49,9 +49,9 @@ indirectgoto:
 }
 
 define i32 @_Z1gi(i32 %i) #0 {
-; CHECK-LABEL: define i32 @_Z1gi
-; CHECK-NEXT: tail call i32 @_Z1fi
-; CHECK-NEXT: ret
+
+
+
 entry:
   %i.addr = alloca i32, align 4
   %ret = alloca i32, align 4

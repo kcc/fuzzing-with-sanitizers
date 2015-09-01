@@ -1,5 +1,5 @@
-; RUN: opt < %s -instcombine -S | FileCheck %s
-; CHECK: addrspacecast
+
+
 
 @base = internal unnamed_addr addrspace(3) global [16 x i32] zeroinitializer, align 16
 declare void @foo(i32*)

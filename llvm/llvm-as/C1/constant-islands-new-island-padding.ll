@@ -1,4 +1,4 @@
-; RUN: llc < %s -mtriple=thumbv7-apple-ios %s -o - | FileCheck %s
+
 
 @g0 = common global i32 0, align 4
 @d0 = common global double 0.000000e+00, align 8
@@ -7,11 +7,11 @@
 
 declare i32 @llvm.arm.space(i32, i32)
 
-; Check that the constant island pass moves the float constant pool entry inside
-; the function.
 
-; CHECK: .long 1067320814 @ float 1.23455596
-; CHECK: {{.*}} %do.end
+
+
+
+
 
 define i32 @testpadding(i32 %a) {
 entry:
@@ -28,13 +28,13 @@ entry:
   store float %add2, float* @f0, align 4
   br label %do.body
 
-do.body:                                          ; preds = %do.body, %entry
+do.body:                                          
   tail call void @foo20(i32 19)
   %3 = load i32, i32* @g1, align 4
   %tobool = icmp eq i32 %3, 0
   br i1 %tobool, label %do.end, label %do.body
 
-do.end:                                           ; preds = %do.body
+do.end:                                           
   %tmpcall111 = call i32 @llvm.arm.space(i32 954, i32 undef)
   ret i32 10
 }

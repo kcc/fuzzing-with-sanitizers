@@ -1,11 +1,11 @@
-; RUN: llc < %s -mtriple=x86_64-linux | FileCheck %s
 
-; This is a case where we would incorrectly conclude that LBB0_1 could only
-; be reached via fall through and would therefore omit the label.
 
-; CHECK:      jne     .LBB0_1
-; CHECK-NEXT: jnp     .LBB0_3
-; CHECK-NEXT: .LBB0_1:
+
+
+
+
+
+
 
 define void @xyz() {
 entry:

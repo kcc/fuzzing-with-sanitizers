@@ -1,66 +1,66 @@
-; Test 64-bit comparison in which the second operand is a sign-extended i32.
-;
-; RUN: llc < %s -mtriple=s390x-linux-gnu | FileCheck %s
+
+
+
 
 declare i64 @foo()
 
-; Check signed register comparison.
+
 define double @f1(double %a, double %b, i64 %i1, i32 %unext) {
-; CHECK-LABEL: f1:
-; CHECK: cgfr %r2, %r3
-; CHECK-NEXT: jl
-; CHECK: ldr %f0, %f2
-; CHECK: br %r14
+
+
+
+
+
   %i2 = sext i32 %unext to i64
   %cond = icmp slt i64 %i1, %i2
   %res = select i1 %cond, double %a, double %b
   ret double %res
 }
 
-; Check unsigned register comparison, which can't use CGFR.
+
 define double @f2(double %a, double %b, i64 %i1, i32 %unext) {
-; CHECK-LABEL: f2:
-; CHECK-NOT: cgfr
-; CHECK: br %r14
+
+
+
   %i2 = sext i32 %unext to i64
   %cond = icmp ult i64 %i1, %i2
   %res = select i1 %cond, double %a, double %b
   ret double %res
 }
 
-; Check register equality.
+
 define double @f3(double %a, double %b, i64 %i1, i32 %unext) {
-; CHECK-LABEL: f3:
-; CHECK: cgfr %r2, %r3
-; CHECK-NEXT: je
-; CHECK: ldr %f0, %f2
-; CHECK: br %r14
+
+
+
+
+
   %i2 = sext i32 %unext to i64
   %cond = icmp eq i64 %i1, %i2
   %res = select i1 %cond, double %a, double %b
   ret double %res
 }
 
-; Check register inequality.
+
 define double @f4(double %a, double %b, i64 %i1, i32 %unext) {
-; CHECK-LABEL: f4:
-; CHECK: cgfr %r2, %r3
-; CHECK-NEXT: jlh
-; CHECK: ldr %f0, %f2
-; CHECK: br %r14
+
+
+
+
+
   %i2 = sext i32 %unext to i64
   %cond = icmp ne i64 %i1, %i2
   %res = select i1 %cond, double %a, double %b
   ret double %res
 }
 
-; Check signed comparison with memory.
+
 define double @f5(double %a, double %b, i64 %i1, i32 *%ptr) {
-; CHECK-LABEL: f5:
-; CHECK: cgf %r2, 0(%r3)
-; CHECK-NEXT: jl
-; CHECK: ldr %f0, %f2
-; CHECK: br %r14
+
+
+
+
+
   %unext = load i32 , i32 *%ptr
   %i2 = sext i32 %unext to i64
   %cond = icmp slt i64 %i1, %i2
@@ -68,11 +68,11 @@ define double @f5(double %a, double %b, i64 %i1, i32 *%ptr) {
   ret double %res
 }
 
-; Check unsigned comparison with memory.
+
 define double @f6(double %a, double %b, i64 %i1, i32 *%ptr) {
-; CHECK-LABEL: f6:
-; CHECK-NOT: cgf
-; CHECK: br %r14
+
+
+
   %unext = load i32 , i32 *%ptr
   %i2 = sext i32 %unext to i64
   %cond = icmp ult i64 %i1, %i2
@@ -80,13 +80,13 @@ define double @f6(double %a, double %b, i64 %i1, i32 *%ptr) {
   ret double %res
 }
 
-; Check memory equality.
+
 define double @f7(double %a, double %b, i64 %i1, i32 *%ptr) {
-; CHECK-LABEL: f7:
-; CHECK: cgf %r2, 0(%r3)
-; CHECK-NEXT: je
-; CHECK: ldr %f0, %f2
-; CHECK: br %r14
+
+
+
+
+
   %unext = load i32 , i32 *%ptr
   %i2 = sext i32 %unext to i64
   %cond = icmp eq i64 %i1, %i2
@@ -94,13 +94,13 @@ define double @f7(double %a, double %b, i64 %i1, i32 *%ptr) {
   ret double %res
 }
 
-; Check memory inequality.
+
 define double @f8(double %a, double %b, i64 %i1, i32 *%ptr) {
-; CHECK-LABEL: f8:
-; CHECK: cgf %r2, 0(%r3)
-; CHECK-NEXT: jlh
-; CHECK: ldr %f0, %f2
-; CHECK: br %r14
+
+
+
+
+
   %unext = load i32 , i32 *%ptr
   %i2 = sext i32 %unext to i64
   %cond = icmp ne i64 %i1, %i2
@@ -108,13 +108,13 @@ define double @f8(double %a, double %b, i64 %i1, i32 *%ptr) {
   ret double %res
 }
 
-; Check the high end of the aligned CGF range.
+
 define double @f9(double %a, double %b, i64 %i1, i32 *%base) {
-; CHECK-LABEL: f9:
-; CHECK: cgf %r2, 524284(%r3)
-; CHECK-NEXT: jl
-; CHECK: ldr %f0, %f2
-; CHECK: br %r14
+
+
+
+
+
   %ptr = getelementptr i32, i32 *%base, i64 131071
   %unext = load i32 , i32 *%ptr
   %i2 = sext i32 %unext to i64
@@ -123,15 +123,15 @@ define double @f9(double %a, double %b, i64 %i1, i32 *%base) {
   ret double %res
 }
 
-; Check the next word up, which needs separate address logic.
-; Other sequences besides this one would be OK.
+
+
 define double @f10(double %a, double %b, i64 %i1, i32 *%base) {
-; CHECK-LABEL: f10:
-; CHECK: agfi %r3, 524288
-; CHECK: cgf %r2, 0(%r3)
-; CHECK-NEXT: jl
-; CHECK: ldr %f0, %f2
-; CHECK: br %r14
+
+
+
+
+
+
   %ptr = getelementptr i32, i32 *%base, i64 131072
   %unext = load i32 , i32 *%ptr
   %i2 = sext i32 %unext to i64
@@ -140,13 +140,13 @@ define double @f10(double %a, double %b, i64 %i1, i32 *%base) {
   ret double %res
 }
 
-; Check the high end of the negative aligned CGF range.
+
 define double @f11(double %a, double %b, i64 %i1, i32 *%base) {
-; CHECK-LABEL: f11:
-; CHECK: cgf %r2, -4(%r3)
-; CHECK-NEXT: jl
-; CHECK: ldr %f0, %f2
-; CHECK: br %r14
+
+
+
+
+
   %ptr = getelementptr i32, i32 *%base, i64 -1
   %unext = load i32 , i32 *%ptr
   %i2 = sext i32 %unext to i64
@@ -155,13 +155,13 @@ define double @f11(double %a, double %b, i64 %i1, i32 *%base) {
   ret double %res
 }
 
-; Check the low end of the CGF range.
+
 define double @f12(double %a, double %b, i64 %i1, i32 *%base) {
-; CHECK-LABEL: f12:
-; CHECK: cgf %r2, -524288(%r3)
-; CHECK-NEXT: jl
-; CHECK: ldr %f0, %f2
-; CHECK: br %r14
+
+
+
+
+
   %ptr = getelementptr i32, i32 *%base, i64 -131072
   %unext = load i32 , i32 *%ptr
   %i2 = sext i32 %unext to i64
@@ -170,15 +170,15 @@ define double @f12(double %a, double %b, i64 %i1, i32 *%base) {
   ret double %res
 }
 
-; Check the next word down, which needs separate address logic.
-; Other sequences besides this one would be OK.
+
+
 define double @f13(double %a, double %b, i64 %i1, i32 *%base) {
-; CHECK-LABEL: f13:
-; CHECK: agfi %r3, -524292
-; CHECK: cgf %r2, 0(%r3)
-; CHECK-NEXT: jl
-; CHECK: ldr %f0, %f2
-; CHECK: br %r14
+
+
+
+
+
+
   %ptr = getelementptr i32, i32 *%base, i64 -131073
   %unext = load i32 , i32 *%ptr
   %i2 = sext i32 %unext to i64
@@ -187,13 +187,13 @@ define double @f13(double %a, double %b, i64 %i1, i32 *%base) {
   ret double %res
 }
 
-; Check that CGF allows an index.
+
 define double @f14(double %a, double %b, i64 %i1, i64 %base, i64 %index) {
-; CHECK-LABEL: f14:
-; CHECK: cgf %r2, 524284({{%r4,%r3|%r3,%r4}})
-; CHECK-NEXT: jl
-; CHECK: ldr %f0, %f2
-; CHECK: br %r14
+
+
+
+
+
   %add1 = add i64 %base, %index
   %add2 = add i64 %add1, 524284
   %ptr = inttoptr i64 %add2 to i32 *
@@ -204,12 +204,12 @@ define double @f14(double %a, double %b, i64 %i1, i64 %base, i64 %index) {
   ret double %res
 }
 
-; Check that comparisons of spilled values can use CGF rather than CGFR.
+
 define i64 @f15(i32 *%ptr0) {
-; CHECK-LABEL: f15:
-; CHECK: brasl %r14, foo@PLT
-; CHECK: cgf {{%r[0-9]+}}, 16{{[04]}}(%r15)
-; CHECK: br %r14
+
+
+
+
   %ptr1 = getelementptr i32, i32 *%ptr0, i64 2
   %ptr2 = getelementptr i32, i32 *%ptr0, i64 4
   %ptr3 = getelementptr i32, i32 *%ptr0, i64 6
@@ -291,26 +291,26 @@ define i64 @f15(i32 *%ptr0) {
   ret i64 %sel9
 }
 
-; Check the comparison can be reversed if that allows CGFR to be used.
+
 define double @f16(double %a, double %b, i64 %i1, i32 %unext) {
-; CHECK-LABEL: f16:
-; CHECK: cgfr %r2, %r3
-; CHECK-NEXT: jh
-; CHECK: ldr %f0, %f2
-; CHECK: br %r14
+
+
+
+
+
   %i2 = sext i32 %unext to i64
   %cond = icmp slt i64 %i2, %i1
   %res = select i1 %cond, double %a, double %b
   ret double %res
 }
 
-; Likewise CGF.
+
 define double @f17(double %a, double %b, i64 %i2, i32 *%ptr) {
-; CHECK-LABEL: f17:
-; CHECK: cgf %r2, 0(%r3)
-; CHECK-NEXT: jh {{\.L.*}}
-; CHECK: ldr %f0, %f2
-; CHECK: br %r14
+
+
+
+
+
   %unext = load i32 , i32 *%ptr
   %i1 = sext i32 %unext to i64
   %cond = icmp slt i64 %i1, %i2

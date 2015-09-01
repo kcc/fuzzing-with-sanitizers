@@ -1,23 +1,23 @@
-; RUN: llc < %s | FileCheck %s
-; This is mainly a crasher for the revert in r234717.  A debug info intrinsic
-; that gets deleted can't have its bit piece expression verified after it's
-; deleted.
+
+
+
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.8.0"
 
-; CHECK: __Z3foov:
-; CHECK: retq
+
+
 
 define void @_Z3foov() {
 entry:
   br i1 undef, label %exit, label %bb
 
-bb:                                               ; preds = %entry
+bb:                                               
   call void @llvm.dbg.value(metadata i8* undef, i64 0, metadata !15, metadata !16), !dbg !17
   br label %exit
 
-exit:                                             ; preds = %bb, %entry
+exit:                                             
   ret void
 }
 

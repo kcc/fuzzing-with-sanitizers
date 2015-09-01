@@ -1,13 +1,13 @@
-; RUN: opt < %s -globalsmodref-aa -gvn -S | FileCheck %s
+
 
 @X = internal global i32 4
 
 define i32 @test_cmpxchg(i32* %P) {
-; CHECK-LABEL: @test_cmpxchg
-; CHECK-NEXT: store i32 12, i32* @X
-; CHECK-NEXT: call void @modrefX_cmpxchg()
-; CHECK-NEXT: %V = load i32, i32* @X
-; CHECK-NEXT: ret i32 %V
+
+
+
+
+
   store i32 12, i32* @X
   call void @modrefX_cmpxchg()
   %V = load i32, i32* @X
@@ -20,11 +20,11 @@ define void @modrefX_cmpxchg() {
 }
 
 define i32 @test_atomicrmw(i32* %P) {
-; CHECK-LABEL: @test_atomicrmw
-; CHECK-NEXT: store i32 12, i32* @X
-; CHECK-NEXT: call void @modrefXatomicrmw()
-; CHECK-NEXT: %V = load i32, i32* @X
-; CHECK-NEXT: ret i32 %V
+
+
+
+
+
   store i32 12, i32* @X
   call void @modrefXatomicrmw()
   %V = load i32, i32* @X

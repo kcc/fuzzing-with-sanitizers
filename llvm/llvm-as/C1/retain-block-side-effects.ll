@@ -1,14 +1,14 @@
-; RUN: opt -S -objc-arc-aa -basicaa -gvn < %s | FileCheck %s
-; rdar://10050579
 
-; objc_retainBlock stores into %repeater so the load from after the
-; call isn't forwardable from the store before the call.
 
-; CHECK: %tmp16 = call i8* @objc_retainBlock(i8* %tmp15) [[NUW:#[0-9]+]]
-; CHECK: %tmp17 = bitcast i8* %tmp16 to void ()*
-; CHECK: %tmp18 = load %struct.__block_byref_repeater*, %struct.__block_byref_repeater** %byref.forwarding, align 8
-; CHECK: %repeater12 = getelementptr inbounds %struct.__block_byref_repeater, %struct.__block_byref_repeater* %tmp18, i64 0, i32 6
-; CHECK: store void ()* %tmp17, void ()** %repeater12, align 8
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64"
 
@@ -38,5 +38,5 @@ entry:
 
 declare i8* @objc_retainBlock(i8*)
 
-; CHECK: attributes #0 = { noreturn }
-; CHECK: attributes [[NUW]] = { nounwind }
+
+

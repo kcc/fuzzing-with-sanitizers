@@ -1,6 +1,6 @@
-; RUN: llc < %s -mtriple=x86_64-apple-darwin -mcpu=corei7-avx -mattr=+avx
+
 target triple = "x86_64-unknown-linux-gnu"
-; Make sure we are not crashing on this one
+
 define void @dagco_crash() {
 entry:
   %srcval.i411.i = load <4 x i64>, <4 x i64>* undef, align 1

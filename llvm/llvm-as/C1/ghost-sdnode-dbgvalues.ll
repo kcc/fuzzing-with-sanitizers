@@ -1,34 +1,34 @@
-; REQUIRES: object-emission
 
-; RUN: llc -mtriple=x86_64-apple-macosx10.10.0 -o %t %s
 
-; Testcase generated from:
-; #include <stdint.h>
-; int foo(int a) {
-;     int b = (int16_t)a + 8;
-;     int c = (int16_t)b + 8;
-;     int d = (int16_t)c + 8;
-;     int e = (int16_t)d + 8;
-;     int f = (int16_t)e + 8;
-;     return f;
-; }
-; by emitting the IR and then manually applying mem2reg to it.
 
-; This testcase would trigger the assert commited along with it if the
-; fix of r221709 isn't applied. There is no other check except the successful
-; run of llc.
-; What happened before r221709, is that SDDbgInfo (the data structure helping
-; SelectionDAG to keep track of dbg.values) kept a map keyed by SDNode pointers.
-; This map was never purged when the SDNodes were deallocated and thus if a new
-; SDNode was allocated in the same memory, it would have an entry in the SDDbgInfo
-; map upon creation (Reallocation in the same memory can happen easily as
-; SelectionDAG uses a Recycling allocator). This behavior could turn into a
-; pathological memory consumption explosion if the DAG combiner hit the 'right'
-; allocation patterns as could be seen in PR20893.
-; By nature, this test could bitrot quite easily. If it doesn't trigger an assert
-; when run with r221709 reverted, then it really doesn't test anything anymore.
 
-; Function Attrs: nounwind ssp uwtable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define i32 @foo(i32 %a) #0 {
 entry:
   call void @llvm.dbg.value(metadata i32 %a, i64 0, metadata !16, metadata !17), !dbg !18
@@ -55,10 +55,10 @@ entry:
   ret i32 %add13, !dbg !34
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #1
 
 attributes #0 = { nounwind ssp uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

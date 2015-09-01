@@ -1,96 +1,96 @@
-; REQUIRES: object-emission
-
-; RUN: llc -split-dwarf=Enable -filetype=obj -O0 -generate-type-units -mtriple=x86_64-unknown-linux-gnu < %s \
-; RUN:     | llvm-dwarfdump - | FileCheck %s
-
-; RUN: llc -split-dwarf=Disable -filetype=obj -O0 -generate-type-units -mtriple=x86_64-unknown-linux-gnu < %s \
-; RUN:     | llvm-dwarfdump - | FileCheck --check-prefix=SINGLE %s
-
-; Test case built from:
-;int i;
-;
-;template <int *I>
-;struct S1 {};
-;
-;S1<&i> s1;
-;
-;template <int *I>
-;struct S2_1 {};
-;
-;struct S2 {
-;  S2_1<&i> s2_1;
-;};
-;
-;S2 s2;
-;
-;template <int *I>
-;struct S3_1 {};
-;
-;struct S3_2 {};
-;
-;struct S3 {
-;  S3_1<&i> s3_1;
-;  S3_2 s3_2;
-;};
-;
-;S3 s3;
-;
-;struct S4_1 {};
-;
-;template <int *T>
-;struct S4_2 {};
-;
-;struct S4 {
-;  S4_1 s4_1;
-;  S4_2<&::i> s4_2;
-;};
-;
-;S4 s4;
 
 
-; CHECK: .debug_info.dwo contents:
 
-; CHECK: DW_TAG_structure_type
-; CHECK-NEXT: DW_AT_name {{.*}}"S1<&i>"
 
-; CHECK: DW_TAG_structure_type
-; CHECK-NEXT: DW_AT_name {{.*}}"S2"
-; CHECK: DW_TAG_structure_type
-; CHECK-NEXT: DW_AT_name {{.*}}"S2_1<&i>"
 
-; CHECK: DW_TAG_structure_type
-; CHECK-NEXT: DW_AT_name {{.*}}"S3"
-; CHECK: DW_TAG_structure_type
-; CHECK-NEXT: DW_AT_name {{.*}}"S3_1<&i>"
-; CHECK: DW_TAG_structure_type
-; CHECK-NEXT: DW_AT_declaration
-; CHECK-NEXT: DW_AT_signature
 
-; CHECK: DW_TAG_structure_type
-; CHECK-NEXT: DW_AT_name {{.*}}"S4"
-; CHECK: DW_TAG_structure_type
-; CHECK-NEXT: DW_AT_declaration
-; CHECK-NEXT: DW_AT_signature
-; CHECK: DW_TAG_structure_type
-; CHECK-NEXT: DW_AT_name {{.*}}"S4_2<&i>"
 
-; SINGLE: .debug_info contents:
 
-; SINGLE: DW_TAG_structure_type
-; SINGLE-NEXT: DW_AT_declaration
-; SINGLE-NEXT: DW_AT_signature
 
-; SINGLE: DW_TAG_structure_type
-; SINGLE-NEXT: DW_AT_declaration
-; SINGLE-NEXT: DW_AT_signature
 
-; SINGLE: DW_TAG_structure_type
-; SINGLE-NEXT: DW_AT_declaration
-; SINGLE-NEXT: DW_AT_signature
 
-; SINGLE: DW_TAG_structure_type
-; SINGLE-NEXT: DW_AT_declaration
-; SINGLE-NEXT: DW_AT_signature
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %struct.S1 = type { i8 }
 %struct.S2 = type { %struct.S2_1 }

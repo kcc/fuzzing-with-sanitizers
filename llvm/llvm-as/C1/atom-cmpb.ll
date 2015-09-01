@@ -1,13 +1,13 @@
-; RUN: llc < %s -march=x86 -mcpu=atom | FileCheck %s
-; CHECK:        movl
-; CHECK:        movb
-; CHECK:        movb
-; CHECK:        cmpb
-; CHECK:        notb
-; CHECK:        notb
 
-; Test for checking of cancel conversion to cmp32 in Atom case 
-; in function 'X86TargetLowering::EmitCmp'
+
+
+
+
+
+
+
+
+
  
 define i8 @run_test(i8* %rd_p) {
 entry:

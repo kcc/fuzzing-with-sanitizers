@@ -1,13 +1,13 @@
-; We previously had a case where we would put results from a no-args call in
-; its own stratified set. This would make cases like the one in @test say that
-; nothing (except %Escapes and %Arg) can alias
 
-; RUN: opt < %s -cfl-aa -aa-eval -print-may-aliases -disable-output 2>&1 | FileCheck %s
 
-; CHECK:     Function: test
-; CHECK:     MayAlias: i8* %Arg, i8* %Escapes
-; CHECK:     MayAlias: i8* %Arg, i8* %Retrieved
-; CHECK:     MayAlias: i8* %Escapes, i8* %Retrieved
+
+
+
+
+
+
+
+
 define void @test(i8* %Arg) {
   %Noalias = alloca i8
   %Escapes = alloca i8

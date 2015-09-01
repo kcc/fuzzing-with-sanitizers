@@ -1,16 +1,16 @@
-; RUN: llc -mtriple=x86_64-apple-darwin %s -o %t -filetype=obj
-; RUN: llvm-dwarfdump -debug-dump=info %t | FileCheck %s
 
-; test that the DW_AT_specification is a back edge in the file.
 
-; Skip the definition of zed(foo*)
-; CHECK: DW_TAG_subprogram
-; CHECK: DW_TAG_class_type
-; CHECK:   DW_TAG_subprogram
-; CHECK:     DW_AT_linkage_name {{.*}} "_ZN3foo3barEv"
-; CHECK: DW_TAG_subprogram
-; CHECK-NOT: DW_TAG
-; CHECK:   DW_AT_specification {{.*}} "_ZN3foo3barEv"
+
+
+
+
+
+
+
+
+
+
+
 
 %struct.foo = type { i8 }
 

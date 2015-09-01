@@ -1,9 +1,9 @@
-; RUN: llc -mtriple=arm-eabi -print-machineinstrs=tailduplication -tail-dup-size=100 \
-; RUN:      -enable-tail-merge=false -disable-cgp %s -o /dev/null 2>&1 \
-; RUN:	| FileCheck %s
 
-; CHECK: Machine code for function test0:
-; CHECK: Successors according to CFG: BB#1(4) BB#2(124)
+
+
+
+
+
 
 define void @test0(i32 %a, i32 %b, i32* %c, i32* %d) {
 entry:
@@ -29,8 +29,8 @@ B4:
 
 !0 = !{!"branch_weights", i32 4, i32 124}
 
-; CHECK: Machine code for function test1:
-; CHECK: Successors according to CFG: BB#1(8) BB#2(248)
+
+
 
 @g0 = common global i32 0, align 4
 

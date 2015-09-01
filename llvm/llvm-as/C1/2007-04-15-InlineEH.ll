@@ -1,5 +1,5 @@
-; RUN: opt < %s -inline -S | not grep "invoke void asm"
-; PR1335
+
+
 
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64"
 target triple = "i686-pc-linux-gnu"
@@ -17,22 +17,22 @@ entry:
 	invoke void @gnat__os_lib__getenv( %struct.gnat__strings__string_access* null )
 			to label %invcont unwind label %cleanup144
 
-invcont:		; preds = %entry
+invcont:		
 	invoke void @ada__calendar__delays__delay_for( )
 			to label %invcont64 unwind label %cleanup144
 
-invcont64:		; preds = %invcont
+invcont64:		
 	invoke void @ada__calendar__clock( )
 			to label %invcont65 unwind label %cleanup144
 
-invcont65:		; preds = %invcont64
+invcont65:		
 	invoke void @bc__support__high_resolution_time__clock( )
 			to label %invcont67 unwind label %cleanup144
 
-invcont67:		; preds = %invcont65
+invcont67:		
 	ret void
 
-cleanup144:		; preds = %invcont65, %invcont64, %invcont, %entry
+cleanup144:		
         %exn = landingpad {i8*, i32}
                  cleanup
 	resume { i8*, i32 } %exn

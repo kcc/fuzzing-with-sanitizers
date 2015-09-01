@@ -1,17 +1,17 @@
-; RUN: llc < %s -mcpu=cortex-a8 -verify-regalloc
+
 target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:32:64-v128:32:128-a0:0:32-n32-S32"
 target triple = "thumbv7-apple-ios"
 
-; This test calls shrinkToUses with an early-clobber redefined live range during
-; spilling.
-;
-;   Shrink: %vreg47,1.158257e-02 = [384r,400e:0)[400e,420r:1)  0@384r 1@400e
-;
-; The early-clobber instruction is an str:
-;
-;   %vreg12<earlyclobber,def> = t2STR_PRE %vreg6, %vreg12, 32, pred:14, pred:%noreg
-;
-; This tests that shrinkToUses handles the EC redef correctly.
+
+
+
+
+
+
+
+
+
+
 
 %struct.Transform_Struct.0.11.12.17.43.46.56.58.60 = type { [4 x [4 x double]] }
 

@@ -1,5 +1,5 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv4 < %s | FileCheck %s
-; CHECK: combine(r{{[0-9]+}}, r{{[0-9]+}})
+
+
 
 @j = external global i32
 @k = external global i64

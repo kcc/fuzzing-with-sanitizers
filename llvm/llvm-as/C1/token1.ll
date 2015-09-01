@@ -1,4 +1,4 @@
-; RUN: not llvm-as %s -o /dev/null 2>&1 | FileCheck %s
+
 
 define void @f(token %A, token %B) {
 entry:
@@ -6,6 +6,6 @@ entry:
 
 bb:
   %phi = phi token [ %A, %bb ], [ %B, %entry]
-; CHECK: PHI nodes cannot have token type!
+
   br label %bb
 }

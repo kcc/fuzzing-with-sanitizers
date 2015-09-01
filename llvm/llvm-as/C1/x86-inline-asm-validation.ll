@@ -1,4 +1,4 @@
-; RUN: llc -mtriple i686-gnu -filetype asm -o - %s 2>&1 | FileCheck %s
+
 
 define void @test_L_ff() {
 entry:
@@ -6,7 +6,7 @@ entry:
   ret void
 }
 
-; CHECK-NOT: error: invalid operand for inline asm constraint 'L'
+
 
 define void @test_L_ffff() {
 entry:
@@ -14,7 +14,7 @@ entry:
   ret void
 }
 
-; CHECK-NOT: error: invalid operand for inline asm constraint 'L'
+
 
 define void @test_M_1() {
 entry:
@@ -22,7 +22,7 @@ entry:
   ret void
 }
 
-; CHECK-NOT: error: invalid operand for inline asm constraint 'M'
+
 
 define void @test_O_64() {
 entry:
@@ -30,5 +30,5 @@ entry:
   ret void
 }
 
-; CHECK-NOT: error: invalid operand for inline asm constraint 'O'
+
 

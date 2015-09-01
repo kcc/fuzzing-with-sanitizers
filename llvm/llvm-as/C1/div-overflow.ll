@@ -1,8 +1,8 @@
-; RUN: opt < %s -scalar-evolution -analyze | FileCheck %s
 
-; CHECK: -->  ((-128 * %a) /u -128)
 
-; Don't let ScalarEvolution fold this div away.
+
+
+
 
 define i8 @foo(i8 %a) {
         %t0 = shl i8 %a, 7

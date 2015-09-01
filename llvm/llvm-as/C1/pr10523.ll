@@ -1,6 +1,6 @@
-; RUN: llc < %s -march=x86-64 -mattr=+sse2,+sse4.1
 
-; No check in a crash test
+
+
 
 define void @autogen_129334_5000() {
 BB:

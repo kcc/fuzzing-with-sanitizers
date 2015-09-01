@@ -1,7 +1,7 @@
-; RUN: llc -mtriple=thumbv7-apple-ios -mcpu=cortex-a8 < %s
 
-; rdar://10196296
-; ARM target specific dag combine created a cycle in DAG.
+
+
+
 
 define void @t() nounwind ssp {
   %1 = load i64, i64* undef, align 4
@@ -16,15 +16,15 @@ define void @t() nounwind ssp {
     i64 5, label %7
   ]
 
-; <label>:6                                       ; preds = %0
+
   unreachable
 
-; <label>:7                                       ; preds = %0
+
   unreachable
 
-; <label>:8                                       ; preds = %0
+
   unreachable
 
-; <label>:9                                       ; preds = %0, %0
+
   ret void
 }

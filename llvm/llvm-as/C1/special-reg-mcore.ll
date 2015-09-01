@@ -1,27 +1,27 @@
-; RUN: llc < %s -mtriple=thumb-none-eabi -mcpu=cortex-m4 2>&1 | FileCheck %s --check-prefix=MCORE
-; RUN: not llc < %s -mtriple=thumb-none-eabi -mcpu=cortex-m3 2>&1 | FileCheck %s --check-prefix=M3CORE
-; RUN: not llc < %s -mtriple=arm-none-eabi -mcpu=cortex-a8 2>&1 | FileCheck %s --check-prefix=ACORE
 
-; ACORE: LLVM ERROR: Invalid register name "control".
-; M3CORE: LLVM ERROR: Invalid register name "xpsr_nzcvqg".
+
+
+
+
+
 
 define i32 @read_mclass_registers() nounwind {
 entry:
-  ; MCORE-LABEL: read_mclass_registers:
-  ; MCORE:   mrs r0, apsr
-  ; MCORE:   mrs r1, iapsr
-  ; MCORE:   mrs r1, eapsr
-  ; MCORE:   mrs r1, xpsr
-  ; MCORE:   mrs r1, ipsr
-  ; MCORE:   mrs r1, epsr
-  ; MCORE:   mrs r1, iepsr
-  ; MCORE:   mrs r1, msp
-  ; MCORE:   mrs r1, psp
-  ; MCORE:   mrs r1, primask
-  ; MCORE:   mrs r1, basepri
-  ; MCORE:   mrs r1, basepri_max
-  ; MCORE:   mrs r1, faultmask
-  ; MCORE:   mrs r1, control
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
   %0 = call i32 @llvm.read_register.i32(metadata !0)
   %1 = call i32 @llvm.read_register.i32(metadata !4)
@@ -55,33 +55,33 @@ entry:
 
 define void @write_mclass_registers(i32 %x) nounwind {
 entry:
-  ; MCORE-LABEL: write_mclass_registers:
-  ; MCORE:   msr apsr_nzcvqg, r0
-  ; MCORE:   msr apsr_nzcvq, r0
-  ; MCORE:   msr apsr_g, r0
-  ; MCORE:   msr apsr_nzcvqg, r0
-  ; MCORE:   msr iapsr_nzcvqg, r0
-  ; MCORE:   msr iapsr_nzcvq, r0
-  ; MCORE:   msr iapsr_g, r0
-  ; MCORE:   msr iapsr_nzcvqg, r0
-  ; MCORE:   msr eapsr_nzcvqg, r0
-  ; MCORE:   msr eapsr_nzcvq, r0
-  ; MCORE:   msr eapsr_g, r0
-  ; MCORE:   msr eapsr_nzcvqg, r0
-  ; MCORE:   msr xpsr_nzcvqg, r0
-  ; MCORE:   msr xpsr_nzcvq, r0
-  ; MCORE:   msr xpsr_g, r0
-  ; MCORE:   msr xpsr_nzcvqg, r0
-  ; MCORE:   msr ipsr, r0
-  ; MCORE:   msr epsr, r0
-  ; MCORE:   msr iepsr, r0
-  ; MCORE:   msr msp, r0
-  ; MCORE:   msr psp, r0
-  ; MCORE:   msr primask, r0
-  ; MCORE:   msr basepri, r0
-  ; MCORE:   msr basepri_max, r0
-  ; MCORE:   msr faultmask, r0
-  ; MCORE:   msr control, r0
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
   call void @llvm.write_register.i32(metadata !0, i32 %x)
   call void @llvm.write_register.i32(metadata !1, i32 %x)

@@ -1,8 +1,8 @@
-; RUN: opt -S -early-cse < %s | FileCheck %s
+
 target datalayout = "E-m:e-i64:64-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
 
-; Function Attrs: nounwind
+
 define i64 @f(i64 %x) #0 {
 entry:
   %0 = call i64 @llvm.read_register.i64(metadata !0)
@@ -12,14 +12,14 @@ entry:
   ret i64 %add
 }
 
-; CHECK-LABEL: @f
-; CHECK: call i64 @llvm.read_register.i64
-; CHECK: call i64 @llvm.read_register.i64
 
-; Function Attrs: nounwind readnone
+
+
+
+
 declare i64 @llvm.read_register.i64(metadata) #1
 
-; Function Attrs: nounwind
+
 declare void @llvm.write_register.i64(metadata, i64) #2
 
 declare void @foo(...)

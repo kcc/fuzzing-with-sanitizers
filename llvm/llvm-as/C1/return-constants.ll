@@ -1,20 +1,20 @@
-; RUN: opt < %s -ipconstprop -S > %t
-;; Check that the 21 constants got propagated properly
-; RUN: cat %t | grep "%M = add i32 21, 21"
-;; Check that the second return values didn't get propagated
-; RUN: cat %t | grep "%N = add i32 %B, %D"
+
+
+
+
+
 
 %0 = type { i32, i32 }
 
 define internal %0 @foo(i1 %Q) {
   br i1 %Q, label %T, label %F
 
-T:                                                ; preds = %0
+T:                                                
   %mrv = insertvalue %0 undef, i32 21, 0
   %mrv1 = insertvalue %0 %mrv, i32 22, 1
   ret %0 %mrv1
 
-F:                                                ; preds = %0
+F:                                                
   %mrv2 = insertvalue %0 undef, i32 21, 0
   %mrv3 = insertvalue %0 %mrv2, i32 23, 1
   ret %0 %mrv3
@@ -24,11 +24,11 @@ define internal %0 @bar(i1 %Q) {
   %A = insertvalue %0 undef, i32 21, 0
   br i1 %Q, label %T, label %F
 
-T:                                                ; preds = %0
+T:                                                
   %B = insertvalue %0 %A, i32 22, 1
   ret %0 %B
 
-F:                                                ; preds = %0
+F:                                                
   %C = insertvalue %0 %A, i32 23, 1
   ret %0 %C
 }

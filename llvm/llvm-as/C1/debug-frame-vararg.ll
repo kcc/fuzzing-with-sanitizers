@@ -1,25 +1,25 @@
-; RUN: llc -mtriple arm-unknown-linux-gnueabi -filetype asm -o - %s | FileCheck %s --check-prefix=CHECK-FP
-; RUN: llc -mtriple arm-unknown-linux-gnueabi -filetype asm -o - %s -disable-fp-elim | FileCheck %s --check-prefix=CHECK-FP-ELIM
-; RUN: llc -mtriple thumb-unknown-linux-gnueabi -filetype asm -o - %s | FileCheck %s --check-prefix=CHECK-THUMB-FP
-; RUN: llc -mtriple thumb-unknown-linux-gnueabi -filetype asm -o - %s -disable-fp-elim | FileCheck %s --check-prefix=CHECK-THUMB-FP-ELIM
 
-; Tests that the initial space allocated to the varargs on the stack is
-; taken into account in the .cfi_ directives.
 
-; Generated from the C program:
-; #include <stdarg.h>
-;
-; extern int foo(int);
-;
-; int sum(int count, ...) {
-;  va_list vl;
-;  va_start(vl, count);
-;  int sum = 0;
-;  for (int i = 0; i < count; i++) {
-;   sum += foo(va_arg(vl, int));
-;  }
-;  va_end(vl);
-; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 !llvm.dbg.cu = !{!0}
 !llvm.module.flags = !{!9, !10}
@@ -60,53 +60,53 @@
 !32 = !DILocation(line: 12, scope: !4)
 !33 = !DILocation(line: 13, scope: !4)
 
-; CHECK-FP-LABEL: sum
-; CHECK-FP: .cfi_startproc
-; CHECK-FP: sub    sp, sp, #12
-; CHECK-FP: .cfi_def_cfa_offset 12
-; CHECK-FP: push   {r4, lr}
-; CHECK-FP: .cfi_def_cfa_offset 20
-; CHECK-FP: .cfi_offset lr, -16
-; CHECK-FP: .cfi_offset r4, -20
-; CHECK-FP: sub    sp, sp, #4
-; CHECK-FP: .cfi_def_cfa_offset 24
 
-; CHECK-FP-ELIM-LABEL: sum
-; CHECK-FP-ELIM: .cfi_startproc
-; CHECK-FP-ELIM: sub    sp, sp, #12
-; CHECK-FP-ELIM: .cfi_def_cfa_offset 12
-; CHECK-FP-ELIM: push   {r4, r10, r11, lr}
-; CHECK-FP-ELIM: .cfi_def_cfa_offset 28
-; CHECK-FP-ELIM: .cfi_offset lr, -16
-; CHECK-FP-ELIM: .cfi_offset r11, -20
-; CHECK-FP-ELIM: .cfi_offset r10, -24
-; CHECK-FP-ELIM: .cfi_offset r4, -28
-; CHECK-FP-ELIM: add    r11, sp, #8
-; CHECK-FP-ELIM: .cfi_def_cfa r11, 20
 
-; CHECK-THUMB-FP-LABEL: sum
-; CHECK-THUMB-FP: .cfi_startproc
-; CHECK-THUMB-FP: sub    sp, #12
-; CHECK-THUMB-FP: .cfi_def_cfa_offset 12
-; CHECK-THUMB-FP: push   {r4, lr}
-; CHECK-THUMB-FP: .cfi_def_cfa_offset 20
-; CHECK-THUMB-FP: .cfi_offset lr, -16
-; CHECK-THUMB-FP: .cfi_offset r4, -20
-; CHECK-THUMB-FP: sub    sp, #4
-; CHECK-THUMB-FP: .cfi_def_cfa_offset 24
 
-; CHECK-THUMB-FP-ELIM-LABEL: sum
-; CHECK-THUMB-FP-ELIM: .cfi_startproc
-; CHECK-THUMB-FP-ELIM: sub    sp, #12
-; CHECK-THUMB-FP-ELIM: .cfi_def_cfa_offset 12
-; CHECK-THUMB-FP-ELIM: push   {r4, r6, r7, lr}
-; CHECK-THUMB-FP-ELIM: .cfi_def_cfa_offset 28
-; CHECK-THUMB-FP-ELIM: .cfi_offset lr, -16
-; CHECK-THUMB-FP-ELIM: .cfi_offset r7, -20
-; CHECK-THUMB-FP-ELIM: .cfi_offset r6, -24
-; CHECK-THUMB-FP-ELIM: .cfi_offset r4, -28
-; CHECK-THUMB-FP-ELIM: add    r7, sp, #8
-; CHECK-THUMB-FP-ELIM: .cfi_def_cfa r7, 20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define i32 @sum(i32 %count, ...) {
 entry:
@@ -116,7 +116,7 @@ entry:
   %cmp4 = icmp sgt i32 %count, 0
   br i1 %cmp4, label %for.body, label %for.end
 
-for.body:                                         ; preds = %entry, %for.body
+for.body:                                         
   %i.05 = phi i32 [ %inc, %for.body ], [ 0, %entry ]
   %ap.cur = load i8*, i8** %vl, align 4
   %ap.next = getelementptr i8, i8* %ap.cur, i32 4
@@ -128,7 +128,7 @@ for.body:                                         ; preds = %entry, %for.body
   %exitcond = icmp eq i32 %inc, %count
   br i1 %exitcond, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   call void @llvm.va_end(i8* %vl1)
   ret i32 undef
 }

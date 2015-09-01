@@ -1,14 +1,14 @@
-; RUN: llc -march=amdgcn -mcpu=SI < %s | FileCheck %s
-; RUN: llc -march=amdgcn -mcpu=tonga < %s | FileCheck %s
 
-; These tests check that the compiler won't crash when it needs to spill
-; SGPRs.
 
-; CHECK-LABEL: {{^}}main:
-; CHECK: s_wqm
-; Writing to M0 from an SMRD instruction will hang the GPU.
-; CHECK-NOT: s_buffer_load_dword m0
-; CHECK: s_endpgm
+
+
+
+
+
+
+
+
+
 @ddxy_lds = external addrspace(3) global [64 x i32]
 
 define void @main([17 x <16 x i8>] addrspace(2)* byval, [32 x <16 x i8>] addrspace(2)* byval, [16 x <32 x i8>] addrspace(2)* byval, float inreg, i32 inreg, <2 x i32>, <2 x i32>, <2 x i32>, <3 x i32>, <2 x i32>, <2 x i32>, <2 x i32>, float, float, float, float, float, float, float, float, float) #0 {
@@ -231,7 +231,7 @@ main_body:
   %224 = insertelement <8 x i32> %223, i32 %220, i32 3
   br label %LOOP
 
-LOOP:                                             ; preds = %ENDIF, %main_body
+LOOP:                                             
   %temp24.0 = phi float [ 1.000000e+00, %main_body ], [ %258, %ENDIF ]
   %temp28.0 = phi float [ %211, %main_body ], [ %253, %ENDIF ]
   %temp29.0 = phi float [ %213, %main_body ], [ %255, %ENDIF ]
@@ -243,7 +243,7 @@ LOOP:                                             ; preds = %ENDIF, %main_body
   %229 = icmp ne i32 %228, 0
   br i1 %229, label %IF, label %ENDIF
 
-IF:                                               ; preds = %LOOP
+IF:                                               
   %230 = bitcast float %136 to i32
   %231 = bitcast float %182 to i32
   %232 = bitcast float %137 to i32
@@ -254,7 +254,7 @@ IF:                                               ; preds = %LOOP
   %237 = insertelement <8 x i32> %236, i32 %233, i32 3
   br label %LOOP65
 
-ENDIF:                                            ; preds = %LOOP
+ENDIF:                                            
   %238 = bitcast float %temp28.0 to i32
   %239 = bitcast float %temp29.0 to i32
   %240 = insertelement <8 x i32> %224, i32 %238, i32 4
@@ -278,7 +278,7 @@ ENDIF:                                            ; preds = %LOOP
   %258 = fadd float %temp24.0, 1.000000e+00
   br label %LOOP
 
-LOOP65:                                           ; preds = %ENDIF66, %IF
+LOOP65:                                           
   %temp24.1 = phi float [ 0.000000e+00, %IF ], [ %610, %ENDIF66 ]
   %temp28.1 = phi float [ %temp28.0, %IF ], [ %605, %ENDIF66 ]
   %temp29.1 = phi float [ %temp29.0, %IF ], [ %607, %ENDIF66 ]
@@ -291,7 +291,7 @@ LOOP65:                                           ; preds = %ENDIF66, %IF
   %263 = icmp ne i32 %262, 0
   br i1 %263, label %IF67, label %ENDIF66
 
-IF67:                                             ; preds = %LOOP65
+IF67:                                             
   %264 = bitcast float %136 to i32
   %265 = bitcast float %182 to i32
   %266 = bitcast float %137 to i32
@@ -617,7 +617,7 @@ IF67:                                             ; preds = %LOOP65
   call void @llvm.SI.export(i32 15, i32 1, i32 1, i32 0, i32 1, float %583, float %585, float %583, float %585)
   ret void
 
-ENDIF66:                                          ; preds = %LOOP65
+ENDIF66:                                          
   %586 = bitcast float %temp28.1 to i32
   %587 = bitcast float %temp29.1 to i32
   %588 = insertelement <8 x i32> %237, i32 %586, i32 4
@@ -647,37 +647,37 @@ ENDIF66:                                          ; preds = %LOOP65
   br label %LOOP65
 }
 
-; Function Attrs: nounwind readnone
+
 declare float @llvm.SI.load.const(<16 x i8>, i32) #1
 
-; Function Attrs: nounwind readnone
+
 declare float @llvm.SI.fs.interp(i32, i32, i32, <2 x i32>) #1
 
-; Function Attrs: readnone
+
 declare i32 @llvm.SI.tid() #2
 
-; Function Attrs: readonly
+
 declare float @ceil(float) #3
 
-; Function Attrs: readnone
+
 declare float @llvm.AMDGPU.rsq.f32(float) #2
 
-; Function Attrs: nounwind readnone
+
 declare <4 x float> @llvm.SI.sampled.v8i32(<8 x i32>, <32 x i8>, <16 x i8>, i32) #1
 
-; Function Attrs: readnone
+
 declare <4 x float> @llvm.AMDGPU.cube(<4 x float>) #2
 
-; Function Attrs: readnone
+
 declare float @fabs(float) #2
 
-; Function Attrs: nounwind readnone
+
 declare <4 x float> @llvm.SI.sample.v4i32(<4 x i32>, <32 x i8>, <16 x i8>, i32) #1
 
-; Function Attrs: nounwind readonly
+
 declare float @llvm.pow.f32(float, float) #4
 
-; Function Attrs: nounwind readnone
+
 declare i32 @llvm.SI.packf16(float, float) #1
 
 declare void @llvm.SI.export(i32, i32, i32, i32, i32, float, float, float, float)
@@ -690,8 +690,8 @@ attributes #4 = { nounwind readonly }
 
 !0 = !{!"const", null, i32 1}
 
-; CHECK-LABEL: {{^}}main1:
-; CHECK: s_endpgm
+
+
 define void @main1([17 x <16 x i8>] addrspace(2)* byval, [32 x <16 x i8>] addrspace(2)* byval, [16 x <32 x i8>] addrspace(2)* byval, float inreg, i32 inreg, <2 x i32>, <2 x i32>, <2 x i32>, <3 x i32>, <2 x i32>, <2 x i32>, <2 x i32>, float, float, float, float, float, float, float, float, float) #0 {
 main_body:
   %21 = getelementptr [17 x <16 x i8>], [17 x <16 x i8>] addrspace(2)* %0, i64 0, i32 0
@@ -956,7 +956,7 @@ main_body:
   %279 = fmul float %263, %276
   br label %LOOP
 
-LOOP:                                             ; preds = %LOOP, %main_body
+LOOP:                                             
   %temp144.0 = phi float [ 1.000000e+00, %main_body ], [ %292, %LOOP ]
   %temp168.0 = phi float [ %176, %main_body ], [ %288, %LOOP ]
   %temp169.0 = phi float [ %177, %main_body ], [ %289, %LOOP ]
@@ -981,7 +981,7 @@ LOOP:                                             ; preds = %LOOP, %main_body
   %297 = icmp ne i32 %296, 0
   br i1 %297, label %IF189, label %LOOP
 
-IF189:                                            ; preds = %LOOP
+IF189:                                            
   %298 = extractelement <4 x float> %286, i32 0
   %299 = extractelement <4 x float> %286, i32 1
   %300 = extractelement <4 x float> %286, i32 2
@@ -1160,13 +1160,13 @@ IF189:                                            ; preds = %LOOP
   %469 = icmp ne i32 %468, 0
   br i1 %469, label %IF198, label %ENDIF197
 
-IF198:                                            ; preds = %IF189
+IF198:                                            
   %470 = fsub float -0.000000e+00, %462
   %471 = fsub float -0.000000e+00, %463
   %472 = fsub float -0.000000e+00, %464
   br label %ENDIF197
 
-ENDIF197:                                         ; preds = %IF189, %IF198
+ENDIF197:                                         
   %temp14.0 = phi float [ %472, %IF198 ], [ %464, %IF189 ]
   %temp13.0 = phi float [ %471, %IF198 ], [ %463, %IF189 ]
   %temp12.0 = phi float [ %470, %IF198 ], [ %462, %IF189 ]
@@ -1288,7 +1288,7 @@ ENDIF197:                                         ; preds = %IF189, %IF198
   %588 = icmp ne i32 %587, 0
   br i1 %588, label %ENDIF200, label %ELSE202
 
-ELSE202:                                          ; preds = %ENDIF197
+ELSE202:                                          
   %589 = fcmp olt float %565, %82
   %590 = sext i1 %589 to i32
   %591 = bitcast i32 %590 to float
@@ -1296,7 +1296,7 @@ ELSE202:                                          ; preds = %ENDIF197
   %593 = icmp ne i32 %592, 0
   br i1 %593, label %ENDIF200, label %ELSE205
 
-ENDIF200:                                         ; preds = %ELSE205, %ELSE202, %ENDIF197
+ENDIF200:                                         
   %temp80.0 = phi float [ %581, %ENDIF197 ], [ %.226, %ELSE205 ], [ %582, %ELSE202 ]
   %temp88.0 = phi float [ %122, %ENDIF197 ], [ %.227, %ELSE205 ], [ %120, %ELSE202 ]
   %temp89.0 = phi float [ %123, %ENDIF197 ], [ %.228, %ELSE205 ], [ %121, %ELSE202 ]
@@ -1309,7 +1309,7 @@ ENDIF200:                                         ; preds = %ELSE205, %ELSE202, 
   %598 = icmp ne i32 %597, 0
   br i1 %598, label %ENDIF209, label %ELSE211
 
-ELSE205:                                          ; preds = %ELSE202
+ELSE205:                                          
   %599 = fcmp olt float %565, %81
   %600 = sext i1 %599 to i32
   %601 = bitcast i32 %600 to float
@@ -1320,7 +1320,7 @@ ELSE205:                                          ; preds = %ELSE202
   %.228 = select i1 %603, float %119, float %117
   br label %ENDIF200
 
-ELSE211:                                          ; preds = %ENDIF200
+ELSE211:                                          
   %604 = fcmp olt float %565, %82
   %605 = sext i1 %604 to i32
   %606 = bitcast i32 %605 to float
@@ -1328,7 +1328,7 @@ ELSE211:                                          ; preds = %ENDIF200
   %608 = icmp ne i32 %607, 0
   br i1 %608, label %ENDIF209, label %ELSE214
 
-ENDIF209:                                         ; preds = %ELSE214, %ELSE211, %ENDIF200
+ENDIF209:                                         
   %temp52.0 = phi float [ %108, %ENDIF200 ], [ %100, %ELSE214 ], [ %104, %ELSE211 ]
   %temp53.0 = phi float [ %109, %ENDIF200 ], [ %101, %ELSE214 ], [ %105, %ELSE211 ]
   %temp54.0 = phi float [ %110, %ENDIF200 ], [ %102, %ELSE214 ], [ %106, %ELSE211 ]
@@ -1530,7 +1530,7 @@ ENDIF209:                                         ; preds = %ELSE214, %ELSE211, 
   call void @llvm.SI.export(i32 15, i32 1, i32 1, i32 0, i32 1, float %794, float %796, float %794, float %796)
   ret void
 
-ELSE214:                                          ; preds = %ELSE211
+ELSE214:                                          
   %797 = fcmp olt float %565, %81
   %798 = sext i1 %797 to i32
   %799 = bitcast i32 %798 to float
@@ -1543,22 +1543,22 @@ ELSE214:                                          ; preds = %ELSE211
   br label %ENDIF209
 }
 
-; Function Attrs: readnone
+
 declare float @llvm.AMDIL.clamp.(float, float, float) #2
 
-; Function Attrs: nounwind readnone
+
 declare <4 x float> @llvm.SI.sample.v2i32(<2 x i32>, <32 x i8>, <16 x i8>, i32) #1
 
-; Function Attrs: readnone
+
 declare float @llvm.AMDGPU.lrp(float, float, float) #2
 
-; Function Attrs: nounwind readnone
+
 declare <4 x float> @llvm.SI.samplel.v4i32(<4 x i32>, <32 x i8>, <16 x i8>, i32) #1
 
-; Function Attrs: readnone
+
 declare float @llvm.AMDGPU.cndlt(float, float, float) #2
 
-; Function Attrs: readnone
+
 declare float @llvm.AMDIL.exp.(float) #2
 
 attributes #0 = { "ShaderType"="0" }

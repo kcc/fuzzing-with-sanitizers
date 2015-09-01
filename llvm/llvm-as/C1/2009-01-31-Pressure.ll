@@ -1,5 +1,5 @@
-; RUN: opt < %s -instcombine -S | grep "%B = add i8 %b, %x"
-; PR2698
+
+
 
 declare void @use1(i1)
 declare void @use8(i8)

@@ -1,6 +1,6 @@
-; RUN: llc < %s -mtriple=thumbv7-apple-darwin10 -relocation-model=pic -disable-fp-elim -mcpu=cortex-a8
 
-; rdar://9117613
+
+
 
 %struct.mo = type { i32, %struct.mo_pops* }
 %struct.mo_pops = type { void (%struct.mo*)*, void (%struct.mo*)*, i32 (%struct.mo*, i32*, i32)*, i32 (%struct.mo*)*, i32 (%struct.mo*, i64, i32, i32, i32*, i64, i32)*, i32 (%struct.mo*, i64, i32, i64*, i32*, i32, i32, i32)*, i32 (%struct.mo*, i64, i32)*, i32 (%struct.mo*, i64, i64, i32)*, i32 (%struct.mo*, i64, i64, i32)*, i32 (%struct.mo*, i32)*, i32 (%struct.mo*)*, i32 (%struct.mo*, i32)*, i8* }
@@ -11,10 +11,10 @@ define internal fastcc i32 @t(i32* %vp, i32 %withfsize, i64 %filesize) nounwind 
 entry:
   br i1 undef, label %bb1, label %bb
 
-bb:                                               ; preds = %entry
+bb:                                               
   unreachable
 
-bb1:                                              ; preds = %entry
+bb1:                                              
   %0 = call %struct.ui* @vn_pp_to_ui(i32* undef) nounwind
   call void @llvm.memset.p0i8.i32(i8* undef, i8 0, i32 40, i32 4, i1 false)
   %1 = getelementptr inbounds %struct.ui, %struct.ui* %0, i32 0, i32 0
@@ -24,17 +24,17 @@ bb1:                                              ; preds = %entry
   %4 = call i32 @mo_create_nnm(%struct.mo* undef, i64 %3, i32** undef) nounwind
   br i1 undef, label %bb3, label %bb2
 
-bb2:                                              ; preds = %bb1
+bb2:                                              
   unreachable
 
-bb3:                                              ; preds = %bb1
+bb3:                                              
   br i1 undef, label %bb4, label %bb6
 
-bb4:                                              ; preds = %bb3
+bb4:                                              
   %5 = call i32 @vn_size(i32* %vp, i64* %2, i32* undef) nounwind
   unreachable
 
-bb6:                                              ; preds = %bb3
+bb6:                                              
   ret i32 0
 }
 

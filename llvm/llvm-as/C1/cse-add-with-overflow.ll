@@ -1,17 +1,17 @@
-; RUN: llc < %s -mtriple=x86_64-darwin -mcpu=generic | FileCheck %s
-; XFAIL: *
-; rdar:15661073 simple example of redundant adds
-;
-; MachineCSE should coalesce trivial subregister copies.
-;
-; The extra movl+addl should be removed during MachineCSE.
-; CHECK-LABEL: redundantadd
-; CHECK: cmpq
-; CHECK: movq
-; CHECK-NOT: movl
-; CHECK: addl
-; CHECK-NOT: addl
-; CHECK: ret
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define i64 @redundantadd(i64* %a0, i64* %a1) {
 entry:

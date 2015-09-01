@@ -1,19 +1,19 @@
-; REQUIRES: object-emission
-; RUN: %llc_dwarf -O0 -filetype=obj %s -o %t
-; RUN: llvm-dwarfdump %t | FileCheck %s
 
-; Check that we emit ranges for this CU since we have a function with and
-; without debug info.
-; Note: This depends upon the order of output in the .o file. Currently it's
-; in order of the output to make sure that the CU has multiple ranges since
-; there's a function in the middle. If they were together then it would have
-; a single range and no DW_AT_ranges.
-; CHECK: DW_TAG_compile_unit
-; CHECK: DW_AT_ranges
-; CHECK: DW_TAG_subprogram
-; CHECK: DW_TAG_subprogram
 
-; Function Attrs: nounwind uwtable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define i32 @b(i32 %c) #0 {
 entry:
   %c.addr = alloca i32, align 4
@@ -24,7 +24,7 @@ entry:
   ret i32 %add, !dbg !14
 }
 
-; Function Attrs: nounwind uwtable
+
 define i32 @a(i32 %b) #0 {
 entry:
   %b.addr = alloca i32, align 4
@@ -34,10 +34,10 @@ entry:
   ret i32 %add
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
-; Function Attrs: nounwind uwtable
+
 define i32 @d(i32 %e) #0 {
 entry:
   %e.addr = alloca i32, align 4

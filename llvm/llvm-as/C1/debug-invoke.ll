@@ -1,12 +1,12 @@
-; RUN: opt < %s -always-inline -S | FileCheck %s
 
-; Test that the debug location is preserved when rewriting an inlined call as an invoke
 
-; CHECK: invoke void @test()
-; CHECK-NEXT: to label {{.*}} unwind label {{.*}}, !dbg [[INL_LOC:!.*]]
-; CHECK: [[SP:.*]] = distinct !DISubprogram(
-; CHECK: [[INL_LOC]] = !DILocation(line: 1, scope: [[SP]], inlinedAt: [[INL_AT:.*]])
-; CHECK: [[INL_AT]] = distinct !DILocation(line: 2, scope: [[SP]])
+
+
+
+
+
+
+
 
 declare void @test()
 declare i32 @__gxx_personality_v0(...)

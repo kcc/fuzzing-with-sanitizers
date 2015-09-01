@@ -1,5 +1,5 @@
-; RUN: llc < %s -mcpu=cortex-a8 -verify-machineinstrs
-; PR11829
+
+
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:64:128-a0:0:64-n32-S64"
 target triple = "armv7-none-linux-gnueabi"
 
@@ -7,17 +7,17 @@ define arm_aapcs_vfpcc void @foo(i8* nocapture %arg) nounwind uwtable align 2 {
 bb:
   br i1 undef, label %bb1, label %bb2
 
-bb1:                                              ; preds = %bb
+bb1:                                              
   unreachable
 
-bb2:                                              ; preds = %bb
+bb2:                                              
   br label %bb3
 
-bb3:                                              ; preds = %bb4, %bb2
+bb3:                                              
   %tmp = icmp slt i32 undef, undef
   br i1 %tmp, label %bb4, label %bb67
 
-bb4:                                              ; preds = %bb3
+bb4:                                              
   %tmp5 = load <4 x i32>, <4 x i32>* undef, align 16
   %tmp6 = and <4 x i32> %tmp5, <i32 8388607, i32 8388607, i32 8388607, i32 8388607>
   %tmp7 = or <4 x i32> %tmp6, <i32 1065353216, i32 1065353216, i32 1065353216, i32 1065353216>
@@ -84,7 +84,7 @@ bb4:                                              ; preds = %bb3
   call arm_aapcs_vfpcc  void @quux(i8* undef, i8* undef, [2 x i64] undef, i8* undef, [2 x i64] %tmp66, i8* undef, i8* undef, [2 x i64] %tmp26, [2 x i64] %tmp15, <4 x i32>* undef)
   br label %bb3
 
-bb67:                                             ; preds = %bb3
+bb67:                                             
   ret void
 }
 

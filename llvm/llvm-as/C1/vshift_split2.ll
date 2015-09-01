@@ -1,6 +1,6 @@
-; RUN: llc < %s -march=x86 -mcpu=yonah
 
-; Legalization example that requires splitting a large vector into smaller pieces.
+
+
 
 define void @update(<8 x i32> %val, <8 x i32>* %dst) nounwind {
 entry:

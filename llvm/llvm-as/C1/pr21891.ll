@@ -1,4 +1,4 @@
-; RUN: opt %s -instcombine
+
 
 define i32 @f(i32 %theNumber) {
 entry:
@@ -6,11 +6,11 @@ entry:
   call void @llvm.assume(i1 %cmp)
   br i1 true, label %if.then, label %if.end
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %shl = shl nuw i32 %theNumber, 1
   br label %if.end
 
-if.end:                                           ; preds = %if.then, %entry
+if.end:                                           
   %phi = phi i32 [ %shl, %if.then ], [ undef, %entry ]
   ret i32 %phi
 }

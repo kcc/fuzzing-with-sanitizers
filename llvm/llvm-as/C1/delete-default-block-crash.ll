@@ -1,6 +1,6 @@
-; RUN: opt < %s -lowerswitch -disable-output
 
-; This test verify -lowerswitch does not crash after deleting the default block.
+
+
 
 declare i32 @f(i32)
 

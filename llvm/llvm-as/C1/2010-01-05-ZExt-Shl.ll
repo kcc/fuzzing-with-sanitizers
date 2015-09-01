@@ -1,5 +1,5 @@
-; RUN: llc < %s -march=x86-64
-; <rdar://problem/7499313>
+
+
 target triple = "i686-apple-darwin8"
 
 declare void @func2(i16 zeroext)

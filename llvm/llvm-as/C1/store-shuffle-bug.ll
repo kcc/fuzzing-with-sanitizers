@@ -1,4 +1,4 @@
-; RUN: opt -S -basicaa -loop-vectorize -force-vector-interleave=1 -force-vector-width=4 -dce -instcombine < %s | FileCheck %s
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.8.0"
@@ -7,25 +7,25 @@ target triple = "x86_64-apple-macosx10.8.0"
 @xi = common global [100 x i32] zeroinitializer, align 16
 @q = common global [100 x i32] zeroinitializer, align 16
 
-; PR16455
 
 
-; Due to a bug in the way we handled reverse induction stores we would generate
-; a shuffle too many.
+
+
+
 
 define void @t()  {
 entry:
   br label %for.body
 
-; CHECK-LABEL: @t(
-; CHECK: vector.body:
-; CHECK: [[VAR1:%[a-zA-Z0-9.]+]] = load <4 x i32>
-; CHECK: [[VAR2:%[a-zA-Z0-9.]+]] = load <4 x i32>
-; CHECK: [[VAR3:%[a-zA-Z0-9]+]] = add nsw <4 x i32> [[VAR2]], [[VAR1]]
-; CHECK: store <4 x i32> [[VAR3]]
-; CHECK: [[VAR4:%[a-zA-Z0-9.]+]] = load <4 x i32>
-; CHECK: add nsw <4 x i32> [[VAR3]], [[VAR4]]
-; CHECK-NOT: shufflevector
+
+
+
+
+
+
+
+
+
 
 for.body:
   %indvars.iv = phi i64 [ 93, %entry ], [ %indvars.iv.next, %for.body ]

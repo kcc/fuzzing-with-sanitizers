@@ -1,21 +1,21 @@
-; RUN: llc -mtriple=x86_64-linux-gnu %s -filetype=obj -o %t
-; RUN: llvm-dwarfdump %t | FileCheck %s
 
-; Reconstruct this via clang and -O2.
-; static void foo() {
-;   struct X { int a; int b; } xyz;
-; }
 
-; int bar() {
-;   foo();
-;   return 1;
-; }
 
-; Check that we still have the structure type for X even though we're not
-; going to emit a low/high_pc for foo.
-; CHECK: DW_TAG_structure_type
 
-; Function Attrs: nounwind readnone uwtable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define i32 @bar() #0 {
 entry:
   ret i32 1, !dbg !21

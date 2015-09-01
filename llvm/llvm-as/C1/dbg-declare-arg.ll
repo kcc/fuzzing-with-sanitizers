@@ -1,9 +1,9 @@
-; RUN: llc -O0 -fast-isel=false < %s | FileCheck %s
+
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64"
 target triple = "x86_64-apple-macosx10.6.7"
-;Radar 9321650
 
-;CHECK: ##DEBUG_VALUE: my_a 
+
+
 
 %class.A = type { i32, i32, i32, i32 }
 
@@ -21,13 +21,13 @@ entry:
   %cmp = icmp eq i32 %tmp, 42, !dbg !32
   br i1 %cmp, label %if.then, label %if.end, !dbg !32
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %tmp1 = load i32, i32* %i.addr, align 4, !dbg !33
   %add = add nsw i32 %tmp1, 1, !dbg !33
   store i32 %add, i32* %j, align 4, !dbg !33
   br label %if.end, !dbg !35
 
-if.end:                                           ; preds = %if.then, %entry
+if.end:                                           
   store i1 false, i1* %nrvo, !dbg !36
   call void @llvm.dbg.declare(metadata %class.A* %agg.result, metadata !37, metadata !DIExpression()), !dbg !39
   %tmp2 = load i32, i32* %j, align 4, !dbg !40
@@ -38,11 +38,11 @@ if.end:                                           ; preds = %if.then, %entry
   %nrvo.val = load i1, i1* %nrvo, !dbg !42
   br i1 %nrvo.val, label %nrvo.skipdtor, label %nrvo.unused, !dbg !42
 
-nrvo.unused:                                      ; preds = %if.end
+nrvo.unused:                                      
   call void @_ZN1AD1Ev(%class.A* %agg.result), !dbg !42
   br label %nrvo.skipdtor, !dbg !42
 
-nrvo.skipdtor:                                    ; preds = %nrvo.unused, %if.end
+nrvo.skipdtor:                                    
   ret void, !dbg !42
 }
 

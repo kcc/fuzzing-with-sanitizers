@@ -1,5 +1,5 @@
-; RUN: true
-; Companion for debug-info-version-a.ll.
+
+
 
 !llvm.module.flags = !{ !0 }
 !llvm.dbg.cu = !{!1}

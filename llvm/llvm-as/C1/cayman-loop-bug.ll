@@ -1,13 +1,13 @@
-; RUN: llc < %s -march=r600 -mcpu=cayman | FileCheck %s
 
-; CHECK-LABEL: {{^}}main:
-; CHECK: LOOP_START_DX10
-; CHECK: ALU_PUSH_BEFORE
-; CHECK: LOOP_START_DX10
-; CHECK: PUSH
-; CHECK-NOT: ALU_PUSH_BEFORE
-; CHECK: END_LOOP
-; CHECK: END_LOOP
+
+
+
+
+
+
+
+
+
 define void @main (<4 x float> inreg %reg0) #0 {
 entry:
   br label %outer_loop

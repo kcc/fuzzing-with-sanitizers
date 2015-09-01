@@ -1,17 +1,17 @@
-; Test fix for PR-13709.
-; RUN: llc -march=hexagon -mcpu=hexagonv4 < %s | FileCheck %s
-; CHECK: foo
-; CHECK-NOT: lsr(r{{[0-9]+}}:{{[0-9]+}}, #32)
-; CHECK-NOT: lsr(r{{[0-9]+}}:{{[0-9]+}}, #32)
 
-; Convert the sequence
-; r17:16 = lsr(r11:10, #32)
-; .. = r16
-; into
-; r17:16 = lsr(r11:10, #32)
-; .. = r11
-; This makes the lsr instruction dead and it gets removed subsequently
-; by a dead code removal pass.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %union.vect64 = type { i64 }
 %union.vect32 = type { i32 }
@@ -28,7 +28,7 @@ entry:
   %scevgep39 = getelementptr i8, i8* %scr_s_even_code_ptr, i32 1
   br label %for.body
 
-for.body:                                         ; preds = %for.body, %entry
+for.body:                                         
   %lsr.iv42 = phi i32 [ %lsr.iv.next, %for.body ], [ 2, %entry ]
   %lsr.iv40 = phi i8* [ %scevgep41, %for.body ], [ %scevgep39, %entry ]
   %lsr.iv37 = phi i8* [ %scevgep38, %for.body ], [ %scevgep36, %entry ]
@@ -67,7 +67,7 @@ for.body:                                         ; preds = %for.body, %entry
   %lsr.iv.next = add i32 %lsr.iv42, 1
   br i1 %exitcond, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret void
 }
 

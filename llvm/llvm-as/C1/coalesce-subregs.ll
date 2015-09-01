@@ -1,16 +1,16 @@
-; RUN: llc < %s -mcpu=cortex-a9 -verify-coalescing -verify-machineinstrs | FileCheck %s
+
 target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:32:64-v128:32:128-a0:0:32-n32-S32"
 target triple = "thumbv7-apple-ios0.0.0"
 
-; CHECK: f
-; The vld2 and vst2 are not aligned wrt each other, the second Q loaded is the
-; first one stored.
-; The coalescer must find a super-register larger than QQ to eliminate the copy
-; setting up the vst2 data.
-; CHECK: vld2
-; CHECK-NOT: vorr
-; CHECK-NOT: vmov
-; CHECK: vst2
+
+
+
+
+
+
+
+
+
 define void @f(float* %p, i32 %c) nounwind ssp {
 entry:
   %0 = bitcast float* %p to i8*
@@ -22,8 +22,8 @@ entry:
   ret void
 }
 
-; CHECK: f1
-; FIXME: This function still has copies.
+
+
 define void @f1(float* %p, i32 %c) nounwind ssp {
 entry:
   %0 = bitcast float* %p to i8*
@@ -37,8 +37,8 @@ entry:
   ret void
 }
 
-; CHECK: f2
-; FIXME: This function still has copies.
+
+
 define void @f2(float* %p, i32 %c) nounwind ssp {
 entry:
   %0 = bitcast float* %p to i8*
@@ -46,7 +46,7 @@ entry:
   %vld224 = extractvalue { <4 x float>, <4 x float> } %vld2, 1
   br label %do.body
 
-do.body:                                          ; preds = %do.body, %entry
+do.body:                                          
   %qq0.0.1.0 = phi <4 x float> [ %vld224, %entry ], [ %vld2216, %do.body ]
   %c.addr.0 = phi i32 [ %c, %entry ], [ %dec, %do.body ]
   %p.addr.0 = phi float* [ %p, %entry ], [ %add.ptr, %do.body ]
@@ -60,29 +60,29 @@ do.body:                                          ; preds = %do.body, %entry
   %tobool = icmp eq i32 %dec, 0
   br i1 %tobool, label %do.end, label %do.body
 
-do.end:                                           ; preds = %do.body
+do.end:                                           
   ret void
 }
 
 declare { <4 x float>, <4 x float> } @llvm.arm.neon.vld2.v4f32(i8*, i32) nounwind readonly
 declare void @llvm.arm.neon.vst2.v4f32(i8*, <4 x float>, <4 x float>, i32) nounwind
 
-; CHECK: f3
-; This function has lane insertions that span basic blocks.
-; The trivial REG_SEQUENCE lowering can't handle that, but the coalescer can.
-;
-; void f3(float *p, float *q) {
-;   float32x2_t x;
-;   x[1] = p[3];
-;   if (q)
-;     x[0] = q[0] + q[1];
-;   else
-;     x[0] = p[2];
-;   vst1_f32(p+4, x);
-; }
-;
-; CHECK-NOT: vmov
-; CHECK-NOT: vorr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @f3(float* %p, float* %q) nounwind ssp {
 entry:
   %arrayidx = getelementptr inbounds float, float* %p, i32 3
@@ -91,7 +91,7 @@ entry:
   %tobool = icmp eq float* %q, null
   br i1 %tobool, label %if.else, label %if.then
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %1 = load float, float* %q, align 4
   %arrayidx2 = getelementptr inbounds float, float* %q, i32 1
   %2 = load float, float* %arrayidx2, align 4
@@ -99,13 +99,13 @@ if.then:                                          ; preds = %entry
   %vecins3 = insertelement <2 x float> %vecins, float %add, i32 0
   br label %if.end
 
-if.else:                                          ; preds = %entry
+if.else:                                          
   %arrayidx4 = getelementptr inbounds float, float* %p, i32 2
   %3 = load float, float* %arrayidx4, align 4
   %vecins5 = insertelement <2 x float> %vecins, float %3, i32 0
   br label %if.end
 
-if.end:                                           ; preds = %if.else, %if.then
+if.end:                                           
   %x.0 = phi <2 x float> [ %vecins3, %if.then ], [ %vecins5, %if.else ]
   %add.ptr = getelementptr inbounds float, float* %p, i32 4
   %4 = bitcast float* %add.ptr to i8*
@@ -116,11 +116,11 @@ if.end:                                           ; preds = %if.else, %if.then
 declare void @llvm.arm.neon.vst1.v2f32(i8*, <2 x float>, i32) nounwind
 declare <2 x float> @llvm.arm.neon.vld1.v2f32(i8*, i32) nounwind readonly
 
-; CHECK: f4
-; This function inserts a lane into a fully defined vector.
-; The destination lane isn't read, so the subregs can coalesce.
-; CHECK-NOT: vmov
-; CHECK-NOT: vorr
+
+
+
+
+
 define void @f4(float* %p, float* %q) nounwind ssp {
 entry:
   %0 = bitcast float* %p to i8*
@@ -128,7 +128,7 @@ entry:
   %tobool = icmp eq float* %q, null
   br i1 %tobool, label %if.end, label %if.then
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %1 = load float, float* %q, align 4
   %arrayidx1 = getelementptr inbounds float, float* %q, i32 1
   %2 = load float, float* %arrayidx1, align 4
@@ -136,21 +136,21 @@ if.then:                                          ; preds = %entry
   %vecins = insertelement <2 x float> %vld1, float %add, i32 1
   br label %if.end
 
-if.end:                                           ; preds = %entry, %if.then
+if.end:                                           
   %x.0 = phi <2 x float> [ %vecins, %if.then ], [ %vld1, %entry ]
   tail call void @llvm.arm.neon.vst1.v2f32(i8* %0, <2 x float> %x.0, i32 4)
   ret void
 }
 
-; CHECK: f5
-; Coalesce vector lanes through phis.
-; CHECK: vmov.f32 {{.*}}, #1.0
-; CHECK-NOT: vmov
-; CHECK-NOT: vorr
-; CHECK: bx
-; We may leave the last insertelement in the if.end block.
-; It is inserting the %add value into a dead lane, but %add causes interference
-; in the entry block, and we don't do dead lane checks across basic blocks.
+
+
+
+
+
+
+
+
+
 define void @f5(float* %p, float* %q) nounwind ssp {
 entry:
   %0 = bitcast float* %p to i8*
@@ -163,7 +163,7 @@ entry:
   %tobool = icmp eq float* %q, null
   br i1 %tobool, label %if.end, label %if.then
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %arrayidx = getelementptr inbounds float, float* %q, i32 1
   %1 = load float, float* %arrayidx, align 4
   %add4 = fadd float %vecext, %1
@@ -174,7 +174,7 @@ if.then:                                          ; preds = %entry
   %add8 = fadd float %vecext2, %3
   br label %if.end
 
-if.end:                                           ; preds = %entry, %if.then
+if.end:                                           
   %a.0 = phi float [ %add4, %if.then ], [ %vecext, %entry ]
   %b.0 = phi float [ %add6, %if.then ], [ %vecext1, %entry ]
   %c.0 = phi float [ %add8, %if.then ], [ %vecext2, %entry ]
@@ -190,7 +190,7 @@ declare <4 x float> @llvm.arm.neon.vld1.v4f32(i8*, i32) nounwind readonly
 
 declare void @llvm.arm.neon.vst1.v4f32(i8*, <4 x float>, i32) nounwind
 
-; CHECK: pr13999
+
 define void @pr13999() nounwind readonly {
 entry:
  br i1 true, label %outer_loop, label %loop.end
@@ -215,12 +215,12 @@ loop.end:
  ret void
 }
 
-; CHECK: pr14078
+
 define arm_aapcs_vfpcc i32 @pr14078(i8* nocapture %arg, i8* nocapture %arg1, i32 %arg2) nounwind uwtable readonly {
 bb:
   br i1 undef, label %bb31, label %bb3
 
-bb3:                                              ; preds = %bb12, %bb
+bb3:                                              
   %tmp = shufflevector <2 x i64> undef, <2 x i64> undef, <1 x i32> zeroinitializer
   %tmp4 = bitcast <1 x i64> %tmp to <2 x float>
   %tmp5 = shufflevector <2 x float> %tmp4, <2 x float> undef, <4 x i32> zeroinitializer
@@ -230,11 +230,11 @@ bb3:                                              ; preds = %bb12, %bb
   %tmp9 = tail call <2 x float> @baz(<2 x float> <float 0xFFFFFFFFE0000000, float 0.000000e+00>, <2 x float> %tmp8, <2 x float> zeroinitializer) nounwind
   br i1 undef, label %bb10, label %bb12
 
-bb10:                                             ; preds = %bb3
+bb10:                                             
   %tmp11 = load <4 x float>, <4 x float>* undef, align 8
   br label %bb12
 
-bb12:                                             ; preds = %bb10, %bb3
+bb12:                                             
   %tmp13 = shufflevector <2 x float> %tmp9, <2 x float> zeroinitializer, <2 x i32> <i32 0, i32 2>
   %tmp14 = bitcast <2 x float> %tmp13 to <1 x i64>
   %tmp15 = shufflevector <1 x i64> %tmp14, <1 x i64> zeroinitializer, <2 x i32> <i32 0, i32 1>
@@ -255,7 +255,7 @@ bb12:                                             ; preds = %bb10, %bb3
   %tmp30 = icmp ult i32 undef, %arg2
   br i1 %tmp30, label %bb3, label %bb31
 
-bb31:                                             ; preds = %bb12, %bb
+bb31:                                             
   %tmp32 = phi i32 [ 1, %bb ], [ %tmp29, %bb12 ]
   ret i32 %tmp32
 }
@@ -267,7 +267,7 @@ declare <2 x float> @baz67(<2 x float>, <2 x float>) nounwind readnone
 %struct.wombat.5 = type { %struct.quux, %struct.quux, %struct.quux, %struct.quux }
 %struct.quux = type { <4 x float> }
 
-; CHECK: pr14079
+
 define linkonce_odr arm_aapcs_vfpcc %struct.wombat.5 @pr14079(i8* nocapture %arg, i8* nocapture %arg1, i8* nocapture %arg2) nounwind uwtable inlinehint {
 bb:
   %tmp = shufflevector <2 x i64> zeroinitializer, <2 x i64> undef, <1 x i32> zeroinitializer
@@ -290,10 +290,10 @@ bb:
   ret %struct.wombat.5 %tmp18
 }
 
-; CHECK: adjustCopiesBackFrom
-; The shuffle in if.else3 must be preserved even though adjustCopiesBackFrom
-; is tempted to remove it.
-; CHECK: vorr d
+
+
+
+
 define internal void @adjustCopiesBackFrom(<2 x i64>* noalias nocapture sret %agg.result, <2 x i64> %in) {
 entry:
   %0 = extractelement <2 x i64> %in, i32 0
@@ -303,36 +303,36 @@ entry:
   %cmp1 = icmp slt i64 %1, 1
   br i1 %cmp1, label %if.then2, label %if.else3
 
-if.then2:                                         ; preds = %entry
+if.then2:                                         
   %2 = insertelement <2 x i64> %.in, i64 0, i32 1
   br label %if.end4
 
-if.else3:                                         ; preds = %entry
+if.else3:                                         
   %3 = shufflevector <2 x i64> %.in, <2 x i64> %in, <2 x i32> <i32 0, i32 3>
   br label %if.end4
 
-if.end4:                                          ; preds = %if.else3, %if.then2
+if.end4:                                          
   %result.2 = phi <2 x i64> [ %2, %if.then2 ], [ %3, %if.else3 ]
   store <2 x i64> %result.2, <2 x i64>* %agg.result, align 128
   ret void
 }
 
-; <rdar://problem/12758887>
-; RegisterCoalescer::updateRegDefsUses() could visit an instruction more than
-; once under rare circumstances. When widening a register from QPR to DTriple
-; with the original virtual register in dsub_1_dsub_2, the double rewrite would
-; produce an invalid sub-register.
-;
-; This is because dsub_1_dsub_2 is not an idempotent sub-register index.
-; It will translate %vr:dsub_0 -> %vr:dsub_1.
+
+
+
+
+
+
+
+
 define hidden fastcc void @radar12758887() nounwind optsize ssp {
 entry:
   br i1 undef, label %for.body, label %for.end70
 
-for.body:                                         ; preds = %for.end, %entry
+for.body:                                         
   br i1 undef, label %for.body29, label %for.end
 
-for.body29:                                       ; preds = %for.body29, %for.body
+for.body29:                                       
   %0 = load <2 x double>, <2 x double>* null, align 1
   %splat40 = shufflevector <2 x double> %0, <2 x double> undef, <2 x i32> zeroinitializer
   %mul41 = fmul <2 x double> undef, %splat40
@@ -342,7 +342,7 @@ for.body29:                                       ; preds = %for.body29, %for.bo
   %add46 = fadd <2 x double> undef, %mul45
   br i1 undef, label %for.end, label %for.body29
 
-for.end:                                          ; preds = %for.body29, %for.body
+for.end:                                          
   %accumR2.0.lcssa = phi <2 x double> [ zeroinitializer, %for.body ], [ %add42, %for.body29 ]
   %accumI2.0.lcssa = phi <2 x double> [ zeroinitializer, %for.body ], [ %add46, %for.body29 ]
   %1 = shufflevector <2 x double> %accumI2.0.lcssa, <2 x double> undef, <2 x i32> <i32 1, i32 0>
@@ -354,6 +354,6 @@ for.end:                                          ; preds = %for.body29, %for.bo
   store <2 x double> %add67, <2 x double>* undef, align 1
   br i1 undef, label %for.end70, label %for.body
 
-for.end70:                                        ; preds = %for.end, %entry
+for.end70:                                        
   ret void
 }

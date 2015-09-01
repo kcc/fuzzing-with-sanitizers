@@ -1,25 +1,25 @@
-; RUN: opt -S -asan %s | FileCheck %s
 
-; The IR of this testcase is generated from the following C code:
-; void bar (int);
-;
-; void foo() {
-;   __block int x;
-;   bar(x);
-; }
-; by compiling it with 'clang -emit-llvm -g -S' and then by manually
-; adding the sanitize_address attribute to the @foo() function (so
-; that ASAN accepts to instrument the function in the above opt run).
 
-; Check that the location of the ASAN instrumented __block variable is
-; correct.
-; CHECK: !DIExpression(DW_OP_deref, DW_OP_plus, 8, DW_OP_deref, DW_OP_plus, 24)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 
 %struct.__block_byref_x = type { i8*, %struct.__block_byref_x*, i32, i32, i32 }
 
-; Function Attrs: nounwind ssp uwtable
+
 define void @foo() #0 {
 entry:
   %x = alloca %struct.__block_byref_x, align 8
@@ -42,7 +42,7 @@ entry:
   ret void, !dbg !26
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
 declare void @bar(i32) #2

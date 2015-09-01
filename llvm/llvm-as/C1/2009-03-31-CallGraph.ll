@@ -1,4 +1,4 @@
-; RUN: opt < %s -inline -prune-eh -disable-output
+
 define void @f2() personality i32 (...)* @__gxx_personality_v0 {
     invoke void @f6()
         to label %ok1 unwind label %lpad1

@@ -1,5 +1,5 @@
-; RUN: llc < %s -mtriple=x86_64-linux | FileCheck %s
-; CHECK-NOT:     mov
+
+
 
 define <4 x float> @foo(<4 x float>* %p, <4 x float> %x) nounwind {
   %t = load <4 x float>, <4 x float>* %p

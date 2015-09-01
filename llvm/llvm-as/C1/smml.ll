@@ -1,8 +1,8 @@
-; RUN: llc -mtriple=arm-eabi -mcpu=cortex-a8 %s -o - | FileCheck %s
+
 
 define i32 @f(i32 %a, i32 %b, i32 %c) nounwind readnone ssp {
 entry:
-; CHECK-NOT: smmls
+
   %conv4 = zext i32 %a to i64
   %conv1 = sext i32 %b to i64
   %conv2 = sext i32 %c to i64

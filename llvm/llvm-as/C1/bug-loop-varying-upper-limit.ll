@@ -1,6 +1,6 @@
-; RUN: opt -irce-print-changed-loops -S -irce -verify < %s 2>&1 | FileCheck %s
 
-; CHECK-NOT: constrained loop
+
+
 
 define void @single_access_no_preloop_no_offset(i32 *%arr, i32 *%a_len_ptr, i32 %n) {
  entry:

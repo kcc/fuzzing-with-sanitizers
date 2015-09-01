@@ -1,7 +1,7 @@
-; RUN: llc -march=hexagon < %s
-; Used to fail with "Cannot select: 0x17300f0: v2i32 = any_extend"
 
-; ModuleID = 'bugpoint-reduced-simplified.bc'
+
+
+
 target datalayout =
 "e-p:32:32:32-i64:64:64-i32:32:32-i16:16:16-i1:32:32-f64:64:64-f32:32:32-a0:0-n32"
 target triple = "hexagon-unknown-linux-gnu"

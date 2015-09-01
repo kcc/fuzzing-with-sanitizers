@@ -1,8 +1,8 @@
-; RUN: opt -strip-debug < %s -S | FileCheck %s
 
-; CHECK-NOT: llvm.dbg
 
-@x = common global i32 0                          ; <i32*> [#uses=0]
+
+
+@x = common global i32 0                          
 
 define void @foo() nounwind readnone optsize ssp {
 entry:

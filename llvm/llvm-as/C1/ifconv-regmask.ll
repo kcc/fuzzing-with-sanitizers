@@ -1,10 +1,10 @@
-; RUN: llc < %s -mtriple=thumbv7s-apple-ios6.0.0 -verify-machineinstrs
+
 
 %union.opcode = type { i32 }
 
 @opcode = external global %union.opcode, align 4
 
-; Function Attrs: nounwind ssp
+
 define i32 @sfu() {
 entry:
   %bf.load = load i32, i32* getelementptr inbounds (%union.opcode, %union.opcode* @opcode, i32 0, i32 0), align 4
@@ -15,21 +15,21 @@ entry:
     i32 1, label %sw.bb1
   ]
 
-sw.bb:                                            ; preds = %entry
+sw.bb:                                            
   %call = tail call i32 @func0()
   br label %return
 
-sw.bb1:                                           ; preds = %entry
+sw.bb1:                                           
   %call2 = tail call i32 @func1()
   br label %return
 
-return:                                           ; preds = %sw.bb1, %sw.bb, %entry
+return:                                           
   %retval.0 = phi i32 [ %call2, %sw.bb1 ], [ %call, %sw.bb ], [ -1, %entry ]
   ret i32 %retval.0
 }
 
-; Function Attrs: nounwind ssp
+
 declare i32 @func0()
 
-; Function Attrs: nounwind ssp
+
 declare i32 @func1()

@@ -1,9 +1,9 @@
-; RUN: llc < %s -mcpu=corei7-avx -mattr=+avx | FileCheck %s
+
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-darwin11"
 
-; This test would create a vpand %ymm instruction that is only legal in AVX2.
-; CHECK-NOT: vpand %ymm
+
+
 
 declare i32 @llvm.x86.avx.movmsk.ps.256(<8 x float>) nounwind readnone
 
@@ -11,13 +11,13 @@ define void @ShadeTile() nounwind {
 allocas:
   br i1 undef, label %if_then, label %if_else
 
-if_then:                                          ; preds = %allocas
+if_then:                                          
   unreachable
 
-if_else:                                          ; preds = %allocas
+if_else:                                          
   br i1 undef, label %for_loop156.lr.ph, label %if_exit
 
-for_loop156.lr.ph:                                ; preds = %if_else
+for_loop156.lr.ph:                                
   %val_6.i21244 = load i16, i16* undef, align 2
   %0 = insertelement <8 x i16> undef, i16 %val_6.i21244, i32 6
   %val_7.i21248 = load i16, i16* undef, align 2
@@ -64,17 +64,17 @@ for_loop156.lr.ph:                                ; preds = %if_else
   %binop.i20246 = fmul <8 x float> %uint2float.i20245, <float 0x3F70101020000000, float 0x3F70101020000000, float 0x3F70101020000000, float 0x3F70101020000000, float 0x3F70101020000000, float 0x3F70101020000000, float 0x3F70101020000000, float 0x3F70101020000000>
   br i1 undef, label %for_loop594.lr.ph, label %for_exit595
 
-if_exit:                                          ; preds = %if_else
+if_exit:                                          
   ret void
 
-for_loop594.lr.ph:                                ; preds = %for_loop156.lr.ph
+for_loop594.lr.ph:                                
   %bitop8.i20221 = and <8 x i32> %uint2uint32.i20218, <i32 1023, i32 1023, i32 1023, i32 1023, i32 1023, i32 1023, i32 1023, i32 1023>
   br i1 undef, label %cif_test_all730, label %cif_mask_mixed1552
 
-for_exit595:                                      ; preds = %for_loop156.lr.ph
+for_exit595:                                      
   unreachable
 
-cif_test_all730:                                  ; preds = %for_loop594.lr.ph
+cif_test_all730:                                  
   %binop11.i20545 = fmul <8 x float> %binop408, zeroinitializer
   %binop12.i20546 = fadd <8 x float> undef, %binop11.i20545
   %binop15.i20547 = fmul <8 x float> %binop411, undef
@@ -86,14 +86,14 @@ cif_test_all730:                                  ; preds = %for_loop594.lr.ph
   %cond = icmp eq i32 %v.i20550, 255
   br i1 %cond, label %cif_test_all794, label %cif_test_mixed
 
-cif_test_all794:                                  ; preds = %cif_test_all730
+cif_test_all794:                                  
   %binop.i20572 = fmul <8 x float> %binop403, undef
   unreachable
 
-cif_test_mixed:                                   ; preds = %cif_test_all730
+cif_test_mixed:                                   
   %binop1207 = fmul <8 x float> %binop.i20246, undef
   unreachable
 
-cif_mask_mixed1552:                               ; preds = %for_loop594.lr.ph
+cif_mask_mixed1552:                               
   unreachable
 }

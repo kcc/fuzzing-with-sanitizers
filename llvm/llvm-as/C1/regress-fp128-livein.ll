@@ -1,7 +1,7 @@
-; RUN: llc -mtriple=aarch64-linux-gnu -verify-machineinstrs -o - %s
 
-; Regression test for NZCV reg live-in not being added to fp128csel IfTrue BB,
-; causing a crash during live range calc.
+
+
+
 define void @fp128_livein(i64 %a) {
   %tobool = icmp ne i64 %a, 0
   %conv = zext i1 %tobool to i32

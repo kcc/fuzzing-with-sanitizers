@@ -1,9 +1,9 @@
-; RUN: llc -mcpu=cyclone -debug-only=loop-reduce < %s 2>&1 | FileCheck %s
-; REQUIRES: asserts
 
-; LSR used to fail here due to a bug in the ReqRegs test.
-; CHECK: The chosen solution requires
-; CHECK-NOT: No Satisfactory Solution
+
+
+
+
+
 
 target datalayout = "e-m:o-i64:64-i128:128-n32:64-S128"
 target triple = "arm64-apple-ios"
@@ -16,21 +16,21 @@ entry:
   %cmp56 = icmp eq i64 %iterations, 0
   br i1 %cmp56, label %while.end, label %for.cond.preheader.preheader
 
-for.cond.preheader.preheader:                     ; preds = %entry
+for.cond.preheader.preheader:                     
   br label %for.cond.preheader
 
-while.cond.loopexit:                              ; preds = %for.body
+while.cond.loopexit:                              
   %add21.lcssa = phi i32 [ %add21, %for.body ]
   %dec58 = add i64 %dec58.in, -1
   %cmp = icmp eq i64 %dec58, 0
   br i1 %cmp, label %while.end.loopexit, label %for.cond.preheader
 
-for.cond.preheader:                               ; preds = %for.cond.preheader.preheader, %while.cond.loopexit
+for.cond.preheader:                               
   %dec58.in = phi i64 [ %dec58, %while.cond.loopexit ], [ %iterations, %for.cond.preheader.preheader ]
   %a.057 = phi i32 [ %add21.lcssa, %while.cond.loopexit ], [ %add, %for.cond.preheader.preheader ]
   br label %for.body
 
-for.body:                                         ; preds = %for.body, %for.cond.preheader
+for.body:                                         
   %a.154 = phi i32 [ %a.057, %for.cond.preheader ], [ %add21, %for.body ]
   %i.053 = phi i32 [ 1, %for.cond.preheader ], [ %inc, %for.body ]
   %inc = add nsw i32 %i.053, 1
@@ -57,11 +57,11 @@ for.body:                                         ; preds = %for.body, %for.cond
   %exitcond = icmp eq i32 %inc, 1001
   br i1 %exitcond, label %while.cond.loopexit, label %for.body
 
-while.end.loopexit:                               ; preds = %while.cond.loopexit
+while.end.loopexit:                               
   %add21.lcssa.lcssa = phi i32 [ %add21.lcssa, %while.cond.loopexit ]
   br label %while.end
 
-while.end:                                        ; preds = %while.end.loopexit, %entry
+while.end:                                        
   %a.0.lcssa = phi i32 [ %add, %entry ], [ %add21.lcssa.lcssa, %while.end.loopexit ]
   tail call void @use_int(i32 %a.0.lcssa)
   ret void

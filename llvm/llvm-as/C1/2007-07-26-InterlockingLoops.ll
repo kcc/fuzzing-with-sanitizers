@@ -1,4 +1,4 @@
-; RUN: opt < %s -basicaa -gvn -S | FileCheck %s
+
 
 @last = external global [65 x i32*]
 
@@ -7,11 +7,11 @@ entry:
         %A = alloca i32*
 	%tmp17618 = load i32*, i32** getelementptr ([65 x i32*], [65 x i32*]* @last, i32 0, i32 1), align 4
         store i32* %tmp17618, i32** %A
-; CHECK: entry:
-; CHECK-NEXT: alloca i32
-; CHECK-NEXT: %tmp17618 = load
-; CHECK-NOT: load
-; CHECK-NOT: phi
+
+
+
+
+
 	br label %cond_true116
 
 cond_true116:

@@ -1,4 +1,4 @@
-; RUN: opt < %s -lowerinvoke -S | FileCheck %s
+
 
 declare i32 @external_func(i64 %arg)
 
@@ -14,12 +14,12 @@ lpad:
   ret i32 %phi
 }
 
-; The "invoke" should be converted to a "call".
-; CHECK-LABEL: define i32 @invoke_test
-; CHECK: %result = call fastcc i32 @external_func(i64 inreg %arg)
-; CHECK-NEXT: br label %cont
 
-; Note that this pass does not remove dead landingpad blocks.
-; CHECK: lpad:
-; CHECK-NOT: phi
-; CHECK: landingpad
+
+
+
+
+
+
+
+

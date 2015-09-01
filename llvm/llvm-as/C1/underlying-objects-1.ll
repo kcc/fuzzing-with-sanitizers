@@ -1,23 +1,23 @@
-; RUN: opt -basicaa -loop-accesses -analyze < %s | FileCheck %s
 
-; In:
-;
-;   store_ptr = A;
-;   load_ptr = &A[2];
-;   for (i = 0; i < n; i++)
-;    *store_ptr++ = *load_ptr++ *10;  // A[i] = A[i+2] * 10
-;
-; make sure, we look through the PHI to conclude that store_ptr and load_ptr
-; both have A as their underlying object.  The dependence is safe for
-; vectorization requiring no memchecks.
-;
-; Otherwise we would try to prove independence with a memcheck that is going
-; to always fail.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.10.0"
 
-; CHECK: Memory dependences are safe{{$}}
+
 
 define void @f(i8* noalias %A, i64 %width) {
 for.body.preheader:

@@ -1,8 +1,8 @@
-; Test the MSA intrinsics that are encoded with the 3R instruction format.
-; There are lots of these so this covers those beginning with 'd'
 
-; RUN: llc -march=mips -mattr=+msa,+fp64 < %s | FileCheck %s
-; RUN: llc -march=mipsel -mattr=+msa,+fp64 < %s | FileCheck %s
+
+
+
+
 
 @llvm_mips_div_s_b_ARG1 = global <16 x i8> <i8 0, i8 1, i8 2, i8 3, i8 4, i8 5, i8 6, i8 7, i8 8, i8 9, i8 10, i8 11, i8 12, i8 13, i8 14, i8 15>, align 16
 @llvm_mips_div_s_b_ARG2 = global <16 x i8> <i8 16, i8 17, i8 18, i8 19, i8 20, i8 21, i8 22, i8 23, i8 24, i8 25, i8 26, i8 27, i8 28, i8 29, i8 30, i8 31>, align 16
@@ -19,13 +19,13 @@ entry:
 
 declare <16 x i8> @llvm.mips.div.s.b(<16 x i8>, <16 x i8>) nounwind
 
-; CHECK: llvm_mips_div_s_b_test:
-; CHECK: ld.b
-; CHECK: ld.b
-; CHECK: div_s.b
-; CHECK: st.b
-; CHECK: .size llvm_mips_div_s_b_test
-;
+
+
+
+
+
+
+
 @llvm_mips_div_s_h_ARG1 = global <8 x i16> <i16 0, i16 1, i16 2, i16 3, i16 4, i16 5, i16 6, i16 7>, align 16
 @llvm_mips_div_s_h_ARG2 = global <8 x i16> <i16 8, i16 9, i16 10, i16 11, i16 12, i16 13, i16 14, i16 15>, align 16
 @llvm_mips_div_s_h_RES  = global <8 x i16> <i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0>, align 16
@@ -41,13 +41,13 @@ entry:
 
 declare <8 x i16> @llvm.mips.div.s.h(<8 x i16>, <8 x i16>) nounwind
 
-; CHECK: llvm_mips_div_s_h_test:
-; CHECK: ld.h
-; CHECK: ld.h
-; CHECK: div_s.h
-; CHECK: st.h
-; CHECK: .size llvm_mips_div_s_h_test
-;
+
+
+
+
+
+
+
 @llvm_mips_div_s_w_ARG1 = global <4 x i32> <i32 0, i32 1, i32 2, i32 3>, align 16
 @llvm_mips_div_s_w_ARG2 = global <4 x i32> <i32 4, i32 5, i32 6, i32 7>, align 16
 @llvm_mips_div_s_w_RES  = global <4 x i32> <i32 0, i32 0, i32 0, i32 0>, align 16
@@ -63,13 +63,13 @@ entry:
 
 declare <4 x i32> @llvm.mips.div.s.w(<4 x i32>, <4 x i32>) nounwind
 
-; CHECK: llvm_mips_div_s_w_test:
-; CHECK: ld.w
-; CHECK: ld.w
-; CHECK: div_s.w
-; CHECK: st.w
-; CHECK: .size llvm_mips_div_s_w_test
-;
+
+
+
+
+
+
+
 @llvm_mips_div_s_d_ARG1 = global <2 x i64> <i64 0, i64 1>, align 16
 @llvm_mips_div_s_d_ARG2 = global <2 x i64> <i64 2, i64 3>, align 16
 @llvm_mips_div_s_d_RES  = global <2 x i64> <i64 0, i64 0>, align 16
@@ -85,13 +85,13 @@ entry:
 
 declare <2 x i64> @llvm.mips.div.s.d(<2 x i64>, <2 x i64>) nounwind
 
-; CHECK: llvm_mips_div_s_d_test:
-; CHECK: ld.d
-; CHECK: ld.d
-; CHECK: div_s.d
-; CHECK: st.d
-; CHECK: .size llvm_mips_div_s_d_test
-;
+
+
+
+
+
+
+
 
 define void @div_s_b_test() nounwind {
 entry:
@@ -102,12 +102,12 @@ entry:
   ret void
 }
 
-; CHECK: div_s_b_test:
-; CHECK: ld.b
-; CHECK: ld.b
-; CHECK: div_s.b
-; CHECK: st.b
-; CHECK: .size div_s_b_test
+
+
+
+
+
+
 
 define void @div_s_h_test() nounwind {
 entry:
@@ -118,12 +118,12 @@ entry:
   ret void
 }
 
-; CHECK: div_s_h_test:
-; CHECK: ld.h
-; CHECK: ld.h
-; CHECK: div_s.h
-; CHECK: st.h
-; CHECK: .size div_s_h_test
+
+
+
+
+
+
 
 define void @div_s_w_test() nounwind {
 entry:
@@ -134,12 +134,12 @@ entry:
   ret void
 }
 
-; CHECK: div_s_w_test:
-; CHECK: ld.w
-; CHECK: ld.w
-; CHECK: div_s.w
-; CHECK: st.w
-; CHECK: .size div_s_w_test
+
+
+
+
+
+
 
 define void @div_s_d_test() nounwind {
 entry:
@@ -150,13 +150,13 @@ entry:
   ret void
 }
 
-; CHECK: div_s_d_test:
-; CHECK: ld.d
-; CHECK: ld.d
-; CHECK: div_s.d
-; CHECK: st.d
-; CHECK: .size div_s_d_test
-;
+
+
+
+
+
+
+
 @llvm_mips_div_u_b_ARG1 = global <16 x i8> <i8 0, i8 1, i8 2, i8 3, i8 4, i8 5, i8 6, i8 7, i8 8, i8 9, i8 10, i8 11, i8 12, i8 13, i8 14, i8 15>, align 16
 @llvm_mips_div_u_b_ARG2 = global <16 x i8> <i8 16, i8 17, i8 18, i8 19, i8 20, i8 21, i8 22, i8 23, i8 24, i8 25, i8 26, i8 27, i8 28, i8 29, i8 30, i8 31>, align 16
 @llvm_mips_div_u_b_RES  = global <16 x i8> <i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0>, align 16
@@ -172,13 +172,13 @@ entry:
 
 declare <16 x i8> @llvm.mips.div.u.b(<16 x i8>, <16 x i8>) nounwind
 
-; CHECK: llvm_mips_div_u_b_test:
-; CHECK: ld.b
-; CHECK: ld.b
-; CHECK: div_u.b
-; CHECK: st.b
-; CHECK: .size llvm_mips_div_u_b_test
-;
+
+
+
+
+
+
+
 @llvm_mips_div_u_h_ARG1 = global <8 x i16> <i16 0, i16 1, i16 2, i16 3, i16 4, i16 5, i16 6, i16 7>, align 16
 @llvm_mips_div_u_h_ARG2 = global <8 x i16> <i16 8, i16 9, i16 10, i16 11, i16 12, i16 13, i16 14, i16 15>, align 16
 @llvm_mips_div_u_h_RES  = global <8 x i16> <i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0>, align 16
@@ -194,13 +194,13 @@ entry:
 
 declare <8 x i16> @llvm.mips.div.u.h(<8 x i16>, <8 x i16>) nounwind
 
-; CHECK: llvm_mips_div_u_h_test:
-; CHECK: ld.h
-; CHECK: ld.h
-; CHECK: div_u.h
-; CHECK: st.h
-; CHECK: .size llvm_mips_div_u_h_test
-;
+
+
+
+
+
+
+
 @llvm_mips_div_u_w_ARG1 = global <4 x i32> <i32 0, i32 1, i32 2, i32 3>, align 16
 @llvm_mips_div_u_w_ARG2 = global <4 x i32> <i32 4, i32 5, i32 6, i32 7>, align 16
 @llvm_mips_div_u_w_RES  = global <4 x i32> <i32 0, i32 0, i32 0, i32 0>, align 16
@@ -216,13 +216,13 @@ entry:
 
 declare <4 x i32> @llvm.mips.div.u.w(<4 x i32>, <4 x i32>) nounwind
 
-; CHECK: llvm_mips_div_u_w_test:
-; CHECK: ld.w
-; CHECK: ld.w
-; CHECK: div_u.w
-; CHECK: st.w
-; CHECK: .size llvm_mips_div_u_w_test
-;
+
+
+
+
+
+
+
 @llvm_mips_div_u_d_ARG1 = global <2 x i64> <i64 0, i64 1>, align 16
 @llvm_mips_div_u_d_ARG2 = global <2 x i64> <i64 2, i64 3>, align 16
 @llvm_mips_div_u_d_RES  = global <2 x i64> <i64 0, i64 0>, align 16
@@ -238,13 +238,13 @@ entry:
 
 declare <2 x i64> @llvm.mips.div.u.d(<2 x i64>, <2 x i64>) nounwind
 
-; CHECK: llvm_mips_div_u_d_test:
-; CHECK: ld.d
-; CHECK: ld.d
-; CHECK: div_u.d
-; CHECK: st.d
-; CHECK: .size llvm_mips_div_u_d_test
-;
+
+
+
+
+
+
+
 
 define void @div_u_b_test() nounwind {
 entry:
@@ -255,12 +255,12 @@ entry:
   ret void
 }
 
-; CHECK: div_u_b_test:
-; CHECK: ld.b
-; CHECK: ld.b
-; CHECK: div_u.b
-; CHECK: st.b
-; CHECK: .size div_u_b_test
+
+
+
+
+
+
 
 define void @div_u_h_test() nounwind {
 entry:
@@ -271,12 +271,12 @@ entry:
   ret void
 }
 
-; CHECK: div_u_h_test:
-; CHECK: ld.h
-; CHECK: ld.h
-; CHECK: div_u.h
-; CHECK: st.h
-; CHECK: .size div_u_h_test
+
+
+
+
+
+
 
 define void @div_u_w_test() nounwind {
 entry:
@@ -287,12 +287,12 @@ entry:
   ret void
 }
 
-; CHECK: div_u_w_test:
-; CHECK: ld.w
-; CHECK: ld.w
-; CHECK: div_u.w
-; CHECK: st.w
-; CHECK: .size div_u_w_test
+
+
+
+
+
+
 
 define void @div_u_d_test() nounwind {
 entry:
@@ -303,13 +303,13 @@ entry:
   ret void
 }
 
-; CHECK: div_u_d_test:
-; CHECK: ld.d
-; CHECK: ld.d
-; CHECK: div_u.d
-; CHECK: st.d
-; CHECK: .size div_u_d_test
-;
+
+
+
+
+
+
+
 @llvm_mips_dotp_s_h_ARG1 = global <16 x i8> <i8  0, i8  1, i8  2, i8  3,
                                              i8  4, i8  5, i8  6, i8  7,
                                              i8  8, i8  9, i8 10, i8 11,
@@ -335,13 +335,13 @@ entry:
 
 declare <8 x i16> @llvm.mips.dotp.s.h(<16 x i8>, <16 x i8>) nounwind
 
-; CHECK: llvm_mips_dotp_s_h_test:
-; CHECK: ld.b
-; CHECK: ld.b
-; CHECK: dotp_s.h
-; CHECK: st.h
-; CHECK: .size llvm_mips_dotp_s_h_test
-;
+
+
+
+
+
+
+
 @llvm_mips_dotp_s_w_ARG1 = global <8 x i16> <i16 0, i16 1, i16 2, i16 3,
                                              i16 4, i16 5, i16 6, i16 7>,
                                             align 16
@@ -362,13 +362,13 @@ entry:
 
 declare <4 x i32> @llvm.mips.dotp.s.w(<8 x i16>, <8 x i16>) nounwind
 
-; CHECK: llvm_mips_dotp_s_w_test:
-; CHECK: ld.h
-; CHECK: ld.h
-; CHECK: dotp_s.w
-; CHECK: st.w
-; CHECK: .size llvm_mips_dotp_s_w_test
-;
+
+
+
+
+
+
+
 @llvm_mips_dotp_s_d_ARG1 = global <4 x i32> <i32 0, i32 1, i32 0, i32 1>,
                                             align 16
 @llvm_mips_dotp_s_d_ARG2 = global <4 x i32> <i32 2, i32 3, i32 2, i32 3>,
@@ -386,13 +386,13 @@ entry:
 
 declare <2 x i64> @llvm.mips.dotp.s.d(<4 x i32>, <4 x i32>) nounwind
 
-; CHECK: llvm_mips_dotp_s_d_test:
-; CHECK: ld.w
-; CHECK: ld.w
-; CHECK: dotp_s.d
-; CHECK: st.d
-; CHECK: .size llvm_mips_dotp_s_d_test
-;
+
+
+
+
+
+
+
 @llvm_mips_dotp_u_h_ARG1 = global <16 x i8> <i8  0, i8  1, i8  2, i8  3,
                                              i8  4, i8  5, i8  6, i8  7,
                                              i8  8, i8  9, i8 10, i8 11,
@@ -418,13 +418,13 @@ entry:
 
 declare <8 x i16> @llvm.mips.dotp.u.h(<16 x i8>, <16 x i8>) nounwind
 
-; CHECK: llvm_mips_dotp_u_h_test:
-; CHECK: ld.b
-; CHECK: ld.b
-; CHECK: dotp_u.h
-; CHECK: st.h
-; CHECK: .size llvm_mips_dotp_u_h_test
-;
+
+
+
+
+
+
+
 @llvm_mips_dotp_u_w_ARG1 = global <8 x i16> <i16 0, i16 1, i16 2, i16 3,
                                              i16 4, i16 5, i16 6, i16 7>,
                                             align 16
@@ -445,13 +445,13 @@ entry:
 
 declare <4 x i32> @llvm.mips.dotp.u.w(<8 x i16>, <8 x i16>) nounwind
 
-; CHECK: llvm_mips_dotp_u_w_test:
-; CHECK: ld.h
-; CHECK: ld.h
-; CHECK: dotp_u.w
-; CHECK: st.w
-; CHECK: .size llvm_mips_dotp_u_w_test
-;
+
+
+
+
+
+
+
 @llvm_mips_dotp_u_d_ARG1 = global <4 x i32> <i32 0, i32 1, i32 0, i32 1>,
                                             align 16
 @llvm_mips_dotp_u_d_ARG2 = global <4 x i32> <i32 2, i32 3, i32 2, i32 3>,
@@ -469,10 +469,10 @@ entry:
 
 declare <2 x i64> @llvm.mips.dotp.u.d(<4 x i32>, <4 x i32>) nounwind
 
-; CHECK: llvm_mips_dotp_u_d_test:
-; CHECK: ld.w
-; CHECK: ld.w
-; CHECK: dotp_u.d
-; CHECK: st.d
-; CHECK: .size llvm_mips_dotp_u_d_test
-;
+
+
+
+
+
+
+

@@ -1,4 +1,4 @@
-; RUN: opt < %s -basicaa -slp-vectorizer -S
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.10.0"
@@ -35,9 +35,9 @@ for.body:
   %mul11 = select i1 %cmp.i47, float -0.000000e+00, float %cond.i50.op
   %add13 = fadd float %mul10, %mul11
 
-  ; The SLPVectorizer crashed in vectorizeChainsInBlock() because it tried
-  ; to access the second operand of the following cmp after the cmp itself
-  ; was already vectorized and deleted.
+  
+  
+  
   %cmp.i45 = fcmp olt float %add13, 1.000000e+00
 
   %cond.i46 = select i1 %cmp.i45, float %add13, float 1.000000e+00

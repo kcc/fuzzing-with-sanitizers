@@ -1,15 +1,15 @@
-; Test various target-specific DAG combiner patterns.
-;
-; RUN: llc < %s -mtriple=s390x-linux-gnu -mcpu=z13 | FileCheck %s
 
-; Check that an extraction followed by a truncation is effectively treated
-; as a bitcast.
+
+
+
+
+
 define void @f1(<4 x i32> %v1, <4 x i32> %v2, i8 *%ptr1, i8 *%ptr2) {
-; CHECK-LABEL: f1:
-; CHECK: vaf [[REG:%v[0-9]+]], %v24, %v26
-; CHECK-DAG: vsteb [[REG]], 0(%r2), 3
-; CHECK-DAG: vsteb [[REG]], 0(%r3), 15
-; CHECK: br %r14
+
+
+
+
+
   %add = add <4 x i32> %v1, %v2
   %elem1 = extractelement <4 x i32> %add, i32 0
   %elem2 = extractelement <4 x i32> %add, i32 3
@@ -20,15 +20,15 @@ define void @f1(<4 x i32> %v1, <4 x i32> %v2, i8 *%ptr1, i8 *%ptr2) {
   ret void
 }
 
-; Test a case where a pack-type shuffle can be eliminated.
+
 define i16 @f2(<4 x i32> %v1, <4 x i32> %v2, <4 x i32> %v3) {
-; CHECK-LABEL: f2:
-; CHECK-NOT: vpk
-; CHECK-DAG: vaf [[REG1:%v[0-9]+]], %v24, %v26
-; CHECK-DAG: vaf [[REG2:%v[0-9]+]], %v26, %v28
-; CHECK-DAG: vlgvh {{%r[0-5]}}, [[REG1]], 3
-; CHECK-DAG: vlgvh {{%r[0-5]}}, [[REG2]], 7
-; CHECK: br %r14
+
+
+
+
+
+
+
   %add1 = add <4 x i32> %v1, %v2
   %add2 = add <4 x i32> %v2, %v3
   %shuffle = shufflevector <4 x i32> %add1, <4 x i32> %add2,
@@ -40,15 +40,15 @@ define i16 @f2(<4 x i32> %v1, <4 x i32> %v2, <4 x i32> %v3) {
   ret i16 %res
 }
 
-; ...and again in a case where there's also a splat and a bitcast.
+
 define i16 @f3(<4 x i32> %v1, <4 x i32> %v2, <2 x i64> %v3) {
-; CHECK-LABEL: f3:
-; CHECK-NOT: vrepg
-; CHECK-NOT: vpk
-; CHECK-DAG: vaf [[REG:%v[0-9]+]], %v24, %v26
-; CHECK-DAG: vlgvh {{%r[0-5]}}, [[REG]], 6
-; CHECK-DAG: vlgvh {{%r[0-5]}}, %v28, 3
-; CHECK: br %r14
+
+
+
+
+
+
+
   %add = add <4 x i32> %v1, %v2
   %splat = shufflevector <2 x i64> %v3, <2 x i64> undef,
                          <2 x i32> <i32 0, i32 0>
@@ -62,15 +62,15 @@ define i16 @f3(<4 x i32> %v1, <4 x i32> %v2, <2 x i64> %v3) {
   ret i16 %res
 }
 
-; ...and again with a merge low instead of a pack.
+
 define i16 @f4(<4 x i32> %v1, <4 x i32> %v2, <2 x i64> %v3) {
-; CHECK-LABEL: f4:
-; CHECK-NOT: vrepg
-; CHECK-NOT: vmr
-; CHECK-DAG: vaf [[REG:%v[0-9]+]], %v24, %v26
-; CHECK-DAG: vlgvh {{%r[0-5]}}, [[REG]], 6
-; CHECK-DAG: vlgvh {{%r[0-5]}}, %v28, 3
-; CHECK: br %r14
+
+
+
+
+
+
+
   %add = add <4 x i32> %v1, %v2
   %splat = shufflevector <2 x i64> %v3, <2 x i64> undef,
                          <2 x i32> <i32 0, i32 0>
@@ -84,15 +84,15 @@ define i16 @f4(<4 x i32> %v1, <4 x i32> %v2, <2 x i64> %v3) {
   ret i16 %res
 }
 
-; ...and again with a merge high.
+
 define i16 @f5(<4 x i32> %v1, <4 x i32> %v2, <2 x i64> %v3) {
-; CHECK-LABEL: f5:
-; CHECK-NOT: vrepg
-; CHECK-NOT: vmr
-; CHECK-DAG: vaf [[REG:%v[0-9]+]], %v24, %v26
-; CHECK-DAG: vlgvh {{%r[0-5]}}, [[REG]], 2
-; CHECK-DAG: vlgvh {{%r[0-5]}}, %v28, 3
-; CHECK: br %r14
+
+
+
+
+
+
+
   %add = add <4 x i32> %v1, %v2
   %splat = shufflevector <2 x i64> %v3, <2 x i64> undef,
                          <2 x i32> <i32 0, i32 0>
@@ -106,16 +106,16 @@ define i16 @f5(<4 x i32> %v1, <4 x i32> %v2, <2 x i64> %v3) {
   ret i16 %res
 }
 
-; Test a case where an unpack high can be eliminated from the usual
-; load-extend sequence.
+
+
 define void @f6(<8 x i8> *%ptr1, i8 *%ptr2, i8 *%ptr3, i8 *%ptr4) {
-; CHECK-LABEL: f6:
-; CHECK: vlrepg [[REG:%v[0-9]+]], 0(%r2)
-; CHECK-NOT: vup
-; CHECK-DAG: vsteb [[REG]], 0(%r3), 1
-; CHECK-DAG: vsteb [[REG]], 0(%r4), 2
-; CHECK-DAG: vsteb [[REG]], 0(%r5), 7
-; CHECK: br %r14
+
+
+
+
+
+
+
   %vec = load <8 x i8>, <8 x i8> *%ptr1
   %ext = sext <8 x i8> %vec to <8 x i16>
   %elem1 = extractelement <8 x i16> %ext, i32 1
@@ -130,15 +130,15 @@ define void @f6(<8 x i8> *%ptr1, i8 *%ptr2, i8 *%ptr3, i8 *%ptr4) {
   ret void
 }
 
-; ...and again with a bitcast inbetween.
+
 define void @f7(<4 x i8> *%ptr1, i8 *%ptr2, i8 *%ptr3, i8 *%ptr4) {
-; CHECK-LABEL: f7:
-; CHECK: vlrepf [[REG:%v[0-9]+]], 0(%r2)
-; CHECK-NOT: vup
-; CHECK-DAG: vsteb [[REG]], 0(%r3), 0
-; CHECK-DAG: vsteb [[REG]], 0(%r4), 1
-; CHECK-DAG: vsteb [[REG]], 0(%r5), 3
-; CHECK: br %r14
+
+
+
+
+
+
+
   %vec = load <4 x i8>, <4 x i8> *%ptr1
   %ext = sext <4 x i8> %vec to <4 x i32>
   %bitcast = bitcast <4 x i32> %ext to <8 x i16>

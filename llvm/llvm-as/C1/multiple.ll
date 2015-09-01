@@ -1,14 +1,14 @@
-; RUN: opt < %s -add-discriminators -S | FileCheck %s
 
-; Discriminator support for multiple CFG paths on the same line.
-;
-;       void foo(int i) {
-;         int x;
-;         if (i < 10) x = i; else x = -i;
-;       }
-;
-; The two stores inside the if-then-else line must have different discriminator
-; values.
+
+
+
+
+
+
+
+
+
+
 
 define void @foo(i32 %i) #0 {
 entry:
@@ -19,29 +19,29 @@ entry:
   %cmp = icmp slt i32 %0, 10, !dbg !10
   br i1 %cmp, label %if.then, label %if.else, !dbg !10
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %1 = load i32, i32* %i.addr, align 4, !dbg !10
-; CHECK:  %1 = load i32, i32* %i.addr, align 4, !dbg ![[THEN:[0-9]+]]
+
 
   store i32 %1, i32* %x, align 4, !dbg !10
-; CHECK:  store i32 %1, i32* %x, align 4, !dbg ![[THEN]]
+
 
   br label %if.end, !dbg !10
-; CHECK:  br label %if.end, !dbg ![[THEN]]
 
-if.else:                                          ; preds = %entry
+
+if.else:                                          
   %2 = load i32, i32* %i.addr, align 4, !dbg !10
-; CHECK:  %2 = load i32, i32* %i.addr, align 4, !dbg ![[ELSE:[0-9]+]]
+
 
   %sub = sub nsw i32 0, %2, !dbg !10
-; CHECK:  %sub = sub nsw i32 0, %2, !dbg ![[ELSE]]
+
 
   store i32 %sub, i32* %x, align 4, !dbg !10
-; CHECK:  store i32 %sub, i32* %x, align 4, !dbg ![[ELSE]]
+
 
   br label %if.end
 
-if.end:                                           ; preds = %if.else, %if.then
+if.end:                                           
   ret void, !dbg !12
 }
 
@@ -66,7 +66,7 @@ attributes #0 = { nounwind uwtable "less-precise-fpmad"="false" "no-frame-pointe
 !11 = distinct !DILexicalBlock(line: 3, column: 0, file: !1, scope: !4)
 !12 = !DILocation(line: 4, scope: !4)
 
-; CHECK: ![[THEN]] = !DILocation(line: 3, scope: ![[THENBLOCK:[0-9]+]])
-; CHECK: ![[THENBLOCK]] = !DILexicalBlockFile(scope: ![[SCOPE:[0-9]+]],{{.*}} discriminator: 1)
-; CHECK: ![[ELSE]] = !DILocation(line: 3, scope: ![[ELSEBLOCK:[0-9]+]])
-; CHECK: ![[ELSEBLOCK]] = !DILexicalBlockFile(scope: ![[SCOPE]],{{.*}} discriminator: 2)
+
+
+
+

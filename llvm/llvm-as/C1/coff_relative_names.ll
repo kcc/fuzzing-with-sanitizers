@@ -1,16 +1,16 @@
-; RUN: llc -mtriple=i686-w64-mingw32 -filetype=asm -O0 < %s | FileCheck %s
 
-; CHECK:  	.secrel32 Linfo_string0
-; CHECK:  	.secrel32 Linfo_string1
-;
-; generated from:
-; clang -g -S -emit-llvm test.c -o test.ll
-; int main()
-; {
-; 	return 0;
-; }
 
-; Function Attrs: nounwind
+
+
+
+
+
+
+
+
+
+
+
 define i32 @main() #0 {
 entry:
   %retval = alloca i32, align 4

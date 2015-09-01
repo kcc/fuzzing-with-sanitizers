@@ -1,4 +1,4 @@
-; RUN: opt < %s -instcombine -S | not grep "shufflevector.*i32 8"
+
 
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64-f80:128:128"
 target triple = "i386-apple-darwin9"
@@ -69,34 +69,34 @@ target triple = "i386-apple-darwin9"
 
 define i32 @foo(%struct.State* %dst, <4 x float>* %prgrm, <4 x float>** %buffs, %struct._VMConstants* %cnstn, %struct.PPStreamToken* %pstrm, %struct.PluginBufferData* %gpctx, %struct.VMTextures* %txtrs, %struct.VMGPStack* %gpstk) nounwind {
 bb266.i:
-	getelementptr <4 x float>, <4 x float>* null, i32 11		; <<4 x float>*>:0 [#uses=1]
-	load <4 x float>, <4 x float>* %0, align 16		; <<4 x float>>:1 [#uses=1]
-	shufflevector <4 x float> %1, <4 x float> undef, <4 x i32> < i32 0, i32 1, i32 1, i32 1 >		; <<4 x float>>:2 [#uses=1]
-	shufflevector <4 x float> %2, <4 x float> undef, <4 x i32> < i32 0, i32 4, i32 1, i32 5 >		; <<4 x float>>:3 [#uses=1]
-	shufflevector <4 x float> undef, <4 x float> undef, <4 x i32> < i32 0, i32 4, i32 1, i32 5 >		; <<4 x float>>:4 [#uses=1]
-	shufflevector <4 x float> %4, <4 x float> %3, <4 x i32> < i32 6, i32 7, i32 2, i32 3 >		; <<4 x float>>:5 [#uses=1]
-	fmul <4 x float> %5, zeroinitializer		; <<4 x float>>:6 [#uses=2]
-	fmul <4 x float> %6, %6		; <<4 x float>>:7 [#uses=1]
-	fadd <4 x float> zeroinitializer, %7		; <<4 x float>>:8 [#uses=1]
-	call <4 x float> @llvm.x86.sse.max.ps( <4 x float> zeroinitializer, <4 x float> %8 ) nounwind readnone		; <<4 x float>>:9 [#uses=1]
-	%phitmp40 = bitcast <4 x float> %9 to <4 x i32>		; <<4 x i32>> [#uses=1]
-	%tmp4109.i = and <4 x i32> %phitmp40, < i32 8388607, i32 8388607, i32 8388607, i32 8388607 >		; <<4 x i32>> [#uses=1]
-	%tmp4116.i = or <4 x i32> %tmp4109.i, < i32 1065353216, i32 1065353216, i32 1065353216, i32 1065353216 >		; <<4 x i32>> [#uses=1]
-	%tmp4117.i = bitcast <4 x i32> %tmp4116.i to <4 x float>		; <<4 x float>> [#uses=1]
-	fadd <4 x float> %tmp4117.i, zeroinitializer		; <<4 x float>>:10 [#uses=1]
-	fmul <4 x float> %10, < float 5.000000e-01, float 5.000000e-01, float 5.000000e-01, float 5.000000e-01 >		; <<4 x float>>:11 [#uses=1]
-	call <4 x float> @llvm.x86.sse.max.ps( <4 x float> %11, <4 x float> zeroinitializer ) nounwind readnone		; <<4 x float>>:12 [#uses=1]
-	call <4 x float> @llvm.x86.sse.min.ps( <4 x float> %12, <4 x float> zeroinitializer ) nounwind readnone		; <<4 x float>>:13 [#uses=1]
-	%tmp4170.i = call <4 x float> @llvm.x86.sse.cmp.ps( <4 x float> %13, <4 x float> zeroinitializer, i8 2 ) nounwind		; <<4 x float>> [#uses=1]
-	bitcast <4 x float> %tmp4170.i to <16 x i8>		; <<16 x i8>>:14 [#uses=1]
-	call i32 @llvm.x86.sse2.pmovmskb.128( <16 x i8> %14 ) nounwind readnone		; <i32>:15 [#uses=1]
-	icmp eq i32 %15, 0		; <i1>:16 [#uses=1]
+	getelementptr <4 x float>, <4 x float>* null, i32 11		
+	load <4 x float>, <4 x float>* %0, align 16		
+	shufflevector <4 x float> %1, <4 x float> undef, <4 x i32> < i32 0, i32 1, i32 1, i32 1 >		
+	shufflevector <4 x float> %2, <4 x float> undef, <4 x i32> < i32 0, i32 4, i32 1, i32 5 >		
+	shufflevector <4 x float> undef, <4 x float> undef, <4 x i32> < i32 0, i32 4, i32 1, i32 5 >		
+	shufflevector <4 x float> %4, <4 x float> %3, <4 x i32> < i32 6, i32 7, i32 2, i32 3 >		
+	fmul <4 x float> %5, zeroinitializer		
+	fmul <4 x float> %6, %6		
+	fadd <4 x float> zeroinitializer, %7		
+	call <4 x float> @llvm.x86.sse.max.ps( <4 x float> zeroinitializer, <4 x float> %8 ) nounwind readnone		
+	%phitmp40 = bitcast <4 x float> %9 to <4 x i32>		
+	%tmp4109.i = and <4 x i32> %phitmp40, < i32 8388607, i32 8388607, i32 8388607, i32 8388607 >		
+	%tmp4116.i = or <4 x i32> %tmp4109.i, < i32 1065353216, i32 1065353216, i32 1065353216, i32 1065353216 >		
+	%tmp4117.i = bitcast <4 x i32> %tmp4116.i to <4 x float>		
+	fadd <4 x float> %tmp4117.i, zeroinitializer		
+	fmul <4 x float> %10, < float 5.000000e-01, float 5.000000e-01, float 5.000000e-01, float 5.000000e-01 >		
+	call <4 x float> @llvm.x86.sse.max.ps( <4 x float> %11, <4 x float> zeroinitializer ) nounwind readnone		
+	call <4 x float> @llvm.x86.sse.min.ps( <4 x float> %12, <4 x float> zeroinitializer ) nounwind readnone		
+	%tmp4170.i = call <4 x float> @llvm.x86.sse.cmp.ps( <4 x float> %13, <4 x float> zeroinitializer, i8 2 ) nounwind		
+	bitcast <4 x float> %tmp4170.i to <16 x i8>		
+	call i32 @llvm.x86.sse2.pmovmskb.128( <16 x i8> %14 ) nounwind readnone		
+	icmp eq i32 %15, 0		
 	br i1 %16, label %bb5574.i, label %bb4521.i
 
-bb4521.i:		; preds = %bb266.i
+bb4521.i:		
 	unreachable
 
-bb5574.i:		; preds = %bb266.i
+bb5574.i:		
 	unreachable
 }
 

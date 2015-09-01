@@ -1,5 +1,5 @@
-; RUN: llc < %s -mtriple=armv6-apple-darwin9 -mattr=+vfp2
-; rdar://6653182
+
+
 
 
 %struct.ggBRDF = type { i32 (...)** }
@@ -23,7 +23,7 @@ entry:
   %1 = fcmp ult double 0.000000e+00, %0
   br i1 %1, label %bb3, label %bb7
 
-bb3:                                              ; preds = %entry
+bb3:                                              
   %2 = fdiv double 1.000000e+00, 0.000000e+00
   %3 = fmul double 0.000000e+00, %2
   %4 = call double @llvm.sqrt.f64(double 0.000000e+00) nounwind
@@ -63,16 +63,16 @@ bb3:                                              ; preds = %entry
   store double %33, double* null, align 8
   br i1 false, label %_Z20ggRaySphereIntersectRK6ggRay3RK8ggSphereddRd.exit, label %bb5.i.i.i
 
-bb5.i.i.i:                                        ; preds = %bb3
+bb5.i.i.i:                                        
   unreachable
 
-_Z20ggRaySphereIntersectRK6ggRay3RK8ggSphereddRd.exit: ; preds = %bb3
+_Z20ggRaySphereIntersectRK6ggRay3RK8ggSphereddRd.exit: 
   %37 = fsub double %13, 0.000000e+00
   %38 = fsub double -0.000000e+00, %34
   %39 = fsub double -0.000000e+00, %35
   ret i32 1
 
-bb7:                                              ; preds = %entry
+bb7:                                              
   ret i32 0
 }
 

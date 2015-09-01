@@ -1,6 +1,6 @@
-; RUN:  %lli -remote-mcjit -O0 -mcjit-remote-process=lli-child-target%exeext %s
 
-; Check that a variable is always aligned as specified.
+
+
 
 @var = global i32 0, align 32
 define i32 @main() nounwind {

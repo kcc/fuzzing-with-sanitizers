@@ -1,45 +1,45 @@
-; RUN: llc -march=x86-64 -mtriple=x86_64-linux < %s | FileCheck %s
-; RUN: opt -strip-debug < %s | llc -march=x86-64 -mtriple=x86_64-linux | FileCheck %s
-; http://llvm.org/PR19051. Minor code-motion difference with -g.
-; Presence of debug info shouldn't affect the codegen. Make sure that
-; we generated the same code sequence with and without debug info. 
-;
-; CHECK:      callq   _Z3fooPcjPKc
-; CHECK:      callq   _Z3fooPcjPKc
-; CHECK:      leaq    (%rsp), %rdi
-; CHECK:      movl    $4, %esi
-; CHECK:      testl   {{%[a-z]+}}, {{%[a-z]+}}
-; CHECK:      je     .LBB0_4
 
-; Regenerate test with this command: 
-;   clang -emit-llvm -S -O2 -g
-; from this source:
-;
-; extern void foo(char *dst,unsigned siz,const char *src);
-; extern const char * i2str(int);
-;
-; struct AAA3 {
-;  AAA3(const char *value) { foo(text,sizeof(text),value);}
-;  void operator=(const char *value) { foo(text,sizeof(text),value);}
-;  operator const char*() const { return text;}
-;  char text[4];
-; };
-;
-; void bar (int param1,int param2)  {
-;   const char * temp(0);
-;
-;   if (param2) {
-;     temp = i2str(param2);
-;   }
-;   AAA3 var1("");
-;   AAA3 var2("");
-;
-;   if (param1)
-;     var2 = "+";
-;   else
-;     var2 = "-";
-;   var1 = "";
-; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %struct.AAA3 = type { [4 x i8] }
 
@@ -47,7 +47,7 @@
 @.str1 = private unnamed_addr constant [2 x i8] c"+\00", align 1
 @.str2 = private unnamed_addr constant [2 x i8] c"-\00", align 1
 
-; Function Attrs: uwtable
+
 define void @_Z3barii(i32 %param1, i32 %param2) #0 {
 entry:
   %var1 = alloca %struct.AAA3, align 1
@@ -58,12 +58,12 @@ entry:
   %tobool = icmp eq i32 %param2, 0, !dbg !50
   br i1 %tobool, label %if.end, label %if.then, !dbg !50
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %call = tail call i8* @_Z5i2stri(i32 %param2), !dbg !52
   tail call void @llvm.dbg.value(metadata i8* %call, i64 0, metadata !32, metadata !DIExpression()), !dbg !49
   br label %if.end, !dbg !54
 
-if.end:                                           ; preds = %entry, %if.then
+if.end:                                           
   tail call void @llvm.dbg.value(metadata %struct.AAA3* %var1, i64 0, metadata !33, metadata !DIExpression()), !dbg !55
   tail call void @llvm.dbg.value(metadata %struct.AAA3* %var1, i64 0, metadata !56, metadata !DIExpression()), !dbg !57
   tail call void @llvm.dbg.value(metadata !58, i64 0, metadata !59, metadata !DIExpression()), !dbg !60
@@ -78,19 +78,19 @@ if.end:                                           ; preds = %entry, %if.then
   call void @llvm.dbg.value(metadata %struct.AAA3* %var2, i64 0, metadata !34, metadata !DIExpression()), !dbg !63
   br i1 %tobool1, label %if.else, label %if.then2, !dbg !69
 
-if.then2:                                         ; preds = %if.end
+if.then2:                                         
   call void @llvm.dbg.value(metadata %struct.AAA3* %var2, i64 0, metadata !71, metadata !DIExpression()), !dbg !73
   call void @llvm.dbg.value(metadata !74, i64 0, metadata !75, metadata !DIExpression()), !dbg !76
   call void @_Z3fooPcjPKc(i8* %arraydecay.i5, i32 4, i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str1, i64 0, i64 0)), !dbg !76
   br label %if.end3, !dbg !72
 
-if.else:                                          ; preds = %if.end
+if.else:                                          
   call void @llvm.dbg.value(metadata %struct.AAA3* %var2, i64 0, metadata !77, metadata !DIExpression()), !dbg !79
   call void @llvm.dbg.value(metadata !80, i64 0, metadata !81, metadata !DIExpression()), !dbg !82
   call void @_Z3fooPcjPKc(i8* %arraydecay.i5, i32 4, i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str2, i64 0, i64 0)), !dbg !82
   br label %if.end3
 
-if.end3:                                          ; preds = %if.else, %if.then2
+if.end3:                                          
   call void @llvm.dbg.value(metadata %struct.AAA3* %var1, i64 0, metadata !33, metadata !DIExpression()), !dbg !55
   call void @llvm.dbg.value(metadata %struct.AAA3* %var1, i64 0, metadata !83, metadata !DIExpression()), !dbg !85
   call void @llvm.dbg.value(metadata !58, i64 0, metadata !86, metadata !DIExpression()), !dbg !87
@@ -102,7 +102,7 @@ declare i8* @_Z5i2stri(i32) #1
 
 declare void @_Z3fooPcjPKc(i8*, i32, i8*) #1
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #2
 
 attributes #0 = { uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

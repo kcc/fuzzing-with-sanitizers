@@ -1,28 +1,28 @@
-; REQUIRES: object-emission
 
-; RUN: %llc_dwarf -filetype=obj < %s > %t
-; RUN: llvm-dwarfdump %t | FileCheck %s
 
-; IR generated from clang -O -g with the following source
-;
-; void f1(int x, int y);
-; void f3(int line);
-; void f2() {
-;   f1(1, 2);
-; }
-; void f1(int x, int y) {
-;   f3(y);
-; }
 
-; CHECK: DW_AT_name{{.*}}"f1"
-; CHECK: DW_TAG_formal_parameter
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_name{{.*}}"x"
-; CHECK: DW_TAG_formal_parameter
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_name{{.*}}"y"
 
-; Function Attrs: uwtable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @_Z2f2v() #0 {
   tail call void @llvm.dbg.value(metadata i32 undef, i64 0, metadata !16, metadata !DIExpression()), !dbg !18
   tail call void @llvm.dbg.value(metadata i32 2, i64 0, metadata !20, metadata !DIExpression()), !dbg !18
@@ -30,7 +30,7 @@ define void @_Z2f2v() #0 {
   ret void, !dbg !22
 }
 
-; Function Attrs: uwtable
+
 define void @_Z2f1ii(i32 %x, i32 %y) #0 {
   tail call void @llvm.dbg.value(metadata i32 %x, i64 0, metadata !13, metadata !DIExpression()), !dbg !23
   tail call void @llvm.dbg.value(metadata i32 %y, i64 0, metadata !14, metadata !DIExpression()), !dbg !23
@@ -40,7 +40,7 @@ define void @_Z2f1ii(i32 %x, i32 %y) #0 {
 
 declare void @_Z2f3i(i32) #1
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #2
 
 attributes #0 = { uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "unsafe-fp-math"="false" "use-soft-float"="false" }

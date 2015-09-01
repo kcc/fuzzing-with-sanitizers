@@ -1,7 +1,7 @@
-; RUN: llc < %s
-; Verify codegen's don't crash on overflow intrinsics.
 
-;; SADD
+
+
+
 
 define zeroext i8 @sadd_i8(i8 signext %a, i8 signext %b) nounwind ssp {
 entry:
@@ -37,7 +37,7 @@ entry:
 declare { i32, i1 } @llvm.sadd.with.overflow.i32(i32, i32) nounwind readnone
 
 
-;; UADD
+
 
 define zeroext i8 @uadd_i8(i8 signext %a, i8 signext %b) nounwind ssp {
 entry:
@@ -74,7 +74,7 @@ declare { i32, i1 } @llvm.uadd.with.overflow.i32(i32, i32) nounwind readnone
 
 
 
-;; ssub
+
 
 define zeroext i8 @ssub_i8(i8 signext %a, i8 signext %b) nounwind ssp {
 entry:
@@ -110,7 +110,7 @@ entry:
 declare { i32, i1 } @llvm.ssub.with.overflow.i32(i32, i32) nounwind readnone
 
 
-;; usub
+
 
 define zeroext i8 @usub_i8(i8 signext %a, i8 signext %b) nounwind ssp {
 entry:
@@ -147,7 +147,7 @@ declare { i32, i1 } @llvm.usub.with.overflow.i32(i32, i32) nounwind readnone
 
 
 
-;; smul
+
 
 define zeroext i8 @smul_i8(i8 signext %a, i8 signext %b) nounwind ssp {
 entry:
@@ -183,7 +183,7 @@ entry:
 declare { i32, i1 } @llvm.smul.with.overflow.i32(i32, i32) nounwind readnone
 
 
-;; umul
+
 
 define zeroext i8 @umul_i8(i8 signext %a, i8 signext %b) nounwind ssp {
 entry:

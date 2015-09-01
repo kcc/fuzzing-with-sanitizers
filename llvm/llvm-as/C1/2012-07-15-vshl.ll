@@ -1,5 +1,5 @@
-; RUN: llc < %s -march=x86 -mcpu=corei7 -mattr=+avx
-; PR13352
+
+
 
 declare <8 x float> @llvm.x86.avx.blendv.ps.256(<8 x float>, <8 x float>, <8 x float>) nounwind readnone
 
@@ -7,7 +7,7 @@ define void @f_f() nounwind {
 allocas:
   br label %for_loop29
 
-for_loop29:                                       ; preds = %safe_if_after_true, %allocas
+for_loop29:                                       
   %indvars.iv596 = phi i64 [ %indvars.iv.next597, %safe_if_after_true ], [ 0, %allocas ]
   %0 = trunc i64 %indvars.iv596 to i32
   %smear.15 = insertelement <16 x i32> undef, i32 %0, i32 15
@@ -20,11 +20,11 @@ for_loop29:                                       ; preds = %safe_if_after_true,
   %"internal_mask&function_mask41_any" = icmp eq i32 undef, 0
   br i1 %"internal_mask&function_mask41_any", label %safe_if_after_true, label %safe_if_run_true
 
-safe_if_after_true:                               ; preds = %for_loop29
+safe_if_after_true:                               
   %indvars.iv.next597 = add i64 %indvars.iv596, 1
   br label %for_loop29
 
-safe_if_run_true:                                 ; preds = %for_loop29
+safe_if_run_true:                                 
   %blend1.i583 = call <8 x float> @llvm.x86.avx.blendv.ps.256(<8 x float> undef, <8 x float> undef, <8 x float> %mask1.i529) nounwind
   unreachable
 }

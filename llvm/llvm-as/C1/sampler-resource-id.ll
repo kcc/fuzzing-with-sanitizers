@@ -1,10 +1,10 @@
-; RUN: llc -march=r600 -mcpu=juniper < %s | FileCheck -check-prefix=EG -check-prefix=FUNC %s
 
-; FUNC-LABEL: {{^}}test_0:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], literal.x
-; EG-NEXT: LSHR
-; EG-NEXT: 0(
+
+
+
+
+
+
 define void @test_0(i32 %in0, i32 addrspace(1)* %out) {
 entry:
   %0 = call i32 @llvm.OpenCL.sampler.get.resource.id(i32 %in0) #0
@@ -12,11 +12,11 @@ entry:
   ret void
 }
 
-; FUNC-LABEL: {{^}}test_1:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], literal.x
-; EG-NEXT: LSHR
-; EG-NEXT: 1(
+
+
+
+
+
 define void @test_1(i32 %in0, i32 %in1, i32 addrspace(1)* %out) {
 entry:
   %0 = call i32 @llvm.OpenCL.sampler.get.resource.id(i32 %in1) #0
@@ -24,11 +24,11 @@ entry:
   ret void
 }
 
-; FUNC-LABEL: {{^}}test_2:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], literal.x
-; EG-NEXT: LSHR
-; EG-NEXT: 2(
+
+
+
+
+
 define void @test_2(i32 %in0, i32 %in1, i32 %in2, i32 addrspace(1)* %out) {
 entry:
   %0 = call i32 @llvm.OpenCL.sampler.get.resource.id(i32 %in2) #0

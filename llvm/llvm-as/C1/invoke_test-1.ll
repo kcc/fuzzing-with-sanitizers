@@ -1,8 +1,8 @@
-; Test that we can inline a simple function, turning the calls in it into invoke
-; instructions
 
-; RUN: opt < %s -inline -S | \
-; RUN:   not grep "call[^e]"
+
+
+
+
 
 declare void @might_throw()
 
@@ -11,15 +11,15 @@ define internal void @callee() {
         ret void
 }
 
-; caller returns true if might_throw throws an exception...
+
 define i32 @caller() personality i32 (...)* @__gxx_personality_v0 {
         invoke void @callee( )
                         to label %cont unwind label %exc
 
-cont:           ; preds = %0
+cont:           
         ret i32 0
 
-exc:            ; preds = %0
+exc:            
         %exn = landingpad {i8*, i32}
                  cleanup
         ret i32 1

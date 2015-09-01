@@ -1,7 +1,7 @@
-; RUN: llc < %s -mtriple=i386-pc-win32 -mcpu=corei7 | FileCheck %s
-; RUN: llc < %s -mtriple=x86_64-unknown-linux-gnu -mcpu=core-avx2 | FileCheck %s --check-prefix=X64
 
-; ModuleID = 'a.bc'
+
+
+
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-f80:128:128-v64:64:64-v128:128:128-a0:0:64-f80:32:32-n8:16:32-S32"
 target triple = "i386-pc-win32"
 
@@ -13,10 +13,10 @@ define <4 x i32> @"bar"(%v4_varying_big_struct %s, <4 x i32> %__mask) nounwind {
 allocas:
   %calltmp = call <4 x i32> @"foo"(%v4_varying_big_struct %s, <4 x i32> %__mask)
   ret <4 x i32> %calltmp
-; CHECK: bar
-; CHECK: andl
-; CHECK: call
-; CHECK: ret
+
+
+
+
 }
 
 declare <8 x float> @bar64(<8 x float> %i0, <8 x float> %i1,
@@ -51,8 +51,8 @@ define <8 x float> @foo64(<8 x float>* %p) {
                                     <8 x float> %7, <8 x float> %8,
                                     <8 x float> %9, <8 x float> %10)
   ret <8 x float> %r
-; X64: foo
-; X64: and
-; X64: call
-; X64: ret
+
+
+
+
 }

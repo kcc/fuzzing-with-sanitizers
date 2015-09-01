@@ -1,7 +1,7 @@
-; RUN: not llvm-as -disable-output <%s 2>&1 | FileCheck %s
-; CHECK: invalid llvm.dbg.value intrinsic expression
-; CHECK-NEXT: call void @llvm.dbg.value({{.*}})
-; CHECK-NEXT: !""
+
+
+
+
 
 define void @foo(i32 %a) {
 entry:

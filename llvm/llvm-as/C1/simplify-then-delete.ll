@@ -1,13 +1,13 @@
-; RUN: opt < %s -S -indvars -loop-deletion -simplifycfg | FileCheck %s
-; PR5794
 
-; Indvars and loop deletion should be able to eliminate all looping
-; in this testcase.
 
-; CHECK:      define i32 @pmat(i32 %m, i32 %n, double* %y) #0 {
-; CHECK-NEXT: entry:
-; CHECK-NEXT:   ret i32 0
-; CHECK-NEXT: }
+
+
+
+
+
+
+
+
 
 target datalayout = "e-p:64:64:64"
 
@@ -64,4 +64,4 @@ w.e12:
   ret i32 0
 }
 
-; CHECK: attributes #0 = { nounwind }
+

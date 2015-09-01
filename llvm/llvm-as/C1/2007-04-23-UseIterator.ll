@@ -1,4 +1,4 @@
-; RUN: opt < %s -loop-reduce -disable-output
+
 
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64"
 
@@ -14,18 +14,18 @@ entry:
 		 i8 37, label %bb16.preheader
 	]
 
-bb16.preheader:		; preds = %entry
+bb16.preheader:		
 	br label %bb16
 
-bb16:		; preds = %cond_next102, %bb16.preheader
-	%indvar = phi i32 [ %indvar.next, %cond_next102 ], [ 0, %bb16.preheader ]		; <i32> [#uses=2]
-	%ABC.2146.0.rec = mul i32 %indvar, 3		; <i32> [#uses=1]
+bb16:		
+	%indvar = phi i32 [ %indvar.next, %cond_next102 ], [ 0, %bb16.preheader ]		
+	%ABC.2146.0.rec = mul i32 %indvar, 3		
 	br i1 false, label %UnifiedReturnBlock.loopexit, label %cond_next102
 
-cond_next102:		; preds = %bb16
-	%tmp138145.rec = add i32 %ABC.2146.0.rec, 3		; <i32> [#uses=1]
-	%tmp138145 = getelementptr i8, i8* %ABC, i32 %tmp138145.rec		; <i8*> [#uses=4]
-	%indvar.next = add i32 %indvar, 1		; <i32> [#uses=1]
+cond_next102:		
+	%tmp138145.rec = add i32 %ABC.2146.0.rec, 3		
+	%tmp138145 = getelementptr i8, i8* %ABC, i32 %tmp138145.rec		
+	%indvar.next = add i32 %indvar, 1		
 	switch i8 0, label %bb129.loopexit [
 		 i8 0, label %UnifiedReturnBlock.loopexit
 		 i8 9, label %UnifiedReturnBlock.loopexit
@@ -34,17 +34,17 @@ cond_next102:		; preds = %bb16
 		 i8 37, label %bb16
 	]
 
-bb129.loopexit:		; preds = %cond_next102
+bb129.loopexit:		
 	br label %bb129
 
-bb129:		; preds = %bb129.loopexit, %entry
+bb129:		
 	ret i8* null
 
-UnifiedReturnBlock.loopexit:		; preds = %cond_next102, %cond_next102, %cond_next102, %cond_next102, %bb16
-	%UnifiedRetVal.ph = phi i8* [ %tmp138145, %cond_next102 ], [ %tmp138145, %cond_next102 ], [ %tmp138145, %cond_next102 ], [ %tmp138145, %cond_next102 ], [ null, %bb16 ]		; <i8*> [#uses=0]
+UnifiedReturnBlock.loopexit:		
+	%UnifiedRetVal.ph = phi i8* [ %tmp138145, %cond_next102 ], [ %tmp138145, %cond_next102 ], [ %tmp138145, %cond_next102 ], [ %tmp138145, %cond_next102 ], [ null, %bb16 ]		
 	br label %UnifiedReturnBlock
 
-UnifiedReturnBlock:		; preds = %UnifiedReturnBlock.loopexit, %entry, %entry, %entry, %entry
+UnifiedReturnBlock:		
 	ret i8* null
 }
 
@@ -56,16 +56,16 @@ entry:
 		 i8 64, label %bb11
 	]
 
-bb11:		; preds = %entry
+bb11:		
 	ret i8* null
 
-cond_true:		; preds = %entry
+cond_true:		
 	ret i8* null
 
-bb74:		; preds = %entry
+bb74:		
 	ret i8* null
 
-bb158:		; preds = %entry
+bb158:		
 	ret i8* null
 }
 

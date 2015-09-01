@@ -1,15 +1,15 @@
-; Tests to ensure that we are not placing backedge safepoints in
-; loops which are clearly finite.
-;; RUN: opt %s -place-safepoints -S | FileCheck %s
 
 
-; A simple counted loop with trivially known range
+
+
+
+
 define void @test1(i32) gc "statepoint-example" {
-; CHECK-LABEL: test1
-; CHECK-LABEL: entry
-; CHECK: statepoint
-; CHECK-LABEL: loop
-; CHECK-NOT: statepoint
+
+
+
+
+
 
 entry:
   br label %loop
@@ -24,13 +24,13 @@ exit:
   ret void
 }
 
-; The same counted loop, but with an unknown early exit
+
 define void @test2(i32) gc "statepoint-example" {
-; CHECK-LABEL: test2
-; CHECK-LABEL: entry
-; CHECK: statepoint
-; CHECK-LABEL: loop
-; CHECK-NOT: statepoint
+
+
+
+
+
 
 entry:
   br label %loop
@@ -48,13 +48,13 @@ exit:
   ret void
 }
 
-; The range is a 8 bit value and we can't overflow
+
 define void @test3(i8 %upper) gc "statepoint-example" {
-; CHECK-LABEL: test3
-; CHECK-LABEL: entry
-; CHECK: statepoint
-; CHECK-LABEL: loop
-; CHECK-NOT: statepoint
+
+
+
+
+
 
 entry:
   br label %loop
@@ -70,10 +70,10 @@ exit:
 }
 
 
-; This function is inlined when inserting a poll.
+
 declare void @do_safepoint()
 define void @gc.safepoint_poll() {
-; CHECK-LABEL: gc.safepoint_poll
+
 entry:
   call void @do_safepoint()
   ret void

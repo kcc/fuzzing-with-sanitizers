@@ -1,4 +1,4 @@
-; RUN: llc < %s -march=x86-64
+
 
 	%struct.DrawHelper = type { void (i32, %struct.QT_FT_Span*, i8*)*, void (i32, %struct.QT_FT_Span*, i8*)*, void (%struct.QRasterBuffer*, i32, i32, i32, i8*, i32, i32, i32)*, void (%struct.QRasterBuffer*, i32, i32, i32, i8*, i32, i32, i32)*, void (%struct.QRasterBuffer*, i32, i32, i32, i32, i32)* }
 	%struct.QBasicAtomic = type { i32 }
@@ -16,13 +16,13 @@ define hidden void @_Z24qt_bitmapblit16_sse3dnowP13QRasterBufferiijPKhiii(%struc
 entry:
 	br i1 false, label %bb.nph144.split, label %bb133
 
-bb.nph144.split:		; preds = %entry
+bb.nph144.split:		
         %tmp = bitcast <8 x i8> zeroinitializer to x86_mmx
         %tmp2 = bitcast <8 x i8> zeroinitializer to x86_mmx
 	tail call void @llvm.x86.mmx.maskmovq( x86_mmx %tmp, x86_mmx %tmp2, i8* null ) nounwind
 	unreachable
 
-bb133:		; preds = %entry
+bb133:		
 	ret void
 }
 

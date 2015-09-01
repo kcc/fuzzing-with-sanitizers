@@ -1,13 +1,13 @@
-; RUN: llc < %s -verify-machineinstrs
-; PR8612
-;
-; This test has an inline asm with early-clobber arguments.
-; It is big enough that one of the early clobber registers is spilled.
-;
-; All the spillers would get the live ranges wrong when spilling an early
-; clobber, allowing the undef register to be allocated to the same register as
-; the early clobber.
-;
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:64:128-a0:0:64-n32"
 target triple = "armv7-eabi"
 
@@ -17,22 +17,22 @@ define void @foo(i32* %in) nounwind {
 entry:
   br label %bb.i
 
-bb.i:                                             ; preds = %bb.i, %entry
+bb.i:                                             
   br i1 undef, label %bb10.preheader.i, label %bb.i
 
-bb10.preheader.i:                                 ; preds = %bb.i
+bb10.preheader.i:                                 
   br label %bb10.i
 
-bb10.i:                                           ; preds = %bb10.i, %bb10.preheader.i
+bb10.i:                                           
   br i1 undef, label %bb27.i, label %bb10.i
 
-bb27.i:                                           ; preds = %bb10.i
+bb27.i:                                           
   br label %bb28.i
 
-bb28.i:                                           ; preds = %bb28.i, %bb27.i
+bb28.i:                                           
   br i1 undef, label %presymmetry.exit, label %bb28.i
 
-presymmetry.exit:                                 ; preds = %bb28.i
+presymmetry.exit:                                 
   %tmp175387 = or i32 undef, 12
   %scevgep101.i = getelementptr i32, i32* %in, i32 undef
   %tmp189401 = or i32 undef, 7

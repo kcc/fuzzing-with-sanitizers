@@ -1,9 +1,9 @@
-; RUN: llc < %s -march=x86 -mattr=+sse2 -mattr=+mmx | not grep unpcklpd
-; RUN: llc < %s -march=x86 -mattr=+sse2 -mattr=+mmx | not grep unpckhpd
-; RUN: llc < %s -march=x86 -mattr=+sse2 | grep cvttpd2pi | count 1
-; RUN: llc < %s -march=x86 -mattr=+sse2 | grep cvtpi2pd | count 1
-; originally from PR2687, but things don't work that way any more.
-; there are no MMX instructions here; we use XMM.
+
+
+
+
+
+
 
 define <2 x double> @a(<2 x i32> %x) nounwind {
 entry:
@@ -17,7 +17,7 @@ entry:
   ret <2 x i32> %y
 }
 
-; This is how to get MMX instructions.
+
 
 define <2 x double> @a2(x86_mmx %x) nounwind {
 entry:

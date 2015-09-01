@@ -1,6 +1,6 @@
-; RUN: llc -mcpu=pwr8 -mtriple=powerpc64le-unknown-linux-gnu < %s | FileCheck %s
 
-; Test case adapted from PR24216.
+
+
 
 define void @foo(<16 x i8>* nocapture readonly %in, <16 x i8>* nocapture %out) {
 entry:
@@ -10,5 +10,5 @@ entry:
   ret void
 }
 
-; CHECK: vperm
-; CHECK-NOT: vspltw
+
+

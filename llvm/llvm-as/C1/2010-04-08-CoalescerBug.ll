@@ -1,9 +1,9 @@
-; RUN: llc < %s -mtriple=x86_64-apple-darwin -mcpu=core2 | FileCheck %s
-; rdar://7842028
 
-; Do not delete partially dead copy instructions.
-; %RDI<def,dead> = MOV64rr %RAX<kill>, %EDI<imp-def>
-; REP_MOVSD %ECX<imp-def,dead>, %EDI<imp-def,dead>, %ESI<imp-def,dead>, %ECX<imp-use,kill>, %EDI<imp-use,kill>, %ESI<imp-use,kill>
+
+
+
+
+
 
 
 %struct.F = type { %struct.FC*, i32, i32, i8, i32, i32, i32 }
@@ -11,8 +11,8 @@
 
 define void @t(%struct.F* %this) nounwind {
 entry:
-; CHECK-LABEL: t:
-; CHECK: addq $12, %rsi
+
+
   %BitValueArray = alloca [32 x i32], align 4
   %tmp2 = getelementptr inbounds %struct.F, %struct.F* %this, i64 0, i32 0
   %tmp3 = load %struct.FC*, %struct.FC** %tmp2, align 8

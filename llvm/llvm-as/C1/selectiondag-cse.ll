@@ -1,12 +1,12 @@
-; RUN: llc < %s
-; PR12599
-;
-; This bitcode causes the X86 target to make changes to the DAG during
-; selection in MatchAddressRecursively. The edit triggers CSE which causes both
-; the current node and yet-to-be-selected nodes to be deleted.
-;
-; SelectionDAGISel::DoInstructionSelection must handle that.
-;
+
+
+
+
+
+
+
+
+
 target triple = "x86_64-apple-macosx"
 
 %0 = type { i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i8**, i8**, i32, i32***, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, [9 x [16 x [16 x i16]]], [5 x [16 x [16 x i16]]], [9 x [8 x [8 x i16]]], [2 x [4 x [16 x [16 x i16]]]], [16 x [16 x i16]], [16 x [16 x i32]], i32****, i32***, i32***, i32***, i32****, i32****, %1*, %2*, %9*, i32*, i32*, i32, i32, i32, i32, [4 x [4 x i32]], i32, i32, i32, i32, i32, double, i32, i32, i32, i32, i16******, i16******, i16******, i16******, [15 x i16], i32, i32, i32, i32, i32, i32, i32, i32, [6 x [32 x i32]], i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, [1 x i32], i32, i32, [2 x i32], i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %10*, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, double**, double***, i32***, double**, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, [3 x [2 x i32]], [2 x i32], i32, i32, i16, i32, i32, i32, i32, i32 }
@@ -64,6 +64,6 @@ bb5:
   store i16 %tmp34, i16* getelementptr inbounds (%0, %0* @images, i64 0, i32 47, i64 7, i64 1, i64 3), align 2
   br label %bb35
 
-bb35:                                             ; preds = %bb5, %bb4
+bb35:                                             
   unreachable
 }

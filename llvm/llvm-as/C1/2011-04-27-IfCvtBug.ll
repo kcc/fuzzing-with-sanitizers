@@ -1,11 +1,11 @@
-; RUN: llc < %s -mtriple=thumbv7-apple-ios
 
-; If converter was being too cute. It look for root BBs (which don't have
-; successors) and use inverse depth first search to traverse the BBs. However
-; that doesn't work when the CFG has infinite loops. Simply do a linear
-; traversal of all BBs work just fine.
 
-; rdar://9344645
+
+
+
+
+
+
 
 %struct.hc = type { i32, i32, i32, i32 }
 

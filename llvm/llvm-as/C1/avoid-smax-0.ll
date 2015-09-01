@@ -1,9 +1,9 @@
-; RUN: opt < %s -scalar-evolution -analyze | FileCheck %s
 
-; CHECK: Loop %bb3: backedge-taken count is (-1 + %n)
 
-; We don't want to use a max in the trip count expression in
-; this testcase.
+
+
+
+
 
 define void @foo(i32 %n, i32* %p, i32* %q) nounwind {
 entry:

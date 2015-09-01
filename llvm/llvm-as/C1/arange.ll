@@ -1,24 +1,24 @@
-; REQUIRES: object-emission
 
-; RUN: llc -mtriple=x86_64-linux -O0 -filetype=obj -generate-arange-section < %s | llvm-dwarfdump -debug-dump=aranges - | FileCheck %s
-; RUN: llc -mtriple=x86_64-linux -O0 -filetype=obj -generate-arange-section < %s | llvm-readobj --relocations - | FileCheck --check-prefix=OBJ %s
 
-; extern int i;
-; template<int *x>
-; struct foo {
-; };
-;
-; foo<&i> f;
 
-; Check that we only have one arange in this compilation unit (it will be for 'f'), and not an extra one (for 'i' - since it isn't actually defined in this CU)
 
-; CHECK: Address Range Header
-; CHECK-NEXT: [0x
-; CHECK-NOT: [0x
 
-; Check that we have a relocation back to the debug_info section from the debug_aranges section
-; OBJ: debug_aranges
-; OBJ-NEXT: R_X86_64_32 .debug_info 0x0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %struct.foo = type { i8 }
 

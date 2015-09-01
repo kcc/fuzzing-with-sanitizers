@@ -1,12 +1,12 @@
-; RUN: opt < %s -simplifycfg -S | FileCheck %s
 
-; Test that a lifetime intrinsic isn't removed because that would change semantics
 
-; CHECK: foo
-; CHECK: entry:
-; CHECK: bb0:
-; CHECK: bb1:
-; CHECK: ret
+
+
+
+
+
+
+
 define void @foo(i1 %x) {
 entry:
   %a = alloca i8

@@ -1,4 +1,4 @@
-; RUN: llc < %s -mcpu=pentium4 -mtriple=i686-pc-linux | FileCheck %s
+
 
 define i64 @foo(i32 %sum) {
 entry:
@@ -8,9 +8,9 @@ entry:
   ret i64 %or
 }
 
-; CHECK: foo
-; CHECK: shrl $2
-; CHECK: orl $-67108864
-; CHECK-NOT: movl $-1
-; CHECK: movl $1073741823
-; CHECK: ret
+
+
+
+
+
+

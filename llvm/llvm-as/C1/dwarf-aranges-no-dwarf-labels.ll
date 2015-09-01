@@ -1,45 +1,45 @@
-; RUN: llc -generate-arange-section < %s | FileCheck %s
-
-; CHECK: .short  2 # DWARF Arange version number
-; CHECK: # Segment Size
-; CHECK-NOT: debug_loc
-; CHECK: .quad global
-; CHECK-NOT: debug_loc
-; CHECK: # ARange terminator
-
-; --- Source code ---
-; Generated with "clang -g -O1 -S -emit-llvm"
-
-; int global = 2;
-; int foo(int bar) { return bar; }
-; int foo2(int bar2) { return bar2; }
-
-; int main() {
-;   return foo(2) + foo2(1) + global;
-; }
 
 
-; ModuleID = 'tmp/debug_ranges/a.cc'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
 @global = global i32 2, align 4
 
-; Function Attrs: nounwind readnone uwtable
+
 define i32 @_Z3fooi(i32 %bar) #0 {
 entry:
   tail call void @llvm.dbg.value(metadata i32 %bar, i64 0, metadata !10, metadata !DIExpression()), !dbg !20
   ret i32 %bar, !dbg !20
 }
 
-; Function Attrs: nounwind readnone uwtable
+
 define i32 @_Z4foo2i(i32 %bar2) #0 {
 entry:
   tail call void @llvm.dbg.value(metadata i32 %bar2, i64 0, metadata !13, metadata !DIExpression()), !dbg !21
   ret i32 %bar2, !dbg !21
 }
 
-; Function Attrs: nounwind readonly uwtable
+
 define i32 @main() #1 {
 entry:
   %call = tail call i32 @_Z3fooi(i32 2), !dbg !22
@@ -50,7 +50,7 @@ entry:
   ret i32 %add2, !dbg !22
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #2
 
 attributes #0 = { nounwind readnone uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

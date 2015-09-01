@@ -1,6 +1,6 @@
-; Verify that the .toc section is aligned on an 8-byte boundary.
 
-; RUN: llc < %s -mtriple=powerpc64-unknown-linux-gnu -mcpu=pwr8 -filetype=obj -o - | llvm-readobj --sections | FileCheck %s
+
+
 
 define void @test(i32* %a) {
 entry:
@@ -20,59 +20,59 @@ entry:
     i32 2, label %sw.bb6
   ]
 
-sw.bb:                                            ; preds = %entry
+sw.bb:                                            
   %2 = load i32*,  i32** %a.addr, align 8
   store i32 2, i32* %2, align 4
   br label %sw.epilog
 
-sw.bb1:                                           ; preds = %entry
+sw.bb1:                                           
   %3 = load i32*,  i32** %a.addr, align 8
   store i32 3, i32* %3, align 4
   br label %sw.epilog
 
-sw.bb2:                                           ; preds = %entry
+sw.bb2:                                           
   %4 = load i32*,  i32** %a.addr, align 8
   store i32 5, i32* %4, align 4
   br label %sw.epilog
 
-sw.bb3:                                           ; preds = %entry
+sw.bb3:                                           
   %5 = load i32*,  i32** %a.addr, align 8
   store i32 7, i32* %5, align 4
   br label %sw.epilog
 
-sw.bb4:                                           ; preds = %entry
+sw.bb4:                                           
   %6 = load i32*,  i32** %a.addr, align 8
   store i32 11, i32* %6, align 4
   br label %sw.epilog
 
-sw.bb5:                                           ; preds = %entry
+sw.bb5:                                           
   %7 = load i32*,  i32** %a.addr, align 8
   store i32 13, i32* %7, align 4
   br label %sw.epilog
 
-sw.bb6:                                           ; preds = %entry
+sw.bb6:                                           
   %8 = load i32*,  i32** %a.addr, align 8
   store i32 17, i32* %8, align 4
   br label %sw.epilog
 
-sw.epilog:                                        ; preds = %entry, %sw.bb6, %sw.bb5, %sw.bb4, %sw.bb3, %sw.bb2, %sw.bb1, %sw.bb
+sw.epilog:                                        
   ret void
 }
 
-; CHECK: Name: .toc
-; CHECK: AddressAlignment: 8
-; CHECK: Name: .rela.toc
 
-; This test was generated from the following from PR22711:
 
-;void test(int *a) {
-;  switch (*a++) {
-;  case 17: *a =  2; break;
-;  case 13: *a =  3; break;
-;  case 11: *a =  5; break;
-;  case  7: *a =  7; break;
-;  case  5: *a = 11; break;
-;  case  3: *a = 13; break;
-;  case  2: *a = 17; break;
-;  }
-;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

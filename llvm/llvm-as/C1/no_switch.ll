@@ -1,33 +1,33 @@
-; RUN: opt < %s -loop-vectorize -force-vector-width=4 -S 2>&1 | FileCheck %s
-; RUN: opt < %s -loop-vectorize -force-vector-width=1 -S 2>&1 | FileCheck %s -check-prefix=NOANALYSIS
-; RUN: opt < %s -loop-vectorize -force-vector-width=4 -pass-remarks-missed='loop-vectorize' -S 2>&1 | FileCheck %s -check-prefix=MOREINFO
 
-; CHECK: remark: source.cpp:4:5: loop not vectorized: loop contains a switch statement
-; CHECK: warning: source.cpp:4:5: loop not vectorized: failed explicitly specified loop vectorization
 
-; NOANALYSIS-NOT: remark: {{.*}}
-; NOANALYSIS: warning: source.cpp:4:5: loop not interleaved: failed explicitly specified loop interleaving
 
-; MOREINFO: remark: source.cpp:4:5: loop not vectorized: loop contains a switch statement
-; MOREINFO: remark: source.cpp:4:5: loop not vectorized: use -Rpass-analysis=loop-vectorize for more info (Force=true, Vector Width=4)
-; MOREINFO: warning: source.cpp:4:5: loop not vectorized: failed explicitly specified loop vectorization
 
-; CHECK: _Z11test_switchPii
-; CHECK-NOT: x i32>
-; CHECK: ret
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 
-; Function Attrs: nounwind optsize ssp uwtable
+
 define void @_Z11test_switchPii(i32* nocapture %A, i32 %Length) #0 {
 entry:
   %cmp18 = icmp sgt i32 %Length, 0, !dbg !10
   br i1 %cmp18, label %for.body.preheader, label %for.end, !dbg !10, !llvm.loop !12
 
-for.body.preheader:                               ; preds = %entry
+for.body.preheader:                               
   br label %for.body, !dbg !14
 
-for.body:                                         ; preds = %for.body.preheader, %for.inc
+for.body:                                         
   %indvars.iv = phi i64 [ %indvars.iv.next, %for.inc ], [ 0, %for.body.preheader ]
   %arrayidx = getelementptr inbounds i32, i32* %A, i64 %indvars.iv, !dbg !14
   %0 = load i32, i32* %arrayidx, align 4, !dbg !14, !tbaa !16
@@ -36,17 +36,17 @@ for.body:                                         ; preds = %for.body.preheader,
     i32 1, label %sw.bb3
   ], !dbg !14
 
-sw.bb:                                            ; preds = %for.body
+sw.bb:                                            
   %1 = trunc i64 %indvars.iv to i32, !dbg !20
   %mul = shl nsw i32 %1, 1, !dbg !20
   br label %for.inc, !dbg !22
 
-sw.bb3:                                           ; preds = %for.body
+sw.bb3:                                           
   %2 = trunc i64 %indvars.iv to i32, !dbg !23
   store i32 %2, i32* %arrayidx, align 4, !dbg !23, !tbaa !16
   br label %for.inc, !dbg !23
 
-for.inc:                                          ; preds = %sw.bb3, %for.body, %sw.bb
+for.inc:                                          
   %storemerge = phi i32 [ %mul, %sw.bb ], [ 0, %for.body ], [ 0, %sw.bb3 ]
   store i32 %storemerge, i32* %arrayidx, align 4, !dbg !20, !tbaa !16
   %indvars.iv.next = add nuw nsw i64 %indvars.iv, 1, !dbg !10
@@ -54,10 +54,10 @@ for.inc:                                          ; preds = %sw.bb3, %for.body, 
   %exitcond = icmp eq i32 %lftr.wideiv, %Length, !dbg !10
   br i1 %exitcond, label %for.end.loopexit, label %for.body, !dbg !10, !llvm.loop !12
 
-for.end.loopexit:                                 ; preds = %for.inc
+for.end.loopexit:                                 
   br label %for.end
 
-for.end:                                          ; preds = %for.end.loopexit, %entry
+for.end:                                          
   ret void, !dbg !24
 }
 

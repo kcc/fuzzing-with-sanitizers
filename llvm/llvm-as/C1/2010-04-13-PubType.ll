@@ -1,28 +1,28 @@
-; RUN: llc -O0 -asm-verbose -mtriple=x86_64-macosx -generate-dwarf-pub-sections=Enable < %s | FileCheck %s
-; CHECK-NOT: .asciz "X" ## External Name
-; CHECK: .asciz "Y" ## External Name
-; Test to check type with no definition is listed in pubtypes section.
+
+
+
+
 %struct.X = type opaque
 %struct.Y = type { i32 }
 
 define i32 @foo(%struct.X* %x, %struct.Y* %y) nounwind ssp {
 entry:
-  %x_addr = alloca %struct.X*                     ; <%struct.X**> [#uses=1]
-  %y_addr = alloca %struct.Y*                     ; <%struct.Y**> [#uses=1]
-  %retval = alloca i32                            ; <i32*> [#uses=2]
-  %0 = alloca i32                                 ; <i32*> [#uses=2]
-  %"alloca point" = bitcast i32 0 to i32          ; <i32> [#uses=0]
+  %x_addr = alloca %struct.X*                     
+  %y_addr = alloca %struct.Y*                     
+  %retval = alloca i32                            
+  %0 = alloca i32                                 
+  %"alloca point" = bitcast i32 0 to i32          
   call void @llvm.dbg.declare(metadata %struct.X** %x_addr, metadata !0, metadata !DIExpression()), !dbg !13
   store %struct.X* %x, %struct.X** %x_addr
   call void @llvm.dbg.declare(metadata %struct.Y** %y_addr, metadata !14, metadata !DIExpression()), !dbg !13
   store %struct.Y* %y, %struct.Y** %y_addr
   store i32 0, i32* %0, align 4, !dbg !13
-  %1 = load i32, i32* %0, align 4, !dbg !13            ; <i32> [#uses=1]
+  %1 = load i32, i32* %0, align 4, !dbg !13            
   store i32 %1, i32* %retval, align 4, !dbg !13
   br label %return, !dbg !13
 
-return:                                           ; preds = %entry
-  %retval1 = load i32, i32* %retval, !dbg !13          ; <i32> [#uses=1]
+return:                                           
+  %retval1 = load i32, i32* %retval, !dbg !13          
   ret i32 %retval1, !dbg !15
 }
 

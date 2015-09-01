@@ -1,5 +1,5 @@
-; RUN: opt -S -winehprepare -mtriple=x86_64-pc-windows-msvc < %s | FileCheck %s
-; RUN: opt -S -winehprepare -mtriple=x86_64-pc-windows-coreclr < %s | FileCheck %s
+
+
 
 target datalayout = "e-m:w-i64:64-f80:128-n8:16:32:64-S128"
 
@@ -46,21 +46,21 @@ eh.resume:
   resume { i8*, i32 } %ehval.phi2
 }
 
-; CHECK-LABEL: define void @resume_phi()
-; CHECK: invoke void @might_crash(i8* null)
-; CHECK: landingpad { i8*, i32 }
-; CHECK-NEXT: catch i32 ()* @filt
-; CHECK-NEXT: call i8* (...) @llvm.eh.actions(
-; CHECK-SAME: i32 1, i8* bitcast (i32 ()* @filt to i8*), i32 -1, i8* blockaddress(@resume_phi, %__except))
-; CHECK-NEXT: indirectbr {{.*}} [label %__except]
-;
-; CHECK: __except:
-; CHECK: call i32 @llvm.eh.exceptioncode()
-; CHECK: invoke void @might_crash(i8* %{{.*}})
-; CHECK: landingpad { i8*, i32 }
-; CHECK-NEXT: cleanup
-; CHECK-NEXT: call i8* (...) @llvm.eh.actions(i32 0, void (i8*, i8*)* @resume_phi.cleanup)
-; CHECK-NEXT: indirectbr {{.*}} []
 
-; CHECK-LABEL: define internal void @resume_phi.cleanup(i8*, i8*)
-; CHECK: call void @cleanup()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

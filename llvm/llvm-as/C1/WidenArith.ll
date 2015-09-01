@@ -1,14 +1,14 @@
-; RUN: llc < %s -mtriple=x86_64-apple-darwin -mcpu=corei7-avx | FileCheck %s
 
-;CHECK-LABEL: test:
-;CHECK: vaddps
-;CHECK: vmulps
-;CHECK: vsubps
-;CHECK: vcmpltps
-;CHECK: vcmpltps
-;CHECK: vandps
-;CHECK: vandps
-;CHECK: ret
+
+
+
+
+
+
+
+
+
+
 define <8 x i32> @test(<8 x float> %a, <8 x float> %b) {
  %c1 = fadd <8 x float> %a, %b
  %b1 = fmul <8 x float> %b, %a

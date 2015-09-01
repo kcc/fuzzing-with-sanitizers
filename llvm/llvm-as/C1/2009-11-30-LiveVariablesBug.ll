@@ -1,5 +1,5 @@
-; RUN: llc -mtriple=armv7-eabi -mcpu=cortex-a8 < %s
-; PR5614
+
+
 
 %"als" = type { i32 (...)** }
 %"av" = type { %"als" }
@@ -17,25 +17,25 @@ entry:
     i32 5, label %bb104
   ]
 
-bb:                                               ; preds = %entry
+bb:                                               
   ret void
 
-bb31:                                             ; preds = %entry
-  %0 = call arm_aapcs_vfpcc  %"Vec3" undef(%"lsm"* undef) ; <%"Vec3"> [#uses=1]
-  %mrv_gr69 = extractvalue %"Vec3" %0, 1 ; <float> [#uses=1]
-  %1 = fsub float %mrv_gr69, undef                ; <float> [#uses=1]
+bb31:                                             
+  %0 = call arm_aapcs_vfpcc  %"Vec3" undef(%"lsm"* undef) 
+  %mrv_gr69 = extractvalue %"Vec3" %0, 1 
+  %1 = fsub float %mrv_gr69, undef                
   store float %1, float* undef, align 4
   ret void
 
-bb72:                                             ; preds = %entry
+bb72:                                             
   ret void
 
-bb79:                                             ; preds = %entry
+bb79:                                             
   ret void
 
-bb104:                                            ; preds = %entry
+bb104:                                            
   ret void
 
-return:                                           ; preds = %entry
+return:                                           
   ret void
 }

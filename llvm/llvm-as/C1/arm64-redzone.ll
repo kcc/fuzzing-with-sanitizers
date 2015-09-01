@@ -1,9 +1,9 @@
-; RUN: llc < %s -march=arm64 -aarch64-redzone | FileCheck %s
+
 
 define i32 @foo(i32 %a, i32 %b) nounwind ssp {
-; CHECK-LABEL: foo:
-; CHECK-NOT: sub sp, sp
-; CHECK: ret
+
+
+
   %a.addr = alloca i32, align 4
   %b.addr = alloca i32, align 4
   %x = alloca i32, align 4

@@ -1,16 +1,16 @@
-; RUN: llc -mtriple="arm64-apple-ios" < %s | FileCheck %s
-;
-; Check that the dead register definition pass is considering implicit defs.
-; When rematerializing through truncates, the coalescer may produce instructions
-; with dead defs, but live implicit-defs of subregs:
-; E.g. %X1<def, dead> = MOVi64imm 2, %W1<imp-def>; %X1:GPR64, %W1:GPR32
-; These instructions are live, and their definitions should not be rewritten.
-;
-; <rdar://problem/16492408>
+
+
+
+
+
+
+
+
+
 
 define void @testcase() {
-; CHECK: testcase:
-; CHECK-NOT: orr xzr, xzr, #0x2
+
+
 
 bb1:
   %tmp1 = tail call float @ceilf(float 2.000000e+00)

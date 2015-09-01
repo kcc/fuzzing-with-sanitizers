@@ -1,17 +1,17 @@
-; This test makes sure that and instructions are properly eliminated.
-; This test is for Integer BitWidth > 64 && BitWidth <= 1024.
 
-; RUN: opt < %s -instcombine -S | not grep "and "
-; END.
+
+
+
+
 
 
 define i999 @test0(i999 %A) {
-        %B = and i999 %A, 0 ; zero result
+        %B = and i999 %A, 0 
         ret i999 %B
 }
 
 define i477 @test1(i477 %A, i477 %B) {
-        ;; (~A & ~B) == (~(A | B)) - De Morgan's Law
+        
         %NotA = xor i477 %A, -1
         %NotB = xor i477 %B, -1
         %C1 = and i477 %NotA, %NotB
@@ -19,7 +19,7 @@ define i477 @test1(i477 %A, i477 %B) {
 }
 
 define i129 @tst(i129 %A, i129 %B) {
-        ;; (~A & ~B) == (~(A | B)) - De Morgan's Law
+        
         %NotA = xor i129 %A, -1
         %NotB = xor i129 %B, -1
         %C1 = and i129 %NotA, %NotB
@@ -27,7 +27,7 @@ define i129 @tst(i129 %A, i129 %B) {
 }
 
 define i65 @test(i65 %A, i65 %B) {
-        ;; (~A & ~B) == (~(A | B)) - De Morgan's Law
+        
         %NotA = xor i65 %A, -1
         %NotB = xor i65 -1, %B
         %C1 = and i65 %NotA, %NotB
@@ -35,7 +35,7 @@ define i65 @test(i65 %A, i65 %B) {
 }
 
 define i66 @tes(i66 %A, i66 %B) {
-        ;; (~A & ~B) == (~(A | B)) - De Morgan's Law
+        
         %NotA = xor i66 %A, -1
         %NotB = xor i66 %B, -1
         %C1 = and i66 %NotA, %NotB
@@ -43,7 +43,7 @@ define i66 @tes(i66 %A, i66 %B) {
 }
 
 define i1005 @test2(i1005 %x) {
-        %tmp.2 = and i1005 %x, -1 ; noop
+        %tmp.2 = and i1005 %x, -1 
         ret i1005 %tmp.2
 }
 
@@ -68,7 +68,7 @@ define i117 @test5(i117 %A, i117* %P) {
 }
 
 define i117 @test6(i117 %A, i117 %B) {
-        ;; ~(~X & Y) --> (X | ~Y)
+        
         %t0 = xor i117 %A, -1
         %t1 = and i117 %t0, %B
         %r = xor i117 %t1, -1
@@ -76,7 +76,7 @@ define i117 @test6(i117 %A, i117 %B) {
 }
 
 define i1024 @test7(i1024 %A) {
-        %X = ashr i1024 %A, 1016 ;; sign extend
+        %X = ashr i1024 %A, 1016 
         %C1 = and i1024 %X, 255
         ret i1024 %C1
 }

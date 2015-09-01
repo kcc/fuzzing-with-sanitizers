@@ -1,18 +1,18 @@
-; RUN: opt -slp-vectorizer -S %s
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-n32:64-S128"
 target triple = "x86_64-apple-macosx"
 
-; This test used to fail under libgmalloc. Because we would try to access a
-; pointer that was already deleted.
-;
-; llvm-lit -v --param use_gmalloc=1 --param
-;   gmalloc_path=/usr/lib/libgmalloc.dylib
-;   test/Transforms/LoopVectorize/X86/rauw-bug.ll
-;
-; radar://15498655
 
-; CHECK: reduced
+
+
+
+
+
+
+
+
+
 define void @reduced()  {
 entry:
   br i1 undef, label %while.body, label %while.cond63.preheader.while.end76_crit_edge

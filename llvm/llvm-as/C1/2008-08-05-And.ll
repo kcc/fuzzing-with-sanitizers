@@ -1,5 +1,5 @@
-; RUN: opt < %s -instcombine -S | not grep or
-; PR2629
+
+
 
 define void @f(i8* %x) nounwind  {
 entry:

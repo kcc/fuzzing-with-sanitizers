@@ -1,9 +1,9 @@
-; Test that vectors are scalarized/lowered correctly
-; (with both legalization methods).
-; RUN: llc -march=x86  < %s
-; RUN: llc -march=x86  < %s
 
-; A simple test to check copyToParts and copyFromParts.
+
+
+
+
+
 
 define <4 x i64> @test_param_0(<4 x i64> %A, <2 x i32> %B, <4 x i8> %C)  {
    ret <4 x i64> %A
@@ -17,8 +17,8 @@ define <4 x i8> @test_param_2(<4 x i64> %A, <2 x i32> %B, <4 x i8> %C)  {
    ret <4 x i8> %C
 }
 
-; Simple tests to check arithmetic and vector operations on types which need to
-; be legalized (no loads/stores to/from memory here).
+
+
 
 define <4 x i64> @test_arith_0(<4 x i64> %A, <2 x i32> %B, <4 x i8> %C)  {
    %K = add <4 x i64> %A, <i64 0, i64 1, i64 3, i64 9>
@@ -89,7 +89,7 @@ define <4 x i16> @test_arith_10(<4 x i64> %A, <2 x i32> %B, <4 x i32> %C)  {
 }
 
 
-; Simple tests to check saving/loading from memory
+
 define <4 x i16> @test_mem_0(<4 x i64> %A, <2 x i32> %B, <4 x i32> %C)  {
    %F = bitcast <2 x i32> %B to <4 x i16>
    %T = add <4 x i16> %F , <i16 0, i16 1, i16 2, i16 3>

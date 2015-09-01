@@ -1,4 +1,4 @@
-; RUN: opt -indvars -S < %s | FileCheck %s
+
 
 @b = common global i32 0, align 4
 
@@ -27,6 +27,6 @@ bb14:
   ret i32 0
 }
 
-; CHECK-LABEL: @foo(
-; CHECK: bb8:
-; CHECK: udiv
+
+
+

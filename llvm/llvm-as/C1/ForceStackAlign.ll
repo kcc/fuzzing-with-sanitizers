@@ -1,9 +1,9 @@
-; Check that stack alignment can be forced. Individual targets should test their
-; specific implementation details.
 
-; RUN: llc < %s -force-align-stack -stack-alignment=32 | FileCheck %s
-; CHECK-LABEL: @f
-; CHECK-LABEL: @g
+
+
+
+
+
 
 define i32 @f(i8* %p) nounwind {
 entry:

@@ -1,4 +1,4 @@
-; RUN: %lli %s > /dev/null
+
 
 define i32 @main() {
     %double1 = fadd <2 x double> <double 0.0, double 0.0>, <double 0.0, double 0.0>

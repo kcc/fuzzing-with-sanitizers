@@ -1,8 +1,8 @@
-; RUN: llc < %s -march=x86 -mattr=+avx | FileCheck %s
 
-; We don't really care what this outputs; just make sure it's somewhat sane.
-; CHECK: legalize_test
-; CHECK: vmovups
+
+
+
+
 define void @legalize_test(i32 %x, <8 x i32>* %p) nounwind {
 entry:
   %t1 = insertelement <8 x i32> <i32 undef, i32 undef, i32 15, i32 15, i32 15, i32 15, i32 15, i32 15>, i32 %x, i32 0

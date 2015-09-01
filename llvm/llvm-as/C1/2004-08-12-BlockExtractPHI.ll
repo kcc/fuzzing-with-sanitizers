@@ -1,11 +1,11 @@
-; RUN: opt < %s -extract-blocks -disable-output
+
 
 define void @test1() {
 no_exit.0.i:
         br i1 false, label %yylex.entry, label %yylex.entry
 
-yylex.entry:            ; preds = %no_exit.0.i, %no_exit.0.i
-        %tmp.1027 = phi i32 [ 0, %no_exit.0.i ], [ 0, %no_exit.0.i ]            ; <i32> [#uses=0]
+yylex.entry:            
+        %tmp.1027 = phi i32 [ 0, %no_exit.0.i ], [ 0, %no_exit.0.i ]            
         ret void
 }
 
@@ -16,11 +16,11 @@ no_exit.0.i:
                  i32 1, label %foo
         ]
 
-yylex.entry:            ; preds = %no_exit.0.i, %no_exit.0.i
-        %tmp.1027 = phi i32 [ 0, %no_exit.0.i ], [ 0, %no_exit.0.i ]            ; <i32> [#uses=0]
+yylex.entry:            
+        %tmp.1027 = phi i32 [ 0, %no_exit.0.i ], [ 0, %no_exit.0.i ]            
         ret void
 
-foo:            ; preds = %no_exit.0.i
+foo:            
         ret void
 }
 

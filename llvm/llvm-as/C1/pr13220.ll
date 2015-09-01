@@ -1,5 +1,5 @@
-; RUN: llc -march=x86 < %s
-; PR13220
+
+
 
 define <8 x i32> @foo(<8 x i96> %x) {
   %a = lshr <8 x i96> %x, <i96 1, i96 1, i96 1, i96 1, i96 1, i96 1, i96 1, i96 1>

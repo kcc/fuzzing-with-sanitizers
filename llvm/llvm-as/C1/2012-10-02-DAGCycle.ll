@@ -1,7 +1,7 @@
-; RUN: llc -mtriple=i386-apple-macosx -relocation-model=pic < %s > /dev/null
-; RUN: llc -mtriple=x86_64-apple-macosx -relocation-model=pic < %s > /dev/null
 
-; rdar://12393897
+
+
+
 
 %TRp = type { i32, %TRH*, i32, i32 }
 %TRH = type { i8*, i8*, i8*, i8*, {}* }
@@ -28,7 +28,7 @@ entry:
   %0 = getelementptr inbounds %btConeShape, %btConeShape* %this, i64 0, i32 0
   br i1 undef, label %if.then, label %if.end17
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %vecnorm.sroa.2.8.copyload = load float, float* undef, align 4
   %cmp4 = fcmp olt float undef, 0x3D10000000000000
   %vecnorm.sroa.2.8.copyload36 = select i1 %cmp4, float -1.000000e+00, float %vecnorm.sroa.2.8.copyload
@@ -43,7 +43,7 @@ if.then:                                          ; preds = %entry
   %retval.sroa.1.8.insert = insertelement <2 x float> undef, float %add13.i, i32 0
   br label %if.end17
 
-if.end17:                                         ; preds = %if.then, %entry
+if.end17:                                         
   %retval.sroa.1.8.load3338 = phi <2 x float> [ %retval.sroa.1.8.insert, %if.then ], [ undef, %entry ]
   %retval.sroa.0.0.load3137 = phi <2 x float> [ %retval.sroa.0.4.insert, %if.then ], [ undef, %entry ]
   ret { <2 x float>, <2 x float> } undef

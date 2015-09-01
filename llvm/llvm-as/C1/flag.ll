@@ -1,18 +1,18 @@
-; RUN: opt < %s -basicaa -slp-vectorizer -slp-threshold=1000 -dce -S -mtriple=x86_64-apple-macosx10.8.0 -mcpu=corei7-avx | FileCheck %s
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.8.0"
 
-; Check that the command line flag works.
-;CHECK:rollable
-;CHECK-NOT:load <4 x i32>
-;CHECK: ret
+
+
+
+
 
 define i32 @rollable(i32* noalias nocapture %in, i32* noalias nocapture %out, i64 %n) {
   %1 = icmp eq i64 %n, 0
   br i1 %1, label %._crit_edge, label %.lr.ph
 
-.lr.ph:                                           ; preds = %0, %.lr.ph
+.lr.ph:                                           
   %i.019 = phi i64 [ %26, %.lr.ph ], [ 0, %0 ]
   %2 = shl i64 %i.019, 2
   %3 = getelementptr inbounds i32, i32* %in, i64 %2
@@ -46,6 +46,6 @@ define i32 @rollable(i32* noalias nocapture %in, i32* noalias nocapture %out, i6
   %exitcond = icmp eq i64 %26, %n
   br i1 %exitcond, label %._crit_edge, label %.lr.ph
 
-._crit_edge:                                      ; preds = %.lr.ph, %0
+._crit_edge:                                      
   ret i32 undef
 }

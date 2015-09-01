@@ -1,14 +1,14 @@
-; RUN: llc < %s -mtriple=thumbv7-none-linux-gnueabi -mcpu=cortex-a9 -mattr=+neon,+neonfp | FileCheck %s
-; PR14824. The test is presented by Jiangning Liu. If the ld/st optimization algorithm is changed, this test case may fail.
-; Also if the machine code for ld/st optimizor is changed, this test case may fail. If so, remove this test.
+
+
+
 
 define void @sample_test(<8 x i64> * %secondSource, <8 x i64> * %source, <8 x i64> * %dest) nounwind {
-; CHECK: sample_test
-; CHECK-NOT: vldmia
-; CHECK: add
+
+
+
 entry:
 
-; Load %source
+
   %s0 = load <8 x i64> , <8 x i64> * %source, align 64
   %arrayidx64 = getelementptr inbounds <8 x i64>, <8 x i64> * %source, i32 6
   %s120 = load <8 x i64> , <8 x i64> * %arrayidx64, align 64
@@ -32,7 +32,7 @@ entry:
   %s129 = insertelement <8 x i64> %s128, i64 %data.i.i677.16.extract.trunc, i32 6
   %s130 = insertelement <8 x i64> %s129, i64 %data.i.i677.56.extract.trunc, i32 7
 
-; Load %secondSource
+
   %s1 = load <8 x i64> , <8 x i64> * %secondSource, align 64
   %arrayidx67 = getelementptr inbounds <8 x i64>, <8 x i64> * %secondSource, i32 6
   %s121 = load <8 x i64> , <8 x i64> * %arrayidx67, align 64
@@ -56,7 +56,7 @@ entry:
   %s138 = insertelement <8 x i64> %s137, i64 %data.i1.i676.16.extract.trunc, i32 6
   %s139 = insertelement <8 x i64> %s138, i64 %data.i1.i676.56.extract.trunc, i32 7
 
-; Operations about %Source and %secondSource
+
   %vecinit28.i.i699 = shufflevector <8 x i64> %s139, <8 x i64> %s130, <8 x i32> <i32 0, i32 1, i32 2, i32 3, i32 12, i32 undef, i32 undef, i32 undef>
   %vecinit35.i.i700 = shufflevector <8 x i64> %vecinit28.i.i699, <8 x i64> %s139, <8 x i32> <i32 0, i32 1, i32 2, i32 3, i32 4, i32 13, i32 undef, i32 undef>
   %vecinit42.i.i701 = shufflevector <8 x i64> %vecinit35.i.i700, <8 x i64> %s139, <8 x i32> <i32 0, i32 1, i32 2, i32 3, i32 4, i32 5, i32 14, i32 undef>

@@ -1,75 +1,75 @@
-; RUN: opt < %s -loop-extract -disable-output
+
 
 define void @solve() {
 entry:
 	br label %loopentry.0
 
-loopentry.0:		; preds = %endif.0, %entry
+loopentry.0:		
 	br i1 false, label %no_exit.0, label %loopexit.0
 
-no_exit.0:		; preds = %loopentry.0
+no_exit.0:		
 	br i1 false, label %then.0, label %endif.0
 
-then.0:		; preds = %no_exit.0
+then.0:		
 	br i1 false, label %shortcirc_done, label %shortcirc_next
 
-shortcirc_next:		; preds = %then.0
+shortcirc_next:		
 	br label %shortcirc_done
 
-shortcirc_done:		; preds = %shortcirc_next, %then.0
+shortcirc_done:		
 	br i1 false, label %then.1, label %endif.1
 
-then.1:		; preds = %shortcirc_done
+then.1:		
 	br i1 false, label %cond_true, label %cond_false
 
-cond_true:		; preds = %then.1
+cond_true:		
 	br label %cond_continue
 
-cond_false:		; preds = %then.1
+cond_false:		
 	br label %cond_continue
 
-cond_continue:		; preds = %cond_false, %cond_true
+cond_continue:		
 	br label %return
 
-after_ret.0:		; No predecessors!
+after_ret.0:		
 	br label %endif.1
 
-endif.1:		; preds = %after_ret.0, %shortcirc_done
+endif.1:		
 	br label %endif.0
 
-endif.0:		; preds = %endif.1, %no_exit.0
+endif.0:		
 	br label %loopentry.0
 
-loopexit.0:		; preds = %loopentry.0
+loopexit.0:		
 	br i1 false, label %then.2, label %endif.2
 
-then.2:		; preds = %loopexit.0
+then.2:		
 	br i1 false, label %then.3, label %endif.3
 
-then.3:		; preds = %then.2
+then.3:		
 	br label %return
 
-after_ret.1:		; No predecessors!
+after_ret.1:		
 	br label %endif.3
 
-endif.3:		; preds = %after_ret.1, %then.2
+endif.3:		
 	br label %endif.2
 
-endif.2:		; preds = %endif.3, %loopexit.0
+endif.2:		
 	br label %loopentry.1
 
-loopentry.1:		; preds = %no_exit.1, %endif.2
+loopentry.1:		
 	br i1 false, label %no_exit.1, label %loopexit.1
 
-no_exit.1:		; preds = %loopentry.1
+no_exit.1:		
 	br label %loopentry.1
 
-loopexit.1:		; preds = %loopentry.1
+loopexit.1:		
 	br label %return
 
-after_ret.2:		; No predecessors!
+after_ret.2:		
 	br label %return
 
-return:		; preds = %after_ret.2, %loopexit.1, %then.3, %cond_continue
+return:		
 	ret void
 }

@@ -1,4 +1,4 @@
-; RUN: llc < %s -mtriple=i686-linux-pc -mcpu=corei7 | FileCheck %s
+
 
 define void @test_convert_float2_ulong2(<2 x i64>* nocapture %src, <2 x float>* nocapture %dest) noinline {
 L.entry:
@@ -10,6 +10,6 @@ L.entry:
   ret void
 }
 
-; CHECK: test_convert_float2_ulong2
-; CHECK-NOT: cvtpd2ps
-; CHECK: ret
+
+
+

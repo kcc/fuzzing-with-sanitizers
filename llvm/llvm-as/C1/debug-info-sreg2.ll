@@ -1,16 +1,16 @@
-; RUN: llc < %s - -filetype=obj | llvm-dwarfdump -debug-dump=loc - | FileCheck %s
-; Radar 9376013
+
+
 target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:32-f32:32:32-f64:32:32-v64:32:64-v128:32:128-a0:0:32-n32"
 target triple = "thumbv7-apple-macosx10.6.7"
 
-; Just making sure the first part of the location isn't a repetition
-; of the size of the location description.
-;
-; 0x90   DW_OP_regx of super-register
 
-; CHECK: 0x00000000: Beginning address offset:
-; CHECK-NEXT:           Ending address offset:
-; CHECK-NEXT:            Location description: 90 {{.. .. .. .. $}}
+
+
+
+
+
+
+
 
 define void @_Z3foov() optsize ssp {
 entry:
@@ -20,7 +20,7 @@ entry:
   %cmp7 = fcmp olt float %call, %call16, !dbg !12
   br i1 %cmp7, label %for.body, label %for.end, !dbg !12
 
-for.body:                                         ; preds = %entry, %for.body
+for.body:                                         
   %k.08 = phi float [ %inc, %for.body ], [ %call, %entry ]
   %call4 = tail call float @_Z2f3f(float %k.08) optsize, !dbg !13
   %inc = fadd float %k.08, 1.000000e+00, !dbg !14
@@ -28,7 +28,7 @@ for.body:                                         ; preds = %entry, %for.body
   %cmp = fcmp olt float %inc, %call1, !dbg !12
   br i1 %cmp, label %for.body, label %for.end, !dbg !12
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void, !dbg !15
 }
 

@@ -1,7 +1,7 @@
-; RUN: llc < %s -mtriple=x86_64-unknown-linux-gnu | FileCheck %s
 
-; Test that we produce a movntdq, not a vmovntdq
-; CHECK-NOT: vmovntdq
+
+
+
 
 define void @test(<2 x i64>* nocapture %a, <2 x i64> %b) nounwind optsize {
 entry:

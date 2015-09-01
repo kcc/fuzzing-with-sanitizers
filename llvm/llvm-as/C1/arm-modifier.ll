@@ -1,4 +1,4 @@
-; RUN: llc -mtriple=arm-eabi -mattr=+vfp2 -no-integrated-as %s -o - | FileCheck %s
+
 
 define i32 @foo(float %scale, float %scale2) nounwind {
 entry:
@@ -14,16 +14,16 @@ entry:
 
 define void @f0() nounwind {
 entry:
-; CHECK: f0
-; CHECK: .word -1
+
+
 call void asm sideeffect ".word ${0:B} \0A\09", "i"(i32 0) nounwind
 ret void
 }
 
 define void @f1() nounwind {
 entry:
-; CHECK: f1
-; CHECK: .word 65535
+
+
 call void asm sideeffect ".word ${0:L} \0A\09", "i"(i32 -1) nounwind
 ret void
 }
@@ -33,8 +33,8 @@ ret void
 
 define void @f2() nounwind {
 entry:
-; CHECK: f2
-; CHECK: ldr r0, [r{{[0-9]+}}]
+
+
 call void asm sideeffect "ldr r0, [${0:m}]\0A\09", "*m,~{r0}"(i32** @f2_ptr) nounwind
 ret void
 }
@@ -45,10 +45,10 @@ ret void
 
 define void @f3() nounwind {
 entry:
-; CHECK: f3
-; CHECK: stm {{lr|r[0-9]+}}, {[[REG1:(r[0-9]+)]], r{{[0-9]+}}}
-; CHECK: adds {{lr|r[0-9]+}}, [[REG1]]
-; CHECK: ldm {{lr|r[0-9]+}}, {r{{[0-9]+}}, r{{[0-9]+}}}
+
+
+
+
 %tmp = load i64, i64* @f3_var, align 4
 %tmp1 = load i64, i64* @f3_var2, align 4
 %0 = call i64 asm sideeffect "stm ${0:m}, ${1:M}\0A\09adds $3, $1\0A\09", "=*m,=r,1,r"(i64** @f3_ptr, i64 %tmp, i64 %tmp1) nounwind
@@ -60,13 +60,13 @@ ret void
 
 define i64 @f4(i64* %val) nounwind {
 entry:
-  ;CHECK-LABEL: f4:
-  ;CHECK: ldrexd [[REG1:(r[0-9]?[02468])]], {{r[0-9]?[13579]}}, [r{{[0-9]+}}]
+  
+  
   %0 = tail call i64 asm sideeffect "ldrexd $0, ${0:H}, [$1]", "=&r,r,*Qo"(i64* %val, i64* %val) nounwind
   ret i64 %0
 }
 
-; PR16490
+
 define void @f5(i64 %__pu_val) {
   call void asm sideeffect "$1", "r,i"(i64 %__pu_val, i32 -14)
   ret void

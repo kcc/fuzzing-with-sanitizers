@@ -1,4 +1,4 @@
-; RUN: llc  -march=mipsel -mcpu=mips16 -relocation-model=pic -O3 < %s | FileCheck %s -check-prefix=16
+
 
 @j = global i32 5, align 4
 @k = global i32 10, align 4
@@ -14,7 +14,7 @@ entry:
   %cmp = icmp ult i32 %0, 10
   %conv = zext i1 %cmp to i32
   store i32 %conv, i32* @r1, align 4
-; 16:	sltiu	${{[0-9]+}}, 10 # 16 bit inst
-; 16:	move	${{[0-9]+}}, $24
+
+
   ret void
 }

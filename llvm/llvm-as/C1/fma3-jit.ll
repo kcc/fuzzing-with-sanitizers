@@ -1,6 +1,6 @@
-; RUN: %lli %s | FileCheck %s
-; REQUIRES: fma3
-; CHECK: 12.000000
+
+
+
 
 @msg_double = internal global [4 x i8] c"%f\0A\00"
 

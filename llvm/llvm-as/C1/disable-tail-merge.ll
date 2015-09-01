@@ -1,10 +1,10 @@
-; RUN: llc -march=mipsel < %s | FileCheck %s
+
 
 @g0 = common global i32 0, align 4
 @g1 = common global i32 0, align 4
 
-; CHECK: addiu ${{[0-9]+}}, ${{[0-9]+}}, 23
-; CHECK: addiu ${{[0-9]+}}, ${{[0-9]+}}, 23
+
+
 
 define i32 @test1(i32 %a) {
 entry:

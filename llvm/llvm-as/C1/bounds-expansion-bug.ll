@@ -1,18 +1,18 @@
-; RUN: opt -basicaa -loop-distribute -S < %s | FileCheck %s
 
-; When emitting the memchecks for:
-;
-;   for (i = 0; i < n; i++) {
-;     A[i + 1] = A[i] * B[i];
-;     =======================
-;     C[i] = D[i] * E[i];
-;   }
-;
-; we had a bug when expanding the bounds for A and C.  These are expanded
-; multiple times and rely on the caching in SCEV expansion to avoid any
-; redundancy.  However, due to logic in SCEVExpander::ReuseOrCreateCast, we
-; can get earlier expanded values invalidated when casts are used.  This test
-; ensure that we are not using the invalidated values.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 
@@ -31,48 +31,48 @@ two:
   br label %join
 join:
 
-; The pointers need to be defined by PHIs in order for the bug to trigger.
-; Because of the PHIs the existing casts won't be at the desired location so a
-; new cast will be emitted and the old cast will get invalidated.
-;
-; These are the steps:
-;
-; 1. After the bounds for A and C are first expanded:
-;
-;   join:
-;     %a = phi i32* [ %a1, %one ], [ %a2, %two ]
-;     %c = phi i32* [ %c1, %one ], [ %c2, %two ]
-;     %c5 = bitcast i32* %c to i8*
-;     %a3 = bitcast i32* %a to i8*
-;
-; 2. After A is expanded again:
-;
-;   join:                                             ; preds = %two, %one
-;     %a = phi i32* [ %a1, %one ], [ %a2, %two ]
-;     %c = phi i32* [ %c1, %one ], [ %c2, %two ]
-;     %a3 = bitcast i32* %a to i8*                   <--- new
-;     %c5 = bitcast i32* %c to i8*
-;     %0 = bitcast i32* undef to i8*                 <--- old, invalidated
-;
-; 3. Finally, when C is expanded again:
-;
-;   join:                                             ; preds = %two, %one
-;     %a = phi i32* [ %a1, %one ], [ %a2, %two ]
-;     %c = phi i32* [ %c1, %one ], [ %c2, %two ]
-;     %c5 = bitcast i32* %c to i8*                   <--- new
-;     %a3 = bitcast i32* %a to i8*
-;     %0 = bitcast i32* undef to i8*                 <--- old, invalidated
-;     %1 = bitcast i32* undef to i8*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   %a = phi i32* [%a1, %one], [%a2, %two]
   %c = phi i32* [%c1, %one], [%c2, %two]
   br label %for.body
 
 
-; CHECK: [[VALUE:%[0-9a-z]+]] = bitcast i32* undef to i8*
-; CHECK-NOT: [[VALUE]]
 
-for.body:                                         ; preds = %for.body, %entry
+
+
+for.body:                                         
   %ind = phi i64 [ 0, %join ], [ %add, %for.body ]
 
   %arrayidxA = getelementptr inbounds i32, i32* %a, i64 %ind
@@ -101,6 +101,6 @@ for.body:                                         ; preds = %for.body, %entry
   %exitcond = icmp eq i64 %add, 20
   br i1 %exitcond, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret void
 }

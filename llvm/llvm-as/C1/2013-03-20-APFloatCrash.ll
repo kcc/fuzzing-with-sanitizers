@@ -1,4 +1,4 @@
-; RUN: llc < %s
+
 
 define internal i1 @f(float %s) {
 entry:

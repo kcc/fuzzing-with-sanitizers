@@ -1,16 +1,16 @@
-; RUN: opt < %s -loop-vectorize -force-vector-width=2 -force-vector-interleave=1 -S | FileCheck %s
-; RUN: opt < %s -loop-vectorize -force-vector-width=4 -force-vector-interleave=1 -S | FileCheck %s -check-prefix=WIDTH
+
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 
-; Vectorization with dependence checks.
 
-; No plausible dependence - can be vectorized.
-;  for (i = 0; i < 1024; ++i)
-;    A[i] = A[i + 1] + 1;
 
-; CHECK-LABEL: @f1_vec(
-; CHECK: <2 x i32>
+
+
+
+
+
+
 
 define void @f1_vec(i32* %A) {
 entry:
@@ -31,12 +31,12 @@ for.end:
   ret void
 }
 
-; Plausible dependence of distance 1 - can't be vectorized.
-;  for (i = 0; i < 1024; ++i)
-;    A[i+1] = A[i] + 1;
 
-; CHECK-LABEL: @f2_novec(
-; CHECK-NOT: <2 x i32>
+
+
+
+
+
 
 define void @f2_novec(i32* %A) {
 entry:
@@ -57,15 +57,15 @@ for.end:
   ret void
 }
 
-; Plausible dependence of distance 2 - can be vectorized with a width of 2.
-;  for (i = 0; i < 1024; ++i)
-;    A[i+2] = A[i] + 1;
 
-; CHECK-LABEL: @f3_vec_len(
-; CHECK: <2 x i32>
 
-; WIDTH: f3_vec_len
-; WIDTH-NOT: <4 x i32>
+
+
+
+
+
+
+
 
 define void @f3_vec_len(i32* %A) {
 entry:
@@ -89,15 +89,15 @@ for.end:
   ret void
 }
 
-; Plausible dependence of distance 1 - cannot be vectorized (without reordering
-; accesses).
-;   for (i = 0; i < 1024; ++i) {
-;     B[i] = A[i];
-;     A[i] = B[i + 1];
-;   }
 
-; CHECK-LABEL: @f5(
-; CHECK-NOT: <2 x i32>
+
+
+
+
+
+
+
+
 
 define void @f5(i32*  %A, i32* %B) {
 entry:
@@ -121,14 +121,14 @@ for.end:
   ret void
 }
 
-; Dependence through a phi node - must not vectorize.
-;   for (i = 0; i < 1024; ++i) {
-;     a[i+1] = tmp;
-;     tmp = a[i];
-;   }
 
-; CHECK-LABEL: @f6
-; CHECK-NOT: <2 x i32>
+
+
+
+
+
+
+
 
 define i32 @f6(i32* %a, i32 %tmp) {
 entry:
@@ -150,17 +150,17 @@ for.end:
   ret i32 undef
 }
 
-; Don't vectorize true loop carried dependencies that are not a multiple of the
-; vector width.
-; Example:
-;   for (int i = ...; ++i) {
-;     a[i] = a[i-3] + ...;
-; It is a bad idea to vectorize this loop because store-load forwarding will not
-; happen.
-;
 
-; CHECK-LABEL: @nostoreloadforward(
-; CHECK-NOT: <2 x i32>
+
+
+
+
+
+
+
+
+
+
 
 define void @nostoreloadforward(i32* %A) {
 entry:
@@ -186,16 +186,16 @@ for.end:
   ret void
 }
 
-; Example:
-;   for (int i = ...; ++i) {
-;     a[i] = b[i];
-;     c[i] = a[i-3] + ...;
-; It is a bad idea to vectorize this loop because store-load forwarding will not
-; happen.
-;
 
-; CHECK-LABEL: @nostoreloadforward2(
-; CHECK-NOT: <2 x i32>
+
+
+
+
+
+
+
+
+
 
 define void @nostoreloadforward2(i32* noalias %A, i32* noalias %B, i32* noalias %C) {
 entry:

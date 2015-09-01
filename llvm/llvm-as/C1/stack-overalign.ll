@@ -1,17 +1,17 @@
-; RUN: opt < %s -instcombine -S | grep "align 32" | count 1
 
-; It's tempting to have an instcombine in which the src pointer of a
-; memcpy is aligned up to the alignment of the destination, however
-; there are pitfalls. If the src is an alloca, aligning it beyond what
-; the target's stack pointer is aligned at will require dynamic
-; stack realignment, which can require functions that don't otherwise
-; need a frame pointer to need one.
-;
-; Abstaining from this transform is not the only way to approach this
-; issue. Some late phase could be smart enough to reduce alloca
-; alignments when they are greater than they need to be. Or, codegen
-; could do dynamic alignment for just the one alloca, and leave the
-; main stack pointer at its standard alignment.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @dst = global [1024 x i8] zeroinitializer, align 32
 

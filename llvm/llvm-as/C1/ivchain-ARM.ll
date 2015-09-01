@@ -1,17 +1,17 @@
-; RUN: llc -O3 -mtriple=thumb-eabi -mcpu=cortex-a9 %s -o - | FileCheck %s -check-prefix=A9
-; RUN: llc -O3 -mtriple=thumb-eabi -mcpu=cortex-a9 -addr-sink-using-gep=1 %s -o - | FileCheck %s -check-prefix=A9
 
-; @simple is the most basic chain of address induction variables. Chaining
-; saves at least one register and avoids complex addressing and setup
-; code.
-;
-; A9: @simple
-; no expensive address computation in the preheader
-; A9: lsl
-; A9-NOT: lsl
-; A9: %loop
-; no complex address modes
-; A9-NOT: lsl
+
+
+
+
+
+
+
+
+
+
+
+
+
 define i32 @simple(i32* %a, i32* %b, i32 %x) nounwind {
 entry:
   br label %loop
@@ -36,16 +36,16 @@ exit:
   ret i32 %s4
 }
 
-; @user is not currently chained because the IV is live across memory ops.
-;
-; A9: @user
-; stride multiples computed in the preheader
-; A9: lsl
-; A9: lsl
-; A9: %loop
-; complex address modes
-; A9: lsl
-; A9: lsl
+
+
+
+
+
+
+
+
+
+
 define i32 @user(i32* %a, i32* %b, i32 %x) nounwind {
 entry:
   br label %loop
@@ -71,34 +71,34 @@ exit:
   ret i32 %s4
 }
 
-; @extrastride is a slightly more interesting case of a single
-; complete chain with multiple strides. The test case IR is what LSR
-; used to do, and exactly what we don't want to do. LSR's new IV
-; chaining feature should now undo the damage.
-;
-; A9: extrastride:
-; no spills
-; A9-NOT: str
-; only one stride multiple in the preheader
-; A9: lsl
-; A9-NOT: {{str r|lsl}}
-; A9: %for.body{{$}}
-; no complex address modes or reloads
-; A9-NOT: {{ldr .*[sp]|lsl}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @extrastride(i8* nocapture %main, i32 %main_stride, i32* nocapture %res, i32 %x, i32 %y, i32 %z) nounwind {
 entry:
   %cmp8 = icmp eq i32 %z, 0
   br i1 %cmp8, label %for.end, label %for.body.lr.ph
 
-for.body.lr.ph:                                   ; preds = %entry
-  %add.ptr.sum = shl i32 %main_stride, 1 ; s*2
-  %add.ptr1.sum = add i32 %add.ptr.sum, %main_stride ; s*3
-  %add.ptr2.sum = add i32 %x, %main_stride ; s + x
-  %add.ptr4.sum = shl i32 %main_stride, 2 ; s*4
-  %add.ptr3.sum = add i32 %add.ptr2.sum, %add.ptr4.sum ; total IV stride = s*5+x
+for.body.lr.ph:                                   
+  %add.ptr.sum = shl i32 %main_stride, 1 
+  %add.ptr1.sum = add i32 %add.ptr.sum, %main_stride 
+  %add.ptr2.sum = add i32 %x, %main_stride 
+  %add.ptr4.sum = shl i32 %main_stride, 2 
+  %add.ptr3.sum = add i32 %add.ptr2.sum, %add.ptr4.sum 
   br label %for.body
 
-for.body:                                         ; preds = %for.body.lr.ph, %for.body
+for.body:                                         
   %main.addr.011 = phi i8* [ %main, %for.body.lr.ph ], [ %add.ptr6, %for.body ]
   %i.010 = phi i32 [ 0, %for.body.lr.ph ], [ %inc, %for.body ]
   %res.addr.09 = phi i32* [ %res, %for.body.lr.ph ], [ %add.ptr7, %for.body ]
@@ -127,24 +127,24 @@ for.body:                                         ; preds = %for.body.lr.ph, %fo
   %cmp = icmp eq i32 %inc, %z
   br i1 %cmp, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void
 }
 
-; @foldedidx is an unrolled variant of this loop:
-;  for (unsigned long i = 0; i < len; i += s) {
-;    c[i] = a[i] + b[i];
-;  }
-; where 's' can be folded into the addressing mode.
-; Consequently, we should *not* form any chains.
-;
-; A9: foldedidx:
-; A9: ldrb{{(.w)?}} {{r[0-9]|lr}}, [{{r[0-9]|lr}}, #3]
+
+
+
+
+
+
+
+
+
 define void @foldedidx(i8* nocapture %a, i8* nocapture %b, i8* nocapture %c) nounwind ssp {
 entry:
   br label %for.body
 
-for.body:                                         ; preds = %for.body, %entry
+for.body:                                         
   %i.07 = phi i32 [ 0, %entry ], [ %inc.3, %for.body ]
   %arrayidx = getelementptr inbounds i8, i8* %a, i32 %i.07
   %0 = load i8, i8* %arrayidx, align 1
@@ -193,36 +193,36 @@ for.body:                                         ; preds = %for.body, %entry
   %exitcond.3 = icmp eq i32 %inc.3, 400
   br i1 %exitcond.3, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret void
 }
 
-; @testNeon is an important example of the nead for ivchains.
-;
-; Currently we have three extra add.w's that keep the store address
-; live past the next increment because ISEL is unfortunately undoing
-; the store chain. ISEL also fails to convert all but one of the stores to
-; post-increment addressing. However, the loads should use
-; post-increment addressing, no add's or add.w's beyond the three
-; mentioned. Most importantly, there should be no spills or reloads!
-;
-; A9: testNeon:
-; A9: %.lr.ph
-; A9-NOT: lsl.w
-; A9-NOT: {{ldr|str|adds|add r}}
-; A9: vst1.8 {{.*}} [r{{[0-9]+}}]!
-; A9-NOT: {{ldr|str|adds|add r}}
-; A9: add.w r
-; A9-NOT: {{ldr|str|adds|add r}}
-; A9: add.w r
-; A9-NOT: {{ldr|str|adds|add r}}
-; A9-NOT: add.w r
-; A9: bne
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define hidden void @testNeon(i8* %ref_data, i32 %ref_stride, i32 %limit, <16 x i8>* nocapture %data) nounwind optsize {
   %1 = icmp sgt i32 %limit, 0
   br i1 %1, label %.lr.ph, label %45
 
-.lr.ph:                                           ; preds = %0
+.lr.ph:                                           
   %2 = shl nsw i32 %ref_stride, 1
   %3 = mul nsw i32 %ref_stride, 3
   %4 = shl nsw i32 %ref_stride, 2
@@ -234,7 +234,7 @@ define hidden void @testNeon(i8* %ref_data, i32 %ref_stride, i32 %limit, <16 x i
   %10 = mul i32 %limit, -64
   br label %11
 
-; <label>:11                                      ; preds = %11, %.lr.ph
+
   %.05 = phi i8* [ %ref_data, %.lr.ph ], [ %42, %11 ]
   %counter.04 = phi i32 [ 0, %.lr.ph ], [ %44, %11 ]
   %result.03 = phi <16 x i8> [ zeroinitializer, %.lr.ph ], [ %41, %11 ]
@@ -279,11 +279,11 @@ define hidden void @testNeon(i8* %ref_data, i32 %ref_stride, i32 %limit, <16 x i
   %exitcond = icmp eq i32 %44, %limit
   br i1 %exitcond, label %._crit_edge, label %11
 
-._crit_edge:                                      ; preds = %11
+._crit_edge:                                      
   %scevgep = getelementptr <16 x i8>, <16 x i8>* %data, i32 %10
   br label %45
 
-; <label>:45                                      ; preds = %._crit_edge, %0
+
   %result.0.lcssa = phi <16 x i8> [ %41, %._crit_edge ], [ zeroinitializer, %0 ]
   %.01.lcssa = phi <16 x i8>* [ %scevgep, %._crit_edge ], [ %data, %0 ]
   store <16 x i8> %result.0.lcssa, <16 x i8>* %.01.lcssa, align 4
@@ -292,27 +292,27 @@ define hidden void @testNeon(i8* %ref_data, i32 %ref_stride, i32 %limit, <16 x i
 
 declare <1 x i64> @llvm.arm.neon.vld1.v1i64(i8*, i32) nounwind readonly
 
-; Handle chains in which the same offset is used for both loads and
-; stores to the same array.
-; rdar://11410078.
-;
-; A9: @testReuse
-; A9: %for.body
-; A9: vld1.8 {d{{[0-9]+}}}, [[BASE:[r[0-9]+]]], [[INC:r[0-9]]]
-; A9: vld1.8 {d{{[0-9]+}}}, [[BASE]], [[INC]]
-; A9: vld1.8 {d{{[0-9]+}}}, [[BASE]], [[INC]]
-; A9: vld1.8 {d{{[0-9]+}}}, [[BASE]], [[INC]]
-; A9: vld1.8 {d{{[0-9]+}}}, [[BASE]], [[INC]]
-; A9: vld1.8 {d{{[0-9]+}}}, [[BASE]], [[INC]]
-; A9: vld1.8 {d{{[0-9]+}}}, [[BASE]], [[INC]]
-; A9: vld1.8 {d{{[0-9]+}}}, [[BASE]], {{r[0-9]}}
-; A9: vst1.8 {d{{[0-9]+}}}, [[BASE]], [[INC]]
-; A9: vst1.8 {d{{[0-9]+}}}, [[BASE]], [[INC]]
-; A9: vst1.8 {d{{[0-9]+}}}, [[BASE]], [[INC]]
-; A9: vst1.8 {d{{[0-9]+}}}, [[BASE]], [[INC]]
-; A9: vst1.8 {d{{[0-9]+}}}, [[BASE]], [[INC]]
-; A9: vst1.8 {d{{[0-9]+}}}, [[BASE]]
-; A9: bne
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @testReuse(i8* %src, i32 %stride) nounwind ssp {
 entry:
   %mul = shl nsw i32 %stride, 2
@@ -324,7 +324,7 @@ entry:
   %idx.neg10 = sub i32 0, %stride
   br label %for.body
 
-for.body:                                         ; preds = %for.body, %entry
+for.body:                                         
   %i.0110 = phi i32 [ 0, %entry ], [ %inc, %for.body ]
   %src.addr = phi i8* [ %src, %entry ], [ %add.ptr45, %for.body ]
   %add.ptr = getelementptr inbounds i8, i8* %src.addr, i32 %idx.neg
@@ -359,7 +359,7 @@ for.body:                                         ; preds = %for.body, %entry
   %exitcond = icmp eq i32 %inc, 4
   br i1 %exitcond, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret void
 }
 

@@ -1,5 +1,5 @@
-; RUN: llc < %s
-; PR1114
+
+
 
 declare i1 @foo()
 

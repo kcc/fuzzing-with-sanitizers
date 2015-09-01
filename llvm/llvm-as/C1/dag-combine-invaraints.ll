@@ -1,8 +1,8 @@
-; RUN: llc -mtriple=arm64-apple-darwin8.0 -relocation-model=pic -O1 < %s | FileCheck %s
+
 
 @.str2 = private unnamed_addr constant [9 x i8] c"_%d____\0A\00", align 1
 
-; Function Attrs: nounwind ssp
+
 define i32 @main(i32 %argc, i8** %argv) #0 {
 main_:
   %tmp = alloca i32, align 4
@@ -23,10 +23,10 @@ main_:
   %tmp17 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([9 x i8], [9 x i8]* @.str2, i32 0, i32 0), i32 %tmp15)
   ret i32 0
 
-; CHECK: main:
-; CHECK-DAG: movz
-; CHECK-DAG: orr
-; CHECK: csel
+
+
+
+
 }
 
 

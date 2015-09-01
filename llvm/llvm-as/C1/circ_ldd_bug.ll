@@ -1,19 +1,19 @@
-; RUN: llc -O2 < %s
+
 target datalayout = "e-p:32:32:32-i64:64:64-i32:32:32-i16:16:16-i1:32:32-f64:64:64-f32:32:32-v64:64:64-v32:32:32-a0:0-n16:32"
 target triple = "hexagon"
 
-; We would fail on this file with:
-; Unimplemented
-; UNREACHABLE executed at llvm/lib/Target/Hexagon/HexagonInstrInfo.cpp:615!
-; This happened because after unrolling a loop with a ldd_circ instruction we
-; would have several TFCR and ldd_circ instruction sequences.
-; %vreg0 (CRRegs) = TFCR %vreg0 (IntRegs)
-;                 = ldd_circ( , , vreg0)
-; %vreg1 (CRRegs) = TFCR %vreg1 (IntRegs)
-;                 = ldd_circ( , , vreg0)
-; The scheduler would move the CRRegs to the top of the loop. The allocator
-; would try to spill the CRRegs after running out of them. We don't have code to
-; spill CRRegs and the above assertion would be triggered.
+
+
+
+
+
+
+
+
+
+
+
+
 declare i8* @llvm.hexagon.circ.ldd(i8*, i8*, i32, i32) nounwind
 
 define i32 @test(i16 zeroext %var0, i16* %var1, i16 signext %var2, i16* nocapture %var3) nounwind {
@@ -36,7 +36,7 @@ entry:
   %6 = call i64 @llvm.hexagon.M2.vdmacs.s1(i64 0, i64 %1, i64 %5)
   br i1 %cmp6, label %for.body.lr.ph, label %for.end
 
-for.body.lr.ph:                                   ; preds = %entry
+for.body.lr.ph:                                   
   %incdec.ptr = getelementptr inbounds i16, i16* %var3, i32 4
   %7 = bitcast i16* %incdec.ptr to i64*
   %8 = zext i16 %var0 to i32
@@ -46,31 +46,31 @@ for.body.lr.ph:                                   ; preds = %entry
   %lcmp = icmp ne i32 %xtraiter, 0
   br i1 %lcmp, label %unr.cmp60, label %for.body.lr.ph.split.split
 
-unr.cmp60:                                        ; preds = %for.body.lr.ph
+unr.cmp60:                                        
   %un.tmp61 = icmp eq i32 %xtraiter, 1
   br i1 %un.tmp61, label %for.body.unr53, label %unr.cmp51
 
-unr.cmp51:                                        ; preds = %unr.cmp60
+unr.cmp51:                                        
   %un.tmp52 = icmp eq i32 %xtraiter, 2
   br i1 %un.tmp52, label %for.body.unr44, label %unr.cmp42
 
-unr.cmp42:                                        ; preds = %unr.cmp51
+unr.cmp42:                                        
   %un.tmp43 = icmp eq i32 %xtraiter, 3
   br i1 %un.tmp43, label %for.body.unr35, label %unr.cmp33
 
-unr.cmp33:                                        ; preds = %unr.cmp42
+unr.cmp33:                                        
   %un.tmp34 = icmp eq i32 %xtraiter, 4
   br i1 %un.tmp34, label %for.body.unr26, label %unr.cmp24
 
-unr.cmp24:                                        ; preds = %unr.cmp33
+unr.cmp24:                                        
   %un.tmp25 = icmp eq i32 %xtraiter, 5
   br i1 %un.tmp25, label %for.body.unr17, label %unr.cmp
 
-unr.cmp:                                          ; preds = %unr.cmp24
+unr.cmp:                                          
   %un.tmp = icmp eq i32 %xtraiter, 6
   br i1 %un.tmp, label %for.body.unr13, label %for.body.unr
 
-for.body.unr:                                     ; preds = %unr.cmp
+for.body.unr:                                     
   %11 = call i8* @llvm.hexagon.circ.ldd(i8* %4, i8* %3, i32 %or, i32 -8)
   %12 = load i64, i64* %7, align 8, !tbaa !1
   %inc.unr = add nsw i32 0, 1
@@ -80,7 +80,7 @@ for.body.unr:                                     ; preds = %unr.cmp
   %14 = call i64 @llvm.hexagon.M2.vdmacs.s1(i64 %6, i64 %12, i64 %13)
   br label %for.body.unr13
 
-for.body.unr13:                                   ; preds = %for.body.unr, %unr.cmp
+for.body.unr13:                                   
   %15 = phi i64 [ %6, %unr.cmp ], [ %14, %for.body.unr ]
   %pvar6.09.unr = phi i64* [ %7, %unr.cmp ], [ %incdec.ptr4.unr, %for.body.unr ]
   %var8.0.in8.unr = phi i8* [ %4, %unr.cmp ], [ %11, %for.body.unr ]
@@ -94,7 +94,7 @@ for.body.unr13:                                   ; preds = %for.body.unr, %unr.
   %19 = call i64 @llvm.hexagon.M2.vdmacs.s1(i64 %15, i64 %17, i64 %18)
   br label %for.body.unr17
 
-for.body.unr17:                                   ; preds = %for.body.unr13, %unr.cmp24
+for.body.unr17:                                   
   %20 = phi i64 [ %6, %unr.cmp24 ], [ %19, %for.body.unr13 ]
   %pvar6.09.unr18 = phi i64* [ %7, %unr.cmp24 ], [ %incdec.ptr4.unr15, %for.body.unr13 ]
   %var8.0.in8.unr19 = phi i8* [ %4, %unr.cmp24 ], [ %16, %for.body.unr13 ]
@@ -108,7 +108,7 @@ for.body.unr17:                                   ; preds = %for.body.unr13, %un
   %24 = call i64 @llvm.hexagon.M2.vdmacs.s1(i64 %20, i64 %22, i64 %23)
   br label %for.body.unr26
 
-for.body.unr26:                                   ; preds = %for.body.unr17, %unr.cmp33
+for.body.unr26:                                   
   %25 = phi i64 [ %6, %unr.cmp33 ], [ %24, %for.body.unr17 ]
   %pvar6.09.unr27 = phi i64* [ %7, %unr.cmp33 ], [ %incdec.ptr4.unr22, %for.body.unr17 ]
   %var8.0.in8.unr28 = phi i8* [ %4, %unr.cmp33 ], [ %21, %for.body.unr17 ]
@@ -122,7 +122,7 @@ for.body.unr26:                                   ; preds = %for.body.unr17, %un
   %29 = call i64 @llvm.hexagon.M2.vdmacs.s1(i64 %25, i64 %27, i64 %28)
   br label %for.body.unr35
 
-for.body.unr35:                                   ; preds = %for.body.unr26, %unr.cmp42
+for.body.unr35:                                   
   %30 = phi i64 [ %6, %unr.cmp42 ], [ %29, %for.body.unr26 ]
   %pvar6.09.unr36 = phi i64* [ %7, %unr.cmp42 ], [ %incdec.ptr4.unr31, %for.body.unr26 ]
   %var8.0.in8.unr37 = phi i8* [ %4, %unr.cmp42 ], [ %26, %for.body.unr26 ]
@@ -136,7 +136,7 @@ for.body.unr35:                                   ; preds = %for.body.unr26, %un
   %34 = call i64 @llvm.hexagon.M2.vdmacs.s1(i64 %30, i64 %32, i64 %33)
   br label %for.body.unr44
 
-for.body.unr44:                                   ; preds = %for.body.unr35, %unr.cmp51
+for.body.unr44:                                   
   %35 = phi i64 [ %6, %unr.cmp51 ], [ %34, %for.body.unr35 ]
   %pvar6.09.unr45 = phi i64* [ %7, %unr.cmp51 ], [ %incdec.ptr4.unr40, %for.body.unr35 ]
   %var8.0.in8.unr46 = phi i8* [ %4, %unr.cmp51 ], [ %31, %for.body.unr35 ]
@@ -150,7 +150,7 @@ for.body.unr44:                                   ; preds = %for.body.unr35, %un
   %39 = call i64 @llvm.hexagon.M2.vdmacs.s1(i64 %35, i64 %37, i64 %38)
   br label %for.body.unr53
 
-for.body.unr53:                                   ; preds = %for.body.unr44, %unr.cmp60
+for.body.unr53:                                   
   %40 = phi i64 [ %6, %unr.cmp60 ], [ %39, %for.body.unr44 ]
   %pvar6.09.unr54 = phi i64* [ %7, %unr.cmp60 ], [ %incdec.ptr4.unr49, %for.body.unr44 ]
   %var8.0.in8.unr55 = phi i8* [ %4, %unr.cmp60 ], [ %36, %for.body.unr44 ]
@@ -164,11 +164,11 @@ for.body.unr53:                                   ; preds = %for.body.unr44, %un
   %44 = call i64 @llvm.hexagon.M2.vdmacs.s1(i64 %40, i64 %42, i64 %43)
   br label %for.body.lr.ph.split
 
-for.body.lr.ph.split:                             ; preds = %for.body.unr53
+for.body.lr.ph.split:                             
   %45 = icmp ult i32 %10, 8
   br i1 %45, label %for.end.loopexit, label %for.body.lr.ph.split.split
 
-for.body.lr.ph.split.split:                       ; preds = %for.body.lr.ph.split, %for.body.lr.ph
+for.body.lr.ph.split.split:                       
   %.unr = phi i64 [ %44, %for.body.lr.ph.split ], [ %6, %for.body.lr.ph ]
   %pvar6.09.unr62 = phi i64* [ %incdec.ptr4.unr58, %for.body.lr.ph.split ], [ %7, %for.body.lr.ph ]
   %var8.0.in8.unr63 = phi i8* [ %41, %for.body.lr.ph.split ], [ %4, %for.body.lr.ph ]
@@ -176,7 +176,7 @@ for.body.lr.ph.split.split:                       ; preds = %for.body.lr.ph.spli
   %.lcssa12.unr = phi i64 [ %44, %for.body.lr.ph.split ], [ 0, %for.body.lr.ph ]
   br label %for.body
 
-for.body:                                         ; preds = %for.body, %for.body.lr.ph.split.split
+for.body:                                         
   %46 = phi i64 [ %.unr, %for.body.lr.ph.split.split ], [ %78, %for.body ]
   %pvar6.09 = phi i64* [ %pvar6.09.unr62, %for.body.lr.ph.split.split ], [ %scevgep71, %for.body ]
   %var8.0.in8 = phi i8* [ %var8.0.in8.unr63, %for.body.lr.ph.split.split ], [ %75, %for.body ]
@@ -232,15 +232,15 @@ for.body:                                         ; preds = %for.body, %for.body
   %scevgep71 = getelementptr i64, i64* %scevgep70, i32 1
   br i1 %cmp.7, label %for.body, label %for.end.loopexit.unr-lcssa
 
-for.end.loopexit.unr-lcssa:                       ; preds = %for.body
+for.end.loopexit.unr-lcssa:                       
   %.lcssa12.ph = phi i64 [ %78, %for.body ]
   br label %for.end.loopexit
 
-for.end.loopexit:                                 ; preds = %for.end.loopexit.unr-lcssa, %for.body.lr.ph.split
+for.end.loopexit:                                 
   %.lcssa12 = phi i64 [ %44, %for.body.lr.ph.split ], [ %.lcssa12.ph, %for.end.loopexit.unr-lcssa ]
   br label %for.end
 
-for.end:                                          ; preds = %for.end.loopexit, %entry
+for.end:                                          
   %.lcssa = phi i64 [ %6, %entry ], [ %.lcssa12, %for.end.loopexit ]
   %79 = call i32 @llvm.hexagon.S2.vrndpackwhs(i64 %.lcssa)
   ret i32 %79

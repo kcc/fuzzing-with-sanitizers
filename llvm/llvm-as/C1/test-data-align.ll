@@ -1,6 +1,6 @@
-; RUN:  %lli -O0 %s
 
-; Check that a variable is always aligned as specified.
+
+
 
 @var = global i32 0, align 32
 define i32 @main() {

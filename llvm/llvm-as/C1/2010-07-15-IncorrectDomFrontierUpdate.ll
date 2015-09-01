@@ -1,20 +1,20 @@
-; RUN: opt < %s -domfrontier -loop-simplify -domfrontier -verify-dom-info -analyze 
+
 
 
 define void @a() nounwind {
 entry:
   br i1 undef, label %bb37, label %bb1.i
 
-bb1.i:                                            ; preds = %bb1.i, %bb
-  %indvar = phi i64 [ %indvar.next, %bb1.i ], [ 0, %entry ] ; <i64> [#uses=1]
-  %indvar.next = add i64 %indvar, 1               ; <i64> [#uses=2]
-  %exitcond = icmp eq i64 %indvar.next, 576       ; <i1> [#uses=1]
+bb1.i:                                            
+  %indvar = phi i64 [ %indvar.next, %bb1.i ], [ 0, %entry ] 
+  %indvar.next = add i64 %indvar, 1               
+  %exitcond = icmp eq i64 %indvar.next, 576       
   br i1 %exitcond, label %bb37, label %bb1.i
 
-bb37:                                             ; preds = %bb1.i, %bb
+bb37:                                             
   br label %return
 
 
-return:                                           ; preds = %bb39
+return:                                           
   ret void
 }

@@ -1,16 +1,16 @@
-; RUN: opt -analyze -scalar-evolution -scalar-evolution < %s | FileCheck %s
+
 
 define void @bad.nsw() {
-; CHECK-LABEL: Classifying expressions for: @bad.nsw
-; CHECK-LABEL: Classifying expressions for: @bad.nsw
+
+
  entry: 
   br label %loop
 
  loop:
   %i = phi i8 [ -1, %entry ], [ %i.inc, %loop ]
-; CHECK:  %i = phi i8 [ -1, %entry ], [ %i.inc, %loop ]
-; CHECK-NEXT: -->  {-1,+,-128}<nw><%loop>
-; CHECK-NOT: -->  {-1,+,-128}<nsw><%loop>
+
+
+
 
   %counter = phi i8 [ 0, %entry ], [ %counter.inc, %loop ]
 

@@ -1,17 +1,17 @@
-; RUN: opt < %s -simplifycfg -disable-output
-; PR 2800
+
+
 
 define void @foo() {
 start:
-	%tmp = call i1 @bar( )		; <i1> [#uses=4]
+	%tmp = call i1 @bar( )		
 	br i1 %tmp, label %brtrue, label %brfalse
 
-brtrue:		; preds = %start
-	%tmpnew = and i1 %tmp, %tmp		; <i1> [#uses=1]
+brtrue:		
+	%tmpnew = and i1 %tmp, %tmp		
 	br label %brfalse
 
-brfalse:		; preds = %brtrue, %start
-	%andandtmp.0 = phi i1 [ %tmp, %start ], [ %tmpnew, %brtrue ]		; <i1> [#uses=0]
+brfalse:		
+	%andandtmp.0 = phi i1 [ %tmp, %start ], [ %tmpnew, %brtrue ]		
 	ret void
 }
 

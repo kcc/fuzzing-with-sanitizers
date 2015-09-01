@@ -1,19 +1,19 @@
-; RUN: llc -O2 < %s | FileCheck %s
-; RUN: llc -O2 -regalloc=basic < %s | FileCheck %s
-; Test to check that unused argument 'this' is not undefined in debug info.
+
+
+
 
 target triple = "x86_64-apple-darwin10.2"
 %struct.foo = type { i32 }
 
-@llvm.used = appending global [1 x i8*] [i8* bitcast (i32 (%struct.foo*, i32)* @_ZN3foo3bazEi to i8*)], section "llvm.metadata" ; <[1 x i8*]*> [#uses=0]
+@llvm.used = appending global [1 x i8*] [i8* bitcast (i32 (%struct.foo*, i32)* @_ZN3foo3bazEi to i8*)], section "llvm.metadata" 
 
 define i32 @_ZN3foo3bazEi(%struct.foo* nocapture %this, i32 %x) nounwind readnone optsize noinline ssp align 2 {
-;CHECK: DEBUG_VALUE: baz:this <- RDI{{$}}
+
 entry:
   tail call void @llvm.dbg.value(metadata %struct.foo* %this, i64 0, metadata !15, metadata !DIExpression()), !dbg !DILocation(scope: !8)
   tail call void @llvm.dbg.value(metadata i32 %x, i64 0, metadata !16, metadata !DIExpression()), !dbg !DILocation(scope: !8)
-  %0 = mul nsw i32 %x, 7, !dbg !29                ; <i32> [#uses=1]
-  %1 = add nsw i32 %0, 1, !dbg !29                ; <i32> [#uses=1]
+  %0 = mul nsw i32 %x, 7, !dbg !29                
+  %1 = add nsw i32 %0, 1, !dbg !29                
   ret i32 %1, !dbg !29
 }
 

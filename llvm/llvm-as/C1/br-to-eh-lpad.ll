@@ -1,11 +1,11 @@
-; RUN: llc < %s -mtriple=aarch64-apple-ios -verify-machineinstrs
 
-; This function tests that the machine verifier accepts an unconditional
-; branch from an invoke basic block, to its EH landing pad basic block.
-; The test is brittle and isn't ideally reduced, because in most cases the
-; branch would be removed (for instance, turned into a fallthrough), and in
-; that case, the machine verifier, which relies on analyzing branches for this
-; kind of verification, is unable to check anything, so accepts the CFG.
+
+
+
+
+
+
+
 
 define void @test_branch_to_landingpad() personality i8* bitcast (i32 (...)* @__objc_personality_v0 to i8*) {
 entry:

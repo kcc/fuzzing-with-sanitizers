@@ -1,7 +1,7 @@
-; RUN: opt < %s -basicaa -aa-eval -print-all-alias-modref-info -disable-output 2>&1 | FileCheck %s
 
-; CHECK: Function: foo
-; CHECK:   MayAlias: i32* %x, i32* %y
+
+
+
 
 define void @foo(i32* noalias %x) {
   %y = call i32* @unclear(i32* %x)

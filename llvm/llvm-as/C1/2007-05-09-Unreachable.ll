@@ -1,5 +1,5 @@
-; PR1333
-; RUN: opt < %s -loop-unswitch -disable-output
+
+
 
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64"
 target triple = "i686-pc-linux-gnu"
@@ -10,19 +10,19 @@ target triple = "i686-pc-linux-gnu"
 
 define void @quotes__write_quote() {
 entry:
-	%tmp606.i = icmp eq i32 0, 0		; <i1> [#uses=1]
+	%tmp606.i = icmp eq i32 0, 0		
 	br label %bb
-bb:		; preds = %cond_next73, %bb, %entry
+bb:		
 	br i1 false, label %bb51, label %bb
-bb51:		; preds = %cond_next73, %bb
+bb51:		
 	br i1 %tmp606.i, label %quotes__bid_ask_depth_offset_matrices__get_price.exit, label %cond_true.i
-cond_true.i:		; preds = %bb51
+cond_true.i:		
 	unreachable
-quotes__bid_ask_depth_offset_matrices__get_price.exit:		; preds = %bb51
+quotes__bid_ask_depth_offset_matrices__get_price.exit:		
 	br i1 false, label %cond_next73, label %cond_true72
-cond_true72:		; preds = %quotes__bid_ask_depth_offset_matrices__get_price.exit
+cond_true72:		
 	unreachable
-cond_next73:		; preds = %quotes__bid_ask_depth_offset_matrices__get_price.exit
+cond_next73:		
 	br i1 false, label %bb, label %bb51
 }
 

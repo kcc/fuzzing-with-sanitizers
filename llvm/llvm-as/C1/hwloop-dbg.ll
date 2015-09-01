@@ -1,5 +1,5 @@
-; RUN: llc < %s -march=hexagon -mcpu=hexagonv4 -O2 -disable-lsr | FileCheck %s
-; ModuleID = 'hwloop-dbg.o'
+
+
 target datalayout = "e-p:32:32:32-i64:64:64-i32:32:32-i16:16:16-i1:32:32-f64:64:64-f32:32:32-v64:64:64-v32:32:32-a0:0-n16:32"
 target triple = "hexagon"
 
@@ -10,10 +10,10 @@ entry:
   tail call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !15, metadata !DIExpression()), !dbg !19
   br label %for.body, !dbg !19
 
-for.body:                                         ; preds = %for.body, %entry
-; CHECK:     loop0(
-; CHECK-NOT: add({{r[0-9]*}}, #
-; CHECK:     endloop0
+for.body:                                         
+
+
+
   %arrayidx.phi = phi i32* [ %a, %entry ], [ %arrayidx.inc, %for.body ]
   %i.02 = phi i32 [ 0, %entry ], [ %inc, %for.body ]
   %b.addr.01 = phi i32* [ %b, %entry ], [ %incdec.ptr, %for.body ]
@@ -27,7 +27,7 @@ for.body:                                         ; preds = %for.body, %entry
   %arrayidx.inc = getelementptr i32, i32* %arrayidx.phi, i32 1
   br i1 %exitcond, label %for.end, label %for.body, !dbg !19
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret void, !dbg !27
 }
 

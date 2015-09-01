@@ -1,8 +1,8 @@
-; RUN: opt < %s -basicaa -gvn  -S | FileCheck %s
 
-; PR15967
-; BasicAA claims no alias when there is (due to a problem when the MaxLookup
-; limit was reached).
+
+
+
+
 
 target datalayout = "e"
 
@@ -32,5 +32,5 @@ define i32 @main() {
   store i8 0, i8* %11
   %12 = load i32, i32* %1, align 4
   ret i32 %12
-; CHECK: ret i32 %12
+
 }

@@ -1,10 +1,10 @@
-; RUN: llc -filetype=obj -mtriple=x86_64-pc-linux-gnu %s -o %t
-; RUN: llvm-readobj --relocations %t | FileCheck %s
 
-; Check that we don't have any relocations in the ranges section - 
-; to show that we're producing this as a relative offset to the
-; low_pc for the compile unit.
-; CHECK-NOT: .rela.debug_ranges
+
+
+
+
+
+
 
 @llvm.global_ctors = appending global [1 x { i32, void ()* }] [{ i32, void ()* } { i32 0, void ()* @__msan_init }]
 @str = private unnamed_addr constant [4 x i8] c"zzz\00"
@@ -18,7 +18,7 @@
 @__executable_start = external hidden global i32
 @_end = external hidden global i32
 
-; Function Attrs: sanitize_memory uwtable
+
 define void @_Z1fv() #0 {
 entry:
   %p = alloca i32*, align 8
@@ -41,12 +41,12 @@ entry:
   %_mscmp = icmp eq i64 %_msld, 0, !dbg !20
   br i1 %_mscmp, label %6, label %5, !dbg !20, !prof !22
 
-; <label>:5                                       ; preds = %entry
+
   call void @__msan_warning_noreturn(), !dbg !20
   call void asm sideeffect "", ""() #3, !dbg !20
   unreachable, !dbg !20
 
-; <label>:6                                       ; preds = %entry
+
   %7 = load i32, i32* %p.0.p.0., align 4, !dbg !20, !tbaa !23
   %8 = ptrtoint i32* %p.0.p.0. to i64, !dbg !20
   %9 = and i64 %8, -70368744177665, !dbg !20
@@ -59,29 +59,29 @@ entry:
   %_msprop_icmp = and i1 %11, %14, !dbg !20
   br i1 %_msprop_icmp, label %15, label %16, !dbg !20, !prof !27
 
-; <label>:15                                      ; preds = %6
+
   call void @__msan_warning_noreturn(), !dbg !20
   call void asm sideeffect "", ""() #3, !dbg !20
   unreachable, !dbg !20
 
-; <label>:16                                      ; preds = %6
+
   %tobool = icmp eq i32 %7, 0, !dbg !20
   br i1 %tobool, label %if.end, label %if.then, !dbg !20
 
-if.then:                                          ; preds = %16
+if.then:                                          
   store i64 0, i64* getelementptr inbounds ([1000 x i64], [1000 x i64]* @__msan_param_tls, i64 0, i64 0), align 8, !dbg !28
   store i32 0, i32* bitcast ([8 x i64]* @__msan_retval_tls to i32*), align 8, !dbg !28
   %puts = call i32 @puts(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @str, i64 0, i64 0)), !dbg !28
   br label %if.end, !dbg !28
 
-if.end:                                           ; preds = %16, %if.then
+if.end:                                           
   ret void, !dbg !29
 }
 
-; Function Attrs: nobuiltin
+
 declare i8* @_Znwm(i64) #1
 
-; Function Attrs: sanitize_memory uwtable
+
 define i32 @main() #0 {
 entry:
   %p.i = alloca i32*, align 8
@@ -106,12 +106,12 @@ entry:
   %_mscmp = icmp eq i64 %_msld, 0, !dbg !33
   br i1 %_mscmp, label %6, label %5, !dbg !33, !prof !22
 
-; <label>:5                                       ; preds = %entry
+
   call void @__msan_warning_noreturn(), !dbg !33
   call void asm sideeffect "", ""() #3, !dbg !33
   unreachable, !dbg !33
 
-; <label>:6                                       ; preds = %entry
+
   %7 = load i32, i32* %p.i.0.p.0.p.0..i, align 4, !dbg !33, !tbaa !23
   %8 = ptrtoint i32* %p.i.0.p.0.p.0..i to i64, !dbg !33
   %9 = and i64 %8, -70368744177665, !dbg !33
@@ -124,22 +124,22 @@ entry:
   %_msprop_icmp = and i1 %11, %14, !dbg !33
   br i1 %_msprop_icmp, label %15, label %16, !dbg !33, !prof !27
 
-; <label>:15                                      ; preds = %6
+
   call void @__msan_warning_noreturn(), !dbg !33
   call void asm sideeffect "", ""() #3, !dbg !33
   unreachable, !dbg !33
 
-; <label>:16                                      ; preds = %6
+
   %tobool.i = icmp eq i32 %7, 0, !dbg !33
   br i1 %tobool.i, label %_Z1fv.exit, label %if.then.i, !dbg !33
 
-if.then.i:                                        ; preds = %16
+if.then.i:                                        
   store i64 0, i64* getelementptr inbounds ([1000 x i64], [1000 x i64]* @__msan_param_tls, i64 0, i64 0), align 8, !dbg !34
   store i32 0, i32* bitcast ([8 x i64]* @__msan_retval_tls to i32*), align 8, !dbg !34
   %puts.i = call i32 @puts(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @str, i64 0, i64 0)), !dbg !34
   br label %_Z1fv.exit, !dbg !34
 
-_Z1fv.exit:                                       ; preds = %16, %if.then.i
+_Z1fv.exit:                                       
   call void @llvm.lifetime.end(i64 8, i8* %p.i.0..sroa_cast), !dbg !35
   store i32 0, i32* bitcast ([8 x i64]* @__msan_retval_tls to i32*), align 8, !dbg !36
   ret i32 0, !dbg !36
@@ -147,16 +147,16 @@ _Z1fv.exit:                                       ; preds = %16, %if.then.i
 
 declare void @__msan_init()
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #2
 
-; Function Attrs: nounwind
+
 declare i32 @puts(i8* nocapture readonly) #3
 
-; Function Attrs: nounwind
+
 declare void @llvm.lifetime.start(i64, i8* nocapture) #3
 
-; Function Attrs: nounwind
+
 declare void @llvm.lifetime.end(i64, i8* nocapture) #3
 
 declare void @__msan_warning_noreturn()
@@ -189,7 +189,7 @@ declare i8* @__msan_memcpy(i8*, i8*, i64)
 
 declare i8* @__msan_memset(i8*, i32, i64)
 
-; Function Attrs: nounwind
+
 declare void @llvm.memset.p0i8.i64(i8* nocapture, i8, i64, i32, i1) #3
 
 attributes #0 = { sanitize_memory uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

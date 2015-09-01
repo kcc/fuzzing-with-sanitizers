@@ -1,6 +1,6 @@
-; RUN: llc < %s -march=x86 > %t
-; RUN: grep "movb.7(%...)" %t
-; RUN: not grep leal %t
+
+
+
 
 define i8 @test(i32 *%P) nounwind {
   %Q = getelementptr i32, i32* %P, i32 1

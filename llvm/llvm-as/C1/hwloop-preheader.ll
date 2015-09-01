@@ -1,10 +1,10 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv5 -hexagon-hwloop-preheader < %s
-; REQUIRES: asserts
 
-; Test that the preheader is added to the parent loop, otherwise
-; we generate an invalid hardware loop.
 
-; Function Attrs: nounwind readonly
+
+
+
+
+
 define void @test(i16 signext %n) #0 {
 entry:
   br i1 undef, label %for.cond4.preheader.preheader.split.us, label %for.end22

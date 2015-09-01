@@ -1,4 +1,4 @@
-; RUN: llc  -march=mipsel -mcpu=mips32 -relocation-model=static -O3 < %s -mips-mixed-16-32  | FileCheck %s -check-prefix=32
+
 
 @x = global float 1.000000e+00, align 4
 @y = global float 0x4007333340000000, align 4
@@ -14,10 +14,10 @@ entry:
   ret void
 }
 
-; 32: 	.set	mips16
-; 32: 	.ent	foo
-; 32:	jrc $ra
-; 32:	.end	foo
+
+
+
+
 
 define void @nofoo() #1 {
 entry:
@@ -32,17 +32,17 @@ entry:
   ret void
 }
 
-; 32: 	.set	nomips16
-; 32: 	.ent	nofoo
-; 32:	.set	noreorder
-; 32:	.set	nomacro
-; 32:	.set	noat
-; 32:	add.s	{{.+}}
-; 32:	mfc1    {{.+}}
-; 32:	.set	at
-; 32:	.set	macro
-; 32:	.set	reorder
-; 32:	.end	nofoo
+
+
+
+
+
+
+
+
+
+
+
 declare i32 @printf(i8*, ...) #2
 
 define i32 @main() #3 {
@@ -56,16 +56,16 @@ entry:
   ret i32 0
 }
 
-; 32: 	.set	nomips16
-; 32: 	.ent	main
-; 32:	.set	noreorder
-; 32:	.set	nomacro
-; 32:	.set	noat
-; 32:	jr	$ra
-; 32:	.set	at
-; 32:	.set	macro
-; 32:	.set	reorder
-; 32:	.end	main
+
+
+
+
+
+
+
+
+
+
 
 attributes #0 = { nounwind "less-precise-fpmad"="false" "mips16" "no-frame-pointer-elim"="false" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "unsafe-fp-math"="false" "use-soft-float"="false" }
 attributes #1 = { nounwind "less-precise-fpmad"="false" "no-frame-pointer-elim"="false" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "nomips16" "unsafe-fp-math"="false" "use-soft-float"="false" }

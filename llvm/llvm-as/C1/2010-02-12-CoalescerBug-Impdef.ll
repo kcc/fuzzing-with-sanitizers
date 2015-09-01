@@ -1,19 +1,19 @@
-; RUN: llc < %s > %t
-; PR6283
 
-; Tricky coalescer bug:
-; After coalescing %RAX with a virtual register, this instruction was rematted:
-;
-;   %EAX<def> = MOV32rr %reg1070<kill>
-;
-; This instruction silently defined %RAX, and when rematting removed the
-; instruction, the live interval for %RAX was not properly updated. The valno
-; referred to a deleted instruction and bad things happened.
-;
-; The fix is to implicitly define %RAX when coalescing:
-;
-;   %EAX<def> = MOV32rr %reg1070<kill>, %RAX<imp-def>
-;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64"
 target triple = "x86_64-unknown-linux-gnu"
@@ -115,146 +115,146 @@ define fastcc i64 @get_computation_cost_at(%"struct ivopts_data"* %data, %"struc
 entry:
   br i1 undef, label %"100", label %"4"
 
-"4":                                              ; preds = %entry
+"4":                                              
   br i1 undef, label %"6", label %"5"
 
-"5":                                              ; preds = %"4"
+"5":                                              
   unreachable
 
-"6":                                              ; preds = %"4"
+"6":                                              
   br i1 undef, label %"8", label %"7"
 
-"7":                                              ; preds = %"6"
+"7":                                              
   unreachable
 
-"8":                                              ; preds = %"6"
+"8":                                              
   br i1 undef, label %"100", label %"10"
 
-"10":                                             ; preds = %"8"
+"10":                                             
   br i1 undef, label %"17", label %"16"
 
-"16":                                             ; preds = %"10"
+"16":                                             
   unreachable
 
-"17":                                             ; preds = %"10"
+"17":                                             
   br i1 undef, label %"19", label %"18"
 
-"18":                                             ; preds = %"17"
+"18":                                             
   unreachable
 
-"19":                                             ; preds = %"17"
+"19":                                             
   br i1 undef, label %"93", label %"20"
 
-"20":                                             ; preds = %"19"
+"20":                                             
   br i1 undef, label %"23", label %"21"
 
-"21":                                             ; preds = %"20"
+"21":                                             
   unreachable
 
-"23":                                             ; preds = %"20"
+"23":                                             
   br i1 undef, label %"100", label %"25"
 
-"25":                                             ; preds = %"23"
+"25":                                             
   br i1 undef, label %"100", label %"26"
 
-"26":                                             ; preds = %"25"
+"26":                                             
   br i1 undef, label %"30", label %"28"
 
-"28":                                             ; preds = %"26"
+"28":                                             
   unreachable
 
-"30":                                             ; preds = %"26"
+"30":                                             
   br i1 undef, label %"59", label %"51"
 
-"51":                                             ; preds = %"30"
+"51":                                             
   br i1 undef, label %"55", label %"52"
 
-"52":                                             ; preds = %"51"
+"52":                                             
   unreachable
 
-"55":                                             ; preds = %"51"
-  %0 = icmp ugt i32 0, undef                      ; <i1> [#uses=1]
+"55":                                             
+  %0 = icmp ugt i32 0, undef                      
   br i1 %0, label %"50.i", label %"9.i"
 
-"9.i":                                            ; preds = %"55"
+"9.i":                                            
   unreachable
 
-"50.i":                                           ; preds = %"55"
+"50.i":                                           
   br i1 undef, label %"55.i", label %"54.i"
 
-"54.i":                                           ; preds = %"50.i"
+"54.i":                                           
   br i1 undef, label %"57.i", label %"55.i"
 
-"55.i":                                           ; preds = %"54.i", %"50.i"
+"55.i":                                           
   unreachable
 
-"57.i":                                           ; preds = %"54.i"
+"57.i":                                           
   br label %"63.i"
 
-"61.i":                                           ; preds = %"63.i"
+"61.i":                                           
   br i1 undef, label %"64.i", label %"62.i"
 
-"62.i":                                           ; preds = %"61.i"
+"62.i":                                           
   br label %"63.i"
 
-"63.i":                                           ; preds = %"62.i", %"57.i"
+"63.i":                                           
   br i1 undef, label %"61.i", label %"64.i"
 
-"64.i":                                           ; preds = %"63.i", %"61.i"
+"64.i":                                           
   unreachable
 
-"59":                                             ; preds = %"30"
+"59":                                             
   br i1 undef, label %"60", label %"82"
 
-"60":                                             ; preds = %"59"
+"60":                                             
   br i1 undef, label %"61", label %"82"
 
-"61":                                             ; preds = %"60"
+"61":                                             
   br i1 undef, label %"62", label %"82"
 
-"62":                                             ; preds = %"61"
+"62":                                             
   br i1 undef, label %"100", label %"63"
 
-"63":                                             ; preds = %"62"
+"63":                                             
   br i1 undef, label %"65", label %"64"
 
-"64":                                             ; preds = %"63"
+"64":                                             
   unreachable
 
-"65":                                             ; preds = %"63"
+"65":                                             
   br i1 undef, label %"66", label %"67"
 
-"66":                                             ; preds = %"65"
+"66":                                             
   unreachable
 
-"67":                                             ; preds = %"65"
-  %1 = load i32, i32* undef, align 4                   ; <i32> [#uses=0]
+"67":                                             
+  %1 = load i32, i32* undef, align 4                   
   br label %"100"
 
-"82":                                             ; preds = %"61", %"60", %"59"
+"82":                                             
   unreachable
 
-"93":                                             ; preds = %"19"
-  %2 = call fastcc %"union tree_node"* @get_computation_at(%"struct loop"* undef, %"struct iv_use"* %use, %"struct iv_cand"* %cand, %"union gimple_statement_d"* %at) nounwind ; <%"union tree_node"*> [#uses=1]
+"93":                                             
+  %2 = call fastcc %"union tree_node"* @get_computation_at(%"struct loop"* undef, %"struct iv_use"* %use, %"struct iv_cand"* %cand, %"union gimple_statement_d"* %at) nounwind 
   br i1 undef, label %"100", label %"97"
 
-"97":                                             ; preds = %"93"
+"97":                                             
   br i1 undef, label %"99", label %"98"
 
-"98":                                             ; preds = %"97"
+"98":                                             
   br label %"99"
 
-"99":                                             ; preds = %"98", %"97"
-  %3 = phi %"union tree_node"* [ undef, %"98" ], [ %2, %"97" ] ; <%"union tree_node"*> [#uses=1]
-  %4 = call fastcc i32 @computation_cost(%"union tree_node"* %3, i8 zeroext undef) nounwind ; <i32> [#uses=1]
+"99":                                             
+  %3 = phi %"union tree_node"* [ undef, %"98" ], [ %2, %"97" ] 
+  %4 = call fastcc i32 @computation_cost(%"union tree_node"* %3, i8 zeroext undef) nounwind 
   br label %"100"
 
-"100":                                            ; preds = %"99", %"93", %"67", %"62", %"25", %"23", %"8", %entry
-  %memtmp1.1.0 = phi i32 [ 0, %"99" ], [ 10000000, %entry ], [ 10000000, %"8" ], [ 10000000, %"23" ], [ 10000000, %"25" ], [ undef, %"62" ], [ undef, %"67" ], [ 10000000, %"93" ] ; <i32> [#uses=1]
-  %memtmp1.0.0 = phi i32 [ %4, %"99" ], [ 10000000, %entry ], [ 10000000, %"8" ], [ 10000000, %"23" ], [ 10000000, %"25" ], [ undef, %"62" ], [ undef, %"67" ], [ 10000000, %"93" ] ; <i32> [#uses=1]
-  %5 = zext i32 %memtmp1.0.0 to i64               ; <i64> [#uses=1]
-  %6 = zext i32 %memtmp1.1.0 to i64               ; <i64> [#uses=1]
-  %7 = shl i64 %6, 32                             ; <i64> [#uses=1]
-  %8 = or i64 %7, %5                              ; <i64> [#uses=1]
+"100":                                            
+  %memtmp1.1.0 = phi i32 [ 0, %"99" ], [ 10000000, %entry ], [ 10000000, %"8" ], [ 10000000, %"23" ], [ 10000000, %"25" ], [ undef, %"62" ], [ undef, %"67" ], [ 10000000, %"93" ] 
+  %memtmp1.0.0 = phi i32 [ %4, %"99" ], [ 10000000, %entry ], [ 10000000, %"8" ], [ 10000000, %"23" ], [ 10000000, %"25" ], [ undef, %"62" ], [ undef, %"67" ], [ 10000000, %"93" ] 
+  %5 = zext i32 %memtmp1.0.0 to i64               
+  %6 = zext i32 %memtmp1.1.0 to i64               
+  %7 = shl i64 %6, 32                             
+  %8 = or i64 %7, %5                              
   ret i64 %8
 }

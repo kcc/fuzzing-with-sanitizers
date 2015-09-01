@@ -1,25 +1,25 @@
-; REQUIRES: object-emission
-; RUN: %llc_dwarf -filetype=obj -O0 < %s | llvm-dwarfdump -debug-dump=info - | FileCheck %s
-; Manually derived by externalizing the composite types from:
-;
-;   namespace N { class B; }
-;   using N::B;
-;   class A;
-;   A *a;
-;
-; Test the direct use of an external type.
-; CHECK: DW_TAG_variable
-; CHECK:   DW_AT_type [DW_FORM_ref4]	  {{.*}}{[[PTR:.*]]}
-; CHECK: [[PTR]]: DW_TAG_pointer_type
-; CHECK:   DW_AT_type [DW_FORM_ref4]  	  {{.*}}{[[A:.*]]}
-; CHECK: [[A]]: DW_TAG_class_type
-; CHECK:   DW_AT_declaration [DW_FORM_flag]	(0x01)
-; CHECK:   DW_AT_signature [DW_FORM_ref_sig8]	(0x4e834ea939695c24)
-; CHECK: [[B:.*]]: DW_TAG_class_type
-; CHECK:   DW_AT_declaration [DW_FORM_flag]	(0x01)
-; CHECK:   DW_AT_signature [DW_FORM_ref_sig8]	(0x942e51c7addda5f7)
-; CHECK:   DW_TAG_imported_declaration
-; CHECK:     DW_AT_import [DW_FORM_ref4]  {{.*}}[[B]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.10.0"

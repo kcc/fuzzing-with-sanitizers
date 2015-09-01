@@ -1,33 +1,33 @@
-; RUN: llc -O2 -march=hexagon < %s | FileCheck %s
 
-; CHECK-DAG: extractu(r{{[0-9]*}}, #3, #4)
-; CHECK-DAG: extractu(r{{[0-9]*}}, #8, #7)
-; CHECK-DAG: extractu(r{{[0-9]*}}, #8, #16)
 
-; C source:
-; typedef struct {
-;   unsigned x1:3;
-;   unsigned x2:7;
-;   unsigned x3:8;
-;   unsigned x4:12;
-;   unsigned x5:2;
-; } structx_t;
-;
-; typedef struct {
-;   unsigned y1:4;
-;   unsigned y2:3;
-;   unsigned y3:9;
-;   unsigned y4:8;
-;   unsigned y5:8;
-; } structy_t;
-;
-; void foo(structx_t *px, structy_t *py) {
-;   px->x1 = py->y1;
-;   px->x2 = py->y2;
-;   px->x3 = py->y3;
-;   px->x4 = py->y4;
-;   px->x5 = py->y5;
-; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-p:32:32:32-i64:64:64-i32:32:32-i16:16:16-i1:32:32-f64:64:64-f32:32:32-v64:64:64-v32:32:32-a0:0-n16:32"
 target triple = "hexagon"

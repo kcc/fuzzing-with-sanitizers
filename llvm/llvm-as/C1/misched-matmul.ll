@@ -1,16 +1,16 @@
-; REQUIRES: asserts
-; RUN: llc < %s -march=x86-64 -mcpu=core2 -pre-RA-sched=source -enable-misched -stats 2>&1 | FileCheck %s
-;
-; Verify that register pressure heuristics are working in MachineScheduler.
-;
-; We can further reduce spills in this case with a global register
-; pressure heuristic, like sethi-ullman numbers or biasing toward
-; scheduled subtrees. However, these heuristics are marginally
-; beneficial on x86_64 and exacerbate register pressure in other
-; more complex cases.
-;
-; CHECK: @wrap_mul4
-; CHECK: 23 regalloc - Number of spills inserted
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @wrap_mul4(double* nocapture %Out, [4 x double]* nocapture %A, [4 x double]* nocapture %B) #0 {
 entry:

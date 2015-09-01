@@ -1,10 +1,10 @@
-; RUN: llc < %s -mtriple=x86_64-apple-darwin -mcpu=corei7-avx -mattr=+avx -x86-experimental-vector-widening-legalization | FileCheck %s
 
-; Check that we perform a scalar XOR on i32.
 
-; CHECK: pull_bitcast
-; CHECK: xorl
-; CHECK: ret
+
+
+
+
+
 define void @pull_bitcast (<4 x i8>* %pA, <4 x i8>* %pB) {
   %A = load <4 x i8>, <4 x i8>* %pA
   %B = load <4 x i8>, <4 x i8>* %pB
@@ -13,14 +13,14 @@ define void @pull_bitcast (<4 x i8>* %pA, <4 x i8>* %pB) {
   ret void
 }
 
-; CHECK: multi_use_swizzle
-; CHECK: pshufd
-; CHECK-NEXT: pshufd
-; CHECK-NEXT: pblendw
-; CHECK-NEXT: pshufd
-; CHECK-NEXT: pshufd
-; CHECK-NEXT: pxor
-; CHECK-NEXT: ret
+
+
+
+
+
+
+
+
 define <4 x i32> @multi_use_swizzle (<4 x i32>* %pA, <4 x i32>* %pB) {
   %A = load <4 x i32>, <4 x i32>* %pA
   %B = load <4 x i32>, <4 x i32>* %pB
@@ -31,9 +31,9 @@ define <4 x i32> @multi_use_swizzle (<4 x i32>* %pA, <4 x i32>* %pB) {
   ret <4 x i32> %R
 }
 
-; CHECK: pull_bitcast2
-; CHECK: xorl
-; CHECK: ret
+
+
+
 define <4 x i8> @pull_bitcast2 (<4 x i8>* %pA, <4 x i8>* %pB, <4 x i8>* %pC) {
   %A = load <4 x i8>, <4 x i8>* %pA
   store <4 x i8> %A, <4 x i8>* %pC
@@ -45,9 +45,9 @@ define <4 x i8> @pull_bitcast2 (<4 x i8>* %pA, <4 x i8>* %pB, <4 x i8>* %pC) {
 
 
 
-; CHECK: reverse_1
-; CHECK-NOT: pshufd
-; CHECK: ret
+
+
+
 define <4 x i32> @reverse_1 (<4 x i32>* %pA, <4 x i32>* %pB) {
   %A = load <4 x i32>, <4 x i32>* %pA
   %B = load <4 x i32>, <4 x i32>* %pB
@@ -57,9 +57,9 @@ define <4 x i32> @reverse_1 (<4 x i32>* %pA, <4 x i32>* %pB) {
 }
 
 
-; CHECK: no_reverse_shuff
-; CHECK: pshufd
-; CHECK: ret
+
+
+
 define <4 x i32> @no_reverse_shuff (<4 x i32>* %pA, <4 x i32>* %pB) {
   %A = load <4 x i32>, <4 x i32>* %pA
   %B = load <4 x i32>, <4 x i32>* %pB

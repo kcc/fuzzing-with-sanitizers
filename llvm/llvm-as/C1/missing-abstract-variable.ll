@@ -1,102 +1,102 @@
-; REQUIRES: object-emission
 
-; RUN: %llc_dwarf -O0 -filetype=obj < %s | llvm-dwarfdump -debug-dump=info - | FileCheck %s
 
-; The formal parameter 'b' for Function 'x' when inlined within 'a' is lost on
-; mips and powerpc64 (and on x86_64 at at least -O2). Presumably this is a
-; SelectionDAG issue (do mips/powerpc64 use FastISel?).
-; XFAIL: mips, powerpc64, s390x, sparc
 
-; Build from the following source with clang -O2.
 
-; The important details are that 'x's abstract definition is first built during
-; the definition of 'b', where the parameter to 'x' is constant and so 'x's 's'
-; variable is optimized away. No abstract definition DIE for 's' is constructed.
-; Then, during 'a' emission, the abstract DbgVariable for 's' is created, but
-; the abstract DIE isn't (since the abstract definition for 'b' is already
-; built). This results in 's' inlined in 'a' being emitted with its name, line,
-; file there, rather than referencing an abstract definition.
 
-; extern int t;
-;
-; void f(int);
-;
-; inline void x(bool b) {
-;   if (b) {
-;     int s = t;
-;     f(s);
-;   }
-;   f(0);
-; }
-;
-; void b() {
-;   x(false);
-; }
-;
-; void a(bool u) {
-;   x(u);
-; }
 
-; CHECK: [[X_DECL:.*]]: DW_TAG_subprogram
-; CHECK-NOT: DW_TAG
-; CHECK:   DW_AT_name {{.*}} "x"
-; CHECK-NOT: {{DW_TAG|NULL}}
-; CHECK:   DW_TAG_formal_parameter
-; CHECK-NOT: DW_TAG
-; CHECK:     DW_AT_name {{.*}} "b"
-; CHECK-NOT: {{DW_TAG|NULL}}
-; CHECK:       DW_TAG_lexical_block
-; CHECK-NOT: {{DW_TAG|NULL}}
-; CHECK:   DW_TAG_variable
-; CHECK-NOT: DW_TAG
-; CHECK:         DW_AT_name {{.*}} "s"
 
-; CHECK: DW_TAG_subprogram
-; CHECK-NOT: DW_TAG
-; CHECK:   DW_AT_name {{.*}} "b"
-; CHECK-NOT: {{DW_TAG|NULL}}
-; CHECK:   DW_TAG_inlined_subroutine
-; CHECK-NOT: DW_TAG
-; CHECK:     DW_AT_abstract_origin {{.*}} {[[X_DECL]]}
-; CHECK-NOT: {{DW_TAG|NULL}}
-; CHECK:     DW_TAG_formal_parameter
-; CHECK-NOT: DW_TAG
-; CHECK:       DW_AT_abstract_origin {{.*}} "b"
-; Notice 'x's local variable 's' is missing. Not necessarily a bug here,
-; since it's been optimized entirely away and it should be described in
-; abstract subprogram.
-; CHECK-NOT: DW_TAG
-; CHECK: NULL
-; CHECK-NOT: DW_TAG
-; CHECK: NULL
 
-; CHECK: DW_TAG_subprogram
-; CHECK-NOT: DW_TAG
-; CHECK:   DW_AT_name {{.*}} "a"
-; CHECK-NOT: {{DW_TAG|NULL}}
-; CHECK:   DW_TAG_formal_parameter
-; CHECK-NOT: {{DW_TAG|NULL}}
-; CHECK:   DW_TAG_inlined_subroutine
-; CHECK-NOT: DW_TAG
-; CHECK:     DW_AT_abstract_origin {{.*}} {[[X_DECL]]}
-; CHECK-NOT: {{DW_TAG|NULL}}
-; FIXME: This formal parameter goes missing at least at -O2 (& on
-; mips/powerpc), maybe before that. Perhaps SelectionDAG is to blame (and
-; fastisel succeeds).
-; CHECK:     DW_TAG_formal_parameter
-; CHECK-NOT: DW_TAG
-; CHECK:       DW_AT_abstract_origin {{.*}} "b"
 
-; CHECK-NOT: {{DW_TAG|NULL}}
-; CHECK:     DW_TAG_lexical_block
-; CHECK-NOT: {{DW_TAG|NULL}}
-; CHECK:       DW_TAG_variable
-; CHECK-NOT: DW_TAG
-; CHECK:         DW_AT_abstract_origin {{.*}} "s"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @t = external global i32
 
-; Function Attrs: uwtable
+
 define void @_Z1bv() #0 {
 entry:
   tail call void @llvm.dbg.value(metadata i1 false, i64 0, metadata !25, metadata !DIExpression()), !dbg !27
@@ -104,27 +104,27 @@ entry:
   ret void, !dbg !29
 }
 
-; Function Attrs: uwtable
+
 define void @_Z1ab(i1 zeroext %u) #0 {
 entry:
   tail call void @llvm.dbg.value(metadata i1 %u, i64 0, metadata !13, metadata !DIExpression()), !dbg !30
   tail call void @llvm.dbg.value(metadata i1 %u, i64 0, metadata !31, metadata !DIExpression()), !dbg !33
   br i1 %u, label %if.then.i, label %_Z1xb.exit, !dbg !34
 
-if.then.i:                                        ; preds = %entry
+if.then.i:                                        
   %0 = load i32, i32* @t, align 4, !dbg !35, !tbaa !36
   tail call void @llvm.dbg.value(metadata i32 %0, i64 0, metadata !40, metadata !DIExpression()), !dbg !35
   tail call void @_Z1fi(i32 %0), !dbg !41
   br label %_Z1xb.exit, !dbg !42
 
-_Z1xb.exit:                                       ; preds = %entry, %if.then.i
+_Z1xb.exit:                                       
   tail call void @_Z1fi(i32 0), !dbg !43
   ret void, !dbg !44
 }
 
 declare void @_Z1fi(i32) #1
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #2
 
 attributes #0 = { uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

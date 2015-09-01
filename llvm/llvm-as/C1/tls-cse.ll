@@ -1,9 +1,9 @@
-; RUN: llc -march=ppc64 -mcpu=pwr7 -O2 -relocation-model=pic < %s | FileCheck %s
-; RUN: llc -march=ppc64 -mcpu=pwr7 -O2 -relocation-model=pic < %s | grep "__tls_get_addr" | count 1
 
-; This test was derived from LLVM's own
-; PrettyStackTraceEntry::~PrettyStackTraceEntry().  It demonstrates an
-; opportunity for CSE of calls to __tls_get_addr().
+
+
+
+
+
 
 target datalayout = "e-m:e-i64:64-n32:64"
 target triple = "powerpc64le-unknown-linux-gnu"
@@ -29,11 +29,11 @@ entry:
   %cmp.i = icmp eq %"class.llvm::PrettyStackTraceEntry"* %1, %this
   br i1 %cmp.i, label %_ZN4llvm21PrettyStackTraceEntryD2Ev.exit, label %cond.false.i
 
-cond.false.i:                                     ; preds = %entry
+cond.false.i:                                     
   tail call void @__assert_fail(i8* getelementptr inbounds ([87 x i8], [87 x i8]* @.str, i64 0, i64 0), i8* getelementptr inbounds ([64 x i8], [64 x i8]* @.str1, i64 0, i64 0), i32 zeroext 119, i8* getelementptr inbounds ([62 x i8], [62 x i8]* @__PRETTY_FUNCTION__._ZN4llvm21PrettyStackTraceEntryD2Ev, i64 0, i64 0))
   unreachable
 
-_ZN4llvm21PrettyStackTraceEntryD2Ev.exit:         ; preds = %entry
+_ZN4llvm21PrettyStackTraceEntryD2Ev.exit:         
   %NextEntry.i.i = getelementptr inbounds %"class.llvm::PrettyStackTraceEntry", %"class.llvm::PrettyStackTraceEntry"* %this, i64 0, i32 1
   %2 = bitcast %"class.llvm::PrettyStackTraceEntry"** %NextEntry.i.i to i64*
   %3 = load i64, i64* %2, align 8
@@ -43,10 +43,10 @@ _ZN4llvm21PrettyStackTraceEntryD2Ev.exit:         ; preds = %entry
   ret void
 }
 
-; CHECK-LABEL: _ZN4llvm21PrettyStackTraceEntryD0Ev:
-; CHECK: addis [[REG1:[0-9]+]], 2, _ZL20PrettyStackTraceHead@got@tlsld@ha
-; CHECK: addi 3, [[REG1]], _ZL20PrettyStackTraceHead@got@tlsld@l
-; CHECK: bl __tls_get_addr(_ZL20PrettyStackTraceHead@tlsld)
-; CHECK: addis 3, 3, _ZL20PrettyStackTraceHead@dtprel@ha
-; CHECK: ld {{[0-9]+}}, _ZL20PrettyStackTraceHead@dtprel@l(3)
-; CHECK: std {{[0-9]+}}, _ZL20PrettyStackTraceHead@dtprel@l(3)
+
+
+
+
+
+
+

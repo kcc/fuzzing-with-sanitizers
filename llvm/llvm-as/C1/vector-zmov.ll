@@ -1,19 +1,19 @@
-; RUN: llc < %s -mtriple=x86_64-unknown-unknown -mcpu=x86-64 -mattr=+sse2 | FileCheck %s --check-prefix=SSE --check-prefix=SSE2
-; RUN: llc < %s -mtriple=x86_64-unknown-unknown -mcpu=x86-64 -mattr=+ssse3 | FileCheck %s --check-prefix=SSE --check-prefix=SSSE3
-; RUN: llc < %s -mtriple=x86_64-unknown-unknown -mcpu=x86-64 -mattr=+sse4.1 | FileCheck %s --check-prefix=SSE --check-prefix=SSE41
-; RUN: llc < %s -mtriple=x86_64-unknown-unknown -mcpu=x86-64 -mattr=+avx | FileCheck %s --check-prefix=AVX --check-prefix=AVX1
-; RUN: llc < %s -mtriple=x86_64-unknown-unknown -mcpu=x86-64 -mattr=+avx2 | FileCheck %s --check-prefix=AVX --check-prefix=AVX2
+
+
+
+
+
 
 define <4 x i32> @load_zmov_4i32_to_0zzz(<4 x i32> *%ptr) {
-; SSE-LABEL: load_zmov_4i32_to_0zzz:
-; SSE:       # BB#0: # %entry
-; SSE-NEXT:    movd {{.*#+}} xmm0 = mem[0],zero,zero,zero
-; SSE-NEXT:    retq
-;
-; AVX-LABEL: load_zmov_4i32_to_0zzz:
-; AVX:       # BB#0: # %entry
-; AVX-NEXT:    vmovd {{.*#+}} xmm0 = mem[0],zero,zero,zero
-; AVX-NEXT:    retq
+
+
+
+
+
+
+
+
+
 
 entry:
   %X = load <4 x i32>, <4 x i32>* %ptr
@@ -22,15 +22,15 @@ entry:
 }
 
 define <2 x i64> @load_zmov_2i64_to_0z(<2 x i64> *%ptr) {
-; SSE-LABEL: load_zmov_2i64_to_0z:
-; SSE:       # BB#0: # %entry
-; SSE-NEXT:    movq {{.*#+}} xmm0 = mem[0],zero
-; SSE-NEXT:    retq
-;
-; AVX-LABEL: load_zmov_2i64_to_0z:
-; AVX:       # BB#0: # %entry
-; AVX-NEXT:    vmovq {{.*#+}} xmm0 = mem[0],zero
-; AVX-NEXT:    retq
+
+
+
+
+
+
+
+
+
 
 entry:
   %X = load <2 x i64>, <2 x i64>* %ptr

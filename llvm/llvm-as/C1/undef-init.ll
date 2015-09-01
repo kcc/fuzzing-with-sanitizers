@@ -1,11 +1,11 @@
-; RUN: opt < %s -globalopt -S | not grep store
 
-@llvm.global_ctors = appending global [1 x { i32, void ()* }] [ { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__Z3foov } ]          ; <[1 x { i32, void ()* }]*> [#uses=0]
-@X.0 = internal global i32 undef                ; <i32*> [#uses=2]
+
+@llvm.global_ctors = appending global [1 x { i32, void ()* }] [ { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__Z3foov } ]          
+@X.0 = internal global i32 undef                
 
 define i32 @_Z3foov() {
 entry:
-        %tmp.1 = load i32, i32* @X.0         ; <i32> [#uses=1]
+        %tmp.1 = load i32, i32* @X.0         
         ret i32 %tmp.1
 }
 

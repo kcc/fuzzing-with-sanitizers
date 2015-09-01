@@ -1,16 +1,16 @@
-; RUN: llc < %s -march=amdgcn -mcpu=verde -verify-machineinstrs | FileCheck %s
-; RUN: llc < %s -march=amdgcn -mcpu=tonga -verify-machineinstrs | FileCheck %s
 
-; CHECK: {{^}}test_8_min_char:
-; CHECK: buffer_store_byte
-; CHECK: buffer_store_byte
-; CHECK: buffer_store_byte
-; CHECK: buffer_store_byte
-; CHECK: buffer_store_byte
-; CHECK: buffer_store_byte
-; CHECK: buffer_store_byte
-; CHECK: buffer_store_byte
-; ModuleID = 'radeon'
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @test_8_min_char(i8 addrspace(1)* nocapture %out, i8 addrspace(1)* nocapture readonly %in0, i8 addrspace(1)* nocapture readonly %in1) #0 {
 entry:

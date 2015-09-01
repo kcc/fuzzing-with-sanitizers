@@ -1,7 +1,7 @@
-;RUN: llc < %s -march=r600 -mcpu=cedar
 
-;This test ensures that R600 backend can handle ifcvt properly
-;and do not generate ALU clauses with more than 128 instructions.
+
+
+
 
 define void @main(<4 x float> inreg %reg0, <4 x float> inreg %reg1, <4 x float> inreg %reg2, <4 x float> inreg %reg3, <4 x float> inreg %reg4, <4 x float> inreg %reg5, <4 x float> inreg %reg6, <4 x float> inreg %reg7, <4 x float> inreg %reg8, <4 x float> inreg %reg9) #0 {
 main_body:
@@ -90,7 +90,7 @@ main_body:
   %81 = icmp ne i32 %80, 0
   br i1 %81, label %IF137, label %ENDIF136
 
-IF137:                                            ; preds = %main_body
+IF137:                                            
   %82 = insertelement <4 x float> undef, float %30, i32 0
   %83 = insertelement <4 x float> %82, float %31, i32 1
   %84 = insertelement <4 x float> %83, float %32, i32 2
@@ -149,7 +149,7 @@ IF137:                                            ; preds = %main_body
   %137 = bitcast float %136 to i32
   br label %LOOP
 
-ENDIF136:                                         ; preds = %main_body, %ENDIF154
+ENDIF136:                                         
   %temp68.1 = phi float [ %600, %ENDIF154 ], [ 0.000000e+00, %main_body ]
   %temp69.0 = phi float [ %602, %ENDIF154 ], [ 0.000000e+00, %main_body ]
   %temp70.0 = phi float [ %604, %ENDIF154 ], [ 1.000000e+00, %main_body ]
@@ -435,7 +435,7 @@ ENDIF136:                                         ; preds = %main_body, %ENDIF15
   %417 = icmp ne i32 %416, 0
   br i1 %417, label %IF161, label %ENDIF160
 
-LOOP:                                             ; preds = %ENDIF139, %IF137
+LOOP:                                             
   %temp88.0 = phi float [ 0.000000e+00, %IF137 ], [ %446, %ENDIF139 ]
   %temp92.0 = phi float [ 1.000000e+00, %IF137 ], [ %.temp92.0, %ENDIF139 ]
   %temp96.0 = phi float [ 0.000000e+00, %IF137 ], [ %477, %ENDIF139 ]
@@ -447,7 +447,7 @@ LOOP:                                             ; preds = %ENDIF139, %IF137
   %423 = icmp ne i32 %422, 0
   br i1 %423, label %IF140, label %ENDIF139
 
-IF140:                                            ; preds = %LOOP
+IF140:                                            
   %424 = fmul float %133, 5.000000e-01
   %425 = fmul float %129, %temp92.0
   %426 = fadd float %425, %22
@@ -472,7 +472,7 @@ IF140:                                            ; preds = %LOOP
   %445 = icmp ne i32 %444, 0
   br i1 %445, label %IF146, label %ENDIF145
 
-ENDIF139:                                         ; preds = %LOOP
+ENDIF139:                                         
   %446 = fadd float %temp88.0, %133
   %447 = fmul float %129, %446
   %448 = fadd float %447, %22
@@ -508,13 +508,13 @@ ENDIF139:                                         ; preds = %LOOP
   %477 = bitcast i32 %476 to float
   br label %LOOP
 
-IF146:                                            ; preds = %IF140
+IF146:                                            
   %478 = fmul float 2.000000e+00, %424
   %479 = fsub float -0.000000e+00, %478
   %480 = fadd float %temp92.0, %479
   br label %ENDIF145
 
-ENDIF145:                                         ; preds = %IF140, %IF146
+ENDIF145:                                         
   %temp88.1 = phi float [ %480, %IF146 ], [ %temp92.0, %IF140 ]
   %481 = fadd float %temp88.1, %424
   %482 = fmul float %424, 5.000000e-01
@@ -541,13 +541,13 @@ ENDIF145:                                         ; preds = %IF140, %IF146
   %503 = icmp ne i32 %502, 0
   br i1 %503, label %IF149, label %ENDIF148
 
-IF149:                                            ; preds = %ENDIF145
+IF149:                                            
   %504 = fmul float 2.000000e+00, %482
   %505 = fsub float -0.000000e+00, %504
   %506 = fadd float %481, %505
   br label %ENDIF148
 
-ENDIF148:                                         ; preds = %ENDIF145, %IF149
+ENDIF148:                                         
   %temp88.2 = phi float [ %506, %IF149 ], [ %481, %ENDIF145 ]
   %temp92.2 = phi float [ %481, %IF149 ], [ %temp92.0, %ENDIF145 ]
   %507 = fadd float %temp88.2, %482
@@ -575,13 +575,13 @@ ENDIF148:                                         ; preds = %ENDIF145, %IF149
   %529 = icmp ne i32 %528, 0
   br i1 %529, label %IF152, label %ENDIF151
 
-IF152:                                            ; preds = %ENDIF148
+IF152:                                            
   %530 = fmul float 2.000000e+00, %508
   %531 = fsub float -0.000000e+00, %530
   %532 = fadd float %507, %531
   br label %ENDIF151
 
-ENDIF151:                                         ; preds = %ENDIF148, %IF152
+ENDIF151:                                         
   %temp88.3 = phi float [ %532, %IF152 ], [ %507, %ENDIF148 ]
   %temp92.3 = phi float [ %507, %IF152 ], [ %temp92.2, %ENDIF148 ]
   %533 = fadd float %temp88.3, %508
@@ -609,13 +609,13 @@ ENDIF151:                                         ; preds = %ENDIF148, %IF152
   %555 = icmp ne i32 %554, 0
   br i1 %555, label %IF155, label %ENDIF154
 
-IF155:                                            ; preds = %ENDIF151
+IF155:                                            
   %556 = fmul float 2.000000e+00, %534
   %557 = fsub float -0.000000e+00, %556
   %558 = fadd float %533, %557
   br label %ENDIF154
 
-ENDIF154:                                         ; preds = %ENDIF151, %IF155
+ENDIF154:                                         
   %temp88.4 = phi float [ %558, %IF155 ], [ %533, %ENDIF151 ]
   %temp92.4 = phi float [ %533, %IF155 ], [ %temp92.3, %ENDIF151 ]
   %559 = fadd float %temp88.4, %534
@@ -667,7 +667,7 @@ ENDIF154:                                         ; preds = %ENDIF151, %IF155
   %604 = fadd float %603, -1.000000e+00
   br label %ENDIF136
 
-IF161:                                            ; preds = %ENDIF136
+IF161:                                            
   %605 = fmul float %202, 0x3FB99999A0000000
   %606 = fcmp uge float 0x3FE4CCCCC0000000, %605
   %607 = select i1 %606, float 0x3FE4CCCCC0000000, float %605
@@ -707,7 +707,7 @@ IF161:                                            ; preds = %ENDIF136
   %641 = fmul float %627, %638
   br label %ENDIF160
 
-ENDIF160:                                         ; preds = %ENDIF136, %IF161
+ENDIF160:                                         
   %temp84.0 = phi float [ %610, %IF161 ], [ %255, %ENDIF136 ]
   %temp85.0 = phi float [ %611, %IF161 ], [ %256, %ENDIF136 ]
   %temp86.0 = phi float [ %612, %IF161 ], [ %257, %ENDIF136 ]
@@ -729,7 +729,7 @@ ENDIF160:                                         ; preds = %ENDIF136, %IF161
   %653 = icmp ne i32 %652, 0
   br i1 %653, label %IF164, label %ENDIF163
 
-IF164:                                            ; preds = %ENDIF160
+IF164:                                            
   %654 = fmul float %202, 5.000000e-01
   %655 = fcmp uge float 0x3FE4CCCCC0000000, %654
   %656 = select i1 %655, float 0x3FE4CCCCC0000000, float %654
@@ -769,7 +769,7 @@ IF164:                                            ; preds = %ENDIF160
   %690 = fmul float %676, %687
   br label %ENDIF163
 
-ENDIF163:                                         ; preds = %ENDIF160, %IF164
+ENDIF163:                                         
   %temp84.1 = phi float [ %659, %IF164 ], [ %temp84.0, %ENDIF160 ]
   %temp85.1 = phi float [ %660, %IF164 ], [ %temp85.0, %ENDIF160 ]
   %temp86.1 = phi float [ %661, %IF164 ], [ %temp86.0, %ENDIF160 ]
@@ -791,7 +791,7 @@ ENDIF163:                                         ; preds = %ENDIF160, %IF164
   %702 = icmp ne i32 %701, 0
   br i1 %702, label %IF167, label %ENDIF166
 
-IF167:                                            ; preds = %ENDIF163
+IF167:                                            
   %703 = fmul float %202, 5.000000e-01
   %704 = fcmp uge float 0x3FE4CCCCC0000000, %703
   %705 = select i1 %704, float 0x3FE4CCCCC0000000, float %703
@@ -831,7 +831,7 @@ IF167:                                            ; preds = %ENDIF163
   %739 = fmul float %725, %736
   br label %ENDIF166
 
-ENDIF166:                                         ; preds = %ENDIF163, %IF167
+ENDIF166:                                         
   %temp84.2 = phi float [ %708, %IF167 ], [ %temp84.1, %ENDIF163 ]
   %temp85.2 = phi float [ %709, %IF167 ], [ %temp85.1, %ENDIF163 ]
   %temp86.2 = phi float [ %710, %IF167 ], [ %temp86.1, %ENDIF163 ]
@@ -853,7 +853,7 @@ ENDIF166:                                         ; preds = %ENDIF163, %IF167
   %751 = icmp ne i32 %750, 0
   br i1 %751, label %IF170, label %ENDIF169
 
-IF170:                                            ; preds = %ENDIF166
+IF170:                                            
   %752 = fmul float %202, 5.000000e-01
   %753 = fcmp uge float 0x3FE4CCCCC0000000, %752
   %754 = select i1 %753, float 0x3FE4CCCCC0000000, float %752
@@ -893,7 +893,7 @@ IF170:                                            ; preds = %ENDIF166
   %788 = fmul float %774, %785
   br label %ENDIF169
 
-ENDIF169:                                         ; preds = %ENDIF166, %IF170
+ENDIF169:                                         
   %temp84.3 = phi float [ %757, %IF170 ], [ %temp84.2, %ENDIF166 ]
   %temp85.3 = phi float [ %758, %IF170 ], [ %temp85.2, %ENDIF166 ]
   %temp86.3 = phi float [ %759, %IF170 ], [ %temp86.2, %ENDIF166 ]
@@ -915,7 +915,7 @@ ENDIF169:                                         ; preds = %ENDIF166, %IF170
   %800 = icmp ne i32 %799, 0
   br i1 %800, label %IF173, label %ENDIF172
 
-IF173:                                            ; preds = %ENDIF169
+IF173:                                            
   %801 = fmul float %202, 5.000000e-01
   %802 = fcmp uge float 0x3FE4CCCCC0000000, %801
   %803 = select i1 %802, float 0x3FE4CCCCC0000000, float %801
@@ -955,7 +955,7 @@ IF173:                                            ; preds = %ENDIF169
   %837 = fmul float %823, %834
   br label %ENDIF172
 
-ENDIF172:                                         ; preds = %ENDIF169, %IF173
+ENDIF172:                                         
   %temp84.4 = phi float [ %806, %IF173 ], [ %temp84.3, %ENDIF169 ]
   %temp85.4 = phi float [ %807, %IF173 ], [ %temp85.3, %ENDIF169 ]
   %temp86.4 = phi float [ %808, %IF173 ], [ %temp86.3, %ENDIF169 ]
@@ -970,7 +970,7 @@ ENDIF172:                                         ; preds = %ENDIF169, %IF173
   %842 = icmp ne i32 %841, 0
   br i1 %842, label %IF176, label %ENDIF175
 
-IF176:                                            ; preds = %ENDIF172
+IF176:                                            
   %843 = fmul float %202, 0x3FB99999A0000000
   %844 = fcmp uge float 0.000000e+00, %843
   %845 = select i1 %844, float 0.000000e+00, float %843
@@ -1010,7 +1010,7 @@ IF176:                                            ; preds = %ENDIF172
   %879 = fmul float %865, %876
   br label %ENDIF175
 
-ENDIF175:                                         ; preds = %ENDIF172, %IF176
+ENDIF175:                                         
   %temp84.5 = phi float [ %848, %IF176 ], [ %temp84.4, %ENDIF172 ]
   %temp85.5 = phi float [ %849, %IF176 ], [ %temp85.4, %ENDIF172 ]
   %temp86.5 = phi float [ %850, %IF176 ], [ %temp86.4, %ENDIF172 ]
@@ -1027,7 +1027,7 @@ ENDIF175:                                         ; preds = %ENDIF172, %IF176
   %886 = icmp ne i32 %885, 0
   br i1 %886, label %IF179, label %ENDIF178
 
-IF179:                                            ; preds = %ENDIF175
+IF179:                                            
   %887 = fadd float %202, 1.000000e+00
   %888 = fadd float %202, 1.000000e+00
   %889 = fadd float %202, 1.000000e+00
@@ -1096,7 +1096,7 @@ IF179:                                            ; preds = %ENDIF175
   %952 = fmul float %938, %949
   br label %ENDIF178
 
-ENDIF178:                                         ; preds = %ENDIF175, %IF179
+ENDIF178:                                         
   %temp84.6 = phi float [ %921, %IF179 ], [ %temp84.5, %ENDIF175 ]
   %temp85.6 = phi float [ %922, %IF179 ], [ %temp85.5, %ENDIF175 ]
   %temp86.6 = phi float [ %923, %IF179 ], [ %temp86.5, %ENDIF175 ]
@@ -1145,25 +1145,25 @@ ENDIF178:                                         ; preds = %ENDIF175, %IF179
   ret void
 }
 
-; Function Attrs: readnone
+
 declare float @llvm.AMDGPU.dp4(<4 x float>, <4 x float>) #1
 
-; Function Attrs: readnone
+
 declare float @llvm.AMDGPU.rsq.f32(float) #1
 
-; Function Attrs: readnone
+
 declare <4 x float> @llvm.AMDGPU.tex(<4 x float>, i32, i32, i32) #1
 
-; Function Attrs: readonly
+
 declare float @fabs(float) #2
 
-; Function Attrs: readnone
+
 declare float @llvm.AMDIL.exp.(float) #1
 
-; Function Attrs: readnone
+
 declare float @llvm.AMDGPU.lrp(float, float, float) #1
 
-; Function Attrs: readnone
+
 declare float @llvm.AMDIL.clamp.(float, float, float) #1
 
 declare void @llvm.R600.store.swizzle(<4 x float>, i32, i32)

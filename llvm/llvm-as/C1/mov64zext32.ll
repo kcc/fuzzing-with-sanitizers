@@ -1,4 +1,4 @@
-; RUN: %lli %s > /dev/null
+
 
 define i64 @foo() {
   ret i64 42

@@ -1,20 +1,20 @@
-; RUN: llc %s -o - -verify-machineinstrs | FileCheck %s
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-unknown"
 
 @TheArray = external global [100000 x double], align 16
 
-; This test ensures, via the machine verifier, that the register class for the
-; index of the double store is correctly constrained to not include SP.
 
-; CHECK: movsd
+
+
+
 
 define i32 @main(i32* %i, double %tmpv) {
 bb:
   br label %bb7
 
-bb7:                                              ; preds = %bb7, %bb
+bb7:                                              
   %storemerge = phi i32 [ 0, %bb ], [ %tmp19, %bb7 ]
   %tmp15 = zext i32 %storemerge to i64
   %tmp16 = getelementptr inbounds [100000 x double], [100000 x double]* @TheArray, i64 0, i64 %tmp15

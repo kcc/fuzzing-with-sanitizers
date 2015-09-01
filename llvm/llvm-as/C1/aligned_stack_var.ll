@@ -1,19 +1,19 @@
-; RUN: llc %s -mtriple=x86_64-pc-linux-gnu -O0 -filetype=obj -o %t
-; RUN: llvm-dwarfdump -debug-dump=info %t | FileCheck %s
 
-; If stack is realigned, we shouldn't describe locations of local
-; variables by giving offset from the frame pointer (%rbp):
-; push %rpb
-; mov  %rsp,%rbp
-; and  ALIGNMENT,%rsp ; (%rsp and %rbp are different now)
-; It's better to use offset from %rsp instead.
 
-; DW_AT_location of variable "x" shouldn't be equal to
-; (DW_OP_fbreg: .*): DW_OP_fbreg has code 0x91
 
-; CHECK: {{0x.* DW_TAG_variable}}
-; CHECK-NOT: {{DW_AT_location.*DW_FORM_block1.*0x.*91}}
-; CHECK: NULL
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @_Z3runv() nounwind uwtable {
 entry:

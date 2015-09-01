@@ -1,9 +1,9 @@
-; RUN: llc -march=arm64 -aarch64-neon-syntax=apple < %s -mcpu=cyclone | FileCheck %s
+
 
 define <8 x i16> @testShiftRightArith_v8i16(<8 x i16> %a, <8 x i16> %b) #0 {
-; CHECK-LABEL: testShiftRightArith_v8i16:
-; CHECK: neg.8h	[[REG1:v[0-9]+]], [[REG1]]
-; CHECK-NEXT: sshl.8h [[REG2:v[0-9]+]], [[REG2]], [[REG1]]
+
+
+
 
 entry:
   %a.addr = alloca <8 x i16>, align 16
@@ -17,9 +17,9 @@ entry:
 }
 
 define <4 x i32> @testShiftRightArith_v4i32(<4 x i32> %a, <4 x i32> %b) #0 {
-; CHECK-LABEL: testShiftRightArith_v4i32:
-; CHECK: neg.4s	[[REG3:v[0-9]+]], [[REG3]]
-; CHECK-NEXT: sshl.4s [[REG4:v[0-9]+]], [[REG4]], [[REG3]]
+
+
+
 entry:
   %a.addr = alloca <4 x i32>, align 32
   %b.addr = alloca <4 x i32>, align 32
@@ -32,9 +32,9 @@ entry:
 }
 
 define <8 x i16> @testShiftRightLogical(<8 x i16> %a, <8 x i16> %b) #0 {
-; CHECK: testShiftRightLogical
-; CHECK: neg.8h	[[REG5:v[0-9]+]], [[REG5]]
-; CHECK-NEXT: ushl.8h [[REG6:v[0-9]+]], [[REG6]], [[REG5]]
+
+
+
 entry:
   %a.addr = alloca <8 x i16>, align 16
   %b.addr = alloca <8 x i16>, align 16
@@ -47,15 +47,15 @@ entry:
 }
 
 define <1 x i64> @sshr_v1i64(<1 x i64> %A) nounwind {
-; CHECK-LABEL: sshr_v1i64:
-; CHECK: sshr d0, d0, #63
+
+
   %tmp3 = ashr <1 x i64> %A, < i64 63 >
   ret <1 x i64> %tmp3
 }
 
 define <1 x i64> @ushr_v1i64(<1 x i64> %A) nounwind {
-; CHECK-LABEL: ushr_v1i64:
-; CHECK: ushr d0, d0, #63
+
+
   %tmp3 = lshr <1 x i64> %A, < i64 63 >
   ret <1 x i64> %tmp3
 }

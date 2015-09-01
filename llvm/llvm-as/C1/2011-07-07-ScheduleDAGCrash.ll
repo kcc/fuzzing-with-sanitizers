@@ -1,7 +1,7 @@
-; RUN: llc < %s
-; This caused ScheduleDAG to crash in EmitPhysRegCopy when searching
-; the uses of a copy to a physical register without ignoring non-data
-; dependence, PR10220.
+
+
+
+
 
 define void @f(i256* nocapture %a, i256* nocapture %b, i256* nocapture %cc, i256* nocapture %dd) nounwind uwtable noinline ssp {
 entry:

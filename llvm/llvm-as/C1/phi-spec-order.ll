@@ -1,6 +1,6 @@
 target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-f128:128:128-v128:128:128-n32:64"
 target triple = "powerpc64-bgq-linux"
-; RUN: opt < %s -basicaa -aa-eval -print-all-alias-modref-info -disable-output 2>&1 | FileCheck %s
+
 
 @X = external global [16000 x double], align 32
 @Y = external global [16000 x double], align 32
@@ -9,16 +9,16 @@ define signext i32 @s000() nounwind {
 entry:
   br label %for.cond2.preheader
 
-for.cond2.preheader:                              ; preds = %for.end, %entry
+for.cond2.preheader:                              
   %nl.018 = phi i32 [ 0, %entry ], [ %inc9, %for.end ]
   br label %for.body4
 
-for.body4:                                        ; preds = %for.body4, %for.cond2.preheader
+for.body4:                                        
   %lsr.iv4 = phi [16000 x double]* [ %i11, %for.body4 ], [ bitcast (double* getelementptr inbounds ([16000 x double], [16000 x double]* @Y, i64 0, i64 8)
  to [16000 x double]*), %for.cond2.preheader ]
   %lsr.iv1 = phi [16000 x double]* [ %i10, %for.body4 ], [ @X, %for.cond2.preheader ]
 
-; CHECK: NoAlias:{{[ \t]+}}[16000 x double]* %lsr.iv1, [16000 x double]* %lsr.iv4
+
 
   %lsr.iv = phi i32 [ %lsr.iv.next, %for.body4 ], [ 16000, %for.cond2.preheader ]
   %lsr.iv46 = bitcast [16000 x double]* %lsr.iv4 to <4 x double>*
@@ -42,12 +42,12 @@ for.body4:                                        ; preds = %for.body4, %for.con
   %scevgep3 = getelementptr <4 x double>, <4 x double>* %lsr.iv12, i64 3
   store <4 x double> %add.12, <4 x double>* %scevgep3, align 32
 
-; CHECK: NoAlias:{{[ \t]+}}<4 x double>* %scevgep11, <4 x double>* %scevgep7
-; CHECK: NoAlias:{{[ \t]+}}<4 x double>* %scevgep10, <4 x double>* %scevgep7
-; CHECK: NoAlias:{{[ \t]+}}<4 x double>* %scevgep7, <4 x double>* %scevgep9
-; CHECK: NoAlias:{{[ \t]+}}<4 x double>* %scevgep11, <4 x double>* %scevgep3
-; CHECK: NoAlias:{{[ \t]+}}<4 x double>* %scevgep10, <4 x double>* %scevgep3
-; CHECK: NoAlias:{{[ \t]+}}<4 x double>* %scevgep3, <4 x double>* %scevgep9
+
+
+
+
+
+
 
   %lsr.iv.next = add i32 %lsr.iv, -16
   %scevgep = getelementptr [16000 x double], [16000 x double]* %lsr.iv1, i64 0, i64 16
@@ -57,11 +57,11 @@ for.body4:                                        ; preds = %for.body4, %for.con
   %exitcond.15 = icmp eq i32 %lsr.iv.next, 0
   br i1 %exitcond.15, label %for.end, label %for.body4
 
-for.end:                                          ; preds = %for.body4
+for.end:                                          
   %inc9 = add nsw i32 %nl.018, 1
   %exitcond = icmp eq i32 %inc9, 400000
   br i1 %exitcond, label %for.end10, label %for.cond2.preheader
 
-for.end10:                                        ; preds = %for.end
+for.end10:                                        
   ret i32 0
 }

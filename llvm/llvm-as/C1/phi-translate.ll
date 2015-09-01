@@ -1,21 +1,21 @@
-; RUN: opt -basicaa -gvn -S < %s | FileCheck %s
+
 
 target datalayout = "e-p:64:64:64"
 
-; CHECK-LABEL: @foo(
-; CHECK: entry.end_crit_edge:
-; CHECK:   %j.phi.trans.insert = sext i32 %x to i64, !dbg [[J_LOC:![0-9]+]]
-; CHECK:   %q.phi.trans.insert = getelementptr {{.*}}, !dbg [[Q_LOC:![0-9]+]]
-; CHECK:   %n.pre = load i32, i32* %q.phi.trans.insert, !dbg [[N_LOC:![0-9]+]]
-; CHECK: then:
-; CHECK:   store i32 %z
-; CHECK: end:
-; CHECK:   %n = phi i32 [ %n.pre, %entry.end_crit_edge ], [ %z, %then ], !dbg [[N_LOC]]
-; CHECK:   ret i32 %n
 
-; CHECK-DAG: [[J_LOC]] = !DILocation(line: 45, column: 1, scope: !{{.*}})
-; CHECK-DAG: [[Q_LOC]] = !DILocation(line: 46, column: 1, scope: !{{.*}})
-; CHECK-DAG: [[N_LOC]] = !DILocation(line: 47, column: 1, scope: !{{.*}})
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @G = external global [100 x i32]
 define i32 @foo(i32 %x, i32 %z) {

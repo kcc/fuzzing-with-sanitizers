@@ -1,12 +1,12 @@
-; RUN: llc < %s -march=x86-64 -mattr=+mmx,+sse2 | FileCheck %s
+
 
 define i32 @test0(<1 x i64>* %v4) {
-; CHECK-LABEL: test0:
-; CHECK:       # BB#0:{{.*}} %entry
-; CHECK:    pshufw $238, (%[[REG:[a-z]+]]), %mm0
-; CHECK-NEXT:    movd %mm0, %eax
-; CHECK-NEXT:    addl $32, %eax
-; CHECK-NEXT:    retq
+
+
+
+
+
+
 entry:
   %v5 = load <1 x i64>, <1 x i64>* %v4, align 8
   %v12 = bitcast <1 x i64> %v5 to <4 x i16>
@@ -22,13 +22,13 @@ entry:
 }
 
 define i32 @test1(i32* nocapture readonly %ptr) {
-; CHECK-LABEL: test1:
-; CHECK:       # BB#0:{{.*}} %entry
-; CHECK:    movd (%[[REG]]), %mm0
-; CHECK-NEXT:    pshufw $232, %mm0, %mm0
-; CHECK-NEXT:    movd %mm0, %eax
-; CHECK-NEXT:    emms
-; CHECK-NEXT:    retq
+
+
+
+
+
+
+
 entry:
   %0 = load i32, i32* %ptr, align 4
   %1 = insertelement <2 x i32> undef, i32 %0, i32 0
@@ -48,12 +48,12 @@ entry:
 }
 
 define i32 @test2(i32* nocapture readonly %ptr) {
-; CHECK-LABEL: test2:
-; CHECK:       # BB#0:{{.*}} %entry
-; CHECK:    pshufw $232, (%[[REG]]), %mm0
-; CHECK-NEXT:    movd %mm0, %eax
-; CHECK-NEXT:    emms
-; CHECK-NEXT:    retq
+
+
+
+
+
+
 entry:
   %0 = bitcast i32* %ptr to x86_mmx*
   %1 = load x86_mmx, x86_mmx* %0, align 8

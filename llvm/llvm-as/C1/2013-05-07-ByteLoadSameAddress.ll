@@ -1,7 +1,7 @@
-; RUN: llc -mtriple=thumb-eabi -mattr=+v7,+thumb2 %s -o - | FileCheck %s
+
 
 define i8 @f1(i8* %call1, i8* %call3, i32 %h, i32 %w, i32 %Width) {
-; CHECK: f1:
+
 entry:
         %mul17 = mul nsw i32 %Width, %h
         %add = add nsw i32 %mul17, %w
@@ -18,8 +18,8 @@ entry:
         %arrayidx31 = getelementptr inbounds i8, i8* %call1, i32 %add30
         %2 = load i8, i8* %arrayidx31, align 1
         %conv32 = zext i8 %2 to i32
-; CHECK: ldrb r{{[0-9]*}}, [r{{[0-9]*}}, #-1]
-; CHECK-NEXT: ldrb r{{[0-9]*}}, [r{{[0-9]*}}, #1]
+
+
         %add28190 = add i32 %mul23189, %conv32
         %sub35 = add i32 %add, -1
         %arrayidx36 = getelementptr inbounds i8, i8* %call1, i32 %sub35
@@ -34,8 +34,8 @@ entry:
         %arrayidx45 = getelementptr inbounds i8, i8* %call1, i32 %add44
         %5 = load i8, i8* %arrayidx45, align 1
         %conv46 = zext i8 %5 to i32
-; CHECK: ldrb r{{[0-9]*}}, [r{{[0-9]*}}, #-1]
-; CHECK-NEXT: ldrb r{{[0-9]*}}, [r{{[0-9]*}}, #1]
+
+
         %add49 = add i32 %add, %Width
         %sub50 = add i32 %add49, -1
         %arrayidx51 = getelementptr inbounds i8, i8* %call1, i32 %sub50
@@ -48,8 +48,8 @@ entry:
         %arrayidx62 = getelementptr inbounds i8, i8* %call1, i32 %add61
         %8 = load i8, i8* %arrayidx62, align 1
         %conv63 = zext i8 %8 to i32
-; CHECK: ldrb r{{[0-9]*}}, [r{{[0-9]*}}, #-1]
-; CHECK-NEXT: ldrb{{[.w]*}} r{{[0-9]*}}, [r{{[0-9]*}}, #1]
+
+
         %tmp = add i32 %add34191, %conv46
         %tmp193 = add i32 %tmp, %conv52
         %tmp194 = add i32 %tmp193, %conv57

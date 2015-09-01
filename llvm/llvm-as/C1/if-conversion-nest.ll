@@ -1,17 +1,17 @@
-; RUN: opt < %s  -loop-vectorize -force-vector-interleave=1 -force-vector-width=4 -enable-if-conversion -dce -instcombine -S | FileCheck %s
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 
-;CHECK-LABEL: @foo(
-;CHECK: icmp sgt
-;CHECK: icmp sgt
-;CHECK: icmp slt
-;CHECK: select <4 x i1>
-;CHECK: %[[P1:.*]] = select <4 x i1>
-;CHECK: xor <4 x i1>
-;CHECK: and <4 x i1>
-;CHECK: select <4 x i1> %{{.*}}, <4 x i32> %{{.*}}, <4 x i32> %[[P1]]
-;CHECK: ret
+
+
+
+
+
+
+
+
+
+
 define i32 @foo(i32* nocapture %A, i32* nocapture %B, i32 %n) {
 entry:
   %cmp26 = icmp sgt i32 %n, 0
@@ -36,7 +36,7 @@ if.else:
   br label %if.end14
 
 if.end14:
-  %x.0 = phi i32 [ 9, %for.body ], [ 3, %if.then ], [ %., %if.else ]  ; <------------- A PHI with 3 entries that we can still vectorize.
+  %x.0 = phi i32 [ 9, %for.body ], [ 3, %if.then ], [ %., %if.else ]  
   store i32 %x.0, i32* %arrayidx, align 4
   %indvars.iv.next = add i64 %indvars.iv, 1
   %lftr.wideiv = trunc i64 %indvars.iv.next to i32

@@ -1,15 +1,15 @@
-; RUN: %lli %s > /dev/null
 
-; Testcase distilled from 256.bzip2.
+
+
 
 define i32 @main() {
 entry:
-	%X = add i32 1, -1		; <i32> [#uses=3]
+	%X = add i32 1, -1		
 	br label %Next
-Next:		; preds = %entry
-	%A = phi i32 [ %X, %entry ]		; <i32> [#uses=0]
-	%B = phi i32 [ %X, %entry ]		; <i32> [#uses=0]
-	%C = phi i32 [ %X, %entry ]		; <i32> [#uses=1]
+Next:		
+	%A = phi i32 [ %X, %entry ]		
+	%B = phi i32 [ %X, %entry ]		
+	%C = phi i32 [ %X, %entry ]		
 	ret i32 %C
 }
 

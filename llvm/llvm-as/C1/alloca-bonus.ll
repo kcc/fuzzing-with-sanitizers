@@ -1,4 +1,4 @@
-; RUN: opt -inline < %s -S -o - -inline-threshold=8 | FileCheck %s
+
 
 target datalayout = "p:32:32"
 
@@ -7,8 +7,8 @@ declare void @llvm.lifetime.start(i64 %size, i8* nocapture %ptr)
 @glbl = external global i32
 
 define void @outer1() {
-; CHECK-LABEL: @outer1(
-; CHECK-NOT: call void @inner1
+
+
   %ptr = alloca i32
   call void @inner1(i32* %ptr)
   ret void
@@ -26,14 +26,14 @@ define void @inner1(i32 *%ptr) {
 }
 
 define void @outer2() {
-; CHECK-LABEL: @outer2(
-; CHECK: call void @inner2
+
+
   %ptr = alloca i32
   call void @inner2(i32* %ptr)
   ret void
 }
 
-; %D poisons this call, scalar-repl can't handle that instruction.
+
 define void @inner2(i32 *%ptr) {
   %A = load i32, i32* %ptr
   store i32 0, i32* %ptr
@@ -46,8 +46,8 @@ define void @inner2(i32 *%ptr) {
 }
 
 define void @outer3() {
-; CHECK-LABEL: @outer3(
-; CHECK-NOT: call void @inner3
+
+
   %ptr = alloca i32
   call void @inner3(i32* %ptr, i1 undef)
   ret void
@@ -58,7 +58,7 @@ define void @inner3(i32 *%ptr, i1 %x) {
   %B = and i1 %x, %A
   br i1 %A, label %bb.true, label %bb.false
 bb.true:
-  ; This block musn't be counted in the inline cost.
+  
   %t1 = load i32, i32* %ptr
   %t2 = add i32 %t1, 1
   %t3 = add i32 %t2, 1
@@ -85,21 +85,21 @@ bb.false:
 }
 
 define void @outer4(i32 %A) {
-; CHECK-LABEL: @outer4(
-; CHECK-NOT: call void @inner4
+
+
   %ptr = alloca i32
   call void @inner4(i32* %ptr, i32 %A)
   ret void
 }
 
-; %B poisons this call, scalar-repl can't handle that instruction. However, we
-; still want to detect that the icmp and branch *can* be handled.
+
+
 define void @inner4(i32 *%ptr, i32 %A) {
   %B = getelementptr inbounds i32, i32* %ptr, i32 %A
   %C = icmp eq i32* %ptr, null
   br i1 %C, label %bb.true, label %bb.false
 bb.true:
-  ; This block musn't be counted in the inline cost.
+  
   %t1 = load i32, i32* %ptr
   %t2 = add i32 %t1, 1
   %t3 = add i32 %t2, 1
@@ -126,16 +126,16 @@ bb.false:
 }
 
 define void @outer5() {
-; CHECK-LABEL: @outer5(
-; CHECK-NOT: call void @inner5
+
+
   %ptr = alloca i32
   call void @inner5(i1 false, i32* %ptr)
   ret void
 }
 
-; %D poisons this call, scalar-repl can't handle that instruction. However, if
-; the flag is set appropriately, the poisoning instruction is inside of dead
-; code, and so shouldn't be counted.
+
+
+
 define void @inner5(i1 %flag, i32 *%ptr) {
   %A = load i32, i32* %ptr
   store i32 0, i32* %ptr

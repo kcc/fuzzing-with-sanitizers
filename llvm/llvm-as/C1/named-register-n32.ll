@@ -1,4 +1,4 @@
-; RUN: llc -march=mips64 -relocation-model=static -mattr=+noabicalls -target-abi n32 < %s | FileCheck %s
+
 
 define i32* @get_gp() {
 entry:
@@ -8,8 +8,8 @@ entry:
   ret i32* %2
 }
 
-; CHECK-LABEL: get_gp:
-; CHECK:           sll $2, $gp, 0
+
+
 
 declare i64 @llvm.read_register.i64(metadata)
 

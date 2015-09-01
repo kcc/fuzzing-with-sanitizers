@@ -1,9 +1,9 @@
-; RUN: llc < %s -O0 -mtriple=thumbv7-apple-ios | FileCheck %s
 
-; Radar 10567930: Make sure that all the caller-saved registers are saved and
-; restored in a function with setjmp/longjmp EH.  In particular, r6 was not
-; being saved here.
-; CHECK: push {r4, r5, r6, r7, lr}
+
+
+
+
+
 
 %0 = type opaque
 %struct.NSConstantString = type { i32*, i32, i8*, i32 }
@@ -26,17 +26,17 @@ bb:
   %tmp10 = invoke %0* bitcast (i8* (i8*, i8*, ...)* @objc_msgSend to %0* (i8*, i8*, %0*)*)(i8* %tmp7, i8* %d, %0* null)
           to label %bb11 unwind label %bb15
 
-bb11:                                             ; preds = %bb
+bb11:                                             
   store %0* %tmp10, %0** %myException, align 4
   %tmp12 = load %0*, %0** %myException, align 4
   %tmp13 = bitcast %0* %tmp12 to i8*
   invoke void @objc_exception_throw(i8* %tmp13) noreturn
           to label %bb14 unwind label %bb15
 
-bb14:                                             ; preds = %bb11
+bb14:                                             
   unreachable
 
-bb15:                                             ; preds = %bb11, %bb
+bb15:                                             
   %tmp16 = landingpad { i8*, i32 }
           catch i8* null
   %tmp17 = extractvalue { i8*, i32 } %tmp16, 0

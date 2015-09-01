@@ -1,5 +1,5 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv4 < %s | FileCheck %s
-; Check that gp-relative instructions are being generated.
+
+
 
 @a = common global i32 0, align 4
 @b = common global i32 0, align 4
@@ -7,9 +7,9 @@
 
 define i32 @foo(i32 %p) #0 {
 entry:
-; CHECK: r{{[0-9]+}}{{ *}}={{ *}}memw(#a)
-; CHECK: r{{[0-9]+}}{{ *}}={{ *}}memw(#b)
-; CHECK: if{{ *}}(p{{[0-3]}}) memw(##c){{ *}}={{ *}}r{{[0-9]+}}
+
+
+
   %0 = load i32, i32* @a, align 4
   %1 = load i32, i32* @b, align 4
   %add = add nsw i32 %1, %0

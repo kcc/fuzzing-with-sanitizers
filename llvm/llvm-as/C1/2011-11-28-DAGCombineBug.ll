@@ -1,8 +1,8 @@
-; RUN: llc < %s -mtriple=thumbv7-apple-ios5.0.0 | FileCheck %s
-; rdar://10464621
 
-; DAG combine increases loads from packed types. ARM load / store optimizer then
-; combined them into a ldm which causes runtime exception.
+
+
+
+
 
 %struct.InformationBlock = type <{ i32, %struct.FlagBits, %struct.FlagBits }>
 %struct.FlagBits = type <{ [4 x i32] }>
@@ -10,10 +10,10 @@
 @infoBlock = external global %struct.InformationBlock
 
 define hidden void @foo() {
-; CHECK-LABEL: foo:
-; CHECK: ldr.w
-; CHECK: ldr.w
-; CHECK-NOT: ldm
+
+
+
+
 entry:
   %tmp13 = load i32, i32* getelementptr inbounds (%struct.InformationBlock, %struct.InformationBlock* @infoBlock, i32 0, i32 1, i32 0, i32 0), align 1
   %tmp15 = load i32, i32* getelementptr inbounds (%struct.InformationBlock, %struct.InformationBlock* @infoBlock, i32 0, i32 1, i32 0, i32 1), align 1

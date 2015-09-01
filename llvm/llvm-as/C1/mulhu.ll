@@ -1,9 +1,9 @@
-;RUN: llc < %s -march=amdgcn -mcpu=verde -verify-machineinstrs | FileCheck %s
-;RUN: llc < %s -march=amdgcn -mcpu=tonga -verify-machineinstrs | FileCheck %s
 
-;CHECK: v_mov_b32_e32 v{{[0-9]+}}, 0xaaaaaaab
-;CHECK: v_mul_hi_u32 v0, {{v[0-9]+}}, {{s[0-9]+}}
-;CHECK-NEXT: v_lshrrev_b32_e32 v0, 1, v0
+
+
+
+
+
 
 define void @test(i32 %p) {
    %i = udiv i32 %p, 3

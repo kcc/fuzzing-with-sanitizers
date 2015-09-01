@@ -1,10 +1,10 @@
-; RUN: llc < %s -march=x86 -verify-coalescing | FileCheck %s
+
 
 define i32* @test1(i32* %P, i32 %X) {
-; CHECK-LABEL: test1:
-; CHECK-NOT: shrl
-; CHECK-NOT: shll
-; CHECK: ret
+
+
+
+
 
 entry:
   %Y = lshr i32 %X, 2
@@ -14,10 +14,10 @@ entry:
 }
 
 define i32* @test2(i32* %P, i32 %X) {
-; CHECK-LABEL: test2:
-; CHECK: shll $4
-; CHECK-NOT: shll
-; CHECK: ret
+
+
+
+
 
 entry:
   %Y = shl i32 %X, 2
@@ -27,10 +27,10 @@ entry:
 }
 
 define i32* @test3(i32* %P, i32 %X) {
-; CHECK-LABEL: test3:
-; CHECK-NOT: shrl
-; CHECK-NOT: shll
-; CHECK: ret
+
+
+
+
 
 entry:
   %Y = ashr i32 %X, 2
@@ -39,9 +39,9 @@ entry:
 }
 
 define fastcc i32 @test4(i32* %d) {
-; CHECK-LABEL: test4:
-; CHECK-NOT: shrl
-; CHECK: ret
+
+
+
 
 entry:
   %tmp4 = load i32, i32* %d
@@ -50,13 +50,13 @@ entry:
 }
 
 define i64 @test5(i16 %i, i32* %arr) {
-; Ensure that we don't fold away shifts which have multiple uses, as they are
-; just re-introduced for the second use.
-; CHECK-LABEL: test5:
-; CHECK-NOT: shrl
-; CHECK: shrl $11
-; CHECK-NOT: shrl
-; CHECK: ret
+
+
+
+
+
+
+
 
 entry:
   %i.zext = zext i16 %i to i32

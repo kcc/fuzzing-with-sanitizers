@@ -1,5 +1,5 @@
-; RUN: llc < %s
-; PR3288
+
+
 
 define void @a() {
   %i = insertvalue [2 x [2 x i32]] undef, [2 x i32] undef, 1

@@ -1,4 +1,4 @@
-; RUN: opt -S -instcombine < %s | FileCheck %s
+
 
 @c = common global i8 0, align 1
 @a = common global i8 0, align 1
@@ -22,11 +22,11 @@ entry:
   %tobool = icmp ne i32 %conv4, 0
   br i1 %tobool, label %land.rhs, label %land.end
 
-land.rhs:                                         ; preds = %entry
+land.rhs:                                         
   %tobool8 = icmp ne i32 %conv5, 0
   br label %land.end
 
-land.end:                                         ; preds = %land.rhs, %entry
+land.end:                                         
   %2 = phi i1 [ false, %entry ], [ %tobool8, %land.rhs ]
   %land.ext = zext i1 %2 to i32
   %mul = mul nsw i32 3, %land.ext
@@ -34,6 +34,6 @@ land.end:                                         ; preds = %land.rhs, %entry
   store i8 %conv9, i8* @a, align 1
   ret void
 
-; CHECK-LABEL: @func(
-; CHECK-NOT: select
+
+
 }

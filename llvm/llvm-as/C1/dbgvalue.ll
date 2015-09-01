@@ -1,17 +1,17 @@
-; RUN: opt -S -loop-rotate < %s | FileCheck %s
+
 
 declare void @llvm.dbg.declare(metadata, metadata, metadata) nounwind readnone
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) nounwind readnone
 
 define i32 @tak(i32 %x, i32 %y, i32 %z) nounwind ssp {
-; CHECK-LABEL: define i32 @tak(
-; CHECK: entry
-; CHECK-NEXT: call void @llvm.dbg.value(metadata i32 %x
+
+
+
 
 entry:
   br label %tailrecurse
 
-tailrecurse:                                      ; preds = %if.then, %entry
+tailrecurse:                                      
   %x.tr = phi i32 [ %x, %entry ], [ %call, %if.then ]
   %y.tr = phi i32 [ %y, %entry ], [ %call9, %if.then ]
   %z.tr = phi i32 [ %z, %entry ], [ %call14, %if.then ]
@@ -21,7 +21,7 @@ tailrecurse:                                      ; preds = %if.then, %entry
   %cmp = icmp slt i32 %y.tr, %x.tr, !dbg !12
   br i1 %cmp, label %if.then, label %if.end, !dbg !12
 
-if.then:                                          ; preds = %tailrecurse
+if.then:                                          
   %sub = sub nsw i32 %x.tr, 1, !dbg !14
   %call = tail call i32 @tak(i32 %sub, i32 %y.tr, i32 %z.tr), !dbg !14
   %sub6 = sub nsw i32 %y.tr, 1, !dbg !14
@@ -30,10 +30,10 @@ if.then:                                          ; preds = %tailrecurse
   %call14 = tail call i32 @tak(i32 %sub11, i32 %x.tr, i32 %y.tr), !dbg !14
   br label %tailrecurse
 
-if.end:                                           ; preds = %tailrecurse
+if.end:                                           
   br label %return, !dbg !16
 
-return:                                           ; preds = %if.end
+return:                                           
   ret i32 %z.tr, !dbg !17
 }
 
@@ -41,15 +41,15 @@ return:                                           ; preds = %if.end
 @horzPlane = external global i8*, align 8
 
 define void @FindFreeHorzSeg(i64 %startCol, i64 %row, i64* %rowStart) {
-; Ensure that the loop increment basic block is rotated into the tail of the
-; body, even though it contains a debug intrinsic call.
-; CHECK-LABEL: define void @FindFreeHorzSeg(
-; CHECK: %dec = add
-; CHECK-NEXT: tail call void @llvm.dbg.value
-; CHECK: %cmp = icmp
-; CHECK: br i1 %cmp
-; CHECK: phi i64 [ %{{[^,]*}}, %{{[^,]*}} ]
-; CHECK-NEXT: br label %for.end
+
+
+
+
+
+
+
+
+
 
 
 entry:

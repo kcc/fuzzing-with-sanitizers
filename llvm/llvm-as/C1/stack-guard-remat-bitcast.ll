@@ -1,16 +1,16 @@
-; RUN: llc < %s -mtriple=arm64-apple-ios -relocation-model=pic | FileCheck %s
+
 
 @__stack_chk_guard = external global i64*
 
-; PR20558
 
-; CHECK: adrp [[R0:x[0-9]+]], ___stack_chk_guard@GOTPAGE
-; CHECK: ldr  [[R1:x[0-9]+]], {{\[}}[[R0]], ___stack_chk_guard@GOTPAGEOFF{{\]}}
-; CHECK: ldr  [[R2:x[0-9]+]], {{\[}}[[R1]]{{\]}}
-; CHECK: stur [[R2]], {{\[}}x29, [[SLOT0:[0-9#\-]+]]{{\]}}
-; CHECK: ldur [[R3:x[0-9]+]], {{\[}}x29, [[SLOT0]]{{\]}}
-; CHECK: sub  [[R4:x[0-9]+]], [[R2]], [[R3]]
-; CHECK: cbnz [[R4]], LBB
+
+
+
+
+
+
+
+
 
 define i32 @test_stack_guard_remat2() {
 entry:

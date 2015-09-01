@@ -1,8 +1,8 @@
-; RUN: %lli -force-interpreter=true %s > /dev/null
+
 
 define i32 @main() {
 
-  ; Vector values
+  
   %a2_i8 = add <2 x i8> zeroinitializer, <i8 0, i8 1>
   %a3_i8 = add <3 x i8> zeroinitializer, <i8 0, i8 1, i8 2>
   %a4_i8 = add <4 x i8> zeroinitializer, <i8 0, i8 1, i8 2, i8 3>

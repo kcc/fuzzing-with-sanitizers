@@ -1,6 +1,6 @@
-; RUN: llc -march=hexagon < %s | FileCheck %s
-; Check that we generate a hardware loop instruction.
-; CHECK: endloop0
+
+
+
 
 @A = common global [400 x i8] zeroinitializer, align 8
 @B = common global [400 x i8] zeroinitializer, align 8
@@ -10,10 +10,10 @@ define void @run() nounwind {
 entry:
   br label %polly.loop_body
 
-polly.loop_after:                                 ; preds = %polly.loop_body
+polly.loop_after:                                 
   ret void
 
-polly.loop_body:                                  ; preds = %entry, %polly.loop_body
+polly.loop_body:                                  
   %polly.loopiv16 = phi i32 [ 0, %entry ], [ %polly.next_loopiv, %polly.loop_body ]
   %polly.next_loopiv = add i32 %polly.loopiv16, 4
   %p_vector_iv14 = or i32 %polly.loopiv16, 1

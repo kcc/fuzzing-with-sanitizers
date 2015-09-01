@@ -1,5 +1,5 @@
-; RUN: llc < %s -march=x86-64
-; PR3886
+
+
 
 define i32 @main(i32 %argc, i8** nocapture %argv) nounwind {
 entry:

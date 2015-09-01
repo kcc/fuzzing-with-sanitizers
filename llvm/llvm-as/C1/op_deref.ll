@@ -1,30 +1,30 @@
-; RUN: llc -O0 -mtriple=x86_64-apple-darwin < %s -filetype=obj \
-; RUN:     | llvm-dwarfdump -debug-dump=info - \
-; RUN:     | FileCheck %s -check-prefix=CHECK -check-prefix=DWARF4
-; RUN: llc -O0 -mtriple=x86_64-apple-darwin < %s -filetype=obj -dwarf-version=3 \
-; RUN:     | llvm-dwarfdump -debug-dump=info - \
-; RUN:     | FileCheck %s -check-prefix=CHECK -check-prefix=DWARF3
 
-; FIXME: The location here needs to be fixed, but llvm-dwarfdump doesn't handle
-; DW_AT_location lists yet.
-; DWARF4: DW_AT_location [DW_FORM_sec_offset]                      (0x00000000)
 
-; FIXME: The location here needs to be fixed, but llvm-dwarfdump doesn't handle
-; DW_AT_location lists yet.
-; DWARF3: DW_AT_location [DW_FORM_data4]                      (0x00000000)
 
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_name [DW_FORM_strp]  ( .debug_str[0x00000067] = "vla")
 
-; Unfortunately llvm-dwarfdump can't unparse a list of DW_AT_locations
-; right now, so we check the asm output:
-; RUN: llc -O0 -mtriple=x86_64-apple-darwin %s -o - -filetype=asm | FileCheck %s -check-prefix=ASM-CHECK
-; vla should have a register-indirect address at one point.
-; ASM-CHECK: DEBUG_VALUE: vla <- RCX
-; ASM-CHECK: DW_OP_breg2
 
-; RUN: llvm-as %s -o - | llvm-dis - | FileCheck %s --check-prefix=PRETTY-PRINT
-; PRETTY-PRINT: DIExpression(DW_OP_deref, DW_OP_deref)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @testVLAwithSize(i32 %s) nounwind uwtable ssp {
 entry:
@@ -43,13 +43,13 @@ entry:
   store i32 0, i32* %i, align 4, !dbg !21
   br label %for.cond, !dbg !21
 
-for.cond:                                         ; preds = %for.inc, %entry
+for.cond:                                         
   %3 = load i32, i32* %i, align 4, !dbg !21
   %4 = load i32, i32* %s.addr, align 4, !dbg !21
   %cmp = icmp slt i32 %3, %4, !dbg !21
   br i1 %cmp, label %for.body, label %for.end, !dbg !21
 
-for.body:                                         ; preds = %for.cond
+for.body:                                         
   %5 = load i32, i32* %i, align 4, !dbg !23
   %6 = load i32, i32* %i, align 4, !dbg !23
   %mul = mul nsw i32 %5, %6, !dbg !23
@@ -59,13 +59,13 @@ for.body:                                         ; preds = %for.cond
   store i32 %mul, i32* %arrayidx, align 4, !dbg !23
   br label %for.inc, !dbg !25
 
-for.inc:                                          ; preds = %for.body
+for.inc:                                          
   %8 = load i32, i32* %i, align 4, !dbg !26
   %inc = add nsw i32 %8, 1, !dbg !26
   store i32 %inc, i32* %i, align 4, !dbg !26
   br label %for.cond, !dbg !26
 
-for.end:                                          ; preds = %for.cond
+for.end:                                          
   %9 = load i8*, i8** %saved_stack, !dbg !27
   call void @llvm.stackrestore(i8* %9), !dbg !27
   ret void, !dbg !27

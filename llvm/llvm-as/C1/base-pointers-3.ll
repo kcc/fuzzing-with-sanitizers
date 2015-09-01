@@ -1,6 +1,6 @@
-; RUN: opt %s -rewrite-statepoints-for-gc -spp-print-base-pointers -S 2>&1 | FileCheck %s
 
-; CHECK: derived %next.i64 base %base_obj
+
+
 
 define void @test(i64 addrspace(1)* %base_obj) gc "statepoint-example" {
 entry:

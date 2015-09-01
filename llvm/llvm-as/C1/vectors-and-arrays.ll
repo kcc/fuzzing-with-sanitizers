@@ -1,6 +1,6 @@
-; REQUIRES: asserts
-; RUN: opt -mergefunc < %s -disable-output -stats | not grep merged
-; This used to crash with an assert.
+
+
+
 
 define <2 x i8> @v1(<2 x i8> %x) {
   ret <2 x i8> %x

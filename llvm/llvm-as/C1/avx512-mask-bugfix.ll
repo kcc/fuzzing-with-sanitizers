@@ -1,16 +1,16 @@
-; RUN: llc < %s -mtriple=x86_64-apple-darwin -mcpu=knl  | FileCheck %s
 
-; ModuleID = 'foo.ll'
+
+
 target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
-; Function Attrs: nounwind readnone
+
 declare i32 @llvm.x86.avx.movmsk.ps.256(<8 x float>) #0
 
-; Function Attrs: nounwind readnone
+
 declare i64 @llvm.cttz.i64(i64, i1) #0
 
-; Function Attrs: nounwind
+
 define void @foo(float* noalias %aFOO, float %b, i32 %a) {
 allocas:
   %full_mask_memory.i57 = alloca <8 x float>
@@ -32,10 +32,10 @@ check_neighbors.i.i121:
   %alleq.i.i120 = icmp eq i32 %v1.i5.i.i116, 65535
   br i1 %alleq.i.i120, label %all_equal.i.i123, label %not_all_equal.i.i124
 
-; CHECK: kxnorw  %k0, %k0, %k0
-; CHECK: kshiftrw        $15, %k0, %k0
-; CHECK: jmp
-; CHECK: kxorw   %k0, %k0, %k0
+
+
+
+
 
 all_equal.i.i123:
   br label %reduce_equal___vyi.exit128

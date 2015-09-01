@@ -1,16 +1,16 @@
-; RUN: llc -march=arm64 -o - %s | FileCheck %s
 
-; This is mostly a "don't assert" test. The type of the RHS of a shift depended
-; on the phase of legalization, which led to the creation of an unexpected and
-; unselectable "rotr" node: (i32 (rotr i32, i64)).
 
-; FIXME: This test is xfailed because it relies on an optimization that has
-; been reverted (see PR17975).
-; XFAIL: *
+
+
+
+
+
+
+
 
 define void @foo(i64* nocapture %d) {
-; CHECK-LABEL: foo:
-; CHECK: rorv
+
+
   %tmp = load i64, i64* undef, align 8
   %sub397 = sub i64 0, %tmp
   %and398 = and i64 %sub397, 4294967295

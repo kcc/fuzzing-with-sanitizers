@@ -1,14 +1,14 @@
-; RUN: llc -mtriple=x86_64-apple-darwin %s -o %t -filetype=obj
-; RUN: llvm-dwarfdump -debug-dump=info %t | FileCheck %s
 
-; CHECK: DW_TAG_formal_parameter [
-; CHECK-NOT: ""
-; CHECK: DW_TAG
-; CHECK: DW_TAG_class_type
-; CHECK: DW_AT_object_pointer [DW_FORM_ref4]     (cu + 0x{{[0-9a-f]*}} => {[[PARAM:0x[0-9a-f]*]]})
-; CHECK: [[PARAM]]:     DW_TAG_formal_parameter
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_name [DW_FORM_strp]     ( .debug_str[0x{{[0-9a-f]*}}] = "this")
+
+
+
+
+
+
+
+
+
+
 
 %class.A = type { i32 }
 

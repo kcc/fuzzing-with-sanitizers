@@ -1,21 +1,21 @@
-; RUN: llc -filetype=asm -mtriple=mipsel-none-nacl -relocation-model=static \
-; RUN:     -O3 < %s | FileCheck %s
 
 
-; This test tests that NaCl functions are bundle-aligned.
+
+
+
 
 define void @test0() {
   ret void
 
-; CHECK:          .align  4
-; CHECK-NOT:      .align
-; CHECK-LABEL:    test0:
+
+
+
 
 }
 
 
-; This test tests that blocks that are jumped to through jump table are
-; bundle-aligned.
+
+
 
 define i32 @test1(i32 %i) {
 entry:
@@ -38,28 +38,28 @@ default:
   ret i32 555
 
 
-; CHECK-LABEL:       test1:
 
-; CHECK:             .align  4
-; CHECK-NEXT:    ${{BB[0-9]+_[0-9]+}}:
-; CHECK-NEXT:        jr      $ra
-; CHECK-NEXT:        addiu   $2, $zero, 111
-; CHECK-NEXT:    ${{BB[0-9]+_[0-9]+}}:
-; CHECK-NEXT:        jr      $ra
-; CHECK-NEXT:        addiu   $2, $zero, 555
-; CHECK-NEXT:        .align  4
-; CHECK-NEXT:    ${{BB[0-9]+_[0-9]+}}:
-; CHECK-NEXT:        jr      $ra
-; CHECK-NEXT:        addiu   $2, $zero, 222
-; CHECK-NEXT:        .align  4
-; CHECK-NEXT:    ${{BB[0-9]+_[0-9]+}}:
-; CHECK-NEXT:        jr      $ra
-; CHECK-NEXT:        addiu   $2, $zero, 333
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
 
-; This test tests that a block whose address is taken is bundle-aligned in NaCl.
+
 
 @bb_array = constant [2 x i8*] [i8* blockaddress(@test2, %bb1),
                                 i8* blockaddress(@test2, %bb2)], align 4
@@ -76,20 +76,20 @@ bb2:
   ret i32 222
 
 
-; CHECK-LABEL:       test2:
 
-; Note that there are two consecutive labels - one temporary and one for
-; basic block.
 
-; CHECK:             .align  4
-; CHECK-NEXT:    ${{[a-zA-Z0-9]+}}:
-; CHECK-NEXT:    ${{BB[0-9]+_[0-9]+}}:
-; CHECK-NEXT:        jr      $ra
-; CHECK-NEXT:        addiu   $2, $zero, 111
-; CHECK-NEXT:        .align  4
-; CHECK-NEXT:    ${{[a-zA-Z0-9]+}}:
-; CHECK-NEXT:    ${{BB[0-9]+_[0-9]+}}:
-; CHECK-NEXT:        jr      $ra
-; CHECK-NEXT:        addiu   $2, $zero, 222
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

@@ -1,18 +1,18 @@
-; RUN: opt -loop-accesses -analyze < %s | FileCheck %s
 
-; In this loop just because we access A through different types (int, float)
-; we still have a dependence cycle:
-;
-;   for (i = 0; i < n; i++) {
-;    A_float = (float *) A;
-;    A_float[i + 1] = A[i] * B[i];
-;   }
+
+
+
+
+
+
+
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.10.0"
 
-; CHECK: Report: unsafe dependent memory operations in loop
-; CHECK-NOT: Memory dependences are safe
+
+
 
 @B = common global i32* null, align 8
 @A = common global i32* null, align 8
@@ -23,7 +23,7 @@ entry:
   %b = load i32*, i32** @B, align 8
   br label %for.body
 
-for.body:                                         ; preds = %for.body, %entry
+for.body:                                         
   %storemerge3 = phi i64 [ 0, %entry ], [ %add, %for.body ]
 
   %arrayidxA = getelementptr inbounds i32, i32* %a, i64 %storemerge3
@@ -44,6 +44,6 @@ for.body:                                         ; preds = %for.body, %entry
   %exitcond = icmp eq i64 %add, 20
   br i1 %exitcond, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret void
 }

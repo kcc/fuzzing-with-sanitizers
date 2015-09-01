@@ -1,122 +1,122 @@
-; REQUIRES: object-emission
-; RUN: %llc_dwarf -O0 -filetype=obj < %s | llvm-dwarfdump - | FileCheck %s
-
-; Generated from the following source compiled with clang++ -gmlt:
-; void f1() {}
-; void __attribute__((section("__TEXT,__bar"))) f2() {}
-; void __attribute__((always_inline)) f3() { f1(); }
-; void f4() { f3(); }
-
-; Check that
-;  * -gmlt includes no DW_TAG_subprograms for subprograms without inlined
-;    subroutines.
-;  * yet still produces DW_AT_ranges and a range list in debug_ranges that
-;    describes those subprograms
-
-; CHECK: DW_TAG_compile_unit
-; CHECK:   DW_AT_ranges [DW_FORM_sec_offset] (0x00000000
-; CHECK-NOT: {{DW_TAG|NULL}}
-
-; Omitting the subprograms without inlined subroutines is not possible
-; currently on Darwin as dsymutil will drop the whole CU if it has no subprograms
-; (which happens with this optimization if there are no inlined subroutines).
-
-; DARWIN:  DW_TAG_subprogram
-; DARWIN-NOT: DW_TAG
-; DARWIN:    DW_AT_name {{.*}} "f1"
-; DARWIN-NOT: {{DW_TAG|NULL}}
-; DARWIN:  DW_TAG_subprogram
-; DARWIN-NOT: DW_TAG
-; DARWIN:    DW_AT_name {{.*}} "f2"
-; DARWIN-NOT: {{DW_TAG|NULL}}
-; DARWIN:  DW_TAG_subprogram
-; DARWIN-NOT: DW_TAG
-; Can't check the abstract_origin value across the DARWIN/CHECK checking and
-; ordering, so don't bother - just trust me, it refers to f3 down there.
-; DARWIN:    DW_AT_abstract_origin
-; DARWIN-NOT: {{DW_TAG|NULL}}
 
 
-; FIXME: Emitting separate abstract definitions is inefficient when we could
-; just attach the DW_AT_name to the inlined_subroutine directly. Except that
-; would produce many string relocations. Implement string indexing in the
-; skeleton CU to address the relocation problem, then remove abstract
-; definitions from -gmlt here.
-
-; CHECK: DW_TAG_subprogram
-; CHECK-NEXT:     DW_AT_name {{.*}} "f3"
-
-; FIXME: We don't really need DW_AT_inline, consumers can ignore this due to
-; the absence of high_pc/low_pc/ranges and know that they just need it for
-; retrieving the name of a concrete inlined instance
-
-; CHECK-NOT: {{DW_TAG|DW_AT|NULL}}
-
-; Check that we only provide the minimal attributes on a subprogram to save space.
-; CHECK:   DW_TAG_subprogram
-; CHECK-NEXT:     DW_AT_low_pc
-; CHECK-NEXT:     DW_AT_high_pc
-; CHECK-NEXT:     DW_AT_name
-; CHECK-NOT: {{DW_TAG|DW_AT}}
-; CHECK:     DW_TAG_inlined_subroutine
-
-; As mentioned above - replace DW_AT_abstract_origin with DW_AT_name to save
-; space once we have support for string indexing in non-dwo sections
-
-; CHECK-NEXT:       DW_AT_abstract_origin {{.*}} "f3"
-; CHECK-NEXT:       DW_AT_low_pc
-; CHECK-NEXT:       DW_AT_high_pc
-; CHECK-NEXT:       DW_AT_call_file
-; CHECK-NEXT:       DW_AT_call_line
-
-; Make sure we don't have any other subprograms here (subprograms with no
-; inlined subroutines are omitted by design to save space)
-
-; CHECK-NOT: {{DW_TAG|DW_AT}}
-; CHECK: NULL
-; CHECK-NOT: {{DW_TAG|DW_AT}}
-; CHECK: NULL
 
 
-; CHECK: .debug_ranges contents:
-
-; ... some addresses (depends on platform (such as platforms with function
-; reordering in the linker), and looks wonky on platforms with zero values
-; written in relocation places (dumper needs to	be fixed to read the
-; relocations rather than interpret that as the end of a range list))
-
-; CHECK: 00000000 <End of list>
 
 
-; Check that we don't emit any pubnames or pubtypes under -gmlt
-; CHECK: .debug_pubnames contents:
-; CHECK-NOT: Offset
 
-; CHECK: .debug_pubtypes contents:
-; CHECK-NOT: Offset
 
-; CHECK: .apple{{.*}} contents:
 
-; Function Attrs: nounwind uwtable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @_Z2f1v() #0 {
 entry:
   ret void, !dbg !13
 }
 
-; Function Attrs: nounwind uwtable
+
 define void @_Z2f2v() #0 section "__TEXT,__bar" {
 entry:
   ret void, !dbg !14
 }
 
-; Function Attrs: alwaysinline nounwind uwtable
+
 define void @_Z2f3v() #1 {
 entry:
   call void @_Z2f1v(), !dbg !15
   ret void, !dbg !16
 }
 
-; Function Attrs: nounwind uwtable
+
 define void @_Z2f4v() #0 {
 entry:
   call void @_Z2f1v() #2, !dbg !17

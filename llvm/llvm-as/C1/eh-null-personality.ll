@@ -1,7 +1,7 @@
-; RUN: llc -mtriple=x86_64-linux < %s | FileCheck %s
 
-; We should treat non-Function personalities as the unknown personality, which
-; is usually Itanium.
+
+
+
 
 declare void @g()
 declare void @terminate(i8*)
@@ -18,8 +18,8 @@ lpad:
   unreachable
 }
 
-; CHECK: f:
-; CHECK: callq g
-; CHECK: retq
-; CHECK: movq %rax, %rdi
-; CHECK: callq terminate
+
+
+
+
+

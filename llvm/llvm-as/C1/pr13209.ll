@@ -1,8 +1,8 @@
-; RUN: llc < %s -mtriple=x86_64-pc-linux | FileCheck %s
 
-; CHECK-LABEL: pr13209:
-; CHECK-NOT: mov
-; CHECK: .size pr13209
+
+
+
+
 
 define zeroext i1 @pr13209(i8** %x, i8*** %jumpTable) nounwind {
 if.end51:

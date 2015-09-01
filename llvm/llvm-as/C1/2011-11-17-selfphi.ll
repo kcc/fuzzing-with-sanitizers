@@ -1,23 +1,23 @@
-; RUN: opt < %s -indvars -S | FileCheck %s
-; PR11350: Check that SimplifyIndvar handles a cycle of useless self-phis.
 
-; CHECK-LABEL: @test(
-; CHECK-NOT: lcssa = phi
+
+
+
+
 define void @test() nounwind {
 entry:
   br label %for.cond.preheader
 
-for.cond.preheader:                               ; preds = %entry
+for.cond.preheader:                               
   br label %for.cond.outer
 
-for.cond.outer:                                   ; preds = %for.cond.preheader, %for.end
+for.cond.outer:                                   
   %p_41.addr.0.ph = phi i32 [ %p_41.addr.1.lcssa, %for.end ], [ 1, %for.cond.preheader ]
   br label %for.cond
 
 for.cond:
   br i1 true, label %for.end, label %for.ph
 
-for.ph:                                   ; preds = %for.cond4.preheader
+for.ph:                                   
   br label %for.end
 
 for.end:

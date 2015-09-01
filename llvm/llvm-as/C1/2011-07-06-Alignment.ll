@@ -1,4 +1,4 @@
-; RUN: opt -licm -S < %s | FileCheck %s
+
 
 @A = common global [1024 x float] zeroinitializer, align 4
 
@@ -22,5 +22,5 @@ for.end:
   ret i32 0
 }
 
-;CHECK: store <4 x float> {{.*}} align 4
+
 

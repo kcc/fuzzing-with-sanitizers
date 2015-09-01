@@ -1,9 +1,9 @@
-; RUN: llc -march=amdgcn -mcpu=verde -verify-machineinstrs < %s | FileCheck -check-prefix=SI %s
-; RUN: llc -march=amdgcn -mcpu=tonga -verify-machineinstrs < %s | FileCheck -check-prefix=SI %s
 
-; SI-LABEL: {{^}}kill_gs_const:
-; SI-NOT: v_cmpx_le_f32
-; SI: s_mov_b64 exec, 0
+
+
+
+
+
 
 define void @kill_gs_const() #0 {
 main_body:
@@ -16,11 +16,11 @@ main_body:
   ret void
 }
 
-; SI-LABEL: {{^}}kill_vcc_implicit_def:
-; SI-NOT: v_cmp_gt_f32_e32 vcc,
-; SI: v_cmp_gt_f32_e64 [[CMP:s\[[0-9]+:[0-9]+\]]], 0, v{{[0-9]+}}
-; SI: v_cmpx_le_f32_e32 vcc, 0, v{{[0-9]+}}
-; SI: v_cndmask_b32_e64 v{{[0-9]+}}, 0, 1.0, [[CMP]]
+
+
+
+
+
 define void @kill_vcc_implicit_def([6 x <16 x i8>] addrspace(2)* byval, [17 x <16 x i8>] addrspace(2)* byval, [17 x <4 x i32>] addrspace(2)* byval, [34 x <8 x i32>] addrspace(2)* byval, float inreg, i32 inreg, <2 x i32>, <2 x i32>, <2 x i32>, <3 x i32>, <2 x i32>, <2 x i32>, <2 x i32>, float, float, float, float, float, float, i32, float, float) #1 {
 entry:
   %tmp0 = fcmp olt float %13, 0.0

@@ -1,6 +1,6 @@
-; RUN: llc -O1 < %s
-; ModuleID = 'pr6157.bc'
-; formerly crashed in SelectionDAGBuilder
+
+
+
 
 %tart.reflect.ComplexType = type { double, double }
 
@@ -9,7 +9,7 @@
 define i32 @"main(tart.core.String[])->int32"(i32 %args) {
 entry:
   tail call void @llvm.dbg.value(metadata %tart.reflect.ComplexType* @.type.SwitchStmtTest, i64 0, metadata !8, metadata !DIExpression()), !dbg !DILocation(scope: !9)
-  tail call void @"tart.reflect.ComplexType.create->tart.core.Object"(%tart.reflect.ComplexType* @.type.SwitchStmtTest) ; <%tart.core.Object*> [#uses=2]
+  tail call void @"tart.reflect.ComplexType.create->tart.core.Object"(%tart.reflect.ComplexType* @.type.SwitchStmtTest) 
   ret i32 3
 }
 

@@ -1,5 +1,5 @@
-; RUN: llvm-as < %s | llvm-dis | llvm-as | llvm-dis
-; PR7105
+
+
 
 define void @foo(i32 %x) {
   call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)

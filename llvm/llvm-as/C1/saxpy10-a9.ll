@@ -1,66 +1,66 @@
-; RUN: llc < %s -march=arm -mtriple=thumbv7-apple-ios7.0.0 -float-abi=hard -mcpu=cortex-a9 -misched-postra -enable-misched -pre-RA-sched=source -scheditins=false | FileCheck %s
-;
-; Test MI-Sched suppory latency based stalls on in in-order pipeline
-; using the new machine model.
+
+
+
+
 
 target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:32:64-v128:32:128-a0:0:32-n32-S32"
 
-; Don't be too strict with the top of the schedule, but most of it
-; should be nicely pipelined.
-;
-; CHECK: saxpy10:
-; CHECK: vldr
-; CHECK: vldr
-; CHECK: vldr
-; CHECK: vldr
-; CHECK: vldr
-; CHECK-NEXT: vldr
-; CHECK-NEXT: vmul
-; CHECK-NEXT: vadd
-; CHECK-NEXT: vadd
-; CHECK-NEXT: vldr
-; CHECK-NEXT: vldr
-; CHECK-NEXT: vadd
-; CHECK-NEXT: vadd
-; CHECK-NEXT: vmul
-; CHECK-NEXT: vldr
-; CHECK-NEXT: vadd
-; CHECK-NEXT: vadd
-; CHECK-NEXT: vldr
-; CHECK-NEXT: vmul
-; CHECK-NEXT: vldr
-; CHECK-NEXT: vadd
-; CHECK-NEXT: vldr
-; CHECK-NEXT: vadd
-; CHECK-NEXT: vldr
-; CHECK-NEXT: vmul
-; CHECK-NEXT: vadd
-; CHECK-NEXT: vldr
-; CHECK-NEXT: vadd
-; CHECK-NEXT: vldr
-; CHECK-NEXT: vmul
-; CHECK-NEXT: vadd
-; CHECK-NEXT: vldr
-; CHECK-NEXT: vadd
-; CHECK-NEXT: vldr
-; CHECK-NEXT: vmul
-; CHECK-NEXT: vadd
-; CHECK-NEXT: vldr
-; CHECK-NEXT: vadd
-; CHECK-NEXT: vldr
-; CHECK-NEXT: vmul
-; CHECK-NEXT: vadd
-; CHECK-NEXT: vldr
-; CHECK-NEXT: vmul
-; CHECK-NEXT: vadd
-; CHECK-NEXT: vldr
-; CHECK-NEXT: vadd
-; CHECK-NEXT: vadd
-; CHECK-NEXT: vadd
-; CHECK-NEXT: vmov
-; CHECK-NEXT: bx
-;
-; This accumulates a sum rather than storing each result.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define float @saxpy10(float* nocapture readonly %data1, float* nocapture readonly %data2, float %a) {
 entry:
   %0 = load float, float* %data1, align 4

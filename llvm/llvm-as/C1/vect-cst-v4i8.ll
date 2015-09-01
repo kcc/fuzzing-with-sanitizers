@@ -1,7 +1,7 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv5 < %s | FileCheck %s
-; Make sure we can build the constant vector <1, 2, 3, 4>
-; CHECK-DAG: ##B
-; CHECK-DAG: ##A
+
+
+
+
 @B = common global [400 x i8] zeroinitializer, align 8
 @A = common global [400 x i8] zeroinitializer, align 8
 @C = common global [400 x i8] zeroinitializer, align 8
@@ -10,10 +10,10 @@ define void @run() nounwind {
 entry:
   br label %polly.loop_body
 
-polly.loop_after:                                 ; preds = %polly.loop_body
+polly.loop_after:                                 
   ret void
 
-polly.loop_body:                                  ; preds = %entry, %polly.loop_body
+polly.loop_body:                                  
   %polly.loopiv25 = phi i32 [ 0, %entry ], [ %polly.next_loopiv, %polly.loop_body ]
   %polly.next_loopiv = add i32 %polly.loopiv25, 4
   %p_arrayidx1 = getelementptr [400 x i8], [400 x i8]* @A, i32 0, i32 %polly.loopiv25

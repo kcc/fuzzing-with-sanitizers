@@ -1,14 +1,14 @@
-; RUN: opt -mtriple=amdgcn-- -loop-unroll -simplifycfg -sroa %s -S -o - | FileCheck %s
-; RUN: opt -mtriple=r600-- -loop-unroll -simplifycfg -sroa %s -S -o - | FileCheck %s
 
 
-; This test contains a simple loop that initializes an array declared in
-; private memory.  We want to make sure these kinds of loops are always
-; unrolled, because private memory is slow.
 
-; CHECK-LABEL: @test
-; CHECK-NOT: alloca
-; CHECK: store i32 5, i32 addrspace(1)* %out
+
+
+
+
+
+
+
+
 define void @test(i32 addrspace(1)* %out) {
 entry:
   %0 = alloca [32 x i32]

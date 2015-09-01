@@ -1,10 +1,10 @@
-; RUN: llc < %s -mtriple=x86_64-pc-linux | FileCheck %s
 
-; Test that we can handle .Lexception0 being defined. We used to crash.
 
-; CHECK: .cfi_lsda 3, [[LABEL:.*]]
-; CHECK: [[LABEL]]:
-; CHECK-NEXT: .byte   255                     # @LPStart Encoding = omit
+
+
+
+
+
 
 declare void @g()
 

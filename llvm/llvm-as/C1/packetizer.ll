@@ -1,11 +1,11 @@
-; RUN: llc < %s -march=r600 -mcpu=redwood | FileCheck %s
-; RUN: llc < %s -march=r600 -mcpu=cayman | FileCheck %s
 
-; CHECK: {{^}}test:
-; CHECK: BIT_ALIGN_INT T{{[0-9]}}.X
-; CHECK: BIT_ALIGN_INT T{{[0-9]}}.Y
-; CHECK: BIT_ALIGN_INT T{{[0-9]}}.Z
-; CHECK: BIT_ALIGN_INT * T{{[0-9]}}.W
+
+
+
+
+
+
+
 
 define void @test(i32 addrspace(1)* %out, i32 %x_arg, i32 %y_arg, i32 %z_arg, i32 %w_arg, i32 %e) {
 entry:

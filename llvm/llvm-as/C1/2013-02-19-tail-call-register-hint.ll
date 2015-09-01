@@ -1,12 +1,12 @@
-; RUN: llc < %s -mtriple=thumbv7s-apple-ios6.0.0 -verify-machineinstrs
 
-; Check to make sure the tail-call return at the end doesn't use a
-; callee-saved register. Register hinting from t2LDRDri was getting this
-; wrong. The intervening call will force allocation to try a high register
-; first, so the hint will attempt to fire, but must be rejected due to
-; not being in the allocation order for the tcGPR register class.
-; The machine instruction verifier will make sure that all actually worked
-; out the way it's supposed to.
+
+
+
+
+
+
+
+
 
 %"myclass" = type { %struct.foo }
 %struct.foo = type { i32, [40 x i8] }
@@ -28,12 +28,12 @@ define hidden void @func(i8* %Data) nounwind ssp {
   %11 = icmp eq i8* %Data, null
   br i1 %11, label %14, label %12
 
-; <label>:12                                      ; preds = %0
+
   %13 = tail call %"myclass"* @jkl(%"myclass"* %2) nounwind
   tail call void @mno(i8* %Data) nounwind
   br label %14
 
-; <label>:14                                      ; preds = %12, %0
+
   tail call void %7(i8* %10) nounwind
   ret void
 }

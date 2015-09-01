@@ -1,9 +1,9 @@
-; RUN: llc < %s -march=x86-64 -mcpu=corei7 -debug
 
-; REQUIRES: asserts
 
-; Test that the dag combiner doesn't assert if we try to replace a sequence of two
-; v4f32 X86ISD::PSHUFD nodes with a single PSHUFD.
+
+
+
+
 
 
 define <4 x float> @test(<4 x float> %V) {

@@ -1,6 +1,6 @@
-; RUN: llc < %s -mtriple=x86_64-unknown-linux-gnu -mcpu=core2 -pre-RA-sched=source -enable-misched -verify-machineinstrs | FileCheck %s
-;
-; Verify that misched resource/latency balancy heuristics are sane.
+
+
+
 
 define void @unrolled_mmult1(i32* %tmp55, i32* %tmp56, i32* %pre, i32* %pre94,
   i32* %pre95, i32* %pre96, i32* %pre97, i32* %pre98, i32* %pre99,
@@ -9,43 +9,43 @@ define void @unrolled_mmult1(i32* %tmp55, i32* %tmp56, i32* %pre, i32* %pre94,
 entry:
   br label %for.body
 
-; imull folded loads should be in order and interleaved with addl, never
-; adjacent. Also check that we have no spilling.
-;
-; Since mmult1 IR is already in good order, this effectively ensure
-; the scheduler maintains source order.
-;
-; CHECK-LABEL: %for.body
-; CHECK-NOT: %rsp
-; CHECK: imull 4
-; CHECK-NOT: {{imull|rsp}}
-; CHECK: addl
-; CHECK: imull 8
-; CHECK-NOT: {{imull|rsp}}
-; CHECK: addl
-; CHECK: imull 12
-; CHECK-NOT: {{imull|rsp}}
-; CHECK: addl
-; CHECK: imull 16
-; CHECK-NOT: {{imull|rsp}}
-; CHECK: addl
-; CHECK: imull 20
-; CHECK-NOT: {{imull|rsp}}
-; CHECK: addl
-; CHECK: imull 24
-; CHECK-NOT: {{imull|rsp}}
-; CHECK: addl
-; CHECK: imull 28
-; CHECK-NOT: {{imull|rsp}}
-; CHECK: addl
-; CHECK: imull 32
-; CHECK-NOT: {{imull|rsp}}
-; CHECK: addl
-; CHECK: imull 36
-; CHECK-NOT: {{imull|rsp}}
-; CHECK: addl
-; CHECK-NOT: {{imull|rsp}}
-; CHECK-LABEL: %end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 for.body:
   %indvars.iv42.i = phi i64 [ %indvars.iv.next43.i, %for.body ], [ 0, %entry ]
   %tmp57 = load i32, i32* %tmp56, align 4
@@ -117,40 +117,40 @@ end:
   ret void
 }
 
-; Unlike the above loop, this IR starts out bad and must be
-; rescheduled.
-;
-; CHECK-LABEL: %for.body
-; CHECK-NOT: %rsp
-; CHECK: imull 4
-; CHECK-NOT: {{imull|rsp}}
-; CHECK: addl
-; CHECK: imull 8
-; CHECK-NOT: {{imull|rsp}}
-; CHECK: addl
-; CHECK: imull 12
-; CHECK-NOT: {{imull|rsp}}
-; CHECK: addl
-; CHECK: imull 16
-; CHECK-NOT: {{imull|rsp}}
-; CHECK: addl
-; CHECK: imull 20
-; CHECK-NOT: {{imull|rsp}}
-; CHECK: addl
-; CHECK: imull 24
-; CHECK-NOT: {{imull|rsp}}
-; CHECK: addl
-; CHECK: imull 28
-; CHECK-NOT: {{imull|rsp}}
-; CHECK: addl
-; CHECK: imull 32
-; CHECK-NOT: {{imull|rsp}}
-; CHECK: addl
-; CHECK: imull 36
-; CHECK-NOT: {{imull|rsp}}
-; CHECK: addl
-; CHECK-NOT: {{imull|rsp}}
-; CHECK-LABEL: %end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @unrolled_mmult2(i32* %tmp55, i32* %tmp56, i32* %pre, i32* %pre94,
   i32* %pre95, i32* %pre96, i32* %pre97, i32* %pre98, i32* %pre99,
   i32* %pre100, i32* %pre101, i32* %pre102, i32* %pre103, i32* %pre104)
@@ -228,15 +228,15 @@ end:
   ret void
 }
 
-; A mildly interesting little block extracted from a cipher.  The
-; balanced heuristics are interesting here because we have resource,
-; latency, and register limits all at once. For now, simply check that
-; we don't use any callee-saves.
-; CHECK-LABEL: @encpc1
-; CHECK-LABEL: %entry
-; CHECK-NOT: push
-; CHECK-NOT: pop
-; CHECK: ret
+
+
+
+
+
+
+
+
+
 @a = external global i32, align 4
 @b = external global i32, align 4
 @c = external global i32, align 4

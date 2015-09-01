@@ -1,11 +1,11 @@
-; RUN: llc -march=mips < %s
-; RUN: llc -march=mips -mattr=+msa,+fp64 < %s
-; RUN: llc -march=mipsel < %s
-; RUN: llc -march=mipsel -mattr=+msa,+fp64 < %s
 
-; This test originally failed for MSA with a
-; "Type for zero vector elements is not legal" assertion.
-; It should at least successfully build.
+
+
+
+
+
+
+
 
 define void @autogen_SD3926023935(i8*, i32*, i64*, i32, i64, i8) {
 BB:
@@ -32,7 +32,7 @@ BB:
   %Cmp10 = icmp sge i8 -123, %5
   br label %CF80
 
-CF80:                                             ; preds = %BB
+CF80:                                             
   %L11 = load i8, i8* %0
   store i8 -123, i8* %0
   %E12 = extractelement <2 x i16> zeroinitializer, i32 1
@@ -60,7 +60,7 @@ CF80:                                             ; preds = %BB
   %Tr = trunc i8 %L5 to i1
   br label %CF79
 
-CF79:                                             ; preds = %CF80
+CF79:                                             
   %Sl30 = select i1 false, i8 %B29, i8 -123
   %Cmp31 = icmp sge <2 x i1> %I, %I
   %L32 = load i64, i64* %PC
@@ -74,7 +74,7 @@ CF79:                                             ; preds = %CF80
   %Cmp39 = icmp eq i64 498254, %B15
   br label %CF
 
-CF:                                               ; preds = %CF, %CF79
+CF:                                               
   %L40 = load double, double* %A
   store i1 %Cmp39, i1* %PC37
   %E41 = extractelement <4 x i64> zeroinitializer, i32 3
@@ -85,11 +85,11 @@ CF:                                               ; preds = %CF, %CF79
   %Sl45 = select i1 %Cmp10, i1 false, i1 false
   br i1 %Sl45, label %CF, label %CF77
 
-CF77:                                             ; preds = %CF77, %CF
+CF77:                                             
   %Cmp46 = fcmp uno double 0.000000e+00, 0.000000e+00
   br i1 %Cmp46, label %CF77, label %CF78
 
-CF78:                                             ; preds = %CF78, %CF83, %CF82, %CF77
+CF78:                                             
   %L47 = load i64, i64* %PC
   store i8 -123, i8* %0
   %E48 = extractelement <4 x i64> zeroinitializer, i32 3
@@ -100,11 +100,11 @@ CF78:                                             ; preds = %CF78, %CF83, %CF82,
   %Sl53 = select i1 %Tr, i1 %Cmp46, i1 %Cmp10
   br i1 %Sl53, label %CF78, label %CF83
 
-CF83:                                             ; preds = %CF78
+CF83:                                             
   %Cmp54 = fcmp uge double %L40, %L40
   br i1 %Cmp54, label %CF78, label %CF82
 
-CF82:                                             ; preds = %CF83
+CF82:                                             
   %L55 = load i64, i64* %PC
   store i64 %L32, i64* %PC
   %E56 = extractelement <2 x i16> %Shuff7, i32 1
@@ -124,7 +124,7 @@ CF82:                                             ; preds = %CF83
   %Sl68 = select i1 %Cmp39, i1 %Cmp39, i1 false
   br i1 %Sl68, label %CF78, label %CF81
 
-CF81:                                             ; preds = %CF82
+CF81:                                             
   %Cmp69 = icmp ne <8 x i64> <i64 -1, i64 -1, i64 -1, i64 -1, i64 -1, i64 -1, i64 -1, i64 -1>, %B36
   %L70 = load i8, i8* %0
   store i64 %L55, i64* %PC

@@ -1,11 +1,11 @@
-; RUN: llc -mtriple=aarch64-none-linux-gnu -disable-fp-elim < %s | FileCheck %s
+
 @var = global i32 0
 
 declare void @bar()
 
 define void @test_w29_reserved() {
-; CHECK-LABEL: test_w29_reserved:
-; CHECK: add x29, sp, #{{[0-9]+}}
+
+
 
   %val1 = load volatile i32, i32* @var
   %val2 = load volatile i32, i32* @var
@@ -17,9 +17,9 @@ define void @test_w29_reserved() {
   %val8 = load volatile i32, i32* @var
   %val9 = load volatile i32, i32* @var
 
-; CHECK-NOT: ldr w29,
 
-  ; Call to prevent fp-elim that occurs regardless in leaf functions.
+
+  
   call void @bar()
 
   store volatile i32 %val1,  i32* @var
@@ -33,5 +33,5 @@ define void @test_w29_reserved() {
   store volatile i32 %val9,  i32* @var
 
   ret void
-; CHECK: ret
+
 }

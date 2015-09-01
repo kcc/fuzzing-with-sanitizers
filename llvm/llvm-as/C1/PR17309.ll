@@ -1,12 +1,12 @@
-; RUN: llc -mtriple thumbv5-none-linux-gnueabi < %s | FileCheck %s
+
 
 %struct.C = type { [1000 x i8] }
 %struct.S = type { [1000 x i16] }
 %struct.I = type { [1000 x i32] }
 
-;CHECK-LABEL: pass_C:
-;CHECK-NOT: ldrb    r{{[0-9]+}}, [{{.*}}], #1
-;CHECK-NOT: strb    r{{[0-9]+}}, [{{.*}}], #1
+
+
+
 define void @pass_C() #0 {
 entry:
   %c = alloca %struct.C, align 1
@@ -17,9 +17,9 @@ entry:
   ret void
 }
 
-;CHECK-LABEL: pass_S:
-;CHECK-NOT: ldrh    r{{[0-9]+}}, [{{.*}}], #2
-;CHECK-NOT: strh    r{{[0-9]+}}, [{{.*}}], #2
+
+
+
 define void @pass_S() #0 {
 entry:
   %s = alloca %struct.S, align 2
@@ -30,9 +30,9 @@ entry:
   ret void
 }
 
-;CHECK-LABEL: pass_I:
-;CHECK-NOT: ldr     r{{[0-9]+}}, [{{.*}}], #4
-;CHECK-NOT: str     r{{[0-9]+}}, [{{.*}}], #4
+
+
+
 define void @pass_I() #0 {
 entry:
   %i = alloca %struct.I, align 4

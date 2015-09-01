@@ -1,4 +1,4 @@
-; RUN: opt < %s -S -mtriple=powerpc64-unknown-linux-gnu -mcpu=pwr7 -loop-unroll | FileCheck %s
+
 define void @unroll_opt_for_size() nounwind optsize {
 entry:
   br label %loop
@@ -13,40 +13,40 @@ exit:
   ret void
 }
 
-; CHECK-LABEL: @unroll_opt_for_size
-; CHECK:      add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: icmp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @unroll_default() nounwind {
 entry:
@@ -62,38 +62,38 @@ exit:
   ret void
 }
 
-; CHECK-LABEL: @unroll_default
-; CHECK:      add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: add
-; CHECK-NEXT: icmp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

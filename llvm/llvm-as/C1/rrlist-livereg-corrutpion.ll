@@ -1,6 +1,6 @@
-; RUN: llc < %s -march=x86-64 | FileCheck %s
 
-; CHECK-LABEL: test
+
+
 define i64 @test(i64 %a, i256 %b, i1 %c) {
   %u = zext i64 %a to i256
   %s = add i256 %u, 1

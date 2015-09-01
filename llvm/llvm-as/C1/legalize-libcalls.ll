@@ -1,5 +1,5 @@
-; RUN: llc -march=x86 < %s
-; RUN: llc -march=x86-64 < %s
+
+
 
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64-f80:128:128-n8:16:32-S128"
 
@@ -19,14 +19,14 @@ define hidden fastcc void @unroll_loop(i64 %storemerge32129) nounwind {
 entry:
   call fastcc void @copy_rtx() nounwind
   call fastcc void @copy_rtx() nounwind
-  %tmp225 = alloca i8, i64 %storemerge32129, align 8 ; [#uses=0 type=i8*]
-  %cmp651201 = icmp slt i64 %storemerge32129, 0   ; [#uses=1 type=i1]
+  %tmp225 = alloca i8, i64 %storemerge32129, align 8 
+  %cmp651201 = icmp slt i64 %storemerge32129, 0   
   br i1 %cmp651201, label %for.body653.lr.ph, label %if.end638.for.end659_crit_edge
 
-for.body653.lr.ph:                                ; preds = %entry
+for.body653.lr.ph:                                
   unreachable
 
-if.end638.for.end659_crit_edge:                   ; preds = %entry
+if.end638.for.end659_crit_edge:                   
   unreachable
 }
 

@@ -1,6 +1,6 @@
-; RUN: llc -march=x86 -O0 < %s | FileCheck %s
-; Currently, dbg.declare generates a DEBUG_VALUE comment.  Eventually it will
-; generate DWARF and this test will need to be modified or removed.
+
+
+
 
 
 %struct.Pt = type { double, double }
@@ -8,21 +8,21 @@
 
 define double @foo(%struct.Rect* byval %my_r0) nounwind ssp {
 entry:
-;CHECK: DEBUG_VALUE
-  %retval = alloca double                         ; <double*> [#uses=2]
-  %0 = alloca double                              ; <double*> [#uses=2]
-  %"alloca point" = bitcast i32 0 to i32          ; <i32> [#uses=0]
+
+  %retval = alloca double                         
+  %0 = alloca double                              
+  %"alloca point" = bitcast i32 0 to i32          
   call void @llvm.dbg.declare(metadata %struct.Rect* %my_r0, metadata !0, metadata !DIExpression()), !dbg !15
-  %1 = getelementptr inbounds %struct.Rect, %struct.Rect* %my_r0, i32 0, i32 0, !dbg !16 ; <%struct.Pt*> [#uses=1]
-  %2 = getelementptr inbounds %struct.Pt, %struct.Pt* %1, i32 0, i32 0, !dbg !16 ; <double*> [#uses=1]
-  %3 = load double, double* %2, align 8, !dbg !16         ; <double> [#uses=1]
+  %1 = getelementptr inbounds %struct.Rect, %struct.Rect* %my_r0, i32 0, i32 0, !dbg !16 
+  %2 = getelementptr inbounds %struct.Pt, %struct.Pt* %1, i32 0, i32 0, !dbg !16 
+  %3 = load double, double* %2, align 8, !dbg !16         
   store double %3, double* %0, align 8, !dbg !16
-  %4 = load double, double* %0, align 8, !dbg !16         ; <double> [#uses=1]
+  %4 = load double, double* %0, align 8, !dbg !16         
   store double %4, double* %retval, align 8, !dbg !16
   br label %return, !dbg !16
 
-return:                                           ; preds = %entry
-  %retval1 = load double, double* %retval, !dbg !16       ; <double> [#uses=1]
+return:                                           
+  %retval1 = load double, double* %retval, !dbg !16       
   ret double %retval1, !dbg !16
 }
 

@@ -1,5 +1,5 @@
-; RUN: llc -mtriple=thumb-eabi %s -o - | FileCheck %s
-; RUN: llc -mtriple=thumb-apple-darwin %s -o - | FileCheck %s -check-prefix CHECK-DARWIN
+
+
 
 define i64 @f1() {
 entry:
@@ -28,13 +28,13 @@ entry:
 
 define i64 @f6(i64 %x, i64 %y) {
 entry:
-        %tmp1 = add i64 %y, 1           ; <i64> [#uses=1]
+        %tmp1 = add i64 %y, 1           
         ret i64 %tmp1
 }
 
 define void @f7() {
 entry:
-        %tmp = call i64 @f8( )          ; <i64> [#uses=0]
+        %tmp = call i64 @f8( )          
         ret void
 }
 
@@ -42,41 +42,41 @@ declare i64 @f8()
 
 define i64 @f9(i64 %a, i64 %b) {
 entry:
-        %tmp = sub i64 %a, %b           ; <i64> [#uses=1]
+        %tmp = sub i64 %a, %b           
         ret i64 %tmp
 }
 
 define i64 @f(i32 %a, i32 %b) {
 entry:
-        %tmp = sext i32 %a to i64               ; <i64> [#uses=1]
-        %tmp1 = sext i32 %b to i64              ; <i64> [#uses=1]
-        %tmp2 = mul i64 %tmp1, %tmp             ; <i64> [#uses=1]
+        %tmp = sext i32 %a to i64               
+        %tmp1 = sext i32 %b to i64              
+        %tmp2 = mul i64 %tmp1, %tmp             
         ret i64 %tmp2
 }
 
 define i64 @g(i32 %a, i32 %b) {
 entry:
-        %tmp = zext i32 %a to i64               ; <i64> [#uses=1]
-        %tmp1 = zext i32 %b to i64              ; <i64> [#uses=1]
-        %tmp2 = mul i64 %tmp1, %tmp             ; <i64> [#uses=1]
+        %tmp = zext i32 %a to i64               
+        %tmp1 = zext i32 %b to i64              
+        %tmp2 = mul i64 %tmp1, %tmp             
         ret i64 %tmp2
 }
 
 define i64 @f10() {
 entry:
-        %a = alloca i64, align 8                ; <i64*> [#uses=1]
-        %retval = load i64, i64* %a          ; <i64> [#uses=1]
+        %a = alloca i64, align 8                
+        %retval = load i64, i64* %a          
         ret i64 %retval
 }
 
-; CHECK: mvn
-; CHECK-NOT: mvn
 
-; CHECK: adc
-; CHECK-NOT: adc
 
-; CHECK: sbc
-; CHECK-NOT: sbc
 
-; CHECK-DARWIN: __muldi3
+
+
+
+
+
+
+
 

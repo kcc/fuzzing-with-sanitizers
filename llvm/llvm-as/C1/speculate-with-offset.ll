@@ -1,10 +1,10 @@
-; RUN: opt -simplifycfg -S < %s | FileCheck %s
 
-; This load is safe to speculate, as it's from a safe offset
-; within an alloca.
 
-; CHECK-LABEL: @yes(
-; CHECK-NOT: br
+
+
+
+
+
 
 define void @yes(i1 %c) nounwind {
 entry:
@@ -13,20 +13,20 @@ entry:
   call void @frob(i64** %__a.addr)
   br i1 %c, label %if.then, label %if.end
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   br label %return
 
-if.end:                                           ; preds = %entry
+if.end:                                           
   %tmp5 = load i64*, i64** %__a.addr, align 8
   br label %return
 
-return:                                           ; preds = %if.end, %if.then
+return:                                           
   %storemerge = phi i64* [ undef, %if.then ], [ %tmp5, %if.end ]
   ret void
 }
 
-; CHECK-LABEL: @no0(
-; CHECK: br i1 %c
+
+
 
 define void @no0(i1 %c) nounwind {
 entry:
@@ -35,20 +35,20 @@ entry:
   call void @frob(i64** %__a.addr)
   br i1 %c, label %if.then, label %if.end
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   br label %return
 
-if.end:                                           ; preds = %entry
+if.end:                                           
   %tmp5 = load i64*, i64** %__a.addr, align 8
   br label %return
 
-return:                                           ; preds = %if.end, %if.then
+return:                                           
   %storemerge = phi i64* [ undef, %if.then ], [ %tmp5, %if.end ]
   ret void
 }
 
-; CHECK-LABEL: @no1(
-; CHECK: br i1 %c
+
+
 
 define void @no1(i1 %c, i64 %n) nounwind {
 entry:
@@ -57,20 +57,20 @@ entry:
   call void @frob(i64** %__a.addr)
   br i1 %c, label %if.then, label %if.end
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   br label %return
 
-if.end:                                           ; preds = %entry
+if.end:                                           
   %tmp5 = load i64*, i64** %__a.addr, align 8
   br label %return
 
-return:                                           ; preds = %if.end, %if.then
+return:                                           
   %storemerge = phi i64* [ undef, %if.then ], [ %tmp5, %if.end ]
   ret void
 }
 
-; CHECK-LABEL: @no2(
-; CHECK: br i1 %c
+
+
 
 define void @no2(i1 %c, i64 %n) nounwind {
 entry:
@@ -79,14 +79,14 @@ entry:
   call void @frob(i64** %__a.addr)
   br i1 %c, label %if.then, label %if.end
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   br label %return
 
-if.end:                                           ; preds = %entry
+if.end:                                           
   %tmp5 = load i64*, i64** %__a.addr, align 8
   br label %return
 
-return:                                           ; preds = %if.end, %if.then
+return:                                           
   %storemerge = phi i64* [ undef, %if.then ], [ %tmp5, %if.end ]
   ret void
 }

@@ -1,32 +1,32 @@
-; REQUIRES: object-emission
-; This test is failing for powerpc64, because a location list for the
-; variable 'c' is not generated at all. Temporary marking this test as XFAIL 
-; for powerpc, until PR21881 is fixed.
-; XFAIL: powerpc64
 
-; RUN: %llc_dwarf -O2  -dwarf-version 2 -filetype=obj < %s | llvm-dwarfdump - | FileCheck %s  --check-prefix=DWARF23
-; RUN: %llc_dwarf -O2  -dwarf-version 3 -filetype=obj < %s | llvm-dwarfdump - | FileCheck %s  --check-prefix=DWARF23
-; RUN: %llc_dwarf -O2  -dwarf-version 4 -filetype=obj < %s | llvm-dwarfdump - | FileCheck %s  --check-prefix=DWARF4
 
-; This is a test for PR21176.
-; DW_OP_const <const> doesn't describe a constant value, but a value at a constant address. 
-; The proper way to describe a constant value is DW_OP_constu <const>, DW_OP_stack_value.
 
-; Generated with clang -S -emit-llvm -g -O2 test.cpp
 
-; extern int func();
-; 
-; int main()
-; {
-;   volatile int c = 13;
-;   c = func();
-;   return c;
-; }
 
-; DWARF23: Location description: 10 0d {{$}}
-; DWARF4: Location description: 10 0d 9f
 
-; Function Attrs: uwtable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define i32 @main() #0 {
 entry:
   %c = alloca i32, align 4
@@ -42,7 +42,7 @@ entry:
 
 declare i32 @_Z4funcv() #1
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #2
 
 attributes #0 = { uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

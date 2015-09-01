@@ -1,12 +1,12 @@
-; RUN: llc < %s -mtriple=x86_64-apple-macosx -enable-misched \
-; RUN:          -verify-machineinstrs | FileCheck %s
-;
-; Test LiveInterval update handling of DBG_VALUE.
-; rdar://12777252.
-;
-; CHECK: %entry
-; CHECK: DEBUG_VALUE: subdivp:hg
-; CHECK: j
+
+
+
+
+
+
+
+
+
 
 %struct.node.0.27 = type { i16, double, [3 x double], i32, i32 }
 %struct.hgstruct.2.29 = type { %struct.bnode.1.28*, [3 x double], double, [3 x double] }
@@ -22,13 +22,13 @@ entry:
   %cmp = icmp eq i16 %0, 1
   br i1 %cmp, label %return, label %for.cond.preheader
 
-for.cond.preheader:                               ; preds = %entry
+for.cond.preheader:                               
   %arrayidx6.1 = getelementptr inbounds %struct.hgstruct.2.29, %struct.hgstruct.2.29* %hg, i64 0, i32 1, i64 1
   %cmp22 = fcmp olt double 0.000000e+00, %dsq
   %conv24 = zext i1 %cmp22 to i16
   br label %return
 
-return:                                           ; preds = %for.cond.preheader, %entry
+return:                                           
   %retval.0 = phi i16 [ %conv24, %for.cond.preheader ], [ 0, %entry ]
   ret i16 %retval.0
 }

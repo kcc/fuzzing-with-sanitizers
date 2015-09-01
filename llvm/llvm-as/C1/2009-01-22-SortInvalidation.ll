@@ -1,4 +1,4 @@
-; RUN: opt < %s -gvn | llvm-dis
+
 
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64-f80:128:128"
 target triple = "i386-apple-darwin7"
@@ -75,26 +75,26 @@ define fastcc void @sqlite3Insert(%struct.Parse* %pParse, %struct.SrcList* %pTab
 entry:
 	br i1 false, label %bb54, label %bb69.loopexit
 
-bb54:		; preds = %entry
+bb54:		
 	br label %bb69.loopexit
 
-bb59:		; preds = %bb63.preheader
-	%0 = load %struct..4sPragmaType*, %struct..4sPragmaType** %3, align 4		; <%struct..4sPragmaType*> [#uses=0]
+bb59:		
+	%0 = load %struct..4sPragmaType*, %struct..4sPragmaType** %3, align 4		
 	br label %bb65
 
-bb65:		; preds = %bb63.preheader, %bb59
-	%1 = load %struct..4sPragmaType*, %struct..4sPragmaType** %4, align 4		; <%struct..4sPragmaType*> [#uses=0]
+bb65:		
+	%1 = load %struct..4sPragmaType*, %struct..4sPragmaType** %4, align 4		
 	br i1 false, label %bb67, label %bb63.preheader
 
-bb67:		; preds = %bb65
-	%2 = getelementptr %struct.IdList, %struct.IdList* %pColumn, i32 0, i32 0		; <%struct..4sPragmaType**> [#uses=0]
+bb67:		
+	%2 = getelementptr %struct.IdList, %struct.IdList* %pColumn, i32 0, i32 0		
 	unreachable
 
-bb69.loopexit:		; preds = %bb54, %entry
-	%3 = getelementptr %struct.IdList, %struct.IdList* %pColumn, i32 0, i32 0		; <%struct..4sPragmaType**> [#uses=1]
-	%4 = getelementptr %struct.IdList, %struct.IdList* %pColumn, i32 0, i32 0		; <%struct..4sPragmaType**> [#uses=1]
+bb69.loopexit:		
+	%3 = getelementptr %struct.IdList, %struct.IdList* %pColumn, i32 0, i32 0		
+	%4 = getelementptr %struct.IdList, %struct.IdList* %pColumn, i32 0, i32 0		
 	br label %bb63.preheader
 
-bb63.preheader:		; preds = %bb69.loopexit, %bb65
+bb63.preheader:		
 	br i1 false, label %bb59, label %bb65
 }

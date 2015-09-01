@@ -1,23 +1,23 @@
-; struct A {
-;   A();
-;   virtual ~A();
-; };
-; struct B : A {
-;   B();
-;   virtual ~B();
-; };
-; B::B() {}
-; CHECK: __ZN1BC1Ev:
-; CHECK:     .loc	1 [[@LINE-2]] 0 prologue_end
-; CHECK-NOT: .loc	1 0 0 prologue_end
 
-; The location of the prologue_end marker should not be affected by the presence
-; of CFI instructions.
 
-; RUN: llc -O0 -filetype=asm -mtriple=thumbv7-apple-ios < %s | FileCheck %s
-; RUN: llc -O0 -filetype=asm -mtriple=thumbv6-apple-ios < %s | FileCheck %s
 
-; ModuleID = 'test1.cpp'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-m:o-p:32:32-f64:32:64-v64:32:64-v128:32:128-a:0:32-n32-S32"
 target triple = "thumbv7-apple-ios"
 
@@ -26,7 +26,7 @@ target triple = "thumbv7-apple-ios"
 
 @_ZTV1B = external unnamed_addr constant [4 x i8*]
 
-; Function Attrs: nounwind
+
 define %struct.B* @_ZN1BC2Ev(%struct.B* %this) unnamed_addr #0 align 2 {
 entry:
   tail call void @llvm.dbg.value(metadata %struct.B* %this, i64 0, metadata !30, metadata !40), !dbg !41
@@ -39,7 +39,7 @@ entry:
 
 declare %struct.A* @_ZN1AC2Ev(%struct.A*)
 
-; Function Attrs: nounwind
+
 define %struct.B* @_ZN1BC1Ev(%struct.B* %this) unnamed_addr #0 align 2 {
 entry:
   tail call void @llvm.dbg.value(metadata %struct.B* %this, i64 0, metadata !34, metadata !40), !dbg !46
@@ -51,7 +51,7 @@ entry:
   ret %struct.B* %this, !dbg !48
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #2
 
 attributes #0 = { nounwind }

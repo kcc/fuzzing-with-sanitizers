@@ -1,21 +1,21 @@
-; RUN: %llc_dwarf -asm-verbose -O1 -o %t < %s
-; RUN: grep DW_AT_APPLE_omit_frame_ptr %t
-; RUN: %llc_dwarf -disable-fp-elim -asm-verbose -O1 -o %t < %s
-; RUN: grep -v DW_AT_APPLE_omit_frame_ptr %t
+
+
+
+
 
 
 define i32 @foo() nounwind ssp {
 entry:
-  %retval = alloca i32                            ; <i32*> [#uses=2]
-  %0 = alloca i32                                 ; <i32*> [#uses=2]
-  %"alloca point" = bitcast i32 0 to i32          ; <i32> [#uses=0]
+  %retval = alloca i32                            
+  %0 = alloca i32                                 
+  %"alloca point" = bitcast i32 0 to i32          
   store i32 42, i32* %0, align 4, !dbg !0
-  %1 = load i32, i32* %0, align 4, !dbg !0             ; <i32> [#uses=1]
+  %1 = load i32, i32* %0, align 4, !dbg !0             
   store i32 %1, i32* %retval, align 4, !dbg !0
   br label %return, !dbg !0
 
-return:                                           ; preds = %entry
-  %retval1 = load i32, i32* %retval, !dbg !0           ; <i32> [#uses=1]
+return:                                           
+  %retval1 = load i32, i32* %retval, !dbg !0           
   ret i32 %retval1, !dbg !7
 }
 

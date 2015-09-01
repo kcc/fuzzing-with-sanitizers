@@ -1,4 +1,4 @@
-; RUN: llc < %s
+
 
 define i32 @test(i32 %tmp158) {
 entry:

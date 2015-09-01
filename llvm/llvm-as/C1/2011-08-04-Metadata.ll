@@ -1,13 +1,13 @@
-; RUN: llvm-link %s %p/2011-08-04-Metadata2.ll -o %t.bc
-; RUN: llvm-dis < %t.bc | FileCheck %s
-; Test if internal global variable's debug info is merged appropriately or not.
 
-; CHECK: !DIGlobalVariable(name: "x",
-; CHECK-NOT:               linkageName:
-; CHECK-SAME:              variable: i32* @x{{[,)]}}
-; CHECK: !DIGlobalVariable(name: "x",
-; CHECK-NOT:               linkageName:
-; CHECK-SAME:              variable: i32* @x.1{{[,)]}}
+
+
+
+
+
+
+
+
+
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64"
 target triple = "x86_64-apple-macosx10.7.0"
 

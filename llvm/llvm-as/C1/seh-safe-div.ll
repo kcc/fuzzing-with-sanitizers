@@ -1,24 +1,24 @@
-; RUN: llc -mtriple x86_64-pc-windows-msvc < %s | FileCheck %s
 
-; This test case is also intended to be run manually as a complete functional
-; test. It should link, print something, and exit zero rather than crashing.
-; It is the hypothetical lowering of a C source program that looks like:
-;
-;   int safe_div(int *n, int *d) {
-;     int r;
-;     __try {
-;       __try {
-;         r = *n / *d;
-;       } __except(GetExceptionCode() == EXCEPTION_ACCESS_VIOLATION) {
-;         puts("EXCEPTION_ACCESS_VIOLATION");
-;         r = -1;
-;       }
-;     } __except(GetExceptionCode() == EXCEPTION_INT_DIVIDE_BY_ZERO) {
-;       puts("EXCEPTION_INT_DIVIDE_BY_ZERO");
-;       r = -2;
-;     }
-;     return r;
-;   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @str1 = internal constant [27 x i8] c"EXCEPTION_ACCESS_VIOLATION\00"
 @str2 = internal constant [29 x i8] c"EXCEPTION_INT_DIVIDE_BY_ZERO\00"
@@ -62,45 +62,45 @@ __try.cont:
   ret i32 %safe_ret
 }
 
-; Normal path code
 
-; CHECK: {{^}}safe_div:
-; CHECK: .seh_proc safe_div
-; CHECK: .seh_handler __C_specific_handler, @unwind, @except
-; CHECK: .Ltmp0:
-; CHECK: leaq [[rloc:.*\(%rsp\)]], %rcx
-; CHECK: callq try_body
-; CHECK-NEXT: .Ltmp1
-; CHECK: [[cont_bb:\.LBB0_[0-9]+]]:
-; CHECK: movl [[rloc]], %eax
-; CHECK: retq
 
-; Landing pad code
 
-; CHECK: [[handler0:\.Ltmp[0-9]+]]: # Block address taken
-; CHECK: # %handler0
-; CHECK: callq puts
-; CHECK: movl $-1, [[rloc]]
-; CHECK: jmp [[cont_bb]]
 
-; CHECK: [[handler1:\.Ltmp[0-9]+]]: # Block address taken
-; CHECK: # %handler1
-; CHECK: callq puts
-; CHECK: movl $-2, [[rloc]]
-; CHECK: jmp [[cont_bb]]
 
-; CHECK: .seh_handlerdata
-; CHECK-NEXT: .long 2
-; CHECK-NEXT: .long .Ltmp0@IMGREL
-; CHECK-NEXT: .long .Ltmp1@IMGREL+1
-; CHECK-NEXT: .long safe_div_filt0@IMGREL
-; CHECK-NEXT: .long [[handler0]]@IMGREL
-; CHECK-NEXT: .long .Ltmp0@IMGREL
-; CHECK-NEXT: .long .Ltmp1@IMGREL+1
-; CHECK-NEXT: .long safe_div_filt1@IMGREL
-; CHECK-NEXT: .long [[handler1]]@IMGREL
-; CHECK: .text
-; CHECK: .seh_endproc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 define void @try_body(i32* %r, i32* %n, i32* %d) {
@@ -112,31 +112,31 @@ entry:
   ret void
 }
 
-; The prototype of these filter functions is:
-; int filter(EXCEPTION_POINTERS *eh_ptrs, void *rbp);
 
-; The definition of EXCEPTION_POINTERS is:
-;   typedef struct _EXCEPTION_POINTERS {
-;     EXCEPTION_RECORD *ExceptionRecord;
-;     CONTEXT          *ContextRecord;
-;   } EXCEPTION_POINTERS;
 
-; The definition of EXCEPTION_RECORD is:
-;   typedef struct _EXCEPTION_RECORD {
-;     DWORD ExceptionCode;
-;     ...
-;   } EXCEPTION_RECORD;
 
-; The exception code can be retreived with two loads, one for the record
-; pointer and one for the code.  The values of local variables can be
-; accessed via rbp, but that would require additional not yet implemented LLVM
-; support.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define i32 @safe_div_filt0(i8* %eh_ptrs, i8* %rbp) {
   %eh_ptrs_c = bitcast i8* %eh_ptrs to i32**
   %eh_rec = load i32*, i32** %eh_ptrs_c
   %eh_code = load i32, i32* %eh_rec
-  ; EXCEPTION_ACCESS_VIOLATION = 0xC0000005
+  
   %cmp = icmp eq i32 %eh_code, 3221225477
   %filt.res = zext i1 %cmp to i32
   ret i32 %filt.res
@@ -146,7 +146,7 @@ define i32 @safe_div_filt1(i8* %eh_ptrs, i8* %rbp) {
   %eh_ptrs_c = bitcast i8* %eh_ptrs to i32**
   %eh_rec = load i32*, i32** %eh_ptrs_c
   %eh_code = load i32, i32* %eh_rec
-  ; EXCEPTION_INT_DIVIDE_BY_ZERO = 0xC0000094
+  
   %cmp = icmp eq i32 %eh_code, 3221225620
   %filt.res = zext i1 %cmp to i32
   ret i32 %filt.res

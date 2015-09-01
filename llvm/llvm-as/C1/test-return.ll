@@ -1,4 +1,4 @@
-; RUN: %lli %s > /dev/null
+
 
 define i32 @main() nounwind uwtable {
 entry:

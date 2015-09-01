@@ -1,4 +1,4 @@
-; RUN: llc -mcpu=ppc64 -O0 -disable-fp-elim -fast-isel=false < %s | FileCheck %s
+
 
 target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v128:128:128-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
@@ -59,13 +59,13 @@ entry:
   %call = call i32 @callee1(%struct.s1* byval %p1, %struct.s2* byval %p2, %struct.s3* byval %p3, %struct.s4* byval %p4, %struct.s5* byval %p5, %struct.s6* byval %p6, %struct.s7* byval %p7)
   ret i32 %call
 
-; CHECK: ld 9, 112(31)
-; CHECK: ld 8, 120(31)
-; CHECK: ld 7, 128(31)
-; CHECK: lwz 6, 136(31)
-; CHECK: lwz 5, 144(31)
-; CHECK: lhz 4, 152(31)
-; CHECK: lbz 3, 160(31)
+
+
+
+
+
+
+
 }
 
 declare void @llvm.memcpy.p0i8.p0i8.i64(i8* nocapture, i8* nocapture, i64, i32, i1) nounwind
@@ -97,20 +97,20 @@ entry:
   %add13 = add nsw i32 %add11, %6
   ret i32 %add13
 
-; CHECK: std 9, 96(1)
-; CHECK: std 8, 88(1)
-; CHECK: std 7, 80(1)
-; CHECK: stw 6, 76(1)
-; CHECK: stw 5, 68(1)
-; CHECK: sth 4, 62(1)
-; CHECK: stb 3, 55(1)
-; CHECK: lha {{[0-9]+}}, 62(1)
-; CHECK: lha {{[0-9]+}}, 68(1)
-; CHECK: lbz {{[0-9]+}}, 55(1)
-; CHECK: lwz {{[0-9]+}}, 76(1)
-; CHECK: lwz {{[0-9]+}}, 80(1)
-; CHECK: lwz {{[0-9]+}}, 88(1)
-; CHECK: lwz {{[0-9]+}}, 96(1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 define i32 @caller2() nounwind {
@@ -139,22 +139,22 @@ entry:
   %call = call i32 @callee2(%struct.t1* byval %p1, %struct.t2* byval %p2, %struct.t3* byval %p3, %struct.t4* byval %p4, %struct.t5* byval %p5, %struct.t6* byval %p6, %struct.t7* byval %p7)
   ret i32 %call
 
-; CHECK: stb {{[0-9]+}}, 71(1)
-; CHECK: sth {{[0-9]+}}, 69(1)
-; CHECK: stb {{[0-9]+}}, 87(1)
-; CHECK: stw {{[0-9]+}}, 83(1)
-; CHECK: sth {{[0-9]+}}, 94(1)
-; CHECK: stw {{[0-9]+}}, 90(1)
-; CHECK: stb {{[0-9]+}}, 103(1)
-; CHECK: sth {{[0-9]+}}, 101(1)
-; CHECK: stw {{[0-9]+}}, 97(1)
-; CHECK: ld 9, 96(1)
-; CHECK: ld 8, 88(1)
-; CHECK: ld 7, 80(1)
-; CHECK: lwz 6, 136(31)
-; CHECK: ld 5, 64(1)
-; CHECK: lhz 4, 152(31)
-; CHECK: lbz 3, 160(31)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 define internal i32 @callee2(%struct.t1* byval %v1, %struct.t2* byval %v2, %struct.t3* byval %v3, %struct.t4* byval %v4, %struct.t5* byval %v5, %struct.t6* byval %v6, %struct.t7* byval %v7) nounwind {
@@ -184,18 +184,18 @@ entry:
   %add13 = add nsw i32 %add11, %6
   ret i32 %add13
 
-; CHECK: std 9, 96(1)
-; CHECK: std 8, 88(1)
-; CHECK: std 7, 80(1)
-; CHECK: stw 6, 76(1)
-; CHECK: std 5, 64(1)
-; CHECK: sth 4, 62(1)
-; CHECK: stb 3, 55(1)
-; CHECK: lha {{[0-9]+}}, 62(1)
-; CHECK: lha {{[0-9]+}}, 69(1)
-; CHECK: lbz {{[0-9]+}}, 55(1)
-; CHECK: lwz {{[0-9]+}}, 76(1)
-; CHECK: lwz {{[0-9]+}}, 83(1)
-; CHECK: lwz {{[0-9]+}}, 90(1)
-; CHECK: lwz {{[0-9]+}}, 97(1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

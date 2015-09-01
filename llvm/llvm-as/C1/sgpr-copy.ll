@@ -1,11 +1,11 @@
-; RUN: llc < %s -march=amdgcn -mcpu=SI -verify-machineinstrs | FileCheck %s
-; RUN: llc < %s -march=amdgcn -mcpu=tonga -verify-machineinstrs | FileCheck %s
 
-; This test checks that no VGPR to SGPR copies are created by the register
-; allocator.
-; CHECK-LABEL: {{^}}phi1:
-; CHECK: s_buffer_load_dword [[DST:s[0-9]]], {{s\[[0-9]+:[0-9]+\]}}, 0x0
-; CHECK: v_mov_b32_e32 v{{[0-9]}}, [[DST]]
+
+
+
+
+
+
+
 
 define void @phi1(<16 x i8> addrspace(2)* inreg, <16 x i8> addrspace(2)* inreg, <32 x i8> addrspace(2)* inreg, i32 inreg, <2 x i32>, <2 x i32>, <2 x i32>, <3 x i32>, <2 x i32>, <2 x i32>, <2 x i32>, float, float, float, float, float, float, float, float, float) #0 {
 main_body:
@@ -18,19 +18,19 @@ main_body:
   %26 = icmp ne i32 %25, 0
   br i1 %26, label %ENDIF, label %ELSE
 
-ELSE:                                             ; preds = %main_body
+ELSE:                                             
   %27 = fsub float -0.000000e+00, %22
   br label %ENDIF
 
-ENDIF:                                            ; preds = %main_body, %ELSE
+ENDIF:                                            
   %temp.0 = phi float [ %27, %ELSE ], [ %22, %main_body ]
   %28 = fadd float %temp.0, %24
   call void @llvm.SI.export(i32 15, i32 1, i32 1, i32 0, i32 0, float %28, float %28, float 0.000000e+00, float 1.000000e+00)
   ret void
 }
 
-; Make sure this program doesn't crash
-; CHECK-LABEL: {{^}}phi2:
+
+
 define void @phi2(<16 x i8> addrspace(2)* inreg, <16 x i8> addrspace(2)* inreg, <32 x i8> addrspace(2)* inreg, i32 inreg, <2 x i32>, <2 x i32>, <2 x i32>, <3 x i32>, <2 x i32>, <2 x i32>, <2 x i32>, float, float, float, float, float, float, float, float, float) #0 {
 main_body:
   %20 = getelementptr <16 x i8>, <16 x i8> addrspace(2)* %0, i32 0
@@ -93,7 +93,7 @@ main_body:
   %77 = icmp ne i32 %76, 0
   br i1 %77, label %IF, label %ENDIF
 
-IF:                                               ; preds = %main_body
+IF:                                               
   %78 = fsub float -0.000000e+00, %70
   %79 = call float @llvm.AMDIL.exp.(float %78)
   %80 = fsub float -0.000000e+00, %79
@@ -103,7 +103,7 @@ IF:                                               ; preds = %main_body
   %84 = fmul float %32, %83
   br label %ENDIF
 
-ENDIF:                                            ; preds = %main_body, %IF
+ENDIF:                                            
   %temp4.0 = phi float [ %84, %IF ], [ %32, %main_body ]
   %85 = call float @fabs(float %71)
   %86 = fcmp olt float 0x3EE4F8B580000000, %85
@@ -113,7 +113,7 @@ ENDIF:                                            ; preds = %main_body, %IF
   %90 = icmp ne i32 %89, 0
   br i1 %90, label %IF25, label %ENDIF24
 
-IF25:                                             ; preds = %ENDIF
+IF25:                                             
   %91 = fsub float -0.000000e+00, %71
   %92 = call float @llvm.AMDIL.exp.(float %91)
   %93 = fsub float -0.000000e+00, %92
@@ -123,7 +123,7 @@ IF25:                                             ; preds = %ENDIF
   %97 = fmul float %36, %96
   br label %ENDIF24
 
-ENDIF24:                                          ; preds = %ENDIF, %IF25
+ENDIF24:                                          
   %temp8.0 = phi float [ %97, %IF25 ], [ %36, %ENDIF ]
   %98 = fmul float %29, %temp4.0
   %99 = fmul float %30, %temp4.0
@@ -149,8 +149,8 @@ ENDIF24:                                          ; preds = %ENDIF, %IF25
   ret void
 }
 
-; We just want ot make sure the program doesn't crash
-; CHECK-LABEL: {{^}}loop:
+
+
 
 define void @loop(<16 x i8> addrspace(2)* inreg, <16 x i8> addrspace(2)* inreg, <32 x i8> addrspace(2)* inreg, i32 inreg, <2 x i32>, <2 x i32>, <2 x i32>, <3 x i32>, <2 x i32>, <2 x i32>, <2 x i32>, float, float, float, float, float, float, float, float, float) #0 {
 main_body:
@@ -165,7 +165,7 @@ main_body:
   %28 = bitcast float %27 to i32
   br label %LOOP
 
-LOOP:                                             ; preds = %ENDIF, %main_body
+LOOP:                                             
   %temp4.0 = phi float [ %22, %main_body ], [ %temp5.0, %ENDIF ]
   %temp5.0 = phi float [ %23, %main_body ], [ %temp6.0, %ENDIF ]
   %temp6.0 = phi float [ %24, %main_body ], [ %temp4.0, %ENDIF ]
@@ -178,21 +178,21 @@ LOOP:                                             ; preds = %ENDIF, %main_body
   %34 = icmp ne i32 %33, 0
   br i1 %34, label %IF, label %ENDIF
 
-IF:                                               ; preds = %LOOP
+IF:                                               
   call void @llvm.SI.export(i32 15, i32 1, i32 1, i32 0, i32 0, float %temp4.0, float %temp5.0, float %temp6.0, float 1.000000e+00)
   ret void
 
-ENDIF:                                            ; preds = %LOOP
+ENDIF:                                            
   %35 = bitcast float %temp8.0 to i32
   %36 = add i32 %35, 1
   %37 = bitcast i32 %36 to float
   br label %LOOP
 }
 
-; Function Attrs: nounwind readnone
+
 declare float @llvm.SI.load.const(<16 x i8>, i32) #1
 
-; Function Attrs: readonly
+
 declare float @fabs(float) #2
 
 declare void @llvm.SI.export(i32, i32, i32, i32, i32, float, float, float, float)
@@ -206,33 +206,33 @@ attributes #4 = { nounwind readonly }
 !0 = !{!"const", null}
 !1 = !{!0, !0, i64 0, i32 1}
 
-; Function Attrs: nounwind readnone
+
 declare float @llvm.SI.fs.interp(i32, i32, i32, <2 x i32>) #1
 
-; Function Attrs: nounwind readnone
+
 declare <4 x float> @llvm.SI.sample.v2i32(<2 x i32>, <32 x i8>, <16 x i8>, i32) #1
 
-; Function Attrs: readnone
+
 declare float @llvm.AMDGPU.rsq.f32(float) #3
 
-; Function Attrs: readnone
+
 declare float @llvm.AMDIL.exp.(float) #3
 
-; Function Attrs: nounwind readonly
+
 declare float @llvm.pow.f32(float, float) #4
 
-; Function Attrs: nounwind readnone
+
 declare i32 @llvm.SI.packf16(float, float) #1
 
-; This checks for a bug in the FixSGPRCopies pass where VReg96
-; registers were being identified as an SGPR regclass which was causing
-; an assertion failure.
 
-; CHECK-LABEL: {{^}}sample_v3:
-; CHECK: image_sample
-; CHECK: image_sample
-; CHECK: exp
-; CHECK: s_endpgm
+
+
+
+
+
+
+
+
 define void @sample_v3([17 x <16 x i8>] addrspace(2)* byval, [32 x <16 x i8>] addrspace(2)* byval, [16 x <32 x i8>] addrspace(2)* byval, float inreg, i32 inreg, <2 x i32>, <2 x i32>, <2 x i32>, <3 x i32>, <2 x i32>, <2 x i32>, <2 x i32>, float, float, float, float, float, float, float, float, float) #0 {
 
 entry:
@@ -270,10 +270,10 @@ endif:
 
 !2 = !{!"const", null, i32 1}
 
-; CHECK-LABEL: {{^}}copy1:
-; CHECK: buffer_load_dword
-; CHECK: v_add
-; CHECK: s_endpgm
+
+
+
+
 define void @copy1(float addrspace(1)* %out, float addrspace(1)* %in0) {
 entry:
   %0 = load float, float addrspace(1)* %in0
@@ -296,9 +296,9 @@ endif:
   ret void
 }
 
-; This test is just checking that we don't crash / assertion fail.
-; CHECK-LABEL: {{^}}copy2:
-; CHECK: s_endpgm
+
+
+
 
 define void @copy2([17 x <16 x i8>] addrspace(2)* byval, [32 x <16 x i8>] addrspace(2)* byval, [16 x <32 x i8>] addrspace(2)* byval, float inreg, i32 inreg, <2 x i32>, <2 x i32>, <2 x i32>, <3 x i32>, <2 x i32>, <2 x i32>, <2 x i32>, float, float, float, float, float, float, float, float, float) #0 {
 entry:
@@ -326,12 +326,12 @@ ENDIF69:
 
 attributes #0 = { "ShaderType"="0" }
 
-; This test checks that image_sample resource descriptors aren't loaded into
-; vgprs.  The verifier will fail if this happens.
-; CHECK-LABEL:{{^}}sample_rsrc:
-; CHECK: image_sample
-; CHECK: image_sample
-; CHECK: s_endpgm
+
+
+
+
+
+
 define void @sample_rsrc([6 x <16 x i8>] addrspace(2)* byval %arg, [17 x <16 x i8>] addrspace(2)* byval %arg1, [16 x <4 x i32>] addrspace(2)* byval %arg2, [32 x <8 x i32>] addrspace(2)* byval %arg3, float inreg %arg4, i32 inreg %arg5, <2 x i32> %arg6, <2 x i32> %arg7, <2 x i32> %arg8, <3 x i32> %arg9, <2 x i32> %arg10, <2 x i32> %arg11, <2 x i32> %arg12, float %arg13, float %arg14, float %arg15, float %arg16, float %arg17, float %arg18, i32 %arg19, float %arg20, float %arg21) #0 {
 bb:
   %tmp = getelementptr [17 x <16 x i8>], [17 x <16 x i8>] addrspace(2)* %arg1, i32 0, i32 0
@@ -347,7 +347,7 @@ bb:
   %tmp36 = icmp ne i32 %tmp31, 0
   br i1 %tmp36, label %bb38, label %bb80
 
-bb38:                                             ; preds = %bb
+bb38:                                             
   %tmp52 = bitcast float %tmp29 to i32
   %tmp53 = bitcast float %tmp30 to i32
   %tmp54 = insertelement <2 x i32> undef, i32 %tmp52, i32 0
@@ -357,7 +357,7 @@ bb38:                                             ; preds = %bb
   %tmp58 = call <4 x float> @llvm.SI.sample.v2i32(<2 x i32> %tmp55, <32 x i8> %tmp56, <16 x i8> %tmp57, i32 2)
   br label %bb71
 
-bb80:                                             ; preds = %bb
+bb80:                                             
   %tmp81 = bitcast float %tmp29 to i32
   %tmp82 = bitcast float %tmp30 to i32
   %tmp82.2 = add i32 %tmp82, 1
@@ -368,7 +368,7 @@ bb80:                                             ; preds = %bb
   %tmp87 = call <4 x float> @llvm.SI.sample.v2i32(<2 x i32> %tmp84, <32 x i8> %tmp85, <16 x i8> %tmp86, i32 2)
   br label %bb71
 
-bb71:                                             ; preds = %bb80, %bb38
+bb71:                                             
   %tmp72 = phi <4 x float> [ %tmp58, %bb38 ], [ %tmp87, %bb80 ]
   %tmp88 = extractelement <4 x float> %tmp72, i32 0
   call void @llvm.SI.export(i32 15, i32 1, i32 1, i32 0, i32 1, float %tmp88, float %tmp88, float %tmp88, float %tmp88)

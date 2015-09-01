@@ -1,27 +1,27 @@
-; RUN: llc -mtriple=i686-linux -pre-RA-sched=source < %s | FileCheck %s
+
 
 declare void @error(i32 %i, i32 %a, i32 %b)
 
 define i32 @test_ifchains(i32 %i, i32* %a, i32 %b) {
-; Test a chain of ifs, where the block guarded by the if is error handling code
-; that is not expected to run.
-; CHECK-LABEL: test_ifchains:
-; CHECK: %entry
-; CHECK-NOT: .align
-; CHECK: %else1
-; CHECK-NOT: .align
-; CHECK: %else2
-; CHECK-NOT: .align
-; CHECK: %else3
-; CHECK-NOT: .align
-; CHECK: %else4
-; CHECK-NOT: .align
-; CHECK: %exit
-; CHECK: %then1
-; CHECK: %then2
-; CHECK: %then3
-; CHECK: %then4
-; CHECK: %then5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 entry:
   %gep1 = getelementptr i32, i32* %a, i32 1
@@ -78,18 +78,18 @@ exit:
 }
 
 define i32 @test_loop_cold_blocks(i32 %i, i32* %a) {
-; Check that we sink cold loop blocks after the hot loop body.
-; CHECK-LABEL: test_loop_cold_blocks:
-; CHECK: %entry
-; CHECK-NOT: .align
-; CHECK: %unlikely1
-; CHECK-NOT: .align
-; CHECK: %unlikely2
-; CHECK: .align
-; CHECK: %body1
-; CHECK: %body2
-; CHECK: %body3
-; CHECK: %exit
+
+
+
+
+
+
+
+
+
+
+
+
 
 entry:
   br label %body1
@@ -127,17 +127,17 @@ exit:
 !0 = !{!"branch_weights", i32 4, i32 64}
 
 define i32 @test_loop_early_exits(i32 %i, i32* %a) {
-; Check that we sink early exit blocks out of loop bodies.
-; CHECK-LABEL: test_loop_early_exits:
-; CHECK: %entry
-; CHECK: %body1
-; CHECK: %body2
-; CHECK: %body3
-; CHECK: %body4
-; CHECK: %exit
-; CHECK: %bail1
-; CHECK: %bail2
-; CHECK: %bail3
+
+
+
+
+
+
+
+
+
+
+
 
 entry:
   br label %body1
@@ -178,13 +178,13 @@ exit:
 }
 
 define i32 @test_loop_rotate(i32 %i, i32* %a) {
-; Check that we rotate conditional exits from the loop to the bottom of the
-; loop, eliminating unconditional branches to the top.
-; CHECK-LABEL: test_loop_rotate:
-; CHECK: %entry
-; CHECK: %body1
-; CHECK: %body0
-; CHECK: %exit
+
+
+
+
+
+
+
 
 entry:
   br label %body0
@@ -208,13 +208,13 @@ exit:
 }
 
 define i32 @test_no_loop_rotate(i32 %i, i32* %a) {
-; Check that we don't try to rotate a loop which is already laid out with
-; fallthrough opportunities into the top and out of the bottom.
-; CHECK-LABEL: test_no_loop_rotate:
-; CHECK: %entry
-; CHECK: %body0
-; CHECK: %body1
-; CHECK: %exit
+
+
+
+
+
+
+
 
 entry:
   br label %body0
@@ -238,13 +238,13 @@ exit:
 }
 
 define i32 @test_loop_align(i32 %i, i32* %a) {
-; Check that we provide basic loop body alignment with the block placement
-; pass.
-; CHECK-LABEL: test_loop_align:
-; CHECK: %entry
-; CHECK: .align [[ALIGN:[0-9]+]],
-; CHECK-NEXT: %body
-; CHECK: %exit
+
+
+
+
+
+
+
 
 entry:
   br label %body
@@ -264,15 +264,15 @@ exit:
 }
 
 define i32 @test_nested_loop_align(i32 %i, i32* %a, i32* %b) {
-; Check that we provide nested loop body alignment.
-; CHECK-LABEL: test_nested_loop_align:
-; CHECK: %entry
-; CHECK: .align [[ALIGN]],
-; CHECK-NEXT: %loop.body.1
-; CHECK: .align [[ALIGN]],
-; CHECK-NEXT: %inner.loop.body
-; CHECK-NOT: .align
-; CHECK: %exit
+
+
+
+
+
+
+
+
+
 
 entry:
   br label %loop.body.1
@@ -304,13 +304,13 @@ exit:
 }
 
 define void @unnatural_cfg1() {
-; Test that we can handle a loop with an inner unnatural loop at the end of
-; a function. This is a gross CFG reduced out of the single source GCC.
-; CHECK: unnatural_cfg1
-; CHECK: %entry
-; CHECK: %loop.body1
-; CHECK: %loop.body2
-; CHECK: %loop.body3
+
+
+
+
+
+
+
 
 entry:
   br label %loop.header
@@ -341,22 +341,22 @@ loop.body5:
 }
 
 define void @unnatural_cfg2() {
-; Test that we can handle a loop with a nested natural loop *and* an unnatural
-; loop. This was reduced from a crash on block placement when run over
-; single-source GCC.
-; CHECK: unnatural_cfg2
-; CHECK: %entry
-; CHECK: %loop.body1
-; CHECK: %loop.body2
-; CHECK: %loop.body3
-; CHECK: %loop.inner1.begin
-; The end block is folded with %loop.body3...
-; CHECK-NOT: %loop.inner1.end
-; CHECK: %loop.body4
-; CHECK: %loop.inner2.begin
-; The loop.inner2.end block is folded
-; CHECK: %loop.header
-; CHECK: %bail
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 entry:
   br label %loop.header
@@ -412,9 +412,9 @@ bail:
 }
 
 define i32 @problematic_switch() {
-; This function's CFG caused overlow in the machine branch probability
-; calculation, triggering asserts. Make sure we don't crash on it.
-; CHECK: problematic_switch
+
+
+
 
 entry:
   switch i32 undef, label %exit [
@@ -463,26 +463,26 @@ exit:
 }
 
 define void @fpcmp_unanalyzable_branch(i1 %cond) {
-; This function's CFG contains an unanalyzable branch that is likely to be
-; split due to having a different high-probability predecessor.
-; CHECK: fpcmp_unanalyzable_branch
-; CHECK: %entry
-; CHECK: %exit
-; CHECK-NOT: %if.then
-; CHECK-NOT: %if.end
-; CHECK-NOT: jne
-; CHECK-NOT: jnp
-; CHECK: jne
-; CHECK-NEXT: jnp
-; CHECK-NEXT: %if.then
+
+
+
+
+
+
+
+
+
+
+
+
 
 entry:
-; Note that this branch must be strongly biased toward
-; 'entry.if.then_crit_edge' to ensure that we would try to form a chain for
-; 'entry' -> 'entry.if.then_crit_edge' -> 'if.then'. It is the last edge in that
-; chain which would violate the unanalyzable branch in 'exit', but we won't even
-; try this trick unless 'if.then' is believed to almost always be reached from
-; 'entry.if.then_crit_edge'.
+
+
+
+
+
+
   br i1 %cond, label %entry.if.then_crit_edge, label %lor.lhs.false, !prof !1
 
 entry.if.then_crit_edge:
@@ -513,17 +513,17 @@ declare i32 @g()
 declare i32 @h(i32 %x)
 
 define i32 @test_global_cfg_break_profitability() {
-; Check that our metrics for the profitability of a CFG break are global rather
-; than local. A successor may be very hot, but if the current block isn't, it
-; doesn't matter. Within this test the 'then' block is slightly warmer than the
-; 'else' block, but not nearly enough to merit merging it with the exit block
-; even though the probability of 'then' branching to the 'exit' block is very
-; high.
-; CHECK: test_global_cfg_break_profitability
-; CHECK: calll {{_?}}f
-; CHECK: calll {{_?}}g
-; CHECK: calll {{_?}}h
-; CHECK: ret
+
+
+
+
+
+
+
+
+
+
+
 
 entry:
   br i1 undef, label %then, label %else, !prof !2
@@ -547,15 +547,15 @@ exit:
 declare i32 @__gxx_personality_v0(...)
 
 define void @test_eh_lpad_successor() personality i8* bitcast (i32 (...)* @__gxx_personality_v0 to i8*) {
-; Some times the landing pad ends up as the first successor of an invoke block.
-; When this happens, a strange result used to fall out of updateTerminators: we
-; didn't correctly locate the fallthrough successor, assuming blindly that the
-; first one was the fallthrough successor. As a result, we would add an
-; erroneous jump to the landing pad thinking *that* was the default successor.
-; CHECK: test_eh_lpad_successor
-; CHECK: %entry
-; CHECK-NOT: jmp
-; CHECK: %loop
+
+
+
+
+
+
+
+
+
 
 entry:
   invoke i32 @f() to label %preheader unwind label %lpad
@@ -575,14 +575,14 @@ loop:
 declare void @fake_throw() noreturn
 
 define void @test_eh_throw() personality i8* bitcast (i32 (...)* @__gxx_personality_v0 to i8*) {
-; For blocks containing a 'throw' (or similar functionality), we have
-; a no-return invoke. In this case, only EH successors will exist, and
-; fallthrough simply won't occur. Make sure we don't crash trying to update
-; terminators for such constructs.
-;
-; CHECK: test_eh_throw
-; CHECK: %entry
-; CHECK: %cleanup
+
+
+
+
+
+
+
+
 
 entry:
   invoke void @fake_throw() to label %continue unwind label %cleanup
@@ -597,17 +597,17 @@ cleanup:
 }
 
 define void @test_unnatural_cfg_backwards_inner_loop() {
-; Test that when we encounter an unnatural CFG structure after having formed
-; a chain for an inner loop which happened to be laid out backwards we don't
-; attempt to merge onto the wrong end of the inner loop just because we find it
-; first. This was reduced from a crasher in GCC's single source.
-;
-; CHECK: test_unnatural_cfg_backwards_inner_loop
-; CHECK: %entry
-; CHECK: [[BODY:# BB#[0-9]+]]:
-; CHECK: %loop2b
-; CHECK: %loop1
-; CHECK: %loop2a
+
+
+
+
+
+
+
+
+
+
+
 
 entry:
   br i1 undef, label %loop2a, label %body
@@ -638,16 +638,16 @@ loop3:
 }
 
 define void @unanalyzable_branch_to_loop_header() {
-; Ensure that we can handle unanalyzable branches into loop headers. We
-; pre-form chains for unanalyzable branches, and will find the tail end of that
-; at the start of the loop. This function uses floating point comparison
-; fallthrough because that happens to always produce unanalyzable branches on
-; x86.
-;
-; CHECK: unanalyzable_branch_to_loop_header
-; CHECK: %entry
-; CHECK: %loop
-; CHECK: %exit
+
+
+
+
+
+
+
+
+
+
 
 entry:
   %cmp = fcmp une double 0.000000e+00, undef
@@ -662,17 +662,17 @@ exit:
 }
 
 define void @unanalyzable_branch_to_best_succ(i1 %cond) {
-; Ensure that we can handle unanalyzable branches where the destination block
-; gets selected as the optimal successor to merge.
-;
-; CHECK: unanalyzable_branch_to_best_succ
-; CHECK: %entry
-; CHECK: %foo
-; CHECK: %bar
-; CHECK: %exit
+
+
+
+
+
+
+
+
 
 entry:
-  ; Bias this branch toward bar to ensure we form that chain.
+  
   br i1 %cond, label %bar, label %foo, !prof !1
 
 foo:
@@ -688,15 +688,15 @@ exit:
 }
 
 define void @unanalyzable_branch_to_free_block(float %x) {
-; Ensure that we can handle unanalyzable branches where the destination block
-; gets selected as the best free block in the CFG.
-;
-; CHECK: unanalyzable_branch_to_free_block
-; CHECK: %entry
-; CHECK: %a
-; CHECK: %b
-; CHECK: %c
-; CHECK: %exit
+
+
+
+
+
+
+
+
+
 
 entry:
   br i1 undef, label %a, label %b
@@ -718,12 +718,12 @@ exit:
 }
 
 define void @many_unanalyzable_branches() {
-; Ensure that we don't crash as we're building up many unanalyzable branches,
-; blocks, and loops.
-;
-; CHECK: many_unanalyzable_branches
-; CHECK: %entry
-; CHECK: %exit
+
+
+
+
+
+
 
 entry:
   br label %0
@@ -930,38 +930,38 @@ exit:
 }
 
 define void @benchmark_heapsort(i32 %n, double* nocapture %ra) {
-; This test case comes from the heapsort benchmark, and exemplifies several
-; important aspects to block placement in the presence of loops:
-; 1) Loop rotation needs to *ensure* that the desired exiting edge can be
-;    a fallthrough.
-; 2) The exiting edge from the loop which is rotated to be laid out at the
-;    bottom of the loop needs to be exiting into the nearest enclosing loop (to
-;    which there is an exit). Otherwise, we force that enclosing loop into
-;    strange layouts that are siginificantly less efficient, often times maing
-;    it discontiguous.
-;
-; CHECK: @benchmark_heapsort
-; CHECK: %entry
-; First rotated loop top.
-; CHECK: .align
-; CHECK: %while.end
-; CHECK: %for.cond
-; CHECK: %if.then
-; CHECK: %if.else
-; CHECK: %if.end10
-; Second rotated loop top
-; CHECK: .align
-; CHECK: %if.then24
-; CHECK: %while.cond.outer
-; Third rotated loop top
-; CHECK: .align
-; CHECK: %while.cond
-; CHECK: %while.body
-; CHECK: %land.lhs.true
-; CHECK: %if.then19
-; CHECK: %if.end20
-; CHECK: %if.then8
-; CHECK: ret
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 entry:
   %shr = ashr i32 %n, 1
@@ -1055,14 +1055,14 @@ while.end:
 declare void @cold_function() cold
 
 define i32 @test_cold_calls(i32* %a) {
-; Test that edges to blocks post-dominated by cold calls are
-; marked as not expected to be taken.  They should be laid out
-; at the bottom.
-; CHECK-LABEL: test_cold_calls:
-; CHECK: %entry
-; CHECK: %else
-; CHECK: %exit
-; CHECK: %then
+
+
+
+
+
+
+
+
 
 entry:
   %gep1 = getelementptr i32, i32* %a, i32 1

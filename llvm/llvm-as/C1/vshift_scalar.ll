@@ -1,6 +1,6 @@
-; RUN: llc < %s
 
-; Legalization test that requires scalarizing a vector.
+
+
 
 define void @update(<1 x i32> %val, <1 x i32>* %dst) nounwind {
 entry:

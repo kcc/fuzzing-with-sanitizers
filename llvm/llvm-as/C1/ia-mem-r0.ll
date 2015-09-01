@@ -1,12 +1,12 @@
-; RUN: llc -mcpu=pwr7 < %s | FileCheck %s
+
 target datalayout = "e-m:e-i64:64-n32:64"
 target triple = "powerpc64le-unknown-linux-gnu"
 
-; Make sure that we don't generate a std r, 0(0) -- the memory address cannot
-; be stored in r0.
-; CHECK-LABEL: @test1
-; CHECK-NOT: std {{[0-9]+}}, 0(0) 
-; CHECK: blr
+
+
+
+
+
 
 define void @test1({ i8*, void (i8*, i8*)* } %fn_arg) {
   %fn = alloca { i8*, void (i8*, i8*)* }

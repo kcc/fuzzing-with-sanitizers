@@ -1,30 +1,30 @@
-; RUN: llc -split-dwarf=Enable -O0 %s -function-sections -mtriple=x86_64-unknown-linux-gnu -filetype=obj -o %t
-; RUN: llvm-dwarfdump -debug-dump=abbrev %t | FileCheck --check-prefix=FUNCTION-SECTIONS %s
-; RUN: llvm-readobj --relocations %t | FileCheck --check-prefix=FUNCTION-SECTIONS-RELOCS %s
 
-; RUN: llc -split-dwarf=Enable -O0 %s -mtriple=x86_64-unknown-linux-gnu -filetype=obj -o %t
-; RUN: llvm-dwarfdump -debug-dump=abbrev %t | FileCheck --check-prefix=NO-FUNCTION-SECTIONS %s
 
-; From:
-; int foo (int a) {
-;   return a+1;
-; }
-; int bar (int b) {
-;   return b+2;
-; }
 
-; With function sections enabled make sure that we have a DW_AT_ranges attribute.
-; FUNCTION-SECTIONS: DW_AT_ranges
 
-; Check that we have a relocation against the .debug_ranges section.
-; FUNCTION-SECTIONS-RELOCS: R_X86_64_32 .debug_ranges 0x0
 
-; Without function sections enabled make sure that we have no DW_AT_ranges attribute.
-; NO-FUNCTION-SECTIONS-NOT: DW_AT_ranges
-; NO-FUNCTION-SECTIONS: DW_AT_low_pc DW_FORM_addr
-; NO-FUNCTION-SECTIONS-NOT: DW_AT_ranges
 
-; Function Attrs: nounwind uwtable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define i32 @foo(i32 %a) #0 {
 entry:
   %a.addr = alloca i32, align 4
@@ -35,10 +35,10 @@ entry:
   ret i32 %add, !dbg !14
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
-; Function Attrs: nounwind uwtable
+
 define i32 @bar(i32 %b) #0 {
 entry:
   %b.addr = alloca i32, align 4

@@ -1,22 +1,22 @@
-; Test that coverage instrumentation does not lose debug location.
 
-; RUN: opt < %s -sancov -sanitizer-coverage-level=1 -S | FileCheck %s
 
-; C++ source:
-; 1: struct A {
-; 2:  int f();
-; 3:  int x;
-; 4: };
-; 5:
-; 6: int A::f() {
-; 7:    return x;
-; 8: }
-; clang++ ../1.cc -O3 -g -S -emit-llvm  -fno-strict-aliasing
-; and add sanitize_address to @_ZN1A1fEv
 
-; Test that __sanitizer_cov call has !dbg pointing to the opening { of A::f().
-; CHECK: call void @__sanitizer_cov(i32*{{.*}}), !dbg [[A:!.*]]
-; CHECK: [[A]] = !DILocation(line: 6, scope: !{{.*}})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
@@ -24,7 +24,7 @@ target triple = "x86_64-unknown-linux-gnu"
 
 %struct.A = type { i32 }
 
-; Function Attrs: nounwind readonly uwtable
+
 define i32 @_ZN1A1fEv(%struct.A* nocapture readonly %this) #0 align 2 {
 entry:
   tail call void @llvm.dbg.value(metadata %struct.A* %this, i64 0, metadata !15, metadata !DIExpression()), !dbg !20
@@ -33,7 +33,7 @@ entry:
   ret i32 %0, !dbg !21
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #1
 
 attributes #0 = { sanitize_address nounwind readonly uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

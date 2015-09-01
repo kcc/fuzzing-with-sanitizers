@@ -1,5 +1,5 @@
-; RUN: llc %s -march=mipsel -mcpu=mips32r2 -mattr=micromips -filetype=asm \
-; RUN:   -relocation-model=static -o - | FileCheck %s
+
+
 
 define i32 @sum(i32 %a, i32 %b) nounwind uwtable {
 entry:
@@ -28,21 +28,21 @@ entry:
   ret i32 %2
 }
 
-; CHECK:    .text
 
-; CHECK:    .globl  sum
-; CHECK:    .type sum,@function
-; CHECK:    .set  micromips
-; CHECK:    .ent  sum
-; CHECK-LABEL: sum:
-; CHECK:    .end  sum
 
-; CHECK:    .globl  main
-; CHECK:    .type main,@function
-; CHECK:    .set  micromips
-; CHECK:    .ent  main
-; CHECK-LABEL: main:
 
-; CHECK:    jal sum
 
-; CHECK:    .end main
+
+
+
+
+
+
+
+
+
+
+
+
+
+

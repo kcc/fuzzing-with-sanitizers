@@ -1,5 +1,5 @@
-; RUN: opt < %s -scalarrepl -S | FileCheck %s
-; Radar 7441282
+
+
 
 target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:32-f32:32:32-f64:32:32-v64:64:64-v128:128:128-a0:0:32-n32"
 target triple = "thumbv7-apple-darwin10"
@@ -10,11 +10,11 @@ target triple = "thumbv7-apple-darwin10"
 %union..0anon = type { %struct.int16x8x2_t }
 
 define void @test(<8 x i16> %tmp.0, %struct.int16x8x2_t* %dst) nounwind {
-; CHECK-LABEL: @test(
-; CHECK-NOT: alloca
-; CHECK: "alloca point"
-; CHECK: store <8 x i16>
-; CHECK: store <8 x i16>
+
+
+
+
+
 
 entry:
   %tmp_addr = alloca %struct.int16x8_t
@@ -61,11 +61,11 @@ entry:
   call void @llvm.memcpy.p0i8.p0i8.i32(i8* %23, i8* %tmp22, i32 32, i32 16, i1 false)
   br label %return
 
-return:                                           ; preds = %entry
+return:                                           
   ret void
 }
 
-; Radar 7466574
+
 %struct._NSRange = type { i64 }
 
 define void @test_memcpy_self() nounwind {
@@ -73,18 +73,18 @@ entry:
   %range = alloca %struct._NSRange
   br i1 undef, label %cond.true, label %cond.false
 
-cond.true:                                        ; preds = %entry
+cond.true:                                        
   %tmp3 = bitcast %struct._NSRange* %range to i8*
   %tmp4 = bitcast %struct._NSRange* %range to i8*
   call void @llvm.memcpy.p0i8.p0i8.i32(i8* %tmp3, i8* %tmp4, i32 8, i32 8, i1 false)
   ret void
 
-cond.false:                                       ; preds = %entry
+cond.false:                                       
   ret void
 
-; CHECK-LABEL: @test_memcpy_self(
-; CHECK-NOT: alloca
-; CHECK: br i1
+
+
+
 }
 
 declare void @llvm.memcpy.p0i8.p0i8.i32(i8* nocapture, i8* nocapture, i32, i32, i1) nounwind

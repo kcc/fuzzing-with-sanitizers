@@ -1,5 +1,5 @@
-; RUN: opt < %s -sccp -disable-output
-; PR4277
+
+
 
 define i32 @main() nounwind {
 entry:

@@ -1,5 +1,5 @@
-; RUN: llc %s -march=mipsel -mattr=micromips -filetype=asm \
-; RUN: -relocation-model=pic -O3 -o - | FileCheck %s
+
+
 
 define i32 @sum(i32* %x, i32* %y) nounwind uwtable {
 entry:
@@ -25,5 +25,5 @@ entry:
   ret i32 %call
 }
 
-; CHECK: addiu ${{[0-9]+}}, $sp, {{[0-9]+}}
-; CHECK: addiu ${{[0-9]+}}, $sp, {{[0-9]+}}
+
+

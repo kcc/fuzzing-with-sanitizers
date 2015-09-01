@@ -1,25 +1,25 @@
-; RUN: llc -O2 -march=hexagon < %s | FileCheck %s
-; CHECK-DAG: insert(r{{[0-9]*}}, #17, #0)
-; CHECK-DAG: insert(r{{[0-9]*}}, #18, #0)
-; CHECK-DAG: insert(r{{[0-9]*}}, #22, #0)
-; CHECK-DAG: insert(r{{[0-9]*}}, #12, #0)
 
-; C source:
-; typedef struct {
-;   unsigned x1:23;
-;   unsigned x2:17;
-;   unsigned x3:18;
-;   unsigned x4:22;
-;   unsigned x5:12;
-; } structx_t;
-;
-; void foo(structx_t *px, int y1, int y2, int y3, int y4, int y5) {
-;   px->x1 = y1;
-;   px->x2 = y2;
-;   px->x3 = y3;
-;   px->x4 = y4;
-;   px->x5 = y5;
-; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-p:32:32:32-i64:64:64-i32:32:32-i16:16:16-i1:32:32-f64:64:64-f32:32:32-v64:64:64-v32:32:32-a0:0-n16:32"
 target triple = "hexagon"

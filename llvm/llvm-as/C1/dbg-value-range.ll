@@ -1,4 +1,4 @@
-; RUN: llc -mtriple=x86_64-apple-darwin10 < %s | FileCheck %s
+
 
 %struct.a = type { i32 }
 
@@ -42,21 +42,21 @@ declare void @llvm.dbg.value(metadata, i64, metadata, metadata) nounwind readnon
 !22 = !DIFile(filename: "bar.c", directory: "/private/tmp")
 !23 = !{}
 
-; Check that variable bar:b value range is appropriately truncated in debug info.
-; The variable is in %rdi which is clobbered by 'movl %ebx, %edi'
-; Here Ltmp7 is the end of the location range.
 
-;CHECK: .loc	1 7 2
-;CHECK: movl
-;CHECK-NEXT: [[CLOBBER:Ltmp[0-9]*]]
 
-;CHECK:Ldebug_loc0:
-;CHECK-NEXT: Lset{{.*}} =
-;CHECK-NEXT:	.quad
-;CHECK-NEXT: [[CLOBBER_OFF:Lset.*]] = [[CLOBBER]]-{{.*}}
-;CHECK-NEXT:	.quad	[[CLOBBER_OFF]]
-;CHECK-NEXT:  .short 1 ## Loc expr size
-;CHECK-NEXT:	.byte	85 ## DW_OP_reg
-;CHECK-NEXT:	.quad	0
-;CHECK-NEXT:	.quad	0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 !24 = !{i32 1, !"Debug Info Version", i32 3}

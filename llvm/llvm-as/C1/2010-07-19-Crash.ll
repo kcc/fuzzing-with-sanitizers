@@ -1,6 +1,6 @@
-; RUN: llc -o /dev/null < %s
-; PR7662
-; Do not add variables to !11 because it is a declaration entry.
+
+
+
 
 define i32 @bar() nounwind readnone ssp {
 entry:

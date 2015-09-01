@@ -1,36 +1,36 @@
-; RUN: %llc_dwarf -O0 < %s | grep AT_decl_file |  grep 2
-; Here _ZN1S3fooEv is defined in header file identified as AT_decl_file no. 2 in debug info.
+
+
 %struct.S = type <{ i8 }>
 
 define i32 @_Z3barv() nounwind ssp {
 entry:
-  %retval = alloca i32                            ; <i32*> [#uses=2]
-  %0 = alloca i32                                 ; <i32*> [#uses=2]
-  %s1 = alloca %struct.S                          ; <%struct.S*> [#uses=1]
-  %"alloca point" = bitcast i32 0 to i32          ; <i32> [#uses=0]
+  %retval = alloca i32                            
+  %0 = alloca i32                                 
+  %s1 = alloca %struct.S                          
+  %"alloca point" = bitcast i32 0 to i32          
   call void @llvm.dbg.declare(metadata %struct.S* %s1, metadata !0, metadata !DIExpression()), !dbg !16
-  %1 = call i32 @_ZN1S3fooEv(%struct.S* %s1) nounwind, !dbg !17 ; <i32> [#uses=1]
+  %1 = call i32 @_ZN1S3fooEv(%struct.S* %s1) nounwind, !dbg !17 
   store i32 %1, i32* %0, align 4, !dbg !17
-  %2 = load i32, i32* %0, align 4, !dbg !17            ; <i32> [#uses=1]
+  %2 = load i32, i32* %0, align 4, !dbg !17            
   store i32 %2, i32* %retval, align 4, !dbg !17
   br label %return, !dbg !17
 
-return:                                           ; preds = %entry
-  %retval1 = load i32, i32* %retval, !dbg !17          ; <i32> [#uses=1]
+return:                                           
+  %retval1 = load i32, i32* %retval, !dbg !17          
   ret i32 %retval1, !dbg !16
 }
 
 define linkonce_odr i32 @_ZN1S3fooEv(%struct.S* %this) nounwind ssp align 2 {
 entry:
-  %this_addr = alloca %struct.S*                  ; <%struct.S**> [#uses=1]
-  %retval = alloca i32                            ; <i32*> [#uses=1]
-  %"alloca point" = bitcast i32 0 to i32          ; <i32> [#uses=0]
+  %this_addr = alloca %struct.S*                  
+  %retval = alloca i32                            
+  %"alloca point" = bitcast i32 0 to i32          
   call void @llvm.dbg.declare(metadata %struct.S** %this_addr, metadata !18, metadata !DIExpression()), !dbg !21
   store %struct.S* %this, %struct.S** %this_addr
   br label %return, !dbg !21
 
-return:                                           ; preds = %entry
-  %retval1 = load i32, i32* %retval, !dbg !21          ; <i32> [#uses=1]
+return:                                           
+  %retval1 = load i32, i32* %retval, !dbg !21          
   ret i32 %retval1, !dbg !22
 }
 

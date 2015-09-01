@@ -1,14 +1,14 @@
-; RUN: true
-; This file belongs to type-unique-simple2-a.ll.
-;
-; $ cat b.cpp
-; #include "ab.h"
-; void A::setFoo() {}
-; const
-; foo_t A::getFoo() { return 1; }
-; ModuleID = 'b.cpp'
-; target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
-; target triple = "x86_64-apple-macosx10.9.0"
+
+
+
+
+
+
+
+
+
+
+
 
 %class.A = type { i32 (...)** }
 
@@ -17,7 +17,7 @@
 @_ZTS1A = constant [3 x i8] c"1A\00"
 @_ZTI1A = unnamed_addr constant { i8*, i8* } { i8* bitcast (i8** getelementptr inbounds (i8*, i8** @_ZTVN10__cxxabiv117__class_type_infoE, i64 2) to i8*), i8* getelementptr inbounds ([3 x i8], [3 x i8]* @_ZTS1A, i32 0, i32 0) }
 
-; Function Attrs: nounwind
+
 define void @_ZN1A6setFooEv(%class.A* %this) unnamed_addr #0 align 2 {
 entry:
   %this.addr = alloca %class.A*, align 8
@@ -27,10 +27,10 @@ entry:
   ret void, !dbg !35
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
-; Function Attrs: nounwind
+
 define i32 @_ZN1A6getFooEv(%class.A* %this) unnamed_addr #0 align 2 {
 entry:
   %this.addr = alloca %class.A*, align 8

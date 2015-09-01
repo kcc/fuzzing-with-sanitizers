@@ -1,45 +1,45 @@
-; REQUIRES: object-emission
-;
-; RUN: llc -mtriple=x86_64-unknown-linux-gnu -O0 -filetype=obj < %s > %t
-; RUN: llvm-dwarfdump %t | FileCheck %s
 
-; Test case derived from compiling the following source with clang -g:
-;
-; namespace pr14763 {
-; struct foo {
-;   foo(const foo&);
-; };
-;
-; foo func(foo f) {
-;   return f; // reference 'f' for now because otherwise we hit another bug
-; }
-;
-; void sink(void*);
-;
-; void func2(bool b, foo g) {
-;   if (b)
-;     sink(&g); // reference 'f' for now because otherwise we hit another bug
-; }
-; }
 
-; CHECK: debug_info contents
-; 0x74 is DW_OP_breg4, showing that the parameter is accessed indirectly
-; (with a zero offset) from the register parameter
-; CHECK: DW_AT_location{{.*}}(<0x0{{.}}> 74 00
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_name{{.*}} = "f"
 
-; CHECK: DW_AT_location{{.*}}([[G_LOC:0x[0-9]*]])
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_name{{.*}} = "g"
-; CHECK: debug_loc contents
-; CHECK-NEXT: [[G_LOC]]: Beginning
-; CHECK-NEXT:               Ending
-; CHECK-NEXT: Location description: 74 00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %"struct.pr14763::foo" = type { i8 }
 
-; Function Attrs: uwtable
+
 define void @_ZN7pr147634funcENS_3fooE(%"struct.pr14763::foo"* noalias sret %agg.result, %"struct.pr14763::foo"* %f) #0 {
 entry:
   call void @llvm.dbg.declare(metadata %"struct.pr14763::foo"* %f, metadata !22, metadata !DIExpression(DW_OP_deref)), !dbg !24
@@ -47,12 +47,12 @@ entry:
   ret void, !dbg !25
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
 declare void @_ZN7pr147633fooC1ERKS0_(%"struct.pr14763::foo"*, %"struct.pr14763::foo"*) #2
 
-; Function Attrs: uwtable
+
 define void @_ZN7pr147635func2EbNS_3fooE(i1 zeroext %b, %"struct.pr14763::foo"* %g) #0 {
 entry:
   %b.addr = alloca i8, align 1
@@ -64,12 +64,12 @@ entry:
   %tobool = trunc i8 %0 to i1, !dbg !29
   br i1 %tobool, label %if.then, label %if.end, !dbg !29
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %1 = bitcast %"struct.pr14763::foo"* %g to i8*, !dbg !31
   call void @_ZN7pr147634sinkEPv(i8* %1), !dbg !31
   br label %if.end, !dbg !31
 
-if.end:                                           ; preds = %if.then, %entry
+if.end:                                           
   ret void, !dbg !32
 }
 

@@ -1,27 +1,27 @@
-; REQUIRES: asserts
-;
-; The Cortext-A57 machine model will avoid scheduling load instructions in
-; succession because loads on the A57 have a latency of 4 cycles and they all
-; issue to the same pipeline. Instead, it will move other instructions between
-; the loads to avoid unnecessary stalls. The generic machine model schedules 4
-; loads consecutively for this case and will cause stalls.
-;
-; RUN: llc < %s -mtriple=arm64-linux-gnu -mcpu=cortex-a57 -enable-misched -verify-misched -debug-only=misched -o - 2>&1 > /dev/null | FileCheck %s
-; CHECK: ********** MI Scheduling **********
-; CHECK: main:BB#2
-; CHECK: LDR
-; CHECK: Latency : 4
-; CHECK: *** Final schedule for BB#2 ***
-; CHECK: LDR
-; CHECK: LDR
-; CHECK-NOT: LDR
-; CHECK: {{.*}}
-; CHECK: ********** MI Scheduling **********
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @main.x = private unnamed_addr constant [8 x i32] [i32 1, i32 1, i32 1, i32 1, i32 1, i32 1, i32 1, i32 1], align 4
 @main.y = private unnamed_addr constant [8 x i32] [i32 2, i32 2, i32 2, i32 2, i32 2, i32 2, i32 2, i32 2], align 4
 
-; Function Attrs: nounwind
+
 define i32 @main() #0 {
 entry:
   %retval = alloca i32, align 4
@@ -40,12 +40,12 @@ entry:
   store i32 0, i32* %i, align 4
   br label %for.cond
 
-for.cond:                                         ; preds = %for.inc, %entry
+for.cond:                                         
   %2 = load i32, i32* %i, align 4
   %cmp = icmp slt i32 %2, 8
   br i1 %cmp, label %for.body, label %for.end
 
-for.body:                                         ; preds = %for.cond
+for.body:                                         
   %3 = load i32, i32* %yy, align 4
   %4 = load i32, i32* %i, align 4
   %idxprom = sext i32 %4 to i64
@@ -91,13 +91,13 @@ for.body:                                         ; preds = %for.cond
 
   br label %for.inc
 
-for.inc:                                          ; preds = %for.body
+for.inc:                                          
   %11 = load i32, i32* %i, align 4
   %inc = add nsw i32 %11, 1
   store i32 %inc, i32* %i, align 4
   br label %for.cond
 
-for.end:                                          ; preds = %for.cond
+for.end:                                          
   %12 = load i32, i32* %xx, align 4
   %13 = load i32, i32* %yy, align 4
   %add67 = add nsw i32 %12, %13
@@ -105,7 +105,7 @@ for.end:                                          ; preds = %for.cond
 }
 
 
-; Function Attrs: nounwind
+
 declare void @llvm.memcpy.p0i8.p0i8.i64(i8* nocapture, i8* nocapture readonly, i64, i32, i1) #1
 
 attributes #0 = { nounwind "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

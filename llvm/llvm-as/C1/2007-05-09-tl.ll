@@ -1,12 +1,12 @@
-; RUN: opt < %s -loop-unswitch -disable-output
-; PR1333
+
+
 
 define void @pp_cxx_expression() {
 entry:
-	%tmp6 = lshr i32 0, 24		; <i32> [#uses=1]
+	%tmp6 = lshr i32 0, 24		
 	br label %tailrecurse
 
-tailrecurse:		; preds = %tailrecurse, %tailrecurse, %entry
+tailrecurse:		
 	switch i32 %tmp6, label %bb96 [
 		 i32 24, label %bb10
 		 i32 25, label %bb10
@@ -54,42 +54,42 @@ tailrecurse:		; preds = %tailrecurse, %tailrecurse, %entry
 		 i32 210, label %tailrecurse
 	]
 
-bb10:		; preds = %tailrecurse, %tailrecurse, %tailrecurse
+bb10:		
 	ret void
 
-bb15:		; preds = %tailrecurse
+bb15:		
 	ret void
 
-bb19:		; preds = %tailrecurse, %tailrecurse
+bb19:		
 	ret void
 
-bb48:		; preds = %tailrecurse, %tailrecurse, %tailrecurse, %tailrecurse, %tailrecurse, %tailrecurse, %tailrecurse, %tailrecurse, %tailrecurse, %tailrecurse, %tailrecurse
+bb48:		
 	ret void
 
-bb59:		; preds = %tailrecurse, %tailrecurse, %tailrecurse, %tailrecurse, %tailrecurse, %tailrecurse, %tailrecurse, %tailrecurse, %tailrecurse
+bb59:		
 	ret void
 
-bb63:		; preds = %tailrecurse, %tailrecurse
+bb63:		
 	ret void
 
-bb67:		; preds = %tailrecurse, %tailrecurse
+bb67:		
 	ret void
 
-bb70:		; preds = %tailrecurse
+bb70:		
 	ret void
 
-bb75:		; preds = %tailrecurse, %tailrecurse, %tailrecurse
+bb75:		
 	ret void
 
-bb80:		; preds = %tailrecurse, %tailrecurse, %tailrecurse
+bb80:		
 	ret void
 
-bb83:		; preds = %tailrecurse
+bb83:		
 	ret void
 
-bb89:		; preds = %tailrecurse, %tailrecurse, %tailrecurse, %tailrecurse
+bb89:		
 	ret void
 
-bb96:		; preds = %tailrecurse
+bb96:		
 	ret void
 }

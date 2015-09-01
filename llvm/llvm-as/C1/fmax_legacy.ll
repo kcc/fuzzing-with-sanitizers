@@ -1,18 +1,18 @@
-; RUN: llc -march=amdgcn -mcpu=SI < %s | FileCheck -check-prefix=SI -check-prefix=SI-SAFE -check-prefix=FUNC %s
-; RUN: llc -enable-no-nans-fp-math -enable-unsafe-fp-math -march=amdgcn -mcpu=SI < %s | FileCheck -check-prefix=SI-NONAN -check-prefix=SI -check-prefix=FUNC %s
-; RUN: llc -march=r600 -mcpu=redwood < %s | FileCheck -check-prefix=EG -check-prefix=FUNC %s
 
-; FIXME: Should replace unsafe-fp-math with no signed zeros.
+
+
+
+
 
 declare i32 @llvm.r600.read.tidig.x() #1
 
-; FUNC-LABEL: @test_fmax_legacy_uge_f32
-; SI: buffer_load_dword [[A:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI: buffer_load_dword [[B:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:4
-; SI-SAFE: v_max_legacy_f32_e32 {{v[0-9]+}}, [[B]], [[A]]
-; SI-NONAN: v_max_f32_e32 {{v[0-9]+}}, [[B]], [[A]]
 
-; EG: MAX
+
+
+
+
+
+
 define void @test_fmax_legacy_uge_f32(float addrspace(1)* %out, float addrspace(1)* %in) #0 {
   %tid = call i32 @llvm.r600.read.tidig.x() #1
   %gep.0 = getelementptr float, float addrspace(1)* %in, i32 %tid
@@ -27,12 +27,12 @@ define void @test_fmax_legacy_uge_f32(float addrspace(1)* %out, float addrspace(
   ret void
 }
 
-; FUNC-LABEL: @test_fmax_legacy_oge_f32
-; SI: buffer_load_dword [[A:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI: buffer_load_dword [[B:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:4
-; SI-SAFE: v_max_legacy_f32_e32 {{v[0-9]+}}, [[A]], [[B]]
-; SI-NONAN: v_max_f32_e32 {{v[0-9]+}}, [[B]], [[A]]
-; EG: MAX
+
+
+
+
+
+
 define void @test_fmax_legacy_oge_f32(float addrspace(1)* %out, float addrspace(1)* %in) #0 {
   %tid = call i32 @llvm.r600.read.tidig.x() #1
   %gep.0 = getelementptr float, float addrspace(1)* %in, i32 %tid
@@ -47,12 +47,12 @@ define void @test_fmax_legacy_oge_f32(float addrspace(1)* %out, float addrspace(
   ret void
 }
 
-; FUNC-LABEL: @test_fmax_legacy_ugt_f32
-; SI: buffer_load_dword [[A:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI: buffer_load_dword [[B:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:4
-; SI-SAFE: v_max_legacy_f32_e32 {{v[0-9]+}}, [[B]], [[A]]
-; SI-NONAN: v_max_f32_e32 {{v[0-9]+}}, [[B]], [[A]]
-; EG: MAX
+
+
+
+
+
+
 define void @test_fmax_legacy_ugt_f32(float addrspace(1)* %out, float addrspace(1)* %in) #0 {
   %tid = call i32 @llvm.r600.read.tidig.x() #1
   %gep.0 = getelementptr float, float addrspace(1)* %in, i32 %tid
@@ -67,12 +67,12 @@ define void @test_fmax_legacy_ugt_f32(float addrspace(1)* %out, float addrspace(
   ret void
 }
 
-; FUNC-LABEL: @test_fmax_legacy_ogt_f32
-; SI: buffer_load_dword [[A:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI: buffer_load_dword [[B:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:4
-; SI-SAFE: v_max_legacy_f32_e32 {{v[0-9]+}}, [[A]], [[B]]
-; SI-NONAN: v_max_f32_e32 {{v[0-9]+}}, [[B]], [[A]]
-; EG: MAX
+
+
+
+
+
+
 define void @test_fmax_legacy_ogt_f32(float addrspace(1)* %out, float addrspace(1)* %in) #0 {
   %tid = call i32 @llvm.r600.read.tidig.x() #1
   %gep.0 = getelementptr float, float addrspace(1)* %in, i32 %tid
@@ -88,15 +88,15 @@ define void @test_fmax_legacy_ogt_f32(float addrspace(1)* %out, float addrspace(
 }
 
 
-; FUNC-LABEL: @test_fmax_legacy_ogt_f32_multi_use
-; SI: buffer_load_dword [[A:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI: buffer_load_dword [[B:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:4
-; SI-NOT: v_max_
-; SI: v_cmp_gt_f32
-; SI-NEXT: v_cndmask_b32
-; SI-NOT: v_max_
 
-; EG: MAX
+
+
+
+
+
+
+
+
 define void @test_fmax_legacy_ogt_f32_multi_use(float addrspace(1)* %out0, i1 addrspace(1)* %out1, float addrspace(1)* %in) #0 {
   %tid = call i32 @llvm.r600.read.tidig.x() #1
   %gep.0 = getelementptr float, float addrspace(1)* %in, i32 %tid

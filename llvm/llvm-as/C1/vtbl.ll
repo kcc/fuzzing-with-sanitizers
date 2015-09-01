@@ -1,12 +1,12 @@
-; RUN: llc -mtriple=arm-eabi -mattr=+neon %s -o - | FileCheck %s
+
 
 %struct.__neon_int8x8x2_t = type { <8 x i8>, <8 x i8> }
 %struct.__neon_int8x8x3_t = type { <8 x i8>,  <8 x i8>, <8 x i8> }
 %struct.__neon_int8x8x4_t = type { <8 x i8>,  <8 x i8>,  <8 x i8>, <8 x i8> }
 
 define <8 x i8> @vtbl1(<8 x i8>* %A, <8 x i8>* %B) nounwind {
-;CHECK-LABEL: vtbl1:
-;CHECK: vtbl.8
+
+
 	%tmp1 = load <8 x i8>, <8 x i8>* %A
 	%tmp2 = load <8 x i8>, <8 x i8>* %B
 	%tmp3 = call <8 x i8> @llvm.arm.neon.vtbl1(<8 x i8> %tmp1, <8 x i8> %tmp2)
@@ -14,8 +14,8 @@ define <8 x i8> @vtbl1(<8 x i8>* %A, <8 x i8>* %B) nounwind {
 }
 
 define <8 x i8> @vtbl2(<8 x i8>* %A, %struct.__neon_int8x8x2_t* %B) nounwind {
-;CHECK-LABEL: vtbl2:
-;CHECK: vtbl.8
+
+
 	%tmp1 = load <8 x i8>, <8 x i8>* %A
 	%tmp2 = load %struct.__neon_int8x8x2_t, %struct.__neon_int8x8x2_t* %B
         %tmp3 = extractvalue %struct.__neon_int8x8x2_t %tmp2, 0
@@ -25,8 +25,8 @@ define <8 x i8> @vtbl2(<8 x i8>* %A, %struct.__neon_int8x8x2_t* %B) nounwind {
 }
 
 define <8 x i8> @vtbl3(<8 x i8>* %A, %struct.__neon_int8x8x3_t* %B) nounwind {
-;CHECK-LABEL: vtbl3:
-;CHECK: vtbl.8
+
+
 	%tmp1 = load <8 x i8>, <8 x i8>* %A
 	%tmp2 = load %struct.__neon_int8x8x3_t, %struct.__neon_int8x8x3_t* %B
         %tmp3 = extractvalue %struct.__neon_int8x8x3_t %tmp2, 0
@@ -37,8 +37,8 @@ define <8 x i8> @vtbl3(<8 x i8>* %A, %struct.__neon_int8x8x3_t* %B) nounwind {
 }
 
 define <8 x i8> @vtbl4(<8 x i8>* %A, %struct.__neon_int8x8x4_t* %B) nounwind {
-;CHECK-LABEL: vtbl4:
-;CHECK: vtbl.8
+
+
 	%tmp1 = load <8 x i8>, <8 x i8>* %A
 	%tmp2 = load %struct.__neon_int8x8x4_t, %struct.__neon_int8x8x4_t* %B
         %tmp3 = extractvalue %struct.__neon_int8x8x4_t %tmp2, 0
@@ -50,8 +50,8 @@ define <8 x i8> @vtbl4(<8 x i8>* %A, %struct.__neon_int8x8x4_t* %B) nounwind {
 }
 
 define <8 x i8> @vtbx1(<8 x i8>* %A, <8 x i8>* %B, <8 x i8>* %C) nounwind {
-;CHECK-LABEL: vtbx1:
-;CHECK: vtbx.8
+
+
 	%tmp1 = load <8 x i8>, <8 x i8>* %A
 	%tmp2 = load <8 x i8>, <8 x i8>* %B
 	%tmp3 = load <8 x i8>, <8 x i8>* %C
@@ -60,8 +60,8 @@ define <8 x i8> @vtbx1(<8 x i8>* %A, <8 x i8>* %B, <8 x i8>* %C) nounwind {
 }
 
 define <8 x i8> @vtbx2(<8 x i8>* %A, %struct.__neon_int8x8x2_t* %B, <8 x i8>* %C) nounwind {
-;CHECK-LABEL: vtbx2:
-;CHECK: vtbx.8
+
+
 	%tmp1 = load <8 x i8>, <8 x i8>* %A
 	%tmp2 = load %struct.__neon_int8x8x2_t, %struct.__neon_int8x8x2_t* %B
         %tmp3 = extractvalue %struct.__neon_int8x8x2_t %tmp2, 0
@@ -72,8 +72,8 @@ define <8 x i8> @vtbx2(<8 x i8>* %A, %struct.__neon_int8x8x2_t* %B, <8 x i8>* %C
 }
 
 define <8 x i8> @vtbx3(<8 x i8>* %A, %struct.__neon_int8x8x3_t* %B, <8 x i8>* %C) nounwind {
-;CHECK-LABEL: vtbx3:
-;CHECK: vtbx.8
+
+
 	%tmp1 = load <8 x i8>, <8 x i8>* %A
 	%tmp2 = load %struct.__neon_int8x8x3_t, %struct.__neon_int8x8x3_t* %B
         %tmp3 = extractvalue %struct.__neon_int8x8x3_t %tmp2, 0
@@ -85,8 +85,8 @@ define <8 x i8> @vtbx3(<8 x i8>* %A, %struct.__neon_int8x8x3_t* %B, <8 x i8>* %C
 }
 
 define <8 x i8> @vtbx4(<8 x i8>* %A, %struct.__neon_int8x8x4_t* %B, <8 x i8>* %C) nounwind {
-;CHECK-LABEL: vtbx4:
-;CHECK: vtbx.8
+
+
 	%tmp1 = load <8 x i8>, <8 x i8>* %A
 	%tmp2 = load %struct.__neon_int8x8x4_t, %struct.__neon_int8x8x4_t* %B
         %tmp3 = extractvalue %struct.__neon_int8x8x4_t %tmp2, 0

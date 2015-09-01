@@ -1,12 +1,12 @@
-; RUN: opt < %s -instcombine -S | grep "align 16" | count 1
+
 target datalayout = "E-p:64:64:64-a0:0:8-f32:32:32-f64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-v64:64:64-v128:128:128"
 
-; A multi-dimensional array in a nested loop doing vector stores that
-; aren't yet aligned. Instcombine can understand the addressing in the
-; Nice case to prove 16 byte alignment. In the Awkward case, the inner
-; array dimension is not even, so the stores to it won't always be
-; aligned. Instcombine should prove alignment in exactly one of the two
-; stores.
+
+
+
+
+
+
 
 @Nice    = global [1001 x [20000 x double]] zeroinitializer, align 32
 @Awkward = global [1001 x [20001 x double]] zeroinitializer, align 32

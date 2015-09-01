@@ -1,5 +1,5 @@
-; RUN: opt < %s -loop-reduce
-; PR6453
+
+
 
 target datalayout = "e-p:64:64:64"
 

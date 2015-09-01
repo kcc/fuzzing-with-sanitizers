@@ -1,6 +1,6 @@
-; RUN: llc -march=mipsel -O3 < %s | FileCheck %s
-; RUN: llc -mtriple=mipsel-none-nacl-gnu -O3 < %s \
-; RUN:  | FileCheck %s -check-prefix=CHECK-NACL
+
+
+
 
 @var = external global i32
 
@@ -39,13 +39,13 @@ define void @f() {
   store volatile i32 %val16, i32* @var
   ret void
 
-; Check that t6, t7 and t8 are used in non-NaCl code.
-; CHECK:    lw  $14
-; CHECK:    lw  $15
-; CHECK:    lw  $24
 
-; t6, t7 and t8 are reserved in NaCl.
-; CHECK-NACL-NOT:    lw  $14
-; CHECK-NACL-NOT:    lw  $15
-; CHECK-NACL-NOT:    lw  $24
+
+
+
+
+
+
+
+
 }

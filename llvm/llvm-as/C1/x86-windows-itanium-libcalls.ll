@@ -1,4 +1,4 @@
-; RUN: opt -mtriple i686-windows-itanium -O2 -o - %s | llvm-dis | FileCheck %s
+
 
 target triple = "i686-windows-itanium"
 
@@ -11,6 +11,6 @@ define dllexport float @test(float %f) {
   ret float %cast
 }
 
-; CHECK-NOT: floorf
-; CHECK: floor
+
+
 

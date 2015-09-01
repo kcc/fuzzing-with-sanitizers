@@ -1,10 +1,10 @@
-; RUN: llc -O2 < %s
-; REQUIRES: asserts
+
+
 
 target datalayout = "e-m:e-p:32:32-i64:64-a:0-v32:32-n16:32"
 target triple = "hexagon"
 
-; Function Attrs: nounwind optsize ssp
+
 define internal fastcc void @foo() nounwind {
 if.else473:
   %0 = load i64, i64* undef, align 8

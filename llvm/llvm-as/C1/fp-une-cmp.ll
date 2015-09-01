@@ -1,28 +1,28 @@
-; RUN: llc < %s -march=x86 -mattr=sse4.1 | FileCheck %s
-; <rdar://problem/7859988>
 
-; Make sure we don't generate more jumps than we need to. We used to generate
-; something like this:
-;
-;       jne  LBB0_1
-;       jnp  LBB0_2
-;   LBB0_1:
-;       jmp  LBB0_3
-;   LBB0_2:
-;       addsd ...
-;   LBB0_3:
-;
-; Now we generate this:
-;
-;       jne  LBB0_2
-;       jp   LBB0_2
-;       addsd ...
-;   LBB0_2:
 
-; CHECK:       func
-; CHECK:       jne [[LABEL:.*]]
-; CHECK-NEXT:  jp  [[LABEL]]
-; CHECK-NOT:   jmp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define float @func(float %x, float %y) nounwind readnone optsize ssp {
 entry:

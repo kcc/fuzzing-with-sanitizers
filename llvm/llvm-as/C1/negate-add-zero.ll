@@ -1,5 +1,5 @@
-; RUN: llc < %s -enable-unsafe-fp-math -march=x86 | not grep xor
-; PR3374
+
+
 
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64-f80:128:128"
 target triple = "i386-apple-darwin7"
@@ -103,92 +103,92 @@ target triple = "i386-apple-darwin7"
 	%"struct.std::locale::facet" = type { i32 (...)**, i32 }
 	%"struct.std::num_get<char,std::istreambuf_iterator<char, std::char_traits<char> > >" = type { %"struct.std::locale::facet" }
 	%"struct.std::type_info" = type { i32 (...)**, i8* }
-@_ZN9HingeNode7DEG2RADE = external constant double, align 8		; <double*> [#uses=0]
-@"\01LC" = external constant [8 x i8]		; <[8 x i8]*> [#uses=0]
-@"\01LC1" = external constant [7 x i8]		; <[7 x i8]*> [#uses=0]
-@"\01LC2" = external constant [10 x i8]		; <[10 x i8]*> [#uses=0]
-@"\01LC3" = external constant [5 x i8]		; <[5 x i8]*> [#uses=0]
-@"\01LC4" = external constant [8 x i8]		; <[8 x i8]*> [#uses=0]
-@"\01LC5" = external constant [8 x i8]		; <[8 x i8]*> [#uses=0]
-@"\01LC6" = external constant [7 x i8]		; <[7 x i8]*> [#uses=0]
-@"\01LC7" = external constant [8 x i8]		; <[8 x i8]*> [#uses=0]
-@"\01LC8" = external constant [3 x i8]		; <[3 x i8]*> [#uses=0]
-@"\01LC9" = external constant [3 x i8]		; <[3 x i8]*> [#uses=0]
-@"\01LC10" = external constant [3 x i8]		; <[3 x i8]*> [#uses=0]
-@_ZStL8__ioinit = external global %"struct.CDS::DefaultAlloc"		; <%"struct.CDS::DefaultAlloc"*> [#uses=0]
-@__dso_handle = external global i8*		; <i8**> [#uses=0]
-@_ZTIN9HingeNode17VirtualBaseMethodE = external constant %struct.__class_type_info_pseudo		; <%struct.__class_type_info_pseudo*> [#uses=0]
-@_ZTVN10__cxxabiv117__class_type_infoE = external constant [0 x i32 (...)*]		; <[0 x i32 (...)*]*> [#uses=0]
-@_ZTSN9HingeNode17VirtualBaseMethodE = external constant [32 x i8], align 4		; <[32 x i8]*> [#uses=0]
-@_ZTV9HingeNode = external constant [31 x i32 (...)*], align 32		; <[31 x i32 (...)*]*> [#uses=0]
-@_ZTI9HingeNode = external constant %struct.__class_type_info_pseudo		; <%struct.__class_type_info_pseudo*> [#uses=0]
-@_ZTS9HingeNode = external constant [11 x i8]		; <[11 x i8]*> [#uses=0]
-@_ZTV11HNodeOrigin = external constant [31 x i32 (...)*], align 32		; <[31 x i32 (...)*]*> [#uses=0]
-@_ZTI11HNodeOrigin = external constant %struct.__si_class_type_info_pseudo		; <%struct.__si_class_type_info_pseudo*> [#uses=0]
-@_ZTVN10__cxxabiv120__si_class_type_infoE = external constant [0 x i32 (...)*]		; <[0 x i32 (...)*]*> [#uses=0]
-@_ZTS11HNodeOrigin = external constant [14 x i8]		; <[14 x i8]*> [#uses=0]
-@_ZTV13HingeNodeSpecILi1EE = external constant [33 x i32 (...)*], align 32		; <[33 x i32 (...)*]*> [#uses=0]
-@_ZTI13HingeNodeSpecILi1EE = external constant %struct.__si_class_type_info_pseudo		; <%struct.__si_class_type_info_pseudo*> [#uses=0]
-@_ZTS13HingeNodeSpecILi1EE = external constant [22 x i8]		; <[22 x i8]*> [#uses=0]
-@_ZTV13HingeNodeSpecILi3EE = external constant [33 x i32 (...)*], align 32		; <[33 x i32 (...)*]*> [#uses=0]
-@_ZTI13HingeNodeSpecILi3EE = external constant %struct.__si_class_type_info_pseudo		; <%struct.__si_class_type_info_pseudo*> [#uses=0]
-@_ZTS13HingeNodeSpecILi3EE = external constant [22 x i8]		; <[22 x i8]*> [#uses=0]
-@_ZTV13HingeNodeSpecILi2EE = external constant [33 x i32 (...)*], align 32		; <[33 x i32 (...)*]*> [#uses=0]
-@_ZTI13HingeNodeSpecILi2EE = external constant %struct.__si_class_type_info_pseudo		; <%struct.__si_class_type_info_pseudo*> [#uses=0]
-@_ZTS13HingeNodeSpecILi2EE = external constant [22 x i8]		; <[22 x i8]*> [#uses=0]
-@_ZTV13HingeNodeSpecILi6EE = external constant [33 x i32 (...)*], align 32		; <[33 x i32 (...)*]*> [#uses=0]
-@_ZTI13HingeNodeSpecILi6EE = external constant %struct.__si_class_type_info_pseudo		; <%struct.__si_class_type_info_pseudo*> [#uses=0]
-@_ZTS13HingeNodeSpecILi6EE = external constant [22 x i8]		; <[22 x i8]*> [#uses=0]
-@_ZTV13HingeNodeSpecILi5EE = external constant [33 x i32 (...)*], align 32		; <[33 x i32 (...)*]*> [#uses=0]
-@_ZTI13HingeNodeSpecILi5EE = external constant %struct.__si_class_type_info_pseudo		; <%struct.__si_class_type_info_pseudo*> [#uses=0]
-@_ZTS13HingeNodeSpecILi5EE = external constant [22 x i8]		; <[22 x i8]*> [#uses=0]
-@_ZSt4cout = external global %"struct.std::basic_ostream<char,std::char_traits<char> >"		; <%"struct.std::basic_ostream<char,std::char_traits<char> >"*> [#uses=0]
-@"\01LC11" = external constant [10 x i8]		; <[10 x i8]*> [#uses=0]
-@"\01LC12" = external constant [8 x i8]		; <[8 x i8]*> [#uses=0]
-@"\01LC13" = external constant [10 x i8]		; <[10 x i8]*> [#uses=0]
-@_ZSt4cerr = external global %"struct.std::basic_ostream<char,std::char_traits<char> >"		; <%"struct.std::basic_ostream<char,std::char_traits<char> >"*> [#uses=0]
-@"\01LC14" = external constant [29 x i8]		; <[29 x i8]*> [#uses=0]
-@"\01LC15" = external constant [11 x i8]		; <[11 x i8]*> [#uses=0]
-@"\01LC16" = external constant [13 x i8]		; <[13 x i8]*> [#uses=0]
-@"\01LC17" = external constant [21 x i8]		; <[21 x i8]*> [#uses=0]
-@"\01LC18" = external constant [8 x i8]		; <[8 x i8]*> [#uses=0]
-@"\01LC19" = external constant [4 x i8]		; <[4 x i8]*> [#uses=0]
-@"\01LC20" = external constant [42 x i8]		; <[42 x i8]*> [#uses=0]
-@_ZTIN16InternalDynamics9ExceptionE = external constant %struct.__class_type_info_pseudo		; <%struct.__class_type_info_pseudo*> [#uses=0]
-@_ZTSN16InternalDynamics9ExceptionE = external constant [31 x i8], align 4		; <[31 x i8]*> [#uses=0]
-@_ZTIN3CDS13SingularErrorE = external constant %struct.__si_class_type_info_pseudo		; <%struct.__si_class_type_info_pseudo*> [#uses=0]
-@_ZTSN3CDS13SingularErrorE = external constant [22 x i8]		; <[22 x i8]*> [#uses=0]
-@_ZTIN3CDS9exceptionE = external constant %struct.__class_type_info_pseudo		; <%struct.__class_type_info_pseudo*> [#uses=0]
-@_ZTSN3CDS9exceptionE = external constant [17 x i8]		; <[17 x i8]*> [#uses=0]
-@_ZTV12HNodeTorsion = external constant [33 x i32 (...)*], align 32		; <[33 x i32 (...)*]*> [#uses=0]
-@_ZTI12HNodeTorsion = external constant %struct.__si_class_type_info_pseudo		; <%struct.__si_class_type_info_pseudo*> [#uses=0]
-@_ZTS12HNodeTorsion = external constant [15 x i8]		; <[15 x i8]*> [#uses=0]
-@_ZTV12HNodeRotate3 = external constant [33 x i32 (...)*], align 32		; <[33 x i32 (...)*]*> [#uses=0]
-@_ZTI12HNodeRotate3 = external constant %struct.__si_class_type_info_pseudo		; <%struct.__si_class_type_info_pseudo*> [#uses=0]
-@_ZTS12HNodeRotate3 = external constant [15 x i8]		; <[15 x i8]*> [#uses=0]
-@_ZTV12HNodeRotate2 = external constant [33 x i32 (...)*], align 32		; <[33 x i32 (...)*]*> [#uses=0]
-@_ZTI12HNodeRotate2 = external constant %struct.__si_class_type_info_pseudo		; <%struct.__si_class_type_info_pseudo*> [#uses=0]
-@_ZTS12HNodeRotate2 = external constant [15 x i8]		; <[15 x i8]*> [#uses=0]
-@_ZTV21HNodeTranslateRotate3 = external constant [33 x i32 (...)*], align 32		; <[33 x i32 (...)*]*> [#uses=0]
-@_ZTI21HNodeTranslateRotate3 = external constant %struct.__si_class_type_info_pseudo		; <%struct.__si_class_type_info_pseudo*> [#uses=0]
-@_ZTS21HNodeTranslateRotate3 = external constant [24 x i8]		; <[24 x i8]*> [#uses=0]
-@_ZTV21HNodeTranslateRotate2 = external constant [33 x i32 (...)*], align 32		; <[33 x i32 (...)*]*> [#uses=0]
-@_ZTI21HNodeTranslateRotate2 = external constant %struct.__si_class_type_info_pseudo		; <%struct.__si_class_type_info_pseudo*> [#uses=0]
-@_ZTS21HNodeTranslateRotate2 = external constant [24 x i8]		; <[24 x i8]*> [#uses=0]
-@_ZTV14HNodeTranslate = external constant [33 x i32 (...)*], align 32		; <[33 x i32 (...)*]*> [#uses=0]
-@_ZTI14HNodeTranslate = external constant %struct.__si_class_type_info_pseudo		; <%struct.__si_class_type_info_pseudo*> [#uses=0]
-@_ZTS14HNodeTranslate = external constant [17 x i8]		; <[17 x i8]*> [#uses=0]
-@"\01LC21" = external constant [31 x i8]		; <[31 x i8]*> [#uses=0]
-@"\01LC22" = external constant [6 x i8]		; <[6 x i8]*> [#uses=0]
-@"\01LC23" = external constant [12 x i8]		; <[12 x i8]*> [#uses=0]
-@"\01LC24" = external constant [5 x i8]		; <[5 x i8]*> [#uses=0]
-@"\01LC25" = external constant [7 x i8]		; <[7 x i8]*> [#uses=0]
-@"\01LC26" = external constant [7 x i8]		; <[7 x i8]*> [#uses=0]
-@"\01LC27" = external constant [43 x i8]		; <[43 x i8]*> [#uses=0]
-@"\01LC28" = external constant [15 x i8]		; <[15 x i8]*> [#uses=0]
-@"\01LC29" = external constant [20 x i8]		; <[20 x i8]*> [#uses=0]
-@"\01LC30" = external constant [41 x i8]		; <[41 x i8]*> [#uses=0]
-@llvm.global_ctors = external global [1 x { i32, void ()* }]		; <[1 x { i32, void ()* }]*> [#uses=0]
+@_ZN9HingeNode7DEG2RADE = external constant double, align 8		
+@"\01LC" = external constant [8 x i8]		
+@"\01LC1" = external constant [7 x i8]		
+@"\01LC2" = external constant [10 x i8]		
+@"\01LC3" = external constant [5 x i8]		
+@"\01LC4" = external constant [8 x i8]		
+@"\01LC5" = external constant [8 x i8]		
+@"\01LC6" = external constant [7 x i8]		
+@"\01LC7" = external constant [8 x i8]		
+@"\01LC8" = external constant [3 x i8]		
+@"\01LC9" = external constant [3 x i8]		
+@"\01LC10" = external constant [3 x i8]		
+@_ZStL8__ioinit = external global %"struct.CDS::DefaultAlloc"		
+@__dso_handle = external global i8*		
+@_ZTIN9HingeNode17VirtualBaseMethodE = external constant %struct.__class_type_info_pseudo		
+@_ZTVN10__cxxabiv117__class_type_infoE = external constant [0 x i32 (...)*]		
+@_ZTSN9HingeNode17VirtualBaseMethodE = external constant [32 x i8], align 4		
+@_ZTV9HingeNode = external constant [31 x i32 (...)*], align 32		
+@_ZTI9HingeNode = external constant %struct.__class_type_info_pseudo		
+@_ZTS9HingeNode = external constant [11 x i8]		
+@_ZTV11HNodeOrigin = external constant [31 x i32 (...)*], align 32		
+@_ZTI11HNodeOrigin = external constant %struct.__si_class_type_info_pseudo		
+@_ZTVN10__cxxabiv120__si_class_type_infoE = external constant [0 x i32 (...)*]		
+@_ZTS11HNodeOrigin = external constant [14 x i8]		
+@_ZTV13HingeNodeSpecILi1EE = external constant [33 x i32 (...)*], align 32		
+@_ZTI13HingeNodeSpecILi1EE = external constant %struct.__si_class_type_info_pseudo		
+@_ZTS13HingeNodeSpecILi1EE = external constant [22 x i8]		
+@_ZTV13HingeNodeSpecILi3EE = external constant [33 x i32 (...)*], align 32		
+@_ZTI13HingeNodeSpecILi3EE = external constant %struct.__si_class_type_info_pseudo		
+@_ZTS13HingeNodeSpecILi3EE = external constant [22 x i8]		
+@_ZTV13HingeNodeSpecILi2EE = external constant [33 x i32 (...)*], align 32		
+@_ZTI13HingeNodeSpecILi2EE = external constant %struct.__si_class_type_info_pseudo		
+@_ZTS13HingeNodeSpecILi2EE = external constant [22 x i8]		
+@_ZTV13HingeNodeSpecILi6EE = external constant [33 x i32 (...)*], align 32		
+@_ZTI13HingeNodeSpecILi6EE = external constant %struct.__si_class_type_info_pseudo		
+@_ZTS13HingeNodeSpecILi6EE = external constant [22 x i8]		
+@_ZTV13HingeNodeSpecILi5EE = external constant [33 x i32 (...)*], align 32		
+@_ZTI13HingeNodeSpecILi5EE = external constant %struct.__si_class_type_info_pseudo		
+@_ZTS13HingeNodeSpecILi5EE = external constant [22 x i8]		
+@_ZSt4cout = external global %"struct.std::basic_ostream<char,std::char_traits<char> >"		
+@"\01LC11" = external constant [10 x i8]		
+@"\01LC12" = external constant [8 x i8]		
+@"\01LC13" = external constant [10 x i8]		
+@_ZSt4cerr = external global %"struct.std::basic_ostream<char,std::char_traits<char> >"		
+@"\01LC14" = external constant [29 x i8]		
+@"\01LC15" = external constant [11 x i8]		
+@"\01LC16" = external constant [13 x i8]		
+@"\01LC17" = external constant [21 x i8]		
+@"\01LC18" = external constant [8 x i8]		
+@"\01LC19" = external constant [4 x i8]		
+@"\01LC20" = external constant [42 x i8]		
+@_ZTIN16InternalDynamics9ExceptionE = external constant %struct.__class_type_info_pseudo		
+@_ZTSN16InternalDynamics9ExceptionE = external constant [31 x i8], align 4		
+@_ZTIN3CDS13SingularErrorE = external constant %struct.__si_class_type_info_pseudo		
+@_ZTSN3CDS13SingularErrorE = external constant [22 x i8]		
+@_ZTIN3CDS9exceptionE = external constant %struct.__class_type_info_pseudo		
+@_ZTSN3CDS9exceptionE = external constant [17 x i8]		
+@_ZTV12HNodeTorsion = external constant [33 x i32 (...)*], align 32		
+@_ZTI12HNodeTorsion = external constant %struct.__si_class_type_info_pseudo		
+@_ZTS12HNodeTorsion = external constant [15 x i8]		
+@_ZTV12HNodeRotate3 = external constant [33 x i32 (...)*], align 32		
+@_ZTI12HNodeRotate3 = external constant %struct.__si_class_type_info_pseudo		
+@_ZTS12HNodeRotate3 = external constant [15 x i8]		
+@_ZTV12HNodeRotate2 = external constant [33 x i32 (...)*], align 32		
+@_ZTI12HNodeRotate2 = external constant %struct.__si_class_type_info_pseudo		
+@_ZTS12HNodeRotate2 = external constant [15 x i8]		
+@_ZTV21HNodeTranslateRotate3 = external constant [33 x i32 (...)*], align 32		
+@_ZTI21HNodeTranslateRotate3 = external constant %struct.__si_class_type_info_pseudo		
+@_ZTS21HNodeTranslateRotate3 = external constant [24 x i8]		
+@_ZTV21HNodeTranslateRotate2 = external constant [33 x i32 (...)*], align 32		
+@_ZTI21HNodeTranslateRotate2 = external constant %struct.__si_class_type_info_pseudo		
+@_ZTS21HNodeTranslateRotate2 = external constant [24 x i8]		
+@_ZTV14HNodeTranslate = external constant [33 x i32 (...)*], align 32		
+@_ZTI14HNodeTranslate = external constant %struct.__si_class_type_info_pseudo		
+@_ZTS14HNodeTranslate = external constant [17 x i8]		
+@"\01LC21" = external constant [31 x i8]		
+@"\01LC22" = external constant [6 x i8]		
+@"\01LC23" = external constant [12 x i8]		
+@"\01LC24" = external constant [5 x i8]		
+@"\01LC25" = external constant [7 x i8]		
+@"\01LC26" = external constant [7 x i8]		
+@"\01LC27" = external constant [43 x i8]		
+@"\01LC28" = external constant [15 x i8]		
+@"\01LC29" = external constant [20 x i8]		
+@"\01LC30" = external constant [41 x i8]		
+@llvm.global_ctors = external global [1 x { i32, void ()* }]		
 
 declare void @_GLOBAL__I__ZN9HingeNode7DEG2RADE() section "__TEXT,__StaticInit,regular,pure_instructions"
 
@@ -825,72 +825,72 @@ declare void @_ZN11MatrixTools9transposeI11FixedMatrixIdLi6ELi6ELi0ELi0EEEENT_13
 declare void @_ZN21HNodeTranslateRotate311toCartesianEv(%struct.HNodeTranslateRotate3*)
 
 define linkonce void @_ZN21HNodeTranslateRotate36setVelERK9CDSVectorIdLi1EN3CDS12DefaultAllocEE(%struct.HNodeTranslateRotate3* %this, %"struct.CDSVector<double,0,CDS::DefaultAlloc>"* %velv) {
-	%1 = getelementptr double, double* null, i32 -1		; <double*> [#uses=1]
-	%2 = load double, double* %1, align 8		; <double> [#uses=1]
-	%3 = load double, double* null, align 8		; <double> [#uses=2]
-	%4 = load double, double* null, align 8		; <double> [#uses=2]
-	%5 = load double, double* null, align 8		; <double> [#uses=3]
-	%6 = getelementptr %struct.HNodeTranslateRotate3, %struct.HNodeTranslateRotate3* %this, i32 0, i32 2, i32 0, i32 0, i32 0, i32 0		; <double*> [#uses=0]
-	%7 = getelementptr %struct.HNodeTranslateRotate3, %struct.HNodeTranslateRotate3* %this, i32 0, i32 2, i32 0, i32 0, i32 0, i32 1		; <double*> [#uses=0]
-	%8 = getelementptr %struct.HNodeTranslateRotate3, %struct.HNodeTranslateRotate3* %this, i32 0, i32 2, i32 0, i32 0, i32 0, i32 2		; <double*> [#uses=0]
-	%9 = getelementptr %struct.HNodeTranslateRotate3, %struct.HNodeTranslateRotate3* %this, i32 0, i32 2, i32 0, i32 0, i32 0, i32 3		; <double*> [#uses=0]
-	%10 = load double, double* null, align 8		; <double> [#uses=2]
-	%11 = fsub double -0.000000e+00, %10		; <double> [#uses=1]
-	%12 = load double, double* null, align 8		; <double> [#uses=2]
-	%13 = getelementptr %struct.HNodeTranslateRotate3, %struct.HNodeTranslateRotate3* %this, i32 0, i32 1, i32 0, i32 0, i32 0, i32 3		; <double*> [#uses=1]
-	%14 = load double, double* %13, align 8		; <double> [#uses=2]
-	%15 = fsub double -0.000000e+00, %14		; <double> [#uses=1]
-	%16 = getelementptr %struct.HNodeTranslateRotate3, %struct.HNodeTranslateRotate3* %this, i32 0, i32 1, i32 0, i32 0, i32 0, i32 2		; <double*> [#uses=1]
-	%17 = load double, double* %16, align 8		; <double> [#uses=2]
-	%18 = fsub double -0.000000e+00, %17		; <double> [#uses=1]
-	%19 = getelementptr %"struct.FixedMatrix<double,2,6,0,0>", %"struct.FixedMatrix<double,2,6,0,0>"* null, i32 0, i32 0, i32 0, i32 0		; <double*> [#uses=0]
-	%20 = getelementptr %"struct.FixedMatrix<double,2,6,0,0>", %"struct.FixedMatrix<double,2,6,0,0>"* null, i32 0, i32 0, i32 0, i32 3		; <double*> [#uses=0]
-	%21 = getelementptr %"struct.FixedMatrix<double,2,6,0,0>", %"struct.FixedMatrix<double,2,6,0,0>"* null, i32 0, i32 0, i32 0, i32 6		; <double*> [#uses=0]
-	%22 = getelementptr %"struct.FixedMatrix<double,2,6,0,0>", %"struct.FixedMatrix<double,2,6,0,0>"* null, i32 0, i32 0, i32 0, i32 9		; <double*> [#uses=0]
-	%23 = getelementptr %"struct.FixedMatrix<double,2,6,0,0>", %"struct.FixedMatrix<double,2,6,0,0>"* null, i32 0, i32 0, i32 0, i32 1		; <double*> [#uses=0]
-	%24 = getelementptr %"struct.FixedMatrix<double,2,6,0,0>", %"struct.FixedMatrix<double,2,6,0,0>"* null, i32 0, i32 0, i32 0, i32 4		; <double*> [#uses=0]
-	%25 = getelementptr %"struct.FixedMatrix<double,2,6,0,0>", %"struct.FixedMatrix<double,2,6,0,0>"* null, i32 0, i32 0, i32 0, i32 7		; <double*> [#uses=0]
-	%26 = getelementptr %"struct.FixedMatrix<double,2,6,0,0>", %"struct.FixedMatrix<double,2,6,0,0>"* null, i32 0, i32 0, i32 0, i32 10		; <double*> [#uses=0]
-	%27 = getelementptr %"struct.FixedMatrix<double,2,6,0,0>", %"struct.FixedMatrix<double,2,6,0,0>"* null, i32 0, i32 0, i32 0, i32 2		; <double*> [#uses=0]
-	%28 = getelementptr %"struct.FixedMatrix<double,2,6,0,0>", %"struct.FixedMatrix<double,2,6,0,0>"* null, i32 0, i32 0, i32 0, i32 5		; <double*> [#uses=0]
-	%29 = getelementptr %"struct.FixedMatrix<double,2,6,0,0>", %"struct.FixedMatrix<double,2,6,0,0>"* null, i32 0, i32 0, i32 0, i32 8		; <double*> [#uses=0]
-	%30 = getelementptr %"struct.FixedMatrix<double,2,6,0,0>", %"struct.FixedMatrix<double,2,6,0,0>"* null, i32 0, i32 0, i32 0, i32 11		; <double*> [#uses=0]
-	%31 = getelementptr %"struct.FixedMatrix<double,1,3,0,0>", %"struct.FixedMatrix<double,1,3,0,0>"* null, i32 0, i32 0, i32 0, i32 0		; <double*> [#uses=0]
-	%32 = getelementptr %"struct.FixedMatrix<double,1,3,0,0>", %"struct.FixedMatrix<double,1,3,0,0>"* null, i32 0, i32 0, i32 0, i32 1		; <double*> [#uses=1]
-	%33 = getelementptr %"struct.FixedMatrix<double,1,3,0,0>", %"struct.FixedMatrix<double,1,3,0,0>"* null, i32 0, i32 0, i32 0, i32 2		; <double*> [#uses=1]
-	%34 = fmul double %17, %5		; <double> [#uses=1]
-	%35 = fadd double 0.000000e+00, %34		; <double> [#uses=1]
-	%36 = fadd double 0.000000e+00, 0.000000e+00		; <double> [#uses=1]
-	%37 = fmul double %14, %3		; <double> [#uses=1]
-	%38 = fadd double %36, %37		; <double> [#uses=1]
-	%39 = fmul double %12, %4		; <double> [#uses=1]
-	%40 = fadd double %38, %39		; <double> [#uses=1]
-	%41 = fmul double %5, %11		; <double> [#uses=1]
-	%42 = fadd double %40, %41		; <double> [#uses=2]
+	%1 = getelementptr double, double* null, i32 -1		
+	%2 = load double, double* %1, align 8		
+	%3 = load double, double* null, align 8		
+	%4 = load double, double* null, align 8		
+	%5 = load double, double* null, align 8		
+	%6 = getelementptr %struct.HNodeTranslateRotate3, %struct.HNodeTranslateRotate3* %this, i32 0, i32 2, i32 0, i32 0, i32 0, i32 0		
+	%7 = getelementptr %struct.HNodeTranslateRotate3, %struct.HNodeTranslateRotate3* %this, i32 0, i32 2, i32 0, i32 0, i32 0, i32 1		
+	%8 = getelementptr %struct.HNodeTranslateRotate3, %struct.HNodeTranslateRotate3* %this, i32 0, i32 2, i32 0, i32 0, i32 0, i32 2		
+	%9 = getelementptr %struct.HNodeTranslateRotate3, %struct.HNodeTranslateRotate3* %this, i32 0, i32 2, i32 0, i32 0, i32 0, i32 3		
+	%10 = load double, double* null, align 8		
+	%11 = fsub double -0.000000e+00, %10		
+	%12 = load double, double* null, align 8		
+	%13 = getelementptr %struct.HNodeTranslateRotate3, %struct.HNodeTranslateRotate3* %this, i32 0, i32 1, i32 0, i32 0, i32 0, i32 3		
+	%14 = load double, double* %13, align 8		
+	%15 = fsub double -0.000000e+00, %14		
+	%16 = getelementptr %struct.HNodeTranslateRotate3, %struct.HNodeTranslateRotate3* %this, i32 0, i32 1, i32 0, i32 0, i32 0, i32 2		
+	%17 = load double, double* %16, align 8		
+	%18 = fsub double -0.000000e+00, %17		
+	%19 = getelementptr %"struct.FixedMatrix<double,2,6,0,0>", %"struct.FixedMatrix<double,2,6,0,0>"* null, i32 0, i32 0, i32 0, i32 0		
+	%20 = getelementptr %"struct.FixedMatrix<double,2,6,0,0>", %"struct.FixedMatrix<double,2,6,0,0>"* null, i32 0, i32 0, i32 0, i32 3		
+	%21 = getelementptr %"struct.FixedMatrix<double,2,6,0,0>", %"struct.FixedMatrix<double,2,6,0,0>"* null, i32 0, i32 0, i32 0, i32 6		
+	%22 = getelementptr %"struct.FixedMatrix<double,2,6,0,0>", %"struct.FixedMatrix<double,2,6,0,0>"* null, i32 0, i32 0, i32 0, i32 9		
+	%23 = getelementptr %"struct.FixedMatrix<double,2,6,0,0>", %"struct.FixedMatrix<double,2,6,0,0>"* null, i32 0, i32 0, i32 0, i32 1		
+	%24 = getelementptr %"struct.FixedMatrix<double,2,6,0,0>", %"struct.FixedMatrix<double,2,6,0,0>"* null, i32 0, i32 0, i32 0, i32 4		
+	%25 = getelementptr %"struct.FixedMatrix<double,2,6,0,0>", %"struct.FixedMatrix<double,2,6,0,0>"* null, i32 0, i32 0, i32 0, i32 7		
+	%26 = getelementptr %"struct.FixedMatrix<double,2,6,0,0>", %"struct.FixedMatrix<double,2,6,0,0>"* null, i32 0, i32 0, i32 0, i32 10		
+	%27 = getelementptr %"struct.FixedMatrix<double,2,6,0,0>", %"struct.FixedMatrix<double,2,6,0,0>"* null, i32 0, i32 0, i32 0, i32 2		
+	%28 = getelementptr %"struct.FixedMatrix<double,2,6,0,0>", %"struct.FixedMatrix<double,2,6,0,0>"* null, i32 0, i32 0, i32 0, i32 5		
+	%29 = getelementptr %"struct.FixedMatrix<double,2,6,0,0>", %"struct.FixedMatrix<double,2,6,0,0>"* null, i32 0, i32 0, i32 0, i32 8		
+	%30 = getelementptr %"struct.FixedMatrix<double,2,6,0,0>", %"struct.FixedMatrix<double,2,6,0,0>"* null, i32 0, i32 0, i32 0, i32 11		
+	%31 = getelementptr %"struct.FixedMatrix<double,1,3,0,0>", %"struct.FixedMatrix<double,1,3,0,0>"* null, i32 0, i32 0, i32 0, i32 0		
+	%32 = getelementptr %"struct.FixedMatrix<double,1,3,0,0>", %"struct.FixedMatrix<double,1,3,0,0>"* null, i32 0, i32 0, i32 0, i32 1		
+	%33 = getelementptr %"struct.FixedMatrix<double,1,3,0,0>", %"struct.FixedMatrix<double,1,3,0,0>"* null, i32 0, i32 0, i32 0, i32 2		
+	%34 = fmul double %17, %5		
+	%35 = fadd double 0.000000e+00, %34		
+	%36 = fadd double 0.000000e+00, 0.000000e+00		
+	%37 = fmul double %14, %3		
+	%38 = fadd double %36, %37		
+	%39 = fmul double %12, %4		
+	%40 = fadd double %38, %39		
+	%41 = fmul double %5, %11		
+	%42 = fadd double %40, %41		
 	store double %42, double* %32, align 8
-	%43 = fmul double %2, %15		; <double> [#uses=1]
-	%44 = fadd double %43, 0.000000e+00		; <double> [#uses=1]
-	%45 = fmul double %3, %18		; <double> [#uses=1]
-	%46 = fadd double %44, %45		; <double> [#uses=1]
-	%47 = fmul double %10, %4		; <double> [#uses=1]
-	%48 = fadd double %46, %47		; <double> [#uses=1]
-	%49 = fmul double %12, %5		; <double> [#uses=1]
-	%50 = fadd double %48, %49		; <double> [#uses=2]
+	%43 = fmul double %2, %15		
+	%44 = fadd double %43, 0.000000e+00		
+	%45 = fmul double %3, %18		
+	%46 = fadd double %44, %45		
+	%47 = fmul double %10, %4		
+	%48 = fadd double %46, %47		
+	%49 = fmul double %12, %5		
+	%50 = fadd double %48, %49		
 	store double %50, double* %33, align 8
-	%51 = fmul double %35, 2.000000e+00		; <double> [#uses=1]
-	%52 = fmul double %42, 2.000000e+00		; <double> [#uses=1]
-	%53 = fmul double %50, 2.000000e+00		; <double> [#uses=1]
-	%54 = getelementptr %struct.HNodeTranslateRotate3, %struct.HNodeTranslateRotate3* %this, i32 0, i32 0, i32 10, i32 0, i32 0, i32 0		; <double*> [#uses=1]
+	%51 = fmul double %35, 2.000000e+00		
+	%52 = fmul double %42, 2.000000e+00		
+	%53 = fmul double %50, 2.000000e+00		
+	%54 = getelementptr %struct.HNodeTranslateRotate3, %struct.HNodeTranslateRotate3* %this, i32 0, i32 0, i32 10, i32 0, i32 0, i32 0		
 	store double %51, double* %54, align 8
-	%55 = getelementptr %struct.HNodeTranslateRotate3, %struct.HNodeTranslateRotate3* %this, i32 0, i32 0, i32 10, i32 0, i32 0, i32 1		; <double*> [#uses=1]
+	%55 = getelementptr %struct.HNodeTranslateRotate3, %struct.HNodeTranslateRotate3* %this, i32 0, i32 0, i32 10, i32 0, i32 0, i32 1		
 	store double %52, double* %55, align 8
-	%56 = getelementptr %struct.HNodeTranslateRotate3, %struct.HNodeTranslateRotate3* %this, i32 0, i32 0, i32 10, i32 0, i32 0, i32 2		; <double*> [#uses=1]
+	%56 = getelementptr %struct.HNodeTranslateRotate3, %struct.HNodeTranslateRotate3* %this, i32 0, i32 0, i32 10, i32 0, i32 0, i32 2		
 	store double %53, double* %56, align 8
-	%57 = getelementptr %"struct.SubVector<CDSVector<double, 1, CDS::DefaultAlloc> >", %"struct.SubVector<CDSVector<double, 1, CDS::DefaultAlloc> >"* null, i32 0, i32 0		; <%"struct.CDSVector<double,0,CDS::DefaultAlloc>"**> [#uses=1]
+	%57 = getelementptr %"struct.SubVector<CDSVector<double, 1, CDS::DefaultAlloc> >", %"struct.SubVector<CDSVector<double, 1, CDS::DefaultAlloc> >"* null, i32 0, i32 0		
 	store %"struct.CDSVector<double,0,CDS::DefaultAlloc>"* %velv, %"struct.CDSVector<double,0,CDS::DefaultAlloc>"** %57, align 8
-	%58 = getelementptr %"struct.SubVector<CDSVector<double, 1, CDS::DefaultAlloc> >", %"struct.SubVector<CDSVector<double, 1, CDS::DefaultAlloc> >"* null, i32 0, i32 1		; <i32*> [#uses=1]
+	%58 = getelementptr %"struct.SubVector<CDSVector<double, 1, CDS::DefaultAlloc> >", %"struct.SubVector<CDSVector<double, 1, CDS::DefaultAlloc> >"* null, i32 0, i32 1		
 	store i32 4, i32* %58, align 4
-	%59 = getelementptr %"struct.SubVector<CDSVector<double, 1, CDS::DefaultAlloc> >", %"struct.SubVector<CDSVector<double, 1, CDS::DefaultAlloc> >"* null, i32 0, i32 2		; <i32*> [#uses=1]
+	%59 = getelementptr %"struct.SubVector<CDSVector<double, 1, CDS::DefaultAlloc> >", %"struct.SubVector<CDSVector<double, 1, CDS::DefaultAlloc> >"* null, i32 0, i32 2		
 	store i32 3, i32* %59, align 8
 	unreachable
 }

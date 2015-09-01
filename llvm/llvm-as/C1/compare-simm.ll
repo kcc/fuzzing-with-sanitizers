@@ -1,8 +1,8 @@
-; RUN: llc < %s -march=ppc32 -mtriple=powerpc-apple-darwin8 | FileCheck %s
+
 
 define i32 @test(i32 %x) nounwind {
-; CHECK-LABEL: @test
-; CHECK: cmpwi r3, -1
+
+
 
         %c = icmp eq i32 %x, -1
 	br i1 %c, label %T, label %F

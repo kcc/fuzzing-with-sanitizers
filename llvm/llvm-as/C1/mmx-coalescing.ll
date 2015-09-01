@@ -1,18 +1,18 @@
-; RUN: llc < %s -mtriple=x86_64-unknown-unknown -mattr=+mmx,+sse2 | FileCheck %s
+
 
 %SA = type <{ %union.anon, i32, [4 x i8], i8*, i8*, i8*, i32, [4 x i8] }>
 %union.anon = type { <1 x i64> }
 
-; Check that extra movd (copy) instructions aren't generated.
+
 
 define i32 @test(%SA* %pSA, i16* %A, i32 %B, i32 %C, i32 %D, i8* %E) {
 entry:
-; CHECK-LABEL: test
-; CHECK:       # BB#0:
-; CHECK-NEXT:  pshufw
-; CHECK-NEXT:  movd
-; CHECK-NOT:  movd
-; CHECK-NEXT:  testl
+
+
+
+
+
+
   %shl = shl i32 1, %B
   %shl1 = shl i32 %C, %B
   %shl2 = shl i32 1, %D
@@ -36,9 +36,9 @@ entry:
   br i1 %cmp, label %if.A, label %if.B
 
 if.A:
-; CHECK: %if.A
-; CHECK-NEXT:  movd
-; CHECK-NEXT:  psllq
+
+
+
   %pa = phi <1 x i64> [ %v8, %entry ], [ %vx, %if.C ]
   %v17 = extractelement <1 x i64> %pa, i32 0
   %v18 = bitcast i64 %v17 to x86_mmx
@@ -64,9 +64,9 @@ if.C:
   br i1 %cmp2, label %if.A, label %merge
 
 merge:
-; CHECK: %merge
-; CHECK-NOT:  movd
-; CHECK-NEXT:  pshufw
+
+
+
   %vy = phi <1 x i64> [ %v21, %if.A ], [ %vx, %if.C ]
   %v130 = bitcast <1 x i64> %vy to <4 x i16>
   %v131 = bitcast <4 x i16> %v130 to x86_mmx

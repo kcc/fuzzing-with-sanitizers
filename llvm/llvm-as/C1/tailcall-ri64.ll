@@ -1,13 +1,13 @@
-; RUN: llc < %s -mtriple=x86_64-linux | FileCheck %s -check-prefix=AMD64
-; RUN: llc < %s -mtriple=x86_64-win32 | FileCheck %s -check-prefix=WIN64
-; PR8743
-; TAILJMPri64 should not receive "callee-saved" registers beyond epilogue.
 
-; AMD64: jmpq
-; AMD64-NOT: %{{e[a-z]|rbx|rbp|r10|r12|r13|r14|r15}}
 
-; WIN64: jmpq
-; WIN64-NOT: %{{e[a-z]|rbx|rsi|rdi|rbp|r12|r13|r14|r15}}
+
+
+
+
+
+
+
+
 
 %class = type { [8 x i8] }
 %vt = type { i32 (...)** }

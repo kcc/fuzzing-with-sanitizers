@@ -1,4 +1,4 @@
-; RUN: opt -loop-vectorize -mtriple=thumbv7s-apple-ios6.0.0 -S < %s | FileCheck %s
+
 
 target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:32:64-v128:32:128-a0:0:32-n32-S32"
 
@@ -11,12 +11,12 @@ target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:64-
 @g_ = global i8 0, align 4
 @b_ = global i8 0, align 4
 
-; We don't want to vectorize most loops containing gathers because they are
-; expensive. This function represents a point where vectorization starts to
-; become beneficial.
-; Make sure we are conservative and don't vectorize it.
-; CHECK-NOT: <2 x float>
-; CHECK-NOT: <4 x float>
+
+
+
+
+
+
 
 define void @_Z4testmm(i32 %size, i32 %offset) {
 entry:

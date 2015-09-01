@@ -1,9 +1,9 @@
-;RUN: llc -march=hexagon < %s | FileCheck %s
 
-; Test that a hardware loop is not generaetd due to a potential
-; underflow.
 
-; CHECK-NOT: loop0
+
+
+
+
 
 define i32 @main() #0 {
 entry:

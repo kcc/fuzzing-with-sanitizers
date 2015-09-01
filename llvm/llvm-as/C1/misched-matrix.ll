@@ -1,97 +1,97 @@
-; RUN: llc < %s -march=x86-64 -mcpu=core2 -pre-RA-sched=source -enable-misched \
-; RUN:          -misched-topdown -verify-machineinstrs \
-; RUN:     | FileCheck %s -check-prefix=TOPDOWN
-; RUN: llc < %s -march=x86-64 -mcpu=core2 -pre-RA-sched=source -enable-misched \
-; RUN:          -misched=ilpmin -verify-machineinstrs \
-; RUN:     | FileCheck %s -check-prefix=ILPMIN
-; RUN: llc < %s -march=x86-64 -mcpu=core2 -pre-RA-sched=source -enable-misched \
-; RUN:          -misched=ilpmax -verify-machineinstrs \
-; RUN:     | FileCheck %s -check-prefix=ILPMAX
-;
-; Verify that the MI scheduler minimizes register pressure for a
-; uniform set of bottom-up subtrees (unrolled matrix multiply).
-;
-; For current top-down heuristics, ensure that some folded imulls have
-; been reordered with the stores. This tests the scheduler's cheap
-; alias analysis ability (that doesn't require any AliasAnalysis pass).
-;
-; TOPDOWN-LABEL: %for.body
-; TOPDOWN: movl %{{.*}}, (
-; TOPDOWN: imull {{[0-9]*}}(
-; TOPDOWN: movl %{{.*}}, 4(
-; TOPDOWN: imull {{[0-9]*}}(
-; TOPDOWN: movl %{{.*}}, 8(
-; TOPDOWN: movl %{{.*}}, 12(
-; TOPDOWN-LABEL: %for.end
-;
-; For -misched=ilpmin, verify that each expression subtree is
-; scheduled independently, and that the imull/adds are interleaved.
-;
-; ILPMIN-LABEL: %for.body
-; ILPMIN: movl %{{.*}}, (
-; ILPMIN: imull
-; ILPMIN: imull
-; ILPMIN: addl
-; ILPMIN: imull
-; ILPMIN: addl
-; ILPMIN: imull
-; ILPMIN: addl
-; ILPMIN: movl %{{.*}}, 4(
-; ILPMIN: imull
-; ILPMIN: imull
-; ILPMIN: addl
-; ILPMIN: imull
-; ILPMIN: addl
-; ILPMIN: imull
-; ILPMIN: addl
-; ILPMIN: movl %{{.*}}, 8(
-; ILPMIN: imull
-; ILPMIN: imull
-; ILPMIN: addl
-; ILPMIN: imull
-; ILPMIN: addl
-; ILPMIN: imull
-; ILPMIN: addl
-; ILPMIN: movl %{{.*}}, 12(
-; ILPMIN-LABEL: %for.end
-;
-; For -misched=ilpmax, verify that each expression subtree is
-; scheduled independently, and that the imull/adds are clustered.
-;
-; ILPMAX-LABEL: %for.body
-; ILPMAX: movl %{{.*}}, (
-; ILPMAX: imull
-; ILPMAX: imull
-; ILPMAX: imull
-; ILPMAX: imull
-; ILPMAX: addl
-; ILPMAX: addl
-; ILPMAX: addl
-; ILPMAX: movl %{{.*}}, 4(
-; ILPMAX: imull
-; ILPMAX: imull
-; ILPMAX: imull
-; ILPMAX: imull
-; ILPMAX: addl
-; ILPMAX: addl
-; ILPMAX: addl
-; ILPMAX: movl %{{.*}}, 8(
-; ILPMAX: imull
-; ILPMAX: imull
-; ILPMAX: imull
-; ILPMAX: imull
-; ILPMAX: addl
-; ILPMAX: addl
-; ILPMAX: addl
-; ILPMAX: movl %{{.*}}, 12(
-; ILPMAX-LABEL: %for.end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @mmult([4 x i32]* noalias nocapture %m1, [4 x i32]* noalias nocapture %m2,
 [4 x i32]* noalias nocapture %m3) nounwind uwtable ssp {
 entry:
   br label %for.body
 
-for.body:                              ; preds = %for.body, %entry
+for.body:                              
   %indvars.iv = phi i64 [ 0, %entry ], [ %indvars.iv.next, %for.body ]
   %arrayidx8 = getelementptr inbounds [4 x i32], [4 x i32]* %m1, i64 %indvars.iv, i64 0
   %tmp = load i32, i32* %arrayidx8, align 4
@@ -186,6 +186,6 @@ for.body:                              ; preds = %for.body, %entry
   %exitcond = icmp eq i32 %lftr.wideiv, 4
   br i1 %exitcond, label %for.end, label %for.body
 
-for.end:                                        ; preds = %for.body
+for.end:                                        
   ret void
 }

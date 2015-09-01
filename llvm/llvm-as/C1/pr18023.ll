@@ -1,11 +1,11 @@
-; RUN: llc < %s -mtriple x86_64-apple-macosx10.9.0 | FileCheck %s
-; PR18023
 
-; CHECK: movabsq $4294967296, %rcx
-; CHECK: movq  %rcx, (%rax)
-; CHECK: movl  $1, 4(%rax)
-; CHECK: movl  $0, 4(%rax)
-; CHECK: movq  $1, 4(%rax)
+
+
+
+
+
+
+
 
 @c = common global i32 0, align 4
 @a = common global [3 x i32] zeroinitializer, align 4

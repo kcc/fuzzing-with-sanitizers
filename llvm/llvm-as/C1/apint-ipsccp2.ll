@@ -1,5 +1,5 @@
-; RUN: opt < %s -ipsccp -S | grep -v "ret i101 0" | \
-; RUN:    grep -v "ret i101 undef" | not grep ret
+
+
 
 
 define internal i101 @bar(i101 %A) {
@@ -8,7 +8,7 @@ define internal i101 @bar(i101 %A) {
 T:
 	%B = call i101 @bar(i101 0)
 	ret i101 0
-F:      ; unreachable
+F:      
 	%C = call i101 @bar(i101 1)
 	ret i101 %C
 }

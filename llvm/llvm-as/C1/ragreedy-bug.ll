@@ -1,18 +1,18 @@
-; RUN: llc < %s -mtriple=x86_64-apple-macosx -regalloc=greedy | FileCheck %s
 
-; This testing case is reduced from 197.parser prune_match function.
-; We make sure register copies are not generated on isupper.exit blocks.
 
-; CHECK: isupper.exit
-; CHECK-NEXT: in Loop
-; CHECK-NEXT: testl
-; CHECK-NEXT: jne
-; CHECK: isupper.exit
-; CHECK-NEXT: in Loop
-; CHECK-NEXT: testl
-; CHECK-NEXT: je
-; CHECK: maskrune
-; CHECK: maskrune
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %struct.List_o_links_struct = type { i32, i32, i32, %struct.List_o_links_struct* }
 %struct.Connector_struct = type { i16, i16, i8, i8, %struct.Connector_struct*, i8* }

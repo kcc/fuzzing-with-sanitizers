@@ -1,31 +1,31 @@
-; RUN: llc -mcpu=corei7 -mtriple=x86_64-linux < %s | FileCheck %s -check-prefix=CHECK
-; RUN: llc -mcpu=corei7 -mtriple=x86_64-linux -outline-optional-branches < %s | FileCheck %s -check-prefix=CHECK-OUTLINE
+
+
 
 define void @foo(i32 %t1, i32 %t2, i32 %t3) {
-; Test that we lift the call to 'c' up to immediately follow the call to 'b'
-; when we disable the cfg conflict check.
-;
-; CHECK-LABEL: foo:
-; CHECK: callq a
-; CHECK: callq a
-; CHECK: callq a
-; CHECK: callq a
-; CHECK: callq b
-; CHECK: callq c
-; CHECK: callq d
-; CHECK: callq e
-; CHECK: callq f
-;
-; CHECK-OUTLINE-LABEL: foo:
-; CHECK-OUTLINE: callq b
-; CHECK-OUTLINE: callq c
-; CHECK-OUTLINE: callq d
-; CHECK-OUTLINE: callq e
-; CHECK-OUTLINE: callq f
-; CHECK-OUTLINE: callq a
-; CHECK-OUTLINE: callq a
-; CHECK-OUTLINE: callq a
-; CHECK-OUTLINE: callq a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 entry:
   %cmp = icmp eq i32 %t1, 0

@@ -1,45 +1,45 @@
-; RUN: llc %s -o /dev/null
-; PR 2613.
+
+
 
 %struct.__class_type_info_pseudo = type { %struct.__type_info_pseudo }
 %struct.__type_info_pseudo = type { i8*, i8* }
 %struct.test1 = type { i32 (...)** }
 
-@_ZTV5test1 = weak_odr constant [4 x i32 (...)*] [i32 (...)* null, i32 (...)* bitcast (%struct.__class_type_info_pseudo* @_ZTI5test1 to i32 (...)*), i32 (...)* bitcast (void (%struct.test1*)* @_ZN5test1D1Ev to i32 (...)*), i32 (...)* bitcast (void (%struct.test1*)* @_ZN5test1D0Ev to i32 (...)*)], align 32 ; <[4 x i32 (...)*]*> [#uses=1]
-@_ZTI5test1 = weak_odr constant %struct.__class_type_info_pseudo { %struct.__type_info_pseudo { i8* inttoptr (i64 add (i64 ptrtoint ([0 x i32 (...)*]* @_ZTVN10__cxxabiv117__class_type_infoE to i64), i64 16) to i8*), i8* getelementptr inbounds ([7 x i8], [7 x i8]* @_ZTS5test1, i64 0, i64 0) } }, align 16 ; <%struct.__class_type_info_pseudo*> [#uses=1]
-@_ZTVN10__cxxabiv117__class_type_infoE = external constant [0 x i32 (...)*] ; <[0 x i32 (...)*]*> [#uses=1]
-@_ZTS5test1 = weak_odr constant [7 x i8] c"5test1\00" ; <[7 x i8]*> [#uses=2]
+@_ZTV5test1 = weak_odr constant [4 x i32 (...)*] [i32 (...)* null, i32 (...)* bitcast (%struct.__class_type_info_pseudo* @_ZTI5test1 to i32 (...)*), i32 (...)* bitcast (void (%struct.test1*)* @_ZN5test1D1Ev to i32 (...)*), i32 (...)* bitcast (void (%struct.test1*)* @_ZN5test1D0Ev to i32 (...)*)], align 32 
+@_ZTI5test1 = weak_odr constant %struct.__class_type_info_pseudo { %struct.__type_info_pseudo { i8* inttoptr (i64 add (i64 ptrtoint ([0 x i32 (...)*]* @_ZTVN10__cxxabiv117__class_type_infoE to i64), i64 16) to i8*), i8* getelementptr inbounds ([7 x i8], [7 x i8]* @_ZTS5test1, i64 0, i64 0) } }, align 16 
+@_ZTVN10__cxxabiv117__class_type_infoE = external constant [0 x i32 (...)*] 
+@_ZTS5test1 = weak_odr constant [7 x i8] c"5test1\00" 
 
 define i32 @main() nounwind ssp {
 entry:
-  %retval = alloca i32                            ; <i32*> [#uses=2]
-  %0 = alloca i32                                 ; <i32*> [#uses=2]
-  %tst = alloca %struct.test1                     ; <%struct.test1*> [#uses=1]
-  %"alloca point" = bitcast i32 0 to i32          ; <i32> [#uses=0]
+  %retval = alloca i32                            
+  %0 = alloca i32                                 
+  %tst = alloca %struct.test1                     
+  %"alloca point" = bitcast i32 0 to i32          
   call void @llvm.dbg.declare(metadata %struct.test1* %tst, metadata !0, metadata !DIExpression()), !dbg !21
   call void @_ZN5test1C1Ev(%struct.test1* %tst) nounwind, !dbg !22
   store i32 0, i32* %0, align 4, !dbg !23
-  %1 = load i32, i32* %0, align 4, !dbg !23            ; <i32> [#uses=1]
+  %1 = load i32, i32* %0, align 4, !dbg !23            
   store i32 %1, i32* %retval, align 4, !dbg !23
   br label %return, !dbg !23
 
-return:                                           ; preds = %entry
-  %retval1 = load i32, i32* %retval, !dbg !23          ; <i32> [#uses=1]
+return:                                           
+  %retval1 = load i32, i32* %retval, !dbg !23          
   ret i32 %retval1, !dbg !23
 }
 
 define linkonce_odr void @_ZN5test1C1Ev(%struct.test1* %this) nounwind ssp align 2 {
 entry:
-  %this_addr = alloca %struct.test1*              ; <%struct.test1**> [#uses=2]
-  %"alloca point" = bitcast i32 0 to i32          ; <i32> [#uses=0]
+  %this_addr = alloca %struct.test1*              
+  %"alloca point" = bitcast i32 0 to i32          
   call void @llvm.dbg.declare(metadata %struct.test1** %this_addr, metadata !24, metadata !DIExpression()), !dbg !28
   store %struct.test1* %this, %struct.test1** %this_addr
-  %0 = load %struct.test1*, %struct.test1** %this_addr, align 8, !dbg !28 ; <%struct.test1*> [#uses=1]
-  %1 = getelementptr inbounds %struct.test1, %struct.test1* %0, i32 0, i32 0, !dbg !28 ; <i32 (...)***> [#uses=1]
+  %0 = load %struct.test1*, %struct.test1** %this_addr, align 8, !dbg !28 
+  %1 = getelementptr inbounds %struct.test1, %struct.test1* %0, i32 0, i32 0, !dbg !28 
   store i32 (...)** getelementptr inbounds ([4 x i32 (...)*], [4 x i32 (...)*]* @_ZTV5test1, i64 0, i64 2), i32 (...)*** %1, align 8, !dbg !28
   br label %return, !dbg !28
 
-return:                                           ; preds = %entry
+return:                                           
   ret void, !dbg !29
 }
 
@@ -47,59 +47,59 @@ declare void @llvm.dbg.declare(metadata, metadata, metadata) nounwind readnone
 
 define linkonce_odr void @_ZN5test1D1Ev(%struct.test1* %this) nounwind ssp align 2 {
 entry:
-  %this_addr = alloca %struct.test1*              ; <%struct.test1**> [#uses=3]
-  %"alloca point" = bitcast i32 0 to i32          ; <i32> [#uses=0]
+  %this_addr = alloca %struct.test1*              
+  %"alloca point" = bitcast i32 0 to i32          
   call void @llvm.dbg.declare(metadata %struct.test1** %this_addr, metadata !32, metadata !DIExpression()), !dbg !34
   store %struct.test1* %this, %struct.test1** %this_addr
-  %0 = load %struct.test1*, %struct.test1** %this_addr, align 8, !dbg !35 ; <%struct.test1*> [#uses=1]
-  %1 = getelementptr inbounds %struct.test1, %struct.test1* %0, i32 0, i32 0, !dbg !35 ; <i32 (...)***> [#uses=1]
+  %0 = load %struct.test1*, %struct.test1** %this_addr, align 8, !dbg !35 
+  %1 = getelementptr inbounds %struct.test1, %struct.test1* %0, i32 0, i32 0, !dbg !35 
   store i32 (...)** getelementptr inbounds ([4 x i32 (...)*], [4 x i32 (...)*]* @_ZTV5test1, i64 0, i64 2), i32 (...)*** %1, align 8, !dbg !35
   br label %bb, !dbg !37
 
-bb:                                               ; preds = %entry
-  %2 = trunc i32 0 to i8, !dbg !37                ; <i8> [#uses=1]
-  %toBool = icmp ne i8 %2, 0, !dbg !37            ; <i1> [#uses=1]
+bb:                                               
+  %2 = trunc i32 0 to i8, !dbg !37                
+  %toBool = icmp ne i8 %2, 0, !dbg !37            
   br i1 %toBool, label %bb1, label %bb2, !dbg !37
 
-bb1:                                              ; preds = %bb
-  %3 = load %struct.test1*, %struct.test1** %this_addr, align 8, !dbg !37 ; <%struct.test1*> [#uses=1]
-  %4 = bitcast %struct.test1* %3 to i8*, !dbg !37 ; <i8*> [#uses=1]
+bb1:                                              
+  %3 = load %struct.test1*, %struct.test1** %this_addr, align 8, !dbg !37 
+  %4 = bitcast %struct.test1* %3 to i8*, !dbg !37 
   call void @_ZdlPv(i8* %4) nounwind, !dbg !37
   br label %bb2, !dbg !37
 
-bb2:                                              ; preds = %bb1, %bb
+bb2:                                              
   br label %return, !dbg !37
 
-return:                                           ; preds = %bb2
+return:                                           
   ret void, !dbg !37
 }
 
 define linkonce_odr void @_ZN5test1D0Ev(%struct.test1* %this) nounwind ssp align 2 {
 entry:
-  %this_addr = alloca %struct.test1*              ; <%struct.test1**> [#uses=3]
-  %"alloca point" = bitcast i32 0 to i32          ; <i32> [#uses=0]
+  %this_addr = alloca %struct.test1*              
+  %"alloca point" = bitcast i32 0 to i32          
   call void @llvm.dbg.declare(metadata %struct.test1** %this_addr, metadata !38, metadata !DIExpression()), !dbg !40
   store %struct.test1* %this, %struct.test1** %this_addr
-  %0 = load %struct.test1*, %struct.test1** %this_addr, align 8, !dbg !41 ; <%struct.test1*> [#uses=1]
-  %1 = getelementptr inbounds %struct.test1, %struct.test1* %0, i32 0, i32 0, !dbg !41 ; <i32 (...)***> [#uses=1]
+  %0 = load %struct.test1*, %struct.test1** %this_addr, align 8, !dbg !41 
+  %1 = getelementptr inbounds %struct.test1, %struct.test1* %0, i32 0, i32 0, !dbg !41 
   store i32 (...)** getelementptr inbounds ([4 x i32 (...)*], [4 x i32 (...)*]* @_ZTV5test1, i64 0, i64 2), i32 (...)*** %1, align 8, !dbg !41
   br label %bb, !dbg !43
 
-bb:                                               ; preds = %entry
-  %2 = trunc i32 1 to i8, !dbg !43                ; <i8> [#uses=1]
-  %toBool = icmp ne i8 %2, 0, !dbg !43            ; <i1> [#uses=1]
+bb:                                               
+  %2 = trunc i32 1 to i8, !dbg !43                
+  %toBool = icmp ne i8 %2, 0, !dbg !43            
   br i1 %toBool, label %bb1, label %bb2, !dbg !43
 
-bb1:                                              ; preds = %bb
-  %3 = load %struct.test1*, %struct.test1** %this_addr, align 8, !dbg !43 ; <%struct.test1*> [#uses=1]
-  %4 = bitcast %struct.test1* %3 to i8*, !dbg !43 ; <i8*> [#uses=1]
+bb1:                                              
+  %3 = load %struct.test1*, %struct.test1** %this_addr, align 8, !dbg !43 
+  %4 = bitcast %struct.test1* %3 to i8*, !dbg !43 
   call void @_ZdlPv(i8* %4) nounwind, !dbg !43
   br label %bb2, !dbg !43
 
-bb2:                                              ; preds = %bb1, %bb
+bb2:                                              
   br label %return, !dbg !43
 
-return:                                           ; preds = %bb2
+return:                                           
   ret void, !dbg !43
 }
 

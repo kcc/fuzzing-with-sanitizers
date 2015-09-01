@@ -1,7 +1,7 @@
-; RUN: llc < %s -mtriple=armv4t--linux-androideabi -print-machineinstrs=if-converter -o /dev/null 2>&1 | FileCheck %s
-; Fix a bug triggered in IfConverterTriangle when CvtBB has multiple
-; predecessors.
-; PR18752
+
+
+
+
 
 %classK = type { i8, %classF }
 %classF = type { i8 }
@@ -13,16 +13,16 @@ define zeroext i1 @test(%classK* %this, %classM2* nocapture readnone %p1, %class
 entry:
   br i1 undef, label %for.end, label %for.body
 
-; Before if conversion, we have
-; for.body -> lor.lhs.false.i (62)
-;          -> for.cond.backedge (62)
-; lor.lhs.false.i -> for.cond.backedge (1048575)
-;                 -> cond.false.i (1)
-; Afer if conversion, we have
-; for.body -> for.cond.backedge (130023362)
-;          -> cond.false.i (62)
-; CHECK: BB#1: derived from LLVM BB %for.body
-; CHECK: Successors according to CFG: BB#2(130023362) BB#4(62)
+
+
+
+
+
+
+
+
+
+
 for.body:
   br i1 undef, label %for.cond.backedge, label %lor.lhs.false.i, !prof !1
 

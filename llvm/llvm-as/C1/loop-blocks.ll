@@ -1,18 +1,18 @@
-; RUN: llc < %s -march=x86-64 -mtriple=x86_64-unknown-linux-gnu -asm-verbose=false | FileCheck %s
 
-; These tests check for loop branching structure, and that the loop align
-; directive is placed in the expected place.
 
-; CodeGen should insert a branch into the middle of the loop in
-; order to avoid a branch within the loop.
 
-; CHECK-LABEL: simple:
-;      CHECK:   jmp   .LBB0_1
-; CHECK-NEXT:   align
-; CHECK-NEXT: .LBB0_2:
-; CHECK-NEXT:   callq loop_latch
-; CHECK-NEXT: .LBB0_1:
-; CHECK-NEXT:   callq loop_header
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @simple() nounwind {
 entry:
@@ -33,16 +33,16 @@ done:
   ret void
 }
 
-; CodeGen should move block_a to the top of the loop so that it
-; falls through into the loop, avoiding a branch within the loop.
 
-; CHECK-LABEL: slightly_more_involved:
-;      CHECK:   jmp .LBB1_1
-; CHECK-NEXT:   align
-; CHECK-NEXT: .LBB1_4:
-; CHECK-NEXT:   callq bar99
-; CHECK-NEXT: .LBB1_1:
-; CHECK-NEXT:   callq body
+
+
+
+
+
+
+
+
+
 
 define void @slightly_more_involved() nounwind {
 entry:
@@ -68,27 +68,27 @@ exit:
   ret void
 }
 
-; Same as slightly_more_involved, but block_a is now a CFG diamond with
-; fallthrough edges which should be preserved.
-; "callq block_a_merge_func" is tail duped.
 
-; CHECK-LABEL: yet_more_involved:
-;      CHECK:   jmp .LBB2_1
-; CHECK-NEXT:   align
-; CHECK-NEXT: .LBB2_5:
-; CHECK-NEXT:   callq block_a_true_func
-; CHECK-NEXT:   callq block_a_merge_func
-; CHECK-NEXT: .LBB2_1:
-; CHECK-NEXT:   callq body
-;
-; LBB2_4
-;      CHECK:   callq bar99
-; CHECK-NEXT:   callq get
-; CHECK-NEXT:   cmpl $2999, %eax
-; CHECK-NEXT:   jle .LBB2_5
-; CHECK-NEXT:   callq block_a_false_func
-; CHECK-NEXT:   callq block_a_merge_func
-; CHECK-NEXT:   jmp .LBB2_1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @yet_more_involved() nounwind {
 entry:
@@ -128,31 +128,31 @@ exit:
   ret void
 }
 
-; CodeGen should move the CFG islands that are part of the loop but don't
-; conveniently fit anywhere so that they are at least contiguous with the
-; loop.
 
-; CHECK-LABEL: cfg_islands:
-;      CHECK:   jmp     .LBB3_1
-; CHECK-NEXT:   align
-; CHECK-NEXT: .LBB3_7:
-; CHECK-NEXT:   callq   bar100
-; CHECK-NEXT: .LBB3_1:
-; CHECK-NEXT:   callq   loop_header
-;      CHECK:   jl .LBB3_7
-;      CHECK:   jge .LBB3_3
-; CHECK-NEXT:   callq   bar101
-; CHECK-NEXT:   jmp     .LBB3_1
-; CHECK-NEXT:   align
-; CHECK-NEXT: .LBB3_3:
-;      CHECK:   jge .LBB3_4
-; CHECK-NEXT:   callq   bar102
-; CHECK-NEXT:   jmp     .LBB3_1
-; CHECK-NEXT: .LBB3_4:
-;      CHECK:   jl .LBB3_6
-; CHECK-NEXT:   callq   loop_latch
-; CHECK-NEXT:   jmp     .LBB3_1
-; CHECK-NEXT: .LBB3_6:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @cfg_islands() nounwind {
 entry:

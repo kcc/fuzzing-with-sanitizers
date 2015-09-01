@@ -1,29 +1,29 @@
-; RUN: llc -mtriple x86_64-pc-linux -O0 < %s | FileCheck %s
 
-; Make sure that the sequence of debug locations for function foo is correctly
-; generated. More specifically, .loc entries for lines 4,5,6,7 must appear in
-; the correct sequence.
 
-; $ clang -emit-llvm -S -g dbg-combine.c
-; 1.  int foo()
-; 2.  {
-; 3.     int elems = 3;
-; 4.     int array1[elems];
-; 5.     array1[0]=0;
-; 6.     array1[1]=1;
-; 7.     array1[2]=2;
-; 8.     int array2[elems];
-; 9.     array2[0]=1;
-; 10.    return array2[0];
-; 11. }
 
-; CHECK: .loc    1 4
-; CHECK: .loc    1 5
-; CHECK: .loc    1 6
-; CHECK: .loc    1 7
 
-; ModuleID = 'dbg-combine.c'
-; Function Attrs: nounwind uwtable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define i32 @foo() #0 {
 entry:
   %elems = alloca i32, align 4
@@ -57,13 +57,13 @@ entry:
   ret i32 %5, !dbg !36
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
-; Function Attrs: nounwind
+
 declare i8* @llvm.stacksave() #2
 
-; Function Attrs: nounwind
+
 declare void @llvm.stackrestore(i8*) #2
 
 attributes #0 = { nounwind uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

@@ -1,4 +1,4 @@
-; RUN: llc -mtriple=armv7-none-linux-gnueabi < %s | FileCheck %s
+
 
 @_ZTVN10__cxxabiv117__class_type_infoE = external global i8*
 @_ZTS3Foo = linkonce_odr constant [5 x i8] c"3Foo\00"
@@ -9,27 +9,27 @@ entry:
   invoke void @_Z3foov()
           to label %return unwind label %lpad
 
-lpad:                                             ; preds = %entry
+lpad:                                             
   %0 = landingpad { i8*, i32 }
           catch i8* bitcast ({ i8*, i8* }* @_ZTI3Foo to i8*)
   %1 = extractvalue { i8*, i32 } %0, 1
   %2 = tail call i32 @llvm.eh.typeid.for(i8* bitcast ({ i8*, i8* }* @_ZTI3Foo to i8*)) nounwind
-; CHECK: _ZTI3Foo(target2)
+
 
   %matches = icmp eq i32 %1, %2
   br i1 %matches, label %catch, label %eh.resume
 
-catch:                                            ; preds = %lpad
+catch:                                            
   %3 = extractvalue { i8*, i32 } %0, 0
   %4 = tail call i8* @__cxa_begin_catch(i8* %3) nounwind
   tail call void @__cxa_end_catch()
   br label %return
 
-return:                                           ; preds = %entry, %catch
+return:                                           
   %retval.0 = phi i32 [ 1, %catch ], [ 0, %entry ]
   ret i32 %retval.0
 
-eh.resume:                                        ; preds = %lpad
+eh.resume:                                        
   resume { i8*, i32 } %0
 }
 

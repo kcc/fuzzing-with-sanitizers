@@ -1,10 +1,10 @@
-; RUN: llc -mcpu=pwr7 < %s | FileCheck %s
+
 target datalayout = "E-m:e-i64:64-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
 
 @.str = private unnamed_addr constant [5 x i8] c"%ld\0A\00", align 1
 
-; Function Attrs: nounwind
+
 define i64 @main() #0 {
 entry:
   %x = alloca i64, align 8
@@ -13,12 +13,12 @@ entry:
   ret i64 %0
 }
 
-; CHECK: ld
-; CHECK-NOT: addi   3, 3, 4294967295
-; CHECK: addi   3, 3, -1
-; CHECK: blr
 
-; Function Attrs: nounwind
+
+
+
+
+
 declare signext i32 @printf(i8* nocapture readonly, ...) #0
 
 attributes #0 = { nounwind }

@@ -1,6 +1,6 @@
-; RUN: llc < %s
 
-; PR15253
+
+
 
 %struct.mystruct = type { i32 }
 

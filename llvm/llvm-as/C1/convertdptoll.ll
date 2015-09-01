@@ -1,8 +1,8 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv5  < %s | FileCheck %s
-; Check that we generate conversion from double precision floating point
-; to 64-bit integer value in IEEE complaint mode in V5.
 
-; CHECK: r{{[0-9]+}}:{{[0-9]+}} = convert_df2d(r{{[0-9]+}}:{{[0-9]+}}):chop
+
+
+
+
 
 define i32 @main() nounwind {
 entry:

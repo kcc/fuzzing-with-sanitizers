@@ -1,4 +1,4 @@
-; RUN: llc < %s | FileCheck %s
+
 
 target triple = "powerpc64-unknown-linux-gnu"
 
@@ -7,5 +7,5 @@ define double @test() {
   ret double %1
 }
 
-; CHECK: .quad -9111018957755033591
+
 

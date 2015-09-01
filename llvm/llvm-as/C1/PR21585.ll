@@ -1,4 +1,4 @@
-; RUN: opt < %s -analyze -basicaa -globalsmodref-aa -da | FileCheck %s
+
 define void @i32_subscript(i32* %a) {
 entry:
   br label %for.body
@@ -18,19 +18,19 @@ for.body:
 for.end:
   ret void
 }
-; CHECK: none
-; CHECK: anti
-; CHECK: output
 
 
-; Test for a bug, which caused an assert in ScalarEvolution because
-; the Dependence Analyzer attempted to zero extend a type to a smaller
-; type.
 
-; void t(unsigned int *a, unsigned int n) {
-;   for (unsigned int i = 0; i != n; i++) {
-;     a[(unsigned short)i] = g;
-;  }}
+
+
+
+
+
+
+
+
+
+
 
 @g = common global i32 0, align 4
 
@@ -52,9 +52,9 @@ for.body:
 for.end:
   ret void
 }
-; CHECK: input
-; CHECK: none
-; CHECK: output
+
+
+
 
 define void @i16_wrap(i64* %a) {
 entry:
@@ -75,9 +75,9 @@ for.inc:
 for.end:
   ret void
 }
-; CHECK: input
-; CHECK: anti
-; CHECK: output
+
+
+
 
 define void @i8_stride_wrap(i32* noalias %a, i32* noalias %b) {
 entry:
@@ -100,6 +100,6 @@ for.inc:
 for.end:
   ret void
 }
-; CHECK: input
-; CHECK: none
-; CHECK: none
+
+
+

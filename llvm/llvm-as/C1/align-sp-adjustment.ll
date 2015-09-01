@@ -1,6 +1,6 @@
-; RUN: llc -mtriple=thumbv7 -o - %s | FileCheck %s
 
-; CHECK: [sp, #2120]
+
+
 
 %struct.struct_2 = type { [172 x %struct.struct_1] }
 %struct.struct_1 = type { i32, i32, i32 }

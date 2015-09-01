@@ -1,7 +1,7 @@
-; RUN: opt < %s -sancov -sanitizer-coverage-level=0 -S | FileCheck %s
-; RUN: opt < %s -sancov -sanitizer-coverage-level=1 -S | FileCheck %s
-; RUN: opt < %s -sancov -sanitizer-coverage-level=2 -S | FileCheck %s
-; RUN: opt < %s -sancov -sanitizer-coverage-level=2 -sanitizer-coverage-block-threshold=0 -S | FileCheck %s
+
+
+
+
 
 target datalayout = "e-m:x-p:32:32-i64:64-f80:32-n8:16:32-a:0:32-S32"
 target triple = "i686-pc-windows-msvc18.0.0"
@@ -25,7 +25,7 @@ entry:
   invoke void @may_throw(i32* nonnull %r) #4
           to label %__try.cont unwind label %lpad
 
-lpad:                                             ; preds = %entry
+lpad:                                             
   %1 = landingpad { i8*, i32 }
           catch i8* bitcast (i32 ()* @"\01?filt$0@0@main@@" to i8*)
   %2 = extractvalue { i8*, i32 } %1, 1
@@ -33,28 +33,28 @@ lpad:                                             ; preds = %entry
   %matches = icmp eq i32 %2, %3
   br i1 %matches, label %__except, label %eh.resume
 
-__except:                                         ; preds = %lpad
+__except:                                         
   store i32 1, i32* %r, align 4
   br label %__try.cont
 
-__try.cont:                                       ; preds = %entry, %__except
+__try.cont:                                       
   %4 = load i32, i32* %r, align 4
   ret i32 %4
 
-eh.resume:                                        ; preds = %lpad
+eh.resume:                                        
   resume { i8*, i32 } %1
 }
 
-; Check that the alloca remains static and the localescape call remains in the
-; entry block.
 
-; CHECK-LABEL: define i32 @main()
-; CHECK-NOT: br {{.*}}label
-; CHECK: %__exception_code = alloca i32, align 4
-; CHECK-NOT: br {{.*}}label
-; CHECK: call void (...) @llvm.localescape(i32* nonnull %__exception_code)
 
-; Function Attrs: nounwind
+
+
+
+
+
+
+
+
 define internal i32 @"\01?filt$0@0@main@@"() #1 {
 entry:
   %0 = tail call i8* @llvm.frameaddress(i32 1)
@@ -71,8 +71,8 @@ entry:
   ret i32 1
 }
 
-; CHECK-LABEL: define internal i32 @"\01?filt$0@0@main@@"()
-; CHECK: tail call i8* @llvm.localrecover(i8* bitcast (i32 ()* @main to i8*), i8* {{.*}}, i32 0)
+
+
 
 define void @ScaleFilterCols_SSSE3(i8* %dst_ptr, i8* %src_ptr, i32 %dst_width, i32 %x, i32 %dx) sanitize_address {
 entry:

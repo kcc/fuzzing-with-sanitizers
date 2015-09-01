@@ -1,4 +1,4 @@
-; RUN: llc < %s
+
 
 	%Env = type i8*
 

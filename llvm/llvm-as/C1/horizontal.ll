@@ -1,23 +1,23 @@
-; RUN: opt -slp-vectorizer -slp-vectorize-hor -S <  %s -mtriple=x86_64-apple-macosx -mcpu=corei7-avx | FileCheck %s --check-prefix=NOSTORE
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 
-; #include <stdint.h>
-;
-; int foo(float *A, int n) {
-;   float sum = 0;
-;   for (intptr_t i=0; i < n; ++i) {
-;     sum += 7*A[i*4  ] +
-;            7*A[i*4+1] +
-;            7*A[i*4+2] +
-;            7*A[i*4+3];
-;   }
-;   return sum;
-; }
 
-; NOSTORE-LABEL: add_red
-; NOSTORE: fmul <4 x float>
-; NOSTORE: shufflevector <4 x float>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define i32 @add_red(float* %A, i32 %n) {
 entry:
@@ -64,20 +64,20 @@ for.end:
   ret i32 %sum.0.lcssa
 }
 
-; int foo(float * restrict A, float * restrict B, int n) {
-;   float sum = 0;
-;   for (intptr_t i=0; i < n; ++i) {
-;     sum *= B[0]*A[i*4  ] +
-;       B[1]*A[i*4+1] +
-;       B[2]*A[i*4+2] +
-;       B[3]*A[i*4+3];
-;   }
-;   return sum;
-; }
 
-; CHECK-LABEL: mul_red
-; CHECK: fmul <4 x float>
-; CHECK: shufflevector <4 x float>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define i32 @mul_red(float* noalias %A, float* noalias %B, i32 %n) {
 entry:
@@ -131,25 +131,25 @@ for.end:
   ret i32 %sum.0.lcssa
 }
 
-; int foo(float * restrict A, float * restrict B, int n) {
-;   float sum = 0;
-;   for (intptr_t i=0; i < n; ++i) {
-;     sum += B[0]*A[i*6  ] +
-;            B[1]*A[i*6+1] +
-;            B[2]*A[i*6+2] +
-;            B[3]*A[i*6+3] +
-;            B[4]*A[i*6+4] +
-;            B[5]*A[i*6+5] +
-;            B[6]*A[i*6+6] +
-;            B[7]*A[i*6+7] +
-;            B[8]*A[i*6+8];
-;   }
-;   return sum;
-; }
 
-; CHECK-LABEL: long_red
-; CHECK: fmul fast <4 x float>
-; CHECK: shufflevector <4 x float>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define i32 @long_red(float* noalias %A, float* noalias %B, i32 %n) {
 entry:
@@ -238,20 +238,20 @@ for.end:
   ret i32 %sum.0.lcssa
 }
 
-; int foo(float * restrict A, float * restrict B, int n) {
-;   float sum = 0;
-;   for (intptr_t i=0; i < n; ++i) {
-;     sum += B[0]*A[i*4  ];
-;     sum += B[1]*A[i*4+1];
-;     sum += B[2]*A[i*4+2];
-;     sum += B[3]*A[i*4+3];
-;   }
-;   return sum;
-; }
 
-; CHECK-LABEL: chain_red
-; CHECK: fmul fast <4 x float>
-; CHECK: shufflevector <4 x float>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define i32 @chain_red(float* noalias %A, float* noalias %B, i32 %n) {
 entry:
@@ -305,20 +305,20 @@ for.end:
   ret i32 %sum.0.lcssa
 }
 
-; int foo(float * restrict A, float * restrict B, float * restrict C, int n) {
-;   float sum = 0;
-;   for (intptr_t i=0; i < n; ++i) {
-;     C[i] = B[0] *A[i*4  ] +
-;          B[1] *A[i*4+1] +
-;          B[2] *A[i*4+2] +
-;          B[3] *A[i*4+3];
-;   }
-;   return sum;
-; }
 
-; CHECK-LABEL: store_red
-; CHECK: fmul fast <4 x float>
-; CHECK: shufflevector <4 x float>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define i32 @store_red(float* noalias %A, float* noalias %B, float* noalias %C, i32 %n) {
 entry:
@@ -369,19 +369,19 @@ for.end:
 }
 
 
-; RUN: opt -slp-vectorizer -slp-vectorize-hor -slp-vectorize-hor-store -S <  %s -mtriple=x86_64-apple-macosx -mcpu=corei7-avx | FileCheck %s --check-prefix=STORE
 
-; void foo(double * restrict A, double * restrict B, double * restrict C,
-;          int n) {
-;   for (intptr_t i=0; i < n; ++i) {
-;     C[i] = B[0] *A[i*4  ] + B[1] *A[i*4+1];
-;   }
-; }
 
-; STORE-LABEL: store_red_double
-; STORE: fmul fast <2 x double>
-; STORE: extractelement <2 x double>
-; STORE: extractelement <2 x double>
+
+
+
+
+
+
+
+
+
+
+
 
 define void @store_red_double(double* noalias %A, double* noalias %B, double* noalias %C, i32 %n) {
 entry:

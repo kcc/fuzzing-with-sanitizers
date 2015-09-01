@@ -1,4 +1,4 @@
-; RUN: llvm-as %s -disable-output
+
 @G = constant <3 x i64> ptrtoint (<3 x i8*> <i8* null, i8* null, i8* null> to <3 x i64>)
 
 @G1 = global i8 zeroinitializer

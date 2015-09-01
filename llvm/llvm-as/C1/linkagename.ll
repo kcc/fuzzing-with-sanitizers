@@ -1,8 +1,8 @@
-; RUN: echo '!9 = !{!"%/T/linkagename.ll", !0}' > %t1
-; RUN: cat %s %t1 > %t2
-; RUN: opt -insert-gcov-profiling -disable-output < %t2
-; RUN: grep _Z3foov %T/linkagename.gcno
-; RUN: rm %T/linkagename.gcno
+
+
+
+
+
 
 define void @_Z3foov() {
 entry:

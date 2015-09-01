@@ -1,26 +1,26 @@
-; REQUIRES: object-emission
-;
-; RUN: %llc_dwarf -filetype=obj -O0 -dwarf-linkage-names=Enable < %s | llvm-dwarfdump -debug-dump=info - | FileCheck %s
 
-; Make sure we can handle enums with the same identifier but in enum types of
-; different compile units.
-; rdar://17628609
 
-; CHECK: DW_TAG_compile_unit
-; CHECK: 0x[[ENUM:.*]]: DW_TAG_enumeration_type
-; CHECK-NEXT:   DW_AT_name {{.*}} "EA"
-; CHECK: DW_TAG_subprogram
-; CHECK: DW_AT_MIPS_linkage_name {{.*}} "_Z4topA2EA"
-; CHECK: DW_TAG_formal_parameter
-; CHECK: DW_AT_type [DW_FORM_ref4] (cu + 0x{{.*}} => {0x[[ENUM]]})
 
-; CHECK: DW_TAG_compile_unit
-; CHECK: DW_TAG_subprogram
-; CHECK:   DW_AT_MIPS_linkage_name {{.*}} "_Z4topB2EA"
-; CHECK: DW_TAG_formal_parameter
-; CHECK: DW_AT_type [DW_FORM_ref_addr] {{.*}}[[ENUM]]
 
-; Function Attrs: nounwind ssp uwtable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @_Z4topA2EA(i32 %sa) #0 {
 entry:
   %sa.addr = alloca i32, align 4
@@ -29,10 +29,10 @@ entry:
   ret void, !dbg !24
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
-; Function Attrs: nounwind ssp uwtable
+
 define void @_Z4topB2EA(i32 %sa) #0 {
 entry:
   %sa.addr = alloca i32, align 4
@@ -53,7 +53,7 @@ attributes #1 = { nounwind readnone }
 !2 = !{!3}
 !3 = !DICompositeType(tag: DW_TAG_enumeration_type, name: "EA", line: 1, size: 32, align: 32, file: !1, elements: !4, identifier: "_ZTS2EA")
 !4 = !{!5}
-!5 = !DIEnumerator(name: "EA_0", value: 0) ; [ DW_TAG_enumerator ] [EA_0 :: 0]
+!5 = !DIEnumerator(name: "EA_0", value: 0) 
 !6 = !{!7}
 !7 = distinct !DISubprogram(name: "topA", linkageName: "_Z4topA2EA", line: 5, isLocal: false, isDefinition: true, virtualIndex: 6, flags: DIFlagPrototyped, isOptimized: false, scopeLine: 5, file: !1, scope: !8, type: !9, function: void (i32)* @_Z4topA2EA, variables: !11)
 !8 = !DIFile(filename: "a.cpp", directory: "")

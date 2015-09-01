@@ -1,7 +1,7 @@
-; ModuleID = 'tsc_s000.c'
+
 target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v128:128:128-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
-; RUN: llc < %s -march=ppc64 | FileCheck %s
+
 
 @Y = common global [16000 x double] zeroinitializer, align 32
 @X = common global [16000 x double] zeroinitializer, align 32
@@ -29,11 +29,11 @@ define i32 @s000() nounwind {
 entry:
   br label %for.cond1.preheader
 
-for.cond1.preheader:                              ; preds = %for.end, %entry
+for.cond1.preheader:                              
   %nl.010 = phi i32 [ 0, %entry ], [ %inc7, %for.end ]
   br label %for.body3
 
-for.body3:                                        ; preds = %for.body3, %for.cond1.preheader
+for.body3:                                        
   %indvars.iv = phi i64 [ 0, %for.cond1.preheader ], [ %indvars.iv.next.15, %for.body3 ]
   %arrayidx = getelementptr inbounds [16000 x double], [16000 x double]* @Y, i64 0, i64 %indvars.iv
   %0 = load double, double* %arrayidx, align 32
@@ -135,18 +135,18 @@ for.body3:                                        ; preds = %for.body3, %for.con
   %exitcond.15 = icmp eq i32 %lftr.wideiv.15, 16000
   br i1 %exitcond.15, label %for.end, label %for.body3
 
-for.end:                                          ; preds = %for.body3
+for.end:                                          
   %call = tail call i32 @dummy(double* getelementptr inbounds ([16000 x double], [16000 x double]* @X, i64 0, i64 0), double* getelementptr inbounds ([16000 x double], [16000 x double]* @Y, i64 0, i64 0), double* getelementptr inbounds ([16000 x double], [16000 x double]* @Z, i64 0, i64 0), double* getelementptr inbounds ([16000 x double], [16000 x double]* @U, i64 0, i64 0), double* getelementptr inbounds ([16000 x double], [16000 x double]* @V, i64 0, i64 0), [256 x double]* getelementptr inbounds ([256 x [256 x double]], [256 x [256 x double]]* @aa, i64 0, i64 0), [256 x double]* getelementptr inbounds ([256 x [256 x double]], [256 x [256 x double]]* @bb, i64 0, i64 0), [256 x double]* getelementptr inbounds ([256 x [256 x double]], [256 x [256 x double]]* @cc, i64 0, i64 0), double 0.000000e+00) nounwind
   %inc7 = add nsw i32 %nl.010, 1
   %exitcond = icmp eq i32 %inc7, 400000
   br i1 %exitcond, label %for.end8, label %for.cond1.preheader
 
-for.end8:                                         ; preds = %for.end
+for.end8:                                         
   ret i32 0
 
-; CHECK: @s000
-; CHECK: mtctr
-; CHECK: bdnz
+
+
+
 }
 
 declare i32 @dummy(double*, double*, double*, double*, double*, [256 x double]*, [256 x double]*, [256 x double]*, double)

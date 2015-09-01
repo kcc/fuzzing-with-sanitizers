@@ -1,14 +1,14 @@
-; RUN: opt -basicaa -loop-idiom -S < %s -march=r600 -mcpu=redwood | FileCheck --check-prefix=R600 --check-prefix=FUNC %s
-; RUN: opt -basicaa -loop-idiom -S < %s -march=amdgcn -mcpu=SI -verify-machineinstrs| FileCheck --check-prefix=SI --check-prefix=FUNC %s
-; RUN: opt -basicaa -loop-idiom -S < %s -march=amdgcn -mcpu=tonga -verify-machineinstrs| FileCheck --check-prefix=SI --check-prefix=FUNC %s
 
 
-; Make sure loop-idiom doesn't create memcpy or memset.  There are no library
-; implementations of these for R600.
 
-; FUNC: @no_memcpy
-; R600-NOT: {{^}}llvm.memcpy
-; SI-NOT: {{^}}llvm.memcpy
+
+
+
+
+
+
+
+
 define void @no_memcpy(i8 addrspace(3)* %in, i32 %size) {
 entry:
   %dest = alloca i8, i32 32
@@ -28,11 +28,11 @@ for.end:
   ret void
 }
 
-; FUNC: @no_memset
-; R600-NOT: {{^}}llvm.memset
-; R600-NOT: {{^}}memset_pattern16:
-; SI-NOT: {{^}}llvm.memset
-; SI-NOT: {{^}}memset_pattern16:
+
+
+
+
+
 define void @no_memset(i32 %size) {
 entry:
   %dest = alloca i8, i32 32

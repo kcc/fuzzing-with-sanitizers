@@ -1,6 +1,6 @@
-; RUN: llc -o - %s
-; ARM target used to fail an assertion if RegPair{Odd|Even} hint pointed to a
-; physreg.
+
+
+
 target datalayout = "e-m:o-p:32:32-f64:32:64-v64:32:64-v128:32:128-a:0:32-n32-S32"
 target triple = "thumbv7-apple-tvos8.3.0"
 

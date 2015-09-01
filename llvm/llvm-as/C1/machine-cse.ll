@@ -1,5 +1,5 @@
-; RUN: llc -mtriple=x86_64-apple-macosx < %s | FileCheck %s
-; rdar://7610418
+
+
 
 %ptr = type { i8* }
 %struct.s1 = type { %ptr, %ptr }
@@ -8,25 +8,25 @@
 
 define fastcc i8* @t(i32 %base) nounwind {
 entry:
-; CHECK-LABEL: t:
-; CHECK: leaq (%rax,%rax,4)
+
+
   %0 = zext i32 %base to i64
   %1 = getelementptr inbounds %struct.s2, %struct.s2* null, i64 %0
   br i1 undef, label %bb1, label %bb2
 
 bb1:
-; CHECK: %bb1
-; CHECK-NOT: shlq $9
-; CHECK-NOT: leaq
-; CHECK: call
+
+
+
+
   %2 = getelementptr inbounds %struct.s2, %struct.s2* null, i64 %0, i32 0
   call void @bar(i32* %2) nounwind
   unreachable
 
 bb2:
-; CHECK: %bb2
-; CHECK-NOT: leaq
-; CHECK: callq
+
+
+
   %3 = call fastcc i8* @foo(%struct.s2* %1) nounwind
   unreachable
 
@@ -38,12 +38,12 @@ declare void @bar(i32*)
 
 declare fastcc i8* @foo(%struct.s2*) nounwind
 
-; rdar://8773371
+
 
 declare void @printf(...) nounwind
 
 define void @commute(i32 %test_case, i32 %scale) nounwind ssp {
-; CHECK-LABEL: commute:
+
 entry:
   switch i32 %test_case, label %sw.bb307 [
     i32 1, label %sw.bb
@@ -51,66 +51,66 @@ entry:
     i32 3, label %sw.bb
   ]
 
-sw.bb:                                            ; preds = %entry, %entry, %entry
-; CHECK: %sw.bb
-; CHECK: imull
+sw.bb:                                            
+
+
   %mul = mul nsw i32 %test_case, 3
   %mul20 = mul nsw i32 %mul, %scale
   br i1 undef, label %if.end34, label %sw.bb307
 
-if.end34:                                         ; preds = %sw.bb
-; CHECK: %if.end34
-; CHECK: leal
-; CHECK-NOT: imull
+if.end34:                                         
+
+
+
   tail call void (...) @printf(i32 %test_case, i32 %mul20) nounwind
   %tmp = mul i32 %scale, %test_case
   %tmp752 = mul i32 %tmp, 3
   %tmp753 = zext i32 %tmp752 to i64
   br label %bb.nph743.us
 
-for.body53.us:                                    ; preds = %bb.nph743.us, %for.body53.us
+for.body53.us:                                    
   %exitcond = icmp eq i64 undef, %tmp753
   br i1 %exitcond, label %bb.nph743.us, label %for.body53.us
 
-bb.nph743.us:                                     ; preds = %for.body53.us, %if.end34
+bb.nph743.us:                                     
   br label %for.body53.us
 
-sw.bb307:                                         ; preds = %sw.bb, %entry
+sw.bb307:                                         
   ret void
 }
 
-; CSE physical register defining instruction across MBB boundary.
-; rdar://10660865
+
+
 define i32 @cross_mbb_phys_cse(i32 %a, i32 %b) nounwind ssp {
 entry:
-; CHECK-LABEL: cross_mbb_phys_cse:
-; CHECK: cmpl
-; CHECK: ja
+
+
+
   %cmp = icmp ugt i32 %a, %b
   br i1 %cmp, label %return, label %if.end
 
-if.end:                                           ; preds = %entry
-; CHECK-NOT: cmpl
-; CHECK: sbbl
+if.end:                                           
+
+
   %cmp1 = icmp ult i32 %a, %b
   %. = sext i1 %cmp1 to i32
   br label %return
 
-return:                                           ; preds = %if.end, %entry
+return:                                           
   %retval.0 = phi i32 [ 1, %entry ], [ %., %if.end ]
   ret i32 %retval.0
 }
 
-; rdar://11393714
+
 define i8* @bsd_memchr(i8* %s, i32 %a, i32 %c, i64 %n) nounwind ssp {
-; CHECK: %entry
-; CHECK: xorl
-; CHECK: %preheader
-; CHECK: %do.body
-; CHECK-NOT: xorl
-; CHECK: %do.cond
-; CHECK-NOT: xorl
-; CHECK: %return
+
+
+
+
+
+
+
+
 entry:
   %cmp = icmp eq i64 %n, 0
   br i1 %cmp, label %return, label %preheader
@@ -136,7 +136,7 @@ return:
   ret i8* %retval.0
 }
 
-; PR13578
+
 @t2_global = external global i32
 
 declare i1 @t2_func()
@@ -153,7 +153,7 @@ a:
 b:
   ret i32 0
 
-; CHECK-LABEL: t2:
-; CHECK: t2_global@GOTPCREL(%rip)
-; CHECK-NOT: t2_global@GOTPCREL(%rip)
+
+
+
 }

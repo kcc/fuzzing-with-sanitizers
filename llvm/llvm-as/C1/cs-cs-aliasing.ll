@@ -1,4 +1,4 @@
-; RUN: opt -basicaa -dse -S < %s | FileCheck %s
+
 target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
@@ -8,16 +8,16 @@ target triple = "x86_64-unknown-linux-gnu"
 %"struct.__gnu_cxx::__vstring_utility<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider" = type { i8* }
 %union.anon = type { i64, [8 x i8] }
 
-; Function Attrs: nounwind
+
 declare void @llvm.memset.p0i8.i64(i8* nocapture, i8, i64, i32, i1) #0
 
-; Function Attrs: noinline nounwind readonly uwtable
+
 declare zeroext i1 @callee_takes_string(%class.basic_string* nonnull) #1 align 2
 
-; Function Attrs: nounwind uwtable
+
 define weak_odr zeroext i1 @test() #2 align 2 {
 
-; CHECK-LABEL: @test
+
 
 bb:
   %tmp = alloca %class.basic_string, align 8
@@ -37,7 +37,7 @@ bb:
   %tmp15 = bitcast %class.basic_string* %tmp1 to i8*
   br label %_ZN12basic_stringIcSt11char_traitsIcESaIcEEC2EPKcRKS2_.exit
 
-_ZN12basic_stringIcSt11char_traitsIcESaIcEEC2EPKcRKS2_.exit: ; preds = %bb
+_ZN12basic_stringIcSt11char_traitsIcESaIcEEC2EPKcRKS2_.exit: 
   store i8* %tmp4, i8** %tmp5, align 8
   store i8 62, i8* %tmp4, align 8
   store i64 1, i64* %tmp6, align 8
@@ -45,20 +45,20 @@ _ZN12basic_stringIcSt11char_traitsIcESaIcEEC2EPKcRKS2_.exit: ; preds = %bb
   %tmp16 = call zeroext i1 @callee_takes_string(%class.basic_string* nonnull %tmp)
   br label %_ZN9__gnu_cxx17__sso_string_baseIcSt11char_traitsIcESaIcEED2Ev.exit3
 
-_ZN9__gnu_cxx17__sso_string_baseIcSt11char_traitsIcESaIcEED2Ev.exit3: ; preds = %_ZN12basic_stringIcSt11char_traitsIcESaIcEEC2EPKcRKS2_.exit
+_ZN9__gnu_cxx17__sso_string_baseIcSt11char_traitsIcESaIcEED2Ev.exit3: 
 
-; CHECK: _ZN9__gnu_cxx17__sso_string_baseIcSt11char_traitsIcESaIcEED2Ev.exit3:
 
-; The following can be read through the call %tmp17:
+
+
   store i8* %tmp11, i8** %tmp12, align 8
   store i8 125, i8* %tmp11, align 8
   store i64 1, i64* %tmp13, align 8
   store i8 0, i8* %tmp14, align 1
 
-; CHECK: store i8* %tmp11, i8** %tmp12, align 8
-; CHECK: store i8 125, i8* %tmp11, align 8
-; CHECK: store i64 1, i64* %tmp13, align 8
-; CHECK: store i8 0, i8* %tmp14, align 1
+
+
+
+
 
   %tmp17 = call zeroext i1 @callee_takes_string(%class.basic_string* nonnull %tmp1)
   call void @llvm.memset.p0i8.i64(i8* %tmp11, i8 -51, i64 16, i32 8, i1 false) #0

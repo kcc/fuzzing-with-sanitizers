@@ -1,35 +1,35 @@
-; RUN: llc < %s -mcpu=atom -mtriple=i686-linux | FileCheck %s
-; CHECK:BB#5
-; CHECK-NEXT:leal
-; CHECK-NEXT:leal
-; CHECK-NEXT:leal
-; CHECK-NEXT:movl
 
 
-; Test for fixup lea pre-emit pass. LEA instructions should be substituted for
-; ADD instructions which compute the address and index of the load because they
-; precede the load within 5 instructions. An LEA should also be substituted for
-; an ADD which computes part of the index because it precedes the index LEA
-; within 5 instructions, this substitution is referred to as backwards chaining.
 
-; Original C Code
-;struct node_t
-;{
-;  int k, m, n, p;
-;  int * array;
-;};
 
-;extern struct node_t getnode();
 
-;int test()
-;{
-;  int sum = 0;
-;  struct node_t n = getnode();
-;  if(n.array != 0 && n.p > 0 && n.k > 0 && n.n > 0 && n.m > 0) {
-;    sum = ((int*)((int)n.array + n.p) )[ n.k + n.m + n.n ];
-;  }
-;  return sum;
-;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %struct.node_t = type { i32, i32, i32, i32, i32* }
 

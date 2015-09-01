@@ -1,5 +1,5 @@
-; RUN: llc < %s -mtriple=x86_64-unknown-unknown -mattr=+avx,-slow-unaligned-mem-32 | FileCheck %s --check-prefix=ALL --check-prefix=FAST32
-; RUN: llc < %s -mtriple=x86_64-unknown-unknown -mattr=+avx,+slow-unaligned-mem-32 | FileCheck %s --check-prefix=ALL --check-prefix=SLOW32
+
+
 
 define <4 x float> @merge_2_floats(float* nocapture %p) nounwind readonly {
   %tmp1 = load float, float* %p
@@ -9,13 +9,13 @@ define <4 x float> @merge_2_floats(float* nocapture %p) nounwind readonly {
   %vecins7 = insertelement <4 x float> %vecins, float %tmp5, i32 1
   ret <4 x float> %vecins7
 
-; ALL-LABEL: merge_2_floats
-; ALL: vmovq
-; ALL-NEXT: retq
+
+
+
 }
 
-; Test-case generated due to a crash when trying to treat loading the first
-; two i64s of a <4 x i64> as a load of two i32s.
+
+
 define <4 x i64> @merge_2_floats_into_4() {
   %1 = load i64*, i64** undef, align 8
   %2 = getelementptr inbounds i64, i64* %1, i64 0
@@ -28,9 +28,9 @@ define <4 x i64> @merge_2_floats_into_4() {
   %9 = shufflevector <4 x i64> %8, <4 x i64> undef, <4 x i32> <i32 0, i32 1, i32 4, i32 5>
   ret <4 x i64> %9
   
-; ALL-LABEL: merge_2_floats_into_4
-; ALL: vmovups
-; ALL-NEXT: retq
+
+
+
 }
 
 define <4 x float> @merge_4_floats(float* %ptr) {
@@ -47,15 +47,15 @@ define <4 x float> @merge_4_floats(float* %ptr) {
   %vec6 = insertelement <4 x float> %vec4, float %d, i32 3
   ret <4 x float> %vec6
 
-; ALL-LABEL: merge_4_floats
-; ALL: vmovups
-; ALL-NEXT: retq
+
+
+
 }
 
-; PR21710 ( http://llvm.org/bugs/show_bug.cgi?id=21710 ) 
-; Make sure that 32-byte vectors are handled efficiently.
-; If the target has slow 32-byte accesses, we should still generate
-; 16-byte loads.
+
+
+
+
 
 define <8 x float> @merge_8_floats(float* %ptr) {
   %a = load float, float* %ptr, align 4
@@ -83,14 +83,14 @@ define <8 x float> @merge_8_floats(float* %ptr) {
   %vec14 = insertelement <8 x float> %vec12, float %h, i32 7
   ret <8 x float> %vec14
 
-; ALL-LABEL: merge_8_floats
 
-; FAST32: vmovups
-; FAST32-NEXT: retq
 
-; SLOW32: vmovups
-; SLOW32-NEXT: vinsertf128
-; SLOW32-NEXT: retq
+
+
+
+
+
+
 }
 
 define <4 x double> @merge_4_doubles(double* %ptr) {
@@ -107,18 +107,18 @@ define <4 x double> @merge_4_doubles(double* %ptr) {
   %vec6 = insertelement <4 x double> %vec4, double %d, i32 3
   ret <4 x double> %vec6
 
-; ALL-LABEL: merge_4_doubles
-; FAST32: vmovups
-; FAST32-NEXT: retq
 
-; SLOW32: vmovups
-; SLOW32-NEXT: vinsertf128
-; SLOW32-NEXT: retq
+
+
+
+
+
+
 }
 
-; PR21771 ( http://llvm.org/bugs/show_bug.cgi?id=21771 ) 
-; Recognize and combine consecutive loads even when the
-; first of the combined loads is offset from the base address.
+
+
+
 define <4 x double> @merge_4_doubles_offset(double* %ptr) {
   %arrayidx4 = getelementptr inbounds double, double* %ptr, i64 4
   %arrayidx5 = getelementptr inbounds double, double* %ptr, i64 5
@@ -134,12 +134,12 @@ define <4 x double> @merge_4_doubles_offset(double* %ptr) {
   %vecinit7 = insertelement <4 x double> %vecinit6, double %h, i32 3
   ret <4 x double> %vecinit7
 
-; ALL-LABEL: merge_4_doubles_offset
-; FAST32: vmovups
-; FAST32-NEXT: retq
 
-; SLOW32: vmovups
-; SLOW32-NEXT: vinsertf128
-; SLOW32-NEXT: retq
+
+
+
+
+
+
 }
 

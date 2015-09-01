@@ -1,4 +1,4 @@
-; RUN: llc < %s -march=xcore | FileCheck %s
+
 
 declare void @g()
 declare i8* @llvm.stacksave() nounwind
@@ -13,8 +13,8 @@ allocas:
   call void @llvm.stackrestore(i8* %0)
   ret void
 }
-; CHECK-LABEL: f:
-; CHECK: ldaw [[REGISTER:r[0-9]+]], {{r[0-9]+}}[-r1]
-; CHECK: set sp, [[REGISTER]]
-; CHECK: extsp 1
-; CHECK: bl g
+
+
+
+
+

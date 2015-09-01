@@ -1,6 +1,6 @@
-; RUN: llc < %s
 
-; PR15253
+
+
 
 @.str = private unnamed_addr constant [4 x i8] c"sth\00", section "llvm.metadata"
 @.str1 = private unnamed_addr constant [4 x i8] c"t.c\00", section "llvm.metadata"

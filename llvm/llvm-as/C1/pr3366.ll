@@ -1,5 +1,5 @@
-; RUN: llc < %s -march=x86 -disable-cgp-branch-opts | grep movzbl
-; PR3366
+
+
 
 define void @_ada_c34002a() nounwind {
 entry:

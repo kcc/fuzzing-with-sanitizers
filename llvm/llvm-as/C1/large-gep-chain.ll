@@ -1,5 +1,5 @@
-; RUN: llc < %s -O0 -march x86 -o /dev/null
-; <rdar://problem/12445434>
+
+
 
 %0 = type { i32, float* }
 
@@ -17,10 +17,10 @@ define void @main() uwtable ssp personality i8* bitcast (i32 (...)* @__gxx_perso
 bb:
   br i1 undef, label %bb1, label %bb2
 
-bb1:                                              ; preds = %bb
+bb1:                                              
   br label %bb25362
 
-bb2:                                              ; preds = %bb
+bb2:                                              
   %tmp = getelementptr inbounds float, float* null, i64 1
   %tmp3 = getelementptr inbounds float, float* %tmp, i64 1
   %tmp4 = getelementptr inbounds float, float* %tmp3, i64 1
@@ -25292,297 +25292,297 @@ bb2:                                              ; preds = %bb
   %tmp25269 = getelementptr inbounds float, float* undef, i64 1
   br i1 undef, label %bb25270, label %bb25271
 
-bb25270:                                          ; preds = %bb2
+bb25270:                                          
   br label %bb25362
 
-bb25271:                                          ; preds = %bb2
+bb25271:                                          
   br label %bb25272
 
-bb25272:                                          ; preds = %bb25275, %bb25271
+bb25272:                                          
   br i1 false, label %bb25273, label %bb25278
 
-bb25273:                                          ; preds = %bb25272
+bb25273:                                          
   invoke void @foo()
           to label %bb25274 unwind label %bb25276
 
-bb25274:                                          ; preds = %bb25273
+bb25274:                                          
   invoke void @bar()
           to label %bb25275 unwind label %bb25276
 
-bb25275:                                          ; preds = %bb25274
+bb25275:                                          
   br label %bb25272
 
-bb25276:                                          ; preds = %bb25283, %bb25274, %bb25273
+bb25276:                                          
   %tmp25277 = landingpad { i8*, i32 }
           cleanup
   br label %bb25361
 
-bb25278:                                          ; preds = %bb25272
+bb25278:                                          
   br label %bb25279
 
-bb25279:                                          ; preds = %bb25284, %bb25278
+bb25279:                                          
   br i1 undef, label %bb25280, label %bb25285
 
-bb25280:                                          ; preds = %bb25279
+bb25280:                                          
   br label %bb25281
 
-bb25281:                                          ; preds = %bb25282, %bb25280
+bb25281:                                          
   br i1 undef, label %bb25282, label %bb25283
 
-bb25282:                                          ; preds = %bb25281
+bb25282:                                          
   br label %bb25281
 
-bb25283:                                          ; preds = %bb25281
+bb25283:                                          
   invoke void @bar()
           to label %bb25284 unwind label %bb25276
 
-bb25284:                                          ; preds = %bb25283
+bb25284:                                          
   br label %bb25279
 
-bb25285:                                          ; preds = %bb25279
+bb25285:                                          
   br label %bb25286
 
-bb25286:                                          ; preds = %bb25303, %bb25285
+bb25286:                                          
   br i1 undef, label %bb25287, label %bb25304
 
-bb25287:                                          ; preds = %bb25286
+bb25287:                                          
   invoke void @bar()
           to label %bb25288 unwind label %bb25298
 
-bb25288:                                          ; preds = %bb25287
+bb25288:                                          
   br i1 undef, label %bb25289, label %bb25300
 
-bb25289:                                          ; preds = %bb25288
+bb25289:                                          
   br i1 undef, label %bb25290, label %bb25300
 
-bb25290:                                          ; preds = %bb25289
+bb25290:                                          
   invoke void @bar()
           to label %bb25291 unwind label %bb25298
 
-bb25291:                                          ; preds = %bb25290
+bb25291:                                          
   br i1 undef, label %bb25292, label %bb25295
 
-bb25292:                                          ; preds = %bb25291
+bb25292:                                          
   br i1 undef, label %bb25294, label %bb25293
 
-bb25293:                                          ; preds = %bb25292
+bb25293:                                          
   br label %bb25294
 
-bb25294:                                          ; preds = %bb25293, %bb25292
+bb25294:                                          
   br label %bb25296
 
-bb25295:                                          ; preds = %bb25291
+bb25295:                                          
   invoke void @quuuux()
           to label %bb25296 unwind label %bb25298
 
-bb25296:                                          ; preds = %bb25295, %bb25294
+bb25296:                                          
   invoke void @baz()
           to label %bb25297 unwind label %bb25298
 
-bb25297:                                          ; preds = %bb25296
+bb25297:                                          
   br label %bb25300
 
-bb25298:                                          ; preds = %bb25296, %bb25295, %bb25290, %bb25287
+bb25298:                                          
   %tmp25299 = landingpad { i8*, i32 }
           cleanup
   br label %bb25360
 
-bb25300:                                          ; preds = %bb25297, %bb25289, %bb25288
+bb25300:                                          
   br i1 undef, label %bb25301, label %bb25302
 
-bb25301:                                          ; preds = %bb25300
+bb25301:                                          
   br label %bb25303
 
-bb25302:                                          ; preds = %bb25300
+bb25302:                                          
   br label %bb25303
 
-bb25303:                                          ; preds = %bb25302, %bb25301
+bb25303:                                          
   br label %bb25286
 
-bb25304:                                          ; preds = %bb25286
+bb25304:                                          
   br label %bb25305
 
-bb25305:                                          ; preds = %bb25331, %bb25304
+bb25305:                                          
   br i1 undef, label %bb25306, label %bb25332
 
-bb25306:                                          ; preds = %bb25305
+bb25306:                                          
   invoke void @quuux()
           to label %bb25307 unwind label %bb25324
 
-bb25307:                                          ; preds = %bb25306
+bb25307:                                          
   invoke void @quux()
           to label %bb25308 unwind label %bb25324
 
-bb25308:                                          ; preds = %bb25307
+bb25308:                                          
   br i1 undef, label %bb25309, label %bb25330
 
-bb25309:                                          ; preds = %bb25308
+bb25309:                                          
   br i1 undef, label %bb25310, label %bb25330
 
-bb25310:                                          ; preds = %bb25309
+bb25310:                                          
   br i1 undef, label %bb25311, label %bb25317
 
-bb25311:                                          ; preds = %bb25310
+bb25311:                                          
   br label %bb25312
 
-bb25312:                                          ; preds = %bb25316, %bb25315, %bb25311
+bb25312:                                          
   br i1 undef, label %bb25313, label %bb25317
 
-bb25313:                                          ; preds = %bb25312
+bb25313:                                          
   %tmp25314 = invoke zeroext i1 undef(%0* undef, %0* undef)
           to label %bb25315 unwind label %bb25324
 
-bb25315:                                          ; preds = %bb25313
+bb25315:                                          
   br i1 %tmp25314, label %bb25316, label %bb25312
 
-bb25316:                                          ; preds = %bb25315
+bb25316:                                          
   br label %bb25312
 
-bb25317:                                          ; preds = %bb25312, %bb25310
+bb25317:                                          
   br i1 undef, label %bb25318, label %bb25326
 
-bb25318:                                          ; preds = %bb25317
+bb25318:                                          
   br i1 undef, label %bb25319, label %bb25326
 
-bb25319:                                          ; preds = %bb25318
+bb25319:                                          
   br i1 undef, label %bb25320, label %bb25323
 
-bb25320:                                          ; preds = %bb25319
+bb25320:                                          
   br i1 undef, label %bb25322, label %bb25321
 
-bb25321:                                          ; preds = %bb25320
+bb25321:                                          
   br label %bb25322
 
-bb25322:                                          ; preds = %bb25321, %bb25320
+bb25322:                                          
   br label %bb25326
 
-bb25323:                                          ; preds = %bb25319
+bb25323:                                          
   invoke void @qux()
           to label %bb25326 unwind label %bb25324
 
-bb25324:                                          ; preds = %bb25357, %bb25344, %bb25343, %bb25342, %bb25337, %bb25334, %bb25333, %bb25323, %bb25313, %bb25307, %bb25306
+bb25324:                                          
   %tmp25325 = landingpad { i8*, i32 }
           cleanup
   br label %bb25359
 
-bb25326:                                          ; preds = %bb25323, %bb25322, %bb25318, %bb25317
+bb25326:                                          
   br label %bb25327
 
-bb25327:                                          ; preds = %bb25328, %bb25326
+bb25327:                                          
   br i1 undef, label %bb25328, label %bb25329
 
-bb25328:                                          ; preds = %bb25327
+bb25328:                                          
   br label %bb25327
 
-bb25329:                                          ; preds = %bb25327
+bb25329:                                          
   br label %bb25330
 
-bb25330:                                          ; preds = %bb25329, %bb25309, %bb25308
+bb25330:                                          
   br i1 undef, label %bb25332, label %bb25331
 
-bb25331:                                          ; preds = %bb25330
+bb25331:                                          
   br label %bb25305
 
-bb25332:                                          ; preds = %bb25330, %bb25305
+bb25332:                                          
   br i1 undef, label %bb25333, label %bb25357
 
-bb25333:                                          ; preds = %bb25332
+bb25333:                                          
   invoke void (...) @printf()
           to label %bb25334 unwind label %bb25324
 
-bb25334:                                          ; preds = %bb25333
+bb25334:                                          
   invoke void (...) @printf(i32 undef)
           to label %bb25335 unwind label %bb25324
 
-bb25335:                                          ; preds = %bb25334
+bb25335:                                          
   br label %bb25336
 
-bb25336:                                          ; preds = %bb25338, %bb25335
+bb25336:                                          
   br i1 undef, label %bb25337, label %bb25339
 
-bb25337:                                          ; preds = %bb25336
+bb25337:                                          
   invoke void (...) @printf(i32 undef, double undef)
           to label %bb25338 unwind label %bb25324
 
-bb25338:                                          ; preds = %bb25337
+bb25338:                                          
   br label %bb25336
 
-bb25339:                                          ; preds = %bb25336
+bb25339:                                          
   br label %bb25340
 
-bb25340:                                          ; preds = %bb25341, %bb25339
+bb25340:                                          
   br i1 undef, label %bb25341, label %bb25342
 
-bb25341:                                          ; preds = %bb25340
+bb25341:                                          
   br label %bb25340
 
-bb25342:                                          ; preds = %bb25340
+bb25342:                                          
   invoke void (...) @printf()
           to label %bb25343 unwind label %bb25324
 
-bb25343:                                          ; preds = %bb25342
+bb25343:                                          
   invoke void (...) @printf(double undef, double undef)
           to label %bb25344 unwind label %bb25324
 
-bb25344:                                          ; preds = %bb25343
+bb25344:                                          
   invoke void @mux()
           to label %bb25345 unwind label %bb25324
 
-bb25345:                                          ; preds = %bb25344
+bb25345:                                          
   br label %bb25346
 
-bb25346:                                          ; preds = %bb25347, %bb25345
+bb25346:                                          
   br i1 undef, label %bb25347, label %bb25348
 
-bb25347:                                          ; preds = %bb25346
+bb25347:                                          
   br label %bb25346
 
-bb25348:                                          ; preds = %bb25346
+bb25348:                                          
   br label %bb25349
 
-bb25349:                                          ; preds = %bb25350, %bb25348
+bb25349:                                          
   br i1 undef, label %bb25350, label %bb25351
 
-bb25350:                                          ; preds = %bb25349
+bb25350:                                          
   br label %bb25349
 
-bb25351:                                          ; preds = %bb25349
+bb25351:                                          
   invoke void (...) @printf()
           to label %bb25352 unwind label %bb25355
 
-bb25352:                                          ; preds = %bb25351
+bb25352:                                          
   invoke void (...) @printf(double undef)
           to label %bb25353 unwind label %bb25355
 
-bb25353:                                          ; preds = %bb25352
+bb25353:                                          
   invoke void (...) @printf()
           to label %bb25354 unwind label %bb25355
 
-bb25354:                                          ; preds = %bb25353
+bb25354:                                          
   br label %bb25358
 
-bb25355:                                          ; preds = %bb25353, %bb25352, %bb25351
+bb25355:                                          
   %tmp25356 = landingpad { i8*, i32 }
           cleanup
   br label %bb25359
 
-bb25357:                                          ; preds = %bb25332
+bb25357:                                          
   invoke void (...) @printf()
           to label %bb25358 unwind label %bb25324
 
-bb25358:                                          ; preds = %bb25357, %bb25354
+bb25358:                                          
   br label %bb25362
 
-bb25359:                                          ; preds = %bb25355, %bb25324
+bb25359:                                          
   br label %bb25360
 
-bb25360:                                          ; preds = %bb25359, %bb25298
+bb25360:                                          
   br label %bb25361
 
-bb25361:                                          ; preds = %bb25360, %bb25276
+bb25361:                                          
   resume { i8*, i32 } undef
 
-bb25362:                                          ; preds = %bb25358, %bb25270, %bb1
+bb25362:                                          
   ret void
 }
 

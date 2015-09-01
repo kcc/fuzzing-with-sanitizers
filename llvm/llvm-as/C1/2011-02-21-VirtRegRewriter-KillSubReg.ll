@@ -1,6 +1,6 @@
-; RUN: llc < %s -O2 -march=x86 -mtriple=i386-pc-linux-gnu -relocation-model=pic | FileCheck %s
-; PR9237: Assertion in VirtRegRewriter.cpp, ResurrectConfirmedKill
-;         `KillOps[*SR] == KillOp && "invalid subreg kill flags"'
+
+
+
 
 %t = type { i32 }
 
@@ -25,7 +25,7 @@ cond.true771:
   %call782 = call i8* @__memmove_chk(i8* %add.ptr768, i8* undef, i32 %call747, i32 undef)
   br label %cond.end791
 
-; CHECK: calll __memmove_chk
+
 cond.false783:
   %call.i1035 = call i8* @__memmove_chk(i8* %add.ptr768, i8* undef, i32 %call747, i32 undef) nounwind
   br label %cond.end791

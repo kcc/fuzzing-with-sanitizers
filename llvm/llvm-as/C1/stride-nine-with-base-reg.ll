@@ -1,9 +1,9 @@
-; RUN: llc < %s -march=x86 -relocation-model=static | FileCheck %s
-; RUN: llc < %s -mtriple=x86_64-linux               | FileCheck %s
-; CHECK-NOT:     lea
 
-; P should be sunk into the loop and folded into the address mode. There
-; shouldn't be any lea instructions inside the loop.
+
+
+
+
+
 
 @B = external global [1000 x i8], align 32
 @A = external global [1000 x i8], align 32

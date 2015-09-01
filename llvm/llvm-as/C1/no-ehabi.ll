@@ -1,4 +1,4 @@
-; RUN: llc -mtriple=thumbv7-windows -mcpu=cortex-a9 -o - %s | FileCheck %s
+
 
 declare void @callee(i32 %i)
 
@@ -17,5 +17,5 @@ entry:
   ret i32 %w
 }
 
-; CHECK-NOT: .save {{{.*}}}
+
 

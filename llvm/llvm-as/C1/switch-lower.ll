@@ -1,7 +1,7 @@
-; RUN: llc < %s
 
 
-; PR5421
+
+
 define void @test1() {
 entry:
   switch i128 undef, label %exit [
@@ -15,15 +15,15 @@ exit:
 }
 
 
-; PR1197
+
 define void @test2() {
 entry:
 	br i1 false, label %cond_next954, label %cond_true924
 
-cond_true924:		; preds = %entry
+cond_true924:		
 	ret void
 
-cond_next954:		; preds = %entry
+cond_next954:		
 	switch i8 0, label %cleanup7419 [
 		 i8 1, label %bb956
 		 i8 2, label %bb1069
@@ -112,237 +112,237 @@ cond_next954:		; preds = %entry
 		 i8 -122, label %bb5490
 	]
 
-bb956:		; preds = %cond_next954
+bb956:		
 	ret void
 
-bb1065:		; preds = %cond_next954
+bb1065:		
 	ret void
 
-bb1069:		; preds = %cond_next954
+bb1069:		
 	ret void
 
-bb1267:		; preds = %cond_next954
+bb1267:		
 	ret void
 
-bb1348:		; preds = %cond_next954
+bb1348:		
 	ret void
 
-bb1439:		; preds = %cond_next954
+bb1439:		
 	ret void
 
-bb1484:		; preds = %cond_next954, %cond_next954
+bb1484:		
 	ret void
 
-bb1702:		; preds = %cond_next954
+bb1702:		
 	ret void
 
-bb1706:		; preds = %cond_next954
+bb1706:		
 	ret void
 
-bb1783:		; preds = %cond_next954
+bb1783:		
 	ret void
 
-bb1925:		; preds = %cond_next954
+bb1925:		
 	ret void
 
-bb1929:		; preds = %cond_next954
+bb1929:		
 	ret void
 
-bb2200:		; preds = %cond_next954
+bb2200:		
 	ret void
 
-bb2240:		; preds = %cond_next954
+bb2240:		
 	ret void
 
-bb2366:		; preds = %cond_next954, %cond_next954
+bb2366:		
 	ret void
 
-bb2447:		; preds = %cond_next954
+bb2447:		
 	ret void
 
-bb2480:		; preds = %cond_next954
+bb2480:		
 	ret void
 
-bb2590:		; preds = %cond_next954
+bb2590:		
 	ret void
 
-bb2594:		; preds = %cond_next954
+bb2594:		
 	ret void
 
-bb2621:		; preds = %cond_next954
+bb2621:		
 	ret void
 
-bb2664:		; preds = %cond_next954
+bb2664:		
 	ret void
 
-bb2697:		; preds = %cond_next954
+bb2697:		
 	ret void
 
-bb2731:		; preds = %cond_next954
+bb2731:		
 	ret void
 
-bb2735:		; preds = %cond_next954
+bb2735:		
 	ret void
 
-bb2782:		; preds = %cond_next954
+bb2782:		
 	ret void
 
-bb2786:		; preds = %cond_next954
+bb2786:		
 	ret void
 
-bb2845:		; preds = %cond_next954
+bb2845:		
 	ret void
 
-bb2849:		; preds = %cond_next954
+bb2849:		
 	ret void
 
-bb2875:		; preds = %cond_next954
+bb2875:		
 	ret void
 
-bb3269:		; preds = %cond_next954
+bb3269:		
 	ret void
 
-bb3303:		; preds = %cond_next954
+bb3303:		
 	ret void
 
-bb3346:		; preds = %cond_next954
+bb3346:		
 	ret void
 
-bb3391:		; preds = %cond_next954
+bb3391:		
 	ret void
 
-bb3395:		; preds = %cond_next954
+bb3395:		
 	ret void
 
-bb3669:		; preds = %cond_next954
+bb3669:		
 	ret void
 
-bb3673:		; preds = %cond_next954
+bb3673:		
 	ret void
 
-bb3677:		; preds = %cond_next954
+bb3677:		
 	ret void
 
-bb3693:		; preds = %cond_next954
+bb3693:		
 	ret void
 
-bb3758:		; preds = %cond_next954
+bb3758:		
 	ret void
 
-bb3787:		; preds = %cond_next954
+bb3787:		
 	ret void
 
-bb3875:		; preds = %cond_next954
+bb3875:		
 	ret void
 
-bb3879:		; preds = %cond_next954
+bb3879:		
 	ret void
 
-cond_true4235:		; preds = %cond_next954
+cond_true4235:		
 	ret void
 
-bb4325:		; preds = %cond_next954
+bb4325:		
 	ret void
 
-bb4359:		; preds = %cond_next954
+bb4359:		
 	ret void
 
-bb4526:		; preds = %cond_next954
+bb4526:		
 	ret void
 
-bb4618:		; preds = %cond_next954
+bb4618:		
 	ret void
 
-bb4700:		; preds = %cond_next954
+bb4700:		
 	ret void
 
-bb4987:		; preds = %cond_next954
+bb4987:		
 	ret void
 
-bb4991:		; preds = %cond_next954
+bb4991:		
 	ret void
 
-bb5008:		; preds = %cond_next954
+bb5008:		
 	ret void
 
-bb5012:		; preds = %cond_next954
+bb5012:		
 	ret void
 
-bb5019:		; preds = %cond_next954, %cond_next954, %cond_next954, %cond_next954
+bb5019:		
 	ret void
 
-bb5490:		; preds = %cond_next954
+bb5490:		
 	ret void
 
-bb5518:		; preds = %cond_next954
+bb5518:		
 	ret void
 
-bb5752:		; preds = %cond_next954
+bb5752:		
 	ret void
 
-bb5786:		; preds = %cond_next954
+bb5786:		
 	ret void
 
-bb5953:		; preds = %cond_next954
+bb5953:		
 	ret void
 
-bb6040:		; preds = %cond_next954
+bb6040:		
 	ret void
 
-bb6132:		; preds = %cond_next954
+bb6132:		
 	ret void
 
-bb6147:		; preds = %cond_next954
+bb6147:		
 	ret void
 
-bb6151:		; preds = %cond_next954
+bb6151:		
 	ret void
 
-bb6155:		; preds = %cond_next954
+bb6155:		
 	ret void
 
-bb6186:		; preds = %cond_next954
+bb6186:		
 	ret void
 
-bb6355:		; preds = %cond_next954
+bb6355:		
 	ret void
 
-bb6401:		; preds = %cond_next954
+bb6401:		
 	ret void
 
-bb6916:		; preds = %cond_next954
+bb6916:		
 	ret void
 
-bb6920:		; preds = %cond_next954
+bb6920:		
 	ret void
 
-bb6955:		; preds = %cond_next954
+bb6955:		
 	ret void
 
-bb6990:		; preds = %cond_next954
+bb6990:		
 	ret void
 
-bb7027:		; preds = %cond_next954
+bb7027:		
 	ret void
 
-bb7064:		; preds = %cond_next954
+bb7064:		
 	ret void
 
-bb7068:		; preds = %cond_next954
+bb7068:		
 	ret void
 
-bb7072:		; preds = %cond_next954
+bb7072:		
 	ret void
 
-bb7076:		; preds = %cond_next954
+bb7076:		
 	ret void
 
-bb7316:		; preds = %cond_next954, %cond_next954
+bb7316:		
 	ret void
 
-bb7328:		; preds = %cond_next954, %cond_next954, %cond_next954
+bb7328:		
 	ret void
 
-cleanup7419:		; preds = %cond_next954
+cleanup7419:		
 	ret void
 }

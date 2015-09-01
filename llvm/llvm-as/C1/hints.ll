@@ -1,6 +1,6 @@
-; RUN: llc -mtriple armv7-eabi -o - %s | FileCheck %s
-; RUN: llc -mtriple thumbv6m-eabi -o - %s | FileCheck %s
-; RUN: llc -mtriple thumbv7-eabi -o - %s | FileCheck %s
+
+
+
 
 declare void @llvm.arm.hint(i32) nounwind
 
@@ -10,8 +10,8 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: hint_nop
-; CHECK: nop
+
+
 
 define void @hint_yield() {
 entry:
@@ -19,8 +19,8 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: hint_yield
-; CHECK: yield
+
+
 
 define void @hint_wfe() {
 entry:
@@ -28,8 +28,8 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: hint_wfe
-; CHECK: wfe
+
+
 
 define void @hint_wfi() {
 entry:
@@ -37,8 +37,8 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: hint_wfi
-; CHECK: wfi
+
+
 
 define void @hint_sev() {
 entry:
@@ -46,8 +46,8 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: hint_sev
-; CHECK: sev
+
+
 
 define void @hint_sevl() {
 entry:
@@ -55,8 +55,8 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: hint_sevl
-; CHECK: hint #5
+
+
 
 define void @hint_undefined() {
 entry:
@@ -64,6 +64,6 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: hint_undefined
-; CHECK: hint #8
+
+
 

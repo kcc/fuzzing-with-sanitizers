@@ -1,31 +1,31 @@
-; RUN: llc < %s -mcpu=cortex-a57 -aarch64-a57-fp-load-balancing-override=1 -aarch64-a57-fp-load-balancing-force-all | FileCheck %s --check-prefix CHECK --check-prefix CHECK-A57 --check-prefix CHECK-EVEN
-; RUN: llc < %s -mcpu=cortex-a57 -aarch64-a57-fp-load-balancing-override=2 -aarch64-a57-fp-load-balancing-force-all | FileCheck %s --check-prefix CHECK --check-prefix CHECK-A57 --check-prefix CHECK-ODD
-; RUN: llc < %s -mcpu=cortex-a53 -aarch64-a57-fp-load-balancing-override=1 -aarch64-a57-fp-load-balancing-force-all | FileCheck %s --check-prefix CHECK --check-prefix CHECK-A53 --check-prefix CHECK-EVEN
-; RUN: llc < %s -mcpu=cortex-a53 -aarch64-a57-fp-load-balancing-override=2 -aarch64-a57-fp-load-balancing-force-all | FileCheck %s --check-prefix CHECK --check-prefix CHECK-A53 --check-prefix CHECK-ODD
 
-; Test the AArch64A57FPLoadBalancing pass. This pass relies heavily on register allocation, so
-; our test strategy is to:
-;   * Force the pass to always perform register swapping even if the dest register is of the
-;     correct color already (-force-all)
-;   * Force the pass to ignore all hints it obtained from regalloc (-deterministic-balance),
-;     and run it twice, once where it always hints odd, and once where it always hints even.
-;
-; We then use regex magic to check that in the two cases the register allocation is
-; different; this is what gives us the testing coverage and distinguishes cases where
-; the pass has done some work versus accidental regalloc.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-m:e-i64:64-i128:128-n32:64-S128"
 target triple = "aarch64"
 
-; Non-overlapping groups - shouldn't need any changing at all.
 
-; CHECK-LABEL: f1:
-; CHECK-EVEN: fmadd [[x:d[0-9]*[02468]]]
-; CHECK-ODD: fmadd [[x:d[0-9]*[13579]]]
-; CHECK: fmadd [[x]]
-; CHECK: fmsub [[x]]
-; CHECK: fmadd [[x]]
-; CHECK: str [[x]]
+
+
+
+
+
+
+
+
 
 define void @f1(double* nocapture readonly %p, double* nocapture %q) #0 {
 entry:
@@ -63,21 +63,21 @@ entry:
   ret void
 }
 
-; Overlapping groups - coloring needed.
 
-; CHECK-LABEL: f2:
-; CHECK-EVEN: fmadd [[x:d[0-9]*[02468]]]
-; CHECK-EVEN: fmul [[y:d[0-9]*[13579]]]
-; CHECK-ODD: fmadd [[x:d[0-9]*[13579]]]
-; CHECK-ODD: fmul [[y:d[0-9]*[02468]]]
-; CHECK: fmadd [[x]]
-; CHECK: fmadd [[y]]
-; CHECK: fmsub [[x]]
-; CHECK: fmadd [[y]]
-; CHECK: fmadd [[x]]
-; CHECK-A57: stp [[x]], [[y]]
-; CHECK-A53-DAG: str [[x]]
-; CHECK-A53-DAG: str [[y]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @f2(double* nocapture readonly %p, double* nocapture %q) #0 {
 entry:
@@ -115,15 +115,15 @@ entry:
   ret void
 }
 
-; Dest register is live on block exit - fixup needed.
 
-; CHECK-LABEL: f3:
-; CHECK-EVEN: fmadd [[x:d[0-9]*[02468]]]
-; CHECK-ODD: fmadd [[x:d[0-9]*[13579]]]
-; CHECK: fmadd [[x]]
-; CHECK: fmsub [[x]]
-; CHECK: fmadd [[y:d[0-9]+]], {{.*}}, [[x]]
-; CHECK: str [[y]]
+
+
+
+
+
+
+
+
 
 define void @f3(double* nocapture readonly %p, double* nocapture %q) #0 {
 entry:
@@ -147,32 +147,32 @@ entry:
   %cmp = fcmp oeq double %3, 0.000000e+00
   br i1 %cmp, label %if.then, label %if.end
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   tail call void bitcast (void (...)* @g to void ()*)() #2
   br label %if.end
 
-if.end:                                           ; preds = %if.then, %entry
+if.end:                                           
   store double %add9, double* %q, align 8
   ret void
 }
 
 declare void @g(...) #1
 
-; Single precision version of f2.
 
-; CHECK-LABEL: f4:
-; CHECK-EVEN: fmadd [[x:s[0-9]*[02468]]]
-; CHECK-EVEN: fmul [[y:s[0-9]*[13579]]]
-; CHECK-ODD: fmadd [[x:s[0-9]*[13579]]]
-; CHECK-ODD: fmul [[y:s[0-9]*[02468]]]
-; CHECK: fmadd [[x]]
-; CHECK: fmadd [[y]]
-; CHECK: fmsub [[x]]
-; CHECK: fmadd [[y]]
-; CHECK: fmadd [[x]]
-; CHECK-A57: stp [[x]], [[y]]
-; CHECK-A53-DAG: str [[x]]
-; CHECK-A53-DAG: str [[y]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @f4(float* nocapture readonly %p, float* nocapture %q) #0 {
 entry:
@@ -210,15 +210,15 @@ entry:
   ret void
 }
 
-; Single precision version of f3
 
-; CHECK-LABEL: f5:
-; CHECK-EVEN: fmadd [[x:s[0-9]*[02468]]]
-; CHECK-ODD: fmadd [[x:s[0-9]*[13579]]]
-; CHECK: fmadd [[x]]
-; CHECK: fmsub [[x]]
-; CHECK: fmadd [[y:s[0-9]+]], {{.*}}, [[x]]
-; CHECK: str [[y]]
+
+
+
+
+
+
+
+
 
 define void @f5(float* nocapture readonly %p, float* nocapture %q) #0 {
 entry:
@@ -242,25 +242,25 @@ entry:
   %cmp = fcmp oeq float %3, 0.000000e+00
   br i1 %cmp, label %if.then, label %if.end
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   tail call void bitcast (void (...)* @g to void ()*)() #2
   br label %if.end
 
-if.end:                                           ; preds = %if.then, %entry
+if.end:                                           
   store float %add9, float* %q, align 4
   ret void
 }
 
-; Test that regmask clobbering stops a chain sequence.
 
-; CHECK-LABEL: f6:
-; CHECK-EVEN: fmadd [[x:d[0-9]*[02468]]]
-; CHECK-ODD: fmadd [[x:d[0-9]*[13579]]]
-; CHECK: fmadd [[x]]
-; CHECK: fmsub [[x]]
-; CHECK: fmadd d0, {{.*}}, [[x]]
-; CHECK: bl hh
-; CHECK: str d0
+
+
+
+
+
+
+
+
+
 
 define void @f6(double* nocapture readonly %p, double* nocapture %q) #0 {
 entry:
@@ -288,14 +288,14 @@ entry:
 
 declare double @hh(double) #1
 
-; Check that we correctly deal with repeated operands.
-; The following testcase creates:
-;   %D1<def> = FADDDrr %D0<kill>, %D0
-; We'll get a crash if we naively look at the first operand, remove it
-; from the substitution list then look at the second operand.
 
-; CHECK: fmadd [[x:d[0-9]+]]
-; CHECK: fadd d1, [[x]], [[x]]
+
+
+
+
+
+
+
 
 define void @f7(double* nocapture readonly %p, double* nocapture %q) #0 {
 entry:

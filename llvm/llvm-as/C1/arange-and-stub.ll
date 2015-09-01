@@ -1,11 +1,11 @@
-; RUN: llc -generate-arange-section -relocation-model=pic < %s | FileCheck %s
 
-; CHECK:   .section        .data.rel,"aw",@progbits
-; CHECK-NOT: .section
-; CHECK: .L_ZTId.DW.stub:
 
-; CHECK:  .section        .data.rel,"aw",@progbits
-; CHECK-NEXT: .Lsec_end0:
+
+
+
+
+
+
 
 target triple = "x86_64-linux-gnu"
 
@@ -20,10 +20,10 @@ define void @bar() personality i8* bitcast (void ()* @foo to i8*) {
   invoke void @foo()
           to label %invoke.cont unwind label %lpad
 
-invoke.cont:                                      ; preds = %0
+invoke.cont:                                      
   ret void
 
-lpad:                                             ; preds = %0
+lpad:                                             
   %tmp1 = landingpad { i8*, i32 }
           filter [1 x i8*] [i8* bitcast (i8** @_ZTId to i8*)]
   ret void

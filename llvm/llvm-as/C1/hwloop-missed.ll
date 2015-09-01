@@ -1,12 +1,12 @@
-; RUN: llc -march=hexagon -hexagon-hwloop-preheader < %s | FileCheck %s
 
-; Generate hardware loops when we also need to add a new preheader.
-; we should generate two hardware loops for this test case.
 
-; CHECK: loop0
-; CHECK: endloop0
-; CHECK: loop0
-; CHECK: endloop0
+
+
+
+
+
+
+
 
 @g = external global i32
 

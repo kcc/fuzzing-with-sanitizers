@@ -1,10 +1,10 @@
-; RUN: opt < %s -analyze -delinearize
-; REQUIRES: asserts
 
-; Test that SCEV divide code doesn't crash when attempting to create a SCEV
-; with operands of different types. In this case, the visitAddRecExpr
-; function tries to create an AddRec where the start and step are different
-; types.
+
+
+
+
+
+
 
 target datalayout = "e-m:e-p:32:32-i64:64-a:0-v32:32-n16:32"
 

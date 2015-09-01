@@ -1,6 +1,6 @@
-; RUN: opt -constmerge -S < %s | FileCheck %s
-; Test which corresponding x and y are merged and that unnamed_addr
-; is correctly set.
+
+
+
 
 declare void @zed(%struct.foobar*, %struct.foobar*)
 
@@ -19,15 +19,15 @@ declare void @zed(%struct.foobar*, %struct.foobar*)
 @test4.y = unnamed_addr constant %struct.foobar { i32 4 }
 
 
-; CHECK:      %struct.foobar = type { i32 }
-; CHECK-NOT: @
-; CHECK: @test1.x = internal constant %struct.foobar { i32 1 }
-; CHECK-NEXT: @test1.y = constant %struct.foobar { i32 1 }
-; CHECK-NEXT: @test2.y = constant %struct.foobar { i32 2 }
-; CHECK-NEXT: @test3.y = constant %struct.foobar { i32 3 }
-; CHECK-NEXT: @test4.y = unnamed_addr constant %struct.foobar { i32 4 }
-; CHECK-NOT: @
-; CHECK: declare void @zed(%struct.foobar*, %struct.foobar*)
+
+
+
+
+
+
+
+
+
 
 define i32 @main() {
 entry:

@@ -1,48 +1,48 @@
-; REQUIRES: object-emission, native
-;
-; RUN: llvm-link %s %p/type-unique-type-array-b.ll -S -o - | %llc_dwarf -filetype=obj -O0 | llvm-dwarfdump -debug-dump=info - | FileCheck %s
-;
-; rdar://problem/17628609
-;
-; cat -n a.cpp
-;     1	struct SA {
-;     2	  int a;
-;     3	};
-;     4	
-;     5	class A {
-;     6	public:
-;     7	  void testA(SA a) {
-;     8	  }
-;     9	};
-;    10	
-;    11	void topA(A *a, SA sa) {
-;    12	  a->testA(sa);
-;    13	}
-;
-; CHECK: DW_TAG_compile_unit
-; CHECK: DW_TAG_class_type
-; CHECK-NEXT:   DW_AT_name {{.*}} "A"
-; CHECK: DW_TAG_subprogram
-; CHECK: DW_AT_name {{.*}} "testA"
-; CHECK: DW_TAG_formal_parameter
-; CHECK: DW_TAG_formal_parameter
-; CHECK-NEXT: DW_AT_type [DW_FORM_ref4] (cu + 0x{{.*}} => {0x[[STRUCT:.*]]})
-; CHECK: 0x[[STRUCT]]: DW_TAG_structure_type
-; CHECK-NEXT:   DW_AT_name {{.*}} "SA"
 
-; CHECK: DW_TAG_compile_unit
-; CHECK: DW_TAG_class_type
-; CHECK-NEXT:   DW_AT_name {{.*}} "B"
-; CHECK: DW_TAG_subprogram
-; CHECK:   DW_AT_name {{.*}} "testB"
-; CHECK: DW_TAG_formal_parameter
-; CHECK: DW_TAG_formal_parameter
-; CHECK-NEXT: DW_AT_type [DW_FORM_ref_addr] {{.*}}[[STRUCT]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %class.A = type { i8 }
 %struct.SA = type { i32 }
 
-; Function Attrs: ssp uwtable
+
 define void @_Z4topAP1A2SA(%class.A* %a, i32 %sa.coerce) #0 {
 entry:
   %sa = alloca %struct.SA, align 4
@@ -63,10 +63,10 @@ entry:
   ret void, !dbg !29
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
-; Function Attrs: nounwind ssp uwtable
+
 define linkonce_odr void @_ZN1A5testAE2SA(%class.A* %this, i32 %a.coerce) #2 align 2 {
 entry:
   %a = alloca %struct.SA, align 4
@@ -80,7 +80,7 @@ entry:
   ret void, !dbg !34
 }
 
-; Function Attrs: nounwind
+
 declare void @llvm.memcpy.p0i8.p0i8.i64(i8* nocapture, i8* nocapture readonly, i64, i32, i1) #3
 
 attributes #0 = { ssp uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

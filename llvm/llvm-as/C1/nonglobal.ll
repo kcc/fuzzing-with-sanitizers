@@ -1,8 +1,8 @@
-; RUN: opt -S -lowerbitsets < %s | FileCheck %s
+
 
 target datalayout = "e-p:32:32"
 
-; CHECK-NOT: @b = alias
+
 @a = constant i32 1
 @b = constant [2 x i32] [i32 2, i32 3]
 

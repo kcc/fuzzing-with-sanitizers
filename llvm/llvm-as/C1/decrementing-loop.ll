@@ -1,4 +1,4 @@
-; RUN: opt -irce -S < %s | FileCheck %s
+
 
 define void @decrementing_loop(i32 *%arr, i32 *%a_len_ptr, i32 %n) {
  entry:
@@ -27,16 +27,16 @@ define void @decrementing_loop(i32 *%arr, i32 *%a_len_ptr, i32 %n) {
  exit:
   ret void
 
-; CHECK: loop.preheader:
-; CHECK:   [[indvar_start:[^ ]+]] = add i32 %n, -1
-; CHECK:   [[not_len:[^ ]+]] = sub i32 -1, %len
-; CHECK:   [[not_n:[^ ]+]] = sub i32 -1, %n
-; CHECK:   [[not_len_hiclamp_cmp:[^ ]+]] = icmp sgt i32 [[not_len]], [[not_n]]
-; CHECK:   [[not_len_hiclamp:[^ ]+]] = select i1 [[not_len_hiclamp_cmp]], i32 [[not_len]], i32 [[not_n]]
-; CHECK:   [[len_hiclamp:[^ ]+]] = sub i32 -1, [[not_len_hiclamp]]
-; CHECK:   [[not_exit_preloop_at_cmp:[^ ]+]] = icmp sgt i32 [[len_hiclamp]], 0
-; CHECK:   [[not_exit_preloop_at:[^ ]+]] = select i1 [[not_exit_preloop_at_cmp]], i32 [[len_hiclamp]], i32 0
-; CHECK:   %exit.preloop.at = add i32 [[not_exit_preloop_at]], -1
+
+
+
+
+
+
+
+
+
+
 }
 
 !0 = !{i32 0, i32 2147483647}

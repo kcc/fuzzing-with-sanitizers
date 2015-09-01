@@ -1,9 +1,9 @@
-; Generated from frame.c on Darwin with '-arch i386 -gdwarf-4 -emit-llvm'
-; ModuleID = 'frame.c'
+
+
 target datalayout = "e-m:o-p:32:32-f64:32:64-f80:128-n8:16:32-S128"
 target triple = "i386-apple-macosx10.11.0"
 
-; Function Attrs: nounwind ssp
+
 define i32 @bar(i32 %b) #0 {
 entry:
   %b.addr = alloca i32, align 4
@@ -18,12 +18,12 @@ entry:
   ret i32 %call, !dbg !21
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
 declare i32 @foo(i32*) #2
 
-; Function Attrs: nounwind ssp
+
 define i32 @baz(i32 %b) #0 {
 entry:
   %b.addr = alloca i32, align 4

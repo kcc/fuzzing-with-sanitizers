@@ -1,23 +1,23 @@
-; RUN: llc < %s -march=x86-64 -mtriple=x86_64-unknown-unknown -mcpu=generic | FileCheck %s
-; Both functions should produce the same code. The presence of debug values
-; should not affect the scheduling strategy.
-; Generated from:
-; char argc;
-; class C {
-; public:
-;   int test(char ,char ,char ,...);
-; };
-; void foo() {
-;   C c;
-;   char lc = argc;
-;   c.test(0,argc,0,lc);
-;   c.test(0,argc,0,lc);
-; }
-;
-; with
-; clang -O2 -c test.cpp -emit-llvm -S
-; clang -O2 -c test.cpp -emit-llvm -S -g
-;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 %class.C = type { i8 }
@@ -26,9 +26,9 @@
 
 declare i32 @test_function(%class.C*, i8 signext, i8 signext, i8 signext, ...)
 
-; CHECK-LABEL: test_without_debug
-; CHECK: movl [[A:%[a-z]+]], [[B:%[a-z]+]]
-; CHECK-NEXT: movl [[A]], [[C:%[a-z]+]]
+
+
+
 define void @test_without_debug() {
 entry:
   %c = alloca %class.C, align 1
@@ -40,9 +40,9 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: test_with_debug
-; CHECK: movl [[A]], [[B]]
-; CHECK-NEXT: movl [[A]], [[C]]
+
+
+
 define void @test_with_debug() {
 entry:
   %c = alloca %class.C, align 1

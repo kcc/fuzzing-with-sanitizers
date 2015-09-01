@@ -1,6 +1,6 @@
-; RUN: llvm-as < %s | llvm-dis | not grep ptrtoint
-; RUN: verify-uselistorder %s
-; All of these should be eliminable
+
+
+
 
 
 define i32 @foo() {

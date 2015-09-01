@@ -1,10 +1,10 @@
-; RUN: llc -O3 -march=hexagon -mcpu=hexagonv5 < %s | FileCheck %s
-;
-; Generate hardware loop when loop 'latch' block is different
-; from the loop 'exiting' block.
 
-; CHECK: loop0(.LBB{{.}}_{{.}}, r{{[0-9]+}})
-; CHECK: endloop0
+
+
+
+
+
+
 
 define void @test(i32* nocapture %pFL, i16 signext %nBS, i16* nocapture readonly %pHT) #0 {
 entry:

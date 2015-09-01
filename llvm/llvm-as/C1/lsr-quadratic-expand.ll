@@ -1,10 +1,10 @@
-; RUN: llc -march=x86-64 < %s
+
 
 define void @dw2102_i2c_transfer() nounwind {
 entry:
   br label %bb
 
-bb:                                               ; preds = %bb, %entry
+bb:                                               
   %z = phi i64 [ 0, %entry ], [ %z3, %bb ]
   %z1 = phi i16 [ undef, %entry ], [ %z6, %bb ]
   %z2 = phi i32 [ 0, %entry ], [ %z8, %bb ]

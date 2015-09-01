@@ -1,10 +1,10 @@
-; RUN: opt < %s -instcombine -S | FileCheck %s
+
 
 define void @entry() nounwind {
 entry:
   br label %for.cond
 
-; CHECK: br label %for.cond
+
 for.cond:
   %local = phi <1 x i32> [ <i32 0>, %entry ], [ %phi2, %cond.end47 ]
   %phi3 = sub <1 x i32> zeroinitializer, %local

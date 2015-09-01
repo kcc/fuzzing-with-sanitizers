@@ -1,32 +1,32 @@
-; RUN: llc < %s -mtriple thumbv7s-apple-darwin  -asm-verbose=false | FileCheck %s
+
 
 declare i32 @foo(i32)
 declare i8* @bar(i32, i8*, i8*)
 
-; Verify that we don't try to iteratively re-ifconvert a block with a
-; (predicated) indirectbr terminator.
-; If we do, we would ignore its fallthrough successor.
 
 
-; CHECK-LABEL: test:
-; CHECK:       cmp {{.*}}, #21
-; CHECK-NEXT:  itt eq
-; CHECK-NEXT:  streq.w
-; CHECK-NEXT:  moveq pc
-; CHECK-NEXT: LBB{{[0-9_]+}}:
-; CHECK-NEXT:  cmp {{.*}}, #42
-; CHECK-NEXT:  itt ne
-; CHECK-NEXT:  strne.w
-; CHECK-NEXT:  movne pc
-; CHECK-NEXT: Ltmp
-; CHECK-NEXT: LBB0_2:
-; CHECK-NEXT:  movw r0, #1234
-; CHECK-NEXT:  b [[FOOCALL:LBB[0-9_]+]]
-; CHECK-NEXT: Ltmp
-; CHECK-NEXT: LBB{{[0-9_]+}}:
-; CHECK-NEXT:  movw r0, #4567
-; CHECK-NEXT: [[FOOCALL]]:
-; CHECK-NEXT:  blx _foo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define i32 @test(i32 %a, i32 %a2, i32* %p, i32* %p2) {
 entry:

@@ -1,6 +1,6 @@
-; RUN: llc < %s -march=ppc32 | FileCheck %s
-; RUN: llc < %s -march=ppc64 -mcpu=a2 | FileCheck %s
-; RUN: llc < %s -march=ppc32 -mcpu=440 | FileCheck %s -check-prefix=BE-CHK
+
+
+
 
 define i32 @has_a_fence(i32 %a, i32 %b) nounwind {
 entry:
@@ -10,16 +10,16 @@ entry:
 
 IfEqual:
   fence release
-; CHECK: sync
-; CHECK-NOT: msync
-; BE-CHK: msync
+
+
+
   br label %end
 
 IfUnequal:
   fence release
-; CHECK: sync
-; CHECK-NOT: msync
-; BE-CHK: msync
+
+
+
   ret i32 0
 
 end:

@@ -1,4 +1,4 @@
-; RUN: llc  -march=mipsel -mcpu=mips16 -relocation-model=pic -O3 < %s | FileCheck %s -check-prefix=16
+
 
 @.str = private unnamed_addr constant [8 x i8] c"%d, %d\0A\00", align 1
 
@@ -7,9 +7,9 @@ entry:
   %0 = atomicrmw add i32* %mem, i32 %val seq_cst
   %add = add nsw i32 %0, %c
   ret i32 %add
-; 16-LABEL: foo:
-; 16:	lw	${{[0-9]+}}, %call16(__sync_synchronize)(${{[0-9]+}})
-; 16: 	lw	${{[0-9]+}}, %call16(__sync_fetch_and_add_4)(${{[0-9]+}})
+
+
+
 }
 
 define i32 @main() nounwind {
@@ -27,11 +27,11 @@ entry:
   %4 = atomicrmw xchg i32* %x, i32 1 seq_cst
   %5 = load volatile i32, i32* %x, align 4
   %call3 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([8 x i8], [8 x i8]* @.str, i32 0, i32 0), i32 %4, i32 %5) nounwind
-; 16-LABEL: main:
-; 16:	lw	${{[0-9]+}}, %call16(__sync_synchronize)(${{[0-9]+}})
-; 16: 	lw	${{[0-9]+}}, %call16(__sync_fetch_and_add_4)(${{[0-9]+}})
-; 16:	lw	${{[0-9]+}}, %call16(__sync_val_compare_and_swap_4)(${{[0-9]+}})
-; 16:	lw	${{[0-9]+}}, %call16(__sync_lock_test_and_set_4)(${{[0-9]+}})
+
+
+
+
+
 
   ret i32 0
 }

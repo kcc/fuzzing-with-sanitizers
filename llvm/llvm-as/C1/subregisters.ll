@@ -1,33 +1,33 @@
-; RUN: llc -mtriple=x86_64-apple-darwin %s -o %t.o -filetype=obj -O0
-; RUN: llvm-dwarfdump %t.o | FileCheck %s
-;
-; Test that on x86_64, the 32-bit subregister esi is emitted as
-; DW_OP_piece 32 of the 64-bit rsi.
-;
-; rdar://problem/16015314
-;
-; CHECK:  DW_AT_location [DW_FORM_block1]       (<0x03> 54 93 04 )
-; CHECK:  DW_AT_name [DW_FORM_strp]{{.*}} "a"
-;
-; struct bar {
-;   int a;
-;   int b;
-; };
-;
-; void doSomething() __attribute__ ((noinline));
-;
-; void doSomething(struct bar *b)
-; {
-;   int a = b->a;
-;   printf("%d\n", a); // set breakpoint here
-; }
-;
-; int main()
-; {
-;   struct bar myBar = { 3, 4 };
-;   doSomething(&myBar);
-;   return 0;
-; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.9.0"
@@ -37,7 +37,7 @@ target triple = "x86_64-apple-macosx10.9.0"
 @.str = private unnamed_addr constant [4 x i8] c"%d\0A\00", align 1
 @main.myBar = private unnamed_addr constant %struct.bar { i32 3, i32 4 }, align 4
 
-; Function Attrs: noinline nounwind ssp uwtable
+
 define void @doSomething(%struct.bar* nocapture readonly %b) #0 {
 entry:
   tail call void @llvm.dbg.value(metadata %struct.bar* %b, i64 0, metadata !15, metadata !DIExpression()), !dbg !25
@@ -48,13 +48,13 @@ entry:
   ret void, !dbg !33
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
-; Function Attrs: nounwind
+
 declare i32 @printf(i8* nocapture readonly, ...) #2
 
-; Function Attrs: nounwind ssp uwtable
+
 define i32 @main() #3 {
 entry:
   %myBar = alloca i64, align 8, !dbg !34
@@ -65,7 +65,7 @@ entry:
   ret i32 0, !dbg !36
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #1
 
 attributes #0 = { noinline nounwind ssp uwtable }

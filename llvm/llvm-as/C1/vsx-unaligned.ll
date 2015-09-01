@@ -1,6 +1,6 @@
-; Verify that we can create unaligned loads and stores from VSX intrinsics.
 
-; RUN: opt < %s -instcombine -S | FileCheck %s
+
+
 
 target triple = "powerpc64-unknown-linux-gnu"
 
@@ -32,11 +32,11 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: @test1
-; CHECK: %0 = load <4 x i32>, <4 x i32>* bitcast (<4 x float>* @vf to <4 x i32>*), align 1
-; CHECK: store <4 x i32> %0, <4 x i32>* bitcast (<4 x float>* @res_vf to <4 x i32>*), align 1
-; CHECK: %1 = load <2 x double>, <2 x double>* @vd, align 1
-; CHECK: store <2 x double> %1, <2 x double>* @res_vd, align 1
+
+
+
+
+
 
 declare <4 x i32> @llvm.ppc.vsx.lxvw4x(i8*)
 declare void @llvm.ppc.vsx.stxvw4x(<4 x i32>, i8*)

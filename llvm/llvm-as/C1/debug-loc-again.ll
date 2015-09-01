@@ -1,14 +1,14 @@
-; RUN: llvm-as < %s | llvm-bcanalyzer -dump | FileCheck %s -check-prefix=BC
-; PR23436: Actually emit DEBUG_LOC_AGAIN records.
 
-; BC: <DEBUG_LOC op
-; BC: <DEBUG_LOC_AGAIN/>
-; BC: <DEBUG_LOC op
-; BC: <DEBUG_LOC_AGAIN/>
 
-; RUN: llvm-as < %s | llvm-dis | FileCheck %s
-; RUN: verify-uselistorder %s
-; Check that this round-trips correctly.
+
+
+
+
+
+
+
+
+
 
 define void @foo() {
 entry:
@@ -18,13 +18,13 @@ entry:
   ret void, !dbg !4
 }
 
-; CHECK-LABEL: entry:
-; CHECK-NEXT: %a = add i32 0, 0, !dbg ![[LINE1:[0-9]+]]
-; CHECK-NEXT: %b = add i32 0, 1, !dbg ![[LINE1]]
-; CHECK-NEXT: %c = add i32 0, 2, !dbg ![[LINE2:[0-9]+]]
-; CHECK-NEXT: ret void, !dbg ![[LINE2]]
-; CHECK: ![[LINE1]] = !DILocation(line: 1,
-; CHECK: ![[LINE2]] = !DILocation(line: 2,
+
+
+
+
+
+
+
 
 !llvm.module.flags = !{!0}
 

@@ -1,6 +1,6 @@
-; RUN: %lli %s > /dev/null
 
-; test return instructions
+
+
 define void @test1() {
 	ret void
 }

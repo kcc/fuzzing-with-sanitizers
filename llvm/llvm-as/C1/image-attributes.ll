@@ -1,12 +1,12 @@
-; RUN: llc -march=r600 -mcpu=juniper < %s | FileCheck -check-prefix=EG -check-prefix=FUNC %s
 
-; === WIDTH ==================================================================
-; 9 implicit args = 9 dwords to first image argument.
-; First width at dword index 9+1 -> KC0[2].Z
 
-; FUNC-LABEL: {{^}}width_2d:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], KC0[2].Z
+
+
+
+
+
+
+
 define void @width_2d (%opencl.image2d_t addrspace(1)* %in,
                        i32 addrspace(1)* %out) {
 entry:
@@ -17,9 +17,9 @@ entry:
   ret void
 }
 
-; FUNC-LABEL: {{^}}width_3d:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], KC0[2].Z
+
+
+
 define void @width_3d (%opencl.image3d_t addrspace(1)* %in,
                        i32 addrspace(1)* %out) {
 entry:
@@ -31,12 +31,12 @@ entry:
 }
 
 
-; === HEIGHT =================================================================
-; First height at dword index 9+2 -> KC0[2].W
 
-; FUNC-LABEL: {{^}}height_2d:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], KC0[2].W
+
+
+
+
+
 define void @height_2d (%opencl.image2d_t addrspace(1)* %in,
                         i32 addrspace(1)* %out) {
 entry:
@@ -47,9 +47,9 @@ entry:
   ret void
 }
 
-; FUNC-LABEL: {{^}}height_3d:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], KC0[2].W
+
+
+
 define void @height_3d (%opencl.image3d_t addrspace(1)* %in,
                         i32 addrspace(1)* %out) {
 entry:
@@ -61,12 +61,12 @@ entry:
 }
 
 
-; === DEPTH ==================================================================
-; First depth at dword index 9+3 -> KC0[3].X
 
-; FUNC-LABEL: {{^}}depth_3d:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], KC0[3].X
+
+
+
+
+
 define void @depth_3d (%opencl.image3d_t addrspace(1)* %in,
                        i32 addrspace(1)* %out) {
 entry:
@@ -78,12 +78,12 @@ entry:
 }
 
 
-; === CHANNEL DATA TYPE ======================================================
-; First channel data type at dword index 9+4 -> KC0[3].Y
 
-; FUNC-LABEL: {{^}}data_type_2d:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], KC0[3].Y
+
+
+
+
+
 define void @data_type_2d (%opencl.image2d_t addrspace(1)* %in,
                            i32 addrspace(1)* %out) {
 entry:
@@ -94,9 +94,9 @@ entry:
   ret void
 }
 
-; FUNC-LABEL: {{^}}data_type_3d:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], KC0[3].Y
+
+
+
 define void @data_type_3d (%opencl.image3d_t addrspace(1)* %in,
                                      i32 addrspace(1)* %out) {
 entry:
@@ -108,12 +108,12 @@ entry:
 }
 
 
-; === CHANNEL ORDER ==========================================================
-; First channel order at dword index 9+5 -> KC0[3].Z
 
-; FUNC-LABEL: {{^}}channel_order_2d:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], KC0[3].Z
+
+
+
+
+
 define void @channel_order_2d (%opencl.image2d_t addrspace(1)* %in,
                                i32 addrspace(1)* %out) {
 entry:
@@ -124,9 +124,9 @@ entry:
   ret void
 }
 
-; FUNC-LABEL: {{^}}channel_order_3d:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], KC0[3].Z
+
+
+
 define void @channel_order_3d (%opencl.image3d_t addrspace(1)* %in,
                                          i32 addrspace(1)* %out) {
 entry:
@@ -138,14 +138,14 @@ entry:
 }
 
 
-; === 2ND IMAGE ==============================================================
-; 9 implicit args + 2 explicit args + 5 implicit args for 1st image argument
-;   = 16 dwords to 2nd image argument.
-; Height of the second image is at 16+2 -> KC0[4].Z
-;
-; FUNC-LABEL: {{^}}image_arg_2nd:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], KC0[4].Z
+
+
+
+
+
+
+
+
 define void @image_arg_2nd (%opencl.image3d_t addrspace(1)* %in1,
                             i32 %x,
                             %opencl.image2d_t addrspace(1)* %in2,

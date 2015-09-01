@@ -1,28 +1,28 @@
-; RUN: opt < %s -indvars -loop-deletion -simplifycfg | opt \
-; RUN:     -analyze -loops | not grep "^Loop Containing" 
-; PR1179
+
+
+
 
 define i32 @ltst(i32 %x) {
 entry:
-        icmp sgt i32 %x, 0              ; <i1>:0 [#uses=1]
+        icmp sgt i32 %x, 0              
         br i1 %0, label %bb.preheader, label %bb8
 
-bb.preheader:           ; preds = %entry
+bb.preheader:           
         br label %bb
 
-bb:             ; preds = %bb, %bb.preheader
-        %i.01.0 = phi i32 [ %tmp4, %bb ], [ 0, %bb.preheader ]          ; <i32> [#uses=1]
-        %j.03.0 = phi i32 [ %tmp2, %bb ], [ 0, %bb.preheader ]          ; <i32> [#uses=1]
-        %tmp4 = add i32 %i.01.0, 1              ; <i32> [#uses=2]
-        %tmp2 = add i32 %j.03.0, 1              ; <i32> [#uses=2]
-        icmp slt i32 %tmp4, %x          ; <i1>:1 [#uses=1]
+bb:             
+        %i.01.0 = phi i32 [ %tmp4, %bb ], [ 0, %bb.preheader ]          
+        %j.03.0 = phi i32 [ %tmp2, %bb ], [ 0, %bb.preheader ]          
+        %tmp4 = add i32 %i.01.0, 1              
+        %tmp2 = add i32 %j.03.0, 1              
+        icmp slt i32 %tmp4, %x          
         br i1 %1, label %bb, label %bb8.loopexit
 
-bb8.loopexit:           ; preds = %bb
+bb8.loopexit:           
         br label %bb8
 
-bb8:            ; preds = %bb8.loopexit, %entry
-        %j.03.1 = phi i32 [ 0, %entry ], [ %tmp2, %bb8.loopexit ]               ; <i32> [#uses=1]
+bb8:            
+        %j.03.1 = phi i32 [ 0, %entry ], [ %tmp2, %bb8.loopexit ]               
         ret i32 %j.03.1
 }
 

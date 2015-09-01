@@ -1,7 +1,7 @@
-; RUN: llc < %s -mtriple=x86_64-apple-darwin | FileCheck %s
-; PR3168
 
-; CHECK-LABEL: append
+
+
+
 
 define i32* @append() gc "ocaml" {
 entry:

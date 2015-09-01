@@ -1,9 +1,9 @@
-; RUN: llc < %s -mtriple=armv7-apple-ios | FileCheck %s
-; This testcase makes sure we can handle invoke @llvm.donothing without
-; assertion failure.
-; <rdar://problem/13228754> & <rdar://problem/13316637>
 
-; CHECK: .globl  _foo
+
+
+
+
+
 define void @foo() personality i8* bitcast (i32 (...)* @__gxx_personality_sj0 to i8*) {
 invoke.cont:
   invoke void @callA() 
@@ -33,7 +33,7 @@ eh.resume:
   resume { i8*, i32 } zeroinitializer
 }
 
-; CHECK: .globl _bar
+
 define linkonce_odr void @bar(i32* %a) personality i8* bitcast (i32 (...)* @__gxx_personality_sj0 to i8*) {
 if.end.i.i.i:
   invoke void @llvm.donothing()

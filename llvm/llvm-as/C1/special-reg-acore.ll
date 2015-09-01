@@ -1,20 +1,20 @@
-; RUN: llc < %s -mtriple=arm-none-eabi -mcpu=cortex-a8 2>&1 | FileCheck %s --check-prefix=ACORE
-; RUN: not llc < %s -mtriple=thumb-none-eabi -mcpu=cortex-m4 2>&1 | FileCheck %s --check-prefix=MCORE
 
-; MCORE: LLVM ERROR: Invalid register name "cpsr".
+
+
+
 
 define i32 @read_cpsr() nounwind {
-  ; ACORE-LABEL: read_cpsr:
-  ; ACORE: mrs r0, apsr
+  
+  
   %reg = call i32 @llvm.read_register.i32(metadata !1)
   ret i32 %reg
 }
 
 define i32 @read_aclass_registers() nounwind {
 entry:
-  ; ACORE-LABEL: read_aclass_registers:
-  ; ACORE: mrs r0, apsr
-  ; ACORE: mrs r1, spsr
+  
+  
+  
 
   %0 = call i32 @llvm.read_register.i32(metadata !0)
   %1 = call i32 @llvm.read_register.i32(metadata !1)
@@ -26,20 +26,20 @@ entry:
 
 define void @write_aclass_registers(i32 %x) nounwind {
 entry:
-  ; ACORE-LABEL: write_aclass_registers:
-  ; ACORE:   msr APSR_nzcvq, r0
-  ; ACORE:   msr APSR_g, r0
-  ; ACORE:   msr APSR_nzcvqg, r0
-  ; ACORE:   msr CPSR_c, r0
-  ; ACORE:   msr CPSR_x, r0
-  ; ACORE:   msr APSR_g, r0
-  ; ACORE:   msr APSR_nzcvq, r0
-  ; ACORE:   msr CPSR_fsxc, r0
-  ; ACORE:   msr SPSR_c, r0
-  ; ACORE:   msr SPSR_x, r0
-  ; ACORE:   msr SPSR_s, r0
-  ; ACORE:   msr SPSR_f, r0
-  ; ACORE:   msr SPSR_fsxc, r0
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
   call void @llvm.write_register.i32(metadata !3, i32 %x)
   call void @llvm.write_register.i32(metadata !4, i32 %x)

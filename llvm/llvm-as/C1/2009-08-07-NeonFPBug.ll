@@ -1,4 +1,4 @@
-; RUN: llc < %s -mtriple=thumbv7-apple-darwin10 -mcpu=cortex-a8
+
 
 	%struct.FILE = type { i8*, i32, i32, i16, i16, %struct.__sbuf, i32, i8*, i32 (i8*)*, i32 (i8*, i8*, i32)*, i64 (i8*, i64, i32)*, i32 (i8*, i8*, i32)*, %struct.__sbuf, %struct.__sFILEX*, i32, [3 x i8], [1 x i8], %struct.__sbuf, i32, i64 }
 	%struct.JHUFF_TBL = type { [17 x i8], [256 x i8], i32 }
@@ -32,49 +32,49 @@ define void @jpeg_idct_float(%struct.jpeg_decompress_struct* nocapture %cinfo, %
 entry:
 	br label %bb
 
-bb:		; preds = %bb, %entry
-	%0 = load float, float* undef, align 4		; <float> [#uses=1]
-	%1 = fmul float undef, %0		; <float> [#uses=2]
-	%tmp73 = add i32 0, 224		; <i32> [#uses=1]
-	%scevgep74 = getelementptr i8, i8* null, i32 %tmp73		; <i8*> [#uses=1]
-	%scevgep7475 = bitcast i8* %scevgep74 to float*		; <float*> [#uses=1]
-	%2 = load float, float* null, align 4		; <float> [#uses=1]
-	%3 = fmul float 0.000000e+00, %2		; <float> [#uses=2]
-	%4 = fadd float %1, %3		; <float> [#uses=1]
-	%5 = fsub float %1, %3		; <float> [#uses=2]
-	%6 = fadd float undef, 0.000000e+00		; <float> [#uses=2]
-	%7 = fmul float undef, 0x3FF6A09E60000000		; <float> [#uses=1]
-	%8 = fsub float %7, %6		; <float> [#uses=2]
-	%9 = fsub float %4, %6		; <float> [#uses=1]
-	%10 = fadd float %5, %8		; <float> [#uses=2]
-	%11 = fsub float %5, %8		; <float> [#uses=1]
-	%12 = sitofp i16 undef to float		; <float> [#uses=1]
-	%13 = fmul float %12, 0.000000e+00		; <float> [#uses=2]
-	%14 = sitofp i16 undef to float		; <float> [#uses=1]
-	%15 = load float, float* %scevgep7475, align 4		; <float> [#uses=1]
-	%16 = fmul float %14, %15		; <float> [#uses=2]
-	%17 = fadd float undef, undef		; <float> [#uses=2]
-	%18 = fadd float %13, %16		; <float> [#uses=2]
-	%19 = fsub float %13, %16		; <float> [#uses=1]
-	%20 = fadd float %18, %17		; <float> [#uses=2]
-	%21 = fsub float %18, %17		; <float> [#uses=1]
-	%22 = fmul float %21, 0x3FF6A09E60000000		; <float> [#uses=1]
-	%23 = fmul float undef, 0x3FFD906BC0000000		; <float> [#uses=2]
-	%24 = fmul float %19, 0x3FF1517A80000000		; <float> [#uses=1]
-	%25 = fsub float %24, %23		; <float> [#uses=1]
-	%26 = fadd float undef, %23		; <float> [#uses=1]
-	%27 = fsub float %26, %20		; <float> [#uses=3]
-	%28 = fsub float %22, %27		; <float> [#uses=2]
-	%29 = fadd float %25, %28		; <float> [#uses=1]
-	%30 = fadd float undef, %20		; <float> [#uses=1]
+bb:		
+	%0 = load float, float* undef, align 4		
+	%1 = fmul float undef, %0		
+	%tmp73 = add i32 0, 224		
+	%scevgep74 = getelementptr i8, i8* null, i32 %tmp73		
+	%scevgep7475 = bitcast i8* %scevgep74 to float*		
+	%2 = load float, float* null, align 4		
+	%3 = fmul float 0.000000e+00, %2		
+	%4 = fadd float %1, %3		
+	%5 = fsub float %1, %3		
+	%6 = fadd float undef, 0.000000e+00		
+	%7 = fmul float undef, 0x3FF6A09E60000000		
+	%8 = fsub float %7, %6		
+	%9 = fsub float %4, %6		
+	%10 = fadd float %5, %8		
+	%11 = fsub float %5, %8		
+	%12 = sitofp i16 undef to float		
+	%13 = fmul float %12, 0.000000e+00		
+	%14 = sitofp i16 undef to float		
+	%15 = load float, float* %scevgep7475, align 4		
+	%16 = fmul float %14, %15		
+	%17 = fadd float undef, undef		
+	%18 = fadd float %13, %16		
+	%19 = fsub float %13, %16		
+	%20 = fadd float %18, %17		
+	%21 = fsub float %18, %17		
+	%22 = fmul float %21, 0x3FF6A09E60000000		
+	%23 = fmul float undef, 0x3FFD906BC0000000		
+	%24 = fmul float %19, 0x3FF1517A80000000		
+	%25 = fsub float %24, %23		
+	%26 = fadd float undef, %23		
+	%27 = fsub float %26, %20		
+	%28 = fsub float %22, %27		
+	%29 = fadd float %25, %28		
+	%30 = fadd float undef, %20		
 	store float %30, float* undef, align 4
-	%31 = fadd float %10, %27		; <float> [#uses=1]
+	%31 = fadd float %10, %27		
 	store float %31, float* undef, align 4
-	%32 = fsub float %10, %27		; <float> [#uses=1]
+	%32 = fsub float %10, %27		
 	store float %32, float* undef, align 4
-	%33 = fadd float %11, %28		; <float> [#uses=1]
+	%33 = fadd float %11, %28		
 	store float %33, float* undef, align 4
-	%34 = fsub float %9, %29		; <float> [#uses=1]
+	%34 = fsub float %9, %29		
 	store float %34, float* undef, align 4
 	br label %bb
 }

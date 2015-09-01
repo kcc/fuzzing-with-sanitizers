@@ -1,4 +1,4 @@
-; RUN: llc < %s
+
 target triple = "armv7-none-linux-gnueabi"
 
 define <3 x i64> @shuffle(i1 %dec1, i1 %dec0, <3 x i64> %b) {

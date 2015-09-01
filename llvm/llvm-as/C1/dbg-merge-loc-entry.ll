@@ -1,12 +1,12 @@
-; RUN: llc < %s -o %t -filetype=obj
-; RUN: llvm-dwarfdump -debug-dump=info %t | FileCheck %s
-; RUN: llc < %s -o %t -filetype=obj -regalloc=basic
-; RUN: llvm-dwarfdump -debug-dump=info %t | FileCheck %s
+
+
+
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64"
 target triple = "x86_64-apple-darwin8"
 
-;CHECK: DW_AT_location{{.*}}(<0x1> 55 )
+
 
 %0 = type { i64, i1 }
 
@@ -18,16 +18,16 @@ entry:
   tail call void @llvm.dbg.value(metadata i64 0, i64 0, metadata !17, metadata !DIExpression()), !dbg !21
   br i1 undef, label %bb2, label %bb4, !dbg !22
 
-bb2:                                              ; preds = %entry
+bb2:                                              
   br label %bb4, !dbg !23
 
-bb4:                                              ; preds = %bb2, %entry
+bb4:                                              
   br i1 undef, label %__udivmodti4.exit, label %bb82.i, !dbg !24
 
-bb82.i:                                           ; preds = %bb4
+bb82.i:                                           
   unreachable
 
-__udivmodti4.exit:                                ; preds = %bb4
+__udivmodti4.exit:                                
   ret i128 undef, !dbg !27
 }
 

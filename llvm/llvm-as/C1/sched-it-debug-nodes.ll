@@ -1,12 +1,12 @@
-; RUN: llc -mtriple thumbv7 -print-before=post-RA-sched -print-after=post-RA-sched %s -o /dev/null 2>&1 | FileCheck %s
 
-; ModuleID = '<stdin>'
+
+
 target datalayout = "e-m:e-p:32:32-i64:64-v128:64:128-a:0:32-n32-S64"
 target triple = "thumbv7"
 
 %struct.s = type opaque
 
-; Function Attrs: nounwind
+
 define arm_aapcscc i32 @f(%struct.s* %s, i32 %u, i8* %b, i32 %n) #0 {
 entry:
   tail call void @llvm.dbg.value(metadata %struct.s* %s, i64 0, metadata !19, metadata !28), !dbg !29
@@ -16,29 +16,29 @@ entry:
   %cmp = icmp ult i32 %n, 4, !dbg !30
   br i1 %cmp, label %return, label %if.end, !dbg !32
 
-if.end:                                           ; preds = %entry
+if.end:                                           
   tail call arm_aapcscc void @g(%struct.s* %s, i8* %b, i32 %n) #3, !dbg !33
   br label %return, !dbg !34
 
-return:                                           ; preds = %entry, %if.end
+return:                                           
   %retval.0 = phi i32 [ 0, %if.end ], [ -1, %entry ]
   ret i32 %retval.0, !dbg !35
 }
 
-; NOTE: This is checking that the register in the DEBUG_VALUE node is not
-; accidentally being marked as KILL.  The DBG_VALUE node gets introduced in
-; If-Conversion, and gets bundled into the IT block.  The Post RA Scheduler
-; attempts to schedule the Machine Instr, and tries to tag the register in the
-; debug value as KILL'ed, resulting in a DEBUG_VALUE node changing codegen!  (or
-; hopefully, triggering an assert).
 
-; CHECK: BUNDLE %ITSTATE<imp-def,dead>
-; CHECK:  * DBG_VALUE %R1, %noreg, !"u"
-; CHECK-NOT:  * DBG_VALUE %R1<kill>, %noreg, !"u"
+
+
+
+
+
+
+
+
+
 
 declare arm_aapcscc void @g(%struct.s*, i8*, i32) #1
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #2
 
 attributes #0 = { nounwind "less-precise-fpmad"="false" "no-frame-pointer-elim"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "no-realign-stack" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

@@ -1,12 +1,12 @@
-; RUN: opt < %s  -loop-vectorize -force-vector-interleave=4 -force-vector-width=4 -debug-only=loop-vectorize -stats -S 2>&1 | FileCheck %s
-; REQUIRES: asserts
 
-;
-; We have 2 loops, one of them is vectorizable and the second one is not.
-;
 
-; CHECK: 2 loop-vectorize               - Number of loops analyzed for vectorization
-; CHECK: 1 loop-vectorize               - Number of loops vectorized
+
+
+
+
+
+
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
@@ -18,7 +18,7 @@ entry:
   %or.cond = or i1 %cmp1, %cmp21
   br i1 %or.cond, label %for.end, label %for.body
 
-for.body:                                         ; preds = %entry, %for.body
+for.body:                                         
   %indvars.iv2 = phi i64 [ %indvars.iv.next, %for.body ], [ 0, %entry ]
   %arrayidx = getelementptr inbounds float, float* %a, i64 %indvars.iv2
   %0 = load float, float* %arrayidx, align 4
@@ -28,7 +28,7 @@ for.body:                                         ; preds = %entry, %for.body
   %cmp2 = icmp sgt i64 %indvars.iv.next, %size
   br i1 %cmp2, label %for.end, label %for.body
 
-for.end:                                          ; preds = %entry, %for.body
+for.end:                                          
   ret void
 }
 
@@ -39,7 +39,7 @@ entry:
   %or.cond = or i1 %cmp1, %cmp21
   br i1 %or.cond, label %for.end, label %for.body
 
-for.body:                                         ; preds = %entry, %for.body
+for.body:                                         
   %indvars.iv2 = phi i64 [ %indvars.iv.next, %for.body ], [ 0, %entry ]
   %0 = add nsw i64 %indvars.iv2, -5
   %arrayidx = getelementptr inbounds float, float* %a, i64 %0
@@ -54,6 +54,6 @@ for.body:                                         ; preds = %entry, %for.body
   %cmp2 = icmp sgt i64 %indvars.iv.next, %size
   br i1 %cmp2, label %for.end, label %for.body
 
-for.end:                                          ; preds = %entry, %for.body
+for.end:                                          
   ret void
 }

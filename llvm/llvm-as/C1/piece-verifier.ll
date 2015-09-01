@@ -1,8 +1,8 @@
-; RUN: not llvm-as -disable-output < %s 2>&1 | FileCheck %s
+
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.9.0"
 
-; Function Attrs: nounwind ssp uwtable
+
 define i32 @foo(i64 %s.coerce0, i32 %s.coerce1) #0 {
 entry:
   call void @llvm.dbg.value(metadata i64 %s.coerce0, i64 0, metadata !20, metadata !24), !dbg !21
@@ -10,10 +10,10 @@ entry:
   ret i32 %s.coerce1, !dbg !23
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #1
 
 attributes #0 = { nounwind ssp uwtable "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" }
@@ -49,8 +49,8 @@ attributes #1 = { nounwind readnone }
 !23 = !DILocation(line: 4, scope: !4)
 !24 = !DIExpression(DW_OP_deref, DW_OP_bit_piece, 0, 64)
 !25 = !{}
-; This expression has elements after DW_OP_bit_piece.
-; CHECK: invalid expression
-; CHECK-NEXT: !DIExpression({{[0-9]+}}, 64, 32, {{[0-9]+}})
-; CHECK-NOT: invalid expression
+
+
+
+
 !27 = !DIExpression(DW_OP_bit_piece, 64, 32, DW_OP_deref)

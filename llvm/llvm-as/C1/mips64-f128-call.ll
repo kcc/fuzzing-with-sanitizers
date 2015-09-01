@@ -1,11 +1,11 @@
-; RUN: llc -march=mips64el -mcpu=mips64r2 < %s | FileCheck %s
+
 
 @gld0 = external global fp128
 @gld1 = external global fp128
 
-; CHECK: foo0
-; CHECK: sdc1  $f13, 8(${{[0-9]+}})
-; CHECK: sdc1  $f12, 0(${{[0-9]+}})
+
+
+
 
 define void @foo0(fp128 %a0) {
 entry:
@@ -13,9 +13,9 @@ entry:
   ret void
 }
 
-; CHECK: foo1
-; CHECK: ldc1  $f13, 8(${{[0-9]+}})
-; CHECK: ldc1  $f12, 0(${{[0-9]+}})
+
+
+
 
 define void @foo1() {
 entry:
@@ -26,13 +26,13 @@ entry:
 
 declare void @foo2(fp128)
 
-; CHECK: foo3
-; CHECK: ld   $[[R0:[0-9]+]], %got_disp(gld0)
-; CHECK: sdc1 $f2, 8($[[R0]])
-; CHECK: sdc1 $f0, 0($[[R0]])
-; CHECK: ld   $[[R1:[0-9]+]], %got_disp(gld1)
-; CHECK: ldc1 $f0, 0($[[R1]])
-; CHECK: ldc1 $f2, 8($[[R1]])
+
+
+
+
+
+
+
 
 define fp128 @foo3() {
 entry:

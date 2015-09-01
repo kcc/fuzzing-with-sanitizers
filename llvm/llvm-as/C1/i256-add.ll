@@ -1,6 +1,6 @@
-; RUN: llc < %s -march=x86 > %t
-; RUN: grep adcl %t | count 7
-; RUN: grep sbbl %t | count 7
+
+
+
 
 define void @add(i256* %p, i256* %q) nounwind {
   %a = load i256, i256* %p

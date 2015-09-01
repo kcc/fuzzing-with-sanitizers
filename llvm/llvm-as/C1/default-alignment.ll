@@ -1,4 +1,4 @@
-; RUN: opt -verify -instcombine < %s
+
 %Foo = type <{ i8, x86_fp80 }>
 
 define i8 @t(%Foo* %arg) {

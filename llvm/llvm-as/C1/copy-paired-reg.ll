@@ -1,5 +1,5 @@
-; RUN: llc < %s -mtriple=armv7-apple-ios -verify-machineinstrs
-; RUN: llc < %s -mtriple=armv7-linux-gnueabi -verify-machineinstrs
+
+
 
 define void @f() {
   %a = alloca i8, i32 8, align 8

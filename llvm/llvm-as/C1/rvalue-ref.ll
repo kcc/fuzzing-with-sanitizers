@@ -1,7 +1,7 @@
-; RUN: llc -mtriple=x86_64-apple-darwin %s -o %t -filetype=obj -O0
-; RUN: llvm-dwarfdump -debug-dump=info %t | FileCheck %s
 
-; CHECK: DW_TAG_rvalue_reference_type
+
+
+
 
 @.str = private unnamed_addr constant [4 x i8] c"%d\0A\00", align 1
 

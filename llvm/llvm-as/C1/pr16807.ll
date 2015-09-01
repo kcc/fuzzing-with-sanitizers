@@ -1,4 +1,4 @@
-; RUN: llc < %s -mtriple=x86_64-linux-gnu -mcpu=core-avx-i | FileCheck %s
+
 
 define <16 x i16> @f_fu(<16 x i16> %bf) {
 allocas:
@@ -6,13 +6,13 @@ allocas:
   ret <16 x i16> %avg.i.i
 }
 
-; CHECK: f_fu
-; CHECK: psraw
-; CHECK: psrlw
-; CHECK: paddw
-; CHECK: psraw
-; CHECK: psraw
-; CHECK: psrlw
-; CHECK: paddw
-; CHECK: psraw
-; CHECK: ret
+
+
+
+
+
+
+
+
+
+

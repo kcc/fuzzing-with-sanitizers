@@ -1,4 +1,4 @@
-;RUN: llc < %s -march=r600 -mcpu=cayman
+
 
 define void @main(<4 x float> inreg, <4 x float> inreg) #0 {
 main_body:
@@ -43,13 +43,13 @@ main_body:
   ret void
 }
 
-; Function Attrs: readnone
+
 declare <4 x float> @llvm.AMDGPU.cube(<4 x float>) #1
 
-; Function Attrs: readnone
+
 declare float @fabs(float) #1
 
-; Function Attrs: readnone
+
 declare <4 x float> @llvm.AMDGPU.tex(<4 x float>, i32, i32, i32) #1
 
 declare void @llvm.R600.store.swizzle(<4 x float>, i32, i32)

@@ -1,5 +1,5 @@
-; RUN: opt < %s -analyze -basicaa -da
-;; Check that this code doesn't abort. Test case is reduced version of lnt Polybench benchmark test case dynprog.
+
+
 
 target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
@@ -9,12 +9,12 @@ target triple = "x86_64-unknown-linux-gnu"
 @W = common global [10 x [10 x i32]] zeroinitializer
 @out_l = common global i32 0
 
-; Function Attrs: nounwind uwtable
+
 define void @dep_constraint_crash_test(i32 %M, i32 %N) {
   %1 = icmp sgt i32 %N, 0
   br i1 %1, label %.preheader.lr.ph, label %35
 
-.preheader.lr.ph:                                 ; preds = %0
+.preheader.lr.ph:                                 
   %2 = add nsw i32 %M, -2
   %3 = icmp slt i32 %M, 2
   %4 = add nsw i32 %M, -1
@@ -26,18 +26,18 @@ define void @dep_constraint_crash_test(i32 %M, i32 %N) {
   %9 = sext i32 %2 to i64
   br label %.preheader
 
-.preheader:                                       ; preds = %._crit_edge7, %.preheader.lr.ph
+.preheader:                                       
   %10 = phi i32 [ %out_l.promoted, %.preheader.lr.ph ], [ %33, %._crit_edge7 ]
   %iter.08 = phi i32 [ 0, %.preheader.lr.ph ], [ %34, %._crit_edge7 ]
   br i1 %3, label %._crit_edge7, label %.lr.ph6
 
-.loopexit:                                        ; preds = %._crit_edge, %.lr.ph6
+.loopexit:                                        
   %11 = icmp slt i64 %indvars.iv23, %9
   %indvars.iv.next18 = add nuw nsw i64 %indvars.iv17, 1
   %indvars.iv.next14 = add nuw i32 %indvars.iv13, 1
   br i1 %11, label %.lr.ph6, label %._crit_edge7
 
-.lr.ph6:                                          ; preds = %.preheader, %.loopexit
+.lr.ph6:                                          
   %indvars.iv23 = phi i64 [ %indvars.iv.next24, %.loopexit ], [ 0, %.preheader ]
   %indvars.iv17 = phi i64 [ %indvars.iv.next18, %.loopexit ], [ 1, %.preheader ]
   %indvars.iv13 = phi i32 [ %indvars.iv.next14, %.loopexit ], [ 1, %.preheader ]
@@ -45,7 +45,7 @@ define void @dep_constraint_crash_test(i32 %M, i32 %N) {
   %12 = icmp slt i64 %indvars.iv23, %8
   br i1 %12, label %.lr.ph4, label %.loopexit
 
-.lr.ph4:                                          ; preds = %.lr.ph6, %._crit_edge
+.lr.ph4:                                          
   %indvars.iv19 = phi i64 [ %indvars.iv.next20, %._crit_edge ], [ %indvars.iv17, %.lr.ph6 ]
   %indvars.iv15 = phi i32 [ %indvars.iv.next16, %._crit_edge ], [ %indvars.iv13, %.lr.ph6 ]
   %13 = getelementptr inbounds [10 x [10 x [10 x i32]]], [10 x [10 x [10 x i32]]]* @sum_c, i64 0, i64 %indvars.iv23, i64 %indvars.iv19, i64 %indvars.iv23
@@ -54,7 +54,7 @@ define void @dep_constraint_crash_test(i32 %M, i32 %N) {
   %15 = icmp slt i64 %indvars.iv23, %14
   br i1 %15, label %.lr.ph, label %._crit_edge
 
-.lr.ph:                                           ; preds = %.lr.ph4, %.lr.ph
+.lr.ph:                                           
   %indvars.iv11 = phi i64 [ %indvars.iv.next12, %.lr.ph ], [ %indvars.iv17, %.lr.ph4 ]
   %16 = add nsw i64 %indvars.iv11, -1
   %17 = getelementptr inbounds [10 x [10 x [10 x i32]]], [10 x [10 x [10 x i32]]]* @sum_c, i64 0, i64 %indvars.iv23, i64 %indvars.iv19, i64 %16
@@ -72,7 +72,7 @@ define void @dep_constraint_crash_test(i32 %M, i32 %N) {
   %exitcond = icmp eq i32 %lftr.wideiv, %indvars.iv15
   br i1 %exitcond, label %._crit_edge, label %.lr.ph
 
-._crit_edge:                                      ; preds = %.lr.ph, %.lr.ph4
+._crit_edge:                                      
   %26 = getelementptr inbounds [10 x [10 x [10 x i32]]], [10 x [10 x [10 x i32]]]* @sum_c, i64 0, i64 %indvars.iv23, i64 %indvars.iv19, i64 %14
   %27 = load i32, i32* %26
   %28 = getelementptr inbounds [10 x [10 x i32]], [10 x [10 x i32]]* @W, i64 0, i64 %indvars.iv23, i64 %indvars.iv19
@@ -86,18 +86,18 @@ define void @dep_constraint_crash_test(i32 %M, i32 %N) {
   %exitcond22 = icmp eq i32 %lftr.wideiv21, %M
   br i1 %exitcond22, label %.loopexit, label %.lr.ph4
 
-._crit_edge7:                                     ; preds = %.loopexit, %.preheader
+._crit_edge7:                                     
   %32 = load i32, i32* %6
   %33 = add nsw i32 %10, %32
   %34 = add nuw nsw i32 %iter.08, 1
   %exitcond25 = icmp eq i32 %34, %N
   br i1 %exitcond25, label %._crit_edge9, label %.preheader
 
-._crit_edge9:                                     ; preds = %._crit_edge7
+._crit_edge9:                                     
   store i32 %33, i32* @out_l
   br label %35
 
-; <label>:35                                      ; preds = %._crit_edge9, %0
+
   ret void
 }
 

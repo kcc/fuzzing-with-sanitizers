@@ -1,9 +1,9 @@
-; RUN: llc < %s -mtriple=armv7-apple-darwin | FileCheck %s
 
-;CHECK: _foo
-;CHECK-NOT: vld1.32
-;CHECK-NOT: vst1.32
-;CHECK: bx
+
+
+
+
+
 define void @foo(<16 x i8>* %J) {
   %A = load <16 x i8>, <16 x i8>* %J
   %T1 = shufflevector <16 x i8> %A, <16 x i8> undef, <8 x i32> <i32 8, i32 9, i32 10, i32 11, i32 12, i32 13, i32 14, i32 15>

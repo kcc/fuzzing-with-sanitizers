@@ -1,4 +1,4 @@
-; RUN: opt < %s  -loop-vectorize -force-vector-interleave=1 -force-vector-width=4 -dce -instcombine -S
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.8.0"
@@ -13,7 +13,7 @@ scalar.ph:
   br label %for.body
 
 for.body:
-  %mul16 = phi i8 [ 0, %scalar.ph ], [ %mul, %for.body ]              ; <------- i8 induction var.
+  %mul16 = phi i8 [ 0, %scalar.ph ], [ %mul, %for.body ]              
   %c.015 = phi i8 [ undef, %scalar.ph ], [ %conv8, %for.body ]
   %conv2 = sext i8 %c.015 to i32
   %tobool = icmp ne i8 %c.015, 0
@@ -25,7 +25,7 @@ for.body:
   %phitmp14 = icmp slt i32 %sext, 268435456
   br i1 %phitmp14, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   store i8 %mul, i8* @b, align 1
   ret void
 }

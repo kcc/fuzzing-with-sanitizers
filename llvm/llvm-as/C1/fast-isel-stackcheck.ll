@@ -1,23 +1,23 @@
-; RUN: llc -o - %s | FileCheck %s
+
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx"
 
-; selectiondag stack protector uses a GuardReg which the fast-isel stack
-; protection code did not but the state was not reset properly.
-; The optnone attribute on @bar forces fast-isel.
 
-; CHECK-LABEL: foo:
-; CHECK: movq ___stack_chk_guard@GOTPCREL(%rip), %rax
-; CHECK-NOT: movq ___stack_chk_guard@GOTPCREL(%rip), %rax
+
+
+
+
+
+
 define void @foo() #0 {
 entry:
   %_tags = alloca [3 x i32], align 4
   ret void
 }
 
-; CHECK-LABEL: bar:
-; CHECK: movq ___stack_chk_guard@GOTPCREL(%rip), %rax
-; CHECK: movq ___stack_chk_guard@GOTPCREL(%rip), %rax
+
+
+
 define void @bar() #1 {
 entry:
   %vt = alloca [2 x double], align 16

@@ -1,10 +1,10 @@
-; RUN: llc -mtriple=powerpc64-bgq-linux -mcpu=a2 < %s | FileCheck %s
+
 target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-f128:128:128-v128:128:128-n32:64"
 target triple = "powerpc64-bgq-linux"
 
 %struct.BG_CoordinateMapping_t = type { [4 x i8] }
 
-; Function Attrs: alwaysinline inlinehint nounwind
+
 define zeroext i32 @Kernel_RanksToCoords(i64 %mapsize, %struct.BG_CoordinateMapping_t* %map, i64* %numentries) #0 {
 entry:
   %mapsize.addr = alloca i64, align 8
@@ -33,16 +33,16 @@ entry:
   %8 = load i64, i64* %r5, align 8
   %9 = call { i64, i64, i64, i64 } asm sideeffect "sc", "={r0},={r3},={r4},={r5},{r0},{r3},{r4},{r5},~{r6},~{r7},~{r8},~{r9},~{r10},~{r11},~{r12},~{cr0},~{memory}"(i64 %5, i64 %6, i64 %7, i64 %8) #1, !srcloc !0
 
-; CHECK-LABEL: @Kernel_RanksToCoords
 
-; These need to be 64-bit loads, not 32-bit loads (not lwz).
-; CHECK-NOT: lwz
 
-; CHECK: #APP
-; CHECK: sc
-; CHECK: #NO_APP
 
-; CHECK: blr
+
+
+
+
+
+
+
 
   %asmresult = extractvalue { i64, i64, i64, i64 } %9, 0
   %asmresult1 = extractvalue { i64, i64, i64, i64 } %9, 1
@@ -71,26 +71,26 @@ entry:
   %cmp = icmp eq i32 %conv.i, 0
   br i1 %cmp, label %if.then, label %if.end
 
-; CHECK-LABEL: @main
 
-; CHECK-DAG: mr [[REG:[0-9]+]], 3
-; CHECK-DAG: li 0, 1076
-; CHECK:     stw [[REG]],
 
-; CHECK:     #APP
-; CHECK:     sc
-; CHECK:     #NO_APP
+
+
+
+
+
+
+
                                       
-; CHECK:     cmpwi {{[0-9]+}}, [[REG]], 1
 
-; CHECK: blr
 
-if.then:                                          ; preds = %entry
+
+
+if.then:                                          
   call void @mtrace()
   %.pre = load i32, i32* %argc.addr, align 4
   br label %if.end
 
-if.end:                                           ; preds = %if.then, %entry
+if.end:                                           
   %1 = phi i32 [ %.pre, %if.then ], [ %argc, %entry ]
   %cmp1 = icmp slt i32 %1, 2
   br i1 %cmp1, label %usage, label %if.end40

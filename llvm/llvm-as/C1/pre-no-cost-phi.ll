@@ -1,7 +1,7 @@
-; RUN: opt < %s -gvn -S | FileCheck %s
-; This testcase tests insertion of no-cost phis.  That is,
-; when the value is already available in every predecessor,
-; and we just need to insert a phi node to merge the available values.
+
+
+
+
 
 @c = global i32 0, align 4
 @d = global i32 0, align 4
@@ -22,8 +22,8 @@ bb2:
   br label %mergeblock
 
 mergeblock:
-; CHECK: pre-phi = phi i32 [ %3, %bb2 ], [ %2, %bb1 ]
-; CHECK-NEXT: ret i32 %.pre-phi
+
+
   %4 = add nsw i32 %a, %b
   ret i32 %4
 }

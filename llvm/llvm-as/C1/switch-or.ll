@@ -1,9 +1,9 @@
-; RUN: llc -march=x86 -asm-verbose=false < %s | FileCheck %s
 
-; Check that merging switch cases that differ in one bit works.
-; CHECK-LABEL: test1
-; CHECK: orl $2
-; CHECK-NEXT: cmpl $6
+
+
+
+
+
 
 define void @test1(i32 %variable) nounwind {
 entry:
@@ -20,9 +20,9 @@ if.end:
   ret void
 }
 
-; CHECK-LABEL: test2
-; CHECK: orl $-2147483648
-; CHECK-NEXT: cmpl $-2147483648
+
+
+
 define void @test2(i32 %variable) nounwind {
 entry:
   switch i32 %variable, label %if.end [

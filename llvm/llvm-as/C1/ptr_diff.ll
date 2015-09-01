@@ -1,10 +1,10 @@
-; RUN: opt < %s -instsimplify -S | FileCheck %s
+
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
 define i64 @ptrdiff1(i8* %ptr) {
-; CHECK-LABEL: @ptrdiff1(
-; CHECK-NEXT: ret i64 42
+
+
 
   %first = getelementptr inbounds i8, i8* %ptr, i32 0
   %last = getelementptr inbounds i8, i8* %ptr, i32 42
@@ -15,8 +15,8 @@ define i64 @ptrdiff1(i8* %ptr) {
 }
 
 define i64 @ptrdiff2(i8* %ptr) {
-; CHECK-LABEL: @ptrdiff2(
-; CHECK-NEXT: ret i64 42
+
+
 
   %first1 = getelementptr inbounds i8, i8* %ptr, i32 0
   %first2 = getelementptr inbounds i8, i8* %first1, i32 1
@@ -33,11 +33,11 @@ define i64 @ptrdiff2(i8* %ptr) {
 }
 
 define i64 @ptrdiff3(i8* %ptr) {
-; Don't bother with non-inbounds GEPs.
-; CHECK-LABEL: @ptrdiff3(
-; CHECK: getelementptr
-; CHECK: sub
-; CHECK: ret
+
+
+
+
+
 
   %first = getelementptr i8, i8* %ptr, i32 0
   %last = getelementptr i8, i8* %ptr, i32 42
@@ -48,9 +48,9 @@ define i64 @ptrdiff3(i8* %ptr) {
 }
 
 define <4 x i32> @ptrdiff4(<4 x i8*> %arg) nounwind {
-; Handle simple cases of vectors of pointers.
-; CHECK-LABEL: @ptrdiff4(
-; CHECK: ret <4 x i32> zeroinitializer
+
+
+
   %p1 = ptrtoint <4 x i8*> %arg to <4 x i32>
   %bc = bitcast <4 x i8*> %arg to <4 x i32*>
   %p2 = ptrtoint <4 x i32*> %bc to <4 x i32>
@@ -73,6 +73,6 @@ bb:
   %tmp6 = ptrtoint [2 x i32]* %tmp5 to i32
   %tmp7 = sub i32 %tmp3, %tmp6
   ret i32 %tmp7
-; CHECK-LABEL: @ptrdiff5(
-; CHECK: ret i32 0
+
+
 }

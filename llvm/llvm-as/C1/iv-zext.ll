@@ -1,6 +1,6 @@
-; RUN: opt < %s -indvars -S | FileCheck %s
-; CHECK-NOT: and
-; CHECK-NOT: zext
+
+
+
 
 target datalayout = "p:64:64:64-n32:64"
 

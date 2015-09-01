@@ -1,6 +1,6 @@
-; RUN: llc -O0 < %s | FileCheck %s
-; CHECK: @DEBUG_VALUE: foobar_func_block_invoke_0:mydata <- [SP+{{[0-9]+}}]
-; Radar 9331779
+
+
+
 target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:32-f32:32:32-f64:32:32-v64:32:64-v128:32:128-a0:0:32-n32"
 target triple = "thumbv7-apple-ios"
 
@@ -99,25 +99,25 @@ define hidden void @foobar_func_block_invoke_0(i8* %.block_descriptor, %0* %load
 !1 = !DICompositeType(tag: DW_TAG_enumeration_type, line: 248, size: 32, align: 32, file: !160, scope: !0, elements: !3)
 !2 = !DIFile(filename: "header.h", directory: "/Volumes/Sandbox/llvm")
 !3 = !{!4}
-!4 = !DIEnumerator(name: "Ver1", value: 0) ; [ DW_TAG_enumerator ]
+!4 = !DIEnumerator(name: "Ver1", value: 0) 
 !5 = !DICompositeType(tag: DW_TAG_enumeration_type, name: "Mode", line: 79, size: 32, align: 32, file: !160, scope: !0, elements: !7)
 !6 = !DIFile(filename: "header2.h", directory: "/Volumes/Sandbox/llvm")
 !7 = !{!8}
-!8 = !DIEnumerator(name: "One", value: 0) ; [ DW_TAG_enumerator ]
+!8 = !DIEnumerator(name: "One", value: 0) 
 !9 = !DICompositeType(tag: DW_TAG_enumeration_type, line: 15, size: 32, align: 32, file: !149, scope: !0, elements: !11)
 !10 = !DIFile(filename: "header3.h", directory: "/Volumes/Sandbox/llvm")
 !11 = !{!12, !13}
-!12 = !DIEnumerator(name: "Unknown", value: 0) ; [ DW_TAG_enumerator ]
-!13 = !DIEnumerator(name: "Known", value: 1) ; [ DW_TAG_enumerator ]
+!12 = !DIEnumerator(name: "Unknown", value: 0) 
+!13 = !DIEnumerator(name: "Known", value: 1) 
 !14 = !DICompositeType(tag: DW_TAG_enumeration_type, line: 20, size: 32, align: 32, file: !150, scope: !0, elements: !16)
 !15 = !DIFile(filename: "Private.h", directory: "/Volumes/Sandbox/llvm")
 !16 = !{!17, !18}
-!17 = !DIEnumerator(name: "Single", value: 0) ; [ DW_TAG_enumerator ]
-!18 = !DIEnumerator(name: "Double", value: 1) ; [ DW_TAG_enumerator ]
+!17 = !DIEnumerator(name: "Single", value: 0) 
+!18 = !DIEnumerator(name: "Double", value: 1) 
 !19 = !DICompositeType(tag: DW_TAG_enumeration_type, line: 14, size: 32, align: 32, file: !151, scope: !0, elements: !21)
 !20 = !DIFile(filename: "header4.h", directory: "/Volumes/Sandbox/llvm")
 !21 = !{!22}
-!22 = !DIEnumerator(name: "Eleven", value: 0) ; [ DW_TAG_enumerator ]
+!22 = !DIEnumerator(name: "Eleven", value: 0) 
 !23 = distinct !DISubprogram(name: "foobar_func_block_invoke_0", line: 609, isLocal: true, isDefinition: true, virtualIndex: 6, flags: DIFlagPrototyped, isOptimized: false, scopeLine: 609, file: !152, scope: !24, type: !25, function: void (i8*, %0*, [4 x i32], [4 x i32])* @foobar_func_block_invoke_0)
 !24 = !DIFile(filename: "MyLibrary.m", directory: "/Volumes/Sandbox/llvm")
 !25 = !DISubroutineType(types: !26)

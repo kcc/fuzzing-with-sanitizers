@@ -1,12 +1,12 @@
-; RUN: llc -march=amdgcn -mcpu=SI -verify-machineinstrs -enable-misched -asm-verbose < %s | FileCheck -check-prefix=SI %s
+
 
 declare i32 @llvm.r600.read.tidig.x() nounwind readnone
 
-; SI-LABEL: @test_if
-; Make sure the i1 values created by the cfg structurizer pass are
-; moved using VALU instructions
-; SI-NOT: s_mov_b64 s[{{[0-9]:[0-9]}}], -1
-; SI: v_mov_b32_e32 v{{[0-9]}}, -1
+
+
+
+
+
 define void @test_if(i32 %a, i32 %b, i32 addrspace(1)* %src, i32 addrspace(1)* %dst) #1 {
 entry:
   switch i32 %a, label %default [
@@ -41,18 +41,18 @@ end:
   ret void
 }
 
-; SI-LABEL: @simple_test_v_if
-; SI: v_cmp_ne_i32_e32 vcc, 0, v{{[0-9]+}}
-; SI: s_and_saveexec_b64 [[BR_SREG:s\[[0-9]+:[0-9]+\]]], vcc
-; SI: s_xor_b64 [[BR_SREG]], exec, [[BR_SREG]]
 
-; SI: ; BB#1
-; SI: buffer_store_dword
-; SI: s_endpgm
 
-; SI: BB1_2:
-; SI: s_or_b64 exec, exec, [[BR_SREG]]
-; SI: s_endpgm
+
+
+
+
+
+
+
+
+
+
 define void @simple_test_v_if(i32 addrspace(1)* %dst, i32 addrspace(1)* %src) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() nounwind readnone
   %is.0 = icmp ne i32 %tid, 0
@@ -67,22 +67,22 @@ exit:
   ret void
 }
 
-; SI-LABEL: @simple_test_v_loop
-; SI: v_cmp_ne_i32_e32 vcc, 0, v{{[0-9]+}}
-; SI: s_and_saveexec_b64 [[BR_SREG:s\[[0-9]+:[0-9]+\]]], vcc
-; SI: s_xor_b64 [[BR_SREG]], exec, [[BR_SREG]]
-; SI: s_cbranch_execz BB2_2
 
-; SI: ; BB#1:
-; SI: s_mov_b64 {{s\[[0-9]+:[0-9]+\]}}, 0{{$}}
 
-; SI: BB2_3:
-; SI: buffer_load_dword
-; SI: buffer_store_dword
-; SI: v_cmp_eq_i32_e32 vcc,
-; SI: s_or_b64 [[OR_SREG:s\[[0-9]+:[0-9]+\]]]
-; SI: s_andn2_b64 exec, exec, [[OR_SREG]]
-; SI: s_cbranch_execnz BB2_3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @simple_test_v_loop(i32 addrspace(1)* %dst, i32 addrspace(1)* %src) #1 {
 entry:
@@ -105,50 +105,50 @@ exit:
   ret void
 }
 
-; SI-LABEL: @multi_vcond_loop
 
-; Load loop limit from buffer
-; Branch to exit if uniformly not taken
-; SI: ; BB#0:
-; SI: buffer_load_dword [[VBOUND:v[0-9]+]]
-; SI: v_cmp_lt_i32_e32 vcc
-; SI: s_and_saveexec_b64 [[OUTER_CMP_SREG:s\[[0-9]+:[0-9]+\]]], vcc
-; SI: s_xor_b64 [[OUTER_CMP_SREG]], exec, [[OUTER_CMP_SREG]]
-; SI: s_cbranch_execz BB3_2
 
-; Initialize inner condition to false
-; SI: ; BB#1:
-; SI: s_mov_b64 [[ZERO:s\[[0-9]+:[0-9]+\]]], 0{{$}}
-; SI: s_mov_b64 [[COND_STATE:s\[[0-9]+:[0-9]+\]]], [[ZERO]]
 
-; Clear exec bits for workitems that load -1s
-; SI: BB3_3:
-; SI: buffer_load_dword [[B:v[0-9]+]]
-; SI: buffer_load_dword [[A:v[0-9]+]]
-; SI-DAG: v_cmp_ne_i32_e64 [[NEG1_CHECK_0:s\[[0-9]+:[0-9]+\]]], -1, [[A]]
-; SI-DAG: v_cmp_ne_i32_e32 [[NEG1_CHECK_1:vcc]], -1, [[B]]
-; SI: s_and_b64 [[ORNEG1:s\[[0-9]+:[0-9]+\]]], [[NEG1_CHECK_1]], [[NEG1_CHECK_0]]
-; SI: s_and_saveexec_b64 [[ORNEG1]], [[ORNEG1]]
-; SI: s_xor_b64 [[ORNEG1]], exec, [[ORNEG1]]
-; SI: s_cbranch_execz BB3_5
 
-; SI: BB#4:
-; SI: buffer_store_dword
-; SI: v_cmp_ge_i64_e32 vcc
-; SI: s_or_b64 [[COND_STATE]], vcc, [[COND_STATE]]
 
-; SI: BB3_5:
-; SI: s_or_b64 exec, exec, [[ORNEG1]]
-; SI: s_or_b64 [[COND_STATE]], [[ORNEG1]], [[COND_STATE]]
-; SI: s_andn2_b64 exec, exec, [[COND_STATE]]
-; SI: s_cbranch_execnz BB3_3
 
-; SI: BB#6
-; SI: s_or_b64 exec, exec, [[COND_STATE]]
 
-; SI: BB3_2:
-; SI-NOT: [[COND_STATE]]
-; SI: s_endpgm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @multi_vcond_loop(i32 addrspace(1)* noalias nocapture %arg, i32 addrspace(1)* noalias nocapture readonly %arg1, i32 addrspace(1)* noalias nocapture readonly %arg2, i32 addrspace(1)* noalias nocapture readonly %arg3) #1 {
 bb:
@@ -160,7 +160,7 @@ bb:
   %tmp8 = sext i32 %tmp6 to i64
   br i1 %tmp7, label %bb10, label %bb26
 
-bb10:                                             ; preds = %bb, %bb20
+bb10:                                             
   %tmp11 = phi i64 [ %tmp23, %bb20 ], [ 0, %bb ]
   %tmp12 = add nsw i64 %tmp11, %tmp4
   %tmp13 = getelementptr inbounds i32, i32 addrspace(1)* %arg1, i64 %tmp12
@@ -172,7 +172,7 @@ bb10:                                             ; preds = %bb, %bb20
   %tmp19 = and i1 %tmp17, %tmp18
   br i1 %tmp19, label %bb20, label %bb26
 
-bb20:                                             ; preds = %bb10
+bb20:                                             
   %tmp21 = add nsw i32 %tmp16, %tmp14
   %tmp22 = getelementptr inbounds i32, i32 addrspace(1)* %arg, i64 %tmp12
   store i32 %tmp21, i32 addrspace(1)* %tmp22, align 4
@@ -180,7 +180,7 @@ bb20:                                             ; preds = %bb10
   %tmp24 = icmp slt i64 %tmp23, %tmp8
   br i1 %tmp24, label %bb10, label %bb26
 
-bb26:                                             ; preds = %bb10, %bb20, %bb
+bb26:                                             
   ret void
 }
 

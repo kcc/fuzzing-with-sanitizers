@@ -1,9 +1,9 @@
-; RUN: llc < %s -march=x86-64 -O0 | FileCheck %s
-; Make sure fast-isel doesn't reset the materialised constant map
-; across an intrinsic call.
 
-; CHECK: movl	$100000
-; CHECK-NOT: movl	$100000
+
+
+
+
+
 define i1 @test1(i32 %v1, i32 %v2, i32* %X) nounwind {
 entry:
   %a = shl i32 100000, %v1

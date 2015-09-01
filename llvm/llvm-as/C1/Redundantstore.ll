@@ -1,11 +1,11 @@
-; RUN: llc -O3 -march=aarch64 < %s | FileCheck %s 
+
 
 target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
 @end_of_array = common global i8* null, align 8
 
-; CHECK-LABEL: @test
-; CHECK: stur
-; CHECK-NOT: stur
+
+
+
 define i8* @test(i32 %size) {
 entry:
   %0 = load i8*, i8** @end_of_array, align 8

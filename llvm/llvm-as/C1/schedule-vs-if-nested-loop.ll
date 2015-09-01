@@ -1,5 +1,5 @@
-;RUN: llc < %s -march=r600 -mcpu=cayman -stress-sched -verify-misched
-;REQUIRES: asserts
+
+
 
 define void @main(<4 x float> inreg %reg0, <4 x float> inreg %reg1) #0 {
 main_body:
@@ -16,7 +16,7 @@ main_body:
   %10 = icmp ne i32 %9, 0
   br i1 %10, label %LOOP, label %ENDIF
 
-ENDIF:                                            ; preds = %ENDIF16, %LOOP, %main_body
+ENDIF:                                            
   %temp.0 = phi float [ 0.000000e+00, %main_body ], [ %temp.1, %LOOP ], [ %temp.1, %ENDIF16 ]
   %temp1.0 = phi float [ 1.000000e+00, %main_body ], [ %temp1.1, %LOOP ], [ %temp1.1, %ENDIF16 ]
   %temp2.0 = phi float [ 0.000000e+00, %main_body ], [ %temp2.1, %LOOP ], [ %temp2.1, %ENDIF16 ]
@@ -93,7 +93,7 @@ ENDIF:                                            ; preds = %ENDIF16, %LOOP, %ma
   call void @llvm.R600.store.swizzle(<4 x float> %78, i32 0, i32 2)
   ret void
 
-LOOP:                                             ; preds = %main_body, %ENDIF19
+LOOP:                                             
   %temp.1 = phi float [ %93, %ENDIF19 ], [ 0.000000e+00, %main_body ]
   %temp1.1 = phi float [ %94, %ENDIF19 ], [ 1.000000e+00, %main_body ]
   %temp2.1 = phi float [ %95, %ENDIF19 ], [ 0.000000e+00, %main_body ]
@@ -108,7 +108,7 @@ LOOP:                                             ; preds = %main_body, %ENDIF19
   %85 = icmp ne i32 %84, 0
   br i1 %85, label %ENDIF, label %ENDIF16
 
-ENDIF16:                                          ; preds = %LOOP
+ENDIF16:                                          
   %86 = fcmp une float %2, %temp4.0
   %87 = select i1 %86, float 1.000000e+00, float 0.000000e+00
   %88 = fsub float -0.000000e+00, %87
@@ -118,7 +118,7 @@ ENDIF16:                                          ; preds = %LOOP
   %92 = icmp ne i32 %91, 0
   br i1 %92, label %ENDIF, label %ENDIF19
 
-ENDIF19:                                          ; preds = %ENDIF16
+ENDIF19:                                          
   %93 = fadd float %temp.1, 1.000000e+00
   %94 = fadd float %temp1.1, 0.000000e+00
   %95 = fadd float %temp2.1, 0.000000e+00

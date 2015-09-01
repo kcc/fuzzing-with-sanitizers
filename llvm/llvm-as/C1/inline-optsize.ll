@@ -1,15 +1,15 @@
-; RUN: opt -S -Oz < %s | FileCheck %s -check-prefix=OZ
-; RUN: opt -S -O2 < %s | FileCheck %s -check-prefix=O2
 
-; The inline threshold for a function with the optsize attribute is currently
-; the same as the global inline threshold for -Os. Check that the optsize
-; function attribute doesn't alter the function-specific inline threshold if the
-; global inline threshold is lower (as for -Oz).
+
+
+
+
+
+
 
 @a = global i32 4
 
-; This function should be larger than the inline threshold for -Oz (25), but
-; smaller than the inline threshold for optsize (75).
+
+
 define i32 @inner() {
   %a1 = load volatile i32, i32* @a
   %x1 = add i32 %a1,  %a1
@@ -24,9 +24,9 @@ define i32 @inner() {
   ret i32 %x5
 }
 
-; @inner() should be inlined for -O2 but not for -Oz.
-; OZ: call
-; O2-NOT: call
+
+
+
 define i32 @outer() optsize {
    %r = call i32 @inner()
    ret i32 %r

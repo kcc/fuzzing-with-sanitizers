@@ -1,12 +1,12 @@
-; PR23510
-; RUN: opt < %s -basicaa -slp-vectorizer -S | FileCheck %s
+
+
 
 target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
-; CHECK-LABEL: @_Z3fooPml(
-; CHECK: lshr <2 x i64>
-; CHECK: lshr <2 x i64>
+
+
+
 
 @total = global i64 0, align 8
 

@@ -1,51 +1,51 @@
-; REQUIRES: object-emission
 
-; RUN: %llc_dwarf < %s -filetype=obj | llvm-dwarfdump -debug-dump=line - | FileCheck %s
-; RUN: %llc_dwarf < %s -filetype=asm | FileCheck --check-prefix=ASM %s
 
-; If multiple line tables are emitted, one per CU, those line tables can
-; unambiguously rely on the comp_dir of their owning CU and use directory '0'
-; to refer to it.
 
-; CHECK: .debug_line contents:
-; CHECK-NEXT: Line table prologue:
-; CHECK-NOT: include_directories
-; CHECK: file_names[   1]   0 {{.*}} a.cpp
-; CHECK-NOT: file_names
 
-; CHECK: Line table prologue:
-; CHECK-NOT: include_directories
-; CHECK: file_names[   1]   0 {{.*}} b.cpp
-; CHECK-NOT: file_names
 
-; However, if a single line table is emitted and shared between CUs, the
-; comp_dir is ambiguous and relying on it would lead to different path
-; interpretations depending on which CU lead to the table - so ensure that
-; full paths are always emitted in this case, never comp_dir relative.
 
-; ASM: .file   1 "/tmp/dbginfo/a{{[/\\]+}}a.cpp"
-; ASM: .file   2 "/tmp/dbginfo/b{{[/\\]+}}b.cpp"
 
-; Generated from the following source compiled to bitcode from within their
-; respective directories (with debug info) and linked together with llvm-link
 
-; a/a.cpp
-; void func() {
-; }
 
-; b/b.cpp
-; void func();
-; int main() {
-;   func();
-; }
 
-; Function Attrs: nounwind uwtable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @_Z4funcv() #0 {
 entry:
   ret void, !dbg !19
 }
 
-; Function Attrs: uwtable
+
 define i32 @main() #1 {
 entry:
   call void @_Z4funcv(), !dbg !20

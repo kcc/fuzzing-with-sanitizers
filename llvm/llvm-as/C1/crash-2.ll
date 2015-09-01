@@ -1,6 +1,6 @@
-; RUN: llvm-as < %s | opt -globalopt -disable-output
-; NOTE: This needs to run through 'llvm-as' first to reproduce the error!
-; PR15440
+
+
+
 
 %union.U5.0.6.12 = type { i32 }
 %struct.S0.1.7.13 = type { i8, i8, i8, i8, i16, [2 x i8] }

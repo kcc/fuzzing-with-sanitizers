@@ -1,71 +1,71 @@
-; Test 32-bit square root.
-;
-; RUN: llc < %s -mtriple=s390x-linux-gnu | FileCheck %s
+
+
+
 
 declare float @llvm.sqrt.f32(float)
 declare float @sqrtf(float)
 
-; Check register square root.
+
 define float @f1(float %val) {
-; CHECK-LABEL: f1:
-; CHECK: sqebr %f0, %f0
-; CHECK: br %r14
+
+
+
   %res = call float @llvm.sqrt.f32(float %val)
   ret float %res
 }
 
-; Check the low end of the SQEB range.
+
 define float @f2(float *%ptr) {
-; CHECK-LABEL: f2:
-; CHECK: sqeb %f0, 0(%r2)
-; CHECK: br %r14
+
+
+
   %val = load float , float *%ptr
   %res = call float @llvm.sqrt.f32(float %val)
   ret float %res
 }
 
-; Check the high end of the aligned SQEB range.
+
 define float @f3(float *%base) {
-; CHECK-LABEL: f3:
-; CHECK: sqeb %f0, 4092(%r2)
-; CHECK: br %r14
+
+
+
   %ptr = getelementptr float, float *%base, i64 1023
   %val = load float , float *%ptr
   %res = call float @llvm.sqrt.f32(float %val)
   ret float %res
 }
 
-; Check the next word up, which needs separate address logic.
-; Other sequences besides this one would be OK.
+
+
 define float @f4(float *%base) {
-; CHECK-LABEL: f4:
-; CHECK: aghi %r2, 4096
-; CHECK: sqeb %f0, 0(%r2)
-; CHECK: br %r14
+
+
+
+
   %ptr = getelementptr float, float *%base, i64 1024
   %val = load float , float *%ptr
   %res = call float @llvm.sqrt.f32(float %val)
   ret float %res
 }
 
-; Check negative displacements, which also need separate address logic.
+
 define float @f5(float *%base) {
-; CHECK-LABEL: f5:
-; CHECK: aghi %r2, -4
-; CHECK: sqeb %f0, 0(%r2)
-; CHECK: br %r14
+
+
+
+
   %ptr = getelementptr float, float *%base, i64 -1
   %val = load float , float *%ptr
   %res = call float @llvm.sqrt.f32(float %val)
   ret float %res
 }
 
-; Check that SQEB allows indices.
+
 define float @f6(float *%base, i64 %index) {
-; CHECK-LABEL: f6:
-; CHECK: sllg %r1, %r3, 2
-; CHECK: sqeb %f0, 400(%r1,%r2)
-; CHECK: br %r14
+
+
+
+
   %ptr1 = getelementptr float, float *%base, i64 %index
   %ptr2 = getelementptr float, float *%ptr1, i64 100
   %val = load float , float *%ptr2
@@ -73,12 +73,12 @@ define float @f6(float *%base, i64 %index) {
   ret float %res
 }
 
-; Test a case where we spill the source of at least one SQEBR.  We want
-; to use SQEB if possible.
+
+
 define void @f7(float *%ptr) {
-; CHECK-LABEL: f7:
-; CHECK: sqeb {{%f[0-9]+}}, 16{{[04]}}(%r15)
-; CHECK: br %r14
+
+
+
   %val0 = load volatile float , float *%ptr
   %val1 = load volatile float , float *%ptr
   %val2 = load volatile float , float *%ptr
@@ -154,16 +154,16 @@ define void @f7(float *%ptr) {
   ret void
 }
 
-; Check that a call to the normal sqrtf function is lowered.
+
 define float @f8(float %dummy, float %val) {
-; CHECK-LABEL: f8:
-; CHECK: sqebr %f0, %f2
-; CHECK: cebr %f0, %f0
-; CHECK: jo [[LABEL:\.L.*]]
-; CHECK: br %r14
-; CHECK: [[LABEL]]:
-; CHECK: ler %f0, %f2
-; CHECK: jg sqrtf@PLT
+
+
+
+
+
+
+
+
   %res = tail call float @sqrtf(float %val)
   ret float %res
 }

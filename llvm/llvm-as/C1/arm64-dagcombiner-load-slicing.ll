@@ -1,17 +1,17 @@
-; RUN: llc -mtriple arm64-apple-ios -O3 -o - < %s | FileCheck %s
-; <rdar://problem/14477220>
+
+
 
 %class.Complex = type { float, float }
 %class.Complex_int = type { i32, i32 }
 %class.Complex_long = type { i64, i64 }
 
-; CHECK-LABEL: @test
-; CHECK: add [[BASE:x[0-9]+]], x0, x1, lsl #3
-; CHECK: ldp [[CPLX1_I:s[0-9]+]], [[CPLX1_R:s[0-9]+]], {{\[}}[[BASE]]]
-; CHECK: ldp [[CPLX2_I:s[0-9]+]], [[CPLX2_R:s[0-9]+]], {{\[}}[[BASE]], #64]
-; CHECK: fadd {{s[0-9]+}}, [[CPLX2_I]], [[CPLX1_I]]
-; CHECK: fadd {{s[0-9]+}}, [[CPLX2_R]], [[CPLX1_R]]
-; CHECK: ret
+
+
+
+
+
+
+
 define void @test(%class.Complex* nocapture %out, i64 %out_start) {
 entry:
   %arrayidx = getelementptr inbounds %class.Complex, %class.Complex* %out, i64 %out_start
@@ -37,13 +37,13 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: @test_int
-; CHECK: add [[BASE:x[0-9]+]], x0, x1, lsl #3
-; CHECK: ldp [[CPLX1_I:w[0-9]+]], [[CPLX1_R:w[0-9]+]], {{\[}}[[BASE]]]
-; CHECK: ldp [[CPLX2_I:w[0-9]+]], [[CPLX2_R:w[0-9]+]], {{\[}}[[BASE]], #64]
-; CHECK: add {{w[0-9]+}}, [[CPLX2_I]], [[CPLX1_I]]
-; CHECK: add {{w[0-9]+}}, [[CPLX2_R]], [[CPLX1_R]]
-; CHECK: ret
+
+
+
+
+
+
+
 define void @test_int(%class.Complex_int* nocapture %out, i64 %out_start) {
 entry:
   %arrayidx = getelementptr inbounds %class.Complex_int, %class.Complex_int* %out, i64 %out_start
@@ -69,13 +69,13 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: @test_long
-; CHECK: add [[BASE:x[0-9]+]], x0, x1, lsl #4
-; CHECK: ldp [[CPLX1_I:x[0-9]+]], [[CPLX1_R:x[0-9]+]], {{\[}}[[BASE]]]
-; CHECK: ldp [[CPLX2_I:x[0-9]+]], [[CPLX2_R:x[0-9]+]], {{\[}}[[BASE]], #128]
-; CHECK: add {{x[0-9]+}}, [[CPLX2_I]], [[CPLX1_I]]
-; CHECK: add {{x[0-9]+}}, [[CPLX2_R]], [[CPLX1_R]]
-; CHECK: ret
+
+
+
+
+
+
+
 define void @test_long(%class.Complex_long* nocapture %out, i64 %out_start) {
 entry:
   %arrayidx = getelementptr inbounds %class.Complex_long, %class.Complex_long* %out, i64 %out_start

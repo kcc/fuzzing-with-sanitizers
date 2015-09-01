@@ -1,10 +1,10 @@
-; RUN: llc < %s -mtriple=thumbv7-apple-ios | FileCheck %s
-; rdar://12201387
 
-;CHECK-LABEL: select_s_v_v:
-;CHECK: it  ne
-;CHECK-NEXT: vmovne.i32
-;CHECK: bx
+
+
+
+
+
+
 define <16 x i8> @select_s_v_v(<16 x i8> %vec, i32 %avail) {
 entry:
   %and = and i32 %avail, 1

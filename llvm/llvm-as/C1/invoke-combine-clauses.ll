@@ -1,4 +1,4 @@
-; RUN: opt %s -inline -S | FileCheck %s
+
 
 declare void @external_func()
 declare void @abort()
@@ -8,9 +8,9 @@ declare void @abort()
 @condition = external global i1
 
 
-; Check for a bug in which multiple "resume" instructions in the
-; inlined function caused "catch i8* @exception_outer" to appear
-; multiple times in the resulting landingpad.
+
+
+
 
 define internal void @inner_multiple_resume() personality i8* null {
   invoke void @external_func()
@@ -38,17 +38,17 @@ lpad:
       catch i8* @exception_outer
   resume i32 %lp
 }
-; CHECK: define void @outer_multiple_resume()
-; CHECK: %lp.i = landingpad
-; CHECK-NEXT: catch i8* @exception_inner
-; CHECK-NEXT: catch i8* @exception_outer
-; Check that there isn't another "catch" clause:
-; CHECK-NEXT: load
 
 
-; Check for a bug in which having a "resume" and a "call" in the
-; inlined function caused "catch i8* @exception_outer" to appear
-; multiple times in the resulting landingpad.
+
+
+
+
+
+
+
+
+
 
 define internal void @inner_resume_and_call() personality i8* null {
   call void @external_func()
@@ -72,19 +72,19 @@ lpad:
       catch i8* @exception_outer
   resume i32 %lp
 }
-; CHECK: define void @outer_resume_and_call()
-; CHECK: %lp.i = landingpad
-; CHECK-NEXT: catch i8* @exception_inner
-; CHECK-NEXT: catch i8* @exception_outer
-; Check that there isn't another "catch" clause:
-; CHECK-NEXT: br
 
 
-; Check what happens if the inlined function contains an "invoke" but
-; no "resume".  In this case, the inlined landingpad does not need to
-; include the "catch i8* @exception_outer" clause from the outer
-; function (since the outer function's landingpad will not be
-; reachable), but it's OK to include this clause.
+
+
+
+
+
+
+
+
+
+
+
 
 define internal void @inner_no_resume_or_call() personality i8* null {
   invoke void @external_func()
@@ -94,7 +94,7 @@ cont:
 lpad:
   %lp = landingpad i32
       catch i8* @exception_inner
-  ; A landingpad might have no "resume" if a C++ destructor aborts.
+  
   call void @abort() noreturn nounwind
   unreachable
 }
@@ -109,9 +109,9 @@ lpad:
       catch i8* @exception_outer
   resume i32 %lp
 }
-; CHECK: define void @outer_no_resume_or_call()
-; CHECK: %lp.i = landingpad
-; CHECK-NEXT: catch i8* @exception_inner
-; CHECK-NEXT: catch i8* @exception_outer
-; Check that there isn't another "catch" clause:
-; CHECK-NEXT: call void @abort()
+
+
+
+
+
+

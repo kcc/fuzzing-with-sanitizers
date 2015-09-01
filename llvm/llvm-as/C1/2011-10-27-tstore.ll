@@ -1,11 +1,11 @@
-; RUN: llc < %s -march=x86-64 -mcpu=corei7 | FileCheck %s
+
 
 target triple = "x86_64-unknown-linux-gnu"
 
-;CHECK-LABEL: ltstore:
-;CHECK: movq
-;CHECK: movq
-;CHECK: ret
+
+
+
+
 define void @ltstore(<4 x i32>* %pA, <2 x i32>* %pB) {
 entry:
   %in = load <4 x i32>, <4 x i32>* %pA

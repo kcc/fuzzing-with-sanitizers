@@ -1,6 +1,6 @@
-; RUN: opt %s -rewrite-statepoints-for-gc -spp-print-base-pointers -S 2>&1 | FileCheck %s
 
-; CHECK: derived %merged_value base %merged_value.base
+
+
 
 declare void @site_for_call_safpeoint()
 
@@ -23,11 +23,11 @@ bump_here_b:
   
 
 merge_here:
-; CHECK: merge_here:
-; CHECK-DAG: %x.base
-; CHECK-DAG: phi i64 addrspace(1)*
-; CHECK-DAG: [ %base_obj_x, %bump_here_a ]
-; CHECK-DAG: [ %base_obj_y, %bump_here_b ]
+
+
+
+
+
   %x = phi i64 addrspace(1)* [ %x_a , %bump_here_a ], [ %x_b , %bump_here_b ]
   br label %merge
 
@@ -36,12 +36,12 @@ there:
   br label %merge
 
 merge:
-; CHECK: merge:
-; CHECK-DAG:  %merged_value.base
-; CHECK-DAG: phi i64 addrspace(1)*
-; CHECK-DAG: %merge_here
-; CHECK-DAG: [ %base_obj_y, %there ]
-; CHECK:  %merged_value = phi i64 addrspace(1)* [ %x, %merge_here ], [ %y, %there ]  
+
+
+
+
+
+
   %merged_value = phi i64 addrspace(1)* [ %x, %merge_here ], [ %y, %there ]
 
   %safepoint_token = call i32 (i64, i32, void ()*, i32, i32, ...) @llvm.experimental.gc.statepoint.p0f_isVoidf(i64 0, i32 0, void ()* @site_for_call_safpeoint, i32 0, i32 0, i32 0, i32 5, i32 0, i32 -1, i32 0, i32 0, i32 0)

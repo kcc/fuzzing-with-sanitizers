@@ -1,7 +1,7 @@
-; RUN: llc  < %s | FileCheck %s
-; Radar 10147769
-; Do not unnecessarily use AT_specification DIE.
-; CHECK-NOT: AT_specification
+
+
+
+
 
 @a = common global [10 x i32] zeroinitializer, align 16
 

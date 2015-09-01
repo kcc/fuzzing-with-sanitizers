@@ -1,18 +1,18 @@
-; RUN: opt < %s -analyze -basicaa -da
-;; Check this doesn't crash.
+
+
 target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
-;; struct s {
-;;   int A[10][10];
-;;   int C[10][10][10]; 
-;; } S;
 
-;; void dep_constraint_crash_test(int k,int N) {
-;;   for( int i=0;i<N;i++)
-;;     for( int j=0;j<N;j++)
-;;       S.A[0][0] = S.C[0][0][k];
-;; }
+
+
+
+
+
+
+
+
+
 
 
 %struct.s = type { [10 x [10 x i32]], [10 x [10 x [10 x i32]]] }

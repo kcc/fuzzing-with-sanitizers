@@ -1,15 +1,15 @@
-; RUN: llvm-link %s %p/DbgDeclare2.ll -o %t.bc
-; RUN: llvm-dis < %t.bc | FileCheck %s
-; Test if metadata in dbg.declare is mapped properly or not.
 
-; rdar://13089880
-; CHECK: define i32 @main(i32 %argc, i8** %argv)
-; CHECK: call void @llvm.dbg.declare(metadata i32* %argc.addr, metadata !{{[0-9]+}}, metadata {{.*}})
-; CHECK: call void @llvm.dbg.declare(metadata i8*** %argv.addr, metadata !{{[0-9]+}}, metadata {{.*}})
-; CHECK: define void @test(i32 %argc, i8** %argv)
-; CHECK: call void @llvm.dbg.declare(metadata i32* %argc.addr, metadata !{{[0-9]+}}, metadata {{.*}})
-; CHECK: call void @llvm.dbg.declare(metadata i8*** %argv.addr, metadata !{{[0-9]+}}, metadata {{.*}})
-; CHECK: call void @llvm.dbg.declare(metadata i32* %i, metadata !{{[0-9]+}}, metadata {{.*}})
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.9.0"

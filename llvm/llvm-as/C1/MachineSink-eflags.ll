@@ -1,4 +1,4 @@
-; RUN: llc < %s | FileCheck %s
+
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64"
 target triple = "x86_64-pc-linux"
 
@@ -59,9 +59,9 @@ entry:
  %tmp230.i = load <2 x double>, <2 x double> addrspace(1)* %arrayidx229.i, align 16
  %cmp432.i = icmp ult i32 %tmp156.i, %tmp1
 
-; %shl.i should not be sinked below the compare.
-; CHECK: cmpl
-; CHECK-NOT: shlq
+
+
+
 
  %cond.i = select i1 %cmp432.i, <2 x double> %tmp162.i, <2 x double> zeroinitializer
  store <2 x double> %cond.i, <2 x double>* %ptr4438.i, align 16

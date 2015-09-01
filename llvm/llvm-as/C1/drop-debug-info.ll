@@ -1,6 +1,6 @@
-; RUN: llvm-as < %s -o %t.bc 2>&1 >/dev/null | FileCheck -check-prefix=WARN %s
-; RUN: llvm-dis < %t.bc | FileCheck %s
-; RUN: verify-uselistorder < %t.bc
+
+
+
 
 define i32 @main() {
 entry:
@@ -24,6 +24,6 @@ entry:
 !9 = !{i32 2, !"Dwarf Version", i32 2}
 !12 = !DILocation(line: 4, scope: !4)
 
-; WARN: warning: ignoring debug info with an invalid version (0)
-; CHECK-NOT: !dbg
-; CHECK-NOT: !llvm.dbg.cu
+
+
+

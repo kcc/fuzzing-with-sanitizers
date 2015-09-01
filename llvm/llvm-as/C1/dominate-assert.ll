@@ -1,5 +1,5 @@
-; RUN: opt -loop-reduce < %s
-; we used to crash on this one
+
+
 
 declare i8* @_Znwm()
 declare i32 @__gxx_personality_v0(...)
@@ -69,45 +69,45 @@ bb7:
   ret void
 }
 
-; PR17425
+
 define void @i() {
 entry:
   br label %while.cond
 
-while.cond:                                       ; preds = %while.cond, %entry
+while.cond:                                       
   %c.0 = phi i16* [ undef, %entry ], [ %incdec.ptr, %while.cond ]
   %incdec.ptr = getelementptr inbounds i16, i16* %c.0, i64 1
   br i1 undef, label %while.cond1, label %while.cond
 
-while.cond1:                                      ; preds = %while.cond1, %while.cond
+while.cond1:                                      
   %c.1 = phi i16* [ %incdec.ptr5, %while.cond1 ], [ %c.0, %while.cond ]
   %incdec.ptr5 = getelementptr inbounds i16, i16* %c.1, i64 1
   br i1 undef, label %while.cond7, label %while.cond1
 
-while.cond7:                                      ; preds = %while.cond7, %while.cond1
+while.cond7:                                      
   %0 = phi i16* [ %incdec.ptr10, %while.cond7 ], [ %c.1, %while.cond1 ]
   %incdec.ptr10 = getelementptr inbounds i16, i16* %0, i64 1
   br i1 undef, label %while.cond12.preheader, label %while.cond7
 
-while.cond12.preheader:                           ; preds = %while.cond7
+while.cond12.preheader:                           
   br i1 undef, label %while.end16, label %while.body13.lr.ph
 
-while.body13:                                     ; preds = %if.else, %while.body13.lr.ph
+while.body13:                                     
   %1 = phi i16* [ %2, %while.body13.lr.ph ], [ %incdec.ptr15, %if.else ]
   br i1 undef, label %while.cond12.outer.loopexit, label %if.else
 
-while.cond12.outer.loopexit:                      ; preds = %while.body13
+while.cond12.outer.loopexit:                      
   br i1 undef, label %while.end16, label %while.body13.lr.ph
 
-while.body13.lr.ph:                               ; preds = %while.cond12.outer.loopexit, %while.cond12.preheader
+while.body13.lr.ph:                               
   %2 = phi i16* [ %1, %while.cond12.outer.loopexit ], [ undef, %while.cond12.preheader ]
   br label %while.body13
 
-if.else:                                          ; preds = %while.body13
+if.else:                                          
   %incdec.ptr15 = getelementptr inbounds i16, i16* %1, i64 1
   %cmp = icmp eq i16* %incdec.ptr15, %0
   br i1 %cmp, label %while.end16, label %while.body13
 
-while.end16:                                      ; preds = %if.else, %while.cond12.outer.loopexit, %while.cond12.preheader
+while.end16:                                      
   ret void
 }

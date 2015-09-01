@@ -1,6 +1,6 @@
-; RUN: llc -mtriple=armv7 %s -o - | FileCheck %s
 
-; CHECK: dmb ld
+
+
 
 define void @test2() #0 {
   call void @llvm.arm.dmb(i32 13)

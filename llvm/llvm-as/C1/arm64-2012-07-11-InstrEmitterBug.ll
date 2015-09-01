@@ -1,5 +1,5 @@
-; RUN: llc < %s -mtriple=arm64-apple-ios
-; rdar://11849816
+
+
 
 @shlib_path_substitutions = external hidden unnamed_addr global i8**, align 8
 
@@ -19,16 +19,16 @@ define i8* @dyld_fix_path(i8* %path) nounwind optsize ssp {
 entry:
   br i1 undef, label %if.end56, label %for.cond
 
-for.cond:                                         ; preds = %entry
+for.cond:                                         
   br i1 undef, label %for.cond10, label %for.body
 
-for.body:                                         ; preds = %for.cond
+for.body:                                         
   unreachable
 
-for.cond10:                                       ; preds = %for.cond
+for.cond10:                                       
   br i1 undef, label %if.end56, label %for.body14
 
-for.body14:                                       ; preds = %for.cond10
+for.body14:                                       
   %call22 = tail call i64 @strlen(i8* undef) nounwind optsize
   %sext = shl i64 %call22, 32
   %conv30 = ashr exact i64 %sext, 32
@@ -40,14 +40,14 @@ for.body14:                                       ; preds = %for.cond10
   %call34 = tail call noalias i8* @xmalloc(i64 %conv33) nounwind optsize
   br i1 undef, label %cond.false45, label %cond.true43
 
-cond.true43:                                      ; preds = %for.body14
+cond.true43:                                      
   unreachable
 
-cond.false45:                                     ; preds = %for.body14
+cond.false45:                                     
   %add.ptr = getelementptr inbounds i8, i8* %path, i64 %conv30
   unreachable
 
-if.end56:                                         ; preds = %for.cond10, %entry
+if.end56:                                         
   ret i8* null
 }
 

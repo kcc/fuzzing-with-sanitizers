@@ -1,4 +1,4 @@
-; RUN: llc < %s
+
 target triple = "x86_64-unknown-linux-gnu"
 
 @g = external global [10 x i32]

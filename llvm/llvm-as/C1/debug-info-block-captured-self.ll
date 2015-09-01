@@ -1,66 +1,66 @@
-; RUN: llc -mtriple x86_64-apple-darwin -filetype=obj -o %t.o < %s
-; RUN: llvm-dwarfdump %t.o | FileCheck %s
-;
-; Test that DW_AT_location is generated for a captured "self" inside a
-; block.
-;
-; This test is split into two parts, the frontend part can be found at
-; llvm/tools/clang/test/CodeGenObjC/debug-info-block-captured-self.m
-;
-; CHECK: {{.*}}DW_AT_name{{.*}}_block_invoke{{.*}}
-; CHECK: DW_TAG_variable
-; CHECK-NOT:  DW_TAG
-; CHECK:   DW_AT_location
-; CHECK-NOT: DW_TAG
-; CHECK:   DW_AT_name{{.*}}"self"{{.*}}
-;
-; CHECK: {{.*}}DW_AT_name{{.*}}_block_invoke{{.*}}
-; CHECK: DW_TAG_variable
-; CHECK-NOT:  DW_TAG
-; CHECK:   DW_AT_location
-; CHECK-NOT: DW_TAG
-; CHECK:   DW_AT_name{{.*}}"self"{{.*}}
-;
-; Generated (and then reduced) from
-; ----------------------------------------------------------------------
-;
-; @class T;
-; @interface S
-; @end
-; @interface Mode
-; -(int) count;
-; @end
-; @interface Context
-; @end
-; @interface ViewController
-; @property (nonatomic, readwrite, strong) Context *context;
-; @end
-; typedef enum {
-;     Unknown = 0,
-; } State;
-; @interface Main : ViewController
-; {
-;     T * t1;
-;     T * t2;
-; }
-; @property(readwrite, nonatomic) State state;
-; @end
-; @implementation Main
-; - (id) initWithContext:(Context *) context
-; {
-;     t1 = [self.context withBlock:^(id obj){
-;         id *mode1;
-; 	t2 = [mode1 withBlock:^(id object){
-; 	    Mode *mode2 = object;
-; 	    if ([mode2 count] != 0) {
-; 	      self.state = 0;
-; 	    }
-; 	  }];
-;       }];
-; }
-; @end
-; ----------------------------------------------------------------------
-; ModuleID = 'llvm/tools/clang/test/CodeGenObjC/debug-info-block-captured-self.m'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 %0 = type opaque
 %struct.__block_descriptor = type { i64, i64 }
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1

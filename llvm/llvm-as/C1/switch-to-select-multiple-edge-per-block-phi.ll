@@ -1,24 +1,24 @@
-; RUN: opt < %s -simplifycfg -S | FileCheck %s
 
-; a, b;
-; fn1() {
-;   if (b)
-;     if (a == 0 || a == 5)
-;       return a;
-;   return 0;
-; }
 
-; Checking that we handle correctly the case when we have a switch
-; branching multiple times to the same block
+
+
+
+
+
+
+
+
+
+
 
 @b = common global i32 0, align 4
 @a = common global i32 0, align 4
 
-; Function Attrs: nounwind
+
 define i32 @fn1() {
-; CHECK-LABEL: @fn1
-; CHECK: %switch.selectcmp1 = icmp eq i32 %1, 5
-; CHECK: %switch.select2 = select i1 %switch.selectcmp1, i32 5, i32 %switch.select
+
+
+
 entry:
   %0 = load i32, i32* @b, align 4
   %tobool = icmp eq i32 %0, 0

@@ -1,13 +1,13 @@
-; RUN: llc -mtriple=powerpc64-unknown-linux-gnu -mcpu=pwr7 -print-after=localstackalloc <%s >%t 2>&1 && FileCheck <%t %s
 
-; Due to a bug in isFrameOffsetLegal we ended up with resolveFrameIndex creating
-; addresses with out-of-range displacements.  Verify that this no longer happens.
-; CHECK-NOT: LD {{3276[8-9]}}
-; CHECK-NOT: LD {{327[7-9][0-9]}}
-; CHECK-NOT: LD {{32[8-9][0-9][0-9]}}
-; CHECK-NOT: LD {{3[3-9][0-9][0-9][0-9]}}
-; CHECK-NOT: LD {{[4-9][0-9][0-9][0-9][0-9]}}
-; CHECK-NOT: LD {{[1-9][0-9][0-9][0-9][0-9][0-9]+}}
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-m:e-i64:64-n32:64"
 target triple = "powerpc64le-unknown-linux-gnu"
@@ -48,13 +48,13 @@ entry:
   %cmp = icmp ne i64 %9, %10
   br i1 %cmp, label %if.then, label %if.end
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %11 = load i32, i32* @fails, align 4
   %inc = add nsw i32 %11, 1
   store i32 %inc, i32* @fails, align 4
   br label %if.end
 
-if.end:                                           ; preds = %if.then, %entry
+if.end:                                           
   %12 = load i64, i64* getelementptr inbounds (%struct.S2760, %struct.S2760* @s2760, i32 0, i32 1, i32 1), align 8
   %b3 = getelementptr inbounds %struct.S2760, %struct.S2760* %ret, i32 0, i32 1
   %g4 = getelementptr inbounds %struct.anon, %struct.anon* %b3, i32 0, i32 1

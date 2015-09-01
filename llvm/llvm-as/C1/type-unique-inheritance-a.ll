@@ -1,52 +1,52 @@
-; CHECK: !DICompositeType(tag: DW_TAG_class_type, name: "A"
-; CHECK: !DICompositeType(tag: DW_TAG_class_type, name: "Base"
-; CHECK: !DICompositeType(tag: DW_TAG_class_type, name: "B"
-; CHECK-NOT: !DICompositeType(tag: DW_TAG_class_type
-; Content of header files:
-; 
-; class Base;
-; class A : Base {
-;   int x;
-; };
-; 
-; class A;
-; class Base {
-;   int b;
-; };
-; 
-; class B {
-;   int bb;
-;   A *a;
-; };
-; Content of foo.cpp:
-; 
-; #include "b.hpp"
-; #include "a.hpp"
-; 
-; void f(int a) {
-;   A t;
-; }
-; Content of bar.cpp:
-; 
-; #include "b.hpp"
-; #include "a.hpp"
-; void g(int a) {
-;   B t;
-; }
-; 
-; void f(int);
-; int main() {
-;   A a;
-;   f(0);
-;   g(1);
-;   return 0;
-; }
-; ModuleID = 'foo.cpp'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %class.A = type { %class.Base, i32 }
 %class.Base = type { i32 }
 
-; Function Attrs: nounwind ssp uwtable
+
 define void @_Z1fi(i32 %a) #0 {
 entry:
   %a.addr = alloca i32, align 4
@@ -57,7 +57,7 @@ entry:
   ret void, !dbg !24
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
 attributes #0 = { nounwind ssp uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

@@ -1,4 +1,4 @@
-; RUN: opt < %s -instcombine -S | FileCheck %s
+
 
 declare void @llvm.dbg.declare(metadata, metadata, metadata) nounwind readnone
 
@@ -12,8 +12,8 @@ entry:
   %__val.addr = alloca i32, align 4
   %__len.addr = alloca i64, align 8
   store i8* %__dest, i8** %__dest.addr, align 8
-; CHECK-NOT: call void @llvm.dbg.declare
-; CHECK: call void @llvm.dbg.value
+
+
   call void @llvm.dbg.declare(metadata i8** %__dest.addr, metadata !0, metadata !DIExpression()), !dbg !16
   store i32 %__val, i32* %__val.addr, align 4
   call void @llvm.dbg.declare(metadata i32* %__val.addr, metadata !7, metadata !DIExpression()), !dbg !18

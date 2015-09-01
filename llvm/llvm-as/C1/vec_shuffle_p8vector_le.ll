@@ -1,4 +1,4 @@
-; RUN: llc -mcpu=pwr8 -mtriple=powerpc64le-unknown-linux-gnu -mattr=+power8-vector < %s | FileCheck %s
+
 
 define void @VPKUDUM_unary(<2 x i64>* %A) {
 entry:
@@ -15,9 +15,9 @@ entry:
 	ret void
 }
 
-; CHECK-LABEL: @VPKUDUM_unary
-; CHECK-NOT:   vperm
-; CHECK:       vpkudum
+
+
+
 
 define void @VPKUDUM(<2 x i64>* %A, <2 x i64>* %B) {
 entry:
@@ -38,6 +38,6 @@ entry:
 	ret void
 }
 
-; CHECK-LABEL: @VPKUDUM
-; CHECK-NOT:   vperm
-; CHECK:       vpkudum
+
+
+

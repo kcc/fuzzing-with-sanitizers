@@ -1,4 +1,4 @@
-; RUN: opt -S -instcombine < %s | FileCheck %s
+
 target datalayout = "E-m:e-i64:64-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
 
@@ -12,8 +12,8 @@ entry:
   %0 = load i32, i32* %arrayidx, align 4
   ret i32 %0
 
-; CHECK-LABEL: @test1
-; CHECK: ret i32 12
+
+
 }
 
 declare void @foo(i64* %p)
@@ -26,10 +26,10 @@ entry:
   call void @foo(i64* %p)
   ret void
 
-; CHECK-LABEL: @test2
-; CHECK: %p = alloca i64
-; CHECK: store i64 %v, i64* %p
-; CHECK: ret void
+
+
+
+
 }
 
 define signext i32 @test3(i32 signext %x, i1 %y) #0 {
@@ -40,8 +40,8 @@ entry:
   %0 = load i32, i32* %arrayidx, align 4
   ret i32 %0
 
-; CHECK-LABEL: @test3
-; CHECK: getelementptr inbounds [1 x i32], [1 x i32]* %p, i64 0, i64 0
+
+
 }
 
 attributes #0 = { nounwind readnone }

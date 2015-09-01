@@ -1,5 +1,5 @@
-; RUN: opt < %s -deadargelim | llvm-dis
-; PR3807
+
+
 
 define internal { i32, i32 } @foo() {
   ret {i32,i32} {i32 42, i32 4}

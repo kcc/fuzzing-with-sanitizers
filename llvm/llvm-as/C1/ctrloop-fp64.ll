@@ -1,4 +1,4 @@
-; RUN: llc < %s -mcpu=ppc | FileCheck %s
+
 
 target datalayout = "E-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v128:128:128-n32"
 target triple = "powerpc-unknown-linux-gnu"
@@ -7,7 +7,7 @@ define i64 @foo(double* nocapture %n) nounwind readonly {
 entry:
   br label %for.body
 
-for.body:                                         ; preds = %for.body, %entry
+for.body:                                         
   %i.06 = phi i32 [ 0, %entry ], [ %inc, %for.body ]
   %x.05 = phi i64 [ 0, %entry ], [ %conv1, %for.body ]
   %arrayidx = getelementptr inbounds double, double* %n, i32 %i.06
@@ -19,12 +19,12 @@ for.body:                                         ; preds = %for.body, %entry
   %exitcond = icmp eq i32 %inc, 2048
   br i1 %exitcond, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret i64 %conv1
 }
 
-; CHECK: @foo
-; CHECK-NOT: mtctr
+
+
 
 @init_value = global double 1.000000e+00, align 8
 @data64 = global [8000 x i64] zeroinitializer, align 8
@@ -37,7 +37,7 @@ entry:
   %broadcast.splat.i = shufflevector <2 x i64> %broadcast.splatinsert.i, <2 x i64> undef, <2 x i32> zeroinitializer
   br label %vector.body.i
 
-vector.body.i:                                    ; preds = %vector.body.i, %entry
+vector.body.i:                                    
   %index.i = phi i32 [ 0, %entry ], [ %index.next.i, %vector.body.i ]
   %next.gep.i = getelementptr [8000 x i64], [8000 x i64]* @data64, i32 0, i32 %index.i
   %1 = bitcast i64* %next.gep.i to <2 x i64>*
@@ -50,11 +50,11 @@ vector.body.i:                                    ; preds = %vector.body.i, %ent
   %4 = icmp eq i32 %index.next.i, 8000
   br i1 %4, label %_Z4fillIPxxEvT_S1_T0_.exit, label %vector.body.i
 
-_Z4fillIPxxEvT_S1_T0_.exit:                       ; preds = %vector.body.i
+_Z4fillIPxxEvT_S1_T0_.exit:                       
   ret i32 0
 }
 
-; CHECK: @main
-; CHECK: __fixdfdi
-; CHECK: mtctr
+
+
+
 

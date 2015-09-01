@@ -1,45 +1,45 @@
-; RUN: opt < %s -sample-profile -sample-profile-file=%S/Inputs/propagate.prof | opt -analyze -branch-prob | FileCheck %s
 
-; Original C++ code for this test case:
-;
-; #include <stdio.h>
-;
-; long foo(int x, int y, long N) {
-;   if (x < y) {
-;     return y - x;
-;   } else {
-;     for (long i = 0; i < N; i++) {
-;       if (i > N / 3)
-;         x--;
-;       if (i > N / 4) {
-;         y++;
-;         x += 3;
-;       } else {
-;         for (unsigned j = 0; j < i; j++) {
-;           x += j;
-;           y -= 3;
-;         }
-;       }
-;     }
-;   }
-;   return y * x;
-; }
-;
-; int main() {
-;   int x = 5678;
-;   int y = 1234;
-;   long N = 999999;
-;   printf("foo(%d, %d, %ld) = %ld\n", x, y, N, foo(x, y, N));
-;   return 0;
-; }
 
-; ModuleID = 'propagate.cc'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
 @.str = private unnamed_addr constant [24 x i8] c"foo(%d, %d, %ld) = %ld\0A\00", align 1
 
-; Function Attrs: nounwind uwtable
+
 define i64 @_Z3fooiil(i32 %x, i32 %y, i64 %N) #0 {
 entry:
   %retval = alloca i64, align 8
@@ -56,7 +56,7 @@ entry:
   %cmp = icmp slt i32 %0, %1, !dbg !11
   br i1 %cmp, label %if.then, label %if.else, !dbg !11
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %2 = load i32, i32* %y.addr, align 4, !dbg !13
   %3 = load i32, i32* %x.addr, align 4, !dbg !13
   %sub = sub nsw i32 %2, %3, !dbg !13
@@ -64,43 +64,43 @@ if.then:                                          ; preds = %entry
   store i64 %conv, i64* %retval, !dbg !13
   br label %return, !dbg !13
 
-if.else:                                          ; preds = %entry
+if.else:                                          
   store i64 0, i64* %i, align 8, !dbg !15
   br label %for.cond, !dbg !15
 
-for.cond:                                         ; preds = %for.inc16, %if.else
+for.cond:                                         
   %4 = load i64, i64* %i, align 8, !dbg !15
   %5 = load i64, i64* %N.addr, align 8, !dbg !15
   %cmp1 = icmp slt i64 %4, %5, !dbg !15
   br i1 %cmp1, label %for.body, label %for.end18, !dbg !15
-; CHECK: edge for.cond -> for.body probability is 10 / 10 = 100% [HOT edge]
-; CHECK: edge for.cond -> for.end18 probability is 0 / 10 = 0%
 
-for.body:                                         ; preds = %for.cond
+
+
+for.body:                                         
   %6 = load i64, i64* %i, align 8, !dbg !18
   %7 = load i64, i64* %N.addr, align 8, !dbg !18
   %div = sdiv i64 %7, 3, !dbg !18
   %cmp2 = icmp sgt i64 %6, %div, !dbg !18
   br i1 %cmp2, label %if.then3, label %if.end, !dbg !18
-; CHECK: edge for.body -> if.then3 probability is 1 / 5 = 20%
-; CHECK: edge for.body -> if.end probability is 4 / 5 = 80%
 
-if.then3:                                         ; preds = %for.body
+
+
+if.then3:                                         
   %8 = load i32, i32* %x.addr, align 4, !dbg !21
   %dec = add nsw i32 %8, -1, !dbg !21
   store i32 %dec, i32* %x.addr, align 4, !dbg !21
   br label %if.end, !dbg !21
 
-if.end:                                           ; preds = %if.then3, %for.body
+if.end:                                           
   %9 = load i64, i64* %i, align 8, !dbg !22
   %10 = load i64, i64* %N.addr, align 8, !dbg !22
   %div4 = sdiv i64 %10, 4, !dbg !22
   %cmp5 = icmp sgt i64 %9, %div4, !dbg !22
   br i1 %cmp5, label %if.then6, label %if.else7, !dbg !22
-; CHECK: edge if.end -> if.then6 probability is 3 / 6342 = 0.0473037%
-; CHECK: edge if.end -> if.else7 probability is 6339 / 6342 = 99.9527% [HOT edge]
 
-if.then6:                                         ; preds = %if.end
+
+
+if.then6:                                         
   %11 = load i32, i32* %y.addr, align 4, !dbg !24
   %inc = add nsw i32 %11, 1, !dbg !24
   store i32 %inc, i32* %y.addr, align 4, !dbg !24
@@ -109,20 +109,20 @@ if.then6:                                         ; preds = %if.end
   store i32 %add, i32* %x.addr, align 4, !dbg !26
   br label %if.end15, !dbg !27
 
-if.else7:                                         ; preds = %if.end
+if.else7:                                         
   store i32 0, i32* %j, align 4, !dbg !28
   br label %for.cond8, !dbg !28
 
-for.cond8:                                        ; preds = %for.inc, %if.else7
+for.cond8:                                        
   %13 = load i32, i32* %j, align 4, !dbg !28
   %conv9 = zext i32 %13 to i64, !dbg !28
   %14 = load i64, i64* %i, align 8, !dbg !28
   %cmp10 = icmp slt i64 %conv9, %14, !dbg !28
   br i1 %cmp10, label %for.body11, label %for.end, !dbg !28
-; CHECK: edge for.cond8 -> for.body11 probability is 16191 / 16191 = 100% [HOT edge]
-; CHECK: edge for.cond8 -> for.end probability is 0 / 16191 = 0%
 
-for.body11:                                       ; preds = %for.cond8
+
+
+for.body11:                                       
   %15 = load i32, i32* %j, align 4, !dbg !31
   %16 = load i32, i32* %x.addr, align 4, !dbg !31
   %add12 = add i32 %16, %15, !dbg !31
@@ -132,28 +132,28 @@ for.body11:                                       ; preds = %for.cond8
   store i32 %sub13, i32* %y.addr, align 4, !dbg !33
   br label %for.inc, !dbg !34
 
-for.inc:                                          ; preds = %for.body11
+for.inc:                                          
   %18 = load i32, i32* %j, align 4, !dbg !28
   %inc14 = add i32 %18, 1, !dbg !28
   store i32 %inc14, i32* %j, align 4, !dbg !28
   br label %for.cond8, !dbg !28
 
-for.end:                                          ; preds = %for.cond8
+for.end:                                          
   br label %if.end15
 
-if.end15:                                         ; preds = %for.end, %if.then6
+if.end15:                                         
   br label %for.inc16, !dbg !35
 
-for.inc16:                                        ; preds = %if.end15
+for.inc16:                                        
   %19 = load i64, i64* %i, align 8, !dbg !15
   %inc17 = add nsw i64 %19, 1, !dbg !15
   store i64 %inc17, i64* %i, align 8, !dbg !15
   br label %for.cond, !dbg !15
 
-for.end18:                                        ; preds = %for.cond
+for.end18:                                        
   br label %if.end19
 
-if.end19:                                         ; preds = %for.end18
+if.end19:                                         
   %20 = load i32, i32* %y.addr, align 4, !dbg !36
   %21 = load i32, i32* %x.addr, align 4, !dbg !36
   %mul = mul nsw i32 %20, %21, !dbg !36
@@ -161,12 +161,12 @@ if.end19:                                         ; preds = %for.end18
   store i64 %conv20, i64* %retval, !dbg !36
   br label %return, !dbg !36
 
-return:                                           ; preds = %if.end19, %if.then
+return:                                           
   %22 = load i64, i64* %retval, !dbg !37
   ret i64 %22, !dbg !37
 }
 
-; Function Attrs: uwtable
+
 define i32 @main() #1 {
 entry:
   %retval = alloca i32, align 4

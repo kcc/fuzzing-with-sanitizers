@@ -1,26 +1,26 @@
-; RUN: opt < %s -O3 -S | FileCheck %s
+
 
 target datalayout = "e-i64:64-v16:16-v32:32-n16:32:64"
 target triple = "nvptx64-nvidia-cuda"
 
 define void @no_vectorization(i32 %n, i32 %a, i32 %b) {
-; CHECK-LABEL: no_vectorization(
-; CHECK-NOT: <4 x i32>
-; CHECK-NOT: <4 x i1>
+
+
+
 entry:
   %cmp.5 = icmp sgt i32 %n, 0
   br i1 %cmp.5, label %for.body.preheader, label %for.cond.cleanup
 
-for.body.preheader:                               ; preds = %entry
+for.body.preheader:                               
   br label %for.body
 
-for.cond.cleanup.loopexit:                        ; preds = %for.body
+for.cond.cleanup.loopexit:                        
   br label %for.cond.cleanup
 
-for.cond.cleanup:                                 ; preds = %for.cond.cleanup.loopexit, %entry
+for.cond.cleanup:                                 
   ret void
 
-for.body:                                         ; preds = %for.body.preheader, %for.body
+for.body:                                         
   %i.06 = phi i32 [ %inc, %for.body ], [ 0, %for.body.preheader ]
   %add = add nsw i32 %i.06, %a
   %mul = mul nsw i32 %add, %b

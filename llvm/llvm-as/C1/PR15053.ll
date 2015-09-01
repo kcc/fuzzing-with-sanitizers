@@ -1,5 +1,5 @@
-; RUN: llc -mtriple=armv7 < %s
-; PR15053
+
+
 
 declare i32 @llvm.arm.strexd(i32, i32, i8*) nounwind
 declare { i32, i32 } @llvm.arm.ldrexd(i8*) nounwind readonly

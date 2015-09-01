@@ -1,5 +1,5 @@
-; RUN: llc -march=mipsel -mcpu=mips32r2 -mattr=+micromips \
-; RUN:   -relocation-model=static -O2 < %s | FileCheck %s
+
+
 
 @main.L = internal unnamed_addr constant [3 x i8*] [i8* blockaddress(@main, %L1), i8* blockaddress(@main, %L2), i8* null], align 4
 @str = private unnamed_addr constant [2 x i8] c"A\00"
@@ -9,7 +9,7 @@ define i32 @main() #0 {
 entry:
   br label %L1
 
-L1:                                               ; preds = %entry, %L1
+L1:                                               
   %i.0 = phi i32 [ 0, %entry ], [ %inc, %L1 ]
   %puts = tail call i32 @puts(i8* getelementptr inbounds ([2 x i8], [2 x i8]* @str, i32 0, i32 0))
   %inc = add i32 %i.0, 1
@@ -17,7 +17,7 @@ L1:                                               ; preds = %entry, %L1
   %0 = load i8*, i8** %arrayidx, align 4, !tbaa !1
   indirectbr i8* %0, [label %L1, label %L2]
 
-L2:                                               ; preds = %L1
+L2:                                               
   %puts2 = tail call i32 @puts(i8* getelementptr inbounds ([2 x i8], [2 x i8]* @str2, i32 0, i32 0))
   ret i32 0
 }
@@ -29,7 +29,7 @@ declare i32 @puts(i8* nocapture readonly) #1
 !3 = !{!"omnipotent char", !4, i64 0}
 !4 = !{!"Simple C/C++ TBAA"}
 
-; CHECK:      jrc
+
 
 %struct.foostruct = type { [3 x float] }
 %struct.barstruct = type { %struct.foostruct, float }
@@ -41,6 +41,6 @@ define float* @spooky(i32 signext %i) #0 {
   ret float* %safe
 }
 
-; CHECK:      spooky:
-; CHECK:      jrc $ra
+
+
 

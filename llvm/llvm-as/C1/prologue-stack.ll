@@ -1,16 +1,16 @@
-; RUN: llc -disable-fp-elim -O0 %s -mtriple x86_64-unknown-linux-gnu -o - | FileCheck %s
 
-; int callme(int);
-; int isel_line_test2() {
-;   callme(400);
-;   return 0;
-; }
+
+
+
+
+
+
 
 define i32 @isel_line_test2() nounwind uwtable {
-  ; The stack adjustment should be part of the prologue.
-  ; CHECK: isel_line_test2:
-  ; CHECK: {{subq|leaq}} {{.*}}, %rsp
-  ; CHECK: .loc 1 5 3 prologue_end
+  
+  
+  
+  
 entry:
   %call = call i32 @callme(i32 400), !dbg !10
   ret i32 0, !dbg !12

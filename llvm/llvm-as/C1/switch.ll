@@ -1,5 +1,5 @@
-; RUN: llc -mtriple=x86_64-linux-gnu %s -o - | FileCheck %s
-; RUN: llc -mtriple=x86_64-linux-gnu %s -o - -O0 | FileCheck --check-prefix=NOOPT %s
+
+
 
 declare void @g(i32)
 
@@ -16,18 +16,18 @@ bb1: tail call void @g(i32 1) br label %return
 bb2: tail call void @g(i32 1) br label %return
 return: ret void
 
-; Lowered as a jump table, both with and without optimization.
-; CHECK-LABEL: basic
-; CHECK: decl
-; CHECK: cmpl $4
-; CHECK: ja
-; CHECK: jmpq *.LJTI
-; NOOPT-LABEL: basic
-; NOOPT: decl
-; NOOPT: subl $4
-; NOOPT: ja
-; NOOPT: movq .LJTI
-; NOOPT: jmpq
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -47,21 +47,21 @@ bb0: tail call void @g(i32 0) br label %return
 bb1: tail call void @g(i32 1) br label %return
 return: ret void
 
-; Should be lowered to two range checks.
-; CHECK-LABEL: simple_ranges
-; CHECK: leal -100
-; CHECK: cmpl $4
-; CHECK: jb
-; CHECK: cmpl $3
-; CHECK: ja
 
-; We do this even at -O0, because it's cheap and makes codegen faster.
-; NOOPT-LABEL: simple_ranges
-; NOOPT: subl $4
-; NOOPT: jb
-; NOOPT: addl $-100
-; NOOPT: subl $4
-; NOOPT: jb
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -86,12 +86,12 @@ bb3: tail call void @g(i32 3) br label %return
 bb4: tail call void @g(i32 4) br label %return
 return: ret void
 
-; Cases 0-5 could be lowered with two bit tests,
-; but with 6-8, the whole switch is suitable for a jump table.
-; CHECK-LABEL: jt_is_better
-; CHECK: cmpl $8
-; CHECK: ja
-; CHECK: jmpq *.LJTI
+
+
+
+
+
+
 }
 
 
@@ -113,21 +113,21 @@ bb1: tail call void @g(i32 1) br label %return
 bb2: tail call void @g(i32 2) br label %return
 return: ret void
 
-; This could be lowered as a jump table, but bit tests is more efficient.
-; CHECK-LABEL: bt_is_better
-; The bit test on 2,5,8 is unnecessary as all cases cover the rage [0, 8].
-; The range check guarantees that cases other than 0,3,6 and 1,4,7 must be
-; in 2,5,8.
-;
-; 73 = 2^0 + 2^3 + 2^6
-; CHECK: movl $73
-; CHECK: btl
-; 146 = 2^1 + 2^4 + 2^7
-; CHECK: movl $146
-; CHECK: btl
-; 292 = 2^2 + 2^5 + 2^8
-; CHECK-NOT: movl $292
-; CHECK-NOT: btl
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 define void @bt_is_better2(i32 %x) {
@@ -147,20 +147,20 @@ bb1: tail call void @g(i32 1) br label %return
 bb2: tail call void @g(i32 2) br label %return
 return: ret void
 
-; This will also be lowered as bit test, but as the range [0,8] is not fully
-; covered (5 missing), the default statement can be jumped to and we end up
-; with one more branch.
-; CHECK-LABEL: bt_is_better2
-;
-; 73 = 2^0 + 2^3 + 2^6
-; CHECK: movl $73
-; CHECK: btl
-; 146 = 2^1 + 2^4 + 2^7
-; CHECK: movl $146
-; CHECK: btl
-; 260 = 2^2 + 2^8
-; CHECK: movl $260
-; CHECK: btl
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 define void @bt_is_better3(i32 %x) {
@@ -180,21 +180,21 @@ bb1: tail call void @g(i32 1) br label %return
 bb2: tail call void @g(i32 2) br label %return
 return: ret void
 
-; We don't have to subtract 10 from the case value to let the range become
-; [0, 8], as each value in the range [10, 18] can be represented by bits in a
-; word. Then we still need a branch to jump to the default statement for the
-; range [0, 10).
-; CHECK-LABEL: bt_is_better3
-;
-; 74752 = 2^10 + 2^13 + 2^16
-; CHECK: movl $74752
-; CHECK: btl
-; 149504 = 2^11 + 2^14 + 2^17
-; CHECK: movl $149504
-; CHECK: btl
-; 266240 = 2^12 + 2^15 + 2^18
-; CHECK: movl $266240
-; CHECK: btl
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -213,10 +213,10 @@ bb0: tail call void @g(i32 0) br label %return
 bb1: tail call void @g(i32 1) br label %return
 return: ret void
 
-; Should pivot around 400 for two subtrees of equal size.
-; CHECK-LABEL: optimal_pivot1
-; CHECK-NOT: cmpl
-; CHECK: cmpl $399
+
+
+
+
 }
 
 
@@ -235,14 +235,14 @@ bb2: tail call void @g(i32 2) br label %return
 bb3: tail call void @g(i32 3) br label %return
 return: ret void
 
-; Should pivot around 300 for two subtrees with two jump tables each.
-; CHECK-LABEL: optimal_pivot2
-; CHECK-NOT: cmpl
-; CHECK: cmpl $299
-; CHECK: jmpq *.LJTI
-; CHECK: jmpq *.LJTI
-; CHECK: jmpq *.LJTI
-; CHECK: jmpq *.LJTI
+
+
+
+
+
+
+
+
 }
 
 
@@ -264,27 +264,27 @@ bb4: tail call void @g(i32 4) br label %return
 bb5: tail call void @g(i32 5) br label %return
 return: ret void
 
-; Splitting in the largest gap (between 6 and 12) would yield suboptimal result.
-; Expecting a jump table from 5 to 15.
-; CHECK-LABEL: optimal_jump_table1
-; CHECK: leal -5
-; CHECK: cmpl $10
-; CHECK: jmpq *.LJTI
 
-; At -O0, we don't build jump tables for only parts of a switch.
-; NOOPT-LABEL: optimal_jump_table1
-; NOOPT: testl %edi, %edi
-; NOOPT: je
-; NOOPT: subl $5, %eax
-; NOOPT: je
-; NOOPT: subl $6, %eax
-; NOOPT: je
-; NOOPT: subl $12, %eax
-; NOOPT: je
-; NOOPT: subl $13, %eax
-; NOOPT: je
-; NOOPT: subl $15, %eax
-; NOOPT: je
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -306,12 +306,12 @@ bb4: tail call void @g(i32 4) br label %return
 bb5: tail call void @g(i32 5) br label %return
 return: ret void
 
-; Partitioning the cases to the minimum number of dense sets is not good enough.
-; This can be partitioned as {0,1,2,9},{14,15} or {0,1,2},{9,14,15}. The former
-; should be preferred. Expecting a table from 0-9.
-; CHECK-LABEL: optimal_jump_table2
-; CHECK: cmpl $9
-; CHECK: jmpq *.LJTI
+
+
+
+
+
+
 }
 
 
@@ -335,13 +335,13 @@ bb3: tail call void @g(i32 3) br label %return
 bb4: tail call void @g(i32 4) br label %return
 return: ret void
 
-; Splitting to maximize left-right density sum and gap size would split this
-; between 3 and 10, and then between 20 and 25. It's better to build a table
-; from 1-20.
-; CHECK-LABEL: optimal_jump_table3
-; CHECK: leal -1
-; CHECK: cmpl $19
-; CHECK: jmpq *.LJTI
+
+
+
+
+
+
+
 }
 
 %struct.S = type { %struct.S*, i32 }
@@ -368,12 +368,12 @@ exit:
 exit2:
   ret void
 
-; This will be lowered to a comparison with 4 and then bit tests. Make sure
-; that the phi node in %header gets a value from the comparison block.
-; CHECK-LABEL: phi_node_trouble
-; CHECK: movq (%[[REG1:[a-z]+]]), %[[REG1]]
-; CHECK: movl 8(%[[REG1]]), %[[REG2:[a-z]+]]
-; CHECK: cmpl $4, %[[REG2]]
+
+
+
+
+
+
 }
 
 
@@ -386,12 +386,12 @@ sw:
   switch i32 %x, label %return [
   ]
 
-; Branch directly to the default.
-; (In optimized builds the switch is removed earlier.)
-; NOOPT-LABEL: default_only
-; NOOPT: .[[L:[A-Z0-9_]+]]:
-; NOOPT-NEXT: retq
-; NOOPT: jmp .[[L]]
+
+
+
+
+
+
 }
 
 
@@ -451,10 +451,10 @@ bb2: tail call void @g(i32 1) br label %return
 bb3: tail call void @g(i32 1) br label %return
 return: ret void
 
-; Don't infloop on jump tables where the upper bound is the max value of the
-; input type (in this case 127).
-; CHECK-LABEL: int_max_table_cluster
-; CHECK: jmpq *.LJTI
+
+
+
+
 }
 
 
@@ -477,33 +477,33 @@ bb1: tail call void @g(i32 1) br label %return
 bb2: tail call void @g(i32 2) br label %return
 return: ret void
 
-; Cases 1,4,7 have a very large branch weight (which shouldn't overflow), so
-; their bit test should come first. 0,3,6 and 2,5,8,9 both have a weight of 12,
-; but the latter set has more cases, so should be tested for earlier.
-; The bit test on 0,3,6 is unnecessary as all cases cover the rage [0, 9].
-; The range check guarantees that cases other than 1,4,7 and 2,5,8,9 must be
-; in 0,3,6.
 
-; CHECK-LABEL: bt_order_by_weight
-; 146 = 2^1 + 2^4 + 2^7
-; CHECK: movl $146
-; CHECK: btl
-; 292 = 2^2 + 2^5 + 2^8 + 2^9
-; CHECK: movl $804
-; CHECK: btl
-; 73 = 2^0 + 2^3 + 2^6
-; CHECK-NOT: movl $73
-; CHECK-NOT: btl
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 !1 = !{!"branch_weights",
-       ; Default:
+       
        i32 1,
-       ; Cases 0,3,6:
+       
        i32 4, i32 4, i32 4,
-       ; Cases 1,4,7:
+       
        i32 4294967295, i32 2, i32 4294967295,
-       ; Cases 2,5,8,9:
+       
        i32 3, i32 3, i32 3, i32 3}
 
 define void @order_by_weight_and_fallthrough(i32 %x) {
@@ -517,22 +517,22 @@ bb0: tail call void @g(i32 0) br label %return
 bb1: tail call void @g(i32 1) br label %return
 return: ret void
 
-; Case 200 has the highest weight and should come first. 100 and 300 have the
-; same weight, but 300 goes to the 'next' block, so should be last.
-; CHECK-LABEL: order_by_weight_and_fallthrough
-; CHECK: cmpl $200
-; CHECK: cmpl $100
-; CHECK: cmpl $300
+
+
+
+
+
+
 }
 
 !2 = !{!"branch_weights",
-       ; Default:
+       
        i32 1,
-       ; Case 100:
+       
        i32 10,
-       ; Case 200:
+       
        i32 1000,
-       ; Case 300:
+       
        i32 10}
 
 
@@ -554,10 +554,10 @@ bb4: tail call void @g(i32 4) br label %return
 bb5: tail call void @g(i32 5) br label %return
 return: ret void
 
-; Make sure to pick a pivot in the middle also with zero-weight cases.
-; CHECK-LABEL: zero_weight_tree
-; CHECK-NOT: cmpl
-; CHECK: cmpl $29
+
+
+
+
 }
 
 !3 = !{!"branch_weights", i32 1, i32 10, i32 0, i32 0, i32 0, i32 0, i32 10}
@@ -585,14 +585,14 @@ bb6: tail call void @g(i32 6) br label %return
 bb7: tail call void @g(i32 7) br label %return
 return: ret void
 
-; Without branch probabilities, the pivot would be 40, since that would yield
-; equal-sized sub-trees. When taking weights into account, case 70 becomes the
-; pivot. Since there is room for 3 cases in a leaf, cases 50 and 60 are also
-; included in the right-hand side because that doesn't reduce their rank.
 
-; CHECK-LABEL: left_leaning_weight_balanced_tree
-; CHECK-NOT: cmpl
-; CHECK: cmpl $49
+
+
+
+
+
+
+
 }
 
 !4 = !{!"branch_weights", i32 1, i32 10, i32 1, i32 1, i32 1, i32 1, i32 1, i32 1, i32 1000}
@@ -620,13 +620,13 @@ bb6: tail call void @g(i32 6) br label %return
 bb7: tail call void @g(i32 7) br label %return
 return: ret void
 
-; Same as the previous test, except case 50 has higher rank to the left than it
-; would have on the right. Case 60 would have the same rank on both sides, so is
-; moved into the leaf.
 
-; CHECK-LABEL: left_leaning_weight_balanced_tree2
-; CHECK-NOT: cmpl
-; CHECK: cmpl $59
+
+
+
+
+
+
 }
 
 !5 = !{!"branch_weights", i32 1, i32 10, i32 1, i32 1, i32 1, i32 1, i32 90, i32 70, i32 1000}
@@ -654,11 +654,11 @@ bb6: tail call void @g(i32 6) br label %return
 bb7: tail call void @g(i32 7) br label %return
 return: ret void
 
-; Analogous to left_leaning_weight_balanced_tree.
 
-; CHECK-LABEL: right_leaning_weight_balanced_tree
-; CHECK-NOT: cmpl
-; CHECK: cmpl $19
+
+
+
+
 }
 
 !6 = !{!"branch_weights", i32 1, i32 1000, i32 1, i32 1, i32 1, i32 1, i32 1, i32 1, i32 10}
@@ -667,7 +667,7 @@ return: ret void
 define void @jump_table_affects_balance(i32 %x) {
 entry:
   switch i32 %x, label %return [
-    ; Jump table:
+    
     i32 0,  label %bb0
     i32 1,  label %bb1
     i32 2,  label %bb2
@@ -683,12 +683,12 @@ bb2: tail call void @g(i32 2) br label %return
 bb3: tail call void @g(i32 3) br label %return
 return: ret void
 
-; CHECK-LABEL: jump_table_affects_balance
-; If the tree were balanced based on number of clusters, {0-3,100} would go on
-; the left and {200,300} on the right. However, the jump table weights as much
-; as its components, so 100 is selected as the pivot.
-; CHECK-NOT: cmpl
-; CHECK: cmpl $99
+
+
+
+
+
+
 }
 
 
@@ -702,6 +702,6 @@ entry:
 bb0: tail call void @g(i32 0) br label %return
 bb1: tail call void @g(i32 1) br label %return
 return: ret void
-; Don't assert due to truncating the bitwidth (64) to i4 when checking
-; that the bit-test range fits in a word.
+
+
 }

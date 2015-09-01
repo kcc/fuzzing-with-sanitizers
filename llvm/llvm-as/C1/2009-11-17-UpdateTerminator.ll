@@ -1,6 +1,6 @@
-; RUN: llc -O3 < %s
-; This test fails with:
-; Assertion failed: (!B && "UpdateTerminators requires analyzable predecessors!"), function updateTerminator, MachineBasicBlock.cpp, line 255.
+
+
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64"
 target triple = "x86_64-apple-darwin10.2"
@@ -19,7 +19,7 @@ define zeroext i8 @_ZN4llvm9InlineAsm14ConstraintInfo5ParseENS_9StringRefERSt6ve
 entry:
   br i1 undef, label %bb56, label %bb27.outer
 
-bb8:                                              ; preds = %bb27.outer108, %bb13
+bb8:                                              
   switch i8 undef, label %bb27.outer [
     i8 35, label %bb56
     i8 37, label %bb14
@@ -27,26 +27,26 @@ bb8:                                              ; preds = %bb27.outer108, %bb1
     i8 42, label %bb56
   ]
 
-bb27.outer:                                       ; preds = %bb8, %entry
-  %I.2.ph = phi i8* [ undef, %entry ], [ %I.2.ph109, %bb8 ] ; <i8*> [#uses=2]
+bb27.outer:                                       
+  %I.2.ph = phi i8* [ undef, %entry ], [ %I.2.ph109, %bb8 ] 
   br label %bb27.outer108
 
-bb10:                                             ; preds = %bb8
-  %toBool = icmp eq i8 0, 0                       ; <i1> [#uses=1]
-  %or.cond = and i1 undef, %toBool                ; <i1> [#uses=1]
+bb10:                                             
+  %toBool = icmp eq i8 0, 0                       
+  %or.cond = and i1 undef, %toBool                
   br i1 %or.cond, label %bb13, label %bb56
 
-bb13:                                             ; preds = %bb10
+bb13:                                             
   br i1 undef, label %bb27.outer108, label %bb8
 
-bb14:                                             ; preds = %bb8
+bb14:                                             
   ret i8 1
 
-bb27.outer108:                                    ; preds = %bb13, %bb27.outer
-  %I.2.ph109 = getelementptr i8, i8* %I.2.ph, i64 undef ; <i8*> [#uses=1]
-  %scevgep = getelementptr i8, i8* %I.2.ph, i64 undef ; <i8*> [#uses=0]
+bb27.outer108:                                    
+  %I.2.ph109 = getelementptr i8, i8* %I.2.ph, i64 undef 
+  %scevgep = getelementptr i8, i8* %I.2.ph, i64 undef 
   br label %bb8
 
-bb56:                                             ; preds = %bb10, %bb8, %bb8, %entry
+bb56:                                             
   ret i8 1
 }

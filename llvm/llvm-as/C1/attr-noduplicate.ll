@@ -1,11 +1,11 @@
-; RUN: opt < %s -simplifycfg -S | FileCheck %s
 
-; This test checks that the SimplifyCFG pass won't duplicate a call to a
-; function marked noduplicate.
-;
-; CHECK-LABEL: @noduplicate
-; CHECK: call void @barrier
-; CHECK-NOT: call void @barrier
+
+
+
+
+
+
+
 define void @noduplicate(i32 %cond, i32* %out) {
 entry:
   %out1 = getelementptr i32, i32* %out, i32 1
@@ -31,7 +31,7 @@ cond.end:
   ret void
 }
 
-; Function Attrs: noduplicate nounwind
+
 declare void @barrier() #0
 
 attributes #0 = { noduplicate nounwind }

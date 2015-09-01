@@ -1,14 +1,14 @@
-; RUN: llc -O2 < %s | FileCheck %s
-; Look for four stores directly via r29.
-; CHECK: memd(r29
-; CHECK: memd(r29
-; CHECK: memd(r29
-; CHECK: memd(r29
+
+
+
+
+
+
 
 target datalayout = "e-m:e-p:32:32-i1:32-i64:64-a:0-v32:32-n16:32"
 target triple = "hexagon"
 
-; Function Attrs: nounwind
+
 define void @foo() #0 {
 entry:
   %t = alloca [4 x [2 x i32]], align 8
@@ -19,7 +19,7 @@ entry:
   ret void
 }
 
-; Function Attrs: nounwind
+
 declare void @llvm.memset.p0i8.i32(i8* nocapture, i8, i32, i32, i1) #1
 
 declare void @bar([2 x i32]*) #2

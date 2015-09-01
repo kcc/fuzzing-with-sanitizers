@@ -1,6 +1,6 @@
-; RUN: llc < %s -mtriple=x86_64-apple-darwin
-; RUN: llc < %s -mtriple=x86_64-apple-darwin -relocation-model=pic -disable-fp-elim -O0 -regalloc=fast
-; PR5534
+
+
+
 
 	%struct.CGPoint = type { double, double }
 	%struct.NSArray = type { %struct.NSObject }
@@ -35,15 +35,15 @@
 	%struct.__wFlags = type <{ i8, i8, i8, i8, i8, i8, i8, i8 }>
 	%struct._message_ref_t = type { %struct.NSObject* (%struct.NSObject*, %struct._message_ref_t*, ...)*, %struct.objc_selector* }
 	%struct.objc_selector = type opaque
-@"\01L_OBJC_MESSAGE_REF_228" = internal global %struct._message_ref_t zeroinitializer		; <%struct._message_ref_t*> [#uses=1]
-@llvm.used1 = appending global [1 x i8*] [ i8* bitcast (void (%struct.AA*, %struct._message_ref_t*, %struct.NSError*, i64, %struct.NSObject*, %struct.objc_selector*, i8*)* @"-[AA BB:optionIndex:delegate:CC:contextInfo:]" to i8*) ], section "llvm.metadata"		; <[1 x i8*]*> [#uses=0]
+@"\01L_OBJC_MESSAGE_REF_228" = internal global %struct._message_ref_t zeroinitializer		
+@llvm.used1 = appending global [1 x i8*] [ i8* bitcast (void (%struct.AA*, %struct._message_ref_t*, %struct.NSError*, i64, %struct.NSObject*, %struct.objc_selector*, i8*)* @"-[AA BB:optionIndex:delegate:CC:contextInfo:]" to i8*) ], section "llvm.metadata"		
 
 define void @"-[AA BB:optionIndex:delegate:CC:contextInfo:]"(%struct.AA* %self, %struct._message_ref_t* %_cmd, %struct.NSError* %inError, i64 %inOptionIndex, %struct.NSObject* %inDelegate, %struct.objc_selector* %inDidRecoverSelector, i8* %inContextInfo) {
 entry:
-	%tmp105 = load %struct.NSArray*, %struct.NSArray** null, align 8		; <%struct.NSArray*> [#uses=1]
-	%tmp107 = load %struct.NSObject*, %struct.NSObject** null, align 8		; <%struct.NSObject*> [#uses=1]
+	%tmp105 = load %struct.NSArray*, %struct.NSArray** null, align 8		
+	%tmp107 = load %struct.NSObject*, %struct.NSObject** null, align 8		
 	call void null( %struct.NSObject* %tmp107, %struct._message_ref_t* @"\01L_OBJC_MESSAGE_REF_228", %struct.NSArray* %tmp105, i8 signext  0 )
-	%tmp111 = call %struct.NSObject* (%struct.NSObject*, %struct.objc_selector*, ...) @objc_msgSend( %struct.NSObject* null, %struct.objc_selector* null, i32 0, i8* null )		; <%struct.NSObject*> [#uses=0]
+	%tmp111 = call %struct.NSObject* (%struct.NSObject*, %struct.objc_selector*, ...) @objc_msgSend( %struct.NSObject* null, %struct.objc_selector* null, i32 0, i8* null )		
 	ret void
 }
 

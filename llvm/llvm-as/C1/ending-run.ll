@@ -1,12 +1,12 @@
-; RUN: llc -mtriple=x86_64-apple-darwin -filetype=obj %s -o %t
-; RUN: llvm-dwarfdump -debug-dump=line %t | FileCheck %s
 
-; Check that the line table starts at 7, not 4, but that the first
-; statement isn't until line 8.
 
-; CHECK-NOT: 0x0000000000000000      7      0      1   0  0  is_stmt
-; CHECK: 0x0000000000000000      7      0      1   0
-; CHECK: 0x0000000000000004      8     18      1   0  0  is_stmt prologue_end
+
+
+
+
+
+
+
 
 define i32 @callee(i32 %x) nounwind uwtable ssp {
 entry:

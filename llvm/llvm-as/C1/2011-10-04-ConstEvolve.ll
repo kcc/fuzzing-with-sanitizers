@@ -1,10 +1,10 @@
-; RUN: opt < %s -analyze -scalar-evolution | FileCheck %s
 
-; Exercise getConstantEvolvingPHIOperands on an interesting loop.
-; This should complete in milliseconds, not minutes.
 
-; Just check that it actually ran trip count analysis.
-; CHECK: Determining loop execution counts for: @test
+
+
+
+
+
 define void @test() nounwind {
 entry:
   br label %loop

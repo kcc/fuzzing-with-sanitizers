@@ -1,6 +1,6 @@
-; RUN: opt < %s -analyze -iv-users
-; PR9633: Tests that SCEV handles the mul.i2 recurrence being folded to
-; constant zero.
+
+
+
 
 define signext i8 @func_14(i8 signext %p_18) nounwind readnone ssp {
 entry:

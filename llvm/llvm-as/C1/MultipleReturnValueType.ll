@@ -1,11 +1,11 @@
-; RUN: llvm-as < %s
-; RUN: verify-uselistorder %s
+
+
 
         %struct.S_102 = type { float, float }
 
 declare %struct.S_102 @f_102() nounwind
 
-@callthis = external global void ()*            ; <void ()**> [#uses=50]
+@callthis = external global void ()*            
 
 
 define void @foo() {

@@ -1,6 +1,6 @@
-; RUN: llc < %s -mcpu=cortex-a8 -march=thumb
-; Test that this doesn't crash.
-; <rdar://problem/12183003>
+
+
+
 
 target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:32:64-v128:32:128-a0:0:32-n32-S32"
 target triple = "thumbv7-apple-ios5.1.0"
@@ -13,11 +13,11 @@ define void @findEdges(i8*) nounwind ssp {
   %2 = icmp sgt i32 undef, 0
   br i1 %2, label %5, label %3
 
-; <label>:3                                       ; preds = %5, %1
+
   %4 = phi i8* [ %0, %1 ], [ %19, %5 ]
   ret void
 
-; <label>:5                                       ; preds = %5, %1
+
   %6 = phi i8* [ %19, %5 ], [ %0, %1 ]
   %7 = tail call { <16 x i8>, <16 x i8>, <16 x i8> } @llvm.arm.neon.vld3.v16i8(i8* null, i32 1)
   %8 = extractvalue { <16 x i8>, <16 x i8>, <16 x i8> } %7, 0

@@ -1,6 +1,6 @@
-; RUN: llc %s -o -
 
-;; Reference to a label that gets deleted.
+
+
 define i8* @test1() nounwind {
 entry:
 	ret i8* blockaddress(@test1b, %test_label)
@@ -16,7 +16,7 @@ ret:
 }
 
 
-;; Issues with referring to a label that gets RAUW'd later.
+
 define i32 @test2a() nounwind {
 entry:
         %target = bitcast i8* blockaddress(@test2b, %test_label) to i8*
@@ -31,15 +31,15 @@ entry:
         indirectbr i8* %target, [label %test_label]
 
 test_label:
-; assume some code here...
+
         br label %ret
 
 ret:
         ret i32 -1
 }
 
-; Issues with a BB that gets RAUW'd to another one after references are
-; generated.
+
+
 define void @test3(i8** %P, i8** %Q) nounwind {
 entry:
   store i8* blockaddress(@test3b, %test_label), i8** %P
@@ -57,7 +57,7 @@ ret:
 }
 
 
-; PR6673
+
 
 define i64 @test4a() {
 	%target = bitcast i8* blockaddress(@test4b, %usermain) to i8*

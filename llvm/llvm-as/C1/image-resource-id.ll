@@ -1,13 +1,13 @@
-; RUN: llc -march=r600 -mcpu=juniper < %s | FileCheck -check-prefix=EG -check-prefix=FUNC %s
 
-; === 1 image arg, read_only ===================================================
 
-; FUNC-LABEL: {{^}}test_2d_rd_1_0:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], literal.x
-; EG-NEXT: LSHR
-; EG-NEXT: 0(
-define void @test_2d_rd_1_0(%opencl.image2d_t addrspace(1)* %in, ; read_only
+
+
+
+
+
+
+
+define void @test_2d_rd_1_0(%opencl.image2d_t addrspace(1)* %in, 
                             i32 addrspace(1)* %out) {
 entry:
   %0 = call i32 @llvm.OpenCL.image.get.resource.id.2d(
@@ -16,12 +16,12 @@ entry:
   ret void
 }
 
-; FUNC-LABEL: {{^}}test_3d_rd_1_0:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], literal.x
-; EG-NEXT: LSHR
-; EG-NEXT: 0(
-define void @test_3d_rd_1_0(%opencl.image3d_t addrspace(1)* %in, ; read_only
+
+
+
+
+
+define void @test_3d_rd_1_0(%opencl.image3d_t addrspace(1)* %in, 
                             i32 addrspace(1)* %out) {
 entry:
   %0 = call i32 @llvm.OpenCL.image.get.resource.id.3d(
@@ -30,14 +30,14 @@ entry:
   ret void
 }
 
-; === 1 image arg, write_only ==================================================
 
-; FUNC-LABEL: {{^}}test_2d_wr_1_0:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], literal.x
-; EG-NEXT: LSHR
-; EG-NEXT: 0(
-define void @test_2d_wr_1_0(%opencl.image2d_t addrspace(1)* %in, ; write_only
+
+
+
+
+
+
+define void @test_2d_wr_1_0(%opencl.image2d_t addrspace(1)* %in, 
                             i32 addrspace(1)* %out) {
 entry:
   %0 = call i32 @llvm.OpenCL.image.get.resource.id.2d(
@@ -46,12 +46,12 @@ entry:
   ret void
 }
 
-; FUNC-LABEL: {{^}}test_3d_wr_1_0:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], literal.x
-; EG-NEXT: LSHR
-; EG-NEXT: 0(
-define void @test_3d_wr_1_0(%opencl.image3d_t addrspace(1)* %in, ; write_only
+
+
+
+
+
+define void @test_3d_wr_1_0(%opencl.image3d_t addrspace(1)* %in, 
                             i32 addrspace(1)* %out) {
 entry:
   %0 = call i32 @llvm.OpenCL.image.get.resource.id.3d(
@@ -60,15 +60,15 @@ entry:
   ret void
 }
 
-; === 2 image args, read_only ==================================================
 
-; FUNC-LABEL: {{^}}test_2d_rd_2_0:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], literal.x
-; EG-NEXT: LSHR
-; EG-NEXT: 0(
-define void @test_2d_rd_2_0(%opencl.image2d_t addrspace(1)* %in1, ; read_only
-                            %opencl.image2d_t addrspace(1)* %in2, ; read_only
+
+
+
+
+
+
+define void @test_2d_rd_2_0(%opencl.image2d_t addrspace(1)* %in1, 
+                            %opencl.image2d_t addrspace(1)* %in2, 
                             i32 addrspace(1)* %out) {
 entry:
   %0 = call i32 @llvm.OpenCL.image.get.resource.id.2d(
@@ -77,13 +77,13 @@ entry:
   ret void
 }
 
-; FUNC-LABEL: {{^}}test_2d_rd_2_1:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], literal.x
-; EG-NEXT: LSHR
-; EG-NEXT: 1(
-define void @test_2d_rd_2_1(%opencl.image2d_t addrspace(1)* %in1, ; read_only
-                            %opencl.image2d_t addrspace(1)* %in2, ; read_only
+
+
+
+
+
+define void @test_2d_rd_2_1(%opencl.image2d_t addrspace(1)* %in1, 
+                            %opencl.image2d_t addrspace(1)* %in2, 
                             i32 addrspace(1)* %out) {
 entry:
   %0 = call i32 @llvm.OpenCL.image.get.resource.id.2d(
@@ -92,13 +92,13 @@ entry:
   ret void
 }
 
-; FUNC-LABEL: {{^}}test_3d_rd_2_0:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], literal.x
-; EG-NEXT: LSHR
-; EG-NEXT: 0(
-define void @test_3d_rd_2_0(%opencl.image3d_t addrspace(1)* %in1, ; read_only
-                            %opencl.image3d_t addrspace(1)* %in2, ; read_only
+
+
+
+
+
+define void @test_3d_rd_2_0(%opencl.image3d_t addrspace(1)* %in1, 
+                            %opencl.image3d_t addrspace(1)* %in2, 
                             i32 addrspace(1)* %out) {
 entry:
   %0 = call i32 @llvm.OpenCL.image.get.resource.id.3d(
@@ -107,13 +107,13 @@ entry:
   ret void
 }
 
-; FUNC-LABEL: {{^}}test_3d_rd_2_1:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], literal.x
-; EG-NEXT: LSHR
-; EG-NEXT: 1(
-define void @test_3d_rd_2_1(%opencl.image3d_t addrspace(1)* %in1, ; read_only
-                            %opencl.image3d_t addrspace(1)* %in2, ; read_only
+
+
+
+
+
+define void @test_3d_rd_2_1(%opencl.image3d_t addrspace(1)* %in1, 
+                            %opencl.image3d_t addrspace(1)* %in2, 
                             i32 addrspace(1)* %out) {
 entry:
   %0 = call i32 @llvm.OpenCL.image.get.resource.id.3d(
@@ -122,15 +122,15 @@ entry:
   ret void
 }
 
-; === 2 image args, write_only =================================================
 
-; FUNC-LABEL: {{^}}test_2d_wr_2_0:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], literal.x
-; EG-NEXT: LSHR
-; EG-NEXT: 0(
-define void @test_2d_wr_2_0(%opencl.image2d_t addrspace(1)* %in1, ; write_only
-                            %opencl.image2d_t addrspace(1)* %in2, ; write_only
+
+
+
+
+
+
+define void @test_2d_wr_2_0(%opencl.image2d_t addrspace(1)* %in1, 
+                            %opencl.image2d_t addrspace(1)* %in2, 
                             i32 addrspace(1)* %out) {
 entry:
   %0 = call i32 @llvm.OpenCL.image.get.resource.id.2d(
@@ -139,13 +139,13 @@ entry:
   ret void
 }
 
-; FUNC-LABEL: {{^}}test_2d_wr_2_1:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], literal.x
-; EG-NEXT: LSHR
-; EG-NEXT: 1(
-define void @test_2d_wr_2_1(%opencl.image2d_t addrspace(1)* %in1, ; write_only
-                            %opencl.image2d_t addrspace(1)* %in2, ; write_only
+
+
+
+
+
+define void @test_2d_wr_2_1(%opencl.image2d_t addrspace(1)* %in1, 
+                            %opencl.image2d_t addrspace(1)* %in2, 
                             i32 addrspace(1)* %out) {
 entry:
   %0 = call i32 @llvm.OpenCL.image.get.resource.id.2d(
@@ -154,13 +154,13 @@ entry:
   ret void
 }
 
-; FUNC-LABEL: {{^}}test_3d_wr_2_0:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], literal.x
-; EG-NEXT: LSHR
-; EG-NEXT: 0(
-define void @test_3d_wr_2_0(%opencl.image3d_t addrspace(1)* %in1, ; write_only
-                            %opencl.image3d_t addrspace(1)* %in2, ; write_only
+
+
+
+
+
+define void @test_3d_wr_2_0(%opencl.image3d_t addrspace(1)* %in1, 
+                            %opencl.image3d_t addrspace(1)* %in2, 
                             i32 addrspace(1)* %out) {
 entry:
   %0 = call i32 @llvm.OpenCL.image.get.resource.id.3d(
@@ -169,13 +169,13 @@ entry:
   ret void
 }
 
-; FUNC-LABEL: {{^}}test_3d_wr_2_1:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], literal.x
-; EG-NEXT: LSHR
-; EG-NEXT: 1(
-define void @test_3d_wr_2_1(%opencl.image3d_t addrspace(1)* %in1, ; write_only
-                            %opencl.image3d_t addrspace(1)* %in2, ; write_only
+
+
+
+
+
+define void @test_3d_wr_2_1(%opencl.image3d_t addrspace(1)* %in1, 
+                            %opencl.image3d_t addrspace(1)* %in2, 
                             i32 addrspace(1)* %out) {
 entry:
   %0 = call i32 @llvm.OpenCL.image.get.resource.id.3d(
@@ -184,16 +184,16 @@ entry:
   ret void
 }
 
-; === 3 image args, read_only ==================================================
 
-; FUNC-LABEL: {{^}}test_2d_rd_3_0:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], literal.x
-; EG-NEXT: LSHR
-; EG-NEXT: 2(
-define void @test_2d_rd_3_0(%opencl.image2d_t addrspace(1)* %in1, ; read_only
-                            %opencl.image3d_t addrspace(1)* %in2, ; read_only
-                            %opencl.image2d_t addrspace(1)* %in3, ; read_only
+
+
+
+
+
+
+define void @test_2d_rd_3_0(%opencl.image2d_t addrspace(1)* %in1, 
+                            %opencl.image3d_t addrspace(1)* %in2, 
+                            %opencl.image2d_t addrspace(1)* %in3, 
                             i32 addrspace(1)* %out) {
 entry:
   %0 = call i32 @llvm.OpenCL.image.get.resource.id.2d(
@@ -203,49 +203,14 @@ entry:
 }
 
 
-; FUNC-LABEL: {{^}}test_3d_rd_3_0:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], literal.x
-; EG-NEXT: LSHR
-; EG-NEXT: 2(
-define void @test_3d_rd_3_0(%opencl.image3d_t addrspace(1)* %in1, ; read_only
-                            %opencl.image2d_t addrspace(1)* %in2, ; read_only
-                            %opencl.image3d_t addrspace(1)* %in3, ; read_only
-                            i32 addrspace(1)* %out) {
-entry:
-  %0 = call i32 @llvm.OpenCL.image.get.resource.id.3d(
-      %opencl.image3d_t addrspace(1)* %in3) #0
-  store i32 %0, i32 addrspace(1)* %out
-  ret void
-}
-
-; === 3 image args, write_only =================================================
-
-; FUNC-LABEL: {{^}}test_2d_wr_3_0:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], literal.x
-; EG-NEXT: LSHR
-; EG-NEXT: 2(
-define void @test_2d_wr_3_0(%opencl.image2d_t addrspace(1)* %in1, ; write_only
-                            %opencl.image3d_t addrspace(1)* %in2, ; write_only
-                            %opencl.image2d_t addrspace(1)* %in3, ; write_only
-                            i32 addrspace(1)* %out) {
-entry:
-  %0 = call i32 @llvm.OpenCL.image.get.resource.id.2d(
-      %opencl.image2d_t addrspace(1)* %in3) #0
-  store i32 %0, i32 addrspace(1)* %out
-  ret void
-}
 
 
-; FUNC-LABEL: {{^}}test_3d_wr_3_0:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], literal.x
-; EG-NEXT: LSHR
-; EG-NEXT: 2(
-define void @test_3d_wr_3_0(%opencl.image3d_t addrspace(1)* %in1, ; write_only
-                            %opencl.image2d_t addrspace(1)* %in2, ; write_only
-                            %opencl.image3d_t addrspace(1)* %in3, ; write_only
+
+
+
+define void @test_3d_rd_3_0(%opencl.image3d_t addrspace(1)* %in1, 
+                            %opencl.image2d_t addrspace(1)* %in2, 
+                            %opencl.image3d_t addrspace(1)* %in3, 
                             i32 addrspace(1)* %out) {
 entry:
   %0 = call i32 @llvm.OpenCL.image.get.resource.id.3d(
@@ -254,16 +219,51 @@ entry:
   ret void
 }
 
-; === 3 image args, mixed ======================================================
 
-; FUNC-LABEL: {{^}}test_2d_mix_3_0:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], literal.x
-; EG-NEXT: LSHR
-; EG-NEXT: 1(
-define void @test_2d_mix_3_0(%opencl.image2d_t addrspace(1)* %in1, ; write_only
-                             %opencl.image3d_t addrspace(1)* %in2, ; read_only
-                             %opencl.image2d_t addrspace(1)* %in3, ; read_only
+
+
+
+
+
+
+define void @test_2d_wr_3_0(%opencl.image2d_t addrspace(1)* %in1, 
+                            %opencl.image3d_t addrspace(1)* %in2, 
+                            %opencl.image2d_t addrspace(1)* %in3, 
+                            i32 addrspace(1)* %out) {
+entry:
+  %0 = call i32 @llvm.OpenCL.image.get.resource.id.2d(
+      %opencl.image2d_t addrspace(1)* %in3) #0
+  store i32 %0, i32 addrspace(1)* %out
+  ret void
+}
+
+
+
+
+
+
+
+define void @test_3d_wr_3_0(%opencl.image3d_t addrspace(1)* %in1, 
+                            %opencl.image2d_t addrspace(1)* %in2, 
+                            %opencl.image3d_t addrspace(1)* %in3, 
+                            i32 addrspace(1)* %out) {
+entry:
+  %0 = call i32 @llvm.OpenCL.image.get.resource.id.3d(
+      %opencl.image3d_t addrspace(1)* %in3) #0
+  store i32 %0, i32 addrspace(1)* %out
+  ret void
+}
+
+
+
+
+
+
+
+
+define void @test_2d_mix_3_0(%opencl.image2d_t addrspace(1)* %in1, 
+                             %opencl.image3d_t addrspace(1)* %in2, 
+                             %opencl.image2d_t addrspace(1)* %in3, 
                              i32 addrspace(1)* %out) {
 entry:
   %0 = call i32 @llvm.OpenCL.image.get.resource.id.2d(
@@ -272,14 +272,14 @@ entry:
   ret void
 }
 
-; FUNC-LABEL: {{^}}test_3d_mix_3_0:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], literal.x
-; EG-NEXT: LSHR
-; EG-NEXT: 1(
-define void @test_3d_mix_3_0(%opencl.image3d_t addrspace(1)* %in1, ; write_only
-                             %opencl.image2d_t addrspace(1)* %in2, ; read_only
-                             %opencl.image3d_t addrspace(1)* %in3, ; read_only
+
+
+
+
+
+define void @test_3d_mix_3_0(%opencl.image3d_t addrspace(1)* %in1, 
+                             %opencl.image2d_t addrspace(1)* %in2, 
+                             %opencl.image3d_t addrspace(1)* %in3, 
                              i32 addrspace(1)* %out) {
 entry:
   %0 = call i32 @llvm.OpenCL.image.get.resource.id.3d(
@@ -288,14 +288,14 @@ entry:
   ret void
 }
 
-; FUNC-LABEL: {{^}}test_2d_mix_3_1:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], literal.x
-; EG-NEXT: LSHR
-; EG-NEXT: 1(
-define void @test_2d_mix_3_1(%opencl.image2d_t addrspace(1)* %in1, ; write_only
-                             %opencl.image3d_t addrspace(1)* %in2, ; read_only
-                             %opencl.image2d_t addrspace(1)* %in3, ; write_only
+
+
+
+
+
+define void @test_2d_mix_3_1(%opencl.image2d_t addrspace(1)* %in1, 
+                             %opencl.image3d_t addrspace(1)* %in2, 
+                             %opencl.image2d_t addrspace(1)* %in3, 
                              i32 addrspace(1)* %out) {
 entry:
   %0 = call i32 @llvm.OpenCL.image.get.resource.id.2d(
@@ -304,14 +304,14 @@ entry:
   ret void
 }
 
-; FUNC-LABEL: {{^}}test_3d_mix_3_1:
-; EG: MEM_RAT_CACHELESS STORE_RAW [[VAL:T[0-9]+\.X]]
-; EG: MOV [[VAL]], literal.x
-; EG-NEXT: LSHR
-; EG-NEXT: 1(
-define void @test_3d_mix_3_1(%opencl.image3d_t addrspace(1)* %in1, ; write_only
-                             %opencl.image2d_t addrspace(1)* %in2, ; read_only
-                             %opencl.image3d_t addrspace(1)* %in3, ; write_only
+
+
+
+
+
+define void @test_3d_mix_3_1(%opencl.image3d_t addrspace(1)* %in1, 
+                             %opencl.image2d_t addrspace(1)* %in2, 
+                             %opencl.image3d_t addrspace(1)* %in3, 
                              i32 addrspace(1)* %out) {
 entry:
   %0 = call i32 @llvm.OpenCL.image.get.resource.id.3d(

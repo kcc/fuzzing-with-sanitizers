@@ -1,4 +1,4 @@
-; RUN: llc < %s
+
 
 define void @test1(<8 x i32>* %ptr)
 {

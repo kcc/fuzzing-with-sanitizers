@@ -1,14 +1,14 @@
-; RUN: llc -O3 -mtriple arm64-apple-ios3 -aarch64-gep-opt=false %s -o - | FileCheck %s
-; <rdar://problem/13621857>
+
+
 
 @block = common global i8* null, align 8
 
 define i32 @fct(i32 %i1, i32 %i2) {
-; CHECK: @fct
-; Sign extension is used more than once, thus it should not be folded.
-; CodeGenPrepare is not sharing sext across uses, thus this is folded because
-; of that.
-; _CHECK-NOT_: , sxtw]
+
+
+
+
+
 entry:
   %idxprom = sext i32 %i1 to i64
   %0 = load i8*, i8** @block, align 8
@@ -20,12 +20,12 @@ entry:
   %cmp = icmp eq i8 %1, %2
   br i1 %cmp, label %if.end, label %if.then
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %cmp7 = icmp ugt i8 %1, %2
   %conv8 = zext i1 %cmp7 to i32
   br label %return
 
-if.end:                                           ; preds = %entry
+if.end:                                           
   %inc = add nsw i32 %i1, 1
   %inc9 = add nsw i32 %i2, 1
   %idxprom10 = sext i32 %inc to i64
@@ -37,12 +37,12 @@ if.end:                                           ; preds = %entry
   %cmp16 = icmp eq i8 %3, %4
   br i1 %cmp16, label %if.end23, label %if.then18
 
-if.then18:                                        ; preds = %if.end
+if.then18:                                        
   %cmp21 = icmp ugt i8 %3, %4
   %conv22 = zext i1 %cmp21 to i32
   br label %return
 
-if.end23:                                         ; preds = %if.end
+if.end23:                                         
   %inc24 = add nsw i32 %i1, 2
   %inc25 = add nsw i32 %i2, 2
   %idxprom26 = sext i32 %inc24 to i64
@@ -54,21 +54,21 @@ if.end23:                                         ; preds = %if.end
   %cmp32 = icmp eq i8 %5, %6
   br i1 %cmp32, label %return, label %if.then34
 
-if.then34:                                        ; preds = %if.end23
+if.then34:                                        
   %cmp37 = icmp ugt i8 %5, %6
   %conv38 = zext i1 %cmp37 to i32
   br label %return
 
-return:                                           ; preds = %if.end23, %if.then34, %if.then18, %if.then
+return:                                           
   %retval.0 = phi i32 [ %conv8, %if.then ], [ %conv22, %if.then18 ], [ %conv38, %if.then34 ], [ 1, %if.end23 ]
   ret i32 %retval.0
 }
 
 define i32 @fct1(i32 %i1, i32 %i2) optsize {
-; CHECK: @fct1
-; Addressing are folded when optimizing for code size.
-; CHECK: , sxtw]
-; CHECK: , sxtw]
+
+
+
+
 entry:
   %idxprom = sext i32 %i1 to i64
   %0 = load i8*, i8** @block, align 8
@@ -80,12 +80,12 @@ entry:
   %cmp = icmp eq i8 %1, %2
   br i1 %cmp, label %if.end, label %if.then
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %cmp7 = icmp ugt i8 %1, %2
   %conv8 = zext i1 %cmp7 to i32
   br label %return
 
-if.end:                                           ; preds = %entry
+if.end:                                           
   %inc = add nsw i32 %i1, 1
   %inc9 = add nsw i32 %i2, 1
   %idxprom10 = sext i32 %inc to i64
@@ -97,12 +97,12 @@ if.end:                                           ; preds = %entry
   %cmp16 = icmp eq i8 %3, %4
   br i1 %cmp16, label %if.end23, label %if.then18
 
-if.then18:                                        ; preds = %if.end
+if.then18:                                        
   %cmp21 = icmp ugt i8 %3, %4
   %conv22 = zext i1 %cmp21 to i32
   br label %return
 
-if.end23:                                         ; preds = %if.end
+if.end23:                                         
   %inc24 = add nsw i32 %i1, 2
   %inc25 = add nsw i32 %i2, 2
   %idxprom26 = sext i32 %inc24 to i64
@@ -114,18 +114,18 @@ if.end23:                                         ; preds = %if.end
   %cmp32 = icmp eq i8 %5, %6
   br i1 %cmp32, label %return, label %if.then34
 
-if.then34:                                        ; preds = %if.end23
+if.then34:                                        
   %cmp37 = icmp ugt i8 %5, %6
   %conv38 = zext i1 %cmp37 to i32
   br label %return
 
-return:                                           ; preds = %if.end23, %if.then34, %if.then18, %if.then
+return:                                           
   %retval.0 = phi i32 [ %conv8, %if.then ], [ %conv22, %if.then18 ], [ %conv38, %if.then34 ], [ 1, %if.end23 ]
   ret i32 %retval.0
 }
 
-; CHECK: @test
-; CHECK-NOT: , uxtw #2]
+
+
 define i32 @test(i32* %array, i8 zeroext %c, i32 %arg) {
 entry:
   %conv = zext i8 %c to i32
@@ -133,7 +133,7 @@ entry:
   %tobool = icmp eq i32 %conv, %add
   br i1 %tobool, label %if.end, label %if.then
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %idxprom = zext i8 %c to i64
   %arrayidx = getelementptr inbounds i32, i32* %array, i64 %idxprom
   %0 = load volatile i32, i32* %arrayidx, align 4
@@ -141,15 +141,15 @@ if.then:                                          ; preds = %entry
   %add3 = add nsw i32 %1, %0
   br label %if.end
 
-if.end:                                           ; preds = %entry, %if.then
+if.end:                                           
   %res.0 = phi i32 [ %add3, %if.then ], [ 0, %entry ]
   ret i32 %res.0
 }
 
 
-; CHECK: @test2
-; CHECK: , uxtw #2]
-; CHECK: , uxtw #2]
+
+
+
 define i32 @test2(i32* %array, i8 zeroext %c, i32 %arg) optsize {
 entry:
   %conv = zext i8 %c to i32
@@ -157,7 +157,7 @@ entry:
   %tobool = icmp eq i32 %conv, %add
   br i1 %tobool, label %if.end, label %if.then
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %idxprom = zext i8 %c to i64
   %arrayidx = getelementptr inbounds i32, i32* %array, i64 %idxprom
   %0 = load volatile i32, i32* %arrayidx, align 4
@@ -165,7 +165,7 @@ if.then:                                          ; preds = %entry
   %add3 = add nsw i32 %1, %0
   br label %if.end
 
-if.end:                                           ; preds = %entry, %if.then
+if.end:                                           
   %res.0 = phi i32 [ %add3, %if.then ], [ 0, %entry ]
   ret i32 %res.0
 }

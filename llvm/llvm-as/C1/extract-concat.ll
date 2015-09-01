@@ -1,4 +1,4 @@
-; RUN: llc < %s -mcpu=corei7 -mtriple=x86_64-unknown-linux-gnu | FileCheck %s
+
 
 define void @foo(<4 x float> %in, <4 x i8>* %out) {
   %t0 = fptosi <4 x float> %in to <4 x i32>
@@ -9,9 +9,9 @@ define void @foo(<4 x float> %in, <4 x i8>* %out) {
   %t5 = insertelement <4 x i8> %t4, i8 -1, i32 3
   store <4 x i8> %t5, <4 x i8>* %out
   ret void
-; CHECK: foo
-; CHECK: cvttps2dq
-; CHECK-NOT: pextrd
-; CHECK: pshufb
-; CHECK: ret
+
+
+
+
+
 }

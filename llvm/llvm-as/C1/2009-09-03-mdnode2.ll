@@ -1,15 +1,15 @@
-; This file is used by 2009-09-03-mdnode.ll, so it doesn't actually do anything itself
-;
-; RUN: true
+
+
+
 
 define i32 @f(...) nounwind {
 entry:
-  %retval = alloca i32                            ; <i32*> [#uses=1]
+  %retval = alloca i32                            
   call void @llvm.dbg.func.start(metadata !0)
   br label %return
 
-return:                                           ; preds = %entry
-  %0 = load i32, i32* %retval                          ; <i32> [#uses=1]
+return:                                           
+  %0 = load i32, i32* %retval                          
   call void @llvm.dbg.stoppoint(i32 3, i32 1, metadata !1)
   call void @llvm.dbg.region.end(metadata !0)
   ret i32 %0

@@ -1,24 +1,24 @@
-; RUN: opt -loop-accesses -analyze < %s | FileCheck %s
 
-; We give up analyzing the dependences in this loop due to non-constant
-; distance between A[i+offset] and A[i] and add memchecks to prove
-; independence.  Make sure that no interesting dependences are reported in
-; this case.
-;
-;   for (i = 0; i < n; i++)
-;    A[i + offset] = A[i] * B[i] * C[i];
+
+
+
+
+
+
+
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.10.0"
 
-; CHECK: Memory dependences are safe with run-time checks
-; CHECK-NEXT: Interesting Dependences:
-; CHECK-NEXT: Run-time memory checks:
-; CHECK-NEXT: 0:
-; CHECK-NEXT: Comparing group
-; CHECK-NEXT:   %arrayidxA2 = getelementptr inbounds i16, i16* %a, i64 %idx
-; CHECK-NEXT: Against group
-; CHECK-NEXT:   %arrayidxA = getelementptr inbounds i16, i16* %a, i64 %indvar
+
+
+
+
+
+
+
+
 
 @B = common global i16* null, align 8
 @A = common global i16* null, align 8
@@ -31,7 +31,7 @@ entry:
   %c = load i16*, i16** @C, align 8
   br label %for.body
 
-for.body:                                         ; preds = %for.body, %entry
+for.body:                                         
   %indvar = phi i64 [ 0, %entry ], [ %add, %for.body ]
 
   %arrayidxA = getelementptr inbounds i16, i16* %a, i64 %indvar
@@ -54,6 +54,6 @@ for.body:                                         ; preds = %for.body, %entry
   %exitcond = icmp eq i64 %add, 20
   br i1 %exitcond, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret void
 }

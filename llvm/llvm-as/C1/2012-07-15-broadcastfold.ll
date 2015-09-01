@@ -1,12 +1,12 @@
-; RUN: llc < %s -march=x86 -mcpu=corei7 -mattr=+avx2 | FileCheck %s
+
 
 declare x86_fastcallcc i64 @barrier()
 
-;CHECK-LABEL: bcast_fold:
-;CHECK: vmov{{[au]}}ps %xmm{{[0-9]+}}, [[SPILLED:[^\)]+\)]]
-;CHECK: barrier
-;CHECK: vbroadcastss [[SPILLED]], %ymm0
-;CHECK: ret
+
+
+
+
+
 define <8 x float> @bcast_fold( float* %A) {
 BB:
   %A0 = load float, float* %A

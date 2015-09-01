@@ -1,10 +1,10 @@
-; RUN: llc -march=amdgcn -mcpu=SI < %s -verify-machineinstrs | FileCheck -check-prefix=SI %s
-; RUN: llc -march=amdgcn -mcpu=tonga < %s -verify-machineinstrs | FileCheck -check-prefix=SI %s
 
-; If this occurs it is likely due to reordering and the restore was
-; originally supposed to happen before SI_END_CF.
-; SI: s_or_b64 exec, exec, [[SAVED:s\[[0-9]+:[0-9]+\]|[a-z]+]]
-; SI-NOT: v_readlane_b32 [[SAVED]]
+
+
+
+
+
+
 
 define void @main() #0 {
 main_body:
@@ -77,18 +77,18 @@ main_body:
   %66 = call float @llvm.SI.load.const(<16 x i8> undef, i32 420)
   br label %LOOP
 
-LOOP:                                             ; preds = %ENDIF2795, %main_body
+LOOP:                                             
   %temp894.0 = phi float [ 0.000000e+00, %main_body ], [ %temp894.1, %ENDIF2795 ]
   %temp18.0 = phi float [ undef, %main_body ], [ %temp18.1, %ENDIF2795 ]
   %67 = icmp sgt i32 undef, 4
   br i1 %67, label %ENDLOOP, label %ENDIF
 
-ENDLOOP:                                          ; preds = %ELSE2566, %LOOP
+ENDLOOP:                                          
   %68 = call float @llvm.AMDGPU.lrp(float %0, float undef, float undef)
   call void @llvm.SI.export(i32 15, i32 1, i32 1, i32 0, i32 0, float undef, float %68, float undef, float 1.000000e+00)
   ret void
 
-ENDIF:                                            ; preds = %LOOP
+ENDIF:                                            
   %69 = fsub float %2, undef
   %70 = fsub float %3, undef
   %71 = fsub float %4, undef
@@ -228,14 +228,14 @@ ENDIF:                                            ; preds = %LOOP
   %temp292.11 = select i1 %201, float undef, float %.temp292.9
   br i1 undef, label %IF2565, label %ELSE2566
 
-IF2565:                                           ; preds = %ENDIF
+IF2565:                                           
   br i1 false, label %ENDIF2582, label %ELSE2584
 
-ELSE2566:                                         ; preds = %ENDIF
+ELSE2566:                                         
   %202 = fcmp oeq float %temp292.11, 1.000000e+04
   br i1 %202, label %ENDLOOP, label %ELSE2593
 
-ENDIF2564:                                        ; preds = %ENDIF2594, %ENDIF2588
+ENDIF2564:                                        
   %temp894.1 = phi float [ undef, %ENDIF2588 ], [ %temp894.2, %ENDIF2594 ]
   %temp18.1 = phi float [ %219, %ENDIF2588 ], [ undef, %ENDIF2594 ]
   %203 = fsub float %5, undef
@@ -250,110 +250,110 @@ ENDIF2564:                                        ; preds = %ENDIF2594, %ENDIF25
   %212 = and i1 %210, %211
   br i1 %212, label %ENDIF2795, label %ELSE2797
 
-ELSE2584:                                         ; preds = %IF2565
+ELSE2584:                                         
   br label %ENDIF2582
 
-ENDIF2582:                                        ; preds = %ELSE2584, %IF2565
+ENDIF2582:                                        
   %213 = fadd float %1, undef
   %214 = fadd float 0.000000e+00, %213
   %215 = call float @llvm.AMDIL.fraction.(float %214)
   br i1 undef, label %IF2589, label %ELSE2590
 
-IF2589:                                           ; preds = %ENDIF2582
+IF2589:                                           
   br label %ENDIF2588
 
-ELSE2590:                                         ; preds = %ENDIF2582
+ELSE2590:                                         
   br label %ENDIF2588
 
-ENDIF2588:                                        ; preds = %ELSE2590, %IF2589
+ENDIF2588:                                        
   %216 = fsub float 1.000000e+00, %215
   %217 = call float @llvm.sqrt.f32(float %216)
   %218 = fmul float %217, undef
   %219 = fadd float %218, undef
   br label %ENDIF2564
 
-ELSE2593:                                         ; preds = %ELSE2566
+ELSE2593:                                         
   %220 = fcmp oeq float %temp292.11, %82
   %221 = fcmp olt float %82, %84
   %222 = and i1 %220, %221
   br i1 %222, label %ENDIF2594, label %ELSE2596
 
-ELSE2596:                                         ; preds = %ELSE2593
+ELSE2596:                                         
   %223 = fcmp oeq float %temp292.11, %101
   %224 = fcmp olt float %101, %103
   %225 = and i1 %223, %224
   br i1 %225, label %ENDIF2594, label %ELSE2632
 
-ENDIF2594:                                        ; preds = %ELSE2788, %ELSE2785, %ELSE2782, %ELSE2779, %IF2775, %ELSE2761, %ELSE2758, %IF2757, %ELSE2704, %ELSE2686, %ELSE2671, %ELSE2668, %IF2667, %ELSE2632, %ELSE2596, %ELSE2593
+ENDIF2594:                                        
   %temp894.2 = phi float [ 0.000000e+00, %IF2667 ], [ 0.000000e+00, %ELSE2671 ], [ 0.000000e+00, %IF2757 ], [ 0.000000e+00, %ELSE2761 ], [ %temp894.0, %ELSE2758 ], [ 0.000000e+00, %IF2775 ], [ 0.000000e+00, %ELSE2779 ], [ 0.000000e+00, %ELSE2782 ], [ %.2848, %ELSE2788 ], [ 0.000000e+00, %ELSE2785 ], [ 0.000000e+00, %ELSE2593 ], [ 0.000000e+00, %ELSE2632 ], [ 0.000000e+00, %ELSE2704 ], [ 0.000000e+00, %ELSE2686 ], [ 0.000000e+00, %ELSE2668 ], [ 0.000000e+00, %ELSE2596 ]
   %226 = fmul float %temp894.2, undef
   br label %ENDIF2564
 
-ELSE2632:                                         ; preds = %ELSE2596
+ELSE2632:                                         
   br i1 undef, label %ENDIF2594, label %ELSE2650
 
-ELSE2650:                                         ; preds = %ELSE2632
+ELSE2650:                                         
   %227 = fcmp oeq float %temp292.11, %111
   %228 = fcmp olt float %111, %112
   %229 = and i1 %227, %228
   br i1 %229, label %IF2667, label %ELSE2668
 
-IF2667:                                           ; preds = %ELSE2650
+IF2667:                                           
   br i1 undef, label %ENDIF2594, label %ELSE2671
 
-ELSE2668:                                         ; preds = %ELSE2650
+ELSE2668:                                         
   %230 = fcmp oeq float %temp292.11, %129
   %231 = fcmp olt float %129, undef
   %232 = and i1 %230, %231
   br i1 %232, label %ENDIF2594, label %ELSE2686
 
-ELSE2671:                                         ; preds = %IF2667
+ELSE2671:                                         
   br label %ENDIF2594
 
-ELSE2686:                                         ; preds = %ELSE2668
+ELSE2686:                                         
   %233 = fcmp oeq float %temp292.11, %146
   %234 = fcmp olt float %146, undef
   %235 = and i1 %233, %234
   br i1 %235, label %ENDIF2594, label %ELSE2704
 
-ELSE2704:                                         ; preds = %ELSE2686
+ELSE2704:                                         
   %236 = fcmp oeq float %temp292.11, %181
   %237 = fcmp olt float %181, undef
   %238 = and i1 %236, %237
   br i1 %238, label %ENDIF2594, label %ELSE2740
 
-ELSE2740:                                         ; preds = %ELSE2704
+ELSE2740:                                         
   br i1 undef, label %IF2757, label %ELSE2758
 
-IF2757:                                           ; preds = %ELSE2740
+IF2757:                                           
   br i1 undef, label %ENDIF2594, label %ELSE2761
 
-ELSE2758:                                         ; preds = %ELSE2740
+ELSE2758:                                         
   br i1 undef, label %IF2775, label %ENDIF2594
 
-ELSE2761:                                         ; preds = %IF2757
+ELSE2761:                                         
   br label %ENDIF2594
 
-IF2775:                                           ; preds = %ELSE2758
+IF2775:                                           
   %239 = fcmp olt float undef, undef
   br i1 %239, label %ENDIF2594, label %ELSE2779
 
-ELSE2779:                                         ; preds = %IF2775
+ELSE2779:                                         
   br i1 undef, label %ENDIF2594, label %ELSE2782
 
-ELSE2782:                                         ; preds = %ELSE2779
+ELSE2782:                                         
   br i1 undef, label %ENDIF2594, label %ELSE2785
 
-ELSE2785:                                         ; preds = %ELSE2782
+ELSE2785:                                         
   %240 = fcmp olt float undef, 0.000000e+00
   br i1 %240, label %ENDIF2594, label %ELSE2788
 
-ELSE2788:                                         ; preds = %ELSE2785
+ELSE2788:                                         
   %241 = fcmp olt float 0.000000e+00, undef
   %.2848 = select i1 %241, float -1.000000e+00, float 1.000000e+00
   br label %ENDIF2594
 
-ELSE2797:                                         ; preds = %ENDIF2564
+ELSE2797:                                         
   %242 = fsub float %8, undef
   %243 = fsub float %9, undef
   %244 = fsub float %10, undef
@@ -379,13 +379,13 @@ ELSE2797:                                         ; preds = %ENDIF2564
   %264 = and i1 %262, %263
   br i1 %264, label %ENDIF2795, label %ELSE2800
 
-ENDIF2795:                                        ; preds = %ELSE2824, %ELSE2821, %ELSE2818, %ELSE2815, %ELSE2812, %ELSE2809, %ELSE2806, %ELSE2803, %ELSE2800, %ELSE2797, %ENDIF2564
+ENDIF2795:                                        
   br label %LOOP
 
-ELSE2800:                                         ; preds = %ELSE2797
+ELSE2800:                                         
   br i1 undef, label %ENDIF2795, label %ELSE2803
 
-ELSE2803:                                         ; preds = %ELSE2800
+ELSE2803:                                         
   %265 = fsub float %20, undef
   %266 = fsub float %21, undef
   %267 = fsub float %22, undef
@@ -412,7 +412,7 @@ ELSE2803:                                         ; preds = %ELSE2800
   %288 = and i1 %286, %287
   br i1 %288, label %ENDIF2795, label %ELSE2806
 
-ELSE2806:                                         ; preds = %ELSE2803
+ELSE2806:                                         
   %289 = fsub float %26, undef
   %290 = fsub float %27, undef
   %291 = fsub float %28, undef
@@ -434,19 +434,19 @@ ELSE2806:                                         ; preds = %ELSE2803
   %307 = and i1 %305, %306
   br i1 %307, label %ENDIF2795, label %ELSE2809
 
-ELSE2809:                                         ; preds = %ELSE2806
+ELSE2809:                                         
   br i1 undef, label %ENDIF2795, label %ELSE2812
 
-ELSE2812:                                         ; preds = %ELSE2809
+ELSE2812:                                         
   br i1 undef, label %ENDIF2795, label %ELSE2815
 
-ELSE2815:                                         ; preds = %ELSE2812
+ELSE2815:                                         
   br i1 undef, label %ENDIF2795, label %ELSE2818
 
-ELSE2818:                                         ; preds = %ELSE2815
+ELSE2818:                                         
   br i1 undef, label %ENDIF2795, label %ELSE2821
 
-ELSE2821:                                         ; preds = %ELSE2818
+ELSE2821:                                         
   %308 = fsub float %56, undef
   %309 = fsub float %57, undef
   %310 = fsub float %58, undef
@@ -471,27 +471,27 @@ ELSE2821:                                         ; preds = %ELSE2818
   %329 = and i1 %327, %328
   br i1 %329, label %ENDIF2795, label %ELSE2824
 
-ELSE2824:                                         ; preds = %ELSE2821
+ELSE2824:                                         
   %.2849 = select i1 undef, float 0.000000e+00, float 1.000000e+00
   br label %ENDIF2795
 }
 
-; Function Attrs: nounwind readnone
+
 declare float @llvm.SI.load.const(<16 x i8>, i32) #1
 
-; Function Attrs: readnone
+
 declare float @llvm.AMDIL.fraction.(float) #2
 
-; Function Attrs: nounwind readnone
+
 declare float @llvm.sqrt.f32(float) #1
 
-; Function Attrs: nounwind readnone
+
 declare float @llvm.minnum.f32(float, float) #1
 
-; Function Attrs: nounwind readnone
+
 declare float @llvm.maxnum.f32(float, float) #1
 
-; Function Attrs: readnone
+
 declare float @llvm.AMDGPU.lrp(float, float, float) #2
 
 declare void @llvm.SI.export(i32, i32, i32, i32, i32, float, float, float, float)

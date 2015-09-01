@@ -1,9 +1,9 @@
-; RUN: opt -S -O2 < %s | FileCheck %s
 
-; Feature test that verifies that all optimizations leave asynch personality
-; invokes of nounwind functions alone.
-; The @div function in this test can fault, even though it can't
-; throw a synchronous exception.
+
+
+
+
+
 
 define i32 @div(i32 %n, i32 %d) nounwind noinline {
 entry:
@@ -26,7 +26,7 @@ __try.cont:
   ret i32 %retval.0
 }
 
-; CHECK-LABEL: define i32 @main()
-; CHECK: invoke i32 @div(i32 10, i32 0)
+
+
 
 declare i32 @__C_specific_handler(...)

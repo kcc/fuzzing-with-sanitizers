@@ -1,14 +1,14 @@
-; RUN: llc < %s -march=x86 -mattr=+sse2 | FileCheck %s
-; RUN: llc < %s -march=x86 -mattr=+sse2 | grep esp | count 2
 
-; CHECK-NOT: movaps
 
-; These should both generate something like this:
-;_test3:
-;	movl	$1234567, %eax
-;	andl	4(%esp), %eax
-;	movd	%eax, %xmm0
-;	ret
+
+
+
+
+
+
+
+
+
 
 define <2 x i64> @test3(i64 %arg) nounwind {
 entry:

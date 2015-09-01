@@ -1,4 +1,4 @@
-; RUN: llc < %s -O2 -mtriple=arm64-apple-darwin | FileCheck %s
+
 
 %0 = type opaque
 %struct.CGRect = type { %struct.CGPoint, %struct.CGSize }
@@ -9,11 +9,11 @@
 
 define hidden %struct.CGRect @nofold(%0* nocapture %self, i8* nocapture %_cmd) nounwind readonly optsize ssp {
 entry:
-; CHECK-LABEL: nofold:
-; CHECK: add x[[REG:[0-9]+]], x0, x{{[0-9]+}}
-; CHECK: ldp d0, d1, [x[[REG]]]
-; CHECK: ldp d2, d3, [x[[REG]], #16]
-; CHECK: ret
+
+
+
+
+
   %ivar = load i64, i64* @"OBJC_IVAR_$_UIScreen._bounds", align 8, !invariant.load !4
   %0 = bitcast %0* %self to i8*
   %add.ptr = getelementptr inbounds i8, i8* %0, i64 %ivar
@@ -42,10 +42,10 @@ entry:
 
 define hidden %struct.CGRect @fold(%0* nocapture %self, i8* nocapture %_cmd) nounwind readonly optsize ssp {
 entry:
-; CHECK-LABEL: fold:
-; CHECK: ldr d0, [x0, x{{[0-9]+}}]
-; CHECK-NOT: add x0, x0, x1
-; CHECK: ret
+
+
+
+
   %ivar = load i64, i64* @"OBJC_IVAR_$_UIScreen._bounds", align 8, !invariant.load !4
   %0 = bitcast %0* %self to i8*
   %add.ptr = getelementptr inbounds i8, i8* %0, i64 %ivar

@@ -1,12 +1,12 @@
-; RUN: llc < %s -march=x86 | FileCheck %s 
+
 
 @foo = global i8 127
 
 define i32 @main() nounwind {
-; CHECK-LABEL: main:
-; CHECK-NOT: ret
-; CHECK: sar{{.}} $5
-; CHECK: ret
+
+
+
+
 
    %tmp = load i8, i8* @foo
    %bf.lo = lshr i8 %tmp, 5

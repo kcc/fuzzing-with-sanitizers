@@ -1,4 +1,4 @@
-; RUN: opt -codegenprepare -S < %s | FileCheck %s
+
 
 target datalayout = "e-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-pc-linux-gnu"
@@ -6,8 +6,8 @@ target triple = "x86_64-pc-linux-gnu"
 declare zeroext i1 @return_i1()
 
 define i32 @test_sor_basic(i32* %base) gc "statepoint-example" {
-; CHECK: getelementptr i32, i32* %base, i32 15
-; CHECK: getelementptr i32, i32* %base-new, i32 15
+
+
 entry:
        %ptr = getelementptr i32, i32* %base, i32 15
        %tok = call i32 (i64, i32, i1 ()*, i32, i32, ...) @llvm.experimental.gc.statepoint.p0f_i1f(i64 0, i32 0, i1 ()* @return_i1, i32 0, i32 0, i32 0, i32 0, i32* %base, i32* %ptr)
@@ -18,10 +18,10 @@ entry:
 }
 
 define i32 @test_sor_two_derived(i32* %base) gc "statepoint-example" {
-; CHECK: getelementptr i32, i32* %base, i32 15
-; CHECK: getelementptr i32, i32* %base, i32 12
-; CHECK: getelementptr i32, i32* %base-new, i32 12
-; CHECK: getelementptr i32, i32* %base-new, i32 15
+
+
+
+
 entry:
        %ptr = getelementptr i32, i32* %base, i32 15
        %ptr2 = getelementptr i32, i32* %base, i32 12
@@ -34,8 +34,8 @@ entry:
 }
 
 define i32 @test_sor_ooo(i32* %base) gc "statepoint-example" {
-; CHECK: getelementptr i32, i32* %base, i32 15
-; CHECK: getelementptr i32, i32* %base-new, i32 15
+
+
 entry:
        %ptr = getelementptr i32, i32* %base, i32 15
        %tok = call i32 (i64, i32, i1 ()*, i32, i32, ...) @llvm.experimental.gc.statepoint.p0f_i1f(i64 0, i32 0, i1 ()* @return_i1, i32 0, i32 0, i32 0, i32 0, i32* %base, i32* %ptr)
@@ -46,8 +46,8 @@ entry:
 }
 
 define i32 @test_sor_gep_smallint([3 x i32]* %base) gc "statepoint-example" {
-; CHECK: getelementptr [3 x i32], [3 x i32]* %base, i32 0, i32 2
-; CHECK: getelementptr [3 x i32], [3 x i32]* %base-new, i32 0, i32 2
+
+
 entry:
        %ptr = getelementptr [3 x i32], [3 x i32]* %base, i32 0, i32 2
        %tok = call i32 (i64, i32, i1 ()*, i32, i32, ...) @llvm.experimental.gc.statepoint.p0f_i1f(i64 0, i32 0, i1 ()* @return_i1, i32 0, i32 0, i32 0, i32 0, [3 x i32]* %base, i32* %ptr)
@@ -58,8 +58,8 @@ entry:
 }
 
 define i32 @test_sor_gep_largeint([3 x i32]* %base) gc "statepoint-example" {
-; CHECK: getelementptr [3 x i32], [3 x i32]* %base, i32 0, i32 21
-; CHECK-NOT: getelementptr [3 x i32], [3 x i32]* %base-new, i32 0, i32 21
+
+
 entry:
        %ptr = getelementptr [3 x i32], [3 x i32]* %base, i32 0, i32 21
        %tok = call i32 (i64, i32, i1 ()*, i32, i32, ...) @llvm.experimental.gc.statepoint.p0f_i1f(i64 0, i32 0, i1 ()* @return_i1, i32 0, i32 0, i32 0, i32 0, [3 x i32]* %base, i32* %ptr)
@@ -70,9 +70,9 @@ entry:
 }
 
 define i32 @test_sor_noop(i32* %base) gc "statepoint-example" {
-; CHECK: getelementptr i32, i32* %base, i32 15
-; CHECK: call i32* @llvm.experimental.gc.relocate.p0i32(i32 %tok, i32 7, i32 8)
-; CHECK: call i32* @llvm.experimental.gc.relocate.p0i32(i32 %tok, i32 7, i32 9)
+
+
+
 entry:
        %ptr = getelementptr i32, i32* %base, i32 15
        %ptr2 = getelementptr i32, i32* %base, i32 12

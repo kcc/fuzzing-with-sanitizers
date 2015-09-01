@@ -1,9 +1,9 @@
-; RUN: opt -S -codegenprepare -mtriple=amdgcn-unknown-unknown < %s | FileCheck -check-prefix=ASC -check-prefix=COMMON %s
 
-; COMMON-LABEL: @test_sink_ptrtoint_asc(
-; ASC: addrspacecast
-; ASC-NOT: ptrtoint
-; ASC-NOT: inttoptr
+
+
+
+
+
 
 define void @test_sink_ptrtoint_asc(float addrspace(1)* nocapture %arg, float addrspace(1)* nocapture readonly %arg1, float addrspace(3)* %arg2) #0 {
 bb:
@@ -16,7 +16,7 @@ bb:
   %tmp7 = fcmp olt float %tmp5, 8.388608e+06
   br i1 %tmp7, label %bb8, label %bb14
 
-bb8:                                              ; preds = %bb
+bb8:                                              
   %tmp9 = tail call float @llvm.fma.f32(float %tmp5, float 0x3FE45F3060000000, float 5.000000e-01) #1
   %tmp10 = fmul float %tmp9, 0x3E74442D00000000
   %tmp11 = fsub float -0.000000e+00, %tmp10
@@ -25,11 +25,11 @@ bb8:                                              ; preds = %bb
   %tmp13 = fsub float -0.000000e+00, %tmp12
   br label %bb15
 
-bb14:                                             ; preds = %bb
+bb14:                                             
   store float 2.000000e+00, float addrspace(4)* %tmp6, align 4
   br label %bb15
 
-bb15:                                             ; preds = %bb14, %bb8
+bb15:                                             
   %tmp16 = phi float [ 0.000000e+00, %bb14 ], [ %tmp13, %bb8 ]
   %tmp17 = fsub float -0.000000e+00, %tmp16
   %tmp18 = tail call float @llvm.fma.f32(float 1.000000e+00, float 0x3FF0AAAAA0000000, float %tmp17) #1

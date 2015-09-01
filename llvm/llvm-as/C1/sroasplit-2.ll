@@ -1,42 +1,42 @@
-; RUN: opt %s -sroa -verify -S -o - | FileCheck %s
-;
-; Test that we can partial emit debug info for aggregates repeatedly
-; split up by SROA.
-;
-;    // Compile with -O1
-;    typedef struct {
-;      int a;
-;      int b;
-;    } Inner;
-;
-;    typedef struct {
-;      Inner inner[2];
-;    } Outer;
-;
-;    int foo(Outer outer) {
-;      Inner i1 = outer.inner[1];
-;      return i1.a;
-;    }
-;
 
-; Verify that SROA creates a variable piece when splitting i1.
-; CHECK:  call void @llvm.dbg.value(metadata i64 %outer.coerce0, i64 0, metadata ![[O:[0-9]+]], metadata ![[PIECE1:[0-9]+]]),
-; CHECK:  call void @llvm.dbg.value(metadata i64 %outer.coerce1, i64 0, metadata ![[O]], metadata ![[PIECE2:[0-9]+]]),
-; CHECK:  call void @llvm.dbg.value({{.*}}, i64 0, metadata ![[I1:[0-9]+]], metadata ![[PIECE3:[0-9]+]]),
-; CHECK-DAG: ![[O]] = !DILocalVariable(name: "outer",{{.*}} line: 10
-; CHECK-DAG: ![[PIECE1]] = !DIExpression(DW_OP_bit_piece, 0, 64)
-; CHECK-DAG: ![[PIECE2]] = !DIExpression(DW_OP_bit_piece, 64, 64)
-; CHECK-DAG: ![[I1]] = !DILocalVariable(name: "i1",{{.*}} line: 11
-; CHECK-DAG: ![[PIECE3]] = !DIExpression(DW_OP_bit_piece, 0, 32)
 
-; ModuleID = 'sroasplit-2.c'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.9.0"
 
 %struct.Outer = type { [2 x %struct.Inner] }
 %struct.Inner = type { i32, i32 }
 
-; Function Attrs: nounwind ssp uwtable
+
 define i32 @foo(i64 %outer.coerce0, i64 %outer.coerce1) #0 {
   %outer = alloca %struct.Outer, align 8
   %i1 = alloca %struct.Inner, align 4
@@ -57,10 +57,10 @@ define i32 @foo(i64 %outer.coerce0, i64 %outer.coerce1) #0 {
   ret i32 %9, !dbg !28
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
-; Function Attrs: nounwind
+
 declare void @llvm.memcpy.p0i8.p0i8.i64(i8* nocapture, i8* nocapture readonly, i64, i32, i1) #2
 
 attributes #0 = { nounwind ssp uwtable "no-frame-pointer-elim"="true" }

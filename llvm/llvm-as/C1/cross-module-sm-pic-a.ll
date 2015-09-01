@@ -1,5 +1,5 @@
-; RUN: %lli -extra-module=%p/Inputs/cross-module-b.ll -relocation-model=pic -code-model=small %s > /dev/null
-; XFAIL: mips-, mipsel-, i686, i386
+
+
 
 declare i32 @FB()
 
@@ -8,7 +8,7 @@ define i32 @FA() {
 }
 
 define i32 @main() {
-  %r = call i32 @FB( )   ; <i32> [#uses=1]
+  %r = call i32 @FB( )   
   ret i32 %r
 }
 

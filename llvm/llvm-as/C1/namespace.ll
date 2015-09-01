@@ -1,216 +1,216 @@
-; REQUIRES: object-emission
 
-; RUN: %llc_dwarf -O0 -filetype=obj -dwarf-linkage-names=Enable < %s | llvm-dwarfdump - | FileCheck %s
-; CHECK: debug_info contents
-; CHECK: [[NS1:0x[0-9a-f]*]]:{{ *}}DW_TAG_namespace
-; CHECK-NEXT: DW_AT_name{{.*}} = "A"
-; CHECK-NEXT: DW_AT_decl_file{{.*}}([[F1:".*debug-info-namespace.cpp"]])
-; CHECK-NEXT: DW_AT_decl_line{{.*}}(5)
-; CHECK-NOT: NULL
-; CHECK: [[NS2:0x[0-9a-f]*]]:{{ *}}DW_TAG_namespace
-; CHECK-NEXT: DW_AT_name{{.*}} = "B"
-; CHECK-NEXT: DW_AT_decl_file{{.*}}([[F2:".*foo.cpp"]])
-; CHECK-NEXT: DW_AT_decl_line{{.*}}(1)
-; CHECK-NOT: NULL
-; CHECK: [[I:0x[0-9a-f]*]]:{{ *}}DW_TAG_variable
-; CHECK-NEXT: DW_AT_name{{.*}}= "i"
-; CHECK: [[VAR_FWD:0x[0-9a-f]*]]:{{ *}}DW_TAG_variable
-; CHECK-NEXT: DW_AT_name{{.*}}= "var_fwd"
-; CHECK-NOT: NULL
-; CHECK: [[FOO:0x[0-9a-f]*]]:{{ *}}DW_TAG_structure_type
-; CHECK-NEXT: DW_AT_name{{.*}}= "foo"
-; CHECK-NEXT: DW_AT_declaration
-; CHECK-NOT: NULL
-; CHECK: [[BAR:0x[0-9a-f]*]]:{{ *}}DW_TAG_structure_type
-; CHECK-NEXT: DW_AT_name{{.*}}= "bar"
-; CHECK: [[FUNC1:.*]]: DW_TAG_subprogram
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_MIPS_linkage_name
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_name{{.*}}= "f1"
-; CHECK: [[BAZ:0x[0-9a-f]*]]:{{.*}}DW_TAG_typedef
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_name{{.*}}= "baz"
-; CHECK: [[VAR_DECL:0x[0-9a-f]*]]:{{.*}}DW_TAG_variable
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_name{{.*}}= "var_decl"
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_declaration
-; CHECK: [[FUNC_DECL:0x[0-9a-f]*]]:{{.*}}DW_TAG_subprogram
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_name{{.*}}= "func_decl"
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_declaration
-; CHECK: [[FUNC_FWD:0x[0-9a-f]*]]:{{.*}}DW_TAG_subprogram
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_name{{.*}}= "func_fwd"
-; CHECK-NOT: DW_AT_declaration
-; CHECK: DW_TAG_subprogram
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_MIPS_linkage_name
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_name{{.*}}= "f1"
-; CHECK: NULL
 
-; CHECK-NOT: NULL
-; CHECK: DW_TAG_imported_module
-; This is a bug, it should be in F2 but it inherits the file from its
-; enclosing scope
-; CHECK-NEXT: DW_AT_decl_file{{.*}}([[F1]])
-; CHECK-NEXT: DW_AT_decl_line{{.*}}(15)
-; CHECK-NEXT: DW_AT_import{{.*}}=> {[[NS2]]})
-; CHECK: NULL
-; CHECK-NOT: NULL
 
-; CHECK: DW_TAG_imported_module
-; Same bug as above, this should be F2, not F1
-; CHECK-NEXT: DW_AT_decl_file{{.*}}([[F1]])
-; CHECK-NEXT: DW_AT_decl_line{{.*}}(18)
-; CHECK-NEXT: DW_AT_import{{.*}}=> {[[NS1]]})
-; CHECK-NOT: NULL
 
-; CHECK: DW_TAG_subprogram
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_MIPS_linkage_name
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_name{{.*}}= "func"
-; CHECK-NOT: NULL
-; CHECK: DW_TAG_imported_module
-; CHECK-NEXT: DW_AT_decl_file{{.*}}([[F2]])
-; CHECK-NEXT: DW_AT_decl_line{{.*}}(26)
-; CHECK-NEXT: DW_AT_import{{.*}}=> {[[NS1]]})
-; CHECK-NOT: NULL
-; CHECK: DW_TAG_imported_declaration
-; CHECK-NEXT: DW_AT_decl_file{{.*}}([[F2]])
-; CHECK-NEXT: DW_AT_decl_line{{.*}}(27)
-; CHECK-NEXT: DW_AT_import{{.*}}=> {[[FOO]]})
-; CHECK-NOT: NULL
-; CHECK: DW_TAG_imported_declaration
-; CHECK-NEXT: DW_AT_decl_file{{.*}}([[F2]])
-; CHECK-NEXT: DW_AT_decl_line{{.*}}(28)
-; CHECK-NEXT: DW_AT_import{{.*}}=> {[[BAR]]})
-; CHECK-NOT: NULL
-; CHECK: DW_TAG_imported_declaration
-; CHECK-NEXT: DW_AT_decl_file{{.*}}([[F2]])
-; CHECK-NEXT: DW_AT_decl_line{{.*}}(29)
-; CHECK-NEXT: DW_AT_import{{.*}}=> {[[FUNC1]]})
-; CHECK-NOT: NULL
-; CHECK: DW_TAG_imported_declaration
-; CHECK-NEXT: DW_AT_decl_file{{.*}}([[F2]])
-; CHECK-NEXT: DW_AT_decl_line{{.*}}(30)
-; CHECK-NEXT: DW_AT_import{{.*}}=> {[[I]]})
-; CHECK-NOT: NULL
-; CHECK: DW_TAG_imported_declaration
-; CHECK-NEXT: DW_AT_decl_file{{.*}}([[F2]])
-; CHECK-NEXT: DW_AT_decl_line{{.*}}(31)
-; CHECK-NEXT: DW_AT_import{{.*}}=> {[[BAZ]]})
-; CHECK-NOT: NULL
-; CHECK: [[X:0x[0-9a-f]*]]:{{ *}}DW_TAG_imported_declaration
-; CHECK-NEXT: DW_AT_decl_file{{.*}}([[F2]])
-; CHECK-NEXT: DW_AT_decl_line{{.*}}(32)
-; CHECK-NEXT: DW_AT_import{{.*}}=> {[[NS1]]})
-; CHECK-NEXT: DW_AT_name{{.*}}"X"
-; CHECK-NOT: NULL
-; CHECK: DW_TAG_imported_declaration
-; CHECK-NEXT: DW_AT_decl_file{{.*}}([[F2]])
-; CHECK-NEXT: DW_AT_decl_line{{.*}}(33)
-; CHECK-NEXT: DW_AT_import{{.*}}=> {[[X]]})
-; CHECK-NEXT: DW_AT_name{{.*}}"Y"
-; CHECK-NOT: NULL
-; CHECK: DW_TAG_imported_declaration
-; CHECK-NEXT: DW_AT_decl_file{{.*}}([[F2]])
-; CHECK-NEXT: DW_AT_decl_line{{.*}}(34)
-; CHECK-NEXT: DW_AT_import{{.*}}=> {[[VAR_DECL]]})
-; CHECK: DW_TAG_imported_declaration
-; CHECK-NEXT: DW_AT_decl_file{{.*}}([[F2]])
-; CHECK-NEXT: DW_AT_decl_line{{.*}}(35)
-; CHECK-NEXT: DW_AT_import{{.*}}=> {[[FUNC_DECL]]})
-; CHECK: DW_TAG_imported_declaration
-; CHECK-NEXT: DW_AT_decl_file{{.*}}([[F2]])
-; CHECK-NEXT: DW_AT_decl_line{{.*}}(36)
-; CHECK-NEXT: DW_AT_import{{.*}}=> {[[VAR_FWD]]})
-; CHECK: DW_TAG_imported_declaration
-; CHECK-NEXT: DW_AT_decl_file{{.*}}([[F2]])
-; CHECK-NEXT: DW_AT_decl_line{{.*}}(37)
-; CHECK-NEXT: DW_AT_import{{.*}}=> {[[FUNC_FWD]]})
 
-; CHECK: DW_TAG_lexical_block
-; CHECK-NOT: NULL
-; CHECK: DW_TAG_imported_module
-; CHECK-NEXT: DW_AT_decl_file{{.*}}([[F2]])
-; CHECK-NEXT: DW_AT_decl_line{{.*}}(23)
-; CHECK-NEXT: DW_AT_import{{.*}}=>
-; CHECK: NULL
-; CHECK: NULL
-; CHECK: NULL
 
-; IR generated from clang/test/CodeGenCXX/debug-info-namespace.cpp, file paths
-; changed to protect the guilty. The C++ source code is:
-; // RUN...
-; // RUN...
-; // RUN...
-;
-; namespace A {
-; #line 1 "foo.cpp"
-; namespace B {
-; extern int i;
-; int f1() { return 0; }
-; void f1(int) { }
-; struct foo;
-; struct bar { };
-; typedef bar baz;
-; extern int var_decl;
-; void func_decl(void);
-; extern int var_fwd;
-; void func_fwd(void);
-; }
-; }
-; namespace A {
-; using namespace B;
-; }
-;
-; using namespace A;
-; namespace E = A;
-; int B::i = f1();
-; int func(bool b) {
-;   if (b) {
-;     using namespace A::B;
-;     return i;
-;   }
-;   using namespace A;
-;   using B::foo;
-;   using B::bar;
-;   using B::f1;
-;   using B::i;
-;   using B::baz;
-;   namespace X = A;
-;   namespace Y = X;
-;   using B::var_decl;
-;   using B::func_decl;
-;   using B::var_fwd;
-;   using B::func_fwd;
-;   return i + X::B::i + Y::B::i;
-; }
-;
-; namespace A {
-; using B::i;
-; namespace B {
-; int var_fwd = i;
-; }
-; }
-; void B::func_fwd() {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @_ZN1A1B1iE = global i32 0, align 4
 @_ZN1A1B7var_fwdE = global i32 0, align 4
 @llvm.global_ctors = appending global [1 x { i32, void ()*, i8* }] [{ i32, void ()*, i8* } { i32 65535, void ()* @_GLOBAL__sub_I_debug_info_namespace.cpp, i8* null }]
 
-; Function Attrs: nounwind ssp uwtable
+
 define i32 @_ZN1A1B2f1Ev() #0 {
 entry:
   ret i32 0, !dbg !60
 }
 
-; Function Attrs: nounwind ssp uwtable
+
 define void @_ZN1A1B2f1Ei(i32) #0 {
 entry:
   %.addr = alloca i32, align 4
@@ -219,7 +219,7 @@ entry:
   ret void, !dbg !64
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
 define internal void @__cxx_global_var_init() section "__TEXT,__StaticInit,regular,pure_instructions" {
@@ -229,7 +229,7 @@ entry:
   ret void, !dbg !65
 }
 
-; Function Attrs: nounwind ssp uwtable
+
 define i32 @_Z4funcb(i1 zeroext %b) #0 {
 entry:
   %retval = alloca i32, align 4
@@ -241,12 +241,12 @@ entry:
   %tobool = trunc i8 %0 to i1, !dbg !68
   br i1 %tobool, label %if.then, label %if.end, !dbg !68
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %1 = load i32, i32* @_ZN1A1B1iE, align 4, !dbg !69
   store i32 %1, i32* %retval, !dbg !69
   br label %return, !dbg !69
 
-if.end:                                           ; preds = %entry
+if.end:                                           
   %2 = load i32, i32* @_ZN1A1B1iE, align 4, !dbg !70
   %3 = load i32, i32* @_ZN1A1B1iE, align 4, !dbg !70
   %add = add nsw i32 %2, %3, !dbg !70
@@ -255,7 +255,7 @@ if.end:                                           ; preds = %entry
   store i32 %add1, i32* %retval, !dbg !70
   br label %return, !dbg !70
 
-return:                                           ; preds = %if.end, %if.then
+return:                                           
   %5 = load i32, i32* %retval, !dbg !71
   ret i32 %5, !dbg !71
 }
@@ -267,7 +267,7 @@ entry:
   ret void, !dbg !72
 }
 
-; Function Attrs: nounwind ssp uwtable
+
 define void @_ZN1A1B8func_fwdEv() #0 {
 entry:
   ret void, !dbg !73
@@ -340,7 +340,7 @@ attributes #1 = { nounwind readnone }
 !50 = !DIGlobalVariable(name: "var_decl", linkageName: "_ZN1A1B8var_declE", line: 8, isLocal: false, isDefinition: false, scope: !6, file: !18, type: !13)
 !51 = !DIImportedEntity(tag: DW_TAG_imported_declaration, line: 35, scope: !21, entity: !52)
 !52 = !DISubprogram(name: "func_decl", linkageName: "_ZN1A1B9func_declEv", line: 9, isLocal: false, isDefinition: false, flags: DIFlagPrototyped, isOptimized: false, file: !5, scope: !6, type: !19, variables: !53)
-!53 = !{} ; previously: invalid DW_TAG_base_type
+!53 = !{} 
 !54 = !DIImportedEntity(tag: DW_TAG_imported_declaration, line: 36, scope: !21, entity: !32)
 !55 = !DIImportedEntity(tag: DW_TAG_imported_declaration, line: 37, scope: !21, entity: !26)
 !56 = !DIImportedEntity(tag: DW_TAG_imported_declaration, line: 42, scope: !7, entity: !31)

@@ -1,5 +1,5 @@
-; RUN: opt < %s -instcombine -S | grep "icmp sle"
-; PR1244
+
+
 
 define i1 @test(i32 %c.3.i, i32 %d.292.2.i) {
    %tmp266.i = icmp slt i32 %c.3.i, %d.292.2.i     

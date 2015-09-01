@@ -1,8 +1,8 @@
-; RUN: llc -mtriple=aarch64-none-linux-gnu -mattr=+neon < %s -o -| FileCheck %s
+
 
 define <8 x i16> @smull_v8i8_v8i16(<8 x i8>* %A, <8 x i8>* %B) nounwind {
-; CHECK-LABEL: smull_v8i8_v8i16:
-; CHECK: smull {{v[0-9]+}}.8h, {{v[0-9]+}}.8b, {{v[0-9]+}}.8b
+
+
   %tmp1 = load <8 x i8>, <8 x i8>* %A
   %tmp2 = load <8 x i8>, <8 x i8>* %B
   %tmp3 = sext <8 x i8> %tmp1 to <8 x i16>
@@ -12,8 +12,8 @@ define <8 x i16> @smull_v8i8_v8i16(<8 x i8>* %A, <8 x i8>* %B) nounwind {
 }
 
 define <4 x i32> @smull_v4i16_v4i32(<4 x i16>* %A, <4 x i16>* %B) nounwind {
-; CHECK-LABEL: smull_v4i16_v4i32:
-; CHECK: smull {{v[0-9]+}}.4s, {{v[0-9]+}}.4h, {{v[0-9]+}}.4h
+
+
   %tmp1 = load <4 x i16>, <4 x i16>* %A
   %tmp2 = load <4 x i16>, <4 x i16>* %B
   %tmp3 = sext <4 x i16> %tmp1 to <4 x i32>
@@ -23,8 +23,8 @@ define <4 x i32> @smull_v4i16_v4i32(<4 x i16>* %A, <4 x i16>* %B) nounwind {
 }
 
 define <2 x i64> @smull_v2i32_v2i64(<2 x i32>* %A, <2 x i32>* %B) nounwind {
-; CHECK-LABEL: smull_v2i32_v2i64:
-; CHECK:  smull {{v[0-9]+}}.2d, {{v[0-9]+}}.2s, {{v[0-9]+}}.2s
+
+
   %tmp1 = load <2 x i32>, <2 x i32>* %A
   %tmp2 = load <2 x i32>, <2 x i32>* %B
   %tmp3 = sext <2 x i32> %tmp1 to <2 x i64>
@@ -34,8 +34,8 @@ define <2 x i64> @smull_v2i32_v2i64(<2 x i32>* %A, <2 x i32>* %B) nounwind {
 }
 
 define <8 x i16> @umull_v8i8_v8i16(<8 x i8>* %A, <8 x i8>* %B) nounwind {
-; CHECK-LABEL: umull_v8i8_v8i16:
-; CHECK: umull {{v[0-9]+}}.8h, {{v[0-9]+}}.8b, {{v[0-9]+}}.8b
+
+
   %tmp1 = load <8 x i8>, <8 x i8>* %A
   %tmp2 = load <8 x i8>, <8 x i8>* %B
   %tmp3 = zext <8 x i8> %tmp1 to <8 x i16>
@@ -45,8 +45,8 @@ define <8 x i16> @umull_v8i8_v8i16(<8 x i8>* %A, <8 x i8>* %B) nounwind {
 }
 
 define <4 x i32> @umull_v4i16_v4i32(<4 x i16>* %A, <4 x i16>* %B) nounwind {
-; CHECK-LABEL: umull_v4i16_v4i32:
-; CHECK: umull {{v[0-9]+}}.4s, {{v[0-9]+}}.4h, {{v[0-9]+}}.4h
+
+
   %tmp1 = load <4 x i16>, <4 x i16>* %A
   %tmp2 = load <4 x i16>, <4 x i16>* %B
   %tmp3 = zext <4 x i16> %tmp1 to <4 x i32>
@@ -56,8 +56,8 @@ define <4 x i32> @umull_v4i16_v4i32(<4 x i16>* %A, <4 x i16>* %B) nounwind {
 }
 
 define <2 x i64> @umull_v2i32_v2i64(<2 x i32>* %A, <2 x i32>* %B) nounwind {
-; CHECK-LABEL: umull_v2i32_v2i64:
-; CHECK:  umull {{v[0-9]+}}.2d, {{v[0-9]+}}.2s, {{v[0-9]+}}.2s
+
+
   %tmp1 = load <2 x i32>, <2 x i32>* %A
   %tmp2 = load <2 x i32>, <2 x i32>* %B
   %tmp3 = zext <2 x i32> %tmp1 to <2 x i64>
@@ -67,8 +67,8 @@ define <2 x i64> @umull_v2i32_v2i64(<2 x i32>* %A, <2 x i32>* %B) nounwind {
 }
 
 define <8 x i16> @smlal_v8i8_v8i16(<8 x i16>* %A, <8 x i8>* %B, <8 x i8>* %C) nounwind {
-; CHECK-LABEL: smlal_v8i8_v8i16:
-; CHECK:  smlal {{v[0-9]+}}.8h, {{v[0-9]+}}.8b, {{v[0-9]+}}.8b
+
+
   %tmp1 = load <8 x i16>, <8 x i16>* %A
   %tmp2 = load <8 x i8>, <8 x i8>* %B
   %tmp3 = load <8 x i8>, <8 x i8>* %C
@@ -80,8 +80,8 @@ define <8 x i16> @smlal_v8i8_v8i16(<8 x i16>* %A, <8 x i8>* %B, <8 x i8>* %C) no
 }
 
 define <4 x i32> @smlal_v4i16_v4i32(<4 x i32>* %A, <4 x i16>* %B, <4 x i16>* %C) nounwind {
-; CHECK-LABEL: smlal_v4i16_v4i32:
-; CHECK: smlal {{v[0-9]+}}.4s, {{v[0-9]+}}.4h, {{v[0-9]+}}.4h
+
+
   %tmp1 = load <4 x i32>, <4 x i32>* %A
   %tmp2 = load <4 x i16>, <4 x i16>* %B
   %tmp3 = load <4 x i16>, <4 x i16>* %C
@@ -93,8 +93,8 @@ define <4 x i32> @smlal_v4i16_v4i32(<4 x i32>* %A, <4 x i16>* %B, <4 x i16>* %C)
 }
 
 define <2 x i64> @smlal_v2i32_v2i64(<2 x i64>* %A, <2 x i32>* %B, <2 x i32>* %C) nounwind {
-; CHECK-LABEL: smlal_v2i32_v2i64:
-; CHECK: smlal {{v[0-9]+}}.2d, {{v[0-9]+}}.2s, {{v[0-9]+}}.2s
+
+
   %tmp1 = load <2 x i64>, <2 x i64>* %A
   %tmp2 = load <2 x i32>, <2 x i32>* %B
   %tmp3 = load <2 x i32>, <2 x i32>* %C
@@ -106,8 +106,8 @@ define <2 x i64> @smlal_v2i32_v2i64(<2 x i64>* %A, <2 x i32>* %B, <2 x i32>* %C)
 }
 
 define <8 x i16> @umlal_v8i8_v8i16(<8 x i16>* %A, <8 x i8>* %B, <8 x i8>* %C) nounwind {
-; CHECK-LABEL: umlal_v8i8_v8i16:
-; CHECK:  umlal {{v[0-9]+}}.8h, {{v[0-9]+}}.8b, {{v[0-9]+}}.8b
+
+
   %tmp1 = load <8 x i16>, <8 x i16>* %A
   %tmp2 = load <8 x i8>, <8 x i8>* %B
   %tmp3 = load <8 x i8>, <8 x i8>* %C
@@ -119,8 +119,8 @@ define <8 x i16> @umlal_v8i8_v8i16(<8 x i16>* %A, <8 x i8>* %B, <8 x i8>* %C) no
 }
 
 define <4 x i32> @umlal_v4i16_v4i32(<4 x i32>* %A, <4 x i16>* %B, <4 x i16>* %C) nounwind {
-; CHECK-LABEL: umlal_v4i16_v4i32:
-; CHECK: umlal {{v[0-9]+}}.4s, {{v[0-9]+}}.4h, {{v[0-9]+}}.4h
+
+
   %tmp1 = load <4 x i32>, <4 x i32>* %A
   %tmp2 = load <4 x i16>, <4 x i16>* %B
   %tmp3 = load <4 x i16>, <4 x i16>* %C
@@ -132,8 +132,8 @@ define <4 x i32> @umlal_v4i16_v4i32(<4 x i32>* %A, <4 x i16>* %B, <4 x i16>* %C)
 }
 
 define <2 x i64> @umlal_v2i32_v2i64(<2 x i64>* %A, <2 x i32>* %B, <2 x i32>* %C) nounwind {
-; CHECK-LABEL: umlal_v2i32_v2i64:
-; CHECK: umlal {{v[0-9]+}}.2d, {{v[0-9]+}}.2s, {{v[0-9]+}}.2s
+
+
   %tmp1 = load <2 x i64>, <2 x i64>* %A
   %tmp2 = load <2 x i32>, <2 x i32>* %B
   %tmp3 = load <2 x i32>, <2 x i32>* %C
@@ -145,8 +145,8 @@ define <2 x i64> @umlal_v2i32_v2i64(<2 x i64>* %A, <2 x i32>* %B, <2 x i32>* %C)
 }
 
 define <8 x i16> @smlsl_v8i8_v8i16(<8 x i16>* %A, <8 x i8>* %B, <8 x i8>* %C) nounwind {
-; CHECK-LABEL: smlsl_v8i8_v8i16:
-; CHECK:  smlsl {{v[0-9]+}}.8h, {{v[0-9]+}}.8b, {{v[0-9]+}}.8b
+
+
   %tmp1 = load <8 x i16>, <8 x i16>* %A
   %tmp2 = load <8 x i8>, <8 x i8>* %B
   %tmp3 = load <8 x i8>, <8 x i8>* %C
@@ -158,8 +158,8 @@ define <8 x i16> @smlsl_v8i8_v8i16(<8 x i16>* %A, <8 x i8>* %B, <8 x i8>* %C) no
 }
 
 define <4 x i32> @smlsl_v4i16_v4i32(<4 x i32>* %A, <4 x i16>* %B, <4 x i16>* %C) nounwind {
-; CHECK-LABEL: smlsl_v4i16_v4i32:
-; CHECK: smlsl {{v[0-9]+}}.4s, {{v[0-9]+}}.4h, {{v[0-9]+}}.4h
+
+
   %tmp1 = load <4 x i32>, <4 x i32>* %A
   %tmp2 = load <4 x i16>, <4 x i16>* %B
   %tmp3 = load <4 x i16>, <4 x i16>* %C
@@ -171,8 +171,8 @@ define <4 x i32> @smlsl_v4i16_v4i32(<4 x i32>* %A, <4 x i16>* %B, <4 x i16>* %C)
 }
 
 define <2 x i64> @smlsl_v2i32_v2i64(<2 x i64>* %A, <2 x i32>* %B, <2 x i32>* %C) nounwind {
-; CHECK-LABEL: smlsl_v2i32_v2i64:
-; CHECK: smlsl {{v[0-9]+}}.2d, {{v[0-9]+}}.2s, {{v[0-9]+}}.2s
+
+
   %tmp1 = load <2 x i64>, <2 x i64>* %A
   %tmp2 = load <2 x i32>, <2 x i32>* %B
   %tmp3 = load <2 x i32>, <2 x i32>* %C
@@ -184,8 +184,8 @@ define <2 x i64> @smlsl_v2i32_v2i64(<2 x i64>* %A, <2 x i32>* %B, <2 x i32>* %C)
 }
 
 define <8 x i16> @umlsl_v8i8_v8i16(<8 x i16>* %A, <8 x i8>* %B, <8 x i8>* %C) nounwind {
-; CHECK-LABEL: umlsl_v8i8_v8i16:
-; CHECK:  umlsl {{v[0-9]+}}.8h, {{v[0-9]+}}.8b, {{v[0-9]+}}.8b
+
+
   %tmp1 = load <8 x i16>, <8 x i16>* %A
   %tmp2 = load <8 x i8>, <8 x i8>* %B
   %tmp3 = load <8 x i8>, <8 x i8>* %C
@@ -197,8 +197,8 @@ define <8 x i16> @umlsl_v8i8_v8i16(<8 x i16>* %A, <8 x i8>* %B, <8 x i8>* %C) no
 }
 
 define <4 x i32> @umlsl_v4i16_v4i32(<4 x i32>* %A, <4 x i16>* %B, <4 x i16>* %C) nounwind {
-; CHECK-LABEL: umlsl_v4i16_v4i32:
-; CHECK: umlsl {{v[0-9]+}}.4s, {{v[0-9]+}}.4h, {{v[0-9]+}}.4h
+
+
   %tmp1 = load <4 x i32>, <4 x i32>* %A
   %tmp2 = load <4 x i16>, <4 x i16>* %B
   %tmp3 = load <4 x i16>, <4 x i16>* %C
@@ -210,8 +210,8 @@ define <4 x i32> @umlsl_v4i16_v4i32(<4 x i32>* %A, <4 x i16>* %B, <4 x i16>* %C)
 }
 
 define <2 x i64> @umlsl_v2i32_v2i64(<2 x i64>* %A, <2 x i32>* %B, <2 x i32>* %C) nounwind {
-; CHECK-LABEL: umlsl_v2i32_v2i64:
-; CHECK: umlsl {{v[0-9]+}}.2d, {{v[0-9]+}}.2s, {{v[0-9]+}}.2s
+
+
   %tmp1 = load <2 x i64>, <2 x i64>* %A
   %tmp2 = load <2 x i32>, <2 x i32>* %B
   %tmp3 = load <2 x i32>, <2 x i32>* %C
@@ -222,80 +222,80 @@ define <2 x i64> @umlsl_v2i32_v2i64(<2 x i64>* %A, <2 x i32>* %B, <2 x i32>* %C)
   ret <2 x i64> %tmp7
 }
 
-; SMULL recognizing BUILD_VECTORs with sign/zero-extended elements.
+
 define <8 x i16> @smull_extvec_v8i8_v8i16(<8 x i8> %arg) nounwind {
-; CHECK-LABEL: smull_extvec_v8i8_v8i16:
-; CHECK: smull {{v[0-9]+}}.8h, {{v[0-9]+}}.8b, {{v[0-9]+}}.8b
+
+
   %tmp3 = sext <8 x i8> %arg to <8 x i16>
   %tmp4 = mul <8 x i16> %tmp3, <i16 -12, i16 -12, i16 -12, i16 -12, i16 -12, i16 -12, i16 -12, i16 -12>
   ret <8 x i16> %tmp4
 }
 
 define <8 x i16> @smull_noextvec_v8i8_v8i16(<8 x i8> %arg) nounwind {
-; Do not use SMULL if the BUILD_VECTOR element values are too big.
-; CHECK-LABEL: smull_noextvec_v8i8_v8i16:
-; CHECK: movz
-; CHECK: mul {{v[0-9]+}}.8h, {{v[0-9]+}}.8h, {{v[0-9]+}}.8h
+
+
+
+
   %tmp3 = sext <8 x i8> %arg to <8 x i16>
   %tmp4 = mul <8 x i16> %tmp3, <i16 -999, i16 -999, i16 -999, i16 -999, i16 -999, i16 -999, i16 -999, i16 -999>
   ret <8 x i16> %tmp4
 }
 
 define <4 x i32> @smull_extvec_v4i16_v4i32(<4 x i16> %arg) nounwind {
-; CHECK-LABEL: smull_extvec_v4i16_v4i32:
-; CHECK:  smull {{v[0-9]+}}.4s, {{v[0-9]+}}.4h, {{v[0-9]+}}.4h
+
+
   %tmp3 = sext <4 x i16> %arg to <4 x i32>
   %tmp4 = mul <4 x i32> %tmp3, <i32 -12, i32 -12, i32 -12, i32 -12>
   ret <4 x i32> %tmp4
 }
 
 define <2 x i64> @smull_extvec_v2i32_v2i64(<2 x i32> %arg) nounwind {
-; CHECK: smull_extvec_v2i32_v2i64
-; CHECK: smull {{v[0-9]+}}.2d, {{v[0-9]+}}.2s, {{v[0-9]+}}.2s
+
+
   %tmp3 = sext <2 x i32> %arg to <2 x i64>
   %tmp4 = mul <2 x i64> %tmp3, <i64 -1234, i64 -1234>
   ret <2 x i64> %tmp4
 }
 
 define <8 x i16> @umull_extvec_v8i8_v8i16(<8 x i8> %arg) nounwind {
-; CHECK-LABEL: umull_extvec_v8i8_v8i16:
-; CHECK: umull {{v[0-9]+}}.8h, {{v[0-9]+}}.8b, {{v[0-9]+}}.8b
+
+
   %tmp3 = zext <8 x i8> %arg to <8 x i16>
   %tmp4 = mul <8 x i16> %tmp3, <i16 12, i16 12, i16 12, i16 12, i16 12, i16 12, i16 12, i16 12>
   ret <8 x i16> %tmp4
 }
 
 define <8 x i16> @umull_noextvec_v8i8_v8i16(<8 x i8> %arg) nounwind {
-; Do not use SMULL if the BUILD_VECTOR element values are too big.
-; CHECK-LABEL: umull_noextvec_v8i8_v8i16:
-; CHECK: movz
-; CHECK: mul {{v[0-9]+}}.8h, {{v[0-9]+}}.8h, {{v[0-9]+}}.8h
+
+
+
+
   %tmp3 = zext <8 x i8> %arg to <8 x i16>
   %tmp4 = mul <8 x i16> %tmp3, <i16 999, i16 999, i16 999, i16 999, i16 999, i16 999, i16 999, i16 999>
   ret <8 x i16> %tmp4
 }
 
 define <4 x i32> @umull_extvec_v4i16_v4i32(<4 x i16> %arg) nounwind {
-; CHECK-LABEL: umull_extvec_v4i16_v4i32:
-; CHECK:  umull {{v[0-9]+}}.4s, {{v[0-9]+}}.4h, {{v[0-9]+}}.4h
+
+
   %tmp3 = zext <4 x i16> %arg to <4 x i32>
   %tmp4 = mul <4 x i32> %tmp3, <i32 1234, i32 1234, i32 1234, i32 1234>
   ret <4 x i32> %tmp4
 }
 
 define <2 x i64> @umull_extvec_v2i32_v2i64(<2 x i32> %arg) nounwind {
-; CHECK-LABEL: umull_extvec_v2i32_v2i64:
-; CHECK: umull {{v[0-9]+}}.2d, {{v[0-9]+}}.2s, {{v[0-9]+}}.2s
+
+
   %tmp3 = zext <2 x i32> %arg to <2 x i64>
   %tmp4 = mul <2 x i64> %tmp3, <i64 1234, i64 1234>
   ret <2 x i64> %tmp4
 }
 
 define i16 @smullWithInconsistentExtensions(<8 x i8> %vec) {
-; If one operand has a zero-extend and the other a sign-extend, smull
-; cannot be used.
-; CHECK-LABEL: smullWithInconsistentExtensions:
-; CHECK: mul {{v[0-9]+}}.8h, {{v[0-9]+}}.8h, {{v[0-9]+}}.8h
+
+
+
+
   %1 = sext <8 x i8> %vec to <8 x i16>
   %2 = mul <8 x i16> %1, <i16 255, i16 255, i16 255, i16 255, i16 255, i16 255, i16 255, i16 255>
   %3 = extractelement <8 x i16> %2, i32 0
@@ -304,9 +304,9 @@ define i16 @smullWithInconsistentExtensions(<8 x i8> %vec) {
 
 define void @distribute(i16* %dst, i8* %src, i32 %mul) nounwind {
 entry:
-; CHECK-LABEL: distribute:
-; CHECK: umull [[REG1:(v[0-9]+.8h)]], {{v[0-9]+}}.8b, [[REG2:(v[0-9]+.8b)]]
-; CHECK: umlal [[REG1]], {{v[0-9]+}}.8b, [[REG2]]
+
+
+
   %0 = trunc i32 %mul to i8
   %1 = insertelement <8 x i8> undef, i8 %0, i32 0
   %2 = shufflevector <8 x i8> %1, <8 x i8> undef, <8 x i32> zeroinitializer

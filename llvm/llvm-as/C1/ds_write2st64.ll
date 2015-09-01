@@ -1,12 +1,12 @@
-; RUN: llc -march=amdgcn -mcpu=bonaire -verify-machineinstrs -mattr=+load-store-opt < %s | FileCheck -check-prefix=SI %s
+
 
 @lds = addrspace(3) global [512 x float] undef, align 4
 
-; SI-LABEL: @simple_write2st64_one_val_f32_0_1
-; SI-DAG: buffer_load_dword [[VAL:v[0-9]+]]
-; SI-DAG: v_lshlrev_b32_e32 [[VPTR:v[0-9]+]], 2, v{{[0-9]+}}
-; SI: ds_write2st64_b32 [[VPTR]], [[VAL]], [[VAL]] offset1:1
-; SI: s_endpgm
+
+
+
+
+
 define void @simple_write2st64_one_val_f32_0_1(float addrspace(1)* %C, float addrspace(1)* %in) #0 {
   %x.i = tail call i32 @llvm.r600.read.tidig.x() #1
   %in.gep = getelementptr float, float addrspace(1)* %in, i32 %x.i
@@ -19,12 +19,12 @@ define void @simple_write2st64_one_val_f32_0_1(float addrspace(1)* %C, float add
   ret void
 }
 
-; SI-LABEL: @simple_write2st64_two_val_f32_2_5
-; SI-DAG: buffer_load_dword [[VAL0:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI-DAG: buffer_load_dword [[VAL1:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:4
-; SI-DAG: v_lshlrev_b32_e32 [[VPTR:v[0-9]+]], 2, v{{[0-9]+}}
-; SI: ds_write2st64_b32 [[VPTR]], [[VAL0]], [[VAL1]] offset0:2 offset1:5
-; SI: s_endpgm
+
+
+
+
+
+
 define void @simple_write2st64_two_val_f32_2_5(float addrspace(1)* %C, float addrspace(1)* %in) #0 {
   %x.i = tail call i32 @llvm.r600.read.tidig.x() #1
   %in.gep.0 = getelementptr float, float addrspace(1)* %in, i32 %x.i
@@ -40,12 +40,12 @@ define void @simple_write2st64_two_val_f32_2_5(float addrspace(1)* %C, float add
   ret void
 }
 
-; SI-LABEL: @simple_write2st64_two_val_max_offset_f32
-; SI-DAG: buffer_load_dword [[VAL0:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI-DAG: buffer_load_dword [[VAL1:v[0-9]+]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:4
-; SI-DAG: v_lshlrev_b32_e32 [[VPTR:v[0-9]+]], 2, v{{[0-9]+}}
-; SI: ds_write2st64_b32 [[VPTR]], [[VAL0]], [[VAL1]] offset1:255
-; SI: s_endpgm
+
+
+
+
+
+
 define void @simple_write2st64_two_val_max_offset_f32(float addrspace(1)* %C, float addrspace(1)* %in, float addrspace(3)* %lds) #0 {
   %x.i = tail call i32 @llvm.r600.read.tidig.x() #1
   %in.gep.0 = getelementptr float, float addrspace(1)* %in, i32 %x.i
@@ -60,12 +60,12 @@ define void @simple_write2st64_two_val_max_offset_f32(float addrspace(1)* %C, fl
   ret void
 }
 
-; SI-LABEL: @simple_write2st64_two_val_max_offset_f64
-; SI-DAG: buffer_load_dwordx2 [[VAL0:v\[[0-9]+:[0-9]+\]]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64{{$}}
-; SI-DAG: buffer_load_dwordx2 [[VAL1:v\[[0-9]+:[0-9]+\]]], {{v\[[0-9]+:[0-9]+\]}}, {{s\[[0-9]+:[0-9]+\]}}, 0 addr64 offset:8
-; SI-DAG: v_add_i32_e32 [[VPTR:v[0-9]+]],
-; SI: ds_write2st64_b64 [[VPTR]], [[VAL0]], [[VAL1]] offset0:4 offset1:127
-; SI: s_endpgm
+
+
+
+
+
+
 define void @simple_write2st64_two_val_max_offset_f64(double addrspace(1)* %C, double addrspace(1)* %in, double addrspace(3)* %lds) #0 {
   %x.i = tail call i32 @llvm.r600.read.tidig.x() #1
   %in.gep.0 = getelementptr double, double addrspace(1)* %in, i32 %x.i
@@ -81,10 +81,10 @@ define void @simple_write2st64_two_val_max_offset_f64(double addrspace(1)* %C, d
   ret void
 }
 
-; SI-LABEL: @byte_size_only_divisible_64_write2st64_f64
-; SI-NOT: ds_write2st64_b64
-; SI: ds_write2_b64 {{v[0-9]+}}, {{v\[[0-9]+:[0-9]+\]}}, {{v\[[0-9]+:[0-9]+\]}} offset1:8
-; SI: s_endpgm
+
+
+
+
 define void @byte_size_only_divisible_64_write2st64_f64(double addrspace(1)* %C, double addrspace(1)* %in, double addrspace(3)* %lds) #0 {
   %x.i = tail call i32 @llvm.r600.read.tidig.x() #1
   %in.gep = getelementptr double, double addrspace(1)* %in, i32 %x.i
@@ -97,19 +97,19 @@ define void @byte_size_only_divisible_64_write2st64_f64(double addrspace(1)* %C,
   ret void
 }
 
-; Function Attrs: nounwind readnone
+
 declare i32 @llvm.r600.read.tgid.x() #1
 
-; Function Attrs: nounwind readnone
+
 declare i32 @llvm.r600.read.tgid.y() #1
 
-; Function Attrs: nounwind readnone
+
 declare i32 @llvm.r600.read.tidig.x() #1
 
-; Function Attrs: nounwind readnone
+
 declare i32 @llvm.r600.read.tidig.y() #1
 
-; Function Attrs: noduplicate nounwind
+
 declare void @llvm.AMDGPU.barrier.local() #2
 
 attributes #0 = { nounwind "less-precise-fpmad"="false" "no-frame-pointer-elim"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "no-realign-stack" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

@@ -1,39 +1,39 @@
-; RUN: llc -O0 -mtriple=x86_64-unknown-linux-gnu < %s | FileCheck %s
 
-; Verify that we have correct debug info for local variables in code
-; instrumented with AddressSanitizer.
 
-; Generated from the source file test.cc:
-; int bar(int y) {
-;   return y + 2;
-; }
-; with "clang++ -S -emit-llvm -fsanitize=address -O0 -g test.cc"
 
-; First, argument variable "y" resides in %rdi:
-; CHECK: DEBUG_VALUE: bar:y <- RDI
 
-; Then its address is stored in a location on a stack:
-; CHECK: movq %rdi, [[OFFSET:[0-9]+]](%rsp)
-; CHECK-NEXT: [[START_LABEL:.Ltmp[0-9]+]]
-; CHECK-NEXT: DEBUG_VALUE: bar:y <- [RSP+[[OFFSET]]]
-; This location should be valid until the end of the function.
 
-; CHECK: .Ldebug_loc{{[0-9]+}}:
-; We expect two location ranges for the variable.
 
-; First, its address is stored in %rdi:
-; CHECK:      .quad .Lfunc_begin0-.Lfunc_begin0
-; CHECK-NEXT: .quad [[START_LABEL]]-.Lfunc_begin0
-; CHECK: DW_OP_breg5
 
-; Then it's addressed via %rsp:
-; CHECK:      .quad [[START_LABEL]]-.Lfunc_begin0
-; CHECK-NEXT: .Lfunc_end0-.Lfunc_begin0
-; CHECK: DW_OP_breg7
-; CHECK-NEXT: [[OFFSET]]
-; CHECK: DW_OP_deref
 
-; ModuleID = 'test.cc'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
@@ -41,7 +41,7 @@ target triple = "x86_64-unknown-linux-gnu"
 @__asan_option_detect_stack_use_after_return = external global i32
 @__asan_gen_ = private unnamed_addr constant [16 x i8] c"1 32 4 6 y.addr\00", align 1
 
-; Function Attrs: nounwind sanitize_address uwtable
+
 define i32 @_Z3bari(i32 %y) #0 {
 entry:
   %MyAlloca = alloca [64 x i8], align 32
@@ -50,11 +50,11 @@ entry:
   %2 = icmp ne i32 %1, 0
   br i1 %2, label %3, label %5
 
-; <label>:3                                       ; preds = %entry
+
   %4 = call i64 @__asan_stack_malloc_0(i64 64, i64 %0)
   br label %5
 
-; <label>:5                                       ; preds = %entry, %3
+
   %6 = phi i64 [ %0, %entry ], [ %4, %3 ]
   %7 = add i64 %6, 32
   %8 = inttoptr i64 %7 to i32*
@@ -80,19 +80,19 @@ entry:
   call void @llvm.dbg.declare(metadata i32* %8, metadata !12, metadata !14), !dbg !DILocation(scope: !4)
   br i1 %23, label %24, label %30
 
-; <label>:24                                      ; preds = %5
+
   %25 = and i64 %18, 7
   %26 = add i64 %25, 3
   %27 = trunc i64 %26 to i8
   %28 = icmp sge i8 %27, %22
   br i1 %28, label %29, label %30
 
-; <label>:29                                      ; preds = %24
+
   call void @__asan_report_store4(i64 %18)
   call void asm sideeffect "", ""()
   unreachable
 
-; <label>:30                                      ; preds = %24, %5
+
   store i32 %y, i32* %8, align 4
   %31 = ptrtoint i32* %8 to i64, !dbg !13
   %32 = lshr i64 %31, 3, !dbg !13
@@ -102,26 +102,26 @@ entry:
   %36 = icmp ne i8 %35, 0, !dbg !13
   br i1 %36, label %37, label %43, !dbg !13
 
-; <label>:37                                      ; preds = %30
+
   %38 = and i64 %31, 7, !dbg !13
   %39 = add i64 %38, 3, !dbg !13
   %40 = trunc i64 %39 to i8, !dbg !13
   %41 = icmp sge i8 %40, %35, !dbg !13
   br i1 %41, label %42, label %43
 
-; <label>:42                                      ; preds = %37
+
   call void @__asan_report_load4(i64 %31), !dbg !13
   call void asm sideeffect "", ""()
   unreachable
 
-; <label>:43                                      ; preds = %37, %30
+
   %44 = load i32, i32* %8, align 4, !dbg !13
   %add = add nsw i32 %44, 2, !dbg !13
   store i64 1172321806, i64* %9, !dbg !13
   %45 = icmp ne i64 %6, %0, !dbg !13
   br i1 %45, label %46, label %53, !dbg !13
 
-; <label>:46                                      ; preds = %43
+
   %47 = add i64 %15, 0, !dbg !13
   %48 = inttoptr i64 %47 to i64*, !dbg !13
   store i64 -723401728380766731, i64* %48, !dbg !13
@@ -132,17 +132,17 @@ entry:
   store i8 0, i8* %52, !dbg !13
   br label %56, !dbg !13
 
-; <label>:53                                      ; preds = %43
+
   %54 = add i64 %15, 0, !dbg !13
   %55 = inttoptr i64 %54 to i64*, !dbg !13
   store i64 0, i64* %55, !dbg !13
   br label %56, !dbg !13
 
-; <label>:56                                      ; preds = %53, %46
+
   ret i32 %add, !dbg !13
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
 define internal void @asan.module_ctor() {

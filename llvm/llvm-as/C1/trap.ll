@@ -1,4 +1,4 @@
-; RUN: llc -march=mipsel -mcpu=mips32 < %s | FileCheck %s
+
 
 declare void @llvm.trap()
 
@@ -7,5 +7,5 @@ entry:
   call void @llvm.trap()
   unreachable
 
-; CHECK:        break
+
 }

@@ -1,4 +1,4 @@
-; RUN: llc < %s -mtriple=thumb-apple-darwin
+
 
 %struct.rtx_def = type { i8 }
 @str = external global [7 x i8]

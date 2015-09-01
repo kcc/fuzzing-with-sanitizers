@@ -1,5 +1,5 @@
-;RUN: llc < %s -march=r600 -mcpu=cayman -stress-sched -verify-misched -verify-machineinstrs
-;REQUIRES: asserts
+
+
 
 define void @main(<4 x float> inreg %reg0, <4 x float> inreg %reg1) #1 {
 main_body:
@@ -32,15 +32,15 @@ main_body:
   %26 = icmp ne i32 %25, 0
   br i1 %19, label %IF, label %ELSE
 
-IF:                                               ; preds = %main_body
+IF:                                               
   %. = select i1 %26, float 0.000000e+00, float 1.000000e+00
   %.18 = select i1 %26, float 1.000000e+00, float 0.000000e+00
   br label %ENDIF
 
-ELSE:                                             ; preds = %main_body
+ELSE:                                             
   br i1 %26, label %ENDIF, label %ELSE17
 
-ENDIF:                                            ; preds = %ELSE17, %ELSE, %IF
+ENDIF:                                            
   %temp1.0 = phi float [ %., %IF ], [ %48, %ELSE17 ], [ 0.000000e+00, %ELSE ]
   %temp2.0 = phi float [ 0.000000e+00, %IF ], [ %49, %ELSE17 ], [ 1.000000e+00, %ELSE ]
   %temp.0 = phi float [ %.18, %IF ], [ %47, %ELSE17 ], [ 0.000000e+00, %ELSE ]
@@ -55,7 +55,7 @@ ENDIF:                                            ; preds = %ELSE17, %ELSE, %IF
   call void @llvm.R600.store.swizzle(<4 x float> %34, i32 0, i32 0)
   ret void
 
-ELSE17:                                           ; preds = %ELSE
+ELSE17:                                           
   %35 = fadd float 0.000000e+00, 0x3FC99999A0000000
   %36 = fadd float 0.000000e+00, 0x3FC99999A0000000
   %37 = fadd float 0.000000e+00, 0x3FC99999A0000000

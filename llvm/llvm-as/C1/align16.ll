@@ -1,4 +1,4 @@
-; RUN: llc -march=mipsel -mcpu=mips16 -relocation-model=static < %s | FileCheck %s -check-prefix=16
+
 
 @i = global i32 25, align 4
 @.str = private unnamed_addr constant [5 x i8] c"%i \0A\00", align 1
@@ -25,7 +25,7 @@ entry:
   call void @p(i32* %arrayidx1)
   ret void
 }
-; 16:	save	$ra, 2040
-; 16:	addiu	$sp, -40 # 16 bit inst
-; 16:	addiu	$sp, 40 # 16 bit inst
-; 16:	restore	$ra, 2040
+
+
+
+

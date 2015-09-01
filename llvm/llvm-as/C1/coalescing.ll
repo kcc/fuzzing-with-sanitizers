@@ -1,38 +1,38 @@
-; RUN: llc -filetype=obj %s -o - | llvm-dwarfdump - | FileCheck %s
-;
-; Generated at -Os from:
-; void *foo(void *dst);
-; void start() {
-;   unsigned size;
-;   foo(&size);
-;   if (size != 0) { // Work around a bug to preserve the dbg.value.
-;   }
-; }
 
-; ModuleID = 'test1.cpp'
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-m:o-i64:64-i128:128-n32:64-S128"
 target triple = "arm64-apple-ios"
 
-; Function Attrs: nounwind optsize
+
 define void @_Z5startv() #0 {
 entry:
   %size = alloca i32, align 4
   %0 = bitcast i32* %size to i8*, !dbg !15
   %call = call i8* @_Z3fooPv(i8* %0) #3, !dbg !15
   call void @llvm.dbg.value(metadata i32* %size, i64 0, metadata !10, metadata !16), !dbg !17
-  ; CHECK: .debug_info contents:
-  ; CHECK: DW_TAG_variable
-  ; CHECK-NEXT: DW_AT_location
-  ; CHECK-NEXT: DW_AT_name {{.*}}"size"
-  ; CHECK: .debug_loc contents:
-  ; CHECK: Location description: 70 00
+  
+  
+  
+  
+  
+  
   ret void, !dbg !18
 }
 
-; Function Attrs: optsize
+
 declare i8* @_Z3fooPv(i8*) #1
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #2
 
 attributes #0 = { nounwind optsize }

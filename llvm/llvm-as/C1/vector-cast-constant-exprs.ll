@@ -1,6 +1,6 @@
-; RUN: llvm-as < %s | llvm-dis | not grep "ret.*("
 
-; All of these constant expressions should fold.
+
+
 
 define <2 x float> @ga() {
   ret <2 x float> fptrunc (<2 x double><double 4.3, double 3.2> to <2 x float>)

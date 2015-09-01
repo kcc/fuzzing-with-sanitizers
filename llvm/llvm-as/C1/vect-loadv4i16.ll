@@ -1,9 +1,9 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv5 < %s | FileCheck %s
 
-; Check that store is post-incremented.
-; CHECK: memuh(r{{[0-9]+}} + {{ *}}#6{{ *}})
-; CHECK: combine(r{{[0-9]+}}{{ *}},{{ *}}r{{[0-9]+}}{{ *}})
-; CHECK: vaddh
+
+
+
+
+
 
 target datalayout = "e-p:32:32:32-i64:64:64-i32:32:32-i16:16:16-i1:32:32-f64:64:64-f32:32:32-v64:64:64-v32:32:32-a0:0-n16:32"
 target triple = "hexagon"
@@ -13,41 +13,41 @@ entry:
   %cmp5 = icmp eq i32 %N, 0
   br i1 %cmp5, label %for.end, label %polly.cond
 
-for.end.loopexit:                                 ; preds = %polly.stmt.for.body29
+for.end.loopexit:                                 
   br label %for.end
 
-for.end:                                          ; preds = %for.end.loopexit, %polly.loop_header24.preheader, %entry
+for.end:                                          
   ret void
 
-polly.cond:                                       ; preds = %entry
+polly.cond:                                       
   %0 = icmp sgt i32 %N, 3
   br i1 %0, label %polly.then, label %polly.loop_header24.preheader
 
-polly.then:                                       ; preds = %polly.cond
+polly.then:                                       
   %1 = add i32 %N, -1
   %leftover_lb = and i32 %1, -4
   %2 = icmp sgt i32 %leftover_lb, 0
   br i1 %2, label %polly.loop_body.lr.ph, label %polly.loop_header24.preheader
 
-polly.loop_body.lr.ph:                            ; preds = %polly.then
+polly.loop_body.lr.ph:                            
   %3 = insertelement <4 x i16> undef, i16 %val, i32 0
   %4 = insertelement <4 x i16> %3, i16 %val, i32 1
   %5 = insertelement <4 x i16> %4, i16 %val, i32 2
   %6 = insertelement <4 x i16> %5, i16 %val, i32 3
   br label %polly.loop_body
 
-polly.loop_header24.preheader.loopexit:           ; preds = %polly.loop_body
+polly.loop_header24.preheader.loopexit:           
   br label %polly.loop_header24.preheader
 
-polly.loop_header24.preheader:                    ; preds = %polly.loop_header24.preheader.loopexit, %polly.then, %polly.cond
+polly.loop_header24.preheader:                    
   %polly.loopiv27.ph = phi i32 [ 0, %polly.cond ], [ %leftover_lb, %polly.then ], [ %leftover_lb, %polly.loop_header24.preheader.loopexit ]
   %7 = icmp slt i32 %polly.loopiv27.ph, %N
   br i1 %7, label %polly.stmt.for.body29.preheader, label %for.end
 
-polly.stmt.for.body29.preheader:                  ; preds = %polly.loop_header24.preheader
+polly.stmt.for.body29.preheader:                  
   br label %polly.stmt.for.body29
 
-polly.loop_body:                                  ; preds = %polly.loop_body.lr.ph, %polly.loop_body
+polly.loop_body:                                  
   %p_arrayidx.phi = phi i16* [ %A, %polly.loop_body.lr.ph ], [ %p_arrayidx.inc, %polly.loop_body ]
   %polly.loopiv34 = phi i32 [ 0, %polly.loop_body.lr.ph ], [ %polly.next_loopiv, %polly.loop_body ]
   %polly.next_loopiv = add nsw i32 %polly.loopiv34, 4
@@ -59,7 +59,7 @@ polly.loop_body:                                  ; preds = %polly.loop_body.lr.
   %p_arrayidx.inc = getelementptr i16, i16* %p_arrayidx.phi, i32 4
   br i1 %8, label %polly.loop_body, label %polly.loop_header24.preheader.loopexit
 
-polly.stmt.for.body29:                            ; preds = %polly.stmt.for.body29.preheader, %polly.stmt.for.body29
+polly.stmt.for.body29:                            
   %polly.loopiv2733 = phi i32 [ %polly.next_loopiv28, %polly.stmt.for.body29 ], [ %polly.loopiv27.ph, %polly.stmt.for.body29.preheader ]
   %polly.next_loopiv28 = add nsw i32 %polly.loopiv2733, 1
   %p_arrayidx30 = getelementptr i16, i16* %A, i32 %polly.loopiv2733

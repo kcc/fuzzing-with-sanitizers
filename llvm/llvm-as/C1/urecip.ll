@@ -1,7 +1,7 @@
-;RUN: llc < %s -march=amdgcn -mcpu=verde -verify-machineinstrs | FileCheck %s
-;RUN: llc < %s -march=amdgcn -mcpu=tonga -verify-machineinstrs | FileCheck %s
 
-;CHECK: v_rcp_iflag_f32_e32
+
+
+
 
 define void @test(i32 %p, i32 %q) {
    %i = udiv i32 %p, %q

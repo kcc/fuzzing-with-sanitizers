@@ -1,4 +1,4 @@
-; RUN: llc < %s -mtriple=armv7
+
 
 declare void @g(<16 x i8>)
 define void @f(<4 x i8> %param1, <4 x i8> %param2) {

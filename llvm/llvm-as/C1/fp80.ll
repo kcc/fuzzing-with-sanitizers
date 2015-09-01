@@ -1,4 +1,4 @@
-; RUN: opt < %s -argpromotion -S | FileCheck %s
+
 
 target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
@@ -20,7 +20,7 @@ entry:
   ret void
 }
 
-; CHECK: internal i8 @UseLongDoubleUnsafely(%union.u* byval align 16 %arg) {
+
 define internal i8 @UseLongDoubleUnsafely(%union.u* byval align 16 %arg) {
 entry:
   %bitcast = bitcast %union.u* %arg to %struct.s*
@@ -29,21 +29,21 @@ entry:
   ret i8 %result
 }
 
-; CHECK: internal x86_fp80 @UseLongDoubleSafely(x86_fp80 {{%.*}}) {
+
 define internal x86_fp80 @UseLongDoubleSafely(%union.u* byval align 16 %arg) {
   %gep = getelementptr inbounds %union.u, %union.u* %arg, i64 0, i32 0
   %fp80 = load x86_fp80, x86_fp80* %gep
   ret x86_fp80 %fp80
 }
 
-; CHECK: define internal i64 @AccessPaddingOfStruct(%struct.Foo* byval %a) {
+
 define internal i64 @AccessPaddingOfStruct(%struct.Foo* byval %a) {
   %p = bitcast %struct.Foo* %a to i64*
   %v = load i64, i64* %p
   ret i64 %v
 }
 
-; CHECK: define internal i64 @CaptureAStruct(%struct.Foo* byval %a) {
+
 define internal i64 @CaptureAStruct(%struct.Foo* byval %a) {
 entry:
   %a_ptr = alloca %struct.Foo*

@@ -1,8 +1,8 @@
-; RUN: llc < %s -mtriple=x86_64-linux-gnu -mcpu=atom | FileCheck %s
-; <rdar://problem/8006248>
 
-; This randomly started passing after an unrelated change, if it fails again it
-; might be worth looking at PR12324: misched bringup.
+
+
+
+
 
 @llvm.used = appending global [1 x i8*] [i8* bitcast (void ([40 x i16]*, i32*, i16**, i64*)* @func to i8*)], section "llvm.metadata"
 
@@ -33,13 +33,13 @@ entry:
   %tmp11 = sext i32 %tmp4 to i64
   %tmp12 = add i64 %tmp11, 5089792279245435153
 
-; CHECK:      addl	$2138875574, %e[[REGISTER_zext:[a-z0-9]+]]
-; CHECK:      cmpl	$-8608074, %e[[REGISTER_zext]]
-; CHECK:      movslq	%e[[REGISTER_zext]], [[REGISTER_sext:%r[a-z0-9]+]]
-; CHECK-NOT:  [[REGISTER_zext]]
-; CHECK-DAG:  cmpl	$2138875573, %e[[REGISTER_zext]]
-; CHECK:      movq  [[REGISTER_sext]], [[REGISTER_sext2:%[a-z0-9]+]]
-; CHECK:      subq	%r[[REGISTER_zext]], [[REGISTER_sext2]]
+
+
+
+
+
+
+
 
   %tmp13 = sub i64 %tmp12, 2138875574
   %tmp14 = zext i32 %tmp4 to i64

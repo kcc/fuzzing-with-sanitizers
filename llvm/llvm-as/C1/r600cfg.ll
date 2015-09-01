@@ -1,4 +1,4 @@
-;RUN: llc < %s -march=r600 -mcpu=redwood
+
 
 define void @main(<4 x float> inreg %reg0, <4 x float> inreg %reg1) #0 {
 main_body:
@@ -15,7 +15,7 @@ main_body:
   %. = select i1 %9, float 0x36A0000000000000, float %0
   br label %LOOP
 
-LOOP:                                             ; preds = %LOOP47, %main_body
+LOOP:                                             
   %temp12.0 = phi float [ 0x36A0000000000000, %main_body ], [ %temp12.1, %LOOP47 ]
   %temp8.0 = phi float [ 0.000000e+00, %main_body ], [ %38, %LOOP47 ]
   %temp4.1 = phi float [ %., %main_body ], [ %52, %LOOP47 ]
@@ -27,7 +27,7 @@ LOOP:                                             ; preds = %LOOP47, %main_body
   %15 = icmp ne i32 %14, 0
   br i1 %15, label %IF41, label %ENDIF40
 
-IF41:                                             ; preds = %LOOP
+IF41:                                             
   %16 = insertelement <4 x float> undef, float %0, i32 0
   %17 = insertelement <4 x float> %16, float %temp8.0, i32 1
   %18 = insertelement <4 x float> %17, float %temp12.0, i32 2
@@ -55,7 +55,7 @@ IF41:                                             ; preds = %LOOP
   call void @llvm.R600.store.swizzle(<4 x float> %35, i32 0, i32 2)
   ret void
 
-ENDIF40:                                          ; preds = %LOOP
+ENDIF40:                                          
   %36 = bitcast float %temp8.0 to i32
   %37 = add i32 %36, 1
   %38 = bitcast i32 %37 to float
@@ -71,16 +71,16 @@ ENDIF40:                                          ; preds = %LOOP
   %48 = bitcast float %temp4.1 to i32
   br i1 %47, label %IF44, label %ELSE45
 
-IF44:                                             ; preds = %ENDIF40
+IF44:                                             
   %49 = udiv i32 %48, 2
   br label %ENDIF43
 
-ELSE45:                                           ; preds = %ENDIF40
+ELSE45:                                           
   %50 = mul i32 3, %48
   %51 = add i32 %50, 1
   br label %ENDIF43
 
-ENDIF43:                                          ; preds = %ELSE45, %IF44
+ENDIF43:                                          
   %.sink = phi i32 [ %49, %IF44 ], [ %51, %ELSE45 ]
   %52 = bitcast i32 %.sink to float
   %53 = load <4 x float>, <4 x float> addrspace(8)* null
@@ -88,7 +88,7 @@ ENDIF43:                                          ; preds = %ELSE45, %IF44
   %55 = bitcast float %54 to i32
   br label %LOOP47
 
-LOOP47:                                           ; preds = %ENDIF48, %ENDIF43
+LOOP47:                                           
   %temp12.1 = phi float [ %temp12.0, %ENDIF43 ], [ %67, %ENDIF48 ]
   %temp28.0 = phi float [ 0.000000e+00, %ENDIF43 ], [ %70, %ENDIF48 ]
   %56 = bitcast float %temp28.0 to i32
@@ -99,7 +99,7 @@ LOOP47:                                           ; preds = %ENDIF48, %ENDIF43
   %61 = icmp ne i32 %60, 0
   br i1 %61, label %LOOP, label %ENDIF48
 
-ENDIF48:                                          ; preds = %LOOP47
+ENDIF48:                                          
   %62 = bitcast float %temp12.1 to i32
   %63 = mul i32 %62, 2
   %64 = bitcast i32 %63 to float

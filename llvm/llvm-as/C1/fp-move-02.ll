@@ -1,123 +1,123 @@
-; Test moves between FPRs and GPRs.  The 32-bit cases test the z10
-; implementation, which has no high-word support.
-;
-; RUN: llc < %s -mtriple=s390x-linux-gnu -mcpu=z10 | FileCheck %s
+
+
+
+
 
 declare i64 @foo()
 declare double @bar()
 @dptr = external global double
 @iptr = external global i64
 
-; Test 32-bit moves from GPRs to FPRs.  The GPR must be moved into the high
-; 32 bits of the FPR.
+
+
 define float @f1(i32 %a) {
-; CHECK-LABEL: f1:
-; CHECK: sllg [[REGISTER:%r[0-5]]], %r2, 32
-; CHECK: ldgr %f0, [[REGISTER]]
+
+
+
   %res = bitcast i32 %a to float
   ret float %res
 }
 
-; Like f1, but create a situation where the shift can be folded with
-; surrounding code.
+
+
 define float @f2(i64 %big) {
-; CHECK-LABEL: f2:
-; CHECK: risbg [[REGISTER:%r[0-5]]], %r2, 0, 159, 31
-; CHECK: ldgr %f0, [[REGISTER]]
+
+
+
   %shift = lshr i64 %big, 1
   %a = trunc i64 %shift to i32
   %res = bitcast i32 %a to float
   ret float %res
 }
 
-; Another example of the same thing.
+
 define float @f3(i64 %big) {
-; CHECK-LABEL: f3:
-; CHECK: risbg [[REGISTER:%r[0-5]]], %r2, 0, 159, 2
-; CHECK: ldgr %f0, [[REGISTER]]
+
+
+
   %shift = ashr i64 %big, 30
   %a = trunc i64 %shift to i32
   %res = bitcast i32 %a to float
   ret float %res
 }
 
-; Like f1, but the value to transfer is already in the high 32 bits.
+
 define float @f4(i64 %big) {
-; CHECK-LABEL: f4:
-; CHECK-NOT: %r2
-; CHECK: nilf %r2, 0
-; CHECK-NOT: %r2
-; CHECK: ldgr %f0, %r2
+
+
+
+
+
   %shift = ashr i64 %big, 32
   %a = trunc i64 %shift to i32
   %res = bitcast i32 %a to float
   ret float %res
 }
 
-; Test 64-bit moves from GPRs to FPRs.
+
 define double @f5(i64 %a) {
-; CHECK-LABEL: f5:
-; CHECK: ldgr %f0, %r2
+
+
   %res = bitcast i64 %a to double
   ret double %res
 }
 
-; Test 128-bit moves from GPRs to FPRs.  i128 isn't a legitimate type,
-; so this goes through memory.
+
+
 define void @f6(fp128 *%a, i128 *%b) {
-; CHECK-LABEL: f6:
-; CHECK: lg
-; CHECK: lg
-; CHECK: stg
-; CHECK: stg
-; CHECK: br %r14
+
+
+
+
+
+
   %val = load i128 , i128 *%b
   %res = bitcast i128 %val to fp128
   store fp128 %res, fp128 *%a
   ret void
 }
 
-; Test 32-bit moves from FPRs to GPRs.  The high 32 bits of the FPR should
-; be moved into the low 32 bits of the GPR.
+
+
 define i32 @f7(float %a) {
-; CHECK-LABEL: f7:
-; CHECK: lgdr [[REGISTER:%r[0-5]]], %f0
-; CHECK: srlg %r2, [[REGISTER]], 32
+
+
+
   %res = bitcast float %a to i32
   ret i32 %res
 }
 
-; Test 64-bit moves from FPRs to GPRs.
+
 define i64 @f8(double %a) {
-; CHECK-LABEL: f8:
-; CHECK: lgdr %r2, %f0
+
+
   %res = bitcast double %a to i64
   ret i64 %res
 }
 
-; Test 128-bit moves from FPRs to GPRs, with the same restriction as f6.
+
 define void @f9(fp128 *%a, i128 *%b) {
-; CHECK-LABEL: f9:
-; CHECK: ld
-; CHECK: ld
-; CHECK: std
-; CHECK: std
+
+
+
+
+
   %val = load fp128 , fp128 *%a
   %res = bitcast fp128 %val to i128
   store i128 %res, i128 *%b
   ret void
 }
 
-; Test cases where the destination of an LGDR needs to be spilled.
-; We shouldn't have any integer stack stores or floating-point loads.
+
+
 define void @f10(double %extra) {
-; CHECK-LABEL: f10:
-; CHECK: dptr
-; CHECK-NOT: stg {{.*}}(%r15)
-; CHECK: %loop
-; CHECK-NOT: ld {{.*}}(%r15)
-; CHECK: %exit
-; CHECK: br %r14
+
+
+
+
+
+
+
 entry:
   %double0 = load volatile double , double *@dptr
   %biased0 = fadd double %double0, %extra
@@ -171,15 +171,15 @@ exit:
   ret void
 }
 
-; ...likewise LDGR, with the requirements the other way around.
+
 define void @f11(i64 %mask) {
-; CHECK-LABEL: f11:
-; CHECK: iptr
-; CHECK-NOT: std {{.*}}(%r15)
-; CHECK: %loop
-; CHECK-NOT: lg {{.*}}(%r15)
-; CHECK: %exit
-; CHECK: br %r14
+
+
+
+
+
+
+
 entry:
   %int0 = load volatile i64 , i64 *@iptr
   %masked0 = and i64 %int0, %mask
@@ -233,17 +233,17 @@ exit:
   ret void
 }
 
-; Test cases where the source of an LDGR needs to be spilled.
-; We shouldn't have any integer stack stores or floating-point loads.
+
+
 define void @f12() {
-; CHECK-LABEL: f12:
-; CHECK: %loop
-; CHECK-NOT: std {{.*}}(%r15)
-; CHECK: %exit
-; CHECK: foo@PLT
-; CHECK-NOT: lg {{.*}}(%r15)
-; CHECK: foo@PLT
-; CHECK: br %r14
+
+
+
+
+
+
+
+
 entry:
   br label %loop
 
@@ -313,16 +313,16 @@ exit:
   ret void
 }
 
-; ...likewise LGDR, with the requirements the other way around.
+
 define void @f13() {
-; CHECK-LABEL: f13:
-; CHECK: %loop
-; CHECK-NOT: stg {{.*}}(%r15)
-; CHECK: %exit
-; CHECK: foo@PLT
-; CHECK-NOT: ld {{.*}}(%r15)
-; CHECK: foo@PLT
-; CHECK: br %r14
+
+
+
+
+
+
+
+
 entry:
   br label %loop
 

@@ -1,6 +1,6 @@
-; RUN: llc -mcpu=core2 < %s | FileCheck %s -check-prefix=SSSE3
-; RUN: llc -mcpu=corei7-avx < %s | FileCheck %s -check-prefix=AVX1
-; RUN: llc -mcpu=core-avx2 < %s | FileCheck %s -check-prefix=AVX2
+
+
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.8.0"
@@ -16,26 +16,26 @@ vector.ph:
   store <8 x i16> %5, <8 x i16>* %1, align 2
   ret void
 
-; SSSE3: @test1
-; SSSE3:      # BB#0:
-; SSSE3-NEXT: movdqu (%rdi), %xmm0
-; SSSE3-NEXT: psubusw LCPI0_0(%rip), %xmm0
-; SSSE3-NEXT: movdqu %xmm0, (%rdi)
-; SSSE3-NEXT: retq
 
-; AVX1: @test1
-; AVX1:      # BB#0:
-; AVX1-NEXT: vmovdqu (%rdi), %xmm0
-; AVX1-NEXT: vpsubusw LCPI0_0(%rip), %xmm0, %xmm0
-; AVX1-NEXT: vmovdqu %xmm0, (%rdi)
-; AVX1-NEXT: retq
 
-; AVX2: @test1
-; AVX2:      # BB#0:
-; AVX2-NEXT: vmovdqu (%rdi), %xmm0
-; AVX2-NEXT: vpsubusw LCPI0_0(%rip), %xmm0, %xmm0
-; AVX2-NEXT: vmovdqu %xmm0, (%rdi)
-; AVX2-NEXT: retq
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 define void @test2(i16* nocapture %head) nounwind {
@@ -49,26 +49,26 @@ vector.ph:
   store <8 x i16> %5, <8 x i16>* %1, align 2
   ret void
 
-; SSSE3: @test2
-; SSSE3:      # BB#0:
-; SSSE3-NEXT: movdqu (%rdi), %xmm0
-; SSSE3-NEXT: psubusw LCPI1_0(%rip), %xmm0
-; SSSE3-NEXT: movdqu %xmm0, (%rdi)
-; SSSE3-NEXT: retq
 
-; AVX1: @test2
-; AVX1:      # BB#0:
-; AVX1-NEXT: vmovdqu (%rdi), %xmm0
-; AVX1-NEXT: vpsubusw LCPI1_0(%rip), %xmm0, %xmm0
-; AVX1-NEXT: vmovdqu %xmm0, (%rdi)
-; AVX1-NEXT: retq
 
-; AVX2: @test2
-; AVX2:      # BB#0:
-; AVX2-NEXT: vmovdqu (%rdi), %xmm0
-; AVX2-NEXT: vpsubusw LCPI1_0(%rip), %xmm0, %xmm0
-; AVX2-NEXT: vmovdqu %xmm0, (%rdi)
-; AVX2-NEXT: retq
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 define void @test3(i16* nocapture %head, i16 zeroext %w) nounwind {
@@ -84,32 +84,32 @@ vector.ph:
   store <8 x i16> %6, <8 x i16>* %2, align 2
   ret void
 
-; SSSE3: @test3
-; SSSE3:      # BB#0:
-; SSSE3-NEXT: movd %esi, %xmm0
-; SSSE3-NEXT: pshufb {{.*#+}} xmm0 = xmm0[0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1]
-; SSSE3-NEXT: movdqu (%rdi), %xmm1
-; SSSE3-NEXT: psubusw %xmm0, %xmm1
-; SSSE3-NEXT: movdqu %xmm1, (%rdi)
-; SSSE3-NEXT: retq
 
-; AVX1: @test3
-; AVX1:      # BB#0:
-; AVX1-NEXT: vmovd %esi, %xmm0
-; AVX1-NEXT: vpshufb {{.*#+}} xmm0 = xmm0[0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1]
-; AVX1-NEXT: vmovdqu (%rdi), %xmm1
-; AVX1-NEXT: vpsubusw %xmm0, %xmm1, %xmm0
-; AVX1-NEXT: vmovdqu %xmm0, (%rdi)
-; AVX1-NEXT: retq
 
-; AVX2: @test3
-; AVX2:      # BB#0:
-; AVX2-NEXT: vmovd %esi, %xmm0
-; AVX2-NEXT: vpbroadcastw %xmm0, %xmm0
-; AVX2-NEXT: vmovdqu (%rdi), %xmm1
-; AVX2-NEXT: vpsubusw %xmm0, %xmm1, %xmm0
-; AVX2-NEXT: vmovdqu %xmm0, (%rdi)
-; AVX2-NEXT: retq
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 define void @test4(i8* nocapture %head) nounwind {
@@ -123,26 +123,26 @@ vector.ph:
   store <16 x i8> %5, <16 x i8>* %1, align 1
   ret void
 
-; SSSE3: @test4
-; SSSE3:      # BB#0:
-; SSSE3-NEXT: movdqu (%rdi), %xmm0
-; SSSE3-NEXT: psubusb LCPI3_0(%rip), %xmm0
-; SSSE3-NEXT: movdqu %xmm0, (%rdi)
-; SSSE3-NEXT: retq
 
-; AVX1: @test4
-; AVX1:      # BB#0:
-; AVX1-NEXT: vmovdqu (%rdi), %xmm0
-; AVX1-NEXT: vpsubusb LCPI3_0(%rip), %xmm0, %xmm0
-; AVX1-NEXT: vmovdqu %xmm0, (%rdi)
-; AVX1-NEXT: retq
 
-; AVX2: @test4
-; AVX2:      # BB#0:
-; AVX2-NEXT: vmovdqu (%rdi), %xmm0
-; AVX2-NEXT: vpsubusb LCPI3_0(%rip), %xmm0, %xmm0
-; AVX2-NEXT: vmovdqu %xmm0, (%rdi)
-; AVX2-NEXT: retq
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 define void @test5(i8* nocapture %head) nounwind {
@@ -156,26 +156,26 @@ vector.ph:
   store <16 x i8> %5, <16 x i8>* %1, align 1
   ret void
 
-; SSSE3: @test5
-; SSSE3:      # BB#0:
-; SSSE3-NEXT: movdqu (%rdi), %xmm0
-; SSSE3-NEXT: psubusb LCPI4_0(%rip), %xmm0
-; SSSE3-NEXT: movdqu %xmm0, (%rdi)
-; SSSE3-NEXT: retq
 
-; AVX1: @test5
-; AVX1:      # BB#0:
-; AVX1-NEXT: vmovdqu (%rdi), %xmm0
-; AVX1-NEXT: vpsubusb LCPI4_0(%rip), %xmm0
-; AVX1-NEXT: vmovdqu %xmm0, (%rdi)
-; AVX1-NEXT: retq
 
-; AVX2: @test5
-; AVX2:      # BB#0:
-; AVX2-NEXT: vmovdqu (%rdi), %xmm0
-; AVX2-NEXT: vpsubusb LCPI4_0(%rip), %xmm0
-; AVX2-NEXT: vmovdqu %xmm0, (%rdi)
-; AVX2-NEXT: retq
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 define void @test6(i8* nocapture %head, i8 zeroext %w) nounwind {
@@ -191,34 +191,34 @@ vector.ph:
   store <16 x i8> %6, <16 x i8>* %2, align 1
   ret void
 
-; SSSE3: @test6
-; SSSE3:      # BB#0:
-; SSSE3-NEXT: movd %esi, %xmm0
-; SSSE3-NEXT: pxor %xmm1, %xmm1
-; SSSE3-NEXT: pshufb %xmm1, %xmm0
-; SSSE3-NEXT: movdqu (%rdi), %xmm1
-; SSSE3-NEXT: psubusb %xmm0, %xmm1
-; SSSE3-NEXT: movdqu %xmm1, (%rdi)
-; SSSE3-NEXT: retq
 
-; AVX1: @test6
-; AVX1:      # BB#0:
-; AVX1-NEXT: vmovd %esi, %xmm0
-; AVX1-NEXT: vpxor %xmm1, %xmm1
-; AVX1-NEXT: vpshufb %xmm1, %xmm0
-; AVX1-NEXT: vmovdqu (%rdi), %xmm1
-; AVX1-NEXT: vpsubusb %xmm0, %xmm1, %xmm0
-; AVX1-NEXT: vmovdqu %xmm0, (%rdi)
-; AVX1-NEXT: retq
 
-; AVX2: @test6
-; AVX2:      # BB#0:
-; AVX2-NEXT: vmovd %esi, %xmm0
-; AVX2-NEXT: vpbroadcastb %xmm0, %xmm0
-; AVX2-NEXT: vmovdqu (%rdi), %xmm1
-; AVX2-NEXT: vpsubusb %xmm0, %xmm1, %xmm0
-; AVX2-NEXT: vmovdqu %xmm0, (%rdi)
-; AVX2-NEXT: retq
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 define void @test7(i16* nocapture %head) nounwind {
@@ -232,13 +232,13 @@ vector.ph:
   store <16 x i16> %5, <16 x i16>* %1, align 2
   ret void
 
-; AVX2: @test7
-; AVX2:      # BB#0:
-; AVX2-NEXT: vmovdqu (%rdi), %ymm0
-; AVX2-NEXT: vpsubusw LCPI6_0(%rip), %ymm0, %ymm0
-; AVX2-NEXT: vmovdqu %ymm0, (%rdi)
-; AVX2-NEXT: vzeroupper
-; AVX2-NEXT: retq
+
+
+
+
+
+
+
 }
 
 define void @test8(i16* nocapture %head) nounwind {
@@ -252,13 +252,13 @@ vector.ph:
   store <16 x i16> %5, <16 x i16>* %1, align 2
   ret void
 
-; AVX2: @test8
-; AVX2:      # BB#0:
-; AVX2-NEXT: vmovdqu (%rdi), %ymm0
-; AVX2-NEXT: vpsubusw LCPI7_0(%rip), %ymm0, %ymm0
-; AVX2-NEXT: vmovdqu %ymm0, (%rdi)
-; AVX2-NEXT: vzeroupper
-; AVX2-NEXT: retq
+
+
+
+
+
+
+
 }
 
 define void @test9(i16* nocapture %head, i16 zeroext %w) nounwind {
@@ -274,15 +274,15 @@ vector.ph:
   store <16 x i16> %6, <16 x i16>* %2, align 2
   ret void
 
-; AVX2: @test9
-; AVX2:      # BB#0:
-; AVX2-NEXT: vmovd %esi, %xmm0
-; AVX2-NEXT: vpbroadcastw %xmm0, %ymm0
-; AVX2-NEXT: vmovdqu (%rdi), %ymm1
-; AVX2-NEXT: vpsubusw %ymm0, %ymm1, %ymm0
-; AVX2-NEXT: vmovdqu %ymm0, (%rdi)
-; AVX2-NEXT: vzeroupper
-; AVX2-NEXT: retq
+
+
+
+
+
+
+
+
+
 }
 
 define void @test10(i8* nocapture %head) nounwind {
@@ -296,13 +296,13 @@ vector.ph:
   store <32 x i8> %5, <32 x i8>* %1, align 1
   ret void
 
-; AVX2: @test10
-; AVX2:      # BB#0:
-; AVX2-NEXT: vmovdqu (%rdi), %ymm0
-; AVX2-NEXT: vpsubusb LCPI9_0(%rip), %ymm0, %ymm0
-; AVX2-NEXT: vmovdqu %ymm0, (%rdi)
-; AVX2-NEXT: vzeroupper
-; AVX2-NEXT: retq
+
+
+
+
+
+
+
 }
 
 define void @test11(i8* nocapture %head) nounwind {
@@ -316,13 +316,13 @@ vector.ph:
   store <32 x i8> %5, <32 x i8>* %1, align 1
   ret void
 
-; AVX2: @test11
-; AVX2:      # BB#0:
-; AVX2-NEXT: vmovdqu (%rdi), %ymm0
-; AVX2-NEXT: vpsubusb LCPI10_0(%rip), %ymm0, %ymm0
-; AVX2-NEXT: vmovdqu %ymm0, (%rdi)
-; AVX2-NEXT: vzeroupper
-; AVX2-NEXT: retq
+
+
+
+
+
+
+
 }
 
 define void @test12(i8* nocapture %head, i8 zeroext %w) nounwind {
@@ -338,13 +338,13 @@ vector.ph:
   store <32 x i8> %6, <32 x i8>* %2, align 1
   ret void
 
-; AVX2: @test12
-; AVX2:      # BB#0:
-; AVX2-NEXT: vmovd %esi, %xmm0
-; AVX2-NEXT: vpbroadcastb %xmm0, %ymm0
-; AVX2-NEXT: vmovdqu (%rdi), %ymm1
-; AVX2-NEXT: vpsubusb %ymm0, %ymm1, %ymm0
-; AVX2-NEXT: vmovdqu %ymm0, (%rdi)
-; AVX2-NEXT: vzeroupper
-; AVX2-NEXT: retq
+
+
+
+
+
+
+
+
+
 }

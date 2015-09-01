@@ -1,8 +1,8 @@
-; RUN: llc < %s -mtriple=thumbv7-apple-ios -relocation-model=pic -mcpu=cortex-a8 | FileCheck %s
 
-; Do not move the umull above previous call which would require use of
-; more callee-saved registers and introduce copies.
-; rdar://9329627
+
+
+
+
 
 %struct.FF = type { i32 (i32*)*, i32 (i32*, i32*, i32, i32, i32, i32)*, i32 (i32, i32, i8*)*, void ()*, i32 (i32, i8*, i32*)*, i32 ()* }
 %struct.BD = type { %struct.BD*, i32, i32, i32, i32, i64, i32 (%struct.BD*, i8*, i64, i32)*, i32 (%struct.BD*, i8*, i32, i32)*, i32 (%struct.BD*, i8*, i64, i32)*, i32 (%struct.BD*, i8*, i32, i32)*, i32 (%struct.BD*, i64, i32)*, [16 x i8], i64, i64 }
@@ -15,9 +15,9 @@
 
 define i32 @test() nounwind optsize ssp {
 entry:
-; CHECK-LABEL: test:
-; CHECK: push
-; CHECK-NOT: push
+
+
+
   %block_size = alloca i32, align 4
   %block_count = alloca i32, align 4
   %index_cache = alloca i32, align 4
@@ -36,11 +36,11 @@ bb:
   br i1 %tmp4, label %bb1, label %bb8
 
 bb1:
-; CHECK: %bb1
-; CHECK-NOT: umull
-; CHECK: blx _Get
-; CHECK: umull
-; CHECK: blx _foo
+
+
+
+
+
   %tmp5 = load i32, i32* %block_size, align 4
   %tmp6 = load i32, i32* %block_count, align 4
   %tmp7 = call %struct.FF* @Get() nounwind

@@ -1,15 +1,15 @@
-; RUN: opt -S < %s -loop-unroll -block-freq | FileCheck %s
-; Crasher from PR20987.
 
-; CHECK: define void @update_loop_info_in_subloops
-; CHECK: entry:
-; CHECK: L:
-; CHECK: L.inner:
-; CHECK: L.inner.latch:
-; CHECK: L.latch:
-; CHECK: L.inner.1:
-; CHECK: L.inner.latch.1:
-; CHECK: L.latch.1:
+
+
+
+
+
+
+
+
+
+
+
 
 define void @update_loop_info_in_subloops() {
 entry:

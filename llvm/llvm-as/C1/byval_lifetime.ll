@@ -1,8 +1,8 @@
-; RUN: opt -S -inline < %s | FileCheck %s
-; END.
 
-; By inlining foo, an alloca is created in main to hold the byval argument, so
-; a lifetime marker should be generated as well by default.
+
+
+
+
 
 %struct.foo = type { i32, [16 x i32] }
 
@@ -17,9 +17,9 @@ entry:
 }
 
 define i32 @main(i32 %argc, i8** %argv) {
-; CHECK-LABEL: @main
-; CHECK: llvm.lifetime.start
-; CHECK: memcpy
+
+
+
 entry:
   %call = call i32 @foo(%struct.foo* byval align 8 @gFoo, i32 %argc)
   ret i32 %call

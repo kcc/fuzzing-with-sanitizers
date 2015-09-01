@@ -1,7 +1,7 @@
-; RUN: llc < %s -mtriple=x86_64-apple-macosx -regalloc=greedy | FileCheck %s
 
-; This testing case is reduced from 254.gap SyFgets funciton.
-; We make sure a spill is not hoisted to a hotter outer loop.
+
+
+
 
 %struct.TMP.1 = type { %struct.TMP.2*, %struct.TMP.2*, [1024 x i8] }
 %struct.TMP.2 = type { i8*, i32, i32, i16, i16, %struct.TMP.3, i32, i8*, i32 (i8*)*, i32 (i8*, i8*, i32)*, i64 (i8*, i64, i32)*, i32 (i8*, i8*, i32)*, %struct.TMP.3, %struct.TMP.4*, i32, [3 x i8], [1 x i8], %struct.TMP.3, i32, i64 }
@@ -13,7 +13,7 @@
 @SyFgets.yank = external global [512 x i8], align 16
 @syCTRO = external global i32, align 4
 
-; CHECK-LABEL: SyFgets
+
 define i8* @SyFgets(i8* %line, i64 %length, i64 %fid) {
 entry:
   %sub.ptr.rhs.cast646 = ptrtoint i8* %line to i64
@@ -199,10 +199,10 @@ land.lhs.true490:
   br i1 false, label %lor.rhs500, label %do.body479.backedge
 
 lor.rhs500:
-  ; CHECK: lor.rhs500
-  ; Make sure that we don't hoist the spill to outer loops.
-  ; CHECK: movq %r{{.*}}, {{[0-9]+}}(%rsp)
-  ; CHECK: callq {{.*}}maskrune
+  
+  
+  
+  
   %call3.i.i2792 = call i32 @__maskrune(i32 undef, i64 256)
   br i1 undef, label %land.lhs.true504, label %do.body479.backedge
 

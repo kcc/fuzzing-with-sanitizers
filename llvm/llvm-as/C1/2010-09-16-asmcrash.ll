@@ -1,5 +1,5 @@
-; RUN: llc < %s -mtriple=x86_64-unknown-freebsd8.1 -o /dev/null
-; This formerly crashed, PR 8154.
+
+
 
 module asm ".weak sem_close"
 module asm ".equ sem_close, _sem_close"
@@ -29,27 +29,27 @@ define void @_sem_timedwait(%struct._sem* noalias %sem) nounwind ssp {
 entry:
   br i1 undef, label %while.cond.preheader, label %sem_check_validity.exit
 
-while.cond.preheader:                             ; preds = %entry
+while.cond.preheader:                             
   %tmp4 = getelementptr inbounds %struct._sem, %struct._sem* %sem, i64 0, i32 1, i32 1
   br label %while.cond
 
-sem_check_validity.exit:                          ; preds = %entry
+sem_check_validity.exit:                          
   ret void
 
-while.cond:                                       ; preds = %while.body, %while.cond.preheader
+while.cond:                                       
   br i1 undef, label %while.body, label %while.end
 
-while.body:                                       ; preds = %while.cond
-  %0 = call i8 asm sideeffect "\09lock ; \09\09\09cmpxchgl $2,$1 ;\09       sete\09$0 ;\09\091:\09\09\09\09# atomic_cmpset_int", "={ax},=*m,r,{ax},*m,~{memory},~{dirflag},~{fpsr},~{flags}"(i32* %tmp4, i32 undef, i32 undef, i32* %tmp4) nounwind, !srcloc !0
+while.body:                                       
+  %0 = call i8 asm sideeffect "\09lock 
   br i1 undef, label %while.cond, label %return
 
-while.end:                                        ; preds = %while.cond
+while.end:                                        
   br i1 undef, label %if.end18, label %return
 
-if.end18:                                         ; preds = %while.end
+if.end18:                                         
   unreachable
 
-return:                                           ; preds = %while.end, %while.body
+return:                                           
   ret void
 }
 

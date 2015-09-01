@@ -1,4 +1,4 @@
-; RUN: opt -S -loop-reduce -mcpu=corei7-avx -mtriple=x86_64-apple-macosx < %s | FileCheck %s
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 
@@ -6,14 +6,14 @@ define void @indvar_expansion(i8* nocapture readonly %rowsptr) {
 entry:
   br label %for.cond
 
-; SCEVExpander used to create induction variables in the loop %for.cond while
-; expanding the recurrence start value of loop strength reduced values from
-; %vector.body.
 
-; CHECK-LABEL: indvar_expansion
-; CHECK: for.cond:
-; CHECK-NOT: phi i3
-; CHECK: br i1 {{.+}}, label %for.cond
+
+
+
+
+
+
+
 
 for.cond:
   %indvars.iv44 = phi i64 [ %indvars.iv.next45, %for.cond ], [ 0, %entry ]

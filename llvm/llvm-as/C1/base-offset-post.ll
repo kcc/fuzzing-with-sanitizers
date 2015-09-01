@@ -1,12 +1,12 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv5 < %s
-; REQUIRES: asserts
 
-; Test that the accessSize is set on a post-increment store. If not, an assert
-; is triggered in getBaseAndOffset()
+
+
+
+
 
 %struct.A = type { i8, i32, i32, i32, [10 x i32], [10 x i32], [80 x i32], [80 x i32], [8 x i32], i32, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 }
 
-; Function Attrs: nounwind
+
 define fastcc void @Decoder_amr(i8 zeroext %mode) #0 {
 entry:
   br label %for.cond64.preheader.i

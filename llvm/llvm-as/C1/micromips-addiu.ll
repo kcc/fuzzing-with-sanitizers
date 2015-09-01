@@ -1,5 +1,5 @@
-; RUN: llc -march=mipsel -mcpu=mips32r2 -mattr=+micromips \
-; RUN:   -relocation-model=pic -O3 < %s | FileCheck %s
+
+
 
 @x = global i32 65504, align 4
 @y = global i32 60929, align 4
@@ -27,6 +27,6 @@ entry:
 
 declare i32 @printf(i8*, ...)
 
-; CHECK: addius5  ${{[0-9]+}}, -7
-; CHECK: addiu    ${{[0-9]+}}, ${{[0-9]+}}, 55
-; CHECK: addiur2  ${{[2-7]|16|17}}, ${{[2-7]|16|17}}, 24
+
+
+

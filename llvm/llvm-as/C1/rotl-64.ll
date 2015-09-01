@@ -1,6 +1,6 @@
-; RUN: llc < %s -march=ppc64 | grep rotld
-; RUN: llc < %s -march=ppc64 | grep rotldi
-; PR1613
+
+
+
 
 define i64 @t1(i64 %A) {
 	%tmp1 = lshr i64 %A, 57

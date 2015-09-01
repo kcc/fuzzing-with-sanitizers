@@ -1,5 +1,5 @@
-; RUN: opt -mergefunc -disable-output < %s
-; This used to crash.
+
+
 
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64-f80:32:32-n8:16:32"
 target triple = "i386-pc-linux-gnu"
@@ -48,20 +48,20 @@ entry:
   %7 = icmp eq %"struct.kc::impl_casestring__Str"* %6, null
   br i1 %7, label %bb, label %bb1
 
-bb:                                               ; preds = %entry
+bb:                                               
   %8 = invoke %"struct.kc::impl_casestring__Str"* @_ZN2kc12mkcasestringEPKci()
           to label %invcont unwind label %lpad
 
-invcont:                                          ; preds = %bb
+invcont:                                          
   store %"struct.kc::impl_casestring__Str"* %8, %"struct.kc::impl_casestring__Str"** %iftmp.99, align 4
   br label %bb2
 
-bb1:                                              ; preds = %entry
+bb1:                                              
   %9 = load %"struct.kc::impl_casestring__Str"*, %"struct.kc::impl_casestring__Str"** %_file_addr, align 4
   store %"struct.kc::impl_casestring__Str"* %9, %"struct.kc::impl_casestring__Str"** %iftmp.99, align 4
   br label %bb2
 
-bb2:                                              ; preds = %bb1, %invcont
+bb2:                                              
   %10 = load %"struct.kc::impl_fileline_FileLine"*, %"struct.kc::impl_fileline_FileLine"** %this_addr, align 4
   %11 = getelementptr inbounds %"struct.kc::impl_fileline_FileLine", %"struct.kc::impl_fileline_FileLine"* %10, i32 0, i32 0
   %12 = getelementptr inbounds %"struct.kc::impl_fileline", %"struct.kc::impl_fileline"* %11, i32 0, i32 1
@@ -74,7 +74,7 @@ bb2:                                              ; preds = %bb1, %invcont
   store i32 %17, i32* %16, align 4
   ret void
 
-lpad:                                             ; preds = %bb
+lpad:                                             
   %eh_ptr = landingpad { i8*, i32 }
               cleanup
   %exn = extractvalue { i8*, i32 } %eh_ptr, 0
@@ -113,13 +113,13 @@ entry:
   %toBool = icmp ne i8 %3, 0
   br i1 %toBool, label %bb1, label %return
 
-bb1:                                              ; preds = %entry
+bb1:                                              
   %4 = load %"struct.kc::impl_fileline"*, %"struct.kc::impl_fileline"** %this_addr, align 4
   %5 = bitcast %"struct.kc::impl_fileline"* %4 to i8*
   call void @_ZdlPv() nounwind
   br label %return
 
-return:                                           ; preds = %bb1, %entry
+return:                                           
   ret void
 }
 
@@ -138,13 +138,13 @@ entry:
   %toBool = icmp ne i8 %3, 0
   br i1 %toBool, label %bb1, label %return
 
-bb1:                                              ; preds = %entry
+bb1:                                              
   %4 = load %"struct.kc::impl_fileline"*, %"struct.kc::impl_fileline"** %this_addr, align 4
   %5 = bitcast %"struct.kc::impl_fileline"* %4 to i8*
   call void @_ZdlPv() nounwind
   br label %return
 
-return:                                           ; preds = %bb1, %entry
+return:                                           
   ret void
 }
 
@@ -174,20 +174,20 @@ entry:
   %7 = icmp eq %"struct.kc::impl_casestring__Str"* %6, null
   br i1 %7, label %bb, label %bb1
 
-bb:                                               ; preds = %entry
+bb:                                               
   %8 = invoke %"struct.kc::impl_casestring__Str"* @_ZN2kc12mkcasestringEPKci()
           to label %invcont unwind label %lpad
 
-invcont:                                          ; preds = %bb
+invcont:                                          
   store %"struct.kc::impl_casestring__Str"* %8, %"struct.kc::impl_casestring__Str"** %iftmp.99, align 4
   br label %bb2
 
-bb1:                                              ; preds = %entry
+bb1:                                              
   %9 = load %"struct.kc::impl_casestring__Str"*, %"struct.kc::impl_casestring__Str"** %_file_addr, align 4
   store %"struct.kc::impl_casestring__Str"* %9, %"struct.kc::impl_casestring__Str"** %iftmp.99, align 4
   br label %bb2
 
-bb2:                                              ; preds = %bb1, %invcont
+bb2:                                              
   %10 = load %"struct.kc::impl_fileline_FileLine"*, %"struct.kc::impl_fileline_FileLine"** %this_addr, align 4
   %11 = getelementptr inbounds %"struct.kc::impl_fileline_FileLine", %"struct.kc::impl_fileline_FileLine"* %10, i32 0, i32 0
   %12 = getelementptr inbounds %"struct.kc::impl_fileline", %"struct.kc::impl_fileline"* %11, i32 0, i32 1
@@ -200,7 +200,7 @@ bb2:                                              ; preds = %bb1, %invcont
   store i32 %17, i32* %16, align 4
   ret void
 
-lpad:                                             ; preds = %bb
+lpad:                                             
   %eh_ptr = landingpad { i8*, i32 }
               cleanup
   %exn = extractvalue { i8*, i32 } %eh_ptr, 0

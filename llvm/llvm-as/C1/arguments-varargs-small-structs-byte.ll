@@ -1,126 +1,126 @@
-; RUN: llc --march=mips64 -mcpu=mips64r2 < %s | FileCheck %s
 
-; Generated from the C program:
-; 
-; #include <stdio.h>
-; #include <string.h>
-; 
-; struct SmallStruct_1b {
-;  char x1;
-; };
-; 
-; struct SmallStruct_2b {
-;  char x1;
-;  char x2;
-; };
-; 
-; struct SmallStruct_3b {
-;  char x1;
-;  char x2;
-;  char x3;
-; };
-; 
-; struct SmallStruct_4b {
-;  char x1;
-;  char x2;
-;  char x3;
-;  char x4;
-; };
-; 
-; struct SmallStruct_5b {
-;  char x1;
-;  char x2;
-;  char x3;
-;  char x4;
-;  char x5;
-; };
-; 
-; struct SmallStruct_6b {
-;  char x1;
-;  char x2;
-;  char x3;
-;  char x4;
-;  char x5;
-;  char x6;
-; };
-; 
-; struct SmallStruct_7b {
-;  char x1;
-;  char x2;
-;  char x3;
-;  char x4;
-;  char x5;
-;  char x6;
-;  char x7;
-; };
-; 
-; struct SmallStruct_8b {
-;  char x1;
-;  char x2;
-;  char x3;
-;  char x4;
-;  char x5;
-;  char x6;
-;  char x7;
-;  char x8;
-; };
-; 
-; struct SmallStruct_9b {
-;  char x1;
-;  char x2;
-;  char x3;
-;  char x4;
-;  char x5;
-;  char x6;
-;  char x7;
-;  char x8;
-;  char x9;
-; };
-; 
-; void varArgF_SmallStruct(char* c, ...);
-; 
-; void smallStruct_1b(struct SmallStruct_1b* ss) {
-;  varArgF_SmallStruct("", *ss);
-; }
-; 
-; void smallStruct_2b(struct SmallStruct_2b* ss) {
-;  varArgF_SmallStruct("", *ss);
-; }
-; 
-; void smallStruct_3b(struct SmallStruct_3b* ss)
-; {
-;  varArgF_SmallStruct("", *ss);
-; }
-; 
-; void smallStruct_4b(struct SmallStruct_4b* ss)
-; {
-;  varArgF_SmallStruct("", *ss);
-; }
-; 
-; void smallStruct_5b(struct SmallStruct_5b* ss) 
-; {
-;  varArgF_SmallStruct("", *ss);
-; }
-; 
-; void smallStruct_6b(struct SmallStruct_6b* ss) 
-; {
-;  varArgF_SmallStruct("", *ss);
-; }
-; 
-; void smallStruct_7b(struct SmallStruct_7b* ss) 
-; {
-;  varArgF_SmallStruct("", *ss);
-; }
-; 
-; void smallStruct_8b(struct SmallStruct_8b* ss) 
-; {
-;  varArgF_SmallStruct("", *ss);
-; }
-; 
-; void smallStruct_9b(struct SmallStruct_9b* ss) 
-; {
-;  varArgF_SmallStruct("", *ss);
-; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %struct.SmallStruct_1b = type { i8 }
 %struct.SmallStruct_2b = type { i8, i8 }
@@ -146,8 +146,8 @@ entry:
   %3 = load i8, i8* %2, align 1
   call void (i8*, ...) @varArgF_SmallStruct(i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str, i32 0, i32 0), i8 inreg %3)
   ret void
- ; CHECK-LABEL: smallStruct_1b: 
- ; CHECK: dsll $[[R1:[0-9]+]], $[[R2:[0-9]+]], 56
+ 
+ 
 }
 
 define void @smallStruct_2b(%struct.SmallStruct_2b* %ss) #0 {
@@ -160,8 +160,8 @@ entry:
   %3 = load i16, i16* %2, align 1
   call void (i8*, ...) @varArgF_SmallStruct(i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str, i32 0, i32 0), i16 inreg %3)
   ret void
- ; CHECK-LABEL: smallStruct_2b:
- ; CHECK: dsll $[[R1:[0-9]+]], $[[R2:[0-9]+]], 48
+ 
+ 
 }
 
 define void @smallStruct_3b(%struct.SmallStruct_3b* %ss) #0 {
@@ -177,8 +177,8 @@ entry:
   %4 = load i24, i24* %3, align 1
   call void (i8*, ...) @varArgF_SmallStruct(i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str, i32 0, i32 0), i24 inreg %4)
   ret void
- ; CHECK-LABEL: smallStruct_3b:
- ; CHECK: dsll $[[R1:[0-9]+]], $[[R2:[0-9]+]], 40
+ 
+ 
 }
 
 declare void @llvm.memcpy.p0i8.p0i8.i64(i8* nocapture, i8* nocapture readonly, i64, i32, i1) #1
@@ -193,8 +193,8 @@ entry:
   %3 = load i32, i32* %2, align 1
   call void (i8*, ...) @varArgF_SmallStruct(i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str, i32 0, i32 0), i32 inreg %3)
   ret void
- ; CHECK-LABEL: smallStruct_4b:
- ; CHECK: dsll $[[R1:[0-9]+]], $[[R2:[0-9]+]], 32
+ 
+ 
 }
 
 define void @smallStruct_5b(%struct.SmallStruct_5b* %ss) #0 {
@@ -210,8 +210,8 @@ entry:
   %4 = load i40, i40* %3, align 1
   call void (i8*, ...) @varArgF_SmallStruct(i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str, i32 0, i32 0), i40 inreg %4)
   ret void
- ; CHECK-LABEL: smallStruct_5b:
- ; CHECK: dsll $[[R1:[0-9]+]], $[[R2:[0-9]+]], 24
+ 
+ 
 }
 
 define void @smallStruct_6b(%struct.SmallStruct_6b* %ss) #0 {
@@ -227,8 +227,8 @@ entry:
   %4 = load i48, i48* %3, align 1
   call void (i8*, ...) @varArgF_SmallStruct(i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str, i32 0, i32 0), i48 inreg %4)
   ret void
- ; CHECK-LABEL: smallStruct_6b:
- ; CHECK: dsll $[[R1:[0-9]+]], $[[R2:[0-9]+]], 16
+ 
+ 
 }
 
 define void @smallStruct_7b(%struct.SmallStruct_7b* %ss) #0 {
@@ -244,8 +244,8 @@ entry:
   %4 = load i56, i56* %3, align 1
   call void (i8*, ...) @varArgF_SmallStruct(i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str, i32 0, i32 0), i56 inreg %4)
   ret void
- ; CHECK-LABEL: smallStruct_7b:
- ; CHECK: dsll $[[R1:[0-9]+]], $[[R2:[0-9]+]], 8
+ 
+ 
 }
 
 define void @smallStruct_8b(%struct.SmallStruct_8b* %ss) #0 {
@@ -258,8 +258,8 @@ entry:
   %3 = load i64, i64* %2, align 1
   call void (i8*, ...) @varArgF_SmallStruct(i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str, i32 0, i32 0), i64 inreg %3)
   ret void
- ; CHECK-LABEL: smallStruct_8b:
- ; CHECK-NOT: dsll
+ 
+ 
 }
 
 define void @smallStruct_9b(%struct.SmallStruct_9b* %ss) #0 {
@@ -277,6 +277,6 @@ entry:
   %6 = load i8, i8* %5, align 1
   call void (i8*, ...) @varArgF_SmallStruct(i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str, i32 0, i32 0), i64 inreg %4, i8 inreg %6)
   ret void
- ; CHECK-LABEL: smallStruct_9b:
- ; CHECK: dsll $[[R1:[0-9]+]], $[[R2:[0-9]+]], 56
+ 
+ 
 }

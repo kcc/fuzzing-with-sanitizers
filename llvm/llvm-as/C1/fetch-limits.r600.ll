@@ -1,11 +1,11 @@
-; RUN: llc < %s -march=r600 -mcpu=r600 | FileCheck %s
-; RUN: llc < %s -march=r600 -mcpu=rs880 | FileCheck %s
-; RUN: llc < %s -march=r600 -mcpu=rv670 | FileCheck %s
 
-; R600 supports 8 fetches in a clause
-; CHECK: {{^}}fetch_limits_r600:
-; CHECK: Fetch clause
-; CHECK: Fetch clause
+
+
+
+
+
+
+
 
 define void @fetch_limits_r600() #0 {
 entry:
@@ -42,7 +42,7 @@ entry:
   ret void
 }
 
-attributes #0 = { "ShaderType"="0" } ; Pixel Shader
+attributes #0 = { "ShaderType"="0" } 
 
 declare <4 x float> @llvm.AMDGPU.tex(<4 x float>, i32, i32, i32) readnone
 declare void @llvm.R600.store.swizzle(<4 x float>, i32, i32)

@@ -1,4 +1,4 @@
-; RUN: llc < %s | grep LJT
+
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128"
 target triple = "x86_64-apple-darwin10"
 
@@ -67,107 +67,107 @@ RETURN:
         call void @f1()
         br label %EXIT
 
-RRETURN_2:		; preds = %bb49
+RRETURN_2:		
         call void @f2()
         br label %EXIT
 
-RRETURN_6:		; preds = %bb49
+RRETURN_6:		
         call void @f2()
         br label %EXIT
 
-RRETURN_7:		; preds = %bb49
+RRETURN_7:		
         call void @f3()
         br label %EXIT
 
-RRETURN_14:		; preds = %bb49
+RRETURN_14:		
         call void @f4()
         br label %EXIT
 
-RRETURN_15:		; preds = %bb49
+RRETURN_15:		
         call void @f5()
         br label %EXIT
 
-RRETURN_16:		; preds = %bb49
+RRETURN_16:		
         call void @f6()
         br label %EXIT
 
-RRETURN_17:		; preds = %bb49
+RRETURN_17:		
         call void @f7()
         br label %EXIT
 
-RRETURN_18:		; preds = %bb49
+RRETURN_18:		
         call void @f8()
         br label %EXIT
 
-RRETURN_19:		; preds = %bb49
+RRETURN_19:		
         call void @f9()
         br label %EXIT
 
-RRETURN_20:		; preds = %bb49
+RRETURN_20:		
         call void @f10()
         br label %EXIT
 
-RRETURN_21:		; preds = %bb49
+RRETURN_21:		
         call void @f11()
         br label %EXIT
 
-RRETURN_22:		; preds = %bb49
+RRETURN_22:		
         call void @f12()
         br label %EXIT
 
-RRETURN_24:		; preds = %bb49
+RRETURN_24:		
         call void @f13()
         br label %EXIT
 
-RRETURN_26:		; preds = %bb49
+RRETURN_26:		
         call void @f14()
         br label %EXIT
 
-RRETURN_27:		; preds = %bb49
+RRETURN_27:		
         call void @f15()
         br label %EXIT
 
-RRETURN_28:		; preds = %bb49
+RRETURN_28:		
         call void @f16()
         br label %EXIT
 
-RRETURN_29:		; preds = %bb49
+RRETURN_29:		
         call void @f17()
         br label %EXIT
 
-RRETURN_30:		; preds = %bb49
+RRETURN_30:		
         call void @f18()
         br label %EXIT
 
-RRETURN_31:		; preds = %bb49
+RRETURN_31:		
         call void @f19()
         br label %EXIT
 
-RRETURN_38:		; preds = %bb49
+RRETURN_38:		
         call void @f20()
         br label %EXIT
 
-RRETURN_40:		; preds = %bb49
+RRETURN_40:		
         call void @f21()
         br label %EXIT
 
-RRETURN_42:		; preds = %bb49
+RRETURN_42:		
         call void @f22()
         br label %EXIT
 
-RRETURN_44:		; preds = %bb49
+RRETURN_44:		
         call void @f23()
         br label %EXIT
 
-RRETURN_48:		; preds = %bb49
+RRETURN_48:		
         call void @f24()
         br label %EXIT
 
-RRETURN_52:		; preds = %bb49
+RRETURN_52:		
         call void @f25()
         br label %EXIT
 
-RRETURN_1:		; preds = %bb49
+RRETURN_1:		
         call void @f26()
         br label %EXIT
 

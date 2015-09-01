@@ -1,14 +1,14 @@
-; RUN: opt -indvars -S < %s | FileCheck %s
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64"
 
 @X = external global [0 x double]
 
-; Indvars should be able to simplify simple comparisons involving
-; induction variables.
 
-; CHECK-LABEL: @foo(
-; CHECK: %cond = and i1 %tobool.not, true
+
+
+
+
 
 define void @foo(i64 %n, i32* nocapture %p) nounwind {
 entry:
@@ -40,10 +40,10 @@ return:
   ret void
 }
 
-; Don't eliminate an icmp that's contributing to the loop exit test though.
 
-; CHECK-LABEL: @_ZNK4llvm5APInt3ultERKS0_(
-; CHECK: %tmp99 = icmp sgt i32 %i, -1
+
+
+
 
 define i32 @_ZNK4llvm5APInt3ultERKS0_(i32 %tmp2.i1, i64** %tmp65, i64** %tmp73, i64** %tmp82, i64** %tmp90) {
 entry:
@@ -83,11 +83,11 @@ bb20.loopexit:
   ret i32 %tmp.0.ph
 }
 
-; Indvars should eliminate the icmp here.
 
-; CHECK-LABEL: @func_10(
-; CHECK-NOT: icmp
-; CHECK: ret void
+
+
+
+
 
 define void @func_10() nounwind {
 entry:
@@ -107,26 +107,26 @@ return:
   ret void
 }
 
-; PR14432
-; Indvars should not turn the second loop into an infinite one.
 
-; CHECK-LABEL: @func_11(
-; CHECK: %tmp5 = icmp slt i32 %__key6.0, 10
-; CHECK-NOT: br i1 true, label %noassert68, label %unrolledend
+
+
+
+
+
 
 define i32 @func_11() nounwind uwtable {
 entry:
   br label %forcond
 
-forcond:                                          ; preds = %noassert, %entry
+forcond:                                          
   %__key6.0 = phi i32 [ 2, %entry ], [ %tmp37, %noassert ]
   %tmp5 = icmp slt i32 %__key6.0, 10
   br i1 %tmp5, label %noassert, label %forcond38.preheader
 
-forcond38.preheader:                              ; preds = %forcond
+forcond38.preheader:                              
   br label %forcond38
 
-noassert:                                         ; preds = %forbody
+noassert:                                         
   %tmp13 = sdiv i32 -32768, %__key6.0
   %tmp2936 = shl i32 %tmp13, 24
   %sext23 = shl i32 %tmp13, 24
@@ -134,16 +134,16 @@ noassert:                                         ; preds = %forbody
   %tmp37 = add i32 %__key6.0, 1
   br i1 %tmp32, label %forcond, label %assert33
 
-assert33:                                         ; preds = %noassert
+assert33:                                         
   tail call void @llvm.trap()
   unreachable
 
-forcond38:                                        ; preds = %noassert68, %forcond38.preheader
+forcond38:                                        
   %__key8.0 = phi i32 [ %tmp81, %noassert68 ], [ 2, %forcond38.preheader ]
   %tmp46 = icmp slt i32 %__key8.0, 10
   br i1 %tmp46, label %noassert68, label %unrolledend
 
-noassert68:                                       ; preds = %forbody39
+noassert68:                                       
   %tmp57 = sdiv i32 -32768, %__key8.0
   %sext34 = shl i32 %tmp57, 16
   %sext21 = shl i32 %tmp57, 16
@@ -151,33 +151,33 @@ noassert68:                                       ; preds = %forbody39
   %tmp81 = add i32 %__key8.0, 1
   br i1 %tmp76, label %forcond38, label %assert77
 
-assert77:                                         ; preds = %noassert68
+assert77:                                         
   tail call void @llvm.trap()
   unreachable
 
-unrolledend:                                      ; preds = %forcond38
+unrolledend:                                      
   ret i32 0
 }
 
 declare void @llvm.trap() noreturn nounwind
 
-; In this case the second loop only has a single iteration, fold the header away
-; CHECK-LABEL: @func_12(
-; CHECK: %tmp5 = icmp slt i32 %__key6.0, 10
-; CHECK: br i1 true, label %noassert68, label %unrolledend
+
+
+
+
 define i32 @func_12() nounwind uwtable {
 entry:
   br label %forcond
 
-forcond:                                          ; preds = %noassert, %entry
+forcond:                                          
   %__key6.0 = phi i32 [ 2, %entry ], [ %tmp37, %noassert ]
   %tmp5 = icmp slt i32 %__key6.0, 10
   br i1 %tmp5, label %noassert, label %forcond38.preheader
 
-forcond38.preheader:                              ; preds = %forcond
+forcond38.preheader:                              
   br label %forcond38
 
-noassert:                                         ; preds = %forbody
+noassert:                                         
   %tmp13 = sdiv i32 -32768, %__key6.0
   %tmp2936 = shl i32 %tmp13, 24
   %sext23 = shl i32 %tmp13, 24
@@ -185,16 +185,16 @@ noassert:                                         ; preds = %forbody
   %tmp37 = add i32 %__key6.0, 1
   br i1 %tmp32, label %forcond, label %assert33
 
-assert33:                                         ; preds = %noassert
+assert33:                                         
   tail call void @llvm.trap()
   unreachable
 
-forcond38:                                        ; preds = %noassert68, %forcond38.preheader
+forcond38:                                        
   %__key8.0 = phi i32 [ %tmp81, %noassert68 ], [ 2, %forcond38.preheader ]
   %tmp46 = icmp slt i32 %__key8.0, 10
   br i1 %tmp46, label %noassert68, label %unrolledend
 
-noassert68:                                       ; preds = %forbody39
+noassert68:                                       
   %tmp57 = sdiv i32 -32768, %__key8.0
   %sext34 = shl i32 %tmp57, 16
   %sext21 = shl i32 %tmp57, 16
@@ -202,10 +202,10 @@ noassert68:                                       ; preds = %forbody39
   %tmp81 = add i32 %__key8.0, 1
   br i1 %tmp76, label %forcond38, label %assert77
 
-assert77:                                         ; preds = %noassert68
+assert77:                                         
   tail call void @llvm.trap()
   unreachable
 
-unrolledend:                                      ; preds = %forcond38
+unrolledend:                                      
   ret i32 0
 }

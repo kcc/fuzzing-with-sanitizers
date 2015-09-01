@@ -1,8 +1,8 @@
-; RUN: llc -O3 < %s | FileCheck %s
+
 target datalayout = "E-m:e-i64:64-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
 
-; Function Attrs: nounwind
+
 define void @foo(double %eps) #0 {
 entry:
   %0 = fmul fast double %eps, %eps
@@ -10,10 +10,10 @@ entry:
   tail call void @bar(double %div) #2
   unreachable
 
-; This used to crash because we'd call a function to compute instruction
-; latency not supported with itineraries.
-; CHECK-LABEL: @foo
-; CHECK: bar
+
+
+
+
 
 }
 

@@ -1,208 +1,208 @@
-; RUN: opt < %s -inline -prune-eh -disable-output
-; PR827
-@_ZTV8CRjii = internal global [1 x i32 (...)*] [ i32 (...)* @_ZN8CRjii12NlFeeEPN5Jr7sE ]		; <[1 x i32 (...)*]*> [#uses=0]
+
+
+@_ZTV8CRjii = internal global [1 x i32 (...)*] [ i32 (...)* @_ZN8CRjii12NlFeeEPN5Jr7sE ]		
 
 define internal i32 @_ZN8CRjii12NlFeeEPN5Jr7sE(...) {
 entry:
 	br i1 false, label %cond_true, label %cond_false179
 
-cond_true:		; preds = %entry
+cond_true:		
 	br label %bb9
 
-bb:		; preds = %cond_true14
+bb:		
 	br label %bb9
 
-bb9:		; preds = %bb, %cond_true
+bb9:		
 	br i1 false, label %cond_true14, label %cond_false
 
-cond_true14:		; preds = %bb9
+cond_true14:		
 	br label %bb
 
-cond_false:		; preds = %bb9
+cond_false:		
 	br label %bb15
 
-cond_next:		; No predecessors!
+cond_next:		
 	br label %bb15
 
-bb15:		; preds = %cond_next, %cond_false
+bb15:		
 	br label %bb24
 
-bb17:		; preds = %cond_true29
+bb17:		
 	br label %bb24
 
-bb24:		; preds = %bb17, %bb15
+bb24:		
 	br i1 false, label %cond_true29, label %cond_false30
 
-cond_true29:		; preds = %bb24
+cond_true29:		
 	br label %bb17
 
-cond_false30:		; preds = %bb24
+cond_false30:		
 	br label %bb32
 
-cond_next31:		; No predecessors!
+cond_next31:		
 	br label %bb32
 
-bb32:		; preds = %cond_next31, %cond_false30
+bb32:		
 	br label %bb41
 
-bb34:		; preds = %cond_true46
+bb34:		
 	br label %bb41
 
-bb41:		; preds = %bb34, %bb32
+bb41:		
 	br i1 false, label %cond_true46, label %cond_false47
 
-cond_true46:		; preds = %bb41
+cond_true46:		
 	br label %bb34
 
-cond_false47:		; preds = %bb41
+cond_false47:		
 	br label %bb49
 
-cond_next48:		; No predecessors!
+cond_next48:		
 	br label %bb49
 
-bb49:		; preds = %cond_next48, %cond_false47
+bb49:		
 	br label %bb58
 
-bb51:		; preds = %cond_true63
+bb51:		
 	br label %bb58
 
-bb58:		; preds = %bb51, %bb49
+bb58:		
 	br i1 false, label %cond_true63, label %cond_false64
 
-cond_true63:		; preds = %bb58
+cond_true63:		
 	br label %bb51
 
-cond_false64:		; preds = %bb58
+cond_false64:		
 	br label %bb66
 
-cond_next65:		; No predecessors!
+cond_next65:		
 	br label %bb66
 
-bb66:		; preds = %cond_next65, %cond_false64
+bb66:		
 	br label %bb76
 
-bb68:		; preds = %cond_true81
+bb68:		
 	br label %bb76
 
-bb76:		; preds = %bb68, %bb66
+bb76:		
 	br i1 false, label %cond_true81, label %cond_false82
 
-cond_true81:		; preds = %bb76
+cond_true81:		
 	br label %bb68
 
-cond_false82:		; preds = %bb76
+cond_false82:		
 	br label %bb84
 
-cond_next83:		; No predecessors!
+cond_next83:		
 	br label %bb84
 
-bb84:		; preds = %cond_next83, %cond_false82
+bb84:		
 	br label %bb94
 
-bb86:		; preds = %cond_true99
+bb86:		
 	br label %bb94
 
-bb94:		; preds = %bb86, %bb84
+bb94:		
 	br i1 false, label %cond_true99, label %cond_false100
 
-cond_true99:		; preds = %bb94
+cond_true99:		
 	br label %bb86
 
-cond_false100:		; preds = %bb94
+cond_false100:		
 	br label %bb102
 
-cond_next101:		; No predecessors!
+cond_next101:		
 	br label %bb102
 
-bb102:		; preds = %cond_next101, %cond_false100
+bb102:		
 	br label %bb112
 
-bb104:		; preds = %cond_true117
+bb104:		
 	br label %bb112
 
-bb112:		; preds = %bb104, %bb102
+bb112:		
 	br i1 false, label %cond_true117, label %cond_false118
 
-cond_true117:		; preds = %bb112
+cond_true117:		
 	br label %bb104
 
-cond_false118:		; preds = %bb112
+cond_false118:		
 	br label %bb120
 
-cond_next119:		; No predecessors!
+cond_next119:		
 	br label %bb120
 
-bb120:		; preds = %cond_next119, %cond_false118
+bb120:		
 	br label %bb130
 
-bb122:		; preds = %cond_true135
+bb122:		
 	br label %bb130
 
-bb130:		; preds = %bb122, %bb120
+bb130:		
 	br i1 false, label %cond_true135, label %cond_false136
 
-cond_true135:		; preds = %bb130
+cond_true135:		
 	br label %bb122
 
-cond_false136:		; preds = %bb130
+cond_false136:		
 	br label %bb138
 
-cond_next137:		; No predecessors!
+cond_next137:		
 	br label %bb138
 
-bb138:		; preds = %cond_next137, %cond_false136
+bb138:		
 	br label %bb148
 
-bb140:		; preds = %cond_true153
+bb140:		
 	call fastcc void @_Zjrf1( )
 	br label %bb148
 
-bb148:		; preds = %bb140, %bb138
+bb148:		
 	br i1 false, label %cond_true153, label %cond_false154
 
-cond_true153:		; preds = %bb148
+cond_true153:		
 	br label %bb140
 
-cond_false154:		; preds = %bb148
+cond_false154:		
 	br label %bb156
 
-cond_next155:		; No predecessors!
+cond_next155:		
 	br label %bb156
 
-bb156:		; preds = %cond_next155, %cond_false154
+bb156:		
 	br label %bb166
 
-bb158:		; preds = %cond_true171
+bb158:		
 	br label %bb166
 
-bb166:		; preds = %bb158, %bb156
+bb166:		
 	br i1 false, label %cond_true171, label %cond_false172
 
-cond_true171:		; preds = %bb166
+cond_true171:		
 	br label %bb158
 
-cond_false172:		; preds = %bb166
+cond_false172:		
 	br label %bb174
 
-cond_next173:		; No predecessors!
+cond_next173:		
 	br label %bb174
 
-bb174:		; preds = %cond_next173, %cond_false172
+bb174:		
 	br label %cleanup
 
-cleanup:		; preds = %bb174
+cleanup:		
 	br label %finally
 
-finally:		; preds = %cleanup
+finally:		
 	br label %cond_next180
 
-cond_false179:		; preds = %entry
+cond_false179:		
 	br label %cond_next180
 
-cond_next180:		; preds = %cond_false179, %finally
+cond_next180:		
 	br label %return
 
-return:		; preds = %cond_next180
+return:		
 	ret i32 0
 }
 
@@ -210,27 +210,27 @@ define internal fastcc void @_Zjrf2() {
 entry:
 	br label %bb3
 
-bb:		; preds = %cond_true
+bb:		
 	br label %bb3
 
-bb3:		; preds = %bb, %entry
-	%tmp5 = load i8*, i8** null		; <i8*> [#uses=1]
-	%tmp = icmp ne i8* null, %tmp5		; <i1> [#uses=1]
+bb3:		
+	%tmp5 = load i8*, i8** null		
+	%tmp = icmp ne i8* null, %tmp5		
 	br i1 %tmp, label %cond_true, label %cond_false
 
-cond_true:		; preds = %bb3
+cond_true:		
 	br label %bb
 
-cond_false:		; preds = %bb3
+cond_false:		
 	br label %bb6
 
-cond_next:		; No predecessors!
+cond_next:		
 	br label %bb6
 
-bb6:		; preds = %cond_next, %cond_false
+bb6:		
 	br label %return
 
-return:		; preds = %bb6
+return:		
 	ret void
 }
 
@@ -239,7 +239,7 @@ entry:
 	call fastcc void @_Zjrf2( )
 	br label %return
 
-return:		; preds = %entry
+return:		
 	ret void
 }
 
@@ -247,35 +247,35 @@ define internal fastcc void @_Zjrf4() {
 entry:
 	br label %bb6
 
-bb:		; preds = %cond_true
+bb:		
 	br label %bb6
 
-bb6:		; preds = %bb, %entry
+bb6:		
 	br i1 false, label %cond_true, label %cond_false
 
-cond_true:		; preds = %bb6
+cond_true:		
 	br label %bb
 
-cond_false:		; preds = %bb6
+cond_false:		
 	br label %bb8
 
-cond_next:		; No predecessors!
+cond_next:		
 	br label %bb8
 
-bb8:		; preds = %cond_next, %cond_false
+bb8:		
 	br i1 false, label %cond_true9, label %cond_false12
 
-cond_true9:		; preds = %bb8
+cond_true9:		
 	call fastcc void @_Zjrf3( )
 	br label %cond_next13
 
-cond_false12:		; preds = %bb8
+cond_false12:		
 	br label %cond_next13
 
-cond_next13:		; preds = %cond_false12, %cond_true9
+cond_next13:		
 	br label %return
 
-return:		; preds = %cond_next13
+return:		
 	ret void
 }
 
@@ -284,7 +284,7 @@ entry:
 	call fastcc void @_Zjrf4( )
 	br label %return
 
-return:		; preds = %entry
+return:		
 	ret void
 }
 
@@ -293,7 +293,7 @@ entry:
 	call fastcc void @_Zjrf5( )
 	br label %return
 
-return:		; preds = %entry
+return:		
 	ret void
 }
 
@@ -301,29 +301,29 @@ define internal fastcc void @_Zjrf7() {
 entry:
 	br label %cleanup
 
-cleanup:		; preds = %entry
+cleanup:		
 	br label %finally
 
-finally:		; preds = %cleanup
+finally:		
 	call fastcc void @_Zjrf6( )
 	br label %cleanup9
 
-cleanup9:		; preds = %finally
+cleanup9:		
 	br label %finally8
 
-finally8:		; preds = %cleanup9
+finally8:		
 	br label %cleanup11
 
-cleanup11:		; preds = %finally8
+cleanup11:		
 	br label %finally10
 
-finally10:		; preds = %cleanup11
+finally10:		
 	br label %finally23
 
-finally23:		; preds = %finally10
+finally23:		
 	br label %return
 
-return:		; preds = %finally23
+return:		
 	ret void
 }
 
@@ -331,37 +331,37 @@ define internal fastcc void @_Zjrf11() {
 entry:
 	br label %bb7
 
-bb:		; preds = %cond_true
+bb:		
 	br label %bb7
 
-bb7:		; preds = %bb, %entry
+bb7:		
 	br i1 false, label %cond_true, label %cond_false
 
-cond_true:		; preds = %bb7
+cond_true:		
 	br label %bb
 
-cond_false:		; preds = %bb7
+cond_false:		
 	br label %bb9
 
-cond_next:		; No predecessors!
+cond_next:		
 	br label %bb9
 
-bb9:		; preds = %cond_next, %cond_false
+bb9:		
 	br label %return
-		; No predecessors!
+		
 	br i1 false, label %cond_true12, label %cond_false15
 
-cond_true12:		; preds = %0
+cond_true12:		
 	call fastcc void @_Zjrf3( )
 	br label %cond_next16
 
-cond_false15:		; preds = %0
+cond_false15:		
 	br label %cond_next16
 
-cond_next16:		; preds = %cond_false15, %cond_true12
+cond_next16:		
 	br label %return
 
-return:		; preds = %cond_next16, %bb9
+return:		
 	ret void
 }
 
@@ -370,7 +370,7 @@ entry:
 	call fastcc void @_Zjrf11( )
 	br label %return
 
-return:		; preds = %entry
+return:		
 	ret void
 }
 
@@ -379,7 +379,7 @@ entry:
 	call fastcc void @_Zjrf9( )
 	br label %return
 
-return:		; preds = %entry
+return:		
 	ret void
 }
 
@@ -387,53 +387,53 @@ define internal fastcc void @_Zjrf8() {
 entry:
 	br i1 false, label %cond_true, label %cond_false201
 
-cond_true:		; preds = %entry
+cond_true:		
 	br i1 false, label %cond_true36, label %cond_false
 
-cond_true36:		; preds = %cond_true
+cond_true36:		
 	br label %cleanup
 
-cleanup:		; preds = %cond_true36
+cleanup:		
 	br label %finally
 
-finally:		; preds = %cleanup
+finally:		
 	br label %cond_next189
 
-cond_false:		; preds = %cond_true
+cond_false:		
 	br i1 false, label %cond_true99, label %cond_false137
 
-cond_true99:		; preds = %cond_false
+cond_true99:		
 	br label %cleanup136
 
-cleanup136:		; preds = %cond_true99
+cleanup136:		
 	br label %finally135
 
-finally135:		; preds = %cleanup136
+finally135:		
 	br label %cond_next
 
-cond_false137:		; preds = %cond_false
+cond_false137:		
 	call fastcc void @_Zjrf10( )
 	br label %cleanup188
 
-cleanup188:		; preds = %cond_false137
+cleanup188:		
 	br label %finally187
 
-finally187:		; preds = %cleanup188
+finally187:		
 	br label %cond_next
 
-cond_next:		; preds = %finally187, %finally135
+cond_next:		
 	br label %cond_next189
 
-cond_next189:		; preds = %cond_next, %finally
+cond_next189:		
 	br label %cond_next202
 
-cond_false201:		; preds = %entry
+cond_false201:		
 	br label %cond_next202
 
-cond_next202:		; preds = %cond_false201, %cond_next189
+cond_next202:		
 	br label %return
 
-return:		; preds = %cond_next202
+return:		
 	ret void
 }
 
@@ -441,369 +441,369 @@ define internal fastcc void @_Zjrf1() {
 entry:
 	br label %bb492
 
-bb:		; preds = %cond_true499
+bb:		
 	br label %cleanup
 
-cleanup:		; preds = %bb
+cleanup:		
 	br label %finally
 
-finally:		; preds = %cleanup
+finally:		
 	br label %cleanup11
 
-cleanup11:		; preds = %finally
+cleanup11:		
 	br label %finally10
 
-finally10:		; preds = %cleanup11
+finally10:		
 	br i1 false, label %cond_true, label %cond_false286
 
-cond_true:		; preds = %finally10
+cond_true:		
 	br label %cleanup26
 
-cleanup26:		; preds = %cond_true
+cleanup26:		
 	br label %finally25
 
-finally25:		; preds = %cleanup26
+finally25:		
 	br label %bb30
 
-bb27:		; preds = %cond_true37
+bb27:		
 	br label %bb30
 
-bb30:		; preds = %bb27, %finally25
+bb30:		
 	br i1 false, label %cond_true37, label %cond_false
 
-cond_true37:		; preds = %bb30
+cond_true37:		
 	br label %bb27
 
-cond_false:		; preds = %bb30
+cond_false:		
 	br label %bb38
 
-cond_next:		; No predecessors!
+cond_next:		
 	br label %bb38
 
-bb38:		; preds = %cond_next, %cond_false
+bb38:		
 	br label %bb148
 
-bb40:		; preds = %cond_true156
+bb40:		
 	br label %bb139
 
-bb41:		; preds = %cond_true142
+bb41:		
 	call fastcc void @_Zjrf7( )
 	br label %bb105
 
-bb44:		; preds = %cond_true112
+bb44:		
 	br label %bb74
 
-bb66:		; preds = %cond_true80
+bb66:		
 	br label %bb74
 
-bb74:		; preds = %bb66, %bb44
+bb74:		
 	br i1 false, label %cond_true80, label %cond_false81
 
-cond_true80:		; preds = %bb74
+cond_true80:		
 	br label %bb66
 
-cond_false81:		; preds = %bb74
+cond_false81:		
 	br label %bb83
 
-cond_next82:		; No predecessors!
+cond_next82:		
 	br label %bb83
 
-bb83:		; preds = %cond_next82, %cond_false81
+bb83:		
 	br label %cleanup97
 
-cleanup97:		; preds = %bb83
+cleanup97:		
 	br label %finally96
 
-finally96:		; preds = %cleanup97
+finally96:		
 	br label %cleanup99
 
-cleanup99:		; preds = %finally96
+cleanup99:		
 	br label %finally98
 
-finally98:		; preds = %cleanup99
+finally98:		
 	br label %bb105
 
-bb105:		; preds = %finally98, %bb41
+bb105:		
 	br i1 false, label %cond_true112, label %cond_false113
 
-cond_true112:		; preds = %bb105
+cond_true112:		
 	br label %bb44
 
-cond_false113:		; preds = %bb105
+cond_false113:		
 	br label %bb115
 
-cond_next114:		; No predecessors!
+cond_next114:		
 	br label %bb115
 
-bb115:		; preds = %cond_next114, %cond_false113
+bb115:		
 	br i1 false, label %cond_true119, label %cond_false123
 
-cond_true119:		; preds = %bb115
+cond_true119:		
 	call fastcc void @_Zjrf8( )
 	br label %cond_next124
 
-cond_false123:		; preds = %bb115
+cond_false123:		
 	br label %cond_next124
 
-cond_next124:		; preds = %cond_false123, %cond_true119
+cond_next124:		
 	br i1 false, label %cond_true131, label %cond_false132
 
-cond_true131:		; preds = %cond_next124
+cond_true131:		
 	br label %cleanup135
 
-cond_false132:		; preds = %cond_next124
+cond_false132:		
 	br label %cond_next133
 
-cond_next133:		; preds = %cond_false132
+cond_next133:		
 	br label %cleanup136
 
-cleanup135:		; preds = %cond_true131
+cleanup135:		
 	br label %done
 
-cleanup136:		; preds = %cond_next133
+cleanup136:		
 	br label %finally134
 
-finally134:		; preds = %cleanup136
+finally134:		
 	br label %bb139
 
-bb139:		; preds = %finally134, %bb40
+bb139:		
 	br i1 false, label %cond_true142, label %cond_false143
 
-cond_true142:		; preds = %bb139
+cond_true142:		
 	br label %bb41
 
-cond_false143:		; preds = %bb139
+cond_false143:		
 	br label %bb145
 
-cond_next144:		; No predecessors!
+cond_next144:		
 	br label %bb145
 
-bb145:		; preds = %cond_next144, %cond_false143
+bb145:		
 	br label %bb148
 
-bb148:		; preds = %bb145, %bb38
+bb148:		
 	br i1 false, label %cond_true156, label %cond_false157
 
-cond_true156:		; preds = %bb148
+cond_true156:		
 	br label %bb40
 
-cond_false157:		; preds = %bb148
+cond_false157:		
 	br label %bb159
 
-cond_next158:		; No predecessors!
+cond_next158:		
 	br label %bb159
 
-bb159:		; preds = %cond_next158, %cond_false157
+bb159:		
 	br label %done
 
-done:		; preds = %bb159, %cleanup135
+done:		
 	br label %bb214
 
-bb185:		; preds = %cond_true218
+bb185:		
 	br i1 false, label %cond_true193, label %cond_false206
 
-cond_true193:		; preds = %bb185
+cond_true193:		
 	br label %cond_next211
 
-cond_false206:		; preds = %bb185
+cond_false206:		
 	br label %cond_next211
 
-cond_next211:		; preds = %cond_false206, %cond_true193
+cond_next211:		
 	br label %bb214
 
-bb214:		; preds = %cond_next211, %done
+bb214:		
 	br i1 false, label %cond_true218, label %cond_false219
 
-cond_true218:		; preds = %bb214
+cond_true218:		
 	br label %bb185
 
-cond_false219:		; preds = %bb214
+cond_false219:		
 	br label %bb221
 
-cond_next220:		; No predecessors!
+cond_next220:		
 	br label %bb221
 
-bb221:		; preds = %cond_next220, %cond_false219
+bb221:		
 	br i1 false, label %cond_true236, label %cond_false245
 
-cond_true236:		; preds = %bb221
+cond_true236:		
 	br label %cond_next249
 
-cond_false245:		; preds = %bb221
+cond_false245:		
 	br label %cond_next249
 
-cond_next249:		; preds = %cond_false245, %cond_true236
+cond_next249:		
 	br i1 false, label %cond_true272, label %cond_false277
 
-cond_true272:		; preds = %cond_next249
+cond_true272:		
 	br label %cond_next278
 
-cond_false277:		; preds = %cond_next249
+cond_false277:		
 	br label %cond_next278
 
-cond_next278:		; preds = %cond_false277, %cond_true272
+cond_next278:		
 	br label %cleanup285
 
-cleanup285:		; preds = %cond_next278
+cleanup285:		
 	br label %finally284
 
-finally284:		; preds = %cleanup285
+finally284:		
 	br label %cond_next287
 
-cond_false286:		; preds = %finally10
+cond_false286:		
 	br label %cond_next287
 
-cond_next287:		; preds = %cond_false286, %finally284
+cond_next287:		
 	br i1 false, label %cond_true317, label %cond_false319
 
-cond_true317:		; preds = %cond_next287
+cond_true317:		
 	br label %cond_next321
 
-cond_false319:		; preds = %cond_next287
+cond_false319:		
 	br label %cond_next321
 
-cond_next321:		; preds = %cond_false319, %cond_true317
+cond_next321:		
 	br label %bb348
 
-bb335:		; preds = %cond_true355
+bb335:		
 	br label %bb348
 
-bb348:		; preds = %bb335, %cond_next321
+bb348:		
 	br i1 false, label %cond_true355, label %cond_false356
 
-cond_true355:		; preds = %bb348
+cond_true355:		
 	br label %bb335
 
-cond_false356:		; preds = %bb348
+cond_false356:		
 	br label %bb358
 
-cond_next357:		; No predecessors!
+cond_next357:		
 	br label %bb358
 
-bb358:		; preds = %cond_next357, %cond_false356
+bb358:		
 	br i1 false, label %cond_true363, label %cond_false364
 
-cond_true363:		; preds = %bb358
+cond_true363:		
 	br label %bb388
 
-cond_false364:		; preds = %bb358
+cond_false364:		
 	br label %cond_next365
 
-cond_next365:		; preds = %cond_false364
+cond_next365:		
 	br i1 false, label %cond_true370, label %cond_false371
 
-cond_true370:		; preds = %cond_next365
+cond_true370:		
 	br label %bb388
 
-cond_false371:		; preds = %cond_next365
+cond_false371:		
 	br label %cond_next372
 
-cond_next372:		; preds = %cond_false371
+cond_next372:		
 	br i1 false, label %cond_true385, label %cond_false386
 
-cond_true385:		; preds = %cond_next372
+cond_true385:		
 	br label %bb388
 
-cond_false386:		; preds = %cond_next372
+cond_false386:		
 	br label %cond_next387
 
-cond_next387:		; preds = %cond_false386
+cond_next387:		
 	br label %bb389
 
-bb388:		; preds = %cond_true385, %cond_true370, %cond_true363
+bb388:		
 	br label %bb389
 
-bb389:		; preds = %bb388, %cond_next387
+bb389:		
 	br i1 false, label %cond_true392, label %cond_false443
 
-cond_true392:		; preds = %bb389
+cond_true392:		
 	br label %bb419
 
-bb402:		; preds = %cond_true425
+bb402:		
 	br i1 false, label %cond_true406, label %cond_false412
 
-cond_true406:		; preds = %bb402
+cond_true406:		
 	br label %cond_next416
 
-cond_false412:		; preds = %bb402
+cond_false412:		
 	br label %cond_next416
 
-cond_next416:		; preds = %cond_false412, %cond_true406
+cond_next416:		
 	br label %bb419
 
-bb419:		; preds = %cond_next416, %cond_true392
+bb419:		
 	br i1 false, label %cond_true425, label %cond_false426
 
-cond_true425:		; preds = %bb419
+cond_true425:		
 	br label %bb402
 
-cond_false426:		; preds = %bb419
+cond_false426:		
 	br label %bb428
 
-cond_next427:		; No predecessors!
+cond_next427:		
 	br label %bb428
 
-bb428:		; preds = %cond_next427, %cond_false426
+bb428:		
 	br label %cond_next478
 
-cond_false443:		; preds = %bb389
+cond_false443:		
 	br label %bb460
 
-bb450:		; preds = %cond_true466
+bb450:		
 	br label %bb460
 
-bb460:		; preds = %bb450, %cond_false443
+bb460:		
 	br i1 false, label %cond_true466, label %cond_false467
 
-cond_true466:		; preds = %bb460
+cond_true466:		
 	br label %bb450
 
-cond_false467:		; preds = %bb460
+cond_false467:		
 	br label %bb469
 
-cond_next468:		; No predecessors!
+cond_next468:		
 	br label %bb469
 
-bb469:		; preds = %cond_next468, %cond_false467
+bb469:		
 	br label %cond_next478
 
-cond_next478:		; preds = %bb469, %bb428
+cond_next478:		
 	br label %cleanup485
 
-cleanup485:		; preds = %cond_next478
+cleanup485:		
 	br label %finally484
 
-finally484:		; preds = %cleanup485
+finally484:		
 	br label %cleanup487
 
-cleanup487:		; preds = %finally484
+cleanup487:		
 	br label %finally486
 
-finally486:		; preds = %cleanup487
+finally486:		
 	br label %cleanup489
 
-cleanup489:		; preds = %finally486
+cleanup489:		
 	br label %finally488
 
-finally488:		; preds = %cleanup489
+finally488:		
 	br label %bb492
 
-bb492:		; preds = %finally488, %entry
+bb492:		
 	br i1 false, label %cond_true499, label %cond_false500
 
-cond_true499:		; preds = %bb492
+cond_true499:		
 	br label %bb
 
-cond_false500:		; preds = %bb492
+cond_false500:		
 	br label %bb502
 
-cond_next501:		; No predecessors!
+cond_next501:		
 	br label %bb502
 
-bb502:		; preds = %cond_next501, %cond_false500
+bb502:		
 	br label %return
 
-return:		; preds = %bb502
+return:		
 	ret void
 }
 
@@ -811,30 +811,30 @@ define internal fastcc void @_ZSt26__unguarded_insertion_sortIN9__gnu_cxx17__nor
 entry:
 	br label %bb12
 
-bb:		; preds = %cond_true
+bb:		
 	br label %cleanup
 
-cleanup:		; preds = %bb
+cleanup:		
 	br label %finally
 
-finally:		; preds = %cleanup
+finally:		
 	br label %bb12
 
-bb12:		; preds = %finally, %entry
+bb12:		
 	br i1 false, label %cond_true, label %cond_false
 
-cond_true:		; preds = %bb12
+cond_true:		
 	br label %bb
 
-cond_false:		; preds = %bb12
+cond_false:		
 	br label %bb14
 
-cond_next:		; No predecessors!
+cond_next:		
 	br label %bb14
 
-bb14:		; preds = %cond_next, %cond_false
+bb14:		
 	br label %return
 
-return:		; preds = %bb14
+return:		
 	ret void
 }

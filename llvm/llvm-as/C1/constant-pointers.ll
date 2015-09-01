@@ -1,24 +1,24 @@
-; REQUIRES: object-emission
 
-; RUN: %llc_dwarf -O0 -filetype=obj %s -o - | llvm-dwarfdump -debug-dump=info - | FileCheck %s
 
-; Ensure that pointer constants are emitted as unsigned data. Alternatively,
-; these could be signless data (dataN).
 
-; Built with Clang from:
-; template <void *V, void (*F)(), int i>
-; void func() {}
-; template void func<nullptr, nullptr, 42>();
 
-; CHECK: DW_TAG_subprogram
-; CHECK:   DW_TAG_template_value_parameter
-; CHECK:     DW_AT_name {{.*}} "V"
-; CHECK:     DW_AT_const_value [DW_FORM_udata] (0)
-; CHECK:   DW_TAG_template_value_parameter
-; CHECK:     DW_AT_name {{.*}} "F"
-; CHECK:     DW_AT_const_value [DW_FORM_udata] (0)
 
-; Function Attrs: nounwind uwtable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define weak_odr void @_Z4funcILPv0ELPFvvE0ELi42EEvv() #0 {
 entry:
   ret void, !dbg !18

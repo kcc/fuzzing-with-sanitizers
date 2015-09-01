@@ -1,33 +1,33 @@
-; RUN: llc < %s -march=x86-64 -mcpu=athlon | FileCheck %s
-; RUN: llc < %s -march=x86-64 -mcpu=athlon-tbird | FileCheck %s
-; RUN: llc < %s -march=x86-64 -mcpu=athlon-4 | FileCheck %s
-; RUN: llc < %s -march=x86-64 -mcpu=athlon-xp | FileCheck %s
-; RUN: llc < %s -march=x86-64 -mcpu=athlon-mp | FileCheck %s
-; RUN: llc < %s -march=x86-64 -mcpu=k8 | FileCheck %s
-; RUN: llc < %s -march=x86-64 -mcpu=opteron | FileCheck %s
-; RUN: llc < %s -march=x86-64 -mcpu=athlon64 | FileCheck %s
-; RUN: llc < %s -march=x86-64 -mcpu=athlon-fx | FileCheck %s
-; RUN: llc < %s -march=x86-64 -mcpu=k8-sse3 | FileCheck %s
-; RUN: llc < %s -march=x86-64 -mcpu=opteron-sse3 | FileCheck %s
-; RUN: llc < %s -march=x86-64 -mcpu=athlon64-sse3 | FileCheck %s
-; RUN: llc < %s -march=x86-64 -mcpu=amdfam10 | FileCheck %s
-; RUN: llc < %s -march=x86-64 -mcpu=btver1 | FileCheck %s
-; RUN: llc < %s -march=x86-64 -mcpu=btver2 | FileCheck %s
-; RUN: llc < %s -march=x86-64 -mcpu=bdver1 | FileCheck %s
-; RUN: llc < %s -march=x86-64 -mcpu=bdver2 | FileCheck %s
 
-; Verify that for the X86_64 processors that are known to have poor latency 
-; double precision shift instructions we do not generate 'shld' or 'shrd'
-; instructions.
 
-;uint64_t lshift(uint64_t a, uint64_t b, int c)
-;{
-;    return (a << c) | (b >> (64-c));
-;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define i64 @lshift(i64 %a, i64 %b, i32 %c) nounwind readnone {
 entry:
-; CHECK-NOT: shld 
+
   %sh_prom = zext i32 %c to i64
   %shl = shl i64 %a, %sh_prom
   %sub = sub nsw i32 64, %c
@@ -37,14 +37,14 @@ entry:
   ret i64 %or
 }
 
-;uint64_t rshift(uint64_t a, uint64_t b, int c)
-;{
-;    return (a >> c) | (b << (64-c));
-;}
+
+
+
+
 
 define i64 @rshift(i64 %a, i64 %b, i32 %c) nounwind readnone {
 entry:
-; CHECK-NOT: shrd
+
   %sh_prom = zext i32 %c to i64
   %shr = lshr i64 %a, %sh_prom
   %sub = sub nsw i32 64, %c

@@ -1,4 +1,4 @@
-; RUN: opt -inline < %s -S -o - -inline-threshold=100 | FileCheck %s
+
 
 target datalayout = "p:32:32"
 
@@ -34,12 +34,12 @@ terminate.lpad:
 }
 
 define void @outer1() {
-; CHECK-LABEL: @outer1(
-;
-; This call should not get inlined because inner1 actually calls a function
-; many times, but it only does so through invoke as opposed to call.
-;
-; CHECK: call void @inner1
+
+
+
+
+
+
   call void @inner1()
   ret void
 }

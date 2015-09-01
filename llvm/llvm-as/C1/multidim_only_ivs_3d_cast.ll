@@ -1,16 +1,16 @@
-; RUN: opt < %s -analyze -delinearize | FileCheck %s
-; void foo(int n, int m, int o, double A[n][m][o]) {
-;
-;   for (int i = 0; i < n; i++)
-;     for (int j = 0; j < m; j++)
-;       for (int k = 0; k < o; k++)
-;         A[i][j][k] = 1.0;
-; }
 
-; AddRec: {{{%A,+,(8 * (zext i32 %m to i64) * (zext i32 %o to i64))}<%for.i>,+,(8 * (zext i32 %o to i64))}<%for.j>,+,8}<%for.k>
-; CHECK: Base offset: %A
-; CHECK: ArrayDecl[UnknownSize][(zext i32 %m to i64)][(zext i32 %o to i64)] with elements of 8 bytes.
-; CHECK: ArrayRef[{0,+,1}<%for.i>][{0,+,1}<%for.j>][{0,+,1}<%for.k>]
+
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"

@@ -1,5 +1,5 @@
-; RUN: llc < %s
-; PR2096
+
+
 	%struct.AVClass = type { i8*, i8* (i8*)*, %struct.AVOption* }
 	%struct.AVCodec = type { i8*, i32, i32, i32, i32 (%struct.AVCodecContext*)*, i32 (%struct.AVCodecContext*, i8*, i32, i8*)*, i32 (%struct.AVCodecContext*)*, i32 (%struct.AVCodecContext*, i8*, i32*, i8*, i32)*, i32, %struct.AVCodec*, void (%struct.AVCodecContext*)*, %struct.AVRational*, i32* }
 	%struct.AVCodecContext = type { %struct.AVClass*, i32, i32, i32, i32, i32, i8*, i32, %struct.AVRational, i32, i32, i32, i32, i32, void (%struct.AVCodecContext*, %struct.AVFrame*, i32*, i32, i32, i32)*, i32, i32, i32, i32, i32, i32, i32, float, float, i32, i32, i32, i32, float, i32, i32, i32, %struct.AVCodec*, i8*, i32, i32, void (%struct.AVCodecContext*, i8*, i32, i32)*, i32, i32, i32, i32, i32, i32, i32, i32, i32, i8*, [32 x i8], i32, i32, i32, i32, i32, i32, i32, float, i32, i32 (%struct.AVCodecContext*, %struct.AVFrame*)*, void (%struct.AVCodecContext*, %struct.AVFrame*)*, i32, i32, i32, i32, i8*, i8*, float, float, i32, %struct.RcOverride*, i32, i8*, i32, i32, i32, float, float, float, float, i32, float, float, float, float, float, i32, i32, i32, i32*, i32, i32, i32, i32, %struct.AVRational, %struct.AVFrame*, i32, i32, [4 x i64], i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32 (%struct.AVCodecContext*, i32*)*, i32, i32, i32, i32, i32, i32, i8*, i32, i32, i32, i32, i32, i32, i16*, i16*, i32, i32, i32, i32, %struct.AVPaletteControl*, i32, i32 (%struct.AVCodecContext*, %struct.AVFrame*)*, i32, i32, i32, i32, i32, i32, i32, i32 (%struct.AVCodecContext*, i32 (%struct.AVCodecContext*, i8*)*, i8**, i32*, i32)*, i8*, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, i32, i32, i32, i32, i32, i32, i32, i32, float, i32, i32, i32, i32, i32, i32, float, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i64, i32, float }
@@ -17,33 +17,33 @@ entry:
 		 i32 1, label %bb279.preheader
 	]
 
-bb279.preheader:		; preds = %entry
+bb279.preheader:		
 	ret i32 0
 
-bb244.preheader:		; preds = %entry
+bb244.preheader:		
 	ret i32 0
 
-bb429:		; preds = %entry
+bb429:		
 	br i1 false, label %bb.nph1770, label %bb627
 
-bb.nph1770:		; preds = %bb429
+bb.nph1770:		
 	br i1 false, label %bb471, label %bb505
 
-bb471:		; preds = %bb471, %bb.nph1770
-	%tmp487 = fadd double 0.000000e+00, 0.000000e+00		; <double> [#uses=1]
+bb471:		
+	%tmp487 = fadd double 0.000000e+00, 0.000000e+00		
 	br i1 false, label %bb505, label %bb471
 
-bb505:		; preds = %bb471, %bb.nph1770
-	%xy.0.lcssa = phi double [ 0.000000e+00, %bb.nph1770 ], [ %tmp487, %bb471 ]		; <double> [#uses=1]
-	%tmp507 = fsub double -0.000000e+00, %xy.0.lcssa		; <double> [#uses=1]
-	%tmp509 = fdiv double %tmp507, 0.000000e+00		; <double> [#uses=1]
-	%tmp510 = fmul double %tmp509, 1.024000e+03		; <double> [#uses=1]
-	%tmp516 = fdiv double %tmp510, 0.000000e+00		; <double> [#uses=1]
-	%tmp517 = fadd double %tmp516, 5.000000e-01		; <double> [#uses=1]
-	%tmp518 = tail call double @floor( double %tmp517 ) nounwind readnone 		; <double> [#uses=0]
+bb505:		
+	%xy.0.lcssa = phi double [ 0.000000e+00, %bb.nph1770 ], [ %tmp487, %bb471 ]		
+	%tmp507 = fsub double -0.000000e+00, %xy.0.lcssa		
+	%tmp509 = fdiv double %tmp507, 0.000000e+00		
+	%tmp510 = fmul double %tmp509, 1.024000e+03		
+	%tmp516 = fdiv double %tmp510, 0.000000e+00		
+	%tmp517 = fadd double %tmp516, 5.000000e-01		
+	%tmp518 = tail call double @floor( double %tmp517 ) nounwind readnone 		
 	ret i32 0
 
-bb627:		; preds = %bb429
+bb627:		
 	ret i32 0
 }
 

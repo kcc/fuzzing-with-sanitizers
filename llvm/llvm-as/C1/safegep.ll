@@ -1,15 +1,15 @@
-; RUN: opt -S -loop-vectorize -force-vector-width=4 -force-vector-interleave=1  < %s |  FileCheck %s
+
 target datalayout = "e-p:32:32:32-S128-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f16:16:16-f32:32:32-f64:32:64-f128:128:128-v64:64:64-v128:128:128-a0:0:64-f80:32:32-n8:16:32"
 
 
-; We can vectorize this code because if the address computation would wrap then
-; a load from 0 would take place which is undefined behaviour in address space 0
-; according to LLVM IR semantics.
 
-; PR16592
 
-; CHECK-LABEL: @safe(
-; CHECK: <4 x float>
+
+
+
+
+
+
 
 define void @safe(float* %A, float* %B, float %K) {
 entry:
@@ -32,10 +32,10 @@ return:
   ret void
 }
 
-; In a non-default address space we don't have this rule.
 
-; CHECK-LABEL: @notsafe(
-; CHECK-NOT: <4 x float>
+
+
+
 
 define void @notsafe(float addrspace(5) * %A, float* %B, float %K) {
 entry:

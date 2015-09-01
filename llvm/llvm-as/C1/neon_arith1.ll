@@ -1,4 +1,4 @@
-; RUN: llc -mtriple=arm-eabi -mattr=+neon %s -o - | FileCheck %s
+
 
 define <8 x i8> @t_i8x8(<8 x i8> %a, <8 x i8> %b) nounwind {
 entry:
@@ -6,5 +6,5 @@ entry:
 	ret <8 x i8> %0
 }
 
-; CHECK: vadd
+
 

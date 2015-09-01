@@ -1,22 +1,22 @@
-; RUN: opt -codegenprepare -disable-cgp-branch-opts -S < %s | FileCheck %s
+
 target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
-; The first cast should be sunk into block2, in order that the
-; instruction selector can form an efficient
-; i64 * i64 -> i128 multiplication.
+
+
+
 define i128 @sink(i64* %mem1, i64* %mem2) {
-; CHECK-LABEL: block1:
-; CHECK-NEXT: load
+
+
 block1:
   %l1 = load i64, i64* %mem1
   %s1 = sext i64 %l1 to i128
   br label %block2
 
-; CHECK-LABEL: block2:
-; CHECK-NEXT: sext
-; CHECK-NEXT: load
-; CHECK-NEXT: sext
+
+
+
+
 block2:
   %l2 = load i64, i64* %mem2
   %s2 = sext i64 %l2 to i128
@@ -24,19 +24,19 @@ block2:
   ret i128 %res
 }
 
-; The first cast should be hoisted into block1, in order that the
-; instruction selector can form an extend-load.
+
+
 define i64 @hoist(i32* %mem1, i32* %mem2) {
-; CHECK-LABEL: block1:
-; CHECK-NEXT: load
-; CHECK-NEXT: sext
+
+
+
 block1:
   %l1 = load i32, i32* %mem1
   br label %block2
 
-; CHECK-LABEL: block2:
-; CHECK-NEXT: load
-; CHECK-NEXT: sext
+
+
+
 block2:
   %s1 = sext i32 %l1 to i64
   %l2 = load i32, i32* %mem2
@@ -45,8 +45,8 @@ block2:
   ret i64 %res
 }
 
-; Make sure the cast sink logic and OptimizeExtUses don't end up in an infinite
-; loop.
+
+
 define i128 @use_ext_source() {
 block1:
   %v1 = or i64 undef, undef

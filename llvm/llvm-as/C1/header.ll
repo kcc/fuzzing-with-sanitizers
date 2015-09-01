@@ -1,16 +1,16 @@
-; RUN: llc -mtriple armv7-apple-darwin < %s  | FileCheck %s
 
-; Test that we don't pollute the start of the file with debug sections.
-; This is particularly important on ARM MachO as a change in section order can
-; cause a change the relaxation of the instructions used.
 
-; CHECK:      .section        __TEXT,__text,regular,pure_instructions
-; CHECK-NEXT: .syntax unified
-; CHECK-NEXT: .globl  _f
-; CHECK-NEXT: .align  2
-; CHECK-NEXT: _f:                    @ @f
 
-; CHECK:  .section        __DWARF,__debug_str,regular,debug
+
+
+
+
+
+
+
+
+
+
 
 define void @f() {
   ret void, !dbg !9

@@ -1,15 +1,15 @@
-; RUN: llc < %s -mtriple=x86_64-unknown-freebsd9 | FileCheck %s
 
-; Check that our compiler never emits global constructors
-; inside the .init_array section when building for a non-Linux ELF target.
-; Because of this, the test depends on UseInitArray behavior under FreeBSD
-; as found in Generic_ELF::addClangTargetOptions().
 
-; This is to workaround a Visual Studio bug which causes field
-; UseInitArray to be left uninitialized instead of being 
-; zero-initialized (as specified in [dcl.init]p7).
-; This workaround consists in providing a user default constructor
-; that explicitly initializes field UseInitArray.
+
+
+
+
+
+
+
+
+
+
 
 %class.C = type { i8 }
 %class.D = type { i8 }
@@ -48,4 +48,4 @@ entry:
   ret void
 }
 
-; CHECK-NOT: .init_array
+

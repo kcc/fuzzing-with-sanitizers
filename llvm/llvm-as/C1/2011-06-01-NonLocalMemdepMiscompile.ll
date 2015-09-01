@@ -1,13 +1,13 @@
-; RUN: opt < %s -basicaa -gvn -S | FileCheck %s
-; This test is checking that (a) this doesn't crash, and (b) we don't
-; conclude the value of %tmp17 is available in bb1.bb15_crit_edge.
-; rdar://9429882
+
+
+
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64"
 target triple = "x86_64-apple-macosx10.7.0"
 
 define i1 @rb_intern() nounwind ssp {
-; CHECK-LABEL: @rb_intern(
+
 
 bb:
   %tmp = alloca i8*, align 8
@@ -18,11 +18,11 @@ bb:
 bb1:
   br i1 undef, label %bb3, label %bb15
 
-; CHECK: bb1:
-; CHECK: [[TMP:%.*]] = phi i8* [ getelementptr (i8, i8* null, i64 undef), %bb10 ], [ null, %bb ]
 
-; CHECK: bb1.bb15_crit_edge:
-; CHECK: %tmp17.pre = load i8, i8* [[TMP]], align 1
+
+
+
+
 
 bb3:
   call void @isalnum()
@@ -51,10 +51,10 @@ bb15:
   %tmp18 = icmp eq i8 %tmp17, 0
   br label %bb19
 
-; CHECK: bb15:
-; CHECK: %tmp17 = phi i8 [ %tmp17.pre, %bb1.bb15_crit_edge ], [ %tmp8, %bb6 ]
 
-bb19:                                             ; preds = %bb15
+
+
+bb19:                                             
   ret i1 %tmp18
 }
 

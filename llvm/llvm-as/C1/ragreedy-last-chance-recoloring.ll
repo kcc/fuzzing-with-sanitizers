@@ -1,18 +1,18 @@
-; RUN: llc -regalloc=greedy -relocation-model=pic  < %s 2>&1 | FileCheck %s
-; Without the last chance recoloring, this test fails with:
-; "ran out of registers".
 
-; NOTE: With the fix to PR18883, we don't actually run out of registers here
-; any more, and so those checks are disabled. This test remains only for general coverage.
-; XXX: not llc -regalloc=greedy -relocation-model=pic -lcr-max-depth=0  < %s 2>&1 | FileCheck %s --check-prefix=CHECK-DEPTH
-; Test whether failure due to cutoff for depth is reported
 
-; XXX: not llc -regalloc=greedy -relocation-model=pic -lcr-max-interf=1  < %s 2>&1 | FileCheck %s --check-prefix=CHECK-INTERF
-; Test whether failure due to cutoff for interference is reported
 
-; RUN: llc -regalloc=greedy -relocation-model=pic -lcr-max-interf=1 -lcr-max-depth=0 -exhaustive-register-search < %s > %t 2>&1
-; RUN: FileCheck --input-file=%t %s --check-prefix=CHECK-EXHAUSTIVE
-; Test whether exhaustive-register-search can bypass the depth and interference cutoffs of last chance recoloring 
+
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64-f80:128:128-n8:16:32-S128"
 target triple = "i386-apple-macosx"
@@ -22,27 +22,27 @@ target triple = "i386-apple-macosx"
 @fp_dh_20a33cdeefab8f4c8887e82766cb9dcb = external global i8*
 @fp_dh_9d93c897906e39883c58b034c8e786b2 = external global [5419648 x i8], align 16
 
-; Function Attrs: nounwind ssp
-; CHECK-NOT: ran out of registers during register allocation
-; CHECK-INTERF: error: register allocation failed: maximum interference for recoloring reached
-; CHECK-DEPTH: error: register allocation failed: maximum depth for recoloring reached
-; CHECK-EXHAUSTIVE-NOT: error: register allocation failed: maximum {{depth|interference}} for recoloring reached
+
+
+
+
+
 define void @fp_dh_f870bf31fd8ffe068450366e3f05389a(i8* %arg) #0 {
 bb:
   indirectbr i8* undef, [label %bb85, label %bb206]
 
-bb85:                                             ; preds = %bb222, %bb85, %bb
+bb85:                                             
   store i8* blockaddress(@fp_dh_f870bf31fd8ffe068450366e3f05389a, %bb206), i8** undef, align 4
   indirectbr i8* undef, [label %bb439, label %bb85]
 
-bb206:                                            ; preds = %bb
+bb206:                                            
   %tmp = getelementptr [499 x i32], [499 x i32]* @fp_dh_36985b17790d59a27994eaab5dcb00ee, i32 0, i32 undef
   %tmp207 = load i32, i32* %tmp
   %tmp208 = add i32 %tmp207, 1
   %tmp209 = inttoptr i32 %tmp208 to i8*
   indirectbr i8* %tmp209, [label %bb213]
 
-bb213:                                            ; preds = %bb206
+bb213:                                            
   %tmp214 = load i32, i32* @fp_dh_18716afa4a5354de0a302c8edb3b0ee1, align 4
   %tmp215 = load i8*, i8** @fp_dh_20a33cdeefab8f4c8887e82766cb9dcb, align 4
   %tmp216 = urem i32 -717428541, %tmp214
@@ -54,7 +54,7 @@ bb213:                                            ; preds = %bb206
   %tmp221 = add i32 %tmp220, 0
   indirectbr i8* undef, [label %bb432, label %bb222]
 
-bb222:                                            ; preds = %bb213
+bb222:                                            
   %tmp224 = load i32, i32* undef, align 4
   %tmp225 = load i32, i32* undef, align 4
   %tmp226 = xor i32 %tmp225, %tmp224
@@ -167,7 +167,7 @@ bb222:                                            ; preds = %bb213
   %tmp340 = inttoptr i32 %tmp339 to i8*
   indirectbr i8* %tmp340, [label %bb85, label %bb439]
 
-bb432:                                            ; preds = %bb432, %bb213
+bb432:                                            
   %tmp433 = phi i32 [ %tmp221, %bb213 ], [ %tmp433, %bb432 ]
   %tmp434 = add i32 %tmp433, 1022523279
   %tmp435 = getelementptr [499 x i32], [499 x i32]* @fp_dh_36985b17790d59a27994eaab5dcb00ee, i32 0, i32 %tmp434
@@ -176,7 +176,7 @@ bb432:                                            ; preds = %bb432, %bb213
   %tmp438 = inttoptr i32 %tmp437 to i8*
   indirectbr i8* %tmp438, [label %bb432]
 
-bb439:                                            ; preds = %bb222, %bb85
+bb439:                                            
   ret void
 }
 

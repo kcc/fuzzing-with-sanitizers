@@ -1,15 +1,15 @@
-; RUN: opt -analyze -module-debuginfo < %s | FileCheck %s
 
-; Produced from linking:
-;   /tmp/test1.c containing f()
-;   /tmp/test2.c containing g()
 
-; Verify that both compile units and both their contained functions are
-; listed by DebugInfoFinder:
-;CHECK: Compile unit: DW_LANG_C99 from /tmp/test1.c
-;CHECK: Compile unit: DW_LANG_C99 from /tmp/test2.c
-;CHECK: Subprogram: f from /tmp/test1.c:1
-;CHECK: Subprogram: g from /tmp/test2.c:1
+
+
+
+
+
+
+
+
+
+
 
 define void @f() {
   ret void, !dbg !14

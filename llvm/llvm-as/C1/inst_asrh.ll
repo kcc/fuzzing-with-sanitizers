@@ -1,5 +1,5 @@
-;; RUN: llc -mtriple=hexagon-unknown-elf -filetype=obj %s -o - \
-;; RUN: | llvm-objdump -s - | FileCheck %s
+
+
 
 define i32 @foo (i32 %a)
 {
@@ -7,4 +7,4 @@ define i32 @foo (i32 %a)
   ret i32 %1
 }
 
-; CHECK:   0000 00402070 00c09f52
+

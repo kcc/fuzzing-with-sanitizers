@@ -1,4 +1,4 @@
-; RUN: opt < %s -basicaa -slp-vectorizer -dce -S -mtriple=x86_64-apple-macosx10.8.0 -mcpu=corei7
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.8.0"
@@ -6,37 +6,37 @@ target triple = "x86_64-apple-macosx10.8.0"
 %struct.Ray.5.11.53.113.119.137.149.185.329.389.416 = type { %struct.Vec.0.6.48.108.114.132.144.180.324.384.414, %struct.Vec.0.6.48.108.114.132.144.180.324.384.414 }
 %struct.Vec.0.6.48.108.114.132.144.180.324.384.414 = type { double, double, double }
 
-; Function Attrs: ssp uwtable
+
 define void @main() #0 {
 entry:
   br i1 undef, label %cond.true, label %cond.end
 
-cond.true:                                        ; preds = %entry
+cond.true:                                        
   unreachable
 
-cond.end:                                         ; preds = %entry
+cond.end:                                         
   br label %invoke.cont
 
-invoke.cont:                                      ; preds = %invoke.cont, %cond.end
+invoke.cont:                                      
   br i1 undef, label %arrayctor.cont, label %invoke.cont
 
-arrayctor.cont:                                   ; preds = %invoke.cont
+arrayctor.cont:                                   
   %agg.tmp99208.sroa.0.0.idx = getelementptr inbounds %struct.Ray.5.11.53.113.119.137.149.185.329.389.416, %struct.Ray.5.11.53.113.119.137.149.185.329.389.416* undef, i64 0, i32 0, i32 0
   %agg.tmp99208.sroa.1.8.idx388 = getelementptr inbounds %struct.Ray.5.11.53.113.119.137.149.185.329.389.416, %struct.Ray.5.11.53.113.119.137.149.185.329.389.416* undef, i64 0, i32 0, i32 1
   %agg.tmp101211.sroa.0.0.idx = getelementptr inbounds %struct.Ray.5.11.53.113.119.137.149.185.329.389.416, %struct.Ray.5.11.53.113.119.137.149.185.329.389.416* undef, i64 0, i32 1, i32 0
   %agg.tmp101211.sroa.1.8.idx390 = getelementptr inbounds %struct.Ray.5.11.53.113.119.137.149.185.329.389.416, %struct.Ray.5.11.53.113.119.137.149.185.329.389.416* undef, i64 0, i32 1, i32 1
   br label %for.cond36.preheader
 
-for.cond36.preheader:                             ; preds = %_Z5clampd.exit.1, %arrayctor.cont
+for.cond36.preheader:                             
   br i1 undef, label %for.body42.lr.ph.us, label %_Z5clampd.exit.1
 
-cond.false51.us:                                  ; preds = %for.body42.lr.ph.us
+cond.false51.us:                                  
   unreachable
 
-cond.true48.us:                                   ; preds = %for.body42.lr.ph.us
+cond.true48.us:                                   
   br i1 undef, label %cond.true63.us, label %cond.false66.us
 
-cond.false66.us:                                  ; preds = %cond.true48.us
+cond.false66.us:                                  
   %add.i276.us = fadd double 0.000000e+00, undef
   %add.i264.us = fadd double %add.i276.us, 0.000000e+00
   %add4.i267.us = fadd double undef, 0xBFA5CC2D1960285F
@@ -52,13 +52,13 @@ cond.false66.us:                                  ; preds = %cond.true48.us
   store double %mul2.i.i.us, double* %agg.tmp101211.sroa.1.8.idx390, align 8
   unreachable
 
-cond.true63.us:                                   ; preds = %cond.true48.us
+cond.true63.us:                                   
   unreachable
 
-for.body42.lr.ph.us:                              ; preds = %for.cond36.preheader
+for.body42.lr.ph.us:                              
   br i1 undef, label %cond.true48.us, label %cond.false51.us
 
-_Z5clampd.exit.1:                                 ; preds = %for.cond36.preheader
+_Z5clampd.exit.1:                                 
   br label %for.cond36.preheader
 }
 
@@ -70,7 +70,7 @@ define void @_Z8radianceRK3RayiPt() #0 {
 entry:
   br i1 undef, label %if.then78, label %if.then38
 
-if.then38:                                        ; preds = %entry
+if.then38:                                        
   %mul.i.i790 = fmul double undef, undef
   %mul3.i.i792 = fmul double undef, undef
   %mul.i764 = fmul double undef, %mul3.i.i792
@@ -95,10 +95,10 @@ if.then38:                                        ; preds = %entry
   store double %mul2.i.i680, double* %agg.tmp74663.sroa.1.8.idx943, align 8
   br label %return
 
-if.then78:                                        ; preds = %entry
+if.then78:                                        
   br label %return
 
-return:                                           ; preds = %if.then78, %if.then38
+return:                                           
   ret void
 }
 

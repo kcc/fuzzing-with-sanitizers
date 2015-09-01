@@ -1,5 +1,5 @@
-; RUN: opt < %s -scalarrepl-ssa -loop-unswitch -disable-output
-; PR11016
+
+
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64"
 target triple = "x86_64-apple-macosx10.7.2"
 
@@ -10,17 +10,17 @@ define void @_ZN11MyContainer1fEi(%class.MyContainer.1.3.19.29* %this, i32 %doit
 entry:
   br label %for.cond
 
-for.cond:                                         ; preds = %for.inc, %entry
+for.cond:                                         
   %inc1 = phi i32 [ %inc, %for.inc ], [ 0, %entry ]
   %conv = sext i32 %inc1 to i64
   %cmp = icmp ult i64 %conv, 6
   br i1 %cmp, label %for.body, label %for.end
 
-for.body:                                         ; preds = %for.cond
+for.body:                                         
   %tobool = icmp ne i32 %doit, 0
   br i1 %tobool, label %for.inc, label %if.then
 
-if.then:                                          ; preds = %for.body
+if.then:                                          
   %idxprom = sext i32 %inc1 to i64
   %array_ = getelementptr inbounds %class.MyContainer.1.3.19.29, %class.MyContainer.1.3.19.29* %this, i32 0, i32 0
   %arrayidx = getelementptr inbounds [6 x %class.MyMemVarClass.0.2.18.28*], [6 x %class.MyMemVarClass.0.2.18.28*]* %array_, i32 0, i64 %idxprom
@@ -28,16 +28,16 @@ if.then:                                          ; preds = %for.body
   %isnull = icmp eq %class.MyMemVarClass.0.2.18.28* %tmp4, null
   br i1 %isnull, label %for.inc, label %delete.notnull
 
-delete.notnull:                                   ; preds = %if.then
+delete.notnull:                                   
   invoke void @_ZN13MyMemVarClassD1Ev(%class.MyMemVarClass.0.2.18.28* %tmp4)
           to label %invoke.cont unwind label %lpad
 
-invoke.cont:                                      ; preds = %delete.notnull
+invoke.cont:                                      
   %0 = bitcast %class.MyMemVarClass.0.2.18.28* %tmp4 to i8*
   call void @_ZdlPv(i8* %0) nounwind
   br label %for.inc
 
-lpad:                                             ; preds = %delete.notnull
+lpad:                                             
   %1 = landingpad { i8*, i32 }
           cleanup
   %2 = extractvalue { i8*, i32 } %1, 0
@@ -48,11 +48,11 @@ lpad:                                             ; preds = %delete.notnull
   %lpad.val7 = insertvalue { i8*, i32 } %lpad.val, i32 %3, 1
   resume { i8*, i32 } %lpad.val7
 
-for.inc:                                          ; preds = %invoke.cont, %if.then, %for.body
+for.inc:                                          
   %inc = add nsw i32 %inc1, 1
   br label %for.cond
 
-for.end:                                          ; preds = %for.cond
+for.end:                                          
   ret void
 }
 

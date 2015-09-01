@@ -1,32 +1,32 @@
-; RUN: llc -march=amdgcn -mcpu=SI -verify-machineinstrs < %s | FileCheck -check-prefix=FUNC -check-prefix=SI --check-prefix=GCN %s
-; RUN: llc -march=amdgcn -mcpu=tonga -verify-machineinstrs < %s | FileCheck -check-prefix=FUNC -check-prefix=VI --check-prefix=GCN %s
 
-; FUNC-LABEL: {{^}}cluster_arg_loads:
-; SI: s_load_dwordx2 s{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0x9
-; SI-NEXT: s_load_dwordx2 s{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0xb
-; SI-NEXT: s_load_dword s{{[0-9]+}}, s{{\[[0-9]+:[0-9]+\]}}, 0xd
-; SI-NEXT: s_load_dword s{{[0-9]+}}, s{{\[[0-9]+:[0-9]+\]}}, 0xe
-; VI: s_load_dwordx2 s{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0x24
-; VI-NEXT: s_nop 0
-; VI-NEXT: s_load_dwordx2 s{{\[[0-9]+:[0-9]+\]}}, s{{\[[0-9]+:[0-9]+\]}}, 0x2c
-; VI-NEXT: s_nop 0
-; VI-NEXT: s_load_dword s{{[0-9]+}}, s{{\[[0-9]+:[0-9]+\]}}, 0x34
-; VI-NEXT: s_nop 0
-; VI-NEXT: s_load_dword s{{[0-9]+}}, s{{\[[0-9]+:[0-9]+\]}}, 0x38
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @cluster_arg_loads(i32 addrspace(1)* %out0, i32 addrspace(1)* %out1, i32 %x, i32 %y) nounwind {
   store i32 %x, i32 addrspace(1)* %out0, align 4
   store i32 %y, i32 addrspace(1)* %out1, align 4
   ret void
 }
 
-; Test for a crash in SIInstrInfo::areLoadsFromSameBasePtr() when
-; s_load_dwordx2 has a register offset
 
-; FUNC-LABEL: @same_base_ptr_crash
-; GCN: s_load_dwordx2
-; GCN: s_load_dwordx2
-; GCN: s_load_dwordx2
-; GCN: s_endpgm
+
+
+
+
+
+
+
 define void @same_base_ptr_crash(i64 addrspace(1)* %out,
     i64 %arg0, i64 %arg1, i64 %arg2, i64 %arg3, i64 %arg4, i64 %arg5, i64 %arg6, i64 %arg7,
     i64 %arg8, i64 %arg9, i64 %arg10, i64 %arg11, i64 %arg12, i64 %arg13, i64 %arg14, i64 %arg15,

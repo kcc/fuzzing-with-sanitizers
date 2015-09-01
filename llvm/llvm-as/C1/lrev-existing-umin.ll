@@ -1,7 +1,7 @@
-; RUN: opt -S -indvars < %s | FileCheck %s
+
 
 define void @f(i32 %length.i.88, i32 %length.i, i8* %tmp12, i32 %tmp10, i8* %tmp8) {
-; CHECK-LABEL: @f(
+
 not_zero11.preheader:
   %tmp13 = icmp ugt i32 %length.i, %length.i.88
   %tmp14 = select i1 %tmp13, i32 %length.i.88, i32 %length.i
@@ -23,8 +23,8 @@ not_zero11:
   br i1 %tmp23, label %not_zero11, label %main.exit.selector
 
 main.exit.selector:
-; CHECK-LABEL: main.exit.selector:
-; CHECK: %tmp24 = icmp slt i32 %tmp14, %length.i
+
+
   %tmp24 = icmp slt i32 %tmp22, %length.i
   br i1 %tmp24, label %not_zero11.postloop, label %leave
 

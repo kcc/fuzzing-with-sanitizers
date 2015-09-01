@@ -1,26 +1,26 @@
-; RUN: llc -verify-machineinstrs -mtriple=i386--netbsd < %s | FileCheck %s
-; Regression test for http://reviews.llvm.org/D5701
 
-; ModuleID = 'xxhash.i'
+
+
+
 target datalayout = "e-m:e-p:32:32-f64:32:64-f80:32-n8:16:32-S128"
 target triple = "i386--netbsd"
 
-; CHECK-LABEL: fn1
-; CHECK:       shldl {{.*#+}} 4-byte Folded Spill
-; CHECK:       orl   {{.*#+}} 4-byte Folded Reload
-; CHECK:       shldl {{.*#+}} 4-byte Folded Spill
-; CHECK:       orl   {{.*#+}} 4-byte Folded Reload
-; CHECK:       addl  {{.*#+}} 4-byte Folded Reload
-; CHECK:       imull {{.*#+}} 4-byte Folded Reload
-; CHECK:       orl   {{.*#+}} 4-byte Folded Reload
-; CHECK:       retl
+
+
+
+
+
+
+
+
+
 
 %struct.XXH_state64_t = type { i32, i32, i64, i64, i64 }
 
 @a = common global i32 0, align 4
 @b = common global i64 0, align 8
 
-; Function Attrs: nounwind uwtable
+
 define i64 @fn1() #0 {
 entry:
   %0 = load i32, i32* @a, align 4, !tbaa !1
@@ -30,7 +30,7 @@ entry:
   %tobool = icmp eq i32 %2, 0
   br i1 %tobool, label %if.else, label %if.then
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %v3 = getelementptr inbounds %struct.XXH_state64_t, %struct.XXH_state64_t* %1, i32 0, i32 3
   %3 = load i64, i64* %v3, align 4, !tbaa !8
   %v4 = getelementptr inbounds %struct.XXH_state64_t, %struct.XXH_state64_t* %1, i32 0, i32 4
@@ -53,13 +53,13 @@ if.then:                                          ; preds = %entry
   %mul8 = mul nsw i64 %xor, 1400714785074694791
   br label %if.end
 
-if.else:                                          ; preds = %entry
+if.else:                                          
   %6 = load i64, i64* @b, align 8, !tbaa !11
   %xor10 = xor i64 %6, -4417276706812531889
   %mul11 = mul nsw i64 %xor10, 400714785074694791
   br label %if.end
 
-if.end:                                           ; preds = %if.else, %if.then
+if.end:                                           
   %storemerge.in = phi i64 [ %mul11, %if.else ], [ %mul8, %if.then ]
   %storemerge = add i64 %storemerge.in, -8796714831421723037
   store i64 %storemerge, i64* @b, align 8, !tbaa !11

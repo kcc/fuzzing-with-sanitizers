@@ -1,7 +1,7 @@
-; RUN: llc -march=xcore < %s | FileCheck %s
 
-; CHECK-LABEL: test:
-; CHECK-NOT: zext
+
+
+
 define void @test(i8* %s1) {
 entry:
   %u8 = load i8, i8* %s1, align 1

@@ -1,4 +1,4 @@
-; RUN: llc < %s
+
 
 @c = external global i32, align 4
 

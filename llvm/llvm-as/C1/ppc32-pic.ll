@@ -1,4 +1,4 @@
-; RUN: llc < %s -mtriple=powerpc-unknown-linux-gnu -relocation-model=pic | FileCheck -check-prefix=SMALL-BSS %s
+
 @bar = common global i32 0, align 4
 
 declare i32 @call_foo(i32, ...)
@@ -12,13 +12,13 @@ entry:
 
 !llvm.module.flags = !{!0}
 !0 = !{i32 1, !"PIC Level", i32 1}
-; SMALL-BSS-LABEL:foo:
-; SMALL-BSS:         stw 30, -8(1)
-; SMALL-BSS:         stwu 1, -32(1)
-; SMALL-BSS:         bl _GLOBAL_OFFSET_TABLE_@local-4
-; SMALL-BSS:         mflr 30
-; SMALL-BSS-DAG:     stw {{[0-9]+}}, 8(1)
-; SMALL-BSS-DAG:     lwz [[VREG:[0-9]+]], bar@GOT(30)
-; SMALL-BSS-DAG:     lwz {{[0-9]+}}, 0([[VREG]])
-; SMALL-BSS:         bl call_foo@PLT
-; SMALL-BSS:         lwz 30, -8(1)
+
+
+
+
+
+
+
+
+
+

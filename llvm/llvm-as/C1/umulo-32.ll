@@ -1,10 +1,10 @@
-; RUN: llc < %s -mtriple=thumbv6-apple-darwin | FileCheck %s
+
 
 %umul.ty = type { i32, i1 }
 
 define i32 @test1(i32 %a) nounwind {
-; CHECK: test1:
-; CHECK: muldi3
+
+
   %tmp0 = tail call %umul.ty @llvm.umul.with.overflow.i32(i32 %a, i32 37)
   %tmp1 = extractvalue %umul.ty %tmp0, 0
   %tmp2 = select i1 undef, i32 -1, i32 %tmp1
@@ -14,12 +14,12 @@ define i32 @test1(i32 %a) nounwind {
 declare %umul.ty @llvm.umul.with.overflow.i32(i32, i32) nounwind readnone
 
 define i32 @test2(i32 %argc, i8** %argv) ssp {
-; CHECK: test2:
-; CHECK: str     r0
-; CHECK: movs    r2
-; CHECK: mov     r1
-; CHECK: mov     r3
-; CHECK: muldi3
+
+
+
+
+
+
 %1 = alloca i32, align 4
 %2 = alloca i32, align 4
 %3 = alloca i8**, align 4

@@ -1,5 +1,5 @@
-; RUN: llc -march=hexagon < %s | FileCheck %s
-; CHECK: minu
+
+
 
 define zeroext i16 @f(i16* noalias nocapture %src) nounwind readonly {
 entry:

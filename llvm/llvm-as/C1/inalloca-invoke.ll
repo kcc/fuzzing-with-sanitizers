@@ -1,4 +1,4 @@
-; RUN: llc < %s -mtriple=i686-pc-win32 | FileCheck %s
+
 
 %Iter = type { i32, i32, i32 }
 
@@ -21,34 +21,34 @@ blah:
   %beg = getelementptr %frame.reverse, %frame.reverse* %rev_args, i32 0, i32 0
   %end = getelementptr %frame.reverse, %frame.reverse* %rev_args, i32 0, i32 1
 
-; CHECK:  calll   __chkstk
-; CHECK:  movl %esp, %[[beg:[^ ]*]]
-; CHECK:  leal 12(%[[beg]]), %[[end:[^ ]*]]
+
+
+
 
   call void @begin(%Iter* sret %temp.lvalue)
-; CHECK:  calll _begin
+
 
   invoke void @plus(%Iter* sret %end, %Iter* %temp.lvalue, i32 4)
           to label %invoke.cont unwind label %lpad
 
-;  Uses end as sret param.
-; CHECK:  pushl %[[end]]
-; CHECK:  calll _plus
+
+
+
 
 invoke.cont:
   call void @begin(%Iter* sret %beg)
 
-; CHECK:  pushl %[[beg]]
-; CHECK:  calll _begin
+
+
 
   invoke void @reverse(%frame.reverse* inalloca align 4 %rev_args)
           to label %invoke.cont5 unwind label %lpad
 
-invoke.cont5:                                     ; preds = %invoke.cont
+invoke.cont5:                                     
   call void @llvm.stackrestore(i8* %inalloca.save)
   ret i32 0
 
-lpad:                                             ; preds = %invoke.cont, %entry
+lpad:                                             
   %lp = landingpad { i8*, i32 }
           cleanup
   unreachable

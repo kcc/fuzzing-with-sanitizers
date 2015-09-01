@@ -1,6 +1,6 @@
-; RUN: opt < %s -instcombine -S | grep "%C = xor i1 %A, true"
-; RUN: opt < %s -instcombine -S | grep "ret i1 false"
-; PR2539
+
+
+
 
 define i1 @test1(i1 %A) {
 	%B = zext i1 %A to i32
@@ -11,7 +11,7 @@ define i1 @test1(i1 %A) {
 
 define i1 @test2(i1 zeroext  %b) {
 entry:
-	%cmptmp = icmp slt i1 %b, true		; <i1> [#uses=1]
+	%cmptmp = icmp slt i1 %b, true		
 	ret i1 %cmptmp
 }
 

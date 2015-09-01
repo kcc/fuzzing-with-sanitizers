@@ -1,10 +1,10 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv5 < %s | FileCheck %s
 
-; We shouldn't generate a hardware loop in this case because the initial
-; value may be zero, which means the endloop instruction will not decrement
-; the loop counter, and the loop will execute only once.
 
-; CHECK-NOT: loop0
+
+
+
+
+
 
 define void @foo(i32 %count, i32 %v) #0 {
 entry:

@@ -1,14 +1,14 @@
-; RUN: opt < %s -loop-reduce -S | FileCheck %s
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.9.0"
 
-; LSR shouldn't normalize IV if it can't be denormalized to the original
-; expression.  In this testcase, the normalized expression was denormalized to
-; an expression different from the original, and we were losing sign extension.
 
-; CHECK:    [[TMP:%[a-z]+]] = trunc i32 {{.*}} to i8
-; CHECK:     {{%[a-z0-9]+}} = sext i8 [[TMP]] to i32
+
+
+
+
+
 
 @j = common global i32 0, align 4
 @c = common global i32 0, align 4
@@ -21,7 +21,7 @@ target triple = "x86_64-apple-macosx10.9.0"
 @a = common global i32 0, align 4
 @b = common global i16 0, align 2
 
-; Function Attrs: nounwind optsize ssp uwtable
+
 define i32 @main() #0 {
 entry:
   store i8 0, i8* @h, align 1
@@ -33,21 +33,21 @@ entry:
   %.lobit.not = xor i32 %.lobit, 1
   br label %for.body
 
-for.body:                                         ; preds = %entry, %fn3.exit
+for.body:                                         
   %inc9 = phi i8 [ 0, %entry ], [ %inc, %fn3.exit ]
   %conv = sext i8 %inc9 to i32
   br i1 %tobool.i, label %fn3.exit, label %land.rhs.i
 
-land.rhs.i:                                       ; preds = %for.body
+land.rhs.i:                                       
   store i32 0, i32* @c, align 4
   br label %fn3.exit
 
-fn3.exit:                                         ; preds = %for.body, %land.rhs.i
+fn3.exit:                                         
   %inc = add i8 %inc9, 1
   %cmp = icmp sgt i8 %inc, -1
   br i1 %cmp, label %for.body, label %for.end
 
-for.end:                                          ; preds = %fn3.exit
+for.end:                                          
   %.lobit.not. = select i1 %cmp3, i32 %.lobit.not, i32 0
   store i32 %conv, i32* @g, align 4
   store i32 %.lobit.not., i32* @i, align 4
@@ -59,7 +59,7 @@ for.end:                                          ; preds = %fn3.exit
   ret i32 0
 }
 
-; Function Attrs: nounwind optsize
+
 declare i32 @printf(i8* nocapture readonly, ...) #1
 
 attributes #0 = { nounwind optsize ssp uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

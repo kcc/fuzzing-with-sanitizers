@@ -1,16 +1,16 @@
-;RUN: llc < %s -march=r600 -mcpu=redwood | FileCheck %s
 
-; Exactly one constant vector can be folded into dot4, which means exactly
-; 4 MOV instructions
-; CHECK: {{^}}main:
-; CHECK: MOV
-; CHECK: MOV
-; CHECK: MOV
-; CHECK: MOV
-; CHECK-NOT: MOV
-; CHECK-NOT: MOV
-; CHECK-NOT: MOV
-; CHECK-NOT: MOV
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @main(float addrspace(1)* %out) {
 main_body:

@@ -1,17 +1,17 @@
-; From source:
-; int f(int a, int b) {
-;   return a   //
-;          &&  //
-;          b;
-; }
 
-; Check that the comparison of 'a' is attributed to line 2, not 3.
 
-; CHECK: .loc{{ +}}1{{ +}}2
-; CHECK-NOT: .loc{{ }}
-; CHECK: cmp
 
-; Function Attrs: nounwind uwtable
+
+
+
+
+
+
+
+
+
+
+
 define i32 @_Z1fii(i32 %a, i32 %b) #0 {
 entry:
   %a.addr = alloca i32, align 4
@@ -22,12 +22,12 @@ entry:
   %tobool = icmp ne i32 %0, 0, !dbg !10
   br i1 %tobool, label %land.rhs, label %land.end, !dbg !11
 
-land.rhs:                                         ; preds = %entry
+land.rhs:                                         
   %1 = load i32, i32* %b.addr, align 4, !dbg !12
   %tobool1 = icmp ne i32 %1, 0, !dbg !12
   br label %land.end
 
-land.end:                                         ; preds = %land.rhs, %entry
+land.end:                                         
   %2 = phi i1 [ false, %entry ], [ %tobool1, %land.rhs ]
   %conv = zext i1 %2 to i32, !dbg !10
   ret i32 %conv, !dbg !13

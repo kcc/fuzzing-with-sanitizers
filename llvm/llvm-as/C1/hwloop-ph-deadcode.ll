@@ -1,9 +1,9 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv5 -O2 -disable-block-placement=0 < %s | FileCheck %s
 
-; Test that there is no redundant register assignment in the hardware loop
-; preheader.
 
-; CHECK-NOT: r{{.*}} = #5
+
+
+
+
 
 @g = external global i32
 

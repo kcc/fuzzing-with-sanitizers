@@ -1,5 +1,5 @@
-;RUN: llc < %s -march=r600 -mcpu=cayman -stress-sched -verify-misched -verify-machineinstrs
-;REQUIRES: asserts
+
+
 
 define void @main() {
 main_body:
@@ -28,7 +28,7 @@ main_body:
   %22 = extractelement <4 x float> %21, i32 2
   br label %LOOP
 
-LOOP:                                             ; preds = %IF31, %main_body
+LOOP:                                             
   %temp12.0 = phi float [ 0.000000e+00, %main_body ], [ %47, %IF31 ]
   %temp6.0 = phi float [ %22, %main_body ], [ %temp6.1, %IF31 ]
   %temp5.0 = phi float [ %20, %main_body ], [ %temp5.1, %IF31 ]
@@ -42,7 +42,7 @@ LOOP:                                             ; preds = %IF31, %main_body
   %29 = icmp ne i32 %28, 0
   br i1 %29, label %IF, label %LOOP29
 
-IF:                                               ; preds = %LOOP
+IF:                                               
   %30 = call float @llvm.AMDIL.clamp.(float %temp4.0, float 0.000000e+00, float 1.000000e+00)
   %31 = call float @llvm.AMDIL.clamp.(float %temp5.0, float 0.000000e+00, float 1.000000e+00)
   %32 = call float @llvm.AMDIL.clamp.(float %temp6.0, float 0.000000e+00, float 1.000000e+00)
@@ -54,7 +54,7 @@ IF:                                               ; preds = %LOOP
   call void @llvm.R600.store.swizzle(<4 x float> %37, i32 0, i32 0)
   ret void
 
-LOOP29:                                           ; preds = %LOOP, %ENDIF30
+LOOP29:                                           
   %temp6.1 = phi float [ %temp4.1, %ENDIF30 ], [ %temp6.0, %LOOP ]
   %temp5.1 = phi float [ %temp6.1, %ENDIF30 ], [ %temp5.0, %LOOP ]
   %temp4.1 = phi float [ %temp5.1, %ENDIF30 ], [ %temp4.0, %LOOP ]
@@ -68,13 +68,13 @@ LOOP29:                                           ; preds = %LOOP, %ENDIF30
   %44 = icmp ne i32 %43, 0
   br i1 %44, label %IF31, label %ENDIF30
 
-IF31:                                             ; preds = %LOOP29
+IF31:                                             
   %45 = bitcast float %temp12.0 to i32
   %46 = add i32 %45, 1
   %47 = bitcast i32 %46 to float
   br label %LOOP
 
-ENDIF30:                                          ; preds = %LOOP29
+ENDIF30:                                          
   %48 = bitcast float %temp20.0 to i32
   %49 = add i32 %48, 1
   %50 = bitcast i32 %49 to float

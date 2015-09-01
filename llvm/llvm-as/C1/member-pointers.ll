@@ -1,21 +1,21 @@
-; REQUIRES: object-emission
-; XFAIL: hexagon
 
-; RUN: %llc_dwarf -filetype=obj -O0 < %s > %t
-; RUN: llvm-dwarfdump -debug-dump=info %t | FileCheck %s
-; CHECK: DW_TAG_ptr_to_member_type
-; CHECK: DW_TAG_ptr_to_member_type
-; CHECK-NEXT: DW_AT_type [DW_FORM_ref4]       (cu + {{.*}} => {[[TYPE:0x[0-9a-f]+]]})
-; CHECK: [[TYPE]]:   DW_TAG_subroutine_type
-; CHECK: DW_TAG_formal_parameter
-; CHECK-NEXT: DW_AT_type
-; CHECK-NEXT: DW_AT_artificial [DW_FORM_flag
-; IR generated from clang -g with the following source:
-; struct S {
-; };
-;
-; int S::*x = 0;
-; void (S::*y)(int) = 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @x = global i64 -1, align 8
 @y = global { i64, i64 } zeroinitializer, align 8

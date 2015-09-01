@@ -1,7 +1,7 @@
-; RUN: llc -O3 -mcpu=cortex-a53 -mtriple=aarch64--linux-gnu %s -o - | FileCheck %s
-; PR20188: don't crash when merging sexts.
 
-; CHECK: foo:
+
+
+
 define void @foo() unnamed_addr align 2 {
 entry:
   br label %invoke.cont145

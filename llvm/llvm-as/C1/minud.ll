@@ -1,5 +1,5 @@
-; RUN: llc -march=hexagon < %s | FileCheck %s
-; CHECK: minu
+
+
 
 define i64 @f(i64 %src, i64 %maxval) nounwind readnone {
 entry:

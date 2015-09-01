@@ -1,6 +1,6 @@
-;; RUN: opt -S < %s -indvars | FileCheck %s
 
-;; Check if IndVarSimplify understands !range metadata.
+
+
 
 declare void @abort()
 
@@ -16,7 +16,7 @@ loop:
   %idx = phi i32 [ %idx.inc, %loop.next ], [ 0, %loop.preheader ]
   %oob.pred = icmp slt i32 %idx, %length
   br i1 %oob.pred, label %loop.next, label %oob
-; CHECK: br i1 true, label %loop.next, label %oob
+
 
 loop.next:
   %idx.inc = add i32 %idx, 1

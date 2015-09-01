@@ -1,8 +1,8 @@
-; RUN: llc -march=mips -mattr=dsp < %s | FileCheck %s
 
-; CHECK-LABEL: select_v2q15_eq_:
-; CHECK: cmp.eq.ph ${{[0-9]+}}, ${{[0-9]+}}
-; CHECK: pick.ph ${{[0-9]+}}, $6, $7
+
+
+
+
 
 define { i32 } @select_v2q15_eq_(i32 %a0.coerce, i32 %a1.coerce, i32 %a2.coerce, i32 %a3.coerce) {
 entry:
@@ -17,9 +17,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: select_v2q15_lt_:
-; CHECK: cmp.lt.ph $4, $5
-; CHECK: pick.ph ${{[0-9]+}}, $6, $7
+
+
+
 
 define { i32 } @select_v2q15_lt_(i32 %a0.coerce, i32 %a1.coerce, i32 %a2.coerce, i32 %a3.coerce) {
 entry:
@@ -34,9 +34,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: select_v2q15_le_:
-; CHECK: cmp.le.ph $4, $5
-; CHECK: pick.ph ${{[0-9]+}}, $6, $7
+
+
+
 
 define { i32 } @select_v2q15_le_(i32 %a0.coerce, i32 %a1.coerce, i32 %a2.coerce, i32 %a3.coerce) {
 entry:
@@ -51,9 +51,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: select_v2q15_ne_:
-; CHECK: cmp.eq.ph ${{[0-9]+}}, ${{[0-9]+}}
-; CHECK: pick.ph ${{[0-9]+}}, $7, $6
+
+
+
 
 define { i32 } @select_v2q15_ne_(i32 %a0.coerce, i32 %a1.coerce, i32 %a2.coerce, i32 %a3.coerce) {
 entry:
@@ -68,9 +68,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: select_v2q15_gt_:
-; CHECK: cmp.le.ph $4, $5
-; CHECK: pick.ph ${{[0-9]+}}, $7, $6
+
+
+
 
 define { i32 } @select_v2q15_gt_(i32 %a0.coerce, i32 %a1.coerce, i32 %a2.coerce, i32 %a3.coerce) {
 entry:
@@ -85,9 +85,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: select_v2q15_ge_:
-; CHECK: cmp.lt.ph $4, $5
-; CHECK: pick.ph ${{[0-9]+}}, $7, $6
+
+
+
 
 define { i32 } @select_v2q15_ge_(i32 %a0.coerce, i32 %a1.coerce, i32 %a2.coerce, i32 %a3.coerce) {
 entry:
@@ -102,9 +102,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: select_v4ui8_eq_:
-; CHECK: cmpu.eq.qb ${{[0-9]+}}, ${{[0-9]+}}
-; CHECK: pick.qb ${{[0-9]+}}, $6, $7
+
+
+
 
 define { i32 } @select_v4ui8_eq_(i32 %a0.coerce, i32 %a1.coerce, i32 %a2.coerce, i32 %a3.coerce) {
 entry:
@@ -119,9 +119,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: select_v4ui8_lt_:
-; CHECK: cmpu.lt.qb $4, $5
-; CHECK: pick.qb ${{[0-9]+}}, $6, $7
+
+
+
 
 define { i32 } @select_v4ui8_lt_(i32 %a0.coerce, i32 %a1.coerce, i32 %a2.coerce, i32 %a3.coerce) {
 entry:
@@ -136,9 +136,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: select_v4ui8_le_:
-; CHECK: cmpu.le.qb $4, $5
-; CHECK: pick.qb ${{[0-9]+}}, $6, $7
+
+
+
 
 define { i32 } @select_v4ui8_le_(i32 %a0.coerce, i32 %a1.coerce, i32 %a2.coerce, i32 %a3.coerce) {
 entry:
@@ -153,9 +153,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: select_v4ui8_ne_:
-; CHECK: cmpu.eq.qb ${{[0-9]+}}, ${{[0-9]+}}
-; CHECK: pick.qb ${{[0-9]+}}, $7, $6
+
+
+
 
 define { i32 } @select_v4ui8_ne_(i32 %a0.coerce, i32 %a1.coerce, i32 %a2.coerce, i32 %a3.coerce) {
 entry:
@@ -170,9 +170,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: select_v4ui8_gt_:
-; CHECK: cmpu.le.qb $4, $5
-; CHECK: pick.qb ${{[0-9]+}}, $7, $6
+
+
+
 
 define { i32 } @select_v4ui8_gt_(i32 %a0.coerce, i32 %a1.coerce, i32 %a2.coerce, i32 %a3.coerce) {
 entry:
@@ -187,9 +187,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: select_v4ui8_ge_:
-; CHECK: cmpu.lt.qb $4, $5
-; CHECK: pick.qb ${{[0-9]+}}, $7, $6
+
+
+
 
 define { i32 } @select_v4ui8_ge_(i32 %a0.coerce, i32 %a1.coerce, i32 %a2.coerce, i32 %a3.coerce) {
 entry:
@@ -204,9 +204,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: select_v2ui16_lt_:
-; CHECK-NOT: cmp
-; CHECK-NOT: pick
+
+
+
 
 define { i32 } @select_v2ui16_lt_(i32 %a0.coerce, i32 %a1.coerce, i32 %a2.coerce, i32 %a3.coerce) {
 entry:
@@ -221,9 +221,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: select_v2ui16_le_:
-; CHECK-NOT: cmp
-; CHECK-NOT: pick
+
+
+
 
 define { i32 } @select_v2ui16_le_(i32 %a0.coerce, i32 %a1.coerce, i32 %a2.coerce, i32 %a3.coerce) {
 entry:
@@ -238,9 +238,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: select_v2ui16_gt_:
-; CHECK-NOT: cmp
-; CHECK-NOT: pick
+
+
+
 
 define { i32 } @select_v2ui16_gt_(i32 %a0.coerce, i32 %a1.coerce, i32 %a2.coerce, i32 %a3.coerce) {
 entry:
@@ -255,9 +255,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: select_v2ui16_ge_:
-; CHECK-NOT: cmp
-; CHECK-NOT: pick
+
+
+
 
 define { i32 } @select_v2ui16_ge_(i32 %a0.coerce, i32 %a1.coerce, i32 %a2.coerce, i32 %a3.coerce) {
 entry:
@@ -272,9 +272,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: select_v4i8_lt_:
-; CHECK-NOT: cmp
-; CHECK-NOT: pick
+
+
+
 
 define { i32 } @select_v4i8_lt_(i32 %a0.coerce, i32 %a1.coerce, i32 %a2.coerce, i32 %a3.coerce) {
 entry:
@@ -289,9 +289,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: select_v4i8_le_:
-; CHECK-NOT: cmp
-; CHECK-NOT: pick
+
+
+
 
 define { i32 } @select_v4i8_le_(i32 %a0.coerce, i32 %a1.coerce, i32 %a2.coerce, i32 %a3.coerce) {
 entry:
@@ -306,9 +306,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: select_v4i8_gt_:
-; CHECK-NOT: cmp
-; CHECK-NOT: pick
+
+
+
 
 define { i32 } @select_v4i8_gt_(i32 %a0.coerce, i32 %a1.coerce, i32 %a2.coerce, i32 %a3.coerce) {
 entry:
@@ -323,9 +323,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: select_v4i8_ge_:
-; CHECK-NOT: cmp
-; CHECK-NOT: pick
+
+
+
 
 define { i32 } @select_v4i8_ge_(i32 %a0.coerce, i32 %a1.coerce, i32 %a2.coerce, i32 %a3.coerce) {
 entry:
@@ -340,9 +340,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: compare_v2q15_eq_:
-; CHECK: cmp.eq.ph ${{[0-9]+}}, ${{[0-9]+}}
-; CHECK: pick.ph ${{[0-9]+}}, ${{[a-z0-9]+}}, ${{[a-z0-9]+}}
+
+
+
 
 define { i32 } @compare_v2q15_eq_(i32 %a0.coerce, i32 %a1.coerce) {
 entry:
@@ -355,9 +355,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: compare_v2q15_lt_:
-; CHECK: cmp.lt.ph $4, $5
-; CHECK: pick.ph ${{[0-9]+}}, ${{[a-z0-9]+}}, ${{[a-z0-9]+}}
+
+
+
 
 define { i32 } @compare_v2q15_lt_(i32 %a0.coerce, i32 %a1.coerce) {
 entry:
@@ -370,9 +370,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: compare_v2q15_le_:
-; CHECK: cmp.le.ph $4, $5
-; CHECK: pick.ph ${{[0-9]+}}, ${{[a-z0-9]+}}, ${{[a-z0-9]+}}
+
+
+
 
 define { i32 } @compare_v2q15_le_(i32 %a0.coerce, i32 %a1.coerce) {
 entry:
@@ -385,9 +385,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: compare_v2q15_ne_:
-; CHECK: cmp.eq.ph ${{[0-9]+}}, ${{[0-9]+}}
-; CHECK: pick.ph ${{[0-9]+}}, ${{[a-z0-9]+}}, ${{[a-z0-9]+}}
+
+
+
 
 define { i32 } @compare_v2q15_ne_(i32 %a0.coerce, i32 %a1.coerce) {
 entry:
@@ -400,9 +400,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: compare_v2q15_gt_:
-; CHECK: cmp.le.ph $4, $5
-; CHECK: pick.ph ${{[0-9]+}}, ${{[a-z0-9]+}}, ${{[a-z0-9]+}}
+
+
+
 
 define { i32 } @compare_v2q15_gt_(i32 %a0.coerce, i32 %a1.coerce) {
 entry:
@@ -415,9 +415,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: compare_v2q15_ge_:
-; CHECK: cmp.lt.ph $4, $5
-; CHECK: pick.ph ${{[0-9]+}}, ${{[a-z0-9]+}}, ${{[a-z0-9]+}}
+
+
+
 
 define { i32 } @compare_v2q15_ge_(i32 %a0.coerce, i32 %a1.coerce) {
 entry:
@@ -430,9 +430,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: compare_v4ui8_eq_:
-; CHECK: cmpu.eq.qb ${{[0-9]+}}, ${{[0-9]+}}
-; CHECK: pick.qb ${{[0-9]+}}, ${{[a-z0-9]+}}, ${{[a-z0-9]+}}
+
+
+
 
 define { i32 } @compare_v4ui8_eq_(i32 %a0.coerce, i32 %a1.coerce) {
 entry:
@@ -445,9 +445,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: compare_v4ui8_lt_:
-; CHECK: cmpu.lt.qb $4, $5
-; CHECK: pick.qb ${{[0-9]+}}, ${{[a-z0-9]+}}, ${{[a-z0-9]+}}
+
+
+
 
 define { i32 } @compare_v4ui8_lt_(i32 %a0.coerce, i32 %a1.coerce) {
 entry:
@@ -460,9 +460,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: compare_v4ui8_le_:
-; CHECK: cmpu.le.qb $4, $5
-; CHECK: pick.qb ${{[0-9]+}}, ${{[a-z0-9]+}}, ${{[a-z0-9]+}}
+
+
+
 
 define { i32 } @compare_v4ui8_le_(i32 %a0.coerce, i32 %a1.coerce) {
 entry:
@@ -475,9 +475,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: compare_v4ui8_ne_:
-; CHECK: cmpu.eq.qb ${{[0-9]+}}, ${{[0-9]+}}
-; CHECK: pick.qb ${{[0-9]+}}, ${{[a-z0-9]+}}, ${{[a-z0-9]+}}
+
+
+
 
 define { i32 } @compare_v4ui8_ne_(i32 %a0.coerce, i32 %a1.coerce) {
 entry:
@@ -490,9 +490,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: compare_v4ui8_gt_:
-; CHECK: cmpu.le.qb $4, $5
-; CHECK: pick.qb ${{[0-9]+}}, ${{[a-z0-9]+}}, ${{[a-z0-9]+}}
+
+
+
 
 define { i32 } @compare_v4ui8_gt_(i32 %a0.coerce, i32 %a1.coerce) {
 entry:
@@ -505,9 +505,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: compare_v4ui8_ge_:
-; CHECK: cmpu.lt.qb $4, $5
-; CHECK: pick.qb ${{[0-9]+}}, ${{[a-z0-9]+}}, ${{[a-z0-9]+}}
+
+
+
 
 define { i32 } @compare_v4ui8_ge_(i32 %a0.coerce, i32 %a1.coerce) {
 entry:
@@ -520,9 +520,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: compare_v2ui16_lt_:
-; CHECK-NOT: cmp
-; CHECK-NOT: pick
+
+
+
 
 define { i32 } @compare_v2ui16_lt_(i32 %a0.coerce, i32 %a1.coerce) {
 entry:
@@ -535,9 +535,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: compare_v2ui16_le_:
-; CHECK-NOT: cmp
-; CHECK-NOT: pick
+
+
+
 
 define { i32 } @compare_v2ui16_le_(i32 %a0.coerce, i32 %a1.coerce) {
 entry:
@@ -550,9 +550,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: compare_v2ui16_gt_:
-; CHECK-NOT: cmp
-; CHECK-NOT: pick
+
+
+
 
 define { i32 } @compare_v2ui16_gt_(i32 %a0.coerce, i32 %a1.coerce) {
 entry:
@@ -565,9 +565,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: compare_v2ui16_ge_:
-; CHECK-NOT: cmp
-; CHECK-NOT: pick
+
+
+
 
 define { i32 } @compare_v2ui16_ge_(i32 %a0.coerce, i32 %a1.coerce) {
 entry:
@@ -580,9 +580,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: compare_v4i8_lt_:
-; CHECK-NOT: cmp
-; CHECK-NOT: pick
+
+
+
 
 define { i32 } @compare_v4i8_lt_(i32 %a0.coerce, i32 %a1.coerce) {
 entry:
@@ -595,9 +595,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: compare_v4i8_le_:
-; CHECK-NOT: cmp
-; CHECK-NOT: pick
+
+
+
 
 define { i32 } @compare_v4i8_le_(i32 %a0.coerce, i32 %a1.coerce) {
 entry:
@@ -610,9 +610,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: compare_v4i8_gt_:
-; CHECK-NOT: cmp
-; CHECK-NOT: pick
+
+
+
 
 define { i32 } @compare_v4i8_gt_(i32 %a0.coerce, i32 %a1.coerce) {
 entry:
@@ -625,9 +625,9 @@ entry:
   ret { i32 } %.fca.0.insert
 }
 
-; CHECK-LABEL: compare_v4i8_ge_:
-; CHECK-NOT: cmp
-; CHECK-NOT: pick
+
+
+
 
 define { i32 } @compare_v4i8_ge_(i32 %a0.coerce, i32 %a1.coerce) {
 entry:

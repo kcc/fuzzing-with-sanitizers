@@ -1,31 +1,31 @@
-; RUN: llc -mtriple=x86_64-apple-macosx %s -o %t -filetype=obj
-; RUN: llvm-dwarfdump -debug-dump=info %t | FileCheck %s
-;
-; struct A {
-;   A(int i);
-;   ~A();
-; };
-;
-; A::~A() {}
-;
-; void foo() {
-;   A a(1);
-; }
-;
-; rdar://problem/16362674
-;
-; Test that we do not emit a linkage name for the declaration of a destructor.
-; Test that we do emit a linkage name for a specific instance of it.
 
-; CHECK: DW_TAG_subprogram
-; CHECK: DW_TAG_subprogram
-; CHECK: DW_AT_name {{.*}} "~A"
-; CHECK-NOT: DW_AT_MIPS_linkage_name
-; CHECK: DW_TAG_subprogram
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_MIPS_linkage_name {{.*}} "_ZN1AD2Ev"
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_specification {{.*}} "~A"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
@@ -33,7 +33,7 @@ target triple = "x86_64-apple-macosx10.9.0"
 
 %struct.A = type { i8 }
 
-; Function Attrs: nounwind ssp uwtable
+
 define void @_ZN1AD2Ev(%struct.A* %this) unnamed_addr #0 align 2 {
 entry:
   %this.addr = alloca %struct.A*, align 8
@@ -43,10 +43,10 @@ entry:
   ret void, !dbg !29
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
-; Function Attrs: nounwind ssp uwtable
+
 define void @_ZN1AD1Ev(%struct.A* %this) unnamed_addr #0 align 2 {
 entry:
   %this.addr = alloca %struct.A*, align 8
@@ -57,7 +57,7 @@ entry:
   ret void, !dbg !33
 }
 
-; Function Attrs: ssp uwtable
+
 define void @_Z3foov() #2 {
 entry:
   %a = alloca %struct.A, align 1

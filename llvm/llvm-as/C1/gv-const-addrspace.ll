@@ -1,21 +1,21 @@
-; RUN: llc -march=amdgcn -mcpu=SI -verify-machineinstrs < %s | FileCheck -check-prefix=SI -check-prefix=GCN -check-prefix=FUNC %s
-; RUN: llc -march=amdgcn -mcpu=tonga -verify-machineinstrs < %s | FileCheck -check-prefix=VI -check-prefix=GCN -check-prefix=FUNC %s
-; RUN: llc -march=r600 -mcpu=redwood < %s | FileCheck -check-prefix=EG -check-prefix=FUNC %s
+
+
+
 
 
 @b = internal addrspace(2) constant [1 x i16] [ i16 7 ], align 2
 
 @float_gv = internal unnamed_addr addrspace(2) constant [5 x float] [float 0.0, float 1.0, float 2.0, float 3.0, float 4.0], align 4
 
-; FUNC-LABEL: {{^}}float:
-; GCN: s_load_dword
 
-; EG-DAG: MOV {{\** *}}T2.X
-; EG-DAG: MOV {{\** *}}T3.X
-; EG-DAG: MOV {{\** *}}T4.X
-; EG-DAG: MOV {{\** *}}T5.X
-; EG-DAG: MOV {{\** *}}T6.X
-; EG: MOVA_INT
+
+
+
+
+
+
+
+
 
 define void @float(float addrspace(1)* %out, i32 %index) {
 entry:
@@ -27,16 +27,16 @@ entry:
 
 @i32_gv = internal unnamed_addr addrspace(2) constant [5 x i32] [i32 0, i32 1, i32 2, i32 3, i32 4], align 4
 
-; FUNC-LABEL: {{^}}i32:
 
-; GCN: s_load_dword
 
-; EG-DAG: MOV {{\** *}}T2.X
-; EG-DAG: MOV {{\** *}}T3.X
-; EG-DAG: MOV {{\** *}}T4.X
-; EG-DAG: MOV {{\** *}}T5.X
-; EG-DAG: MOV {{\** *}}T6.X
-; EG: MOVA_INT
+
+
+
+
+
+
+
+
 
 define void @i32(i32 addrspace(1)* %out, i32 %index) {
 entry:
@@ -51,8 +51,8 @@ entry:
 
 @struct_foo_gv = internal unnamed_addr addrspace(2) constant [1 x %struct.foo] [ %struct.foo { float 16.0, [5 x i32] [i32 0, i32 1, i32 2, i32 3, i32 4] } ]
 
-; FUNC-LABEL: {{^}}struct_foo_gv_load:
-; GCN: s_load_dword
+
+
 
 define void @struct_foo_gv_load(i32 addrspace(1)* %out, i32 %index) {
   %gep = getelementptr inbounds [1 x %struct.foo], [1 x %struct.foo] addrspace(2)* @struct_foo_gv, i32 0, i32 0, i32 1, i32 %index
@@ -66,8 +66,8 @@ define void @struct_foo_gv_load(i32 addrspace(1)* %out, i32 %index) {
                                                                 <1 x i32> <i32 3>,
                                                                 <1 x i32> <i32 4> ]
 
-; FUNC-LABEL: {{^}}array_v1_gv_load:
-; GCN: s_load_dword
+
+
 define void @array_v1_gv_load(<1 x i32> addrspace(1)* %out, i32 %index) {
   %gep = getelementptr inbounds [4 x <1 x i32>], [4 x <1 x i32>] addrspace(2)* @array_v1_gv, i32 0, i32 %index
   %load = load <1 x i32>, <1 x i32> addrspace(2)* %gep, align 4

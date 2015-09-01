@@ -1,12 +1,12 @@
-; RUN: llc < %s
 
-; This used to assert with "Overran sorted position" in AssignTopologicalOrder
-; due to a cycle created in performPostLD1Combine.
+
+
+
 
 target datalayout = "e-m:o-i64:64-i128:128-n32:64-S128"
 target triple = "arm64-apple-ios7.0.0"
 
-; Function Attrs: nounwind ssp
+
 define void @f(double* %P1) #0 {
 entry:
   %arrayidx4 = getelementptr inbounds double, double* %P1, i64 1
@@ -20,15 +20,15 @@ entry:
   %cmp168 = fcmp olt double %6, undef
   br i1 %cmp168, label %if.then172, label %return
 
-if.then172:                                       ; preds = %cond.end90
+if.then172:                                       
   %7 = tail call i64 @llvm.objectsize.i64.p0i8(i8* undef, i1 false)
   br label %return
 
-return:                                           ; preds = %if.then172, %cond.end90, %entry
+return:                                           
   ret void
 }
 
-; Function Attrs: nounwind readnone
+
 declare i64 @llvm.objectsize.i64.p0i8(i8*, i1) #1
 
 attributes #0 = { nounwind ssp "less-precise-fpmad"="false" "no-frame-pointer-elim"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

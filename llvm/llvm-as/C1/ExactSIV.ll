@@ -1,26 +1,26 @@
-; RUN: opt < %s -analyze -basicaa -da | FileCheck %s
 
-; ModuleID = 'ExactSIV.bc'
+
+
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.6.0"
 
 
-;;  for (long unsigned i = 0; i < 10; i++) {
-;;    A[i + 10] = i;
-;;    *B++ = A[2*i + 1];
+
+
+
 
 define void @exact0(i32* %A, i32* %B) nounwind uwtable ssp {
 entry:
   br label %for.body
 
-; CHECK: da analyze - none!
-; CHECK: da analyze - flow [<=|<]!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
 
-for.body:                                         ; preds = %entry, %for.body
+
+
+
+
+
+
+for.body:                                         
   %i.02 = phi i64 [ 0, %entry ], [ %inc, %for.body ]
   %B.addr.01 = phi i32* [ %B, %entry ], [ %incdec.ptr, %for.body ]
   %conv = trunc i64 %i.02 to i32
@@ -37,27 +37,27 @@ for.body:                                         ; preds = %entry, %for.body
   %exitcond = icmp ne i64 %inc, 10
   br i1 %exitcond, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret void
 }
 
 
-;;  for (long unsigned i = 0; i < 10; i++) {
-;;    A[4*i + 10] = i;
-;;    *B++ = A[2*i + 1];
+
+
+
 
 define void @exact1(i32* %A, i32* %B) nounwind uwtable ssp {
 entry:
   br label %for.body
 
-; CHECK: da analyze - none!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
 
-for.body:                                         ; preds = %entry, %for.body
+
+
+
+
+
+
+for.body:                                         
   %i.02 = phi i64 [ 0, %entry ], [ %inc, %for.body ]
   %B.addr.01 = phi i32* [ %B, %entry ], [ %incdec.ptr, %for.body ]
   %conv = trunc i64 %i.02 to i32
@@ -75,27 +75,27 @@ for.body:                                         ; preds = %entry, %for.body
   %exitcond = icmp ne i64 %inc, 10
   br i1 %exitcond, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret void
 }
 
 
-;;  for (long unsigned i = 0; i < 10; i++) {
-;;    A[6*i] = i;
-;;    *B++ = A[i + 60];
+
+
+
 
 define void @exact2(i32* %A, i32* %B) nounwind uwtable ssp {
 entry:
   br label %for.body
 
-; CHECK: da analyze - none!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
 
-for.body:                                         ; preds = %entry, %for.body
+
+
+
+
+
+
+for.body:                                         
   %i.02 = phi i64 [ 0, %entry ], [ %inc, %for.body ]
   %B.addr.01 = phi i32* [ %B, %entry ], [ %incdec.ptr, %for.body ]
   %conv = trunc i64 %i.02 to i32
@@ -111,27 +111,27 @@ for.body:                                         ; preds = %entry, %for.body
   %exitcond = icmp ne i64 %inc, 10
   br i1 %exitcond, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret void
 }
 
 
-;;  for (long unsigned i = 0; i <= 10; i++) {
-;;    A[6*i] = i;
-;;    *B++ = A[i + 60];
+
+
+
 
 define void @exact3(i32* %A, i32* %B) nounwind uwtable ssp {
 entry:
   br label %for.body
 
-; CHECK: da analyze - none!
-; CHECK: da analyze - flow [>]!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
 
-for.body:                                         ; preds = %entry, %for.body
+
+
+
+
+
+
+for.body:                                         
   %i.02 = phi i64 [ 0, %entry ], [ %inc, %for.body ]
   %B.addr.01 = phi i32* [ %B, %entry ], [ %incdec.ptr, %for.body ]
   %conv = trunc i64 %i.02 to i32
@@ -147,27 +147,27 @@ for.body:                                         ; preds = %entry, %for.body
   %exitcond = icmp ne i64 %inc, 11
   br i1 %exitcond, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret void
 }
 
 
-;;  for (long unsigned i = 0; i < 12; i++) {
-;;    A[6*i] = i;
-;;    *B++ = A[i + 60];
+
+
+
 
 define void @exact4(i32* %A, i32* %B) nounwind uwtable ssp {
 entry:
   br label %for.body
 
-; CHECK: da analyze - none!
-; CHECK: da analyze - flow [>]!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
 
-for.body:                                         ; preds = %entry, %for.body
+
+
+
+
+
+
+for.body:                                         
   %i.02 = phi i64 [ 0, %entry ], [ %inc, %for.body ]
   %B.addr.01 = phi i32* [ %B, %entry ], [ %incdec.ptr, %for.body ]
   %conv = trunc i64 %i.02 to i32
@@ -183,27 +183,27 @@ for.body:                                         ; preds = %entry, %for.body
   %exitcond = icmp ne i64 %inc, 12
   br i1 %exitcond, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret void
 }
 
 
-;;  for (long unsigned i = 0; i <= 12; i++) {
-;;    A[6*i] = i;
-;;    *B++ = A[i + 60];
+
+
+
 
 define void @exact5(i32* %A, i32* %B) nounwind uwtable ssp {
 entry:
   br label %for.body
 
-; CHECK: da analyze - none!
-; CHECK: da analyze - flow [=>|<]!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
 
-for.body:                                         ; preds = %entry, %for.body
+
+
+
+
+
+
+for.body:                                         
   %i.02 = phi i64 [ 0, %entry ], [ %inc, %for.body ]
   %B.addr.01 = phi i32* [ %B, %entry ], [ %incdec.ptr, %for.body ]
   %conv = trunc i64 %i.02 to i32
@@ -219,27 +219,27 @@ for.body:                                         ; preds = %entry, %for.body
   %exitcond = icmp ne i64 %inc, 13
   br i1 %exitcond, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret void
 }
 
 
-;;  for (long unsigned i = 0; i < 18; i++) {
-;;    A[6*i] = i;
-;;    *B++ = A[i + 60];
+
+
+
 
 define void @exact6(i32* %A, i32* %B) nounwind uwtable ssp {
 entry:
   br label %for.body
 
-; CHECK: da analyze - none!
-; CHECK: da analyze - flow [=>|<]!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
 
-for.body:                                         ; preds = %entry, %for.body
+
+
+
+
+
+
+for.body:                                         
   %i.02 = phi i64 [ 0, %entry ], [ %inc, %for.body ]
   %B.addr.01 = phi i32* [ %B, %entry ], [ %incdec.ptr, %for.body ]
   %conv = trunc i64 %i.02 to i32
@@ -255,27 +255,27 @@ for.body:                                         ; preds = %entry, %for.body
   %exitcond = icmp ne i64 %inc, 18
   br i1 %exitcond, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret void
 }
 
 
-;;  for (long unsigned i = 0; i <= 18; i++) {
-;;    A[6*i] = i;
-;;    *B++ = A[i + 60];
+
+
+
 
 define void @exact7(i32* %A, i32* %B) nounwind uwtable ssp {
 entry:
   br label %for.body
 
-; CHECK: da analyze - none!
-; CHECK: da analyze - flow [*|<]!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
 
-for.body:                                         ; preds = %entry, %for.body
+
+
+
+
+
+
+for.body:                                         
   %i.02 = phi i64 [ 0, %entry ], [ %inc, %for.body ]
   %B.addr.01 = phi i32* [ %B, %entry ], [ %incdec.ptr, %for.body ]
   %conv = trunc i64 %i.02 to i32
@@ -291,27 +291,27 @@ for.body:                                         ; preds = %entry, %for.body
   %exitcond = icmp ne i64 %inc, 19
   br i1 %exitcond, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret void
 }
 
 
-;;  for (long unsigned i = 0; i < 10; i++) {
-;;    A[-6*i] = i;
-;;    *B++ = A[-i - 60];
+
+
+
 
 define void @exact8(i32* %A, i32* %B) nounwind uwtable ssp {
 entry:
   br label %for.body
 
-; CHECK: da analyze - none!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
 
-for.body:                                         ; preds = %entry, %for.body
+
+
+
+
+
+
+for.body:                                         
   %i.02 = phi i64 [ 0, %entry ], [ %inc, %for.body ]
   %B.addr.01 = phi i32* [ %B, %entry ], [ %incdec.ptr, %for.body ]
   %conv = trunc i64 %i.02 to i32
@@ -327,27 +327,27 @@ for.body:                                         ; preds = %entry, %for.body
   %exitcond = icmp ne i64 %inc, 10
   br i1 %exitcond, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret void
 }
 
 
-;;  for (long unsigned i = 0; i <= 10; i++) {
-;;    A[-6*i] = i;
-;;    *B++ = A[-i - 60];
+
+
+
 
 define void @exact9(i32* %A, i32* %B) nounwind uwtable ssp {
 entry:
   br label %for.body
 
-; CHECK: da analyze - none!
-; CHECK: da analyze - flow [>]!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
 
-for.body:                                         ; preds = %entry, %for.body
+
+
+
+
+
+
+for.body:                                         
   %i.02 = phi i64 [ 0, %entry ], [ %inc, %for.body ]
   %B.addr.01 = phi i32* [ %B, %entry ], [ %incdec.ptr, %for.body ]
   %conv = trunc i64 %i.02 to i32
@@ -363,27 +363,27 @@ for.body:                                         ; preds = %entry, %for.body
   %exitcond = icmp ne i64 %inc, 11
   br i1 %exitcond, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret void
 }
 
 
-;;  for (long unsigned i = 0; i < 12; i++) {
-;;    A[-6*i] = i;
-;;    *B++ = A[-i - 60];
+
+
+
 
 define void @exact10(i32* %A, i32* %B) nounwind uwtable ssp {
 entry:
   br label %for.body
 
-; CHECK: da analyze - none!
-; CHECK: da analyze - flow [>]!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
 
-for.body:                                         ; preds = %entry, %for.body
+
+
+
+
+
+
+for.body:                                         
   %i.02 = phi i64 [ 0, %entry ], [ %inc, %for.body ]
   %B.addr.01 = phi i32* [ %B, %entry ], [ %incdec.ptr, %for.body ]
   %conv = trunc i64 %i.02 to i32
@@ -399,27 +399,27 @@ for.body:                                         ; preds = %entry, %for.body
   %exitcond = icmp ne i64 %inc, 12
   br i1 %exitcond, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret void
 }
 
 
-;;  for (long unsigned i = 0; i <= 12; i++) {
-;;    A[-6*i] = i;
-;;    *B++ = A[-i - 60];
+
+
+
 
 define void @exact11(i32* %A, i32* %B) nounwind uwtable ssp {
 entry:
   br label %for.body
 
-; CHECK: da analyze - none!
-; CHECK: da analyze - flow [=>|<]!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
 
-for.body:                                         ; preds = %entry, %for.body
+
+
+
+
+
+
+for.body:                                         
   %i.02 = phi i64 [ 0, %entry ], [ %inc, %for.body ]
   %B.addr.01 = phi i32* [ %B, %entry ], [ %incdec.ptr, %for.body ]
   %conv = trunc i64 %i.02 to i32
@@ -435,27 +435,27 @@ for.body:                                         ; preds = %entry, %for.body
   %exitcond = icmp ne i64 %inc, 13
   br i1 %exitcond, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret void
 }
 
 
-;;  for (long unsigned i = 0; i < 18; i++) {
-;;    A[-6*i] = i;
-;;    *B++ = A[-i - 60];
+
+
+
 
 define void @exact12(i32* %A, i32* %B) nounwind uwtable ssp {
 entry:
   br label %for.body
 
-; CHECK: da analyze - none!
-; CHECK: da analyze - flow [=>|<]!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
 
-for.body:                                         ; preds = %entry, %for.body
+
+
+
+
+
+
+for.body:                                         
   %i.02 = phi i64 [ 0, %entry ], [ %inc, %for.body ]
   %B.addr.01 = phi i32* [ %B, %entry ], [ %incdec.ptr, %for.body ]
   %conv = trunc i64 %i.02 to i32
@@ -471,27 +471,27 @@ for.body:                                         ; preds = %entry, %for.body
   %exitcond = icmp ne i64 %inc, 18
   br i1 %exitcond, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret void
 }
 
 
-;;  for (long unsigned i = 0; i <= 18; i++) {
-;;    A[-6*i] = i;
-;;    *B++ = A[-i - 60];
+
+
+
 
 define void @exact13(i32* %A, i32* %B) nounwind uwtable ssp {
 entry:
   br label %for.body
 
-; CHECK: da analyze - none!
-; CHECK: da analyze - flow [*|<]!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
-; CHECK: da analyze - confused!
-; CHECK: da analyze - none!
 
-for.body:                                         ; preds = %entry, %for.body
+
+
+
+
+
+
+for.body:                                         
   %i.02 = phi i64 [ 0, %entry ], [ %inc, %for.body ]
   %B.addr.01 = phi i32* [ %B, %entry ], [ %incdec.ptr, %for.body ]
   %conv = trunc i64 %i.02 to i32
@@ -507,6 +507,6 @@ for.body:                                         ; preds = %entry, %for.body
   %exitcond = icmp ne i64 %inc, 19
   br i1 %exitcond, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret void
 }

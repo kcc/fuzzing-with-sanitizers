@@ -1,19 +1,19 @@
-; RUN: opt < %s -globalsmodref-aa -licm -disable-output
 
-@PL_regcomp_parse = internal global i8* null		; <i8**> [#uses=2]
+
+@PL_regcomp_parse = internal global i8* null		
 
 define void @test() {
 	br label %Outer
-Outer:		; preds = %Next, %0
+Outer:		
 	br label %Inner
-Inner:		; preds = %Inner, %Outer
-	%tmp.114.i.i.i = load i8*, i8** @PL_regcomp_parse		; <i8*> [#uses=1]
-	%tmp.115.i.i.i = load i8, i8* %tmp.114.i.i.i		; <i8> [#uses=0]
+Inner:		
+	%tmp.114.i.i.i = load i8*, i8** @PL_regcomp_parse		
+	%tmp.115.i.i.i = load i8, i8* %tmp.114.i.i.i		
 	store i8* null, i8** @PL_regcomp_parse
 	br i1 false, label %Inner, label %Next
-Next:		; preds = %Inner
+Next:		
 	br i1 false, label %Outer, label %Exit
-Exit:		; preds = %Next
+Exit:		
 	ret void
 }
 

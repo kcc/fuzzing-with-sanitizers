@@ -1,14 +1,14 @@
-; RUN: llc < %s -verify-machineinstrs -mtriple=arm64-none-linux-gnu -mattr=+neon -fp-contract=fast | FileCheck %s
 
-; FIXME: We should not generate ld/st for such register spill/fill, because the
-; test case seems very simple and the register pressure is not high. If the
-; spill/fill algorithm is optimized, this test case may not be triggered. And
-; then we can delete it.
+
+
+
+
+
 define i32 @spill.DPairReg(i32* %arg1, i32 %arg2) {
-; CHECK-LABEL: spill.DPairReg:
-; CHECK: ld2 { v{{[0-9]+}}.2s, v{{[0-9]+}}.2s }, [{{x[0-9]+|sp}}]
-; CHECK: st1 { v{{[0-9]+}}.2d, v{{[0-9]+}}.2d }, [{{x[0-9]+|sp}}]
-; CHECK: ld1 { v{{[0-9]+}}.2d, v{{[0-9]+}}.2d }, [{{x[0-9]+|sp}}]
+
+
+
+
 entry:
   %vld = tail call { <2 x i32>, <2 x i32> } @llvm.aarch64.neon.ld2.v2i32.p0i32(i32* %arg1)
   %cmp = icmp eq i32 %arg2, 0
@@ -25,10 +25,10 @@ if.end:
 }
 
 define i16 @spill.DTripleReg(i16* %arg1, i32 %arg2) {
-; CHECK-LABEL: spill.DTripleReg:
-; CHECK: ld3 { v{{[0-9]+}}.4h, v{{[0-9]+}}.4h, v{{[0-9]+}}.4h }, [{{x[0-9]+|sp}}]
-; CHECK: st1 { v{{[0-9]+}}.2d, v{{[0-9]+}}.2d, v{{[0-9]+}}.2d }, [{{x[0-9]+|sp}}]
-; CHECK: ld1 { v{{[0-9]+}}.2d, v{{[0-9]+}}.2d, v{{[0-9]+}}.2d }, [{{x[0-9]+|sp}}]
+
+
+
+
 entry:
   %vld = tail call { <4 x i16>, <4 x i16>, <4 x i16> } @llvm.aarch64.neon.ld3.v4i16.p0i16(i16* %arg1)
   %cmp = icmp eq i32 %arg2, 0
@@ -45,10 +45,10 @@ if.end:
 }
 
 define i16 @spill.DQuadReg(i16* %arg1, i32 %arg2) {
-; CHECK-LABEL: spill.DQuadReg:
-; CHECK: ld4 { v{{[0-9]+}}.4h, v{{[0-9]+}}.4h, v{{[0-9]+}}.4h, v{{[0-9]+}}.4h }, [{{x[0-9]+|sp}}]
-; CHECK: st1 { v{{[0-9]+}}.2d, v{{[0-9]+}}.2d, v{{[0-9]+}}.2d, v{{[0-9]+}}.2d }, [{{x[0-9]+|sp}}]
-; CHECK: ld1 { v{{[0-9]+}}.2d, v{{[0-9]+}}.2d, v{{[0-9]+}}.2d, v{{[0-9]+}}.2d }, [{{x[0-9]+|sp}}]
+
+
+
+
 entry:
   %vld = tail call { <4 x i16>, <4 x i16>, <4 x i16>, <4 x i16> } @llvm.aarch64.neon.ld4.v4i16.p0i16(i16* %arg1)
   %cmp = icmp eq i32 %arg2, 0
@@ -65,10 +65,10 @@ if.end:
 }
 
 define i32 @spill.QPairReg(i32* %arg1, i32 %arg2) {
-; CHECK-LABEL: spill.QPairReg:
-; CHECK: ld2 { v{{[0-9]+}}.4s, v{{[0-9]+}}.4s }, [{{x[0-9]+|sp}}]
-; CHECK: st1 { v{{[0-9]+}}.2d, v{{[0-9]+}}.2d }, [{{x[0-9]+|sp}}]
-; CHECK: ld1 { v{{[0-9]+}}.2d, v{{[0-9]+}}.2d }, [{{x[0-9]+|sp}}]
+
+
+
+
 entry:
   %vld = tail call { <4 x i32>, <4 x i32> } @llvm.aarch64.neon.ld2.v4i32.p0i32(i32* %arg1)
   %cmp = icmp eq i32 %arg2, 0
@@ -85,10 +85,10 @@ if.end:
 }
 
 define float @spill.QTripleReg(float* %arg1, i32 %arg2) {
-; CHECK-LABEL: spill.QTripleReg:
-; CHECK: ld3 { v{{[0-9]+}}.4s, v{{[0-9]+}}.4s, v{{[0-9]+}}.4s }, [{{x[0-9]+|sp}}]
-; CHECK: st1 { v{{[0-9]+}}.2d, v{{[0-9]+}}.2d, v{{[0-9]+}}.2d }, [{{x[0-9]+|sp}}]
-; CHECK: ld1 { v{{[0-9]+}}.2d, v{{[0-9]+}}.2d, v{{[0-9]+}}.2d }, [{{x[0-9]+|sp}}]
+
+
+
+
 entry:
   %vld3 = tail call { <4 x float>, <4 x float>, <4 x float> } @llvm.aarch64.neon.ld3.v4f32.p0f32(float* %arg1)
   %cmp = icmp eq i32 %arg2, 0
@@ -105,10 +105,10 @@ if.end:
 }
 
 define i8 @spill.QQuadReg(i8* %arg1, i32 %arg2) {
-; CHECK-LABEL: spill.QQuadReg:
-; CHECK: ld4 { v{{[0-9]+}}.16b, v{{[0-9]+}}.16b, v{{[0-9]+}}.16b, v{{[0-9]+}}.16b }, [{{x[0-9]+|sp}}]
-; CHECK: st1 { v{{[0-9]+}}.2d, v{{[0-9]+}}.2d, v{{[0-9]+}}.2d, v{{[0-9]+}}.2d }, [{{x[0-9]+|sp}}]
-; CHECK: ld1 { v{{[0-9]+}}.2d, v{{[0-9]+}}.2d, v{{[0-9]+}}.2d, v{{[0-9]+}}.2d }, [{{x[0-9]+|sp}}]
+
+
+
+
 entry:
   %vld = tail call { <16 x i8>, <16 x i8>, <16 x i8>, <16 x i8> } @llvm.aarch64.neon.ld4.v16i8.p0i8(i8* %arg1)
   %cmp = icmp eq i32 %arg2, 0
@@ -133,11 +133,11 @@ declare { <16 x i8>, <16 x i8>, <16 x i8>, <16 x i8> } @llvm.aarch64.neon.ld4.v1
 
 declare void @foo()
 
-; FIXME: We should not generate ld/st for such register spill/fill, because the
-; test case seems very simple and the register pressure is not high. If the
-; spill/fill algorithm is optimized, this test case may not be triggered. And
-; then we can delete it.
-; check the spill for Register Class QPair_with_qsub_0_in_FPR128Lo
+
+
+
+
+
 define <8 x i16> @test_2xFPR128Lo(i64 %got, i64* %ptr, <1 x i64> %a) {
   tail call void @llvm.aarch64.neon.st2lane.v1i64.p0i64(<1 x i64> zeroinitializer, <1 x i64> zeroinitializer, i64 0, i64* %ptr)
   tail call void @foo()
@@ -148,7 +148,7 @@ define <8 x i16> @test_2xFPR128Lo(i64 %got, i64* %ptr, <1 x i64> %a) {
   ret <8 x i16> %3
 }
 
-; check the spill for Register Class QTriple_with_qsub_0_in_FPR128Lo
+
 define <8 x i16> @test_3xFPR128Lo(i64 %got, i64* %ptr, <1 x i64> %a) {
   tail call void @llvm.aarch64.neon.st3lane.v1i64.p0i64(<1 x i64> zeroinitializer, <1 x i64> zeroinitializer, <1 x i64> zeroinitializer, i64 0, i64* %ptr)
   tail call void @foo()
@@ -159,7 +159,7 @@ define <8 x i16> @test_3xFPR128Lo(i64 %got, i64* %ptr, <1 x i64> %a) {
   ret <8 x i16> %3
 }
 
-; check the spill for Register Class QQuad_with_qsub_0_in_FPR128Lo
+
 define <8 x i16> @test_4xFPR128Lo(i64 %got, i64* %ptr, <1 x i64> %a) {
   tail call void @llvm.aarch64.neon.st4lane.v1i64.p0i64(<1 x i64> zeroinitializer, <1 x i64> zeroinitializer, <1 x i64> zeroinitializer, <1 x i64> zeroinitializer, i64 0, i64* %ptr)
   tail call void @foo()

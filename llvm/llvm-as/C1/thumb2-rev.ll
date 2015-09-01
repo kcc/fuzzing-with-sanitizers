@@ -1,8 +1,8 @@
-; RUN: llc -mtriple=thumb-eabi -mcpu=arm1156t2-s -mattr=+thumb2,+v7,+t2xtpk %s -o - | FileCheck %s
+
 
 define i32 @f1(i32 %a) {
-; CHECK-LABEL: f1:
-; CHECK: rev r0, r0
+
+
     %tmp = tail call i32 @llvm.bswap.i32(i32 %a)
     ret i32 %tmp
 }
@@ -10,8 +10,8 @@ define i32 @f1(i32 %a) {
 declare i32 @llvm.bswap.i32(i32) nounwind readnone
 
 define i32 @f2(i32 %X) {
-; CHECK-LABEL: f2:
-; CHECK: revsh r0, r0
+
+
         %tmp1 = lshr i32 %X, 8
         %tmp1.upgrd.1 = trunc i32 %tmp1 to i16
         %tmp3 = trunc i32 %X to i16

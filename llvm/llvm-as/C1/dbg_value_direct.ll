@@ -1,16 +1,16 @@
-; RUN: llc -filetype=obj -O0 < %s
-; Test that we handle DBG_VALUEs in a register without crashing.
-;
-; Generated from clang with -fsanitize=address:
-; struct A {
-;   A();
-;   A(const A&);
-; };
-;
-; A func(int) {
-;   A a;
-;   return a;
-; }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
@@ -22,7 +22,7 @@ target triple = "x86_64-unknown-linux-gnu"
 @llvm.global_ctors = appending global [1 x { i32, void ()* }] [{ i32, void ()* } { i32 1, void ()* @asan.module_ctor }]
 @__asan_gen_ = private unnamed_addr constant [16 x i8] c"1 32 4 5 .addr \00", align 1
 
-; Function Attrs: sanitize_address uwtable
+
 define void @_Z4funci(%struct.A* noalias sret %agg.result, i32) #0 "stack-protector-buffer-size"="1" {
 entry:
   %MyAlloca = alloca [96 x i8], align 32
@@ -56,19 +56,19 @@ entry:
   call void @llvm.dbg.declare(metadata i32* %3, metadata !23, metadata !28), !dbg !DILocation(scope: !4)
   br i1 %21, label %22, label %28
 
-; <label>:22                                      ; preds = %entry
+
   %23 = and i64 %16, 7
   %24 = add i64 %23, 3
   %25 = trunc i64 %24 to i8
   %26 = icmp sge i8 %25, %20
   br i1 %26, label %27, label %28
 
-; <label>:27                                      ; preds = %22
+
   call void @__asan_report_store4(i64 %16)
   call void asm sideeffect "", ""()
   unreachable
 
-; <label>:28                                      ; preds = %22, %entry
+
   store i32 %0, i32* %3, align 4
   call void @llvm.dbg.declare(metadata %struct.A* %agg.result, metadata !24, metadata !DIExpression(DW_OP_deref)), !dbg !25
   call void @_ZN1AC1Ev(%struct.A* %agg.result), !dbg !25
@@ -84,7 +84,7 @@ entry:
   ret void, !dbg !26
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
 declare void @_ZN1AC1Ev(%struct.A*) #2

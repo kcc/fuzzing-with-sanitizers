@@ -1,48 +1,48 @@
-; RUN: llc -mtriple aarch64_be-gnu-linux -O0 -filetype=obj -o %t_be.o %s
-; RUN: llvm-dwarfdump -debug-dump=info %t_be.o | FileCheck %s
 
-; Produced at -O0 from:
-; struct bitfield {
-;   int a : 2;
-;   int b : 32;
-;   int c : 1;
-;   int d : 28;
-; };
-; struct bitfield b;
 
-; Note that DWARF 2 counts bit offsets backwards from the high end of
-; the storage unit to the high end of the bit field.
 
-; CHECK: DW_TAG_member
-; CHECK-NEXT: DW_AT_name{{.*}}"a"
-; CHECK-NOT: DW_TAG_member
-; CHECK:      DW_AT_byte_size  {{.*}} (0x04)
-; CHECK-NEXT: DW_AT_bit_size   {{.*}} (0x02)
-; CHECK-NEXT: DW_AT_bit_offset {{.*}} (0x00)
-; CHECK-NEXT: DW_AT_data_member_location {{.*}} 00
 
-; CHECK: DW_TAG_member
-; CHECK-NEXT: DW_AT_name{{.*}}"b"
-; CHECK-NOT: DW_TAG_member
-; CHECK:      DW_AT_data_member_location {{.*}} 04
 
-; CHECK: DW_TAG_member
-; CHECK-NEXT: DW_AT_name{{.*}}"c"
-; CHECK-NOT: DW_TAG_member
-; CHECK:      DW_AT_byte_size  {{.*}} (0x04)
-; CHECK-NEXT: DW_AT_bit_size   {{.*}} (0x01)
-; CHECK-NEXT: DW_AT_bit_offset {{.*}} (0x00)
-; CHECK-NEXT: DW_AT_data_member_location {{.*}} 08
 
-; CHECK: DW_TAG_member
-; CHECK-NEXT: DW_AT_name{{.*}}"d"
-; CHECK-NOT: DW_TAG_member
-; CHECK:      DW_AT_byte_size  {{.*}} (0x04)
-; CHECK-NEXT: DW_AT_bit_size   {{.*}} (0x1c)
-; CHECK-NEXT: DW_AT_bit_offset {{.*}} (0x01)
-; CHECK-NEXT: DW_AT_data_member_location {{.*}} 08
 
-; ModuleID = 'bitfields.c'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "E-m:e-i64:64-i128:128-n32:64-S128"
 target triple = "aarch64_be--linux-gnu"
 

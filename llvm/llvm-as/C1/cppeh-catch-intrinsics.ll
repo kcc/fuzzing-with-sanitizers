@@ -1,8 +1,8 @@
-; RUN: opt -lint -disable-output < %s 2>&1 | FileCheck %s
 
-; This test is meant to prove that the Verifier is able to identify a variety
-; of errors with the llvm.eh.begincatch and llvm.eh.endcatch intrinsics.
-; See cppeh-catch-intrinsics-clean for correct uses.
+
+
+
+
 
 target triple = "x86_64-pc-windows-msvc"
 
@@ -12,15 +12,15 @@ declare void @llvm.eh.endcatch()
 
 @_ZTIi = external constant i8*
 
-; Function Attrs: uwtable
+
 define void @test_missing_endcatch() personality i8* bitcast (i32 (...)* @__CxxFrameHandler3 to i8*) {
-; CHECK: Some paths from llvm.eh.begincatch may not reach llvm.eh.endcatch
-; CHECK-NEXT: call void @llvm.eh.begincatch(i8* %exn, i8* null)
+
+
 entry:
   invoke void @_Z9may_throwv()
           to label %try.cont unwind label %lpad
 
-lpad:                                             ; preds = %entry
+lpad:                                             
   %0 = landingpad { i8*, i32 }
           catch i8* bitcast (i8** @_ZTIi to i8*)
   %exn = extractvalue { i8*, i32 } %0, 0
@@ -29,30 +29,30 @@ lpad:                                             ; preds = %entry
   %matches = icmp eq i32 %sel, %1
   br i1 %matches, label %catch, label %eh.resume
 
-catch:                                            ; preds = %lpad
+catch:                                            
   call void @llvm.eh.begincatch(i8* %exn, i8* null)
   call void @_Z10handle_intv()
   br label %invoke.cont2
 
-invoke.cont2:                                     ; preds = %catch
+invoke.cont2:                                     
   br label %try.cont
 
-try.cont:                                         ; preds = %invoke.cont2, %entry
+try.cont:                                         
   ret void
 
-eh.resume:                                        ; preds = %catch.dispatch
+eh.resume:                                        
   resume { i8*, i32 } %0
 }
 
-; Function Attrs: uwtable
+
 define void @test_missing_begincatch() personality i8* bitcast (i32 (...)* @__CxxFrameHandler3 to i8*) {
-; CHECK: llvm.eh.endcatch may be reachable without passing llvm.eh.begincatch
-; CHECK-NEXT:  call void @llvm.eh.endcatch()
+
+
 entry:
   invoke void @_Z9may_throwv()
           to label %try.cont unwind label %lpad
 
-lpad:                                             ; preds = %entry
+lpad:                                             
   %0 = landingpad { i8*, i32 }
           catch i8* bitcast (i8** @_ZTIi to i8*)
   %exn = extractvalue { i8*, i32 } %0, 0
@@ -61,31 +61,31 @@ lpad:                                             ; preds = %entry
   %matches = icmp eq i32 %sel, %1
   br i1 %matches, label %catch, label %eh.resume
 
-catch:                                            ; preds = %lpad
+catch:                                            
   call void @_Z10handle_intv()
   br label %invoke.cont2
 
-invoke.cont2:                                     ; preds = %catch
+invoke.cont2:                                     
   call void @llvm.eh.endcatch()
   br label %try.cont
 
-try.cont:                                         ; preds = %invoke.cont2, %entry
+try.cont:                                         
   ret void
 
-eh.resume:                                        ; preds = %catch.dispatch
+eh.resume:                                        
   resume { i8*, i32 } %0
 }
 
-; Function Attrs: uwtable
+
 define void @test_multiple_begin() personality i8* bitcast (i32 (...)* @__CxxFrameHandler3 to i8*) {
-; CHECK: llvm.eh.begincatch may be called a second time before llvm.eh.endcatch
-; CHECK-NEXT: call void @llvm.eh.begincatch(i8* %exn, i8* null)
-; CHECK-NEXT: call void @llvm.eh.begincatch(i8* %exn, i8* null)
+
+
+
 entry:
   invoke void @_Z9may_throwv()
           to label %try.cont unwind label %lpad
 
-lpad:                                             ; preds = %entry
+lpad:                                             
   %0 = landingpad { i8*, i32 }
           catch i8* bitcast (i8** @_ZTIi to i8*)
   %exn = extractvalue { i8*, i32 } %0, 0
@@ -94,33 +94,33 @@ lpad:                                             ; preds = %entry
   %matches = icmp eq i32 %sel, %1
   br i1 %matches, label %catch, label %eh.resume
 
-catch:                                            ; preds = %lpad
+catch:                                            
   call void @llvm.eh.begincatch(i8* %exn, i8* null)
   call void @_Z10handle_intv()
   br label %invoke.cont2
 
-invoke.cont2:                                     ; preds = %catch
+invoke.cont2:                                     
   call void @llvm.eh.begincatch(i8* %exn, i8* null)
   call void @llvm.eh.endcatch()
   br label %try.cont
 
-try.cont:                                         ; preds = %invoke.cont2, %entry
+try.cont:                                         
   ret void
 
-eh.resume:                                        ; preds = %catch.dispatch
+eh.resume:                                        
   resume { i8*, i32 } %0
 }
 
-; Function Attrs: uwtable
+
 define void @test_multiple_end() personality i8* bitcast (i32 (...)* @__CxxFrameHandler3 to i8*) {
-; CHECK: llvm.eh.endcatch may be called a second time after llvm.eh.begincatch
-; CHECK-NEXT:  call void @llvm.eh.endcatch()
-; CHECK-NEXT:  call void @llvm.eh.endcatch()
+
+
+
 entry:
   invoke void @_Z9may_throwv()
           to label %try.cont unwind label %lpad
 
-lpad:                                             ; preds = %entry
+lpad:                                             
   %0 = landingpad { i8*, i32 }
           catch i8* bitcast (i8** @_ZTIi to i8*)
   %exn = extractvalue { i8*, i32 } %0, 0
@@ -129,52 +129,52 @@ lpad:                                             ; preds = %entry
   %matches = icmp eq i32 %sel, %1
   br i1 %matches, label %catch, label %eh.resume
 
-catch:                                            ; preds = %lpad
+catch:                                            
   call void @llvm.eh.begincatch(i8* %exn, i8* null)
   call void @_Z10handle_intv()
   call void @llvm.eh.endcatch()
   br label %invoke.cont2
 
-invoke.cont2:                                     ; preds = %catch
+invoke.cont2:                                     
   call void @llvm.eh.endcatch()
   br label %try.cont
 
-try.cont:                                         ; preds = %invoke.cont2, %entry
+try.cont:                                         
   ret void
 
-eh.resume:                                        ; preds = %catch.dispatch
+eh.resume:                                        
   resume { i8*, i32 } %0
 }
 
 
-; Function Attrs: uwtable
+
 define void @test_begincatch_without_lpad() {
-; CHECK: llvm.eh.begincatch may be reachable without passing a landingpad
-; CHECK-NEXT: call void @llvm.eh.begincatch(i8* %exn, i8* null)
+
+
 entry:
   %exn = alloca i8
   call void @llvm.eh.begincatch(i8* %exn, i8* null)
   call void @_Z10handle_intv()
   br label %invoke.cont2
 
-invoke.cont2:                                     ; preds = %catch
+invoke.cont2:                                     
   call void @llvm.eh.endcatch()
   br label %try.cont
 
-try.cont:                                         ; preds = %invoke.cont2, %entry
+try.cont:                                         
   ret void
 }
 
-; Function Attrs: uwtable
+
 define void @test_branch_to_begincatch_with_no_lpad(i32 %fake.sel) personality i8* bitcast (i32 (...)* @__CxxFrameHandler3 to i8*) {
-; CHECK: llvm.eh.begincatch may be reachable without passing a landingpad
-; CHECK-NEXT: call void @llvm.eh.begincatch(i8* %exn2, i8* null)
+
+
 entry:
   %fake.exn = alloca i8
   invoke void @_Z9may_throwv()
           to label %catch unwind label %lpad
 
-lpad:                                             ; preds = %entry
+lpad:                                             
   %0 = landingpad { i8*, i32 }
           catch i8* bitcast (i8** @_ZTIi to i8*)
   %exn = extractvalue { i8*, i32 } %0, 0
@@ -186,7 +186,7 @@ lpad:                                             ; preds = %entry
   invoke void @_Z9may_throwv()
           to label %try.cont unwind label %lpad
 
-catch:                                            ; preds = %lpad, %entry
+catch:                                            
   %exn2 = phi i8* [%exn, %lpad], [%fake.exn, %entry]
   %sel2 = phi i32 [%sel, %lpad], [%fake.sel, %entry]
   call void @llvm.eh.begincatch(i8* %exn2, i8* null)
@@ -194,26 +194,26 @@ catch:                                            ; preds = %lpad, %entry
   %matches1 = icmp eq i32 %sel2, 0
   br i1 %matches1, label %invoke.cont2, label %invoke.cont3
 
-invoke.cont2:                                     ; preds = %catch
+invoke.cont2:                                     
   call void @llvm.eh.endcatch()
   br label %try.cont
 
-invoke.cont3:                                     ; preds = %catch
+invoke.cont3:                                     
   call void @llvm.eh.endcatch()
   br label %eh.resume
 
-try.cont:                                         ; preds = %invoke.cont2
+try.cont:                                         
   ret void
 
-eh.resume:                                        ; preds = %catch.dispatch
+eh.resume:                                        
   %lpad.val = insertvalue { i8*, i32 } undef, i32 0, 1
   resume { i8*, i32 } %lpad.val
 }
 
-; Function Attrs: uwtable
+
 define void @test_branch_missing_endcatch() personality i8* bitcast (i32 (...)* @__CxxFrameHandler3 to i8*) {
-; CHECK: Some paths from llvm.eh.begincatch may not reach llvm.eh.endcatch
-; CHECK-NEXT: call void @llvm.eh.begincatch(i8* %exn2, i8* null)
+
+
 entry:
   invoke void @_Z9may_throwv()
           to label %invoke.cont unwind label %lpad
@@ -222,7 +222,7 @@ invoke.cont:
   invoke void @_Z9may_throwv()
           to label %invoke.cont unwind label %lpad1
 
-lpad:                                             ; preds = %entry
+lpad:                                             
   %0 = landingpad { i8*, i32 }
           catch i8* bitcast (i8** @_ZTIi to i8*)
   %exn = extractvalue { i8*, i32 } %0, 0
@@ -234,7 +234,7 @@ lpad:                                             ; preds = %entry
   invoke void @_Z9may_throwv()
           to label %try.cont unwind label %lpad
 
-lpad1:                                            ; preds = %entry
+lpad1:                                            
   %l1.0 = landingpad { i8*, i32 }
 		  cleanup
           catch i8* bitcast (i8** @_ZTIi to i8*)
@@ -244,7 +244,7 @@ lpad1:                                            ; preds = %entry
   %matchesl1 = icmp eq i32 %sel1, %l1.1
   br i1 %matchesl1, label %catch, label %eh.resume
 
-catch:                                            ; preds = %lpad, %lpad1
+catch:                                            
   %exn2 = phi i8* [%exn, %lpad], [%exn1, %lpad1]
   %sel2 = phi i32 [%sel, %lpad], [%sel1, %lpad1]
   call void @llvm.eh.begincatch(i8* %exn2, i8* null)
@@ -252,17 +252,17 @@ catch:                                            ; preds = %lpad, %lpad1
   %matches1 = icmp eq i32 %sel2, 0
   br i1 %matches1, label %invoke.cont2, label %invoke.cont3
 
-invoke.cont2:                                     ; preds = %catch
+invoke.cont2:                                     
   call void @llvm.eh.endcatch()
   br label %try.cont
 
-invoke.cont3:                                     ; preds = %catch
+invoke.cont3:                                     
   br label %eh.resume
 
-try.cont:                                         ; preds = %invoke.cont2, %entry
+try.cont:                                         
   ret void
 
-eh.resume:                                        ; preds = %catch.dispatch
+eh.resume:                                        
   %lpad.val = insertvalue { i8*, i32 } undef, i32 0, 1
   resume { i8*, i32 } %lpad.val
 }
@@ -271,7 +271,7 @@ declare void @_Z9may_throwv()
 
 declare i32 @__CxxFrameHandler3(...)
 
-; Function Attrs: nounwind readnone
+
 declare i32 @llvm.eh.typeid.for(i8*)
 
 declare void @_Z10handle_intv()

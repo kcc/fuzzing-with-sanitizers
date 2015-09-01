@@ -1,56 +1,56 @@
-; RUN: opt < %s -simplifycfg -disable-output
-; PR 2777
-@g_103 = common global i32 0		; <i32*> [#uses=1]
+
+
+@g_103 = common global i32 0		
 
 define i32 @func_127(i32 %p_129) nounwind {
 entry:
-	load i32, i32* @g_103, align 4		; <i32>:0 [#uses=1]
-	icmp eq i32 %0, 0		; <i1>:1 [#uses=2]
+	load i32, i32* @g_103, align 4		
+	icmp eq i32 %0, 0		
 	br i1 %1, label %bb6.preheader, label %entry.return_crit_edge
 
-entry.return_crit_edge:		; preds = %entry
+entry.return_crit_edge:		
 	br label %return
 
-bb6.preheader:		; preds = %entry
+bb6.preheader:		
 	br i1 %1, label %bb6.preheader.split.us, label %bb6.preheader.split
 
-bb6.preheader.split.us:		; preds = %bb6.preheader
+bb6.preheader.split.us:		
 	br label %return.loopexit.split
 
-bb6.preheader.split:		; preds = %bb6.preheader
+bb6.preheader.split:		
 	br label %bb6
 
-bb6:		; preds = %bb17.bb6_crit_edge, %bb6.preheader.split
-	%indvar35 = phi i32 [ 0, %bb6.preheader.split ], [ %indvar.next36, %bb17.bb6_crit_edge ]		; <i32> [#uses=1]
-	%p_129_addr.3.reg2mem.0 = phi i32 [ %p_129_addr.2, %bb17.bb6_crit_edge ], [ %p_129, %bb6.preheader.split ]		; <i32> [#uses=3]
-	icmp eq i32 %p_129_addr.3.reg2mem.0, 0		; <i1>:2 [#uses=1]
+bb6:		
+	%indvar35 = phi i32 [ 0, %bb6.preheader.split ], [ %indvar.next36, %bb17.bb6_crit_edge ]		
+	%p_129_addr.3.reg2mem.0 = phi i32 [ %p_129_addr.2, %bb17.bb6_crit_edge ], [ %p_129, %bb6.preheader.split ]		
+	icmp eq i32 %p_129_addr.3.reg2mem.0, 0		
 	br i1 %2, label %bb6.bb17_crit_edge, label %bb8
 
-bb6.bb17_crit_edge:		; preds = %bb6
+bb6.bb17_crit_edge:		
 	br label %bb17
 
-bb8:		; preds = %bb6
+bb8:		
 	br label %bb13
 
-bb13:		; preds = %bb8
+bb13:		
 	br label %bb17
 
-bb17:		; preds = %bb13, %bb6.bb17_crit_edge
-	%p_129_addr.2 = phi i32 [ %p_129_addr.3.reg2mem.0, %bb13 ], [ %p_129_addr.3.reg2mem.0, %bb6.bb17_crit_edge ]		; <i32> [#uses=1]
-	%indvar.next36 = add i32 %indvar35, 1		; <i32> [#uses=2]
-	%exitcond37 = icmp eq i32 %indvar.next36, -1		; <i1> [#uses=1]
+bb17:		
+	%p_129_addr.2 = phi i32 [ %p_129_addr.3.reg2mem.0, %bb13 ], [ %p_129_addr.3.reg2mem.0, %bb6.bb17_crit_edge ]		
+	%indvar.next36 = add i32 %indvar35, 1		
+	%exitcond37 = icmp eq i32 %indvar.next36, -1		
 	br i1 %exitcond37, label %return.loopexit, label %bb17.bb6_crit_edge
 
-bb17.bb6_crit_edge:		; preds = %bb17
+bb17.bb6_crit_edge:		
 	br label %bb6
 
-return.loopexit:		; preds = %bb17
+return.loopexit:		
 	br label %return.loopexit.split
 
-return.loopexit.split:		; preds = %return.loopexit, %bb6.preheader.split.us
+return.loopexit.split:		
 	br label %return
 
-return:		; preds = %return.loopexit.split, %entry.return_crit_edge
+return:		
 	ret i32 1
 }
 

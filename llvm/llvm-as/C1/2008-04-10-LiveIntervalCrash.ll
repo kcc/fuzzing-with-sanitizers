@@ -1,4 +1,4 @@
-; RUN: llc < %s -mtriple=powerpc-apple-darwin
+
 
 define fastcc i64 @nonzero_bits1() nounwind  {
 entry:
@@ -54,47 +54,47 @@ entry:
 		 i32 106, label %bb1277
 		 i32 107, label %bb1343
 	]
-bb153:		; preds = %entry
+bb153:		
 	ret i64 0
-bb235:		; preds = %entry
+bb235:		
 	br i1 false, label %bb245, label %UnifiedReturnBlock
-bb245:		; preds = %bb235
+bb245:		
 	ret i64 0
-bb289:		; preds = %entry
+bb289:		
 	ret i64 0
-bb302:		; preds = %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry, %entry
+bb302:		
 	ret i64 0
-bb322:		; preds = %entry
+bb322:		
 	ret i64 0
-bb355:		; preds = %entry
+bb355:		
 	ret i64 0
-bb375:		; preds = %entry
+bb375:		
 	ret i64 0
-bb507:		; preds = %entry
+bb507:		
 	ret i64 0
-bb535:		; preds = %entry
+bb535:		
 	ret i64 0
-bb565:		; preds = %entry, %entry, %entry, %entry, %entry, %entry
+bb565:		
 	ret i64 0
-bb651:		; preds = %entry, %entry, %entry, %entry, %entry, %entry, %entry
+bb651:		
 	ret i64 0
-bb951:		; preds = %entry
+bb951:		
 	ret i64 0
-bb1100:		; preds = %entry, %entry, %entry, %entry
+bb1100:		
 	ret i64 0
-bb1277:		; preds = %entry, %entry
+bb1277:		
 	br i1 false, label %UnifiedReturnBlock, label %bb1284
-bb1284:		; preds = %bb1277
+bb1284:		
 	ret i64 0
-bb1310:		; preds = %entry
+bb1310:		
 	ret i64 0
-bb1343:		; preds = %entry
+bb1343:		
 	ret i64 1
-bb1344:		; preds = %entry
+bb1344:		
 	ret i64 0
-bb1385:		; preds = %entry
+bb1385:		
 	ret i64 0
-UnifiedReturnBlock:		; preds = %bb1277, %bb235, %entry
-	%UnifiedRetVal = phi i64 [ 0, %bb235 ], [ undef, %bb1277 ], [ -1, %entry ]		; <i64> [#uses=1]
+UnifiedReturnBlock:		
+	%UnifiedRetVal = phi i64 [ 0, %bb235 ], [ undef, %bb1277 ], [ -1, %entry ]		
 	ret i64 %UnifiedRetVal
 }

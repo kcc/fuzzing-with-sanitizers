@@ -1,7 +1,7 @@
-; RUN: %lli %s > /dev/null
 
-@X = global i32 7		; <i32*> [#uses=0]
-@msg = internal global [13 x i8] c"Hello World\0A\00"		; <[13 x i8]*> [#uses=1]
+
+@X = global i32 7		
+@msg = internal global [13 x i8] c"Hello World\0A\00"		
 
 declare void @printf([13 x i8]*, ...)
 

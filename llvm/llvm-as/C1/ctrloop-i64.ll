@@ -1,4 +1,4 @@
-; RUN: llc < %s -mcpu=ppc | FileCheck %s
+
 
 target datalayout = "E-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v128:128:128-n32"
 target triple = "powerpc-unknown-linux-gnu"
@@ -7,7 +7,7 @@ define i64 @foo(i64* nocapture %n, i64 %d) nounwind readonly {
 entry:
   br label %for.body
 
-for.body:                                         ; preds = %for.body, %entry
+for.body:                                         
   %i.06 = phi i32 [ 0, %entry ], [ %inc, %for.body ]
   %x.05 = phi i64 [ 0, %entry ], [ %conv1, %for.body ]
   %arrayidx = getelementptr inbounds i64, i64* %n, i32 %i.06
@@ -18,18 +18,18 @@ for.body:                                         ; preds = %for.body, %entry
   %exitcond = icmp eq i32 %inc, 2048
   br i1 %exitcond, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret i64 %conv1
 }
 
-; CHECK: @foo
-; CHECK-NOT: mtctr
+
+
 
 define i64 @foo2(i64* nocapture %n, i64 %d) nounwind readonly {
 entry:
   br label %for.body
 
-for.body:                                         ; preds = %for.body, %entry
+for.body:                                         
   %i.06 = phi i32 [ 0, %entry ], [ %inc, %for.body ]
   %x.05 = phi i64 [ 0, %entry ], [ %conv1, %for.body ]
   %arrayidx = getelementptr inbounds i64, i64* %n, i32 %i.06
@@ -40,18 +40,18 @@ for.body:                                         ; preds = %for.body, %entry
   %exitcond = icmp eq i32 %inc, 2048
   br i1 %exitcond, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret i64 %conv1
 }
 
-; CHECK: @foo2
-; CHECK-NOT: mtctr
+
+
 
 define i64 @foo3(i64* nocapture %n, i64 %d) nounwind readonly {
 entry:
   br label %for.body
 
-for.body:                                         ; preds = %for.body, %entry
+for.body:                                         
   %i.06 = phi i32 [ 0, %entry ], [ %inc, %for.body ]
   %x.05 = phi i64 [ 0, %entry ], [ %conv1, %for.body ]
   %arrayidx = getelementptr inbounds i64, i64* %n, i32 %i.06
@@ -62,18 +62,18 @@ for.body:                                         ; preds = %for.body, %entry
   %exitcond = icmp eq i32 %inc, 2048
   br i1 %exitcond, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret i64 %conv1
 }
 
-; CHECK: @foo3
-; CHECK-NOT: mtctr
+
+
 
 define i64 @foo4(i64* nocapture %n, i64 %d) nounwind readonly {
 entry:
   br label %for.body
 
-for.body:                                         ; preds = %for.body, %entry
+for.body:                                         
   %i.06 = phi i32 [ 0, %entry ], [ %inc, %for.body ]
   %x.05 = phi i64 [ 0, %entry ], [ %conv1, %for.body ]
   %arrayidx = getelementptr inbounds i64, i64* %n, i32 %i.06
@@ -84,10 +84,10 @@ for.body:                                         ; preds = %for.body, %entry
   %exitcond = icmp eq i32 %inc, 2048
   br i1 %exitcond, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret i64 %conv1
 }
 
-; CHECK: @foo4
-; CHECK-NOT: mtctr
+
+
 

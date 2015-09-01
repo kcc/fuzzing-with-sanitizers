@@ -1,9 +1,9 @@
-; RUN: llc -O3 -march=aarch64 < %s | FileCheck %s 
+
 
 define i16 @test_1cmp_signed_1(i16* %ptr1) {
-; CHECK-LABLE: @test_1cmp_signed_1
-; CHECK: ldrsh
-; CHECK-NEXT: cmn
+
+
+
 entry:
   %addr = getelementptr inbounds i16, i16* %ptr1, i16 0
   %val = load i16, i16* %addr, align 2
@@ -16,9 +16,9 @@ if.then:
 }
 
 define i16 @test_1cmp_signed_2(i16* %ptr1) {
-; CHECK-LABLE: @test_1cmp_signed_2
-; CHECK: ldrsh
-; CHECK-NEXT: cmn
+
+
+
 entry:
   %addr = getelementptr inbounds i16, i16* %ptr1, i16 0
   %val = load i16, i16* %addr, align 2
@@ -31,9 +31,9 @@ if.then:
 }
 
 define i16 @test_1cmp_unsigned_1(i16* %ptr1) {
-; CHECK-LABLE: @test_1cmp_unsigned_1
-; CHECK: ldrsh
-; CHECK-NEXT: cmn
+
+
+
 entry:
   %addr = getelementptr inbounds i16, i16* %ptr1, i16 0
   %val = load i16, i16* %addr, align 2

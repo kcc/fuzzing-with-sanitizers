@@ -1,18 +1,18 @@
-; RUN: llc < %s -O3 -march=aarch64 -mcpu=cortex-a53 | FileCheck %s
 
-; With cortex-a53, each of fmul and fcvt have latency of 6 cycles.  After the
-; pre-RA MI scheduler, fmul, fcvt and fdiv will be consecutive.  The top-down
-; post-RA MI scheduler will clean this up.
+
+
+
+
 
 @d1 = common global double 0.000000e+00, align 8
 
 define i32 @test1(float %s2, float %s3, double %d, i32 %i2, i32 %i3) {
 entry:
-; CHECK-LABEL: @test1
-; CHECK: fmul
-; CHECK-NEXT: add
-; CHECK: fcvt
-; CHECK-NEXT: mul
+
+
+
+
+
   %mul = fmul float %s2, %s3
   %conv = fpext float %mul to double
   %div = fdiv double %d, %conv

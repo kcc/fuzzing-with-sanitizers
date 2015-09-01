@@ -1,20 +1,20 @@
-; RUN: llc < %s - | FileCheck %s
-;
-; FIXME: A potentially more interesting test case would be:
-; %call = @bar()
-; dbg.value j=0
-; %call2 = @bar()
-; dbg.value j=%call
-;
-; We cannot current handle the above sequence because codegenprepare
-; hoists the second dbg.value above %call2, which then appears to
-; conflict with j=0. It does this because SelectionDAG cannot handle
-; global debug values.
+
+
+
+
+
+
+
+
+
+
+
+
 
 target triple = "x86_64-apple-darwin10.0.0"
 
-;CHECK:        ## DW_OP_consts
-;CHECK-NEXT:  .byte	42
+
+
 define i32 @foobar() nounwind readonly noinline ssp {
 entry:
   tail call void @llvm.dbg.value(metadata i32 42, i64 0, metadata !6, metadata !DIExpression()), !dbg !9

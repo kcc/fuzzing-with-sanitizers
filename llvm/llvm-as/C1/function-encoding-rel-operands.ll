@@ -1,13 +1,13 @@
-; Basic sanity test to check that instruction operands are encoded with
-; relative IDs.
-; RUN: llvm-as < %s | llvm-bcanalyzer -dump | FileCheck %s
-; RUN: verify-uselistorder < %s
 
-; CHECK: FUNCTION_BLOCK
-; CHECK: INST_BINOP {{.*}}op0=1 op1=1
-; CHECK: INST_BINOP {{.*}}op0=1 op1=1
-; CHECK: INST_BINOP {{.*}}op0=1 op1=1
-; CHECK: INST_RET {{.*}}op0=1
+
+
+
+
+
+
+
+
+
 define i32 @test_int_binops(i32 %a) nounwind {
 entry:
   %0 = add i32 %a, %a
@@ -17,13 +17,13 @@ entry:
 }
 
 
-; CHECK: FUNCTION_BLOCK
-; CHECK: INST_CAST {{.*}}op0=1
-; CHECK: INST_BINOP {{.*}}op0=1 op1=1
-; CHECK: INST_BINOP {{.*}}op0=1 op1=1
-; CHECK: INST_BINOP {{.*}}op0=1 op1=1
-; CHECK: INST_BINOP {{.*}}op0=1 op1=1
-; CHECK: INST_RET {{.*}}op0=1
+
+
+
+
+
+
+
 define double @test_float_binops(i32 %a) nounwind {
   %1 = sitofp i32 %a to double
   %2 = fadd double %1, %1
@@ -34,13 +34,13 @@ define double @test_float_binops(i32 %a) nounwind {
 }
 
 
-; CHECK: FUNCTION_BLOCK
-; skip checking operands of INST_GEP since that depends on ordering
-; between literals and the formal parameters.
-; CHECK: INST_GEP {{.*}}
-; CHECK: INST_LOAD {{.*}}op0=1 {{.*}}
-; CHECK: INST_CMP2 op0=1 {{.*}}
-; CHECK: INST_RET {{.*}}op0=1
+
+
+
+
+
+
+
 define i1 @test_load(i32 %a, {i32, i32}* %ptr) nounwind {
 entry:
   %0 = getelementptr inbounds {i32, i32}, {i32, i32}* %ptr, i32 %a, i32 0
@@ -49,4 +49,4 @@ entry:
   ret i1 %2
 }
 
-; CHECK: Stream type: LLVM IR
+

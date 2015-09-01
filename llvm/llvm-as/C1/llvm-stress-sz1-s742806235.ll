@@ -1,11 +1,11 @@
-; RUN: llc -march=mips < %s
-; RUN: llc -march=mips -mattr=+msa,+fp64 < %s
-; RUN: llc -march=mipsel < %s
-; RUN: llc -march=mipsel -mattr=+msa,+fp64 < %s
 
-; This test originally failed to select code for a truncstore of a
-; build_vector.
-; It should at least successfully build.
+
+
+
+
+
+
+
 
 define void @autogen_SD742806235(i8*, i32*, i64*, i32, i64, i8) {
 BB:

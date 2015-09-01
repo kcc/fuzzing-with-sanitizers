@@ -1,5 +1,5 @@
-; RUN: opt -mergefunc -disable-output < %s
-; This used to trigger a ConstantExpr::getBitCast assertion.
+
+
 
 define void @t1() unnamed_addr uwtable ssp align 2 {
 entry:
@@ -8,13 +8,13 @@ entry:
     i32 126, label %sw.bb4
   ]
 
-sw.bb:                                            ; preds = %entry
+sw.bb:                                            
   unreachable
 
-sw.bb4:                                           ; preds = %entry
+sw.bb4:                                           
   unreachable
 
-sw.bb12:                                          ; preds = %entry
+sw.bb12:                                          
   ret void
 }
 
@@ -25,12 +25,12 @@ entry:
     i32 3, label %sw.bb4
   ]
 
-sw.bb:                                            ; preds = %entry
+sw.bb:                                            
   unreachable
 
-sw.bb4:                                           ; preds = %entry
+sw.bb4:                                           
   ret void
 
-sw.bb8:                                           ; preds = %entry
+sw.bb8:                                           
   unreachable
 }

@@ -1,40 +1,40 @@
-; RUN: llc -mtriple=x86_64-apple-macosx <%s | FileCheck %s
-; Test that we don't generate empty .debug_loc entries.  Originally, there were
-; two empty .debug_loc entries for 'a' in an otherwise empty .debug_loc list.
-;
-; CHECK:      .section __DWARF,__debug_loc,regular,debug
-; CHECK-NEXT: Lsection_debug_loc:
-; CHECK-NEXT: .section __DWARF,__debug_abbrev,regular,debug
-;
-; Test that the variable stuck around.
-; CHECK:      .section __DWARF,__debug_info,regular,debug
-; CHECK:      DW_TAG_variable
-; CHECK-NOT:  DW_AT_location
 
-; Generated using clang -cc1 with the following args:
-;
-;   -triple x86_64-apple-macosx -emit-llvm -gdwarf-4 -O1
-;
-; From this testcase:
-;
-;;   void fn1() {
-;;     float a = 1;
-;;     for (;;)
-;;       a = 0;
-;;   }
 
-; Function Attrs: noreturn nounwind readnone
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @_Z3fn1v() #0 {
 entry:
   tail call void @llvm.dbg.value(metadata float 1.000000e+00, i64 0, metadata !9, metadata !14), !dbg !15
   br label %for.cond, !dbg !16
 
-for.cond:                                         ; preds = %for.cond, %entry
+for.cond:                                         
   tail call void @llvm.dbg.value(metadata float 0.000000e+00, i64 0, metadata !9, metadata !14), !dbg !15
   br label %for.cond, !dbg !17
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #1
 
 attributes #0 = { noreturn nounwind readnone "less-precise-fpmad"="false" "no-frame-pointer-elim"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "no-realign-stack" "stack-protector-buffer-size"="8" "target-features"="+sse,+sse2" "unsafe-fp-math"="false" "use-soft-float"="false" }

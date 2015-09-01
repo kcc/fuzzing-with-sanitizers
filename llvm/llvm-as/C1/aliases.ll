@@ -1,36 +1,36 @@
-; RUN: llc < %s -mtriple=arm-linux-gnueabi | FileCheck %s
 
-; CHECK: .globl	test
 
-; CHECK: .Lstructvar:
-; CHECK: .size .Lstructvar, 8
 
-; CHECK: .globl	foo1
-; CHECK: foo1 = bar
-; CHECK-NOT: .size foo1
 
-; CHECK: .globl	foo2
-; CHECK: foo2 = bar
-; CHECK-NOT: .size foo2
 
-; CHECK: .weak	bar_f
-; CHECK: bar_f = foo_f
-; CHECK-NOT: .size bar_f
 
-; CHECK: bar_i = bar
-; CHECK-NOT: .size bar_i
 
-; CHECK: .globl	A
-; CHECK: A = bar
-; CHECK-NOT: .size A
 
-; CHECK: .globl elem0
-; CHECK: elem0 = .Lstructvar
-; CHECK: .size elem0, 4
 
-; CHECK: .globl elem1
-; CHECK: elem1 = .Lstructvar+4
-; CHECK: .size elem1, 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @bar = global i32 42
 @foo1 = alias i32* @bar

@@ -1,5 +1,5 @@
-;RUN: llc < %s -march=r600 -mcpu=cayman -stress-sched -verify-misched -verify-machineinstrs
-;REQUIRES: asserts
+
+
 
 define void @main() {
 main_body:
@@ -13,7 +13,7 @@ main_body:
   %7 = icmp ne i32 %6, 0
   br i1 %7, label %ENDIF, label %ELSE
 
-ELSE:                                             ; preds = %main_body
+ELSE:                                             
   %8 = load <4 x float>, <4 x float> addrspace(8)* getelementptr ([1024 x <4 x float>], [1024 x <4 x float>] addrspace(8)* null, i64 0, i32 1)
   %9 = extractelement <4 x float> %8, i32 0
   %10 = bitcast float %9 to i32
@@ -24,7 +24,7 @@ ELSE:                                             ; preds = %main_body
   %15 = icmp ne i32 %14, 0
   br i1 %15, label %IF13, label %ENDIF
 
-ENDIF:                                            ; preds = %IF13, %ELSE, %main_body
+ENDIF:                                            
   %temp.0 = phi float [ 1.000000e+03, %main_body ], [ 1.000000e+00, %IF13 ], [ 0.000000e+00, %ELSE ]
   %temp1.0 = phi float [ 0.000000e+00, %main_body ], [ %23, %IF13 ], [ 0.000000e+00, %ELSE ]
   %temp3.0 = phi float [ 1.000000e+00, %main_body ], [ 0.000000e+00, %ELSE ], [ 0.000000e+00, %IF13 ]
@@ -35,7 +35,7 @@ ENDIF:                                            ; preds = %IF13, %ELSE, %main_
   call void @llvm.R600.store.swizzle(<4 x float> %19, i32 0, i32 0)
   ret void
 
-IF13:                                             ; preds = %ELSE
+IF13:                                             
   %20 = load <4 x float>, <4 x float> addrspace(8)* null
   %21 = extractelement <4 x float> %20, i32 0
   %22 = fsub float -0.000000e+00, %21

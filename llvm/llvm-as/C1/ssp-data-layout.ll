@@ -1,16 +1,16 @@
-; RUN: llc < %s -disable-fp-elim -march=arm -mcpu=cortex-a8 -mtriple arm-linux-gnu -o - | FileCheck %s
-;  This test is fairly fragile.  The goal is to ensure that "large" stack
-;  objects are allocated closest to the stack protector (i.e., farthest away 
-;  from the Stack Pointer.)  In standard SSP mode this means that large (>=
-;  ssp-buffer-size) arrays and structures containing such arrays are
-;  closet to the protector.  With sspstrong and sspreq this means large
-;  arrays/structures-with-arrays are closest, followed by small (< ssp-buffer-size)
-;  arrays/structures-with-arrays, and then addr-taken variables.
-;
-;  Ideally, we only want verify that the objects appear in the correct groups
-;  and that the groups have the correct relative stack offset.  The ordering
-;  within a group is not relevant to this test.  Unfortunately, there is not
-;  an elegant way to do this, so just match the offset for each object.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %struct.struct_large_char = type { [8 x i8] }
 %struct.struct_large_char2 = type { [2 x i8], [8 x i8] }
@@ -20,69 +20,69 @@
 
 define void @layout_ssp() ssp {
 entry:
-; Expected stack layout for ssp is
-;  176 large_char          . Group 1, nested arrays, arrays >= ssp-buffer-size
-;  168 struct_large_char   .
-;  164 scalar1             | Everything else
-;  160 scalar2
-;  156 scalar3
-;  152 addr-of
-;  148 small_nonchar
-;  112 large_nonchar
-;  110 small_char
-;  108 struct_small_char
-;   72 struct_large_nonchar
-;   68 struct_small_nonchar
 
-; CHECK: layout_ssp:
 
-; CHECK: bl get_scalar1
-; CHECK: str r0, [sp, #164]
-; CHECK: bl end_scalar1
 
-; CHECK: bl get_scalar2
-; CHECK: str r0, [sp, #160]
-; CHECK: bl end_scalar2
 
-; CHECK: bl get_scalar3
-; CHECK: str r0, [sp, #156]
-; CHECK: bl end_scalar3
 
-; CHECK: bl get_addrof
-; CHECK: str r0, [sp, #152]
-; CHECK: bl end_addrof
 
-; CHECK: get_small_nonchar
-; CHECK: strh r0, [sp, #148]
-; CHECK: bl end_small_nonchar
 
-; CHECK: bl get_large_nonchar
-; CHECK: str r0, [sp, #112]
-; CHECK: bl end_large_nonchar
 
-; CHECK: bl get_small_char
-; CHECK: strb r0, [sp, #110]
-; CHECK: bl end_small_char
 
-; CHECK: bl get_large_char
-; CHECK: strb r0, [sp, #176]
-; CHECK: bl end_large_char
 
-; CHECK: bl get_struct_large_char
-; CHECK: strb r0, [sp, #168]
-; CHECK: bl end_struct_large_char
 
-; CHECK: bl get_struct_small_char
-; CHECK: strb r0, [sp, #108]
-; CHECK: bl end_struct_small_char
 
-; CHECK: bl get_struct_large_nonchar
-; CHECK:str r0, [sp, #72]
-; CHECK: bl end_struct_large_nonchar
 
-; CHECK: bl get_struct_small_nonchar
-; CHECK: strh r0, [sp, #68]
-; CHECK: bl end_struct_small_nonchar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   %x = alloca i32, align 4
   %y = alloca i32, align 4
   %z = alloca i32, align 4
@@ -165,69 +165,69 @@ entry:
 
 define void @layout_sspstrong() sspstrong {
 entry:
-; Expected stack layout for sspstrong is
-; 144  large_nonchar          . Group 1, nested arrays,
-; 136  large_char             .  arrays >= ssp-buffer-size
-; 128  struct_large_char      .
-; 96   struct_large_nonchar   .
-; 84+8 small_non_char         | Group 2, nested arrays, 
-; 90   small_char             |  arrays < ssp-buffer-size
-; 88   struct_small_char      |
-; 84   struct_small_nonchar   |
-; 80   addrof                 * Group 3, addr-of local
-; 76   scalar1                + Group 4, everything else
-; 72   scalar2                +
-; 68   scalar3                +
-;   
-; CHECK: layout_sspstrong:
 
-; CHECK: bl get_scalar1
-; CHECK: str r0, [sp, #76]
-; CHECK: bl end_scalar1
 
-; CHECK: bl get_scalar2
-; CHECK: str r0, [sp, #72]
-; CHECK: bl end_scalar2
 
-; CHECK: bl get_scalar3
-; CHECK: str r0, [sp, #68]
-; CHECK: bl end_scalar3
 
-; CHECK: bl get_addrof
-; CHECK: str r0, [sp, #80]
-; CHECK: bl end_addrof
 
-; CHECK: get_small_nonchar
-; CHECK: strh r0, [sp, #92]
-; CHECK: bl end_small_nonchar
 
-; CHECK: bl get_large_nonchar
-; CHECK: str r0, [sp, #144]
-; CHECK: bl end_large_nonchar
 
-; CHECK: bl get_small_char
-; CHECK: strb r0, [sp, #90]
-; CHECK: bl end_small_char
 
-; CHECK: bl get_large_char
-; CHECK: strb r0, [sp, #136]
-; CHECK: bl end_large_char
 
-; CHECK: bl get_struct_large_char
-; CHECK: strb r0, [sp, #128]
-; CHECK: bl end_struct_large_char
 
-; CHECK: bl get_struct_small_char
-; CHECK: strb r0, [sp, #88]
-; CHECK: bl end_struct_small_char
 
-; CHECK: bl get_struct_large_nonchar
-; CHECK: str r0, [sp, #96]
-; CHECK: bl end_struct_large_nonchar
 
-; CHECK: bl get_struct_small_nonchar
-; CHECK: strh r0, [sp, #84]
-; CHECK: bl end_struct_small_nonchar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   %x = alloca i32, align 4
   %y = alloca i32, align 4
   %z = alloca i32, align 4
@@ -310,57 +310,57 @@ entry:
 
 define void @layout_sspreq() sspreq {
 entry:
-; Expected stack layout for sspreq is the same as sspstrong
-;   
-; CHECK: layout_sspreq:
 
-; CHECK: bl get_scalar1
-; CHECK: str r0, [sp, #76]
-; CHECK: bl end_scalar1
 
-; CHECK: bl get_scalar2
-; CHECK: str r0, [sp, #72]
-; CHECK: bl end_scalar2
 
-; CHECK: bl get_scalar3
-; CHECK: str r0, [sp, #68]
-; CHECK: bl end_scalar3
 
-; CHECK: bl get_addrof
-; CHECK: str r0, [sp, #80]
-; CHECK: bl end_addrof
 
-; CHECK: get_small_nonchar
-; CHECK: strh r0, [sp, #92]
-; CHECK: bl end_small_nonchar
 
-; CHECK: bl get_large_nonchar
-; CHECK: str r0, [sp, #144]
-; CHECK: bl end_large_nonchar
 
-; CHECK: bl get_small_char
-; CHECK: strb r0, [sp, #90]
-; CHECK: bl end_small_char
 
-; CHECK: bl get_large_char
-; CHECK: strb r0, [sp, #136]
-; CHECK: bl end_large_char
 
-; CHECK: bl get_struct_large_char
-; CHECK: strb r0, [sp, #128]
-; CHECK: bl end_struct_large_char
 
-; CHECK: bl get_struct_small_char
-; CHECK: strb r0, [sp, #88]
-; CHECK: bl end_struct_small_char
 
-; CHECK: bl get_struct_large_nonchar
-; CHECK: str r0, [sp, #96]
-; CHECK: bl end_struct_large_nonchar
 
-; CHECK: bl get_struct_small_nonchar
-; CHECK: strh r0, [sp, #84]
-; CHECK: bl end_struct_small_nonchar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   %x = alloca i32, align 4
   %y = alloca i32, align 4
   %z = alloca i32, align 4
@@ -443,15 +443,15 @@ entry:
 
 define void @struct_with_protectable_arrays() sspstrong {
 entry:
-; Check to ensure that a structure which contains a small array followed by a
-; large array is assigned to the stack properly as a large object.
-; CHECK: struct_with_protectable_arrays:
-; CHECK: bl get_struct_small_char
-; CHECK: strb r0, [sp, #68]
-; CHECK: bl end_struct_small_char
-; CHECK: bl get_struct_large_char2
-; CHECK: strb r0, [sp, #106]
-; CHECK: bl end_struct_large_char2
+
+
+
+
+
+
+
+
+
   %a = alloca %struct.struct_small_char, align 1
   %b = alloca %struct.struct_large_char2, align 1
   %d1 = alloca %struct.struct_large_nonchar, align 8

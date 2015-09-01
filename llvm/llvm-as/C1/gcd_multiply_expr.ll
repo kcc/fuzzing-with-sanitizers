@@ -1,21 +1,21 @@
-; RUN: opt < %s -basicaa -da -analyze -delinearize
-;
-; a, b, c, d, g, h;
-; char *f;
-; static fn1(p1) {
-;   char *e = p1;
-;   for (; d;) {
-;     a = 0;
-;     for (;; ++a)
-;       for (; b; ++b)
-;         c = e[b + a];
-;   }
-; }
-;
-; fn2() {
-;   for (;;)
-;     fn1(&f[g * h]);
-; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @g = common global i32 0, align 4
 @h = common global i32 0, align 4

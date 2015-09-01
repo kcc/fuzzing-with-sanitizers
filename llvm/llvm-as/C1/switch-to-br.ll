@@ -1,12 +1,12 @@
-; RUN: opt %s -simplifycfg -S | FileCheck %s
+
 
 declare i32 @f(i32)
 
 define i32 @basic(i32 %x) {
-; CHECK-LABEL: @basic
-; CHECK-LABEL: entry:
-; CHECK-NEXT:  call i32 @f(i32 0)
-; CHECK-NEXT:  ret i32 %0
+
+
+
+
 
 entry:
   switch i32 %x, label %default [
@@ -21,10 +21,10 @@ default:
 
 
 define i32 @constant() {
-; CHECK-LABEL: @constant
-; CHECK-LABEL: entry:
-; CHECK-NEXT:  call i32 @f(i32 1)
-; CHECK-NEXT:  ret i32 %0
+
+
+
+
 
 entry:
   switch i32 42, label %default [
@@ -45,10 +45,10 @@ b:
 
 
 define i32 @unreachable(i32 %x) {
-; CHECK-LABEL: @unreachable
-; CHECK-LABEL: entry:
-; CHECK-NEXT:  call i32 @f(i32 0)
-; CHECK-NEXT:  ret i32 %0
+
+
+
+
 
 entry:
   switch i32 %x, label %unreachable [

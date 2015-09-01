@@ -1,5 +1,5 @@
-; RUN: not llvm-as < %s -disable-output 2>&1 | FileCheck %s
-; CHECK: error: invalid numeric label in uselistorder_bb
+
+
 
 @ba1 = constant i8* blockaddress (@foo, %1)
 

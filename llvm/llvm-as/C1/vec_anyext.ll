@@ -1,5 +1,5 @@
-; RUN: llc < %s -march=x86-64
-; PR 9267
+
+
 
 define<4 x i16> @func_16_32() {
   %F = load <4 x i32>, <4 x i32>* undef

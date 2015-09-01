@@ -1,52 +1,52 @@
-; RUN: llc -filetype=obj -O0 < %s -mtriple mips-unknown-linux-gnu | llvm-dwarfdump - | FileCheck %s
-; PR19815
 
-; Generated using clang -target mips-linux-gnu -g test.c -S -o - -flto|opt -sroa -S
-; test.c:
-;
-; int foo(int x) {
-;  if (x)
-;    return 0;
-;  return 1;
-; }
 
-; CHECK: Address            Line   Column File   ISA Discriminator Flags
-; CHECK: ------------------ ------ ------ ------ --- ------------- -------------
-; CHECK: 0x0000000000000000      1      0      1   0             0  is_stmt
-; FIXME: The next address probably ought to be 0x0000000000000004 but there's
-;        a constant initialization before the prologue's end.
-; CHECK: 0x0000000000000008      2      0      1   0             0  is_stmt prologue_end
-; CHECK: 0x000000000000002c      3      0      1   0             0  is_stmt
-; CHECK: 0x000000000000003c      4      0      1   0             0  is_stmt
-; CHECK: 0x0000000000000048      5      0      1   0             0  is_stmt
-; CHECK: 0x0000000000000058      5      0      1   0             0  is_stmt end_sequence
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 target datalayout = "E-m:m-p:32:32-i8:8:32-i16:16:32-i64:64-n32-S64"
 target triple = "mips--linux-gnu"
 
-; Function Attrs: nounwind
+
 define i32 @foo(i32 %x) #0 {
 entry:
   call void @llvm.dbg.value(metadata i32 %x, i64 0, metadata !12, metadata !DIExpression()), !dbg !13
   %tobool = icmp ne i32 %x, 0, !dbg !14
   br i1 %tobool, label %if.then, label %if.end, !dbg !14
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   br label %return, !dbg !16
 
-if.end:                                           ; preds = %entry
+if.end:                                           
   br label %return, !dbg !17
 
-return:                                           ; preds = %if.end, %if.then
+return:                                           
   %retval.0 = phi i32 [ 0, %if.then ], [ 1, %if.end ]
   ret i32 %retval.0, !dbg !18
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #1
 
 attributes #0 = { nounwind }

@@ -1,21 +1,21 @@
-; RUN: llc -O3 -mcpu=pwr8 -mtriple=powerpc64le-unknown-linux-gnu < %s | FileCheck %s
-; RUN: llc -O3 -mcpu=pwr8 -disable-ppc-vsx-swap-removal -mtriple=powerpc64le-unknown-linux-gnu < %s | FileCheck -check-prefix=NOOPTSWAP %s
 
-; This test was generated from the following source:
-;
-; #define N 4096
-; int ca[N] __attribute__((aligned(16)));
-; int cb[N] __attribute__((aligned(16)));
-; int cc[N] __attribute__((aligned(16)));
-; int cd[N] __attribute__((aligned(16)));
-;
-; void foo ()
-; {
-;   int i;
-;   for (i = 0; i < N; i++) {
-;     ca[i] = (cb[i] + cc[i]) * cd[i];
-;   }
-; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @cb = common global [4096 x i32] zeroinitializer, align 16
 @cc = common global [4096 x i32] zeroinitializer, align 16
@@ -95,53 +95,53 @@ for.end:
   ret void
 }
 
-; CHECK-LABEL: @foo
-; CHECK-NOT: xxpermdi
-; CHECK-NOT: xxswapd
-
-; CHECK: lxvd2x
-; CHECK: lxvd2x
-; CHECK-DAG: lxvd2x
-; CHECK-DAG: vadduwm
-; CHECK: vmuluwm
-; CHECK: stxvd2x
-
-; CHECK: lxvd2x
-; CHECK: lxvd2x
-; CHECK-DAG: lxvd2x
-; CHECK-DAG: vadduwm
-; CHECK: vmuluwm
-; CHECK: stxvd2x
-
-; CHECK: lxvd2x
-; CHECK: lxvd2x
-; CHECK-DAG: lxvd2x
-; CHECK-DAG: vadduwm
-; CHECK: vmuluwm
-; CHECK: stxvd2x
-
-; CHECK: lxvd2x
-; CHECK: lxvd2x
-; CHECK-DAG: lxvd2x
-; CHECK-DAG: vadduwm
-; CHECK: vmuluwm
-; CHECK: stxvd2x
 
 
-; NOOPTSWAP-LABEL: @foo
 
-; NOOPTSWAP: lxvd2x
-; NOOPTSWAP-DAG: lxvd2x
-; NOOPTSWAP-DAG: lxvd2x
-; NOOPTSWAP-DAG: xxswapd
-; NOOPTSWAP-DAG: xxswapd
-; NOOPTSWAP-DAG: xxswapd
-; NOOPTSWAP-DAG: vadduwm
-; NOOPTSWAP: vmuluwm
-; NOOPTSWAP: xxswapd
-; NOOPTSWAP-DAG: xxswapd
-; NOOPTSWAP-DAG: xxswapd
-; NOOPTSWAP-DAG: stxvd2x
-; NOOPTSWAP-DAG: stxvd2x
-; NOOPTSWAP: stxvd2x
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

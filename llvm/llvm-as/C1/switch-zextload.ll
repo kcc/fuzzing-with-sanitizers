@@ -1,6 +1,6 @@
-; RUN: llc < %s -march=x86 | grep mov | count 1
 
-; Do zextload, instead of a load and a separate zext.
+
+
 
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64-f80:128:128"
 target triple = "i386-apple-darwin9.6"
@@ -9,7 +9,7 @@ target triple = "i386-apple-darwin9.6"
 
 define fastcc void @set_proof_and_disproof_numbers(%struct.node_t* nocapture %node) nounwind {
 entry:
-	%0 = load i8, i8* null, align 1		; <i8> [#uses=1]
+	%0 = load i8, i8* null, align 1		
 	switch i8 %0, label %return [
 		i8 2, label %bb31
 		i8 0, label %bb80
@@ -17,18 +17,18 @@ entry:
 		i8 3, label %bb84
 	]
 
-bb31:		; preds = %entry
+bb31:		
 	unreachable
 
-bb80:		; preds = %entry
+bb80:		
 	ret void
 
-bb82:		; preds = %entry
+bb82:		
 	ret void
 
-bb84:		; preds = %entry
+bb84:		
 	ret void
 
-return:		; preds = %entry
+return:		
 	ret void
 }

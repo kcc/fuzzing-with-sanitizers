@@ -1,4 +1,4 @@
-; RUN: llc < %s | FileCheck %s
+
 target datalayout = "E-m:e-i64:64-n32:64"
 target triple = "powerpc64-bgq-linux"
 
@@ -65,332 +65,332 @@ define void @_ZN4Foam13checkTopologyERKNS_8polyMeshEbb(i1 zeroext %allTopology) 
 entry:
   br i1 undef, label %for.body, label %for.cond.cleanup
 
-; CHECK-LABEL: @_ZN4Foam13checkTopologyERKNS_8polyMeshEbb
 
-; CHECK: addis [[REG1:[0-9]+]], 2, .LC0@toc@ha
-; CHECK: std 2, 40(1)
-; CHECK: ld {{[0-9]+}}, .LC0@toc@l([[REG1]])
-; CHECK: {{mr|ld}} 2,
-; CHECK: mtctr
-; CHECK: bctrl
-; CHECK: ld 2, 40(1)
 
-; CHECK: addis [[REG1:[0-9]+]], 2, .LC0@toc@ha
-; CHECK: std 2, 40(1)
-; CHECK: ld {{[0-9]+}}, .LC0@toc@l([[REG1]])
-; CHECK: {{mr|ld}} 2,
-; CHECK: mtctr
-; CHECK: bctrl
-; CHECK: ld 2, 40(1)
 
-for.cond.cleanup:                                 ; preds = %entry
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+for.cond.cleanup:                                 
   br i1 undef, label %if.then.i, label %if.else.i
 
-if.then.i:                                        ; preds = %for.cond.cleanup
+if.then.i:                                        
   br i1 undef, label %if.then.i1435, label %if.else.i1436
 
-if.else.i:                                        ; preds = %for.cond.cleanup
+if.else.i:                                        
   unreachable
 
-if.then.i1435:                                    ; preds = %if.then.i
+if.then.i1435:                                    
   br label %_ZN4Foam12returnReduceIiNS_5sumOpIiEEEET_RKS3_RKT0_ii.exit
 
-if.else.i1436:                                    ; preds = %if.then.i
+if.else.i1436:                                    
   br label %_ZN4Foam12returnReduceIiNS_5sumOpIiEEEET_RKS3_RKT0_ii.exit
 
-_ZN4Foam12returnReduceIiNS_5sumOpIiEEEET_RKS3_RKT0_ii.exit: ; preds = %if.else.i1436, %if.then.i1435
+_ZN4Foam12returnReduceIiNS_5sumOpIiEEEET_RKS3_RKT0_ii.exit: 
   br i1 undef, label %for.body.i, label %_ZNK4Foam8ZoneMeshINS_8cellZoneENS_8polyMeshEE15checkDefinitionEb.exit
 
-for.body:                                         ; preds = %entry
+for.body:                                         
   unreachable
 
-for.body.i:                                       ; preds = %_ZN4Foam12returnReduceIiNS_5sumOpIiEEEET_RKS3_RKT0_ii.exit
+for.body.i:                                       
   unreachable
 
-_ZNK4Foam8ZoneMeshINS_8cellZoneENS_8polyMeshEE15checkDefinitionEb.exit: ; preds = %_ZN4Foam12returnReduceIiNS_5sumOpIiEEEET_RKS3_RKT0_ii.exit
+_ZNK4Foam8ZoneMeshINS_8cellZoneENS_8polyMeshEE15checkDefinitionEb.exit: 
   br i1 undef, label %for.body.i1480, label %_ZNK4Foam8ZoneMeshINS_8faceZoneENS_8polyMeshEE15checkDefinitionEb.exit
 
-for.body.i1480:                                   ; preds = %_ZNK4Foam8ZoneMeshINS_8cellZoneENS_8polyMeshEE15checkDefinitionEb.exit
+for.body.i1480:                                   
   unreachable
 
-_ZNK4Foam8ZoneMeshINS_8faceZoneENS_8polyMeshEE15checkDefinitionEb.exit: ; preds = %_ZNK4Foam8ZoneMeshINS_8cellZoneENS_8polyMeshEE15checkDefinitionEb.exit
+_ZNK4Foam8ZoneMeshINS_8faceZoneENS_8polyMeshEE15checkDefinitionEb.exit: 
   br i1 undef, label %for.body.i1504, label %_ZNK4Foam8ZoneMeshINS_9pointZoneENS_8polyMeshEE15checkDefinitionEb.exit
 
-for.body.i1504:                                   ; preds = %_ZNK4Foam8ZoneMeshINS_8faceZoneENS_8polyMeshEE15checkDefinitionEb.exit
+for.body.i1504:                                   
   unreachable
 
-_ZNK4Foam8ZoneMeshINS_9pointZoneENS_8polyMeshEE15checkDefinitionEb.exit: ; preds = %_ZNK4Foam8ZoneMeshINS_8faceZoneENS_8polyMeshEE15checkDefinitionEb.exit
+_ZNK4Foam8ZoneMeshINS_9pointZoneENS_8polyMeshEE15checkDefinitionEb.exit: 
   invoke void @_ZN4Foam4word12stripInvalidEv()
           to label %_ZN4Foam4wordC2EPKcb.exit unwind label %lpad.i
 
-lpad.i:                                           ; preds = %_ZNK4Foam8ZoneMeshINS_9pointZoneENS_8polyMeshEE15checkDefinitionEb.exit
+lpad.i:                                           
   %0 = landingpad { i8*, i32 }
           cleanup
   resume { i8*, i32 } %0
 
-_ZN4Foam4wordC2EPKcb.exit:                        ; preds = %_ZNK4Foam8ZoneMeshINS_9pointZoneENS_8polyMeshEE15checkDefinitionEb.exit
+_ZN4Foam4wordC2EPKcb.exit:                        
   invoke void @_ZN4Foam7cellSetC1ERKNS_8polyMeshERKNS_4wordEiNS_8IOobject11writeOptionE()
           to label %invoke.cont59 unwind label %lpad
 
-invoke.cont59:                                    ; preds = %_ZN4Foam4wordC2EPKcb.exit
+invoke.cont59:                                    
   br i1 undef, label %_ZNSsD2Ev.exit, label %if.then.i.i, !prof !1
 
-if.then.i.i:                                      ; preds = %invoke.cont59
+if.then.i.i:                                      
   br i1 true, label %if.then.i.i.i1508, label %if.else.i.i.i
 
-if.then.i.i.i1508:                                ; preds = %if.then.i.i
+if.then.i.i.i1508:                                
   br label %_ZN9__gnu_cxxL27__exchange_and_add_dispatchEPii.exit.i.i
 
-if.else.i.i.i:                                    ; preds = %if.then.i.i
+if.else.i.i.i:                                    
   br label %_ZN9__gnu_cxxL27__exchange_and_add_dispatchEPii.exit.i.i
 
-_ZN9__gnu_cxxL27__exchange_and_add_dispatchEPii.exit.i.i: ; preds = %if.else.i.i.i, %if.then.i.i.i1508
+_ZN9__gnu_cxxL27__exchange_and_add_dispatchEPii.exit.i.i: 
   br i1 undef, label %if.then4.i.i, label %_ZNSsD2Ev.exit
 
-if.then4.i.i:                                     ; preds = %_ZN9__gnu_cxxL27__exchange_and_add_dispatchEPii.exit.i.i
+if.then4.i.i:                                     
   br label %_ZNSsD2Ev.exit
 
-_ZNSsD2Ev.exit:                                   ; preds = %if.then4.i.i, %_ZN9__gnu_cxxL27__exchange_and_add_dispatchEPii.exit.i.i, %invoke.cont59
+_ZNSsD2Ev.exit:                                   
   br i1 undef, label %for.body70, label %for.cond.cleanup69
 
-for.cond.cleanup69:                               ; preds = %_ZNSsD2Ev.exit
+for.cond.cleanup69:                               
   br i1 undef, label %if.then121, label %if.else
 
-lpad:                                             ; preds = %_ZN4Foam4wordC2EPKcb.exit
+lpad:                                             
   %1 = landingpad { i8*, i32 }
           cleanup
   br i1 undef, label %_ZNSsD2Ev.exit1578, label %if.then.i.i1570, !prof !1
 
-if.then.i.i1570:                                  ; preds = %lpad
+if.then.i.i1570:                                  
   br i1 undef, label %if.then4.i.i1577, label %_ZNSsD2Ev.exit1578
 
-if.then4.i.i1577:                                 ; preds = %if.then.i.i1570
+if.then4.i.i1577:                                 
   unreachable
 
-_ZNSsD2Ev.exit1578:                               ; preds = %if.then.i.i1570, %lpad
+_ZNSsD2Ev.exit1578:                               
   unreachable
 
-for.body70:                                       ; preds = %_ZNSsD2Ev.exit
+for.body70:                                       
   unreachable
 
-if.then121:                                       ; preds = %for.cond.cleanup69
+if.then121:                                       
   unreachable
 
-if.else:                                          ; preds = %for.cond.cleanup69
+if.else:                                          
   invoke void @_ZN4Foam4word12stripInvalidEv()
           to label %_ZN4Foam4wordC2EPKcb.exit1701 unwind label %lpad.i1689
 
-lpad.i1689:                                       ; preds = %if.else
+lpad.i1689:                                       
   %2 = landingpad { i8*, i32 }
           cleanup
   unreachable
 
-_ZN4Foam4wordC2EPKcb.exit1701:                    ; preds = %if.else
+_ZN4Foam4wordC2EPKcb.exit1701:                    
   invoke void @_ZN4Foam8pointSetC1ERKNS_8polyMeshERKNS_4wordEiNS_8IOobject11writeOptionE()
           to label %invoke.cont169 unwind label %lpad165
 
-invoke.cont169:                                   ; preds = %_ZN4Foam4wordC2EPKcb.exit1701
+invoke.cont169:                                   
   %call177 = invoke zeroext i1 undef(%"class.Foam::primitiveMesh.135"* undef, i1 zeroext true, %"class.Foam::HashSet.127"* undef)
           to label %invoke.cont176 unwind label %lpad175
 
-invoke.cont176:                                   ; preds = %invoke.cont169
+invoke.cont176:                                   
   br i1 %call177, label %if.then178, label %if.end213
 
-if.then178:                                       ; preds = %invoke.cont176
+if.then178:                                       
   unreachable
 
-lpad165:                                          ; preds = %_ZN4Foam4wordC2EPKcb.exit1701
+lpad165:                                          
   %3 = landingpad { i8*, i32 }
           cleanup
   unreachable
 
-lpad175:                                          ; preds = %invoke.cont169
+lpad175:                                          
   %4 = landingpad { i8*, i32 }
           cleanup
   invoke void @_ZN4Foam8pointSetD1Ev()
           to label %eh.resume unwind label %terminate.lpad
 
-if.end213:                                        ; preds = %invoke.cont176
+if.end213:                                        
   invoke void @_ZN4Foam4word12stripInvalidEv()
           to label %_ZN4Foam4wordC2EPKcb.exit1777 unwind label %lpad.i1765
 
-lpad.i1765:                                       ; preds = %if.end213
+lpad.i1765:                                       
   %5 = landingpad { i8*, i32 }
           cleanup
   br i1 undef, label %eh.resume.i1776, label %if.then.i.i.i1767, !prof !1
 
-if.then.i.i.i1767:                                ; preds = %lpad.i1765
+if.then.i.i.i1767:                                
   unreachable
 
-eh.resume.i1776:                                  ; preds = %lpad.i1765
+eh.resume.i1776:                                  
   resume { i8*, i32 } %5
 
-_ZN4Foam4wordC2EPKcb.exit1777:                    ; preds = %if.end213
+_ZN4Foam4wordC2EPKcb.exit1777:                    
   invoke void @_ZN4Foam7faceSetC1ERKNS_8polyMeshERKNS_4wordEiNS_8IOobject11writeOptionE()
           to label %invoke.cont221 unwind label %lpad217
 
-invoke.cont221:                                   ; preds = %_ZN4Foam4wordC2EPKcb.exit1777
+invoke.cont221:                                   
   br i1 undef, label %_ZNSsD2Ev.exit1792, label %if.then.i.i1784, !prof !1
 
-if.then.i.i1784:                                  ; preds = %invoke.cont221
+if.then.i.i1784:                                  
   br i1 undef, label %if.then4.i.i1791, label %_ZNSsD2Ev.exit1792
 
-if.then4.i.i1791:                                 ; preds = %if.then.i.i1784
+if.then4.i.i1791:                                 
   br label %_ZNSsD2Ev.exit1792
 
-_ZNSsD2Ev.exit1792:                               ; preds = %if.then4.i.i1791, %if.then.i.i1784, %invoke.cont221
+_ZNSsD2Ev.exit1792:                               
   %call232 = invoke zeroext i1 undef(%"class.Foam::primitiveMesh.135"* undef, i1 zeroext true, %"class.Foam::HashSet.127"* undef)
           to label %invoke.cont231 unwind label %lpad230
 
-invoke.cont231:                                   ; preds = %_ZNSsD2Ev.exit1792
+invoke.cont231:                                   
   invoke void @_ZN4Foam6reduceIiNS_5sumOpIiEEEEvRKNS_4ListINS_8UPstream11commsStructEEERT_RKT0_ii()
           to label %invoke.cont243 unwind label %lpad230
 
-lpad217:                                          ; preds = %_ZN4Foam4wordC2EPKcb.exit1777
+lpad217:                                          
   %6 = landingpad { i8*, i32 }
           cleanup
   br label %eh.resume
 
-lpad230:                                          ; preds = %invoke.cont231, %_ZNSsD2Ev.exit1792
+lpad230:                                          
   %7 = landingpad { i8*, i32 }
           cleanup
   invoke void @_ZN4Foam7faceSetD1Ev()
           to label %eh.resume unwind label %terminate.lpad
 
-invoke.cont243:                                   ; preds = %invoke.cont231
+invoke.cont243:                                   
   invoke void @_ZN4Foam4word12stripInvalidEv()
           to label %_ZN4Foam4wordC2EPKcb.exit1862 unwind label %lpad.i1850
 
-lpad.i1850:                                       ; preds = %invoke.cont243
+lpad.i1850:                                       
   %8 = landingpad { i8*, i32 }
           cleanup
   unreachable
 
-_ZN4Foam4wordC2EPKcb.exit1862:                    ; preds = %invoke.cont243
+_ZN4Foam4wordC2EPKcb.exit1862:                    
   invoke void @_ZN4Foam7faceSetC1ERKNS_8polyMeshERKNS_4wordEiNS_8IOobject11writeOptionE()
           to label %invoke.cont280 unwind label %lpad276
 
-invoke.cont280:                                   ; preds = %_ZN4Foam4wordC2EPKcb.exit1862
+invoke.cont280:                                   
   br i1 undef, label %_ZNSsD2Ev.exit1877, label %if.then.i.i1869, !prof !1
 
-if.then.i.i1869:                                  ; preds = %invoke.cont280
+if.then.i.i1869:                                  
   unreachable
 
-_ZNSsD2Ev.exit1877:                               ; preds = %invoke.cont280
+_ZNSsD2Ev.exit1877:                               
   br i1 undef, label %if.then292, label %if.end328
 
-if.then292:                                       ; preds = %_ZNSsD2Ev.exit1877
+if.then292:                                       
   unreachable
 
-lpad276:                                          ; preds = %_ZN4Foam4wordC2EPKcb.exit1862
+lpad276:                                          
   %9 = landingpad { i8*, i32 }
           cleanup
   unreachable
 
-if.end328:                                        ; preds = %_ZNSsD2Ev.exit1877
+if.end328:                                        
   br i1 %allTopology, label %if.then331, label %if.end660
 
-if.then331:                                       ; preds = %if.end328
+if.then331:                                       
   unreachable
 
-if.end660:                                        ; preds = %if.end328
+if.end660:                                        
   invoke void @_ZN4Foam13messageStreamcvRNS_8OSstreamEEv()
           to label %invoke.cont668 unwind label %lpad663
 
-invoke.cont668:                                   ; preds = %if.end660
+invoke.cont668:                                   
   %call671 = invoke dereferenceable(56) %"class.Foam::Ostream.189"* @_ZN4FoamlsERNS_7OstreamEPKc()
           to label %invoke.cont670 unwind label %lpad663
 
-invoke.cont670:                                   ; preds = %invoke.cont668
+invoke.cont670:                                   
   invoke void @_ZN4FoamlsERNS_7OstreamEi()
           to label %invoke.cont674 unwind label %lpad663
 
-invoke.cont674:                                   ; preds = %invoke.cont670
+invoke.cont674:                                   
   %call677 = invoke dereferenceable(56) %"class.Foam::Ostream.189"* @_ZN4FoamlsERNS_7OstreamEPKc()
           to label %invoke.cont676 unwind label %lpad663
 
-invoke.cont676:                                   ; preds = %invoke.cont674
+invoke.cont676:                                   
   invoke void undef(%"class.Foam::Ostream.189"* %call677)
           to label %if.end878 unwind label %lpad663
 
-lpad663:                                          ; preds = %invoke.cont670, %if.end660, %invoke.cont668, %invoke.cont674, %invoke.cont676
+lpad663:                                          
   %10 = landingpad { i8*, i32 }
           cleanup
   br i1 undef, label %_ZN4Foam4ListIiED2Ev.exit.i3073, label %delete.notnull.i.i3071
 
-if.end878:                                        ; preds = %invoke.cont676
+if.end878:                                        
   br i1 undef, label %_ZN4Foam11regionSplitD2Ev.exit, label %delete.notnull.i.i3056
 
-delete.notnull.i.i3056:                           ; preds = %if.end878
+delete.notnull.i.i3056:                           
   unreachable
 
-_ZN4Foam11regionSplitD2Ev.exit:                   ; preds = %if.end878
+_ZN4Foam11regionSplitD2Ev.exit:                   
   br i1 undef, label %if.then883, label %if.else888
 
-if.then883:                                       ; preds = %_ZN4Foam11regionSplitD2Ev.exit
+if.then883:                                       
   unreachable
 
-delete.notnull.i.i3071:                           ; preds = %lpad663
+delete.notnull.i.i3071:                           
   unreachable
 
-_ZN4Foam4ListIiED2Ev.exit.i3073:                  ; preds = %lpad663
+_ZN4Foam4ListIiED2Ev.exit.i3073:                  
   invoke void @_ZN4Foam11regIOobjectD2Ev()
           to label %eh.resume unwind label %terminate.lpad
 
-if.else888:                                       ; preds = %_ZN4Foam11regionSplitD2Ev.exit
+if.else888:                                       
   invoke void @_ZN4Foam4word12stripInvalidEv()
           to label %_ZN4Foam4wordC2EPKcb.exit3098 unwind label %lpad.i3086
 
-lpad.i3086:                                       ; preds = %if.else888
+lpad.i3086:                                       
   %11 = landingpad { i8*, i32 }
           cleanup
   unreachable
 
-_ZN4Foam4wordC2EPKcb.exit3098:                    ; preds = %if.else888
+_ZN4Foam4wordC2EPKcb.exit3098:                    
   invoke void @_ZN4Foam8pointSetC1ERKNS_8polyMeshERKNS_4wordEiNS_8IOobject11writeOptionE()
           to label %invoke.cont902 unwind label %lpad898
 
-invoke.cont902:                                   ; preds = %_ZN4Foam4wordC2EPKcb.exit3098
+invoke.cont902:                                   
   br i1 undef, label %_ZNSsD2Ev.exit3113, label %if.then.i.i3105, !prof !1
 
-if.then.i.i3105:                                  ; preds = %invoke.cont902
+if.then.i.i3105:                                  
   br i1 undef, label %if.then4.i.i3112, label %_ZNSsD2Ev.exit3113
 
-if.then4.i.i3112:                                 ; preds = %if.then.i.i3105
+if.then4.i.i3112:                                 
   unreachable
 
-_ZNSsD2Ev.exit3113:                               ; preds = %if.then.i.i3105, %invoke.cont902
+_ZNSsD2Ev.exit3113:                               
   %call.i31163117 = invoke zeroext i32 undef(%"class.Foam::IOstream.8"* getelementptr inbounds (%"class.Foam::prefixOSstream.27", %"class.Foam::prefixOSstream.27"* @_ZN4Foam4PoutE, i64 0, i32 0, i32 0, i32 0))
           to label %call.i3116.noexc unwind label %lpad905.loopexit.split-lp
 
-call.i3116.noexc:                                 ; preds = %_ZNSsD2Ev.exit3113
+call.i3116.noexc:                                 
   %call5.i3118 = invoke zeroext i32 null(%"class.Foam::IOstream.8"* getelementptr inbounds (%"class.Foam::prefixOSstream.27", %"class.Foam::prefixOSstream.27"* @_ZN4Foam4PoutE, i64 0, i32 0, i32 0, i32 0), i32 zeroext undef)
           to label %invoke.cont906 unwind label %lpad905.loopexit.split-lp
 
-invoke.cont906:                                   ; preds = %call.i3116.noexc
+invoke.cont906:                                   
   unreachable
 
-lpad898:                                          ; preds = %_ZN4Foam4wordC2EPKcb.exit3098
+lpad898:                                          
   %12 = landingpad { i8*, i32 }
           cleanup
   br i1 undef, label %_ZNSsD2Ev.exit3204, label %if.then.i.i3196, !prof !1
 
-if.then.i.i3196:                                  ; preds = %lpad898
+if.then.i.i3196:                                  
   unreachable
 
-_ZNSsD2Ev.exit3204:                               ; preds = %lpad898
+_ZNSsD2Ev.exit3204:                               
   unreachable
 
-lpad905.loopexit.split-lp:                        ; preds = %call.i3116.noexc, %_ZNSsD2Ev.exit3113
+lpad905.loopexit.split-lp:                        
   %lpad.loopexit.split-lp = landingpad { i8*, i32 }
           cleanup
   invoke void @_ZN4Foam8pointSetD1Ev()
           to label %eh.resume unwind label %terminate.lpad
 
-eh.resume:                                        ; preds = %_ZN4Foam4ListIiED2Ev.exit.i3073, %lpad230, %lpad175, %lpad905.loopexit.split-lp, %lpad217
+eh.resume:                                        
   resume { i8*, i32 } undef
 
-terminate.lpad:                                   ; preds = %_ZN4Foam4ListIiED2Ev.exit.i3073, %lpad230, %lpad175, %lpad905.loopexit.split-lp
+terminate.lpad:                                   
   %13 = landingpad { i8*, i32 }
           catch i8* null
   unreachable
@@ -414,7 +414,7 @@ declare void @_ZN4Foam7faceSetC1ERKNS_8polyMeshERKNS_4wordEiNS_8IOobject11writeO
 
 declare void @_ZN4Foam7faceSetD1Ev() #0
 
-; Function Attrs: inlinehint
+
 declare void @_ZN4Foam4word12stripInvalidEv() #1 align 2
 
 declare void @_ZN4Foam11regIOobjectD2Ev() #0

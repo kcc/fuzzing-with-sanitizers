@@ -1,45 +1,45 @@
-; RUN: llc %s -filetype=obj -o %t.o
-; RUN: llvm-dwarfdump -debug-dump=info %t.o | FileCheck %s
-; Test emitting a constant for an aggregate type.
-;
-; clang -S -O1 -emit-llvm
-;
-; typedef struct { unsigned i; } S;
-;
-; unsigned foo(S s) {
-;   s.i = 1;
-;   return s.i;
-; }
-;
-; class C { public: unsigned i; };
-;
-; unsigned foo(C c) {
-;   c.i = 2;
-;   return c.i;
-; }
-;
-; unsigned bar() {
-;  int a[1] = { 3 };
-;   return a[0];
-; }
-;
-; CHECK:  DW_TAG_formal_parameter
-; CHECK-NEXT: DW_AT_const_value [DW_FORM_udata]	(1)
-; CHECK-NEXT: DW_AT_name {{.*}} "s"
-;
-; CHECK:  DW_TAG_formal_parameter
-; CHECK-NEXT: DW_AT_const_value [DW_FORM_udata]	(2)
-; CHECK-NEXT: DW_AT_name {{.*}} "c"
-;
-; CHECK:  DW_TAG_variable
-; CHECK-NEXT: DW_AT_const_value [DW_FORM_udata]	(3)
-; CHECK-NEXT: DW_AT_name {{.*}} "a"
 
-; ModuleID = 'sroasplit-4.cpp'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.10.0"
 
-; Function Attrs: nounwind readnone ssp uwtable
+
 define i32 @_Z3foo1S(i32 %s.coerce) #0 {
 entry:
   tail call void @llvm.dbg.value(metadata i32 %s.coerce, i64 0, metadata !18, metadata !37), !dbg !38
@@ -47,7 +47,7 @@ entry:
   ret i32 1, !dbg !39
 }
 
-; Function Attrs: nounwind readnone ssp uwtable
+
 define i32 @_Z3foo1C(i32 %c.coerce) #0 {
 entry:
   tail call void @llvm.dbg.value(metadata i32 %c.coerce, i64 0, metadata !23, metadata !37), !dbg !40
@@ -55,14 +55,14 @@ entry:
   ret i32 2, !dbg !41
 }
 
-; Function Attrs: nounwind readnone ssp uwtable
+
 define i32 @_Z3barv() #0 {
 entry:
   tail call void @llvm.dbg.value(metadata i32 3, i64 0, metadata !28, metadata !37), !dbg !42
   ret i32 3, !dbg !43
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #1
 
 attributes #0 = { nounwind readnone ssp uwtable }

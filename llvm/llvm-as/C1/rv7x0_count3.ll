@@ -1,6 +1,6 @@
-; RUN: llc < %s -march=r600 -show-mc-encoding  -mcpu=rv710 | FileCheck %s
 
-; CHECK: TEX 9 @6 ;  encoding: [0x06,0x00,0x00,0x00,0x00,0x04,0x88,0x80]
+
+
 
 define void @test(<4 x float> inreg %reg0, <4 x float> inreg %reg1) #0 {
    %1 = extractelement <4 x float> %reg1, i32 0

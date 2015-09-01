@@ -1,61 +1,61 @@
-; RUN: llc -mtriple=x86_64-linux < %s -filetype=obj | llvm-dwarfdump -debug-dump=info - | FileCheck %s
 
-; test that we add DW_AT_inline even when we only have concrete out of line
-; instances.
 
-; first check that we have a TAG_subprogram at a given offset and it has
-; AT_inline.
 
-; CHECK: DW_TAG_class_type
-; CHECK:   DW_TAG_subprogram
-; CHECK:   DW_TAG_subprogram
-; CHECK:     DW_AT_linkage_name {{.*}} "_ZN12nsAutoRefCntaSEi"
 
-; CHECK: DW_TAG_class_type
-; CHECK:   DW_TAG_subprogram
-; CHECK:     DW_AT_linkage_name {{.*}} "_ZN17nsAutoRefCnt7ReleaseEv"
-; CHECK:   DW_TAG_subprogram
-; CHECK:     DW_AT_name {{.*}} "~nsAutoRefCnt"
 
-; CHECK: DW_TAG_subprogram
-; CHECK-NEXT:     DW_AT_{{.*}}linkage_name {{.*}}D2
-; CHECK-NEXT:     DW_AT_specification {{.*}} "~nsAutoRefCnt"
-; CHECK-NEXT:     DW_AT_inline
-; CHECK-NOT:      DW_AT
-; CHECK: DW_TAG
-; CHECK: DW_TAG_subprogram
-; CHECK-NEXT:     DW_AT_{{.*}}linkage_name {{.*}}D1
-; CHECK-NEXT:     DW_AT_specification {{.*}} "~nsAutoRefCnt"
-; CHECK-NEXT:     DW_AT_inline
-; CHECK-NOT:     DW_AT
-; CHECK: [[D1_THIS_ABS:.*]]: DW_TAG_formal_parameter
 
-; CHECK: DW_TAG_subprogram
-; CHECK:     DW_AT_specification {{.*}} "_ZN17nsAutoRefCnt7ReleaseEv"
-; CHECK: DW_TAG_formal_parameter
-; CHECK-NOT: NULL
-; CHECK-NOT: DW_TAG
-; CHECK: DW_TAG_inlined_subroutine
-; CHECK-NEXT: DW_AT_abstract_origin {{.*}} "_ZN12nsAutoRefCntaSEi"
-; CHECK-NOT: NULL
-; CHECK-NOT: DW_TAG
-; CHECK: DW_TAG_inlined_subroutine
-; CHECK-NEXT: DW_AT_abstract_origin {{.*}} "_ZN17nsAutoRefCntD1Ev"
-; CHECK-NOT: NULL
-; CHECK-NOT: DW_TAG
-; CHECK: DW_TAG_inlined_subroutine
-; CHECK-NEXT: DW_AT_abstract_origin {{.*}} "_ZN17nsAutoRefCntD2Ev"
 
-; and then that a TAG_subprogram refers to it with AT_abstract_origin.
 
-; CHECK: DW_TAG_subprogram
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_abstract_origin {{.*}} "_ZN17nsAutoRefCntD1Ev"
-; CHECK: DW_TAG_formal_parameter
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_abstract_origin {{.*}} {[[D1_THIS_ABS]]} "this"
-; CHECK: DW_TAG_inlined_subroutine
-; CHECK-NEXT: DW_AT_abstract_origin {{.*}} "_ZN17nsAutoRefCntD2Ev"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 define i32 @_ZN17nsAutoRefCnt7ReleaseEv() {

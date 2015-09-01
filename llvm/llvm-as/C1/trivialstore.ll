@@ -1,6 +1,6 @@
-; RUN: opt < %s -globalopt -S | not grep G
 
-@G = internal global i32 17             ; <i32*> [#uses=3]
+
+@G = internal global i32 17             
 
 define void @foo() {
         store i32 17, i32* @G
@@ -8,7 +8,7 @@ define void @foo() {
 }
 
 define i32 @bar() {
-        %X = load i32, i32* @G               ; <i32> [#uses=1]
+        %X = load i32, i32* @G               
         ret i32 %X
 }
 

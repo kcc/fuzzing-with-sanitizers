@@ -1,17 +1,17 @@
-; RUN: llc < %s -march=amdgcn -mcpu=SI -verify-machineinstrs | FileCheck %s
 
-; This tests that the llvm.SI.end.cf intrinsic is not inserted into the
-; loop block.  This intrinsic will be lowered to s_or_b64 by the code
-; generator.
 
-; CHECK-LABEL: {{^}}test:
 
-; This is was lowered from the llvm.SI.end.cf intrinsic:
-; CHECK: s_or_b64 exec, exec
 
-; CHECK: [[LOOP_LABEL:[0-9A-Za-z_]+]]: ; %loop{{$}}
-; CHECK-NOT: s_or_b64 exec, exec
-; CHECK: s_cbranch_execnz [[LOOP_LABEL]]
+
+
+
+
+
+
+
+
+
+
 define void @test(i32 addrspace(1)* %out, i32 %cond) {
 entry:
   %tmp0 = icmp eq i32 %cond, 0

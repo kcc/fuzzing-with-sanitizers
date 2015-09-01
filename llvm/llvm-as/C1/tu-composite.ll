@@ -1,79 +1,79 @@
-; REQUIRES: object-emission
 
-; RUN: %llc_dwarf -filetype=obj -O0 < %s > %t
-; RUN: llvm-dwarfdump -debug-dump=info %t | FileCheck %s
-; CHECK: [[TYPE:.*]]: DW_TAG_structure_type
-; Make sure we correctly handle containing type of a struct being a type identifier.
-; CHECK-NEXT: DW_AT_containing_type [DW_FORM_ref4]       (cu + {{.*}} => {[[TYPE]]})
-; CHECK-NEXT: DW_AT_name [DW_FORM_strp] {{.*}}= "C")
 
-; Make sure we correctly handle context of a subprogram being a type identifier.
-; CHECK: [[SP:.*]]: DW_TAG_subprogram
-; CHECK: DW_AT_name [DW_FORM_strp] {{.*}}= "foo")
-; Make sure we correctly handle containing type of a subprogram being a type identifier.
-; CHECK: DW_AT_containing_type [DW_FORM_ref4]       (cu + {{.*}} => {[[TYPE]]})
-; CHECK: DW_TAG_formal_parameter
-; CHECK: NULL
-; CHECK: NULL
 
-; CHECK: [[TYPE2:.*]]: DW_TAG_structure_type
-; CHECK: DW_AT_name [DW_FORM_strp] {{.*}}= "bar")
-; CHECK: DW_TAG_structure_type
-; CHECK: DW_AT_name [DW_FORM_strp] {{.*}}= "D")
-; CHECK: DW_TAG_member
-; CHECK: DW_AT_name [DW_FORM_strp] {{.*}}= "a") 
-; Make sure we correctly handle context of a struct being a type identifier.
-; CHECK: DW_TAG_structure_type
-; CHECK-NEXT: DW_AT_name [DW_FORM_strp] {{.*}}= "Nested")
-; CHECK: DW_TAG_structure_type
-; CHECK-NEXT: DW_AT_name [DW_FORM_strp] {{.*}}= "Nested2")
-; CHECK-NEXT: DW_AT_declaration [DW_FORM_flag]      (0x01)
-; CHECK: DW_TAG_structure_type
-; CHECK-NEXT: DW_AT_name [DW_FORM_strp] {{.*}}= "virt<bar>")
-; Make sure we correctly handle type of a template_type being a type identifier.
-; CHECK: DW_TAG_template_type_parameter
-; CHECK-NEXT: DW_AT_type [DW_FORM_ref4] (cu + {{.*}} => {[[TYPE2]]})
-; CHECK-NEXT: DW_AT_name [DW_FORM_strp] {{.*}}= "T")
-; Make sure we correctly handle derived-from of a typedef being a type identifier.
-; CHECK: DW_TAG_typedef
-; CHECK-NEXT: DW_AT_type [DW_FORM_ref4] (cu + {{.*}} => {[[TYPE2]]})
-; CHECK: DW_AT_name [DW_FORM_strp] {{.*}}= "baz2")
-; Make sure we correctly handle derived-from of a pointer type being a type identifier.
-; CHECK: DW_TAG_pointer_type
-; CHECK: DW_AT_type [DW_FORM_ref4] (cu + {{.*}} => {[[TYPE]]})
-; CHECK: DW_TAG_typedef
-; CHECK-NEXT: DW_AT_type [DW_FORM_ref4] (cu + {{.*}} => {[[TYPE2]]})
-; CHECK: DW_AT_name [DW_FORM_strp] {{.*}}= "baz")
-; Make sure we correctly handle derived-from of an array type being a type identifier.
-; CHECK: DW_TAG_array_type
-; CHECK-NEXT: DW_AT_type [DW_FORM_ref4] (cu + {{.*}} => {[[TYPE2]]})
-; IR generated from clang -g with the following source:
-; struct C {
-;   virtual void foo();
-; };
-; void C::foo() {
-; }
-;
-; struct bar { };
-; typedef bar baz;
-; struct D {
-;   typedef bar baz2;
-;   static int a;
-;   struct Nested { };
-;   struct Nested2 { };
-;   template <typename T>
-;   struct virt {
-;     T* values;
-;   };
-; };
-; void test() {
-;   baz B;
-;   bar A[3];
-;   D::baz2 B2;
-;   D::Nested e;
-;   D::Nested2 *p;
-;   D::virt<bar> t;
-; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %struct.C = type { i32 (...)** }
 %struct.bar = type { i8 }
@@ -86,7 +86,7 @@
 @_ZTS1C = constant [3 x i8] c"1C\00"
 @_ZTI1C = unnamed_addr constant { i8*, i8* } { i8* bitcast (i8** getelementptr inbounds (i8*, i8** @_ZTVN10__cxxabiv117__class_type_infoE, i64 2) to i8*), i8* getelementptr inbounds ([3 x i8], [3 x i8]* @_ZTS1C, i32 0, i32 0) }
 
-; Function Attrs: nounwind ssp uwtable
+
 define void @_ZN1C3fooEv(%struct.C* %this) unnamed_addr #0 align 2 {
 entry:
   %this.addr = alloca %struct.C*, align 8
@@ -96,10 +96,10 @@ entry:
   ret void, !dbg !39
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
-; Function Attrs: nounwind ssp uwtable
+
 define void @_Z4testv() #0 {
 entry:
   %B = alloca %struct.bar, align 1

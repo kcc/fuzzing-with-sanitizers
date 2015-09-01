@@ -1,7 +1,7 @@
-; RUN: llc -march=aarch64 -aarch64-neon-syntax=generic -lower-interleaved-accesses=true < %s | FileCheck %s
 
-; CHECK-LABEL: load_factor2:
-; CHECK: ld2 { v0.8b, v1.8b }, [x0]
+
+
+
 define <8 x i8> @load_factor2(<16 x i8>* %ptr) {
   %wide.vec = load <16 x i8>, <16 x i8>* %ptr, align 4
   %strided.v0 = shufflevector <16 x i8> %wide.vec, <16 x i8> undef, <8 x i32> <i32 0, i32 2, i32 4, i32 6, i32 8, i32 10, i32 12, i32 14>
@@ -10,8 +10,8 @@ define <8 x i8> @load_factor2(<16 x i8>* %ptr) {
   ret <8 x i8> %add
 }
 
-; CHECK-LABEL: load_factor3:
-; CHECK: ld3 { v0.4s, v1.4s, v2.4s }, [x0]
+
+
 define <4 x i32> @load_factor3(i32* %ptr) {
   %base = bitcast i32* %ptr to <12 x i32>*
   %wide.vec = load <12 x i32>, <12 x i32>* %base, align 4
@@ -21,8 +21,8 @@ define <4 x i32> @load_factor3(i32* %ptr) {
   ret <4 x i32> %add
 }
 
-; CHECK-LABEL: load_factor4:
-; CHECK: ld4 { v0.4s, v1.4s, v2.4s, v3.4s }, [x0]
+
+
 define <4 x i32> @load_factor4(i32* %ptr) {
   %base = bitcast i32* %ptr to <16 x i32>*
   %wide.vec = load <16 x i32>, <16 x i32>* %base, align 4
@@ -32,16 +32,16 @@ define <4 x i32> @load_factor4(i32* %ptr) {
   ret <4 x i32> %add
 }
 
-; CHECK-LABEL: store_factor2:
-; CHECK: st2 { v0.8b, v1.8b }, [x0]
+
+
 define void @store_factor2(<16 x i8>* %ptr, <8 x i8> %v0, <8 x i8> %v1) {
   %interleaved.vec = shufflevector <8 x i8> %v0, <8 x i8> %v1, <16 x i32> <i32 0, i32 8, i32 1, i32 9, i32 2, i32 10, i32 3, i32 11, i32 4, i32 12, i32 5, i32 13, i32 6, i32 14, i32 7, i32 15>
   store <16 x i8> %interleaved.vec, <16 x i8>* %ptr, align 4
   ret void
 }
 
-; CHECK-LABEL: store_factor3:
-; CHECK: st3 { v0.4s, v1.4s, v2.4s }, [x0]
+
+
 define void @store_factor3(i32* %ptr, <4 x i32> %v0, <4 x i32> %v1, <4 x i32> %v2) {
   %base = bitcast i32* %ptr to <12 x i32>*
   %v0_v1 = shufflevector <4 x i32> %v0, <4 x i32> %v1, <8 x i32> <i32 0, i32 1, i32 2, i32 3, i32 4, i32 5, i32 6, i32 7>
@@ -51,8 +51,8 @@ define void @store_factor3(i32* %ptr, <4 x i32> %v0, <4 x i32> %v1, <4 x i32> %v
   ret void
 }
 
-; CHECK-LABEL: store_factor4:
-; CHECK: st4 { v0.4s, v1.4s, v2.4s, v3.4s }, [x0]
+
+
 define void @store_factor4(i32* %ptr, <4 x i32> %v0, <4 x i32> %v1, <4 x i32> %v2, <4 x i32> %v3) {
   %base = bitcast i32* %ptr to <16 x i32>*
   %v0_v1 = shufflevector <4 x i32> %v0, <4 x i32> %v1, <8 x i32> <i32 0, i32 1, i32 2, i32 3, i32 4, i32 5, i32 6, i32 7>
@@ -62,11 +62,11 @@ define void @store_factor4(i32* %ptr, <4 x i32> %v0, <4 x i32> %v1, <4 x i32> %v
   ret void
 }
 
-; The following cases test that interleaved access of pointer vectors can be
-; matched to ldN/stN instruction.
 
-; CHECK-LABEL: load_ptrvec_factor2:
-; CHECK: ld2 { v0.2d, v1.2d }, [x0]
+
+
+
+
 define <2 x i32*> @load_ptrvec_factor2(i32** %ptr) {
   %base = bitcast i32** %ptr to <4 x i32*>*
   %wide.vec = load <4 x i32*>, <4 x i32*>* %base, align 4
@@ -74,8 +74,8 @@ define <2 x i32*> @load_ptrvec_factor2(i32** %ptr) {
   ret <2 x i32*> %strided.v0
 }
 
-; CHECK-LABEL: load_ptrvec_factor3:
-; CHECK: ld3 { v0.2d, v1.2d, v2.2d }, [x0]
+
+
 define void @load_ptrvec_factor3(i32** %ptr, <2 x i32*>* %ptr1, <2 x i32*>* %ptr2) {
   %base = bitcast i32** %ptr to <6 x i32*>*
   %wide.vec = load <6 x i32*>, <6 x i32*>* %base, align 4
@@ -86,8 +86,8 @@ define void @load_ptrvec_factor3(i32** %ptr, <2 x i32*>* %ptr1, <2 x i32*>* %ptr
   ret void
 }
 
-; CHECK-LABEL: load_ptrvec_factor4:
-; CHECK: ld4 { v0.2d, v1.2d, v2.2d, v3.2d }, [x0]
+
+
 define void @load_ptrvec_factor4(i32** %ptr, <2 x i32*>* %ptr1, <2 x i32*>* %ptr2) {
   %base = bitcast i32** %ptr to <8 x i32*>*
   %wide.vec = load <8 x i32*>, <8 x i32*>* %base, align 4
@@ -98,8 +98,8 @@ define void @load_ptrvec_factor4(i32** %ptr, <2 x i32*>* %ptr1, <2 x i32*>* %ptr
   ret void
 }
 
-; CHECK-LABEL: store_ptrvec_factor2:
-; CHECK: st2 { v0.2d, v1.2d }, [x0]
+
+
 define void @store_ptrvec_factor2(i32** %ptr, <2 x i32*> %v0, <2 x i32*> %v1) {
   %base = bitcast i32** %ptr to <4 x i32*>*
   %interleaved.vec = shufflevector <2 x i32*> %v0, <2 x i32*> %v1, <4 x i32> <i32 0, i32 2, i32 1, i32 3>
@@ -107,8 +107,8 @@ define void @store_ptrvec_factor2(i32** %ptr, <2 x i32*> %v0, <2 x i32*> %v1) {
   ret void
 }
 
-; CHECK-LABEL: store_ptrvec_factor3:
-; CHECK: st3 { v0.2d, v1.2d, v2.2d }, [x0]
+
+
 define void @store_ptrvec_factor3(i32** %ptr, <2 x i32*> %v0, <2 x i32*> %v1, <2 x i32*> %v2) {
   %base = bitcast i32** %ptr to <6 x i32*>*
   %v0_v1 = shufflevector <2 x i32*> %v0, <2 x i32*> %v1, <4 x i32> <i32 0, i32 1, i32 2, i32 3>
@@ -118,8 +118,8 @@ define void @store_ptrvec_factor3(i32** %ptr, <2 x i32*> %v0, <2 x i32*> %v1, <2
   ret void
 }
 
-; CHECK-LABEL: store_ptrvec_factor4:
-; CHECK: st4 { v0.2d, v1.2d, v2.2d, v3.2d }, [x0]
+
+
 define void @store_ptrvec_factor4(i32* %ptr, <2 x i32*> %v0, <2 x i32*> %v1, <2 x i32*> %v2, <2 x i32*> %v3) {
   %base = bitcast i32* %ptr to <8 x i32*>*
   %v0_v1 = shufflevector <2 x i32*> %v0, <2 x i32*> %v1, <4 x i32> <i32 0, i32 1, i32 2, i32 3>
@@ -129,11 +129,11 @@ define void @store_ptrvec_factor4(i32* %ptr, <2 x i32*> %v0, <2 x i32*> %v1, <2 
   ret void
 }
 
-; Following cases check that shuffle maskes with undef indices can be matched
-; into ldN/stN instruction.
 
-; CHECK-LABEL: load_undef_mask_factor2:
-; CHECK: ld2 { v0.4s, v1.4s }, [x0]
+
+
+
+
 define <4 x i32> @load_undef_mask_factor2(i32* %ptr) {
   %base = bitcast i32* %ptr to <8 x i32>*
   %wide.vec = load <8 x i32>, <8 x i32>* %base, align 4
@@ -143,8 +143,8 @@ define <4 x i32> @load_undef_mask_factor2(i32* %ptr) {
   ret <4 x i32> %add
 }
 
-; CHECK-LABEL: load_undef_mask_factor3:
-; CHECK: ld3 { v0.4s, v1.4s, v2.4s }, [x0]
+
+
 define <4 x i32> @load_undef_mask_factor3(i32* %ptr) {
   %base = bitcast i32* %ptr to <12 x i32>*
   %wide.vec = load <12 x i32>, <12 x i32>* %base, align 4
@@ -154,8 +154,8 @@ define <4 x i32> @load_undef_mask_factor3(i32* %ptr) {
   ret <4 x i32> %add
 }
 
-; CHECK-LABEL: load_undef_mask_factor4:
-; CHECK: ld4 { v0.4s, v1.4s, v2.4s, v3.4s }, [x0]
+
+
 define <4 x i32> @load_undef_mask_factor4(i32* %ptr) {
   %base = bitcast i32* %ptr to <16 x i32>*
   %wide.vec = load <16 x i32>, <16 x i32>* %base, align 4
@@ -165,8 +165,8 @@ define <4 x i32> @load_undef_mask_factor4(i32* %ptr) {
   ret <4 x i32> %add
 }
 
-; CHECK-LABEL: store_undef_mask_factor2:
-; CHECK: st2 { v0.4s, v1.4s }, [x0]
+
+
 define void @store_undef_mask_factor2(i32* %ptr, <4 x i32> %v0, <4 x i32> %v1) {
   %base = bitcast i32* %ptr to <8 x i32>*
   %interleaved.vec = shufflevector <4 x i32> %v0, <4 x i32> %v1, <8 x i32> <i32 undef, i32 undef, i32 undef, i32 undef, i32 2, i32 6, i32 3, i32 7>
@@ -174,8 +174,8 @@ define void @store_undef_mask_factor2(i32* %ptr, <4 x i32> %v0, <4 x i32> %v1) {
   ret void
 }
 
-; CHECK-LABEL: store_undef_mask_factor3:
-; CHECK: st3 { v0.4s, v1.4s, v2.4s }, [x0]
+
+
 define void @store_undef_mask_factor3(i32* %ptr, <4 x i32> %v0, <4 x i32> %v1, <4 x i32> %v2) {
   %base = bitcast i32* %ptr to <12 x i32>*
   %v0_v1 = shufflevector <4 x i32> %v0, <4 x i32> %v1, <8 x i32> <i32 0, i32 1, i32 2, i32 3, i32 4, i32 5, i32 6, i32 7>
@@ -185,8 +185,8 @@ define void @store_undef_mask_factor3(i32* %ptr, <4 x i32> %v0, <4 x i32> %v1, <
   ret void
 }
 
-; CHECK-LABEL: store_undef_mask_factor4:
-; CHECK: st4 { v0.4s, v1.4s, v2.4s, v3.4s }, [x0]
+
+
 define void @store_undef_mask_factor4(i32* %ptr, <4 x i32> %v0, <4 x i32> %v1, <4 x i32> %v2, <4 x i32> %v3) {
   %base = bitcast i32* %ptr to <16 x i32>*
   %v0_v1 = shufflevector <4 x i32> %v0, <4 x i32> %v1, <8 x i32> <i32 0, i32 1, i32 2, i32 3, i32 4, i32 5, i32 6, i32 7>

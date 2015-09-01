@@ -1,5 +1,5 @@
-; RUN: llc < %s -march=x86-64 -mcpu=corei7 | FileCheck %s
-; PR1198
+
+
 
 define i64 @foo(i64 %x, i64 %y) {
         %tmp0 = zext i64 %x to i128
@@ -11,19 +11,19 @@ define i64 @foo(i64 %x, i64 %y) {
         ret i64 %tmp4
 }
 
-; <rdar://problem/14096009> superfluous multiply by high part of
-; zero-extended value.
-; CHECK: @mul1
-; CHECK-NOT: imulq
-; CHECK: mulq
-; CHECK-NOT: imulq
+
+
+
+
+
+
 define i64 @mul1(i64 %n, i64* nocapture %z, i64* nocapture %x, i64 %y) {
 entry:
   %conv = zext i64 %y to i128
   %cmp11 = icmp eq i64 %n, 0
   br i1 %cmp11, label %for.end, label %for.body
 
-for.body:                                         ; preds = %entry, %for.body
+for.body:                                         
   %carry.013 = phi i64 [ %conv6, %for.body ], [ 0, %entry ]
   %i.012 = phi i64 [ %inc, %for.body ], [ 0, %entry ]
   %arrayidx = getelementptr inbounds i64, i64* %x, i64 %i.012
@@ -41,6 +41,6 @@ for.body:                                         ; preds = %entry, %for.body
   %exitcond = icmp eq i64 %inc, %n
   br i1 %exitcond, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret i64 0
 }

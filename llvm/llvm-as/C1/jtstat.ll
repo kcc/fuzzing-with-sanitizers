@@ -1,4 +1,4 @@
-; RUN: llc -march=mipsel -mcpu=mips16 -relocation-model=static < %s | FileCheck %s -check-prefix=CHECK-STATIC16
+
 
 @s = global i8 115, align 1
 @c = common global i8 0, align 1
@@ -20,52 +20,52 @@ entry:
     i32 76, label %sw.bb7
   ]
 
-sw.bb:                                            ; preds = %entry
+sw.bb:                                            
   store i8 115, i8* @c, align 1
   br label %sw.epilog
 
-sw.bb1:                                           ; preds = %entry
+sw.bb1:                                           
   store i8 105, i8* @c, align 1
   br label %sw.epilog
 
-sw.bb2:                                           ; preds = %entry
+sw.bb2:                                           
   store i8 100, i8* @c, align 1
   br label %sw.epilog
 
-sw.bb3:                                           ; preds = %entry
+sw.bb3:                                           
   store i8 108, i8* @c, align 1
   br label %sw.epilog
 
-sw.bb4:                                           ; preds = %entry
+sw.bb4:                                           
   store i8 99, i8* @c, align 1
   br label %sw.epilog
 
-sw.bb5:                                           ; preds = %entry
+sw.bb5:                                           
   store i8 68, i8* @c, align 1
   br label %sw.epilog
 
-sw.bb6:                                           ; preds = %entry
+sw.bb6:                                           
   store i8 81, i8* @c, align 1
   br label %sw.epilog
 
-sw.bb7:                                           ; preds = %entry
+sw.bb7:                                           
   store i8 76, i8* @c, align 1
   br label %sw.epilog
 
-sw.epilog:                                        ; preds = %entry, %sw.bb7, %sw.bb6, %sw.bb5, %sw.bb4, %sw.bb3, %sw.bb2, %sw.bb1, %sw.bb
+sw.epilog:                                        
   ret void
 }
 
-; CHECK-STATIC16: li	${{[0-9]+}}, %hi($JTI{{[0-9]+}}_{{[0-9]+}})
-; CHECK-STATIC16: lw	${{[0-9]+}}, %lo($JTI{{[0-9]+}}_{{[0-9]+}})(${{[0-9]+}})
-; CHECK-STATIC16: $JTI{{[0-9]+}}_{{[0-9]+}}:
-; CHECK-STATIC16: .4byte ($BB0_{{[0-9]+}})
-; CHECK-STATIC16: .4byte ($BB0_{{[0-9]+}})
-; CHECK-STATIC16: .4byte ($BB0_{{[0-9]+}})
-; CHECK-STATIC16: .4byte ($BB0_{{[0-9]+}})
-; CHECK-STATIC16: .4byte ($BB0_{{[0-9]+}})
-; CHECK-STATIC16: .4byte ($BB0_{{[0-9]+}})
-; CHECK-STATIC16: .4byte ($BB0_{{[0-9]+}})
-; CHECK-STATIC16: .4byte ($BB0_{{[0-9]+}})
-; CHECK-STATIC16: .4byte ($BB0_{{[0-9]+}})
-; CHECK-STATIC16: .4byte ($BB0_{{[0-9]+}})
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,18 +1,18 @@
-; RUN: llc -mtriple=x86_64-apple-darwin -filetype=obj -O0 < %s > %t
-; RUN: llvm-dwarfdump %t | FileCheck %s
 
-; CHECK: [[FILEID:[0-9]+]]]{{.*}}list0.h
-; CHECK: [[FILEID]]      0      1   0  0 is_stmt{{$}}
 
-; IR generated from clang -g -emit-llvm with the following source:
-; list0.h:
-; int foo (int x) {
-;     return ++x;
-; }
-; list0.c:
-; #include "list0.h"
-; int main() {
-; }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define i32 @foo(i32 %x) #0 {
 entry:

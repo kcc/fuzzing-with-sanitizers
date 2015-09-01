@@ -1,16 +1,16 @@
-; RUN: llc < %s -march=nvptx -mcpu=sm_20 | FileCheck %s
 
-; Ensure source scheduling is working
+
+
 
 define void @foo(i32* %a) {
-; CHECK: .func foo
-; CHECK: ld.u32
-; CHECK-NEXT: ld.u32
-; CHECK-NEXT: ld.u32
-; CHECK-NEXT: ld.u32
-; CHECK-NEXT: add.s32
-; CHECK-NEXT: add.s32
-; CHECK-NEXT: add.s32
+
+
+
+
+
+
+
+
   %ptr0 = getelementptr i32, i32* %a, i32 0
   %val0 = load i32, i32* %ptr0
   %ptr1 = getelementptr i32, i32* %a, i32 1

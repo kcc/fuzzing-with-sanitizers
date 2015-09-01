@@ -1,25 +1,25 @@
-; RUN: llc -filetype=obj < %s | llvm-dwarfdump -debug-dump=info - | FileCheck %s
-; CHECK: DW_TAG_variable
-; CHECK-NEXT: DW_AT_const_value [DW_FORM_udata]	(0)
-; CHECK-NEXT: DW_AT_name {{.*}}"a"
-;
-; ModuleID = 'union.c'
-; generated at -O1 from:
-; union mfi_evt {
-;   struct {
-;     int reserved;
-;   } members;
-; } mfi_aen_setup() {
-;   union mfi_evt a;
-;   a.members.reserved = 0;
-; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.10.0"
 
 %union.mfi_evt = type { %struct.anon }
 %struct.anon = type { i32 }
 
-; Function Attrs: nounwind readnone ssp uwtable
+
 define i32 @mfi_aen_setup() #0 {
 entry:
   tail call void @llvm.dbg.declare(metadata %union.mfi_evt* undef, metadata !16, metadata !21), !dbg !22
@@ -27,10 +27,10 @@ entry:
   ret i32 undef, !dbg !23
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #1
 
 attributes #0 = { nounwind readnone ssp uwtable }

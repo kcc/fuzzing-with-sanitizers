@@ -1,8 +1,8 @@
-; RUN: llc -mtriple=x86_64-pc-linux < %s | FileCheck %s
-;
-; Check that x86's peephole optimization doesn't fold a 64-bit load (movsd) into
-; addpd.
-; rdar://problem/18236850
+
+
+
+
+
 
 %struct.S1 = type { double, double }
 
@@ -10,8 +10,8 @@
 
 declare void @foo3(%struct.S1*)
 
-; CHECK: movsd {{[0-9]*}}(%rsp), [[R0:%xmm[0-9]+]]
-; CHECK: addpd [[R0]], %xmm{{[0-9]+}}
+
+
 
 define void @foo1(double %a.coerce0, double %a.coerce1, double %b.coerce0, double %b.coerce1) {
   %1 = alloca <2 x double>, align 16

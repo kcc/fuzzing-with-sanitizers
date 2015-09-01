@@ -1,31 +1,31 @@
-; RUN: llc < %s -march=nvptx -mcpu=sm_20 | FileCheck %s
-; RUN: llc < %s -march=nvptx64 -mcpu=sm_20 | FileCheck %s
+
+
 
 
 @texture = internal addrspace(1) global i64 0, align 8
-; CHECK: .global .texref texture
+
 @surface = internal addrspace(1) global i64 0, align 8
-; CHECK: .global .surfref surface
 
 
-; CHECK: .entry kernel_func_maxntid
+
+
 define void @kernel_func_maxntid(float* %a) {
-; CHECK: .maxntid 10, 20, 30
-; CHECK: ret
+
+
   ret void
 }
 
-; CHECK: .entry kernel_func_reqntid
+
 define void @kernel_func_reqntid(float* %a) {
-; CHECK: .reqntid 11, 22, 33
-; CHECK: ret
+
+
   ret void
 }
 
-; CHECK: .entry kernel_func_minctasm
+
 define void @kernel_func_minctasm(float* %a) {
-; CHECK: .minnctapersm 42
-; CHECK: ret
+
+
   ret void
 }
 

@@ -1,7 +1,7 @@
-; RUN: llc  -march=x86-64 < %s
 
-; Ensure that MergeConsecutiveStores doesn't crash when dealing with
-; i1 operands.
+
+
+
 
 %struct.X = type { i1, i1 }
 

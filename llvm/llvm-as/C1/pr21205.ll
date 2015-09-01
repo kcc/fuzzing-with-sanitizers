@@ -1,13 +1,13 @@
-; RUN: opt -reassociate -S < %s | FileCheck %s
-; PR21205
+
+
 
 @a = common global i32 0, align 4
 @b = common global i32 0, align 4
 
-; Don't canonicalize %conv - undef into %conv + (-undef).
-; CHECK-LABEL: @test1
-; CHECK: %sub = fsub fast float %conv, undef
-; CHECK: %sub1 = fadd fast float %sub, -1.000000e+00
+
+
+
+
 
 define i32 @test1() {
 entry:

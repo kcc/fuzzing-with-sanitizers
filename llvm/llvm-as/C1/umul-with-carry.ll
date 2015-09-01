@@ -1,7 +1,7 @@
-; RUN: llc < %s -march=x86 | grep "jc" | count 1
-; XFAIL: *
 
-; FIXME: umul-with-overflow not supported yet.
+
+
+
 
 @ok = internal constant [4 x i8] c"%d\0A\00"
 @no = internal constant [4 x i8] c"no\0A\00"

@@ -1,9 +1,9 @@
-; RUN: opt -jump-threading -disable-output < %s
-; PR9112
 
-; This is actually a test for value tracking. Jump threading produces
-; "%phi = phi i16" when it removes all edges leading to %unreachable.
-; The .ll parser won't let us write that directly since it's invalid code.
+
+
+
+
+
 
 define void @func() nounwind {
 entry:

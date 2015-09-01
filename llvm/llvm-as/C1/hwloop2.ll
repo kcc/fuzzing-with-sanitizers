@@ -1,9 +1,9 @@
-; RUN: llc -disable-lsr -march=hexagon < %s | FileCheck %s
 
-; Test for multiple phis with induction variables.
 
-; CHECK: loop0(.LBB{{.}}_{{.}}, r{{[0-9]+}})
-; CHECK: endloop0
+
+
+
+
 
 define i32 @hwloop4(i32* nocapture %s, i32* nocapture %a, i32 %n) {
 entry:

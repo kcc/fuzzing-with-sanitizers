@@ -1,4 +1,4 @@
-; RUN: llc -march=mipsel -mcpu=mips16 -relocation-model=pic < %s | FileCheck %s -check-prefix=16
+
 
 @i = global i32 1, align 4
 @j = global i32 2, align 4
@@ -20,7 +20,7 @@ entry:
 attributes #0 = { nounwind "target-cpu"="mips16" "target-features"="+mips16,+o32" }
 
 
-; 16:	cmpi	${{[0-9]+}}, 10
-; 16:	bteqz	$BB{{[0-9]+}}_{{[0-9]}}
+
+
 
 

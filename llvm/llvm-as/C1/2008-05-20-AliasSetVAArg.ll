@@ -1,5 +1,5 @@
-; RUN: opt < %s -licm -disable-output
-; PR2346
+
+
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64-f80:128:128"
 target triple = "i686-pc-linux-gnu"
 	%struct._zval_struct = type { %union._double, i32, i8, i8, i8, i8 }
@@ -9,22 +9,22 @@ define i8* @zend_fetch_resource(%struct._zval_struct** %passed_id, i32 %default_
 entry:
 	br label %whilebody.i.i
 
-whilebody.i.i:		; preds = %whilebody.i.i, %entry
+whilebody.i.i:		
 	br i1 false, label %ifthen.i.i, label %whilebody.i.i
 
-ifthen.i.i:		; preds = %whilebody.i.i
+ifthen.i.i:		
 	br label %forcond
 
-forcond:		; preds = %forbody, %ifthen.i.i
+forcond:		
 	br i1 false, label %forbody, label %afterfor
 
-forbody:		; preds = %forcond
-	va_arg i8** null, i32		; <i32>:0 [#uses=0]
+forbody:		
+	va_arg i8** null, i32		
 	br i1 false, label %ifthen59, label %forcond
 
-ifthen59:		; preds = %forbody
+ifthen59:		
 	unreachable
 
-afterfor:		; preds = %forcond
+afterfor:		
 	ret i8* null
 }

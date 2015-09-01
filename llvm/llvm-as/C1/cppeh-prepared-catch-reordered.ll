@@ -1,16 +1,16 @@
-; RUN: llc < %s | FileCheck %s
 
-; Verify that we get the right frame escape label when the catch comes after the
-; parent function.
 
-; This test case is equivalent to:
-; int main() {
-;   try {
-;     throw 42;
-;   } catch (int e) {
-;     printf("e: %d\n", e);
-;   }
-; }
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-m:w-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-pc-windows-msvc"
@@ -42,7 +42,7 @@ $"\01??_C@_06PNOAJMHG@e?3?5?$CFd?6?$AA@" = comdat any
 
 declare void @_CxxThrowException(i8*, %eh.ThrowInfo*)
 
-; Function Attrs: uwtable
+
 define i32 @main() #1 personality i8* bitcast (i32 (...)* @__CxxFrameHandler3 to i8*) {
 entry:
   %tmp.i = alloca i32, align 4
@@ -53,41 +53,41 @@ entry:
   invoke void @_CxxThrowException(i8* %0, %eh.ThrowInfo* @_TI1H) #6
           to label %.noexc unwind label %lpad1
 
-.noexc:                                           ; preds = %entry
+.noexc:                                           
   unreachable
 
-lpad1:                                            ; preds = %entry
+lpad1:                                            
   %1 = landingpad { i8*, i32 }
           catch %eh.CatchHandlerType* @llvm.eh.handlertype.H.0
   %recover = call i8* (...) @llvm.eh.actions(i32 1, i8* bitcast (%eh.CatchHandlerType* @llvm.eh.handlertype.H.0 to i8*), i32 0, i8* (i8*, i8*)* @main.catch)
   indirectbr i8* %recover, [label %try.cont.split]
 
-try.cont.split:                                   ; preds = %lpad1
+try.cont.split:                                   
   ret i32 0
 }
 
-; CHECK-LABEL: main:
-; CHECK:        .seh_handlerdata
-; CHECK:        .long   ($cppxdata$main)@IMGREL
+
+
+
 
 declare i32 @__CxxFrameHandler3(...)
 
-; Function Attrs: nounwind readnone
+
 declare i32 @llvm.eh.typeid.for(i8*) #2
 
-; Function Attrs: nounwind
+
 declare void @llvm.eh.begincatch(i8* nocapture, i8* nocapture) #3
 
-; Function Attrs: nounwind
+
 declare i32 @printf(i8* nocapture readonly, ...) #4
 
-; Function Attrs: nounwind
+
 declare void @llvm.eh.endcatch() #3
 
-; Function Attrs: nounwind
+
 declare void @llvm.lifetime.start(i64, i8* nocapture) #3
 
-; Function Attrs: nounwind
+
 declare i8* @llvm.eh.actions(...) #3
 
 define internal i8* @main.catch(i8*, i8*) #5 personality i8* bitcast (i32 (...)* @__CxxFrameHandler3 to i8*) {
@@ -100,49 +100,49 @@ entry:
   invoke void @llvm.donothing()
           to label %entry.split unwind label %stub
 
-entry.split:                                      ; preds = %entry
+entry.split:                                      
   ret i8* blockaddress(@main, %try.cont.split)
 
-stub:                                             ; preds = %entry
+stub:                                             
   %4 = landingpad { i8*, i32 }
           cleanup
   %recover = call i8* (...) @llvm.eh.actions()
   unreachable
 }
 
-; CHECK-LABEL: main.catch:
-; CHECK:        .seh_handlerdata
-; CHECK:        .long   ($cppxdata$main)@IMGREL
 
-; CHECK: .align 4
-; CHECK-NEXT: $cppxdata$main:
-; CHECK-NEXT:         .long   429065506
-; CHECK-NEXT:         .long   2
-; CHECK-NEXT:         .long   ($stateUnwindMap$main)@IMGREL
-; CHECK-NEXT:         .long   1
-; CHECK-NEXT:         .long   ($tryMap$main)@IMGREL
-; CHECK-NEXT:         .long   3
-; CHECK-NEXT:         .long   ($ip2state$main)@IMGREL
-; CHECK-NEXT:         .long   40
-; CHECK-NEXT:         .long   0
-; CHECK-NEXT:         .long   1
 
-; Make sure we get the right frame escape label.
 
-; CHECK: $handlerMap$0$main:
-; CHECK-NEXT:         .long   0
-; CHECK-NEXT:         .long   "??_R0H@8"@IMGREL
-; CHECK-NEXT:         .long   .Lmain$frame_escape_0
-; CHECK-NEXT:         .long   main.catch@IMGREL
-; CHECK-NEXT:         .long   .Lmain.catch$parent_frame_offset
 
-; Function Attrs: nounwind readnone
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 declare void @llvm.donothing() #2
 
-; Function Attrs: nounwind
+
 declare void @llvm.localescape(...) #3
 
-; Function Attrs: nounwind readnone
+
 declare i8* @llvm.localrecover(i8*, i8*, i32) #2
 
 attributes #0 = { noreturn uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "unsafe-fp-math"="false" "use-soft-float"="false" }

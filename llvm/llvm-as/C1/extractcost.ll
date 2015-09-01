@@ -1,11 +1,11 @@
-; RUN: opt < %s -basicaa -slp-vectorizer -dce -S -mtriple=x86_64-apple-macosx10.8.0 -mcpu=corei7-avx | FileCheck %s
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.8.0"
 
-;CHECK-LABEL: @foo(
-;CHECK: store <4 x i32>
-;CHECK: ret
+
+
+
 define i32 @foo(i32* nocapture %A, i32 %n, i32 %m) {
 entry:
   %mul = mul nsw i32 %n, 5
@@ -24,7 +24,7 @@ entry:
   %arrayidx9 = getelementptr inbounds i32, i32* %A, i64 3
   store i32 %add8, i32* %arrayidx9, align 4
   %externaluse1 = add nsw i32 %add, %m  
-  %externaluse2 = mul nsw i32 %add, %m  ; we should add the extract cost only once and the store will be vectorized
+  %externaluse2 = mul nsw i32 %add, %m  
   %add10 = add nsw i32 %externaluse1, %externaluse2
   ret i32 %add10
 }

@@ -1,4 +1,4 @@
-; RUN: llc < %s
+
 
 define void @main()  {
 if.end:

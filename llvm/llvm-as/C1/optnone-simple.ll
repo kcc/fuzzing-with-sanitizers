@@ -1,13 +1,13 @@
-; RUN: opt -O3 -S < %s | FileCheck %s
-; Show 'optnone' suppresses optimizations.
 
-; Two attribute groups that differ only by 'optnone'.
-; 'optnone' requires 'noinline' so #0 is 'noinline' by itself,
-; even though it would otherwise be irrelevant to this example.
+
+
+
+
+
 attributes #0 = { noinline }
 attributes #1 = { noinline optnone }
 
-; int iadd(int a, int b){ return a + b; }
+
 
 define i32 @iadd_optimize(i32 %a, i32 %b) #0 {
 entry:
@@ -21,11 +21,11 @@ entry:
   ret i32 %add
 }
 
-; CHECK-LABEL: @iadd_optimize
-; CHECK-NOT: alloca
-; CHECK-NOT: store
-; CHECK-NOT: load
-; CHECK: ret
+
+
+
+
+
 
 define i32 @iadd_optnone(i32 %a, i32 %b) #1 {
 entry:
@@ -39,17 +39,17 @@ entry:
   ret i32 %add
 }
 
-; CHECK-LABEL: @iadd_optnone
-; CHECK: alloca i32
-; CHECK: alloca i32
-; CHECK: store i32
-; CHECK: store i32
-; CHECK: load i32
-; CHECK: load i32
-; CHECK: add nsw i32
-; CHECK: ret i32
 
-; float fsub(float a, float b){ return a - b; }
+
+
+
+
+
+
+
+
+
+
 
 define float @fsub_optimize(float %a, float %b) #0 {
 entry:
@@ -63,11 +63,11 @@ entry:
   ret float %sub
 }
 
-; CHECK-LABEL: @fsub_optimize
-; CHECK-NOT: alloca
-; CHECK-NOT: store
-; CHECK-NOT: load
-; CHECK: ret
+
+
+
+
+
 
 define float @fsub_optnone(float %a, float %b) #1 {
 entry:
@@ -81,18 +81,18 @@ entry:
   ret float %sub
 }
 
-; CHECK-LABEL: @fsub_optnone
-; CHECK: alloca float
-; CHECK: alloca float
-; CHECK: store float
-; CHECK: store float
-; CHECK: load float
-; CHECK: load float
-; CHECK: fsub float
-; CHECK: ret float
 
-; typedef float __attribute__((ext_vector_type(4))) float4;
-; float4 vmul(float4 a, float4 b){ return a * b; }
+
+
+
+
+
+
+
+
+
+
+
 
 define <4 x float> @vmul_optimize(<4 x float> %a, <4 x float> %b) #0 {
 entry:
@@ -106,11 +106,11 @@ entry:
   ret <4 x float> %mul
 }
 
-; CHECK-LABEL: @vmul_optimize
-; CHECK-NOT: alloca
-; CHECK-NOT: store
-; CHECK-NOT: load
-; CHECK: ret
+
+
+
+
+
 
 define <4 x float> @vmul_optnone(<4 x float> %a, <4 x float> %b) #1 {
 entry:
@@ -124,12 +124,12 @@ entry:
   ret <4 x float> %mul
 }
 
-; CHECK-LABEL: @vmul_optnone
-; CHECK: alloca <4 x float>
-; CHECK: alloca <4 x float>
-; CHECK: store <4 x float>
-; CHECK: store <4 x float>
-; CHECK: load <4 x float>
-; CHECK: load <4 x float>
-; CHECK: fmul <4 x float>
-; CHECK: ret
+
+
+
+
+
+
+
+
+

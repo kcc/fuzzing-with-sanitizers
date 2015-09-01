@@ -1,10 +1,10 @@
-; RUN: llc -march=mips < %s | FileCheck %s
-; Check assembly printing of odd constants.
 
-; CHECK: bigCst:
-; CHECK-NEXT: .8byte 1845068520838224192
-; CHECK-NEXT: .8byte 11776
-; CHECK-NEXT: .size bigCst, 16
+
+
+
+
+
+
 
 @bigCst = internal constant i82 483673642326615442599424
 

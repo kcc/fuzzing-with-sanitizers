@@ -1,26 +1,26 @@
-; RUN: opt < %s -basicaa -slp-vectorizer -dce -S -mtriple=x86_64-apple-macosx10.8.0 -mcpu=corei7-avx | FileCheck %s
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.9.0"
 
-; int foo(int *A) {
-;   int r = A[0], g = A[1], b = A[2], a = A[3];
-;   for (int i=0; i < A[13]; i++) {
-;     r*=18; g*=19; b*=12; a *=9;
-;   }
-;   A[0] = r; A[1] = g; A[2] = b; A[3] = a;
-; }
 
-;CHECK-LABEL: @foo
-;CHECK: bitcast i32* %A to <4 x i32>*
-;CHECK-NEXT: load <4 x i32>
-;CHECK: phi <4 x i32>
-;CHECK-NEXT: mul nsw <4 x i32>
-;CHECK-NOT: mul
-;CHECK: phi <4 x i32>
-;CHECK: bitcast i32* %A to <4 x i32>*
-;CHECK-NEXT: store <4 x i32>
-;CHECK-NEXT:ret i32 undef
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define i32 @foo(i32* nocapture %A) #0 {
 entry:
   %0 = load i32, i32* %A, align 4
@@ -35,7 +35,7 @@ entry:
   %cmp24 = icmp sgt i32 %4, 0
   br i1 %cmp24, label %for.body, label %for.end
 
-for.body:                                         ; preds = %entry, %for.body
+for.body:                                         
   %i.029 = phi i32 [ %inc, %for.body ], [ 0, %entry ]
   %a.028 = phi i32 [ %mul7, %for.body ], [ %3, %entry ]
   %b.027 = phi i32 [ %mul6, %for.body ], [ %2, %entry ]
@@ -49,7 +49,7 @@ for.body:                                         ; preds = %entry, %for.body
   %cmp = icmp slt i32 %inc, %4
   br i1 %cmp, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   %a.0.lcssa = phi i32 [ %3, %entry ], [ %mul7, %for.body ]
   %b.0.lcssa = phi i32 [ %2, %entry ], [ %mul6, %for.body ]
   %g.0.lcssa = phi i32 [ %1, %entry ], [ %mul5, %for.body ]

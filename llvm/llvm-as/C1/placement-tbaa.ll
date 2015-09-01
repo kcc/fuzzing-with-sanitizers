@@ -1,24 +1,24 @@
-; RUN: opt < %s -tbaa -basicaa -aa-eval -evaluate-aa-metadata -print-no-aliases -print-may-aliases -disable-output 2>&1 | FileCheck %s
 
-; Generated with "clang -cc1 -disable-llvm-optzns -O1 -emit-llvm"
-; #include <new>
-; struct Foo { long i; };
-; struct Bar { void *p; };
-; long foo(int n) {
-;   Foo *f = new Foo;
-;   f->i = 1;
-;   for (int i=0; i<n; ++i) {
-;     Bar *b = new (f) Bar;
-;     b->p = 0;
-;     f = new (f) Foo;
-;     f->i = i;
-;   }
-;   return f->i;
-; }
 
-; Basic AA says MayAlias, TBAA says NoAlias
-; CHECK: MayAlias: i64* %i5, i8** %p
-; CHECK: NoAlias: store i64 %conv, i64* %i5, align 8, !tbaa !6 <->   store i8* null, i8** %p, align 8, !tbaa !9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %struct.Foo = type { i64 }
 %struct.Bar = type { i8* }

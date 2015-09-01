@@ -1,9 +1,9 @@
-; RUN: llc < %s -mtriple=x86_64-apple-darwin10 -disable-fp-elim -relocation-model=pic
-; PR4099
 
-	%0 = type { [62 x %struct.Bitvec*] }		; type %0
-	%1 = type { i8* }		; type %1
-	%2 = type { double }		; type %2
+
+
+	%0 = type { [62 x %struct.Bitvec*] }		
+	%1 = type { i8* }		
+	%2 = type { double }		
 	%struct..5sPragmaType = type { i8*, i32 }
 	%struct.AggInfo = type { i8, i8, i32, %struct.ExprList*, i32, %struct.AggInfo_col*, i32, i32, i32, %struct.AggInfo_func*, i32, i32 }
 	%struct.AggInfo_col = type { %struct.Table*, i32, i32, i32, i32, %struct.Expr* }
@@ -71,47 +71,47 @@
 
 define fastcc void @dropCell(%struct.MemPage* nocapture %pPage, i32 %idx, i32 %sz) nounwind ssp {
 entry:
-	%0 = load i8*, i8** null, align 8		; <i8*> [#uses=4]
-	%1 = or i32 0, 0		; <i32> [#uses=1]
-	%2 = icmp slt i32 %sz, 4		; <i1> [#uses=1]
-	%size_addr.0.i = select i1 %2, i32 4, i32 %sz		; <i32> [#uses=1]
+	%0 = load i8*, i8** null, align 8		
+	%1 = or i32 0, 0		
+	%2 = icmp slt i32 %sz, 4		
+	%size_addr.0.i = select i1 %2, i32 4, i32 %sz		
 	br label %bb3.i
 
-bb3.i:		; preds = %bb3.i, %entry
-	%3 = icmp eq i32 0, 0		; <i1> [#uses=1]
-	%or.cond.i = or i1 %3, false		; <i1> [#uses=1]
+bb3.i:		
+	%3 = icmp eq i32 0, 0		
+	%or.cond.i = or i1 %3, false		
 	br i1 %or.cond.i, label %bb5.i, label %bb3.i
 
-bb5.i:		; preds = %bb3.i
-	%4 = getelementptr i8, i8* %0, i64 0		; <i8*> [#uses=1]
+bb5.i:		
+	%4 = getelementptr i8, i8* %0, i64 0		
 	store i8 0, i8* %4, align 1
-	%5 = getelementptr i8, i8* %0, i64 0		; <i8*> [#uses=1]
+	%5 = getelementptr i8, i8* %0, i64 0		
 	store i8 0, i8* %5, align 1
-	%6 = add i32 %1, 2		; <i32> [#uses=1]
-	%7 = zext i32 %6 to i64		; <i64> [#uses=2]
-	%8 = getelementptr i8, i8* %0, i64 %7		; <i8*> [#uses=1]
-	%9 = lshr i32 %size_addr.0.i, 8		; <i32> [#uses=1]
-	%10 = trunc i32 %9 to i8		; <i8> [#uses=1]
+	%6 = add i32 %1, 2		
+	%7 = zext i32 %6 to i64		
+	%8 = getelementptr i8, i8* %0, i64 %7		
+	%9 = lshr i32 %size_addr.0.i, 8		
+	%10 = trunc i32 %9 to i8		
 	store i8 %10, i8* %8, align 1
-	%.sum31.i = add i64 %7, 1		; <i64> [#uses=1]
-	%11 = getelementptr i8, i8* %0, i64 %.sum31.i		; <i8*> [#uses=1]
+	%.sum31.i = add i64 %7, 1		
+	%11 = getelementptr i8, i8* %0, i64 %.sum31.i		
 	store i8 0, i8* %11, align 1
 	br label %bb11.outer.i
 
-bb11.outer.i:		; preds = %bb11.outer.i, %bb5.i
-	%12 = icmp eq i32 0, 0		; <i1> [#uses=1]
+bb11.outer.i:		
+	%12 = icmp eq i32 0, 0		
 	br i1 %12, label %bb12.i, label %bb11.outer.i
 
-bb12.i:		; preds = %bb11.outer.i
-	%i.08 = add i32 %idx, 1		; <i32> [#uses=1]
-	%13 = icmp sgt i32 0, %i.08		; <i1> [#uses=1]
+bb12.i:		
+	%i.08 = add i32 %idx, 1		
+	%13 = icmp sgt i32 0, %i.08		
 	br i1 %13, label %bb, label %bb2
 
-bb:		; preds = %bb12.i
+bb:		
 	br label %bb2
 
-bb2:		; preds = %bb, %bb12.i
-	%14 = getelementptr %struct.MemPage, %struct.MemPage* %pPage, i64 0, i32 1		; <i8*> [#uses=1]
+bb2:		
+	%14 = getelementptr %struct.MemPage, %struct.MemPage* %pPage, i64 0, i32 1		
 	store i8 1, i8* %14, align 1
 	ret void
 }

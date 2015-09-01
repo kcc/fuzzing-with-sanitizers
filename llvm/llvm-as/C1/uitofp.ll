@@ -1,4 +1,4 @@
-; RUN: llc -march=mips -mattr=+single-float < %s
+
 
 define void @f0() nounwind {
 entry:

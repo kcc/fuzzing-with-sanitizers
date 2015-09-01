@@ -1,14 +1,14 @@
-; RUN: opt < %s -loop-vectorize -force-vector-interleave=1 -force-vector-width=2 -S | FileCheck %s
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 
-; Make sure that we can handle multiple integer induction variables.
-; CHECK-LABEL: @multi_int_induction(
-; CHECK: vector.body:
-; CHECK:  %index = phi i64 [ 0, %vector.ph ], [ %index.next, %vector.body ]
-; CHECK:  %normalized.idx = sub i64 %index, 0
-; CHECK:  %[[VAR:.*]] = trunc i64 %normalized.idx to i32
-; CHECK:  %offset.idx = add i32 190, %[[VAR]]
+
+
+
+
+
+
+
 define void @multi_int_induction(i32* %A, i32 %N) {
 for.body.lr.ph:
   br label %for.body
@@ -28,21 +28,21 @@ for.end:
   ret void
 }
 
-; RUN: opt < %s -loop-vectorize -force-vector-interleave=1 -force-vector-width=2 -instcombine -S | FileCheck %s --check-prefix=IND
 
-; Make sure we remove unneeded vectorization of induction variables.
-; In order for instcombine to cleanup the vectorized induction variables that we
-; create in the loop vectorizer we need to perform some form of redundancy
-; elimination to get rid of multiple uses.
 
-; IND-LABEL: scalar_use
 
-; IND:     br label %vector.body
-; IND:     vector.body:
-;   Vectorized induction variable.
-; IND-NOT:  insertelement <2 x i64>
-; IND-NOT:  shufflevector <2 x i64>
-; IND:     br {{.*}}, label %vector.body
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @scalar_use(float* %a, float %b, i64 %offset, i64 %offset2, i64 %n) {
 entry:
@@ -68,18 +68,18 @@ loopexit:
 }
 
 
-; Make sure that the loop exit count computation does not overflow for i8 and
-; i16. The exit count of these loops is i8/i16 max + 1. If we don't cast the
-; induction variable to a bigger type the exit count computation will overflow
-; to 0.
-; PR17532
 
-; CHECK-LABEL: i8_loop
-; CHECK: icmp eq i32 {{.*}}, 256
+
+
+
+
+
+
+
 define i32 @i8_loop() nounwind readnone ssp uwtable {
   br label %1
 
-; <label>:1                                       ; preds = %1, %0
+
   %a.0 = phi i32 [ 1, %0 ], [ %2, %1 ]
   %b.0 = phi i8 [ 0, %0 ], [ %3, %1 ]
   %2 = and i32 %a.0, 4
@@ -87,17 +87,17 @@ define i32 @i8_loop() nounwind readnone ssp uwtable {
   %4 = icmp eq i8 %3, 0
   br i1 %4, label %5, label %1
 
-; <label>:5                                       ; preds = %1
+
   ret i32 %2
 }
 
-; CHECK-LABEL: i16_loop
-; CHECK: icmp eq i32 {{.*}}, 65536
+
+
 
 define i32 @i16_loop() nounwind readnone ssp uwtable {
   br label %1
 
-; <label>:1                                       ; preds = %1, %0
+
   %a.0 = phi i32 [ 1, %0 ], [ %2, %1 ]
   %b.0 = phi i16 [ 0, %0 ], [ %3, %1 ]
   %2 = and i32 %a.0, 4
@@ -105,26 +105,26 @@ define i32 @i16_loop() nounwind readnone ssp uwtable {
   %4 = icmp eq i16 %3, 0
   br i1 %4, label %5, label %1
 
-; <label>:5                                       ; preds = %1
+
   ret i32 %2
 }
 
-; This loop has a backedge taken count of i32_max. We need to check for this
-; condition and branch directly to the scalar loop.
 
-; CHECK-LABEL: max_i32_backedgetaken
-; CHECK:  %min.iters.check = icmp ult i32 0, 2
-; CHECK:  br i1 %min.iters.check, label %scalar.ph, label %min.iters.checked
 
-; CHECK: scalar.ph:
-; CHECK:  %bc.resume.val = phi i32 [ %resume.val, %middle.block ], [ 0, %0 ]
-; CHECK:  %bc.merge.rdx = phi i32 [ 1, %0 ], [ %5, %middle.block ]
+
+
+
+
+
+
+
+
 
 define i32 @max_i32_backedgetaken() nounwind readnone ssp uwtable {
 
   br label %1
 
-; <label>:1                                       ; preds = %1, %0
+
   %a.0 = phi i32 [ 1, %0 ], [ %2, %1 ]
   %b.0 = phi i32 [ 0, %0 ], [ %3, %1 ]
   %2 = and i32 %a.0, 4
@@ -132,21 +132,21 @@ define i32 @max_i32_backedgetaken() nounwind readnone ssp uwtable {
   %4 = icmp eq i32 %3, 0
   br i1 %4, label %5, label %1
 
-; <label>:5                                       ; preds = %1
+
   ret i32 %2
 }
 
-; When generating the overflow check we must sure that the induction start value
-; is defined before the branch to the scalar preheader.
 
-; CHECK-LABEL: testoverflowcheck
-; CHECK: entry
-; CHECK: %[[LOAD:.*]] = load i8
-; CHECK: %[[VAL:.*]] =  zext i8 %[[LOAD]] to i32
-; CHECK: br
 
-; CHECK: scalar.ph
-; CHECK: phi i32 [ %{{.*}}, %middle.block ], [ %[[VAL]], %entry ]
+
+
+
+
+
+
+
+
+
 
 @e = global i8 1, align 1
 @d = common global i32 0, align 4

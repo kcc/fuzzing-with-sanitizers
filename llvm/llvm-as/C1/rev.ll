@@ -1,8 +1,8 @@
-; RUN: llc -mtriple=thumb-eabi -mattr=+v6 %s -o - | FileCheck %s
+
 
 define i32 @test1(i32 %X) nounwind {
-; CHECK: test1
-; CHECK: rev16 r0, r0
+
+
         %tmp1 = lshr i32 %X, 8
         %X15 = bitcast i32 %X to i32
         %tmp4 = shl i32 %X15, 8
@@ -17,8 +17,8 @@ define i32 @test1(i32 %X) nounwind {
 }
 
 define i32 @test2(i32 %X) nounwind {
-; CHECK: test2
-; CHECK: revsh r0, r0
+
+
         %tmp1 = lshr i32 %X, 8
         %tmp1.upgrd.1 = trunc i32 %tmp1 to i16
         %tmp3 = trunc i32 %X to i16
@@ -29,11 +29,11 @@ define i32 @test2(i32 %X) nounwind {
         ret i32 %tmp5.upgrd.2
 }
 
-; rdar://9147637
+
 define i32 @test3(i16 zeroext %a) nounwind {
 entry:
-; CHECK-LABEL: test3:
-; CHECK: revsh r0, r0
+
+
   %0 = tail call i16 @llvm.bswap.i16(i16 %a)
   %1 = sext i16 %0 to i32
   ret i32 %1
@@ -43,8 +43,8 @@ declare i16 @llvm.bswap.i16(i16) nounwind readnone
 
 define i32 @test4(i16 zeroext %a) nounwind {
 entry:
-; CHECK-LABEL: test4:
-; CHECK: revsh r0, r0
+
+
   %conv = zext i16 %a to i32
   %shr9 = lshr i16 %a, 8
   %conv2 = zext i16 %shr9 to i32

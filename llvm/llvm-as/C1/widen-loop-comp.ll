@@ -1,24 +1,24 @@
-; RUN: opt < %s -indvars -S | FileCheck %s
+
 target triple = "aarch64--linux-gnu"
 
-; Provide legal integer types.
+
 target datalayout = "n8:16:32:64"
 
 
-; Check the loop exit i32 compare instruction and operand are widened to i64
-; instead of truncating IV before its use in the i32 compare instruction.
+
+
 
 @idx = common global i32 0, align 4
 @e = common global i32 0, align 4
 @ptr = common global i32* null, align 8
 
-; CHECK-LABEL: @test1
-; CHECK: for.body.lr.ph:
-; CHECK: sext i32
-; CHECK: for.cond:
-; CHECK: icmp slt i64
-; CHECK: for.body:
-; CHECK: phi i64
+
+
+
+
+
+
+
 
 define i32 @test1() {
 entry:
@@ -61,12 +61,12 @@ for.end:
   ret i32 %4
 }
 
-; CHECK-LABEL: @test2
-; CHECK: for.body4.us
-; CHECK: %indvars.iv.next = add nuw nsw i64 %indvars.iv, 1
-; CHECK: %cmp2.us = icmp slt i64
-; CHECK-NOT: %2 = trunc i64 %indvars.iv.next to i32
-; CHECK-NOT: %cmp2.us = icmp slt i32
+
+
+
+
+
+
 
 define void @test2([8 x i8]* %a, i8* %b, i8 %limit) {
 entry:
@@ -112,11 +112,11 @@ for.end:
   ret void
 }
 
-; CHECK-LABEL: @test3
-; CHECK: sext i32 %b
-; CHECK: for.cond:
-; CHECK: phi i64
-; CHECK: icmp slt i64
+
+
+
+
+
 
 define i32 @test3(i32* %a, i32 %b) {
 entry:
@@ -142,11 +142,11 @@ for.end:
 
 declare i32 @fn1(i8 signext)
 
-; PR21030
-; CHECK-LABEL: @test4
-; CHECK: for.body:
-; CHECK: phi i32
-; CHECK: icmp sgt i8
+
+
+
+
+
 
 define i32 @test4(i32 %a) {
 entry:
@@ -166,11 +166,11 @@ for.end:
   ret i32 0
 }
 
-; CHECK-LABEL: @test5
-; CHECK: zext i32 %b
-; CHECK: for.cond:
-; CHECK: phi i64
-; CHECK: icmp ule i64
+
+
+
+
+
 
 define i32 @test5(i32* %a, i32 %b) {
 entry:

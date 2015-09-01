@@ -1,9 +1,9 @@
-; RUN: opt < %s -instcombine -S > %t
-; RUN: not grep zext %t
-; RUN: not grep slt %t
-; RUN: grep "icmp ult" %t
 
-; Instcombine should convert the zext+slt into a simple ult.
+
+
+
+
+
 
 define void @foo(double* %p) nounwind {
 entry:

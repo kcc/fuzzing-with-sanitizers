@@ -1,9 +1,9 @@
-; RUN: llc -march=amdgcn < %s | FileCheck -check-prefix=GCN %s
 
-; Pointer value is stored in a candidate for LDS usage.
 
-; GCN-LABEL: {{^}}stored_lds_pointer_value:
-; GCN: buffer_store_dword v
+
+
+
+
 define void @stored_lds_pointer_value(float* addrspace(1)* %ptr) #0 {
   %tmp = alloca float
   store float 0.0, float *%tmp
@@ -11,11 +11,11 @@ define void @stored_lds_pointer_value(float* addrspace(1)* %ptr) #0 {
   ret void
 }
 
-; GCN-LABEL: {{^}}stored_lds_pointer_value_gep:
-; GCN-DAG: s_mov_b32 s{{[0-9]+}}, SCRATCH_RSRC_DWORD0
-; GCN-DAG: s_mov_b32 s{{[0-9]+}}, SCRATCH_RSRC_DWORD1
-; GCN: buffer_store_dword v
-; GCN: buffer_store_dword v
+
+
+
+
+
 define void @stored_lds_pointer_value_gep(float* addrspace(1)* %ptr, i32 %idx) #0 {
 bb:
   %tmp = alloca float, i32 16
@@ -25,14 +25,14 @@ bb:
   ret void
 }
 
-; Pointer value is stored in a candidate for vector usage
-; GCN-LABEL: {{^}}stored_vector_pointer_value:
-; GCN-DAG: s_mov_b32 s{{[0-9]+}}, SCRATCH_RSRC_DWORD0
-; GCN-DAG: s_mov_b32 s{{[0-9]+}}, SCRATCH_RSRC_DWORD1
-; GCN: buffer_store_dword
-; GCN: buffer_store_dword
-; GCN: buffer_store_dword
-; GCN: buffer_store_dword
+
+
+
+
+
+
+
+
 define void @stored_vector_pointer_value(i32* addrspace(1)* %out, i32 %index) {
 entry:
   %tmp0 = alloca [4 x i32]

@@ -1,16 +1,16 @@
-; RUN: opt < %s -S -loop-unroll -verify-loop-info | FileCheck %s
-;
-; Unit tests for LoopInfo::updateUnloop.
+
+
+
 
 declare i1 @check() nounwind
 
-; Ensure that tail->inner is removed and rely on verify-loopinfo to
-; check soundness.
-;
-; CHECK-LABEL: @skiplevelexit(
-; CHECK: tail:
-; CHECK-NOT: br
-; CHECK: ret void
+
+
+
+
+
+
+
 define void @skiplevelexit() nounwind {
 entry:
   br label %outer
@@ -34,21 +34,21 @@ exit:
   ret void
 }
 
-; Remove the middle loop of a triply nested loop tree.
-; Ensure that only the middle loop is removed and rely on verify-loopinfo to
-; check soundness.
-;
-; CHECK-LABEL: @unloopNested(
-; Outer loop control.
-; CHECK: while.body:
-; CHECK: br i1 %cmp3, label %if.then, label %if.end
-; Inner loop control.
-; CHECK: while.end14.i:
-; CHECK: br i1 %call15.i, label %if.end.i, label %exit
-; Middle loop control should no longer reach %while.cond.
-; Now it is the outer loop backedge.
-; CHECK: exit:
-; CHECK: br label %while.cond.outer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @unloopNested() {
 entry:
   br label %while.cond.outer
@@ -122,31 +122,31 @@ return:
   ret void
 }
 
-; Remove the middle loop of a deeply nested loop tree.
-; Ensure that only the middle loop is removed and rely on verify-loopinfo to
-; check soundness.
-;
-; This test must be disabled until trip count computation can be optimized...
-; rdar:14038809 [SCEV]: Optimize trip count computation for multi-exit loops.
-; CHECKFIXME-LABEL: @unloopDeepNested(
-; Inner-inner loop control.
-; CHECKFIXME: while.cond.us.i:
-; CHECKFIXME: br i1 %cmp.us.i, label %next_data.exit, label %while.body.us.i
-; CHECKFIXME: if.then.us.i:
-; CHECKFIXME: br label %while.cond.us.i
-; Inner loop tail.
-; CHECKFIXME: if.else.i:
-; CHECKFIXME: br label %while.cond.outer.i
-; Middle loop control (removed).
-; CHECKFIXME: valid_data.exit:
-; CHECKFIXME-NOT: br
-; CHECKFIXME: %cmp = call zeroext i1 @check()
-; Outer loop control.
-; CHECKFIXME: copy_data.exit:
-; CHECKFIXME: br i1 %cmp38, label %if.then39, label %while.cond.outer
-; Outer-outer loop tail.
-; CHECKFIXME: while.cond.outer.outer.backedge:
-; CHECKFIXME: br label %while.cond.outer.outer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @unloopDeepNested() nounwind {
 for.cond8.preheader.i:
   %cmp113.i = call zeroext i1 @check()
@@ -244,17 +244,17 @@ while.end:
   ret void
 }
 
-; Remove a nested loop with irreducible control flow.
-; Ensure that only the middle loop is removed and rely on verify-loopinfo to
-; check soundness.
-;
-; CHECK-LABEL: @unloopIrreducible(
-; Irreducible loop.
-; CHECK: for.inc117:
-; CHECK: br label %for.cond103t
-; Nested loop (removed).
-; CHECK: for.inc159:
-; CHECK: br label %for.inc163
+
+
+
+
+
+
+
+
+
+
+
 define void @unloopIrreducible() nounwind {
 
 entry:
@@ -322,15 +322,15 @@ for.end166:
 
 }
 
-; Remove a loop whose exit branches into a sibling loop.
-; Ensure that only the loop is removed and rely on verify-loopinfo to
-; check soundness.
-;
-; CHECK-LABEL: @unloopCriticalEdge(
-; CHECK: while.cond.outer.i.loopexit.split:
-; CHECK: br label %while.body
-; CHECK: while.body:
-; CHECK: br label %for.end78
+
+
+
+
+
+
+
+
+
 define void @unloopCriticalEdge() nounwind {
 entry:
   br label %for.cond31
@@ -381,92 +381,92 @@ for.end94:
   ret void
 }
 
-; Test UnloopUpdater::removeBlocksFromAncestors.
-;
-; Check that the loop backedge is removed from the middle loop 1699,
-; but not the inner loop 1676.
-; CHECK: while.body1694:
-; CHECK:   br label %while.cond1676
-; CHECK: while.end1699:
-; CHECK:   br label %sw.default1711
+
+
+
+
+
+
+
+
 define void @removeSubloopBlocks() nounwind {
 entry:
   br label %tryagain.outer
 
-tryagain.outer:                                   ; preds = %sw.bb304, %entry
+tryagain.outer:                                   
   br label %tryagain
 
-tryagain:                                         ; preds = %while.end1699, %tryagain.outer
+tryagain:                                         
   br i1 undef, label %sw.bb1669, label %sw.bb304
 
-sw.bb304:                                         ; preds = %tryagain
+sw.bb304:                                         
   br i1 undef, label %return, label %tryagain.outer
 
-sw.bb1669:                                        ; preds = %tryagain
+sw.bb1669:                                        
   br i1 undef, label %sw.default1711, label %while.cond1676
 
-while.cond1676:                                   ; preds = %while.body1694, %sw.bb1669
+while.cond1676:                                   
   br i1 undef, label %while.end1699, label %while.body1694
 
-while.body1694:                                   ; preds = %while.cond1676
+while.body1694:                                   
   br label %while.cond1676
 
-while.end1699:                                    ; preds = %while.cond1676
+while.end1699:                                    
   br i1 false, label %tryagain, label %sw.default1711
 
-sw.default1711:                                   ; preds = %while.end1699, %sw.bb1669, %tryagain
+sw.default1711:                                   
   br label %defchar
 
-defchar:                                          ; preds = %sw.default1711, %sw.bb376
+defchar:                                          
   br i1 undef, label %if.end2413, label %if.then2368
 
-if.then2368:                                      ; preds = %defchar
+if.then2368:                                      
   unreachable
 
-if.end2413:                                       ; preds = %defchar
+if.end2413:                                       
   unreachable
 
-return:                                           ; preds = %sw.bb304
+return:                                           
   ret void
 }
 
-; PR11335: the most deeply nested block should be removed from the outer loop.
-; CHECK-LABEL: @removeSubloopBlocks2(
-; CHECK: for.cond3:
-; CHECK-NOT: br
-; CHECK: ret void
+
+
+
+
+
 define void @removeSubloopBlocks2() nounwind {
 entry:
   %tobool.i = icmp ne i32 undef, 0
   br label %lbl_616
 
-lbl_616.loopexit:                                 ; preds = %for.cond
+lbl_616.loopexit:                                 
   br label %lbl_616
 
-lbl_616:                                          ; preds = %lbl_616.loopexit, %entry
+lbl_616:                                          
   br label %for.cond
 
-for.cond:                                         ; preds = %for.cond3, %lbl_616
+for.cond:                                         
   br i1 false, label %for.cond1.preheader, label %lbl_616.loopexit
 
-for.cond1.preheader:                              ; preds = %for.cond
+for.cond1.preheader:                              
   br label %for.cond1
 
-for.cond1.loopexit:                               ; preds = %for.cond.i
+for.cond1.loopexit:                               
   br label %for.cond1
 
-for.cond1:                                        ; preds = %for.cond1.loopexit, %for.cond1.preheader
+for.cond1:                                        
   br i1 false, label %for.body2, label %for.cond3
 
-for.body2:                                        ; preds = %for.cond1
+for.body2:                                        
   br label %for.cond.i
 
-for.cond.i:                                       ; preds = %for.cond.i, %for.body2
+for.cond.i:                                       
   br i1 %tobool.i, label %for.cond.i, label %for.cond1.loopexit
 
-for.cond3:                                        ; preds = %for.cond1
+for.cond3:                                        
   br i1 false, label %for.cond, label %if.end
 
-if.end:                                           ; preds = %for.cond3
+if.end:                                           
   ret void
 }

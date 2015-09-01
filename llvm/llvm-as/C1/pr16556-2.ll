@@ -1,7 +1,7 @@
-; RUN: llc < %s
 
-; This test formerly failed because of wrong custom lowering for
-; fptosi of ppc_fp128.
+
+
+
 
 target datalayout = "E-p:32:32:32-S0-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f16:16:16-f32:32:32-f64:64:64-f128:64:128-v64:64:64-v128:128:128-a0:0:64-n32"
 target triple = "powerpc-unknown-linux-gnu"
@@ -22,12 +22,12 @@ entry:
   %tmp = icmp ne %core.time.TickDuration* %.this_arg, null
   br i1 %tmp, label %noassert, label %assert
 
-assert:                                           ; preds = %entry
+assert:                                           
   %tmp1 = load { i32, i8* }, { i32, i8* }* @.modulefilename
   %0 = call i8* @_d_assert_msg({ i32, i8* } { i32 9, i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str83, i32 0, i32 0) }, { i32, i8* } %tmp1, i32 1586)
   unreachable
 
-noassert:                                         ; preds = %entry
+noassert:                                         
   %tmp2 = getelementptr %core.time.TickDuration, %core.time.TickDuration* %.this_arg, i32 0, i32 0
   %tmp3 = load i64, i64* %tmp2
   %tmp4 = sitofp i64 %tmp3 to ppc_fp128

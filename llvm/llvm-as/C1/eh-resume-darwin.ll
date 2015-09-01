@@ -1,4 +1,4 @@
-; RUN: llc < %s -march=arm | FileCheck %s
+
 target triple = "armv6-apple-macosx10.6"
 
 declare void @func()
@@ -19,4 +19,4 @@ lpad:
   resume { i8*, i32 } %exn
 }
 
-; CHECK: __Unwind_SjLj_Resume
+

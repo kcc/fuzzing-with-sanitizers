@@ -1,5 +1,5 @@
-; RUN: opt < %s -inline -prune-eh -disable-output
-; PR993
+
+
 target datalayout = "e-p:32:32"
 target triple = "i386-unknown-openbsd3.9"
 	%"struct.__gnu_cxx::__normal_iterator<char*,std::basic_string<char, std::char_traits<char>, std::allocator<char> > >" = type { i8* }
@@ -29,8 +29,8 @@ target triple = "i386-unknown-openbsd3.9"
 	%"struct.std::locale::facet" = type { i32 (...)**, i32 }
 	%"struct.std::logic_error" = type { %"struct.__gnu_cxx::char_producer<char>", %"struct.std::basic_string<char,std::char_traits<char>,std::allocator<char> >" }
 	%union.__mbstate_t = type { i64, [120 x i8] }
-@.str_1 = external global [17 x i8]		; <[17 x i8]*> [#uses=0]
-@.str_9 = external global [24 x i8]		; <[24 x i8]*> [#uses=0]
+@.str_1 = external global [17 x i8]		
+@.str_9 = external global [24 x i8]		
 
 define void @main() {
 entry:
@@ -40,14 +40,14 @@ entry:
 
 define fastcc void @_ZNSt14basic_ofstreamIcSt11char_traitsIcEE4openEPKcSt13_Ios_Openmode() {
 entry:
-	%tmp.6 = icmp eq %"struct.std::basic_filebuf<char,std::char_traits<char> >"* null, null		; <i1> [#uses=1]
+	%tmp.6 = icmp eq %"struct.std::basic_filebuf<char,std::char_traits<char> >"* null, null		
 	br i1 %tmp.6, label %then, label %UnifiedReturnBlock
 
-then:		; preds = %entry
+then:		
 	tail call fastcc void @_ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate( )
 	ret void
 
-UnifiedReturnBlock:		; preds = %entry
+UnifiedReturnBlock:		
 	ret void
 }
 
@@ -131,12 +131,12 @@ entry:
 	invoke fastcc void @_ZNSt11logic_errorC1ERKSs( )
 			to label %try_exit.0 unwind label %try_catch.0
 
-try_catch.0:		; preds = %entry
+try_catch.0:		
         %exn = landingpad {i8*, i32}
                  catch i8* null
 	resume { i8*, i32 } %exn
 
-try_exit.0:		; preds = %entry
+try_exit.0:		
 	unreachable
 }
 
@@ -162,12 +162,12 @@ entry:
 	invoke fastcc void @_ZNSsC1ERKSs( )
 			to label %_ZNSt11logic_errorC2ERKSs.exit unwind label %invoke_catch.i
 
-invoke_catch.i:		; preds = %entry
+invoke_catch.i:		
         %exn = landingpad {i8*, i32}
                  catch i8* null
 	resume { i8*, i32 } %exn
 
-_ZNSt11logic_errorC2ERKSs.exit:		; preds = %entry
+_ZNSt11logic_errorC2ERKSs.exit:		
 	ret void
 }
 
@@ -186,11 +186,11 @@ define fastcc void @_ZNSs16_S_construct_auxIPKcEEPcT_S3_RKSaIcE12__false_type() 
 entry:
 	br i1 false, label %then.1.i, label %endif.1.i
 
-then.1.i:		; preds = %entry
+then.1.i:		
 	call fastcc void @_ZSt19__throw_logic_errorPKc( )
 	br label %endif.1.i
 
-endif.1.i:		; preds = %then.1.i, %entry
+endif.1.i:		
 	call fastcc void @_ZNSs4_Rep9_S_createEjRKSaIcE( )
 	unreachable
 }
@@ -201,13 +201,13 @@ entry:
 	invoke fastcc void @_ZNSaIcEC1ERKS_( )
 			to label %invoke_cont.1 unwind label %invoke_catch.1
 
-invoke_catch.1:		; preds = %entry
+invoke_catch.1:		
         %exn = landingpad {i8*, i32}
                  catch i8* null
 	call fastcc void @_ZNSaIcED1Ev( )
 	resume { i8*, i32 } %exn
 
-invoke_cont.1:		; preds = %entry
+invoke_cont.1:		
 	call fastcc void @_ZNSaIcEC2ERKS_( )
 	ret void
 }
@@ -226,10 +226,10 @@ define fastcc void @_ZNSs4_Rep7_M_grabERKSaIcES2_() {
 entry:
 	br i1 false, label %else.i, label %cond_true
 
-cond_true:		; preds = %entry
+cond_true:		
 	ret void
 
-else.i:		; preds = %entry
+else.i:		
 	tail call fastcc void @_ZNSs4_Rep9_S_createEjRKSaIcE( )
 	unreachable
 }

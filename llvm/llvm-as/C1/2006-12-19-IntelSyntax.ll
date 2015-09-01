@@ -1,5 +1,5 @@
-; RUN: llc < %s -march=x86 -x86-asm-syntax=intel
-; PR1061
+
+
 target datalayout = "e-p:32:32"
 target triple = "i686-pc-linux-gnu"
 
@@ -20,55 +20,55 @@ entry:
 		 i32 13, label %bb11
 	]
 
-bb:		; preds = %entry
+bb:		
 	call void (...) @foo1( )
 	ret void
 
-bb1:		; preds = %entry
+bb1:		
 	call void (...) @foo2( )
 	ret void
 
-bb2:		; preds = %entry
+bb2:		
 	call void (...) @foo6( )
 	ret void
 
-bb3:		; preds = %entry
+bb3:		
 	call void (...) @foo3( )
 	ret void
 
-bb4:		; preds = %entry
+bb4:		
 	call void (...) @foo4( )
 	ret void
 
-bb5:		; preds = %entry
+bb5:		
 	call void (...) @foo5( )
 	ret void
 
-bb6:		; preds = %entry
+bb6:		
 	call void (...) @foo1( )
 	ret void
 
-bb7:		; preds = %entry
+bb7:		
 	call void (...) @foo2( )
 	ret void
 
-bb8:		; preds = %entry
+bb8:		
 	call void (...) @foo6( )
 	ret void
 
-bb9:		; preds = %entry
+bb9:		
 	call void (...) @foo3( )
 	ret void
 
-bb10:		; preds = %entry
+bb10:		
 	call void (...) @foo4( )
 	ret void
 
-bb11:		; preds = %entry
+bb11:		
 	call void (...) @foo5( )
 	ret void
 
-bb12:		; preds = %entry
+bb12:		
 	call void (...) @foo6( )
 	ret void
 }

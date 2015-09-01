@@ -1,11 +1,11 @@
-; RUN: opt -S -indvars < %s | FileCheck %s
 
-; PR12627
+
+
 define void @test1(i32 %x) nounwind uwtable ssp {
 entry:
   br label %for.body
 
-for.body:                                         ; preds = %for.body, %entry
+for.body:                                         
   %phi1 = phi i1 [ false, %entry ], [ %cmpa, %for.body ]
   %phi2 = phi i1 [ false, %entry ], [ %cmpb, %for.body ]
   %i.07 = phi i32 [ 0, %entry ], [ %inc, %for.body ]
@@ -16,12 +16,12 @@ for.body:                                         ; preds = %for.body, %entry
   %exitcond = icmp eq i32 %inc, 100
   br i1 %exitcond, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret void
 
-; CHECK-LABEL: @test1(
-; CHECK-NOT: phi i1
-; CHECK: call void @aux(i1 false, i1 false)
+
+
+
 }
 
 declare void @aux(i1, i1)

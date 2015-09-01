@@ -1,10 +1,10 @@
-; RUN: not llc -mtriple=i686-pc-win32 < %s 2>&1 | FileCheck %s
 
-; FIXME: This is miscompiled due to our unconditional use of ESI as the base
-; pointer.
-; XFAIL: *
 
-; CHECK: Stack realignment in presence of dynamic stack adjustments is not supported with inline assembly
+
+
+
+
+
 
 define i32 @foo() {
 entry:

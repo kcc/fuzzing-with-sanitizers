@@ -1,4 +1,4 @@
-; RUN: opt < %s -basicaa -gvn -S | grep "DEAD = phi i32 "
+
 
 define i32 @main(i32* %p, i32 %x, i32 %y) {
 block1:

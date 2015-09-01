@@ -1,14 +1,14 @@
-; RUN: llc < %s -mtriple=xcore-unknown-unknown -O0 | FileCheck %s
 
-; target datalayout = "e-m:e-p:32:32-i1:8:32-i8:8:32-i16:16:32-i64:32-f64:32-a:0:32-n32"
-; target triple = "xcore"
 
-; CHECK-LABEL: f
-; CHECK: entsp 2
-; ...the prologue...
-; CHECK: .loc 1 2 0 prologue_end      # test.c:2:0
-; CHECK: add r0, r0, 1
-; CHECK: retsp 2
+
+
+
+
+
+
+
+
+
 define i32 @f(i32 %a) {
 entry:
   %a.addr = alloca i32, align 4

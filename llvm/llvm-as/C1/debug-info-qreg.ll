@@ -1,15 +1,15 @@
-; RUN: llc < %s - | FileCheck %s
+
 target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:32-f32:32:32-f64:32:32-v64:32:64-v128:32:128-a0:0:32-n32"
 target triple = "thumbv7-apple-macosx10.6.7"
 
-;CHECK: sub-register DW_OP_regx
-;CHECK-NEXT: 256
-;CHECK-NEXT: DW_OP_piece
-;CHECK-NEXT: 8
-;CHECK-NEXT: sub-register DW_OP_regx
-;CHECK-NEXT: 257
-;CHECK-NEXT: DW_OP_piece
-;CHECK-NEXT: 8
+
+
+
+
+
+
+
+
 
 @.str = external constant [13 x i8]
 
@@ -19,11 +19,11 @@ define i32 @main(i32 %argc, i8** nocapture %argv) nounwind ssp {
 entry:
   br label %for.body9
 
-for.body9:                                        ; preds = %for.body9, %entry
+for.body9:                                        
   %add19 = fadd <4 x float> undef, <float 0.000000e+00, float 0.000000e+00, float 0.000000e+00, float 1.000000e+00>, !dbg !39
   br i1 undef, label %for.end54, label %for.body9, !dbg !44
 
-for.end54:                                        ; preds = %for.body9
+for.end54:                                        
   tail call void @llvm.dbg.value(metadata <4 x float> %add19, i64 0, metadata !27, metadata !DIExpression()), !dbg !39
   %tmp115 = extractelement <4 x float> %add19, i32 1
   %conv6.i75 = fpext float %tmp115 to double, !dbg !45

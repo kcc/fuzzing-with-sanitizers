@@ -1,8 +1,8 @@
-; Test the MSA intrinsics that are encoded with the I5 instruction format and
-; are loads or stores.
 
-; RUN: llc -march=mips -mattr=+msa,+fp64 < %s | FileCheck %s
-; RUN: llc -march=mipsel -mattr=+msa,+fp64 < %s | FileCheck %s
+
+
+
+
 
 @llvm_mips_ld_b_ARG = global <16 x i8> <i8 0, i8 1, i8 2, i8 3, i8 4, i8 5, i8 6, i8 7, i8 8, i8 9, i8 10, i8 11, i8 12, i8 13, i8 14, i8 15>, align 16
 @llvm_mips_ld_b_RES = global <16 x i8> <i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0>, align 16
@@ -17,11 +17,11 @@ entry:
 
 declare <16 x i8> @llvm.mips.ld.b(i8*, i32) nounwind
 
-; CHECK: llvm_mips_ld_b_test:
-; CHECK: ld.b [[R1:\$w[0-9]+]], 16(
-; CHECK: st.b
-; CHECK: .size llvm_mips_ld_b_test
-;
+
+
+
+
+
 @llvm_mips_ld_h_ARG = global <8 x i16> <i16 0, i16 1, i16 2, i16 3, i16 4, i16 5, i16 6, i16 7>, align 16
 @llvm_mips_ld_h_RES = global <8 x i16> <i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0>, align 16
 
@@ -35,11 +35,11 @@ entry:
 
 declare <8 x i16> @llvm.mips.ld.h(i8*, i32) nounwind
 
-; CHECK: llvm_mips_ld_h_test:
-; CHECK: ld.h [[R1:\$w[0-9]+]], 16(
-; CHECK: st.h
-; CHECK: .size llvm_mips_ld_h_test
-;
+
+
+
+
+
 @llvm_mips_ld_w_ARG = global <4 x i32> <i32 0, i32 1, i32 2, i32 3>, align 16
 @llvm_mips_ld_w_RES = global <4 x i32> <i32 0, i32 0, i32 0, i32 0>, align 16
 
@@ -53,11 +53,11 @@ entry:
 
 declare <4 x i32> @llvm.mips.ld.w(i8*, i32) nounwind
 
-; CHECK: llvm_mips_ld_w_test:
-; CHECK: ld.w [[R1:\$w[0-9]+]], 16(
-; CHECK: st.w
-; CHECK: .size llvm_mips_ld_w_test
-;
+
+
+
+
+
 @llvm_mips_ld_d_ARG = global <2 x i64> <i64 0, i64 1>, align 16
 @llvm_mips_ld_d_RES = global <2 x i64> <i64 0, i64 0>, align 16
 
@@ -71,11 +71,11 @@ entry:
 
 declare <2 x i64> @llvm.mips.ld.d(i8*, i32) nounwind
 
-; CHECK: llvm_mips_ld_d_test:
-; CHECK: ld.d [[R1:\$w[0-9]+]], 16(
-; CHECK: st.d
-; CHECK: .size llvm_mips_ld_d_test
-;
+
+
+
+
+
 @llvm_mips_st_b_ARG = global <16 x i8> <i8 0, i8 1, i8 2, i8 3, i8 4, i8 5, i8 6, i8 7, i8 8, i8 9, i8 10, i8 11, i8 12, i8 13, i8 14, i8 15>, align 16
 @llvm_mips_st_b_RES = global <16 x i8> <i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0>, align 16
 
@@ -89,11 +89,11 @@ entry:
 
 declare void @llvm.mips.st.b(<16 x i8>, i8*, i32) nounwind
 
-; CHECK: llvm_mips_st_b_test:
-; CHECK: ld.b
-; CHECK: st.b [[R1:\$w[0-9]+]], 16(
-; CHECK: .size llvm_mips_st_b_test
-;
+
+
+
+
+
 @llvm_mips_st_h_ARG = global <8 x i16> <i16 0, i16 1, i16 2, i16 3, i16 4, i16 5, i16 6, i16 7>, align 16
 @llvm_mips_st_h_RES = global <8 x i16> <i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0>, align 16
 
@@ -107,11 +107,11 @@ entry:
 
 declare void @llvm.mips.st.h(<8 x i16>, i8*, i32) nounwind
 
-; CHECK: llvm_mips_st_h_test:
-; CHECK: ld.h
-; CHECK: st.h [[R1:\$w[0-9]+]], 16(
-; CHECK: .size llvm_mips_st_h_test
-;
+
+
+
+
+
 @llvm_mips_st_w_ARG = global <4 x i32> <i32 0, i32 1, i32 2, i32 3>, align 16
 @llvm_mips_st_w_RES = global <4 x i32> <i32 0, i32 0, i32 0, i32 0>, align 16
 
@@ -125,11 +125,11 @@ entry:
 
 declare void @llvm.mips.st.w(<4 x i32>, i8*, i32) nounwind
 
-; CHECK: llvm_mips_st_w_test:
-; CHECK: ld.w
-; CHECK: st.w [[R1:\$w[0-9]+]], 16(
-; CHECK: .size llvm_mips_st_w_test
-;
+
+
+
+
+
 @llvm_mips_st_d_ARG = global <2 x i64> <i64 0, i64 1>, align 16
 @llvm_mips_st_d_RES = global <2 x i64> <i64 0, i64 0>, align 16
 
@@ -143,8 +143,8 @@ entry:
 
 declare void @llvm.mips.st.d(<2 x i64>, i8*, i32) nounwind
 
-; CHECK: llvm_mips_st_d_test:
-; CHECK: ld.d
-; CHECK: st.d [[R1:\$w[0-9]+]], 16(
-; CHECK: .size llvm_mips_st_d_test
-;
+
+
+
+
+

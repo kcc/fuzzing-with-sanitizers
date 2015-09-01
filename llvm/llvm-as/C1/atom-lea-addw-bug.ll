@@ -1,6 +1,6 @@
-; RUN: llc < %s -mcpu=atom | FileCheck %s
 
-; ModuleID = 'bugpoint-reduced-simplified.bc'
+
+
 target triple = "x86_64-apple-darwin12.5.0"
 
 define i32 @DoLayout() {
@@ -15,5 +15,5 @@ entry:
   %add61 = add nsw i32 %conv60, 0
   %conv63 = and i32 %add61, 65535
   ret i32 %conv63
-; CHECK: addw
+
 }

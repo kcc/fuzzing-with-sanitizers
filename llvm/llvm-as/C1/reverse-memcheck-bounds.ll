@@ -1,21 +1,21 @@
-; RUN: opt -loop-accesses -analyze < %s | FileCheck %s
 
-; The runtime memory check code and the access grouping
-; algorithm both assume that the start and end values
-; for an access range are ordered (start <= stop).
-; When generating checks for accesses with negative stride
-; we need to take this into account and swap the interval
-; ends.
-;
-;   for (i = 0; i < 10000; i++) {
-;     B[i] = A[15000 - i] * 3;
-;   }
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-m:e-i64:64-i128:128-n32:64-S128"
 target triple = "aarch64--linux-gnueabi"
 
-; CHECK: function 'f':
-; CHECK: (Low: (20000 + %a) High: (60000 + %a))
+
+
 
 @B = common global i32* null, align 8
 @A = common global i32* null, align 8
@@ -26,7 +26,7 @@ entry:
   %b = load i32*, i32** @B, align 8
   br label %for.body
 
-for.body:                                         ; preds = %for.body, %entry
+for.body:                                         
   %idx = phi i64 [ 0, %entry ], [ %add, %for.body ]
   %negidx = sub i64 15000, %idx
 
@@ -43,22 +43,22 @@ for.body:                                         ; preds = %for.body, %entry
   %exitcond = icmp eq i64 %idx, 10000
   br i1 %exitcond, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret void
 }
 
-; CHECK: function 'g':
-; When the stride is not constant, we are forced to do umin/umax to get
-; the interval limits.
 
-;   for (i = 0; i < 10000; i++) {
-;     B[i] = A[15000 - step * i] * 3;
-;   }
 
-; Here it is not obvious what the limits are, since 'step' could be negative.
 
-; CHECK: Low: (-1 + (-1 * ((-60001 + (-1 * %a)) umax (-60001 + (40000 * %step) + (-1 * %a)))))
-; CHECK: High: ((60000 + %a) umax (60000 + (-40000 * %step) + %a))
+
+
+
+
+
+
+
+
+
 
 define void @g(i64 %step) {
 entry:
@@ -66,7 +66,7 @@ entry:
   %b = load i32*, i32** @B, align 8
   br label %for.body
 
-for.body:                                         ; preds = %for.body, %entry
+for.body:                                         
   %idx = phi i64 [ 0, %entry ], [ %add, %for.body ]
   %idx_mul = mul i64 %idx, %step
   %negidx = sub i64 15000, %idx_mul
@@ -84,6 +84,6 @@ for.body:                                         ; preds = %for.body, %entry
   %exitcond = icmp eq i64 %idx, 10000
   br i1 %exitcond, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret void
 }

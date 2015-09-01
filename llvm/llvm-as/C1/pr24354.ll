@@ -1,6 +1,6 @@
-; RUN: opt -instcombine -S < %s | FileCheck %s
 
-; This used to crash opt
+
+
 
 @c = common global i32 0, align 4
 @b = common global i32 0, align 4
@@ -8,19 +8,19 @@
 @d = common global i32 0, align 4
 
 define void @fn3() {
-; CHECK: @fn3
+
 bb:
   %tmp = load i32, i32* @c, align 4
   %tmp1 = icmp eq i32 %tmp, 0
   br i1 %tmp1, label %bb2, label %bb6
 
-bb2:                                              ; preds = %bb
+bb2:                                              
   %tmp3 = load i32, i32* @b, align 4
   %tmp.i = add nsw i32 255, %tmp3
   %tmp5 = icmp ugt i32 %tmp.i, 254
   br label %bb6
 
-bb6:                                              ; preds = %bb, %bb2
+bb6:                                              
   %tmp7 = phi i1 [ true, %bb ], [ %tmp5, %bb2 ]
   %tmp8 = zext i1 %tmp7 to i32
   %tmp10 = icmp eq i32 %tmp8, 0

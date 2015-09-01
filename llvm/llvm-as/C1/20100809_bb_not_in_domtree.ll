@@ -1,4 +1,4 @@
-; RUN: opt -regions < %s
+
 define i32 @main() nounwind {
 entry:
   br label %for.cond
@@ -6,15 +6,15 @@ entry:
 test:
   br label %for.cond
 
-for.cond:                                         ; preds = %for.inc, %entry
+for.cond:                                         
   br i1 true, label %for.body, label %for.end
 
-for.body:                                         ; preds = %for.cond
+for.body:                                         
   br label %for.inc
 
-for.inc:                                          ; preds = %for.body
+for.inc:                                          
   br label %for.cond
 
-for.end:                                          ; preds = %for.cond
+for.end:                                          
   ret i32 0
 }

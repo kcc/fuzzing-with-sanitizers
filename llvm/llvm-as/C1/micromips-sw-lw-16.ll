@@ -1,7 +1,7 @@
-; RUN: llc %s -march=mipsel -mattr=micromips -filetype=asm \
-; RUN: -relocation-model=pic -O3 -o - | FileCheck %s
 
-; Function Attrs: noinline nounwind
+
+
+
 define void @bar(i32* %p) #0 {
 entry:
   %p.addr = alloca i32*, align 4
@@ -21,7 +21,7 @@ entry:
   ret void
 }
 
-; CHECK: lw16 ${{[0-9]+}}, 0($4)
-; CHECK: sw16 ${{[0-9]+}}, 0($4)
-; CHECK: lw16 ${{[0-9]+}}, 4(${{[0-9]+}})
-; CHECK: sw16 ${{[0-9]+}}, 4(${{[0-9]+}})
+
+
+
+

@@ -1,5 +1,5 @@
-; RUN: llc < %s -march=x86 -mattr=+sse
-; PR2598
+
+
 
 define <2 x float> @a(<2 x i32> %i) nounwind {
   %r = sitofp <2 x i32> %i to <2 x float> 

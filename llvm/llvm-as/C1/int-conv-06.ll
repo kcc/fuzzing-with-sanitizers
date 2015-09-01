@@ -1,111 +1,111 @@
-; Test zero extensions from a halfword to an i32.  The tests here
-; assume z10 register pressure, without the high words being available.
-;
-; RUN: llc < %s -mtriple=s390x-linux-gnu -mcpu=z10 | FileCheck %s
 
-; Test register extension, starting with an i32.
+
+
+
+
+
 define i32 @f1(i32 %a) {
-; CHECK-LABEL: f1:
-; CHECK: llhr %r2, %r2
-; CHECK: br %r14
+
+
+
   %half = trunc i32 %a to i16
   %ext = zext i16 %half to i32
   ret i32 %ext
 }
 
-; ...and again with an i64.
+
 define i32 @f2(i64 %a) {
-; CHECK-LABEL: f2:
-; CHECK: llhr %r2, %r2
-; CHECK: br %r14
+
+
+
   %half = trunc i64 %a to i16
   %ext = zext i16 %half to i32
   ret i32 %ext
 }
 
-; Check ANDs that are equivalent to zero extension.
+
 define i32 @f3(i32 %a) {
-; CHECK-LABEL: f3:
-; CHECK: llhr %r2, %r2
-; CHECK: br %r14
+
+
+
   %ext = and i32 %a, 65535
   ret i32 %ext
 }
 
-; Check LLH with no displacement.
+
 define i32 @f4(i16 *%src) {
-; CHECK-LABEL: f4:
-; CHECK: llh %r2, 0(%r2)
-; CHECK: br %r14
+
+
+
   %half = load i16 , i16 *%src
   %ext = zext i16 %half to i32
   ret i32 %ext
 }
 
-; Check the high end of the LLH range.
+
 define i32 @f5(i16 *%src) {
-; CHECK-LABEL: f5:
-; CHECK: llh %r2, 524286(%r2)
-; CHECK: br %r14
+
+
+
   %ptr = getelementptr i16, i16 *%src, i64 262143
   %half = load i16 , i16 *%ptr
   %ext = zext i16 %half to i32
   ret i32 %ext
 }
 
-; Check the next halfword up, which needs separate address logic.
-; Other sequences besides this one would be OK.
+
+
 define i32 @f6(i16 *%src) {
-; CHECK-LABEL: f6:
-; CHECK: agfi %r2, 524288
-; CHECK: llh %r2, 0(%r2)
-; CHECK: br %r14
+
+
+
+
   %ptr = getelementptr i16, i16 *%src, i64 262144
   %half = load i16 , i16 *%ptr
   %ext = zext i16 %half to i32
   ret i32 %ext
 }
 
-; Check the high end of the negative LLH range.
+
 define i32 @f7(i16 *%src) {
-; CHECK-LABEL: f7:
-; CHECK: llh %r2, -2(%r2)
-; CHECK: br %r14
+
+
+
   %ptr = getelementptr i16, i16 *%src, i64 -1
   %half = load i16 , i16 *%ptr
   %ext = zext i16 %half to i32
   ret i32 %ext
 }
 
-; Check the low end of the LLH range.
+
 define i32 @f8(i16 *%src) {
-; CHECK-LABEL: f8:
-; CHECK: llh %r2, -524288(%r2)
-; CHECK: br %r14
+
+
+
   %ptr = getelementptr i16, i16 *%src, i64 -262144
   %half = load i16 , i16 *%ptr
   %ext = zext i16 %half to i32
   ret i32 %ext
 }
 
-; Check the next halfword down, which needs separate address logic.
-; Other sequences besides this one would be OK.
+
+
 define i32 @f9(i16 *%src) {
-; CHECK-LABEL: f9:
-; CHECK: agfi %r2, -524290
-; CHECK: llh %r2, 0(%r2)
-; CHECK: br %r14
+
+
+
+
   %ptr = getelementptr i16, i16 *%src, i64 -262145
   %half = load i16 , i16 *%ptr
   %ext = zext i16 %half to i32
   ret i32 %ext
 }
 
-; Check that LLH allows an index
+
 define i32 @f10(i64 %src, i64 %index) {
-; CHECK-LABEL: f10:
-; CHECK: llh %r2, 524287(%r3,%r2)
-; CHECK: br %r14
+
+
+
   %add1 = add i64 %src, %index
   %add2 = add i64 %add1, 524287
   %ptr = inttoptr i64 %add2 to i16 *
@@ -114,12 +114,12 @@ define i32 @f10(i64 %src, i64 %index) {
   ret i32 %ext
 }
 
-; Test a case where we spill the source of at least one LLHR.  We want
-; to use LLH if possible.
+
+
 define void @f11(i32 *%ptr) {
-; CHECK-LABEL: f11:
-; CHECK: llh {{%r[0-9]+}}, 16{{[26]}}(%r15)
-; CHECK: br %r14
+
+
+
   %val0 = load volatile i32 , i32 *%ptr
   %val1 = load volatile i32 , i32 *%ptr
   %val2 = load volatile i32 , i32 *%ptr

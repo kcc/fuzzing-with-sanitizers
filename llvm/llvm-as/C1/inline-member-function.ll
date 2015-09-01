@@ -1,42 +1,42 @@
-; REQUIRES: object-emission
 
-; RUN: llc -mtriple=x86_64-linux -O0 -filetype=obj < %s | llvm-dwarfdump -debug-dump=info - | FileCheck %s
 
-; From source:
-; struct foo {
-;   int __attribute__((always_inline)) func(int x) { return x + 2; }
-; };
 
-; int i;
 
-; int main() {
-;   return foo().func(i);
-; }
 
-; CHECK: DW_TAG_structure_type
-; CHECK:   DW_TAG_subprogram
 
-; But make sure we emit DW_AT_object_pointer on the abstract definition.
-; CHECK: [[ABSTRACT_ORIGIN:.*]]: DW_TAG_subprogram
-; CHECK-NOT: {{NULL|TAG}}
-; CHECK: DW_AT_specification {{.*}} "_ZN3foo4funcEi"
-; CHECK-NOT: {{NULL|TAG}}
-; CHECK: DW_AT_object_pointer
 
-; Ensure we omit DW_AT_object_pointer on inlined subroutines.
-; CHECK: DW_TAG_inlined_subroutine
-; CHECK-NEXT: DW_AT_abstract_origin {{.*}} {[[ABSTRACT_ORIGIN]]} "_ZN3foo4funcEi"
-; CHECK-NOT: NULL
-; CHECK-NOT: DW_AT_object_pointer
-; CHECK: DW_TAG_formal_parameter
-; CHECK-NOT: DW_AT_artificial
-; CHECK: DW_TAG
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %struct.foo = type { i8 }
 
 @i = global i32 0, align 4
 
-; Function Attrs: uwtable
+
 define i32 @main() #0 {
 entry:
   %this.addr.i = alloca %struct.foo*, align 8
@@ -55,7 +55,7 @@ entry:
   ret i32 %add.i, !dbg !23
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
 attributes #0 = { uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

@@ -1,4 +1,4 @@
-; RUN: llc  -march=mipsel -mcpu=mips16 -relocation-model=pic -O3 < %s | FileCheck %s -check-prefix=16
+
 
 @j = global i32 0, align 4
 @result = global i32 0, align 4
@@ -9,15 +9,15 @@ entry:
   %cmp = icmp eq i32 %0, 0
   br i1 %cmp, label %if.then, label %if.end
 
-; 16:	bnez	${{[0-9]+}}, $[[LABEL:[0-9A-Ba-b_]+]]
-; 16:   lw ${{[0-9]+}}, %got(result)(${{[0-9]+}})
-; 16: $[[LABEL]]:
 
-if.then:                                          ; preds = %entry
+
+
+
+if.then:                                          
   store i32 1, i32* @result, align 4
   br label %if.end
 
-if.end:                                           ; preds = %if.then, %entry
+if.end:                                           
   ret void
 }
 

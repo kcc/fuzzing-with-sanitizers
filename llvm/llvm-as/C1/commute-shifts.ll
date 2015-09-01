@@ -1,9 +1,9 @@
-; RUN: llc -march=amdgcn -mcpu=verde -verify-machineinstrs < %s | FileCheck -check-prefix=GCN -check-prefix=SI %s
-; RUN: llc -march=amdgcn -mcpu=tonga -verify-machineinstrs < %s | FileCheck -check-prefix=GCN -check-prefix=VI %s
 
-; GCN-LABEL: {{^}}main:
-; SI: v_lshl_b32_e32 v{{[0-9]+}}, 1, v{{[0-9]+}}
-; VI: v_lshlrev_b32_e64 v{{[0-9]+}}, v{{[0-9]+}}, 1
+
+
+
+
+
 
 define void @main() #0 {
 main_body:
@@ -21,10 +21,10 @@ main_body:
   ret void
 }
 
-; Function Attrs: nounwind readnone
+
 declare <4 x i32> @llvm.SI.imageload.v4i32(<4 x i32>, <32 x i8>, i32) #1
 
-; Function Attrs: nounwind readnone
+
 declare i32 @llvm.SI.packf16(float, float) #1
 
 declare void @llvm.SI.export(i32, i32, i32, i32, i32, float, float, float, float)

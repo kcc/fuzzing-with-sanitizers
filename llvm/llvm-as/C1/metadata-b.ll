@@ -1,5 +1,5 @@
-; This file is for use with metadata-a.ll
-; RUN: true
+
+
 
 define void @goo(i32 %b) nounwind {
 entry:

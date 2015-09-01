@@ -1,8 +1,8 @@
-; RUN: llc < %s -march=xcore > %t1.s
-;; This caused a compilation failure since the
-;; address arithmetic was folded into the LDWSP instruction,
-;; resulting in a negative offset which eliminateFrameIndex was
-;; unable to eliminate.
+
+
+
+
+
 define i32 @test(i32 %bar) nounwind readnone {
 entry:
         %bar_addr = alloca i32

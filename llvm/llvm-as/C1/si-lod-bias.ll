@@ -1,11 +1,11 @@
-;RUN: llc < %s -march=amdgcn -mcpu=verde -verify-machineinstrs | FileCheck %s
-;RUN: llc < %s -march=amdgcn -mcpu=tonga -verify-machineinstrs | FileCheck %s
 
-; This shader has the potential to generated illegal VGPR to SGPR copies if
-; the wrong register class is used for the REG_SEQUENCE instructions.
 
-; CHECK: {{^}}main:
-; CHECK: image_sample_b v{{\[[0-9]:[0-9]\]}}, 15, 0, 0, 0, 0, 0, 0, 0, v{{\[[0-9]:[0-9]\]}}
+
+
+
+
+
+
 
 define void @main(<16 x i8> addrspace(2)* inreg, <16 x i8> addrspace(2)* inreg, <32 x i8> addrspace(2)* inreg, i32 inreg, <2 x i32>, <2 x i32>, <2 x i32>, <3 x i32>, <2 x i32>, <2 x i32>, <2 x i32>, float, float, float, float, float, float, float, float, float) #0 {
 main_body:
@@ -34,13 +34,13 @@ main_body:
   ret void
 }
 
-; Function Attrs: nounwind readnone
+
 declare float @llvm.SI.load.const(<16 x i8>, i32) #1
 
-; Function Attrs: nounwind readnone
+
 declare float @llvm.SI.fs.interp(i32, i32, i32, <2 x i32>) #1
 
-; Function Attrs: nounwind readnone
+
 declare <4 x float> @llvm.SI.sampleb.v4i32(<4 x i32>, <32 x i8>, <16 x i8>, i32) #1
 
 declare void @llvm.SI.export(i32, i32, i32, i32, i32, float, float, float, float)

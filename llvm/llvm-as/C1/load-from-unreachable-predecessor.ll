@@ -1,12 +1,12 @@
-; RUN: opt -gvn -S < %s | FileCheck %s
 
-; Check that an unreachable predecessor to a PHI node doesn't cause a crash.
-; PR21625.
+
+
+
 
 define i32 @f(i32** %f) {
-; CHECK: bb0:
-; Load should be removed, since it's ignored.
-; CHECK-NEXT: br label
+
+
+
 bb0:
   %bar = load i32*, i32** %f
   br label %bb2

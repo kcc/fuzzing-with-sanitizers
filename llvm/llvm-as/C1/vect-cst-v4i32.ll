@@ -1,6 +1,6 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv5 < %s | FileCheck %s
-; This one should generate a combine with two immediates.
-; CHECK: combine(#7, #7)
+
+
+
 @B = common global [400 x i32] zeroinitializer, align 8
 @A = common global [400 x i32] zeroinitializer, align 8
 @C = common global [400 x i32] zeroinitializer, align 8
@@ -9,10 +9,10 @@ define void @run() nounwind {
 entry:
   br label %polly.loop_body
 
-polly.loop_after:                                 ; preds = %polly.loop_body
+polly.loop_after:                                 
   ret void
 
-polly.loop_body:                                  ; preds = %entry, %polly.loop_body
+polly.loop_body:                                  
   %polly.loopiv23 = phi i32 [ 0, %entry ], [ %polly.next_loopiv, %polly.loop_body ]
   %polly.next_loopiv = add nsw i32 %polly.loopiv23, 4
   %p_arrayidx1 = getelementptr [400 x i32], [400 x i32]* @A, i32 0, i32 %polly.loopiv23

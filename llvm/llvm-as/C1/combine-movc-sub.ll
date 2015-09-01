@@ -1,11 +1,11 @@
-; RUN: llc %s -o - -verify-machineinstrs | FileCheck %s
+
 
 target datalayout = "e-m:o-p:32:32-f64:32:64-v64:32:64-v128:32:128-a:0:32-n32-S32"
 target triple = "thumbv7s-apple-unknown"
 
-; The subtract instruction %3 will be optimized (combined and predicated) with the select
-; inside the loop.  In this case, the kill flag on the subtract should be removed or else
-; it will fail verification.
+
+
+
 
 %struct.PROOFSEARCH_HELP = type { %struct.LIST_HELP*, %struct.LIST_HELP*, %struct.LIST_HELP*, %struct.LIST_HELP*, %struct.SHARED_INDEX_NODE*, %struct.LIST_HELP*, %struct.SHARED_INDEX_NODE*, %struct.LIST_HELP*, %struct.SORTTHEORY_HELP*, %struct.SORTTHEORY_HELP*, %struct.SORTTHEORY_HELP*, %struct.SHARED_INDEX_NODE*, %struct.LIST_HELP*, i32*, i32*, %struct.LIST_HELP*, i32, i32, i32, i32, i32, i32, i32, i32 }
 %struct.SORTTHEORY_HELP = type { %struct.st*, [4000 x %struct.NODE_HELP*], %struct.LIST_HELP*, %struct.LIST_HELP*, i32 }
@@ -21,9 +21,9 @@ target triple = "thumbv7s-apple-unknown"
 
 declare void @foo(%struct.PROOFSEARCH_HELP*, %struct.CLAUSE_HELP*)
 
-; CHECK-LABEL: @test
-; CHECK: it
-; CHECK-NEXT: sub
+
+
+
 
 define hidden fastcc %struct.LIST_HELP* @test(%struct.PROOFSEARCH_HELP* %Search, %struct.LIST_HELP* %ClauseList, i32 %Level, %struct.LIST_HELP** nocapture %New) {
 entry:
@@ -35,7 +35,7 @@ entry:
   %4 = add nuw nsw i32 %1, 1
   br label %for.body
 
-for.body:                                         ; preds = %for.inc, %entry
+for.body:                                         
   %Scan.038 = phi %struct.LIST_HELP* [ %ClauseList, %entry ], [ %9, %for.inc ]
   %car.i33 = getelementptr inbounds %struct.LIST_HELP, %struct.LIST_HELP* %Scan.038, i32 0, i32 1
   %5 = bitcast i8** %car.i33 to %struct.CLAUSE_HELP**
@@ -51,12 +51,12 @@ for.body:                                         ; preds = %for.inc, %entry
   %cmp4.i = icmp eq i32 %and.i, 0
   br i1 %cmp4.i, label %for.inc, label %if.then
 
-if.then:                                          ; preds = %for.body
+if.then:                                          
   tail call void @foo(%struct.PROOFSEARCH_HELP* %Search, %struct.CLAUSE_HELP* %6)
   store i8* null, i8** %car.i33, align 4
   br label %for.inc
 
-for.inc:                                          ; preds = %if.then, %for.body
+for.inc:                                          
   %cdr.i = getelementptr inbounds %struct.LIST_HELP, %struct.LIST_HELP* %Scan.038, i32 0, i32 0
   %9 = load %struct.LIST_HELP*, %struct.LIST_HELP** %cdr.i, align 4
   br label %for.body

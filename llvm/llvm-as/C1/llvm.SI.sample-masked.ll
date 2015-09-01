@@ -1,8 +1,8 @@
-;RUN: llc < %s -march=amdgcn -mcpu=verde | FileCheck %s
-;RUN: llc < %s -march=amdgcn -mcpu=tonga | FileCheck %s
 
-; CHECK-LABEL: {{^}}v1:
-; CHECK: image_sample {{v\[[0-9]+:[0-9]+\]}}, 13
+
+
+
+
 define void @v1(i32 %a1) #0 {
 entry:
   %0 = insertelement <1 x i32> undef, i32 %a1, i32 0
@@ -14,8 +14,8 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: {{^}}v2:
-; CHECK: image_sample {{v\[[0-9]+:[0-9]+\]}}, 11
+
+
 define void @v2(i32 %a1) #0 {
 entry:
   %0 = insertelement <1 x i32> undef, i32 %a1, i32 0
@@ -27,8 +27,8 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: {{^}}v3:
-; CHECK: image_sample {{v\[[0-9]+:[0-9]+\]}}, 14
+
+
 define void @v3(i32 %a1) #0 {
 entry:
   %0 = insertelement <1 x i32> undef, i32 %a1, i32 0
@@ -40,8 +40,8 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: {{^}}v4:
-; CHECK: image_sample {{v\[[0-9]+:[0-9]+\]}}, 7
+
+
 define void @v4(i32 %a1) #0 {
 entry:
   %0 = insertelement <1 x i32> undef, i32 %a1, i32 0
@@ -53,8 +53,8 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: {{^}}v5:
-; CHECK: image_sample {{v\[[0-9]+:[0-9]+\]}}, 10
+
+
 define void @v5(i32 %a1) #0 {
 entry:
   %0 = insertelement <1 x i32> undef, i32 %a1, i32 0
@@ -65,8 +65,8 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: {{^}}v6:
-; CHECK: image_sample {{v\[[0-9]+:[0-9]+\]}}, 6
+
+
 define void @v6(i32 %a1) #0 {
 entry:
   %0 = insertelement <1 x i32> undef, i32 %a1, i32 0
@@ -77,8 +77,8 @@ entry:
   ret void
 }
 
-; CHECK-LABEL: {{^}}v7:
-; CHECK: image_sample {{v\[[0-9]+:[0-9]+\]}}, 9
+
+
 define void @v7(i32 %a1) #0 {
 entry:
   %0 = insertelement <1 x i32> undef, i32 %a1, i32 0

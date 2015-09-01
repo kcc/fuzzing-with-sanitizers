@@ -1,4 +1,4 @@
-; RUN: llc < %s -mtriple=powerpc-apple-darwin
+
 
 	%struct.Handle = type { %struct.oopDesc** }
 	%struct.JNI_ArgumentPusher = type { %struct.SignatureIterator, %struct.JavaCallArguments* }
@@ -9,44 +9,44 @@
 	%struct.SignatureIterator = type { i32 (...)**, %struct.KlassHandle, i32, i32, i32 }
 	%struct.instanceOopDesc = type { %struct.oopDesc }
 	%struct.oopDesc = type { %struct.instanceOopDesc*, %struct.instanceOopDesc* }
-@.str = external constant [44 x i8]		; <[44 x i8]*> [#uses=1]
+@.str = external constant [44 x i8]		
 
 define void @_ZN23JNI_ArgumentPusherArray7iterateEy(%struct.JNI_ArgumentPusherArray* %this, i64 %fingerprint) nounwind  {
 entry:
 	br label %bb113
 
-bb22.preheader:		; preds = %bb113
+bb22.preheader:		
 	ret void
 
-bb32.preheader:		; preds = %bb113
+bb32.preheader:		
 	ret void
 
-bb42.preheader:		; preds = %bb113
+bb42.preheader:		
 	ret void
 
-bb52:		; preds = %bb113
+bb52:		
 	br label %bb113
 
-bb62.preheader:		; preds = %bb113
+bb62.preheader:		
 	ret void
 
-bb72.preheader:		; preds = %bb113
+bb72.preheader:		
 	ret void
 
-bb82:		; preds = %bb113
+bb82:		
 	br label %bb113
 
-bb93:		; preds = %bb113
+bb93:		
 	br label %bb113
 
-bb103.preheader:		; preds = %bb113
+bb103.preheader:		
 	ret void
 
-bb113:		; preds = %bb113, %bb93, %bb82, %bb52, %entry
-	%fingerprint_addr.0.reg2mem.9 = phi i64 [ 0, %entry ], [ 0, %bb52 ], [ 0, %bb82 ], [ 0, %bb93 ], [ %tmp118, %bb113 ]		; <i64> [#uses=1]
+bb113:		
+	%fingerprint_addr.0.reg2mem.9 = phi i64 [ 0, %entry ], [ 0, %bb52 ], [ 0, %bb82 ], [ 0, %bb93 ], [ %tmp118, %bb113 ]		
 	tail call void @_Z28report_should_not_reach_herePKci( i8* getelementptr ([44 x i8], [44 x i8]* @.str, i32 0, i32 0), i32 817 ) nounwind 
-	%tmp118 = lshr i64 %fingerprint_addr.0.reg2mem.9, 4		; <i64> [#uses=2]
-	%tmp21158 = and i64 %tmp118, 15		; <i64> [#uses=1]
+	%tmp118 = lshr i64 %fingerprint_addr.0.reg2mem.9, 4		
+	%tmp21158 = and i64 %tmp118, 15		
 	switch i64 %tmp21158, label %bb113 [
 		 i64 1, label %bb22.preheader
 		 i64 2, label %bb52
@@ -60,7 +60,7 @@ bb113:		; preds = %bb113, %bb93, %bb82, %bb52, %entry
 		 i64 10, label %UnifiedReturnBlock
 	]
 
-UnifiedReturnBlock:		; preds = %bb113
+UnifiedReturnBlock:		
 	ret void
 }
 

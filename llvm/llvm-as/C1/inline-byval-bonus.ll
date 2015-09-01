@@ -1,9 +1,9 @@
-; RUN: opt -S -inline -inline-threshold=275 < %s | FileCheck %s
-; PR13095
 
-; The performance of the c-ray benchmark largely depends on the inlining of a
-; specific call to @ray_sphere. This test case is designed to verify that it's
-; inlined at -O3.
+
+
+
+
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.8.0"
@@ -21,9 +21,9 @@ define i32 @caller(%struct.sphere* %i) {
   %call = call i32 @ray_sphere(%struct.sphere* %i, %struct.ray* byval align 8 %shadow_ray, %struct.spoint* null)
   ret i32 %call
 
-; CHECK-LABEL: @caller(
-; CHECK-NOT: call i32 @ray_sphere
-; CHECK: ret i32
+
+
+
 }
 
 declare void @fix(%struct.ray*)
@@ -93,7 +93,7 @@ define i32 @ray_sphere(%struct.sphere* nocapture %sph, %struct.ray* nocapture by
   %62 = fcmp olt double %61, 0.000000e+00
   br i1 %62, label %130, label %63
 
-; <label>:63                                      ; preds = %0
+
   %64 = tail call double @sqrt(double %61) nounwind readnone
   %65 = fsub double -0.000000e+00, %34
   %66 = fsub double %64, %34
@@ -106,17 +106,17 @@ define i32 @ray_sphere(%struct.sphere* nocapture %sph, %struct.ray* nocapture by
   %or.cond = and i1 %71, %72
   br i1 %or.cond, label %130, label %73
 
-; <label>:73                                      ; preds = %63
+
   %74 = fcmp ogt double %68, 1.000000e+00
   %75 = fcmp ogt double %70, 1.000000e+00
   %or.cond1 = and i1 %74, %75
   br i1 %or.cond1, label %130, label %76
 
-; <label>:76                                      ; preds = %73
+
   %77 = icmp eq %struct.spoint* %sp, null
   br i1 %77, label %130, label %78
 
-; <label>:78                                      ; preds = %76
+
   %t1.0 = select i1 %71, double %70, double %68
   %t2.0 = select i1 %72, double %t1.0, double %70
   %79 = fcmp olt double %t1.0, %t2.0
@@ -185,7 +185,7 @@ define i32 @ray_sphere(%struct.sphere* nocapture %sph, %struct.ray* nocapture by
   store double %129, double* %.210, align 8
   br label %130
 
-; <label>:130                                     ; preds = %78, %76, %73, %63, %0
+
   %.0 = phi i32 [ 0, %0 ], [ 0, %73 ], [ 0, %63 ], [ 1, %76 ], [ 1, %78 ]
   ret i32 %.0
 }

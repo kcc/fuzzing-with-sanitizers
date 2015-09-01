@@ -1,21 +1,21 @@
-; RUN: llc -mtriple=arm64-unknown-unknown -mcpu=cyclone -pre-RA-sched=list-hybrid < %s | FileCheck %s
-; rdar://10232252
-; Prevent LSR of doing poor choice that cannot be folded in addressing mode
 
-; Remove the -pre-RA-sched=list-hybrid option after fixing:
-; <rdar://problem/12702735> [ARM64][coalescer] need better register
-; coalescing for simple unit tests.
 
-; CHECK: testCase
-; CHECK: %while.body{{$}}
-; CHECK: ldr [[STREG:x[0-9]+]], [{{x[0-9]+}}], #8
-; CHECK-NEXT: str [[STREG]], [{{x[0-9]+}}], #8
-; CHECK: %while.end
+
+
+
+
+
+
+
+
+
+
+
 define i32 @testCase() nounwind ssp {
 entry:
   br label %while.body
 
-while.body:                                       ; preds = %while.body, %entry
+while.body:                                       
   %len.06 = phi i64 [ 1288, %entry ], [ %sub, %while.body ]
   %pDst.05 = phi i64* [ inttoptr (i64 6442450944 to i64*), %entry ], [ %incdec.ptr1, %while.body ]
   %pSrc.04 = phi i64* [ inttoptr (i64 4294967296 to i64*), %entry ], [ %incdec.ptr, %while.body ]
@@ -27,7 +27,7 @@ while.body:                                       ; preds = %while.body, %entry
   %cmp = icmp sgt i64 %sub, -1
   br i1 %cmp, label %while.body, label %while.end
 
-while.end:                                        ; preds = %while.body
+while.end:                                        
   tail call void inttoptr (i64 6442450944 to void ()*)() nounwind
   ret i32 0
 }

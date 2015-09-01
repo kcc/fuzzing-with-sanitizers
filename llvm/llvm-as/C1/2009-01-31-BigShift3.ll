@@ -1,5 +1,5 @@
-; RUN: llc < %s -march=x86
-; PR3450
+
+
 
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64-f80:128:128"
 target triple = "i386-apple-darwin7"
@@ -16,16 +16,16 @@ target triple = "i386-apple-darwin7"
 
 define fastcc void @ScaleObjectAdd(%struct.ObjectStruct* %o, double %sx, double %sy, double %sz) nounwind {
 entry:
-	%sz101112.ins = or i960 0, 0		; <i960> [#uses=1]
+	%sz101112.ins = or i960 0, 0		
 	br i1 false, label %return, label %bb1.preheader
 
-bb1.preheader:		; preds = %entry
-	%0 = lshr i960 %sz101112.ins, 640		; <i960> [#uses=0]
+bb1.preheader:		
+	%0 = lshr i960 %sz101112.ins, 640		
 	br label %bb1
 
-bb1:		; preds = %bb1, %bb1.preheader
+bb1:		
 	br label %bb1
 
-return:		; preds = %entry
+return:		
 	ret void
 }

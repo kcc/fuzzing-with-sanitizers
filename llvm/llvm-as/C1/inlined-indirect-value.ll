@@ -1,20 +1,20 @@
-; RUN: llc -filetype=asm -asm-verbose=0 < %s | FileCheck %s
 
-; "1" from line 09 in the snippet below shouldn't be marked with location of "1"
-; from line 04.  Instead it will have location inside main() (real location is
-; just erased, so it won't be perfectly accurate).
 
-; options: -g -O3
-; 01 volatile int x;
-; 02 int y;
-; 03 static __attribute__((always_inline)) int f1() {
-; 04     if (x * 3 < 14) return 1;
-; 05     return 2;
-; 06 }
-; 07 int main() {
-; 08     x = f1();
-; 09     x = x ? 1 : 2;
-; 10 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
@@ -23,9 +23,9 @@ target triple = "x86_64-unknown-linux-gnu"
 @y = common global i32 0, align 4
 
 define i32 @main() {
-; CHECK: .loc 1 {{[89]}}
-; CHECK-NOT: .loc
-; CHECK: movl $1
+
+
+
 
 entry:
   %0 = load volatile i32, i32* @x, align 4, !dbg !16, !tbaa !19
@@ -37,10 +37,10 @@ entry:
   %tobool = icmp ne i32 %1, 0, !dbg !28
   br i1 %tobool, label %select.end, label %select.mid
 
-select.mid:                                       ; preds = %entry
+select.mid:                                       
   br label %select.end
 
-select.end:                                       ; preds = %entry, %select.mid
+select.end:                                       
   %cond = phi i32 [ 1, %entry ], [ 2, %select.mid ]
   store volatile i32 %cond, i32* @x, align 4, !dbg !29, !tbaa !19
   ret i32 0, !dbg !30

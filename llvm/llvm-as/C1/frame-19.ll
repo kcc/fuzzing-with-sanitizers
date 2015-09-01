@@ -1,32 +1,32 @@
-; Test spilling of vector registers.
-;
-; RUN: llc < %s -mtriple=s390x-linux-gnu -mcpu=z13 | FileCheck %s
 
-; We need to allocate a 16-byte spill slot and save the 8 call-saved FPRs.
-; The frame size should be exactly 160 + 16 + 8 * 8 = 240.
+
+
+
+
+
 define void @f1(<16 x i8> *%ptr) {
-; CHECK-LABEL: f1:
-; CHECK: aghi %r15, -240
-; CHECK-DAG: std %f8,
-; CHECK-DAG: std %f9,
-; CHECK-DAG: std %f10,
-; CHECK-DAG: std %f11,
-; CHECK-DAG: std %f12,
-; CHECK-DAG: std %f13,
-; CHECK-DAG: std %f14,
-; CHECK-DAG: std %f15,
-; CHECK: vst {{%v[0-9]+}}, 160(%r15)
-; CHECK: vl {{%v[0-9]+}}, 160(%r15)
-; CHECK-DAG: ld %f8,
-; CHECK-DAG: ld %f9,
-; CHECK-DAG: ld %f10,
-; CHECK-DAG: ld %f11,
-; CHECK-DAG: ld %f12,
-; CHECK-DAG: ld %f13,
-; CHECK-DAG: ld %f14,
-; CHECK-DAG: ld %f15,
-; CHECK: aghi %r15, 240
-; CHECK: br %r14
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   %v0 = load volatile <16 x i8>, <16 x i8> *%ptr
   %v1 = load volatile <16 x i8>, <16 x i8> *%ptr
   %v2 = load volatile <16 x i8>, <16 x i8> *%ptr
@@ -96,30 +96,30 @@ define void @f1(<16 x i8> *%ptr) {
   ret void
 }
 
-; Like f1, but no 16-byte slot should be needed.
+
 define void @f2(<16 x i8> *%ptr) {
-; CHECK-LABEL: f2:
-; CHECK: aghi %r15, -224
-; CHECK-DAG: std %f8,
-; CHECK-DAG: std %f9,
-; CHECK-DAG: std %f10,
-; CHECK-DAG: std %f11,
-; CHECK-DAG: std %f12,
-; CHECK-DAG: std %f13,
-; CHECK-DAG: std %f14,
-; CHECK-DAG: std %f15,
-; CHECK-NOT: vst {{.*}}(%r15)
-; CHECK-NOT: vl {{.*}}(%r15)
-; CHECK-DAG: ld %f8,
-; CHECK-DAG: ld %f9,
-; CHECK-DAG: ld %f10,
-; CHECK-DAG: ld %f11,
-; CHECK-DAG: ld %f12,
-; CHECK-DAG: ld %f13,
-; CHECK-DAG: ld %f14,
-; CHECK-DAG: ld %f15,
-; CHECK: aghi %r15, 224
-; CHECK: br %r14
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   %v0 = load volatile <16 x i8>, <16 x i8> *%ptr
   %v1 = load volatile <16 x i8>, <16 x i8> *%ptr
   %v2 = load volatile <16 x i8>, <16 x i8> *%ptr
@@ -187,23 +187,23 @@ define void @f2(<16 x i8> *%ptr) {
   ret void
 }
 
-; Like f2, but only %f8 should be saved.
+
 define void @f3(<16 x i8> *%ptr) {
-; CHECK-LABEL: f3:
-; CHECK: aghi %r15, -168
-; CHECK-DAG: std %f8,
-; CHECK-NOT: vst {{.*}}(%r15)
-; CHECK-NOT: vl {{.*}}(%r15)
-; CHECK-NOT: %v9
-; CHECK-NOT: %v10
-; CHECK-NOT: %v11
-; CHECK-NOT: %v12
-; CHECK-NOT: %v13
-; CHECK-NOT: %v14
-; CHECK-NOT: %v15
-; CHECK-DAG: ld %f8,
-; CHECK: aghi %r15, 168
-; CHECK: br %r14
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   %v0 = load volatile <16 x i8>, <16 x i8> *%ptr
   %v1 = load volatile <16 x i8>, <16 x i8> *%ptr
   %v2 = load volatile <16 x i8>, <16 x i8> *%ptr
@@ -257,11 +257,11 @@ define void @f3(<16 x i8> *%ptr) {
   ret void
 }
 
-; Like f2, but no registers should be saved.
+
 define void @f4(<16 x i8> *%ptr) {
-; CHECK-LABEL: f4:
-; CHECK-NOT: %r15
-; CHECK: br %r14
+
+
+
   %v0 = load volatile <16 x i8>, <16 x i8> *%ptr
   %v1 = load volatile <16 x i8>, <16 x i8> *%ptr
   %v2 = load volatile <16 x i8>, <16 x i8> *%ptr

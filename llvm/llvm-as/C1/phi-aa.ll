@@ -1,15 +1,15 @@
-; RUN: opt < %s -basicaa -aa-eval -print-all-alias-modref-info -disable-output 2>&1 | FileCheck %s
+
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
-; rdar://7282591
+
 
 @X = common global i32 0
 @Y = common global i32 0
 @Z = common global i32 0
 
-; CHECK-LABEL: foo
-; CHECK:  NoAlias: i32* %P, i32* @Z
+
+
 
 define void @foo(i32 %cond) nounwind {
 entry:
@@ -34,12 +34,12 @@ return:
   ret void
 }
 
-; Pointers can vary in between iterations of loops.
-; PR18068
 
-; CHECK-LABEL: pr18068
-; CHECK: MayAlias: i32* %0, i32* %arrayidx5
-; CHECK: NoAlias: i32* %arrayidx13, i32* %arrayidx5
+
+
+
+
+
 
 define i32 @pr18068(i32* %jj7, i32* %j) {
 entry:
@@ -58,7 +58,7 @@ for.body:
   %2 = load i32, i32* %arrayidx5, align 4
   %sub6 = sub i32 %2, 6
   store i32 %sub6, i32* %arrayidx5, align 4
-  ; %0 and %arrayidx5 can alias! It is not safe to DSE the above store.
+  
   %3 = load i32, i32* %0, align 4
   store i32 %3, i32* %arrayidx5, align 4
   %sub11 = add i32 %1, -1

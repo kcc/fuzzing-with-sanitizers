@@ -1,13 +1,13 @@
-; Test spills of zero extensions when high GR32s are available.
-;
-; RUN: llc < %s -mtriple=s390x-linux-gnu -mcpu=z196 | FileCheck %s
 
-; Test a case where we spill the source of at least one LLCRMux.  We want
-; to use LLC(H) if possible.
+
+
+
+
+
 define void @f1(i32 *%ptr) {
-; CHECK-LABEL: f1:
-; CHECK: llc{{h?}} {{%r[0-9]+}}, 16{{[37]}}(%r15)
-; CHECK: br %r14
+
+
+
   %val0 = load volatile i32 , i32 *%ptr
   %val1 = load volatile i32 , i32 *%ptr
   %val2 = load volatile i32 , i32 *%ptr
@@ -176,11 +176,11 @@ define void @f1(i32 *%ptr) {
   ret void
 }
 
-; Same again with i16, which should use LLH(H).
+
 define void @f2(i32 *%ptr) {
-; CHECK-LABEL: f2:
-; CHECK: llh{{h?}} {{%r[0-9]+}}, 16{{[26]}}(%r15)
-; CHECK: br %r14
+
+
+
   %val0 = load volatile i32 , i32 *%ptr
   %val1 = load volatile i32 , i32 *%ptr
   %val2 = load volatile i32 , i32 *%ptr

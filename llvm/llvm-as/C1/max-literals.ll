@@ -1,7 +1,7 @@
-;RUN: llc < %s -march=r600 -mcpu=redwood | FileCheck %s
 
-; CHECK-LABEL: {{^}}main:
-; CHECK: ADD *
+
+
+
 
 define void @main(<4 x float> inreg %reg0, <4 x float> inreg %reg1, <4 x float> inreg %reg2) #0 {
 main_body:
@@ -29,8 +29,8 @@ main_body:
   ret void
 }
 
-; CHECK-LABEL: {{^}}main2:
-; CHECK-NOT: ADD *
+
+
 
 define void @main2(<4 x float> inreg %reg0, <4 x float> inreg %reg1, <4 x float> inreg %reg2) #0 {
 main_body:
@@ -58,7 +58,7 @@ main_body:
   ret void
 }
 
-; Function Attrs: readnone
+
 declare float @llvm.AMDGPU.dp4(<4 x float>, <4 x float>) #1
 
 declare void @llvm.R600.store.swizzle(<4 x float>, i32, i32)

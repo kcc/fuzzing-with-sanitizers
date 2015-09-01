@@ -1,4 +1,4 @@
-; RUN: llc -mtriple=powerpc64-bgq-linux -mcpu=a2 < %s
+
 target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-f128:128:128-v128:128:128-n32:64"
 target triple = "powerpc64-bgq-linux"
 
@@ -16,7 +16,7 @@ target triple = "powerpc64-bgq-linux"
 
 declare i32 @__gxx_personality_v0(...)
 
-; Function Attrs: optsize
+
 define void @_ZNSt3__117__assoc_sub_state4copyEv(%"class.std::__1::__assoc_sub_state"* %this) #0 align 2 personality i8* bitcast (i32 (...)* @__gxx_personality_v0 to i8*) {
 entry:
   %__lk = alloca %"class.std::__1::unique_lock", align 8
@@ -32,7 +32,7 @@ entry:
   invoke void @_ZNSt3__117__assoc_sub_state10__sub_waitERNS_11unique_lockINS_5mutexEEE(%"class.std::__1::__assoc_sub_state"* %this, %"class.std::__1::unique_lock"* %__lk) #4
           to label %invoke.cont unwind label %lpad
 
-invoke.cont:                                      ; preds = %entry
+invoke.cont:                                      
   %__exception_ = getelementptr inbounds %"class.std::__1::__assoc_sub_state", %"class.std::__1::__assoc_sub_state"* %this, i64 0, i32 1
   %0 = bitcast { i64, i64 }* %tmp to i8*
   call void @llvm.memset.p0i8.i64(i8* %0, i8 0, i64 16, i32 8, i1 false)
@@ -41,22 +41,22 @@ invoke.cont:                                      ; preds = %entry
   call void @_ZNSt15__exception_ptr13exception_ptrD1Ev(%"class.std::__exception_ptr::exception_ptr"* %ref.tmp) #5
   br i1 %call, label %if.then, label %if.end
 
-if.then:                                          ; preds = %invoke.cont
+if.then:                                          
   call void @_ZNSt15__exception_ptr13exception_ptrC1ERKS0_(%"class.std::__exception_ptr::exception_ptr"* %agg.tmp, %"class.std::__exception_ptr::exception_ptr"* %__exception_) #5
   invoke void @_ZSt17rethrow_exceptionNSt15__exception_ptr13exception_ptrE(%"class.std::__exception_ptr::exception_ptr"* %agg.tmp) #6
           to label %invoke.cont4 unwind label %lpad3
 
-invoke.cont4:                                     ; preds = %if.then
+invoke.cont4:                                     
   unreachable
 
-lpad:                                             ; preds = %entry
+lpad:                                             
   %1 = landingpad { i8*, i32 }
           cleanup
   %2 = extractvalue { i8*, i32 } %1, 0
   %3 = extractvalue { i8*, i32 } %1, 1
   br label %ehcleanup
 
-lpad3:                                            ; preds = %if.then
+lpad3:                                            
   %4 = landingpad { i8*, i32 }
           cleanup
   %5 = extractvalue { i8*, i32 } %4, 0
@@ -64,62 +64,62 @@ lpad3:                                            ; preds = %if.then
   call void @_ZNSt15__exception_ptr13exception_ptrD1Ev(%"class.std::__exception_ptr::exception_ptr"* %agg.tmp) #5
   br label %ehcleanup
 
-if.end:                                           ; preds = %invoke.cont
+if.end:                                           
   %7 = load i8, i8* %__owns_.i.i, align 8, !tbaa !6, !range !4
   %tobool.i.i = icmp eq i8 %7, 0
   br i1 %tobool.i.i, label %_ZNSt3__111unique_lockINS_5mutexEED1Ev.exit, label %if.then.i.i
 
-if.then.i.i:                                      ; preds = %if.end
+if.then.i.i:                                      
   %8 = load %"class.std::__1::mutex"*, %"class.std::__1::mutex"** %__m_.i.i, align 8, !tbaa !5
   call void @_ZNSt3__15mutex6unlockEv(%"class.std::__1::mutex"* %8) #5
   br label %_ZNSt3__111unique_lockINS_5mutexEED1Ev.exit
 
-_ZNSt3__111unique_lockINS_5mutexEED1Ev.exit:      ; preds = %if.then.i.i, %if.end
+_ZNSt3__111unique_lockINS_5mutexEED1Ev.exit:      
   ret void
 
-ehcleanup:                                        ; preds = %lpad3, %lpad
+ehcleanup:                                        
   %exn.slot.0 = phi i8* [ %5, %lpad3 ], [ %2, %lpad ]
   %ehselector.slot.0 = phi i32 [ %6, %lpad3 ], [ %3, %lpad ]
   %9 = load i8, i8* %__owns_.i.i, align 8, !tbaa !6, !range !4
   %tobool.i.i9 = icmp eq i8 %9, 0
   br i1 %tobool.i.i9, label %_ZNSt3__111unique_lockINS_5mutexEED1Ev.exit12, label %if.then.i.i11
 
-if.then.i.i11:                                    ; preds = %ehcleanup
+if.then.i.i11:                                    
   %10 = load %"class.std::__1::mutex"*, %"class.std::__1::mutex"** %__m_.i.i, align 8, !tbaa !5
   call void @_ZNSt3__15mutex6unlockEv(%"class.std::__1::mutex"* %10) #5
   br label %_ZNSt3__111unique_lockINS_5mutexEED1Ev.exit12
 
-_ZNSt3__111unique_lockINS_5mutexEED1Ev.exit12:    ; preds = %if.then.i.i11, %ehcleanup
+_ZNSt3__111unique_lockINS_5mutexEED1Ev.exit12:    
   %lpad.val = insertvalue { i8*, i32 } undef, i8* %exn.slot.0, 0
   %lpad.val5 = insertvalue { i8*, i32 } %lpad.val, i32 %ehselector.slot.0, 1
   resume { i8*, i32 } %lpad.val5
 }
 
-; Function Attrs: optsize
+
 declare void @_ZNSt3__117__assoc_sub_state10__sub_waitERNS_11unique_lockINS_5mutexEEE(%"class.std::__1::__assoc_sub_state"*, %"class.std::__1::unique_lock"*) #0 align 2
 
-; Function Attrs: nounwind optsize
+
 declare zeroext i1 @_ZNSt15__exception_ptrneERKNS_13exception_ptrES2_(%"class.std::__exception_ptr::exception_ptr"*, %"class.std::__exception_ptr::exception_ptr"*) #1
 
-; Function Attrs: nounwind optsize
+
 declare void @_ZNSt15__exception_ptr13exception_ptrC1EMS0_FvvE(%"class.std::__exception_ptr::exception_ptr"*, { i64, i64 }* byval) #1
 
-; Function Attrs: nounwind optsize
+
 declare void @_ZNSt15__exception_ptr13exception_ptrD1Ev(%"class.std::__exception_ptr::exception_ptr"*) #1
 
-; Function Attrs: noreturn optsize
+
 declare void @_ZSt17rethrow_exceptionNSt15__exception_ptr13exception_ptrE(%"class.std::__exception_ptr::exception_ptr"*) #2
 
-; Function Attrs: nounwind optsize
+
 declare void @_ZNSt15__exception_ptr13exception_ptrC1ERKS0_(%"class.std::__exception_ptr::exception_ptr"*, %"class.std::__exception_ptr::exception_ptr"*) #1
 
-; Function Attrs: nounwind optsize
+
 declare void @_ZNSt3__15mutex6unlockEv(%"class.std::__1::mutex"*) #1
 
-; Function Attrs: optsize
+
 declare void @_ZNSt3__15mutex4lockEv(%"class.std::__1::mutex"*) #0
 
-; Function Attrs: nounwind
+
 declare void @llvm.memset.p0i8.i64(i8* nocapture, i8, i64, i32, i1) #3
 
 attributes #0 = { optsize "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

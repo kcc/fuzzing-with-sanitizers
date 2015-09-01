@@ -1,5 +1,5 @@
-;RUN: llc < %s -march=r600 -mcpu=cayman -stress-sched -verify-misched -verify-machineinstrs
-;REQUIRES: asserts
+
+
 
 define void @main() {
 main_body:
@@ -16,7 +16,7 @@ main_body:
   %10 = icmp ne i32 %9, 0
   br i1 %10, label %IF, label %ELSE
 
-IF:                                               ; preds = %main_body
+IF:                                               
   %11 = call float @fabs(float %2)
   %12 = fcmp ueq float %11, 0x7FF0000000000000
   %13 = select i1 %12, float 1.000000e+00, float 0.000000e+00
@@ -46,7 +46,7 @@ IF:                                               ; preds = %main_body
   %35 = fmul float %34, 5.000000e-01
   br label %ENDIF
 
-ELSE:                                             ; preds = %main_body
+ELSE:                                             
   %36 = load <4 x float>, <4 x float> addrspace(8)* getelementptr ([1024 x <4 x float>], [1024 x <4 x float>] addrspace(8)* null, i64 0, i32 1)
   %37 = extractelement <4 x float> %36, i32 0
   %38 = bitcast float %37 to i32
@@ -57,7 +57,7 @@ ELSE:                                             ; preds = %main_body
   %43 = icmp ne i32 %42, 0
   br i1 %43, label %IF23, label %ENDIF
 
-ENDIF:                                            ; preds = %IF23, %ELSE, %IF
+ENDIF:                                            
   %temp4.0 = phi float [ %2, %IF ], [ %56, %IF23 ], [ 0.000000e+00, %ELSE ]
   %temp5.0 = phi float [ %27, %IF ], [ %60, %IF23 ], [ 0.000000e+00, %ELSE ]
   %temp6.0 = phi float [ %29, %IF ], [ 0.000000e+00, %ELSE ], [ 0.000000e+00, %IF23 ]
@@ -69,7 +69,7 @@ ENDIF:                                            ; preds = %IF23, %ELSE, %IF
   call void @llvm.R600.store.swizzle(<4 x float> %47, i32 0, i32 0)
   ret void
 
-IF23:                                             ; preds = %ELSE
+IF23:                                             
   %48 = fcmp ult float 0.000000e+00, %2
   %49 = select i1 %48, float 1.000000e+00, float 0.000000e+00
   %50 = fsub float -0.000000e+00, %49

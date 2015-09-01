@@ -1,21 +1,21 @@
-; RUN: llc -split-dwarf=Enable -mtriple=powerpc64-unknown-linux-gnu -O0 -filetype=asm < %s | FileCheck %s
 
-; FIXME: add relocation and DWARF expression support to llvm-dwarfdump & use
-; that here instead of raw assembly printing
 
-; CHECK: debug_info.dwo
-; 3 bytes of data in this DW_FORM_block1 representation of the location of 'tls'
-; CHECK: .byte 3{{ *}}# DW_AT_location
-; DW_OP_const_index (0xfx == 252) to refer to the debug_addr table
-; CHECK-NEXT: .byte 252
-; an index of zero into the debug_addr table
-; CHECK-NEXT: .byte 0
-; DW_OP_GNU_push_tls_address
-; CHECK-NEXT: .byte 224
-; check that the expected TLS address description is the first thing in the debug_addr section
-; CHECK: debug_addr
-; CHECK-NEXT: .Laddr_sec:
-; CHECK-NEXT: .quad tls@dtprel+32768
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @tls = thread_local global i32 0, align 4
 

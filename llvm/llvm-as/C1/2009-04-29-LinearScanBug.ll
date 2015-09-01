@@ -1,5 +1,5 @@
-; RUN: llc < %s -mtriple=i386-apple-darwin10
-; rdar://6837009
+
+
 
 	%0 = type { %struct.pf_state*, %struct.pf_state*, %struct.pf_state*, i32 }
 	%1 = type { %2 }
@@ -100,28 +100,28 @@
 	%struct.sockaddr = type { i8, i8, [14 x i8] }
 	%struct.tcphdr = type { i16, i16, i32, i32, i8, i8, i16, i16, i16 }
 	%struct.thread = type opaque
-@llvm.used = appending global [1 x i8*] [i8* bitcast (i32 (%struct.pf_state_key*, %struct.pf_state_key*)* @pf_state_compare_ext_gwy to i8*)], section "llvm.metadata"		; <[1 x i8*]*> [#uses=0]
+@llvm.used = appending global [1 x i8*] [i8* bitcast (i32 (%struct.pf_state_key*, %struct.pf_state_key*)* @pf_state_compare_ext_gwy to i8*)], section "llvm.metadata"		
 
 define fastcc i32 @pf_state_compare_ext_gwy(%struct.pf_state_key* nocapture %a, %struct.pf_state_key* nocapture %b) nounwind optsize ssp {
 entry:
-	%0 = zext i8 0 to i32		; <i32> [#uses=2]
-	%1 = load i8, i8* null, align 1		; <i8> [#uses=2]
-	%2 = zext i8 %1 to i32		; <i32> [#uses=1]
-	%3 = sub i32 %0, %2		; <i32> [#uses=1]
-	%4 = icmp eq i8 0, %1		; <i1> [#uses=1]
+	%0 = zext i8 0 to i32		
+	%1 = load i8, i8* null, align 1		
+	%2 = zext i8 %1 to i32		
+	%3 = sub i32 %0, %2		
+	%4 = icmp eq i8 0, %1		
 	br i1 %4, label %bb1, label %bb79
 
-bb1:		; preds = %entry
-	%5 = load i8, i8* null, align 4		; <i8> [#uses=2]
-	%6 = zext i8 %5 to i32		; <i32> [#uses=2]
-	%7 = getelementptr %struct.pf_state_key, %struct.pf_state_key* %b, i32 0, i32 3		; <i8*> [#uses=1]
-	%8 = load i8, i8* %7, align 4		; <i8> [#uses=2]
-	%9 = zext i8 %8 to i32		; <i32> [#uses=1]
-	%10 = sub i32 %6, %9		; <i32> [#uses=1]
-	%11 = icmp eq i8 %5, %8		; <i1> [#uses=1]
+bb1:		
+	%5 = load i8, i8* null, align 4		
+	%6 = zext i8 %5 to i32		
+	%7 = getelementptr %struct.pf_state_key, %struct.pf_state_key* %b, i32 0, i32 3		
+	%8 = load i8, i8* %7, align 4		
+	%9 = zext i8 %8 to i32		
+	%10 = sub i32 %6, %9		
+	%11 = icmp eq i8 %5, %8		
 	br i1 %11, label %bb3, label %bb79
 
-bb3:		; preds = %bb1
+bb3:		
 	switch i32 %0, label %bb23 [
 		i32 1, label %bb4
 		i32 6, label %bb6
@@ -131,85 +131,85 @@ bb3:		; preds = %bb1
 		i32 58, label %bb4
 	]
 
-bb4:		; preds = %bb3, %bb3
-	%12 = load i16, i16* null, align 4		; <i16> [#uses=1]
-	%13 = zext i16 %12 to i32		; <i32> [#uses=1]
-	%14 = sub i32 0, %13		; <i32> [#uses=1]
+bb4:		
+	%12 = load i16, i16* null, align 4		
+	%13 = zext i16 %12 to i32		
+	%14 = sub i32 0, %13		
 	br i1 false, label %bb23, label %bb79
 
-bb6:		; preds = %bb3
-	%15 = load i16, i16* null, align 4		; <i16> [#uses=1]
-	%16 = zext i16 %15 to i32		; <i32> [#uses=1]
-	%17 = sub i32 0, %16		; <i32> [#uses=1]
+bb6:		
+	%15 = load i16, i16* null, align 4		
+	%16 = zext i16 %15 to i32		
+	%17 = sub i32 0, %16		
 	ret i32 %17
 
-bb10:		; preds = %bb3
-	%18 = load i8, i8* null, align 1		; <i8> [#uses=2]
-	%19 = zext i8 %18 to i32		; <i32> [#uses=1]
-	%20 = sub i32 0, %19		; <i32> [#uses=1]
-	%21 = icmp eq i8 0, %18		; <i1> [#uses=1]
+bb10:		
+	%18 = load i8, i8* null, align 1		
+	%19 = zext i8 %18 to i32		
+	%20 = sub i32 0, %19		
+	%21 = icmp eq i8 0, %18		
 	br i1 %21, label %bb12, label %bb79
 
-bb12:		; preds = %bb10
-	%22 = load i16, i16* null, align 4		; <i16> [#uses=1]
-	%23 = zext i16 %22 to i32		; <i32> [#uses=1]
-	%24 = sub i32 0, %23		; <i32> [#uses=1]
+bb12:		
+	%22 = load i16, i16* null, align 4		
+	%23 = zext i16 %22 to i32		
+	%24 = sub i32 0, %23		
 	ret i32 %24
 
-bb17:		; preds = %bb3
-	%25 = load i8, i8* null, align 1		; <i8> [#uses=2]
-	%26 = icmp eq i8 %25, 1		; <i1> [#uses=1]
+bb17:		
+	%25 = load i8, i8* null, align 1		
+	%26 = icmp eq i8 %25, 1		
 	br i1 %26, label %bb18, label %bb23
 
-bb18:		; preds = %bb17
-	%27 = icmp eq i8 %25, 0		; <i1> [#uses=1]
+bb18:		
+	%27 = icmp eq i8 %25, 0		
 	br i1 %27, label %bb19, label %bb23
 
-bb19:		; preds = %bb18
-	%28 = load i16, i16* null, align 4		; <i16> [#uses=1]
-	%29 = zext i16 %28 to i32		; <i32> [#uses=1]
-	%30 = sub i32 0, %29		; <i32> [#uses=1]
+bb19:		
+	%28 = load i16, i16* null, align 4		
+	%29 = zext i16 %28 to i32		
+	%30 = sub i32 0, %29		
 	br i1 false, label %bb23, label %bb79
 
-bb21:		; preds = %bb3
-	%31 = getelementptr %struct.pf_state_key, %struct.pf_state_key* %a, i32 0, i32 1, i32 1, i32 0		; <i32*> [#uses=1]
-	%32 = load i32, i32* %31, align 4		; <i32> [#uses=2]
-	%33 = getelementptr %struct.pf_state_key, %struct.pf_state_key* %b, i32 0, i32 1, i32 1, i32 0		; <i32*> [#uses=1]
-	%34 = load i32, i32* %33, align 4		; <i32> [#uses=2]
-	%35 = sub i32 %32, %34		; <i32> [#uses=1]
-	%36 = icmp eq i32 %32, %34		; <i1> [#uses=1]
+bb21:		
+	%31 = getelementptr %struct.pf_state_key, %struct.pf_state_key* %a, i32 0, i32 1, i32 1, i32 0		
+	%32 = load i32, i32* %31, align 4		
+	%33 = getelementptr %struct.pf_state_key, %struct.pf_state_key* %b, i32 0, i32 1, i32 1, i32 0		
+	%34 = load i32, i32* %33, align 4		
+	%35 = sub i32 %32, %34		
+	%36 = icmp eq i32 %32, %34		
 	br i1 %36, label %bb23, label %bb79
 
-bb23:		; preds = %bb21, %bb19, %bb18, %bb17, %bb4, %bb3
-	%cond = icmp eq i32 %6, 2		; <i1> [#uses=1]
+bb23:		
+	%cond = icmp eq i32 %6, 2		
 	br i1 %cond, label %bb24, label %bb70
 
-bb24:		; preds = %bb23
+bb24:		
 	ret i32 1
 
-bb70:		; preds = %bb23
-	%37 = load i32 (%struct.pf_app_state*, %struct.pf_app_state*)*, i32 (%struct.pf_app_state*, %struct.pf_app_state*)** null, align 4		; <i32 (%struct.pf_app_state*, %struct.pf_app_state*)*> [#uses=3]
+bb70:		
+	%37 = load i32 (%struct.pf_app_state*, %struct.pf_app_state*)*, i32 (%struct.pf_app_state*, %struct.pf_app_state*)** null, align 4		
 	br i1 false, label %bb78, label %bb73
 
-bb73:		; preds = %bb70
-	%38 = load i32 (%struct.pf_app_state*, %struct.pf_app_state*)*, i32 (%struct.pf_app_state*, %struct.pf_app_state*)** null, align 4		; <i32 (%struct.pf_app_state*, %struct.pf_app_state*)*> [#uses=2]
-	%39 = icmp eq i32 (%struct.pf_app_state*, %struct.pf_app_state*)* %38, null		; <i1> [#uses=1]
+bb73:		
+	%38 = load i32 (%struct.pf_app_state*, %struct.pf_app_state*)*, i32 (%struct.pf_app_state*, %struct.pf_app_state*)** null, align 4		
+	%39 = icmp eq i32 (%struct.pf_app_state*, %struct.pf_app_state*)* %38, null		
 	br i1 %39, label %bb78, label %bb74
 
-bb74:		; preds = %bb73
-	%40 = ptrtoint i32 (%struct.pf_app_state*, %struct.pf_app_state*)* %37 to i32		; <i32> [#uses=1]
-	%41 = sub i32 0, %40		; <i32> [#uses=1]
-	%42 = icmp eq i32 (%struct.pf_app_state*, %struct.pf_app_state*)* %38, %37		; <i1> [#uses=1]
+bb74:		
+	%40 = ptrtoint i32 (%struct.pf_app_state*, %struct.pf_app_state*)* %37 to i32		
+	%41 = sub i32 0, %40		
+	%42 = icmp eq i32 (%struct.pf_app_state*, %struct.pf_app_state*)* %38, %37		
 	br i1 %42, label %bb76, label %bb79
 
-bb76:		; preds = %bb74
-	%43 = tail call i32 %37(%struct.pf_app_state* null, %struct.pf_app_state* null) nounwind		; <i32> [#uses=1]
+bb76:		
+	%43 = tail call i32 %37(%struct.pf_app_state* null, %struct.pf_app_state* null) nounwind		
 	ret i32 %43
 
-bb78:		; preds = %bb73, %bb70
+bb78:		
 	ret i32 0
 
-bb79:		; preds = %bb74, %bb21, %bb19, %bb10, %bb4, %bb1, %entry
-	%.0 = phi i32 [ %3, %entry ], [ %10, %bb1 ], [ %14, %bb4 ], [ %20, %bb10 ], [ %30, %bb19 ], [ %35, %bb21 ], [ %41, %bb74 ]		; <i32> [#uses=1]
+bb79:		
+	%.0 = phi i32 [ %3, %entry ], [ %10, %bb1 ], [ %14, %bb4 ], [ %20, %bb10 ], [ %30, %bb19 ], [ %35, %bb21 ], [ %41, %bb74 ]		
 	ret i32 %.0
 }

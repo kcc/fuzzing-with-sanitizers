@@ -1,198 +1,198 @@
-; RUN: llc < %s -mtriple=x86_64-apple-darwin -mcpu=corei7 | FileCheck %s
+
 
 define void @nop_test() {
 entry:
-; CHECK-LABEL: nop_test:
-; CHECK:      nop
-; CHECK:      xchgw %ax, %ax
-; CHECK:      nopl (%rax)
-; CHECK:      nopl 8(%rax)
-; CHECK:      nopl 8(%rax,%rax)
-; CHECK:      nopw 8(%rax,%rax)
-; CHECK:      nopl 512(%rax)
-; CHECK:      nopl 512(%rax,%rax)
-; CHECK:      nopw 512(%rax,%rax)
-; CHECK:      nopw %cs:512(%rax,%rax)
 
-; 11
-; CHECK:      .byte 102
-; CHECK-NEXT: nopw %cs:512(%rax,%rax)
 
-; 12
-; CHECK:      .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: nopw %cs:512(%rax,%rax)
 
-; 13
-; CHECK:      .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: nopw %cs:512(%rax,%rax)
 
-; 14
-; CHECK:      .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: nopw %cs:512(%rax,%rax)
 
-; 15
-; CHECK:      .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: nopw %cs:512(%rax,%rax)
 
-; 16
-; CHECK:      .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: nopw %cs:512(%rax,%rax)
-; CHECK-NEXT: nop
 
-; 17
-; CHECK:      .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: nopw %cs:512(%rax,%rax)
-; CHECK-NEXT: xchgw %ax, %ax
 
-; 18
-; CHECK:      .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: nopw %cs:512(%rax,%rax)
-; CHECK-NEXT: nopl (%rax)
 
-; 19
-; CHECK:      .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: nopw %cs:512(%rax,%rax)
-; CHECK-NEXT: nopl 8(%rax)
 
-; 20
-; CHECK:      .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: nopw %cs:512(%rax,%rax)
-; CHECK-NEXT: nopl 8(%rax,%rax)
 
-; 21
-; CHECK:      .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: nopw %cs:512(%rax,%rax)
-; CHECK-NEXT: nopw 8(%rax,%rax)
 
-; 22
-; CHECK:      .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: nopw %cs:512(%rax,%rax)
-; CHECK-NEXT: nopl 512(%rax)
 
-; 23
-; CHECK:      .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: nopw %cs:512(%rax,%rax)
-; CHECK-NEXT: nopl 512(%rax,%rax)
 
-; 24
-; CHECK:      .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: nopw %cs:512(%rax,%rax)
-; CHECK-NEXT: nopw 512(%rax,%rax)
 
-; 25
-; CHECK:      .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: nopw %cs:512(%rax,%rax)
-; CHECK-NEXT: nopw %cs:512(%rax,%rax)
 
-; 26
-; CHECK:      .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: nopw %cs:512(%rax,%rax)
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: nopw %cs:512(%rax,%rax)
 
-; 27
-; CHECK:      .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: nopw %cs:512(%rax,%rax)
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: nopw %cs:512(%rax,%rax)
 
-; 28
-; CHECK:      .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: nopw %cs:512(%rax,%rax)
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: nopw %cs:512(%rax,%rax)
 
-;29
-; CHECK:      .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: nopw %cs:512(%rax,%rax)
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: nopw %cs:512(%rax,%rax)
 
-; 30
-; CHECK:      .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: nopw %cs:512(%rax,%rax)
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: .byte 102
-; CHECK-NEXT: nopw %cs:512(%rax,%rax)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   tail call void (i64, i32, ...) @llvm.experimental.stackmap(i64  0, i32  0)
   tail call void (i64, i32, ...) @llvm.experimental.stackmap(i64  1, i32  1)
   tail call void (i64, i32, ...) @llvm.experimental.stackmap(i64  2, i32  2)
@@ -224,9 +224,9 @@ entry:
   tail call void (i64, i32, ...) @llvm.experimental.stackmap(i64 28, i32 28)
   tail call void (i64, i32, ...) @llvm.experimental.stackmap(i64 29, i32 29)
   tail call void (i64, i32, ...) @llvm.experimental.stackmap(i64 30, i32 30)
-; Add an extra stackmap with a zero-length shadow to thwart the shadow
-; optimization. This will force all 15 bytes of the previous shadow to be
-; padded with nops.
+
+
+
   tail call void (i64, i32, ...) @llvm.experimental.stackmap(i64 31, i32 0)
   ret void
 }

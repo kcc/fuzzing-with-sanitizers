@@ -1,8 +1,8 @@
-; RUN: llc < %s -march=amdgcn -mcpu=verde -verify-machineinstrs | FileCheck -check-prefix=SI %s
-; RUN: llc < %s -march=amdgcn -mcpu=tonga -verify-machineinstrs | FileCheck -check-prefix=SI %s
 
-; SI-LABEL: {{^}}vector_imax:
-; SI: v_max_i32_e32
+
+
+
+
 define void @vector_imax(i32 %p0, i32 %p1, i32 addrspace(1)* %in) #0 {
 main_body:
   %load = load i32, i32 addrspace(1)* %in, align 4
@@ -12,8 +12,8 @@ main_body:
   ret void
 }
 
-; SI-LABEL: {{^}}scalar_imax:
-; SI: s_max_i32
+
+
 define void @scalar_imax(i32 %p0, i32 %p1) #0 {
 entry:
   %max = call i32 @llvm.AMDGPU.imax(i32 %p0, i32 %p1)
@@ -22,7 +22,7 @@ entry:
   ret void
 }
 
-; Function Attrs: readnone
+
 declare i32 @llvm.AMDGPU.imax(i32, i32) #1
 
 declare void @llvm.SI.export(i32, i32, i32, i32, i32, float, float, float, float)

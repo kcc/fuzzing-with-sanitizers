@@ -1,260 +1,260 @@
-; RUN: llc < %s > %t
-@i1_s = external global i1		; <i1*> [#uses=1]
-@i2_s = external global i2		; <i2*> [#uses=1]
-@i3_s = external global i3		; <i3*> [#uses=1]
-@i4_s = external global i4		; <i4*> [#uses=1]
-@i5_s = external global i5		; <i5*> [#uses=1]
-@i6_s = external global i6		; <i6*> [#uses=1]
-@i7_s = external global i7		; <i7*> [#uses=1]
-@i8_s = external global i8		; <i8*> [#uses=1]
-@i9_s = external global i9		; <i9*> [#uses=1]
-@i10_s = external global i10		; <i10*> [#uses=1]
-@i11_s = external global i11		; <i11*> [#uses=1]
-@i12_s = external global i12		; <i12*> [#uses=1]
-@i13_s = external global i13		; <i13*> [#uses=1]
-@i14_s = external global i14		; <i14*> [#uses=1]
-@i15_s = external global i15		; <i15*> [#uses=1]
-@i16_s = external global i16		; <i16*> [#uses=1]
-@i17_s = external global i17		; <i17*> [#uses=1]
-@i18_s = external global i18		; <i18*> [#uses=1]
-@i19_s = external global i19		; <i19*> [#uses=1]
-@i20_s = external global i20		; <i20*> [#uses=1]
-@i21_s = external global i21		; <i21*> [#uses=1]
-@i22_s = external global i22		; <i22*> [#uses=1]
-@i23_s = external global i23		; <i23*> [#uses=1]
-@i24_s = external global i24		; <i24*> [#uses=1]
-@i25_s = external global i25		; <i25*> [#uses=1]
-@i26_s = external global i26		; <i26*> [#uses=1]
-@i27_s = external global i27		; <i27*> [#uses=1]
-@i28_s = external global i28		; <i28*> [#uses=1]
-@i29_s = external global i29		; <i29*> [#uses=1]
-@i30_s = external global i30		; <i30*> [#uses=1]
-@i31_s = external global i31		; <i31*> [#uses=1]
-@i32_s = external global i32		; <i32*> [#uses=1]
-@i33_s = external global i33		; <i33*> [#uses=1]
-@i34_s = external global i34		; <i34*> [#uses=1]
-@i35_s = external global i35		; <i35*> [#uses=1]
-@i36_s = external global i36		; <i36*> [#uses=1]
-@i37_s = external global i37		; <i37*> [#uses=1]
-@i38_s = external global i38		; <i38*> [#uses=1]
-@i39_s = external global i39		; <i39*> [#uses=1]
-@i40_s = external global i40		; <i40*> [#uses=1]
-@i41_s = external global i41		; <i41*> [#uses=1]
-@i42_s = external global i42		; <i42*> [#uses=1]
-@i43_s = external global i43		; <i43*> [#uses=1]
-@i44_s = external global i44		; <i44*> [#uses=1]
-@i45_s = external global i45		; <i45*> [#uses=1]
-@i46_s = external global i46		; <i46*> [#uses=1]
-@i47_s = external global i47		; <i47*> [#uses=1]
-@i48_s = external global i48		; <i48*> [#uses=1]
-@i49_s = external global i49		; <i49*> [#uses=1]
-@i50_s = external global i50		; <i50*> [#uses=1]
-@i51_s = external global i51		; <i51*> [#uses=1]
-@i52_s = external global i52		; <i52*> [#uses=1]
-@i53_s = external global i53		; <i53*> [#uses=1]
-@i54_s = external global i54		; <i54*> [#uses=1]
-@i55_s = external global i55		; <i55*> [#uses=1]
-@i56_s = external global i56		; <i56*> [#uses=1]
-@i57_s = external global i57		; <i57*> [#uses=1]
-@i58_s = external global i58		; <i58*> [#uses=1]
-@i59_s = external global i59		; <i59*> [#uses=1]
-@i60_s = external global i60		; <i60*> [#uses=1]
-@i61_s = external global i61		; <i61*> [#uses=1]
-@i62_s = external global i62		; <i62*> [#uses=1]
-@i63_s = external global i63		; <i63*> [#uses=1]
-@i64_s = external global i64		; <i64*> [#uses=1]
-@i65_s = external global i65		; <i65*> [#uses=1]
-@i66_s = external global i66		; <i66*> [#uses=1]
-@i67_s = external global i67		; <i67*> [#uses=1]
-@i68_s = external global i68		; <i68*> [#uses=1]
-@i69_s = external global i69		; <i69*> [#uses=1]
-@i70_s = external global i70		; <i70*> [#uses=1]
-@i71_s = external global i71		; <i71*> [#uses=1]
-@i72_s = external global i72		; <i72*> [#uses=1]
-@i73_s = external global i73		; <i73*> [#uses=1]
-@i74_s = external global i74		; <i74*> [#uses=1]
-@i75_s = external global i75		; <i75*> [#uses=1]
-@i76_s = external global i76		; <i76*> [#uses=1]
-@i77_s = external global i77		; <i77*> [#uses=1]
-@i78_s = external global i78		; <i78*> [#uses=1]
-@i79_s = external global i79		; <i79*> [#uses=1]
-@i80_s = external global i80		; <i80*> [#uses=1]
-@i81_s = external global i81		; <i81*> [#uses=1]
-@i82_s = external global i82		; <i82*> [#uses=1]
-@i83_s = external global i83		; <i83*> [#uses=1]
-@i84_s = external global i84		; <i84*> [#uses=1]
-@i85_s = external global i85		; <i85*> [#uses=1]
-@i86_s = external global i86		; <i86*> [#uses=1]
-@i87_s = external global i87		; <i87*> [#uses=1]
-@i88_s = external global i88		; <i88*> [#uses=1]
-@i89_s = external global i89		; <i89*> [#uses=1]
-@i90_s = external global i90		; <i90*> [#uses=1]
-@i91_s = external global i91		; <i91*> [#uses=1]
-@i92_s = external global i92		; <i92*> [#uses=1]
-@i93_s = external global i93		; <i93*> [#uses=1]
-@i94_s = external global i94		; <i94*> [#uses=1]
-@i95_s = external global i95		; <i95*> [#uses=1]
-@i96_s = external global i96		; <i96*> [#uses=1]
-@i97_s = external global i97		; <i97*> [#uses=1]
-@i98_s = external global i98		; <i98*> [#uses=1]
-@i99_s = external global i99		; <i99*> [#uses=1]
-@i100_s = external global i100		; <i100*> [#uses=1]
-@i101_s = external global i101		; <i101*> [#uses=1]
-@i102_s = external global i102		; <i102*> [#uses=1]
-@i103_s = external global i103		; <i103*> [#uses=1]
-@i104_s = external global i104		; <i104*> [#uses=1]
-@i105_s = external global i105		; <i105*> [#uses=1]
-@i106_s = external global i106		; <i106*> [#uses=1]
-@i107_s = external global i107		; <i107*> [#uses=1]
-@i108_s = external global i108		; <i108*> [#uses=1]
-@i109_s = external global i109		; <i109*> [#uses=1]
-@i110_s = external global i110		; <i110*> [#uses=1]
-@i111_s = external global i111		; <i111*> [#uses=1]
-@i112_s = external global i112		; <i112*> [#uses=1]
-@i113_s = external global i113		; <i113*> [#uses=1]
-@i114_s = external global i114		; <i114*> [#uses=1]
-@i115_s = external global i115		; <i115*> [#uses=1]
-@i116_s = external global i116		; <i116*> [#uses=1]
-@i117_s = external global i117		; <i117*> [#uses=1]
-@i118_s = external global i118		; <i118*> [#uses=1]
-@i119_s = external global i119		; <i119*> [#uses=1]
-@i120_s = external global i120		; <i120*> [#uses=1]
-@i121_s = external global i121		; <i121*> [#uses=1]
-@i122_s = external global i122		; <i122*> [#uses=1]
-@i123_s = external global i123		; <i123*> [#uses=1]
-@i124_s = external global i124		; <i124*> [#uses=1]
-@i125_s = external global i125		; <i125*> [#uses=1]
-@i126_s = external global i126		; <i126*> [#uses=1]
-@i127_s = external global i127		; <i127*> [#uses=1]
-@i128_s = external global i128		; <i128*> [#uses=1]
-@i129_s = external global i129		; <i129*> [#uses=1]
-@i130_s = external global i130		; <i130*> [#uses=1]
-@i131_s = external global i131		; <i131*> [#uses=1]
-@i132_s = external global i132		; <i132*> [#uses=1]
-@i133_s = external global i133		; <i133*> [#uses=1]
-@i134_s = external global i134		; <i134*> [#uses=1]
-@i135_s = external global i135		; <i135*> [#uses=1]
-@i136_s = external global i136		; <i136*> [#uses=1]
-@i137_s = external global i137		; <i137*> [#uses=1]
-@i138_s = external global i138		; <i138*> [#uses=1]
-@i139_s = external global i139		; <i139*> [#uses=1]
-@i140_s = external global i140		; <i140*> [#uses=1]
-@i141_s = external global i141		; <i141*> [#uses=1]
-@i142_s = external global i142		; <i142*> [#uses=1]
-@i143_s = external global i143		; <i143*> [#uses=1]
-@i144_s = external global i144		; <i144*> [#uses=1]
-@i145_s = external global i145		; <i145*> [#uses=1]
-@i146_s = external global i146		; <i146*> [#uses=1]
-@i147_s = external global i147		; <i147*> [#uses=1]
-@i148_s = external global i148		; <i148*> [#uses=1]
-@i149_s = external global i149		; <i149*> [#uses=1]
-@i150_s = external global i150		; <i150*> [#uses=1]
-@i151_s = external global i151		; <i151*> [#uses=1]
-@i152_s = external global i152		; <i152*> [#uses=1]
-@i153_s = external global i153		; <i153*> [#uses=1]
-@i154_s = external global i154		; <i154*> [#uses=1]
-@i155_s = external global i155		; <i155*> [#uses=1]
-@i156_s = external global i156		; <i156*> [#uses=1]
-@i157_s = external global i157		; <i157*> [#uses=1]
-@i158_s = external global i158		; <i158*> [#uses=1]
-@i159_s = external global i159		; <i159*> [#uses=1]
-@i160_s = external global i160		; <i160*> [#uses=1]
-@i161_s = external global i161		; <i161*> [#uses=1]
-@i162_s = external global i162		; <i162*> [#uses=1]
-@i163_s = external global i163		; <i163*> [#uses=1]
-@i164_s = external global i164		; <i164*> [#uses=1]
-@i165_s = external global i165		; <i165*> [#uses=1]
-@i166_s = external global i166		; <i166*> [#uses=1]
-@i167_s = external global i167		; <i167*> [#uses=1]
-@i168_s = external global i168		; <i168*> [#uses=1]
-@i169_s = external global i169		; <i169*> [#uses=1]
-@i170_s = external global i170		; <i170*> [#uses=1]
-@i171_s = external global i171		; <i171*> [#uses=1]
-@i172_s = external global i172		; <i172*> [#uses=1]
-@i173_s = external global i173		; <i173*> [#uses=1]
-@i174_s = external global i174		; <i174*> [#uses=1]
-@i175_s = external global i175		; <i175*> [#uses=1]
-@i176_s = external global i176		; <i176*> [#uses=1]
-@i177_s = external global i177		; <i177*> [#uses=1]
-@i178_s = external global i178		; <i178*> [#uses=1]
-@i179_s = external global i179		; <i179*> [#uses=1]
-@i180_s = external global i180		; <i180*> [#uses=1]
-@i181_s = external global i181		; <i181*> [#uses=1]
-@i182_s = external global i182		; <i182*> [#uses=1]
-@i183_s = external global i183		; <i183*> [#uses=1]
-@i184_s = external global i184		; <i184*> [#uses=1]
-@i185_s = external global i185		; <i185*> [#uses=1]
-@i186_s = external global i186		; <i186*> [#uses=1]
-@i187_s = external global i187		; <i187*> [#uses=1]
-@i188_s = external global i188		; <i188*> [#uses=1]
-@i189_s = external global i189		; <i189*> [#uses=1]
-@i190_s = external global i190		; <i190*> [#uses=1]
-@i191_s = external global i191		; <i191*> [#uses=1]
-@i192_s = external global i192		; <i192*> [#uses=1]
-@i193_s = external global i193		; <i193*> [#uses=1]
-@i194_s = external global i194		; <i194*> [#uses=1]
-@i195_s = external global i195		; <i195*> [#uses=1]
-@i196_s = external global i196		; <i196*> [#uses=1]
-@i197_s = external global i197		; <i197*> [#uses=1]
-@i198_s = external global i198		; <i198*> [#uses=1]
-@i199_s = external global i199		; <i199*> [#uses=1]
-@i200_s = external global i200		; <i200*> [#uses=1]
-@i201_s = external global i201		; <i201*> [#uses=1]
-@i202_s = external global i202		; <i202*> [#uses=1]
-@i203_s = external global i203		; <i203*> [#uses=1]
-@i204_s = external global i204		; <i204*> [#uses=1]
-@i205_s = external global i205		; <i205*> [#uses=1]
-@i206_s = external global i206		; <i206*> [#uses=1]
-@i207_s = external global i207		; <i207*> [#uses=1]
-@i208_s = external global i208		; <i208*> [#uses=1]
-@i209_s = external global i209		; <i209*> [#uses=1]
-@i210_s = external global i210		; <i210*> [#uses=1]
-@i211_s = external global i211		; <i211*> [#uses=1]
-@i212_s = external global i212		; <i212*> [#uses=1]
-@i213_s = external global i213		; <i213*> [#uses=1]
-@i214_s = external global i214		; <i214*> [#uses=1]
-@i215_s = external global i215		; <i215*> [#uses=1]
-@i216_s = external global i216		; <i216*> [#uses=1]
-@i217_s = external global i217		; <i217*> [#uses=1]
-@i218_s = external global i218		; <i218*> [#uses=1]
-@i219_s = external global i219		; <i219*> [#uses=1]
-@i220_s = external global i220		; <i220*> [#uses=1]
-@i221_s = external global i221		; <i221*> [#uses=1]
-@i222_s = external global i222		; <i222*> [#uses=1]
-@i223_s = external global i223		; <i223*> [#uses=1]
-@i224_s = external global i224		; <i224*> [#uses=1]
-@i225_s = external global i225		; <i225*> [#uses=1]
-@i226_s = external global i226		; <i226*> [#uses=1]
-@i227_s = external global i227		; <i227*> [#uses=1]
-@i228_s = external global i228		; <i228*> [#uses=1]
-@i229_s = external global i229		; <i229*> [#uses=1]
-@i230_s = external global i230		; <i230*> [#uses=1]
-@i231_s = external global i231		; <i231*> [#uses=1]
-@i232_s = external global i232		; <i232*> [#uses=1]
-@i233_s = external global i233		; <i233*> [#uses=1]
-@i234_s = external global i234		; <i234*> [#uses=1]
-@i235_s = external global i235		; <i235*> [#uses=1]
-@i236_s = external global i236		; <i236*> [#uses=1]
-@i237_s = external global i237		; <i237*> [#uses=1]
-@i238_s = external global i238		; <i238*> [#uses=1]
-@i239_s = external global i239		; <i239*> [#uses=1]
-@i240_s = external global i240		; <i240*> [#uses=1]
-@i241_s = external global i241		; <i241*> [#uses=1]
-@i242_s = external global i242		; <i242*> [#uses=1]
-@i243_s = external global i243		; <i243*> [#uses=1]
-@i244_s = external global i244		; <i244*> [#uses=1]
-@i245_s = external global i245		; <i245*> [#uses=1]
-@i246_s = external global i246		; <i246*> [#uses=1]
-@i247_s = external global i247		; <i247*> [#uses=1]
-@i248_s = external global i248		; <i248*> [#uses=1]
-@i249_s = external global i249		; <i249*> [#uses=1]
-@i250_s = external global i250		; <i250*> [#uses=1]
-@i251_s = external global i251		; <i251*> [#uses=1]
-@i252_s = external global i252		; <i252*> [#uses=1]
-@i253_s = external global i253		; <i253*> [#uses=1]
-@i254_s = external global i254		; <i254*> [#uses=1]
-@i255_s = external global i255		; <i255*> [#uses=1]
-@i256_s = external global i256		; <i256*> [#uses=1]
+
+@i1_s = external global i1		
+@i2_s = external global i2		
+@i3_s = external global i3		
+@i4_s = external global i4		
+@i5_s = external global i5		
+@i6_s = external global i6		
+@i7_s = external global i7		
+@i8_s = external global i8		
+@i9_s = external global i9		
+@i10_s = external global i10		
+@i11_s = external global i11		
+@i12_s = external global i12		
+@i13_s = external global i13		
+@i14_s = external global i14		
+@i15_s = external global i15		
+@i16_s = external global i16		
+@i17_s = external global i17		
+@i18_s = external global i18		
+@i19_s = external global i19		
+@i20_s = external global i20		
+@i21_s = external global i21		
+@i22_s = external global i22		
+@i23_s = external global i23		
+@i24_s = external global i24		
+@i25_s = external global i25		
+@i26_s = external global i26		
+@i27_s = external global i27		
+@i28_s = external global i28		
+@i29_s = external global i29		
+@i30_s = external global i30		
+@i31_s = external global i31		
+@i32_s = external global i32		
+@i33_s = external global i33		
+@i34_s = external global i34		
+@i35_s = external global i35		
+@i36_s = external global i36		
+@i37_s = external global i37		
+@i38_s = external global i38		
+@i39_s = external global i39		
+@i40_s = external global i40		
+@i41_s = external global i41		
+@i42_s = external global i42		
+@i43_s = external global i43		
+@i44_s = external global i44		
+@i45_s = external global i45		
+@i46_s = external global i46		
+@i47_s = external global i47		
+@i48_s = external global i48		
+@i49_s = external global i49		
+@i50_s = external global i50		
+@i51_s = external global i51		
+@i52_s = external global i52		
+@i53_s = external global i53		
+@i54_s = external global i54		
+@i55_s = external global i55		
+@i56_s = external global i56		
+@i57_s = external global i57		
+@i58_s = external global i58		
+@i59_s = external global i59		
+@i60_s = external global i60		
+@i61_s = external global i61		
+@i62_s = external global i62		
+@i63_s = external global i63		
+@i64_s = external global i64		
+@i65_s = external global i65		
+@i66_s = external global i66		
+@i67_s = external global i67		
+@i68_s = external global i68		
+@i69_s = external global i69		
+@i70_s = external global i70		
+@i71_s = external global i71		
+@i72_s = external global i72		
+@i73_s = external global i73		
+@i74_s = external global i74		
+@i75_s = external global i75		
+@i76_s = external global i76		
+@i77_s = external global i77		
+@i78_s = external global i78		
+@i79_s = external global i79		
+@i80_s = external global i80		
+@i81_s = external global i81		
+@i82_s = external global i82		
+@i83_s = external global i83		
+@i84_s = external global i84		
+@i85_s = external global i85		
+@i86_s = external global i86		
+@i87_s = external global i87		
+@i88_s = external global i88		
+@i89_s = external global i89		
+@i90_s = external global i90		
+@i91_s = external global i91		
+@i92_s = external global i92		
+@i93_s = external global i93		
+@i94_s = external global i94		
+@i95_s = external global i95		
+@i96_s = external global i96		
+@i97_s = external global i97		
+@i98_s = external global i98		
+@i99_s = external global i99		
+@i100_s = external global i100		
+@i101_s = external global i101		
+@i102_s = external global i102		
+@i103_s = external global i103		
+@i104_s = external global i104		
+@i105_s = external global i105		
+@i106_s = external global i106		
+@i107_s = external global i107		
+@i108_s = external global i108		
+@i109_s = external global i109		
+@i110_s = external global i110		
+@i111_s = external global i111		
+@i112_s = external global i112		
+@i113_s = external global i113		
+@i114_s = external global i114		
+@i115_s = external global i115		
+@i116_s = external global i116		
+@i117_s = external global i117		
+@i118_s = external global i118		
+@i119_s = external global i119		
+@i120_s = external global i120		
+@i121_s = external global i121		
+@i122_s = external global i122		
+@i123_s = external global i123		
+@i124_s = external global i124		
+@i125_s = external global i125		
+@i126_s = external global i126		
+@i127_s = external global i127		
+@i128_s = external global i128		
+@i129_s = external global i129		
+@i130_s = external global i130		
+@i131_s = external global i131		
+@i132_s = external global i132		
+@i133_s = external global i133		
+@i134_s = external global i134		
+@i135_s = external global i135		
+@i136_s = external global i136		
+@i137_s = external global i137		
+@i138_s = external global i138		
+@i139_s = external global i139		
+@i140_s = external global i140		
+@i141_s = external global i141		
+@i142_s = external global i142		
+@i143_s = external global i143		
+@i144_s = external global i144		
+@i145_s = external global i145		
+@i146_s = external global i146		
+@i147_s = external global i147		
+@i148_s = external global i148		
+@i149_s = external global i149		
+@i150_s = external global i150		
+@i151_s = external global i151		
+@i152_s = external global i152		
+@i153_s = external global i153		
+@i154_s = external global i154		
+@i155_s = external global i155		
+@i156_s = external global i156		
+@i157_s = external global i157		
+@i158_s = external global i158		
+@i159_s = external global i159		
+@i160_s = external global i160		
+@i161_s = external global i161		
+@i162_s = external global i162		
+@i163_s = external global i163		
+@i164_s = external global i164		
+@i165_s = external global i165		
+@i166_s = external global i166		
+@i167_s = external global i167		
+@i168_s = external global i168		
+@i169_s = external global i169		
+@i170_s = external global i170		
+@i171_s = external global i171		
+@i172_s = external global i172		
+@i173_s = external global i173		
+@i174_s = external global i174		
+@i175_s = external global i175		
+@i176_s = external global i176		
+@i177_s = external global i177		
+@i178_s = external global i178		
+@i179_s = external global i179		
+@i180_s = external global i180		
+@i181_s = external global i181		
+@i182_s = external global i182		
+@i183_s = external global i183		
+@i184_s = external global i184		
+@i185_s = external global i185		
+@i186_s = external global i186		
+@i187_s = external global i187		
+@i188_s = external global i188		
+@i189_s = external global i189		
+@i190_s = external global i190		
+@i191_s = external global i191		
+@i192_s = external global i192		
+@i193_s = external global i193		
+@i194_s = external global i194		
+@i195_s = external global i195		
+@i196_s = external global i196		
+@i197_s = external global i197		
+@i198_s = external global i198		
+@i199_s = external global i199		
+@i200_s = external global i200		
+@i201_s = external global i201		
+@i202_s = external global i202		
+@i203_s = external global i203		
+@i204_s = external global i204		
+@i205_s = external global i205		
+@i206_s = external global i206		
+@i207_s = external global i207		
+@i208_s = external global i208		
+@i209_s = external global i209		
+@i210_s = external global i210		
+@i211_s = external global i211		
+@i212_s = external global i212		
+@i213_s = external global i213		
+@i214_s = external global i214		
+@i215_s = external global i215		
+@i216_s = external global i216		
+@i217_s = external global i217		
+@i218_s = external global i218		
+@i219_s = external global i219		
+@i220_s = external global i220		
+@i221_s = external global i221		
+@i222_s = external global i222		
+@i223_s = external global i223		
+@i224_s = external global i224		
+@i225_s = external global i225		
+@i226_s = external global i226		
+@i227_s = external global i227		
+@i228_s = external global i228		
+@i229_s = external global i229		
+@i230_s = external global i230		
+@i231_s = external global i231		
+@i232_s = external global i232		
+@i233_s = external global i233		
+@i234_s = external global i234		
+@i235_s = external global i235		
+@i236_s = external global i236		
+@i237_s = external global i237		
+@i238_s = external global i238		
+@i239_s = external global i239		
+@i240_s = external global i240		
+@i241_s = external global i241		
+@i242_s = external global i242		
+@i243_s = external global i243		
+@i244_s = external global i244		
+@i245_s = external global i245		
+@i246_s = external global i246		
+@i247_s = external global i247		
+@i248_s = external global i248		
+@i249_s = external global i249		
+@i250_s = external global i250		
+@i251_s = external global i251		
+@i252_s = external global i252		
+@i253_s = external global i253		
+@i254_s = external global i254		
+@i255_s = external global i255		
+@i256_s = external global i256		
 
 define void @i1_ls(i1 zeroext %x) nounwind  {
 	store i1 %x, i1* @i1_s

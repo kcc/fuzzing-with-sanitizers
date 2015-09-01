@@ -1,36 +1,36 @@
-; RUN: opt < %s -O2 -force-vector-interleave=2 -force-vector-width=4 -debug-only=loop-vectorize -stats -S 2>&1 | FileCheck %s
-; REQUIRES: asserts
 
-; Loop from "rotated"
-; CHECK: LV: Loop hints: force=enabled
-; Loop from "nonrotated"
-; CHECK: LV: Loop hints: force=enabled
-; No more loops in the module
-; CHECK-NOT: LV: Loop hints: force=
-; In total only 1 loop should be rotated.
-; CHECK: 1 loop-rotate
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
-; See http://reviews.llvm.org/D3348 for details.
 
-;
-; Test #1
-;
-; Ensure that "llvm.loop.vectorize.enable" metadata was not lost prior to LoopVectorize pass.
-; In past LoopRotate was clearing that metadata.
-;
-; The source C code is:
-; void rotated(float *a, int size)
-; {
-;   int t = 0;
-;   #pragma omp simd
-;   for (int i = 0; i < size; ++i) {
-;     a[i] = a[i-5] * a[i+2];
-;     ++t;
-;   }
-;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @rotated(float* nocapture %a, i64 %size) {
 entry:
@@ -64,12 +64,12 @@ for.end:
 !1 = !{!1, !2}
 !2 = !{!"llvm.loop.vectorize.enable", i1 true}
 
-;
-; Test #2
-;
-; Ensure that "llvm.loop.vectorize.enable" metadata was not lost even
-; if loop was not rotated (see http://reviews.llvm.org/D3348#comment-4).
-;
+
+
+
+
+
+
 define i32 @nonrotated(i32 %a) {
 entry:
   br label %loop_cond

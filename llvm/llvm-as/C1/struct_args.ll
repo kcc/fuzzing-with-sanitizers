@@ -1,6 +1,6 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv4 < %s | FileCheck %s
-; CHECK: r{{[0-9]}}:{{[0-9]}} = combine({{r[0-9]|#0}}, r{{[0-9]}})
-; CHECK: r{{[0-9]}}:{{[0-9]}} |= asl(r{{[0-9]}}:{{[0-9]}}, #32)
+
+
+
 
 %struct.small = type { i32, i32 }
 

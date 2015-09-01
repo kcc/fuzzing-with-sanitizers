@@ -1,4 +1,4 @@
-; RUN: llvm-as %s -disable-output
+
 
 define i32 @foo() {
 E:

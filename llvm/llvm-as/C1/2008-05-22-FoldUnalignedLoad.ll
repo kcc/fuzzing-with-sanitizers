@@ -1,4 +1,4 @@
-; RUN: llc < %s -march=x86 -mcpu=penryn | FileCheck %s
+
 
 define void @a(<4 x float>* %x) nounwind  {
 entry:
@@ -8,10 +8,10 @@ entry:
         ret void
 }
 
-; CHECK-LABEL: a:
-; CHECK: movups
-; CHECK: movups
-; CHECK-NOT: movups
-; CHECK: ret
+
+
+
+
+
 
 declare <4 x float> @llvm.x86.sse.rcp.ps(<4 x float>)

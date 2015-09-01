@@ -1,17 +1,17 @@
-; RUN: opt < %s -loop-vectorize -mtriple=x86_64-unknown-linux -S -pass-remarks='loop-vectorize' 2>&1 | FileCheck -check-prefix=VECTORIZED %s
-; RUN: opt < %s -loop-vectorize -force-vector-width=1 -force-vector-interleave=4 -mtriple=x86_64-unknown-linux -S -pass-remarks='loop-vectorize' 2>&1 | FileCheck -check-prefix=UNROLLED %s
-; RUN: opt < %s -loop-vectorize -force-vector-width=1 -force-vector-interleave=1 -mtriple=x86_64-unknown-linux -S -pass-remarks-analysis='loop-vectorize' 2>&1 | FileCheck -check-prefix=NONE %s
 
-; This code has all the !dbg annotations needed to track source line information,
-; but is missing the llvm.dbg.cu annotation. This prevents code generation from
-; emitting debug info in the final output.
-; RUN: llc < %s -mtriple x86_64-pc-linux-gnu -o - | FileCheck -check-prefix=DEBUG-OUTPUT %s
-; DEBUG-OUTPUT-NOT: .loc
-; DEBUG-OUTPUT-NOT: {{.*}}.debug_info
 
-; VECTORIZED: remark: vectorization-remarks.c:17:8: vectorized loop (vectorization width: 4, interleaved count: 1)
-; UNROLLED: remark: vectorization-remarks.c:17:8: interleaved loop (interleaved count: 4)
-; NONE: remark: vectorization-remarks.c:17:8: loop not vectorized: vectorization and interleaving are explicitly disabled, or vectorize width and interleave count are both set to 1
+
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
 
@@ -23,7 +23,7 @@ entry:
   store i32 0, i32* %diff, align 4, !dbg !10, !tbaa !11
   br label %for.body, !dbg !15
 
-for.body:                                         ; preds = %for.body, %entry
+for.body:                                         
   %indvars.iv = phi i64 [ 0, %entry ], [ %indvars.iv.next, %for.body ]
   %add8 = phi i32 [ 0, %entry ], [ %add, %for.body ], !dbg !19
   %arrayidx = getelementptr inbounds [16 x i8], [16 x i8]* %cb, i64 0, i64 %indvars.iv, !dbg !19
@@ -38,7 +38,7 @@ for.body:                                         ; preds = %for.body, %entry
   %exitcond = icmp eq i64 %indvars.iv.next, 16, !dbg !15
   br i1 %exitcond, label %for.end, label %for.body, !dbg !15
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   store i32 %add, i32* %diff, align 4, !dbg !19, !tbaa !11
   call void @ibar(i32* %diff) #2, !dbg !22
   ret i32 0, !dbg !23

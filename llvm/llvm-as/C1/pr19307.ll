@@ -1,31 +1,31 @@
-; RUN: llc -O0 -mtriple=x86_64-unknown-linux-gnu < %s | FileCheck %s
 
-; Generated from the source file pr19307.cc:
-; #include <string>
-; void parse_range(unsigned long long &offset, unsigned long long &limit,
-;                  std::string range) {
-;   if (range.compare(0, 6, "items=") != 0 || range[6] == '-')
-;     offset = 1;
-;   range.erase(0, 6);
-;   limit = 2;
-; }
-; with "clang++ -S -emit-llvm -O0 -g pr19307.cc"
 
-; Location of "range" string is spilled from %rdx to stack and is
-; addressed via %rbp.
-; CHECK: movq %rdx, {{[-0-9]+}}(%rbp)
-; CHECK-NEXT: [[START_LABEL:.Ltmp[0-9]+]]
-; This location should be valid until the end of the function.
 
-; Verify that we have proper range in debug_loc section:
-; CHECK: .Ldebug_loc{{[0-9]+}}:
-; CHECK: DW_OP_breg1
-; CHECK:      .quad [[START_LABEL]]-.Lfunc_begin0
-; CHECK-NEXT: .quad .Lfunc_end0-.Lfunc_begin0
-; CHECK: DW_OP_breg6
-; CHECK: DW_OP_deref
 
-; ModuleID = 'pr19307.cc'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
@@ -34,7 +34,7 @@ target triple = "x86_64-unknown-linux-gnu"
 
 @.str = private unnamed_addr constant [7 x i8] c"items=\00", align 1
 
-; Function Attrs: uwtable
+
 define void @_Z11parse_rangeRyS_Ss(i64* %offset, i64* %limit, %"class.std::basic_string"* %range) #0 {
 entry:
   %offset.addr = alloca i64*, align 8
@@ -48,26 +48,26 @@ entry:
   %cmp = icmp ne i32 %call, 0, !dbg !50
   br i1 %cmp, label %if.then, label %lor.lhs.false, !dbg !50
 
-lor.lhs.false:                                    ; preds = %entry
+lor.lhs.false:                                    
   %call1 = call i8* @_ZNSsixEm(%"class.std::basic_string"* %range, i64 6), !dbg !52
   %0 = load i8, i8* %call1, !dbg !52
   %conv = sext i8 %0 to i32, !dbg !52
   %cmp2 = icmp eq i32 %conv, 45, !dbg !52
   br i1 %cmp2, label %if.then, label %if.end, !dbg !52
 
-if.then:                                          ; preds = %lor.lhs.false, %entry
+if.then:                                          
   %1 = load i64*, i64** %offset.addr, align 8, !dbg !54
   store i64 1, i64* %1, align 8, !dbg !54
   br label %if.end, !dbg !54
 
-if.end:                                           ; preds = %if.then, %lor.lhs.false
+if.end:                                           
   %call3 = call %"class.std::basic_string"* @_ZNSs5eraseEmm(%"class.std::basic_string"* %range, i64 0, i64 6), !dbg !55
   %2 = load i64*, i64** %limit.addr, align 8, !dbg !56
   store i64 2, i64* %2, align 8, !dbg !56
   ret void, !dbg !57
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
 declare i32 @_ZNKSs7compareEmmPKc(%"class.std::basic_string"*, i64, i64, i8*) #2

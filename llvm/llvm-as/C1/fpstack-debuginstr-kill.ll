@@ -1,4 +1,4 @@
-; RUN: llc < %s -mcpu=generic -mtriple=i386-apple-darwin -no-integrated-as
+
 
 @g1 = global double 0.000000e+00, align 8
 @g2 = global i32 0, align 4
@@ -8,34 +8,34 @@ entry:
   switch i32 undef, label %sw.bb.i1921 [
   ]
 
-sw.bb261:                                         ; preds = %entry, %entry
+sw.bb261:                                         
   unreachable
 
-sw.bb.i1921:                                      ; preds = %if.end504
+sw.bb.i1921:                                      
   switch i32 undef, label %if.end511 [
     i32 1, label %sw.bb27.i
   ]
 
-sw.bb27.i:                                        ; preds = %sw.bb.i1921
+sw.bb27.i:                                        
   %conv.i.i1923 = fpext float undef to x86_fp80
   br label %if.end511
 
-if.end511:                                        ; preds = %sw.bb27.i, %sw.bb13.i
+if.end511:                                        
   %src.sroa.0.0.src.sroa.0.0.2280 = phi x86_fp80 [ %conv.i.i1923, %sw.bb27.i ], [ undef, %sw.bb.i1921 ]
   switch i32 undef, label %sw.bb992 [
     i32 3, label %sw.bb735
     i32 18, label %if.end41.i2210
   ]
 
-sw.bb735:                                         ; preds = %if.end511
+sw.bb735:                                         
   %2 = call x86_fp80 asm sideeffect "frndint", "={st},0,~{dirflag},~{fpsr},~{flags}"(x86_fp80 %src.sroa.0.0.src.sroa.0.0.2280)
   unreachable
 
-if.end41.i2210:                                   ; preds = %if.end511
+if.end41.i2210:                                   
   call void @llvm.dbg.value(metadata x86_fp80 %src.sroa.0.0.src.sroa.0.0.2280, i64 0, metadata !20, metadata !DIExpression()), !dbg !DILocation(scope: !4)
   unreachable
 
-sw.bb992:                                         ; preds = %if.end511
+sw.bb992:                                         
   ret void
 }
 

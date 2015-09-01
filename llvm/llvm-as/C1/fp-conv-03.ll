@@ -1,39 +1,39 @@
-; Test extensions of f32 to f128.
-;
-; RUN: llc < %s -mtriple=s390x-linux-gnu | FileCheck %s
 
-; Check register extension.
+
+
+
+
 define void @f1(fp128 *%dst, float %val) {
-; CHECK-LABEL: f1:
-; CHECK: lxebr %f0, %f0
-; CHECK: std %f0, 0(%r2)
-; CHECK: std %f2, 8(%r2)
-; CHECK: br %r14
+
+
+
+
+
   %res = fpext float %val to fp128
   store fp128 %res, fp128 *%dst
   ret void
 }
 
-; Check the low end of the LXEB range.
+
 define void @f2(fp128 *%dst, float *%ptr) {
-; CHECK-LABEL: f2:
-; CHECK: lxeb %f0, 0(%r3)
-; CHECK: std %f0, 0(%r2)
-; CHECK: std %f2, 8(%r2)
-; CHECK: br %r14
+
+
+
+
+
   %val = load float , float *%ptr
   %res = fpext float %val to fp128
   store fp128 %res, fp128 *%dst
   ret void
 }
 
-; Check the high end of the aligned LXEB range.
+
 define void @f3(fp128 *%dst, float *%base) {
-; CHECK-LABEL: f3:
-; CHECK: lxeb %f0, 4092(%r3)
-; CHECK: std %f0, 0(%r2)
-; CHECK: std %f2, 8(%r2)
-; CHECK: br %r14
+
+
+
+
+
   %ptr = getelementptr float, float *%base, i64 1023
   %val = load float , float *%ptr
   %res = fpext float %val to fp128
@@ -41,15 +41,15 @@ define void @f3(fp128 *%dst, float *%base) {
   ret void
 }
 
-; Check the next word up, which needs separate address logic.
-; Other sequences besides this one would be OK.
+
+
 define void @f4(fp128 *%dst, float *%base) {
-; CHECK-LABEL: f4:
-; CHECK: aghi %r3, 4096
-; CHECK: lxeb %f0, 0(%r3)
-; CHECK: std %f0, 0(%r2)
-; CHECK: std %f2, 8(%r2)
-; CHECK: br %r14
+
+
+
+
+
+
   %ptr = getelementptr float, float *%base, i64 1024
   %val = load float , float *%ptr
   %res = fpext float %val to fp128
@@ -57,14 +57,14 @@ define void @f4(fp128 *%dst, float *%base) {
   ret void
 }
 
-; Check negative displacements, which also need separate address logic.
+
 define void @f5(fp128 *%dst, float *%base) {
-; CHECK-LABEL: f5:
-; CHECK: aghi %r3, -4
-; CHECK: lxeb %f0, 0(%r3)
-; CHECK: std %f0, 0(%r2)
-; CHECK: std %f2, 8(%r2)
-; CHECK: br %r14
+
+
+
+
+
+
   %ptr = getelementptr float, float *%base, i64 -1
   %val = load float , float *%ptr
   %res = fpext float %val to fp128
@@ -72,14 +72,14 @@ define void @f5(fp128 *%dst, float *%base) {
   ret void
 }
 
-; Check that LXEB allows indices.
+
 define void @f6(fp128 *%dst, float *%base, i64 %index) {
-; CHECK-LABEL: f6:
-; CHECK: sllg %r1, %r4, 2
-; CHECK: lxeb %f0, 400(%r1,%r3)
-; CHECK: std %f0, 0(%r2)
-; CHECK: std %f2, 8(%r2)
-; CHECK: br %r14
+
+
+
+
+
+
   %ptr1 = getelementptr float, float *%base, i64 %index
   %ptr2 = getelementptr float, float *%ptr1, i64 100
   %val = load float , float *%ptr2
@@ -88,12 +88,12 @@ define void @f6(fp128 *%dst, float *%base, i64 %index) {
   ret void
 }
 
-; Test a case where we spill the source of at least one LXEBR.  We want
-; to use LXEB if possible.
+
+
 define void @f7(fp128 *%ptr1, float *%ptr2) {
-; CHECK-LABEL: f7:
-; CHECK: lxeb {{%f[0-9]+}}, 16{{[04]}}(%r15)
-; CHECK: br %r14
+
+
+
   %val0 = load volatile float , float *%ptr2
   %val1 = load volatile float , float *%ptr2
   %val2 = load volatile float , float *%ptr2

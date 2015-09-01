@@ -1,7 +1,7 @@
-; RUN: llc < %s -mtriple=powerpc-apple-darwin -mcpu=g4 | FileCheck %s
-; RUN: llc < %s -mtriple=powerpc64-unknown-linux-gnu -mcpu=g4 | FileCheck %s
 
-; ModuleID = 'tsc.c'
+
+
+
 target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v128:128:128-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
 
@@ -24,8 +24,8 @@ declare i64 @clock() nounwind
 declare i32 @dummy(float*, float*, float*, float*, float*, [256 x float]*, [256 x float]*, [256 x float]*, float)
 declare void @check(i32 %name) nounwind
 
-; CHECK: mfcr
-; CHECK: mtcr
+
+
 
 define i32 @s3110() nounwind {
 entry:
@@ -33,19 +33,19 @@ entry:
   %call1 = tail call i64 @clock() nounwind
   br label %for.body
 
-for.body:                                         ; preds = %for.end17, %entry
+for.body:                                         
   %nl.041 = phi i32 [ 0, %entry ], [ %inc22, %for.end17 ]
   %0 = load float, float* getelementptr inbounds ([256 x [256 x float]], [256 x [256 x float]]* @aa, i64 0, i64 0, i64 0), align 16
   br label %for.cond5.preheader
 
-for.cond5.preheader:                              ; preds = %for.inc15, %for.body
+for.cond5.preheader:                              
   %indvars.iv42 = phi i64 [ 0, %for.body ], [ %indvars.iv.next43, %for.inc15 ]
   %max.139 = phi float [ %0, %for.body ], [ %max.3.15, %for.inc15 ]
   %xindex.138 = phi i32 [ 0, %for.body ], [ %xindex.3.15, %for.inc15 ]
   %yindex.137 = phi i32 [ 0, %for.body ], [ %yindex.3.15, %for.inc15 ]
   br label %for.body7
 
-for.body7:                                        ; preds = %for.body7, %for.cond5.preheader
+for.body7:                                        
   %indvars.iv = phi i64 [ 0, %for.cond5.preheader ], [ %indvars.iv.next.15, %for.body7 ]
   %max.235 = phi float [ %max.139, %for.cond5.preheader ], [ %max.3.15, %for.body7 ]
   %xindex.234 = phi i32 [ %xindex.138, %for.cond5.preheader ], [ %xindex.3.15, %for.body7 ]
@@ -183,13 +183,13 @@ for.body7:                                        ; preds = %for.body7, %for.con
   %exitcond.15 = icmp eq i32 %lftr.wideiv.15, 256
   br i1 %exitcond.15, label %for.inc15, label %for.body7
 
-for.inc15:                                        ; preds = %for.body7
+for.inc15:                                        
   %indvars.iv.next43 = add i64 %indvars.iv42, 1
   %lftr.wideiv = trunc i64 %indvars.iv.next43 to i32
   %exitcond = icmp eq i32 %lftr.wideiv, 256
   br i1 %exitcond, label %for.end17, label %for.cond5.preheader
 
-for.end17:                                        ; preds = %for.inc15
+for.end17:                                        
   %conv = sitofp i32 %xindex.3.15 to float
   %add = fadd float %max.3.15, %conv
   %conv18 = sitofp i32 %yindex.3.15 to float
@@ -199,7 +199,7 @@ for.end17:                                        ; preds = %for.inc15
   %exitcond44 = icmp eq i32 %inc22, 78100
   br i1 %exitcond44, label %for.end23, label %for.body
 
-for.end23:                                        ; preds = %for.end17
+for.end23:                                        
   %call24 = tail call i64 @clock() nounwind
   %sub = sub nsw i64 %call24, %call1
   %conv25 = sitofp i64 %sub to double

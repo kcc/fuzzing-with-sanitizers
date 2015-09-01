@@ -1,6 +1,6 @@
-; RUN: opt -gvn -S -o - %s | FileCheck %s
 
-; If a branch has two identical successors, we cannot declare either dead.
+
+
 
 define void @widget(i1 %p) {
 entry:
@@ -17,7 +17,7 @@ bb3:
   br label %bb4
 
 bb4:
-  ; CHECK-NOT: phi {{.*}} undef
+  
   %foo = phi i64 [ %t4, %bb3 ], [ 0, %bb2 ]
   br i1 %p, label %bb5, label %bb6
 

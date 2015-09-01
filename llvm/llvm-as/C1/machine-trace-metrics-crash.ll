@@ -1,14 +1,14 @@
-; RUN: llc -mtriple=x86_64-unknown-unknown -mcpu=x86-64 -mattr=sse -enable-unsafe-fp-math < %s | FileCheck %s
 
-; The debug info in this test case was causing a crash because machine trace metrics
-; did not correctly ignore debug instructions. The check lines ensure that the
-; machine-combiner pass has run, reassociated the add operands, and therefore
-; used machine trace metrics.
+
+
+
+
+
 
 define void @PR24199() {
-; CHECK-LABEL:	PR24199:
-; CHECK:	addss	%xmm1, %xmm0
-; CHECK:	addss	%xmm2, %xmm0
+
+
+
 
 entry:
   %i = alloca %struct.A, align 8

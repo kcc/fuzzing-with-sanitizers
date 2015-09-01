@@ -1,19 +1,19 @@
-; RUN: llc %s -o %t -filetype=obj
-; RUN: llvm-dwarfdump -debug-dump=info %t | FileCheck %s
 
-; Checks that we emit debug info for the block variable declare.
-; CHECK: DW_TAG_subprogram
-; CHECK: DW_TAG_variable
-;                                              fbreg +8, deref, +32
-; CHECK-NEXT: DW_AT_location [DW_FORM_block1] (<0x05> 91 08 06 23 20 )
-; CHECK-NEXT: DW_AT_name {{.*}} "block"
 
-; Extracted from the clang output for:
-; void foo() {
-;  void (^block)() = ^{ block(); };
-; }
 
-; ModuleID = 'foo.m'
+
+
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-darwin"
 
@@ -23,10 +23,10 @@ target triple = "x86_64-apple-darwin"
 @_NSConcreteStackBlock = external global i8*
 @.str = private unnamed_addr constant [6 x i8] c"v8@?0\00", align 1
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
-; Function Attrs: ssp uwtable
+
 define internal void @__foo_block_invoke(i8* %.block_descriptor) #2 {
 entry:
   %.block_descriptor.addr = alloca i8*, align 8
@@ -49,7 +49,7 @@ entry:
   ret void, !dbg !73
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #1
 
 

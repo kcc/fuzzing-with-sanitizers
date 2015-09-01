@@ -1,22 +1,22 @@
-; RUN: llc -mtriple=aarch64-non-linux-gnu -dwarf-version=4 < %s -filetype=obj \
-; RUN:    | llvm-dwarfdump - | FileCheck -check-prefix=CHECK -check-prefix=CHECK-4 %s
-; RUN: llc -mtriple=aarch64-non-linux-gnu -dwarf-version=3 < %s -filetype=obj \
-; RUN:    | llvm-dwarfdump - | FileCheck -check-prefix=CHECK -check-prefix=CHECK-3 %s
 
-; We're mostly checking that relocations are applied correctly
-; here. Currently R_AARCH64_ABS32 is used for references to debug data
-; and R_AARCH64_ABS64 is used for program addresses.
 
-; A couple of ABS32s, both at 0 and elsewhere, interpreted correctly:
 
-; CHECK: DW_AT_producer [DW_FORM_strp] ( .debug_str[0x00000000] = "clang version 3.3 ")
-; CHECK: DW_AT_name [DW_FORM_strp] ( .debug_str[0x00000013] = "tmp.c")
 
-; A couple of ABS64s similarly:
 
-; CHECK: DW_AT_low_pc [DW_FORM_addr] (0x0000000000000000)
-; CHECK-4: DW_AT_high_pc [DW_FORM_data4] (0x00000008)
-; CHECK-3: DW_AT_high_pc [DW_FORM_addr] (0x0000000000000008)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define i32 @main() nounwind {
   ret i32 0, !dbg !8

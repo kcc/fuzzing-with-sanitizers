@@ -1,21 +1,21 @@
-; RUN: llc < %s -mcpu=atom -mtriple=i686-linux | FileCheck %s
-; CHECK: addl
-; CHECK-NEXT:leal
-; CHECK-NEXT:decl
-; CHECK-NEXT:jne
 
-; Test for the FixupLEAs pre-emit pass. An LEA should be substituted for the ADD
-; that increments the array pointer because it is within 5 instructions of the
-; corresponding load. The ADD precedes the load by following the loop back edge.
 
-; Original C code
-;int test(int n, int * array)
-;{
-;  int sum = 0;
-;  for(int i = 0; i < n; i++)
-;    sum += array[i];
-;  return sum;
-;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define i32 @test(i32 %n, i32* nocapture %array) {
 entry:

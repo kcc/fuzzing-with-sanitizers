@@ -1,9 +1,9 @@
-; RUN: opt < %s -load-combine -instcombine -S | FileCheck %s
+
 
 target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
-; Combine read from char* idiom.
+
 define i64 @LoadU64_x64_0(i64* %pData) {
   %1 = bitcast i64* %pData to i8*
   %2 = load i8, i8* %1, align 1
@@ -44,12 +44,12 @@ define i64 @LoadU64_x64_0(i64* %pData) {
   %37 = zext i8 %36 to i64
   %38 = or i64 %34, %37
   ret i64 %38
-; CHECK-LABEL: @LoadU64_x64_0(
-; CHECK: load i64, i64* %{{.*}}, align 1
-; CHECK-NOT: load
+
+
+
 }
 
-; Combine simple adjacent loads.
+
 define i32 @"2xi16_i32"(i16* %x) {
   %1 = load i16, i16* %x, align 2
   %2 = getelementptr inbounds i16, i16* %x, i64 1
@@ -59,12 +59,12 @@ define i32 @"2xi16_i32"(i16* %x) {
   %6 = zext i16 %1 to i32
   %7 = or i32 %5, %6
   ret i32 %7
-; CHECK-LABEL: @"2xi16_i32"(
-; CHECK: load i32, i32* %{{.*}}, align 2
-; CHECK-NOT: load
+
+
+
 }
 
-; Don't combine loads across stores.
+
 define i32 @"2xi16_i32_store"(i16* %x, i16* %y) {
   %1 = load i16, i16* %x, align 2
   store i16 0, i16* %y, align 2
@@ -75,13 +75,13 @@ define i32 @"2xi16_i32_store"(i16* %x, i16* %y) {
   %6 = zext i16 %1 to i32
   %7 = or i32 %5, %6
   ret i32 %7
-; CHECK-LABEL: @"2xi16_i32_store"(
-; CHECK: load i16, i16* %{{.*}}, align 2
-; CHECK: store
-; CHECK: load i16, i16* %{{.*}}, align 2
+
+
+
+
 }
 
-; Don't combine loads with a gap.
+
 define i32 @"2xi16_i32_gap"(i16* %x) {
   %1 = load i16, i16* %x, align 2
   %2 = getelementptr inbounds i16, i16* %x, i64 2
@@ -91,12 +91,12 @@ define i32 @"2xi16_i32_gap"(i16* %x) {
   %6 = zext i16 %1 to i32
   %7 = or i32 %5, %6
   ret i32 %7
-; CHECK-LABEL: @"2xi16_i32_gap"(
-; CHECK: load i16, i16* %{{.*}}, align 2
-; CHECK: load i16, i16* %{{.*}}, align 2
+
+
+
 }
 
-; Combine out of order loads.
+
 define i32 @"2xi16_i32_order"(i16* %x) {
   %1 = getelementptr inbounds i16, i16* %x, i64 1
   %2 = load i16, i16* %1, align 2
@@ -106,12 +106,12 @@ define i32 @"2xi16_i32_order"(i16* %x) {
   %6 = zext i16 %4 to i32
   %7 = or i32 %5, %6
   ret i32 %7
-; CHECK-LABEL: @"2xi16_i32_order"(
-; CHECK: load i32, i32* %{{.*}}, align 2
-; CHECK-NOT: load
+
+
+
 }
 
-; Overlapping loads.
+
 define i32 @"2xi16_i32_overlap"(i8* %x) {
   %1 = bitcast i8* %x to i16*
   %2 = load i16, i16* %1, align 2
@@ -123,12 +123,12 @@ define i32 @"2xi16_i32_overlap"(i8* %x) {
   %8 = zext i16 %2 to i32
   %9 = or i32 %7, %8
   ret i32 %9
-; CHECK-LABEL: @"2xi16_i32_overlap"(
-; CHECK: load i16, i16* %{{.*}}, align 2
-; CHECK: load i16, i16* %{{.*}}, align 2
+
+
+
 }
 
-; Combine valid alignments.
+
 define i64 @"2xi16_i64_align"(i8* %x) {
   %1 = bitcast i8* %x to i32*
   %2 = load i32, i32* %1, align 4
@@ -146,11 +146,11 @@ define i64 @"2xi16_i64_align"(i8* %x) {
   %14 = or i64 %12, %13
   %15 = or i64 %14, %10
   ret i64 %15
-; CHECK-LABEL: @"2xi16_i64_align"(
-; CHECK: load i64, i64* %{{.*}}, align 4
+
+
 }
 
-; Non power of two.
+
 define i64 @"2xi16_i64_npo2"(i8* %x) {
   %1 = load i8, i8* %x, align 1
   %2 = zext i8 %1 to i64
@@ -185,6 +185,6 @@ define i64 @"2xi16_i64_npo2"(i8* %x) {
   %31 = shl nuw nsw i64 %30, 48
   %32 = or i64 %31, %27
   ret i64 %32
-; CHECK-LABEL: @"2xi16_i64_npo2"(
-; CHECK: load i32, i32* %{{.*}}, align 1
+
+
 }

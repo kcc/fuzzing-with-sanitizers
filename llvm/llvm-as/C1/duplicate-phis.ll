@@ -1,7 +1,7 @@
-; RUN: opt < %s -instcombine -simplifycfg -S | grep " = phi " | count 1
 
-; instcombine should sort the PHI operands so that simplifycfg can see the
-; duplicate and remove it.
+
+
+
 
 define i32 @foo(i1 %t) {
 entry:

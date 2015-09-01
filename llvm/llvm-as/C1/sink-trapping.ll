@@ -1,4 +1,4 @@
-; RUN: opt < %s -indvars -S | FileCheck %s --check-prefix=CHECK
+
 
 declare i1 @b()
 
@@ -14,6 +14,6 @@ for.body:
 for.end.loopexit:
 	ret i32 %y
 }
-; CHECK: for.end.loopexit:
-; CHECK: sdiv
-; CHECK: ret
+
+
+

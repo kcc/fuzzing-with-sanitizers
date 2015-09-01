@@ -1,12 +1,12 @@
-; RUN: opt < %s -slp-vectorizer -o - -S -slp-threshold=-1000
+
 
 target datalayout = "e-p:32:32-i64:64-v16:16-v32:32-n16:32:64"
 target triple = "nvptx--nvidiacl"
 
-; CTLZ cannot be vectorized currently because the second argument is a scalar
-; for both the scalar and vector forms of the intrinsic. In the future it
-; should be possible to vectorize such functions.
-; Test causes an assert if LLVM tries to vectorize CTLZ.
+
+
+
+
 
 define <2 x i8> @cltz_test(<2 x i8> %x) #0 {
 entry:

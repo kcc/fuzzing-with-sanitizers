@@ -1,4 +1,4 @@
-; RUN: llc < %s -march=x86
+
 
 define void @foobar() {
 entry:
@@ -17,6 +17,6 @@ entry:
 if.then158.i:
   ret void
 
-if.end163.i:                                      ; preds = %if.end67.i
+if.end163.i:                                      
   ret void
 }

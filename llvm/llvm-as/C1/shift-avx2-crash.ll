@@ -1,5 +1,5 @@
-; RUN: llc < %s  -mcpu=core-avx2 > /dev/null
-; This test crashed on variable shift creation on AVX2
+
+
 
 target datalayout = "e-m:e-p:32:32-f64:32:64-f80:32-n8:16:32-S128"
 target triple = "i386-unknown-linux-gnu"
@@ -18,7 +18,7 @@ if_then18.i:
   %multiplier_load_broadcast.i = shufflevector <8 x i64> %multiplier_load_broadcast_init.i, <8 x i64> undef, <8 x i32> zeroinitializer
   %numerator_load_to_uint64.i = zext <8 x i32> %aFOO_load_to_uint32_broadcast to <8 x i64>
 
-  ;if replace '%__idiv_table_u32_offset10_offset_load.i' with '-2' or remove 'if_then18.i' label the error disappears
+  
   %add__shift_load21.i = add i64 %__idiv_table_u32_offset10_offset_load.i, 32
   %add__shift_load21_broadcast_init.i = insertelement <8 x i64> undef, i64 %add__shift_load21.i, i32 0
   %add__shift_load21_broadcast.i = shufflevector <8 x i64> %add__shift_load21_broadcast_init.i, <8 x i64> undef, <8 x i32> zeroinitializer

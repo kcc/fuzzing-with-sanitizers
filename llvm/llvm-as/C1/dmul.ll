@@ -1,7 +1,7 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv5  < %s | FileCheck %s
-; Check that we generate double precision floating point multiply in V5.
 
-; CHECK: call __hexagon_muldf3
+
+
+
 
 define i32 @main() nounwind {
 entry:

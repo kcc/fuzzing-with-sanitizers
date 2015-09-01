@@ -1,5 +1,5 @@
-; RUN: llc < %s
-; PR2671
+
+
 
 define void @a(<2 x double>* %p, <2 x i8>* %q) {
   %t = load <2 x double>, <2 x double>* %p

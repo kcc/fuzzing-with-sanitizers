@@ -1,8 +1,8 @@
-; RUN: opt < %s -scalar-evolution -licm -loop-unroll -disable-output
-; Test triggered an assertion in doFinalization() because loop unroll was deleting
-; the inner loop which caused the loop to not get removed from the
-; LoopToAliasSetMap.
-; Test case taken from test/Transforms/LoopUnroll/unloop.ll.
+
+
+
+
+
 
 declare i1 @check() nounwind
 define void @skiplevelexit() nounwind {

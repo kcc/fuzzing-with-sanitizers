@@ -1,7 +1,7 @@
-; RUN: opt < %s -simplifycfg -S | FileCheck %s
 
-; CHECK-NOT: invoke
-; CHECK-NOT: landingpad
+
+
+
 
 declare void @bar()
 

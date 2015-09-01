@@ -1,23 +1,23 @@
-; RUN: llc < %s -march=arm64 -mcpu=cyclone -enable-misched=false | FileCheck %s
+
 target triple = "arm64-apple-ios7.0.0"
 
-; rdar://13625505
-; Here we have 9 fixed integer arguments the 9th argument in on stack, the
-; varargs start right after at 8-byte alignment.
+
+
+
 define void @fn9(i32 %a1, i32 %a2, i32 %a3, i32 %a4, i32 %a5, i32 %a6, i32 %a7, i32 %a8, i32 %a9, ...) nounwind noinline ssp {
-; CHECK-LABEL: fn9:
-; 9th fixed argument
-; CHECK: ldr {{w[0-9]+}}, [sp, #64]
-; CHECK: add [[ARGS:x[0-9]+]], sp, #72
-; CHECK: add {{x[0-9]+}}, [[ARGS]], #8
-; First vararg
-; CHECK: ldr {{w[0-9]+}}, [sp, #72]
-; CHECK: add {{x[0-9]+}}, {{x[0-9]+}}, #8
-; Second vararg
-; CHECK: ldr {{w[0-9]+}}, [{{x[0-9]+}}]
-; CHECK: add {{x[0-9]+}}, {{x[0-9]+}}, #8
-; Third vararg
-; CHECK: ldr {{w[0-9]+}}, [{{x[0-9]+}}]
+
+
+
+
+
+
+
+
+
+
+
+
+
   %1 = alloca i32, align 4
   %2 = alloca i32, align 4
   %3 = alloca i32, align 4
@@ -54,10 +54,10 @@ define void @fn9(i32 %a1, i32 %a2, i32 %a3, i32 %a4, i32 %a5, i32 %a6, i32 %a7, 
 declare void @llvm.va_start(i8*) nounwind
 
 define i32 @main() nounwind ssp {
-; CHECK-LABEL: main:
-; CHECK: stp {{x[0-9]+}}, {{x[0-9]+}}, [sp, #16]
-; CHECK: str {{x[0-9]+}}, [sp, #8]
-; CHECK: str {{w[0-9]+}}, [sp]
+
+
+
+
   %a1 = alloca i32, align 4
   %a2 = alloca i32, align 4
   %a3 = alloca i32, align 4
@@ -98,16 +98,16 @@ define i32 @main() nounwind ssp {
   ret i32 0
 }
 
-;rdar://13668483
+
 @.str = private unnamed_addr constant [4 x i8] c"fmt\00", align 1
 define void @foo(i8* %fmt, ...) nounwind {
 entry:
-; CHECK-LABEL: foo:
-; CHECK: orr {{x[0-9]+}}, {{x[0-9]+}}, #0x8
-; CHECK: ldr {{w[0-9]+}}, [sp, #48]
-; CHECK: add {{x[0-9]+}}, {{x[0-9]+}}, #15
-; CHECK: and x[[ADDR:[0-9]+]], {{x[0-9]+}}, #0xfffffffffffffff0
-; CHECK: ldr {{q[0-9]+}}, [x[[ADDR]]]
+
+
+
+
+
+
   %fmt.addr = alloca i8*, align 8
   %args = alloca i8*, align 8
   %vc = alloca i32, align 4
@@ -124,9 +124,9 @@ entry:
 
 define void @bar(i32 %x, <4 x i32> %y) nounwind {
 entry:
-; CHECK-LABEL: bar:
-; CHECK: str {{q[0-9]+}}, [sp, #16]
-; CHECK: str {{x[0-9]+}}, [sp]
+
+
+
   %x.addr = alloca i32, align 4
   %y.addr = alloca <4 x i32>, align 16
   store i32 %x, i32* %x.addr, align 4
@@ -137,18 +137,18 @@ entry:
   ret void
 }
 
-; rdar://13668927
-; When passing 16-byte aligned small structs as vararg, make sure the caller
-; side is 16-byte aligned on stack.
+
+
+
 %struct.s41 = type { i32, i16, i32, i16 }
 define void @foo2(i8* %fmt, ...) nounwind {
 entry:
-; CHECK-LABEL: foo2:
-; CHECK: orr {{x[0-9]+}}, {{x[0-9]+}}, #0x8
-; CHECK: ldr {{w[0-9]+}}, [sp, #48]
-; CHECK: add {{x[0-9]+}}, {{x[0-9]+}}, #15
-; CHECK: and x[[ADDR:[0-9]+]], {{x[0-9]+}}, #0xfffffffffffffff0
-; CHECK: ldr {{q[0-9]+}}, [x[[ADDR]]]
+
+
+
+
+
+
   %fmt.addr = alloca i8*, align 8
   %args = alloca i8*, align 8
   %vc = alloca i32, align 4
@@ -175,9 +175,9 @@ declare void @llvm.memcpy.p0i8.p0i8.i64(i8* nocapture, i8* nocapture, i64, i32, 
 
 define void @bar2(i32 %x, i128 %s41.coerce) nounwind {
 entry:
-; CHECK-LABEL: bar2:
-; CHECK: stp {{x[0-9]+}}, {{x[0-9]+}}, [sp, #16]
-; CHECK: str {{x[0-9]+}}, [sp]
+
+
+
   %x.addr = alloca i32, align 4
   %s41 = alloca %struct.s41, align 16
   store i32 %x, i32* %x.addr, align 4

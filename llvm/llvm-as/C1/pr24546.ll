@@ -1,38 +1,38 @@
-; RUN: llc -mcpu=pwr8 -mtriple=powerpc64le-unknown-linux-gnu < %s
 
-; Verify that we no longer crash in VSX swap removal when debug values
-; are in the code stream.
+
+
+
 
 @php_intpow10.powers = external unnamed_addr constant [23 x double], align 8
 
-; Function Attrs: nounwind
+
 define double @_php_math_round(double %value, i32 signext %places, i32 signext %mode) #0 {
 entry:
   br i1 undef, label %if.then, label %if.else, !dbg !32
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %conv = sitofp i32 undef to double, !dbg !34
   br i1 undef, label %if.then.i, label %if.end.i, !dbg !36
 
-if.then.i:                                        ; preds = %if.then
+if.then.i:                                        
   %call.i = tail call double @pow(double 1.000000e+01, double undef) #3, !dbg !39
   br label %php_intpow10.exit, !dbg !41
 
-if.end.i:                                         ; preds = %if.then
+if.end.i:                                         
   %0 = load double, double* undef, align 8, !dbg !42, !tbaa !43
   br label %php_intpow10.exit, !dbg !47
 
-php_intpow10.exit:                                ; preds = %if.end.i, %if.then.i
+php_intpow10.exit:                                
   %retval.0.i = phi double [ %call.i, %if.then.i ], [ %0, %if.end.i ], !dbg !48
   tail call void @llvm.dbg.value(metadata double %retval.0.i, i64 0, metadata !15, metadata !49), !dbg !50
   %div = fdiv double %conv, %retval.0.i, !dbg !51
   br label %if.end.15, !dbg !52
 
-if.else:                                          ; preds = %entry
+if.else:                                          
   %mul = fmul double %value, undef, !dbg !53
   br label %if.end.15
 
-if.end.15:                                        ; preds = %if.else, %php_intpow10.exit
+if.end.15:                                        
   %tmp_value.1 = phi double [ %div, %php_intpow10.exit ], [ %mul, %if.else ]
   ret double %tmp_value.1, !dbg !57
 }
@@ -41,10 +41,10 @@ declare signext i32 @php_intlog10abs(...) #1
 
 declare signext i32 @php_round_helper(...) #1
 
-; Function Attrs: nounwind
+
 declare double @pow(double, double) #0
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #2
 
 attributes #0 = { nounwind "disable-tail-calls"="false" "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "target-cpu"="ppc64le" "target-features"="+altivec,+bpermd,+crypto,+direct-move,+extdiv,+power8-vector,+vsx,-qpx" "unsafe-fp-math"="false" "use-soft-float"="false" }

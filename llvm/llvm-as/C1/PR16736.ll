@@ -1,18 +1,18 @@
-; RUN: llc -filetype=asm < %s | FileCheck %s
-; CHECK: @DEBUG_VALUE: h:x <- [R{{.*}}+{{.*}}]
-; generated from:
-; clang -cc1 -triple  thumbv7 -S -O1 arm.cpp  -g
-;
-; int f();
-; void g(float);
-; void h(int, int, int, int, float x) {
-;    g(x = f());
-; }
-;
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:64:128-a0:0:32-n32-S64"
 target triple = "thumbv7-apple-ios"
 
-; Function Attrs: nounwind
+
 define arm_aapcscc void @_Z1hiiiif(i32, i32, i32, i32, float %x) #0 {
 entry:
   tail call void @llvm.dbg.value(metadata i32 %0, i64 0, metadata !12, metadata !DIExpression()), !dbg !18
@@ -31,7 +31,7 @@ declare arm_aapcscc void @_Z1gf(float)
 
 declare arm_aapcscc i32 @_Z1fv()
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #2
 
 attributes #0 = { nounwind  }

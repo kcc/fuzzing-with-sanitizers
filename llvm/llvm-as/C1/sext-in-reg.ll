@@ -1,11 +1,11 @@
-; RUN: llc < %s -march=nvptx -mcpu=sm_20 | FileCheck %s
+
 
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v16:16:16-v32:32:32-v64:64:64-v128:128:128-n16:32:64"
 
 
 define void @one(i64 %a, i64 %b, i64* %p1, i64* %p2) {
-; CHECK: cvt.s64.s8
-; CHECK: cvt.s64.s8
+
+
 entry:
   %sext = shl i64 %a, 56
   %conv1 = ashr exact i64 %sext, 56
@@ -23,8 +23,8 @@ entry:
 
 define void @two(i64 %a, i64 %b, i64* %p1, i64* %p2) {
 entry:
-; CHECK: cvt.s64.s32
-; CHECK: cvt.s64.s32
+
+
   %sext = shl i64 %a, 32
   %conv1 = ashr exact i64 %sext, 32
   %sext1 = shl i64 %b, 32
@@ -41,8 +41,8 @@ entry:
 
 define void @three(i64 %a, i64 %b, i64* %p1, i64* %p2) {
 entry:
-; CHECK: cvt.s64.s16
-; CHECK: cvt.s64.s16
+
+
   %sext = shl i64 %a, 48
   %conv1 = ashr exact i64 %sext, 48
   %sext1 = shl i64 %b, 48
@@ -59,8 +59,8 @@ entry:
 
 define void @four(i32 %a, i32 %b, i32* %p1, i32* %p2) {
 entry:
-; CHECK: cvt.s32.s8
-; CHECK: cvt.s32.s8
+
+
   %sext = shl i32 %a, 24
   %conv1 = ashr exact i32 %sext, 24
   %sext1 = shl i32 %b, 24
@@ -77,8 +77,8 @@ entry:
 
 define void @five(i32 %a, i32 %b, i32* %p1, i32* %p2) {
 entry:
-; CHECK: cvt.s32.s16
-; CHECK: cvt.s32.s16
+
+
   %sext = shl i32 %a, 16
   %conv1 = ashr exact i32 %sext, 16
   %sext1 = shl i32 %b, 16
@@ -95,8 +95,8 @@ entry:
 
 define void @six(i16 %a, i16 %b, i16* %p1, i16* %p2) {
 entry:
-; CHECK: cvt.s16.s8
-; CHECK: cvt.s16.s8
+
+
   %sext = shl i16 %a, 8
   %conv1 = ashr exact i16 %sext, 8
   %sext1 = shl i16 %b, 8

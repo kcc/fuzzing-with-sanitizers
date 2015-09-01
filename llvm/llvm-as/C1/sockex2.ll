@@ -1,11 +1,11 @@
-; RUN: llc < %s -march=bpfel -show-mc-encoding | FileCheck %s
+
 
 %struct.bpf_map_def = type { i32, i32, i32, i32 }
 %struct.sk_buff = type opaque
 
 @hash_map = global %struct.bpf_map_def { i32 1, i32 4, i32 8, i32 1024 }, section "maps", align 4
 
-; Function Attrs: nounwind uwtable
+
 define i32 @bpf_prog2(%struct.sk_buff* %skb) #0 section "socket2" {
   %key = alloca i32, align 4
   %val = alloca i64, align 8
@@ -14,23 +14,23 @@ define i32 @bpf_prog2(%struct.sk_buff* %skb) #0 section "socket2" {
   %3 = icmp eq i64 %2, 34984
   br i1 %3, label %4, label %6
 
-; <label>:4                                       ; preds = %0
+
   %5 = call i64 @llvm.bpf.load.half(i8* %1, i64 16) #2
   br label %6
 
-; <label>:6                                       ; preds = %4, %0
+
   %proto.0.i = phi i64 [ %5, %4 ], [ %2, %0 ]
   %nhoff.0.i = phi i64 [ 18, %4 ], [ 14, %0 ]
   %7 = icmp eq i64 %proto.0.i, 33024
   br i1 %7, label %8, label %12
 
-; <label>:8                                       ; preds = %6
+
   %9 = add i64 %nhoff.0.i, 2
   %10 = call i64 @llvm.bpf.load.half(i8* %1, i64 %9) #2
   %11 = add i64 %nhoff.0.i, 4
   br label %12
 
-; <label>:12                                      ; preds = %8, %6
+
   %proto.1.i = phi i64 [ %10, %8 ], [ %proto.0.i, %6 ]
   %nhoff.1.i = phi i64 [ %11, %8 ], [ %nhoff.0.i, %6 ]
   switch i64 %proto.1.i, label %flow_dissector.exit.thread [
@@ -38,20 +38,20 @@ define i32 @bpf_prog2(%struct.sk_buff* %skb) #0 section "socket2" {
     i64 34525, label %39
   ]
 
-; <label>:13                                      ; preds = %12
+
   %14 = add i64 %nhoff.1.i, 6
   %15 = call i64 @llvm.bpf.load.half(i8* %1, i64 %14) #2
   %16 = and i64 %15, 16383
   %17 = icmp eq i64 %16, 0
   br i1 %17, label %18, label %.thread.i.i
 
-; <label>:18                                      ; preds = %13
+
   %19 = add i64 %nhoff.1.i, 9
   %20 = call i64 @llvm.bpf.load.byte(i8* %1, i64 %19) #2
   %21 = icmp eq i64 %20, 47
   br i1 %21, label %28, label %.thread.i.i
 
-.thread.i.i:                                      ; preds = %18, %13
+.thread.i.i:                                      
   %22 = phi i64 [ %20, %18 ], [ 0, %13 ]
   %23 = add i64 %nhoff.1.i, 12
   %24 = call i64 @llvm.bpf.load.word(i8* %1, i64 %23) #2
@@ -60,24 +60,24 @@ define i32 @bpf_prog2(%struct.sk_buff* %skb) #0 section "socket2" {
   %27 = trunc i64 %26 to i32
   br label %28
 
-; <label>:28                                      ; preds = %.thread.i.i, %18
+
   %29 = phi i32 [ %27, %.thread.i.i ], [ undef, %18 ]
   %30 = phi i64 [ %22, %.thread.i.i ], [ 47, %18 ]
   %31 = call i64 @llvm.bpf.load.byte(i8* %1, i64 %nhoff.1.i) #2
   %32 = icmp eq i64 %31, 69
   br i1 %32, label %33, label %35
 
-; <label>:33                                      ; preds = %28
+
   %34 = add i64 %nhoff.1.i, 20
   br label %parse_ip.exit.i
 
-; <label>:35                                      ; preds = %28
+
   %36 = shl i64 %31, 2
   %37 = and i64 %36, 60
   %38 = add i64 %37, %nhoff.1.i
   br label %parse_ip.exit.i
 
-; <label>:39                                      ; preds = %12
+
   %40 = add i64 %nhoff.1.i, 6
   %41 = call i64 @llvm.bpf.load.byte(i8* %1, i64 %40) #2
   %42 = add i64 %nhoff.1.i, 8
@@ -103,7 +103,7 @@ define i32 @bpf_prog2(%struct.sk_buff* %skb) #0 section "socket2" {
   %62 = add i64 %nhoff.1.i, 40
   br label %parse_ip.exit.i
 
-parse_ip.exit.i:                                  ; preds = %39, %35, %33
+parse_ip.exit.i:                                  
   %63 = phi i32 [ %61, %39 ], [ %29, %33 ], [ %29, %35 ]
   %64 = phi i64 [ %41, %39 ], [ %30, %33 ], [ %30, %35 ]
   %nhoff.2.i = phi i64 [ %62, %39 ], [ %34, %33 ], [ %38, %35 ]
@@ -113,7 +113,7 @@ parse_ip.exit.i:                                  ; preds = %39, %35, %33
     i64 41, label %163
   ]
 
-; <label>:65                                      ; preds = %parse_ip.exit.i
+
   %66 = call i64 @llvm.bpf.load.half(i8* %1, i64 %nhoff.2.i) #2
   %67 = add i64 %nhoff.2.i, 2
   %68 = call i64 @llvm.bpf.load.half(i8* %1, i64 %67) #2
@@ -121,7 +121,7 @@ parse_ip.exit.i:                                  ; preds = %39, %35, %33
   %70 = icmp eq i64 %69, 0
   br i1 %70, label %71, label %187
 
-; <label>:71                                      ; preds = %65
+
   %72 = lshr i64 %66, 5
   %73 = and i64 %72, 4
   %74 = add i64 %nhoff.2.i, 4
@@ -137,13 +137,13 @@ parse_ip.exit.i:                                  ; preds = %39, %35, %33
   %81 = icmp eq i64 %68, 33024
   br i1 %81, label %82, label %86
 
-; <label>:82                                      ; preds = %71
+
   %83 = add i64 %nhoff.4..i, 2
   %84 = call i64 @llvm.bpf.load.half(i8* %1, i64 %83) #2
   %85 = add i64 %nhoff.4..i, 4
   br label %86
 
-; <label>:86                                      ; preds = %82, %71
+
   %proto.2.i = phi i64 [ %84, %82 ], [ %68, %71 ]
   %nhoff.6.i = phi i64 [ %85, %82 ], [ %nhoff.4..i, %71 ]
   switch i64 %proto.2.i, label %flow_dissector.exit.thread [
@@ -151,20 +151,20 @@ parse_ip.exit.i:                                  ; preds = %39, %35, %33
     i64 34525, label %113
   ]
 
-; <label>:87                                      ; preds = %86
+
   %88 = add i64 %nhoff.6.i, 6
   %89 = call i64 @llvm.bpf.load.half(i8* %1, i64 %88) #2
   %90 = and i64 %89, 16383
   %91 = icmp eq i64 %90, 0
   br i1 %91, label %92, label %.thread.i4.i
 
-; <label>:92                                      ; preds = %87
+
   %93 = add i64 %nhoff.6.i, 9
   %94 = call i64 @llvm.bpf.load.byte(i8* %1, i64 %93) #2
   %95 = icmp eq i64 %94, 47
   br i1 %95, label %102, label %.thread.i4.i
 
-.thread.i4.i:                                     ; preds = %92, %87
+.thread.i4.i:                                     
   %96 = phi i64 [ %94, %92 ], [ 0, %87 ]
   %97 = add i64 %nhoff.6.i, 12
   %98 = call i64 @llvm.bpf.load.word(i8* %1, i64 %97) #2
@@ -173,24 +173,24 @@ parse_ip.exit.i:                                  ; preds = %39, %35, %33
   %101 = trunc i64 %100 to i32
   br label %102
 
-; <label>:102                                     ; preds = %.thread.i4.i, %92
+
   %103 = phi i32 [ %101, %.thread.i4.i ], [ %63, %92 ]
   %104 = phi i64 [ %96, %.thread.i4.i ], [ 47, %92 ]
   %105 = call i64 @llvm.bpf.load.byte(i8* %1, i64 %nhoff.6.i) #2
   %106 = icmp eq i64 %105, 69
   br i1 %106, label %107, label %109
 
-; <label>:107                                     ; preds = %102
+
   %108 = add i64 %nhoff.6.i, 20
   br label %187
 
-; <label>:109                                     ; preds = %102
+
   %110 = shl i64 %105, 2
   %111 = and i64 %110, 60
   %112 = add i64 %111, %nhoff.6.i
   br label %187
 
-; <label>:113                                     ; preds = %86
+
   %114 = add i64 %nhoff.6.i, 6
   %115 = call i64 @llvm.bpf.load.byte(i8* %1, i64 %114) #2
   %116 = add i64 %nhoff.6.i, 8
@@ -216,20 +216,20 @@ parse_ip.exit.i:                                  ; preds = %39, %35, %33
   %136 = add i64 %nhoff.6.i, 40
   br label %187
 
-; <label>:137                                     ; preds = %parse_ip.exit.i
+
   %138 = add i64 %nhoff.2.i, 6
   %139 = call i64 @llvm.bpf.load.half(i8* %1, i64 %138) #2
   %140 = and i64 %139, 16383
   %141 = icmp eq i64 %140, 0
   br i1 %141, label %142, label %.thread.i1.i
 
-; <label>:142                                     ; preds = %137
+
   %143 = add i64 %nhoff.2.i, 9
   %144 = call i64 @llvm.bpf.load.byte(i8* %1, i64 %143) #2
   %145 = icmp eq i64 %144, 47
   br i1 %145, label %152, label %.thread.i1.i
 
-.thread.i1.i:                                     ; preds = %142, %137
+.thread.i1.i:                                     
   %146 = phi i64 [ %144, %142 ], [ 0, %137 ]
   %147 = add i64 %nhoff.2.i, 12
   %148 = call i64 @llvm.bpf.load.word(i8* %1, i64 %147) #2
@@ -238,24 +238,24 @@ parse_ip.exit.i:                                  ; preds = %39, %35, %33
   %151 = trunc i64 %150 to i32
   br label %152
 
-; <label>:152                                     ; preds = %.thread.i1.i, %142
+
   %153 = phi i32 [ %151, %.thread.i1.i ], [ %63, %142 ]
   %154 = phi i64 [ %146, %.thread.i1.i ], [ 47, %142 ]
   %155 = call i64 @llvm.bpf.load.byte(i8* %1, i64 %nhoff.2.i) #2
   %156 = icmp eq i64 %155, 69
   br i1 %156, label %157, label %159
 
-; <label>:157                                     ; preds = %152
+
   %158 = add i64 %nhoff.2.i, 20
   br label %187
 
-; <label>:159                                     ; preds = %152
+
   %160 = shl i64 %155, 2
   %161 = and i64 %160, 60
   %162 = add i64 %161, %nhoff.2.i
   br label %187
 
-; <label>:163                                     ; preds = %parse_ip.exit.i
+
   %164 = add i64 %nhoff.2.i, 6
   %165 = call i64 @llvm.bpf.load.byte(i8* %1, i64 %164) #2
   %166 = add i64 %nhoff.2.i, 8
@@ -281,7 +281,7 @@ parse_ip.exit.i:                                  ; preds = %39, %35, %33
   %186 = add i64 %nhoff.2.i, 40
   br label %187
 
-; <label>:187                                     ; preds = %163, %159, %157, %113, %109, %107, %65, %parse_ip.exit.i
+
   %188 = phi i32 [ %63, %parse_ip.exit.i ], [ %185, %163 ], [ %63, %65 ], [ %135, %113 ], [ %103, %107 ], [ %103, %109 ], [ %153, %157 ], [ %153, %159 ]
   %189 = phi i64 [ %64, %parse_ip.exit.i ], [ %165, %163 ], [ 47, %65 ], [ %115, %113 ], [ %104, %107 ], [ %104, %109 ], [ %154, %157 ], [ %154, %159 ]
   %nhoff.7.i = phi i64 [ %nhoff.2.i, %parse_ip.exit.i ], [ %186, %163 ], [ %nhoff.2.i, %65 ], [ %136, %113 ], [ %108, %107 ], [ %112, %109 ], [ %158, %157 ], [ %162, %159 ]
@@ -295,27 +295,27 @@ parse_ip.exit.i:                                  ; preds = %39, %35, %33
   %195 = icmp eq i8* %194, null
   br i1 %195, label %199, label %196
 
-; <label>:196                                     ; preds = %187
+
   %197 = bitcast i8* %194 to i64*
   %198 = atomicrmw add i64* %197, i64 1 seq_cst
   br label %flow_dissector.exit.thread
 
-; <label>:199                                     ; preds = %187
+
   store i64 1, i64* %val, align 8
   %200 = bitcast i64* %val to i8*
   %201 = call i32 inttoptr (i64 2 to i32 (i8*, i8*, i8*, i64)*)(i8* bitcast (%struct.bpf_map_def* @hash_map to i8*), i8* %193, i8* %200, i64 0) #2
   br label %flow_dissector.exit.thread
 
-flow_dissector.exit.thread:                       ; preds = %86, %12, %196, %199
+flow_dissector.exit.thread:                       
   ret i32 0
-; CHECK-LABEL: bpf_prog2:
-; CHECK: ldabs_h r0, r6.data + 12 # encoding: [0x28,0x00,0x00,0x00,0x0c,0x00,0x00,0x00]
-; CHECK: ldabs_h r0, r6.data + 16 # encoding: [0x28,0x00,0x00,0x00,0x10,0x00,0x00,0x00]
-; CHECK-NOT: implicit
-; CHECK: ld_64   r1
-; CHECK-NOT: ori
-; CHECK: call 1 # encoding: [0x85,0x00,0x00,0x00,0x01,0x00,0x00,0x00]
-; CHECK: call 2 # encoding: [0x85,0x00,0x00,0x00,0x02,0x00,0x00,0x00]
+
+
+
+
+
+
+
+
 }
 
 declare i64 @llvm.bpf.load.half(i8*, i64) #1

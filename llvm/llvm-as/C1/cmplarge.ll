@@ -1,4 +1,4 @@
-; RUN: llc -march=mipsel -mcpu=mips16 -relocation-model=pic < %s | FileCheck %s -check-prefix=cmp16
+
 
 target datalayout = "e-p:32:32:32-i1:8:8-i8:8:32-i16:16:32-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-n32-S64"
 target triple = "mipsel--linux-gnu"
@@ -16,7 +16,7 @@ entry:
   %cmp6 = icmp sgt i32 %add5, -20
   br i1 %cmp6, label %for.body, label %for.end
 
-for.body:                                         ; preds = %entry, %for.body
+for.body:                                         
   %j.07 = phi i32 [ %inc, %for.body ], [ -20, %entry ]
   %call = tail call i32 bitcast (i32 (...)* @iClip3 to i32 (i32, i32, i32)*)(i32 0, i32 %sub, i32 %j.07) #2
   %inc = add nsw i32 %j.07, 1
@@ -25,12 +25,12 @@ for.body:                                         ; preds = %entry, %for.body
   %cmp = icmp slt i32 %inc, %add
   br i1 %cmp, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void
 }
 
-; cmp16: 	.ent	getSubImagesLuma
-; cmp16:	.end	getSubImagesLuma
+
+
 declare i32 @iClip3(...) #1
 
 attributes #0 = { nounwind "less-precise-fpmad"="false" "no-frame-pointer-elim"="false" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "unsafe-fp-math"="false" "use-soft-float"="false" }

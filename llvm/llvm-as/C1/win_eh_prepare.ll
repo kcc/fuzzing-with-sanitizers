@@ -1,6 +1,6 @@
-; RUN: opt -S -winehprepare -dwarfehprepare -mtriple x86_64-pc-windows-msvc < %s | FileCheck %s
 
-; FIXME: Add and test outlining here.
+
+
 
 declare void @maybe_throw()
 
@@ -40,17 +40,17 @@ define internal i32 @filt_g(i8*, i8*) {
   ret i32 %g
 }
 
-; CHECK-LABEL: define i32 @use_seh()
-; CHECK: invoke void @maybe_throw()
-; CHECK-NEXT: to label %cont unwind label %lpad
-; CHECK: landingpad
-; CHECK-NEXT: cleanup
-; CHECK-NEXT: catch
-; CHECK-NEXT: call i8* (...) @llvm.eh.actions({{.*}})
 
 
-; A MinGW64-ish EH style. It could happen if a binary uses both MSVC CRT and
-; mingw CRT and is linked with LTO.
+
+
+
+
+
+
+
+
+
 define i32 @use_gcc() personality i32 (...)* @__gxx_personality_seh0 {
 entry:
   invoke void @maybe_throw()
@@ -75,8 +75,8 @@ eh.resume:
   resume { i8*, i32 } %ehvals
 }
 
-; CHECK-LABEL: define i32 @use_gcc()
-; CHECK: invoke void @maybe_throw()
-; CHECK-NEXT: to label %cont unwind label %lpad
-; CHECK: eh.resume:
-; CHECK: call void @_Unwind_Resume(i8* %exn.obj)
+
+
+
+
+

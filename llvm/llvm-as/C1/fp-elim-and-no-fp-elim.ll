@@ -1,8 +1,8 @@
-; RUN: llc < %s -mtriple x86_64-apple-darwin | FileCheck %s
+
 
 define void @bar(i32 %argc) #0 {
-; CHECK-LABEL: bar:
-; CHECK: pushq %rbp
+
+
 entry:
   %conv = sitofp i32 %argc to double
   %mul = fmul double %conv, 3.792700e+01
@@ -14,8 +14,8 @@ entry:
 }
 
 define void @qux(i32 %argc) #1 {
-; CHECK-LABEL: qux:
-; CHECK-NOT: pushq %rbp
+
+
 entry:
   %conv = sitofp i32 %argc to double
   %mul = fmul double %conv, 3.792700e+01

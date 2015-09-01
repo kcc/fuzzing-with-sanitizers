@@ -1,13 +1,13 @@
-; RUN: llc -march=amdgcn -verify-machineinstrs < %s | FileCheck -check-prefix=GCN -check-prefix=SI %s
+
 
 declare i32 @llvm.r600.read.tidig.x() #0
 
-; --------------------------------------------------------------------------------
-; i32 compares
-; --------------------------------------------------------------------------------
 
-; GCN-LABEL: {{^}}commute_eq_64_i32:
-; GCN: v_cmp_eq_i32_e32 vcc, 64, v{{[0-9]+}}
+
+
+
+
+
 define void @commute_eq_64_i32(i32 addrspace(1)* %out, i32 addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr i32, i32 addrspace(1)* %in, i32 %tid
@@ -19,8 +19,8 @@ define void @commute_eq_64_i32(i32 addrspace(1)* %out, i32 addrspace(1)* %in) #1
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_ne_64_i32:
-; GCN: v_cmp_ne_i32_e32 vcc, 64, v{{[0-9]+}}
+
+
 define void @commute_ne_64_i32(i32 addrspace(1)* %out, i32 addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr i32, i32 addrspace(1)* %in, i32 %tid
@@ -32,10 +32,10 @@ define void @commute_ne_64_i32(i32 addrspace(1)* %out, i32 addrspace(1)* %in) #1
   ret void
 }
 
-; FIXME: Why isn't this being folded as a constant?
-; GCN-LABEL: {{^}}commute_ne_litk_i32:
-; GCN: v_mov_b32_e32 [[K:v[0-9]+]], 0x3039
-; GCN: v_cmp_ne_i32_e32 vcc, [[K]], v{{[0-9]+}}
+
+
+
+
 define void @commute_ne_litk_i32(i32 addrspace(1)* %out, i32 addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr i32, i32 addrspace(1)* %in, i32 %tid
@@ -47,8 +47,8 @@ define void @commute_ne_litk_i32(i32 addrspace(1)* %out, i32 addrspace(1)* %in) 
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_ugt_64_i32:
-; GCN: v_cmp_lt_u32_e32 vcc, 64, v{{[0-9]+}}
+
+
 define void @commute_ugt_64_i32(i32 addrspace(1)* %out, i32 addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr i32, i32 addrspace(1)* %in, i32 %tid
@@ -60,8 +60,8 @@ define void @commute_ugt_64_i32(i32 addrspace(1)* %out, i32 addrspace(1)* %in) #
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_uge_64_i32:
-; GCN: v_cmp_lt_u32_e32 vcc, 63, v{{[0-9]+}}
+
+
 define void @commute_uge_64_i32(i32 addrspace(1)* %out, i32 addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr i32, i32 addrspace(1)* %in, i32 %tid
@@ -73,8 +73,8 @@ define void @commute_uge_64_i32(i32 addrspace(1)* %out, i32 addrspace(1)* %in) #
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_ult_64_i32:
-; GCN: v_cmp_gt_u32_e32 vcc, 64, v{{[0-9]+}}
+
+
 define void @commute_ult_64_i32(i32 addrspace(1)* %out, i32 addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr i32, i32 addrspace(1)* %in, i32 %tid
@@ -86,8 +86,8 @@ define void @commute_ult_64_i32(i32 addrspace(1)* %out, i32 addrspace(1)* %in) #
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_ule_63_i32:
-; GCN: v_cmp_gt_u32_e32 vcc, 64, v{{[0-9]+}}
+
+
 define void @commute_ule_63_i32(i32 addrspace(1)* %out, i32 addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr i32, i32 addrspace(1)* %in, i32 %tid
@@ -99,11 +99,11 @@ define void @commute_ule_63_i32(i32 addrspace(1)* %out, i32 addrspace(1)* %in) #
   ret void
 }
 
-; FIXME: Undo canonicalization to gt (x + 1) since it doesn't use the inline imm
 
-; GCN-LABEL: {{^}}commute_ule_64_i32:
-; GCN: v_mov_b32_e32 [[K:v[0-9]+]], 0x41{{$}}
-; GCN: v_cmp_gt_u32_e32 vcc, [[K]], v{{[0-9]+}}
+
+
+
+
 define void @commute_ule_64_i32(i32 addrspace(1)* %out, i32 addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr i32, i32 addrspace(1)* %in, i32 %tid
@@ -115,8 +115,8 @@ define void @commute_ule_64_i32(i32 addrspace(1)* %out, i32 addrspace(1)* %in) #
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_sgt_neg1_i32:
-; GCN: v_cmp_lt_i32_e32 vcc, -1, v{{[0-9]+}}
+
+
 define void @commute_sgt_neg1_i32(i32 addrspace(1)* %out, i32 addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr i32, i32 addrspace(1)* %in, i32 %tid
@@ -128,8 +128,8 @@ define void @commute_sgt_neg1_i32(i32 addrspace(1)* %out, i32 addrspace(1)* %in)
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_sge_neg2_i32:
-; GCN: v_cmp_lt_i32_e32 vcc, -3, v{{[0-9]+}}
+
+
 define void @commute_sge_neg2_i32(i32 addrspace(1)* %out, i32 addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr i32, i32 addrspace(1)* %in, i32 %tid
@@ -141,8 +141,8 @@ define void @commute_sge_neg2_i32(i32 addrspace(1)* %out, i32 addrspace(1)* %in)
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_slt_neg16_i32:
-; GCN: v_cmp_gt_i32_e32 vcc, -16, v{{[0-9]+}}
+
+
 define void @commute_slt_neg16_i32(i32 addrspace(1)* %out, i32 addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr i32, i32 addrspace(1)* %in, i32 %tid
@@ -154,8 +154,8 @@ define void @commute_slt_neg16_i32(i32 addrspace(1)* %out, i32 addrspace(1)* %in
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_sle_5_i32:
-; GCN: v_cmp_gt_i32_e32 vcc, 6, v{{[0-9]+}}
+
+
 define void @commute_sle_5_i32(i32 addrspace(1)* %out, i32 addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr i32, i32 addrspace(1)* %in, i32 %tid
@@ -167,12 +167,12 @@ define void @commute_sle_5_i32(i32 addrspace(1)* %out, i32 addrspace(1)* %in) #1
   ret void
 }
 
-; --------------------------------------------------------------------------------
-; i64 compares
-; --------------------------------------------------------------------------------
 
-; GCN-LABEL: {{^}}commute_eq_64_i64:
-; GCN: v_cmp_eq_i64_e32 vcc, 64, v{{\[[0-9]+:[0-9]+\]}}
+
+
+
+
+
 define void @commute_eq_64_i64(i32 addrspace(1)* %out, i64 addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr i64, i64 addrspace(1)* %in, i32 %tid
@@ -184,8 +184,8 @@ define void @commute_eq_64_i64(i32 addrspace(1)* %out, i64 addrspace(1)* %in) #1
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_ne_64_i64:
-; GCN: v_cmp_ne_i64_e32 vcc, 64, v{{\[[0-9]+:[0-9]+\]}}
+
+
 define void @commute_ne_64_i64(i32 addrspace(1)* %out, i64 addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr i64, i64 addrspace(1)* %in, i32 %tid
@@ -197,8 +197,8 @@ define void @commute_ne_64_i64(i32 addrspace(1)* %out, i64 addrspace(1)* %in) #1
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_ugt_64_i64:
-; GCN: v_cmp_lt_u64_e32 vcc, 64, v{{\[[0-9]+:[0-9]+\]}}
+
+
 define void @commute_ugt_64_i64(i32 addrspace(1)* %out, i64 addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr i64, i64 addrspace(1)* %in, i32 %tid
@@ -210,8 +210,8 @@ define void @commute_ugt_64_i64(i32 addrspace(1)* %out, i64 addrspace(1)* %in) #
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_uge_64_i64:
-; GCN: v_cmp_lt_u64_e32 vcc, 63, v{{\[[0-9]+:[0-9]+\]}}
+
+
 define void @commute_uge_64_i64(i32 addrspace(1)* %out, i64 addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr i64, i64 addrspace(1)* %in, i32 %tid
@@ -223,8 +223,8 @@ define void @commute_uge_64_i64(i32 addrspace(1)* %out, i64 addrspace(1)* %in) #
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_ult_64_i64:
-; GCN: v_cmp_gt_u64_e32 vcc, 64, v{{\[[0-9]+:[0-9]+\]}}
+
+
 define void @commute_ult_64_i64(i32 addrspace(1)* %out, i64 addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr i64, i64 addrspace(1)* %in, i32 %tid
@@ -236,8 +236,8 @@ define void @commute_ult_64_i64(i32 addrspace(1)* %out, i64 addrspace(1)* %in) #
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_ule_63_i64:
-; GCN: v_cmp_gt_u64_e32 vcc, 64, v{{\[[0-9]+:[0-9]+\]}}
+
+
 define void @commute_ule_63_i64(i32 addrspace(1)* %out, i64 addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr i64, i64 addrspace(1)* %in, i32 %tid
@@ -249,11 +249,11 @@ define void @commute_ule_63_i64(i32 addrspace(1)* %out, i64 addrspace(1)* %in) #
   ret void
 }
 
-; FIXME: Undo canonicalization to gt (x + 1) since it doesn't use the inline imm
 
-; GCN-LABEL: {{^}}commute_ule_64_i64:
-; GCN-DAG: s_movk_i32 s[[KLO:[0-9]+]], 0x41{{$}}
-; GCN: v_cmp_gt_u64_e32 vcc, s{{\[}}[[KLO]]:{{[0-9]+\]}}, v{{\[[0-9]+:[0-9]+\]}}
+
+
+
+
 define void @commute_ule_64_i64(i32 addrspace(1)* %out, i64 addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr i64, i64 addrspace(1)* %in, i32 %tid
@@ -265,8 +265,8 @@ define void @commute_ule_64_i64(i32 addrspace(1)* %out, i64 addrspace(1)* %in) #
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_sgt_neg1_i64:
-; GCN: v_cmp_lt_i64_e32 vcc, -1, v{{\[[0-9]+:[0-9]+\]}}
+
+
 define void @commute_sgt_neg1_i64(i32 addrspace(1)* %out, i64 addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr i64, i64 addrspace(1)* %in, i32 %tid
@@ -278,8 +278,8 @@ define void @commute_sgt_neg1_i64(i32 addrspace(1)* %out, i64 addrspace(1)* %in)
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_sge_neg2_i64:
-; GCN: v_cmp_lt_i64_e32 vcc, -3, v{{\[[0-9]+:[0-9]+\]}}
+
+
 define void @commute_sge_neg2_i64(i32 addrspace(1)* %out, i64 addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr i64, i64 addrspace(1)* %in, i32 %tid
@@ -291,8 +291,8 @@ define void @commute_sge_neg2_i64(i32 addrspace(1)* %out, i64 addrspace(1)* %in)
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_slt_neg16_i64:
-; GCN: v_cmp_gt_i64_e32 vcc, -16, v{{\[[0-9]+:[0-9]+\]}}
+
+
 define void @commute_slt_neg16_i64(i32 addrspace(1)* %out, i64 addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr i64, i64 addrspace(1)* %in, i32 %tid
@@ -304,8 +304,8 @@ define void @commute_slt_neg16_i64(i32 addrspace(1)* %out, i64 addrspace(1)* %in
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_sle_5_i64:
-; GCN: v_cmp_gt_i64_e32 vcc, 6, v{{\[[0-9]+:[0-9]+\]}}
+
+
 define void @commute_sle_5_i64(i32 addrspace(1)* %out, i64 addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr i64, i64 addrspace(1)* %in, i32 %tid
@@ -317,13 +317,13 @@ define void @commute_sle_5_i64(i32 addrspace(1)* %out, i64 addrspace(1)* %in) #1
   ret void
 }
 
-; --------------------------------------------------------------------------------
-; f32 compares
-; --------------------------------------------------------------------------------
 
 
-; GCN-LABEL: {{^}}commute_oeq_2.0_f32:
-; GCN: v_cmp_eq_f32_e32 vcc, 2.0, v{{[0-9]+}}
+
+
+
+
+
 define void @commute_oeq_2.0_f32(i32 addrspace(1)* %out, float addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr float, float addrspace(1)* %in, i32 %tid
@@ -336,8 +336,8 @@ define void @commute_oeq_2.0_f32(i32 addrspace(1)* %out, float addrspace(1)* %in
 }
 
 
-; GCN-LABEL: {{^}}commute_ogt_2.0_f32:
-; GCN: v_cmp_lt_f32_e32 vcc, 2.0, v{{[0-9]+}}
+
+
 define void @commute_ogt_2.0_f32(i32 addrspace(1)* %out, float addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr float, float addrspace(1)* %in, i32 %tid
@@ -349,8 +349,8 @@ define void @commute_ogt_2.0_f32(i32 addrspace(1)* %out, float addrspace(1)* %in
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_oge_2.0_f32:
-; GCN: v_cmp_le_f32_e32 vcc, 2.0, v{{[0-9]+}}
+
+
 define void @commute_oge_2.0_f32(i32 addrspace(1)* %out, float addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr float, float addrspace(1)* %in, i32 %tid
@@ -362,8 +362,8 @@ define void @commute_oge_2.0_f32(i32 addrspace(1)* %out, float addrspace(1)* %in
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_olt_2.0_f32:
-; GCN: v_cmp_gt_f32_e32 vcc, 2.0, v{{[0-9]+}}
+
+
 define void @commute_olt_2.0_f32(i32 addrspace(1)* %out, float addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr float, float addrspace(1)* %in, i32 %tid
@@ -375,8 +375,8 @@ define void @commute_olt_2.0_f32(i32 addrspace(1)* %out, float addrspace(1)* %in
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_ole_2.0_f32:
-; GCN: v_cmp_ge_f32_e32 vcc, 2.0, v{{[0-9]+}}
+
+
 define void @commute_ole_2.0_f32(i32 addrspace(1)* %out, float addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr float, float addrspace(1)* %in, i32 %tid
@@ -388,8 +388,8 @@ define void @commute_ole_2.0_f32(i32 addrspace(1)* %out, float addrspace(1)* %in
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_one_2.0_f32:
-; GCN: v_cmp_lg_f32_e32 vcc, 2.0, v{{[0-9]+}}
+
+
 define void @commute_one_2.0_f32(i32 addrspace(1)* %out, float addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr float, float addrspace(1)* %in, i32 %tid
@@ -401,8 +401,8 @@ define void @commute_one_2.0_f32(i32 addrspace(1)* %out, float addrspace(1)* %in
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_ord_2.0_f32:
-; GCN: v_cmp_o_f32_e32 vcc, [[REG:v[0-9]+]], [[REG]]
+
+
 define void @commute_ord_2.0_f32(i32 addrspace(1)* %out, float addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr float, float addrspace(1)* %in, i32 %tid
@@ -414,8 +414,8 @@ define void @commute_ord_2.0_f32(i32 addrspace(1)* %out, float addrspace(1)* %in
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_ueq_2.0_f32:
-; GCN: v_cmp_nlg_f32_e32 vcc, 2.0, v{{[0-9]+}}
+
+
 define void @commute_ueq_2.0_f32(i32 addrspace(1)* %out, float addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr float, float addrspace(1)* %in, i32 %tid
@@ -427,8 +427,8 @@ define void @commute_ueq_2.0_f32(i32 addrspace(1)* %out, float addrspace(1)* %in
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_ugt_2.0_f32:
-; GCN: v_cmp_nge_f32_e32 vcc, 2.0, v{{[0-9]+}}
+
+
 define void @commute_ugt_2.0_f32(i32 addrspace(1)* %out, float addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr float, float addrspace(1)* %in, i32 %tid
@@ -440,8 +440,8 @@ define void @commute_ugt_2.0_f32(i32 addrspace(1)* %out, float addrspace(1)* %in
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_uge_2.0_f32:
-; GCN: v_cmp_ngt_f32_e32 vcc, 2.0, v{{[0-9]+}}
+
+
 define void @commute_uge_2.0_f32(i32 addrspace(1)* %out, float addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr float, float addrspace(1)* %in, i32 %tid
@@ -453,8 +453,8 @@ define void @commute_uge_2.0_f32(i32 addrspace(1)* %out, float addrspace(1)* %in
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_ult_2.0_f32:
-; GCN: v_cmp_nle_f32_e32 vcc, 2.0, v{{[0-9]+}}
+
+
 define void @commute_ult_2.0_f32(i32 addrspace(1)* %out, float addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr float, float addrspace(1)* %in, i32 %tid
@@ -466,8 +466,8 @@ define void @commute_ult_2.0_f32(i32 addrspace(1)* %out, float addrspace(1)* %in
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_ule_2.0_f32:
-; GCN: v_cmp_nlt_f32_e32 vcc, 2.0, v{{[0-9]+}}
+
+
 define void @commute_ule_2.0_f32(i32 addrspace(1)* %out, float addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr float, float addrspace(1)* %in, i32 %tid
@@ -479,8 +479,8 @@ define void @commute_ule_2.0_f32(i32 addrspace(1)* %out, float addrspace(1)* %in
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_une_2.0_f32:
-; GCN: v_cmp_neq_f32_e32 vcc, 2.0, v{{[0-9]+}}
+
+
 define void @commute_une_2.0_f32(i32 addrspace(1)* %out, float addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr float, float addrspace(1)* %in, i32 %tid
@@ -492,8 +492,8 @@ define void @commute_une_2.0_f32(i32 addrspace(1)* %out, float addrspace(1)* %in
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_uno_2.0_f32:
-; GCN: v_cmp_u_f32_e32 vcc, [[REG:v[0-9]+]], [[REG]]
+
+
 define void @commute_uno_2.0_f32(i32 addrspace(1)* %out, float addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr float, float addrspace(1)* %in, i32 %tid
@@ -505,13 +505,13 @@ define void @commute_uno_2.0_f32(i32 addrspace(1)* %out, float addrspace(1)* %in
   ret void
 }
 
-; --------------------------------------------------------------------------------
-; f64 compares
-; --------------------------------------------------------------------------------
 
 
-; GCN-LABEL: {{^}}commute_oeq_2.0_f64:
-; GCN: v_cmp_eq_f64_e32 vcc, 2.0, v{{\[[0-9]+:[0-9]+\]}}
+
+
+
+
+
 define void @commute_oeq_2.0_f64(i32 addrspace(1)* %out, double addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr double, double addrspace(1)* %in, i32 %tid
@@ -524,8 +524,8 @@ define void @commute_oeq_2.0_f64(i32 addrspace(1)* %out, double addrspace(1)* %i
 }
 
 
-; GCN-LABEL: {{^}}commute_ogt_2.0_f64:
-; GCN: v_cmp_lt_f64_e32 vcc, 2.0, v{{\[[0-9]+:[0-9]+\]}}
+
+
 define void @commute_ogt_2.0_f64(i32 addrspace(1)* %out, double addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr double, double addrspace(1)* %in, i32 %tid
@@ -537,8 +537,8 @@ define void @commute_ogt_2.0_f64(i32 addrspace(1)* %out, double addrspace(1)* %i
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_oge_2.0_f64:
-; GCN: v_cmp_le_f64_e32 vcc, 2.0, v{{\[[0-9]+:[0-9]+\]}}
+
+
 define void @commute_oge_2.0_f64(i32 addrspace(1)* %out, double addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr double, double addrspace(1)* %in, i32 %tid
@@ -550,8 +550,8 @@ define void @commute_oge_2.0_f64(i32 addrspace(1)* %out, double addrspace(1)* %i
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_olt_2.0_f64:
-; GCN: v_cmp_gt_f64_e32 vcc, 2.0, v{{\[[0-9]+:[0-9]+\]}}
+
+
 define void @commute_olt_2.0_f64(i32 addrspace(1)* %out, double addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr double, double addrspace(1)* %in, i32 %tid
@@ -563,8 +563,8 @@ define void @commute_olt_2.0_f64(i32 addrspace(1)* %out, double addrspace(1)* %i
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_ole_2.0_f64:
-; GCN: v_cmp_ge_f64_e32 vcc, 2.0, v{{\[[0-9]+:[0-9]+\]}}
+
+
 define void @commute_ole_2.0_f64(i32 addrspace(1)* %out, double addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr double, double addrspace(1)* %in, i32 %tid
@@ -576,8 +576,8 @@ define void @commute_ole_2.0_f64(i32 addrspace(1)* %out, double addrspace(1)* %i
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_one_2.0_f64:
-; GCN: v_cmp_lg_f64_e32 vcc, 2.0, v{{\[[0-9]+:[0-9]+\]}}
+
+
 define void @commute_one_2.0_f64(i32 addrspace(1)* %out, double addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr double, double addrspace(1)* %in, i32 %tid
@@ -589,8 +589,8 @@ define void @commute_one_2.0_f64(i32 addrspace(1)* %out, double addrspace(1)* %i
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_ord_2.0_f64:
-; GCN: v_cmp_o_f64_e32 vcc, [[REG:v\[[0-9]+:[0-9]+\]]], [[REG]]
+
+
 define void @commute_ord_2.0_f64(i32 addrspace(1)* %out, double addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr double, double addrspace(1)* %in, i32 %tid
@@ -602,8 +602,8 @@ define void @commute_ord_2.0_f64(i32 addrspace(1)* %out, double addrspace(1)* %i
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_ueq_2.0_f64:
-; GCN: v_cmp_nlg_f64_e32 vcc, 2.0, v{{\[[0-9]+:[0-9]+\]}}
+
+
 define void @commute_ueq_2.0_f64(i32 addrspace(1)* %out, double addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr double, double addrspace(1)* %in, i32 %tid
@@ -615,8 +615,8 @@ define void @commute_ueq_2.0_f64(i32 addrspace(1)* %out, double addrspace(1)* %i
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_ugt_2.0_f64:
-; GCN: v_cmp_nge_f64_e32 vcc, 2.0, v{{\[[0-9]+:[0-9]+\]}}
+
+
 define void @commute_ugt_2.0_f64(i32 addrspace(1)* %out, double addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr double, double addrspace(1)* %in, i32 %tid
@@ -628,8 +628,8 @@ define void @commute_ugt_2.0_f64(i32 addrspace(1)* %out, double addrspace(1)* %i
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_uge_2.0_f64:
-; GCN: v_cmp_ngt_f64_e32 vcc, 2.0, v{{\[[0-9]+:[0-9]+\]}}
+
+
 define void @commute_uge_2.0_f64(i32 addrspace(1)* %out, double addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr double, double addrspace(1)* %in, i32 %tid
@@ -641,8 +641,8 @@ define void @commute_uge_2.0_f64(i32 addrspace(1)* %out, double addrspace(1)* %i
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_ult_2.0_f64:
-; GCN: v_cmp_nle_f64_e32 vcc, 2.0, v{{\[[0-9]+:[0-9]+\]}}
+
+
 define void @commute_ult_2.0_f64(i32 addrspace(1)* %out, double addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr double, double addrspace(1)* %in, i32 %tid
@@ -654,8 +654,8 @@ define void @commute_ult_2.0_f64(i32 addrspace(1)* %out, double addrspace(1)* %i
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_ule_2.0_f64:
-; GCN: v_cmp_nlt_f64_e32 vcc, 2.0, v{{\[[0-9]+:[0-9]+\]}}
+
+
 define void @commute_ule_2.0_f64(i32 addrspace(1)* %out, double addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr double, double addrspace(1)* %in, i32 %tid
@@ -667,8 +667,8 @@ define void @commute_ule_2.0_f64(i32 addrspace(1)* %out, double addrspace(1)* %i
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_une_2.0_f64:
-; GCN: v_cmp_neq_f64_e32 vcc, 2.0, v{{\[[0-9]+:[0-9]+\]}}
+
+
 define void @commute_une_2.0_f64(i32 addrspace(1)* %out, double addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr double, double addrspace(1)* %in, i32 %tid
@@ -680,8 +680,8 @@ define void @commute_une_2.0_f64(i32 addrspace(1)* %out, double addrspace(1)* %i
   ret void
 }
 
-; GCN-LABEL: {{^}}commute_uno_2.0_f64:
-; GCN: v_cmp_u_f64_e32 vcc, [[REG:v\[[0-9]+:[0-9]+\]]], [[REG]]
+
+
 define void @commute_uno_2.0_f64(i32 addrspace(1)* %out, double addrspace(1)* %in) #1 {
   %tid = call i32 @llvm.r600.read.tidig.x() #0
   %gep.in = getelementptr double, double addrspace(1)* %in, i32 %tid

@@ -1,6 +1,6 @@
-; RUN: opt < %s -analyze -scalar-evolution \
-; RUN:   -scalar-evolution-max-iterations=0 | FileCheck %s
-; PR2621
+
+
+
 
 define i32 @a() nounwind  {
 entry:
@@ -23,5 +23,5 @@ bb2:
 	ret i32 %4
 }
 
-; CHECK: Exits: 20028
+
 

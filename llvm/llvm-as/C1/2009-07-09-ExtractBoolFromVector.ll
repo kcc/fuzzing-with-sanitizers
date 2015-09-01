@@ -1,5 +1,5 @@
-; RUN: llc < %s -march=x86
-; PR3037
+
+
 
 define void @entry(<4 x i8>* %dest) {
 	%1 = xor <4 x i1> zeroinitializer, < i1 true, i1 true, i1 true, i1 true >

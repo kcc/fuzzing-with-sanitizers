@@ -1,10 +1,10 @@
-; RUN: llc < %s -mtriple=x86_64-apple-darwin -mcpu=corei7 | FileCheck %s
 
-; Make sure that values of illegal types are not scalarized between basic blocks.
-;CHECK-LABEL: test:
-;CHECK-NOT: pinsrw
-;CHECK-NOT: pextrb
-;CHECK: ret
+
+
+
+
+
+
 define void @test(i1 %cond) {
 ENTRY:
   br label %LOOP

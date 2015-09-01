@@ -1,7 +1,7 @@
-; RUN: llc -mtriple=arm-eabi -arm-atomic-cfg-tidy=0 -mattr=+v6,+vfp2 %s -o - | FileCheck %s
 
-@i = weak global i32 0		; <i32*> [#uses=2]
-@u = weak global i32 0		; <i32*> [#uses=2]
+
+@i = weak global i32 0		
+@u = weak global i32 0		
 
 define i32 @foo1(float *%x) {
         %tmp1 = load float, float* %x
@@ -44,6 +44,6 @@ define void @foo9(double %x) {
 	store i16 %tmp, i16* null
 	ret void
 }
-; CHECK-LABEL: foo9:
-; CHECK: 	vmov	r0, s0
+
+
 

@@ -1,5 +1,5 @@
-; RUN: llc -march=hexagon -filetype=obj %s -o - \
-; RUN: | llvm-objdump -d - | FileCheck %s
+
+
 
 define i32 @foo (i16 %a)
 {
@@ -7,4 +7,4 @@ define i32 @foo (i16 %a)
   ret i32 %1
 }
 
-; CHECK: c0 3f 00 56 56003fc0
+

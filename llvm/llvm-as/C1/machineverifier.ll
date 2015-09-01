@@ -1,6 +1,6 @@
-; RUN: llc < %s -march=mipsel -verify-machineinstrs
-; Make sure machine verifier understands the last instruction of a basic block
-; is not the terminator instruction after delay slot filler pass is run.
+
+
+
 
 @g = external global i32
 
@@ -10,12 +10,12 @@ entry:
   %tobool = icmp eq i32 %0, 0
   br i1 %tobool, label %if.end, label %if.then
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %add = add nsw i32 %0, 10
   store i32 %add, i32* @g, align 4
   br label %if.end
 
-if.end:                                           ; preds = %entry, %if.then
+if.end:                                           
   ret void
 }
 

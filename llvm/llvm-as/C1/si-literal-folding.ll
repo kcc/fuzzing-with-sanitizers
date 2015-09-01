@@ -1,8 +1,8 @@
-; XFAIL: *
-; RUN: llc -march=amdgcn -mcpu=SI -verify-machineinstrs < %s | FileCheck %s
 
-; CHECK-LABEL: {{^}}main:
-; CHECK-NOT: v_mov_b32_e32 v{{[0-9]+}}, 0xbf4353f8
+
+
+
+
 
 define void @main(float) #0 {
 main_body:

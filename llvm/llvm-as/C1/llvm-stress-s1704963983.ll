@@ -1,11 +1,11 @@
-; RUN: llc -march=mips < %s
-; RUN: llc -march=mips -mattr=+msa,+fp64 < %s
-; RUN: llc -march=mipsel < %s
-; RUN: llc -march=mipsel -mattr=+msa,+fp64 < %s
 
-; This test originally failed for MSA with a
-; "Unexpected illegal type!" assertion.
-; It should at least successfully build.
+
+
+
+
+
+
+
 
 define void @autogen_SD1704963983(i8*, i32*, i64*, i32, i64, i8) {
 BB:
@@ -23,7 +23,7 @@ BB:
   %Cmp = icmp eq i32 434069, 272505
   br label %CF
 
-CF:                                               ; preds = %CF, %CF78, %BB
+CF:                                               
   %L5 = load i8, i8* %Sl
   store i8 %L, i8* %Sl
   %E6 = extractelement <8 x i32> zeroinitializer, i32 2
@@ -53,13 +53,13 @@ CF:                                               ; preds = %CF, %CF78, %BB
   %Cmp25 = icmp ugt i32 465489, 47533
   br i1 %Cmp25, label %CF, label %CF78
 
-CF78:                                             ; preds = %CF
+CF78:                                             
   %L26 = load i8, i8* %Sl
   store i32 50347, i32* %A
   %E27 = extractelement <8 x i1> %Cmp10, i32 2
   br i1 %E27, label %CF, label %CF77
 
-CF77:                                             ; preds = %CF77, %CF81, %CF78
+CF77:                                             
   %Shuff28 = shufflevector <8 x i64> zeroinitializer, <8 x i64> %Shuff, <8 x i32> <i32 13, i32 15, i32 1, i32 3, i32 5, i32 7, i32 9, i32 undef>
   %I29 = insertelement <1 x i16> zeroinitializer, i16 -1, i32 0
   %B30 = urem <8 x i32> %Tr, zeroinitializer
@@ -84,7 +84,7 @@ CF77:                                             ; preds = %CF77, %CF81, %CF78
   %Cmp46 = fcmp ugt float 0xB856238A00000000, 0x47DA795E40000000
   br i1 %Cmp46, label %CF77, label %CF80
 
-CF80:                                             ; preds = %CF80, %CF77
+CF80:                                             
   %L47 = load i64, i64* %PC
   store i8 77, i8* %Sl
   %E48 = extractelement <8 x i64> zeroinitializer, i32 2
@@ -96,7 +96,7 @@ CF80:                                             ; preds = %CF80, %CF77
   %Cmp54 = fcmp ole float 0x47DA795E40000000, 0xB856238A00000000
   br i1 %Cmp54, label %CF80, label %CF81
 
-CF81:                                             ; preds = %CF80
+CF81:                                             
   %L55 = load i8, i8* %Sl
   store i8 %Sl16, i8* %Sl
   %E56 = extractelement <1 x i16> %B, i32 0
@@ -116,7 +116,7 @@ CF81:                                             ; preds = %CF80
   %Cmp69 = fcmp ord double 0.000000e+00, 0.000000e+00
   br i1 %Cmp69, label %CF77, label %CF79
 
-CF79:                                             ; preds = %CF81
+CF79:                                             
   %L70 = load i32, i32* %A
   store i64 %4, i64* %PC
   %E71 = extractelement <4 x i32> zeroinitializer, i32 0

@@ -1,4 +1,4 @@
-; RUN: opt < %s -basicaa -slp-vectorizer -dce -S -mtriple=x86_64-apple-macosx10.8.0 -mcpu=corei7
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.8.0"
@@ -41,16 +41,16 @@ cond.false57:
   %call59 = invoke double bitcast (i8* (i8*, i8*, ...)* @objc_msgSend to double (i8*, i8*)*)(i8* undef, i8* undef)
           to label %cond.end60 unwind label %lpad
 
-; Make sure we don't vectorize these phis - they have invokes as inputs.
 
-; RUN: opt < %s -slp-vectorizer -S -mtriple=x86_64-apple-macosx10.8.0 -mcpu=corei7 | FileCheck %s
 
-; CHECK-LABEL: invoketest
 
-; CHECK-LABEL: cond.end60
-; CHECK-NEXT-NOT: phi <2 x double>
-; CHECK: insertelement
-; CHECK-LABEL: if.then63
+
+
+
+
+
+
+
 
 cond.end60:
   %cond126 = phi double [ %call49, %cond.true54 ], [ %call51, %cond.false57 ]

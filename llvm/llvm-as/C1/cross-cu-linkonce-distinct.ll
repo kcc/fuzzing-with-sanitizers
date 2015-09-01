@@ -1,54 +1,54 @@
-; REQUIRES: object-emission
 
-; RUN: %llc_dwarf -O0 -filetype=obj < %s | llvm-dwarfdump -debug-dump=info - | FileCheck %s
 
-; Testing that two distinct (distinct by writing them in separate files, while
-; still fulfilling C++'s ODR by having identical token sequences) functions,
-; linked under LTO, get plausible debug info (and don't crash).
 
-; Built from source:
-; $ clang++ a.cpp b.cpp -g -c -emit-llvm
-; $ llvm-link a.bc b.bc -o ab.bc
 
-; This change is intended to tickle a case where the subprogram MDNode
-; associated with the llvm::Function will differ from the subprogram
-; referenced by the DbgLocs in the function.
 
-; $ sed -ie "s/!12, !0/!0, !12/" ab.ll
-; $ cat a.cpp
-; inline int func(int i) {
-;   return i * 2;
-; }
-; int (*x)(int) = &func;
-; $ cat b.cpp
-; inline int func(int i) {
-;   return i * 2;
-; }
-; int (*y)(int) = &func;
 
-; CHECK: DW_TAG_compile_unit
-; CHECK:   DW_TAG_subprogram
-; CHECK-NOT: DW_TAG
-; CHECK:     DW_AT_name {{.*}} "func"
-; CHECK: DW_TAG_compile_unit
 
-; FIXME: Maybe we should drop the subprogram here - since the function was
-; emitted in one CU, due to linkonce_odr uniquing. We certainly don't emit the
-; subprogram here if the source location for this definition is the same (see
-; test/DebugInfo/cross-cu-linkonce.ll), though it's very easy to tickle that
-; into failing even without duplicating the source as has been done in this
-; case (two cpp files in different directories, including the same header that
-; contains an inline function - clang will produce distinct subprogram metadata
-; that won't deduplicate owing to the file location information containing the
-; directory of the source file even though the file name is absolute, not
-; relative)
 
-; CHECK: DW_TAG_subprogram
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @x = global i32 (i32)* @_Z4funci, align 8
 @y = global i32 (i32)* @_Z4funci, align 8
 
-; Function Attrs: inlinehint nounwind uwtable
+
 define linkonce_odr i32 @_Z4funci(i32 %i) #0 {
   %1 = alloca i32, align 4
   store i32 %i, i32* %1, align 4
@@ -58,7 +58,7 @@ define linkonce_odr i32 @_Z4funci(i32 %i) #0 {
   ret i32 %3, !dbg !24
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
 attributes #0 = { inlinehint nounwind uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

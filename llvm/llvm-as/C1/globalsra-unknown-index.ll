@@ -1,9 +1,9 @@
-; RUN: opt < %s -globalopt -S > %t
-; RUN: grep "@Y = internal unnamed_addr global \[3 x [%]struct.X\] zeroinitializer" %t
-; RUN: grep load %t | count 6
-; RUN: grep "add i32 [%]a, [%]b" %t | count 3
 
-; globalopt should not sra the global, because it can't see the index.
+
+
+
+
+
 
 %struct.X = type { [3 x i32], [3 x i32] }
 

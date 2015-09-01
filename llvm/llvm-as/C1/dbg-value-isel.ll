@@ -1,9 +1,9 @@
-; RUN: llc < %s | FileCheck %s
+
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64"
 target triple = "x86_64-apple-darwin10.0.0"
-; PR 9879
 
-; CHECK: ##DEBUG_VALUE: tid <-
+
+
 %0 = type { i8*, i8*, i8*, i8*, i32 }
 
 @sgv = internal addrspace(2) constant [1 x i8] zeroinitializer
@@ -18,45 +18,45 @@ entry:
   %1 = extractelement <4 x i32> %0, i32 0
   br label %2
 
-; <label>:2                                       ; preds = %entry
+
   %3 = phi i32 [ %1, %entry ]
   br label %4
 
-; <label>:4                                       ; preds = %2
+
   %5 = phi i32 [ %3, %2 ]
   br label %get_local_id.exit
 
-get_local_id.exit:                                ; preds = %4
+get_local_id.exit:                                
   %6 = phi i32 [ %5, %4 ]
   call void @llvm.dbg.value(metadata i32 %6, i64 0, metadata !10, metadata !DIExpression()), !dbg !12
   %7 = call <4 x i32> @__amdil_get_global_id_int() nounwind, !dbg !12
   %8 = extractelement <4 x i32> %7, i32 0, !dbg !12
   br label %9
 
-; <label>:9                                       ; preds = %get_local_id.exit
+
   %10 = phi i32 [ %8, %get_local_id.exit ]
   br label %11
 
-; <label>:11                                      ; preds = %9
+
   %12 = phi i32 [ %10, %9 ]
   br label %get_global_id.exit
 
-get_global_id.exit:                               ; preds = %11
+get_global_id.exit:                               
   %13 = phi i32 [ %12, %11 ]
   call void @llvm.dbg.value(metadata i32 %13, i64 0, metadata !13, metadata !DIExpression()), !dbg !14
   %14 = call <4 x i32> @__amdil_get_local_size_int() nounwind
   %15 = extractelement <4 x i32> %14, i32 0
   br label %16
 
-; <label>:16                                      ; preds = %get_global_id.exit
+
   %17 = phi i32 [ %15, %get_global_id.exit ]
   br label %18
 
-; <label>:18                                      ; preds = %16
+
   %19 = phi i32 [ %17, %16 ]
   br label %get_local_size.exit
 
-get_local_size.exit:                              ; preds = %18
+get_local_size.exit:                              
   %20 = phi i32 [ %19, %18 ]
   call void @llvm.dbg.value(metadata i32 %20, i64 0, metadata !15, metadata !DIExpression()), !dbg !16
   %tmp5 = add i32 %6, %13, !dbg !17
@@ -64,7 +64,7 @@ get_local_size.exit:                              ; preds = %18
   store i32 %tmp7, i32 addrspace(1)* %ip, align 4, !dbg !17
   br label %return, !dbg !17
 
-return:                                           ; preds = %get_local_size.exit
+return:                                           
   ret void, !dbg !18
 }
 

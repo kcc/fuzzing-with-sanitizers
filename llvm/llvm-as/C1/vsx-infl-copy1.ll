@@ -1,19 +1,19 @@
-; RUN: llc -mcpu=pwr7 < %s | FileCheck %s
+
 target datalayout = "E-m:e-i64:64-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
 
 @ub = external global [1024 x i32], align 4
 @uc = external global [1024 x i32], align 4
 
-; Function Attrs: noinline nounwind
+
 define void @_Z8example9Pj() #0 {
 entry:
   br label %vector.body
 
-; CHECK-LABEL: @_Z8example9Pj
-; CHECK: xxlor
 
-vector.body:                                      ; preds = %vector.body, %entry
+
+
+vector.body:                                      
   %index = phi i64 [ 0, %entry ], [ %index.next, %vector.body ]
   %vec.phi = phi <4 x i32> [ zeroinitializer, %entry ], [ %43, %vector.body ]
   %vec.phi20 = phi <4 x i32> [ zeroinitializer, %entry ], [ %44, %vector.body ]
@@ -114,7 +114,7 @@ vector.body:                                      ; preds = %vector.body, %entry
   %index.next = add i64 %index, 48
   br i1 false, label %middle.block, label %vector.body
 
-middle.block:                                     ; preds = %vector.body
+middle.block:                                     
   %.lcssa112 = phi <4 x i32> [ %53, %vector.body ]
   %.lcssa111 = phi <4 x i32> [ %52, %vector.body ]
   %.lcssa110 = phi <4 x i32> [ %51, %vector.body ]

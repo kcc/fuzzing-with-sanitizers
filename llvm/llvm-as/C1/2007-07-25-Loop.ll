@@ -1,4 +1,4 @@
-; RUN: opt < %s -gvn | llvm-dis
+
 
 	%struct.s_segment_inf = type { float, i32, i16, i16, float, float, i32, float, float }
 
@@ -6,10 +6,10 @@ define void @print_arch(i8* %arch_file, i32 %route_type, i64 %det_routing_arch.0
 entry:
 	br i1 false, label %bb278, label %bb344
 
-bb278:		; preds = %bb278, %entry
+bb278:		
 	br i1 false, label %bb278, label %bb344
 
-bb344:		; preds = %bb278, %entry
-	%tmp38758 = load i16, i16* null, align 2		; <i16> [#uses=0]
+bb344:		
+	%tmp38758 = load i16, i16* null, align 2		
 	ret void
 }

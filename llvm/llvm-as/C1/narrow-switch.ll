@@ -1,12 +1,12 @@
-; RUN: opt < %s -instcombine -S | FileCheck %s
+
 
 target datalayout = "e-m:o-p:32:32-f64:32:64-v64:32:64-v128:32:128-a:0:32-n32-S32"
 
-; CHECK-LABEL: define i32 @positive1
-; CHECK: switch i32
-; CHECK: i32 10, label
-; CHECK: i32 100, label
-; CHECK: i32 1001, label
+
+
+
+
+
 
 define i32 @positive1(i64 %a) {
 entry:
@@ -31,11 +31,11 @@ return:
   ret i32 %retval.0
 }
 
-; CHECK-LABEL: define i32 @negative1
-; CHECK: switch i32
-; CHECK: i32 -10, label
-; CHECK: i32 -100, label
-; CHECK: i32 -1001, label
+
+
+
+
+
 
 define i32 @negative1(i64 %a) {
 entry:
@@ -60,14 +60,14 @@ return:
   ret i32 %retval.0
 }
 
-; Make sure truncating a constant int larger than 64-bit doesn't trigger an
-; assertion.
 
-; CHECK-LABEL: define i32 @trunc72to68
-; CHECK: switch i68
-; CHECK: i68 10, label
-; CHECK: i68 100, label
-; CHECK: i68 1001, label
+
+
+
+
+
+
+
 
 define i32 @trunc72to68(i72 %a) {
 entry:
@@ -92,14 +92,14 @@ return:
   ret i32 %retval.0
 }
 
-; Make sure to avoid assertion crashes and use the type before
-; truncation to generate the sub constant expressions that leads
-; to the recomputed condition.
-;
-; CHECK-LABEL: @trunc64to59
-; CHECK: switch i59
-; CHECK: i59 0, label
-; CHECK: i59 18717182647723699, label
+
+
+
+
+
+
+
+
 
 define void @trunc64to59(i64 %a) {
 entry:

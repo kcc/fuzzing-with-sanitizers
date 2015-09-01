@@ -1,13 +1,13 @@
-; RUN: llc -mtriple=x86_64-apple-darwin < %s -o -
 
-; PR16954
-;
-; Make sure that when we splice off the end of a machine basic block, we include
-; DBG_VALUE MI in the terminator sequence.
+
+
+
+
+
 
 @a = external global { i64, [56 x i8] }, align 32
 
-; Function Attrs: nounwind sspreq
+
 define i32 @_Z18read_response_sizev() #0 {
 entry:
   tail call void @llvm.dbg.value(metadata !22, i64 0, metadata !23, metadata !DIExpression()), !dbg !39
@@ -17,7 +17,7 @@ entry:
   ret i32 %1
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata)
 
 attributes #0 = { sspreq }
@@ -32,7 +32,7 @@ attributes #0 = { sspreq }
 !4 = !DICompositeType(tag: DW_TAG_structure_type, name: "C", line: 19, size: 8, align: 8, file: !1, elements: !5)
 !5 = !{}
 !6 = !{!7}
-!7 = !DIEnumerator(name: "max_frame_size", value: 0) ; [ DW_TAG_enumerator ] [max_frame_size :: 0]
+!7 = !DIEnumerator(name: "max_frame_size", value: 0) 
 !8 = !{!9, !24, !41, !65}
 !9 = distinct !DISubprogram(name: "read_response_size", linkageName: "_Z18read_response_sizev", line: 27, isLocal: false, isDefinition: true, virtualIndex: 6, flags: DIFlagPrototyped, isOptimized: true, scopeLine: 27, file: !1, scope: !10, type: !11, function: i32 ()* @_Z18read_response_sizev, variables: !14)
 !10 = !DIFile(filename: "<unknown>", directory: "/Users/matt/ryan_bug")

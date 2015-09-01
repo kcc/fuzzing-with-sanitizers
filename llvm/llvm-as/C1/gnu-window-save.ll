@@ -1,43 +1,43 @@
-; RUN: llc -filetype=obj -O0 < %s -mtriple sparc64-unknown-linux-gnu | llvm-dwarfdump - | FileCheck %s --check-prefix=SPARC64
-; RUN: llc -filetype=obj -O0 < %s -mtriple sparc-unknown-linux-gnu   | llvm-dwarfdump - | FileCheck %s --check-prefix=SPARC32
-
-; Check for DW_CFA_GNU_Window_save in debug_frame. Also, Ensure that relocations
-; are performed correctly in debug_info.
-
-; SPARC64: file format ELF64-sparc
-
-; SPARC64: .debug_info
-; SPARC64:      DW_TAG_compile_unit
-; SPARC64:        DW_AT_name [DW_FORM_strp] ( .debug_str[0x{{[0-9,A-F,a-f]+}}] = "hello.c")
-; SPARC64:      DW_TAG_subprogram
-; SPARC64:        DW_AT_name [DW_FORM_strp] ( .debug_str[0x{{[0-9,A-F,a-f]+}}] = "main")
-; SPARC64:      DW_TAG_base_type
-; SPARC64:        DW_AT_name [DW_FORM_strp] ( .debug_str[0x{{[0-9,A-F,a-f]+}}] = "int")
-
-; SPARC64: .debug_frame
-; SPARC64:      DW_CFA_def_cfa_register
-; SPARC64-NEXT: DW_CFA_GNU_window_save
-; SPARC64-NEXT: DW_CFA_register
 
 
-; SPARC32: file format ELF32-sparc
 
-; SPARC32: .debug_info
-; SPARC32:      DW_TAG_compile_unit
-; SPARC32:        DW_AT_name [DW_FORM_strp] ( .debug_str[0x{{[0-9,A-F,a-f]+}}] = "hello.c")
-; SPARC32:      DW_TAG_subprogram
-; SPARC32:        DW_AT_name [DW_FORM_strp] ( .debug_str[0x{{[0-9,A-F,a-f]+}}] = "main")
-; SPARC32:      DW_TAG_base_type
-; SPARC32:        DW_AT_name [DW_FORM_strp] ( .debug_str[0x{{[0-9,A-F,a-f]+}}] = "int")
 
-; SPARC32: .debug_frame
-; SPARC32:      DW_CFA_def_cfa_register
-; SPARC32-NEXT: DW_CFA_GNU_window_save
-; SPARC32-NEXT: DW_CFA_register
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @.str = private unnamed_addr constant [14 x i8] c"hello, world\0A\00", align 1
 
-; Function Attrs: nounwind
+
 define signext i32 @main() #0 {
 entry:
   %retval = alloca i32, align 4

@@ -1,5 +1,5 @@
-; RUN: llc < %s -mtriple=thumbv7-apple-darwin9 -mcpu=cortex-a8 | not grep fcpys
-; rdar://7117307
+
+
 
 	%struct.Hosp = type { i32, i32, i32, %struct.List, %struct.List, %struct.List, %struct.List }
 	%struct.List = type { %struct.List*, %struct.Patient*, %struct.List* }
@@ -11,21 +11,21 @@ define void @get_results(%struct.Results* noalias nocapture sret %agg.result, %s
 entry:
 	br i1 undef, label %bb, label %bb6.preheader
 
-bb6.preheader:		; preds = %entry
+bb6.preheader:		
         call void @llvm.memcpy.p0i8.p0i8.i32(i8* undef, i8* undef, i32 12, i32 4, i1 false)
 	br i1 undef, label %bb15, label %bb13
 
-bb:		; preds = %entry
+bb:		
 	ret void
 
-bb13:		; preds = %bb13, %bb6.preheader
-	%0 = fadd float undef, undef		; <float> [#uses=1]
-	%1 = fadd float undef, 1.000000e+00		; <float> [#uses=1]
+bb13:		
+	%0 = fadd float undef, undef		
+	%1 = fadd float undef, 1.000000e+00		
 	br i1 undef, label %bb15, label %bb13
 
-bb15:		; preds = %bb13, %bb6.preheader
-	%r1.0.0.lcssa = phi float [ 0.000000e+00, %bb6.preheader ], [ %1, %bb13 ]		; <float> [#uses=1]
-	%r1.1.0.lcssa = phi float [ undef, %bb6.preheader ], [ %0, %bb13 ]		; <float> [#uses=0]
+bb15:		
+	%r1.0.0.lcssa = phi float [ 0.000000e+00, %bb6.preheader ], [ %1, %bb13 ]		
+	%r1.1.0.lcssa = phi float [ undef, %bb6.preheader ], [ %0, %bb13 ]		
 	store float %r1.0.0.lcssa, float* undef, align 4
 	ret void
 }

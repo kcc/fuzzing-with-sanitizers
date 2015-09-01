@@ -1,65 +1,65 @@
-; RUN: llc %s -filetype=obj -O0 -mtriple=i386-unknown-linux-gnu -dwarf-version=4 -o %t
-; RUN: llvm-dwarfdump %t | FileCheck %s
 
-; From the code:
 
-; debug-loc-offset1.cc
-; int bar (int b) {
-;   return b+4;
-; }
 
-; debug-loc-offset2.cc
-; struct A {
-;   int var;
-;   virtual char foo();
-; };
 
-; void baz(struct A a) {
-;   int z = 2;
-;   if (a.var > 2)
-;     z++;
-;   if (a.foo() == 'a')
-;     z++;
-; }
 
-; Compiled separately for i386-pc-linux-gnu and linked together.
-; This ensures that we have multiple compile units so that we can verify that
-; debug_loc entries are relative to the low_pc of the CU. The loc entry for
-; the byval argument in foo.cpp is in the second CU and so should have
-; an offset relative to that CU rather than from the beginning of the text
-; section.
 
-; Checking that we have two compile units with two sets of high/lo_pc.
-; CHECK: .debug_info contents
-; CHECK: DW_TAG_compile_unit
-; CHECK: DW_AT_low_pc
-; CHECK: DW_AT_high_pc
 
-; CHECK: DW_TAG_compile_unit
-; CHECK: DW_AT_low_pc
-; CHECK: DW_AT_high_pc
 
-; CHECK: DW_TAG_subprogram
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_linkage_name [DW_FORM_strp]{{.*}}"_Z3baz1A"
-; CHECK-NOT: {{DW_TAG|NULL}}
-; CHECK: DW_TAG_formal_parameter
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_location [DW_FORM_sec_offset]   (0x00000000)
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_name [DW_FORM_strp]{{.*}}"a"
 
-; CHECK: DW_TAG_variable
-; CHECK: DW_AT_location [DW_FORM_exprloc]
-; CHECK-NOT: DW_AT_location
 
-; CHECK: .debug_loc contents:
-; CHECK: 0x00000000: Beginning address offset: 0x0000000000000000
-; CHECK:                Ending address offset: 0x0000000000000017
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %struct.A = type { i32 (...)**, i32 }
 
-; Function Attrs: nounwind
+
 define i32 @_Z3bari(i32 %b) #0 {
 entry:
   %b.addr = alloca i32, align 4
@@ -70,7 +70,7 @@ entry:
   ret i32 %add, !dbg !23
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
 define void @_Z3baz1A(%struct.A* %a) #2 {
@@ -84,25 +84,25 @@ entry:
   %cmp = icmp sgt i32 %0, 2, !dbg !28
   br i1 %cmp, label %if.then, label %if.end, !dbg !28
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %1 = load i32, i32* %z, align 4, !dbg !30
   %inc = add nsw i32 %1, 1, !dbg !30
   store i32 %inc, i32* %z, align 4, !dbg !30
   br label %if.end, !dbg !30
 
-if.end:                                           ; preds = %if.then, %entry
+if.end:                                           
   %call = call signext i8 @_ZN1A3fooEv(%struct.A* %a), !dbg !31
   %conv = sext i8 %call to i32, !dbg !31
   %cmp1 = icmp eq i32 %conv, 97, !dbg !31
   br i1 %cmp1, label %if.then2, label %if.end4, !dbg !31
 
-if.then2:                                         ; preds = %if.end
+if.then2:                                         
   %2 = load i32, i32* %z, align 4, !dbg !33
   %inc3 = add nsw i32 %2, 1, !dbg !33
   store i32 %inc3, i32* %z, align 4, !dbg !33
   br label %if.end4, !dbg !33
 
-if.end4:                                          ; preds = %if.then2, %if.end
+if.end4:                                          
   ret void, !dbg !34
 }
 

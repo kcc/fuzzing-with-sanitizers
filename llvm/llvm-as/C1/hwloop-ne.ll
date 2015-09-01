@@ -1,18 +1,18 @@
-; RUN: llc -march=hexagon -mcpu=hexagonv4 -O3 < %s | FileCheck %s
 
 
-; CHECK: test_pos1_ir_ne
-; CHECK: loop0
-; a < b
+
+
+
+
 define void @test_pos1_ir_ne(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 32623, %b
   br i1 %cmp3, label %for.body.lr.ph, label %for.end
 
-for.body.lr.ph:                                   ; preds = %entry
+for.body.lr.ph:                                   
   br label %for.body
 
-for.body:                                         ; preds = %for.body.lr.ph, %for.body
+for.body:                                         
   %i.04 = phi i32 [ 32623, %for.body.lr.ph ], [ %inc, %for.body ]
   %arrayidx = getelementptr inbounds i8, i8* %p, i32 %i.04
   %0 = load i8, i8* %arrayidx, align 1
@@ -24,24 +24,24 @@ for.body:                                         ; preds = %for.body.lr.ph, %fo
   %cmp = icmp ne i32 %inc, %b
   br i1 %cmp, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void
 }
 
 
 
-; CHECK: test_pos2_ir_ne
-; CHECK: loop0
-; a < b
+
+
+
 define void @test_pos2_ir_ne(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 29554, %b
   br i1 %cmp3, label %for.body.lr.ph, label %for.end
 
-for.body.lr.ph:                                   ; preds = %entry
+for.body.lr.ph:                                   
   br label %for.body
 
-for.body:                                         ; preds = %for.body.lr.ph, %for.body
+for.body:                                         
   %i.04 = phi i32 [ 29554, %for.body.lr.ph ], [ %inc, %for.body ]
   %arrayidx = getelementptr inbounds i8, i8* %p, i32 %i.04
   %0 = load i8, i8* %arrayidx, align 1
@@ -53,24 +53,24 @@ for.body:                                         ; preds = %for.body.lr.ph, %fo
   %cmp = icmp ne i32 %inc, %b
   br i1 %cmp, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void
 }
 
 
 
-; CHECK: test_pos4_ir_ne
-; CHECK: loop0
-; a < b
+
+
+
 define void @test_pos4_ir_ne(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 15692, %b
   br i1 %cmp3, label %for.body.lr.ph, label %for.end
 
-for.body.lr.ph:                                   ; preds = %entry
+for.body.lr.ph:                                   
   br label %for.body
 
-for.body:                                         ; preds = %for.body.lr.ph, %for.body
+for.body:                                         
   %i.04 = phi i32 [ 15692, %for.body.lr.ph ], [ %inc, %for.body ]
   %arrayidx = getelementptr inbounds i8, i8* %p, i32 %i.04
   %0 = load i8, i8* %arrayidx, align 1
@@ -82,24 +82,24 @@ for.body:                                         ; preds = %for.body.lr.ph, %fo
   %cmp = icmp ne i32 %inc, %b
   br i1 %cmp, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void
 }
 
 
 
-; CHECK: test_pos8_ir_ne
-; CHECK: loop0
-; a < b
+
+
+
 define void @test_pos8_ir_ne(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 10449, %b
   br i1 %cmp3, label %for.body.lr.ph, label %for.end
 
-for.body.lr.ph:                                   ; preds = %entry
+for.body.lr.ph:                                   
   br label %for.body
 
-for.body:                                         ; preds = %for.body.lr.ph, %for.body
+for.body:                                         
   %i.04 = phi i32 [ 10449, %for.body.lr.ph ], [ %inc, %for.body ]
   %arrayidx = getelementptr inbounds i8, i8* %p, i32 %i.04
   %0 = load i8, i8* %arrayidx, align 1
@@ -111,24 +111,24 @@ for.body:                                         ; preds = %for.body.lr.ph, %fo
   %cmp = icmp ne i32 %inc, %b
   br i1 %cmp, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void
 }
 
 
 
-; CHECK: test_pos16_ir_ne
-; CHECK: loop0
-; a < b
+
+
+
 define void @test_pos16_ir_ne(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 32087, %b
   br i1 %cmp3, label %for.body.lr.ph, label %for.end
 
-for.body.lr.ph:                                   ; preds = %entry
+for.body.lr.ph:                                   
   br label %for.body
 
-for.body:                                         ; preds = %for.body.lr.ph, %for.body
+for.body:                                         
   %i.04 = phi i32 [ 32087, %for.body.lr.ph ], [ %inc, %for.body ]
   %arrayidx = getelementptr inbounds i8, i8* %p, i32 %i.04
   %0 = load i8, i8* %arrayidx, align 1
@@ -140,24 +140,24 @@ for.body:                                         ; preds = %for.body.lr.ph, %fo
   %cmp = icmp ne i32 %inc, %b
   br i1 %cmp, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void
 }
 
 
 
-; CHECK: test_pos1_ri_ne
-; CHECK: loop0
-; a < b
+
+
+
 define void @test_pos1_ri_ne(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 %a, 3472
   br i1 %cmp3, label %for.body.lr.ph, label %for.end
 
-for.body.lr.ph:                                   ; preds = %entry
+for.body.lr.ph:                                   
   br label %for.body
 
-for.body:                                         ; preds = %for.body.lr.ph, %for.body
+for.body:                                         
   %i.04 = phi i32 [ %a, %for.body.lr.ph ], [ %inc, %for.body ]
   %arrayidx = getelementptr inbounds i8, i8* %p, i32 %i.04
   %0 = load i8, i8* %arrayidx, align 1
@@ -169,24 +169,24 @@ for.body:                                         ; preds = %for.body.lr.ph, %fo
   %cmp = icmp ne i32 %inc, 3472
   br i1 %cmp, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void
 }
 
 
 
-; CHECK: test_pos2_ri_ne
-; CHECK: loop0
-; a < b
+
+
+
 define void @test_pos2_ri_ne(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 %a, 8730
   br i1 %cmp3, label %for.body.lr.ph, label %for.end
 
-for.body.lr.ph:                                   ; preds = %entry
+for.body.lr.ph:                                   
   br label %for.body
 
-for.body:                                         ; preds = %for.body.lr.ph, %for.body
+for.body:                                         
   %i.04 = phi i32 [ %a, %for.body.lr.ph ], [ %inc, %for.body ]
   %arrayidx = getelementptr inbounds i8, i8* %p, i32 %i.04
   %0 = load i8, i8* %arrayidx, align 1
@@ -198,24 +198,24 @@ for.body:                                         ; preds = %for.body.lr.ph, %fo
   %cmp = icmp ne i32 %inc, 8730
   br i1 %cmp, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void
 }
 
 
 
-; CHECK: test_pos4_ri_ne
-; CHECK: loop0
-; a < b
+
+
+
 define void @test_pos4_ri_ne(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 %a, 1493
   br i1 %cmp3, label %for.body.lr.ph, label %for.end
 
-for.body.lr.ph:                                   ; preds = %entry
+for.body.lr.ph:                                   
   br label %for.body
 
-for.body:                                         ; preds = %for.body.lr.ph, %for.body
+for.body:                                         
   %i.04 = phi i32 [ %a, %for.body.lr.ph ], [ %inc, %for.body ]
   %arrayidx = getelementptr inbounds i8, i8* %p, i32 %i.04
   %0 = load i8, i8* %arrayidx, align 1
@@ -227,24 +227,24 @@ for.body:                                         ; preds = %for.body.lr.ph, %fo
   %cmp = icmp ne i32 %inc, 1493
   br i1 %cmp, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void
 }
 
 
 
-; CHECK: test_pos8_ri_ne
-; CHECK: loop0
-; a < b
+
+
+
 define void @test_pos8_ri_ne(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 %a, 1706
   br i1 %cmp3, label %for.body.lr.ph, label %for.end
 
-for.body.lr.ph:                                   ; preds = %entry
+for.body.lr.ph:                                   
   br label %for.body
 
-for.body:                                         ; preds = %for.body.lr.ph, %for.body
+for.body:                                         
   %i.04 = phi i32 [ %a, %for.body.lr.ph ], [ %inc, %for.body ]
   %arrayidx = getelementptr inbounds i8, i8* %p, i32 %i.04
   %0 = load i8, i8* %arrayidx, align 1
@@ -256,24 +256,24 @@ for.body:                                         ; preds = %for.body.lr.ph, %fo
   %cmp = icmp ne i32 %inc, 1706
   br i1 %cmp, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void
 }
 
 
 
-; CHECK: test_pos16_ri_ne
-; CHECK: loop0
-; a < b
+
+
+
 define void @test_pos16_ri_ne(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 %a, 1886
   br i1 %cmp3, label %for.body.lr.ph, label %for.end
 
-for.body.lr.ph:                                   ; preds = %entry
+for.body.lr.ph:                                   
   br label %for.body
 
-for.body:                                         ; preds = %for.body.lr.ph, %for.body
+for.body:                                         
   %i.04 = phi i32 [ %a, %for.body.lr.ph ], [ %inc, %for.body ]
   %arrayidx = getelementptr inbounds i8, i8* %p, i32 %i.04
   %0 = load i8, i8* %arrayidx, align 1
@@ -285,24 +285,24 @@ for.body:                                         ; preds = %for.body.lr.ph, %fo
   %cmp = icmp ne i32 %inc, 1886
   br i1 %cmp, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void
 }
 
 
 
-; CHECK: test_pos1_rr_ne
-; CHECK: loop0
-; a < b
+
+
+
 define void @test_pos1_rr_ne(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 %a, %b
   br i1 %cmp3, label %for.body.lr.ph, label %for.end
 
-for.body.lr.ph:                                   ; preds = %entry
+for.body.lr.ph:                                   
   br label %for.body
 
-for.body:                                         ; preds = %for.body.lr.ph, %for.body
+for.body:                                         
   %i.04 = phi i32 [ %a, %for.body.lr.ph ], [ %inc, %for.body ]
   %arrayidx = getelementptr inbounds i8, i8* %p, i32 %i.04
   %0 = load i8, i8* %arrayidx, align 1
@@ -314,24 +314,24 @@ for.body:                                         ; preds = %for.body.lr.ph, %fo
   %cmp = icmp ne i32 %inc, %b
   br i1 %cmp, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void
 }
 
 
 
-; CHECK: test_pos2_rr_ne
-; CHECK: loop0
-; a < b
+
+
+
 define void @test_pos2_rr_ne(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 %a, %b
   br i1 %cmp3, label %for.body.lr.ph, label %for.end
 
-for.body.lr.ph:                                   ; preds = %entry
+for.body.lr.ph:                                   
   br label %for.body
 
-for.body:                                         ; preds = %for.body.lr.ph, %for.body
+for.body:                                         
   %i.04 = phi i32 [ %a, %for.body.lr.ph ], [ %inc, %for.body ]
   %arrayidx = getelementptr inbounds i8, i8* %p, i32 %i.04
   %0 = load i8, i8* %arrayidx, align 1
@@ -343,24 +343,24 @@ for.body:                                         ; preds = %for.body.lr.ph, %fo
   %cmp = icmp ne i32 %inc, %b
   br i1 %cmp, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void
 }
 
 
 
-; CHECK: test_pos4_rr_ne
-; CHECK: loop0
-; a < b
+
+
+
 define void @test_pos4_rr_ne(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 %a, %b
   br i1 %cmp3, label %for.body.lr.ph, label %for.end
 
-for.body.lr.ph:                                   ; preds = %entry
+for.body.lr.ph:                                   
   br label %for.body
 
-for.body:                                         ; preds = %for.body.lr.ph, %for.body
+for.body:                                         
   %i.04 = phi i32 [ %a, %for.body.lr.ph ], [ %inc, %for.body ]
   %arrayidx = getelementptr inbounds i8, i8* %p, i32 %i.04
   %0 = load i8, i8* %arrayidx, align 1
@@ -372,24 +372,24 @@ for.body:                                         ; preds = %for.body.lr.ph, %fo
   %cmp = icmp ne i32 %inc, %b
   br i1 %cmp, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void
 }
 
 
 
-; CHECK: test_pos8_rr_ne
-; CHECK: loop0
-; a < b
+
+
+
 define void @test_pos8_rr_ne(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 %a, %b
   br i1 %cmp3, label %for.body.lr.ph, label %for.end
 
-for.body.lr.ph:                                   ; preds = %entry
+for.body.lr.ph:                                   
   br label %for.body
 
-for.body:                                         ; preds = %for.body.lr.ph, %for.body
+for.body:                                         
   %i.04 = phi i32 [ %a, %for.body.lr.ph ], [ %inc, %for.body ]
   %arrayidx = getelementptr inbounds i8, i8* %p, i32 %i.04
   %0 = load i8, i8* %arrayidx, align 1
@@ -401,24 +401,24 @@ for.body:                                         ; preds = %for.body.lr.ph, %fo
   %cmp = icmp ne i32 %inc, %b
   br i1 %cmp, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void
 }
 
 
 
-; CHECK: test_pos16_rr_ne
-; CHECK: loop0
-; a < b
+
+
+
 define void @test_pos16_rr_ne(i8* nocapture %p, i32 %a, i32 %b) nounwind {
 entry:
   %cmp3 = icmp slt i32 %a, %b
   br i1 %cmp3, label %for.body.lr.ph, label %for.end
 
-for.body.lr.ph:                                   ; preds = %entry
+for.body.lr.ph:                                   
   br label %for.body
 
-for.body:                                         ; preds = %for.body.lr.ph, %for.body
+for.body:                                         
   %i.04 = phi i32 [ %a, %for.body.lr.ph ], [ %inc, %for.body ]
   %arrayidx = getelementptr inbounds i8, i8* %p, i32 %i.04
   %0 = load i8, i8* %arrayidx, align 1
@@ -430,7 +430,7 @@ for.body:                                         ; preds = %for.body.lr.ph, %fo
   %cmp = icmp ne i32 %inc, %b
   br i1 %cmp, label %for.body, label %for.end
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void
 }
 

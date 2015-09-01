@@ -1,16 +1,16 @@
-; RUN: llc -mtriple=arm64-apple-ios -o - %s | FileCheck %s
 
-; The main purpose of this test is to find out whether copyPhysReg can deal with
-; the memmove-like situation arising in tuples, where an early copy can clobber
-; the value needed by a later one if the tuples overlap.
 
-; We use dummy inline asm to force LLVM to generate a COPY between the registers
-; we want by clobbering all the others.
+
+
+
+
+
+
 
 define void @test_D1D2_from_D0D1(i8* %addr) #0 {
-; CHECK-LABEL: test_D1D2_from_D0D1:
-; CHECK: mov.8b v2, v1
-; CHECK: mov.8b v1, v0
+
+
+
 entry:
   %addr_v8i8 = bitcast i8* %addr to <8 x i8>*
   %vec = tail call { <8 x i8>, <8 x i8> } @llvm.aarch64.neon.ld2.v8i8.p0v8i8(<8 x i8>* %addr_v8i8)
@@ -25,9 +25,9 @@ entry:
 }
 
 define void @test_D0D1_from_D1D2(i8* %addr) #0 {
-; CHECK-LABEL: test_D0D1_from_D1D2:
-; CHECK: mov.8b v0, v1
-; CHECK: mov.8b v1, v2
+
+
+
 entry:
   %addr_v8i8 = bitcast i8* %addr to <8 x i8>*
   %vec = tail call { <8 x i8>, <8 x i8> } @llvm.aarch64.neon.ld2.v8i8.p0v8i8(<8 x i8>* %addr_v8i8)
@@ -42,9 +42,9 @@ entry:
 }
 
 define void @test_D0D1_from_D31D0(i8* %addr) #0 {
-; CHECK-LABEL: test_D0D1_from_D31D0:
-; CHECK: mov.8b v1, v0
-; CHECK: mov.8b v0, v31
+
+
+
 entry:
   %addr_v8i8 = bitcast i8* %addr to <8 x i8>*
   %vec = tail call { <8 x i8>, <8 x i8> } @llvm.aarch64.neon.ld2.v8i8.p0v8i8(<8 x i8>* %addr_v8i8)
@@ -59,9 +59,9 @@ entry:
 }
 
 define void @test_D31D0_from_D0D1(i8* %addr) #0 {
-; CHECK-LABEL: test_D31D0_from_D0D1:
-; CHECK: mov.8b v31, v0
-; CHECK: mov.8b v0, v1
+
+
+
 entry:
   %addr_v8i8 = bitcast i8* %addr to <8 x i8>*
   %vec = tail call { <8 x i8>, <8 x i8> } @llvm.aarch64.neon.ld2.v8i8.p0v8i8(<8 x i8>* %addr_v8i8)
@@ -76,10 +76,10 @@ entry:
 }
 
 define void @test_D2D3D4_from_D0D1D2(i8* %addr) #0 {
-; CHECK-LABEL: test_D2D3D4_from_D0D1D2:
-; CHECK: mov.8b v4, v2
-; CHECK: mov.8b v3, v1
-; CHECK: mov.8b v2, v0
+
+
+
+
 entry:
   %addr_v8i8 = bitcast i8* %addr to <8 x i8>*
   %vec = tail call { <8 x i8>, <8 x i8>, <8 x i8> } @llvm.aarch64.neon.ld3.v8i8.p0v8i8(<8 x i8>* %addr_v8i8)
@@ -96,10 +96,10 @@ entry:
 }
 
 define void @test_Q0Q1Q2_from_Q1Q2Q3(i8* %addr) #0 {
-; CHECK-LABEL: test_Q0Q1Q2_from_Q1Q2Q3:
-; CHECK: mov.16b v0, v1
-; CHECK: mov.16b v1, v2
-; CHECK: mov.16b v2, v3
+
+
+
+
 entry:
   %addr_v16i8 = bitcast i8* %addr to <16 x i8>*
   %vec = tail call { <16 x i8>, <16 x i8>, <16 x i8> } @llvm.aarch64.neon.ld3.v16i8.p0v16i8(<16 x i8>* %addr_v16i8)
@@ -115,11 +115,11 @@ entry:
 }
 
 define void @test_Q1Q2Q3Q4_from_Q30Q31Q0Q1(i8* %addr) #0 {
-; CHECK-LABEL: test_Q1Q2Q3Q4_from_Q30Q31Q0Q1:
-; CHECK: mov.16b v4, v1
-; CHECK: mov.16b v3, v0
-; CHECK: mov.16b v2, v31
-; CHECK: mov.16b v1, v30
+
+
+
+
+
   %addr_v16i8 = bitcast i8* %addr to <16 x i8>*
   %vec = tail call { <16 x i8>, <16 x i8>, <16 x i8>, <16 x i8> } @llvm.aarch64.neon.ld4.v16i8.p0v16i8(<16 x i8>* %addr_v16i8)
   %vec0 = extractvalue { <16 x i8>, <16 x i8>, <16 x i8>, <16 x i8> } %vec, 0

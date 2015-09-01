@@ -1,8 +1,8 @@
-; Test that the correct instruction is chosen for spill and reload by trying
-; to have 33 live MSA registers simultaneously
 
-; RUN: llc -march=mips -mattr=+msa,+fp64 < %s | FileCheck %s
-; RUN: llc -march=mipsel -mattr=+msa,+fp64 < %s | FileCheck %s
+
+
+
+
 
 define i32 @test_i8(<16 x i8>* %p0, <16 x i8>* %q1) nounwind {
 entry:
@@ -146,12 +146,12 @@ entry:
 declare <16 x i8> @llvm.mips.addv.b(<16 x i8>, <16 x i8>) nounwind
 declare i32       @llvm.mips.copy.s.b(<16 x i8>, i32) nounwind
 
-; CHECK: test_i8:
-; CHECK: st.b {{.*}} Spill
-; CHECK: st.b {{.*}} Spill
-; CHECK: ld.b {{.*}} Reload
-; CHECK: ld.b {{.*}} Reload
-; CHECK: .size
+
+
+
+
+
+
 
 define i32 @test_i16(<8 x i16>* %p0, <8 x i16>* %q1) nounwind {
 entry:
@@ -295,12 +295,12 @@ entry:
 declare <8 x i16> @llvm.mips.addv.h(<8 x i16>, <8 x i16>) nounwind
 declare i32       @llvm.mips.copy.s.h(<8 x i16>, i32) nounwind
 
-; CHECK: test_i16:
-; CHECK: st.h {{.*}} Spill
-; CHECK: st.h {{.*}} Spill
-; CHECK: ld.h {{.*}} Reload
-; CHECK: ld.h {{.*}} Reload
-; CHECK: .size
+
+
+
+
+
+
 
 define i32 @test_i32(<4 x i32>* %p0, <4 x i32>* %q1) nounwind {
 entry:
@@ -444,12 +444,12 @@ entry:
 declare <4 x i32> @llvm.mips.addv.w(<4 x i32>, <4 x i32>) nounwind
 declare i32       @llvm.mips.copy.s.w(<4 x i32>, i32) nounwind
 
-; CHECK: test_i32:
-; CHECK: st.w {{.*}} Spill
-; CHECK: st.w {{.*}} Spill
-; CHECK: ld.w {{.*}} Reload
-; CHECK: ld.w {{.*}} Reload
-; CHECK: .size
+
+
+
+
+
+
 
 define i32 @test_i64(<2 x i64>* %p0, <2 x i64>* %q1) nounwind {
 entry:
@@ -593,9 +593,9 @@ entry:
 
 declare <2 x i64> @llvm.mips.addv.d(<2 x i64>, <2 x i64>) nounwind
 
-; CHECK: test_i64:
-; CHECK: st.d {{.*}} Spill
-; CHECK: st.d {{.*}} Spill
-; CHECK: ld.d {{.*}} Reload
-; CHECK: ld.d {{.*}} Reload
-; CHECK: .size
+
+
+
+
+
+

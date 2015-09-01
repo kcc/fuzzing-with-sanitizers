@@ -1,10 +1,10 @@
-; RUN: llc < %s -march=x86-64 > %t
-; RUN: grep and %t | count 6
-; RUN: grep movzb %t | count 6
-; RUN: grep sar %t | count 12
 
-; Don't optimize away zext-inreg and sext-inreg on the loop induction
-; variable, because it isn't safe to do so in these cases.
+
+
+
+
+
+
 
 define void @count_up(double* %d, i64 %n) nounwind {
 entry:

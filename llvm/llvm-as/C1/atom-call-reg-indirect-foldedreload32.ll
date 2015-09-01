@@ -1,25 +1,25 @@
-; RUN: llc < %s -mtriple=i386-linux-gnu -mcpu=atom  | \
-; RUN:     FileCheck --check-prefix=ATOM %s
-; RUN: llc < %s -mtriple=i386-linux-gnu -mcpu=core2 | \
-; RUN:     FileCheck --check-prefix=CORE2 %s
-; ATOM: calll *{{%[a-z]+}}
-; CORE2: calll *funcp
-;
-; original source code built with clang -S -emit-llvm -M32 test32.c:
-;
-;   int a, b, c, d, e, f, g, h, i, j;
-;   extern int (*funcp)(int, int, int, int, int, int, int, int);
-;   extern int sum;
-;   
-;   void func()
-;   {
-;     sum = 0;
-;     for( i = a; i < b; ++i )
-;     {
-;       sum += (*funcp)(i, b, c, d, e, f, g, h);
-;     }
-;   }
-;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @sum = external global i32
 @a = common global i32 0, align 4
 @i = common global i32 0, align 4
@@ -40,13 +40,13 @@ entry:
   store i32 %0, i32* @i, align 4
   br label %for.cond
 
-for.cond:                                         ; preds = %for.inc, %entry
+for.cond:                                         
   %1 = load i32, i32* @i, align 4
   %2 = load i32, i32* @b, align 4
   %cmp = icmp slt i32 %1, %2
   br i1 %cmp, label %for.body, label %for.end
 
-for.body:                                         ; preds = %for.cond
+for.body:                                         
   %3 = load i32 (i32, i32, i32, i32, i32, i32, i32, i32)*, i32 (i32, i32, i32, i32, i32, i32, i32, i32)** @funcp, align 4
   %4 = load i32, i32* @i, align 4
   %5 = load i32, i32* @b, align 4
@@ -62,13 +62,13 @@ for.body:                                         ; preds = %for.cond
   store i32 %add, i32* @sum, align 4
   br label %for.inc
 
-for.inc:                                          ; preds = %for.body
+for.inc:                                          
   %13 = load i32, i32* @i, align 4
   %inc = add nsw i32 %13, 1
   store i32 %inc, i32* @i, align 4
   br label %for.cond
 
-for.end:                                          ; preds = %for.cond
+for.end:                                          
   ret void
 }
 

@@ -1,9 +1,9 @@
-; RUN: llc < %s -mtriple=arm-apple-darwin9 -march=arm | FileCheck %s
 
-; CHECK: .cfi_lsda 16, [[LABEL:.*]]
-; CHECK: .long  [[LABEL]]-
-; CHECK: [[LABEL]]:
-; CHECK: .byte   255                     @ @LPStart Encoding = omit
+
+
+
+
+
 
 %struct.A = type { i32* }
 
@@ -19,11 +19,11 @@ entry:
   invoke void @_Z3barv()
           to label %invcont unwind label %lpad
 
-invcont:                                          ; preds = %entry
+invcont:                                          
   call void @_ZN1AD1Ev(%struct.A* %a) nounwind
   br label %return
 
-bb:                                               ; preds = %ppad
+bb:                                               
   %eh_select = load i32, i32* %eh_selector
   store i32 %eh_select, i32* %save_filt.1, align 4
   %eh_value = load i8*, i8** %eh_exception
@@ -35,10 +35,10 @@ bb:                                               ; preds = %ppad
   store i32 %1, i32* %eh_selector, align 4
   br label %Unwind
 
-return:                                           ; preds = %invcont
+return:                                           
   ret void
 
-lpad:                                             ; preds = %entry
+lpad:                                             
   %exn = landingpad {i8*, i32}
            cleanup
   %eh_ptr = extractvalue {i8*, i32} %exn, 0
@@ -47,10 +47,10 @@ lpad:                                             ; preds = %entry
   store i32 %eh_select2, i32* %eh_selector
   br label %ppad
 
-ppad:                                             ; preds = %lpad
+ppad:                                             
   br label %bb
 
-Unwind:                                           ; preds = %bb
+Unwind:                                           
   %eh_ptr3 = load i8*, i8** %eh_exception
   call void @_Unwind_SjLj_Resume(i8* %eh_ptr3)
   unreachable
@@ -68,7 +68,7 @@ entry:
   store i32* %1, i32** %3, align 4
   br label %return
 
-return:                                           ; preds = %entry
+return:                                           
   ret void
 }
 
@@ -86,10 +86,10 @@ entry:
   call void @_ZdlPv(i8* %3) nounwind
   br label %bb
 
-bb:                                               ; preds = %entry
+bb:                                               
   br label %return
 
-return:                                           ; preds = %bb
+return:                                           
   ret void
 }
 

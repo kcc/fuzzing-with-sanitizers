@@ -1,4 +1,4 @@
-; RUN: opt -S -mergefunc < %s | FileCheck %s
+
 
 target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
@@ -42,7 +42,7 @@ define internal i8* @Afunc(i32* %P) {
 }
 
 define internal i8* @Bfunc(i32* %P) {
-; CHECK-NOT: @Bfunc
+
   store i32 1, i32* %P
   store i32 3, i32* %P
   ret i8* blockaddress(@_Z1fi, %if.then.2)

@@ -1,20 +1,20 @@
-; RUN: llc %s -O0 -o /dev/null -mtriple=arm-apple-darwin
-; PR 5197
-; There is not any llvm instruction assocated with !5. The code generator
-; should be able to handle this.
+
+
+
+
 
 define void @bar() nounwind ssp {
 entry:
-  %count_ = alloca i32, align 4                   ; <i32*> [#uses=2]
+  %count_ = alloca i32, align 4                   
   br label %do.body, !dbg !0
 
-do.body:                                          ; preds = %entry
+do.body:                                          
   call void @llvm.dbg.declare(metadata i32* %count_, metadata !4, metadata !DIExpression()), !dbg !DILocation(scope: !5)
-  %conv = ptrtoint i32* %count_ to i32, !dbg !0   ; <i32> [#uses=1]
-  %call = call i32 @foo(i32 %conv) ssp, !dbg !0   ; <i32> [#uses=0]
+  %conv = ptrtoint i32* %count_ to i32, !dbg !0   
+  %call = call i32 @foo(i32 %conv) ssp, !dbg !0   
   br label %do.end, !dbg !0
 
-do.end:                                           ; preds = %do.body
+do.end:                                           
   ret void, !dbg !7
 }
 

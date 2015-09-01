@@ -1,21 +1,21 @@
-; RUN: opt -analyze -module-debuginfo < %s | FileCheck %s
 
 
-; This module is generated from the following c-code:
-;
-; > union X;
-; >
-; > struct Y {
-; >     union X *x;
-; > };
-; >
-; > struct Y y;
 
 
-; CHECK: Type: Y from /tmp/minimal.c:3 DW_TAG_structure_type
-; CHECK: Type: x from /tmp/minimal.c:4 DW_TAG_member
-; CHECK: Type: DW_TAG_pointer_type
-; CHECK: Type: X from /tmp/minimal.c:1 DW_TAG_structure_type
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 %struct.Y = type { %struct.X* }

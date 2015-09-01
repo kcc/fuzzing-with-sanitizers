@@ -1,11 +1,11 @@
-; RUN: llc %s -mtriple=x86_64-pc-linux-gnu -O0 -o - | FileCheck %s
 
-; We are testing that a value in a 16 bit register gets reported as
-; being in its superregister.
 
-; CHECK: .byte   80                      # super-register DW_OP_reg0
-; CHECK-NEXT: .byte   147                # DW_OP_piece
-; CHECK-NEXT: .byte   2                  # 2
+
+
+
+
+
+
 
 define i16 @f(i16 signext %zzz) nounwind {
 entry:

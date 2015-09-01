@@ -1,8 +1,8 @@
-; RUN: opt -metarenamer -S < %s | FileCheck %s
 
-; CHECK: target triple {{.*}}
-; CHECK-NOT: {{^x*}}xxx{{^x*}}
-; CHECK: ret i32 6
+
+
+
+
 
 target triple = "x86_64-pc-linux-gnu"
 
@@ -58,21 +58,21 @@ define i32 @func_5_xxx(i32 %arg_1_xxx, i32 %arg_2_xxx, i32 %arg_3_xxx, i32 %arg_
   store i32 0, i32* %i, align 4
   br label %5
 
-; <label>:5                                       ; preds = %9, %0
+
   %6 = load i32, i32* %i, align 4
   %7 = icmp slt i32 %6, 10
   br i1 %7, label %8, label %12
 
-; <label>:8                                       ; preds = %5
+
   br label %9
 
-; <label>:9                                       ; preds = %8
+
   %10 = load i32, i32* %i, align 4
   %11 = add nsw i32 %10, 1
   store i32 %11, i32* %i, align 4
   br label %5
 
-; <label>:12                                      ; preds = %5
+
   %13 = load i32, i32* %local_1_xxx, align 4
   %14 = load i32, i32* %1, align 4
   %15 = add nsw i32 %13, %14

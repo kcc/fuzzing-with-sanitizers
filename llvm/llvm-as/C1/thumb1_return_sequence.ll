@@ -1,15 +1,15 @@
-; RUN: llc -mtriple=thumbv4t-none--eabi < %s | FileCheck %s --check-prefix=CHECK-V4T
-; RUN: llc -mtriple=thumbv5t-none--eabi < %s | FileCheck %s --check-prefix=CHECK-V5T
 
-; CHECK-V4T-LABEL: clobberframe
-; CHECK-V5T-LABEL: clobberframe
+
+
+
+
 define <4 x i32> @clobberframe(<6 x i32>* %p) #0 {
 entry:
-; Prologue
-; --------
-; CHECK-V4T:    push {[[SAVED:(r[4567](, )?)+]], lr}
-; CHECK-V4T:    sub sp,
-; CHECK-V5T:    push {[[SAVED:(r[4567](, )?)+]], lr}
+
+
+
+
+
 
   %b = alloca <6 x i32>, align 16
   %a = alloca <4 x i32>, align 16
@@ -19,26 +19,26 @@ entry:
   %0 = load <4 x i32>, <4 x i32>* %a, align 16
   ret <4 x i32> %0
 
-; Epilogue
-; --------
-; CHECK-V4T:         add sp,
-; CHECK-V4T-NEXT:    pop {[[SAVED]]}
-; We do not have any SP update to insert so we can just optimize
-; the pop sequence.
-; CHECK-V4T-NEXT:    pop {pc}
-; CHECK-V5T:         pop {[[SAVED]], pc}
+
+
+
+
+
+
+
+
 }
 
-; CHECK-V4T-LABEL: clobbervariadicframe
-; CHECK-V5T-LABEL: clobbervariadicframe
+
+
 define <4 x i32> @clobbervariadicframe(i32 %i, ...) #0 {
 entry:
-; Prologue
-; --------
-; CHECK-V4T:    sub sp,
-; CHECK-V4T:    push {[[SAVED:(r[4567](, )?)+]], lr}
-; CHECK-V5T:    sub sp,
-; CHECK-V5T:    push {[[SAVED:(r[4567](, )?)+]], lr}
+
+
+
+
+
+
 
   %b = alloca <4 x i32>, align 16
   %a = alloca <4 x i32>, align 16
@@ -48,33 +48,33 @@ entry:
   call void @llvm.va_start(i8* null)
   ret <4 x i32> %0
 
-; Epilogue
-; --------
-; CHECK-V4T:         pop {[[SAVED]]}
-; CHECK-V4T-NEXT:    mov r12, [[POP_REG:r[0-7]]]
-; CHECK-V4T-NEXT:    pop {[[POP_REG]]}
-; CHECK-V4T-NEXT:    add sp,
-; CHECK-V4T-NEXT:    mov lr, [[POP_REG]]
-; CHECK-V4T-NEXT:    mov [[POP_REG]], r12
-; CHECK-V4T:         bx  lr
-; CHECK-V5T:         add sp,
-; CHECK-V5T-NEXT:    pop {[[SAVED]]}
-; CHECK-V5T-NEXT:    mov r12, [[POP_REG:r[0-7]]]
-; CHECK-V5T-NEXT:    pop {[[POP_REG]]}
-; CHECK-V5T-NEXT:    add sp,
-; CHECK-V5T-NEXT:    mov lr, [[POP_REG]]
-; CHECK-V5T-NEXT:    mov [[POP_REG]], r12
-; CHECK-V5T-NEXT:    bx lr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
-; CHECK-V4T-LABEL: simpleframe
-; CHECK-V5T-LABEL: simpleframe
+
+
 define i32 @simpleframe(<6 x i32>* %p) #0 {
 entry:
-; Prologue
-; --------
-; CHECK-V4T:    push    {[[SAVED:(r[4567](, )?)+]], lr}
-; CHECK-V5T:    push    {[[SAVED:(r[4567](, )?)+]], lr}
+
+
+
+
 
   %0 = load <6 x i32>, <6 x i32>* %p, align 16
   %1 = extractelement <6 x i32> %0, i32 0
@@ -90,25 +90,25 @@ entry:
   %add5 = add nsw i32 %add4, %6
   ret i32 %add5
 
-; Epilogue
-; --------
-; CHECK-V4T:    pop {[[SAVED]]}
-; CHECK-V4T:    pop {pc}
-; CHECK-V5T:    pop {[[SAVED]], pc}
+
+
+
+
+
 }
 
-; CHECK-V4T-LABEL: simplevariadicframe
-; CHECK-V5T-LABEL: simplevariadicframe
+
+
 define i32 @simplevariadicframe(i32 %i, ...) #0 {
 entry:
-; Prologue
-; --------
-; CHECK-V4T:    sub sp,
-; CHECK-V4T:    push {[[SAVED:(r[4567](, )?)+]], lr}
-; CHECK-V4T:    sub sp,
-; CHECK-V5T:    sub sp,
-; CHECK-V5T:    push {[[SAVED:(r[4567](, )?)+]], lr}
-; CHECK-V5T:    sub sp,
+
+
+
+
+
+
+
+
 
   %a = alloca i32, align 4
   %b = alloca i32, align 4
@@ -141,68 +141,68 @@ entry:
   call void @llvm.va_start(i8* null)
   ret i32 %add6
 
-; Epilogue
-; --------
-; CHECK-V4T:         add sp,
-; CHECK-V4T-NEXT:    pop {[[SAVED]]}
-; Only r1 to r3 are available to pop LR.
-; r0 is used for the return value.
-; CHECK-V4T-NEXT:    pop {[[POP_REG:r[1-3]]]}
-; CHECK-V4T-NEXT:    add sp,
-; CHECK-V4T-NEXT:    bx [[POP_REG]]
-; CHECK-V5T:         add sp,
-; CHECK-V5T-NEXT:    pop {[[SAVED]]}
-; Only r1 to r3 are available to pop LR.
-; r0 is used for the return value.
-; CHECK-V5T-NEXT:    pop {[[POP_REG:r[1-3]]]}
-; CHECK-V5T-NEXT:    add sp,
-; CHECK-V5T-NEXT:    bx [[POP_REG]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
-; CHECK-V4T-LABEL: noframe
-; CHECK-V5T-LABEL: noframe
+
+
 define i32 @noframe() #0 {
 entry:
-; Prologue
-; --------
-; CHECK-V4T-NOT: push
-; CHECK-V5T-NOT: push
-    ret i32 0;
-; Epilogue
-; --------
-; CHECK-V4T-NOT: pop
-; CHECK-V5T-NOT: pop
-; CHECK-V4T:    bx  lr
-; CHECK-V5T:    bx  lr
+
+
+
+
+    ret i32 0
+
+
+
+
+
+
 }
 
-; CHECK-V4T-LABEL: novariadicframe
-; CHECK-V5T-LABEL: novariadicframe
+
+
 define i32 @novariadicframe(i32 %i, ...) #0 {
 entry:
-; Prologue
-; --------
-; CHECK-V4T:    sub sp,
-; CHECK-V4T:    push {[[SAVED:(r[4567](, )?)+]], lr}
-; CHECK-V5T:    sub sp,
-; CHECK-V5T:    push {[[SAVED:(r[4567](, )?)+]], lr}
+
+
+
+
+
+
 
   call void @llvm.va_start(i8* null)
-  ret i32 %i;
-; Epilogue
-; --------
-; CHECK-V4T:         pop {[[SAVED]]}
-; Only r1 to r3 are available to pop LR.
-; r0 is used for the return value.
-; CHECK-V4T-NEXT:    pop {[[POP_REG:r[1-3]]]}
-; CHECK-V4T-NEXT:    add sp,
-; CHECK-V4T-NEXT:    bx [[POP_REG]]
-; CHECK-V5T:         pop {[[SAVED]]}
-; Only r1 to r3 are available to pop LR.
-; r0 is used for the return value.
-; CHECK-V5T-NEXT:    pop {[[POP_REG:r[1-3]]]}
-; CHECK-V5T-NEXT:    add sp,
-; CHECK-V5T-NEXT:    bx [[POP_REG]]
+  ret i32 %i
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 declare void @llvm.va_start(i8*) nounwind

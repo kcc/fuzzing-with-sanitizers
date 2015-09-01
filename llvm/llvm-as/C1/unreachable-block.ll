@@ -1,7 +1,7 @@
-; RUN: opt -basicaa -aa-eval -disable-output < %s >& /dev/null
 
-; BasicAA shouldn't infinitely recurse on the use-def cycles in
-; unreachable code.
+
+
+
 
 define void @func_2() nounwind {
 entry:

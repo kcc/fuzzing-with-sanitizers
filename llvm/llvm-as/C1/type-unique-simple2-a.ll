@@ -1,36 +1,36 @@
-; REQUIRES: object-emission, native
-;
-; RUN: llvm-link %s %p/type-unique-simple2-b.ll -S -o - | %llc_dwarf -filetype=obj -O0 | llvm-dwarfdump -debug-dump=info - | FileCheck %s
-;
-; Tests for a merge error where attributes are inserted twice into the same DIE.
-;
-; $ cat ab.h
-; typedef int foo_t;
-; class A {
-; public:
-;   virtual void setFoo();
-;   virtual const foo_t getFoo();
-; };
-;
-; $ cat a.cpp
-; #include "ab.h"
-; foo_t bar() {
-;     return A().getFoo();
-; }
-;
-; CHECK: DW_AT_name {{.*}} "setFoo"
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_accessibility [DW_FORM_data1]   (DW_ACCESS_public)
-; CHECK-NOT: DW_AT_accessibility
-; CHECK: DW_TAG
 
-; ModuleID = 'a.cpp'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %class.A = type { i32 (...)** }
 
 @_ZTV1A = external unnamed_addr constant [4 x i8*]
 
-; Function Attrs: nounwind
+
 define i32 @_Z3barv() #0 {
 entry:
   %tmp = alloca %class.A, align 8
@@ -41,10 +41,10 @@ entry:
   ret i32 %call, !dbg !38
 }
 
-; Function Attrs: nounwind
+
 declare void @llvm.memset.p0i8.i64(i8* nocapture, i8, i64, i32, i1) #1
 
-; Function Attrs: inlinehint nounwind
+
 define linkonce_odr void @_ZN1AC1Ev(%class.A* %this) unnamed_addr #2 align 2 {
 entry:
   %this.addr = alloca %class.A*, align 8
@@ -57,10 +57,10 @@ entry:
 
 declare i32 @_ZN1A6getFooEv(%class.A*)
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #4
 
-; Function Attrs: inlinehint nounwind
+
 define linkonce_odr void @_ZN1AC2Ev(%class.A* %this) unnamed_addr #2 align 2 {
 entry:
   %this.addr = alloca %class.A*, align 8

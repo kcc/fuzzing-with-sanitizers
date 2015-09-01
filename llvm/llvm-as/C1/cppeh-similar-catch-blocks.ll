@@ -1,41 +1,41 @@
-; RUN: opt -mtriple=x86_64-pc-windows-msvc -winehprepare -S -o - < %s | FileCheck %s
 
-; This test is based on the following code:
-;
-; int main(void) {
-;   try {
-;     try {
-;       throw 'a';
-;     } catch (char c) {
-;       printf("%c\n", c);
-;     }
-;     throw 1;
-;   } catch(int x) {
-;     printf("%d\n", x);
-;   } catch(...) {
-;     printf("...\n");
-;   }
-;   try {
-;     try {
-;       throw 'b';
-;     } catch (char c) {
-;       printf("%c\n", c);
-;     }
-;     throw 2;
-;   } catch(int x) {
-;     printf("%d\n", x);
-;   } catch (char c) {
-;     printf("%c\n", c);
-;   } catch(...) {
-;     printf("...\n");
-;   }
-;   return 0;
-; }
 
-; This test is just checking for failures in processing the IR.
-; Extensive handler matching is not required.
 
-; ModuleID = 'cppeh-similar-catch-blocks.cpp'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-m:w-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-pc-windows-msvc"
 
@@ -83,14 +83,14 @@ $"\01??_C@_03PMGGPEJJ@?$CFd?6?$AA@" = comdat any
 @"\01??_C@_04MPPNMCOK@?4?4?4?6?$AA@" = linkonce_odr unnamed_addr constant [5 x i8] c"...\0A\00", comdat, align 1
 @"\01??_C@_03PMGGPEJJ@?$CFd?6?$AA@" = linkonce_odr unnamed_addr constant [4 x i8] c"%d\0A\00", comdat, align 1
 
-; This is just a minimal check to verify that main was handled by WinEHPrepare.
-; CHECK: define i32 @main()
-; CHECK: entry:
-; CHECK:   call void (...) @llvm.localescape(i32* [[X_PTR:\%.+]], i32* [[X2_PTR:\%.+]], i8* [[C2_PTR:\%.+]], i8* [[C3_PTR:\%.+]], i8* [[C_PTR:\%.+]])
-; CHECK:   invoke void @_CxxThrowException
-; CHECK: }
 
-; Function Attrs: uwtable
+
+
+
+
+
+
+
 define i32 @main() #0 personality i8* bitcast (i32 (...)* @__CxxFrameHandler3 to i8*) {
 entry:
   %retval = alloca i32, align 4
@@ -110,7 +110,7 @@ entry:
   invoke void @_CxxThrowException(i8* %tmp, %eh.ThrowInfo* @_TI1D) #4
           to label %unreachable unwind label %lpad
 
-lpad:                                             ; preds = %entry
+lpad:                                             
   %0 = landingpad { i8*, i32 }
           catch %eh.CatchHandlerType* @llvm.eh.handlertype.D.0
           catch %eh.CatchHandlerType* @llvm.eh.handlertype.H.0
@@ -121,13 +121,13 @@ lpad:                                             ; preds = %entry
   store i32 %2, i32* %ehselector.slot
   br label %catch.dispatch
 
-catch.dispatch:                                   ; preds = %lpad
+catch.dispatch:                                   
   %sel = load i32, i32* %ehselector.slot
   %3 = call i32 @llvm.eh.typeid.for(i8* bitcast (%eh.CatchHandlerType* @llvm.eh.handlertype.D.0 to i8*)) #2
   %matches = icmp eq i32 %sel, %3
   br i1 %matches, label %catch, label %catch.dispatch5
 
-catch:                                            ; preds = %catch.dispatch
+catch:                                            
   %exn = load i8*, i8** %exn.slot
   call void @llvm.eh.begincatch(i8* %exn, i8* %c) #2
   %4 = load i8, i8* %c, align 1
@@ -135,17 +135,17 @@ catch:                                            ; preds = %catch.dispatch
   %call = invoke i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @"\01??_C@_03PJCJOCBM@?$CFc?6?$AA@", i32 0, i32 0), i32 %conv)
           to label %invoke.cont unwind label %lpad2
 
-invoke.cont:                                      ; preds = %catch
+invoke.cont:                                      
   call void @llvm.eh.endcatch() #2
   br label %try.cont
 
-try.cont:                                         ; preds = %invoke.cont
+try.cont:                                         
   store i32 1, i32* %tmp3
   %5 = bitcast i32* %tmp3 to i8*
   invoke void @_CxxThrowException(i8* %5, %eh.ThrowInfo* @_TI1H) #4
           to label %unreachable unwind label %lpad4
 
-lpad2:                                            ; preds = %catch
+lpad2:                                            
   %6 = landingpad { i8*, i32 }
           catch %eh.CatchHandlerType* @llvm.eh.handlertype.H.0
           catch i8* null
@@ -156,7 +156,7 @@ lpad2:                                            ; preds = %catch
   call void @llvm.eh.endcatch() #2
   br label %catch.dispatch5
 
-lpad4:                                            ; preds = %try.cont
+lpad4:                                            
   %9 = landingpad { i8*, i32 }
           catch %eh.CatchHandlerType* @llvm.eh.handlertype.H.0
           catch i8* null
@@ -166,13 +166,13 @@ lpad4:                                            ; preds = %try.cont
   store i32 %11, i32* %ehselector.slot
   br label %catch.dispatch5
 
-catch.dispatch5:                                  ; preds = %lpad4, %lpad2, %catch.dispatch
+catch.dispatch5:                                  
   %sel6 = load i32, i32* %ehselector.slot
   %12 = call i32 @llvm.eh.typeid.for(i8* bitcast (%eh.CatchHandlerType* @llvm.eh.handlertype.H.0 to i8*)) #2
   %matches7 = icmp eq i32 %sel6, %12
   br i1 %matches7, label %catch13, label %catch8
 
-catch13:                                          ; preds = %catch.dispatch5
+catch13:                                          
   %exn14 = load i8*, i8** %exn.slot
   %13 = bitcast i32* %x to i8*
   call void @llvm.eh.begincatch(i8* %exn14, i8* %13) #2
@@ -180,26 +180,26 @@ catch13:                                          ; preds = %catch.dispatch5
   %call18 = invoke i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @"\01??_C@_03PMGGPEJJ@?$CFd?6?$AA@", i32 0, i32 0), i32 %14)
           to label %invoke.cont17 unwind label %lpad16
 
-invoke.cont17:                                    ; preds = %catch13
+invoke.cont17:                                    
   call void @llvm.eh.endcatch() #2
   br label %try.cont19
 
-try.cont19:                                       ; preds = %invoke.cont17, %invoke.cont11
+try.cont19:                                       
   store i8 98, i8* %tmp20
   invoke void @_CxxThrowException(i8* %tmp20, %eh.ThrowInfo* @_TI1D) #4
           to label %unreachable unwind label %lpad21
 
-catch8:                                           ; preds = %catch.dispatch5
+catch8:                                           
   %exn9 = load i8*, i8** %exn.slot
   call void @llvm.eh.begincatch(i8* %exn9, i8* null) #2
   %call12 = invoke i32 (i8*, ...) @printf(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @"\01??_C@_04MPPNMCOK@?4?4?4?6?$AA@", i32 0, i32 0))
           to label %invoke.cont11 unwind label %lpad10
 
-invoke.cont11:                                    ; preds = %catch8
+invoke.cont11:                                    
   call void @llvm.eh.endcatch() #2
   br label %try.cont19
 
-lpad10:                                           ; preds = %catch8
+lpad10:                                           
   %15 = landingpad { i8*, i32 }
           cleanup
   %16 = extractvalue { i8*, i32 } %15, 0
@@ -209,7 +209,7 @@ lpad10:                                           ; preds = %catch8
   call void @llvm.eh.endcatch() #2
   br label %eh.resume
 
-lpad16:                                           ; preds = %catch13
+lpad16:                                           
   %18 = landingpad { i8*, i32 }
           cleanup
   %19 = extractvalue { i8*, i32 } %18, 0
@@ -219,7 +219,7 @@ lpad16:                                           ; preds = %catch13
   call void @llvm.eh.endcatch() #2
   br label %eh.resume
 
-lpad21:                                           ; preds = %try.cont19
+lpad21:                                           
   %21 = landingpad { i8*, i32 }
           catch i8* bitcast (%eh.CatchHandlerType* @llvm.eh.handlertype.D.0 to i8*)
           catch i8* bitcast (%eh.CatchHandlerType* @llvm.eh.handlertype.H.0 to i8*)
@@ -230,13 +230,13 @@ lpad21:                                           ; preds = %try.cont19
   store i32 %23, i32* %ehselector.slot
   br label %catch.dispatch22
 
-catch.dispatch22:                                 ; preds = %lpad21
+catch.dispatch22:                                 
   %sel23 = load i32, i32* %ehselector.slot
   %24 = call i32 @llvm.eh.typeid.for(i8* bitcast (%eh.CatchHandlerType* @llvm.eh.handlertype.D.0 to i8*)) #2
   %matches24 = icmp eq i32 %sel23, %24
   br i1 %matches24, label %catch25, label %catch.dispatch36
 
-catch25:                                          ; preds = %catch.dispatch22
+catch25:                                          
   %exn26 = load i8*, i8** %exn.slot
   call void @llvm.eh.begincatch(i8* %exn26, i8* %c28) #2
   %25 = load i8, i8* %c28, align 1
@@ -244,17 +244,17 @@ catch25:                                          ; preds = %catch.dispatch22
   %call32 = invoke i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @"\01??_C@_03PJCJOCBM@?$CFc?6?$AA@", i32 0, i32 0), i32 %conv29)
           to label %invoke.cont31 unwind label %lpad30
 
-invoke.cont31:                                    ; preds = %catch25
+invoke.cont31:                                    
   call void @llvm.eh.endcatch() #2
   br label %try.cont33
 
-try.cont33:                                       ; preds = %invoke.cont31
+try.cont33:                                       
   store i32 2, i32* %tmp34
   %26 = bitcast i32* %tmp34 to i8*
   invoke void @_CxxThrowException(i8* %26, %eh.ThrowInfo* @_TI1H) #4
           to label %unreachable unwind label %lpad35
 
-lpad30:                                           ; preds = %catch25
+lpad30:                                           
   %27 = landingpad { i8*, i32 }
           catch i8* bitcast (%eh.CatchHandlerType* @llvm.eh.handlertype.H.0 to i8*)
           catch i8* bitcast (%eh.CatchHandlerType* @llvm.eh.handlertype.D.0 to i8*)
@@ -266,7 +266,7 @@ lpad30:                                           ; preds = %catch25
   call void @llvm.eh.endcatch() #2
   br label %catch.dispatch36
 
-lpad35:                                           ; preds = %try.cont33
+lpad35:                                           
   %30 = landingpad { i8*, i32 }
           catch i8* bitcast (%eh.CatchHandlerType* @llvm.eh.handlertype.H.0 to i8*)
           catch i8* bitcast (%eh.CatchHandlerType* @llvm.eh.handlertype.D.0 to i8*)
@@ -277,13 +277,13 @@ lpad35:                                           ; preds = %try.cont33
   store i32 %32, i32* %ehselector.slot
   br label %catch.dispatch36
 
-catch.dispatch36:                                 ; preds = %lpad35, %lpad30, %catch.dispatch22
+catch.dispatch36:                                 
   %sel37 = load i32, i32* %ehselector.slot
   %33 = call i32 @llvm.eh.typeid.for(i8* bitcast (%eh.CatchHandlerType* @llvm.eh.handlertype.H.0 to i8*)) #2
   %matches38 = icmp eq i32 %sel37, %33
   br i1 %matches38, label %catch53, label %catch.fallthrough
 
-catch53:                                          ; preds = %catch.dispatch36
+catch53:                                          
   %exn54 = load i8*, i8** %exn.slot
   %34 = bitcast i32* %x56 to i8*
   call void @llvm.eh.begincatch(i8* %exn54, i8* %34) #2
@@ -291,19 +291,19 @@ catch53:                                          ; preds = %catch.dispatch36
   %call59 = invoke i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @"\01??_C@_03PMGGPEJJ@?$CFd?6?$AA@", i32 0, i32 0), i32 %35)
           to label %invoke.cont58 unwind label %lpad57
 
-invoke.cont58:                                    ; preds = %catch53
+invoke.cont58:                                    
   call void @llvm.eh.endcatch() #2
   br label %try.cont60
 
-try.cont60:                                       ; preds = %invoke.cont58, %invoke.cont51, %invoke.cont43
+try.cont60:                                       
   ret i32 0
 
-catch.fallthrough:                                ; preds = %catch.dispatch36
+catch.fallthrough:                                
   %36 = call i32 @llvm.eh.typeid.for(i8* bitcast (%eh.CatchHandlerType* @llvm.eh.handlertype.D.0 to i8*)) #2
   %matches39 = icmp eq i32 %sel37, %36
   br i1 %matches39, label %catch45, label %catch40
 
-catch45:                                          ; preds = %catch.fallthrough
+catch45:                                          
   %exn46 = load i8*, i8** %exn.slot
   call void @llvm.eh.begincatch(i8* %exn46, i8* %c48) #2
   %37 = load i8, i8* %c48, align 1
@@ -311,21 +311,21 @@ catch45:                                          ; preds = %catch.fallthrough
   %call52 = invoke i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @"\01??_C@_03PJCJOCBM@?$CFc?6?$AA@", i32 0, i32 0), i32 %conv49)
           to label %invoke.cont51 unwind label %lpad50
 
-invoke.cont51:                                    ; preds = %catch45
+invoke.cont51:                                    
   call void @llvm.eh.endcatch() #2
   br label %try.cont60
 
-catch40:                                          ; preds = %catch.fallthrough
+catch40:                                          
   %exn41 = load i8*, i8** %exn.slot
   call void @llvm.eh.begincatch(i8* %exn41, i8* null) #2
   %call44 = invoke i32 (i8*, ...) @printf(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @"\01??_C@_04MPPNMCOK@?4?4?4?6?$AA@", i32 0, i32 0))
           to label %invoke.cont43 unwind label %lpad42
 
-invoke.cont43:                                    ; preds = %catch40
+invoke.cont43:                                    
   call void @llvm.eh.endcatch() #2
   br label %try.cont60
 
-lpad42:                                           ; preds = %catch40
+lpad42:                                           
   %38 = landingpad { i8*, i32 }
           cleanup
   %39 = extractvalue { i8*, i32 } %38, 0
@@ -335,7 +335,7 @@ lpad42:                                           ; preds = %catch40
   call void @llvm.eh.endcatch() #2
   br label %eh.resume
 
-lpad50:                                           ; preds = %catch45
+lpad50:                                           
   %41 = landingpad { i8*, i32 }
           cleanup
   %42 = extractvalue { i8*, i32 } %41, 0
@@ -345,7 +345,7 @@ lpad50:                                           ; preds = %catch45
   call void @llvm.eh.endcatch() #2
   br label %eh.resume
 
-lpad57:                                           ; preds = %catch53
+lpad57:                                           
   %44 = landingpad { i8*, i32 }
           cleanup
   %45 = extractvalue { i8*, i32 } %44, 0
@@ -355,14 +355,14 @@ lpad57:                                           ; preds = %catch53
   call void @llvm.eh.endcatch() #2
   br label %eh.resume
 
-eh.resume:                                        ; preds = %lpad57, %lpad50, %lpad42, %lpad16, %lpad10
+eh.resume:                                        
   %exn61 = load i8*, i8** %exn.slot
   %sel62 = load i32, i32* %ehselector.slot
   %lpad.val = insertvalue { i8*, i32 } undef, i8* %exn61, 0
   %lpad.val63 = insertvalue { i8*, i32 } %lpad.val, i32 %sel62, 1
   resume { i8*, i32 } %lpad.val63
 
-unreachable:                                      ; preds = %try.cont33, %try.cont19, %try.cont, %entry
+unreachable:                                      
   unreachable
 }
 
@@ -370,15 +370,15 @@ declare void @_CxxThrowException(i8*, %eh.ThrowInfo*)
 
 declare i32 @__CxxFrameHandler3(...)
 
-; Function Attrs: nounwind readnone
+
 declare i32 @llvm.eh.typeid.for(i8*) #1
 
-; Function Attrs: nounwind
+
 declare void @llvm.eh.begincatch(i8* nocapture, i8* nocapture) #2
 
 declare i32 @printf(i8*, ...) #3
 
-; Function Attrs: nounwind
+
 declare void @llvm.eh.endcatch() #2
 
 attributes #0 = { uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "unsafe-fp-math"="false" "use-soft-float"="false" }

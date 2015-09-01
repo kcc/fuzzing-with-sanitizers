@@ -1,4 +1,4 @@
-; RUN: opt < %s -globalopt
+
 
 @g = global i32 0
 

@@ -1,8 +1,8 @@
-; RUN: llc -march=hexagon < %s | FileCheck %s
 
-; CHECK: {
-; CHECK: loop0(.LBB
-; CHECK-NOT: loop0(##.LBB
+
+
+
+
 
 target datalayout = "e-p:32:32:32-i64:64:64-i32:32:32-i16:16:16-i1:32:32-f64:64:64-f32:32:32-v64:64:64-v32:32:32-a0:0-n16:32"
 target triple = "hexagon"
@@ -25,7 +25,7 @@ entry:
   %6 = ptrtoint i8* %out_buf to i32
   br label %for.body.i
 
-for.body.i:                                       ; preds = %for.body.i, %entry
+for.body.i:                                       
   %i.02.i = phi i32 [ 0, %entry ], [ %inc.i, %for.body.i ]
   %addr.addr.01.i = phi i32 [ %6, %entry ], [ %add.i14, %for.body.i ]
   tail call void asm sideeffect "dczeroa($0)", "r"(i32 %addr.addr.01.i) nounwind, !srcloc !4
@@ -34,27 +34,27 @@ for.body.i:                                       ; preds = %for.body.i, %entry
   %exitcond.i = icmp eq i32 %inc.i, 128
   br i1 %exitcond.i, label %while.cond.preheader, label %for.body.i
 
-while.cond.preheader:                             ; preds = %for.body.i
+while.cond.preheader:                             
   %and = and i32 %1, 3
   switch i32 %and, label %infloop.preheader [
     i32 0, label %exit_inflate.split
     i32 2, label %if.then.preheader
   ]
 
-if.then.preheader:                                ; preds = %while.cond.preheader
+if.then.preheader:                                
   br label %if.then
 
-infloop.preheader:                                ; preds = %while.cond.preheader
+infloop.preheader:                                
   br label %infloop
 
-if.then:                                          ; preds = %if.then.preheader, %if.then
+if.then:                                          
   tail call void @llvm.prefetch(i8* %incdec.ptr, i32 0, i32 3, i32 1)
   br label %if.then
 
-exit_inflate.split:                               ; preds = %while.cond.preheader
+exit_inflate.split:                               
   ret i32 0
 
-infloop:                                          ; preds = %infloop.preheader, %infloop
+infloop:                                          
   br label %infloop
 }
 

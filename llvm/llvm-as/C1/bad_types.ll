@@ -1,16 +1,16 @@
-; RUN: opt < %s -basicaa -slp-vectorizer -S -mcpu=corei7-avx | FileCheck %s
+
 
 target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
 define void @test1(x86_mmx %a, x86_mmx %b, i64* %ptr) {
-; Ensure we can handle x86_mmx values which are primitive and can be bitcast
-; with integer types but can't be put into a vector.
-;
-; CHECK-LABEL: @test1
-; CHECK:         store i64
-; CHECK:         store i64
-; CHECK:         ret void
+
+
+
+
+
+
+
 entry:
   %a.cast = bitcast x86_mmx %a to i64
   %b.cast = bitcast x86_mmx %b to i64
@@ -23,13 +23,13 @@ entry:
 }
 
 define void @test2(x86_mmx %a, x86_mmx %b) {
-; Same as @test1 but using phi-input vectorization instead of store
-; vectorization.
-;
-; CHECK-LABEL: @test2
-; CHECK:         and i64
-; CHECK:         and i64
-; CHECK:         ret void
+
+
+
+
+
+
+
 entry:
   br i1 undef, label %if.then, label %exit
 

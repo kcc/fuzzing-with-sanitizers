@@ -1,20 +1,20 @@
-; RUN: llc -mtriple=thumbv7-apple-ios -disable-block-placement < %s | FileCheck %s
-; RUN: llc -mtriple=armv7-apple-ios   -disable-block-placement < %s | FileCheck %s
 
-; LSR should compare against the post-incremented induction variable.
-; In this case, the immediate value is -2 which requires a cmn instruction.
-;
-; CHECK-LABEL: f:
-; CHECK: %for.body
-; CHECK: sub{{.*}}[[IV:r[0-9]+]], #2
-; CHECK: cmn{{.*}}[[IV]], #2
-; CHECK: bne
+
+
+
+
+
+
+
+
+
+
 define i32 @f(i32* nocapture %a, i32 %i) nounwind readonly ssp {
 entry:
   %cmp3 = icmp eq i32 %i, -2
   br i1 %cmp3, label %for.end, label %for.body
 
-for.body:                                         ; preds = %entry, %for.body
+for.body:                                         
   %bi.06 = phi i32 [ %i.addr.0.bi.0, %for.body ], [ 0, %entry ]
   %i.addr.05 = phi i32 [ %sub, %for.body ], [ %i, %entry ]
   %b.04 = phi i32 [ %.b.0, %for.body ], [ 0, %entry ]
@@ -27,7 +27,7 @@ for.body:                                         ; preds = %entry, %for.body
   %cmp = icmp eq i32 %i.addr.05, 0
   br i1 %cmp, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   %bi.0.lcssa = phi i32 [ 0, %entry ], [ %i.addr.0.bi.0, %for.body ]
   ret i32 %bi.0.lcssa
 }

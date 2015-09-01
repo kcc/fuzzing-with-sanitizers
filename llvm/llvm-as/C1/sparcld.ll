@@ -1,24 +1,24 @@
-; RUN: llvm-as < %s | llvm-dis > %t
-; RUN: llvm-as < %t | llvm-dis > %t2
-; RUN: diff %t %t2
-; ModuleID = '<stdin>'
-@ld = external global fp128		; <fp128*> [#uses=1]
-@d = global double 4.050000e+00, align 8		; <double*> [#uses=1]
-@f = global float 0x4010333340000000		; <float*> [#uses=1]
+
+
+
+
+@ld = external global fp128		
+@d = global double 4.050000e+00, align 8		
+@f = global float 0x4010333340000000		
 
 define i32 @foo() {
 entry:
-	%retval = alloca i32, align 4		; <i32*> [#uses=1]
-	%"alloca point" = bitcast i32 0 to i32		; <i32> [#uses=0]
-	%tmp = load float, float* @f		; <float> [#uses=1]
-	%tmp1 = fpext float %tmp to double		; <double> [#uses=1]
-	%tmp2 = load double, double* @d		; <double> [#uses=1]
-	%tmp3 = fmul double %tmp1, %tmp2		; <double> [#uses=1]
-	%tmp4 = fpext double %tmp3 to fp128		; <fp128> [#uses=1]
+	%retval = alloca i32, align 4		
+	%"alloca point" = bitcast i32 0 to i32		
+	%tmp = load float, float* @f		
+	%tmp1 = fpext float %tmp to double		
+	%tmp2 = load double, double* @d		
+	%tmp3 = fmul double %tmp1, %tmp2		
+	%tmp4 = fpext double %tmp3 to fp128		
 	store fp128 %tmp4, fp128* @ld
 	br label %return
 
-return:		; preds = %entry
-	%retval4 = load i32, i32* %retval		; <i32> [#uses=1]
+return:		
+	%retval4 = load i32, i32* %retval		
 	ret i32 %retval4
 }

@@ -1,4 +1,4 @@
-; RUN: llc < %s -verify-machineinstrs -mtriple=aarch64-none-linux-gnu -mcpu=cortex-a57 -mattr=+neon -fp-contract=fast -regalloc=pbqp -pbqp-coalescing | FileCheck %s
+
 
 %pl = type { i32, i32, i32, i32, %p*, %l*, double* }
 %p = type { i32, %ca*, [27 x %ca*], %v*, %v*, %v*, i32 }
@@ -7,9 +7,9 @@
 %l = type opaque
 %rs = type { i32, i32, i32, i32, %v*, %v*, [21 x double], %v, %v, %v, double, double, double }
 
-;CHECK-LABEL: test_csr
+
 define void @test_csr(%pl* nocapture readnone %this, %rs* nocapture %r) align 2 {
-;CHECK-NOT: stp {{d[0-9]+}}, {{d[0-9]+}}
+
 entry:
   %x.i = getelementptr inbounds %rs, %rs* %r, i64 0, i32 7, i32 0
   %y.i = getelementptr inbounds %rs, %rs* %r, i64 0, i32 7, i32 1
@@ -27,7 +27,7 @@ entry:
   %cmp70 = icmp sgt i32 %1, 0
   br i1 %cmp70, label %for.body.lr.ph, label %for.end
 
-for.body.lr.ph:                                   ; preds = %entry
+for.body.lr.ph:                                   
   %fn = getelementptr inbounds %rs, %rs* %r, i64 0, i32 4
   %2 = load %v*, %v** %fn, align 8
   %fs = getelementptr inbounds %rs, %rs* %r, i64 0, i32 5
@@ -35,7 +35,7 @@ for.body.lr.ph:                                   ; preds = %entry
   %4 = sext i32 %1 to i64
   br label %for.body
 
-for.body:                                         ; preds = %for.body.lr.ph, %for.body
+for.body:                                         
   %5 = phi double [ 0.000000e+00, %for.body.lr.ph ], [ %add6.i, %for.body ]
   %indvars.iv = phi i64 [ 0, %for.body.lr.ph ], [ %indvars.iv.next, %for.body ]
   %6 = phi <2 x double> [ zeroinitializer, %for.body.lr.ph ], [ %17, %for.body ]
@@ -79,13 +79,13 @@ for.body:                                         ; preds = %for.body.lr.ph, %fo
   %cmp = icmp slt i64 %indvars.iv.next, %4
   br i1 %cmp, label %for.body, label %for.end.loopexit
 
-for.end.loopexit:                                 ; preds = %for.body
+for.end.loopexit:                                 
   br label %for.end
 
-for.end:                                          ; preds = %for.end.loopexit, %entry
+for.end:                                          
   ret void
 }
 
-; Function Attrs: nounwind
+
 declare void @llvm.memset.p0i8.i64(i8* nocapture, i8, i64, i32, i1)
 

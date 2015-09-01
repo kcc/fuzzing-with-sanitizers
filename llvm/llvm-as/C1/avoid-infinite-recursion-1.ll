@@ -1,38 +1,38 @@
-; RUN: opt < %s -iv-users
-; PR4538
 
-; ModuleID = 'bugpoint-reduced-simplified.bc'
+
+
+
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128"
 target triple = "x86_64-unknown-freebsd8.0"
 module asm ".ident\09\22$FreeBSD: head/sys/kern/vfs_subr.c 195285 2009-07-02 14:19:33Z jamie $\22"
 module asm ".section set_pcpu, \22aw\22, @progbits"
 module asm ".previous"
-	%0 = type <{ [40 x i8] }>		; type %0
-	%1 = type <{ %struct.vm_object*, %struct.vm_object** }>		; type %1
-	%2 = type <{ %struct.vm_object* }>		; type %2
-	%3 = type <{ %struct.vm_page*, %struct.vm_page** }>		; type %3
-	%4 = type <{ %struct.pv_entry*, %struct.pv_entry** }>		; type %4
-	%5 = type <{ %struct.vm_reserv* }>		; type %5
-	%6 = type <{ %struct.bufobj*, %struct.bufobj** }>		; type %6
-	%7 = type <{ %struct.proc*, %struct.proc** }>		; type %7
-	%8 = type <{ %struct.thread*, %struct.thread** }>		; type %8
-	%9 = type <{ %struct.prison*, %struct.prison** }>		; type %9
-	%10 = type <{ %struct.prison* }>		; type %10
-	%11 = type <{ %struct.task* }>		; type %11
-	%12 = type <{ %struct.osd*, %struct.osd** }>		; type %12
-	%13 = type <{ %struct.proc* }>		; type %13
-	%14 = type <{ %struct.ksiginfo*, %struct.ksiginfo** }>		; type %14
-	%15 = type <{ %struct.pv_chunk*, %struct.pv_chunk** }>		; type %15
-	%16 = type <{ %struct.pgrp*, %struct.pgrp** }>		; type %16
-	%17 = type <{ %struct.knote*, %struct.knote** }>		; type %17
-	%18 = type <{ %struct.ktr_request*, %struct.ktr_request** }>		; type %18
-	%19 = type <{ %struct.mqueue_notifier* }>		; type %19
-	%20 = type <{ %struct.turnstile* }>		; type %20
-	%21 = type <{ %struct.namecache* }>		; type %21
-	%22 = type <{ %struct.namecache*, %struct.namecache** }>		; type %22
-	%23 = type <{ %struct.lockf*, %struct.lockf** }>		; type %23
-	%24 = type <{ %struct.lockf_entry*, %struct.lockf_entry** }>		; type %24
-	%25 = type <{ %struct.lockf_edge*, %struct.lockf_edge** }>		; type %25
+	%0 = type <{ [40 x i8] }>		
+	%1 = type <{ %struct.vm_object*, %struct.vm_object** }>		
+	%2 = type <{ %struct.vm_object* }>		
+	%3 = type <{ %struct.vm_page*, %struct.vm_page** }>		
+	%4 = type <{ %struct.pv_entry*, %struct.pv_entry** }>		
+	%5 = type <{ %struct.vm_reserv* }>		
+	%6 = type <{ %struct.bufobj*, %struct.bufobj** }>		
+	%7 = type <{ %struct.proc*, %struct.proc** }>		
+	%8 = type <{ %struct.thread*, %struct.thread** }>		
+	%9 = type <{ %struct.prison*, %struct.prison** }>		
+	%10 = type <{ %struct.prison* }>		
+	%11 = type <{ %struct.task* }>		
+	%12 = type <{ %struct.osd*, %struct.osd** }>		
+	%13 = type <{ %struct.proc* }>		
+	%14 = type <{ %struct.ksiginfo*, %struct.ksiginfo** }>		
+	%15 = type <{ %struct.pv_chunk*, %struct.pv_chunk** }>		
+	%16 = type <{ %struct.pgrp*, %struct.pgrp** }>		
+	%17 = type <{ %struct.knote*, %struct.knote** }>		
+	%18 = type <{ %struct.ktr_request*, %struct.ktr_request** }>		
+	%19 = type <{ %struct.mqueue_notifier* }>		
+	%20 = type <{ %struct.turnstile* }>		
+	%21 = type <{ %struct.namecache* }>		
+	%22 = type <{ %struct.namecache*, %struct.namecache** }>		
+	%23 = type <{ %struct.lockf*, %struct.lockf** }>		
+	%24 = type <{ %struct.lockf_entry*, %struct.lockf_entry** }>		
+	%25 = type <{ %struct.lockf_edge*, %struct.lockf_edge** }>		
 	%struct.__siginfo = type <{ i32, i32, i32, i32, i32, i32, i8*, %union.sigval, %0 }>
 	%struct.__sigset = type <{ [4 x i32] }>
 	%struct.acl = type <{ i32, i32, [4 x i32], [254 x %struct.acl_entry] }>
@@ -211,144 +211,144 @@ define i32 @vlrureclaim(%struct.mount* %mp) nounwind {
 entry:
 	br i1 undef, label %if.then11, label %do.end
 
-if.then11:		; preds = %entry
+if.then11:		
 	br label %do.end
 
-do.end:		; preds = %if.then11, %entry
+do.end:		
 	br label %while.cond.outer
 
-while.cond.outer:		; preds = %while.cond.outer.backedge, %do.end
-	%count.0.ph = phi i32 [ undef, %do.end ], [ undef, %while.cond.outer.backedge ]		; <i32> [#uses=1]
+while.cond.outer:		
+	%count.0.ph = phi i32 [ undef, %do.end ], [ undef, %while.cond.outer.backedge ]		
 	br label %while.cond
 
-while.cond:		; preds = %next_iter, %while.cond.outer
-	%count.0 = phi i32 [ %dec, %next_iter ], [ %count.0.ph, %while.cond.outer ]		; <i32> [#uses=2]
-	%cmp21 = icmp eq i32 %count.0, 0		; <i1> [#uses=1]
+while.cond:		
+	%count.0 = phi i32 [ %dec, %next_iter ], [ %count.0.ph, %while.cond.outer ]		
+	%cmp21 = icmp eq i32 %count.0, 0		
 	br i1 %cmp21, label %do.body288.loopexit4, label %while.body
 
-while.body:		; preds = %while.cond
+while.body:		
 	br label %while.cond27
 
-while.cond27:		; preds = %while.body36, %while.body
+while.cond27:		
 	br i1 undef, label %do.body288.loopexit, label %land.rhs
 
-land.rhs:		; preds = %while.cond27
+land.rhs:		
 	br i1 undef, label %while.body36, label %while.end
 
-while.body36:		; preds = %land.rhs
+while.body36:		
 	br label %while.cond27
 
-while.end:		; preds = %land.rhs
+while.end:		
 	br i1 undef, label %do.body288.loopexit4, label %do.body46
 
-do.body46:		; preds = %while.end
+do.body46:		
 	br i1 undef, label %if.else64, label %if.then53
 
-if.then53:		; preds = %do.body46
+if.then53:		
 	br label %if.end72
 
-if.else64:		; preds = %do.body46
+if.else64:		
 	br label %if.end72
 
-if.end72:		; preds = %if.else64, %if.then53
-	%dec = add i32 %count.0, -1		; <i32> [#uses=2]
+if.end72:		
+	%dec = add i32 %count.0, -1		
 	br i1 undef, label %next_iter, label %if.end111
 
-if.end111:		; preds = %if.end72
+if.end111:		
 	br i1 undef, label %lor.lhs.false, label %do.body145
 
-lor.lhs.false:		; preds = %if.end111
+lor.lhs.false:		
 	br i1 undef, label %lor.lhs.false122, label %do.body145
 
-lor.lhs.false122:		; preds = %lor.lhs.false
+lor.lhs.false122:		
 	br i1 undef, label %lor.lhs.false128, label %do.body145
 
-lor.lhs.false128:		; preds = %lor.lhs.false122
+lor.lhs.false128:		
 	br i1 undef, label %do.body162, label %land.lhs.true
 
-land.lhs.true:		; preds = %lor.lhs.false128
+land.lhs.true:		
 	br i1 undef, label %do.body145, label %do.body162
 
-do.body145:		; preds = %land.lhs.true, %lor.lhs.false122, %lor.lhs.false, %if.end111
+do.body145:		
 	br i1 undef, label %if.then156, label %next_iter
 
-if.then156:		; preds = %do.body145
+if.then156:		
 	br label %next_iter
 
-do.body162:		; preds = %land.lhs.true, %lor.lhs.false128
+do.body162:		
 	br i1 undef, label %if.then173, label %do.end177
 
-if.then173:		; preds = %do.body162
+if.then173:		
 	br label %do.end177
 
-do.end177:		; preds = %if.then173, %do.body162
+do.end177:		
 	br i1 undef, label %do.body185, label %if.then182
 
-if.then182:		; preds = %do.end177
+if.then182:		
 	br label %next_iter_mntunlocked
 
-do.body185:		; preds = %do.end177
+do.body185:		
 	br i1 undef, label %if.then196, label %do.end202
 
-if.then196:		; preds = %do.body185
+if.then196:		
 	br label %do.end202
 
-do.end202:		; preds = %if.then196, %do.body185
+do.end202:		
 	br i1 undef, label %lor.lhs.false207, label %if.then231
 
-lor.lhs.false207:		; preds = %do.end202
+lor.lhs.false207:		
 	br i1 undef, label %lor.lhs.false214, label %if.then231
 
-lor.lhs.false214:		; preds = %lor.lhs.false207
+lor.lhs.false214:		
 	br i1 undef, label %do.end236, label %land.lhs.true221
 
-land.lhs.true221:		; preds = %lor.lhs.false214
+land.lhs.true221:		
 	br i1 undef, label %if.then231, label %do.end236
 
-if.then231:		; preds = %land.lhs.true221, %lor.lhs.false207, %do.end202
+if.then231:		
 	br label %next_iter_mntunlocked
 
-do.end236:		; preds = %land.lhs.true221, %lor.lhs.false214
+do.end236:		
 	br label %next_iter_mntunlocked
 
-next_iter_mntunlocked:		; preds = %do.end236, %if.then231, %if.then182
+next_iter_mntunlocked:		
 	br i1 undef, label %yield, label %do.body269
 
-next_iter:		; preds = %if.then156, %do.body145, %if.end72
-	%rem2482 = and i32 %dec, 255		; <i32> [#uses=1]
-	%cmp249 = icmp eq i32 %rem2482, 0		; <i1> [#uses=1]
+next_iter:		
+	%rem2482 = and i32 %dec, 255		
+	%cmp249 = icmp eq i32 %rem2482, 0		
 	br i1 %cmp249, label %do.body253, label %while.cond
 
-do.body253:		; preds = %next_iter
+do.body253:		
 	br i1 undef, label %if.then264, label %yield
 
-if.then264:		; preds = %do.body253
+if.then264:		
 	br label %yield
 
-yield:		; preds = %if.then264, %do.body253, %next_iter_mntunlocked
+yield:		
 	br label %do.body269
 
-do.body269:		; preds = %yield, %next_iter_mntunlocked
+do.body269:		
 	br i1 undef, label %if.then280, label %while.cond.outer.backedge
 
-if.then280:		; preds = %do.body269
+if.then280:		
 	br label %while.cond.outer.backedge
 
-while.cond.outer.backedge:		; preds = %if.then280, %do.body269
+while.cond.outer.backedge:		
 	br label %while.cond.outer
 
-do.body288.loopexit:		; preds = %while.cond27
+do.body288.loopexit:		
 	br label %do.body288
 
-do.body288.loopexit4:		; preds = %while.end, %while.cond
+do.body288.loopexit4:		
 	br label %do.body288
 
-do.body288:		; preds = %do.body288.loopexit4, %do.body288.loopexit
+do.body288:		
 	br i1 undef, label %if.then299, label %do.end303
 
-if.then299:		; preds = %do.body288
+if.then299:		
 	br label %do.end303
 
-do.end303:		; preds = %if.then299, %do.body288
+do.end303:		
 	ret i32 undef
 }

@@ -1,6 +1,6 @@
-; RUN: llc -mtriple=arm64-apple-darwin %s -o - | FileCheck %s
 
-; CHECK: mrs x0, CPM_IOACC_CTL_EL3
+
+
 
 define void @foo1() #0 {
 entry:

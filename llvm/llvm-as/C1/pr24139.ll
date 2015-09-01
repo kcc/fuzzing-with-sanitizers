@@ -1,11 +1,11 @@
-; RUN: llc < %s -mtriple=x86_64-unknown-unknown -mattr=+avx | FileCheck %s
 
-; Check that we do not get excessive spilling from splitting of constant live ranges.
 
-; CHECK-LABEL: PR24139:
-; CHECK: # 16-byte Spill
-; CHECK-NOT: # 16-byte Spill
-; CHECK: retq
+
+
+
+
+
+
 
 define <2 x double> @PR24139(<2 x double> %arg, <2 x double> %arg1, <2 x double> %arg2) {
   %tmp = bitcast <2 x double> %arg to <4 x float>

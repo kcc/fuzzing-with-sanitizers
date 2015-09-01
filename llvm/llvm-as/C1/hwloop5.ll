@@ -1,11 +1,11 @@
-; RUN: llc -O3 -march=hexagon -mcpu=hexagonv5 < %s | FileCheck %s
-;
-; Generate hardware loop when unknown trip count loop is vectorized.
 
-; CHECK: loop0(.LBB{{[0-9]*}}_{{[0-9]*}}, r{{[0-9]+}})
-; CHECK: endloop0
-; CHECK: loop0(.LBB{{[0-9]*}}_{{[0-9]*}}, r{{[0-9]+}})
-; CHECK: endloop0
+
+
+
+
+
+
+
 
 @A = common global [1000 x i32] zeroinitializer, align 8
 @B = common global [1000 x i32] zeroinitializer, align 8

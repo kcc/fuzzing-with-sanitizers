@@ -1,42 +1,42 @@
-; RUN: llc < %s
+
 
 target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:32-f32:32:32-f64:32:32-v64:64:64-v128:128:128-a0:0:32-n32"
 target triple = "thumbv7-apple-darwin3.0.0-iphoneos"
 
-@length = common global i32 0, align 4            ; <i32*> [#uses=1]
+@length = common global i32 0, align 4            
 
 define void @x0(i8* nocapture %buf, i32 %nbytes) nounwind optsize {
 entry:
   tail call void @llvm.dbg.value(metadata i8* %buf, i64 0, metadata !0, metadata !DIExpression()), !dbg !15
   tail call void @llvm.dbg.value(metadata i32 %nbytes, i64 0, metadata !8, metadata !DIExpression()), !dbg !16
-  %tmp = load i32, i32* @length, !dbg !17              ; <i32> [#uses=3]
-  %cmp = icmp eq i32 %tmp, -1, !dbg !17           ; <i1> [#uses=1]
-  %cmp.not = xor i1 %cmp, true                    ; <i1> [#uses=1]
-  %cmp3 = icmp ult i32 %tmp, %nbytes, !dbg !17    ; <i1> [#uses=1]
-  %or.cond = and i1 %cmp.not, %cmp3               ; <i1> [#uses=1]
+  %tmp = load i32, i32* @length, !dbg !17              
+  %cmp = icmp eq i32 %tmp, -1, !dbg !17           
+  %cmp.not = xor i1 %cmp, true                    
+  %cmp3 = icmp ult i32 %tmp, %nbytes, !dbg !17    
+  %or.cond = and i1 %cmp.not, %cmp3               
   tail call void @llvm.dbg.value(metadata i32 %tmp, i64 0, metadata !8, metadata !DIExpression()), !dbg !17
-  %nbytes.addr.0 = select i1 %or.cond, i32 %tmp, i32 %nbytes ; <i32> [#uses=1]
+  %nbytes.addr.0 = select i1 %or.cond, i32 %tmp, i32 %nbytes 
   tail call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !10, metadata !DIExpression()), !dbg !19
   br label %while.cond, !dbg !20
 
-while.cond:                                       ; preds = %while.body, %entry
-  %0 = phi i32 [ 0, %entry ], [ %inc, %while.body ] ; <i32> [#uses=3]
-  %buf.addr.0 = getelementptr i8, i8* %buf, i32 %0    ; <i8*> [#uses=1]
-  %cmp7 = icmp ult i32 %0, %nbytes.addr.0, !dbg !20 ; <i1> [#uses=1]
+while.cond:                                       
+  %0 = phi i32 [ 0, %entry ], [ %inc, %while.body ] 
+  %buf.addr.0 = getelementptr i8, i8* %buf, i32 %0    
+  %cmp7 = icmp ult i32 %0, %nbytes.addr.0, !dbg !20 
   br i1 %cmp7, label %land.rhs, label %while.end, !dbg !20
 
-land.rhs:                                         ; preds = %while.cond
-  %call = tail call i32 @x1() nounwind optsize, !dbg !20 ; <i32> [#uses=2]
-  %cmp9 = icmp eq i32 %call, -1, !dbg !20         ; <i1> [#uses=1]
+land.rhs:                                         
+  %call = tail call i32 @x1() nounwind optsize, !dbg !20 
+  %cmp9 = icmp eq i32 %call, -1, !dbg !20         
   br i1 %cmp9, label %while.end, label %while.body, !dbg !20
 
-while.body:                                       ; preds = %land.rhs
-  %conv = trunc i32 %call to i8, !dbg !21         ; <i8> [#uses=1]
+while.body:                                       
+  %conv = trunc i32 %call to i8, !dbg !21         
   store i8 %conv, i8* %buf.addr.0, !dbg !21
-  %inc = add i32 %0, 1, !dbg !23                  ; <i32> [#uses=1]
+  %inc = add i32 %0, 1, !dbg !23                  
   br label %while.cond, !dbg !24
 
-while.end:                                        ; preds = %land.rhs, %while.cond
+while.end:                                        
   ret void, !dbg !25
 }
 

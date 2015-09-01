@@ -1,7 +1,7 @@
-; For PR1065. This causes an assertion in instcombine if a select with two cmp
-; operands is encountered.
-; RUN: opt < %s -instcombine -disable-output
-; END.
+
+
+
+
 
 target datalayout = "e-p:32:32"
 target triple = "i686-pc-linux-gnu"
@@ -14,17 +14,17 @@ target triple = "i686-pc-linux-gnu"
 
 define void @mng_write_basi() {
 entry:
-	%tmp = load i8, i8* null		; <i8> [#uses=1]
-	%tmp.upgrd.1 = icmp ugt i8 %tmp, 8		; <i1> [#uses=1]
-	%tmp.upgrd.2 = load i16, i16* null		; <i16> [#uses=2]
-	%tmp3 = icmp eq i16 %tmp.upgrd.2, 255		; <i1> [#uses=1]
-	%tmp7 = icmp eq i16 %tmp.upgrd.2, -1		; <i1> [#uses=1]
-	%bOpaque.0.in = select i1 %tmp.upgrd.1, i1 %tmp7, i1 %tmp3		; <i1> [#uses=1]
+	%tmp = load i8, i8* null		
+	%tmp.upgrd.1 = icmp ugt i8 %tmp, 8		
+	%tmp.upgrd.2 = load i16, i16* null		
+	%tmp3 = icmp eq i16 %tmp.upgrd.2, 255		
+	%tmp7 = icmp eq i16 %tmp.upgrd.2, -1		
+	%bOpaque.0.in = select i1 %tmp.upgrd.1, i1 %tmp7, i1 %tmp3		
 	br i1 %bOpaque.0.in, label %cond_next90, label %bb95
 
-cond_next90:		; preds = %entry
+cond_next90:		
 	ret void
 
-bb95:		; preds = %entry
+bb95:		
 	ret void
 }

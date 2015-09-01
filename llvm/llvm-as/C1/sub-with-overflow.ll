@@ -1,4 +1,4 @@
-; RUN: llc < %s -mtriple=i686-linux | FileCheck %s
+
 
 @ok = internal constant [4 x i8] c"%d\0A\00"
 @no = internal constant [4 x i8] c"no\0A\00"
@@ -18,9 +18,9 @@ overflow:
   %t2 = tail call i32 (i8*, ...) @printf( i8* getelementptr ([4 x i8], [4 x i8]* @no, i32 0, i32 0) ) nounwind
   ret i1 false
 
-; CHECK-LABEL: func1:
-; CHECK: subl 20(%esp)
-; CHECK-NEXT: jno
+
+
+
 }
 
 define i1 @func2(i32 %v1, i32 %v2) nounwind {
@@ -38,9 +38,9 @@ carry:
   %t2 = tail call i32 (i8*, ...) @printf( i8* getelementptr ([4 x i8], [4 x i8]* @no, i32 0, i32 0) ) nounwind
   ret i1 false
 
-; CHECK-LABEL: func2:
-; CHECK: subl 20(%esp)
-; CHECK-NEXT: jae
+
+
+
 }
 
 declare i32 @printf(i8*, ...) nounwind
@@ -53,7 +53,7 @@ entry:
   %obit = extractvalue {i32, i1} %t, 1
   ret i1 %obit
 
-; CHECK-LABEL: func3:
-; CHECK: decl
-; CHECK-NEXT: seto
+
+
+
 }

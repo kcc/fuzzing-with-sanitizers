@@ -1,42 +1,42 @@
-; REQUIRES: object-emission
 
-; RUN: %llc_dwarf -O0 -filetype=obj < %s | llvm-dwarfdump -debug-dump=info - | FileCheck %s
 
-; bool f();
-; inline __attribute__((always_inline)) int f1() {
-;   if (bool b = f())
-;     return 1;
-;   return 2;
-; }
-;
-; inline __attribute__((always_inline)) int f2() {
-; # 2 "y.cc"
-;   if (bool b = f())
-;     return 3;
-;   return 4;
-; }
-;
-; int main() {
-;   f1();
-;   f2();
-; }
 
-; Ensure that lexical_blocks within inlined_subroutines are preserved/emitted.
-; CHECK: DW_TAG_inlined_subroutine
-; CHECK-NOT: DW_TAG
-; CHECK-NOT: NULL
-; CHECK: DW_TAG_lexical_block
-; CHECK-NOT: DW_TAG
-; CHECK-NOT: NULL
-; CHECK: DW_TAG_variable
-; Ensure that file changes don't interfere with creating inlined subroutines.
-; (see the line directive inside 'f2' in thesource)
-; CHECK: DW_TAG_inlined_subroutine
-; CHECK:   DW_TAG_variable
-; CHECK-NOT: DW_TAG
-; CHECK:     DW_AT_abstract_origin
 
-; Function Attrs: uwtable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define i32 @main() #0 {
 entry:
   %retval.i2 = alloca i32, align 4
@@ -51,15 +51,15 @@ entry:
   %tobool.i = trunc i8 %0 to i1, !dbg !19
   br i1 %tobool.i, label %if.then.i, label %if.end.i, !dbg !19
 
-if.then.i:                                        ; preds = %entry
+if.then.i:                                        
   store i32 1, i32* %retval.i, !dbg !21
   br label %_Z2f1v.exit, !dbg !21
 
-if.end.i:                                         ; preds = %entry
+if.end.i:                                         
   store i32 2, i32* %retval.i, !dbg !22
   br label %_Z2f1v.exit, !dbg !22
 
-_Z2f1v.exit:                                      ; preds = %if.then.i, %if.end.i
+_Z2f1v.exit:                                      
   %1 = load i32, i32* %retval.i, !dbg !23
   call void @llvm.dbg.declare(metadata i8* %b.i3, metadata !24, metadata !DIExpression()), !dbg !27
   %call.i4 = call zeroext i1 @_Z1fv(), !dbg !27
@@ -69,20 +69,20 @@ _Z2f1v.exit:                                      ; preds = %if.then.i, %if.end.
   %tobool.i6 = trunc i8 %2 to i1, !dbg !27
   br i1 %tobool.i6, label %if.then.i7, label %if.end.i8, !dbg !27
 
-if.then.i7:                                       ; preds = %_Z2f1v.exit
+if.then.i7:                                       
   store i32 3, i32* %retval.i2, !dbg !29
   br label %_Z2f2v.exit, !dbg !29
 
-if.end.i8:                                        ; preds = %_Z2f1v.exit
+if.end.i8:                                        
   store i32 4, i32* %retval.i2, !dbg !30
   br label %_Z2f2v.exit, !dbg !30
 
-_Z2f2v.exit:                                      ; preds = %if.then.i7, %if.end.i8
+_Z2f2v.exit:                                      
   %3 = load i32, i32* %retval.i2, !dbg !31
   ret i32 0, !dbg !32
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
 declare zeroext i1 @_Z1fv() #2

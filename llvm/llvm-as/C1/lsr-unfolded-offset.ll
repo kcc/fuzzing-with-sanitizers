@@ -1,14 +1,14 @@
-; RUN: llc -regalloc=greedy -arm-atomic-cfg-tidy=0 < %s | FileCheck %s
 
-; LSR shouldn't introduce more induction variables than needed, increasing
-; register pressure and therefore spilling. There is more room for improvement
-; here.
 
-; CHECK: sub sp, #{{40|36|32|28|24}}
 
-; CHECK: %for.inc
-; CHECK-NOT: ldr
-; CHECK: add
+
+
+
+
+
+
+
+
 
 target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:32-f32:32:32-f64:32:32-v64:32:64-v128:32:128-a0:0:32-n32"
 target triple = "thumbv7-apple-ios"
@@ -20,7 +20,7 @@ entry:
   %cmp79 = icmp sgt i32 %num_entries, 0
   br i1 %cmp79, label %outer.loop, label %for.end72
 
-outer.loop:                                 ; preds = %for.inc69, %entry
+outer.loop:                                 
   %overlap.081 = phi i32 [ %overlap.4, %for.inc69 ], [ 0, %entry ]
   %0 = phi i32 [ %inc71, %for.inc69 ], [ 0, %entry ]
   %offset = getelementptr %struct.partition_entry, %struct.partition_entry* %part, i32 %0, i32 2
@@ -30,13 +30,13 @@ outer.loop:                                 ; preds = %for.inc69, %entry
   %add = add nsw i64 %tmp15, %tmp5
   br label %inner.loop
 
-inner.loop:                                       ; preds = %for.inc, %outer.loop
+inner.loop:                                       
   %overlap.178 = phi i32 [ %overlap.081, %outer.loop ], [ %overlap.4, %for.inc ]
   %1 = phi i32 [ 0, %outer.loop ], [ %inc, %for.inc ]
   %cmp23 = icmp eq i32 %0, %1
   br i1 %cmp23, label %for.inc, label %if.end
 
-if.end:                                           ; preds = %inner.loop
+if.end:                                           
   %len39 = getelementptr %struct.partition_entry, %struct.partition_entry* %part, i32 %1, i32 3
   %offset28 = getelementptr %struct.partition_entry, %struct.partition_entry* %part, i32 %1, i32 2
   %tmp29 = load i64, i64* %offset28, align 4
@@ -55,21 +55,21 @@ if.end:                                           ; preds = %inner.loop
   %or.cond75 = or i1 %cmp61, %cmp65
   br i1 %or.cond75, label %for.inc, label %if.then66
 
-if.then66:                                        ; preds = %if.end
+if.then66:                                        
   br label %for.inc
 
-for.inc:                                          ; preds = %if.end, %if.then66, %inner.loop
+for.inc:                                          
   %overlap.4 = phi i32 [ %overlap.178, %inner.loop ], [ 1, %if.then66 ], [ %overlap.3, %if.end ]
   %inc = add nsw i32 %1, 1
   %exitcond = icmp eq i32 %inc, %num_entries
   br i1 %exitcond, label %for.inc69, label %inner.loop
 
-for.inc69:                                        ; preds = %for.inc
+for.inc69:                                        
   %inc71 = add nsw i32 %0, 1
   %exitcond83 = icmp eq i32 %inc71, %num_entries
   br i1 %exitcond83, label %for.end72, label %outer.loop
 
-for.end72:                                        ; preds = %for.inc69, %entry
+for.end72:                                        
   %overlap.0.lcssa = phi i32 [ 0, %entry ], [ %overlap.4, %for.inc69 ]
   ret i32 %overlap.0.lcssa
 }

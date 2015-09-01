@@ -1,14 +1,14 @@
-; Test loop tuning.
-;
-; RUN: llc < %s -mtriple=s390x-linux-gnu -mcpu=z10 | FileCheck %s
 
-; Test that strength reduction is applied to addresses with a scale factor,
-; but that indexed addressing can still be used.
+
+
+
+
+
 define void @f1(i32 *%dest, i32 %a) {
-; CHECK-LABEL: f1:
-; CHECK-NOT: sllg
-; CHECK: st %r3, 0({{%r[1-5],%r[1-5]}})
-; CHECK: br %r14
+
+
+
+
 entry:
   br label %loop
 
@@ -24,13 +24,13 @@ exit:
   ret void
 }
 
-; Test a loop that should be converted into dbr form and then use BRCT.
+
 define void @f2(i32 *%src, i32 *%dest) {
-; CHECK-LABEL: f2:
-; CHECK: lhi [[REG:%r[0-5]]], 100
-; CHECK: [[LABEL:\.[^:]*]]:{{.*}} %loop
-; CHECK: brct [[REG]], [[LABEL]]
-; CHECK: br %r14
+
+
+
+
+
 entry:
   br label %loop
 
@@ -54,13 +54,13 @@ exit:
   ret void
 }
 
-; Like f2, but for BRCTG.
+
 define void @f3(i64 *%src, i64 *%dest) {
-; CHECK-LABEL: f3:
-; CHECK: lghi [[REG:%r[0-5]]], 100
-; CHECK: [[LABEL:\.[^:]*]]:{{.*}} %loop
-; CHECK: brctg [[REG]], [[LABEL]]
-; CHECK: br %r14
+
+
+
+
+
 entry:
   br label %loop
 
@@ -84,16 +84,16 @@ exit:
   ret void
 }
 
-; Test a loop with a 64-bit decremented counter in which the 32-bit
-; low part of the counter is used after the decrement.  This is an example
-; of a subregister use being the only thing that blocks a conversion to BRCTG.
+
+
+
 define void @f4(i32 *%src, i32 *%dest, i64 *%dest2, i64 %count) {
-; CHECK-LABEL: f4:
-; CHECK: aghi [[REG:%r[0-5]]], -1
-; CHECK: lr [[REG2:%r[0-5]]], [[REG]]
-; CHECK: stg [[REG2]],
-; CHECK: jne {{\..*}}
-; CHECK: br %r14
+
+
+
+
+
+
 entry:
   br label %loop
 

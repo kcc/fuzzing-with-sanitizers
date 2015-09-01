@@ -1,6 +1,6 @@
-; RUN: %llc_dwarf -O0 < %s | FileCheck %s -check-prefix ARGUMENT
-; RUN: %llc_dwarf -O0 < %s | FileCheck %s -check-prefix VARIABLE
-; PR 13202
+
+
+
 
 define i32 @main() uwtable {
 entry:
@@ -33,17 +33,17 @@ declare void @llvm.dbg.value(metadata, i64, metadata, metadata) nounwind readnon
 !13 = !{!15, !16}
 !15 = !DILocalVariable(name: "argument", line: 3, arg: 1, scope: !10, file: !6, type: !9)
 
-; Two DW_TAG_formal_parameter: one abstract and one inlined.
-; ARGUMENT: {{.*Abbrev.*DW_TAG_formal_parameter}}
-; ARGUMENT: {{.*Abbrev.*DW_TAG_formal_parameter}}
-; ARGUMENT-NOT: {{.*Abbrev.*DW_TAG_formal_parameter}}
+
+
+
+
 
 !16 = !DILocalVariable(name: "local", line: 4, scope: !10, file: !6, type: !9)
 
-; Two DW_TAG_variable: one abstract and one inlined.
-; VARIABLE: {{.*Abbrev.*DW_TAG_variable}}
-; VARIABLE: {{.*Abbrev.*DW_TAG_variable}}
-; VARIABLE-NOT: {{.*Abbrev.*DW_TAG_variable}}
+
+
+
+
 
 !18 = !DILocalVariable(name: "argument", line: 3, arg: 1, scope: !10, file: !6, type: !9)
 !19 = !DILocation(line: 11, column: 10, scope: !5)

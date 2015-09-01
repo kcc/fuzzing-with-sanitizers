@@ -1,36 +1,36 @@
-; RUN: llc -disable-fp-elim -relocation-model=pic < %s
-; RUN: llc -disable-fp-elim -relocation-model=pic -O0 -pre-RA-sched=source < %s | FileCheck %s --check-prefix=SOURCE-SCHED
+
+
 target triple = "armv6-apple-ios"
 
-; Reduced from 177.mesa. This test causes a live range split before an LDR_POST instruction.
-; That requires leaveIntvBefore to be very accurate about the redefined value number.
+
+
 define internal void @sample_nearest_3d(i8* nocapture %tObj, i32 %n, float* nocapture %s, float* nocapture %t, float* nocapture %u, float* nocapture %lambda, i8* nocapture %red, i8* nocapture %green, i8* nocapture %blue, i8* nocapture %alpha) nounwind ssp {
 entry:
   br i1 undef, label %for.end, label %for.body.lr.ph
 
-for.body.lr.ph:                                   ; preds = %entry
+for.body.lr.ph:                                   
   br label %for.body
 
-for.body:                                         ; preds = %for.body, %for.body.lr.ph
-; SOURCE-SCHED: ldr
-; SOURCE-SCHED: ldr
-; SOURCE-SCHED: add
-; SOURCE-SCHED: ldr
-; SOURCE-SCHED: add
-; SOURCE-SCHED: ldr
-; SOURCE-SCHED: add
-; SOURCE-SCHED: ldr
-; SOURCE-SCHED: add
-; SOURCE-SCHED: str
-; SOURCE-SCHED: str
-; SOURCE-SCHED: str
-; SOURCE-SCHED: str
-; SOURCE-SCHED: ldr
-; SOURCE-SCHED: bl
-; SOURCE-SCHED: add
-; SOURCE-SCHED: ldr
-; SOURCE-SCHED: cmp
-; SOURCE-SCHED: bne
+for.body:                                         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   %i.031 = phi i32 [ 0, %for.body.lr.ph ], [ %0, %for.body ]
   %arrayidx11 = getelementptr float, float* %t, i32 %i.031
   %arrayidx15 = getelementptr float, float* %u, i32 %i.031
@@ -44,7 +44,7 @@ for.body:                                         ; preds = %for.body, %for.body
   %exitcond = icmp eq i32 %0, %n
   br i1 %exitcond, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body, %entry
+for.end:                                          
   ret void
 }
 

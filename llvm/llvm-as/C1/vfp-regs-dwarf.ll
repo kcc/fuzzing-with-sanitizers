@@ -1,29 +1,29 @@
-; RUN: llc -mtriple=armv7-linux-gnueabihf %s -o - | FileCheck %s
 
-; Generated from:
-;     void stack_offsets() {
-;       asm("" ::: "d8", "d9", "d11", "d13");
-;     }
-; Compiled with: "clang -target armv7-linux-gnueabihf -O3"
 
-; The important point we're checking here is that the .cfi directives describe
-; the layout of the VFP registers correctly. The fact that the numbers are
-; monotonic in memory is also a nice property to have.
+
+
+
+
+
+
+
+
+
 
 define void @stack_offsets() {
-; CHECK-LABEL: stack_offsets:
-; CHECK: vpush {d13}
-; CHECK: vpush {d11}
-; CHECK: vpush {d8, d9}
 
-; CHECK: .cfi_offset {{269|d13}}, -8
-; CHECK: .cfi_offset {{267|d11}}, -16
-; CHECK: .cfi_offset {{265|d9}}, -24
-; CHECK: .cfi_offset {{264|d8}}, -32
 
-; CHECK: vpop {d8, d9}
-; CHECK: vpop {d11}
-; CHECK: vpop {d13}
+
+
+
+
+
+
+
+
+
+
+
   call void asm sideeffect "", "~{d8},~{d9},~{d11},~{d13}"() #1
   ret void
 }

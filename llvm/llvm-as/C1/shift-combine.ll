@@ -1,13 +1,13 @@
-; RUN: llc -march=x86 < %s | FileCheck %s
+
 
 @array = weak global [4 x i32] zeroinitializer
 
 define i32 @test_lshr_and(i32 %x) {
-; CHECK-LABEL: test_lshr_and:
-; CHECK-NOT: shrl
-; CHECK: andl $12,
-; CHECK: movl {{.*}}array{{.*}},
-; CHECK: ret
+
+
+
+
+
 
 entry:
   %tmp2 = lshr i32 %x, 2
@@ -18,8 +18,8 @@ entry:
 }
 
 define i32* @test_exact1(i32 %a, i32 %b, i32* %x)  {
-; CHECK-LABEL: test_exact1:
-; CHECK: sarl %
+
+
 
   %sub = sub i32 %b, %a
   %shr = ashr exact i32 %sub, 3
@@ -28,8 +28,8 @@ define i32* @test_exact1(i32 %a, i32 %b, i32* %x)  {
 }
 
 define i32* @test_exact2(i32 %a, i32 %b, i32* %x)  {
-; CHECK-LABEL: test_exact2:
-; CHECK: sarl %
+
+
 
   %sub = sub i32 %b, %a
   %shr = ashr exact i32 %sub, 3
@@ -38,8 +38,8 @@ define i32* @test_exact2(i32 %a, i32 %b, i32* %x)  {
 }
 
 define i32* @test_exact3(i32 %a, i32 %b, i32* %x)  {
-; CHECK-LABEL: test_exact3:
-; CHECK-NOT: sarl
+
+
 
   %sub = sub i32 %b, %a
   %shr = ashr exact i32 %sub, 2
@@ -48,8 +48,8 @@ define i32* @test_exact3(i32 %a, i32 %b, i32* %x)  {
 }
 
 define i32* @test_exact4(i32 %a, i32 %b, i32* %x)  {
-; CHECK-LABEL: test_exact4:
-; CHECK: shrl %
+
+
 
   %sub = sub i32 %b, %a
   %shr = lshr exact i32 %sub, 3
@@ -58,8 +58,8 @@ define i32* @test_exact4(i32 %a, i32 %b, i32* %x)  {
 }
 
 define i32* @test_exact5(i32 %a, i32 %b, i32* %x)  {
-; CHECK-LABEL: test_exact5:
-; CHECK: shrl %
+
+
 
   %sub = sub i32 %b, %a
   %shr = lshr exact i32 %sub, 3
@@ -68,8 +68,8 @@ define i32* @test_exact5(i32 %a, i32 %b, i32* %x)  {
 }
 
 define i32* @test_exact6(i32 %a, i32 %b, i32* %x)  {
-; CHECK-LABEL: test_exact6:
-; CHECK-NOT: shrl
+
+
 
   %sub = sub i32 %b, %a
   %shr = lshr exact i32 %sub, 2

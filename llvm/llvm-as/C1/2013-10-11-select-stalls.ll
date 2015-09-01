@@ -1,7 +1,7 @@
-; REQUIRES: asserts
-; RUN: llc < %s -mtriple=thumbv7-apple-ios -stats 2>&1 | not grep "Number of pipeline stalls"
-; Evaluate the two vld1.8 instructions in separate MBB's,
-; instead of stalling on one and conditionally overwriting its result.
+
+
+
+
 
 define <16 x i8> @multiselect(i32 %avail, i8* %foo, i8* %bar) {
 entry:

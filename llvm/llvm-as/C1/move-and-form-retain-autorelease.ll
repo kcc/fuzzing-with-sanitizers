@@ -1,11 +1,11 @@
-; RUN: opt -S -objc-arc-contract < %s | FileCheck %s
 
-; The optimizer should be able to move the autorelease past a control triangle
-; and various scary looking things and fold it into an objc_retainAutorelease.
 
-; CHECK: bb57:
-; CHECK: tail call i8* @objc_retainAutorelease(i8* %tmp71x) [[NUW:#[0-9]+]]
-; CHECK: bb99:
+
+
+
+
+
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64"
 target triple = "x86_64-apple-darwin11.0.0"
@@ -99,16 +99,16 @@ bb:
   %tmp19 = icmp eq i64 %tmp18, 0
   br i1 %tmp19, label %bb22, label %bb20
 
-bb20:                                             ; preds = %bb
+bb20:                                             
   %tmp21 = icmp eq i8 %tmp14, 0
   br label %bb25
 
-bb22:                                             ; preds = %bb
+bb22:                                             
   %tmp23 = bitcast i8* %tmp7 to %18*
   %tmp24 = icmp eq i8 %tmp14, 0
   br i1 %tmp24, label %bb46, label %bb25
 
-bb25:                                             ; preds = %bb22, %bb20
+bb25:                                             
   %tmp26 = phi i1 [ %tmp21, %bb20 ], [ false, %bb22 ]
   %tmp27 = load i8*, i8** @"\01L_OBJC_SELECTOR_REFERENCES_188", align 8
   %tmp28 = tail call i8* bitcast (i8* (i8*, i8*, ...)* @objc_msgSend to i8* (i8*, i8*)*)(i8* %tmp7, i8* %tmp27)
@@ -122,7 +122,7 @@ bb25:                                             ; preds = %bb22, %bb20
   tail call void bitcast (i8* (i8*, i8*, ...)* @objc_msgSend to void (i8*, i8*, %16*)*)(i8* %tmp34, i8* %tmp33, %16* %arg2)
   br i1 %tmp26, label %bb46, label %bb35
 
-bb35:                                             ; preds = %bb25
+bb35:                                             
   %tmp36 = load i8*, i8** @"\01L_OBJC_SELECTOR_REFERENCES_389", align 8
   %tmp37 = tail call %20* bitcast (i8* (i8*, i8*, ...)* @objc_msgSend to %20* (i8*, i8*)*)(i8* %tmp29, i8* %tmp36)
   %tmp38 = load %2*, %2** @"\01L_OBJC_CLASSLIST_REFERENCES_$_70", align 8
@@ -136,7 +136,7 @@ bb35:                                             ; preds = %bb25
   tail call void bitcast (i8* (i8*, i8*, ...)* @objc_msgSend to void (i8*, i8*, i8*, %13*)*)(i8* %tmp45, i8* %tmp44, i8* %tmp42, %13* %tmp43)
   br label %bb46
 
-bb46:                                             ; preds = %bb35, %bb25, %bb22
+bb46:                                             
   %tmp47 = phi %18* [ %tmp30, %bb35 ], [ %tmp30, %bb25 ], [ %tmp23, %bb22 ]
   %tmp48 = load i8*, i8** @"\01L_OBJC_SELECTOR_REFERENCES_328", align 8
   %tmp49 = tail call %22* bitcast (i8* (i8*, i8*, ...)* @objc_msgSend to %22* (i8*, i8*)*)(i8* %tmp4, i8* %tmp48)
@@ -147,12 +147,12 @@ bb46:                                             ; preds = %bb35, %bb25, %bb22
   %tmp54 = icmp eq i64 %tmp53, 0
   br i1 %tmp54, label %bb55, label %bb57
 
-bb55:                                             ; preds = %bb46
+bb55:                                             
   %tmp56 = load i8*, i8** @"\01L_OBJC_SELECTOR_REFERENCES_395", align 8
   tail call void bitcast (i8* (i8*, i8*, ...)* @objc_msgSend to void (i8*, i8*)*)(i8* %tmp4, i8* %tmp56)
   br label %bb57
 
-bb57:                                             ; preds = %bb55, %bb46
+bb57:                                             
   %tmp58 = load %2*, %2** @"\01L_OBJC_CLASSLIST_REFERENCES_$_396", align 8
   %tmp59 = load i8*, i8** @"\01L_OBJC_SELECTOR_REFERENCES_328", align 8
   %tmp60 = tail call %22* bitcast (i8* (i8*, i8*, ...)* @objc_msgSend to %22* (i8*, i8*)*)(i8* %tmp4, i8* %tmp59)
@@ -167,7 +167,7 @@ bb57:                                             ; preds = %bb55, %bb46
   %tmp69 = bitcast %2* %tmp58 to i8*
   %tmp70 = tail call %14* bitcast (i8* (i8*, i8*, ...)* @objc_msgSend to %14* (i8*, i8*, %23*, %18*)*)(i8* %tmp69, i8* %tmp68, %23* %tmp67, %18* %tmp47)
   %tmp71 = bitcast %14* %tmp70 to i8*
-  ; hack to prevent the optimize from using objc_retainAutoreleasedReturnValue.
+  
   %tmp71x = getelementptr i8, i8* %tmp71, i64 1
   %tmp72 = tail call i8* @objc_retain(i8* %tmp71x) nounwind
   %tmp73 = load i8*, i8** @"\01L_OBJC_SELECTOR_REFERENCES_402", align 8
@@ -203,7 +203,7 @@ bb57:                                             ; preds = %bb55, %bb46
   %tmp98 = icmp eq i8 %tmp97, 0
   br i1 %tmp98, label %bb99, label %bb104
 
-bb99:                                             ; preds = %bb57
+bb99:                                             
   %tmp100 = load i8*, i8** @"\01L_OBJC_SELECTOR_REFERENCES_413", align 8
   %tmp101 = tail call i64 bitcast (i8* (i8*, i8*, ...)* @objc_msgSend to i64 (i8*, i8*)*)(i8* %tmp85, i8* %tmp100)
   %tmp102 = or i64 %tmp101, 12
@@ -211,7 +211,7 @@ bb99:                                             ; preds = %bb57
   tail call void bitcast (i8* (i8*, i8*, ...)* @objc_msgSend to void (i8*, i8*, i64)*)(i8* %tmp85, i8* %tmp103, i64 %tmp102)
   br label %bb104
 
-bb104:                                            ; preds = %bb99, %bb57
+bb104:                                            
   %tmp105 = call i8* @objc_autorelease(i8* %tmp72) nounwind
   %tmp106 = bitcast i8* %tmp105 to %14*
   tail call void @objc_release(i8* %tmp85) nounwind
@@ -220,4 +220,4 @@ bb104:                                            ; preds = %bb99, %bb57
   ret %14* %tmp106
 }
 
-; CHECK: attributes [[NUW]] = { nounwind }
+

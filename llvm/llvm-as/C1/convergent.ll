@@ -1,12 +1,12 @@
-; RUN: opt -sink -S < %s | FileCheck %s
 
-; Verify that IR sinking does not move convergent operations to
-; blocks that are not control equivalent.
 
-; CHECK: define i32 @foo
-; CHECK: entry
-; CHECK-NEXT: call i32 @bar
-; CHECK-NEXT: br i1 %arg
+
+
+
+
+
+
+
 
 define i32 @foo(i1 %arg) {
 entry:

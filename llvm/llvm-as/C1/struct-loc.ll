@@ -1,11 +1,11 @@
-; RUN: llc -mtriple=x86_64-apple-darwin %s -o %t -filetype=obj
-; RUN: llvm-dwarfdump -debug-dump=info %t | FileCheck %s
 
-; Make sure that structures have a decl file and decl line attached.
-; CHECK: DW_TAG_structure_type
-; CHECK: DW_AT_decl_file
-; CHECK: DW_AT_decl_line
-; CHECK: DW_TAG_member
+
+
+
+
+
+
+
 
 %struct.foo = type { i32 }
 

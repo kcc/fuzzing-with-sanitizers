@@ -1,4 +1,4 @@
-; RUN: llc < %s -mtriple=x86_64-apple-darwin10
+
 
 	%struct.ANY = type { i8* }
 	%struct.AV = type { %struct.XPVAV*, i32, i32 }
@@ -39,10 +39,10 @@ define i32 @Perl_yylex() nounwind ssp {
 entry:
 	br i1 undef, label %bb21, label %bb
 
-bb:		; preds = %entry
+bb:		
 	unreachable
 
-bb21:		; preds = %entry
+bb21:		
 	switch i32 undef, label %bb103 [
 		i32 1, label %bb101
 		i32 4, label %bb75
@@ -51,28 +51,28 @@ bb21:		; preds = %entry
 		i32 8, label %bb25
 	]
 
-bb25:		; preds = %bb21
+bb25:		
 	ret i32 41
 
-bb67:		; preds = %bb21
+bb67:		
 	ret i32 40
 
-bb68:		; preds = %bb21
+bb68:		
 	br i1 undef, label %bb69, label %bb70
 
-bb69:		; preds = %bb68
+bb69:		
 	ret i32 undef
 
-bb70:		; preds = %bb68
+bb70:		
 	unreachable
 
-bb75:		; preds = %bb21
+bb75:		
 	unreachable
 
-bb101:		; preds = %bb21
+bb101:		
 	unreachable
 
-bb103:		; preds = %bb21
+bb103:		
 	switch i32 undef, label %bb104 [
 		i32 0, label %bb126
 		i32 4, label %fake_eof
@@ -152,130 +152,130 @@ bb103:		; preds = %bb21
 		i32 126, label %bb544
 	]
 
-bb104:		; preds = %bb103
+bb104:		
 	unreachable
 
-bb126:		; preds = %bb103
+bb126:		
 	ret i32 0
 
-fake_eof:		; preds = %bb1841, %bb103, %bb103
+fake_eof:		
 	unreachable
 
-bb534:		; preds = %bb103
+bb534:		
 	unreachable
 
-bb544:		; preds = %bb103, %bb103
+bb544:		
 	ret i32 undef
 
-bb639:		; preds = %bb103
+bb639:		
 	unreachable
 
-bb643:		; preds = %bb103
+bb643:		
 	unreachable
 
-bb1050:		; preds = %bb103
+bb1050:		
 	unreachable
 
-bb1406:		; preds = %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103
+bb1406:		
 	unreachable
 
-bb1412:		; preds = %bb103
+bb1412:		
 	unreachable
 
-bb1423:		; preds = %bb103
+bb1423:		
 	unreachable
 
-bb1447:		; preds = %bb103
+bb1447:		
 	unreachable
 
-bb1455:		; preds = %bb103
+bb1455:		
 	unreachable
 
-keylookup:		; preds = %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103, %bb103
+keylookup:		
 	br i1 undef, label %bb1498, label %bb1496
 
-bb1496:		; preds = %keylookup
+bb1496:		
 	br i1 undef, label %bb1498, label %bb1510.preheader
 
-bb1498:		; preds = %bb1496, %keylookup
+bb1498:		
 	unreachable
 
-bb1510.preheader:		; preds = %bb1496
+bb1510.preheader:		
 	br i1 undef, label %bb1511, label %bb1518
 
-bb1511:		; preds = %bb1510.preheader
+bb1511:		
 	br label %bb1518
 
-bb1518:		; preds = %bb1511, %bb1510.preheader
+bb1518:		
 	switch i32 undef, label %bb741.i4285 [
 		i32 95, label %bb744.i4287
 		i32 115, label %bb852.i4394
 	]
 
-bb741.i4285:		; preds = %bb1518
+bb741.i4285:		
 	br label %Perl_keyword.exit4735
 
-bb744.i4287:		; preds = %bb1518
+bb744.i4287:		
 	br label %Perl_keyword.exit4735
 
-bb852.i4394:		; preds = %bb1518
+bb852.i4394:		
 	br i1 undef, label %bb861.i4404, label %bb856.i4399
 
-bb856.i4399:		; preds = %bb852.i4394
+bb856.i4399:		
 	br label %Perl_keyword.exit4735
 
-bb861.i4404:		; preds = %bb852.i4394
+bb861.i4404:		
 	br label %Perl_keyword.exit4735
 
-Perl_keyword.exit4735:		; preds = %bb861.i4404, %bb856.i4399, %bb744.i4287, %bb741.i4285
+Perl_keyword.exit4735:		
 	br i1 undef, label %bb1544, label %reserved_word
 
-bb1544:		; preds = %Perl_keyword.exit4735
+bb1544:		
 	br i1 undef, label %bb1565, label %bb1545
 
-bb1545:		; preds = %bb1544
+bb1545:		
 	br i1 undef, label %bb1563, label %bb1558
 
-bb1558:		; preds = %bb1545
-	%0 = load %struct.SV*, %struct.SV** undef		; <%struct.SV*> [#uses=1]
-	%1 = bitcast %struct.SV* %0 to %struct.GV*		; <%struct.GV*> [#uses=5]
+bb1558:		
+	%0 = load %struct.SV*, %struct.SV** undef		
+	%1 = bitcast %struct.SV* %0 to %struct.GV*		
 	br i1 undef, label %bb1563, label %bb1559
 
-bb1559:		; preds = %bb1558
+bb1559:		
 	br i1 undef, label %bb1560, label %bb1563
 
-bb1560:		; preds = %bb1559
+bb1560:		
 	br i1 undef, label %bb1563, label %bb1561
 
-bb1561:		; preds = %bb1560
+bb1561:		
 	br i1 undef, label %bb1562, label %bb1563
 
-bb1562:		; preds = %bb1561
+bb1562:		
 	br label %bb1563
 
-bb1563:		; preds = %bb1562, %bb1561, %bb1560, %bb1559, %bb1558, %bb1545
-	%gv19.3 = phi %struct.GV* [ %1, %bb1562 ], [ undef, %bb1545 ], [ %1, %bb1558 ], [ %1, %bb1559 ], [ %1, %bb1560 ], [ %1, %bb1561 ]		; <%struct.GV*> [#uses=0]
+bb1563:		
+	%gv19.3 = phi %struct.GV* [ %1, %bb1562 ], [ undef, %bb1545 ], [ %1, %bb1558 ], [ %1, %bb1559 ], [ %1, %bb1560 ], [ %1, %bb1561 ]		
 	br i1 undef, label %bb1565, label %reserved_word
 
-bb1565:		; preds = %bb1563, %bb1544
+bb1565:		
 	br i1 undef, label %bb1573, label %bb1580
 
-bb1573:		; preds = %bb1565
+bb1573:		
 	br label %bb1580
 
-bb1580:		; preds = %bb1573, %bb1565
+bb1580:		
 	br i1 undef, label %bb1595, label %reserved_word
 
-bb1595:		; preds = %bb1580
+bb1595:		
 	br i1 undef, label %reserved_word, label %bb1597
 
-bb1597:		; preds = %bb1595
+bb1597:		
 	br i1 undef, label %reserved_word, label %bb1602
 
-bb1602:		; preds = %bb1597
+bb1602:		
 	br label %reserved_word
 
-reserved_word:		; preds = %bb1602, %bb1597, %bb1595, %bb1580, %bb1563, %Perl_keyword.exit4735
+reserved_word:		
 	switch i32 undef, label %bb2012 [
 		i32 1, label %bb1819
 		i32 2, label %bb1830
@@ -443,516 +443,516 @@ reserved_word:		; preds = %bb1602, %bb1597, %bb1595, %bb1580, %bb1563, %Perl_key
 		i32 245, label %bb2830
 	]
 
-bb1819:		; preds = %reserved_word
+bb1819:		
 	unreachable
 
-bb1830:		; preds = %reserved_word
+bb1830:		
 	unreachable
 
-bb1841:		; preds = %reserved_word, %reserved_word
+bb1841:		
 	br i1 undef, label %fake_eof, label %bb1842
 
-bb1842:		; preds = %bb1841
+bb1842:		
 	unreachable
 
-bb1880:		; preds = %reserved_word
+bb1880:		
 	unreachable
 
-bb1894:		; preds = %reserved_word
+bb1894:		
 	ret i32 undef
 
-bb1895:		; preds = %reserved_word
+bb1895:		
 	ret i32 301
 
-bb1896:		; preds = %reserved_word
+bb1896:		
 	ret i32 undef
 
-bb1897:		; preds = %reserved_word
+bb1897:		
 	ret i32 undef
 
-bb1898:		; preds = %reserved_word
+bb1898:		
 	ret i32 undef
 
-bb1899:		; preds = %reserved_word
+bb1899:		
 	ret i32 undef
 
-bb1905:		; preds = %reserved_word
+bb1905:		
 	ret i32 278
 
-bb1906:		; preds = %reserved_word
+bb1906:		
 	unreachable
 
-bb1921:		; preds = %reserved_word
+bb1921:		
 	ret i32 288
 
-bb1927:		; preds = %reserved_word
+bb1927:		
 	ret i32 undef
 
-bb1928:		; preds = %reserved_word
+bb1928:		
 	ret i32 undef
 
-bb1929:		; preds = %reserved_word
+bb1929:		
 	ret i32 undef
 
-bb1930:		; preds = %reserved_word
+bb1930:		
 	ret i32 undef
 
-bb1936:		; preds = %reserved_word
+bb1936:		
 	br i1 undef, label %bb2834, label %bb1937
 
-bb1937:		; preds = %bb1936
+bb1937:		
 	ret i32 undef
 
-bb1946:		; preds = %reserved_word
+bb1946:		
 	unreachable
 
-bb1951:		; preds = %reserved_word
+bb1951:		
 	ret i32 undef
 
-bb1962:		; preds = %reserved_word
+bb1962:		
 	ret i32 undef
 
-bb1968:		; preds = %reserved_word
+bb1968:		
 	ret i32 280
 
-bb1969:		; preds = %reserved_word
+bb1969:		
 	ret i32 276
 
-bb1970:		; preds = %reserved_word
+bb1970:		
 	ret i32 277
 
-bb1971:		; preds = %reserved_word
+bb1971:		
 	ret i32 288
 
-bb1982:		; preds = %reserved_word
+bb1982:		
 	br i1 undef, label %bb2834, label %bb1986
 
-bb1986:		; preds = %bb1982
+bb1986:		
 	ret i32 undef
 
-bb2005:		; preds = %reserved_word
+bb2005:		
 	ret i32 undef
 
-bb2006:		; preds = %reserved_word
+bb2006:		
 	ret i32 282
 
-bb2007:		; preds = %reserved_word
+bb2007:		
 	ret i32 282
 
-bb2008:		; preds = %reserved_word
+bb2008:		
 	ret i32 282
 
-bb2009:		; preds = %reserved_word
+bb2009:		
 	ret i32 282
 
-bb2010:		; preds = %reserved_word
+bb2010:		
 	ret i32 282
 
-bb2011:		; preds = %reserved_word
+bb2011:		
 	ret i32 282
 
-bb2012:		; preds = %reserved_word
+bb2012:		
 	unreachable
 
-bb2079:		; preds = %reserved_word
+bb2079:		
 	ret i32 undef
 
-bb2080:		; preds = %reserved_word
+bb2080:		
 	ret i32 282
 
-bb2081:		; preds = %reserved_word
+bb2081:		
 	ret i32 undef
 
-bb2087:		; preds = %reserved_word
+bb2087:		
 	ret i32 undef
 
-bb2088:		; preds = %reserved_word
+bb2088:		
 	ret i32 287
 
-bb2089:		; preds = %reserved_word
+bb2089:		
 	ret i32 287
 
-bb2090:		; preds = %reserved_word
+bb2090:		
 	ret i32 undef
 
-bb2091:		; preds = %reserved_word
+bb2091:		
 	ret i32 280
 
-bb2102:		; preds = %reserved_word
+bb2102:		
 	ret i32 282
 
-bb2108:		; preds = %reserved_word
+bb2108:		
 	ret i32 undef
 
-bb2114:		; preds = %reserved_word
+bb2114:		
 	ret i32 undef
 
-bb2115:		; preds = %reserved_word
+bb2115:		
 	ret i32 282
 
-bb2116:		; preds = %reserved_word
+bb2116:		
 	ret i32 282
 
-bb2137:		; preds = %reserved_word
+bb2137:		
 	ret i32 undef
 
-bb2138:		; preds = %reserved_word
+bb2138:		
 	ret i32 282
 
-bb2144:		; preds = %reserved_word
+bb2144:		
 	ret i32 undef
 
-bb2145:		; preds = %reserved_word
+bb2145:		
 	ret i32 282
 
-bb2146:		; preds = %reserved_word
+bb2146:		
 	ret i32 undef
 
-bb2147:		; preds = %reserved_word
+bb2147:		
 	ret i32 undef
 
-bb2148:		; preds = %reserved_word
+bb2148:		
 	ret i32 282
 
-bb2154:		; preds = %reserved_word
+bb2154:		
 	ret i32 undef
 
-bb2155:		; preds = %reserved_word
+bb2155:		
 	ret i32 282
 
-bb2166:		; preds = %reserved_word
+bb2166:		
 	ret i32 282
 
-bb2167:		; preds = %reserved_word
+bb2167:		
 	ret i32 undef
 
-bb2173:		; preds = %reserved_word
+bb2173:		
 	ret i32 274
 
-bb2174:		; preds = %reserved_word
+bb2174:		
 	ret i32 undef
 
-bb2175:		; preds = %reserved_word
+bb2175:		
 	br i1 undef, label %bb2834, label %bb2176
 
-bb2176:		; preds = %bb2175
+bb2176:		
 	ret i32 undef
 
-bb2180:		; preds = %reserved_word
+bb2180:		
 	ret i32 undef
 
-bb2181:		; preds = %reserved_word
+bb2181:		
 	ret i32 undef
 
-bb2187:		; preds = %reserved_word
+bb2187:		
 	ret i32 undef
 
-bb2188:		; preds = %reserved_word
+bb2188:		
 	ret i32 280
 
-bb2199:		; preds = %reserved_word
+bb2199:		
 	ret i32 295
 
-bb2205:		; preds = %reserved_word
+bb2205:		
 	ret i32 287
 
-bb2206:		; preds = %reserved_word
+bb2206:		
 	ret i32 287
 
-bb2217:		; preds = %reserved_word
+bb2217:		
 	ret i32 undef
 
-bb2218:		; preds = %reserved_word
+bb2218:		
 	ret i32 undef
 
-bb2229:		; preds = %reserved_word
+bb2229:		
 	unreachable
 
-bb2233:		; preds = %reserved_word
+bb2233:		
 	ret i32 undef
 
-bb2234:		; preds = %reserved_word
+bb2234:		
 	ret i32 undef
 
-bb2235:		; preds = %reserved_word
+bb2235:		
 	ret i32 undef
 
-bb2236:		; preds = %reserved_word
+bb2236:		
 	ret i32 undef
 
-bb2237:		; preds = %reserved_word
+bb2237:		
 	ret i32 undef
 
-bb2238:		; preds = %reserved_word
+bb2238:		
 	ret i32 undef
 
-bb2239:		; preds = %reserved_word, %reserved_word
+bb2239:		
 	unreachable
 
-bb2267:		; preds = %reserved_word
+bb2267:		
 	ret i32 280
 
-bb2268:		; preds = %reserved_word
+bb2268:		
 	ret i32 288
 
-bb2276:		; preds = %reserved_word
+bb2276:		
 	unreachable
 
-bb2337:		; preds = %reserved_word
+bb2337:		
 	ret i32 300
 
-bb2348:		; preds = %reserved_word
+bb2348:		
 	ret i32 undef
 
-bb2349:		; preds = %reserved_word
+bb2349:		
 	ret i32 undef
 
-bb2350:		; preds = %reserved_word
+bb2350:		
 	ret i32 undef
 
-bb2356:		; preds = %reserved_word
+bb2356:		
 	ret i32 undef
 
-bb2357:		; preds = %reserved_word
+bb2357:		
 	br i1 undef, label %bb2834, label %bb2358
 
-bb2358:		; preds = %bb2357
+bb2358:		
 	ret i32 undef
 
-bb2367:		; preds = %reserved_word
+bb2367:		
 	ret i32 undef
 
-bb2368:		; preds = %reserved_word
+bb2368:		
 	ret i32 270
 
-bb2369:		; preds = %reserved_word
+bb2369:		
 	ret i32 undef
 
-bb2370:		; preds = %reserved_word
+bb2370:		
 	unreachable
 
-bb2381:		; preds = %reserved_word
+bb2381:		
 	unreachable
 
-bb2445:		; preds = %reserved_word
+bb2445:		
 	unreachable
 
-bb2453:		; preds = %reserved_word
+bb2453:		
 	unreachable
 
-bb2457:		; preds = %reserved_word
+bb2457:		
 	unreachable
 
-bb2463:		; preds = %reserved_word
+bb2463:		
 	ret i32 286
 
-bb2464:		; preds = %reserved_word
+bb2464:		
 	unreachable
 
-bb2503:		; preds = %reserved_word
+bb2503:		
 	ret i32 280
 
-bb2504:		; preds = %reserved_word
+bb2504:		
 	ret i32 undef
 
-bb2515:		; preds = %reserved_word
+bb2515:		
 	ret i32 undef
 
-bb2516:		; preds = %reserved_word
+bb2516:		
 	ret i32 undef
 
-bb2522:		; preds = %reserved_word
+bb2522:		
 	unreachable
 
-bb2527:		; preds = %reserved_word
+bb2527:		
 	unreachable
 
-bb2537:		; preds = %reserved_word
+bb2537:		
 	ret i32 undef
 
-bb2538:		; preds = %reserved_word
+bb2538:		
 	ret i32 undef
 
-bb2549:		; preds = %reserved_word
+bb2549:		
 	unreachable
 
-bb2555:		; preds = %reserved_word
+bb2555:		
 	br i1 undef, label %bb2834, label %bb2556
 
-bb2556:		; preds = %bb2555
+bb2556:		
 	ret i32 undef
 
-bb2565:		; preds = %reserved_word
+bb2565:		
 	ret i32 undef
 
-bb2566:		; preds = %reserved_word
+bb2566:		
 	ret i32 undef
 
-bb2567:		; preds = %reserved_word
+bb2567:		
 	ret i32 undef
 
-bb2568:		; preds = %reserved_word
+bb2568:		
 	ret i32 undef
 
-bb2569:		; preds = %reserved_word
+bb2569:		
 	ret i32 undef
 
-bb2570:		; preds = %reserved_word
+bb2570:		
 	ret i32 undef
 
-bb2571:		; preds = %reserved_word
+bb2571:		
 	ret i32 undef
 
-bb2572:		; preds = %reserved_word
+bb2572:		
 	ret i32 undef
 
-bb2583:		; preds = %reserved_word
+bb2583:		
 	br i1 undef, label %bb2834, label %bb2584
 
-bb2584:		; preds = %bb2583
+bb2584:		
 	ret i32 undef
 
-bb2593:		; preds = %reserved_word
+bb2593:		
 	ret i32 282
 
-bb2594:		; preds = %reserved_word
+bb2594:		
 	ret i32 282
 
-bb2595:		; preds = %reserved_word
+bb2595:		
 	ret i32 undef
 
-bb2596:		; preds = %reserved_word
+bb2596:		
 	ret i32 undef
 
-bb2602:		; preds = %reserved_word
+bb2602:		
 	ret i32 undef
 
-bb2603:		; preds = %reserved_word
+bb2603:		
 	ret i32 undef
 
-bb2604:		; preds = %reserved_word
+bb2604:		
 	ret i32 undef
 
-bb2605:		; preds = %reserved_word
+bb2605:		
 	ret i32 undef
 
-bb2606:		; preds = %reserved_word
+bb2606:		
 	ret i32 undef
 
-bb2617:		; preds = %reserved_word
+bb2617:		
 	ret i32 undef
 
-bb2618:		; preds = %reserved_word
+bb2618:		
 	ret i32 undef
 
-bb2619:		; preds = %reserved_word
+bb2619:		
 	unreachable
 
-bb2625:		; preds = %reserved_word
+bb2625:		
 	ret i32 undef
 
-bb2626:		; preds = %reserved_word
+bb2626:		
 	ret i32 undef
 
-bb2627:		; preds = %reserved_word
+bb2627:		
 	ret i32 undef
 
-bb2648:		; preds = %reserved_word
+bb2648:		
 	ret i32 undef
 
-really_sub:		; preds = %reserved_word, %reserved_word
+really_sub:		
 	unreachable
 
-bb2737:		; preds = %reserved_word
+bb2737:		
 	ret i32 undef
 
-bb2738:		; preds = %reserved_word
+bb2738:		
 	ret i32 undef
 
-bb2739:		; preds = %reserved_word
+bb2739:		
 	ret i32 undef
 
-bb2740:		; preds = %reserved_word
+bb2740:		
 	ret i32 undef
 
-bb2741:		; preds = %reserved_word
+bb2741:		
 	ret i32 undef
 
-bb2742:		; preds = %reserved_word
+bb2742:		
 	ret i32 undef
 
-bb2743:		; preds = %reserved_word
+bb2743:		
 	ret i32 undef
 
-bb2744:		; preds = %reserved_word
+bb2744:		
 	unreachable
 
-bb2758:		; preds = %reserved_word
+bb2758:		
 	ret i32 undef
 
-bb2764:		; preds = %reserved_word
+bb2764:		
 	ret i32 282
 
-bb2765:		; preds = %reserved_word
+bb2765:		
 	ret i32 282
 
-bb2766:		; preds = %reserved_word
+bb2766:		
 	ret i32 undef
 
-bb2782:		; preds = %reserved_word
+bb2782:		
 	ret i32 273
 
-bb2783:		; preds = %reserved_word
+bb2783:		
 	ret i32 275
 
-bb2784:		; preds = %reserved_word
+bb2784:		
 	ret i32 undef
 
-bb2785:		; preds = %reserved_word
+bb2785:		
 	br i1 undef, label %bb2834, label %bb2786
 
-bb2786:		; preds = %bb2785
+bb2786:		
 	ret i32 undef
 
-bb2790:		; preds = %reserved_word
+bb2790:		
 	ret i32 undef
 
-bb2791:		; preds = %reserved_word
+bb2791:		
 	ret i32 undef
 
-bb2797:		; preds = %reserved_word
+bb2797:		
 	ret i32 undef
 
-bb2815:		; preds = %reserved_word
+bb2815:		
 	ret i32 undef
 
-bb2816:		; preds = %reserved_word
+bb2816:		
 	ret i32 272
 
-bb2817:		; preds = %reserved_word
+bb2817:		
 	ret i32 undef
 
-bb2818:		; preds = %reserved_word
+bb2818:		
 	ret i32 282
 
-bb2819:		; preds = %reserved_word
+bb2819:		
 	ret i32 undef
 
-bb2820:		; preds = %reserved_word
+bb2820:		
 	ret i32 282
 
-bb2821:		; preds = %reserved_word
+bb2821:		
 	unreachable
 
-bb2826:		; preds = %reserved_word
+bb2826:		
 	unreachable
 
-bb2829:		; preds = %reserved_word
+bb2829:		
 	ret i32 300
 
-bb2830:		; preds = %reserved_word
+bb2830:		
 	unreachable
 
-bb2834:		; preds = %bb2785, %bb2583, %bb2555, %bb2357, %bb2175, %bb1982, %bb1936
+bb2834:		
 	ret i32 283
 }

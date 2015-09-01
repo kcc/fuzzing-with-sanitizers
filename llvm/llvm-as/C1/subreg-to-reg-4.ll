@@ -1,15 +1,15 @@
-; RUN: llc < %s -march=x86-64 > %t
-; RUN: not grep leaq %t
-; RUN: not grep incq %t
-; RUN: not grep decq %t
-; RUN: not grep negq %t
-; RUN: not grep addq %t
-; RUN: not grep subq %t
-; RUN: not grep "movl	%" %t
 
-; Utilize implicit zero-extension on x86-64 to eliminate explicit
-; zero-extensions. Shrink 64-bit adds to 32-bit when the high
-; 32-bits will be zeroed.
+
+
+
+
+
+
+
+
+
+
+
 
 define void @bar(i64 %x, i64 %y, i64* %z) nounwind readnone {
 entry:

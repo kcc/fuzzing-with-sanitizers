@@ -1,13 +1,13 @@
-; REQUIRES: object-emission
 
-; RUN: llc -o - %s -filetype=obj -O0 -generate-dwarf-pub-sections=Disable -generate-type-units -mtriple=x86_64-unknown-linux-gnu | llvm-dwarfdump -debug-dump=types - | FileCheck %s
 
-; struct foo {
-; } f;
 
-; no known LLVM frontends produce appropriate unique identifiers for C types,
-; so we don't produce type units for them
-; CHECK-NOT: DW_TAG_type_unit
+
+
+
+
+
+
+
 
 %struct.foo = type {}
 

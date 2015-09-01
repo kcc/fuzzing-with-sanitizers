@@ -1,4 +1,4 @@
-; RUN: llc < %s	
+
 %struct.CUMULATIVE_ARGS = type { i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32 }
 	%struct.VEC_edge = type { i32, i32, [1 x %struct.edge_def*] }
 	%struct._obstack_chunk = type { i8*, %struct._obstack_chunk*, [4 x i8] }
@@ -66,42 +66,42 @@ entry:
 		 i32 3, label %cond_next135
 	]
 
-bb:		; preds = %entry
+bb:		
 	ret i1 false
 
-bb6:		; preds = %entry
+bb6:		
 	br i1 false, label %bb87, label %cond_next27
 
-cond_next27:		; preds = %bb6
+cond_next27:		
 	br i1 false, label %cond_true30, label %cond_next55
 
-cond_true30:		; preds = %cond_next27
+cond_true30:		
 	br i1 false, label %cond_next41, label %cond_true35
 
-cond_true35:		; preds = %cond_true30
+cond_true35:		
 	ret i1 false
 
-cond_next41:		; preds = %cond_true30
-	%tmp44 = call i32 @force_var_cost( %struct.ivopts_data* %data, %struct.tree_node* null, %struct.bitmap_head_def** null )		; <i32> [#uses=2]
-	%tmp46 = udiv i32 %tmp44, 5		; <i32> [#uses=1]
+cond_next41:		
+	%tmp44 = call i32 @force_var_cost( %struct.ivopts_data* %data, %struct.tree_node* null, %struct.bitmap_head_def** null )		
+	%tmp46 = udiv i32 %tmp44, 5		
 	call void @set_use_iv_cost( %struct.ivopts_data* %data, %struct.iv_use* %use, %struct.iv_cand* %cand, i32 %tmp46, %struct.bitmap_head_def* null )
-	%tmp44.off = add i32 %tmp44, -50000000		; <i32> [#uses=1]
-	%tmp52 = icmp ugt i32 %tmp44.off, 4		; <i1> [#uses=1]
-	%tmp52.upgrd.1 = zext i1 %tmp52 to i32		; <i32> [#uses=1]
+	%tmp44.off = add i32 %tmp44, -50000000		
+	%tmp52 = icmp ugt i32 %tmp44.off, 4		
+	%tmp52.upgrd.1 = zext i1 %tmp52 to i32		
 	br label %bb87
 
-cond_next55:		; preds = %cond_next27
+cond_next55:		
 	ret i1 false
 
-bb87:		; preds = %cond_next41, %bb6
-	%tmp2.0 = phi i32 [ %tmp52.upgrd.1, %cond_next41 ], [ 1, %bb6 ]		; <i32> [#uses=0]
+bb87:		
+	%tmp2.0 = phi i32 [ %tmp52.upgrd.1, %cond_next41 ], [ 1, %bb6 ]		
 	ret i1 false
 
-bb91:		; preds = %entry
+bb91:		
 	ret i1 false
 
-cond_next135:		; preds = %entry
-	%tmp193 = call i1 @determine_use_iv_cost_generic( %struct.ivopts_data* %data, %struct.iv_use* %use, %struct.iv_cand* %cand )		; <i1> [#uses=0]
+cond_next135:		
+	%tmp193 = call i1 @determine_use_iv_cost_generic( %struct.ivopts_data* %data, %struct.iv_use* %use, %struct.iv_cand* %cand )		
 	ret i1 false
 }
 

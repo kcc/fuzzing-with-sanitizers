@@ -1,20 +1,20 @@
-; RUN: llc -mattr=-bmi < %s -mtriple=x86_64-linux | FileCheck %s
 
-; LLVM creates virtual registers for values live across blocks
-; based on the type of the value. Make sure that the extracts
-; here use the GR64_NOREX register class for their result,
-; instead of plain GR64.
 
-; CHECK: foo:
-; CHECK: movzbl %{{[abcd]}}h, %e
-; CHECK: movzbl %{{[abcd]}}h, %e
-; CHECK: movzbl %{{[abcd]}}h, %e
-; CHECK: movzbl %{{[abcd]}}h, %e
-; CHECK: movzbl %{{[abcd]}}h, %e
-; CHECK: movzbl %{{[abcd]}}h, %e
-; CHECK: movzbl %{{[abcd]}}h, %e
-; CHECK: movzbl %{{[abcd]}}h, %e
-; CHECK: ret
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define i64 @foo(i64 %a, i64 %b, i64 %c, i64 %d,
                 i64 %e, i64 %f, i64 %g, i64 %h) {

@@ -1,6 +1,6 @@
-; RUN: llc -mtriple=arm64-apple-ios < %s | FileCheck %s
-; RUN: llc -mtriple=arm64-linux-gnu < %s | FileCheck %s --check-prefix=CHECK-LINUX
-; <rdar://11417675>
+
+
+
 
 define void @sum(i32* %to) {
 entry:
@@ -26,10 +26,10 @@ exit:
   ret void
 }
 
-; CHECK-LABEL: sum:
-; CHECK: adrp    {{x[0-9]+}}, LJTI0_0@PAGE
-; CHECK:  add    {{x[0-9]+}}, {{x[0-9]+}}, LJTI0_0@PAGEOFF
 
-; CHECK-LINUX-LABEL: sum:
-; CHECK-LINUX: adrp    {{x[0-9]+}}, .LJTI0_0
-; CHECK-LINUX:  add    {{x[0-9]+}}, {{x[0-9]+}}, :lo12:.LJTI0_0
+
+
+
+
+
+

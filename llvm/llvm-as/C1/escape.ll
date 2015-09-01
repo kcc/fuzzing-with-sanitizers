@@ -1,18 +1,18 @@
-; RUN: opt -objc-arc -S < %s | FileCheck %s
-; rdar://11229925
+
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 
 %struct.__block_byref_weakLogNTimes = type { i8*, %struct.__block_byref_weakLogNTimes*, i32, i32, i8*, i8*, void (...)* }
 %struct.__block_descriptor = type { i64, i64 }
 
-; Don't optimize away the retainBlock, because the object's address "escapes"
-; with the objc_storeWeak call.
 
-; CHECK-LABEL: define void @test0(
-; CHECK: %tmp7 = call i8* @objc_retainBlock(i8* %tmp6) [[NUW:#[0-9]+]], !clang.arc.copy_on_escape !0
-; CHECK: call void @objc_release(i8* %tmp7) [[NUW]], !clang.imprecise_release !0
-; CHECK: }
+
+
+
+
+
+
 define void @test0() nounwind {
 entry:
   %weakLogNTimes = alloca %struct.__block_byref_weakLogNTimes, align 8
@@ -62,12 +62,12 @@ entry:
   ret void
 }
 
-; Like test0, but it makes a regular call instead of a storeWeak call,
-; so the optimization is valid.
 
-; CHECK-LABEL: define void @test1(
-; CHECK-NOT: @objc_retainBlock
-; CHECK: }
+
+
+
+
+
 define void @test1() nounwind {
 entry:
   %weakLogNTimes = alloca %struct.__block_byref_weakLogNTimes, align 8
@@ -130,5 +130,5 @@ declare void @objc_release(i8*)
 
 !0 = !{}
 
-; CHECK: attributes [[NUW]] = { nounwind }
-; CHECK: attributes #1 = { nounwind ssp }
+
+

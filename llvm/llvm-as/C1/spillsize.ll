@@ -1,14 +1,14 @@
-; RUN: llc < %s -verify-machineinstrs | FileCheck %s
+
 target datalayout = "E-m:e-i64:64-n32:64-S128"
 target triple = "sparcv9"
 
-; CHECK-LABEL: spill4
-; This function spills two values: %p and the materialized large constant.
-; Both must use 8-byte spill and fill instructions.
-; CHECK: stx %{{..}}, [%fp+
-; CHECK: stx %{{..}}, [%fp+
-; CHECK: ldx [%fp+
-; CHECK: ldx [%fp+
+
+
+
+
+
+
+
 define void @spill4(i64* nocapture %p) {
 entry:
   %val0 = load i64, i64* %p

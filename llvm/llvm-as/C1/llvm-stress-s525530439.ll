@@ -1,11 +1,11 @@
-; RUN: llc -march=mips < %s
-; RUN: llc -march=mips -mattr=+msa,+fp64 < %s
-; RUN: llc -march=mipsel < %s
-; RUN: llc -march=mipsel -mattr=+msa,+fp64 < %s
 
-; This test originally failed for MSA with a
-; `Num < NumOperands && "Invalid child # of SDNode!"' assertion.
-; It should at least successfully build.
+
+
+
+
+
+
+
 
 define void @autogen_SD525530439(i8*, i32*, i64*, i32, i64, i8) {
 BB:
@@ -42,7 +42,7 @@ BB:
   %Cmp18 = fcmp ugt float 0xC5ABB1BF80000000, 0x3EEF3D6300000000
   br label %CF75
 
-CF75:                                             ; preds = %CF75, %BB
+CF75:                                             
   %L19 = load i32, i32* %Sl10
   store i32 %L11, i32* %Sl10
   %E20 = extractelement <4 x i32> zeroinitializer, i32 1
@@ -54,7 +54,7 @@ CF75:                                             ; preds = %CF75, %BB
   %Cmp26 = icmp ne i32 %E20, %L19
   br i1 %Cmp26, label %CF75, label %CF76
 
-CF76:                                             ; preds = %CF75
+CF76:                                             
   %L27 = load i32, i32* %Sl10
   store i32 439732, i32* %Sl10
   %E28 = extractelement <4 x i32> %Shuff21, i32 3
@@ -64,7 +64,7 @@ CF76:                                             ; preds = %CF75
   %Cmp32 = icmp ugt i32 0, %3
   br label %CF74
 
-CF74:                                             ; preds = %CF74, %CF80, %CF78, %CF76
+CF74:                                             
   %L33 = load i64, i64* %2
   store i32 71140, i32* %Sl10
   %E34 = extractelement <4 x i32> zeroinitializer, i32 1
@@ -75,7 +75,7 @@ CF74:                                             ; preds = %CF74, %CF80, %CF78,
   %Cmp39 = icmp sgt i16 -11642, %Sl
   br i1 %Cmp39, label %CF74, label %CF80
 
-CF80:                                             ; preds = %CF74
+CF80:                                             
   %L40 = load i8, i8* %0
   store i32 0, i32* %Sl10
   %E41 = extractelement <8 x i64> zeroinitializer, i32 1
@@ -85,13 +85,13 @@ CF80:                                             ; preds = %CF74
   %Sl44 = select i1 %Cmp18, i1 %Cmp18, i1 %Cmp39
   br i1 %Sl44, label %CF74, label %CF78
 
-CF78:                                             ; preds = %CF80
+CF78:                                             
   %L45 = load i32, i32* %Sl10
   store i8 %L5, i8* %0
   %E46 = extractelement <8 x i1> %Shuff7, i32 2
   br i1 %E46, label %CF74, label %CF77
 
-CF77:                                             ; preds = %CF77, %CF78
+CF77:                                             
   %Shuff47 = shufflevector <4 x i16> %I43, <4 x i16> zeroinitializer, <4 x i32> <i32 5, i32 undef, i32 1, i32 3>
   %I48 = insertelement <1 x i16> %Shuff42, i16 %Sl, i32 0
   %B49 = mul i8 0, %L40
@@ -100,7 +100,7 @@ CF77:                                             ; preds = %CF77, %CF78
   %Cmp52 = icmp sge i8 %B49, 0
   br i1 %Cmp52, label %CF77, label %CF79
 
-CF79:                                             ; preds = %CF77
+CF79:                                             
   %L53 = load i32, i32* %Sl10
   store i8 %L40, i8* %0
   %E54 = extractelement <4 x i32> zeroinitializer, i32 1
@@ -120,7 +120,7 @@ CF79:                                             ; preds = %CF77
   %Cmp65 = icmp sgt i32 439732, %3
   br label %CF
 
-CF:                                               ; preds = %CF79
+CF:                                               
   %L66 = load i32, i32* %Sl10
   store i32 %E6, i32* %PC
   %E67 = extractelement <4 x i32> <i32 -1, i32 -1, i32 -1, i32 -1>, i32 2

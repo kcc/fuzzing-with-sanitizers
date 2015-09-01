@@ -1,42 +1,42 @@
-; RUN: opt -S -mem2reg <%s | FileCheck %s
+
 
 declare void @llvm.dbg.declare(metadata, metadata, metadata) nounwind readnone
 
 declare void @foo(i32, i64, i8*)
 
 define void @baz(i32 %a) nounwind ssp {
-; CHECK-LABEL:  entry:
-; CHECK-NEXT:     %"alloca point" = bitcast i32 0 to i32{{$}}
-; CHECK-NEXT:     call void @llvm.dbg.value(metadata i32 %a,{{.*}}, !dbg
-; CHECK-NEXT:     call void @llvm.dbg.value(metadata i32 %a,{{.*}}, !dbg
-; CHECK-NEXT:     call void @llvm.dbg.value(metadata i64 55,{{.*}}, !dbg
-; CHECK-NEXT:     call void @llvm.dbg.value(metadata i8* bitcast (void (i32)* @baz to i8*),{{.*}}, !dbg
-; CHECK-NEXT:     call void @foo({{.*}}, !dbg
-; CHECK-NEXT:     br label %return, !dbg
+
+
+
+
+
+
+
+
 entry:
-  %x_addr.i = alloca i32                          ; <i32*> [#uses=2]
-  %y_addr.i = alloca i64                          ; <i64*> [#uses=2]
-  %z_addr.i = alloca i8*                          ; <i8**> [#uses=2]
-  %a_addr = alloca i32                            ; <i32*> [#uses=2]
-  %"alloca point" = bitcast i32 0 to i32          ; <i32> [#uses=0]
+  %x_addr.i = alloca i32                          
+  %y_addr.i = alloca i64                          
+  %z_addr.i = alloca i8*                          
+  %a_addr = alloca i32                            
+  %"alloca point" = bitcast i32 0 to i32          
   call void @llvm.dbg.declare(metadata i32* %a_addr, metadata !0, metadata !DIExpression()), !dbg !7
   store i32 %a, i32* %a_addr
-  %0 = load i32, i32* %a_addr, align 4, !dbg !8        ; <i32> [#uses=1]
+  %0 = load i32, i32* %a_addr, align 4, !dbg !8        
   call void @llvm.dbg.declare(metadata i32* %x_addr.i, metadata !9, metadata !DIExpression()) nounwind, !dbg !15
   store i32 %0, i32* %x_addr.i
   call void @llvm.dbg.declare(metadata i64* %y_addr.i, metadata !16, metadata !DIExpression()) nounwind, !dbg !15
   store i64 55, i64* %y_addr.i
   call void @llvm.dbg.declare(metadata i8** %z_addr.i, metadata !17, metadata !DIExpression()) nounwind, !dbg !15
   store i8* bitcast (void (i32)* @baz to i8*), i8** %z_addr.i
-  %1 = load i32, i32* %x_addr.i, align 4, !dbg !18     ; <i32> [#uses=1]
-  %2 = load i64, i64* %y_addr.i, align 8, !dbg !18     ; <i64> [#uses=1]
-  %3 = load i8*, i8** %z_addr.i, align 8, !dbg !18     ; <i8*> [#uses=1]
+  %1 = load i32, i32* %x_addr.i, align 4, !dbg !18     
+  %2 = load i64, i64* %y_addr.i, align 8, !dbg !18     
+  %3 = load i8*, i8** %z_addr.i, align 8, !dbg !18     
   call void @foo(i32 %1, i64 %2, i8* %3) nounwind, !dbg !18
   br label %return, !dbg !19
 
-; CHECK-LABEL:  return:
-; CHECK-NEXT:     ret void, !dbg
-return:                                           ; preds = %entry
+
+
+return:                                           
   ret void, !dbg !19
 }
 

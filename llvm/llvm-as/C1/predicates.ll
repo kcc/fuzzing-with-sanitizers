@@ -1,11 +1,11 @@
-; RUN: llc < %s -march=r600 -mattr=disable-irstructurizer -mcpu=redwood | FileCheck %s
 
-; These tests make sure the compiler is optimizing branches using predicates
-; when it is legal to do so.
 
-; CHECK: {{^}}simple_if:
-; CHECK: PRED_SET{{[EGN][ET]*}}_INT * Pred,
-; CHECK: LSHL * T{{[0-9]+\.[XYZW], T[0-9]+\.[XYZW]}}, 1, Pred_sel
+
+
+
+
+
+
 define void @simple_if(i32 addrspace(1)* %out, i32 %in) {
 entry:
   %0 = icmp sgt i32 %in, 0
@@ -21,10 +21,10 @@ ENDIF:
   ret void
 }
 
-; CHECK: {{^}}simple_if_else:
-; CHECK: PRED_SET{{[EGN][ET]*}}_INT * Pred,
-; CHECK: LSH{{[LR] \* T[0-9]+\.[XYZW], T[0-9]+\.[XYZW]}}, 1, Pred_sel
-; CHECK: LSH{{[LR] \* T[0-9]+\.[XYZW], T[0-9]+\.[XYZW]}}, 1, Pred_sel
+
+
+
+
 define void @simple_if_else(i32 addrspace(1)* %out, i32 %in) {
 entry:
   %0 = icmp sgt i32 %in, 0
@@ -44,13 +44,13 @@ ENDIF:
   ret void
 }
 
-; CHECK: {{^}}nested_if:
-; CHECK: ALU_PUSH_BEFORE
-; CHECK: JUMP
-; CHECK: POP
-; CHECK: PRED_SET{{[EGN][ET]*}}_INT * Exec
-; CHECK: PRED_SET{{[EGN][ET]*}}_INT * Pred,
-; CHECK: LSHL * T{{[0-9]+\.[XYZW], T[0-9]+\.[XYZW]}}, 1, Pred_sel
+
+
+
+
+
+
+
 define void @nested_if(i32 addrspace(1)* %out, i32 %in) {
 entry:
   %0 = icmp sgt i32 %in, 0
@@ -71,14 +71,14 @@ ENDIF:
   ret void
 }
 
-; CHECK: {{^}}nested_if_else:
-; CHECK: ALU_PUSH_BEFORE
-; CHECK: JUMP
-; CHECK: POP
-; CHECK: PRED_SET{{[EGN][ET]*}}_INT * Exec
-; CHECK: PRED_SET{{[EGN][ET]*}}_INT * Pred,
-; CHECK: LSH{{[LR] \* T[0-9]+\.[XYZW], T[0-9]+\.[XYZW]}}, 1, Pred_sel
-; CHECK: LSH{{[LR] \* T[0-9]+\.[XYZW], T[0-9]+\.[XYZW]}}, 1, Pred_sel
+
+
+
+
+
+
+
+
 define void @nested_if_else(i32 addrspace(1)* %out, i32 %in) {
 entry:
   %0 = icmp sgt i32 %in, 0

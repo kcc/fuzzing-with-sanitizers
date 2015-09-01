@@ -1,11 +1,11 @@
-; RUN: llc < %s -march=sparc
-; PR1540
+
+
 
 declare float @sinf(float)
 declare double @sin(double)
 define double @test_sin(float %F) {
-        %G = call float @sinf( float %F )               ; <float> [#uses=1]
-        %H = fpext float %G to double           ; <double> [#uses=1]
-        %I = call double @sin( double %H )              ; <double> [#uses=1]
+        %G = call float @sinf( float %F )               
+        %H = fpext float %G to double           
+        %I = call double @sin( double %H )              
         ret double %I
 }

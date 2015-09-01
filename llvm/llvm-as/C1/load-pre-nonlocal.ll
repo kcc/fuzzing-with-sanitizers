@@ -1,4 +1,4 @@
-; RUN: opt -S -o - -basicaa -domtree -gvn %s | FileCheck %s
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 
@@ -8,13 +8,13 @@ target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 @a = common global i32* null, align 8
 @s1 = common global %struct.S1 zeroinitializer, align 8
 
-; Check that GVN doesn't determine %2 is partially redundant.
 
-; CHECK-LABEL: define i32 @volatile_load
-; CHECK: for.body:
-; CHECK: %2 = load i32, i32*
-; CHECK: %3 = load volatile i32, i32*
-; CHECK: for.cond.for.end_crit_edge:
+
+
+
+
+
+
 
 define i32 @volatile_load(i32 %n) {
 entry:
@@ -50,16 +50,16 @@ for.end:
   ret i32 %s.0.lcssa
 }
 
-; %1 is partially redundant if %0 can be widened to a 64-bit load.
 
-; CHECK-LABEL: define i32 @overaligned_load
-; CHECK: if.then:
-; CHECK:   %0 = load i64
-; CHECK:   [[LSHR:%[0-9]+]] = lshr i64 %0, 32, !dbg [[LSHR_LOC:![0-9]+]]
-; CHECK:   trunc i64 [[LSHR]] to i32
-; CHECK: if.end:
-; CHECK-NOT: %1 = load i32, i32*
-; CHECK: [[LSHR_LOC]] = !DILocation(line: 101, column: 1, scope: !{{.*}})
+
+
+
+
+
+
+
+
+
 
 define i32 @overaligned_load(i32 %a, i32* nocapture %b) {
 entry:

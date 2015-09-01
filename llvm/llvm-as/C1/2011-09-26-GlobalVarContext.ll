@@ -1,7 +1,7 @@
-; RUN: llc -mtriple=x86_64-pc-linux-gnu %s -o %t -filetype=obj
-; RUN: llvm-dwarfdump -debug-dump=info %t | FileCheck %s
 
-; ModuleID = 'test.c'
+
+
+
 
 @GLB = common global i32 0, align 4
 
@@ -36,20 +36,20 @@ declare void @llvm.dbg.declare(metadata, metadata, metadata) nounwind readnone
 !19 = !DILocation(line: 5, column: 5, scope: !16)
 !20 = !DIFile(filename: "test.c", directory: "/work/llvm/vanilla/test/DebugInfo")
 
-; CHECK: DW_TAG_variable
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_name [DW_FORM_strp]       ( .debug_str[0x{{[0-9a-f]*}}] = "GLB")
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_decl_file [DW_FORM_data1] ("/work/llvm/vanilla/test/DebugInfo{{[/\\]}}test.c")
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_decl_line [DW_FORM_data1] (1)
 
-; CHECK: DW_TAG_variable
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_name [DW_FORM_strp]   ( .debug_str[0x{{[0-9a-f]*}}] = "LOC")
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_decl_file [DW_FORM_data1]     ("/work/llvm/vanilla/test/DebugInfo{{[/\\]}}test.c")
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_decl_line [DW_FORM_data1]     (4)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 !21 = !{i32 1, !"Debug Info Version", i32 3}

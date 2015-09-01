@@ -1,27 +1,27 @@
-; REQUIRES: object-emission
 
-; RUN: llc -mtriple=x86_64-linux -O0 -filetype=obj < %s \
-; RUN:     | llvm-dwarfdump -debug-dump=info - | FileCheck --check-prefix=CHECK --check-prefix=CHECK-V4 %s
-; RUN: llc -mtriple=x86_64-linux -dwarf-version=3 -O0 -filetype=obj < %s \
-; RUN:     | llvm-dwarfdump -debug-dump=info - | FileCheck --check-prefix=CHECK --check-prefix=CHECK-V3 %s
 
-; Check that we emit DW_TAG_lexical_block and that it has the right encoding
-; depending on the dwarf version.
 
-; CHECK: DW_TAG_lexical_block
-; CHECK-NOT: DW_TAG
-; CHECK: DW_AT_low_pc [DW_FORM_addr]
-; CHECK-NOT: DW_TAG
-; CHECK-V4: DW_AT_high_pc [DW_FORM_data4]
-; CHECK-V3: DW_AT_high_pc [DW_FORM_addr]
 
-; Test case produced from:
-; void b() {
-;   if (int i = 3)
-;     return;
-; }
 
-; Function Attrs: nounwind uwtable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @_Z1bv() #0 {
 entry:
   %i = alloca i32, align 4
@@ -31,14 +31,14 @@ entry:
   %tobool = icmp ne i32 %0, 0, !dbg !14
   br i1 %tobool, label %if.then, label %if.end, !dbg !14
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   br label %if.end, !dbg !15
 
-if.end:                                           ; preds = %if.then, %entry
+if.end:                                           
   ret void, !dbg !16
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
 attributes #0 = { nounwind uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

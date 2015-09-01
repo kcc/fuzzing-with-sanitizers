@@ -1,26 +1,26 @@
-; RUN: llc -O3 -disable-peephole -mcpu=corei7-avx -mattr=+avx < %s | FileCheck %s
+
 
 target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-unknown"
 
-; pr18846 - needless avx spill/reload
-; Test for unnecessary repeated spills due to eliminateRedundantSpills failing
-; to recognise unaligned ymm load/stores to the stack.
-; Bugpoint reduced testcase.
 
-;CHECK-LABEL: _Z16opt_kernel_cachePfS_S_
-;CHECK-NOT:   vmovups {{.*#+}} 32-byte Folded Spill
-;CHECK-NOT:   vmovups {{.*#+}} 32-byte Folded Reload
 
-; Function Attrs: uwtable
+
+
+
+
+
+
+
+
 define void @_Z16opt_kernel_cachePfS_S_() #0 {
 entry:
   br label %for.body29
 
-for.body29:                                       ; preds = %for.body29, %entry
+for.body29:                                       
   br i1 undef, label %for.body29, label %for.body65
 
-for.body65:                                       ; preds = %for.body29
+for.body65:                                       
   %0 = load float, float* undef, align 4, !tbaa !1
   %vecinit7.i4448 = insertelement <8 x float> undef, float %0, i32 7
   %1 = load float, float* null, align 4, !tbaa !1
@@ -123,7 +123,7 @@ for.body65:                                       ; preds = %for.body29
   unreachable
 }
 
-; Function Attrs: nounwind
+
 declare void @llvm.x86.avx.storeu.ps.256(i8*, <8 x float>) #1
 
 attributes #0 = { uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

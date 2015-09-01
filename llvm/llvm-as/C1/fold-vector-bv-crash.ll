@@ -1,10 +1,10 @@
-; RUN: llc < %s -mtriple=i686-unknown -mattr=+avx
-; RUN: llc < %s -mtriple=x86_64-unknown -mattr=+avx
 
-;
-; llvm-stress generated crash case due to build_vector implicit
-; truncation bug from constant folding after legalization.
-;
+
+
+
+
+
+
 
 @G = external global i32
 

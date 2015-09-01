@@ -1,30 +1,30 @@
-; Verify target-based defaults for "debugger tuning," and the ability to
-; override defaults.
-; We use existence of the debug_pubnames section to distinguish the GDB case,
-; and the apple_names section to distinguish the LLDB case. SCE has neither.
-
-; Verify defaults for various targets.
-; RUN: llc -mtriple=x86_64-scei-ps4 -filetype=obj < %s | llvm-readobj -sections - | FileCheck --check-prefix=SCE %s
-; RUN: llc -mtriple=x86_64-apple-darwin12 -filetype=obj < %s | llvm-readobj -sections - | FileCheck --check-prefix=LLDB %s
-; RUN: llc -mtriple=x86_64-pc-freebsd -filetype=obj < %s | llvm-readobj -sections - | FileCheck --check-prefix=LLDB %s
-; RUN: llc -mtriple=x86_64-pc-linux -filetype=obj < %s | llvm-readobj -sections - | FileCheck --check-prefix=GDB %s
-
-; We can override defaults.
-; RUN: llc -mtriple=x86_64-scei-ps4 -filetype=obj -debugger-tune=gdb < %s | llvm-readobj -sections - | FileCheck --check-prefix=GDB %s
-; RUN: llc -mtriple=x86_64-pc-linux -filetype=obj -debugger-tune=lldb < %s | llvm-readobj -sections - | FileCheck --check-prefix=LLDB %s
-; RUN: llc -mtriple=x86_64-apple-darwin12 -filetype=obj -debugger-tune=sce < %s | llvm-readobj -sections - | FileCheck --check-prefix=SCE %s
 
 
-; GDB-NOT: apple_names
-; GDB: debug_pubnames
-; GDB-NOT: apple_names
 
-; LLDB-NOT: debug_pubnames
-; LLDB: apple_names
-; LLDB-NOT: debug_pubnames
 
-; SCE-NOT: debug_pubnames
-; SCE-NOT: apple_names
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @globalvar = global i32 0, align 4

@@ -1,5 +1,5 @@
-; RUN: llc < %s
-; PR7170
+
+
 
 %big = type [131072 x i8]
 

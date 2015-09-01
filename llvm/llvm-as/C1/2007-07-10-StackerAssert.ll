@@ -1,7 +1,7 @@
-; RUN: llc < %s -mtriple=i686-pc-linux-gnu -mcpu=athlon -relocation-model=pic
-; PR1545
 
-@.str97 = external constant [56 x i8]		; <[56 x i8]*> [#uses=1]
+
+
+@.str97 = external constant [56 x i8]		
 
 declare void @PR_LogPrint(i8*, ...)
 
@@ -9,33 +9,33 @@ define i32 @_ZN13nsPrintEngine19SetupToPrintContentEP16nsIDeviceContextP12nsIDOM
 entry:
 	br i1 false, label %cond_true122, label %cond_next453
 
-cond_true122:		; preds = %entry
+cond_true122:		
 	br i1 false, label %bb164, label %cond_true136
 
-cond_true136:		; preds = %cond_true122
+cond_true136:		
 	ret i32 0
 
-bb164:		; preds = %cond_true122
+bb164:		
 	br i1 false, label %bb383, label %cond_true354
 
-cond_true354:		; preds = %bb164
+cond_true354:		
 	ret i32 0
 
-bb383:		; preds = %bb164
-	%tmp408 = load float, float* null		; <float> [#uses=2]
+bb383:		
+	%tmp408 = load float, float* null		
 	br i1 false, label %cond_true425, label %cond_next443
 
-cond_true425:		; preds = %bb383
-	%tmp430 = load float, float* null		; <float> [#uses=1]
-	%tmp432 = fsub float %tmp430, %tmp408		; <float> [#uses=1]
-	%tmp432433 = fpext float %tmp432 to double		; <double> [#uses=1]
-	%tmp434435 = fpext float %tmp408 to double		; <double> [#uses=1]
+cond_true425:		
+	%tmp430 = load float, float* null		
+	%tmp432 = fsub float %tmp430, %tmp408		
+	%tmp432433 = fpext float %tmp432 to double		
+	%tmp434435 = fpext float %tmp408 to double		
 	call void (i8*, ...) @PR_LogPrint( i8* getelementptr ([56 x i8], [56 x i8]* @.str97, i32 0, i32 0), double 0.000000e+00, double %tmp434435, double %tmp432433 )
 	ret i32 0
 
-cond_next443:		; preds = %bb383
+cond_next443:		
 	ret i32 0
 
-cond_next453:		; preds = %entry
+cond_next453:		
 	ret i32 0
 }

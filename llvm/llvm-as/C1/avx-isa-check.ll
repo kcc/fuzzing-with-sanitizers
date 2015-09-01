@@ -1,28 +1,28 @@
-; check AVX2 instructions that are disabled in case avx512VL/avx512BW present
+
    
-; RUN: llc < %s -mtriple=x86_64-apple-darwin -show-mc-encoding -mcpu=core-avx2 -mattr=+avx2                 -o /dev/null
-; RUN: llc < %s -mtriple=x86_64-apple-darwin -show-mc-encoding -mcpu=knl                                    -o /dev/null
-; RUN: llc < %s -mtriple=x86_64-apple-darwin -show-mc-encoding -mcpu=knl  -mattr=+avx512vl                  -o /dev/null
-; RUN: llc < %s -mtriple=x86_64-apple-darwin -show-mc-encoding -mcpu=knl  -mattr=+avx512bw                  -o /dev/null
-; RUN: llc < %s -mtriple=x86_64-apple-darwin -show-mc-encoding -mcpu=knl  -mattr=+avx512vl -mattr=+avx512bw -o /dev/null
-; RUN: llc < %s -mtriple=x86_64-apple-darwin -show-mc-encoding -mcpu=skx                                    -o /dev/null
+
+
+
+
+
+
 
 define <4 x i64> @vpand_256(<4 x i64> %a, <4 x i64> %b) nounwind uwtable readnone ssp {
-  ; Force the execution domain with an add.
+  
   %a2 = add <4 x i64> %a, <i64 1, i64 1, i64 1, i64 1>
   %x = and <4 x i64> %a2, %b
   ret <4 x i64> %x
 }
 
 define <2 x i64> @vpand_128(<2 x i64> %a, <2 x i64> %b) nounwind uwtable readnone ssp {
-  ; Force the execution domain with an add.
+  
   %a2 = add <2 x i64> %a, <i64 1, i64 1>
   %x = and <2 x i64> %a2, %b
   ret <2 x i64> %x
 }
 
 define <4 x i64> @vpandn_256(<4 x i64> %a, <4 x i64> %b) nounwind uwtable readnone ssp {
-  ; Force the execution domain with an add.
+  
   %a2 = add <4 x i64> %a, <i64 1, i64 1, i64 1, i64 1>
   %y = xor <4 x i64> %a2, <i64 -1, i64 -1, i64 -1, i64 -1>
   %x = and <4 x i64> %a, %y
@@ -30,7 +30,7 @@ define <4 x i64> @vpandn_256(<4 x i64> %a, <4 x i64> %b) nounwind uwtable readno
 }
 
 define <2 x i64> @vpandn_128(<2 x i64> %a, <2 x i64> %b) nounwind uwtable readnone ssp {
-  ; Force the execution domain with an add.
+  
   %a2 = add <2 x i64> %a, <i64 1, i64 1>
   %y = xor <2 x i64> %a2, <i64 -1, i64 -1>
   %x = and <2 x i64> %a, %y
@@ -38,28 +38,28 @@ define <2 x i64> @vpandn_128(<2 x i64> %a, <2 x i64> %b) nounwind uwtable readno
 }
 
 define <4 x i64> @vpor_256(<4 x i64> %a, <4 x i64> %b) nounwind uwtable readnone ssp {
-  ; Force the execution domain with an add.
+  
   %a2 = add <4 x i64> %a, <i64 1, i64 1, i64 1, i64 1>
   %x = or <4 x i64> %a2, %b
   ret <4 x i64> %x
 }
 
 define <4 x i64> @vpxor_256(<4 x i64> %a, <4 x i64> %b) nounwind uwtable readnone ssp {
-  ; Force the execution domain with an add.
+  
   %a2 = add <4 x i64> %a, <i64 1, i64 1, i64 1, i64 1>
   %x = xor <4 x i64> %a2, %b
   ret <4 x i64> %x
 }
 
 define <2 x i64> @vpor_128(<2 x i64> %a, <2 x i64> %b) nounwind uwtable readnone ssp {
-  ; Force the execution domain with an add.
+  
   %a2 = add <2 x i64> %a, <i64 1, i64 1>
   %x = or <2 x i64> %a2, %b
   ret <2 x i64> %x
 }
 
 define <2 x i64> @vpxor_128(<2 x i64> %a, <2 x i64> %b) nounwind uwtable readnone ssp {
-  ; Force the execution domain with an add.
+  
   %a2 = add <2 x i64> %a, <i64 1, i64 1>
   %x = xor <2 x i64> %a2, %b
   ret <2 x i64> %x

@@ -1,17 +1,17 @@
-; RUN: opt < %s -indvars -S "-default-data-layout=e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64" | FileCheck %s
-; RUN: opt < %s -indvars -S "-default-data-layout=e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64-f80:128:128-n8:16:32" | FileCheck %s
-;
-; PR11279: Assertion !IVLimit->getType()->isPointerTy()
-;
-; Test LinearFunctionTestReplace of a pointer-type loop counter. Note
-; that BECount may or may not be a pointer type. A pointer type
-; BECount doesn't really make sense, but that's what falls out of
-; SCEV. Since it's an i8*, it has unit stride so we never adjust the
-; SCEV expression in a way that would convert it to an integer type.
 
-; CHECK-LABEL: @testnullptrptr(
-; CHECK: loop:
-; CHECK: icmp ne
+
+
+
+
+
+
+
+
+
+
+
+
+
 define i8 @testnullptrptr(i8* %buf, i8* %end) nounwind {
   br label %loopguard
 
@@ -35,9 +35,9 @@ exit:
   ret i8 %ret
 }
 
-; CHECK-LABEL: @testptrptr(
-; CHECK: loop:
-; CHECK: icmp ne
+
+
+
 define i8 @testptrptr(i8* %buf, i8* %end) nounwind {
   br label %loopguard
 
@@ -61,9 +61,9 @@ exit:
   ret i8 %ret
 }
 
-; CHECK-LABEL: @testnullptrint(
-; CHECK: loop:
-; CHECK: icmp ne
+
+
+
 define i8 @testnullptrint(i8* %buf, i8* %end) nounwind {
   br label %loopguard
 
@@ -92,9 +92,9 @@ exit:
   ret i8 %ret
 }
 
-; CHECK-LABEL: @testptrint(
-; CHECK: loop:
-; CHECK: icmp ne
+
+
+
 define i8 @testptrint(i8* %buf, i8* %end) nounwind {
   br label %loopguard
 
@@ -123,7 +123,7 @@ exit:
   ret i8 %ret
 }
 
-; IV and BECount have two different pointer types here.
+
 define void @testnullptr([512 x i8]* %base) nounwind {
 entry:
   %add.ptr1603 = getelementptr [512 x i8], [512 x i8]* %base, i64 0, i64 512

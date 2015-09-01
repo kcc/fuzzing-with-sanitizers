@@ -1,17 +1,17 @@
-; RUN: llc %s -O0 -verify-machineinstrs -o - | FileCheck %s
-; This file uses to trigger a machine verifier error because we
-; were generating a stack adjustement with SP as second argument,
-; which is unpredictable behavior for t2ADDrr.
-; This file has been generated from the constpool test of the test-suite.
+
+
+
+
+
 target datalayout = "e-m:o-p:32:32-f64:32:64-v64:32:64-v128:32:128-a:0:32-n32-S32"
 target triple = "thumbv7s-apple-ios"
 
 @.str = external unnamed_addr constant [21 x i8], align 1
 
-; CHECK-LABEL: f:
-; CHECK: movw [[ADDR:(r[0-9]+|lr)]], #
-; CHECK-NEXT: add [[ADDR]], sp
-; CHECK-NEXT: vst1.64 {d{{[0-9]+}}, d{{[0-9]+}}}, {{\[}}[[ADDR]]:128]
+
+
+
+
 define <4 x float> @f(<4 x float> %x) {
 entry:
   %.compoundliteral7837 = alloca <4 x float>, align 16

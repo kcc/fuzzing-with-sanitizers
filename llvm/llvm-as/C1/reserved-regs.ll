@@ -1,20 +1,20 @@
-; RUN: llc -march=sparc  < %s | FileCheck %s
+
 
 @g = common global [32 x i32] zeroinitializer, align 16
 @h = common global [16 x i64] zeroinitializer, align 16
 
-;; Ensures that we don't use registers which are supposed to be reserved.
 
-; CHECK-LABEL: use_all_i32_regs:
-; CHECK-NOT: %g0
-; CHECK-NOT: %g1
-; CHECK-NOT: %g5
-; CHECK-NOT: %g6
-; CHECK-NOT: %g7
-; CHECK-NOT: %o6
-; CHECK-NOT: %i6
-; CHECK-NOT: %i7
-; CHECK: ret
+
+
+
+
+
+
+
+
+
+
+
 define void @use_all_i32_regs() {
 entry:
   %0 = load volatile i32, i32* getelementptr inbounds ([32 x i32], [32 x i32]* @g, i64 0, i64 0), align 16
@@ -85,18 +85,18 @@ entry:
 }
 
 
-; CHECK-LABEL: use_all_i64_regs:
-; CHECK-NOT: %g0
-; CHECK-NOT: %g1
-; CHECK-NOT: %g4
-; CHECK-NOT: %g5
-; CHECK-NOT: %g6
-; CHECK-NOT: %g7
-; CHECK-NOT: %o6
-; CHECK-NOT: %o7
-; CHECK-NOT: %i6
-; CHECK-NOT: %i7
-; CHECK: ret
+
+
+
+
+
+
+
+
+
+
+
+
 define void @use_all_i64_regs() {
 entry:
   %0 = load volatile i64, i64* getelementptr inbounds ([16 x i64], [16 x i64]* @h, i64 0, i64 0), align 16

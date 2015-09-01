@@ -1,12 +1,12 @@
-; RUN: llc < %s -mtriple=x86_64-apple-darwin | FileCheck %s
+
 
 define void @redundant_add(i64 %n) {
-; Check that we don't create two additions for the sadd.with.overflow.
-; CHECK-LABEL: redundant_add
-; CHECK-NOT:  leaq
-; CHECK-NOT:  addq
-; CHECK:      incq
-; CHECK-NEXT: jno
+
+
+
+
+
+
 entry:
   br label %exit_check
 

@@ -1,13 +1,13 @@
-; RUN: %clang_cc1 -Os -emit-llvm -fobjc-arc -o - %s | FileCheck %s
+
 
 target triple = "x86_64-apple-darwin10"
 
 declare i8* @objc_retain(i8*)
 declare void @objc_release(i8*)
 
-; CHECK-LABEL: define void @test(
-; CHECK-NOT: @objc_
-; CHECK: }
+
+
+
 define void @test(i8* %x, i1* %p) nounwind {
 entry:
   br label %loop

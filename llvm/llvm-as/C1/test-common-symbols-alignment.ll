@@ -1,7 +1,7 @@
-; RUN: %lli -O0 %s
 
-; This test checks that common symbols have been allocated addresses honouring
-; the alignment requirement.
+
+
+
 
 @CS1 = common global i32 0, align 16
 @CS2 = common global i8 0, align 1
@@ -18,15 +18,15 @@ entry:
     %tobool = icmp ne i32 %and, 0
     br i1 %tobool, label %if.then, label %if.else
 
-if.then:                                          ; preds = %entry
+if.then:                                          
     store i32 1, i32* %retval
     br label %return
 
-if.else:                                          ; preds = %entry
+if.else:                                          
     store i32 0, i32* %retval
     br label %return
 
-return:                                           ; preds = %if.else, %if.then
+return:                                           
     %1 = load i32, i32* %retval
     ret i32 %1
 }

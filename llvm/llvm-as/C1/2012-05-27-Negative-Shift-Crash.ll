@@ -1,5 +1,5 @@
-; RUN: opt -inline -instcombine -S < %s
-; PR12967
+
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.7.0"
@@ -38,18 +38,18 @@ entry:
   %tobool = icmp eq i32 %0, 0
   br i1 %tobool, label %if.else, label %if.then
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %1 = load i32, i32* @b, align 4
   %.lobit = lshr i32 %1, 31
   %2 = trunc i32 %.lobit to i8
   %.not = xor i8 %2, 1
   br label %if.end
 
-if.else:                                          ; preds = %entry
+if.else:                                          
   %call = tail call signext i8 @fn1(i32 %sub) nounwind
   br label %if.end
 
-if.end:                                           ; preds = %if.else, %if.then
+if.end:                                           
   %storemerge.in = phi i8 [ %call, %if.else ], [ %.not, %if.then ]
   %storemerge = sext i8 %storemerge.in to i32
   store i32 %storemerge, i32* @b, align 4

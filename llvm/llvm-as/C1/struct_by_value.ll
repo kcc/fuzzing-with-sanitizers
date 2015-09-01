@@ -1,36 +1,36 @@
-; A by-value struct is a register-indirect value (breg).
-; RUN: llc %s -filetype=asm -o - | FileCheck %s
 
-; CHECK: Lsection_info:
-; CHECK: DW_AT_location
-; CHECK-NEXT: .byte 112
-; 112 = 0x70 = DW_OP_breg0
 
-; rdar://problem/13658587
-;
-; Generated from
-;
-; struct five
-; {
-;   int a;
-;   int b;
-;   int c;
-;   int d;
-;   int e;
-; };
-;
-; int
-; return_five_int (struct five f)
-; {
-;   return f.a;
-; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-n32:64-S128"
 target triple = "arm64-apple-ios3.0.0"
 
 %struct.five = type { i32, i32, i32, i32, i32 }
 
-; Function Attrs: nounwind ssp
+
 define i32 @return_five_int(%struct.five* %f) #0 {
 entry:
   call void @llvm.dbg.declare(metadata %struct.five* %f, metadata !17, metadata !DIExpression(DW_OP_deref)), !dbg !18
@@ -39,7 +39,7 @@ entry:
   ret i32 %0, !dbg !19
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
 attributes #0 = { nounwind ssp }

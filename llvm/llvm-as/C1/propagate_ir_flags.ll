@@ -1,14 +1,14 @@
-; RUN: opt < %s -basicaa -slp-vectorizer -S | FileCheck %s
 
-; Check propagation of optional IR flags (PR20802). For a flag to
-; propagate from scalar instructions to their vector replacement,
-; *all* scalar instructions must have the flag.
+
+
+
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-unknown"
 
-; CHECK-LABEL: @exact(
-; CHECK: lshr exact <4 x i32>
+
+
 define void @exact(i32* %x) {
   %idx1 = getelementptr inbounds i32, i32* %x, i64 0
   %idx2 = getelementptr inbounds i32, i32* %x, i64 1
@@ -33,8 +33,8 @@ define void @exact(i32* %x) {
   ret void
 }
 
-; CHECK-LABEL: @not_exact(
-; CHECK: lshr <4 x i32>
+
+
 define void @not_exact(i32* %x) {
   %idx1 = getelementptr inbounds i32, i32* %x, i64 0
   %idx2 = getelementptr inbounds i32, i32* %x, i64 1
@@ -59,8 +59,8 @@ define void @not_exact(i32* %x) {
   ret void
 }
 
-; CHECK-LABEL: @nsw(
-; CHECK: add nsw <4 x i32>
+
+
 define void @nsw(i32* %x) {
   %idx1 = getelementptr inbounds i32, i32* %x, i64 0
   %idx2 = getelementptr inbounds i32, i32* %x, i64 1
@@ -85,8 +85,8 @@ define void @nsw(i32* %x) {
   ret void
 }
 
-; CHECK-LABEL: @not_nsw(
-; CHECK: add <4 x i32>
+
+
 define void @not_nsw(i32* %x) {
   %idx1 = getelementptr inbounds i32, i32* %x, i64 0
   %idx2 = getelementptr inbounds i32, i32* %x, i64 1
@@ -111,8 +111,8 @@ define void @not_nsw(i32* %x) {
   ret void
 }
 
-; CHECK-LABEL: @nuw(
-; CHECK: add nuw <4 x i32>
+
+
 define void @nuw(i32* %x) {
   %idx1 = getelementptr inbounds i32, i32* %x, i64 0
   %idx2 = getelementptr inbounds i32, i32* %x, i64 1
@@ -137,8 +137,8 @@ define void @nuw(i32* %x) {
   ret void
 }
  
-; CHECK-LABEL: @not_nuw(
-; CHECK: add <4 x i32>
+
+
 define void @not_nuw(i32* %x) {
   %idx1 = getelementptr inbounds i32, i32* %x, i64 0
   %idx2 = getelementptr inbounds i32, i32* %x, i64 1
@@ -163,8 +163,8 @@ define void @not_nuw(i32* %x) {
   ret void
 }
  
-; CHECK-LABEL: @nnan(
-; CHECK: fadd nnan <4 x float>
+
+
 define void @nnan(float* %x) {
   %idx1 = getelementptr inbounds float, float* %x, i64 0
   %idx2 = getelementptr inbounds float, float* %x, i64 1
@@ -189,8 +189,8 @@ define void @nnan(float* %x) {
   ret void
 }
  
-; CHECK-LABEL: @not_nnan(
-; CHECK: fadd <4 x float>
+
+
 define void @not_nnan(float* %x) {
   %idx1 = getelementptr inbounds float, float* %x, i64 0
   %idx2 = getelementptr inbounds float, float* %x, i64 1
@@ -215,8 +215,8 @@ define void @not_nnan(float* %x) {
   ret void
 }
  
-; CHECK-LABEL: @only_fast(
-; CHECK: fadd fast <4 x float>
+
+
 define void @only_fast(float* %x) {
   %idx1 = getelementptr inbounds float, float* %x, i64 0
   %idx2 = getelementptr inbounds float, float* %x, i64 1
@@ -241,8 +241,8 @@ define void @only_fast(float* %x) {
   ret void
 }
  
-; CHECK-LABEL: @only_arcp(
-; CHECK: fadd arcp <4 x float>
+
+
 define void @only_arcp(float* %x) {
   %idx1 = getelementptr inbounds float, float* %x, i64 0
   %idx2 = getelementptr inbounds float, float* %x, i64 1
@@ -267,9 +267,9 @@ define void @only_arcp(float* %x) {
   ret void
 }
 
-; CHECK-LABEL: @addsub_all_nsw
-; CHECK: add nsw <4 x i32>
-; CHECK: sub nsw <4 x i32>
+
+
+
 define void @addsub_all_nsw(i32* %x) {
   %idx1 = getelementptr inbounds i32, i32* %x, i64 0
   %idx2 = getelementptr inbounds i32, i32* %x, i64 1
@@ -294,9 +294,9 @@ define void @addsub_all_nsw(i32* %x) {
   ret void
 }
  
-; CHECK-LABEL: @addsub_some_nsw
-; CHECK: add nsw <4 x i32>
-; CHECK: sub <4 x i32>
+
+
+
 define void @addsub_some_nsw(i32* %x) {
   %idx1 = getelementptr inbounds i32, i32* %x, i64 0
   %idx2 = getelementptr inbounds i32, i32* %x, i64 1
@@ -321,9 +321,9 @@ define void @addsub_some_nsw(i32* %x) {
   ret void
 }
  
-; CHECK-LABEL: @addsub_no_nsw
-; CHECK: add <4 x i32>
-; CHECK: sub <4 x i32>
+
+
+
 define void @addsub_no_nsw(i32* %x) {
   %idx1 = getelementptr inbounds i32, i32* %x, i64 0
   %idx2 = getelementptr inbounds i32, i32* %x, i64 1

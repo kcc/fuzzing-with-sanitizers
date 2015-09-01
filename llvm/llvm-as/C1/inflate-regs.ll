@@ -1,17 +1,17 @@
-; RUN: llc < %s -mcpu=cortex-a8 | FileCheck %s
+
 target triple = "thumbv7-apple-ios"
 
-; CHECK: local_split
-;
-; The load must go into d0-15 which are all clobbered by the asm.
-; RAGreedy should split the range and use d16-d31 to avoid a spill.
-;
-; CHECK: vldr s
-; CHECK-NOT: vstr
-; CHECK: vadd.f32
-; CHECK-NOT: vstr
-; CHECK: vorr
-; CHECK: vstr s
+
+
+
+
+
+
+
+
+
+
+
 define void @local_split(float* nocapture %p) nounwind ssp {
 entry:
   %x = load float, float* %p, align 4
@@ -21,16 +21,16 @@ entry:
   ret void
 }
 
-; CHECK: global_split
-;
-; Same thing, but across basic blocks.
-;
-; CHECK: vldr s
-; CHECK-NOT: vstr
-; CHECK: vadd.f32
-; CHECK-NOT: vstr
-; CHECK: vorr
-; CHECK: vstr s
+
+
+
+
+
+
+
+
+
+
 define void @global_split(float* nocapture %p1, float* nocapture %p2) nounwind ssp {
 entry:
   %0 = load float, float* %p1, align 4

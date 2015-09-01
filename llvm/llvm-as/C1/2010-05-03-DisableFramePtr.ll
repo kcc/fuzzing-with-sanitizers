@@ -1,16 +1,16 @@
-; RUN: llc  -o /dev/null < %s
-; Radar 7937664
+
+
 %struct.AppleEvent = type opaque
 
 define void @DisposeDMNotificationUPP(void (%struct.AppleEvent*)* %userUPP) "no-frame-pointer-elim-non-leaf" nounwind ssp {
 entry:
-  %userUPP_addr = alloca void (%struct.AppleEvent*)* ; <void (%struct.AppleEvent*)**> [#uses=1]
-  %"alloca point" = bitcast i32 0 to i32          ; <i32> [#uses=0]
+  %userUPP_addr = alloca void (%struct.AppleEvent*)* 
+  %"alloca point" = bitcast i32 0 to i32          
   call void @llvm.dbg.declare(metadata void (%struct.AppleEvent*)** %userUPP_addr, metadata !0, metadata !DIExpression()), !dbg !13
   store void (%struct.AppleEvent*)* %userUPP, void (%struct.AppleEvent*)** %userUPP_addr
   br label %return, !dbg !14
 
-return:                                           ; preds = %entry
+return:                                           
   ret void, !dbg !14
 }
 

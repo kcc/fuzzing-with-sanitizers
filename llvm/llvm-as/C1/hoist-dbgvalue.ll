@@ -1,24 +1,24 @@
-; RUN: opt -simplifycfg -S < %s | FileCheck %s
+
 
 define i32 @foo(i32 %i) nounwind ssp {
   call void @llvm.dbg.value(metadata i32 %i, i64 0, metadata !6, metadata !DIExpression()), !dbg !7
   call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !9, metadata !DIExpression()), !dbg !11
   %1 = icmp ne i32 %i, 0, !dbg !12
-;CHECK: call i32 (...) @bar()
-;CHECK-NEXT: llvm.dbg.value
+
+
   br i1 %1, label %2, label %4, !dbg !12
 
-; <label>:2                                       ; preds = %0
+
   %3 = call i32 (...) @bar(), !dbg !13
   call void @llvm.dbg.value(metadata i32 %3, i64 0, metadata !9, metadata !DIExpression()), !dbg !13
   br label %6, !dbg !15
 
-; <label>:4                                       ; preds = %0
+
   %5 = call i32 (...) @bar(), !dbg !16
   call void @llvm.dbg.value(metadata i32 %5, i64 0, metadata !9, metadata !DIExpression()), !dbg !16
   br label %6, !dbg !18
 
-; <label>:6                                       ; preds = %4, %2
+
   %k.0 = phi i32 [ %3, %2 ], [ %5, %4 ]
   ret i32 %k.0, !dbg !19
 }

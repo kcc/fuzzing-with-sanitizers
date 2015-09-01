@@ -1,5 +1,5 @@
-; RUN: llc < %s -mtriple=i386-pc-linux-gnu
-; PR6027
+
+
 
 %class.OlsonTimeZone = type { i16, i32*, i8*, i16 }
 

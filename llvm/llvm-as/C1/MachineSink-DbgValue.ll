@@ -1,5 +1,5 @@
-; RUN: llc < %s | FileCheck %s
-; Should sink matching DBG_VALUEs also.
+
+
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64"
 target triple = "x86_64-apple-macosx10.7.0"
 
@@ -11,10 +11,10 @@ define i32 @foo(i32 %i, i32* nocapture %c) nounwind uwtable readonly ssp {
   %cd = icmp eq i32 %i, 42, !dbg !15
   br i1 %cd, label %bb1, label %bb2, !dbg !15
 
-bb1:                                     ; preds = %0
-;CHECK: DEBUG_VALUE: a
-;CHECK:      .loc	1 5 5
-;CHECK-NEXT: addl
+bb1:                                     
+
+
+
   %gh = add nsw i32 %ab, 2, !dbg !16
   br label %bb2, !dbg !16
 

@@ -1,12 +1,12 @@
-; Test various representations of pack-like operations.
-;
-; RUN: llc < %s -mtriple=s390x-linux-gnu -mcpu=z13 | FileCheck %s
 
-; One way of writing a <4 x i32> -> <8 x i16> pack.
+
+
+
+
 define <8 x i16> @f1(<4 x i32> %val0, <4 x i32> %val1) {
-; CHECK-LABEL: f1:
-; CHECK: vpkf %v24, %v24, %v26
-; CHECK: br %r14
+
+
+
   %elem0 = extractelement <4 x i32> %val0, i32 0
   %elem1 = extractelement <4 x i32> %val0, i32 1
   %elem2 = extractelement <4 x i32> %val0, i32 2
@@ -41,11 +41,11 @@ define <8 x i16> @f1(<4 x i32> %val0, <4 x i32> %val1) {
   ret <8 x i16> %ret
 }
 
-; A different way of writing a <4 x i32> -> <8 x i16> pack.
+
 define <8 x i16> @f2(<4 x i32> %val0, <4 x i32> %val1) {
-; CHECK-LABEL: f2:
-; CHECK: vpkf %v24, %v24, %v26
-; CHECK: br %r14
+
+
+
   %elem0 = extractelement <4 x i32> %val0, i32 0
   %elem1 = extractelement <4 x i32> %val0, i32 1
   %elem2 = extractelement <4 x i32> %val0, i32 2
@@ -94,11 +94,11 @@ define <8 x i16> @f2(<4 x i32> %val0, <4 x i32> %val1) {
   ret <8 x i16> %ret
 }
 
-; A direct pack operation.
+
 define <8 x i16> @f3(<4 x i32> %val0, <4 x i32> %val1) {
-; CHECK-LABEL: f3:
-; CHECK: vpkf %v24, %v24, %v26
-; CHECK: br %r14
+
+
+
   %bitcast0 = bitcast <4 x i32> %val0 to <8 x i16>
   %bitcast1 = bitcast <4 x i32> %val1 to <8 x i16>
   %ret = shufflevector <8 x i16> %bitcast0, <8 x i16> %bitcast1,
@@ -107,16 +107,16 @@ define <8 x i16> @f3(<4 x i32> %val0, <4 x i32> %val1) {
   ret <8 x i16> %ret
 }
 
-; One way of writing a <4 x i32> -> <16 x i8> pack.  It doesn't matter
-; whether the first pack is VPKF or VPKH since the even bytes of the
-; result are discarded.
+
+
+
 define <16 x i8> @f4(<4 x i32> %val0, <4 x i32> %val1,
                      <4 x i32> %val2, <4 x i32> %val3) {
-; CHECK-LABEL: f4:
-; CHECK-DAG: vpk{{[hf]}} [[REG1:%v[0-9]+]], %v24, %v26
-; CHECK-DAG: vpk{{[hf]}} [[REG2:%v[0-9]+]], %v28, %v30
-; CHECK: vpkh %v24, [[REG1]], [[REG2]]
-; CHECK: br %r14
+
+
+
+
+
   %bitcast0 = bitcast <4 x i32> %val0 to <8 x i16>
   %bitcast1 = bitcast <4 x i32> %val1 to <8 x i16>
   %bitcast2 = bitcast <4 x i32> %val2 to <8 x i16>
@@ -137,16 +137,16 @@ define <16 x i8> @f4(<4 x i32> %val0, <4 x i32> %val1,
   ret <16 x i8> %ret
 }
 
-; Check the same operation, but with elements being extracted from the result.
+
 define void @f5(<4 x i32> %val0, <4 x i32> %val1,
                 <4 x i32> %val2, <4 x i32> %val3,
                 i8 *%base) {
-; CHECK-LABEL: f5:
-; CHECK-DAG: vsteb %v24, 0(%r2), 11
-; CHECK-DAG: vsteb %v26, 1(%r2), 15
-; CHECK-DAG: vsteb %v28, 2(%r2), 3
-; CHECK-DAG: vsteb %v30, 3(%r2), 7
-; CHECK: br %r14
+
+
+
+
+
+
   %bitcast0 = bitcast <4 x i32> %val0 to <8 x i16>
   %bitcast1 = bitcast <4 x i32> %val1 to <8 x i16>
   %bitcast2 = bitcast <4 x i32> %val2 to <8 x i16>
@@ -183,14 +183,14 @@ define void @f5(<4 x i32> %val0, <4 x i32> %val1,
   ret void
 }
 
-; A different way of writing a <4 x i32> -> <16 x i8> pack.
+
 define <16 x i8> @f6(<4 x i32> %val0, <4 x i32> %val1,
                      <4 x i32> %val2, <4 x i32> %val3) {
-; CHECK-LABEL: f6:
-; CHECK-DAG: vpk{{[hf]}} [[REG1:%v[0-9]+]], %v24, %v26
-; CHECK-DAG: vpk{{[hf]}} [[REG2:%v[0-9]+]], %v28, %v30
-; CHECK: vpkh %v24, [[REG1]], [[REG2]]
-; CHECK: br %r14
+
+
+
+
+
   %elem0 = extractelement <4 x i32> %val0, i32 0
   %elem1 = extractelement <4 x i32> %val0, i32 1
   %elem2 = extractelement <4 x i32> %val0, i32 2
@@ -269,20 +269,20 @@ define <16 x i8> @f6(<4 x i32> %val0, <4 x i32> %val1,
   ret <16 x i8> %ret
 }
 
-; One way of writing a <2 x i64> -> <16 x i8> pack.
+
 define <16 x i8> @f7(<2 x i64> %val0, <2 x i64> %val1,
                      <2 x i64> %val2, <2 x i64> %val3,
                      <2 x i64> %val4, <2 x i64> %val5,
                      <2 x i64> %val6, <2 x i64> %val7) {
-; CHECK-LABEL: f7:
-; CHECK-DAG: vpk{{[hfg]}} [[REG1:%v[0-9]+]], %v24, %v26
-; CHECK-DAG: vpk{{[hfg]}} [[REG2:%v[0-9]+]], %v28, %v30
-; CHECK-DAG: vpk{{[hfg]}} [[REG3:%v[0-9]+]], %v25, %v27
-; CHECK-DAG: vpk{{[hfg]}} [[REG4:%v[0-9]+]], %v29, %v31
-; CHECK-DAG: vpk{{[hf]}} [[REG5:%v[0-9]+]], [[REG1]], [[REG2]]
-; CHECK-DAG: vpk{{[hf]}} [[REG6:%v[0-9]+]], [[REG3]], [[REG4]]
-; CHECK: vpkh %v24, [[REG5]], [[REG6]]
-; CHECK: br %r14
+
+
+
+
+
+
+
+
+
   %elem0 = extractelement <2 x i64> %val0, i32 0
   %elem1 = extractelement <2 x i64> %val0, i32 1
   %elem2 = extractelement <2 x i64> %val1, i32 0
@@ -365,17 +365,17 @@ define <16 x i8> @f7(<2 x i64> %val0, <2 x i64> %val1,
   ret <16 x i8> %ret
 }
 
-; Test a <2 x i64> -> <4 x f32> pack in which only individual elements are
-; needed.
+
+
 define float @f8(i64 %scalar0, i64 %scalar1, i64 %scalar2, i64 %scalar3) {
-; CHECK-LABEL: f8:
-; CHECK-NOT: vperm
-; CHECK-NOT: vpk
-; CHECK-NOT: vmrh
-; CHECK: aebr {{%f[0-7]}},
-; CHECK: aebr {{%f[0-7]}},
-; CHECK: meebr %f0,
-; CHECK: br %r14
+
+
+
+
+
+
+
+
   %vec0 = insertelement <2 x i64> undef, i64 %scalar0, i32 0
   %vec1 = insertelement <2 x i64> undef, i64 %scalar1, i32 0
   %vec2 = insertelement <2 x i64> undef, i64 %scalar2, i32 0
@@ -398,18 +398,18 @@ define float @f8(i64 %scalar0, i64 %scalar1, i64 %scalar2, i64 %scalar3) {
   ret float %ret
 }
 
-; Test a <2 x f64> -> <4 x i32> pack in which only individual elements are
-; needed.
+
+
 define i32 @f9(double %scalar0, double %scalar1, double %scalar2,
                double %scalar3) {
-; CHECK-LABEL: f9:
-; CHECK-NOT: vperm
-; CHECK-NOT: vpk
-; CHECK-NOT: vmrh
-; CHECK: ar {{%r[0-5]}},
-; CHECK: ar {{%r[0-5]}},
-; CHECK: or %r2,
-; CHECK: br %r14
+
+
+
+
+
+
+
+
   %vec0 = insertelement <2 x double> undef, double %scalar0, i32 0
   %vec1 = insertelement <2 x double> undef, double %scalar1, i32 0
   %vec2 = insertelement <2 x double> undef, double %scalar2, i32 0

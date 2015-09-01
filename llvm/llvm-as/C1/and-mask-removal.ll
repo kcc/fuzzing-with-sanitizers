@@ -1,10 +1,10 @@
-; RUN: llc -O0 -fast-isel=false -mtriple=arm64-apple-darwin  < %s  | FileCheck %s
+
 
 @board = common global [400 x i8] zeroinitializer, align 1
 @next_string = common global i32 0, align 4
 @string_number = common global [400 x i32] zeroinitializer, align 4
 
-; Function Attrs: nounwind ssp
+
 define void @new_position(i32 %pos) {
 entry:
   %idxprom = sext i32 %pos to i64
@@ -14,17 +14,17 @@ entry:
   %switch = icmp ult i8 %.off, 2
   br i1 %switch, label %if.then, label %if.end
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %tmp1 = load i32, i32* @next_string, align 4
   %arrayidx8 = getelementptr inbounds [400 x i32], [400 x i32]* @string_number, i64 0, i64 %idxprom
   store i32 %tmp1, i32* %arrayidx8, align 4
   br label %if.end
 
-if.end:                                           ; preds = %if.then, %entry
+if.end:                                           
   ret void
-; CHECK-LABEL: new_position
-; CHECK-NOT: and
-; CHECK: ret
+
+
+
 }
 
 define zeroext i1 @test8_0(i8 zeroext %x)  align 2 {
@@ -36,9 +36,9 @@ ret_false:
   ret i1 false
 ret_true:
   ret i1 true
-; CHECK-LABEL: test8_0
-; CHECK: and
-; CHECK: ret
+
+
+
 }
 
 define zeroext i1 @test8_1(i8 zeroext %x)  align 2 {
@@ -50,9 +50,9 @@ ret_false:
   ret i1 false
 ret_true:
   ret i1 true
-; CHECK-LABEL: test8_1
-; CHECK-NOT: and
-; CHECK: ret
+
+
+
 }
 
 define zeroext i1 @test8_2(i8 zeroext %x)  align 2 {
@@ -64,9 +64,9 @@ ret_false:
   ret i1 false
 ret_true:
   ret i1 true
-; CHECK-LABEL: test8_2
-; CHECK-NOT: and
-; CHECK: ret
+
+
+
 }
 
 define zeroext i1 @test8_3(i8 zeroext %x)  align 2 {
@@ -78,9 +78,9 @@ ret_false:
   ret i1 false
 ret_true:
   ret i1 true
-; CHECK-LABEL: test8_3
-; CHECK-NOT: and
-; CHECK: ret
+
+
+
 }
 
 define zeroext i1 @test8_4(i8 zeroext %x)  align 2 {
@@ -92,9 +92,9 @@ ret_false:
   ret i1 false
 ret_true:
   ret i1 true
-; CHECK-LABEL: test8_4
-; CHECK-NOT: and
-; CHECK: ret
+
+
+
 }
 
 define zeroext i1 @test8_5(i8 zeroext %x)  align 2 {
@@ -106,9 +106,9 @@ ret_false:
   ret i1 false
 ret_true:
   ret i1 true
-; CHECK-LABEL: test8_5
-; CHECK: and
-; CHECK: ret
+
+
+
 }
 
 define zeroext i1 @test8_6(i8 zeroext %x)  align 2 {
@@ -120,9 +120,9 @@ ret_false:
   ret i1 false
 ret_true:
   ret i1 true
-; CHECK-LABEL: test8_6
-; CHECK: and
-; CHECK: ret
+
+
+
 }
 
 define zeroext i1 @test8_7(i8 zeroext %x)  align 2 {
@@ -134,9 +134,9 @@ ret_false:
   ret i1 false
 ret_true:
   ret i1 true
-; CHECK-LABEL: test8_7
-; CHECK-NOT: and
-; CHECK: ret
+
+
+
 }
 
 
@@ -150,9 +150,9 @@ ret_false:
   ret i1 false
 ret_true:
   ret i1 true
-; CHECK-LABEL: test8_8
-; CHECK-NOT: and
-; CHECK: ret
+
+
+
 }
 
 define zeroext i1 @test16_0(i16 zeroext %x)  align 2 {
@@ -164,9 +164,9 @@ ret_false:
   ret i1 false
 ret_true:
   ret i1 true
-; CHECK-LABEL: test16_0
-; CHECK-NOT: and
-; CHECK: ret
+
+
+
 }
 
 define zeroext i1 @test16_2(i16 zeroext %x)  align 2 {
@@ -178,9 +178,9 @@ ret_false:
   ret i1 false
 ret_true:
   ret i1 true
-; CHECK-LABEL: test16_2
-; CHECK: and
-; CHECK: ret
+
+
+
 }
 
 define zeroext i1 @test16_3(i16 zeroext %x)  align 2 {
@@ -192,9 +192,9 @@ ret_false:
   ret i1 false
 ret_true:
   ret i1 true
-; CHECK-LABEL: test16_3
-; CHECK-NOT: and
-; CHECK: ret
+
+
+
 }
 
 define zeroext i1 @test16_4(i16 zeroext %x)  align 2 {
@@ -206,9 +206,9 @@ ret_false:
   ret i1 false
 ret_true:
   ret i1 true
-; CHECK-LABEL: test16_4
-; CHECK: and
-; CHECK: ret
+
+
+
 }
 
 define zeroext i1 @test16_5(i16 zeroext %x)  align 2 {
@@ -220,9 +220,9 @@ ret_false:
   ret i1 false
 ret_true:
   ret i1 true
-; CHECK-LABEL: test16_5
-; CHECK-NOT: and
-; CHECK: ret
+
+
+
 }
 
 define zeroext i1 @test16_6(i16 zeroext %x)  align 2 {
@@ -234,9 +234,9 @@ ret_false:
   ret i1 false
 ret_true:
   ret i1 true
-; CHECK-LABEL: test16_6
-; CHECK-NOT: and
-; CHECK: ret
+
+
+
 }
 
 define zeroext i1 @test16_7(i16 zeroext %x)  align 2 {
@@ -248,9 +248,9 @@ ret_false:
   ret i1 false
 ret_true:
   ret i1 true
-; CHECK-LABEL: test16_7
-; CHECK: and
-; CHECK: ret
+
+
+
 }
 
 define zeroext i1 @test16_8(i16 zeroext %x)  align 2 {
@@ -262,8 +262,8 @@ ret_false:
   ret i1 false
 ret_true:
   ret i1 true
-; CHECK-LABEL: test16_8
-; CHECK-NOT: and
-; CHECK: ret
+
+
+
 }
 

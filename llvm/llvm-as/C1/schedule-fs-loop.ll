@@ -1,5 +1,5 @@
-;RUN: llc < %s -march=r600 -mcpu=cayman -stress-sched -verify-misched -verify-machineinstrs
-;REQUIRES: asserts
+
+
 
 define void @main() {
 main_body:
@@ -15,7 +15,7 @@ main_body:
   %9 = extractelement <4 x float> %8, i32 2
   br label %LOOP
 
-LOOP:                                             ; preds = %ENDIF, %main_body
+LOOP:                                             
   %temp4.0 = phi float [ %5, %main_body ], [ %temp5.0, %ENDIF ]
   %temp5.0 = phi float [ %7, %main_body ], [ %temp6.0, %ENDIF ]
   %temp6.0 = phi float [ %9, %main_body ], [ %temp4.0, %ENDIF ]
@@ -29,7 +29,7 @@ LOOP:                                             ; preds = %ENDIF, %main_body
   %16 = icmp ne i32 %15, 0
   br i1 %16, label %IF, label %ENDIF
 
-IF:                                               ; preds = %LOOP
+IF:                                               
   %17 = call float @llvm.AMDIL.clamp.(float %temp4.0, float 0.000000e+00, float 1.000000e+00)
   %18 = call float @llvm.AMDIL.clamp.(float %temp5.0, float 0.000000e+00, float 1.000000e+00)
   %19 = call float @llvm.AMDIL.clamp.(float %temp6.0, float 0.000000e+00, float 1.000000e+00)
@@ -41,7 +41,7 @@ IF:                                               ; preds = %LOOP
   call void @llvm.R600.store.swizzle(<4 x float> %24, i32 0, i32 0)
   ret void
 
-ENDIF:                                            ; preds = %LOOP
+ENDIF:                                            
   %25 = bitcast float %temp8.0 to i32
   %26 = add i32 %25, 1
   %27 = bitcast i32 %26 to float

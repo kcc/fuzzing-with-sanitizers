@@ -1,5 +1,5 @@
-; RUN: opt < %s -basicaa -loop-interchange -S | FileCheck %s
-;; We test the complete .ll for adjustment in outer loop header/latch and inner loop header/latch.
+
+
 
 target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
@@ -11,10 +11,10 @@ target triple = "x86_64-unknown-linux-gnu"
 
 declare void @foo(...)
 
-;;--------------------------------------Test case 01------------------------------------
-;;  for(int i=0;i<N;i++)
-;;    for(int j=1;j<N;j++)
-;;      A[j][i] = A[j][i]+k;
+
+
+
+
 
 define void @interchange_01(i32 %k, i32 %N) {
 entry:
@@ -51,50 +51,50 @@ for.end12:
   ret void
 }
 
-; CHECK-LABEL: @interchange_01
-; CHECK: entry:
-; CHECK:   %cmp21 = icmp sgt i32 %N, 0
-; CHECK:   br i1 %cmp21, label %for.body3.preheader, label %for.end12
-; CHECK: for.cond1.preheader.lr.ph:                        
-; CHECK:   br label %for.cond1.preheader
-; CHECK: for.cond1.preheader:                              
-; CHECK:   %indvars.iv23 = phi i64 [ 0, %for.cond1.preheader.lr.ph ], [ %indvars.iv.next24, %for.inc10 ]
-; CHECK:   br i1 %cmp219, label %for.body3.split1, label %for.end12.loopexit
-; CHECK: for.body3.preheader:                              
-; CHECK:   %cmp219 = icmp sgt i32 %N, 1
-; CHECK:   %0 = add i32 %N, -1
-; CHECK:   br label %for.body3
-; CHECK: for.body3:                                        
-; CHECK:   %indvars.iv = phi i64 [ %indvars.iv.next, %for.body3.split ], [ 1, %for.body3.preheader ]
-; CHECK:   br label %for.cond1.preheader.lr.ph
-; CHECK: for.body3.split1:                                 
-; CHECK:   %arrayidx5 = getelementptr inbounds [100 x [100 x i32]], [100 x [100 x i32]]* @A, i64 0, i64 %indvars.iv, i64 %indvars.iv23
-; CHECK:   %1 = load i32, i32* %arrayidx5
-; CHECK:   %add = add nsw i32 %1, %k
-; CHECK:   store i32 %add, i32* %arrayidx5
-; CHECK:   br label %for.inc10.loopexit
-; CHECK: for.body3.split:                                  
-; CHECK:   %indvars.iv.next = add nuw nsw i64 %indvars.iv, 1
-; CHECK:   %lftr.wideiv = trunc i64 %indvars.iv to i32
-; CHECK:   %exitcond = icmp eq i32 %lftr.wideiv, %0
-; CHECK:   br i1 %exitcond, label %for.end12.loopexit, label %for.body3
-; CHECK: for.inc10.loopexit:                               
-; CHECK:   br label %for.inc10
-; CHECK: for.inc10:                                        
-; CHECK:   %indvars.iv.next24 = add nuw nsw i64 %indvars.iv23, 1
-; CHECK:   %lftr.wideiv25 = trunc i64 %indvars.iv23 to i32
-; CHECK:   %exitcond26 = icmp eq i32 %lftr.wideiv25, %0
-; CHECK:   br i1 %exitcond26, label %for.body3.split, label %for.cond1.preheader
-; CHECK: for.end12.loopexit:                               
-; CHECK:   br label %for.end12
-; CHECK: for.end12:                                        
-; CHECK:   ret void
 
-;;--------------------------------------Test case 02-------------------------------------
 
-;; for(int i=0;i<100;i++)
-;;   for(int j=100;j>=0;j--)
-;;     A[j][i] = A[j][i]+k;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @interchange_02(i32 %k) {
 entry:
@@ -123,41 +123,41 @@ for.end11:
   ret void
 }
 
-; CHECK-LABEL: @interchange_02
-; CHECK: entry:
-; CHECK:   br label %for.body3.preheader
-; CHECK: for.cond1.preheader.preheader: 
-; CHECK:   br label %for.cond1.preheader
-; CHECK: for.cond1.preheader:  
-; CHECK:   %indvars.iv19 = phi i64 [ %indvars.iv.next20, %for.inc10 ], [ 0, %for.cond1.preheader.preheader ]
-; CHECK:   br label %for.body3.split1
-; CHECK: for.body3.preheader: 
-; CHECK:   br label %for.body3
-; CHECK: for.body3: 
-; CHECK:   %indvars.iv = phi i64 [ %indvars.iv.next, %for.body3.split ], [ 100, %for.body3.preheader ]
-; CHECK:   br label %for.cond1.preheader.preheader
-; CHECK: for.body3.split1:                                 ; preds = %for.cond1.preheader
-; CHECK:   %arrayidx5 = getelementptr inbounds [100 x [100 x i32]], [100 x [100 x i32]]* @A, i64 0, i64 %indvars.iv, i64 %indvars.iv19
-; CHECK:   %0 = load i32, i32* %arrayidx5
-; CHECK:   %add = add nsw i32 %0, %k
-; CHECK:   store i32 %add, i32* %arrayidx5
-; CHECK:   br label %for.inc10
-; CHECK: for.body3.split:
-; CHECK:   %indvars.iv.next = add nsw i64 %indvars.iv, -1
-; CHECK:   %cmp2 = icmp sgt i64 %indvars.iv, 0
-; CHECK:   br i1 %cmp2, label %for.body3, label %for.end11
-; CHECK: for.inc10:
-; CHECK:   %indvars.iv.next20 = add nuw nsw i64 %indvars.iv19, 1
-; CHECK:   %exitcond = icmp eq i64 %indvars.iv.next20, 100
-; CHECK:   br i1 %exitcond, label %for.body3.split, label %for.cond1.preheader
-; CHECK: for.end11: 
-; CHECK:   ret void
 
-;;--------------------------------------Test case 03-------------------------------------
-;; Loops should not be interchanged in this case as it is not profitable.
-;;  for(int i=0;i<100;i++)
-;;    for(int j=0;j<100;j++)
-;;      A[i][j] = A[i][j]+k;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @interchange_03(i32 %k) {
 entry:
@@ -186,38 +186,38 @@ for.end12:
   ret void
 }
 
-; CHECK-LABEL: @interchange_03
-; CHECK: entry:
-; CHECK:   br label %for.cond1.preheader.preheader
-; CHECK: for.cond1.preheader.preheader:                    ; preds = %entry
-; CHECK:   br label %for.cond1.preheader
-; CHECK: for.cond1.preheader:                              ; preds = %for.cond1.preheader.preheader, %for.inc10
-; CHECK:   %indvars.iv21 = phi i64 [ %indvars.iv.next22, %for.inc10 ], [ 0, %for.cond1.preheader.preheader ]
-; CHECK:  br label %for.body3.preheader
-; CHECK: for.body3.preheader:                              ; preds = %for.cond1.preheader
-; CHECK:   br label %for.body3
-; CHECK: for.body3:                                        ; preds = %for.body3.preheader, %for.body3
-; CHECK:   %indvars.iv = phi i64 [ %indvars.iv.next, %for.body3 ], [ 0, %for.body3.preheader ]
-; CHECK:   %arrayidx5 = getelementptr inbounds [100 x [100 x i32]], [100 x [100 x i32]]* @A, i64 0, i64 %indvars.iv21, i64 %indvars.iv
-; CHECK:   %0 = load i32, i32* %arrayidx5
-; CHECK:   %add = add nsw i32 %0, %k
-; CHECK:   store i32 %add, i32* %arrayidx5
-; CHECK:   %indvars.iv.next = add nuw nsw i64 %indvars.iv, 1
-; CHECK:   %exitcond = icmp eq i64 %indvars.iv.next, 100
-; CHECK:   br i1 %exitcond, label %for.inc10, label %for.body3
-; CHECK: for.inc10:                                        ; preds = %for.body3
-; CHECK:   %indvars.iv.next22 = add nuw nsw i64 %indvars.iv21, 1
-; CHECK:   %exitcond23 = icmp eq i64 %indvars.iv.next22, 100
-; CHECK:   br i1 %exitcond23, label %for.end12, label %for.cond1.preheader
-; CHECK: for.end12:                                        ; preds = %for.inc10
-; CHECK:   ret void
 
 
-;;--------------------------------------Test case 04-------------------------------------
-;; Loops should not be interchanged in this case as it is not legal due to dependency.
-;;  for(int j=0;j<99;j++)
-;;   for(int i=0;i<99;i++)
-;;       A[j][i+1] = A[j+1][i]+k;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @interchange_04(i32 %k){
 entry:
@@ -247,38 +247,38 @@ for.end14:
   ret void
 }
 
-; CHECK-LABEL: @interchange_04
-; CHECK: entry:
-; CHECK:   br label %for.cond1.preheader
-; CHECK: for.cond1.preheader:                              ; preds = %for.inc12, %entry
-; CHECK:   %indvars.iv23 = phi i64 [ 0, %entry ], [ %indvars.iv.next24, %for.inc12 ]
-; CHECK:   %indvars.iv.next24 = add nuw nsw i64 %indvars.iv23, 1
-; CHECK:   br label %for.body3
-; CHECK: for.body3:                                        ; preds = %for.body3, %for.cond1.preheader
-; CHECK:   %indvars.iv = phi i64 [ 0, %for.cond1.preheader ], [ %indvars.iv.next, %for.body3 ]
-; CHECK:   %arrayidx5 = getelementptr inbounds [100 x [100 x i32]], [100 x [100 x i32]]* @A, i64 0, i64 %indvars.iv.next24, i64 %indvars.iv
-; CHECK:   %0 = load i32, i32* %arrayidx5
-; CHECK:   %add6 = add nsw i32 %0, %k
-; CHECK:   %indvars.iv.next = add nuw nsw i64 %indvars.iv, 1
-; CHECK:   %arrayidx11 = getelementptr inbounds [100 x [100 x i32]], [100 x [100 x i32]]* @A, i64 0, i64 %indvars.iv23, i64 %indvars.iv.next
-; CHECK:   store i32 %add6, i32* %arrayidx11
-; CHECK:   %exitcond = icmp eq i64 %indvars.iv.next, 99
-; CHECK:   br i1 %exitcond, label %for.inc12, label %for.body3
-; CHECK: for.inc12:                                        ; preds = %for.body3
-; CHECK:   %exitcond25 = icmp eq i64 %indvars.iv.next24, 99
-; CHECK:   br i1 %exitcond25, label %for.end14, label %for.cond1.preheader
-; CHECK: for.end14:                                        ; preds = %for.inc12
-; CHECK:   ret void
 
 
 
-;;--------------------------------------Test case 05-------------------------------------
-;; Loops not tightly nested are not interchanged
-;;  for(int j=0;j<N;j++) {
-;;    B[j] = j+k;
-;;    for(int i=0;i<N;i++)
-;;      A[j][i] = A[j][i]+B[j];
-;;  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @interchange_05(i32 %k, i32 %N){
 entry:
@@ -319,51 +319,51 @@ for.end17:
   ret void
 }
 
-; CHECK-LABEL: @interchange_05
-; CHECK: entry:
-; CHECK: %cmp30 = icmp sgt i32 %N, 0
-; CHECK: br i1 %cmp30, label %for.body.lr.ph, label %for.end17
-; CHECK: for.body.lr.ph:
-; CHECK: %0 = add i32 %N, -1
-; CHECK: %1 = zext i32 %k to i64
-; CHECK: br label %for.body
-; CHECK: for.body:
-; CHECK: %indvars.iv32 = phi i64 [ 0, %for.body.lr.ph ], [ %indvars.iv.next33, %for.inc15 ]
-; CHECK: %2 = add nsw i64 %indvars.iv32, %1
-; CHECK: %arrayidx = getelementptr inbounds [100 x i32], [100 x i32]* @B, i64 0, i64 %indvars.iv32
-; CHECK: %3 = trunc i64 %2 to i32
-; CHECK: store i32 %3, i32* %arrayidx
-; CHECK: br label %for.body3.preheader
-; CHECK: for.body3.preheader:
-; CHECK: br label %for.body3
-; CHECK: for.body3:
-; CHECK: %indvars.iv = phi i64 [ %indvars.iv.next, %for.body3 ], [ 0, %for.body3.preheader ]
-; CHECK: %arrayidx7 = getelementptr inbounds [100 x [100 x i32]], [100 x [100 x i32]]* @A, i64 0, i64 %indvars.iv32, i64 %indvars.iv
-; CHECK: %4 = load i32, i32* %arrayidx7
-; CHECK: %add10 = add nsw i32 %3, %4
-; CHECK: store i32 %add10, i32* %arrayidx7
-; CHECK: %indvars.iv.next = add nuw nsw i64 %indvars.iv, 1
-; CHECK: %lftr.wideiv = trunc i64 %indvars.iv to i32
-; CHECK: %exitcond = icmp eq i32 %lftr.wideiv, %0
-; CHECK: br i1 %exitcond, label %for.inc15, label %for.body3
-; CHECK: for.inc15:
-; CHECK: %indvars.iv.next33 = add nuw nsw i64 %indvars.iv32, 1
-; CHECK: %lftr.wideiv35 = trunc i64 %indvars.iv32 to i32
-; CHECK: %exitcond36 = icmp eq i32 %lftr.wideiv35, %0
-; CHECK: br i1 %exitcond36, label %for.end17.loopexit, label %for.body
-; CHECK: for.end17.loopexit:
-; CHECK: br label %for.end17
-; CHECK: for.end17:
-; CHECK: ret void
 
 
-;;--------------------------------------Test case 06-------------------------------------
-;; Loops not tightly nested are not interchanged
-;;  for(int j=0;j<N;j++) {
-;;    foo();
-;;    for(int i=2;i<N;i++)
-;;      A[j][i] = A[j][i]+k;
-;;  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @interchange_06(i32 %k, i32 %N) {
 entry:
@@ -399,18 +399,18 @@ for.inc10:
 for.end12:
   ret void
 }
-;; Here we are checking if the inner phi is not split then we have not interchanged.
-; CHECK-LABEL: @interchange_06
-; CHECK:  phi i64 [ %indvars.iv.next, %for.body3 ], [ 2, %for.body3.preheader ]
-; CHECK-NEXT: getelementptr
-; CHECK-NEXT: %1 = load
 
-;;--------------------------------------Test case 07-------------------------------------
-;; FIXME:
-;; Test for interchange when we have an lcssa phi. This should ideally be interchanged but it is currently not supported.
-;;     for(gi=1;gi<N;gi++)
-;;       for(gj=1;gj<M;gj++)
-;;         A[gj][gi] = A[gj - 1][gi] + C[gj][gi];
+
+
+
+
+
+
+
+
+
+
+
 
 @gi = common global i32 0
 @gj = common global i32 0
@@ -466,34 +466,34 @@ for.end16:
   ret void
 }
 
-; CHECK-LABEL: @interchange_07
-; CHECK: for.body3:                                        ; preds = %for.body3.preheader, %for.body3
-; CHECK:   %indvars.iv = phi i64 [ %indvars.iv.next, %for.body3 ], [ 1, %for.body3.preheader ]
-; CHECK:   %5 = add nsw i64 %indvars.iv, -1
-; CHECK:   %arrayidx5 = getelementptr inbounds [100 x [100 x i32]], [100 x [100 x i32]]* @A, i64 0, i64 %5, i64 %indvars.iv25
-; CHECK:   %6 = load i32, i32* %arrayidx5
-; CHECK:   %arrayidx9 = getelementptr inbounds [100 x [100 x i32]], [100 x [100 x i32]]* @C, i64 0, i64 %indvars.iv, i64 %indvars.iv25
 
-;;------------------------------------------------Test case 08-------------------------------
-;; Test for interchange in loop nest greater than 2.
-;;  for(int i=0;i<100;i++)
-;;    for(int j=0;j<100;j++)
-;;      for(int k=0;k<100;k++)
-;;        D[i][k][j] = D[i][k][j]+t;
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 define void @interchange_08(i32 %t){
 entry:
   br label %for.cond1.preheader
 
-for.cond1.preheader:                              ; preds = %for.inc15, %entry
+for.cond1.preheader:                              
   %i.028 = phi i32 [ 0, %entry ], [ %inc16, %for.inc15 ]
   br label %for.cond4.preheader
 
-for.cond4.preheader:                              ; preds = %for.inc12, %for.cond1.preheader
+for.cond4.preheader:                              
   %j.027 = phi i32 [ 0, %for.cond1.preheader ], [ %inc13, %for.inc12 ]
   br label %for.body6
 
-for.body6:                                        ; preds = %for.body6, %for.cond4.preheader
+for.body6:                                        
   %k.026 = phi i32 [ 0, %for.cond4.preheader ], [ %inc, %for.body6 ]
   %arrayidx8 = getelementptr inbounds [100 x [100 x [100 x i32]]], [100 x [100 x [100 x i32]]]* @D, i32 0, i32 %i.028, i32 %k.026, i32 %j.027
   %0 = load i32, i32* %arrayidx8
@@ -503,55 +503,55 @@ for.body6:                                        ; preds = %for.body6, %for.con
   %exitcond = icmp eq i32 %inc, 100
   br i1 %exitcond, label %for.inc12, label %for.body6
 
-for.inc12:                                        ; preds = %for.body6
+for.inc12:                                        
   %inc13 = add nuw nsw i32 %j.027, 1
   %exitcond29 = icmp eq i32 %inc13, 100
   br i1 %exitcond29, label %for.inc15, label %for.cond4.preheader
 
-for.inc15:                                        ; preds = %for.inc12
+for.inc15:                                        
   %inc16 = add nuw nsw i32 %i.028, 1
   %exitcond30 = icmp eq i32 %inc16, 100
   br i1 %exitcond30, label %for.end17, label %for.cond1.preheader
 
-for.end17:                                        ; preds = %for.inc15
+for.end17:                                        
   ret void
 }
-; CHECK-LABEL: @interchange_08
-; CHECK:   entry:
-; CHECK:     br label %for.cond1.preheader.preheader
-; CHECK:   for.cond1.preheader.preheader:                    ; preds = %entry
-; CHECK:     br label %for.cond1.preheader
-; CHECK:   for.cond1.preheader:                              ; preds = %for.cond1.preheader.preheader, %for.inc15
-; CHECK:     %i.028 = phi i32 [ %inc16, %for.inc15 ], [ 0, %for.cond1.preheader.preheader ]
-; CHECK:     br label %for.body6.preheader
-; CHECK:   for.cond4.preheader.preheader:                    ; preds = %for.body6
-; CHECK:     br label %for.cond4.preheader
-; CHECK:   for.cond4.preheader:                              ; preds = %for.cond4.preheader.preheader, %for.inc12
-; CHECK:     %j.027 = phi i32 [ %inc13, %for.inc12 ], [ 0, %for.cond4.preheader.preheader ]
-; CHECK:     br label %for.body6.split1
-; CHECK:   for.body6.preheader:                              ; preds = %for.cond1.preheader
-; CHECK:     br label %for.body6
-; CHECK:   for.body6:                                        ; preds = %for.body6.preheader, %for.body6.split
-; CHECK:     %k.026 = phi i32 [ %inc, %for.body6.split ], [ 0, %for.body6.preheader ]
-; CHECK:     br label %for.cond4.preheader.preheader
-; CHECK:   for.body6.split1:                                 ; preds = %for.cond4.preheader
-; CHECK:     %arrayidx8 = getelementptr inbounds [100 x [100 x [100 x i32]]], [100 x [100 x [100 x i32]]]* @D, i32 0, i32 %i.028, i32 %k.026, i32 %j.027
-; CHECK:     %0 = load i32, i32* %arrayidx8
-; CHECK:     %add = add nsw i32 %0, %t
-; CHECK:     store i32 %add, i32* %arrayidx8
-; CHECK:     br label %for.inc12
-; CHECK:   for.body6.split:                                  ; preds = %for.inc12
-; CHECK:     %inc = add nuw nsw i32 %k.026, 1
-; CHECK:     %exitcond = icmp eq i32 %inc, 100
-; CHECK:     br i1 %exitcond, label %for.inc15, label %for.body6
-; CHECK:   for.inc12:                                        ; preds = %for.body6.split1
-; CHECK:     %inc13 = add nuw nsw i32 %j.027, 1
-; CHECK:     %exitcond29 = icmp eq i32 %inc13, 100
-; CHECK:     br i1 %exitcond29, label %for.body6.split, label %for.cond4.preheader
-; CHECK:   for.inc15:                                        ; preds = %for.body6.split
-; CHECK:     %inc16 = add nuw nsw i32 %i.028, 1
-; CHECK:     %exitcond30 = icmp eq i32 %inc16, 100
-; CHECK:     br i1 %exitcond30, label %for.end17, label %for.cond1.preheader
-; CHECK:   for.end17:                                        ; preds = %for.inc15
-; CHECK:     ret void
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

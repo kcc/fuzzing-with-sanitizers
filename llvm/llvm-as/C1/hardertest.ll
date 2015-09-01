@@ -1,15 +1,15 @@
-; RUN: opt < %s -loop-simplify
+
 
 define void @foo(i1 %C) {
 	br i1 %C, label %T, label %F
-T:		; preds = %0
+T:		
 	br label %Loop
-F:		; preds = %0
+F:		
 	br label %Loop
-Loop:		; preds = %L2, %Loop, %F, %T
-	%Val = phi i32 [ 0, %T ], [ 1, %F ], [ 2, %Loop ], [ 3, %L2 ]		; <i32> [#uses=0]
+Loop:		
+	%Val = phi i32 [ 0, %T ], [ 1, %F ], [ 2, %Loop ], [ 3, %L2 ]		
 	br i1 %C, label %Loop, label %L2
-L2:		; preds = %Loop
+L2:		
 	br label %Loop
 }
 

@@ -1,5 +1,5 @@
-; RUN: llc < %s -march=arm -mtriple=arm-linux-gnueabi
-; PR1279
+
+
 
 	%struct.CUMULATIVE_ARGS = type { i32, i32, i32, i32, i32, i32 }
 	%struct.arm_stack_offsets = type { i32, i32, i32, i32, i32 }
@@ -26,8 +26,8 @@
 	%struct.varasm_status = type opaque
 	%struct.varray_head_tag = type { i32, i32, i32, i8*, %struct.u }
 	%union.tree_ann_d = type opaque
-@str469 = external global [42 x i8]		; <[42 x i8]*> [#uses=0]
-@__FUNCTION__.24265 = external global [19 x i8]		; <[19 x i8]*> [#uses=0]
+@str469 = external global [42 x i8]		
+@__FUNCTION__.24265 = external global [19 x i8]		
 
 declare void @fancy_abort()
 
@@ -35,10 +35,10 @@ define fastcc void @fold_builtin_bitop() {
 entry:
 	br i1 false, label %cond_true105, label %UnifiedReturnBlock
 
-cond_true105:		; preds = %entry
+cond_true105:		
 	br i1 false, label %cond_true134, label %UnifiedReturnBlock
 
-cond_true134:		; preds = %cond_true105
+cond_true134:		
 	switch i32 0, label %bb479 [
 		 i32 378, label %bb313
 		 i32 380, label %bb313
@@ -57,45 +57,45 @@ cond_true134:		; preds = %cond_true105
 		 i32 441, label %bb441
 	]
 
-bb250:		; preds = %cond_true134, %cond_true134, %cond_true134
+bb250:		
 	ret void
 
-bb313:		; preds = %cond_true134, %cond_true134, %cond_true134
+bb313:		
 	ret void
 
-bb366:		; preds = %cond_true134, %cond_true134, %cond_true134
+bb366:		
 	ret void
 
-bb441:		; preds = %cond_true134, %cond_true134, %cond_true134
+bb441:		
 	ret void
 
-bb457:		; preds = %bb464, %bb457
-	%tmp459 = add i64 0, 1		; <i64> [#uses=1]
+bb457:		
+	%tmp459 = add i64 0, 1		
 	br i1 false, label %bb474.preheader, label %bb457
 
-bb464:		; preds = %cond_true134, %cond_true134, %cond_true134
+bb464:		
 	br i1 false, label %bb474.preheader, label %bb457
 
-bb474.preheader:		; preds = %bb464, %bb457
-	%result.5.ph = phi i64 [ 0, %bb464 ], [ %tmp459, %bb457 ]		; <i64> [#uses=1]
+bb474.preheader:		
+	%result.5.ph = phi i64 [ 0, %bb464 ], [ %tmp459, %bb457 ]		
 	br label %bb474
 
-bb467:		; preds = %bb474
-	%indvar.next586 = add i64 %indvar585, 1		; <i64> [#uses=1]
+bb467:		
+	%indvar.next586 = add i64 %indvar585, 1		
 	br label %bb474
 
-bb474:		; preds = %bb467, %bb474.preheader
-	%indvar585 = phi i64 [ 0, %bb474.preheader ], [ %indvar.next586, %bb467 ]		; <i64> [#uses=2]
+bb474:		
+	%indvar585 = phi i64 [ 0, %bb474.preheader ], [ %indvar.next586, %bb467 ]		
 	br i1 false, label %bb476, label %bb467
 
-bb476:		; preds = %bb474
-	%result.5 = add i64 %indvar585, %result.5.ph		; <i64> [#uses=0]
+bb476:		
+	%result.5 = add i64 %indvar585, %result.5.ph		
 	ret void
 
-bb479:		; preds = %cond_true134
+bb479:		
 	tail call void @fancy_abort( )
 	unreachable
 
-UnifiedReturnBlock:		; preds = %cond_true105, %entry
+UnifiedReturnBlock:		
 	ret void
 }

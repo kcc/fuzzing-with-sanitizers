@@ -1,5 +1,5 @@
-; RUN: llc -march=mipsel -mcpu=mips32r2 -mattr=+micromips \
-; RUN:   -relocation-model=pic -O3 < %s | FileCheck %s
+
+
 
 @a = global i32 10, align 4
 @b = global i32 0, align 4
@@ -19,8 +19,8 @@ entry:
   ret i32 0
 }
 
-; CHECK: sll16  ${{[2-7]|16|17}}, ${{[2-7]|16|17}}, {{[0-7]}}
-; CHECK: sll    ${{[0-9]+}}, ${{[0-9]+}}, {{[0-9]+}}
+
+
 
 @i = global i32 10654, align 4
 @j = global i32 0, align 4
@@ -40,5 +40,5 @@ entry:
   ret i32 0
 }
 
-; CHECK: srl16  ${{[2-7]|16|17}}, ${{[2-7]|16|17}}, {{[0-7]}}
-; CHECK: srl    ${{[0-9]+}}, ${{[0-9]+}}, {{[0-9]+}}
+
+

@@ -1,4 +1,4 @@
-; RUN: llc -mcpu=pwr7 < %s | FileCheck %s
+
 target datalayout = "E-m:e-i64:64-n32:64"
 target triple = "powerpc64-unknown-linux-gnu"
 
@@ -9,13 +9,13 @@ target triple = "powerpc64-unknown-linux-gnu"
 %struct.signal_struct.3.15.123 = type { i64 }
 %struct.pid.5.17.125 = type { i8* }
 
-; Function Attrs: nounwind
+
 define signext i32 @proc_task_getattr(%struct.inode.0.12.120* nocapture readonly %inode, %struct.kstat2.1.13.121* nocapture %stat) #0 {
 entry:
   %call1.i = tail call %struct.task_struct.4.16.124* @get_pid_task(%struct.pid.5.17.125* undef, i32 zeroext 0) #0
   br i1 undef, label %if.end, label %if.then
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   %0 = load i64, i64* undef, align 8
   %conv.i = trunc i64 %0 to i32
   %1 = load i32, i32* null, align 4
@@ -26,16 +26,16 @@ if.then:                                          ; preds = %entry
   %cmp.i = icmp eq i32 %2, 0
   br i1 %cmp.i, label %if.then.i, label %if.end
 
-; CHECK-LABEL: @proc_task_getattr
-; CHECK-NOT: stwcx. [[REG:[0-9]+]],0,[[REG]]
-; CHECK: blr
 
-if.then.i:                                        ; preds = %if.then
+
+
+
+if.then.i:                                        
   %3 = bitcast %struct.task_struct.4.16.124* %call1.i to i8*
   tail call void @foo(i8* %3) #0
   unreachable
 
-if.end:                                           ; preds = %if.then, %entry
+if.end:                                           
   ret i32 0
 }
 

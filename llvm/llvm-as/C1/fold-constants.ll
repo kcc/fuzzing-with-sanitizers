@@ -1,13 +1,13 @@
-; RUN: llc -mtriple=aarch64-linux-gnu -o - %s | FileCheck %s
+
 
 define i64 @dotests_616() {
-; CHECK-LABEL: dotests_616
-; CHECK:       movi d0, #0000000000000000
-; CHECK-NEXT:  umov w8, v0.b[2]
-; CHECK-NEXT:  sbfx w8, w8, #0, #1
-; CHECK-NEXT:  fmov s0, w8
-; CHECK-NEXT:  fmov x0, d0
-; CHECK-NEXT:  ret
+
+
+
+
+
+
+
 entry:
   %0 = bitcast <2 x i64> zeroinitializer to <8 x i16>
   %1 = and <8 x i16> zeroinitializer, %0

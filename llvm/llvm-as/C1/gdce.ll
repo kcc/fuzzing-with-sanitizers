@@ -1,14 +1,14 @@
-; RUN: opt -O2 -S < %s | FileCheck %s
 
-; Run global DCE to eliminate unused ctor and dtor.
-; rdar://9142819
 
-; CHECK: main
-; CHECK-NOT: _ZN4BaseC1Ev
-; CHECK-NOT: _ZN4BaseD1Ev
-; CHECK-NOT: _ZN4BaseD2Ev
-; CHECK-NOT: _ZN4BaseC2Ev
-; CHECK-NOT: _ZN4BaseD0Ev
+
+
+
+
+
+
+
+
+
 
 %class.Base = type { i32 (...)** }
 
@@ -77,12 +77,12 @@ entry:
   invoke void @_ZN4BaseD1Ev(%class.Base* %this1)
           to label %invoke.cont unwind label %lpad
 
-invoke.cont:                                      ; preds = %entry
+invoke.cont:                                      
   %0 = bitcast %class.Base* %this1 to i8*
   call void @_ZdlPv(i8* %0) nounwind
   ret void
 
-lpad:                                             ; preds = %entry
+lpad:                                             
   %1 = landingpad { i8*, i32 }
           cleanup
   %2 = extractvalue { i8*, i32 } %1, 0
@@ -93,7 +93,7 @@ lpad:                                             ; preds = %entry
   call void @_ZdlPv(i8* %4) nounwind
   br label %eh.resume
 
-eh.resume:                                        ; preds = %lpad
+eh.resume:                                        
   %exn = load i8*, i8** %exn.slot
   %sel = load i32, i32* %ehselector.slot
   %lpad.val = insertvalue { i8*, i32 } undef, i8* %exn, 0

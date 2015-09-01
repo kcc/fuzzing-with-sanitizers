@@ -1,5 +1,5 @@
-; RUN: opt < %s -inline -S | grep nounwind
-; RUN: opt < %s -inline -S | grep unreachable
+
+
 
 declare i1 @extern()
 

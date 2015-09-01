@@ -1,17 +1,17 @@
-; RUN: llc -mtriple=x86_64-apple-darwin -print-machineinstrs=expand-isel-pseudos -enable-selectiondag-sp=true %s -o /dev/null 2>&1 | FileCheck %s --check-prefix=SELDAG
-; RUN: llc -mtriple=x86_64-apple-darwin -print-machineinstrs=expand-isel-pseudos -enable-selectiondag-sp=false %s -o /dev/null 2>&1 | FileCheck %s --check-prefix=IR
 
-; SELDAG: # Machine code for function test_branch_weights:
-; SELDAG: Successors according to CFG: BB#[[SUCCESS:[0-9]+]](1048575) BB#[[FAILURE:[0-9]+]](1)
-; SELDAG: BB#[[FAILURE]]:
-; SELDAG: CALL64pcrel32 <es:__stack_chk_fail>
-; SELDAG: BB#[[SUCCESS]]:
 
-; IR: # Machine code for function test_branch_weights:
-; IR: Successors according to CFG: BB#[[SUCCESS:[0-9]+]](1048575) BB#[[FAILURE:[0-9]+]](1)
-; IR: BB#[[SUCCESS]]:
-; IR: BB#[[FAILURE]]:
-; IR: CALL64pcrel32 <ga:@__stack_chk_fail>
+
+
+
+
+
+
+
+
+
+
+
+
 
 define i32 @test_branch_weights(i32 %n) #0 {
 entry:

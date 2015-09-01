@@ -1,4 +1,4 @@
-; RUN: opt < %s -ipsccp -S | not grep global
+
 
 @G = internal global i66 undef
 

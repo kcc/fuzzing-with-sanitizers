@@ -1,11 +1,11 @@
-; RUN: llc -march=mips < %s
-; RUN: llc -march=mips -mattr=+msa,+fp64 < %s
-; RUN: llc -march=mipsel < %s
-; RUN: llc -march=mipsel -mattr=+msa,+fp64 < %s
 
-; This test originally failed for MSA with a
-; `Opc && "Cannot copy registers"' assertion.
-; It should at least successfully build.
+
+
+
+
+
+
+
 
 define void @autogen_SD1935737938(i8*, i32*, i64*, i32, i64, i8) {
 BB:
@@ -41,7 +41,7 @@ BB:
   %Cmp17 = fcmp one float 0xBD946F9840000000, %B15
   br label %CF74
 
-CF74:                                             ; preds = %CF74, %CF80, %CF76, %BB
+CF74:                                             
   %L18 = load i8, i8* %0
   store i8 -69, i8* %0
   %E19 = extractelement <1 x i64> %Sl, i32 0
@@ -61,7 +61,7 @@ CF74:                                             ; preds = %CF74, %CF80, %CF76,
   %Cmp31 = icmp eq i32 %B22, %B22
   br i1 %Cmp31, label %CF74, label %CF80
 
-CF80:                                             ; preds = %CF74
+CF80:                                             
   %L32 = load i8, i8* %0
   store i8 -1, i8* %0
   %E33 = extractelement <2 x i32> zeroinitializer, i32 1
@@ -80,7 +80,7 @@ CF80:                                             ; preds = %CF74
   %Cmp45 = fcmp une float 0x3AFCE1A0C0000000, 0.000000e+00
   br i1 %Cmp45, label %CF74, label %CF76
 
-CF76:                                             ; preds = %CF80
+CF76:                                             
   %L46 = load i8, i8* %0
   store i8 %L39, i8* %0
   %E47 = extractelement <2 x i32> %Shuff27, i32 0
@@ -91,7 +91,7 @@ CF76:                                             ; preds = %CF80
   %Cmp52 = icmp ne i8 %Tr, %Sl24
   br i1 %Cmp52, label %CF74, label %CF75
 
-CF75:                                             ; preds = %CF75, %CF76
+CF75:                                             
   %L53 = load i8, i8* %0
   store i8 %L18, i8* %0
   %E54 = extractelement <8 x i8> %Shuff20, i32 5
@@ -102,7 +102,7 @@ CF75:                                             ; preds = %CF75, %CF76
   %Cmp59 = icmp slt i64 %E40, %E6
   br i1 %Cmp59, label %CF75, label %CF78
 
-CF78:                                             ; preds = %CF75
+CF78:                                             
   %L60 = load i8, i8* %0
   store i8 -69, i8* %0
   %E61 = extractelement <2 x i32> zeroinitializer, i32 0
@@ -114,13 +114,13 @@ CF78:                                             ; preds = %CF75
   %Cmp67 = icmp ugt i64 286689, %E40
   br label %CF
 
-CF:                                               ; preds = %CF, %CF78
+CF:                                               
   %L68 = load i8, i8* %0
   store i64 %B57, i64* %2
   %E69 = extractelement <2 x i1> %Shuff41, i32 1
   br i1 %E69, label %CF, label %CF77
 
-CF77:                                             ; preds = %CF77, %CF
+CF77:                                             
   %Shuff70 = shufflevector <1 x i64> %Shuff34, <1 x i64> <i64 -1>, <1 x i32> zeroinitializer
   %I71 = insertelement <2 x i32> %Shuff, i32 %E26, i32 0
   %Se = sext i8 %L60 to i32
@@ -128,7 +128,7 @@ CF77:                                             ; preds = %CF77, %CF
   %Cmp73 = fcmp ugt double 0x235104F0E94F406E, 0x235104F0E94F406E
   br i1 %Cmp73, label %CF77, label %CF79
 
-CF79:                                             ; preds = %CF77
+CF79:                                             
   store i8 %L18, i8* %0
   store i8 %E54, i8* %0
   store i8 %L39, i8* %0

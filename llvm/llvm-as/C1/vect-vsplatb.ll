@@ -1,6 +1,6 @@
-; RUN: llc -march=hexagon < %s | FileCheck %s
-; Make sure we build the constant vector <7, 7, 7, 7> with a vsplatb.
-; CHECK: vsplatb
+
+
+
 @B = common global [400 x i8] zeroinitializer, align 8
 @A = common global [400 x i8] zeroinitializer, align 8
 @C = common global [400 x i8] zeroinitializer, align 8
@@ -9,10 +9,10 @@ define void @run() nounwind {
 entry:
   br label %polly.loop_body
 
-polly.loop_after:                                 ; preds = %polly.loop_body
+polly.loop_after:                                 
   ret void
 
-polly.loop_body:                                  ; preds = %entry, %polly.loop_body
+polly.loop_body:                                  
   %polly.loopiv25 = phi i32 [ 0, %entry ], [ %polly.next_loopiv, %polly.loop_body ]
   %polly.next_loopiv = add i32 %polly.loopiv25, 4
   %p_arrayidx1 = getelementptr [400 x i8], [400 x i8]* @A, i32 0, i32 %polly.loopiv25

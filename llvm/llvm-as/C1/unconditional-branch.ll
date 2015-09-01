@@ -1,23 +1,23 @@
-; REQUIRES: object-emission
-; PR 19261
 
-; RUN: %llc_dwarf -fast-isel=false -O0 -filetype=obj %s -o %t
-; RUN: llvm-dwarfdump %t | FileCheck %s
 
-; CHECK: {{0x[0-9a-f]+}}      1      0      1   0             0  is_stmt
-; CHECK: {{0x[0-9a-f]+}}      2      0      1   0             0  is_stmt
-; CHECK: {{0x[0-9a-f]+}}      4      0      1   0             0  is_stmt
 
-; IR generated from clang -O0 -g with the following source:
-;void foo(int i){
-;  switch(i){
-;  default:
-;    break;
-;  }
-;  return;
-;}
 
-; Function Attrs: nounwind
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @foo(i32 %i) #0 {
 entry:
   %i.addr = alloca i32, align 4
@@ -27,15 +27,15 @@ entry:
   switch i32 %0, label %sw.default [
   ], !dbg !14
 
-sw.epilog:                                        ; preds = %sw.default
+sw.epilog:                                        
   ret void, !dbg !17
 
-sw.default:                                       ; preds = %entry
+sw.default:                                       
   br label %sw.epilog, !dbg !15
 
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
 attributes #0 = { nounwind "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }

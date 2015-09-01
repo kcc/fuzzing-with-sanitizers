@@ -1,4 +1,4 @@
-; RUN: llc -march=mips64 -mcpu=mips64r2 -mattr=+soft-float -O2 < %s | FileCheck %s
+
 
 define void @foosf() #0 {
 entry:
@@ -10,10 +10,10 @@ entry:
   store volatile float %rintf, float* %out, align 4
   ret void
 
-; CHECK-LABEL:      foosf
-; CHECK-NOT:        dsll
-; CHECK-NOT:        dsrl
-; CHECK-NOT:        lwu
+
+
+
+
 }
 
 declare float @rintf(float)
@@ -24,10 +24,10 @@ entry:
   %call = tail call float @roundf(float %0) #2
   ret float %call
 
-; CHECK-LABEL:      foosf1
-; CHECK-NOT:        dsll
-; CHECK-NOT:        dsrl
-; CHECK-NOT:        lwu
+
+
+
+
 }
 
 declare float @roundf(float) #1
@@ -38,10 +38,10 @@ entry:
   %call = tail call float @truncf(float %0) #2
   ret float %call
 
-; CHECK-LABEL:      foosf2
-; CHECK-NOT:        dsll
-; CHECK-NOT:        dsrl
-; CHECK-NOT:        lwu
+
+
+
+
 }
 
 declare float @truncf(float) #1
@@ -52,10 +52,10 @@ entry:
   %call = tail call float @floorf(float %0) #2
   ret float %call
 
-; CHECK-LABEL:      foosf3
-; CHECK-NOT:        dsll
-; CHECK-NOT:        dsrl
-; CHECK-NOT:        lwu
+
+
+
+
 }
 
 declare float @floorf(float) #1
@@ -66,10 +66,10 @@ entry:
   %call = tail call float @nearbyintf(float %0) #2
   ret float %call
 
-; CHECK-LABEL:      foosf4
-; CHECK-NOT:        dsll
-; CHECK-NOT:        dsrl
-; CHECK-NOT:        lwu
+
+
+
+
 }
 
 declare float @nearbyintf(float) #1
@@ -80,10 +80,10 @@ entry:
   %mul = fmul float %0, undef
   ret float %mul
 
-; CHECK-LABEL:      foosf5
-; CHECK-NOT:        dsll
-; CHECK-NOT:        dsrl
-; CHECK-NOT:        lwu
+
+
+
+
 }
 
 define float @foosf6(float* nocapture readonly %a) #0 {
@@ -92,10 +92,10 @@ entry:
   %sub = fsub float %0, undef
   ret float %sub
 
-; CHECK-LABEL:      foosf6
-; CHECK-NOT:        dsll
-; CHECK-NOT:        dsrl
-; CHECK-NOT:        lwu
+
+
+
+
 }
 
 define float @foosf7(float* nocapture readonly %a) #0 {
@@ -104,10 +104,10 @@ entry:
   %add = fadd float %0, undef
   ret float %add
 
-; CHECK-LABEL:      foosf7
-; CHECK-NOT:        dsll
-; CHECK-NOT:        dsrl
-; CHECK-NOT:        lwu
+
+
+
+
 }
 
 define float @foosf8(float* nocapture readonly %a) #0 {
@@ -118,10 +118,10 @@ entry:
   %div = fdiv float %b.0.b.0., %0
   ret float %div
 
-; CHECK-LABEL:      foosf8
-; CHECK-NOT:        dsll
-; CHECK-NOT:        dsrl
-; CHECK-NOT:        lwu
+
+
+
+
 }
 
 define float @foosf9() #0 {
@@ -135,10 +135,10 @@ entry:
   %conv2 = fptrunc double %call to float
   ret float %conv2
 
-; CHECK-LABEL:      foosf9
-; CHECK-NOT:        dsll
-; CHECK-NOT:        dsrl
-; CHECK-NOT:        lwu
+
+
+
+
 }
 
 declare double @pow(double, double) #0
@@ -152,10 +152,10 @@ entry:
   %conv1 = fptrunc double %call to float
   ret float %conv1
 
-; CHECK-LABEL:      foosf10
-; CHECK-NOT:        dsll
-; CHECK-NOT:        dsrl
-; CHECK-NOT:        lwu
+
+
+
+
 }
 
 declare double @sin(double) #0
@@ -167,10 +167,10 @@ entry:
   %call = tail call float @ceilf(float %b.0.b.0.) #2
   ret float %call
 
-; CHECK-LABEL:      foosf11
-; CHECK-NOT:        dsll
-; CHECK-NOT:        dsrl
-; CHECK-NOT:        lwu
+
+
+
+
 }
 
 declare float @ceilf(float) #1
@@ -184,10 +184,10 @@ entry:
   %call = tail call float @fmaxf(float %b.0.b.0., float %a.0.a.0.) #2
   ret float %call
 
-; CHECK-LABEL:      foosf12
-; CHECK-NOT:        dsll
-; CHECK-NOT:        dsrl
-; CHECK-NOT:        lwu
+
+
+
+
 }
 
 declare float @fmaxf(float, float) #1
@@ -201,10 +201,10 @@ entry:
   %call = tail call float @fminf(float %b.0.b.0., float %a.0.a.0.) #2
   ret float %call
 
-; CHECK-LABEL:      foosf13
-; CHECK-NOT:        dsll
-; CHECK-NOT:        dsrl
-; CHECK-NOT:        lwu
+
+
+
+
 }
 
 declare float @fminf(float, float) #1

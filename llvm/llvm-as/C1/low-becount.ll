@@ -1,6 +1,6 @@
-; RUN: opt -irce-print-changed-loops -irce -S < %s 2>&1 | FileCheck %s
 
-; CHECK-NOT: constrained Loop
+
+
 
 define void @low_profiled_be_count(i32 *%arr, i32 *%a_len_ptr, i32 %n) {
  entry:

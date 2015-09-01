@@ -1,18 +1,18 @@
-; RUN-disabled: llc < %s -verify-machineinstrs -mtriple=x86_64-apple-macosx -pre-RA-sched=ilp -debug-only=pre-RA-sched \
-; RUN-disabled:     2>&1 | FileCheck %s
-; RUN: true
-; REQUIRES: asserts
-;
-; rdar:13279013: pre-RA-sched should not check all interferences and
-; repush them on the ready queue after scheduling each instruction.
-;
-; CHECK: *** List Scheduling
-; CHECK: Interfering reg EFLAGS
-; CHECK: Repushing
-; CHECK: Repushing
-; CHECK: Repushing
-; CHECK-NOT: Repushing
-; CHECK: *** Final schedule
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define i32 @test(i8* %pin) #0 {
   %g0 = getelementptr inbounds i8, i8* %pin, i64 0
   %l0 = load i8, i8* %g0, align 1

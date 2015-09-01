@@ -1,33 +1,33 @@
-;RUN: llc < %s -mtriple=aarch64--linux-android -regalloc=greedy -enable-deferred-spilling=true -mcpu=cortex-a57 | FileCheck %s --check-prefix=CHECK --check-prefix=DEFERRED
-;RUN: llc < %s -mtriple=aarch64--linux-android -regalloc=greedy -enable-deferred-spilling=false -mcpu=cortex-a57 | FileCheck %s --check-prefix=CHECK --check-prefix=REGULAR
 
-; Check that we do not end up with useless spill code.
-;
-; Move to the basic block we are interested in.
-;
-; CHECK: // %if.then.120
-;
-; REGULAR: str w21, [sp, #[[OFFSET:[0-9]+]]] // 4-byte Folded Spill
-; Check that w21 wouldn't need to be spilled since it is never reused.
-; REGULAR-NOT: {{[wx]}}21{{,?}}
-;
-; Check that w22 is used to carry a value through the call.
-; DEFERRED-NOT: str {{[wx]}}22,
-; DEFERRED: mov {{[wx]}}22,
-; DEFERRED-NOT: str {{[wx]}}22,
-;
-; CHECK:        bl      fprintf
-;
-; DEFERRED-NOT: ldr {{[wx]}}22,
-; DEFERRED: mov {{[wx][0-9]+}}, {{[wx]}}22
-; DEFERRED-NOT: ldr {{[wx]}}22,
-;
-; REGULAR-NOT: {{[wx]}}21{{,?}}
-; REGULAR: ldr w21, [sp, #[[OFFSET]]] // 4-byte Folded Reload
-;
-; End of the basic block we are interested in.
-; CHECK:        b
-; CHECK: {{[^:]+}}: // %sw.bb.123
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %struct.__sFILE = type { i8*, i32, i32, i32, i32, %struct.__sbuf, i32, i8*, i32 (i8*)*, i32 (i8*, i8*, i32)*, i64 (i8*, i64, i32)*, i32 (i8*, i8*, i32)*, %struct.__sbuf, i8*, i32, [3 x i8], [1 x i8], %struct.__sbuf, i32, i64 }
 %struct.__sbuf = type { i8*, i64 }
@@ -51,7 +51,7 @@ entry:
   %save_i = getelementptr inbounds %struct.DState, %struct.DState* %s, i64 0, i32 40
   br i1 %cmp, label %if.end.thread, label %if.end
 
-if.end.thread:                                    ; preds = %entry
+if.end.thread:                                    
   %save_j = getelementptr inbounds %struct.DState, %struct.DState* %s, i64 0, i32 41
   %save_t = getelementptr inbounds %struct.DState, %struct.DState* %s, i64 0, i32 42
   %save_alphaSize = getelementptr inbounds %struct.DState, %struct.DState* %s, i64 0, i32 43
@@ -74,7 +74,7 @@ if.end.thread:                                    ; preds = %entry
   call void @llvm.memset.p0i8.i64(i8* %tmp1, i8 0, i64 108, i32 4, i1 false)
   br label %sw.default
 
-if.end:                                           ; preds = %entry
+if.end:                                           
   %.pre = load i32, i32* %save_i, align 4
   %save_j3.phi.trans.insert = getelementptr inbounds %struct.DState, %struct.DState* %s, i64 0, i32 41
   %.pre406 = load i32, i32* %save_j3.phi.trans.insert, align 4
@@ -118,16 +118,16 @@ if.end:                                           ; preds = %entry
     i32 25, label %if.end.sw.bb.123_crit_edge
   ]
 
-if.end.sw.bb.123_crit_edge:                       ; preds = %if.end
+if.end.sw.bb.123_crit_edge:                       
   %.pre433 = getelementptr inbounds %struct.DState, %struct.DState* %s, i64 0, i32 8
   br label %sw.bb.123
 
-if.end.sw.bb.65_crit_edge:                        ; preds = %if.end
+if.end.sw.bb.65_crit_edge:                        
   %bsLive69.phi.trans.insert = getelementptr inbounds %struct.DState, %struct.DState* %s, i64 0, i32 8
   %.pre426 = load i32, i32* %bsLive69.phi.trans.insert, align 4
   br label %sw.bb.65
 
-sw.bb:                                            ; preds = %if.end
+sw.bb:                                            
   %sunkaddr = ptrtoint %struct.DState* %s to i64
   %sunkaddr485 = add i64 %sunkaddr, 8
   %sunkaddr486 = inttoptr i64 %sunkaddr485 to i32*
@@ -137,14 +137,14 @@ sw.bb:                                            ; preds = %if.end
   %cmp28.400 = icmp sgt i32 %tmp2, 7
   br i1 %cmp28.400, label %sw.bb.if.then.29_crit_edge, label %if.end.33.lr.ph
 
-sw.bb.if.then.29_crit_edge:                       ; preds = %sw.bb
+sw.bb.if.then.29_crit_edge:                       
   %sunkaddr487 = ptrtoint %struct.DState* %s to i64
   %sunkaddr488 = add i64 %sunkaddr487, 32
   %sunkaddr489 = inttoptr i64 %sunkaddr488 to i32*
   %.pre425 = load i32, i32* %sunkaddr489, align 4
   br label %if.then.29
 
-if.end.33.lr.ph:                                  ; preds = %sw.bb
+if.end.33.lr.ph:                                  
   %tmp3 = bitcast %struct.DState* %s to %struct.bz_stream**
   %.pre424 = load %struct.bz_stream*, %struct.bz_stream** %tmp3, align 8
   %avail_in.phi.trans.insert = getelementptr inbounds %struct.bz_stream, %struct.bz_stream* %.pre424, i64 0, i32 1
@@ -152,7 +152,7 @@ if.end.33.lr.ph:                                  ; preds = %sw.bb
   %tmp4 = add i32 %.pre430, -1
   br label %if.end.33
 
-if.then.29:                                       ; preds = %while.body.backedge, %sw.bb.if.then.29_crit_edge
+if.then.29:                                       
   %tmp5 = phi i32 [ %.pre425, %sw.bb.if.then.29_crit_edge ], [ %or, %while.body.backedge ]
   %.lcssa393 = phi i32 [ %tmp2, %sw.bb.if.then.29_crit_edge ], [ %add, %while.body.backedge ]
   %sub = add nsw i32 %.lcssa393, -8
@@ -168,13 +168,13 @@ if.then.29:                                       ; preds = %while.body.backedge
   %tmp6 = icmp ugt i32 %and.off, 8
   br i1 %tmp6, label %save_state_and_return, label %if.end.62
 
-if.end.33:                                        ; preds = %while.body.backedge, %if.end.33.lr.ph
+if.end.33:                                        
   %lsr.iv482 = phi i32 [ %tmp4, %if.end.33.lr.ph ], [ %lsr.iv.next483, %while.body.backedge ]
   %tmp7 = phi i32 [ %tmp2, %if.end.33.lr.ph ], [ %add, %while.body.backedge ]
   %cmp35 = icmp eq i32 %lsr.iv482, -1
   br i1 %cmp35, label %save_state_and_return, label %if.end.37
 
-if.end.37:                                        ; preds = %if.end.33
+if.end.37:                                        
   %tmp8 = bitcast %struct.bz_stream* %.pre424 to i8**
   %sunkaddr494 = ptrtoint %struct.DState* %s to i64
   %sunkaddr495 = add i64 %sunkaddr494, 32
@@ -206,7 +206,7 @@ if.end.37:                                        ; preds = %if.end.33
   %cmp49 = icmp eq i32 %inc, 0
   br i1 %cmp49, label %if.then.51, label %while.body.backedge
 
-if.then.51:                                       ; preds = %if.end.37
+if.then.51:                                       
   %sunkaddr506 = ptrtoint %struct.bz_stream* %.pre424 to i64
   %sunkaddr507 = add i64 %sunkaddr506, 16
   %sunkaddr508 = inttoptr i64 %sunkaddr507 to i32*
@@ -215,12 +215,12 @@ if.then.51:                                       ; preds = %if.end.37
   store i32 %inc53, i32* %sunkaddr508, align 4
   br label %while.body.backedge
 
-while.body.backedge:                              ; preds = %if.then.51, %if.end.37
+while.body.backedge:                              
   %lsr.iv.next483 = add i32 %lsr.iv482, -1
   %cmp28 = icmp sgt i32 %add, 7
   br i1 %cmp28, label %if.then.29, label %if.end.33
 
-if.end.62:                                        ; preds = %if.then.29
+if.end.62:                                        
   %sub64 = add nsw i32 %and, -48
   %sunkaddr509 = ptrtoint %struct.DState* %s to i64
   %sunkaddr510 = add i64 %sunkaddr509, 40
@@ -228,7 +228,7 @@ if.end.62:                                        ; preds = %if.then.29
   store i32 %sub64, i32* %sunkaddr511, align 4
   br label %sw.bb.65
 
-sw.bb.65:                                         ; preds = %if.end.62, %if.end.sw.bb.65_crit_edge
+sw.bb.65:                                         
   %bsLive69.pre-phi = phi i32* [ %bsLive69.phi.trans.insert, %if.end.sw.bb.65_crit_edge ], [ %bsLive, %if.end.62 ]
   %tmp14 = phi i32 [ %.pre426, %if.end.sw.bb.65_crit_edge ], [ %sub, %if.end.62 ]
   %sunkaddr512 = ptrtoint %struct.DState* %s to i64
@@ -238,7 +238,7 @@ sw.bb.65:                                         ; preds = %if.end.62, %if.end.
   %cmp70.397 = icmp sgt i32 %tmp14, 7
   br i1 %cmp70.397, label %if.then.72, label %if.end.82.lr.ph
 
-if.end.82.lr.ph:                                  ; preds = %sw.bb.65
+if.end.82.lr.ph:                                  
   %tmp15 = bitcast %struct.DState* %s to %struct.bz_stream**
   %.pre427 = load %struct.bz_stream*, %struct.bz_stream** %tmp15, align 8
   %avail_in84.phi.trans.insert = getelementptr inbounds %struct.bz_stream, %struct.bz_stream* %.pre427, i64 0, i32 1
@@ -246,7 +246,7 @@ if.end.82.lr.ph:                                  ; preds = %sw.bb.65
   %tmp16 = add i32 %.pre431, -1
   br label %if.end.82
 
-if.then.72:                                       ; preds = %while.body.68.backedge, %sw.bb.65
+if.then.72:                                       
   %.lcssa390 = phi i32 [ %tmp14, %sw.bb.65 ], [ %add97, %while.body.68.backedge ]
   %sub76 = add nsw i32 %.lcssa390, -8
   %sunkaddr516 = ptrtoint %struct.DState* %s to i64
@@ -262,13 +262,13 @@ if.then.72:                                       ; preds = %while.body.68.backe
   %cmp118 = icmp sgt i32 %tmp18, 1
   br i1 %cmp118, label %if.then.120, label %sw.bb.123
 
-if.end.82:                                        ; preds = %while.body.68.backedge, %if.end.82.lr.ph
+if.end.82:                                        
   %lsr.iv480 = phi i32 [ %tmp16, %if.end.82.lr.ph ], [ %lsr.iv.next481, %while.body.68.backedge ]
   %tmp19 = phi i32 [ %tmp14, %if.end.82.lr.ph ], [ %add97, %while.body.68.backedge ]
   %cmp85 = icmp eq i32 %lsr.iv480, -1
   br i1 %cmp85, label %save_state_and_return, label %if.end.88
 
-if.end.88:                                        ; preds = %if.end.82
+if.end.88:                                        
   %tmp20 = bitcast %struct.bz_stream* %.pre427 to i8**
   %sunkaddr519 = ptrtoint %struct.DState* %s to i64
   %sunkaddr520 = add i64 %sunkaddr519, 32
@@ -300,7 +300,7 @@ if.end.88:                                        ; preds = %if.end.82
   %cmp109 = icmp eq i32 %inc106, 0
   br i1 %cmp109, label %if.then.111, label %while.body.68.backedge
 
-if.then.111:                                      ; preds = %if.end.88
+if.then.111:                                      
   %sunkaddr531 = ptrtoint %struct.bz_stream* %.pre427 to i64
   %sunkaddr532 = add i64 %sunkaddr531, 16
   %sunkaddr533 = inttoptr i64 %sunkaddr532 to i32*
@@ -309,16 +309,16 @@ if.then.111:                                      ; preds = %if.end.88
   store i32 %inc114, i32* %sunkaddr533, align 4
   br label %while.body.68.backedge
 
-while.body.68.backedge:                           ; preds = %if.then.111, %if.end.88
+while.body.68.backedge:                           
   %lsr.iv.next481 = add i32 %lsr.iv480, -1
   %cmp70 = icmp sgt i32 %add97, 7
   br i1 %cmp70, label %if.then.72, label %if.end.82
 
-if.then.120:                                      ; preds = %if.then.72
+if.then.120:                                      
   %call = tail call i32 (%struct.__sFILE*, i8*, ...) @fprintf(%struct.__sFILE* getelementptr inbounds ([0 x %struct.__sFILE], [0 x %struct.__sFILE]* @__sF, i64 0, i64 2), i8* getelementptr inbounds ([20 x i8], [20 x i8]* @.str, i64 0, i64 0), i32 %inc117)
   br label %sw.bb.123
 
-sw.bb.123:                                        ; preds = %if.then.120, %if.then.72, %if.end.sw.bb.123_crit_edge
+sw.bb.123:                                        
   %bsLive127.pre-phi = phi i32* [ %.pre433, %if.end.sw.bb.123_crit_edge ], [ %bsLive69.pre-phi, %if.then.72 ], [ %bsLive69.pre-phi, %if.then.120 ]
   %sunkaddr534 = ptrtoint %struct.DState* %s to i64
   %sunkaddr535 = add i64 %sunkaddr534, 8
@@ -328,14 +328,14 @@ sw.bb.123:                                        ; preds = %if.then.120, %if.th
   %cmp128.395 = icmp sgt i32 %tmp26, 7
   br i1 %cmp128.395, label %sw.bb.123.if.then.130_crit_edge, label %if.end.140.lr.ph
 
-sw.bb.123.if.then.130_crit_edge:                  ; preds = %sw.bb.123
+sw.bb.123.if.then.130_crit_edge:                  
   %sunkaddr537 = ptrtoint %struct.DState* %s to i64
   %sunkaddr538 = add i64 %sunkaddr537, 32
   %sunkaddr539 = inttoptr i64 %sunkaddr538 to i32*
   %.pre429 = load i32, i32* %sunkaddr539, align 4
   br label %if.then.130
 
-if.end.140.lr.ph:                                 ; preds = %sw.bb.123
+if.end.140.lr.ph:                                 
   %tmp27 = bitcast %struct.DState* %s to %struct.bz_stream**
   %.pre428 = load %struct.bz_stream*, %struct.bz_stream** %tmp27, align 8
   %avail_in142.phi.trans.insert = getelementptr inbounds %struct.bz_stream, %struct.bz_stream* %.pre428, i64 0, i32 1
@@ -343,7 +343,7 @@ if.end.140.lr.ph:                                 ; preds = %sw.bb.123
   %tmp28 = add i32 %.pre432, -1
   br label %if.end.140
 
-if.then.130:                                      ; preds = %while.body.126.backedge, %sw.bb.123.if.then.130_crit_edge
+if.then.130:                                      
   %tmp29 = phi i32 [ %.pre429, %sw.bb.123.if.then.130_crit_edge ], [ %or152, %while.body.126.backedge ]
   %.lcssa = phi i32 [ %tmp26, %sw.bb.123.if.then.130_crit_edge ], [ %add155, %while.body.126.backedge ]
   %sub134 = add nsw i32 %.lcssa, -8
@@ -360,13 +360,13 @@ if.then.130:                                      ; preds = %while.body.126.back
   %add179 = add nsw i32 %tmp31, 2
   br label %save_state_and_return
 
-if.end.140:                                       ; preds = %while.body.126.backedge, %if.end.140.lr.ph
+if.end.140:                                       
   %lsr.iv = phi i32 [ %tmp28, %if.end.140.lr.ph ], [ %lsr.iv.next, %while.body.126.backedge ]
   %tmp32 = phi i32 [ %tmp26, %if.end.140.lr.ph ], [ %add155, %while.body.126.backedge ]
   %cmp143 = icmp eq i32 %lsr.iv, -1
   br i1 %cmp143, label %save_state_and_return, label %if.end.146
 
-if.end.146:                                       ; preds = %if.end.140
+if.end.146:                                       
   %tmp33 = bitcast %struct.bz_stream* %.pre428 to i8**
   %sunkaddr541 = ptrtoint %struct.DState* %s to i64
   %sunkaddr542 = add i64 %sunkaddr541, 32
@@ -395,7 +395,7 @@ if.end.146:                                       ; preds = %if.end.140
   %cmp167 = icmp eq i32 %inc164, 0
   br i1 %cmp167, label %if.then.169, label %while.body.126.backedge
 
-if.then.169:                                      ; preds = %if.end.146
+if.then.169:                                      
   %sunkaddr550 = ptrtoint %struct.bz_stream* %.pre428 to i64
   %sunkaddr551 = add i64 %sunkaddr550, 16
   %sunkaddr552 = inttoptr i64 %sunkaddr551 to i32*
@@ -404,12 +404,12 @@ if.then.169:                                      ; preds = %if.end.146
   store i32 %inc172, i32* %sunkaddr552, align 4
   br label %while.body.126.backedge
 
-while.body.126.backedge:                          ; preds = %if.then.169, %if.end.146
+while.body.126.backedge:                          
   %lsr.iv.next = add i32 %lsr.iv, -1
   %cmp128 = icmp sgt i32 %add155, 7
   br i1 %cmp128, label %if.then.130, label %if.end.140
 
-sw.default:                                       ; preds = %if.end, %if.end.thread
+sw.default:                                       
   %tmp39 = phi i32 [ 0, %if.end.thread ], [ %.pre, %if.end ]
   %tmp40 = phi i32 [ 0, %if.end.thread ], [ %.pre406, %if.end ]
   %tmp41 = phi i32 [ 0, %if.end.thread ], [ %.pre407, %if.end ]
@@ -450,7 +450,7 @@ sw.default:                                       ; preds = %if.end, %if.end.thr
   tail call void @bar(i32 4001)
   br label %save_state_and_return
 
-save_state_and_return:                            ; preds = %sw.default, %if.end.140, %if.then.130, %if.end.82, %if.end.33, %if.then.29
+save_state_and_return:                            
   %tmp58 = phi i32 [ %tmp39, %sw.default ], [ %.pre, %if.then.29 ], [ %.pre, %if.then.130 ], [ %.pre, %if.end.140 ], [ %.pre, %if.end.82 ], [ %.pre, %if.end.33 ]
   %tmp59 = phi i32 [ %tmp40, %sw.default ], [ %.pre406, %if.then.29 ], [ %.pre406, %if.then.130 ], [ %.pre406, %if.end.140 ], [ %.pre406, %if.end.82 ], [ %.pre406, %if.end.33 ]
   %tmp60 = phi i32 [ %tmp41, %sw.default ], [ %.pre407, %if.then.29 ], [ %.pre407, %if.then.130 ], [ %.pre407, %if.end.140 ], [ %.pre407, %if.end.82 ], [ %.pre407, %if.end.33 ]

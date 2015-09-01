@@ -1,6 +1,6 @@
-; RUN: llc -mtriple=aarch64-apple-darwin -O0 -fast-isel-abort=1 -verify-machineinstrs < %s
 
-; Test that we don't fold the shift.
+
+
 define i64 @fold_shift_test(i64 %a, i1 %c) {
   %1 = sub i64 %a, 8
   %2 = ashr i64 %1, 3
@@ -14,7 +14,7 @@ bb3:
   ret i64 2
 }
 
-; Test that we don't fold the sign-extend.
+
 define i64 @fold_sext_test1(i32 %a, i1 %c) {
   %1 = sub i32 %a, 8
   %2 = sext i32 %1 to i64
@@ -28,7 +28,7 @@ bb3:
   ret i64 2
 }
 
-; Test that we don't fold the sign-extend.
+
 define i64 @fold_sext_test2(i32 %a, i1 %c) {
   %1 = sub i32 %a, 8
   %2 = sext i32 %1 to i64
@@ -40,7 +40,7 @@ bb2:
   ret i64 %2
 }
 
-; Test that we clear the kill flag.
+
 define i32 @fold_kill_test(i32 %a) {
   %1 = sub i32 %a, 8
   %2 = shl i32 %1, 3

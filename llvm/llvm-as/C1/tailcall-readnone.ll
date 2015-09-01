@@ -1,4 +1,4 @@
-; RUN: llc -mtriple=x86_64-unknown-linux-gnu -o - %s | FileCheck %s
+
 
 define void @f(i32** %p) unnamed_addr {
 entry:
@@ -6,9 +6,9 @@ entry:
   store i32* %v, i32** %p, align 8
   ret void
 }
-; CHECK-LABEL: f:
-; CHECK: callq g
-; CHECK: movq    %rax, (%rbx)
+
+
+
 
 declare i32* @g() #2
 

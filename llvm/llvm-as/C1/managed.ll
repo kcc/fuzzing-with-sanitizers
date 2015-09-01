@@ -1,9 +1,9 @@
-; RUN: llc < %s -march=nvptx -mcpu=sm_20 | FileCheck %s
 
 
-; CHECK: .visible .global .align 4 .u32 device_g;
+
+
 @device_g = addrspace(1) global i32 zeroinitializer
-; CHECK: .visible .global .attribute(.managed) .align 4 .u32 managed_g;
+
 @managed_g = addrspace(1) global i32 zeroinitializer
 
 

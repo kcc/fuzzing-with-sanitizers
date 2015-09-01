@@ -1,16 +1,16 @@
-; RUN: opt -sroa -S < %s | FileCheck %s
+
 
 target datalayout = "e-p:64:32-i64:32-v32:32-n32-S64"
 
-; Function Attrs: nounwind
+
 declare void @llvm.lifetime.start(i64, i8* nocapture) #0
 
-; Function Attrs: nounwind
+
 declare void @llvm.lifetime.end(i64, i8* nocapture) #0
 
-; CHECK: @wombat
-; CHECK-NOT: alloca
-; CHECK: ret void
+
+
+
 define void @wombat(<4 x float> %arg1) {
 bb:
   %tmp = alloca <4 x float>, align 16
@@ -25,7 +25,7 @@ bb:
   ret void
 }
 
-; Function Attrs: nounwind
+
 declare void @wombat3(<3 x float>) #0
 
 attributes #0 = { nounwind }

@@ -1,10 +1,10 @@
-; REQUIRES: object-emission
 
-; RUN: llc -mtriple=x86_64-linux-gnu -filetype=obj %s -o - | llvm-dwarfdump -debug-dump=all - | FileCheck %s
 
-; Test that we accept and generate DWARF entities for DW_TAG_structure_type,
-; DW_TAG_member and DW_TAG_typedef with no source location. These can come up
-; in some languages with predefined types.
+
+
+
+
+
 
 target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
@@ -13,19 +13,19 @@ target triple = "x86_64-unknown-linux-gnu"
 
 define void @f() {
   %x = alloca %struct.S, align 8
-  ; CHECK: DW_TAG_typedef
-  ; CHECK-NOT: DW_AT_decl_file
-  ; CHECK-NOT: DW_AT_decl_line
+  
+  
+  
 
-  ; CHECK: DW_TAG_structure_type
-  ; CHECK-NOT: DW_AT_decl_file
-  ; CHECK-NOT: DW_AT_decl_line
+  
+  
+  
 
-  ; CHECK: DW_TAG_member
-  ; CHECK-NOT: DW_AT_decl_file
-  ; CHECK-NOT: DW_AT_decl_line
+  
+  
+  
 
-  ; CHECK: {{DW_TAG|NULL}}
+  
   call void @llvm.dbg.declare(metadata %struct.S* %x, metadata !10, metadata !16), !dbg !17
   ret void, !dbg !18
 }

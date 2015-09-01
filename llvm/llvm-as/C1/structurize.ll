@@ -1,48 +1,48 @@
-; RUN: llc < %s -march=r600 -mcpu=redwood -mattr=disable-irstructurizer | FileCheck %s
-; Test case for a crash in the AMDILCFGStructurizer from a CFG like this:
-;
-;                            entry
-;                           /     \
-;               diamond_head       branch_from
-;                 /      \           |
-;    diamond_false        diamond_true
-;                 \      /
-;                   done
-;
-; When the diamond_true branch had more than 100 instructions.
-;
-;
 
-; CHECK-LABEL: {{^}}branch_into_diamond:
-; === entry block:
-; CHECK: ALU_PUSH_BEFORE
-; === Branch instruction (IF):
-; CHECK: JUMP
-  ; === branch_from block
-  ; CHECK: ALU
-  ; === Duplicated diamond_true block (There can be more than one ALU clause):
-  ; === XXX: We should be able to optimize this so the basic block is not
-  ; === duplicated.  See comments in
-  ; === AMDGPUCFGStructurizer::improveSimpleJumpintoIf()
-  ; CHECK: ALU
-; === Branch instruction (ELSE):
-; CHECK: ELSE
-  ; === diamond_head block:
-  ; CHECK: ALU_PUSH_BEFORE
-  ; === Branch instruction (IF):
-  ; CHECK: JUMP
-    ; === diamond_true block (There can be more than one ALU clause):
-    ; ALU
-  ; === Branch instruction (ELSE):
-  ; CHECK: ELSE
-    ; === diamond_false block plus implicit ENDIF
-    ; CHECK: ALU_POP_AFTER
-; === Branch instruction (ENDIF):
-; CHECK: POP
-; === done block:
-; CHECK: ALU
-; CHECK: MEM_RAT_CACHELESS
-; CHECK: CF_END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    
+
+
+
+
+
+
 
 
 define void @branch_into_diamond(i32 addrspace(1)* %out, i32 %a, i32 %b, i32 %c) {
@@ -64,8 +64,8 @@ diamond_false:
 
 diamond_true:
   %4 = phi i32 [%2, %branch_from], [%a, %diamond_head]
-  ; This block needs to be > 100 ISA instructions to hit the bug,
-  ; so we'll use udiv instructions.
+  
+  
   %div0 = udiv i32 %a, %b
   %div1 = udiv i32 %div0, %4
   %div2 = udiv i32 %div1, 11

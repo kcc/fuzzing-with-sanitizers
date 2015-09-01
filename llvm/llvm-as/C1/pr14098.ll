@@ -1,5 +1,5 @@
-; RUN: llc -mtriple i386-unknown-linux-gnu -relocation-model=pic -verify-machineinstrs < %s
-; We used to crash on this.
+
+
 
 declare void @foo()
 declare void @foo3(i1 %x)

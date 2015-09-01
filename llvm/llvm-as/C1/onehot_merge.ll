@@ -1,9 +1,9 @@
-; RUN: opt < %s -instcombine -S | FileCheck %s
 
-;CHECK: @and_consts
-;CHECK: and i32 %k, 12
-;CHECK: icmp ne i32 %0, 12
-;CHECK: ret
+
+
+
+
+
 define i1 @and_consts(i32 %k, i32 %c1, i32 %c2) {
 bb:
   %tmp1 = and i32 4, %k
@@ -14,13 +14,13 @@ bb:
   ret i1 %or
 }
 
-;CHECK: @foo1_and
-;CHECK:  shl i32 1, %c1
-;CHECK-NEXT:  lshr i32 -2147483648, %c2
-;CHECK-NEXT:  or i32
-;CHECK-NEXT:  and i32
-;CHECK-NEXT:  icmp ne i32 %1, %0
-;CHECK: ret
+
+
+
+
+
+
+
 define i1 @foo1_and(i32 %k, i32 %c1, i32 %c2) {
 bb:
   %tmp = shl i32 1, %c1

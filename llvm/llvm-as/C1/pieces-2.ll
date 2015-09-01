@@ -1,34 +1,34 @@
-; RUN: llc %s -filetype=obj -o - | llvm-dwarfdump - | FileCheck %s
-;
-;    // Compile with -O1
-;    typedef struct {
-;      int a;
-;      long int b;
-;    } Inner;
-;
-;    typedef struct {
-;      Inner inner[2];
-;    } Outer;
-;
-;    int foo(Outer outer) {
-;      Inner i1 = outer.inner[1];
-;      return i1.a;
-;    }
-;
-;
-; CHECK: DW_TAG_variable [4]
-;                                                  rax, piece 0x00000004
-; CHECK-NEXT: DW_AT_location [DW_FORM_block1]{{.*}}50 93 04
-; CHECK-NEXT:  DW_AT_name {{.*}}"i1"
-;
-; ModuleID = '/Volumes/Data/llvm/test/DebugInfo/X86/sroasplit-1.ll'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.9.0"
 
 %struct.Outer = type { [2 x %struct.Inner] }
 %struct.Inner = type { i32, i64 }
 
-; Function Attrs: nounwind ssp uwtable
+
 define i32 @foo(%struct.Outer* byval align 8 %outer) #0 {
 entry:
   call void @llvm.dbg.declare(metadata %struct.Outer* %outer, metadata !25, metadata !DIExpression()), !dbg !26
@@ -40,13 +40,13 @@ entry:
   ret i32 %i1.sroa.0.0.copyload, !dbg !32
 }
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
-; Function Attrs: nounwind
+
 declare void @llvm.memcpy.p0i8.p0i8.i64(i8* nocapture, i8* nocapture readonly, i64, i32, i1) #2
 
-; Function Attrs: nounwind readnone
+
 declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #1
 
 attributes #0 = { nounwind ssp uwtable }

@@ -1,4 +1,4 @@
-; RUN: llc -mtriple i686-windows-itanium -filetype asm -o - %s | FileCheck %s
+
 
 target datalayout = "e-m:w-p:32:32-i64:64-f80:32-n8:16:32-S32"
 target triple = "i686--windows-itanium"
@@ -12,5 +12,5 @@ entry:
   ret void
 }
 
-; CHECK: __chkstk
+
 

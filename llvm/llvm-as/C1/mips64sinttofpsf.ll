@@ -1,4 +1,4 @@
-; RUN: llc -march=mips64 -mcpu=mips64r2 -mattr=+soft-float -O0 < %s | FileCheck %s
+
 
 
 define double @foo() #0 {
@@ -9,7 +9,7 @@ entry:
   %conv = sitofp i32 %0 to double
   ret double %conv
 
-; CHECK-NOT:        dsll
-; CHECK-NOT:        dsrl
+
+
 
 }

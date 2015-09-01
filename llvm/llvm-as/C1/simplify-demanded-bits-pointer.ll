@@ -1,6 +1,6 @@
-; RUN: opt < %s -instcombine -disable-output
 
-; SimplifyDemandedBits should cope with pointer types.
+
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128"
 target triple = "x86_64-unknown-linux-gnu"
@@ -19,66 +19,66 @@ define fastcc void @cse_insn(%struct.rtx_def* %insn, %struct.rtx_def* %libcall_i
 entry:
 	br i1 undef, label %bb43, label %bb88
 
-bb43:		; preds = %entry
+bb43:		
 	br label %bb88
 
-bb88:		; preds = %bb43, %entry
+bb88:		
 	br i1 undef, label %bb95, label %bb107
 
-bb95:		; preds = %bb88
+bb95:		
 	unreachable
 
-bb107:		; preds = %bb88
-	%0 = load i16, i16* undef, align 8		; <i16> [#uses=1]
-	%1 = icmp eq i16 %0, 38		; <i1> [#uses=1]
-	%src_eqv_here.0 = select i1 %1, %struct.rtx_def* null, %struct.rtx_def* null		; <%struct.rtx_def*> [#uses=1]
+bb107:		
+	%0 = load i16, i16* undef, align 8		
+	%1 = icmp eq i16 %0, 38		
+	%src_eqv_here.0 = select i1 %1, %struct.rtx_def* null, %struct.rtx_def* null		
 	br i1 undef, label %bb127, label %bb125
 
-bb125:		; preds = %bb107
+bb125:		
 	br i1 undef, label %bb127, label %bb126
 
-bb126:		; preds = %bb125
+bb126:		
 	br i1 undef, label %bb129, label %bb133
 
-bb127:		; preds = %bb125, %bb107
+bb127:		
 	unreachable
 
-bb129:		; preds = %bb126
+bb129:		
 	br label %bb133
 
-bb133:		; preds = %bb129, %bb126
+bb133:		
 	br i1 undef, label %bb134, label %bb146
 
-bb134:		; preds = %bb133
+bb134:		
 	unreachable
 
-bb146:		; preds = %bb133
+bb146:		
 	br i1 undef, label %bb180, label %bb186
 
-bb180:		; preds = %bb146
-	%2 = icmp eq %struct.rtx_def* null, null		; <i1> [#uses=1]
-	%3 = zext i1 %2 to i8		; <i8> [#uses=1]
-	%4 = icmp ne %struct.rtx_def* %src_eqv_here.0, null		; <i1> [#uses=1]
-	%5 = zext i1 %4 to i8		; <i8> [#uses=1]
-	%toBool181 = icmp ne i8 %3, 0		; <i1> [#uses=1]
-	%toBool182 = icmp ne i8 %5, 0		; <i1> [#uses=1]
-	%6 = and i1 %toBool181, %toBool182		; <i1> [#uses=1]
-	%7 = zext i1 %6 to i8		; <i8> [#uses=1]
-	%toBool183 = icmp ne i8 %7, 0		; <i1> [#uses=1]
+bb180:		
+	%2 = icmp eq %struct.rtx_def* null, null		
+	%3 = zext i1 %2 to i8		
+	%4 = icmp ne %struct.rtx_def* %src_eqv_here.0, null		
+	%5 = zext i1 %4 to i8		
+	%toBool181 = icmp ne i8 %3, 0		
+	%toBool182 = icmp ne i8 %5, 0		
+	%6 = and i1 %toBool181, %toBool182		
+	%7 = zext i1 %6 to i8		
+	%toBool183 = icmp ne i8 %7, 0		
 	br i1 %toBool183, label %bb184, label %bb186
 
-bb184:		; preds = %bb180
+bb184:		
 	br i1 undef, label %bb185, label %bb186
 
-bb185:		; preds = %bb184
+bb185:		
 	br label %bb186
 
-bb186:		; preds = %bb185, %bb184, %bb180, %bb146
+bb186:		
 	br i1 undef, label %bb190, label %bb195
 
-bb190:		; preds = %bb186
+bb190:		
 	unreachable
 
-bb195:		; preds = %bb186
+bb195:		
 	unreachable
 }

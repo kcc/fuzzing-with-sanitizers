@@ -1,36 +1,36 @@
-; RUN: opt -mtriple=x86_64-unknown-linux-gnu -mcpu=corei7-avx -bb-vectorize -S < %s | FileCheck %s
+
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
 %class.QBezier.15 = type { double, double, double, double, double, double, double, double }
 
-; Function Attrs: nounwind
+
 declare void @llvm.memcpy.p0i8.p0i8.i64(i8* nocapture, i8* nocapture readonly, i64, i32, i1) #0
 
-; Function Attrs: uwtable
+
 declare fastcc void @_ZL12printQBezier7QBezier(%class.QBezier.15* byval nocapture readonly align 8) #1
 
-; Function Attrs: nounwind
+
 declare void @llvm.lifetime.start(i64, i8* nocapture) #0
 
-; Function Attrs: nounwind
+
 declare void @llvm.lifetime.end(i64, i8* nocapture) #0
 
 define void @main_arrayctor.cont([10 x %class.QBezier.15]* %beziers, %class.QBezier.15* %agg.tmp.i, %class.QBezier.15* %agg.tmp55.i, %class.QBezier.15* %agg.tmp56.i) {
 newFuncRoot:
   br label %arrayctor.cont
 
-arrayctor.cont.ret.exitStub:                      ; preds = %arrayctor.cont
+arrayctor.cont.ret.exitStub:                      
   ret void
 
-; CHECK-LABEL: @main_arrayctor.cont
-; CHECK: <2 x double>
-; CHECK: @_ZL12printQBezier7QBezier
-; CHECK: store double %mul8.i, double* %x3.i, align 16
-; CHECK: load double, double* %x3.i, align 16
-; CHECK: ret
 
-arrayctor.cont:                                   ; preds = %newFuncRoot
+
+
+
+
+
+
+arrayctor.cont:                                   
   %ref.tmp.sroa.0.0.idx = getelementptr inbounds [10 x %class.QBezier.15], [10 x %class.QBezier.15]* %beziers, i64 0, i64 0, i32 0
   store double 1.000000e+01, double* %ref.tmp.sroa.0.0.idx, align 16
   %ref.tmp.sroa.2.0.idx1 = getelementptr inbounds [10 x %class.QBezier.15], [10 x %class.QBezier.15]* %beziers, i64 0, i64 0, i32 1

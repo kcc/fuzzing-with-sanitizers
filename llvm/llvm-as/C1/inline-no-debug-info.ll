@@ -1,31 +1,31 @@
-; RUN: opt < %s -inline -S | FileCheck %s
 
-; This was generated from the following source:
-; int a, b;
-; __attribute__((__always_inline__)) static void callee2() { b = 2; }
-; __attribute__((__nodebug__)) void callee() { a = 1; callee2(); }
-; void caller() { callee(); }
-; by running
-;   clang -S test.c -emit-llvm -O1 -gline-tables-only -fno-strict-aliasing
 
-; CHECK-LABEL: @caller(
 
-; This instruction did not have a !dbg metadata in the callee.
-; CHECK: store i32 1, {{.*}}, !dbg [[A:!.*]]
 
-; This instruction came from callee with a !dbg metadata.
-; CHECK: store i32 2, {{.*}}, !dbg [[B:!.*]]
 
-; The remaining instruction from the caller.
-; CHECK: ret void, !dbg [[A]]
 
-; Debug location of the code in caller() and of the inlined code that did not
-; have any debug location before.
-; CHECK-DAG: [[A]] = !DILocation(line: 4, scope: !{{[0-9]+}})
 
-; Debug location of the inlined code.
-; CHECK-DAG: [[B]] = !DILocation(line: 2, scope: !{{[0-9]+}}, inlinedAt: [[A_INL:![0-9]*]])
-; CHECK-DAG: [[A_INL]] = distinct !DILocation(line: 4, scope: !{{[0-9]+}})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
@@ -34,7 +34,7 @@ target triple = "x86_64-unknown-linux-gnu"
 @a = common global i32 0, align 4
 @b = common global i32 0, align 4
 
-; Function Attrs: nounwind uwtable
+
 define void @callee() #0 {
 entry:
   store i32 1, i32* @a, align 4
@@ -42,7 +42,7 @@ entry:
   ret void
 }
 
-; Function Attrs: nounwind uwtable
+
 define void @caller() #0 {
 entry:
   tail call void @callee(), !dbg !12

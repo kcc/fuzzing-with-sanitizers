@@ -1,4 +1,4 @@
-; RUN: llc -mtriple=x86_64-unknown-unknown < %s
+
 %foo = type { i64, i64 }
 define void @bar(%foo* %zed) {
   %tmp = getelementptr inbounds %foo, %foo* %zed, i64 0, i32 0

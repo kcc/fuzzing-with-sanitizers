@@ -1,32 +1,32 @@
-; RUN: opt < %s -basicaa -slp-vectorizer -dce -S -mtriple=x86_64-apple-macosx10.8.0 -mcpu=corei7
+
 
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.8.0"
 
-; Function Attrs: nounwind ssp uwtable
+
 define void @main() #0 {
 entry:
   br i1 undef, label %while.body, label %while.end
 
-while.body:                                       ; preds = %entry
+while.body:                                       
   unreachable
 
-while.end:                                        ; preds = %entry
+while.end:                                        
   br i1 undef, label %for.end80, label %for.body75.lr.ph
 
-for.body75.lr.ph:                                 ; preds = %while.end
+for.body75.lr.ph:                                 
   br label %for.body75
 
-for.body75:                                       ; preds = %for.body75, %for.body75.lr.ph
+for.body75:                                       
   br label %for.body75
 
-for.end80:                                        ; preds = %while.end
+for.end80:                                        
   br i1 undef, label %for.end300, label %for.body267.lr.ph
 
-for.body267.lr.ph:                                ; preds = %for.end80
+for.body267.lr.ph:                                
   br label %for.body267
 
-for.body267:                                      ; preds = %for.body267, %for.body267.lr.ph
+for.body267:                                      
   %s.71010 = phi double [ 0.000000e+00, %for.body267.lr.ph ], [ %add297, %for.body267 ]
   %mul269 = fmul double undef, undef
   %mul270 = fmul double %mul269, %mul269
@@ -39,7 +39,7 @@ for.body267:                                      ; preds = %for.body267, %for.b
   %add297 = fadd double %s.71010, %div296
   br i1 undef, label %for.body267, label %for.end300
 
-for.end300:                                       ; preds = %for.body267, %for.end80
+for.end300:                                       
   unreachable
 }
 

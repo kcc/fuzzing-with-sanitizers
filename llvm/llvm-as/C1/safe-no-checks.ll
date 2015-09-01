@@ -1,13 +1,13 @@
-; RUN: opt -basicaa -loop-accesses -analyze < %s | FileCheck %s
 
-; If the arrays don't alias this loop is safe with no memchecks:
-;   for (i = 0; i < n; i++)
-;    A[i] = A[i+1] * B[i] * C[i];
+
+
+
+
 
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-macosx10.10.0"
 
-; CHECK: Memory dependences are safe{{$}}
+
 
 define void @f(i16* noalias %a,
                i16* noalias %b,
@@ -15,7 +15,7 @@ define void @f(i16* noalias %a,
 entry:
   br label %for.body
 
-for.body:                                         ; preds = %for.body, %entry
+for.body:                                         
   %ind = phi i64 [ 0, %entry ], [ %add, %for.body ]
 
   %add = add nuw nsw i64 %ind, 1
@@ -38,6 +38,6 @@ for.body:                                         ; preds = %for.body, %entry
   %exitcond = icmp eq i64 %add, 20
   br i1 %exitcond, label %for.end, label %for.body
 
-for.end:                                          ; preds = %for.body
+for.end:                                          
   ret void
 }

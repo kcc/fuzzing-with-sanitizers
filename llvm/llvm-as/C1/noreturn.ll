@@ -1,22 +1,22 @@
-; RUN: llc -O3 -o - %s | FileCheck %s
-; Test case from PR16882.
+
+
 target triple = "thumbv7s-apple-ios"
 
 define i32 @test1() {
-; CHECK-LABEL: @test1
-; CHECK-NOT: push
+
+
 entry:
   tail call void @overflow() #0
   unreachable
 }
 
-; Function Attrs: noreturn nounwind
+
 declare void @overflow() #0
 
 define i32 @test2(i32 %x, i32 %y) {
-; CHECK-LABEL: @test2
-; CHECK-NOT: push
-; CHECK-NOT: pop
+
+
+
 entry:
   %conv = sext i32 %x to i64
   %conv1 = sext i32 %y to i64
@@ -26,41 +26,41 @@ entry:
   %cmp = icmp eq i64 %mul, %conv3
   br i1 %cmp, label %if.end, label %if.then
 
-if.then:                                          ; preds = %entry
+if.then:                                          
   tail call void @overflow() #0
   unreachable
 
-if.end:                                           ; preds = %entry
+if.end:                                           
   ret i32 %conv2
 }
 
-; Test case for PR17825.
+
 define i32 @test3() {
-; CHECK-LABEL: @test3
-; CHECK: push
+
+
 entry:
   tail call void @overflow_with_unwind() #1
   unreachable
 }
 
-; Test case for uwtable
+
 define i32 @test4() uwtable {
-; CHECK-LABEL: @test4
-; CHECK: push
+
+
 entry:
   tail call void @overflow() #0
   unreachable
 }
 
 define i32 @test5() uwtable {
-; CHECK-LABEL: @test5
-; CHECK: push
+
+
 entry:
   tail call void @overflow_with_unwind() #1
   unreachable
 }
 
-; Function Attrs: noreturn
+
 declare void @overflow_with_unwind() #1
 
 attributes #0 = { noreturn nounwind }

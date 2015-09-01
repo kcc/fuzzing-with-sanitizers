@@ -1,8 +1,8 @@
-; RUN: not llc -march=arm64 < %s  2> %t
-; RUN: FileCheck --check-prefix=CHECK-ERRORS < %t %s
 
-; Check for at least one invalid constant.
-; CHECK-ERRORS:	error: invalid operand for inline asm constraint 'I'
+
+
+
+
 
 define i32 @constraint_I(i32 %i, i32 %j) nounwind ssp {
 entry:

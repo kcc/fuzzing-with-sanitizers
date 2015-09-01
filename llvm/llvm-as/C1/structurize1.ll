@@ -1,24 +1,24 @@
-; RUN: llc < %s -march=r600 -mattr=disable-ifcvt -mcpu=redwood | FileCheck %s
 
-; This tests for abug where the AMDILCFGStructurizer was crashing on loops
-; like this:
-;
-; for (i = 0; i < x; i++) {
-;   if (cond0) {
-;     if (cond1) {
-;
-;     } else {
-;
-;     }
-;     if (cond2) {
-;
-;     }
-;   }
-; }
 
-; CHECK-LABEL: {{^}}if_inside_loop:
-; CHECK: LOOP_START_DX10
-; CHECK: END_LOOP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 define void @if_inside_loop(i32 addrspace(1)* %out, i32 %a, i32 %b, i32 %c, i32 %d) {
 entry:
   br label %for.body

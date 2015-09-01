@@ -1,8 +1,8 @@
-; RUN: llc -march=mipsel -mcpu=mips32 < %s | FileCheck %s
-; RUN: llc -march=mips64el -mcpu=mips4 < %s | \
-; RUN:      FileCheck %s -check-prefix=CHECK-MIPS64
-; RUN: llc -march=mips64el -mcpu=mips64 < %s | \
-; RUN:      FileCheck %s -check-prefix=CHECK-MIPS64
+
+
+
+
+
 
 declare i8* @llvm.eh.dwarf.cfa(i32) nounwind
 declare i8* @llvm.frameaddress(i32) nounwind readnone
@@ -13,8 +13,8 @@ entry:
   %0 = call i8* @llvm.eh.dwarf.cfa(i32 0)
   ret i8* %0
 
-; CHECK:        addiu   $sp, $sp, -32
-; CHECK:        addiu   $2, $sp, 32
+
+
 }
 
 
@@ -24,15 +24,15 @@ entry:
   %0 = call i8* @llvm.eh.dwarf.cfa(i32 0)
   ret i8* %0
 
-; check stack size (65536 + 8)
-; CHECK:        lui     $[[R0:[a-z0-9]+]], 65535
-; CHECK:        addiu   $[[R0]], $[[R0]], -8
-; CHECK:        addu    $sp, $sp, $[[R0]]
 
-; check return value ($sp + stack size)
-; CHECK:        lui     $[[R1:[a-z0-9]+]], 1
-; CHECK:        addu    $[[R1]], $sp, $[[R1]]
-; CHECK:        addiu   $2, $[[R1]], 8
+
+
+
+
+
+
+
+
 }
 
 
@@ -46,11 +46,11 @@ entry:
   %add = add i32 %1, %3
   ret i32 %add
 
-; CHECK:        addiu   $sp, $sp, -40
 
-; check return value ($fp + stack size + $fp)
-; CHECK:        addiu   $[[R0:[a-z0-9]+]], $fp, 40
-; CHECK:        addu    $2, $[[R0]], $fp
+
+
+
+
 }
 
 
@@ -60,6 +60,6 @@ entry:
   %0 = call i8* @llvm.eh.dwarf.cfa(i32 0)
   ret i8* %0
 
-; CHECK-MIPS64:        daddiu   $sp, $sp, -32
-; CHECK-MIPS64:        daddiu   $2, $sp, 32
+
+
 }

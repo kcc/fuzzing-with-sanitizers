@@ -1,12 +1,12 @@
-; RUN: llc < %s -print-machineinstrs=expand-isel-pseudos -o /dev/null 2>&1 | FileCheck %s
 
-; ARM & AArch64 run an extra SimplifyCFG which disrupts this test.
-; Hexagon crashes (PR23377)
-; XFAIL: arm,aarch64,hexagon
 
-; Make sure we have the correct weight attached to each successor.
+
+
+
+
+
 define i32 @test2(i32 %x) nounwind uwtable readnone ssp {
-; CHECK-LABEL: Machine code for function test2:
+
 entry:
   %conv = sext i32 %x to i64
   switch i64 %conv, label %return [
@@ -15,12 +15,12 @@ entry:
     i64 4, label %sw.bb
     i64 5, label %sw.bb1
   ], !prof !0
-; CHECK: BB#0: derived from LLVM BB %entry
-; CHECK: Successors according to CFG: BB#2(64) BB#4(21)
-; CHECK: BB#4: derived from LLVM BB %entry
-; CHECK: Successors according to CFG: BB#1(10) BB#5(11)
-; CHECK: BB#5: derived from LLVM BB %entry
-; CHECK: Successors according to CFG: BB#1(4) BB#3(7)
+
+
+
+
+
+
 
 sw.bb:
   br label %return
@@ -55,20 +55,20 @@ bb4: tail call void @g(i32 4) br label %return
 bb5: tail call void @g(i32 5) br label %return
 return: ret void
 
-; Check that we set branch weights on the pivot cmp instruction correctly.
-; Cases {0,10,20,30} go on the left with weight 13; cases {40,50} go on the
-; right with weight 20.
-;
-; CHECK-LABEL: Machine code for function left_leaning_weight_balanced_tree:
-; CHECK: BB#0: derived from LLVM BB %entry
-; CHECK-NOT: Successors
-; CHECK: Successors according to CFG: BB#8(13) BB#9(20)
+
+
+
+
+
+
+
+
 }
 
 !1 = !{!"branch_weights",
-  ; Default:
+  
   i32 1,
-  ; Case 0, 10, 20:
+  
   i32 10, i32 1, i32 1,
-  ; Case 30, 40, 50:
+  
   i32 1, i32 10, i32 10}

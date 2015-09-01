@@ -1,5 +1,5 @@
-; RUN: llc < %s -mtriple=thumbv7-apple-darwin
-; Radar 7896289
+
+
 
 target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:32-f32:32:32-f64:32:32-v64:64:64-v128:128:128-a0:0:32-n32"
 target triple = "thumbv7-apple-darwin10"
@@ -8,13 +8,13 @@ define void @test(i32 %mode) nounwind optsize noinline {
 entry:
   br i1 undef, label %return, label %bb3
 
-bb3:                                              ; preds = %entry
+bb3:                                              
   br i1 undef, label %bb15, label %bb18
 
-bb15:                                             ; preds = %bb3
+bb15:                                             
   unreachable
 
-bb18:                                             ; preds = %bb3
+bb18:                                             
   switch i32 %mode, label %return [
     i32 0, label %bb26
     i32 1, label %bb56
@@ -26,48 +26,48 @@ bb18:                                             ; preds = %bb3
     i32 16, label %bb522.preheader
   ]
 
-bb150.preheader:                                  ; preds = %bb18
+bb150.preheader:                                  
   br i1 undef, label %bb154, label %bb160
 
-bb310.preheader:                                  ; preds = %bb18
+bb310.preheader:                                  
   unreachable
 
-bb414.preheader:                                  ; preds = %bb18
+bb414.preheader:                                  
   unreachable
 
-bb468.preheader:                                  ; preds = %bb18
+bb468.preheader:                                  
   unreachable
 
-bb522.preheader:                                  ; preds = %bb18
+bb522.preheader:                                  
   unreachable
 
-bb26:                                             ; preds = %bb18
+bb26:                                             
   unreachable
 
-bb56:                                             ; preds = %bb18
+bb56:                                             
   unreachable
 
-bb107:                                            ; preds = %bb18
+bb107:                                            
   br label %bb110
 
-bb110:                                            ; preds = %bb122, %bb107
-  %asmtmp.i.i179 = tail call i16 asm "rev16 $0, $1\0A", "=l,l"(i16 undef) nounwind ; <i16> [#uses=1]
-  %asmtmp.i.i178 = tail call i16 asm "rev16 $0, $1\0A", "=l,l"(i16 %asmtmp.i.i179) nounwind ; <i16> [#uses=1]
+bb110:                                            
+  %asmtmp.i.i179 = tail call i16 asm "rev16 $0, $1\0A", "=l,l"(i16 undef) nounwind 
+  %asmtmp.i.i178 = tail call i16 asm "rev16 $0, $1\0A", "=l,l"(i16 %asmtmp.i.i179) nounwind 
   store i16 %asmtmp.i.i178, i16* undef, align 2
   br i1 undef, label %bb122, label %bb121
 
-bb121:                                            ; preds = %bb110
+bb121:                                            
   br label %bb122
 
-bb122:                                            ; preds = %bb121, %bb110
+bb122:                                            
   br label %bb110
 
-bb154:                                            ; preds = %bb150.preheader
+bb154:                                            
   unreachable
 
-bb160:                                            ; preds = %bb150.preheader
+bb160:                                            
   unreachable
 
-return:                                           ; preds = %bb18, %entry
+return:                                           
   ret void
 }

@@ -1,7 +1,7 @@
-; RUN: llc -march=x86-64 < %s | FileCheck %s
-; rdar://9081094
 
-; LSR shouldn't create lots of redundant address computations.
+
+
+
 
 %0 = type { i32, [3 x i32] }
 %1 = type { i32 (i32, i32, i32)*, i32, i32, [3 x i32], i8*, i8*, i8* }
@@ -10,16 +10,16 @@
 @isa = external hidden unnamed_addr constant [13 x %1], align 32
 
 define void @main_bb.i() nounwind {
-; CHECK: main_bb.i:
-; CHECK-NOT: ret
-; CHECK: addq $-16,
-; CHECK-NOT: ret
-; CHECK: ret
+
+
+
+
+
 
 bb:
   br label %bb38
 
-bb38:                                             ; preds = %bb200, %bb
+bb38:                                             
   %tmp39 = phi i64 [ %tmp201, %bb200 ], [ 0, %bb ]
   %tmp40 = sub i64 0, %tmp39
   %tmp47 = getelementptr [5 x %0], [5 x %0]* @pgm, i64 0, i64 %tmp40, i32 0
@@ -27,11 +27,11 @@ bb38:                                             ; preds = %bb200, %bb
   %tmp203 = icmp slt i32 %tmp34, 12
   br i1 %tmp203, label %bb215, label %bb200
 
-bb200:                                            ; preds = %bb38
+bb200:                                            
   %tmp201 = add i64 %tmp39, 1
   br label %bb38
 
-bb215:                                            ; preds = %bb38
+bb215:                                            
   %tmp50 = getelementptr [5 x %0], [5 x %0]* @pgm, i64 0, i64 %tmp40, i32 1, i64 2
   %tmp49 = getelementptr [5 x %0], [5 x %0]* @pgm, i64 0, i64 %tmp40, i32 1, i64 1
   %tmp48 = getelementptr [5 x %0], [5 x %0]* @pgm, i64 0, i64 %tmp40, i32 1, i64 0
