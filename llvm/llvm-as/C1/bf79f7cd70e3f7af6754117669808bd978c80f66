@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.Q4.vuashdxdb(i64, i64)
+def
+$i
