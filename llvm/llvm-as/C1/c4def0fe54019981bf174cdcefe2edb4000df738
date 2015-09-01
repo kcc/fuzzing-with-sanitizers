@@ -1,0 +1,8 @@
+
+
+
+declare <4 x float> @llvm.mips.bfmax.w()<4 x 
+
+; 
+
+def!in

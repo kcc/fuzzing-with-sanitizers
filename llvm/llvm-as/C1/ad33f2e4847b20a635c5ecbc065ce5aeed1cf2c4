@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+declare i4 @llvm.hexagon.S4.esr.i.p(i64, i32)
+de

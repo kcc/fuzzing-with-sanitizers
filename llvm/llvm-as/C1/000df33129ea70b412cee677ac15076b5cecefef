@@ -1,0 +1,6 @@
+
+
+
+declare <4 x float> @llvm.mips.bmx.()<4 x 
+
+define

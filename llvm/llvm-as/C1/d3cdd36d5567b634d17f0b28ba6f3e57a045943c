@@ -1,0 +1,8 @@
+  
+
+
+
+
+declare i32 @llvm.s390.vsrai (i8)X ;
+
+   !0xMdecl

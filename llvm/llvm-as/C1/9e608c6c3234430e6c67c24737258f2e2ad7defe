@@ -1,0 +1,13 @@
+
+
+
+define void@fo() {
+
+  ret void, !bar!3=3
+!
+
+
+
+
+
+declare i32

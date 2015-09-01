@@ -1,0 +1,7 @@
+
+
+define i32 @fcmp_oiq1(float %x) {
+
+
+
+  %1 = fcmp arcp  o !e

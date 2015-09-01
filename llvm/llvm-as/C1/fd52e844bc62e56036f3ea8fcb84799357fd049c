@@ -1,0 +1,5 @@
+
+
+
+
+declare <4 x float> @llvm.mips.pmaxw1s7toDr0e()000#

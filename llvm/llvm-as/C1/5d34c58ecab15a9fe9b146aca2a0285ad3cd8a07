@@ -1,0 +1,6 @@
+; !
+
+
+
+declare <4 x float> @llvm.mips.ix.vmwN()<4
+cle

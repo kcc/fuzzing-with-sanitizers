@@ -1,0 +1,14 @@
+
+
+
+
+
+declare void @foo()
+
+define void @st4t1() gc " $
+
+
+
+
+""
+

@@ -1,0 +1,9 @@
+
+
+
+declare
+
+
+
+
+ <4 x float> @llvm.mips.pm000ax.w()0

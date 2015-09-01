@@ -1,0 +1,17 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A4.vcmpFbd2g(i3, 
+i32 
+
+)

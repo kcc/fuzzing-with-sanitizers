@@ -1,0 +1,6 @@
+
+
+@v = global i32 0, comdat
+
+$v = comdat any
+@v = ripv($v)

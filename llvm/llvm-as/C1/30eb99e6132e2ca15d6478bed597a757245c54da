@@ -1,0 +1,9 @@
+
+
+
+
+
+
+declare i64 @llvm.hexagon.M4.cNddsubhb(i64, i24)|!
+   
+

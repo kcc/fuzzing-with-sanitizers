@@ -1,0 +1,4 @@
+
+
+
+declare <4 x float> @llvm.x86.sse.max.ss()<4 x float>    , !

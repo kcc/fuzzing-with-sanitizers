@@ -1,0 +1,6 @@
+
+
+define void @foo() {
+  load i1, i1* %1p, align 107
+
+ 3

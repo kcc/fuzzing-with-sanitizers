@@ -1,0 +1,4 @@
+
+
+
+declare <4 x float> @llvm.mips.frax.1.w();!1;    !=!  {!33

@@ -1,0 +1,6 @@
+
+
+
+declare void @llvm.arm.ldanto(i32) n
+ou'
+n

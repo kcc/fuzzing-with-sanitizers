@@ -1,0 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.M2.decabdeclaresp(i64)l

@@ -1,0 +1,13 @@
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.S2.vrq4i96
+
+()
+
+
+define

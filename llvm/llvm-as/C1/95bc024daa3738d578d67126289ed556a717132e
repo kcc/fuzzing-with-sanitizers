@@ -1,0 +1,11 @@
+
+
+
+
+
+
+declare i64 @llvm.hexagon.M4.xdsubhbx(i64, i64)
+
+
+@B
+; 

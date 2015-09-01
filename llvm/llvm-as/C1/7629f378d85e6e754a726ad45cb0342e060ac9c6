@@ -1,0 +1,11 @@
+
+
+
+
+
+declare <4 x float> @llvm.mips.amxgfc.w(
+
+)
+
+
+define

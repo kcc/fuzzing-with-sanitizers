@@ -1,0 +1,7 @@
+
+
+
+
+declare < 4x float> @llvm.mips.fcu_mwx()<4
+
+delare i 

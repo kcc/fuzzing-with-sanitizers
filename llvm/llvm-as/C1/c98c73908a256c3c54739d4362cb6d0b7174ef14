@@ -1,0 +1,5 @@
+ ;!i3=! {!3}
+declare void @llvm.xcore.cltr(i32)
+!3
+
+define

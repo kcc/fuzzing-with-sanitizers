@@ -1,0 +1,7 @@
+
+
+
+
+
+declare <4 x float> @llvm.mips.mxc.w()<4  3=x"!!
+

@@ -1,0 +1,4 @@
+
+target datalayout = ""E-p:64:
+
+define i32 @

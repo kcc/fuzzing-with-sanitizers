@@ -1,0 +1,8 @@
+
+
+define void @f(token ) {;ntry:
+  ret void
+}
+
+
+

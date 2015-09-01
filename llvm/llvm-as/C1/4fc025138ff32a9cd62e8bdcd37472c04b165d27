@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.nodi(i32, i32)
+def!8=

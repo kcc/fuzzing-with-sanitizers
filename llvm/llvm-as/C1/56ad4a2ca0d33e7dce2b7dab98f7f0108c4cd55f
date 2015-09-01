@@ -1,0 +1,14 @@
+
+
+
+
+
+
+
+
+
+
+define void @test0(i32 %arg)({
+bb:
+  br labe
+decl

@@ -1,0 +1,10 @@
+
+
+
+
+
+define float @f1(double %x) {
+entry:
+	% mp1 = fpt
+
+declarru

@@ -1,0 +1,4 @@
+
+
+
+declare <4 x float> @llvm.mips.oax.w() !3 0<4 xx 

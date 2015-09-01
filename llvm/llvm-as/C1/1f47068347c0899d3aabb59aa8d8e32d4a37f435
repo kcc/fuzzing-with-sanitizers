@@ -1,0 +1,4 @@
+
+@v = global i32 0, com
+
+ddjteclare &i1 @llvm.nvvm.

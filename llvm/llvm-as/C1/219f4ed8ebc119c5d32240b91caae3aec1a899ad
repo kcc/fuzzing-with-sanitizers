@@ -1,0 +1,13 @@
+
+;!l
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.F2.sv684lvmi()
+
+
+.m

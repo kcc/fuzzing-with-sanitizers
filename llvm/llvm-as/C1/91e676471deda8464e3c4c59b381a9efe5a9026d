@@ -1,0 +1,7 @@
+;
+
+declare<
+
+
+4x float>@llvm.mips.dpfa.Nhsep$ 
+  ()

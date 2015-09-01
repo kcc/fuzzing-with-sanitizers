@@ -1,0 +1,5 @@
+
+
+declare void @llvm.xcore.setc.p1i8(i8)addrspace(1)
+
+!0 = 

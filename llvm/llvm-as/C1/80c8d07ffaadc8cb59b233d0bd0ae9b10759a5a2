@@ -1,0 +1,8 @@
+
+
+
+declare <4 x float> @llvm.mips.bmax.Aw()<4 x 
+
+
+
+

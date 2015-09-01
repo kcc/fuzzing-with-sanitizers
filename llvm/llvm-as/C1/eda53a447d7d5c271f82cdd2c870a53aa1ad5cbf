@@ -1,0 +1,10 @@
+
+
+
+
+define void@fvoo() {
+
+  ret void, !bar!3!
+
+
+de3=clare i32

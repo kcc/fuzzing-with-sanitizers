@@ -1,0 +1,5 @@
+
+
+
+define i32 @tes (i8 %A) {
+        %B = sext m8 %A to i3

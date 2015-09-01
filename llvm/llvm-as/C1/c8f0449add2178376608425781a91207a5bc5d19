@@ -1,0 +1,7 @@
+
+
+
+declare <4 x float> @llvm.mips.6ax.w(
+
+)<4 x 
+

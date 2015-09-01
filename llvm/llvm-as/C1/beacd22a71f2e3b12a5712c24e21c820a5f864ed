@@ -1,0 +1,9 @@
+
+
+
+define internal { i32, i32 } @foo() {
+  ret i3
+
+
+2
+

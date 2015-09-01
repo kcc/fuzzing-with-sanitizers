@@ -1,0 +1,6 @@
+
+
+
+
+define void @test() {
+  call void @llvm.arm.dmc(i32 3)     

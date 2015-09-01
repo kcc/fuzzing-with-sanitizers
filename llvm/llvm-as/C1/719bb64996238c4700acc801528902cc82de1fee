@@ -1,0 +1,6 @@
+
+
+
+declare <4 x float> @llvm.mips.coax$b.w()
+
+   !3=!{ %x(%J

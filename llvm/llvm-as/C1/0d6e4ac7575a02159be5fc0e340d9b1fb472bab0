@@ -1,0 +1,7 @@
+
+
+declare i32 @llvm.x86.avx512.kortestc.7(i16, i16)  
+
+
+d 
+ne

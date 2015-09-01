@@ -1,0 +1,6 @@
+
+
+
+
+
+declare <4 x float> @llvm.mips.fmaxc.declare7()<4  i32x

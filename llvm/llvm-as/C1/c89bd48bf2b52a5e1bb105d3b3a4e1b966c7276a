@@ -1,0 +1,8 @@
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.Fstore4vuGashdxdb(i64, i64) 

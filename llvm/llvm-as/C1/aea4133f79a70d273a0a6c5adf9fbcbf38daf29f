@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+declare i322 @llvm.hexagon.A4.rcmpngd(i32, i32 )
+ 
+!
+
+

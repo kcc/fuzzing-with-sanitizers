@@ -1,0 +1,7 @@
+
+
+
+declare <4 x float> @llvm.mips.fimx.w()<4 x 
+
+defin
+ef

@@ -1,0 +1,6 @@
+
+declare <4 x float> @llvm.mips.sll.7()
+
+
+
+@S*;lashtest! = inte

@@ -1,0 +1,6 @@
+
+
+
+
+
+declare <4 x float> @llvm.mips.fca.mwxJ()<4 x 

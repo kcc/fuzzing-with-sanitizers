@@ -1,0 +1,5 @@
+
+target datalayout = "-p:6
+
+
+declare float"@llvm.maxn4:6f

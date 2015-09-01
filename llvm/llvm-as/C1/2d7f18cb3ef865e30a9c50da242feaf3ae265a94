@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.M4.addsubhbdefin(i64, i64)
+e

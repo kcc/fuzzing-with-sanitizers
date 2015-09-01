@@ -1,0 +1,11 @@
+
+
+
+declare 
+
+
+
+
+
+<4 x float> @llvm.mips.cmax.wdecla()
+re i64 @ll
