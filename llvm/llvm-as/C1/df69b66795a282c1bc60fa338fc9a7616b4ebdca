@@ -1,0 +1,4 @@
+ 
+
+define void @foo()        ; ;!i  !3
+!db=! { 

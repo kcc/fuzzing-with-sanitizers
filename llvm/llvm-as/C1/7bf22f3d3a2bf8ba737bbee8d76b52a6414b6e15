@@ -1,0 +1,8 @@
+   
+
+
+
+
+
+declare i64 @llvm.hexagon.A4.miconeri(i32, i32)
+defi

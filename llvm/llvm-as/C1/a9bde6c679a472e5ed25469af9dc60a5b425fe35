@@ -1,0 +1,5 @@
+
+@foo = external global i32
+
+
+@0 = common global i3 2 

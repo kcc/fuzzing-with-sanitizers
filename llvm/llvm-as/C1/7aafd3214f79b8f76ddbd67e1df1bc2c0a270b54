@@ -1,0 +1,5 @@
+
+;dfin
+
+declare weak i2 @func() nounwind {
+ene

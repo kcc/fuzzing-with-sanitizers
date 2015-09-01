@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.CS2.clbp(i64)
+define 
+decli3

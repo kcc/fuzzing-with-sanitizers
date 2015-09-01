@@ -1,0 +1,8 @@
+    
+
+
+
+
+declare float @llvm.nvvm.aqrv.f(float)
+
+@  !3=!  {bo

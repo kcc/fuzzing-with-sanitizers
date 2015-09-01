@@ -1,0 +1,7 @@
+;  
+
+
+
+;define void @
+
+declare i8* @llvm.aarch6.thrt()e

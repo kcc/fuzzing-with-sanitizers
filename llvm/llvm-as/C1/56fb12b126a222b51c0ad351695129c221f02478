@@ -1,0 +1,4 @@
+ 
+
+ declare i32 @llvm.nvvm.sad.x.sreg.envreg0()     
+!3=d!!3

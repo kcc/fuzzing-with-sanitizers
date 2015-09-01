@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.A4.combijeri(i32, i32)
+!3=!  

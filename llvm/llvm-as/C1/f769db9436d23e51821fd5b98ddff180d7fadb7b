@@ -1,0 +1,5 @@
+
+
+declare i32 @llvm.x86.avx.512kortestz.w(i16, i16) nounwin
+
+d

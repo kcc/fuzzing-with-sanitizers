@@ -1,0 +1,10 @@
+
+
+
+declare void @doit(i64)
+
+
+
+
+
+declare  inalloca %i

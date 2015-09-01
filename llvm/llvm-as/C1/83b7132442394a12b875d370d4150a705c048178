@@ -1,0 +1,7 @@
+  
+
+declare void @llvm.mgx86.sse2.lfence() n
+
+!3=!  {i14
+
+deoc0

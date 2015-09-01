@@ -1,0 +1,6 @@
+
+define i32 @A(i32 %Size) {
+
+
+
+  %A = alloca i8, i32 *%S  i!

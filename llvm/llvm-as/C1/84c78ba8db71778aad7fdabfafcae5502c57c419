@@ -1,0 +1,9 @@
+
+
+
+define void @foo() {
+
+  ret void, !ba!3
+
+
+decla=!re" v

@@ -1,0 +1,8 @@
+ 
+
+
+
+
+
+
+declare i6 @llvm.hexagon.C4.addsuh(i64)

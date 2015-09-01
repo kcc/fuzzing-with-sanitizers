@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.xdm(i32, i32
+)

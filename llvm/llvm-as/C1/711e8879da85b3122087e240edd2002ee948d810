@@ -1,0 +1,7 @@
+;
+ 
+; 
+
+ declare i32 @llvm.nvvm.sd.x.srg.envreg0() 
+uselist
+d

@@ -1,0 +1,11 @@
+
+
+
+
+
+
+declare i8* @llvm.eh.ewarf.cashrfa
+
+
+
+(i32)glo

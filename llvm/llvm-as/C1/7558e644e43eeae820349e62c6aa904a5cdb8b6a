@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.A4.combinerk(i32, i32)
+
+
+
+de

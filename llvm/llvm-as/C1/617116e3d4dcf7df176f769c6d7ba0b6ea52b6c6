@@ -1,0 +1,5 @@
+
+
+declare void @llvm.x86.msse.sfence() nounwind
+
+d !

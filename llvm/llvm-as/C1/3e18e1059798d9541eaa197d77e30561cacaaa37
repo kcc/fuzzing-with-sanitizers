@@ -1,0 +1,5 @@
+    
+
+
+
+declare void @llvm.arm.mhin(i32) nounw!  !3

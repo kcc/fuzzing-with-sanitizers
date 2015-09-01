@@ -1,0 +1,19 @@
+
+
+
+
+
+declare float @llvm.nvvm.p.sqtf 
+
+ (float)
+
+;
+
+
+
+
+
+
+
+
+de

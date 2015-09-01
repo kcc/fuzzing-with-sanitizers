@@ -1,0 +1,8 @@
+
+
+declare void @f() 
+
+
+define noimplicitfloat
+
+i32 @te7st(i32 

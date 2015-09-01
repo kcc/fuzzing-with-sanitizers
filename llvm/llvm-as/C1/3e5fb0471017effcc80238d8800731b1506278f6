@@ -1,0 +1,11 @@
+ 
+
+
+
+declare float @llvm.nvvm.msqv.f(float)
+
+
+@foo1  =
+
+
+

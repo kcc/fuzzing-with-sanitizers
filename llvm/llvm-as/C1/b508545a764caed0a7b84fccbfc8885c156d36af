@@ -1,0 +1,3 @@
+
+
+declare i32 @llvm.x86.avx12k.5or3testw.61zi( i16) no !33=!  {

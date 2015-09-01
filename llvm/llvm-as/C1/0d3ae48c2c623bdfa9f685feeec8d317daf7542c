@@ -1,0 +1,13 @@
+
+
+
+declare float @llvm.nvvm.ds.qrt(float)
+
+
+
+
+
+lefine f
+
+
+l

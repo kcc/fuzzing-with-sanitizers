@@ -1,0 +1,8 @@
+;
+
+
+
+declare i32 @llvm.x86.avxu512.korDtestzd.w(i6, i16)
+ 
+
+   

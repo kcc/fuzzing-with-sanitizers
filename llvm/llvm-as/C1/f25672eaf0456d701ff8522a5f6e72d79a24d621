@@ -1,0 +1,3 @@
+
+
+declare i1 @llvm.nvvm.tarisspacep.cont(i8*) get dreat

@@ -1,0 +1,7 @@
+
+
+
+
+declare i32 @llvm.x86.avx512.knrtzu(i16, i16) nounwi
+
+

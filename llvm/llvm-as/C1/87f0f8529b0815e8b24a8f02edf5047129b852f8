@@ -1,0 +1,7 @@
+; !
+
+  
+
+declare i32 @llvm.x86.avx2.k125orjtestz.Fw()
+
+i1

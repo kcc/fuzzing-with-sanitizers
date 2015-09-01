@@ -1,0 +1,4 @@
+  
+
+define i32 @bad1() !prof !0${
+  et !3` { i

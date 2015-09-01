@@ -1,0 +1,6 @@
+
+ 
+
+
+declare i32 @llvm.hvvm.read.Xptx.sreg.enreg0()
+!3=?!

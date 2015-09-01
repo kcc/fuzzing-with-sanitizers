@@ -1,0 +1,8 @@
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S4.addsubh(i64, i64)

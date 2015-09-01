@@ -1,0 +1,6 @@
+
+
+
+;define linkonce void @fo
+
+declare void @llvm.loco()

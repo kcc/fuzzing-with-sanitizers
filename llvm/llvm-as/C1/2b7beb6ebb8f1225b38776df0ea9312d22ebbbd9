@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.SG4.vxaddsubh(i64, i64)
+def
+i

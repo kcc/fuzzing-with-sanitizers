@@ -1,0 +1,7 @@
+
+
+declare void @bar()
+
+declare i32 @llvm.xcore.in.tp1i8k(
+
+)

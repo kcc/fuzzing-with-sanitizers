@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+
+
+declare i4 @llvm.hexagon.S4.vxdeaddsubhi64 (i64)f
+i

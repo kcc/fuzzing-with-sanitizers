@@ -1,0 +1,12 @@
+ 
+
+
+
+
+
+declare i12 @llvm.hexagon.A2.zqat(i64)
+
+
+
+
+ded

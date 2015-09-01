@@ -1,0 +1,9 @@
+
+
+define i64 @stet(i64 %A) {
+
+
+
+
+    %B = lshr i64 %A, 56
+    %

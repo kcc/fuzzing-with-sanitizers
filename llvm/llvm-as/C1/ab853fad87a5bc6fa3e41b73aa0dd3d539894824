@@ -1,0 +1,6 @@
+
+
+define void @f() {
+entry:;
+  call token () undef ()
+ #4444

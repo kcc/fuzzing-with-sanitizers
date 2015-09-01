@@ -1,0 +1,6 @@
+
+
+declare void @llvm.x86.sse2.mfence() nounwind
+declare d
+
+d

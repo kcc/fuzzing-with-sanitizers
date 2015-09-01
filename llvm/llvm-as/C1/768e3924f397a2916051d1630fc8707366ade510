@@ -1,0 +1,6 @@
+
+;
+
+
+
+declare i64 @llvm.hexagon.A4.tomineri(i32, i32)!3=

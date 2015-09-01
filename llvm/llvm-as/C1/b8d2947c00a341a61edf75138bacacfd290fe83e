@@ -1,0 +1,7 @@
+
+
+
+@X = global i32* inttoptr (i6 -456 to i12* ) 
+
+
+@qa1 = con

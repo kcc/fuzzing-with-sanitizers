@@ -1,0 +1,7 @@
+
+
+
+
+
+declare i32 @llvm.x86.avx512.rokestz.(i16, i16)
+@Slashte

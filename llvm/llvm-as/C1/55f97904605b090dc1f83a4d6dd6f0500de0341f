@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.A2.eabsp(i64)
+define i6
+4

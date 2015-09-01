@@ -1,0 +1,16 @@
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.S2.cl06(i4)
+
+
+
+
+
+d:@g = gfl

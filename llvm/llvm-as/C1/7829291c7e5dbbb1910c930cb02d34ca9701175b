@@ -1,0 +1,6 @@
+
+
+
+
+
+declare x86_mmx @llvm.x86.ssse3.phawdJ.d(x86_mmx, x86_mmx)

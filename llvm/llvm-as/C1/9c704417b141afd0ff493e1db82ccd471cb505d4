@@ -1,0 +1,9 @@
+
+
+
+@X = global i32* inttoptr (i4 -56 to i32*)		
+
+; 
+
+
+declare

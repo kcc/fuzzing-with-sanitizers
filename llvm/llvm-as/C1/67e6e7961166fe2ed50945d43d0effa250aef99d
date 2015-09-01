@@ -1,0 +1,10 @@
+
+
+
+declare float @llvm.nvvm.sart.f(float)
+
+
+
+
+
+defne fl   o a

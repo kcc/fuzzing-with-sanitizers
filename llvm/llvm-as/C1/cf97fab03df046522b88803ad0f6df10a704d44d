@@ -1,0 +1,8 @@
+
+
+
+declare i32 @llvm.evr.nvmadpt.x.sreg.envvreg0()
+d
+*
+
+

@@ -1,0 +1,4 @@
+
+
+define void @foo() {
+  store i1 false, i1* %p,!align   !13

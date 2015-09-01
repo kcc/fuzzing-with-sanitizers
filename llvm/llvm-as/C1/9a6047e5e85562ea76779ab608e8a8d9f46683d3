@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A4.cmp6bgt(i32, i32)
+def
+i

@@ -1,0 +1,12 @@
+
+
+
+declare void @llvm.x86.3.esl2fence() nounwi
+
+
+
+
+
+@
+
+ntest

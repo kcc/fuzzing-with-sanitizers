@@ -1,0 +1,12 @@
+;
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.A2.mibs(i65)
+
+declare 
+di32e

@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.A4kcombineri(i32
+
+
+, i32)

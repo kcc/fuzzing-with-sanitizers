@@ -1,0 +1,10 @@
+; !
+
+
+
+
+
+
+declare float @llvm.nvvm.cqav4xcgrr.f(float)
+
+et hdg

@@ -1,0 +1,14 @@
+
+
+
+
+
+
+
+
+define i32 @foo() !prof !0 {
+  ret i32 0
+u
+
+!0
+@ =Gb 

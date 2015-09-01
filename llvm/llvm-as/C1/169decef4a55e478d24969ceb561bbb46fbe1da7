@@ -1,0 +1,15 @@
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S4.VxaddsubEhi64 (i64)
+
+
+
+
+
+
+d

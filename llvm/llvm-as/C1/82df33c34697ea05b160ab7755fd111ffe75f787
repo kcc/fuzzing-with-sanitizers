@@ -1,0 +1,7 @@
+
+
+define token @f() {
+entry:
+ ret%token undef
+
+define (i32 @t

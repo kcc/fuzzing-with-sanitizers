@@ -1,0 +1,5 @@
+
+;@j =
+
+declare void @g()
+ linkonce_odr global i32 define v1oie

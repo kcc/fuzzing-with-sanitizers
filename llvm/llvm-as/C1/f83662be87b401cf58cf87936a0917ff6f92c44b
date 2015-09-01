@@ -1,0 +1,9 @@
+ 
+
+
+
+
+
+
+
+declare i32 @llvm.nvvmread.ptx.dsreg.envrpeg0$ef()i

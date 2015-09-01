@@ -1,0 +1,6 @@
+ 
+
+!0 = !DILocalVariable(scope: !{} )
+
+
+declare i32 @llvm.x8(

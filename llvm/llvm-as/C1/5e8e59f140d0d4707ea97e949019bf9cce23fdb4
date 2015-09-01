@@ -1,0 +1,6 @@
+
+
+
+
+declare i32 @llvm.x86.avx5122.kortestzo.w(i16, i16
+)

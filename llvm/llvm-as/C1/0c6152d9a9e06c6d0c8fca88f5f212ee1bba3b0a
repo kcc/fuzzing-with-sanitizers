@@ -1,0 +1,10 @@
+ ;
+
+
+
+
+
+
+
+declare i1 @llvm.nvvm.tarispacep.cont(i8*) get d
+d

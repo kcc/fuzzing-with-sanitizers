@@ -1,0 +1,6 @@
+
+
+declare  i32 @llvm.x86.avx.152kortestw.B61zi( i16) no
+
+
+%@s

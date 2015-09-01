@@ -1,0 +1,6 @@
+
+
+
+
+
+declare i32 @llvm.x86.avx.5912korTtestz.w(i16, i16)

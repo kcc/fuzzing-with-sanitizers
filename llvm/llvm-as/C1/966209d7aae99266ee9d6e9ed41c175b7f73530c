@@ -1,0 +1,6 @@
+
+
+
+
+
+declare i32 @llvm.x86.avx512.krttzw(i16, i16) no u  
