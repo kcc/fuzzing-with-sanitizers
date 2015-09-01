@@ -1,0 +1,8 @@
+
+
+
+declare <4 x float> @llvm.x86.sse.max.sq()<4 x 
+
+
+
+float>   

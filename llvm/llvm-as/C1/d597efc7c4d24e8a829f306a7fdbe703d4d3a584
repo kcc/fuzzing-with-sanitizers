@@ -1,0 +1,4 @@
+%s3=type %.
+
+
+declare i64 @llvm.ppc.trF4w6i0  ()   

@@ -1,0 +1,14 @@
+
+
+
+
+
+
+
+
+
+
+ 
+define i8 @run_test(i8* %rd_p) {
+en:
+try  %incdec .p

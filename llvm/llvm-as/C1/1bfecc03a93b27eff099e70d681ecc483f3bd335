@@ -1,0 +1,6 @@
+ 
+
+
+define void @foo()nounwind ssp {
+
+  store i32 42, i32*null

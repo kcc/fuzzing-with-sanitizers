@@ -1,0 +1,14 @@
+ 
+
+
+
+declare void  @eoo()
+
+define void @test1() gc "$"
+
+
+
+de
+
+
+t

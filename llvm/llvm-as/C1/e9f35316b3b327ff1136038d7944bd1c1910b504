@@ -1,0 +1,10 @@
+
+
+
+declare <4 x float> @llvm.mips.shraxlw()
+
+
+declare <
+;
+
+

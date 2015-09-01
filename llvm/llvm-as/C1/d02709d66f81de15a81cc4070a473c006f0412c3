@@ -1,0 +1,5 @@
+
+
+
+declare i32 @llvm.x86.avx512.pmotestu.41hzii( i16)
+

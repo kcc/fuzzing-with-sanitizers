@@ -1,0 +1,6 @@
+
+
+
+declare i64 @llvm.ppc.dci$6W(i64)  !3=!  
+
+ declare v i {d @

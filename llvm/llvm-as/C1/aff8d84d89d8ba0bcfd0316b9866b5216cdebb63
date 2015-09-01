@@ -1,0 +1,7 @@
+
+
+
+declare <4 x float> @llvm.mips.lbd.()
+
+@e(= globali3(2 
+dec0

@@ -1,0 +1,15 @@
+
+
+
+
+
+declare i2 @llvm.s390.vmalhb(i8);;
+
+ 
+!0 
+
+
+
+
+
+dec

@@ -1,0 +1,11 @@
+
+
+
+
+define i64 @small(i64 %encodedBase) {
+
+
+
+
+declarmp:
+  %lo

@@ -1,0 +1,13 @@
+
+
+
+
+
+
+
+
+
+
+define i32 @bad1() !prof !0${
+ & e
+declare i32t @llvm.

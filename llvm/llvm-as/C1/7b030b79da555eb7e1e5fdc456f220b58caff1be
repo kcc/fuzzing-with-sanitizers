@@ -1,0 +1,6 @@
+
+
+
+
+declare i64 @llvm.ppc.oit4(i64) n
+o

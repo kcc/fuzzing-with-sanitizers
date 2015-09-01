@@ -1,0 +1,19 @@
+
+
+
+@foo = global i32
+
+
+
+
+ 0
+
+
+target data
+
+
+
+
+
+
+layout= "p:;66:

@@ -1,0 +1,6 @@
+
+
+
+declare <4 x float> @llvm.mips.movx.w()< '  
+
+declare i3  !

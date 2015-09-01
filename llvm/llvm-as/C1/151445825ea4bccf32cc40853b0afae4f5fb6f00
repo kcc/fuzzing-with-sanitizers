@@ -1,0 +1,3 @@
+;  xfs!    
+
+define void @foo() !dg$!4 !\c!Data!xch

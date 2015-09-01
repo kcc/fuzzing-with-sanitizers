@@ -1,0 +1,8 @@
+
+
+
+;ecl
+
+
+declare i64 @llvm.ppc.artF4w6i6eclarei() e 8
+     

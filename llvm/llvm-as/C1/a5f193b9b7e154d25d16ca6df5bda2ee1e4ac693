@@ -1,0 +1,7 @@
+
+
+
+declare i64 @llvm.ppc.tarF4w6i()   
+"
+
+define void @test() {

@@ -1,0 +1,8 @@
+
+ define i64 @test_free_zext(i8* %a, i16* %b) {
+
+
+
+
+!0=  !D
+I

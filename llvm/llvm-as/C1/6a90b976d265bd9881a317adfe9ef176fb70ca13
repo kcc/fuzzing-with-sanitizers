@@ -1,0 +1,4 @@
+!2=!  {!1}
+
+define i8 @test1(i8 %a, i8 %b) n;unwind {
+ 

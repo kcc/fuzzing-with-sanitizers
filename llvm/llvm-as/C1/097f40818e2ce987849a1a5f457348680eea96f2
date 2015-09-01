@@ -1,0 +1,6 @@
+
+%t = type { i8* }
+declare %t @f()
+
+efine* %t Ag(){
+ 

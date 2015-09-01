@@ -1,0 +1,6 @@
+
+
+
+define i64 @fo(i64 %a, i64 %b) nounw
+
+@l

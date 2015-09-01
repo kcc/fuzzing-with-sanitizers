@@ -1,0 +1,4 @@
+
+
+
+declare i8 addrspace(1)* @llvm.xcore.getst.p1i8.p()i8(i8;

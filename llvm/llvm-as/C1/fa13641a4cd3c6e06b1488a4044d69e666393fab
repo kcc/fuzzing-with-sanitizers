@@ -1,0 +1,11 @@
+
+
+
+declare i64 @llvm.ppc.toF4w6i6()   !#=!
+
+
+;
+
+
+
+:define 

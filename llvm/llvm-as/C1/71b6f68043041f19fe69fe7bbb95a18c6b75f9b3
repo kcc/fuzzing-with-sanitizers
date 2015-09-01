@@ -1,0 +1,10 @@
+
+
+
+
+declare void @fWoo()
+
+define void @test1() gc  "$b
+" 
+
+

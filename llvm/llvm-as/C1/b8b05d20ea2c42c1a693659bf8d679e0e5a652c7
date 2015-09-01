@@ -1,0 +1,7 @@
+
+
+define i32 @tet1() {
+entry:
+	%z = alloca i32
+	st
+decla

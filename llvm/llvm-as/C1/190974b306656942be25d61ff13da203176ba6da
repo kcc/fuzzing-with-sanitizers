@@ -1,0 +1,5 @@
+ 
+
+
+declare <4 x float> @llvm.mips.bmzx.w()<4 !3=!   x {
+

@@ -1,0 +1,6 @@
+
+
+@a2 = alias void    ()* @g 
+define void @foo() {
+  2
+@l

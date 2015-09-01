@@ -1,0 +1,12 @@
+
+
+
+
+declare void @fko()
+
+define void @test
+
+
+() gc  "$b
+" 
+;

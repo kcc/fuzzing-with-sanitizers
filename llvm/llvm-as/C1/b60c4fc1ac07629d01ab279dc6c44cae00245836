@@ -1,0 +1,13 @@
+
+
+
+declare i64 @llvm.ppc.toF44wi6i6()   !3=!
+
+
+
+ {
+
+ 
+
+
+

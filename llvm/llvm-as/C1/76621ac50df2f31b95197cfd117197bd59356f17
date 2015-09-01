@@ -1,0 +1,3 @@
+
+declare <4 x float> @llvm.mips.slli.g()
+;       !3

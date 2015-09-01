@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+
+declare i32 @llvm.x86.avx2.psrl.z()b r
+d   
+
+$

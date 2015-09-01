@@ -1,0 +1,14 @@
+
+
+
+
+define void @f(token 
+
+
+
+) {;entry:
+  ret void
+} 
+
+
+

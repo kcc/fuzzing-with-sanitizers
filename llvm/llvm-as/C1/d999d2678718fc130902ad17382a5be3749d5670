@@ -1,0 +1,10 @@
+  
+
+
+
+
+declare i2 @llvm.s390.vsrlg (i8) ;
+
+de! !3
+
+=!  {i14

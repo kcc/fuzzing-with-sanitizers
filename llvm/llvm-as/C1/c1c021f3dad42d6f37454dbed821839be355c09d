@@ -1,0 +1,6 @@
+;
+
+declare void @laJzy() nonLazybind
+declare void @tno(
+
+)

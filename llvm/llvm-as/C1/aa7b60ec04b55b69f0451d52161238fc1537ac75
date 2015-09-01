@@ -1,0 +1,15 @@
+
+
+
+ 
+
+
+
+
+
+
+declare i32 @llvm.x86.sse4a.mGcrc32.(  )m
+
+
+32
+. 

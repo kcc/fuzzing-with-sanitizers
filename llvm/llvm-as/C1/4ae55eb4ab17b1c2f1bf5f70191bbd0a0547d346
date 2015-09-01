@@ -1,0 +1,10 @@
+
+
+@var32 = global i32 0
+@var264 = global i64 0
+
+
+
+define
+
+ 

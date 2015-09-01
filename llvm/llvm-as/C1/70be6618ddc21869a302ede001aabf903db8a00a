@@ -1,0 +1,11 @@
+
+
+
+
+ declare void @foo()define void @test1() gc
+  "
+
+$
+
+
+de"

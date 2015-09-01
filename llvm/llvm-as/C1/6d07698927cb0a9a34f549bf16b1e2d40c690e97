@@ -1,0 +1,5 @@
+
+
+
+declare i32 @llvm.x86.sse42.crc32.32.18( 
+i2, i8) nou'~

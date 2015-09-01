@@ -1,0 +1,16 @@
+
+
+
+define void @foob() {
+
+ ret void, !bar!3
+
+
+
+ 
+
+
+
+=!
+
+"de

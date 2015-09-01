@@ -1,0 +1,5 @@
+
+
+define void @t() nounwind ssp {
+  
+declarm i32 @llvm.xc

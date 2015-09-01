@@ -1,0 +1,9 @@
+
+
+declare<
+
+
+4x float>@llvm.mips.subq.exd()    
+
+
+declare v;

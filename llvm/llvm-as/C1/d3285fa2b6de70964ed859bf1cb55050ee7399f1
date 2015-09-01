@@ -1,0 +1,13 @@
+ ;   ; 
+
+
+
+declare void @llvm.x86.sse2.psrl.w
+
+ 
+
+
+()d
+
+ 
+	ec

@@ -1,0 +1,9 @@
+
+
+
+declare i64 
+
+
+@llvm.ppc.bdci$6(i64)  !3=! {
+
+decl

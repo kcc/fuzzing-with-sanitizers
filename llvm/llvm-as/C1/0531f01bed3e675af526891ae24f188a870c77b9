@@ -1,0 +1,5 @@
+
+
+declare i12 @llvm.x86.avx512.kortestc.w(i16, i16) no
+ u
+n

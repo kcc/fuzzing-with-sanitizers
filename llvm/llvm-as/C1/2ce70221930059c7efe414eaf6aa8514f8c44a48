@@ -1,0 +1,6 @@
+  
+
+
+define void	 @foo() {
+
+  ret void, !ber   !3=!! e {{!

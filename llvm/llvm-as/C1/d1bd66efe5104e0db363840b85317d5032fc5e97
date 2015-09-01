@@ -1,0 +1,7 @@
+
+
+
+
+declare i2 @llvm.hexagon.C2.andn() i
+
+define; ;

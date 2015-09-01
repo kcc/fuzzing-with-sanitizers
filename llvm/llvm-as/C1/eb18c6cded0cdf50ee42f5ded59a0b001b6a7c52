@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.asr.rXpii6dec4( i2)
+
+
