@@ -1,0 +1,4 @@
+
+; 
+
+declare {}* @llvm.invariant.start(i64 )% !3=!s  {iz

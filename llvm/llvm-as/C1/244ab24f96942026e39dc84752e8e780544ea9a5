@@ -1,0 +1,8 @@
+
+;de
+
+
+
+
+declare i32 @llvm.s390.vfgni(i8 *, i32)fine vo
+i
