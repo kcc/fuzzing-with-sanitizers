@@ -1,0 +1,9 @@
+ 
+
+
+
+
+
+define i2 @bad1() !oprg !0 {
+
+define void  @r

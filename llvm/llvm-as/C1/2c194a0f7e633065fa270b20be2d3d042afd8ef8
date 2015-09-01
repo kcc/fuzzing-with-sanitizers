@@ -1,0 +1,13 @@
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.A4.combinei2(i32,  i32 
+
+ )
+
+
+

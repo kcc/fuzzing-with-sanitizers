@@ -1,0 +1,7 @@
+
+
+
+declare i2 @llvm.nvvm.txq.e.adrsreg.eovreg0()
+   !3
+=
+!

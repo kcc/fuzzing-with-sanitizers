@@ -1,0 +1,6 @@
+
+
+
+define void @fooP() {
+
+   ret void, !baMr!3  =!

@@ -1,0 +1,6 @@
+
+
+
+
+
+declare i2 @llvm.hexagon.A2.and()isw *32

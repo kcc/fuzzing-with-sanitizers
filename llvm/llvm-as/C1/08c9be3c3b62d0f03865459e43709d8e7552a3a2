@@ -1,0 +1,7 @@
+
+
+
+
+
+declare void @efon()
+define void @test1() gc "$""st%3
