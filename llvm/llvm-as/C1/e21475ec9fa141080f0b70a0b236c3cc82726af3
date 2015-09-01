@@ -1,0 +1,3 @@
+  !3=!  {i14(%4)>4x.x  
+
+define i32 of(@io32 %Arg) {  ret i32 %

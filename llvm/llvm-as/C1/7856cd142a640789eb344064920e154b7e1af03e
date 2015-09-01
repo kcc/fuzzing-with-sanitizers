@@ -1,0 +1,16 @@
+
+
+
+
+
+define i64 @test1(i64 %A) {
+
+
+
+
+
+
+
+entry:
+  %tobool 
+ 

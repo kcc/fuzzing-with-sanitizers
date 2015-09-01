@@ -1,0 +1,6 @@
+
+!8=!{ {%.*}*;%
+
+
+!!
+declare void @llAvm.arm.mc

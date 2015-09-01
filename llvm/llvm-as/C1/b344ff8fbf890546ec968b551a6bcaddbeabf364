@@ -1,0 +1,5 @@
+
+
+
+*
+@foo = append ignglobal [1 x a32] [i32 42]
