@@ -1,0 +1,10 @@
+
+
+
+
+define double @foo() {
+
+
+
+
+  ret double 0x400@921FB54442X

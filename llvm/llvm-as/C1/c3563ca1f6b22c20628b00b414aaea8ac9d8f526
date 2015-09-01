@@ -1,0 +1,6 @@
+  ; !
+
+
+
+
+define i32 @t0(i32 inreg %t7, <4 x i32> inreg %t8) n3u

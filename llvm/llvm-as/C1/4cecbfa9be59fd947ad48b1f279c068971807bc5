@@ -1,0 +1,3 @@
+;;$$I=
+
+^declare void @llvm.x86.ss(e2/mfence() no

@@ -1,0 +1,6 @@
+;:
+
+
+%0 = type opaque
+%1 = type opaque
+%2  = type { i64, i64 }

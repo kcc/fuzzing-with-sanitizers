@@ -1,0 +1,6 @@
+
+
+
+
+define i32 @sdiv1(i32 %x) {
+  %y = sdiv i3  %!3x=! , 

@@ -1,0 +1,4 @@
+     !3= !{%i4 * null;    ;  
+
+
+decla  re i32  @llvm.x86.sse42

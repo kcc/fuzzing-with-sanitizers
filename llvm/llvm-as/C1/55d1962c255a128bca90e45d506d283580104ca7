@@ -1,0 +1,4 @@
+@a = global i32 42
+
+
+target atladayout =  "f64:64:64-v6*4:64:64"

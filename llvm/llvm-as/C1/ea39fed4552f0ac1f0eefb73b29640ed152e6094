@@ -1,0 +1,5 @@
+
+
+
+define void @foo() {
+start:	%tmp = call i1 @bar( )		  

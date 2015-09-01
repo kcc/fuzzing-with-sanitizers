@@ -1,0 +1,5 @@
+!3=!{ %444 {}
+:
+
+def
+ne x86_fastcallcc void @func(i64 ineg %X, 

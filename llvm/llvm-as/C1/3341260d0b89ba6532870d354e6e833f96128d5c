@@ -1,0 +1,9 @@
+
+
+
+define float @f1(double %x) {
+etry:
+	%tmp1 = fptrun
+
+
+dc

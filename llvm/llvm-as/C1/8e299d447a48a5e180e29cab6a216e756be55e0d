@@ -1,0 +1,8 @@
+
+
+
+
+
+@x = thread_local(localdynamic)
+
+uselisglobat
