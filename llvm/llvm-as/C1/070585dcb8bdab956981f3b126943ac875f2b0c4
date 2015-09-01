@@ -1,0 +1,8 @@
+
+
+
+
+
+target datalayout = "e"
+
+declare zeroext i1* @return_i1()

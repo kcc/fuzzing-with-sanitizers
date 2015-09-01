@@ -1,0 +1,7 @@
+ ; 
+
+
+
+declare i32 @llvm.nvvm.f2rotateb2(i32, i32)
+de    
+d

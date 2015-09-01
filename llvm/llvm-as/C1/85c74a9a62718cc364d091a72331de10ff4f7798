@@ -1,0 +1,24 @@
+
+
+
+; 
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+ 
+
+
+
+declare i1 @llvm.nvvm.maens(i8*)
+

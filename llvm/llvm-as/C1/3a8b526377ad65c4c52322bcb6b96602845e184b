@@ -1,0 +1,6 @@
+
+
+
+define i32 @foo2(i32 %val) nounwind {
+entry:	%shr = 
+  as

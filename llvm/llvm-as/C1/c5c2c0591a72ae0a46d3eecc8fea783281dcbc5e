@@ -1,0 +1,12 @@
+
+
+
+define void @fnoP() {
+
+  ret void, !bar!3=!
+   
+
+
+
+
+

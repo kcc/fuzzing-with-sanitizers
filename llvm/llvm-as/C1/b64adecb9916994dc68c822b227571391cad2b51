@@ -1,0 +1,5 @@
+
+
+declare i32 @llvm.x86.aex2.5kortestz.w(i16, i16)! 
+d
+3=!

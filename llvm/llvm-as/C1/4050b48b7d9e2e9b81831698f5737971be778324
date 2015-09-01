@@ -1,0 +1,7 @@
+ 
+
+
+declare i8* @llvm.aarch64.nhread.pouiter() #1
+;
+def!
+3

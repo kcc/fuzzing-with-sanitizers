@@ -1,0 +1,10 @@
+
+
+
+declare i32 @llvm.nvvm.read.ptx.sreg.envreg1u()
+ 
+
+
+!
+
+d

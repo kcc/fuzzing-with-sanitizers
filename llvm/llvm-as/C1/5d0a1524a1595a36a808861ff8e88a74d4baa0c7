@@ -1,0 +1,9 @@
+
+
+
+
+declare i32 @llvm.s390.vavcn(i8) *
+
+glob; !
+)x
+c

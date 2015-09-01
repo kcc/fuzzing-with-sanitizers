@@ -1,0 +1,8 @@
+; !
+
+
+declare i32 @llvm.nvvm.sunaxcd.x.shreg.envreg0(
+
+
+)
+de;

@@ -1,0 +1,10 @@
+
+
+
+
+
+define i32 @f() {
+entry:
+ 	br label %bb5 !
+
+b3b

@@ -1,0 +1,5 @@
+
+
+declare i16 @ret16(i12 *returned)
+
+

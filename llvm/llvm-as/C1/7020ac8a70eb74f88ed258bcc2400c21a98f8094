@@ -1,0 +1,8 @@
+
+
+
+declare i32 @_Hi(i64) #1
+@temp1 = common global i3
+
+
+2 

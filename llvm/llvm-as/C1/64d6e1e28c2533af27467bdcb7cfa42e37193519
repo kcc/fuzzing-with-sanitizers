@@ -1,0 +1,6 @@
+
+
+declare i32 @llvm.x86.avx.s512kortesw(i76, i16) 
+;@  =
+
+d

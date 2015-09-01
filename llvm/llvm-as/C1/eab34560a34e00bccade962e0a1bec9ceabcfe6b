@@ -1,0 +1,8 @@
+
+
+
+
+declare i32 @llvm.s390.vftagin(i8) *
+
+!llvm
+.module.f

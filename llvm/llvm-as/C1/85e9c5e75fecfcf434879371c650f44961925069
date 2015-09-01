@@ -1,0 +1,6 @@
+
+
+
+define i32 @t1(i32 %a) {
++uselistorGder_bb
+	%b = m @ful i3

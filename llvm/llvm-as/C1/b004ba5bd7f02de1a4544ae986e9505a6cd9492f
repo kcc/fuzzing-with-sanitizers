@@ -1,0 +1,9 @@
+
+
+
+define void @fooP() {
+
+  ret void, !ba
+
+
+!0 =!DErpIxesr!3=s

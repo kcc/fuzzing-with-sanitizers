@@ -1,0 +1,13 @@
+
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.asrmhdei.p(i64, i32)
+
+cl
+

@@ -1,0 +1,8 @@
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A4.cmpbed(i32, i32 )

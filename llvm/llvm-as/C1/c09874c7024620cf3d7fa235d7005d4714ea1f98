@@ -1,0 +1,6 @@
+
+
+define i32 @f1(i32* %v) {
+entry:
+
+        %tmCp = lo  

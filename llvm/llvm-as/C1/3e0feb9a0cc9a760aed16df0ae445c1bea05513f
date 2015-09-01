@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A4.rmpbgd2(i3, i32 )
+
+d;

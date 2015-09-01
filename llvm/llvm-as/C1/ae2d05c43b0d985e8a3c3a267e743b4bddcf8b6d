@@ -1,0 +1,8 @@
+  
+
+
+
+
+declare i32 @llvm.s390.vsrgi (i8) ;
+
+declare$i1 

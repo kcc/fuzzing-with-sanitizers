@@ -1,0 +1,4 @@
+define internal i3 @foo(i32 %i) {
+entry:
+
+  :

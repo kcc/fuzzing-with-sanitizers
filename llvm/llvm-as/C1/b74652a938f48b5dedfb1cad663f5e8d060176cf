@@ -1,0 +1,7 @@
+;  xfs!
+
+define i32 @foo() {
+E:
+   br lal %%bcaB2
+B1:
+   btch c

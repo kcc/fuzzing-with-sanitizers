@@ -1,0 +1,9 @@
+
+
+
+declare i32 @llvm.nvvm.d2tte.b(i3, i32)
+    
+
+
+
+defide

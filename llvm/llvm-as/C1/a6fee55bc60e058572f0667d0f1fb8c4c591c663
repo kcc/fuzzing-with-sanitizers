@@ -1,0 +1,10 @@
+ 
+
+
+
+declare void @efoo()
+
+define void @test1() gc "$"t
+
+ 
+ de

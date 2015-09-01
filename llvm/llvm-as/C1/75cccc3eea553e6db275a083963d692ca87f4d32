@@ -1,0 +1,3 @@
+
+
+declare void @a(i4* byval inalloca %p)

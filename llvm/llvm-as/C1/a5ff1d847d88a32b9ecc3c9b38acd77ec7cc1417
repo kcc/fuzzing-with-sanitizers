@@ -1,0 +1,6 @@
+
+
+
+
+define linkonce void @foo() !ilnkonce !0 
+ {    ;;  

@@ -1,0 +1,4 @@
+
+
+declare i12 @llvm.x86.avx.r25oc1test.w
+(i16, i16) n  o 

@@ -1,0 +1,8 @@
+
+
+
+
+
+
+
+declare i2 @llvm.x86.avx512.kxrtzw(i6, i16) nouta !3

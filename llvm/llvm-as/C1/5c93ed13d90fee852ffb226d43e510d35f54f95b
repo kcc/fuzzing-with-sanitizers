@@ -1,0 +1,8 @@
+
+
+
+define void @fooP() {
+
+  ret void, !bar!3=!
+
+decl9re i32 @

@@ -1,0 +1,12 @@
+
+
+
+define void @foo() {
+
+ 
+ ret void, !jar!3=
+
+
+
+
+!d!

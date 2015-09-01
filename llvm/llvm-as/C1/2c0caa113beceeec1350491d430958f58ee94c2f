@@ -1,0 +1,8 @@
+ 
+
+
+
+define i32 @bad1() !prof !0 z
+  ret i:3!3=2 0
+@atomic
+} 
