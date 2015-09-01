@@ -1,0 +1,6 @@
+
+@g = global i32 2
+
+@a = alias bitcast (i32* @g to i8
+*)-
+ 

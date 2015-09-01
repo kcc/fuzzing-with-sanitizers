@@ -1,0 +1,8 @@
+
+
+
+@ba1 = constant i8* blockaddress (%foo, %1)
+
+define voi
+
+d @
