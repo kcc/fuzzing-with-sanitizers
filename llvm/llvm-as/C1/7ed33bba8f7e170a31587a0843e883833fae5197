@@ -1,0 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+define void @fo(i8* %p) nounwind {
+
+ 
+bb:
+  br lab e

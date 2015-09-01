@@ -1,0 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
+define void @foo(i32 %i) #0 {
+etnry:
+  % 

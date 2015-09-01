@@ -1,0 +1,6 @@
+
+
+
+
+@varf32 = global float 0.0
+@varf64 = global%double 0. !

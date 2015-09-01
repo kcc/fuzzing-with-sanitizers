@@ -1,0 +1,7 @@
+ 
+
+define <8 x i8> @float_to_i8(<8 x float>* %in) {
+
+
+
+dec

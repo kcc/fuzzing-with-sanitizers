@@ -1,0 +1,4 @@
+
+
+define float @f1(double %x) {
+entry:	%tmp1    !3=!  {i14	   

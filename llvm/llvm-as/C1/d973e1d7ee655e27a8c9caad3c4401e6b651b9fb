@@ -1,0 +1,4 @@
+
+@x = extern_weak global i32
+
+define i32 @fn() nonwind s

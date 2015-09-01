@@ -1,0 +1,18 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define float @test(float %a, float %b)"{
+entry
+:

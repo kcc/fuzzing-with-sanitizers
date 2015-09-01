@@ -1,0 +1,3 @@
+
+
+declare void @ba(i64 %x, i4 %y)   

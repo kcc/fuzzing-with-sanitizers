@@ -1,0 +1,9 @@
+
+
+
+
+declare signext i3 @strcmp(i8 *%src1, i8 *%src2)
+
+
+defi
+

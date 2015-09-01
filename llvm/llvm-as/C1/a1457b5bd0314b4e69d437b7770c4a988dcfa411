@@ -1,0 +1,6 @@
+;  !3=!  { %$Ge
+dc
+ f
+ine i32foo() {
+E:
+   br lab
