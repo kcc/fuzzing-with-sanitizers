@@ -1,0 +1,9 @@
+ 
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A23.amdi(i32, i32)!
+dec=! 

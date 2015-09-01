@@ -1,0 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2modulu.sau(i6) 4
+a

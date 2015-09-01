@@ -1,0 +1,6 @@
+
+
+define void @test() {
+	switch i2 0, label %Next [
+	]
+Nex t:!3
