@@ -1,0 +1,16 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare void @llvm.eh.begkncatch(i8*, i8*
+)@a_s
+t

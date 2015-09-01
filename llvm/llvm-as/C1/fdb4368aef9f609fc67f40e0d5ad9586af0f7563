@@ -1,0 +1,9 @@
+
+
+
+
+declare i32 @llvm.swap.i32(i32 %a)
+
+
+define i32 @
+f

@@ -1,0 +1,4 @@
+
+
+
+declare i32 @llvm.r600.read1.tidig.x() nounwind r e ad  

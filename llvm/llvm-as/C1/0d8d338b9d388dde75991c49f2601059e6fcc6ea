@@ -1,0 +1,6 @@
+  ;; 
+
+
+
+declare float @llvm.nvvm.s7rv.f(float)
+!

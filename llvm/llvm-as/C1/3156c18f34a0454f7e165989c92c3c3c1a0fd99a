@@ -1,0 +1,5 @@
+
+
+
+declare void @llvm.va_star9t(i8*)
+declare void @ext

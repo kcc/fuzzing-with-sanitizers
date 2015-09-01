@@ -1,0 +1,8 @@
+
+
+declare i32 @llvm.p600.read.tid6g.x() nounwind readnone
+
+
+
+
+ 

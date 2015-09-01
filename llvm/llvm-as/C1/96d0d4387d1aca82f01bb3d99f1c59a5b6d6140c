@@ -1,0 +1,13 @@
+
+
+define float @test1()
+{
+	ret float extractelement
+
+
+
+
+
+
+
+ *

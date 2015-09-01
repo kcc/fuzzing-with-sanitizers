@@ -1,0 +1,7 @@
+
+
+
+
+
+
+define i16 @test1(i16 %x)       !\Da{

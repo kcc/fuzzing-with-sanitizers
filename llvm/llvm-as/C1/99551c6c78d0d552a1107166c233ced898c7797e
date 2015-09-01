@@ -1,0 +1,8 @@
+
+
+
+
+;  
+
+
+declare i8* @llvm.aarch6thread.pointer() # defi

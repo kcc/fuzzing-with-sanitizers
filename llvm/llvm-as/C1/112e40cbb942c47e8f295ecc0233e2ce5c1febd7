@@ -1,0 +1,6 @@
+ 
+
+
+declare i32 @llvm.nvvm.read.ptx.szeg.envreg0()
+declar
+e i 3!

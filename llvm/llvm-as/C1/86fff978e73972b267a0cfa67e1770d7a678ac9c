@@ -1,0 +1,8 @@
+
+
+
+  
+
+declare i1 @llvm.nvvm.hsspacep.conYs(i8*)  read one
+
+~

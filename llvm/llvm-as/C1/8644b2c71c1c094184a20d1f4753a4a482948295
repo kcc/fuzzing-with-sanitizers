@@ -1,0 +1,6 @@
+     
+
+declare void @llvm.tra()
+
+
+define i32 @m !3=! {[ 0a0x

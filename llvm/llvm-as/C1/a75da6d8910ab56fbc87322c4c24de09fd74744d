@@ -1,0 +1,7 @@
+
+
+declare i64 @llvm.sitp.po64(i64) nounwind 
+
+definereadnone
+
+d1

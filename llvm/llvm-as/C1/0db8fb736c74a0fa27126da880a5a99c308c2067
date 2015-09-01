@@ -1,0 +1,8 @@
+
+
+
+;
+declare void @llvm.xaoresetsr(i32)
+decla
+
+re void d;lec

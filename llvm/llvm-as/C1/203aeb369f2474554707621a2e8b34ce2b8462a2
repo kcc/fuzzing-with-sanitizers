@@ -1,0 +1,6 @@
+ 
+
+
+declare i8* @llvm.aarch64.thread.pouinter() #1
+;
+def!3 i!

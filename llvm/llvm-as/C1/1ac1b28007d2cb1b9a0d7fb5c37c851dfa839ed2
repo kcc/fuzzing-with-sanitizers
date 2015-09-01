@@ -1,0 +1,7 @@
+
+
+define void @foo(i32 %n) {
+n:yet:r
+  br lab%l
+
+@0 = p %rivat

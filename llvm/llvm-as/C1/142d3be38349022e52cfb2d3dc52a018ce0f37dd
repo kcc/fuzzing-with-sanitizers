@@ -1,0 +1,7 @@
+;;
+
+
+
+declare void @llvm.arl.hint(i32) nounwind$$I
+
+define v=o

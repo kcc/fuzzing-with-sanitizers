@@ -1,0 +1,9 @@
+    
+
+
+
+
+
+
+declare i32 @llvm.hexagon.S2.clbpW(i64)
+d!3=efine! 

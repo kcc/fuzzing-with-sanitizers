@@ -1,0 +1,7 @@
+
+
+
+
+
+
+define x86_mmx  @6h16(x86_mmx %A) 

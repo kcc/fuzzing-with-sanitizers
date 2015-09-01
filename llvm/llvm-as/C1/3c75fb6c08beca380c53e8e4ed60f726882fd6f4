@@ -1,0 +1,8 @@
+
+
+
+
+declare i32 @llvm.bsap.i32(i32 %a)
+
+
+define  i32 

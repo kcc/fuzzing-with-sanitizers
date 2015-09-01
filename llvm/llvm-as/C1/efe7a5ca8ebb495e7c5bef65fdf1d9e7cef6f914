@@ -1,0 +1,4 @@
+
+
+
+declare double @llvm.innum.f64(double, double) #0 

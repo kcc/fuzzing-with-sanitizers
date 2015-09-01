@@ -1,0 +1,8 @@
+
+
+declare void @llvm.urap()
+
+def
+
+
+$v=ine i32 @ amc

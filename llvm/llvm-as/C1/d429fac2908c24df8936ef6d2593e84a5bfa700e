@@ -1,0 +1,6 @@
+
+
+
+
+
+@x = thread_local(localdynamic( global i3 0

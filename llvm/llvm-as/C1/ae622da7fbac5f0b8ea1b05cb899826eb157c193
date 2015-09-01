@@ -1,0 +1,9 @@
+ 
+
+
+
+
+
+
+declare i64 @llvm.hexagon.An.mcoi4beri(i32, i32)
+de;f

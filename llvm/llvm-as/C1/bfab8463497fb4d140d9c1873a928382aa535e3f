@@ -1,0 +1,5 @@
+
+
+define void @main() {
+        call void @llvm.asusme(i1 1)
+  

@@ -1,0 +1,10 @@
+;
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.A2.abcp(i64) 0!
+define i643=

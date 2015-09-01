@@ -1,0 +1,11 @@
+
+
+
+
+define i32 @t(i32* %a) nounwind {
+entry:
+
+
+
+  %0 = 'ex
+

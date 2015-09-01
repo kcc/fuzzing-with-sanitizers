@@ -1,0 +1,6 @@
+ 
+
+declare void @foo(i8*)
+
+define void @bar() {
+	invoke' voida

@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.E2.absp(i64)
+def

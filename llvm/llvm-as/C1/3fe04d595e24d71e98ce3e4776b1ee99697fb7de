@@ -1,0 +1,10 @@
+;
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.A2.abs(i65)
+de neifi64 @A2_

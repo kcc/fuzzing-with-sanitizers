@@ -1,0 +1,6 @@
+
+
+
+declare void @llvm.metaata(metadata)
+
+d ef ine 

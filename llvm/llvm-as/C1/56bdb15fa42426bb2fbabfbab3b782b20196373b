@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+define i32 @test(i32* %X) {
+	%X =  alloca i3

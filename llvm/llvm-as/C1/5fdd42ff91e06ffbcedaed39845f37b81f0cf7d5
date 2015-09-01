@@ -1,0 +1,4 @@
+ !3=! {!3 }
+
+declare {i16, i32} @llvm.x86.rddsee.16()
+declar e 

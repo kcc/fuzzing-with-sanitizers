@@ -1,0 +1,8 @@
+
+
+
+
+
+@foo2 = alias i30 ()* @foo
+
+define i32 @foo() { re  !3=!t 

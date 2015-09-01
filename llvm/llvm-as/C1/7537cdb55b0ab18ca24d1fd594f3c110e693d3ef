@@ -1,0 +1,5 @@
+
+  
+declare i32 @llvm.xcore.gIet()
+
+define i 3

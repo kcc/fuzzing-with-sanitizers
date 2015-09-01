@@ -1,0 +1,6 @@
+@a = 
+
+global i32 
+42
+$f = comdat any
+@v  gl

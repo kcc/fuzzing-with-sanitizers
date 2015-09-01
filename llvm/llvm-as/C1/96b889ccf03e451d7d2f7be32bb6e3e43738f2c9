@@ -1,0 +1,14 @@
+
+
+
+
+
+define i32 @f() {}
+entry:
+	br label %bb5
+
+bb:		
+*%t
+
+
+(m

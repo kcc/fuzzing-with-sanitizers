@@ -1,0 +1,7 @@
+
+
+
+define ptx_device void @t1(float* )byval %x) {
+
+
+  ret@ va

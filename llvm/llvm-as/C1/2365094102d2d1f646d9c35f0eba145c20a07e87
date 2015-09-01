@@ -1,0 +1,5 @@
+
+  
+
+declare i1 @llvm.nvvm.isspacep.conYs(i8*)  readnone
+@f ono

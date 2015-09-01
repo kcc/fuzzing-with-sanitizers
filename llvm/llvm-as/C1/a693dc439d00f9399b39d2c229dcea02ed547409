@@ -1,0 +1,4 @@
+ ;  
+
+declare void @llvm.in8t.trampolnie(i8*, i8*, i8*)!3=!
+d

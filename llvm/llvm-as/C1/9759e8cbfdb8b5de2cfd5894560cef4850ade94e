@@ -1,0 +1,5 @@
+
+
+define i8 @test_atomigxhc__i8(i8* %ptr, i8 %xchgend) {
+
+

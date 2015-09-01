@@ -1,0 +1,5 @@
+
+define void @f2() personality i2 3 ...)* @__g
+
+
+define i1 x

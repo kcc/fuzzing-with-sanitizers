@@ -1,0 +1,10 @@
+
+ define void @foo(i32 %v) {
+entry:
+
+  ret
+
+
+
+
+decla voire 

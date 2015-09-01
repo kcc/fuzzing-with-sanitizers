@@ -1,0 +1,5 @@
+
+   
+
+declare void @llvm.vastart(i8*)
+declare voi!3d @exte=!r

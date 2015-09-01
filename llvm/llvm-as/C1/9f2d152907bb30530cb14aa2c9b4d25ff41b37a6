@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.4c.Ampbgt(i32, i32)

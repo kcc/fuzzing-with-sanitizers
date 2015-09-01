@@ -1,0 +1,10 @@
+
+
+
+declare float @llvm.nvvm.fs.qrt(float)
+
+
+
+
+
+define float 

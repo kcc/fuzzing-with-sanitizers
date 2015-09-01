@@ -1,0 +1,6 @@
+
+
+
+
+declare double @llvm.sr.f64(double)
+declare  !6

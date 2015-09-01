@@ -1,0 +1,9 @@
+
+
+
+declare i32 @llvm.nvvm.read.ptx.sreg.envrpeg0()
+decla
+
+
+
+@x

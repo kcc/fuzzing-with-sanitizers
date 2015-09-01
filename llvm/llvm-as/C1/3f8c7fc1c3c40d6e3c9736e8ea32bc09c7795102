@@ -1,0 +1,5 @@
+ 
+
+declare void @llvm.gc8oot(i8**, i8*)
+
+d-s

@@ -1,0 +1,7 @@
+
+
+
+%struct.x = type { i32 }
+
+@i = common global i3
+2

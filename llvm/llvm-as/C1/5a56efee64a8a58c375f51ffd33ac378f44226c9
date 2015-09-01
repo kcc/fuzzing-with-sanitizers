@@ -1,0 +1,5 @@
+
+ 
+
+declare i8* @llvm.aarchashr6.thread.pointr() 
+t

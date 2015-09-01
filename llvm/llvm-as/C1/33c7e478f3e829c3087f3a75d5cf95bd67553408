@@ -1,0 +1,6 @@
+
+
+
+
+declare double @llvm.sqt.f64(double)
+declare 2 x d ;

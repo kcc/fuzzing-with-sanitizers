@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A4.cmpgt(i32, i32)
+de
+
+
+@src1_

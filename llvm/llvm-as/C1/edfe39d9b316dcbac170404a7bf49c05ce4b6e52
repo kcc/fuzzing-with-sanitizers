@@ -1,0 +1,4 @@
+
+
+define internal void @foo(i16* alwaysinline {
+      re !

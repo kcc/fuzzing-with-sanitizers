@@ -1,0 +1,5 @@
+
+
+
+declare i32 @llvm.nvvm.read.x.sreg.envreg0()
+de

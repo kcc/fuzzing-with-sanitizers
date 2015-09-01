@@ -1,0 +1,9 @@
+
+
+
+
+
+@c = common global i8 0, align 0
+@s = common global i
+
+6

@@ -1,0 +1,9 @@
+
+
+
+
+
+
+declare i32 @llvm.r600.read1.tgidig.x() n
+
+@foouno

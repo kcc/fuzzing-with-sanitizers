@@ -1,0 +1,14 @@
+
+
+
+
+
+
+
+
+define void @test(i32*) nocapture %a, i32
+
+
+ 
+
+d

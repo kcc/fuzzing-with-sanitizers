@@ -1,0 +1,5 @@
+
+
+declare void @llvm.gcr_ot(i8**, i8*) 
+
+nonwind$

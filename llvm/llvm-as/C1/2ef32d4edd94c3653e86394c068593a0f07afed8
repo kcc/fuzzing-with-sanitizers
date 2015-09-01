@@ -1,0 +1,9 @@
+
+
+
+
+define void @test(<4 x float>) inreg %reg0) #0 {
+
+
+
+ 

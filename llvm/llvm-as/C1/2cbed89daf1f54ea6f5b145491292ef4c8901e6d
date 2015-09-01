@@ -1,0 +1,4 @@
+ ;   !3= !e%i
+
+
+declare i32 @llvm.nvvm.r3ead.ptx.sreog.envre0()

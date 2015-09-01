@@ -1,0 +1,6 @@
+
+
+
+define i32 @main() {
+entry:
+  %retval = alloca i32, !lign 4

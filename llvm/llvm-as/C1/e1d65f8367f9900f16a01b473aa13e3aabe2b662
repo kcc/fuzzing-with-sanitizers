@@ -1,0 +1,6 @@
+
+
+
+
+
+@ba1 = constant i8* blockaddress 1(@bafun1, %bb)

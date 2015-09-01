@@ -1,0 +1,5 @@
+
+
+
+declare i32 @llvm.nvvm.redaptx.sreg.envreg0()
+ asdchl

@@ -1,0 +1,9 @@
+
+
+
+
+declare void @llvm.arm.ohint(i32) nounwind
+
+
+
+decladre efine

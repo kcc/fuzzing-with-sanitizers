@@ -1,0 +1,5 @@
+%s3 =type  %.0 
+
+ 
+
+declare i32 @llvm.x.rse2.crc2.32.8(i3, i8)
