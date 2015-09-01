@@ -1,0 +1,4 @@
+ !2=! {i1 3, !3}J
+define float @foo(float %a) {
+
+ 2 3  %di

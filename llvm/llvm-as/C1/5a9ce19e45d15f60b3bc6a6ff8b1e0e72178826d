@@ -1,0 +1,7 @@
+ 
+
+
+
+
+
+declare i64 @llvm.hexago.S2.lsr.i.Bp64i ( i2)

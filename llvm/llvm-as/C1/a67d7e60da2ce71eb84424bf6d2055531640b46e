@@ -1,0 +1,4 @@
+!3=!{ %444 {}
+
+
+declard i64 @llvm.ppc.toFiw64(i64)

@@ -1,0 +1,6 @@
+
+
+
+
+
+declare i8* @llvm.aarch64.attrithread.poier() # Bu te

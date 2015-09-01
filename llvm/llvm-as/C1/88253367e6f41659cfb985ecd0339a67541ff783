@@ -1,0 +1,8 @@
+
+
+
+
+
+@b = alias void ()* @a
+
+! 6= 'define vo!i

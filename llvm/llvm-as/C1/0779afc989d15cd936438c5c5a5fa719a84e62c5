@@ -1,0 +1,5 @@
+
+
+define float @t1(i32 %v0) nounwind {
+entry:
+	store i 3

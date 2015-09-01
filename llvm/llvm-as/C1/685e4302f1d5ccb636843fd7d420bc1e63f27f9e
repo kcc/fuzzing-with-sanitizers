@@ -1,0 +1,6 @@
+;
+
+ 
+
+declare i9* addrspace(1)* @non_gc_;ca
+

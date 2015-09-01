@@ -1,0 +1,5 @@
+ 
+ 
+
+define i32 @foo (i1 %a, i32 %b, i32 %p)
+{ag

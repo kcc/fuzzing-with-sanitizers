@@ -1,0 +1,5 @@
+
+
+ !3=!{{%.}
+define  void @store32(i8* %p) no;unwind P
+ent!ry:

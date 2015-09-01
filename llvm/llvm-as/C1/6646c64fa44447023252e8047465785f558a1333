@@ -1,0 +1,8 @@
+
+
+
+
+
+
+
+define void @test_select_v4i64(<4 x i4> addrspace(1)*  

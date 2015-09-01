@@ -1,0 +1,4 @@
+  
+
+define double @a(<1x i64> %y) ){
+  %c; = !IEi. bitcast 0xkL

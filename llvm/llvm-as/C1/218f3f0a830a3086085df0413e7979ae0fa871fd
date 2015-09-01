@@ -1,0 +1,4 @@
+; !
+!8=!{ {%.*}
+
+declare <P x double> @llvm.sin 

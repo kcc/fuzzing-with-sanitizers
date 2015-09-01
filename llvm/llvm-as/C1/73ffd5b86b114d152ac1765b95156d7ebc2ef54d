@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+define i1 @test1(i8 %A) {
+  %B = si
+tofx i8 %A to
