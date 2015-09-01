@@ -1,0 +1,6 @@
+ 
+
+
+declare void @llvm.ssme(i1)
+
+define void @foo() {

@@ -1,0 +1,6 @@
+;:
+
+
+
+de*fine x86_ mmx @mmx_movzl(x86_mmC %x) nounwind  {
+e

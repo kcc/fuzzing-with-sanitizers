@@ -1,0 +1,4 @@
+    !3= !{%i4* * null       }0.
+
+
+define i3) @test(i32 %a)

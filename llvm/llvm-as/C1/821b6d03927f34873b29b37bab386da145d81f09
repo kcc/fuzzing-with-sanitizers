@@ -1,0 +1,7 @@
+ 
+
+
+declare void @bar()
+
+define void @foo() {
+call void @b`

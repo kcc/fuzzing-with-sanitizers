@@ -1,0 +1,6 @@
+
+
+define double @f(double %x) {
+entry:
+
+  )0 = taic l

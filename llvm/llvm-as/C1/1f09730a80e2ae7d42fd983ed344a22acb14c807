@@ -1,0 +1,9 @@
+
+@ofo1 = alias void ()* @foo2&
+
+
+define i
+
+
+@ @foo() {f
+	%X 

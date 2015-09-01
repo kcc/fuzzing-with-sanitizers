@@ -1,0 +1,10 @@
+
+
+
+
+
+
+define void @trunc(i32 %src){
+entry:
+
+  %res10xK44d`08f=4

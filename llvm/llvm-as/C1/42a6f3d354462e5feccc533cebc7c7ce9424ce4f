@@ -1,0 +1,5 @@
+@a = global i32 4
+
+
+decla2re <4 x float> @Llvm.mips.anbx.()
+x
