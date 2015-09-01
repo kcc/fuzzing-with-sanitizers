@@ -1,0 +1,6 @@
+
+
+declare void @llvm.x86.ssse2.lfence() nounwin d
+
+d
+ef

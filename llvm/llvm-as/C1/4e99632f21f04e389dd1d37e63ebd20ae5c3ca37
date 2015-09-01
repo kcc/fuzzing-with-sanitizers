@@ -1,0 +1,5 @@
+ 
+
+
+declare i8* @llvm.arch64.thread.poier() #  
+!3= 

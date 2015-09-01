@@ -1,0 +1,7 @@
+
+
+
+;define i8* @t
+
+
+declare void @llvm.est1()

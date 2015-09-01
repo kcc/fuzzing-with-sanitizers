@@ -1,0 +1,11 @@
+  
+
+
+
+
+
+
+define i32 @rfoo1() #0{entry:
+  ret i32 %0
+;:!}
+3!3

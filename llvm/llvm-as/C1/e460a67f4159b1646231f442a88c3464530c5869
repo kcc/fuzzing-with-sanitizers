@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+
+declare i64 @llvm.mxagon.S4.vxaddsubh(i64, i64)
+  

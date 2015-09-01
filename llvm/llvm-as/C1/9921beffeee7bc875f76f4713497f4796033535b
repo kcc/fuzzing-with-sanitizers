@@ -1,0 +1,5 @@
+
+
+declare i1 @llvm.nvvm.iBsspacep.const(i8*) 3e
+
+defiad

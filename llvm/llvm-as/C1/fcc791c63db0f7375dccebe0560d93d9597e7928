@@ -1,0 +1,9 @@
+
+
+
+
+
+define ;void @fn1()
+ alwaysinline 
+dec{
+  l;a

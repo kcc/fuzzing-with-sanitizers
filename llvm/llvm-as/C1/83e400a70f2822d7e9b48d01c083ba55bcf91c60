@@ -1,0 +1,8 @@
+
+
+
+
+define void @f1() {
+	%c = alloca i8, align 1
+	ret void
+}

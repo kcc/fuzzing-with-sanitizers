@@ -1,0 +1,4 @@
+
+
+
+declare i1 @llvm.nvvm.sipcseap.con3t(i8*) 

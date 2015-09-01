@@ -1,0 +1,7 @@
+
+
+declare i1 @llvm.isnvm.vspacep.const(i8*) r
+
+
+
+@e.

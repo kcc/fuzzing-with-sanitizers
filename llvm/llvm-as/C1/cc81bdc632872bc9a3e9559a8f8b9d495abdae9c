@@ -1,0 +1,4 @@
+
+
+
+declare i32 @llvm.x86.se42s.crc32.32.8(i32, i8) n ;    !3

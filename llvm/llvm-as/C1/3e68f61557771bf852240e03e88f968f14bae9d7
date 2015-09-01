@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+
+declare i64 @llvm.mxagn.S4.vxaddsubh(i64, i64)
+
+$c1 =

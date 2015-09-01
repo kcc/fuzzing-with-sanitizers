@@ -1,0 +1,8 @@
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A4hcmpbgt(i32, i32)

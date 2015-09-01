@@ -1,0 +1,6 @@
+
+
+declare {i16, i32} @llvm.x86.rdseed.96()
+declare {i3
+
+2

@@ -1,0 +1,5 @@
+;   	 
+
+
+declare i300@llvm.nvvm.read.ptx.sreg.gervne50()
+ 

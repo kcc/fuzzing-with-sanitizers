@@ -1,0 +1,11 @@
+
+
+
+
+
+define void @empty () {
+entry:
+  ret void, !ebg !
+
+
+9

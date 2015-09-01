@@ -1,0 +1,12 @@
+
+
+
+
+ 
+
+
+
+
+declare float @llvm.nvvm.cqrv.(float)
+
+!0@f = !DooIDe

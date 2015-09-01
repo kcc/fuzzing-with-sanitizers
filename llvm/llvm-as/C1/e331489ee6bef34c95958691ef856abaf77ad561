@@ -1,0 +1,5 @@
+
+
+declare i1 @llvm.nvvm.isjspacep.const(i8*) rea
+
+d

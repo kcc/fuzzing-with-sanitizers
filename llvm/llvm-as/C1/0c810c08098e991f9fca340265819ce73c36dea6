@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S4.vxaddsubrh(i64, i64)
+
+
+

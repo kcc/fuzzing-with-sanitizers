@@ -1,0 +1,4 @@
+
+
+declare void @llvm.x86.sse2p.lfence() nounwi
+de

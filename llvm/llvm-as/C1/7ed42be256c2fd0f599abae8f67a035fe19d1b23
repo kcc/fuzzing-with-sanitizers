@@ -1,0 +1,11 @@
+
+
+
+
+
+declare i1 @foo()
+
+declare i1 @bar(i32)
+
+
+define void @a() 
