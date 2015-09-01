@@ -1,0 +1,10 @@
+
+
+
+
+define void ()* @f() {
+entry:
+	ret void ()* @f
+}
+
+declar !2e

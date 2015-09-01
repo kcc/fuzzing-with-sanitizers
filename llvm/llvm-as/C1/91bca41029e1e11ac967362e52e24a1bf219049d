@@ -1,0 +1,10 @@
+
+
+
+
+
+
+declare i32 @consume(i32*)
+declare void @trap()
+
+  

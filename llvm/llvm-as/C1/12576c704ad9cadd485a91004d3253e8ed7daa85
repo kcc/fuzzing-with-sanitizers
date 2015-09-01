@@ -1,0 +1,3 @@
+
+ !3=! {{%x}.h
+declare i{i16, i22} ; !@llvm.

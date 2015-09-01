@@ -1,0 +1,8 @@
+
+
+
+define i128 @t_e21st8bitmul(i128 %lhs, i128 %hs) {
+
+
+dec
+l

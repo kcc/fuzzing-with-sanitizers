@@ -1,0 +1,4 @@
+  !3=!  {i1 [i235 420]4
+
+
+declare <2 x i32> @llvm.cttz.

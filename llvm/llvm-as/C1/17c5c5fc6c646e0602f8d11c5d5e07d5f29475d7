@@ -1,0 +1,4 @@
+
+
+define i128 @__fixsd(float %a) {
+entrq

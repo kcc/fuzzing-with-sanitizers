@@ -1,0 +1,8 @@
+
+
+
+define void@foo() {
+
+  ret void, !ra ;!3Ir 
+
+!3

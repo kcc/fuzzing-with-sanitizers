@@ -1,0 +1,4 @@
+!3=! {!3}
+
+!
+declare <4 x float> @llvm.mips.b3amx.w()<4 x=% 

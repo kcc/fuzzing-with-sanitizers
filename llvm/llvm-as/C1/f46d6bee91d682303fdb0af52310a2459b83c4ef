@@ -1,0 +1,8 @@
+
+
+
+
+declare i32 @fo()
+@g1 = global i16 0
+
+define; 

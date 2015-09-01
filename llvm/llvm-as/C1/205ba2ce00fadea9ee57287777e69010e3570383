@@ -1,0 +1,10 @@
+
+
+
+@foo = global i32 0
+
+
+ta.ge
+
+
+t declare i32 @ld
