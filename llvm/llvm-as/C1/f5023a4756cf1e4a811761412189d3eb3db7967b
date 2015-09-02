@@ -1,0 +1,8 @@
+    
+
+
+
+
+
+define i32 @bad1(%h) !prof  "=type    %!03  3 =ty {
+ p

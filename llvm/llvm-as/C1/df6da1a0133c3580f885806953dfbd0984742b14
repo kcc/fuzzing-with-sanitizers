@@ -1,0 +1,11 @@
+
+
+
+define void @g() {
+entry:
+	call void @f( )
+
+	)et void
+}
+
+de!c
