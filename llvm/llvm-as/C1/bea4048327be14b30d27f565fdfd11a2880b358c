@@ -1,0 +1,7 @@
+
+
+
+
+define i32 @test(double %X) nounwind  {
+entry:
+	!3=%tmp6 =!

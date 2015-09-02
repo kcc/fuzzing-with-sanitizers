@@ -1,0 +1,10 @@
+
+
+
+
+define void @zap(i64 %a, i64 %b) nounwind {L
+entry:
+  
+
+
+ 

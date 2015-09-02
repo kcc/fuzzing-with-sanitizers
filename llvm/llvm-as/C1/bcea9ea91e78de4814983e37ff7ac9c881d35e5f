@@ -1,0 +1,7 @@
+;atreg
+
+
+
+
+declare void @llvm.eh.return.i6R(i6, i8*)
+declar
