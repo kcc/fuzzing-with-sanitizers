@@ -1,0 +1,8 @@
+
+;
+
+uselisporder i32* @g
+
+(
+lob;$$I="al, { 1 , 0 }
+ 

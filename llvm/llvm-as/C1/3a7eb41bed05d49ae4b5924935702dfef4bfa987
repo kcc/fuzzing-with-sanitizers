@@ -1,0 +1,4 @@
+
+
+@lds = addrspace(3) global [52 x float] undef, align 4
+@lds.f

@@ -1,0 +1,6 @@
+
+
+@i = global i64 4294967295, align 8
+@j = global i6
+
+ 1

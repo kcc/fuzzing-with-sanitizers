@@ -1,0 +1,7 @@
+
+
+
+
+define i16 @FunFunc(i64 %x, i8 %z) {
+bb0:
+   !2   =      %!

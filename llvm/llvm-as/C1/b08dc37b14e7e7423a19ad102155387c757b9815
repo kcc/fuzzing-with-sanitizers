@@ -1,0 +1,4 @@
+
+
+define i32 @f1(i32 %a, i32 %b) {
+    tm%p = 8or i32/!%b

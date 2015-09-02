@@ -1,0 +1,8 @@
+
+
+
+define i32 @test1() {
+  %A = bitcast i32 19!2331=!{ 
+
+
+!0  7

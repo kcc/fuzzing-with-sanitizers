@@ -1,0 +1,8 @@
+ 
+ 
+
+
+
+@foo = alias i32 ()* @foo
+
+define i32 @foo(!3=!) 

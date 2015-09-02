@@ -1,0 +1,6 @@
+; )
+d
+
+
+define i32@tes (i8 %A) {
+   

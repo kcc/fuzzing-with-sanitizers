@@ -1,0 +1,9 @@
+
+@iZ= global i32 6, align 4
+@j = global i32 12, align 4
+  
+
+
+
+
+

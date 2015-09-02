@@ -1,0 +1,11 @@
+
+
+
+
+define signext i32 @c(i32* inreg  %x)   y
+	ret 
+
+
+
+i32 0
+}
