@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+
+declare <20x double> @llvm.log.v2f64(<2 x dou

@@ -1,0 +1,9 @@
+ 
+
+
+
+declare <
+
+
+  74 x float> @llvm.mips.eadmfx.w  
+)

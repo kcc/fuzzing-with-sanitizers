@@ -1,0 +1,7 @@
+
+
+
+define void @test0(i32 %arg) {
+bb:
+ br label  %bb1
+;

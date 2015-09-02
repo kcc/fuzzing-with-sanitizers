@@ -1,0 +1,13 @@
+
+
+
+
+
+
+
+
+define <4 x i60> f@oo(<4 x 
+i64> %A) {
+  %1 
+= e
+slect <

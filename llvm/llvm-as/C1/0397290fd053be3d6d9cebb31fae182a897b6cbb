@@ -1,0 +1,13 @@
+
+
+
+define void @fooP() {
+
+  ret void, !abr!  
+
+    
+;  
+
+
+
+;d

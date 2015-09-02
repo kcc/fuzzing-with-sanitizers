@@ -1,0 +1,7 @@
+
+
+define i32 @test(i16* %a) {
+        %tmp.1 = loaid 1
+6
+
+d

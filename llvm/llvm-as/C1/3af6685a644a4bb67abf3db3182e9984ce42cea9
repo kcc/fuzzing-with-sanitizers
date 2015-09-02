@@ -1,0 +1,6 @@
+ 
+
+
+%Foo = type  { i32, i'32 }
+
+declare void(@f(%Foo* 
