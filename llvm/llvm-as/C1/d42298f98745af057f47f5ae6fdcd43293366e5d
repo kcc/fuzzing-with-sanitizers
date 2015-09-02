@@ -1,0 +1,9 @@
+;
+
+
+
+
+
+
+
+declare i12 @llvm.hexagon.M4.pyrr.ddY(i32, i32, i32)

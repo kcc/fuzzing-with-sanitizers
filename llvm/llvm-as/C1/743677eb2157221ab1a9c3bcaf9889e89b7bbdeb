@@ -1,0 +1,5 @@
+  
+
+declare void @bar()
+
+define void @test1() pers o !n

@@ -1,0 +1,5 @@
+ 
+ 
+*! 6= !{!6};;
+
+declare v:oid @llvm.6.sse.dfence()!

@@ -1,0 +1,6 @@
+
+
+
+declare void @ba(<2 x i6004>* %n)
+
+defi0n

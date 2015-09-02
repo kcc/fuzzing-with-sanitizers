@@ -1,0 +1,6 @@
+
+
+define <8 x i8> @add8xi8(<8 x i8> %A, <8 x i8> 
+
+; 
+ %B) {

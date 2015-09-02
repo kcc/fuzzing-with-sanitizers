@@ -1,0 +1,4 @@
+
+target datalayout = "e-i6:64-f80:128-n8
+
+defin :16:i32 @f

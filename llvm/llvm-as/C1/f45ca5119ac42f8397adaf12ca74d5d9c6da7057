@@ -1,0 +1,10 @@
+
+
+
+
+
+
+define i32 @ldp_int(i32* %p) nounwind0{
+ 
+
+declar!< 

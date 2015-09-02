@@ -1,0 +1,8 @@
+!3=! {  !3}
+
+
+
+
+@g = global i64 1
+@h = global i64 1, align 4
+

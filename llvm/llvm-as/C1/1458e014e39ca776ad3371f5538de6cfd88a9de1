@@ -1,0 +1,14 @@
+
+
+
+
+
+@A =weak global i32 54
+
+define void @f() {
+entry:
+
+
+;
+
+
