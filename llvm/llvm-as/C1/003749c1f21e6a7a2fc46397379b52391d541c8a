@@ -1,0 +1,11 @@
+
+
+
+
+ 
+
+
+ 
+define i32 @do() {
+E:
+   br label %decB dE:B 

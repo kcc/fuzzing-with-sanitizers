@@ -1,0 +1,4 @@
+
+
+define i32 @testAdd(i32 %X, i32 %Y) {
+%hm; 

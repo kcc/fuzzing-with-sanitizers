@@ -1,0 +1,4 @@
+ ! 6= !{! 6};;;    
+
+declare void @llvm.memset.i32(i8
+)

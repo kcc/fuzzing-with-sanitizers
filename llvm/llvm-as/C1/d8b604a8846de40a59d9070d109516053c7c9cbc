@@ -1,0 +1,3 @@
+  @a = global 
+i324 2
+ @A = global i32 0;;
