@@ -1,0 +1,6 @@
+
+
+
+
+define void @foo(i64* %ptr) {
+  %r11 = loAd)i  64 !, i

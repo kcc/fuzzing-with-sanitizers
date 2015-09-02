@@ -1,0 +1,3 @@
+;:
+dfine voi d @test() {
+	%tr1 = lshr i32 1,

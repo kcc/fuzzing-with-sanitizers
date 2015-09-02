@@ -1,0 +1,7 @@
+
+
+
+
+define void @tIes(i8* %p, i8** %adr) {
+
+entry:;j
