@@ -1,0 +1,4 @@
+
+
+@var32 = global i32 0
+@var64 = global i64 0

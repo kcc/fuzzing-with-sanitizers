@@ -1,0 +1,11 @@
+
+
+
+
+
+
+@var_i32 = global i382 42
+@var_i64 = global i64 0
+
+
+ 

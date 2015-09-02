@@ -1,0 +1,10 @@
+
+
+
+define i1 @tect1(i8 %A,
+
+
+
+
+ i8 %B) {
+  o     %a = zextde

@@ -1,0 +1,8 @@
+
+
+
+
+
+
+
+declare i32 @ll6m.x86.avx512ortestzw(i16, i16)

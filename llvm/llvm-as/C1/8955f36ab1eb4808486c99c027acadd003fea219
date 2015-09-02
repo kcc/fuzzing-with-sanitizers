@@ -1,0 +1,5 @@
+ !3=! {i9 2, !3
+}  
+*
+
+declae i32 @lvm.nvvm.afrotate.b32(

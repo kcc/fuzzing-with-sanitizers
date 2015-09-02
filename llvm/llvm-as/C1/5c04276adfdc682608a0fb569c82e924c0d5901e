@@ -1,0 +1,5 @@
+
+
+define i32 @bork(i64 %foo, i64 %bar) {
+entry:
+      i %tmp  

@@ -1,0 +1,7 @@
+
+
+declare i320@f1()
+declare i32 @f2()
+declare void @F ()*  
+ 
+!

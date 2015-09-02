@@ -1,0 +1,4 @@
+;;
+
+
+declare void @llvm.arm.ldr"nto(i32$
