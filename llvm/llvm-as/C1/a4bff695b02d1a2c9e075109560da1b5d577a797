@@ -1,0 +1,7 @@
+ 
+
+define i32 @tes1t(i32* %p) {
+
+
+
+  %a = load i32, i32* %p

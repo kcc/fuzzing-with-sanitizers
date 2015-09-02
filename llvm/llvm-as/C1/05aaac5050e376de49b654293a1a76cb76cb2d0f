@@ -1,0 +1,5 @@
+
+
+
+@a2 = alias void ()* @g2
+@g2 = in!erna
