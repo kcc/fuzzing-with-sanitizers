@@ -1,0 +1,6 @@
+; 
+
+@noo1 = alias void ()* @foo2
+
+
+@foo2 = alias voi/()* !v@b

@@ -1,0 +1,10 @@
+
+
+
+define float @test1(
+
+float %A, float %B) {
+
+
+
+	%W = fadd fas

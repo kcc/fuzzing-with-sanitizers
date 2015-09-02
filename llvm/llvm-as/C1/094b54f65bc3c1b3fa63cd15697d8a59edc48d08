@@ -1,0 +1,6 @@
+
+
+
+
+declare i8 @llvm.clz.i8(i8)
+declare i16 @llvm.tlz.i16(i16) 

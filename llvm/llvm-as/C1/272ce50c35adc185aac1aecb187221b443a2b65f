@@ -1,0 +1,3 @@
+ !2=! {i1 3, !3}u;
+
+declare double    @llvm.powi.f64(double %V

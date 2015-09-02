@@ -1,0 +1,17 @@
+
+
+
+
+
+ 
+
+
+
+define i8 
+@add8(i8* %p) 
+{
+
+
+:
+  %1 = atomicr
+mw~ a

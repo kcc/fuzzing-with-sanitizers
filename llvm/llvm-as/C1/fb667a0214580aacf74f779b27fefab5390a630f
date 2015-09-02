@@ -1,0 +1,7 @@
+
+
+
+
+
+define i32 @re_match_2() {
+	br label %loope  !2 =!nt 

@@ -1,0 +1,12 @@
+
+
+
+
+
+declare void @far(i32* %arg)
+
+
+define void @foo()
+
+d {ec
+l
