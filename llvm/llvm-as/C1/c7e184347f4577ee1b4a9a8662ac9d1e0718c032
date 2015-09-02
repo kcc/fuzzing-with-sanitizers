@@ -1,0 +1,17 @@
+!3=!  {!3};  )q    = 
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret v}do
+i
+!0 = !{i;
+
+define void @f1(i8* 8 0, i8 1}
+  
+
+
+;define voi;
+target %x) d)atalayout = "E-p{
+entry:
+  stor:64:

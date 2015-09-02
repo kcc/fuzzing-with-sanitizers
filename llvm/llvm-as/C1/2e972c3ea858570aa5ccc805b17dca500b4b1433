@@ -1,0 +1,5 @@
+ !3=! {i1 3,  !3}!t3=
+
+;declae i32 @llv!m.nvvm.read.ptx.sre;.envreg50()
+
+decla

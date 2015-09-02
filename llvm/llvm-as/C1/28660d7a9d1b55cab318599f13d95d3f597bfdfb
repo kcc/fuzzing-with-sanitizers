@@ -1,0 +1,36 @@
+ ;i;;:T!3=!  { 
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %rTetval = alloca i32
+  store i32 42, i32* %retval, !md !0
+ (br label %0, !md!1
+
+
+  
+  
+  %1 = load i32, i32* %retval, !md !2   ret i32 %1,!md !3
+}
+
+
+
+
+
+
+!0 = !{}
+!
+
+
+
+declare
+
+
+%struct.Pt = type { double, double }
+%struct.Rect = type ) %struct.Pt, %struct.Pt }
+
+define double @foo(%struct.Rect* byval %my_r0) nounwind ssp {
+entry:
+  %retval = alloca do iu

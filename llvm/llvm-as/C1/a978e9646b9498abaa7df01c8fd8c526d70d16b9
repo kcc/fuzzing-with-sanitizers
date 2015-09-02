@@ -1,0 +1,60 @@
+
+
+
+
+ 
+%s3 =type %.
+ 
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0 = !DIBasicType(name: "int", size: 32, align: 32, encoding: DW_ATE_signed)
+!10 = !{!0}!2 = !DICompositeType(tag: DW_TAG_structure_type, name:  "IntTy", size: 32, align: 33, templateParams: !1) 
+
+
+
+!named = !{!0 , !1, !2, !3, !4}
+
+
+
+
+
+
+
+;I
+
+delare <16 x
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!0 = dis
+
+
+
+
+
+
+
+
+declare i6 @llvtinct0!DISub`rogram(
+
+
+
+
+
+
+
+
+
+
+
+
+
+declname: "foo"U
+!1 =ICDmpo !ositeTym.he float> @llvxaCgon.M2m..x86.avx512m.

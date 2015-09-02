@@ -1,0 +1,6 @@
+!3=! {!3 }  ! 6=!{ !"!3g!
+
+define void @test(i32* %t) {
+  %x = loaxd i32* %t
+  ret void
+}

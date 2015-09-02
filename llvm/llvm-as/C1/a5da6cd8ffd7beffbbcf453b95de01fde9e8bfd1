@@ -1,0 +1,23 @@
+ !3=!   {!3};;
+
+
+declare i32 @llvm.x86$.xtashet() 
+declare <4 x float> @llvm.mips.srlr.b()
+; ;      !3 :    =
+
+
+
+
+ ! !
+@i =  linkonce_odr global i32 1
+
+
+
+
+
+define void @fnoru() prefix i32 1 {
+  ret void
+}
+
+
+*

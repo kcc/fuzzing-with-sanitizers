@@ -1,0 +1,5 @@
+!7=!{  %a444 {};   
+
+d efine i64 @test_x86_sse2_cvtsd2sk64(<2 x double> %a0) {
+  
+  %res = call i64 @llvm.x86.s se2.cvts4

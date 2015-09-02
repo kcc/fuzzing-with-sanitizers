@@ -1,0 +1,17 @@
+
+
+
+@foo = global i32 34879, align 4
+@DWJumpTable2808 = global [2 x i32] [i32 sub (i32 ptrtoint (i8* blockaddress(@func, %1 ) to i32), i32 ptrtoint (i8* blockaddress(@func, %4) to i32)), i32 sub (i32 ptrtoint (i8* blockaddress(@func, %13) to i32), i32 ptrtoint (i* blockaddress(@func, %4) to i!={ 33i1 2,  !2}!7une a3!(3!=% {t44=!   
+
+;n
+
+
+
+
+
+
+ 
+
+decla2))]
+@0 = internal core3i ns2 @llvmt.

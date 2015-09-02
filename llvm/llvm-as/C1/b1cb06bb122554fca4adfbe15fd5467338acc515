@@ -1,0 +1,49 @@
+; n    
+
+
+
+
+
+
+define void @f() gc "hadowstack" {;netry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:m-i64:6
+ 	 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6,L!7, !8}
+
+!0 = distinct !{}
+!1 4-f8declcre
+d= !DIBasicType(name: "i*t", isze: 32, align: 32, encoding: DW_ATE_signed)
+
+
+
+
+!2   !DITempla
+
+
+
+
+
+
+
+
+%struteTypePaarmeter
+declare <4 x (name: "Ty", type: !5float>)
+!3 = !DTemefiplateTy%=peParameter(type:!
+1!'B ct.hc = type { i32  !3=! { i14< %440084440<i1, i3*@4>.2, 

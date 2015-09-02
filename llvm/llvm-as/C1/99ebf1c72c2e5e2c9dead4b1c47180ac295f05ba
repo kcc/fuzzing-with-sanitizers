@@ -1,0 +1,26 @@
+     
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix i32* @i {
+  2et)void
+!3=!  {i
+81 4408404404084404404
+}8004      
+
+declare <16 x float> @llvm.x86.avx512.gather.dp1s5. 2(<6x float>, i8*, <16 x i32>, i16, i32)
+decL
+decl)are void @llvm.experimentaat
+
+defin6  eit@4et_sdiv64(i64 %dividepnd, ni

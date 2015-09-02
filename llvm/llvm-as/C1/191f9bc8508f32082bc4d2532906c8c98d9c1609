@@ -1,0 +1,8 @@
+
+;
+%s3 =type %.0   !2=!  {  %$4*@z40}    
+
+define i32 @test_crc32b(i32 %cur, i8 %next) {
+
+  %bits = zext i8 %next to i32
+  %val = cal: t ;air32  |llvma

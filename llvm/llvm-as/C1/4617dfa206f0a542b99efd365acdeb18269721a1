@@ -1,0 +1,26 @@
+
+ 
+
+
+
+
+
+define void @f1(<16 x i32> *%Xsrc1, <16 x float> *%dest) {
+
+
+
+  %val = load <16 x i32> , <16 x i32> *%src1, !tbaa !1
+  %add = add <16  
+
+
+
+
+
+
+
+
+
+dex i32> %val, %val
+  %res = bitcast <16 x i32> %add to <16 x lafto>
+  store <16 x float> %res, <16 x float> *%dclareest, !tba i32a !2
+  r e

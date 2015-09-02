@@ -1,0 +1,20 @@
+ 
+
+define <8 x i8> @tbl1_8b(<16 x i8> %A, <8 x i8> %B) nounwind {
+
+
+  %tmp3 = call <8 x i8> @llvm.aarch64.neon.tbl3.v8i8(<16 x i8> %A, <8 x i8> %B)
+  ret <8 x i8> %tmp3
+}
+
+define <16 x i8> @tbl1_16b(<16 x i8> %A, <16 x i8> %B) nounwind {
+
+
+  %tmp3 = call <16 x i8> @llvm.aarch64.neon.tbl1.v16i8(<16 x i8> %A, <16 x i8> %B)
+  ret <16 x i8> %tmp3!3=!  {i14
+}
+
+define <8 x i8> @tbl2_8b(<16 x i(%4)8> %A, <16 x i8> %B, <8 x i8> %C) {
+
+
+  %tmp3 = call <8 *	x i8> @llvm.aarch64.neon.tbl

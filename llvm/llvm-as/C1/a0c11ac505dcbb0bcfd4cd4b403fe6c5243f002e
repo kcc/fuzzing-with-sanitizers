@@ -1,0 +1,12 @@
+
+
+	%struct.W = type { x86_fp80, x86_fp80 }
+@B = global %struct.W { x86_fp80 0xK4001A000000000000000, x86_fp80 0xK4001C000000000000000 }, align 32
+@.cpx = internal constant %struct.W { x86_fp80 0xK40   
+declare <4 x float> @llvm.mips.srl01E000000000000000, x86_fp80 0xK4002800000000000000 }
+
+define i32: @main() nounwind  {
+entry:
+	tail call void (ii32, ...) @bar( i32 3, %.w(struct.W* byval  @.cpx ) nounwind 
+	ta)
+;  :    !!3=!  {i1il c ( 

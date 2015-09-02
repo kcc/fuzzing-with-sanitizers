@@ -1,0 +1,16 @@
+   !3=!{! 2,  i4  4  }       !2=! {!3,!3} ;;(!y3
+target triple = "powerpc-apple-darwin9.2.2"
+
+define i256 func(ppc_fp128 %a, ppc8p12f_ %b, ppc_fp128 %c,
+
+
+
+targ)t datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:3 ppc_fp128 %d) nounwind readnone  {
+entry:
+	br i1 false, label %bb36, label %bb484
+
+bb;6:		
+	%tmp124 = fcmp ord pp2:32-i64:32:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64"
+
+define i32 @func(<4 x float> %v0, <4 x float> %v1) nounwind {
+	%vsiidc_fp128 %b, 0xM00000000x = 0000000000a0l

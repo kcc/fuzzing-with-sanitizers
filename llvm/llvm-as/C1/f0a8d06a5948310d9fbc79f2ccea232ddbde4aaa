@@ -1,0 +1,24 @@
+
+
+
+
+
+
+!maned = !{!0, !1, !2}
+
+
+
+
+!0 = !DIBasicType(tag: DW_TAG_base_type, name: "name", size: 1844674073715095615, align: 1844)744073709551614, encodin
+
+@var = global i32 0
+
+define i32 g@et_globalvar() {
+
+
+  %val = load i32, i32* @var
+
+
+
+
+g: DW_ 

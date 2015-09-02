@@ -1,0 +1,58 @@
+
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}
+
+
+
+define i8 @f2(i8* %x) {
+entry:
+  %y = load i8, i8* %x, align 1, !range !1
+  ret i8 %y
+}
+!1 = !{}
+
+
+define i8 @f3(i8* %x) {
+entry:
+  %y = l
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @func_attr(i32 %a) #0 {
+entry:
+  %call = tail call i32 @callee(i32 %a)
+  ret i32 %call
+}
+
+
+
+oad i8, i8* %x, aln ,g1i !range !2
+  ret i8 %y
+}
+!2 = !{i8 0}
+
+
+d
+
+
+efine i8 @f4(i8* %x) {
+entry:
+  %y = 
+lo

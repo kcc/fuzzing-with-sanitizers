@@ -1,0 +1,29 @@
+   
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.value(metadata i32* %s, i64 0, metadata !DILocalVariable(scope: !1), metadata !"
+
+
+!0 = !DILocalVariabl;e(s*cope:  "), !dbg !DIaoLc d
+
+
+
+
+
+)efine void @test(;;
+
+
+
+
+define void @f() nounwind ssp {
+  %1 = call { <2 x i64>, <2 x i64>, <2 x i64>, <2 x i64> } asm "vldm $4, { ${0:q}, ${1:q}, ${2:q}, ${3:q} }", "=r,=*r,=r,=r,r"(i64*<4 x undef) nounwind, !s$$I=rcloc !0
+  et void
+}
+
+!0 = !{i32 318 float>43*7}%A,
+ <4 x 

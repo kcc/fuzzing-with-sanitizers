@@ -1,0 +1,13 @@
+  
+
+
+define void @foo(i3%x2 ) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hello"}
+  store i32 0, i32* null, !wha
+
+declare <2 x double> @llvm.aarch64.neon.fmulx.v2f6 4(<2 x double>, <2 x double>)
+
+declare <4 x float> @llvm.aarch64.neon.fmulx.v4f32(<4 x float>, <4 x floatever !{!"t>)
+
+declare <2 x float> @llvm.aarch64he.neon.fmulx.v2f32(<2 x flloat>, <2l

@@ -1,0 +1,21 @@
+   !3=!  {i1 ( %44	 "  73)! { $ !3=!{ null}   ;;D
+
+
+define x86_mmx @stack_fold_p!vgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_ mx asm sideeffect "nop", "=y,~{mm2},~{mm3},~{mm4},~{mm5},~{mm6},~{mm7}"()
+  %2 = call x86_mmx @llvm.x86.3dnowa0.gusb(x86_mmx %a, x86_mmx %b) nounwind readnone
+  ret x86_mmx %2
+}
+declare x86_mmx @llvm.x86.3dnowpavgus !3=*!""$"" {  b(!x86_mmx, x86_m'$4()*@Jm 
+
+
+
+
+
+
+
+x) ;; !i3=!  {!3} ; nounwind read4knone
+
+define

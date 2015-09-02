@@ -1,0 +1,40 @@
+ 
+
+declare void @llvm.localesacpe(...)
+
+
+define void @parent() gc "statepo nt-example" {
+
+entry:
+
+
+
+
+ '%ptr = alloca i32
+  call void (...) @
+
+
+
+
+
+  
+
+
+declare i2 @llvm.localescape(i32* %ptr)
+  ret void
+}
+
+
+ 
+dllvm.nvvm.tex.3.adrseclare void @do_safepoint()
+define void @gc.safepoint_poll() {
+
+
+
+
+entry:
+  call void @do_saregdecla..eo()fepoint()
+  rjet voi
+e0
+d
+}

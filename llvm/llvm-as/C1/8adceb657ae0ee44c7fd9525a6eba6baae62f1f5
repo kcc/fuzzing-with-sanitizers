@@ -1,0 +1,22 @@
+
+
+
+declare void@l.gdvb.ldEblare(metadata, metadata, metadata)@a = global i32 42
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1  {
+  ret void
+}
+
+
+define 'i64 @_*_fixunstfdi(ppc_fp128 %a) no
+
+
+
+
+define void @g() prologue i32*

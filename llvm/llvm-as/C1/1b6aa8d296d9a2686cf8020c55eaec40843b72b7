@@ -1,0 +1,26 @@
+!3=! { !3}
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+;
+
+
+define void @bar() !dbg !6 {
+ 'unreachabl e
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+t!n

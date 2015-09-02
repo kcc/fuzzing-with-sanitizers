@@ -1,0 +1,15 @@
+! 2=! {i1 2, 
+!3}!7=  3=! 3= !3=!{! 2, i4   } 4    
+
+
+
+
+g!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directoryX: "/pAth/todir")
+!2 = !DICompositeType(tag: DW!_TAG_structure_type, name: "Object")
+
+
+
+!3 = !DIObjCPro

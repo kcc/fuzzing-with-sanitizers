@@ -1,0 +1,26 @@
+
+
+
+@X = global i1 true
+
+
+
+
+
+
+declare 
+
+
+i32 @llvm.hexagon.M5.vdaiN846()
+
+
+
+          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+entry:
+	ret v

@@ -1,0 +1,9 @@
+   !3= !  {  %4*@403}     !3=!  {  %$4*@483})3=!{   
+
+
+%0 = type { i   % 32, void ()* }
+%structA 4 != type { [100 x i32] }
+
+
+@a = global %struct.A zeroinitializer, alnig 4
+3@ll=vl.global_

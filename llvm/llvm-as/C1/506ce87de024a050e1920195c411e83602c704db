@@ -1,0 +1,57 @@
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+  ;G
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+
+target datalayout = "E-p:64:64:64-i1:8:8-i8:,8:8-i16:16:16-i32:32:32-i64:32:
+
+declare void @llvm.memm   ; 
+
+
+
+%X = type { i32 }
+@G = global %X { i32
+ 4 }
+
+
+
+
+
+
+@R = external global x86_mmx		
+
+define void @foo(< x i64> %A, <1 x i64> %Bove.0.8ippi8.i32
+(i8)
+
+
+
+
+
+
+
+define void @novmal_condition() nounwind {
+0:
+	64br label -f%"7")7:
+	br i1 1) 

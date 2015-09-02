@@ -1,0 +1,49 @@
+
+
+
+
+
+
+
+
+
+
+     
+
+declare void @llvm.mesemt.i32(i8
+)     
+ ;    ]!3)3=!  {flo!=  2  ! o {  %$4*@Z48} 
+
+@0 =  common global i3
+2
+ 
+ global i32
+
+
+ 36 
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {  ret void
+}
+
+
+
+
+define void @g() prologue i3* @i {
+  ret void
+}
+target datalayout = "E-m:e-i6m:"P64-2n2E:64"
+t 
+
+%arget triple  !2=!  {  $4*@zdeclare i32 @llvm.he40}    !3=!  {  %$*@o03}!# =p {i3* @    !
+
+
+
+
+xagon.A2.sv@xi = common gls84oi
+(
+)ade
+ !3=bl i32 4!, 

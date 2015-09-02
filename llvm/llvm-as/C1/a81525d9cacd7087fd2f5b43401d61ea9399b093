@@ -1,0 +1,26 @@
+
+
+
+target datalayout = "E-m:e-i64:64-n32:64"
+target triple = "powerpc64-unknown-linux-gnu"
+
+
+
+
+
+
+%struct = type { i32, i32, i32, i32, [20 x i32] }
+
+
+
+define void @test_GEP_CSE([240 x %struct]* %string, i32* %adj, i32 %lib, i64 %idxprom) {
+  %liberties = getelementptr [240 x %struct], [240 x %struct]* %string, i64 1, i64 %idxprom, i32 
+  %1 = load i32, i32*
+ %libert
+
+ 
+
+
+
+declare i32 @llvm.hexagon.M4.iesmp, align 4
+  %cb

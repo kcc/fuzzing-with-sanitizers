@@ -1,0 +1,42 @@
+    !2=!  {  %$4*@Z48} 
+
+@0 =  common global i3
+2
+
+
+ global i32
+
+
+ 36 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i {
+  
+
+
+
+
+
+@b = internal global i32 ()* @foo               
+
+
+
+
+@main_addrs;= coret void
+}
+nstant [2 x i8*] [i8* blockaddress(@f, %FOO), i8* blockddress(@f, %BAR)]
+
+
+declare void @foo() nounwind
+declar
+@foo.upgrd.1 = internal glob

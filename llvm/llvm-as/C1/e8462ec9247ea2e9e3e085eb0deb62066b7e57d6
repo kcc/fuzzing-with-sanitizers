@@ -1,0 +1,38 @@
+
+
+
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+
+
+
+
+
+target datalayout = "ep:32:32:32-i@data = dllexport constant [5 x i8] c"data\00", align 1
+1:8:8-i8
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!llvmM.modu
+le.fl !3=!{ {%.}3  ags = !{!0}
+!0= !{i32 2:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:6
+4-v128:64:128-aq:0:64-n32-S&4"
+target triple = "a
+rmv5e--netbsd-eabi"
+
+%struct.exc(p. !"Dybug I !nfo Ve3=rsion", i32 3}
+
+!l

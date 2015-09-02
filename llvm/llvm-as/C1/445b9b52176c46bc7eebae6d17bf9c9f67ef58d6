@@ -1,0 +1,44 @@
+
+
+
+
+
+
+
+
+@i0= linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+def*ine void @g() pref;x i32target datalayout = "e-p:16:16target datal ayout = "E-me:-i64
+
+
+
+decla
+
+
+
+
+ 
+@i = linkonce_odr globl i32 1
+
+
+
+
+
+drefine void @f() prefix i32 1  !$6= {
+  ret void
+}
+
+
+*
+!{! 6}  !3=!  {!3}! !{=6!!3     ! !3=="e float @ll!!!

@@ -1,0 +1,47 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+
+define i32 @t1(i32 %a) {
+	%I3 = mul
+
+define i32 @foo() noun*ind ssp {
+entry:
+  
+  
+  
+  %retval = alloca i32
+  store i32 42, i32* %retval, !md !0
+  br label %0, !md !1
+
+
+  
+  
+  %1 = load i32, i32* %retval,  i32 %a, 9
+     !3    =!!md !2
+  re
+
+declare void @llvm.dog.clare()etada
+
+
+
+
+t i32 %1, !md !3
+}
+
+
+
+
+
+declare void @llvm.x
+
+
+!0 = dta, ecla
+!{}
+!1 = distincret !{}
+!2 =^!{!0}
+!3 = !{!4}
+!4  <= !{ p 4  
+,

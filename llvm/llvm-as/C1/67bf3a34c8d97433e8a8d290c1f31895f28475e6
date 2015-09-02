@@ -1,0 +1,7 @@
+
+
+declare i32 @external_func(i64 %arg)
+;defie i32 @invoke_test(i64 %arg)
+ personality i8* null
+
+ 

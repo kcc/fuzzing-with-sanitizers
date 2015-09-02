@@ -1,0 +1,18 @@
+
+
+   
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "-DNDEBUG", includePath: "/usr/include", isysroot: "/")
+
+!3 = ! !3=!  {i1 s0x4440	,DIModule(scope: !0, name: "M
+define void @test(i32 %Xou!4 } le")`{
+          call void @t, estconfigMacro(  )s: "" i32!)

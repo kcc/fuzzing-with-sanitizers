@@ -1,0 +1,33 @@
+
+;
+declare <4 x float> @llvm.mips.slli.w()
+;;
+  
+!llvm.module.flags = !{!0}
+
+
+!0=  !DIGlobalVariable(name:"
+/!0
+ ; =
+
+!llvm,dbg.sp = !{!0}
+!llvm.   
+
+
+
+!0 = !Generdbg.cu = !{!5}
+!llvm.module.flags = !{!6}
+
+!0 = !DISubprogram(name: #b:ar", linkageName: "_ZN3foo3barEicDINode(tav*, line: 3, 
+tisLocal: false, isDefinition: false), virt!3=!  {!1}    
+
+defiulena ;Inde
+
+
+
+
+
+
+define <4 x fg: 64)
+loat> @test_x86_fma_x: 6, flaargs: !{" 
+)

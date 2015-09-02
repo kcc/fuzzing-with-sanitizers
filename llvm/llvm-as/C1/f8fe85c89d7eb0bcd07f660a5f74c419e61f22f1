@@ -1,0 +1,19 @@
+
+declare <4 x float> @llvm.mips.ld77()
+
+ 
+
+
+
+
+
+
+
+ define void @xyz() {
+entry:
+  br i1 fcmp oeq (double ;sub (double
+
+
+ undef, double undef),  double 0.000000e+00  
+d
+e),

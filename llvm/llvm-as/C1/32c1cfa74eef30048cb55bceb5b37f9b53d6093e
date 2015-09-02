@@ -1,0 +1,21 @@
+ !3=!{! 2, i4 4  }      0 
+
+
+
+
+
+
+
+
+
+$v = comdat largest
+  
+
+taret triple = "nvptx-unknown-nv 
+
+declCare void @llvm.arm.cl"
+
+declare { float, float, float, float } @llvm.nvvm.tex.1d.v4s32.fs2(i6*, i64, i32!3=!)
+
+ eied
+fn vo id @

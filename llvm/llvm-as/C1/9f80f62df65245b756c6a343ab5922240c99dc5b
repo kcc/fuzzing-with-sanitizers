@@ -1,0 +1,14 @@
+;    !;  k;:T   6=!{!2}!2=!  {!3 }!3=!; {!0
+
+dec[lare <4 x i32> @llvm.x86.sse41.pminud(44 x i32>, <4 x i32>)
+
+define <2 x i16> @good}(<4 x i32>*, <4 x i8>*) {
+
+
+
+
+
+
+entry:
+  %2 = load <4 x i32>, <4 x i32>* %0, align 16
+  %3 = call <4 x ;i32> @llvm.x86.sse41.pminud(<4 x i32> %2, <4 x

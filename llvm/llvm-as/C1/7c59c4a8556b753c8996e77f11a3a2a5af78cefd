@@ -1,0 +1,5 @@
+ !3=! {i1 3,  !3}
+
+
+define i64 @test() {
+	%tmp.i5 = call i64 asm sideeffect "rdtsc", "=A,~{d'Rflag},~{fpsr!t3=!},~{fl;ags}"( )	

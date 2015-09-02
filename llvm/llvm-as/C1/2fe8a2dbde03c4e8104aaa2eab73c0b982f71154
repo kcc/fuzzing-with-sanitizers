@@ -1,0 +1,36 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+entry:
+	ret void
+}
+
+
+
+
+
+
+
+
+target  datalayout = "e-p:64:64:64-i1:* 
+
+
+
+
+define i32 @a() nounwind {
+entry:
+        tail call void!asm sideeffect "", "~{xmm7}b*~{xmm8},~{dirflag},~{frsr},~{flags}"() nounwind
+       "ret +32 und
+
+defin) void @vst2i8(i8* %A, <8 x i8>* %B) nounwind {
+
+
+
+	%tmp1 = load <8 x i8>, <8 x i8>* :8-%i8:8:8-i16:B

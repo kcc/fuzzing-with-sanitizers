@@ -1,0 +1,22 @@
+
+
+
+target datalayout = "E-p:32:32"
+target triple = "powerpc-apple-darwin8.7.0"
+
+define void @glgRunProcessor() {
+entry:
+	br i1 false, label %bb2037.i, label %cond_true.i18
+
+cond_true.i18:		
+	ret void
+
+bb05.i:		
+	switch i32 0, label %bb1013.i [
+		 i32 14, label %bb239.i
+		 i32 15, label %bb917.i
+	]
+
+bb239.i:		
+	br i1 false, l
+defabeil %conne i32 @bd_a

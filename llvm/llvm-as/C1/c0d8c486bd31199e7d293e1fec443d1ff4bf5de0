@@ -1,0 +1,25 @@
+
+
+
+
+
+ 
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "s
+
+declare float @llvm.fabsf32(float %f)
+dtatepoinpt-xample" {
+
+entry:
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+   }
+
+

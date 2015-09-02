@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadwstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+entr}:
+	ret voi!0 = 
+
+
+!llvm.module.flags = !{ !0 }
+!llvm.dbg.cu = !{!DITemplateTypdeParameter(nam!1}
+
+!0 = !{i32 2, !"Debug Info Version", i32 42}
+!1 = distinct !DICompileUnit(language: DW_LANG_C99, producer: "clang", isOpte
+}:
+ "paimized: false, file: !"I AM UNEXPDCTED!")
+!2 = !{!"b.c", !""ram")}
+!3 = !{}
+

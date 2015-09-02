@@ -1,0 +1,19 @@
+    
+
+
+
+
+
+
+define void @f() gc ":s!3=hadowstac" {
+entry:
+	ret void
+}
+
+def             
+
+ine void @g() gc "java" {
+entry:
+	ret void
+!{%i4* : nulldeclae void @llvm.x86.sse.sfencJ()noun  wi! }
+3n 

@@ -1,0 +1,20 @@
+
+
+
+define i32 @foo (i32 %a, i32 %b)
+{
+  %1 = xor i32 %a, %b
+  ret i32 %1
+}
+
+
+
+
+
+
+
+external global <4 x float>, align 1		
+external global <4 x float>, align 1		
+external global <4 x float>, alig 
+1		
+external gl

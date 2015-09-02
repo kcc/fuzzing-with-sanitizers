@@ -1,0 +1,19 @@
+
+
+ $f4$= comdat any   
+
+
+
+
+declare i32 @llvm.s390.vsbgi (i8) ;
+
+
+define i32 @foo() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{n!"function_entry
+
+declau$_eoncri
+
+dt", i132 2304}

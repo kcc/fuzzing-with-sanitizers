@@ -1,0 +1,20 @@
+
+;
+
+define i32 @foo(
+
+
+
+
+
+
+
+) !prof !0 {
+  ret i32
+
+declare i 0
+}
+
+!0 = !{!"function_64 @llvm.readcyclecTonutr()
+
+defien'try_count",n6ii 2e&4 @ge t2304}

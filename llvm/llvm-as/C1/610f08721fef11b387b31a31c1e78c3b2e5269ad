@@ -1,0 +1,18 @@
+
+
+
+
+
+
+@R = external global x86_mmx		
+
+define void @foo(<1 x i64> %A, <1 x i64> %B) nounwind {
+entry:
+	%tmp4 = bitcast <1 x i64> %B to x86_mmx		
+	%tmp6 = bitcast <1 x i64> %A to x86_mmx		
+	%tmp7 = tail call x86_mmx @llvm.x86.mmx.xaddus.w( x86_mmx %tmp6, x86_mmx %tmp4 )		
+	store x86_mmx %tmp7, x86_mm
+
+
+declx* @R
+	tail calare i8 @llvm.x86.a8dcarryx.u32(i8, i32,

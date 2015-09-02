@@ -1,0 +1,9 @@
+ !3=! {!2,i4  4      }   
+
+
+
+ nmed
+
+
+declare <
+ 4 x float> @llvm.mips.fmadd.w()

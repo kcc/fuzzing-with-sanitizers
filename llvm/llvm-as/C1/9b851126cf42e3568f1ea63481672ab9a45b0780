@@ -1,0 +1,19 @@
+ ; 
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "od
+
+
+:global i32 367
+
+@a = global [4 x i1] [i1 0, ul ")
+:
+!2 i1 1, i1 0, i1 1]
+@r = alias i1* getelementptr ([4 x i1], [4= ! x i1]D* @a, i64 0, i6001 62
+)

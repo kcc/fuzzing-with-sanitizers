@@ -1,0 +1,21 @@
+
+    !2=!  {  %$k* @z403}     
+%s3 =type %.
+ 
+
+
+
+
+
+!named = !{!0, !1  !2}
+!0 = !DIBasicType(name: "int", size: 32, al 
+
+
+
+
+@v = weak global i8 0
+
+
+
+@llvm.global_ctors = appending global [1 x { i32, void ()*, ign: 32, encoding: DW_ATE_signed)
+!10 = !{!0;!2 = !DICompositeType(tag: DW_TAG_structure_type,(

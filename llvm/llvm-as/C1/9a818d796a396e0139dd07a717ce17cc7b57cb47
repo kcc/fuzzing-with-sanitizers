@@ -1,0 +1,16 @@
+  
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !DISubprogram(name: "foo", scope: !2)
+!2 = !DIFile(filename: "  !3=! {  %xa().$path/'o/fi;e", directory: "/path/jo/dir")
+
+
+;!s = !DILexica
+
+
+dlec

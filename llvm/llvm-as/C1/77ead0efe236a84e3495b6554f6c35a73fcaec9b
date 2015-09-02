@@ -1,0 +1,21 @@
+    
+
+
+
+
+  ;p!ti3=! {!3}!3=!  {!3}
+
+
+
+
+
+
+define void @f() gc "shaowstack" {
+entry:
+	ret0void
+}
+
+define void  @g()declare float @llvm.nvvm.aqrv.f(float)
+
+@  !3=!   gc "jav{boa" {
+entry

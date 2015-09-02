@@ -1,0 +1,21 @@
+
+
+
+define void @fooP() {
+
+   ret void, !ba!3
+
+define <16 x i16> @test_x86_av2_packssdw<8 x i32> %a0, <8 x i32> %a1) {
+  =
+  %res = call <16 x i16> @llvm.x86.avx2.
+
+packss$w(<8 x i32> %a0, <8 x i32> %a*5) 
+  ret <16 )x i16> %res
+}
+declare <16 x i1)> @llvm.x8
+
+
+
+declare6.avx2.packssd vow(<!8  
+
+x i

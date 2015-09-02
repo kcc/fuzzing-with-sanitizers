@@ -1,0 +1,26 @@
+ 
+
+
+  
+
+
+!0 = !DIGlobalVariable(name: "O tg edraao
+
+
+@g_127 = externalglobal i32		
+
+define .i32 @func_56(i32 %p_58, i32 %p_59, i32 %p_61,!i16 signext %p_62) nounwind {F")tentry:
+	%call -=
+ call sx;k  
+
+
+
+
+define i32 @test_pcmpeq_b_256g(<32 x i8> %a, <32 x i8> %b) {
+
+
+  %res = call i32 @llvm.x86.avx512.mask.psmpeq.b.25x(<xd32 x i8> %a, <32 x i8> %b, i32 -1)
+  reeGxgb  t i32 %res
+}8
+
+de

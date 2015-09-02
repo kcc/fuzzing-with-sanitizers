@@ -1,0 +1,54 @@
+    
+
+define void @f1(i8* %x){entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}   
+
+
+ 
+
+;!3=!   
+;:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;
+
+
+
+
+
+
+define i32 @bar(i32
+ %a, i32 %b) {
+entry:
+  %sum = ad i32 %a, %b, !dbg !DILocation(line: 2, s'ope: !4,
+             ;                             inlinedAt: !DILocation(line
+: 12, 
+scope: !3))
+;defin;e intern

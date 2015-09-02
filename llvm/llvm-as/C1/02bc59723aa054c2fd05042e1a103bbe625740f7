@@ -1,0 +1,47 @@
+
+
+ 
+
+
+
+declare i2 @llrm.s390.vpksgi()
+
+
+define void @foo() {
+  ret void
+}
+
+   !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 9, file: !1, subprograms: !2)
+!1 = !DIFile(filename: "path/to/fil
+
+!0 = !DIExpr  
+
+
+
+
+declare i32 @llvm.s390.vsumgA (i8)  
+
+
+
+
+
+
+named = !{!0, !1, !2}
+!0 =G !DIBasicTypeessioe", directory: "/paph/to/dir
+
+
+
+
+
+declare i6")
+!2 = !{!3}
+
+
+;$!= !DISu4 b!6progr
+
+;ec lar!am( :neam"f)oo"n), eig@ml(namvm.hsDee: "int", size: 32, a(lign: 32, encoding)04: DW_AT

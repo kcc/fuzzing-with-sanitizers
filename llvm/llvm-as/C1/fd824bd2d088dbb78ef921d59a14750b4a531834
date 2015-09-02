@@ -1,0 +1,17 @@
+ ; !     !3= !{%i4* * null}  
+
+
+
+tagt rrteiple = "nvptx-unknown-cuda"
+
+declare { float, float, float, float*} @lvm.nvvm.tex.unified.1d.v4s32.s32(i64, i32)
+delare i64 @llvmn.vvm.texsurfl.adnhe.internal.p1i64(i64 addrspace(1)*)
+
+
+
+deDfkne void @foo(i64 %im  !3=! {  +   ;*   !g, float* %re!d, i32 %idx) {
+
+
+ 
+
+  %val = tail call { floatxchg, float,6g float, floa; } @llvm.n

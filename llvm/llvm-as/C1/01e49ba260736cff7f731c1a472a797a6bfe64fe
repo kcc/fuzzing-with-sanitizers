@@ -1,0 +1,9 @@
+! 3=!{  %444 { }!3=! 8{
+	
+
+  
+
+define i64$@test_pcmpeq_b(<64 x i8> %a, 6<4 x i8        (3!{  i8 10(0> %b) {
+4
+
+  %res = call i64 @llvm.x86.avx512.mask.pcmpgq.b.12(<64 x i8> %a, <64 x i8> 

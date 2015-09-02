@@ -1,0 +1,42 @@
+;  
+
+
+
+
+
+
+
+declare float @llvm.hexagon.F2.sfadd(float, float)
+define float @F2_sfadd(float %a, float %b) {
+  %z = call float @llvm.hexagon.F2.sfadd(float %a, float %b)
+  ret float %z
+}
+
+
+
+declare i32 @llvm.hexagon.F2.sfclass(float, i32)
+define i32 @F2_sfclass(float %a) {
+  %z = call i32 @llvm.hexagon.F2.sfclass(float %a, i32 0)
+  ret i32 %z
+}
+
+
+declare i32 @llvm.hexagon.F2.dfqscsn(double, i32)
+def
+
+define zeroext i1 @_Z3fooPb(iin8* no0?d@
+ commo
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexcaptagon.M2ure %x.vmpywQ) {

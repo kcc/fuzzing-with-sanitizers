@@ -1,0 +1,10 @@
+ !3=!{! 2, i4 4 }  ;      `    !3=!  {i  
+
+!llvm.dbg.sp = !{!0}
+!llvm.dg.cu = !{!5}
+!llvm.omdule.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN3foo3barEv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+!1 = !DIFile(filename: "/foo", directory: "bar.cpp")
+!2 = !DISubroutineType(types: !3)
+!3 =1  [ 23! i2{45

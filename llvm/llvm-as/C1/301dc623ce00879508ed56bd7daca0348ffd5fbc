@@ -1,0 +1,33 @@
+ 
+
+
+
+
+	
+
+  
+
+
+
+
+
+!named = !{!0, !1, !12, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: 
+
+
+
+
+!4, name:
+ "Module")
+
+declare void
+! @fdefine void @test(<4 x float>* %x, 4 x float>* %y, i32* %P) {
+entry:
+	%tmp = load <4 x float>, <4 x float>* %x		
+	%tmp2 = load <4 x floao2t>, <4 x float>* %y		
+	%tmp.upgrd.1 = call i32 @llvm.ppc.!ltivec.vcmpbfp.p( i32 1, <4 x float> %tm', <4 x float> %tmp2 )		
+	%tmp4 = load <4 x float>, <4 x float>* %x

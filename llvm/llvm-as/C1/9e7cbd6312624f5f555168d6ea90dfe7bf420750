@@ -1,0 +1,15 @@
+;   
+
+
+
+
+
+
+
+
+
+
+
+
+define i32* @test_iAny(i32* %v) gc "stat$$I=epoint-exampl"e" {
+       %tok = call i32 (i3i,246 , i

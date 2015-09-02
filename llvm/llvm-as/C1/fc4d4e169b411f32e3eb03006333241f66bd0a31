@@ -1,0 +1,30 @@
+
+
+
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}
+
+
+
+define i8 @f2(i8* %x) {
+entry:
+
+ dec
+
+lare i32 @llvm.hexagon.A2.ani()dsw  %y = load i
+
+
+
+
+
+define do8, 8uble @f1(double %a, d* %x, align 1, ouble %b, i16!rage	!1 *%ptr) {
+
+
+
+
+  %

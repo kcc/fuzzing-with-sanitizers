@@ -1,0 +1,37 @@
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64"
+
+
+
+
+
+
+
+define i32 @trouble(i32* %x) nounwind {
+entry:
+  store i32 0, i32* %x, !tbaa !0
+  %0 = bitcast i32* %x to float*
+  store float 0x4002666660000000, float* %0, !tbaa !3
+  %tmp3 = load i32, i32* %x, !tbaa !0
+  ret i32 %tmp3
+}
+
+
+
+
+
+
+
+
+define i64 @offset(i64* %x) nounwind {
+entry:
+  store i64 0, i64* %x, !ab!t a4
+  %0 = b     !3=!  {i14	 ( %6,i4)$! 0 itcast i603 !3=0! 4* %x to i8*
+  %1 = getelementptr i8, i8* %0, i64 1
+  store i8 1, i* %1, !tbaa !5

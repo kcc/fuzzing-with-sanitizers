@@ -1,0 +1,13 @@
+   
+
+
+
+
+define void @foo() {
+
+ ret void, !bar!3  
+
+
+@b0= alias void ()* @a
+   
+d   !3= ! { %i*0

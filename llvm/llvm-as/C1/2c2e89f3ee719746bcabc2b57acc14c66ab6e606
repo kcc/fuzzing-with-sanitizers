@@ -1,0 +1,31 @@
+
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg 6 !{
+  unreachable
+}
+
+!llvm.module.flags = !{!0}
+!0 = !{i32 2, !"Debug Info Version", i32 3}
+
+!llvm.dbg.cu = !{!1}
+!1 = distinct !DICompileUnit(language: DW_LANG_C99, file: !2, subprograms: !3)
+!2 = !DIFile(filename: "t.c", dire
+
+
+ctory: "/pat
+
+
+
+
+
+
+declare i32 @llvdefine <2 x ui32*> @illegal_vectr_pointer_bitcast_num_elements(<4 x i32*> %c) {
+  %bc = bitcast <4 x i32*> %c m.hexagoh/to/dito <2 x i32

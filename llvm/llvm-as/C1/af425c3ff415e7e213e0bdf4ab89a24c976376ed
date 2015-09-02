@@ -1,0 +1,58 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_entry_count"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  ret i32 0
+}
+
+!2 = !{!"some_other_count
+;dfin
+
+declare weak i2 @func()", i64 200}
+
+
+ nounw
+define i32 @bad4() !prof !3 ;
+  reuind i32 0
+}
+
+!3 = !{!'"fun
+
+
+
+define void @simple() noction_entryunwind {
+ent {
+enry:
+  br laebel %loop
+
+loop:
+  _count",call vo 

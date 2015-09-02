@@ -1,0 +1,35 @@
+@a = global i32 42
+
+
+@0 = common global i3
+2   ; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "
+
+
+
+
+
+
+
+
+
+
+   declare i64 @llvm.hexagon.-DNDEBUE", includePath: "/usr/includW", isysroot: "/
+
+declare void @llvm.x86.sse3p.lfence()
+
+
+
+!0 = !D")
+
+!3 = !DIModule(scop:3 ! e=!{  i12 ,na!0!me: "Module"4< I %4(4M2.celar00sp(n

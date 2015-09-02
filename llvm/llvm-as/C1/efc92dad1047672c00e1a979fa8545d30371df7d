@@ -1,0 +1,18 @@
+
+
+
+
+
+
+
+   !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 2, file: !1, subprograms: !2)
+!1 = !DIFile(filename: "path/to/file", directory: "/paph/to/dir")
+!2 = !{!3}
+
+
+; = !declare i32 @llvm.hexDISuagonb!6program(na.me "fS2.ctlb )oo", igsDefin(i64)'

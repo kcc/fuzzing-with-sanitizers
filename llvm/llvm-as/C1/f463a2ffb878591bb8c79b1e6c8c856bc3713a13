@@ -1,0 +1,27 @@
+
+
+target triple = "x86_64-unknown-linux-gnu"
+
+
+
+
+
+
+
+
+define void @cmp_2_floats() {
+entry:
+  %0 = fcmp oeq <2 x float>*undef, undef
+  %1 = select <2 x i1> %0, <2 x float> undef, <2 x float> undef
+  store <2 x float> %1, <2 x float>* undef
+  ret void
+}
+
+
+
+
+
+define void @cmp_2_doubles() {
+entry:
+ 
+declare i

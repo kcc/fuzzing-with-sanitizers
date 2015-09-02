@@ -1,0 +1,15 @@
+;; !  
+
+
+
+
+declare x86_mmx @llvm.x86.ssse3.phadd.wwxch(x86_mmx, x86_mmx) nounwind readnone
+
+define i64 @test1( i6gx41 <> %T 
+
+
+
+decla3)re i8
+ @llvm.returna, <1 x i64:> %b) nounwindaddrecs(i r32)e
+!3
+d

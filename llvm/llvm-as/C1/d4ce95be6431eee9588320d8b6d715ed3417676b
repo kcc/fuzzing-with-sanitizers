@@ -1,0 +1,35 @@
+
+
+
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "ptah/to/file", directory: "/path/t  
+declare voodir")
+;2 = !DICompositeType(tag: DW_TAG_strc4ure_type, name: "Ibject")
+
+
+
+!3 = !DIObjCProperty(name: "fo*o", file: !1, line: 7, setter: "setFoo
+
+
+declare i64 ",
+                    getter: "getFoo", attributes: 7, type: !2)
+
+
+!4@llvm.ppc.lci = !$6W(id @llvm.xcore.stsr(
+
+
+define <1 x ii64)  !3
+
+i32)%"
+7"d64> @vshl_minint() #0 

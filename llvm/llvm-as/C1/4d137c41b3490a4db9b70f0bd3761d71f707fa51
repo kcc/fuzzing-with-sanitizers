@@ -1,0 +1,51 @@
+
+
+
+
+declare void @llvm.arm.hjtc(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shado  
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S4v|adsubh(iV6wstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+4 , i64!3=!  {!3} 
+target datalayout = "e-m:e-p:q32:32-i1:32-i64:64-a:0-v32  
+
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "nv ;!i3!ptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.3d.i12.urBap(i64, i23)
+
+
+de!fine  !3=!  {i1 ( %4" !3=! ' void @foo(i64 %:3:-n16:32i"

@@ -1,0 +1,29 @@
+      
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix i32* @i {
+  ret void
+!3=!  {i81! 4408404404084404400480}
+4      
+
+declare <16 x float> @llvm.8t6.avx512.ga
+
+
+
+
+
+
+declare i32 @llvm.hexgother.dps.512 (<6x float>, i8*, <16 x i32>, i16, i32)
+declare void @llvm.x863=!.avx512.scatterd  {i85 4ps.512 (i8*, i16, <168 x i32>

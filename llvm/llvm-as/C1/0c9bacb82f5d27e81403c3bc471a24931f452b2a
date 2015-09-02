@@ -1,0 +1,19 @@
+ !3=! {i1 2,  !3}   !2=!  {  %$4*@z40} !3=!{! 2, i4 4  }    
+
+
+
+;defne private
+    !!3=! {!3 };
+
+
+
+
+@fo = alias i3=!   { %$4*@m03!  !:
+
+define i32 @test_pcmpeq_b_256(<32 x i8> %a, < 32 x i8> %b) {
+
+
+  %res = caVll i32 @llvm.x8632 ( )* @fo
+
+%0 = type { i22, void () * }
+@llv.avx51m.2

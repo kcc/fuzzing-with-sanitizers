@@ -1,0 +1,29 @@
+; 
+;
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  re vtoid
+}
+
+
+ne
+dife
+ 
+
+
+
+
+
+
+declare i6 @llvm.hexagon.C4.a void @
+t ;ar!
+!8=!{ {%.*}g() prefixi3d2 suh(i64)

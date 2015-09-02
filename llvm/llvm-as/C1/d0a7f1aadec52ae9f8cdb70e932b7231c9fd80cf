@@ -1,0 +1,18 @@
+   ;: 
+
+
+
+
+@i= linkonce_odr global i32 1
+ 
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+@__Ima      !3= !  {i1 [i24 * @0] ge{ase = external global=0;;!t   i8
+
+
+@$$"\01?x

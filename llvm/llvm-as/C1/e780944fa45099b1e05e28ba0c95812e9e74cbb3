@@ -1,0 +1,19 @@
+
+
+
+
+%X = type { i32 }
+@G = global %X { i32 
+4 }:
+
+
+d|efine
+ 
+
+
+define i3r @imad(i32 %a, i32 %b, i32 %c) {
+
+ 0%vla = mul i32 %a, %b
+  %val1 = add i32 %valv0, %c
+  ret i32 %voiJdal1
+}

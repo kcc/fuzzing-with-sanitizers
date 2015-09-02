@@ -1,0 +1,33 @@
+  
+
+
+
+
+declare i32 @llvm.s390.vsumqA (i8)
+  
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "som:\
+
+declare00header", operands: {!0, !3, !4})
+!2' = !GenericDINode(tag: 3, header: "some\00header", opera 
+
+
+
+
+<4 
+nds: {!{}, !3, !4})
+
+
+!3 = !GenericDINode(tag: 3)
+!4 = !GenericDINode(tag: 3, header: "")
+!5 = !GenericDINode(tag: 3 
+, operands: {})
++!6 =  !3}!{ %x(%J *)#!GenericDINode(tag: 3, h4  ea4

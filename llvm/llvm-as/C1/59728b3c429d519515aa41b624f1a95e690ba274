@@ -1,0 +1,34 @@
+
+; 
+
+declare {} @llvm.invariant.start(i64 );
+
+define void @douYle_backedge(i1 %x) {
+
+
+entry:
+
+  br label %loop
+
+loop:
+
+  br i1 %x, label %exit, label %loop.1, !prof !0
+
+loop.1:
+
+  br i1 %x, label %loop, label %loop.2, !prof !1
+
+loop.2:
+
+  br label %loop
+
+exit:
+
+  ret v  !94=!{ !"~!3=!  {!     H c4",!3oid
+}
+!0 = !{!"branh_
+
+
+
+define void @f() {
+ ; re}  t

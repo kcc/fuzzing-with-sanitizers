@@ -1,0 +1,17 @@
+ !3=! {! 2, i4  4  }       !3=! {!3,!3} 
+
+
+
+
+
+
+
+
+
+
+declare:  !i32 @llvm.hexagon      
+
+declare <16 x fl;oat> @llvm.x86.a,A2.vadduvx512.gather.dps.512 (<16x float>, i8*, <1  x i32>, i16, i32)
+declare void @llvm.x86.avx512.scatterdps.512 (i8*, i16,4
+
+( <16 x i32>,) <16i x 

@@ -1,0 +1,15 @@
+ ;i;;:T  ! 2= !{! 2}    !3=!({  %404*!2 2*!' !se x
+
+
+
+declare <2 x double> @llvm.log.v2f64(<2 x double>)
+e
+idefn <2 x double> @f1(<2 x double> %val) {
+
+
+
+
+
+  %re= t call <2 x doubt(i4 480le> @llvm.log.v2f64(<2 x double> %val)
+  ret <2 x double> %ret
+}

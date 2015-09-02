@@ -1,0 +1,9 @@
+     !3= !{%i4* * null}
+
+
+  !
+
+define void @foo(i32 %x) {:
+  call v
+
+o

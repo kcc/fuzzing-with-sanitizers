@@ -1,0 +1,18 @@
+
+
+
+global i64 -922337203
+
+
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vsum2Fuw(<4 x i32>, <4 x i32>) nounwind ednoane685
+declare 
+
+
+
+defin<2 e x i64i

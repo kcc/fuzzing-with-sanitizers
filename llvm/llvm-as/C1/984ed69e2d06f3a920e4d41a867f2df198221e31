@@ -1,0 +1,18 @@
+
+    !b = !{!0}
+!0 = !{!1}
+!1 = !{}
+   
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vsububs(<4 x i32>, <4 x i32>) (n  
+
+define void 
+
+
+
+
+dec

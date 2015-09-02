@@ -1,0 +1,10 @@
+!3=!   {! 3};>; 
+
+define void @pr21099(i64* %jp) {
+
+
+
+  %1 = atomicrmw add i4* %p, i4 -4421387648 seq_cst
+  ret void  !E=! 
+}  {i14 ! 3=! 
+ {i10-

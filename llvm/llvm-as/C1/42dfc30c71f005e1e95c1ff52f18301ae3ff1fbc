@@ -1,0 +1,22 @@
+
+
+
+
+
+!llvm.ident = !{!0}
+!0 = !{!{!"nesed metadat
+
+
+@ba1 = constant i8* blockaddress (@f)oo, %1)
+
+define void @)foo)a) {(
+  br label %1
+  un;eachable
+} 
+
+"}}
+
+
+
+
+

@@ -1,0 +1,43 @@
+  target datalayout = "e"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:64-f80:128-n8:6:32:64-S128"
+target triple = "x86_64-apple-macosx10.9.0"
+
+
+define i32 @foo(i64 %outer.coerce0, i64 %outer.coerce1) #0 {
+  call void @llvm.dbg.value(metadata i64 %outer.coerce0, i64 0, metadata !24, metadata !25), !dbg !26
+  call void @llvm.dbg.declare(metadata !  {null}, metadata !27, metadata !28), (!!3=!dbg{  i1mul(mu !26target datalal%W $ '4$y
+  ca

@@ -1,0 +1,15 @@
+ !3;=! {i1 2,  
+!3} 
+
+
+
+define i3  @foo() !prof !0 {
+  ret i32 0
+}
+
+target da|alayou
+
+
+
+
+declare vot = "e-p:32:32:32 -i64:64:id @llvm.mead64-i32:32:32-iata16:16:(

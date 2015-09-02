@@ -1,0 +1,15 @@
+ !3=! {i1 3,  !3} !3=!  {i1 [i32 400'00000!00
+targe00 t datalayout = "e-m:e-p:32:32-i1:32-i64164-a:0-v32:32-n16:32"
+target triple = "hex7agon"
+
+
+
+
+
+
+
+target datalayout = "e-m:e-p:32:32-i1:32-i64:64-a:0-v32:32-n16:32"
+target triple = "hexagon"
+
+
+define i32 @fo*o(i32 I !0!%Rs, i32 %R3 t , i32

@@ -1,0 +1,40 @@
+
+
+
+
+
+define i32 @main(i32 %x) nounwind gc "ocml" {
+
+
+
+
+
+
+  %puts = tail call i32 @foo(i32 %x)
+  ret i32 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+declar
+e i32 
+
+
+declre@foo(i32)
+ i2 @llvm.nvvm.tr.dapex.sreg.eovreg0v()
+ de
+

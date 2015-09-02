@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+ 
+%s3 =type %.
+
+
+
+
+ 
+
+!named = !{!0, !1, !2}
+!0 = !DIBasicType(name: "int", size: 3, align: 3, encoding: DW_ATE_signed)
+!10 = !{!0}!2 = !%DICo
+
+
+
+@X = linkonce glmpoo

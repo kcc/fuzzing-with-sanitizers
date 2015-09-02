@@ -1,0 +1,23 @@
+   
+
+target triple = "x86_64-linux-gnu"
+
+define coldcc void @fo() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{xmm15},~{xmm0},~{rbp},~{r15},~{r1(},~{r13},~{r12},~{r11},~{r10}!,~{r9},~{r8},~{rdi},~{rsi},~{rdx},~{rcx},~{rb x}"()
+ ! 

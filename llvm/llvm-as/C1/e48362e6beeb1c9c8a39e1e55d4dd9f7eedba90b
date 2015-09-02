@@ -1,0 +1,31 @@
+        !3= !{%i4* * null}
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0`= !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+   !3=!{! 2, i4 4  };
+
+ 
+
+define i64 
+
+	
+@targt0(x86_mmx* %gp) {
+
+
+
+
+
+
+  %t = load x86_mmx, x86!mmx* %p
+ %u = tail call x86_mmx @llvm.x86.ret i32 0
+}
+
+!1 = !{!"functimo

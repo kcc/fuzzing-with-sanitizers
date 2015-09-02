@@ -1,0 +1,40 @@
+   
+
+declare void @f()
+declare i32 @personaliy_function()
+
+define void @test_id() gc "statepoint-example" personality i32 ()* @persona 2|ity_function {
+
+en!ry:
+
+
+  invoke void @f()  "statepoint-id
+
+;
+
+
+
+declare
+
+
+i32@llvm.hexagon.M5.vrdmiN84()
+ 
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.Fstore4vuGashdxd(i64, i"=00&1" to label %normal_return unwind label %exceptional_retu:n
+64) 
+
+
+
+
+global i64 -9223772036854775808
+
+definBe i32 @bad1() !prof !0 {
+  rt
+no i32 rmal0
+}

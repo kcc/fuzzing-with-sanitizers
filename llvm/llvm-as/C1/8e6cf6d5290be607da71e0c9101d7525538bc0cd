@@ -1,0 +1,14 @@
+   !2=!  {  %$4*@z40}    !3=!  {  %$4*@o03} 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 =distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/to/tir")
+!2 = !DICompositeType(t!3= !ag: DW_TAG_structure_type, name: "Object")
+
+
+
+!3 = 0{!DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+   i : `                  getter: "g 3 et*Foo",f 

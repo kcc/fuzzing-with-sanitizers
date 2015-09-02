@@ -1,0 +1,16 @@
+ 
+	
+ !3=!  { !3}
+!llvm.module.flags = !{!0}  
+
+
+define void@foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, 
+
+define i32 @test_!whatevrx86_tbm_bextri_3i(2u32 %a) nounwind readnone {
+entry:e !0, !w
+  
+  
+(  
+  %0 = tahateivelr

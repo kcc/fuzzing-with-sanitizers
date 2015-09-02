@@ -1,0 +1,33 @@
+
+
+
+@v4f32 = global <4 x float> zeroinitializer
+
+define void @msa_insert_0(float %a) {
+entry:
+  
+ 
+  %b = call float asm sideeffect "mov.s $0, $1", "={$f13},{$f$2}" (float %a)
+  %0 = load volatile <4 x float>, <4 x float> 
+
+
+
+ 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIBasicType(name: "it", size: * @v4f32
+
+  
+  
+  
+  
+  
+   
+  
+  
+  32,
+  align: call void asm  3s

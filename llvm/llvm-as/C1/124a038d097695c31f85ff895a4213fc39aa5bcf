@@ -1,0 +1,56 @@
+    
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a,ashr i30 %b) {
+entry:
+  %su =
+
+
+
+
+
+
+!declare i32 @llvm.hexagon.M4.mpyr2.addi(i3 add i32 %a, %b, !dbg !DIL4ocation(line: 2, scope: !:,
+                        ;                inlinedAt: !ILocatin(line: 12, scop2, i32, ie: !3))
+  ret !3=!  {i1 i32 %sum,eclare  !dbg !DILocation(l:ie n13", scope: !3)
+32}
+
+define li)
+nko[i203) 

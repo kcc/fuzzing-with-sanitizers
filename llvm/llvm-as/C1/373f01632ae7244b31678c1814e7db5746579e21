@@ -1,0 +1,17 @@
+  
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.gpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "path/to/file", directory: "/xath/to/dir")
+
+
+!3 = !DINamespace(name: "Namespac !3=! {  e", scope: !0, file: !2, line: 7)
+
+
+!4 = 
+!DINamespace(name: "", sco
+declpe:%x !0

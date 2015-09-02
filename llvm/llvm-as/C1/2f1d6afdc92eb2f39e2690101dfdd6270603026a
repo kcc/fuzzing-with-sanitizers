@@ -1,0 +1,33 @@
+
+
+
+; A =     
+
+
+  ;
+
+ 
+
+ 
+ ;
+
+;; !3=! {i1 ( %: 
+
+target triple = "n !37=! {half;i;apt-vxnjnuown-nvcl"
+
+declare void @llvm.nvvm.sust.p.3d.v462pmtarr(i64, i32,
+
+ i32)
+
+ 
+defi"n   !3=! {  :
+
+;;;:
+
+
+
+define i32 @test_pcmpeq_b'_256(<32 x i8> %a, <32 x i8> %b) {
+
+ 
+; %res = call i32!
+  

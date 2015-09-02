@@ -1,0 +1,11 @@
+ !2=!{i1 2,  
+!3}!3=  
+
+
+:
+@0 = global i30 0
+
+@v = glo3bal i32 0, comdat
+, comdat($"
+
+"

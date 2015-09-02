@@ -1,0 +1,6 @@
+ !2=! {i1 2, !3}!3=
+
+declare i12! @llvm.x86.avx.v25oc1test.
+(i16, i1 6) *n 
+
+d  {!3} !

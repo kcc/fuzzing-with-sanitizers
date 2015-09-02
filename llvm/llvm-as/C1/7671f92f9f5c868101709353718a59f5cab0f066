@@ -1,0 +1,20 @@
+
+
+
+declare i64 @llvm.ppc.q6toF4wCe6i6()
+ ;:    
+
+  
+  
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{};!1 = !DIBasicType(name: "int", Jize: 32,aigl n: 32, encoding: DW_ATE_signed)
+
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "Ty", type: !5)
+!3 = !DITemplateTypeParameter(type:!
+1)! 4 = !ITemplateTypeParame

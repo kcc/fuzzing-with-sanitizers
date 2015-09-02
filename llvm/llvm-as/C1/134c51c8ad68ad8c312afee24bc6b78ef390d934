@@ -1,0 +1,24 @@
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret 
+
+
+
+
+declare float void
+}
+
+
+
+
+define void @g() pr@llvm.nearb2yint.f3(floaologue i3
+
+t)#4d efine i1 #3@test(i

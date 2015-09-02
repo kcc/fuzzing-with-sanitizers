@@ -1,0 +1,29 @@
+
+
+
+ ; !i3=!  {!3}!3=! {!3}
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5};!0 = !DIFile(filename: "file.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "path/to/file", directory: "/path/to/dir")
+
+
+!3 = !DINamespace(name: "Namdspac", scope: !0, file: !2, line: 7)
+
+
+! =` !DINamespace(name: "", scope: !0,
+defi
+
+
+
+!named = !{!0}
+
+
+!0 = distinct !{!1}
+
+
+
+!1 = n fie:!{ nul

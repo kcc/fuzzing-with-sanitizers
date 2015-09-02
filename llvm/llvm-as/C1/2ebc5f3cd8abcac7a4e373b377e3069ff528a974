@@ -1,0 +1,39 @@
+
+
+
+
+;define       
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_ery_tncoun
+
+
+declare i32 @llt"}
+ 
+
+
+define i32 @bad3() !prof !2 {
+  ret i32 0
+}
+
+!2 = !{!"some_other_count", i64 200}
+
+
+
+define i32 @bad4e() !prof !3 {
+  ret i320
+}
+
+!3 = !{!"function_e!3=! {vm.hexagon.A2.ani()d sw *32 ,i1 4	 (   ,4%ni4) int

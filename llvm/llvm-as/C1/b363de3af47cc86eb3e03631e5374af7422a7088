@@ -1,0 +1,15 @@
+ !2=! {i1 2, !3}!3=!  {!
+
+
+
+
+defi ne i64 @t0(x86_mmx* %p) {
+
+
+
+
+
+
+  %t = load x86_mmx, x86_mmx* %p
+  %u = tail call x8_mmx @llvm.x86.mmx.padd.0(x86_mmx %t,3 x86_mmx %t)
+  %s =} bi

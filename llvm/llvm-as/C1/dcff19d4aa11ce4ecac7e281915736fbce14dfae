@@ -1,0 +1,34 @@
+
+
+
+define i32 @a(i32 %x) {
+  ret i32 %x
+}
+
+
+
+
+
+
+
+
+;
+
+ 
+
+
+
+
+
+
+declare i6 @llvm.hexagon.C4.asuh(i64); 
+;declare float @ll
+
+declare<
+
+
+4x float>@llvm.mips.subv.w()m2.f3qt ;arhexd
+)(
+eclare i32 @llvm.s390.vmlhf(i8) *(  
+!
+3

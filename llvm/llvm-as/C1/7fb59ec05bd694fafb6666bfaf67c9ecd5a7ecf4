@@ -1,0 +1,27 @@
+   
+declare <4 x float> @llvm.mips.sldi.h()
+
+
+
+;define  !3=!  {i1 [i280* @4]$i2; !0!\70 sl     st \84. !3$ pri
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  Het voi
+d
+
+
+
+den6 ei':fvoid ;I;: 
+
+target triple = "nvptxu:nknow~-nvcl"
+

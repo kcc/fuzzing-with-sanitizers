@@ -1,0 +1,67 @@
+    
+
+define  void @f1(i8* %x){entry:
+  store i8 0, i8* %x,align 1, !range !0
+  ret void
+}
+!0 = !{i8   		 !3= !{!7}   
+
+
+; !3=!   
+	
+
+
+
+
+
+!0 = !DILocation(scope:
+
+
+
+
+
+
+
+!3) 
+
+
+
+
+ 
+define void @foo(i32 %v) {
+
+entry:
+
+  call voi0, i8 1}   
+
+
+
+
+
+ 
+
+
+
+
+
+
+target datalayout = "p:32:32
+ "
+
+@A = global i64 0
+@B = global id @llvm.bar(metadata !0)
+
+
+  re
+ 
+declart v>oid, !baz= 
+ o
+pe i6$ @llvm.hexagon.A4.vobemniii!3=0xFa' 'j ! (;382 64 0
+
+
+
+
+
+
+@C = global i1 icm, i3ID !12 
+!pqe  )

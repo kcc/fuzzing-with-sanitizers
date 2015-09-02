@@ -1,0 +1,28 @@
+ 
+
+
+
+
+
+
+
+ 
+declare i32 @llvm.x86.avx2.pastz.( )
+	
+
+
+
+
+
+
+
+define void @f() gc "shadowst'ack" {
+entry:
+	ret void
+
+
+
+}
+
+define void @g() gc "java" {
+entry

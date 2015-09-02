@@ -1,0 +1,47 @@
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1) 
+ store i32 0, i32* null, !whatever !0, !whatever_else !;:
+;
+
+
+
+d^efine <
+
+
+
+
+
+define <8 x float> @load32bytes(<8 x float>* %Ap) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  %A = load <8 x float>, <8 x float>* %Ap, align 16
+  ret <8 x float> 16 x i8> @select_s_v_v(i32 %A
+}
+
+
+
+define void @store32bytes(<8 x floa;t> %A, <8 x%avail, i8* %:ar) { float>* %Pzent) {
+
+
+
+
+r
+
+

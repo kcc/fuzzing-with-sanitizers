@@ -1,0 +1,45 @@
+     !3=! {!2 , i4  4  } 
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+
+
+
+
+
+target datalayout = "e-p:30:32:32i1:8:32-i8:8:32-i16:16:32-i32:32:32
+
+
+D
+
+
+
+
+
+
+
+
+
+declare <16e p float> @llvm.x86.avx!512.gatheR.d51.p (2s<16 x f!loat>, i8*, <-i64:3     !2=! {!3,!3} 
+
+declar i32 @llvm.p60.read.t2)32-f32:32:32-f64:32:32-v64:32:64-v128:32:128-a0:0:2-n3  "
+targe
+declare i32 @llvm.s390.vagi~(i8) *
+!
+globat trple idi)T.x   (=l )"

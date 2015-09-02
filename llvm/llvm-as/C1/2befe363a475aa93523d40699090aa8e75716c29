@@ -1,0 +1,17 @@
+!3=! {!3 }    
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "som:\00header", operands: {!0, !3, !4})
+!2 = !GenericDINode(tag: 3, headre: "some\00header"!, operands: {!{}, !3, !4})
+P
+!3 = !GenericDINode(tag: 3)
+!4 = !GenericDI ode(tag: 3, header: "")
+!5 =!GenericDINode(tag: 3, operands: {})
+!6 =  !3}!{ %x(%J *)#!GenericDINode(tag:  6=!{ !"3!, h43g  !ea4

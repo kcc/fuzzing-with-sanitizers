@@ -1,0 +1,24 @@
+    
+
+define void @bar() {
+entry:
+        call void asm sideeffect "
+
+;2
+
+
+
+
+!0 = !DILexicalBloc", "~{d: !3=!  {i140fcprmflag},~{fpsr},~{flags}"( )
+  
+
+
+%myStruct = type { i64 , i8,kF i32 }
+
+@var8 = glob    un   eret val i8 0
+@var32 = globile  ()al i32 0
+@va!r64 = gloabl i64Xoi 0
+@vadr128 = 
+glob}
+al i128 0
+@va

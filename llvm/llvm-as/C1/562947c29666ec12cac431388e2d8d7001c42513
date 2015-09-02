@@ -1,0 +1,17 @@
+ 
+	%union.x = type { i64 }
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+
+
+
+
+glob'4l i32 3X6 70016
+
+
+
+@x = global !0xMDfE;xPi64 mk! 8 gul'%s3 =t

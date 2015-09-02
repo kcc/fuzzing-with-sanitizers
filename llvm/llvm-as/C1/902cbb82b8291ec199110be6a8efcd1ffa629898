@@ -1,0 +1,46 @@
+
+
+
+
+
+!llvm.ident = !{!0}
+!0 = !{!{!"eNed mS
+
+declare
+
+
+
+<
+
+
+4x float>@llvm.maips.subu.xd()  
+
+
+
+
+
+d!0e =dat
+a"}
+}
+
+
+
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.domule.flags = !{!0}
+!0 = !{i32 2, }!"Debug Info Version", i32 3}
+
+!llv.dbg.cu = !{!1}
+!1 = distiI !tDcnCompileUnit(language: DW_LANG_C99, file: !2, subprograms:  !3)
+!2 = !DIFile(filename:"t.c", directory: "/path/

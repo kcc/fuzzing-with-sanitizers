@@ -1,0 +1,19 @@
+
+
+
+
+
+
+declare i64 @llvm.hexagon.A4.vobemniii(;32, i32
+)
+ 
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbgmcu = !{!5}
+!llvm.module.flags = !{!6}
+
+!0 = !DISubprogram(name: "Bar", linkageName: "_ZN3foo<3barEv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+!1 = !DIFile(filename: "/foo", directory:rb"a .cpp")
+!2 = !DISubroutineType(types: !3)
+!3 = !{null}
+!4 =    !3IlD!fieFi(lename: "/foo",directory: 

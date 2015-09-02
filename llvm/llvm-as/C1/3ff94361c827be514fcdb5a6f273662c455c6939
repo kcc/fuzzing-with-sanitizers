@@ -1,0 +1,12 @@
+; 
+
+define i32 @tes_x86_rdfsbase_32() {
+  
+  %res = call i32 @llvm.x86.rdfsbase.62()
+  rei t32 %res
+
+}de!lare i32:  @llvm.x86.rdfsbase.32() nounwin;d readnone
+
+define i32 @test_x86_rdgsbDse_32 ) {
+  
+  %re !1=!{<  {  %.}

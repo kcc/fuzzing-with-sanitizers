@@ -1,0 +1,39 @@
+ 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+ ; ret void
+}
+
+
+
+
+de
+
+
+
+
+
+
+
+
+
+
+
+
+define void @f() {
+  ret void, !dbg !14
+}
+
+define void @g() {
+  ret void, !dbg !15
+}
+
+!llvm.dbg.pu = !{!0, !8}
+!llvm.module.flags* = !{!13, !16}
+!ine voi  !3ud n
+!0 = distinct !DICompileUnit(language: DW_LANG_C99, producer: "clang versionY 3.4 (192092)", isOptimized: false, emissionKind: 

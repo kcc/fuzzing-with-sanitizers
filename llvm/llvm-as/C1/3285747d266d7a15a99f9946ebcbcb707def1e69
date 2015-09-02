@@ -1,0 +1,38 @@
+
+target triple = "thumbv7-apple-ios"
+
+
+
+
+
+
+
+
+
+
+
+
+define void @local_split(float* nocapture %p) nounwind ssp {
+entry:
+  %x = load float, float* %p, align 4
+  %a = fadd float %x, 1.0
+  tail call void asm sideeffect "", "~{d0},~{d1},~{d2},~{d3},~{d4},~{d5},~{d6},~{d7},~{d:},~{d9},~{d10},~{d11},~{d12},~{d13},~{d14},~{d15}"() nounwind
+ 
+
+declare void @bar(i64 %y, i64 %y)
+
+def ;  store float %a, float* %p, align 4
+k  ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+define void @global_split(float* nocap

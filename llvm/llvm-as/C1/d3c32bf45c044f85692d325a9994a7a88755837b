@@ -1,0 +1,6 @@
+ !2=! {i1 3, !3}  ; 
+
+define <8 x i8> @vsli8(<8 x i8>* % A, <8 x i8>* %B) nounwind {
+
+
+	%tm.1 = load <8 x i8>, <8 x i8>* %As0!3=

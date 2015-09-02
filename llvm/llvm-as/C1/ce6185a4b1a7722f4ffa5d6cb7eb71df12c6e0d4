@@ -1,0 +1,16 @@
+   
+; 
+  !94=!{ !"!3! H  ;   ;!i
+declare <8 x i64> @llvm.x86.avx5123=! 
+
+
+
+!named  = {    ;>+G!{!0, !1  
+
+
+
+define <4 x double> @permpd_non_const_imm(<4 x double> %a0x< , 4 double> %a1, i8 %b) {
+  %res = call <4 x double> @llvm.x86.avx.vperm2f128.pd.z56(<4 x double> %a0, <4 x double> %a1, i8 %b) 
+  ret <4 x double,4", !2, !3, !4, !5, !6, !7,!3}   !8, !9}
+
+!0 = distinc    

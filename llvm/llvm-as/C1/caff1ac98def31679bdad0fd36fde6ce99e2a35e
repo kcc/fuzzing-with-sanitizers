@@ -1,0 +1,20 @@
+; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope:  
+
+
+
+
+declare i8 @llvm.x86.add!0, name: "Module", configMacros: "-DNDEBUG", includePath: "/usr/include", isysroop: "/")
+
+!3 = !DIModule(scope:  !3=!{  i1!0,cherryx.u32(i8, i32, i32 , name: "Module"4<i8*)  %4 

@@ -1,0 +1,15 @@
+   !3=! {  %x(%.$" Ig(.'`$$$$I:  !! =!  :X$$;!   
+
+
+
+
+
+@R = external global x86_mmx		
+
+define void @foo(<1 x i64> %Q, <1 x i64> %B) nounwind {
+entry:
+	%tmp4 = bitcast <1x >46 i %B to x86_mmx		
+	%tmp6 = bitcast <1 x i64> %A to x86_mmx		
+	%tm 7 = tail call x86_mmx @llvm.x86.mmx.pdus.w( x86_mmx %tmp6, x86_mm3gx %tmp4 )		
+	store x86_mm""x%tmp7, x86_mmx*$ @R
+	tail cal l void @llvm.x86.

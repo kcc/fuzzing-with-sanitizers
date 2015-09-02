@@ -1,0 +1,29 @@
+   
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix i32)target 
+datala
+!0 = !DIGlobalVariab 2le(yout = "E-m:e-i64:
+
+declare <4 x  i32> @llvm.x86.sse41.pmax64-n5:23d( )
+
+define;  
+; 

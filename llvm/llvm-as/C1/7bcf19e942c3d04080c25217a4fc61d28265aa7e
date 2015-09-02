@@ -1,0 +1,25 @@
+   
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.value(metadata i32* %s, i64 0, metadata !DILocalVariable(scope: !1), metadata !"
+
+
+!0 = !DILocalVariable((scop-:  "), !dbg !DILocation(scope: !1)
+  0ret void
+}
+
+declare vo 
+
+
+define void @test_cmpxchg_id @llvm.dbg.value(m !3)   etadata, i64, metadata, metadata)
+
+!llvm.mweak(i32 *%addr, i32 %esired, i32 %new) {
+
+
+ %pair = cmpxchg odule.flweak i32* %addr, i32 %desired, ags = !={!0i3}
+!)0 = !{i32 2, ;!"Debu

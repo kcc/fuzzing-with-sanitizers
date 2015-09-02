@@ -1,0 +1,28 @@
+  
+
+
+
+
+
+
+
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{!8},~{d},~{d11},~{d13}'"() #1
+  targe !tda3t

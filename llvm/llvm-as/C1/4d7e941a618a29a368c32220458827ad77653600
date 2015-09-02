@@ -1,0 +1,29 @@
+
+
+@0 = common global i3
+2
+
+
+ global i30 6; 
+ 
+
+
+
+
+
+
+
+
+
+
+
+@A = global i32 5		
+@R = global i32 6		
+
+define i32 @main() {
+	%A = or i1 false, icmp slt (i32* @A, i32* @B)		
+	
+
+
+
+

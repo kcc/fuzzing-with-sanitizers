@@ -1,0 +1,35 @@
+!3=! {!3 }   
+
+
+
+
+
+
+
+
+define void @f() gc "shadow)tack" {
+netry:
+	ret void
+}
+
+define void @g() gc "java" {e!nt
+
+ry
+
+
+
+
+
+
+%struct.te
+
+
+
+define double @test_fp16_to_fp64(st_struct = type { i32,,i8, i64 }
+G
+
+define void @foo(%struct.test_struct* noalias nocapture sreti32 %a ){
+entry:
+  %0 = trunc i32 %a tb i16
+  %1 = c %agg.result, i32 %a) #0 {
+entrya

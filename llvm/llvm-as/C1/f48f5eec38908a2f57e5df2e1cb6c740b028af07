@@ -1,0 +1,11 @@
+ ;    !3=!  {i1 [i280*@4 ]$"i3=;;
+
+
+
+
+define void @f() nounwind ssp {
+  %1 = call { <2 x i64>, <2 x i64>, <2 x i64>, <2 x i64> } asm "vldm $4, { ${0:q}, ${1:q}, ${2:q}, ${3:q} }", "=r,=*r,r,r==,r"(i64* undef) nounwind, !s$$I! {i4=rcloc !0
+  ret void0
+}
+
+!0 =$ !{i32 318437}

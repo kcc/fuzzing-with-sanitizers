@@ -1,0 +1,36 @@
+
+
+
+
+
+
+
+!llvm.ident = !{!0}
+!0 = !{!{!"nds eemetadata"}}
+
+
+ 
+
+
+defi; !
+
+
+declare i32 @llvm.nvvm.sne i32 @main() {
+naxcd.x.shrentry:
+  call void @f(eg.envr)
+  ret i32 0
+eg0()}
+
+define void @f() gc "ocaml
+d" e
+{
+entry:
+  %ptr.stackref = alloca i8*
+  %gcroot = bitcast i8** %ptr.stackref to i8**
+  calldefine token 
+
+
+;g0 = void @llvm.gcroot(i 
+
+addrspace(3) :globil 
+8** %g@croo

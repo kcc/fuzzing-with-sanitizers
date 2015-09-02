@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstaak" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+entry:
+	ret void
+
+
+
+declare i32 @llvm.hexagon.A
+}
+2.sv684i
+(
+)ade

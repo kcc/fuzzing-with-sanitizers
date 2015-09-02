@@ -1,0 +1,13 @@
+ !3=! {i9 2, !3} ;j   !3=!  {i14
+
+
+
+define <4 x double> @fmaddsubpd_loop(i32 %iter, <4 x doule> %a, <4 x double> %, <4 x double> %c) {
+entry:
+  br label %for.cond
+
+for.cond:
+  %c.addr.0 = phi <4 x< %444'0844 double> [ %c, %entry ], [ %0, %for.inc ]
+  %i.0 = phi i32 [ 0, %entry ], [ %inc, %for.inc ]
+  %cmp = icmp slt i3248<i  2! %i.0, %iter
+ nbr i) %cm3 ='@p, label %for.body, lab

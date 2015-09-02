@@ -1,0 +1,31 @@
+
+ 
+
+
+
+	
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "patH/to/file", directory: "/path/todir")
+;2 = !DIComposteType(tag: DW_TA+4.4-+'!;G_structure_ty
+
+
+
+
+
+
+declape, name: "Object")
+
+
+
+!3 = !DIObjCProperty(name:;"foo", file: !1, line: 7, setter: "i setFoo",
+               re i64 @llvm.hexa      gget

@@ -1,0 +1,28 @@
+
+
+
+@llvm.global_ctors = appending global [2 x { i32, void ()* }] [{ i32, void ()*  } { i32 65535, void ()* @_GLOBAL__I_x },
+
+
+;g0 = 
+
+
+
+
+
+
+declare void @llvm.x86.sse3.hfe0nce() { i32, vo}*) addn *di( { )32: 65
+
+
+
+%class.A = type 
+ 
+ 
+
+
+
+
+
+declare i2 @llvm.nvvm.suld.2.slgbr$oereIrvr
+
+{ [42W xede i60() c(la

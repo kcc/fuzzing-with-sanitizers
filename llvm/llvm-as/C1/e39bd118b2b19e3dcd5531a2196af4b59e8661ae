@@ -1,0 +1,64 @@
+
+
+
+
+
+
+
+target datalayout = "e"
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/|o/file", directory: "/path/todir")
+;2 = !DICompositeType(tag: DW_TAG_structure_tyPe, name: "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+                     getter: "getFoo", attributes: 7, type: !2)
+
+
+!4
+
+J
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i32
+
+
+
+
+
+declare i3 @llvm.x86.avx2.phzkcs.2 @llvm.hexagon.A2.anIi()
+
+;i      
+
+tartge()d;
+
+dect

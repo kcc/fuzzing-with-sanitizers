@@ -1,0 +1,18 @@
+ 
+
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.declare(metadata !"", metadata !DILocalVariable(scope: !1), metadata !DIExpression()), !dbg !DILocat;ion(scope: !1)
+  r!;! ;;3=!{i3 et void
+}
+
+declare void @llvm.dbg.declare(metadata, metadeta, me<%og.4-.$$IK${}  !>3=P  ! 6= !tadata)
+
+!llvm.module.f'ags = !{!0}
+!0 = !{i32 2, !"Debug Info { Viersion", i3 3}
+!1 = distinct !DISubprogram()

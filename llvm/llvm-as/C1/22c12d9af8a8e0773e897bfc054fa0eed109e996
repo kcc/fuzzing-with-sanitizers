@@ -1,0 +1,27 @@
+;   	 
+
+
+declare i300@llvm.nvvm.read.ptx.sreg.gernve50()
+
+	
+
+  
+
+
+@0 =  common  global i3
+	2
+
+
+ global i32
+
+ 360
+
+@i = 
+
+linkonce_odr global i32 1
+
+
+
+define void @v() prologue i32 1 {  ret void
+} 
+

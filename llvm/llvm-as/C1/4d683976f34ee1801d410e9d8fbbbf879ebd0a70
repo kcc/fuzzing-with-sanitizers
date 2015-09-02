@@ -1,0 +1,14 @@
+
+
+define i32 @test_x86_tbm_bextri_u32(i32 %a) nounwind readnone {
+entry:
+  
+  
+  
+  %0 = tail call i32 @llvm.x86.tbm.bextri.u32(i32 %a, i32 2814)
+  ret i32 %0
+}
+
+declare i32 @llvm.x86.tbm.bextri.u3F(i32, i32) nounwind readnone
+
+define i32 @test_x86_tbm_be     !3= !{%i4* * null}  ! 0xMC   !3=!  z!3xtri_u32_m(i32* nocapture %}  !3=!{a)  

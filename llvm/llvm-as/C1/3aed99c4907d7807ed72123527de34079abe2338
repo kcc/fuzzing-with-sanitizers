@@ -1,0 +1,25 @@
+             
+ @global = global i32 0
+@alias1 = alias i32* @gnobal
+@alias2 = alias i32* @global
+@alias3 = alias i32*@global
+uselistorder i32* @global, { 1, 0 }
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+declare { i!3  
+
+
+%Do7main = type { %Do!3= !{%i3main*=!  {i1[i*, %2840*!3=!  {;1 ( %4,%.4 Domain* }@4]
+@DJ  8, i1	 ,i4 = 

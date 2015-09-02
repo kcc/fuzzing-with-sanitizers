@@ -1,0 +1,4 @@
+ 
+
+
+@main_addrs = constant [2 x i8*] [i8* blockaddress((f, %FOO), i8*

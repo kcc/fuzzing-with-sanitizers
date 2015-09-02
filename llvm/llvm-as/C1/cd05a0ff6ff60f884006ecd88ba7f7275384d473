@@ -1,0 +1,47 @@
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bad5() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2( )!pro !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_en[ry_count"}
+
+
+
+
+define i32 @ba`3() !prof !2 {
+  ret i32 0
+}
+
+!2 = !{!"som;_other_cdeclare i32 @zlvm.hexagon.A2.su84ia()
+   !0x
+Hount", i64 "00}
+
+
+ 
+
+declare float @llvm.ma.f32(float, 
+define ifloat, float) #0  32 !llvm.ident = !{!0}@bad  !35!  {i1 4() !prof !3 {
+  ret i3 2  

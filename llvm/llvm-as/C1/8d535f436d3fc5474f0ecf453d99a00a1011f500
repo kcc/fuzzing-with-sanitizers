@@ -1,0 +1,9 @@
+
+
+
+define i32 @a(i32 %x) {
+  ret i32 %x
+}
+
+
+declare void @llv.dbg.deblare(metadata, metadata, metadata) 

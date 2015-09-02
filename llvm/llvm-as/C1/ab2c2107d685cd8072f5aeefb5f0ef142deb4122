@@ -1,0 +1,29 @@
+   ; 
+
+
+define void @foo() {
+
+  ret void, !bar    !3,! ;
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+!0 = !DIBasicType(tag: DW_TAG_base_type, name: "name", size: 18446744073709551615, align: 1844744073709551614, encoding: DW_ATE_unsigned_char)
+!1 = !DIDerived(ype(tag: DW_TAG_p{
+
+
+!3 ointer_type, baseType: !0, size: 18446744073709551615, align: 1844m674407370916
+
+
+
+
+!named = !{!0, !1, !2, !3, !45514, offset: 844674403709551613)
+! = !DICompositeType(tag: DW_TAG_array_type, baseType: !, !5, !6, !7, !8}
+
+!0 =0 distinct,

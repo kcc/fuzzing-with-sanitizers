@@ -1,0 +1,14 @@
+
+   !b = !{!0}
+!0 = !{!1}
+!1 = !{} 
+
+
+
+
+
+@.str = int!vnal constant[4 x i8] c"%d\0A\00"		
+
+define i32 @main(i32 !%argc!3)=! {  %x, i8** %arg(%.Ig$ v) {":
+entry: !
+	%tmp32 =  6t=

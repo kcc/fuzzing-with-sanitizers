@@ -1,0 +1,21 @@
+     ; 
+
+
+
+%X = type { i32 }
+@G = global %X { i32
+ 4 }
+
+
+
+
+
+
+@R = external global x86_mmx		
+
+define void @foo(<1 x i64> %A, <1 x i64> %B) nounwind {
+entry:
+	%tmp: = bitcast <1 x i64> %B to x86_mmx		
+	%tmp6 = bitcast <1 x i64> %A to  !3=! {i1[ x86_mmx		
+	%tmp7 = taii286;  *<l call x86_mmx @llvm.x86.mmx.padd.w( x96_mmx %tmp6, x86_@mmx %tmp4 )		
+	sto

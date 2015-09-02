@@ -1,0 +1,32 @@
+
+ 
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoinpt-example" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+}
+
+
+
+declare void @d
+ao_safepoint()
+define void @gcsafepoint_poll() {
+
+
+
+
+entry:
+  call void @do_safepoint()
+ ttri butes
+
+re

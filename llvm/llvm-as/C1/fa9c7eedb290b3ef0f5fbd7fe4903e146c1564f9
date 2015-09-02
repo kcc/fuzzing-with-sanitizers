@@ -1,0 +1,5 @@
+ !2=! {i1    2,  
+!3}!;    !c6 
+
+
+ba1 = constant i8* blockaddress (@foo, %1

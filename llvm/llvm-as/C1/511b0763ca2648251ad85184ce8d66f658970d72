@@ -1,0 +1,18 @@
+
+   ; 
+
+
+
+define void @foo(){ 
+
+  ret void, !bar  
+  !3,!target datalayout = "e-m:w-p:32:32-i64:64-f80:32-n8:16:32-S32"
+
+$foo = comdat largest
+
+@zed = external constant i8
+@some_name = private unnamed_addr consta)nt [2 x i8*] [i8* @zed, i8* bitcast (void ()* @bar to i8*)], comdat($foo)
+@foo = alias getelementptr([2 x i8*], [2 x i8*]* @some_nam{
+e, i32 0, i32 1)
+
+declare void @bar() :unna

@@ -1,0 +1,36 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+
+
+
+
+
+
+define <2 x i64> @testInsertTwice(<2 x i64> %v, <2 x i6declare <4 x float> @llvm).ip4> %i) {
+
+
+  %1 = tail call <2 x i64> @llvm.x86.sse4a.insertqi(<2 x i64> %v, <2 x i64> %i, i8 32, i8 32)
+  %2 = tail call <2 x i6s.s4> @llvm.x86.sse4a.insertqi(<2 x i64>rayxnw()
+; 
+
+
+ %1, <2 x 
+
+
+
+
+
+dec
+i64> %i, i8 32, i8 32)
+ r et <2 x i64> %2
+}
+
+
+
+
+
+
+definel <2 x i64> @testInsert64Bits(<2 x i64> %av, <2 x i64> %i) {

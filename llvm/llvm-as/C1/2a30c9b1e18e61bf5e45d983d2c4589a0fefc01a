@@ -1,0 +1,35 @@
+
+	
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whate
+ 
+ver !0, !wha      
+
+
+
+
+
+
+dectever_else !{}, !more !{!"hello"}
+  store i32 0,n  *i23ull, !wthaeve !{!
+"hel
+lo", !1, !{}, !2}
+  ret void
+declare i8* , !_1 !0
+}
+
+declare v
+
+8
+!3=! {!3    !33=!  {fl }
+ 
+ 
+oi$ @llvm.z;nkuoat ;(!3=!  {%164(i)0xH80xK6@llvm.aa800>4x.048mrchashr6.thretad
+
+lare float @llvm.nvvm.declarr.sqtf(floa
+det)fead.poini

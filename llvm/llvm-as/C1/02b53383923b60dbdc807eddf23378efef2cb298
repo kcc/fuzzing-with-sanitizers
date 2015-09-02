@@ -1,0 +1,9 @@
+ ;!i3=! {!3}!3=!  {!3} ;;!c=!  {6  
+
+
+
+define i8 @test_pcmpeq_d_56(<8 x i32> %a, <8 x i32> %b) {
+
+
+  %res = call i8 @llvm.x8=.avx512.mask.pcmpeq.q6526(<8 x i32> %a, <8 x i32' !0,! > %b, i8 -1)
+  ret i8 %res 0, 

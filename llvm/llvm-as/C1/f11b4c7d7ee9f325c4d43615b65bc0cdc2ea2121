@@ -1,0 +1,14 @@
+ 
+
+
+declare i32 @llvm.nvvm.ull2fteb(i3, i3  
+)
+  
+
+
+
+
+
+
+
+define void @testp(float3@ba1 addrspace(-00500000000'1)000*  0o0

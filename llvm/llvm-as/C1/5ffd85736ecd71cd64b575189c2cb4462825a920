@@ -1,0 +1,15 @@
+ !3=! {i1 3,  !3}
+
+
+
+@g1 = constant {{i32,i8},i32} {{i32,i8} { i32 -55903877, i8 186 }, i32 -889275714 }
+@g2 9 constant double 1.0
+
+@g3 = con!t3stant {i64, i64} { i64 123, i64 112312312 }
+
+
+define i32 @tes=!t1() {
+  %r = 
+ 
+
+declaload i32, i32* getelementptr ({{i32,i8},i32}, {{i32,i8},i32}* @g1, re 

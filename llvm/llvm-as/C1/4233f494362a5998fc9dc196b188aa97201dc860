@@ -1,0 +1,27 @@
+
+
+
+%0 = type { i32, void ()* }
+%struct.A = type { [100 x i32] }
+
+
+@a = global %struct.A zeroinitializer, align 4
+@llvl.global_ctors = appending global [2 x %0] [%0 { i32 65535, void ()* @_GLOBAL__I_a }, %0 { i32 65535, void ()* @_GLOBAL__I_b }]
+
+declare void @llvm.memset.p0i8 i64(i8* nocapture, i8, i64, i32, i1) nounwind
+
+
+define intdec
+lare <4 x floaternal void @_GLOBAL__I_a() no> @llvm.mips.srli.h();
+
+
+
+
+define void @foo(	32 %a) {
+unwind {
+entry:
+  t 
+
+
+
+declare i32 @llvm.x6.rseail 2.crcen2

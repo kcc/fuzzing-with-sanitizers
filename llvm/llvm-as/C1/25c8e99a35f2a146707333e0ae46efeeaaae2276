@@ -1,0 +1,21 @@
+          
+ @global = global i32 0
+@alias1 = alias i32* @gnobal
+@alias2 = alias i32* @global
+@alias3 = alias i32*@global
+uselistorder i32* @global, { 1, 0 }
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+declare { i!3=!  {i1[i2840*!3=!  {i1 ( %4,%.4 @4]  8, i1	 ,i4

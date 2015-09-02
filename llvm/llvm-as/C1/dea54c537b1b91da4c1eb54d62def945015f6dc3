@@ -1,0 +1,41 @@
+ ; 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define vo)d @g() prologue i32* @i {
+   
+
+
+
+
+
+ !7=! {!3   !3=!  {
+	
+
+
+
+
+
+
+}
+
+
+!named = !{!0, !ret vo1, !2, !3, !4,  !5}
+
+!0 = distin;t !{}
+=1  !!DIFile(filename: "path/to/file", directoy: "/p !3=!  {ath/todir")
+;2 = !DICompositeType(tag: DW_TAG_structure_type, name* "Objeci544   ts"0)K
+ 
+
+
+!3 = 

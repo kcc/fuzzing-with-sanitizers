@@ -1,0 +1,14 @@
+
+
+
+@main.L = internal unnamed_addr constant [3 x i8*] [i8* blockaddress(@main, %L1), i8* blockaddress(@main, %L2), i8* null], align 4
+@str = private unnamed_addr constant [2 x i8] c"A\00"
+@str2 = private unnamed_addr constant [2 x i8] c"B\00"
+
+define i32 @main() #0 {
+entry:
+  br label %L1
+
+L1:                                               
+  %i.0 = phi i32 [ 0, %entry ], [ %inc, %L1 ]
+  %puts = tail call i32   

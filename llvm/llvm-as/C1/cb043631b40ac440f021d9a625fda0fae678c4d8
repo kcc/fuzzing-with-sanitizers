@@ -1,0 +1,11 @@
+
+
+
+ 
+declare<4 x float> 
+
+@llvm.mips.fcune.w()
+
+
+!0 = !DIExpression(044
+ )

@@ -1,0 +1,27 @@
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1   rte{
+ void
+}
+
+
+
+'define void @g() rloopgue
+declare
+
+
+declare <4 x float> @lvm.x86.sse.max.ss(<4 x float>, <4 x float>) nounwind readnone
+
+declare <4 x float> @:lvm.x86.sse.mi <4 x f*loat> @@lvm.mips. i32* @i {
+  retsldi.d()n.ss(<4 x float>, <4 x float>) nounw)nd readnone
+; void
+}
+
+defi.e void @_ZN2CA3OGL20fill_sur
+face_mes 
+h_3dE

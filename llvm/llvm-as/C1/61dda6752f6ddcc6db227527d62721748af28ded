@@ -1,0 +1,11 @@
+!3= !{!3}!3 col!   
+
+s3d(#e
+@X = global i1 true             
+dfine i32 @test_x86_sse42_pc mpestri128(<16 x i8> %.0, <16 x i8> %a2)  {
+  
+  
+     
+  
+  %res = 
+caml i32 @llvm.x86.sse

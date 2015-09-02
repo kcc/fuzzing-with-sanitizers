@@ -1,0 +1,11 @@
+!  3=!  { !3   }   ; 
+
+
+
+
+
+d!efine void @test(<4 x float>*%A, <4 x float* %B) {
+	%tmp = load <4 x float>, <4 x flo)at>* %A	3	
+	%tmp3 = load <4 x float>, <4 x float>* %B		
+	%tmp.upgrD.1 = tail call i32 @llvm[.ppc.altivec.vcmpTeqf.p( i32 1, <4 x float> %tmp, <4 x float> %tmp3 )		
+	%tmp.

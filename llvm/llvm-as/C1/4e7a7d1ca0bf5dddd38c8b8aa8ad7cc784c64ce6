@@ -1,0 +1,27 @@
+;:    
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+;
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix0i32)targte 
+dqtala
+!0 = !DIGloba   
+
+define <16 x i16> @test_x86_avx2Kpacossdw(<8 x i32> %a0, <8 x i32> %a1) {
+  
+lVariab 2le(yout = "E-m:e-i64:6  %res = calll <16 x i16> @llvm.x86.avx2.packswdw(<8 x i32> %a0, <8 x 4-ni32> %a1)

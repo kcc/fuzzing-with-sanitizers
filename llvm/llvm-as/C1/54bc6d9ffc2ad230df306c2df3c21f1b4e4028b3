@@ -1,0 +1,15 @@
+
+
+
+declare
+
+
+
+
+ <4 x float> @llvm.mips.pmaex.w()    ; !3=!  {i14< %440< i210<
+
+
+!0 = !{i32 3, !"foo", !{!"bar", i32 42 }}
+!1 = !{i32 1, !"bai280< 3>r", i22 42}
+
+!llvm.module.flags = !{ !0, !1 }

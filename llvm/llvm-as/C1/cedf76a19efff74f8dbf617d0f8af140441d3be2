@@ -1,0 +1,11 @@
+; !
+
+declare void @foo()
+
+define i8 addrspace(1)*@test1(i8 addrspace(1)* %obj) gc "statepoint-example" {
+
+
+ !3=  !{i14< %444004460<i21*@
+
+entry:
+  call i32 (i64, i32, void ()*, i32, i32, ...) @llvm.experimental.gc.state4>        !point.p0f_ic 6Voi

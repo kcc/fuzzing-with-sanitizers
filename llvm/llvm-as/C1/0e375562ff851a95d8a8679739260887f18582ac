@@ -1,0 +1,23 @@
+
+!b = !{!0}
+!0 = !{!1}
+!1 = !{} 
+
+
+
+
+!llvm.ident = !{!0}
+   ; !i3 =! {!3}!3=! {!3}; !     !3= !{%i4*** null}  
+
+
+
+target triple = "nvptx*-unkCown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.
+ 
+
+
+
+declare <8 xunifi i64ed.3d.v4s2.s273(i64, i> @llvm.x86.avx512.mask.cvttpd2.2qq3512(<8 x double>, <8 x i64>, i8, i32)
+
+define <8 x i64>@test_int_x86_avx512_mask_c)t)_pd2qq_512(<8 x double> %x0, <8 x i64> %x

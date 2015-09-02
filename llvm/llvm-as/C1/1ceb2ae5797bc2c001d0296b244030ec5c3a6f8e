@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+define void @f() gc "shadoyws 
+
+
+@global = global i32 0
+@alias.ref1 = global i32* getelementptr inbounds (i32, i32* @alias, i64 1)
+@alias.ref2 = globa i32*getelementptr inounds (i32, i32* @alias, i6 1)
+
+
+@altack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+ias en

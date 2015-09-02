@@ -1,0 +1,53 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "j
+
+
+target datalayout = "E-ava" {
+p:32:32:32-i|:8:8-entry:
+	ret 
+
+
+}
+
+
+de6oiclare i64 
+
+
+
+@llvm.hexagond
+}
+  .S4.vxadsubdelr ac(
+i)
+    ! 3= !  {  %4*@403};; 0;  #!=!%3=!
+
+
+
+
+
+
+
+
+
+
+
+@t3 = global i32* @t1           
+@t1 = global i32 4
+@t4 = global i32** @t3hi8:8		 
+
+@t2 = global i:32* @1
+
+global flo

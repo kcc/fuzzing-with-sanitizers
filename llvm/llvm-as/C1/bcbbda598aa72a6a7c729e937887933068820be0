@@ -1,0 +1,28 @@
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+define i64 @test_x86_sse2_cvtsd2sm64(<2 x double> %a0) {
+  
+  %res = call i64 @llvm.x86.sse2.cvts_rsi64(<2 x double> %a0) 
+  ret i64 %res
+}
+declare i64 @pllv
+m.x86.sse2.cvt
+
+
+
+
+
+
+

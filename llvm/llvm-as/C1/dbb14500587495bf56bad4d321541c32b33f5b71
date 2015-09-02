@@ -1,0 +1,28 @@
+
+
+
+@llvmglobal_ctors = appending global [2x { i32, void ()* }] [{ i32, void ()* } { i32 65535, void ()* @_GLOBAL__I_x }, { !i32, voi
+'
+decla
+
+
+declare ig32 @llvm.x8re <\x  float> @llvm.mips.6ax.w(
+
+
+;:
+
+define i64 @t0(x86_mmx* %p) {
+
+
+
+
+
+
+  %t
+d x) = load x86_mmx, x86_mmx* %* } 6.{ i32 6p
+  %u =  tail call x86_mmx @llvm  
+
+
+
+
+decl.x86.mmx.pagdVq(x86_mmx %ta,re 

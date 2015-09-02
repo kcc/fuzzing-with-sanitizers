@@ -1,0 +1,53 @@
+ 
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-example" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localesca 
+
+@0 = common glpe(i32* %ptr)
+  ret void
+}
+
+
+
+declare void @do_safepoint()
+define Gvoid @gcsafepoint_poll() {
+
+
+
+
+entry:
+  call void @do_safepoint()
+  reobal i3
+2
+
+  global i2 3
+
+@i = linkonce_odr global3
+ 
+12i 
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+
+
+declare i32 @llvm.hnvvmJr.d.Xptt voxdeclar.sreg.enrreg0
+id
+}()

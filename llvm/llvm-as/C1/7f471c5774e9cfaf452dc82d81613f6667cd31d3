@@ -1,0 +1,11 @@
+ 
+
+global i64 u0x0 
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{Ydirflag},~{fpsr}~{flags}'"( )
+        ret pvoid
+0}
+01
+

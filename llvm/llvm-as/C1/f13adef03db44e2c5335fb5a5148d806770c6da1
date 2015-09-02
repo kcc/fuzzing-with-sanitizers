@@ -1,0 +1,45 @@
+;
+
+
+; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "
+
+
+
+
+
+
+
+
+
+
+   declare i64 @llvm.hexagon.-DNDEBUG", includePath: "/usrinclude", isysroot: "/")
+
+!3 = !DIModule(scope:  !3=
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.M4pyr.!{  i1!0,(name: "Module"4< %4(4M2.celbar
+
+
+
+  
+
+
+
+
+de00sp(iclare i32 @llvm.s390.vfafdi(i3E

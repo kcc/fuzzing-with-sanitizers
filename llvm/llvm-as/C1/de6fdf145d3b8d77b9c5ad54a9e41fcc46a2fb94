@@ -1,0 +1,28 @@
+
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+   %retval = alloca i32
+  store i32 42, i32* %retval, !md !0
+ 
+
+
+
+define <4 x i16> @vclz16(<4 x i16>* %A) nounwind {
+
+        %mp1 = load <4 x i16>, <4 x i16>* %A
+        %tmp2 = call <4 x i16> @llvm.arm.neon.vclz.v4i16(<4 x i16> %tmp1)
+
+        ret <4 x i16> %tmp2
+}
+
+define <8 x i8> @vcnt8(<8 x i8>* %A) nounwin d { br label %0, !m
+
+        %tmp1 = load <8 x id !1
+
+
+  
+8>, <8 x   i

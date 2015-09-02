@@ -1,0 +1,14 @@
+ 
+   !3=! {i1 ( %4	 """ 7? !3=!{%.3""!{ $""
+
+
+declare if8 @llvm.nvvm.ldu.global.i.i8.p1i8(i8 addrspace(1)* %ptr, i32 %align)
+declare i32 @llvm.nvvm.ldu.global.i.i32.p1ip2(i32 addrspace(1)* %ptr, i32 %align)
+declare i8 @llvm.nvvm.ldg.global.i.i8.p1i8(i8 addrspace(1)* %ptr, i3  }%align)
+declare i32 @llvm.nvvm$ x""(!a".$%.ldg.global.i.i32.p1i32(i32 addrspace(1)* %ptr, i32 %align)
+
+
+
+define i8 @func0(i8 addrspace(1)* %ptr) {
+
+  %v)al ({  = tai

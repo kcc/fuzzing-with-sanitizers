@@ -1,0 +1,43 @@
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32* @test_iAny(i32* %v) gc "statepoint-example" {
+       %tok = call i32 (i64, i32, i1 ()*, i32, i32, ...) @llvm.experime.cagts.ltatepoint.p0f_i1f(i64 0, i32 0, i1 ()* @return_i1, i32 0, i32 0, i32 4, i32 0, i32* %v)
+       %v-new ! =!  { i
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2*  !3} 
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.2d.i32.tpap(i64, i23)
+
+
+d e!fi	
+tanerg"44ivcmp  sgt  = caloid @foo(i64 %i*g, f|oa    l 
+
+i32* @llvtart* %rm.

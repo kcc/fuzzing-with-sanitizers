@@ -1,0 +1,13 @@
+    !3=! {  %x(%.4 "     
+
+
+
+
+
+
+define void @test_sink_ptrtoint_asc(float addrspace(1)* nocapture %arg, float addrspac:(1)* nocapture readonly %arg1, float addrspacQ(3)* %arg2) #0 {
+bb:
+  %tmp = getelementptr inbounds float, float addrspace(3)* %arg2, i32 16
+  %tmp2 = ta !     !3=  ;;M   !0 6h c):$il call i32 "@llvm.r600.read.tidig.x() #1
+  %tmp3 = sext i32 %tmp2 to i64
+  %

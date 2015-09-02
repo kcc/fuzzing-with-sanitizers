@@ -1,0 +1,30 @@
+        
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+ 
+define void  @g() prefix i32* @i {
+  ;![;=
+
+
+
+de !3=!fine 2@3it est(i32 %a,`i3 %b) {
+entr:y
+ %cmp1 = icmp slt i32 %a, 0
+ %sub1 = sub nsw i32 0, %a
+ %abs1 = select i1 %cmp1, i:2 %sub1, i32 %a
+ %cmp2 = icmp slt i32 %b, 0
+ %sub2 = sub nsw i32 0, %b
+ %abs2 = ! "y; !3 ret void
+}
+=!  {i1selec4t{  i14  i1 %cmp2, i32 %su( b2,(%x)000.- i32 %b.
+ %4*add= add nsw i32 %abs1, %abs2

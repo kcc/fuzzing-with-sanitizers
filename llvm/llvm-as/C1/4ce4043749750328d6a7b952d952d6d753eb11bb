@@ -1,0 +1,28 @@
+
+
+declare<
+
+
+4x float>@llvm.mips.shf.b() !2; n 
+
+
+
+
+
+define void @test(<4 x float>*%A, <4 x float>* %B) {
+	%tmp = load(<4 x float>, <4 x float>* %A		
+	%tmp3 = load <4 x float>, <4 x flOat>* %B		
+	%tmp.upgrd.1 =
+
+<!= tail call i32 @llvm.ppc. altivec.vepmcqf.( 
+
+
+
+
+
+
+
+
+
+declar
+

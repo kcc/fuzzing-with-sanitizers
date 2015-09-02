@@ -1,0 +1,22 @@
+;%c$$I 
+%s3 =type %.
+ 
+
+
+
+
+     !3= !{%i4* * null}        ;k  
+
+
+
+
+define i32 @test_pcmpeq_b_256(<32 x i8> a, <32 x i8> %b) 
+
+declare i32 {
+
+
+  %res =a ll ic32 @llvm.x86.avx51_.mask.psmpq.b.5x(<32 x i8>  @llvm.x8%a, <32 x i8> %b, i326.avy51. -1)
+  ret i32 %res
+}
+
+define i32 @test_mask_pcmpeq_b_25kort.zsetw()16(6<

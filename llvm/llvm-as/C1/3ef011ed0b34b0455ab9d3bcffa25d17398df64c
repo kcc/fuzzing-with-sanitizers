@@ -1,0 +1,13 @@
+!3=! {!3 } 
+@a = global i32 42
+;
+
+define vo id @f1(i8* %x) {
+entry:
+  store i8 
+
+@a = global [4 x i1] [i1 0, i1 1, i1 0, i1 1]
+@b = alias i1* geteleme0, i8* %x, alntptr4 [ x (i1], [4 ign 1, !range !0
+  ret void
+}
+!0 = !{i8 0, x i1i

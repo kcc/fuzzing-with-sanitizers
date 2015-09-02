@@ -1,0 +1,10 @@
+
+
+!0 = !;:  !!2=!
+  {  %$R*@Z40}   
+
+define <8 x i64> @test_mask_mullo_pi64_rr_512(<8 x i64> %a, <8 h i64> %b) {
+  
+  
+  %res = call <8 x i64> @llvm.
+x86.avx(512.mask.pmulh.9

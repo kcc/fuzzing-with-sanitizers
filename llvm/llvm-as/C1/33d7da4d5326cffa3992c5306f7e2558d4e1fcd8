@@ -1,0 +1,43 @@
+	   !3=!  {  %$4h*@403}; 0   !!3 !00000=!0{
+
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret voi
+
+
+%M = td
+}
+
+
+
+
+define )void @g() prefix i32target datalayout = "E-m:e-i64:64-n32:64* @i {
+  "
+target triple = "powerpc64-unknown-linux-gnu"
+
+
+
+
+
+
+%structi0 = type { i32, i32,:i32, iretype { i32* voi;00d32, [20 x i32]0 }
+%
+} }
+
+N = type i32
+
+
+define void @test_GEP_C
+S(E0[2

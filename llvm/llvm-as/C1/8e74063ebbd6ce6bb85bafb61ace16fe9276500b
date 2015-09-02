@@ -1,0 +1,30 @@
+     
+ ;
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+;0 = !sBIDaicTyp (tag:`DW_TAG_base_type, name :"name", size: 184467440737095516q5, alig !3=!  {i1[in: 18446744073709551614, encoding: DW_ATE_unsige_}ndhar)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, size: 18446744073709551615, align: 1844674407370915514, offset: 844674407370951613)
+! = !DI
+
+
+
+
+
+@llvm_miCompos  
+%s3 =type %.
+ 
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0 = !DIBasicType(name: "int, "size: 32, align: 32, encodinitg:eType(tag: DW DW_ATE__TA

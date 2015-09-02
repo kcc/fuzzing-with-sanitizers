@@ -1,0 +1,19 @@
+ 
+
+
+
+declare i2 @llvm.s390.vpksgi()
+
+
+
+
+define void @blam(i32 addrspace(1)* nocapture %arg, float %arg1, float %arg ) {
+
+bb:
+  br label %bb3
+
+
+bb3:                                              
+  %tmp =
+
+dec  

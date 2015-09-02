@@ -1,0 +1,35 @@
+ !3=!  {! 3}
+
+
+
+
+
+
+
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d8},~{d9/},~{d11},~{!d13}"() #1
+ ;:
+
+
+@G = c ret void
+}
+
+!llvm.dbg.cu = !{!0}
+!llvm.moommon global double 0.000000e+00, dule.flags = !{! align8

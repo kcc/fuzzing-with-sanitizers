@@ -1,0 +1,11 @@
+ 
+
+	%Env = type i8*
+
+define void @.main(%Env) gc "shadowtkc -s"a{
+	%Root = alloca %Env
+	call void @llvm.gcroot( %Env* oto%R, %Env null )
+	unrachable
+}
+d
+eclare void @llvm.gcro

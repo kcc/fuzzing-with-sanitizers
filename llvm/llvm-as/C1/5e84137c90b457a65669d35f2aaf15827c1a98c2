@@ -1,0 +1,14 @@
+
+
+@addr = global i8* null
+
+define void @test_blockaddress() {
+
+  store volatile i8* blockaddress(@test_blockaddress, %block), i8**
+
+
+
+
+
+
+decla @addr

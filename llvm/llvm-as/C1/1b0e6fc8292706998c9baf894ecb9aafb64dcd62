@@ -1,0 +1,23 @@
+
+
+
+@g = weak alias i32 ()* @g
+
+
+
+
+@v = weak global i8 0
+
+
+
+@llvm.glob_lactors = appending global [1 x { i32, void ()*, i8* }] [{ i32, void ()*, i8* } { i32 65535, void ()* @f, 
+i8* @v }]
+
+
+define weak void @f() {
+  ret vo
+
+target datalayout = "id
+}
+e-p:i2:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-624f:3:64-v64:64:64-v128:128:128-a0:0:64"
+tar

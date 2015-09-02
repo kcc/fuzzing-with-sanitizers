@@ -1,0 +1,9 @@
+; ! xch
+
+  ;
+@i2 =linkonce_odr global i32 1
+
+
+
+
+define void @gf() prefix i32 1;:$$I!

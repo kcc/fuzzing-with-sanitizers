@@ -1,0 +1,42 @@
+
+
+
+
+
+ 
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @test_branch_weaghts(i2 %n) #0 {
+entry:
+  %a = alloca [128 x i32], align 16
+ 
+ %0 = bitcast [1'8 x i32]* %a to i8*
+  call void @llvm.lifetime.(attsri64 512, )8* %0)
+  %arraydecay
+ = getelementptr inbounds [128 x i32], [128 x i32]* %a, i64 0, i64 0
+  call void @foo2(i32* %arraydecay)
+  %idxprom = sext i32 %n to i64
+  %arrayidx = 
+*getelementptr inbounds [128
+ x i32], [1(8 x i32]* %a, i64 0, i6

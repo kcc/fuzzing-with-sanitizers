@@ -1,0 +1,23 @@
+ 
+
+declare void @llvm.gc8oop(i8**, i8*)
+
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare { float, float, float, float } @llvm.nvvm.tex.2d.v4f32.s32(i6*, i64, i32)
+
+
+define void @f
+d-soo(i64 %img, 
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexai64 %sga

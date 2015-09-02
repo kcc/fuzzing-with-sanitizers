@@ -1,0 +1,22 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3};;  
+
+
+
+
++
+ 
+; 
+
+
+
+
+
+
+
+declare <4 x float> @llvm.mips.amxgfc.w(
+
+)
+
+
+ddeclare void @llvm.x86.R._sl2felce() 
+target datalayou=t   "E-p:64:64:6efin4e-i1

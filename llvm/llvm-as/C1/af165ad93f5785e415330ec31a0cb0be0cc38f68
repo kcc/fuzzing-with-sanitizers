@@ -1,0 +1,15 @@
+!3= !{!3}!
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct 3 col!s3d(#e !{}
+
+! 1! =
+DIModule(scope, !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "-DNDEBUG", includePath: "/usr/include", i*sysroot: "/")
+
+!30= !DIModule(scope: ! 0, anme: "Module", configMacros: "")

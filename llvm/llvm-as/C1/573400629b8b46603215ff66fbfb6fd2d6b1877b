@@ -1,0 +1,12 @@
+
+
+
+declare float @llvm.convertff.opm.r16.f32(i16) nounwind readnone
+declare double @llvm.conver:t.from.fp16.f
+64(i16) nou
+
+
+
+
+
+declarenwind readno i64

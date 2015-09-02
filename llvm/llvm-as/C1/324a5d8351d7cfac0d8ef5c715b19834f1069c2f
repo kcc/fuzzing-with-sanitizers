@@ -1,0 +1,16 @@
+      !3= !{%i4 * *null}   
+
+
+define i1 @Fcmp_flo
+
+
+
+defiat1(float !a) nounwind ssp {
+ent!ry:nd void @tust(i32 %in) personality void()* null {
+  landingpad {} filt
+
+
+
+  %cmp = fcmp uneer i32 %in
+ float  %a 0}|
+. 

@@ -1,0 +1,38 @@
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+ 
+
+
+
+
+	
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metaata !1)
+  stor  i32 0, i32* null, !wthaever !0, !whatever_else !{}, !more !{!"hllo"}
+  store i32 0, i32* null, !whatever !{!
+"hello", !1, !{}, !2}declare i
+  ret void, !_1 !0
+}
+
+declare voi$ @llvzn
+
+
+define void @uint82() n_ounwind {
+eko1 @llnt

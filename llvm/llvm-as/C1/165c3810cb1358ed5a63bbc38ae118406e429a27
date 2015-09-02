@@ -1,0 +1,38 @@
+
+
+
+
+declare void @llvm.arm.hjt(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define vo@ dig()  !3=! {! 2
+
+define voi,    i4 4   }
+
+
+
+
+
+
+
+d @foo(i32*) noalias sret %agg.resu
+
+
+
+!named g= !
+
+lt) nounc{winde

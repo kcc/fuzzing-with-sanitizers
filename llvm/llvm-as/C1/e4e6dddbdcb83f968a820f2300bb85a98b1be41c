@@ -1,0 +1,25 @@
+
+
+
+ $k4 = comdat any
+ 
+
+
+
+
+declare <4 x float>@llvm.mips.dmyaxvc.w(
+)
+
+
+
+
+;: 
+!llvm.module.flags = !{!0}   
+
+
+
+!0	
+
+
+
+ = !GenericDINode(tag:  57)

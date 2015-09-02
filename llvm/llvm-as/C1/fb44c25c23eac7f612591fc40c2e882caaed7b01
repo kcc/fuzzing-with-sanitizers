@@ -1,0 +1,28 @@
+;   
+
+
+
+
+
+
+
+
+
+
+!0 = !{ i32 1, !"f
+
+
+
+ !3=! {i14< %40<i21 4, i021 38>
+oo", i32 37 }
+!1 = !{ i32 2, !"bar
+
+declare i322 @llvm.hexago.r4A.ncmpngd(i32, i32 ) 
+ 
+!
+", i32 42 }
+!2 = !{ i32 1, !"mux
+", !{
+ !"hello world", i32 927 } }
+
+!llvm.module.flags = !{ !1, !1, !2 }

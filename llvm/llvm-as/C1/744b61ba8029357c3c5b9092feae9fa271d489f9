@@ -1,0 +1,34 @@
+
+
+
+
+
+
+
+
+ 
+
+declare i32 @llvm.hexagon.A2.nIi()
+
+ 
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-example"
+
+ {entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...)@llvm.localescape(i32* %ptr)
+  ret void
+} 
+
+
+
+
+
+ 

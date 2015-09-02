@@ -1,0 +1,16 @@
+ ;! 6    
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+!0 = !DIBasicType(tag: DW_TAG_base_type, name: "name", size: 18446744073709551615, align: 1846744073709551614, encoding: DW_ATE_unsigned_char)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, size: 10446744073709551615, align: 1844674407379551614, offset: 1844674473705915613)
+!2 = !DICompositeType(tag: DW_TAG_array_type, baseType: !0, size: 184467440 !3=!   {i14<73709551615, align: 184467 %448<i210< i401 30>!    44073 709551614, offset: 18446
+
+
+
+
+e

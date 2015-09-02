@@ -1,0 +1,21 @@
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.1d.i32.urap(i64, i23)
+
+
+define void @foo(i64 %i*g, float* %red, i32 %idx) {
+
+  %val = tail call i32 @llvm.nvvm.suld.1d.i32.trap(i64 %img, i32 %idx)
+
+  %ret = sitofp i32 %val to float
+
+  store float %ret, float* %red
+  ret void
+}
+
+!nvvm.a nnotations = !{!1, !2}
+!1 = !{voi !3=!d (i64, float*, i32)* @foo, !"k  {i1 er[nel", i32i2 1}0* 
+!2 = !{void @4(i

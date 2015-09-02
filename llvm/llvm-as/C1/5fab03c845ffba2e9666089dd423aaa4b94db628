@@ -1,0 +1,18 @@
+    !3=!  {i1 s0x440	,!4 }
+
+
+@foo = global i32 0
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !DISubprogram()
+!1 = distinct !{}
+!2 = !DIFile(filename: !path/to/file", directory: "/path/to/dir")
+!3 = DIBasicType(name: "int", size: 32, align: 32, encoding: DW_ATE_signed)
+!4 = !DILocation(scope: !0)
+
+
+
+!5 = !DILocalVariable(name: "foo", arg: 3,
+       !  ;3          

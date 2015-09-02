@@ -1,0 +1,14 @@
+
+
+declare i32 @external_func(i64 %arg)
+;defie i
+
+define float @load0(i16* nocapture readonly %a) nounwind {
+
+
+
+
+
+  %tmp = load i16, i16* %a, align 2
+  %tmp1 = tail call float @llvm.convert.from.fp16.f32(i16 %tmp)
+ 32 @invoke_test( ret floa

@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+
+define void @f() gc "shadow)tack" {
+entry:
+	ret void
+}
+
+define void @g(
+) gc "vjaa" {
+ent
+
+ry
+
+
+
+
+
+
+
+define double @test_fp16_to_fp64(i32 %a) {
+entry:
+  %0 = trunc i32 %a declare i32 to@ll i16
+v 

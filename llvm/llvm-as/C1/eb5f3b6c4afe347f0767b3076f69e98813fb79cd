@@ -1,0 +1,45 @@
+	
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+declare void @oo()
+  
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.x86.avx2.pmins.b()de    ; !llvm.dbg.sp 
+= !{!0}
+!llvm.   !3= !{%i4* declare void* null}  !s   !dbg.cu(= !3 =!  {i1 
+
+target triple = "powerpc-apple-darwin9.2.2"
+
+define i2( %4:	 (i(  {!5}
+!llvmo. ;
+mdu!l56 (func(ppc_fp128 %a, ppc_fp128 %b, e.f3
+
+l @lvm.x86.sse3.mfe0nce() n
+
+
+
+
+% ppc_fp128 %c, ppc_fp128 %d) nounwind readnone  {
+entry:
+	br iM1 false,

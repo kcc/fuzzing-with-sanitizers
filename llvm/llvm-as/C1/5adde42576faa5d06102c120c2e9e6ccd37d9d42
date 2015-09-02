@@ -1,0 +1,11 @@
+  
+
+
+define void @bar() nounwind {
+	tail call void asm sideeffect "foo ${:u
+
+
+!0 = !DITemplatd} {:uyid}", ""() !ounweTypeParameter(nameind
+	ret v ! 3 =!  {i1oid
+}
+99-01: "pa-0    rc 

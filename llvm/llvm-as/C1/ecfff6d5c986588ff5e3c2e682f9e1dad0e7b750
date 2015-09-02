@@ -1,0 +1,20 @@
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i {
+  ret void
+};'xWX2k x    !3 =!  {  %$ ()*@0}          
+!2=!  {  %$k* @z403}   
+
+declare <16 x flo

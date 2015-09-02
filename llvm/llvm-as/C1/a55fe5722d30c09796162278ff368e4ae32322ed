@@ -1,0 +1,8 @@
+ ! 6= !{! 6}  
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i2 1 {
+  

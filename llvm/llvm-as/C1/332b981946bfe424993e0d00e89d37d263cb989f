@@ -1,0 +1,18 @@
+   
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{di flag},~{fpsb},~{fl ags}"( )
+       
+
+
+
+   ;j 
+
+declare i32 @llvm.p600.readi6gd.xde  
+
+define void @oo()clar() noun !d  !
+win
+
+ 
+ret 4

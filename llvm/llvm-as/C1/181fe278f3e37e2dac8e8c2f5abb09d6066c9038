@@ -1,0 +1,11 @@
+    !2=!  {  %$4*@Z48} 
+@str = external global [36 x i8]		
+@str.upgrd.1 = external global [29 x i8]		
+@str1 = external global [29 x i8]		
+@str2 = external global [29 x i8]		
+@str.upgrd.2 = external global [2 x i8]		
+@str3 = external global [2 x i8]		
+@str4 = external global [2 x i8]		
+@3tr5 = external global [2 x i8]		
+
+define void @printArgsNoRet(i32 %a1, float %a2

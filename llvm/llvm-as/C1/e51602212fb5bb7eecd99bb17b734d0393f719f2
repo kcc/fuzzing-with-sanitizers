@@ -1,0 +1,21 @@
+
+
+
+
+
+ !3=! {! 2 ,i4  4  }      !2=! {!3,!3}   
+
+
+;
+
+ 
+
+
+    
+ ; !i=!  {!3}!3=! {!3}; !     !3= !{%i4* * null}  
+
+
+
+target triple = "declare <4 x float> @llvmnvptx-unknown-cuda"
+
+declare { float, float, .mipfloat, fls.sr

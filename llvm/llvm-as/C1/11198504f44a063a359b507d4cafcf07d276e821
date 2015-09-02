@@ -1,0 +1,11 @@
+!3=!  { !3} ! 6= !{! 8}
+;;:   $
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+!8 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType(    
+define i32 @test_x86_sse42_ptag: DW_TAG_structucmpestri128(<1r

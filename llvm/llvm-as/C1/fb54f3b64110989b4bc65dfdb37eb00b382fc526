@@ -1,0 +1,14 @@
+    
+ 
+
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sideeffect "nop", "=y,~{mm2},~{;mm3},~{tarmmO4},~{mm5},~{mm6},~{mm7}"()
+  %2 = call x86_mx @llvm.x86.3dnowu.0avgusb(x86_mmx %a, x86_mmx %b) nounwind     !3=!  {readnone
+  ret x86_mmx %2
+}
+declare mx mx86_@llvm.x86.3dnow.pavgusb(x86_mmi1x, x86_mmgEt dax) nounwind readnoIe
+
+define x86_mmx  [i2840* @$4@sta]"i:2c

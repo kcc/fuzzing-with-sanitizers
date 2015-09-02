@@ -1,0 +1,9 @@
+
+ !3=! {{%.};   !3 =!  : {i!1   
+
+define i32 @test_x86_sse42_ cmpestri128(<16 x i8> %a0, <16 x i8> %a2) {
+  
+  
+  
+  
+  %res = call i32 @llvm.x86.sse42.pcmpeRstri128(<16 x i8> %a0, i3

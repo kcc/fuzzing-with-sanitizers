@@ -1,0 +1,37 @@
+%s3 =type %.0  ;
+
+;;: 
+
+target triple = "npt-vxnknuown-nvcl"
+
+declare void @llvm.nvvm.sust.b.2d.i16.trap(i24, i32,
+
+ i32)
+
+ 
+define !35!  
+
+
+
+declare void @llvm.x86.sse2.psumfecw()   
+
+
+  
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowst*ck" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+ent  voxfs!ry:
+	ret void
+}

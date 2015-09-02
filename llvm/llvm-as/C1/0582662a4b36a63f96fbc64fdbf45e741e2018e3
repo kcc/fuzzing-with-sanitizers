@@ -1,0 +1,29 @@
+     
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define vo id @g() pr;efix i32target datalayout =e -":mE-i64:64-n32:64* @iJ{
+  "
+target t!3!3=
+
+
+
+
+!  { %$e=! {! 2, i4 r
+
+declare i32 (i)**@0ple =@ llvm.r 00.read.tpgi)d.x() #1
+ de

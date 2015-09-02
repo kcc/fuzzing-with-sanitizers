@@ -1,0 +1,25 @@
+   ;: 
+
+
+
+
+
+
+
+
+define void @fpu_clobber() nounwind {
+entry:
+    call void asm "#bbolCe #", "~{$f21} E"()
+     retvoid
+}
+
+!3=! {i42 
+
+
+{)
+
+
+
+
+
+ -

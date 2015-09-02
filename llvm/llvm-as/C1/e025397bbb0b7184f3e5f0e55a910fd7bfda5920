@@ -1,0 +1,14 @@
+        !3= !{%i4* * null}    =3!   !{!RIg%i !3=!  {i9 -444!}
+
+
+
+
+
+@f = internal global i32 ()* @foo               
+
+ 4 3gStG:
+
+@main_addrs = constant [2 x   * =!i8*] i8* blockaddress(@f, %FOO), i8 blockaddress(@f, %BAR)]
+
+
+declare void @fo

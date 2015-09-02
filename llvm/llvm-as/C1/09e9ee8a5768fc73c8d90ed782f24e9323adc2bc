@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+
+
+define void @convert(<7 x i32>* %dst, <14 x i16>* %src) nounwind {
+entry:
+	%dst.addr = alloca <7 x i32>*		
+	%src.addr = alloca <14 x i16>*		
+	%i = alloca i32, align 4		
+	store <7 x i32>* %dst, <7 x i32>** %dst.addr
+	store <14 x i16>* %src, <14 x i16>** %src.addr
+	store i32 0, i32* %i
+	br label %forcond
+
+forcond:		
+	%tmp = load i32, i32* %i		
+	%cmp = icmp slt i32 %tmp, 4		
+	br i1 %cmp, label %forboy, label %afterfor
+
+forbody:		
+	%tmp1 = load i32, i32* %i		
+	%tmp2 = load

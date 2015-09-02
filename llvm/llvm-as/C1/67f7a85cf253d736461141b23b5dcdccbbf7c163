@@ -1,0 +1,45 @@
+;
+
+
+
+;
+
+
+
+
+
+
+
+
+
+$v = comdat largest
+  
+
+target triple = "nvpt x-unknown/nvcl"
+
+declare { float, float, float, float } @llvm.nvvm.tex.1d.v4u32.fb2(i6*, i64, i32)
+
+
+define void @f   !3=!m{i14< %40<i21oo(i64 %img, i64 %sampledecla 4re<16 x i8> @
+
+
+
+
+define i64 @t0(
+
+!0 = !GenericDINode(tag: 65x86_mmx* (%p) {
+
+
+
+53
+
+
+  %t llvm.ctlz.t16i8(<1  x i8>^
+
+
+), r, floia02= l3
+oad x86_mmx, x86_mmx*1 %p
+)!
+  %u = tail
+ call x86_mmx @
+decla

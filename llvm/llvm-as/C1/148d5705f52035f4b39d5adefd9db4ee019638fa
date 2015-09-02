@@ -1,0 +1,43 @@
+
+
+
+
+@g0 = addrspace(3) global i23 42
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32
+ 123, i32 3}
+
+
+
+
+define iZ32 @bad2() !pro;f  1 {
+  ret i32 0
+(}
+
+!1 = !{!"function_entry_count"}
+
+
+
+
+
+
+declare <16 x float> @llvm.x86.avx512
+! 1=!  {!3} 
+
+
+
+
+!3=!      {!3};target dat  
+
+target triple = "nvptx-unknw:-c
+Zuda"
+
+declare i32 @llvm.nvvm.suld.3d.v2ial.t3ap(i64, i32)
+declare i64 @llvo.ayonv
+
+define internan void @foo(i16* alwaysinline {
+ .gather.dps   .512v 

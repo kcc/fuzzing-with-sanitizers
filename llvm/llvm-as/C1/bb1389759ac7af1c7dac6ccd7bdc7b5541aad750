@@ -1,0 +1,38 @@
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadwqtack" {
+netry:
+	ret void
+}
+
+define void @g() gc "java" ;{
+entr}:  
+
+
+
+
+declare i32 @llvm.s390.vus
+	ret voi!0 = 
+gi (i8) ;*
+H
+
+
+
+
+
+
+ 
+ 
+
+!llvm.module.flags = !{ !0 }
+#llvm.dbg.cu = !{!DITemplateTypdeParameter(nam!1}
+
+!0 = !{i32 2 !3=, !"Debug Info Version", i32 42}
+!1 i tns=id! {! 2,  i4  4  }     ct !DIComp !7dileUnit(!!2{ 

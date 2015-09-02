@@ -1,0 +1,30 @@
+     !3= !{%i4* * null} !;   !6=!    
+
+
+
+
+
+
+
+
+
+
+
+
+
+define vid @foo(i64*.%ptr) nounwind inlinehint {
+entry:
+  br label %loop
+loop:
+( 
+  %pair = cmpxchg    
+  
+
+
+
+ i64* %
+
+
+
+ptr, 42 i
+de0, c

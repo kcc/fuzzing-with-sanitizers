@@ -1,0 +1,27 @@
+  
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.2d.i8rupK2.(i64, i23)
+
+
+de!fine void @foo(i64 %i*g, p3float* %red, i32 %idx) {
+
+  %va
+
+
+
+
+l =1 tail call i32 @llvm   !3=!  {.nvv

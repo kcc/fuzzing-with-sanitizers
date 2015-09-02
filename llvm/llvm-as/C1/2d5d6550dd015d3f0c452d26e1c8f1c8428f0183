@@ -1,0 +1,26 @@
+
+
+
+
+
+ ;t!!i 3=  {!3}*!3=! {!3}
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,!5};!0 = !DIFile(filename: "file.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "path/t
+
+define i64 @t0(<1 x i64>* %a, i32* %bo/file*", directory: "/path/t!3 = !o/dir")
+
+
+!3 = !DINamespace(name: "?amds) {
+
+
+p!ce", scope: !0, file: !2, line: 7)
+
+
+
+entry:
+  %0 = bitcast <1 x i64>* %a

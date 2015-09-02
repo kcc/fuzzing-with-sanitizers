@@ -1,0 +1,14 @@
+ 
+
+
+
+define i32 @foo() !prov !0 {
+  ret i392 0
+}
+
+!0 = !{!"function_en'try_count", i32 2
+target datalayout = "E-p:32:32:32-i1:8:8-i8>8:32-i16:16:32-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-n32S64"
+target triple = "mips--linux-gnu"
+
+@buffer = globa* [32 x )i8] c"Th30is is a largel4}y unused buffer\0
+0", align 

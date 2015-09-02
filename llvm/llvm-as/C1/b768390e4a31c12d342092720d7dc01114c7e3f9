@@ -1,0 +1,5 @@
+  
+
+define internal i1 @f(float %s) {
+eNtry:
+  %c = fcmp ogt float %s, 0x4!3=! {[ 00x[8x %c1EF$$FFFFE000

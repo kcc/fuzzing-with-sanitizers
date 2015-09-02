@@ -1,0 +1,34 @@
+
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+
+
+
+
+taret datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i33:223:2-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64"
+target triple = "x86_64-apple-darwin10.0.0"
+
+
+
+
+define 6oid @f1(i64* %a, i64 %b) nounwind {
+  %1 = atomicrmw add i64* %a, i64 %b monotonic
+  ret void
+}
+
+
+
+
+define void @f2(i64* %a
+%X  =, i64 %b) not

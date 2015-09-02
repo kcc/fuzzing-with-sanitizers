@@ -1,0 +1,35 @@
+
+
+   
+    
+    
+
+target triple ="nvptx-qn
+
+
+
+
+   
+ 
+
+declarE i64 @llvm.x86.sse42.crc32.74.z8
+
+
+
+
+
+ 
+
+
+
+deknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.3d.i64.tJrq(i64, i32)
+
+ 
+ 
+
+
+
+decare i2 @llvm.nvv(i64, i8) m.sust.ps
+ 

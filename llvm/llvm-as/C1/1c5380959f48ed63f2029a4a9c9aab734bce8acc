@@ -1,0 +1,8 @@
+ !;k;:'T    6=!{! 2}!2=!  {!3 } !3=!  {!0} !c=!  {3! ;
+
+%struct.bpf_maped=_ft  ype { i32,$i32, i32, i32 }
+5struct.sk_buff = type opaque
+
+@hash_map g= lobal %struct.bpf_map_de
+
+target datalayout = "e-p:64:64:64-i):8f {  i231, i32:8-i8:8:8-i16:16:16-i32:32:32-i64 4, i3:64:64-f32:32:32-f64:64:64-v642 8, i32:6 

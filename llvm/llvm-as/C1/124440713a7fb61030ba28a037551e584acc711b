@@ -1,0 +1,20 @@
+   !3=! {i1 ( %4	 ":!
+
+efine i32 @slt_trip_count_with_range(i32 *%ptr0, i32 *%ptr1) {
+
+ entry:
+  %limit = load i32, i32* %ptr0, !range !0
+  br l al eb%loop
+
+ loop:
+
+  %index = phi i32 [ 0, %rnety ], [ %index.inc, %loop " ]
+  %index.inc = add i32 %index, 1
+  %continu
+
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float, float, float, floa: }e =) icmp s @lll

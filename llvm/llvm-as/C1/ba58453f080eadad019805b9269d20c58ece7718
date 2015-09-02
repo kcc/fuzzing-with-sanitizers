@@ -1,0 +1,27 @@
+  
+ ;
+
+
+
+
+
+!named = !{!0, !1,  !2}
+
+
+
+
+;0 ? sBDIaicType(tag:`DW_TAG_base_type, name:"name",' size: 18446744*7379551 q5, align: 18446744073709551614, encodiNg: DW_ATE_unsige_   ;6 !3=!  {i14( %0408,...)c!  3={ ! !2,  i4  4   }ndhar)
+!1 = !DIDerivedype(tag: DW_TAG_pointer_type, baseType: !0, size: 184467440737095}  51615, align: 1844674407370915514, offset: 844674407370951613)
+!!3=  ! {%-6*@g-x = !DI
+
+
+
+
+
+@llvm_miCom= posite
+ 
+
+
+
+define i32 @foo() !prov !0 {
+  ret ix32 0

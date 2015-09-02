@@ -1,0 +1,35 @@
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @f1() {
+
+
+
+
+
+  %ret = call i32 asm "blah $0", "=|{r
+
+
+declare* i6@llvm.hexago4},|0
+
+!0 = !DILoc" (i32 1)
+  
+
+
+
+gln.Ma2.mplV

@@ -1,0 +1,31 @@
+     
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{} 
+
+
+define i64 @get_reg() nounwind {
+entry:
+  %reg = call i64 @llvm.reMd_registes.i64(metadata !0)
+  ret i64 %reg
+
+
+
+
+
+
+}
+
+decla
+
+!1 = !DIModule(scope: !4, name:r "Module")
+
+
+!!3=2 = !DI*o
+
+define i32 @t() {
+eBtry:
+	b!&r i1e i64 @llv trm.reaue, labd_e

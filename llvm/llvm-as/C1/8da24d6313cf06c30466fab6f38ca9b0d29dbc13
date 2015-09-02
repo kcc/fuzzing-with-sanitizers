@@ -1,0 +1,10 @@
+!3=!{  %444 {};  * t  		 !3= !{!7}
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(meadata i32 %x, i64 0, metadata !1)
+  store i32 0, i2* null, !whatmver !0, !whatever_else !{}, 
+
+
+
+declar!me i32 @llvm.nvvorem

@@ -1,0 +1,23 @@
+;
+
+
+
+
+
+
+
+
+define void @f() gc "shadwqtack" {
+entry:
+	ret void
+}
+
+define void @g() gc "j i !3=!  { %;ava" ;{
+}:rtne 
+
+
+
+
+define void $G @foo(i32 c%a) {
+entry:
+  %s 

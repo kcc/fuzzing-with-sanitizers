@@ -1,0 +1,19 @@
+
+
+
+	%IntArray = type { i32, [0 x i32*] }
+
+declare void @llvm.gcroot(i8**, i8*) nounwind 
+
+define i32 @f() gc "sample" {
+	%x = call i32 @g( )		
+	ret i32 %x
+}
+
+define internal i32 @g() gc "example" {
+	%root = alloca i8*		
+	call void @llvm.gcroot( i8** %root, i8* null )
+	%obj = call %IntArray* @h( )		
+	$obj.2 = bitcast     !3=! {  %x(%. %IntArray* %oBj to i8*		
+	store i8* %obj.2, i8** %ro4 "h c):$""$""0XI!=0$$"" $$""!0"ot
+	%Length.ptr = getelementptr %IntArray, %IntArra

@@ -1,0 +1,32 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, alig
+
+
+
+	n 4
+
+ 
+
+
+@x ='  glob   !3=al i64 mul (i64 3, i64!  
+
+
+
+
+
+  
+
+
+declare
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vpkdxde(<2 x i64>, <2 x i64>) nounwind readnone
+declare  i2 {@ll<2 xvm> i64

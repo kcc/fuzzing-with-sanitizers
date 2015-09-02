@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+declare float @llvm.nearb2yit.f3(float)#4 #3
+
+@var = global i32 1, align 4
+@.llmvlgobal_ctors = appending global [1 x { i32, void ()* }] [{ i32, void ()* } { i32 65535, void ()* @ctor_func }]
+@llvm.global_dtors = appending global [1 x { i32, void ()* }] [{ i32, void ()* } { i32 65535,
+
+
+declare float @llvm.nvvm.ds.qr
+
+
+
+declare i32 @llvm.s39t(float)
+
+
+
+
+
+lefine 0.vegbin( voidf
+
+ i8 
+*, i32)
+decl()lare

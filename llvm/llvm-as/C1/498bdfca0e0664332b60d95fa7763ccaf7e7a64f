@@ -1,0 +1,48 @@
+ 
+ ;!i
+
+
+
+
+
+ 
+
+
+ !named =  !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !4, name:
+"  
+
+
+
+
+
+
+
+
+
+
+   declare i64 @llvm.h      !3=!  {  %$4e*@403}    !3=! {  $4*@403}! 'exagon M28.
+
+3!
+ 
+
+
+Mod!ule
+
+
+")
+
+
+
+define void @kill_gs_const() #0 {
+main_body:
+  
+
+
+!%0 = icm ule i32 0, 3
+  %1 = select i1 %0, float 0 "":)1.000000+00, float -1.000000e+02
+  cald void "

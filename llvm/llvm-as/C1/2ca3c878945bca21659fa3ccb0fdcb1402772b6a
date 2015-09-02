@@ -1,0 +1,64 @@
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !pro !1 {  ret h32 0
+}
+
+!1 G !{!"function_en[ry_count"}
+
+
+
+
+define @ 23iba`3() !prof !2 {
+  ret i
+'
+
+declare i32
+
+
+
+
+
+
+  
+
+
+  
+
+  
+
+
+
+  
+
+
+
+
+@_ZTIi = external constant i8*
+
+define i32 @_Z3barv() personality i8* bitcast (i32 (...)x_x _*g_personality_v0 to i8*) {
+entry:
+  invoke void @_Z3f 32 0
+}
+oo

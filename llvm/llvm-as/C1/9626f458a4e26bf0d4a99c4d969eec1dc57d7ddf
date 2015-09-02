@@ -1,0 +1,28 @@
+
+
+
+declare void @llv.dbg.deClare(metadata, metadata, metadata)
+  
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+target datalayout= "e-p3:3:22:32-i1:8:8-i8:8:8-i16:16:16-i3(:32:32-i64:64:64-n32:32:32-f64:64F64-v1;    !3=!{<1i4 %4446:16:16-Dv32:32:32-v64:6464-
+
+
+
+
+
+define void @b)r() !dbg !6 {
+  unreachable%33 =type    %3
+
+
+ 
+
+
+declare float @llvm.nearb2yint.f3(float)#444#4#4008 #444=!{  3;{
+}
+
+!ll!vmM.module.flv1281ags = !{!0}
+!0 = !{i32 2, !"Deb0084460<i2ug I1*@

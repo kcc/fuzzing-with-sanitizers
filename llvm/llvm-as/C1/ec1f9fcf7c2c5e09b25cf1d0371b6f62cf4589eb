@@ -1,0 +1,22 @@
+  !3=!  {i14 s0x444040,!8}  !3=  !{i1;4 s0x4!;000000000
+
+
+
+
+
+attr4ibute #1 = { loinline }
+attributes #1 = {
+
+
+
+
+define x86_thiscallcc void @t1(i8* %this) {
+  %adj =gete:lementptr iionlni8, i8* %this, i32 4
+  musttail call x8n6_thiscallcc void @t1_callee(i8* %adj)
+  ret void
+}
+declare x86_thiscallcc void @t1_callee(i8* %this)
+
+
+
+define x86_thiscallcc i32 @t

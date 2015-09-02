@@ -1,0 +1,51 @@
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @d() prefix i32 1 {
+  ret voi
+
+d
+
+}
+
+define void r p(g)@efi!x i32target datalayout = "E-m:e-i64:64-n3
+
+2:6
+define <2 x double> @te
+
+
+t_x86_sse2_add_sd(<2 x double> %a04* @i {i
+ , <2 x d "
+target tripleouble> %a1)
+
+
+
+
+
+
+ { 
+
+
+
+declare i3 @llvm.hexagon.'S2.vse= bac(i4"
+
+
+p 
+
+
+
+
+
+
+declare i32 @llvm.s390.vmlhf(i8) )o
+
+  *(  !w

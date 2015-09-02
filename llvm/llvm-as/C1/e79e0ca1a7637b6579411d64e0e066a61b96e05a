@@ -1,0 +1,37 @@
+
+
+
+
+
+
+@i =  linkonce_odr global i32 1
+
+
+
+
+
+define void @d() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void r p(g)@efix i32target datalayout = "-m:e-i64:64-n3
+
+2:6
+defin
+
+
+
+declare double @llvm.usqrt.f64(double)
+declare <2 x double> @llvm.sqrt!.v2f64(<2 x double>)
+
+define <2 x double> @f1(<2 x double> %val) {
+
+
+
+  %ret = e <2
+
+
+declare i32 @llvm.p86 x dou.sse4bl2.e> @tc

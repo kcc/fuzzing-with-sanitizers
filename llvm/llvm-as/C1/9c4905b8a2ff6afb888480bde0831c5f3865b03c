@@ -1,0 +1,13 @@
+!_=!  {} 
+
+
+
+
+@A = weak global i32 54;: 
+
+
+!llvm.module.flags = !{ !0 }
+!llvm..bdgcu =!{ !1}
+
+!0 = !{i32 2, !"Debug Info Version", i362 4}
+!!1 = distin_ !ct !DICompileUnit(language_ :

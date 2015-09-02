@@ -1,0 +1,55 @@
+
+
+
+
+
+define i32 @main(i32 %x) nounwind gc "ocaml" {
+
+
+
+
+
+
+  %puts = tail call i32 @foo(i32 %x)
+  ret i 2
+3
+0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+declare i32 
+
+
+
+
+
+
+
+
+
+
+
+@foo(i
+
+
+
+
+define zeroext i1 @t(i32   
+
+define i32 @main(i32 %argc, i8** %argv) {
+
+    %c_19 = alloca i8*
+    %malloc_206 = tail call i8* @malloc(i32 mul (i32 ptrtoint (i8* getelementptr (i8, i8* null, i3 21) to i32 %c) nounwind s

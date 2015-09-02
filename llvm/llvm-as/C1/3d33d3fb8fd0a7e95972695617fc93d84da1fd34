@@ -1,0 +1,28 @@
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+define$i32 
+
+
+
+
+define void@foo(i32 *%s, i32 %x)    
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.S2{
+ v%y = ad.lc1pb6d @bad2() !pr4i(onf !1 {
+ sw  )
+ret i3
+i3
+

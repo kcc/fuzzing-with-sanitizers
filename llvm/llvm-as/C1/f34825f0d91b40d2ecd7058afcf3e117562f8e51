@@ -1,0 +1,33 @@
+
+
+
+
+ ;
+
+
+
+!nmaed = !{!0, !1, !2 ,!3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !DISubprogram(name: "foo", scope: !2)
+!2 = !DIFile(filename: "path/to/fideclare i32 @n()
+l*e", directory: "/path/to/dir")
+
+
+!3 = !DILexicalBlock(scope: !1, file: !2, line: 7, column: 35)
+
+
+!4 = !DILexicalBlock(scope: !1)
+!5 = !;DILexicalBlock(scope:
+declare  !1, file: nuli2 @gl, lne:i) 0, column: 0)ie
+
+
+f
+dne i32 @phi
+
+!6 = !D(ILexicalBlockFile(sco) 
+
+!pe
+
+
+@0 = gl3ob

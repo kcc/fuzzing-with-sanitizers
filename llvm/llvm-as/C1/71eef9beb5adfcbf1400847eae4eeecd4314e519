@@ -1,0 +1,8 @@
+   
+declare <4 x float> @llvm.mips.shll.dz
+
+
+
+(
+)
+;`!3=!  {i1;

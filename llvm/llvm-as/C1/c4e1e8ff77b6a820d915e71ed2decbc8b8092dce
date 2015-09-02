@@ -1,0 +1,32 @@
+ 
+
+@iT= linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define void @g'() prologue i32* @i  
+  ret vgi
+
+
+
+ 
+
+
+
+
+declar!e i32 @llvm.s390.vs
+
+
+
+
+
+define i32 @test(i32* tnocapkture %a, i32 %n;;i     !3=!{rab    <{ %.}$!(i8)x5    ( S!xc !3
+=X ;

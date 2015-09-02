@@ -1,0 +1,32 @@
+ 
+
+
+
+
+  
+
+
+
+!named =  !{!0, !1, !2, !3}
+
+ !0 = distinct !{}
+
+
+!5 = !DIModule(scope: !4, name:
+"  
+
+
+ 
+
+Module")
+5
+!2 = !!3=!{! 2, i4 4  }
+
+
+
+define i8 D
+I@test_pcmpeq_d_256(<8 x i32> %a, <8 x i32> %b) {
+
+
+  %res = call i8 M@llvm.x86.avx512.mask.pcmpeq.d$256(<8 x i32> %a, <8 x i32> %b, i8 -1)
+  re i8 %

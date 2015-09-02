@@ -1,0 +1,18 @@
+
+  
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepo nt-exrmple" {
+
+endry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.
+  
+
+

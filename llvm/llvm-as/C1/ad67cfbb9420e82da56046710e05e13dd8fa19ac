@@ -1,0 +1,39 @@
+
+
+  
+ ;!i
+
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+!0 = !DIBasicType(tag: DW_TAG_base_type, name: "n
+
+  
+
+
+
+!n;amed =  !{!0, !1, !2, !3}
+
+!0 != distinct !{}
+
+declare <4 x float> @
+
+!1 = !DIModule(sallvm.mips.slli.d(
+
+
+
+
+)
+;me", size: 18446744073709551615, align: 18446744073709551614, encoding: DW_ATE_unsigned_char)
+!1 = !DIDeri
+vedType(tag: DW_TAG_pointer
+_type, baseType: !0, sco ,p!:e4| name:
+"  
+
+define i3

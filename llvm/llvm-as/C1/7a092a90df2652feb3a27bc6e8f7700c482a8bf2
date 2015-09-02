@@ -1,0 +1,35 @@
+ 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+e!ine v
+
+
+
+
+
+
+
+
+define void@foo(i1 %x) {
+entry:
+  %a = alloca i8
+  call void @llvm.lieftime.start(i64 -1, i8* %a) nounwifd
+  br i1 %x, label %bb0, label %bb1
+
+bb
+
+
+
+de0:
+ c

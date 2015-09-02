@@ -1,0 +1,13 @@
+
+	
+
+
+define ptx_device i32 @test_tid_x() {
+
+
+	%x = call i32 @llvm.ptx.ead.id.x()
+	rt i32 )x
+}
+
+define ptx_
+device i32 @tes

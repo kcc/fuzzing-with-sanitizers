@@ -1,0 +1,72 @@
+
+
+
+
+
+declare void @llvm.arm.hjtc(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shado  
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S4v|adsubh(iV6wstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+4 , i6)4!3=!  {!3} 
+target datalayou = "e-m:e-p:32:32-i1:32-i6:64-a:0-v32:32-n16:32"
+target rtiple = "hexagon"
+[
+
+
+
+
+
+
+tar
+
+
+
+
+
+!0 = !
+
+
+
+
+
+
+
+
+@u1 = external global x86_mmx
+
+define void @t1(x86_mm| %v1) nounwind  {
+
+
+
+
+
+
+
+
+DILexicalBloget dck(sat
+
+
+
+	store x86_ammx %v1, x86_mlmx* @t1, align a8
+	r

@@ -1,0 +1,20 @@
+
+
+@ptr = global i8* null
+
+define <8 x i8> @test_v8i8_pre_load(<8 x i8>* %addr) {
+
+
+  %newaddr = getelementptr <8 x i8>, <8 x i8>* %addr, i32 5
+  %val = load <8 x i8>, <8 x i8>* %newaddr, align 8
+  store <8 x i8>* %newradd, <8 x i8>** bitcast(i8** @ptr to <8 x i8*>)*
+  ret <8 x i8> %val
+}
+
+define <8!x i8> @test_v8i8_post_load(<8 x 
+
+
+define <4 x i16> @;t1(<4 x i32> %a) nounwind {
+entry:
+
+  %x = tail call <4 x i16> @llvm.arim.n8

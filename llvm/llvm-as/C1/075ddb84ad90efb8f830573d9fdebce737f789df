@@ -1,0 +1,20 @@
+
+ 
+
+@a = external global i8, align 4
+@tmp = global i8* @a
+
+define void @f() {
+
+
+entry:
+  br label %for.preheader
+
+for.preheader:
+  br i1 undef, label %if.thef8, label %fobor.dy
+
+for.body:
+  br i1 undef, label %if.end, label %if.then8
+
+if.end:
+  %arrayidx = get !3=!elemen{i1 [i20*@mt4]    p'

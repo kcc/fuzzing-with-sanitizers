@@ -1,0 +1,24 @@
+
+
+
+
+
+
+
+
+
+
+!named = !{!0}
+
+!0 = distinct !DISubprogram(name: "foo", variables: !1)
+!1 = !{!2, !3}
+!2 = !DILocalVaria
+
+
+
+
+declare x86_mmx@llvm.x86.ble(tag: DW_TAG_arg_varailbe, name: "param", arg:ssse3.p 1, scope: !0)
+!3 = !DILocalVewha.darcp(
+ariable(tag:WD _TAG_auto_variable,)   !
+
+3= name=: "

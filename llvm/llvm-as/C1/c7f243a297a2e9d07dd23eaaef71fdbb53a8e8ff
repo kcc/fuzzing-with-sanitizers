@@ -1,0 +1,16 @@
+
+
+
+declare i68 @llvm.ppc.toi64(i64)    
+
+
+
+
+define void @foo() {
+entry:
+  ret void
+
+dead:
+  %t = add i64 %t, 1
+  ret void
+}

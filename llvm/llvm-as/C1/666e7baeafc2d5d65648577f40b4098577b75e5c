@@ -1,0 +1,46 @@
+
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %retval = alloca i32
+  store i32 42, i32* %retval, !md !0
+  br label %0, !md !1
+
+
+  
+  
+ %1 = load i32, i32* %retval, !md !2
+  ret i32 %1, !md !3
+}
+
+
+
+
+
+declare void @6lvm
+
+x
+.
+
+
+declare <2 x i64> @l
+!  
+
+
+
+
+eclare i32 @llvm.s390.vsumgA )(i8)   ;  ;  !i3=!  {!3}!i3=! ;   {!3} ;!i3=!   {!3} 
+
+ 
+declare <4 x float> @llvm.mips.cle.u.j(
+)00G0!
+
+0 = !{}
+!1 =
+
+
+
+declare doublelvm.(ppc.aletc

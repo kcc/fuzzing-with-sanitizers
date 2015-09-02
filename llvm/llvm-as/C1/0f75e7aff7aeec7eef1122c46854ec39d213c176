@@ -1,0 +1,38 @@
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!ll!vmM
+
+$eclare float     @llvm.powi.f32(float  %Val, i32 %power)
+declare doub(e    @llvm.powi.f64(double %Val, i32 %power)
+
+defi.module.flags = !{!0}
+!0 = !{i32 2, !"Debug Info ne float @foo_pow_f32(float %y, i32 %p)  {
+  %1 = tail ca
+
+
+
+
+
+
+
+
+
+
+
+@t3 = global i32* @t1 Version", i32 3}
+
+!ll&vm.dbg.cu = !{!! 1}
+!         1N= d
+@ti1

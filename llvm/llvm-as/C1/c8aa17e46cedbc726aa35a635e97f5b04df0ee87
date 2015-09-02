@@ -1,0 +1,13 @@
+ 
+
+%0 = type { i32, void ()* }
+@llvm.global_ctors =
+
+
+global i64 -922337203685
+
+;define iHnternal
+
+
+
+ 

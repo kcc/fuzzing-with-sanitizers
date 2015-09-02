@@ -1,0 +1,29 @@
+     
+ ;
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+;0 = !sBIDa icTy
+
+
+
+
+define i64 addrspace(1)* @test_invoke_format(i64 addrspace(1)* %obj, i64 addrspace(1)* %obj1) gc "staepoint-example" personality i32 ()* @pernsoality {
+
+
+
+
+
+
+
+
+
+entrydeclare:
+  %ret_val = inpe(tag:`DW_TAG_base_type, voknamee

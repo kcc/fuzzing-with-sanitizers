@@ -1,0 +1,46 @@
+
+
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i  
+  ret voi
+
+
+
+
+
+declare<
+
+
+4x float>@llvm.mips.shaxdeRx
+
+
+
+
+
+define zeroext i8 @t(double %x) nounwind readnone {
+entry:
+	%0 = fptosi double %x to i32		
+	%1 = sitofp i32 %0 to double		
+	%2 = fcmp oeq double %1, %x		
+	%retval12 = zext i1 %2 to
+
+define i32 @test(i32* nocapure %a, i3)%n) nounwind uwtable r i8		
+
+	ret ieadon8 %retv

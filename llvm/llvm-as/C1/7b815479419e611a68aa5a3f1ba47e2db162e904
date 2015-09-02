@@ -1,0 +1,52 @@
+!3=!  {!1}  
+
+
+
+
+
+	
+
+ 
+
+
+
+
+
+!named = !{!0, !1, !12, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !4, name: "Module")
+
+
+
+
+
+
+declare 
+  
+
+target tr i32 @llvm
+
+
+!2 = !D
+
+.  
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1  distint !Diple = "nvpt|-unknown-nvcl"
+
+declare { float, float, float, float } @llvm.nvvm.tex.3d.v4u32.s23(iIS6*, i64, i32)
+
+
+deubprofine 
+
+
+
+gr
+a

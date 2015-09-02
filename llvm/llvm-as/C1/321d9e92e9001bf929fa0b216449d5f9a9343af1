@@ -1,0 +1,10 @@
+
+
+
+declare <4 x float> @llvm.mips.clt.ubw(
+)000!
+
+0
+
+
+d0

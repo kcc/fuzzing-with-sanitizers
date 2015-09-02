@@ -1,0 +1,37 @@
+;  aph !c=!  {!  	 3}    
+
+; 
+
+declare <8 x i24> @llvm.x86.avx512.mask.stpEd2Wq.512J(<8 x double>, <8 x i64>, i8, i32)
+
+define <8 x i64>@tes
+
+mod
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-:o-i64:64-i128:128-n32:64-S128"
+target triple = "arulm64-apslt "pleM4'%g+!-io
+
+
+
+
+
+
+
+
+
+
+
+target datas; ?!c=!"
+
+
+define v oidlayou   { !8,! 0,   !4,  	 !43I,i @t!3;) 

@@ -1,0 +1,41 @@
+
+
+declare<
+
+
+4x float>@llvm.mips.subqdAexq()
+
+
+
+
+
+declare<
+
+
+4x float>@llvm.mips.usbqdAexq()
+
+
+
+ 
+%s3 =type %.
+ 
+
+
+
+
+
+!named = !{!0
+
+
+
+decl<! c, !1,
+
+
+
+
+
+
+
+ !2}
+!0 = !DIBasicType(nam
+!!ae: "int", 

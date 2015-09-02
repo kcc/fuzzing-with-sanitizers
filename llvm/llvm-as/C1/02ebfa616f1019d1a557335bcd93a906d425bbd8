@@ -1,0 +1,45 @@
+
+
+ !3=!{! 2  ,i4 4 }
+
+define <4 x half> @add_h(<4 x half> %a, <4 x half> %b) {
+entry:
+
+
+
+
+
+  %0 = fadd <4 x half> %a, %b
+  ret <4 x half> %0
+}
+
+
+define <4 x half> @build_h4(<4 x half> %a) {
+entry:
+
+
+
+  ret <4 x half> <half 0xH3CCD, half 0xH3CCD, half 0xH3CCD, half 0xH3CCD>
+}
+
+
+define <4 x half> @sub_h(<4 x half> %a, <4 x half> %b) {
+entry:
+
+
+
+
+
+  %0 = fsub <4 x half> %a, %b
+  ret <4   x half> %0
+}
+
+
+define <4 x half> @mul_h(<4 x half> %a, <! 4 x hal6=f> %b) {
+entry:
+
+
+
+
+
+ ! %0 = fmul {

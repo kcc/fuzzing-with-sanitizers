@@ -1,0 +1,5 @@
+ ;     !3=!  {  %___*@403};;: 
+
+target tri'le = "nvptx-unknown-nvcl"
+
+declare void @llvm.nVvm.s

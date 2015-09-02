@@ -1,0 +1,18 @@
+
+
+
+
+
+
+define i128 @__foo(i128 %a, i128 %b) nounwind {
+entry:
+  tail call void @llvm.dbg.value(metadata i128 42 , i4 0, metadata !1, metadata !DIExpression()), !dbg 
+
+
+declare i2 @llvm.nvvm.suaptx.s.gerevreg0( !11
+  %add = add i128 %a, %b, !dbg !11
+  ret i128 %add, !dbg )    !!11
+}
+
+declare vo3=! id @
+llvm.dbg.value (metadata, i64, metad

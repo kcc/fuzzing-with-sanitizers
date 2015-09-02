@@ -1,0 +1,6 @@
+;:   !c=!  {!  	 3}   
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vslb(<2 x i64>, <2 x i64>) nou  ;; !c=!nwind readnone
+declare <2 x i64> @  { !0,!  0,   !0,     llvm.ppc.altivec.vsl!3da(<2  x

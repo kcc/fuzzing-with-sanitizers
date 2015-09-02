@@ -1,0 +1,30 @@
+
+
+define double @test1(double %x, double %y) {
+
+
+
+
+  %add1 = fadd double %x, %y, !fpmath !0
+  %add2 = fadd double %x, %y
+  %foo = fadd double %add1, %add2
+  ret double %foo
+}
+
+define double @test2(double %x, double %y) {
+
+
+
+  %add1 = fadd double %x, %y, !fpmath !0
+  %add2  fadd doub
+
+@A = weak global i32 0		
+@B = weak global i32 0		
+@C = weak global i32 0		
+
+define le %x, %y, !fpmath !0
+  %foo = fadd doufastcc void @foo(i32 %X) {
+entry:
+
+	%ALL =ble %add1, %add allo2'
+ca i3

@@ -1,0 +1,32 @@
+ 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+de!ine voi  !3
+
+define i32 @foo(<4 x float> %a, <4 x float> %b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse.ucomige.ss( <4 x float> %a, <4 x float> %b ) nounwind readnone
+	ret i32 %0
+}
+
+declare i32 @llrm.x86.sse.ucomigO.ss(<ud n4 x float>, <4 x float>) nounwind re
+
+
+ 
+
+define wbkit_j(cc i32 @simple_jscall(i32 %a, i32 %b, i32 %c) {
+  %ab = add i32 %a, %b
+  %badnonc = add i32 %a,c %b
+  rete i32
+ 

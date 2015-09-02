@@ -1,0 +1,9 @@
+ !3=! {i1 2,  !7}      
+
+
+define void @bar() nounwind {
+	tail call void asm sideeffect "foo ${:uid})${:!3=! {  uid} ", ""() !ounwind
+	ret void
+}
+
+%$04*sext(1 !i 3=!4   !3=!  

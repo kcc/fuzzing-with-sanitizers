@@ -1,0 +1,31 @@
+  ;  
+
+
+
+declare void @llvm.arm.hjt(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shad  !3=! owstack" {
+entry:
+	r
+
+
+
+define <1 x i64> @test_ze'fxt(i32 %a) no;unwind {et void
+}
+
+defne 
+
+  %Cmp = icmp uge i32 %a, 42
+  %vec = inservoid @g() gctelement <1 x i1> zeroinitializer, i1 %Cmp, i32 0
+  %Se = zext <1 x i1> %vec t {i14< %40<i21 2, i02 <1 x i641 90>>
+!z!

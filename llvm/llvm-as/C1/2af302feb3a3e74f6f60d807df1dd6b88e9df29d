@@ -1,0 +1,32 @@
+
+
+
+!0 = !{!"zero"}
+!1 = !{!"one"}
+!2 = !{!"two"}
+
+!foo = !{!0, !1, !2}
+
+
+!\23pragma = !{!0, !1, !2}
+
+
+
+
+!\31\31\31 = !{!0, !1, !2}
+
+
+!\22name\22 = !{!0, !1, !2} ; !
+
+@X = external global i8
+@Y = external global i8
+@Z = external global i8
+
+@A = global i1 add (i1 icmp ult (i8* @X, i8* @Y), i1 icmp ult (i8* @X, i8* @Z)
+
+
+
+
+!\)
+
+@B = global i1 x

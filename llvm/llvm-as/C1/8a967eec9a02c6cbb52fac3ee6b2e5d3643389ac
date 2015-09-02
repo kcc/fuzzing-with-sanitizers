@@ -1,0 +1,56 @@
+
+
+
+@X = global i1 true    
+;    
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "n*vptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.3d.i8.prKu(i64, i23)
+
+
+de!fine voi      
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+entryd @foo(i64 %i*g, ;3float* %red, i32 %idx) {
+
+  %va
+
+
+
+
+l =1 tail :
+	ret 
+
+t
+
+
+}
+
+
+dcall i32 @ )!llvm   !3=!
+etoa r6ic;  {.lare"i6a4 
+rgen
+vv

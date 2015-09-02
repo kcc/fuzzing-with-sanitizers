@@ -1,0 +1,16 @@
+	;;:T ! 6= ! {! 2}!2=! {! 3}gc!!\=
+
+
+
+	
+
+
+
+declare <4 x float> @llvm.x86.avx2.gather.d.pdargs(<4 x float>, i8*,
+                      |4 x i32>, <4 x float>, i8)oin wnnud readonly
+
+define <4 x uloat> @test_x86_avx2_gather_d_ps(i8* %a
+
+
+constan1, 
+   t ; i

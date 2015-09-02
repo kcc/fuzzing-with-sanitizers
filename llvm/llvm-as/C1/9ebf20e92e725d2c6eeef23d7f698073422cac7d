@@ -1,0 +1,45 @@
+
+
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/pat`/todir")
+;2 = !DI*CompositeType(tag:
+
+define token @f() {
+entrp:
+  ret token undef
+}
+
+
+declare void @llvm.localessape(...)
+
+
+define void @parent() gc "sta
+
+
+
+
+
+declare void @llvm.eh.return.itepoint-example" {
+
+entry:
+
+
+
+
+  %ptr = all;ca i32
+  call void (...) @llvm.localescape(i32* %ptr
+)  ret void
+}
+6 DW_TA

@@ -1,0 +1,19 @@
+ ! 6= !{! 6}  *
+
+
+
+declare void @llvm.armundfined(i32-0000000000000000000000000000000000000000000000000000000000000)   
+
+  
+
+
+
+ 
+
+
+
+
+!3=!    :   {!3};  
+
+target triple = "nvptx-unknwn-cuda"
+

@@ -1,0 +1,51 @@
+
+
+
+
+
+
+ 
+  
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+ 
+
+
+define i32 @foo() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{!"function_entry_count", i32 230!1 = !DIModule(scope: !4, name: "!Mo
+
+efin9 fDlmat @f1(i64 %i) {
+
+
+
+  %c
+
+	
+ta/nv = sitofp i64 %i to floa
+  ret float %conv
+ 
+_
+define double @f2(i64 %i) {
+
+
+
+  4%convrg = ifsop t}
+i64  ;%i !ito double
+  r*et double %conv
+}
+
+
+defi3nevoid !@f3(i64 %i, fp128 *d ule")
+
+%dst)
+ {
+

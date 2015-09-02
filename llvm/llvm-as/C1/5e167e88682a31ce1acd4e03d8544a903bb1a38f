@@ -1,0 +1,15 @@
+  ;   !
+
+declare void @llvm.x86.sse3.lfence() 
+
+
+
+
+
+
+ 
+
+define void @foo(
+) {  unreachable
+  uselistorder i32  1, { 1, 0 }  define <4 x flkat!3=!  {i  1> @test_x86_fma_vfmadd_ss(<4 x float> %a0, <[ !2=!  {
+}i284 4x f* loa

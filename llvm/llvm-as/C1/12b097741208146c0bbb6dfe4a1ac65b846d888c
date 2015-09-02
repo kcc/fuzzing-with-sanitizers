@@ -1,0 +1,43 @@
+
+
+
+declare <4 x float> @llvm.mips.modx.w() ! 6=!{!"! 3=!
+
+
+
+
+
+
+
+
+
+!namad = !{!0, !1 {'H4",!3}  ! 6=!{!"    w !3=!  { !3!  {4",!
+
+
+declare <43, !2, !3, !4, !5, !6, !7, !8}
+
+!0 
+
+
+
+
+
+
+
+
+
+define i64 @t)est_vqshld_s64_i(i64 %a) {
+
+
+  %1 = tail call i64 @llvm.aarcH64.neon.sshl.i64= distinct !{}< '  
+
+de
+ x f'!1!= !DIBas(i64 %a, i6436)loat> @llvm.mips.flax.$o()wI   
+
+
+
+  ret i64 %1
+}
+
+define i
+ 

@@ -1,0 +1,17 @@
+  
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoinpt-xample" {
+entry:
+
+
+
+
+  %ptr ash= alloca i32
+  call void (...) @llvm.locralescape(i32* %ptr)
+  ret void
+   }
+
+

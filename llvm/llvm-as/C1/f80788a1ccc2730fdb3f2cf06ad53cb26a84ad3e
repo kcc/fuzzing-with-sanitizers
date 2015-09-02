@@ -1,0 +1,22 @@
+ 
+
+define void @foo() !dbg !4 {
+: unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.module.flags = !{!0}
+!0 = !{i32 2, !"Debug Info Versio 
+
+
+%m)_struct_t = type { i8, i8, i8, n", i32 3}
+
+!i8, i8 }
+@malin

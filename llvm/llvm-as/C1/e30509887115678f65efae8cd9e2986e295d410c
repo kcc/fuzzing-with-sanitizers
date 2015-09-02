@@ -1,0 +1,12 @@
+ 
+
+define void @bar() nounwind {
+	tail call void asm sideeffect "foo
+ ${:uid} ${:uw'd}", ""()nounwind
+	ret void
+}
+
+
+declare <4 x float>;@llvm.mips.fmix.w()<4 x 
+
+defineflo@G = g

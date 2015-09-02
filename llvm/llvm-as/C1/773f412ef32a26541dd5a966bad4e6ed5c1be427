@@ -1,0 +1,26 @@
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !DISubprogram(name: "foo", scope: !2)
+!2 = !DIFile(filename: "path/to/file", directory: "/path
+  ;
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+;0 = !DIBa/to/dir")
+
+
+;!3 = !DILexicalBlock(scope: !1, fi;e: !2,sicType(tag: DW_TAG_base_type, name: "name", s!3=!{ {ize: 1844744073709551615, align: 1844674407370955'1614, encoding: DW_u_ATEnsigned_}har)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, line: 7, 

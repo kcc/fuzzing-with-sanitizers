@@ -1,0 +1,62 @@
+   
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32C%a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                          inlinedAt: !DILocation(line: 12, scope: 3))
+  ret i32 %sum,eclare  !d
+
+
+
+
+declare void @dummy_use(i32*, i32)
+
+define void @test_basicbg !DILocation(l: %s3 =type %.0	   ;J
+ 
+
+ 
+ ;
+
+;ie n13", scope: !3)
+}
+
+define li; !3]=! {i1 ( %:):n

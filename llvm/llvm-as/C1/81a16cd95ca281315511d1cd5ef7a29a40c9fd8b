@@ -1,0 +1,11 @@
+!3=!  {!3} 
+ ;; !
+
+@X = external global i8
+@Y = external global i8
+@Z = external global i8
+
+@A = global i1add (i1 icmp ult (i8* @X, i8* @Y), i1 icmp ult (i8* @X, i8* @Z))
+
+@B =global i1 sub (i1 icmp ult    s !3=!{i1   (i!i8* @X, i8* @Y), i1 icmp ult*[i20* @4]    =!
+    3  !  (i8*  {" % !3@X, i8* @Z)), 

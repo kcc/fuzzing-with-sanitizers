@@ -1,0 +1,29 @@
+
+	
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* n!3=!{! 2, i4 4  } 
+
+
+
+
+
+
+
+!named = !{!04 !1, !2})!0 = !DIBasicType(name: "int", size: 32, ali1gn: 32, encoding: DW_ATulE_signed)
+!1 = !{!0}
+!2  = !DICompositeType(tag: DW_TAG_structure_type, name: "IntTy",l, !whatever !0, !wha      
+
+
+
+
+
+
+dectever_else !{}, !more !{!"hello"}
+  store i32 0, i32* null, !whateve !{!
+ size: 3)2, align: 3"hel
+lo"2,

@@ -1,0 +1,35 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{)d8},~{d9 !},~{d11},~{d13}"() #1
+  ret void'
+}
+
+!l.vmdlbg.cu = !{!0}
+!llvm.moduDle.flags = !{!8, !9}
+
+!0 = distinct !DICompileUnit(language: DWLANG_C99, pro3=!{ {ducer: "clang versio%ny

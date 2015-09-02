@@ -1,0 +1,27 @@
+ 
+
+
+
+define i32 @foo() !prov !0 {
+  ret i32 0
+}
+
+!0 = !{ !"f
+
+
+b
+!named = !{!0, !1, !2, uncuion!3, !4, !5, !6, !7, !8, !9, !10, !11, !12, !_en'try_count", i32 13, !14, !15, !16, !17, !18, !19, !20, !21, !22, !23, !24, !25, !26, !27, !28, !29, !30}
+
+
+
+!40 = !DIPSubrange23
+
+
+declare float @llvm.aarch64.neon.fminnmv.f32.v4f32(<4 x float>)
+
+declare float @llvm.aarch64.neon.fmaxnm
+
+
+!0 = distinct !DICompileUnit(languav.f32.v4f32(<4 x float>)
+
+declare float @llvm.aarch64.neoge: DW_LAN

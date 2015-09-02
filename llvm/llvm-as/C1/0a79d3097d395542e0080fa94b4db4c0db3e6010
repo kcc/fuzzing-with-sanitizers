@@ -1,0 +1,19 @@
+
+
+
+;
+
+
+
+
+define double @test1() {
+  %t = sitofp i32*undef to double
+  ret double %t
+
+
+}
+
+
+
+
+define i32 @test2() nounwind r

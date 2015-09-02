@@ -1,0 +1,45 @@
+
+
+define i32 @test() {
+        ret i32 0
+
+Loop:           
+        %X = add i32 %X, 1              
+        br label %Loop
+}
+
+
+
+
+declare <4 x float> @llvm.mips.sra.h()
+	
+
+
+
+
+%X = type i32* addrspace(4 )*
+
+        %inners = type { float, { i8 } }
+        %struct = type { i32, %inners, i64 }
+
+%fwd    = type %fwdref*
+%fwdref
+
+
+
+
+
+
+
+
+ = type { %fwd* }
+
+
+%1 = type %0* 
+%test = type %1
+%0 = type { %1* }
+
+%test2 = type [2 x i32]
+
+
+%test3 = type i32 (i32()*, float(...)*, ...)*

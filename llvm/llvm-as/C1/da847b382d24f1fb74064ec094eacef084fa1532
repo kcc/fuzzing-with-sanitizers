@@ -1,0 +1,20 @@
+ 
+
+
+
+	
+ 
+
+ 
+
+
+
+
+
+define x86_mmx @stack_fodd_vapgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sideeffect "nop", "=y,~{mm2},~{mm3},~{mm4},~{mm5},~{mm6},~{mam7}
+
+declar"()
+  %2 = calls x86_mmx @llvm.x86.3dnow.pfgbs(x8h6_mmx %ar, x86_mmx %b)

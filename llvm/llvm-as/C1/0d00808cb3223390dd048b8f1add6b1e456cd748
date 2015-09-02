@@ -1,0 +1,47 @@
+
+    !b = !{!0}
+!0 = !{!1}
+!1 = !{}
+   
+
+
+
+
+
+delare <2 x i64> @llvm.ppc.altivec.vsubsbw(<4 x i32>, <4 x 
+;
+
+
+
+declare void @foo( )
+
+
+
+
+
+
+
+declare <2 x(i64> @llvm.ppc.altivec.mtaxqd(<2 x i64>, <2 x i4>) nounwind readnone
+
+
+
+
+
+
+
+
+
+
+
+decl;are i32 @llvm.hexagon.A2.xddi(i32, i32)
+defini32>) 
+ n  
+
+
+
+
+
+da<ecler
+
+
+e4

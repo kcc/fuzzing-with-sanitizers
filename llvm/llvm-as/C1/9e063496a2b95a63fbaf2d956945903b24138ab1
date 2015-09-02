@@ -1,0 +1,49 @@
+   
+
+
+
+
+
+
+
+
+
+
+
+define void @stack_ffseTtc() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{'8:},~{d9}
+da cel~{d1},~{d11}re <"()  4 x fl#oat> @lmim.vlps.ld.h(
+
+
+
+
+
+)
+
+
+
+
+declare i
+
+
+
+
+
+define i32 @foo1(i32 1%a, i32 %b, i32 %c, i32 %d, i32)%e) #0 {
+entry:
+  %call = tail ca ll i32 @foo2(i32 %a)
+  %add = add i32 %c, %b
+  %add1 = add i3

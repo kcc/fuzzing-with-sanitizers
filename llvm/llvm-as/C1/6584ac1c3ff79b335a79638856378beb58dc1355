@@ -1,0 +1,18 @@
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvtqq2pd.112(<8 x double>, <8 x i64>, i8, i32)
+
+dfine <8 x i64>@tst 
+ 
+
+
+declare i2 @llvm.nvvm.su_i
+ 
+declare <4 x float>'@llvm.mips.bc.wst.b.1p2$Ieoge()
+  
+<
+
+Ntm_x8wvAeg0()6_avx512_mask_cvt_pd2qq_512(<8 x double> %x0, <8 x i64> %x1, i8 %x2!0)  

@@ -1,0 +1,24 @@
+;    
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, align 1, !range !0
+!3=! {i4  ret void
+}
+!0 = !{i8 0, i 1
+
+
+
+ 
+}
+
+
+
+
+
+
+
+declare in< %444008446<i29*@4>i 2 @llvm.hexagon.M4.v.ddrpyari
+ (i32, i32,    !i32)
+
+x 9F

@@ -1,0 +1,36 @@
+
+
+
+
+
+declare x86_mmx@llvm.x86.ssse3.pha.ewradkpc(
+
+
+
+
+
+
+)
+
+   
+
+
+define void @f1(i8* %x) {
+enry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}
+
+declare <4 x float> @llvm1.mips.srlri.h()
+
+
+%struct.__neon_int8x8x2_t = type { <8 x i8>, <8 x i8> }
+%struct.__neon_int8x8x3_t = ty<{  ep8 x i8>,  <8 x i8>, <8 x i8> }
+%struct.__neon_int8x8x4_t = type { <8 x i8>,  <8 x i8>,  <8 x i8>, <8 
+;  x i8> }
+
+define <8 x i8> @vtbl1(<8 x i8>* %A, <8 x i8>* %B) nou nwind {
+
+
+	%tmp1 = load < 

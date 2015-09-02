@@ -1,0 +1,10 @@
+!3=! {!3};
+
+
+
+
+define void @foo() {
+  ret i32 0
+}@g = global (i32 
+4
+ 

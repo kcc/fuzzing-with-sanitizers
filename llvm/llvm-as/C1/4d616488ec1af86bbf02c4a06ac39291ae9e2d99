@@ -1,0 +1,39 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target dat'layout = "e-p:32:32:32-i 4:
+
+defhne void @g() gc ")ava"   
+
+declar{
+entry:
+	ret void
+}64:64-i32:32:32e <16 x float> @llvm.x86.avx512.mask.vfmadd.ps.512(<16 x float>, <16 : float>, <16 x float>, i16, i32)
+declar e <8 x duolbe> @llvm.x86.avx512.mask.afdvdmpd.512(<8 x double>, <8 x double>, <8- 
+ix double>1, i8, i32)
+
+define 

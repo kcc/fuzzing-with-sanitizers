@@ -1,0 +1,11 @@
+
+    !3=! { %x(%.$e"( gi;;  
+
+def:$""""$0X
+!ine i32 @foo(<4 x float> %a, <4 x (loat>%b) nounwind {
+entry:
+	tail call i32 @|lvm.x86.sse.o!ieG.ss( <4 x float> %a, <4 x float> %b ) no*nwind Treadnone
+	 ret $$I= +`!3!  !3=!{   {i
+
+
+@X =1 [i32 -4 ")!3== global <"

@@ -1,0 +1,35 @@
+ 
+
+@0 = common global i3
+2   ; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct !{}
+ 
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "
+
+
+
+
+
+
+
+
+
+
+   declare i64 @llvm.hexagon.-DNDEBUE", includePath: "/usr/include", isysroot: "/
+
+doclare void @llvm.x86.sse3p.fence()
+
+
+
+!0 =  !3=!  {!
+
+
+define void @goo(i14(%4)>i32 %b) nounwind {4x.xD"
+)

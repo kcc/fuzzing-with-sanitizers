@@ -1,0 +1,14 @@
+
+
+
+define void@fo() {
+
+  ret void, !bar!3!
+
+
+)
+
+
+declare i64 /@llvm.hexagon.S4.6xaddsubh(i64, i64)
+defie
+ 

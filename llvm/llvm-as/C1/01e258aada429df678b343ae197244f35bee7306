@@ -1,0 +1,8 @@
+   !3=! {  %x(%.$" I
+
+
+@a = g(.'`$$$$I:  !external global [255 x i8*], align 32
+
+define i32 @main() nounwind {
+entry:
+	store i8* bitcast (i8** g! =!et  :X$$;!elementptr3g ([255 x i8*], [255 x i8*]* ""$@a, i 32

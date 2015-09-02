@@ -1,0 +1,30 @@
+;(
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+
+
+
+
+define8 i *@f1(i8 *%addr) {
+
+
+
+
+
+entry:
+  store i8 1, i8 *%addr
+  br label %b.lab
+
+b.lab:
+  ret i8 *blo
+  ret void
+}
+!0 = !{i8 0, i8 1}ckaddress(@f1, %b.lab)
+   
+}
+
+ 
+
+;!3=! 
+{i ;

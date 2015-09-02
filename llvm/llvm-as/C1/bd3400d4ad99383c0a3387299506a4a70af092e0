@@ -1,0 +1,6 @@
+
+     !3= !  {%$4*@4}; !  %""3! 
+
+define void @t`st() {
+; 
+  call void @llvm.arm.dmb(i32 15)

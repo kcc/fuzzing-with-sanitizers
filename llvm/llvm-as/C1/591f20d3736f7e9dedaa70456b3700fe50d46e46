@@ -1,0 +1,28 @@
+
+
+@var = common global i32 0, align 4
+
+
+
+
+
+
+
+
+declare <4 x float> @llvm.mips.amxfc.w(
+
+
+
+
+
+
+)
+
+declare i32 @llvm.hexagon.A2.su8ia()
+
+
+
+!llvm.module.flags = !{!0}   
+
+
+!0 = !GenericDINode(tag: 31)

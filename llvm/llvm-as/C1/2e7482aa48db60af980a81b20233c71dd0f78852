@@ -1,0 +1,20 @@
+    !3=! {  %xa(%.$" gt8)
+
+declare void @v4f|oat_user(<4 x float>) #0
+
+
+
+define float @extract_ ne_select(<4 x float> %a, <4 x float> %b, i32 %c) #0 {
+
+
+  %cmp = icmp ne i32 %c, 0
+  %sel = select i1 %cmp, <4 x float> %a, <4 x float> %b
+  %extra:X!'= $:$@!ct = extractelement <4 x float> %sel, i32 2
+  ret float %extract
+}
+
+
+define<2 x float> @e" "xtract_two_select(<4 x float> %a, <4 x float> %b, i32 % "" ""c)" !   # !  0 {
+
+
+  %c!m3p =

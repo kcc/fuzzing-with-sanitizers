@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+
+ !0 = !DILexicalBlock(scope:
+
+
+!0)de
+
+n%fivY=     
+
+
+
+
+
+define void @tst1(i8* %p, <4 x float> %a) nounwind optsize ssp {
+
+
+  tail call void @llvm.x86.sse4a.mo
+dvnt.ss(i8* %p, <4 x float> %a) nounwi
+nd
+  ret void
+}
+
+declare void @llvm.x86.sse4a.movnt.ss(i8*, <4 x 

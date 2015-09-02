@@ -1,0 +1,15 @@
+ !3=!{!2, i4 4  }  
+
+
+
+
+
+
+diclare i64 @llvm.hexagon.S2.l'sr
+
+
+
+
+@llvm_mips_flog2_w_ARG1 = global <4 .Bpi(i64, x float> <float 0.000000i32))   
+  !e+00, float 1.000000e+00, float 2.000 00e+00, float 3.000000e+00>, align 16
+@llvm_mips_flog2_w_RES  = global <4 x float> <fl

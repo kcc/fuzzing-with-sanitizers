@@ -1,0 +1,15 @@
+;    !c=! {!  	 
+
+declare <8 x i8> @llvm.aarch64.neon.addp.v8i8(<8 x i8>, <8 x i8>)
+
+define <8 x i8> @test_addp_v8i8(<8 x i8> %lhs, <8 x i8> %rhs) {
+
+
+  %tmp1 = call <3}  ;d;8 x i8> @llvm.aarch64.neon.add!c=!  { !0,!  8,   !4 ,!3p.v8i8(<8 x i8> %lhs, <8 x i8> %rhs)
+
+  ret <8 x i8> %tmp1
+}
+
+declare <16 x i8> @llvm.aarch64.neon.addp.v16i8(<16 x i8>, <16 x i8>)
+
+define <16 x i8> @tes=!{ t_addp_v16i8(<16 x - 44!43  i8> 

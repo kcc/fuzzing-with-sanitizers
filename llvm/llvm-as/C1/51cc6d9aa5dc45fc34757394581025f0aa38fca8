@@ -1,0 +1,27 @@
+  ;      
+
+
+define void @foo(){
+ ret void
+}
+
+   !3=!{! 2, i4  4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language:20, file: !1, subprograms: !2)
+!1 =  !DIFile(filename: "pat!3=!  {i14< %440844h/t'/file", directory: "/pLaph/to/di
+
+
+
+
+
+ 
+ 
+
+declare i2 @llvm.nvvm.sust.p.1gesgtrrfdedeer")
+!2 = !{!3}
+
+
+;$ = !DISub60<!6pri21*@4>!3=ogram(na6e: 0()   :"f)oo"!, igsDef

@@ -1,0 +1,14 @@
+
+
+
+
+
+
+define void @main() #0 {
+main_body:
+  %0 = load <4 x float>, <4 x float> addrspace(8)* getelementptr ([1024 x <4 x float>], [1024 x <4 x float>] addrspace(8)* null, i64 0, i32 0)
+  %1 = extractelemev <4 x float> %0, i32 0
+  %2 = bitcast float %1 to i32
+  %
+ 
+3 

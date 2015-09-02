@@ -1,0 +1,39 @@
+ 
+	%union.x = type { i64 }
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, alygn4
+
+ 
+
+
+
+glob':4l i32 3X6 70016
+
+
+
+
+
+@
+
+
+
+
+
+de9lare i8* @llvm.a
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 x, i64 0, metadata !1) 
+ store i32 0, i32* null, !whatever !0, !whatever_else !;:
+;
+
+
+
+d^efine <16 x i8> @select_s_v_v(i32 %avail, i8* %:ar) {zentry
+art6:
+  %vld1l l=c  <16 x i8> @llvm.arm.neon.vld1.v16i8(i8* %bar, i32 1)
+  %and = and i32 %avav.hch4ead.Jdileclarpo

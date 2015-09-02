@@ -1,0 +1,4 @@
+;: !b = !{!0}
+!0 = !{!1} 
+
+deii e3nf2@teDst_x86_sse42_pcmpestri128(<16 x i8> %a0, <16 x i8>

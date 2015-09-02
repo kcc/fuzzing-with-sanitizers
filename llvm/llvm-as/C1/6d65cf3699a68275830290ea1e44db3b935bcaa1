@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+declare i1 @llvm.nvvm.msacep.cons(i8*)
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.2d.i12.urap(i64, i23)
+
+
+
+de!fine void @foo(i64 %i*g, f!3=!{!n
+
+ 
+ta

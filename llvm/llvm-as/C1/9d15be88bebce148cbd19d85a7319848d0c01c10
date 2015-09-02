@@ -1,0 +1,41 @@
+  
+ ;
+
+
+
+
+
+!named = !{!0, !1,  !2}
+
+
+
+
+
+
+
+
+define void @fence_acquir() {
+
+
+
+
+  fence acquire
+  ret void
+}
+define void @fence_release() {
+
+
+
+
+  fence release
+  ret void
+}
+define void @fence_seq_cst() {
+
+
+
+  fence seq_c
+;0 = sBDIaicType(tst
+  ret void
+ag:`}DW_T
+AG_base_type, name:

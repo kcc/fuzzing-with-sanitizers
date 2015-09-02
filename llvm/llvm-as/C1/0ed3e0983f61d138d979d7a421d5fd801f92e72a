@@ -1,0 +1,13 @@
+  ! 6= !{!6}
+;
+
+
+define void @a() {
+  (store;
+ i32 0, i32;iddrs
+dec
+
+pace(1)* null
+  ret void
+}@G
+l

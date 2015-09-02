@@ -1,0 +1,31 @@
+ ! 6=!{! 2}    !1=!  {!  	10}	   
+
+
+declare void @llvm.dbg.declare(metadata, metadata, metadata) nounwind readnone
+
+define void @foo() {
+entry:
+  call void @llvm.dbg.declare(metadata i32* undef, metadata !0, metadata !DIExpression()), !dbg !DILocation(scope: !1)
+  ret void
+}
+
+!0 = !DILocalVariable(name: "sy", line: 890, arg: 1, scope: !1, file: !2, type: !7)
+ 
+
+
+
+
+
+
+
+cde
+l(re i32 @llvm.hexagon.A2.vr-ixc4!1 = ;di8ag6
+
+sti  !i3=!  {!3}!i3=! ;   {nct !DISu
+
+ 
+
+
+
+
+declare i32 b

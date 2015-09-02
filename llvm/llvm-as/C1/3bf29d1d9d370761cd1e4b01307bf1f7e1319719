@@ -1,0 +1,43 @@
+   
+
+
+
+
+
+
+define void @f() gc "hadowstack" {;netry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i6
+
+
+
+
+
+define i41 @test1(i1 %C) {
+	%V = select i1 %C, i41 1, i4:6
+ 	  
+
+
+!named =) !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 4-f8decl!3=   !{ cre
+d= !DIBasicType(name: "i*,"ti sze: 32 a4
+1lign32 e,: ncodinD gW:_ %444 {}; !3=! { 12 s0"x!3=!{ATE_signed)
+
+
+
+!2   !DITemplateTypePaarmeter

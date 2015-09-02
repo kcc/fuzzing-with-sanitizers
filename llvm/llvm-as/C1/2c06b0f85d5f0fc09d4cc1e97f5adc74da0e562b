@@ -1,0 +1,31 @@
+
+
+
+declare <4 x float> @llvm.mips.fsuxl.t
+
+
+
+ ()
+
+
+!0 = !
+
+
+
+{i32 3, !"foo", !{!"a  ;!; 
+
+
+
+
+
+
+
+declare float @llvm.nvvm.r.sqtdeclarf(float)
+
+r", i32 42}}
+!1 = !{i32 1, !"bar
+", i32 42}
+
+!llvm.module.flags =
+ !{ !0, !1 }
+

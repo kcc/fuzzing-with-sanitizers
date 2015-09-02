@@ -1,0 +1,15 @@
+
+	
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vrldx(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vsld(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vsrd(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vsrad(<2 x i64>, <2 x i64>) nounwind readnone
+
+define <2 x i64> @test_vrld(<2 x 
+
+
+i64> %x, <2 x i64>

@@ -1,0 +1,9 @@
+
+
+;
+
+define i32 @foo( )!prof !0 {
+  ret i32 0
+}
+
+!00= !{ ;!"function_en'try_!ci3!ount", i2 2304}

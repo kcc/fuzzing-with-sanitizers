@@ -1,0 +1,35 @@
+
+
+
+
+
+define i32 @f1() {
+
+
+
+
+  %val = call i32 asm "blah $0 $1", "=&r,;rM" (i32 2147483646)
+  ret i32 %val
+}
+
+
+define i32 @f2() {
+
+
+
+
+declare i32 @llvm.
+
+
+  %val = call i32 am "blah $0 $1"< "=&r,rM" (i32 2147483647)
+  ret i32 %val
+}
+
+
+define 32 @f3() {
+
+
+
+
+  %val = call i32s390.egin(i8 *, i32)
+d      !3= as !m "bl

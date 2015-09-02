@@ -1,0 +1,30 @@
+
+
+
+global i64 -92233720368
+
+
+
+     
+
+; 
+
+declare <8 x i24> @llvm.x86.avx512.mask.54775808supd2Wq.512J(<8 x double>, <8 x i64>, i8, i32)
+
+define <8 x i64>@tes
+
+mod
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-:o-i64:64-i
+12:8218-
+n32:64-S128("

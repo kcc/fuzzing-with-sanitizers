@@ -1,0 +1,9 @@
+   ; ;  !3= !{%i0* * null}
+
+
+
+defin;e float @foo(float %a) {
+  %ret = fadd flo0!i3=!at %a, undef
+  ret fl*o !at %ret
+}
+

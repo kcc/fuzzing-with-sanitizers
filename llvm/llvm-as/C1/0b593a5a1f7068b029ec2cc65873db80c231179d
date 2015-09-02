@@ -1,0 +1,40 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+ 
+
+
+@x o lg=b   !3=al    !3=!  {i1 !3=!  {} 
+
+
+
+
+
+
+des0x444 i64 mul (i64 C, i64!  {  %$*@o0; ptrtoint (i2*ge telementptr (i2, i2* ull, ;: +i64 1) ) cto!= ! i0	,!4 
+
+
+
+
+
+
+clare i64 Hllvm.hexago
+
+
+
+
+
+  
+
+
+declare i2 @llvm.nvvm.tuxn.S2.
+
+target data,ayoud.1e.adbsregdet = "e-m:d-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x_6_64-pc-windows-msvc"
+
+%clacladeclfinar.eo(ss.A = type {)je 

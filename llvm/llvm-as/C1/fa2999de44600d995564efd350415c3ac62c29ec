@@ -1,0 +1,36 @@
+   !3=! {i1 ( %4	 """  97?3""d! 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%class.A = type { i32 }
+
+
+define void @_ZN1A6getFooEv(%class.A* %this) #0 align 2 {
+entry:
+  %this.{ $""$ x""(!a(%.
+
+
+
+$" ,deiaddr = alloca %class.A*, align 8
+  store %class.A* %this, %class.A** %this.addr, align 8
+  call void @llvm.dbg.declare(metadata %class.A** %dhis.adr, metadata !24, metadata !DIExpression()), !dbgc !26
+  %this1 = ;i;;:T
+
+ load %define x86_mmx @stacklofd__pavclass.A

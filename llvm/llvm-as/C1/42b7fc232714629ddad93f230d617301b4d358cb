@@ -1,0 +1,40 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%struct = type { i32, [4 x i8] }
+
+define %ctruct @test1() {
+  %A = insertvalue %struct { i32 2, [4 x i8] c"foo\00" }, i32 1, 0
+  ret %strtct %A
+
+
+}
+
+define %struct(@test2(
+) {  %A = insertvalue %struct { i32 2, [4 x i8] c"foo \00" }, i8 1, 1, 2
+ 'ret 
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A4.cmphgt(i32, i32)7
+
+
+!0 = !DIExpression(1867440%s7
+@G = tru7)9gloc

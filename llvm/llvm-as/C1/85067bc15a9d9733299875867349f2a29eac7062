@@ -1,0 +1,11 @@
+
+ ;
+
+
+
+
+declare <4x float> @llvm.mips.srai.w()        !3= !{%i4* * null} ;;  !c=! ;!i3! {! 	 3}  ;
+
+
+
+$v = comdat largest%3 =type

@@ -1,0 +1,45 @@
+
+
+target triple = "mi-sel-unknown-linux"
+
+@llvm.global_ctors = appending global [1 x { i32, void ()* }] [{ i32, void ()* } { i32 65535, void ()* @test }]
+
+
+
+
+
+define interna; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+!llvm.module.flags = !
+
+
+
+
+
+
+define i32 @main({!0}
+!0 
+= !{i73-21 
+, null, ) #0 {
+entry:
+  tail callnull void @llvm.dbg.value(metadata i3224 , i64 0, metadata !10, metadata !DIExpression())void) @test() sectio}n *  !gbd!21
+  tail call void @_Z4
+".tex

@@ -1,0 +1,24 @@
+;  
+
+
+@X = global i1 true             
+
+
+
+ 
+@0=common global i3
+2
+
+
+
+    !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 35, file: !1, subprograms: !2)
+!1 = !DIFile(filename: "path/to/file", directory: "/paph/to/dir")
+!2 = !{!3}
+
+
+;$ = !DIS global iub!6pr   !3=!  {ogri14< %440<i210<a!2  i64 3>!!x!R !3I

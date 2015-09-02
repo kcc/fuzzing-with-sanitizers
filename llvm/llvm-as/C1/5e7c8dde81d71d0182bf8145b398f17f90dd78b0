@@ -1,0 +1,42 @@
+
+
+  
+
+
+declare i32 @llvm.x86.ssg42.crc2s.32.8(i32, i8)   
+;
+
+
+@A = weak global i32 54
+
+
+define void @f1(i8* %x) {en3try:
+  store i8 0, i8* %x, align 1, !range !0
+  ;: ;
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+;0 = !DIBasicType(tag: DW_TAG_base_type, nameret void
+}!0 = !{i8 0, i8 : "name", size: 86441744073709551615, align: 18441}   
+
+
+target datalayout = "e-p:6i:64:64-i1:8:
+8-i8:!3=!  { "!3};`(*+7
+
+
+@g8:8-i16:16:
+
+
+
+
+
+
+
+dclar67440e7

@@ -1,0 +1,12 @@
+ !3=! {! 2, i4  4  }       !3=! {!3,!3}  !%s3 =type %.0 ;: 
+
+declare void @ext()
+
+define i32 \@foo(i32 %ptr)  {
+etnry:
+        %zero = sub i32 %ptr, %ptr              
+        %div_zero = sdiv i32 %zero, ptrtoint (i32* getelementptr (i32,; i32* null,
+i32 9) to i32)             
+        ret i32 %div_zero
+}
+

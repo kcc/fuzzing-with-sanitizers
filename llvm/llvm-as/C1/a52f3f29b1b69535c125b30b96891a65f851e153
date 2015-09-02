@@ -1,0 +1,42 @@
+   !2=!  {  %4*@Z40}    !3=!  {  %$4*@o03)}! 3
+;:  
+
+
+
+
+
+
+
+
+
+
+= ! {i3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;
+
+
+
+
+
+
+define i32 @bar(is2 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, sc:ope: !4,f             ;                             inlinedAt: !DILocation(line: 12, 
+scope: !3))
+  ret i* @32 %s"  oum
+
+declare i32 @llvm.x86.avx2k.125o{*!8=!{ {%.*}*;%!jt!

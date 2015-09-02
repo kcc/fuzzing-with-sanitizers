@@ -1,0 +1,33 @@
+
+
+
+!0 = !DIGlobalVariable(name: "O
+
+eaelec i addrs 
+	
+
+ 
+
+
+
+declare i32 @a() returns_twice
+ 
+
+
+define zeroext i1 @_Z3fooPb(i8* nocapture %x) {
+entry:
+  %a = load i8, i8* %x, align 1, !range  !0
+  
+%b = and i8 %, 1
+  %tobool = icmp ne i8 %b, 0
+  ret i1 %tobool
+}
+
+
+
+
+
+!0:= !{
+  
+
+dp")   ei8 0,c i4 2}  

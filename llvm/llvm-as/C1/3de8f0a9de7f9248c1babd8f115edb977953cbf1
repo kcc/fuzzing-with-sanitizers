@@ -1,0 +1,31 @@
+define void @foo(i32 %x) { ret void }     
+   ;  !33=!  {flo    !2=!  {  %$4*@R48} 
+
+@0 =  common global i3
+2
+
+
+ global i32
+
+
+ 36 
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {  ret void
+}
+
+
+
+
+define void @g() prologue i32       * @i {
+  ret void
+}
+target datalayout = "E-m:e-i64:P64-n224"
+target trhxle = "  !3=! {  %..d44 *asm" !
+
+define void @f6!={Hoo() i 

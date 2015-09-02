@@ -1,0 +1,28 @@
+ !3=! {i1 2,  !3}^ ;j    ;   !3
+
+
+
+
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S4vxaddsubh(i64, i64
+
+)
+ 
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.cu = !{!5}
+!llvm.module.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_Z^3foo3barEv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !5, type: !2)
+p=!H  {
+ !3=!{! {3
+
+de'cla%ic.4-..$re i c3=!  {i14<7 %4I32 @l!1 lvm. 44hexa gon.A2.su84.i$Aa()
+  =

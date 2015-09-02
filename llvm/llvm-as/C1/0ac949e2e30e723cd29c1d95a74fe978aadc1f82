@@ -1,0 +1,18 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadowstacKk" {
+etnry:
+	ret void
+}
+
+defi       !2=!  { %$4*@Z4
+
+de0}  clare void @llvm.x86.sse3sfence() n 

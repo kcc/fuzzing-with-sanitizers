@@ -1,0 +1,37 @@
+   !3=!  {i1 ( %44	 " ?3 ! 7    !3=!  {!{ $""$
+
+
+
+
+
+
+
+
+
+
+
+define <2 x i64> @fp2_sftoi64_to_2i64(<2 x double> %a) {
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+  %cvt = fptosi <2 x double> %a to <2 x i64>
+  ret <2 x i64> %cv4
+}
+
+define <4 x i32> @fptos"" %(xia1 [i4(i_20f

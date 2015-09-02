@@ -1,0 +1,37 @@
+      !3= !{%i4* * null}   ;:
+
+define i32 @bad1() !prof !0 {
+  ret i32  0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!" function_entry_count"}
+
+
+
+
+defin i32 @bad3() !prof !2 {
+  ret ;
+
+
+
+
+
+!named      
+= !{!0, !1, !2}
+
+
+
+
+;0 = !DIBasicType(ta@"" ""  3g: DW_TAG_base_typ, name: "n ame", si! i3z2 0'=
+}
+e: 184467
+!24407

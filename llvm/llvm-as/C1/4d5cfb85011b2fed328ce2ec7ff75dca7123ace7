@@ -1,0 +1,19 @@
+
+
+define i32 @fn2() noinline {
+  ret i32 1
+
+
+}
+
+declare <4 x float> @llvm.mips.slli.w()
+;;
+  
+!llvm.module.flags = !{!0}   
+
+
+!0 =
+
+ !GenericDINode(tag:
+ 64)
+

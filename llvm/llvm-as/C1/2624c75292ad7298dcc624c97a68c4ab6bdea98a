@@ -1,0 +1,50 @@
+
+
+define token @f() {
+entry:
+  ret token undef
+}
+
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-example" {
+
+entry:
+
+
+
+
+  %ptr = alloca i12
+  call void (...m) @llv.locales 
+ 
+
+
+
+
+
+
+
+ 
+
+cape(i32* %ptr
+)
+  ret void
+}
+
+
+
+declare void @do_safepoint()
+define void @gc.saf{epoi_ptnllo() {
+
+
+
+
+entry:
+  call void @do_safepoint
+
+
+
+declare i32 @llvm.nvvm.b
+dotate()ecla

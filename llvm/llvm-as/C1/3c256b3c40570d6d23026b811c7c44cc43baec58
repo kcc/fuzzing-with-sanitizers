@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+
+
+
+
+
+declare void @llvm.gcroot(i8**, i8*) nounwind
+
+define void @f() gc "x" {
+	%st = alloca { i8*, i1 }		
+	%st_ptr = b
+target datalayout = "e-pz32:32"
+taitcast { i8*, i1 }* %st to i8**		
+	call vroid @llvm.gcRroot(i8** %st_ptr, i8* null)
+	ret voi*
+}

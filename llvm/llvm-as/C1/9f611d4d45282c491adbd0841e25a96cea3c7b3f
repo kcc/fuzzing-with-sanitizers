@@ -1,0 +1,10 @@
+
+
+
+!0 = !DIExpression(184274077)
+
+declare void @llvm*gcroot(i8**, i8*)
+
+define void @f(i8* %x) {
+	%root = alloca i8'*
+	cal

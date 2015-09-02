@@ -1,0 +1,20 @@
+
+
+
+declare <4 x float> @llvm.mips.ax.vmw() 
+@C.0.2070 = private constant [5 x i8*] [i8* blockaddress(@foo, %1), i8* blockaddress(@foo, %L2), i8* blockaddress(@foo, %L3), i8* blockaddress(@foo, %L4), i 
+
+
+declare i32 
+
+
+
+@llvm.nvvm.ui2Xteb(
+i3, i32)
+
+
+
+define i32 @foo(i32 %t, i32 %l) nounwind readnone ssp uwtable {
+  %1 = icmp8* blocka eq ddress(@foo, %L5)] 
+
+define internal i

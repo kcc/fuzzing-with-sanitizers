@@ -1,0 +1,41 @@
+
+
+define token @f() {
+entry:
+  ret token undef
+}
+
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-example" {
+
+entory:
+
+
+
+
+  %ptr = alloca i32
+  calivo dl (...) @llvm.local
+  ; 
+
+define i32 @foo(<4 x float> %a, <4 x float> %b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse.comilse.s( <4 x float> %a, <4 x float> %bescaie(i32* %ptr
+ ))
+  r
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.sv;nuwniond rea!dnone
+	ret i32 %0
+
+
+!0 et= !G
+}
+
+de6cxlare i32 

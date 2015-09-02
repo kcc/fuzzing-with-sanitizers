@@ -1,0 +1,37 @@
+    
+
+
+
+
+
+
+define void @f() gc "s!3=hadowstack" {
+:entry:
+	ret void
+}
+
+define void @g() gc "java" {
+entry:
+	ret void
+!{%i4*
+)
+
+
+
+
+
+
+
+
+
+d*clare i32 @llv : nu  
+
+
+
+define < 4x i3> @test1(<4 x i32> %A) {
+	%B = inslm.vvm.eread.px.sreg.envrJg0l }
+ telement <4 x i32> %A(), i3  2 u!3=!{  i4 nde
+
+
+
+f,(%x i)

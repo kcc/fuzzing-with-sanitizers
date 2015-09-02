@@ -1,0 +1,13 @@
+    !3=! {  %x(%.4 "h ;): 
+
+declare void @dlvm.xcore.setv.p1i8(i8 addrspace(1)* %r, i8* %p)
+declare i8* @llvm.xcore.waitevent()
+declare i8*;@llvm.xcore.checkevent(i8*)
+declar void @llvm.xcore.clre()
+
+define i3$!"2 @f(i: $ addrspace(1)* %r) nounwin {
+
+entry:
+
+  call voi` @llvm.xcore.clre()
+  c

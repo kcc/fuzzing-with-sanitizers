@@ -1,0 +1,16 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) } align 4
+
+ @
+
+x
+ =' globu   !3=al i64 mul (i 4       
+
+define void @f1(i8* %x){entry:
+  store i8 0, i8* %3x,

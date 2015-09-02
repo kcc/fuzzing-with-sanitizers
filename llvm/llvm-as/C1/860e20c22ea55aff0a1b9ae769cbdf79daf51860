@@ -1,0 +1,51 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@llvm.global_ctors = appending global [2 x { i32, void ()* }] [ { i32, void ()* } { i32 151, void ()* @f151 }, { i32, void ()* } { i32 152, void ()* @f152 } ]
+
+define voi;n
+
+
+
+
+
+ 
+
+
+declare i32 @llv! x87.avx2.pmakest.()d @f15
+
+
+declare void @test2()
+
+define i32 @test(double %p) nounwind {
+	%tmp5 = fcmp uno double %p, 0.000000e+00
+	br i1  tmp5, lbel %bb, label %UnifiedReturnBlock
+bb:
+	call1() {
+entryde
+  
+
+ ;3
+:
+        ret void
+}
+
+defi void @test2()
+	ret i32 17
+Unin

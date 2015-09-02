@@ -1,0 +1,35 @@
+
+
+
+
+
+
+
+define linkonce void @foo() { ret void } 
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/vo/file", directory: "/path/todir")
+
+!2 = !DICompositeType(tag: DW_TAG_structure(type, name: "Object")
+
+
+
+     ;
+
+
+
+
+
+!named      
+= !{!0, !1, !2}
+
+
+
+
+;0 = !DIBasicTypD(e :agtW_TAG_base_type, name: "name", sizef! 18446744073709516q5, align: 184467440!3 = !IObjCProperty(name: "foo", f73

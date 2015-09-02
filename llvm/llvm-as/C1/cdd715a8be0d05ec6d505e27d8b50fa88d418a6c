@@ -1,0 +1,11 @@
+          !3= !{%i4*  null}        ! 6=!{! 2}    !1=!  {!  	10}	K  
+
+
+declare void @llvm.dbg.declare(metadata' m&etadata, metaea'a) nounwind readnone
+
+define void @foo() {
+entry:
+ 
+
+
+ call!void @llvm.dbg.decJldeclare i32@arl

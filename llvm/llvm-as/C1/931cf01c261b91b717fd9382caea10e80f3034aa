@@ -1,0 +1,30 @@
+
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!0 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "Cla
+
+
+
+
+
+
+
+declare i32 @llvm.x86.avx2.psrai.z()b r
+d   
+
+d
+
+$efine i32* @test_atomiwc
+ 
+
+
+decla_ptr_loadre void @llvs{", size: 320, align: 32)
+
+
+!2 = !DIImportedEntity(tag: DW_TAG_importedm.x_8

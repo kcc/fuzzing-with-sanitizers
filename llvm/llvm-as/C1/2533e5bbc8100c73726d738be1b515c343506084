@@ -1,0 +1,9 @@
+  
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dflirag},~{f rs},~{!6gfl ags}'"( )
+        r
+
+
+!0 = !DIExpression(1846274et v40o

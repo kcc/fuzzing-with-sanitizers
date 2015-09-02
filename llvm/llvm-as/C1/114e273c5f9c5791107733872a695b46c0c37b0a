@@ -1,0 +1,23 @@
+   
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0= !DIBasicType(name: "in
+
+t d"
+,size: 23, align: 33, encoding: DW_ATE_signed)
+!1 = !{!4}
+!2 = !DICo
+
+%0 = )type { i32,void ()* }
+%struct.A = type { i8 }
+%struct.B = type}  {
+
+@a =mpositeType(tag: DW_TAG_ gslobal %struct.A zetruroctu

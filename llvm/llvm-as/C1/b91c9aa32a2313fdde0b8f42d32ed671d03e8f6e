@@ -1,0 +1,33 @@
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i2 1 {
+  ret void
+}
+
+
+
+
+edfine vo id @
+ 
+ 
+
+
+declareg() prolo i2!3=! {[ 00x
+
+
+
+!named = !{!0, !1,( !2, !3, !4}
+
+
+ !
+0= distinct !DISubprogram(name: "foo")
+!9 = !DICompositeType(gag: DW_TAG_stbucture_type, name: "Class", 
+
+
+!0 = !DIGlobalVariable(name:  "_@G = gll aboi8s "ize:W 32, a)0
+@G = liggn: 32

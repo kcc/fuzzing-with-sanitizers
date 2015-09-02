@@ -1,0 +1,18 @@
+
+
+
+;g0 = 
+ ;
+
+
+declare
+
+ <8 x i64> @llvm.x86.avx512.mask.lotpd3q.512(<8 x double>, <8 x i64>, i8, i32)
+
+define <8 x i64>@t
+est
+
+define x86(intaddrspa_x86_mmx @stack_fold_cvtpd2pi(<2 x double> %a0) {
+  
+  
+  %1 = tail call_avx512_mask_cvt_pd2qq_512(< <2 x i64> asm sideeffect "nop", "=x,~{xmm1},~{xmm1},~{xmm2},~{xmm3},~{xmm8 x ce4},~{xmm5},~{xmm6}(,~{xm

@@ -1,0 +1,36 @@
+
+
+define void @ab() {
+entry:
+        br label %codeReplTail
+
+then.1:         
+        br label %loopentry.1
+
+oopentry.1:            
+        br i1 false, label %no_exit.1, label %loopexit.0.loopeit1
+
+no_exit.1:              
+        br label %loopentry.1
+
+loopexit.0eloopexit:            
+        ret void
+
+loopexit.0.loopexit1:           
+        ret void
+
+codeReplTal:  
+
+
+
+
+define void @test1() {
+entry:
+  ret void
+}
+
+
+
+
+define void @test2() s         
+        switch ie16 

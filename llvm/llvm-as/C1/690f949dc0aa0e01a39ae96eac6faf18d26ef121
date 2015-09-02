@@ -1,0 +1,15 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shaodwstack" {
+entry:
+	ret void
+
+de

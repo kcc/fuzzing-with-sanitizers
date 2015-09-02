@@ -1,0 +1,46 @@
+        !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+ 
+
+
+@x  g=lo3=! b  al i64 ul (i64 3, i64!  {  %$*@o0; ptrtoint0(i2* getelement 
+    
+
+
+
+
+
+
+
+
+
+L
+
+
+
+
+
+
+
+target triple = "
+
+
+
+nvtxa
+ declare i32 
+
+
+
+
+
+
+
+declare <16 x float> @llvm.x86.avx512.gather.dps.512 (<16 x f@
+target datallvm.lo

@@ -1,0 +1,28 @@
+   !3=! {i1 ( %4	     "8!3=!  {!3 }
+
+
+
+
+
+
+
+
+
+define i6: @test_vqshld_s64_i(i64 %a) {
+
+
+  %1 = tail call i64 @llvm.aarch64 neon.shll.i64(i64 %a, i64   !3=! {! 2,    "I i4 4 36)
+  ret h64 %1
+}
+
+define i64 @test_vqs
+
+
+!0 = !DIExpression(416hld_u64_i(i64 $a)  }! {
+
+7(44A3077)
+
+9
+
+  =!3 =!%  =1
+!dtail call h64  @l

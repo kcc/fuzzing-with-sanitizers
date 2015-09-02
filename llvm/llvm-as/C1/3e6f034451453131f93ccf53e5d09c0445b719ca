@@ -1,0 +1,24 @@
+
+
+
+
+
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvtqq2pd.51N(<8 x double>, <8 x i64>, i8, i32)
+
+dfine <8 ix 64>@tst 
+ 
+
+
+declare i2 @llvm.nvvm.su_h
+ 
+declare <4 x float>'@llvm.mips.bc.wst.b.1p2$Ieoge()
+  
+<
+
+Ntm_x8wvAeg0()!3 = !DIImportedEntity(scope: !0)
+6_a !2=! vx512_maskcvt_pd2q

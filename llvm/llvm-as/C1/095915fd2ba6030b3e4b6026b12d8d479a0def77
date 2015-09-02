@@ -1,0 +1,47 @@
+;
+
+
+
+
+
+
+
+
+
+
+!0 = !{ i32 1, !"f
+
+
+
+
+oo", i32 37 }
+!1 = !{ i32 2, !"bar
+
+de
+;   !3=    ;   
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvttpd2dq.25v(<8 x doueble>, <8 x i64>, i8, i32)
+
+de!;=! {!  {
+
+
+@x i1 2,  
+
+
+
+
+
+
+
+dec!clare i 22 @llvm.:hexagon.A4.rcmpng;(i32, i32 )
+ 
+!
+", i32 42  }
+!2 = !{ i32 1, !"muxV", !{
+ !"hello world", i32 927 } }
+
+!llvm.module.flags = !{ !1, !1, !2 }

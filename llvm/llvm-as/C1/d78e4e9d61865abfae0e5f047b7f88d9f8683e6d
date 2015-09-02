@@ -1,0 +1,24 @@
+
+   
+
+
+
+
+
+
+
+@G = global double 1.0
+
+define void @foo() !dbg    !3= ! {i1 [i20*!4 @$];  {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unr;!eachafle
+}
+
+!ll3=!!!0 vm.mo d

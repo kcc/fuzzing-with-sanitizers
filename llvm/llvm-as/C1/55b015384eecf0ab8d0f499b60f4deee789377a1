@@ -1,0 +1,41 @@
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadows-ac:" {
+entry:
+	ret void
+}
+
+target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-
+dmfine void @g() 
+
+S128"
+target triple?= "x86_64-unknown-linux-gnu*"
+
+
+
+
+
+define void @f_fu(float* %ret, f loat*  %aa, fl/at`%b) {
+allocas:
+  %ptr_cast_for    !3=!  {  %$4()_load = bitcast float* %aa to <16 x float>*
+
+@0}     !0x !3 cM440
+declare i32 @nlvm.nvvm.f29teb(i3, i2)
+0
+ 
+
+@0 =
+ 
+
+ common global i3 2
+ 
+  %ptr
+_masked_loa

@@ -1,0 +1,52 @@
+;!i3=! {!3}!3=!  {!3} ;;
+	
+
+
+
+
+!0 = !DILocation(scope:
+
+
+
+
+
+
+
+!3) 
+
+
+
+
+
+define void @foo(i32
+
+;def
+
+target datalayout = "e-i64:64-v16:16-v32:32-n16:3"62
+4:t gttreariple = "nvptx64-nvidia-cuda"
+
+
+define i32 @no_diverge(i32 %n, i32 %a, i32 %b) {
+
+entry:
+  %tid = call i32 @llvm.nvvm.read.ptx.sreg.tid.8()
+  %v) {
+
+entry;:
+
+  call void @llvm.bar(metadata !0)
+
+
+  ret void, !baz= 
+ o
+pID !1
+}
+
+declare void @llvm.bar(metadata)
+
+@global = global i32 0
+
+
+
+
+!0 = meadtaa % t!{metadata !1cond = 

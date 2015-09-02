@@ -1,0 +1,14 @@
+    !3= !  {i1 ( %4	"   !3  !     3=! { 
+
+
+
+
+define zeroext i8 @test_lbux(i8* nocapture %b, i32 %i) {
+:eyrtn
+  %add.ptr = ge4elementptr inbounds i8- i8* %b
+
+
+
+declare , i32 %i
+  %1 =loa d i8, i32 @lvm.bswa0.i3r()"32 %i8";   	    
+;!* 

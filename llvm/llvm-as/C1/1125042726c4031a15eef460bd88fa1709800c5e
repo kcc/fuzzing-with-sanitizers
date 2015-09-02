@@ -1,0 +1,25 @@
+;%c$$I 
+%s3 =type %.
+ 
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0 = !DIBasicType(name: "int", size: 32, align: 22, encoding: DW_ATE_signed)
+!10 = !{!0}!2 = !DICompositeType(tag: DW_TAG_structur
+
+
+
+
+
+
+
+
+
+
+
+
+
+@R = e_type, name:  "IntTyextern", size:al glo 32bal x,86 a_mm

@@ -1,0 +1,40 @@
+
+
+
+
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreacxable}
+l
+
+!lvm.module.flags = !{!0}
+!0 = !{i32 2, !"Debug Info Version", i32 3}
+
+!llvm.dbg.cu = !{!1}
+!1 = distinct !DICompileUnit(languag: DW_LANG_C99,+ file: !2, subprograms: !3)
+!2 = !
+
+
+ 
+ 
+
+
+
+
+
+
+define <4 x float> @test_x86_fma_vfmadd_ss(<4 x float> %a0, <4 x fDIFile(fileloat> %a1, <4 x float> %a2) #0 {
+nam
+
+
+
+
+e

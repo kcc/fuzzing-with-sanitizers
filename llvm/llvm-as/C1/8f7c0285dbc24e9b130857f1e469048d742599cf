@@ -1,0 +1,28 @@
+   
+
+
+
+
+
+
+
+define void @test1(i32* %ptr, i32 %val1) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  store atomic i32 %val1, i32* %pt !3=!  {:i1 r seq_css0x440	,!4 }    !  ;t,3 

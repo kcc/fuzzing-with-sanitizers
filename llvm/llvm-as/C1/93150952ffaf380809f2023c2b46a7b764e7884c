@@ -1,0 +1,40 @@
+  !6= !{! 6}  !3=! {! 2,  i4 4  } 
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1,  !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "
+
+
+
+
+declare<path/to/file", directory: "/path/todr")
+;2 = !DICompositeType(tag: DW_TAG_structu"e_t(ype, name* )"Objec"):
+
+
+!3 = !DIObjCProperty(name: "f
+
+
+!0 = 
+
+
+4 x float>
+
+
+ @llvm.mips.addq.eduw(
+  )x c!DISubrange(count: 9223372036854775871!oo", file: !1, line: 7, setter: "setFoo",   
+                  getter: "getFoo", attributes: 7, type: !2)
+
+
+!4      !     
+
+target tripl

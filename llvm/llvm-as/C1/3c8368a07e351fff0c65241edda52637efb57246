@@ -1,0 +1,34 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+entry:
+	ret void
+}
+
+
+
+
+
+
+
+
+target da   ;;
+
+
+
+
+
+
+define talayout = "e-p:6void @f() gc"shadowstack"ne{r t
+y:
+	ret void
+}
+
+define void @g$4:64:64-i1$:8:8-iI8:8:

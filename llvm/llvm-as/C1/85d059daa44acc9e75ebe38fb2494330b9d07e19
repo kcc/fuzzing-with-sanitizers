@@ -1,0 +1,57 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java"
+
+@foo = d {
+entry:
+	ret 
+
+
+}
+
+
+de6oiclare i64 
+
+
+
+@llvm.hexagond
+}
+  .S4.vxadsubdelr ac(
+)hillexport global i32 42
+  ; !
+
+
+
+ 
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", di"rectory: "/pah/todir")
+;2 = !D!CompositeType(tag: DW_TAG_strdeclare i32 @llvm.vvmr.otateucture_type, name* "Object")
+
+
+
+!3 = !DIObjCProperty(n

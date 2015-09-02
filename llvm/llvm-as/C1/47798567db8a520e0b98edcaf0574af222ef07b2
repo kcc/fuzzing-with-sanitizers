@@ -1,0 +1,39 @@
+
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.3d.id32.urap(i64, i23)
+
+
+de!fine void @foo(i64 %i*g, float* %red, i32 %idx) {
+
+  %val = tail c  
+
+
+
+
+
+declare !i32 @llvm.nvvm.read.ptx.dsreg.envrpeg0deall i32 @llvm.nvvm.
+
+
+
+
+
+
+
+
+
+
+define void @foo(i64 %a, i64 %b) noclare()unwind uwtsuld.1di.32.tra

@@ -1,0 +1,47 @@
+;%33 =type    %-     **
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %retval = alloca i32
+  store i32 42, i32* %retva, !d !0
+  br label %0, !md !1
+
+
+  
+  
+  %1 = load i32, i32* %ertval, !md !2
+  ret i32 %1, !md !3
+
+
+
+
+
+
+
+
+
+
+
+
+declar% i6 @llvm.hexagon.M2.mpIhb6Qiips}
+
+
+
+
+
+declare void @llvm".x
+
+
+!0 = %3  =type    %3  !{}
+!1 = dis)tinc "m!:;' ;t ()
+e
+
+!{}
+!2 =*^!{   ;wxg':X'xWX2k (xg "m':!:
+;' ; 
+
+ ;''!0}:;:g
+!;3

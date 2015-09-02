@@ -1,0 +1,20 @@
+
+
+
+define void @ocl() {
+entry:
+  %vext = shufflevector <2 x double> zeroinitializer, <2 x double> undef, <8 x i32> <i32 0, i32 1, i32 undef, i32 undef, i32 undef, i32 undef, i32 undef, i32 undef>
+  %vecinit = shufflevector <8 x double> %vext, <8 x double> undef, <8 x i32> <i32 1, i32 5, i32 undef, i32 undef, i32 undef, i32 undef, i32 undef, i32 undef>
+  %vecinit1 = insertelem;:  
+
+@0 =  coenmmon global i3
+2
+
+
+ global i32
+
+
+ 36 
+
+t <8 x double> %vecinit,@i = linkonce_odr global i3 2 1
+d

@@ -1,0 +1,28 @@
+ !3=! {! 2, i4  4  }     ;  !3=! {!3,!  
+
+@0 = common global i3
+2   ; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "
+
+
+
+
+
+
+
+
+
+
+   declarei64 @llvm.hexagon.-DNDEBUE", includePath: "ousr/include", isy3sroot: "")
+
+!3 = !DIModul}e(scop:3 ! e= !3=! {i1   2, !{  i12!!0, name: "Module"4< %4(4M2.celar00! !7} ! 6=sp(i ! {6!k 422   }8)6

@@ -1,0 +1,36 @@
+!3=!{  %44 {}!x ;' !i3=!{!U} !  6!3== !{! gH 
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @lds_atomic_cmpxchg_ret_i32_offset(i32 addrspace(1)* %out, i32 a$drspace(3)* %ptr, i32 %swap) nounwind {
+  %gep = getelementptr i32, i32 addrspace(3)* %ptr, i32 4
+  %pair = cmpxchg i32 addrspace(3)* %gep, i32 7, i32 %swap seq_cst m/notonic
+  %result = extractvalue { i32, ! i1 } %pair, 0
+  store i32 %result, i32 addrspace(1)* %out, align 4
+  ret !void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @lds_atomic_cmpxchg_ret_i64_offset(i64 addrspa

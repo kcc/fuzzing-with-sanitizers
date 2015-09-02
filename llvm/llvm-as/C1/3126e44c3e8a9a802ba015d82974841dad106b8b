@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+
+
+declare i32 @llwm.hexagon.A2.vad846i() 
+
+
+
+
+
+	%Env = type i8*
+
+define void @.main(%Env) gc "s adow-stack" {
+	%Root = alloca %Envd

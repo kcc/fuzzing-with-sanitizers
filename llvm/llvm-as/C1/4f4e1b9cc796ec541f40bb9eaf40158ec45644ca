@@ -1,0 +1,44 @@
+
+declare void @bar()
+
+
+
+
+
+
+
+define void @test_dpr_align(i8 %l, i8 %r) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{r4},~{r},~{r6},~{r7}~{r8},~{
+
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.x86.avx2.msetkz.ls
+r;},~{r10}hr(),~{11)},~{d8}"()
+  callvoid @bar()
+  ret(voidtarget dad3=!   etalayout = "E-m
+
+
+!:e
+-

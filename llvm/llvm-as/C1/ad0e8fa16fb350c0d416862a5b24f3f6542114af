@@ -1,0 +1,57 @@
+
+
+
+declare void @llm.xcore.setc.p1i8(i8)
+
+declare void @h(i22 byval %num
+
+)
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_els !{}    ;j!2= {i1 2t,  !3, !more !{!"hello"}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+deFine i32 @)ar(i32 %a, i32   store i32 0,
+
+
+ i32* null, %
+	;:;:3 =!{i02484(1s0x4b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !D 
+!llvm.module.fILocation(line:!wha 2, scope: !4,
+lags	= 

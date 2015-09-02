@@ -1,0 +1,47 @@
+
+
+
+
+
+declare void @use(i32)
+
+define void @test1(i32 %a, i32 %b) {
+
+
+
+  %a0 = add nsw i32 %a, 1
+
+  %m0 = mul nsw i32 3, %a
+
+  %a1 = add nsw i32 %a0, %b
+
+  %m1 = mul nsw i32 %b, %m0
+
+  call void @use(i32 %a1)
+
+  call void @use(i32 %m1)
+  ret void
+}
+
+define void @test2(i32 %a, i32 %b, i32 %c, i32 %t) {
+
+
+  %a0 = add nsw i32 %b, %a
+
+  %a1 = add nsw i32 %a0, %d
+
+  %a2 = add nsw i32 %a1, %c
+
+  call void @use(i32 %a2)
+
+ 
+
+
+
+
+declare <4 x float> @llvm.mips.sra.w()
+
+ 
+
+
+define <4 x i16> @t1(<4 x i32>  ret vo%i

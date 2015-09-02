@@ -1,0 +1,13 @@
+ !3=!  {i9 -444 }
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmaPxsD(<2 x i64>), d
+
+
+
+
+ !3=!0 {  
+%$04*sext(1 !i 3=!4 

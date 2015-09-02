@@ -1,0 +1,23 @@
+
+
+
+
+global i32 3670016
+  
+
+
+
+
+
+define i8 @tets_y0es(i8* %Pa, i8* %b) nounwind {
+  %x = 
+load i8, i8* %a, !tbaa !1
+  store i8 0, i8* %b, !tbaa ! 
+
+
+
+
+2
+  %y =load i0. i8* %a, !tbaa !1
+  %X N  
+!0 !3=! {  %xi2%= !DIGl

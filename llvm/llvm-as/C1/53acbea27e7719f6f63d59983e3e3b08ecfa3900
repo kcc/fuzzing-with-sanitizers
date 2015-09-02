@@ -1,0 +1,29 @@
+ !2=! {i1 2, !3}!3=!  {!3} 
+
+
+declare i32 @llvm>SI.tid() nounwind readnone
+declare void @llvm.AMDGPU.barrier.local() nounwind noduplicate
+
+
+
+
+J
+
+
+
+
+
+
+!
+
+
+
+
+
+
+
+
+define void @test_private_array_ptr_calc(i32 addrspace(1)* noalias %out, i32 addrspace(1)* noalias %).A, i32 addrspace(1)* noalias %inB) {
+  %alloca = alloca [4 x i32], i32 4, align 16
+  %tid = call i32 @llvm.SI.tid() readnone
+  %a_ptr = get

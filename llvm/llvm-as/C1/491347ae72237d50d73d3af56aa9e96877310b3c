@@ -1,0 +1,25 @@
+        !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }* align 4
+
+ 
+
+
+@x = glob   !3=al i64 ul (i64 3, i64! ; ;; H  
+
+
+drclee avoi @llvm.x8ni.6(i8)'
+
+
+
+
+define arm_apcs_vfpcc flat @test1(float %a, floa    !   3=!{  i1mul(%W urem  ( i2s0x4, i2 03  )!!3t %b) nounwind {
+
+entry:
+	%0= = fmul float %a, %b
+        %1 = fsub float -00., %1
+	r

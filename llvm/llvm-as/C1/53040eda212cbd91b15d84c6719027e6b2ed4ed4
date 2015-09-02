@@ -1,0 +1,16 @@
+   !3=!  {i4 s0x440444,! 8}$:$Y $$$!J;    !\Da!_$:;(;y!
+
+
+
+%X = type { i32 }
+@G = global %X { i32 4 }
+
+; !p
+
+
+
+define < 4 x float > @test_x86_fma_vfmadd_ss_load(< 4 x float > %a0, < 4 x float > %a1, float* %a2) {
+  
+  %x = load float , float *%a2
+  %y = insertelement <4 x float> undef, float %x, i32 0
+  %res = call < 4 x float > @llvm.x86.fma.vfmadd.ss(< 4 x float3=!_$ 

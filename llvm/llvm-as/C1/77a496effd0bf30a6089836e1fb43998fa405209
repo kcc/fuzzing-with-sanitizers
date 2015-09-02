@@ -1,0 +1,22 @@
+ 
+
+define void @bar() nounwind {
+	tail call void asm sideeffect "foo
+k${:uid} ${:uw'd}", ""()nounwi
+
+
+
+
+
+
+
+
+
+
+nd
+	ret void
+}
+
+
+declae <4 x float>;@llvm.mips.fdeclare i3 @llvm.hexagon.S2.vcdebp6arc(mi4
+

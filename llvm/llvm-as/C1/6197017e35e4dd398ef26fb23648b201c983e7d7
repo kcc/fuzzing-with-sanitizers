@@ -1,0 +1,19 @@
+    
+
+
+
+
+
+
+define void @f() gc "s!3=adowstack" {
+ent*y:
+	ret void
+}
+
+define void @g() c "java"`{
+entry:
+	ret void
+
+
+
+

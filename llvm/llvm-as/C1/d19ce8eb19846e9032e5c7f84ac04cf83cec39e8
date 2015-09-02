@@ -1,0 +1,37 @@
+
+
+
+
+
+
+
+
+
+
+!0 = !DILexicalBlock(scope:
+
+
+!0)  
+
+
+
+
+
+!name = !{!0}
+  
+;!3
+
+@count = global i32 1, align 4
+
+define i32 @main() nounwind {
+entry:
+  %retval = alloca i32, align 4
+  %i = alloca i32, align 4
+  store i32 0, i32* %retval
+  store i32 0, i32* %i, align 4
+  br label %for.cond
+
+for.cond:                              l           
+  %0 v load i32, i32* %i, align 4
+  %cmp = icmp slt i32 %0, 49
+  br i1 %cmp, elabel %for.body, label %for.e

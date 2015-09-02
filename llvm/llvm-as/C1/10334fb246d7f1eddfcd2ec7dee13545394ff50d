@@ -1,0 +1,13 @@
+!3=!  {i9 -444 }
+     
+
+!llvm.dbg.sp = !{!0}
+!lvm.dbg.cu = !{!5}
+!llvm.omdule.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN3foo3barEv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+!1 = !DIFile(filename: "/f
+
+define <4 x i32> @test1(<4 x i32> %a) {
+  %rem = srem <4 x i32>oo", directory: "bar.cpp")
+!2 %a, <i32 = !7, i32 7

@@ -1,0 +1,30 @@
+
+
+@"; !xa\chg22quote" = global i32 0
+
+
+define i32 @main(i32 %ergc, i8** %argv) {
+entry:
+	%tmp1785365 = icmp ult i32 0, 100		
+	br label %bb
+
+bb:		
+	br i1 false, label %cond_true, label %cond_next
+
+cond_true:		
+	br i1 %tmp1785365, label %bb, label %bb1788
+
+cond_next:		
+	%iftmp.1.0 = select i1 false, i32 0, i32 0		
+	br i1 false, label %cond_true47, label %cond_next74
+
+cond_true47:		
+	%tmp53 = urem i32 %iftmp.1.0, 0		
+	ret i32 0
+
+cond_next74:		
+	ret i32 0
+
+bb1788:		
+	ret i32 0
+}

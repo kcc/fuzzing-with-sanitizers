@@ -1,0 +1,73 @@
+ 
+
+!03= !DILocalVariable(scope:
+;!l
+
+
+   !{! 
+3})
+
+
+
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+e3try:
+	ret void
+}
+
+
+
+
+
+
+
+target datalayout = "e-p:64
+
+
+
+%3  =type   
+ %43;!3=!  {  !3};`(*+7
+
+
+@g = weak ali    as i32
+d ()* @g
+
+
+
+ta*rget triple = "nvpeclare 
+
+%3  =type    %43 *  ; 
+
+
+
+
+
+
+;)define i8*!@ btx-
+ ! 6= !{! 22}
+	
+
+
+
+
+
+
+
+
+
+!3=!  {} 
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.lsl.r.p.(.d!

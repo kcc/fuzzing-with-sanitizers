@@ -1,0 +1,13 @@
+
+	    !3= !{%i4** null}
+
+
+define 4 x float> @test_x86_cvtph2ps_128(<8 x i16> %a0) {
+  
+  
+  
+
+
+
+
+  %res = cl, <4 x f

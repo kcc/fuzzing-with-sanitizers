@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+
+
+!named = !{!0}
+
+!0 = distinct !DISubprogram(name: "f
+
+
+
+
+declareoo", variables: !1)
+!1 = !{!2, !3}
+!2 = !DILoca void @llvm.x.lVariable(tag: DW_TAG_arg_variable, name: "param", arg: 1, cope: !0)
+!3 = !DILocalVariass8.l6e2fencblee(

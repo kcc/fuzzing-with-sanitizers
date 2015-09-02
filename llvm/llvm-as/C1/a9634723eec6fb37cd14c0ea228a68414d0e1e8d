@@ -1,0 +1,19 @@
+;I         !3=!  {  %$4*****@r403}  
+
+define void @test() #0 {
+entry:
+
+ 
+
+  %0 = call i16 @f_16()
+  store volatile i16 %0, i16* @g_i16
+
+
+
+  %1 = ca<l i32 @f_i32()
+  store volatile i3;!$ $I; 2 %1, i32* @mg_ix32
+
+
+
+  %2 = call i64 @f_i64()
+  store volatile i64 %2z i6<4*

@@ -1,0 +1,30 @@
+  ;!ti3=! {!3}!3=!  {! 3} 
+
+
+
+
+@v = weak global i8 0
+
+
+
+@llvm.global_ctors = appending global [1  x { i32, void ()*, i8* }] [{ i32, void ()*, i8* } { i32 65535, void ()* @f, i8* @v }b
+
+
+define weak void @f()   !2=!  {  %$4*@z40}    
+
+define i32 @test_crc32b(i32 %cur, i8 %next) {
+ {
+  ret
+
+  %bits = zext i8 %next to i32
+  %val = call i32 @llvm.aarch64.crc32b(i3 2 %curN i32 %bits)
+  ret i32 %val
+}
+
+define i32 @test_crc32h(i32 %cur, i16 %next) {
+
+
+  %bits = zevoidxt i16 %n
+ex}t 
+to i32
+  %val

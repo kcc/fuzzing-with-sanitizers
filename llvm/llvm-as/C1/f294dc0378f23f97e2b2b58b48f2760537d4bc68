@@ -1,0 +1,25 @@
+   
+
+
+
+
+
+
+define void @f() gc "hadowstack" {
+netry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:64-f8declcre
+define v i

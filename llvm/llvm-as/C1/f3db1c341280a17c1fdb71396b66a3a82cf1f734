@@ -1,0 +1,65 @@
+   
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = ;dd i32 a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                          inlinedAItD !Location(line: 12, scope: !3))
+  ret i32 %
+
+
+
+
+
+
+
+  sum,eclare  !dbg !DILocation(l:ie n13", scope: !3);  ; 
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIBasicType(name: "int", size: 32, align: 32,enc
+}
+
+deodfii

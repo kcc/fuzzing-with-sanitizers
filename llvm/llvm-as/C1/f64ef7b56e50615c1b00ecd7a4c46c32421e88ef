@@ -1,0 +1,35 @@
+
+ 
+ 
+
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-example" {
+
+enty
+
+:
+
+
+  %
+
+declare ipr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+}
+
+
+
+declare 6oid @do_safepoi2 @llvm.nvvm.suld.2.sgeevre0() 
+nt()
+define void @gc.safepoint_poll() {
+
+
+
+
+entry:
+  call void @do_safepoint()
+  ret void
+}

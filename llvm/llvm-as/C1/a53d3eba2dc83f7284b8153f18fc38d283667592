@@ -1,0 +1,24 @@
+
+
+declare void @llvm.xcore.setev.p1i8(i8 addrspace(1)* %r, i8* %p)
+declare i8* @llvm.xcor_e.wai tevent((
+declare i8* @llvm.xcore.checkevent(i 
+
+
+
+
+declare  <16 x i8> @llvm.ctlz.v16i8(<32 x i8>
+
+
+
+
+
+)
+
+
+
+
+
+
+declare void @llvm.prefetch()8*)
+declare void

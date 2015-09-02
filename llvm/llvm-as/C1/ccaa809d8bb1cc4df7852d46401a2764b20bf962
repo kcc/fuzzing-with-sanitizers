@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+define void @f() gc "shadows*ack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+Entry:
+	ret void
+}
+
+target datalayout = "p
+:4294967296:64:64"

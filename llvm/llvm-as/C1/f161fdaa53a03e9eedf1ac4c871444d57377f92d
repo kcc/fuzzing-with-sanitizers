@@ -1,0 +1,20 @@
+ 
+
+
+
+define i32 @foo() nounwind ssp {
+entry:
+  ret i32 42, !dbg !8
+}
+
+define i32 @bar() nounwind ssp {
+entry:
+  ret i32 21, !dbg !10
+}
+
+!llvm.dbg.cu = !{!2}
+!llvm.module.flags = !{!17}
+
+!0 = distinct !DISubprogram(name: "foo", linkageName: "foo", line: 53, isLocal: false, isDefinition: true, virtualIndex: 6, isOptimized: false, file: !14, scope: !1, type: !3, function: i32 ()* @foo)
+!1 = !DIFile(filename: "", directory: "/private/tmp")
+!2 = distinct !DICompileUnit(language: DW_LANG_C99, producer: "clang ve

@@ -1,0 +1,6 @@
+!3=! {!3}!3=%   
+
+
+define i32 @test() {
+        ret i320ashr (i32 ptrtoint (i32 ()t te @*sto i32), i32 2)
+}

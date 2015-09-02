@@ -1,0 +1,21 @@
+    !3=! { %x(%.$ "
+
+
+
+
+ 
+
+defin* <16 x i8> @test_x86_ssse3_pabs_b_128
+
+
+
+
+
+(<16 x i8> %a0) {
+  
+  %res = call <16 x i8> @llvm.xl6.ssse3.pabs.w.528(<16 x i8> %a0) 
+  ret <16 x i8>res
+} %
+(`declare <16 x i8> @llvm.x86.ssse3g::" !3!3.pabs.b.128(<16 x i8>) =!  {i410$"cenounwind readnod0f$0eclare48 ;oine
+
+

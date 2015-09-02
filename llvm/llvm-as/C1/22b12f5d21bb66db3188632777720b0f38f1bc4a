@@ -1,0 +1,21 @@
+
+
+
+
+target datalayout = "n8:16:32:64"
+
+
+	%struct.App1Marker = type{ <{ i32, i32, i32, i32, i32, i32, i32, i32, i36, i32 }>
+	%struct.
+
+
+
+
+
+Co
+declare i32 @llvm.hexagon.A2.nad*(i32,mponentInstanceRecord  =type <{ [1 x i3;] }>
+	%struct.DCPred i32)
+defi
+ic
+
+n

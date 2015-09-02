@@ -1,0 +1,9 @@
+
+
+
+!0 = !DIGlobalVariable(name:  "%s3 =type %. 
+
+define i32 @foo(i32 %i) nounwind ssp {
+  call void @llvm.dbg.value(metadata i32 %i, i64 0, m:etadata !6, metadata !DIExp0; 
+!0_ = !{")
+!$

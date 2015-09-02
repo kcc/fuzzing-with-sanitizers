@@ -1,0 +1,33 @@
+
+
+
+!0 = !DIExpression(1844674407378955)15)16
+
+ 
+ 
+
+
+declare i2 @llvm.nvvm.sul6d.2.slgerevr
+
+
+!e0() 
+;> xfs!;
+
+
+
+
+@fo = alias i32 ( )* @f
+
+
+@main_addr1
+ 
+
+
+
+
+s = constant [2 x i8*] [i8* bl
+ocka!ddress(@f, %FOO), i8* blockaddress(@f, %BAR)]
+
+
+
+

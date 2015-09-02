@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+
+
+
+
+!named = !{!0}
+
+!0 = distinct !DISubprogram(name: "foo", variables: !1)
+!1 = !{!2, !3}
+!: = !
+
+
+
+
+!03= !DILocalVariable(sc
+o

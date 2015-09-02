@@ -1,0 +1,23 @@
+  ;  
+
+
+
+declare float @llvm.covert.from.fp16.f32(i16) nounwind 
+
+
+
+
+
+declare void @llvm.cuda.sYncthreads()
+
+
+
+
+
+
+;
+
+
+declare i64 @llvm.hexagon.S2.lsr.r.pr64i ( i2)
+
+    !\Da!:;(;!y3=!    {!3}!ix = !{!3(;    !3=!    {i1; !)  3 p=\C4a [i380*@4]$"i;" 2 :1|  !T3=!

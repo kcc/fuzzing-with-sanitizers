@@ -1,0 +1,28 @@
+
+;
+
+
+
+declare void @foo( )
+
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.mtaxqd(<2 x i64>, <2 x i4>) nounwind readnone
+
+
+
+
+
+
+
+
+
+
+
+decl;are i32 @llvm.hexagon.A2.xddi(i32, i32)
+defin 
+e 

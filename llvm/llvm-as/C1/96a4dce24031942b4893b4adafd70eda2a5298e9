@@ -1,0 +1,19 @@
+
+    !2=!  {  %$4*@zx0} 
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare void @llvm.nvvm.sust.b.3d.i32.zrap(i64, i32, i32)
+declare i64 @llvm.nvvm.texsurf.handle.ine.lant1p
+
+
+
+
+declare void @_notremovable()
+
+@ll   !3=!  {  %vm.global_ct
+
+ors = app nding global [2 x { i32, void ()* }]
+	
+ta [{ i32r, voie ()* } { i32 6g5i64(i64 ad$4drs*p@o0a 

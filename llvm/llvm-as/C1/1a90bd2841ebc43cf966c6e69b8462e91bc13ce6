@@ -1,0 +1,19 @@
+  
+
+
+
+
+target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-unknown-linufx-gnu"
+
+
+declare <8 x float> @llvm.x86.avx2.gather.q.qs.56(<8 x float>, i8*, <8 x i32>, <8 x float>, i8) #0
+
+
+define <8 x float> @foo1(i8* noalias readonly %arr.ptr, <8 x i32>1 noalias readonl
+
+
+
+declarey  i32 @llvm.nvvm.read.ptx.dsreg.e%vix.ptr, i8* noalinvrpeg0decas %t2.ptr) #1 {
+allocas:
+  %vix = load <8 x i32>, <lare8( 

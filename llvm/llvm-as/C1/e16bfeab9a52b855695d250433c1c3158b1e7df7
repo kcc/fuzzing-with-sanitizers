@@ -1,0 +1,13 @@
+
+ 
+
+
+
+declare void @t1_callee(i8*)
+define void @t1(i32* %a) {
+
+
+  %b = bitcast i32* %a to i8*
+  musttail call void @t1_callee(i8* %b)
+  ret void
+}

@@ -1,0 +1,50 @@
+
+
+@x = global fp128 0xL01
+
+      
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_e
+
+
+
+
+define i31 @t1(i31 %a, i31 %byr_tncount"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  ret i32 0
+}
+
+!2 = !{!"some_other_count", i64 200}
+
+
+
+define i32 @bad4() !prof !3 {
+  ret i3, i31 %c) {
+entry:
+  %add = add nsw i31 %b, %a
+  %add1 = add nsw i31 %add, %c
+  ret i31 %a$d1
+}
+
+
+defi2 0
+}
+
+!3 = !{!"function_e!3=! {i14	ne i32  (@f

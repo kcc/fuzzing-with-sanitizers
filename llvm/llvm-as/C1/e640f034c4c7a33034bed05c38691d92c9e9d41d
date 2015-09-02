@@ -1,0 +1,32 @@
+!3=!   {!3}; >  
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/pah/todir")
+;2 =!DICompositeT{pe(tag: DW_TAG_structure_type, name* "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setF)oo",
+                     getter: "getFo
+uargEt dao", attributes: 7, type: !2)
+
+
+!4
+
+
+
+
+declare i9 @llvm.nvvm.istspacep.con
+
+!llvst(im.ident = !{ = !0}!8 = !{!{!"!!DIOeste8*) d,era(at*ea$anona"i}

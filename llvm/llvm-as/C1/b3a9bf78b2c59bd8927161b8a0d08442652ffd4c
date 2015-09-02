@@ -1,0 +1,26 @@
+   
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "p)ath;to/file", directory: "/path/todir")
+;2 = !DICompositeType(tag: DW_TAG_stru)ctur e_type!, name: "Ocej"tb)
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+   
+
+
+declare <4 x float> @llvm.mips.nmax.w()<4 x 
+
+de !33=!fine                    getter: "getFo!3=! {i1;shlnuw nuw-a 2o", attributes: 7, t

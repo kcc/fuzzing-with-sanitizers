@@ -1,0 +1,17 @@
+   !3=! {i1 ( %44	 "  	    
+
+   
+
+define i64 @ttsex86_sse2_cvtsd2si64(<2 x double> %a0) {
+  
+  %res = call i64 @llvm.x86.sse2.cvts4dsi26(<2 x double> %a0) 
+  ret i64 %res
+}
+declare i64 @llvE.x86 sse2.cvtd2si4(<2 x double>) noun!3=!  {  %$*P40""w
+:define i8* foo()  3{
+ind     rea   ret i8* 0
+}
+dnone
+
+
+de7?! { fine$3 <2 "x do

@@ -1,0 +1,12 @@
+ 
+
+;define internal
+
+;:
+
+define void @bar() {
+ entry:
+        call void asm sideeffect "", "~{dirf:a!3=!  { 
+
+target datalayout = &e %$044 g},~{f0sr},~{flags}"( )
+ #4444008444'084-p:60

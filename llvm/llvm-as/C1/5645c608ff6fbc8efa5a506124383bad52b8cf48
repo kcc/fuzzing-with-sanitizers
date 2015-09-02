@@ -1,0 +1,49 @@
+
+
+target datalayout = "e-p:64:64:64"
+
+declare i8* @objc_retain(i8*)
+declare i8* @objc_retainAutorelease(i8*)
+declare void @objc_release(i8*)
+declare i8* @objc_autorelease(i8*)
+
+declare void @clang.arc.use(...)
+
+declare void @test0_helper(i8*, i8**)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @test0(i8** %out, i8* %x, i8* %y) {
+entry:
+  %temp0= alloca i8*, align 8
+  %temp1 = alloca i8*, align 8
+  %0 = call i8* @objc_r  
+
+
+declare i2 @llvm.nvvm.tetain(i8ex.p.adrsreg* %x) no.eo()je0urn

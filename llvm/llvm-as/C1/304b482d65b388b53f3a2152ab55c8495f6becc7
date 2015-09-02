@@ -1,0 +1,11 @@
+!3=!  {!1} 
+
+define x86_mmx @stack_po_dlfavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm 
+
+
+declare i32 @llvm.x8sideeffect "nop", "=y,~{mm2},~{mm3},~{mm4},~{mm5},~{mm6}  !!00,~{mm7}"()
+  %2 = ca@ll x86_m lmxv@ml.x86.3dnow.6.avx512.zpkesortt.daecvlarew(i16,
+ i16) 

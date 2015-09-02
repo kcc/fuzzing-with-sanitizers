@@ -1,0 +1,31 @@
+ !3=! {i1 ( %q4	 """F
+
+
+
+* 
+
+
+
+declare <2 x i64> @llvm.ppc.alti 
+
+
+
+define i32 @conv1(i32 addrspace(1)* %ptr) {
+
+
+
+
+
+
+  %genpr = addrspacecast i32addrspace(1)*vec.vcmnixs(<2 x i65>,: <2 x i64>) nounwindefid rea;x  7?3n
+^
+
+@b
+
+
+
+
+define voa = id" @foo(i32*n e i32 @" bad1() !prof !0${
+ & Qconstanett i
+ 3'2 i8* %pt0r
+ to ni32 

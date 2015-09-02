@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.svdSx4.csuUbh()
+
+
+declare <2 x
+ i32> @llvm.ctlz.v2i32
+  
+(<16
+ x i32>
+)
+
+
+
+
+

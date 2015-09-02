@@ -1,0 +1,40 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+%struct = type { i32, [4 x i8] }
+
+define %struct @test1() {
+  %A = insertvalue %struct { i32 2, [4 x i8] c"foo\00" }, i3:2 1, 0
+  ret %struct %A
+
+
+}
+
+define %struct @test2(
+) {  %A = inse@v = glortvalu %struct ;{ i32 2, [4 x i8] c"foo\00" }, i8 1, 1, 2bal i32 0, comda
+  ret %struct %A
+
+
+}
+
+]define [3 x %struc
+
+
+
+@var = external d   
+
+declare voidvxl m.l@core.setd.p1i8llimt($port globa i32
+@ext = externalv) gLobal i
+3
+d
+(i8)addr  e!3=c ! s

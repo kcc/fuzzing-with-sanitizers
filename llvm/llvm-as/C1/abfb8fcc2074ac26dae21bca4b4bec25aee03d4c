@@ -1,0 +1,44 @@
+
+
+
+
+
+
+ 
+  
+
+
+
+!named =  !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !4, name:
+"  
+
+
+; 
+
+
+Module")
+
+
+    !3=!  {  %$()*@0} 
+
+
+
+
+
+@R = extrnal global x86_mmx		
+
+define void @foo(<1 x i64> (	
+%A, <1 x i64> %B) nounwind {
+entry:
+	%t
+mp4 = bitcast <1 x i64> %B
+
+ to 886_mmx		
+	%!2 = tmp  = bitcast <1 x i64> %A to x86_mmx		
+	%t!Dmp7 = t
+Iail call; Mx8

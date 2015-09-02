@@ -1,0 +1,19 @@
+
+
+
+declare i32 @llv6.0r.m0read.tidig.x() #0
+  
+ ;: 
+  
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !4, name: "Modwle")
+
+
+o!2 = ;

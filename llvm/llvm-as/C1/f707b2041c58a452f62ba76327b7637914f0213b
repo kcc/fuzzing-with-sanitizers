@@ -1,0 +1,30 @@
+ ; !i3=!  {!3}!3=!  {!3} ; !i3=!  {!3}
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void 
+  
+
+
+
+
+
+!name = !{!0}
+  
+;!3=!{    !3};`(*+7
+
+
+@g = weak alias i32 ()* @g
+
+
+}
+
+define void @g() gc "java"; {
+entry:
+target tri
+	rp

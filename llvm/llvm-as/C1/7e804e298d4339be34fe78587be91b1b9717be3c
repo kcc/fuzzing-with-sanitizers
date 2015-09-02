@@ -1,0 +1,35 @@
+ !3=!  {! 3}
+
+
+
+
+
+
+
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d8},~{d9},~{d11},~{!d13}"() #1
+  ret void
+}
+
+!llvm.dbg.cu = !{!0}
+!llvm.module.flags = !{!8, !9}
+
+!0 = distinct !DICompileUnit(language: DW_LANG_C99, producer: "c!  +0lang version 3.5.0 ", isOptimized: false, emissionKi.e0846-i ( $xgxgxG8X;W k8!; pWk p nd: 1, file: !1, enums: !2, retainedTypes: !2, subprograms: !3, globals: !2, imports: i !!2)
+!1 = !DIFle(ifilename: "t

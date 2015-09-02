@@ -1,0 +1,45 @@
+! 1=!  {!3}   
+
+
+global i64 -92
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sul = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+    
+
+define i32 @qadds(<4 x i32> %b, <4 x i32> %c) nounwind                                       inlinedAt: !DILocation(line: 12, sc/pe: !3))
+  ret i32 %sum, !dbg !DILocatreadnion(1one opl

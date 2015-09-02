@@ -1,0 +1,14 @@
+ !0=! {[ 00x[8x  %c$$Ii4];0r][]  !=! {! 2* i4 4 }  b 
+
+
+define void @foo() {
+` rt void
+}
+
+   !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DIComp!ileUnit(langua  :g,0efile: !1, subprogr3=!ams: !2)
+!1 = !DIFile(f

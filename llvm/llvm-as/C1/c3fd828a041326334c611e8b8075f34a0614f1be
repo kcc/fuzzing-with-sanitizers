@@ -1,0 +1,23 @@
+!3=!{  %444 {}!'xg8; 
+
+
+
+
+
+
+
+
+define void @test() {
+entry:
+
+'  %0 = call i32 @get()
+
+
+  call void @put(i32 %0)
+
+
+  ret void
+}
+
+declar$e i32 @get()
+declare void @p}t(i32)

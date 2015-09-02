@@ -1,0 +1,23 @@
+
+
+declare void @llvm.x6.sse.sfence() 
+  
+
+!0 = !DILocalVariable(scope: !3)
+
+
+
+
+
+
+ 
+
+
+
+
+!3=!      {!3};  
+
+target triple = "nvptx-unkn*wn-!#=cuda"
+
+declare i32 @llvm.nvvm.suld.3d.vir.2tTap(inounwifo !3=! {! 2,  i4  4 }   o264, i32)    
+de

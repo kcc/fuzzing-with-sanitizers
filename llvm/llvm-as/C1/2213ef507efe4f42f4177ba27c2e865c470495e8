@@ -1,0 +1,60 @@
+  
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                          inlinedAt: !DILocation(line: 12, sco!pe: !3))
+  ret i32 %sum,eclare  !dbg !DILocation(l:ie n13", scope: !3)
+}
+
+define;li)
+nk 
+
+!03= !DILocalVariable(scope:   !{! 
+3} )!c=!  {! once i32 @foo	 3}(
+
+
+
+
+
+
+declare i32 @lltm.hexagon.A2.addJi    !3(i32, i3

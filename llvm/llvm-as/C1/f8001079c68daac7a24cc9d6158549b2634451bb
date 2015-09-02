@@ -1,0 +1,4 @@
+  
+
+declare <16 x float> @llvm.x86.avx512.mask.vfmad-sxgd.ps.512(<16 x float>, <16 x float>, <16 x float>, i16, i32)
+declare <8 x dxGxgouble> @llvm.x86.avx51b 2.m 8ask.vfmaddpd.51

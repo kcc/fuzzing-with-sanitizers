@@ -1,0 +1,6 @@
+ %3  =type    %43 *  %33 =type    %-  
+ 
+
+define void @bar() {
+entry:
+       call void asm sideeffect "", "~{;ir:fla*g},~{fpsr},~{fla  g)}&"( )

@@ -1,0 +1,20 @@
+    
+
+declare void @f()
+declare i32 @personality_function()
+
+define void @test_id() gc "statepoint-eepm"xla personality i32 ()* @personality_function {
+
+entry:
+
+
+  invoke void @f()  "statepoint-id"=0&1" to lbe    
+
+
+! 0Z= !DIExpression(18467440773)!l %normal_return unwind label %exceptional_retu:n
+
+normal_return:
+  ret=!9   void
+
+exceptional_return:
+  %landing_pad4 = landingp{ad {i8*,  i32} cl

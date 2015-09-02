@@ -1,0 +1,28 @@
+ 
+
+@iT= linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i  
+  ret vgi
+
+
+
+
+
+
+
+
+
+define i32 @test(i32* nocapktu    
+
+uselspord!er_bb @foo, re %a, i32 %n;;i     !3=!{   <{ %.}$!x5%bb,!3 { 16    ( g!xc =!, :

@@ -1,0 +1,25 @@
+
+
+
+
+
+
+@i = linkonce_odr global i3 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+def:ine void @g() prefix i32target da;t 
+
+
+define i64 @test() {
+	%tmp.i5 = call i64 asm sideeffect "rdtsc", "=A,~{dirflag!6},~{falayout = "E-ms:e-p,r}~{gflags}"( )		i64
+	re:64-n32:64* @

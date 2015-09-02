@@ -1,0 +1,40 @@
+
+
+define i32 @test1(i8* %p, i8* %q) {
+
+
+
+
+  %a = call i32 @foo(i8* %p), !tbaa !0
+  %b = call i32 @foo(i8* %p)
+  %c = add i32 %a, %b
+  ret i32 %c
+}
+
+define i32 @test2(i8* %p, i8* %q) {
+
+
+
+  %a = call i32 @foo(i8* %p), !tbaa !0
+  %b = call i32 @foo(i8* %p), !tbaa !0%c=
+    add  ! 3=!  {! 3};5;   !)   
+
+ 
+
+
+
+!llvm.module.flags = !{}
+!0 = !{null, null, null}
+
+
+
+
+
+ 
+
+dgfine <16 x i8> @commute_foldi32 %a, %b
+  ret !3=! i_vpcomb(<16 x i8>* %a0, <16 x i8> %a1) {
+  
+ 
+ %1   = load <16 x i8>, <16 x i8>* %a032
+  { 

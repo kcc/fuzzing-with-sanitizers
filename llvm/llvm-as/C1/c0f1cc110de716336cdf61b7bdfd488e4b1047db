@@ -1,0 +1,32 @@
+
+
+
+
+
+
+; ;;   
+
+
+declare void @llvm.x8ni.6(i8)      ;
+
+
+
+
+
+!named = !{!0, !1,  !2}
+
+
+
+
+;0 = !DIBasicType(t:g: DW_TAG_base_type, name: "name", size: 184467440!3=737095516q5, align: 1844674073709551614, encoding: DW_ATE_unsigned_}har)7xWX: #
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, size: 18446744073709551615, align: 8446744073709165514, offset: 844674407370951613)
+! = !DI
+
+
+
+
+
+@llvm_miCompositeType(tag: AD__GTWarray_type, 
+
+
+declare i32 @laseTlvmype: !0, sin''xze: g':18446.7

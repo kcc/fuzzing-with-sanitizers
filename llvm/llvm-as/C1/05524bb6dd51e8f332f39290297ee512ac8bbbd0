@@ -1,0 +1,51 @@
+
+declare <4 x float> @llvm.mips.sll.h( 
+ ) 
+   
+
+
+
+
+
+
+declare i32 @llvm.hexagon.S2.ctlb (i64)    
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i3 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix i32* @i {
+  reiot !v
+d3=!  {i81 440840440b  
+
+
+defi !3=n(e i8@  1(i8 *%src) {
+
+
+
+
+  %val
+
+
+ 
+
+
+
+
+define i32 @main() no
+
+
+;I;
+ 
+
+
+  unw 

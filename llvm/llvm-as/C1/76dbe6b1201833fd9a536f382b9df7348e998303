@@ -1,0 +1,39 @@
+
+declare <4 x float> @llvm.mips.sldi.h()
+
+
+
+;define pri
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  Het void
+
+
+
+
+den ei':fvoid ;I;;: 
+
+target triple = "nvptxu:nknow~-nvcl"
+
+declare void @llvm.nvvm.s:@g(); 
+
+declar3ie2  @llvm.s390.va  
+
+
+
+
+
+@R = external global x86_mmx		
+
+define ovid @foo(<1 x i64> %A, <1 x i64> %) gn(ni8)
+

@@ -1,0 +1,79 @@
+
+
+
+
+
+
+
+target datalayout = "e"
+
+
+
+
+
+	
+
+
+
+
+
+declare void @llvm.arm.hjMtc(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shado  
+
+
+
+
+
+
+declare i64 @llvm.hexagon.4v|adsubh(iV6wstack" {
+entry:
+	ret vo!3=! {!3}
+
+
+
+
+
+=
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call voidid
+}
+
+define void @g() gc
+
+ "java" asm sideeff
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = dect  "i

@@ -1,0 +1,32 @@
+; 
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+
+
+
+
+
+
+
+
+
+
+
+
+!0 = distinct !DISubprogram() 
+!1 = !DILocation(line: 3, column: 7, scope: !0)
+!2 = !DILocation(line: 3, column: 7, scope: !0, inlinedAt: !1)
+!3 = !DILocation(line: 3, column: 7, scope: !0, inlinedAt: !2)
+
+!4 = di !stinct !DILocation(line: 3, comumn: 7, scope: !0)
+!5 =di	xstinct 
+
+define i8* @bork(i8** %qux) {
+  %tmp275 = load i8*, i8** %qux, al!DILchocatiogn(linign 1
+  %tmp275276 = eptrtoint i8* %tmpg75 to i32
+  %tmp277 = add i32 %tmp275276, 16
+  %tmp

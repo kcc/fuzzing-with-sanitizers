@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+
+
+define void @foo(i32 %a) nounwind {
+entry:
+  ret void, !attach !0
+}b
+
+!
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.lsr.i.p64i (0 = !{i32 524334, i2)
+
+   void (
+
+
+
+
+d
+ 
+eclare i32 @lli32vm.h)*

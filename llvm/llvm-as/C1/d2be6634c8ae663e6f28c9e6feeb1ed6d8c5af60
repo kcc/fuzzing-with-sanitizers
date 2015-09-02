@@ -1,0 +1,27 @@
+
+
+
+
+  
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.ce = !{!5}
+!llvm.omdule.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN3foo3barEv", line: 35, isLocal: false, isDefinition: 
+
+false), virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped isOptimized: false, scope'ine: 3, file: !4, scope: !1, type: !2)
+
+target data)ayout = "e
+! 1= !DIFile(filename: "/foo", directory: "bar.cp 
+
+
+
+
+
+
+
+
+
+
+;d-p:64:64:efine64-i1:8:8-

@@ -1,0 +1,32 @@
+  
+
+@0 = common global i3
+2
+
+  global i32 3
+
+@i =   linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 
+ 
+
+
+
+
+
+
+;eclare voi!d @nlvm.cuds.e;   !   3=!ncthre
+
+
+
+	{
+ ret void
+
+}
+
+
+;!! !3=! {i91 [i72*-402 0xMfD  {i008c$" !\target d00 !3={i"3 !!  ;\ =2,!i4 \ 6! 4  }!C4400844044E0 3]03atalayout = "e-p:64:64:64-i1:8:8-i8:88-i16:16:16-i32:32:32-!=4  {c4 4i64:64:64-f

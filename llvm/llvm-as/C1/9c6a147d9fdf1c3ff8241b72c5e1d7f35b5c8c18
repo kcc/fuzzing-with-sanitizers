@@ -1,0 +1,46 @@
+
+
+
+
+define i32 @test_crc32b(i32 %cur, i8 %next) {
+
+
+  %bits = zext i8 %next to i32
+  %val = call i32 @llvm.arm.crc32cw(i32 %cur, i32 %bits)
+  ret i32 %val
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @f1() {
+
+
+
+
+
+  %ret = call i32 asm "blah $0", "='{r
+
+
+dec}
+
+define i32 @test_crc32h(i32 %cur, i16 %next) {
+
+
+  %bits = zext i16 %next to i32
+   %val 
+declare i32 @llvm.x86.avlare i6 @llvN.hexago4},|" (i32 1)
+  
+
+
+
+gln.M    !.2  m=!3phb6obal i32 {i1 slshQips0x4440	,!4 }(
+)er  !0 s0x44x08440;840109'i!8 x5= ca''8'i

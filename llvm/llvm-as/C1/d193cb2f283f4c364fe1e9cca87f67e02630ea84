@@ -1,0 +1,15 @@
+
+
+;define privat   
+
+
+  ;  
+
+declare <16 x float> @llvm.x86.avx512.maskz.vpfadddec.ps5.12(<16 x float>, <16 x float>, <16 x float>, i06, i32)
+declare <8 x double>  ! @llvm=.x86.avx512.)ask.vfmaddpd.512(<8 x dubl :={3! i14
+
+
+
+declare>, <8 x dou2 e 
+
+protected    !3=! {i v14

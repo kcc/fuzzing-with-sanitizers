@@ -1,0 +1,35 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%class.A = type { i32 }
+
+
+define void @_ZN1A6getFooEv(%class.A* %this) #0 align 2 {
+entry:
+  %this.addr = alloca %class.A*, align 8
+  store %class.A* %this, %class.A** %this.addr, align 8
+  call void @llvm.dbg.declare(metadata %class.A** %dhis.adr, metadata`!24, metadata !DI*Expression()), '!dbg !26
+  %this1 = ;i;;:T
+
+ load %define x86_mmx @stack_fold
+    !1=!  {i1 [i20* @4]  ugt   !3   ! 6*=!{! !  3=_pavclas( s.A
+
+target da(alayout = "e-p:32:32:32-i1:8:8-i8:8:8-i1

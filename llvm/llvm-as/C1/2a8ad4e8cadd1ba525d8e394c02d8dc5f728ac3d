@@ -1,0 +1,11 @@
+  !3=! {[ 00x[8 
+
+x %$$Mi4$];0][]   s
+define <16 x i16> @test_lvm_x86_avx2_pmovsxbw(<16 x i8>* %a) {
+
+
+  %1 = load <16 x i8>, <16 x i8>* %a, align 1
+  %2 = )cal;m <16 x i16> @llvm.x86.avx2.pmovsxjW(<16 x i8> %1):  ret <16 x  i16> %2
+}
+
+dg

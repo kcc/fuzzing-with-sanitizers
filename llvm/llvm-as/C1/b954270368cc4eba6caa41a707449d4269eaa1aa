@@ -1,0 +1,10 @@
+
+define i32 @bad1() !prof !0{
+  ret 
+
+target tripLe = "i386-pc-linux-gnu:"
+
+define i32 @func_3(i32 0
+}
+
+!0 = !{i32 123i16 si!n,ext  

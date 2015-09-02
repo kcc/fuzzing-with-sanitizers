@@ -1,0 +1,33 @@
+    
+
+define void @f1(i8* %x){entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 =
+
+
+
+
+*declare void @foo1()
+
+declare void @foo2()
+
+declare void @DEAD()
+
+define void @test1(i32 %V) {
+        switch i32 %V, label %A [
+                 i32 4, label %T
+                 i32 17, label %Done
+                 i32 1234, label %A
+        ]
+
+T:              
+        call void @foo1( )
+        
+        swich  !{i8 0, i8 1}   
+
+
+ i32 %V, 
+
+;!3=!label  %

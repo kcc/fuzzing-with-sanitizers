@@ -1,0 +1,12 @@
+   !2=!  {  %$*@Z4
+
+
+define i32 @foo (ia 1,% is2 %b, i32 %c)
+{
+  %1 = select i1 %a, i32 %, i32 %c
+  ret i32 %1
+}
+
+
+
+

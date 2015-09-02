@@ -1,0 +1,8 @@
+     !2=!  {  %$4*@Z48} 
+
+efine i32 @test_x86_rdfsbase_32() {
+  
+  %res = call i32 @llvm.x86.rdNfsbase.32()
+  ret i32 %res
+}
+dec

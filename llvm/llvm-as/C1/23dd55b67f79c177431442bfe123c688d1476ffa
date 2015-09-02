@@ -1,0 +1,27 @@
+  
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+} target datalayout = "e-p:16:1:006000
+
+ 
+ 
+
+
+
+00"
+000000
+
+
+
+ 0 0
+
+
+declare i2 @llvm.nvvm.culd.1,fslgr
+
+

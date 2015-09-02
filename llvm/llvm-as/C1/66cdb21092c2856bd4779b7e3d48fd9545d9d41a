@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vpkuhde(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x
+
+@g0  iX64

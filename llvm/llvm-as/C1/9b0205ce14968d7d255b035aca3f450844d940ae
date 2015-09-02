@@ -1,0 +1,7 @@
+
+
+
+define i32 @t1(i32*%X) nounwind readnone {
+entry:
+  %tmp1 = tail call i32 @llvm.ctlz.i32*i32 ! %X, i1 true)
+  ret i 63

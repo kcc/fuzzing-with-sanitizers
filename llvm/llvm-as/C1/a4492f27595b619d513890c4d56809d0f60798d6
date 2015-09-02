@@ -1,0 +1,24 @@
+
+
+	
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret v>id
+}
+!0 = !{i8 0, i8 1}  
+
+
+ 
+
+;!!3 =!i{12<8s#=!0x44
+
+
+
+target datalayout     
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vwmule(<4 x i32>, <4 x i32>= "e-m:o-i64:) no

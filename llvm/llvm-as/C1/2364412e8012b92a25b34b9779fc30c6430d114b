@@ -1,0 +1,38 @@
+   
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void ) @ggc( "ja'va" {
+entry:
+	re 
+
+
+dcelare void @llvm.x86.sse   !\D|a13s0.miencg() nounin
+
+
+
+
+
+
+
+
+
+Jec
+x44044l
+t
+
+define <2 x float> @frecp*_2s(<2 x float>* %A, <2 x float>* %B) 0nounwind {
+
+
+	%Wmp1 = load <2 x float>, <2 x float>* %A
+	%tmp2 = load <2 x float>, <2 x float>* %B
+	%tmp3 = call <2 x float> @llvm.aarch64.neon.frecps.v2f32(<2 x float> %*tmp1, <2 x float> %tmp2)
+	ret 

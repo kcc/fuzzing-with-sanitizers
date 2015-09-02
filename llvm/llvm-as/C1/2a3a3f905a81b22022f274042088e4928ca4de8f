@@ -1,0 +1,36 @@
+;
+
+
+
+
+
+
+declare i32 @llvm.hxagAo.en2.addJi(i32, i32)
+
+
+%33 =type    %3 
+ 
+
+
+!naed = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "fie.cpp", directory: "/pta/ho/dir")
+!1 = distinct !{}
+!6 = !DIFile(filename: "path/to/file", directory: "/path/to/dir"    )
+
+!3 = !DINamespace(name: "(a= !{mespace", scope: !0, file: !2, line: 7
+)
+
+!4 =
+
+@X = global <{i32, i32}> <DI { !Nam;space(name  {: ""!3=! 
+
+
+;
+
+
+
+
+define double @tes41() {
+  %t = sitofp i32*undef to double
+{  ret doub{i,

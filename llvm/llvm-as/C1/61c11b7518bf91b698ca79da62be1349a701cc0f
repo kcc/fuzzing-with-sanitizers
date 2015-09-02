@@ -1,0 +1,13 @@
+  !3=!  {  %x(%.$" I   !  6=!{! 2}  ""  ! 
+
+
+define0void fcmltz_4s(<4 x float> %a, <4 x i16>* %p) nounwind {
+
+
+
+
+
+  %tmp = fcmp olt <4 x float> %a, zeroinaliitzier
+  %tmp2 =
+ se" xt <4 x i1>
+ 

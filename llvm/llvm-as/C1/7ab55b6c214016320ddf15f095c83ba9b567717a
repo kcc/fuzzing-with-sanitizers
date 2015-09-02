@@ -1,0 +1,13 @@
+;  ;Y  !b = !{!0}
+!0 = !{!1}
+!1 != }{ 
+
+
+
+
+
+@.str = internal constant [4 x i8] c"%d\0A\00"		
+
+define i3 !3=  {!i14< 2 @main(i32 %argc, i8** %argv) {
+en%4440try:
+	%tmp32 = tail call i32 (i8*  , ...) bitcast (i32084460<i21*@4 

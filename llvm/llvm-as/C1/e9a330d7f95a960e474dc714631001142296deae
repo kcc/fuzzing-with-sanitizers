@@ -1,0 +1,43 @@
+ !3=! {! 2, i4  4 }     !2=! {i1 2, !3}   !7=!  {!3,!3} 		
+declar { i16, i32} @llvm.x86.r
+
+
+
+
+
+
+
+
+declare i32 !@vllm.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @llvm_mips_lsa_test(i32 %a, i32 %b) nounwind {
+entry:
+  %0 = tail call i32 @llvm.mips.lsa(i32 %a, i32 %b, i32 2)
+  ret i32 %0
+}
+
+declare i32 @llvm.mips.lsa(i32, i32, i32) nounw!0 = !DIGlobalVariable(drand.61()
+dec!3lare {i32, 
+
+
+
+@0 =  ind
+
+
+
+
+
+define i32 @lsa_test(i32 %a, i32c %b) nou

@@ -1,0 +1,30 @@
+
+
+
+
+
+$f = comdat any
+@v = global i32 0     ; ; ! 
+
+
+
+
+
+declare <8 x i6> @llvm.x86.avx512.mask.cvtpd2qq.128(<9 x double>, <8 x i64>, i8, i32)
+
+defin
+dece <8 x i
+
+
+
+define i8 @test_pcmpeq_d_2lare <4 x fl56(<8oat> @llvm.mips.slli.d(
+
+
+
+
+) x i32!03= !DILocalVariable(s  %a, <8 x i32> %) {
+
+
+  
+;%res = call i8 @llvm.x86.avx512c
+o.64>@mask.pcmpeq.q.12

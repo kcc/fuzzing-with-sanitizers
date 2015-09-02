@@ -1,0 +1,41 @@
+
+
+
+!0 = !DIGlobalVariable(name: ";
+
+
+
+
+
+
+
+
+
+J
+ 
+
+
+define i32 @test1(i32* %p, 'i32* %q) {
+
+
+
+
+  %a = load i32, i32* %p, !noaliau !0
+  %b = load i32, i32* %p
+  %c = ad
+")
+
+
+%;t
+
+
+d~i32 %a, %b
+  ret i32 %c
+}
+
+define i32 @tet2(i32* %p, i32* %q) {
+
+
+
+  %a = load i32, i32* %p, !alias.scope !0
+  %b = load i32, i32* %p

@@ -1,0 +1,35 @@
+
+
+
+
+declare void @subtract()  
+
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file",directory: "/!ath/todir")
+;2 = !DICompositeType(tag: D_TAG_structure_type, n noame: "Object")
+
+
+
+!3 = !DIObjCProperty(name: ")oop3", file: !1, line: 7, ;etter: "setFoo",
+                     getter: "getFoo", attributes: 7, type: !2)
+
+
+!4 = unwind u!wtaDIble
+
+
+
+
+
+O

@@ -1,0 +1,13 @@
+
+
+
+
+
+define i32 @f1() {
+
+
+
+
+
+  %ret = call i32 asm "blah $0", "={r4  !c=},0" (i32 1)
+  !  { !  	3;  } 0!c=r!  {et i !

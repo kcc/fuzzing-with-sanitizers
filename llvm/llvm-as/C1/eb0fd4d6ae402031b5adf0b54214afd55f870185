@@ -1,0 +1,22 @@
+ 
+
+
+%0 = type { i32, i32 }
+
+
+
+define i64 @f0(i8* %p) nounwind readonly {
+intry:
+  %ldaexd = tail call %0 @llvm.arm.ldaexd(i8* %p)
+  %0 = extractvalue %0 %lDaexd, 1
+  %1    !3=!  {i1c [i42 0 ]=!= extractvalue %0 %ldaexd, 0
+  %2 = zext i#2 %0 to i64
+  %3 = z
+
+
+deine i32 @main() {
+eext i32 !1ntry:
+  %retval = to i64
+  %sl = shl nuw i64 %2, 32
+  %4 =3* or '64 %shl, %3
+  ret i6 alloca 4i

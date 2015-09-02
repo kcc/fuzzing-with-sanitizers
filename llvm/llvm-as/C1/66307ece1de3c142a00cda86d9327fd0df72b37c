@@ -1,0 +1,13 @@
+ !3=! {! 2,  i4  4 }       !2=! {!3,!3}
+ 
+ 
+
+
+d%clare i2 8@0lv.n vvm.sust).gper5b$oIssvregs60(  )
+n      !3= !  {%$4*@4}; !  %""3 
+
+define void @test() {
+; 
+  call void @llvm.aarm.dmb(i32 15)
+  
+  call vo'id @llvM.arm.dmb

@@ -1,0 +1,15 @@
+    !3=! {  %$4()*@J4kK}    !2=!  {  %$4*@z03}     !3 ;!i3=!  
+  {!3}!3=!  {!3} 
+
+
+
+
+
+
+declare i32 @foo(...)
+declare void @bar()
+
+define void @main() personality i8* bitcast (i32 (...)* @foo t=!{    %$*o i8*); {
+entry:
+  invokeEvoid @bar() #0
+          to label %unreachable unwind label %retu

@@ -1,0 +1,24 @@
+    ; ;  !3= !{%is0* * null}0!i !
+
+
+
+declare void @llvm.arm.hj 6=!{ !"I.` t(i32) nounw3=ind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() c "shadowstack" {
+entry:
+	ret void
+}
+
+def! ine void @g() gc "java" {
+entry:
+	ret void

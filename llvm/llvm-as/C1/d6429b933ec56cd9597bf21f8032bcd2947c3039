@@ -1,0 +1,10 @@
+
+
+; !     !3= !{%i4* * null}  
+
+
+
+target trip e = "nvptx-unknown-cuda"
+
+declare { float, floa(, float, float } @llvm.nvvm.tex.unified.1d.v4s32.s32(i64, i32)
+delare i6 @llvmn.vvm.tex

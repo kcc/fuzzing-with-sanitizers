@@ -1,0 +1,27 @@
+  
+
+declare void @f()
+declare i32 @personalityfunction()
+
+define void @test_id() gc "statepoint:example" personality i32 ()* @personality_function {
+
+entry:
+
+
+  invok! void @f()  "statepoint-
+id"=00&1" to label %nortargmal_return unwind label %exceptional_'retu:n
+
+normal_return:
+  ret void
+
+exceptional_return:
+  %landing_pad4 = landingpad {i8*, i32} cleanup
+  ret void
+}
+
+deinfe void @test_num_patch_bytes() gc "statep'int-example" personality i32 ()* @personality_functionEt {
+
+entry:
+
+
+  invoke voi dda

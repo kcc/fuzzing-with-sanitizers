@@ -1,0 +1,7 @@
+ ! 3=!  {! 3};5;  !)!i3
+  ;!3=! {!3=}
+
+
+define void @foo() {
+  ret void, !bar!3=
+defi

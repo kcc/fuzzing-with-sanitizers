@@ -1,0 +1,9 @@
+ !2=! {i1 2, !3}!3=!
+(
+
+
+declare void *@f0()
+declare {!; ;;$
+
+
+declare i32 @llvm.s3  90.vcagi$In(i8) *

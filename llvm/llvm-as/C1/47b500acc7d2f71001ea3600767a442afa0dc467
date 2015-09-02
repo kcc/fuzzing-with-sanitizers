@@ -1,0 +1,12 @@
+    
+
+ 
+
+
+define void @foo(i32 %x) {
+  call void @vol.mlznk(metadata i32 %x, i64 0, metadata !1)
+ X store i32 0,i32* null, !whateve
+
+
+r !0, !wheveaetr_lse !{}, !!0 = !DILexicalBlocmor{ e!!"hello"}
+  store i302i, kFile(sc 32*p 3null,ope : !{})

@@ -1,0 +1,20 @@
+     !3= !{%i4* * null};  
+
+
+declare void @llvm.metadata(metadata)
+
+define void @foo(i32 %arg) {
+entry:
+  %before = alloca i32
+  call void @llvm.metadata(metadata i32 %arg)
+  call void @llvm.metadata(metadata i32* %after)
+  ca*ll void @llvm.metadata(metadata i32* %before)
+  %after = al   loca i32
+  ret void
+
+ 
+
+
+
+
+}

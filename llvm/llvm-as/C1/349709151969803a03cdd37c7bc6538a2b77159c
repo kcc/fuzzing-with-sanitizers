@@ -1,0 +1,24 @@
+
+
+  
+
+
+!0 = !DIGlobalVariable(name: "O tg edraao
+
+
+@g_127 = externalglobal i32		
+$v= 
+
+define i32 f
+  ` !3= !{%i4** null}
+
+
+define <4 x float> @test_x86_cvtph2ps_128(<8 x i16> %a0) {
+  
+  
+  
+ unc56(i32 %p_5   
+declare double @llvm.cf64(doubl )
+ ,8i32 %p_5i9, 32 %p_61, i16 signext %p_62 )ounnw i dn{
+")tentry: %rs = call <4 x float> @llvm.x86.vcvtph2ps.128(<8 x i16> %a0) 
+  ret 

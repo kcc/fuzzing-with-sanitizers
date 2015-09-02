@@ -1,0 +1,10 @@
+!3= !{!3}%3 colf(#e=M   ! 
+
+
+define i32 @foo (i83 = %a)
+{
+  %1 = zext i8 %a to i32
+  ret i32 %1
+}
+
+

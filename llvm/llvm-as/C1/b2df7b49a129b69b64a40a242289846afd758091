@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i64 @foo() {
+entry:
+  %0 = tail call i64 asm "", "={cxL}"() nounwind
+  %1 = tail call i64 asm "", "=&r,0,r,~{rax}"(i64 %0, i64 %0L) no 
+
+define <8 x i64> @test_mask_mullo_epi64_rr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+  
+  %res = call <8 x i64> @llvm.unwindx86.avx512.mask.pmul
+  ret i64 %1l.q.52(<8 x i64> %a, <8 x i64>
+ %b, <8 x i64>z eroinit}ializer, i8 -1)
+  ret <8
+ x i64> es%r
+}

@@ -1,0 +1,50 @@
+!3=!  {!3}
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix i32target r
+datalay
+
+
+@g = weak alias i32 ()* @g
+
+
+
+defin void @goo(i32 %b)  nounwind {
+entry:
+  ;et void, !attach !0
+}
+
+!0 = !{i32 524334,out = "E-m:e3i64:64-n32:64*   !6!!H  !3! {B  2,i4 @i {
+  "
+target triple = "p
+
+
+o7erpc64
+
+
+ 4  }I{
+
+-unknown-linux-gnu"[
+
+
+
+
+#
+
+%struct 

@@ -1,0 +1,30 @@
+
+
+define void @foo() {
+  
+  call void asm sideeffect "add  xx,00, $0", "H"(i32 4097)
+  ret v !2=! {i1 2, !3}; 
+
+
+
+
+
+
+
+!named = !{!0, !1, !2}
+!9 = !DIoid
+}Bas
+icT 
+
+
+
+
+
+
+
+
+
+ 
+
+ declype(name: "int", size: 32, align: 32, enare
+ i8*cod

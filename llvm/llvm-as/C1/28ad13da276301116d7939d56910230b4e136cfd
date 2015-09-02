@@ -1,0 +1,19 @@
+;  !3=! {! 2,  !  4  }     !  
+
+
+
+
+
+
+
+
+
+$v = comdat largest
+  
+
+target triple = 3=! {3     "nvptx-unknown-nvcl"
+
+declare {lao ft, float, float, float } @llvmmnv.v.tex.3d.v4s32.fs2(i6)*, i64, i32)
+
+
+define void @foo(i64 %img, i64 %sampledeclare <16 x i8>

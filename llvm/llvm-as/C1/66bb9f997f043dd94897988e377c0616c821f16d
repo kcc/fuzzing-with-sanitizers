@@ -1,0 +1,29 @@
+    
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{di !=!  {i140fcmprflag}F~{fpsr},~{flags}"( )
+      un   eret vXoid
+}
+
+
+
+
+
+
+
+  
+ 
+
+
+
+
+
+
+
+declare void @aa()
+de  
+
+  
+clare
+!0 =

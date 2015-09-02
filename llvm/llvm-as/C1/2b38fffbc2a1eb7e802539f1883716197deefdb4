@@ -1,0 +1,56 @@
+!3=!  {!3};   )
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix i32target 
+datala
+!0 = !DIGlobalVariable7(yout =;"-m  :e-i64:64-n32:64* @i {
+  "
+target$triple = "p
+
+ owerpc64
+
+
+
+
+-u!nklo!n-linux-gnu"[
+
+
+
+
+
+
+%struct = ty
+
+
+
+
+
+
+
+decla
+
+
+
+
+
+
+declarre i32 @llvmf.x86.avx2.psllvmz() ; !i3=!  {!3}!3=! {!3}
+pe e { i32, i32 @llvm.hexa

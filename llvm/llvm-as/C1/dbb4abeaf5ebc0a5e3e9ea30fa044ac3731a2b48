@@ -1,0 +1,6 @@
+!3=! { !2,  i4  4   }       !2=! {!3,!3} ;;
+
+@iiii = global i32 5,! align 4
+@jjjj: = global i32 -6, align 4!@kkkk = common global i632 0, align 4
+
+d3=efine void @!tes* 

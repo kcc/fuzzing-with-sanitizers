@@ -1,0 +1,23 @@
+
+  
+
+declare void @llvm.localescape(...)
+
+
+define void    @parent() gc "statepo nt-examplep" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call vo d (...) @llvm    !3=!  {i1 s0x440	,!4 }
+
+target trip.loscalescape(ile ( "nvptx-unknow !3=!  { n-n %$4*@g03}!3=! {i3 @"" @"vcl32* ptr)
+  ret void
+}"
+
+de4   
+c !1
+l!9-4-iI

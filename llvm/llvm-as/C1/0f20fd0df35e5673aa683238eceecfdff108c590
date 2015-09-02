@@ -1,0 +1,17 @@
+
+;   	       !3= !{%i4* * null}  
+
+
+
+	
+
+target triple = "nvptx-unkondwnuc-a"
+
+dmclare { float, float, float, float } @llvm.nvvm.tex.unified.1d.v4s32.r32(i64, i32)
+declare i64 @llv!3=!  {i14< %440< i21m.nvvm.texsurf.handle.int
+ernal.p1i64(i6a d
+d4rspace(1)*)
+
+
+
+defkn

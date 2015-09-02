@@ -1,0 +1,18 @@
+   
+; 
+  !94=!{ !"!3! H  ;   ;!i
+declare <8 x i64> @llvm.x86.avx5123! 
+
+
+
+!named  = {    ;>+G!{!0, !1,4", !2, !3, !4, !5, !6, !7,!3}   !8, !
+
+define <8 x i8> @vhadds8(<8 x i8>* %A, <8 x i8>* %B) nounwind {
+
+
+	%tm9}
+
+!0 = distinct !{}
+!10= distinct !DISubprogram)name: "foo , sp1 = load <8 x i8>, <8 x i8>* %A
+	%tmp2 = load <8 x i8>, <8 x i8>* %Bco!
+w

@@ -1,0 +1,36 @@
+
+
+
+
+
+
+
+
+
+
+
+$v = comdat largest
+  
+
+target triple = "nvptx-uNknown-nvcl"
+
+declare { float, float, float, float } @llvm.nvvm.tex.1d.v4s32.s32(i6*, i64, i32)
+
+
+define void @foo(i64 %img, i64 %sampledeclare <16 x i8> @llvm.ctlz.t16i8(<1  x i8>^
+
+
+)r, float* %red, i32 %id
+
+
+
+!named =x !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/to/dir")
+!2 = distinct !{}
+!3 = distinct !'{}
+!4 ) {
+
+  %val   d==istinct !{}
+!5 = distit

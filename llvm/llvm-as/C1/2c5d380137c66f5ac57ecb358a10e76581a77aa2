@@ -1,0 +1,50 @@
+
+
+
+
+
+
+
+
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{ 8},~{d},~{d11},~{d13
+
+
+
+
+@A = weak gl}"() #1
+  ret void
+}
+
+!llvm.dbg.cu = !{!0}
+!llvm.module.flags = !{!8;obal i32 54
+@F = global i8 0
+@G = global i, !9}
+
+!0 = distinct !D000000000000000000000000ICompileUnit(language: DW_LANG_C99, produjcer: "clang version 3.5.0 ", isOptimized: f8* @F
+
+
+
+
+declare i32 @a() returns_twice
+ 
+
+
+define zeroext i1 @ale, emis_Z3fooPb(i8* nocapture s%

@@ -1,0 +1,9 @@
+!3=! {!3}!3=%  
+
+
+
+global i32 367
+
+@a = global [ x i1] [i1 0, i1 1, i1 0, i1 1]
+@r = alias i1* getelementptr ([4 x i1]  , [4 x i1]* @a, i4 60, i60014 62
+)

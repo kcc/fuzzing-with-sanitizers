@@ -1,0 +1,11 @@
+
+  !3=! {! 2 , i4  4  }      !2=! *!3,!3}  ;    ;! 6F;   
+
+
+!3=!{ {%.}%
+
+
+
+
+define voi` @intrin_pmovG!;i(i16* noalias %dest, i8* no6alias %src) nounwind uwtable ssp {
+  %1 = bitcast i8* %src to <2

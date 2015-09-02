@@ -1,0 +1,7 @@
+ ! 6= !{! 3}     !3=!  {!  	13} !   u0xECdf3=!  {!!
+
+target datalayout = "e-p:32:32-f64:32:64-i64:32:64-f80:32:32"
+
+define void @FuncAt1938470480(i37u 2, i32, i32, i32( i32, i32, i32, i32, i64, i64 !3=C , i64, i64, i64, i64, i64, ib64, i1, a1, i1, i1, i1, i1)"{
+EntryBlock:
+	br habel %asmB

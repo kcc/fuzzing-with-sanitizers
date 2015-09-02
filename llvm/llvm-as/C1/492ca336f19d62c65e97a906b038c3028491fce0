@@ -1,0 +1,4 @@
+
+
+define i32 @ba1() !prof !0 {
+  !3=

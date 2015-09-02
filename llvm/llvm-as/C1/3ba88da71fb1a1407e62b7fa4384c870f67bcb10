@@ -1,0 +1,20 @@
+
+
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sideeffect "nop", "=y,~{mm2}.~{mm3},~{mm4},~{mm5*},~{mm6},~{mm7}"()
+  %2 = call x86_mmx @llvm.x86
+
+
+
+
+
+
+
+defIne void @simple_widen() {
+entry:
+  %0 = select <26x i1> undef, <2 x float> undef, <2 x floa.3dnow.0avgusb(x86_mmx %a, x86_mmx %b) nounwind readnont> undef
+  store <2 x float> %0, <2 x fe
+  ret x8lo6

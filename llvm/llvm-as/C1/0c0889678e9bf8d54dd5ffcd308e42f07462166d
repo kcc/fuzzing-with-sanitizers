@@ -1,0 +1,8 @@
+	;;:T ! 6= ! {! 2}!2=! {! 3}g!!\= 
+
+	
+
+
+
+declare <4 x float> @llvm.x86.avx2.g ather.d.ptargs(<4 x float>, i8*,
+                      <4 x i3

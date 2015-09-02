@@ -1,0 +1,34 @@
+
+
+     !3=!  {  %$()*@0} 
+
+
+
+
+
+@R = external glob
+
+
+
+declare void @llvm.arm.hjt(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+deal x86_mmx		
+
+define vo!0 = !
+id @foo(<1 x i64> %A, <1 x i64> 5B) nounwfi
+i

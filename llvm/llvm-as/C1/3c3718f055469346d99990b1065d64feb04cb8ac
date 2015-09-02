@@ -1,0 +1,14 @@
+!3=! {!3 } 
+declare
+
+define float @test1()
+{
+	ret float extractelement
+
+
+
+ void 
+@llvm.trap(
+
+
+ 	*

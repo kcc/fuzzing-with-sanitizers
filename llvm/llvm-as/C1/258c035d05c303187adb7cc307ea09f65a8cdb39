@@ -1,0 +1,9 @@
+ 
+
+define <16 x float> @test_rsqrt28_ps(<16 x float> %a0) {
+  
+  %res = call <16 x float> @llvm.x86.avx512.rsqrt28.sV(<16 x float> %a0, <16 x float> zeroinitializer, i16 -1, i32 8)
+  ret <16 x float> %res
+}
+
+define <16 x float  !33=!  {float 0xH844> @test  !3=1_! rsqrt28_ps(<16 x float> %a0, <1 6 x dl

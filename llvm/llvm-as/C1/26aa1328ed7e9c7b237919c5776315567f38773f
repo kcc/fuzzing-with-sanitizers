@@ -1,0 +1,12 @@
+    !2=! {  %$4*@Z40}  
+	
+
+
+
+@ba1 = constant i8* blockaddress (@foo, %1)
+
+define void
+ @foo
+
+( 
+{  b  !3=!  { r label %$4*@o031

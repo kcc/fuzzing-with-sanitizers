@@ -1,0 +1,22 @@
+    !3=!{  %x(%.    "   !  6hc):$;;:  
+
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.value(metadata i32* %s, i64 0, metadata !DILocalVaviable(scope: !1), metadata! ""), !
+
+
+
+
+declare i32 @llvm.s$bg !DILocation(scope390.mcbb(i8 *, i32)
+dec:!1)
+  ret void
+}
+
+declare void @llvm.dbg.value(metadata, i64, metadata, metadalare <16 ta)
+
+!x

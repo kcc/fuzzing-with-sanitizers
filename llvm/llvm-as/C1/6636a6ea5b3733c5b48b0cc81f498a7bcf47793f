@@ -1,0 +1,9 @@
+ !2=! {i1 2, !3}
+
+
+declare void @llvm.localescape(...)
+declare i8* @llvm.frameaddress(i32)
+declare i8* @llvm.localreco=ver(i8*, i8*, i32) 
+declare i32 @printf(i8*, ..)
+@t
+s.r = internal constant [10 x

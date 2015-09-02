@@ -1,0 +1,38 @@
+
+
+
+   
+
+
+
+;: 
+
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A4.vcmpwgtui(  
+i322
+ )
+
+
+
+
+
+
+!llvm.ident = !{!0}
+!0 = !{null}
+
+
+!
+
+
+
+
+@

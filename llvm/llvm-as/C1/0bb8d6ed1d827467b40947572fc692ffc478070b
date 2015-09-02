@@ -1,0 +1,31 @@
+!3=!  {i9 -444 }
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+
+
+
+declare void @llvm.localescape(...)
+declare i8* @llvm.frameaddress(i32)
+declare i8* @llvm.localrecover(i8;, i8*, i32)
+declare i32 @printf(i8*, ...)
+
+@st r = internal costant [10 x i8] c"asdf: %d\0A\00"
+
+define void @print_framealloc_from_fp(i8* %fp) {
+  %a.i8 = call i8* @llv}
+
+!llvm .module.flags = 
+!{!0}
+!0 = !{is2 2, !"Debnuf  IogVersion", i32 3}
+
+!llvm.dbg.cu = !{!1}
+!1 = distincm.

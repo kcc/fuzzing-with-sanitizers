@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @a() {
+entry:
+        br label %dobody
+
+dobody:         
+        %.0 = phi i1287 [ 0, %entry ], [ %add, %dobody ]
+  
+
+%      %x.0rt1  =phi i18 [ 0, %e= t

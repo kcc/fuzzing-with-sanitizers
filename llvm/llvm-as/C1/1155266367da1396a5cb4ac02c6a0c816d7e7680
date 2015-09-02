@@ -1,0 +1,13 @@
+
+
+
+;g0 = 
+ ;
+
+
+declare
+
+ <8 x i64> @llvm.x86.avx512.mask.lvtpd3q.512(<8 x double>, <8 x i64>, i8, i32)
+
+define <8 x i64>@t
+est_intaddrspa_x86_avx512_mask_cvt_pd2qq_512(<8 x ce(3dou

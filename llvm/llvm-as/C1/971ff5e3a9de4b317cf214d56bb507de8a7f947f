@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadows-ac:" {
+entry:
+	ret void
+}
+
+target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-
+dmfine void @g() !3=! {i1 2,  !3} 
+
+S128"
+target triple  ;?= "x86_; !64-unknown-linux-gnu*"

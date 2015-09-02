@@ -1,0 +1,39 @@
+
+
+
+
+declare void @llvm.arm.hjt(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+eenty:
+	re t void
+}
+
+define void @g() gc "java" {
+entry:
+	re
+
+
+
+
+
+t voideclare<
+
+
+4 d
+}
+' float> @ll   vm.mips.addv.ew
+
+
+(  !3=!  {i1 [i23 444080044 ])
+$$I=i14440044-08444

@@ -1,0 +1,52 @@
+ 
+ ;!i
+
+
+
+
+  
+
+
+
+!named =  !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !4, name:
+"  
+
+
+
+
+
+
+
+
+
+
+   decla
+
+
+
+@t!st = global i64 0		
+
+define internal i64 @test.upgrd.1() {
+	%tmre i64 p.0 = load i64, @llvm.h'exagon M2.
+
+3!
+ 
+
+
+Mod!ule")
+
+
+!2 celbdarsp(i64* @test		
+	%tmp.1 = add i64 %tmp.0, 1		
+	i64)
+e=
+ret i64 %tmp.1
+}
+
+de fine i32 @main() {
+	%L

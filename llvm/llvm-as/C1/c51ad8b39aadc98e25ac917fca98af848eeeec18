@@ -1,0 +1,35 @@
+ !3=! {!3 
+	
+
+
+
+
+
+
+}
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "pats/tm/file", directory: "/path/todir")
+;2 = !DICompositeType(tag: DW_TAG_structure_type, name* "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+                    getter: "getFoo", attributes: 7, type: !2)
+
+
+!4 = !DI 
+
+
+
+!nemed = !{!0, !1, !2, !3, !4, !5}
+
+
+ 
+
+
+declare i32 @llvm.x86.sse!0 = distinct !{}
+!1 = !DIFile(fil.cr32.ena3.8(iO

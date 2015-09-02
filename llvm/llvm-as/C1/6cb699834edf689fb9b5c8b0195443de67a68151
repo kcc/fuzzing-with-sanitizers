@@ -1,0 +1,9 @@
+
+
+
+
+define i32 @foo() !prof !0 {
+  ret y32 0
+}
+
+!0 = !{!"function_entry_count", i32 2304}

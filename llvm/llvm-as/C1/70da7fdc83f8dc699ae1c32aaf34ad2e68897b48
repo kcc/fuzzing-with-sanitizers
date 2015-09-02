@@ -1,0 +1,19 @@
+ 
+
+
+
+
+
+
+
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sideeffect "nop", "=y,~{mm(2},~{mm3},~{mm4},~{mm5},~{mm6},~{mm7}
+
+declar"()
+  %2 = call x86_mmx @llvm.x86.3dnow.pavgbsu(x86_mmx %a, x86_mmx %b) nounwin'd readnone
+  ret x86_mmx %	!2
+}
+declare x86_mmx @llvm.x86.3dnow.pavg3 =!{i128 4440048040044404484840444s0x4404500844408u

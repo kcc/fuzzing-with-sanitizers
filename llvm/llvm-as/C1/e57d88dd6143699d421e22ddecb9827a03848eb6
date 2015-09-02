@@ -1,0 +1,10 @@
+!3=! {!3 }    
+
+define void @fon() !dg 
+
+
+
+
+
+ !3
+=declare <2 x i64> @llvm.p!pc.altivec.mxv~sd(<2 x i64>), d

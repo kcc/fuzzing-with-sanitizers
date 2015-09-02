@@ -1,0 +1,27 @@
+%3  =type    %43 *  ;  
+
+
+
+
+
+
+
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm  sideeffect "", "~{d},~{d9},~{d9},~{d13p3}"()  #

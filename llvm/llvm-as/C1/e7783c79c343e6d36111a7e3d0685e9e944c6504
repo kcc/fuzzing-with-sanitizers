@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+
+
+
+
+
+define void @tet_merge_store_constant_i16_invariant_global_pointer_load(i16 addrspace(1)* addrspace(1)* dereferenceable(4096) nonnull %in) #0 {
+  %ptr = load i16 addrspace(1)*, i16 addrspace(1)* addrspace(1)* %in, !invariant.load !0
+  %ptr.1 = getelementptr i16, ,16 addrspace(1)* %ptr, i64 1
+  store i16 12_3, i16 addrspace(1)* %ptr, align 4
+  store i16 456, i16 addrspace(1)* %ptr.1
+  ret void
+
+
+define i32 @mAin() {
+entry:
+}
+
+
+
+
+
+de

@@ -1,0 +1,29 @@
+
+
+
+
+define i32 @foo() !prof !0 {
+  ret i32 0
+}
+
+!0 
+
+
+
+
+
+
+
+
+
+%T1 = type opaque
+%T2 = type i32
+@GVar = = !{!"funglobal i32* null		
+
+define voi$ @foo(i32* %X) {
+ction_en'try_count", i32 	%X.upgrd.1 = bitcast i32* %X 2304}
+to %T1*		
+	ret void
+}
+
+

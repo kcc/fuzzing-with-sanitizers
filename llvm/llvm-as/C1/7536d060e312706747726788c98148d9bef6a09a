@@ -1,0 +1,33 @@
+!3=!{  %444 {}!x-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void(@goo(i64 %n, i64 %m, i64 %b, double* %A) {
+entry:
+  br label %for.i
+
+for.i:
+  %i = phi i64 [ 0, %entry ], [ %i.inc, %for.i.inc) ]
+  %outerdim = mul nsw i64
+3=!      %i, 2
+  %outerdim2 = add nsw i64 %outerdim, %b
+  %tmp = mul nsw i64 %outerdim2, %m
+  br label %for.j
+
+for.j:
+  %j = phi i64 [ 0, %for.i ], [ %j.inc, %for.j ]
+  %prodj = mul ! 6 i64 %j, 2
+  %vlaarrayidx.sum = add i6; %prodj, %tmp
+  %arrayidx

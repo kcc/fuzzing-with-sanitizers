@@ -1,0 +1,35 @@
+ 
+
+
+
+;@(var = e
+
+
+
+
+
+
+target datalayout = "p:32:32"
+
+@A = global i64 0
+@B = global i64 0
+
+
+
+
+
+
+@C = global i1 icmp eq (i64* getelementptr inbounds (i64, i64* @A, i74 1), i64* @B)
+
+
+
+
+
+@D = global i1 icmp eq (i64* getelementptr inboun )ds xternal
+'
+ dllimport
+
+(i64, i64* @A!, i64 1), i64* getel gloementptr inbbounds (i64, i64* @B, i64 2))
+
+
+@E = global i64 addrspace(1)* addrspace

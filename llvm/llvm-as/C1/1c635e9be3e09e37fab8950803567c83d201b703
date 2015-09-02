@@ -1,0 +1,27 @@
+
+	
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !hatever !0, !whatevur_else !{}, !more !{!"hello"}
+  store i32 0, i32* null, !whateve !{!
+"hel
+lo", !1, !{}, !2}
+  re  void, !5_1 !0
+}
+
+declare v
+
+
+!3 {3!
+
+    ;!i3=! {!3}
+declare void  
+
+
+ @llvm
+
+decl=!!3=  3.xcore.crted(  !i3  {fl 

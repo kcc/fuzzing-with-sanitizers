@@ -1,0 +1,25 @@
+      !3=!  {i14( %44	)*@$    !3=! { .0 
+0 *
+$f = comdat any
+@v = global i32 0, comdat($fO)
+define void -'     @mf() comdat($f) {
+  ret void
+}
+
+
+
+
+%rt1 = type { i32, { i8, %rt2, i8 }, i32 }
+%rt2 = type {   46i{,i6, %rt3 } }
+%rt3 = type { %rt1 }
+
+define! 34  i32 @main() nounwind {
+entry:
+  
+  
+  
+
+  %0 =
+ alloca %rt2
+  ret= ! i32 0
+}

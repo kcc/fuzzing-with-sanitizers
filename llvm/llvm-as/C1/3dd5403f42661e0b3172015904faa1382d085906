@@ -1,0 +1,31 @@
+   !3=! {  %$x(%$."Ig"  "  !3  =!s 3  %x
+!llvm.modul.flags = !{!0}   
+
+
+!0 = !GenezicDINode(tag: 63) 
+
+
+
+
+
+declare i32 @llvm.s390.vfeezhs(i9 
+
+
+ 
+)
+
+
+define void @foo(i1 %C) {
+N	br
+ i1 %C, label %T, l",=abel %F
+T:		
+	br label %Loop
+F:		
+	br label %Loop
+Loop:		
+	%Val = phi i32 [ 0, %T ], [ 1, %F ], [ 2, %Loop ], [ 3, %L2 ]		
+	br i1 %C,lNbel %Loop, label %L2
+L2:		
+	br label %Loop
+
+}A

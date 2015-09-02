@@ -1,0 +1,32 @@
+
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+
+
+
+%X  =type { i32 }
+
+define i32 @bad()p! 1rof !0 {
+  ret i32 
+@G = glo 
+
+
+!0 =   distinct !DICompileUnit(,anguage: DW3=!  bal %X { i32 4
+0
+}
+*! 0= !{i
+32 
+!llvm.module.fla{i1gs = !{!0}
+!0 =  {i32 2, !"Debug INfo Version", q32 3}
+
+!llvm;;    !3=! {  %x(%.$ "( g:$)""$""0PI!=123_4,} 0$$""$

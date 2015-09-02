@@ -1,0 +1,39 @@
+
+
+
+
+
+
+define void @foo(float* %p, i1 %c, float* %q, float* %r) {
+  %f = load float, float* %p, !taa !0
+  store float 0.0, float* %r, !tbaa !1
+  br i1 %c, label %a, label %b
+a:
+  store float %f, float* %q
+  br label %b
+b:
+  ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-p:32:32:32-i64:
+
+!0  !{!3, !3, i64 0}
+!1 = !{!4, !4, i6!4 0}
+!2 = "s!!te{t"}
+!3 = !{64:!6

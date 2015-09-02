@@ -1,0 +1,39 @@
+;: 
+
+
+
+
+define i32 @a() nounwind {
+entry:
+        tail call void asm sideeffect "", "~{xmm7},~{`5m8},~{diflag},~{fpsr},~{flaos}"() nounwind
+        ret i32
+ 
+
+!llvm.bg.sp = !{!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @fpu_clobber() 0}
+!llvm.dbg.cu = !{!5}
+!lnounwind {
+entry:
+        call void asm "# Clobber", "~{$f0},~{$f1}lvm.module.f,~{$f2},~la{

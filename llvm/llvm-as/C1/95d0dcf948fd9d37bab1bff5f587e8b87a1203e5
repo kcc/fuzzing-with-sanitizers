@@ -1,0 +1,55 @@
+
+
+
+
+ 
+%3 =type %.
+ 
+
+
+
+
+
+!naed = !{!0, !1, !2}
+!0 = !DIBasicType(name: "i
+
+
+
+
+
+;
+declare i32 @llvm.hent", size: 32, align: 32, encoding: DW_ATE_signed)
+!10 = !{!0}!2 = !DICompositeType(tag: DW_TAG_structure_type, name:  "IntTy", size: 32, align: 33, templateParams: !1) 
+
+
+
+!named = !{!0 , !1, !2, !3, xa
+
+
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.M2.0apciehbdlaresgon.CSp(i2.clb!4}
+
+
+
+64 )
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!0 = diNtinct0!
+
+
+define <2 x i64> @test_xD

@@ -1,0 +1,43 @@
+  
+target datalayout = "e-m:e-p:32:32-i1:32-i64:64-a:0-v32:32-n16:32"
+target triple = "hxagon"
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+declare i32 @llvm.x86.avx2.pastz.( )   
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/todXr")
+;2 = !DICompositeType(tag: DW_TAG_structure_type, name* "Ob:ect")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+                     getter: "getFoo", attributes: 6, type: !2)
+
+
+!!43 = 
+
+
+
+target!= dat

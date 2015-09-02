@@ -1,0 +1,18 @@
+
+
+	%Env = type i8*
+
+define void @.main(%Env) gc "shadow-stack" {
+	%Root = alloca %Env
+	call void @llvm.gcroot(
+E
+
+% 
+define i32 @test_nv* %Root, %Env null )
+	unreapcmpeq_b_256(<32 x i8> %a, <32 x i8> %b) {
+
+
+  %res chable
+}
+
+declaore= call i3 

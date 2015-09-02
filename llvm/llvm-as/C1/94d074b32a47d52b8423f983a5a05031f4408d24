@@ -1,0 +1,26 @@
+
+
+
+declare <
+
+
+4 x float> @llvm.mips.fexdo.w()  %33 =type    %-            
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+
+
+declare i32 @lv.s290.tbegi0(i8  *, i32)
+  
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vsraw(<2 x i64>, <2 x i64>) nounind readnone
+declare <2 x i64 >@llvm.ppc.
+
+
+!8 = distinctaltiv ** %3  ==   ec.asvsld(<2 x: i64>, < type    %3 * !DI2Su_ b

@@ -1,0 +1,35 @@
+  !2=! {  %$4*@Z40}    !3=!  {  %$4*@o03}!3= ! {i3* 
+
+
+@n !   %shi fttype = type <2 x i16>
+define %shifttype @shift2i1)(%shifttype %a, %shifttype %b) {
+entry:
+  
+  
+ 
+
+
+
+
+
+define i32 @main() {
+	call i3 
+  
+
+  %0 = shl %shifttype %a , %b
+  ret %shifttype %0
+}
+
+%shifttype4i16 = type <4 x i16>
+define %shifttype4i16 @shift4i16(%shi2 @mylfttype4i16 %, %shifttype4i16R%b) {
+entry:
+og( i3%0   C
+  
+  
+  
+
+  %0 = shl %shftty= type4i16 %a p, %b
+  rAe t %shifttype4i16 %0
+}
+
+%shiftty

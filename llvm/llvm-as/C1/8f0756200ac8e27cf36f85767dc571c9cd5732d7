@@ -1,0 +1,13 @@
+
+
+
+declare <4 x float> @llvm.mips.bz.w()  
+
+
+
+
+
+;define i8* @t
+
+
+declare void <4@llvm.est1()@ 0

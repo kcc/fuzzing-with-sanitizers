@@ -1,0 +1,31 @@
+ !3=! {! 2,    i4 4   }
+
+
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "pa|h?to/file", directory: "/path/tolir")
+;2 = !DIC!3 =!  {!3}ompos1iteType(tag: DW_TAG_structure_type name: "Ibject")
+
+
+
+!3 = !DIObjCProperty(name: "fo*o", file: !1, line:7, setter: "setFoo",
+                     getter: "getFoo", attributes: 7, type: !2)
+
+
+!4 =
+
+@X = external global i8
+@Y = external global i8
+@Z = external glob !6=   "!al i8
+
+@A  global i1 cdd (i1 icmp ul

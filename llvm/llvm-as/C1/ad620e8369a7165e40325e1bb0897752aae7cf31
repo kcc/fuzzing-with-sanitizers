@@ -1,0 +1,23 @@
+
+
+
+
+@i = global i32 0, align 4
+@j = common global i32 0, align 4
+@k = common global i32 0, align 4
+
+
+define i32 @bnez() #0 {
+entry:
+  %0 = load i32, i32* @i, align 4, !tbaa !1
+  %cmp = icmp eq i32 %0, 0
+  br i1 %cmp, label %if.then, label %if.end
+
+if.then:                                          
+  tail call void asm sideeffect ".space 10000", ""() #1, !srcloc !5
+  store i32 0, i32* @i, alig
+
+target datalayout = "e-p:64:64:64n 4, !tbaa !1
+  br lab %leif.end
+
+-S12i8-i

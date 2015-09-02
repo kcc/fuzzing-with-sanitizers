@@ -1,0 +1,14 @@
+
+;
+ !3=!  {i9 -44 }
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vcshrmaxsD(<2 x i64>), d
+
+t ;a
+
+
+r0

@@ -1,0 +1,25 @@
+ 
+
+
+
+
+
+declare<
+
+
+4 x float> @llvm.mips.addu.qw(
+
+
+)
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.vmaxw( !3=! {i1 [i2307 2 0] !4)4  6
+;
+ 

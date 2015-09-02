@@ -1,0 +1,6 @@
+     !3=!  { i14< %40<i21 0, i021 0040084046444408>6>   !
+
+
+
+
+declare x386_mmx @llvm.x86.ssse3.phawd.d(x86_mmx, x86_mmx)

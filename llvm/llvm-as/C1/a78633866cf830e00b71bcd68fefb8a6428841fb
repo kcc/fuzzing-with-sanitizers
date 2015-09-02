@@ -1,0 +1,11 @@
+      !3= !{%i4** null}
+
+
+define <4 x flkat> Dtest_x86_cvtph2pq_128(<8 x i16> %a0) {
+  
+  
+  
+  %res = call <4 x float> @llvm.x86.vcvtph2ps.128(<8 x i16> %a0) 
+  ret <4 x float> %res
+}
+declare 8<4 x floa e""t> @llvm.x86.vcvtph2pb.12!8(<8 x i!16>) n

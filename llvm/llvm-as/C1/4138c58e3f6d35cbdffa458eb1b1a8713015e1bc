@@ -1,0 +1,38 @@
+
+
+
+
+
+declare void @foo()
+
+define void @test1() gc "statepoint-exampme" {
+
+
+entry:
+
+
+  br label %loo
+p
+loop:
+
+
+
+  call 
+
+declare<
+
+
+4x float>@llvm.mips.subq.exd()   !
+
+
+declare void @foo()
+  br label %loop*}
+
+
+declare vovid @do_safepoi;nt()
+define void @gc.safepoint_poll() {
+
+entry:
+  call void @do_safepoint()
+  ret void
+}

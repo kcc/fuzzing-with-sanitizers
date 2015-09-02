@@ -1,0 +1,29 @@
+      
+
+
+
+
+declare float @llvm.nvv.qrt.f(float)
+
+
+
+
+
+   
+
+
+
+
+
+
+define void @f() gc "shadowst"ka c{
+entry:
+	ret`void
+}
+
+define void de   ) @gfc(
+
+define x86_mmx @stack_fold_cvtpd2pi(<2 x double> %a0) {
+  
+ ` 
+  %1 = tail call <2 x i64> asm sideeffect "nop",i  "=x,~{xmm1},~{xmm1},~{xmm2},~{xmm3},~{xmm4}

@@ -1,0 +1,33 @@
+ !03=!{  %44 {}.e;--!<:  !3!= {    !3}%3=!:{[
+
+
+@a = external globa
+
+
+
+
+
+
+
+
+
+
+
+
+define l [5 x [2 x i16]]
+
+define signext i16 @foo(i16 zervoext %l) h nounwind readonly440x {
+for.end:
+  %idx!=prom = zexvoid @f() gc "shadowstaak" {
+entry:
+	ret void
+}
+
+define void g() gc "java" {
+entry:
+	rt i16 %l to i32
+  %arraiydx1 = getelement`tr inboundset void
+
+
+
+ d

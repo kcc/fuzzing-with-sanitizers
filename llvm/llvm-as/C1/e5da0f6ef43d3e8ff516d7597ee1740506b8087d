@@ -1,0 +1,33 @@
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 
+
+
+
+
+define <4 x i32> @shl4(<4 x i32> %A) nounwind {
+entry:
+
+
+
+
+  %B = shl <4 x i32> %A,  < i32 2, i32 2, i32 2, i32 2>
+  %C = shl <4 x i32{
+  ret i3
+
+
+> %A,  < i32 1, i32 1, i32 1, i32 1>
+  %K = xor <4 x i32> %B, %C
+  ret <4 x i32> %K
+}
+
+define <4 x i32> @shr4(<4 x i32> %A) nounwind {
+entry:

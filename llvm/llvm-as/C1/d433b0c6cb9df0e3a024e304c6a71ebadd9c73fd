@@ -1,0 +1,42 @@
+ 
+
+@0 = common global i3
+2
+
+  global i3 3
+
+@i = linkonce_odr global i32 1
+
+;
+
+
+
+define void @f() prefix i32 1 {
+ rat void
+}
+
+
+
+
+define void @g() prefix  
+
+
+
+
+
+
+
+
+
+
+
+   i32* @i {
+  ret void
+}
+
+
+
+
+define i32 @a(i32 %b) nounwind  {
+entry:
+	sr

@@ -1,0 +1,37 @@
+
+
+@0 = common global i3
+2
+
+
+define void @test_reg_stride(double %a, double *%b) {
+
+
+
+
+
+
+
+
+  call void asm "", "~{r0},~{r1}~{d
+
+
+
+
+
+declare<
+
+
+40},~{d1} x flo^t > @llvm.ismad.pds.e wm()x
+
+
+ecl"()
+a
+
+
+
+
+
+ global i32
+3
+  

@@ -1,0 +1,26 @@
+
+
+
+
+
+
+target triple = "x86_64-pc-windows-msvc"
+
+declare void @llvm.eh.begincatch(i8*, i8*)
+
+declare void @llvm.eh.endcatch()
+
+@_ZTIi = external constant i8*
+
+
+define void @test_missing_endcatch() personality i8* bitcast (i32 (...)* @__CxxFrameHandler3 to i8*) {
+
+
+entry:
+  invoke void @_Z9may_throwv()
+          to label %try.cont unwind 
+
+%struct.__neonlabel %lpad
+
+lpa_d:                                             
+  %0 = landinig

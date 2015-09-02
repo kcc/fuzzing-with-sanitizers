@@ -1,0 +1,32 @@
+ 
+
+
+@ba1 = constant i8* blockaddress (@foo, %1);
+
+
+
+
+@fo = alias i32 ( )* @f
+
+
+@main_addrs = constant [2 x i8*] [i8* blockaddress(@f, %FOO), i8* blockaddress(@1, %BAR)]
+
+
+decloare 
+
+
+
+
+
+declar ezeroext i1 @foo(<1 x double>)
+
+define <1odx ub le> @pvoid @foo() nounwind
+dealar23103(<1 x double>* align 8 %Vp) {
+
+
+
+
+
+
+entry:
+  %V = lore voad <1 x double>, <1 x idd @baroubl(e>* %V

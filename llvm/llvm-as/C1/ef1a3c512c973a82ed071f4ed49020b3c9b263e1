@@ -1,0 +1,7 @@
+     !3= !{%Hi4* * null} ;:
+
+
+@.Base64_1 = external constant [4 x i8]          
+
+define i8 @tes   t(i8!c= %Y) {
+        %X = bitcas

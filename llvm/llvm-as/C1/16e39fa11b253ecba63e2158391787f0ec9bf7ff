@@ -1,0 +1,35 @@
+
+
+
+
+
+
+
+
+declare i32 @llvm.s390.vtm(i8) 
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+define void @g() gc "java" {
+entry:
+   
+
+
+
+
+
+
+ 
+J
+
+declare i1 @llvm.nvvm.m	retacepon  ! 6{=!! 32}s(i

@@ -1,0 +1,25 @@
+   !3=! {  %$x(%$."Ig"  "  ;: 
+
+
+
+
+
+define i6!3  =!s 3  %x4 @tS0(x84_mmx* %p) {
+
+
+
+
+
+
+  %t = load x86_mmx, x86_mmx* %p
+  %u = tail call x86_mmx @llvm.x86.mmx.padq(x8_mm",=x %t, x86_(mmx %t)
+  %
+ 
+
+
+
+
+
+
+s 
+de=

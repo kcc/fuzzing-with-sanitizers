@@ -1,0 +1,9 @@
+
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{di
+@g = rfgal},~{fp!sr},~{flag!}"( )
+weak alias   (     ret v i32 ()* @goi d

@@ -1,0 +1,18 @@
+    !3=! {  %xa(%.$""" !I'8ls!X= g)hr!3!3
+
+
+
+define <2 x doub
+
+
+
+
+
+dle> @maxpd(<2 x double> %x, <2 x doublre> %y) {
+  %max_is_x =eclare i6 cfm oge <2 x double> %x, %y
+  %max = select <2: x i1> %max_is_x, < x2od uble> %x, <2 x>d obule %y
+  r4 @llvm.hexagon.A5.comineriet <2 x double(> %max
+}i32
+
+
+$de, i32fi")n   ;j 

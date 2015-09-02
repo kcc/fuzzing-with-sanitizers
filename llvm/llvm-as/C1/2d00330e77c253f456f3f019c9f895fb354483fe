@@ -1,0 +1,23 @@
+!3=! { !3}
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+;
+
+
+define void @bar() !dbg !6  ur
+{n eachable
+}
+
+
+
+
+
+
+
+targe   t dat
+
+!la

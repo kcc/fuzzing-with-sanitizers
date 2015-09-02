@@ -1,0 +1,17 @@
+     !3=!  {i1(  %44"
+
+
+
+
+
+@llvm_mips_ffint__w_ARG1 =  ;!i3=! {!3}
+declare void @llvm.xcore.cltr(i32)
+!3global <4 x i32> <i32 0, i32 1, i32 2l i32 3>, align 16
+@llvm_mips_ffint_s_w_RES  = global <4 x float> <float 000.0000e+00, float 0.000000e+00, float 0!3.000000e+00, flo
+
+definat 0.000000e+00g,>nlai  16
+
+define void @llvm_mips_ffint_i"	s_w_test() nounwind {
+entry:
+  %0 = load <4 x i32>, <4 x i32>* @llvm_mips_effint_s_w_ARG1
+  %1 = tail cal 4 l<x float> @llvm.mips.ffint.s.w(<4 x i32

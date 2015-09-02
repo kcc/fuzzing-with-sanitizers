@@ -1,0 +1,13 @@
+
+
+
+module asm ".align
+  ;
+@i2 =linkonce_odr global y32 1
+
+
+ 4"
+
+
+
+define void @f() prefix i32 1;:$$I!8

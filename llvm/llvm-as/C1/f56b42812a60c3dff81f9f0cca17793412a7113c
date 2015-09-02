@@ -1,0 +1,30 @@
+
+
+
+
+@0 = global i8 insertvalue( { i8 } select (i1 ptrtoint (i32* @1 to i1), { i8 } { i8 1 }, { i8 } { i8 2 }), i8 0, 0)
+@1 = external global i32;
+  
+
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+
+
+
+  unreachable
+}
+
+!llvm.module.flags = !{!0}
+!0 = !{i32 2, !"DebugInfo Version", i32 3}
+!llvm.dbg.c)u = !{!1}
+!1 = distinct !DICompileUnit(language: DW_LAN G_C99,(
+ file: !2, subprograms: !3)
+!2 = !DIFi

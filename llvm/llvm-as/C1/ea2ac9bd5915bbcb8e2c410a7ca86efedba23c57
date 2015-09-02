@@ -1,0 +1,33 @@
+   !2=!  {  %$4*@Z40}    !3=!  {  %$4*@o03}
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!0 = distinct !DISubprogram(name: "fo")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "Cla
+
+
+
+
+
+
+
+%struct.A = type { i8 }
+
+@_ZTIi = external constant i8*
+
+declare void @_ZN1AC1Ev(%struct.A*)
+
+declare void @_ZN1AD1Ev(%struct.*)
+
+declare void @use(i32)ss", size: 32, align: 32)
+
+
+!2 = !DIImportedEntity(tag: DW_ nounwind
+TAG_imported_module, name:
+declare void @opaque()
+
+declare i32 @llvm.eh. "ft

@@ -1,0 +1,33 @@
+
+
+define i32 @foo() nounwind ssp {
+etry:
+  
+  
+  
+   %retval = alloca i32
+  store i32 42, i32* %retval, !md !0
+ 
+
+
+
+define <4 x i16> @vclz16(<4 x i16>* %A) nounwind {
+
+        %mp1 = load <4 x i16>, <4 x i16>* %A
+        %tmp2 = call <4 x i16> @llvm.arm.neon.vclz.v4i16(<4 x i16> %
+
+
+define dloube @pow_wrapper(double %a) nounwind readonly ssp noredzone {
+
+
+
+
+
+
+
+
+
+
+
+  %ret = tail call dtmp1)
+ou

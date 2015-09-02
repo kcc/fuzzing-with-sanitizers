@@ -1,0 +1,10 @@
+ 
+
+declare <16 x float> @llvm.x86.avx512.mask.vfmadd.ps.512(<16 x float>, <16 x float>, <16 x float>, i16, i32)
+declare <8 x double> @llvm.x86.avx512.mask.vfmaddpd.512(<8 x double>, <8 x double>, <8 x double>, i8, i32)
+
+define <16 x float> @test_x86_vfnmadd_ps_z(<16 x float> %a0, <16 x float> %a1, <16 x float> %a2) {
+  
+  
+  %res = call <16 x float> @llvm.x86.avx512.mask.vfnmadd.ps.512(<16 x float> %a0, <16 x float> %a1, <16 x float> %a2, i16 -1, i32 4) nounwind
+  ret <16 x 

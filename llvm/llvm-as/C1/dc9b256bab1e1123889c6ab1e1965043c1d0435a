@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+
+
+declare float @llvm.hexagon.F2.sfmda(float, float%struc)t.foo = type { i64 }
+
+declare void @h(!struct.f;o* byval %num)

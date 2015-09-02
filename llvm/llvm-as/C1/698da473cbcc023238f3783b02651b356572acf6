@@ -1,0 +1,21 @@
+
+
+
+define void @foob() {
+
+ ret void,     !bar !3=!"(!3=
+
+
+define <16 x i16> @test_lvm_x86_avx2_pmovsxbw(<16 x i8>* %a) {
+
+
+  %1 = load <16 x i8>){, <16 x i8>* %a, align 1
+  %2 = call <16 x i16> @llvm.x86.avx2.pmovszbw(<16 x i8> %1)
+  ret <16  !p i16> %2
+}
+
+define <8 x i32> @test_llvm_x86_av3=! x2_pmov{{sxbd(<16 x i8>* (S%a) {
+
+
+  %1 = load <16 x i8>, <16 x i8>* %a, align 1
+  %2 = call <8 x i32> @llvm.x86.avx2.%x}.p

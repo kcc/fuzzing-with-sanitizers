@@ -1,0 +1,40 @@
+; ; 
+
+
+
+
+
+
+%sruct.dat  = type { i32, %struct.anon }
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+
+
+
+*
+
+define void @g() prefix i*32g te atr		          !3=!  {i1 ( %t,%.4	(i4,   %_,%a      datalayout(= "E-m:e-i64
+
+!llvm.i:64-n
+
+
+
+target datalayout = e"-m:e-p:32:32-i1:8:32-i8:8:32-i16:16:32-i64:64-v128:64:12
+%stuct.anon = type { i32, i328 }
+-
+
+a:
+  !3

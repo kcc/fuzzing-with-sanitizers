@@ -1,0 +1,40 @@
+  
+
+
+
+
+declare i32 @llvm.s390.vsldb (i8)  
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.3d.v4u32.f22(i64, i32)
+declare i64 @llvm.nvvm.texsurf.hanle.internal.p1i64(i64 
+
+a
+
+
+
+
+
+declare 
+  ;
+
+
+deci32 @llvm.x86.avx2.pb_e
+tkz.
+
+
+
+
+addrspace(1)*)
+
+
+
+decla
+
+
+
+define vlaoid @foo(i !3=!  64 %img, float* %rbed, i3re2 %idx) { {i1
+ [<i32 [4 !3=

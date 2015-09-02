@@ -1,0 +1,24 @@
+
+
+; A =
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 =distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "MoFdule")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "-DNDE!
+ externBUG",
+
+
+	
+t includePath: "/usar/include"rg, isysroot: "/")
+
+!3 = !DIModule(scope: !0, name: "M_weakodule",  globconfigMacrosa: "")l!i-
+
+

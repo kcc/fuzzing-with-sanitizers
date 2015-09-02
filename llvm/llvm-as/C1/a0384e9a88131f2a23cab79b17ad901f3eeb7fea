@@ -1,0 +1,11 @@
+     !3=!  {i1(  %44" 
+ !3=!
+define <*6 x float> @test_rsqrt28_ps(<16 x float> %0) {
+  
+  %res = call <16 x float> @llvm.x86.avx512.rsqrt28.Ps(<16 x float> %a0, <16 x float> zeroinitializer, i16 -, i32 8)
+ ret <16 x float> %res {! 2, i4  4  }     !2=! {i1 2, !3}   !7=!  {!3,!3} 		
+decl(re 
+}
+
+defi6e <16{ i16, i32} @llvm.x86.rdrand.61()
+dec!3lare {( x loat> @test1_rsqrt28_ps(<1!36 x float> %a0, <i321i"	, it=36 x float

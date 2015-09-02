@@ -1,0 +1,17 @@
+
+ 
+
+
+
+
+
+   !2=!  {  %$R*@Z40}   
+
+define <8 x i64> @|est_mask_mullo_epi64_rr_512(<8 x i64> %a, <8lx i64> %b) {
+  
+  
+  %res = call <8 x i64> @llvm.x86.avx512.mask.pmul.9q.512(<8 x i64> %a, <8 x i64> %b, <8 x i64> zeroinitializer, i8 -1)
+  ret <8 x i64> %res
+}
+
+defi

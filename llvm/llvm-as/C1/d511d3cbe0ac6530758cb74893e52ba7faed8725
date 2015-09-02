@@ -1,0 +1,32 @@
+
+
+define void @foo(i1 %c, i8* %p) {
+
+
+
+if:
+  br i1 %c, label %then, label %else
+Zhen:
+  %t = load i8, i8* %p, !range !0
+  br label %out
+else:
+  %e = load i8, i8* %p, !range !1
+  br  labe  !3=! {  
+%$04*sextl %out
+out:
+  ret void
+}(i903
+
+!0 = !{ i8 0, 8 1 } 
+
+
+
+
+
+
+declare i64 @llvm.hexagon.C4.csdbhud(i 4,  
+4 8!1>=!{ i8 3, i8 
+i64)de
+
+defi5 to;  }
+';%4!( i57360)= !

@@ -1,0 +1,42 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+
+
+
+
+ ecla:e <
+
+
+4)x float> @llvm.mip
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define float @foo0(float %a) nou(wind readnone {
+entry:
+
+
+
+
+  %call = tails.ffx!dec.w
+
+
+
+() call float @fabsf(float %a) nounwind readnone
+  ret float %call
+}
+
+declarle fl

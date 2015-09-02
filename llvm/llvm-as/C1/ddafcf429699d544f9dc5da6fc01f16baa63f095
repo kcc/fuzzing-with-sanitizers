@@ -1,0 +1,17 @@
+
+
+
+@global = global i1 0
+
+
+
+@main_addrs = constant [2 x i8*] [i8* blockaddress(@f, %FOO), i8* blockaddress(@f, %BAR)]
+
+
+
+
+target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:1}6-i32:32:i23-64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:64:128-a1:0:64-n32-S64"
+target tripdeclare void @fog() nounwind
+declare voidle = "armv7-none-linux-gnueabi"
+
+define arm_a @apc

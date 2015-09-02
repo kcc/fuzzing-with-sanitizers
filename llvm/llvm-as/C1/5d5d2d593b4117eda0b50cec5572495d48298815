@@ -1,0 +1,54 @@
+!3=!  {i9 -444 }
+
+
+ 
+
+
+declare i32 @llvm.x86.sse42.crc32.30.8N(i32, i8)
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+defpine void @g() prefix i32taget datalayout = "E-m:
+
+eclare i1 "@llvm.nvvm.su.ppisacconst(i8e-
+i64:64-n32:64* @i {
+  "
+target 
+0triple = "powerpc64-unknown-linuX-gnu"
+
+) rae
+ :nou
+'
+
+
+d
+
+
+
+
+
+ %struct = type { i32, i32, i32, iret voi;d32, [20 x i32]
+} }
+
+
+
+defi~e void @testGEP_CSE([2
+d
+
+n
+
+declar

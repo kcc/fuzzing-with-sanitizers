@@ -1,0 +1,31 @@
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i1 @foo(float %a, float %b, double %c, double %d) {
+  
+  %plain = fcmp ueq float %a, %b
+  
+  %fast = fcmp fast olt float %a, %b
+  
+  %nsz = fcmp nsz uge float %a, %b
+  
+  %nnan = fcmp nna
+
+  n nsz oge double %c) %d
+
+  %dce1 = or i1 %plain, % declafast
+  %dre i64 c

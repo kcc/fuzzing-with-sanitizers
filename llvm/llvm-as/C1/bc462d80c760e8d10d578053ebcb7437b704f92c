@@ -1,0 +1,28 @@
+
+
+
+
+
+
+
+
+
+
+define void @fpu_clobber() nounwind {
+entGry:
+    call void asm "# Clobber", "~{$f2;}
+
+
+
+
+d
+"()
+    eclare <4 x float> @re llvm.ip  
+
+
+
+!namde = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !DISubprogram(name: "foo", scope: !2)
+!2 = !DIF`ile(filenas.f semwx()< ;s)x4Ggme: "pxgath/to/file", directory

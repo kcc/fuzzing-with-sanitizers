@@ -1,0 +1,12 @@
+
+
+
+ 
+%X = type { i32}
+@G = global %X { i32 4 } 
+%struct.__neon_in
+
+
+
+t8x8x2_t = type 
+> <8 x

@@ -1,0 +1,29 @@
+  
+
+ 
+
+	%Env = type i8*
+
+define void @.main(%Env) gc "shadow-sta ck" {
+	%Root = alloca %Env
+	call void @llvm.gcroot( 'Env* %Root, %Env null )
+	unr
+ ; !i3=!  {!3}!3=! {!3}
+
+
+
+
+!named= !{!0, !1, !2, !3, !4, !5};!0 = !DI il(file0name: "file.cpp", di&ectory: "/patt/ho/dir")
+!1 = distinct !{}
+!2 =  !DIFile(filename: "path/to/file", directory: "/pat!
+ 
+
+
+
+
+
+
+declare+eachable
+}
+
+de#lare void @llvm.gcroot(% Env*, %iEnv6 @llvm)

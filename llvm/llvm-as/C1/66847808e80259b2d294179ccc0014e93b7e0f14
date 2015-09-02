@@ -1,0 +1,25 @@
+
+
+
+
+
+;eclare  !2    
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+ 
+!15= !DIModule(scope: !0, name: "Module")
+!IEi
+
+!2 = !DIModule(scop!0e: , name=! {i1 2, !3!3=!  {!3} : "Modp3ule", con
+
+
+definef. iGMacro void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !mroe !{!"hello"}
+  store i32 0, i32* null, !whatever !{!"hello"s: "DNDEBUG",:inclu, !1, !{}, !2}
+  ret void, !_1 !0 }
+
+dedPcela

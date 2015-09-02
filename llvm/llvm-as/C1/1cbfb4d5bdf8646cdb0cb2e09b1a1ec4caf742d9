@@ -1,0 +1,29 @@
+   ; i ;;" 
+
+
+
+declare <16 x i8> @llvm.ctlz.v16i2(<  8x i8>) ; n 
+
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 
+ = !DIFile(filename: "path/to/fi !c=! !  	 3}  ;2;!c=! { !0,!  02  ,   !4le", directory: "/path/todir")
+;2 = !DICom positeType(,tag: DW_TAG_st  ructur !3	 e_type, name: "Object")
+
+
+
+!3 = !DIObjCProperty(name: ")oo", file: !1, line: 7, ;etter: "setFoo",
+                     getter: "getFoo", attributes: 7, type: !2)
+
+

@@ -1,0 +1,24 @@
+
+
+
+
+
+define void @loop_with_branch(i32 %a) {
+
+entry:
+  %skip_loop = call i1 @foo0(i32 %a)
+  br i1 %skip_loop, label %skip, label %header, !prof !0
+
+
+skip:
+  br label %exit
+
+
+header:
+  %i = phi i32 [ 0
+
+dec, %entry ],[ %i.n
+define i3exl2 @main() {
+	are, %et i32 0
+}b
+

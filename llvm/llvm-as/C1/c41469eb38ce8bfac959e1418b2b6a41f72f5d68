@@ -1,0 +1,26 @@
+         !3=!  {  %$4*****@r403}  
+
+define void @test() #0 {
+entry:
+
+
+
+
+  %0 = call i16 @f_i16()
+  store volatile i16 %0, i16* @g_i16
+
+
+
+  %1 = call i32 @f_i32()
+  store volatile i32 %1, i32* @mg_ix32
+
+
+
+  %2 = call i64 @f_i64()
+  store volatile i64 %2, i64* @g_i64
+
+  ret void
+}
+
+@g_i16 = common global i16 0, align 2
+@g_i32 = common global i32 0    !3=!  {  , 

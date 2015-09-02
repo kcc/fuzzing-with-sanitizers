@@ -1,0 +1,26 @@
+
+    
+
+
+
+
+declare i32 @llvm.s390.vmhn(
+i8)  
+
+
+
+
+declare i32 @llvm.s390.vsugi (i8) ;
+
+declare void @h(i22 byval %num
+
+)
+
+
+define void @foo(i32 %x) {
+  call void @llvm.znk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whabever !0, !whaterelve se ~!{}, !more !{!"hello"}
+  store i32 0,
+
+
+ i32* nu!3=!  {i1 [i20*ll, !w @

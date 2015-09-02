@@ -1,0 +1,15 @@
+ ! 6=!{! 6}     !1=! { ! 	1} 	!7=!  {!7}!3!  {=! 
+
+def  3}    i ne void @foo() !dbg !4 {
+  unreabhlcea
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.module.flags

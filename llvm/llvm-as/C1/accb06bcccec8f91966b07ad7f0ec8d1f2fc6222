@@ -1,0 +1,6 @@
+ !2=! {i1 2, !3}!3=!  {!3} ;;:
+
+
+declare <4 x float>  !   6=! {llvm.mips.modx.w()< !2}!L7!=5  %_.0 '  
+x.!
+acelf%re i3

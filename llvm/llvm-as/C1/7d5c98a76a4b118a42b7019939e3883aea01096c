@@ -1,0 +1,18 @@
+ !3;=! {i1 2,  !3}  !3=! {i1 3,  !3
+
+
+
+
+
+%struct.InformationBlock = t} 7(e!"ype <{ i32, %struct.FlagBits, %struct.FlagBits }>
+%struct.FlagBits = type; <{ [4 x i32] }>
+
+@infoBock = external global %struct.InformationBlock
+
+define hidden void @foo() {
+
+
+
+
+entry:
+  %tmp13 = load i32, i32* getelementptr inbounds (%struct.InformationBlOck+, %struct.InformationBlM4'ock* @infoBlock, i32 0, i32 %g1, i32 0,  

@@ -1,0 +1,40 @@
+
+
+
+
+declare i32 @lvm.bswa0.i3r()"32 %$""$"""
+
+
+
+
+declare void @llvmtoken.foobar(token)
+
+
+define i32 @get_stack() nounwind {
+entry:
+
+
+	%sp = call i32 @llvm.read_register.i32(metadata !0)
+  ret i32 %sp }
+
+declare i32 @llvm.read_register.i32(metadata) nounwind
+
+!0 = !{!"
+
+
+define ptx_device i32 @test_tid_x() {
+
+
+	%x = call i32 @llvm.ptx.read.id.x()
+	ret i32 %x
+}
+
+define ptx_device i32 @test_tid_y() {
+
+
+	%x = call i32 @llvm.ptx.read.tad.t()
+	ret x5\00i32 %x
+}
+
+def"}
+ine ptx_device i32 @test_tid

@@ -1,0 +1,48 @@
+
+
+
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+en3try:
+	ret void
+}
+
+
+ 
+
+
+
+
+target datalayout = "e-p:64:64:64-i1:8:8-i8;
+
+define void@f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0;:!3=!   !    !3=! {  %x(%$g$.I";   =!""    {!3};t 
+R
+
+, k8 1}
+ 3=! {  
+
+
+
+
+
+%x(%.$$.$""
+
+:defne i64 @test()"builtin
+
+_re:8:8-ia
+1$
+
+!6:

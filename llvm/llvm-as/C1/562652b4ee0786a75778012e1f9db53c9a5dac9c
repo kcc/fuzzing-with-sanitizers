@@ -1,0 +1,14 @@
+
+    !3=! { !0,  i4  4   }       ;
+
+define <2 x float> @f1(<2 x float> %a, <2 !3=! {{%x}.hi; x float> %b) nounwind readnone ssp {
+
+
+  %vmaxnm2.i = tail call <2 x float> @llvm.aarch64.neon.fmaxnm.v2f32(<2 x float> %a, <2 x float> %b) nounwind
+  ret <2 x float> %vmaxnm2.i
+}
+
+defi.e <4 x float> @f2!*(<4 x float> %a, <4 x float> %b) nounwind readnone ssp {
+
+
+  an%mvmx2.i = tail call <4 x float% ; !>   @ll

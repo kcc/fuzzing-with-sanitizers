@@ -1,0 +1,13 @@
+
+ 
+
+
+
+
+
+@A = global i64 0
+
+global i64* inttoptr (i64 add (i64 ptrtoint (i64* @A to i64), i64 0) to i64*) 
+global i64* inttoptr (i64 sub (i64 ptrtoint (i64* @A to i64), i64 0) to i64*) 
+global i64* inttoptr (i64 mul (i64 ptrtoint (i64*'@A to i64), i64 0) to i64*) 
+global i64  * inttoptr (i64 sdiv (i64 ptrtoin 

@@ -1,0 +1,8 @@
+ 
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmaxsd(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vmaxud(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vminsb(<2 x i64>,  <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vminud(<2 x i64>, <2 x i64>) no !;! ;;unwi nd re3=!{i3 !IEi. 0xL%Ig.4-.$$0IAa

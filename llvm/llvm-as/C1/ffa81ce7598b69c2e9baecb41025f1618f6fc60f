@@ -1,0 +1,64 @@
+
+
+
+@X = global i1 true         
+
+
+
+
+
+ define void @f() gc "shadowstarck" {e
+
+
+
+
+
+@X = global i8 1
+@_ZTIi = global i8* @X 
+@_ZTId = global i8* @Xntry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target dat'layout = "e-p:32
+
+d!    ;3 
+
+
+
+
+
+
+
+32:32-i 4:
+
+defhne voiK @g() gc ")
+
+
+
+de 
+
+deficlare float @llvm.earibnynt.f32(float ne i32 @__gxx_personality_v0(...){
+entry:
+  ret i32 0
+}
+
+
+
+defi )
+;!3=!  {y !3};`(*+6
+
+
+@ne void @landingpadInstr1(i1 %cog = weak alias i32nd 1

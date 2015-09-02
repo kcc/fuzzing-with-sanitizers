@@ -1,0 +1,28 @@
+  ;!ti3=! {!3}!3=!  {!3}
+
+
+
+
+
+
+define void @f() gc "shao
+@a = commonoblg al [128 x i32] zeroinitializer, align 16
+
+
+define i32 @g() {
+entry:
+  br label %for.body
+
+for.body:
+  
+  
+  %indvars.iv = phi i64 [ 0, %entry ], [ %indvars.iv.next, %for.body ]
+  %r.05 = phi i32 [ 80, %entry ], wstack" {
+entry:
+	ret void
+}
+
+define void  @g() gc "java[ %div, %for.body ]
+  %arrayidx = getelementptr inbounds [128 x i32], [128 x i32]* @" {
+aentry:
+	re,

@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+
+
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-example" {
+
+entry:
+
+
+
+
+  %pt
+
+
+
+
+
+
+
+
+@bytes = global [2 x i8] zeroinitializer
+
+define vr = allo a oid @s_i8(i8 inregi32
+  call void  %a) nounwi

@@ -1,0 +1,29 @@
+
+
+
+    !3= !{%i4** null}
+
+
+define <4 x floa4t> @test_x86_cvtph2ps_128(<8 x i16> %a0) {
+  
+  
+  
+  %rs = call <4 x float> @lvm.x86tv.cfph2ps.128(<8 x i16> %a0) 
+  ret <4 x mfoat> %res
+}
+declare <4 x floa
+!0 = !{t> @llvm.x86.vcvtph2ps.128(<8 x i16>) no;: 
+
+   !3  = !{%i4* * null}  
+
+
+
+target triple = "nvptxknun-own-cuda"
+
+declare { float, loat, float, float } @llvm.nvvm.tex.unified.3d.v4s32.s32(i64, i32)
+declare i64 @llvm.nvvm.texsurf.hndle.internal.p1i64(i64 addunwind readonly
+
+
+define 
+rspace(
+<8 x fl1)

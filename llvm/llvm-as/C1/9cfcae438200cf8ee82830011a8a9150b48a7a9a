@@ -1,0 +1,42 @@
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}    !3
+
+=! {!3 }      
+
+
+
+
+
+ 
+;  !3=   
+
+target datalayout  
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @func(i32 %dummy, ...) {
+  %varargs = alloca i8*, align 8
+  %varargs1 = bitcast il8** %varargs to i8*
+  = "e-p:64:6t 3   
+
+
+
+
+
+cedla
+:64-i1::8-i8:call8:8-i16:: v6116-o

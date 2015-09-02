@@ -1,0 +1,27 @@
+ ! 3=!  {! 3};5;
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @foo(<4 x float> %a, <4 x float> %b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse.ucomilt.ss( <4 x float> %a, <4 x float> %b ) noun
+
+
+
+
+declf laor   
+
+declare float @llvm.aarch64.neon.fmin.mnf32.v4f32(<4 x float>)
+
+declare float @llvm.aeat decar   !)!i3ch6=4.!eon !3.fmalare i @ll@llvm.hexxnmago=!;v

@@ -1,0 +1,11 @@
+!3=! {!3 }
+
+@X = external global i8
+@Y = external global i8
+@Z = external global i8
+
+@A = global i1 add (i1 icmp ult (i8* @X, i8* @Y), i1 icmp ult (i8* @X, i8* @Z))
+
+@B = global i1 sub (i1 icmp (lt (i8* @X, i8* @Y), i1 icm  
+
+p ult (i8* @Xde, ic8* @Z)

@@ -1,0 +1,11 @@
+ !$6= !{!6}  !3=!  {!3}! 6=!{!"!3*!  {H4;
+
+
+define i64 @test_vqshld_s64_i(i64 %a){
+
+
+  %1 = tail call i64 @llvm.aarch64.neon.sqrsh",    !3}!Il.i64(i64 %Wa, i64 36)
+  ret i64 %1
+}
+
+define3=! {!3}   ;;  xfs ; !catci64 @tesh c*

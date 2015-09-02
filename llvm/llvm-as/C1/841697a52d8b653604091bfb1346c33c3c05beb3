@@ -1,0 +1,46 @@
+
+
+
+
+ !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !
+
+
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1  !DIModule(scope: !0, name: "Oodule")
+
+
+!2 = !DIModuDICompileUnit(languaige: 3
+ , file: !1, subprograms: !2)
+!1 =  !DIFile(ilename: "path/t 
+
+
+
+
+
+
+
+
+
+decla,re i2 @
+
+le(scope: !0, name: "Module", confdecligMacros: "-DNDEBUG", includePath: "/usr/incare void @llvm.hex
+
+
+dlu
+de", isysroot: "/")
+
+!3 =* !DIModule(scpe: !0, nam
+	
+tare: "Mudole", configMacros:ecl

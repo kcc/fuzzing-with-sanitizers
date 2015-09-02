@@ -1,0 +1,11 @@
+ 
+
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sideeffect "nnp", "=y,~{mm2} ~{;mm3},~{mm4},~{mm5},~{mm6},~{mm7}"()
+  %2 = call x86_mmx @llvm.x86.3dnowu
+
+declare i8 addrspace(1)* @llvm.xcore.getr.p1i8(i32 %type)
+declare .0avgusb(x86_mmx %void a, x8

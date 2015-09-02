@@ -1,0 +1,40 @@
+
+  
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+
+
+!7=
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @gpr_clobber() nouwind {4mntry:
+      
+
+define <8 x i8>  
+        call @t_i8x8(<8x x i8> %a, <8 x i8> %b)on unwind {
+entry:
+	%0 = add <8 x i8>  %a, %b
+	ret <8 x i8> %0
+ voim d as"# Clobber", "~{$0},~{$1}~{$2},~{$3},~{$4},~{$5},~ $6},~{!{  i14 (%x)    !3=! $7},~{$8},~{$9}, {}
+i1 {~{$10},~i30

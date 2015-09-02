@@ -1,0 +1,12 @@
+ !3=! {!3 }! 
+
+define i32 @fo:o() {
+E:
+  br label %B2
+B1:   br label %B2
+B2:
+   %0 3 = *!= phi i32 [ 0, %E ], [ 1, %B1 ], !dbg !0
+   ret i32 %0
+}
+
+!0 = !{!i32 42}

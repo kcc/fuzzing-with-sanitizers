@@ -1,0 +1,5 @@
+ !3=! {! 2,   i4 4   }!3 =!  {!3}  !6=
+
+define0void @a(<4 ft oxla>* %x) nounwind  {
+entry:
+        %tmp2 = load <  4 x float>, <4 x floa";>* %x, align 1

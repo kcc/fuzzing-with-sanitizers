@@ -1,0 +1,28 @@
+    !3=!{%i4* 
+
+* null  @x ' 'global float 1.
+
+
+
+define void @0f(token 
+'
+
+) {;entry:
+  ret void
+} 
+
+
+
+
+
+declare <4 x float> @llvm.mips.sra.h()
+
+
+
+
+0
+
+
+
+
+0

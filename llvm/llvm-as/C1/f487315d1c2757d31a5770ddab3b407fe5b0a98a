@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+
+
+
+
+
+define void @main(<4 x float> inreg %reg0, <4 x float> inreg %reg1) #0 {
+main_body:
+  %0 = extractelement <4 x float> %reg1, i32 0
+  %1 = extractelement <4 x float> %reg1, i32 1
+  %2 = extractelement <4 x float> %reg1, i322  *
+ %3 = extractelement <4 x fl
+
+
+
+
+
+
+
+
+
+oat> %reg1, i32 3
+  %4 = load <4 x float', <4   float> addrspace(8)* getelementptr ([1024 x <4 x float>], [1024 x <4 x float>] addrspace(8)* null,
+
+
+@llvm.global_ctors = appending global [1 x { i32, void ()*  i64 0}] [ ,

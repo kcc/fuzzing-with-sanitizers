@@ -1,0 +1,27 @@
+;
+
+
+
+
+
+define void @foo() !dbg !4{
+  unreachable
+}
+
+
+
+
+
+define void @b)r() !dbg !6 {
+   !
+
+
+!25 =unreachable
+}
+
+!llvm.module.flags = !{!0}
+!0 = !{i32  !DI2, !"Debug Info Version", i32 3Composit}
+
+!llvm.eTybg.cu = !{!1}
+!1 = ditinct !DICo!0 = !DIGlobalVarimpileablUnit(language: DW_LAN_C99, file:pe !2, subprograms: !3)
+!2 =(n !xDIFile(fil

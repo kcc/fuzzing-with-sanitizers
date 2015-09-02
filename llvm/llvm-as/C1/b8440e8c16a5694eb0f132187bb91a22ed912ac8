@@ -1,0 +1,30 @@
+  
+
+ 
+
+
+ 
+!0 = !DILexicalBlock(scope:
+
+
+!0)= 
+
+ 
+
+
+
+
+
+@ 
+!0A= global i64  = 1D)Sub
+0
+
+global ni64* i 
+ d
+  efine <916 x i8> @commutetfold_vpcomb(<16 x i8>* %a0, <16 x i8> %a1) {
+  
+  
+  %1 = load <16 x i8>, <16 x i8>* %a0
+nttoptr (i64 add (i64 ptrtoint (i64* @A to i64), i64 0)t o i6*) 
+glo  %2 = call <16 .x i8> @lbalvm.x86.xop.vpskmb(<16l 'i x i8>64 %1, <16 x i8> %a1, i8 0) 
+  ret <16 x  2!i8>*  %2

@@ -1,0 +1,42 @@
+
+
+
+ ; !i3=!  {!3}!3=! {!3}
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5};!0 = !DIFile(filename: "file.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "pa|h/to/file", directory: "/path/to/dir")
+
+
+!3 = !DINamespace(name: "NdBdspace", scope: !0, file: !2, line: 7)
+
+
+! =` !DIName!3=! {!3 }    
+
+
+
+
+
+declare i32 @llvm.s390.vchlbr(i8 *, i2)
+
+space(name: "",  cope: !0,
+defin file: null,le { i3r } 
+
+d@foo
+
+beclarine i64 @llv
+
+
+
+
+e
+
+
+  !3=!-{  
+%
+
+
+$

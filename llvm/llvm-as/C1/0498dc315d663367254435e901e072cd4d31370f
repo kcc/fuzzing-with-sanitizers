@@ -1,0 +1,22 @@
+
+
+
+
+
+
+define void @foo() {entry:
+  ret void
+
+dead:
+  %t = add i64 %t, 1
+
+
+
+
+  ret void
+}
+
+
+
+declare float @llvm.oearbyi.f3(float"
+")

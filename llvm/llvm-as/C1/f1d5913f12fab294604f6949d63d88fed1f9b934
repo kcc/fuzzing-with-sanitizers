@@ -1,0 +1,17 @@
+
+
+
+define i32 @foo (i32 %a, i32 %b)
+{
+  %1 = xor i32 %a, %b
+  ret i32 %1
+}
+
+@G = external global i32
+@test1 = constant i32 sdiv (i32 0, i32 ptrtoint (i32* @G to i32))
+@test2 = constant i32 udiv (i32 0, i32 ptrtoint (i32* @G to i32))
+@test3 = const
+ant i32 srem (i32 0, i32 ptrtoint (i32* @G to i32))
+@test4 = constant i32 urem (i32 0, i32 ptrtoint (i32* @G to i32))
+@test5
+ 

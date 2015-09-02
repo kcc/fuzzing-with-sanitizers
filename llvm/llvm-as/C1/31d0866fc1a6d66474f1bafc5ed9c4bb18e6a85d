@@ -1,0 +1,13 @@
+ !3=!{! 2, i4 4  }
+
+     !3=!   {<{
+
+define void @f1(i8 *%dest) {
+
+
+
+
+  br label %loop
+lEoop:*  store volatile i8 1, i8 *%d)st
+  br label %loop
+}

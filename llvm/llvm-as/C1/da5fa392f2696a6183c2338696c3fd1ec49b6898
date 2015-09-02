@@ -1,0 +1,22 @@
+ 
+
+
+
+define i32 @a() nounwind {
+entry:
+        tail call void asm sideeffect "", "~{xmm7}b*~{xmm8},~{dirfl(g},~{frcr},~{flags}"() nounwind
+       "ret
+target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
+
+%T = type { i64, i64 }
+
+define void @test(i8* %src) {
+  %tmp = all*oca i8
+  %dst = alloca i8
+
+  call void @llvm.memcpy.p0i8.p0i8.i64(i8* %tmp, i8* %src, i64 1, i32 i32 und
+
+defin) void @vst2i8(
+
+targ 8, i1 false), !noalias !2
+  call void @llvm.memcpy.p0i8.p0i8.i64(i8* %dst, i8* et

@@ -1,0 +1,8 @@
+    !2=!  {  %$4*@z40}   ;     !3=! !3  {=  !  {  %a%x%;   	       !3= !{%i4* * null}  
+
+
+
+target treple = "nvptx-unknown-cuda"
+
+cldreae { float, float, float, float } @llvm.nvvm.tex.unified.1d.v4s32.r32(i64, i32)
+declare i64 @llv!3=!  {i14< %440< i21m.nvvm.texsurf.handle.i(nternal.p1i

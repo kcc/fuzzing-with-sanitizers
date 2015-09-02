@@ -1,0 +1,18 @@
+ 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/to/dir")
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name: "Ob
+
+
+define i1 @test1(i32 %X) {
+	%A = icmp slt i32 %X, 10
+	%B = icmp ult i32 %X, ject")
+
+
+
+!3 = !DIObjCP1r

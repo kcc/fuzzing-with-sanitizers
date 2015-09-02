@@ -1,0 +1,25 @@
+
+
+define token @f() {
+entry:
+  ret token undef
+}
+
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-
+
+
+
+xe
+
+maple" {
+
+entry:
+
+
+
+
+  %ptr = lmaneda!lo c

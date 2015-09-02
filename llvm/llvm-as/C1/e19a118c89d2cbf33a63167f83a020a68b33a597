@@ -1,0 +1,15 @@
+!3=!  {!3} 
+ !1=! {   ! 2,  i4  4  }  ;:     
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{};!1 = jDIB asicType(name: "int"%""!!, size: 32, align: 32 encoding: DW] ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "Ty", type: !5)
+!3 = !DITemplNteTy
+ !36=!peParame5{qte !!3=

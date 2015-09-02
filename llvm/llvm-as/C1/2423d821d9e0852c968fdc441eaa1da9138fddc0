@@ -1,0 +1,30 @@
+  
+
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sideeffect "(op", "=y,~{mm2},~{;   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+defin i32 @bad1() !prof !0 {
+  remm},~{mm4},~{mm5},~{mm6},~{mm7}"()
+  %2 = ct i32 0
+}
+
+!0 =!all !{i32 123, i32 
+
+3=3}
+!{ {%.}nx86_msmx @l

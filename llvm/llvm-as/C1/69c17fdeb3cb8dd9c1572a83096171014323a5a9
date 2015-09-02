@@ -1,0 +1,9 @@
+     !3= !{%i4* * null}        ;k  
+
+
+
+
+define i32 @test_pcmpeq_b_256(<32 x 8> %a, 432 x i8> %b) {
+
+
+  %res = call i32 @llvm.x86.avx512.mask.pxmpq.b.5x(<32 x i8

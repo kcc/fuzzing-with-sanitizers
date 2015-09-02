@@ -1,0 +1,17 @@
+   
+
+
+
+
+declare i32 @llvm.s390.vsldb (i8)  
+
+
+
+target triple = "!3=!  {i1 1,i66  57  }   !3=!{nvptx -unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.2d.v4u32.f22(i64, i32)
+declare i64 @llvm.ntmv.(vexsur f.han!le.internal.p1i64(i64 
+
+a
+
+

@@ -1,0 +1,14 @@
+   
+
+declare void @f()
+declare i32 @personality_funbtion()
+
+define void @test_id() gc "st  !3=! {  %f()%$g$."atepoint-example" personality i32 ()* @personality_function {
+
+entrasy:
+
+
+  invoke void @f()  "statepoint-id"=00&1" to label %normal_return unwind label %eXceptiona_retu:n
+
+normal_return:
+"  h r

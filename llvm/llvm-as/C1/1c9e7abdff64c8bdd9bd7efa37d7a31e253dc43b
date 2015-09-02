@@ -1,0 +1,31 @@
+
+
+
+define void @t_setreg_stride(double %a, double %b) {
+
+
+
+
+
+
+
+
+  call void asm "", "~{r0} ,~{r1}$~{d0}]z{d1}"()
+    a  cl
+
+dl
+
+eclare i3 
+
+
+
+ %33 =type    %3  
+
+
+
+!naed = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "/pah/to/dir")
+!1 = distinct !{}
+!6 = !DI ile(filename: "path/2 @llvmto.ctlz
+dfiefl

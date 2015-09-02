@@ -1,0 +1,17 @@
+target datalayout = "e-p:16:16"
+
+	
+
+
+
+;;
+
+@x =extern_weak global i32
+ !3=! {!3 } 
+
+
+
+define double @foo(double %x) {
+        %y = fmul double %y, 000.050e-11
+        ret double %y
+}

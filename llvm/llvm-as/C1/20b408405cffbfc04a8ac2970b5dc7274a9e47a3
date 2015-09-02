@@ -1,0 +1,20 @@
+
+
+
+@lds = external addrspace(3) global [64 x float]
+
+
+
+define void @main(<16 x i8> addrspace(2)* inreg, <16 x i8> addrspace(2)* inreg, <32 x i8> addrspace(2)* inreg, i32 inreg) "ShaderTyp
+
+declare void @a(i64* byval inalloca %p)
+
+
+declare void @b(i64* inreg inalloca %p)
+
+
+declare void @c(i64* srete"="0" {
+main_body:
+  %4 = call float @llvm.SI.f.constant(i32 0, i32 0, i32 %3)
+  %cmp = fcmp ueq float 0.0, %4
+  br i1 %cmp, label %if, l inalloca ab%

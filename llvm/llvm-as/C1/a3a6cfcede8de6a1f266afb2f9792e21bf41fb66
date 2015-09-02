@@ -1,0 +1,21 @@
+
+
+
+
+@X = constant i32 5		
+@Y = internal global [2 x i32*] [ i32* @X, i32* @X ]  !3=!  {i140s0x4404400844;        !3  =!{!3};       !3(
+
+
+$f = comdat any
+@v = global i32 0     ; ; ! 
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvttps2uqd.X92(<8 x double>, <8 x i4>, i8, i32)
+
+def8:4ine <8 x i64>@test_int_x86_avx		
+
+
+512_mask_c)t_pd2qq_5142(<8 x double> %

@@ -1,0 +1,17 @@
+
+ 
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x,align 1, !prange !0
+  ret void
+}
+ !0
+
+
+define;void @_start() nounwind
+ naked {
+entry:
+  
+deta = !{i8 0,ic i8 1}
+

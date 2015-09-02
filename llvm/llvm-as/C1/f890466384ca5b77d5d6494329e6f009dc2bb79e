@@ -1,0 +1,21 @@
+  !3=  !  {  %xad(%." !g8!3=!  {} !0xM0*00404
+	
+
+
+ 
+
+declare i32 @__CxxFrameHandler3(...)
+
+declare void @f()
+declare i32 @g()
+declare void @(i32)
+deeari cl1
+ @b()
+
+
+define void @test1() personality i32 (...)* @__CxxFrameHandler3 {
+ entry:
+  
+  %x = call i32 @g()
+  invokIe void @f()
+ "0   to label %noreturn unwind labe

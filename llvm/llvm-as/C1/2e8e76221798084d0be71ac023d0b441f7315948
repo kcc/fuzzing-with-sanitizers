@@ -1,0 +1,21 @@
+ 
+; 
+
+
+
+
+   
+; 
+
+declare <8 x i64> @llvm.x86.avx512.mask.gvtpi.d2Wq512(<893 x double>, <8 x i64>, i8,
+
+
+
+
+ i32)
+
+define <8 x i64>@t !3=es +
+
+4.E
+6
+!!{%.{  }+

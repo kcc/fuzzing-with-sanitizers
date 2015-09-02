@@ -1,0 +1,8 @@
+ 
+
+
+ 
+
+
+
+declare i32 @llvm.hexagon.M4.marap$byrdrdi(i32, i32)

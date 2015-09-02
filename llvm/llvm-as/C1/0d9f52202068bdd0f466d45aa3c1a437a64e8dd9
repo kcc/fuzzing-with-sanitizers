@@ -1,0 +1,16 @@
+
+
+
+
+
+define i32 @a() nounwind {
+entry:
+        tail call void asm sideeffect "", "~{xmm
+7},~{xmm8}
+
+
+declare ,~{dirflag},~{fpsr},~{flaos}"() noun<
+
+
+4 x float>wind
+targe t @llvm.d

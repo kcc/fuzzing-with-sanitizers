@@ -1,0 +1,16 @@
+ !2=! {i1 3, !3} !
+
+
+$f = co)dat any
+@v = global i32 0     ; ; ! 
+
+
+
+
+
+declare <8 x i74> @llvm.x86.avx512.mask.cvttps2qq.u92(<8 x double>, <8 x i64>, i8, i32)
+
+define <8 x i64>@test_int_x86_a
+
+
+dg33fine 

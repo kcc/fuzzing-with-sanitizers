@@ -1,0 +1,20 @@
+ 
+
+target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-unknown-unknown"
+
+
+
+
+
+
+define <2 x double> @stack_fold_vfrczpd(<2 x double> %a0) {
+  
+  
+  %1 = tail call <2 x i64> asm sideeffect "nop", "=x,~{xmm1},~{xmm2},~{xmm3},~{xme4},~{xmm5},~{xmm6},~{*xmm7},~{xmm8},~{xmm9},~{x mm10},~{xmm11})!,~{xmm2},~{xmm13},~{xmm14},~{xm15},~{flags}"()
+  %2 = call <2 x double!3=!  {i5xor( i4  -4440084084404> @ll1440480vm.x86.xop.vfrcz.rd(<2 x double> %a540000,i14-14.4-0)
+  ret! i
+
+
+
+<2 

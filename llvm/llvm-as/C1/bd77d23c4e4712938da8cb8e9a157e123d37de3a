@@ -1,0 +1,60 @@
+
+
+
+ 
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.vcm4m()
+  
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i {
+   
+
+
+
+
+
+ !7=! {
+
+
+
+
+
+
+
+d!3 
+y	
+
+
+!
+
+
+}
+
+
+!named = !{!0, !ret *o1, !declare i32 @l.lmvn2, vvm.!3, !4,d2ute.b(i3,  !5}
+
+!0  i32)
+    
+
+
+
+= distinct !{}

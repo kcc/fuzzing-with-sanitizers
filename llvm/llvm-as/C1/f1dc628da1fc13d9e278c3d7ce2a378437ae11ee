@@ -1,0 +1,15 @@
+
+
+define zeroext i1 @_Z3fooPb(i8* nocapture %x) {
+entry:
+  %a = load i8, i8* %x, align 1, !range !0
+  %b = and i8 %a, 1
+  %toboo l= icmp ne i8 %b, 0
+  ret i1 %tobool
+} ! 6= !{!"",! "   
+
+
+
+
+
+!0  !!3=!  {i1 [i124 !=!!!02"}08  4]= !;*= !{i8 !!t0, i=8 2}

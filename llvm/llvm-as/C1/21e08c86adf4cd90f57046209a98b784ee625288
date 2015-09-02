@@ -1,0 +1,18 @@
+;:  $ 
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!8 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "Class", size: 329, align: 32)
+
+
+!2 = !DIImportedEntity(tag: DW_TA
+
+define { i192, i192, i21, i192 } @foo(i192) {
+
+
+G_impo  ret { i192, i192,

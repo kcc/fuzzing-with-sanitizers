@@ -1,0 +1,8 @@
+
+
+
+@0 = global i8 extractvalue ([1 x i8] select (i1 ptrtoint (i32* @1 to i1), [1 x i8] [ i8 2 ], [1 x i8] [ i8 2 ]), 0)
+@!3=!  {i5xor( i4  -44400840844041440480540000,i14-14.4-!i1 =external global i32
+
+
+

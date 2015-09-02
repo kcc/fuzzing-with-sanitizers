@@ -1,0 +1,33 @@
+!33   =! {i1 ( %4	 "=!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @bar(i64 %h.coerce) nounwind {
+entry:
+  %h.sroa.0.0.extract*.trunc = :trunc i64 %h.co   { 7"erce to i32
+  %0 = inttoptr i2 %h.sroa.0.0.extr"act.trunc to void () 
+
+declare i32 @llvm.p60*
+
+  tai0.read.idl call void %0() nounwind
+
+  ret v6g.x() nounoid
+}
+win  ; d r

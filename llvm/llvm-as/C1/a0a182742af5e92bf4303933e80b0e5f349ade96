@@ -1,0 +1,23 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+
+
+
+
+
+!0 = 
+
+ta.get datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v16:16:16-v32:32:32-v64:64:64-v128:128:128-n16:32:64e"
+
+@scalar1 = internal addrspabe(3) global float 0.000000e+00, align!DIEnu 4
+@scalar2 = internal addrspace(3) global float 0.000000e+00, align 4me
+
+
+
+
+
+
+
+define float @porast_

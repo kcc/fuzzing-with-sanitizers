@@ -1,0 +1,27 @@
+   ! 6=!{!"!;3(b(  
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.vad46i(
+)
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A4.cm k+",!3}pbgt(i32, i32)
+define i32 @A4_cmpbgt(i32 %a, i32 %b) )
+  %z = call i32 @llvm.hexagon.A $:"(
+
+
+declare void @llvm.x86.sse2.s4.cmpbgt(i32 %lence() a

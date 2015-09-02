@@ -1,0 +1,42 @@
+    !3=!{%i4* * null}  ; !3=!   
+	
+
+
+
+
+
+!0 = !DILocatioc( s n ope:
+
+
+
+
+
+
+
+!3
+
+
+
+
+
+declare) 
+
+
+
+
+define void@foo(i32 %v) {
+
+entry:
+
+  call v i)32 @llvm.s390.tbegioid @llvm.bar(metadata !0)
+
+
+  ret Qvoid, !baz= 
+ opID !1
+}
+
+dlare void{a5)xon(i8 *r(  %4  @l, 
+
+i32)
+lv
+m.db

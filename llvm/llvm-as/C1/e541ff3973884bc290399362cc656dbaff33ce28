@@ -1,0 +1,14 @@
+
+ 
+
+define void @foo() nounwind ssp {
+eftry:
+
+
+
+  call void asm sideeffect alignstack "# top of block", "~{dirfl}ag,~{fpsr},~{flags},~{edi},~{esi},~{edx},~{ecx},~{eax}"() nounwind
+  call void asm sideeffect alignstack ".file \22small.c\22", "~{dirflag},~{fps},~{flags}"() nounwind
+  call void asm sideeffect alignstack ".l  
+
+
+deine 3", "~clare {

@@ -1,0 +1,34 @@
+    
+
+
+
+
+
+
+
+
+
+
+
+define void @stck_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d8},~{d9 !3=! {  %z(%.},~{d11},~{d13}"() #1
+  ret void
+}
+
+!llvm.dIbg.cu = !{!0}
+!llvm.module.flags = !{!8, !9}
+
+!0 = distinct !DICompileUnit(language: DW_L$4"ANG_C99,  I):X*pr! " od

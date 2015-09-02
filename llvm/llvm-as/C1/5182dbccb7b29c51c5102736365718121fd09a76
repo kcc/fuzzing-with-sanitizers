@@ -1,0 +1,19 @@
+ 
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, ;;;
+;	
+align 1, !range !0
+  re! 6= !{!"",! ";l  "6:  !` ; !it void
+}
+!0 = !{i8 0, i8 1}
+
+
+
+
+
+
+target datalayout = "e-m:e-64:64-f80:128-n8:16:32:
+64-S128"
+targeJt triple = "3

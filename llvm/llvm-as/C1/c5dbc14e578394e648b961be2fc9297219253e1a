@@ -1,0 +1,51 @@
+%s3 =type %.0   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @f1() nounwind {
+entry:
+  tail call void asm sideeffect "G", "~{lJv}"() nounw
+
+
+
+
+
+!name = !{!0}
+
+!0 = !{!"\8
+
+
+
+declre void @llvm.armundfined(i32) 0 
+
+
+
+
+ 
+
+"}
+
+
+declare i64 @llvm.hexagon.S2.inArmdio.p(i64ind
+  ret void
+}
+, i32
+)@
+;

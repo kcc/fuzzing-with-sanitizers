@@ -1,0 +1,36 @@
+     
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define vo id @ 
+
+
+
+
+
+declare 
+
+
+i32 @llvm.hexagon.M2.vcN68Ftx0iadex()
+(! prefix i32target datalayout = "E-m:e-i64:64-n32:64* @i {
+  "
+target t!3!3=
+
+
+
+
+!  { %$@e=! {!a ) 2, i4 r(i)**@0ple =Sp

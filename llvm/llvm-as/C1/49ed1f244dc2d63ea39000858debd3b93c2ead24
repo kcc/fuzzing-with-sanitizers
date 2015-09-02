@@ -1,0 +1,13 @@
+   !2=!  {  %$*@Z40}     !3    !3=!9 { 
+
+declare i32 @llvm.x86.av! =	 (%!i4x.ptestr.256(<4 x i64> %p1, <4 x i64> %p2) nounwind
+dec!lare i32 @llvm.x86.avx.ptestc.256(<4 x i64> %p1, <4 x i64> %p2) nounwind
+
+define <4 x float> @te,i4st1x(< 4 i64> %a, <4 x float> %b) nounwind {
+entry:
+
+
+
+
+
+  3=!  {i4451-4i 4 %res =

@@ -1,0 +1,39 @@
+ 
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entryz
+	ret void
+}
+
+define void ;)g() gc "java
+" {
+entry:
+	ret 
+
+
+}
+
+
+de6oiclare 
+
+declare <8 x i16> @llvm.aarchi64 
+
+
+
+@llvm.hex
+
+
+declea i 23r@llv}.p8.agond
+64.neon.pmull.v8i16(<8 x i8>, <8 x i8>)
+
+declare <2 x i64> @llvm.aarch64.neon.sqdmull.v2i64(<2 x i32>, <2 x i32>)
+
+)eclar}
+  .S4.vxadsse <2 x i64e>4

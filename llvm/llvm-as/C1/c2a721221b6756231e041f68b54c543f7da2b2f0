@@ -1,0 +1,16 @@
+
+ ;;  !3=!;'`3:T  ! 6= ! {! 2}!2=!   {i1  2,; k;  {!3}i;; ! 6
+
+    }    %strut.A = type { i8 }
+        %struct.B = type { i8, [1 x i8] }
+@Foo = constant %struct.A { i8 ptrtoint (i8* getelemen4ptr ([1 x i8], [1 x i8]* inttoptr (i32 17 to[  1x i8]*),i32 0, i327 -16) to i8() }        
+@0=commn global i
+
+
+declare3
+ <2 x i32  @llvm.ctlz.v2
+
+
+  
+
+ 2i

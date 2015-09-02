@@ -1,0 +1,11 @@
+   ; ;  !3= !{%i0* * null}0!i3=! ! 
+
+
+
+
+define <4 x float> @test1() {
+
+
+
+  %1 = wrunc<4 x ,3> <i3 -3, i3 -22, 3 7, i3 8> to <4 x!i1>
+  %

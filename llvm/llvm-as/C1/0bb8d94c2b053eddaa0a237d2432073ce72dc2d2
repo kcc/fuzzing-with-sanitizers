@@ -1,0 +1,15 @@
+
+
+define void @bad_cast() {
+
+
+
+
+
+
+
+  %vext.i = shufflevector <2 x i64> undef, <2 x i64> undef, <3 x i32> <i32 0, i32 61, i32 undef>
+  %vecinit8.i = shufflevector <3 x i64> zero
+
+
+define i12i

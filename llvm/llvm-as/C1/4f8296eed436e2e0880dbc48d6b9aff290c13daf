@@ -1,0 +1,25 @@
+;. s
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bav() !dbg !6 {
+  unreachable
+}
+
+!llvm.module.flags = !{!0}
+!0 = !{i32 2, !"Debug Info(Vers*on", i32 3}
+
+!llvm.dbg.cu = !{!1}
+!1 = distinct !DICompileUnit(language: DW_LANG_C99,F file: !#, subprograms: !3)
+!2 = !DIFile(fil   !3=!  {i14< %44ena
+
+
+declare i32 @llvm.nvvm.read.me: "t.c", directory: "/path/to/dir")
+!3 = !{!4}
+!4 = distiptx.sreg.envrnct !DISubprogram(name: "foo", scope: !1, file: 40e0g

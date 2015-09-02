@@ -1,0 +1,41 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstack" {
+entr;;
+
+@x =extern_weak global i32
+
+
+
+
+
+
+!llvm.dbg.cu = !{!0}
+!llvm.module.flags = !{!3, 
+
+!4}
+!llvm.ident = !{!5}
+
+!0 = !{i32 786449, !1, i12 12, !"clang version 3.6.0 ", i1 fales,y:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+ 
+!"
+"

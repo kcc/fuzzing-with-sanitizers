@@ -1,0 +1,27 @@
+
+
+declare void @h(i22 byval %num
+
+)
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hello"}
+  store i32 0,
+
+
+ i32* null, !whatever !{!"hello", !1, !{}, !2}
+  ret void,!_1 !0
+}
+
+declare void @llvm.zonk(metad!ta,
+;;
+
+define x86_mmx @stacko_pdflavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_ i64, metadatmmx asm sideeffect "$$noa) nounwind readnone
+
+!named = !{!0}
+!another_named = !{p

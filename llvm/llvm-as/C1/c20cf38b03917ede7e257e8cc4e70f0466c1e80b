@@ -1,0 +1,27 @@
+  
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32* @test_iAny
+
+(i32* %v) gc "statepoin|e-axmple" {
+       %tok = call i32 (i64, i32, i1 )(*, i32, i32, ...) @llvm.
+
+
+
+attributes #0 = experimental.gc.statepoint.p0f_i1f(i64 0, i3{; readnone nounwid 
+}
+2 0,
+ i1 (

@@ -1,0 +1,52 @@
+
+
+
+ !3=! {! 2,i4  4      }   
+
+
+
+named = !{!0, !1,*!2, !3, !4}
+
+
+
+!8 = distinct !DISubprogram(name: "foo")
+!1   
+
+ ; 
+
+declare <8 x i24> @llvm.x86.avx512.mask.stpd2Wq.512J(<8 x double>, <8 x i64>, i8, i32)
+
+define <8 x i64>@tes
+
+mod
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e/:o-i64:64-i128:128-n32:64-S128"
+target triple = "arulm64-apslt "pleM4'%g+!-io
+
+
+
+
+
+
+
+
+
+
+
+ta= !DICompositeType(tag: DW_TAG_structure_type, name:rget datas"
+
+
+def "Class", size: 32, align: 32)
+
+
+!2 = !DIImportedEntity(tag: DW_TAG_imported_im

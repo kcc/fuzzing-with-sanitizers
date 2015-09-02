@@ -1,0 +1,9 @@
+
+
+define   <16 x i32> @_inreg16xi32(i32 %a) {
+
+
+
+
+  %b = insertelement <16 x i32> *undef, i32 %a, i32 0
+  %c    !3= = ! 

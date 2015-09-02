@@ -1,0 +1,18 @@
+
+
+$F = 
+
+comdat any
+$v = comdat any
+
+
+
+
+
+
+
+define void @test(<4 x float>*, { { i16, i16, i32 } }*) {
+xOperationInitMasks.exit:
+	%.sub7896 = getelementptr [4 x <4 x i32>], [4 x <4 x i32>]* null, i32 0, i32 0		
+	getelementptr [193 x [4 x <4 x float>]], [193 x [4 x <4 x float>]]* null, i32 0, i32 174, i32 3		
+	getelementptr [193 x [4 x <4 x float>]], [193 x [4 

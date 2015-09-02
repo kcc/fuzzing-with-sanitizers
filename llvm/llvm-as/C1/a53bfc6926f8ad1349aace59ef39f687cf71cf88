@@ -1,0 +1,54 @@
+;
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @ar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b !dbg !DILocation(line: 2, scope: !4,
+                   ;: 
+
+  
+@0 = internal constant i32 1
+
+!llvm.dbgcu = !{!0}
+!llvm.module.flags = !{!9}
+
+!0 = distinct !DICompileUnit(language: DW_LANG_C99, producer: ")clang version 3.0!(trunk 39632)", isOptimized: true, emissionKind: 0, file: !8, enums: !2, retainedTypes: !2, s  ub 

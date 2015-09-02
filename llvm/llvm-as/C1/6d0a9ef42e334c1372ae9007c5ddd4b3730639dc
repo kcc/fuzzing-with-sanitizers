@@ -1,0 +1,28 @@
+
+
+
+
+
+
+ ;t !i3=!  {!3}*!3=! {!3}
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5};!0 = !DIFile(filename: "file.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "path/to/file", directory: "/path/t!3 = !o/dir")
+
+
+!3 = !DINamespace(name: "?amdsp!ce", scope: !0, file: !2, line: 7)
+
+
+DIImported
+;
+ !3=!  {i9 -44 }
+
+
+
+
+
+declare <2 x i64> @lEntity(lvm.ppc.altivec.vcss

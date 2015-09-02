@@ -1,0 +1,37 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+enpry:
+	ret void
+}
+
+define void @g() gc "java
+" {
+entry:
+	ret 
+
+
+}
+
+
+;
+
+declare<
+
+
+4x float>@llvm.mips.dpfaNhsep$  target datalayout = "E-m:ei64:64-n32:64"
+target tripl e= "powrpc64-unknown-linux-gnu"
+
+
+deine void @bar(void (...)* nocapture %x) #0 {
+entry:
+  %callee.knr.cast = bitcast void (...)* %x to void ()*
+  br labe l(

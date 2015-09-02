@@ -1,0 +1,42 @@
+
+
+target triple="amdgc!n--"
+
+
+!0 = !DISubrange(count: -1)
+
+target triple = "
+
+
+6;
+x8
+
+
+
+declare
+
+
+i32@llvm.hexagon.M5.vrdmiN84()
+ 
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.Fstore4v = !{!uGashdxdb(i64, i64) 
+
+
+
+
+global i64 -9223772036854775808
+
+"
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+
+
+

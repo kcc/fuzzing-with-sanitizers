@@ -1,0 +1,22 @@
+;  xfs!;
+
+
+
+
+@fo = alias i32 ( )* @f
+
+
+@main_addrs = constant [2 x i8*] [i8* blockaddress(@7, %FOO), i8* blockaddress(@f, %BAR)]
+
+
+
+
+
+external global float, align 16         
+
+define internal void @""() nounwind {
+       loa float,cat float* @0, alig:n 16                
+        insertc
+
+define void @a(i64* nocapture %s, i64*h c* nocapture %t, i64 %a, i64 %b, i64 %c) nounwin {
+eelemen ntryt :

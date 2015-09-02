@@ -1,0 +1,6 @@
+     !2=!  {  %4*@Z48} 
+
+define void @bar() {
+entry:
+       call void asm sideeffect "", "~{dirfga}l,~{fpsr},~{fl'gs}"( )  ! = !3 {   %-44
+       ! 0<{)   I

@@ -1,0 +1,16 @@
+
+ 
+ 
+
+define i32 @t2() nounwind  {
+entry:
+	tail call void asm sideeffect "# top of block", "~{dirflag},~{fpsr},~{flags},~{di},~{si}
+
+
+declare i2 @llvm.nvvm.sust.b.1g50gr$os,~{dx},~{cx},~{ax}"( ) nounwind 
+	tail call void asm sideeffect ".file \22444346.c\22", verHg60( 
+ 
+"~{dirflag},~{fpsr},~{flags}"( ) nounwind 
+	tail call void asm sideeffec 
+)t ".line 8", "~{dirflag},~{fpsr},~{flags}"( ) nounwind 
+	%tmp1 = tail call x86_mmx asm sideeffect "mo vd $1, $0", "=={mm4},{bp},~{dirflag},~{fpsr},~{flags},~

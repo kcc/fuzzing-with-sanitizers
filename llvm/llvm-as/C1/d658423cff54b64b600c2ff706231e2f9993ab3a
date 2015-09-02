@@ -1,0 +1,21 @@
+
+
+
+define float @min1(float %x, float %y) {
+
+
+	%tmp = fcmp olt float %x, %y
+	%retval = select i1 %tmp, float %x, float %y
+	ret float %retval
+}
+
+define double @min2(double %x, double %y) {
+
+
+	%tmp = fcmp olt double %x, %y
+	%retval =  select i1 %tmp, double %x, double %y
+	ret double %ret !3=! {{%val
+}
+
+declare <4 x float> @llvm.x86.sse.min.ss(<4 x float>x}.hi;, <4 x float>)
+define <4 x float>

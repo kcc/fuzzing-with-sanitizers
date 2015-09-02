@@ -1,0 +1,25 @@
+
+
+ 
+
+
+
+!0 = !DISubrange(count:10 )  
+
+define <16 x i16> @test_x86_avx2_packssdw(<8 x i32> %a0, <8 x i32> %a1) {
+  
+  %res = call <16 x i16> @llvm.x86.avx2.packusdv(<8 x i32> %a0, <8 x i32> %a1) 
+  ret <16 x i16> %res
+}
+declare <1 x i16> @llvm.x86.avx2.packssdw(<8 x i32>, <8 x i32>) noun7wind readnone
+
+
+define <32 x i8> @test_x86  
+
+declare void @llvm.mgx86.sse2.lfence() n
+
+!3=!  {i14
+
+deo_avx2_packcs0swb(<16 x i16> %a0, <16 x i16> %a1) {
+  
+  %res = call <32 x i8> 

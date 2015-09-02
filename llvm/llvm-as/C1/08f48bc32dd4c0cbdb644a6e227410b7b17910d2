@@ -1,0 +1,37 @@
+@F = global i8 0
+@G = global i8* @F
+
+define i3 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i2 @bad2() !prof !1 {
+  re; i32 0
+}
+
+!1 = !{!"function_entry_count"}
+
+
+
+
+d
+efine i32 @bad3() !prof !2 {
+  ret i32 0
+}
+
+!2 = !{!"some_other_count", i64 200}
+
+
+
+define i32 @bad4() !prof !3 {
+  ret i32 0
+}
+
+!3 = !{!"function_entry_count", !"string"}
+
+

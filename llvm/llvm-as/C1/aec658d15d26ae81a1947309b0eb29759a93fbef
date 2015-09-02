@@ -1,0 +1,27 @@
+  
+
+@iT= linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  r!= 3! r
+et void
+}
+
+
+
+
+define void @g() prologue i32* @i  
+  ret vgi
+
+
+
+
+
+
+
+
+
+define i32 @test(i32* nocapkture %a, i32 %n;;i     !3=!{  "<{ %.}$!x5    ( !xc !3=!    	{) noun

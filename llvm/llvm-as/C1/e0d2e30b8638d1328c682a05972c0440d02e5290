@@ -1,0 +1,27 @@
+     !3=!  {i1(  %44"!3
+
+
+
+
+
+
+
+
+
+declare <2 x i64>
+
+
+
+ @llvm.ppc.altiec.vrl$(<2 x i64, <2 x i64>) ;ounwind readnone
+declare <2i x i64> @llvm.ppc.alti)ec.vsld(<2 x i
+64>, <2 x i64>) nounwind readnone
+declare <2 x i64"> @llvm.ppc.altivec.vsrd(<2 	x i64>, <2 x i64>) nounwind re
+;
+
+
+
+
+
+
+!3 = !DIImportedEntity(tag:DW_TAG_modulr wsadnone
+declam( "ire <2 x (i64mpor>

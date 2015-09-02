@@ -1,0 +1,32 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void}
+define void @g() gc "java" {
+entry:
+   
+
+
+
+
+
+
+ 
+
+
+
+declare i1 @llvm.nvvm.m	retacepon  ! 6{=!! 32}s(i8*)uvoid
+}
+
+!n
+!d   !$6= !:: 6}  ! 6! = !3  x   ! 
+  s !3=!t {i1 ( %"	4q""   7?3! 6= !{ i12 0xK4404B08440    "0x

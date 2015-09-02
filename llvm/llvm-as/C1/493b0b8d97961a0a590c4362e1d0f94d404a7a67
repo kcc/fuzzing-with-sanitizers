@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret vdeclare <
+
+
+4 x oid
+}
+!0 = !{float> @llvm.mips.fifx8 0, iedec.w
+
+
+Y
+() 1l}

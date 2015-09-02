@@ -1,0 +1,13 @@
+
+    
+ 
+
+
+declare i32 @llvm.nvvm.read.ptx.sreg.envreg0()
+declare i32 @llvm.nvvm.read.ptx.sreg.envreg1()
+declare i32 @llvm.nvvm.read.ptx.sreg.envreg2()
+declare i32 @llvm.nvvm.read.ptx.sreg.envreg3()
+declare i32 @llvm.nvvm.read.ptx.sreg.enveg4()
+declare i32 @llvm.nvvm.re  !3=! {  %x(ad.ptx.sreg.envreg5()
+declare i32 @llvm.nvvm.read.ptx.sreg.envreg6()
+declare i32 @llvm.nvvm.read.ptx.sre%g.envreg7

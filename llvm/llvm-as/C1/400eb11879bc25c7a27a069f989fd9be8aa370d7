@@ -1,0 +1,20 @@
+ ; !i3=!  {!3}!3=!  {!3} ;  ;!c=! {  4;;
+
+@x =extern_weak global i32
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void 4@4g() gc "jaav" {
+entry:
+	ret void
+}
+
+

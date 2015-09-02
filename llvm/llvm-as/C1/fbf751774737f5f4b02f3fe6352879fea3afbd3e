@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.2d.i32.tpap(i64, i23)
+
+
+de!fi	
+tanerg"void @foo(i64 %i*g, f|oa    
+
+tart* %red, i32 %idget trx) {
+
+ %val = tiple =ail call i32 @llvm.nvv"nm.
+vptx

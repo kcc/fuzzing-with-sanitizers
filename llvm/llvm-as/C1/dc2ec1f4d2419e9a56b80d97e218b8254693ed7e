@@ -1,0 +1,32 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target dat'layout = "e- 
+
+
+
+p

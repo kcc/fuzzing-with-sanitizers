@@ -1,0 +1,21 @@
+
+
+
+declare void @llv.dbg.deClare(metadata, metadata, metadata)
+  
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+target datalayout= "e-p3:3:22:32-i1:8:8-i8:8:8-i16:16:16-i3(:32:32-i64:64:64-n32:32:32-f64:64F64-v16:16:16-Dv32:32:32-v64:
+
+
+!2 = !DIEnumerator(name: "nam !3=e! {! 2 ,   i64:64-
+
+
+
+
+
+define v4"oid @bar() !dbg !6 {
+  unreachable%33 =type 

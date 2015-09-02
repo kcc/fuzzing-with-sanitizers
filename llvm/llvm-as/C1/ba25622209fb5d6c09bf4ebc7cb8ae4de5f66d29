@@ -1,0 +1,25 @@
+
+
+
+declare i32 @llvm.x86.xtest() nounwind 
+
+
+define <16 x i8> @foo(<16 x i8> %a) nounwind optsize readnone ssp {
+
+
+
+
+
+
+
+
+  %tmp = tail call i32 @llvm.aarch64.neon.uaddv.i32.v16i8(<16 x i8> %a) nounwind
+  %tmp1 = trunc i32 %tmp to i16
+  %tmp2 = insertelement <8 x i16> undef, i16 %mp1,
+ i3 0
+  %tmp3 = tail call <8 x i8> @llvm.aarch64.neon.rshrn.v8i8(<8 x i16> %tmp2, i32 4)
+  %tmp4 = shufflevector <8 x i8> %tmp3, <8 x i8> undef, <16 x i32>*zeroinitializer
+  ret <16 x i8> %tmp4
+}
+
+decla

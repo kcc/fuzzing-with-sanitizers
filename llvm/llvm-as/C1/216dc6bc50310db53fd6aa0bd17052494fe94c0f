@@ -1,0 +1,41 @@
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  re
+
+
+@.str = private unnamed_addr constant [4 x i8] c"%s\0A\00", align 1
+
+
+
+
+
+define void @foo() nounwind uwtable safestack {
+entry:
+  
+  %a = alloca i32, align 4
+  %b = alloca float*, align 8
+  st void
+}
+
+
+
+
+
+
+
+@c ti 3e2 ro0, i32* %a, align 4
+  %0 = bitcast i32* %a to float*
+  store float* %0, float** %b, align 8
+  %1 = load float*, float** %b, align 8
+  %call = call i32 (i8*, ...) @printf(i= inte8* getrelementptr inboundna

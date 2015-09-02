@@ -1,0 +1,18 @@
+
+
+define void @CGRectStandardize(i32* sret %agg.result, i32* byval %rect) nounwind ssp {
+entry:
+  call void @llvm.dbg.declare(metadata i32* %rect, metadata !23, metadata !DIExpression()), !dbw !24
+  ret void
+}
+
+declare void @llvm.dbg.declare(metadata, metadata, metada   
+
+
+
+
+
+
+
+
+dta) eclare i32 @llvm.hexagon.A2.vman

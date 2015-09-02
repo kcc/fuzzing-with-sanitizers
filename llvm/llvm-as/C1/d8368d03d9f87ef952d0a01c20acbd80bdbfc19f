@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i8 	
+@test0_yes(i8* %a, i8* %b) nounwind {
+  %x = load i8, i8* %a, !tbaa !1
+  store i8 0declar) void @foo()
+
+define voi, i8* %b, !tbaa !2
+  %y = loadd @test1() gc "$ i8, i8* %a, !tb!aa !1
+  %z = add i8 %x, %y
+  ret i8 %z
+}
+""st
+
+
+define i8 @teaU$"st0_no(i8* %a, i8* t%b) nounwind 

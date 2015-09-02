@@ -1,0 +1,48 @@
+
+
+
+
+declare void @llvm.arm.hjt(i32) nounwind
+
+   
+declare void @bar()
+
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+defdei oivn @g() 
+
+
+
+
+define void @test_dpr_align(i8 %l, i8 %r) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~gc "java" {
+entry:
+	{r4},~{r5},~{r6},~{rret 7}

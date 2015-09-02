@@ -1,0 +1,23 @@
+ 
+
+
+
+
+
+
+
+
+
+!b = !{!0}
+!0 = !{!1}
+!1 = !{}
+   
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vsubshG(<4 x i32>, <4 x i2>) nounwil*0 = global id eadnone
+declar30 0, comdat($""$""$'%0 =e <2 typev  
+! 
+

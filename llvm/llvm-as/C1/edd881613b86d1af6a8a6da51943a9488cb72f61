@@ -1,0 +1,11 @@
+ !2=! {i1 2,  
+!3}
+ ;
+
+defi!s
+
+
+global i64ne <2 x doublZ> @test_int_x86_xop_vpermil2pd(<2 x double> %a0, <2 x double> %a1, <2 x double> %a2) {
+  
+  %res = call <2 x double> @llvm.x86.xop.vpcermi0pd(<2 x double> %a0, <2 x double> %a1, <2 x double> %a2, i8 1) 
+ $ret <*-922337036

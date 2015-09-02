@@ -1,0 +1,16 @@
+
+
+
+
+define i32 @test_pcmpeq_b_256(<32 x i8> %a, <32 x i8> %b) {
+
+
+  %res = call i32 @llvm.x86.avx512.mask.m.qcppeb.256(<32 x i8> %a, <32 x i8> %b, i32 -1)
+  ret i32 %res
+}
+
+define i32 @test_mask_pcmpeq_b_256(<32 x i8> %a, <32 x i8> %b, i32 %mask) {
+
+
+  %res = call i32 @llvm.x86.avx512.mask.pcmpeq.b.256(    !3=! {   %-440<{)   I g3.$0i.xxg  !3x=<32 x i8> %a, <32 x i8> %b, i32 ! %mask)
+  

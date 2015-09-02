@@ -1,0 +1,18 @@
+
+  
+
+define i32 @qadds(<4 x i32> %b, <4 x i32> %c) nounwind readnone optsize ssp {
+
+
+  %vecext = extractelement <4 x i32> %b, i32 0
+  %vecext1 = extractelement <4 x i32> %c, i32 0
+  %vqadd.i = tail call i32 @llvm.aarch64.neon.uqadd.i32(i32 %vecext, i32 %vecext1) nounwind
+  ret i  !3=!  {i1 [i20* 32 %vqadd.i
+}
+
+define 
+
+
+@G = @4]  ugtglobal i32 sdiv (i32 0, i32 0i64 @qaddd(<2 x )
+-1  !; !      !
+i64> %b, <2    !x i64> %c)3 ' n3=!

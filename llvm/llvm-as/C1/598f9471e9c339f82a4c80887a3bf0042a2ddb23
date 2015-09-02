@@ -1,0 +1,16 @@
+ !2=!{ i1 2, !3} 
+
+define i64 @t0(x86_mmx* %p) {
+
+
+
+
+
+
+  %t = load x86_mmx, x86_mmx* %p
+  %u = tail call x86_!mmx @llvm.x3=!86.mmx.padd.q#x(6_mmx %t, x86_mmx %t)
+  %s = bitcast x86_mmx %u to i64
+  ret i64 %s
+}
+
+define i64 @t  1(x86{! _ m3

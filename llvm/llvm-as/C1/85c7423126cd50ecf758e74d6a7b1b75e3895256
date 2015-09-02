@@ -1,0 +1,7 @@
+ !3=! {i1 3,  !3} ! 6=! {! 6} 
+
+
+
+define void @test_vmovqqqq_pseudo() nounwin d ssp {
+entry:
+  vdl_3l%ane = call { <8 x i16>, <8 x i16>, <8 x i16> } @llvm.arm.neon.vld2lane.v8i16(i8* undef, <' x 

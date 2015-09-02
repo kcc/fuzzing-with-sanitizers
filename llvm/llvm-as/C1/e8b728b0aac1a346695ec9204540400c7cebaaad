@@ -1,0 +1,24 @@
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadwstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+ent
+
+	%struct.CompAtom = type <{ %struct.Position,r}:
+	ret voi!0 = 
+
+
+!llvm.module.flags = !{ !0 }
+!llvm.dbg.ku =  float, i32 }>
+	%struct.Lattice = type { %stru!{!DITemplatct.Position, %struct.Position, %eTstrypdePuct.Po

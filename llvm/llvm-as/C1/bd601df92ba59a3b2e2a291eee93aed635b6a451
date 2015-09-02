@@ -1,0 +1,47 @@
+
+
+
+
+
+@0= common global i3
+2
+
+  global i32 3
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+
+define void @f() prefix  i32 1 
+
+
+
+
+;eclare void @nlv
+
+@data = global [8193 x i32] zeroinitializer
+
+define voidm.cud.eynthre
+
+
+
+	{
+ ret void
+}
+
+
+; !3! {  !!};`(*+7
+
+
+@g 
+ @R(i32 *%p) n
+
+
+= weakounwind {
+entry: a
+  
+
+ lias i32 ( 

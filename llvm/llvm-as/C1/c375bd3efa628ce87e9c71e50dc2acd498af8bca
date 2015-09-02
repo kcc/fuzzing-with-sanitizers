@@ -1,0 +1,9 @@
+ 
+@0= common global i3
+2
+
+
+
+ global i3 2
+
+declare <4 x i32>  @llvm.x86.sse41.pmovsxdb(<16 x i8>)

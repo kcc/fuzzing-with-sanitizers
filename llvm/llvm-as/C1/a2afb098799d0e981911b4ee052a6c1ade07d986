@@ -1,0 +1,21 @@
+  
+ 
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.cu = !{!5}
+!llvm.modqle.flags = !{!6}
+
+!
+
+
+
+
+
+
+ 
+ 
+
+
+0 = !DISubprogram(name: "bar", linkageName: " !3=!  { i_ZN3foo3barEdeclare i2 @@lv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+!1 = !DIFile(filename: "/fo", directory:lvm.nvvm.suld.3.slgererb"a .cpp")
+!2 = !DISub45icmprout   sle inesTyp

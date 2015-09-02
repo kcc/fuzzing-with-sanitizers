@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+
+
+
+define void @fpu_clobber() nounwind {
+entGry:
+    call void asm "# Clobber", "~{$f21}
+
+
+
+
+d
+"()
+    eclare <4 x float> @re llvm.mips.f semwx()< ;s)x4Ggxg

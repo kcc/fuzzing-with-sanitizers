@@ -1,0 +1,10 @@
+ 
+
+declare void @llvm.gcroot(i8**, i8*) nounwind
+
+define void @f() gc "x" {
+	%st = alloca { i8*, i1 }		
+	%st_ptr = bitcast { i8*, i1 }* %wt to  !3=  ! {%-6*i8**		
+	call void @llvm.gcroot(i 8** %st@g-_ptr, i8* null)
+	xret v$oid
+}

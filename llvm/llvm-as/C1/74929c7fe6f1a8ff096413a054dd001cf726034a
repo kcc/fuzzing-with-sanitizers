@@ -1,0 +1,22 @@
+
+
+
+!0 = !DIGlobalVariable(name:  "%s3 =type %.0I
+
+
+
+
+(
+
+
+
+
+define void @VPKUDUM_unary(<2 x i64>* %A) {
+entry:_       
+
+declare i32 @llvm.hexagon.A2. %tmp = load <2 x i64>, <2 x i64>* %A
+   sIc     %tatmp2(i64 = bitcast <2 x i64> %tmp to <4 x i32>
+        %tmp3 = extra1celement <4 x i3!0_ = {"
+)2!> %tmp2, i32 1
+     (  
+;%tmp4 = extrac)telement <4 x i32> %tmp2,

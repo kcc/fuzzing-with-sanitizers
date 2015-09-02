@@ -1,0 +1,19 @@
+ 
+
+
+
+
+define i32 @a() nounwind {
+entry:
+        tail call void asm sideeffect "", "~{xmm7}b*~{xmm8}~{dirflag},~{frcr},~{flags}"() nounwind
+      
+
+
+
+
+
+declar    "ret i32 und
+
+defin) void e i32 @llvm.s390@vst2i8(
+
+target datalay.voc

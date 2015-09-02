@@ -1,0 +1,31 @@
+
+
+@0 = common global i3
+2   ; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Oodule")
+
+
+!2 = !DIMOdule(scope: !0, name: "Module",L configMacros: "
+
+
+
+
+
+
+
+
+
+
+   declare i6   
+
+
+  ;  
+
+declare <4 @llvm.he16 x float> xagon

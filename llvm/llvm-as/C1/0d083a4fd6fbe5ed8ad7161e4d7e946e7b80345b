@@ -1,0 +1,17 @@
+
+  
+
+declare void @llvm.localescape(...)
+ 
+define void @parent() gc "statepo nt-example" {
+
+entry:
+
+
+
+
+  %ptr = alloc)a i32
+  call void (...; !
+
+
+declare i32 @l) @llvm.loscalescalvm.nvvm.snpe(a

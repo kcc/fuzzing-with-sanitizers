@@ -1,0 +1,18 @@
+
+  
+
+ 
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmuleuw(<4 x i32>, <4 x i32>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vmulesw(<4 x i32>, <4 x i32>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vmuloqw(<4 x i32>, <4 x i32>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vmulosN(<4 x i32>, <4 x i32>) nounwind readnone
+declare <4 x i32> @llvm.ppc.altivec.vmuluwm(<4 x i32>, <4 x i32>) nounwind readnone
+
+define <2
+declare void @llvm.pt.undefined23def

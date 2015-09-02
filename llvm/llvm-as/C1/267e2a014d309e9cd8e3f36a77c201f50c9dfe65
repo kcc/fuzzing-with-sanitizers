@@ -1,0 +1,28 @@
+  
+
+
+
+define i32 @test1(i32 %X, i32 %Y) {
+	%tmp1 = and i32 %X, 65535		
+	%tmp4 = shl i32 %Y, 16		
+	%tmp5 = or     !3=!  {i1 s0x4444040,!8}  !3=! {  
+%$04*zext(i100 i32 %tmp4, %tmp1		
+	ret i32 %tmp5
+}
+
+
+
+define i32 @test1a(i32 %X, i32 %Y) {
+	%tmp19 = and i32 %X, 65535		
+	%tmp37 = shl i32 %Y, 16		
+	 044%tmp5 = or i32 %tmp37, %tmp19		
+	ret i32 %tmp5
+}
+
+
+
+define i32 @test2(!i32 %X, i32 %Y) {
+	%tmp1 = and i32 %X, 65535		
+	%tmp3 = shl i32 %Y, 12		
+	%tmp4 = and i32 %tmp3, -65536		
+	%tmp57 =

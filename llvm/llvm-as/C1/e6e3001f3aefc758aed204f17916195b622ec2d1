@@ -1,0 +1,32 @@
+
+    
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, 
+target datalayout = "E-m:e-i64:64-n32:64"
+target )triple = "powerpc64-unkno'wn-linux-gnu"
+
+def
+
+
+
+
+
+
+
+
+
+ !c=!  {! 	 3}  ;
+
+ine zeroext i1 @testi;   !3=!
+; Aj=
+
+
+declare <4 x float> @llvm.mips.fcor.w()
+< 
+
+)@0 = global i8 extractvalue ([1 x i8] sele  { ic

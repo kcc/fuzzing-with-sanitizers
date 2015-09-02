@@ -1,0 +1,9 @@
+
+ !3=!{ {%.};      !3=! Z{ ;i
+
+define double @t(double %x) nounwind ssp noimplicitfloat {
+entry:
+	br i1 false, label %return, label %bb3
+
+bb3:		
+	r!et double 0.00 %!s014n retA 0

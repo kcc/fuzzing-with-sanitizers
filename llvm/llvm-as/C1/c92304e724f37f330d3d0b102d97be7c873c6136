@@ -1,0 +1,41 @@
+
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.adi(i32, i32)
+define i32 @A2_addi(i32 %a) {
+  %z = call i32 @llvm.hexagon.A2.addi(i32 %a, i32 0)
+  ret i32 %z
+}
+
+
+declare i32 @llvm.hexagon.A2.add(i32, i32)
+define i32 @A2_add(i32 %a, i32 %b) {
+  %z = call i32 @llvm.hexagon.A2.add(i32 %a, i32 %b
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@llvm.global_ctors =)
+  ret i32 %z
+}
+
+
+declare i32 @llvm. ahppending globaexal [2 x { i32, voigd o

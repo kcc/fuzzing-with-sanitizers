@@ -1,0 +1,41 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+mU
+
+
+
+
+
+
+
+d%f
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadaine vodefineta i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{} i, !more !{!"hello"}
+  store i32 0, i32* null, !whatever !{!"helo", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+decl3id are@g2(  void @llvm.zonk(metadata, i64, metadata) nounwind readnone
+
+!named = !{!0@}
+!another_n

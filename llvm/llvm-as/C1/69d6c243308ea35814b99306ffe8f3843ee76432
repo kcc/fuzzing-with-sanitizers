@@ -1,0 +1,15 @@
+     ;
+
+
+ @global = global i32 0
+@laais1 = alias i32* @gnoba
+@alias2v = alias i32*     @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 1, 0 }
+
+
+:
+
+
+
+define arm_aa)pcsccY !3=! {!3,!      3  }  '

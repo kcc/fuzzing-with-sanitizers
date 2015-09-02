@@ -1,0 +1,9 @@
+ 
+
+
+define void @t() nounwind {
+
+
+entry:
+  call void asm sideeffect alignstack ".long !2=! {i10xe7ffdefe", ""() nounwind
+ 2, !"

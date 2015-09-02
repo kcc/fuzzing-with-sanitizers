@@ -1,0 +1,28 @@
+
+
+define i64 @t0(<1 x i64>* %a, i32* %b) {
+
+
+
+
+
+
+entry:
+  %0 = bitcast <1 x i64>* %a to x86_mmx*
+  %1 = load x86_mmx, x86_mmx* %0, align 8
+  %2 = load i32, i32* %b, align 4
+  %3 = tail call x86_mmx @llvm.x86.mmx.pslli.1(x86_mmx %1, i32 %2)
+  %4 = bitcast x86_mmx %3 to i64
+  ret i64 %4
+}
+declare x86_mmx @llvm.x86.mmx.pslli.q(x86_mmx, i32)
+
+define i64 @t1(<1 x i64>* %a, i32* %b) {
+
+
+
+
+
+
+entry:
+  %0 = bitcast <1 x i64>* %a to x86_mm       !3= !{%i4*x *

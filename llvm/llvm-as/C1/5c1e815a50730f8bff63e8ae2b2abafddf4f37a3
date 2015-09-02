@@ -1,0 +1,53 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowgtarck" {
+entHry:
+	ret void
+}
+
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:1r:16-i;: 
+
+
+
+
+32:32:32-i64:64:64-f32:32:32-f64
+
+
+
+
+
+
+
+
+targed'tala tyou
+
+
+@X = global i1 true   
+! 1t = "e-p:32
+
+d:32:32-i 4
+
+defhne =!     {!3} 
+
+
+
+
+!3=!      {!
+
+3};ta
+
+r

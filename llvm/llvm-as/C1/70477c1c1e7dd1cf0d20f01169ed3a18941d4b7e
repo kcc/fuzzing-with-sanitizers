@@ -1,0 +1,16 @@
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "some\00header", operands: {!0, !3, !4})
+!2 = !GenericDINode(
+
+
+declare i32 @llvm.tag: 3, header: "some\00header", operands: {nv!{},m.fotate.b32(i32 !3, !4, i

@@ -1,0 +1,37 @@
+
+
+
+
+
+
+
+
+
+@X = global i1 true             
+
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_entry_count"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  r
+
+deect i30 0
+}
+
+!2 = !{!"slaom

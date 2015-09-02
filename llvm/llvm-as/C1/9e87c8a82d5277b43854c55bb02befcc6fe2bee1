@@ -1,0 +1,39 @@
+
+
+
+@X = global i1 true         
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entHy:
+	ret void
+}
+define void @g;() gc "java" {
+entry:
+	ret 
+
+
+}
+
+
+de6oiclare i6
+
+
+
+
+
+
+
+
+declare i32 @llvm.x864 
+
+
+
+@llvm.hexagond
+}
+  .S4.vxasubdelr ac(
+)hi.avx12.rkestz.()deYfine voiid

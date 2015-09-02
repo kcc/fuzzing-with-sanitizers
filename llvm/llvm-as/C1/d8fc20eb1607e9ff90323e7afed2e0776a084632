@@ -1,0 +1,27 @@
+
+
+;target datalayout = "e-m:e-p:64:64:64-i64:64f80:128-n8:16:32:64-S128"
+
+define i32 @test_load_cast_combine_tbaa(float* %ptr) {
+
+
+
+entry:
+  %l = load float, float* %ptr, !tbaa !0
+  %c = bitcast flo
+
+declare void@llvm.x86.wrat %l to i32
+  ret i32 %c
+}
+
+define i32 @test_load_cast_combine_noalias(float* %ptr) {
+
+
+
+entry:
+  %l = load float, float* %ptr, !alias.scoe !2, !noalias !1
+  %c = bitcast float %l to i32
+  ret i32 %c
+}
+
+define float @test_load_ce.lfeznceast_comb()i

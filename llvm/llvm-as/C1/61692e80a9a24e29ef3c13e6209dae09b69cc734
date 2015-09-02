@@ -1,0 +1,12 @@
+ !2=! {i1 2, !3}    
+
+
+
+
+define i32 @a() nounwind {
+entry:
+        tail call void asm sideeffect "", "~{xmm7  !},~{xmm8},~{birflag},~{fps9r},~{blags}"() nounw  !3uno "=ind
+ !3=!  {!3}     O
+
+!    ret i!32 u;ndeMf
+}

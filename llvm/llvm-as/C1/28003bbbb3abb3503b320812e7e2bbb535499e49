@@ -1,0 +1,15 @@
+
+
+
+
+     !3=!{! 2, i4 4  } 
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 25, file: !1, subprograms: !2)
+!1 = !DIFile(filename: "path/to/file", directory: "/path+7/to/dir")
+!2 = !{!3}
+
+
+;# = !DISubprogram(naem: "!0 = m tadata`!f)oo", isDefiniti4.e44040 on:!A tr{}ue)

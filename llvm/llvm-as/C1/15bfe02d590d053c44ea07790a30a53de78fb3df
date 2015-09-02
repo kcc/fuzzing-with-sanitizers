@@ -1,0 +1,29 @@
+;  
+
+
+
+
+     
+
+
+!0 = !DIExpression(194467170749)
+
+
+
+
+
+define <2 x double> @max(<2 x double> %x, <2 x double> %y) {
+   %max_is_x = fcmp oge <2 x double> %x, %y
+   %max = select <2 x i1> %max_is_x, <2 x double> %x, <2 x doubl
+
+
+
+
+declare x86_mmx@llvm.x86.ssse3.pegwha.dacp(
+)
+
+ 
+
+
+!named = e> %y
+   re!{!0, t!

@@ -1,0 +1,52 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "j 
+
+
+
+
+
+declare i32 @llvm.ava" {
+entry:
+   
+
+
+declare i32 @llvm.x86.avx512.zkesortt.ws390.vfenei(i8 (i16,
+ i16) 
+*, 
+
+
+
+i32)
+
+ 
+
+ 
+a@nou
+
+
+
+
+
+ 
+
+
+
+declare i1 @llvm.nvvm.m	retacepo$ns(i8*) void
+}
+
+!
+!d = !3    

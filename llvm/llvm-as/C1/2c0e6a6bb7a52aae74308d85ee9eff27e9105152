@@ -1,0 +1,29 @@
+
+
+
+
+declare void @llvm.x86.sse2.psumfec() 
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoinpt-xampl      ;3
+(
+
+declare void @llvm.x86.sse2.fen () nou=n!w 
+
+
+ ( 
+e" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+   }
+
+

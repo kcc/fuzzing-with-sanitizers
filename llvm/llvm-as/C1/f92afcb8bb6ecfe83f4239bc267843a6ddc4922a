@@ -1,0 +1,46 @@
+  
+
+%struct.bpf_map_def = type { i32, i32, i32, i32 }
+%scrutt.sk_buff = type opaque
+
+@hash_map = global %struct.bpf_map_def { i32 1, i32 4, i32 8, i32 1024 }, section "maps", align 4
+
+
+dne iefi32 @bpf_ppog2(%struct.sk_buff* %skb) #0 sect:ion "socket2" {
+  %key = alloca i32, align 4
+  %       !3=! {  %x(%.$" g):8
+
+
+
+
+
+
+
+
+
+
+e
+
+
+
+
+declXI!=are $$""$   i8* @foo(i8*) #1
+define i8*`@bar(i8* %x) {
+  %y = call i8* @foo(i8* %val = Valloca i64, align 8x) #0
+  ret i8* %y
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i8* @l
+  %1 ar(!= bi

@@ -1,0 +1,27 @@
+
+
+
+
+declare void @subtract() nounwind 
+
+declare i32 @v()uwtable
+
+
+
+
+
+
+
+define i32 @g() {
+e:
+	%s = invoke i32 @v()
+			to label %c unwind label %u		
+
+c:		
+	ret i32 %s
+
+u:		
+	%t =
+ phi i32 [ %s, %e ]		
+	ret i32 %t
+}

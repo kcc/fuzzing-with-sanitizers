@@ -1,0 +1,17 @@
+ !c=! {! 	 3} 
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+
+
+
+!0 = !DIExpression()
+!1 = !DIExpression(DW_OP_deref)
+!2 = !DIExpression(DW_OP_plus, 3)
+!3 = !DIExpression(D ;; !c=W_OP_bit_!  { !0,! 0, piece, 3, 7)
+!4 = !DIE'pressio  !0,    n(DW_OP_deref, DW_OP_plu !3 !$"s, 3, DW_OP_bit_piece, "$" 3,  7){"
+1

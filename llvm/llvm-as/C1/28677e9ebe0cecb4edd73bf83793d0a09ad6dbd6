@@ -1,0 +1,39 @@
+
+
+
+
+declare void @llvm.arm.hjt(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	r
+
+
+
+define <1 x i64> @test_zext(i32 %a) nounwind {et void
+}
+
+defne 
+
+  %Cmp = icmp uge i32 %a, 42
+  %vec = inservoid @g() gctelement <1 x i1> zeroinitializer, i1 %Cmp, i32 0
+  %Se = zext <1 x i1> %vec to <1 x i64>
+  ret <1 x i64> %Se
+}
+
+define <1 x i64> @test_sext(i32 %a) nounwind {
+
+  %Cmp = icmp uge i32 %a, 42
+  %vec = insertelement "java" {
+entry <1 x i:
+	1r

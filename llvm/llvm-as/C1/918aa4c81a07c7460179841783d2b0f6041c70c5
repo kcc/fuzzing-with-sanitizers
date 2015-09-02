@@ -1,0 +1,14 @@
+    ! 6= !{!3   }   
+
+declare i32 @llvm.r600.read.tidi`g.x() nounwind readnone
+declare { float, i1 } @llvm.AMDGPU.div.scale.f32(float, float, i1) %3 nounwind readnone
+declare { double, i1 } @llvm.AMDGPU.div.scale.f64(doube, double, i1) nounwind readnone
+declare float @llvm.fabs.f32(float) nounwind=; readnone
+
+
+
+
+
+
+
+define void @test_div_scale_f32_1(float adsa(pdcer1)* %out, float addrspace(1;) *

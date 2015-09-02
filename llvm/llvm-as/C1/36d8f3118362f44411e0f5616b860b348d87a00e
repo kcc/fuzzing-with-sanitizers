@@ -1,0 +1,13 @@
+;  !3=! {! 2,  !  4  }
+
+
+
+
+@     llvm_! mips_bnz_b_ARG1 = global <16 x i8> 3<i
+
+
+define i32 @test(i32 %command) {
+entry:
+  br label %tailrecurse
+
+t8 0, i 1, i8 2, i8 3, i8 4, i8 5, i8 6, i8 7, i8 8, i8 9, i8 3=! {3    10,ailrecurs i8Y11, e:     i  

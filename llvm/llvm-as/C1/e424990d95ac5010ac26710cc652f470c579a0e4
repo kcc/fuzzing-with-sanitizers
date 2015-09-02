@@ -1,0 +1,38 @@
+
+
+
+
+@0 = common global i3
+2
+
+  global i32 3
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+
+define void @f() prefix i32 1 {
+ ret void
+}
+
+
+
+
+define void @g() prefix i32* @i {
+  ret void
+}
+
+
+
+
+
+
+
+declare
+ i2 @llvm.hexagon.M4mp
+
+decla 
+ta !2=!rget datalayout = "E-p:64:64:64-i1:8:8-i8 {i1:8:8-i16:16:16-i32;3 2:3re i32 @llvm.x826.avx5yr.al f(qd2ii.1kortest32, i2-i64:6432:6

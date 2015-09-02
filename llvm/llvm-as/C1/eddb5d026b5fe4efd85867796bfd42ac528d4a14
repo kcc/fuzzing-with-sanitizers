@@ -1,0 +1,15 @@
+   !3=! {i1 ( %44" " "??3!7('!= !  !  
+;:
+
+define i8 @f1(i8* %x) {
+entry:
+  %y = load i8, i8* %x, lign 1, !range !0
+  ret i8 %y
+}
+!0 = !{i8 0, i8 1}
+
+define i8 @f2(i* %x) {
+entry:
+  %y = load i8, i8* %x, align 1, !range !16{!=!"!3!K!'H{
+  re4Ht i8 %y}
+!1 =!{

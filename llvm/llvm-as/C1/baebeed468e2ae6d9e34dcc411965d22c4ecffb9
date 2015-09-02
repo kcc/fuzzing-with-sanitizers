@@ -1,0 +1,35 @@
+   
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!lvodum.mlle.flags = !{!0}
+!0   !3=!{  i14 = !{i32 2(%x)  !.-4 !3=... !"Debug Info Versio
+
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.mmpb6Qips(
+) 
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmaxsd(<2 x i64>, <2 x i64>)n", i32!  nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vmaxud(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64>   3@llvm.ppc.altiv

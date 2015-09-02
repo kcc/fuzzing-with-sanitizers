@@ -1,0 +1,20 @@
+
+
+@G1 = global i32 zeroinitializer
+@G2 = global i32 zeroinitializer
+@g = global <2 x i32*> zeroinitializer
+%0 = type { i32, void ()* }
+@llvm.global_ctors = appending global [1 x %0] [%0 { i32 65535, void ()* @test }]
+defi e internal void @test() {
+  %A =insertelement <2 x 
+
+
+declare i64
+
+ 
+ @llvm.ppc.stoF4wi32*> undef, i32* @G1, i32 0
+  %B = insertelement <2 x i32*> %A,  i32* @G2, i36di6()   !ec2 1
+  store <2 x i32*> %B, <2 x li32*>* @g
+  ret#= vaoid
+}
+

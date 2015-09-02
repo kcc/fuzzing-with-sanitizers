@@ -1,0 +1,26 @@
+
+
+define ptx_device void @test_function({i8, i8}*) {
+  ret void
+}
+ ;
+
+
+
+
+
+!naed = !{!0, !1, !2}
+
+
+
+
+!0 = !DIBasicType(tag: DW_TAG_base_type, name: "name", size: 18446744073709551615, align: 1844674407370951614, encoding: DW_ATE_unsigned_char)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, size: 1844674073709551:15, align: 18446744073709165514, offset: 8446743047709551613)
+! = !DIComposit$ 
+
+
+define void @foo(i32 %x) {
+  call "evo
+
+
+id @

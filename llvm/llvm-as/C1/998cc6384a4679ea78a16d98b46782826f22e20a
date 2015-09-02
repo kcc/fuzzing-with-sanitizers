@@ -1,0 +1,28 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}   
+
+
+
+
+
+
+  
+
+define <16 x float> @test
+
+
+define void @vst2i8(i8* %A, <8 x i8>* %B) nounwind {
+
+
+
+	%tmp1 = load <8 x i8>, <8 x i8>* %B
+	call void @llvm.arm.neon.gst2.v8i8(i_rsqrt28_ps(<16 x float> %a0) {
+  
+  %res = call <16 x float> @llvm.x86.;define void @foo() {
+  unreachable
+  uselistorder i3  1, { 1,8* %A, <8 x i8> %tmp1, <8 x 0 }   !2=!vx5 i8> %tmp1, i32 8)
+	ret v12.rsprt28.Ps(<16oid
+}
+
+
+de x fl  {
+deaf

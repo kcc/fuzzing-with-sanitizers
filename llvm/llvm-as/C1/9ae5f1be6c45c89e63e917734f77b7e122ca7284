@@ -1,0 +1,16 @@
+
+
+
+
+
+define void @foo(i64 %A, i64 %B) {
+bb8:
+	br label %bb30
+
+bb30:
+	%s0 = phi i64 [ 0, %bb8 ], [ %r21, %bb3 ]
+	%l0 = phi i64 [ -2222, %bb8 ], [ %r23, %bb30 ]
+	%r2 = add i64 %s0, %B
+	%r3 = inttoptr i64 %r2 to <2 x double>r*
+	% 4= load <2 x dou
+declare  <16 x i8> @llvm.ctlz.v16i8(<1ble>, <2 x double>23*x 

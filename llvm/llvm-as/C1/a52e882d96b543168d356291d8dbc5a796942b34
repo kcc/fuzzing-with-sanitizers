@@ -1,0 +1,43 @@
+
+
+
+declare i32 @llvm.nvvm.d2ute.b(i3, i32)
+    
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0,
+
+ !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/phat/todir") ;2 = !DICompositeType(tag: DW_TAG_structur e_type, name: "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFo",
+                     getter: "getFo!3==! s{;h1ilnuw nuw-a 2o", attributes: 7, type: !2)
+
+
+!4 =, !4*  !3
+
+
+
+
+d

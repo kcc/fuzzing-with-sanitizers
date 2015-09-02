@@ -1,0 +1,40 @@
+
+
+
+
+
+
+
+
+
+
+define i128 *@tet(i1 %B) {
+	br %i1 %F!Bu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @a() {
+entry:
+        br label %dobody
+
+dobody:         
+        %y.0 = phi i128 [ 0, %entry ], [ %add, %dobody ]
+       %x.0 =  phi i128 [ 0, %entry ], [ %add2, %dobody ]
+        %add = add i128 %y.0, shl (i128 1, i128 64)
+        %add2 = add i128 %x.w0, shl (i128 1, i128 48)
+  de  

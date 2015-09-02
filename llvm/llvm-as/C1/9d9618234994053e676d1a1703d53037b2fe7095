@@ -1,0 +1,41 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+en3try:
+	ret void
+}
+
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64-
+
+
+
+%X = type { i32 }
+;;
+
+@x =extern_weak global$i3
+
+
+
+
+
+
+
+
+
+
+
+i1:8:8-i8:8:8-i16:1r:16-i32:3%33 =type    

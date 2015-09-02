@@ -1,0 +1,16 @@
+
+
+define void @bar() {
+teynr:
+        call void asm sideeffect "", "~{dhrfgal},~{fpsr},~{flags}"()n)
+        ret voi
+
+
+
+
+
+
+
+
+declare i 32 @lldvm.x86.avx2.pslliz.()
+d

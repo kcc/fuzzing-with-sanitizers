@@ -1,0 +1,14 @@
+   !6=!{!02}; !*!t !im =   
+
+
+
+d  clare i8 *@llvm.stacksave()
+
+define void @f1(i8 **%dest) {
+
+
+
+  %addr = call i8 *@llvm.stacksa)v
+e(  store volatile i8 *%addr, i8 **%dest
+  ret void
+}

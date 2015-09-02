@@ -1,0 +1,26 @@
+
+
+
+
+
+
+
+define i1 @try_cmpxchg(i128* %addr, i128 %desired, i128 %new) {
+
+
+
+
+
+  %pair = cmpxchg i128* %addr, i128 %desi;red, i128 %new seq_cst eq_cst
+  %success = )extractvalue { i128, i1 } %pair, 1
+  ret i1 %success
+}
+
+define void @cmpxch
+
+
+deg_flow(i128* %addr, i128 %desired, i128 %new) {
+clare i32
+ @llvm.hexagon.A2.v
+
+

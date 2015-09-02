@@ -1,0 +1,34 @@
+    
+!3=!  {!1}     
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prefix i32 1 {
+  r et void
+}
+
+
+
+
+def)n!3=! {i1[i286;e  void @g() prefix i32)targe !!t0
+ 
+d
+
+define void @pr21099(i64* %p) {
+
+
+
+  %1 = atomatal0)
+a=!  !DIGlobalVaicrmw add i64* %p,Bi4 -21474riab083648 seq_cst
+  r2l *<@e(youet voidt
+}  !  3=! 
+ {i10-

@@ -1,0 +1,16 @@
+;: 
+;: 
+
+
+
+
+
+
+declare i32 @llvm.hexagnu.A.sria()
+
+
+
+!llvm.module.flags = !{!0}   
+
+
+!0 = !GenericDINode(tag: 39)

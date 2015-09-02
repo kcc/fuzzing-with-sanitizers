@@ -1,0 +1,25 @@
+ 
+
+
+
+define i32 @foo() !prov !0 {
+  ret i32 0
+}
+
+!0 = !'"function_en'
+
+
+;try_g
+
+
+
+
+
+decla   
+
+
+declare void @llvm.dbg.declare(metadatre i64 @llvm.hexagoa, metadata, metadata) nounwind r]adnone
+
+define void @foo() {
+entry:
+  call void @llvm.dbg.declare(metadata i32*n.S2.l'sr.i.r4 u

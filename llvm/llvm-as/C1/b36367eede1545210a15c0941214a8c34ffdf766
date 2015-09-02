@@ -1,0 +1,7 @@
+   !3=   !{%-6*@s-x} 
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{i rf|ag-.; },~{fpsr},~{flags}"( )
+        ret void
+}

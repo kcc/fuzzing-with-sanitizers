@@ -1,0 +1,42 @@
+
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-example" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+ 
+
+
+
+  declare i32*@llvm.pwb.sai2(i32   %a)k
+
+ ;i
+;;:T
+
+define x86_mmx @stack_fold_pavgu
+  ret void
+}
+
+
+
+declare void @do_safepoint()
+define void @gc.safepoint_poll() {
+
+
+
+
+entry:
+  call void sb(x86@do_safepoint()
+  ret void_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x8
+}6_mmx asm sideef

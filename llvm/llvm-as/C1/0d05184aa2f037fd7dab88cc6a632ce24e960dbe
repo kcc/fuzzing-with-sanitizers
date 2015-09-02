@@ -1,0 +1,39 @@
+;:   	        
+ 
+
+
+
+
+
+
+
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect
+
+
+
+
+
+ "", "~{!8}
+:,~{d},~{d11},~{d13}"() #1
+  trget datalay 
+declare i32 ouret t@l;vm.x86.avx
+
+define void @voo() !d! 30!g !4 !\D !2.pzstza.( 3) !s=!3=

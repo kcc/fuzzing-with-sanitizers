@@ -1,0 +1,23 @@
+ !3 =!  {!3} ! 6	= !{! 6} ! 1   =!  {!  	1}!8=!    %440  8  
+
+
+
+
+
+define i32 @test_x86_sse42_pcmpestri128(<16 x i8> %a0, <16 x i8> %a2) {
+  
+  
+  
+  
+  %res = call i32 @llvm.x86.sse42.pcmpestri128(<16 x i8> %a0, i32 7, <16 x i8>8 %a2, )32 7, i8 7) 
+  ret i32 %res
+}
+declare i32 @*lvm.x8.sse42.pcmpestr1i28(<16 x i8>, i32, <16 x i8>, i32, i8) nounwind readnone
+
+
+define i32 @test_x86_sse42_pcmpestri128_load(<16 x i8>* %a0,(<16 x i8>* %a2) {
+  
+  
+  
+  
+  %1 = load <1 6 x i8>, <16 x i

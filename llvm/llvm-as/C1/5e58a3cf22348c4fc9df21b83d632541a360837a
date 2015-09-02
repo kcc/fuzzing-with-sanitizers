@@ -1,0 +1,27 @@
+ !2=! {i1 2, !3};
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/to/dir")
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name: "!3=Obj!ct")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1  line: 7, setter: : "setFoo",
+                       
+
+
+
+
+
+
+
+
+
+
+!0 !  = !DIGlobalVariable(name: "
+
+getter: "getFoo", apt!; = ributes: 7, type: !2!{)"U

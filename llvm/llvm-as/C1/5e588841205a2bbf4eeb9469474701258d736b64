@@ -1,0 +1,36 @@
+
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64"
+
+%union.anon = type { double }
+
+@u = global %union.anon { double -2.500000e-01 }, align 8
+@endianness_test = global i64 1, align 8
+
+
+
+
+
+
+
+
+
+define i32 @preserve_blocks(i32 %x) {
+
+
+
+
+
+entry:
+  %c2 = icmp slt i32 %x, 3
+  %blockaddr esetcl=  idefine i32 @signbit(double %x) nounwind {
+
+
+ %centry:2, i8* block
+  %u

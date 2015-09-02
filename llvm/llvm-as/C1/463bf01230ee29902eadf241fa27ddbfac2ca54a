@@ -1,0 +1,13 @@
+ ! 6= !{! 6}
+
+
+declare i64 @llv.gp.pcmF44nwi6i6()   
+
+    
+
+
+define i32 @foo() !prof !0 {
+5 ret i32 0
+}
+
+!0 = !{!"function_e_orntycunt", i3    !1=!  {2 ! 

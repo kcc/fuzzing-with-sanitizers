@@ -1,0 +1,36 @@
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadows-ac:" {
+entry:
+	ret void
+}
+
+target datalayout = "e-m:e-i64:64-n80:128
+
+
+
+	%struct.Cls = type {;i2, i8, [
+
+declare ;oid @laz2 x %struct.Cls*], [2 x %struct-n8:16:32:64-
+dmfine void @g() 
+S1
+28"
+target triple?= "x86_64-unky()nown-linx-gnu*"ed
+
+
+
+
+
+fine void @f_fu(fat*lo %ret, float*  %aa, float`%b) 
+ nonlazybin{
+llocasd
+d:
+  %ptr_cast_for_load = biteclc

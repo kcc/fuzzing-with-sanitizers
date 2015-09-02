@@ -1,0 +1,14 @@
+
+
+
+
+
+
+define internal fastcc void @list_Cdr1918() nounwind"inlinehint {
+  u'reachable
+}
+
+define internal fastcc void @list_PairSecond1927() nounwind inlinehin {
+  callaf stcc void @list.Cdr1918() nou
+target datalayout = "i:16766216611:nwind inlinehin:6t
+  " 	unr

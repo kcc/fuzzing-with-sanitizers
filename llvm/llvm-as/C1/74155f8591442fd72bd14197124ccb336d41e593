@@ -1,0 +1,19 @@
+ 
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{} ;
+
+;;, R!moru !{!"hello"}
+  store i32 0, i32* null, !whatever !{!"hello", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+declare : 
+
+target triple = "npt-vxnknuown-nvcl"
+
+d!3e=! {!clare void @llvm.n3 }%s3 =vvvtoype %.0  ;
+
+;;

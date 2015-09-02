@@ -1,0 +1,30 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadows*tarck" {
+entry:
+	ret void
+}
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+dgcla

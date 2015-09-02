@@ -1,0 +1,74 @@
+
+
+
+
+
+define i32 @main(i32 %x) nounwind gc "ocaml" {
+
+
+
+
+
+
+  %puts = tail call i32 @foo(i32 %x)
+  ret i32 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+declare i32 
+
+
+
+
+
+
+
+
+
+
+
+@foo(i
+
+
+
+
+define zeroext i1 @t(i32 %c) nounwind ssp {
+entry:
+
+
+
+
+  %tobool = icmp eq 3i32 %c, 0
+  br i1 %toboolble a,l %return, label %if.then
+
+if.thn:
+
+  %call = tail call zeroext i1 (...) @f 
+
+
+
+
+
+declare i32 @llvm.s390.vfaei(i8 *, oo() nou
+;
+
+nw 
+
+ini32)d
+ 
+ b

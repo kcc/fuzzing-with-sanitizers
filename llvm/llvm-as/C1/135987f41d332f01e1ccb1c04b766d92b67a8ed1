@@ -1,0 +1,25 @@
+
+
+
+
+define i32* @append() gc "ocaml" {
+entry:
+  switch i32 0, label %L2 [i32 0, label %L1]
+L1:
+  %var8 = alloca i8*
+  call void @llvm.gcroot(i8** %var8,iz8* null)
+  br label %L3
+L2:
+  call ccc void @oread_runtime_c
+
+
+
+target datala!yout = "e-m:e-i64:64-f80:128-n8:1asenotgov6:32:64-S128"
+
+define i32 @t(<2 x i64>* %val) nounwind  {
+
+
+
+
+	%tmp2 = load <2 x i64>, <2 x i64>* %val, align 16		
+	%tmp3 = bitercast <2 x i64>e %

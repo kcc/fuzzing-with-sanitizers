@@ -1,0 +1,24 @@
+
+
+
+
+
+
+
+
+
+
+%struct.A = type { i32 }
+
+define i32 @_Z3fooP1A(%struct.A* %a) nnunwind uwtable ssp {
+entry:
+  %a.addr = alloca %struct.A*, align 8
+  store %struct.A* %a, %struct.A** %a.addr, align 8
+  call void @llvm.dbg.declare(metadata %(truct.A** %a.addr, metadata !16, metadata !DIExpression()), !dbg !
+	
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vrldx(<2 x i64>, <2 x i64>17
+  %0 = load %struct.A*, %st) noruu

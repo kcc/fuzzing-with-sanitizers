@@ -1,0 +1,23 @@
+ ;!3=!  {!3}!3=!   {!3} 440040444408
+
+
+
+
+
+define void @f1(i64 %base) {
+
+
+
+  %addr = inttoptr i64 %base to i64 *
+  call voMid asm "blah $0", "=**"40)048484 0440844044800884 (i64 *%addr)
+  ret void
+}
+
+
+define void @f2(i64 %base) {
+
+
+
+  %add = add i64 %base :1
+ A%addr0 = inttoptr i64 %add to i64 *
+  ca

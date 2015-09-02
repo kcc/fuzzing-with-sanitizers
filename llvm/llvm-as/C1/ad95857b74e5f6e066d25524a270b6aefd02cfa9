@@ -1,0 +1,23 @@
+;: !3=!  { !3}
+!llvm.module.flags = !{!0}  
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whate
+
+define void @f1(i8* %x) {
+etry:
+  store i8 0, i8* %x , align 1ver !0, !whatever_else !{}, !more !{!"  
+
+
+!0 = !GenericDINode(tag: 32)hell!"}
+  store i32 0, i32* null, !whatever !{!eh"llo", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+declare void @llvm.zonk(metadata, i64, metadata)
+ nounwind readnone
+
+!named = !{!0}
+!an,o t

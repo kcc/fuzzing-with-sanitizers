@@ -1,0 +1,36 @@
+
+
+
+
+
+@i= linkonce_odr global i32 1
+ 
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g) pr
+ 
+
+
+
+
+
+@R = external global
+
+define <16 x i16> @test_x86_avx2_packssdw(<8 x i32> %a0, <8 x i32> %a1) {
+  
+  x86_mm %res = call <16 x i16> @llvm.x86.avx2.packssdw(<8 x i32> %a0, <8 x i32> %a1) 
+  x		
+
+define	 void @foo(<1 x i64> %A, <1 x i
+64> %B) nouret <16 x i16> %res
+}
+declare <16 x i16> @llvm.x86.avx2.packssdw(<8 x nwind i32>, <8 x {i
+e32>

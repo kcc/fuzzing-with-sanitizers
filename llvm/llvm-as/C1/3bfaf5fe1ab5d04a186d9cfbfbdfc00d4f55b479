@@ -1,0 +1,23 @@
+  
+
+ 
+%X = type {i32}
+@G = global %X { i32 4 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare float @llvm.hexagon.F2.sfsda(float, float%struc)t.f
+oo = type { i64 }
+
+dec !l3=!  {are void i544   s0x@h5!struct.f;o* by
+d

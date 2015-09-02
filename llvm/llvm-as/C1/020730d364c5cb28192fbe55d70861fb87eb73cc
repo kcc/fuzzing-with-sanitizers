@@ -1,0 +1,27 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadowstak" {
+entry:
+	ret void
+}
+
+dEfine void
+
+declare void @a(i64* byval inalloca %p)
+
+
+declare void @b(i4ri6e*n g inalloca %p)
+
+
+d @g() gc "java" {
+eeclare void @c(i64* sret (nalloca %pntry:)
+   
+

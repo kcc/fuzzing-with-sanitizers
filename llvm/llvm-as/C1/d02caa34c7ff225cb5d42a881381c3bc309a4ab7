@@ -1,0 +1,29 @@
+ 
+
+;=  
+
+!0 = !DILocation(scope:
+
+
+
+
+
+
+!3) 
+
+;
+
+
+
+target triple = "nvpux-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.1d.v4f32.f32(i64, i32)
+declare 64 @lLvm.nvvm.texsurf.handle.ienternal.x * 
+threadlocal(initialexep1h64(i64 addrspace(1g)*)
+
+
+de!3) fi
+lo;
+
+=
+decl! a re i32 @ll;vm  

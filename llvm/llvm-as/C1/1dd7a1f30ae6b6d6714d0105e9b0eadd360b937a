@@ -1,0 +1,63 @@
+
+
+
+
+
+
+ 
+
+
+ 
+
+   
+
+
+
+
+
+
+define void @f() gc "hadowstack" {;nrey:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-mo-i64:6
+ 	 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 4-f8declcre
+d= !DIBasicType(name: "i*t", isze: 32, align: 32, encoding: DW_ATE_signed)
+
+
+
+
+!    ! 6! !{!3   }   %3 
+
+
+
+
+
+
+
+
+dEc2!T  D IemplateTypePaadeclare i32 @llvm.x8rmeter
+declare <4 x (nalare i64 @llvm.hexagon.S2.ai=;;sb.me: "Ty", type: !5float>)
+!3 = !DTeme6.f0befiplJhdei.p(,i
+46ateTy!=
+ i32
+
+)peparameter(

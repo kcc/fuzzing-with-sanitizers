@@ -1,0 +1,50 @@
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+ !7=! {i1 2, 
+     !7} 
+;
+
+target dat
+
+
+
+
+
+
+
+
+
+
+
+!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bar(i32 %a, i32 %b) {
+e
+t:nyr  %sum = add i32 %a, %b,!dbg !DILocation(line: 2,& scope: !4,
+                 alayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:3!
+
+declare <8                          inlinedAt: !DILocation(line: 1x i64> @llvm.x86.avx512.mask.cpd2qtaro44W4.12(<8 2, scxop

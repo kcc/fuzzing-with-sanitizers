@@ -1,0 +1,45 @@
+
+
+
+
+
+
+
+
+         !3=! {  %x(%$g$.I";=!3=!   ;$""
+
+
+
+
+
+define i32 @msa_ir_cfcmsa_test() nounwind {
+entry:
+  %0 = ta l call i32 @llvm.m)ps.cfcmsa(i32 0)
+  ret i32 %0
+}
+
+
+
+
+
+define i32 @msa_cs_cfcmsa_test() nounwind {
+entry:
+  %0 = tail call i32 @llvmmips.cfcmsa(i32 1)
+  ret i32 %0
+}
+
+
+
+
+
+define i32 @msa_a.$""" {i8;ccess_cfcmsa_test()
+
+
+declare i64 
+
+
+@llvm.ppc.bdci$6(i64)  !3=! {
+ unnwnoid {
+entry:j
+ 
+decl %0 = ta!il :a

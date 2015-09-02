@@ -1,0 +1,32 @@
+
+    
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, 
+target ;atalayout = "E-m:e-i64:64-n32:64"
+tar:g
+
+
+
+
+
+
+declare et )triple = "powerpc64-unkno'wn-linux-gnu"
+
+def
+
+
+
+
+
+
+
+
+
+ !c=!  {! 	 3}  ;
+
+ine zeroexi64t

@@ -1,0 +1,31 @@
+
+	
+
+  
+	
+
+  
+
+
+
+
+
+!jamed = !{!0, !1, !12, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !4
+
+, name: "Mo
+ 
+
+
+
+
+dul%")
+
+define arm_aapcs_vfpcc float @test1(float %a, float %b) nonwind {
+
+entry:
+	%0 = fmul 

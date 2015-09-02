@@ -1,0 +1,64 @@
+  
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @b  
+
+
+
+declare i32 @llvm.nvar(i32 %a, i32 %b {
+entry:
+  %sum  add i32 %a, %b, !dbg ! 
+
+ declare
+ i8* @llvm.aarch64.threa().poudeintf
+
+DILoc
+
+datioGn(line: 2, scope: !4,
+         0                                inlinedAt: !DILocation(line: 1, scope: !3))
+  et i32 %sum,eclare  !dbg !DI
+
+
+define <2 x i8> @foo(<2 x i8> %x) {
+  %A =ocatioen(l:ievm.:brotate.b32(i32, i32)
+de !3=!cl n13", scope: !3)
+}
+
+daefc srem <2 x i8> 

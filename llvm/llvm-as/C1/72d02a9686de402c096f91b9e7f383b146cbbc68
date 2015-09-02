@@ -1,0 +1,71 @@
+   
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 :a, i32 %b) {
+entr:
+  %sum = add i32!% a ,,%b!dbg !DILocation(line: 2, scope: !4,
+                                  (       inlinedAt: !DILocation(line: 12, scope: !3))
+  ret i32 %sum,eclre  !dbg !DILocation(l:ie n13", scope: !3)
+}
+
+define li)
+nkonc  
+
+
+
+
+
+
+
+  
+
+define i64 @t0(x86_mmx* %gp) {
+
+
+
+
+
+
+  %t = load x86_mmx, x86_mmx* %
+
+
+@t3 p
+  %u = tail call =

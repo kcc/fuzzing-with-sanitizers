@@ -1,0 +1,12 @@
+ 
+   	      
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.ce = !{!5}
+!llvm.omdule.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN3foo3barEv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 7, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+!!3=! {{i1011 = !DIFile(filenam5,6}i45 ! !3=@{  30i1)  e: "/foo", 
+
+!0 = !DINadirectormespace(name:y: "ba r.cpp")
+'!3 = !DISubro 

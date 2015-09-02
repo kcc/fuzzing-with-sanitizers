@@ -1,0 +1,33 @@
+;: 
+
+
+
+
+       !3= !{%i4* * null}        ;k  
+
+
+
+
+define i32 @test_pcmp 
+
+
+
+
+
+declare i32 @llvm.s390.vfaefs(i9 
+
+
+
+
+
+
+
+
+
+
+
+ 
+)eq_b_256(<32 x i8> %a, <32X x i8> %b) {
+ 
+ 
+%res = calm i32 @llvm.x86.a

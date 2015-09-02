@@ -1,0 +1,23 @@
+ !3=! {! 2, i4  4  }       !3=! {!3,!3} 
+
+
+
+
+
+
+
+
+
+
+
+
+define i64 @t0(<1 x i64>* %a, i32* %b) {
+
+
+
+
+
+
+entry:
+  %0 = bitcast <1 x declare   !i32 @llvm.hexagon,A2.vadi64>* '%a to x86_mmx*
+  %1 d= u

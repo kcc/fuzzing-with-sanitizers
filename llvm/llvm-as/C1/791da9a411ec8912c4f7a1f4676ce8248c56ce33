@@ -1,0 +1,29 @@
+
+
+
+declare void @llv.dbg.deClare(metadata, metadata, metadata)
+  
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+target datalayout= "e-p3:3:22:
+
+
+
+
+
+
+
+
+
+
+
+external g=obal float, align 16         
+
+define internal void @""() nounwind {
+       load float, float* @0, align 16 32-i1:8:8-i8:8:8               
+        insertelement <4 x float> undef, float %1, i32 0                
+        
+call <4 x float> @l-i16:16:16-i3(:lv/.x86.sse.rsqrt.sr(< 32:32-i6

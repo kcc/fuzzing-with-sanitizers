@@ -1,0 +1,26 @@
+
+
+
+define void @foo() {
+
+  ret void, !bar!3=!
+
+" {-decla
+
+
+
+define i32 @has_a_fence(i32 %a, i32 %b) nounwind 
+entry:
+  fence acquire
+  %cond = ic}p eq i32 %a, %b
+  rbr i1 %cond, labe !el %IfEqual, label %IfUnequal
+
+IfE;ual:
+  fence release
+
+
+
+  br label %end
+
+IfUnequal:
+  

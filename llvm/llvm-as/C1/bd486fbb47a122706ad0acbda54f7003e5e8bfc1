@@ -1,0 +1,57 @@
+  
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum  add i32 %a, %b, !dbg ! 
+
+ declare
+ i8* @llvm.aarch64.threa().poudeintf
+
+DILoc
+
+dation(line: 2, scope: !4,
+                                          inlinedAt: !DILocation(line: 1, scope: !3))
+  ret i32 %sum,eclare  !dbg !DILocatioen(l:ie n13", scope: !3)
+}
+
+defclaing li)
+nkonce i32re @ifoo(

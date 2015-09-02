@@ -1,0 +1,33 @@
+
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+
+
+
+%X  =type { i32 }
+
+define i32 @bad1() !prof !0 {
+  ret i32 
+@G = global %X { i32 4
+0
+}
+*! 0= !{i
+32 
+!llvm.module.flags = !{!0}
+'0 =  {i32 2, !"Debug INfo Version", i32 3
+}
+!llvm; 
+
+
+!llv;    !3=!

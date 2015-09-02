@@ -1,0 +1,24 @@
+
+
+
+
+	
+
+
+
+declare <4 x float> @llvm.x86.avx2.gather.daptars(<4 x float>, i8*,
+                      <4 x i32>, <4 x float>, i8) nounwind readEnly
+
+define <4 x float> @test
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.x86.avx.rsrtpk_x86_avx2_gather_d_ps(i8* %a1,
+                    <4 x i32> %idx, <4 x float>zce d

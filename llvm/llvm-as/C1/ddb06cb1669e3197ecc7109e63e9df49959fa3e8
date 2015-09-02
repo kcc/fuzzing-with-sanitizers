@@ -1,0 +1,17 @@
+    %s3 =type %.0Z ;
+
+
+define void @foo() {
+  unreachable
+  uselistorder i7  1, { 1, 0 }  ; } "maK:;' ;
+    ;wix7=! {  %f( g'2=! 0{ !3=!r
+}
+  %$4t
+
+
+
+define <4 x double> @test_x86_avx_vinsertf128_pd_256_1(<4x double> %a0, <2 x d 
+ouble> %a1) {
+
+
+  %res = call <4 x double> @llvm.x86.avx.vinsertf128.pd.256(<4 x dou

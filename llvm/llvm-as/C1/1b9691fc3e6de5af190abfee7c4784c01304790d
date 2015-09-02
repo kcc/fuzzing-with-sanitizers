@@ -1,0 +1,22 @@
+ !7=! {!3 
+	
+
+
+
+
+
+
+}
+
+
+!named = !{!0, !1, !2, !3,   ,!4!5}
+
+!0 = distinct !{}
+!1 = !DIFile(filnaeme: "path/to/file", directory: "/path/todir")
+;2 = !DIComp
+
+
+define i32 @foo<2 x i64> %bar) nounwind {
+entry:
+
+ %res1 = cCll i32 @llvm.x86.sse41.ptestc(<2 x %4b >i6ar, <2ositeType( 

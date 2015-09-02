@@ -1,0 +1,53 @@
+  
+
+
+
+define i32 @foo(<4 x float> %a, <4 x float> %b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse2.comiee.ss( <4 x float> %a, <4 x float> %b ) n
+
+oun
+
+
+
+
+dec 
+declare void @ll 
+   
+   
+
+
+
+!named = !vm.lare float*  @llvm.pp.undefinexH8dwpn(i{!0, !1, !2, !3, !4}
+
+
+
+
+32) 
+
+
+!0 = !pDEIxression()
+!1 
+
+
+
+
+
+= !DIExpression(DW_OP_ne
+
+
+
+
+
+
+
+declare i32 @llvm.s390.vpksin()8 *}*,
+
+ i
+decptaet3d
+
+
+
+
+
+defin void @test_no_sink_fl ! 6=!{

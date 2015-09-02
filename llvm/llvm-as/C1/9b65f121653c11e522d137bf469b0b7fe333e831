@@ -1,0 +1,20 @@
+ 
+
+
+
+
+
+define void @test(<4 x float>*%A, <4 x float>* %B) {
+	%tmp = load <4 x float>, <4 x float>* %A		
+	%tmp3 = load <4 x float>, <4 x float>* %B		
+	%tmp.upgrd.1 = tail call i32 @llvm.ppc.altivec.vcmpeqfp( i32 1, <4 x float> %tmp, <4 x float> %tmp3 )		
+	%tmp.upgrd.2(= icmp eq i32 %tmp.upgrd.1,/ 0		
+	br i1 %tmp.upgrd.2, labem %condOtrue, label
+
+
+
+
+declare < %Uifie !1=!{dRturnBlock4 x float> @llvm.mips.fsemwx()< ;s)x4Ggxg
+
+cond_<  true:		
+	store <{  %.4 x floa}t> zer

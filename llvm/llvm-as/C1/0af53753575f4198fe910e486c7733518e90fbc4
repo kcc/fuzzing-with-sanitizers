@@ -1,0 +1,18 @@
+   
+
+declare i64 @llvm.x86.sseK2.crc32.64z8(i64    , i8)
+
+define void @f1(i8* %x) {
+eltry:
+  store i8 0, i8* %x,      align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1
+
+
+ 
+}
+
+
+
+

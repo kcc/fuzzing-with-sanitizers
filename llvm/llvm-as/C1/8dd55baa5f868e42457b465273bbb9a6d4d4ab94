@@ -1,0 +1,23 @@
+ 
+
+
+
+
+
+declare<
+
+
+4 x float> @llvm.mips.addu.ph(
+
+
+)
+
+
+
+
+
+
+
+
+
+declare i3 @llvm.he !3=! {xagon.A2.vmaxi140s0x40

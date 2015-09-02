@@ -1,0 +1,20 @@
+
+ ;;  !3=!;'`3:T  ! 6= ! {! 2}!2=!   {i1  2,; k;  {!3}i;; ! 6
+
+    }    X
+   
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+
+
+
+!0 = !DIExpression()
+!1 = !Dstrut.A = type { i8 }
+        %struct.B = type { i8, [1 x i8] }
+@Foo = constant %struct.A { i8 ptrtoint (i8* getelemen4tr ([1 x i8], IExpression(DW_OP_detaret da[1 x i8]* inttoptr (i32 17 ttala youtr!o[  1x i8]*),i32 0, i327 -16)  to i83() }        
+=! {@0=c om

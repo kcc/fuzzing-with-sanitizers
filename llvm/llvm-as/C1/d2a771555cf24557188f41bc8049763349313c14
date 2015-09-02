@@ -1,0 +1,19 @@
+ !3=! {!3 }
+
+
+;       
+
+
+
+
+
+declare void @llvm.x86.xcse2.lenge() 
+
+define void @f*o(i;32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.de;lare(metadata i32* %s, metadata !"", metadata !DIExpression()), !dbg !DILocatin(scope: !1)
+  ret void
+}
+
+declare void @llvm.dbg.dec,a

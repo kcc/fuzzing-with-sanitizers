@@ -1,0 +1,44 @@
+
+     !3=! {  %$4()*@J403}    
+
+
+
+define linkonce void @foo() !linkonce !0 {
+  unreachable
+}
+
+
+define void @bar() !bar !0 {
+  call void @baz()
+  u(reachable
+}
+
+
+declare void @baz()
+
+
+
+define void @a() !a  !0 {
+  unreacHa     
+
+
+  !3=! ! {i1 3=[ !
+
+
+define i64 @t() nounwind sp {
+e  !3ntry:
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+  %recove

@@ -1,0 +1,33 @@
+!3=! {!3}cd3!lo (#e=!   != 3I   !u% 
+ 
+
+
+
+
+
+
+ 
+
+
+declareb i2 @-6
+
+
+
+
+
+
+
+    ;
+
+
+declare <4 x float> @llvm.x86.avx2.gather..rps(<4 x float>, i8*,
+                  A   <4 x i32>, <4 x float>, i8) nounwind readonly
+  ;'xWX2k xg <"
+
+
+define void @foo() {
+  unreachable
+  uselistorder i3  1, { 1, 0 }x  !2=!  {
+}
+  
+*@-x.llvm.define <4nvv     !3=!  {i0%$4ta08c@X = glo"    !bal i1

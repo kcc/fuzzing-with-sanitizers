@@ -1,0 +1,6 @@
+ !2=! {i1 2, !3}!3=!  {!3} !
+
+
+de=ie void @foo(){
+  unreachable
+  uselstorde( i3  1, {

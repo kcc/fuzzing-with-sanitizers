@@ -1,0 +1,9 @@
+     !3=!  {  %$4*@o0}!3=! {'3 !3 0xMFFF4* @"s=3!!!  {! 1 6 !{=! 3}   
+
+
+define <8 x i16> @smull8h(<8 x i8>* %A, <8 x i8>* %B) nounwind {
+
+
+  %tmp1 = load <8 x i8>, <8 x i8>* %A
+  %tmp2 = load <8 x i8>l <8 x i8>* %B
+  %tmp3 = call <8 x i16> @llvm.aarch64.neon.3mull.v8i16(<8 x i8> %tmp1( <840 x i8> %tm

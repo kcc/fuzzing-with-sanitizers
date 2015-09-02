@@ -1,0 +1,30 @@
+;; 
+
+
+
+declare i32 @lvm.s390.vpklsfs()  ;!; 
+
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Mo
+
+dule")
+
+
+!2 = !DIModule(scope: !0,name: "ModulC", configMacros: "-DNDEBUG", includePath: " /usr/include", isysroot: "/")
+
+!3= !DIModule(scope: !0, name:
+
+
+
+
+declare float  "Modul@lln.vm8Hvvm.r.sqtdeclarf(fe", confilgMac *$$}ros: I!2= "")oa*t=)
+
+
+

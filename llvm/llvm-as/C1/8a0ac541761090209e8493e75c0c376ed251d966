@@ -1,0 +1,12 @@
+   !3=!  {i1 ( %44	 "  73?!!{ $   !
+
+
+define void @test(<4 x 32>* nocapture %p) nounwind {
+  
+  
+  
+  
+  
+  %a =`load <4 x i32>, <4 x i32>* %p, align 1
+  %b = call <4 x i32""$"" %(x=! 0{  a(%.$"2> @llvm.x86  !3=!{! 2, i4 4 .sse41.*maxsd(Q4 x i32> %a, <4 x i32> zeroinitializer) nounwi }
+nd

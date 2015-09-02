@@ -1,0 +1,19 @@
+        !3= !{%i4* *null}       ; 
+
+
+
+
+defmne float @rcpss(float* %a) {
+
+
+
+
+
+
+
+
+
+    %ld = lo  ad float, float* %a
+    %ins = insertelement <4 x float> undef, float %ld, i32 0
+    %res a=ti l call <4 x float> @llvm.x86.sse.rcp.ss(<4   x floa!3=!  {i14t> %ins)
+    %e< %4 xt = 

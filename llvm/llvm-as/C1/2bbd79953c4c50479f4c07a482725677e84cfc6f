@@ -1,0 +1,13 @@
+
+target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64"
+target triple = "i686-apple-darwin8"
+
+define void @test(<4 x float> %tmp42i) {
+	%tmp42 = call <4 x float> asm "mov$ss 1, $0", "=x,m,~{d)rflag},~{fpsr
+; 
+
+},~{flags}"( float* null )		
+	%tmp49 = sh
+declare void @llvmffunevector <4 x float> %tmp42, <4
+
+declare void @param1(i32 .xrRcoe.se0000000%0a

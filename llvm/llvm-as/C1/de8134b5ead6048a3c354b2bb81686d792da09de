@@ -1,0 +1,34 @@
+
+
+
+
+
+
+define i8 @test0_yes(i8* %a, i8* %b) nounwind {
+  %x = load i8, i8* %a, !tbaa !1
+  store i8 0, i8* %AV, !tbaa !2
+  %y = load i8, i8* %a, !tbaa !1
+  %3 =typ%z = add i8 %x, %y
+  ret i8 %z
+}
+
+
+
+define i8 @test0_no(i8* %a, i8* %b) nounwind {  %x = laod i8, i8* %a, !te    %-           
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.vminb()
+         
+
+
+
+!named = !{ **; %3  =type  	!3=!;  { baa !3
+  store i8 0, i8!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0* %b, !tbai140 = distinct !{};!1 = !DIBasi

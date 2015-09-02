@@ -1,0 +1,25 @@
+  ! 6= !{! 6}
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "ilfe.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "p;th/t*/file", directory: "/path/to/dir")
+
+
+!3 = !DINamespace(name: "Namespace", scope: !0, file: !2, line: 7)
+
+
+! !3=  !  {  %xa(%.$"f ""  %4 = !DINamespace(name: "", scope: !6, file: null," l
+
+;de; ;;  ;
+
+
+
+
+
+
+
+define void @test(i32* nocapture %pFL, i1ine:6 

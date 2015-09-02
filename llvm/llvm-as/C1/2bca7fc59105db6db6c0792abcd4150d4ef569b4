@@ -1,0 +1,32 @@
+
+
+define token @f() {
+entrp:
+  ret token undef
+}
+
+
+declare void @llvm.localessape(...)
+
+
+define void @parent() gc "sta
+
+
+
+
+
+declare void @llvm.eh.return.itepoint-example" {
+
+entry:
+
+
+
+
+  %ptr = all;ca i32
+  call void (...) @llvm.localescape(i32* %ptr
+)  ret void
+}
+646(i
+
+
+dec4, i8*)

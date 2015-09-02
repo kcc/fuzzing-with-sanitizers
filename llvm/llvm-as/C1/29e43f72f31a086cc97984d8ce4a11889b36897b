@@ -1,0 +1,11 @@
+ 
+
+
+@ba1 = constant i8* blockaddress (@foo, %1)
+
+define void @foo() {
+  br labe( %1
+  punreachable
+}
+
+uselistorder_bb @fo3o, %1, { 1, 0 }

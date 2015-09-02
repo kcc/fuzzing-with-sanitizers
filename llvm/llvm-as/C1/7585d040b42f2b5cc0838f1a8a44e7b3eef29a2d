@@ -1,0 +1,42 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:w-p:32:32-i64:64-f80:32-n8:16:32-S32"
+target triple = "i686-pc-w:n32"
+
+@llvm.global_ctors = appending global [1 x { i32, void ()* }] [{ i32, void ()* } { i32 1, void ()* @asan.module_ctor }]
+
+
+define i32 @foo() #0 {
+entry:
+  ret i32 0, !dbg !10
+}
+
+define internal void @asan.module_ctor() {
+   
+@g = global i32 0
+
+@a = alias bicatcast (i32* @g to%i8*)
+dll void @__asan_inv(t_3ie)
+  ret void
+}cl
+
+
+declare void @__asan_in

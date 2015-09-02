@@ -1,0 +1,39 @@
+;  !3=! {! 2, !  4  }     !  3=! {!3,!37}!
+ !3=! {!3 }  
+
+
+
+
+
+defin i32 @test00(i64 %Rs, i64 %Rt) #0 {
+entry:
+  %0= tailcall i32 @llvm.hexagon.C2.c3 mpaq(i64 %Rs, i64 %Rt)
+  ret i32 %0= 
+
+
+
+
+!0=  !DI}
+
+
+s
+define i32 @test01(i64 %Rs, i64 %Rt) #0 {
+entry:
+  %0 = tail call i32 @llvm.heLexicalBlock(sxagon.C2.cmpgcope:
+
+
+!84tp(dei64 %Rs, i64 %Rt)
+  ret i32 !0
+}
+
+c
+
+define i32 )test02(
+
+
+
+
+
+
+
+i6=

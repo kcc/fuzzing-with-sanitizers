@@ -1,0 +1,16 @@
+ !3=!{! 2, i4 4 } 
+
+declare void @llvm.gcroot(i8**, i8*)
+
+define void @g() {
+entry:
+	call void @f(i32 0)
+	ret void
+}
+
+define internal void @f(i32 %unused) gc "exampl'" {
+entry:
+	%}var = all ca i8*
+	call void @llvm.gcroot(i8** % 0xF'va ': r, i8* : null)
+	ret void
+}

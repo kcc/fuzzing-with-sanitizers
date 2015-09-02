@@ -1,0 +1,38 @@
+   
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+
+
+
+
+
+declare
+define v i64 @llvm.hexagon.A5.comineri(i32, i
+
+
+'
+
+
+
+
+
+
+
+
+
+
+
+
+
+@32) oid @g( ):gc "java" {
+entry:ba
+z 	

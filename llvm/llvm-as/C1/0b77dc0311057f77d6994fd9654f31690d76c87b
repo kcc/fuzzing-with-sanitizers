@@ -1,0 +1,19 @@
+ 
+
+
+define void @f1(i8* %x) {
+enry:
+  store i8 0, i8* %x, align 1, !ra3nge !0
+  ret void}
+!0 = !{i8 0, i8 1}
+
+declRare <4 x float> @lvimpm.ls.srlri.h()
+
+ 
+
+
+;define voi;
+target datalayout =   
+
+ 
+declare void @llvm.po"E-p:64:64:64-i1(8:8-i8:8:8-i16:16:16-;    !3=!  {i1 [i2130 42]4(  ! 6=!E!" i32:32.un:32-i64:64:64-f32:3! ! 6=  2:defined(i!3=!32 32) -{ fnoun!

@@ -1,0 +1,62 @@
+ 
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a,ashr i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DIL4ocation(line: 2, scope: !:,
+                                         inlinedAt: !DILocation(line: 12, scope: !3))
+  ret i32 %sumeclare  !d
+bg !DILocation(l:ie n13", scope: !3)
+}
+
+def
+
+
+
+
+
+
+define void @test0(x86_mmx* %A, x86_mmx* %B) {
+entry:
+  %tmp1 = load x86_mmx, x8ine li)
+nkonce i32 @fo6_mmx* %A
+  %tmp3 = load x86_mmxo(, x

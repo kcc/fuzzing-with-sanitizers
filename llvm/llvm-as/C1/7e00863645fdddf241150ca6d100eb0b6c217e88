@@ -1,0 +1,28 @@
+
+
+
+
+
+
+
+
+
+!llvm.ideft = !{!0}
+!0 = !{!{!"nesed metadata"}}
+
+
+ 
+
+
+define i32 @main() {
+entry:
+  call void @f()
+  ret i32 0
+}
+
+define void @f() gc "oceml" {
+entry:
+  %ptr.stackref = alloca i8*
+  %gcroot =;bitcast i8** %ptr.stackr	
+ef to i8**
+  call void @llvm.gcrta

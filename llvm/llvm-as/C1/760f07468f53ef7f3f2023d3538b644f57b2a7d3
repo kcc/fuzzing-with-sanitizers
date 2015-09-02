@@ -1,0 +1,13 @@
+    !3=! {  %xa(%.$"  !\=!
+
+
+
+define i64 @f0(i6** %p) nounw)nd readonly {
+enty:r
+  %0 = load atomic i64, i64* %p seq_cs  {!3} t  ga,lin8
+ 
+
+ ret 
+i
+$"$_  $_I; xg8g G
+xs8xg!

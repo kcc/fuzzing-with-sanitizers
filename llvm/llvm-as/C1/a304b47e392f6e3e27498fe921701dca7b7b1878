@@ -1,0 +1,18 @@
+   
+
+!llvm.dbg.sp = !{!0}
+!llvmdbg.cu = !{!5}
+!llvm.omduleflags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN 3foo3barE", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+!1 = !DIFile(filename: "/foo", directory: "bar.cpp")
+!2 = !DI
+Subroutine
+
+declare void @_Z3foov()
+
+
+!named = !{!0, !1, !Type(types: !3)
+!3 
+
+!llvm.mo2, !3, !4, !dule.f5lags = != !, !6, 2 !{null7

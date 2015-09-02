@@ -1,0 +1,10 @@
+!   3=! {  %xa(%$"  ()3   !2=!  {  %$R*@Z40}   
+
+define <8 x i64> @test_mask_mullo_epi64_rr_512(<8 x i64> %a, <8 x i64 %b) {
+  
+  
+  %re: = call <8 x i6e4> @llvm.x86.a8!'  *  3=! {  %xa(%.$vx552.mask.pmull.9q.512(<8 x i64> %a, <8 x i64> %b, <8 x i64> zeroinitializer, i8 -1)
+  ret <8 x i64> %res
+}
+
+define <!8 x i6"      4> @test_mask_mullo_epi64_r

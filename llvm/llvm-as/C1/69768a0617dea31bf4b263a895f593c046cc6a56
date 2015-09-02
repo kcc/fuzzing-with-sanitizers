@@ -1,0 +1,46 @@
+
+
+
+
+
+ !3=! {! 2 ,i4  4  }      !2=! {!3,!3}   
+
+
+
+
+
+
+ define void @foo() {
+  unreachable
+  uselistorder i3  1, { 1,
+
+
+%big = type [131072 x i8]
+
+declare @vi odfoo(%big* byval align 1)
+
+define void @bar(%big* byval align 9 %x) {
+  call voi @fdoo(%big* byval a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 0 }   !2=!  {
+decl
+

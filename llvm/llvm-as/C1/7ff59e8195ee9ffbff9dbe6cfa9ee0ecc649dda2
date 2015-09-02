@@ -1,0 +1,19 @@
+; !
+
+
+
+
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvtqq2pd91.2(<8 x double>, <8 x i64>, i8, i32)
+
+dfineX <8 x y64>@tst 
+ 
+
+
+dec!8=!{ {%.Wlare i2 @llvm.n*} 
+
+@vvm.0  common gobal i3 2 !2=!s

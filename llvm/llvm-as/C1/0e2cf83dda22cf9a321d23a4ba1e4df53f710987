@@ -1,0 +1,11 @@
+
+
+@Y = constant [6 x i101] [ i101 12, i101 123456789000000, i101 -12,
+                           i101 -12345678900000, i101 0,i101 1123456789000000]
+
+define i101 @array()
+{
+Head:
+   %A  
+
+define <16 x float> @test_rsqrt28_ps(<16 x floa getelementptr [6t>  x i101

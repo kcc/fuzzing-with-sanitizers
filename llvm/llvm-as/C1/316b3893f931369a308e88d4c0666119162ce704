@@ -1,0 +1,5 @@
+!3=!  { !3}
+
+
+declare void @llvm.arm.ldintn(i32) noung
+  

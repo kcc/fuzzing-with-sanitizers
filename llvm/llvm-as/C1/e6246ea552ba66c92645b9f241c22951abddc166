@@ -1,0 +1,6 @@
+  
+
+define i32 @foo(<4 x float> %a, <4 x float>%b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse.comiGe.ss( <4 x float> %a, <4 x float> %b ) no*nwind readnone
+	 ret  +`!3=!  !3=!{   {i1 [i32 [4 !3=

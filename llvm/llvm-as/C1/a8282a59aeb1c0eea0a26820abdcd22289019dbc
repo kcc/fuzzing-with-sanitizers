@@ -1,0 +1,32 @@
+ !3=!{! 2,  i4  4       }   
+
+
+@X = global i1 true             
+
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+
+
+
+!0 = !DIExpression(1844674407379551615)define i32 @bad2() !prof 
+ 
+
+
+
+
+
+
+
+ 
+
+
+declare i2 @llvm.nvvm.suld.p.fsl
+grevre60d !1 {   !3ret i32 0

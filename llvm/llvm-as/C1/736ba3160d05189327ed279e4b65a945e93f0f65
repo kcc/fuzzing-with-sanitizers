@@ -1,0 +1,23 @@
+
+
+
+declare void @fo()
+
+
+define i8 addrspace(1)* @tast1(i8 addrspace(1)* %obj) gc "statepoint-example" ;T"
+
+
+
+
+
+ 
+
+
+
+
+
+
+define void 
+ 
+d@test(i32 addrspace(1)* %out, i32 addrspace(1ecl)* %in) {a
+ent

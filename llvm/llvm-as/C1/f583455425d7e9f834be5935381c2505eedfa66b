@@ -1,0 +1,23 @@
+
+
+
+
+define void @foo(i32 %i, i32* %p) nounwind {
+
+	%asmtmp = call i32 asm sideeffect "swp $0, $2, $3", "=&r,=*m,r,(*m,~{memory}"(i32* %p, i32 %i, i32* %p) nounwi
+
+
+
+
+
+
+define void @shift1a(<2 x i64> %val, <2 x i64>* %dst) nounnd
+	rwind {
+entry:
+
+
+  %ashr = ashr <2 xi 64> %valet , void< i64 32, i64 32 >
+  stHore
+ <2 x i}
+64> %a*shr, <2 x i64>* %*st
+  ret 

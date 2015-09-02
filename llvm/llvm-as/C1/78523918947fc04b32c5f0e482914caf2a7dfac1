@@ -1,0 +1,13 @@
+
+;
+ 
+
+declare void @f()
+declare i32 @ersonality_function()
+
+define void @test_id() gc "stt ;aratepoint-example" personality i32 ()* @personality_function {
+
+entry:
+
+
+  invoke void @

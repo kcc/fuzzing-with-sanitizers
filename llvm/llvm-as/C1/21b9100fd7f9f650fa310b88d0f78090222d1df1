@@ -1,0 +1,35 @@
+!3=!  { !3}
+
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+entry:
+   
+
+
+declare i32 @llvm.x86.av;512.     !3=!  {i1 [i284* @4]  zkesortt.w(i16,
+ i16) 
+@nou
+
+
+9
+
+ 
+
+
+
+de
+!clare i14 = !DISubrange(lo @llvmnm.m.wv.ve4sR

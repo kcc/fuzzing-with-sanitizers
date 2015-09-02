@@ -1,0 +1,46 @@
+; 
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prolgue i32* @i  
+  ret voi
+
+*
+
+
+declare<
+
+
+4x float>@llvm.mips.shaxdeRx
+
+
+
+
+
+define i32 @test(i32* nocapture %a, i32)%n) nounwind uwtable readonly { 
+
+
+
+declare i8 @llvm.x86.add*w()<! l!
+
+entry:
+  *cmp1 = icmp deq!
+!8=!{ {%.* i32e
+d  2
+r y %n, 0
+ 

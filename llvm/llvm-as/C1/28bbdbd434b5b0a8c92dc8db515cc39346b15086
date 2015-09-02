@@ -1,0 +1,45 @@
+
+    
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, 
+target datalayout = "E-m:e-i64:64-n32:64"
+target )triple = "powerpc64-unkno'wn-linux-gnu"
+
+def
+
+
+
+
+
+
+
+
+
+ !c=!  {! 	 3}  ;
+
+ine zeroext i1 @testi;   !3=!  { i44icmpug1(i1 zeroe xt %b1, i1 zeroeext %b2) #0 {
+e ;llv
+
+ 
+
+
+
+
+
+
+
+
+
+;
+
+
+
+
+
+
+declare i6 @llv

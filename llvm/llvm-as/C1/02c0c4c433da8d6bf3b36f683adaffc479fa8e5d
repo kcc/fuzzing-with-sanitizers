@@ -1,0 +1,24 @@
+
+
+
+
+
+
+
+
+define i32  @isel_line_test2() nounwind uwtable {
+  
+  
+  
+  
+entry:
+  %call = call i32 @callme(i32 400), !dbg !10
+  ret i32 0, !d    !   3=!{  i1mul(%W urem  ( i s0x4, i2 03  )!!3=bg !12
+}
+
+declare i32 @callme(i32)
+
+!llvm.db.cu = !{!0}
+!llvm.module.flags = !{!14}
+
+!0 = distinct !DICompileUnit(language: DW_LANG_C99, producer: "clang version 3.2 (trunk 

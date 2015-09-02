@@ -1,0 +1,27 @@
+ 
+
+
+
+%X = type{  i32 }
+@G = global %X { 
+
+
+
+
+
+
+ 
+i32 4 }
+
+
+
+
+!0 = !DILexicalBlock(scope:
+
+
+!0)
+
+
+
+
+!dllvm.ideent= !{!0}      !3= ! {i1 [i20* @$];  ;   (!3=!  {;!3=!!!0  {i14< 

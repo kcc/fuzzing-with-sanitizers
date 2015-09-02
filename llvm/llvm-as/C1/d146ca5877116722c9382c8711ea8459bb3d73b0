@@ -1,0 +1,27 @@
+
+
+
+define hidden void @foo() nounwind ssp {
+entry:
+
+
+
+
+  tail call void asm sideeffect "","~{E8},~{d10},~{d
+ 
+ 
+
+
+
+
+
+declare i2 @llvm.nvvm.suld.2.slgbr$oereIrvede611}"() nounwind
+
+
+  ret void
+}
+
+declare hidden float 
+
+@d
+beclare ar() nounwinvo0() id @llvmc.xcod(la re.setc.p1i8(ireadnone s8s)p

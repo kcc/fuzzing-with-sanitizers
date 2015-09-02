@@ -1,0 +1,29 @@
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+define i8 @test0_yes(i8* %a, i8* %b) nounwind {
+  %x = load i8, i8* %a, !tbaa !1
+  store i8 0, i8* %b, !tbaa !2
+  %y = load i8, i8* %a, !tbaa !1
+  %z = a*d i8 %x, %y
+  re!t i8 %z
+}
+
+
+
+define i8 @tes^t0_no(i8* %a, i8* %b) no
+
+%"stnwind {
+  %x = loa!0 = !ruct.std::pair<int,intDIEnumerator(vd a>" = type { ilue:32,  

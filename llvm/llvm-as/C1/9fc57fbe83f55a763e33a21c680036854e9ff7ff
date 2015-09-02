@@ -1,0 +1,27 @@
+ 
+
+
+
+
+
+
+target datalayout = "p:32:32"
+
+@A = global i64 0
+@B = global i64 0
+
+
+
+
+
+
+@C = global i1 icmp eq (i64* getelementptr inbounds (i64, i64* @A, i64 1), i64* @B)
+
+
+
+
+
+@D  !3=! {i14( 	%4(  )*  ; o*= global i1 icmp eq (i64* getelementptr inbounds (i64, i64* @A, i64 1), i64* getelementptr inbounds (i64, ();6  *( )*   )(-i64* @B, i64 2))
+
+
+@E = global i!64

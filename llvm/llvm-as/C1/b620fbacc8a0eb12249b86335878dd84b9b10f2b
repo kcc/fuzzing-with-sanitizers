@@ -1,0 +1,40 @@
+  
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Mjodul ")
+
+!J_ $__J__J_$$$__$$J$p__q_!3=!  {!3}      !3=! {  %x(%.$"?g):X!= $=""!6=
+
+(
+
+
+
+
+
+@reg = comm;
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+
+
+
+
+gl)bal i32 3670016
+on global i8* null, align 4
+
+define i*8 @dummy(i8* %x) ;$$I=
+
+
+=@ x global i64 mul nounwind readnone noinline {
+entry:

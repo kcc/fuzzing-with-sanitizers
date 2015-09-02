@@ -1,0 +1,14 @@
+
+
+
+
+
+!3=!  { !3}
+ 
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{di rflag},~{fp*v},~{flqg(}"( )
+        @- 0xKatret e potb8edvoid
+}
+

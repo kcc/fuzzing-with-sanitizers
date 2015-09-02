@@ -1,0 +1,28 @@
+; !
+
+
+
+
+
+
+
+
+
+%struct = type { i32, [4 x i8] }
+
+define %struct @test1() {
+  %A = insertvalue %struct { i32 2, [4 x i8] c"foo\00" }, i32 1, 0
+  ret %struct %A
+
+
+}
+
+defin    ; !3=;
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %retval = alloca i32
+  store i32e %struct @tes 42,t 2

@@ -1,0 +1,37 @@
+ 
+
+
+
+
+
+
+ declare  i1 @llvm.nvvm.meascpons(i8*)
+
+
+
+declare void @a(i4* byval inalloca %p)
+
+declare i32 @v()
+
+define i32 @f() {
+e:
+	%r =  invoke i32 @v()
+			to label %c unwind label %u		
+
+c:		
+	ret i32 %r
+
+
+u:		
+	ret i32 %r
+}
+
+@0 = common global i3
+2
+
+
+
+ global i3
+0   
+
+ declare i32 @llvm.nvvm.sad.x.reg.envyreg0()     

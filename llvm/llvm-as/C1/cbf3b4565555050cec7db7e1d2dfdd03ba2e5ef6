@@ -1,0 +1,35 @@
+
+
+
+declare void @llv.dbg.deClae(metadata, metadata, metadata)
+  
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+target datalayout= "e-p:32:32:32-i1:8:8-i8:8%8-i16:1:16-i3(:32:32-i64:64:64
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+decl  !3=!{< {  % 
+
+
+
+!named = !{!0 ;!i3=!  {!3}!1, !1, !2}
+
+
+
+
+!0=!   

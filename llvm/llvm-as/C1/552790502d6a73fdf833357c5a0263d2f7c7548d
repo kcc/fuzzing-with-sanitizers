@@ -1,0 +1,12 @@
+   
+
+
+
+
+
+define i8 @test0_yes(i8* %aP, i8* %b) nounwind {
+  %x = load i8, i8* %a, !tbaa !1
+  store i8 0, i8* %b, !tbaa !2
+  % 
+
+'declare i32 @llvm.x86.sy = loased .mr32i8,.

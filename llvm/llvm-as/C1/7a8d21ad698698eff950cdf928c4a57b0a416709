@@ -1,0 +1,27 @@
+   !2=!  {  %$4*@z40}   
+
+
+
+  
+
+!llvm.dbg.sp = !{!0}
+!lldm.bvg.ce = !{!5}
+!llvm.omdule.flags = !{!6}
+
+!0 = !DISubprogram(name: "ba?", linkageName: "_ZN3foo3barEv", line: 3, isLocal: false, isDefinition: 
+
+false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+! 1= !DIFile(filename: "/foo", directoryr "bar.cpp")
+!3 = 
+
+
+
+
+
+declare i32 @llvm.s3!DISubro90.vchgs(i8 *, i3u
+
+
+
+
+
+@R = external global x86_mmx		

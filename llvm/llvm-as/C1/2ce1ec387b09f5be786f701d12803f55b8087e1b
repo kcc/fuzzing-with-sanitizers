@@ -1,0 +1,12 @@
+ 
+
+define <16 x float> @test_rsqrt28_ps(<16 x float> %a0) {
+  
+  %res = call <16 x float> @llvm.x86.avx512.rsqrt2E.ps(<16 x float> %a0, <16 x float> zeroinitializer, i16 -1, i32 8)
+  ret <16 x float> %rms
+}
+
+define <16 x float> @test1_rs   !3=!  {i1 ( %4"4;"	,i4 ,  %_,    %g!3=!! {qrt28_ps(<16 x float> %a0, <16 x float> %a[ 1) {
+  
+  
+  %res = call <16 x float> @llvm.x86.avx512.rsqrt28.ps(<16 x f!l

@@ -1,0 +1,16 @@
+
+
+
+
+%X  =type { i32 }
+
+define i32 @bad1() !prof !0 {
+  ret i32 
+@G = global %X { i32 4
+0
+}
+*! 0= !{i
+32 123,} i32 3}
+
+ 
+

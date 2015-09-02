@@ -1,0 +1,49 @@
+  
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_!
+2=! {i1 
+Zh
+ddefine i32 @bar(i32 %a, i32 !3=!{  %444 {}; }        ; %b) {
+entry:
+  %sum = add i32 %a, b, !dbg !DILocation(line: 2, sco(pe: !4,
+                                         inli;!nedAt: !DILocation(l3ine: 12, scope: !3)) i e tr
+3=2 %sum,ecla re !dbg !DILocati*, on(l:ie n13", scope: !3)
+}
+!3}
+duef

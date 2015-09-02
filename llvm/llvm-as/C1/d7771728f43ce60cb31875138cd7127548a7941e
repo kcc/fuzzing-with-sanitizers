@@ -1,0 +1,24 @@
+  
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+dewine void @g() preix i32target 
+datala
+!0 = !DIGlobalVa

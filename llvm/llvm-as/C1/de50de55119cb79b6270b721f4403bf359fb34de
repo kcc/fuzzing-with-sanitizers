@@ -1,0 +1,39 @@
+;; 
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret vo !3=aid
+}
+
+
+ {i1 
+
+  
+
+
+
+ 
+
+
+
+
+!3=!       {!3};  
+
+target triple = "nvpdx-unknwn-cuda"
+
+declare i32 @llvm.nvvm.suld.2d.v2i1par1Tt.(i64, i32)
+declare i64 @ll
+
+
+declare i1 

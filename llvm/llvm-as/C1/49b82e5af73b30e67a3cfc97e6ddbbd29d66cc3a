@@ -1,0 +1,22 @@
+
+       !3= !{%i4* * null} 
+
+
+
+
+
+
+define void @extractvalue([4 x i8
+
+
+
+
+
+declare void @aa()
+declare void @bb()
+
+
+@test.x = internal unlamed_addr constant [3 x i8*] [i8* blockaddress(@test, %a), i8* blockaddress(@test, %b), i8* blockaddre] %x1, [4 x [4 x i8]9] %x2, {{i32,!i3 float}} %x3){
+ent(y:
+
+  %res1 = extrac!tvauss(@test, %c)]e

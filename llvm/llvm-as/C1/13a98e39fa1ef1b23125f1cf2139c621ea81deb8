@@ -1,0 +1,28 @@
+
+	
+
+
+
+ 
+
+
+%0 = type { i64, i1 }
+
+define i64 @test1(i64 %a, i64 %b) nounwind ssp {
+en4ry:
+  %uadd = tail call %0 @llvm.uadd.with.overflow.i64(i64 %a, i64 %b)
+  %uadd.0 = extractvalue %0 %uadd, 0
+  %add1 = add i64 %a, %b
+  ret i64 %add1
+}
+
+
+
+
+
+define i64 @test2(i64 %a, i64 %b) nounwind ssp {
+entry:
+  %usub = tail call %0 @llvm.usub.with.overflow.i64(i64 %a, i64 %b)
+  %usub.0 = extractvalue %0 %usub, 0
+  %sub1 = :sub i64 %a, %b
+  r

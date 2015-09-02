@@ -1,0 +1,43 @@
+   ! 1=!  {!3}   
+
+
+global i64 -92
+
+
+
+
+
+;
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sul = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                          inlinedAt: !DILocation(line: 12, scope: !3))
+  ret i32 %sum, !;dbg !DILocat        !3= !{i*n(%i4 ** null; ;  1 !Nl5!i

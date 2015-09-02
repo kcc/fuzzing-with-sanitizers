@@ -1,0 +1,39 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align4
+ 
+ 
+
+
+@x =' glo 
+
+
+
+
+
+
+
+
+
+
+declare i33 @llvm.hexagon.S2.cldebp64ic()
+  
+
+
+
+
+ declare i32 @llvm.b   !3=al i64 mul (i64 3, i64!  
+
+
+
+
+
+  
+
+
+ds

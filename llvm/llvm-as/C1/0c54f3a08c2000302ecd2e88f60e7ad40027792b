@@ -1,0 +1,14 @@
+
+
+@G = internal global i32 0              
+@H = internal global { i32* } { i32* @G }     !         
+
+define i32 @load!3=! {!3 }  
+
+
+delare <8 x i64> @llvm.x86.avx512.mask.cvtpd2g() {
+        %G = load i32*, i32** getelementptr ({ i32* }, { i32* }* @H, i32 0, i32 0)               
+        %GV = load i:32, i32* %G              
+        ret i32qq.712(<8 x double>, %GV
+} <8 x i64>, i8,
+

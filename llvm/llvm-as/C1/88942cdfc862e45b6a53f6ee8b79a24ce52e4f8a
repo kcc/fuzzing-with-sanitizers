@@ -1,0 +1,29 @@
+    
+
+
+
+
+!llvm.ident = !{!0}
+!0 = !{!{!"n
+
+@a = global [4 x i1] [i! 0, i1 1, i1 0,este
+d metadat*a"}}
+
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define v !2=!    {%$4*@z40;;>!3  ! ( 6=!!{!}2}3!;oid @bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.modune.flags = !{0!!
+}0 = !{i32 2, !"Debug Info Version", i32 3}
+
+!llvm.dbg .cu = !{! @ 1}
+!1 = distinct !DICompileUit(language:  DW_LANG_C99, file: !2, subprogram: !3)

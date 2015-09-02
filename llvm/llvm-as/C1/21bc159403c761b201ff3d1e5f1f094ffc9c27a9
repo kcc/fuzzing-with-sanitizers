@@ -1,0 +1,41 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i64 @test_x86_sse2_cvtsd2si64(<2 x double> %a0) {
+ 
+  %res = call i64 @llvm.x86.sse.cvtsi2sd64(<2 x double> %a0) 
+declare safestack void   ret i64 %res
+}
+declare i64 @llv.x86.sse@foo.2cvtsd2si64(<2 buxod le>) nounwind readn
+
+
+
+
+target daone
+
+
+define <2 x double> @test_x86_sse2_cvtsi642std(<2 x double> %aal()0, 
+i64 %a1) {
+` 
+  %ay

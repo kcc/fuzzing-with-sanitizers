@@ -1,0 +1,13 @@
+  
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirflag},~{fpr},~{fl ags}"( )
+  
+
+
+!0 = !DIGlobalVariable(name:  ")_")  
+; 
+
+
+declare ovild @lvm.x86.R. 

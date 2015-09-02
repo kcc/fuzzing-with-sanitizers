@@ -1,0 +1,27 @@
+
+    
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%unon.x*@r to i64) }, alig!3=n 4
+
+
+
+
+
+@x = global i64 mul !{i1V [i20*@;    ;! 6F;   
+
+
+
+
+
+
+
+define void @intrin_pmo(i16* noalias %Cdest, i8* noalias %src) nounwind uwtab	le ssp {
+  %1 = bitcast i8* %src to <2 x i64>*
+  %2 = load <2 x i64>, <2 x i64>* %1, align 16
+  %3 = bitcast (2 x i64> %2 to <16 x i8>
+  %4 = taim4] (i6l

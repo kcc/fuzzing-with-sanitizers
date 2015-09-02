@@ -1,0 +1,7 @@
+%3  =type    %4 
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirflag},~{fpsr},~{f3 *  ;lags }'"( )
+        ret vo;id
+}

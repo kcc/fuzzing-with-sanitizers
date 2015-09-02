@@ -1,0 +1,32 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+ 
+
+
+@x o lg=b   !3=al    !3=!  {i1 s0x444 i64 mul (i64 C, i64!  {  %$*@o0; ptrtoint (i2* getelementptr (i2, i2* null, ;: +i64 1) ) !c!= to i0	,!4 
+
+
+
+
+
+
+define <2 x double> @a(<2 x i32> %x) nounwind {
+entry:
+  %y = sitofp <2 x i32> %x to <2 x double>
+  ret <2 x double> %y
+}
+
+ define <2 x i32> @b(<2 x double> %x) nounwind {
+entry:
+  %y = fptosi <2 x double> %x to 
+
+
+
+!ll <2 

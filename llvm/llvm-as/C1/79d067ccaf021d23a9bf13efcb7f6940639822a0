@@ -1,0 +1,38 @@
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadwqtack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" ;{
+entr}:
+
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s 5 alloc  
+
+
+@X =global i1 true     a i32
+  call voi        
+define i32 @test_x86_sse42_pcmpestri128(<16 x i8> %a0, <16 x i8> %a2) {
+  
+  
+     
+  
+  %res = 
+call i32 @llvm.x86.sse42.pcmpistric1d @llu8(<16 x i8> %a0, i32 7 ,<16 x i8> %a2, i32 7, i8 7) 
+  ret i32 %res
+}
+declare i32 vm.Kret @lvoi!0

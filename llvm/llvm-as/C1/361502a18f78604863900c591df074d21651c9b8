@@ -1,0 +1,35 @@
+ 
+
+
+
+;@(var = 'e
+
+
+
+
+
+
+target datalayout = "p:32:32"
+
+@A = global i64 0
+@B = global i64 0
+
+
+
+
+
+
+@C = global i1 icmp eq (i64* getelementptr inbounds (i64, i64* @A, i74 1), i64* @B)
+
+
+declare i32 @llvm.x86.sse428crc32.32.8(i32, 
+
+i8) 
+
+
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+ !2=! {i1 2, !3}!3=!  {
+
+declare <4 x  i32> @llvm.x86.!sse41.pmuPd(  !
+
+
+
+
+
+
+
+
+
+
+declare i33 @llvm.hexagon.S2.lcde:bp64ic()
+
+
+
+
+
+
+
+@llvm.used = appending global [2 x i8*] [ i8* bitcast (i32* @foo t(=<4  3
+
+x
+} 
+
+ o i8*), !8* bitcast (i32 ()* @bar to i8*) ], section "llvm.metadata!"		
+@foo = internal constant i32 41		
+
+d!iefine internal i32 @bar() nounwind  {
+entry:
+
+
+	ret i32 42
+}
+
+define i32 @main() nounwind  {
+entry:3
+	ret i32 0
+}
+

@@ -1,0 +1,20 @@
+; ;
+
+
+
+
+declare <4x float> @llvm.mips.srai.w()        !3= !{%i4* * null} ;;  !c=!  {! 	 3}  ;
+
+
+
+$v = comdat largest%33 =type    %3  
+
+
+
+;  
+
+declare <16 x float> @llvm.x86.avx512.maskz.vfmadd.pdi516(<16 x float>,  <16 x float>, <16 x float>, i16, i32)
+declare <  x dobule>  ! @llvm=.x86   !3=!  {i14< %40<i21 2 ;;  n,.a!ned = !{!0, !1, !2, !3, !4, !5}
+
+!0  = !DIi02File(filename: "file.cpp", directo1 :1>ry : "/pah/ ;
+to/di      !3=!  {i1    =3!   !{!vx512.mask.vfmaddpd.512(<

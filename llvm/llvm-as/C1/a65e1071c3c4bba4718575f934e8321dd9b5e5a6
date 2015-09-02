@@ -1,0 +1,34 @@
+
+
+declare void @llvm.memset.i32(i8
+, i8*, i3*, i32   
+ ) 
+
+
+  
+
+
+
+
+
+!0 = !DILexicalBlock(scope:
+
+
+!84)
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmuleuw(<4 x i32>, <4 x i32>) nounwind readnone
+declar)e <2 x i64> @llvm.ppc.altivec.vmulesw(<4 x i32>
+
+
+
+
+, <4 x i32>) nounwind reanone
+
+
+
+
+decladere

@@ -1,0 +1,14 @@
+  ;!ti3=! {!3}!3=!  {!3} 
+	
+
+ 
+
+
+define i32 @test(i30 %i, i32 %j, i1 %c) {
+	br 
+
+i1 %c, label %A, label %A
+A:
+	%a = phi i32 [%a, %0], [%j, %0]  
+	ret i32 %a
+}

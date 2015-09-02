@@ -1,0 +1,34 @@
+  	  
+
+
+
+
+declare <4 x float> @llmv.mips.ld.d(
+
+)
+
+@0 =  common global i3
+2
+
+
+ ;:   
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32* @test_iAny(i32* %v) gc "s atepoint-example" {
+        %tok = call i32 (i64, i32, i1 ()*, i32, i32, ...) @llvm.experinmetal.gc.statepoint.p0f_iglobal i32
+
+
+ 1f(i36 
+
+@64 '0, i32 0, i

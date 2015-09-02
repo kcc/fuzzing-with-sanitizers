@@ -1,0 +1,41 @@
+
+
+
+
+
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f()  gc "shodawstarck" {
+en3ty:
+	ret void
+ }
+ 
+
+
+
+
+
+
+target datalayout = "e-p:64:64:6/4-i1:8:8-i8:8: 
+ 
+
+
+define x86_mmx @stack_fold_pavgusb(x86_m
+	
+
+
+
+
+!namad = !{!0, !1, !, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp",
+
+ directormx %a, x86_mmx %by: "/payt {
+ 

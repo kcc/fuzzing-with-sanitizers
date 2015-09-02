@@ -1,0 +1,58 @@
+         
+
+
+define i60 @test1() {
+   ret i60 fptoui(float 0xC00D9999A0000000 to i60)
+}
+
+define float @test2() {
+  ret float uitofp(i64-17 to float)
+}
+
+define 
+
+declare voii)4 @test3() {
+  ret i64 bitcast (double 0x400921FB4D12D84A to i
+
+
+
+
+
+
+
+
+
+
+
+
+define <2 x double> @sitofp_2i64_to_2f664)
+
+
+define doub !3= !{4(<%m4*2 x i64> %a) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  %cvt = sitofp <2 xd @llvm.gcrent(i8*)*, i8  *) $ i64> %a to 2 x double>
+  ret 
+<2 x do uble> %cvt
+}
+
+define < x2 double> @sitofp_2  * nulle @l

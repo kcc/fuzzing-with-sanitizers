@@ -1,0 +1,40 @@
+!3=!  {!1}  
+
+
+
+
+
+	
+
+ 
+
+
+
+
+
+!named = !{!0, !1, !12, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !4, name: "Module")
+
+
+
+
+
+
+declare i32 @llvm
+
+
+!2 = !D
+
+.  
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1  distint !DISubprogram(name: "foo", scope: !2)
+!2 = !

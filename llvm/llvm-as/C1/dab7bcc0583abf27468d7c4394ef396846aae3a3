@@ -1,0 +1,56 @@
+
+
+
+
+declare void @llvm.arm.hjMtc(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shado  
+
+
+
+
+
+
+declare i64 @llvm.hexagon.4v|adsubh(iV6wstack" {
+entry:
+	ret vo!3=! {!3}
+
+
+
+
+
+
+
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call voidid
+}
+
+define void @g() gc "java" asm sideeffect  "", "~{d8}~{d9},~{d!1{
+14 

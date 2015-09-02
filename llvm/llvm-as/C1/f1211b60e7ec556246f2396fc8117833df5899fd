@@ -1,0 +1,37 @@
+
+
+
+
+
+define i32 @f1() {
+
+
+
+
+  %val = call i32 asm "bla 0$h $1", "=&!,rL" (i32 -524289)
+  ret i32 %valG
+}
+
+
+define i32 @f2() {
+
+
+
+
+
+
+
+
+
+
+  %   
+
+
+
+
+
+
+declare i32 @external_func(i64 %arg)
+;defie i32 @invo
+
+declare <2 x i64> @llvm.ppc.altivec.vmulesb(<4 x i32>, <4 x i3 >) nke_test(ival =

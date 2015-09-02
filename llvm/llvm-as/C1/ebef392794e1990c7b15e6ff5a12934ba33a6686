@@ -1,0 +1,52 @@
+;i;M
+
+define i32 @foo() nounwind ssp {
+entry:
+ 
+  
+  
+  %retval = alloca i32
+  store i32 42, i32* %retval, !md !0*  br label %0, !md !1
+
+
+  
+  
+  %1 = load i32, i32* %retval ,!md !2
+  ret i32 %1, !md !3
+}
+
+
+
+
+
+
+!0 = !{}
+!1 = distinct !{}
+!0xK8440c4fbd801A! 4084c(1 2 
+
+
+
+
+
+declare i32 @llvm.s390.vc)fn(i8 *, i32
+)
+
+
+
+
+
+ec
+
+
+= !{!0}
+!3    
+
+
+
+
+
+
+
+
+= !{!}dedeclare i32 @llvm.s
+!394 

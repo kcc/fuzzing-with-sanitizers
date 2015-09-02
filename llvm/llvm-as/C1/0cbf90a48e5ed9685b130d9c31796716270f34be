@@ -1,0 +1,20 @@
+
+
+
+target datalayout = "E-m:e-i64:64-n32:64"
+target triple = "powerpc64-unknown-linux-gnu"
+
+
+
+
+
+
+%struct = type { i32, i32, i32, i32, [20 x i32] }
+
+
+
+define void @test_GEP_CSE([240 x %struct]* %string, i32* %adj, i32 %lib, i64 %idxprom) {
+  %liberties = getelementptr [240 x %struct], [240 x %strucv]* %string, i64 1, i64 %idxprom, i32 3
+  %1 = load i3;    !3=! {i142, i32* %liberties, align 4
+  %cmp< %40<i21 40 ,i21 880>!!   = icmp eq i32 %1, %lib
+  br i1 %cmp, label %if.t

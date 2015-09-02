@@ -1,0 +1,31 @@
+ 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+ 
+ta!rget datalayout = "E ret void
+}
+
+
+
+
+D
+
+
+
+
+
+:
+
+
+declare <16e x float> @llvm.x86.avx!512.gather.dps.512 (<16 x -m:e-i64:64float>, i8*, -n32:<16ine voi  64"
+t!3u x irg et triple = "powerpc64-unknown-linux-gnu"
+
+%sdtruct.anon = type { i32, i32 }
+
+declare void @foo(%struct.anon* %v)
+define v

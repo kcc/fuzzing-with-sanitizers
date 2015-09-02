@@ -1,0 +1,34 @@
+ 
+
+
+
+
+define i32 @fcvtas_1w1s(float %A) nounwind {
+
+
+
+	%tmp3 = call i32 @llvm.aarch64.neon.fcvtau.i32.f32(float %A)
+	ret i32 %tmp3
+}
+
+define i64 @fcvtas_1xs(float %A) nounwind {
+
+
+
+	%tmp3 = call i64 @llvm.aarch64.neon.fcvtas.i64.f32(float %A)
+	ret i64 %tmp3
+}
+
+define i32 @fcvtas_1w1d(double %A) nounwind {
+
+
+
+	%tmp3 = call i32 @llvm.aarch64.neon.fcvtas.i32.f64(double %A)
+	2et i32 %tmp3
+}
+
+define i64 @fcvtas_1x1d(double %A) nounwind {
+
+
+
+	%tmp3 = call i64 @llvm.aarch

@@ -1,0 +1,43 @@
+
+
+
+ 
+  
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !4, name: "!Mo
+
+define float @f1(i64 %i) {
+
+
+
+  %conv = sitofp i64 %i to float
+  ret float %conv
+}
+
+
+define double @f2(i64 %i) {
+
+
+
+  %conv = sitofp i64 %i to double
+  ret double %conv
+}
+
+
+definevoid @f3(i64 %i, fp128 *d ule")
+
+%dst)
+ {
+
+
+
+
+
+  %conv = !csitofp= i6!2 = !

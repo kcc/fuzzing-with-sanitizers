@@ -1,0 +1,37 @@
+
+
+
+
+declare void @llvm.arm.hjt(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+defi
+
+
+
+
+define void @test(<4 x float>* %x, <4 x float>* %y, i32* %P) {
+entry:
+	%tmp = load <4 xne voi float>, <4 x flod @g() gc "java" {
+entry:
+at>* %x		
+	%tmp2 = load <4 x float>, <4 x float>* %y		
+	%tmp.upgrd.1 = call i32 @llvm.ppc.altivec.vcmpbfp.p( i32 	ret vo1, <4 x float> %tmp, <4 x id
+}float> %tmp2 )		
+	%tmp4 = load <4 x float>
+, <4 x float>* %x		
+	

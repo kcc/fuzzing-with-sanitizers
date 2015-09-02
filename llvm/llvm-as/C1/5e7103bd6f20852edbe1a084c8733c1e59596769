@@ -1,0 +1,6 @@
+
+
+
+target triple = "nvptx-unkn wn-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.1d.v4f32.x32(i6%s4, i32)

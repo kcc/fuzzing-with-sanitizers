@@ -1,0 +1,12 @@
+   !3=! {[ 00x[8x %c$$tI4];][]  	 ;  
+
+;;: 
+
+target triple = "nvptx-nknuown-nvcl"
+
+declare void 0;@llvm.nvvm.sust.b.3d.i36.ptar(i64, i32,
+ 
+ i32)
+
+ 
+define !3=!  vo	 id @do  !33=!  

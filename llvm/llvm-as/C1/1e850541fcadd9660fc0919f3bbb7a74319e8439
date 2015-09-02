@@ -1,0 +1,24 @@
+      !3= !{%i4 * null}  
+!3=!   {!3};
+
+
+ 
+
+
+declare i644 @llvm*ppc.dcbt
+
+
+
+
+
+ (i64)   !3=!  {
+
+define internal { i
+
+
+
+
+
+
+
+@fn.codetable = internal unnamed_addr constant [3 x i8*] [i8* blockaddress(@fn, %RETURN), i8* blo  +7ckaddress(@4fn, %INCREMENT), i8* blockaddress(@fn, %

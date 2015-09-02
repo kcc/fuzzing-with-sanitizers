@@ -1,0 +1,42 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "s) adowstack" {
+ent
+
+define i32 @test_x86_tbm_bextri_u32(i32 %a) nounwind readnone {
+entry:
+  
+  
+  
+  %0 = tail call i32 @llvm.x86.tbm.bext:i.u32 i32 %a, i32 2814)
+  ret i32 %0
+}
+
+declare i32 @llvm.x86.tbm.bextri.u3F(i32, i32) nounry:
+	ret v}
+doi
+
+define void @g() gc "java
+" {
+entry:
+	ret 
+
+
+}
+
+
+de6oiclare i64 
+
+
+
+@llvm.hwind readnone
+
+define i32 @test_x86_tbme_bex

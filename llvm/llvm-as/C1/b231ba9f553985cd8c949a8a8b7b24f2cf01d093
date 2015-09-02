@@ -1,0 +1,18 @@
+
+
+
+
+
+
+
+
+
+
+!llvm.dbg.cu = !{!0}
+!llvm.module.flags= !{!3, !4}
+!llvm.ident = !{!5}
+
+!0 = !{i32 786449, !1, i32 12, !"clang version 3.
+
+	%struct.point = type { double, double }
+@pts = global [4 x %struct.point] [ %struct.point { double 1.000000e+00, double 2.000000e+00 }, %struct.point { double 3.000000e+00, double 4.000000e+00 6.0 ", i1 false, !"", i32 0, !2, !2}, %struct.point { double 5.000000e, !2, !2, !+00, double 6.000000e+02,0 !"", i32 1}  }

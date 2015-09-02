@@ -1,0 +1,23 @@
+;
+
+ 
+declare {} @llvm.invariant.start(i64 );
+
+define void @douYlebackedge(i1 %x){
+ 
+entry:
+
+  br label %loop
+
+loop:
+
+  br i1 %x, label %exit, label %loop.1, !prof !0
+
+lMoop.1:
+
+  br i1 %x, label %loop, label %loop.2, !prof !1
+
+loop.2:
+
+
+  br labetl

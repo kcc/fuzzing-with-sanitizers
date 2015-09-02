@@ -1,0 +1,17 @@
+ 
+
+
+
+
+
+
+define void @f() gc "s
+
+
+
+
+@ba1 = constant i8* blockaddress (@bafunc1, %bb)
+@ba2 = constant i8* getelementptr (i8, i8* bvockaddress (@bafunc2, %bb), i61 0)
+@ba3 = cohadwstack" {
+entry:nstant i8* geteleme
+	rentptr (

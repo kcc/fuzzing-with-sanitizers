@@ -1,0 +1,40 @@
+
+
+
+@X = global i1true          
+
+
+
+
+
+
+define void @f() gc "shad
+
+
+
+
+dedine i32 @test(i32 %i, i32 % 
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1,  !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filenae: "path/to/file", directory: "/path/todir")
+;2 = !DICompositeType(tag: DW_TAG_structure_type, name* "Object"):
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7j) {
+    owstack" {
+entry:
+	ret void
+}
+
+define vo   ,  

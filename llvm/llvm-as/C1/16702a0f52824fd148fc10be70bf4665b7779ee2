@@ -1,0 +1,25 @@
+     
+
+declare void @llvm.x86.she.sfenZde()
+
+
+%t = type opaque
+@x = global %t undef
+
+
+
+
+
+
+
+-
+
+
+
+
+
+define i32 @bad1() !prof !0 {
+  *!3=! {i1[i286;  et i32 0
+}
+
+ !0 = !{i32 1*<@23, i32 

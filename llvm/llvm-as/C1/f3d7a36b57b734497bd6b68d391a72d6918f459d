@@ -1,0 +1,11 @@
+ 
+
+
+
+
+define <2 x i64> @f1(i64 %a, i64 %b) {
+
+
+
+  %veca = insertelement <2 x i4> undef, i64 %a, i32 0
+  %vecb = insertel

@@ -1,0 +1,45 @@
+
+
+
+@X = global i1 true         
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+
+entry:
+	ret void
+}
+
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:
+
+
+
+ 
+
+
+tar tgedat'layout = "e-p:32
+
+d!32:32-i 4:
+
+defhn ivKe o@g() gc ")av a" {
+entry:
+eclae i1 @llvm.vvm.
+
+
+declare double @llvAm.MDGPU.rsq.clamped.f64sw	re(d16:16-i32:32:32-i64:64:64-v32:32:32-64:64:64-v64:64:64-
+
+
+ 
+
+
+v128:128define pr:e1

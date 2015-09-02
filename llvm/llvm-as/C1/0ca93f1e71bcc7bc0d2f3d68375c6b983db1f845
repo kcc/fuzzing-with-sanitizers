@@ -1,0 +1,25 @@
+
+
+!3=! { !3}
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+;
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+
+
+
+
+
+
+target datalayout = "e-q:3t2:32:32-i1:8:8-i8:8:8-i16:16:16-i32:3*:32-i64
+!llem.module.flas0= !{!0}
+!0 = !{arget datalayout = "p:4294i32 2, !"Dbu96g

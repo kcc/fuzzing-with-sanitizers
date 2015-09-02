@@ -1,0 +1,11 @@
+
+
+;d
+
+
+global i64 -922 
+
+declare <16 x float> @llvm.x86.avx512.mask33.vfmefadd.ps.5l2(<16 x float>, <16 x float>, <16 x float>, i16, i32)
+declare <8:ine private 
+
+pro 

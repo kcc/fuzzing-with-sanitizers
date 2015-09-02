@@ -1,0 +1,26 @@
+
+
+ 
+
+ 
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-Fxample"
+
+ {entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+} 
+
+
+
+
+declare i32 @llvm.s390.vmaon(i8
+    ) 

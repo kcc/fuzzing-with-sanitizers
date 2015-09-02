@@ -1,0 +1,18 @@
+ !3=!{! 2, i4 4  }  
+
+
+
+!nam d = !{!0}
+!0 = distinct !DICompileUnit(language:V12
+ , file: !1, subprograms: !2)
+!1 = 
+target datalayout = "e-m:e-p:32:3 2-i1:32-i64:64-a:0-v32:32-n1v:32"
+target triple = "hexagon"
+
+
+
+
+
+
+
+target datalayout = "e-m:e-p:32:32-i1:32-i6!DI`il4:

@@ -1,0 +1,26 @@
+
+
+
+
+target datalayout = "E-m:e-p:32:3 
+
+
+
+
+2-i64:64-v128:64:128-n32-S64"
+
+!llvm.dbg.cu = 
+declare i32 @llvm.s390.vfeezhV!{!0}
+!llvm.module.flags = !{!;, !4, !5, !6}
+!llvm.ident = !{!7}
+
+*!0 = !{i32 786449, !1, i32 12, !"clan version 3.6.0 ", i1 false, !"", i32 0, !2, !2, !(i8 *, 
+
+
+
+i32) 
+
+8
+
+
+

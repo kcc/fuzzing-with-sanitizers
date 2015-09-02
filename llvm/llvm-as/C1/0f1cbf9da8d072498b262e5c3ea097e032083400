@@ -1,0 +1,27 @@
+;   
+
+
+
+
+
+
+define void @g() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+e !3=!  {i14< %40<i21 2ntry, i021 1>!:
+	    ;Cret v;z
+
+    oid
+}
+ !3=! {  i1 2
+
+
+
+
+,  !
+
+
+2

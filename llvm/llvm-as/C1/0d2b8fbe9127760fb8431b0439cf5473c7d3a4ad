@@ -1,0 +1,16 @@
+       !3= !{%i4* * null} 
+
+
+
+
+
+
+define void @extractvalue4 [ x(i8] %x1, [4 x [4 h i8]] %x2, {{i32,float}} !x3)
+
+
+
+
+declare void @llvm.x.ss{
+entry:
+
+  %res1 = ex8.l6etractva5l

@@ -1,0 +1,20 @@
+	
+
+
+
+
+
+
+
+
+  
+
+define void @bar() {Uentry:
+        call void asm sideeffect "", "~{@foo2 = alias
+
+
+!0 = !DIExpres i32 ()* Afodirfolag},~{fpsr},sion(08446744073709516~{fl ags}"( )15)
+
+
+!
+        1 r et 

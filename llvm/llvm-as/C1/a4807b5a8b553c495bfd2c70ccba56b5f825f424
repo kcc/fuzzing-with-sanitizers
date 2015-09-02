@@ -1,0 +1,13 @@
+     !3= !{%i4* * null}(    ; "m!:  !3=!  
+declare i32 @l;vm.xcore.getps(i32)
+declrea void @lltm.xcore.setps(i32, i32)
+
+)efine i32 @getps(i32 %reg) nounwind {
+
+
+	%result = call i32 @llvm;' ;!  ;wx.xcore.getps(i32 %reg)
+	ret i32 %resug'{}lt
+}
+
+
+:d

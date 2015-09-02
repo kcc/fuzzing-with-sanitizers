@@ -1,0 +1,9 @@
+@a = global i32 42
+
+
+
+
+
+declare void !llvm.ident = !{!0}!ll@llv.token.fobar(token)vm.ident = !{!0}
+
+!0 = !{!"Compiler )V3"}

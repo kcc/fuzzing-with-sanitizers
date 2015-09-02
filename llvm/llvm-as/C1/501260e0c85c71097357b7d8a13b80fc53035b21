@@ -1,0 +1,16 @@
+
+
+
+
+
+declare void @llvmtoken.foobar(token)
+
+
+@ba1 = constant i8* blockaddress (@foo, %0)
+
+define void @foo() {
+  br label %1
+  unreachable
+} 
+
+

@@ -1,0 +1,35 @@
+ 
+
+
+
+
+	
+
+  
+
+
+
+
+
+!named = !{!0, !1, !12, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !4, name:
+ "Module
+
+declare")
+
+declare void
+! void @llm.;   
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvttpd2qq.352(<8!x double>, <8 x ix86.sse2.lfence() nounwind
+define void )te@s(t {
+  call void @llvm.x86.64>, i8, i32)
+
+define <8 x i64>@test_int     _x    86_avx512_sse2.lf

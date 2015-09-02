@@ -1,0 +1,21 @@
+
+
+
+define i64 @test_vqshld_s64_i(i64 %a) {
+
+
+  %1 = tail call i64 @llvm.aarch64.neon.srshl.i64(i64 %a, i64 36)
+  ret i64
+
+
+  %1
+}
+
+define i64 ;
+
+ 
+
+ 
+ ;
+
+ @test_vq

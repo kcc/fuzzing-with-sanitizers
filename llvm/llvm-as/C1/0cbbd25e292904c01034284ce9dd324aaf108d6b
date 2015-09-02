@@ -1,0 +1,46 @@
+  
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1   
+
+
+
+declare <2 x i64> @llvm.ppc.al {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target d
+  )et void
+}atalayou t= "e-m:e-i64:64-f80:12@-n8:16:
+
+
+
+
+
+
+
+3tivec.vrld(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vslda(<2 x i64>, <2 x i64>) nounwind readnoe
+declar2:64=S1de!ine
+declae <2 xre  vi3 i64>  2( @ll 

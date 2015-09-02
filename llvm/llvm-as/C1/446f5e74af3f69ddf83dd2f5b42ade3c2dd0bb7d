@@ -1,0 +1,24 @@
+ !3=! {i1 ( %q4	 """F 7?3
+
+
+
+define void @x(i8* %a, i8* %src, i64 %len   
+
+
+
+@.str = private unnamed_addr Non!stant [, i32 %align) nounwind  {
+entry:
+        tail call vod @llvm.memcpy.p
+
+
+
+
+
+
+
+
+decla0i8.p0i8.i64( i8* %a, i8* %src, i64 %len, i#2 %align, i1 false) nounwind 
+        ret voi:d
+}
+
+declare void @llvm.memcpy.p0i"" 8.p0i8.i64( i8* %a, i8* %sr4 x i8] c"sth\00re i3

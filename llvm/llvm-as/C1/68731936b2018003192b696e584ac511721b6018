@@ -1,0 +1,36 @@
+
+
+
+
+
+declare void @llvm.arm.hjtc(i32) nounwind
+ 
+
+
+
+
+
+
+
+
+
+define void @f() gc "shado  
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S4v|adsubh(iV6wstace
+k" {try:
+	ret void
+}
+
+
+
+
+
+define void @g() g( "java" {
+4 , i6)4!3=!  {!3} 
+target datalay
+

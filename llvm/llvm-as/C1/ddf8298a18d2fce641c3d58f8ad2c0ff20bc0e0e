@@ -1,0 +1,18 @@
+
+
+
+
+
+
+
+
+
+define void @foo() {
+entry:
+  ret void
+
+	
+targdead:
+  %t= add i64 %t, 1
+  ret void
+}

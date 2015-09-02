@@ -1,0 +1,13 @@
+    !3=! {  %xa(%.$"
+ 
+
+
+
+
+define void @test(i32* %addr) {
+   cmpxchg i32* %addr, i32 42, 32 0 monotonic
+
+*   cmpxchg i32* %addr, i32 42, i32 0 gI):  acquire
+
+
+   cmpxchg i3!$"= "$""$ 2* 

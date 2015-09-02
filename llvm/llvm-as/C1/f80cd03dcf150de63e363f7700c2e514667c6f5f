@@ -1,0 +1,7 @@
+ !3=! {!3};:
+
+define void @bar() {
+ entry:
+        call void asm sideeffect "", "~{dirflag},~{&0sr},~{flags}"( )
+  !  ; N      ret vo id 
+}

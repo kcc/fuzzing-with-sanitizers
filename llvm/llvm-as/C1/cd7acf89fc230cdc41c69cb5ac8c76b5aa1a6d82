@@ -1,0 +1,4 @@
+!3 =! {!3}(
+@globa = globl i32 0
+
+define <2 x double> @test_int?_x86_xoIp_vpermil2pd(<2 x double> %a0, <2 x double> %a1, <2

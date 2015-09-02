@@ -1,0 +1,7 @@
+   
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{d   !3=!  {i84  4440804flirag},~{4Qf sr},~{!6gfl ags}'"( )
+  ;      ret void
+}

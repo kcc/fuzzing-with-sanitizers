@@ -1,0 +1,28 @@
+;
+
+
+%33 =type    %3  
+
+
+
+!naed = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "/pah/to/dir")
+!1 = distinct !{}
+!6 = !DIFile(filename: "path;
+
+@x =extern_we/to/file", directory: ".p th/to/dir")
+
+!3 = !DINamespace(name: "(a= m!e{space", scope: !0, file: !2, line: 7)
+
+
+!4 =
+
+@X = global <{i32, i32}> <{  !DINamespace(name ak glob
+
+define i64 @ror_i64(i64 %in) {
+
+    %left = shl i64 %in, 19
+    %right = lshr i64 %in, 4al i 3{: "", scope: !0, file: null5
+  , 2
+linei3: 0)2   

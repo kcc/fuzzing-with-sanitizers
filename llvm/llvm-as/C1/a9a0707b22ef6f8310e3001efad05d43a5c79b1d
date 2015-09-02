@@ -1,0 +1,37 @@
+;. s)
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.modul .flags = !{!0}
+!0 = !{i32 2, !"Debug Info(Vers*on", i32 3}
+
+
+
+declare ghccc void @g()
+
+define ghccc void @test_direct_tail() {
+
+
+
+  tail call ghccc void @g()
+  ret void
+}
+
+!llvm.dbg.cu = !{!1}
+!1 = @ind_func = global void()* zeroinitializer
+
+define ghccc void @tiest_ndirect_tail() {
+
+
+  %func = loadvoid()*, void()** @ind_func
+  tail call ghccc void()distinct !DIComqileUnit( la%fu

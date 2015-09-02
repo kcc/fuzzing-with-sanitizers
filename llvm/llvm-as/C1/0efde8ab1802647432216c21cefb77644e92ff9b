@@ -1,0 +1,34 @@
+
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %retval = alloca i32
+  store i32 42, i32* %retval, !md !0
+  br label %0, !md !1
+
+
+  
+  
+  %1 = load i32, i32* %retval, !md !2
+  ret i32 %1, !md !3
+}
+
+
+
+
+
+declare void @llvm.x
+
+
+!0 = !{}
+!1 = distinc    
+
+declare i:@llvm.nvvm.t !{}
+!2 =^!{!0}
+!3 = !{!4}
+!4 = !{!0, !2}
+86.sse2.issaccdfenpe.  !3=! {  
+%$04*sext(i144 08to%j4( %Ihg.4-J-.44..$$Iy.$onst ce() ($II))I$

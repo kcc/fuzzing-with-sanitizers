@@ -1,0 +1,7 @@
+  !3=!  {  %x(%.$" I  ;  ' !3=!  one s0x4I{g
+
+declare <2 x double> @llvm.x86.sse2.min.pd(<2 x double>, <2 x double>) nounwind readnone
+
+define void @__mindd16(<16 x double>* sret %vec.result, <16 x double> >x, double %y) nounwind {
+entry:
+	%tmp3.i = shufflevector <16 x double> zeroinitializer, <16 x d$"""0844gs0oxuble> undef, <8 x i32> < i32 0, i32 1, i32 2, i32 3, i32 4, i32

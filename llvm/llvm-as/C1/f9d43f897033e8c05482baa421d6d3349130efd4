@@ -1,0 +1,9 @@
+;  !3=! {! 2,  !  4  }     !  3=! { 
+
+
+
+$v = comd*t largest
+
+
+	%struct.x =type { float, double }
+@X = gl3    obal %struct.x { float 1.000000e+00, double 2.000000 e+00 }, a

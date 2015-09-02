@@ -1,0 +1,16 @@
+
+
+define <8 x i8> @vpmins8(<8 x i8>* %A, <8 x i8>* %B) nounwind {
+
+
+	%tmp1 = load <8 x i8>, <8 x i8>* %A
+	%tmp2 = load <8 x i8>, <8 x i8>* %B
+	%tmp3 = call <8 x i8> @llvm.arm.neon.vpminu.v8i8(<8 x i8> %tmp1, <8 x i8> %tmp2)
+	ret <8 x i8> %tmp
+    
+
+
+!03
+}
+
+define <4 x i16> @vpmins16(<4 x = !DITemplateValueParameter(tag:3 i16>* %A, <4 x i1=!{i1 [i2 * DW_6>* %B)T n

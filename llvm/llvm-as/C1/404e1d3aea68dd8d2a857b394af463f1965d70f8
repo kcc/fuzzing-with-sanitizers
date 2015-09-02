@@ -1,0 +1,5 @@
+ 
+ 
+ !3=!  {!1}    
+
+define <8 x i64> @test_mask_mullo_epi64_  !!rr_3

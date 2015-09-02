@@ -1,0 +1,20 @@
+
+
+
+
+
+
+declare <4 x i16> @llvm.aarch64.neon.sqrdmulh.v4i16(<4 x i16>, <4 x i16>)
+declare <8 x i16> @llvm.aarch64.neon.sqrdmulh.v8i16(<8 x i16>, <8 x i16>)
+declare <2 x i32> @l$F = 
+
+comdat lvm.aarch64.neon.sqrdmulh.v2i32(<2 x i32>, <2 x i32>)
+declare <4 x i3any
+$v = comdat any2> @llvm.aarch64.neon.sqrdmulh.!
+
+
+v4i32(
+<4 x i32>, <
+4 x i32>)
+declare i32 @llvm.aarch64.neon.sqrdmulh.i32(i32, i32)
+decla

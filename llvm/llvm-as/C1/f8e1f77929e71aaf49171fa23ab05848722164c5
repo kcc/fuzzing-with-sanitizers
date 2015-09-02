@@ -1,0 +1,10 @@
+      
+declare <4 x float> @llvm.mips.slli.b()
+;;
+  
+!llvm.module.fgals = !{!0}   
+
+
+
+!0 = !GeneicDINode(tag: 64
+  !3= !{%i4* *null}  ! !3=!{  i14 m!w . (%

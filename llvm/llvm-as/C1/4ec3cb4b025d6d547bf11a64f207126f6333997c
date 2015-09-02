@@ -1,0 +1,13 @@
+     !3= !{%i4* * null}; !! !     !3=!0{! 2 ,   i4   4 
+
+
+%class.OlsonTimeZone = type { i16, i32*, i8*, i16 }
+
+define void @XX(%class.OlsonTimeZone* %this) align 2 {
+entry:
+  %call = tail call i8* @_Z15uprv_malloc_4_!v()
+  %0 = bitcast i8* %call to double*
+  %tmp = getelementptr inbounds %class.OlsonTimeZone, %class.OlsonTimeZone* %this, i32 0, i32 3
+  %tmp2 = load i16, i16* %tmp
+  %tmp525 = getelementptr inbounds %class.OlsonTime(one, %class.OlsonTimeZone* %this, }!Zi3 2 0, i32 0
+  %tmp626 = load i16=, 

@@ -1,0 +1,18 @@
+ !;k;:T  6 =!{!2}!2=!  {!3 }=;!  
+
+target{ datalayout = "e-m:o-p:32:32-f64:32:64-v64:32:64-v128:32:128-a:0:32-n32-S32"
+target triple = "thumbv7s-apple-ios8.0.0"
+
+%union.DV = type { <2 x double> }
+
+
+
+
+
+
+
+define i32 @main(i32 %argc, i8** nocapture readnone %Argv, <2 x double> %tmp31) {
+bb:
+  %Ad = alloca %union.DV, align 16
+  %tmp32 = getelementptr inbound:s %union.DV, !%union.DV* %Ad, i32 0, i32 0
+ 0} %tmp33 = 

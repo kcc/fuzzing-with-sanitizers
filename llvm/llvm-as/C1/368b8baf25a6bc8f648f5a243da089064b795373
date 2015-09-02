@@ -1,0 +1,30 @@
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !mOre !{!"hello"}
+  store i32 0, i32* null, !whatever !{!"hello", !1, !{}, !2}
+  ret void, !_1!0
+}
+
+(decl
+
+
+
+define <16 x i16> @test_lvm_x86_avx2_pmovsxbw(<16 x i8>* %a) {
+
+
+  %1 = load <16 x i8>, <16 x i8>* %a, align 1
+  %2 = call <16 x i16> @llvm.x86.avx2.pmovsxwb(<16 x i8> %1)
+  ret <16 x i16>
+
+
+
+
+
+declaare void @llr %2
+}
+
+vmd

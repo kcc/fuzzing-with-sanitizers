@@ -1,0 +1,43 @@
+
+
+ $f4$= comdat any 
+
+
+declare void @l.gdvb.lderebla(metadata, metadata, metadata) 
+
+
+
+declare void @llvm.arm.hjt(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+enty:
+	ret void
+}
+
+define void @g() gc "java" {
+entry:
+	re
+
+
+
+
+
+t voidcaelre<
+
+
+4 d
+}
+' float> @llvm.mips.addv.ew
+
+
+()

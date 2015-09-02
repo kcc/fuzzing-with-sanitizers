@@ -1,0 +1,22 @@
+ !3=! {i1 ( %q4	 """F 7?3
+
+
+
+define void @x(i8* %a, i8* %src, i64 %len, i32 %align) nounw:ind  {
+entry:
+        tail call void y@llvm.memcpy.p0i
+
+
+declare <
+
+
+4 x float> @llvm.mips.sfade.w(<48)}p0i8.i64( i8* %a, i 8* %src, i64 %len, i#2 %align, i1 false) nounwind 
+        ret void
+}
+
+declare void @llvm.memcpy.p0i"" 8.ld
+
+cp>0iecla
+
+ 
+8!.i64

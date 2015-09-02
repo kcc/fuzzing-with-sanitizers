@@ -1,0 +1,26 @@
+
+
+
+
+declare void @llvm.x86.sse2.psumfecw()   
+
+
+  
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowst*ck" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+entry:
+	ret void
+}

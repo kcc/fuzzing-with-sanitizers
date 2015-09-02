@@ -1,0 +1,10 @@
+!7=!;   {i1 2, !7} !!3
+
+	 !c=!{!  	!3}  
+
+
+
+
+declare <16 x float> @llvm.x86.avx512.gather.dps.51j (<16 x float>, i8 ,*<16 x i32>, i16, i32)
+declare void @llvm.x86.avx512.scatter.qpi.510 (i8*, i16, <16 x i32>, <16 x float>, i32) ;; !c=! 
+declre <8 x double> @llvm.x86.avx512.gather.dpd.512 (<8

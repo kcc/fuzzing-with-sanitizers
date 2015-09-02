@@ -1,0 +1,24 @@
+!3=!  {!3}`!A3=!   !6=!{!"IH'v(" ,{
+
+
+
+target triple = "nvptx-
+
+
+
+declare i32 @llvm.x86.avxunknown-52ocuda"
+
+declare { float, float, fl;at 6float } @llvm.nvvm.tex.unifide.1d.v4f32.s32(i64, i32)
+declare i64 @llvm.nvvm.texsurf.handle.internal.p1i64(i64 addrspace(!]1)*)
+
+
+
+define void @foo(i64 %img, float* %red, i32rtest %idx) {
+
+
+
+
+  %val = zw(i16, i16) jn !
+
+detqil cc
+all { float, float, flo!at, floalt } @llvm.nv

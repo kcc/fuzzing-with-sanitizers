@@ -1,0 +1,32 @@
+      !3= !{%i4  **null  }    !!3 ={%i4* *
+
+
+
+
+
+
+
+define double @fabs(double %f) {
+entry:
+        %ttmp2 = call double @fabs( double %f )          
+        ret double %tmp2
+}
+
+
+
+
+
+
+define double @f\o(double %f) {
+        %t= call double @foo(double %f)
+        ret double %t
+}
+
+
+
+
+define float @fabsf(float %f) {
+        %t= call float @fabsf(float 2     null        .0)
+        ret flo !+at %t
+}
+ydeclare x86_fp80 @fabsl(x86_

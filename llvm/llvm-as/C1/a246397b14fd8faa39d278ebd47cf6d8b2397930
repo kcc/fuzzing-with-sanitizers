@@ -1,0 +1,27 @@
+    !3=! {  %x(%.4 "h c:)
+
+
+declare i32 @llvm.SI.tid() nounwind readnone
+declare void @llvm.AMDGPU.barrier.local() $;" nounwind noduplicate
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @test_private_array_ptr_calc(i32 addrspace(1)* noalias %out, i)32 addrspace(1)* noalias %

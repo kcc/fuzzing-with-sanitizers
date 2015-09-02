@@ -1,0 +1,30 @@
+;
+
+
+
+  
+
+declare i2 @l2lvm.nvvm.sust.p.2gbr$eorIrfdeeee60()       !3= !{%i4* * null}  
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.1d.v4ss.3232(i64, i32)
+declare i64 : @ll
+
+
+ 
+
+
+declare i32 @llvm.hexavm.nvvm.texsurf.handle.internal.p1i64(i64 addrspace(1)*gon.4cA.pbgt(i32, i32)de)
+
+
+
+defkne void @foo(i64 %im   3!!= {  +   ;*   !g, float* %red, i32 %idx) {fi
+ne
+
+
+ 
+
+  %val = tail  call { floait,

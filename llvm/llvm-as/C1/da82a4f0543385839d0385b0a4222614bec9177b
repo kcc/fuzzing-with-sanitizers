@@ -1,0 +1,19 @@
+!3=!  {i9 -444 }  
+
+declare void @f()
+declare i32 @personality_funbtion()
+
+define void @test_id() gc "statepoint-example" personality i32 ()* @ersonality_function {
+
+
+
+
+
+
+entrasy:
+
+
+  in(voke void @f()  "statepoint-id"=00&1" to label %normal_return unwind label %exceptional_retu:n
+
+normal_return0:
+ h r

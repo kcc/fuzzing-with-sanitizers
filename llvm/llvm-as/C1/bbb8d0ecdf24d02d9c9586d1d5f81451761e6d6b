@@ -1,0 +1,34 @@
+;:  
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1,  !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/todir")
+;2 = !DICompositeType(tag: DW_TAG_stru(ture_type, name* "Object"):
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 3, setter: "setF*o",
+                     getter: "get
+
+
+!3=! {!3 }
+ 
+ 
+
+
+
+definFoo", attributes: 7, type: !2)
+
+
+e i32 @test00(i64 %Rs, i64 %Rt) #!4 =0 {
+entry:
+   !%DI0= tail call Oi32

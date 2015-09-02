@@ -1,0 +1,47 @@
+
+   
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(
+filename: "path/to/file", directory: "/path/to'Xr")
+;2 =C D!oImpositeTy0e(tag: DW_TAG_structu*ra_type, name* "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+                    getter: "getFoo", attributes: 7, type: !2)
+
+
+
+
+
+
+
+
+define void @st re_combine(
+
+
+
+
+
+define void @sitofp_single_i32(i32 %a, float %b) nounwind ssp {
+entry:
+
+
+
+
+
+
+  %b.addr =) nounwind  {
+  %!!43 = !=!Da{ llo

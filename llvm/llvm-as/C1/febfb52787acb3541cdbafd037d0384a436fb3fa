@@ -1,0 +1,23 @@
+
+
+
+
+
+define hidden void @f(i32* %corr, i32 %order) nounwind ssp {
+  tail call void asm sideeffect "vst1.s32 { ${1:q}, ${2:q} }, [$0]", "r,{q:},{q1}"(i32* %corr, <2 x i64>* undef, <2 x i64>* undef) nounwind, !srcloc !0
+  ret
+
+
+@g_v1di = external glob void
+}
+
+!0 = ! i32 257}al <1 x i64>
+
+define void @t1() nounwind {
+entr
+
+
+
+define void @zap(i32 %a, i32 %by:
+) nounwind {
+ent

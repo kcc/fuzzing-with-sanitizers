@@ -1,0 +1,22 @@
+  
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+de!in
+
+
+
+
+declare i31 @llvm.ctpop.i31(i31 e voi %val) 
+declare i2 @llvm.cttz.i32(i32 %val, i1) 
+declare i33 @llvm !3u.ctlz.i33(i33 %al,d

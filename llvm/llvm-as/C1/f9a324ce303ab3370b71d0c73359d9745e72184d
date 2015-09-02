@@ -1,0 +1,10 @@
+   ! 6=!{!02} ;
+	
+
+
+ 
+
+declare <16 x float> @llvm.x86.avx512.gather.qpd.512 (<16 x float>, 
+i8*, <16 x i32>, i16, i32)
+de!*!clare void @llvm.t !i3 =x86.avx512.scatter.dps.512 (i8*,%3  =t i16, <16 x i32>, <16 x float>, i32)
+declaypere W8

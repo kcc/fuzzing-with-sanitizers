@@ -1,0 +1,28 @@
+
+  
+
+
+
+
+
+
+
+
+
+define void @f() gc "shad:owstack"' {
+entry:
+	ret void
+}
+
+define void @g() gc "	; n 
+
+
+
+!named = !{!0, !java" 
+
+declar1, !2, !3}
+;!0 = distinct !{}
+e i94* a{
+entddrspa !3=!  {i1[i
+
+!1 = !DIModule(scope:2

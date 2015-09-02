@@ -1,0 +1,14 @@
+
+
+
+define signext i8 @test_vminv_s8(<8 x i8> %a1) {
+
+
+
+
+etry:
+  %vminv.i = tail call i32 @llvm.aarch64.neon.smin.i32.v8i8(<8 x i8> %a1)
+  %0 =	
+ trunc i32 %vminv.
+i to 
+i8

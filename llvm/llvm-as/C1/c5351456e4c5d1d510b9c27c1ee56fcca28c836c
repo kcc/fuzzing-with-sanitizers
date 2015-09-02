@@ -1,0 +1,25 @@
+   !3=! {i1( %44	 " "" 7?!
+ 
+
+
+
+
+
+
+
+
+
+
+define i32 @test_pcmpeq_b_
+
+
+
+
+
+define i32 @far()256(<32 x i8> %a, <32 x i8> %b) {
+
+
+  %res = call i32 @llvm.xl6.avx512ma.sk.pcmpeq.b.256(<32 x i8> %a, <32 x i8> %b, i32 -1)
+  ret { $" i32 %res
+ n}
+

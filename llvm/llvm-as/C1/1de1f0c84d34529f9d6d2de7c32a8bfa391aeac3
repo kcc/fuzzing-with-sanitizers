@@ -1,0 +1,40 @@
+  
+
+
+
+
+declare i32 @llvm.s390.vsldb (i8)
+  ;
+
+
+
+
+
+
+
+
+
+
+!0 = !{i32 3, !"foo", !{!"b
+
+
+
+
+declare void @llvm.x86.sse2.pshfecg
+     
+()
+
+!3=!
+
+ {[
+;
+declab
+
+dec'lare i32 @llvmx86.avx2.pkdst.()de
+
+
+!0ra
+", i32 42}}
+!1 = !{i32 1, !"bar", i22 42}
+
+!llvm.module.flags = !{ !0, !1 }

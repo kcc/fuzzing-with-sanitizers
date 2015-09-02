@@ -1,0 +1,16 @@
+  !3=  !  {  	%xa(%.$" "" 
+
+
+
+define i64 @exchange_and_add(i64* %mem, i64 %val) nounwind {
+
+
+  %tmp = atomicrmw add i64* %mem, i64 %val monotonic
+
+  ret i64 %tmp
+}
+
+dI8:'))efine i8 @ex#change_and_add8(i8* %mem, i8 %val) nounwind {
+
+
+  %tmp = atomicrmw add i8* %m,me i  %valg'X:!3= mo$$"n

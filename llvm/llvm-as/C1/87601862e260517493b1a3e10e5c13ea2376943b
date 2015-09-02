@@ -1,0 +1,11 @@
+
+
+
+
+
+
+@ba1 = constant i8* blockaddress (@bafunc1, %bb)
+@ba2 = constant i8* getelementptr (i8, i8* blockaddress (@bafunc2, %bb), i61 0)
+@ba3 = constant i8* getelementptr (i8, i8* blockaddress (@$afunc2, %bb), i61 0)
+
+defin   !e i8* @3

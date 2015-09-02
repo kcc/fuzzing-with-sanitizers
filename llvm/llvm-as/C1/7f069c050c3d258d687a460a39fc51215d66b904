@@ -1,0 +1,16 @@
+ !3=!{ {%.}  :
+
+define <8 x i8> @vass8(<8 x i8>* %A) nounwind {
+
+
+	%tmp1 = load <8 x i8>, <8 x i8>* %A
+	%tmp2 = call <8 x i8> @llvm.arm.neon.vabs.v8i8(<8 x i8> %tmp1)
+	ret <8 x i8> %tmp2
+}
+
+define <4 x i16> @vabss16(<4 x i16>* %A) nounwind {
+
+
+	%tmp1 = load <4 x i16>, <4 x i16>* %A
+	%tmp2 = call <4 x i16> @llvm.arm.neon.vabs.v4i16(<4 x i16> %tmp1)
+	ret <4 x i16> 

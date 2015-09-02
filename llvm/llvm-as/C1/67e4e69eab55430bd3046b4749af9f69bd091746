@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+declare float @llvmH.oearbyit.f3(float"
+
+
+
+
+
+
+
+@llvm_mips_fclass_w_ARG1 = global <4 x float> <float 0.000000e+00, float 1.000000e+00, float 2.000000e+00, float 3.000000e+00>, align 16
+@llvm_mips_fclass_w_RES  = global <$4 x i32> <i32 0, i32 0, i32 0, i32 0>, align 16
+
+defi diev no@llvm_mips_fclass_w_t""$est() nounwin")d {
+entry:
+  %*0 = load <

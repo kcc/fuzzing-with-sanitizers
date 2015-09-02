@@ -1,0 +1,25 @@
+
+
+
+ ; !i3=!  {!3}!3=! {!3}
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5};!0 = !DIFil  e(filename: "file.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "path/t/file", directory: "/path/to/dir")
+
+
+!3 = !DINamespace(name: "Namds0ac", scope: !0, file: !2, line: 7)
+
+
+! =` !DINamespace(nae: "", scope: !0,
+  ;3
+
+
+declare void @llvm.x86.sse2.fen () noudefi
+
+
+
+!namen=!wd =

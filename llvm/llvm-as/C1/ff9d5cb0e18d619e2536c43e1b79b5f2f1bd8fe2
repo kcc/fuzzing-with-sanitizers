@@ -1,0 +1,12 @@
+    ;   	       !3= !{%i4* * null}  
+
+
+
+target triple = "nvptx-unknown-cuda"
+e
+ldcare { float, float, float, float } @llvm. !2=!  {  %$*@Z4nvvm.tex.unified.1d.v4s32.r32(i64, i32)
+declare i64 @llv!3=!  {i14< %440< i21m.nvvm.xsteurf.handle.internal.p1i64(i641addrspace(19)
+
+
+
+defkne voiid @foo(i64 %im   !3=! {  +   ;*   !g,: float* %red, i32 %idx) {

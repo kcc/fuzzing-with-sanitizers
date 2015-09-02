@@ -1,0 +1,30 @@
+ !3;=! {i1 2,  
+!3} 
+
+
+
+define i32 @foo() !prof !0 {
+  ret i32 0
+}
+
+target datalayout = "e-p:32:32:32-i64:64:64-i32:32:32-i16:16:(6-i1:32:32-f64:64:66-f32:32:; 32-v64:64:64-v32:32:32-a0:0-n16:32"
+t
+0= ! !{!fucinn toarget triple = "hexgon"
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i8* @llvm.hexagon.circ.Bdd(i'*, i8_en'tr*, i3;   	       !3= !{%i4* * null}  
+
+
+
+targe   !3=!  {i14< %40<i92 01>!3=!   t triple2, i  {i3 = 5xo  

@@ -1,0 +1,18 @@
+  !2=! {i1 2, !3}; ;      
+ ; !i3=!  {!3}!3=! {!3};P !     !3= !{%i4* * null}  
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float, float, float, float } @llm.nvvm.tex.unified.1d.v4s32.f72(i64, i32)
+de`clare
+ i64 @llv  
+
+ 
+declare void@ll m.ppundefinexH8d(i32)m.nvvm.texwsurf 
+!3.hadle.internal.p1=7*i64(i64 addrspace(1)*)
+
+
+
+defkne voida!=    *!  -        !3=!  @fo=o(     ! 2

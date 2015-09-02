@@ -1,0 +1,12 @@
+
+
+
+
+
+declare void @foo()
+
+define void @test1() gc "
+
+$2"s
+
+t

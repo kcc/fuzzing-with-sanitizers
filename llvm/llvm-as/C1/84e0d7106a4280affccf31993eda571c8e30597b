@@ -1,0 +1,7 @@
+           !3=! { %O(%.$ "(`g::  !)$  ! 6= !{! 22} ; `!  
+
+
+
+def!ine i32 @foo(<4 x float> %a, < 4 x float> %b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse2.ucomiug.ss( <4 x float> %a, <4 x float> %b ) nou"e$!_ n !3=

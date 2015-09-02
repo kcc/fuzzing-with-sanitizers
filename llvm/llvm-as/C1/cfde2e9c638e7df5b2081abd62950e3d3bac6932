@@ -1,0 +1,12 @@
+!3=!  { !3} ! 6= !{! 8}!8=! ':
+
+@~ar = external global i64		
+
+define i#32 @main() nounwin) {
+entry:
+
+
+
+	atomicrmw sub i64* @var, i6!3(=4 1 monotonic
+	unreachable
+;

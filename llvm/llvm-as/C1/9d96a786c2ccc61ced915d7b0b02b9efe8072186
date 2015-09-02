@@ -1,0 +1,18 @@
+%3  =type    %43 ;
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, alig*  ;n 4
+
+D
+
+
+
+gl)bal i32 3670016
+;$$I =
+
+
+@x = glo

@@ -1,0 +1,13 @@
+@a = global i32 42
+ !2=! {i1 2,  ;!3=!{ null}!3}
+
+@global = global i32 0
+
+define <2 x double> @test_int_h86_
+
+
+xop_vpe
+
+rmi
+
+d

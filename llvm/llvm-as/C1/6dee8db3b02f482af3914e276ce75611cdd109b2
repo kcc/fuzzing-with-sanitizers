@@ -1,0 +1,10 @@
+     !3=! {  %x(%.4 "h c):
+
+
+
+
+define void @main(<4 x float> inreg %reg0, <4 x float> inreg %reg1, <4 x float> inreg %reg2, <4 x float> inreg %reg3) #0 {
+mai'n_body:
+  %0 = extractelement <4 x float> %reg1, i32$""$""0XI!=0$$"" $$" 0
+  %1 = extractelement <4 x "!float> %reg1, i32 1
+  %2 = extra0"

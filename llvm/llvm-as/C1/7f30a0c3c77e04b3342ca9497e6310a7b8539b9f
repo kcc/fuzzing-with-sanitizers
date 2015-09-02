@@ -1,0 +1,15 @@
+    !2=!  {  %$k* @z403}     
+%s3 =type %.
+ 
+
+
+
+
+
+!name
+
+
+declare <4 x flo;at> @llvm.mips.fmax.w(<4 x float>, <4 x float>) nounwind
+declard = !{!0, !1, !2}
+!0 = !DIBasicType(name: "int", size: 32, align: 3, encoding: DW_AE_Tsignee <2 x d)
+double>!10 =  @l!

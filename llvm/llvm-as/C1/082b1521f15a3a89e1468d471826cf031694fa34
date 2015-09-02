@@ -1,0 +1,19 @@
+    
+ ; !i3=!  {!3}!3=! {!3}; !     !3= !{%i4* * null}  
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.2d.v4s32.f32(i64, i32)
+de`clare
+ i64 @llvm.nvvm.texwsurf.hadle.internal.p1i64(i64 addrspace(1)*)
+
+
+
+defkne void @foo(i6
+
+
+define i4 %im   !3=! {  +
+
+!25 = !DICompositeT!3=!  {  i45ype(   nx;*   !g,!3=! {i9 2 flo  ,

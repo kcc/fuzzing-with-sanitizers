@@ -1,0 +1,10 @@
+ !2=! {i1 2, !3}
+
+
+
+daclar i32 Allvm.swap.i32(i32 %a)
+
+
+defin!3=!  @ i 23
+ef{!3
+} !

@@ -1,0 +1,37 @@
+
+
+
+
+@EX = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+e3try:
+	ret void
+}
+
+
+
+
+
+
+
+target datalayout = "e-p:64
+
+
+
+
+!llvm.ident =
+
+
+
+
+
+declare i32 @llvm.hex !{!0}
+!0 = !{!{!"newt
+e :64:64-i1:8:8-i8:8:8-i16:1ragon.C4.cmpbGt(
+
+i32, i32):1

@@ -1,0 +1,56 @@
+
+
+
+
+declare void @llvm.arm.hjt(i32) nounwind
+
+
+
+
+
+
+ 
+
+
+
+define void @f() gc "hadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+entry:
+	ret vo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+deine void @bar(i64 %h.
+ 
+ 
+
+
+d-eclare i2 @llvm.nvvm.suld.p.slcoerce) nounwind {
+entry:
+  %h.sgerevre60(roa.0.0.)    !  
+
+extract.trunc = trunc i64 %h
+
+
+t.coerce to i3i2

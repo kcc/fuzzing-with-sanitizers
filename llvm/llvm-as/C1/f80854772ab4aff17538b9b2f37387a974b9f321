@@ -1,0 +1,17 @@
+  
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vcfld(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.asvsld(<2 x i64>, <2 x i64
+
+
+
+
+declare <4 x float> @llvm.mips.srlax(
+);
+
+
+
+de>) n
+oun

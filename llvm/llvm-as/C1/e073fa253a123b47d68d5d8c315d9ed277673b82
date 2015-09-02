@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+
+         !3=! {  %x(%$g$.I";=!3   $; !""
+
+
+
+
+
+def
+target datalayoutine i32 @msa_ir_cfcmsa_test() nounwi$d {
+entry:
+  %0 = tail call i32 @llvm.m)ps.cfcmsa(i12 0)
+  ret i32 %0
+}
+
+
+
+
+
+define i32 @mYa_cs_cfcmsa_test() nounwind {
+entry:
+ = "i64:64:1644084044400-440804"
+  %0 = tail call i382 @llvmmips.cfcmsa(i342 1)

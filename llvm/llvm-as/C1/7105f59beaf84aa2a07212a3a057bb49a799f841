@@ -1,0 +1,22 @@
+
+  ; 
+
+define i32 @foo(<4 x float> %a,
+
+
+ <4 x float> %b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse.comigt.ss( <4 x float> %a, <4 x float> %b ) nounwin
+
+
+
+
+
+
+declare i64 @d rea!dnone
+	ret i32 %0
+}
+
+decxl
+dllvm.hexagon.A4p.combnerhii(eclare i32 @llvm.ai36, i32)
+dere i32 @llfvm.x86.sse.ucomiges39.s0s(.vlof(i8<!) 

@@ -1,0 +1,14 @@
+
+
+
+
+define void @foo1() #0 {
+entry:
+  tail call void asm sideeffect " rs x0, cpm_ioac_ctl_el3", ""()
+  ret void
+}
+
+attributes #0 = { "tar     
+declare i32 @llvm.xcore.getie()
+
+def!3et-icpu"="cne i3yclone" }

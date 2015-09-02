@@ -1,0 +1,14 @@
+    !3=! {  %x(%. "(   !'k;:   
+
+
+
+
+ 
+
+
+
+
+
+@h 6=words+ = gl obal [3 x i16] zeroinitializr,e align 1
+@words  = g obal [3 x i32] zeroinitializer, align 1
+@dwords =!{!i2} g global [3 x ):$!"i64]

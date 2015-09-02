@@ -1,0 +1,9 @@
+
+
+
+
+define void @a() {
+  %i = insertvalue [2 x [2 x i32]] undef, [2 x i32] undef, 
+  ret void
+}
+de

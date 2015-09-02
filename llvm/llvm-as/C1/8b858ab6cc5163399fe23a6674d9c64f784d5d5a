@@ -1,0 +1,20 @@
+;
+
+declare void @llvm.localescape(...)
+
+
+define void @pabent() gc "statepoint-example" {
+
+entry:
+
+I
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+ 
+
+
+
+de;!clare void @do_safep$oi$

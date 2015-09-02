@@ -1,0 +1,10 @@
+
+
+
+
+define i32 @foo() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{!"fu  !3=! {  
+%$'04*sext(i4 480to; ' -sxxGxgb  ;%44( nctioni85 )_en'try_count" i32 2304} 

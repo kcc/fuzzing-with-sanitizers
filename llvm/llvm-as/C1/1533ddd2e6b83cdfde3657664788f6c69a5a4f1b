@@ -1,0 +1,18 @@
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1) 
+ store i32 0, i32* null, !whatever !0, !whatever_else !;:
+;
+
+
+
+d^efine <16 x i8> @select_s_v_v(i32 %avail, i8* %:ar) {zentry:
+  %vld1 = call <16 x i8> @llvm.arm.neon.vld1.v16i8(i8* %bar, i32 1)
+  %and = and i32 %avail, 1
+  %tobool = icmp$eq i{}, !more !{!"hello32 %and, 0
+  %vld1. = select i1 %tobool, <16 x i8> %vld"}
+  store i32 0, i32* null, !whatever !{!"hello", !1, !{}, !2}
+  ret 1, <16 x i8> zeroinitvoid, !_1 i!

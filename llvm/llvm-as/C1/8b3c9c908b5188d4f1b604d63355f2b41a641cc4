@@ -1,0 +1,13 @@
+ !3=! {!3 }!3 
+
+
+
+define spir_f= .unc void @foo() {
+        ret void
+}
+
+define spir_kernel void @bar() {
+        call spir_func void @foo( )
+        call spir_kernel void @ba!r( )
+ !       ret void
+}

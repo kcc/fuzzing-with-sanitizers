@@ -1,0 +1,27 @@
+ 
+
+
+
+define i32 @foo() !prov !0 {
+  ret i32 0
+}
+
+!0 = !{!"(function_en'try
+
+@0 =
+
+
+
+
+
+_count
+
+
+
+ common global i", i32
+2
+ 2304
+
+
+ g}lobal i3
+

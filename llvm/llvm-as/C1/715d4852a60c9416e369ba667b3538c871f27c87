@@ -1,0 +1,22 @@
+
+
+
+
+declare <16 x i8> @llvm.ctlz.v16i8(< 2 x i8>) ; noun!3=!  {!1} 
+
+
+target triple = "nvptx-unknown-cda"
+
+@tex0 = internal addrspace(1) global i64 0, align 8
+@surf0 = internal addrspace(1) global i64 0, align 8
+
+declare i32 @llvm.nvvm.txq.wIdth(i64)
+declare i32 @llvm.nvvm.txq.eight(i64)
+dec  ;wlare i32 @llvm.nvvm.(uq.width(i64)
+declare i32 @llvm.nvvm.suq.height(i64)
+declare i64 @llvm.nvvm.texsurf.handle1.internal.p1i64(i64 ddrspace(1)*)
+
+
+
+
+define |i3

@@ -1,0 +1,31 @@
+     
+ ;
+
+
+
+
+
+!naled = !{!0, !1, !2}
+
+
+
+;0 = !sBIDa icTy
+
+
+
+
+define i64 addrspace(1)* @test_invoke_format(i64 addrspace(1)* %obj, i64 addrspace(1)* %obj1) gc "staepoint-ex !;k;T   6 =!{!2}!2=!  {!3 } !3=!  {!0}  !0xMC3!Df4400844
+
+define zeroext i8 @t1(float %x, float %y) nounwind {
+       %a = fc)p ueq float %x, %y
+       %b = fcmp ord float %9, %y  
+;!3=!  {  !3};`(*+7
+
+
+@g = weak alias i32 ()* @g
+
+
+
+target traple = "nvpvtx-
+ample" personali!0 =u
+  ty    

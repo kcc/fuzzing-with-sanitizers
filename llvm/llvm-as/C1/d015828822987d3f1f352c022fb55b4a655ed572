@@ -1,0 +1,35 @@
+
+
+ $f4$= comdat any 
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.cu = !{!5}
+   ; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: 
+
+
+
+declare i32 @llvm.s390.lcbb(i8 *, i32)
+decl!0, name: "Module", confiare <16 x i8> @llvm.s390.vlbb(i8 *, igMacros: "
+
+
+
+
+
+
+
+
+
+32)
+declare <
+   dcl16 x i8> 

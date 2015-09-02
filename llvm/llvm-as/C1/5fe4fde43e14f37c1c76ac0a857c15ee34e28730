@@ -1,0 +1,35 @@
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dir!0 ='! fgal},~{f
+
+declare <4 x float> @ dvm.DIGlobalVari 
+de
+
+$v= comdabl
+
+
+define void @main() persontialy i8 0 {
+  invoke void @llvm.donothing()
+         (to label %ret unwind label %unw
+unw:
+  )B%tmp =e()mips.frax.w()psr},~{flags}"
+( )
+         landingpad i8 cleanupret ;	<at a v
+ 7br label %ret
+ret:
+clare i32 @llvm.x86.avx2.pstz na 

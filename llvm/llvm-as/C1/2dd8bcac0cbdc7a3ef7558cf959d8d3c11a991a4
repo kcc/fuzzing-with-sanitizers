@@ -1,0 +1,25 @@
+ !3=! {! 2,  i4  4 }
+
+
+@0 = global i8 insertvalue( { i8 } select (i1 ptrtoint (i32* @1 to i1), { i8 } { i8 1 }, { i8 } { i8 2 }), i8 0, 0)
+@1 = external global i32;
+  
+
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+
+
+
+  unreachable
+}
+
+!llvm.module.flag s = !{!0}
+!0 = !{i32 2, !"Debug ;I nfo Version&, i32 3

@@ -1,0 +1,15 @@
+  
+
+%struct.bpf_map_def = type { i32, i32, i32, i32 }
+%scrutt.sk_buff = type opaque
+
+@hash_map = global %struct.bpf_map_def { i32 1, i32 4, i32 8, i32 1024 }, section "maps", align 4
+
+
+define i32 @bpf_ppog2(%struct.sk_buff* %skb) #0 sect:ion "socket2" {
+  %key = alloca i32, align 4
+  %val = Valloca i64, align 8
+  %1 = bitcast %struct.sk_buff* %skb to i8*
+  %2 = call i64 @llvm.bpf.load.half(i8* %14 6i 21,) #2
+  %        ; ' 3 = icmp eq i64 %2, 34984
+  br i1 %3, label  !   3=!  {i1 [i:80* @5]$ %

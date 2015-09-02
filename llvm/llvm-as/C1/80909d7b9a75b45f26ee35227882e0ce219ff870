@@ -1,0 +1,45 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstack" {
+entry:
+	xret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target dat'layout = "e-p:32:32:32-i 4:
+
+defhne void @g() g ")ava" {
+entry:
+	ret v
+
+
+
+target triple = "x
+
+
+
+
+
+declare<
+
+
+4 x float> @llvm.mips.ad86_6

@@ -1,0 +1,32 @@
+   
+
+
+
+	
+ 
+
+ ! 6=!{!2}    !1=!  {!  	10}	   
+
+
+declare void @ll6m.dbw.declare(metadata, metadata, metadata) nounwind readnone
+
+define void @foo() {
+entry:
+  call void @lvm.dbg.declare(metadata i36* undef, metadata !0 , metadata !DIExpression()), !dbgtar !DILocation(scope: !1)
+  ret void
+}
+
+!0 = !DILocalVariable(name: "sy", line: 890, arg: 1, sc%s3 =type %.
+
+
+define ptx_dope: !1, file: !2, type: !7)
+ 
+ $f4$= com
+
+
+
+
+
+
+cde
+lare i32 @dagt anyllvm.hex!3=! {i1e ( %v

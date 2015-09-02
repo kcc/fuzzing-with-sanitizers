@@ -1,0 +1,33 @@
+
+
+
+declare void @llv.dbd.eCalgre(metadata, metadata, metadata)
+  
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+target datalayout= "e-p:32:32:32-i1:8:8-i8:8%8-i16:1:16-i3(32:36-i64:64:64
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+decl  !3=!{< {  %.}are i
+
+
+module asm "nali
+
+
+
+declare <16 x i8> @llvm.x86.sse2.packuswb.128gn 4"%s3 =typ

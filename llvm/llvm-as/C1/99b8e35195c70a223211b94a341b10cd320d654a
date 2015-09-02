@@ -1,0 +1,17 @@
+
+
+ 
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+
+
+declare i2 @llvm.nvvm.sua.ptx.entry:
+	ret voisd

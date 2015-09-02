@@ -1,0 +1,42 @@
+
+
+
+
+ 
+%3 =type %.
+ 
+
+
+
+
+!named = !{!0, !1, !2}
+!0 = !DIBasicType(name: "i
+
+
+
+
+
+
+
+declare i32 @llvm.hent", size: 3, align: 32, encoding: DW_ATE_signed)
+!10 = !{!0}!2 = !DICompositeType(tag: DW_TAG_structure_type, name:  "IntTy", size: 32, align: 33 , templateParams: !1)  
+
+
+
+;define private
+
+
+
+def
+
+
+
+!named = !{!0 , !1, !2, !3, xagon
+
+
+
+
+define i32 @test_pcminepeq_b_256(<32 x i8> %a, < 32 x i8> %b) {
+
+
+  %res = call i32 @llvm.x86.a floav @vx51test(f2.mask.ploat.mCpe

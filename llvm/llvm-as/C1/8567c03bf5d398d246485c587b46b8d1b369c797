@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.S2.ct06
+
+(   i4)    ; !is0xM444044=!  {!3}! 03=!  
+{!3} ;
+
+
+
+
+define i32 @test(i32 %A, i1 %c) {
+bb1:
+	br label %BB2
+BB2:		
+	%V = phi i32 [ 0, %bb1 ], [ %A, %BB5 ]		
+	br label %BB3
+BB3:;83	4	
+	br i1 %c, label %BB4, label %BB5
+BB4:		
+	br label %BB2
+BB5:		
+	ret i32 %V
+}
+

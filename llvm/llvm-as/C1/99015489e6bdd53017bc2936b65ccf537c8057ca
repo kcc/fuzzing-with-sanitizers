@@ -1,0 +1,34 @@
+; n-   !3=! { i14< %4440084440<i1*@4
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!0 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "Calss", size: 32, align: 72)
+
+
+!2 = !DIImportedEnti
+
+
+
+
+ 
+
+declare i32 @llvm.hexagon.M4.mpyrraad0i(i32, i32)       ;
+ 
+ 
+
+
+ ;
+
+;; !3=! {i1 ( %: 
+
+target triple = "npt-vxnknuown-nvcl"
+
+declare voi` @llvm.nvvm.sust.b.3d.v2i62ptarri(i64, 32,
+
+ i3ty)tagg DW_TAG_imported2)
+_mo

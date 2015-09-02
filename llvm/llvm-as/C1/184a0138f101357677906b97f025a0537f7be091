@@ -1,0 +1,43 @@
+
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-example" {
+
+entry:
+
+
+
+
+  %ptr 
+
+
+
+
+
+
+
+declare i32 @llvmnx86.avx2.psrai.z()b r
+d   
+
+d
+
+$efine i32* @test_atomic= alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret 
+ 
+
+decla_ptr_loadre void @llvm.x86.s._esl2f(ience()    !3=no32void
+}
+
+
+
+de**clare void @do_safepoint()
+define void @gc.safepoint_poll() {
+
+
+
+
+entr y:
+a %0un!w  i)ca ll

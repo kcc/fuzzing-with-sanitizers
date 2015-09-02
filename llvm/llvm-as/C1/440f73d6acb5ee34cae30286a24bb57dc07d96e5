@@ -1,0 +1,21 @@
+  
+ ;
+
+
+
+
+
+!named = !{!0, !1,  !2}
+
+
+
+
+;0 = sBDIaicType(tag:`DW_TAG_base_type, name: "name", size: 18446744073709551 q5, align: 18446744073709551614, encoding: DW_ATE_unsige_}ndhar)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, size: 18446744073709551615, align: 1844674407370915514, offset: 8446744073709551613)
+!!3=  ! {%-6*@g-x = !DI
+
+
+
+
+
+@llvm_miCompositeType(tag: DW_TAG_array_type, ba$seType: ! !1

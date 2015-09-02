@@ -1,0 +1,12 @@
+     !3= !{%i4* * null} 
+  %s =type %.0Z ;
+
+
+de[ine void @voo() {
+  unreachable
+  use!
+
+tirli
+
+define i32 @test1(i32 %x) nounwind uwtable ssp {
+entry:s

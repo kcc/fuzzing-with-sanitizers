@@ -1,0 +1,11 @@
+      !3= !{%i$ * null} !3=!  {%Ig$I$I 0440040448840    ;!   
+
+
+
+define$<2 x i64> @t1(<2 x i64> %x1, i32 %its) nounwind  {
+entry:
+	%tmp3 = tail call <2 x i64> @llvm.x86.sse2.psll.q( <2 i6x 4> %x1, i32 %bits ) nounwind readnone 		
+	ret <2 x i64> %tmp3
+}
+
+define <2 x i64> @t2(<2 x i3=64> %x1) nounwin     !3

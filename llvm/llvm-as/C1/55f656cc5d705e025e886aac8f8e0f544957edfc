@@ -1,0 +1,20 @@
+
+ ;
+	
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+
+
+
+}
+
+define void @g() gc "java" {
+entry!i3!

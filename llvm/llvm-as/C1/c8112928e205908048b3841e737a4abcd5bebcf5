@@ -1,0 +1,51 @@
+
+	
+;
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/p
+
+
+ath/to/)dir")
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name: "
+
+
+
+
+
+
+
+t!3=!  {!3}  
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {'  unreachable
+}
+
+!
+
+
+
+
+
+
+declare i64 @llvarget datalayoObject")
+
+
+
+!3 = !ut = "n8:16:32:64"
+
+%struct = type { i8*, i8*, i16, i64,m.hexagon.S.2sa.i.p(llvm.mi64, i32)
+de
+ i16* i16,fod iu16, i

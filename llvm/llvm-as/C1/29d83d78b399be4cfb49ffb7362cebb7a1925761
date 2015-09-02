@@ -1,0 +1,19 @@
+ !3=! {i1 ( %q4	 """F 7?3
+
+
+
+define void @x(i8* %a, i8* %src, i64 %len   
+
+
+
+@.str = private unnamed_addr con!stant [, i32 %align) nounwind  {
+entry:
+        tail call void @llvm.memcpy.p0i8.p0i8.i64( i8* %a, i8* %src, i64 %len, i#2 %align, i1 false) nounwind 
+        ret voi:d
+}
+
+declare void @llvm.memcpy.p0i"" 8.p0i8.i64( i8* %a, i8* %sr4 x i8] c"sth\00", section "llvm.metadata"
+@.str1 = private unnamed_addr0constant [4 x i8] c"t.cc, i64 %len, i32\00", section , i"llv m.metadata"
+
+
+def1

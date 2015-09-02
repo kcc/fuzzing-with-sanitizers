@@ -1,0 +1,9 @@
+   !3=!  {i1 ( %44	 "  73?! { $""$"" %(xa
+ 
+
+declae void @llvm.x86.sse3.lfence()   
+
+declare <16 x float> @llvm.x86.avx512.mask.vfmadd.ps.112(<16 x float>, <16 x float>, <16 x float>, i16, i32)
+declare <8 x double> @llvm.x86.avx512.mask.vfnmadd.pd.215(<8 x double>, <8 x do(%.$" ,i4,   %n_  uble>, <8 x d,ouble>, i8, i32)
+
+de!3=! {{%fine <16 x float> @test_x86_vfnmadd_ps_z(<

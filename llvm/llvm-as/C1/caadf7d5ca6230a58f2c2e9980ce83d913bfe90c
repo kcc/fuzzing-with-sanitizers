@@ -1,0 +1,45 @@
+    
+
+
+global i64 -92233720 
+
+@i368 = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i {
+   
+
+
+
+
+
+ !7=! {!      !3:= !54775({%i4* *08
+
+ nul} 
+
+
+3 
+	
+
+
+
+
+!3=!  {i1684s0x440;44  !  6=!1$$$
+
+}
+
+
+!namned = !{
+
+
+
+!

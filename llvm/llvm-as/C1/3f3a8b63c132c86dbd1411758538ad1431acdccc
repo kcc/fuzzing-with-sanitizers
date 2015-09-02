@@ -1,0 +1,22 @@
+
+
+
+
+
+@test1 = global [2 x i24] [i24 -1, i24 -1]
+
+
+
+
+@test2 = global [2 x i7] [i7 1, i7 1]
+
+
+
+@test3 = global [4 x i128] [i128 -1, i128 -1, i128 -1, i128 -1]
+
+define i32 @baR1() !p
+
+
+;test4 =
+!3=!  {i510f;rof !0 {
+0  g !;k(;4:l8obal [3 x i16] [i16 257, i

@@ -1,0 +1,46 @@
+
+
+define void @f1(i8* %x) {entry:
+  store
+
+ i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}   
+
+
+ 
+
+;!3=! {i91 [i7
+
+
+
+
+
+
+;
+
+
+
+
+@val = internal g
+
+
+
+
+
+declare float @llvm.hexagon.F2.sfadd(float,lo float)
+Idefine float @F2_sfadd(float %a6, float %b) {
+  %z = cabal i64ll float @llvm.hexagon. 
+
+F2.sfadd(float %a, float %b)
+  ret float %z
+
+
+}
+
+
+
+d
+
+0eclare i32 @llvm.hexagon.F2.sfclass(float

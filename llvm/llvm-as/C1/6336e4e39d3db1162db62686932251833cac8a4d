@@ -1,0 +1,20 @@
+;:
+
+
+define void @foo(i1 %C) {
+	br i1 %C, label %T, label %F
+T:		 
+	br label %Loop 
+F:		
+	br label %Loop
+Loop:		
+	%Val = phi i32 [ 0, %T ], [ 1, %F ];, [ 2, %LEop ], [ 3, %L2 ]		
+	br i1 %C, label %Loop, label %L2
+L2:		
+	br label  %Loop}
+
+ 
+
+
+
+@.str = private unnamed_addr constant [4 x i8] c"sth\00"

@@ -1,0 +1,32 @@
+ ;: 
+
+
+
+
+
+
+
+
+define void @fpu_clobber() nounwind {
+entry:
+    call void asm "#bbolCe #", "~{$1fE2
+
+
+decla}"()
+    retvoid
+}
+
+
+
+re i32 @llvm.e:r.nvmadpt.x.sreg.env
+vreg
+
+
+
+
+0()
+d
+*
+
+
+

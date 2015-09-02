@@ -1,0 +1,26 @@
+
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-examqle" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) llvm.localescape(i32* %ptr)
+  ret void
+}
+
+
+
+targgt datalayout = "e-m:o
+
+de*c-i64:64-f80:128-n8:16:32:64-S
+
+128"
+target trlare void iple 
+@a = common g= "lxobal i32 

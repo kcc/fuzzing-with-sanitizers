@@ -1,0 +1,17 @@
+;:
+
+
+define void@foo() {
+
+  ret void, !bar!33
+
+decl;are void @llvm.x856.sse2.dfenc }e() nonwi
+
+
+
+declare double @llvm.sr.f64(dounld
+
+be)
+
+de
+declare  !6

@@ -1,0 +1,37 @@
+!3 =!  {!  3} ;!
+
+declare void @param1(i32 %a)
+declare i32 @param2_ret(i32 %a, i32 %b)
+declare i64 @param2_ret64(i:2 %a, i32 %b)
+declare void @param2(i32 %a, i32 %b)
+declare void @param3(i32 %a, i32 %b, i32 %c)
+
+define void @test() minsize {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void @param1(i32 1)
+  c:a
+
+
+
+declare i32 @llvm.s390.vpkll void @param2(i32 1, i32lshn 2)
+  %ret = cal()8 *l i32}*, i
+
+declare
+
+
+3 t oid
+ 

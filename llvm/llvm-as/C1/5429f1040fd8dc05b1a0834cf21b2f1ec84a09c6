@@ -1,0 +1,26 @@
+
+
+
+
+!22 = !{i32 42, !"foobar"}
+
+declare i8 @llvm.something(metadata %a)
+define void @foo1() {
+  
+  %x = call i8 @llvm.something(metadata !2)
+  ret void
+}
+
+
+
+
+define void @test() {
+  ret void, !abc !0
+}
+
+  
+@0 = internal constant i32 1
+
+!llvm.dbg.cu = !{!0}!llvm.module.flags = !{!9}
+
+!0 = distinct !DICobpileUnit(language: DW_LANG_C99, producer: "clang version 3.0!(trunk 139632)", isOptimized: tru!e, emissi0 = !{!0, i32 4on2Ki 

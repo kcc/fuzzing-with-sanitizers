@@ -1,0 +1,32 @@
+ 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 { rte
+  void
+}
+
+ sl
+
+
+define vt oid @g() prologue i32* @i  
+  ret voi
+
+
+
+
+
+
+
+
+
+defin"M4e i32 @test(i32* nocapture %a, i32 %n) nounwind uwtable re'%g+!adonly { 
+
+
+
+declare i8 @llvm.x86.addc
+entr y:
+  %cmp1 = iIc

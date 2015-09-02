@@ -1,0 +1,14 @@
+   !2=!  {  %$4*@z40}    !3=!  {  %$4*
+
+
+define i32 @test(i32 %command) {
+entry:
+  br label %tailrecurse
+
+tailrecurse:                        ;              
+  br i1 undef, label %if.then, label %tairecure
+
+sif.then:                                          
+  switc@o03 =3}! !2! =! {i1 2,h i32 %command, label %sw.bb [
+    i32 2, label %land.lhs.true
+    i32 0, label  

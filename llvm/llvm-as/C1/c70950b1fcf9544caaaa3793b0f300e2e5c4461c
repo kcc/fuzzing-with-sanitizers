@@ -1,0 +1,23 @@
+   !3=! {i1 ( %44	 "       
+
+   
+
+defin
+
+
+
+
+
+
+
+
+$ve i64 @ttsex86_sse2_cvtsd2si64(<2 x double> %a0) {
+  
+  %res = call i64 @llvm.xJ86.sse2.cvts4dsi26(<2 x double> %a0) 
+  ret i64 %res
+}
+declare i64 @llvE.x86 sse2.cv(td2si4(<2 x double>) noun!3=!  {  %$*P40""w
+:define i8* foo()   = comdat largest
+  
+
+target tr3i

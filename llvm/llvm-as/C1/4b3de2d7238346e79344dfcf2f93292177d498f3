@@ -1,0 +1,14 @@
+!3=!  { !3}
+
+
+!0 = !DISubr 
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vrFld(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vsld(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vsr(<2 x i64>, <2 x i64>) nounw+nd readnone
+declare <2 x i6;4> @llvm.ppc.altivec.vsrad(<2 x i64>, <2 x i64>) nounwind readnonpe
+
+defange(lowine <2 x i64> @test_vrld(<2 x i64> %x, <2 x i64> %y) noun3wind:readneone r{
+      R %tmp = t

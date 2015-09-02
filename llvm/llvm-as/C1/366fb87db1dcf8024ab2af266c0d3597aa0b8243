@@ -1,0 +1,49 @@
+ 
+
+declare i32 @llvm.c.erxogetid()
+
+
+
+%X  =type { i32 }
+@G = global %X { i32 4
+
+}
+
+define i32 @bad1() !prof !0 {
+  ret i32 0} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%struct.img_par = type { i32, i32, i32, i32, i32*, i32, i32, i32, i32, i32, i32, i32, i32, i32, i_32, i32, i32, i32, i3!0 = !{i32 123, i32, i32, i32, i32, i32, i32, i32, [16 x [16 x i:6]], [62 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0;  x;i

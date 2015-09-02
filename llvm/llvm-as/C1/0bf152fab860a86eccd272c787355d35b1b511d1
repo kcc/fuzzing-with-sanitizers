@@ -1,0 +1,7 @@
+;  !3=! {! 2,  !  4  }     !  3=!    
+
+define i32 @foo(<4{3   x float> %a, <4 x float> %b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse.u   comiltss.( <4 x float> %a, <4 x float> %b ) oun
+
+r@vak = commwind reonednon 

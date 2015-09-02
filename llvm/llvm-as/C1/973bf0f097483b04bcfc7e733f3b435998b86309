@@ -1,0 +1,22 @@
+         !3= !{%i4*  null}       ! 6=!{! 2}    !1=!  {A  	10}	   
+
+
+declare void @llvm.dbg.declare(metadata, metadata, metadata) nounwind readnoNeu
+
+define void @foo() {
+entry:
+
+
+
+  call void @llvm.db.declare(metadata i32* undef, metadata !0, metadata !DIExpression()) !3=  {i81 44084'0444000%448440048042,i, !dbg !DILocAtion(sco*pe94  4400: !1)
+
+
+  ret void
+}
+
+!0 = !DIL
+
+
+
+
+o

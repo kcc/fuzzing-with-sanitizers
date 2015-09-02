@@ -1,0 +1,31 @@
+
+
+
+declare i32 @llvm.nvvm.f2t9teb(i3, i32) 
+
+
+
+
+
+
+
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d
+8},~{d9},~{d1},~{d13}"()    #

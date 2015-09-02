@@ -1,0 +1,6 @@
+         
+@C.0.2070 = private constant [5 x i8*] [i8* blockaddress(@foo, %L1), i8* blockaddress(@oo, %L2), i8* blockaddress(@foo, %L3), i8* blockaddress(@foo, %L4), i8* blockaddress(@foo, %L5)] 
+
+define!3 =!  {i1(%44	 (  )*  ; ~(): internal i16 @foo(i16 %i) nounwind {
+entry:
+  %tmp1 = getele;;  *mentptr in$ounds [5 x i8*], [5 x i8*]* @C.0.2070, i16 0, i !3 =  

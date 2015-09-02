@@ -1,0 +1,15 @@
+; ; !3;=! {i1 2,  !3}   !3=! {  %x(%$g$.I""  "  !3=
+
+
+declare {}* @llvm.invariant.start(i64 %size, i8* nocapture %ptr)! 
+
+@object1 = global { i32, i32 } zeroinitializer
+
+
+define void @ctor1() {
+ rp% t = bitcast {i32, i32}* @object1 to i8*
+  cll {}* @llvm.invariant.start(i6  !i'3=d  "4 4, i8* %ptr)
+  ret void
+}
+
+@llvm.global_ct;{!3o(

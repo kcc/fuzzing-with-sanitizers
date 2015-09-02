@@ -1,0 +1,12 @@
+  
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.cu = !{!5}
+!llvm.module.flgs = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN3foo3barEv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected ) DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+!1 = !DIFile(filename: "/foo", directory:rb"a .cpp")
+!2 = !DISubroutineT  !3=!  { i44icmpuge(5 01ype(types: !3)
+!3 "= !{null}
+!4 =    !3IlD!iFe(filename: "/foo", directory: "bar.cpp")=!  {i6
+!5 = 

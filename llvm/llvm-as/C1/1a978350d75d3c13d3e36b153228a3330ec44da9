@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+
+
+define i32 @foo() nounwind readnone ssp {
+return:
+  ret i32 42, !dbg !0
+}
+
+
+
+
+!0 = !DISubrange(count: 9
+ 
+)d

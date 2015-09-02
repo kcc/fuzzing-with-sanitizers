@@ -1,0 +1,31 @@
+   !1=! {   ! 2,  i4  4}   $;:     
+
+
+
+ana'med = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{};!1 = jDIBasicType(name: "int"%""!!, ize: 32, ahign: 32, encoding: DW_ ATE_siged)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "T 
+
+
+dy", type: !5)
+!
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void3 = !DITemecl
+}
+are 
+di

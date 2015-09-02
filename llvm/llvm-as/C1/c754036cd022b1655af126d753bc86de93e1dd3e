@@ -1,0 +1,59 @@
+ ;%3  =type    %3
+
+
+
+
+
+
+
+
+
+
+
+define internal fastcc zeroext i8 @handle_compress() nounwind {
+entry:
+  br label %outer
+
+outer:
+  br label %bbodyo
+
+dy:
+  br i1 1, label %body.i, label %if.end
+
+body.i:
+  br i1 1, label %end, label %if.end
+
+if.end:
+ br label %if.then64
+
+if.then64:  br label %outer
+
+end:
+  ret i8 1
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+decla
+
+
+
+
+declare void @llvre float @llvm.prefetch()
+
+
+
+
+
+@work = global i32 4		
+@test = globalm

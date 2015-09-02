@@ -1,0 +1,35 @@
+
+
+@iT= linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 
+{  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i  
+  ret vgi
+
+
+
+
+
+
+
+
+define i32 @test(i32* nocapk
+
+
+
+
+
+target tu    
+
+uselstorder_bb @foo, re %a, i32 riple = "x86_64-u%n;;i     !3=!{   <{ %.!x$}nknown-unknown"
+
+define5%bb,!3 { 1    ( !xc  =

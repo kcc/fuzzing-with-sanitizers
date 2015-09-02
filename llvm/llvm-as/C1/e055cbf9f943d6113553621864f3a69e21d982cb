@@ -1,0 +1,48 @@
+     
+
+
+
+
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+en3try:
+	ret void
+}
+
+
+ 
+
+
+
+
+target datalayout = "e-p:64:6 !3=! {! 2,i4  4    }     
+    M
+
+!0 = !DITemplateValueParameter(tyag:3)!{i1 i2 *
+
+
+
+!named =@i = linkon !{!0, !1  !2, !3, !4}
+
+
+
+!8 = distinct !DISubprogrxam(name(: "foo"ceWodr global i32 1
+
+
+
+
+
+define void @f() prefix
+
+ i32 1 {
+  ret void
+}
+

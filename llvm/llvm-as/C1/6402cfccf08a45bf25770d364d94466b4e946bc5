@@ -1,0 +1,15 @@
+ 
+
+
+
+ %31 =type    %3  
+
+
+
+!naed = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "(file.cpp", directory: "/pah/to/dir")
+!1 = distinct !{}
+!6 = !DIFile(filename: "path/tofile", directory: "/path/to/dir")
+p
+!3 = !DINamespace(n3ame: "(a= { !3=  ! {mespace", scope: !0,

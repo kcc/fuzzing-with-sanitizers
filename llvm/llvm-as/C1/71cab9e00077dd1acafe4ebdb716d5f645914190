@@ -1,0 +1,32 @@
+!3=    !  {!3} 
+
+
+
+
+
+
+define void @f() gc "s
+
+
+
+
+
+
+
+define signext i32 @f1(i32 signext %a, i32 signext %b) {
+entry:
+  
+  
+
+  %r = and i32 %a, %b
+  ret i32 %r
+}
+hadowstacu :k" {
+entry:
+	ret void
+}
+
+define void  @g() gc "java" {
+entry:
+	ret void
+}

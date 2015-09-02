@@ -1,0 +1,8 @@
+
+
+
+!0 = !DIGlobalVariable(name:  "!35_")! {!3}
+
+
+define void @V() {
+  %a = alloca i8, i72 ;8,  align 

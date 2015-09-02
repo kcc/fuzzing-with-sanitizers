@@ -1,0 +1,23 @@
+   
+
+declare i64 @llvm.ppc.toi64(i6 )    ;
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, align 1, !rane !0
+  ret void
+};! ;!i3=!  {!3}!i3 = !{!3};`;; !k3=!  {U!3}!;  =
+target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8%i16:16:16-
+
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+!0) = d3i:3i22:32-i64:32:s  ;!ti3=! {!`}
+
+
+@G = common global double 0.000000e+00, align 16
+
+define tinct !DISubprogram(name64-f32:32:3void 2

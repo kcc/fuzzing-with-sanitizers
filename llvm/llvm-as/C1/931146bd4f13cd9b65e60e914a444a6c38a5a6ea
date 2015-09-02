@@ -1,0 +1,30 @@
+   
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix i32targe
+
+target datalayout = "e-p:6464:64-i1:8:8-i8:8 8-i16:16:16-i#2:32:2-i
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+decla64:!2=!  {64:64-f32:32:32-f64:64:64-v64:64:64-v12  %$8:128:128-a0re { fl*@Z4oat, float, float, float } @'l:0lvm.:64

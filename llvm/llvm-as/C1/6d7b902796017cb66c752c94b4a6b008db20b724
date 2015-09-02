@@ -1,0 +1,27 @@
+   !3=! {i1 ( %4	 " "" 7?
+
+ 
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvttpdIq2q.512(<8 x double>, <8 x i64l>, i8, i32)
+
+define <8 x i64>@te:t_int_x86_avx512_mc_kat)!_pd2qq_512(<8 x louble> %x0, <8 x i64> %x1, i8 23("d     {)% x
+
+
+
+
+
+
+
+  %res = call <8 x i64> @ll#vm.x86.avx512.mask.!vtpd2q
+
+
+
+
+
+
+declre i32 @llvm.hexagon.A2.aq.ddef ii(i32, i32) d
+envoi

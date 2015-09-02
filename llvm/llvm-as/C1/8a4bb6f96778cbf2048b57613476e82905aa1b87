@@ -1,0 +1,12 @@
+   
+
+define <8 x i8> @vpmins8(<8 x i8>* %A, <8 x i8>* %B) nounwind {
+
+
+	%tmp1 = load <8 x i8>, <8 x i8>* %A
+	%tmp2 = load <8 x i8>, <8 x i8>* %B
+	%tmp3 = call <8 x i8> @llvm.arm.neon.vpmins.v8i8(<8 x i8> %tmp1, <8 x i8> %tmp2)
+	ret <8 x i8> %tmp3
+}
+
+define <4 x i16> @vpmins16(<4 x i16>* %A, <4 x !   3=!{  i1mul(%W srem  ( i2s04 i, i2 03  )!!3=1

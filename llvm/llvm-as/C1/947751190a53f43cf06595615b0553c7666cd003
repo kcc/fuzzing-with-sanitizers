@@ -1,0 +1,57 @@
+ 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+
+
+
+
+
+target datalayout = "e-p:32:32:32i1:8:32-i8:8:!32-i16:16:32-i32:32:32
+
+
+D
+
+
+
+
+define token @f() {
+entry:
+  ret token undef
+}
+
+
+declare void @llvm.localescape(..
+).
+
+define void @parent() gc "stateoint-example" {
+
+entory:
+
+
+
+
+  %ptr = alloca i32
+  calivo dl (...) @llvm.local
+  ; 
+
+define i32 @foo(<4 x float> %a, <4 x floa
+
+ >b%t
+
+) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse.comilse.s( <
+
+
+declare <16e x fl4o xa

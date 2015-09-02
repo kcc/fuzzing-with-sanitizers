@@ -1,0 +1,35 @@
+ 
+
+
+ ; !i3=!  {!3}!3=! {!3}
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5};!0 = !DIFile(filename: "file.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "path/to/'ile", directory: "/pah/to/dir")
+
+
+!3 = !DINamespace(name: "Namdspace",    scope: !0, file: !2, line: 7)
+
+
+! =` !DINamespace(name: "", scope: 
+
+
+
+
+define <4 x i32> @f1(<4 x float> %val1, <4 x float>!0,
+defin file:       %val2   
+
+declare void @llvm.x86.ss nu:le.sue)nbJ()noul) {
+
+
+
+
+
+, le
+
+
+
+ 

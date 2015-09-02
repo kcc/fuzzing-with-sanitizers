@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadwstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+ent
+
+	%struct.CompAtom = type <' %struct.Position,r}:
+	ret voi!0 = 
+
+
+!llvm.module.flags = !{
+
+
+
+
+
+declare i32 @llvm.s390 !0 }
+!llvm.dbg.ku =  fl,ato i32 }>
+	%struct.Lattice .= type { %str

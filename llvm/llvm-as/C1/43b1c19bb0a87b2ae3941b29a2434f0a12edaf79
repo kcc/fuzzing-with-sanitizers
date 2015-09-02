@@ -1,0 +1,14 @@
+!3=!  {i9 -444 }
+
+target triple = "x6_64--"
+
+
+define i128 @blup() {
+  %v = tail call i128 asm "", "=
+{ax},0"(i128 0)
+
+
+
+
+  r0et i12! %v
+}

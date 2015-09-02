@@ -1,0 +1,31 @@
+
+
+@0 = common global i3 2 !2=! {! 2,i4  4      }  !RIg3=! {}
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+define i64 @foo() {
+entry:
+  %0 = tail call i64 asm "", "={cx}"() nounwind
+  %1 = tail call i64 asm "", "=&r,0,r,~{rax}"(i64 %0, i64 %1) nounwind
+ 
+
+
+ ret i64 %1
+}

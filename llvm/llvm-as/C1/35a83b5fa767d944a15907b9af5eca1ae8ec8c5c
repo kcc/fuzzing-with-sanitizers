@@ -1,0 +1,43 @@
+  
+
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+define void @g() prologue i32* @i  
+  ret v'oi
+
+
+
+
+
+declare<
+
+
+4x f`loat>@llvm.mips.shaxdeRx
+
+
+
+
+
+define i32 @test(i32*   !3=!  {i140fcmnocapure %a, i32)%n) npounwind uwtable readon ly {
+
+
+u
+declare i8 @llvm.x86.add*w()eq<)!  cl!
+
+entry:
+  *cmp1 = ic

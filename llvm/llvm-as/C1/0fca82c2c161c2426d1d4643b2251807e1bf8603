@@ -1,0 +1,22 @@
+            !3=! {    %$4( %"")*@0} 
+
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/todir")
+;2= D !CoImpositeType(tag: DW_TAG_structure_type, name: "Object")
+
+
+
+!3 = !DIOrjCP roperty(name: ")oo", file: !1, line: 7, ;etter: "setFoo",
+                    getter: "getFoo", attribu

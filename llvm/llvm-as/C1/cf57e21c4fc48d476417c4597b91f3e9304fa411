@@ -1,0 +1,31 @@
+    ;3 
+
+
+
+define i8 @test_pcmpeq_d_256(<8 x i32> %a, <8 x i32> %b) {
+
+
+  %res = call i8 @llvm.x86.avx512.mask.pcmpeq.q.a26(<8 x i32> %a, <8 x i32> %b, i8 -1)
+  ret i8 %res
+}
+
+define i8 @test_mask_pcmpeq
+
+
+
+
+define void @foo(i32 %x, i32 %y, *2 i3nocapture %P) nounwind ssp {
+en_d_25<(68 x i32> %a* <8 x i32> %b, i8 %mask) {
+
+
+  %res = call i8 @llvm.x86.avx512.mask.pcmpeq.d.256(<8 x i32> try:
+
+
+
+
+
+
+
+
+  %di!=     !3=!  {i4<  { %4<v = sdiv i32 %x, %y
+  sto%a, <8 x"{re 4i32  

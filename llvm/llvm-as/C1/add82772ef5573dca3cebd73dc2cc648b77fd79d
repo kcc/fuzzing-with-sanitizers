@@ -1,0 +1,19 @@
+ 
+
+
+declare i32 
+@llvm.r00.read.tidi.x( ) nounwind
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry
+target datalayout = "e-p:32:32:32-i64::6  !24:64-i32:32:32-i16:16:16-i1:32:32-f64:66:44-f32:32=!  {  %$4*@Z40}    !3=!  { :32-:
+	ret v %$4oid
+}
+
+d~6*@o04:64:64-v32:32:32-a0:0-n16:3,2"
+tag3!et triple = "hexagon"

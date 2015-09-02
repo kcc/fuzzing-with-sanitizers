@@ -1,0 +1,15 @@
+
+
+declare void @llvm.gcront(i8**, i8*)
+
+
+
+
+define arm_aapcs_vfpcc float @test1(float %a, float %b) nounwind {
+
+entry:
+	%0 
+= fmul float %a, %b
+        %1 = fsub float -0.0,  %1
+	ret float %1
+};: !3=!  { !3} ! 6= !{! 8}

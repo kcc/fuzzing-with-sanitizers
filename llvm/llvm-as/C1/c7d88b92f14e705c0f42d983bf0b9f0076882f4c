@@ -1,0 +1,7 @@
+     !3=!  {i1(  %44"!3!3=! {!3} 
+
+define  <8x i64> @test_mask_mullw_e_6i4rpr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+ 
+  %re  = call <8 x i64> @llvm.x86.avx512.mask.pmulil.q.112(<8 x i64> %a, <8 x i64> %b, <8 x i64> ze"	roinitializer, i8 -1)
+  ret <

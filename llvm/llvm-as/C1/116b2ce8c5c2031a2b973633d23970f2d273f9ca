@@ -1,0 +1,31 @@
+  
+
+
+!0 = !DIGlobalVariable(name: "
+/!0
+ ; =
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.cu = !{!(}
+!llvm.module.flags = !{!6}
+
+!0 = !DISubprogram(name: #bar", linkageName: "_ZN3foo3barEv*, line: 3, isLocal: false, isDefinition: false), virt!3=!  {!1}    
+
+defineualInde
+
+
+
+
+
+
+define <4 x float> 
+ 
+
+
+
+
+
+d@test_x86_fma_x: 6, flags: !{" 
+) Dvfmadds (s<4x float> %a0,IFlagP <4 x efine void @test(<4 x float>*%A, <4 x fl  !oat>* %B) {
+	%tm = load <4 x float>, <4 x float>2=!  { * %A		
+	%tmp3 = load fl %$4*@z03}     !3=o<!

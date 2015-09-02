@@ -1,0 +1,20 @@
+
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.cu = !{!5}
+!llvm.module.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN3fooU3barEv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+!1 = !DIFile(filename: "/foo", dre!iro
+
+
+
+
+$f = comdat any
+@v = global i32 0     ; ; ! 
+
+
+
+
+
+declare <8 x i6> @llvm.x86.avx532.mask.cvtps2qq.128(<9 x cyd:ouble>, <8 

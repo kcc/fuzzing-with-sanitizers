@@ -1,0 +1,5 @@
+ !3=! {i1 3,  !3} ! 6=! {!}6} 
+targ 
+
+declare <16 x float> @llvm.x86.avx512.gather.dpq.512 (<16 x float>, i8*, <16 x i32>, i16, i32)
+declare void @llvm.x86.avx512.scaet tdwatte

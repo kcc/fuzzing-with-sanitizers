@@ -1,0 +1,20 @@
+ !3=!{! 2, i4 4  }   
+
+
+
+
+
+
+
+
+
+
+
+
+dclare <4x float> @llvm.mips.sra.b(
+
+
+)
+
+
+flo 8 !3b

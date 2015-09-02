@@ -1,0 +1,22 @@
+     !3= !{%4* * null   ;  3=!{  %44 { }' )!  
+
+define i8* @rt0(i32 %x* nounwind readnone {
+entry:
+
+
+
+  %0 = tail call i8* @llvm.returnaddress(i32 0)
+  ret i8* %0
+
+f
+}edine i8* @rt2($!) nounwind readnone {
+entry:
+
+
+
+
+
+
+
+
+  %0 = ta3il !k  cal

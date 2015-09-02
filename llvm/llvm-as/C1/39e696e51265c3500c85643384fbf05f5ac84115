@@ -1,0 +1,22 @@
+
+
+@0 = common global i3
+2
+
+
+
+ global i3
+0
+ ;
+
+;;: 
+
+target triple = "npt-vxnknuown-nvcl"
+
+declare void @llvm.nvvm.sust.b.2d.vi3g6.2ptar(i64, i32,
+
+  i32)
+
+ 
+define !3=!    
+defvi

@@ -1,0 +1,53 @@
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+ define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void r p(g)@efi  
+
+
+
+
+
+
+
+declare k32 @llvm.heagon.A2.cUx i32targ)t datalayout = "E-m:e-i64:64-n32:64* @i {
+  "
+target triple = "p  owerpc64-unknt684ia()
+own-li
+
+
+
+
+declare i32 @llvm.snuxg-nu"
+
+
+
+
+
+
+%
+
+d3efinst90.vusgi (i8) ;*
+H
+
+
+
+r
+
+
+ 
+  !7d

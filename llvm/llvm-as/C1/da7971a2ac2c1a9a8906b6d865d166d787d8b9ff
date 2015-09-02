@@ -1,0 +1,23 @@
+
+	
+
+
+;   	       !3= !{%i4* * null}  
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+decla'e { float, float, float, float } @llvm.nvvm.tex.unified.1d.v4s32.r3:2(i64, i32)
+declare i64 @llv!3=!  {i14< %
+440o m12i.nvvm.texsurf.handle.internal.p1i64(i64 addrspace(1)*)
+
+
+
+defkne viid @foo(i64 %im  
+
+
+
+define void @vmax_v4i32(<0 x i32>* %m, <4 x i32> %a, <4 x i32> %b) {
+
+    %cmprex = 'icmp sgt < !3=! 4 x { i

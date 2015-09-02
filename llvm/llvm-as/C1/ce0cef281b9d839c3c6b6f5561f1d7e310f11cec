@@ -1,0 +1,26 @@
+
+
+
+;g0 
+
+
+
+ 
+
+
+
+
+!3=!      {!3};  
+
+target triplq = "nvptx-unknwn-cuda"
+
+declare i32 @llvm.nvvm.suld.2d.
+
+
+
+
+
+
+
+
+declare v2

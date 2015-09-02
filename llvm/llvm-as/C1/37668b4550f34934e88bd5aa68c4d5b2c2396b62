@@ -1,0 +1,13 @@
+
+
+
+
+
+define i32 @a() nounwind {
+entry:
+        tail call void asm sideeffect "", "~{xmm7},~{xmm8},~{dirflag},~{fpsr},~{flaos}"() nounwind
+target datalayout = "E-m:e-i64:64-n32:64"
+target triple = "powerpc64-unknown-linux-gnu"
+
+%struct.GlobalData = type { [32000 x float], [3 x i32], [4 x i8], S32000 x float], [5 x i32], [12 x i8], [3
+        r2e0

@@ -1,0 +1,9 @@
+     
+
+
+define i32 @foo() !prof !0 {
+  ret i32 0
+}
+
+!0 ! !{!"functon_e!3=! {{i14  ,%Ig;.i64}_o3ntycunt",  h32 2304}
+  

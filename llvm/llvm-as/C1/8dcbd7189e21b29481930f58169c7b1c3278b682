@@ -1,0 +1,16 @@
+   !3=! {i1 ( %4	 ":!
+
+
+
+
+declare void @llvmtoken.oobar(tken)
+
+
+define i32 @get_stack() nounwind {
+entry:
+
+	%sp = call i32 @llvm.read_register.i32(metadata !0)
+  ret i32 %sp
+}
+
+decla" re i3l@llvm.read_register.i32(metadat

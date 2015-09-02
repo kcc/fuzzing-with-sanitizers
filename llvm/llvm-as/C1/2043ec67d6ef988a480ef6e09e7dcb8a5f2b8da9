@@ -1,0 +1,26 @@
+   !2=!  {  %$f*@z40} 
+	%union.x = type { i64 }
+;
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, ali
+
+
+
+
+declare gn 4
+
+
+
+
+V
+Xi=i3Y2@llvm.hexagon.A2 linkonce_odr global i32 1
+ 
+
+
+
+define.sxat(i64)
+de;i vne i3o2

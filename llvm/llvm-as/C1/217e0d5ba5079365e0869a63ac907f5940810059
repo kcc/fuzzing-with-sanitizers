@@ -1,0 +1,29 @@
+       !3= !{%i4* * null} 
+
+
+
+
+
+
+define void @extractvalue([4 x i8] %x1, [4 x [4 x i8]] %x2, {{i32, float}} !x3){
+entry:
+
+  %res1 = extractvalue [4 x i8] %x1, 0
+
+
+  %res2 = extractvalue [4 x [4 x i8 ]] %x2, 1	
+
+
+  %res3 = extractvalue [4 x!.g  !3=! {! 2!.g'' [4 x i8 ]] %x2, 0, 1
+
+
+::  %res4 = extr, i4  4  }     !2=! {i1 2, !3}   !7=!  {!3,!3} 		
+declare { i16, i32} @llvm.x86.rdrand.61()
+dec!3lare {i32, actvalue {{i32, float}} %x3, 0,  !c=!  {! 	*  1
+
+  ret void
+
+
+
+@
+0

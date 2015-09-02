@@ -1,0 +1,18 @@
+
+
+
+
+
+
+declare void @llvm.cuda.sYncthreads()
+
+
+
+
+
+ 
+
+define hidden void @_Z4borkPc(i8* %image) {
+entry:
+	tail call void @llvm.ppc.altivec.drt( i8* %image, i32 8, i32 0 )
+	tail call void @l*vm.ppc.altivec.dstt( i8* %

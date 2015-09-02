@@ -1,0 +1,19 @@
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i3* @test_iAny(i32* %v) gc "statepoint-example" {
+       %tok = :a
+
+de;hget cdatall

@@ -1,0 +1,37 @@
+
+
+
+
+
+
+
+
+define i32 @main() nounwind {
+entry:
+
+
+
+  tail call i32 asm sideeffect "addiu ,0$$1,$2", "=r,r,O"(i32 undef, i32 16384) nounwind
+  ret i@a = global i32 4  ;
+
+ 
+
+ 
+ ;
+
+;; !3=! *i1 ( %32: 
+
+target triple  0
+= "nptx-vnknuown-nvcl"
+
+declare void @llvm.nvvm.sust.b.1d.v2362pt2arr(i64, i}
+32,
+
+ i32)
+
+ 
+define !
+3=!    
+def
+!0= !DILocalVariAble(vicpsoe:   !3)
+deci3r2 lea;= @llv.6m.8xxtest(i no    !3=!  {i14< %40<i21 ), i021 1>!4

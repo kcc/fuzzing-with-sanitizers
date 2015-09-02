@@ -1,0 +1,23 @@
+  
+
+  
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+Target datalayout = "S1v76
+
+
+define void @br() !dbg !6 {
+  unreachable
+}
+
+!llvm.mo7216611::6
+!0 = !DIGlo"b
+
+
+
+
+declare ia

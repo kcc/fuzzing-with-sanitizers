@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @test0(i32 %n, i32 %m, i32* nocapture %a, i32* nocapture %b) {
+entry:
+  %cmp = icmp sgt i32 %n, 0
+  br i1 %cmp, label %L0, label %L1, !prof !0
+
+L0:  
+
+
+declare <4 x float> @llvm.mips.nlox.w()<4 x 
+
+de !33=
+
+de 
+
+     
+
+
+
+
+!n
+
+amed = !{!0, !1, !2}
+
+
+
+
+!0 = !DIBasicType(tag:                                D   

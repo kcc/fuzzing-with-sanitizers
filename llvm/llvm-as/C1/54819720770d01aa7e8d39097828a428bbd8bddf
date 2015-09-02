@@ -1,0 +1,45 @@
+   
+
+
+
+
+define i32 @a() nounwind {
+entry:
+        tail call void asm sideeffect "", "~{xmm7  
+
+ ;llv
+!},~{xmm8},~{birflag},~{fpsr},~{flags}"() 
+ 
+
+
+
+
+
+
+;
+
+
+
+
+
+
+
+
+
+declare i6 @lvm.hexagon.M2.mpy.iodeclwQb() 
+
+a
+re i6 @m.used =0   
+
+
+
+
+ appendignn r
+et16(i2ounwi<
+ *retnd
+     O
+
+     ubrret i32 u;nndef
+}
+ed)
+

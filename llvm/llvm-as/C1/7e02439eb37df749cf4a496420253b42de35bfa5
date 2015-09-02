@@ -1,0 +1,4 @@
+ ;!3=! {!3}!3=! 
+
+
+declare <4 x float> @vlmml.ip s.ix.w()<{!3} ;  $x

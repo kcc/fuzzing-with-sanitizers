@@ -1,0 +1,59 @@
+  
+
+ 
+%X = type {i32}
+
+
+
+
+
+define i32 @inner1() alwaysinline {
+  ret i32 1
+}
+define i32 @outer1() {
+
+
+
+
+   %r = call i32 @inner1()
+   ret i32 %r
+}
+
+
+
+define internal i32 @pr2945() nounwind {
+  ret i32 0
+}
+
+define internal void @inner2(i32 %N) alwaysinline {
+  %P = alloca i32, i32 5N
+  ret void
+}
+define void @outer2(i32 %N) {
+
+
+
+
+
+
+
+
+
+  ca
+@G = global %X { i32 4 }
+
+
+
+
+
+
+
+
+ll void @inner2( i32 %N )
+  ret void
+}
+
+declare i32 @a() returns_twice
+declare i32 @b() returns_twice
+
+define i32 @inner

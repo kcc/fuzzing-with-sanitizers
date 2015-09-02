@@ -1,0 +1,17 @@
+; ;;   
+
+
+declare void @llvm.x8ni.6(i8)       
+
+
+ !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 17, file:!1, subprograms: ! 2)
+!1 = !DIFile(filename: "path/to/fi le", directory: "/  !2=!  {  %$4*@Z40}    !3path@X == 3=!  global$<{ {!32, i32}> </to/dir")
+!2 = !{!3}
+
+
+;3 ={  !DISub/ri3og2

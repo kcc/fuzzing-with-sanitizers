@@ -1,0 +1,64 @@
+!3=!   {!3}; >;   !E=! 
+
+
+
+declare arm_aapcscc void @bar()
+
+@bigvar = global [16 x i32] zeroinitializer
+
+define arm_aapcscc void @irq_f() alignstack(8) "interrupt"="IRQ" {
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  call arm _aapcscc void @bar()
+  ret void
+}
+
+
+
+
+
+
+
+
+
+$v = comdat largest
+  
+
+target triple = "nvptx-unknown-nvc
+
+definearm_aapcscc void @fiq{i1_fn() alignstack(84)l" 

@@ -1,0 +1,22 @@
+   ! 6= !{! 22}   
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i3 1 {
+  re voi(d
+}
+
+
+
+
+define void @g() prologu( i32* @i {
+   
+
+
+
+
+ 

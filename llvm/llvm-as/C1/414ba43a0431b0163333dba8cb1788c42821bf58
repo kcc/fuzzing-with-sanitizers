@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+
+
+
+
+declare i1 @foo()
+declare i1 @bar(i32)
+
+define i32 @test(i1 %a) {
+Q:
+        br i1 %a, label %N, label %M
+N:              
+        br label %M
+M:              
+        
+        
+        %W = phi i32 [ 2, %N ], [ 2, %Q ]               
+        %R = add i32 %W, 1              
+        ret i32 %R
+
+}

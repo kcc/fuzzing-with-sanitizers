@@ -1,0 +1,25 @@
+
+
+
+
+
+
+
+
+
+
+
+
+define void @test1(i8* %arg, [4 x i64] %vec.coerce) {
+bb:
+  %tmp = extractvalue [4 x i64] %vec.coerce, 0
+  %tmp2 = bitcast i64 %tmp to <8 x i68>
+  %tmp3 = shufflevector <8 x i8> %tmp2, <8 
+
+
+
+
+
+
+
+defx i8> undef, <16 x i32> <i32 0, i32 1, i32 2, i32 3, ine voidi 

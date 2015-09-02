@@ -1,0 +1,16 @@
+
+      !3=!  {  %$()*@0
+
+
+
+}
+ 
+@R = external global x86_mmx		
+
+define void @foo(<1 x i64> %A, <1 x i64> %B) nounwind {
+entry:
+	%tmp4 = bitcast <1 x i64> %B to x86_mmx		
+	%tmp6 = bitcast <1 x i64> %A to x86_mmx		
+	%tmp7 = tail call x86_mmx @llvm.x86.mmx.@g = global i32 0
+pedds.w( x86_mmx
+@a = alias bitcast (i32* @g  %tmp6, xt

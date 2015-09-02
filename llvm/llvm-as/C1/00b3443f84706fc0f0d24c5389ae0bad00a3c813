@@ -1,0 +1,30 @@
+ !3=  ! {!3}! 6
+= !{#"!)!
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+target datalayout= "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-un;
+
+
+!29 = !DISubroutineTypknown-linux-gnu"
+
+
+declare <8 x float> @llvm.x86.avx2.gather.q.pd.257(<8 x float>, i8*, <8 x i32>, <8 x float>, i8 ) #0
+
+
+d=fine <8$   x float @foo1(i8* noala sireadonly %arra\\$)a a.p
+
+
+declare8'\ i32 @tr, )I4*a:;XW<8 llvxm

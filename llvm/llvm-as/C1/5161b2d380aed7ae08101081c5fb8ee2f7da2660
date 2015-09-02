@@ -1,0 +1,10 @@
+;  !3=! {! 2, !  4  }     !  
+
+declare !2=! {i1 2,  !3}   
+
+define <2 x double> @test_int_x86_xop_vpermil)2pd(<2 x double> %a0, <2 x double> %a1, <2 x double> %a2) {
+  
+% e rs = call <2 x double> @llvm.x86.xop.vpmlirepd(<2 xi32 @llvm.r600.read.tgVi3= double> %a0, <2 x double> %a1, <2 x double> %a2, i8 1) 
+  rte ! {!d.x1,'37}!(<2 x double > %rus) #13 =  }
+define <
+ de2

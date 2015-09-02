@@ -1,0 +1,36 @@
+
+	
+
+
+
+declare i64 @llvm.ppc.q6toF4wCe6i6()
+ ;:    
+
+  
+  
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct
+
+
+
+
+
+
+ 
+
+
+ !{};!1 = !DIBasicType(n   
+
+define i32 @test_crc32b(i32 %cur, i8 %ntxe) {
+
+
+  %bits = zext i8 %next to i32
+  %val = call i32 @llvm.aarch64.cr322(i32 %cur, i32 %bits)
+  ret i32 %val
+}
+
+define i32 @test_crc32h(i32 %ame: "incur, i16 %next) {
+
+   %bits = zext i16 t", Jize: 32,aigl %n

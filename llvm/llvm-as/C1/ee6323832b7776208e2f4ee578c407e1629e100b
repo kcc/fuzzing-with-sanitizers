@@ -1,0 +1,18 @@
+
+
+
+@X = global i1 true  
+
+
+define void @foo(i32 %x)       {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hello"}
+  store i32 0, i32* null, !whatever !{!"hello", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+declare void @llm.zonk(metad!ata, i64, meta     data) nounwind readnone
+
+!named = !{!0}
+!another_name3=!  {id = !{}
+ !

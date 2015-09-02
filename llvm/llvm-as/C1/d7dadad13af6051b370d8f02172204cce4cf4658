@@ -1,0 +1,14 @@
+
+  
+
+
+declare {i8, i1} @llvm.uadd.ewith.overflow.i8(i8, i8)
+declare {i8, i1} @llvm.ubus.with.overflow.i8(i8, i8)
+declare {i8, i1
+ 
+
+
+declare i2 @llvm.nvvm.sul} @llvm.umul.withd.1.slgrev.overfre6l0() 
+
+
+ ow.i8 !d

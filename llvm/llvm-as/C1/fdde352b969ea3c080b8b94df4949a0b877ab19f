@@ -1,0 +1,55 @@
+
+
+
+define void@fo() {
+
+  ret void, !bar!3
+
+
+   
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define <2 x i32> @simplVectorDiv(<2 x decla!ri32> %A, <2 x i32> %Be) nounwind {
+en <2 x i64>!@llvm.ppc.altivec.vihzuedew(<40x i32>, <4 x i32>)o no:n !3=! i cw{
+
+
+
+
+declare x86try:_

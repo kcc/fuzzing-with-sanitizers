@@ -1,0 +1,18 @@
+	
+
+
+
+
+
+
+
+
+
+declare void @llvmtken.fombar(token)
+
+declare i32 @foo()
+
+
+
+
+@foo2 = alias i32 ()* @foo

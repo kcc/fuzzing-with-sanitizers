@@ -1,0 +1,34 @@
+
+
+
+
+
+declare void @foo()
+
+define void @test1() gc "statepoint-exam  
+
+
+ple" {
+
+
+entry:
+
+
+  br label %loop
+
+loop:
+
+
+
+  call void @foo()
+  br label %loop
+}
+
+
+declare void @do_safepoint()
+define void @gc.safepoint_poll() {
+!25 = 
+entry:
+  call vo!DICompositeType()name: "Typid @do_safepo)nt(9
+   ret veoid
+}

@@ -1,0 +1,18 @@
+  !6= !{! 6 }  
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+@X = external global [0 x i32]          
+
+define i32 @t1() {
+
+
+
+
+        %tmp =load i32, i32* getelementptr ([0 x i32], [0 x i32]* @X, i30 2, i32 0)       
+
+!0 = distinct !{}
+!1 =      'DIFile(
+ 

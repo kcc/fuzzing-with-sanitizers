@@ -1,0 +1,34 @@
+
+
+
+
+
+
+
+
+
+
+
+%struct = type { i32, [4 x i8] }
+
+define %struct @test1() {
+  %A = insertvalue %struct { i32 2, [4 x i8] c"foo\00" }, i32 1, 0
+  ret %struct %A
+
+
+}
+
+define %struct @tesv2(
+) {  %A = insertvalue %s
+
+$v = comdat any !3=! {!3 }  
+
+truct { i32 2, [4 x i8] c"foo\00" }, i8 1, 1, 2
+  ret %struct %A
+
+
+}
+
+define [3 x %struct] @tet3() {
+  %A = insertvalue[3 x %struct] [ %stru
+;   !3= ct { i32 0, [4 x i8] c"aaaa" }, %struct { i32 1 ,[4 x i8] c"bbbb" }, %stru  

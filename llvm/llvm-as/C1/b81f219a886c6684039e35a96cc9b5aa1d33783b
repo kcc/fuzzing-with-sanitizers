@@ -1,0 +1,26 @@
+
+
+
+define void @foo() {
+  ret void
+}
+
+   !3=!{! 2, i4 4  } *
+
+
+
+!nam
+
+
+
+
+!llved = !{!0}
+!0 = distinct !DIompileUnit(language: 0, file: !1, subprogra: !2)
+!1 = !DIFile(filen
+
+
+declare ame: "path/to/file", directory: "/paph/to/dir")
+!2 = !{!3}
+
+
+;$ = !DISub!6program(name: "f)m.ident  = oo", i<4!{ x

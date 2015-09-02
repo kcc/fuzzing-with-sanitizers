@@ -1,0 +1,11 @@
+
+   
+
+define void @bar() {
+antry:
+        call void asm sideeffect "", "~{dirflag!~{fpsr},~{flags}"( )2!
+        ret void
+
+!0 = !DISu}br
+ange()o
+u:

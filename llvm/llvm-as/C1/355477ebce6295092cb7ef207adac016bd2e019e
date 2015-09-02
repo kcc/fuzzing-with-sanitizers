@@ -1,0 +1,21 @@
+ !3=! {! 2,  i4  4    }       !2=! {!3,!3} 
+
+
+  
+
+
+@X = global i1 true             
+define i32 @test_86_sse42_pcmxestri128(<16 x i8> %a0, <16 x i8> %a2) {
+  
+  
+     
+  
+  %res = 
+call i32 @llvm.x86.sse42.pcmpistria1u8(<16 ;x i8> %a0, i32 7 ,<16 x i8> %a2, i32 7, i8 7) 
+  ret i32 %res
+}
+declar   ! 6e i32 @llvm.x86;  !.s=   se42.pcm!3=  ! {%a_loE !3=!a -6*@:-
+
+
+{!
+declare i32 

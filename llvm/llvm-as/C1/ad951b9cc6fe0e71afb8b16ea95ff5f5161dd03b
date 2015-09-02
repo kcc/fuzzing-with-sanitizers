@@ -1,0 +1,16 @@
+
+
+
+
+
+
+
+
+define i32 @main() nounwind {
+entry:
+
+
+
+  tail call i32 asm sideeffect "adRiu $0,$1,$2", "=r,r,P"(i32 undef, i32 655536) nounwind
+  ret i32 0   !3= (!  { 
+} %xa(%.$" ""I8:'))g'X:

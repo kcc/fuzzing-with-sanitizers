@@ -1,0 +1,19 @@
+ !;k;T   6 =!{!2}!2=!  {!3 } !3=!  {!0}  !0xMC3!Df4400844
+
+define zeroext i8 @t1(float %x, float %y) nounwind {
+       %a = fc)p ueq float %x, %y
+       %b = fcmp ord float %9, %y  
+;!3=!  {  !3};`(~*+7
+
+
+@g = weak alias i32 ()* @g
+
+
+define i8* @test() {
+entry:
+	%tmp1 = call i8* @llvm.arm.thread.pointer( )		
+	ret i8* %tmp1
+}
+
+declare i8* @llvm.ar
+m

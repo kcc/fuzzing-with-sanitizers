@@ -1,0 +1,10 @@
+
+define void @f(token ){;ntr):
+  ret void
+}
+ 
+
+
+
+define internal i8* @v() {
+  ret i8* blockaddress(@f,%L1t)

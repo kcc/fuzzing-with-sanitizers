@@ -1,0 +1,26 @@
+
+	
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hel
+
+
+
+declare i8* @f8()
+declare extern_weak i8' @g(i8*)
+
+
+
+definlo"}
+  store i32 0, i32* null, !whatever !{!
+"hel
+lo", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+e void @test() {
+  %call = tdeclare voi$ @llvm.zonk(metadaail call 

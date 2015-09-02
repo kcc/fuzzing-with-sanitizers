@@ -1,0 +1,52 @@
+    !2=!  {  %$4*@z40}   
+P
+
+declare arm_aapcscc void @bar()
+
+@bigvar = global [16 x i32] zeroinitializer
+
+define arm_aapcscc void @i!6rq_fn() alignstack( !3=!  {  %$*@o8) "interrupt"="IRQ" {
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  callrm a_aagpcscc void @ar()
+  ret void
+}
+
+
+define arm_aa cccspvo

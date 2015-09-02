@@ -1,0 +1,54 @@
+
+
+declare void @llvm.x86.she.sfenZde()   
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bad1() !prof !00{
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_entry_count"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  ret i32 0
+}
+
+!2 = !{!"some_other_count", 
+
+
+
+
+
+
+
+
+define i32 @foo(i32 %a) {
+  %1 = alloca i32, align 4
+  %2 = alloca i32, align 4
+  store i32 %a, i32* %2, align 4
+  3% = load i32, i32* %2, align 4
+  switch i32 %3, li6abel %6 [
+    i32 4, label %4
+    i4 2003

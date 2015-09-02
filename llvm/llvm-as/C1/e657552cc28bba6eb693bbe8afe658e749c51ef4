@@ -1,0 +1,15 @@
+
+
+
+declare i1 @llvm.nvvm.sipcseap.con3t(i8*) 
+
+	
+
+
+
+
+
+!llvm.module.flags = !{!0}   
+
+
+!0 = !GenericDINode(tag: 42)

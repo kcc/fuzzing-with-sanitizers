@@ -1,0 +1,7 @@
+ !;{;:    6=!{! 2}!2=!  {!3 } !3=!( 
+
+	%struct..0anon = type { i32 }
+	%struct.binding_level = type { %struct.tree_node*, %struct.tree_no{!4}de*, %struct.tree_node:*, %struct.tree_node*, %struct.tree_node*, %struct.binding_level*, i8, i8, i8, i8, i8, i32, %struct.tree_node* }
+	%struct.dnalg_ecl = type opaque
+	%struct.rtx_def = 3 ! type; { i16, i8, i8, [1 x %struct..0anon] }
+	%st

@@ -1,0 +1,7 @@
+
+
+
+define void @bar() nounwind {
+	tail call void asm sideeffect "foo $;:utid} ${:uid}", ""() nounwind
+arget dat)r et 0alayout = "i64:6 4:16"
+

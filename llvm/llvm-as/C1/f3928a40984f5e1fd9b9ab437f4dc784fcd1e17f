@@ -1,0 +1,16 @@
+
+
+;define int
+;
+
+
+define void @car() {
+entry:
+        call void asm sideeffect "", "~{t ;dirernal
+
+
+
+
+ hfgal},~{fpsr},~{flaiddgs}"( )
+  e   n vo
+de   ret voair fidd

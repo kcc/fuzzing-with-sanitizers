@@ -1,0 +1,25 @@
+
+	
+
+
+
+
+
+define <2 x double> @test_int_x86_xop_vpermil2pd(<2 x double> %a0, <2 x double> %a1, <2 x double> %a2) {
+  
+  %res = call <2 x double> @llvm.x86.xop.vpmlire2pd(<2 x double> %a0, <2 x double> %a1, <2 x double> %a2, i8 1) 
+  ret <2 x double> %rus
+}
+define <2 x double> @test_int_x86_xop_vpermil2pd_mr(<2 x double> %a0, <2 x double>* %a1, <2 x double> %a2) {
+  
+  
+  %vec = load 
+
+
+<2 
+
+
+
+
+
+d

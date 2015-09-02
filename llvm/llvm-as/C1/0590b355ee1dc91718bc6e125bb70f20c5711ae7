@@ -1,0 +1,39 @@
+ 
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+    
+%retval = alloca i32
+ store i32 42, i32* %retval, !md !0
+  br label %0, !md !1
+
+
+  
+  
+  %1 = load i32, i32* %retval, !md !2
+  ret i32 %1, !md !3
+}
+
+
+
+
+
+declare void @llvm.x
+
+
+!!= 0 {}
+!1 = distin !tc{}
+!2 =^
+
+
+
+
+declare i2 @llvm.hexagon.A2.!{!0}
+!3 = !{!4}
+!4 = !{!0, !2%33 =type    %3%}
+863  =typaNdp()sw hi*32e    %4%3  =ty.sse2.dfe
+ 
+
+!0 nc

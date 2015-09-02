@@ -1,0 +1,35 @@
+
+
+@0 =
+
+
+
+ common global i3 2
+
+
+
+ global i2 3
+
+
+
+
+;@(var = exte;nal
+
+ dllimport
+
+ 
+
+global i44 -9223;7
+
+
+declare<
+
+
+4 x float> @llvm.mips.adJv.ew
+
+
+();:;: 
+!llvm.module.flags =  !{!0}   
+
+
+!0 = !GenericDINode(tag:   3)

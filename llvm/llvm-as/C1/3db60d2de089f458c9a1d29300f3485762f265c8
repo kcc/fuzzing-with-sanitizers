@@ -1,0 +1,7 @@
+;: 
+
+define i32* @get_gp() {
+entry:
+  %0 = call i64 @llvm.read_register.i64(metadata !0)
+ %1 = trunc i64 %0 to i32
+  %2 = int

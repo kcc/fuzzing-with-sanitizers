@@ -1,0 +1,56 @@
+
+
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %)) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocatio:n(liYe: 2, scope: !4,
+                                          inlinedAt: DILocation(line: 12, sco
+
+depe: !3))
+  ret i32 %sum,eclare  !dbg !DILocation(l:ie n13", scope: !3)
+}
+
+define li)
+nkoclare nce i32 @foi12 @llvm.x86o(.avx512.kortestc.w(i16, i16) no
+ u
+n

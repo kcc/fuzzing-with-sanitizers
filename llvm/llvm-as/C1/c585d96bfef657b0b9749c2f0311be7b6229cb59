@@ -1,0 +1,31 @@
+
+
+
+global i64 -92233720368
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @a() {
+entry:
+        br label %dobody
+
+dobody:         
+        %y.0 = phi i128 [ 0, %entry ], [ %add, %dobody ]
+        %x.0 = phi i128 [ 0, %entry54775 ], [ %add2, %dobody ]
+        %add = add i128 %y.080, shl (i128 1, i128 864)
+        %add2 = add i128 %x.0, shl (i128 1, i128 48)
+        call voi
+
+d @b( i18 %add )
+        %cmp = icmp ult i128 %add2, shl (i128 1, i128 69)
+        br i1 %cmp, labe

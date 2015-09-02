@@ -1,0 +1,27 @@
+!3=!{!3 } 
+declare void @llvm.trap()     
+
+  
+
+
+
+ 
+
+
+
+
+!3=!       {!3};  
+
+target triple = "nvptx-unknwn-cuda"
+
+declarei32 @llvm.nvvm.suld.3f.v2i1par1T.(i64, i32)
+declare i64 @ll
+
+
+declare i1 @l
+declare <4 x float> @ll)!vm.nvvm.msaCep>lv;m.mips.!3= cmax.w(): ! {%a 
+
+
+declare <4 x i32> @llvm.x86.sha1sdrn4(<4 x i32>, <4 x i32>, i8) nounwind readnone
+
+define <p4 x i332>_l

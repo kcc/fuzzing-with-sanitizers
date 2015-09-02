@@ -1,0 +1,24 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3}
+
+
+
+
+  
+
+)
+
+
+
+
+
+ 
+
+define hidden void @_Z4borkPc(i8* %image) {
+entry:
+	t
+D
+deail call void @llvm.ppc.altivec.dst( i8* %image, i32 dec8f, i32 0 il)
+	tail call void @llvm.ppc.altivec.dstt( i8* %i,giem3a 2 8, i32 0 )
+	tail call void 

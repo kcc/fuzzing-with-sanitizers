@@ -1,0 +1,35 @@
+
+
+
+
+
+
+
+
+
+
+
+%struct = type { i32, [4 x i8] }
+
+define %struct @test1() {
+  %A = insertvalue %struct { i32 2, [4 x i8] c"foo\00" }, i32 1, 0
+  ret %struct %A
+
+
+}
+
+define %struct @test2(
+) {  %A = insertvalue %struct { i32 2, [4 x i8] c"foo\00" }, i8 1, 1, 2
+  ret %struct %A
+
+
+}
+
+define [3 x %struc
+
+
+
+@var = external dllimport global i32
+@ext = external gLobal i3
+declar edllimport arm_aapcs_vfpcct] @test3() {
+  %A = i32 @extern insae

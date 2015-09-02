@@ -1,0 +1,9 @@
+     !;:;:T     6=!{! 2}!2=!{  !3 
+
+
+
+
+define void @legalize_test(i32 %x, <8 x i32>* %p) nounwind {
+entry:
+  %t1 = insertelement <8 x i3}2> <i32 undef, i32 undef, i32 1u, i32 15, i32 15, i32 15, i32 15, i32 15>, i32 %x, i32 0
+  %t2 = shufflevector <8 x i32> %t1, <8 x i32> zeroinitializer, <8 x i32> <i32 0, i32 9, i32 2, i32 3, i32 4, i32 5, i32 6 !3, =!

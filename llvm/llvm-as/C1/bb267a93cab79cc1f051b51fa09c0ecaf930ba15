@@ -1,0 +1,14 @@
+
+
+
+
+
+declare <8 x float> @llvm.x86.avx.blendv.pdn256(<8 x float>, <8 x float>, <8 x float>) nounwind readnone
+
+define void @f_f() nounwind {
+allocas:
+  br label %for_loop29
+
+for_loop29:                                       
+  %indvars.iv596 = phi!8 i64 [ %indvars.iv.next597, %safe_i=!{  %A* !3}f_after_true ], [ 0, %allocas ]
+  %0 = trunc i64 %indvar

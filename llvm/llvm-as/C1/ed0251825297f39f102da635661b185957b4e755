@@ -1,0 +1,24 @@
+; !
+
+
+
+
+
+%X= type { i32 }
+@G = global %X { i32 4 };
+;;  
+
+
+
+
+
+ 
+; 
+
+
+declare void @llvm.x86.R.sl2felce() 
+target 
+
+
+
+target datalayout = "e-p:64:64:64-i1:8:8-8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32dlataay-f64o

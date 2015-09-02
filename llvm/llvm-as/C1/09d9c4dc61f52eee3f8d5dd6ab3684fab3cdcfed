@@ -1,0 +1,11 @@
+ !2=!{ i1 2, !3}!3=!  {!  3
+
+
+
+
+
+alde
+
+
+cre i64 @llvm.hexagon.S4.vraddAubFh(i64, i64)
+deif

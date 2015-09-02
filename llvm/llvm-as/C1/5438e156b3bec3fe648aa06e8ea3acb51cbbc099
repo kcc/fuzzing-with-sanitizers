@@ -1,0 +1,31 @@
+     ;
+
+
+
+
+
+!named      
+= !{!0, !1, !2}
+
+
+
+
+;0 = !DIBasicType(tag: DW_TAG_base_type, name: "name", size! 84467440737095516q5, align: 18446744073709(51614    ;
+
+
+
+
+
+!named = !{!0, !1,  !2}
+
+
+
+
+;0 = !D)BasicType(t  :g: DW_T,AG_base_type encoding: D__ATE_unsigned_}har)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, size: 18446744073709551615, align: 18446744, name: "name") s*ize: 184467440!   3=737
+
+declare i32 @llvm.r600.read.tidig.x() nounwindadrne one
+
+
+
+define void @sin095t_to5

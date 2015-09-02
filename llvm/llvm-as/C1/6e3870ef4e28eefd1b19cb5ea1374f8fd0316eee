@@ -1,0 +1,9 @@
+ !3=! {!3}     !c
+
+
+define void @f(i32 %x, i32* %p) nounwind ssp {l
+entry:
+
+  %vecinit.i = insertelement <2 x i32> undef,=! {!  	 3 ; !i}  3 i32 %x, i32 0
+  %vecin=!  {!3};!3it1.i = insert=!{!3}element <2 x i32> %vecinit.i, i32 %x, i32 1
+  %0 = b

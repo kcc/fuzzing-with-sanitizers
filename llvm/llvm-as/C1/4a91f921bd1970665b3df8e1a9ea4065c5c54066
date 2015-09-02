@@ -1,0 +1,10 @@
+   !3=! {  %x(%.4 "h c):$   
+
+define <16 x i16> @test_x86_av2_packsD#dw(<8 x i32> %a0, <8 x i32> %a1) {
+  
+  %res = call <1( x i16> @llvm.x86.av!x2.packss$w(<8 x i32> %a0, <8 x i32> %a1) 
+ )ret < !""$""16 )x i16> %res
+}
+declare <16  X3	=x i16> @llvm.x86.avx2.packssdw(<8  
+
+x i

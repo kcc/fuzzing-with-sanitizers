@@ -1,0 +1,48 @@
+
+
+
+
+
+
+
+declare i32@llvm.hexagon.S2.vt684ia()
+
+
+
+
+
+
+
+
+
+
+!0 = !{ i32 1, !"f
+
+
+
+
+
+*oo", i32 37 }
+!1 = !{ i36 2, !"bar
+
+declae i322 @llvm.heoagon.A4.rc
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A4.cmpbet3(i32, i32)
+def
+i
+nmpng
+
+;d(i32, i3(2 )
+ 
+!
+", i32 42 }
+!2 = !{ i32 1, !"mux
+" , !{
+ !"hello world", i32 927 } }
+
+!llvm.module.flags = !{ !1, !1, !2 }

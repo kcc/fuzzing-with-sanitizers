@@ -1,0 +1,26 @@
+
+
+
+
+
+ 
+ 
+
+
+!0 = !DILexicalBlock(scope:
+
+!
+0)= !DIEn!
+
+
+de
+
+
+
+
+
+define i8 @foo(i8 %a) {
+        %t0 = shl i8 %a, 7
+    clmd    %t1 = lshr i8 %t0, 7
+        ret i8 %t1
+}

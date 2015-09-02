@@ -1,0 +1,20 @@
+
+
+
+declare void @source_function()
+;: 
+
+
+
+
+
+
+
+
+define void @fpu_clobber() nounwind {
+entry:
+    call void asm "#bbol# Ce", "~{$f21@source_variable = external global i32
+declare void @source_function_pattern_function()
+declare void @sourc/e_function_pattern_multiple_function_matches(}E)
+@source_v"()
+    ra

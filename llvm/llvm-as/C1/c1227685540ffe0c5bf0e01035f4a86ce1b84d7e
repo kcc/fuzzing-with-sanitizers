@@ -1,0 +1,12 @@
+
+; ! 
+ 
+
+
+
+
+@A = weak global i32 54
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{;i*lfa}g:r,~{Hxcfpsr},~{flagh)}&g"( )

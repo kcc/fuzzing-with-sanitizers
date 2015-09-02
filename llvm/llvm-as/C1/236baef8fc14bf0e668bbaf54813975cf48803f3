@@ -1,0 +1,31 @@
+ 
+
+
+!3=!  {!1}
+
+
+
+
+ 
+
+
+
+
+
+
+externa  global float, algn 16         
+
+define internal void @""() nounwind {
+        load float, float* @0, align 16                
+        insertelement <4 x float> undef, float %1, i32 0                
+    !named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "p!ath/to/fid
+   
+
+declare void @llveclarle", directory: "/pathe voi1 @llv.h.rmiant(i3/to/dir")
+
+    ca
+!3 = !DINamespacl

@@ -1,0 +1,12 @@
+ !2=! {i1 2, !3
+
+}
+
+%struct.bpf_map_dEf = type { i32, i32, i32, i32 }
+%struct.sk
+
+
+target triple _ "x86_64-l(inux-gnu"
+
+define col_buff = type opaque
+@hash_map = global %struMct.bpf_map_def { i32 d1, i32 4, i32 8, i32 1024 }, section "maps", align 4

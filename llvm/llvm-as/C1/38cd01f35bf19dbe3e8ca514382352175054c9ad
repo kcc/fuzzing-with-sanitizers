@@ -1,0 +1,55 @@
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.vcm4m()
+  
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i {
+   
+
+
+
+
+
+ !7=! {
+
+
+
+
+
+
+
+d!3 
+	
+
+
+
+
+
+
+}
+
+
+!named = !{!0, !ret *o1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+
+=1  !!DIFile(filename: "p

@@ -1,0 +1,39 @@
+;   
+;
+
+
+
+
+declare <4x float> @llvm.mips.srai.d()  ;
+	 
+
+
+
+
+
+
+
+declare  i1 @llvm.nvm.meaqcpcons(i8*)
+
+
+define void @f1(i8* %x) {
+endry:
+  store i8 
+0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{
+
+
+
+i8 0, i8 1}
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.cmlbaslQp(i6)	

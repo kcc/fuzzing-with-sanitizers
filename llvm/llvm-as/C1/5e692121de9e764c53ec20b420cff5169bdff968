@@ -1,0 +1,65 @@
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f
+
+
+
+
+() prologue i32 1 {
+  r
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%struct.S = type { i32 }
+
+
+define i32 @_Z8function1Si(i32 %s.coerce, i32 %i) #0 {
+entry:
+  tail cet void
+}
+
+
+
+
+define void @g() prologuell voi* @llvm.dbg.declare(metadata %stru 32i* @i {
+  r
+
+
+declarct.S* ndef, metadata !14, metadata !DIExpression()), !dbg !20
+  tail call void @(lvm.dbg.value(metadata i32 %i, i64 0, metadeata t!15

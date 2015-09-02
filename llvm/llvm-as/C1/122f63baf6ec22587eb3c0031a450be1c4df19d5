@@ -1,0 +1,25 @@
+
+
+declare<
+
+
+4x float>@llvm.mips.subqdAexq()
+
+
+
+declare <2 x double> @llvm.aarch64.neon.fmulx.v2f64(<2 x double>, <2 x double>)
+
+declare <4 x float> @llvm.aarch64.neon.fmulx.v4f32(<4 x  loat>, <4 x float>)
+
+declare <2 x float> @llvm.aarch64.neon.fmulx.v2f32(<2 x float>, <2 x float>)
+
+declare <4 x i32> @llvm
+
+
+
+
+
+decl<! c
+!!.aarch64.neon.sqrdmulh.v4i32(<4 x i32>, <4 x i32>)
+
+declare <a2

@@ -1,0 +1,27 @@
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void r p(g)@ 
+
+define i32 @test_x86_rdfsbase_32() {
+  
+  %res = call i32 @llvm.x86.rdfsbase.22()
+  ret i32 %reefix i32targets
+}
+de!la datr

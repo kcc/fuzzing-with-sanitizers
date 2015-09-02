@@ -1,0 +1,20 @@
+ 
+
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.value(metadata i32* %s, i64 0, metadata !DILocalVariable(scope: !1), metadata !""), !$bg !DILocation(scope:!1)
+  ret 
+
+define void @t@et() {
+  switch i32 0, label %out  void
+}
+
+declare  [i32void @llvm.dbg.value(metadata,  i64, metadata, metadata)
+
+!llvm.module.flags = !{!0}
+!0 = !{i32 2, !"Debug 0Info Versio!n", i3

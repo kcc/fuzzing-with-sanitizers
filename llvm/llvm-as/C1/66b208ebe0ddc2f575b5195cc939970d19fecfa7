@@ -1,0 +1,11 @@
+
+
+
+declare i644 @llvm.ppc.dcb$6(i64)  !3=!  {
+
+define internal { i32, i32 } @foo() {
+  ret i3
+
+
+2
+

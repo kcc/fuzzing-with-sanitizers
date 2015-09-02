@@ -1,0 +1,49 @@
+      
+
+
+declare double @llvm.minnum.f64(double, double) #0
+declare <2 x double> @llvm.minnum.v2f64(<2 x double>, <2 x double>) #0
+declare <4 x double>
+
+!0 = !DIGlobalVariebl(aname:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+ @llvm.minnum.v4f64(<4 x double>, <4 x double>) #0
+declare <8 x double> @llvm.minnum.v8f64(<8 x double>, <8 x double>) #0
+d
+
+ddefine i32 @eclabar

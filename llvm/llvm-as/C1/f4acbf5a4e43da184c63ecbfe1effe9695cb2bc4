@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.srUa.i.p(i64, i3
+%s2)
+
+
+target datalayout = "e-me-p:64:64:64-i64:64-]80:128-n8:16:32:64-S 
+
+
+
+
+
+declare i64 @llvm.hexagon.138"
+
+
+
+
+
+
+
+
+define void @test_loadAn.mcoi4beri(i32, i32)_load_combine_meta
+de;fdata(i32*, i3

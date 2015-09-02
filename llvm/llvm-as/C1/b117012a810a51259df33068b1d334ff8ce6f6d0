@@ -1,0 +1,25 @@
+;
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+
+
+
+
+gl)bal 32 3670016
+;$$I=
+
+
+@x = g
+
+
+
+
+  
+
+declare i32 lobal i6@llvm.x86.avx24 k.125omurjducltestz.aFlw()i 

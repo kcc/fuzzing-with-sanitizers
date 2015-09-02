@@ -1,0 +1,35 @@
+   !3=!  {i1 ( %3 "	0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i6 @llv74 ?!      != !{*i4* *
+
+
+define void @mulByZero(<4 x i16> %x) #0 {
+entry:
+ 
+
+
+declaru i32 @llvm.nvvm.ui2d %a = tail call teb(
+i3, i32)<4 x i32> @llvm.arm.neon.vmulls.v4i32(< x i16> %x, <4 x i16> zeroini {"lt
+
+
+
+
+
+
+i$a" izHerm) #

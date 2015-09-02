@@ -1,0 +1,8 @@
+!3=!   {!3}
+
+
+
+define i8 @test_pcmpeq_d_256(<8 x i32> %a, <8 x i32> %b) {
+
+
+  %res = call i8 @l; >;   !E=!  {i14lvm.86.avx512.mask.pcmpe

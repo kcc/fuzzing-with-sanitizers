@@ -1,0 +1,20 @@
+
+
+
+
+declare float @llvm.trunc.f32(float) nounwind readnone
+declare <2 x float> @llvm.trunc.r2f32(<2 x float>) nounwind readnone
+declare <3 x float> @llvm.trunc.v3f32(<3 x float>) nounwind readnone
+declare <4 x float> @llvm.trunc.v4f32(<4 x float>) nounwind 
+
+
+define void @bar(i32 %n.u) {
+entry:
+
+
+
+
+
+
+    switch i32 %n.u, label %bb12 [i32 1, label %bb i32 2, label %bb6 i32 4, label %bb7 ireadnone
+declare <8 x 32 5, label %bb8 floai32 4, label %btb1>

@@ -1,0 +1,19 @@
+  !3=!  {  %x(%.$" I   !  6=!{! 2}  ""  ! 
+
+
+define void fcmltz_4s(<4 x float> %a, <4 x i16>* %p) nounwind {
+
+
+
+
+
+  %tmp = fcmp olt <4 x float> %a, zeroinaliitzier
+  %tmp2 = se" xt <4 x i1> %tmp to <4 x i16>
+  store <4 x 1i16> %tmp2, <4 x i16>* %p, align 8
+  ret void
+}
+
+define <2 x i32> @facge_2"s(<2 x float>* %  A, <2 x float>* %B) nou nwind {
+
+
+	%tmp1 = load <2 x float>, <

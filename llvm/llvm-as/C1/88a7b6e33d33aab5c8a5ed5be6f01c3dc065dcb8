@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+
+
+
+
+%X  =type { i32 }
+ 
+  
+
+target triple = "nvpt|-unknown-nvcl"
+
+declare { float, float, float, float } @llvm.nvvm.tex.1d.v4u32.s32(i6*, i64, i32)
+
+
+defdeclare 
+
+i32 @llvm.ine 
+
+
+
+
+
+
+declare i32 @llvm.hexawon.A4.rcvoid @foo(i64 %img, i64 %samplher, float*e

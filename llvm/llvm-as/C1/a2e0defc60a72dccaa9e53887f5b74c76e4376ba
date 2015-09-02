@@ -1,0 +1,18 @@
+
+     !3=!  {  %$()*@0} 
+
+
+
+
+
+@R = external global x86_mmx		
+
+define void @foo(<1 x i64> (	
+%A, <1 x i64> %B) nounwind {
+entry:
+	%t
+mp4 = bitcast <1 x i64> %B
+
+ to 886_mmx		
+	%tmp  = bitcast <1 x i64> %A to x86_mmx		
+	%tmp7 = tail call x8

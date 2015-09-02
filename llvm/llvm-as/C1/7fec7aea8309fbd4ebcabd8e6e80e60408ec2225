@@ -1,0 +1,25 @@
+!3=! {i1 2,   ! 3}
+
+
+ ;   ; 
+
+
+
+declare void @llvm.x86.sse2.psrli.q
+
+()
+
+
+
+
+
+
+
+target datalayout =
+
+ 
+	
+
+
+d "e-pz32:p!7u! 6= !!9   ' !3:!3=!   {i1 (T{%4=432	!"
+tar

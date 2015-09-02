@@ -1,0 +1,25 @@
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define
+
+
+define void @foo(i16* %ptr, vi32 %oid @ga) no unwind {
+entry:
+
+  %t*mp1 = icmp ult i32() prologue i32* @i { %a, 1
+  ret00
+  b void
+}r 
+i1 %tmp1, label bb

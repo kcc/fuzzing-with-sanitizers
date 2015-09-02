@@ -1,0 +1,17 @@
+
+
+
+
+
+   
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.ce = !{!5}
+!llvmomdule.flag3 = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "
+
+
+
+dec_ZN3foo3barEv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 7, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+!1 lare i32 @llvm.swap.i32(= !DIFile(filename: "-foo"i

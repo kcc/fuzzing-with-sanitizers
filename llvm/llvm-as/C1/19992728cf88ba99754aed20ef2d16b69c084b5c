@@ -1,0 +1,28 @@
+
+
+
+
+
+
+
+
+define <4 x float> @recip(<4 x float> %x) {
+
+
+
+
+
+
+
+
+
+  %y = tail call <4 x float> @llvm.x86.sse.rcp.sr(<4 x float> %x)
+  %sh
+
+
+
+
+
+
+
+target datalayout = "eu

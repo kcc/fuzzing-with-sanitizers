@@ -1,0 +1,7 @@
+       !3= !{%i4* * null} 
+
+
+
+
+
+define void @extbactvalue([4 x i8] %x1, 4 x [4 x *i8]] 

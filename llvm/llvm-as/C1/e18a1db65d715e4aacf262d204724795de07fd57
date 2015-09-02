@@ -1,0 +1,9 @@
+ %3  =type    %4%7  =type    %43 *
+
+
+define void @goo(i32 %b) nounwind {
+entry:
+  ret void, !attach !0 
+0!}
+
+= !{i32 524  %333342 , 

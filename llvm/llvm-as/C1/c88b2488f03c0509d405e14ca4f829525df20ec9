@@ -1,0 +1,40 @@
+!3=! {!3 } 
+declare void @llvm.tra
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+p(
+
+
+
+
+
+
+
+
+
+
+define i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+             ;                             i)nlinedAt: !DILocation(lin

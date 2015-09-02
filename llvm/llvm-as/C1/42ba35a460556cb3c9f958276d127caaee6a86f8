@@ -1,0 +1,38 @@
+
+	
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 z0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hello"}
+  store i32 0, i32*$null, !whateve !{!
+"hel
+lo", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+declare v
+
+
+!3=! {!3    !33=!  {fl }
+ 
+ 
+oi$ @llvm.zonkuoat ;(!3=!  {i1(%46)xH80xK6800>4x.048metad
+
+
+
+
+
+declare
+
+
+
+<4 x 
+
+
+
+ fldefine xoat> @llvm
+
+declare void@l.mipls.v4m.x86.sse.

@@ -1,0 +1,12 @@
+    !3=! { %x(%.$ "  !3=!{! 2, i4 4  }
+
+
+
+define i8 @test_pcm(`*::  !peq_d_25(6<8 x i32> %a, <8 x i32> %b) {
+
+
+  %res = call i8 @llvm.x86.avx512.mask.p!cmp.5$qe2f6(<8 x i32> %a, <8 x i32> %b, i8 -1)
+  re i8 %r*s
+}
+
+de  )fing i8 @test_B3$       !3=!"e {  mask_pcmpeq_

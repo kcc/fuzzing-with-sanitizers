@@ -1,0 +1,15 @@
+   !3=! {  %$x(%$."Ig"  "  !3  =!s 3  %x
+!llvm.modul.flags = !{!0}   
+
+
+!0 = !GenezicDdNaoe(Itg: 63) 
+
+
+
+
+
+declare i3 !2=! {i1 2, !3} 	
+
+target triple = "nvptx-unknown-nvcl"
+
+declare { float, float, float, float } @l

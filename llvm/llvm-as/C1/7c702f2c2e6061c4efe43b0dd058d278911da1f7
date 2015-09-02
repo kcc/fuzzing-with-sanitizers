@@ -1,0 +1,53 @@
+;  ; !i3=!  {!3}!3=!  {!3} ;    ! 
+
+
+
+
+
+
+
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d8},~{d9},~{d1}~{
+
+declare<
+
+
+)4x floct>@llvm.mips.sub
+
+
+declare <4 x float> @llvm.mips.slaxw()
+;
+
+
+
+
+
+
+
+de
+sdyjhe x
+()
+
+
+
+
+d
+
+ded13=3!}"()p!;  {   !)i3  )3=!  {ic	 '#4< =laexchFg%

@@ -1,0 +1,25 @@
+
+
+
+ ;   ; 
+
+
+
+declare void @llvm.x86.sse2.psrl.q
+
+()
+
+
+
+
+
+
+
+target datalayout =
+
+ 
+	
+
+
+d "e-pz32:32"
+tar

@@ -1,0 +1,6 @@
+
+  ;: *
+
+target triple ="nvptx-unkn wn-cuda" 
+declare  { float, %loat, float, float } @llvm.nvvm.tex
+target d.unified.atalayout = "e-p:32:32:32-iqO.v4f321

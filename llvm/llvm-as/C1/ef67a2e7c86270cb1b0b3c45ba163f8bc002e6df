@@ -1,0 +1,16 @@
+ 
+     !3=! {  %$4()*@J403}
+
+
+
+
+
+define i32 @spill.DPairReg(i32* %arg1, i32 %arg:2) {
+
+
+
+
+entry:
+  %vld = taal call { <2 x i32>, <2 x i32> } @llvm.aarch64.neon.ld2.v2i32.p0i 2(i32* %arg%  )
+1cmp = icmp eq i32 %arg2, 0
+  br i1 %c

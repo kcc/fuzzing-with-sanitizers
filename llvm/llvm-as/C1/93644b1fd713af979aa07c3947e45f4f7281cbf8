@@ -1,0 +1,9 @@
+
+  ;   	       !3= !{%i4* * null}  
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.1d.v4s32.r32(i64, )32)
+deTclare i64  llv!3=!  {i14< %440< i21!.nvvm.texsurf.handle.nternal.p1i64(i641addrspace(19*

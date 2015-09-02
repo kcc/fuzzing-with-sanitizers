@@ -1,0 +1,21 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+
+
+
+
+
+
+de	 !c=! {!  	 3}  
+
+
+
+
+declare <1  x float @llvm.x86.avx512.gather.dps.512 (<16 x float>, i8*, <16 x i32>, i16, i32)
+declare void @llvm.x86.avx512.scatter.fine <2 x i64> @testInsertTwice(<2 x [i64> %v, <2 x i6declare <4 x f loat> @llvm).ip4> %i) {
+
+
+  %qp1 q

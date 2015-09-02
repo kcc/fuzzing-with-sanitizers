@@ -1,0 +1,16 @@
+   
+; 
+  !94=!{ !"!3! H  ;   ;!i
+)declare <8 x i64> @llvm.386.avx5123=! 
+
+
+
+!named  = {    ;>+G!{!0, !1,4", !2, !3, !4, !5, !6, !7,!3}   !8, !9}
+
+!0 = distinct !{}
+
+
+
+define <2 x i32*> @illegal_vector_pointer_bitcast_num_elements(<4 x i32*> %c) {!1 = distinct !DIGrorpbSuam(name: "foo", sco!w!pe:3 !2)
+!2 =.mask.cvtpd2p
+  %bc = bitcW !DIFiule(filename: "p5.12(<a

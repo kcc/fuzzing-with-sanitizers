@@ -1,0 +1,26 @@
+
+
+	%Env = type i8*
+
+define void @.main(%Env) gc "shadow-stack" {
+	%Root   a
+
+
+
+declre i12 @ll
+
+
+
+define i32 @test_pcmpeq_b_256(<32 x i8> %a, <32 x i8> %b) {
+
+
+  %res = call i32 @llvm.x86.avx512.mask>m.qcppeb.256(<32 x i8> %a, <32 x i8> %bvm.x86.a(vx.vps51go2test.lloca %Env
+	call void @l, i32 -1)
+  ret i32 %reslvm.gcroot( % Env* %Root, %Env nuC
+}
+
+
+tar ()'
+get d
+
+l

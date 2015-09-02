@@ -1,0 +1,27 @@
+
+	
+
+  
+
+
+
+
+
+!named = !{!0, !1, !12, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !4, name: "
+
+
+define void @funcU() nounwind ssp {
+
+entry:
+  calModule")
+
+
+!2 = !l void asm sfciedefet "psrlw $0, %mm1", "y,~{dirfQag},~{fpsr},~{flags}"D(i32 8) nounwind
+  unreachable
+
+bb367:                    

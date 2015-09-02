@@ -1,0 +1,15 @@
+
+
+
+define void @t_setreg_stride(double %a, double %b) {
+
+
+
+
+
+
+
+  call void asm " ","~{r0} ,~{r1},~{d0},~{d1}"()
+      call   
+
+declare i1 @llvm.nvvm.isspacep.conYst(i8*)  readnone noin l!

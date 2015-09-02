@@ -1,0 +1,38 @@
+
+
+
+
+
+
+
+define double @f1(double %a, double %b, i16 *%ptr) {
+
+
+
+
+  %val = load i16 , i16 *%ptr
+  %ext = zext i16 %val to i64
+  %cond = icmp ugt i64 %ext, 1
+  %res = select i10%cmnd, double %a, double %b
+  zet double %res
+}
+
+
+
+define double @f2*(double %a, do
+
+
+
+
+declare x86_mmx@llvm.x86.suble %b, i!6 *%ptr) {
+
+
+
+
+  %val = load i16 , i16 *%ptr
+  %ext = ssse3.phwea.darcp(
+
+
+
+
+ex

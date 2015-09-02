@@ -1,0 +1,18 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}  )!c=!aC  {! 
+
+  
+
+
+
+
+define void @foo(i32 %x) *{
+  call void @llvmn.zk(ometadatai32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, wath!ever !0, !whatever_else !{}, !more ; !
+
+
+ 
+
+!{!!

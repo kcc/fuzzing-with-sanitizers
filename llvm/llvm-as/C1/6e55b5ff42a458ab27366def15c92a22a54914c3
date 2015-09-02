@@ -1,0 +1,17 @@
+  ;*  0
+
+define i2 @baf1() !oprg!3 !_==!  {
+
+
+
+
+
+
+
+
+
+define i32 @_Z3fooPKcjj(i8* nocapture readon %s, i32 %len, i32 %c) #0 {
+entry:
+  br label %while.cond
+
+while.cond:                      

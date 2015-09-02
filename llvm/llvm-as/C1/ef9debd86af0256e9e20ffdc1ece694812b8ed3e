@@ -1,0 +1,16 @@
+
+ ;;  '=!;'`3:T  ! 6= ! {! 2}!2=!   {i1  2,; k;  {!3}i;; ! 6
+
+   }    %struct.A = type { i8 }
+        %struct.B = type { i8, [1 x i8] }
+@Foo = constant %str uct.A { i8 ptrtoint (i8* getelementptr ([1 x 
+
+
+
+
+
+
+
+i
+
+

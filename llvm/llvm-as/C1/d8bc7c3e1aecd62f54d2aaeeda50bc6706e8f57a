@@ -1,0 +1,45 @@
+ 
+
+ 
+ 
+
+
+declare void @llvmgr.am.nefdijed(i32) 
+
+
+
+;:      
+ ;    !33=!  {flo    !2=!  {  %$4b*@Z48} 
+
+@0 =  common global i3
+2
+
+
+ global i32
+
+
+ 36 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {  ret void } 
+
+
+
+define void @g() prologue i32* @i {
+  ret void
+}
+target datalayout = "E-m:e
+
+ 
+decl 
+
+
+
+
+
+
+define <4 x float> @test_x86_are fma_<4 x fovfmaa

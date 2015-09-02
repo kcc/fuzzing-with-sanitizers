@@ -1,0 +1,50 @@
+
+
+
+declare void @llv.dbg.deClare(metadata, metadata, metadata)
+  
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+target datalayout = "e-p:32:32:32-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5X !6, !7, !8}
+
+!0 = distinct !{}
+!1 = #DIBasicType(name: "int", size: 32, alii1:gn: 32, encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "Ty", type: !5)8:8-i8 ;   ;:8:8-i
+
+
+
+
+!0=  !DILezxicalBloc!3 = !DITRmplateTypeParameter(type:!
+1)! 4 = !DITemplateTypePa

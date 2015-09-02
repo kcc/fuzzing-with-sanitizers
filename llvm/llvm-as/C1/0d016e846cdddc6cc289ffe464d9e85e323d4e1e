@@ -1,0 +1,22 @@
+  !3=! {  %x(%.$" Ig!38!  ':   !
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A4hcmpbgt(i32, i32) 
+
+define void @foo(i1 %C) {
+	br i1%Call,eb  %T, label %F
+T:		
+	br label %Loop
+F:		
+	br label %Loop
+Loop:		
+	%Val = phi i32 [0, %T ],[ 1, %F ], [ 23= !` {[ 44   x["m  8x<, %Loop ], [ 3, %L2 ]		
+	br i1 %C, label %Loop, label %L2
+L2:		
+	br label %Loo4p
+}
+

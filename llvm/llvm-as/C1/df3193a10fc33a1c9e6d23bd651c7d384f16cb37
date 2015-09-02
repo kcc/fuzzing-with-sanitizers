@@ -1,0 +1,40 @@
+
+
+ define i32 @foo (i16 %a)
+{
+  %1 = sext i16 %a to i32
+  ret i32 %1
+}
+
+
+
+
+@x = global <{i32, i32}> <{ i32 0, i32  3 }	>
+
+
+
+
+
+
+declare void@llvm.gcroot(i8**, i8*)
+
+ define void @f(i8* %x) {
+	%root = alloca i8*
+	call void @llvm.gcroot(i8** %root, i8* null)
+	store i8* %x, i8** %root
+	ret void
+
+
+
+
+
+
+}
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.vmaxw()
+;
+ 

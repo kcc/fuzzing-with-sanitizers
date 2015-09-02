@@ -1,0 +1,52 @@
+
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+*define void @g() prefix i32ta
+
+ ;T
+
+     
+
+
+
+
+
+;g0 
+
+
+
+ 
+
+
+
+
+!3
+
+@G16 = internal constant [10 x i16] =!      {!3};  
+
+target triple = "nvp!2=! {i1 tx-unknwn-cuda"
+
+declare i32 @llvm.nvvm.suld.1d.v4i3o2T rt5(i64> i32)'
+dec(ar;F
+S
+!rge0 [i16 35, i16 82, i16 69, i= !DITemplat16 e
+81, i16 8
+5

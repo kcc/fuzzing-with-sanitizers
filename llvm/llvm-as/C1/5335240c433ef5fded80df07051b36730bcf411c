@@ -1,0 +1,30 @@
+;k   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+defi   ne i32 @bad2() !pro !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_entry_ !3=coun  t"}! 
+

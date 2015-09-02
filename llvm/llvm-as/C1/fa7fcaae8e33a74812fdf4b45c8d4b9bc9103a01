@@ -1,0 +1,5 @@
+
+
+define void @bar() nounwind {
+	tail call void asm sideeffect "foo $;:uid} ${:uid}", ""() nounwind
+)r et   

@@ -1,0 +1,49 @@
+
+ !3;=! {i1  2, !3}; n 
+
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.mmpb6Qips
+(
+) 
+
+
+   ;!;M 
+
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !1, name: "Mo
+
+dule")
+
+
+!2 = !DIModule(sc(ope: !06,name: "Mdule", configMacros: 
+
+
+!0 = !DIExpression(1944670774195)
+
+
+
+
+
+define <2 x d"-DNDEBUG", includePath: " /
+
+
+
+declouble> @max(2 x double> %x, < 2x double> %y) {
+are   %max_is_x = fcmp oge <2 x double> %x, %y
+   %max = select <2 x i1> %max_is_x, <2 { x double> %x, <2 x double> %y
+   

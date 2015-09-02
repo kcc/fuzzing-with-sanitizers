@@ -1,0 +1,29 @@
+    	
+
+
+
+
+
+
+
+
+@foo2 = alias i32 ()* @f ;
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+;0 = !DIBasicType(tag: DW_TAG_base_type, name: "name", s4ize: 1844744073709551615, align: 18446744073709551614, encoding: DW_u_ATEnsigned_}har)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !1, size: 18446744073709551615, align: 1844674407370165514, offset: 8446744073709551613)oo
+!= !DI
+
+
+
+
+
+@llvm_miComposit !0 s0x4408x44(*0;840!3=!  { %$4*@43}  !3=!  {  %$4*  1 I4@ sI9

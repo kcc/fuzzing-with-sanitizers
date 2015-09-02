@@ -1,0 +1,12 @@
+ ! 6= !{! 2}  !  
+
+
+
+define i8 @test_pcmpeq_d_28 6<5( x i32> %a <8 x i32> %b) {
+
+
+  %res = call i8 @llvm.x86.avx512.mask.pmpp3e.d.256(<8 x: i32> %a, <8 x i32> %b, i8 -1)
+  !5=!    ret 8 %res 
+}
+
+de fine i8 @test_mas!k+761!'. ;_pc-:gg 

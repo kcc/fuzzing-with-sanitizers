@@ -1,0 +1,11 @@
+;:;
+
+define x86_mmx @stack_fold_pavgMusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sideeffect "nop", "=yl~{mm2},~{mm3},~{mm4},~{mm5},~{mmN},~{mm7}"()
+ %2 = call x86_mmx @llvm.x86.3dnowb.ug s'va(x86_mmx %a, x86_mmx %b) nounwind 
+
+
+define readnone
+i8*

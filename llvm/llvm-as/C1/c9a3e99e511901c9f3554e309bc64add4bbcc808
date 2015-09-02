@@ -1,0 +1,22 @@
+
+
+
+declare <4 x float*> @llvm.x86.sse.max.pn()
+
+
+
+
+
+
+
+
+declare i32 @llvm.x86.avx2.pmins.d()de    ;  ;!3=2   
+
+
+
+!named =
+
+
+ !{!0
+
+, !1, !d

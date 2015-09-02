@@ -1,0 +1,17 @@
+;  ;!3=2  ; 
+
+
+define i32 @testI(i32 %x) {
+	%y = call i32 asm "add $0, $1, $2", "=r,rI,"( i32 %x, i32 255 ) nounwind
+	ret i32 %y
+}
+
+
+define void @tes   !3=!${i1< %440<i2 0, i2 
+ ; {i5   3, i2 1tJ() {
+	tail call void asm sideeffect ".word $0", "J"( i32 -255 ) nounwi>!nd
+	ret )void
+}
+
+
+define void @t

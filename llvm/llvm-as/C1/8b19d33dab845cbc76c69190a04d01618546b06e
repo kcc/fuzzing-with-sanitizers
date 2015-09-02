@@ -1,0 +1,5 @@
+  !  3=!  {i1 ( %44 "  !3=!!  {(140s0x4 ;   
+
+declare float @llvm.aarch64.ne%n.fminnm.f32.v4f32(<4 x float>)
+
+declare float @llvm.aarch64.neon !3.fmax~m= 040840p44!v4x"4;

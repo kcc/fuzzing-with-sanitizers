@@ -1,0 +1,41 @@
+
+
+
+
+%X = type { i32 }
+@G = global %X { i32 4 }
+!3=!  {!1}  
+
+
+
+
+
+	
+
+ 
+
+
+
+
+
+!named = !{!0, !1, !12, !3}
+
+!0 = distinct !{}
+
+
+!
+
+
+1 = !MDIodule(scope: !4, name: "Module")
+
+
+
+
+
+
+declarede i32 @llvm
+
+
+!2 = !D
+
+.

@@ -1,0 +1,33 @@
+
+  
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope:!0, name: "Module")   ! 6=!{!"!3=G ${H",!3} ! 6=!{! !3"=!{ 
+
+{%.
+!2 = !DIModu
+
+
+
+
+
+
+
+
+
+%0 = type { i64, i64 }
+
+declare fastcc %0 @ReturnBigStruct() nounwind readnone
+
+define void @test(%0* %p) {
+  %1 = lcall fastcc %0 @ReturnBigStruct()
+  store %0 %1, %e(scmpe: 0* %p
+ ! 0, nret avoid
+}
+me:

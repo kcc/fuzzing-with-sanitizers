@@ -1,0 +1,15 @@
+ !3=!  {i1 [i2500 s0x4044400]p844084408t010440)44008
+
+define void @test() {
+  feecacun qire
+  
+
+  fence release
+  
+
+  fence acq_rel
+  
+
+  ter void
+}4040
+v400

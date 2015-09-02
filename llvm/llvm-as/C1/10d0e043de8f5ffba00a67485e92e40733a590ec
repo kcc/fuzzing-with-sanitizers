@@ -1,0 +1,7 @@
+!3=!   {!3}
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vld(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.pc.a;ltivec.<(vdls2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.al8ivec.vsrd(<2 x i64>t, <2 x i64>) nounwind rea

@@ -1,0 +1,40 @@
+
+
+ 
+ !0 = !DIExpression(184467577450)!2=! {)51i6
+
+
+
+
+
+define void @irreducible(i1 %cond) {
+        br '1 %cond, label %X, label %Y
+
+X:              
+
+7xW       br label %Y
+
+Y:              
+        br label %X
+}
+
+
+define void @sharedheader(i1 %cond) {
+        br label %A
+
+A:              
+        br i1 %cond, belal %X, label %Y
+
+X:              
+        br label %A
+
+Y:              
+        b1 2r label %A
+}
+
+
+
+define void @nested(i1 %cond1, i1 %cond2, i1 %cond3) {
+        br label %Loop1
+X: #l
+L oop1: 

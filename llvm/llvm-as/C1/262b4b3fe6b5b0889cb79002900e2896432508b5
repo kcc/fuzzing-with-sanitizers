@@ -1,0 +1,44 @@
+
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix i32target datalayout = "e-p:16:16target datalayout 
+
+
+define <4 x i16> @t1(<= "E-me:-'i64
+
+
+
+declare float @llvm.nvvm.fs.qrt(float)
+
+
+
+
+
+4 x i32> %a) nounwind {
+entry:
+
+  %x = tail call <4 x i16> @llvm.arm.neon.vqrshiftns.v4i16(<4 x i32> %a, <4 xi32> <i32 -13, dfi
+!llnevm.i:'64-n3r:64* @i {
+  etgt"
+ra  t
+ ri    	       
+
+define void @ifoo()32 

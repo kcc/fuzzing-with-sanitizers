@@ -1,0 +1,20 @@
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "-DNDEBUG", includePath: "/usr/nclude", isysroot: "/")
+
+!3 = !DIModtarget datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
+targe:t triple = "x86_64-apple-darwin13.3.0"
+
+@a =ule(s commocope: !0, name: "Module", confn global di

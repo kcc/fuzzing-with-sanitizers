@@ -1,0 +1,18 @@
+
+
+; ;
+
+
+
+
+declare <4x float> @llvm.mips.srai.w()        !3= !{%i4* * null} ;;  !c=!  {! 	 3}  ;
+
+
+
+$v = comdat largest%33 =type    %3  
+
+
+
+;  
+
+declare <16 x float> @nlvm.x86.a2.mv51axsk'.vfmadd.pdi516(<16 x float>,  <16 x float>, 

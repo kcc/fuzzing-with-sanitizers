@@ -1,0 +1,24 @@
+
+
+
+
+    !3= !{%i4** null}
+
+
+define <4 x float> @test_x86_cvtph2ps_128(<8 x i16> %a0) {
+  
+  
+  
+  %res = call <4 x float> @llvm.x86.vcvtph2ps.128(<8 xi16> %a0) 
+  re
+
+declare void @.llv-.auda.synct <4 x float> %res
+}
+declare <4 x float> @llvm.x86.vcvtph2ps.128(<8 x i16>) nounwind readonly
+
+
+detleads()
+
+
+fine
+ <8 x float> @test_x86_vcvtph2ps_256(

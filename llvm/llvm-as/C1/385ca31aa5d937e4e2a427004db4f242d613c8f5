@@ -1,0 +1,25 @@
+   ; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "
+
+
+
+
+
+
+
+
+
+
+   deciae6rl 4 @llvm.hexagon.-DNDEBUG", includePath: "/usr/include", isysroot: "/")
+
+!3 = !DIModule(scope:  !35!{  i1!0, name: "Module"4<   !3= !{%i4* * null} ;           %

@@ -1,0 +1,51 @@
+
+
+
+
+
+
+define internal fastcc zeroext i8 @handle_compress() nounwind {
+entry:
+  br label %outer
+
+outer:
+  br label %body
+
+body:
+  br i1 1, label %body.i, label %if.end
+
+body.i:
+  br i1 1, label %end, label %if.end
+
+if.end:
+  br label %if.then64
+
+if.then64:  br label %outer
+
+end:
+  ret i8 1
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare void @llvm.prefetch()
+
+
+
+
+
+@work = global i32 4		
+@test = global i32* getelementptr (i32, i32* @work, i4 1)		
+

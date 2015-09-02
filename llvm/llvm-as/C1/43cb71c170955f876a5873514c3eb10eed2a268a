@@ -1,0 +1,33 @@
+   
+
+
+declare i32 @llvm.x86.sse42.crc32.30.8N(i32, i8)
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+defpine voi' @g() prefix i32
+
+
+
+
+
+@R = external global x86_mmx		
+
+define void @foo(<1 x i64> %A, <1 x   !3=! {  %x(%.$ "1(i64> g):$""  %B) noun""#XI!=wind {
+entry0$": 
+	%tmp4 = bitc 
+asta

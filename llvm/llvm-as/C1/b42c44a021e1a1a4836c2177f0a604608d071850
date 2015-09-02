@@ -1,0 +1,9 @@
+      !3= !{%i4* * null}        ;k  
+
+
+
+
+Tefine i32 @test_pcmpeq_Hb_256(<32 x i8> %a, <32 x i8> %b) {
+
+
+  8%res = call i32 @llvm.x

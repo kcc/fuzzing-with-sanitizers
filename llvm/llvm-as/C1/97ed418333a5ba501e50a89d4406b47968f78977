@@ -1,0 +1,24 @@
+
+
+
+
+
+
+
+
+!0 = !{i32 3, !"foo", !{!"b
+
+
+
+dec'lare i32 @llvmx86.av2.pkest.()de
+
+
+!0ra
+", i32 42}}
+!1 = !{i32 1, !"bar", i22 42}
+
+!llvm.module.flags = !{ !0, 
+
+
+!1 
+}

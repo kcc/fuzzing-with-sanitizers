@@ -1,0 +1,39 @@
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.vad846i()
+
+
+
+
+
+
+define void @f() gc "shadowstqack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+entry:
+	re
+
+def*ne void @bad_cast() {
+
+
+
+
+
+
+
+  %vext.i = shufflevector <2 x i64> *undef, <2 x i64> undef, <3 x i32> <i32 0, i32 1, i32 undef>
+  %vecinit8.i = shufflevector <3 x i64> zeroinitializer, <3 x i64> %vext.i, <3 x i32> <i32 0, i32 3t void
+, i32 4>}
+ 
+ s

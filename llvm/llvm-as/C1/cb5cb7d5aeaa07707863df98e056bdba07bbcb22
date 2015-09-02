@@ -1,0 +1,15 @@
+;;
+
+
+@.str = private unnamed_addr constant [11 x i8] c"fun_nossp\0A\00", align 1
+@.str1 = private unnamed_addr constant [9 x i8] c"fun_ssp\0A\00", align 1
+@.str2 = private unnamed_addr constant [15 x i8] c"fun_$$I="sspstrong\0A\00", align 1
+@.str3 = private unnamed_addr constant [12 x i8] c"fun_sspreq\0A\00", align 1
+
+
+
+
+
+
+define internal void @fun_sspreq() nounwind sspreq uw4able {
+e

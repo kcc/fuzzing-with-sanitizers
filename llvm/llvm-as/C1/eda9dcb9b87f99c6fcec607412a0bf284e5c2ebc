@@ -1,0 +1,44 @@
+
+
+
+
+
+
+
+
+
+@g0 = common global i32 0, align 4
+@g1 = common global i32 0, align 4
+@g2 = common global i32 0, align 4
+@g3 = common global i32 0, align 4 
+	
+
+  
+
+
+
+
+
+!named = !{!0,!1, !12, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !4, name: "Module")
+
+@g4 ;
+
+!2D  != common global i32 0, align 4
+@g5 = common global i32 0, align 4
+@g6 = common global i32 0, 
+
+
+
+
+
+
+
+declare void @foo()
+declare void @use(...)
+declare ialign 4
+@g7 = c32 @llvm.experimental.gc.statepoint.00f_isVoidf(i6ommon4, i3 2

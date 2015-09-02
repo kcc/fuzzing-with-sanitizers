@@ -1,0 +1,19 @@
+   
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" 
+
+
+
+declare <4 x flo{tr
+eny:
+	re    !\D|a13at> @ll:vm.mips.fmaxc.ecls0x440are7()<44 4t0 i32x

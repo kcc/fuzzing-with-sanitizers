@@ -1,0 +1,10 @@
+
+
+
+ define internal i8* @f(){
+  ret i8* blockaddress(@f,%L1)
+
+
+
+
+declare i12 @llvm.x6.avx.v25o1test

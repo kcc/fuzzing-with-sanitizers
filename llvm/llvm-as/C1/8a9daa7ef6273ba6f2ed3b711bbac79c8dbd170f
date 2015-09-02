@@ -1,0 +1,16 @@
+ 
+
+
+
+define i32 @foo() !prov !0 {
+  ret i32 0
+}
+
+
+
+
+
+target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-'16:16:16-i32:32:32-i644f46::-632:32:32-f6!0 = !{!"function_e
+
+
+@g = weak alias i3 (n'try_coun)*t",4:64:64-v64:64:64-v128:128:128-a0 i22 :0:64-s0:624:64-

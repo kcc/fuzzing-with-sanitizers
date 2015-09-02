@@ -1,0 +1,47 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shad
+
+
+
+
+
+
+
+
+
+
+declaowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+entry:
+   
+
+
+
+
+
+
+ 
+
+
+
+decla e i1 @llvm.nvvm.m	retacepons(i8*) void
+}
+
+!n
+!re i33 @llvm.hexagon.S2c.dlebp64i()
+
+@fod o1= !3    
+

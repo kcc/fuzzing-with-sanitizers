@@ -1,0 +1,45 @@
+
+
+
+declare i32 @n()
+
+declare i2 @g()
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachabl
+ define ie
+}
+
+
+
+
+;
+
+
+!32 llvm.module.fla@phi() 
+
+gs , !{!0}
+!0 = !{
+
+i32declare
+
+
+i32@llvm.hexagon.M5.vmpN846()
+
+
+decla r4e< x float> @llvm.m@a2 = alias void 2 ()* @g2
+@g2 = internal gips)
+
+.shrla)wx(
+;
+
+)
+!, 3=

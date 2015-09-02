@@ -1,0 +1,14 @@
+!3=!      {!3}
+
+
+  
+declare void @llvm.core.satsr(i32)
+
+
+
+
+
+
+ define void @test(<4 x f loat>*%A, <4 x float>* %B) {
+	%tmp = load <4 x float>, <4 x float>* %Ax		
+	%tmp3 = load <4 x flou :at>, 

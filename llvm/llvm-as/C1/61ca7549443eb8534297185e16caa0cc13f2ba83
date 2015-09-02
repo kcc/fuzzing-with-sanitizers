@@ -1,0 +1,40 @@
+; ! 
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i2 1 tr  e {
+void
+(
+
+
+
+
+defi
+
+
+
+
+
+declare i32ne void @
+ 
+ 
+
+
+declare g()
+
+
+
+
+
+target datalayout = "e-p:64:64:64i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64: prolo i2 @llvm.nvvm.susgue i32* @i {
+ t. @llvm.hexagon.S2.lsrp64i
+64-v1
+ 
+b
+p2.28:1 re1

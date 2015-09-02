@@ -1,0 +1,28 @@
+ ;
+
+
+
+%X  =type { i32 }
+@G = global %X { i32 4
+
+}
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 =; !{i32 1)3, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_entry_count"}
+
+
+
+
+defi(e     i32

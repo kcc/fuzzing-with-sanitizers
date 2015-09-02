@@ -1,0 +1,8 @@
+
+ !3=! {!3}! !3!{ {   ;i;;:T
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+%.}3!%! H 2 G 3!=!  %1 = tail call x86_mm3x asm sideeffect "nop", "=ym2,{m~},~{mm3},~{mm4},~{mm5},~{mm6}<~={mm7}"()
+  %2 = call x8=6_mmx @Qlvm.x86.3dnow.

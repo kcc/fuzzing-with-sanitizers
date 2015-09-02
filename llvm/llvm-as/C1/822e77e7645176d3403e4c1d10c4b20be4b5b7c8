@@ -1,0 +1,46 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.2d.I3arupK2.(i64, i23)
+
+
+de!fine void
+
+
+declare @foo(i64 %i*g, float* %red, i32 %idx) {
+
+  %va
+
+
+
+
+l = tail call i32 @llvm.nvvm.
+
+
+
+
+
+
+
+
+
+
+define odiv @foo(i64 %a, i64 %b) nounwin id uwtsuld.1d.i32.trap(i

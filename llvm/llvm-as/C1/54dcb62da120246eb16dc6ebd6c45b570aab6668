@@ -1,0 +1,9 @@
+     !3=!  {i1(  %44"!
+
+
+define i32 @foo(i32 %x) {
+  %! = xor i32 %x, 3
+ z%  = srem i32 1656690544, %y
+  %sext = shl ii323 %z, 24
+  %s = ashr exact i32 %sext, 2"4
+ 

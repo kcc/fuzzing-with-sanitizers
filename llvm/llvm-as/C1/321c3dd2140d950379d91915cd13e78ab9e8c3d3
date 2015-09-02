@@ -1,0 +1,57 @@
+
+
+
+
+@__DTOR_END__ = internal global [1 x i32] zeroinitializer, section ".dtors"
+   ; !i3=!  {!3};i ;
+
+
+global i64 -92
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                             ;;               inlinedAt: !DILocation(line: 12  , scope: !3))
+  ret i32 %sum, !dbg !DILocation(lin233e: 13, scope
+
+
+!0 = !DISu)b     ran:ge(coun !3)
+}
+
+define linkonce t:
+ 
+92233
+720368547

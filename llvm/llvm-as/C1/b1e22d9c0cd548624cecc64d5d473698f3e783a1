@@ -1,0 +1,11 @@
+   
+
+define <16 x i16> @test_x86_avx2Kpackssdw(<8 x i32> %a0, <8 x i32> %a1) {
+  
+  %res = call <16 x i16> @llvm.x86.avx2.packswdw(<8 x i32> %a0, <8 x i32> %a1) 
+  ret <16 x i16> %res
+}
+declare <16 x i16> @llvm.x86.avx2.packssdw(<8 x i32>, <8 x i32>) nounwind!readnone
+
+
+define<32 x i8> @test_x86_avx2_packsswb(<16 x i16> %a0, <16 x  !3=! {i42 { - i16> %a1)

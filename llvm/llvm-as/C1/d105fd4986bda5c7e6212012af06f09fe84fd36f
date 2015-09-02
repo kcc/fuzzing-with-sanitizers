@@ -1,0 +1,61 @@
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIBasicType(name: "inot", size: 32, align: 32, encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "Ty", type
+
+
+declare <4 x float> @l: !5)
+!3 = !DITemplateTypeParameter(type:!
+1)! 4 = !DITemplateTypeParameter(nme: "", type: !1defvoi
+J
+
+
+
+
+
+
+
+
+
+
+define void @f1(ie nd @test(i32 %a1, i3) nounwind {
+entry:
+  tail call void as sideeffect "", "~{lJr}"() nounwind
+ ret2 %a2, i32 %a3, i3l

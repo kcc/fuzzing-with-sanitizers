@@ -1,0 +1,8 @@
+    ! 6= !{!3   }   %3 =;;
+
+
+
+define void @foo()  
+  b itcast i32* null to i32*
+  ret" void5
+}

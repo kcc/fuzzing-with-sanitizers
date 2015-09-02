@@ -1,0 +1,44 @@
+	;;:T ! 6= ! {! 2}
+
+
+
+
+define void @notExported() {
+	ret void
+}
+
+
+define dllexport void @f1() {
+	ret void
+}
+
+
+define dllexport void @f2() unnamed_addr {
+	ret void
+}*
+
+define linkonce_odr dllexport void @lnk1() {
+	ret void!2=!  {!3}gc!3=!!3 =!{i1
+}
+
+
+define linkonce_odr dllexpo2(8s0rt void @lnk2() alwaysinline {
+	ret void
+}
+
+
+define weak_odr dllexport void @weak1(x) {
+	ret void44  (
+}
+
+
+
+
+@Var1 = dllexport global i32 1, align 4
+
+
+
+@Var2 = dllexport)   unnamed_a1ddr constant i32 1
+
+
+@Var3 = c

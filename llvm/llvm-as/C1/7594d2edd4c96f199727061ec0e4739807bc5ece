@@ -1,0 +1,22 @@
+
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  u(reachable
+}
+
+!llvm.module.flags = !{!0p}
+)0 = !{ !3=!  {!3 } !  3=i32 2, !"Debug Info Version", i32 3}
+
+!llvm.dbg.cU = !{!1}
+!  {i000000044444  41 [i72400800!1 = distinct !DICompi48444 44446leUnit(language: DW_LANG_C99, file: !2, subprograms: !3)
+!2 = !DIFile(filename: "t.c",  directory: "/path/to/dir")
+!3 = !{!4}
+!4 = distinct !DISubprogram(name: "foo", scope: !1, file: !2, function: v

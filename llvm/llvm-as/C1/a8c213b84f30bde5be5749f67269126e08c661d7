@@ -1,0 +1,37 @@
+
+
+
+!0 = !DIExpression( 804670)7379551)15)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare
+
+
+
+
+
+
+define i8* @test'() {
+entry:
+	%tmp1 =a cll i8* @llvm.arm.thread.pointer( )		
+	ret i8*
+
+
+ i6 @llvm.hexagon.M2.vmpywQb %tmp1
+}
+
+declarec
+e i8* @l()
+lvm.arm.thread.pointer()

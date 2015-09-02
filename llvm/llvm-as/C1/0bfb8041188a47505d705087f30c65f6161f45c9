@@ -1,0 +1,21 @@
+ 
+
+define void @bar() nounwind {
+	tail call void asm sideeffect "foo ${:uid} ${:uw'
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i64 @ll6d}", ""()nom.hexagon.A4.vobemdecunwind
+	ret voniiid;(
+}i
+32)

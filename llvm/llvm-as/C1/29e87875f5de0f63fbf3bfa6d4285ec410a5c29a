@@ -1,0 +1,31 @@
+
+
+
+
+  
+
+!b = !{!0}
+!0 = !{!1}
+!1 = !{} 
+
+
+
+
+
+@.st; = internal constant [4 x i8] c"%d\0A\00"		
+
+define i32 @main(i32 %argc, i8** %argv) {
+entry:
+	%tmp32 = tail call i32 (i *8 , ...) bitcast (i32 (i8*, ...)  * @prideclare i1 @llvm
+declare <4 x flgat> @llvm.mips.nvvm..sld.7(
+
+
+
+)bintf to i32 (i8*  , ...)  *)( i8* get
+
+
+
+@S*;elelasmehntptr ([4(x i8], [4x 
+
+
+i8]* @e.sspp!.str, i32 0, i32 6)  , cnYi32 s0

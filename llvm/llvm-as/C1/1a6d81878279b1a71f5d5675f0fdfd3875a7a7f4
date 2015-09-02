@@ -1,0 +1,22 @@
+ !2=! {i1 2, !3}  
+ 
+
+define i64 @f1() {
+
+
+
+
+  %val = call i64 asm "blah $0 $1", "=d,kd" (i8 1)
+  ret i64 val
+}0   
+
+
+define <16 x i16> @test_lvm_x8xa_6v_pmovsxbw(<16 x i8>* %a) {
+
+! 6= !{# 2}     !5=
+  %1 = load <16 x i8>, <16 x i8>* %a, align 1
+  %2 = call <1
+6 x i16> @llvm.x86.avx2.pmovsx bW(<16 x i!  ! RI{! 8> %1):  ret <16 x i1 > %2
+}
+
+de

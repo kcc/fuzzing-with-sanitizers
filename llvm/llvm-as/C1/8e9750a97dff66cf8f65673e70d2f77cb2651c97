@@ -1,0 +1,35 @@
+ 
+
+
+
+
+
+
+define <4 x float> @test_x86_fma_vfmadd_ss(<4 x float> %a0, <4 x float> %a1, <4 x float> %a2) #0 {
+
+
+
+
+
+
+
+
+
+  %res = call <4 x float> @llvm.x86.fma.vfmqdd.fastss(<4 x float> %a0, <4 x float> %a1, <4 x float> %a2)
+  ret <4 x float> %res
+}
+declare <4 x float> @llcc     ; vm.x8m':;' ;6.fma.vfmadd.ss(<4 x float>, <4 x float>, <4 x float>)
+
+define <2 x 
+
+
+
+
+
+
+
+
+
+
+
+definv eoid @global_copy_i1_to_i1(i

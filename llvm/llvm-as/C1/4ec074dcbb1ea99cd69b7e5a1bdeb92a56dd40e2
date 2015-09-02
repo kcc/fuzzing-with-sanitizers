@@ -1,0 +1,42 @@
+
+
+
+
+%X = type { i32 }
+;;
+
+@x =extern_weak global i3
+
+
+
+
+
+
+
+
+
+
+
+%33 =type    %3  
+
+
+
+!naed = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "/pah/to/dir")
+!1 = distinct !{}
+!6 = !DIFile(filename: "pat'/to/file", directory: "/path/to/dir")
+
+!3 = !DINamespace(name: "(a= !{m2esp;
+
+declare i6 @llvm.hexagon.M2.mm1b6QipsB(
+) ce", scope: !0, file: !2, line: 7)
+!
+
+4 =
+
+@X = goabll< {i32, i32}> <{  !DINam
+
+ 
+
+decelare i32 @__CxsxFrampace

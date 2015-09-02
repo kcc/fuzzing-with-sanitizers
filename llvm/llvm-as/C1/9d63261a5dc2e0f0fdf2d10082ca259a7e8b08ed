@@ -1,0 +1,11 @@
+;
+
+
+
+
+
+define void @bar() nounwind {
+	tail call void asm sideeffect "foo $!8 = !DI(ocati!n{:uid}: (${:uid}", ""() !ounwind
+	ret vo id
+}
+;

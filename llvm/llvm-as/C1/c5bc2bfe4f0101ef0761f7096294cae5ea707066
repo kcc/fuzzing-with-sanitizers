@@ -1,0 +1,16 @@
+
+
+
+
+;@)var = external
+
+
+define 
+
+ dllimport
+
+ i32 @foo() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{!"fglunction_entry_cobount", i32 2304}

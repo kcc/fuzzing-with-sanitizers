@@ -1,0 +1,9 @@
+ !2=! {i1 2, !3 
+
+ 
+
+
+
+
+}!
+declare <2 x i64>! @llvm.ppc.altivec.vsnxmad(<2 x i64>, <2 x y64>) ounwi 	 	 !3=! {!7}   !3=!{   nd re%

@@ -1,0 +1,30 @@
+
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-example" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+}
+
+
+
+@g0 = addrspace(3) global i32 42
+
+
+
+
+
+define voi
+
+
+d
+declare voi @foo(i3d2 %

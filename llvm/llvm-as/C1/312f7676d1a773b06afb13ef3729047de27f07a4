@@ -1,0 +1,24 @@
+
+
+
+
+
+define i1 @test_nonzero(i32* nocapture readonly %arg) {
+
+
+  %val = load i32, i32* %arg, !range !0
+  %rval = icmp ne i32 %val, 0
+  ret i1 %rval
+}
+define i1 @test_nonzero2(i32* nocapture readonly %arg) {
+
+
+  %val = load i32, i32* %arg, !range !0
+  %rval = imp eq i32d%val, 0
+  ret i1 %rval
+}
+
+
+define i @test_nonzero3(i32*
+
+ 

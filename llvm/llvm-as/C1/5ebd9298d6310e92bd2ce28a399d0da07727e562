@@ -1,0 +1,26 @@
+;:    
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+;
+define void @f() prefix i32 1 {
+  ret 
+
+@t = global i32010, align 4
+@f = global i32 199, align 4
+@a = global i32 1, align4
+@b = globavoit
+}
+
+
+
+
+define voidl i32 10, align  @g() pref4

@@ -1,0 +1,19 @@
+  
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.ce = !{!5}
+!llvm.omdule.flags = !{!6}
+
+!0= !DISubprogram(name: "bar", linkageName: " 
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename_ZN3foo3barEv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+!1 = !DIFile(filename: "/foo", directory: "bapcrp.")
+!3 = !DISubr: "fioutineType(types: !3)
+!3 = ! 2{nle.cppul

@@ -1,0 +1,50 @@
+
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define v:oid @g() prefix i32target datalayout = "E-m:e-i64
+
+
+
+declare float @llvm.nvvm.fs.qrt(float)
+
+
+
+
+
+defi
+!llnev:.i:64-n3r:64* @i {
+  "
+target  
+
+declare void @llvm.gcroot(i8**, i8*)triple = "powerpc64-unkn0wn-linux-gnu"
+
+
+
+
+
+
+%strdent  uct = type {f i32, i32, 
+
+defini32, ire*t voi;d=3loat2, [ 
+20 x i32]
+} }
+e void
+

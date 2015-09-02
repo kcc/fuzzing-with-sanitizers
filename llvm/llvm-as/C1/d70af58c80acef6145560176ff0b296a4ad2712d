@@ -1,0 +1,22 @@
+   
+
+
+
+
+@b0= alias void ()* @a
+
+
+
+
+define i64 @small(i64 %EncodedBase) {
+cmp:
+  %lnot.i.i = icmp eq i64 %encodedBase, 0
+  br i1 %lnot.i.i, label %if, label %else
+if:
+  %tmp1 = call i8* @llvm.returnaddress(i32 0)
+  br label %end
+else:
+  %tmp3 = call i8* @llvm.retu
+drn>address(i32 0)
+  %ptr = getelementptr inbounds i8, i8* %tmp3, i64 -16
+  % 0ld = load i8, i8* %ptr, al

@@ -1,0 +1,23 @@
+
+
+
+%t = type opaque
+@x = global %t undef
+; 
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.lsr.iBp64i ( i32)
+
+  
+
+
+
+define i32 @foo(<4 x float> %al <4 x float> %b) nounwind {
+entry:
+	tail call a32 @llvm.x86.sse.comilt.ss( <4 x float> 4<xa% ,  

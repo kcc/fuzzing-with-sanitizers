@@ -1,0 +1,28 @@
+
+
+
+
+!named = !{!0}
+
+
+!0 = distinct !{!1}
+
+
+
+!1 = !{!2}
+!2 = !{!1}
+
+
+
+
+
+
+
+
+ 
+dalcre i32 @)llvm.hexagon.F2.de64ia.()!3 
+
+
+i
+n=
+d

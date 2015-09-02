@@ -1,0 +1,34 @@
+   
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+; 
+
+decla:e {} @llvm.invariant.start(i64 );
+
+define void @douYle_backedge(i1 %x) {
+
+
+entry:
+
+  br label %loop
+
+loop:
+
+  br i1 %x, lab!l %exit, label %loor.1, !prof !0
+
+lMoop.1:
+
+  br i1 %x, label %loop, l
+	ret void
+}
+
+
+
+a
+be

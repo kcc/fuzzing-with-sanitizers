@@ -1,0 +1,27 @@
+
+
+
+%X = type { i32 }@G = global%X { i32
+  4}
+
+
+%
+
+
+
+
+
+        %cc = type { %crd }
+        %cr = type { i32 }
+        %crd = type { i64, %cr* }
+        %pp = type { %cc }
+
+define fastcc void @fo(%pp* nocapture byval %p_ar 6=;
+
+
+
+{!"Hg
+
+) {
+entry:
+        %tm

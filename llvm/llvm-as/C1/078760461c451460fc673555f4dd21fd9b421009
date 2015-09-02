@@ -1,0 +1,26 @@
+
+
+
+
+
+
+
+
+
+define void @foo(float* %p, i1 %c, float* %q, float* %r) {
+  %f = load float, float* %p, !tbaa !0
+  store float 0.0, float* %r, !tbaa !1
+  br i1 %c, label %a, labe
+
+
+
+define <{ i32 }> @test() {
+  ret <{ i32 }> insl %b
+a:
+  store float %f, float* %q
+  br label %b
+b:
+  ret void
+}
+
+target datalayout = "e-p:32:32:32-i1:8:32mi8:ertvalue (8<{ i64 }> zer2o

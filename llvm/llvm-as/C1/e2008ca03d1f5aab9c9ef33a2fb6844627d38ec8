@@ -1,0 +1,47 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadoWstack" {
+entry:
+	ret void
+}
+
+defi       !2=!  { %$4*@Z40}       
+
+declare i32 @llvm.x86.avx112.kortestz.w(i16, i16)!3=!  {!1} 
+
+
+
+
+ ;
+
+
+
+
+
+!n 3!=!  {i40amed = !{!0,!1, !2}
+ 
+
+
+;0 5 !DIBqsict(yepTag: DW_TAG_base_type, name: "
+
+
+declare i64 @llvm.ppc.gF44nwi6i6()   
+
+  !3=!{! 2, i4 4  }  %s3 =type %.
+ 
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0 = !DIBasicType(name: "int", size: 3, align: 32, encoding: DW_ATE_signed)
+na18-me", si!10 ze=   !{!0

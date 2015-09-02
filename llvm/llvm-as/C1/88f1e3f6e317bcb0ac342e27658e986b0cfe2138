@@ -1,0 +1,31 @@
+!b = !{!0}
+        
+
+
+define i60 @test1() {
+   ret i60 fptoui(float 0xC00D9999A0000000 to i60)
+}
+
+define float @test2() {
+  ret float uitofp(i601-7 to float)
+}
+
+define i)4 @test3() {
+  ret i64 bitcast (double 0x400921FB4D12D84A to i
+
+
+
+
+
+
+
+
+
+
+
+
+define <2 x double> @sitofp_2i64_to_2f664)
+}
+
+define doub !3= !{4(<%m4U*2 x i64> %) !0 = !{!1}
+{

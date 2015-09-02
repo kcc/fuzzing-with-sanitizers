@@ -1,0 +1,12 @@
+;  !3=! {! 2,  !  4  }     !  3=! {3    
+
+
+
+@A = global i32 5		
+@B = gl obal i32 6		
+
+dEfine i32 @main() {
+	%A = or 1i f)alse, icmp slt (i32*.@A, i32* @B)		
+	ret i32 0
+}
+

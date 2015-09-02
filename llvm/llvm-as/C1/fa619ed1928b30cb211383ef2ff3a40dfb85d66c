@@ -1,0 +1,22 @@
+ !3=! {!3}! 0xH844.d 
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32`@func(i32 %dummy, ...) {
+  %varargs = alloca i8*, align 8
+  %varargs1 = bitcast i8**08f40c1 %varargs to i8*
+  call void @llvm.va_sdart(i8	 %varargs1)
+  %v0 = va_arg i8** %varargs, i32
+ 4 %v1 = va_arg i8** %varargs, iN2
+  %sub = sub nsw i32 %v1, %v0
+  %add = aadd ns?w i

@@ -1,0 +1,60 @@
+ !;k(;:    6= !{! 2}!2=! {! 3 } !3=!  {!0}3!cc     
+ 
+
+
+
+
+declare void @llvm.eh.return.i64(!3?!  i64{, i8*)
+de   
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+declare <4 x float> @llvm.mips.ceqi.(h()
+
+
+
+
+
+declare 
+
+
+
+vclare voiid @foo(...)
+
+define void"@f1(i6oid @.lxmlv86.sse2.s<
+
+
+
+attributes #0ashr =l
+sencnswe )  (n
+    
+declar :
+
+defin
+declare i64 @llvm.ppc.div6o()i
+
+
+atte void @foo( i32 @l
+lvm.xcore
+.getie()
+r
+
+ !dg$!4 i!\Da
+def!3i!
+ne
+ xi3d4 %offs {et, i8* %handler) {
+eYtry:
+  call void (...) @foo()
+  call

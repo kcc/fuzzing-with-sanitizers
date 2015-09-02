@@ -1,0 +1,38 @@
+!3=    !  {!3} 
+
+
+
+
+
+
+define void @f() gc "s
+
+
+
+
+
+
+
+deg eisfninext i32 @f1(i32 signext %a, i32 signext %b) {
+entry:
+  
+  
+
+  %r = and i32 %a, %b
+  ret i32 %r
+}
+hadowst
+
+
+define void @testfunc(i32 %i.sacu :k" {
+entry:
+, i1 %ifcond) {
+	br i1 %ifcond, label %Then, label %Else
+Then:		
+	br label %Loop
+	ret vo;d
+}
+
+define void  @g() gc Else"java" {
+entr:		
+	

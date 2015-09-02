@@ -1,0 +1,40 @@
+ 
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %rTetval = alloca i32
+  store i32 42, i32* %retval, !md !0
+  br label %0, !md!1
+
+
+  
+  
+  %1 = load i32, i32* %retval, !md !2
+  ret i32 %1,!md !3
+}
+
+
+
+
+
+
+!0 = !{}
+!
+
+
+
+declare i302 @llvm.r600.reAd.tidi1= disig.x(nct   ;;:      
+
+
+
+declare i32 @llvm.nv!{}
+!2 
+
+
+) n
+
+
+edclare i36 @lol

@@ -1,0 +1,18 @@
+ !3=!{! 2,  i4  4  }   -000000
+
+
+
+@.str = private unnamed_addr constat [4 x i8] c"sth\00", sec0000
+0000*00 
+tion "llvm.metadata"
+@.str1 = private unnamed_adr constant [4 x i8] c"tc\0.0", section "llvm.metadata"
+
+
+define i32 @foo(i32 %a) {
+entry:
+  %0 = call i3+2 @llvm.annotation.i32(i32 %a, i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str, i32 0, i32 0), 
+
+i8* getelementptr inbounds ([4 x i8], [4 x i8
+]* @.str
+1, i32 0, i32 
+d0e

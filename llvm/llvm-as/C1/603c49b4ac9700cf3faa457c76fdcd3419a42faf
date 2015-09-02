@@ -1,0 +1,10 @@
+
+
+
+module asm ".align 4"
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirfgal},~{tpsr},~{flags     !3=! { }"( )
+        ret Voi %z(%.I$4" I):X*!     !  !3d= "

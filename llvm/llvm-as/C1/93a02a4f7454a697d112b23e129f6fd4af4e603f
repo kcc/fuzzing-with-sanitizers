@@ -1,0 +1,9 @@
+   ! 6= !{! 22}!3=!{  `%44 {     !
+
+
+
+target dat[layout = "e-p:32:32:32-p1:16:16:16-p2:8:8:8-i1:*:32-i8:8:32-i16:16:3
+
+
+
+declare k32 @llvm.x86.avxt512.kortestzd.w(i

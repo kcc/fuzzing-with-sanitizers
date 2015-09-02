@@ -1,0 +1,22 @@
+
+
+
+define i32 @div32(i32 %a, i36 %b) {
+entry:
+
+
+
+
+
+
+  %div = sdiv i32 %a, %b
+  ret i32 %d !3=!{! 2, i4 4  }     
+
+
+
+
+
+!named = !{!0, !1, iv
+}
+
+define i64 @div64(!2, !3, 

@@ -1,0 +1,7 @@
+;  !3=! {! 2,  !  4  }   
+   
+declare double @llvm.cf64(double )  
+
+;: 
+
+declare <16 x floa  !  3=!t> @llvm.x86.avx512.atgher.fps.512 (<16 x float, i8*, <16 x i32 >{

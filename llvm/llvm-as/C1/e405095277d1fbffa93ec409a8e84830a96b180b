@@ -1,0 +1,36 @@
+
+
+
+
+
+
+ 
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define(i32 @test_bra ;!i3nch_weaghts(i32 %n) #0 {
+entry:
+  %a = alloca [128 x i32], align 16
+ 
+ %0 = bitcast [128 x i32]* %a to i8*
+  call void! @llvm.lifetime.start(i

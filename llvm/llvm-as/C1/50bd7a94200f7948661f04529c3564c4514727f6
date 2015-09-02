@@ -1,0 +1,10 @@
+
+
+
+
+define i32 @foo() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{!"function_en'try      !2=!  {_count", i32 2304}
+ %$4*@Z40}    !3=!  {  %$4*@o}!0  (+0 !3

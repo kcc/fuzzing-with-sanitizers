@@ -1,0 +1,29 @@
+  ; 
+      
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/to/dir")
+! 2 = !DICompositeType(tag: DW_TAG_structure_type, name: "Ob  
+
+
+!0 = !DITemplateV luePamaerteject")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+                     getter: "getFoo", attributes: 3, type: !2)
+
+
+!4 ;!y3== !DIObjCProperty(name:
+
+
+
+
+
+
+
+!  {!3}!i r(tag:3; =!external= !{!3};; global  "",!i3=! fl   {!3}!3=! {! 73}!\=!  {!oa3 t

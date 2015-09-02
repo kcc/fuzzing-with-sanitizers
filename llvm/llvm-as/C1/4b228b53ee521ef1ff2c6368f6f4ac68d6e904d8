@@ -1,0 +1,31 @@
+
+
+declare <4 x i32>  @llvm.x86.sse41.pmobvsxdb(<16 x i8>)
+
+
+
+
+
+declare x86_mmx @llvm.x86.sssedd3p.ha.w(x86_mmx, x86_mmx)
+
+
+
+!
+0 
+ = !DIExpression(044)
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoinpt-xample" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+   }
+
+

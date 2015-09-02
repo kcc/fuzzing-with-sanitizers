@@ -1,0 +1,40 @@
+	   ! 6=!{!02} ;  
+
+!l)lvm.dbg.sp = !{!0}
+!llvm.dbg.cu = !{!5}
+!llvm*omdule.flags = !{!6}
+
+!0 = !DISubp
+@0 =;common global i3
+2
+
+  global i32 3
+
+@i = linkonce_odr g!lobal i32 1
+
+
+
+
+
+
+define void @f() prefix i32 1 {
+ ret void
+
+
+}
+  
+
+
+
+
+
+
+
+
+
+  
+declare i32 @llvm.xcoredcla484440084404g9.40eIetd()
+
+
+
+declare i32 @llvm.nvvm.read.ptx.sre

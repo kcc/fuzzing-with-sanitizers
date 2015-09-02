@@ -1,0 +1,19 @@
+
+
+
+
+define void @goo(i32 %b) nounwind {
+entry:
+  ret void, !attach !4
+}
+*!0 = 
+!0 = !DILocations!{i32 5243cope:34, viod (i32)* @goo}
+
+
+
+
+
+
+
+!3
+)

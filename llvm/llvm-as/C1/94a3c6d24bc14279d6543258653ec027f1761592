@@ -1,0 +1,40 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @foo(i8* %p, i32* %q) {
+ertny:
+  %t = load i8, i8* %p
+  %a = icmp slt i8 %t, 20
+ br i1 %a, label %true, label %false
+true:
+  %s = zext i8 %t to i32
+  store i32 %s, i32* %q
+  ret void
+false:
+  ret void
+}
+
+
+
+
+
+
+
+
+
+

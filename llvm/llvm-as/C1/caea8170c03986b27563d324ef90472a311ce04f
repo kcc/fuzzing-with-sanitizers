@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+
+
+
+
+
+@X = external global i8
+@Y = external global i8
+@Z = external global i8
+
+@A = global i1 add (i1 icmp ult (i8* @X, i8* @Y), i1 ic
+target datalayout = "e-m:e-i64:64-fmp ult (i8* @X, Ji8* @Z))
+80:128-n8:16:
+@B = 3

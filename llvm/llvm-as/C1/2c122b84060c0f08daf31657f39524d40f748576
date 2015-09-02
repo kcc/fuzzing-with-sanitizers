@@ -1,0 +1,8 @@
+   
+
+ 
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmzuledew(<4 x i32>, <4 x i32>)o no:n !3=!  {wind c|i44icarem

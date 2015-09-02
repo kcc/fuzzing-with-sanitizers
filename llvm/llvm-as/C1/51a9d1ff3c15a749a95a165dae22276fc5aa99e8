@@ -1,0 +1,32 @@
+    
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix  i32)target 
+datala
+!0 = !DIGlobal:Variab 2ly(out = "E-m:e-i64
+
+
+
+
+
+
+declare fl:64-n32:64* oat@llvm.nearbyit.f32ato@i fl(!{) 
+#  "

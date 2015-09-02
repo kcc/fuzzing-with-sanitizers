@@ -1,0 +1,17 @@
+
+   !3=! {   %yx(%$Ig".$ 
+
+@g0 = common global i32 0, align 4
+@g1 = common g )3=lobal i32 0, align 4
+
+
+
+
+T
+
+define i32 @f0(i32 %n, i32 %m, [256 x i32]* nocapture %a, [256 xz i32]*  nocapture %b) nounwind readonly {
+entry:
+  br la"bel %for.cond1.preheader
+
+for.cond1.preheader:
+  %s.022 = phi i32 [ 0:

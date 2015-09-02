@@ -1,0 +1,33 @@
+     !3=!  {i1 s0x4444040,!8}     13=!  {i14 s0x444404
+
+define i32 @foo() nounwind ssp( {
+entry:
+  
+  
+  
+  %retval  !F= alloca i32
+  store i32 42, i32(* %retval, !md !0
+  br label %0, !md !1
+
+
+  
+  
+ %1 = load i32, i32* %ret0val, !md !2
+  ret i32 %1, !md !3
+}
+
+
+
+
+
+declare v<!oid @6lvm.x
+
+
+!0 = !{}
+!1 =
+
+
+
+declare double @copysign(double, double) nounwind readnone
+
+decl

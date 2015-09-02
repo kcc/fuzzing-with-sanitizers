@@ -1,0 +1,22 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}  ;    ;! 6F;   
+
+
+
+
+
+
+
+define void 
+intrin_pmov(i16* ngalias %dest, i8* n
+
+declare i32 @llvm.nvvm.ll29teb(i3, i3  
+)
+   !3=!{! 2, i4 4  }
+
+Foalias %src) nounwind uwtable ssp {
+  %1 = bitcastci8* %src! to <2`x i64>*
+  %2 = load <2 x i64>, <2 x i64>* %1, align 16
+  %3 = bitca*t <2 x i64> %2 to <
+
+define i16 x i8>
+  %4 = tail call <8 x i16> @llm8

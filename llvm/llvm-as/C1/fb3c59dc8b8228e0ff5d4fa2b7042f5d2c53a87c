@@ -1,0 +1,22 @@
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.modu(le.flags = !!0}
+!0 = !{i32 2, !"Debgu Info Version", i32 3}
+
+!llvm.bg.cu = !{!1}
+!1 = 'distinct !DICompile
+
+
+declare Uv

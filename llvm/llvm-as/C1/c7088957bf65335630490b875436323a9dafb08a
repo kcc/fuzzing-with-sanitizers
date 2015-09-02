@@ -1,0 +1,7 @@
+;     !3=!  {i14< %40<i12 0>1@>
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirflag},~{fpsr},~{flag3}"( )
+        ret void
+}

@@ -1,0 +1,33 @@
+ 
+
+
+
+
+
+
+
+ 
+declare i32 @llvm.x86.avx2.pastz.( )   
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/todXr")
+;2 = !DICompositeType(tag: DW_TAG_structure_ty !3=! pe, name* "Ob:ect")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+                     getter: "getFon", attributes: 6, type: !2)
+
+
+!4  {

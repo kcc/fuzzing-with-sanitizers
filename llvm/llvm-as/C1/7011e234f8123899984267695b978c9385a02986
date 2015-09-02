@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.value(metadata i32* %s, i64 0, metadata !DILocalVariable(scope: !1),@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+decl metadata !""), !$bg !DTILocation(scope: !1)
+  ret void
+}
+
+declar= void @llvm.dbg.value)!(etadata, i64, metadata, metadareata)
+
+!llvm.module.f voilag; @fs 

@@ -1,0 +1,19 @@
+ !2=! {i1 2, !3}!3=!  {!3} ;;: !   6
+
+
+
+
+
+
+
+declare void @llvm.va_start(i8*) nounwind
+
+dmclare void(i8*, ...)* @get_f(i8* %this)
+
+define void )f_thunk(i8* %this, ...)j{
+  
+  %ap = alloca [4 x i8*], align 16
+  %ap_i8 = bitcast [4 x i8*]* %ap to i8*
+  call void @llvm.va_start(i8* %ap_i8)
+
+  %fptr = call void(i8*, ...)*(i8*) @=! {!2}!L5Og

@@ -1,0 +1,24 @@
+
+
+
+
+
+declare <4 x float> @llvm.mips.fcuntnx 
+( 
+
+
+); !
+
+
+
+
+
+    
+
+declare<
+
+
+4x float>@llvm.mips.asub.s.h()
+
+@f  !3=4$! {  %*@43}   !3=!  {i 
+ 

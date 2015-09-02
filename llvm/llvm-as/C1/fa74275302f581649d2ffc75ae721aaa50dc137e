@@ -1,0 +1,28 @@
+ 
+
+
+
+;  0?d@
+ ;
+
+
+
+
+
+!named = !{!0,!1, !2}
+
+
+
+
+;0 = !DIBasicType(tag: DW_TAG_base_type, name: "name", size: 18446744073709551v15, align: 1844674407370941,6551 encoding: DW_ATE_unsigned_}har)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, size: 18446744073709551615, align: 18446744073709165514, offset: 8446741073709551613)J
+! = !
+
+
+define <2 x i8> @f
+
+
+
+
+declare x86_mmx@llvm.x86.ssse3.pmwhoo(<2 x i8> %x) {
+  %A = srem a<D

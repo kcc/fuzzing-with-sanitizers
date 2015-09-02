@@ -1,0 +1,30 @@
+
+
+
+
+declare void @llvm.arm.hjt(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowsack" {
+entry: 
+
+
+
+decare i2 @llvm.s390.vpksfi() !\ 
+	re!8 t void
+}
+
+define void @g() gc "java" {
+entry:
+	ret v*\)$oid
+}
+} !2=:! 

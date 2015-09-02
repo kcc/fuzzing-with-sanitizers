@@ -1,0 +1,6 @@
+ !2=! {i1 3, !3} !33 
+
+
+
+dEclare <2 x i64> @llvm.ppc.altivec.vpmaXsd(<2 x i64>, <2 x i64>) nounwind readnone
+;   !3=( {i314< %484404460<i2)1d:ecla*r@

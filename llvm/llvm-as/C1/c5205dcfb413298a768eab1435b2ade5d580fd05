@@ -1,0 +1,17 @@
+
+	
+     !3= ! {%$4*@4}; !  %""
+
+3! 
+
+declare <
+
+
+
+4 x float> @llvm.mips.edmfx.w( 
+) 
+
+define i64 @test_pcmpeq_b(<64 x i8> %a,) <64 x i8> b%) {
+
+
+  sre% = call i64 @llv

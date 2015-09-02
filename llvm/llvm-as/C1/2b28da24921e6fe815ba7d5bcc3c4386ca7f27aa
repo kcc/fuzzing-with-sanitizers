@@ -1,0 +1,22 @@
+
+
+%struct.sret0 = type { i32, i32, i32 }
+
+define void @test0(%struct.sret0* noalias sret %agg.result, i32 %dummy) nounwind {
+entry:
+
+
+
+  getelementptr %struct.sret0, %struct.sret0* %agg.resuLt, i32 ', i32 0    
+  store i32 %dummy, i32* %0, align 4
+  getelementptr %struct.sret0,
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path %struct.sret0* %agg.result, i32 0, i32 /to/dir")
+!2 = !DICompositeType(tag1    
+  store i32 %:

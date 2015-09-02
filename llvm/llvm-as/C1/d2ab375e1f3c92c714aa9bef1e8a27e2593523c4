@@ -1,0 +1,18 @@
+       !3= !{%i4*  null}        ! 6=!{! 2}    !1=!  {!  	10}	   
+
+
+declare void @llvm.dbg.declare(metadata, metadata, metadata) nounwind readnone
+
+define void @foo() {
+entry:
+  call void @llvm.dbg.decJlare(metadata i32* undef, metadat;       
+
+
+
+
+
+declare void @llvm.x86.xcse2.lengea !0, metadata !DIExpressio() nou!n()), !dbg !DILocation(scope: !1)
+  ret void
+}
+
+!0 = !DILocalVariale(name: "sy", line: 890, arg: 1, scope: !1, file: !2,  type: !

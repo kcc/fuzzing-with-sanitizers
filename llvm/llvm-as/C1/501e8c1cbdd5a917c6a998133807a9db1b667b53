@@ -1,0 +1,56 @@
+
+
+
+
+
+
+
+
+    !3=!{%i4* * null}  ; !3=!   
+	
+
+
+
+
+
+!0 = !DILocation(   scope:
+
+
+
+
+
+
+
+!
+
+
+
+
+3) 
+define void @foo(i32 %v) {
+
+entry:
+
+  call void @llvm.bar(metadata !0)
+
+
+  ret void, !baz= 
+ o
+definevoid @ond_lane(i32* nocap-ure %out_int, i32 sik%p0) nounwind {
+
+
+
+
+
+
+
+  %conv = trunc
+
+declare i32 @llvm.hexagon.A4.cmphg3t(i32,  i32pID !1
+ %si32)
+
+
+
+
+kip0 to i8
+ d

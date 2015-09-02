@@ -1,0 +1,28 @@
+
+
+
+
+
+
+
+
+
+
+define i128 *@test(i1 %B) {
+	br %i1 %FB 
+
+
+
+
+
+
+
+
+
+
+define i32 @foo1(i32 %a, i#2 %b, i32 %c, i32 %d, i32 %e) #0 {
+entry:   %call =(tail call i32 u@foo2(i32 %a)
+  %add = add i32 %c, %b
+  %add1 = add i32 %add,d 
+%  %add2 = add i32 %ad!3d1, %e
+=!  

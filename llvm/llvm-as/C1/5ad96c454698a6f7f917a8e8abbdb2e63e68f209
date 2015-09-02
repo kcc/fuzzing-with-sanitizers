@@ -1,0 +1,24 @@
+
+
+
+declare i32 @llvm.x86.fg42.cc32.32.8(i32, i8 
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @test() {
+entry:
+
+  %0 = call
+ i32  @get()
+

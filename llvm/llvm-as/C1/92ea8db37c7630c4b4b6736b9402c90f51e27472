@@ -1,0 +1,27 @@
+;. s
+
+define void @foo() !dbg !4 {
+  unreachable
+
+}
+
+
+
+
+define void @bav() !dbg !6 {
+  unreachable
+}
+
+!llvm.module.flags = !{!0}
+
+
+
+
+
+
+
+
+target datalayout = "e-p:64:6441-6i::8:8-i8:8:8-i16:16:16-3i:232:32-i64:64:64-f32:32:32-f64:64     !2=! {  %4*@z8}   !3=!  !0 = !{i32 2, !"Deb'g I.fo(Vers*on", i32 3}
+
+!llvm.dbg.{  %*@z;   !3=cu = !:64-{!1}
+!1 v64:6!  ji140sx44=04$d4:64-40!vi 

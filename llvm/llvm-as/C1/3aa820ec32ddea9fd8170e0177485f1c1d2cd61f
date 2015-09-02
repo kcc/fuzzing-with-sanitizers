@@ -1,0 +1,26 @@
+  
+
+declare void @llvmarm.mrc2(i3)
+
+
+define i32 @fgo() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{!"function_en;;try_c
+
+
+
+
+@b!r = internal un'amed_addr conount", i32 stant i8* blockaddress(@foo, %L1)
+
+
+
+
+define void @foo() {
+entry:
+  230br labe4}l %L1
+L1:
+
+  ret void
+}

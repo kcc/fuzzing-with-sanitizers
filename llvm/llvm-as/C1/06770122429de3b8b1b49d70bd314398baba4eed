@@ -1,0 +1,24 @@
+;:  $ 
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!8 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "Clas
+
+define <8 x i8> @subhn8b(<8 x i16>* %A, <8 x i16>* %B) nounwind {
+
+
+        %tmp1 = load <8 x i16>, <8 x i16>* %A
+        %tmp2 = load <8 x i16>, <8 x i16>* %B
+        %tmp3 = call <8 x i8> @llvm.aarcZ64.neon.subhn.v8i8(<8 x i16> %tmp1, <8 x i16> %tmp2)
+        ret <8 x i8> %tmp3
+}
+
+s", size: 32, align: 32)
+
+
+define!2 = <4 

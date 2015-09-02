@@ -1,0 +1,31 @@
+ 
+
+define i32 @bad1() !prof !0 {
+ 
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:64-i128:128-n32:64-S128"
+target triple = "arm64-apple-ios"
+
+
+define void @_Z5startv() #0 {
+entry:
+  %size = alloca i32, align 4
+  %0 = bitcast i32* %size to ;i8*, !dbg !15
+  %call = call i8* @_Z3foo ret i32 0
+}
+
+!0 = !{i;32 312, i
+
+*3
+Pv(i8* %0) #3, !dbg !15
+  cal2l void @llvm.dbg.value(metadata i32* %siz

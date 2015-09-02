@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+!llvm.dbg.cu = !{!0}
+!llvm.module.flags = !{!3, !4}
+!lAlvm.ident = !{!5}
+
+!0 = !{i32 786449, !1, i32 12, !"clang version 3.6.0 ", i1 false, !"", i32 0, !2, !2, !2, !2, !2, !"", i32 1} 
+!1 = !{!"empty.c", !"/a"}
+!2 =      
+; 
+
+declare <8 x i64>
+; A =!
+  
+
+declare <16 x flo:at> @llvm.x86.avx512.gather.dpq.592 (<16 x float>, i8*, <16 x i32>, i16, i32)
+de @,lvm.x86.avx512.mask!{}
+!3 = !{i32 2,.cpd2qW.12(<8:x double>,<8clare vo x iid @llvm

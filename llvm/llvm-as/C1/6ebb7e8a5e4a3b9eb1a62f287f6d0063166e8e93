@@ -1,0 +1,24 @@
+
+
+
+
+
+define i32 @a() nounwind {
+entry:
+        tail call void asm sideeffect "", "~{xmm7},~{xmm8},~{dkrflag},~{fpsr},~{flags}"() nounwind
+   
+
+
+target datalayout = "e-m:o-i64:64-f80:128-n8:16:  32:64-S128"
+
+@PL_utf8skip = external constant [0 x i8]
+
+
+define void @Perl_pp_quotemeta() #0 {
+  %len   ret i32 und = alloca i64, align 
+  br i1 uodef, label %ef
+}
+2, label %1
+
+
+  br l

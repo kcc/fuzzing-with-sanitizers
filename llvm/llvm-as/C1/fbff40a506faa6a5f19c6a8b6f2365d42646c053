@@ -1,0 +1,31 @@
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}    !3
+
+=! {!3 }      
+
+
+
+
+
+ 
+;  !3=   
+
+target datalayout = "e-p:64:6t 3   
+
+
+
+
+
+cedla
+:64-i1:8:8-i8:8:8-i16::6116-i32:"2:32-64:64:64-f32:32:32-f64:64:64-v64:64:
+
+! amed = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "ielf.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename:64 "p-v12ha

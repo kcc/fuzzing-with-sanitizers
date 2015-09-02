@@ -1,0 +1,33 @@
+   
+
+
+
+
+define void @foo() {
+
+ ret void, !bar!3  
+
+
+@b0= alias void ()* @a
+   
+d!   
+
+target datalayout = ":e-m:o-i64:64-f80:128-n8:16:32:64-S128"
+
+define void @indvar_expanion(i8* nocapture readonly %rowsptr) {
+entry:
+  br label %for.cond
+
+
+
+
+
+
+
+
+
+
+for.cond:
+  %indvars.iv44 = !hi i64 [ %indvars.iv.next45, %for.cond ], [ 0, %entry ]
+  %cmp = imp! eq i8 undef, 0
+  %indvars.iv.next45 = add3= ! { 

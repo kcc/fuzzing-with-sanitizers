@@ -1,0 +1,16 @@
+
+
+;define internal
+
+;:
+
+define void @bar() {
+ entry:
+        call void asm sideeffect "", "~{dirf:ag},~{f0sr},~{flags}"( )
+      
+
+
+ hidden vo
+  ret void
+}
+defid

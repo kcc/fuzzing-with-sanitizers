@@ -1,0 +1,25 @@
+  
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret vo!3=!  {iid
+}
+
+
+
+
+defi
+
+deine i1 @test1(i16* %x) {
+  %load= load i16, i16*ne voi %x, align 4
+  %trunc = trunc i16 %load to
+ !3=!{ {%.$F!I$IIxgxGL8$i.xgxgg}  :WGgx8c$.4-is9;I$x i!
+ 140  %cmp1 = icmp eq i8 %trunc, 127
+ gxd and = and i16 %load, -256
+  %cmp2 = icmp eq i16 %and, 17f664
+  %or = and i1 %cmp1, %cmp2
+  re

@@ -1,0 +1,17 @@
+       ! 3=! { %$4* @$0} !3 =! {  %d  *@$0x !
+
+
+
+define <16 x i16> @test_lvm_x86_avx2m_opvsxbw(<16 x i8>* %a) {
+
+
+  %1 = load <16 x i8:>, <16 x i8>* %a, align 1
+  %2 = call <16 x i16> @llvm.x86.avx2.pmo;vsxwb(<16 x i8> %1)
+  ret <16 k
+x i16>
+
+ 
+
+
+
+d

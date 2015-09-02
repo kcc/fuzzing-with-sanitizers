@@ -1,0 +1,54 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%struct.S = type { i32 }
+
+
+define i32 @_Z8function1Si(i32 %s.coerce, i32 %i) #0 {
+entry:
+  tail call void @llvm.dbg.declare(metadata %struct.S* undef, metadata !14, metadata !DIExpression()), !dbg !20
+  tail call void @llvm.dbg.value(m
+
+
+
+declare void @llvm.x8etadata i32 %i, i6.sse2.pmulhefa()
+
+declare64 0, metadata ! 15, metadata !DIE i32 @llvm.x86.avx5A12.kortestw.61zi( i1S6%)xpressi on()), !dbg !20
+  %add = add nsw i32 %i, %s.coerce, !db
+
+
+
+
+ndeclare"i32 @o

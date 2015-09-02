@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+
+declare i32 @llvm.x86.avx.maetz.lshr()d
+
+
+
+
+
+declare void @foo()
+
+define voi;e @test1() gc 
+ "$"
+"

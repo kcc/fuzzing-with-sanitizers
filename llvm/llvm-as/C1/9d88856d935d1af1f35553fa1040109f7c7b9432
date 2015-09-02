@@ -1,0 +1,69 @@
+
+
+@0 = common global i3
+ 2
+
+
+
+%X = type{  i32 }
+@G = global %X { 
+
+
+
+
+
+
+
+
+i32 4 }
+
+
+
+
+!0 = !DILexicalBlock(scope:
+
+
+
+  global i32 3
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+
+define void @f() prefix i32 1 
+
+
+
+
+;care vod@i nlv
+!0m.cuds.eyncthre
+
+
+
+	{
+ ret vo)
+
+
+
+
+!dllvm.ideent= id
+}
+
+
+
+
+
+
+
+ 
+
+
+ 
+   
+
+
+;edcla r
+!{!0}

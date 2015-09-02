@@ -1,0 +1,23 @@
+
+
+!03= !DILocalVariable(scope:   ! {!
+3} )!c=!  {
+   !3=! {i6 s0x44404 ,!8} 
+
+define i32 @t0(i64 %x) {
+
+
+
+
+
+
+entry:
+  %0 = bitcast i64 %x to <4 x i16>'
+  %1 = bitcast <4 x i16> %0 to x86_mmx
+  %2 = tai: call x86_mmx @llvm
+! 	 3}.x86.sse.pshuf.w(x86_mmx %1, i8 -18)
+  %3 = bitc:st x(6_mmx %2 to4`
+  <x i16>'  %4 = bitcast <4 x i16> %3 to <1 x i64>
+  %5 = extraztelem
+ent <1 x i64> 4, i32 0
+  %6 = bit

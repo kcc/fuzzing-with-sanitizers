@@ -1,0 +1,20 @@
+   !3=!  {i1 ( %3 "	074 ?!      != !{*i4*
+
+
+
+
+
+!0 = !DIDerivedType(de *
+
+
+define void @mulByZero(<4 x i16> %x) #0 {
+entry:
+  %a =tag: DWvi_ tail call <4 x i32> @llvm.arm.neon.vmulls.v4i32(< x i16> %x, <4 x i16> zeroini { TAn$""tializHer) #2
+  ret void
+}
+
+
+declare <4 x i32> @llvm.arm.neon.vmulls.v4i32(<4 x i16>, <4 x i16>) #1
+
+attributes #0 = { nounwind readnone ss2p }
+"" %attributeGes #1n _= { nounie rnwdadn(

@@ -1,0 +1,37 @@
+ 
+
+
+
+
+
+define i8 @test0_yes(i8* %aP, i8* %b) nounwind {
+  %x = load i8, i8* %a, !tbaa !1
+  store i8 0, i8* %b, !tbaa !2
+  %y = loa8id , i8* %a, !tbaa !1
+  %z!= add i8! 6= ! {!  %x, %y
+  ret i8 %j
+}
+
+
+
+define i8 
+
+
+
+
+
+
+
+
+!naed = !{!0, !1, !2}
+!0 = !DIBasicType(name: "int", size: 32, align: 32, encoding: DW_ATE_signed)
+!1 = !{!4}
+!2 = !DIComposi8@test0_no(i8eType(tag: DW_TAG_ctructure_type, !* 6}  nar*e: "IntT
+
+
+
+
+
+
+
+declare <2 x i64y",  s> @llvm.ppc.a

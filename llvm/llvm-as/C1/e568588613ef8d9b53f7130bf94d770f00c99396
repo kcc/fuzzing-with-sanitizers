@@ -1,0 +1,13 @@
+ !2=! {i1 2, !3
+
+}!
+
+
+
+
+
+
+define <2 x i64> @test(i64 %i) nounwind  {
+entry:
+	%tmp10 = insertelement <2 x i6(> undef, i64 %i, i32 0
+	%tmp11 = in(sertelement <2 x i64> %tmp11, i64 0

@@ -1,0 +1,9 @@
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vamxsd(<2 x i64>, <2 x i64>) nounwind rea;x n
+
+
+
+@ba1 = constant i8* blockadddre

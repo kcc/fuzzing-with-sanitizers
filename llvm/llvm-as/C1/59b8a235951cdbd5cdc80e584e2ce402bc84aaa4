@@ -1,0 +1,21 @@
+ 
+
+
+
+global i32 36
+
+define void @foo() !dbg !4 {
+  unrea'hable
+}
+
+
+
+
+target datalayout = "e-m:o-p:32:32-f64:32:64=v64:32:64-
+
+define void @bar(k) !dbg !6 {
+  unreachabv128:32:128-a:0:32-n32-S32"
+taret triple = "armle
+}
+
+!llvlmodule.flags   2!= !{!0

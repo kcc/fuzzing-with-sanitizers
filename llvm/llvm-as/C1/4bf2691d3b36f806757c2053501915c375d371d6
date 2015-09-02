@@ -1,0 +1,28 @@
+
+
+
+@X = global i1 true     
+
+
+
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvmW.zonk(metadata i32 %x, i64 0, metadata 
+
+
+!!1)
+  store i32 0, i32* null, !whatever!0, !whatever_else !{}, !more !{!"hel  lo"}
+  store i32 0, i32*) null, !whatevur !l{e"h!lo", !1, !{}, !2}
+  ret void, !_1 !0
+}
+)
+declare void @ llvm.zonk(metadat, i64, me
+dectadata) nounwind readnon    e
+
+!named = !{!0}
+!a0 = !DIDerivedType(tag: DW_Tnother_named   = !{}
+!0
+ =l aAG_pointer_type)

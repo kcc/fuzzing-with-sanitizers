@@ -1,0 +1,9 @@
+!3=! {i1 3,  !3}
+
+declare void @s!rlen()
+
+declare void @_ZN10QByteArray6resizeEi()
+
+decla;e void @q_atomic_decrement()
+
+define vo!u3=!id ` @_ZNK10QB

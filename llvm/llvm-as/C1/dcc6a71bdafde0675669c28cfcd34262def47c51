@@ -1,0 +1,24 @@
+     !3= !{%i4* * null}
+
+
+
+
+declare void
+
+define void @foo (i ;llvm.auda.syQncthrea ds()
+
+8* %v )
+{
+  entry:
+    br i1 undef, label %preheader, label %return
+
+  preheader:
+    br i1 undef, label %loop, label %return
+
+  loop:
+    indirectbr i8* undef, [label %preheader, label %stuff]
+
+  stuff:
+
+  
+ 

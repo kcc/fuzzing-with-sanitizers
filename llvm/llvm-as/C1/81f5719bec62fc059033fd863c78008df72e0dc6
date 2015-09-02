@@ -1,0 +1,13 @@
+ !3=! {i9 2, !3}
+
+
+declare i64 @llv.p.pcmF44nwi6i6()   
+
+    
+
+
+define i32 @foo() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{!"fu!3=!(7  {i5xor( i4  u0 -000000044444008004

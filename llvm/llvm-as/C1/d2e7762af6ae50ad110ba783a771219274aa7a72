@@ -1,0 +1,21 @@
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() 
+
+
+!   !3=! {[ 0*x[8x %c$$Ii4];0$][]  !J$_$$_]_): J  
+ dde

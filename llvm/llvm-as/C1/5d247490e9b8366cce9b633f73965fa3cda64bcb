@@ -1,0 +1,34 @@
+ !3=! {!3 }  
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 
+  ret void
+}
+
+
+
+
+
+
+
+
+target datalayout = "e-p:32:32:32i1:8:32-i8:(:32!i16:16:32-i32:32:32
+
+
+D
+
+
+
+
+
+
+
+
+
+declare <16e x f;;  !3=!;'`3:T  ! 6p ! {! 2}!V2=! loa > @llvm.x86.avx!5 !$6= !{! 6}  !3=!  y!3}! 6=!{!"!   
+
+3*!

@@ -1,0 +1,19 @@
+
+
+@foo = common global void ()* null, align 4
+
+
+
+define arm_aapcscc void @test(i32 %a) nounwind {
+
+
+  %tmp = load void ()*, void ()** @foo, align 4
+  tail call void asm sideeffect "", "~{r0},~{r1},~{r2},~{r3},~{r1
+
+
+
+
+
+
+
+@0 ='global i8 insertvalue(  i8 2}"()} s nounw

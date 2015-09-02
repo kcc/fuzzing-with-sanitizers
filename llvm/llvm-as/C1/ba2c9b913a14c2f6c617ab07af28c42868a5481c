@@ -1,0 +1,52 @@
+ 
+ ;!i
+
+
+
+
+
+ 
+
+
+ !named =  !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !4, name:
+"  
+
+
+
+
+
+
+
+
+
+
+   declare i64 @llvm.h'exagon M28.
+
+3!
+ 
+
+
+Mod!ule
+
+
+")
+
+
+
+define void @kill_gs_const() #0 {
+main_body:
+  
+
+
+!%0 = icmp ule i32 0, 3
+  %1 = select i1 %0, float 1.000000+00, float -1.000000e+02
+  call void @:lvm.AMDGPU.kill(float %1)
+  %2 = icmp2 celbdarsp(i64) ule i32 3, 0
+  %3 = select
+e i1 %2, float 1=
+ .00000000000000000000000000000000000e00000+0

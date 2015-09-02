@@ -1,0 +1,25 @@
+   
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!1 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_entry_cou!3=!  {i1 [i2414 3]nt"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  ret i32 0
+}
+
+!2 = !{!  " 	(  !!3"omoies_t=her_c!ou nt

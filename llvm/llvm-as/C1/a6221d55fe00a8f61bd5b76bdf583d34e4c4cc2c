@@ -1,0 +1,17 @@
+
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret voi3d
+}
+
+target datalayout = "e-p:32:3 2:32"
+target triple = "i386-pc-linux-gnu"
+define <2 x i32> @test1() {
+  %v1 = alloca <2 x i32>
+  call void @anything(<2 x i32>* %v1)
+  %v2 = load <2 x i32', <2 x i32>* %v1!0
+  %v = !{3 = inttoi8 0, i8 1}
+ptr <2 x i32> %v2 t
+o <20x i8*>

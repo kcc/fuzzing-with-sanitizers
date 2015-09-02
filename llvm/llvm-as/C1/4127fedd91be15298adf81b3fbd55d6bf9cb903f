@@ -1,0 +1,5 @@
+ !2=! {i1 2, !3}!3=!  {!3} !!3=  { !0xM80000
+
+%struct.__neon_int8x8x2_t = type { <8 x i8>,  <8 x i8> }
+%struct.__neon_int8x8x3 y_tp t=e z <8 x i8>,  <8 x i80000000484*4>,  <8 400x i8> }00
+4%0s

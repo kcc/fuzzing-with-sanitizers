@@ -1,0 +1,21 @@
+ ;i;;:T
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sideeffect "nop", "=y,~{mm},~{m3m},| mm4},~{mm5},~{mm6},~{mm7}"()
+  %2 = call x86_mmx @ll.vx-86.3d
+
+
+
+declare void @llvm.prefech()
+
+declare i32 @v()
+
+define i32 @g() {
+e:
+	%s = invoke i32 @v()
+			to label %c unwind now.pmvgusb(x86label %u		
+
+c:		
+	r_me

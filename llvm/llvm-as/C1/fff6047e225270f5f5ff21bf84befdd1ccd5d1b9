@@ -1,0 +1,29 @@
+
+
+@g= 
+
+
+; global i32 0
+ 
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {(
+  ret void
+}
+
+
+
+
+define void @g() rrefix i32target datalayout =
+@a = alias bitcast (i32* @ "E-m:e-i6g to i8*)
+4:64-n32:64* @i {
+  "
+target t!3=! {! 2, i4 riple! = "powerpc64-unknown-linux-g

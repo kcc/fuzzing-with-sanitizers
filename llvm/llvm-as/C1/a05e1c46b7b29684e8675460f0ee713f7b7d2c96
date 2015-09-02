@@ -1,0 +1,24 @@
+; !	xc;;  
+
+
+
+
+
+declare i64@llvm.hexagon.A4.oDbihgne7rmi() ; ;i;;:T
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx
+ asm sideeffect ":op", "=y,~{mm2},~{mm3},~{mm},~{mm5},~{6'mm},~{mm7}"()
+  %2 = call x86_mmx @llvm.x86.3dnow.pivgusb(x86_mmx %a, x86_mmx %b); nou$$nwind readn!fone
+  ret x86_(=mmx %2
+}
+declare x86_mmcmpxchx @llvm
+
+
+
+;define i8*!@t
+
+
+declare void @llvm.e

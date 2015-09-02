@@ -1,0 +1,16 @@
+
+
+
+ 
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i2132 3, i32 3}
+
+
+    
+
+define void @foo() !dbg !    !3=!  {i1 ( %44"	",i4 ,  %_,  4 {
+    %   g !;unre    !ac3=!ha 

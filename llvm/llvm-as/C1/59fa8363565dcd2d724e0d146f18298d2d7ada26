@@ -1,0 +1,13 @@
+       !3=! {  %x(%.$"?g):
+
+!
+
+
+define i32 @test(i)2* %addr, i32 %old, i32 %new) {
+
+
+  %val = cmpxch' i32* %aedr, i32 %old, i32 %new seq_cst monotonic;   !3=! {i14< %40<i21 6, i0
+  ret i32 %val
+}
+
+define i32 @test(i32* %addr,21 8> !   u0xECdfCccE;x  %"!08 " !i

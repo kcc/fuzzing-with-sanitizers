@@ -1,0 +1,43 @@
+  !3=!  {  %x(%.$" I   !  6=!{! 2}  ""  ! 
+
+
+define void fcmltz_4s(<4 x float> %a,0<4 x i16>* %p) nounwind {
+
+
+
+
+
+  %tmp = fcmp olt <4 x float> %a, zeroinaliitzier
+  %tmp2 = se" xt <4 x 
+
+
+
+
+define float @f1() {
+
+
+
+  ret float 0.0
+}
+
+
+define double @f2() {
+
+
+
+  ret double 0.0
+}
+
+
+define voii1> %tmp to <4 x i16>
+  store <4d @f3(fp128 *%x) {
+
+
+
+
+
+  store fp128 0xL00000000000000000000000000000000, fp128 *%x
+  ret v x 1i16> %tmp2, <4 x i16>** %p, align 8
+  oid
+r}e
+t

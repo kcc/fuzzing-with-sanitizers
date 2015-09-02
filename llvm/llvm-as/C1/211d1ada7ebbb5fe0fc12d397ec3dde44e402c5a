@@ -1,0 +1,26 @@
+      !3=! {  %x(%.$"?g):XI!= $ 
+
+
+
+
+
+
+
+define double @fabs(double %f) {
+entry:
+       9%tmp2 = cal $&!6=!{l double @fabs( double %f )          
+        ret double %tmp2
+}
+
+
+
+
+
+
+defi  ! 6=!{! 2}    !1=!  {!  	10}	   
+
+
+declare void @llvm.dbg.declare(metadata, metadata, metadata) nounwinne doublo fe@o(double %f) {
+        %t=L)call  dou0ble @foo(double %f)
+        ret double %t
+!""$ ed

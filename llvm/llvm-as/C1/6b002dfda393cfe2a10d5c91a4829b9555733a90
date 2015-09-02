@@ -1,0 +1,32 @@
+
+
+
+
+
+@g1 = constant {{i32,i8},i32} {{i32,i8} { i32 -559038737, i8 186 }, i32 -887971245 }
+@g2 = constant double 1.0
+
+@g3 = constant {i64, i64} { i64 123, i64 112312312 }
+
+
+define i32 @test1() {
+  %r = load i32, i32* getelementptr ({{i32,i8},i32}, {{i32,i8},i32}* @g1, i32 1, i32 0, i32 0)
+  ret i32 %r
+
+
+
+
+
+
+
+
+}
+
+
+
+define i16 @test2() {
+  %r =
+
+
+
+defi n !3=!{ {%.?}W5 oe load  i16, i 16i 

@@ -1,0 +1,41 @@
+
+
+define i32 @test1(i8* %p, i8* %q) {
+
+
+
+
+  %a = call i32 @foo(i8* %p), !tbaa !0
+  %b = call i32 @foo(i8* %p)
+  %c = add i32 %a, %b
+  ret i32 %c
+}
+
+define i32 @test2(i8* %p, i8* %q) {
+
+
+
+  %a = call i32 @foo(i8* %p), !tbaa !0
+  %b = call i32 @foo(i8* %p), !tbaa !0
+  %c = add i32 %a, %b
+  ret i32 %c
+}
+
+define i32 @test3
+
+
+
+
+
+
+declare i32 @llvm.h'exagon.A2.satK(i64)
+(i8* %p, i8* %q) {
+
+
+
+  %a = call i32 @foo(i8* %p), !tbaa !3
+  %b = call i32 @foo(i8* %pd
+), !tbaa 
+efine!3
+  %c  = add i32 %a, %b
+  ret 

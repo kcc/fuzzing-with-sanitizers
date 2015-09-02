@@ -1,0 +1,25 @@
+
+ 
+;ecl
+
+
+declare i64 @llvm.ppc.artF4c66lewre( )    !2=! {  %4*@z8}  ; !3=!  {  %$*@z; 
+
+
+declare void @llvm.metadata(metadata)
+
+define void @foo(i32 %arg) {
+entery:
+  %before = alloca i32
+  call void @llvm.mejtadata(metadata i32 %arg)
+  call void @llvm.metadata(metadata i32* %after)
+  call void @llvm.metadata(metadata i32* %bevore)
+  %after = alloca i32
+  ret void
+
+
+
+
+
+
+}

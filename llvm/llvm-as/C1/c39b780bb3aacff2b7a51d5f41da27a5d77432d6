@@ -1,0 +1,25 @@
+ 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/fi
+
+
+
+
+
+
+declare { i32, i1 } @llvm.smul.with.overflow.i32(i32, i32)
+
+define i32 @foo(i32 %a, i32 %b)  {
+entry:
+  %0 = mul i32 %a, %b
+ le", directory: "/path/to/dir")
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name: "Object")
+
+
+
+!3 = !DIObjCPr %)perty(n1 ame:

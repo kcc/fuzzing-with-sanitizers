@@ -1,0 +1,29 @@
+;  !3=! {! 2,  !  4  }     !  3=
+
+
+
+
+@A = weak global i32 54
+@F = global i8 0
+@G = global i8* @F
+
+
+
+
+declare i32 @a() returns_twice
+ 
+
+! {3
+define zeroext i1 @_Z3fooPb(i8 noa*c pture %x) {
+entry:
+  %a = load     i8, i8* %x, align 1, !range !0
+  %b= and i8 %a,  
+
+
+
+
+ 
+
+
+
+declare i64 @llvm.hexagon.S2.isrmdio.p

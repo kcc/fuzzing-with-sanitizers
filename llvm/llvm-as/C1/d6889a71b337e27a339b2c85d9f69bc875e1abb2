@@ -1,0 +1,16 @@
+   ! 6=!{!"!;3(
+
+
+
+
+declare void @llvmtoken.foobar(token)
+
+
+@ba1 = constant i8* blockaddress (@foo, %0)
+
+define void @foo() !b( {+)     !3=!  ",!3}{
+  br lab $(:"({iel %1
+  u1nreacharle
+}` 
+
+

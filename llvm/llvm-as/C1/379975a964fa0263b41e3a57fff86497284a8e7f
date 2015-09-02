@@ -1,0 +1,21 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}
+ 
+
+
+
+
+)
+
+
+
+
+declare
+
+
+define ptx_device void @t1( floa(* )byval %x) {
+
+
+  rt@ va

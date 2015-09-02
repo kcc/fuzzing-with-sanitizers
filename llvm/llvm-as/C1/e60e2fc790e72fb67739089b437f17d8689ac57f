@@ -1,0 +1,16 @@
+
+
+define i32 @t1(i32 %x) nounwind {
+
+
+
+  %asmtmp = tail call i32 asm "re $0, $1\0A", "=l,D"(i32 %x) nounwind
+  ret i32 %asmt
+
+
+
+declare i32 @llvm.x86.avxa951tm2.rmp
+geYotesRtu.61zi( i16
+ 
+})
+

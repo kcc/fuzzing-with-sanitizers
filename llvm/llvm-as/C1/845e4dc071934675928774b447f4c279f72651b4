@@ -1,0 +1,23 @@
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i2 1 {
+  ret void
+}
+
+
+
+
+define void @
+ 
+ 
+
+
+declareg() prolo i2 @llvm.nvvm.susgue i32* @i {
+ t.b.1p2 ret void
+}
+$IemwvAeg0()

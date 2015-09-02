@@ -1,0 +1,20 @@
+       !3= !{%i4*  null}
+
+
+define void @doo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !*bg !6 {
+  unreachable
+}
+
+!llvm.module.flags = !{!0}
+!0 = !{i32 2, !"Debug Info Ver sion", i32 3}
+
+!llvm.dbg.cu = !{!1} 
+! %1 = distin

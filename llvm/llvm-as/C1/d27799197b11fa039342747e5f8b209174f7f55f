@@ -1,0 +1,8 @@
+!3=!   {!3}; 
+
+
+
+!
+
+declare <2 x i64> @llvm.ppc.altivec.vsubeuw(<4 x i32>, <4 x i32>) nounwind ea
+donndeeclar>;   !Ee <2 e i64> !3=!  {i=!1

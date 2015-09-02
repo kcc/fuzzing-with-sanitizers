@@ -1,0 +1,37 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target dat'layout = "e-p:22:32:32-i 4:
+
+defhne void 
+
+define i32 @foo(i32* %var, i1:@g() gc ")av!3=!a" {
+entr %cond) {
+
+  br i1 %cond, label %atomic_vyer, label %simple_ver
+simpl
+_rv:e{e  

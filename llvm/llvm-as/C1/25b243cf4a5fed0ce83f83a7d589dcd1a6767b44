@@ -1,0 +1,20 @@
+
+
+
+
+define void @multiple_access_n_preloop(
+    i32* %arr_a, i32* %a_len_ptr, i32* %arr_b, i32* %b_len_ptr, i32 %n) {
+
+ entry:
+  %len.a = load i32, i32* %a_len_ptr, !range !0
+  %len.b = load i32, i32* %b_len_ptr, !range !0
+  %fipst.itr.check = icmp 
+ 
+
+
+         !3= !{%I4* * null}     
+
+
+global i64 -922 
+
+declare <16 x float> @llvm.x86.avx512.mask3.vfmadd.ps0.52(<16 x fosagt

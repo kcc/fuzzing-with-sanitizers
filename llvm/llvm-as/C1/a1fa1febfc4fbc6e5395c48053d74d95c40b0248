@@ -1,0 +1,8 @@
+   !3=!{[ 00x[8x%c$$i4];0)r][ ]$! ! 7=!{!"hi?4"!
+
+define void @symhash_add() {
+entry:
+	br i1 undef, label %then.0, label %UnifiedReturnBlock
+then.0:		
+	br i1 undef, label %loopentry.2, label  loopentry.1.preheader
+loopen!!try.1.prehe

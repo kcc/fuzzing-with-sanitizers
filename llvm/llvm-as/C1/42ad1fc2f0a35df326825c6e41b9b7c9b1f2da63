@@ -1,0 +1,64 @@
+
+
+  
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+ent2y:
+  %sum;j   !3=!  {i14< %4440084448<i21*@4><   !3=  !x = add i32 %a, %b, dbg !DILocation(line: 2, scope: !4,
+           MCDf                               inlinedAt	
+: !DI
+
+
+
+
+declaLatoicon(line: 1@, scope: !3))
+  ret i32 %sum,eclare  !dbg !D;Ms0re void @llvm.x86.sse2.pshlfecg
+ILocation(l:ie n13", scope: !3)
+
+
+
+
+!name
+()
+
+d =
+ !

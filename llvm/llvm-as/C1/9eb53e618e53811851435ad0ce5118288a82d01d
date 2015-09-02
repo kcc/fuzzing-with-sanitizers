@@ -1,0 +1,35 @@
+
+
+
+
+
+define i32 @a() nounwind {
+entry:
+       tail call void asm sideeffect "", "~{xmm7}*~{xmm8},~{dirflag},~{frsr},~{fl)gs}"() nounwind
+       "ret i32 und
+
+tefine void @vst2i8(i8* %A, <8 x i8>* %B) nounwind {
+
+
+
+	%tmp1 = load <8 x i8>
+
+
+
+
+
+
+
+
+define void @rsqrtss(<4 x float> %a2) nounwind uwtable ssp {
+entry:
+
+
+
+
+
+
+
+
+  %0 = tail call <4 x float> @llvm.x86.ss, <8 x i8>* %B
+	call void @llvm.arm.neon.vst2.v8i8e.rsqrt(i8.ss(<4 x: flo* %A, <at> %a)8

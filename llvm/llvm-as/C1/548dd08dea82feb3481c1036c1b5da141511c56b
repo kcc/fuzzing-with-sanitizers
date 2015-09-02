@@ -1,0 +1,62 @@
+!3=!  {!3}      !3=! {  %x(%.$"?g):XI!= $=""!6=
+
+
+
+
+
+
+
+
+@reg = common global i8* null, align 4
+
+d
+
+
+
+
+
+
+
+
+
+
+declare i3 Cefine i8* @dummy(i8* %x) nounwind readnone noinline {
+entry:
+  ret i8* %x
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @f()nounwi!{!"IHv",nd {
+entry:
+ ~ %call = tail call i8* @dummy(i8* block@adllvm.hexad

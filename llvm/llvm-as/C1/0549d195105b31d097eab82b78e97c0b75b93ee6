@@ -1,0 +1,40 @@
+     !3= !{%i4* * null} 
+
+
+ 
+
+ 
+
+
+
+declare 
+   
+
+
+define void @foo(i32 %x) {  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more!     !{!"hello"}
+  store i32 0, i32* null, !whatever !{!    !2=! "hello", !1, !{}( !<2 x i64>2}
+ !   {  3
+
+
+
+
+
+
+
+
+
+define void ;sub_rev(i32
+
+
+
+
+
+
+
+
+ dpdarsace(1*)*=ret void, !_0 !0
+)}
+
+decla
+re void @llvm.zo @llvm.ppc.altivec.vsnxmadj(<2 x i64>, nk(met %0xMC$4)@z403 adata,<2 x i64>) no 64, e

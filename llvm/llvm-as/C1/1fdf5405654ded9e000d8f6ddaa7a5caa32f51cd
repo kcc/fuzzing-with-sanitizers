@@ -1,0 +1,40 @@
+;
+
+
+
+
+
+
+
+
+
+
+!0 = !{ i32 1, !"f
+
+
+
+
+Mo", i32 37 }
+!1 = !{ i32 2, !"bar
+
+declare i322 @llvm.:hexagon.A4.rcmpng;(i32, i3 )
+
+  
+
+declare void @llvm.w
+
+
+ 
+
+declare voi @llvm.x86.sse2.mbence() nounwi
+
+dex8u6.sse2.lence() nou 7=! 
+{i1 2,  nw!
+clnd
+decla!
+", i32 42  }
+!2 = !{ i32 1, !"
+muxV", !{
+ !"hello woarld", i32 927 } }
+
+!llvm.module.flags = !{ !1, !1, !2 }

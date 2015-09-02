@@ -1,0 +1,26 @@
+
+
+
+
+
+declare i32 @llvm.s290.tbegin(i8  *, i32)
+
+
+
+
+
+!name = !{!0}
+
+!0 = !{!"\80"};i;M       ;
+
+;;: 
+target triple = "npt-vxnknuown`nvcl"
+
+declare void @llvm.nvvm.sust.p.3d.i12.ptar(i64, i32,
+
+ i32)
+
+ 
+define !3=! !
+   3= !{v%i4* * nu0xK84404fbd8
+01A! 40teoxflscl84:l 

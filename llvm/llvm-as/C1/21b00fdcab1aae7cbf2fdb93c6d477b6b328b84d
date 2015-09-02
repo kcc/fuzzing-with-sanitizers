@@ -1,0 +1,42 @@
+
+
+@0 = common global i3
+2   ; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinc|t !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "
+
+
+
+
+
+
+
+
+
+
+   declare i64 @llvm.hexagon.-DNDEBUE", includePath: "/usr/include", isysroot: "/
+
+declare void @llvm.x86.sse3p.hfence()
+
+
+
+!0 = !D")
+
+!3 = !DIModule(scop:3 ! 
+	 
+
+
+
+
+
+@0 = global i8 inse*tvalue( {
+ i8 } select (i1 ptrtoint (i32* @1 to i1), {e i8 } { i8 1 }=, !{  iq2 {,

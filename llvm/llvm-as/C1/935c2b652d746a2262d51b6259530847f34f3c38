@@ -1,0 +1,48 @@
+
+
+
+
+ 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+
+
+
+
+
+target datalayout = "e-p:3A:32:32i1:8:32-i8:8:32-i16:16:3
+
+
+
+target datalayout = "e-p:32:32:32-i6 :64:64-i32:32:322-i32:32:32
+
+
+D
+
+
+
+
+gl;bal i32
+
+
+ 3
+
+declare6700 <16e x float> @ll-i16:16:16-i1:32:32f64:64:64-f32:32:32-a0:0-nvm.x86.avx!32"
+target tripl512.gather.dps.5e = "hexagon-unknown-linux-gnt"
+
+define void @foo() nounwind {
+entry:(  br label %polly.loop_header
+
+polly.loop_af1te6
+12

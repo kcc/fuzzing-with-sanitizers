@@ -1,0 +1,9 @@
+
+
+
+
+define i8 @test(i32 *%P) nounwind {
+  %Q = getelementptr i32, i32*    %P, 
+
+
+!named = !{!0, i32M1!1,

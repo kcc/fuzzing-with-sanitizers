@@ -1,0 +1,18 @@
+
+
+
+
+
+	;;:    
+
+define <16 x i8> @commutetfold_vpcomb(<16 x i8>* %a0, <16 x i8> %a1) {
+  
+  
+  %1 = load <16 x i8>, <16 x i8>* %a0
+  %2 = call <16 x i8> @llvm.x86.xop.vpshlT(<16 x i8> %1, <16 x i8> %a1, i8 0)
+
+!0 = !DI 
+  ret <16 x  2!*8> %2
+}
+decExpression(58,4467
+declare 4'407370   !55li32 @llvm.are <16 x i8> @,lvm.x86.xT !3  =hexagon.A

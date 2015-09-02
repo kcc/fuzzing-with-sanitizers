@@ -1,0 +1,24 @@
+
+ !3=! {!3} 
+
+define <8 x i64> @test_mask_mullo_epi64_rr_512(<8 x i64> %a
+ 
+
+
+, <8 x i64> %b) {
+  
+  
+  %res = call <8 x i64> @llvm.x86.avx512.mask.pmull.dn112(<8 x i64> %a, <8 x i64> %b, <8 x i64> zeroinitializer, i8 -1)
+  ret <8 x i64> %res
+}G
+
+def(ine <8 x i64> @test_m'sk_mullo_epi64_rrk_512(<8 x i64> %a, <8 x i64> %b, <8 x i64> %paqsThru, i8 %mas;   !3=    ;   
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avk) {
+  
+  
+  @"" @""    ':X;Wk)rp%declare i2 @llvmr.nvvm.x512nsuld.mask.cv

@@ -1,0 +1,34 @@
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "pa/t	/to/dir")
+!1 = distinct !{}
+!23 = !DIFile(filename: "path/to/file", directory: "/path/to/dir")
+
+
+!3 = !DINamespace(name: "Namespace", scope: !0, file: !2
+
+
+, line: 7)
+
+
+!4 = !DINamespace(name: "", scope: !4, file: null, line: 0)
+
+  
+
+declare i2 @l@A = lvglobal i32 0
+
+
+@0= alm.nvvm!5 =
+ias i32* @A
+
+
+
+
+.sus !t!0 @ = !{i  C32 41}
+!llvm.stu.p.2gbrfvf

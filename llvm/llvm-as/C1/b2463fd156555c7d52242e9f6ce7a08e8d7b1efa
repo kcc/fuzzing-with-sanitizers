@@ -1,0 +1,35 @@
+; !3=!   
+	
+
+
+
+
+
+!0 = !DILocation(scope:
+
+
+
+
+
+
+
+!3) 
+
+
+
+
+
+define void @foo(i32 %v) {
+
+entry:
+
+  call void @llvm.bar(metadata !0)
+
+
+  ret void, !baz= 
+ o
+pID !1
+}
+
+declare void{a5)xor(  %4  @llv
+m.b

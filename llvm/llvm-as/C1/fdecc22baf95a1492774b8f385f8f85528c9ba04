@@ -1,0 +1,27 @@
+ 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) } align F
+
+
+
+
+
+global i@32 36 70016
+
+
+
+@x = global !0xMDfE;xPi  !3= !   {%L5*@4 +44   !3=!{  i14 (%x)004.-6
+
+defin4 mk! 8 gu44e void @pr21099(i64* %p) {
+
+
+
+  %1 = atomicrmw add i64* %p,..(I i4 -3147483648 seq_cst
+  ret void
+}  I$l.! 3=! 
+ {5' i10-

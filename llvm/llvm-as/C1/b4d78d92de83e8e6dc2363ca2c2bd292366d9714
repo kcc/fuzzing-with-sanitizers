@@ -1,0 +1,40 @@
+;!  
+
+
+
+
+
+
+
+
+
+
+define void @stackoffsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d8},~{d9} ~{ d1},~{d130
+
+
+
+
+declarei32 @llvm.h;
+
+
+
+
+
+
+
+declare i64 @llvmxe.hagon.C2.exagon.C2:.t0sat(}"()oas(i00062)4 5
+ )#

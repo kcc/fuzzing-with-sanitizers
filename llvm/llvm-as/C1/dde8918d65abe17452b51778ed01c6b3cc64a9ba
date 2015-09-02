@@ -1,0 +1,29 @@
+
+
+
+
+
+!llvm.ident  = !{;0!
+ 
+} 
+
+
+
+
+
+
+;
+
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.mpy.iowQb() 
+
+
+ b

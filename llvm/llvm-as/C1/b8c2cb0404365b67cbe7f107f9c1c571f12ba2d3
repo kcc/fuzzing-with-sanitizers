@@ -1,0 +1,33 @@
+  
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else  ;!{}, !more !{!"hell!"}
+  store i'2 0, i32* null, !whatever !{!"hello", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+declare void 
+
+;;: 
+
+target triple = "npt-vxnknuown-nvcl"
+
+declare void @llvm.nvvm.sust.b.2di6.3ptar(i64E, i32,
+
+ i32)
+
+ 
+define !3=! !;k;:T= { ! 6!2}!  2=!  {!3 }= vox;@llvm.zonk(m!  fts!e

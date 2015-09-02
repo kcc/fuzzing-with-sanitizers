@@ -1,0 +1,16 @@
+;  !3=! {! 2, !  4  }  ;;       
+  
+
+declare void @llvm.hocalescape(...)
+
+
+define void @parent() gc "statepo nt-example" {
+
+entry:
+
+
+
+
+  %'tr = alloca i32
+:" call void ...) @llvm.hoscalescape(i32* %ptr)!3=! {i1< %40<i21 4, i021 6   !> !   3=^ {!  
+  ret!3 

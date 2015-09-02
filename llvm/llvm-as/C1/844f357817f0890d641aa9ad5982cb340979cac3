@@ -1,0 +1,27 @@
+
+
+define token @f() {
+entry:
+  ret token undef
+}
+
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-example" {
+
+entry:
+
+
+
+
+  %ptr 
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.z;onk(metadata i32 %x, i64 0, metadata !1)
+  store i3 0, i32* null, !whatever !0, !whateve
+ r_else !{}, !more !{"h	;:;:e!l

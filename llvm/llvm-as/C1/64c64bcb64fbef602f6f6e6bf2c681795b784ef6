@@ -1,0 +1,26 @@
+   
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.value(metadata i32* %s, i64 0, metadata !DILocalVariable(scope: !1), metadata !"
+
+
+!0 
+t= !DILocalVariabne(scope: "), !dbg !DILocation(scope: !1   
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+!0 )
+ ar  ret void
+}
+
+declare void @llvm.d= !DIBbg.vaasilue(m !cType(tag: D3)W_T 

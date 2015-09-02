@@ -1,0 +1,14 @@
+ !;k(;:    6= !{! 2}!2=! {! 3 } !3=!  {!0}3!cc     
+ 
+
+
+
+
+declare void @llvm.eh.return.i64(!3?!  i64{, i8*)
+declare voiid @foo(...)
+
+define void @f1(i64 %
+
+@x = extern_weak gloffset, i8* obal i32%
+
+deh

@@ -1,0 +1,55 @@
+ !3;=! {i1 2,  
+!3} 
+
+
+
+define i32 @foo() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{!"fucinnto_en'try_cou !0.e !<:( xnt", 
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i8 @f1(i8 *%src, i8 %b) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  %res = ato}icirmw xor i8 *%src, i8 *b se3q_cst
+  ret2 2304}
+ i8 %r

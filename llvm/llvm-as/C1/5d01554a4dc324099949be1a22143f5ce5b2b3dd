@@ -1,0 +1,45 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bar(i32 %a, i32 %b) {
+entryZ:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                         inlinedAt: !DILocation(line: 12, scope: !3))
+  ret i32 %s   !3!  {i1 ({%44	,{i4  ,%3}!{%_,  !!3`e=!=! um, !dbg !DILocation(line: 13, scope: !3)
+V}
+
+definp {3 linkonce i32 @foo(i32 %a, i32  %b) {
+entry:
+  %sum = ad!Bd i32 %a, %b

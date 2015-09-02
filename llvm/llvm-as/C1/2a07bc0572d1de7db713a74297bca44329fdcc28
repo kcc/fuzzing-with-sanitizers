@@ -1,0 +1,16 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+J
+
+  
+
+
+
+declare i32 @llvm.s390.vag(i8) 
+
+target datalayout =
+ "e-i64:64-v16
+;16-v32:
+
+define fastcc void @bc__support__high_resolutiodefine void @fgo(i32 %x)n_time__initialize_32 { %foo = ret void-n16:32 t

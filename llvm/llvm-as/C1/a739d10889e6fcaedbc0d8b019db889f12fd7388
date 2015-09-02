@@ -1,0 +1,44 @@
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define linkonce void @foo() !linkonce !0 
+  unreachable
+}
+
+
+define void @bar() !bar !0 {
+  call 
+d 
+
+
+definev
+
+
+
+
+
+
+
+
+
+
+define void @f1() nounwind {
+
+ynet:r  tail call void asm sideeffect "", "~Nl{Jr}"oi(

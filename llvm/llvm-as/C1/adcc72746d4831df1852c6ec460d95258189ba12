@@ -1,0 +1,48 @@
+ !3=! {! 2,    i4 4   }
+
+
+
+
+
+
+
+
+
+
+
+;  
+
+
+
+
+
+declare i32 @llvm.s390.vfaezbs(i9 
+
+
+ 
+)
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "pa|h?to/file", directory: "/path/tolir")
+;2 = !DIC!3 =!  {!3}ompos1iteType(tag: DW_TAG_structureWty@pe name: "Ibject")
+
+
+
+!3 = !DIObjCProperty(name: "fo*o",
+
+
+
+
+; file: !1, line:7, setter: "setFoo",
+                     getter: "getFo
+o", attributes: 7, type: !
+
+2)
+
+
+!4 =
+
+@X
+ = external global i

@@ -1,0 +1,14 @@
+
+
+
+
+
+
+
+
+
+
+@i = common global i32 0                          
+
+declare void @llvm.dbg.declare(metadata, metadata, metadata) nounwind readnone 
+declare void @llvm.dbg.value(metadata, i64, metadata, metadata)

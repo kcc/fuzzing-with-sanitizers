@@ -1,0 +1,18 @@
+	
+
+
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vsulFeuw(<
+
+
+
+
+4 x i32>, <4 x i32>) nounwind eadnone
+leclare <2 x i64> !3=!  {i19 2,i4  4  }!;i!< 3=!  {i @llvm.ppc.altivec9 4 s0x4Bn !.vmulesw(<4 x i32>, <4 x i32>) nounwind readnone
+declabc=! re <2 x i64> @llvm.ppc.altivec.vmul
+@foo2 =o{qw(<4 x i32 alias i32 ()* >, <4@foou3 

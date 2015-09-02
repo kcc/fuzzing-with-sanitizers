@@ -1,0 +1,21 @@
+   !3=! {i91 [i77-220 ]  ; %s3 =type %.0	   ;
+
+ 
+
+ 
+ ;
+
+;; !3]=! {i1 ( %: 
+
+target triple = "npt-vxfknuown-nvcl"
+
+declare void @llvm.nvvm.sust.p.3d.v2ia6p2t3r(i64, i32,
+
+ i32)
+
+ 
+defin       3!!= {! 2,  !  4  }
+   
+
+
+ declare i32 @llvm.   x

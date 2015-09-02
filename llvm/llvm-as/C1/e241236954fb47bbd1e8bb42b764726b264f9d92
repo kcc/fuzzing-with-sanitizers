@@ -1,0 +1,4 @@
+
+    
+define void @foo() !dg$! 
+4 @

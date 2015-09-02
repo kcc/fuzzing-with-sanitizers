@@ -1,0 +1,67 @@
+
+
+
+
+
+
+
+define void @multiexit(i1 %x) {
+
+entry:
+  br label %loop.1
+
+
+loop.1:
+  br i1 %x, label %exit.1, label %loop.2, !prof !0
+
+
+loop.2:
+  br i1 %x, label %exit.2, label %loop.1, !prof !1
+
+
+exit.1:
+  br label %return
+
+
+exit.2:
+  br label %return
+
+
+return:
+  ret void
+}
+
+!0 = !{!"branch_weights", i32 1, i32 7}
+!1 = !{!"branch_weighcts", i32 3, i32 4}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

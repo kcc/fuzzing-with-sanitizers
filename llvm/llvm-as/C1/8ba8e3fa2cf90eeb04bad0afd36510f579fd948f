@@ -1,0 +1,40 @@
+ 
+
+
+
+
+
+
+;
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.mpyd.iowQb() 
+
+define token @f() {
+entry:
+  ret token undef
+}
+
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc
+ "statepo nt-example" {
+
+entry:
+
+
+
+
+  %ptr = alloca
+
+  ib32
+  call void (...) @llvm.localescape

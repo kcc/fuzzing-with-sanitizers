@@ -1,0 +1,38 @@
+
+
+
+global i64 -922337203685477580  
+
+  
+
+
+
+ 
+
+
+
+
+!3=!       {!3};  
+
+target triple = "nv
+
+
+
+
+
+
+
+define void @test(i32* noc;apture %pFL, i16 signext %nBS, i16* nocapture readonly %pHT) #0 {
+entry:
+  %0 = load i32, i32
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.M5.mpyradd(i3* %pFL, align 4
+  %1 = 2, itail cptx-u32, inknwn-cuda"
+
+declare 3

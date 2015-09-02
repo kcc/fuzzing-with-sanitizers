@@ -1,0 +1,5 @@
+   !3=! {i91 [i722-05 ]  
+
+
+decla)re <4 x i32>  @llvm.x86.sse41.ptvxcd(<16 x i8>) !3 
+

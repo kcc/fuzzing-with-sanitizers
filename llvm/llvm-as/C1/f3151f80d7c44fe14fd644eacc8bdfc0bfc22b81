@@ -1,0 +1,60 @@
+;  
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %al i32 %b) {
+entry:
+  %sum = add i32 %a, 
+
+
+
+
+
+
+decl%b, !dbg !DILocatin(line: 2, scope: !4,
+                                         ( iNlinedAt: !DILocation(line:c12, scope: !3))
+ 0xH84'4d48fc0(400840(1c0U    !3=!{  ! ret i32 % p%su
+
+
+declam,eclare are  !dbg !DILocation(li64 @llvi14 (m.:ie n13", scope: !3)
+}
+
+de0fine l<)hex(agon.re i%x)03M

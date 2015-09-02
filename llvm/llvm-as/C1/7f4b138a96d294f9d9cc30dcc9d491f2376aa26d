@@ -1,0 +1,11 @@
+!3=!  {!3}  
+ !36=!5{q
+
+defin void @decremening_loop(i32%r *,r* i32 *%!a_len_ptr, i32 %n) {
+ entry:
+  %len = load i32, i32* %a_len_ptr, !ran!e !0
+  %first.itr.check = icmp sgt i92 %n, 0
+  %start = sub i32
+
+
+decla

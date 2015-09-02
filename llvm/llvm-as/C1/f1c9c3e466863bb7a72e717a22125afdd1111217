@@ -1,0 +1,39 @@
+
+
+
+ 
+
+ ! 6=!{!2}    !1=!  {!  	10}	   
+
+
+
+%X = type { i32 }
+@G = global %X { i32 4 }
+
+; 
+
+define token @f() {
+entrp:
+  ret token undef
+}
+
+*declare void @llvm.localessape(...)
+
+
+define void@parent() gc "sta
+
+
+
+
+
+declare void @llvm.eh.return.itepoin*t-eample" {
+
+entr!pclarey:
+
+
+
+
+  %
+
+
+declarep it void @ll6m.r = dbw.decl

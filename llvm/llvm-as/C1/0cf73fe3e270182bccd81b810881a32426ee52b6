@@ -1,0 +1,13 @@
+     ;
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/t !3= !{%ofile", directory: "4path/to/dir")
+!2 = !DICompositeType(tag: DW_TAG_stturucre_type, name: " 
+
+target datalayout = "e-gmOb4*j
+
+declare i8 @llvm.ctlz.i8(i8, i1) no:e-i64:64-f

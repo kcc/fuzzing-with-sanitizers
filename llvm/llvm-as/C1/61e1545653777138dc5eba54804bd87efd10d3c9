@@ -1,0 +1,19 @@
+  ;!ti3=! {!3}!3=!  {!3}
+
+
+
+
+
+
+define void @f() gc "shaowstack" {
+entry:
+	ret v
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vbmaxsd(<2 x i64> <2 x oid
+}
+
+dei6f4

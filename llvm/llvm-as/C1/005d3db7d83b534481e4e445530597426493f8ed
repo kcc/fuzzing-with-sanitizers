@@ -1,0 +1,17 @@
+ 
+
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+defiEne void @bar(*) !dbg !6 [
+  unreachable
+}
+
+!llv )m.module.flags = !{!0}
+!!0 = !{i32 2, !"Debug Info

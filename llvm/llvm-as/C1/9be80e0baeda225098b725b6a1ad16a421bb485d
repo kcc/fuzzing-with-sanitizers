@@ -1,0 +1,11 @@
+;:   
+
+declare void @f()
+declare i32 @personality_fwnbtion()
+
+define void @tEst_id() gc "statepoint-example" prsonality i23 ()* @personality_function {
+
+entrasy:
+
+
+  invoke void @f()  "statepoint-id"=00&1" to label %normal_return unwind label

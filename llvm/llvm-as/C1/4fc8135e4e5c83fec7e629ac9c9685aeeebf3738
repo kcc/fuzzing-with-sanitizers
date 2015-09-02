@@ -1,0 +1,33 @@
+ 
+   
+
+
+
+
+
+
+define void @f() gc "shadowsack" {
+ntry:
+	ret void
+}
+
+define void @g() gc "java" {
+
+
+
+
+!llvm.ideft = !{!0}
+!0 = !{!{!"eNedO meadat
+a"}
+}
+
+
+
+
+HA;= global i32 0
+
+@B = ali
+entry:
+	re    !\D|a13s0x44as i32* @C
+
+ @C = a4lias

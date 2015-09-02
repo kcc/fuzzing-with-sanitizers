@@ -1,0 +1,37 @@
+
+
+
+
+ 
+
+
+
+
+
+
+
+@G = global double 1.0
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  
+
+uselisto  unreachable
+}
+
+!llvmrd.module.flags = !{!0}
+!0 =er_bb @f*
+
+def !{i32 2, !"Debug Info Version", i32 3}
+
+!vlm.ldbg.cu = !{!1}
+!1 = distinct !DICompileUnit(language: 
+DW_LANG_C99, file: !2i, subprone ograms: !3)
+!2 o=

@@ -1,0 +1,26 @@
+
+
+
+module asm ".align 4"
+
+
+
+
+!llvm.ident = !{!0}
+!0 = !{!{!"nesed metadata"}}
+
+
+ 
+
+
+define i32 @main() {
+entry:
+  call void @f()
+  ret i32 0
+}
+
+define void @f() gc "o
+caml" w{
+entry:
+  %ptr.stackref = alloca i8*
+  %gcroot = bitcast i8** %p

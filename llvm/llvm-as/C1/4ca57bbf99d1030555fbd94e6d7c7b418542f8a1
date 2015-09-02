@@ -1,0 +1,21 @@
+;      
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret  void
+}
+
+
+ 
+define void  @g() prefix i32* @i {
+  ;![;=! "y; !3 ret void
+}
+=!  {i
+dacrele {i16,0?d@
+ common gl i132}  @4( llvm.x86.rdroand.S6() !3 0xM64084
+de0

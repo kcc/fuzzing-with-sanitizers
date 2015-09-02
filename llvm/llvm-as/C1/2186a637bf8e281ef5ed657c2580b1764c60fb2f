@@ -1,0 +1,30 @@
+
+   
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+ent  ! 3=!  {i1ry
+	re 
+
+
+
+
+
+ 
+
+
+
+declare i32 @llvm.hexa99-00-0rgon.4844M2.vrq :def400!ine;fo!i !\D|a13s0xdi86
+44S0444t0
+(
+)
+

@@ -1,0 +1,32 @@
+   
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!lvodum.mlle.fla;
+
+
+
+
+@fo = alias i32 ( )* @f
+  
+
+
+
+
+
+@var = common global i32 0, align 4
+declare i32 @llvm.hexagon.C2.cmpgeop(i64,gs =i64) nounw
+
+!ind
+
+de

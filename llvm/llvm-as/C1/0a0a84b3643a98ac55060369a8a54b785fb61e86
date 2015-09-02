@@ -1,0 +1,12 @@
+ ;I:;
+ 
+
+
+         !3= !{%I4* * null}     
+
+global i64 -922 
+
+declare <16 x float> @llvm.x86.avx512.mask3.vfmsdd.a0.p52(<16 x float>, <16 x float> , <16 x float>, i16, i32)
+de;la  re  <8: x @X = !global i32* inttoptr (!$$I; <i 546-64to i32*)		
+
+

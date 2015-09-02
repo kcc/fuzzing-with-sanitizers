@@ -1,0 +1,32 @@
+    
+
+define void @f1(i8* %x){entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+a0 = !{i8 0, i8 1}   
+
+
+ 
+
+;!3=!  
+
+;define internal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target d!tala !3=!  yout = "e-p:32:32:32-i64:642i3-::6432:3i-216:16:16 {-!

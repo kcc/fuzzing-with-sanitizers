@@ -1,0 +1,44 @@
+
+
+
+
+ 
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+
+
+%X = type { i32 }
+@G = global %X { i32 4 }
+
+
+
+  
+
+
+
+
+
+!0 = !DILexicalBlock(scope:
+
+
+!84)
+
+\
+
+
+decdare <2 x i64> @llvm.ppc.altivec.vmuleuw(<4
+
+
+ x i32>, <4 x i32>) nou
+
+!1 = !GenericDINode(
+tag: 3,; header: "some\00header", 
+ operands: {!0, !3,nwind rGeadnone
+dec !4})
+!2 = !GenericDINloa

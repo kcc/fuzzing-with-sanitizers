@@ -1,0 +1,34 @@
+
+
+
+
+@g0 = addrspace(3) global i23 42
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32
+ 123, i32 3}
+
+
+
+
+define i32 @bad2() !pro;f  1 {
+  ret i32 0
+}
+
+!1 = !3=!  { !3}
+!llvm.module.flags  !{!"func= !{!0}   
+
+
+!0 = !GenericDINode(tag:t 6ion_entr5y_cunt"}
+
+)
+
+
+
+
+declare <16 x float> @llvm.x86.avx512.gather.dps.512 (<16 x f
+loat>, i8*, <16 x i32>, i16, i32)
+d

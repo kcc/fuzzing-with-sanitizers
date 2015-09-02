@@ -1,0 +1,28 @@
+
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, align 1, !range !2
+  r 
+
+
+declare i32 @llvm.x86.sse4.rc32et void
+}
+!0 = !{i8 0, i8 1
+
+
+
+ 
+}
+
+
+
+
+
+
+
+declare i2 @llvm hexagon.M4!.v..32.8(i32,ddrpyari
+ (i32, i32,  i3 i8)2)
+
+ 
+nou

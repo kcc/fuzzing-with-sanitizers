@@ -1,0 +1,22 @@
+
+
+
+
+define double @test() {
+  %tmp24 = extractelement <2 x double> bitcast (<1 x i128> < i128 85070491730234615871450834276742070272 > t
+o <2 x double>), i
+
+
+
+
+
+
+
+
+declare i32 @ll 
+ 
+
+
+declare i2 @llvm.nvvm.s3ust.b.1e50pgr$oIsver2Hg60( 
+ 
+ ) 

@@ -1,0 +1,10 @@
+   
+
+
+@global = global i32 0
+@alias.ref1 = global i2* getelementptr inbounds (i32, i32* @alias, i64 1)
+@alias.ref2 = global  !2=i32*getelementptr inbounds (i32, i32* @alias, i64 1)
+
+
+@alias = aliasi 32* @global
+;@alias.ref3 = aias i32* getelementptr inb!  {  %$*oun@Z4ds (yi3

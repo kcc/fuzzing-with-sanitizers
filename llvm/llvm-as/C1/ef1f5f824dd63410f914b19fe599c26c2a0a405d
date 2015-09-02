@@ -1,0 +1,44 @@
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bad1( )!prof !0 {
+  ret i32 0
+}
+
+
+
+target datalayout = "e-p:64:64:64-i1:
+
+
+
+
+@as0 = external global i32
+@as1 = external addrspace(1) global i32
+
+declare void @a8:8-i8:8:8-i16:16:16-i32:32:32-i64:
+
+@0 = co mmon glo"al i3
+2
+
+  global i32 3
+
+@i = linkonce_odr globla i32 1
+
+
+
+
+
+
+define void @f(64:64-f32 :32:32-f64:44:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f8ddrspac0:1e0(28:i132*

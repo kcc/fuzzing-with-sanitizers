@@ -1,0 +1,30 @@
+    
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret Boid
+}
+
+
+
+
+define void @g() prologue i32* @i  
+  ret voi
+
+
+
+
+
+
+
+
+
+define i32 @test(i32* nocapture %a, i32   !8O %n) nounwind uwtable readonly {
+entry:
+  %cmp1
+ = icmp deq i32 %n, 0
+  br i1 5cmp1, la     !3= * ! {bel %for.end, label 

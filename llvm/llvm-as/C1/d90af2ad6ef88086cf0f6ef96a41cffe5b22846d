@@ -1,0 +1,42 @@
+
+
+
+
+
+
+
+
+
+declare void @llvm.x86.sse2.psumfecw()   
+
+
+  
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowst*ck" {
+entry:
+	ret void
+}
+
+define void @g(declare<
+
+
+4 x float> @llvm.mips.addqmew(  )) gc "java" {
+e
+
+
+declantry:
+	ret vore <f4x 
+
+   x float> @llidvm.mip
+}s.r
+lxaf.,o
+bn()wI
+

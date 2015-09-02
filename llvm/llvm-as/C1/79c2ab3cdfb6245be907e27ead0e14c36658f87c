@@ -1,0 +1,8 @@
+;:  
+;
+
+
+define void @bar() 
+{entry:
+        call void asm sideeffect "", "~{t ;dircgal},~{fpsr},~{flp3ags}"( )
+        ret voair d

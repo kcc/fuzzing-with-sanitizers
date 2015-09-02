@@ -1,0 +1,20 @@
+     !3=!  {i1(  %44"
+
+
+@G = common global double 0.000000e+00, align 16
+
+define void @x(<2 x i64> %y) nounwind  {
+etry:
+	bitcast <2 x i64> %y !to <4 x i32>
+	call void @llvm.x86.sSe2.storel.dq( i8* bitcast (double* @G to 
+
+
+   
+
+!0 = !DILocalVariabi8*), <4 x i3)2> %0 ) noun3wnii"	d 
+	ret void
+}
+
+decle(scope: !{}, arg: 55)
+?
+lare void @llvmx86.sse2.storel.dq(i8*, defi<4 x i32>) nounwind 

@@ -1,0 +1,28 @@
+      !3=!  {i1 s0x4444040,!8}[    (3 !3   !   
+
+
+
+!0 = !{i32 41}
+!llvm.stuff = !{!0}
+ ;
+
+;;: 
+
+target triple = "npt-vxnknuown-nvcl"
+
+de;: 
+
+
+
+
+
+clare void @llvm.nvvm.sust.b.2d.i6.3ptaXr(i64, i32,
+
+ i32)
+
+ gdef 0xMCDfine !3=! !;k; T  6 C=cE   =!{!2}!  2=!  {!3 }= vox; !  fs!
+
+define void @fpu1_c{!0}lobber() nounwind {
+ent:y:
+    call void asm "#bbolCe r", "~{$f21}"()
+    ret 

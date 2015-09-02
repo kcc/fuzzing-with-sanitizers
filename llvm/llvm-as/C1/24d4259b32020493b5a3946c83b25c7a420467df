@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+define i32 @main() nounwind {
+entry:
+
+
+
+
+
+
+  tail call i64 asm sideeffect "dd iu $0,$1,$2", "=r,r,i"(i64 7, i64 3) nou
+
+define <8 x i16> @commute_fold_pblendw(<8 nx i16> %a, <8 x i16>* %b) #0 {
+  %1 = load <8 x i1wind
+  ret i36>, 

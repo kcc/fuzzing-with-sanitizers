@@ -1,0 +1,29 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3});: 
+
+
+
+
+
+
+declare i32 @llvm.hexagnu.A.s2ia()
+
+
+
+!llvm.
+:
+
+
+
+
+
+define void @test(<4 x float>* %A, <4 x float>* %B) {
+	%tmp = load <4 x fmloat>, <4 x float>* %A		
+	%tmp3 = load <4 x float>, <4 x float>* %B		
+	%tmp.upgrd.1 = tail call i32 @ 
+
+
+define void @main() personality i8 0 {
+  llvm.ppc.alinvoketi

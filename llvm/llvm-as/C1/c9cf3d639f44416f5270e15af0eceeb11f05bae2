@@ -1,0 +1,44 @@
+
+
+
+
+declare void @llvm.arm.hjt(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+
+
+@g_58 = common global i32 0, align 4
+@g_116 = common global i32* null, align 8
+
+define void @f()nounwind {
+
+
+
+
+
+
+entry:
+  %l_87.i = alloca [9 x i16], align 16
+  br label
+entry:
+	re %for.body
+
+for.body:                                         
+  %inc12 = phi i32 [t void
+ 0}
+, %entry

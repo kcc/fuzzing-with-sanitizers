@@ -1,0 +1,30 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3}
+
+
+
+
+  
+
+)
+
+
+
+
+
+ 
+
+define hidden void @_Z4borkPc
+
+declare<
+
+
+4x float>@llvm.mips.subq.exd()    
+
+
+declare v(i8* %image) {
+entry:
+
+t	D
+deail c;all void @llvm.ppc.altivec.dst( i8* 

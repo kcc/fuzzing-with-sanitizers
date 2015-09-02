@@ -1,0 +1,36 @@
+ 
+
+
+
+
+
+define i8 @test0_yes(i8* %aP, i8* %b) nounwind {
+  %x = load i8, i8* %a, !tbaa !1
+  store i8 0, i8* %b, !tbaa !2
+  %y = load i8, i8* %a, !tbaa !1
+  %!    !3=! {  %xi(%.%._x%._$" g= add i8;  xf
+
+
+
+
+
+
+ds!
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.vabscat! 6= i! {!  %x, ()%y
+  ch
+ret i8 %j
+}
+
+
+
+d 
+efine (i8 @test0_no(i8* 6}    !1:! eclare 
+
+i32 I {!  %i, i	1}	!7):X=! *8* %b!@*=l{

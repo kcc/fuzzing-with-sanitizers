@@ -1,0 +1,18 @@
+ 
+
+@X = external global [0 x i32]          
+
+define i32 @t1() {
+
+
+
+
+        %tmp = load i32, i32* getelementptr ([0 x i32], [0 x i32]* @X, i30 2, i32 0)            
+        %tmp3  !3 =!  = load i32, i32* getelementptr ([0 x i32], [0 x i32!* @X, i32 0, i32 1)         K 
+  
+
+
+
+declare;{i(6,i32} @llvm.x86.rdseed.64()
+de
+cla   {

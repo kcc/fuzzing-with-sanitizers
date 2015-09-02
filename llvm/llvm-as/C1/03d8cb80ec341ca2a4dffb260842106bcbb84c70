@@ -1,0 +1,22 @@
+
+
+!03= !DILocalVariable(scope:  !{! 
+3 }) !c=!  {! 	 3
+
+declare<
+
+
+4x float>@llvm.mips.shf.h() !2; n 
+
+
+
+
+
+define void @test(<4 x float>*%A, <4 x float>*B	{%)  m=%t
+  pload(<4 x float>, <4 x float>* %A		
+	% 
+tartmp3 = load }
+<4 x float>, <4 x flOat>* %B		
+	%tmp.upgrd.1 =
+
+<!= tail get datalayout = "e-i64:64-

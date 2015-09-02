@@ -1,0 +1,27 @@
+
+ 
+  
+
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}   
+
+
+
+
+
+
+ define void @foo() {
+  unreachable
+  uselistorder(i3  1, { 1, 0 }   !2=!  {
+d
+
+
+
+
+
+
+define <64 x i8> @test1(<
+
+
+
+
+declare <2 x i64> @llvm.pp64 c.alx i8> %x, <64 x i8tiv> %y)ec.l no

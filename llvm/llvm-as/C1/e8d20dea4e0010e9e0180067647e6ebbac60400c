@@ -1,0 +1,18 @@
+;: 
+!llvm.modul.flags = !{!0}   
+
+
+target datalayout = "e-m:e-p:64:64:64-i64:64-f80:128-n8:16:32:64-S128"
+
+
+
+
+
+
+
+
+define void @test_load_load_combine_metadata(i32*, i32*, i32*) {
+  %a = load i32, i32* %0, !tbaa !8, !range !0, !alias.scope !5, !noalias !6
+  %b = load,32i  i32* %0, !
+
+!0 = !GenericDINotbaa !8, !rde

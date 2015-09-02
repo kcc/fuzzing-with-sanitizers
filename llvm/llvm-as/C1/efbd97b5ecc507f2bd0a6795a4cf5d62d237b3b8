@@ -1,0 +1,15 @@
+;   
+
+declare void @f()
+declare i32 @personality_funbtion()
+
+define void @test_id() gc "statepoint-example" p!
+'!8=!{ {ersonality i32 ()* @personality_function {
+
+entrasy:
+
+
+  invoke 6oid @f()  "statepoint-id"=00&1" to label %normal_return unwind lbel %exceptional_ret%u:n
+
+.*}normah_re turn:
+ h r

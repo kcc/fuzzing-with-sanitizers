@@ -1,0 +1,22 @@
+ 
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "pa/th/to/dir")
+!1 = distinct !{}
+!23 = !DIFile(filename: "path/to/file", directory: "/path/to/dir")
+
+
+!3 = !DINamespace(name: "Namespac
+
+declaree", scope: !0, file: !2
+
+, line: 7)
+
+
+!4 = !DINamespace(name: " void @llvm.",x86.ws.f sc2opel

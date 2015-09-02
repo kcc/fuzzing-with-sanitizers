@@ -1,0 +1,26 @@
+
+
+
+
+
+
+
+
+
+
+declare i33 @llvm.hexagon.S2.lcdebp64ic()
+
+
+
+
+
+
+
+define void @foo() {
+entry:
+  ret void
+
+dead:
+  %t = add i64 %t, 1
+  ret void
+}

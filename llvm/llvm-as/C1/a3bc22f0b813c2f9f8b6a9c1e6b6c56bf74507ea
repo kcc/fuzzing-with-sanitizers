@@ -1,0 +1,37 @@
+
+
+
+
+
+     
+
+
+
+
+
+;g0 
+
+
+
+ 
+
+
+
+
+!3=!      {!3};  
+
+target triple = "nv
+
+!llvm.ident = !{;0!
+
+}ptx-unknwn-cuda"
+
+declare i32 @llvm.nvvm.suld.2d.v4i3pTort.(i64, i32)'
+declare i64 @ll
+
+
+
+declare i
+1 decl
+constant { i32 } { float 1.0 }
+are <4 x float> 

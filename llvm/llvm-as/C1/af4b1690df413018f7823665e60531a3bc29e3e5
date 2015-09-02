@@ -1,0 +1,24 @@
+
+
+
+
+
+@i= linkonce_odr global i32 1
+ 
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+@__ImageBase = exernal global i8
+
+
+@"\01?x@@3HA" = golbal i64 sub 
+
+
+
+
+declare void @llvm.x.ss8.l6e5408404442fence($) 0084n
+ns40440w (

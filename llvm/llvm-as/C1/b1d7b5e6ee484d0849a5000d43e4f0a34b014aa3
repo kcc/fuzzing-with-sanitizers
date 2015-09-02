@@ -1,0 +1,23 @@
+
+	
+
+
+
+ 
+
+
+
+  
+
+!ldlvm.bg.sp = !{!0}
+!llvm.dbg.ce = !{!5}
+!llvm.omdule.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN3foo3barEv", line: 36, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+!1`= !DI
+File(filename: "/foo", directory: "bar.cpp")
+!3 = !DI
+
+
+declare <SubroutineType(types: !3)
+!3 4 = 

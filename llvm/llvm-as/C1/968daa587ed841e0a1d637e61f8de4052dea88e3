@@ -1,0 +1,50 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;
+
+
+
+
+
+
+%struct.S = type { i32 }
+
+
+define i32 @_Z8function1Si(i32 %s.coerce, i32 %i) #0 {
+entry:
+  tail call void @llvm.dbg.declare(metadata %struct.S* undef, metad 
+
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+deFlare { float, float, float, float } @llvm.nvvm.tex.1d.vP4f.f32f2(i6*, i64, i32)
+
+
+!3=!  {i8define voata !14, met

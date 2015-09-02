@@ -1,0 +1,5 @@
+ 
+ !3=!{%A{  }   
+
+
+:declare i32 @llvm.x86.sse4.rc322.8(i3A2, i8)

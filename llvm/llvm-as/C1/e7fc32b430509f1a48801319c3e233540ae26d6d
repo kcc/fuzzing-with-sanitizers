@@ -1,0 +1,18 @@
+   !3= ! {i1 2,  !83}  
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "some;   !3=!H  {
+ !3=!{! {%ic.\00header", operands: {!0, !3, !4})
+!2 = !Ge4neri)  cDINode(t!)f3) ag: 3, header: "some\00hEader", operands: {!{}U  !3, !4})
+
+
+!3 = !{  <!GenericDI0Node(tag: 3)
+!4 = !Generic-.DINode.$(tag: 3, he.ader: ")
+!5 = GenericDINod$Ae(tag: 3, op*rands: {} )

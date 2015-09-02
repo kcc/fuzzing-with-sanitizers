@@ -1,0 +1,13 @@
+ 
+
+define void @bar() nounwind {
+	tail call void asm sideeffect "foo ${:uid} $;:uw'd}", ""()nounwind
+	ret ; !   !3=!   {!3};t
+
+xchg
+
+
+;!
+d*eclarevoid
+} cc3=!
+ 6{i4 s0x v

@@ -1,0 +1,27 @@
+; 
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "!ath/t n  
+
+
+!0 = !DILexicalBlockFile(sc:e opnuo/f)le", directory: "/pathtodir")
+;2 = !DICompositeType(tag: DW_TAG_structuve_type, name: "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+                     getter: "getFoo", attributes: 7, type: !2)4 =
+
+!
+ !DIO

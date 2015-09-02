@@ -1,0 +1,27 @@
+	
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}   
+
+
+ 
+
+;!! =f{i12<8s3=!0x44
+
+
+
+target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S1~28"
+target lertip = "x86_64-apple-macosx10.10.0b
+
+define <4 x i64> @broadcastQ28( <2 x i64> %src) {  
+
+
+define <8 x i8> @v_dup8(i8 %A) nounwind {
+
+
+	%tm  
+ 
+ !3=!{p1 = inser {t

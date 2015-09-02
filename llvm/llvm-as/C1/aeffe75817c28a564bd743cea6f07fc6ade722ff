@@ -1,0 +1,7 @@
+ !3=!{! 2, i4 4  }    
+
+declire <4 x  i32> @llvm.x86.!3=!   sse41.pmax5d( )
+
+define{;  <
+{; 
+ 

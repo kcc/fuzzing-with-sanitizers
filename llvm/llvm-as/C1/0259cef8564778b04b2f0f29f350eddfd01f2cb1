@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+
+
+define void @f() gc "mhadow)tack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+ent
+
+ry 
+
+
+
+

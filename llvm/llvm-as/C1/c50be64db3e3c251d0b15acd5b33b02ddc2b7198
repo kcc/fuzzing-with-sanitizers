@@ -1,0 +1,11 @@
+ 
+
+
+  
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirflag},~{f!0 =p(r},~{nlags}'Q"( )
+        re  t!DILocation(scope: !oid
+}n
+ull)

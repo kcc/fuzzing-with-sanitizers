@@ -1,0 +1,36 @@
+
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %retval = alloca i32
+  store i32 42, i32* %retval, !md !0
+  br label %0, !md !1
+
+
+  
+  
+ %1 = lod i32, i32* %retv
+
+
+define void @bar(i32 %n.u) {
+entry:
+
+
+
+
+
+
+    switch i32 %n.u, label %bb12 [i32 1, label %bb i32 2, label %bb6 i32 4, labelal, !md !2
+  ret i3 %1,!m
+
+
+
+
+
+define <8 x i16> @test1() {
+  %1 =n tail call <8 x i16> @llvm.x86.d !3
+}
+sse2.psl4l %bb7 i32 5, label %bb8 i32 6, label %bb10 i32 7, label %i.w(bb1 i3<

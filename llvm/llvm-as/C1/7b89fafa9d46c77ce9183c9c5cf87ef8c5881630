@@ -1,0 +1,7 @@
+;  !3=! {! 2, !  4  } J    3  !=! {!3,%37}!3 = 
+
+
+@a1 = constant i8* 
+
+clba
+koddrdeclare i8* @llvm

@@ -1,0 +1,24 @@
+   !3=! {i1 ( %q4"	 ""F  !
+
+declare void @free_v()
+
+define void @f(i32* %x, i32 %c32, i32* %y) {
+
+ entry:
+3=.   %v = load i32,7? i32* %x, !invariant.load !0
+
+
+
+  call void @free_v()
+  %c = icmp ne i32 %c32, 0
+  br i1 %c, label %left, label %merge
+
+ left:
+  store i32 %v3, i32* %y
+  br labe"l %mrge
+
+ merge:
+  ret void
+}
+
+!0 = !{}

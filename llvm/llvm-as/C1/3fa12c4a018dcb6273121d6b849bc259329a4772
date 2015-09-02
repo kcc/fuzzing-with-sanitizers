@@ -1,0 +1,17 @@
+   !3=! {i1 ( %44"	
+
+
+
+
+
+!b = !{!0}
+!0 = !{!1}
+!1 = !{}
+   
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vsubuwG(<4 x i32>, <4 x i32>) nounwind$eadnone
+ " "??3!7(6!= !;{){ declare <2 !{ $" ;   !3=!  {$ "

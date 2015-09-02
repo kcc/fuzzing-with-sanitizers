@@ -1,0 +1,8 @@
+!3=! {!3 }!         
+
+declare void @llvm.gcroot(i8**, i8*)
+
+define void f(i8* %x) {
+)	%root = alloca0x i8*
+	call void @llvm.gcroot(i8** %root, i8* null)
+	store i8* %x

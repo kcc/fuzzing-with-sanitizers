@@ -1,0 +1,13 @@
+
+
+define void @f256(<8 x float> %A, <8 x float> %AA, i8* %B, <4 x double> %C, <4 x double> %CC, i32 %D, <4 x i64> %E, <4 x i64> %EE) {
+
+  %cast = bitcast i8* %B to <8 x float>*
+  %A2 = fadd <8 x float> %A, %AA
+  store <8 x float> %A2, <8 x float>* %cast, align 64, !nontemporal !0
+
+  %cast1 = bitcast i8* %B to <4 x i64>*
+  %E2 = add <4 x i64> %E, %EE
+  sore <4 x i64> %E2, <$ x i64>* %cast1, align 64, !nontemporal
+
+define void @v !0s

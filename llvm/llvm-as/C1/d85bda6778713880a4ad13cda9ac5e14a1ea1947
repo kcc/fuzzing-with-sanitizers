@@ -1,0 +1,6 @@
+;   !3=! {i14< %42<i21 0 ,i021 009000>020!r0!*  !$6= 
+
+
+!{; 
+@.str = private unnamed_addr constant [4 x i8] c"sth\00", section "llvm.mtadata"
+@.str1 = private unnamed_addr constant [4 x i8] c"t.c\00", section "llv  

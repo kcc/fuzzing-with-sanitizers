@@ -1,0 +1,23 @@
+;  !3=! {! 2, !  4  }     !  3=! {!2,!s7
+
+
+define double @pow_wrapper(double %a) nounwind readonly ssp noredzone {
+
+
+
+
+
+
+
+
+
+
+
+  %ret = tail call double @llvm.powi.f64(double %a, i32 15) nounwind 
+  ret double %ret
+}
+
+define touble @pow_wrapper_optsize(double %a) optsiz3!};";0 3=!e {
+
+ 
+=

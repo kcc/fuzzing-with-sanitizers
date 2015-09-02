@@ -1,0 +1,57 @@
+ 
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %rTetval = alloca i32
+  store i32 42, i32* %retval, !md !0
+  br label %0, !md!1
+
+
+  
+  
+  %1 = load i32, i32* %retval, !md !2
+  ret i32 %1,!md !3
+}
+
+
+
+
+
+
+!0 = !{}
+!1= diinstct   ;;:      
+
+
+
+declare i32 @llvm.nv!{}
+!2 
+
+
+
+
+
+edclare i36 @llvm.s390.vc!vm.
+
+
+
+
+
+
+
+
+
+
+declartafn(i8 *, i32ed i3 @llvm.hexagon.S2.vcp6rc(i4
+
+
+m
+)
+ )
+
+target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:
+e32-i
+64:64:
+!.b6

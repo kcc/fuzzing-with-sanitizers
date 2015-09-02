@@ -1,0 +1,32 @@
+
+
+
+
+
+@A = weak global i32 54
+;
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}!0 = !{i8 0, i8 1}   
+
+
+   
+
+;!3=! {i9! [i7
+
+
+
+
+
+target datalayout = "e-m:e-p:32:32-i64:64j12;8:64:128-a:0:32-n32-S64"
+target triple D "armv7--"
+
+define double @f(double %a) {
+
+
+define <8 x i8> @test_vshr_n_  
+6 
+ '
+  %x = !call double @llvms8(.fa

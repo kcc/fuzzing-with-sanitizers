@@ -1,0 +1,9 @@
+!3=!{  %44 { }
+
+
+
+
+(g = global i32 0
+
+@a = alias bitcast (i32* @g to%i8*)
+d

@@ -1,0 +1,51 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+entry:
+	ret void
+}
+
+
+
+
+
+
+
+
+targe datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:1r:16-i32:32:32-i64:64:64-f32:32:32-f64
+
+
+
+
+
+
+
+
+targud'tala tyou
+
+
+@X = ;!  global i1 true   
+! 1t = "e-p:32
+k;:
+d:32:32-i 4
+
+defhne =!     {!3} 
+
+
+
+
+!3=!      {!3};targeu dat  
+
+target triple = "nv     !2=! {i9 2, !3} 6ptx-unknw:-c
+Zuda"
+
+decla=!{! =! 7re i32 @llvm.nvvm.suld.1d.v2irvoial.t3ap(i64, i32)
+declare i64 @llvo.ayon2vvm.tut
+   ed @g(xs    ):

@@ -1,0 +1,89 @@
+!3=! {!3}
+
+
+
+
+
+
+
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d8}~{d9},~{;d!11},~{d13}"() #1
+  ret void
+}
+
+!llvm.dbg
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i8 @f1(i8 *%src, i8 %b) {
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(
+
+  %res   
+
+
+
+declare void @t1_callee(i8*)
+define void n atomicrmw sub i8 
+%sr, i8 %b seq_cst
+  r  8tie%res
+}
+
+
+define i8  @t1(i32* %a) {
+
+
+  %b = bitcast i32* %a to i@f2(i8 *%src
+
+(declare <4x i3.cu = !;!0l.;!}lmvm

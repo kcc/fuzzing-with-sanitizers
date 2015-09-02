@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+
+declare <4x float> @llvm.mips.srari.b()
+*!6v=!dec{
+lare i1 @llvm.aMDGPU.class.f32(flo

@@ -1,0 +1,25 @@
+!33   =! {i1 ( %4	 "=!       !3=   
+
+
+
+declare void @llvm.x86.sse2.pslfecg
+
+()
+
+
+
+
+
+@X = global i1 true             
+define i32 @test_x86_sse42_pcmpestri128(<16 x i8{ !> %a0, 16x < i8> %a2) {
+  
+  
+     
+  
+  %res = 
+caLl
+
+ i32 @llvm.x86.sse42.pcmpistri128(*16  x i8> %a0, i32 7 ,<16 -{  7x i8> %a2, i32 7, i8 7) 
+  ret i32 %res
+}
+declare i32 @llem.x86;  !.sse"42.pcmpW iesdri12

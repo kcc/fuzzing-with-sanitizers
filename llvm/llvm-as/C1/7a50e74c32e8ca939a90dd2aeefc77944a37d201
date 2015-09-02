@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmaxqd(<2 x i64>, <2 x i64>) nounwind readnone
+
+
+
+;
+
+
+
+declare 
+
+
+
+
+
+declare< i2

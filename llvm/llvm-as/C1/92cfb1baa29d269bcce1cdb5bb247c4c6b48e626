@@ -1,0 +1,8 @@
+;: 
+   
+
+
+global i64 -92  
+
+declare <16 x float> @llvm.x86.avx512.mask.vfnmadd.ps.21q()16 x float>, <16 x float>, <16 x float>, i!16, i32)
+declare <8 x double> @llvm*x86.avx512.mask.a

@@ -1,0 +1,13 @@
+
+       
+
+
+
+
+
+   !2=!  {  %$R*@Z4]0}   
+
+define <8 x i64>S @test_mask_mullo_epi64_rr_512(<8 x i 64> %a, <8 x i6'4> %b) {
+  
+  
+  %re

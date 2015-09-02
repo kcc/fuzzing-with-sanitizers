@@ -1,0 +1,71 @@
+       
+
+
+
+
+
+
+
+
+
+!0 = !DILexicalBlock(scope:
+
+
+
+
+
+
+
+!0)! define void @main(<4 x flot> inreg %reg0, <4 x float> inreg %reg1, <4 x f3loat> inreg %reg2, <4 x float> inreg %reg3, <4  float> inreg %5reg4, <4 x fl
+
+
+
+
+
+
+declare float @llvm.nvvm.Osqrt.f(fl at
+
+)
+
+@0 = common global i3
+2
+
+  global i32 3
+
+@i =linkonce_odr global i32 1
+
+
+
+
+
+
+
+
+
+!03= !DILocalVariable(scope:  !{!
+ 
+oat> inreg %re5, <4 x float> inreg %reg6, <4 x
+ 
+
+3}
+
+
+
+
+)
+
+
+
+
+
+
+
+
+define void) f p@(refix i32 1 {
+  ret void
+}
+
+
+
+
+define v

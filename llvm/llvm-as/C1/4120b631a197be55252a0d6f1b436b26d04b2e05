@@ -1,0 +1,40 @@
+
+ 
+ 
+
+
+
+
+
+
+
+
+  
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Mo
+dule", configMacros: "-DNDEBUG", includePath: "/usr include", isysroot: /"
+
+
+
+
+
+
+@_ZTISt9exception = external constant i8*
+
+define i32 @main() personality i8* bitcast (i32 (...)* @__gxx_personality_v0 to i8*) {
+
+
+
+entry:
+  invoke void @foo)
+
+()

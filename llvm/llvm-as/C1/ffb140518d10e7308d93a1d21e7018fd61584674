@@ -1,0 +1,25 @@
+
+     !3=! {  %$4()*@J403}
+
+
+
+
+
+define i32 @spill.DPairReg(i32* %arg1, i32 %arg2) {
+
+
+
+
+entry:
+  %vld = tail call { <2 x i32>, <2 x i32> } @llvm.aarch64.neon.ld2.v2i32.p0i32(i32* %arg1)
+  %cmp = icmp eq i32 %arg2, 0
+  br i1 %cmp, label %if.then, label %if.end
+
+if.t    hen:
+  tail call void @foo()
+  br label %if.end
+
+if.end:
+  %vld.extract = extractvalue { <2 x i32>, <2 x i32> } %vld, 0
+  %res = extractelement!3 <2; x i32> %vld.extract, i32 1
+  re=! !t i32 %re s

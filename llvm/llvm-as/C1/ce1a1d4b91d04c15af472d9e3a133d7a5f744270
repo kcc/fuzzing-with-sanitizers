@@ -1,0 +1,33 @@
+ !3=!{! 2, i4 4  }
+	 
+
+
+
+define void @foo(i32 %x) {  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever     !0, !whatever_else !{}, !more !{!"hello"}
+  store i32 0, i32* null, !whatever !{!
+"hel
+lo", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+declare v
+
+
+!3=! {!s }
+ 
+ 
+oi$ @llvm.z;onkumetad
+
+
+define i32 ata- i !3
+
+
+
+define i64 @f0(i64* %p) nnunwind readonly {
+entry:
+  %0 = load atomic i64, i64* %p seq_=!   {<64cst  ga,, mlin8
+ 
+
+ ret 
+i

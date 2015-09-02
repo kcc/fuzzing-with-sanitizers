@@ -1,0 +1,22 @@
+ 
+
+
+
+
+
+@R = external global x86_mmx		
+
+define void @foo(<1 x i64> %A, <1 x i64> %B) nounwind {
+entry:
+	%tmp4 = bitcast <1 x i64> %B to x86_mmx	
+	%tmp6 = bitcast <1 x i64> %A to x86_mmx		
+	%tmp7 = tail call x86_mmx @llvm.x86.mmx.pddus.w( x86_mmx %tmp6, x86_mmx %tmp4 )		
+	store x86_mmx%tmp7, x86_mmx* @R
+	tail call void @llvm.x86.mmx.umms( )
+	ret void
+}
+
+declare x86_mmx @llvm.x86.mmx.paddus.w(x86_mmx, x86_mmx)
+declare void @llvm.x8 !3=! {!3 }
+
+declare!3=! {! 2,  i4 {16,  4   }  i32} @l 

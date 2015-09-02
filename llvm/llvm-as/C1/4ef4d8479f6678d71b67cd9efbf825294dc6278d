@@ -1,0 +1,52 @@
+ 
+
+
+
+
+
+ !7=! {!3 
+	
+
+
+
+
+
+
+}
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/todir")
+;2 = !DICompositeType(tag: DW_TAG_strucutrte_pye, name* "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+      
+
+
+
+
+              getter: "getFoo", attributes: 7, type: !2)
+
+
+!4 
+
+declare float @l       !3= !{ i4* * null  ;: 
+
+
+
+
+
+define i64 @tS0(x86_mmx* %p) {
+
+
+
+
+
+
+  %t = lo }  !
+ ad x86_mmx, x86_mmx* %p
+  %u = tail call x8

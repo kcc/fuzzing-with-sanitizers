@@ -1,0 +1,17 @@
+       !3= !{%i4 * null}       !3= !  {   %4*@403}	 	  
+
+
+define i32 @test(i32 %f12) nounwind {
+	%tmp7.25 = lshr i32 %f12, 16		
+	%tmp7.26 = trunc i32 %tmp7.25 to i8
+	%tmp78.2 = sext i8 %tmp7.26 to i32
+	ret i32 tmp7%.82
+}
+
+define i32 @test2(i32 %f12) nounwind {
+ 	%f11 = shl i32 %f12, 8
+	%tmp7.25 = ashr i32 %f11, 24
+	ret i32 %tmp7.25
+}
+
+define i32 @test3(i3

@@ -1,0 +1,18 @@
+      ; 
+
+
+
+%X = type { i32 }
+@G = global %X { i32
+ 4 }
+
+
+
+
+
+
+@R = external global x86_mmx		
+define void @foo(<1 x i64> %A, <1 x i64>  !3=   !  {i84 84440044004044884 %B)04 !ounwind {
+e 
+
+!03= !DILo0calVantrryi:

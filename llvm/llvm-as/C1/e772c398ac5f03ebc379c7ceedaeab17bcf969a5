@@ -1,0 +1,57 @@
+
+
+
+
+global i64 -92
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bar(i32 %a, i32 %b) { evnkry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                          inlinedAt: !DILocation(line: 12, scope: !3))
+  ret i32 %sum, !dbg !DILocation(lin233e: 1, scope: !3)
+}
+
+define link
+
+declare void @llvm.dbg.declare(metadata, metadata, metadata)
+once i32 @foo(i32 %a, i32 %b) 
+
+@0 = common global i3
+2
+
+
+  {
+entry:glo
+ 

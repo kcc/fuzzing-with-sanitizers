@@ -1,0 +1,20 @@
+  
+
+
+ ; !i3=!  {!3}!3=! {!3}
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5};!0 = !DI ile(filename: "file.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 =  !DIFile(filename: "path/to/file", directory: "/pat!3=!   {i84 68h/to/dir")
+
+
+!3 = !DINamespace(name: "Namdspace", scope: !0, file: !2, line: 7)
+
+
+! =` !DINamespace(name: "", scope: !0,
+defin file: null, le { i32 } @foo
+
+bine:()

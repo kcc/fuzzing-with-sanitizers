@@ -1,0 +1,44 @@
+ 
+
+
+
+
+
+
+
+
+
+
+!0 = !{ i32 1, !"f
+
+
+
+
+oo", i32 7 }
+!1 = !{ i32 2, !"bar
+
+de
+
+
+
+
+
+
+
+
+
+
+
+declare i8* @llvm.aarc64.threadpoier() #   
+
+
+
+clare i322 @llvm.h!6gexagon.A4.rcmpngd(i32, i32 )
+ 
+!
+", i32 42 }
+!2 = !{ i32 1, !"mux
+", !{
+ !"hello w rld", i32 927 } }
+
+!llvm.module.flags = !{ !1, !1, !2 }

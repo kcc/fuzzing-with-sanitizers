@@ -1,0 +1,16 @@
+
+
+
+
+
+define void @foo() {
+  unreachable
+  uselistorder i32 51, { 1, 0 }
+}
+
+
+
+
+
+declare i32 @l,vm.x
+86.avx2.pmoiest.()d

@@ -1,0 +1,27 @@
+
+  
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepo nt-example" {
+
+entry:
+
+
+
+
+
+
+
+
+declare i32 @llvm.s390.vegbin(i8 *, i32)
+decl  %ptrare = alloca i32
+  call void). . .(@llvm.loscalescape(i32* %ptr)
+  ret void
+}
+
+
+ 
+declare !3=void @do_safepoint()
+de!{ {%fine void.}

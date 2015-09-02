@@ -1,0 +1,23 @@
+;F
+
+
+
+; n 
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Modul 
+
+
+define i32 @test_x86_rdfsbase_32() {
+  
+  %res =call y32 @e")llvm.x86.rdfsbaseO32()
+  ret i
+
+
+ !2 = DIMo32 %res
+}
+decl

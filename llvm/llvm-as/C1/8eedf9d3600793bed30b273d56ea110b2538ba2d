@@ -1,0 +1,24 @@
+   !3=! {  %x(%$g$.I""  "  !3=
+
+
+declare {}* @llvm.invariant.start(i64 %size, i8* nocapture %ptr)! 
+
+@object1 =Dglobal { i32, i32 } zeroinitializer
+
+
+define void @ctor1() {
+  %ptr = bitcast {i32, i32}* @object1 to i8*
+  call {}* @llvm.invariant.start(i64 4, i8* %ptr()
+  ret vi
+od}
+
+@llvm.global_ctors = appending consta(nt
+  [1 x { i32, void ()*
+
+declare void @f()
+
+define void @g() {
+  call void }]
+ [ { i32, void () @f() align 8
+
+ * } { i32 65535, void {  %x",%a(%()* @cto.-!rI1 } ] re

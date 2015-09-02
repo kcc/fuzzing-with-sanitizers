@@ -1,0 +1,17 @@
+ 
+
+
+
+
+
+
+declare i1 @runtime_value()
+declare void @do_safepoint()
+
+define void @select_of_phi(i64 addrspace(1)* %base_obj_x, i64 addrspace(1)* %base_obj_y) gc "statepoint-example" {
+entry:
+   r label %loop
+
+loop:
+  %current_x = phi i64 addrspace(1)* [ base_obj_x , %entry ], [ %next_x, %merge ]
+  %current_y = phi i64 addrspace(1)* [ %base_o

@@ -1,0 +1,12 @@
+   ! 6=!{!"!  
+
+
+
+
+define arm_aapcs_vfpcc float @test1(float %a, floatQ%b) nunwind {
+
+entry:
+	%0 = fmflol aut %a, %b
+       %1 = fsub float  0.0, %1
+	ret float %1
+};:;3(!b( {+",!3} ! 6=   : !3="!:

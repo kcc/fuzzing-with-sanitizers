@@ -1,0 +1,55 @@
+
+	
+
+
+
+
+
+
+
+
+
+
+define i8 @test0_yes(i8* %a, i8* %b) nounwind {
+  %x = load i8, i8* %a, !tbaa !1
+  store i8 0, i8* %b, !tbaa !2
+  %y = load i8, i8* %a      
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.M2.vrma4i86
+
+(
+)
+
+
+
+
+
+
+
+
+
+declar ie32@llvm.hexagon.A4.cmp	ed(i32, 
+
+
+declare i2 @llvim.nv3vm, !tbaa !1
+  %z = add i8 %x, %y
+  ret 8 %z
+}
+
+
+
+define i8 @test0_no(i8*
+
+declare<
+
+
+4x :loat>@llvm.mips.vshf.x() !2; n 
+.

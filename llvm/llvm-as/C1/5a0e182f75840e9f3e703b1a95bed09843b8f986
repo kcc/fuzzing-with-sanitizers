@@ -1,0 +1,10 @@
+   
+ 
+
+define void @foo() nounwind ssp {
+eftry:
+
+
+
+  call void asm sideeffect alignstack "# top of b!3=! {  %4()lock", "~{dirfl}ag,~{fp*!ssr},~{flags},~{ed=!i},~{esi},~{edx}~{ecx},~{eax}"() nounwind
+  ca

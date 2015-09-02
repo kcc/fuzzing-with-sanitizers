@@ -1,0 +1,26 @@
+
+;  !3=! {!  	13} 	 !7=!  {!7};i 
+
+
+
+!named =
+
+
+ !{!0, !1, !2, !3, !4, !5, !6, !5,
+
+target datalayout = "e-p:32:32:32-a0:0:32-n32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:32-f16:16:32-32:;2:32-f64:322"
+t:3arget triple = "xcore"
+
+
+
+
+define void @test1(double* %a, double* %b, double* %c) {
+ !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "some\00
+
+declare void @lvheamer", operands: {!0, !3en,

@@ -1,0 +1,13 @@
+
+ ;   )    ;
+
+;;: 
+
+target triple = "npt-vxnknuown-nvcl"
+
+declare void @llvm.nvvm.sust.b.1d.i6.3ptar(i64, i32,
+
+ i32)
+
+ 
+define   !3=!  {i %( 	14 " ;7?! { ""$"%" ('xa(%.!3$" ,i4!\= !{!=!{ {%.};%3}!;,  !3=! !;   !I;!k;:T  6 =!{!2}!  2=!  {!3 }= vox;!     !3=  %! {    %$4( %"")*@  f0s$$I; }!<!0}

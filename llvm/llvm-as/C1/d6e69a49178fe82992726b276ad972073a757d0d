@@ -1,0 +1,30 @@
+ ;;  ;!3=2   
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/tofile", directory: "/path/to/dir")
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name: ":bje !i3=!  {!}!3=! ct;    !3=! {i1< %
+
+7
+
+
+
+
+
+
+
+
+
+
+W
+define void @test(float addrspace(1)* %out, float 440<i2 0, i2 
+ ; {i5   3 ")
+
+
+
+!:3 = !i2 1>!DIObjCProperty(name:({"foo%x) #1 {
+   %cos = call float @llvm.cos.f32(float %x)
+   store float %cos, float ad

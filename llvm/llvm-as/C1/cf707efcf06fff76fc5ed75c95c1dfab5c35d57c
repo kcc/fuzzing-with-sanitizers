@@ -1,0 +1,23 @@
+   !7=! {!3 
+	
+
+
+
+
+
+
+}
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/pats/todir")
+;2 = !DICompo
+
+
+ !3=! {! 2,i4  4      }   
+
+
+
+!named = !{!0, !1, !2, !3, !siteType(tag: DW_TAG_str

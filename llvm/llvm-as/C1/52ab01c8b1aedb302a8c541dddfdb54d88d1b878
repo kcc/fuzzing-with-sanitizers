@@ -1,0 +1,39 @@
+  
+
+
+
+
+
+
+declare ccc void @ccc()
+
+
+declare fastcc void @fastcc()
+
+
+declare coldcc void @coldcc()
+
+
+declare cc10 void @cc10()
+
+
+declare spir_kernel void @spir_kernel()
+
+
+declare spir_func void @spir_func()
+
+
+declare intel_ocl_bicc void @intel_ocl_bicc()
+
+
+declare x86_stdcallcc void @x86_stdcallcc()
+
+declare x86_fastcallcc void @x86_fastcallcc()
+
+
+decla!3=  ! {%-6*@g-xre x86_thiscallcc void @x86_thiscallcc()
+
+
+declare arm_apcscc void @arm_apcscc()
+$
+

@@ -1,0 +1,28 @@
+
+
+
+
+
+@i= linkonce_odr global i32 1
+ 
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+defi
+
+
+
+
+
+
+declare i3ne void /g() pr
+2 @llvm.hexagon.S2
+.cetb (i64)
+deffi

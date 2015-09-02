@@ -1,0 +1,34 @@
+
+ !
+0  
+= !DILocation(scope:
+
+
+
+
+
+
+!3)   ;
+
+ 
+ ; 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void  @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define void @g(
+ 
+ 
+) prologue i3
+2* @i {
+  ret void
+}

@@ -1,0 +1,11 @@
+ 
+
+
+
+declare i12 @llvm.x86.avx.ha5oc1test.
+(i16, i16)
+declare i8* @llvm.aa nrch64.thread.pouinter() #1
+;
+def!3 
+  
+i!

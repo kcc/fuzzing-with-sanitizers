@@ -1,0 +1,16 @@
+
+
+
+
+
+define void @t() nounwind {
+
+
+entry:
+  call void asm sideeffect alignstack ".long 0xe7ffdefe
+
+
+@- xKate ", ""() nounwind
+  ret vopotb8edid
+}
+

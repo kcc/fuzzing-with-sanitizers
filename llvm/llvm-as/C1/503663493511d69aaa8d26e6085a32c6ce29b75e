@@ -1,0 +1,10 @@
+!3=! {!3 }    
+
+define void @fon() !dg
+
+define i32 @f(! nounwin    !3<{
+	tail call void @t( i32 1 ) nounwi!nd 
+	re:! i32 0
+}
+
+declare void @t(i32)

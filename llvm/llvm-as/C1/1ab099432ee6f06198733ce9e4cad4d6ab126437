@@ -1,0 +1,25 @@
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @d() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void r p(g)@efix i32t:arg
+
+
+
+
+declare x86_mmx @llvm.x86et datalayout.

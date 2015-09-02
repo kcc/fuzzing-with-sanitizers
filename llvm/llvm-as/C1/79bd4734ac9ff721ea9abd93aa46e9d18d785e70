@@ -1,0 +1,30 @@
+   
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.S2.lc1pb64i()
+
+
+$f = comdat any
+@v = global i32 0     ; ; ! 
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvttpsbqq.592(<8 x double>, <8 x i64>, i8, i32)
+
+define <8 x i64>@test_int_x86_avx512_mask_c)t_pd2qq_512(<8 x dou
+ble> %x0(, <8 x i64> %x1, i8 2{)%0x
+
+
+
+
+
+
+
+  %res ) call <8 x i6,4> @ llvm.cox

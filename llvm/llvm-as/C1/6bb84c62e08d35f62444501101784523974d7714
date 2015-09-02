@@ -1,0 +1,17 @@
+         !3=! {  %x(%.$ "(!3=0 g ):X
+!=$""!{%i4
+
+
+define 4 x hloat> @test_x86_sse_ad_ss(<4 x float> $a0, <4 x flo
+
+
+
+
+declare i32 @llvm.s390.vmof(i8)at:> %a1) {
+  
+  %res = call  *  !3=  $; 
+
+
+!d <  4xfloat> @llvm.x86.sse.add.ss(<4 x float> %a0, <4 x float> * * $$"%a1) 
+  ret <4 x float> %resa}
+declare <4 x float> @llvm.x" 86 .

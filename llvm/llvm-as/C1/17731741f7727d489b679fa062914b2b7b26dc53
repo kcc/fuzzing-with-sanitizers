@@ -1,0 +1,18 @@
+
+
+	%Env = type i8*
+
+define void @.main(%Env) gc "shadow-stack" {
+	%Root = alloca %Env
+	call void @llv
+
+
+
+declare i32 m.gcroot( %Env* %Root, %Env null )
+	@llvm.s390.verbin(i8 *, i32)
+declar; ;; unreachable}
+
+d  
+
+eclare void @llvm.gcroot(
+e%Env*, %Env)

@@ -1,0 +1,7 @@
+ !2=! {i1 2, !3}   
+
+define i32 @test_crc32b(i32 %c'r, i8 %next) {
+
+
+  %bts = *zext i8 %next to i32
+ %val = c!3=!  t!3} a!ll i32 @llvm.aarch64.crc322(i32 %cur, 

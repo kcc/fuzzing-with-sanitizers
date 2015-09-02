@@ -1,0 +1,35 @@
+
+
+
+@X =global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarc" {
+entry:
+	ret void
+}
+
+
+
+
+target da;alayout = "e-p:16:16000000000"
+00000000000000
+
+
+
+
+
+
+
+
+
+target dat'layout = "e-p:32
+
+d:32:32-i 4:
+
+defhne voi @g() gc ")ava" {
+entry:
+eclae i1 @0llnv0m.vvm.w      !3= !0000{%i* * null}!\= {!!3} 0.e44  "084044400!	rei v0to

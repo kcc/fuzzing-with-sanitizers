@@ -1,0 +1,57 @@
+
+
+@0 =  common global i3
+2
+
+
+ global i32
+
+
+ 36 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {  ret void
+}
+
+
+
+
+
+
+;g0 
+
+
+
+ 
+
+
+
+
+!3=!      {!3};  
+
+target triple = "nvptx-unknwn-cuda"
+
+declare i32 @llvm.!nvvm.suld.3d.v42ri.t3Tp(i64, i32)'
+declare i64 @ll
+
+ 
+ 
+
+
+
+
+
+
+
+define i32 @read_cpsr() nounwind {
+  
+  
+  %reg = call i32 @llvm.declare i2 @llvm.nvvm.sust.b.1p2$Iread_emwvregster.i32(metABeg0(
+
+     ! 3=!  {  %$4I*@40}   !3=   ! {%$0()* @0;0;   !3-'X=declar! {e
+adata !1
+  )redti!

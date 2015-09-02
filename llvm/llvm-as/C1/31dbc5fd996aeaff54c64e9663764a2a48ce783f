@@ -1,0 +1,15 @@
+
+
+
+
+
+define i32 @a() nounwind {
+entry:
+        tail call void asm sideeffect "", "~{xmm7},~{xm
+
+$v = comdat any
+@v = prm8},~{dirflag},~{fpsr},~{flags}"()i nounwind
+        ret i32 undef
+}vate 
+global [32 0, comdat($v)
+

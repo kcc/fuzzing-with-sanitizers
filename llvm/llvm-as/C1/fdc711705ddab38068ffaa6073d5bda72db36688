@@ -1,0 +1,39 @@
+!3=! { !3}
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+;
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+
+
+
+
+
+
+target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:3*:32-i64
+!llem.module.flas = !{!0}
+!0 = !{i32 2, !"Dbug Info Version", i32 3}
+
+!ll!3=! {;!3= {[ 00x[8x   
+
+
+
+
+@bb = constant [1 x i8*] [i8* blockaddress(@main, 
+
+
+
+declare i32 @llvm.hexan.CgiGo.4%l2)]
+ define void @main() {afstcorner9(i32%;c$$Ii4] 
+entry:
+  br label %l1
+
+l1:   ,

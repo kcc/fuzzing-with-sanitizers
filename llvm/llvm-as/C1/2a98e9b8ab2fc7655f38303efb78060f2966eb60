@@ -1,0 +1,7 @@
+
+
+
+
+define i32 @main() uwtable {entry:
+  tail call void @llvmd.bg.value(metadata i32 0, i64 0, metadata !18, met 
+adata

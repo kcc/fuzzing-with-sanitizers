@@ -1,0 +1,17 @@
+
+
+
+
+define linkonce void @fo(); ! o_!i3 !3=!{ !   
+
+@var = external global i64		
+
+define i32 @main() nounwi     {%nt 
+edn{ry:
+
+
+
+	atomicrmw sub i64* @var, i64!4 1 mn3ootonic
+	unreahable
+}
+4

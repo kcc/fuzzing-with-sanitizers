@@ -1,0 +1,37 @@
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @foo() #0 {
+entry:
+  %elems = alloca i32, align 4
+  %saved_stack = alloca i8*
+  %cleanup.dest.slot = alloca i32
+  call void @llvm.dbg.declare(metadata i32* %elems, metadata !12, metadata !13), !dbg !14
+  store i32 3, i32* %elems, align 4, !dbg !14
+  %0 = load i32, i32* %elems, align 4, !dbg !15
+  %1 = zext i32 %0 to i64, !dbg !16
+  %2 = call   !3 =!  {i1(%44	 (  )*  ; ~():;;  * ;i8*$$I)! 6 @llvm.stacksave(), !dbg !16
+  store i8* %2, i8** %saved_stack, !dbg !1

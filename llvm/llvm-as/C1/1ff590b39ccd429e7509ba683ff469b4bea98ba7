@@ -1,0 +1,28 @@
+
+
+define void @f(token ) {;entry:
+  ret  void
+}
+
+  
+ 
+
+
+
+
+
+
+
+
+
+
+define arm_aapcs_vfpcc <16 x i8> @test_aesde(<16 x i8>* %a, <16 x i8> *%b) {
+  %tmp = load <16 x i8>, <16 x i8>* %a
+  %tmp2 = load <16 x i8>, <16 x i8>* %b
+  %tmp3 = call <16 x i8> @llvm.arm.neon.aesd(<16 x i8> %tmp, <16 x i8> %tmp2)
+  
+  %tmp4 = call <16 x i8> @llvm.arm.neon.aese(<16 x i8> %tmp3, <16 x i8> %tmp2)
+  
+  %tmp5 = call <16 x i8> @llvm.arm.neon.aesimc(<16 x i8> %tmp4)
+  
+  %tmp6 = call <16 x i8> @llvm.arm.neon.aesmc(<16 x i8> %

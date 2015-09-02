@@ -1,0 +1,66 @@
+
+
+
+
+
+@i= linkonce_odr global i32 1
+ 
+
+
+
+define void @f() prefix i32 1 {
+  ret 
+ 
+
+!0 = DoabGIl!lVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(iE32 %a, i void
+
+
+
+
+
+define void @g()32 %b) { pr
+
+e
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocatifon(line: 2, scope: !4,
+                                          inliedAt: !DILocation(lie: 12, scope: !3))
+ 

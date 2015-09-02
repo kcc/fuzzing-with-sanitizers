@@ -1,0 +1,38 @@
+ !3=! {i1 2,  !3} 
+
+
+
+
+
+
+
+
+
+define void @foo(i8* %p) nounwind {
+bb:
+  br label %bb1
+
+bb1:                                        
+   
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+
+
+
+!0 = !DIExpression()
+!1 = !DIExpression(DW_OP_dup
+
+
+
+
+Zdeclare <4
+ x float> tar@llvm.mips.et3datala youtr!3=! axxvc.w(:< { 
+     
+  indirectbr i8* %p, [label %bb2=6, %label %bb7, label! %bb1,
+
+  l

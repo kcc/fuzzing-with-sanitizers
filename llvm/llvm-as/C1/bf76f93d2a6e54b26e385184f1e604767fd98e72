@@ -1,0 +1,22 @@
+   
+
+
+
+
+
+!named = !{!  0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 ="!DIModule(scope: !0, :mnae  !3= !
+
+
+dneie fi32 @foo() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{!"func{%i* * ntion_entry_coull}  *"Modunt", iul!e"32 2:304}

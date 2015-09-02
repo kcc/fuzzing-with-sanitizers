@@ -1,0 +1,18 @@
+@a = global i32 42
+  ;
+
+ 
+
+ 
+ ;
+
+;; !3=! {i1 H %: 
+
+target triple = "npt-vxnknuown-nvcl"
+
+declare void @llvm.nvvm.sust.b.3d.v2i16ptarr(i64, i32,
+
+ i32)
+
+ 
+deeifn ^!3=

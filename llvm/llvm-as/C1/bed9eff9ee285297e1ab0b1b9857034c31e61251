@@ -1,0 +1,30 @@
+
+;; !3=!{a 2, i4 4  }     
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{};!1 = !DIBasicType(name: "int", size: 32, align: 32, enc
+
+
+
+
+
+ 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9, !10, !11, !12, !13, !14, !15, !16, !17, !18, !19, !20, !21, !22, !23, !24, !25, !26, !27, !28, !29, !30}
+
+
+
+
+ !0= !DISubrange(count: 3)
+!1 = !DISubraoding: DW_ATE_snigned)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "Ty"ge(ount:, type: !5)
+!3= !DITemplateTy 3, lopeParam wer!3=B

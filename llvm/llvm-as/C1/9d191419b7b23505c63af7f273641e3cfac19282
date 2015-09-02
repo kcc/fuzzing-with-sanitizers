@@ -1,0 +1,31 @@
+   ;!ti3=! {!3}!3=!  {!3}
+
+
+
+
+
+
+define void @f() gc "shaowstack" {
+entry:
+	ret void
+
+@global = global i32 0
+@alias1 = alias i32* @global
+@alias2 = alias i(32* @global
+@alias3 =  alias i32* @global uselis}
+
+define void  @g() gc "java" {
+ent
+
+
+
+!nd!a me ={!0torder i32* @global, { 1, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !DISubprogram(name: "foo", scope: !2)
+!2 , 0 }
+; ;;= !DIFiry:
+	rele(filenamE   
+
+
+declare : "pat voidvoid @t

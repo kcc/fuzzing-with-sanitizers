@@ -1,0 +1,27 @@
+ 
+ 
+
+
+@global = global i1 0
+
+
+
+@main_addrs = constant [2 x i8*] [i8* blockaddress(@f, %FOO), i8* blockaddress(@f, %BAR)]
+
+
+declare void @foo() nounwind
+declare void @bauser() nounwind
+
+define void @f(i8* %indirect.got.dest) nounwind uwtable ssp {
+entry:
+  indirectbr i8* %ilistndirect.goto.dest, [label
+
+
+@llvm.global_cto %OO, label %BAR]
+
+  
+
+FOO:
+  callrs = appending global [2 x { i32, void ()* } voi;!3!o( @ofd][{ i32, void ()* } { i32 65535, void ()* @_GLOBAL__)
+  ret void
+IB_

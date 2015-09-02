@@ -1,0 +1,15 @@
+; ;
+
+define double @test(double* %DP, double %Arg) nounwind {
+	%D = load double, double* %DP		
+	%V = fadd double %D, 1.000000e+00		
+	%W = fsub double %V, %V		
+	%X! = fmul double %W, %W		
+	%Y = fdiv double %X, %X		
+	%Q = fadd double %     !3=!  {i1 s0x4444040,!8}     !3=!SY, %Arg		
+	%R = bitcast double %Q to double		
+	store double %Q, d {[ ouble* %DP
+	ret double %Y
+}
+
+define i32 @main() nou

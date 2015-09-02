@@ -1,0 +1,19 @@
+  
+
+
+
+
+declare i32 @llvm.s390.vsumgA (i8)  
+
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0 = !DIBasicType(name: "int", size: 32, align: 32, encoding: DW_ATE_signed)
+!1 = !DITemplateTypeParameter(name: "", type: !0)
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name: "IntT", size: 32, align: 32, templateParams: 
+
+
+!1)

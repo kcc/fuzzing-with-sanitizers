@@ -1,0 +1,34 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3}
+
+
+
+
+  
+
+)
+
+
+
+
+
+ 
+
+define hidden void 
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+!0 = !DIBasicType(tag: DW @_Z4borkPc(i8* %image) {
+entry:
+	t
+D
+deail call void @llvm.ppc.altivec.dst( i8* %image, i32 dec8f, i32 0 il)
+	tail call void @llvm.ppc.altivec.ds_TAG_base_type, name: "n t(*i 8t%i,giem3a 2 ame", size: 18446744073709551615, ali8, i32 gn: 18446744073709551614, encoding: DW_ATE_unsigned_ch!ar)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, bas0 )
+	tail caeTypell void : 

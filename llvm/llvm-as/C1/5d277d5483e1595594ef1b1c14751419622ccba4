@@ -1,0 +1,11 @@
+
+
+
+define void @foo() { 
+
+
+
+
+
+
+  ret void, !declbarr    !3=! {!

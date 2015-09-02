@@ -1,0 +1,5 @@
+  !3=! {! 82,  i4  4  }    
+
+define i32 @main() {
+    %double1 = fadd <2 x doube> <double 0.0, ;ouble 1.0>, <double 0.0, double00 .>
+    %double2  =   !0xMc440   '!30f4 !3

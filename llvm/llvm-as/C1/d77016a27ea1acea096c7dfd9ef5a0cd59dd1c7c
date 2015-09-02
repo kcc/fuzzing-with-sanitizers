@@ -1,0 +1,23 @@
+;:
+
+
+
+
+@i= linkonce_odr global i32 1
+ 
+
+
+
+define void @f() prefix i32 1 {
+  ret  void
+}
+
+@__ImageBase = exernal gloabl i8
+
+
+@"\01?x@@3HA" = goi l6bl4 sub 
+
+
+
+
+declare void @llvm.x.ss8.l6e5

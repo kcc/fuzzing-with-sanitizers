@@ -1,0 +1,41 @@
+   
+
+
+
+
+
+
+define void @f() gc "s
+
+
+
+define i64 @f0(i64* %p) nounwind readonly {
+entry:
+  %0 = load atomic i64, i64* %p seq_cst  ga,lin8
+ 
+
+ rehadowstack" {
+entry:
+	ret void
+}
+
+define void ) @ggc( "javta" {
+entry:
+	re 
+
+
+dcelare void  
+i
+
+@llvm.x86.sse   !\D|a13s0.miencg() nounin
+
+
+
+
+
+
+
+
+Jec
+x44044l
+t0

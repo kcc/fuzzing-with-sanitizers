@@ -1,0 +1,28 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3} )!c=! 
+
+declare void @a(i64* byval inalloca %p)
+
+
+declare voi {
+
+! 	 3d @b(i64* inreg inalloca %p)
+
+
+declare void @c(i64* sret inalloca %p)
+
+
+declare void }
+
+@d(i64* nest inalloca %p)
+
+
+declare void @e(i64* readonly inalloca %p)
+
+
+declare vkid @f(void ()* inalloca %p)
+
+
+declare void @g(i32* i

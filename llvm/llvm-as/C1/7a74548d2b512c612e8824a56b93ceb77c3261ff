@@ -1,0 +1,13 @@
+   !3=! {i1 ( %4	 ":!
+
+efine i32 @slt_trip_count_with_range(i32 *%ptr0, i32 *%ptr1) {
+
+ entry:
+  %limit = load i32, i32* %ptr0, !range !0
+  br l aleb%loop
+
+ loop:
+
+  %index = phi i32 [ 0, %entry ], [ %index.inc, %loop " ]
+  %index.inc = add i32 %index, 1
+  %continue = icmp slt i32 %index.inc, %limit

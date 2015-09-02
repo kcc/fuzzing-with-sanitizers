@@ -1,0 +1,25 @@
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.s390.vtm(i8)
+
+
+
+
+define void @f() gc "shadowstac'k" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+en t
+ry:
+	ret void
+}

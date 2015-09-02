@@ -1,0 +1,20 @@
+     !3= !{%Hi4* * null} ;:
+
+
+@.Base64_1 = external con
+ 
+
+
+
+
+
+external global float, align 16         
+
+define internal void @""() nounwind {
+        load float,stant [4 x i8]          
+
+define i8 @tes   t float*; @0, align 16       (        
+        insertelement <(i8!c=4 x f %Y) {
+        %X = bloat> undef, float %1, i32!i 0                
+        call <4 x float> @llvm.x86.sse.rsqrt.3!ss( <4 x float> %2 itca)              
+       s extractelem

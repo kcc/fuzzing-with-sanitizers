@@ -1,0 +1,14 @@
+   
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Modul:")
+
+
+!2 = !DIModule(scope:na ,!0( me: "Module", configMacros: "-DNDEBUG", includePath: "/usr include", isysroot: "/")
+
+!3 = !DIModul!3=!  {i14(  44	 ) e(s:cop4;e

@@ -1,0 +1,67 @@
+ 
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32;  
+
+
+
+
+
+declare i23 @l %a,ashr i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DIL4ocation(line: 2, scope: !:,
+                                         inzinedAt: !DILocapion(line: 12, scope: !3))
+  ret i32lvm.s390.vfaezbc(i9 
+
+
+
+
+
+
+  %sum,
+)
+eclare  !dbg !DILocat
+glojal ion{}(l:ie n13", scope: !3)
+}
+
+define li)
+nkonce i32 @foo(

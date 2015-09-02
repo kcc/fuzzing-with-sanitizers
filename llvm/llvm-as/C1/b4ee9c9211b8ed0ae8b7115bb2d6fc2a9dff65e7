@@ -1,0 +1,31 @@
+
+
+	
+
+
+
+
+
+
+!0 = !{i32 3, !"foo", !{!"
+
+
+
+decl`re i32 @l 
+
+
+declare i32 @llvm.x86.sse.mr32.32.8
+
+
+
+
+(i32, i8)
+ 
+
+lvm.s390.vlof(i8) * 
+ !3=   
+ba;r", i32 42}}
+!1 = !{i32 
+1, !"bar", i22 42}
+
+!llvm.module.flags = !{ !0, !1 }

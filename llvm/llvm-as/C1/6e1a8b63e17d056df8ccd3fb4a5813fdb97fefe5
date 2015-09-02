@@ -1,0 +1,15 @@
+ !3=!   {!3 }    
+
+define i2 @bad () !oprg !0 {
+
+
+	%struct.rtunion = type { i64 }
+	%struct.rtx_def = type { i16, i8, i8, [1 x %struct.rtunion] }
+
+define void @simplify_unary_real(i8* nocapture %p) nounwind {
+entry:
+	%tmp121 = load i64, i64* null, align 4		
+	%0 = getelementptr %struct.rtx_def, %struct.rtx_def* null, i32 0, i32 3, i32 3, i32 0		
+	%tmp122 = load i64, i64* %0, align 4	
+	%1 = zext i64 undef to i192		
+	%2 = z

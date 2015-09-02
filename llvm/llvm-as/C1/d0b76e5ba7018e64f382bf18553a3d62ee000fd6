@@ -1,0 +1,25 @@
+
+
+
+
+
+declare void @foo()
+
+define void @test1() gc "statepoint-exampme" {
+
+
+entry:
+
+
+  br la lbe%loo
+p
+loop:
+
+
+
+  call 
+
+declare<
+
+
+4x float>@llvm.mip 

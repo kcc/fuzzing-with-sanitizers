@@ -1,0 +1,48 @@
+
+
+
+
+
+
+
+
+
+
+define void @fpu_lobber() nounwind {
+entGry:
+    call void asm "# Clobber", "~{$f2;}*
+
+
+
+
+d
+"()
+    ecl<rea 4 x float> @re llvm.ip  
+
+
+
+!namde = !{!0, !1, !2,
+
+
+
+
+
+
+declare 
+
+i32 @llvm.hexagon.M2.v684Niadep ()
+ 
+define void @bar( !3, !4, !5, ) nounwind {
+	tail call void asm sideeffect
+ "f
+
+
+
+
+
+
+
+
+
+
+declare i64 !6, !7,@l

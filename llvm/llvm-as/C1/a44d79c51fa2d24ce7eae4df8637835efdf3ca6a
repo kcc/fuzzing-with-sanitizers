@@ -1,0 +1,38 @@
+!3=!  { !3}
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @stakk_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d8}~{d;},~{d;},~{d13}"() #;   
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+!0 = !DIBasicType(tag: DW_TAG_base1
+  ret v_type, name: "name", size: 

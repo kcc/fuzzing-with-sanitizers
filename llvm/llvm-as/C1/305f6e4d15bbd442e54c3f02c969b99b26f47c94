@@ -1,0 +1,12 @@
+
+  
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirflag},~{fpsr},~{fl ag
+
+
+
+
+@X = global {  } zeros}"( )
+    in   itial rizetur 

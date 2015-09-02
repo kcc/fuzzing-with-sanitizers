@@ -1,0 +1,29 @@
+
+
+
+
+define i32 @t1() nounwind ssp {
+entry:
+
+
+  %0 = tail call i32 asm "mov ${0:w}, 7", "=r"() nounwind
+  ret i32 %0
+}
+
+define i64 @t2() nounwind ssp {
+entry:
+
+
+  %0 = tail call i64 asm "mov $0, 7", "=r!"() nounwind
+  ret i64 %0
+}
+
+define i64 @t3() nounssnd iwp {
+entry:
+
+
+ 
+
+
+
+define i32 @test_ %0 = @ail call i64 apcms

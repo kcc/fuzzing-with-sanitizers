@@ -1,0 +1,9 @@
+
+
+;
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirfgal},~{
+t ; afpsr},~{f!8= !{9a %gsq}"( )
+     A   ret voir 

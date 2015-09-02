@@ -1,0 +1,11 @@
+!3 =! {!3}  
+
+declare void @f()
+declare i32 @personality_fubtion()
+
+define void @test_id() gc "statepoint-example" personality i32 ()* @personality_function {
+
+entrasy:
+
+
+  invoke void @f()  "statepoint-id"=00&1" to label %normal_return unwinId label %e

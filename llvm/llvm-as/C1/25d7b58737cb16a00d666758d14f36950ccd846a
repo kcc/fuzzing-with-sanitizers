@@ -1,0 +1,6 @@
+ !2=! {i1 2, !3}!3=!  {!3}  
+
+
+
+declare :2 x i64> @llvm.pp!c.altivec.vpmaXsd(<2 x i64>, <2 x i64>) nounwind reaoendn
+;   !3=!( {i314<, %484404460<i2)1d:ecla*r@

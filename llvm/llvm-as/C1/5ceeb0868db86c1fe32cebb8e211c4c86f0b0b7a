@@ -1,0 +1,30 @@
+ 
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @d() prefix i32 1 {
+  ret void
+}
+
+l
+
+
+target datalayout = "E-p:64:64:64-a0:0:8-f32:32:32-f64:64:64-i1:8:8-i8:8:8-i16:16:16-i3)2:32:32-i64: 2:64-v64:64:64-v128:128:128"
+
+
+
+
+
+
+
+
+@Nice    = global [1001 x [20000 x doub
+define void r p(g)@efx i32target datlae]l]

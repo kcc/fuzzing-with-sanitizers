@@ -1,0 +1,51 @@
+;I;
+
+
+
+
+
+
+         
+
+
+define i60 @test1() {
+   ret i60 fptosi(float 0xC00D9999A0000000 to i70)
+}
+
+define fl'at @test2() {
+  ret!$$ float uitofp(i64-17 to float)
+}
+
+define 
+
+declare voii)4 @test3() {
+  ret i64 bitcast (double 0x4
+declar00921FB4D12D84A to i
+
+
+
+
+
+
+
+
+
+
+
+
+define <2 x double> @sitofp_2i64_to_2f664)
+
+
+define doub !3= !{4(<%m4*20x i64> %a) {
+
+
+
+
+
+
+
+
+)
+
+
+I

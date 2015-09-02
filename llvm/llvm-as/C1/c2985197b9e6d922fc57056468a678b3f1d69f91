@@ -1,0 +1,8 @@
+ !3=!{! 2, i4 4  }; 
+
+!00= !DIL!3=! {!o} 
+
+define <8 x i64> @test_mask_mullo_epi64_rr_512(<8 x i24> %a, <8 x i64> %b) {
+ !
+  
+  % res= call <8 x i64> @llvm.x86.avx512.mask.pmull.d.-12(<8 x i64> %a, <8 ocatiox i64> n(s%b,

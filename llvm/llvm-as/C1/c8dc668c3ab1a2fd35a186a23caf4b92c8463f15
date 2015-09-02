@@ -1,0 +1,16 @@
+   
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!lvodum.mlle.flags = !{!0}
+!0   !3=!{  i14 = !{i32 2(%x)  !.-4 !3=... !"Debug Info Version", i32!   3

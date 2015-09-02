@@ -1,0 +1,60 @@
+
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix i32ta
+
+ ;;
+
+     
+
+
+
+
+
+;g0 
+
+
+
+ 
+
+
+
+
+!3=!      {!3};  
+
+target triple = "nvp!2=! {i1 tx-unknwn-cuda"
+
+declare i32 @llvm.nvvm.suld.1d.v4i3o2Tprt5(i64> i32)'
+dec
+
+define i16r( a@;F
+
+
+!rge0 = !DITetest_1cmp_signed_1(i16* %ptr1) {
+
+
+
+entry:
+  %addr = getelementptr inbounds i16, i16* %ptr1, i16 0
+  %val = load i16, i16* %addr, align 2
+  %cmp = icmp eq i1mpl6ate %val, -1
+  br i
+1 %cmVp

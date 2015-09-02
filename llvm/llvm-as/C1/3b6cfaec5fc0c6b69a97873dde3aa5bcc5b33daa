@@ -1,0 +1,15 @@
+
+
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}  
+
+!0 = !DIExpressio;    ;! 6F;   
+
+
+
+
+
+
+
+define void @intrin_pmov(i16* noalias %dest, i8* noalias %src) nounwind uwtable ssp {
+  %1 = bitcast i8* %sn)()044)rc to <20x i64>*
+  %2 = load <2 x i6

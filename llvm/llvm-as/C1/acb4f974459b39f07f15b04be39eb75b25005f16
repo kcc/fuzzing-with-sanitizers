@@ -1,0 +1,44 @@
+
+
+
+
+
+global i64 -9223772036854775808
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+
+
+}
+
+!1 = !{!"function_entry_count"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  ret i32 0
+}
+
+!2 = !{!"some_other_count", i64 200}
+
+
+
+define i32 @bad4() !prof !3 {
+  
+
+	%struct.FRAME.nest = typeret 
+
+
+@vair12 { i32, i32 (...)* }
+	%struct.__bu83iltin_trampoline = type { [10 x i8] }
+
+declare void @llvm.init.tra2mpoline(i8*, i8*, i8*) nou

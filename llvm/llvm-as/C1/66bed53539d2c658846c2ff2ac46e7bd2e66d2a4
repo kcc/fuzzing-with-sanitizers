@@ -1,0 +1,53 @@
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+;dtarget datalayout = "e"
+  
+
+define i32 @Xbad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_entry_count"}
+
+
+ 
+define i32 @bad3() !pof !2 {
+  ret i32 0
+}
+
+!2 = !{!"some_ot `er_count", i64 200}
+
+
+
+define i32 @bad4() !prof  
+
+!0 = !DI !3 {
+ efin ;et i32 0
+}
+
+!3 = !{!"f !3=!e 
+
+
+
+inteLo {i91rnca

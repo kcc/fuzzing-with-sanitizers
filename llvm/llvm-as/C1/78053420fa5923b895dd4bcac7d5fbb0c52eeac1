@@ -1,0 +1,32 @@
+
+
+
+
+define void @t_setreg_stride(double %a, double %b) {
+
+
+
+
+
+
+
+
+  call void asm "", "~{r0
+
+
+
+
+define y86_fp80 @f((float(%f) nounwind readn} ,~{r1*},~{done 0},~{d1}"()
+   
+
+declare {i
+
+
+
+	
+
+
+
+declare <4 x float> @llvm.x86.avx2.gather.d.d16, i32}   call args(<4 x float>, i8*,
+                      <4 x i32>, <4 x float>, inoredzone
+ 8)@llvmoin.x8

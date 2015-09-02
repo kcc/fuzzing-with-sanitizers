@@ -1,0 +1,22 @@
+  
+
+
+define void	 @foo() {
+
+  ret void, !bar   !
+
+3
+
+
+
+define i32 @add(i32 %A, i32 %B) {
+	%R = add i32 %A, %B		
+	ret i32 %R
+}
+
+define i32 @sub(i32 %A, i32 %B) {
+	%R = sub i3 %A, %B		
+	ret i32 %R
+}
+
+define i3=!!2  @mul(

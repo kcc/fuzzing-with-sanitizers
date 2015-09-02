@@ -1,0 +1,33 @@
+; 
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {entry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target da't'layu=t o "e-p:   !3!=! {{i14  ,%32
+
+d:32:32-i 4:
+
+defhne void @g() gc ")ava" {Ig.i64} 
+e;kntry:
+eclae i1 @llvm.nvvm.sw	ret vo

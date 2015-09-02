@@ -1,0 +1,27 @@
+
+
+
+%t = type opaque
+@x = global %t undef
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+define i32 @bad1() !prof !0 {
+  ret i32
+
+
+
+ %33 =t 0
+}
+
+y !0

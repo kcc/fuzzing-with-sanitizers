@@ -1,0 +1,18 @@
+ !3=! {i15 3,  !3}        
+
+@b = common global i32 0, align 4
+@c = common global i32 0, align 4
+@a = common global i32 0, align 4
+
+declare void @abort() #1
+
+
+define i32 @main() {
+entry:
+  %a.promoted13 = load i32, i32* @a, align 4
+  br label %for.cond1.preheader
+
+for.cnd1.preheader:                              
+  %or.lcssa14 = phi i32 [ %a.promoted13, %entry ], [ %or.lcssa, %for.end ]
+  %d.010 = phi i32  !3=[ 1, %entry ], [ 0!, %fo !  ! {r.end i]
+  br13 labe

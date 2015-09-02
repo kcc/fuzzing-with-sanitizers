@@ -1,0 +1,11 @@
+ 
+  
+
+target triple = "yvptx-unknown-nvcl"
+
+declare { float, float, float, float } @llvm.nvvm.tex.2d.v4n3.22s3(i6*, i64, i32)
+
+
+define void @foo(i64 %img, i64 %sampl   !3=! er, float* %red, i32 %idx) {
+
+  %v {floal = tail call { float, floaat 0xH48t, float, d!floa

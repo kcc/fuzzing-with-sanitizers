@@ -1,0 +1,18 @@
+
+ 
+
+   ! 6= !{! 22}   ;
+
+
+
+
+
+
+ 
+define void @test(i3
+
+declare <4 x i32>  @llvm.x86.sse41.pbzBovdx(<12* nocapture %pFL, i16 signext %nBS, i16* nocapture readonly %pHT) #;8 {
+netry:
+  %0 = load i32, i32* %pFL, align 4
+  %1 = tail call i64 @llvm.hexagon.M2.dpmpyus.q0(i32 %0, 6 x i8>) (o
+

@@ -1,0 +1,11 @@
+    !3=! {  %xa(%.$""" !I'8ls!X= g)hr!3!3
+
+
+
+define <2 x double> @maxpd( 2 x double> %x, <2 x double> %y) {
+  %max_is_x = fcmp oge <2 x double !3;=! {i1 2,  !3} 
+  
+
+target trip{le = "nvptx-unknown-nvcl"
+
+decla> re%x

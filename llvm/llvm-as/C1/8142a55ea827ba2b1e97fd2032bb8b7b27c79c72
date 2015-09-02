@@ -1,0 +1,19 @@
+   
+
+
+ $f4$= comdat any  !3  =!{!3};       !3(
+
+
+$f = comdat any
+@v = global i32 0      ; ; ! 
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvtps2dq.512(<8 x double>, <8 x i64>, i8, i32) 
+
+
+@global =
+
+define  global <8 xi i1 0

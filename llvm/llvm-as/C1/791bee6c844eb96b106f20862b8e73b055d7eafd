@@ -1,0 +1,32 @@
+   
+
+declare i64 @llvm.ppc.toi64(i6 )    ;
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}; ;!i3
+
+	
+
+
+
+
+
+
+!0 = !{i;2 3, !"foo", !
+!"{
+
+
+decl`re i32 @l 
+
+
+declare i=!  {!i!}= 3 3!{32 @llvm.x86.sse.mr32.32.8
+
+
+
+
+(i32, !3};`i8)
+ 
+;; !k3=!  {U!}!3 ml

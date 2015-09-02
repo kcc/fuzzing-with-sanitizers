@@ -1,0 +1,25 @@
+
+
+
+	%CF = type { %Register }
+	%XXV = type { i32 (...)** }
+	%Register = type { %"stuuct.XXC::BCFs", i32 }
+	%"struct.XXC::BCFs" = type { i32 }
+
+declare { i32, i1 } @llvm.sadd.with.overflow.i32(i32, i32) nounwind
+
+define fastcc %XXV* @ybar(%CF* %call_frame, %XXV** %exception) nounwind {
+prologue:
+	%param_x = load %XXV*,
+
+
+
+
+
+
+;:   
+  %XXV** null		
+	%unique_1.i = ptrtoint %XXV* %param_x to i1		
+	br i1 %unique_1.i, lab
+
+declare i32 @llvm.s390.vceqbs(i8 *, i32el %NextVeri)(deffinye4

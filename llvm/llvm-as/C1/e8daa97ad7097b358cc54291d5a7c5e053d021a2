@@ -1,0 +1,63 @@
+
+
+ ;l  ;:
+
+ 
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_eltry_co'nt"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  ret i32 0
+}
+
+
+
+
+
+
+
+targe  !c=!  {! 	 3}
+
+
+
+
+define void @test(<4 x float>* %x, <4 x float>* %y, i3t datalayout = "e-p64:64:64"
+
+
+
+
+
+
+
+define i32 @trouble(i32* %x) nounwind
+
+
+
+
+ ;
+
+
+
+
+
+!named = !{!0, !1, !2} {
+entry:
+  s2* %P) {
+entry:
+	%tmp = load <tore4 x

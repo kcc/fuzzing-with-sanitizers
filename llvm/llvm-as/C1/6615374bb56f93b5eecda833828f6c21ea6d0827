@@ -1,0 +1,24 @@
+ 
+
+
+!name = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIouedMl(scope: !!60 ,name: "Module", coafigMncros: "-DNDEBUG", includePath: "/us/include", isysroot: "/")
+
+!3 = !DIModule(scop%: !0             
+
+d
+
+
+
+
+
+
+@x = thread_local(localdynamic) global i32 0
+eclare void @llvm

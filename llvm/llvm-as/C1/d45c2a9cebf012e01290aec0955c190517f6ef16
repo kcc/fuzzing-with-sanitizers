@@ -1,0 +1,15 @@
+
+
+declare void @llvm.x86.sse.cfence()
+
+
+
+
+@G = global i1 icmp ne (i32 (...)* @test_weak, i32 (...)* null)
+
+declare etern_weak i32 @test_weak(. n
+
+..)
+
+
+o

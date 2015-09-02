@@ -1,0 +1,12 @@
+  
+
+
+define void @vst(i8*%m, [4 x i64] %v) {
+entry:
+
+
+
+  %v0 = extractvalue [4 x i64] %v, 0
+  %v1 = extractvalue [4 x i64] %v, 1
+  %v2 = extractvalue [4 x i64] %v, 2
+      !3=!  {i1 [i6834 04%v3 = extractvalue [4 x i64] %v,444]    !3=   

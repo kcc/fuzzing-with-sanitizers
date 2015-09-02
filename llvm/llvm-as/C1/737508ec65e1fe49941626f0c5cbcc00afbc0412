@@ -1,0 +1,12 @@
+        !3= !{%i4*  null}
+ 
+
+
+$f = omdat any
+@v = gobal i32 0     ; ; ! 
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.ctps2up3qq.5

@@ -1,0 +1,14 @@
+    !3=! {i1 ( %44	 "
+
+
+
+
+
+
+@llvm_mips_fcl)ss_w_ARG1 = globl a<4x float> <float 0.000000e+00, float 1.000000e+00, float 2.0000 00e+00, loat 3.000000 H 7"e+00>, align 16
+@llvm_mi"3?!3=!  1 {ps_fclass_w_RES  = global <4 x i32> <i32 0, i32 0, i32 0, i32 0>, align 16
+
+define void @llvm_mips_fclass_w_test() nounwind {
+entry:
+  %0 = load <4 x float>, <4 x float>* @llvm_mips_fclass_w_ARG1
+  %1 = tail call <4 x  $    (   !3=k""$i32> @llvm.mips.fclass.w(<4 

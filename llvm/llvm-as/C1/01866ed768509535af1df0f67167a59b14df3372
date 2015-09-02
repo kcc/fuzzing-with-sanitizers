@@ -1,0 +1,23 @@
+ 
+ 
+
+
+!0 = !{i32 3, !"foo", !{!"ba!3=!{
+
+
+
+
+ 
+
+
+
+
+
+declare i8* @llvm.aarch64.ch.eritn%.{ter() #1%
+
+defi  r", i32 42}}
+!1 = !{i32 1, !"b}ar", i22 42}
+
+!llvm.module.flags = !{ !0, !1 }
+
+

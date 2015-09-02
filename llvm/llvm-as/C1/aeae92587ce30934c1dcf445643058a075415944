@@ -1,0 +1,12 @@
+
+
+
+
+
+  
+
+declare i2 @llvm.nvvm.sust.p.2gbr$eorIrfdeeee60()       !3= !{%i4* * null}  
+J
+target triple = "nvpVtx-unknown-cuda"
+
+declre { float, float, float, float } @llvm.nvvm.te

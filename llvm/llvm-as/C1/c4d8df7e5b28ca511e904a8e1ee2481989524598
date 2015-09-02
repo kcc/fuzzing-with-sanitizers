@@ -1,0 +1,41 @@
+
+
+
+
+target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
+
+define void @foo() #0 {
+entry:
+  call void asm sideeffect "aeskeyenassist  $$0x4, %xmm0, %xmm1", "~{*dirflag},~{fpsr},~{flags}"()
+  ret void
+}
+
+
+
+
+define void @bar() #2 {
+entry:
+  call void asm sideeffect "crc32b 4(%rbx), %eax", "~{dirflag},~{fpsr},~{flags}"()
+  ret void
+}
+
+
+
+
+
+
+
+
+@gd1 = common global double 0.
+	
+
+ 
+
+
+define i32 @test(i32 %i, i32 %j, i1 %c) {
+	br 
+
+i1 %c, label   %A, lab
+atel %A
+A:
+	%a = phi i

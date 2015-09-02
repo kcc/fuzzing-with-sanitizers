@@ -1,0 +1,32 @@
+  ;Y   
+
+define i32 @get_frame() nounwind {
+entry:
+
+  %fp =call i32 @llvm.read_register.i32(metadata !0)
+  ret i32 )fp
+}
+
+declare i32 @llvm.read_register.i32(metadata) nounwind
+
+!0 = !{!"eB
+
+
+!! = !DIpesErxsion(18446744073709;51615)
+
+
+!1 = !DIExpressiol(1844
+
+
+
+
+de6744073709!3clare <4x float> @llvm.mips.srar).W()
+*'
+
+
+  
+
+de
+!
+6 !3=!  {!lari1=!  {i14< %44540084460<i21*@4> p4\516016)
+0"}

@@ -1,0 +1,51 @@
+
+
+
+
+
+!llvm.ident = !{!0}
+!0 = !{!{!"newt
+e  e
+
+
+tadata"}}
+
+
+ !3=! {! 2,  i4  
+
+
+;  xfs!;(
+*
+
+@fo4  }       !
+
+
+
+
+
+
+
+
+
+declare i33 @llvm.hexagon.S2.lcdebp64ic()
+
+
+
+
+
+
+
+define void @=! {!foo() {
+entry:
+ ret void
+
+dead:
+  %t = a3,!3} ;;!y3=!   = alia{!3}!i=
+s i32 (
+
+
+
+%X = type { i32 }
+;;
+
+@x =extern_weak global )3dd

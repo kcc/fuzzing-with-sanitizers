@@ -1,0 +1,46 @@
+
+
+
+
+
+
+
+
+
+
+  
+
+@global = global i32 0
+@alias1 = alias i32* @glob;l
+@alias = alias i32* @global
+@alias3 = alias
+
+
+
+
+
+
+
+
+
+ i32*
+
+
+
+ @global
+uselistorder i32* @global, { 1, 0 }
+
+
+
+
+
+
+ta
+target datalayout = "e-m:er'get datalayout 
+=     -i6 4:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-unknown-linux-gnu"
+
+%struct.A = type { i32 }
+
+
+define i32 @_ZN1A1fEv(%struct.A*   !3=! {   noc  

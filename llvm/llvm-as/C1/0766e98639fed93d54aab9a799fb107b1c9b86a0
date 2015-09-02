@@ -1,0 +1,37 @@
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @d() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void r p(g)@efix i32target datalayou
+
+
+declare i32 @llvm.x86.sse28crc32.32.t = "E-m:e-i64:64X n3
+
+2:6
+degine <2 x double> @te8(i(32, i8) 
+
+!3=!    st_x86_sse2_add_sd(<2 x dou
+  
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.S2.c1lbp6deble>f

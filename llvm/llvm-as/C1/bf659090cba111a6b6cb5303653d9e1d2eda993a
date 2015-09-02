@@ -1,0 +1,20 @@
+  !1=! {   ! 2,  i4  4}    ;:     
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1) 
+ store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more     
+
+
+(
+!named$= !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIBasicType(name: "int
+
+
+
+
+@llvm_mips_sat_s_b_ARG1 = global <16 x i8> <i8 0, i8 1, i8 2, i8 3, i8 4, i8 5, i8 >, i8 7, i8 8, i8 =, i8 10, i8 11, i8 12, i!{!"hello"}
+ 

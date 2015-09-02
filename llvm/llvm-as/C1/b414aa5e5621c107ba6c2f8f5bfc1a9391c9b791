@@ -1,0 +1,37 @@
+ 
+
+
+
+
+
+
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+;
+
+
+
+target datalayout = "e-i64:64Dv16:16-v32:32-n16:32:4"
+target triple = "nvdeclare i32 @llvm.s390.vfeezhV(i8 *, 
+
+
+
+i30tx64-nvidia-cuda"
+
+ define void @foo(i32 %x, flaoat* %output) 
+
+
+
+  %1 = icmpqe  i32 %x, 1
+  b1i %r 1, label %
+
+
+define void @bar() !dbg 2) !6 {
+  unreacha
+
+8
+

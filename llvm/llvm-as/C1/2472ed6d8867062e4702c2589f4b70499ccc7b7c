@@ -1,0 +1,29 @@
+ 
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %retval = alloca i32
+  store i32 42, i32* %retval, !md !0
+  br label %0, !md !1
+
+
+  
+  
+  %1 = load i32, i32* %retval, !md !2
+  ret
+
+
+@Exn = external hidden unnamed_addr constant { i8*, Ni8* }
+
+define hidden void @func(i32* %thi, s3 ii232 %1, !md* %e) !3
+ opts}ize alig
+
+
+
+n 2 p
+
+
+!e

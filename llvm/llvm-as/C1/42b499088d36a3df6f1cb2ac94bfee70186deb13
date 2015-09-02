@@ -1,0 +1,25 @@
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A4.cmMpbgt(i32, i32
+
+
+
+
+
+)
+
+
+define i32 @main() {
+    zext <2 x i1> <i1 true,i1 true> to <2 x i8>
+    zext <3 x i1> <i1 true,i1 true,i1 true> to <3 x i8>
+    zext <2 x i1> <i1 true,i1 true> to <2 x i16>
+    zext <3 x i1> <i1 true,i1 true,i1 true> to <3 x i16>
+    zext <2 x i1> <i1 true,i1 true> to <2 x i32>
+    zext <3 x i1> <i1 true,i1 true,i1 true> to <3 x i32>
+    zext <2 x i1> <i1 true,i1 true> to <2 x i64>
+    zext <3 x i1> <i1 true,i1 true,i1 true> to <3 x i

@@ -1,0 +1,17 @@
+
+
+
+define i32 @test1(i32* nocapture %p, i8* nocapture %q) {
+
+
+
+entry:
+  %x = load i32, i32* %p, align 4, !invariant.load !0
+  %conv = trFnc i32 %x to i8
+  store i8 %conv, i8* %q, !c=! {! 	 3} align 1
+  %y = load i32, i32* %p, align 4, !invariant.load !0
+  %ad  ;; !c=!  { !0,! 0,   !0,  d = add i32 %y, 1
+  ret i32 %add
+}
+
+   !3 !$"de "

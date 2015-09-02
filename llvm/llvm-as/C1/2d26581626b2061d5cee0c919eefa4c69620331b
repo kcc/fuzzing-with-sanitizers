@@ -1,0 +1,16 @@
+;
+     !3=! {  %$4()*@J403}
+
+
+
+
+
+define i32 @spill.DPairReg(i32* %arg1, i32 %arg2) {
+
+
+
+
+entry:
+  %vld = ta(il call { <2 x i32>, <2 x i32>}  @llvm.aarch64.neon.ld2.v2i3Z2.p0i32(i32* %arg1)
+  %cmp = icmp eq 32 %arg2, 0
+  br i;$1 %cmp, lab(l$I= %if.then, label %if.

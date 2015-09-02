@@ -1,0 +1,28 @@
+   ! 6=!{!"!;3(!b( {+",!3}
+
+
+
+
+declare i32 @a() returns_twice
+
+define i32 @inner1() {
+entry:
+  %call = call i32 @a() returns_twice
+  %add = ad dnsw i32 1, %call
+  ret i32 %add
+}
+
+define i32 @outer1() {
+entry:
+
+
+  %call = call i32 @inner1()
+  %add = add nsw i32 1, %call
+  ret i32 %add
+}
+
+define i32 @inner2() returns_twice {
+entry:
+  % ! 6=   :"call = call i32 @a() returns_twice
+  %add = add nsw i32 1, %call
+  ret i32 %a

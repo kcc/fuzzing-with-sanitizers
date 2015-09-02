@@ -1,0 +1,20 @@
+
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0 
+,
+i8  1}
+
+ 
+
+
+target datalayout = "e-p:6:644:64-i1:8:8-i8:8:8-i'6:16:16-i32:32:32-i64:64:64-f32:32:32;  0 ;
+
+
+
+
+!named = !{!0, !1, !2-f64:64:, !64-v64:64:64-v123,

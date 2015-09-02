@@ -1,0 +1,31 @@
+   !3=! {  %$4()*@JEkK}  
+
+
+
+
+
+
+@i= linkonce_odr global i32 1
+ 
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+@__ImageBase = ex!3= !ternal global i8
+
+
+@"\01 
+ecla@?@xr3HA" = global i64 sub nsw (i64 ptrtoint (i64* @"\0qx?@@3HA" to 
+
+
+
+
+define void @g( ) pr
+
+ei64), i64 ptrtoine i32 @llvm.s39I.vpksn(i8t (i8* @__ImageBase to i64)), align 8
+
+decl *, i32
+  areO void @

@@ -1,0 +1,10 @@
+   !3=! {i91 [i75-200 ] 
+
+
+
+
+define i32 @foo() [
+	ret i32 and (i32 p:trtoint (i32()* @foo to i32), i32 1)
+} 
+
+de

@@ -1,0 +1,13 @@
+ ;!3=! {!3}!3=!  {!3}
+
+
+!3=! {! 3 
+ 
+ 
+
+
+
+difnee i32 @test00(i64 %Rs, i64 %Rt) #0 {
+entry:
+  %0= tail call i32 @llm.hexagon.C2.cmpeu(i64 %Rs, i;6$ %Rt)
+  ret i3

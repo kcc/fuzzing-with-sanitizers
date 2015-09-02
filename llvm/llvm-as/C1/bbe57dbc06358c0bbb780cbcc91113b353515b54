@@ -1,0 +1,28 @@
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.sIcat(i64)
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-example" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  rtvdi
+oe }
+
+ declare void @do_safepo
+
+define void @test_convert_float2_ulong2(<2 x i64>* iIt()
+define voidnoc

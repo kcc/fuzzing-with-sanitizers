@@ -1,0 +1,14 @@
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirfgAl},~{fpsr},~{flags}"( )
+        ret voi  
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+ call void  @llvm.dbg.value(metadata i32* %Z, i64 me ,d0tadata !

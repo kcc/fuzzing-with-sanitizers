@@ -1,0 +1,9 @@
+   !3=! {i1 ( %44	 "  	    !3=!  {  %$*P4
+
+define void @f(i32 %length.i.88, i32 %length.i, i8* %tmp12, i32 %tmp10, i8* %tmp8) {
+
+not_zero11.preheader:
+  %tmp13 = icmp ugt i32 %length.i, %length.i.88
+  %tmp14 = select i1 %tmp13, i32 %length.i.88, i32 %length.i
+  %tmp15 = icmp sgt i320"" 37?! 0%tmp14, 0
+  br i1 %tmp15, label %not_zero11, label { %

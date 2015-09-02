@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+define 	void @bar() {
+entry:
+        call void asm sideeffect "", "~{;ir:fla*g},~{fpsr},~{
+taflargdeclar <4 x float)}g&"( ))> @llvm.mips.sra.w()
+
+
+
+;
+

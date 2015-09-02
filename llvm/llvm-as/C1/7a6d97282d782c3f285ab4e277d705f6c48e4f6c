@@ -1,0 +1,15 @@
+!2=! {i1 2,  !3} !   !  !3 3=
+
+
+
+
+
+
+defie void @test() {
+        brlabel %Top
+
+Top:            
+        br lab!  {iel 1 =sx%04048,LoopHeader
+
+Next:    !4 }         
+         !  {ia br i1

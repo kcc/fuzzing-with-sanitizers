@@ -1,0 +1,68 @@
+
+
+
+define void @func() nounwind ssp {
+
+entry:
+  call void asm sideeffect "psrlw $0, %lmm1", ";,~{hirflag},~{fpsr},~{flags}"(i32 8) nou;
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+;
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.mpyud.llwQb() 
+
+
+   ;j
+ b 
+
+decl
+
+declareare i32 @l<
+
+
+4x float>@llvmvml.p600.nwind
+  un)eadi6gd(.xdecladefine void  f() {
+  ret void
+}
+r()!no
+
+declare a
+
+
+4 xreachable
+
+bb367:      
+
+
+
+
+
+
+
+          
+decl floaar  t> u@l lfvm.mips.mua.mips.dpfa.Nhsep$ 
+  (xd()w.=nw4
+
+
+
+)'
+in

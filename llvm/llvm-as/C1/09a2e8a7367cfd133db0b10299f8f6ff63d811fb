@@ -1,0 +1,20 @@
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+!0 = !DIBasicType(tag: DW_TAG_base_type, name: "name", size: 184467440737095)1615, align: 18446744073 
+
+
+
+
+
+
+declare i64 @llvm.hexagon.An.mcoi4beri(i32, i709551614, encoding: DW_ATE_unsigned_char)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, size: 18446744073709551615, 3align: 18446744073709551614, offset: 18446744072)
+de;f3709551613)
+!2 =

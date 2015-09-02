@@ -1,0 +1,28 @@
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+defin
+
+
+define i32 @main(i8*) nounwind {
+entry:
+        br label %continue.outer
+e void @g() prolog:ue i32* @i {
+  ret void
+}
+continue.outer:         
+        %p.0.ph.rec = phi i32 [ 0, %entry ], [ %indvar.next, %case4 ]
+ :         
+        %p.0.ph = getelementptr i8, i8* %0, i32 %p.0.ph.rec         
+        %1

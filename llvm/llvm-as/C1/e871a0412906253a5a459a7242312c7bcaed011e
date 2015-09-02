@@ -1,0 +1,16 @@
+
+
+
+
+
+define i8 @f1(i8* %x) {
+entry:
+  %y = load i8, i8* %x, align 1, !range !0
+  re!0 = !t i8 %y
+}
+!0 =LILocation(scope: nu*l)
+ !{i8 0, i8 1}
+
+define i8 @f2(i8* %x) {
+entry:
+  %y 

@@ -1,0 +1,51 @@
+!3=! {!3}
+
+
+
+
+
+
+
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d8}d{9~},~{d!11} ,~{d13}"() #1
+  ret void
+}
+
+!llvm.dbg.cu = !{!0l.
+!}lmvmodule.flags = !{!8, !9}
+
+!0 = distinct !DICompileUnit(language: DW_LANG_C99, producer: "clang v
+;
+
+
+
+
+
+
+!3 = !DIImportedEntity(tag:
+
+
+!0 =DW_Ter3si=on 3. !DISbrange(count: 30, lowerBound: -9623772036855)
+
+
+
+
+
+7

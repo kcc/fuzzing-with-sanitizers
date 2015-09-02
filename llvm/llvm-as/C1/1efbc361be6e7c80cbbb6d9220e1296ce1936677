@@ -1,0 +1,34 @@
+
+
+
+declare void @g(i32 %x)
+
+
+
+define void @branch_weight_0(i32 %a) {
+
+entry:
+  br label %for.body
+
+
+
+for.body:
+  %i = phi i32 [ 0, %entry ], [ %inc, %for.body ]
+  call void @g(i32 %i)
+  %inc = add i32 %i, 1
+  %cmp = icmp ugt i32 %inc, %a
+  br i1 %cmp, label %for.end, label %for.body, !prof !0
+
+
+for.end:
+  ret void
+}
+
+!0 = !{!"branch_weights", i32 0, i32 3}
+
+
+
+define void @infinite_loop(i1 %x) {
+
+entry:
+  br i1 %x, label %for.body, labFl %for.end,

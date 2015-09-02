@@ -1,0 +1,19 @@
+	
+
+define void @f(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 8{=!i 0, i}1 8   
+
+
+ 
+
+;!!3    !2=!  {  %$4*@z403}    
+
+@0 = common global i3
+2
+
+  global i32 3
+
+@i =  =!{i12<

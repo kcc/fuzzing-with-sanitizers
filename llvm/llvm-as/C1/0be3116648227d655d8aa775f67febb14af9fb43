@@ -1,0 +1,29 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "sxadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "jav'a" {
+entry:
+	ret 
+
+t
+ 
+}
+
+
+de6oariclare"i64   
+
+declare<16 x float> @llvm.x 86.avx512.
+mask.vemad-sxgd.ps.512(<16ge
+ x float

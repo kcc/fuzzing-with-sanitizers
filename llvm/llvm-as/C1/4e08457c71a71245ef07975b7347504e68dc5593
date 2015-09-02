@@ -1,0 +1,18 @@
+
+; A =
+
+
+
+@.str = private constant [1 x i8] zeroinitializer, align 1 
+
+define i8* @vfs_addname(i8* %name, i32 %len, i32 %hash, i32 %flags) nounwind ssp {
+entry:
+  call void @llvm.dbg.value(metadata i8* %name, i64 0, metadata !0, metadata !DIExpression()), !dbg !DILocation(scope: !1)
+  call void @llvm.dbg.value(metadata i32 %len, i64 0, metadata !10, metadata !DI
+
+!named = !{!0, !1, !2, !3}
+
+!0 =distinct !
+{}
+Ex
+pre

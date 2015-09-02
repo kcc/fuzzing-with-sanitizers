@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+
+declare float @llvm.nearbyint.f32(float) #0
+declare <2 x float> @llvm.nearbyint.v2f32(<2 x float>) #0
+declare <4 x float> @llvm.nearbyint.v4f32(<4 x float>) #0
+declare double @llvm.nearbyint.f64(doubl
+
+
+
+
+
+
+
+
+define <8 x i16> @test1(<8 x i16> %a) {
+  %lshr = le) #0
+declare <2 x double> shr <8 x i16> %a,' @llvm.nearbyint.v2f<6

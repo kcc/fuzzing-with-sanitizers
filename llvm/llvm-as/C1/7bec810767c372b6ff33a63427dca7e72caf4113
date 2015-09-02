@@ -1,0 +1,40 @@
+!3=! {!3   }  
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+
+
+
+
+
+
+
+
+
+
+
+!0 = distinct !DISubprogram()  
+!1 = !DILocation(line: 3, column: 7, scope: !0)
+!2 = !DILocation(line: 3, column: 7, scope: !0, inlinedAt: !1)
+!3 = !DILocation(line: 3, column: 7, sco
+
+
+
+
+
+
+
+pe: !0, inlinedAt: !2)
+
+!4 = distinct!D I;  xfs!;
+
+
+
+
+@fo = alias i32 ( )* @f
+
+Location(line: 3, col
+@main_addrs = conwtant [2 x i8*] [i8* blockumn:ad

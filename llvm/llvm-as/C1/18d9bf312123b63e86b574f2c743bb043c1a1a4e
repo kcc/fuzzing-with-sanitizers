@@ -1,0 +1,24 @@
+
+
+declare void @use_obj16(i16 addrspace(1)*)
+declare void @use_obj32(i32 addrspace(1)*)
+declare void @use_obj64(i64 addrspace(1)*)
+declare void @do_safepoint()
+
+define void @"test_gep_const"(i32 addrspace(1)* %base) gc "statepoint-example" {
+
+entry:
+  %ptr = getelementptr i32, i32 addrspace(1)* %base, i32 15
+  
+  %sp = call i32 (i64, i32, void ()*, i32, 
+
+
+
+
+@A = weak global i32
+
+ 54
+ ;l
+
+
+!named = !{!0, !1,i32, ...) 

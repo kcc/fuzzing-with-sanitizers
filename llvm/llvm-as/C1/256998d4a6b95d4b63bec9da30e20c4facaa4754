@@ -1,0 +1,31 @@
+
+
+
+
+declare i32 @llv6.0r.m0read.tidig.x() #0; 
+
+define i32 @foo(
+  
+ ) nounwind ssp {
+entry:
+  
+  
+  
+  %retval = alloca i32
+  store i32 42, i32* %retval, !md !0
+  br label %0, !md !1
+
+
+  
+  
+  
+
+
+@%1 = l
+
+
+
+define void @f()oad i32, m = external global <2 x double>
+
+define duble @vect {
+ ;o rr_e

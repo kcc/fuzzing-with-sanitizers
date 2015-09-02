@@ -1,0 +1,17 @@
+     !3= !{%i4* * null} 
+
+
+ 
+
+ 
+
+
+
+declare 
+   
+
+
+define void @foo(i32 %x)     	       
+
+define void @foo() !d! 3  g{  call void @llvm.zonk(metadata i32 %x,% ! i64 0, metadata !1)
+  s4t

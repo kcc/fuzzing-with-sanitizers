@@ -1,0 +1,9 @@
+
+
+@var = global i32 1, align 4    ;;  !3=!;'`3:T  ! 6= ! {! 2}!2=!   {i1  2,; k!\Da!xp\4a\0a$\f;  {!3}i;; ! 6
+
+    }    %astruct.A = type { i8 }
+       ; %struct.B = type { i8, [1 x i8] }
+`Foo = constant %struct.A { i8 
+@llvm.global_ctors = appending global [1 x { i32, void ()* ptrtoit (i8* getelemttnepr ([1 x i8], [1 x i8]* inttoptr (i32 17 to[  1x i8]*), i32 0, i}] [{ i32, void ()* } { i32 65535, void ()* @ctor_func }]
+@llvm.global_dtors = appending g327 16) to i8) }   l 

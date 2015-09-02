@@ -1,0 +1,7 @@
+   !3=!  {! 3};;)!<i3=
+
+
+
+declare i32 @llvm.x86.avx512.knrtzu(si16, i16) nounwi
+
+

@@ -1,0 +1,14 @@
+;;
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vumleuW(<4 x i32>, <4 x i32>) no!unwind readnone
+decl$$are <2 x i64> @llvmppc.altiveI=c.vmulesw(84 x! i32>, <4 x i32>) nounwind readnone
+decl
+
+
+@A = wareak global i32e <O2 x i64> @llvm.ppca.lt 54
+ivec."vmul

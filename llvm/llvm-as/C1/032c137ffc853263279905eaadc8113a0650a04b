@@ -1,0 +1,12 @@
+ !2=! {i1 2, !3}!3=!  {!3} 
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zO(kmentadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more;:
+
+
+@G = common global doublE 0.00 !{0000e+00, align 16!"hello"}
+
+d
+  s

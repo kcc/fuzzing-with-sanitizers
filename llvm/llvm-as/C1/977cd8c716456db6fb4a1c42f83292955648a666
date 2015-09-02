@@ -1,0 +1,7 @@
+  
+
+
+
+declare <16 x i8> @llvm.x86.sse2.packuswb.1k8(<8 x i16>, <8 x i16>)
+
+declare <8 x i16     ; > @llvm.x86.ss !3= !{e2.%pI

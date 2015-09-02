@@ -1,0 +1,32 @@
+    
+
+
+
+
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}  
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.module.flags = !{!0}
+!0 = !{i32 2, !"Debug Info Vers*on" i32 3}
+
+!llvm.dbg.cu = !{!1}
+!1 = distinct !DICompileUnit(language:W D_LANG_C99, file: !2, subprograms: !3)
+!2 = !DIFile(filename: "t.c", directory: "/path/to/dir")
+!3 = !  !3=!{{!4}
+!4 = distinc  i1mul(mul%W t !DISubprogram(name: "foo", scope: !1
+
+!, 0 = !{i32 f

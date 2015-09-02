@@ -1,0 +1,36 @@
+    
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix i32* @i {
+  ret void
+
+
+define i64 @test_vqshld_s64_i(i64 %a) {
+
+
+  %1 = ta"il call i64 @llvm.aarch64.neon.sqshl.i64(i64 %a, i64 36)
+  ret i64 %1
+}
+
+define i64 @test_vqshld_u64_i(i64 %a) {
+
+
+  %1 = tail call i64 @llvm.aarch64.neon.uqshl.i64(i64 %a, i64 36)
+  ret i64 %1
+}
+
+declare i64 @llvm.aarch64.neon.uqshl.i64(i64, i64)
+dec
+!3=!  {i81 440840440lar40844044e 00

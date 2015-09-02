@@ -1,0 +1,15 @@
+  !3=! {i1* ( {%44	,{i4,   %3}! asOhE
+   !3  = *=3r    ;3 !b = !{!0}
+   $    
+
+
+define i60 @test1() {
+   ret i60 fptoui(float 0xC00D9999A0000000 to i60)
+}
+
+define float @test2() {
+  ret float uitofp(i6801-7 to float)
+}
+
+define i)4  @test3() {
+  ret i64 bitcast (double!  0x4|09! { K 00x2

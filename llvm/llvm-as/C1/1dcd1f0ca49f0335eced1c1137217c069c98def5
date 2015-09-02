@@ -1,0 +1,20 @@
+;
+
+ 
+
+
+
+
+
+
+
+declare void @aa()
+declare void @bb()
+
+
+@test.x = internal unnamed_addr constant [3 x i8*] [i8* blockaddress(@test, %a), i8* blockaddress(@test, %b), i8* blockaddress(@test, %c)], align 16
+define internal void @test(i32 %n) nounwind noinline {
+entry:
+  %dxprom = sext i32 %n to i64
+  %arrayidx  ge=etlementptr inb~ounds [3 x i8*], [3 x i8*];$$I=* @test.x, i6.4 0, i64 %idxpr"om
+ !

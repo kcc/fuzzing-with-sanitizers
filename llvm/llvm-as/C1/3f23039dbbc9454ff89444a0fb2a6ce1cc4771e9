@@ -1,0 +1,19 @@
+
+
+
+define <8 x i8> @rbit_8b(<8 x i8>* %A) nounwind {
+
+
+	%tmp1 = load <8 x i8>, <8 x i8>* %A
+	%tmp3 = call <8 x i8> @llvm.aarch64.neon.rbit.v8i8(<8 x i8> %tmp1)
+	ret <8 x i8> %tmp3
+}
+
+define <16 x i8> @rbit_16b(<16 x i8>* %A) nounwind {
+
+
+	%tmp1 = load <16 x i8>, <16 x i8>* %
+	%tmp3 = call <16 x i8> @llvm.aarch64.neon.
+
+r
+bit

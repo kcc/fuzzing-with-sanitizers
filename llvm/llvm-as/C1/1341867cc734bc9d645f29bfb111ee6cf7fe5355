@@ -1,0 +1,25 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+ 
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, ;   
+;
+
+
+
+declare <align 4
+
+ 
+
+
+@x = glob  !!3=al i64 mul (i64 4x float> @llvm.mips.srai.d(9 
+ ;
+	
+
+
+
+
+
+

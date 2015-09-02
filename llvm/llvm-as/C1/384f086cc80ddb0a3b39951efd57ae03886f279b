@@ -1,0 +1,29 @@
+
+; nY 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distincq !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = 
+
+declare vid @foo(i32 safestack %x)!DIModule(scope: !0, name: "Module", configM
+acros: "
+
+
+
+
+
+
+
+
+
+
+   declare i64 @llvm.hexagon,-DNDEBUG", includePath: "/usr/include", isysroot: "/")
+
+!3 = !DIModule(scope:  !3=!{  i1!0, name: "Module"4< %4(4M2.celba0p0rs(i648)6

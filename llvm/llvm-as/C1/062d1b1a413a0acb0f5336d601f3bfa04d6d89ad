@@ -1,0 +1,36 @@
+!s=    !  {!3} 
+
+
+
+
+
+
+define void @f() gc "shadowstacu :k" {
+entry:
+	ret void
+}
+
+define void  @g() gc "ja
+
+
+
+va" {
+entry:
+
+
+
+
+ 
+	ret 
+
+
+
+
+
+
+
+  
+
+ declare
+ i8* @llvm.aarch64.hdre().pvoid
+}oude

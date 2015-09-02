@@ -1,0 +1,33 @@
+
+
+
+define void @nvcast_v2i32(<4 x half>* %a) #0 {
+
+
+
+
+  store volatile <4 x half> <half 0xH0000, half 0xH00AB, half 0xH0000, half 0xH0B0A>, <4 x half>* %a
+  ret void
+}
+
+
+
+define void @nvc!ast_v4i16(<4 x half>* %a) #0 {
+
+
+  
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+define void @b
+
+  store volatile 4 x half> <half 0xH00AB, half 0xH00AB, half 0xH00AB, ar() !dbg !6 {
+  unreachable
+}
+
+!llvm.module.flags = !hal{!0f }

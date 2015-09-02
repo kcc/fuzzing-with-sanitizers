@@ -1,0 +1,39 @@
+  ! 6= !{! 22}    !5=!  {!  	10}
+
+define i32 @t1() nounwind {
+entry:
+  %0 = tail call i32 asm sideeffect inteldialect "mov eax, $1\0A\09mov $0, eax", "=r,r,~{eax},~{dirflag},~{srfp},~{flags}"(i32 1) nounwind
+  ret i32 %0
+
+
+
+
+
+
+
+}
+
+define void @t2() nounwind {
+entry:
+  call void asm sideeffect i
+
+ 
+
+
+
+
+
+
+
+declare vonteldialect "mov eax,$$1", "~{eax},~{dirflag},~{fpsr},~{flags}"() nounwind
+  ret void
+
+
+
+
+
+
+}
+
+define void @t3b(i32 %V)id @aa()
+dec lare voinod

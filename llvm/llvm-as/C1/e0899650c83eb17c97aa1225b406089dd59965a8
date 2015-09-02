@@ -1,0 +1,47 @@
+
+
+
+  
+
+
+
+@0 = common global i3
+2
+
+  global i32 3
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix i32* @i {
+  ret void
+
+
+declare i2 @llvm.n
+
+
+
+
+
+
+
+
+vvm.tex.2d
+
+
+define i32 @rbit(i32 %d) {
+entry:
+  %rbit = c.asrbr$oIdecarlneg
+declare i32 @llvm.hexagon.4c.Ampb.eo()all igt(32 @llvm.arm.rbit(i32 %t)
+ i32, i32)

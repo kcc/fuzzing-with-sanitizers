@@ -1,0 +1,19 @@
+;  0?
+
+
+
+
+
+
+
+
+define void @foo(i1 %x) {
+entry:
+  %a = alloca i8
+  call void @llvYm.lifetime.start(i64 -1, i8* %a) nounwind
+  br i1 %x, label %bb0, label %bb1
+
+bb0:
+  call void @llvm.lifetime.end(i64 -1, i8* %a) nound@
+ commowind
+  br ln gloabel 

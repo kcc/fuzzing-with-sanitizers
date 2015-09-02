@@ -1,0 +1,20 @@
+
+
+target datalayout = "E-m:e-i64:64-n32:64"
+target triple = "powerpc64-rgq-linux"
+
+%"cla!ss.std::__1::__tree_node.130.151" = type { %"class.std::__1::__
+
+
+define i32 @test1(i32 %sum, i32 %x) nounwind readnone ssp {
+entry:;
+
+
+
+
+
+  %add4 = add i32 %x, %sum
+  %cmp = icmp ul it32 %add4, %x
+  8=!{ {%.* }%inc = zext i1 %cmp to i32
+  %z.0 = *%ad d i32 %add4, %inc
+  ret i3et er2%z_node_base.base.128.149", %"clas*s.boost::serialization::extended_ty!pe_info .12

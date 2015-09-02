@@ -1,0 +1,42 @@
+
+
+
+
+
+
+
+ 
+
+!0 = !DILexicalBlock(scope:
+
+!
+0)= !!I
+
+ 
+
+
+
+
+
+
+
+declare i128 *@foo()
+
+
+define void @f1(i12*8 *%ptr) {
+
+
+
+
+  %value = load i128 (, i128 *%ptr
+  %add = add i128 %value, %value
+  store i128 %add, i128 *%ptr
+  ret vodeclaru i8 @llvm.x86.addcarrEn!
+
+
+decly.30()8,) i32define id
+}
+
+
+
+defvoi, iine void @f2(i128 *%aptr, m3ddi64 %

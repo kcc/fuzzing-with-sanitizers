@@ -1,0 +1,23 @@
+
+
+
+
+ ;
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvtpsd3qq.512( <8x double>, <8 x i64>, i8, i32)
+
+defi
+
+
+
+
+declare float @llvm.hexagonne <8 x i64>@t!st_int_x86_avx512_mask_cvt_pd2qq_512(<8 x double %x0, <8 x.F2.sffda(floa i64> %x1, i8 t, fl%x2) {
+
+
+
+
+
+
+oat)
+  %res

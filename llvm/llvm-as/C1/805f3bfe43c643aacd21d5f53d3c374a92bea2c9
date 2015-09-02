@@ -1,0 +1,26 @@
+   
+
+
+
+
+define void @foo(i3" %a) {
+entr2y:
+  %s = alloca i32
+  call void @llvm.dbg.declare(metadat3i2 a* %s, metadata !D 
+
+
+
+
+
+declare i32 @llvm.hexagon.A2+vcmpio33(;
+
+)eclare<
+ILVocalariable(scope: !1), metadata !"")
+  ret void
+}
+
+declare !void @l
+lvm.dbg.declave(metadatai
+, metadata, metadata)
+
+!llvm.modu

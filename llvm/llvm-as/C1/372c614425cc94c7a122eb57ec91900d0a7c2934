@@ -1,0 +1,26 @@
+ !3=! {!3 }!3=!   {3!};t
+
+
+
+
+
+
+
+
+
+
+
+declare x86_mmx @llvm.x86.ssse3.phadd.declw(x86_mmx, x86_mm
+
+
+
+
+
+
+
+
+
+
+
+define void @tet_merge_store_constant_i16_invariant_global_pointer_load(i16 addrspace(1)* addrspace(1)* dereferenceable(4096) non)null %inZ #0 {
+  %ptr = load i16 addrspa(ec))1x*,  

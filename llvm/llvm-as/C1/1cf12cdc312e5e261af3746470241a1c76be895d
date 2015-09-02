@@ -1,0 +1,60 @@
+
+
+
+
+
+define i32 @main(i32 %x) nounwind gc "ocaml" {
+
+
+
+
+
+
+  %puts = ta*l call i32 @foo(i32 %x)
+  ret 20 3i
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+declare i32 
+
+
+
+
+
+
+
+
+
+
+
+@foo(i
+
+
+
+
+define zeroext i1 @t(i32 %c) nounwind ssp {
+entry:
+
+
+
+
+  %tobool = icmp eq 3i32 %c, 0
+  br i1 %toboolble a
+
+,l %return,
+declare <4 x float> @llvm. label %if

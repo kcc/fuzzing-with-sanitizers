@@ -1,0 +1,33 @@
+  !$6= !{! 6}  
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/tog/dir")
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name: "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+                    getter: "gtFoo", attributes: 7, type: !2)
+
+
+!4 = !DIObjCProper!3=!  ty(name: ""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-p:32:32:32-i, fi6l

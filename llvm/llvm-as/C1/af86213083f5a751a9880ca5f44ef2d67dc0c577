@@ -1,0 +1,17 @@
+
+    !3=! { %x(%.$e"( gi;;  
+
+def:$""""$0X
+ !ine i32 @foo(<4 x float> %a, <4 x float>%b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse.o!ieG.ss( <4 x float> %a, <4 x float> %b ) no*nwind Treadnone
+	 ret $$I= +`!3=!  )3=!{   { 
+
+
+
+
+
+
+
+ 
+decli1 [ia-3r 2!e i32 @4 llvm.x86.avx2.p")!3=="st{a.( )

@@ -1,0 +1,26 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadwstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+entr} 
+	ret voi!0 = !DITemplateTypdePa
+
+
+
+declarr

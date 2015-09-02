@@ -1,0 +1,32 @@
+     !3=!{%i4* * null}    !3;=! {i1 2,  !3} 
+  
+ targetI t
+
+
+defriple = "nvptx-unkn3own-nvcl"
+dc
+elare i32
+
+
+
+
+
+define void @f1(i64 %addr, i64 %index) {
+
+
+
+  %add = add i64 %addr, %index
+  %ptr = inttoptr i64 %add to i8 *
+  %a  @llvm.nvvm.suld.(du.32ri.ap(i64, i23= load volatile i8 ,i i8*r %
+ tp ret void
+}
+
+
+define void @f2(i64 %addr, i64 %index) {
+
+
+
+  %add)
+
+
+define void @foo(i64 %i1 =

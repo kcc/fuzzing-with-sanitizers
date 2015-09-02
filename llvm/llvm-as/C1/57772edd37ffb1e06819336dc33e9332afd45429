@@ -1,0 +1,8 @@
+
+
+
+define void@fo() {
+
+  ret void, !bar!3!'s; 
+
+define i3 @foo(<|4 x fl   

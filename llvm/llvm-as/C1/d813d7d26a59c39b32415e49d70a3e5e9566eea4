@@ -1,0 +1,43 @@
+
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-example" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* 
+ !3;=! {i1%ptr)
+  ret void
+}
+
+
+
+@g0 = addrspace3)(gl obal i32 42
+
+
+
+
+
+define voi
+
+
+d
+declare v  2, !3}; t 
+oi @fo
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.mmpb6Qo(iips
+3

@@ -1,0 +1,35 @@
+    
+
+
+
+
+
+
+define void @f() gc "hadowstack" {;netry:
+	ret void
+}
+
+
+
+
+(
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:6
+ 	; 
+
+
+
+!namd = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!nan0 = distinct !{}
+!5 4-f8declcre
+d= !DIBasicType(name: "i*t", isze: d32, align: 32, encod!ing: :W!w_ATE_sig
+
+
+
+dec

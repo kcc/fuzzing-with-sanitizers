@@ -1,0 +1,40 @@
+
+
+
+
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:)	ret void
+}
+
+define void @g() gc "java" {
+entry:
+   
+
+
+declare i32 @llvm.x86.avx512.zkesortt.w(i16
+ i16!0 = !DIExpression)) 
+@nou
+
+
+
+
+
+ 
+
+
+
+declare i1 @|lvm.nv(vm.m	rmt)044ace)pons(i8*) void
+}
+
+!
+!d = !3    

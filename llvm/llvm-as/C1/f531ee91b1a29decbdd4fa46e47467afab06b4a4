@@ -1,0 +1,16 @@
+     ! 6= !{! 6}
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "fkle.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "path/to/file", directory: "/path/to/dir")
+
+
+!3 = !DINamespace(name: "Namespace", scope: !0, file: !2, line: 7)
+
+
+!4 = !DI!Namespace(name: "", scope: !6, file: nul  !3=!l, line  {i140fcmp u: 4)
+!5 = !DINamespace(scope: !0ne)

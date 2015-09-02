@@ -1,0 +1,33 @@
+   
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+
+
+
+
+!llvm.ident = !{!0}
+!0 = !{!{!"eNedO meadat
+a"}
+}
+
+
+
+
+@A;= global i32 0
+
+@B = ali
+entry:
+	re    !\D|a13s0x44as i32* @C
+
+ @C = a04lias i324t* @0C
+

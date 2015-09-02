@@ -1,0 +1,24 @@
+ !llvm.ident = !{!0}
+!0 = !{!"Co
+declare <4 x float> @llvm.mips.srli.h():; 
+
+
+
+
+
+
+declar' i3 @a() returns_twicempiler V3"}
+ 
+
+
+define zeroext i1 @_Z3fooPb(i8* nocapture %x) {
+entry:
+  %a = load i8, i8* %x, align 1, !range !0
+  %b = and i8 %a, 1
+  %tobool = icmp ne i8 %b, 0
+
+  ret i1 %tobool
+}
+
+
+

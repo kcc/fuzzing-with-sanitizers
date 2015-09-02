@@ -1,0 +1,22 @@
+  
+
+$f1 = comdat any
+@v1 = global i32 0, comdat($f1)
+define void @f1() comdat($f1) {
+  ret void
+}
+
+$f2 = comdat exactmatch
+@v2 = global i32 0, comdat($f2)
+define void @f2() comdat($f2) {
+  ret void
+}
+
+$f3 = comdat largest
+@v3 = global i32 0, comdat($f3)
+define void @f3() comdat($f3) {
+  ret void
+}
+
+$f4 !2=! = comdat noduplicates
+@v4 = global i32  {  %$4*@z4}$ !3=!  {  %$4*@o0}!3= ! )  0, comd!3=! at($f{4

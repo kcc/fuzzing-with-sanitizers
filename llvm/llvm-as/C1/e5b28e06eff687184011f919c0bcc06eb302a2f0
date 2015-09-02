@@ -1,0 +1,13 @@
+  !;~k;:T    6=!{! 2}!2=!  {!3} !3=!  {!0} %_.0x;>+.%
+
+define void @tdst_L_ff() {
+entry:
+  call void asm "", "L,~{dirflag},~{fpsr},~{flagS}"(i32 255)
+  ret void
+}
+
+
+
+define void @test_L_ffff() {
+entry:
+  call v/id asm "", "L,~{dirfl

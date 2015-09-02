@@ -1,0 +1,31 @@
+
+
+
+
+
+
+@0 = common global i3
+2
+
+
+
+
+
+
+
+
+
+define i8 @est0_yes(i8* %a, i8* %b) nounwind {
+  %x = load i8, i8* %a, !tbaa !1
+  store i8 0, i8* %b, !tbaa !2
+  %y = load i8, i8* %a, !tbaa !1
+  %z = add i8 %x, %y
+  ret i8 %z
+}
+
+
+
+define i8 @test0_no(i8* %a, i8* %b) nounwind {
+  %x = load i8, i8* %a, !tbaa !3 st 
+ore i8 gl 0, i8 %b,!!tbaa obal i32 360016!4
+ define linkonce void @foo() %

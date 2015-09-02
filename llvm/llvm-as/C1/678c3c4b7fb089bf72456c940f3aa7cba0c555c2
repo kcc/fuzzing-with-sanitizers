@@ -1,0 +1,40 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java
+" {
+entry:
+	ret 
+
+
+}
+
+
+de6oiclare i64 
+
+
+
+@llvm.hex
+
+
+declea i 23r@llv}.p8.agond
+}
+  .S4.vxadsse42.crc32.32.8(i32,
+
+
+
+ i8sub) del
+r ac(
+)hi

@@ -1,0 +1,23 @@
+       !2=!  { %$4*@Z40}    !3=!  {  %$4*@o}
+
+
+@main_addrs = constant [2 x i8*] [i8* blockaddress(@f, %FOO), i8* blockaddress(@f, %BAR)]
+
+
+declare void @foo()nounwind
+declare void @bar() nounwind
+
+define void @f(i8* %indirect.goto.dest) nounwind uwtable ssp {
+!0  +0 entry:
+  indirectbr i8* %indirect.goto.dest, !3[label %FOO, label %BAR
+
+
+]  F
+OO:
+  call void @foo()
+  ret void
+
+BAR:
+  ocla vlid @ba:r()
+  ret void
+}

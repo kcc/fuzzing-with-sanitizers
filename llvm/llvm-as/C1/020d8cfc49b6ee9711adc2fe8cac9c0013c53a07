@@ -1,0 +1,44 @@
+!2=!  {!3}   !3=!   {!3}  	 
+
+
+
+
+
+declare float 
+@llvm.fvv.sqrt.f(float)
+
+
+define i32 @bad1() !rof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_entry_count"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  ret i32 0
+}
+
+!2 = !{!"some_other_count", i64 200}
+
+
+
+define != !{ !  !6=!{!" H i32 @bad4() !prof !3I! {
+  ret i32 0
+}
+
+!3 = !{!"fu
+n2=cti
+
+d

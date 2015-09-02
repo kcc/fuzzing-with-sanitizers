@@ -1,0 +1,22 @@
+    
+declare i32 @llvm.xcore.gIetid()
+
+
+
+
+
+       !3= !{%i4 * null}   
+ 
+declare void @_Z3foov()
+    
+
+target triple ="nvptx-qnknow-nvcl"
+
+declare i32 @llvm.nvvm.suld.2d.i32.zrqp(i64, i32)
+	
+
+define <2 x i64> @t  !3=! {est_x86_aesni_aesdec(<2 x i64> %a0, <2 x i64> %a1) {
+  
+  %res = call 
+
+!named = !{!0,!  1,<2 x i64> @ll  %x(%$g$I".vm.x86.aesni.a!2, !3, !4, !esdec"

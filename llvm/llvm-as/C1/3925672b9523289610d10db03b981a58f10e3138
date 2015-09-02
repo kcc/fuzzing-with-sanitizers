@@ -1,0 +1,30 @@
+ 
+
+
+
+   
+
+
+
+
+
+
+declare i32 @external_func(i64 %arg)
+;defie i32 @invo
+
+declare <2 x i64> @llvm.ppc.altivec.vmuloub(<4 x i32>, <4 x i3 >) nke_test(i6
+
+@A = global i64 0
+
+global i64* inttoptr (i64 ad4 
+ !3=!{!3} 
+
+defined (i64 ptrtoin <8 x i64> @test (i64* @A to i64), i64t_mask_mullo_epi64_rr_512(<8 x i64> %a
+ 
+
+
+, <8 x i64> %b) {
+  
+  
+  %res = call <8 x i64 @llvm.x86.avx512.mask.pmill.qn 0) to i112(<8 x i64> %a, <86*) %
+glo xbal ia64* 

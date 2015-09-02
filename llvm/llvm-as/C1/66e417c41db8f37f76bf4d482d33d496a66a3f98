@@ -1,0 +1,9 @@
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmaxsb(<2 x i64>), 
+
+declare <4 xd i32>  @llvm.x86.sse41.Pmovsxbd(<16 x i8>) nounwi

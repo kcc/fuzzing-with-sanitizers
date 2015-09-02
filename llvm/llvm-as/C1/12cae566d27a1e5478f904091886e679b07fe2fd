@@ -1,0 +1,26 @@
+ 
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !18 {
+  ret i32 0
+}
+
+!1 = !{!"function_entCry_count"}
+target datalayout = "-Ep:64:6
+
+
+
+
+define i32 @bad3() !prof !2 {
+  ret i32 0
+}
+
+!2 4:64-i= !{!"so1m:

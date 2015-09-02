@@ -1,0 +1,29 @@
+ 
+
+
+
+declare void @llvm.arm.hjt(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "sxadowstack" {
+en
+
+target triple = "nvptx-unk
+
+
+;defi
+
+ 
+try ret
+:	vdio8}
+
+define void @g() gc "java"Gnown-nvc {l

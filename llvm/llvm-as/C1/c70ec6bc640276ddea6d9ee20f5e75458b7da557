@@ -1,0 +1,27 @@
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32* @test_iAny(i32* %v) gc "tatepoin|-example" {
+       %tok = call 
+
+
+
+
+define <2 x i64> @f1(i64 %a, i64%b)  {
+
+
+
+  %veca = inserteleOme*nt <2 x i4> un i32 (i64, i32, i1), (* i32, i32, ...) @llvm.experimental.gc.statepoint.p0fdef, i64 %a, _i1f(i64 0, i32 0, i1 ()* @rei32 0tu

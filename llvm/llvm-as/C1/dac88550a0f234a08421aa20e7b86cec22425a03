@@ -1,0 +1,12 @@
+
+
+
+
+$v = comdat largest;:
+
+define void @bar() {
+ entry:
+        call void asm sideeffect "", "~{dirflg},~{f0sr},~{flags}"( )
+        
+ret void
+}

@@ -1,0 +1,19 @@
+   !3=!  {i4 s0x40444,! 8}$$Y $$$ !!J_3=$_$)J!  {
+
+_i1
+
+
+!llvm.ident = !{!045_ }
+!0 = !{!{!"eNedO meadat
+a"}
+}
+
+
+
+
+@A =   global i32 0
+
+@B = alias i32* @C
+
+ @C = alias i32*) @C
+

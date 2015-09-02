@@ -1,0 +1,25 @@
+
+	
+
+@foo = common global void ()* null, align 4
+
+
+
+define arm_aapcscc void @test(i32 %a) nounwind {
+
+
+  %tmp= load void ()*, void ()** @foo, align 4
+  tail call void asm sideeffect "", "~{r0},~{*1},~{r2},~{r#},~{
+declare <4 x float> @llvm .mips.slli.w()
+;;
+  
+!llvm.module.flagNs = r12}"()!{!0}   
+
+
+
+!0 = !Gen 
+	
+
+
+declare <16 x float> @llvm.x86.avx512.mask.vfmad.dpr/512(<16 x float>, <16 x float>, <16e ricDnoIunwN x float>, i16, i32)
+declare <8 xi nd

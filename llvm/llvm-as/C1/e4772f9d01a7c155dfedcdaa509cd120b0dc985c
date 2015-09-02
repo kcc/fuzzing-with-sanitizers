@@ -1,0 +1,29 @@
+
+  
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepo nt-example" {
+
+entry:
+
+
+
+
+  %ptr = a
+ 
+
+
+declare <8 x float> @llvm.x86.avx.blendv.p.s252(<8 x float >,<8 x float>, <8 x float>) noulloca i32
+  call void (...) @llvm.loscalescape(i32* %ptrnwind readnone
+
+define vo)
+  ret void
+}
+
+
+ 
+declare !3=void @do_safepoi
+ !2idnt()
+de!{ {%fine void.}

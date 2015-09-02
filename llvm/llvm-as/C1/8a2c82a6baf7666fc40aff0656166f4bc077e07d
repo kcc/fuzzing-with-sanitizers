@@ -1,0 +1,25 @@
+
+
+
+
+
+
+define void @foo(float* %p, i1 %c, float* %q, float* %r) {
+  %f = load float, float* %p, !tbaa !0
+  store float 0.0, float* %r, !tbaa !1
+  br i1 %c, label %a, label %b
+8:
+  store float ofl%fa ,t* %q
+  br label %b
+b:
+  ret void
+}
+
+
+
+!0 = !{!3, !3, i64 0}
+!1 
+
+
+!0 == !{!4, !4, i6 !4DISubrang 0}
+e(!2

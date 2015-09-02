@@ -1,0 +1,36 @@
+   !3=!      {!3}     ;   
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvttpd2uqq.246(<8 x double>, <8 x i64>, i8, i32)
+
+
+
+
+
+
+define signext i32 @test1() #0 {
+entry:
+  %0 = call i32 @llvm.ppc.divwe(i32 32, i32 16)
+  ret i32 %0
+
+}
+
+
+declare i32 @llvm.ppc.divwe(i32, i32) #1
+
+
+define signext i32 test2() #0 {
+entry:
+  %0 = call i32 @llvm.ppc.divweu(i32 32, i32 16)
+  ret i32 %0
+
+}
+
+
+declare i32 @llvm.ppc.divweu(i32, i32) #1
+
+
+defid

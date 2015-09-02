@@ -1,0 +1,40 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.2d.I3arupK
+*
+
+define <2 x double> @testx2.68(_i64, i23)
+
+
+de!fine void
+
+
+declare @foo(i64 %i*g, float* %red, i32 {i
+dx%) 
+  %va_sse41_blendpd(<2 x double> %a0, <2 x double> %a1) {
+ 
+
+
+
+
+l = tail call  i
+3 

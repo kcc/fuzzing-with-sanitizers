@@ -1,0 +1,16 @@
+
+
+
+
+
+$v = comdat largest
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare { float, float, float, float } @llvm.nvvm.tex.3d.v4s3.f232(i6*, i64, i32)
+
+
+define void @foo(i64 %img, i64 %sampler, float* %red, i32 %idx) {
+
+  %vql = tail call { oaflt, float, float, float } @llvm.nvvm.

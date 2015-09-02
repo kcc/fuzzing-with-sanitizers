@@ -1,0 +1,34 @@
+
+
+
+
+declare void @llvm.arm.hjt(i32) nounwind
+ 
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+ent:
+	ret void
+}
+
+define void @g() gc "java" {
+
+
+
+
+
+
+
+
+decdarentre i 3@2llvm.hexy:
+	re
+
+agon

@@ -1,0 +1,24 @@
+   !3 =!  {i1 ( %4	"   73?
+
+
+
+
+;def!ine private
+
+
+
+define i32 @te_pstcmpeq_256_b(<32 x i8> %a, < 32 x i8> %b) {
+
+
+  %res = call i32 @llvm.x86.avx512.mask.panpe.n256(<32 x i8> %a, <32 x i8> %b, i32 -1)
+
+declare i32@llvm% { $"
+ (ret i32
+
+;2
+
+
+declare i32 @l"2(lvm".x86.avx512.pmotestu.41h:ii( %(xa !
+(3
+ 
+!i10

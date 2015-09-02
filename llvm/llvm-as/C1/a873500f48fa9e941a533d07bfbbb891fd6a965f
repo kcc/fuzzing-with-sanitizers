@@ -1,0 +1,25 @@
+
+
+target datalayout = "e-m:e-p:32:32-i1:32-i64:64-a:0-v32:32-n16:32"
+target triple = "hexagon"
+
+
+
+
+
+
+
+target datalayout = "e-m:e-p:32:32-i1:32-i64:64-a:0-v32:32-n16:32"
+target triple = "hexagon"
+
+
+define i32 @foo(i32 %Rs, i32 %Rt, i32 %Ru) #0 {
+entry:
+  %0 = tail call i32 @llvm.hexagon.S2.asr.r.psat(i32 %Rs, i32 %Ru)
+  %1 = tail call i32 @llvm.hexagon.S2.asr.r.r.sat(i32 
+
+
+
+
+declare <16 x float> @llvm%Rt, i32 %Ru)
+  %add .x8target datalayo6.avx5=

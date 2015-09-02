@@ -1,0 +1,15 @@
+
+
+
+target triple = "hexagon"
+
+define i32 @foo(i64* nocapture %p, i64* nocapture %q) nounwind readonly {
+entry:
+  %incdec.ptr = getelementptr inbounds i64, i64* %p, i32 1
+  %0 = load i64, i64* %p, align 8, !tbaa !0
+  %incdec.ptr1 = getelementptr inbounds i64, i64* %q, i32 1
+  %1 = load i64, i64* %q, align 8, !tbaa !0
+  %2 = tail call i32 @llvm.hexagon.A2.vcmp
+   
+decwgtu(i64 %0, i64 %1)
+  %lare double @llvm.cf64(doubleincdec.ptr2  = ge)t

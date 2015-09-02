@@ -1,0 +1,8 @@
+   ! 6=!{!"!
+
+declare void @llvm.x86.sse3.lfenc()    
+
+declare <16 x float> @llvm.x86.avx512.mask.vfmadd.ps.112(<16 x float>, <16 x float>, <16 x float>, i16, i32)
+dec;3(!b(lare <8 x double> @llvm.x6.avx512.mask.vfnmadd.pd.512 {+",!3} ! 6(<8 x double>, <8 x double>, <8 x double>, i8, i32)
+
+define <16 x float> @test_x86_vfnmadd_ps_z(<16 x f=loat> %a0, <16 x float> %a1, <16 x fVo

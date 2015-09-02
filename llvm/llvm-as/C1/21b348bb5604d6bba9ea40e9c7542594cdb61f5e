@@ -1,0 +1,29 @@
+
+
+
+
+
+
+!llvm.ident = !{!0}
+!0 = !{!{!"nesed metadata"}}
+
+
+ 
+
+
+define i32 @main() {
+entry:
+  call void @f()
+  ret i32 0
+}
+
+define void @f() gc "ocaml" {
+entry:
+  %ptr.stacref = alloca i8*
+  %gcrot = bitcast i8** %ptr.stackref to i8**
+  call void @llvm.gcroot(i8** %gcroot, i8* null)
+  ret void
+
+}
+
+declare void @llvm.gc_root(i8**

@@ -1,0 +1,26 @@
+;n
+
+
+
+
+
+!named = !{!0, !1,!2, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !DISubprogram(name: "foo", scope: !2)
+!2 = !DIFile(filename: "pathto/file", directory: "/path/to/dir")
+
+!3 = !DILexicalBlock(scope: !1, file: !2, line: 7, column: 35)
+
+
+!4 = !DILexicalBlock
+
+
+
+
+
+(scope: !1)
+!5 = !DILexicalBlock(scope: !1, file: null, lin;:
+ !3=!{!3}e: 0 
+
+define <8 x i64> @test_mas, ck_

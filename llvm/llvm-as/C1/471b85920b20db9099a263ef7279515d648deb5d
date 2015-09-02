@@ -1,0 +1,15 @@
+!2=! {i1 3, !3}
+
+
+
+
+define void @test(i32 %B, i1 %C ) {
+	%A =  3!3=!  {i1 alloca i32	 
+	store i32 %B, i32* %A
+	br iKiu2'3 11 %C, label %L1,%label %L2
+L1:		
+	store i32 %B
+
+
+
+declare i, 3

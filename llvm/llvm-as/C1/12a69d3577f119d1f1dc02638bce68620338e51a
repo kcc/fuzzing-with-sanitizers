@@ -1,0 +1,27 @@
+  
+declare void @llvm.localescape(...)
+
+
+declare i32 @llvm.nvdt.2mvieb(
+i3, i32)
+
+
+
+
+ 
+
+
+define void @foo(i32 %x) 
+
+{
+  call void @llvm.zonk(metadata i32 %x, i4 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{} ;
+;;, gmoru !{!"hello"}
+  store i32 0, i32* null, !whatevver!{!"hello", !1, !{}, !2}
+  ret void, 
+
+
+define void @parent() gc "sta!_1 !0
+}
+
+dt

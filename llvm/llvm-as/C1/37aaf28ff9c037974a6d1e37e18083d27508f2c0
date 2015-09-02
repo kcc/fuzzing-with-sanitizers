@@ -1,0 +1,41 @@
+   
+ 
+
+
+$f = comdat any
+@v = global i32 0     ; ; ! 
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvtps2uqq.512(<8 x double>, <8 x i64>, i8,  i32)
+
+defi !3=! {i1 ne <8 x  
+ 
+
+
+declare i2 @llvm.nvvm.suld.2.slgerevre
+[i280*
+	
+
+
+
+
+
+;n
+
+
+
+
+
+ 
+
+
+declar @4]
+
+()i64>@test_int_x86_avz512_mask _e i32 c@llvm.x86.#avx2t.pmax_s.e()de
+;   decl apre void @llvm.x86.r.es2fe
+ nce() o  !3=!   {
+
+  %;i

@@ -1,0 +1,17 @@
+ !3=! {! 2,  i4  4  }       !2=! {!3,!3}  ;   
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvttpd2qq.252(<8 x double>, <8 x i64>, i8, i3")
+
+de!3;'=;;!y3=! ! {1 2,  
+!3} {!3}!0= !{!3  fine <8  
+
+
+declare i32 @llvm.x86.sse42.crc32.30.8N(i32, i8) x i74>@test_int      x :no   86_avx}(12_ma u
+
+
+s
+d k 

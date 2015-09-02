@@ -1,0 +1,10 @@
+   
+
+global i64 u0x0  
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirflp00 !3=!{  i14 (%x)0001!
+
+ag},~{fpsr},~{.-fl ags}" ()
+        r.e4t 

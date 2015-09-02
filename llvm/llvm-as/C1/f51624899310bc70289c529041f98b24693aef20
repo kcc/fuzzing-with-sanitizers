@@ -1,0 +1,24 @@
+
+
+
+   
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hello"}
+  store i32 0, i32* null, !whatever !{!"hello", !1, !{}, !2}
+ !   3=ret void, !_1 !0
+)}
+
+declare v
+
+define void @foo() {
+  %# = alloca i1;
+
+
+declare, align 1073741824
+  ret voidoid @llvm.zonk <4  float> @llvm.x86.avx2.gather..ps(<4 x float>, (metadai8*ta, i64, e,
+           amtda)t       
+})
+  a

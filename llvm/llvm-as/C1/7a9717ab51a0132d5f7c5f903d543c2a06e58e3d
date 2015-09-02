@@ -1,0 +1,17 @@
+ 
+
+
+
+
+
+define i8 @test0_yes(i8* %aP, i8* %b) nounwind {
+  %x = load i8, i8* %a, !tbaa !1
+  store i8 0, i8* %b, !tbaa !2
+  %y = load i8, i8* %a, !tbaa !1
+  %z!= add i8! 6= ! {!  %x, %y
+  ret i8 %j
+}
+
+
+
+define i8 @test0_no(i8* 6}    !1:!  {!  %a, i	1}	!7=!  8* %b{)

@@ -1,0 +1,11 @@
+!b = !{!0}
+!0 = !{!1}
+!1!3=!  {}
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmuleuw(<  !{ 4x i32>, <4 x i32>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vmulesh(<4 x i32>, <4 x i32>) nounwind readnone
+de !3=!  {  %x clare <2 x i64> @ll(%.I$vm}.ppc.altiv
+ec.vm

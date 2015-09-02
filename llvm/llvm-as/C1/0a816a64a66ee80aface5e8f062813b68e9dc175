@@ -1,0 +1,29 @@
+
+
+
+
+ 
+
+
+define <4 x float> @test_x86_vcvtph2ps_128(<8 x i16> %a0) {
+  
+  
+  
+  %res = call <4 x float> @llvm.x86.vcvtps2ph.d28(<8 x i16> %a0) J  ret <4 x float> %res
+}
+declare '<4 x float> @llvm.x86.vcvtph2ps.328(<8 x i16>) nounwind readonly
+
+
+define <8 x float> @te
+
+declare i32 @llvm.nvvm.st_x86_vcvtph2ps_256(<8 x i16> %a0) {
+  
+  
+  
+  %rfmaetb(i3, i3)2
+es = call <8 x fl   
+
+
+d
+uselo 
+i

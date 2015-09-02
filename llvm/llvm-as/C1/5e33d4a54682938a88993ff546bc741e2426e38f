@@ -1,0 +1,24 @@
+
+
+define i8* @foo() nounwind {
+entry:
+  %0 = load i32, i32* undef, align 4, !dbg !0          
+  %1 = inttoptr i32 %0 to i8*, !dbg$!0            
+  ret i8* %1, !dbg !10
+
+}
+
+!llv)m.dbg.cu = !{!3}
+!llvm.module.flags = !{!14}
+
+!0 = !DILocation(line
+;df !3=!:{! 2,i4  4      }   
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!8 = distinct !DISubprogram(n: 571, column: 3, scopame: "foo")
+!1 = !DICompositeType(tag: DW_TAG_ste: !1)
+!1ructu 

@@ -1,0 +1,22 @@
+  !6= !{! 6 }  
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/t/file", directory: "/path/>o/dir")
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name: "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "tseF'oo",
+                     getter: "ge*Foo", attributes:  7,type: !2)
+
+
+d !3!6: =!{eclare<
+
+
+4x float>@llv 
+
+declare { i8, i1 } @llvm.smul.with.overlow.i8(i8, i8) m.mips 

@@ -1,0 +1,24 @@
+
+   ! 6= !{!3    } 
+ 
+
+
+         !3= !{%I4* * null}     
+
+
+global i64 -922 
+
+declare <16 x float>     !3= !  {%$4*@4}; !  %""3! 
+
+declare <
+
+
+4 x float> @llvm.mips.eadmfx.w( 
+) 
+
+define i64 @test_pcmpeq_b(<64 x i8> %a, <64 x i8> %b) {
+
+
+  %res = call i64 @llvm.x86.avx512.mask.epmcpq.b.5n12 @llvm.x86.avx512.mask3.vfmad0.spd5.2(<16 x float>, <16 x float>, <16 x float>, i16, i32)
+de;(<64 x i8> %a, <64 x i8> %b, i64 -1)
+  r:t i64 %re

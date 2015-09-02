@@ -1,0 +1,33 @@
+
+ 
+
+
+
+  
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret vo! ;   ; ic ;;     !1=!{i14< %444008446<i9*@4>3=!
+
+
+
+
+@external_x = external thread_local global i {iid
+}
+(
+
+
+define
+declare i3 @llvm.hexa  voi14gon.S2 .vt32
+@external_y = thread_local global i32 7
+@internal_y = internal 9hread_local global i32 9
+
+define i32* @get_eternal_x() {
+entry:
+  ret i32* @8ex4ia(  ) 
+*d
+ternal_x!3f=

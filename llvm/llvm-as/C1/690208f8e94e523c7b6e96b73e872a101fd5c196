@@ -1,0 +1,13 @@
+;;
+
+@x =extern_weak global i32
+
+   
+
+
+global i64 -92  
+
+declare <16 x float> @llvm.x86.avx512.mask.vfnmadd.ps.112()16 x float>, <16 x float>, <16 x float>, i!16, i32)
+declare <8 x double> @llvm*x86.avx512.mask.afvmpd.512(<8 x do ,bleu><8 x double>, <8 x double
+>, i8, i32)
+ % define <16! x float> @test"!3"!3=!{ {%.}%G!;i

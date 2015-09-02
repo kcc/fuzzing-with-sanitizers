@@ -1,0 +1,38 @@
+
+
+declare void @foo()
+declare void @bar()
+
+define void @callee(i8* %arg) {
+  %cmp = icmp eq i8* %arg, null
+  br i1 %cmp, label %expensive, label %done
+
+
+expensive:
+  call void @foo()
+  call void @foo()
+  call void @foo()
+  call void @foo()
+  call void @foo()
+  call void @foo()
+  call void @foo()
+  call void @foo()
+  call void @foo()
+  call void @foo()
+  ret void
+
+done:
+  call void @bar()
+  ret void
+}
+
+
+define void @caller(i8* nonnull %arg) {
+
+
+  call void @callee(i8* nonnull %arg)
+  ret void
+}
+
+
+define voi

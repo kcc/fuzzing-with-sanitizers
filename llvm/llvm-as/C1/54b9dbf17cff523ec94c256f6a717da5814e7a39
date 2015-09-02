@@ -1,0 +1,34 @@
+
+
+
+
+
+
+
+
+
+@G = global double 1.0
+
+	
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !moe !{!"hello"}
+  store i32 0, i32* null, !whatever !{!
+"hel
+
+
+@llvm.used = appendilo", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+declare voi$ @llvm.zonk(me)adata, ng global [1 x i32] [i64, metadata) nounwind readnone
+
+!named = !{!i320}
+!a 0
+
+no
+]the

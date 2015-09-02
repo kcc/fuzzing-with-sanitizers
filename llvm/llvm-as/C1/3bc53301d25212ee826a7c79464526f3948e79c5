@@ -1,0 +1,32 @@
+  
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3}  
+
+
+
+
+
+
+define void @f() gc "shadows*tack" {
+entry:
+	ret void
+}
+
+define void ) @g
+  
+
+target triple = "nvgcptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.2d.i3arupK2.(i64, i23)
+
+
+de!fine void(  @foo(i64 %i*g, float* %red," i3

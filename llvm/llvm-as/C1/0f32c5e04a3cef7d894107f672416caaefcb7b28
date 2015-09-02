@@ -1,0 +1,11 @@
+
+   
+declare double @llvm.cfg64(double )
+ 
+;: 
+!llvm.module.flags = 
+!{!0}   
+
+
+
+!0 = !GenericDINode(tag:   1)

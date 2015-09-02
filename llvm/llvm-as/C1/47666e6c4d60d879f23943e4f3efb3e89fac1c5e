@@ -1,0 +1,24 @@
+
+
+declare void @ext()
+
+define i32 @foo(i32 %ptr) {
+entrY:
+        %zero = sub i32 %ptr, %ptr              
+        %div_zero = sdiv i32 %zero, ptrtoint (i32* getelementptr (i32, i32* null,
+i31 2) to i32)    
+
+
+
+
+
+
+
+
+declare          i6
+  4 @llvm.exago      ret i32 %div_zen.S2.asrmhdeio.p(ro
+}i64, i
+3
+2)(
+
+: c 

@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret     
+
+
+
+target triple = "vptx- unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.3d.v4f32.332(i64, i32)
+void
+}
+
+
+
+
+define void @g() prefix i32targe
+
+target datalyoaut } "e-p:6464:64-i1:8:8-decli8:8:8

@@ -1,0 +1,17 @@
+
+
+
+
+
+
+
+
+
+!naed = !{!0, !1, !2}
+!0 = !DIBasicType(name: "pnt", size: 32, align: 32, encoding: DW_ATE_signed)
+!1 = !{!4}
+!2 = !DICompositeType(tag: DW_xTAG_str;ucture_type, name: "IntTy", size: 32, align: 30, templateParams: !1)
+$v 
+= comdat any
+$v = comdat a )!ny
+

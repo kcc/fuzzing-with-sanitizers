@@ -1,0 +1,40 @@
+
+
+
+
+ 
+
+	; !
+
+
+
+declare <4 x float> @llvm.mips.ilvl.b()
+!llvm.module.flags = !{!0}   
+
+
+!0 = !
+
+
+declare floGenericDINode(tag: 61at @llvm.nvvm.ms!qrv.f( 3 =!{)
+
+
+flo
+
+
+
+
+declare <4 x float> @llvm.mips.lt.d(
+
+)
+
+
+
+
+
+
+define void @nati)
+
+
+ormal_@foo1 conditi=on() nounwind
+
+

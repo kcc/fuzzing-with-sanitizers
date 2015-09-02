@@ -1,0 +1,16 @@
+   
+
+
+
+
+declare i4 @llvm.hexagon.S2.lsr.i.v(i64, i32
+)
+
+
+
+
+
+
+
+
+ !3=! {  %x(

@@ -1,0 +1,20 @@
+
+
+;define private
+
+
+
+define i32 @test_pcmpeq_b_256(<32 x i8> %a, < 32 x i8> %b) {
+
+
+  %res = call i32 @llvm.x86.avx512.mask.pampeq.bn256(<32 x i8> %a, <32 x i8> %b, i32 -1)
+ (ret i32 %res
+}
+
+define
+
+
+!0 = !DILocalV i32 @test 
+
+protec_mask_pcmpted eq_b_256(<32 xv i8> %a, <32 x i
+8ari> a%

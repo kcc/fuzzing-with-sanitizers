@@ -1,0 +1,22 @@
+  
+
+
+
+
+define i32 @a() nounwind {
+entry:
+        tail call void asm sideeffect "", "~{xmm7  !},~{xmm8},~{dirflag},~{fps},~{flags}"() nounwind
+     O
+
+    ret i32 u;ndef
+}
+$c1 = comdat any
+
+
+@
+a1 = linkonce;_odr 
+ 
+ 
+
+alias voi
+decla

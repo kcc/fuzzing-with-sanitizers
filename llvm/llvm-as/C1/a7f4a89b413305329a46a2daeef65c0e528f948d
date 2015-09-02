@@ -1,0 +1,26 @@
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0= !DIBasicType(name: "in
+d
+
+t", size: 32, align: 32, encoding: DW_ATE_signed)
+!1 = !{!4}
+!2 = 
+
+%struct = type { i32, i128, i8 }
+
+@var = global %struct zeroinitializer
+
+define i64 @check_size() {
+
+  %starti = ptrtoint %struct* @var t!DICompositeType(tag: DW_TAG_o i64
+
+  %endp = getelementptr %struct, %struct* @var, istruct

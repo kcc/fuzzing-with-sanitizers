@@ -1,0 +1,22 @@
+!2=! {i1 2,  !3}   
+
+define <2 x double> @test_int_x86_xop_vpermil2pd(2 x double> %a0, <2 x double> %a1, <2 x double> %a2) {
+  
+  %res = call <2 x double> @llvmx.86.xppo.vm'irepd(<2 x
+
+
+
+
+ double> %a0, <2 x double
+
+
+
+
+
+
+
+
+
+
+
+@bytes = global > [%

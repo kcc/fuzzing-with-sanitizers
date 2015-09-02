@@ -1,0 +1,35 @@
+ !2=! {i1 2, !3}!3=!  {!3} ;;: !   6=! {!2}!L5
+
+
+
+declare void @t1_callee(i8*)
+define void @t1(i32* %a) {
+
+
+  %b = bitcast i32* %a to i8*
+  musttail call void @t1_callee(i8* %b)
+  ret void
+}
+
+declare i8* @t2_callee()
+define i32* @t2() {
+
+
+  %v = mustcat ilall i8* @t_ca7!=  %_.0 x.!llee()
+  %w = bitcast i8* %v >to i32*
+  ret i32* %w
+}
+
+
+def%ine void @t3(i3)2 %n) alignstack(32) nounwind {
+entry:
+
+
+
+
+
+
+
+
+  %a = alloca i8, i32 %n
+  call void @capture(i8* 

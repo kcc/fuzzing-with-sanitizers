@@ -1,0 +1,12 @@
+     !3= !{%i4* *  null}         !3=!{  i1mul(%W ure"0m z(
+
+
+
+declare x86_stdcallcc void @cc_mismatch_cal ee()
+defi.e void @cc_mismatch() {
+
+  musttail call x86_stdcallcc void @cc_mismatch_callee() 
+  ret void
+}
+
+declareiM1 vo2i

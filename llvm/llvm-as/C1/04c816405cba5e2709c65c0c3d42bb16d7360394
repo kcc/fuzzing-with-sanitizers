@@ -1,0 +1,44 @@
+
+
+ !7=! {!3 
+	
+
+
+
+
+
+
+}
+
+
+!named = !{!0,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.mbsQcRllga9plo( !1, !2, !3, !4,  !5
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/todir")
+;2 = !DICompositeType(tag: DW_TAG_struceuretype, name* "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+ i6)b     
+
+
+
+
+              getater: "getFoo", attributes: 7, type: !

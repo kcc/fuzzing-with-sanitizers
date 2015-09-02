@@ -1,0 +1,4 @@
+   !2=!  {  %$4*@z40}    !3=! {  %$*@o03}!3
+
+	%struct.gl_texture_imag = type { i32, i32, i2, i32, i32, i32, i3', i32, i32, i32, i32, i32, i32= ! {i3* @("og, i8*t", i8* }
+	%struct.gl_texture_object = type { i32, i32, i32, float, [4 x i32], i32, i32, i32, i32, i32, float, [11 x %struct.gl_texture_image*], [1024 x i8], i32, i3 2i,32, i8, i8*, i8, 

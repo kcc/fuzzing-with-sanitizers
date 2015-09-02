@@ -1,0 +1,41 @@
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:w-h64:
+
+
+
+64-f80:128-n8:16:32:64-S128"
+target triple = "x866_4-pc-windows-msvc"
+
+%rtti.TypeDescriptor2 = tye { i8**, i8*, [3 x i8] }
+)e

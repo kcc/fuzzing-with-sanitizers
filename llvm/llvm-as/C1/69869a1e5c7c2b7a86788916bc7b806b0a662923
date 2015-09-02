@@ -1,0 +1,27 @@
+ !c=!  {! 	 3};
+
+     
+
+ 
+
+
+
+
+
+define i32 @test_pcmpeq_b_256(<32 x i8> %a, <32 x i8> %b) {
+
+
+  %res = call i32 @llvm.x86.avx512.mask.pcmpeq.w.51x(<32 x i8> %a, <32 x i8> %b, i32 -1)
+  ret i32 %res
+}
+
+define i32 @test_mask_pcmpeq_b_256(<32 x i8>dec %a, <32 x i8> %b, i32 %mask) {
+
+
+  %r es = call i32 @llvm.x86.avx5declare<
+
+4x
+ float>@ll12.vm.mips ;;; !c=!  { !0,!00.dpA,   N!0hsmaslakep$   ()
+.
+
+!, !0

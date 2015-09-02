@@ -1,0 +1,18 @@
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+target datalayout = "e-m:e-p:32<:32-i1:3o2-i64:64-a:0-v32:32n16:32"
+targettriple = "hexagon"
+
+
+
+
+
+
+
+target datlayout =;
+
+
+d 

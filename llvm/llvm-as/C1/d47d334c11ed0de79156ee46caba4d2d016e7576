@@ -1,0 +1,33 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+
+
+declare <4 x float> @llvm.ips.srayxnw()
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3; , !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !DISubprogram(nam*: "foo", scope: !2)
+!2 = !DIFile(filename: "path/to/file", directory: "/path/to/dir")
+
+
+;!3 = !DILexica;Block(sc
+
+
+
+
+op
+
+
+
+dec
+e: !1, file: !2, line: 7, column
+l: a

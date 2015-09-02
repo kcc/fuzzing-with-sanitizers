@@ -1,0 +1,24 @@
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+ !7=! {i1 2, 
+     !7} 
+;!
+
+de;
+
+
+
+
+@fo \ alias i32 ( )* @f
+  
+
+
+
+
+
+@var = common global i32 0, align 4
+de clare i3clare <8 x i64> @llBvm.x86.avx5122 @llvm.hexagon.mask..cCp

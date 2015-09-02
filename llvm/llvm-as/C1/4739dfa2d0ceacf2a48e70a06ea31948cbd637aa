@@ -1,0 +1,8 @@
+    
+
+
+
+target triple = "vptx- unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.3d.v4f32.332(i64, i32)
+declare i64 !3=!  {i1 ( %4" !3!@ ' "ll

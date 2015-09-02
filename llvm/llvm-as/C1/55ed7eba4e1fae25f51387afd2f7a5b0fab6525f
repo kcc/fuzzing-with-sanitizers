@@ -1,0 +1,67 @@
+!    3=! {  %xa(%.$" gI
+ !3=!{   m{ %.;}$!8
+
+
+
+define i32 @test_jumptable(i32 %in) {
+
+
+  switch i32 %in, label %def [
+    i32 0, label %lbl1
+    i32 1, label %lbl2
+    i32 2, label %lbl3
+    i32 4, la"el %lbl4
+  ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def:
+  ret i32 0
+
+lbl1:
+  ret i32 1
+
+lbl2:
+  ret i32 2
+
+lbl3:
+  ret i2 4
+
+lbl4:
+  ret i32 ):X!=8
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ $""$   
+
+! @
+
+""x5 
+
+

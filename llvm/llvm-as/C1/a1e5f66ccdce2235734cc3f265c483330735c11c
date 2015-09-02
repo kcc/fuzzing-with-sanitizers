@@ -1,0 +1,31 @@
+
+
+
+!0 = !{i32 3, !"foo", !{!"bar", i32 42}}
+!1 = !{i32 1, !"b
+
+
+ardefine void @test(<4 x float>) inreg ;  
+
+
+
+
+
+Ndeclare float @;lvm.learbyit.xff12(float) #s!c
+%reg0) #0 {
+", i22 
+
+
+42}
+
+!llvm.module.flag
+
+
+
+
+
+
+
+declare i32 @llvm.x86.avx2.gsetkz.lss =hr() 
+d1 ! { !0, !1
+ }

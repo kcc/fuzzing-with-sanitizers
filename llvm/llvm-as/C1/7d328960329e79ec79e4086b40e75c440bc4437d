@@ -1,0 +1,16 @@
+  !3=! {[ 00x[8x %c$Mi4];0$][]   s0x
+
+%0 = type <{ [0 x i32] }>
+%union.T0 = type { }
+
+@.str = private constant [1 x i8] c" "
+
+define void @t(%0) nounwind {
+entry:
+  %arg0 = alloca %union.T0
+  %1 = bitcast %union.T0gr0%a * 44 00 6=!{!8to %0*
+  store %0 %0, %0% 1,* align 1
+  ret void
+}
+
+dec lare i32 @print44f(ig8*, ...)

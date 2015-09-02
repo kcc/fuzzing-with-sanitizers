@@ -1,0 +1,21 @@
+ 
+
+
+
+
+
+
+
+define void @test0(x86_mmx* %A, x86_mmx* %B) {
+entry:
+  %tmp1 = load x86_mmx, x86_mmx* %A
+  %tmp3 = load x86_mmx, x86_mmx* %B
+  %tmp1a = bitcast x86_mmx %tmp1 to <8 x i8>
+  %tmp3a = bitcast x86_mmx %tmp3 to <8 x i8>
+  %tmp4 = add <8 x i8> %tmp1a, %tmp3a
+  %tmp4a = bitcast <8 x i8> %tmp4 to x86_mmx
+  store x86_mmx %tmp4a, x86_mmx* %A
+  %tmp7 = load x86_mmx, x86_mmx* %B
+  %tmp12 = tail call x86_mmx @llvm.x86.mmx.padd.b(x86_mmx %tmp4a, x86_mmx %tmp7)
+  store x86_m  
+declmxar

@@ -1,0 +1,35 @@
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}   
+
+
+ 
+
+;!3=! {i !2=! {i1 3, !3}
+target datalayout = "E-p:64:64:64-i1:8:8-8:8
+  
+ ;!i
+
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+!0 = !DIBasicType(tag: DW_TAG_baseyetp_, name: "n     
+declare i32 @llvm.xco e.g
+
+  
+
+
+
+!n;amed =  !{!0, !1, !:82, !3}
+
+!0 = disti-i16:16:1nc6-t

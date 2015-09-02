@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+ 
+
+!0 = !DILexicalBlock(scope:
+
+!
+0)= !!I
+
+
+
+
+
+
+
+ 
+ 
+
+
+declard i2 @llvm.nvvm.suld.3.sl
+:
+ 
+
+
+
+
+
+
+
+declare i128 *@foo()
+
+
+define void @f1(i12*8 *%ptr) {
+
+
+
+
+  %value = load i128 (g

@@ -1,0 +1,49 @@
+
+
+
+
+
+
+
+
+
+
+
+!3=! {!3 }  
+
+
+
+
+
+
+
+
+
+
+@fn.codetable = internal unnamed_addr constant [3 x i8*] [i8* blockaddress(@fn, %RETURN), i8* blockaddress(@fn, %INCREMENT), i8* blockaddress(@fn, %DECREMENT)], align 4
+
+define i32 @fn(i32* nocapture %opcodes) nounwind readonly ssp {
+entry:
+  %0 = 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+load i32, i32* %
+opcodes, ali
+
+
+gn 4
+  %arrayidx =
+ egt
+edlemen

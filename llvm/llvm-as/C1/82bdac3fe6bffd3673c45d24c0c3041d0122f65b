@@ -1,0 +1,52 @@
+
+
+
+
+!0 = !DISubrange(count: 9 
+)
+
+
+!nqmed = !{!0}
+
+
+
+
+
+
+
+
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d8}
+
+~{d9},~{d11},~{d13}"() #1
+  ret void
+}
+
+!llvm.dbg.cu = !{!0}
+!llvm.module.flags = !{!8, !9}
+
+!0 = distinct !DICompileUnit(language: DW_LANG_C99, producer: "clang v
+;
+
+
+
+
+
+
+!3 = !DIImportedEntity(tag:DW_Ter

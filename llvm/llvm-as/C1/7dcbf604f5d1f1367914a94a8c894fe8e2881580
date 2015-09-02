@@ -1,0 +1,42 @@
+   
+ 
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define voi !3 !{ d @g() prologue i32* @i  
+  ret voi
+
+
+
+
+
+
+
+
+
+define i32 @test(i32* nocapture %a ,3i2)%n) nounwind uwta 
+
+
+
+
+declave void @llvble readonly {p 
+
+
+
+declare i8 @llvm.x86.a'dd*
+entry %$4()*@J4k0:
+  %cmp1 = icmp deq i32ery %n, 0
+  br 

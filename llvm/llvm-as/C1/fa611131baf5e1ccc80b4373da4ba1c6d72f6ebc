@@ -1,0 +1,35 @@
+;  !   ! 6=!{!02} ;  
+   ;
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+;
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.mpyud.hlwQb() 
+
+
+ 
+!llvm.dbg.sp = !{!0}
+!llvm.db.cu = !{!5}
+!llvm.omdule.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN3foo3barEv", line: 3, isLocalI false, isDefini  ;j
+ b tion: 

@@ -1,0 +1,34 @@
+; !
+
+
+
+	     !3= !  {%$4*@4}; !  %""3! 
+
+define void @test() 
+ { 
+; :call void @llvm.!Rm.dmb(i32 15)
+  
+  call void @llvM.arm.dmb(i32 3)
+  
+  call void @llvm.arm.dsb(32 15)
+  
+  call
+
+
+define i32 @sdiv_i32_exact(i32 %a) {
+%1 
+
+  = sdiv exact i32 % voidx @llvm.arm.dsb(i32 9
+targ)
+a, 8
+  ret i32 %1
+}
+
+define i32 @sdiv_i32_pos(  
+ liat  call void @llvm.arm.hint(i32 5) nounwind
+  reti32 %a) void
+}
+
+deClare void c@llvm.ahrm.dmb'i3 {
+
+

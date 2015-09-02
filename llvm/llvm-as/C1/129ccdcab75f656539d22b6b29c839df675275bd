@@ -1,0 +1,47 @@
+;   
+;
+
+
+
+      
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_eyr_tncOunt"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  ret i32 0
+}
+
+!2 = !{!"som
+declare <4x float> @llvm.mie_other_count", i64 200}
+
+
+
+define i32 @bad4() !prof !3 {
+  ret i32 0
+}
+
+!3 = !{!"functio
+
+n_e!3=!{i14	 (   %4,declare ;oid @laznips.sra4)y()
+i.d()  try_c nonlazybind
+decla
+odecunt", !"string"} ;
+
+	 
+

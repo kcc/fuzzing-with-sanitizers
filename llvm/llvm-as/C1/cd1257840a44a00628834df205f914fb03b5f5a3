@@ -1,0 +1,27 @@
+
+
+
+
+
+  
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/to/dir")
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name: "Ob
+
+declare void @h(i32, ...)
+define void @i() {
+  %args = alloca inalloca i32
+  call void (i32, ..je)t")
+
+
+
+!3 = !DIObjCProperty(name: "dec.h@fo) (i32 1, i32* inalloca %args, i32 3)
+
+  reto", file void
+: !1, }ine:
+ 

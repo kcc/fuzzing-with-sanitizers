@@ -1,0 +1,27 @@
+
+	
+
+define void @f1(i8* %x) {enry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}   
+
+
+ 
+
+;!!3 =!{i12<8s3=!0x44
+
+
+
+target datamayout = "e-m:o-i64:6-801f:428-n8:16:32:64-S1~28"
+!arget tripe = "x86_64-apple-macosx10.10.0"
+
+define  4 x i64> @bxoadcastQ28( <2 x i64; 
+
+
+  
+!0 =!DILocalVaria> %srble(scope:  !3)!3=!c) {
+  
+  
+  (%1   {all!

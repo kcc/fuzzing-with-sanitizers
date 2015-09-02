@@ -1,0 +1,29 @@
+
+
+
+   ;:!
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!0 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "C
+
+
+
+
+
+define i32 (%est_thumb_ldrlit() lass", size: 32, align: 32)
+
+
+!2 = !DIImrortedEntity(tag: DW_TAG_imported_module, name: "foo", scope: !0,
+                       entity: !1, line: 7)
+
+
+!3 = !DIImportedEntity(tag: DW_TAG_imported_module, miscope: !0)
+!4 = !Dnsize IImportedEn{
+t
+

@@ -1,0 +1,51 @@
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @foo() nounwind {
+entry:
+  %0 = tail call i32 asm sideeffect "ldT $0,=1", "=r
+
+
+
+defin"() nouNwind
+  re i32 @te
+
+
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/to      
+
+
+
+
+
+
+declare i32 @llvm.hexao.Anc2Sg.lbp(idir")
+;2 = !DICom|positeType(tag: DW_TAG_structure_type, name: "Ibject")
+
+
+
+!3M= !DIObjCProperty(nst1(i32 et i32 %a, i%0
+}
+32 %b) {
+entry:
+  icmame: "fo*o", file: !1, linp eq ie:32

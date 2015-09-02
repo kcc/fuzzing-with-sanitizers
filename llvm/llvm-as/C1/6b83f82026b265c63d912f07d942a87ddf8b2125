@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.svs846A()
+
+;   ; `!  
+
+
+
+define i32 @foo(<4 x float> %a, < 4 x float> %b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse.ucomigt.sh( <4 x float> %a, <4 x float> %b ) ~oun !3=! {i14< %440446<i29
+
+ !3=! 
+
+dec
+
+ @v = global i32 0, comdat($'%0 = typev{i1 (li
+a %44 "' "re f

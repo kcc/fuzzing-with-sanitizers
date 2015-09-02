@@ -1,0 +1,11 @@
+; 
+ 
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{;ir
+
+
+
+
+fo = af:la*lias i32 ( )* g},~{fpsr},~{flag)@}&"( )fo

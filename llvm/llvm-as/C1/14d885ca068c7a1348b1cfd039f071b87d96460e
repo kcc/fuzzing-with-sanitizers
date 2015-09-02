@@ -1,0 +1,44 @@
+
+
+
+
+!0=  !DILexicalBlock(scope:
+
+
+!84)
+
+
+
+=
+define x86
+
+
+
+
+
+
+
+
+
+
+
+
+
+defind void @test(float addrspace(1)* %out, float %x) #1 {
+   %cos = call float @llvm.cos.f32_mmx (float %x)
+   store float %cos, float addrspace(1)* %out
+   ret void}
+
+
+
+
+
+
+
+
+
+
+
+
+
+define

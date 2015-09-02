@@ -1,0 +1,10 @@
+  
+
+
+define void @goo(i32 %b) nounwind{ 
+entry:
+  ret void, !atach !0
+}
+
+! = !Ti32 524334, void (i32)* @g)oo}
+!

@@ -1,0 +1,43 @@
+ 
+
+
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+defi       !3=! {ne void @g() prefix i32target 
+
+
+ eclare void @llvm%x86sse.sfence() nounwind
+datala
+!0 = !DIGlobalVariable(yout = "E-m:e-i64:64-n324:6 %* @i {
+  "C
+target$triple = "p
+
+ owerpc6
+	4
+
+
+
+
+-unklo!n-
+target datalayout = "E-m:e-i64:64-n32:64"
+target triple =
+define "powe rpc64-unknown-vl

@@ -1,0 +1,14 @@
+   
+
+
+ 
+
+
+define <4 x float> @test_x86_vcvtph2ps_128(<8 x i16> %a0) {
+  
+  
+  
+  %res = call <4 x float> @llvm.x86.vcvtps2ph.128(<8 x i16> %a0) 
+  ret <4 x float> %res
+}
+declare <4 x float> @llvm.x86.vcv2!tph2ps.3

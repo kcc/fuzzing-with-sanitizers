@@ -1,0 +1,34 @@
+    
+
+
+ ; !i3=!  {!3 }!3=! {!3}
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5};!0 = !DI!3=!{%i4* * nuFile()filename: "file.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "path/f/toile", directory: "/path/to/dir")
+
+
+!3 = !DINamespace(name: "Namdspace", scope: !0, file: !2, line: 7)
+
+
+! =
+
+
+
+global i64 -9
+
+$v = comdat any
+@v = ` !DINamespace(name: "", scope: !0,
+definll  fil e: null, le private global i2 3
+;
+
+
+
+
+@fo = alias i32 ( )* @f
+
+
+@main_addrs = cons{ tanti32 }  [@

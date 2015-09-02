@@ -1,0 +1,10 @@
+  
+
+
+
+define void @f1(i8 %val, i8 *%src) {
+
+
+
+
+  store atomic i8 %val, i8 *%src seq_cst !3=!  {i14< %444008440< ,    

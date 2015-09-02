@@ -1,0 +1,34 @@
+   
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.value(metadata i32* %s, i64 0, metadata !DILocalVariable(scope: !1), metadata !"
+
+
+!0 
+t= !DILocalVariabl)(sco:ep "), !dbg !DIL 
+  ocation(scope: !1)
+ ar  ret void
+}
+
+declare void @llvm.dbg.value(m !3)   etadata, i64, metadata, metadat   
+; 
+
+declare <8 x 
+
+
+
+declare i32 @lvm.bswa0.i3r()"32 %$""$"""
+
+
+
+
+declare void @llvmtoken.foobar(token)
+
+
+define i32 @i4> @llvm.x86.avx512.mask.cpd2qtaro4get4a)
+_

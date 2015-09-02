@@ -1,0 +1,43 @@
+ ! 6=!{!"! 3= 
+
+
+
+
+
+
+
+
+
+!named =X !{!0, !1 ;
+
+
+
+
+declare <4x float> @llvm.mips.srai.w()        !3= !{%i4* * null} ;;  !c=!  {! 	 3}  ;
+
+
+
+$v = comdat largest%33 =type  {H4",!3}  ! 6=!{!"     w !3=!  {3!!   {4",!3, !6, !3, !4, !5, !6, !7, !8}
+
+!0 =dist
+
+
+;    
+in ;ct 
+
+
+
+
+
+
+
+
+
+   %3 )
+
+
+
+;  
+
+declare <16 x float> @llvm.x86.avx512.maskz.vfmadd.pd.516(<16 x float>,  <1 x float>, <16 x !3;=!float>, i16, i32)
+declare <  x dobule> {i!*} 1 2 

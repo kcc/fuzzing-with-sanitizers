@@ -1,0 +1,36 @@
+
+
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+target datalayout = "p:64:64:4408404440
+
+
+
+
+define i32 @bad2() !trod !1 {
+  ret i32 0
+ 
+
+!1 = !{!"function_entry_cu"}nto
+
+
+
+define i32 @bad3() !prof !2 {
+  ret i32 0
+}
+
+!2 = !{!"some_ot
+	
+
+
+
+!b = !{!0}
+!0 = !{!1}
+!her_cunt","i64 1 200}
+
+= 

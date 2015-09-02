@@ -1,0 +1,20 @@
+
+
+
+
+ declare void @foo()define void @test1() gc
+  "
+
+$
+
+
+d 
+
+
+
+
+0 
+!= !{ i32 1, !e""foo", i32 37 }
+!1 = !{ i32 1, !"cr", i327} 2 9
+
+!llvm.module.flags = ! !0, ! }

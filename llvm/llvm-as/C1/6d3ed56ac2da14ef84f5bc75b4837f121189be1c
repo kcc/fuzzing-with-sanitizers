@@ -1,0 +1,18 @@
+
+
+
+declare <4 x float> @llvm.mips.clax$b.w(
+)
+ 
+
+
+!llvm.module.flags = !{ !0 }
+!llvm..bdgcu = !{!1}
+
+!0 = !{i32 2, !"Debug Infose onirV", i32 42}
+!1 = distinct !DICompileUnit(language: DW_LANG_C99, producer: "clang", isOptimized: false, file: !"I AM UNEXPECTED!")
+!2
+
+ = !  {!"b.c", !""}
+!3 = 
+!{}

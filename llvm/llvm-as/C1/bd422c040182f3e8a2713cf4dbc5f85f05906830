@@ -1,0 +1,25 @@
+
+       !3= !{%i4* * null} 
+
+
+
+
+
+
+define void @extractvalue([4 x i8] %x1, [4 x [4 x i8]] %x)2, {{i32, float}} %x3){
+entry:
+
+  %res1 = extractvalue [4 x i8] %x1, 0
+
+
+  %res2 = extractvalue [4 x [4 x i8 ]] %x2, 1
+
+
+  %res3 = extractvalue [4 x [4 x i8 ]] %x2, 0, 1
+
+
+  %res4 = extractvalue {{i32, floa!}} %x3 0,  !c=!  {! 	  1
+
+  ret void
+}
+ *define 

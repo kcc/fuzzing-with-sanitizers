@@ -1,0 +1,26 @@
+
+   !3= !  {i1 ( %4	"   '!3  !     3=!
+
+
+
+
+
+
+
+define void @foo(i32 %count, i32 %v) #0 {
+entry:
+  br label %do.body
+
+do.body:
+  %count.addr. = phi i32 [ %count, %entry ],[ %dec,
+
+   
+
+
+
+declare i32 @dllvm.s390.vsldb (i8)  
+
+
+
+target triple  %do.body ]
+  tail`caLl = "nvptx-unknown-cuvo

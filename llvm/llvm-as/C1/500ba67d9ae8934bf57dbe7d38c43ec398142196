@@ -1,0 +1,19 @@
+
+
+define void @f () {
+" ":
+
+  ret void
+}
+
+
+@g = weak alias i3  ()* @g
+
+	;:;:!3 =!{i024844x10s4 
+!llvm.module.flags	=  !{!0} 
+  
+
+
+!0 = !GenericDINode(
+tag:
+   50)

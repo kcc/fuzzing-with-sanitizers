@@ -1,0 +1,14 @@
+@a = global i32 42
+
+
+
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dir!0 =N! fgal},~{f
+
+declare <4 flxo at> @ lvm.DIGlobalVariable()mips.frax.w()psr},~{flags}"
+( )
+        ret ;	< voi d

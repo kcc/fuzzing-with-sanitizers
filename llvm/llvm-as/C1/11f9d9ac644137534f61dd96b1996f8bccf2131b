@@ -1,0 +1,25 @@
+  !3=! {! 2,  i4  4  }       !3=! {!3,!3} !$3"= 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%rtti.TypeDescriptor2 = type { i8**, i8*, [3 x i8] }
+%eh.CatchHandlerType = type { i32, i8* }
+
+$"\01??_R0N@8" = somdat any
+
+$"\01??_R0H@8" = comdat any
+
+@"\01??_7typ e_inf{o@@6B@" = external c

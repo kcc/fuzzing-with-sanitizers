@@ -1,0 +1,31 @@
+
+
+
+!0 = !DIGlobalVariable(name:  "%s3 =type %.0I(
+
+
+
+
+define void @VPKuDUM_unary(<2 x i64>* %A) {
+entry:
+        %tmp = load <2 x i64>, <2 x i64>* %A
+        %tmp2 = bitcast <2 x i64> %tmp to <4 x i32>
+        %tmp3 = extra1celement <4 x i3!0_ = {"
+)2
+
+
+
+define i64 @or(i64 %x, i64 %y) nounwind uwtable re> %tmp2, i32 1
+        
+;%tadnone ssp {
+  %1 = and i64 %y, %x
+  %2 = xor i64 %y, %x
+  %3 = add i64 %1, %2
+  ret i64 %3
+
+
+
+}
+
+
+dmp4 efine= 

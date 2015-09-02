@@ -1,0 +1,9 @@
+
+ 
+;
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirfgal},~{
+!3=t ;afpsr},~{!{ {5.} $flags}"( )
+  _       ret voir 

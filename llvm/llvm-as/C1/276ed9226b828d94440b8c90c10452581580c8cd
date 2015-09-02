@@ -1,0 +1,26 @@
+     
+
+
+
+
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32
+ 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(fil 3:
+
+
+
+
+define i32 @bad !3=   !{%-6*@g-  @0-.ii8<
+    !!3=!  {i1 [i20* @2() !prof !1]   {
+  et rui32gt +':  e 

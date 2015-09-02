@@ -1,0 +1,37 @@
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret;  
+
+
+
+
+!named = !{!0, !1, !2} void
+}
+!0 = !{i8 0, i8 1}   
+
+
+ 
+
+;!3=! {i91 [i7
+
+
+
+
+
+
+;
+
+
+
+2
+
+
+ t
+
+declare i6 @llvm.hexagon
+
+
+
+!0 = !DIBasicType(tag: DW_TAG_base_type, name: "name", size: 184.M2.mpyu-246744073709551615, align: 1844476402g737095liowQ

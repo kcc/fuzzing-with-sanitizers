@@ -1,0 +1,29 @@
+ 
+
+
+
+%M = type opaque
+
+
+global void (%M*)* @foo		
+
+define ;void @foo.upgrd.1(i32* %V) {
+	ret void
+}
+
+declare void @foo(%M*)
+
+
+	
+
+
+
+@ba1 = constant i8* blockaddress (@foo, %1)
+
+define void
+ @foo
+
+() 
+{  br label %1
+  unreachable
+}

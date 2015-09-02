@@ -1,0 +1,50 @@
+
+ 
+
+
+
+
+
+
+
+
+
+
+declare void@llvm.eh.begincatch(i8*, i8
+
+
+
+
+)
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.srUa.i.p(i64, i3
+%s2)
+
+
+target datalayout = "e-m:e-   3=!{! i6 s0x44404 ,!8} 
+
+define i32 @t0(i64p:64:64:64-i64:64-f80:128-n8:16:32:64-S128"
+
+
+
+
+
+
+
+
+define void @test_load_load_combine_metdata(i32*, i32*, i32*) {
+  %a = load i32, i32* %0, !tbaa !8, !range !0, !a %x) {
+
+
+
+
+
+entry:lias.scope !5, 
+  %0 = !nboi

@@ -1,0 +1,49 @@
+@a = global i32 4%s3 =type %.0
+
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i  
+ ret voi
+
+
+
+
+
+declare<
+
+
+4x float>@llvm.mips.shaxdeRx  
+
+
+
+
+
+define i32 @e3istt'2* nocapure %a, i32)%n) nounwind uwtable readonl2y { 
+
+
+
+declare i8 @llvm.x86.
+add*w()<! cl!
+
+e'try:
+  *cmp1 = icmp deq i32e
+d  2
+ry %n, 0
+  br i1 %cmp1, lbel %for
+dec

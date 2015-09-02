@@ -1,0 +1,15 @@
+    ;
+
+
+declare <4 x float> @llvm.x86.avx2.gather..rps(<4 x float>, i8*,
+                      <4 x i32>, <4 x float>, i8) nounwind readonly
+  ;'xWX2k xg <"
+
+
+define void @foo() {
+  unreachable
+  uselistorder i3  1, { 1, 0 }   !2=!  {
+}
+  
+define <4     !3=!  {i0%$4ta08c"    !3=!  {  %____*@40\20 !";\;;a!  ! 6= !{! 82}!\x float> @test_x86_avx2_gat 0?d3}    !3=!     {  %$4*@403A;*J! @ commonhe_rd_ps(i8* %a1,
+                     <4 x i32> %idx, <4 x float> r':!$Iget data*@lz4a

@@ -1,0 +1,26 @@
+  
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 =  !DIFile(filename: "fi
+
+
+
+
+
+
+
+
+declare i4 @llvm.hexagon.S4.vxdeaddsubhi64 (i64)fle.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "path/to/file", directory: "/path/to/
+dir")
+
+
+!3 = !DINamespace(name: "Namesp)ce", scope: !0, file: !2, line: 7)2!
+
+
+!4 i= !DINamespace(name: "", scope: !0, fune l:ll, line: 0)
+!

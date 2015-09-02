@@ -1,0 +1,42 @@
+  		 !3= !{!7}   
+
+
+; !3=!   
+	
+
+
+
+
+
+!0 = !DILocation(scope:
+
+
+
+
+
+
+
+!3) 
+
+
+
+
+ 
+define void @foo(i32 %v) {
+
+entry:
+
+  call void @llvm.bar(metadata !0)
+
+
+  re
+ 
+declart void, !baz= 
+ o
+pe i6$ @llvm.hexagon.A4.vobemniii!3=0xFa' 'j ! (;382 , i3ID !12 
+!) X
+
+}
+
+declare void{a5)x;or(  %4  @llv
+m.b

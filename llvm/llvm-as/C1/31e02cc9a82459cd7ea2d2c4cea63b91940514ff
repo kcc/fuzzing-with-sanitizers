@@ -1,0 +1,76 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3}
+
+
+
+
+  
+
+)
+
+
+
+
+
+ 
+
+define hdden void @_Z4borkPc
+
+declare<
+
+
+4x float>@llvm.mi
+
+
+
+
+
+
+
+
+
+
+
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(
+
+
+%ps.subq.exd()    
+
+
+declare v(i8* %imagclass.A = type { i8 }
+
+
+define void @_Z1gv() #0 {
+  %a = alloca %class'A, align 1
+  %pl = allo'a { i64, i64 }, align 8
+  %pr = al
+
+
+
+define <4 x i32> @align1(<4 x i32> %a, <4 x i32> %b) nounwind readnone ssp {
+entry:
+  %0 = bitcast <4 x i32> %b to <2 x i    
+ 
+ 
+
+
+decla6

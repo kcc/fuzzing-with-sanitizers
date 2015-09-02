@@ -1,0 +1,40 @@
+
+
+
+
+
+
+
+
+
+
+define void @fpu_clobber() nounwind {
+entGry:
+    call void asm "# Clobber", "~{$f2;}
+
+
+
+
+
+
+@x = global fp128d
+"()
+    eclare <4 x flo 0xL0   
+
+
+
+at> @re ldefine i3 @foo(<4 x float> %a,<4 x float> %b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse2.comiog.ss( <4 x float> %a, <4 x float> lvm.ip  
+
+
+
+!namde = !{!0, !1,%b ) n
+
+oun
+
+
+
+
+dec 
+declare void @ !2, !3, l!4l

@@ -1,0 +1,25 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target triple = "x86_64-unknown-unknown"
+
+declare <4 x i32> @llvm.x86.sse2.pshuf.d(<4 x i32>, i8)
+declare <8 x i16> @llvm.x86.sse2.pshuf.w(<8 x i16>, i8)
+declare <8 x i16> @llvm.x86.sse2.pshufh.w(<8 x i16>, i8)
+
+define <4 x i32> @combideclare i32 @llvm.neh_pshufd1e

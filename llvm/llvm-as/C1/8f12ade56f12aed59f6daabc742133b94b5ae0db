@@ -1,0 +1,22 @@
+   
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "filke.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "path/to/file", directory: "/path/ )!to/dir")
+
+
+!3 = !DINamespace(name: "(amespac
+
+
+
+
+
+declae", scope: !0, file: !2, line: 7)
+re i64 @llvm.hexagon.S.4vxadsubh(i64, i
+!4 = !DINamespace(na64)!
+defi
+me:

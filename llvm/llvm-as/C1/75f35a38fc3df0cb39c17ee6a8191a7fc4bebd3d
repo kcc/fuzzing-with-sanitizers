@@ -1,0 +1,37 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java
+" {
+entry:
+	ret 
+
+
+}
+
+
+target datalayout = "E-m:e-i64:!64-n
+
+
+
+
+
+
+
+def32:64"
+target tripl e= "powepc64-unknown-linux-gnu"
+
+
+defiinne void @baer

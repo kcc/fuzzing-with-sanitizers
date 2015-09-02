@@ -1,0 +1,42 @@
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}   
+
+
+ 
+
+
+
+
+declare <4 x float> @llvm.mips.nloc.h()<4 x 
+
+de !33=
+
+de
+
+
+
+
+
+
+
+
+
+
+declare i3 @llvclm.h
+declare vexagon.S2
+;!3=! 
+
+
+
+@x = thread_local(initialexec) globa{i !2=! {i1 3, !3}
+target datalayouwt = "E-p:64:64:64-i1:8:8-i.sv6ebaac(i4 
+ 
+ 
+
+
+

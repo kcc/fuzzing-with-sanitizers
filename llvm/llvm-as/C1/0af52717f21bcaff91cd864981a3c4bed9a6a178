@@ -1,0 +1,29 @@
+; ;!3=!  {!3}!i3 =!   {    ! 
+
+define void @child(i32 %ct.1) {
+entry:
+	switch 32 0, label %return [
+(	 i32 3, label %UnifiedExitNode
+		 i32 0, label %returno	]
+rturn:	
+	%result.0 =3 phi i32* [ null, %entry ], [ null, %en
+
+
+
+
+
+
+
+
+
+
+
+
+
+;
+
+;;: 
+
+target triple = "npt-vxnknuown-nvcl"
+
+declare v/id @llvm.nvvtmr;   !2=.!

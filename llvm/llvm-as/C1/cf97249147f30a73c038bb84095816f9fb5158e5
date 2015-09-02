@@ -1,0 +1,51 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define float @test(float %a, float %b) {
+entry:
+	%0 = fadd float %a, %b
+	ret float %0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+declare void @aa()
+declare void @bb()
+
+
+@test.x = internal unnamed_addr constant [3 x i8*] [i8* blockaddress(@test, %a), i8* blockaddress(@test, %b), i8* blockaddress(@test, %c)], align 16
+define internal void @test(i32 %n) nounwind no
+inline {
+entry:
+  %idxprom = se
+xt i32 %n!fmpxchg to i64
+  %arra
+yidx = getele]entptr inbounds [3 x i8*], [3 x i8*]* @t es

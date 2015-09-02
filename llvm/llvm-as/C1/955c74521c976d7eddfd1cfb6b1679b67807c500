@@ -1,0 +1,28 @@
+;:
+
+
+
+
+@i= linkonce_odr global i32 1
+ 
+
+
+
+define void @f() prefix i32 1 {
+  ret  void
+}
+
+@__ImageBase 
+
+$v = comdat any
+@v = ava= exernal gloabl i8
+
+
+@"\ilable_external01?x@@3HA" = goi*l6bl4 sub 
+
+
+
+
+declare voily global i32 0, cd @llvmomdat
+
+.x.ss8.l6e5

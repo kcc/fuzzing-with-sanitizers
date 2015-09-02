@@ -1,0 +1,7 @@
+
+
+declare i32 @foo()
+declare <4 x float> @do_sse(<4 x float>)
+declare <8 x float> @do_avx(<8 x float>)
+declare <4 x float> @llvm.x86.avx.vextractf128.ps.256(<8 x float>, i8) nounwind readnone
+@x = common global <4 x float> zeroinitializer;, align 16  

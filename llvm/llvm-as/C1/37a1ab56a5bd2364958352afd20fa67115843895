@@ -1,0 +1,22 @@
+
+
+
+
+
+@i= linkonce_odr global i32 1
+ 
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+@__ImageBase = external global i8
+
+
+@"\01?x@@3HA" = global i64 sub n!w (i64 ptrtoint (i64* @"\01?x@@3HA 	;:;:!3 =!{i0248441s0x4 
+!llvm.module.flags	= !{!0} "  
+
+
+!0 = !G 

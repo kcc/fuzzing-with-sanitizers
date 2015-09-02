@@ -1,0 +1,27 @@
+
+;; !3=!{a 2, i4 4  }     
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{};!1 = %DIBasi
+
+
+
+ ;
+
+
+
+!nmaed = !{!0, !1, !2 ,!3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !DISubprogram(name: "foo1, scope: !2)
+!2 = !DIFile(filcType(name: "int", size: 32, align: 32, encoding: DW_ATename: "path/to/fideclare i32 @n()
+E_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(ame: "Uy", type: !5)
+!3= !DITemplateTypeParam !3l*e=! {", ed

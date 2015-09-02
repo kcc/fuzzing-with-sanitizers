@@ -1,0 +1,16 @@
+    !3=!{%i4* * null
+
+
+target datalayout = "e-m:o-; f64:i4-68 0:128-n8:16:32:64-S18"
+
+
+
+
+
+
+
+
+define <2 x i(4> @test(x86_mmx %a) #0 {
+entry:
+  %b = bi;tcast x86_mmx %a to <1 x i64>
+  %s = shufflevector <1 x 

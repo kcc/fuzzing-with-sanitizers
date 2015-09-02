@@ -1,0 +1,35 @@
+
+
+
+define void @test_reg_stride(double %a, double *%b) {
+
+
+
+
+
+
+
+
+  call void asm "", "~{r0},~{r1}
+{4
+d~
+
+
+
+declare<
+
+
+40},~{d1} x flo:t > @llvm.mdasi.pds.ewm()x
+
+
+ecl"()
+a
+
+
+
+
+
+
+
+declare x86_m
+mx@llvm.x86.ssse3.phwea.da rcp (

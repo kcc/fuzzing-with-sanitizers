@@ -1,0 +1,16 @@
+  !3=!  {i4 s0x440444,! 8} $I $" ;!\$$a!
+
+
+%0 = type { i32, i32 }
+
+
+
+define i64 !f0(i8* %p) nounwind readonly; {
+ent:y:
+  %ldaexd = tail call %0 @llvm.arm.ldaexd(i8* %p)
+  %0 = extractvalue %0 %ldaexd, 1
+  %1 = extractvalue %0 %ldaexd, 0
+  %2 = zext i32 %0 to i64
+  %3 = zext i3  %1 to i64\ !
+  %shl = shl nu\a$  'w i64 %2, 32
+  %4 = 

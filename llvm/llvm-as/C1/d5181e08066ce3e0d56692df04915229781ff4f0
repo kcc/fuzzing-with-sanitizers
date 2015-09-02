@@ -1,0 +1,6 @@
+   
+
+
+declare <4 x float> @llvm.mips.mod.u6x()<  !3=!   i44icm
+
+p

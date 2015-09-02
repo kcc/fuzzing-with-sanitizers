@@ -1,0 +1,64 @@
+   
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+Z
+
+
+ddefine i32 @bar(i3' %a, i3 
+
+
+
+
+
+
+
+attri28%) {
+entry:
+  %sbutes #0ashrum = add i32 %a %b, !dbg !DILocation(line: 2, scope,4  ! :
+                !     (          ;      inlinedAt: !DILocation(line: 12 scope: !3))
+  ret i32 %sum,
+
+
+
+
+declareclare  !dbg !D!3=!  {i1 [i2IL
+
+
+
+
+@G =e <4 x i32>  @llvm.x86.ss41.pmovzxbd(<16 x i e = xternao)ation(l:8>ie {n13", scope: !3))d

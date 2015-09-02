@@ -1,0 +1,18 @@
+
+
+
+
+declare void @bar(<1 x fp128>)
+
+define void @foo() {
+  call void @bar (<1 x fp128> <fp128 0xL0000000000002000000000000000001>)
+  ret v
+
+oid
+}
+
+
+
+
+!named = !{!0,
+ !1, 

@@ -1,0 +1,18 @@
+
+	
+
+
+
+    !2=!  {  %$4*@Z48} 
+
+define i32 @test_x
+
+declare void @h(i32, ...)
+define void @86_rdfsba;e_32() {
+  
+  %rds = call' i32 @llvm.x86.rdfsbase.32()
+  ret i32 %res
+}
+declare i32 @llv.x86.I() {
+  %args = alloca inalloca i32
+  call void (i32, ..r

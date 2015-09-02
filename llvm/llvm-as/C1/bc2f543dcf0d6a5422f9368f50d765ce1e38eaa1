@@ -1,0 +1,32 @@
+
+	
+
+
+ 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIBasicType(name: "int", size: 32, align: 32, encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "Ty", type: !5)
+!3 = !DITem
+plateTypeParameter(type:!
+1)! 4 = !DITemplateTyp
+
+eParameter(
+
+
+
+
+declare <2 x i'64> @llvm.ppc.altivec.mxvname: "", type: !1)
+
+
+
+
+!5 = !DITemplateValueParameetrasd(<2(name: "V", type: ! xi 164, 

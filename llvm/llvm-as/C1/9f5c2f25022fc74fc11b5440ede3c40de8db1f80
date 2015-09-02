@@ -1,0 +1,22 @@
+
+target datalayout = "e-p:32:32:32-i64:64:64-i32:32:32-i16:16:16-i1:32:32-f64:64:64-f32:32:32-v64:64:64-v32:32:32-a0:0-n16:32"
+target triple = "hexagon"
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i8* @llvm.hexagon.circ.ldv(i8*, i8*, i32, i32) nounwind
+
+define i32 @test(i16 zeroext %var0, i16* %var1, i16 signext %var2, i
+
+
+define void 16*@ent

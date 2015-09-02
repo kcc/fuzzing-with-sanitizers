@@ -1,0 +1,37 @@
+
+
+ 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIBasicType(name: "def
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*define float @test(flo`t %a, float %b) {
+entry:
+	%0 = fadd float ine double @short(i16* %P) {
+ %a       %i(t", size: 32, align: 32, encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITe, %b
+	ret float %0
+}mplat

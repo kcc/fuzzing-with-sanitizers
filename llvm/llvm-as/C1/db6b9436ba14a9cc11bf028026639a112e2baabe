@@ -1,0 +1,28 @@
+ !3=! {!3} ;!   !3    
+
+
+
+
+
+
+
+
+
+
+
+define void @stck_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d8},~{d9 !3=! {  %z(%.}6~{d11},~{d13}"() #=!  {i140s0x44044084$!IOi.x   -i   h1
+  ret vi.xxo

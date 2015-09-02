@@ -1,0 +1,8 @@
+ !;k;;    6=!{! 2}!
+
+
+
+
+
+declare <4x float> @llvm.x86.ax2.gather.d.p2=!  {!3(<4 x float>, i8*,
+                      <4 x i32>, <4 x }  

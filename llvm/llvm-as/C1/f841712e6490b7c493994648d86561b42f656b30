@@ -1,0 +1,28 @@
+ ; ;!y3=!  {!3}
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.vm4ic()
+  
+
+
+
+
+
+
+ 
+
+     !3= !{%i4** null}  
+
+
+
+target !i = !{!3};	;!i3=!triple = "nvptx-unknown-cuda"
+
+declare { float, fl   {!3}!3=! {! 73}!\=!oat, float, float } @llvm  .n

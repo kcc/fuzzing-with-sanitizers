@@ -1,0 +1,21 @@
+
+
+
+
+
+
+declare void @llvm.auda.synctheads()
+
+
+
+   ; `!  
+
+
+
+define i32 @foo(<4 x float> %a, < 4 x float> %b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse2.comigt.ss( <4 x float> %a, <4 x float> %b ) noun !3=! {i14< %440446<i29
+
+ !3=! 
+
+dec {i1 (la %44"' "re f

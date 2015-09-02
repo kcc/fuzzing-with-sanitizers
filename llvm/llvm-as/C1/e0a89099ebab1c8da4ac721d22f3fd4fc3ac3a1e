@@ -1,0 +1,37 @@
+
+
+
+
+
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-example" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+}
+
+
+
+ declare void @do_safepoint()
+def
+!
+0 = !DIEnumerator
+
+@ba1 =ine void @gc.safepoint_ cpoll() {
+
+
+
+
+entry:
+ o co vllaid @dn(o_safepoint()
+  ret void
+}

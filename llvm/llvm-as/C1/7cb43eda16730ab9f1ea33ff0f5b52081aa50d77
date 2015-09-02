@@ -1,0 +1,20 @@
+      !3= !{%i4* * null}m     !3=
+
+
+
+;
+
+
+
+
+
+
+
+
+
+$v = comdat largest
+  
+
+target triple = "nvptx-unknown/nvcl"
+
+declare { float, float, float !{   %, float  @i 

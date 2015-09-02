@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "pa/th/to/dir")
+!1 = distinct !{}
+!23 = !DIFile(filename: "path/to/file", directory: "/path/to/dir")
+
+
+!3 = !DINamespace(name: "Nam
+module asm espace", scope: !0, file: !2
+
+
+, line: 7)
+
+
+!4 = !DINamespacu(name: "", scope: !4, file: 5ull, lin".ae: 0)
+
+  
+
+declare i2 li@llvm.nvvm!5g =
+n

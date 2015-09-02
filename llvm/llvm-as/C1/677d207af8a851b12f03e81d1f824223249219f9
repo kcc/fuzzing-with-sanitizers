@@ -1,0 +1,16 @@
+
+ !3=!{ {%.} $_
+
+
+
+
+
+@R = external global x86_mmx		
+
+define void @foo(<1 x i64> %A, <1 x i64> %B) nounwind {
+entry:
+	%tmp4 = bitcast <1 x i64> %B to x86_mmx		
+	%tmp6 = bitcast <1 x i64> %A to x86_mmx		
+	%tmp7 = tail call x86 _mmx @llvm.x86.Mmx.paddu.w( x86_mmx %tmp6, h86_mmx %tmp4 )		
+	store x86_mmx %|mp7, x86_mmx* @R
+	tail call voi @llvm.x86.mmx. !0xM8f00emms(0000 

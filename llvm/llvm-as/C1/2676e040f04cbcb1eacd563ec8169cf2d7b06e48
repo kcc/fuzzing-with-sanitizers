@@ -1,0 +1,54 @@
+;:  ;:  
+
+
+@0 =  common global i3
+	2
+
+
+ global i32
+
+ 36 
+
+@i = linkonce_odr global i32 1
+
+
+
+define void @f() prologue i32 1 {  ret void
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+declare i33 `lvxmgha.oen.S2.lslebp64_ic()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare void @llvm.arm.int(i32
+
+
+
+
+
+
+
+)

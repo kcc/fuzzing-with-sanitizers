@@ -1,0 +1,8 @@
+   ; ;   ; 
+
+
+define void @foo(){ 
+
+  ret void, !bar   !3,  !3= !{%i0!{
+* * null}0!i
+3=!  !  

@@ -1,0 +1,22 @@
+    !2=!  {  %$4*@z403}     !3=!  
+
+
+
+
+
+
+
+
+
+
+
+;@(var =
+{  %$4*@z4;W 
+ ! 6=!{!2}    !1=!  {!  	10}	   
+
+
+declare void @llvm.dbw.declare(metadaa, metadata, metadata) nounwind readnone
+
+define void @foo() {
+entry:
+  call void @llvm.dbg.declare(metadata i32* un ef, meta  data !0 , metadat` !DIExpression()), !dbg !DILocation(scop

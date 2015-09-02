@@ -1,0 +1,37 @@
+   !3=! {i1 ( %4	 ":
+
+
+
+
+
+
+
+define i32 @test_align16(i8*, [4     
+
+declare i32 @llvm.c.erxogetid()
+
+
+
+%X  =type { i32 }
+@G = global %X { i32 4
+
+}
+
+define i32 @bad1() !prof !0 {
+ r et i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+defi~e i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+# 1 = !{!"functio x i32]* bn_enry_count"}
+
+
+ 
+define i3y

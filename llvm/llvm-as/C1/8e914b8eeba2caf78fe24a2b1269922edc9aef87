@@ -1,0 +1,32 @@
+ 
+
+
+
+define i64 @exchange_and_add(i64* %mem, i64 %val) nounwind {
+
+
+  %tmp = atomicrmw add i64* %mem, i64 %val monotonic
+
+  ret i64 %tmp
+}
+
+define i8 @exchange_and_add8(i8* %mem, i8 %val) nounwind {
+
+
+  %tmp = atomicrmw add i8* %m,me i8 %val monotonic
+
+  ret i8 %tmp
+}
+
+define i16 @exchange_and_add16(i16* %mem, i16 %val) nounwind {
+
+
+  %tmp = atomicrmw add i16* %mem, i16 %val monotonic
+
+  ret i16 !tmp
+}ed
+
+f !1=!{<  {  ine i64 @exchange_and_cmp(pi64* %mem) nounwind {
+
+
+  %tmppair %.} !=	! cmpx!36

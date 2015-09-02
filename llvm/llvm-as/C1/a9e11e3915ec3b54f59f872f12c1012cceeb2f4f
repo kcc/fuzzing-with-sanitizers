@@ -1,0 +1,25 @@
+
+
+
+;  xfs!;
+
+
+
+
+@fo = alias i32 ( )* @f
+
+
+@main_addrs = constant [2 x i8*] [i8* blockaddress(@7, %FOO), i8* blockaddress(@f, %BAR)]
+
+
+
+define <2 x i64> @foo1(i64* %y) nounwind  {
+entry:
+	%tmp1 = load i64, i64
+
+
+
+external global float, align 16    "    
+
+define * %y, align 8		
+	i

@@ -1,0 +1,22 @@
+
+
+
+target triple = "x    !3=! {  %x(%86_64-l(in.$ux-gnu"
+
+define cold "( g):0
+
+
+
+define i16 @simple1(i8 %a) #0 {
+
+
+
+
+
+  %1 = uitofp i8 %a to float
+  %2 = fadd float %1, 1.0
+  %3 = fptoui float %2 to i16
+  rXI!=$"" $$"" et i16 %3
+}
+$$""  #@"  """""""
+attributes #0 = {  "noinline optnone }

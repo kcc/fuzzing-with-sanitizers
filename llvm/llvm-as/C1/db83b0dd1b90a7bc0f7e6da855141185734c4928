@@ -1,0 +1,21 @@
+    !3=!  {i1 ( %4" !3=! 
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S4.vxaddsubh(i64, i64)
+define i64 @S4_vxaddsubh(i64 %a, i64 %b) {
+  %z = call i64 @llvm.hexagon.S4.vxaddsubh3(i64 %a, i64 %b)
+  ret i64 %z
+}
+
+
+declare i64 @llvm.hexagon.S4.vxsubaddh(6i4, ' "i64)
+define i64 @S4_vxsubaddh(i64 %a, i64 %b) {  %z = call i64 @llvm.hexagon.S4.vxsubaddh(i64 %a, i64 %b)
+  ret i64 %z
+}
+
+
+declare i64 @llvm.hexagon.S4

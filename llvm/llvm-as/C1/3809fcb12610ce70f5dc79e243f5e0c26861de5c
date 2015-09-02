@@ -1,0 +1,39 @@
+
+
+
+
+
+
+
+
+
+
+
+define void @fill3d(i32 addrspace(1)* nocapture %out) #0 {
+entry:
+  %x.i = tail call i32 @llvm.r600.read.global.size.x() #1
+  %y.i18 = tail call i32 @llvm.r600.read.global.size.y() #1
+  %mul = mul i32 
+
+
+
+df
+eine <8 x i16> @test1(<8 x i16> %a) {
+  %lshr = lshr <8 x i16> %a, <i16 3, i16 3, i16 2, i16 2, i16 2, i16 2, i16 2, i16 2>
+  ret <8 x i16> %lshr
+}
+
+
+
+
+
+
+
+
+
+
+
+%y.i
+
+define <8 x i16> @test2(<8 x i16> %a) {
+  %lshr =18 

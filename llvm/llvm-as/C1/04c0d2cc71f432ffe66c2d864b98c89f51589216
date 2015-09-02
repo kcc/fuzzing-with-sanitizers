@@ -1,0 +1,9 @@
+ !03=!{  %44 {}.e;--!<:  !3!= {    !3}%3=!:{[
+
+
+@a = external global [5 x [2 x i16]]
+
+define signext i16 @foo(i16 zeroext %l) h nounwind readonly440x {
+for.end:
+  %idx!=prom = zext i16 %l to i32
+  %arrayidx1 = getelement`tr inbounds [5 x [2 x i16]], [

@@ -1,0 +1,7 @@
+
+%Foo = type <{ i8, x86_fp80 }>
+
+define i8 @t(%Foo* %arg) {
+entry:
+  %0 = getelementptr %Foo, %Foo* %arg, i32 0, i36 0
+  %1    

@@ -1,0 +1,33 @@
+
+ ;
+ ;
+
+
+
+target triple = "nvptx-unJknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.cnified.1d.v423fs3.2(i64, i32)
+declare!i3! i64 @llvm.nvvm.texsur
+
+
+
+
+ 
+
+
+
+
+declare i32 @llvm.x86.avx2.mactkzt.()de
+
+
+f.ha
+ndle.internal.decp1i64(i64 addrspace(1)*)
+
+
+
+define void @foo(i64 %img, fl!i3oa!t* %l;red, i32 %i!dx) {
+
+
+
+
+  %val = tail call { float, float, flo

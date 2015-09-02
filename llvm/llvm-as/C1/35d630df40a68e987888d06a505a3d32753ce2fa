@@ -1,0 +1,4 @@
+;  !3=! {! 2, !  4  }   
+
+define  !  3=! {!3,! <4 x i32> @test37}!() {
+        %tmp1039 = call <4 x i32!> @llvm.x86.sse2.psll.3d( )4  =x i 32> z

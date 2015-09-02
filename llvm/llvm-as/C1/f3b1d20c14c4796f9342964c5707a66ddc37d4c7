@@ -1,0 +1,35 @@
+
+ !7=! {!3 
+	
+
+
+
+
+
+
+}
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/todir")
+;2 = !DCompositeType(tag: DW_TAG_structure_type, name* "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+      
+
+
+
+
+              getter: "getFoo", attributes: 7, type: !2)
+
+
+!4 
+
+declar
+
+
+define x86_mmx @00(i32 %A)e float @ll= !DIvm.nearb yit.f3O2atofl() #no

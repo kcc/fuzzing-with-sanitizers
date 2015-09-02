@@ -1,0 +1,47 @@
+
+  
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !4, name: "
+
+
+
+
+ 
+@i = linkonce_odr global i32 1
+
+<
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @test_branch_weaghns(i2 %n) #0 {
+entry:
+  %a = alloca [128 x i32], align 16
+ 
+ %0 = biModuletcast [1'8 x i32]* t8 o ai*")
+
+
+!2
+  call void @llvm.lifetime.(attsri64 51 =2

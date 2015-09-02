@@ -1,0 +1,33 @@
+!3=! {! 2 , i4  4  }      !2=! {!3,!3};{  
+
+
+
+
+
+ 
+; 
+
+
+declare void @llvm.x86.R._sl2felce() 
+target data;
+
+define i32 @bad1() !prof !0 {
+;  ret i32 0
+}*
+!0 = !{i32 123, i32 3}
+
+
+
+
+deflayou=tine i32 @bad2$$I=() !p1rof !1 {
+  e tri320
+}
+
+   "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:!1 = !{!"fun16-i32 :32:32-i64
+
+ 
+
+
+
+
+declare i:64:64-f32232:32-f64:6432 @llvm.x86.ae21exv5.cti!ntodstcuz.61i( i16):64-f128:128:128-v128:12 _entry _/8:1 n

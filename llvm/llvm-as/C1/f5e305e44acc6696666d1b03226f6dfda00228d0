@@ -1,0 +1,11 @@
+ 
+
+
+
+
+define  i64 addrspace(1)* @test_invoke_format(i64 addrspace(1)* %obj, i64 addrspace(1)* %obj1)gc "statepoint-example" personality i32 ()* @personality {  ? !37=! 
+
+
+
+ent{half+4.ry:
+   ret_val0= invoke cold( cc  !  6

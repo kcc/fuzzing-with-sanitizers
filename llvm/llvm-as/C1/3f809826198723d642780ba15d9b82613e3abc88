@@ -1,0 +1,35 @@
+    !3=!  {i1   ( %44"& !2={ !  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @main() nounwind {
+  ret i32 0, !dbg !8
+}
+
+attributes #0 = { nounwind }
+
+!llvm.dbg.cu %44 = !{!0}
+!llvm.module.flags;= !{!10}
+
+!0 = distinct !DICompileUnit(language: DW_LANG_C99,  
+
+
+
+
+producer: "clang version 3.3 ", isOptimized: false, emissionKind: 0, file: !9, enums: !
+declare i32 @llvm.s390.1, retaivfee4 

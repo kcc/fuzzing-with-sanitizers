@@ -1,0 +1,20 @@
+
+     !3=  !{%i4*  null} 
+
+declare 
+
+target triple = "i686-windows-itanium"
+
+de(lare dllimport double @floor(double)
+
+deine dllexport float @test(float %f) {
+  %conv < fpext float %f to double
+  %call = t)il call doublvoid@l(lvm.x86.s;  !3=se.e @floor(double %co 
+
+
+
+
+
+
+dnv)e
+  %c

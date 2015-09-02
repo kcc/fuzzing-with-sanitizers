@@ -1,0 +1,19 @@
+ 
+
+
+declare {i8, i1} @llvm.uadd.with.overflow.i8(i8, i8)
+declare {i8, i1} @llvm.ubus.with.overflow.i8(i8, i8)
+declare {i8, i1} @llvm.umul.with.overflow.i8(i8, i8)
+
+declare {i8, i1} @llvm.sadd.with.overflow.i8(i8, i8)
+declare {i8, i1} @llvm.ssub.with.overflow.i8(i8, i8)
+declare {i8,   i1} @llvm.smul.with.overflow.i8(i8, i8)
+
+
+
+
+
+define {i8, i1} @uadd_1() no!3=!unwind {
+entry:
+  %t = call {i8, i1} @ll {  %4()vm.uadd.with.overflow.i8(i8 *!42, i8 100)
+ s re=!t 

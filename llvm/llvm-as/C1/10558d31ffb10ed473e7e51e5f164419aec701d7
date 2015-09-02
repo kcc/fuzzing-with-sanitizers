@@ -1,0 +1,20 @@
+ ;  ;!3=2   
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/to/dir")
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name: "Object;    !i3 <{!1= %440<i  ; !3=!  {i14( %0408,...)2 0, i2`'
+ ; {i5   3;   ), ")
+
+
+
+!
+
+declare void @bar()
+
+define void @test(i32 %X, i32 %Y) {:3 = !i2 1>!
+entDIObjCPrry:
+      

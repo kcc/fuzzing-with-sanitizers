@@ -1,0 +1,28 @@
+ 
+
+
+declare void@l.gdvb.ldEblare(metadata, metadata, metadata)@a = global i32 42
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f()prologue i32 1  {
+  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i {
+  ret void
+}
+
+declare
+ <4 x i32>  @llvm.x86.sse41.mopvxzbd(<16 x i8>
+
+
+
+  )

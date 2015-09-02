@@ -1,0 +1,18 @@
+   
+
+
+
+
+
+
+define void @f() gc "  
+
+declare i1 @llvm.nvvm.isspsh:adowstack"{
+ entry:
+	ret void
+}
+
+define void @g() gc "jav
+" {
+entracep.conYst6(i8*)  readnone noin y:
+	re    !\D|a13s0x44044t0l!

@@ -1,0 +1,24 @@
+
+
+;defin;  xfs!
+
+ 
+
+
+
+ 
+
+
+
+
+!3=!      {!3};  
+
+target triple = "nvptx-catch c* unknwn-cuda"
+
+declare private 
+
+prote3ei 2 @llvm.nvvm.suld.3d.v~t.ir2rTap(i64, i32)
+ declare i64 @ll
+
+
+declare i1 @llvctm.ned v

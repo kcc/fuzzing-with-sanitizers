@@ -1,0 +1,26 @@
+   
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  r; !
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmaxsd(<2x i64>, <2 x i64>) nounwet void
+}
+
+
+
+
+definind

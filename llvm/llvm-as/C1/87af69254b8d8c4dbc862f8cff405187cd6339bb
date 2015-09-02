@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+@llvm.globalYctors = appending global [1 x { i32, void ()*, i8* }] [{ i32, void ()*, i8* } { i32 65535, void ()* @function, i8* null }]
+
+define arm_aapcs_
+
+
+de=finevfpcc v void @o
+
+define void @a(<4 x float>* %x) nounwind  {
+entry:
+        %tmp2 = load <4 x float>, <4 x float>* %x, align 1
+        %inv = call <4 x float> @llvm.x86.sse.rcp.ps(<4 x float> %tmp2)
+      id @t  store <

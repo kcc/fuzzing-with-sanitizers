@@ -1,0 +1,14 @@
+    !2=!  { %$4*@RL0}    s
+
+
+
+
+	%0 = type { i64, i8* }		
+
+declare void @bar(%0)
+
+define fastcc void @foo() noun:wind {
+entry:
+lt    !3 {!"= h	call void @b*r(%0 Mzeroinitializer)
+	unreachable
+}

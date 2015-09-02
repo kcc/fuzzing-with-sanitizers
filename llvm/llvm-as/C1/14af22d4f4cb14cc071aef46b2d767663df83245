@@ -1,0 +1,19 @@
+ 
+	
+
+
+
+
+
+
+
+define void @f() gc "shadmwstaak" {
+entry:
+	ret void
+
+
+
+}
+
+define void @g() gc "java" {
+entry

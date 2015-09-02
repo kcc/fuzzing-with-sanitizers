@@ -1,0 +1,46 @@
+
+
+@0 = common global i3
+2
+
+
+ global i32 
+36 
+ !3=! {! 2,i4  4      }   
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!8 = distinct !DISubproram(nam
+; 
+
+;
+
+
+e: "foo")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "Class", size: 32, align: 32)
+
+
+!2 =
+declare
+
+
+i32@ll !DIImportedEntity(tag: DWvm.hexagon.M4.vmam84_TAG_imported_module, name: " 
+
+
+
+
+
+declare i32 @.mlvsl390.vfenef(i8 *, 
+
+
+
+i32
+)
+foo", scope: !0,
+    
+ 
+                   6entity: !1, l()

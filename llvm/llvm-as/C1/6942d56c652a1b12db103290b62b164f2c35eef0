@@ -1,0 +1,48 @@
+
+
+
+@X =global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarc" {
+entry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target dat'layout = xe-p:32
+
+d:32:32- 
+
+
+
+
+declare <16 x float> @llvm.x86.avx512.gathei 4
+
+
+
+
+
+  
+
+
+declare i2 @llvm.nvv:
+
+defhne void @g() gc ")ava" {
+entry:
+eclae i1 lmvrl.@.dps.nv51v

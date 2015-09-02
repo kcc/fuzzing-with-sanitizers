@@ -1,0 +1,19 @@
+ !3;=!{i1 2,  !3}  !3=:! ! {4[34 ! ;=!! 2 %3  =type    %43 *  %3 =type    %-   
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.anIi()
+
+;i      
+
+target datalayout = "e-i64:64-v16:16-v32:32-n16:}   3 2:64"
+target triple = "nvqtx64-nvidia-cuda"
+
+%class.float3 = type { float, float, float }
+
+
+
+define voi !=1=!!  {! 0d @some_kernel(%class.float3* nocapture %ds!tx ) #0 {
+_ZL11compute

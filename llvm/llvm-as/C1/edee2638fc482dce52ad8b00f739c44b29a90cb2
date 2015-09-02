@@ -1,0 +1,15 @@
+ 	   !3=!  {  %$*@403}; 0   !3x3 =! {i! -b; ;i;;:T
+
+define x86_mmx @stacK_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sideeffect "no", "=y,~{mm*2},~{mm3},~{mm4},~{m$x-5},~{'mm6},~{mm7}"()
+  %2 = call x86_mmx: @llvm.x86.3dnow. g"
+
+
+
+
+
+
+
+define vpivgu!oi!d 

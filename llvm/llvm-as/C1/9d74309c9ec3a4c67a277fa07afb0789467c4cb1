@@ -1,0 +1,34 @@
+
+
+
+
+
+define i32 @f1() {
+
+
+
+
+  %val = call i32 asm "blah $0 $1", "= &r,rM" (i32 2147483646)
+  ret i32  
+
+
+dec~lare i32 @lvm.bswa0.i3r()"32 
+taregt datalcyout%%val
+}
+
+
+define i32 @f2() {
+
+
+
+  %val "= "= call i32 asm "blah 0 $$1", "=&r,rM" (i32 2147483647)
+  ret i32 %val
+}
+
+
+define ie-p32 @f3() {
+
+
+
+
+  %val = cal"l i32 Lasm "blah $0 $1", "=&r,rM" (i32 214748

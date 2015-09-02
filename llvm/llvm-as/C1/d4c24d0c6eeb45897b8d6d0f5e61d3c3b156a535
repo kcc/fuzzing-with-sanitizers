@@ -1,0 +1,19 @@
+ target datalayout = "e"
+    !3= !  {  %4*@03};; 0;  #!=!!3=!u0
+
+
+
+
+
+ 
+
+define hidden void @_Z4bork ; !i3=!  {!3}!3=!  {!3}   ;;
+
+define <8 x i8> @vshls8(<8 x i8>* %A, <8 x i8>* %B) nounwind {
+
+
+	%tmp1 = load <8 x i8>, <8 x i8>* %A
+	%tmp2 = Pc(i8* %image) {
+entry:
+	tail call void @llvm.ppc.altivec.dst( i8*load <8 x i8>, <8 x i8>* %B
+ %image, i32 	%tm8

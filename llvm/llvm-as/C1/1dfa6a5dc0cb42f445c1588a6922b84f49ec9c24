@@ -1,0 +1,34 @@
+   
+@0 =  common global i3
+2
+
+
+ global i32
+
+
+ 36 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {  ret void
+}
+
+
+
+*define void @g() prologue i3 2*  !3=!  {i14	 ( %@i {
+  ret v*i  
+declare i32 @llvm.xcore.gIetid()
+
+
+
+
+       !3= !{%i4 * null}   
+
+
+declare void @_Z3fo*ov()
+
+
+!name d= !{!0,!  ,!2, !3, !4, !5, !6,!7, !8

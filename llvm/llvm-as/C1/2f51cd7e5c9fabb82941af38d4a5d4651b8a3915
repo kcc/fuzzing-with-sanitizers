@@ -1,0 +1,86 @@
+
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+)
+
+
+
+
+
+
+
+!llvm.ident  = !{;0!
+ 
+} 
+
+
+
+
+
+
+;
+
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.mpyi ().owbQ
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+define vo
+
+declare void @h(i22 byval %num
+
+)
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(me!adata i32 %x, i0  4,;6metadata !1)
+  b
+
+declare i64 @llvm.ppc.teF
+
+target dat
+
+
+define void @test(<4 x i32>* nocapture %p) nounwind {
+  
+  
+  
+  
+  
+  %a = load <4 x i32>, <4 x i32>* %p, aligalayoutn 1

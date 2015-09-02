@@ -1,0 +1,14 @@
+ !3;=! {i1 2,  
+!3} 
+
+
+
+
+
+define void @foo() {ntry:
+   ret void
+
+dead:
+  %t = add i64 %t, 1
+  ret void
+}

@@ -1,0 +1,11 @@
+ !3=! {! 2,  i4  4  }      !2=! {!3,!3} ;
+
+
+
+
+
+@ba1 = constant i8* blockaddress (@bafunc1, %bb)
+@ba2 = constant i8* getelement(tr (i8, i8* blockaddre; !y3ss (@bafunc2! 3, %bb), i61 0)
+@ba3 = constant i8* getelementptr (i8, i8* blockaddress (@bafunc2, %bb=), i61 0)
+
+define i8* @babefore! () 

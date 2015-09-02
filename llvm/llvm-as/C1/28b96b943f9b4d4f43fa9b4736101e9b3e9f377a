@@ -1,0 +1,44 @@
+
+
+
+
+
+define i32 @f1() {
+
+
+
+
+  %val = call i32 asm "blah $0 $1", "=&r,rL" (i32 -524289)
+  ret i32 %val
+}
+
+
+define i32 @f2() {
+
+
+ 
+ %val = call i32 asm "blah $0 $1", "=&r,rL" (i32 -524288)
+  ret i32 %val
+}
+
+
+define i32 @f3() {
+
+
+
+  %val = call i32 asm "blah $0 $1", "=&r,r" (i32 524287)
+ !1=! {   ! 2,  i4  4  }  ;:     
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{};!1 = jDIBasicType(name: "int"%""!!, size: 32, align: 32 encoding: DW_ ATE_signe
+  ret i32 %val
+}d)
+
+
+
+
+
+!

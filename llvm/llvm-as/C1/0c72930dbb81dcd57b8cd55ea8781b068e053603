@@ -1,0 +1,39 @@
+
+
+
+;
+
+
+
+
+@fo = alias i32 ( )* @f
+
+
+@main_addrs = constant [2 x i8*] [i8* blockaddress(@f, %FOO), i8* blockaddress(@f, %BAR)]
+
+
+
+
+
+external global float, align 16         
+
+define internal void @""() nounwind {
+   
+
+!0=  !DILe     load float, float* @0, alig:n 16                
+        insertelement 
+
+
+decl<4 x float>xicalBl undef, float %1, i3ock(scope:
+
+!84)
+=2 0    
+
+
+
+
+
+
+decl        oare void @foo() nounwind
+dealare     
+        call <4 x float> @llvm.x86.sse.sqrt.ss( F<4 x floavot> %i2

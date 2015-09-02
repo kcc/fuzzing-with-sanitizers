@@ -1,0 +1,35 @@
+
+
+
+@X =global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarc" {
+entry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target dat'layout = "e-p:32
+
+d:32:32-i 4:
+
+defhne void @g() gc ")ava" {
+entry:
+eclae i1 @llvm.nvvm.w      !3= !{%i* * null}!\= {!!3} 0.e44  "08404440!	rei vtod
+}64:64-i32:.ppis{a32	!3 =!{i128   4440048040044404484840444s0x44:32cc045008444z08440  

@@ -1,0 +1,23 @@
+define void @foo() {
+entry:
+  ret void
+}
+
+
+
+
+
+
+define <2 x i32*> @test2(<2 x i32*> %a) {
+  %w = getelementptr i32, <2 x i32*> %a, i32 2
+  ret <2 x i32*> %w
+}
+
+
+define <2 x i32*> @test3(i32* %a) {
+  %w = getelementptr i32, i32* %a, <2 x i32> <i32 2, i32 2>
+  ret <2 x i32*> %w
+}
+
+
+

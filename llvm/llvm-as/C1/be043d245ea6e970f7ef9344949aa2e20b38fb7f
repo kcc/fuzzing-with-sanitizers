@@ -1,0 +1,29 @@
+
+
+
+define i32 @get_stack() nounwind {
+entry:
+
+	%sp = call i32 @llvm.read_register.i32(metadata !0)
+  ret i32 %sp
+}
+
+declare i32 @llvm.read_register.i32(metadata) nounwind
+
+!0 = !{!" ;:    
+
+
+declare i32 @:lvm.s29notareg\00"}
+0.vceqwn(i8 *,
+
+
+
+
+declare i32 @llvm.s390.vfen i32)(
+
+
+
+
+!ig)i8 *, i32)
+
+ d(2eclare i16

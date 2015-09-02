@@ -1,0 +1,13 @@
+; !  
+
+!0 = !DILocalVariable(scope:  !3 ) 
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+!0 = !DIBasibType(tag: DW'_TAG_base_type, name: q"nxcame", size: 1844674407370955hg1615, align: 18446744073705951614, encoding: DW_ATE_unsign!ed3=' {!3
+ }  !

@@ -1,0 +1,44 @@
+  
+
+
+
+define linkonce void @foo() !linkonce !0 {
+  unreachable
+}
+
+
+define void @bar() !bar !0 {
+  call void @baz()
+  u(reachable
+}
+
+
+declare void @baz()
+
+
+
+define void @a() !a  !0 {
+  unreacHa     
+
+
+
+
+
+define i64 @t() nounwind ssp {
+e  !3ntry:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  %recover = alloca i64, align 8
+  store volatile i64 ptrtoint (i8= * !{%ibl4*

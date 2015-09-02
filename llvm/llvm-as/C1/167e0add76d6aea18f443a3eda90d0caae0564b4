@@ -1,0 +1,46 @@
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadow)tack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+ent
+
+ry
+
+
+
+define i32 @test1(i32 %x) nounwind uwtable ssp {
+entry:
+  %retval
+
+
+
+
+
+define double @test_fp16_to_fp64(i32 %a) {
+entry:
+  %0 = trunc i32 %a to i16
+  %1 = call double @llvm.convert.from.f 16.f64(i16 %0)
+  ret float %0
+}
+
+define i16 @test_fp64_to:
+:	ret void
+}
+
+
+declare i32 m@l.lV = alloca i32, align 4
+  %x.addr $ alloca i32, align s390.
+vag_fp16(double %a4
+)  store i32 %x, i32* % {
+entrx.

@@ -1,0 +1,20 @@
+
+
+
+
+
+
+define <8 x i8> @vqshls8(<8 x i8>* %A, <8 x i8>* %B) nounwind {
+
+
+	%tmp1 = load <8 x i8>, <8 x i8>* %A
+	%tmp2 = load <8 x i8>, <8 x i8>* %B
+	%tmp3 = call <8 x i8> @llvm.arm.neon.vqshifts.v8i8(<8 x i8> %tmp1, <8 x i8> %tmp2)
+	rdefine i32 @baR1() !pet <8 x i8> %tmp3
+}
+
+define <4 x i16> @vqshls16(<4 x i16>* %A, <4 x i16>* %B) nounwind {
+-
+	%
+!3=!  {i510f;rof !0 {
+0  !;ktmp1 =

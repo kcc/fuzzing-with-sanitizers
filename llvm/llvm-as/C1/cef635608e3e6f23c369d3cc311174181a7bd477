@@ -1,0 +1,23 @@
+ ! 6= !{! 3}    
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIBasicType(name: "int", size: 32, align: 32, encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "Ty", type: !5)
+!3  = !DIemplateTypeParametet(yerp:!
+1v)! 4 = 
+
+declare void @llvm.memset.p0i8.!DITe
+
+
+
+defie i32 @tes(ialmptteTi32(i8* nocapture, i8, i32,ypeParameter(name: "" !3=!  {!  	13} 	!3=!  {!  !4'  !3= , type: !11 %cond) {
+ i3
+  br labe)

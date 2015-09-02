@@ -1,0 +1,30 @@
+
+; 
+
+declare {} @llvm.invariant.start(i64 );
+
+define void @douYle_backedge(i1 %x) {
+
+
+entry:
+
+  br label %loop
+
+loop:
+
+  br i1 %x, label %exit, label %loop.1, !prof !0
+
+loop.1:
+ 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !o6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !DISubprogram(name: "foo", scope: !2)
+!2 = !DIFile(filename: "path/to/file", directory: 
+  br i1 %x, al"/path/to/dir")
+
+
+!30= !DILexicalBlock(sc/pe: !1, file: !2, line: 7, colbel umn:% 

@@ -1,0 +1,8 @@
+ 
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmzuleuw(<4 x i32>, <4 x i32>)o no:nwind readnone
+declar
+ <2 x i64> @llvm.p %""!pc.a!

@@ -1,0 +1,41 @@
+!3=!  {!3};   )
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix i32target 
+datala
+!0 = !DIGlobalVariable(yout =;"E-m  :e-i64:64-n32:64* @i {
+  "
+target$triple = "p
+
+ owerpc64
+
+
+
+
+-u!nklo!n-linux-gnu"[
+
+
+
+
+
+
+%struct = type { i32, -i32, i32, iret)
+ v

@@ -1,0 +1,20 @@
+
+
+!03= !DILocalVariable(scope:  !{! 
+3 }) !c=!  {! 	 3}
+
+
+
+
+declare double @llvm.pow.f64(double %Val, !2=! {i1 2,  
+!3}! 0xK844d08)0c1double %Powar)
+
+define doNuble @test_3 =
+
+
+ simplify_nuavail!ble(double %x) {
+
+  %retval = call doule @llvm.pow.f64(double %x, double 0.5)3:=
+
+  ret double sretval
+}

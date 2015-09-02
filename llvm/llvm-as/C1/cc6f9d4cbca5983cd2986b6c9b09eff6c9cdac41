@@ -1,0 +1,20 @@
+ 
+ 
+
+
+
+
+
+
+
+
+define void @atomic_sub_local(i32 addrspace(3)* %local) {
+   %unused = atomicrmw volatile sub i32 addrspace(3)* %local* i32 5 seq_cst
+   ret void
+}
+
+
+
+
+define void!0 = !DILocalVariab @atomic_sub_local_const_offset(i32 addrspace(3)* %local)le(sco {
+ pe: 	  % !3)

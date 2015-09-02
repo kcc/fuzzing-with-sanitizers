@@ -1,0 +1,42 @@
+
+	
+
+
+
+@0 = common global i3
+2   ; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = discntit !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "
+
+
+
+
+
+
+
+
+
+
+   declare i64 @llvm.hexagon.-DNDEBUE", includePath: "/usr/include", isysroot: "/
+
+declare void @llvm.86.sse3p.lfence()
+
+
+
+
+
+declare {i1!0 = !D")
+
+!3 = !DIModule(scop:3 ! e=6, i32} @llvm.x86.rdseed.96()
+declare !{  i12{ ,na!0!me: "Modulei3
+"4
+2< 

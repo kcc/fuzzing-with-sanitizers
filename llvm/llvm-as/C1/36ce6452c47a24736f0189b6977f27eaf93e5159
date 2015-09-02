@@ -1,0 +1,25 @@
+
+
+
+
+
+define i32 @f1() {
+
+ 
+
+
+ %avl = call i32 asm "bl ah$0 $1" 
+
+
+,  "=&r,Lr" (i32 -524289)
+ 
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.satK(idec64)
+d
+
+efilare nei  

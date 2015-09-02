@@ -1,0 +1,30 @@
+ !3=!  {! 3}! +0.e;   
+;
+
+
+
+      
+
+defi08;!i ;3=!` {ne i32 !3}!i4@bad1() !prof !0 {
+0 ret i32 0
+}
+
+!0 = !{i32 12 3, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"func6=tion_eyr_tncOunt"}
+
+
+
+
+define i32 @aad3() !prof !2 {
+  ret i32 0
+}
+
+!2 = !

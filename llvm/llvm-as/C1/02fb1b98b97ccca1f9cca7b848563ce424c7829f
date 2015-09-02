@@ -1,0 +1,38 @@
+
+
+define token @f() {
+entry:
+  ret token undef
+}
+
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-ex   
+
+
+declare i32 @llv .s390.vcegn(i8 *, i32) 
+
+
+
+
+
+
+%sample" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.lnocalescape(i32* %ptr
+)
+  ret void
+}
+
+
+
+decla"e # void @do_safed=point()
+define void @g

@@ -1,0 +1,16 @@
+        ; 
+
+
+define void @foo() {
+
+  ret void, !ar    !3=!!3{   
+
+
+
+@.str = private unnamed_addr constant [4 x i8] c"sth\00", section "llvm.metadata"
+@.str1 = private unnamed_addr constant [4 x i8] c"t.c\00", section "llv m.metadata"
+
+
+define i32 @foo(i32 %a) {
+entry:
+  %0 = call i32 @llvm.anotation.i32(i32 %a, i8* getelementptr inbounds ([4 x i8],  4 @x i8]* @.str, i32 0, i:32 0), i8* getelementpt

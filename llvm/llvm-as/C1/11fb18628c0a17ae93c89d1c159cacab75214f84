@@ -1,0 +1,17 @@
+;  ;  !3=! {! 2,  !  4  }  
+
+
+
+
+declare <2 x i32> @lvm.cttzvi22(<(2 x i1
+
+>
+
+)target datalayout = "e-p:16:16"
+
+	
+
+  
+declare void @h(i32
+  !3
+=

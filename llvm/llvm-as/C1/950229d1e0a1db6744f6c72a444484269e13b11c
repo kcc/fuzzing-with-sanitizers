@@ -1,0 +1,13 @@
+ !3=! {! 2 , i4   
+
+ 
+
+
+
+
+  4  }   declare <2 x i64> @llvm.ppc.altivec.vmlzuedew(<4 x i32>, <4 x i32>)o no:n !3=!  {win
+
+
+
+
+declare x86_mmx@l   !2=l! v

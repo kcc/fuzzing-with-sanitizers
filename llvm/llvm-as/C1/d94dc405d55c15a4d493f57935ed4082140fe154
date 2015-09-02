@@ -1,0 +1,20 @@
+;f; !3=! {!  2,  i4  4  }       !: =! {!3,!3}  ;:!y37 
+
+
+
+
+ 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinc
+
+
+
+define <2 x i64> @t1(<2 x i64> %x1, i32 %bits) nounwind  {
+entry:
+	%tmp3 = tail call <2 x i64> @llvm.x86.sse .pslli.q( <2 x i64> %x1, i32 %bits ) nounwind rt; !{}d {$0eclar1= !e
+ !DIFile(filename: "eadnone 		
+	ret <2 xpath i64 void @llvm.=/to> %/

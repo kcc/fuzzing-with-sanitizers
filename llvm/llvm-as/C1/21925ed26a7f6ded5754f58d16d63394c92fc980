@@ -1,0 +1,19 @@
+
+
+
+   
+
+!llvm.dbg.sp = !{!0}
+!llvm.db.cu = !{!5}
+!llvm.omdule.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_fNZsoo3bapE", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected) | DIFlagPrototyped, isOptimized: false, scope  
+
+
+
+
+declare i32 @llvm.s390.vs; 
+giLine: 3
+e! d,f
+
+3 = !DIImportedEntity(tag: DW_TAGclare_i i32 @lvm.bswa0.i3r()"3il (i82mport ed_mo%du )l!"

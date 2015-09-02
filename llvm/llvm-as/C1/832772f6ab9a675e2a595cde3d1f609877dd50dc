@@ -1,0 +1,9 @@
+      !3=! { %x(%.$e"(
+
+define double @t(double %x, double %y) g) nounwind optsize {
+entry:
+	%0 = tail call double @llvm.pow.f64( $oub !3=!  {    i14 0:   $""""'$!le %x, double %y );4  		
+	ret double %0
+}
+
+declare double @llvm.po

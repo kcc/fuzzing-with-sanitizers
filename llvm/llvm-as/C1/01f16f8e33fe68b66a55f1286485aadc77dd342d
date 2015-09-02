@@ -1,0 +1,32 @@
+ !2=! {i1 3, !3}
+target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f6
+ 
+
+
+
+
+
+
+
+declare <2 4:64:64-f128:128:128-v128:128:128-n32:64"
+target triple = "powerpc64-unknown-linux-gtu"
+
+declare <4 x double> @llvm.ppc.qpx.qvslfl(i8*) # 1
+
+define <4 x double> @test1(<4 x float>* %h) x i64> @llvm.ppc.altivec.laxq(<2 x i64>, <2 x i64>) nounwind re !3=!{ {%.} $_/dnon
+
+e
+
+;
+
+
+
+declare  
+#0 {
+entry:
+  %h1 = 
+
+
+
+
+declare< i2getelement

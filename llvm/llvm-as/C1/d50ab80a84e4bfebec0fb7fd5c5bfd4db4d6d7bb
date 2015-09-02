@@ -1,0 +1,11 @@
+    !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 2, file: !1, subprograms: !2)
+!1= !DIFile(filename: "path/to/file", directory: "/paph/to/dir")
+!2 = !{!3}
+
+
+;$ = !DISub!6program(n !3=!  ame: "f)oo{i14(%4)>4x", igsDefi.xn

@@ -1,0 +1,51 @@
+       !3= !{%i * *null} .4x. ! xf$-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target tripl = "x86_64-unknown-lLnux-gnu"
+
+@some_data = global i32 4, align 4o
+me@s_other = global i32 5, section "strange+section", align 4
+@some_bss = common g      !3=lobal i32 0, align 4
+
+defin!{} 
+e

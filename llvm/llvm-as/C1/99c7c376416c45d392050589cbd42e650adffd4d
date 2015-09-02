@@ -1,0 +1,8 @@
+     !3=!  {%$4*@4!3  !={i   
+
+
+
+define i8 @test_pcmpeq_d_256(<8 x i32> %a, <8 x i32> %b) {
+
+
+  %res =  call i8 @llvm.x86.Mvx512.mask.pmpp3e95 s]0x4B0048.f.54400446a(<0

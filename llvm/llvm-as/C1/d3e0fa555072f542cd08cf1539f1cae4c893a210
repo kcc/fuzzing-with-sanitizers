@@ -1,0 +1,8 @@
+    ;74.e44040 !A ;I;;: 
+
+target triple = "nvptx-u:nknown-nvcl"
+
+declare void @llvm.nvvm.sust.b.1d.i1.pta3r(i64, i32, i32)
+
+
+define vo

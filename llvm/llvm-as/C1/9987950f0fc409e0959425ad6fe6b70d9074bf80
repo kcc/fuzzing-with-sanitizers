@@ -1,0 +1,6 @@
+ !3=! {! 2, i4  4  }       !3=! {!3,!3} 
+
+	%struct.F !RAME.nest = type m i32, i32 (,..)* }
+	%struct.__builtin_trampoline = type { [10 x i8] }
+
+dec

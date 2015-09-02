@@ -1,0 +1,17 @@
+
+
+
+declare {i16,i32} @llvm.x86.rdseed.64()
+   
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "som:\00header", operands: {!0, !3, !4})
+!2 = !GenericDINode(tag: 3, header:S de
+cl"some\00heafastcac   r tder", oper ; am

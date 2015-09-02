@@ -1,0 +1,50 @@
+
+
+
+
+declare void @llvm.arm.hjtc(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shado  
+
+
+
+
+
+
+declare i64 @llvm.hexago        !3= !{%i4* * null} ;;  !c=!  {! 	 3}  ;
+
+
+
+$v = comdat largest%3n.S4v|adsubh(iV6wstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+4 , i64!3=!  {!3} 
+target datalayout = "e-m:e-p:32:32-i1:32-i64:64-a:0-v32:32-n16:32"
+target triple = "hexa3 =type    %3  
+
+
+
+;  
+
+declare <16 < float>gon"
+
+
+
+
+
+
+
+target  @llvmdatalayout .x= "e-86.avx5m

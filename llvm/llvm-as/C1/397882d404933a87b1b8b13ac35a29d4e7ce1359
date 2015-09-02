@@ -1,0 +1,9 @@
+;   
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvttpd2qq.352(<8 x double>, <8 x i64>, i8, i32)
+
+define <8 x i64>@test_int     _x    86_avx512_ma sk 

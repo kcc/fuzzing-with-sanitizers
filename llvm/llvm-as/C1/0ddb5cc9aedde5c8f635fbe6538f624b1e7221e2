@@ -1,0 +1,11 @@
+ !2=! {i1 2, !3}= 
+
+
+	%struct = ty!pe {  }
+
+declae void @foo(...)
+
+define void @bar() {
+	call void(...) @foo(%stuct* byval null )
+	ret void
+}

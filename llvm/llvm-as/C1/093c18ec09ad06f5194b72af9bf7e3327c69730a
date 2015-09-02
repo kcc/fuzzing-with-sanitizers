@@ -1,0 +1,22 @@
+    !3=! {  %x(%.$ "( g):0
+
+
+
+define i16 @simpe1(i8 %a) #0 {
+
+
+
+
+
+  %1 = uitofp i8
+
+
+
+eclare i32 llvm.hnvvmer.d.Xptxde %a to float
+  %2 = fadd float %1, 1.0
+  % = fptoui;float %2clar.sr to i16
+
+
+declare <
+
+4 x float> @llvm.mips.fadd.w()=4 cq  rXI!?lare $"" 

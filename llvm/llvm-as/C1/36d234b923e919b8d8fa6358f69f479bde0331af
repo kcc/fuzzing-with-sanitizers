@@ -1,0 +1,9 @@
+
+
+define <16 x i16> @test_x86_avx2_pblendw(<16 x i16> %a0, <16 x i16> %a1) {
+  
+  %res = call <16 x i16> @llvm.x86.avx2.pblendw(<16 x i16> %a0, <16 x i16> %a1, i32 7) 
+  ret <16 x i16> %res
+}
+declare <16 x i16> @llvm.x86.avx2.pblendw(<16 x i16>, <16 x i16>, i32	) 
+

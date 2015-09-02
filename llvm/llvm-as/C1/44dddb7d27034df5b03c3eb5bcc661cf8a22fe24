@@ -1,0 +1,9 @@
+
+
+
+define void @foo() {
+  unreachable
+  uselistorder i3  1, { 1, 0 }   !2=!  {
+}
+  %$4target data*@lz4ayout = "a:"
+0}

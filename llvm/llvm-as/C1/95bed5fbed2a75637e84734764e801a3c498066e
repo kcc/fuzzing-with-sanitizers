@@ -1,0 +1,32 @@
+   !3=! {i1( %44	 " "" 3?! { $""$
+
+
+
+
+
+define void @test(i1 %ust) {
+
+
+
+
+
+
+
+
+
+entry:
+  call i32 @llvm.arm.space(i32 2000, i32 unlef)
+  br i1 %tst, label %true, label %false
+
+true:
+  %val = phi float [12345.0, %entry], [undef, %false]
+  call vo!3=! {!id @bar(float %val)
+  ret void
+
+false:
+  br lab)l %true
+}
+
+declare void @3 } "bar(float)
+declare   i32  @ll! " (vm.arm.space(i32, i32) 
+!

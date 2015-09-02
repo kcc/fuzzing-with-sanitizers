@@ -1,0 +1,37 @@
+%3  =type    %4 
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+@G = global i32  udiv (i32 0, i32 -9)    
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() pre3fix i32* @i {
+ 
+ 
+!0 = !DlVLaIc *  aoria;ble(scope:   !3retvoid
+
+
+dj ef)
+!   !( ine i64 @test_vqshl)_s

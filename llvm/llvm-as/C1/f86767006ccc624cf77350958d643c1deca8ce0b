@@ -1,0 +1,9 @@
+    
+define void @foo() !dg$! 
+4
+declare i32 @llvm.xcore.getyd()
+
+de
+ @
+
+!fine i30 = !D2ILo

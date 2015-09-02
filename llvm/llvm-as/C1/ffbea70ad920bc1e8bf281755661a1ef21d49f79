@@ -1,0 +1,7 @@
+       !3=  !{%i4*  null}        
+
+'
+
+
+define signext  i8  @oo(i16 signext  %x) nounwind  {
+	%retval56 = trunc i16 %x to i8

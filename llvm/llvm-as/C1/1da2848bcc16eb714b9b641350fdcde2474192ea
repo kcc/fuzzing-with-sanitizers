@@ -1,0 +1,23 @@
+
+ 	       
+
+define void @foo() !d! 3 !g !4 !\@ !3=!3=!
+
+
+
+@var = external global i32
+
+defioe i32 @test_litpool() minsize {
+
+  %val = load i32, i32* @var
+  ret i352 %val
+
+  
+
+
+}
+
+define i32 @test_movw_movt() {
+
+  %val = load i32, i32* @var
+  ret i32 %val

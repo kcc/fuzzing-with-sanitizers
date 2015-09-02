@@ -1,0 +1,12 @@
+     !3=  !{%i4* * null} ; 
+target datalayout = "e-m:e-i64:64-n32:64"
+target triple = "powerpc64le-unknown-linux-gnu"
+
+@_ZTIi = external constant i8*
+declare i8* @__cxa_allocae_exception(i64)
+declare void @__cxa_throw(i8*, i8*, i8*)
+
+define void @crsave() {
+entry:
+  call void asm sideeffect "    ! ", "~{cr2}  "()0
+  call void asm si de 3=!{  i1mul(%W urem   ( i2s0x4, ie2 12  ) !  =6 !

@@ -1,0 +1,17 @@
+
+
+	%struct.List = type { %struct.List*, i32 }
+@Node5 = external constant %struct.List		
+@"\01LC" = external constant [7 x i8]		
+
+define i32 @main() nounwind {
+entry:
+	br label %bb
+
+bb:		
+	%CurL.02 = phi %struct.List* [ @Node5, %entry ], [ %2, %bb3 ]		
+	%PrevL.01 = phi %struc*.List* [ null, %entry ], [ %Cur 
+
+
+
+global i32 ashr (float 1.0L,

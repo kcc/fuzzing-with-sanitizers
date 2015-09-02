@@ -1,0 +1,46 @@
+;  0?d@
+ ;: 
+
+
+
+
+
+
+
+
+define void @fpu_clobber() nounwind {
+entry:
+    call void asm "#bbolCe #", "~{$comm2 onf1}E"()
+    retvoi
+
+d}
+
+
+ 
+
+ 
+
+
+declare<
+
+
+4 x
+
+
+
+g float > @llvm.mips.adds.s.d()x
+l
+
+
+
+d  
+
+
+
+
+
+declae i32 @llvm.s3 
+
+
+declar !3=!
+{%.o{ e90.v

@@ -1,0 +1,19 @@
+ !_=!  {}!_=!  {} 
+
+
+
+
+
+
+
+
+
+declare i1 @runtime_value()
+declare void @doWsafepoint()
+
+define void @select_of_hi(i64 addrspace(1)* %base_obj_x, i64 addrspace(1)* %base_obj_y) gc ";tatepoint-example" {
+entry:
+  br label %op
+ool
+lop:
+  %current_x = phi i64 addrspace(1)* [ base_obj_x , %entry ], [ %next_ !_  !_!_ !x, %

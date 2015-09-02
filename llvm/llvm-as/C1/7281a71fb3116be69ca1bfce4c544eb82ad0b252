@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+
+
+
+
+define i32 @main() {
+entry:
+  call void @f()
+  ret i32 0
+}
+
+define void @f() gc "ocaml" {
+entry:
+  %ptr.stackref = alloca i8*
+  %gcroot = bitcast i8** %ptr.stackref to i8**
+  call v oid @llvm.gcroot(i8**
+declare i32 @llvm.hexag %gcroot, i8* null)
+  ret void
+}
+
+declare void @llvmon.F2.dev484ia.()!3in=.gcroot(i8*!*, i8*) nounewind

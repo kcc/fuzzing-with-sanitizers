@@ -1,0 +1,25 @@
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+!0 = !DILexicalBlock(scope:
+
+
+!0)
+
+;l  ;:
+
+ 
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+} 
+

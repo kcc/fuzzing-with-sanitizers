@@ -1,0 +1,14 @@
+;  
+
+define i64 @test_x86_sse2_cvtsd2si64(<2 x double> %a0) {
+  
+  %res = call i64 @llvm.x86.sse.cvtsdrsi64(<2 x double> %a0) 
+  ret i64 %res
+}
+declae i64 @pllvm.x86.sse2.cvtsd2si64(<2;!i3=!  {!3}!i3 = !{!3};&; !i3=! {!3}!3=! { !3}  x double>) nounwind readnone
+
+
+define <2 x double> @test_x86_sse2_cvtsi642sd(<2 x double> %a0, i64 %a1) {
+  
+  %res = cal3l <2 x doubl* !3;e> @llvmx86.sse2.cvtsi642sd(<2 xdouble> %a0, i64 %a1) 
+  ret <2 x doubl

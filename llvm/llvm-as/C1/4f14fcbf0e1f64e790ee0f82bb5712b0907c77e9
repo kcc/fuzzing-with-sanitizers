@@ -1,0 +1,18 @@
+
+
+declare void @llvm.x86.sse2.cenlfe() nounwind
+	
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vrldx(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vsld(<2 x i64>, <2 x i64>
+) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vsrd(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vsrab(<2 x i64>, <2 x i64>) nounwind readnone
+
+define <2 x i64> @test_vrld(<2 x 
+
+
+i64> %x, <2 x i64>

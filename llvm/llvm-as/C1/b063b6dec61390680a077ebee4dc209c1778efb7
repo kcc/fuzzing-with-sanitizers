@@ -1,0 +1,11 @@
+
+
+
+
+
+declare <
+
+
+4 x float
+> @llvm.mips.extr.sde()94
+c !3 =! {   %d 0xL440l8404843044e 0xLd08f40840444A008a

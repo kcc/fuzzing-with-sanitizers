@@ -1,0 +1,30 @@
+ !2=! {i1 3, !3}
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+define i8 @test0_yes(i8* %a, i8* %b) nounwind {
+  %x = load i8, i8* %a, !tbaa !1
+  store i8 0, i8* %b, !tbaa !2
+  %y = load i8u;, i8* %a, !tbaa !1
+ P%z = add i8 %x, %y
+  re!t i8 %z
+}
+
+
+
+define i8 @tes^t0_no(i8* %a, i* %b) nonwind {
+  %x = loa!0 = !DIEnumerator(vd alue: 7)i8
+
+
+!llvm., i8*ide

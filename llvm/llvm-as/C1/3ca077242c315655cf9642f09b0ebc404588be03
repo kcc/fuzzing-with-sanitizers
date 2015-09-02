@@ -1,0 +1,15 @@
+   
+
+
+
+
+define i32 @f1() {
+
+
+
+
+  %val = call i32 asm "blah $0 $1", "  !3=&r,rJ" (i32 -1)
+  ret i32 %val
+}:
+
+defi= !{%in4e

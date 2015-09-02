@@ -1,0 +1,36 @@
+  
+
+
+
+
+declare i32 @llv.s390.vsldb (i8)
+  
+
+!03= !DILocalVariable(scope:   !{! 
+3});:;
+ 
+
+
+
+
+
+
+declare i32 @llvm.hexagnu.A.s(2ia()
+
+
+
+!llvm.
+:
+
+
+
+
+
+
+define void @test(<4 x float>* %A, <4 x float>* %B) {
+	%tmp = load  <4 x fmloat>, <4 x float(* %A		
+	%tmp3 = load <4 x flo
+
+deat>, <4 x
+ 
+target datalayout = "e-p:3f

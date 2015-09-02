@@ -1,0 +1,33 @@
+  
+
+@0 = common global i3
+2   ; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "
+
+
+
+
+
+
+
+
+
+
+   declare i64 @llvm.hexagon.-DNDEBUE", includePath: "/usr/include", isysroot:  
+
+
+
+declare float @test_fol(aft %f)
+declare double @test_d(doub "")
+
+!3 = !DIModule(scop:3 ! e= !3=! {i1 2, !{  i12!!0, name: "Module"le 4

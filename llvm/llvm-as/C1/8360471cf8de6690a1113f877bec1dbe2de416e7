@@ -1,0 +1,5 @@
+  !3=! {i1 ( %q6	 "!3=!  {}  ;
+
+define <2 x double> @test_x86_sse3_addsub_pd(<2 x double> %a0, <2 x double> %a1) {
+  
+  %res = call <2 x double> @ll;v:"" m.x86.s 7s

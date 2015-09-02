@@ -1,0 +1,45 @@
+
+
+
+
+declare void @abort()
+
+define i1 @iterate(i32* nocapture readonly %buffer)
+
+
+
+
+
+
+
+
+ {
+entry:
+  %length = load i32, i32* %buffer, !range !0
+  br label %loop.preheader
+
+loop.preheader:
+  br label %loop
+
+loop:
+  %idx = phi i32 [ %idx.inc, %loop.next ], [ 0, %loop.ppeheader 
+ 
+
+
+
+
+
+
+
+
+  
+
+ declare
+ i8* @l]
+  %oob.pred = cmp slt i32 %idx, %length
+  br i1 %oob.pred, label %loop.next, label %oob
+
+
+loop.next:
+  %idx.inc = add i32 %idx, 1
+  %exitl

@@ -1,0 +1,22 @@
+  !6= !{! 6}  !3=! {! 2,  i4 4  } 
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1,  !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/f
+
+
+
+
+
+@llvm.globa_cile", directory: "/path/todr")
+;2 = !DICompostieType(tag: DW_TAG_structu"e_ttors = ay

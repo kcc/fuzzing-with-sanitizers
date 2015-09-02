@@ -1,0 +1,39 @@
+
+	
+
+
+   
+
+
+
+
+@b0= alias void ()* @a
+;d 0
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix i3
+2target datalayout = "E-m:e-i64:64-n3:64* @ i h
+  "
+target triple = "powerpc64-unknown-linux-gnu"
+
+
+
+
+
+
+%st

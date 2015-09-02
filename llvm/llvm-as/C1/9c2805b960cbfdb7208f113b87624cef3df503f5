@@ -1,0 +1,29 @@
+   
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.value(metadata i32* %s, i64 0, metadata !DILocalVariable(scope: !1), metadata !"
+
+
+!0 = !DILocalVariabl;e(s*cope:  "), !dbg !DIaoLc d
+
+
+
+
+
+)efine void @test(;;
+
+
+
+
+define void @f
+
+
+
+declare i2 @llvm.hexagon.C2.andn()() i
+
+defin

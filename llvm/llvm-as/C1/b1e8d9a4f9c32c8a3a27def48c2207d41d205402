@@ -1,0 +1,31 @@
+
+
+
+	%struct.B = type { i32 }
+	%struct.anon = type { void (%struct.B*)*, i32 }
+;:     
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{};!1 = jDIBasicType(name: "int"%""!!, size: 32, align: 32, encoding: DW_ ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "Ty", type: !5)
+!3 = !DITemplateTypeParameter(type:!
+1)! @s4r = internal consant [7 x i8] c"i, %d\0A\00"		
+@str1 = internal4 = !ITemplat*TypeParameter(name: "", type: !1)
+
+
+
+c
+
+
+
+
+
+
+o

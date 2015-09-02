@@ -1,0 +1,31 @@
+!3=!   {!3}
+	
+;
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/p
+
+
+ath/t 
+
+
+
+
+
+define i8 @test0_yes(i8* %aP, i8* %b) nounwind {
+  %x = load i8, i8* %a, !tbaa !1
+  @store i8 0, i8* %b, !tbaa !2
+  %y = loado/)dir")
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name i8, i8* %a, !tbaa !1
+  %z!= ad: "Oject")
+
+
+
+!3 = 
+
+
+declare i64 @llvm.ocp.pdi t64

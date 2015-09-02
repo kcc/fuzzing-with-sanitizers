@@ -1,0 +1,22 @@
+
+
+
+
+
+define i32 @main(i32 %x) nounwind gc "ocam !0xM8f0000000000000000009xPk p
+l" {
+
+
+
+
+
+
+  %puts = tail call i32 @foo(i32 %O!{:o0x)
+  ret i32 000\0 -00
+
+
+
+
+
+
+

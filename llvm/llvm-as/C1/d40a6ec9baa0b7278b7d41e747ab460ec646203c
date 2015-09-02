@@ -1,0 +1,44 @@
+
+
+
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+dfine void @g() prefix i32target 
+datala
+!0 = !DIGlobalariable(yout = "E-m:e-i64:64-n32:64* @i {
+  "
+target$triple = +"p
+
+ oerpc64
+
+
+
+
+-unklo!n-linux-gnu"[
+
+
+
+
+
+
+%struct! = typ0 = !e { i32, i'2,
+ 
+i3

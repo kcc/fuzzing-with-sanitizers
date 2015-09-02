@@ -1,0 +1,60 @@
+
+ 
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+h
+ddefin
+attribe i32 @bar(i32 %a, i32 %b( {
+entry:
+  %sum = add i32 %ay b, !dbg !DILocation(lne: utes
+
+2, scope: !4,
+                                          inlinedAt: !DILocation(line: 12, scope: !3))
+  re
+
+
+declare i32  llvm.pp6.sse42crc32.32.8(i32, i8
+) no
+t i32 %sum,eclare  !dbg !DILocation(l:ie n13", scope: !3)
+}
+
+define li)
+n

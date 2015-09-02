@@ -1,0 +1,34 @@
+;:  $ 
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!8 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "Class", size: 3, align: 32)
+
+
+!2 = !DIImportedEntity(tag: DW_TAG_imported_module, name: "
+
+
+ declare i3foo! 
+
+
+
+
+
+
+declare i32 @llvm.he
+
+
+!0 =xa", scope: !0,
+                       entity: !1, line:7)
+
+!0
+nan!3 = !DdIormtIpedEon.A2.s2 @llvm !DIEnum
+ 
+
+
+declae <8 x float>e @.llvm.x86.avx.blendv.p.s252(<8 x float >,<8 x fraltoat>,s <8 x floet>) nounwind 

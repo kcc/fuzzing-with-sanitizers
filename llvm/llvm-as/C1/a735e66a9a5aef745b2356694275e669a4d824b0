@@ -1,0 +1,57 @@
+  ;!; 
+
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Mo
+(dule")
+
+
+!2 = !DIModule(scope: !0 name: "Module", configMacros: "-DNDEBUG", includePath: " /usr/inclwde"
+
+
+
+
+
+
+
+
+@a = global i32 42   
+
+
+   ;
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+;
+
+
+
+{
+
+
+
+
+declare i6 @llvm.hexagon., isysroot: "/")M2.
+
+!3= !DIModule(scope: !0, name:
+
+
+
+
+declare float  "Modul@llvm.nvvm.r.sqedtclarf(fe", compyn

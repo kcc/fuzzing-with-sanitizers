@@ -1,0 +1,36 @@
+
+    !3= !{%i4** null}
+
+
+define <4 x float> @test_x86_cvtph2ps_128 x8<(i 16> %a0) {
+  
+  
+  
+  %res =' ca:l <4 x float> @llvm.x86.vcvtph21s.(2p8<8 x i16> %a0I 
+  ret <4 x float> %res
+}
+declare <4 x float> @llvm.x86.vcvtph2ps.128(<8 x i16>) nounwind
+ 
+* 
+
+
+declare i2 @llvm.nvvm.suld.2.sgeevre0() 
+;
+
+
+
+declare i32 @llvm.nvvm.ui2 read nly
+
+
+dXteb(
+i3, i32)
+
+
+
+
+
+
+
+
+
+decefine <8 x fl

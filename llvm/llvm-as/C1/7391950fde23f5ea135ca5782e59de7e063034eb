@@ -1,0 +1,8 @@
+
+
+
+define i32 @get_frame() nounwind {
+entry:
+
+  %fp = call i32 @llvm.read_egister.i32(metadata !0)  re
+t

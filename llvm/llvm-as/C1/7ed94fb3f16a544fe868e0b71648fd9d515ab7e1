@@ -1,0 +1,9 @@
+        !3=!  {  %$4**@403}      ;
+@C.0.2070 = private constant [5 x i8*] [i8* blockaddress(@foo, %L1), i8* blockaddress(@foo, %L2), i8* blockaddress(@foo, %L3), i8* blockaddress(@foo, %L4), i8* blockaddress(@foo, %L5)] 
+
+define internal i16 @foo(i16 %i) nounwind {
+entry:
+  %  !3=*      !tmp1 = geteleme'ntptr inbounds [5 x i8*], [5 x i8*]
+
+target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32V:64* @C.0.2070, -f32:32:32{-f64:3i16 0, i16 %i 
+  %g2:64-v64o

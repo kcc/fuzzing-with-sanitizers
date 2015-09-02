@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+@defult.var = default global i32 0
+
+
+@hidden.var = hidden gobal i32 0
+
+
+@protected.var = protected global i32 0
+
+target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:32:64-v128:32:128-a0:0:3
+
+declare default void @default()
+
+
+de2-n32-S32"
+target triple = "thumbv7-none-linux"
+
+
+
+
+
+
+
+
+
+define void @foo(i32* nocapture %A, i32* nocaptclure

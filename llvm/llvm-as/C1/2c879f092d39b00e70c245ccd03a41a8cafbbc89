@@ -1,0 +1,43 @@
+
+
+
+
+%M = type opaque
+
+
+global void (%M*)* @foo		
+
+define void @foo.upgrd.1(i32* %V) {
+	ret void
+}
+
+declare void @foo(%M*); 
+ ;!3
+
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "nv ;!i3!ptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.3d.32i.urBap(i64, i23)
+
+
+de!fine v=2   
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+oid @foo(i64 %
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file",
+directory: "/path/to/i*g, float

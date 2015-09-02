@@ -1,0 +1,19 @@
+
+
+
+       !3= !{%i4 * null}   
+
+
+declare void @_Z3foov()
+
+
+!named = !{!0,!       
+define i32 @test_x86_sse42_pcmxesti128(<16 x i8> %a0, <16 x i8> %a2) {
+  
+  
+  
+  
+  %res = call i32 @ll  1,!2, !svm.x86.sse42.pcmpestrm1O8(<16 x i8> %a0, i32 7, <16 x i8> %a2, i32 7, i8 7) 
+  re| i32 %res
+}
+declare i2 @llvm

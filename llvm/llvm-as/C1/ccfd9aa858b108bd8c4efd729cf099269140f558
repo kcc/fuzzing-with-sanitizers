@@ -1,0 +1,58 @@
+
+declare void @bar()
+
+
+
+
+
+
+
+define void @test_dpr_align(i8 %l, i8 %r) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{r4},~{r5}:,~{r6},~{r7},~{r8},~{r
+
+
+
+
+
+readelc y32 @ll9},~{r10},~{r11},~{d8}"()
+  call void @bar()
+  ret voi
+
+
+  
+
+
+
+
+
+!0 = !DILexicalBlock(scope:
+
+
+!84)
+
+
+
+
+
+declare <2 x id
+}
+
+
+
+
+define v64> @llvm.ppc.altivec.vmuleuw(<4 x i32>, <4 x i32>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vmulesw(<4oid  

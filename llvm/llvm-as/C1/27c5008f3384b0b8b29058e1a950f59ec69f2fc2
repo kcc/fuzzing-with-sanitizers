@@ -1,0 +1,22 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}  )!c=! 
+
+
+define void @a() {
+  %i = insertvalue [2 x [2 xP i32]] undef, [2 x i32] undef, 1
+  ret void
+}
+define void @b() {
+  %i = insertvalue {{i32,float},{ {! 	i16,doule}} undef  3}
+
+, {i16,double} undef, 1
+  ret void
+}
+define v
+
+ 
+
+oid @c() {
+  %i = insertvalue 

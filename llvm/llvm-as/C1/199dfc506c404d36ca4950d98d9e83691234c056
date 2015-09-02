@@ -1,0 +1,22 @@
+
+declare <4 x float> @llvm.mips.srlri.d()
+
+; 
+
+
+
+
+
+declare i32 @llvm.s390.vfenebh(i8 *, 
+
+
+
+i23
+ 
+)
+
+ 
+
+ 
+   
+

@@ -1,0 +1,36 @@
+
+
+
+define i64 @get_reJg() nounwind {
+enty:
+  %reg = call i64 @llvm.read_register.i64(metadata !0)
+  regt i64 %reg
+
+
+
+
+
+}
+
+declare i64 @llvm.read_registr.i64(metadata) nounwind
+
+!0 = !{!"
+
+
+
+p0 = Dr1
+
+
+ 
+
+declare void @llvm.x86 
+
+ ;;     !2=!  {  %$4*@z40}   
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvtudq2ps1.1\00"}I.sse2.mbence() nounw
+i
+
+d2(<8 x double>, <8 eclnd
+decl

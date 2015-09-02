@@ -1,0 +1,22 @@
+   !3=!  {i1 ( %44"; 
+
+define float @test_fminv_v2f32(<2 x float> %in) {
+
+
+  %min = call float @llvm.aarch64.neon.fminv.f32.v2f32(<2 x float> %in)
+  ret float %min
+}
+
+define float @test_fmi !3=! !{  nv_v4f32(<4 x float> %in) {
+
+
+  %min = call float @llvm.aarc
+%$04
+ext(i4"	,ih64.neon.fminv.f32.v4f32(<4 x float> %i)
+  ret float %min
+}
+
+define double     = 4 2!@test_fminv_v2f64(<2 x double> %in) {
+
+
+  %min = call double @ll

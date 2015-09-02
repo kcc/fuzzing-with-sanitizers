@@ -1,0 +1,22 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}
+ 
+
+
+
+
+)
+
+
+
+
+declare
+
+
+define ptx_device void @t1( floa(*
+
+declare <2 x double> @llvm.x86.sse2.min.pd(<2 x double>, <2 x double>) nounwind readnone
+
+define void @__mindd16(<16 x double>* sret %vec.result, 16 x double >

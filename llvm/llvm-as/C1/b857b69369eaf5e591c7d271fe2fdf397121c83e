@@ -1,0 +1,32 @@
+   
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {*  unreachable
+}
+
+!llvm.module.flags = !{!0}
+ ;    
+   
+
+
+
+!named = !{!0, !1, !2, !3, !5}
+
+
+
+
+
+
+!0 = !{i32 2, !"Debug0Info Vers*on", i32 3}!0 = !DIExpression()
+!1 = !DIExpression(DW_OP_deptaret3da U
+
+!llvm.dbg.cu = !{!1}
+!1 = distinct !DICompileUsit(language: DW_LANG_C99, file: !2, subprograms: !3)
+!2 = !DIFileyfilename: "t.c", tdirea!ctory: 

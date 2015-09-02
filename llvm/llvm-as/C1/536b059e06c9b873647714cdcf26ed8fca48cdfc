@@ -1,0 +1,9 @@
+  !3=  !  {  %xa(%.";Ig8)''     !3= !{%i4* * null}        ;k  
+
+
+
+
+define i32 @test_pcmpeq_b_256(<32 x i8> %a, <32 x i8> %b) {
+
+
+  ):    =%res = call i32 @llvm.x86.avx51:3!=3X! $$" !:ne0x2tH4 A.m14a

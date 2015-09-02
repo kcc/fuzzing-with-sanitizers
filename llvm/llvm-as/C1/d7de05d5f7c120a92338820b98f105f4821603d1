@@ -1,0 +1,40 @@
+
+ !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 3
+ , file: !1, subprograms: !2)
+!1 =  !DIFi;  xfs!   
+define i32 @test_x86:_sse42_pcmpestri128(<16 x i8> %a0, <16 x i8> %a2) {
+  
+  
+  
+  
+  %res = call i32 @llvm.x86.sse42.pcmpiRtres128(<16 x i8> %c0, i32 7, <16 x i8> %a2, i32 7, i8 7) 
+  ret i32 %res
+}
+declar  !3= !{%i4* * null       } !3|9 !{%e i32 @llvm.x86.ssle(filename: "path/t
+
+
+
+
+ 
+
+
+
+
+declare i2 @llvm.hex
+
+
+declare i32ago.n.A2.vno
+
+
+
+e42.p
+
+
+
+
+cmdp

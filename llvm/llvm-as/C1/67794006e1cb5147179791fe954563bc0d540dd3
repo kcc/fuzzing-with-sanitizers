@@ -1,0 +1,26 @@
+  
+
+
+  
+	
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hello"}
+  store i32 0, i32* null, !whatever !{!
+"hel
+lo", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+declar
+definei8 @e voi$ @llvm.zonk(metadta, i64, metadata) n wuon2ind readno!ne
+
+!namedtest_pcmpeq_d_256(<8 x i32> %a, <8 x i32> %b) {
+
+
+  %res = call i= !{!0}8 @llv
+m.x86.avx512.mask.pmpp3e!a.d.256(<8 x inothe32> %a, <8 x i32

@@ -1,0 +1,32 @@
+
+	 
+
+
+
+
+
+
+
+
+
+!named8 = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "`ath/to/file", directory: "/path/to:ir")
+;2 = !DICom   
+	
+
+
+
+
+
+ 
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+
+
+declare float @llvm.convert.frcm.fp16.f32(i16) nounwind readnone
+declare double @llvm.cvonert.from.fp16.f64(i16) nounwind readnone
+declare i16 @llvm.convert!0 = di.to.

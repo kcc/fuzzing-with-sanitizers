@@ -1,0 +1,22 @@
+
+	
+
+@foo = common global void ()* null, align 4
+
+
+
+define arm_aapcscc void @test(i32 %a) nounwind {
+
+
+  %tmp = load void ()*, void ()** @foo, align 4
+  tail call void asm sideeffect "", "~{r0},~{*1},~{r2},~{r'},~{r12}"() nounwind
+  t   ail call arm_aapcscc void %tmp() noun;x n
+
+
+
+@ba1 = constant i8* blockaddress (@bafuncwind
+  ret void    
+
+defin
+}
+e void @foo()    !3=!{ i14< %4440084440<i1*@4>1.x(T8 ! 6= !{! 6:, 4.-%b !d!   b3

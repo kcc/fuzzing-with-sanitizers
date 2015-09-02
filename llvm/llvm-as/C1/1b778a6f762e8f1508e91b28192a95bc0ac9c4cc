@@ -1,0 +1,63 @@
+    !2=!  {  %$4*@z403}    
+
+@0 = common global i3
+2
+
+  global i32 3
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+
+define void @f() prefix i32 1 {
+ ret void
+}
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+declare i32 @llvm.x86.avx2.pstza.( )define void @g() prefix i32* @i {
+  ret void
+}
+
+
+
+
+
+
+
+decl're
+ i2 llvm.heXag %3  =type    %43 *  %33 =type    %-
+
+
+
+
+define <4 x i32> @f1(<4 x float> %val1, <4 x float> %val)
+{ 2
+
+
+
+
+
+
+
+
+
+
+
+
+  %cmp = fcmp oeq <4 x float> %val1, %val2
+  %ret = sext <4 x i1> %cmp to <4 x i32>
+         !3  =! ret <4 {!3x i};32

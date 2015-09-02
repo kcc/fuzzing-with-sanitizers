@@ -1,0 +1,23 @@
+   
+
+;define       
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+   ! 6= !{!3    } 
+ 
+
+
+         !3= !{%I4* * null}     
+
+
+global i64 -922 
+
+declare <6 x float> @llvm.x86.avx512.mask3.vfmad0.
+
+define i0 @bad2() spd5!

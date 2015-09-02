@@ -1,0 +1,26 @@
+ 
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadow !3=!{ {%.}stack!g;! i" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+entry:
+	r; 
+;decet 
+;are float @:l
+
+fe clare< 
+
+
+4x float>@llvm.mips.subv.f()m2.f3qdhex()
+(

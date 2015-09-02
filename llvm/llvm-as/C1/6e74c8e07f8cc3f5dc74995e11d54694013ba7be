@@ -1,0 +1,50 @@
+
+	
+
+
+
+
+
+
+
+
+
+
+define i8 @test0_yes(i8* %a, i8* %b) nounwind {
+  %x = load i8, i8* %a, !tbaa !1
+  store i8 0, i8* %b, !tbaa !2
+ %y = load i8, i8* %a, !tbaa !1
+  %z = add i8 %x, 
+
+
+   
+
+
+
+
+
+
+ 
+
+
+
+declare i1 @llvm.nvvm.m%y
+  ret i8 %z
+y}
+
+
+
+
+
+
+
+define i64 @f1(i64 *%src) {
+
+
+
+
+  %val = define i8 @test0_no(i8* %a, i8* %b) nonwind {
+ % aepx ons(i8= load*)
+!n !d =t i8
+
+!llvm., i8loq*id atomic i64 , id64 *e

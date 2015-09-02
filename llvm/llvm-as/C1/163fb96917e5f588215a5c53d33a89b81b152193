@@ -1,0 +1,42 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bad1() !prof !0 {
+  
+
+deret i32 0
+}
+
+!0`= !{i32 123, i32 3}
+
+
+
+
+!efine i32 d@a`2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !fine i32 @foo() {ret i32 0
+{!"function}_entry_coun 
+
+
+
+ 
+decl ! 3=!  {i1 [i280*re i32 @ll%m.s390.vfat @5"}
+]n$")(3!3=!  {
+
+
+i5or  ((  !

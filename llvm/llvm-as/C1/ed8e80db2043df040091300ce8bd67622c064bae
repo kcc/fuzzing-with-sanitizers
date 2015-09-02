@@ -1,0 +1,22 @@
+  
+
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-example" {
+
+entry:
+
+
+
+
+   %ptr = alloa i32
+  call void (...) @llvm.localescape(i22* %ptr)
+  ret   !3=! {i1 s0:x4440	,void
+}!4 }
+
+
+
+declare void @do_safepoint()
+(efine void @gc.safe$

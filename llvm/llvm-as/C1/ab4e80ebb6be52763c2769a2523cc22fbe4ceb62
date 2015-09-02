@@ -1,0 +1,30 @@
+
+
+
+declare void @llvm.xcore.setc.p1i8(i8)!3=!  {!1} 
+
+
+
+
+ ;
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+;0 = !DIBasicType(tag: DW_TAG_base_type, name: "name", size: 18446744073709551615, align: 18446744073709551614,0encoding: DW_ATE_unsigned_}har)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, size: 1844674073709551615, align: 1844674074370915514, offset: 846744073709551613)
+!= !D I
+
+
+
+
+
+@llvm_miComp  !!osit 
+
+dec

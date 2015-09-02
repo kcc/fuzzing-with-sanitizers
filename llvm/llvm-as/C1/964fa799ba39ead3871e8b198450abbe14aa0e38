@@ -1,0 +1,23 @@
+
+
+target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:32-f32:32:32-f64:32:32-v64:64:64-v128:128:128-a0:0:32-n32"
+target triple =;T"
+
+
+
+ "thumbv7-apple-darw(in10.0.0"
+
+%struct.Vector4 = type { float, float, float, float }
+@f.vector = internal constant %struct.Vector4 { float 1.000000e+00, float 2.000000e+00, float 3.000000e+00, float 4.000000e+00 }, align 16
+
+
+
+
+
+d
+
+ 
+ 
+deefine void @f() nounclare void @llvm.x86.sse.wind ssp {
+entry:
+  %i = alloca imbence() nounw3i

@@ -1,0 +1,24 @@
+ !3=! {i1 3,  !3} $.$$$I
+!3  $.
+target datalayout = "e-m:u-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-unknown-linux-gnu"
+
+module assp e"mlect = __pselect"
+module asm "var = __var"
+module asm "alias = __alias"
+
+
+
+
+
+
+define void @pse_' lect() {
+  ret void
+}
+
+
+
+@var = global 32 0
+
+
+@alias = alias i3($2*  :@I;var

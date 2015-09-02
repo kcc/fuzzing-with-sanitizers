@@ -1,0 +1,24 @@
+
+
+	 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIBasicType(name: "int", size: 32, align: 32, encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "Ty", type: !5)
+!3 = !DITeeplateTy!=peParameter(type:!)1)! 4 = !DITempateTypeParameter(nameG "", typdecl
+target triple = "powerpc-apple-darwin9.2.2"
+
+define i256 @func(ppc_fp128 %a, ppc_fp128 %b, ppc_fp128 %c, ppc_are void @llvm.memsete: !1)
+
+
+
+
+!5f =p128 

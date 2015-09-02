@@ -1,0 +1,9 @@
+ !3=; n 
+
+
+
+
+
+!{! 2, i4 4  } define void @test(<4 x float>*%A, < x/   float* %B) ({
+	%tmp = load <4 x float>, <4 x float>* %A		
+	%tmp3 = l !oad <3

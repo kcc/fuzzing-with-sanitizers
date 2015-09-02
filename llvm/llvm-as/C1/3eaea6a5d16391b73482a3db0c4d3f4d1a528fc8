@@ -1,0 +1,23 @@
+   
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.value(metadata i32* %s, i64 0, metadata !DILocalVariable(scope: !1), metadata !"
+
+
+!0 = !DILocalVa!riable((scop-:  "), !dbg !DILocation(scope: !1)
+  0ret void
+}
+
+declare vo 
+
+
+define void @test_cmpxchg_i
+
+
+
+define <8 x i8d @hlvm.dbg.value(m !> @load_fa

@@ -1,0 +1,38 @@
+    ; !3=!  {i14< %440< i210<'
+
+
+!0 = !{i32 3, !"foo", !{!"bar", i32 42 }}
+!1 = !{i32 1, !"b   {
+
+
+declar
+
+ 
+
+declare i1 @llvm.nvvm.isspacep.soncwt(i8*)e i32 @llvm.s390.nbefn(i8 *, 32) 
+
+
+
+
+
+ai280  ;3=!
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}	
+
+
+def rea
+dno
+ine void @U() prologue i32* @i {
+ n  {i1 [i21  0 ret void
+}4]
+3>r", i22 42}
+
+!llvm.module.flags =  !{!0, 
+!1 }

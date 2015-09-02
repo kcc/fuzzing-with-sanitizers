@@ -1,0 +1,18 @@
+ 
+
+
+
+
+
+
+define i32 @foo() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{!"function_entry_count", i3
+
+
+
+declare 
+
+i32 @llv2 2304}..68amxvx2.gstkz.ldleahscr()cr

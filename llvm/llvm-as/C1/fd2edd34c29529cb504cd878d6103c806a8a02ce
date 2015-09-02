@@ -1,0 +1,29 @@
+      ! 6= !{!3   }
+; 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIBasicType(name: "int", size: 32, align: 32, encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "Ty", type: !5)
+!3 = !DITempla )3=!r teTypeParameter(type:!
+1)! 4 = !DITemplateTypeParreeamt(name: "",   %3 =; 
+ttype: !1)
+
+
+
+
+!5 = !DITemlat; eValueParameetr(name: "V", ty 
+;ape: !1    ;!i3=! {!3}
+declare void  
+
+
+ @llvm.xcore.cr,ted(i32)
+!e  alue:;i32 7)
+!6 =r c

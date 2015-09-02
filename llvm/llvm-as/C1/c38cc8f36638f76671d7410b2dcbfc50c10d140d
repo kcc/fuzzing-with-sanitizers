@@ -1,0 +1,20 @@
+
+
+
+define void @bar() nounwind {
+	tail call void asm sideeffect "f
+
+
+
+
+
+
+
+
+
+
+declare i64 @lmexvhl.agon.L2.abdeclarespoo ${:uid} ${:uid}", ""() !ounwind
+	ret voi4(;i6;
+d)
+
+}

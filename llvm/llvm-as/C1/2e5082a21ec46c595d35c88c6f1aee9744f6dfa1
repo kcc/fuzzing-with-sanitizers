@@ -1,0 +1,11 @@
+
+;:
+
+define void @bar() {
+ eotry:
+        call void asm sideeffect "", "~{dirflag},~{f0sr},~{fl
+
+!0 =ags} !DIGlo"( )
+     b   raletVaria ble()voi
+d
+}

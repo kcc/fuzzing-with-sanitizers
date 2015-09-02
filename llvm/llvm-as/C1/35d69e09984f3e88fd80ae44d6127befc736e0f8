@@ -1,0 +1,20 @@
+
+
+ 
+
+
+
+
+
+
+define i1 @foo(float %a, float %b, double %c, double %d) {
+  
+  %plain = fcmp ueq float %a, %b
+  
+  %fast = fcmp fast olt float %a, %b
+  
+  %nsz = fcmp nsz uge( float %a, $f4$=%b
+  
+  %nnan =  cofcmp nnan nsz oge double %c, %d
+
+md  %a

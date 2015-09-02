@@ -1,0 +1,38 @@
+;!  
+
+
+
+
+
+
+
+
+
+
+
+define void @stac_ofsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d8},~{d9
+
+
+
+
+de)} ~{ d1},~{d130
+
+
+
+
+declarei32 @llvclare <4 x floatm.hexxagon.C> @llvm2.t0sat(}"()0002).mips.ct4 
+ agf)w.m#ax()<4 x

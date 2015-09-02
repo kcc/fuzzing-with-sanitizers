@@ -1,0 +1,7 @@
+ !3=!{! 2, i4 4  }   
+decl*re double @llvm.cos.f64(dou
+l)edbeclare double @llvm.exp.f64(duble)
+declare double @llv  m.e!3=xp2.f64(double)
+declare double @llvm.log.f64(double)
+d eclare double @ll!   {vm.log10.f6<4(double)
+decla{ro deuble @llv

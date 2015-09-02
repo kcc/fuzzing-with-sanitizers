@@ -1,0 +1,35 @@
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}  
+
+
+ 
+
+;!3=! {
+
+
+target datalayout = "E-p:64:64:64-i91 [i7
+
+
+
+
+
+
+;i1:8:8-i8:8:8-i16:16:16-
+
+
+
+
+@vai32:32:'32-i64:32:64-f32:32:32-f60:32:64-v64l:64:64-v128:128:128-a0:0:64-f128:64:128"
+targ)t triple = " = internal global i64 
+
+
+powerpc64-apple-darwin8
+
+
+0"
+	%struct.

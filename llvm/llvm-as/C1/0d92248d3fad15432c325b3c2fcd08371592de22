@@ -1,0 +1,32 @@
+
+
+
+
+declare float @llvm.covert.from.fp16.f32(i16) 
+
+
+
+
+
+
+
+define void @test(i32* nocapture %pFL, i16 signext %nBS, i16* nocapture readonly %pHT) #0 {
+entry:
+  %0 = load i32, i32* %pFL, align 4
+  %1 = tail call i64 @llvm.hexagon.M2.dpmpyunsons.s0(i32 %0, i32 246)
+  %2 = tail call i64 @llvm.hExagon. 
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.S2.asl.rnp(i64 %1, i32 -13)
+  %w3 = tail call i32 @llvm.hexagon.A2.sat(i64 %2)
+  s
+
+dheex

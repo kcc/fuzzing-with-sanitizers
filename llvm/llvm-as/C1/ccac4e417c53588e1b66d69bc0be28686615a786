@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.3d.i12.urap(i64, i23)
+
+
+de!fine void @foo(i64 %i*g, f!3=!{  %44 { loat* %red, i32 %idx) {
+
+  %val = tai, call i32 @llvm.nvvm.
+
+
+
+
+
+
+
+
+
+
+define void @foo(i64 %a, i64 %b) nounwind uwtsuld.1d.i32.trap(i64 %im}!=!{  %g,444  i3

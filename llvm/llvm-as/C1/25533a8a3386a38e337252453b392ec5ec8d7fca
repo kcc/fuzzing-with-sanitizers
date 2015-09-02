@@ -1,0 +1,46 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "sha;dowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+entry:
+   
+
+
+
+
+
+
+ 
+
+
+
+declare i1 @llvm.nvvm.m	r
+
+declare i32 @strlen(i8*) readonly nounwind
+
+define void @etacepons(test1() {
+  call i32 @strlen( i8* nui8*) void
+}
+ll )
+  ret void
+
+
+
+
+}
+
+defin
+!n
+!d e= ! 

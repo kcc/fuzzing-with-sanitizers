@@ -1,0 +1,43 @@
+
+ ;
+
+
+; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "
+
+
+
+
+
+
+
+
+
+
+   declare i64 @llvm
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.sv6A84ia(.hexagon.-DNDEBUG", inc)
+
+ludePath: "/usr/include", isysroot: "/")
+
+!3=!{ {%.!3 = !DIMod}W% oe(s
+
+
+$
+
+cope:  !3=!{  i1!0,(namtreg: Me

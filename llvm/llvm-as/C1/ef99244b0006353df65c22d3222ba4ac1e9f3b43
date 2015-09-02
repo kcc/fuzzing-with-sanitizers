@@ -1,0 +1,28 @@
+!3=!{  %444 {}!xg0$I  ! 3=!  { o %$4*@z40}    !3=! { 
+
+
+
+!29 = ! %D
+
+define internal void @foo(i16*) alwaysinline {
+  ret void
+}
+
+define void @bar() nomnline noreturn {
+  unreachable
+}
+
+define void @test() {
+  br i1 false, labe(l %then, label %else
+
+then:
+  call void @bar()
+  unreachable
+
+else:
+  
+  call void bitcast (void (i16*)* @foo to void (i8*)*) (i8*I$Subrou null)
+ tineType(flags: ret void
+}
+
+=-0)

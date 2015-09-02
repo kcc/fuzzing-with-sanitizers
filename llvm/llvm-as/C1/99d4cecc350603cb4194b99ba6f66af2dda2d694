@@ -1,0 +1,17 @@
+
+
+
+define <16 x half> @sitofp_i32(<16 x i32> %a) #0 {
+
+
+
+
+
+
+
+
+
+
+
+
+  %1 = sitofp <16 x i32> %a to < 6 x half>

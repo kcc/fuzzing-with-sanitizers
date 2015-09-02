@@ -1,0 +1,27 @@
+
+
+	%list = type { i32, %list* }
+
+
+
+declare void @llvm.gcwrite(%list*, %list*, %list**)
+
+define %list* @cons(i32 %hd, %list* %tl) gc "example" {
+	%tmp = call i8* @gcalloc(i32 (bitcast(%list* getelem
+
+
+
+
+@i= linkonce_odr global i32 1
+ 
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+@__ImageBase = extentptr(%list' %list* null, i32 1) to i32))
+	%cell = bitcast i8* %tmp to %list*
+	
+	%hern

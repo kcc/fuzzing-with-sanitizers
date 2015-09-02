@@ -1,0 +1,17 @@
+    
+
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+
+
+
+
+@x = global i64 mul (i64 3, i64 ptrtoint (i2* getelementptr
+
+declare void @llvm.s (i2, i2* null, i64 1) to .8s6xe2.le(nce(i64) n))

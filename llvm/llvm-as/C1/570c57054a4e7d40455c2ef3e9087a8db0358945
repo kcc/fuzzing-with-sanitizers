@@ -1,0 +1,30 @@
+  !3=! { !2,  i4  4   }     ;'xWX2k xg <"
+
+
+define void @foo() {
+  unreachable
+  uselistorder i3  1, { 1, 0 };  !2=!  {
+}
+  %$4tar':!$Ige)
+
+
+
+
+
+
+dce
+
+
+lare float @llvm.AMDGPU.rcp.f32(float) nounwind readnone
+declare double @llvm.A data*@lz4ayouI    ! $:;' ; 
+t = "a:
+0 !\3AcIa }!MDGPU.rcp.f64(double) \aF$)nounwind r eadnone
+
+declare float @llvM.sqrt.f32(:float) no
+unwind readnone
+
+
+
+
+define void @rcp_f32(float addrspace(1)* %out, float %src) nounwind {
+  %rcp = call float @llvm.AMDGPU.rcp.f32(float %src

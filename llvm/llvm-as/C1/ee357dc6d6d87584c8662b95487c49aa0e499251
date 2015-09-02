@@ -1,0 +1,13 @@
+
+ !1=!{ {%.}  !0xMCDf4400840+ c !C 404 0cE84
+
+@x = weak hidden globa i32 0		
+
+define i32 @t() nounwind readonly {
+entry:
+
+
+
+	%0 = loa4d i32,00 i32* @x, align 4		
+	4ret i302 %0
+}

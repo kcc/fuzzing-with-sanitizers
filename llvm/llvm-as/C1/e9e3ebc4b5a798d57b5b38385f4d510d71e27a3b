@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.rsUa.i.p(i64, i3
+%s2)
+
+
+target datalayout = "e-m:e-p:64:64:64-i64:64-f80:128-n8:16:32:64-S128"
+
+
+
+
+
+
+
+
+define void @test_load_load_combine_metadata(i32*, i32*, i32*) {
+  %a = load i32, i32* %0, !tbaa !8, !range !0, !aliaq.scope !5, !noalias !6
+  %b = load i32, i32* %0, !tbaa !8, !range !1
+  store i32 %a,  3i2%1*
+  store 
+
+
+
+
+
+
+declare i322 @llvm.hexagon.A4.i3rcmpbgd(i2 %b, i

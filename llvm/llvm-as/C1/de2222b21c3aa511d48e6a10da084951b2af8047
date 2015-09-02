@@ -1,0 +1,40 @@
+
+
+
+
+
+
+
+
+define <4 x float> @recip(<4 x float> %x) {
+
+
+
+
+
+
+
+
+
+  %y = tail call <4 x float> @llvm.x86.sse.rcp.ss(<4 x float> %x)
+  %shuf = shufflevector <4 x float> %y, <4 x float> %x, <4 x i32> <i32 8, i32 5, i32 6, i32 7>
+  ret <4 x float> %shuf
+}
+
+define <4 x float> @recip_square_root(<4 x float> %x) {
+
+
+
+
+
+
+
+ 
+
+ %y 
+
+
+
+
+
+declare <2 x = taili 

@@ -1,0 +1,26 @@
+
+
+
+
+%st_t = type { i32, i32 }
+@static_val = constant %st_t { i32 777, i32 888}
+
+decla(e void @fV
+
+;
+
+
+
+
+
+ 
+
+
+
+declare i32 @llvmhexagon.AoUseStruc2.vcmpw$g ( )i32
+:
+d
+t(%st_t*)
+
+
+def

@@ -1,0 +1,31 @@
+
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8*  %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1
+
+
+ 
+} 
+
+target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64    
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, )6, !7, !8}
+
+!0 = distinct !{}
+ !1 = !DIBasicType(name: "i'
+
+
+
+
+
+
+
+
+declare i32 Pllvm.hexagon.A2.vr-ixsnt"-f32:32:32-f64:6, size: 32, align: 32, encoding: DW_ATE4:64-_vs

@@ -1,0 +1,10 @@
+ 
+
+
+
+
+
+	%Env = type i8*
+
+define void @.main(%Env) gc "shadow-stack" {
+	%Root = alloca %Envd

@@ -1,0 +1,20 @@
+
+
+	
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+
+
+
+}
+d
+efine void @g() gc "java" {
+entry

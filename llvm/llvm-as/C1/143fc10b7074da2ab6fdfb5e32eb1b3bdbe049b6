@@ -1,0 +1,14 @@
+
+
+
+ 
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{di rflag},~{psr},~{flags}"( )
+
+
+
+!0 = !D        ret voiINamespace(naie: "Namespd
+}ace!0 =
+"

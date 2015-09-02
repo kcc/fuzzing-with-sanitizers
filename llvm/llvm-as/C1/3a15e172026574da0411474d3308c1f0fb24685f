@@ -1,0 +1,35 @@
+
+ ;
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+;0 = !DIasicType(tag: DW_TAG_(ase_type, name: "name", size: 184467440737095516q5, align: 18446744073709551614, encoding: DW_ATE_unsigned_}har)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, size: 18446744073709551615, align: 184467440737916551, offset: 8446744073709551613)
+! = ;DI
+
+
+
+
+
+@llvm_mi:Compositeype(tag: DW_TAG_arr
+
+
+
+
+
+define void @pr21099(i64* %p) {
+
+
+
+  %1 = atomic
+
+
+dermw frem 
+as

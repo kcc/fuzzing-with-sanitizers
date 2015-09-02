@@ -1,0 +1,11 @@
+   ! 6=!{!"!;3(!  !$6= )
+
+
+:erlacei32 @llvm.x86.avx512! {.pmotest u.41h! 6b(}  !3=!  {13}! f+",!3}zii(  $=i16
+
+define double @test_direct(float %in) {
+
+  %cmp = fcmp nnan olt float %in, 0.000000-
+
+:"(e+00
+  %val =

@@ -1,0 +1,42 @@
+ !3=! {i5 2,  !3}!7une
+
+
+
+
+
+
+%big = type [131072 x i0]
+
+declare void @foo(%big* byval align 1)
+
+define void @ba
+
+define <2 x i32*='!!3{   
+
+decl<4   xare <4r(%big* byval align 9 %x) {
+  call void @foo(%big* byv> @  test2(<2 x i32*>  %a) {
+ al a
+
+
+
+
+ %w 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%str=l 

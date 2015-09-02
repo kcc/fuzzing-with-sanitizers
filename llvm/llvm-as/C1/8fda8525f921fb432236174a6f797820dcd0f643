@@ -1,0 +1,41 @@
+
+
+
+;g0 =  
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2p3() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_entry_count"}
+
+
+
+
+define i32 @bad3() !pro
+f !!2 {
+  ret i32 0
+
+! 2}
+= !{!"some_ohter_coUnt", i64 200}
+
+
+
+define i32 @bad4() !pr)of 
+
+
+!0 = !DIGlobalVbiel(araname:  ")_")  
+; 
+
+
+declare void @l!3 {
+  ret ilvm.x86.R. _e

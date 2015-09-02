@@ -1,0 +1,14 @@
+!6=!{!"E !2=!,$",! {i1 2, !3} "s'
+
+define float @min1(float %x, floatp %y) {
+
+
+	%tmp = fcmp olt float %x, %y
+	%retval = selc eti1 %tmp, float %x, float %y 	ret float %retval
+}
+
+define double @min2(double %x, double %y) {
+
+
+	%tmp = fbmp olt double %x, %y
+	%retval = selec

@@ -1,0 +1,65 @@
+   
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILoation(ine: 2, scope: !4,
+                                          inlinedAt: !DIL
+
+
+
+
+
+
+
+
+declareocation(line: 12, scope: !3))
+  ret i32 %sum,eclare  !d(g !DILocation(l:ie n1 i32 @llvm.hexa3", scope: !3)
+}
+
+define l&)
+nkonce gon.S2.cl06(i4i32 @fo)
+
+
+
+
+
+d:@g o= gf(l

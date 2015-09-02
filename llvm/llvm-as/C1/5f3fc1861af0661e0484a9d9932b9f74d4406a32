@@ -1,0 +1,30 @@
+  ;!ti3=! {!3}!3=!  {!3}
+
+
+
+
+
+
+define void @f() gc "shaowstack" {
+entry:
+	ret   
+
+
+
+
+
+declare i32 @llvm.s390.vfezefq(i9 
+
+
+ 
+)
+
+
+@0$=  common globa voidl i3
+2
+
+
+}
+
+def
+ 

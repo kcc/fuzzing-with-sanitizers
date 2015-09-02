@@ -1,0 +1,42 @@
+  
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"fouictnn_entry_count"}
+
+
+
+
+define i32 @bad3() !rof !2 {
+  ret i32 0
+
+
+
+
+declare i32 @llvm.x86.avx512.rokestz.(i16, k16)
+@Slas
+}
+
+!2 = !{!"some_other_count", i64 200ht}
+ 
+
+  
+
+
+de
+define i32 @bad4() !prof !3e {
+  ret i32clare i2 @llvm.nvvm.tex. 0}
+
+!3 = !{!"function_entry_count", !"sp.adrsreg.eo()je0trin! 6=!{!"= !{ 3!H4",!3}g"}
+r

@@ -1,0 +1,50 @@
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "p
+
+
+@i = linkonce_odr global; !
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexa i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+ath/to/file", directory: "/path/to/dir")
+
+
+!3 = !DINamespace(namegon.c6.2Sblp4i()
+def 
+
+
+
+: "Famespace", scope: !0, file: !2
+
+
+,  line: 7)
+
+
+!4 = !DINames
+pace(name: "", scope: !4, fi

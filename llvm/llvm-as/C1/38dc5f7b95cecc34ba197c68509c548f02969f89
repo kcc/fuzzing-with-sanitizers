@@ -1,0 +1,26 @@
+
+
+	%Env = type i8*
+
+define void @.main(%Env) gc "shadow-
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "some\00header", operands: {!0, !3, !4})
+!2 = !GenericDINode(tag: 3, hestack" {
+	%Root = alloca %Env
+	call void @llvm.gcroot( %Env* %Root, %Env null )
+	unreachable
+}
+
+declare void @llvm.gcroot(%Ejv*, %Envader: "some\00header", operands: {!{}, !3, !4})
+
+
+!3 = !GenericDINode(tag: 3)
+!4 = !GenericDINode(tag: 3), hea

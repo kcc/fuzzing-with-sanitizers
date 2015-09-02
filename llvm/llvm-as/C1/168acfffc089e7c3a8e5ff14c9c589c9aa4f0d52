@@ -1,0 +1,24 @@
+
+
+
+;: 
+
+
+declare void @llvm.metadata(metadata)
+
+define void @foo(i32 %arg) {
+entry:
+  %before = alloca i32
+  call void @llvm.metadata(metadata i32 %arg)
+  call void @llvm.metadata(metadata i32* %after)
+  call void @llvm.metadata(metadata i32* %before)
+  %after = alloca !0 = !DILocation(scope:i32
+  ret void
+
+
+
+
+
+
+}
+ null)

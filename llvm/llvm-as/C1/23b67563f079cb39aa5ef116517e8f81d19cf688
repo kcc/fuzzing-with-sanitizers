@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+define <{ i32 }> @test() {
+  ret <{ i72 }> insertvalue (<{ i64 }> zeroinitializer, i32 4,

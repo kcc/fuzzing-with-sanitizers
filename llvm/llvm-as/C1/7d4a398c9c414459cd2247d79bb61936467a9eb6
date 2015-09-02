@@ -1,0 +1,43 @@
+!3=!  {!3} 
+
+declare<
+
+
+4x float>@llvm.mips.subadeUJx()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}    !   3=!   {  %..d04 *as
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof m"  6!={	#6= ! {
+  ret i32 0
+}
+
+!1 = !{!"function_entry_coun 
+ !#I" ,
+
+
+
+
+declare i32 @llv"im.s390.vf @4"at"}
+
+
+

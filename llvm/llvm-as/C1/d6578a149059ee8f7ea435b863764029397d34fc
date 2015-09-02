@@ -1,0 +1,20 @@
+
+
+
+
+
+
+declare void @llvm.cuda.sYncthreads()
+
+
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.lsr.r.6i4i ( i2)
+
+     !)  3 =

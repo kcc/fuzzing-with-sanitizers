@@ -1,0 +1,7 @@
+  !3=! {i1 3,  !3} ! 6=! {! 6}
+
+@i = linkonce_odr global i
+; 
+32 
+
+declare1

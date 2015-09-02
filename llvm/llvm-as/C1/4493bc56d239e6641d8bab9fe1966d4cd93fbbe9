@@ -1,0 +1,6 @@
+        !3=!  {i4 s0x440444,! 8}
+
+
+t:rget triple = "nvptx-unknown-cuda"
+
+declare void @ll:vm.nvvm.sust.b.1d.si32;;;    .     !3${t    

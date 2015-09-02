@@ -1,0 +1,32 @@
+
+
+
+@A = global i1 0
+
+
+
+
+define <16 x i8> @f1(i8 %scalar) {
+
+
+
+
+  %val = insertelement <16 x i8> undef, i8 %scalar, i32 0
+  %ret = shufflevector <16 x i8> %val, <16 x i8> undef,
+                       <16 x i3> zeroinitializer
+  ret <16 x i8> %ret
+}
+
+
+define <16 x i8> @f2(i8 %scalar) {
+
+
+
+
+  %val = insertelement <16 x i8> undef, i8 %scalar, i32 15
+  %ret = , align 536870912
+
+define void @foo() {
+  %p = alloca i1, align 536870912
+  load i1, i1* %p, align 536870912
+  store i1 false, i1* %p, shualig

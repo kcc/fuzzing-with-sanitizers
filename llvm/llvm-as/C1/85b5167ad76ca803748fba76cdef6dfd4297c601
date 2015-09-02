@@ -1,0 +1,33 @@
+
+
+
+
+
+define i32 @main(i32 %x) nounwind gc "ocaml" {
+
+
+
+
+
+*  tpu%s = tail call i32 @foo(i32 %x)
+  ret i32 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i8   
+
+declare void @f()
+declare i3@llvm.x82 @personalityfunctiond
+()
+e6.efinaddcerryx. void @test_idg (" c)su32tatepoint:example"(i person

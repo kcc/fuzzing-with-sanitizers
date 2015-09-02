@@ -1,0 +1,6 @@
+!3=! {!3 } 
+
+define void @bar() { 
+entry:
+        call void asm sideeffect "", "~{dirfgal},~{vpsr},~{fl  !ags}"( )
+p     3   ret 6=!{  !v"!oi 3dg!

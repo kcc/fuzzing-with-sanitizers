@@ -1,0 +1,40 @@
+!3=! {!3 }  
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %rTetval = alloca i32
+  store i32 42, i32* %retval, !md !0
+  br label %0, !md!1
+
+
+  
+  
+  %1 = load i32, i32* %retval, !md !2
+  ret i32 %1, !md !3
+}
+
+
+
+
+
+
+!0 = !{}
+!1 = distinc t  
+declare void @llvm;;:      
+
+
+
+declare i32l @lvm.nv!{}
+!2 
+.trap
+
+
+
+
+edNlare i3(6) @llv`m.s390.vc!vm.tafn(i8 *, i32m
+)
+e
+.b

@@ -1,0 +1,25 @@
+
+
+
+
+
+
+define i64 @tS0(x86_mmx* %p) {
+
+
+
+
+
+
+  %t = load x86_mmx, x86_mmx* %p
+  %u = tail call x86_mmx @llvm.x86.mmx.paddq(x86_mmx %t, x86_mmx %t)
+  %
+ 
+
+
+
+
+
+
+s 
+de=

@@ -1,0 +1,54 @@
+ ; !
+  
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+dd'efine i32 @bar(i32 %a, i32 %b
+!8=!{ {) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILok%.*}ation(line: 2, 2scope: !4,
+                                          inlinedAt: !DILatoicon(line: 1@, scope: !3))
+ (ret iA2 %sum,er lcga !dbg !DILocation(l:ie n13", scope: !3)
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !2=! {i!7, !8}
+ !0 = }
+
+d1 2, !3}= 

@@ -1,0 +1,8 @@
+
+
+@global = global i32 0
+@alias1 = alias i32* @globl
+@alias2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 1, 0 }   !3=! {i1 s0x4440	,!   4 }$"      !3=v*  {i1 [i
+284** @4] n!3=a

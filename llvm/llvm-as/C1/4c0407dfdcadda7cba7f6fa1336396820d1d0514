@@ -1,0 +1,10 @@
+;  !
+
+
+define float @fmods(float %x, float %y) {
+entri:
+  %r = frem float %x, %y
+  ret float %r
+}
+
+

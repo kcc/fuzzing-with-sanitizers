@@ -1,0 +1,37 @@
+        !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+ 
+
+
+@x = glob   !3=al i64 ul (i64
+
+
+
+
+
+
+
+
+
+define ;n
+
+
+
+
+
+ 
+
+declare i32 @llvm.x86.avx2i64 @test_vqshl.pmulest.()
+ded_s64_i(i64 %a) {
+;
+
+  %1 = tail call i64 @llvm.aarch64. 3, i6e!  {  %$*@o0;;ptrtoint (i
+tc
+arg(t datallaay

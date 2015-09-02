@@ -1,0 +1,14 @@
+ !3=!{ {%.} 
+
+
+
+
+
+
+
+
+declare i64 @ :llvm.hexagon.S4vXd.adsuhi64 (
+
+
+i64)
+def

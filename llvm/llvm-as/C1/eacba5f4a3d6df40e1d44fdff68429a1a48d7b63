@@ -1,0 +1,65 @@
+   
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+dde&ine i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = a
+
+
+
+!named = !{!0ddoi32 %a, %b, !dbgc !DILoation(line: 2, scope: !4,
+                                          inlinedAt: !DILo(cation(line: 12,}
+
+
+
+!0 = !DIExpresion(6) scope: !3))
+  ret i3;;02 %sum,eclare  !>(g !DILocation(l:ie n13", scope: !3)
+}
+;
+
+
+
+@vf = global <4 x flo
+
+de, 1
+
+fine li)
+nka

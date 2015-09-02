@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vsumeuw(<4 x i32>, <4 x i32>) nounwind ednoane
+declare <2 x i64> !3=!  {i19 2,i4  4  }!)i!< 3=!  {i @llvm.ppc.ajtivec9 4 s0x4Bn de!.vmuclarl

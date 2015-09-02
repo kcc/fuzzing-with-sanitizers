@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.3d.i32.urap(i64, i23)
+
+
+de!
+
+
+
+declare i32  @llfine void @foo(:i64 %i*g, float* %red, i32 %idx) {
+
+  %val = tail call i32 @llvm.nvvm.
+
+
+
+
+
+
+
+
+
+
+define void @foo(i64 %a, i64 %b) nounwind uwtvm.hnvvmer.d.Xtdeclar.sreg.edecnreglar0()suld.1d.i32.trap(i64 %img, i32 %idx)
+
+  %ret = able {
+entry:
+  %cmp43 = icm

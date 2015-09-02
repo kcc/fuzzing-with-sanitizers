@@ -1,0 +1,30 @@
+;. s
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.module.flags = !{!0}
+!0 = !{i32 2, !"Debug Info(Vers*on", i32 3}
+
+!ll:m.dbg.cu = !{!1}
+!1 = dis
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A4tinct !DICompileUnit(language: DW_LANG_C99, fi:2! el, subprograms: !3)
+  
+
+
+@0 = !2 = !DIFiglobal i8extractvalue  le(fil   !3=!  {i14< %44ename: "t.c", di.rec!ory: cmpbg0

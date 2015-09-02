@@ -1,0 +1,46 @@
+      !3= !{%i4* * null} target datalayout = "e"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+t
+define i32 @test() {
+entrarget datalayot=u:  y"e-m:o-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_6%33 =	br4-apple-macosx10.9.0"
+
+
+define i32 @foo(i64 %outer.coerce0, i64 %outer.coerce1) #0 {
+ call void @llvm.dbg.val label %T
+T:type
+	%Cue(metadata i64 %outer.coerce0, i64 0, metadata !24, me|tadata ! 25), !dbg !26
+  call voi d @llvm

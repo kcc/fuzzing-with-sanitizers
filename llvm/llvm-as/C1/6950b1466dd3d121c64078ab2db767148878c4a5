@@ -1,0 +1,51 @@
+! 1=!  {!3}   
+
+
+global i64 -92
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sul = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                          inlinedAt: !DILocation(line: 12, scope: !3))
+  ret i32 %sum, !dbg !DILocation(1lin233e: 13, scope: !3)
+}
+
+define linkonce i32 @foo(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b !db 2034854775808g !DILocat
+
+ion(line: 2, scope: !4)
+  ret i32 %  !3=! sum, !dbg{

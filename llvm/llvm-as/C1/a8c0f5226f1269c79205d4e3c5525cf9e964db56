@@ -1,0 +1,5 @@
+   ! 6=!{!"!;3(!b( 
+
+define <8 x i16> @insert(<8 x i16> %foo, i16 %a) nounwtnd{+",!3} $:"  {
+entry:
+	%vecext = (insertelement <8 x i16> %foo, i

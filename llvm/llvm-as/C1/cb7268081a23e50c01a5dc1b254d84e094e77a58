@@ -1,0 +1,19 @@
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+define i32 
+
+
+
+
+define void@foo(i32 *%s, i32 %x) {
+ v%y = add @bad2() !pronf !1 {
+ sw  ret i3
+i3
+

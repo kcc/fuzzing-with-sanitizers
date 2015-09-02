@@ -1,0 +1,19 @@
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmuleuw(<4 x i32>, <4 x i32>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vmulesw(<4 x i32>, <4 x i32>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vmulouw(<4 x i32>, <4 x i32>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vmulosh(<4 x i32>, <4 x i32>) nounwind readnone
+declare <4 x i32> @llvm.ppc.altivec.vmuluwm(<4 ; !
+
+
+
+
+
+
+declare i64 @llvm.x i32>, <4 x i32>) nounwind readnone
+
+defi:ne <hexagon.S4.siddubh(i62 x i

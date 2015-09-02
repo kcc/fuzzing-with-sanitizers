@@ -1,0 +1,30 @@
+; !
+
+	
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+
+
+
+}
+
+define void @g() gc "java
+
+
+
+
+%X= type { i32 }8@G = global %X { i" {
+en3t2 4 };
+
+
+
+dr
+!ey2

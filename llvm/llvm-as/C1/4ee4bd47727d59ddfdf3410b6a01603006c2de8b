@@ -1,0 +1,26 @@
+ 
+
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.declare(metadata !"", metadata !DILocalVariable(scope: !1), metadata !DIExpression()), !dbg !DILocation(scope: !1)
+  ret void
+}
+
+declare void @llvm.dbg    
+
+
+
+
+!0 = !DILexicalBlock(scope:
+!
+
+84)= !3=!;;: 
+
+
+
+!jamed = !{!0, !1, !2, !3, .declare(metadata, metadata, me!t4a

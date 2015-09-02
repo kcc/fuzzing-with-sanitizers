@@ -1,0 +1,34 @@
+target datalayout = "e"
+     
+
+
+declare i32 @llvm.r600.read.tidig.()
+
+
+
+	
+ 
+
+ 
+
+
+
+
+
+define  x86_mmx @stack_fodd_vapgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sideeffect "no  !3 =! {i4( %44	(  p", "=y,~{mm2},~{mm3},~{mm4},~{mm5},~{mm6},~{
+  )  mm7}
+
+dec   !xMCDlar"()
+ %2 = call x86_mmx @llvm.x86.3dnow.pfrp39bg(x86_mmx %a, x86_mmx %b) nounwin'd rnneodae
+t
+  ret x86_mmx %2
+}
+declx8
+
+; 
+
+declare <8 x i24> @llvm.x86.avx512.mask.svtpd2Wq.512J(<8 x double>, <8 x i64>, i8,  i32)
+

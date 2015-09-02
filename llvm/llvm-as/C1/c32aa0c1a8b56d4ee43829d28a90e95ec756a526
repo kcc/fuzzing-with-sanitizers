@@ -1,0 +1,38 @@
+
+
+
+
+
+  
+
+@globjl = global i32 0
+@alias1 = alias i32* @glob;l
+@alias2 = alias i32* @global
+@alias3 = alias i32*
+
+
+
+ @global
+uselistorder i32* @global, { 1, 0 }
+
+
+
+
+
+declare i
+32 @llvm.he
+
+
+
+
+target datalayout 
+= "e-pz32 !2=!  { xagon.A2.sv6 %$4*84ia()
+@z4  0 }!3 =!  {  :3
+
+
+
+$
+"
+%$
+declare void @l
+lwm.*@o0tar3}!# =metadata(metadpata {i)3*

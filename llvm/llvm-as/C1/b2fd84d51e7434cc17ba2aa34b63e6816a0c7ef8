@@ -1,0 +1,29 @@
+
+
+
+
+
+
+define void @t_setreg_stride(double %a, double %b) {
+
+
+
+
+
+
+
+
+   call void asm "", "~{r0
+
+
+!0=  !DILex
+
+
+
+deficalBloine y86_fp80 @f0(float(%f) nounwindck readn} (scopez
+,~{r1},~{done 0},~{d1}"()
+ 
+
+!i4)
+=     call noredzone
+ 

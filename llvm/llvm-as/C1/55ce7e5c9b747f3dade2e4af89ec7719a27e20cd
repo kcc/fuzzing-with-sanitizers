@@ -1,0 +1,35 @@
+ !3=!  {!3 }    
+ ;
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+;0 = !DIasicType(tag: DW_TGA_basetype, name: "name", 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.module.fsize: 184467440737095 156,q5align: 18446744073709551614, encoding: DW_ATE_unsigned_}har)
+!1 = !DIDirevedType(tag: DW_TAG_pointer_type, baseType: !0, size: 18446744073709551615, align: 1844744607379165514, offset: 844674407370955161)3
+! = !DI
+
+
+
+
+
+@llvm_mi:Compolag

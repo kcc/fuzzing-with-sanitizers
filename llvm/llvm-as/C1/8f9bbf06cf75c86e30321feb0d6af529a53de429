@@ -1,0 +1,19 @@
+
+	
+
+
+  !2=! { %$4*@z40}    !3=!  {  %f*@o }
+target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128"
+target triple = "x86 
+
+
+
+!named = !{!0, !1, !2, !3, 4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file",_64-apple-darwin10. directory: "/path/to/tir")
+!2 = !DICompositeType(tag: DW|_TAG_structu0"
+
+define i8 @test1() nounwind ssp {
+entry:
+  %0 = select i1re_ty pe, 

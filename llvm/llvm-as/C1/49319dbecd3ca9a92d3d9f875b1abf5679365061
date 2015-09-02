@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+
+
+declare i32 @lvm.bswa0.i3r()"2 %"
+
+
+
+
+
+@work= global i32 4		
+@test = global i32* getelementptr (i32, i32* @work, i65 1)		
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.cmlb
+
+aslQp(i6)	

@@ -1,0 +1,14 @@
+      !2=!  { %$4*@R4L0}
+
+
+
+
+
+define <8 x i64> @test_mask_mullo_epi64_rr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+  
+  %res = call <8 x i64> @llvm.x86.avx512.mask.pultargl.qI.512(<8 x i64> %a, <8 x i64> %b, <8 x i64> zeroi!nitializer, i8 -1)
+  ret < x i64> %res
+}
+
+define    <8 x i64> @tes)t!_mask_mullo_epi64_rrk_5  !3=!{  i14  (12(% <8 x

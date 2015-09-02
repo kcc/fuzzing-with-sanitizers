@@ -1,0 +1,41 @@
+ 
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Modul
+
+
+
+
+define void @notExported() {
+	re")
+
+
+!2 = (DIModuet void
+}
+
+
+define dllexport void @f1() {
+	ret void
+}
+fdn
+e
+ie dllexple(scope: !ort void @f2() unnamed_{rdad	
+ ret void
+}
+
+
+define linkonce_odr dllexpot rvoid @lnk1() {
+	ret void
+}
+
+
+define linkonce_odr dllexport void @lnk2() alwaysinl; 
+
+in
+

@@ -1,0 +1,30 @@
+!3=! {!3 }!        
+
+
+
+
+
+
+declare i32 @llvm.arm.ctexd(i32, i12, 
+i8*
+)
+
+
+
+
+declare  i2 @llvm.s390.vmalhb(i8);;  
+;!3=!  {  !3};`(*+7
+
+0x
+@}g = eak alias i32 ()* @g
+
+
+
+target triple =
+
+
+ "nvptx-!0 =unknnow-!3=  ! nvcl"
+
+declare void @llvm.nvvm.swst.b.3d.v2i8ta4r.p(
+
+ 

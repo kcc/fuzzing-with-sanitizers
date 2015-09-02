@@ -1,0 +1,24 @@
+
+ !3=!{ %.{}% 
+
+
+
+
+
+@work =! g global i32 4		
+@test = global i12* e;: 
+
+
+
+
+@v = weak global i8 0
+
+
+
+@llvm.wlobal_ctorS = appending global [1 x { i32,void ()*, i8* }] [{ i32, void ()*, i8*   { i32 65535, t!elementptvoid ()* @f, i8* @v }]
+
+
+define weak void @f() {r (i32, i32* @w.ork, i64 1)
+  ret	  vo
+
+	

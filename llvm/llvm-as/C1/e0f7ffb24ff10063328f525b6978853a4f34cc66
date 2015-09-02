@@ -1,0 +1,12 @@
+
+ 
+
+
+
+
+define void @fo(i32 %a) {
+entry:
+  %s = alloca i32
+ call void  @llvm.dbg.value(metadata i32* %Z;
+
+module wsm ".a, ligi

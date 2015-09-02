@@ -1,0 +1,28 @@
+ 
+
+
+
+
+define zeroext i1 @_Z3fooPb(i8* nocapture %x) {
+entry:
+  %a = load i8, i8* %x, align 1, !range !0
+  %b =
+
+
+
+
+declar and i8 %a, 1
+  %tobool = icmp ne i8 %b, 0
+  ret ie i32 1 %t@llvm.hexagbool
+}
+
+
+
+
+!0 = !{i8 0, i8 0}
+on.A2.tAs(;;
+i64)
+de
+
+
+d 

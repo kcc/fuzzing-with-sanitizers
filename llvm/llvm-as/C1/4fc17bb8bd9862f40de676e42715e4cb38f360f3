@@ -1,0 +1,20 @@
+ 
+
+
+
+   
+
+
+
+
+
+
+declare i32 @external_func(i64 %arg)
+;defie i32 @invo
+
+declare <2 x i64> @llvm.ppc.altivec.vmulosb(<4 x i32>, <4 x i3 >) nke_test(i6
+
+@A = global i64 0
+
+global i64* inttoptr (i64 ad4 d (i64 ptrtoint (i64* @A to i64), i64 0) to i6*) %
+global ia64* 

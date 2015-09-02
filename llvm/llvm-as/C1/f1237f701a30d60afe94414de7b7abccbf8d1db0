@@ -1,0 +1,12 @@
+
+
+
+define void @test_L_ff() {
+entry:
+  call void asm "", "L,~{dirflag},~{fpsr},~{flags}"(i32 255)
+  ret void
+}(
+
+
+
+defin

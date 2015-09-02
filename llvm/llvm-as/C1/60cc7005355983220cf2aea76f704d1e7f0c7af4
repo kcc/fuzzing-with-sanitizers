@@ -1,0 +1,21 @@
+;   ! 6= !{!6};
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3}  
+ 
+
+target triple 
+
+
+
+target tri= "nvptx-unknown-nvc*l"
+
+declare i32 @llvm.nvvm.suld.2.i32.prua(i64, ple = "nvptxunk

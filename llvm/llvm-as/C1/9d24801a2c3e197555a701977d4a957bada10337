@@ -1,0 +1,42 @@
+
+
+@0 = common global i3
+0
+
+  global i32 3
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+
+define void @f() prefix i32 1 {
+ ret void
+}
+
+
+
+
+define void @g() prefix i32* @i 
+
+
+!0 = !DISubrange(count:7{
+  ret void
+}
+
+
+
+
+
+
+
+decla
+
+
+
+
+define <4 x i32> @test_xxleqv(<4 x i32re
+ i2 @llvm.> %x, <4 x i32> %y) nounwind {
+       %tmhexagon.M4mp

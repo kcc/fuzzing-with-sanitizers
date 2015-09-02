@@ -1,0 +1,44 @@
+
+	
+
+
+; 
+
+
+
+!namee = !{!0, !1, !6, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIBasicType(name: "inT", size: 32, align:  2, encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "Ty",h type: !5)
+!3 = !DITemplateTypeParameter(type:!
+1
+
+
+
+
+declare { i64, i ,64i64, i64 } @bar1()
+
+def)! 4 = !DITemplateTypeParameine i64 @f1() {
+
+
+
+
+  %mret = call { i64, i64, i64, i64 } @bar1()
+  %ret = eter(name: "", 
+tty
+pe: !1)xtractvalue { i64, i64, i64, i64 } %mret, 3
+  ret i64 %ret
+}
+
+
+d
+
+
+
+
+!5 = !e

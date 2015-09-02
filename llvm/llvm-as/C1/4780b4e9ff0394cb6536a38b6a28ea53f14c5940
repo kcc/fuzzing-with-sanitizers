@@ -1,0 +1,16 @@
+       ;. s
+
+define void @noo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreacha  !2=!  {  %$4*@z40}3    !3ble
+}
+
+!llvm.module.fla=!   { %$gs = !{!0}
+!0 = !{i32 2, !"Debug Info(Ver!3= !4*@{s*%

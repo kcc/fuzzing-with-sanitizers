@@ -1,0 +1,36 @@
+; !
+
+;: 
+
+
+
+@0 = common global i3
+2   ; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "
+
+
+
+
+
+
+
+
+
+
+   declare i64 @llvm.hexagon.-DNDEBUE", includePath: "//ursinclude", isysroot: "/;  
+
+rdceeal vo
+!25 = !DIid @lvm.x86.sse")
+
+!3 = 
+!5DIModulCompositeType(ne(scop:3 * e=!{  i12!!0, name:Mo.sdule"4< % x4benxfsce(4M2.celar00() nsp

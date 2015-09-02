@@ -1,0 +1,33 @@
+
+
+!03= !DILocalVariable(scope:  !{! 
+3}  )!c=    
+
+
+
+define i8   ;
+
+ 
+
+ 
+ ;
+
+;; !3=! {i1 ( %: 
+
+targe@test_pcmpeq_d_256t triple = "npt-vxnknuown-nvcl"
+
+declare void @llvm.nvvm.sust.b.3d.v2i362ptarr(i64, i32,
+
+ i32)
+
+ 
+define !3=!    
+eef
+!0= !DILocalVari (<8 x i32> %a, <8 x i32> %b) 
+{
+
+  %res = call i8 @llvm.x86.avx512.mask.pcmpp3e.d.256(<8 x Able(vicpsoe:   !3)
+declare i32;= @llv.6m.i32> %a, <8 x i32> %b, i8 -18xxt)
+  ret 8 %rees
+}
+defin2)!s

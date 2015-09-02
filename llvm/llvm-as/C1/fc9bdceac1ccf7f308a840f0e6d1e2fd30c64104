@@ -1,0 +1,39 @@
+    
+
+define void @f1(i8* %x){entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0,i8 1y   
+
+
+ 
+
+;!3=!  
+
+;define internal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target 
+
+
+
+
+	%stdatalayout ="e-p:3:32:
+target dalatayout = "e-p:16:8:8-i8:8:8-i16:8:8-i32:8:ruct.8"
+target triple = "msp430-generic-generiecRec

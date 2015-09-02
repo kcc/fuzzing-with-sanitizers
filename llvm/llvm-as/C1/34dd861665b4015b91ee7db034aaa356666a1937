@@ -1,0 +1,7 @@
+ 
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmaxs(<2 x i64>), d"

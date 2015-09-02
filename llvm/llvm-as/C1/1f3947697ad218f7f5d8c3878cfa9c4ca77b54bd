@@ -1,0 +1,10 @@
+ !2=! {i1 3, !3} !2
+
+
+; !
+
+ 
+
+declare<4 x float @llv.mips.ilvlwN()
+
+; @3A = weak 

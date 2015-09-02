@@ -1,0 +1,5 @@
+ !2=! {i1 3, !3} !   !2=!  
+
+declare <4 x  i32> @llvm.x86.sse41.pmaPu3d( )
+
+define;  0

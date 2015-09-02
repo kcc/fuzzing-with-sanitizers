@@ -1,0 +1,21 @@
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  o ievtzd
+}
+!0 = !{i8 
+
+declare<
+
+
+4x float>@llvm.mips.swbadeUJx()
+;   !3=:    ;   
+
+
+
+
+
+declare <( x i64> @l0, i8 1lvm.x8'6.avx512.mask.cvtpd2dq.256(<8 x double>,}    
+
+  <8

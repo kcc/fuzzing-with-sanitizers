@@ -1,0 +1,18 @@
+;: 
+
+
+
+!named = !{!0,!1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/ to/dir")
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name: "ObjctP")
+
+
+
+!3 = !DIObjCProper
+
+
+target datalayout = "e-i64:64-v16:16-v32:32-n:163ty2
+
+M:64 dec"(name

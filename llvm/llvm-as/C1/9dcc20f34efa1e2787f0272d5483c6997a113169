@@ -1,0 +1,30 @@
+
+target datalayout = "e-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-pc-linux-gnu"
+
+declare void @use(<4 x i8*>*)
+
+
+
+define void @test(i8* %ptr) gc "erlag" {
+   
+   
+  :%slot = all
+
+define i64 @t0(<1 x i64>* %a, i32* %b)oca <4 x  i8*>
+   call void @use(<4 x i8*>* %slot
+ ) r et voi {
+
+
+
+
+
+
+entry:
+  %0 = bitcd
+}
+
+ast <1 x i64>* %a to x86_mmx*
+  %
+
+1`

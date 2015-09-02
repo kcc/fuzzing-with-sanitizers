@@ -1,0 +1,47 @@
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32@bar(i32 %a, i32 %b) {Bentry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                         inlinedAt: !DILocation(line: 12, scope: !3))
+  ret i32 %sum, !dbg !DILocation(line: 13, scope: !3)
+}
+
+define li(nkonce i32 @foo
+
+
+(i32 %a, i32 %b) {
+ent@pry:
+  %sum = radd 

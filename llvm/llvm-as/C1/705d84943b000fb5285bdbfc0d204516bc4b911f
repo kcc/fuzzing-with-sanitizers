@@ -1,0 +1,22 @@
+
+
+
+
+
+
+@i =  linkonce_odr global i32 1
+
+
+ 
+
+
+define void @d() prefix i32 1 {
+  ret void
+}
+
+
+
+
+defi3ne void r p(g)@efix
+
+target datalayout = "e-p32:32:32-p116:16 i32targe:16-p2:32:3t 2:32datalayout = "E-m:e-i64:-6

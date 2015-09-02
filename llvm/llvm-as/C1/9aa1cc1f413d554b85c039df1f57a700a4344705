@@ -1,0 +1,42 @@
+    
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i  
+  ret *voi
+
+
+
+
+
+
+
+
+
+define i32 @test'i32* nocapture %a, i32)%n) n  
+)!0 
+= !DILocatioounwind uwtable readonly { 
+
+
+
+declare i8 @llvm.x86.add*
+entry:
+  %cmp1 = icmp deq i32ery %n, 0
+  br i1 %cmp1, label %for declare i2 @llvm.hexagon.M4..vrdd.pyari(i32, i32end,  i32, lab)l %for.body
+
+x.u32n(!33=!  scope

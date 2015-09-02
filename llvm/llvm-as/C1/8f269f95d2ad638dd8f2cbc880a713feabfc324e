@@ -1,0 +1,26 @@
+      ! 6= !{!3    } 
+ 
+
+
+     !3    = !{%I4* * null}     
+
+
+|global i64 -922 
+
+declare <16 x float> @llvm.x86.avx512.mask3.vfmad0.spd5.2(<16 x float>, <16 x float>, <16 x
+
+@data = globa| [8193 x i32] zeroinitializer
+
+define vo@(dmii3 2 *%p) nounwind y
+entry:
+  
+
+  call void asm sideeffect "
+
+
+
+
+
+
+
+declalw z$$1, $0", "*m,~{$1}"(i32* getelementptr inbounds *[8193 x) i32], [8193 x i32]* @data, ire3 i32 2 0,

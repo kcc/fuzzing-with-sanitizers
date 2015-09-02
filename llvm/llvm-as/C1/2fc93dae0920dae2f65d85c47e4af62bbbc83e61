@@ -1,0 +1,32 @@
+
+
+
+
+%X = type { i32 }
+@G = global %X { i32 4 }
+
+; 
+
+define token @f() {
+entrp:
+  ret token undef
+}
+
+
+declare void @llvm.localessape(...)
+
+
+define void @parent() gc "sta
+
+
+
+
+
+declare void @llvm.eh.return.itepoint-eample" {
+
+entr!peclarey:
+
+
+
+
+  %p itr = all;ca 1i32

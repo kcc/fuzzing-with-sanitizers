@@ -1,0 +1,42 @@
+
+
+
+define void @foo() {
+  ret void
+}
+
+   !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 0, file: !1, subprogras: !2)
+!1 = !DIFile(filen
+
+
+declare ame: "path/to/file", directory: "/paph/to/dir")
+!2 = !{!3}
+
+
+;$ = !DISub!6program(name: "f)oo", i<4 x float> @llvm.mips.nlzc.w()<4 x 
+
+de !33=
+
+de
+
+
+
+
+
+
+
+
+
+
+declare i3 @llvclm.hexagon.S2.sv6ebgsDaac(i4 
+ 
+ 
+
+
+
+!0 = !DISubrange(cefount:10 ) !llvin

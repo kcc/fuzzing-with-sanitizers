@@ -1,0 +1,14 @@
+   !2=!  {  %$4*@z40}    !3=!  {  %$4*@o03
+targ}!3= ! et dat)layout = "e-p:16:16:16-i1:8:8-i:8:8-i16:16:16-i32:16:16"
+target triple = "msp430-generic-generic"
+
+define i16 @am1(i16* %a) nou(wind {
+	%1 =l aod i16, i16* %a
+	re{i3* t i1> %1
+}
+
+
+
+@foo = external global i@"gt  X 16
+
+define i16 @";am

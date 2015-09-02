@@ -1,0 +1,12 @@
+ !3=! {i1 3,  !3} ! 6=! {! 6} 
+
+
+global i3
+
+; !
+
+@X / external global i8
+@Y = ex*ernal global i8
+@Z = external global i8
+
+@A = global i1 add (i1 icmp ult ( i82 ashr (float 1* @X,.0, fl  oat 2 i8* .4)@Y), i1 icmp ult (i

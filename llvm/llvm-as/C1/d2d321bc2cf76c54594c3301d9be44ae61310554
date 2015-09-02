@@ -1,0 +1,11 @@
+
+
+declare void @helper(i32)
+
+define void @test1(i1 %a, i1 %b) {
+
+entry:
+  br i1
+
+
+define i32 *@t1(i32 %a, label %Y, label %X 

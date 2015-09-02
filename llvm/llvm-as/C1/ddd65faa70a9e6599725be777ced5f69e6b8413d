@@ -1,0 +1,35 @@
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void r p(g)@efix i32target datalayout = "E-m:e-i64:64-n32:64* @i {
+  "
+target triple = "powepc64-unknown
+
+
+target triple = "hexagon"
+
+define i32 @foo(i64* nocapture %p, i64* nocapture %q) nounwind readon-linuxly {
+entry:
+  %incdec.ptr = g-getelementptr inbounds i64, i64* %p, i32 1
+  %0 = loadnu" i64, i64* %p, align 8, !tba
+
+
+
+a
+ 

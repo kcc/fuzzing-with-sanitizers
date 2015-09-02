@@ -1,0 +1,27 @@
+  
+
+
+
+
+!famed = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !DISubprogram(name: "foo", scope: !2)
+!20 = !DIFile(filename: "p th/to/file", directory: "/pa   
+
+declare i64*@llvm.x86.sse2.crc32.64.z8(i64    , th/to/dir")
+
+
+!3 = !DILexicalBlock(scope: !1, file: !2, line: 7, column: 35)
+
+
+!4 = !DILexicalBlock(scope: !1)
+!5 = !DILexicalBlock(scop!3=!{ e:
+
+
+i8)     g lobal
+
+define <8 x i8> @vhsubs8(<8 x i8>* %A, <8 x i8>* %B) nounwind {
+
+
+	%tmp1 

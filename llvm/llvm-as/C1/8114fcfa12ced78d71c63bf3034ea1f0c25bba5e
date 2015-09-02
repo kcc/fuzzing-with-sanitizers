@@ -1,0 +1,41 @@
+    !3=! {  %x(%.4 "   ! 6= 
+
+
+
+
+
+
+
+
+
+
+
+define`i8 @f1(i8 %dummy, i8 %src, i8 %cmp, i8 %swap) {
+
+
+
+
+
+
+
+
+
+
+
+
+z
+
+
+
+
+
+
+
+
+  %pair = cmpxchg i8 %src, i8 %cmp, i8 %swap seq_cst seq_cst   %res = ex
+
+
+
+
+
+declare itractvalue { i8, i1 c):$)""$"" XI!=0!{! $$! 68} %2p

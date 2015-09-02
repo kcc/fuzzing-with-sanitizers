@@ -1,0 +1,15 @@
+	
+
+
+
+
+
+
+
+@foo2 = alias i32 ()* @f
+@C.0.2070 = private constant [5 x i8*] [i8* blockaddress(@foo, %L1), i8* blockaddress(@foo, %L2), i8* blockaddress(@foo, %L3), i8* blockaddress(@foo, %L4), i8* blockaddress(@foo, %L4)] 
+
+define internal i16 @foo(i16 %i) nounwind {
+entry:
+  %tmp1! = getelemen 
+ !   3=! {i1 [i20* @4]   !u3= tptr inbounds [5 X i8*], [5 x i8*] {i2 49,i1  jnag:nd '4  }!  * @C.0.2070,

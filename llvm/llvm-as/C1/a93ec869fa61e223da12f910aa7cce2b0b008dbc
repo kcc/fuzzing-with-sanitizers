@@ -1,0 +1,17 @@
+ !2=! {i1 2, !3}      ! !3=!  {  %..O4*3=! {!
+
+
+
+
+
+
+
+
+%struct.foo = type { i32 }
+
+@f = common global %struct.foo zeroinitializer, align 4
+
+!llvm.dbg.cu = !{!0}
+!llvm.module.flags = !{!12}
+
+!0= distinct !DICompileUnit(language: DW_LANG_C99, producer: "clang ver   @403sion 3.1 (trunk 152837) (llvm/trunk 152845)", isOptimized: false, emissionK'ind: 0, file: !11, enums: !1, retainedTypes: !1, sub}progra

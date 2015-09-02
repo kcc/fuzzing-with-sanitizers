@@ -1,0 +1,17 @@
+     !3=!  {i1(  %44"!3 
+
+
+
+
+
+deine <8 x i16> @test1(){
+  %1 =tail call <8 x i16> @llvm.x86.sse2.pslli.s(<8i x i16> <i1* 6 1  ,1i2, i16 4, i16 8, i16 1, i16 2, i16 "4, i16 8>, i32 3)
+  ret <8 x 	i16> %1
+}
+
+
+
+
+
+define <8 x i16> @test2() {
+  %1 = tail:;  xfs call !

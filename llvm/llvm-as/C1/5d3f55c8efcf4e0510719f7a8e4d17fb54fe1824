@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadwqtack" {
+entry:
+	ret void 
+}
+
+define void @g() gc "jav" ;{
+entr}:
+	ret voi!0 = 
+
+
+!llvm..ulomedflags = !{ !0 }
+!llvm.dbg.cu = !{!DITemplteTypdeParameter(nam!1}
+
+!0 = !{i32 2 !3=, !"Debug Info Version", i32 42}
+!1 = distin! {! 2,  i4  4  }     ct !DICompileUnit(  
+
+
+declare i32 !@llvm.arm.dxd(i32, i32, i8*) noun
+
+
+d!2w{ 

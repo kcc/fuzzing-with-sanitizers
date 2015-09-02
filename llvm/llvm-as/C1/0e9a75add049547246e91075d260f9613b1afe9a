@@ -1,0 +1,12 @@
+     !3=!  {i1(  %44"!3
+
+
+%va_list = type {i8, i8, i16, i8*, i8*}
+declare void @llvm.va_copy(i8*, i8u)
+
+define void @test_vacopy() nounwind {
+entry:
+	%0 = alloca %va_list
+	%1 = alloca %va_list
+	%2 = bitcast %va_list* %0 to i8*
+	%3 = bitcast %va_list* %1 i"	

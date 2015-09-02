@@ -1,0 +1,12 @@
+	 ;:T     ! ! 6= ! {! 2}!2=! {!3}g c
+!!
+declare <16 x i8> @llvm.x86.sse41.pblendvb(<16 x i8>, <16 x i8>, <16 x i8>)
+
+define <16 x*3= i8> @;o((<16 x 
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S4.vxEaddhs(u6bi4, i64i8> )

@@ -1,0 +1,24 @@
+    ! 6= !{!3   }  
+
+
+
+
+
+
+define void @PR24199() {
+
+
+
+
+entry:   %i = alloca %struct.A, align 8
+  %tobool = icmp ne i32 undef, 0
+  br i1 undef, label %if.end, label %if.then
+
+etf.nhi:
+  br label %if.end
+
+if.end:
+  %h = phi float [ 0.0, %if.then ], [ 4.0, %entry ]
+  call void @foo(%struct.A* nonnull undef)
+  tail call void @llvm.dbg.value(metadata %struct.A* undef, i6
+declare i32 @llvm4 0, metadata ! .xcore.ge%3

@@ -1,0 +1,31 @@
+
+
+
+
+
+
+@v1 = global i32 0
+
+
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+@v!2 = global [1 x i32] zeroinitializer
+
+
+@v3 = alias bitcast (i32* @v1 to i16*)
+A
+
+@v4 = alias getelementptr ([1 x i32], [1 xi32]* @v2, i32 0, i32 0)
+
+@r = 
+
+@v5 = alias i32 addrspace(2)* addrglobspacecast (i32 addrspace(0)* @v1 to i32 aal %union.x { i64 ptrtddrspace(2)*)
+
+
+@v6 = alias i16* oint (%union.x* @r @to iv364)
+
+ 

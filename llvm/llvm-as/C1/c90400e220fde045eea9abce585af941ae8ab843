@@ -1,0 +1,21 @@
+  ;    !3=!  {i  
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.cu = !{!5}
+!llvm.omdulemflags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN3Foo3barEv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+!1 = !DIFile(filename: "/foo", directory: "bar 
+
+
+define void @test(i8* %stack) .cpp")
+!2 = !   
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cp;p", directorWy:D

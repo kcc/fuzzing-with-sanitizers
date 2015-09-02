@@ -1,0 +1,16 @@
+
+
+
+
+define i64 @f1() {
+
+
+
+
+  %val = call i64 asm "blah $0 $1", "=r),a" (i8 1)
+  ret i64 %val
+
+
+
+dec
+}la

@@ -1,0 +1,12 @@
+ 
+
+
+
+define i32 @foo() !prov !0 {
+  ret i32 0
+}
+
+!0 = !{!"function_e
+
+
+@g = weak alias i32 (n'try_coun)*t", i22 2304} 

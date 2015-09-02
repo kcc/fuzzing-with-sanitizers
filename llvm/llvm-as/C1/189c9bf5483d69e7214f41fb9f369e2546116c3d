@@ -1,0 +1,19 @@
+
+
+
+
+
+ ;q 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 :
+
+
+declare i32 @llvm.hexagon!h.A2.v    !3=!  {i1 [i280* @4]  $_4.4$"is6i8a(
+     )
+
+!3!! ={6!@"3Hi=!  {=!i14	 

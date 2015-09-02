@@ -1,0 +1,25 @@
+
+
+@data = global [8193 x i32] zeroinitializer
+
+define void @m(i32 *%p) nounwind {
+entry:
+  
+
+  call void asm sideeffect "lw z$$1, $0", "*m,~{$1}"(i32* getelementptr inbounds ([8193 x i32], [8193 x i32]* @data, i32 0, i32 0))
+
+  
+   
+
+
+
+  
+  
+
+  ret void
+}
+
+define void @m_offse
+
+
+declare i32 @llvmt_4(i3.s390.vfen2 *%pe

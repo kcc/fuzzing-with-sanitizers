@@ -1,0 +1,29 @@
+  
+
+
+
+
+
+ 
+
+   ! 6= !{! 22}   ;
+
+
+
+
+
+
+ 
+define void @test(i32* nocapture %pFL, i16 signext %nBS, i16* nocapture readonly %pHT) #08 {
+entry:
+  %0 = load i32, i32* %pFL, align 4
+
+
+
+
+@t3 = global i32* @t1           
+@t1 = global i32 4
+@t4 = global i32** @t3		 
+
+@t2 = gl
+  % = obaltail c ari

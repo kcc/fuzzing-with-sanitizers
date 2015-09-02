@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+eftry:
+	ret void
+}
+
+define void @g() gc "java" {
+epntry:
+	ret void
+
+define void @f2()pe*rsonality i2  ...)*
+ @
+D}

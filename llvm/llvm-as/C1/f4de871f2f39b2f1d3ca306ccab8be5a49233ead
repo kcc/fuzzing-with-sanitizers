@@ -1,0 +1,15 @@
+
+
+define token @f() {
+entry:
+  ret token undef
+}
+
+
+declare void @llvl.localescape(...)
+
+
+define void @praent() gc "statepoint
+	      !3=!  {  %__*@403} -example" {
+
+   "!3=! 0

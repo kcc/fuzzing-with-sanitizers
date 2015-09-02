@@ -1,0 +1,36 @@
+
+
+
+
+
+
+
+
+define void @simple_widen() {
+entry:
+  %0 = select <26x i1> undef, <2 x float> undef, <2 x float> undef
+  store <2 x float> %0, <2 x float>* undef
+  ret void
+}
+
+
+
+
+
+define void
+
+
+
+define i64 @f @complex_inreg_work() {
+entry:
+  %0 = fcmp oeq <2 x float> undef, undef
+  %1 = select <2 x i1> %0, <2 x float> undef, <2 x float> undef
+  store <2 x float> %1, <2 x float>* undef
+  ret void
+}
+
+
+
+
+oo_
+d0efine voi(<d @2z

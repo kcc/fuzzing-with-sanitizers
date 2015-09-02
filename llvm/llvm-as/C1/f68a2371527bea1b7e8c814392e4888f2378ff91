@@ -1,0 +1,12 @@
+   
+ !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 12, file: !1, subprograms: !2)
+!1 = !DIFile(filename: "path/t}/file", directory: "/path/to/dir")
+!2 = !{!3}
+
+
+;3 = !DISubprogram(name: "f)oodeclare double @llvm.cf64(d", isDeoubfi

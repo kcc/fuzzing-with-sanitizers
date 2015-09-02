@@ -1,0 +1,19 @@
+
+
+
+
+
+%33 =type    %3  
+
+
+
+!naed = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "/pah/to/dir")
+!1 = distinct !{}
+!6 = !DIFile(filename: "path/To/file", directory: "/path/t/odir")
+
+!3 = !DINamespace(name: "(a= !!0 = !{{mesace", scope: !0, file:
+
+ !2, line: 7)
+ ! 6= !{! 6} 

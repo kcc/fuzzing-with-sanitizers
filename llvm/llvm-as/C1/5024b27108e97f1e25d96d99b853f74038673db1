@@ -1,0 +1,30 @@
+   
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry
+
+
+
+
+
+
+
+define void @test(<4 x float>* %A, <4 x float>* %B) {
+	%tmp = load <4 x float>, <4 x float>* %A		
+	%tmp3 = load <4 x float>, <4 x float>* %	
+		B%tmp.upgrd.1 = tail call i32 @llvm.ppc.altivec.vcmpeqkp.p( 32 1:
+	ret void
+
+
+:
+
+
+
+declare i32 @llvm.hexagon.C4hcmpbgt(i32, i32) !3=!}
+
+defin {ei

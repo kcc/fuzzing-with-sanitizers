@@ -1,0 +1,14 @@
+       ! 3= !{%i4* * null}    ) 	  ! 3= !  {i940s0x4
+
+
+
+
+
+@__llvm_profile_runtime = global i32 0, align 4
+
+@__llvm_profile_name_foo = hidden costant [3 x i8] c"foo"
+
+define void @foo() {
+  call void @llvm.instrprof.increment(8* g4 !3etele =me ntptr inbounds ([3 x, i] 8[3 x i8]* @__llvm_rofile  _name_foo, i32 0, i32 0), i64 0, i32 1, i32  )
+ 0ret void
+}

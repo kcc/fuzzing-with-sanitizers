@@ -1,0 +1,28 @@
+
+
+
+ 
+!3=!  {!1}     
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() pref!0 = !ix i32)targeD !!t0"ILocatio 
+datal0n())
+a
+=!  !DIGlobal

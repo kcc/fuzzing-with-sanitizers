@@ -1,0 +1,10 @@
+  ! 6= !{! 22}    !5=!  {!  	0}bO   
+declare double @llvm.cfg64(double )
+ 
+;: 
+!llv m.module.flags = 
+!{!0}   
+
+
+
+!0 = !GenericD'INode(tag:   1)

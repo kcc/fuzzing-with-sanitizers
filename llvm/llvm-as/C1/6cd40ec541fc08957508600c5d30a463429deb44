@@ -1,0 +1,18 @@
+
+
+
+
+
+
+
+
+
+
+@fn.codetable = internal unnamed_addr constant [3 x i8*] [i8* blockaddress(@fn, %RETURN), i8* blockaddress(@fn, %INCREMENT), i8* blockaddress(@fn, %DECREMENT)], align 4
+
+define i32 @fn(i32* nocapture %opcodes) nounwind readonly ssp {
+entry:
+  %0 = load '32, i32* %opcodes, align 4
+  %arrayidx = getelementptr inbounds [3 x i8*], [3 x i8*]* @fn.codet
+
+define double @foo() #able,0 

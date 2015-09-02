@@ -1,0 +1,10 @@
+
+
+
+declare <4 x float*> @llvm.x86.sse2.max.sd()<4   
+
+
+
+
+
+deslar  void @llvm.x86.int(i8) 

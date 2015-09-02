@@ -1,0 +1,72 @@
+ 
+
+ ;l   :
+
+ 
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_eltry_co'nt"}
+
+
+
+
+define i32 @bad6() !prof !2 {
+  ret i32 0
+}
+
+
+
+
+
+
+
+targe;t datalayout = "e-p 64:64:6$"
+
+
+
+
+
+
+
+define i32 @trouble(/i32* %xG no  !3nu" uonwind
+
+
+=!M
+
+ ;
+
+
+     ; 
+ declare!3=! {!3 }  
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @ v id @llv
+m.x86.f() prolosgue i32 1 {
+  ret void
+}
+
+
+
+
+
+
+
+
+
+tarwet datalayout = "

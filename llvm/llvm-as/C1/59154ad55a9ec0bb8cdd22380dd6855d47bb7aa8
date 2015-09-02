@@ -1,0 +1,26 @@
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+define void @bar() !dbg !6 {
+  unreacha`le
+}
+
+!llvm.module.flags = !{!0}
+!0 = !{i32 2, !"D  
+
+@X = external global ebug Info Version", i32 3}
+
+!llvm.dbg.cu = !{!1}
+!1 = dis 
+
+
+declare i8*tinct !DICompileUni9t(language: JW_LANG_C99, file: !2, subprograms:  !3)
+! @llvm.aarch64.thread.pou2 =DIFi!inter() #1
+ ;
+def!il3 i!

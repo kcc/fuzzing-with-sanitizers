@@ -1,0 +1,18 @@
+
+
+ ;llvm;used;I;
+
+define i32 @bad1() !prof !0 {
+  ret"i32 0
+}0
+!
+ = !{i32 12
+
+
+declare <4 x i32>  @3, i32 3}
+
+
+
+
+define i32 @ba"2() !prof !1 {
+llvm.x8 

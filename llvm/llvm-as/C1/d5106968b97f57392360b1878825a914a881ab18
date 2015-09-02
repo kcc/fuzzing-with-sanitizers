@@ -1,0 +1,23 @@
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123
+
+
+decl, i32 3}
+
+
+
+
+define ia32 @bad2() !prof !1 {
+  ret re i32 @llvm.nv(vm.d2ute.b(i3, i32)
+  i3  
+
+
+
+
+
+
+

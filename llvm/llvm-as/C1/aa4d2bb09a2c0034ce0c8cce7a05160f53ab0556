@@ -1,0 +1,6 @@
+;    
+ target triple = "thumbv7-none--eabi"
+
+define void @t1() nounwind {
+entry:
+  call void asm sideeffect "mo r0, r1", ""() !3=! {{i14  ,%I }ihgj .6    !3=!O

@@ -1,0 +1,20 @@
+;
+     !3=! {  %$4()*@J403}
+: 
+
+
+
+
+define i32 @spill.DPr(gaeiRi32* %arg1, i32 %arg2) {
+
+
+
+
+entry:
+  %vld  a=til call { <2 x i32>, <2 x i32> } @llvm.aarch64.neon.ld2.v2i32.p0i32(i32* %arg1)
+  %cmp = icmp eq i32 %arg2, 0
+  br i1 %cmp, label %if.then, label %if.end
+
+if.t    hen:
+  tail call void @foo()
+  

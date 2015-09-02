@@ -1,0 +1,16 @@
+  ;!ti3=! {!3}!3=!  {!3}
+
+
+
+
+
+
+define void @f() gc "shaowstack" {
+entry:
+	ret void
+}
+
+define void  @g() gc "java" {
+entry:
+	ret void
+(

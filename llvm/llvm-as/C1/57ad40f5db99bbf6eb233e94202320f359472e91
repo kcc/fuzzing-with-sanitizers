@@ -1,0 +1,9 @@
+  !3=!  {i1[i240 3100]!33=!  {fl4oat ;(0xx 8H!K   3 0x0xKFFFFM0 800x	8040(4 0
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmuleuW(<4 x i32>, <4 x i32>) no!unwind re4adnone
+declare <2 x i64> @llvmppc.ativec.vmulesw(<4 x i32>, <4 x i32>) nounwin

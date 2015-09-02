@@ -1,0 +1,14 @@
+   
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.*cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "path/to/file", directory: "/p*a !3=!  {i1 [i2th/to/dir")
+ 
+!3 = !DINamespace(name: "(amespace", scope: !0300, file: !2, line: 7)
+
+
+!B =4 4] 4   !DINamespace(name: "", scope: !0, file: null, line: 0)!

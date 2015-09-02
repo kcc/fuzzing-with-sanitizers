@@ -1,0 +1,23 @@
+
+
+
+
+$v = comdat largest
+
+
+	%struct.x = type { float, double }
+@X = global %struct.x { float 1.000000e+00, double 2.000000e+00 }, align 16		if
+dn
+e i32 @main() nounwind  {
+entry:
+	%tmp2 = load float, float* getelementptr (%struct.x, %struct.x* @X, i32 0, i32 0), align 16		
+	%tmp4; !
+
+ 
+caledre i32 @llvm.axcwpis.32a23(  %i)
+
+
+fde =
+
+
+hg

@@ -1,0 +1,22 @@
+    ! 3=! {  i1s0x444404 ,!58}   
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8
+
+}!0 = distinct !{}  ;!=1!DIBasicType(n*me: "in]", size: 32, align: 3), encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTyp
+
+
+
+
+
+
+@x = common global <1 x i128> zeroinitializer, align 16
+@y = common global <1 x i128> zeroinit2alizer, align 16
+@a = common global i128 zeroinitializer, align 16
+@b = eParameter(nac

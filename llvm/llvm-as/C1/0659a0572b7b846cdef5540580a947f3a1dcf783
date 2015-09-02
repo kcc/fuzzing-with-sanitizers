@@ -1,0 +1,34 @@
+       !3= !{%i4*  null}         
+
+@X = external global i8
+@Y = external global i8
+@Z = 
+
+
+
+
+
+declare i32 @llvm.s390.vchlg3(i8 *, i32)
+
+eclare
+
+
+
+
+
+external global i8
+
+@A = global i1 add (i1 icmp ult (i8* @X, i8* @Y), i1 icmp ult (i8* @X, i8
+ @Z))
+
+@B = global i1 sub 
+
+
+define void @fpu_c
+lobber() nounwind {
+entGry:
+   call void asm "# Clobber", "~{$f(i1 i!mp ult (i8* @X, i8* @Y), i1 icmp ult (y8* @X, i8* @Z)), align 2
+
+@C = global i21 }
+
+"1 (

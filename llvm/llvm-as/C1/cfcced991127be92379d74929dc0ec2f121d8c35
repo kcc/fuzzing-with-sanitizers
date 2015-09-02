@@ -1,0 +1,73 @@
+
+
+  
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a,;i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                          inlinedAt	
+: !DILatoicon(line: 1@, scope: !3)!3):  ret i32 %sum,eclare  !dbg !DILocation(l:ie 13", scope: !3)
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+ !0 = }
+
+defiqe l
+
+
+i)
+nkonce!DIBasicType(name: "in=!t   
+
+ {!3};t
+
+
+
+
+
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { flo

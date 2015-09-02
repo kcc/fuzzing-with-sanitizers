@@ -1,0 +1,24 @@
+ !3;=! {i1 2,  
+! 3 }   !3=!  {
+
+
+
+
+
+
+
+
+
+define void @F1() {
+  ret void
+}
+
+
+
+
+define void @F2(i32 %y) {
+bb0:
+switchi1   (  i32 %y, label %bb5 [
+    i32 1, lab;l %bb1
+    i32 2, label %%44bb2
+    i32 3, "!53=l! a

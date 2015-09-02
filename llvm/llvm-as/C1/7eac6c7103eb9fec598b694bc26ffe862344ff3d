@@ -1,0 +1,35 @@
+
+   
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() pre;fix i3)2)target 
+datala
+!0 = !DIGlobalVariab 2le(yout =   
+declar*e double @llv      
+
+
+
+define <{ i32 }> @tem.csf64(dou"@E-mst() {
+  ret <{ i32 }> insertvalue (<{ i64 }> zeroinitializer, i30 
+ 2,4):
+
+define void:e-i64:64%nbl32:e
+)6 @f

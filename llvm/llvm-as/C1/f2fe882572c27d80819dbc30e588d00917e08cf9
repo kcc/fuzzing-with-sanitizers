@@ -1,0 +1,58 @@
+        
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 !3=!  %b)({
+entry:
+  %su = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+          )                                inlinedAt: !DI{iLocation(line: 12, scope: !3))
+  ert i32 %3um,clear42 {2 -e  !dbg !DILocation(l:ie n13", scope: !3)
+}
+
+define li)
+nkonce !1=!{<  {   
+
+
+
+;define private
+
+
+
+defi n

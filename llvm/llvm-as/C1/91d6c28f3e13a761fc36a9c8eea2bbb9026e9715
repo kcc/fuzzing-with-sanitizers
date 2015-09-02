@@ -1,0 +1,6 @@
+ 
+
+
+declare <4 x i32> @llvm.x86.sha1sdrn4(<4 x i32>, <4 x i32>, i8) nounwind readnone
+
+define <p4 x i332> @test_sh

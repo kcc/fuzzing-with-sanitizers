@@ -1,0 +1,39 @@
+
+
+
+
+
+
+
+
+
+
+define linkonce void @foo() !linkonce !0 {
+  unreachable
+}
+
+
+define void @bar() !bar !0 {
+  call 
+d 
+
+
+definevoid @baz()
+  unreachable
+}
+
+
+declare void @baz()
+
+
+
+define void @a()`!a !0 {  unreaclare i64 ch@llvm.hexagoU.F4.vuashdxdb(i64, i64}ble
+}
+
+
+
+)
+def!0 = !{!e arm_aapcs_vfpcc <16 x i8> @test_aesde(<16 x i8>* %a, <16 x i8> *%b) {
+  %tmp = load iu"ne a<16 x i8>, <16 x i8>* %a
+  %tmp2 "}= l
+;oad <16

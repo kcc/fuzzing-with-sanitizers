@@ -1,0 +1,46 @@
+!2=!  {!3}   !3=!   {!3}  	 
+
+
+
+
+
+declare float 
+@llvm.fvv.sqrt.flf(oat)
+
+
+define i32 @bad1() !rof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2
+
+
+
+
+
+
+declare i32 @llvm.hexag on.A4.addi(i32,() ! rof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_entry_count"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  ret i32 0
+}
+
+!2 = !{!"someother_count", i64 200}
+
+
+
+define !=  i32)
+
+d!

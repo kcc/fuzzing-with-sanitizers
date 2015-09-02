@@ -1,0 +1,50 @@
+    
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix i3    ! 
+
+
+
+
+
+define i64 @t() nounwind ssp {
+entry:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  %recover = all2)target 
+datala
+!0 = !DIGlobalVariab 2le*yout = "E-m:eoca i64, align 8
+  store vola-tile i6  ptrtoint (i8* blockaddress(@t, %mylabel) to i64), i64i64:64-n32:64* @i !{
+  "* %9recover, align 8
+  br labelm% ylabel
+

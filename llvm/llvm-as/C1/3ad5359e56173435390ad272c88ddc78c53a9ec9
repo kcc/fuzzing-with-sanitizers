@@ -1,0 +1,26 @@
+
+
+
+
+
+declare void @foo()
+
+define void @test_simple_call() gc "coreclr" {
+
+entry:
+  br label %other
+other:
+
+
+
+  call void @foo()
+  ret void
+}
+
+
+
+declare void @do_safepoint()
+defin
+
+ e void @  
+define i32 @test_x86_sse42_pcmpgc

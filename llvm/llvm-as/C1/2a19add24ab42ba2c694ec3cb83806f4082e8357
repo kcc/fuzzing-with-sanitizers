@@ -1,0 +1,11 @@
+ !3=! {!3 }-00C000000000
+
+
+
+
+
+B	eclare i64 @llvm.hexagon.M4xd.subhbx(i, 64i64)
+
+
+@B
+; 

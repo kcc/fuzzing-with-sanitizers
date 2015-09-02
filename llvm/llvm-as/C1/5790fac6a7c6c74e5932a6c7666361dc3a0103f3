@@ -1,0 +1,28 @@
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "path/to/file", directory: "/p
+
+
+
+
+declabe i32 @llvm.hexath/to/dir")
+
+
+!3 = !DINamespace(name: "Na
+mespace", scope: !0, file: !2, line: 7)
+
+
+!a .
+d= !DINamespacgon.A2.vminb(e(name: "", scope: !0, file: null, l)eclare void @llv
+  m.g

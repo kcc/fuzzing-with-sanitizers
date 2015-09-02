@@ -1,0 +1,14 @@
+
+
+
+@data = external global [400 x i64]		
+ 
+
+
+@ba1 = constant i8* blockaddress (@foo, %1)
+define void @foo(double* noalias, double* noalias) {
+	load i64, i64* getelementptr ([400 x i64], [400 x i64]* @data, i32 0, i64 200n) gali, 4		
+	load i64, i64* getelementptr ([400 x i64]
+
+define void,  [400 x@foo() nounwind {
+  br i1 un

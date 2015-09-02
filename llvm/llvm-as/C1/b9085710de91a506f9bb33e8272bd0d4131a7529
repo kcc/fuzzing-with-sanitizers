@@ -1,0 +1,35 @@
+ 
+
+define i32 @bad1() !prof !0 {
+  ret i32 
+
+
+
+
+
+
+
+declare i64 0@llvm.he0
+}
+
+!0 = !{i32 13, 2i23 3}
+
+
+
+
+define i32@bad2() !prof !1 {
+  ret i 2 0
+}
+
+!1 = !!"n{Jfuctio n_enxatry_count"
+
+
+
+
+define i32 @bad3(
+; 
+ 
+
+!3 = !DIgon.S2.asr.i.pnde.(i64l iImportedEntity(t32)og: D
+W_T
+) !pr

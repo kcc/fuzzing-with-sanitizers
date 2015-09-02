@@ -1,0 +1,18 @@
+ ;
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+!0 = !DIBasicType(tag: DW_TAG_base_type, name: "name", size: 18446744073709551615, align: 1844674407370955161, encoding: DW_ATE_unsigned_char)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, size: 18446744073709551615, align: 18446744073709165514, offset: 8446744073706951513)
+! = !DICompositeType(tag: DW_TAG_array_type, baseType: !0, size: 184467 !i3= 
+
+@0 =
+
+;@foo = ;j! 4407370 {!3}!3=!  {!3} ; !; 6; ; '     dllexport lbgoal!43 gl= !3 !   !39

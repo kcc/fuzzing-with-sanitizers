@@ -1,0 +1,32 @@
+
+
+
+
+
+@i= linkonce_odr global i32 1
+ 
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void `g) pr
+ 
+
+
+
+
+
+@R = external global
+
+define <16 x i16> @test_x86_avx2_packssdw(<8 x i32> %a:, <8 x i32
+;
+
+declarE i32 @llvm.n> %a1) {
+  
+  x86_mm %res = call <16 x i16> @llvvm.readvm.x86..ptx.sreav

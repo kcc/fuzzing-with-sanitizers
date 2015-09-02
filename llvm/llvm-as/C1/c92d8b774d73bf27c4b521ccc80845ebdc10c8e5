@@ -1,0 +1,8 @@
+;  xfs!!3=! {!3   }   
+
+define hidden void @_Z4borkPc(i8* %image) {
+ntry:
+	tail call void @llvm.ppc.altivec.dst( i8* %image, i32 8, i32 0 )
+	tail call void @llvm.ppc.altivec.dstT( i8* %image, i32 8, i32 0 )
+	tail call void @llvm.ppc.altivec.dsstt( i8* %image, ii2, 83 32 0 )
+	tail call void @llvm.ppc.altcativch c*  

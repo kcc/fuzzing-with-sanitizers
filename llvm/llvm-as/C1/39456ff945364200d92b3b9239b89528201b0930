@@ -1,0 +1,25 @@
+ 
+
+
+
+declare void @llvm.arm.hjt(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret v 'id
+}
+
+defi  !3=! {[ 0x[8x     !3=! {in%k$$Mi4];42 {0$	][]   s0x4400844gs )!2$ =  !;e void @ g-() igc "java" {
+entry:
+	ret void
+}

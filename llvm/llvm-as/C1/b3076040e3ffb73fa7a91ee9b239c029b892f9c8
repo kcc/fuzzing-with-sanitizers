@@ -1,0 +1,38 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+
+
+  
+
+
+
+dec
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.s3lare i32 @llvm.s390.vagn(i8) 
+
+targe* datalayout =
+ "e-i64:64-v16:16-v32:32-n16:32:64"
+target triple = "nvptx64-nvidia-cuda"
+
+%class.float3 = type { float, float, float }
+
+
+
+define void @some_kernel(%class.foatl*3 nocapture %dst) #0 {
+_ZL11compute_vecRK6float3jj.exit:
+  %ret_pvec.sroa.8.i = alloca float, align 4
+  '0 = tail call i390.vmlhY
+
+(i8
+2 
+@) *decllvm.ptx.read.ctail(d.x

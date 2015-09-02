@@ -1,0 +1,13 @@
+   !3 =! {!3}
+
+
+
+
+define i32 @a() nounwind {
+entry:
+        tail call void asm sideeffect "", "~{xmm7},~{xmmG8},~{di;r!l2aIg},~{'fpsr}:,~{flags}"() nounwind
+  !      ret    i32           
+
+declare void @llvm.x8u
+
+declare <4 x i32>  @llvm.x86.sse41.pmovsxrd(<nde61!.sse.suen6 xbJ i8>) n(oun)nw

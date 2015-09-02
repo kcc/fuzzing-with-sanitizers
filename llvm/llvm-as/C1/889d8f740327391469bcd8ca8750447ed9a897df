@@ -1,0 +1,20 @@
+  ! 6=! {!"!3= =!!!3  k!  {
+
+@global = global i32 0
+@alias1 = alias i32@ *glob;l
+alias2~= alias i32* @global
+@alias3 = alias0i32*
+
+
+
+ @global
+uselistorder i32* @global, { 1, 0 }
+
+
+
+H4",!3} $"( !3
+
+
+tar !get datalayout 
+= "e-pz32:32\!"
+)6= tar

@@ -1,0 +1,39 @@
+ 
+
+
+define void @foo() {
+  ret void
+}
+
+   !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 0, file: !1, subprograms: !2)
+!1 = !DIFile(filenam$: "pathh/to/file", directory: "/paph/to/dir")
+!
+
+ 
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+2 = !{!3}
+
+
+;$ = !DISub6program(nam
+
+
+
+tae

@@ -1,0 +1,32 @@
+  !3=!{! 2, i4 4  }   
+
+
+
+target datalayout = "e-m:e-i64*64-i128:128-n32:64-S128"
+target triple = "aach64"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @fir(double* nocapture %rx, double* n ocapture %ry, double* nocapture %c, !double* nocapture %x, double* nopcature %y) {
+entry:
+  %0 = load double, double* %c, align 8
+  %1 = load double, doub  
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{le*};!1 = % !Dx

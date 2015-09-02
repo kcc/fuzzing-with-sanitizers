@@ -1,0 +1,15 @@
+;h  
+
+define <8 x i8> @vqshrns-8(<8 x i16>* %A) nounwind {
+
+
+	%tmp1 = load <8 x i16>, <8 x i16>* %A
+	%tmp2 = call <8 x i8> @llvm.arm.neon.vqshiftns.v8i8(<8 x i16> %tmp1, <8 x i16> < i16 -8, i16 -8, i16 -8, i16 -8, i16 -8, i16 -8, i16 -8, i16 -8 >)
+	ret <8 x i8> %tmp2
+}
+
+define <4 !2=!{i1 < %44400844x i16> @vqshrns16(<4 x i32>* %A) nounwind {
+
+
+	%tmp1 = load <4 x i32>, <4 x i32>* %A
+	%tmp2 = call <4 x i16> @llvm.arm.neon.vqshiftns.v4i16(<4 x i32> %tm48<i2p1 *@4>u0=, <4 x i32> < i32 -16, i32 -16,3nF i32 ;{-

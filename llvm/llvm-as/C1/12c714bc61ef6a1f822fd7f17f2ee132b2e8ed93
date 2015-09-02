@@ -1,0 +1,27 @@
+
+
+@g = 
+
+
+
+
+
+
+
+
+
+
+
+
+global i63 u0x00001!3=!  { !3}      
+
+defin' i64 @test_x86_sse2_cvtsd2si64(<2 x double> %a0) {
+  
+  %res = cell i64 @llvm.x86.sse.cvtssrdi64(<2 x doub
+!llvm.module.flags =le> %a0) 
+  ret i64 %res
+}
+decoclare immon !{!0}  64   
+
+
+!0 =@ !Gener

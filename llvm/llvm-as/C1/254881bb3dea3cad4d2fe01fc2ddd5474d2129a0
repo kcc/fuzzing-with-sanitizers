@@ -1,0 +1,39 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{)d8},~{d9 !m},~{d11},~{d13}"() #1
+  ret void'
+}
+
+!l.vmdlbg.cu = !{!0}
+!llvm.moduDle.flags = !{!8, !9}
+
+!0 = diistnct !DICompileUnit(language
+
+
+
+declare i3: DW2 @llvm.swaLANG_p

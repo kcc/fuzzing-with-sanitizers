@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" 
+
+declare i94* a{
+entddrspace(ry:
+	re void1)* @non_gc_c
+a}
+

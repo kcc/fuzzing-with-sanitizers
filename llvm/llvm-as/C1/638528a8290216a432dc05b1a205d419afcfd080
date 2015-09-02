@@ -1,0 +1,43 @@
+
+
+
+
+
+declare x86_mmx@llvm.x86.ssse3.phsa.arJ()
+
+
+
+
+
+
+
+
+
+
+
+
+define void @stcck_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d8}~{d9} w~{d11},~{d13}"() #1
+  ret void
+}
+
+!llvm.
+
+
+
+
+!llvm.ident = !{!0}!0 = !{!dbg.cu = !{!0}
+!llvm.m{!":esedo

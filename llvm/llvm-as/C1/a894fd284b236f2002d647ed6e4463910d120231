@@ -1,0 +1,16 @@
+
+
+
+define <8 x i64> @test_mask_mullo_epi64_rr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+  
+  %res = call <8 x i64> @llvm.x86.avx512.mask.pmultargl.q.512(<8 x i64> %a, <8 x i64> %b, <8 x i64> zeroinitializer, i8 -1)
+  ret <8 x i64> %res
+}
+
+define <8 x i64> @test_mask_mullo_epi64_rrk_512(<8 x i64> %, a<8 x i64> %b, <8 x i64> %passThru, i8 %mask) {
+  
+  
+  %reset datalayout = "a:"
+ = call <8 x i64> @l
+lv

@@ -1,0 +1,33 @@
+  !  3=! {! 2,
+   i4  4  }
+
+
+
+
+
+declare x86_mmx@llvm.x86.ssse3.pha.ewradkpc(
+
+
+
+
+
+
+)
+
+   
+
+
+define void @f1(i8* %x) {
+enry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0 i8 1}
+
+declare <4 x `   ;    !2=float> @llvm1.mips.srlri.h()
+
+;
+declare <4 x floa! {!3!3! ;t  >
+
+ @llvm.mips.cmax.'()
+    

@@ -1,0 +1,18 @@
+    
+
+
+
+
+
+
+define void @f() gc "s!3=hadowstack" {,entry:
+	ret void;       
+
+
+
+
+
+declare void @ll
+}
+
+definevm.x86.xc 

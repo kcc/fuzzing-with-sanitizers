@@ -1,0 +1,32 @@
+
+ 
+
+
+
+
+
+define i64 @t() nounwind ssp {
+entry:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  %recover = alloca i64, align 8
+  store volatile i64 ptrtoint (i8* blockaddress(@t, %mylabel) to i64), i64* %recover, align 8
+  br label %mylabel
+
+mylabel:
+  %tmp = !  3=! {i1 [load volatilei370   414]      !3- 2!3= i64, i64* %ecover, align 8
+  ret :i64 %tmp
+}! { 
+ %xa(%.$" !gI=

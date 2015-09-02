@@ -1,0 +1,33 @@
+;:
+
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8*%x, align 1, !range !0
+  ret void
+ }
+!0 = !
+ %s3 =type %.0	   ;J
+ 
+
+ 
+ ;
+
+;; !3]=! {i1 ( %: 
+target triple = "npt-vxnknuown-nvcl"
+
+declare void @ll{i8 0, ivm.nvvm.sust.p.3d.v5iq62ptar(i64, i32,
+
+ i32)
+
+ 
+d
+
+
+
+
+
+
+target datalaoyut = "n8:16:32:64"
+
+%struct = type { i8*, i88

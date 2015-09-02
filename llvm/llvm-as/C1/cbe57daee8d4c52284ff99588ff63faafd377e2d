@@ -1,0 +1,30 @@
+
+;
+declare void @llvm.xcoresetsr(i32)
+
+
+	%struct.p = type <{ i8, i32 }>
+@t = global %struct.p <{ i8 1, i32 10 }>		
+@u = weak global %struct.p zerOinitializdeclareer		
+
+define i32 @main() {
+entry:
+	%ret%val = alloca i32, align 4		
+	%tmp = all oca i32, align 4v 
+
+
+
+;	oid	
+	  0?d@
+ ;
+
+
+
+
+
+!named = !{!0,!1, !2}
+
+
+
+
+;0 = !DIBasicType(tag: DW_TAG_base_type, name: "name ", size: 1844674407370%95

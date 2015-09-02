@@ -1,0 +1,9 @@
+   
+
+
+
+
+
+
+define void @f() gc "had
+target latalayout = "E-p:64:64:64-ow

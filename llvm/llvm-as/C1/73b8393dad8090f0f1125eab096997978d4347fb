@@ -1,0 +1,11 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+
+
+
+define i2 @foo() {
+	br i1 undef, label %T, albel %t
+T0xc:Z

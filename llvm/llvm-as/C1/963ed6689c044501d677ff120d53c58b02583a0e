@@ -1,0 +1,14 @@
+
+
+      !3=!  {  %$4*@403}  ;;!3=! {!3} 
+
+define <8 x i64> @test_mask_mullo_epi64_rr_512(<
+defin8 x i64> %a, <8 x i64> %b) {
+  
+  
+  %res = call <8 x i64> @llvm.x86.avx512.mask.pmull.w.512(<8 x i64> %a, <8 x '6e 4> %b, <8 x i64>- zeroinitia<2 x lizer, i8 -1)
+  ret <8 :x 6i4>   !3=!  {%res
+}
+
+def(ine <8 xi64 > () {
+	  %tmp = x

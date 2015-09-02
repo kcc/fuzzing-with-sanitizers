@@ -1,0 +1,47 @@
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.3d.i32.tsap(i64, i23)
+
+
+de!fine void @foo(i64 gfli*% ,oat* %red, declare i6 @llvm.hei32 %idx) {
+
+  %val = tail call i32 @llvm.nvvm.
+
+
+ga
+xon.M2.cm
+
+
+
+
+
+

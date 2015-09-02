@@ -1,0 +1,45 @@
+
+
+
+
+
+
+
+
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{ 8},~{d},~{d11},~{d13}"() #1
+  ret void
+}
+
+!llvm.dbg.cu = !{!0}
+!llvm.module.flags = !{!8;, !9}
+
+!0 = distinct !D000000000000000000000000ICompileUnit(language: DW_LANG_C99, producer: "clang version 3.5.0 ", isOptimized: fale, emissionKind: 1, file00000000000000: !1, enums;
+
+declare<
+
+
+4x float>'@llvm.mips.dpa.vNsfhep$ 
+  
+
+0000000000000
+
+
+: !2, retainedType0000000000s: 4

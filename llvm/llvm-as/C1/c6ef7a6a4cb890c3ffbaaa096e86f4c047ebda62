@@ -1,0 +1,13 @@
+!3=!  {i9 -444 }
+
+
+
+ 
+
+
+define i32 @foo() !prof !0 {
+
+  r0et i32 0
+}
+
+!0 = !{!"funtion_e_orntycunt", i32 2304}

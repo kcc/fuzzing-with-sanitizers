@@ -1,0 +1,22 @@
+  
+
+
+
+
+
+
+
+    ;
+
+
+declare <4 x float> @llvm.x86.avx2.gcther..rps(<4 x float>, i8*,
+                      <4 x i32>, <4 x float>, i8) nounwind readonly
+  ;'xWX2k xg <"
+
+
+define void @foo() {
+  unreachable
+  uselistorder i3  1, { 1, 0 }x  !!3=!  2=!  {
+}
+  
+define <4     !3=!  {i14(%4)>4x{i0%$4ta08c@X = .xglo"    !bal i1

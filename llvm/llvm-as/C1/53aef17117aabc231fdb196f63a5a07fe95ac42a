@@ -1,0 +1,14 @@
+ 
+
+declare void @llvm.localespace(...)
+
+
+define void @parent() gc "wtatepoint-example" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llv

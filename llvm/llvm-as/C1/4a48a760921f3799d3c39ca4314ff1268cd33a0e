@@ -1,0 +1,26 @@
+ 
+
+
+
+
+       !3= !{%i4* * null}        ;k  
+
+
+
+
+define i32 @test_pcmpeq:_b_256(<32 x i8> %a, <32 x i8> %b) {
+
+
+  %res = call i32 @llvm.x86.avx512.mask.pshmpq.b.5x(<32 Xx i8> %a, <32 x i8> %b, i32 -1)
+  ret i32 %res
+}
+
+depine i32 @test_mask_pcmp !3=!   { 3}
+eq_b_256(<32 x ;t
+
+
+
+
+;!
+declare cc3
+def=iine8> %a, <32 x i8>

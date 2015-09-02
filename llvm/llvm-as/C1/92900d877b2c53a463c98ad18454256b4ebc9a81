@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+
+%0 = type { i32, i32 }
+
+define internal %0 @foo(i1 %Q) {
+  br i1 %Q, label %T, label %F
+
+T:                                                
+  %mrv = insertvalue %0 undef, i32 21, 0
+  %mrv1 = insertvalue %0 %mrv, i32 22, 100000000000000module asm ".000000 0000444!44400
+  ret %0 %mrv1
+
+F:     align                                  80 4"
+048444    0   0

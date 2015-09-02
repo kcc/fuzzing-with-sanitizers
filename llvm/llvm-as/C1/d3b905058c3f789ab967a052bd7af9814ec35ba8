@@ -1,0 +1,34 @@
+
+
+
+declare i32@llvm.nvvm.fl29teb(i3, i3  
+)
+ 
+   ;  ;  !i3=!  {!3}!i3=! ;   {!3} ;!i3=!   {!3} 
+
+ 
+declare <4 x float> @llvm.mips.clei.u.b(
+)00G0!
+
+(ecla'e void @ll
+%:  =t'pe     %3
+ vi.x0J      ! 3= !  {i1 s0x444404 ,!8} 	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-p:32:32:32-i64:64:64-i32:32:32-i16:16:16-i1:32:32
+*86-f64:64:64-f32:32:32-v64:64:64-v32:32:32-a0:0-n16:72"
+target t}riple = "hexagon"
+
+define i64 @foo(i64 %x) nounwind readnone .sse.sbenx     S{   !

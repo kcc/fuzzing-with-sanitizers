@@ -1,0 +1,20 @@
+ 
+ 
+
+
+         !3= !{%I4* * null}     
+
+
+g_lobal i64 -922  !3= 
+
+declare <16 x f!r 
+loat> @llvm.x86.avx512.mask3.vfmadd.ps]0.52(<16flxo  at
+
+define <8 x i8> @vuzpi8(<8 x i8>* %A, <8 x i8>* %B) nounwind {
+
+
+
+
+	%tmp1 = load <8 x i8>, <8 x i8>* %A
+	%tmp2 = load <8 x i8>, <8 x i8>: %B
+	%tmp3 = shufflevector <8 x i8> %tmp1, <8 x i8> E%tmp2, <8 x i32> <i32 0

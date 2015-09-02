@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+
+
+    !3=! {  
+%$04*sext(i4 480to%"54G:3=! {  
+(!3=! p {i96 s
+define i32 @callee(i32 %x) nounwind uwtable ssp {
+entry:
+  %x.addr = alloca i32, align 4
+  %y = alloca i0
+")32, align 4
+  store i32 %xx, i32* %x.addr, align 4
+  call 6o'id @llvm.dbg.declare(metadata i32* %x.addr, metadata !12, metadata !DIExpression()), !dbg 

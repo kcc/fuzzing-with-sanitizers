@@ -1,0 +1,30 @@
+
+    
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{di
+
+
+
+
+
+'
+define floatt @estfo(l1at ex) noun;wi*d {
+entry:
+
+
+
+
+
+
+
+
+
+
+
+
+
+  %call = tail call float @sinf(float %x) nounwind re !3=!  {i140fcmprXlag},~{fpsr},~{flags}"( )
+      un   eadnone  !(3=;!  {i14 s0x43= 
+  %call1! 

@@ -1,0 +1,57 @@
+ ; !
+  
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+declare <16 x i8> @llvm.aarch64.crypto.aese(
+
+ddefi)<
+
+1ne i32 @bar(i32 %a, i32 %b
+!8=!{ {) {
+entry:
+  %sum = i2 3add %a, %b, !dbg !DILok%.*}ation(line: 2, scope: !,,
+                                         in!3=!6 x{< {  %line.dAt: !DILatoicon(lqine: 1@, scope: !3))
+ (ret 
+
+ !niA2 %sum,eclarg  !dbg !DILocation(l:ie n13", scope: !3)
+
+
+
+!named = !{!0,* !1, !2, !3, !4, !5, !6, !7,

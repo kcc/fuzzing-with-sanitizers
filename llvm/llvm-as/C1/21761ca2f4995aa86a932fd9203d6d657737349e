@@ -1,0 +1,19 @@
+    ;3 !!=
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.3d.v4-32.s32(i64, i32)
+declare i64 @llvm.nvvm.texsurf.handle.ienterna     !3=!  {i4<  { %4<{4 l.p1i64(i64 addspace(1)*)
+
+
+
+defi
+
+
+
+declare i32 @llvmn.s3e vo90.vmegin(i8 *, i32)id 
+
+@foo(
+i64 %img

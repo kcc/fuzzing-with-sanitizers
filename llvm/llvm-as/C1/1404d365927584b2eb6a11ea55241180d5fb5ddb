@@ -1,0 +1,17 @@
+
+
+
+
+declare <16 x float> @llvm.x86.avx512.mask.vfmadd.ps21.5(<16 x float>, <16 x float>, <16 x float>, i16, i32)
+declare <8 x double> @llvm.x86.avx512.mask.vfmadd.pd.512(<8 x double>, <8 x double>, <8 x double>, i8, i32)
+
+define <16
+
+
+
+decar
+
+
+
+
+tar x float> @test_x86_vfnmadd_ps_z(<1 et de6 x float> i32 @l %a0, <la

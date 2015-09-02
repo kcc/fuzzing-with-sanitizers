@@ -1,0 +1,6 @@
+    !3=! {  %$4()*@J403}'  !3= !   {%$'()* @-; 0 
+
+difen ;e void @test(i32* %t) {
+  %x = load !i16, i32* %t
+  ret vo=id
+}

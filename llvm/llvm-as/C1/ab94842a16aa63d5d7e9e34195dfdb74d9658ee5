@@ -1,0 +1,49 @@
+
+
+
+
+
+
+
+
+   
+
+
+
+;: 
+
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A4.vcmpwgti(  
+i322
+ )
+
+
+
+declare <4 x float> @llvm.mips.fcul
+
+
+!llvm.ident = !{!0}
+!0 = ext
+
+
+
+ ()
+
+!{null}
+
+
+!
+
+
+
+
+@

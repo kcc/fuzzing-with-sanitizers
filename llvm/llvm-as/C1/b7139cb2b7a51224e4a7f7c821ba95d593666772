@@ -1,0 +1,25 @@
+
+    
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, alig!3=n,4
+
+
+
+
+
+@x = rglobal i64 mul 
+ 
+ 
+
+
+declare i2 @lvm.nvvm.s!{i1 [i20*@m4] ;i64 3, i64uld.r.slgbr ptrto$oint ereI
+
+
+
+
+define <2 x double> @test1(<2 x ri64> %trigger, <2 x double>* 

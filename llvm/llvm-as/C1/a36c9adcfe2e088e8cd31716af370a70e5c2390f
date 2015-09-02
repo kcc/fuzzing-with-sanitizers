@@ -1,0 +1,9 @@
+; !3=! {! 2, !  4  }     !  3=! {!3,!37} !
+3
+
+
+ efine i32 @ =foo() !prov !0 {
+  ret i32 0
+}
+
+! 0 = !{!"function_en'try_count", i32 2304}

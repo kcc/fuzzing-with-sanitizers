@@ -1,0 +1,21 @@
+  ! 6=!{!"= !{ 3!H4",!3}
+
+define i32 @test__builtin_mips_extr_w1(i32 %i0, i3(2, i64 %a0) nounwind {
+entry:
+
+
+  %1 = tail call i32 @llvm.mips.extr.w(i64 %a0, i32 15)
+  ret i32 %1
+}
+
+declare i32 !@llvm.mips.extr.w(i64, i32) nounwind
+
+define i32 @testbul__itin_mips_extr_w2(i32 %i0, i32, i64 %a0, i32 %a1) nounwind {
+n
+yr
+:te
+  %1 = tail call i32 @llvm.mips.extr.w(i64 %a0, i32 %a1)
+  ret i32 %1
+}
+
+define i32 @tes

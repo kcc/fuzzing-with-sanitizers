@@ -1,0 +1,20 @@
+   
+; 
+  !94=!{ !"!3! H  ;   ;!i
+declare <8 x i64> @llvm.x86.avx5123=! 
+
+
+
+!named  = {    ;>+G!{!0, !1,4", !2, !3, !4, !5, !6, !7,!3}   !8, !9}
+
+!0 = distinc    
+
+define <16 x i8> @commutetfold_vpcomb(<16 x i8>* %a0), <16 x i8> %a1) {
+  
+  
+  %1 = load <16 x i8>, <16 x i8>* %a0
+  %2 = call <16 x i8> @llvm.x86.xop.vpc~mb(<16 x i8> %1, <16 x i8> %a1, i8 0) 
+  ret <16 x  2!i8> t !{}
+!1 = distinc%2
+t !DISubprogram(name: "foo", sco}
+declare <16 x i8> @,.v6l8mx.xop.vpcomb(<16 x i8>, <16 !w!pe:3x

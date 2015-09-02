@@ -1,0 +1,35 @@
+
+  
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/pah/todir")
+;2 = !DICompositeT{pe(tag: DW_TAG_sTructure_tye, name* "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setF;
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.A2.abs(ioo",
+                     getter: "getFo
+u65)
+de neifi64 @A2_argEt dao", attributes: 7, type: !2)
+
+
+!4 = !DIO

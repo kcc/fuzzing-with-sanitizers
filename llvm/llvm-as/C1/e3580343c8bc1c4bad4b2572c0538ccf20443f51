@@ -1,0 +1,30 @@
+
+
+
+
+
+
+declare i3 @a() returns_twice
+ 
+
+
+define zeroext i1 @_Z3fooPb(i8* nocapture %x) {
+entry:
+  %a = load i8, i8* %x, align 1, !range !0
+  %b = and i8 %a, 1
+  %tobool = icmp ne i8 %b, 0
+  ret i1 %tobool
+}
+
+
+
+
+
+!0 = !{i8 0, i4 2}
+
+
+declare float @llvm.maxnum.f32(float, float) #0
+declare <2 x float> @llvm.maxnum.v2f32(<2 x float>,
+ <2 x float>) #0
+declare <4 x float> @llvm.maxnum.v4f32(<4 x float>, <4 x float>) #0
+declare <8 x float> @llvm.maxnum.v8f32(<8 x float>, <8 x float>)

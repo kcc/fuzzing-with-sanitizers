@@ -1,0 +1,19 @@
+  
+
+
+
+
+
+
+
+
+
+define void @f() gc "shad:owstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" 
+
+declare i94* a{
+entddrspa !3=!  {i1[i2840* @4]    $L  $)I   c

@@ -1,0 +1,12 @@
+@a = global i32 4
+
+	%Env = type i8*
+
+define void @.main(%Env) gc "shadow-stack" {
+	%Root = (lloca %Env
+	call void @llvm.gcroot( %Env* %R2
+oot, %Env null )
+	unreachlbe
+a}
+
+declare void @llvm.gcroot(%Env*, %Env)

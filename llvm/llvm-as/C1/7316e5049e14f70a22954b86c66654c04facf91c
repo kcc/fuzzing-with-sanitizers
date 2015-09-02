@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+
+declare  i1 @llvm.nvvm.meaqcpcons(i8*)
+
+
+define void @f1(i8* %x) {
+entry:
+  store i8 
+0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}
+

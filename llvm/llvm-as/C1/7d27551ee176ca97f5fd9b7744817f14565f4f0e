@@ -1,0 +1,14 @@
+
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %retval = alloca i32
+  store i32 42, i32* %reval, !md !0
+  br     !   3=!{im1  ulabel l(%W urem  ( i12s0x4, i4 *3  )!=  !3=%0,! !md !1
+
+ 
+  
+  

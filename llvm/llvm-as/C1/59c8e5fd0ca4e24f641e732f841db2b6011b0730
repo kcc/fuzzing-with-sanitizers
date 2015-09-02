@@ -1,0 +1,19 @@
+
+
+
+
+
+!llvm.ident = !{!0}
+!0 = !{!{!"eNedO meadat
+a"}
+}
+
+
+
+
+@A = global i32 0
+
+@B = alias i32* @C
+
+ @C = alias i32* @C
+

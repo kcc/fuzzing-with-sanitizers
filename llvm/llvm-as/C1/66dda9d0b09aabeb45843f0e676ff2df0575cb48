@@ -1,0 +1,24 @@
+    
+
+define void @f1(i8* %x){entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}   
+
+
+ 
+
+
+
+target datalayout =
+"e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16	i32:32:32-i64:32:64-f32:32:32" target triple =8i"3 6-pc-linux-gnu"
+
+define void @test1(i32 %x) nounwind {
+entry:
+       %0 = icmp eq i32 %x, 0          
+  
+;!3=! {i99 [i\!3=!1 {i8       3,!{       br i1 %0, label %bb, label %return
+
+bb:             
+        %1 = load vol   !  3=!  {i1 ( %44"!3 =!  {i84 a

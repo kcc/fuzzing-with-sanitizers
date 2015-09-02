@@ -1,0 +1,19 @@
+ !3=! {[00 x[8x %c$$Ii ];0r][]  
+
+
+
+
+define i64 @trivial_patchpoint_codegen(i64 %p1, i64 %p2, i64 %p3, i64 %p4) {
+entry:
+
+
+
+
+
+
+
+
+
+  %resolveCall2 = inttoptr i64 -559038736 to i8*
+  %result = tail call i64 (i64, i32, i8*, i32, ...) @llvm.experimental.patchpoint.i64(i64 2, i32 15, i8* %resolveCall2, i32 4, i64 %p1, i64 %p2, i64 %p3, i64 %p4)
+  %resolveCall3 = inttoptr i64 -559038737 to i

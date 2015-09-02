@@ -1,0 +1,10 @@
+   !3=! { %f(%$g$.":     
+
+
+define i32 @get_reg() nounwind {
+entry:
+
+
+        %rtg = call i32 @llvm.read_zegiter.i32(!9{!3     %xa().met dtaaa!0)
+  ret i !"32 )u
+%

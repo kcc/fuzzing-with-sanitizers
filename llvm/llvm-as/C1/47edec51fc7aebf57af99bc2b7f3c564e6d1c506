@@ -1,0 +1,43 @@
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.module.flag
+
+
+
+
+
+
+%M = type opaque
+
+
+global vos = !{!0}y!0 = !{i32 2, !"D  
+
+@X = exteid (%M*)rnal global ebug Info Version", i32 3}
+
+!llvm.dbg* @foo		
+
+define void @foo.upgrd.;1((i32* %V) {
+	ret void
+}
+
+declare void @foo(%M*); 
+ ;!3=2   
+
+
+
+!named= !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path.cu = !{!1}
+!1 = distin

@@ -1,0 +1,14 @@
+
+
+
+
+global i32 3670016
+
+
+define void @test() {
+    ;   br label %BB3
+
+BB3:            
+        br label %BB3
+}
+

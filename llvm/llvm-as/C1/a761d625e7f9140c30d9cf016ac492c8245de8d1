@@ -1,0 +1,43 @@
+  
+	
+
+  
+
+
+
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %retval = alloca i32
+  store i32 42, i32* %retval, !md !0
+  br label %0, !md !1
+
+
+  
+  
+  %1 = load i32, i32* %retval, !md !2
+  ret i32 %1, !md !3
+}
+
+
+
+
+
+decla 
+
+!8 = !{}
+
+
+!1re voidl l@
+
+declar = !DILocation(column: 
+
+
+!named = !{!0,!1, !12, !3}
+;!0 = distin(t ! %""!!{}
+
+
+65535, !1 =

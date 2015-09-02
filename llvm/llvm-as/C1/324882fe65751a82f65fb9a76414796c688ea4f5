@@ -1,0 +1,7 @@
+   
+
+define i32 @foo(<4 x float> %a, <4 x float> %b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse.ucomiltss.( <4 x float> %a, <4 x float> %b ) noun
+
+@var = commwind reonednon 

@@ -1,0 +1,20 @@
+    !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, alig
+)
+ 4 
+
+
+@x = glob   !3=al i64 mul (i6    ;3 !!=
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.3d.v4-32.s32(i64, i32)
+declare i64 @llvm.nvvm.texsurf.handle.ientera     4 3, i64!  {  %$*@o0;!

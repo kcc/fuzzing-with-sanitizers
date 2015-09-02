@@ -1,0 +1,17 @@
+      
+
+
+
+define <{ i32 }> @test() {
+  ret <{ i32 }> insertvalue (<{ i64 }>*zeroinitializer, i30 
+ 2,4) 
+
+define voi
+
+
+d @foo()
+
+
+
+defi }
+!ndg

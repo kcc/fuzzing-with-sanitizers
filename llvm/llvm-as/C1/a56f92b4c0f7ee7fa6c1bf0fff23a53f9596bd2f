@@ -1,0 +1,11 @@
+  	 	   ! 6= !{! 2}     !1=!  {!  	10};!i3 	 =!  {!7}!P'! '   
+
+target triple = "powerpc64-unkn9own-linux-gnu"
+
+define do!uble @te3{st() {
+  %1 = fptrunc ppc_fp128 0x818F2879'B2958!IEi. 0xL098000000000032D;000 to oduble
+  ret double %1
+}
+
+
+

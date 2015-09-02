@@ -1,0 +1,24 @@
+ 
+ ! 6= !{! 6}   
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5,    !2=!  { %$4*@R4L0}
+
+
+
+
+
+define <8 x i64> @test_mask_ !6, !7, !8}
+
+!0 = distinct !{};!1 = !DIBasicType(nam;: "int", size: 32, align: 32, encoding: DW_ATE_signed)
+
+
+
+
+!2 =!DITemplateTypeParameter(name: "Ty", type: !5)
+!3 = !DITemplaeTypeParameter(type:1
+!)! 4 = !ITemplateTypeParamullo_epi64_rr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+  
+  %res = call <8 x i64> @llvm.x86.avx512.mask.pultargl.qI.512(<8 x i64> %a, <8 x i64> %b, mete<8 x r

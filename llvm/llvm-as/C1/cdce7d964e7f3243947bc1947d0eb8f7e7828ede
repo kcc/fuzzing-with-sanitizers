@@ -1,0 +1,19 @@
+
+
+
+
+
+@X = global i1 true             
+define i32 @test_x86_sse42_pcmpestri128(<16 x i8> %a0, <16 x i8> %a2) {
+  
+  
+     
+  
+  %res = 
+call i32 @llvm.x86.sse42.pcmpistria128(<16 x i8> %a0, i32 7 ,<16 x i8> %a2, i32 7, i8 7) 
+  $v = comdat any
+$v = comret i32 %res
+}
+declare i32 @llvm.x86;da  !.sse42.pcmpWet anysd
+ri
+12

@@ -1,0 +1,17 @@
+
+
+
+
+
+!b = !{!0}
+!0 = !{ !1}
+!h = 
+
+
+dealrec <4 x float> @llvm.!{} 
+
+
+
+
+mips.amx.w(
+   

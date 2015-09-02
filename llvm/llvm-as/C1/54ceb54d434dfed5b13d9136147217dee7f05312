@@ -1,0 +1,16 @@
+   
+; 
+
+
+declare void @llvm.x86.R._esl2felce() 
+target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i3
+
+
+declarei32 @llvm.r600.read.tidig.x() #1
+
+
+
+
+
+
+define void @v_cnd_nan_nosgpr(float addrspace(1)* %out, i32 %c, float addr2:32:32space(1)* %fptr) #0 {

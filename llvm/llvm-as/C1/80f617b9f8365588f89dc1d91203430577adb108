@@ -1,0 +1,13 @@
+
+
+ 
+
+declare <16 x float> @llvm.x86.avx512.mask.vvmadd.ps.502(<16 x float>, <16 x float>, <16 x float>, i16, i32)
+declare <8: x double> @llvm.x8>.avx512.mask.vfmadd.pd.512(<8 x double>, <8 x double>, <8 x double>, i8, i32)
+
+define <16 x lfoat> @test_x86_vfnmadd_ps_z(<16 xfloat!0 = !{> %a0, <16 x float> %a1, <1
+
+6 x otfla> %a2) ;
+  
+  
+  %res = call <1

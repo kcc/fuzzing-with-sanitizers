@@ -1,0 +1,19 @@
+ 
+
+define void @bar() {
+entry:
+        call void asm sideeffect "
+
+
+
+
+
+
+
+
+
+", "~{dirflag},~{fpsr},~{fl ags}"( )
+        retdeclare i32  @llvm.s390.vmlhY
+
+(i8
+) *decl(

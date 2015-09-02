@@ -1,0 +1,25 @@
+
+
+
+define void @func() nounwind ssp {
+
+entry:
+  call void asm sideeffect "psrlw $0, %mm1", "y,~{dirflag},~{fpsr},~{fl ags} "(i32 8) nounwind
+  unreachable
+bb367:                           !3=! { %x(%.$ " !3=                      
+  ret void
+} !3=! {i1 2,  !3}!7une ";;M!!= ! {i1(`g  
+
+;defne; ;!y3=!  {!3}!i = !{!3};; !i3=!  {!3}!M=!  {! 3}!\=! {!3}
+
+
+
+
+
+;a*rget    *:
+
+
+
+declare i32 @llvm.s390.vsumgA (i8)  !   6=
+! {!2}! 5- ;4 2,4  !833})3 !T 
+{i1(

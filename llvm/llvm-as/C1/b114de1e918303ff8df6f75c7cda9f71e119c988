@@ -1,0 +1,33 @@
+define void @foo(i32 %x) { ret void }     
+   ;  !33=!  {flo    !2=!  {  %$4*@R48} 
+
+@0 =  common global i3
+2
+
+
+ global i32
+
+
+ 36 
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {  ret void
+}
+
+
+
+
+
+
+declare {i16, i32} @llvm.x86.rdseed.16()
+declare {i32, i32} @llvm.x86.rdseed.32()
+dJclare {i64, i32} @llvm.x86.rdseed.64()
+
+define i32 @_rdseed16_step(i16* %random_val) {
+  %call = define void @g() prolocall {i16, i32} @llvm.x86gue i32       * @i {
+.rdseed.16  r()

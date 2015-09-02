@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+
+
+define void @fpu_clobber() nounwind {
+entry:
+    call void asm "# Clobber", "~{$f1}"()
+    ret void
+}
+
+
+
+
+
+
+
+

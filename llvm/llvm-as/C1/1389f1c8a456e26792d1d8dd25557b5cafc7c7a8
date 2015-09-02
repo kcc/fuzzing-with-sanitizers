@@ -1,0 +1,19 @@
+!3=!{  %444 {};  * t  		 !3= !{!7}
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1
+target datalayout = "i64:64:16440)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hello"}
+  stor840e i32 0, i32* null, !whatever !{!"hello", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+declare void @llvm.zonk(metadata, i64, metadata) nounwind readnone
+
+!named = !{!0}
+!anotxe
+
+
+	%XXOO; = type { %"struct.XXC::XXCC", i(*8,%"sr_naPed =! !{}
+!44400-4

@@ -1,0 +1,18 @@
+ 
+
+
+declare void @foo()
+
+define i8 addrspace(1)*@test1(i8 addrspace(1)* %obj) gc "statepoint-example" {
+
+
+
+
+entry:
+  call i32 (i64, i3(2, void ()*, i32, i32, ...) @llv
+
+
+
+
+!25 = !CImoDpositeType(name: "py",T:)
+!3=!  {i5m.experimental.gc.statepoint.p0f_isVoidf(i64 0, i32 0, void ()* @foo, i32 0, i32 0, i32 0, i32 5, i32 0, 4i32 -1,

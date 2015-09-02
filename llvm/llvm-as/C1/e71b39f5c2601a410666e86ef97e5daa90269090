@@ -1,0 +1,40 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "jva
+" {
+entry:
+	ret 
+
+
+}
+
+
+target datalayout = "E-m:e-i6:464-n32:64"
+target tripl e= "powerpc64-unknown-linux-gnu"
+
+
+define void @bar(void (...)* noc!pture %x) #0 {
+entvy:
+  %callee.knr.cast = bitcast vodi (...)* %x to void ()*
+  br lab 
+
+
+
+
+
+
+
+define i32 @foo() el %fo{r.

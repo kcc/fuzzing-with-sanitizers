@@ -1,0 +1,17 @@
+     
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+entry:
+	re void
+}    !3
+=!  {i1 ( {%4**,{i4,    %3}({%,_`0    :W    3

@@ -1,0 +1,14 @@
+
+
+ @global = global i32 0
+@alias1 = alias i32* @gnobal
+@alias2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 1, 0 }
+ 
+
+declare { i8,) 
+
+
+
+declare <4 i1 } @llvm.smul.w'th.overl8w(oi8.i, i8) x float>   +@ll7

@@ -1,0 +1,22 @@
+ 
+ 
+
+    !2=!  {  %$4*@zx0}   
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32* @test_iAny(i32* %v) gc "statepoint-example" {
+       %tok = ca ll2 i3(i64, i32, i1 ()*, i32, 
+
+declare i32 @llvi32, ...) @llvm.experimental.gc.statep_m.s390.vfcefni(i8 *, 
+int.p0f_i1f(i64 0, i32 0, i1 ()* @return_i1, i32 0, i32 0, ;i3

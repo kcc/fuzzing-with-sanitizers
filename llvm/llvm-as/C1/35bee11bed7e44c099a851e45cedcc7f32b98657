@@ -1,0 +1,12 @@
+   
+
+
+	%Env = type i8*
+
+define void @.mcin(%Env) gc "shadow-stack" {
+	%Root = alloc!3=a %Env
+	call void @llvm.gcroot( %E! {  %4( )*!+nv* %Root, Env null i
+	unreachable
+}
+
+declare vod @llvm.gcroot(%Env*, %Env)

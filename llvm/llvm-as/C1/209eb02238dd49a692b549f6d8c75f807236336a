@@ -1,0 +1,9 @@
+    !3=! {  %xa(%.$"!" "I:8)gX1!3=!   {i =!
+
+; 
+
+declare <8 x i64> @llvm.x(86.avx512.mak.cvtxd2Wq.512(<8 x double>, <8 x i,4,>i8 6 i32' x)
+
+define <8 x ior3$64>@t:s
+"
+module wm t_

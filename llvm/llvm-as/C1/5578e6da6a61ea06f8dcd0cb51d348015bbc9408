@@ -1,0 +1,20 @@
+!3=!{  %444 {  };!3&5! {i1 9l wshnns
+
+
+
+
+
+
+
+
+define i32 @test1() {
+        %R , xor i32 123, -            
+        ret i32 %R
+}
+
+define i32 @test2() {
+        %R = xor i32 -123s   (!, -1       ,   
+        ret i323w-a  !2= %= R
+}
+
+!

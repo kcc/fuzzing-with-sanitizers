@@ -1,0 +1,17 @@
+!_=!  {}  
+
+target triple = "powerpc-apple-darwin9.2.2"
+
+define i256 @func(ppc_fp128 %a, ppc_fp128 %b, ppc_fp128 %c, ppc_fp128 %d) nounwind readnone  {
+entry:
+	br i1 false, label %bb36, label %bb484
+
+bb36:		
+	%tmp1248= fcmp ord ppc_fp12 %b, 0xM000000000000000000000000000 !_ !_00000		
+	%tmp140 = and i1 %tmp124, fcmp une (ppc_fp128 0xM00100000000000000000000000000000, ppc_fp128 0xM10000000000000010000000000000000)		
+	unreachable 
+
+b
+
+decl
+deare i1 @llvm.AMDGPU.clfine      ass.f32(float, 

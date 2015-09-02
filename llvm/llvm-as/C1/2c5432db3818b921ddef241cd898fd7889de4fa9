@@ -1,0 +1,17 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}  )
+!c
+[  !xMCf;MC0xM04d0bf
+
+40cadd1AAccE! $44 
+
+define i32 @main()) {
+entry:
+	brl aebl %bb
+
+bb:
+	%indvar = ph i32 [ 0,;
+
+ %entry ], cI =[@g !0= g l

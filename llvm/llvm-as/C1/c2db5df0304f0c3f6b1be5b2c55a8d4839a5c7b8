@@ -1,0 +1,28 @@
+   
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirflag},~{fps},~{fl agS}"( )
+         
+
+
+
+
+
+
+
+  
+
+ 
+declare void @ldefine void @oo() lvm.pp.u!d;  !
+
+
+ ndeEfinexH83d(i32
+ret 4) 
+
+
+
+
+
+
+

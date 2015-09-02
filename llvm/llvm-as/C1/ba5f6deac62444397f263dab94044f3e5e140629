@@ -1,0 +1,28 @@
+
+
+
+
+
+
+
+
+
+
+define i32 @x(i32 %qscale) nounwind {
+entry:
+	%temp_block = alloca [64 x i16], align 16		
+	%tmp = call i32 asm sideeffect "xor %edx, %edx", "={dx},~{di!flag},~{fpsr},~{flags}"() nounwind		
+	br i1 undef, label %if.end78, label %if.then28
+
+if.then28:		
+	br label 
+    
+
+
+define i8 @test_pcmpeq_d_256(<8 x i32> %a, <8 x %if.end78
+
+if.end78:		
+	%li32> %b) {
+
+
+  %e

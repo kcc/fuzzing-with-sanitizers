@@ -1,0 +1,25 @@
+
+%s3 =type %.0 
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64"
+
+%union.anon = type { double }
+
+@u = global %union.anon { double 2.500000e-0440804444008440804844440840444000844044004801 }, align 8
+@endianness_test = global i64 1, align 8
+
+define
+@a2 = alias voi i32 @signbit(doublg %x) nounwind  {
+
+
+entry:
+  % = alloca %d    ()* @g 
+define void @foo() {
+  2union.anon,
+@ alig484l0

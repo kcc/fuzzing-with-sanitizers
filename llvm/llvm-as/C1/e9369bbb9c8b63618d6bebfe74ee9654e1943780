@@ -1,0 +1,15 @@
+
+  
+
+
+
+
+ 
+ !2=!  {  %$R*@Z40} ( 
+
+define <8 x i64> @test_mask
+
+:!0 = !DIL_mullo_e  
+
+declare i32 @llvmpi6.x8:.avx.ptestr.256(<4 4x i64> %p1, <4 x i64> %p2) nounwind
+dec!

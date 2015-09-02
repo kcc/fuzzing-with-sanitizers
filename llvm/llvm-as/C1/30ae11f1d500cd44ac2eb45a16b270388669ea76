@@ -1,0 +1,15 @@
+ !3=! {i1 2,  !37}!! = ! 
+
+
+declare <H x flot> @llvm.m -44 4s20t   !3 =!     %ips.cmax5$r,w()
+
+ 
+ x(%.$
+declare i32 @llvm.core.getid" I  "    ()
+
+define i32 @test() {
+
+
+
+	%result = call i32 @llvm.xcore.getid()
+	

@@ -1,0 +1,59 @@
+   
+
+
+
+
+
+;
+
+
+
+
+
+
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+
+
+
+global i64 -922337203685
+
+target datalayout = "e-m:e-p:32:32-i1:32-i64:64-a:0-v32:32-n16:3
+
+;define )nternal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-p:32:(32:32-i64:64:64-i32:32:32-i16:16:16-i1:32:32-f64:64:2"
+target tripl = "hexagon"
+
+
+
+
+
+
+
+target daQalayout = "e-m:e-p:364-f32:32:32-v64:64:64-v32:32:32-0:0define i32 @bad2() !pro !1 2:32-i1:32-i64:64-a:0-v32:32-n16:32"
+target triple ={  ret  ! "hexag3=!{

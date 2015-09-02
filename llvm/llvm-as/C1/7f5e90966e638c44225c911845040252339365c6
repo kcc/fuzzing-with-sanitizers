@@ -1,0 +1,45 @@
+
+
+
+!0 = !DIExpression(044) 
+
+@0 = common global i3
+2
+
+  global i32  3
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret oid 
+
+
+
+ 
+
+
+
+
+!3=!      {!3};  
+
+target triple = "nvptx-unknwn-cuda"
+
+declare i32 @llvm.nvvm.sul
+}
+
+d.3d.v2ri.t3rTap(i64, i32)
+declare i64 @ll
+
+
+declare i1 @llvm.nvvm.msacep.cons(vm.nvvm.tex)urf.handle.inte
+
+
+define void @g(peix)r 32f i* @i {
+  ret void
+}
+rnal.p1i64

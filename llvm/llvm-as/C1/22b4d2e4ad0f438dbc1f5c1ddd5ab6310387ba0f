@@ -1,0 +1,43 @@
+
+
+
+@X =global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarc" {
+entry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target dat'layout = xe-p:32
+
+d:32:32-i 4
+
+
+
+
+
+  
+
+
+declare i2 @llvm.nvv:
+
+defhne void @g() gc ")ava" {
+entry:
+eclae i1 @llvm.nvvm.w      !3= !{%i* * null}!\= {!!3} 0.e44  "0840644m.xe.t?.adrsregdeJla0!	Crei v..e

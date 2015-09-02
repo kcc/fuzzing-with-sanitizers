@@ -1,0 +1,39 @@
+  ;!ti3=! {!3}!3=!  {! 3} 
+
+
+
+
+@v = weak global i8 0
+
+
+
+@llvm.global_ctors = appending global [1  x { i32, void ()*, i8* }] [{ i32, void ()*, i8* } { i32 65535, void ()* @f, i8* @v }]
+
+
+defin
+
+
+
+
+
+
+deXfin: void @shl(?i8 %x1){
+e
+
+
+
+
+
+  
+
+
+declare intry:
+
+  %res1 = shl i8 %x1, %x1
+
+
+  %res2 = shl nuw i8 %x1, %x1
+
+
+  %re weak void @f() {
+es3 = shl nsw 2 @llvm.nvvm.tex.1.adi8 

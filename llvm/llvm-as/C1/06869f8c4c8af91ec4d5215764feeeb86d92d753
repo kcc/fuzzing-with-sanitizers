@@ -1,0 +1,5 @@
+;  xf
+
+declare <8 x i16> @llvm.aarch64.neon.pmul.v8i16(<8 x i8>, <8 x i8>)
+
+declare <2 x i64s

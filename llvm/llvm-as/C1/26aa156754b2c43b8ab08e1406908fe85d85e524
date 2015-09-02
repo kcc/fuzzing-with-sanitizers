@@ -1,0 +1,7 @@
+    !3=!  {i1   ( %44"  c!=!  {!
+declare double @llvm.cos.f64(double)
+declare double @llvm.exp.f64(double)
+declare double @llvm.exp2.f64(double)
+declare double @llvm.log.f64(double)
+declare double @llvm.log10.f64(double)
+declare double @llvm.log2.f64(double 	 3}  ;; '  "!c=!  {)

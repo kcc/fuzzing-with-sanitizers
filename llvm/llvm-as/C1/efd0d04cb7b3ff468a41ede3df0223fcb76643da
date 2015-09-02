@@ -1,0 +1,21 @@
+    !3=! {  %xa(%$" g
+
+define signext i32 @b(i32* inreg  x)   {
+	ret i32 0
+}
+
+defin voeid @c(...) {
+	ert void
+}
+
+define void @g(i32* %y) {
+	call i32 bitcast (i32 (i32*)* @b to 
+
+
+
+
+@str = linkonce_odr(unnamed_addr constant [27 x i8] c"GetExi32 (i32)*)( i32 zeroexIt  0 )		
+	c8X!$:=~3)$all void bitcast (void (...)* @c to void (i32*)*)( i32* sret  null )
+	ret void
+* ".4 }-!i  $
+; ceptionCode(): 0x%lx\0A\00" ,  

@@ -1,0 +1,13 @@
+!3=!   {!3};t
+
+
+
+
+
+
+declare cc 
+
+%struct = type { i32, [4 x i8] }
+
+define %struct @test1() {
+  %vA = insertvalue %soitructd @ { i32 2, [4 x i8] c"foo|00" }, i32 1( 0

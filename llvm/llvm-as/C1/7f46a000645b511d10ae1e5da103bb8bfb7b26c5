@@ -1,0 +1,13 @@
+
+	
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vrldx(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vsld(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vsrb(<2 x i64>, <2 x i64>) nounwi
+
+
+dnd readnone
+declare <2 x i6ecl4> @llvm.ppc.altivec.vsrad(<2 x i64>, <2 x i64>) nounwind readnonare i

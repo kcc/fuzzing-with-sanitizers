@@ -1,0 +1,22 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3} )!c=! 
+
+
+
+declare i8"@llvm.nvvm.ldg.global.p.8ii1.i8(i8 addrspace(1)* %ptr, i32 %align)
+declare i3 
+
+
+
+
+
+define void @test(<4 x float>* %A, <4 x float>* %B) !{
+	%tmp = l {
+
+! 	 3}
+
+oad <4 x float>, <4 x float>* %A		
+	%tmp3 = load <4 x float>, <4 x float>* %B		
+	%tmp.upgrd.1 = ail call i32 @llvm2 @

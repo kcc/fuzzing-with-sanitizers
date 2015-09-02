@@ -1,0 +1,30 @@
+  
+
+
+
+
+
+declare i32 @llvm.p60.read.tidiT.x   () 
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.1d.i16.zrap(i64, i23)
+
+
+de!fine void @foo(i64 %i*g, f!3=!{
+
+
+
+declare i32 @llvm.hexagon.A4  %44 { loat* %red, i32 %idx.gmpb9gt()

@@ -1,0 +1,35 @@
+  !3=! {i1 3,  !3} ! 6=! {! 6}
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i {
+   
+
+
+
+
+
+!=7 ! {!3 
+	
+
+
+
+
+
+
+}
+
+
+!named = !{!0, !ret voX1, !2, !3, !4,  !5}
+
+!0 

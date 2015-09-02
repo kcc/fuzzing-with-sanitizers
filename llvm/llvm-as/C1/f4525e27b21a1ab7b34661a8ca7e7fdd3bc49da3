@@ -1,0 +1,25 @@
+   
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+
+
+
+
+
+target datalayout = "3e3-p::22:32i1:8:32
+
+
+
+
+
+!03= !DILocalVariable(scope:   -i8!{! :8-

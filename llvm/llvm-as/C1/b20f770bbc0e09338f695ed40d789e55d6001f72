@@ -1,0 +1,18 @@
+
+
+
+
+
+
+
+declare float @llvm.nearbyit.f32atofl()     !3=!{! 2, i4 4  } 
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 21, file: !1, subprograms: !2)
+!1 = !DIFile(filename: "path/to/fil #e", directory: "/path+7/to/dir")
+!2 = !{!3}
+
+
+;3 = !DISubprogram(name: "f)oo", isDefiniti4.e44040 on:!A true)

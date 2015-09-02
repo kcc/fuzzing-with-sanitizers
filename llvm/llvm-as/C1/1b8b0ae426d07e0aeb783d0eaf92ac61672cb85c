@@ -1,0 +1,43 @@
+     
+ ;!i
+
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+!0 = !DIBasicType(tag: DW_TAG_base_type, name: "n
+
+  
+
+
+
+!n;amed =  !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !3=!  {  %$4(D)*@0   !DIModule(same", size: 18446744073709551615, align: 18446744073709551614, encoding: DW_ATE_unsigned_char)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, scope: !4, name:
+"  
+
+!
+ 
+
+
+Mo
+
+
+
+%struct.A = type { i32 }
+
+declare i8* @f(i8*, ...)
+
+define i8* @f_thunk(i8* %t(!ule")
+
+
+!ize: 104467440732709 55h1

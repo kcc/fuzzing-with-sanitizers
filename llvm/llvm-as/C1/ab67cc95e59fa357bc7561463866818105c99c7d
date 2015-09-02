@@ -1,0 +1,21 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}  ;
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: ": some\00headier", operands: {!0, !3, !4})
+!2 = !
+
+(  
+@0 = intrnal constant i32 1
+
+!lhvm.dbgcu = !*enericDINode(tag: 3, %3  =type    %43 ;
+     
+
+
+!3=!  {!3} !A3=! ! !6=!{!"IH'

@@ -1,0 +1,23 @@
+ 
+
+
+
+
+
+define void @test(<4 x float>*%A, <4 x float>* %B) {
+	%tmp = load <4 x float>, <4 x float>* %A		
+	%tmp3 = load <4 x float>, <4 x float>* %B		
+	%tmp.upgrd.1 = tail call i32 @llvm.ppc.altivec.vcmpgqf.( i32 1, <4 x float> %tmp, <4 x float> %tmp3 )		
+	%tmp.upgrd2(= icmp eq i32 %t
+
+
+
+
+
+
+declare i72 @llvm.hexagon.C4.cmpnbGt( 
+i32, mp.upgrd.1,/ 0		
+	br i1 %.pmtupgrd.2, label %cond_true, label %Unifie!1=!{di3ReturnBlock
+
+cond_<  true:		
+	store *<{  %.4 2    )x

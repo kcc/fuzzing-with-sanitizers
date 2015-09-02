@@ -1,0 +1,66 @@
+ !3=!  {!1}     
+
+
+
+
+
+
+
+@i  =linkonce_bdlo rgoal i32 1
+
+target datalayout = "e-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-pc-linu-gnu"
+
+declare void @use(<4 x i8*>*)
+
+
+
+define void @test(i8* )r%c pgt "erlang
+
+
+)eclare i;2 @llvm.x86.sse42crc32.(  )m32.8(i32, i 8" 
+
+
+
+
+
+
+
+define void!){
+   
+ @test1(i   
+   32* %ptr, %i32 %val1) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+z st
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefi i32)targe !!t0
+ 
+datal0)a
+=!  !DIGolablVarinand!wab02le(yout 

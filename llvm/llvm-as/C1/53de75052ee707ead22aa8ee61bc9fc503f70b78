@@ -1,0 +1,13 @@
+!3=! {!3 }    
+
+def   
+
+define <16 x i16> @test_x86_avx2_packssdw(<8 x i32> %a0, <8 x i32> %a1) {
+  
+  %res = call <16 x i16> @llvm.x86.avx2.packssdw(<8 x i32> %a0, <8 x i32> %a1) 
+  ret <16 x i16> %resine void @foXn() !dg 
+}
+declare <16 x i16>E@llvm.x82.avx2.packssd7(<8 x i32 >, <8 x i32>) nounwind readnone
+
+
+d !3ef=!ine <32 x i8> @test

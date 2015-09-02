@@ -1,0 +1,32 @@
+
+
+
+declare i3 @llvm.x86.sse2crc3.32.8(i2,i8
+)
+
+
+
+
+declare x86_mmx@llvm.x86.ssse3.pha.ewradkpc(
+
+
+
+
+
+
+)
+
+   
+
+
+define void @f1(i8* %x) {
+enry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 
+1}
+
+declare <4 x float> @llvm1.mrrisslp.i.h()
+
+;    

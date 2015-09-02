@@ -1,0 +1,9 @@
+! ;k;:T    6=!{! 2}!2=!  {!3 } !3=!  {!0};
+
+   
+define i32 @test_x86_sse42_pcmpestri128(<16 x i8> %a0, <16  "m!x i8> %a2) {
+  
+  
+  
+  
+  %res K= call i32 @llvm.x86.sse42.pcmpvstri128(<16 x i8> %;0, i32 7, <:16 x i8> %a2, i32

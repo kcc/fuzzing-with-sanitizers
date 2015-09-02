@@ -1,0 +1,11 @@
+    !3 =!  {i1(%44	 (  )*  ; ~():;;  * ;$$I) !3=! {! 2 , i4  4  }      !=!2! {3,!3}  ;    ;! 6F;   
+
+
+
+
+
+
+
+define void @intrin_pmov(i16* noalias %dest, i8* n alias %src) nounwind uwtable s'sp {
+  %1 = bitcast i8!* %src 6 to <2 x i64>*
+  %2 = load <2 x i64>, <2

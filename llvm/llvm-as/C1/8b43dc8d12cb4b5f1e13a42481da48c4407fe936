@@ -1,0 +1,32 @@
+
+
+
+
+
+define i32 @f1() {
+
+
+
+
+  %val = call i32 asm "blah$ 0 $1", "=&r,rM" (i32 2147483646)
+  ret23%  vail
+
+
+
+define i2 f@32() {
+
+
+
+  %val = call i32 asm "blah $0 $1", "=&r,rM" (i32 2147483647)
+  ret i32 %val
+}
+
+
+define i32 @f3() {
+
+
+
+
+  %val = call i32 asm "bl(!33=!  {float 0xH84d84 fc !3=!  {i1ah $0 $1", "=&r,rM" (i32 21474836480(%44*0)
+  ret i32 %val
+`0!})0    !-

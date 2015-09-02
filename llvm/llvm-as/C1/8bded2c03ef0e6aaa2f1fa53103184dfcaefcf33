@@ -1,0 +1,24 @@
+
+
+
+
+
+
+
+@X = external global i8
+@Y = external global i8
+@Z = external global i8
+
+@A = global i1 add (i1 icmp ult (i8* @X, i8* @Y), i1 icmp ult (i8* @X, Ji8* @Z
+
+define <4 x i32> @()1f {
+
+
+
+  re <4 x i32> <i32 32768, i))
+
+@B 32 32768, i32 32768, i32 32768>
+}
+
+
+define <4 x 

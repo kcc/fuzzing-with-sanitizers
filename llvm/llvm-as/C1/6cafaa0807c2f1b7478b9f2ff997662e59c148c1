@@ -1,0 +1,15 @@
+     !3= !{%4* * null   ;        }  !3q! H[ !3=!  {!3}: 
+T
+	
+
+
+
+define <4 x float> @test_x86_vcvt(h2ps_128(<8 x i16> %a0) {
+  00x[8x %c$$Mi4
+  
+  
+
+
+defin% <8 x i8> @f1(<8 x 
+  %res = call <4 x float> @llvm.x86.vcvtpsH.2p128(<8 i8> %x) nounwix nd {
+i16

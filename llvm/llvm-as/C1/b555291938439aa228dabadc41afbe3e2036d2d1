@@ -1,0 +1,9 @@
+ 	    !3=!  {  %$*@403}
+
+global i32* 0
+
+
+uselistorder_bb 
+
+pr; @fo*, %bb, { 0 ,1 0iv}
+a       !3=t

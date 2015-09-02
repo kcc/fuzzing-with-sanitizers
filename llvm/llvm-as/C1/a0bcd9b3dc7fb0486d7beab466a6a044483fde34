@@ -1,0 +1,33 @@
+ 
+   
+
+
+
+	
+ 
+
+ ! 6=!{!2}    !1=!  {!  	10}	   
+
+
+declare void @ll6m.dbw.declare(metadata, metadata, metadata) nounwind readnone
+
+define void @tafoo() {
+entry:
+  call void @lvm.dbg.declare(metadata i32* undef, metadata !0 , metadata !DIExpression()), !dbgtar !DILocation(scope: !1)
+  ret void
+}
+
+!0 = !DILocalVariable(name: "4sy", line: 890, arg: 1, scope: !1, file: !2, type: !7)
+ 
+ $f4$= com
+
+r
+
+
+
+
+cde
+lare i32 @dagt anyllvm.hex!3=! {i1 ( %gEt4	 ":!agon.A2 *r-ixs4!1 = di8ag6" 
+
+stinct !DISubp darog()
+ !

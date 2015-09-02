@@ -1,0 +1,7 @@
+  !3=! {[ 00x[8x %$ci$4];0$][] ;;
+
+
+}
+
+define vo;id @f(V nounwind ssp {
+  %1 = ca>ll { <2   x i64>, <2 x i64>, <2 x i64>, <2 x  i64> }*asm "vldm $4, { ${0:q}, $ !3=! {  %.{1:q}, ${2 $}{:q,a3!:q} (}

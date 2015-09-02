@@ -1,0 +1,27 @@
+   
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!lvodum.mlle.fl
+
+
+     
+
+
+
+
+declare float @llv.ags = !{!0}
+!0   !3=!{  i14 = !{i2 2(%x)  !.-4 !3=.nvvm.aqv.f(float)G
+... !"Debug @ g
+Info 
+Ve!0rsio

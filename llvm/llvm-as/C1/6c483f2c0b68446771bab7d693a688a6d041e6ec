@@ -1,0 +1,28 @@
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @L() prefix i32 1 
+
+!
+
+
+
+
+
+
+de{
+  ret void
+}
+
+
+
+
+define void @g() prefix i32ta;rget cldara

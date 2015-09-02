@@ -1,0 +1,26 @@
+
+;;t ;ar
+
+define void @f1(i8* %x) {
+entry:
+  store i8  0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}
+
+
+
+
+r
+ 
+
+dec!are i32 @llvm.hexagon.My4Upr.rbaaddi(    ;!i3=! {!3}
+declare void  
+
+
+ @
+
+i32, il32)
+
+lvm. xcore.crted(i32)
+!ecla

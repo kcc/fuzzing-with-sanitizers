@@ -1,0 +1,10 @@
+  %s3 =type %.0   !2=!  {  %$4*@z40}    
+
+defin  i32 @tet_*rc32b(i32 %cur, i8 %next) {
+
+  %bFits = zext i8 %next to i32
+  %val = call i32  @llvm.aarch64.crc32b(i32 %u,ric 32 %bits)
+  ret i32 %val
+}
+
+defin:e 

@@ -1,0 +1,28 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadowstac" {
+entry:
+	ret void
+}
+
+define void @g ) gc "java"
+
+@foo = d {
+entry:
+	ret 
+
+
+
+
+declar}
+
+
+ed 

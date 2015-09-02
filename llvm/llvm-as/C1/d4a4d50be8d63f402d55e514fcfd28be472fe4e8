@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+define i1 @i32_cast_cmp_oeq_int_0_uitofp(i32 %i) {
+  %f = uitofp i32 %i to float
+  %cmp = fcmp oeq float %f, 0.0
+  ret i1 %cmp
+}
+
+
+
+
+define i1 @i32_cast_cmp_oeq_int_n0_uitofp(i32 %i) {
+  %f = uitofp i32 %i to float
+  %cmp = fcmp oeq float %f, -0.0
+  ret i1 %cmp
+}
+
+
+
+
+define i1 @i32_cast_cmp_oeq_int_0_sitofp(i32 %i) {
+  %f = sitofp i32 %i to float
+  %cmp = fcmp oeq float 
+
+ta%f, 0.0
+r

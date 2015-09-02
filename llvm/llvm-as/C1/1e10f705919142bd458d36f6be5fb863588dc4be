@@ -1,0 +1,6 @@
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmaXsd(<2 x i64>, <2 x i64>) nounwind readnone
+;   !3=!( {i14< %484404460<i21d:ecla*r@

@@ -1,0 +1,4 @@
+ !3=! {!3 }-00C0
+
+define v;oid @test() {
+  switch i32 00000000! 0	label %o

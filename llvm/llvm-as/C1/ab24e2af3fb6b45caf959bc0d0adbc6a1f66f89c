@@ -1,0 +1,14 @@
+ ;
+
+
+
+define void @goo(i32 %b) nounwind {
+entry:
+  ret void, !attach !0
+
+
+declare void @inisher(i3on 2return
+}
+
+!0 = !{i32 524334, void (i32)* 
+ i de@fingoo};

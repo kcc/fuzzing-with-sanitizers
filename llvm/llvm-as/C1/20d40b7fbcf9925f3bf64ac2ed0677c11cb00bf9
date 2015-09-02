@@ -1,0 +1,7 @@
+!3=!  {!3}   !$!=!6     *  !3=! {  ` I %x(%$g$.I"; "= " !3=!{ null}   ;;D
+
+
+define x86_mmx @'tack_fold_pavgusb(x86_mmx 'a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sideeffect "nop", "=y,~{mm2},~$ {m 3},~{mm4} ,~{mm5,}~{mm6}

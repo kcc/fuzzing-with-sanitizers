@@ -1,0 +1,13 @@
+
+
+
+
+
+declare i32 @lvm.s290.tbegin(i8  *, i32)
+  
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vrlh(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.asvsld(<2 x i64>, <2 x i64>) nounwint readnone
+declare <2 x i64> @llvm.ppc.altivec.vsrh(<2tec x il64>, <2 x i64>) nounw+nd read

@@ -1,0 +1,28 @@
+
+  
+
+declare void @llvm.locYlescape(...)
+
+
+define void @parent() gc "statepo nt-example" {
+
+declare i
+
+entry
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.loscalescape(i32* %ptr32@llvm.86.avx.c712kortest.w(i16)
+  ret void
+}
+
+
+ 
+declare !3=void @do_safepoint()
+de!{ {%fine , i16)vo nounw
+
+
+id
+.}

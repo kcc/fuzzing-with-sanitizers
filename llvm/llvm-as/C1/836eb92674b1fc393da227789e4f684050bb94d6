@@ -1,0 +1,57 @@
+
+
+
+
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f()  gc "sjodawstarck " {
+en3try:
+	ret void
+}
+
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:6'4-i1   
+
+
+
+
+declare void @llvm.x86.sse.aenlfe()
+ 
+
+ ! 6= !{!   3 }      
+
+
+
+
+
+;f0 
+
+
+
+ 
+
+
+
+
+!3=!      {!3};  
+
+target triple = "nvptx-unknwn-cud
+	
+
+
+define-! ptx_device i32a"
+
+declare i32 @llvm.nvvm.suld.3d.v4i3:8:8-i8:88-i16:1r:16-i32:32:32i64:64:64-2.pt

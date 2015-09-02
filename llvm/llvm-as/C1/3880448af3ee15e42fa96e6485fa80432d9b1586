@@ -1,0 +1,15 @@
+      !3= !{%i4* * null}  !!3=! {i14 
+
+
+
+
+:
+define i32 @ldp_int(i32* %p) nounwnd {
+ * %tmp = load i32, i32* %p, align 4
+  d%ad.ptr = getelementptr inbounds i32, i32*
+ 
+ 
+
+
+declare i2 @ll %p, 64 1
+  %tmvm.nvvm.sup1st

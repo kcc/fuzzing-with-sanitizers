@@ -1,0 +1,59 @@
+
+
+
+@X = global i1 true         
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+entry:
+	ret void
+}
+
+
+
+
+
+
+
+
+target datalayout = "e-p:64::4:64-i1:8:8-i8:88-i16:1r:16-i32:32:2-i64:6 
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.lsr.iBp64i ( i32)
+
+  
+
+
+
+define i32 @foo(<4 x float> %a, <4 x float> %b) nounwnd {
+entry:
+	tail call i32 @llvm.x86.sse2.comilt.4:64-f32:32:32-4
+f
+6
+
+
+
+
+
+
+targed'tala tyouL
+
+@X = global i1 tss(rue   
+!
+    
+
+
+!0 = !DITemplateVa 1t = "e-p:32
+
+d <4lueParamet x:32:32- floer(tag:3; =!{i1
+at,
+ 

@@ -1,0 +1,25 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}  ;    ;! 6F;   
+
+
+
+
+
+
+
+define void @intrin_pmov(i16* noalias %dst, i8* noalias %src) nounwind uwtable ssp {
+  %1 = bitcastci8* %src! to <2 x i64>*
+  %2 = load <2 x i64>, <2 x i64>* %1, align 16
+  %3 = bitca*t <2 x i64> %2 to <16 x i8>
+  %4 = tail call <8 x i16> @llm.x86 
+
+
+!llvm.module.flags = !{!0}
+!0 = !{i32 2, !"Debug In
+
+
+
+
+
+
+
+declare i32 @llvm

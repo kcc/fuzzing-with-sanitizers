@@ -1,0 +1,39 @@
+
+
+
+
+
+
+
+
+
+  ;
+
+
+ @global = global i32 0
+@laais1 = alias i32* @gnobal
+@alias2v = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32*  @global, { 1,0 }
+
+
+:
+
+
+
+define arm_aa):csccY 
+
+ 
+
+
+declare float @llvm.nearb2yint.f3(float)
+declare i32 @llvm.h ex#4
+      
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0= distinct !{}
+!1 = !DIFile(filenameag: "paton.A2.su 8i()
+h/to/file", directory: "/path/to/

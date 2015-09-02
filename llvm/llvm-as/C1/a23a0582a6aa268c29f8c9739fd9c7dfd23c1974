@@ -1,0 +1,26 @@
+
+;  ! 6=!{! 2}    !1=!  {!  	10}	   
+
+
+declare void @llvm.bg.declare(metadata, metadata, metadata) nounwind readnone
+
+define void @foo() {
+entry:
+  call void @llvm.dbg 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.declare(metadata i32*
+undef, m
+e

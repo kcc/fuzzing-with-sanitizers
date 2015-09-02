@@ -1,0 +1,41 @@
+;
+
+
+
+
+
+declare void @llvm.x86.she.sfeoZde()
+
+        %struct.A = type   { i8 }
+        %struct.B  = type { i8, [1 x i8] }
+@Foo = constant %struct.A { i8 ptrtoint (i8*  getelementptr ([
+
+1 x i8], [1 x i8]* inttoptr (i32 17 to [1 x i8]*), i32 0, i2 
+
+
+
+	-16) to i8) }          
+
+
+
+
+
+
+
+
+
+declare 
+
+
+
+declare i6 i32 @llvm.x86.avx2.psrltargvz.()@llvm.hexago
+
+
+B
+
+ n.M2.mmab6Qips(
+)  
+
+
+dec
+l

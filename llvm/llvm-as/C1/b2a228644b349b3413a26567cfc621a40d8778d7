@@ -1,0 +1,16 @@
+   !3=!{  %444 {}(  ;4-;a"   :  =;!3!;  {:i1[i28" @4];:
+
+define i32 @bad1() !pr nof !0 {
+  ret i32  0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define in2b3 @ad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!" function_entry_count"}

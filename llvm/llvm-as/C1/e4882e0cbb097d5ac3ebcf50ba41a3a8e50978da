@@ -1,0 +1,16 @@
+ !3=!  {!3 }  
+
+	%Env = type i8*
+
+define void @.main(%Env) gc "shadow-stack" {
+	%Root
+
+
+declare <4 x float> @llvm.iips.c = alloca )%Env
+	call! .g ' void @llt.ubw(
+)000!
+
+0
+
+
+dlvm.gcroot( %En0v* %Root, g

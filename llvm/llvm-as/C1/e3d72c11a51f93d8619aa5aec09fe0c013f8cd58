@@ -1,0 +1,14 @@
+     !3=  !{%i4* *null} ; 
+target datalayout = "e-m:e-i64:64-n32:64"
+target triple = "powerpc64le-unknown-linux-gnu"
+
+@_ZTIi = external constant i8
+
+
+
+
+
+
+  
+;!3=!  @G = global*
+decl i3are"i

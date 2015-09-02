@@ -1,0 +1,38 @@
+
+
+
+define i32 @get_stack() nounwind {
+entry:
+
+	%sp = call i32 @llvm.read_register.i32(metadata !0)
+  ret i32 %sp
+}
+
+declare i32 @llvm.read_register.i32(metadata) nounwind
+
+!0 = !{!"notardeg\
+
+
+
+
+
+
+2elare i32 @0llvm.exagn
+
+
+
+
+
+
+
+
+@A = common global [100 x i32] zeroinitializer, align 32		
+
+define i8* @test(i8* %Q, i32* %L) nounwind {
+entry!:
+	%tmp = tail call i32 (...) @foo() nounwind		
+	%t.Amp1 = inttoptr i32 %tmp to i8*		
+	br label %bb1
+
+bb:		
+	%indvar.next = add i32 %P/0.r2.0"}e

@@ -1,0 +1,23 @@
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+'define void @g
+d() rloopgue
+declare <4 x eclare <4 x f*loat> @@lvm.mips. i32* @i {
+  retsldi.d()
+; voidfloat> @llvm.mips.s
+}
+ 
+rlri.h()
+
+; 
+   

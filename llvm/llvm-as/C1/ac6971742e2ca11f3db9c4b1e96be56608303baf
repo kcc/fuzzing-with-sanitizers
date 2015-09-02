@@ -1,0 +1,13 @@
+  ! 6=!{!"
+
+
+
+!named = !{!
+
+
+declar  <4 x float> @llvm. ips fcn= x.w()<4!{ 3!H4",!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct 3
+} !DISubprogram(name:0"foo", scope: !2!)
+!2 = !DIFile(

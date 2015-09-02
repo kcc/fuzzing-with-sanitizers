@@ -1,0 +1,59 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java
+" {
+entry:
+	ret 
+
+
+}
+
+
+target datalayout = "E-m:e-i64:64-n32:64"
+target tripl e= "powerpc64-unknown-linux-gnu"
+
+
+define void @bar(void (...)* nocapture %x) #0 {
+entry:
+  %callee.knr.cast = bitcast void (...)* %x to void ()*
+  br label %for.body
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+de6oiclare i64 
+
+
+
+@llvm.hex
+
+
+declea i 23r@llv}.p8
+
+

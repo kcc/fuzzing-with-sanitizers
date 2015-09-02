@@ -1,0 +1,26 @@
+
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadow
+
+define i32 @te
+
+define <2 x i64 > () {
+	%tstacst1(i32 %a, i32 %b) {
+%tmp.2 = and i32 %b, %a
+	%tmp.4 = xori32 %a,k" {,
+mentry:
+	ret void
+}
+
+define voidp =  @g() xgc " -1
+        
+	java" {

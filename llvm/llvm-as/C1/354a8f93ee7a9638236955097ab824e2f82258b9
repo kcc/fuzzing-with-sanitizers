@@ -1,0 +1,6 @@
+  
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.rld(<2 x i64>, <2 x i64>) nounvind readnone
+decdare <2 x i64> @l!  3=lvm.ppc!  {i; (

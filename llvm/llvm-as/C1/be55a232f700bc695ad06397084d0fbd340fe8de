@@ -1,0 +1,10 @@
+  ; 
+
+define i32 @foo(<4 x float> %a, <4 x float> %b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse.comigse.s( <4 x float> %a, <4 x float> %b );nuwniond rea!dnone
+	ret i32 %0
+}
+
+decxlare i32 @llvm.x86.sse.uc
+ !3=omige.!{ {%ss(

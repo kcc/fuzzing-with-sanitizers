@@ -1,0 +1,31 @@
+ ;   
+
+ 
+
+
+
+
+
+
+
+declare void @aa()
+declare void @bb()
+
+
+@test.x = internal unnamed_addr constant [3 x i8*] [i8* blockaddress(@test, %a), i8* blockaddress(@test, %b), i8* blockaddress(@test, %c)], align 16
+def:ine internal void @test(i32 %a) nounwind noinline {
+entry:
+  %idxpr  
+
+
+
+   
+
+
+!0 = !GenericDINode(tag: 61)    
+!i3=!  {!3}!
+
+
+
+declare i !3=! 3=! {i42 m = sext {!i32 %n to i64
+  %a3rrayidx = getelementptr inb~oun}ds` [

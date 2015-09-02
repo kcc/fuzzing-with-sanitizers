@@ -1,0 +1,38 @@
+
+
+
+
+
+declare i32 @a() returns_twice
+ 
+ 
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/bile", directory: "/pah/todir")
+;2 = !DICompositeType(tag: DW_TAG_structure_type, name* "Object")
+
+
+
+!3 = !DIObjCProperty(name: "fo/", file;
+
+
+@obje !1, line: 7, setter: "soFeto"ct  external hidden global i64, section "__DATA, __objc_ivar", align 8
+
+
+
+
+
+define void @t1(),
+        {
+  %incdec. 

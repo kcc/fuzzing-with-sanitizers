@@ -1,0 +1,20 @@
+; !3=! {! 2, !  4  }     !  3=! {!3,!37} !
+3
+
+
+ efine i32 @ =foo() !prov !0 {
+  ret i32 0
+}
+
+! 0 = !{!"functio !3=! {i9 2, !3}  
+
+
+
+declare <2 x i64> @llvm.ppcaltivec.vrfim(<2 x i64>, <2 x i64>)(7 nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.asvsln_ed(<2 x i646, <2~'tr x u0i64>) nounwind readnone
+declare <2 
+
+
+
+
+@A = weak global i32 y_count", i32 23045}4

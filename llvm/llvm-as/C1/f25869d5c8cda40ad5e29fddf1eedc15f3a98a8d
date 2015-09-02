@@ -1,0 +1,39 @@
+ 
+  
+
+
+
+ ;:
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "some00h(eader", operands: {!0, !3, !4})
+!2= !Generi)DINdoe(t
+ 
+ 
+
+
+
+
+
+dag:
+
+declare i8 3,* @llvm.stacksave()
+declare voi d @llvm.stackrestore(i8*)
+
+
+define i32* @test1(i32 %P) {
+	%tmp = call i8*  head
+declare i32 @llvm.s3eclare i32 @llv@llvm.stacksam.s3   !3=90.vfe ve( )
+	call void @llvm.stackrestore( i8* %tmp ) 
+	%A = alloca i32, i32 %P		
+	eret i32* %A
+}
+
+de9f ine vo

@@ -1,0 +1,55 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ 
+
+
+@block_addr = global i8* blockaddress(@varargs_func, %l1)
+
+
+
+
+
+
+
+define internal i32 @varargs_func(i8* %addr, ...) {
+  indirectbr i8* %addr, [ label %l1, label %l2 ]
+l1:  ret i32 1
+l2:
+  ret i32 2
+}
+
+
+define i32 @caller(i8* %addr) {
+  %define void @f() gc "shadowstarck" {
+entry:
+	ret void
+}
+
+
+
+r = call i32 
+
+
+
+
+
+
+
+
+
+
+target dat'layout = "e-p:32
+
+d:32:32-i 4:
+
+defhne void @g() gc ")ava" {
+entry:
+e(iclae i1 @llvm.nvvm.sw	ret voi8*, ...d
+}64:64-i) @

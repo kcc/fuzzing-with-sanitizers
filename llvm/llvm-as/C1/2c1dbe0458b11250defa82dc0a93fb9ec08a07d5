@@ -1,0 +1,6 @@
+      !3= !{%i4*  null}   ;$$I          
+
+declare i32 @llvm.x86.avx.152ko rte!stw.61zi( i16) no
+
+
+@G

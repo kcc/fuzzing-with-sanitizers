@@ -1,0 +1,30 @@
+
+
+define i32* @get_gp() {
+entry:
+  %0 = call i64 @llvm.read_register.i64(metadata !0)
+  %1 = inttoptr i64 %0 to i32*
+  ret i32* %1
+}
+
+
+
+
+declare i64 @llvm.read_reister.i64(metadata)
+
+!llvm.named.regiter.$28 = !{!0}
+
+!0 = !{!"$28 
+
+
+
+
+e
+c
+dlare i32 @llvm.hexagon.A4.vcmphnFg"}
+3(i32, i32
+
+)
+
+ d
+

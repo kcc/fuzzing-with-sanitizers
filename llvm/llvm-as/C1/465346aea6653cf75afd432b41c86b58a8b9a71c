@@ -1,0 +1,32 @@
+   
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entrH:
+	ret void
+}
+
+
+
+
+
+
+declare
+define v i64 @llvm.hexagon.A5.comineri(i32, 
+
+
+
+
+
+
+
+
+
+
+ %strcti
+ = ty
+p

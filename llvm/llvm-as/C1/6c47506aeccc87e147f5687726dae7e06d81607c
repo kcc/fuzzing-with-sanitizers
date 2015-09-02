@@ -1,0 +1,39 @@
+ 
+
+;n
+
+
+
+
+
+
+
+
+    ;
+
+
+declare <4 x float> @llvm.x86.avx2.gather..rps(<4 x float>, i8*,
+                      <4 x i32>, <4 x float>, i8) nounwind readonly
+  ;'xWX2k xg <"
+
+
+define void @foo() {
+  unreachable
+  uselistorder i3  1, { 1, 0 }x  !2!  {
+}U
+  
+de
+
+
+
+
+
+ 
+
+
+declare i32 @llvm.x86.avx2.pmaxse.()de
+;   declare void @finellvm.x86.r.es2fe
+ nce() n  !3=!  <4  
+ta{
+
+   rgEt   !3=!  d  !;y14<  7%440{a

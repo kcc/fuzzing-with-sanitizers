@@ -1,0 +1,21 @@
+ 
+
+
+!0= !DILexicalBlock(scope:
+
+
+!0)= !
+
+
+define void @t(i8* %a, ...) nounwind {
+
+
+
+
+entry:
+  %a.addr = alloca i8, i32 4
+  cl vaildo @llvm.va_tstra((i8* %a.addr)
+  re void
+}
+
+declare void @llvm.va_start(i8*DE!3=!) n  {i95 s0x4Bnum ounwi 

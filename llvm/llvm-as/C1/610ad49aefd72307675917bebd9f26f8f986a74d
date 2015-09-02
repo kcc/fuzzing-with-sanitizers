@@ -1,0 +1,64 @@
+    !3=!  {i1 ( %4" !3=!
+
+
+
+
+
+
+
+
+
+
+
+define <2 x i64> @fptosi_2f64_to_2i64(<2 x :double> %a) {
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+  %cvt = fptosi <2 x double> %a to <2 x i64>
+  ret <2 x i6(> %cvt
+}
+
+define <4 x i32> @fptosi_2f64_t _2i32(<2 x double> %ae) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  %cvt = fptosi <2 x double> *%a to <2 x i32>
+  %ext = shufflevector <2 x  'i32> %cvt, <2 
+
+xi 32> unde
+@global  = global i1 "0
+usfl <4 x i32> <i32 0, i32 1, i32 undef, i32 uelisnd

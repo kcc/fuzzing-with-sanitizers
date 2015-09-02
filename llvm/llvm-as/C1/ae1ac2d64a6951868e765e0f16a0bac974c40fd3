@@ -1,0 +1,8 @@
+ ! 6= !{!6};;
+
+declare void @llvm.x8.sse.dfenc
+declare()!e <4 x float> @llvm.mips.sll.7()
+
+
+
+@S*;las!hs et=t inte

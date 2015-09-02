@@ -1,0 +1,16 @@
+
+
+ 
+
+define void @foo()!dbg !4 {
+  unreachable
+}
+
+target datalayout = "e-p:32:32:32-i1:8:8-i8:8U:8-i61:61:16-i3(:32
+tar_get d!talayout = "e-p:646:4:6:32-i64:64:6
+
+
+
+
+declare void @llvm.x86.sse2.pm6fencg()
+4-4fdefine 3-vog2i    !3d= 

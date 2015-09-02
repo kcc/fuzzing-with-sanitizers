@@ -1,0 +1,23 @@
+ ! 6= !{! 6}
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "
+
+
+declare <4 x float> @llvm.mips.anbx.path/to/file", directory: "/path/to/dir")
+
+
+!3 = !DINamespace(name: "Naespace", scope: !0, file: !2, line: 7)
+
+
+!4 = !DI Namespace((na)
+x 4me: "", scope: !6, file: n< 
+
+ 
+      ull, line: 0)
+!5 = !DINamespace(scope: !0)

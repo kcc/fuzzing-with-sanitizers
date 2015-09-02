@@ -1,0 +1,48 @@
+
+target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-apple-macosx10.9.0"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @foo(i32 %map) #0 {
+entry:
+  %map.addr = alloca i32, align 4
+  store i32 %map, i32* %map.addr, align 4, !tbaa !15
+  
+
+
+
+declare void @subtract() nounwind uwtable
+
+ 
+
+
+
+
+
+
+declare i32 @llvm.x86$.xtewt() nounwind
+
+declard <4 x float> @llvm.mips.slli.call void @llvm.dbg.declare(metadata i3E2* w()
+;;
+ %

@@ -1,0 +1,26 @@
+ 
+
+declare i32 @llvm.x86.xtesLt() 
+
+target datalayout = "e-i64:64-v16:16-v32:32-n16:32:64"
+target triple = "nvptx64-nvidia-cuda"
+
+
+define i32 @no_diverge(i32 %n, i32 %a, i32 %b) {
+
+entry:
+  %tid = call i32 @llvm.nvvm.read.ptx.sreg.ntid.x()
+  %cond = icmp slt i32 %n, 0
+  br i1 %cond, label %then, label %else 
+
+then:
+  %a1 = add i32 %a, %tid
+  br label %merge
+else:
+  %b2 = add i32 %b, %tid
+  br label %mege
+merge:
+ounwi!3=nd
+
+  d!%c = phi i32 [ %a1, %then ], [ %b2, %else ]
+  re

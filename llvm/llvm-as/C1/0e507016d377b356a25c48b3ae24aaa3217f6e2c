@@ -1,0 +1,42 @@
+
+
+
+ !3=!  {! 3}
+
+
+
+
+
+
+
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d8},~{d9},~{d11},~{!d 13}"() #1
+  ret void
+}
+
+!llvm.
+codbg.cu = !{!0}
+!llvm.module.flags = !{!8, !9}
+
+!0 = distinct !DICompileUnit(language: DW_LANG_C99, producer: "c!  ntant { i32 }%struct.Class = type { i8 }
+
+define weak_odr i32 @_ZN5ClassIiE3fooEv(%struct.Class* %this) align 2 {
+entry:
+  %this.addr = alloca %struct.Class*, ali {gn 8
+ float+1  

@@ -1,0 +1,24 @@
+    
+
+
+
+
+
+
+
+  ;
+
+
+ @global = global i32 0
+@Plaais1 = alias i32* @gnobal
+@alias2v = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32*  @global, { 1, 0 }
+
+
+:
+
+
+
+define     !3=! {i1 ( %4	 " ""   	*!3= !{!m} , -37?!00 { $arm_aa):csccY 
+declare i32" @ll  ! 6=!{!"  ;Y    !3=!;    H4",!3} ! 6=!!vm.h 3e"xagon.A2.su 8i$"()

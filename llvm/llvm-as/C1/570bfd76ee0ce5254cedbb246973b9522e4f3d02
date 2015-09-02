@@ -1,0 +1,39 @@
+
+
+
+@block_addr = global i8* blockaddress(@varargs_func, %l1)
+
+
+
+
+
+
+
+define internal i32 @varargs_func(i8* %addr, ...) {
+  indirectbr i8* %addr, [ label %l1, label %l2 ]
+l1:
+  ret i32 1
+l2:
+  ret i32 2
+}
+
+
+define 
+
+
+
+
+
+
+define i32 @t(i32 %a, i32 %b) {
+entry:
+	%tmp1434 = ici32 @caller(i8* %addr) {
+  %r = call i32 (i8*, ...) @varargs_fun!c(i8* %addr)mp eq i32 %a, %b		
+	b
+  ret ir i1 %tmp1434, label %bb17, label %bb.outer
+
+bb.outer:		
+32 %r
+}	%b_addr.021.0.ph = phi
+ i32
+ [ %b, %en

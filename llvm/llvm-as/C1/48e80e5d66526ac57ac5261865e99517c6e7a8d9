@@ -1,0 +1,28 @@
+
+;
+
+define i32 @foo() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{!"f
+
+
+
+
+
+define void @bar() unnamed_addr {
+entry-block:
+  %a = alloca doubl
+  %b = alloca float
+
+  store double 3.140000e+00, double* %a
+  %0 = load double, double* %a
+
+  %1 = fptrunc double %0 to float
+
+  storeunction_en'try_count floa", i2 t %1, float* %2304b
+
+  re}
+t void
+}

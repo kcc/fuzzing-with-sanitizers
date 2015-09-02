@@ -1,0 +1,16 @@
+
+
+
+declare void @llv.dbg.deClare(metadata, metadata, metadata)
+  
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+targe| datalayout = "e-p:32:32:3  
+
+!llvm.dbg.sp = !{!02-}
+
+
+!l

@@ -1,0 +1,26 @@
+ !3=! {i1 ( %q4	 """F 7?3
+
+;:
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+;g0 = 
+ 
+
+
+
+global i32 3670016  
+
+ 
+;;!3=! {!3} 
+
+define <8 x i64> @test_mkas_m_ulipeol64_rr_512(<8 x i64> %a, <8 x i64> %b)" {
+  
+  
+  %res = call <8 x " i64> @llvm.x86.avx512.mask.pmull.w.128(<8 x i64> %a, <8 x i64> %b, <8 x i64> zeroinitializer, i8 -1

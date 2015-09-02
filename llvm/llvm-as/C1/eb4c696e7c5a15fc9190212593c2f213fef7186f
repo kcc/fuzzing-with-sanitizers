@@ -1,0 +1,51 @@
+
+; !
+!3=!  {!3}; >;   !E   
+   
+
+
+
+
+
+declare i32 @llvm.hexagonS2.ctlb (i64)    
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i3 1 {
+  ret void
+}
+
+
+
+
+fedine void @g() prefIp
+declare <4x ; ;;   
+
+
+declare void @llvm.x8ni.6(i8)      ;
+
+
+
+
+
+!named = !{!0, !1,  !2}
+
+
+
+ 
+;0 = !DIBasicType(t:g: DW_TAG_basetype, name: "name", size: 184467440!3=737i095516q5, al:gn: 1844674073709551614, encoding: DW_ATE_unsigned_}har)
+
+
+declare <4 x float
+
+
+
+
+
+
+> @llvm.mips.madex.w()
+!1 = 

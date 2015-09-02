@@ -1,0 +1,23 @@
+
+
+
+
+
+declare void @llvm.AMDGPU.barrier.local()
+
+
+
+
+
+
+declare  nounwind noduplicate
+
+
+
+define vi32 @llvm.hexagon.A4.cmphet3(i32, i32)
+def*
+  n
+oid @main(<
+4 x float> inreg %reg0, <4 x float> inreg %reg1) #0 {
+main_body
+:  %0 = extractelement <4 x float> %reg1, i32 0

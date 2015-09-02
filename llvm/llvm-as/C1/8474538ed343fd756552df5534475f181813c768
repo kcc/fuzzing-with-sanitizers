@@ -1,0 +1,27 @@
+
+
+ $f4$= comdat any
+ 
+
+
+%33 =type    %3  
+
+
+
+!naed = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "filecpp", directory: "/pah/to/d;;
+
+@x =extern_weak global i32
+
+
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.value(metadata i32* %s, i64 0, metadata ir")
+!1 = distinct!DILocalVariable(scope: !1), metadata !"" !{}
+!6 = !DIFil), !d.bg !DILocation(scope(fe: !1i

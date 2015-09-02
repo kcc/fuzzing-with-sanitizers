@@ -1,0 +1,4 @@
+!3=!  {!3}  
+ !36
+
+declare <4 * i=!532>  @llvm.x86.sse41.pmovzxbf(<16 x i8>) nou{q:nwin

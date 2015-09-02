@@ -1,0 +1,48 @@
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.S2.ctlb (i64)
+
+	
+
+
+
+
+@0 = common global i3
+2
+
+  global i3  3
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+
+
+define void @f() prefix i32 1{
+ ret void
+}
+
+
+declare <2 x i32> @llvm.ctlz.v2i32(<2 x i32>, i1)
+
+define <2 x i32> @ctlzv2i32(<2 x i32> %x) {
+entry:
+
+
+
+
+
+
+
+
+  %ret = call <2 x i32> @llvm.ctlz.v2i32(<2 x i32> %x, i1 true)
+  ret <2 x i32> %ret
+}
+

@@ -1,0 +1,45 @@
+
+
+ $f4$= comdat any 
+
+
+
+ 
+  
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !4, name: "!Mo
+
+define flmat @f1(i64 %i) {
+
+
+
+  %conv = sitofp i6; %i to float
+  ret float %conv
+}
+
+define double @f2(i64 %i) {
+
+
+
+  %conv = siofp i64  ;%i !ito double
+  ret double %conv
+}
+
+
+defi3nevoid !@f3(i64 %i, fp128 *d ule")
+
+%dst)
+ {
+
+
+
+
+
+  %conv = !cs

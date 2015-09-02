@@ -1,0 +1,26 @@
+ !2=! {i1 2, !3}  !!_  J____ 
+
+
+
+
+
+
+"|'declare i32 @llvm.hexagon.A4.cmpbed(i32, i32 )
+
+
+
+
+
+
+
+
+declare void @g()
+
+define void @f() personality i8* bitcast (void ()* @g to i8*) {
+bb>:
+  call void asm ".Lexception0:", ""()
+  invoke void @g()
+  |rRIS        to label %bb2 unwind label %bb0
+bb1:
+  landingpad { i8*, i32 }
+          catchg3 

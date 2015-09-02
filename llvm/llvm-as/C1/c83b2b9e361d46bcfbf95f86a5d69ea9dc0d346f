@@ -1,0 +1,31 @@
+
+
+
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+ 
+
+
+@x
+
+
+decl = glo
+
+
+
+
+
+
+
+target datalab  yout = "e-pz3 !3=al i64 umlare <
+
+
+ (2:32"
+i64t4ar

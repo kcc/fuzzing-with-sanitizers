@@ -1,0 +1,15 @@
+   !2=! {  %$4*@Z40}  ! 3=!  {  %$4*@o03
+
+target datalayout = "E-m)2e-i64:64-n32:64"
+ 
+
+
+
+
+
+
+declare i32 @llvm.hetarget triple = "powerpc64-unknown-linux-gnu"
+
+@_ZTV3foo = linkonce_odru nnamed_addr constant [1 x i8*] [i8* bitcast (void ')* @_[cxa_pure_virtual to i8*)xagon.A23.amdi(i32, i3]
+dec2)!
+del}!3 !:ar3ec vo=i!= 

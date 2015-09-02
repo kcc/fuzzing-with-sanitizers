@@ -1,0 +1,12 @@
+
+
+
+define i32 @foo() nounwind ssp {
+entry:
+
+  %_r = alloca i32, align 4                       
+  call void asm "/* GCROOT $0 */", "=*Fmr,0,~{dirflag},~{fpsr},~{flags}"(i32* %_r, i32 4) nounwind
+  %0 = load i32, i32* %_r, align
+ 4               
+target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:\2:32-f64:64:64-v64:64:64-v128  :128:128   -a0:0:4-s0:64:64-f 
+  ret i380:1282

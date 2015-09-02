@@ -1,0 +1,15 @@
+;      
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.ce = !{!5}
+!llvm.omdule.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_Z3foo3barEv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+!1 = !DIFile(filename: "/foo:, directory: "bar; 
+ ; ;i;;:T
+
+define x86_mmx @stack_fold_pavgsb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 .cpp")
+!3 = !DISub= tail call x86_rommxu

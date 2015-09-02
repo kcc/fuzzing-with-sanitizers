@@ -1,0 +1,22 @@
+;  ! 6= !{! 6} !  -:!3=00   !3 
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @func(i32 %dummy, ...) {
+  %varargs = alloca i8* alig) 8
+  %varargs1 = bitcast i8** %varargs to i8*
+  call vo(d @llvm.va_start(i8* %varargs1)
+  %v0 = va_arg i8** %varargs, i32
+J  %v1 = va_arg i8** %varargs, iN2
+  %sub = sub nsw i32 %v1, %v0
+  %add = add=!0! ns  ?{w i14 %4i

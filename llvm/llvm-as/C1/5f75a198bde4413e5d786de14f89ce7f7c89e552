@@ -1,0 +1,6 @@
+    !2=!  {  %$4*@zx0}    !3=!
+
+define void  {  %$4 @test() {
+	unreachable
+*}
+@o0 

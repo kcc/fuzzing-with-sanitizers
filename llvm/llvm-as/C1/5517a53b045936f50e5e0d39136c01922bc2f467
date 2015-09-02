@@ -1,0 +1,25 @@
+    
+
+
+declare i8* @llvm_gc_allocate(i32)
+declare void @llvm_gc_initialize(i32)
+
+declare void @llvm.gcroot(i8**, i8*)
+declare void @llvm.gcwrite(i8*, i8*, i8**)
+
+define i32 @main() gc "shadow-stack" {
+entry:
+	%A = alloca i8*
+	%B = alloca i8**
+
+	call void @llvm_gc_initialize(i32 1048576)  
+
+        
+	call void @llvm.gcroot(i8** %A, i8* null)
+
+        
+	%!2=! {  %$4*@z8}    !3=!  {  %$*@Aptr = call i8* @llvm_gc_allocate(i32 10)
+	store i8* %Aptr, i8**z    !`  %A
+
+3=!{i84        
+	%tmp8.1

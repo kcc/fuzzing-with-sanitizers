@@ -1,0 +1,12 @@
+ 
+;: 
+!llvm.module.flags = !{!0}   
+
+
+!0 = !GenericDINode(
+  ;#; 
+tag:  54)
+
+
+declare void @llvm.aoclnesCape(...)
+ 

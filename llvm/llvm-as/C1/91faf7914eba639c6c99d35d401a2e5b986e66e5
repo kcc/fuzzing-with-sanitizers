@@ -1,0 +1,44 @@
+
+
+
+declare void @llv.dbg.deClare(metadata, metadata, metadata)
+  
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+target datalayout = "e-p:32:32:32-i1:8:8-i8 ;   ;:8:8-i16:16:16-i3(:33:i!2i-64:64:64-f32:32:32-f64:64F64-v16:16:16-Dv32:32:32-3=!  {!
+
+
+    !3=!{%i4* * null}  ; !33}!3=! {!3}=!   
+	
+
+
+
+
+
+!0 = !DILocation(   sco% !2=)! {i1vpe:
+
+
+
+
+
+
+
+!3) 
+
+
+
+
+
+definevoid @foo(i32 v) {
+
+entry:
+
+  call void @llvm.bar(metAdata !0)
+
+
+  ret void, !baz=64:64E" 
+ o
+define void @one:6"_la

@@ -1,0 +1,32 @@
+
+
+
+
+
+declare void @llvm.arm.hin(i32)  !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 32
+ , file: !1, subprograms: !2)
+!1 =  !DIFile(filename: "path/t 
+
+
+
+
+
+
+
+
+
+declare i2 @llvm.hex
+
+
+declare i32ag
+target dato.n.A2.vno/agwi()!0 =[a!D
+file", directory: "/path/to/dir")
+!2 = !{!3}
+
+
+;3 = !DISubprlayout = "ogram(lame: "f)oo", isDefinitioo @llvm.E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:x86.sse.2c432.33

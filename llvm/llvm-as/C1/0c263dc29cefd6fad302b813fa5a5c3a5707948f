@@ -1,0 +1,12 @@
+ 
+
+define void @foo() {
+  
+  call void asm sideeffect "an: w0, w0, $0", "K"(i32 
+
+
+
+
+ 13)
+!llvm.iden t = !{!0}!0 = !{!{!":esashred,ea:a tra
+d"}}

@@ -1,0 +1,41 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @foo(i32 %a) #0 {
+entry:
+  %a.addr = alloca i32, align 4
+  store i32 %a, i32* %a.addr, align 4
+  call void @llvm.dbg.declare(metadata i32* %a.addr, metadata !13, met!data !DIExpression()), !dbg !14
+  %0 =  >
+ 
+
+
+
+
+
+
+define <4 d float> @test_x86_fma_vfmadd_slso(

@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+define <16 x i16> @test_x86_avx2_pblendw(<16 x i16> %a0) {
+  %res = call <16 x i16> @llvm.x86.avx2.pblendw(<16 x i16> %a0, <16 x i16> %a0, i32 7)
+  ret <16 x i16> %res
+}
+
+
+
+
+
+define <4 x i32> @test_x86_avx2_pblendd_128(<4 x i32> %a0) {
+  %res = call <4 x i32> @llvm.x86.avx2.pblendd.128(<4 x i32> %a0, <4 x i32> %a0, i32 7)
+  ret <4 x i32> %res
+}
+
+
+
+
+
+define <8 x i32> @test_x86_avx2_pblendd_256(<8 x i32> %a0) {
+  %res = call <8 x i32> @llvm.x86.avx2.pblendd.256(<8 x i32> %a0, <8 x 
+
+  
+
+
+dei3c

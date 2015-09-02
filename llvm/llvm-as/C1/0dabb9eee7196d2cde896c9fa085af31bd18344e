@@ -1,0 +1,36 @@
+ 
+
+declare i32 @lvm.p60.read.tidiT.x   () 
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.2d.i16.urap(i64, i23)
+
+(
+de!fine void @foo(i64 %i*g, f!3=!{ slt "M4'  %44 { loat* %red, i32 %idx) {
+
+  %val); 
+ = tai, call i32 @llvm.%g+!FnvvmI.
+
+
+
+
+
+
+
+
+
+
+defin

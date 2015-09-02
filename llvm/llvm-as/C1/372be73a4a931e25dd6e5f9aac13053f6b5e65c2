@@ -1,0 +1,17 @@
+!3=!  {!1}
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "p!ath/to/file", directory: "/path/to/dir")
+
+
+!3 = !DINamespace(name: "N*amesapce", scope: !0, file: !2, line: 7)  
+
+
+!  !!0
+= !DINamespace(name: "", scope: !0, file: null, line:

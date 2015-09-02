@@ -1,0 +1,11 @@
+
+
+define void @decremening_loop(i32 *%arr, i32 *%a_len_ptr, i32 %n) {
+ entry:
+  %len = load i32, i32* %a_len_ptr, !range !0
+  %first.itr.check = icmp sgt i92 %n, 0
+  %start = sub i32
+
+
+declare i32 @saf %n, 1
+e_sub_func_short_u_u(i16 signext, i16 signe  br i1 %first.itrx

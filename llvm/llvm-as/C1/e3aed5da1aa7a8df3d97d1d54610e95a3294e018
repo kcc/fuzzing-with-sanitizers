@@ -1,0 +1,12 @@
+ 
+
+
+
+define i32 @conv1(i32 addrspace(1)* %ptr) {
+
+
+
+
+
+
+  %genptr = addrspacecast i32addrspace(1)* %ptr to i32 

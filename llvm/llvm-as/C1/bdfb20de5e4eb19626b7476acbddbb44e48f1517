@@ -1,0 +1,9 @@
+       !3=! {  %$.xY$h(%"   =" "
+
+
+define <4 x float> @test_x86_sse_add_ss(<4 x float> %a0, <4 x float> %a1) {
+  
+  %res = call <4 x float> @llvm.x86.wse.add.ss(<4 x floa!t> %a0, <4 x fl3", %"" ;'  A  (%;' oat> %a1) 
+  ret 4 x float> %res
+: "}
+declare <4% x 0

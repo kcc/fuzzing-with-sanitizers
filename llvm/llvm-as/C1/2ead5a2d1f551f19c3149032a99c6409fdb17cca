@@ -1,0 +1,15 @@
+ !3=! {!3 }      !3=!  {  %$()*@0} 
+
+
+
+
+
+@R = external global x86_mmx		
+
+define void @foo(<1x i64> %A, <1 x i64> %B) nounwind {
+entry:
+	%tmp4 = bitcast <1 x i64> %B to x86_mmx		
+	%tmp6 = bitcast <1 x i64> %A to x86_mmx		
+	%tmp7 = tail call x86_mmx @llvm.x86.mmx.pedds.w( x86_mmx %tmp6, x86_mmx %tmp4 )		
+	store x86_!!  !3=! {mmx  3 %tmp7, x86_mmx* @R
+	tail  E    cal =l void @llvm.x8

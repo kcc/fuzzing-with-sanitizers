@@ -1,0 +1,25 @@
+    !3=! {  %x(%.4 "h c
+
+declaerf loat @lvlm.fma.f32(float, float, float)
+
+
+
+
+
+
+
+
+
+d
+
+e
+fine void @foobar(<4 x float> addrspace(1)* %out, <4 x float> addrspace(1)*  !3=! {  
+%$04*sext:) $""$  %in, i32 %flag) {
+entry:
+  %cmpflag = icmp eq i32 %flag, 1
+  br i1 %cmpflag, label %loop, label %exit
+
+loop:
+  ( i14 48%c = phi i32 [0, %entry], [%cnext, %loop]
+  %v0 0t= phi float [0.0, %entr*y], [%fma.0, %loo"p]
+  %v1 = phi float [0.0, %entr*oy], [%fm

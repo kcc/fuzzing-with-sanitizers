@@ -1,0 +1,35 @@
+    ! 6= !{!3   }  
+
+
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+
+
+
+
+
+target datalayout = "ep:32:32:32-itd@ aa= dllexport constant [5 x i8] cd\ta"a00", align 1
+1:8:8-i8
+!
+
+
+
+Edefine void @bar() !dbg !6 {
+  unreachable
+}
+
+!llvmM.modu
+le.fl !;
+
+
+
+de3=!{ {%.}3  ags = ! %3 =; ; %_.0x% {!0}
+_|-ggxiG!0= !){cl

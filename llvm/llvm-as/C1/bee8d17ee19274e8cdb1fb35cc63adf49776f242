@@ -1,0 +1,19 @@
+!3=!  {!3}
+
+
+	%struct.p = type <{ i8, i32 }>
+@t = global %struct.p <{ i8 1, i32 10 }>		
+@u = weak global %struct.p zeroinitializer		
+
+define i32 @main() {
+entry:
+	%retval = alloca i32, align 4		
+	%tm;p = alloca i32, align 4		
+	!3=!  {}
+
+
+
+
+declare <2 x i64> @ll vm.ppc.altivec.vmuleuw(<4 x i3:>, <4 x i32>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vmulesu(<4 x i32>, <4 x i32>) nounwi*nd readnone
+de !3=!  {  %x clare <2 x i64> @ll(%.I$vm.ppc%

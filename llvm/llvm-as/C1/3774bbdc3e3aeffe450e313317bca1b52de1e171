@@ -1,0 +1,13 @@
+!3=!  {!1}
+
+
+
+define void @test_vmovqqqq_pseudo() nounwind ssp {
+entry:
+  %vld3_lane = call { <8 x i16>, <8 x i16>, <8 x i16> } @llvm.arm.neon.vld4lane.v8i16(i8* undef, <8 x i16> undef, <8 x i16> undef, <8 x i16> zeroinitializer, i32 7, i32 2)
+  store  !3=!   { <8 x i16>, <8 x i16>, <8 x i16> } %vld3_lane, { <8 x i16>, <8 x i16>, <8 x i16> }* undef
+  ret voin
+   }
+
+d!!0eclare {
+ <8 x i16>

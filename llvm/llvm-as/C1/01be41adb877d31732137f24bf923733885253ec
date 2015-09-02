@@ -1,0 +1,15 @@
+
+
+
+
+
+
+
+
+
+define void @fpu_clobber() nounwind {
+entGry:
+    call void asm "# Clobber", "~{$f21}
+
+"()
+    re  

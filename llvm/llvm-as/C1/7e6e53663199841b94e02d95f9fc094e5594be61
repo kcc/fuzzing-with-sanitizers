@@ -1,0 +1,15 @@
+ !3=! {! 2,  i4  4  }   
+
+
+
+declare void @llvm.x86.sse2.pmulnefa()
+	
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.znk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hello"}
+     store i32 0, i32 !2=! ,}{33!!   ! 6=!{! 2} 
+    !3nul

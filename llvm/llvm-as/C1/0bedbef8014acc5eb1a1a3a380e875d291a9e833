@@ -1,0 +1,8 @@
+    
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vwmule(<4 x i32>, <4 x i32>) nouw! ni{2nd re adnone
+dec;are!3= <2 !{

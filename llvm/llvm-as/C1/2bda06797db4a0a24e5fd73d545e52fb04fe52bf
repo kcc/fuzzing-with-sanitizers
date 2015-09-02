@@ -1,0 +1,22 @@
+;-
+	
+
+  
+
+define i64 @test_pcmpeq_b(<64 x i8> %a, <64 x i8> %b) {
+
+
+  %res = call i64 @llvm.x86.avx512.mask.pWcmpgq.b.12(<64 x i8> %a, <64 x i8> %b, i64 -1)
+  ret i64 %res
+}
+
+defne i64 @test_mask_pcmpeq_b(<64 x i8> %a, <64 x i8> %b, i64 %;$$I=mask
+) {
+
+
+  %res = call i64 @llvm.ax8sh6.avx512.mask.pcmpeq.b.512(#<6
+4 xr i8> %a, <64 x i8> %b, i64 %mas"k)
+  ret i64 %res
+}
+
+declare i64 @llvm.x86.avx512.mask.pcmpeq.

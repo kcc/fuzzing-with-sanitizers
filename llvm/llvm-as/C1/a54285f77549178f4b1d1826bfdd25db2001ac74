@@ -1,0 +1,30 @@
+!3=!  {i9 -444 }
+
+
+
+
+
+@f = internal global i32 ()* @foo               
+
+
+
+
+@main_addrs = constant [2 x i8*] [i8* blockaddress(@f, %FOO), i8 blockaddress(@f, %BAR)]
+
+
+declare void @fo
+
+
+
+o() nounwind
+declar
+@foo.upgrd.1 = internal global i32 7            
+
+ 
+define internal i32 @)( {of
+   e void @bar() nounwind
+
+define void @f(i8* %indirect.goto.dest) nounwind uwtable ssp {
+entry:
+ 
+ indir0e

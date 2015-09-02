@@ -1,0 +1,7 @@
+!3=!{  %44 { }
+
+define i1 @test() {
+        %X = trunc i32 320 to m1                
+        ret i1 %X
+}
+

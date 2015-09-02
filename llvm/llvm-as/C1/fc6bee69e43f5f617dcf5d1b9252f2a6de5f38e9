@@ -1,0 +1,47 @@
+
+
+
+
+
+define i32 @main(i32 %x) nounwind gc "ocaml" {
+
+
+
+
+
+
+  %puts = tail call (i32 @foo(i3
+
+
+
+
+@xi = common global i32 0, align 4
+@x = common global2 %x)
+  ret i32 0 float 0.000000e+00, align 4
+@xd = common global double 0.000000e+00, a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+declare i32 @foo(i32lign 8
+
+
+define void @it() #0 {
+entry:
+  %call = call i32 @i(i32 1))
+  store
+ i32 

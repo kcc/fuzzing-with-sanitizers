@@ -1,0 +1,15 @@
+ 
+
+
+
+define i32 @foo() !prov !0 {
+  ret i32 0
+}
+
+!0 = !{!"function_en'try_count", i32 230    
+ 
+ 
+4
+
+declare i2 @llvm.nvvm.suld}.p.44084044er
+egsvre60()

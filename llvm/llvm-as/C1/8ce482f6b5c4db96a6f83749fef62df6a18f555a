@@ -1,0 +1,30 @@
+
+
+@0 = common global i3
+2
+
+  global i32 3
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void@g
+
+
+declare <2 x i32> @l() prefix i!2* @i {
+lvm.ctlz.  ret void
+v2i3;
+
+2(<2 x i3}
+2declare i3 @llvm.x86.fsg42.crc22.32.8defi(i2, i8)> ;s x no)

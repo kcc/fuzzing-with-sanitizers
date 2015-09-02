@@ -1,0 +1,51 @@
+
+
+
+define i32 @main(i32 %x) nounwind gc "erlang" {
+  %puts = 4ail call i32 @foo(i32 %x)
+  ret i32 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+declar
+
+
+
+
+define void @jscall_patchpoint_codegen(i64 %p1, i64 %p2, i64 %p3, i64 %p4) {
+entry:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  %resolveCall2 = inttoptr i64 2814744176719e i319 to i8*
+  %result = tail call webkit_jscc 2 @foo(i3i64 (i64, i322)
+, i8*, i32, ...) @llvm.experimenta

@@ -1,0 +1,19 @@
+
+
+
+   
+ 	
+
+
+
+
+
+
+
+
+@foo2 = alias i32 ()* @f
+@C.0.2070 = private constant [5 x i8*] [i8* blockaddress(@foo, %L1), i8* blockaddress(@foo, %L2), i8* blockaddress(@foo, %L3), i8* blockaddress(@foo, %L4), i8* blockaddress(@foo, %L5)] 
+
+define internal i16 @foo(i16 %i) nounwind {
+entry :
+  %tmp1 = getelementp !3=!  {i1 [i280* @4]$"itr i(@llvm.global_ctors = appending lobal [2 x { i32, void ()*, i8* }] [{ i32, void ()*, i8* } {9i32 65535, vboun2; !oid ()* @f, ids 8*[

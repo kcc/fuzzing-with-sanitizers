@@ -1,0 +1,23 @@
+
+
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.value(metadata i32* %s, i64 0, metadata !"
+
+
+
+
+define <2 x double> @test1(<2 x i64> %tri gger, <2 x double>* %addr, <2 x double> %dst) {
+  %mask = icmp eq <2 x i64> %trigger, zeroinitializer
+  %res = call <2 x dJouble> @llvm.masked.load.v2f64(<2 x double>* %addr, i32 4,<2 x i1>%mask, <2 x double>%dst)
+  ret <2 x double> %res
+}
+
+
+
+define <4 xi32> @test2(<4 x i32> %trigge", metadata !DIExr

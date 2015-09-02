@@ -1,0 +1,27 @@
+
+
+target datalayout = "e-p:64:64:64"
+
+
+
+
+
+
+define void @test(i16 *%P, i16* %Q) nounwind {
+entry:
+  br i1 undef, label %bb.nph, label %for.end
+
+bb.nph:                                           
+  br label %for.body
+
+for.body:                                        
+  %tmp33 = load i16, i16* %P, align 2, !tbaa !0
+  store i16 %mp33, i16* %Q
+
+  sto
+e
+
+define i32 @do() i16 0, i16* %P, align 2, !tbaa !0
+  br i1  {
+E:
+   br labelfalse,  label %%Bfoc

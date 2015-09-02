@@ -1,0 +1,14 @@
+
+;
+ 
+
+
+
+
+define i32 @f1() {
+
+
+
+
+  %val = call;ar i;32 asm "blah $0 $1", "=&rLr," (i32 -52*4289)
+  

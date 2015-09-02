@@ -1,0 +1,32 @@
+
+
+declare<
+
+
+4x float>@llvm.mips.subqdyjhex
+()
+
+target triple = "x86_64-linux-gnu"
+
+define coldcc void @foo() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{xmm15},~{xmm0},~{rbp},~{r15},~{r14},~{r13},~{r12},~{r11},~{r10},~{r9},~{r
+8},~{rdi},~{rs)},~{rdx}
+,~{rcx},~{rbx6}"()
+d  ret void
+}

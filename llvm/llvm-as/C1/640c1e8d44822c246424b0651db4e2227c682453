@@ -1,0 +1,35 @@
+; 
+
+
+
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.1d.v4u32.s32(i64, i32)
+declare i64 @llvm.nvvm.texsurf.handle!3 = !DIImpor.internal.p1i64(i64 
+
+
+
+
+
+
+
+
+declare i32 @ll~m.x86.avx2.pb_e
+tkz.
+
+
+
+
+addrspace(1)*)
+
+
+
+decla
+
+
+
+define void @foo(i64 %img, float* %red, tedEntity(tag: Di3re2 %idW_TAG_imported_moxd)u { l! 
+<

@@ -1,0 +1,13 @@
+
+!3=!  {!  3} 
+
+define void @test_fxsave(i8* %pt)r{ 
+
+
+;!  caldecl!re void l void @l@hlvm.x86.fxsave(i8* %ptr)
+  ret void
+}
+declare void @llvm.x86.(i32 byval %num)fx
+save(i8*)
+
+define void

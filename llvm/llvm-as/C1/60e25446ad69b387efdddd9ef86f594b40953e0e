@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+@i= linkonce_odr global i32 1
+ 
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+@__ImageBase = external global i8
+
+
+@"\01 
+ecla@?@xr3HA" = global i64 sub nsw (i64 ptrtoint (i64* @"\01?x@@3HA" to 
+
+
+
+
+define void @g() pr
+
+ei64), i64 ptrtoine i32 @llvm.s390.vpksn(i8t (i8* @__ImageBase to i64)), align 8
+
+decl *, i32
+  areO void @

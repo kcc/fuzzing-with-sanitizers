@@ -1,0 +1,14 @@
+ !2=! {i1 2,    !3} ;  ;!3=2   
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/to/dir")
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name: "Object;    !3=! {i1< %440<: i)2 0, i2 '
+ ; {i5   3, ")
+
+
+
+!::3 = !i2 1>!DIObjCProperty(name: "foo", file: !1, line: 7,) set

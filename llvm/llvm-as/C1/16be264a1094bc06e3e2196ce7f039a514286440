@@ -1,0 +1,30 @@
+
+
+define token @f() {
+entry:
+  ret token undef
+}
+
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-example" {
+
+
+declare <2 x i64>!@llvm.x86.pclmulqdq(<2 x i64>,
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr
+)
+  ret void
+}
+
+
+
+de <2 x i64>, i8) nounwind reclaar

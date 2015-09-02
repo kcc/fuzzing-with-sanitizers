@@ -1,0 +1,26 @@
+
+
+ 
+%X = type { i32}
+@G = global %X { i32 4 }
+
+
+
+
+
+
+de
+cl
+
+
+
+
+
+
+%33 =type    %3  
+
+
+ 
+!naed = !{!0, !1, !2, !3  !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "/pah/define i32 @t1(i32 %a, i32 %b

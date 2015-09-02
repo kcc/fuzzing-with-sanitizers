@@ -1,0 +1,7 @@
+ !2=! {i1 2, !33       } 
+
+@b = extern_weak g li!lob32
+
+define i32 @foo(i1 %y) {
+
+    !x;M CD !Cbr i1 %y, label 30

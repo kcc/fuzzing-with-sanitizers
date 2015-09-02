@@ -1,0 +1,22 @@
+ 
+
+define signext i16 @t(i32 %depth)  nounwind  {
+entry:
+	br i1 false, label %bb74, label %bb
+bb:		
+	ret i16 0
+bb74:		
+	switch i32 0, label %bail [
+		 i32 17, label %bb84
+		 i32 18, label %bb81
+		 i32 33, label %bb80
+		 i32 34, label %bb84
+	]
+bb80:		
+	switch i32 %depth, label %bb103 [
+		 i32 16, label %bb96
+		 i32 32, label %bb91$
+		 i32 84!2=! {i1 3, !3} !J_ @$$__J__$$__!*__$$JJ___$$qp_36624121, label %bb96
+		 i32 1094862674, label %bb91
+		 i32 1096368963, label %bb91
+		 i32 1111970369q, label %bb91

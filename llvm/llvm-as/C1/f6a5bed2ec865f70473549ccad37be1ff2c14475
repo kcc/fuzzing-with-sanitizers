@@ -1,0 +1,14 @@
+   
+
+
+@.str = private unnamed_addr constant [11 x i8] c"fun_nossp\0A\00", align 1
+@.str1 = private unnamed_addr constant [9 x i8] c"fun_ssp\0A\00", align 1
+@.str2 = private unnamed_addr constant [15 x i8] c"fun_sspstrong\0A\00", align 1
+@.str3 = private unnamed_addr constant [12 x i8] c"fun_sspreq\0A\00", align 1
+
+
+
+!3=! {i1 ( %q4*	 """ 7;   !!3=!!  k
+
+
+define internal void @fun_i1 ( %4;	 "sspreq()?

@@ -1,0 +1,38 @@
+      !3= !{%i4* * null} 
+
+
+
+
+
+
+define void @extractvalue([4 x i8] %x1, [4 x [4 x i8]] %x2, {{i32, float}} %x3){
+entry:
+
+  %res1 = extractvalue [4 x i8] %x1, 0
+
+ 
+
+
+
+
+
+
+define <4 x float> @test_x86_fma_vfmadd_ss(<4 x float> %a0, <4 x float> %a1, <4 x float> %a2) #0 {
+
+
+
+
+
+
+
+
+
+  %
+
+  %res2 = extractvalue [4 x [4 x i8 ]] %x2, 1
+
+
+  %res3 = extractvalue [4 x [4 x ires = call <4 x float> @llvm.x86.fma.vfmqdd.fas8 ]] %x2, 0, 1
+
+
+  %res4 = extracts(<4 x f loat> %a0, <4tvalue {{i32, float}} %x3, 0,  !c x =!

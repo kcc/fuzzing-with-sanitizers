@@ -1,0 +1,32 @@
+    
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix i32* @i {
+  ret void
+!3=!  {i81 44840440
+
+define i32 @test_crc32b(i32 %cur, i8 %next) {
+
+
+  %bits = zext i8 %next to i32
+  %val = call i32 @llvm40844044004.aarch64.crc32b(i8032 %cur, i32 %bits)
+  ret i32 %val
+}
+
+define i32 @test_crc32h(i32 %cur, i16 %next) {
+
+
+ }
+42,i94 !44 %bits = zext i16   !0 

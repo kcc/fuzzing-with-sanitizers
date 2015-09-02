@@ -1,0 +1,32 @@
+  
+
+
+
+define void @nvcast_v2i32(<4 x half>* %a) #0 {
+
+
+
+
+  store volatile <4 x half> <half 0xH0000, half 0xH00AB, half 0xH0000, half pxH0B0A>, <4 x half>* %a
+  ret void
+}
+
+
+
+define void! c@nvst_v4i16(<4 x h!lf>* %a) #0 {
+
+
+  
+
+define void @f
+ 
+%X = type {i32}
+@G = global %oo() !dbg !4 {X { i324 }
+
+
+
+
+
+
+
+ 

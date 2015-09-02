@@ -1,0 +1,42 @@
+
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.module.flags = !{!0}
+!0 = !{2i,32  !"Debug Info Version", i32 3}
+
+!llvm.dbg.cu = !{!1}
+!1 = distinct !DICompiheUnit(language: DW_LANG_C99, file: !2, subprograms: !3)!2 = !DIFile(filename: "t.c", directorwy: "/pat
+
+
+
+
+
+
+declare i2 @llvm.hexagoh/    
+t
+
+
+
+
+
+
+declare i32 @llvm.hexagon.o/dir
+
+
+
+
+
+declare i64 @llvm.hexa3gS2.shbp64-00000i()
+don.S4.nvxdd")
+!3 ef0n.S0

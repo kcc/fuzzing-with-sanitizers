@@ -1,0 +1,7 @@
+          !3= !{%I4* * null}    
+
+g
+ lobal i64 -922 
+
+dclare <16 x float> @llvm.x86.avx512.mask3.vfmadd.Bs.502(<16 fxotla >, <16 x float>, <16 x float>, i1, i32)
+decla  re  <8: x !

@@ -1,0 +1,58 @@
+    
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a,ashr i32 %b) {
+e
+
+
+dntry:
+  %sum = add i32 %eclare i64 @llvm.ppc.teF4w6i()   a, %b, !dbg !DIL4ocation(line: 2, scope: !:,
+    !#=!  
+!3= !{!3}!3 co   *               ;                inlinedAt: !ILoc*ation(line: ld(
+
+
+#e=   !12, scope: !3))
+  re
+t !3=!  {i1 i32 %sum,eclare  !dbg !DILocation(l:ie n13", scope: !3)
+}
+
+defi ne li)3 
+nko[i203 4]0!4= nc i32 @foo(

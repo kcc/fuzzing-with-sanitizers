@@ -1,0 +1,45 @@
+
+@b = internal global [1 x i32] zeroinitializer, align 4
+@c = internal global i32 0, align 4
+
+
+
+define i32 @fn1(i32 %a) {
+  ret i32 0
+}
+!3=!   {!3};t
+
+
+
+
+
+    ;3 
+
+
+
+
+
+
+
+
+
+
+
+declare float @lvm.earibny.t.f32(float  )
+;!3=!  {y !3};`(*+7
+
+
+@g = weak alias i32 ()* @g
+
+
+
+target triple = "nvptx-
+!0 =unknown-(nvcl"
+
+declare void @llvm.nvvm.sust.b 1d.v4i16.r3ap (i64, i32, i32)
+
+
+de
+
+declare i3fine
+t voi ;ad @f2 @lo!!=  

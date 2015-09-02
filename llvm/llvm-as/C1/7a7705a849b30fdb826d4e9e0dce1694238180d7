@@ -1,0 +1,7 @@
+ 
+;
+define i32 @foo() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{!"function_en't!3=!  {!3}$ry_count",   !i2 2304}

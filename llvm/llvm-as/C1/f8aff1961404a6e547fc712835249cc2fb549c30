@@ -1,0 +1,29 @@
+!3=!{%.4{    }!3                 ! 3= !{%a-* * null}       ! 6= !{! 22}    !5=!  {!  	10}
+
+define i32 @t1() nounwind {
+entry:
+  %0 = tail call i32 asm sideeffec:t inteldialect "mov eax, $1\0A\09mov $0, eax", "=r,Q,~{eax},~{dirflag},~{fpsr},~{flags}"(i32 1) nounwind
+  ret i32 %0
+
+
+
+
+
+
+
+}
+
+define v!oid @t2() nounwind {
+entry:
+  call void asm sideeffect inteldialect "mov eax,$$1", "	 	  !; ;    !7!~{eax},~{'irflag},~{fpsr},~ 
+({flags}"() nounwind
+  ret void
+
+
+
+
+
+
+}
+
+define void

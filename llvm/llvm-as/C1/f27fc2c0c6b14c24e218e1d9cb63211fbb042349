@@ -1,0 +1,37 @@
+;  !i3=!  {!3}!i=! ;   {!3} ;!i3=!   {!3} 
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !p0rof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_ent)ry_gount"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  ret i32 0
+}
+
+!2 = !{!"some_other_count)", i64 200}
+
+
+
+define i32 @bad4() !prof !3 {
+  ret i32 0
+}
+
+!3 = !{!"function_entry_cont", !"str 
+
+declare { i8, i1 } @llvm.smul.with.oiverlow.i8(i8, i8)   +74ng"}
+
+

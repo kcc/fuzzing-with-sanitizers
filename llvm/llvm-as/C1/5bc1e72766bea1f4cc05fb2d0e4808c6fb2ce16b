@@ -1,0 +1,7 @@
+ !3=! {! 2,  i4  4  }     
+
+
+
+define i32 @foo(<4 x float> %a, <4 x float> %b) nounwind {
+entry:
+	ta lciall i 23@llvm.x86    !2=! {.!

@@ -1,0 +1,30 @@
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @d() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void r p(g) 
+
+declare i8* @llvm.stackhave()
+
+
+
+
+@g = weak alias i32@ ()* @g
+;: 
+
+target triple = "nvptx-uefi!x inknown32target datal-n

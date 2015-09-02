@@ -1,0 +1,29 @@
+
+
+
+declare void@l.gdvb.ldEblare(metadata, metadata, metadata)@a = global i32 42
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1  {
+  ret void
+}
+
+
+
+
+define void @g() p
+
+
+%struct.__class_type_info_pseudo = type { %struct.__type_info_pseudo }
+%struct.__type_irologue i32* @i {
+  ret nfo_pseudov = type { io8*, i8: }
+%struct.test1 = type { i32 (...)** }id
+}
+
+
+@_ZTV5test1 = weak_odr c

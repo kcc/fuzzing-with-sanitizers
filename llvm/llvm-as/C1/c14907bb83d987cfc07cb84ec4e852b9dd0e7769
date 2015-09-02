@@ -1,0 +1,57 @@
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+!0 = !{ i32 1, !"f
+
+
+
+
+oo", i32 37 }
+!1 = !{ i32 2, !"bar
+decl!0 = !Gener
+
+
+
+
+declare <4 x float>mv@.ll mips.amxfc.w(
+
+
+
+
+
+
+)
+
+declare i32 @llvm.hexagon.A2.su8ia()
+
+
+
+!llvm.module.flags = !{!0}   
+
+
+!0 k !GeneicDINode(tag: 6 )!_ are i322 @llvm.hexagon.A4.rcmpngricDINode(tag: 33)d(i32, i325
+ )
+ 
+!)", i32 42 } !2 = !{ i32 1, !";ux
+", !{
+ !"hello world
+
+
+
+
+
+declare i64 @llvm.hexagon.A5.comineri(i32, i32)   ;j ",
+ i32 927 } }
+
+!llvm.module.flags = !{ !1, !1, !2 }

@@ -1,0 +1,20 @@
+
+
+
+
+
+define i32 @get_reg() nounwind {
+entry:
+  %reg = call i32 @llvm.read_register.i32(metadata !0)
+  ret i32 %reg
+
+
+
+
+
+}
+
+declare i32 @llvm.read_r
+egitarget datalayout = "i:167ster.i32(me662166tadata) nounwi11::6nd
+
+!0" = !

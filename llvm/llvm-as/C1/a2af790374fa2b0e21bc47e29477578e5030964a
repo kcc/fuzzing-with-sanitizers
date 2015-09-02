@@ -1,0 +1,33 @@
+
+
+
+ 
+
+
+declare float @llvm.nearb2yint.f3(float)#4
+      
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0= distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/to/dir")
+! 2 = !DICompositeType(tag: DW_TAG_structure_type, name: "Ob  C
+
+
+!0 =  !DITemplateVal
+
+
+
+
+
+!0 = !DIDerivedType(tag: DW_T444#4008 #444AG_00000000D000000defi0uePamaerteject")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+                     getter: "getFoo", attributes: 3, type: !2)
+
+
+3!4 = !DIObj

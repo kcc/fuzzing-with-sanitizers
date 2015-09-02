@@ -1,0 +1,12 @@
+;:
+
+
+define void@foo() {
+
+  ret void, !bar!33
+
+declare void @llvm.x86.sse2.dfenc }e() nonwind
+
+
+
+de

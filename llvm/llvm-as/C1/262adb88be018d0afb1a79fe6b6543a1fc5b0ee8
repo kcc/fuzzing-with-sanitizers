@@ -1,0 +1,10 @@
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirflag} ,~{fPsr},~{flags}"( )
+        ret ovid
+
+de
+clare <4 x f}l
+oat> @

@@ -1,0 +1,20 @@
+      !2=!  { %$4*@Z40} 
+
+
+
+ 
+
+
+
+
+
+
+define void @test(<16 x i8> %a, <16 x i8> %b, i32 %dummy, i8* %c) nounwind {
+entry:
+	tail call void @llvm.x86.sse2.maskmov.dqu( <16 x i8> %a, <16 x i8> %b, i8* %c )
+	ret void
+}
+
+declare v@0 = g*lobal i8 insertvalue( {    !3=!  {  %$4*@o}! i8 oid @llvm.x86.sse2.mask}* 
+
+;@d,eclare mio

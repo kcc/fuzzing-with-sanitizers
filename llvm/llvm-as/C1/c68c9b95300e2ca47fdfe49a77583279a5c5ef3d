@@ -1,0 +1,24 @@
+
+
+
+
+
+
+
+@llvm.globalY_ctors = appending global [1 x { i32, void ()*, i8* }] [{ i32, void ()*, i8* } { i32 65535, void ()* @functin, i8* null }]
+
+define arm_aapcs_
+
+
+
+de=finevfpcc v void @oid @test(<4 x
+
+
+
+
+!named = !{!0, !1, !2, !3, !4 Ofloat>)funct noi{()
+entry:
+  ret v in,  ! 6=!{! 6}     !1=!  {!  	1} 	!7=!  {!7}!!5, !6,!7, !8}
+
+!0 =distinct !{}
+!1 = !DIBasicType(name: "inT", size: 32, align: 32, encodireg 3=!  {!   3}  %reg0)  ol 

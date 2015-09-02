@@ -1,0 +1,45 @@
+   
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+
+
+
+
+target datalayout = "3e3-p::22:32i1:8:32-i8:8/32:i16:16:32 ;
+
+ 
+
+
+declare i32 @lvm.s390.vmaon(i8   ) 
+
+
+
+
+!named = !{!0l !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !DISubprogram(name: "foo-i32:32:32
+
+
+D
+
+
+
+
+
+
+
+
+declare <16e+x  !3=! { %x(%.$e"(  ; )   $ fl"    
+define i32 @test_x86, _ss

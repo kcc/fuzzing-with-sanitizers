@@ -1,0 +1,19 @@
+
+
+
+
+@i = global i32 0, align 4
+@j = common global i32 0, align 4
+@k = common global i32 0, align 4
+
+
+define i32 @bnez() #0 {
+entry:
+  %0 = load i32, i32* @i, align 4, !tbaa !1
+  %cmp = icmp eq i32 %0, 0
+  
+
+define <8 x i8> @vqsubs8(<8 x i8>* %A, <8 x i8>* %B) nounwind {
+
+
+	%tmpbr i1 %cml,p abel %if1 = .lt

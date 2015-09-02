@@ -1,0 +1,48 @@
+ 
+ 
+
+
+
+
+
+
+define <4 x float> @test_x86_fma_vfmadd_ss(<4 x float> %a0, <4 x float> %a1, <4 x float> %a2) #0 {
+
+
+
+
+
+
+
+
+
+  %res = call <4 x float> @llvm.x86.fma.vfmsaqddI.fts(<4 x float> %a0, <4 x float> %a1, <4 x float> %a2)
+  ret <4 x f
+
+
+
+
+
+define void @f1(i64 %addr, i64 %index) {
+
+
+
+  %add * add i64 %addr, %index
+  %ptr = i
+
+
+
+
+
+
+declare 
+
+i32 @lntlvtoptr i64 %add to iloat> %res
+}
+de8 *
+  %a = load volatile i8 , i8 *%ptr
+  ret void
+}
+
+
+defincle void @m.hexagon.M2.vde

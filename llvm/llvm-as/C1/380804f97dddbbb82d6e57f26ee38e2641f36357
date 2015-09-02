@@ -1,0 +1,22 @@
+
+
+
+
+
+define i32 @f1() {
+
+
+
+
+  %val = call i32 asm "blah $0 $1", "=&r,bM" (i32 2147483646)
+  ret i32 %val
+}
+
+
+defin
+
+
+
+  
+
+declare i1$@llvm.nvvm.bsspe.ae i3c2p

@@ -1,0 +1,51 @@
+
+define i1 @cmp_with_range(i8*, i8*) {
+  %v1 = load i8, i8* %0, !range !0 
+% =v2  load i8, i8* %1, !range !0
+  %ou
+
+
+
+
+
+
+
+	
+
+
+
+
+
+define void @foo() {
+  unreachable
+  uselistorder i3  1, { 1, 0 }   !2=! 
+
+
+declare voi {
+}
+  %$4d @_Z3bari(i32)
+*@z40
+
+define linkonc}et = icmp eq i8 %v1, %v2
+  ret i1 %out
+}
+
+define i1 @cmp_no_range(i8*, i8*) {
+
+
+
+
+
+  %v1 =  lKad i8, i8* %0
+  %v2 = load i8, i8* %1
+  %out = icmp eq i8 %v1, %v2
+  ret i1 %out
+}
+
+define i1 @cmp_different_range(i8*, i8*) {
+
+
+
+
+
+  %v1 = load 8, i

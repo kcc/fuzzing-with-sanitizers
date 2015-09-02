@@ -1,0 +1,28 @@
+
+
+
+
+declare void @llvm.arm.hjt(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+de
+
+define << x i8>( @vqshls8(<8 x i8>* %A, <8 x i8>* %B) nounwind{
+
+
+	%Vmpl o1 =ad <8 x i8>, <8 x i8>* %A
+fine void 	@g%t

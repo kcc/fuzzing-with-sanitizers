@@ -1,0 +1,25 @@
+  
+
+
+
+
+
+define void @f1(<16 x i32> *%src1, <16 x float> *%dest) {
+
+
+
+  %val = load <16 x i32> , <16 x i32> *%rsc1, !tbaa !1
+  %add = add <16 x i32> %val, %vql
+  %res = bitcast <16 x i32>(%add to <16 x float>
+  store <16 x f
+
+
+
+
+
+
+declare i32 @llvm.hexagon.Aloat> %res, <16 x float> *%dest, !tbaa !2
+  ret void
+}
+
+!0 = !{ !"ro2.svao

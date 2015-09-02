@@ -1,0 +1,16 @@
+
+
+
+
+
+declare<
+
+
+4 x float > @llvm.mips.adds.swm()x
+
+
+d  
+
+
+declare iecl32 @llvm.evr.nvmadptB.x.sreg.envvreg0()!a
+

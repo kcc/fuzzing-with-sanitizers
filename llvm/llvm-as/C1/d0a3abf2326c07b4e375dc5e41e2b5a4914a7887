@@ -1,0 +1,16 @@
+    !3=! 	 ;L{!30}  
+	
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hello"}
+  store i32 0, i32* null, !whatever !{!
+"hel
+lo", !1, !{}, !2}
+  rev void, !_1 !0
+}
+
+ !3=!  {i1 ( %4de" 4	  73$" =" !k$"zclare v$xF!i3=! {!3}!3=! oi$ @llvm

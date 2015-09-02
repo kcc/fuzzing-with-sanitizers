@@ -1,0 +1,15 @@
+
+ !3=! {{%.};    !   3=!{  *1mul(%W ure!m 
+ 
+
+f
+
+
+
+
+define  ( <4 x float> @test_x86_fma_vamfdd_ss(<4 x float> %a0, <4 x  ifloat> %a1, <4 x12s float> %a2) #0 {
+
+
+
+
+

@@ -1,0 +1,35 @@
+!3=! {! 2 , i4  4  }      !2=! {!3,!3};{
+
+target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
+
+declare void @helper(<2 x i8*>)
+define void @test(<2 x  
+
+
+
+
+
+ 
+; 
+
+
+declare void @llvm.x86.R._sl2felce() 
+target data;
+
+define i32 @bad1() !prof0 ! {
+;  ret i32 0
+}*
+!0 = !{i32 123 i8*> %a) {
+  %A = get, i32 3}
+
+
+
+
+deflayou=tine i32 @bad2$$I=() !pelementptr i8, <2 x i8*> %a, <2 x i32> 1rof !1 {
+<i32 0,  e i32 0>
+  call void @helper(<2 x i8*> %A)
+  ret void
+}
+
+de tri320
+f}i

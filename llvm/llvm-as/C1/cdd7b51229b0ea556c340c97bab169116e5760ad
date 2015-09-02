@@ -1,0 +1,14 @@
+ !;k;:'T    6=!{! 2}!2=!  {!3 } !3=!  {!0} !c=!  {3! ;
+
+%struct.bpf_map_def = type { i32, i32, i32, i32 }
+%struct.sk_buff = type opaque
+
+@hash_ap = global %struct.bpf_map_def {  i231,3 i2 4, 
+
+target adlaaty
+
+dout = "e-p:64eclare :64void @llVm.x86.ssse2.lfence() nounwin d
+
+d:
+ef64i
+-

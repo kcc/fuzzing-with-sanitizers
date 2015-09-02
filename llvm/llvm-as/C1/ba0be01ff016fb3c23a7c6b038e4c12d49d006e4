@@ -1,0 +1,48 @@
+
+declare <4 x float> @llvm.mips.sll.h()
+   
+   
+
+
+
+
+
+
+declare i32 @llvm.hexagon.S2.ctlb (i64)    
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i3 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix i32* @i {
+  ret void
+!3=!  {i81 44
+
+
+
+
+
+@xyz = global i32 2
+
+Ndeclare void @llvm.dbg.value(metadata, i64, metadata, metadata) #0
+
+
+define i32 @fn() #1 
+entry:
+  ret i32 0, !dbg !18
+}
+
+
+define i3208404404  
+
+ @foo(i3
+def2 %i) #2 {i

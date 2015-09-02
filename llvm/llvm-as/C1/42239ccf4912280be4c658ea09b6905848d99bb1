@@ -1,0 +1,29 @@
+
+
+%Foo = type  { i32, i32 }
+
+declare void @f(%Foo inalloca %b)
+
+;
+
+
+
+
+declare <4x float> @llvm.mips.srai.w()    
+declare void @llvm.localescape(...)
+
+
+define void @arent;
+() gc "statepoi~pt-xample" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+   }
+
+

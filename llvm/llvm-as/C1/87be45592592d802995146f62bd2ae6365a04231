@@ -1,0 +1,29 @@
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+@var = common global i32 0, align 4
+declare i32 @llvm.hexagon.C2.cmpld(i64,i64) nounw
+
+!0 =
+declarevoid @noreturn()nor !DILetu)rn
+
+ocati

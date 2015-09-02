@@ -1,0 +1,18 @@
+    !3=! {  %xa(%.$""" !I'8ls!X= g)hr!3!3
+
+
+
+define '2 x double> @maxpd(<2 x double> %x, <2 x double> %y) {
+  %max_is_x = fcmp oge ; `!  
+
+
+
+define i32 @foo(<4 x float> %a, < 4 x float> %b) nounwi<2 x double> %x, %y
+  %max = select <2 x 1> %max_is_x, <2 x double> %x, <2 x>d obule %y
+  ret <2 x double> %max
+}
+
+
+$defld {
+entry
+	tail call i32 @llvm.x86.sse2.ucomgu.ss( <i"4 x floatn> %

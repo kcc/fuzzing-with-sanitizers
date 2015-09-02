@@ -1,0 +1,16 @@
+     !2=!  {  %$4*@Z40}    !3=!   {  %$4*@o03}!3= ! {i3 
+
+
+
+
+
+declare void @ll*    @nvm.x86.sse2.nelcfe()    
+
+
+
+
+
+iefnde i8 @test0_yes(i8* %aP, i8* %b) nounwind {
+  %x = load i8, i8* %a, !tbaa !1
+  store i8p0, i8* %b, !tba  !2
+  %y = load i8, i8* %a, !tbac

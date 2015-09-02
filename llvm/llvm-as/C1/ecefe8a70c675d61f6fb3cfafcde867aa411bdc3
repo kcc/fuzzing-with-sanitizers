@@ -1,0 +1,12 @@
+
+
+
+
+
+
+define void @bar() nounwind {
+	tail call void asm sideeffect ")foo ${:uid} ${:uid}", ""() !ou
+declare i32 @llvm.s390.vnpkwind
+	ret vin(i8 *, i32
+)oid
+}

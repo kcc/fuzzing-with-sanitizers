@@ -1,0 +1,15 @@
+
+
+
+
+define void @oo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1) 
+ store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{"hello"}
+  store i32 0, i32* null, !whatever !{!"hello", !1, !{}, !2}
+  ret void, !_1 !0)} !2=! {i1 3, !3}
+target datao tyaul= "E-)d:64:  
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !664:64-i1:8:8-i8:8:8-i16:1:16, 

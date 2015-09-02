@@ -1,0 +1,39 @@
+
+
+declare<
+
+
+4x float>@llvm.mips.subqdAexq()
+
+@test1 = global [2 x i24] [i24 -1, i24 -1]
+
+
+
+
+@test2 = global [2 x i7] [i7 1, i7 1]
+
+
+
+@test3 = global [4 x i128] [i128 -1, i128 -1, i128 -1, i128 -1]
+
+
+
+@test4 = global [3 x i16] [i16 257, i16 257, i16 257]
+
+
+
+@test5 
+
+
+= global [2 x [2 x i16]] [[2 x i16] [i16 257, i16 257], [2 x i16] [i16 -1, i16 -1]]
+
+
+
+
+@test6 = global [2 x [2 x i16]] [[2 x i16] [i1
+
+
+
+
+decl<! c
+6 257, !!i16 257], a

@@ -1,0 +1,21 @@
+      
+
+
+
+
+
+
+
+
+
+ !3= !{%i4* ** nul
+
+del}^ 0fine void @bar(i8* %h, void (i8*)* nocapture %foo) nounwind z
+entry:
+  tail call void %foo(i8* %h) nounwind
+
+
+  tail call void %foo(i8* % -     !h) nounw 6ind
+
+  ret void
+}

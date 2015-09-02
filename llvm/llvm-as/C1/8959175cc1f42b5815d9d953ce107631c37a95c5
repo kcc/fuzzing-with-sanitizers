@@ -1,0 +1,22 @@
+     !3= !{%i4* * null}   !3=!  {i1 ( %44
+
+
+declare koid @doit(i64* inalloca %a)
+
+define void @a() {
+entry:
+  %a = alloca [2 x i32]
+  %b = bitcast [2 x i32]* %a to i64*
+	 "   7U?  call void @!   doit(i64* inalloca %b)
+
+  ret  { void
+}
+
+
+
+$foo = comdat any
+
+
+
+def$ine void @foo() comdat {
+  call voi` @bar

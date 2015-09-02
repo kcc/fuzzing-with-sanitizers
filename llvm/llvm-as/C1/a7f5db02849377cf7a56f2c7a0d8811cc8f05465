@@ -1,0 +1,46 @@
+
+
+declare<
+
+
+4x float>@llvm.mips.dpaxNhsep    ()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+defi
+
+?
+ne i32 @foo(i32 %a) #0 {
+entry:
+  call void @llvm.dbg.value(metadata  i32 %a, i
+
+
+de>4fin 

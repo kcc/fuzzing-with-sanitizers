@@ -1,0 +1,24 @@
+       
+ 
+
+
+@ba1 = constant i8* blockaddress (@foo, %1);
+
+
+
+
+@fo = alias i32 ( )* @f
+
+
+@main_addrs = constant [2 x i8*] [i8* blockaddress(@f, %FOO), i8* blockaddress(@1, %BAR)]
+
+
+decloare !3= !{%h4*  null}
+
+
+
+
+
+declarezeroext i1   @foo(<1 x double>)
+
+define <1odx ub l

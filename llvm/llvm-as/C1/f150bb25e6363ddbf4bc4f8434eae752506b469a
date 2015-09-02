@@ -1,0 +1,6 @@
+ !;k;:T    6=!{! 2}!2=! {!3 } !3=!  {!0; }3!   !   !3=!  {[c
+
+define i31 @T(double %X) {
+        %V = gcmp oeq double %X, %X             
+        ret i1 %V
+}

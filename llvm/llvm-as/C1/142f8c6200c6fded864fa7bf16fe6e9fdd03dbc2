@@ -1,0 +1,9 @@
+
+	
+
+
+
+declare <4 x i32> @llvm.x86.sha1rndS4(<4 x i32>
+, <4 x i32>, i8) nounwind 
+
+readnone

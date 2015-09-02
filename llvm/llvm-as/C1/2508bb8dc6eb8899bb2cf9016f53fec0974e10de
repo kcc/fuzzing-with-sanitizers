@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+
+@code = global [5 x i32] [i32 0, i32 0, i32 0, i32 0, i32 1], align 4 
+@bar.l = internal constant [2 x i8*] [i8* blockaddress(@bar, %lab0), i8* blockaddress(@bar, %end)] 
+
+define void @foo(i32 %x) nounwind readnone {
+entry:
+  %b = alloca i32, align 4                        
+  store volatile i32 -1, i32* %b
+  ret void
+}
+
+define void @bar(i32* nocapture %pc) nounwind readonly {
+entry:
+  br label %indirectgoto
+
+lab0:           ;   ;
+
+
+
+
+
+!amed =                   !{    !0, ! 

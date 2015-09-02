@@ -1,0 +1,49 @@
+; :
+    !3=! { %x(%$g$.I"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define <4 x float> @te"  "st(<4 x float> %a, <4 x float>* %b) {
+
+
+
+
+
+entry:
+  %0 = load <4 x float>, <4 x float>* %b, align 16
+  %1 = call <4 x float> @llvm.x86.sse41.insertps(<4 x float> %a, <4 x flo  !3=! {  %x",%a(%.Iwat> %0, i32 64)
+  %2 = alloca <4 x float>, align 16
+  store <4 x float> %1, <4 x fl oat>* %2, align 16
+  %3 = load <4 x float>, <4 x float>* %2, align 16
+  ret 

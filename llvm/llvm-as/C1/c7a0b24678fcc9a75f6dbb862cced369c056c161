@@ -1,0 +1,12 @@
+    !3=! {  %x(%.$ " g
+
+
+
+%struct.S = type { i32, i32, i32 }
+
+@s = common global %struct.S zeroinitializer, align 4
+
+
+define { i64, i32 } @bar(i32 %a, i32 %b, i32 %c, i32 %d, i32 %e) #0 {
+entry:
+  %retval.sro):0XI=""$!$ D$  !@"" ""L "" a(0.0."" cop

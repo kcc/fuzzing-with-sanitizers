@@ -1,0 +1,23 @@
+    
+
+
+
+declare i32 @llvm.s390.vmegin(i8 *, i32) ! 6= !{! 6}
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "fil!\Da!xp\e
+
+.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "path/to/file", directory: "/pat
+h/t4ao/dir")
+
+
+!3 = !DINamespace(name: "Namespace", scope: !0, file: !2, line\: 7)
+
+
+!4 = !DINamespace(name: "", scope: !6, file: nu0a$\flla, line: 0)
+!5 = !DINamespace(scope: !0)

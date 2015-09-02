@@ -1,0 +1,54 @@
+
+
+declare fastcc i32 @callee(i32 %arg)
+define fastcc i32 @direstcall(i32 %arg) {
+entry:
+
+
+
+
+  %res = tail call fastcc i32 @callee(i32 %arg)
+  ret i32 %res
+}  
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.module.f
+
+
+
+define fastcc i32 @indirect_manyargs(i32(i32,i32,i32,i32,i32,i32,i32)* %target) {
+
+
+
+
+
+
+
+
+
+
+
+
+lags = !{!0}
+!0 = !{i32 2, !"Debug Info Vers*on", i32 3}
+
+!llvm.dbg
+
+
+
+
+
+
+
+  %res =.cu 

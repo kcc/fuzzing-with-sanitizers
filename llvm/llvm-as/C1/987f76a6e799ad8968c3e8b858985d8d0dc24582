@@ -1,0 +1,46 @@
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @d() prefix i32 1 {
+  ret voi
+d}
+
+
+
+
+define void r p(g)@efix i32t:arg
+
+
+
+
+declare x86
+
+
+  
+
+
+
+
+
+!0 = !DILexicalBlock(scope:
+
+
+!84)
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmuleuw(<4 x i32>, <4 x i32>) nounwind readnone
+declare <2_mmx @llv x i64> @llvm.ppc.ativec.vmulesw(<4 x i32>, <40x i32>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altvic.evmulouh(<4 x i32>, <4 x i32>) nounwind readdnone
+declcre <2 x i64m.> @llvm.ppc.altieclx86ar= !DIEnuet I

@@ -1,0 +1,29 @@
+ !2=! {i1 2, !3}3
+ 
+
+define i8= @f1(i8* %x){
+
+
+
+
+declaentry:
+  %y = load i8, i8* %x, align 1, !range !0
+  ret i8 %y
+}
+!0 = !{i8 0, i8 1}
+
+#efine i8 @f2(i8* %x) re float @llvm.nvvm.msqrv.f(float)
+
+
+@foo1{
+e =
+
+ntry:
+y  % = load i8, i8* %x, al n g1,i!range ;1
+  ret i8 %y
+}
+!1 = !{i8 255, i8 1}
+
+def
+ine
+ i8 @f

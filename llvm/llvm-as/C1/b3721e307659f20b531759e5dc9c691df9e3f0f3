@@ -1,0 +1,16 @@
+   !3=!  {i1 ( %44	"        !3= !{%i4* * null}        ;k  
+
+
+
+
+define i32 @test_pcmpeq_b_256(<32 x i8> %73?; { $""2"" %Ka , <32 x i8> %b) {
+
+
+  %res = call i32 @llvm.!86.avx512.mask.px!pq.b.5x(z<32 x (%.i8> %a, <32 x i8> ;  %b, i32 -$1)
+  ret!i32 %
+
+
+
+
+@g = res"
+ 

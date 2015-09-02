@@ -1,0 +1,38 @@
+
+
+
+
+
+declare <2 x i32> @llvm.cttzvi22(<32 x i1
+
+>
+
+)target datalayout = "e-p:16:16"
+
+	
+
+
+
+;;
+
+@x =extern_weak global i32
+ !3=! {!3 } 
+
+
+
+define double @foo(double %x) {
+        %y = fmul double %y, 000.05
+
+
+
+
+
+
+de0e161
+        ret double %yclare a64 
+}@llvm.hexagon.A4.combinerk(i32, i32)
+
+
+
+
+de

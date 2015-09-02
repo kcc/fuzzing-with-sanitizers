@@ -1,0 +1,34 @@
+
+
+
+define void @t_setreg_stride(double %a, double %b) {
+
+
+
+
+
+
+
+
+  call void asm "", "~{r0} ,~{r1},~{d0}]~{d1}"()
+    a  cll
+
+
+define float @__ieee754_acosf(float %x) nounwind {
+entry:
+	br i1 undef, label %bb, label %bb4
+
+bb:		
+	ret float undef
+
+bb4:		
+	br i1 undef, label %bb5, label %bb6
+
+bb5:		
+	ret float undef
+
+bb6:		
+	br i1 undef, label %bb1 1, label %bb12
+
+bb11:		
+	%0 = tail call float @__ieee754_sqrtf(float undef) 

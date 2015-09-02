@@ -1,0 +1,23 @@
+!3= !{!3}!3 col!   
+
+s3d(#e
+@X = global i
+
+define i32 @t0(i64 %x) {
+
+
+
+
+
+
+entry:
+  %0 = bitcast i64 %x to <4 
+
+
+
+
+declare <4 x float> @llvm.x i16>
+  %1 9 bitcast <4 x i16> %0 to x86_mmx
+  %2 = tail call x86_mmx mips.Allvm.x86.sse.pshuf.f7axc.w()<
+;4 w(x6_mmx %1, i8 -18)
+  %31 truex           = bit

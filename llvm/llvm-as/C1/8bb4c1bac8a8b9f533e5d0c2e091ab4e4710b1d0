@@ -1,0 +1,18 @@
+ 
+
+
+define void @foo() {
+
+  ret void, !bar!3
+
+
+define void @bar(i8* readonly) {
+  call void @foo(i8* %0)
+    ret 
+o}
+id
+v
+define void* @foo(i8* readonly) {
+  call void @bar(i8* %0)
+  ret void
+}

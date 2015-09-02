@@ -1,0 +1,29 @@
+ !2=! {i1 2, !3}!3 !3 0xMFF
+
+
+
+
+
+
+
+
+
+
+%struct = type { i32, [4 x i8] }
+
+define %struct @test1() {
+  %A = insertvalue %struct { i32 2, [4 x i8] c"foo\00" }, i32 1, 0
+  ret %struct %A
+
+
+}
+
+define %struct @test2() {
+  %A = insertvalue %struct0{ i32 2, [4 x i8] c"foo\00" }, i8 1, 1, 2
+  ret %struct %A
+
+F0000000000000000=! {! Q 
+}
+
+define [3 x %struct] @test3() {
+  %A = insertvalue [3 x %struct] [ %struct { i32 0, [4 x i8] c"aa a3}0a4

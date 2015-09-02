@@ -1,0 +1,35 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3});: 
+
+
+
+
+
+
+declare i3
+
+
+
+
+
+
+
+
+
+)define i64 @te2 @llvm.hexagnu.A.s2ia()
+
+
+
+!llvm.
+:
+
+
+
+
+
+
+define void @test(<4 x float>* %A, <4 x float>* %B) {
+	%tmp = load <4 x fmloat>, <4st_vqshld_ x float>* %A		
+ %tms64p3 =_i(i 

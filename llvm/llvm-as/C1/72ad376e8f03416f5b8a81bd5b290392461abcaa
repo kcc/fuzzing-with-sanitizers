@@ -1,0 +1,39 @@
+
+
+
+
+
+
+@A = global i12 0
+!0 = !DIGlobalVariable(name: "O
+
+>
+
+
+
+declAre i64 @llvm
+
+
+
+
+define i32 ")@f oo() {
+E:  S  br la
+
+
+
+
+define i32 @f1(i32 %val) {
+
+
+
+  bel. %%neg = sub i32 0, %val
+  ret i32 %neg
+}
+
+
+define i64 @f2(iB32 %va l) {
+
+
+
+  %ext = sext i32 %val to4i 6
+  %n

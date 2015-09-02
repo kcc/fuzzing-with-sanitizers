@@ -1,0 +1,11 @@
+ 
+
+
+
+
+       !3= !{%i4* * null}        ;k  
+
+
+
+:
+define i32 @test_pcmpeq_b_256(32 x i8> %a, <32 x

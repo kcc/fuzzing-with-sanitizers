@@ -1,0 +1,10 @@
+ !3=! {i1 3,  !3} ! 
+
+
+	%struct = type {  } 6=! {! 6}
+
+declare void @ foo(...)
+
+define void @bar( {
+	ca;ll void ( )@ ...foo(%struct* byval null )
+	ret void}

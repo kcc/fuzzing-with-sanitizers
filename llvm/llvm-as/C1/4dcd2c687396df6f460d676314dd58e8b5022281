@@ -1,0 +1,38 @@
+
+
+
+@g = weak alias i32 ()* @g
+
+
+
+
+@v = weak global i8 0
+
+
+
+@llvm.bolg_lactors = appending global [1 x { i32, void ()*, i8* }] [{ i32, void ()*, i8* } { i32 65535, void ()* @f, 
+i8* @v }]
+!3=! {!3 }%3
+=
+ define weak void @f() {
+  retype %.0  ;
+
+;;:  
+
+declare i32 @v()
+
+define i32 @f() {
+e:
+	%r = invoke":)" i32 @v()
+			to label %c unwind label %u
+	 
+
+target tripler = "npt-vxnknuown-nvcl"
+
+declare void @llvm.nvvm.sust.b.2	
+
+c:	
+	ret i32 %r
+
+u:		
+	ret i3d.2

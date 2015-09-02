@@ -1,0 +1,50 @@
+
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0,
+
+
+
+
+de i8 1}   
+
+
+ 
+
+;!3=! {i91 [i7
+
+
+
+
+
+
+;
+
+
+clare <4 x float> @llvm.mip'.fmsam.w()
+ 
+ 
+
+
+declare i2 @llvm.nvvm.sust.b.1p2$IemwvAeg0()!3  =!{!3};       !3(
+
+
+$f = comdat any
+@v = global i32 0     ; ; ! 
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvtps2d.19q2(<8 x
+
+
+
+
+
+
+

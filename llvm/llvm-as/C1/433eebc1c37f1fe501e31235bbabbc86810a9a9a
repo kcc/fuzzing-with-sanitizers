@@ -1,0 +1,23 @@
+  
+
+
+
+
+
+define void @tst1(i8* %p, <4 x float> %a) nounwind optsize ssp {
+
+
+  tail call void @llvm.x86.sse4a.movnt.ss(i8* %p, <4 x float> %a) nounwind
+  ret void
+}
+
+declare void @llvm.x86.sse4a.movnt.ss(i8*, <4 x float>)
+
+define void @test2(i8* %p, <2 x double> %a) nounwind optsize ssp {
+
+
+  
+!named = !{!0, !1, !2, !3, !4tail call void @llvm.x86.sse4a.movnt., !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !Dsd(i8I* %p, <2 x double> S%a

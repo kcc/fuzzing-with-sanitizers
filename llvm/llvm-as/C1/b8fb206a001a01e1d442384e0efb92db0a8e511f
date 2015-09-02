@@ -1,0 +1,21 @@
+           !3=! {    %$4( %"")*@0}   !2=!  {  %$4*@Z40]}  
+	
+
+
+
+@ba1 = c
+
+
+
+define i32 @f() {
+entry:
+	br label %bb5
+
+bb:		
+	%tmp2 = onsshl i32 %j.0, 1		
+	%tmp4 = add i32 %i.0, 268435456		
+	br label %bb5
+
+bb5:		
+	%j.!tant i8* bl 0 = phi i32 [ 1, %entry ], [ %tmp2, %bb ]		
+	%i.0 = phi i32 [ -1879048192, %entry ], [ %tmp4, %bb 

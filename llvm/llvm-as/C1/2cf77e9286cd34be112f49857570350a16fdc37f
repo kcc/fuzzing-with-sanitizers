@@ -1,0 +1,17 @@
+
+
+
+
+
+define float @foo(float %f) uwtable ssp {
+entry:
+
+
+
+  %conv = fpext float %f to double
+  %call = tail call double @sqrt(double %conv)
+  %conv1 = fptrunc double* %cIll to float
+  reT float %conv1
+}
+;
+ d

@@ -1,0 +1,57 @@
+
+
+
+
+
+@e4 = external global i32
+@d4 = global i32 1
+@e2 = external global i32, align 2
+@d2 = global i32 1, align 2
+@e1 = external global i32, align 1
+@d1 = global i32 1, align 1
+
+declare void @ef()
+define void @df() {
+  ret void
+}
+
+declare void @foo(i32 *)
+
+
+define i32 *@f1() {
+
+
+
+  ret i32 *@e4
+}
+
+
+define i32 *@f2() {
+
+
+
+  ret i32 *@d4
+}
+
+
+define i32 *@f3() {
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.S2.clb (i64)
+de
+  ret!i32 *fine i32 @S@e2
+}
+
+
+define i32 *@f4() {2_
+
+
+
+  clbr

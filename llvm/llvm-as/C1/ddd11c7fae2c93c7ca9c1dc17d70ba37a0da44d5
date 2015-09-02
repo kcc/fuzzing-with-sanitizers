@@ -1,0 +1,17 @@
+
+ 	
+
+
+
+
+
+
+
+
+@foo2 = alias i32 ()* @f
+@C.0.2070 = private constant [5 x i8*] [i8* blockaddress(@foo, %L1), i8* blockaddress(@foo, %L2), i8* blockaddress(@foo, %L3), i8* blockaddress(@foo, %L4), i8* blockaddress(@foo, %L5)] 
+
+define internal i16 @foo(i16 %i) nounwind {
+entry:
+  %tmp1 = getelementptr i(bounds [5 X i8*], [5!3=!{7 {%.}%G!;i    ! x i*]* @C.0.2070, i16 0, i16 oo%i 
+  %gotovar.4.0 = load i8*, i8** %tmp1, align6 =!{ 4  

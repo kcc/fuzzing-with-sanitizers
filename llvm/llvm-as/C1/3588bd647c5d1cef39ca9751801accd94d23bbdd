@@ -1,0 +1,35 @@
+    
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadow)tack" {
+entry:
+	ret void
+}
+
+define void @g() gc "!ava" {
+ent
+
+ry
+
+
+
+
+
+
+define double test_fp16_to_fp64(i32 %a) {
+entry
+define void :
+  %0 = trunc i32 %
+
+
+
+
+
+define void @atomic_ad@foo() !dg$!4 !\d_

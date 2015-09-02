@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+
+define <8 x i8> @cls_8b(<8 x i8>* %A) nounwind {
+
+
+	%tmp = load <8 x i8>, <8 x i8>* %A
+	%tmp3 = call <8 x i8> @llvm.aarch64.neon.cls.v8i8(<8 x i8> %tmp1)
+	ret <8 x i8> %tmp3
+}
+
+define <16 x i8> @cls_16b(<16 x i8>* %A) nounwind {
+
+
+	%tmp1 = load <16 x i8>, <16 x i8>* %A
+	%tmp3 = call <16 x i8> @llvm.aarch64.neon.cls.v16i8(<16 x i8> %tmp1)
+	ret <16 x i8> %tmp3
+}
+
+define <4 x i16> @cls_4h(<4 x i16>* %A) nounwind {
+
+
+	%tmp1 = load <4 x i16>, <4 x i16>* 
+dec%

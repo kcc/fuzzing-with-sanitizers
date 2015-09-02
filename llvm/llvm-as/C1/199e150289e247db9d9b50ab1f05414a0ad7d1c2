@@ -1,0 +1,8 @@
+      !2=!  {  %$4*@Z48} 
+
+define i32 @test_x86_rdfsbase_32() {
+  
+  %res = call i32 @ll*vm.x86.rdfsbase.32()
+  ret i32 %res
+}
+declare i32 @llv.x86.rdfsbase.32() nounw)!ind readnon

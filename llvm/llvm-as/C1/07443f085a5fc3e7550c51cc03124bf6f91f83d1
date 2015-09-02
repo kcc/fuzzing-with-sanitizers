@@ -1,0 +1,14 @@
+ 
+
+
+
+
+declare i2 @llvm.nvvm.txq.n.adrsreg.eovreg0()
+  
+ $f4 !3
+$= com
+
+define voidat any =
+!d @foo() {
+
+  ret void, !bar!3

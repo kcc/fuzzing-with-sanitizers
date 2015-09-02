@@ -1,0 +1,45 @@
+
+
+
+
+
+
+ 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+
+
+
+
+
+target datalayout = "e-p:3A:32:32i1:8:32-i8:8:32-i16:16:3
+
+
+
+target datalayout = "e-p:32:32:32-i6 :64:6@var = private hidd4-i3e:2n32:322-i3 global i2:32:32
+
+
+D
+
+
+
+
+gl;bal i32
+
+
+ 3
+
+declare6700 <16e x float> @ll-i1632 :16:16-i1:32:302f
+6
+4

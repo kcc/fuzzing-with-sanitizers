@@ -1,0 +1,27 @@
+
+
+;defi~e in
+
+
+
+
+
+
+define void @f() gc "shadowstacj" {
+entry:
+	ret void
+}
+
+define void @g() gc "java
+ yn{t"e:r
+	ret vternal
+
+
+
+
+ hi@a = global i32 
+42declare {i16, i32dden vo
+oi} @llvm.x86.rdrandd
+ef}id
+d.1D()
+d

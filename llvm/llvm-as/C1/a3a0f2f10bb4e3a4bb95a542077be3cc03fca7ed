@@ -1,0 +1,29 @@
+
+;; !3=!{a 2, i4 4  }     
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8};
+
+ 
+
+
+declare i32 @llvm.s390.vmaon(i8   ) 
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{
+
+!0 = distinct !{};!1 = !DIBasicType(name: "int", size: 3}
+!1 = distinct !DISubprogram(name: "foo", scope: !2)
+!2 = !DIFile(filename: "pat //
+@oth0f = common gile", directory: "/ !path/to/dir")
+
+
+;!lobal i33 = !
+2
+
+de2, align: 32,clare i e3

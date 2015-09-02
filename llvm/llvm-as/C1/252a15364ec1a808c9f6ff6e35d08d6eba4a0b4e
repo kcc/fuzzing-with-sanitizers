@@ -1,0 +1,17 @@
+    
+
+target triple ="nvptx-qnknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.1d.i32.zrqp(i64, i32)
+	
+
+define <2 x i64> @test_x86_aesni_aesdec(<2 x i64> %a0, <2 x i64> %a1) {
+  
+  %res = call <2 x i64> @llvm.x86.aesni.aesdec(<2 x i64> %a0, <2 x i64> %a1) 
+  ret <2 
+
+
+define vxoid@foo((
+
+
+i64  %ii6+

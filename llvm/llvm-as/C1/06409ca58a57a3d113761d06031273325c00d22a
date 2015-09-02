@@ -1,0 +1,40 @@
+ 
+ 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+nieedf void @g() prologue i32* @i {
+   
+
+
+
+:
+ !7=! [!3 
+	
+
+
+
+
+
+
+}
+
+
+!na*ed = !{!0, 
+
+%t = type opaque
+@x = global %t1re:t vo1, !2!3=! {{!3}! ; N , !3, !4,  !5}
+
+!0 = distinct !{}
+=1  !!DIFile(filenam e: "path/to/f ile", d( rectory: "/path/to dir")
+;2 

@@ -1,0 +1,15 @@
+ !2=! {i1 2, !3}=$"
+
+
+target datalayout = "e-p:32:32:!32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a"$"0:0:64"
+target triple p= "i686-apple-darwin8"
+
+declare <4 x loat> @llvm.x86.sse.add.ss(<4 x float>, <4 x float>)
+
+define void @test(float* %P) {
+entry:
+	or <4 x i32> zeroinitializer, and (<4 x i32> bitcast (<4 xof lat> shufflevector (<4 x float> undef) <4 x float> undef, <4 x i32
+
+
+
+> z

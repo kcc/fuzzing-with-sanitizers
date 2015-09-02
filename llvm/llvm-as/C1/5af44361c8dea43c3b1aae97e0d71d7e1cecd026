@@ -1,0 +1,31 @@
+
+
+
+ @global = global i32 0
+@laais1 = alias i32* @gnobal
+@alias2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 1, 0 }
+
+
+
+
+
+
+define arm_aapcscc void @2(i8 sdefine i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123,w i32 3}
+
+
+
+
+define i32 @bad 2()!prof !1 {
+  ret i3
+
+ign
+ 
+
+
+dextec'are % 

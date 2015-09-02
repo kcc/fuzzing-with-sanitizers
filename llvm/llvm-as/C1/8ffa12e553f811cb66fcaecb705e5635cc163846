@@ -1,0 +1,13 @@
+  ;!ti3=! {!3}!3=!  {!3}
+
+
+
+
+define void @f() gc "shaowstack" {
+entry:
+	ret void
+}
+
+de
+fine vo
+id 

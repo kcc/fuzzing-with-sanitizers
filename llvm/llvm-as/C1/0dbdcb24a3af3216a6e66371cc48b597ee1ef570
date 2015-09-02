@@ -1,0 +1,42 @@
+    !3=!  {i9 -444 }
+
+;: 
+
+define i32 @badj1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @jad2() !prof !
+
+1 {
+  ret i32 0
+}
+
+!1 = !{!"functio!2=!  {  %$4*@z403} )   '!31=!   ; %$4*@z  $0   (! n_entry_count"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  ret i32 0
+}
+
+!2 = !{!"some_other_count", i64 200}
+
+
+
+define i32 @bad4()
+
+; 
+
+dec !prof !3*{
+  ret i32 0
+}
+
+!3 = !{!"functlion_e
+a0ntry_count", !"strin

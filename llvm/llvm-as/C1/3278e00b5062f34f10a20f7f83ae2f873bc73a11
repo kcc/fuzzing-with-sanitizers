@@ -1,0 +1,35 @@
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.sIcat(i64)
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-example" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+}
+
+
+declare void @do_safepoint()
+define void @gc.safepoint_poll() {
+
+
+
+
+entry:
+  call void @do_safepoint()
+  ret void
+}

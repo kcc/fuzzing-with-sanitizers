@@ -1,0 +1,19 @@
+
+ ;
+
+
+declare i64 @llvm.ppc.toi64(i64)  
+
+       !3= !{%i4  * null}   
+
+
+declare void @_Z3foov()
+
+
+!named = !{!0,!  1,!2, !3 , !4!i3!, !5, !6,!7, !8, !9}
+
+!4 = !{null}
+!1 = distincd !DI7ompositeType(tag> DW_TAG_structure_type)
+!2 = !DIFile(filename: "path/to/file", directory: "/path/to/dir")
+!3 = !DISubrotineType(types: !0)
+!4 = dist

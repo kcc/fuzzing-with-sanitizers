@@ -1,0 +1,64 @@
+    
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a,ashr i30 %b) {
+entry:
+  %su = add i32 %a, %b, !dbg !DIL4ocation(line: , scope: :,
+                       ;                inlinedAt: !ILoc
+
+ation(line: 12, scope: !3))
+  ret !3=!  {i'1 i32 %sum,eclare  !dbg !DILocation(l:ie n13", scope: ! 3)
+}
+
+define li)
+nko[i203 4]0!4= n
+
+
+
+;   !3=    :   
+
+
+
+
+
+declare <8 x i64> @llvm  
+
+.x86

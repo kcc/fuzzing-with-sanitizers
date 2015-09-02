@@ -1,0 +1,39 @@
+
+
+
+
+
+
+
+
+
+
+
+
+@t3 = global i32* @t1           
+@t1 = global i32 4
+@t4 = global i32** @t3		 
+
+@t2 = global i32* @t1
+
+global float * @2                
+global float * @2                
+global float 0.0
+global float * @2                
+
+
+@fptr = global void() * @f       
+declare void @f()     
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-p:32:32-f64:32:64-f80:128-n8:16:32S128"
+target triple = "i386-apple-macosx10.9.0"
+
+@ a= co          *
+@sptrmmon global i32 0, alig1n  

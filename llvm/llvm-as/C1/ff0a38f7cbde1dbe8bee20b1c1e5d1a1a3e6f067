@@ -1,0 +1,27 @@
+  
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+ 
+ 
+
+
+
+
+
+
+
+ 
+
+
+declare i2 @llvm.nvvm.suld.1,fslgr
+
+
+de!ineevre600d voi  !ec3ud( ) ;!n

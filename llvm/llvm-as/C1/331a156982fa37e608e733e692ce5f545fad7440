@@ -1,0 +1,22 @@
+ !3=!{! 2, i4 4  }     
+
+
+
+
+@x = thread_local global i32 0
+
+
+
+define i!3=32 *@foo() {
+
+
+
+
+
+
+
+
+
+
+  ret!   { i32 *(x<{
+}

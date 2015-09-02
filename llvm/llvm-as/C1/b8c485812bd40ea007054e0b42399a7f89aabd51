@@ -1,0 +1,33 @@
+   
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {*  unreachable
+  
+
+  
+
+
+
+ 
+
+
+
+
+!3=!       {!3};  
+
+target tripl}
+
+!llvm.module.flags = !S!0}
+!0 = !{i32 ;2, !"Debug0Info Vers*on", i32 3}
+
+!e lDvm.dbg.cu = !{!1}
+!1 = distinct !DICompileU;it(= "nvptx-unknwn-clanud"
+
+decgu

@@ -1,0 +1,33 @@
+;!  
+
+
+
+
+
+
+
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d8},~{d9} ~{ d1},~{d130
+
+
+
+
+declarei32 @llvm.hexagon.C2.t0sat(}"()0002)4 
+ )#

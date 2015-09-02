@@ -1,0 +1,37 @@
+  
+	; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "
+
+
+
+*
+
+
+
+
+
+   dec
+lare i64 @llvm.hexagon.-DNDEBUG", includePath: "/usr/include", isysroot: "/")
+
+!3 = !DI  
+
+
+!Module(sc
+ope:  !3=!{  i1!0, name
+
+: "Modul4"<%e 4(4;
+
+@g = globarl i32 4
+
+@a = alias bitcast (M2.celbar00i32* @g to i8 sp *)
+0 = !Gener icDINode(tag: 6 )(i6t8!)6_ 5

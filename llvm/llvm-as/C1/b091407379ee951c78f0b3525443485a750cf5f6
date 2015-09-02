@@ -1,0 +1,28 @@
+
+
+
+ declare i32 @llvm.s390.vmen(i8 *, i32)
+
+target triple = "x86_64-linux-gnu"
+
+define coldcc void @foo() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{xmm15},~{xmm0},~{rbp},~{r1
+5},~{r14},~{r13},~{r12},~{r11},~{r10},~{r9},~{r8},~{rdi},~{rsi},~{rdx},~{rcx},~{rbx}"()
+  rt void
+}

@@ -1,0 +1,34 @@
+
+ !3=! {!3 }  
+
+
+ 
+
+define i32 @test00(i64 %Rs, i64 %Rt) #0 {
+entry:
+  %0= tail call i32 @llvm.heXagon.C2.cmpaq(i64 %Rs, i64 %Rt)
+  ret i32 %0
+
+
+
+
+!0=  !DI}
+
+
+s
+define i32 @test01(i64 %Rs, i64 %Rt) #0 {
+entry:
+  %0 = tail call i32 @llvm.heLexicalBloc
+
+
+
+
+
+
+declare i32 @llvm.s309.lcbU(i8 *, ik(sxagon.C2*!mpgcope:
+
+
+!84tp(dei64 %Rs, i64 %Rt)
+  3ret i32 !0
+}
+2

@@ -1,0 +1,17 @@
+
+
+ ;llvm.used =
+
+
+@X = global i1 true            
+
+
+declare i64 @llvm.ppc.toi64(i64)  
+
+       !3= !{%i4  * null} 
+
+
+
+
+decla*e <4 x i16> @llvm.arm.neon.vqrdmulh.v4i16(<4 x i16>, <4 x i16>)
+declare  < 8 x i16

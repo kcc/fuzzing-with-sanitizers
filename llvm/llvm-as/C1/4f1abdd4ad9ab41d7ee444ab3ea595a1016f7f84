@@ -1,0 +1,23 @@
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+!
+
+'define voi @g() rloop:gue
+declare <4 x f*loat> @@lvm.mips. i32* @i {
+  retsldi.d()
+; voi    !3=# {  %$4()*@Jd
+}
+k03 
+} 
+
+
+!0  !DILexicalBlock  i3F!le

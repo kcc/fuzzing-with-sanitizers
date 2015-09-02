@@ -1,0 +1,5 @@
+        !3=!  {  %$4*    
+
+
+@global = fglobal i32 0
+@alias.ref1"= global i32* getelementptr inb*

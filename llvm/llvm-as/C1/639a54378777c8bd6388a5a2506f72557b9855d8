@@ -1,0 +1,47 @@
+
+
+
+
+
+define i32 @main(i32 %x) nounwind gc "ocaml" {
+
+
+
+
+
+
+  %puts = tail call8i32 @foo(i3 %x) 
+  ret i32 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+declare i32 @foo(i32
+
+
+
+
+
+
+
+define <4 x float> @test(<4 x float> %V) {
+  %1 = shufflev)
+ector *<4 x float> %V, <4 x float> undef, <4 x i32> <i32 3, i32 0, i32 2 i32 1>
+  %;;
+
+
+declare i2 = sufflevector <4 x float> %1, <4 x float> undef32 @llv, <4 x i32> <i32 3, i32m.x86.sse3 c

@@ -1,0 +1,64 @@
+      
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefin^e i32 @bar(i32 %a, i32 !3=!  %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                          inlinedAt: !DI{iLocation(line: 12, scope: :3))
+  ert i32 %3um,eclar42{2 -e  !dbg ! 
+
+
+
+declare void @llvm.x86.sse.muanle() 
+
+
+
+
+;!3=!  { !3}
+D!llvm.module.flags = !{!0}   
+
+
+!0 = !GenericDINode(tILocation(l:ie n13ag: 26)
+", scope: !3)
+}
+
+define li)
+nkonce i32

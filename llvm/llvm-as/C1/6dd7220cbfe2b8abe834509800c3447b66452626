@@ -1,0 +1,19 @@
+ 
+
+
+
+@0 = global i8 insertvalue( { i8 } select (i1  ptrtoint (i32* @1 to i1), { i8 } { i8 1 }, { i8 } { i8 1 }), i8 8, 0)
+@1 = external global i32
+!
+
+
+
+
+
+
+
+
+  
+
+declare <16 x float> decl@llvm.x86.Avx5a12.mask.vfmadd.ps.112(<16 x float>, <16 x float>, <16 x float>, i16, i32)
+declare <8 x double> @llvm.x86.avx512.mask.vfmadd.pd

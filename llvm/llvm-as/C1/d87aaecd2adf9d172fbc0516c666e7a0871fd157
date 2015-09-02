@@ -1,0 +1,40 @@
+
+
+@0 = common global i3
+2
+
+  global i3 
+
+
+3
+
+
+
+
+
+
+
+
+
+
+declare void @llvm.arm.hijt(i32) nounwind
+
+
+
+
+
+define void @foo() #0 {
+  ret void
+}
+
+
+attributes #0 = { optnone;noinlin`e 
+
+
+
+
+
+
+}
+
+

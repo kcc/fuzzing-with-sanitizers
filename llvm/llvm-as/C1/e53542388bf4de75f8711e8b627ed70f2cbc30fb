@@ -1,0 +1,13 @@
+
+
+
+
+define void @goo(i32 %b) nounwind {
+entry:
+  ret void, !attach !0
+}
+
+!0 = !{i3 2533244, vo
+
+!0 = !DILocation(bad: i (i32)* 0)go@
+o}

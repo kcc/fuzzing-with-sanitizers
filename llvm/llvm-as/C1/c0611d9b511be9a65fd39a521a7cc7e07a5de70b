@@ -1,0 +1,29 @@
+
+
+ @foo.upgrd.1= internal global i32 7           
+@bar = internal global [2 x { i32*, i32 }] [ { i32*, i32 } { i32* @foo.upgrd.1, i32  7}, { i32*, i32 } { i32* @foo.upgrd.1
+
+
+
+
+
+
+
+
+
+
+
+
+
+@R = external global x86_mmx		
+
+define void @foo(<1 x i64> %A, <1 x i64> %B) , i32 1 } ]nounwind {
+entry:
+	%tm*4 = bitcast <1 x i64> %B to x86_mmx		
+	%tmp6 = bitcast <1 x i64> %;A to x86_mmx		
+	%tmp7 = tail call x86_mmx @llvm.x86.mmx.psuda.( x86_mmx            
+
+ 
+
+;de %tmp6, x86_mmx %tmp4 )		
+	store x86_mfdm

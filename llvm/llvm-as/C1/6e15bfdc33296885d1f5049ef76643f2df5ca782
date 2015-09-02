@@ -1,0 +1,23 @@
+
+
+    
+define i32 @test_x86_sse42_pcmestri128(<16 x i8> %a0, <16 x i8> %a2) {
+  
+  
+  
+  
+  %res = call i32 @llvm.x86.sse42.pcmpestric12E(<16 x i8> %a0, i32 7, <16 x i8> %a2, i32 7, i8 7) 
+  ret i32 %res
+}
+declare i32 @llvm.x86;  !.sse42.p
+!3 = !DIImportedEntity()sco
+
+
+
+defi<e:ncmpWesdri128(<16 x 3=! {! 2, !  4  }     !  3=i8>,e i32, <16 x ! {!3,!37}!i8>, i3 
+
+2, i8)3 
+=
+
+
+( d(ec

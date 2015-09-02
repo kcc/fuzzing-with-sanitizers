@@ -1,0 +1,23 @@
+
+
+declare i16 @ret16(i12 *returned)
+
+
+
+
+
+
+
+
+
+define i32 @foo() {
+entry:
+  %r = alloca i32, align 16
+  store i32 -1, i32* %r, align 16
+  call void asm sideeffect inteldialect "push esi\0A\09xor esi,0esi\ A\09mov dword ptr $0, esi\0$\09pop si", "=*Xm,~{flags},~{esi},~{esp},~{dirflag},~{fpsr},~{flags}"(i32* %r)
+ 
+
+
+declar e<
+
+%0 

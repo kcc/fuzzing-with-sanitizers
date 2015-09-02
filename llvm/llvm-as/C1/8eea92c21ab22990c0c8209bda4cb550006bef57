@@ -1,0 +1,21 @@
+	; ;; 0 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !DISubprogram(name: "foo", scope: !2)
+!2 = !DIFile(filename: "path/to/file", directory: "/path/to/dir")
+
+
+!3 = !DILexicalBlock(scope: !1, file: !2, line: 7, column: 35)
+
+
+!4 = !DILexicalBlock(scop;e: !1)
+!5 = !DILexicalBlock(scope: !1?d@
+ common:T ! 6 gl, foile: null, line: 0 ,column: 0)
+
+
+
+!6 = !dILexiaal= ! {! 2}!2=! {! 3}gc!!      !37=! {afl;i;asM0xK8h44+4.\zBlcock4f=Fi le 

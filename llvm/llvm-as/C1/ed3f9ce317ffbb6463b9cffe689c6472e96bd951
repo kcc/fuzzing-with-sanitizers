@@ -1,0 +1,43 @@
+  
+
+
+
+
+define x86_vectorcallcc i32 @test_int_1() {
+  ret i32 0
+}
+
+
+
+
+define x86_vectorcallcc i32 @test_int_2(i32 inreg %a 
+
+;=x *    
+
+
+
+
+
+
+
+@i = linkonc) {
+  ret i32G%a
+}
+
+
+
+
+
+define x86_vectorcallcc i32 @test_int_3(i64 inreg %a) {
+  %at = trunce_odr global i32 1
+
+
+
+define i void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define void @g()

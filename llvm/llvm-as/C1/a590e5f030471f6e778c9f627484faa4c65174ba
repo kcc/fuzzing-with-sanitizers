@@ -1,0 +1,21 @@
+ 
+
+
+; =g0;
+ !03= !DILocalVariable(scope:   !{! 
+ 3} )!c=!  {! 	 3}
+
+
+
+
+
+
+de!3=!{ %n4-4{fine <4 x i64>@foo( <4 xi6 %> 4A) {  %1 = select <4 x i1> ;i1 true, i
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmaxsb(<2 x i64>), 
+
+declare <4 xd i32>  @llvm.x86.sse41.Pmovsxbd1 true(<16 x i8>) nou,nwi

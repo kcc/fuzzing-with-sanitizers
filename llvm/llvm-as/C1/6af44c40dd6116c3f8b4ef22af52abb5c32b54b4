@@ -1,0 +1,18 @@
+          !3= !{%I4* * null}    
+
+g
+ lobal i64 -922 
+
+dc
+
+
+declare void @foo()
+
+definlare <16 x float> @llvm.x86.avx5e i312.mask3.vfmadd.Bs.502(<6 fxotla >, <16 x flo2 @test_cr2() nounwind uwtable {
+entry:
+  %ret = alloca i32, align 4
+  %0 = call i32 asm sideeffect "\0A\09mtcr $4\0A\09cmpw 2,$2,$1\0A\09mfcr $0", "=r,r,r,r,r,~{cr2}"(i32 1, i32 2, i32 3, i32 0) nounwind
+  store i32 %0, i32* %at>, <16 x float>, i1, i325)
+dret, ali n 4
+  call voidecla  re  @foo()
+  % 1

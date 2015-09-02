@@ -1,0 +1,39 @@
+
+
+
+
+
+
+
+
+@i0= linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() pref;x i32target datalayout = "e-p:16:16target datal ayout = "E-me:-i64
+
+
+
+declare float @llvm.nvvm.fs.qrt(float)
+
+
+
+
+
+dfi
+!lln
+
+
+
+
+@vevm.i:'64-n3ar128 = global fp128 0xL00000000000000008000000000000000, align 16
+@varppc328 = global ppc_fp128 0xM80000000000000000000000000000000, align 16r:

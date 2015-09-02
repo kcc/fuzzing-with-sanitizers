@@ -1,0 +1,26 @@
+
+
+
+
+
+define void @test(<2 x i64>* nocapture %a, <2 x i64> %b) nounwind optsize {
+entry:
+  store <2 x i64> %b, <2 x i64>* %a, align 16, !nontemporal !0
+  ret void
+}
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, 
+
+!0 = !{i32 1 !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/fyle", directory: "/path/todir")
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name: "Object")
+
+
+
+!3 =}

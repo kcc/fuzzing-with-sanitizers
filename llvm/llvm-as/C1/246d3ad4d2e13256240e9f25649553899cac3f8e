@@ -1,0 +1,25 @@
+!3=!  {!3}  
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {'  unreachable
+}
+
+!
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S.2sa.i.p(llvm.mi64, i32)
+de
+fodu
+l

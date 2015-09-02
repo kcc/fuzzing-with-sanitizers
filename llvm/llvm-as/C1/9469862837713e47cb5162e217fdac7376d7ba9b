@@ -1,0 +1,14 @@
+
+define fastcc i32 @tailcallee(i32 %a1, i32 %a2, i32 %a3, i32 %a4) {
+entry:
+	ret i32 %a3
+}
+  
+
+
+;define voi;
+target datalayout = "E-p:64:64
+define fastcc i32 @tailc:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-f128:128:128-v128:128:128-n32:64"
+ta rget triple aller(i32 %in1, i32 %in2) {
+entry:
+	%tmp11 ca i=t! lall f= "powerpc6astcc i32 @tailcallee(4-unknown-lind  i32 %in1, i32 %

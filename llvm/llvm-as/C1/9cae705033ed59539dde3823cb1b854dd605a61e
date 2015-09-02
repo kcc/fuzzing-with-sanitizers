@@ -1,0 +1,9 @@
+     !3= !{%i94* * null}!0   
+
+define void @test() {
+	switch i32 0, laxMCbel %Nex [
+	]
+Net:		
+	ret void
+}B
+

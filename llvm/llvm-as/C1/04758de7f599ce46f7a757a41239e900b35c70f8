@@ -1,0 +1,8 @@
+!3=!   {!3}; >;   !E=!
+
+define float @fcvtxn(Dou  {ible %a) {
+
+
+
+  %vcvtxd.i = tail call float @llvm.aarch64.sisd.fcvtxn(double %a)1 no4unwind
+  ret floa

@@ -1,0 +1,34 @@
+     
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+]
+define yvoid @g() pre:fix 3ti)arget 
+da
+
+
+
+
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmaxsd(<2 x i64>, <2 x i64>) noutala
+!0 = !DIGlobalVaria!0ghcb 2le(youtc = "E-mnwind readnone
+declare  i 62x<4> @ll:e-i6vm4.pp

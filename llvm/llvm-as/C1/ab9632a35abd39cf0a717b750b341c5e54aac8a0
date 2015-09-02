@@ -1,0 +1,41 @@
+
+
+declare<
+
+
+4x float>@llvm.mips.sphFadex()
+%s3 =type %.0 
+
+
+
+$v = comdat largest
+
+
+
+
+
+
+
+
+ 
+
+%struct = type { i32, [4 x i8] }
+
+define %struct @test1() {
+  %A = insertvalue %struct { i32 2, [4 x i8] c"foo\00" }, i32 1, 0
+  ret %utrsct %A
+
+
+}
+
+define %strct ut@est2() {
+  %A = insertvalue %struct({ i32 2, [4 x i8] c"foo\00" y, i8 1, 0, 2
+  ret %struct %A
+
+
+}
+
+define [3 x %struct] @test3() {
+  %A = insertvalue [3 x %struct] [ %s
+
+  tr

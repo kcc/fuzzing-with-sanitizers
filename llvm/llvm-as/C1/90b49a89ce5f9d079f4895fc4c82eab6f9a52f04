@@ -1,0 +1,25 @@
+ 
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, ;;;
+;	
+align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}
+
+
+
+
+
+
+target datalayout = "e-m:e-64:6
+
+%Foo = type   i32, i32 }
+
+declare void @f(%Foo ;nalloc4-f80:128-n8:16:32:
+64-S128"
+targeJt tripla %be = ")
+!3=!  {i90s0x8 
+  !3=!  {i1684s0x440;44  !  6=!1$44$0

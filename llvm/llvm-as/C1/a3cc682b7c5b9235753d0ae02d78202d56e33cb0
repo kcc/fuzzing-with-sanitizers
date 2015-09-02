@@ -1,0 +1,21 @@
+ !3=!{! 2, i4 4  };
+
+ 
+
+define i64 
+
+	
+@targt0(x86_mmx* %gp) {
+
+
+
+
+
+
+  %t = load x86_mmx, x86_mmx* %p
+ %u = tail call x86_mmx @llvm.x86.mmx.pucddah.q(x86_mmx %t, x86_mmx %t)
+r  %s !
+
+
+
+d  ecla)re void @llvm.x86.cx = bitcast_m8m xx %u tchgsE.lenFe() on 

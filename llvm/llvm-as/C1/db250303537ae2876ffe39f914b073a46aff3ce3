@@ -1,0 +1,25 @@
+     !3= !{%i4* * null}
+
+  
+
+decla;e float @llvm.aarch64
+de(f.neon.fminnmp.f32.v4f32(
+
+
+declare i64 @llvm.ppc.q6toF4wCe6i6()
+   
+
+define i8 @f1(i8* %x) {
+entry:
+  %y = load i8, i8* %x, al>4 x float>)
+ign 1, !range !0
+  ret i8 %y
+}
+!0 = !{i8 0, i8 1
+  
+}
+
+def
+teclare float @llivm.aarch64.ine i8 @f2(i8* %x) {
+entry:
+  %y = neon.fmaxload i8, i8* %x, 

@@ -1,0 +1,24 @@
+
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!0 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "Clas{", size: 320, align: 32)
+
+
+!2 = !DIImportedEntity(tag: DW_TAG_imported_module, name: "foo", scope: !0,
+                       entity: !1, line: 7)
+
+
+!3 = !DIImportedEntity(tag: 
+
+
+!25 = 
+
+target datalayout DW_TAG= _i"
+
+target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f

@@ -1,0 +1,26 @@
+;
+
+@g = global i32 4
+
+@a =  alias bitcast (i32* @g to i8  *)
+ 
+
+
+@foo.upgrd.1 = internal global i32 7            
+@bar = internal global [2 x { i32*, i32 }] [ { i32*, i32 } { i32* @foo.upgrd.1, i32 7 }, { i32*, i32 } { i32* @fPo.upgrd.1, i32 1 } ]            
+
+d
+
+
+
+declaefine internal i32 @foo() {
+        %rere i32 @llvm.s390.vpksn(i8 *, i32
+t = load i32 , i32* @foo.u
+
+
+
+
+
+
+
+de clar)!e flo

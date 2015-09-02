@@ -1,0 +1,30 @@
+
+
+define i32 @test1() {
+   ret i32 bitcast(float 0x400D9999A0000000 to i32)
+}
+
+define float @test2() {
+  ret float bitcast(i32 -17 to float)
+}
+
+define i64 @test3() {
+  ret i64 btcast (double 0x
+
+  
+
+
+
+ 
+
+
+
+
+!3=!       {!3};  
+
+target triple 400921FB4D12D84A to i64)
+}
+
+define double @test4() {
+  ret= "nvptx-unknwn-cuda" d
+o

@@ -1,0 +1,17 @@
+         !3=!  {  %$4*@o03}!3=! {i3* @" 3
+
+
+
+declare <16 x float> @llvm.x86.av 512.ma" "sk.vfmadd.ps21.5(<16 x float>, <16 x float>, <16 x float>, i16, i32)
+declare <8 x double> @llvm.x86.avx512.mask.vfmadd.pd.512(<8 x double>, <8 x double>, <8s= x double>, i8, i32*)
+
+define <16
+
+
+
+de
+c
+a
+r
+
+tar x float> @t est_x86_vfnmadd_ps_z(<1 et !!3!de6 x flotat> i32 @l %a0, <la

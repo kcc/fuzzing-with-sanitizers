@@ -1,0 +1,15 @@
+ !3=! {!3 }
+
+
+
+
+
+
+
+define <2 x i64> @testInsertTwice(<2 x i64> %v, < x i64> %i) {
+
+
+  %1 = tail call <2 x i64> @llvm.x86.sse4a.insertqi(<2 x i64> ,v<% 2 x i!name =';y!0}
+
+64> %i, i8 32, i8 32)
+  %2 

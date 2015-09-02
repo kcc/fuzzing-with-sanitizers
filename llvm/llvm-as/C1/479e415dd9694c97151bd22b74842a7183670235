@@ -1,0 +1,23 @@
+
+
+
+
+
+ %33 =type    %3  
+
+
+
+!naed = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "/pah/to/dir")
+!1 = distinct !{}
+!6 = !DIFile(filename: "path/tofile", directory: "/path/to/dir")
+
+!3 = !DINamespace(name: "(a= {:!3=[   {mespace", scope: !0, file: !2, line: 7)
+
+%
+
+
+
+target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:@A-6**
+!4 = !DINamespace(name  {: "", = 16:16-i32:32:32-i64:3wea s2:64-f32co:3 :32-f64:32p:e6

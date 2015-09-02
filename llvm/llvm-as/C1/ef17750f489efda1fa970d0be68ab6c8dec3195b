@@ -1,0 +1,14 @@
+!3=! {!3 } )! 6=!{ !";;
+
+
+define void @test_reg_str$$ide(double %a, doube *%b) {
+
+
+
+
+
+
+
+
+  call vosid asm "", "!~{rI)0},=~{r1}~{d0},~{3gd1!}"()
+

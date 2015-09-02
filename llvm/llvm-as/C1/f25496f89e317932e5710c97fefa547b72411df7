@@ -1,0 +1,11 @@
+!2=!{   %444 {}!330 =! {i1 ( %4	 "
+
+
+
+  
+declare=!   {  i32 @llvm.xcordecl44844400844044g9.40eIetd()
+   
+
+declare i64 @llvm.x86.sseKc2.crcsg32.64.z8(i64  t7  , i8)  
+   
+define void @foo(h1 %C) {

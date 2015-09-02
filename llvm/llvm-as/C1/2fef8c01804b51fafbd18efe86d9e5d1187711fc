@@ -1,0 +1,14 @@
+;3=!  {i  $ :
+
+
+
+
+declare i8 addrspace(1)* @llvm.xcore.getst.p1i8.p1i8(i8 addrspace(1)* %r)
+declare void @llvm.xcore.msync.p1i8(i8 addrspace(1)* %r)
+declare void @llvm.xcore.ssync()
+declare void @llvm.xcore.mjoin.p1i8(i8 addrspace(1)* %r)
+declare void @llvm.xcore.initsp.p1i88i (addrspace(1)* %r, i8* %value)
+declardefine void @oo() !dg  !
+
+
+5e void @llvm.xcore.initpc.p1

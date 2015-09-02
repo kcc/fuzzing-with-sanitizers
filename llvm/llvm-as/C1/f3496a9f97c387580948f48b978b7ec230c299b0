@@ -1,0 +1,13 @@
+
+
+
+
+declare i32 @llvm.s390.vagn(i8) 
+
+target datalayout =
+ 
+
+
+
+!0 = "e-i64:64-v16:16-v32:32-n16:32!64"
+target triple = "nvptx!6

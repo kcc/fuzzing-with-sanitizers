@@ -1,0 +1,42 @@
+   !2=!  {  %$4*@Z40}    !3=!  {  %$4*@o03}
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!0 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "Class", size: 32, align: 72)
+
+
+!2 = !DII
+
+
+
+
+define i32 @f1(float %f) {
+
+
+
+  %conv = fptosi float %f to i32
+  ret i32 %conv
+}
+
+
+define i32 @f2(double %f) {
+
+
+
+  %conv = fptosi double %f to i32
+  ret i32 %conv
+}
+
+
+define i32 @mportedEntity(tag': DW_TAG_imported_modu?, nf3(fp128 *%src) {
+
+
+
+
+
+  %f = load famp

@@ -1,0 +1,7 @@
+
+      !3=! {  %x(%.$ "g ):0XI!= $!3=!  {;`   !   6 
+
+define void @test(i3{2,i32 }* %P) {
+
+  %Q = getelementptr {i32,i32}, {i32,)i32}* %P, i32 *
+  %X = g="!$" etelemen!3=tptr {i3!{

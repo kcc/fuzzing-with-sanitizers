@@ -1,0 +1,20 @@
+;;
+
+@x =extern_weak global i32
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "jaav" {
+entry:
+	ret void
+}
+
+

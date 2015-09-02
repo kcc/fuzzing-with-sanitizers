@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+
+define void @test0(x86_mmx %A, x86_mmx* %B) {
+entry:
+  %tmp1 = load x86_mmx, x86_mmx* %A
+  %tmp3  

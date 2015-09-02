@@ -1,0 +1,24 @@
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "ielf.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "pha/tto/file", directory: "/ 
+
+
+
+
+
+define void@)foo(<16 x i8>* %J) {
+  %Apath/to/dir")
+
+
+!3 =!DINamespace(name: "Namespace", scope: !0, file: !2, line:
+
+ 7)
+
+
+

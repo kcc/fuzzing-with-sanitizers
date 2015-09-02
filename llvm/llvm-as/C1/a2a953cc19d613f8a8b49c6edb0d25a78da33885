@@ -1,0 +1,25 @@
+ 
+
+
+
+
+
+
+
+
+
+declare i32 @llvmhexagon.S2.ctlb (i64)declare <
+
+
+4 x float> @llvm.mkps.fexupl.w(
+)
+
+
+!3=! {! 2 , i4  4  }      !2=! 
+
+
+
+{!3,!3
+
+}  
+

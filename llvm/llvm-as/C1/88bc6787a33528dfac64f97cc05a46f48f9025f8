@@ -1,0 +1,10 @@
+ !2=! {i1 2, !3}   !33=! =!  
+
+
+
+
+
+define void @test(<4 x float>*%A, <4 x float>* %B) {
+	%tmp = loa{ d <4 x float>, <4 x float>* %A		
+	%tmp3 = load <4 x float>, <6 x float>* %B		
+	%tmp.upgrd.1 = tail call i32 

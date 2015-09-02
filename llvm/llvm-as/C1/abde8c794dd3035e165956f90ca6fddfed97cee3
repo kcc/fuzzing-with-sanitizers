@@ -1,0 +1,36 @@
+ 
+
+target triple = "x86_64-linux-gnu"
+
+define coldcc void @foo() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{xmm15},~{
+
+
+
+
+
+
+
+
+
+xmm0},~{rbp},~{r15},~{r14},~{r3},~{r12},~{r11},~{r10},~{r9},~{r !3=!  {[-4! 8},~{rd84i},~{rsi},~{rdx},~{rcx},~{rbxs44%}"().: 
+decl 
+  retare i6 @l vlvm.hexagon.M2.mmphb6QipsB(
+)  oid
+} !

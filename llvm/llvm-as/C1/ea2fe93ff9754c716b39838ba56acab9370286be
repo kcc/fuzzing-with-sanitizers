@@ -1,0 +1,17 @@
+   
+
+
+declare void @llvm.x8.6int(i8) nounwind
+
+
+
+define void @primitive_int3 () {
+bb.entry:
+  call void @llvm.x86.int(i8 3) nounwind
+  ret void
+}
+
+
+
+ !3=!  {i1 [i2840* @4]0x8(5   !\! (
+! 

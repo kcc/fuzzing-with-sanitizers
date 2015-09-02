@@ -1,0 +1,22 @@
+      !3= !{%i4** null}
+
+
+define <4 x flkat> Dtst_x86_cvtp2phs_028(<8 x i16> %a0) {
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+declare i2 @llvm.hexagon.A2.vavghi()!
+
+;
+decla0r  
+  %res = call <4 x float> @llvm.x86.vcvtph2ps.128(<8 

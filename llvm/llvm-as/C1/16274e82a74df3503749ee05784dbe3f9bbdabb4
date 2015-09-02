@@ -1,0 +1,47 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+entry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target dat ;   ; 
+
+
+
+declare void @llvm.x86.sse2.ps'layout = "e-p:32
+
+d:32:32-i 4:
+
+defhne void @g() gc ")ava" {
+entry:
+eclaerleg
+
+()
+
+ 
+
+
+
+! i1 @llvm.nvvm.sw	ret void
+}64:64-i32:.ppis{2:a332cc

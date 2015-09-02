@@ -1,0 +1,55 @@
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target triple = "nvptx-
+
+
+declare 
+
+
+*
+
+<4 x float> @llvm.mips.cmaxVunknown
+
+declare i64 .@llvm.hex-cudaagon.A4.
+
+
+declare i32 @llvm.s390.vfegixde(i8 *, ivobemdecnii;(i32"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.3dv.4f32.swd.ecl3a()
+r2(i64, i32)
+declare i64lm.l@v nvvm.texsuf.handle.32)ienternal.p1i64(i64 addrspace(1)*)
+
+
+
+defi 
+
+
+
+declare) i32 @llvmn.s3e vo90.vmegin(i8 *, 
+i32)id 
+
+@foo(
+i64 &    %img

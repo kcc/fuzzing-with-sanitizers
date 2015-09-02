@@ -1,0 +1,26 @@
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadow)tack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+ent
+
+ry:
+:	ret void
+}
+
+
+declare i32 m@l.lVs390.
+vagin(i8) *
+
+global

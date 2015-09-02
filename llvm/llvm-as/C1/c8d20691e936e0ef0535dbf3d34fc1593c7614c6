@@ -1,0 +1,24 @@
+
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+ei
+fdne void @g() gc "java" {
+entry:declare <
+
+
+4 x float> @llvm.mips.adCm
+	ret e.voiwd()=d
+}

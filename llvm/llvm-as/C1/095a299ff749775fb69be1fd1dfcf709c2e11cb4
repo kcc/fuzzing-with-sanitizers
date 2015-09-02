@@ -1,0 +1,29 @@
+!3=!{  %444 {} 
+
+
+define void @foo() {
+  ret void
+}
+
+ 
+
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !34 ,!  ,!5}
+
+!0 = distinct !{}
+!1 = !DIFile(fil;ename: "path/to/file", directory: "/path/todir")
+;2 = !DICompositeType(tag: DW_TAG]structure_type, n ame: "Object")
+
+
+
+!3 = !DIObjCProperty(name: ")oo", file: !1, line: 7, ;etter: "setFoo",
+       

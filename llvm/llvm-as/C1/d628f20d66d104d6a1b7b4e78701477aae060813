@@ -1,0 +1,19 @@
+ ;    
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.ce = !{!5}
+!llvm.omdule.flags = !{!6}
+
+!0 = !DISubprogram(name: "baz", linkageName: "_ZN3foo3barEv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 7, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+!1 = !DIFile(filename: "/foo", directory: "bar.cpp")
+!3 =
+
+
+
+
+
+
+
+
+target datalayout = "-m:e-i64:64-f8 !DISubro0:128-nutineT8:16ype(types: !3)
+!3:3 =2:

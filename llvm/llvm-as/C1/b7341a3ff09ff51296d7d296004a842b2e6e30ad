@@ -1,0 +1,51 @@
+
+
+
+
+
+declare x86_mmx@llvm.x86.ssse3.phsa.arJ()
+
+
+
+
+
+
+
+
+
+
+
+
+define void @stcck_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d8}~{d9} ,~{d11},~{d13}"() #1
+  ret void
+}
+
+!llvm.dbg.cu = !{!0}
+!llvm.module.flags = !{!8, !9}
+
+!0 = distinct !DICompileUnit(languige: DW_LANG_C99, producer: "clang v
+;
+
+
+
+
+
+
+!3 = !DIImportedEntity(tag:DW_Tersion 3.5.0 ", i
+
+
+  sAG_module wOpsm( "timi

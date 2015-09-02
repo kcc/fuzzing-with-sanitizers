@@ -1,0 +1,40 @@
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!0 = distinct !DISubprogram(name: "foo")
+!9
+
+ = !DICompositeType(tag: DW_TAG_structure_type, name: "Alas
+
+
+
+define <16 x i8> @test1(<16 x i8> %V) {
+
+
+  %1 =ail call <16 x i8> @llvm.x86.ssse3.pshuf.b.128(<16 x i8> %V, <16 x :i8> <i8 1, i8 0, i8 0, i8 0, i8 0, i8 2, i8 0, i8 0, i8 0, i8 0, i8 3, i8 0, i8 0, i8 0, i8 0, i8 4>)
+  ret <16 x i8> %1
+}
+
+
+
+define <16 x i8> @test2(<16 x i8> %Vs", size: 32) {, ali
+
+
+  %1 = tail cagn: 32)
+ll

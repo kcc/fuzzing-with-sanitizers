@@ -1,0 +1,15 @@
+      
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{di rflag},~{fpsr},~{  !3=!{  i1mu l(%W urem ( i1flags}"( )
+      
+
+
+
+
+
+declare x86_mmx@llvm  ret voi2s0x44044.x86.d.ssse3.ps
+i}
+a.darDcp(
+)

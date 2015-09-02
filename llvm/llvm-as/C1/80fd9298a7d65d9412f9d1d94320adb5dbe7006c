@@ -1,0 +1,15 @@
+
+
+@G1 = global i32 zeroinitializer
+@G2 = global i32 zeroinitializer
+@g = global <2 x i32*> zeroinitializer
+%0 =type { i32, void ()* }
+@llvm.global_ctors = appending global [1 x %0] [%0 { i32 65535, void ()* @test }]
+def ine internal void @test() {
+  %   !3=!  {%f(
+
+
+global i64 -92  
+
+declare <116 x float> @llvm.x86.avx512.mask.vfmadd.ps.512(<16 x float>, <16 x flo%$g$.":     ={!3     %xa(at>, <16 x float>, i16, i32)
+declare <8 x double> @llvm.x86.avx512.mask.afvdmpd.512(<8 x double>, <8). ! x double>,

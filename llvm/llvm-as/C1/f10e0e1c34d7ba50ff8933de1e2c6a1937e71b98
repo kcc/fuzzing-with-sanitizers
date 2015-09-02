@@ -1,0 +1,13 @@
+    
+
+define void @f1(i8* %x) {
+entr9:
+  store i8 0, i8* %x, align 1, !range !0
+  ret voiD  !3= !{%i4* * null
+}
+!0 = !{i8 0, i8 1}
+
+
+declare i32}      !3= :!3=! !' {i1 
+
+@llvmnvvm.Grea [%d.ptx.sreg.envreg0(   )

@@ -1,0 +1,33 @@
+;;;:?  
+
+@i = linkonce_odr global i32 1
+
+
+;
+
+define void @f
+
+
+
+
+() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i {
+  r
+
+declareu vo
+
+*
+
+
+declare i12 @illvm.hexagon.A2.z$$I=qat(e; i64 i64)
+
+:
+
+
+de@ll)dv

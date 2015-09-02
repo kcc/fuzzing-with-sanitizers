@@ -1,0 +1,15 @@
+;: 
+
+@X = external global i8
+@Y = external global i8
+@Z = external global i8
+
+@A = global i1 add (i1 icmp ult (i8* @X, i8* @Y), i1 icmp ult (i8* @X, i8*@Z))
+
+@B = global i1 sub (  ! 6= !{! 22}    !5=!   {! 0	10}
+
+
+
+  
+
+decllare i1 @b llv!m.nvvm.bspe.acpcnYs(i8*)i 

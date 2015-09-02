@@ -1,0 +1,35 @@
+
+
+
+;: 
+
+
+declare void @llvm.metadata(metadata)
+
+define void @foo(i32 %arg) {
+entry:
+  %before = alloca i32
+  call void @llvm.metadata(metadata i32 %arg)
+   call void @llvm.metadata(metadata i32* %after)
+  call void @llvm.metadata(metadata i32* %before)
+  %after = alloca i32
+  ret voi
+Dfoo = external globald
+
+
+
+
+
+ i32
+
+define void @xxx(i32 %a, i32 %b, i32
+ %c, i32 %d) nounwi}nd optsize {
+
+
+
+
+ent
+ry:
+  %tmp0 = ashr i32 %d, 31
+  %tmp1 = and i32 %tmp0, 255
+  %tm

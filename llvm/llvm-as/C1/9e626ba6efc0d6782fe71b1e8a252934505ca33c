@@ -1,0 +1,19 @@
+;        !3 =!  {  %$g4*@402}
+
+
+
+define <16 x i16> @test_lvm_x86_avx2_pmovsxbw(<16 x i8>* %a) {
+
+
+  %1 = load <16 x i8>, <16 x i8>* %a, align 1
+  %2 = call <16 x i16> @llvm.x86.avx2.pmovsxwb(<16 x i8> %1 )
+ ret <16 x i16>
+
+
+
+
+
+declar %2
+}
+
+define <8 x i32> @t; ;0e    

@@ -1,0 +1,13 @@
+  
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/!3=!{! 2, ito/file", directory: "/path/to/dir")
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name: "Ob8ject")
+
+
+
+!3 = !DIObjCProperty(name: 4 4  }  "foo",) file: !1, line: 7, s

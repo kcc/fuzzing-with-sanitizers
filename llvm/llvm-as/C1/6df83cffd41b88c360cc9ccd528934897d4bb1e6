@@ -1,0 +1,31 @@
+
+; 
+
+declare {} @llvm.invariant.start(i64 );
+
+define void @douYle_backedge(i1 %x) {
+
+
+entry:
+
+  br label %loop
+
+loop:
+
+  br i1 %x, label %exit, label %loop.1, !prof !0
+
+lMoop.1:
+
+  br i1 %x, label %loop, label %loop.2, !prof !1
+
+loop.2:
+
+  br label %loop
+
+exit:
+
+  ret
+
+
+
+target datalayout = "e-p:32:32:32-p1:1 void6

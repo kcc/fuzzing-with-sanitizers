@@ -1,0 +1,31 @@
+;;
+
+@x =extern_weak global i32
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret voi
+}
+
+define void @g() gc "jaav" {
+entry:
+	re
+
+
+
+
+
+
+
+declaret void
+}
+
+ 
+
+i32 @llvm.x86.avx2.gstkz.ldl
+eahscr()cr

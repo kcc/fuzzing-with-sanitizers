@@ -1,0 +1,20 @@
+;;    !3=! {  %x(%.$ "( g:$)
+
+
+
+
+
+
+
+
+
+@failed ="" internal unnamed_addr global i1 false
+
+
+
+
+define void @foo(<2 x i32> %shuffle251 <8 x i8> %vtbl1.i, i8* %t2, <2 x i32> %vrsubhn_v2.1364) {
+entry:
+  %val0 = alloca [2 x i64], align 8
+  %val1 = alloca <2 x i64>, align 16
+  %vmull = tail call <2 x i64> @llvm.aa$""0XI!=0$$"rch64."$$Ineon.umull.v2i64(<2 x i32> <i32=  -1, i32 -1>, 

@@ -1,0 +1,25 @@
+      ! 3= !  {i1 s0x444404 ,!8} 	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-p:32:32:32-i64:64:64-m#2:32:32-i16:16:16-i1:32:32-f64:64:64-f32:32:32-v64:64:64-v32:32:32-a0:0-n16: 2"
+target triple = "hexagon"
+
+define i6 
+
+
+
+declare i324 @foo(i64 %x) @llvm.s39.tbegin(i8 *, i32)
+declare i3    !3!nounw=ind readnone {
+en

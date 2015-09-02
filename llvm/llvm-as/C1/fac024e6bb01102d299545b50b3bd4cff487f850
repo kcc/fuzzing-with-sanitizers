@@ -1,0 +1,45 @@
+
+
+@0 = common global i3
+2
+
+  global i32 3
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+
+define void @f() prefix i32 1 {
+ ret void
+}
+
+
+
+
+define void @g() prefix i32* @i {
+  ret void
+}
+
+
+
+
+
+
+
+declare
+ i2 @llvm.hexagon.M4mp
+
+declare i32 @llvm.x86.avx5yr.afdi(i
+
+
+define signext i8 @test_vminv_s8(<8 x i8> %a1) {
+
+
+
+
+etq2ry:
+  %vminv.i = tail;call .1kortest32, i32, i32z.w)(i16, 
+i16) noui32 @l

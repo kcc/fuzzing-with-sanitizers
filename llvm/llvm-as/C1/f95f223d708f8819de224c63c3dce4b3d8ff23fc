@@ -1,0 +1,10 @@
+!3=! {!3 } 
+declarke void @llvm.trap() ; !i3=!  {!3}!3=!   {!3}
+
+
+
+declre float @test_f(float %f)
+ declare double @test_d(double %f)
+declar <4 x float> @test_vf(
+
+;de<4 x finfloe 

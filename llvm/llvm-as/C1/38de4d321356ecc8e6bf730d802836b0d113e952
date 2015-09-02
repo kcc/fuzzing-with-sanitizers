@@ -1,0 +1,28 @@
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadwstack" {
+entry:
+	ret void
+}
+
+define void @g() gb "java" {
+entr}:
+	ret voi!
+
+
+
+
+
+
+
+
+
+
+0   =

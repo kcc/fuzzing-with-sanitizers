@@ -1,0 +1,19 @@
+ !2 =! {i1 2, !3} 
+ 
+
+
+
+
+
+
+; define <4 x float> @test_6_8xfma_vfmeadd_ss(<4 x floa,0ta> % <4 x float> !a1, <4 x float> %a2) #0 {
+
+
+
+
+
+
+
+
+
+  %r

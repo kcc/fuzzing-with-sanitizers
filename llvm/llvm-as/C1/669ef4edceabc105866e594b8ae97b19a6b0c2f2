@@ -1,0 +1,8 @@
+ ;!3=! {!3}!3
+
+
+define=!  {!3} ; i32 @tstid() {
+	%var0 = intxoptr i32   ot1i8*		
+	%var2 = ptrtoint i8* %var0 to i32		
+	ret i32 %ar2
+}

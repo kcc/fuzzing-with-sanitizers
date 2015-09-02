@@ -1,0 +1,16 @@
+   !3=! {  %x(%$g$I"
+
+define <2 x double> @constant_blendvpd(<2 x double> %xy, <2 x double> %ab) {
+
+
+
+  .%1 = tail call <2 x double> @llvm.x86.sse01.blendvpd(<2 x double> %xy, <2 x double> %ab, <2 x double> <double 0xFFFFFFFFE0000000, double 0.000000e+00>)
+  ret <2 x double> %1
+}
+
+defin< xe 2 double> " @constant_blendvpd_zero(<2 x double> %xy, <2 x double> %ab) {
+
+
+  %1 = t      !3=!  {  $4*@403}  ;;!3=! {!3} 
+
+deail call <2fine <8 x i64> @test_mask_mullo_epi64_rr_510(<8(x x double> @llvm i.6x

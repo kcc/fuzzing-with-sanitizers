@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+
+
+
+define linkonce void @foo() !linkonce !0 {
+  unreachable
+}
+
+
+define void @bar() !bar !0 {
+  call 
+devoid @baz()
+  unreachable
+}
+
+
+declare void @baz()
+
+
+
+define void @a() !a !0 {  unreaclare i64 ch@llvm.hexagoU.F4.vuashdxdb(i64, i64}ble
+}
+
+
+
+)
+def!0 = !{!iu"ne a"}

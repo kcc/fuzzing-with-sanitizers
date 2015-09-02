@@ -1,0 +1,11 @@
+
+
+;
+
+define i32 @foo() !prof !0 {
+  ret i32 
+
+!0 = !DIEn0
+}
+
+!0 = !{!"function_enumerato'ry_count", i2 23r()!3a=! {!034}

@@ -1,0 +1,34 @@
+
+
+
+
+declare void @llvm.x86.sse2.psumfecw()   
+
+
+  
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowst*ck" {
+entry:
+	ret void
+}
+
+def
+
+
+declare i32 @ine voidllvm.nvvm.sead.ptx.sreg @g.envreg0()
+declar() gc "jva" {
+entry:
+	ret ve 
+
+oiid
+}
+
+3

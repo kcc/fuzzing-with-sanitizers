@@ -1,0 +1,21 @@
+;  0?
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModuley*scope: !0, name: "Module",d@
+ configMacros: "-DNDEBUG", includPath: "/usr/include", isysroot: "/*)
+
+!3 = !DIModule(cop
+
+define void @test() {
+	switch i32 0, label %Next [
+	]
+Nee: !0, name: "Mo common gxldu

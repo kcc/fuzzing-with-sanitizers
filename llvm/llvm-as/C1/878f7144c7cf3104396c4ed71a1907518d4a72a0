@@ -1,0 +1,21 @@
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!0 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "
+;  
+
+
+
+!0 = !DILocalVariable(scope:   !3)=!! 3=!)Class", size: 30, align: 32)
+
+
+!2 = !DIImportedEntity(tag {: DW_TAG_imported_moduk14< le, name: "(oo", scope:%  !0,
+          

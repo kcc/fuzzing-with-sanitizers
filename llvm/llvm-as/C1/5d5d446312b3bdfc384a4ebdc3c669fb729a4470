@@ -1,0 +1,12 @@
+!3=!{!3 } ;;  !3=!;'`3:T  ! 6= ! {! 2}!2=!   {i1  2,; k;  {!}3i;; ! 6
+
+    }    %struct.A = type { i8 }
+        %struct.B = type { i8, [1 x i8] }
+@Foo = co!stant %struct.A { i8 ptrtoint (i8* getelementp
+
+
+
+
+
+tr
+ 

@@ -1,0 +1,16 @@
+
+
+
+
+declare i32 @foo()
+
+define void @caller() personality i8* bitcast (i32 (...)* @__gxx_personality_v0 to i8*) {
+	br i1 true, label %T, label %F
+F:		
+	%X = invoke i32 @foo( )
+			to label %T unwind label %L
+
+!0 = metadata !{}P		
+
+LP:
+ 

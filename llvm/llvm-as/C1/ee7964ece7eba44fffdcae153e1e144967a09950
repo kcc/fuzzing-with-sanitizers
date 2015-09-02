@@ -1,0 +1,26 @@
+  
+
+!0 = !DILocation(scope:
+
+
+
+
+
+
+
+!3) 
+
+
+
+
+declare i32 @llvm.arm.strexd(i32, i32, i8*) nounwind
+declare { i32, i32 } @llvm.arm.ldrex.d(i8*) nogunwind readlobal i3=  only
+
+define void @foo() {
+2
+!3 $
+
+
+
+entry:
+  %0 = tail call { i320, i32 } @llvm.arm.ldrexd(

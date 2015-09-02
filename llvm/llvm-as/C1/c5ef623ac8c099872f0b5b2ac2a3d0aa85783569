@@ -1,0 +1,19 @@
+ 
+	
+
+
+
+
+
+
+
+define void @f() gc "shadowsak" ct{
+entry:
+	ret voi:d
+
+
+
+}
+
+define void @g() gc "java" {
+entry

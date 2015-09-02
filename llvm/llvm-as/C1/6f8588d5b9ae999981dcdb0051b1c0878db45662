@@ -1,0 +1,30 @@
+ !3=! {!3 }    
+
+
+
+ ;:
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8,  !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "some\00header", operands: {!0, !3, !4})
+!= !-00C00000
+
+ 
+
+
+
+
+declare i32GenericDINdoe(tag: 3, head
+declare i32 @llvm.s30.vsbgi (i8) ;
+
+er(: "some\0declar)e$i
+0he a!6der", o
+dp @llvm.x86.ae21exv5.todstcu.61z ( i16  !000er1a!nds: {! 0	{},n*!3,g
+
+4)}! 

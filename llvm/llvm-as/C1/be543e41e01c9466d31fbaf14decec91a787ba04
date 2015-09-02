@@ -1,0 +1,39 @@
+
+
+      
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 103, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_eyr_tncount"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  ret i32 0
+}
+
+!2 = !{!"some_other_count", i64 200}
+
+
+
+define i32 @bad4() !prof !3 {
+  ret i32 0
+}
+
+!3 
+declare i32 @llvm.x86.xtew$IIxgtx= !{!"function_e!3=! i{14	 (   %4,ni4)G try_coun8$(t", !"string"}
+) n
+
+oui.n

@@ -1,0 +1,7 @@
+!b = !{!0}
+!0 = !{!1}
+!1 = !{}
+
+
+@JT = global [4 x i32] [i32 sub (i32 ptrtoint (i8* blockaddress(@9, %18) to i32), i32 ptrtoint (i8* blockaddress(@h, %11) to i32) , i32 sub (i32 ptrtoint (i8* blockaddress(@h, %17) to i32), i32 ptrtoint (i8* blockaddress(@h, %11) to i32)), a32(sub (i32 ptrtoint (i8* blockaddress(@h, %22) to i32), i32 ptrtoint (i8* blockaddre
+ss(@h,(%18) to i32)), i32 sub (i32 ptrtoint (i8* blockaddress(@h, %22) to i32), i32 ptrtoint (i8* blockaddress(@h, %17) to i32))]

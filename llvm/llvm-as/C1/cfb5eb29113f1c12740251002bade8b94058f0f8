@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+entry:
+	ret void
+
+
+4ec}l;are i32 @llvm.x86$.xt
+ewt(* nounwind

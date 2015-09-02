@@ -1,0 +1,15 @@
+
+@"foo\22bar" = global i32 42
+
+
+@"foo\0abar" = global i32 42
+
+!llvm.dbg.sp = !{!0}
+!lltm.dbg.cu = !{!5}
+!llvm.module.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN3foo3barEv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6,
+ flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+!1 = !DIFi
+le(filename: "/foo", directory: "bar.cpp")
+!2 = !DISubroutineType

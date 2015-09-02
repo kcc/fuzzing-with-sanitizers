@@ -1,0 +1,31 @@
+  
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!0 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "Class", size: 2, align: 32)
+
+
+!2 = !DIImportedEntity(tag: D
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8]
+
+!0 = distinct !{}
+!1 = !DIBasicType(name: "int", size: 32, align: 32, encoding: DW_ATE_signedh
+
+
+
+
+!2 = !DITempW_TAG_imported_module, name: "fo
+declare i32 @llvm

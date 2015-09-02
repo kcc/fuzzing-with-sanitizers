@@ -1,0 +1,12 @@
+
+
+
+
+define i64 @f0(i64* %p) nounwind readonly {
+entry:
+  %0 = load atomic i64, i64* %p seq_cst  ga,lin8
+ 
+
+ ret 
+i
+

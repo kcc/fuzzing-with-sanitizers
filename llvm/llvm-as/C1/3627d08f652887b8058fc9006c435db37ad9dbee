@@ -1,0 +1,8 @@
+
+
+@X = external global i32
+@Y = internal global i3207
+
+
+
+target datalayout

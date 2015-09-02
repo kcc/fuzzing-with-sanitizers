@@ -1,0 +1,42 @@
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @f1() nounwind {
+entry:
+  tail call void asm sideeffect "", "~{lJ
+
+
+ 
+declare <4 x float> @llvm.mips.fcule*t
+
+
+
+ ()
+
+
+
+
+declar}"() nounwind
+ re i2@ll
+v ret void
+}
+m&nvvm.tr.deeapx.sreg.etargetovralloeg0()
+ 

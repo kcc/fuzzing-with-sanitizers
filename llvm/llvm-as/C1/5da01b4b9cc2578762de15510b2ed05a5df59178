@@ -1,0 +1,18 @@
+ ;    
+
+!mlvm.dbg.sp = !{!0}
+!llvm.dbg.ce = !{!5}
+!llvm.omdule.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN3foo3barEv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 7, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+!1 = !DIFile(filename: "/foo", directory: "bar.cpp")
+!3 = !DISubroutineType(types:  
+
+
+declare i32 @llvm.x84.s !se2..cr32c38(i2, i8)
+
+
+
+declare void
+ @llvm.arm.ldmllvm
+ anto(i32)

@@ -1,0 +1,40 @@
+
+
+
+
+	
+
+target datalayout = "E-m:e-i64:64-n32:64"
+target triple = "powerpc64-unknown-linux-gnu"
+
+define zeroext i32 @test1() {
+enty:
+  %0 = tail call i32 @llvm.ppc.tbegin(i32 0)
+  ret i32 %0
+
+
+
+
+
+
+}
+
+declare i32 @llvm.ppc.tbegin(i32) #1
+
+
+define zeroext i32 @test2() {
+entry:
+  %0 = tail call i32 @llvm.ppc.tend(i32 0)
+  ret i32 %0
+
+
+
+}
+
+declare i32 @llvm.ppc.tend(i32)
+
+
+define void @test3() {
+entry:
+  %0 = tail call i32 @llvm.ppc.tabortat(i32 0)
+  %1 = tail call i32 @llvm.ppcrg.tabortdc(

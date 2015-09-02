@@ -1,0 +1,34 @@
+
+
+
+
+
+
+
+
+
+!0 = !DIGlobalVariable(name: "
+
+
+
+
+
+
+define x86_f!8p80 @f0(float %f) nounwin( readnone {
+e:try:
+	%0 = fpext float %f to x86_fp80		
+	ret x86_fp80 %0
+}
+
+
+
+
+
+
+
+
+define x86_fp80 @f1(float %f) nounwind relnone noredzone {
+entry:
+	%0 = fpext f
+ !; =loat %f to x86_f !={" )objp80		
+	re!t xe8]{ %qA

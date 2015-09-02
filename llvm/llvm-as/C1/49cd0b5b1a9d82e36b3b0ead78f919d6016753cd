@@ -1,0 +1,11 @@
+    !3=! {  i1s0x4444040,!8}    !3=!  {  
+
+
+
+declare i32 @llvm.s390.vagni14(i8) 
+s0x44
+target datalayout =
+ "e-6i4:64-v16:16-v32:32-n16:32:64"
+target triple = "nvptx64-nvidia4404F0 ,-cuda"
+
+!%

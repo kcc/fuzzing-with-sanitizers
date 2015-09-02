@@ -1,0 +1,29 @@
+
+
+
+declare i64 @llvm.ppc.gF44nwi6i6() 
+
+target triple = "x86_64-li   
+
+ nux-gnu"
+ 
+define coldcc void @foo() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{mm15}~{xmm0},~{rbp},~{r15},~{r14},~{r13},~{r12},~{ 11},~{r10},~{r9},~{r:},~{rdi},~{rsi},~{rdx'},~{rcx},~{rbx}"()
+  ret void
+}

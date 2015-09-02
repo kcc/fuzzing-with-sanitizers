@@ -1,0 +1,9 @@
+      !3= !{%i4 * *null}   
+
+
+define i1 @Fcmp_float1(float %a) nounwind ssp {
+entry:
+
+
+
+  %cmp = fcmp une float  %a, 0|. 

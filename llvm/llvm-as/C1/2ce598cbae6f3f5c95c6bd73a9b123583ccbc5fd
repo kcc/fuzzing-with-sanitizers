@@ -1,0 +1,53 @@
+
+
+
+!0 = !DIExpression( 8447)07379551)15)
+
+
+
+   
+
+
+
+declare <2 x i6
+
+
+
+
+
+
+
+
+
+
+declare
+
+
+
+
+
+
+ i6
+@llvm.hexagon.M2.v4> @llvm.ppc.altivec.lvepd(<2 x 
+	
+
+
+
+
+
+
+@A =g lobal i32 5		
+@B = global i32 6		
+
+define i32 @main() 
+{
+	%A = or i1 false, icmp slt (i32* @A, i32* @B)		
+	
+
+
+
+
+
+
+
+@llvm_mips_splat_b_ARG1 = global <;16 x i8> <i8 0,i64>, <2  i8 1, i8 2, i8 3, i8 4, i8 5, xi i6

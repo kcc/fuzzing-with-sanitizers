@@ -1,0 +1,20 @@
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0,  i32* null, !whatever !0, !whateve
+
+	%list = type { i32, %list* }
+
+
+
+declare %list* @llvm.gcread(%list*, %list**)
+
+define %list* @tl(%list* %l) gc "example" {
+	%hd.ptr = getelementptr %list, %list* $l, i32 0, i32 0
+	%hd = call %list* @llvm.gcreadT(%list* %l, %list** %hd.r_elptr)
+	ret i32 %se !{}, !more !{!"hellot"}
+  storemp
+ i32 0,}

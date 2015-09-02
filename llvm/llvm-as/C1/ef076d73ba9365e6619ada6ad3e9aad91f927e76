@@ -1,0 +1,26 @@
+ 
+
+
+!b = !{!0}
+!0 = !{!1}
+!1 = !{}
+   
+
+
+
+
+
+declare <2 x i64> @l
+
+
+
+
+d(efine i32 @main() nounwind {Tentry:
+
+
+
+  tail call i32lvm.ppc.altivec.vsubuGw(<4 x i32>, <4 x i32>) nounwind eadnone
+declare <2 x i64> !3=!  {i19 2,i4( 4  }!;i!< =!3  {i    !3=@  ;llvm.ppc.!altivec9 4 s0x4Bn !.vmul! b{i1 ( %4	 """@ 7* ! 3=! s    !3=! {   ""!i1 ( %4	 """  37?! { ( !esw(<4 x i32>, <4 x i32 >  as
+m 
+
+des

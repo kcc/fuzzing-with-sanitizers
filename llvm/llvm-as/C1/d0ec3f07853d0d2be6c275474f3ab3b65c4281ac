@@ -1,0 +1,32 @@
+
+
+
+define hidden void @foo() nounwind ssp {
+entry:
+
+
+
+
+  tail call void asm sideeffect "","~{E8},
+
+
+
+
+
+
+
+
+define void @autogen_SD3997499501(i8*, i32*, i64*, i32, i64, i8) {
+BB:
+  %A4 = a~{d10},~{d11}"() nounwind
+
+
+  ret void
+}
+declare hidden flolloca <1 xat @b
+
+
+declare ar()  double>
+  %A3 = alloca doublnounwinvoid @llvm.xcod re.setc.p1i8(ireadnone s8s)p
+e
+  %A2 =

@@ -1,0 +1,40 @@
+ 
+	%union.x = type { i64 }
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, alyg
+
+ 
+
+
+
+
+
+decln4
+
+ 
+
+
+
+glob':4l i3are i8* @llvm.aarch64.ch.eer2 3X6 70016
+
+
+
+
+
+@
+
+
+
+
+
+de9la're i8itnter() #1
+
+defin
+* @llvm.a
+art6v.hch4ead.Jdec
+larpointer( ) #1
+
+dtaex =e

@@ -1,0 +1,21 @@
+  
+
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.
+
+$_ZSt9make_pairIN4llvm16DenseMapIteratorINS0_14PointerIntPairIPKNS0_5ValueELj1ENS0_21PointerLikeTypeTraitsIS5_EEEENS0_19NonLocalPointerInfoENS0_declare(metadata i32* %s, metadata !"
+
+
+
+
+
+
+
+define voi; @foo(i32 %count, i32 %v12DenseMapInfoIS8_EENS0_12DenseMapPairIS9_EEEE) #0 {
+be

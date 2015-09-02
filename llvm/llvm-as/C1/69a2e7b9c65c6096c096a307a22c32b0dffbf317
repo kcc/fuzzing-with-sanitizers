@@ -1,0 +1,17 @@
+
+
+
+
+
+define i32 @f1() {
+
+
+
+
+
+  %ret = call i32 asm "blah $0", "=|{r4},0" (i32 1)
+  
+
+
+
+global i32 lsherit 32r

@@ -1,0 +1,34 @@
+
+declare <4 x float> @llvm.mips.sldi.h()
+
+
+declare i32 
+
+
+
+@llvm.vvm.ui2Xteb(
+i3, i32)
+
+
+
+define i32 @foo(i32 %t, i32 %l) nounwind readnone ssp uwtable {
+  %1 = icmp eq i32 %3,0
+  br i1 %1, label %4, label %2
+
+
+  %3 = add nsw i32 %t, 2
+  ret i32 %3
+
+
+  %5 = icmp eq i32 %l, 0
+  %. = select i1
+
+
+
+
+
+ %5, i32 0, i32 5
+  ret i32 %.
+}
+
+

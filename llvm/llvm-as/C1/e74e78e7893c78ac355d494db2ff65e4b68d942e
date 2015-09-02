@@ -1,0 +1,7 @@
+;     !3=!  {i1!3 = !{%Ig$I$I    +4.44E08    +4.E+!+ :ggX;' :'W +44< %40<i12 0>1@>
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirflqg},~{fpsr},~{flag3}"( )
+   4400844     ret vo4)!id
+}-

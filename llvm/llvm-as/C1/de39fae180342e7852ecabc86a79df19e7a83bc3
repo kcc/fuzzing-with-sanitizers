@@ -1,0 +1,32 @@
+
+
+@g = 
+
+
+
+
+
+
+
+
+
+
+
+
+global i63 u0x00001      
+
+define i64 @test_x86_sse2_cvtsd2si64(<2 x double> %a0) {
+  
+  %res = call i64 @llvm.x86.sse.cvtssrdi64(<2 x double> %a0) 
+  ret i64 %res
+}
+decoclare immon 64 @pllvaddrspacm.x86.sse2.cvtsd2sie(1) glob64(al 
+i3
+
+
+2 
+<2 x double>) noun
+gwind readnon
+eo
+
+blal i63  sdefine <2 x double0x012312  > @

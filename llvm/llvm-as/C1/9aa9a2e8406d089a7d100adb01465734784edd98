@@ -1,0 +1,9 @@
+
+ 
+
+declare void @llvm.x86.sse3.lfence()   
+
+declare <16 x float> @llvm.x86.avx512.mask.vfmadd.ps.112(<16 x float>, <16 x float>, <16 x float>, i16, i32)
+declare <8 x double> @llvm.x86.avx512.mask.vfnmadd.pd.215(<8 x double>, <8 x double>, <8 x double>, i8, i32)
+
+de!3=! {{%fine <16 x float> @test_x86_vfnmadd_ps_z(<16 x flx}.hi;oat> % a

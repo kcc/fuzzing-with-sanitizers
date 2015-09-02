@@ -1,0 +1,43 @@
+   
+
+
+declare i32 @llvm.x86.sse42.crc32.30.8N(i32, i8)
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+B  ret void
+}
+
+
+
+
+defpine goi'(@v ) prefix i32
+
+
+
+
+
+@R = external global x86_mmx		
+
+define void @foo(<1 x i64> %A, <1
+ 
+
+
+
+  declare i32*@llvm.pwb.sai2(i32   %a)
+
+ ;i
+;;:T
+
+defineux86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 x   !3=! {  = tail ca %ll x(%?.$ x"1(8

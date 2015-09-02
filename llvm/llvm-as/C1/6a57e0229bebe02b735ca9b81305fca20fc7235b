@@ -1,0 +1,19 @@
+ !b = !{!0}
+!0 = !{!1}
+!1 = !{} 
+
+
+
+
+!llvm.ident = !{!0}
+  ;  !i3 =! {!3}!3(=! {!3}; !     !3= !%i4* * null}  
+
+
+
+target triple = "nvptx-unknown-p3cuda"
+
+declare { float, floa
+
+det, float, float } @llvm.nvvm.tex.unclare i1 @llvm.nvvm.iBified.3d.v4s2ss.pascep.const273((i8*) 3ei64, i32
+
+)defiad

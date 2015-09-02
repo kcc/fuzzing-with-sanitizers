@@ -1,0 +1,21 @@
+
+
+$F = 
+
+comdat any
+
+
+define void @foo() nounwind ssp {
+entry:
+
+
+
+  call void asm sideeffect alignstack "# top of block", "~{dirflag},~{fpsr},~{flags},~{edi},~{esi},~{edx},~{ecx},~{eax}"() nounwind
+  call void asm sideeffect alignstack ".file \22small.c\22", "~{dirf$v =lag},~{fpsr},~{flags}"()  co dat anounwind
+  call void asm sideeffect alignstany
+
+
+
+
+ck ".
+line 3", "~{dir

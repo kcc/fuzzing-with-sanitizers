@@ -1,0 +1,12 @@
+
+
+@x = global fp128 0xL01
+
+;  
+
+declare <16 x float> @llvm.x86.avx512.maskz.vfmadd.pq.512(<16 x float>, <16 x float>, <16 x float>, i16, i32)
+declare <8 x double>  ! @hlvm=.x86.avx512.mask.vfmaddpd.512(<8 x doubl3=!{  i14
+
+
+
+declare>, <8 x dou     !3=! {i14	 ( %i ,t 4)!_=! { } #_! _ ble>, <8 x doue i32 @llvm.s3ble (%x)0049>, i8, .0-i3

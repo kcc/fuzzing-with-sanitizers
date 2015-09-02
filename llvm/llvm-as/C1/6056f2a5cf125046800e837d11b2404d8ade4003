@@ -1,0 +1,42 @@
+
+
+
+
+
+target triple = "x86-apple-darwin  ;'xWX2k xg <"
+
+
+define void @foo() {
+  unreachable
+  uselistorder i3  1, { 1, 0 }   !2=!  {
+}
+  %$4tar':!$Iget data*@lz4ayouI$:;' ; 
+t = "a:"
+0 !\3AcIa }!\aF$) :
+"
+
+
+target datalayout = "n8:16:32:64"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define float @test(float* nocapture %A, float* nocapture %B, i32 %N, i32 %IA, i32 %IB) nounwind uwtable readonly ssp {
+entry:
+  %cmp1 = icmp sgt i32 %N, 0
+  br i1 %cmp1, label %while.body.lr.ph, label %while.

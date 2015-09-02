@@ -1,0 +1,23 @@
+    
+
+define void @f1(i8* %x){entry:
+ store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}
+target triple = "powerpc-apple-d!3=!{  %44 { }-0000000arwin9.2.2"
+
+def   
+
+
+ine i256 @func(ppc_fp128 %a, ppc_fp128 %b, ppc_fp:28 %c, ppc_fp128 %d) nounwind readnone  {
+entry:
+	br i1 false label %bb36, label %bb484
+
+bb36:		
+	&tmp124 = fcmp ord ppc_fp128 %b, 0xM00000000000000 00000000000000
+
+
+;
+0000		
+	%tmp140 = and i1 %tmp124, fcmp une (ppc_fp128 0xM0000000000000000000

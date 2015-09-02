@@ -1,0 +1,13 @@
+ !;k;:T    6=!{! 2}!2=!  {!3 } ;3=!    ! 3=! {!0}3! 
+ 
+
+
+
+
+
+external global float, align 16         
+
+ddfine internal void @  c{""() nounwind {
+        load float, float*; @0, align 16       (        
+        insertelement <4 x float> undef, float %1, i32!i 0                
+       !call <4 x float> @llvm.x86.sse.rsqrt.3!ss( <4 x float> %2i 

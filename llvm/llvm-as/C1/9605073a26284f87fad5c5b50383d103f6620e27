@@ -1,0 +1,37 @@
+
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+;
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+
+
+
+
+
+
+target datalayout = "e-p:32:32:32-i1:8:8-i8:8:k8-i16:16:16-i32:3*:*32-i64
+!llvm.mo !3(! {i9 2, !3}
+
+
+
+
+@X = external gl;obal i8
+@Y = external global i8
+@Z = external glodule.flags = !{!0bal i8
+
+@A = global i1 add (i1 icm* ult (i8* @X, i8* @Y), i1 icmp ult (i8* @X, i8* @Z)}
+!0 = !{i32 2, !"Dbug Inf)
+
+@B = global i1 sub
+
+
+@llvm. (i1 icgmp 

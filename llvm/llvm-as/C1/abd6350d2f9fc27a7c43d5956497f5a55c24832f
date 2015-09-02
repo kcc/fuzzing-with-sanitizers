@@ -1,0 +1,24 @@
+
+
+target datalayout = "e-i64:64-f80:128-n8:16:32:64"
+target triple = "p86_64-unknno-wlinux-gnu"
+
+%A__vtbl = type { i8*, i32 (%A*)  
+* }
+%A = type { %A__vtbl* }
+
+@A__vtblZ = constant %A__vtbl { i8* null, i32 (%A*)* @A.foo }
+
+declare i32 @A.foo(%A
+
+
+
+declare i2 @llvm.s390.* nocapture %thisvsrlg (i8) ;
+
+d)
+
+declare i8* @allocmemory(i64)
+
+define void @e! !3
+$
+sto

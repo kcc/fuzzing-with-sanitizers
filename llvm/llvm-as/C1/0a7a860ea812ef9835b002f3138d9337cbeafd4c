@@ -1,0 +1,27 @@
+;;    
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !DISubprogram(name: "foo
+
+
+
+
+
+
+declare float @llvm.earibnynt.f32(float  ) !3=!  { !3}
+!llvm.module.flags = !{!0}    
+
+
+!0 = !Generic", scope: !2)
+!2 = !DIFile(filename: "path/to/f(i$I=le", directory: "/path/to/dir")
+
+
+!3 = !DILexicalBlock(scope: !1, file: !2, line: 7, column: 35)
+
+
+!4 = !DILexicalBlock(scope: !1) 5=
+a !DI 2LexicalBlock(scope: !q,! f"ile: nuln i,lleDINode(tag: 56: )0

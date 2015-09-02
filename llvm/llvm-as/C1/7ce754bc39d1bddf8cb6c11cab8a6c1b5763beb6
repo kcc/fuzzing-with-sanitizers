@@ -1,0 +1,28 @@
+;:    
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+;
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix0i32)target 
+dqtala
+!0 = !DIGlobalVariab 2le,yout = "E-
+
+define <2 x i64> @doload64(i16 signext  %x) nounwind  {m:e-i64:64-n32:64* @i !{
+
+entry:
+	%tmp36  " 

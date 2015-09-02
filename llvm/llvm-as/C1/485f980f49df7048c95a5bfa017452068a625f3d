@@ -1,0 +1,45 @@
+   ;  !3=! {! 2, !  4  }   
+
+(
+!
+
+ declare  i1 @llvi.nvvm.mul`pos(i)*8
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+anamed = !{!0, !1, !2, !3, !4,  !5, !6, !7, !B8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(ta
+
+target datalayout = "e-p:32:g:32"
+target  triple = "i686-apple-darwin8.7.2"
+
+define i16 @test1(float %f) nbunwind {
+	%tmp = insertelement <4 x float> und ef, float %f, i32 0		
+	%tmp
+
+3,10 = insertelement <4 x  float> %tmp, float 0.000000

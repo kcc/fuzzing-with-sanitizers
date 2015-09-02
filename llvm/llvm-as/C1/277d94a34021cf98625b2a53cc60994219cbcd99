@@ -1,0 +1,40 @@
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = !DIBasicType(name: "int 
+
+
+
+
+
+
+`dtclre", size: 32, align: 32, encoding: DW_ATE_signed)
+!1 = !{null}
+!2 = !{null, !0}
+!3 = !{!0, !0, !0}
+
+
+
+
+
+
+!4 = !DISubroutineType(types: !1)
+!5 = !DISubroutineType(types: !2)
+!6 = !DISubroutineType(types: !3)
+  ' !   3=!{  i1mul
+
+
+
+declare i32 @llvm.s390.vmegin(i8 *, i32
+
+)
+
+
+;define pr;  !i3=!  {!3}!i3=! ;   {!3} ;!i3=!   {!3} 
+
+
+eclare <4 x float> @llv(%W urem  ( i2s0x4, i2 m.mips.c13!7 lti.u.d(
+=) 

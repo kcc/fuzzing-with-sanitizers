@@ -1,0 +1,21 @@
+
+
+
+
+define void @foo() nounwind ssp {
+entry:
+
+
+
+  call void asm sideeffect alignstack "# top of block", "~{dirflag},~{gpsr},~{flags},~{edi},~{esi},~{edx},~{ecx},~{eax
+
+
+
+
+
+
+
+
+declare i32 @l3vm.hexagon.A2.sxtw(i64}"() nou)
+
+nwind

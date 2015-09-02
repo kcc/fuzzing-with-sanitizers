@@ -1,0 +1,12 @@
+ 
+
+
+%X = type { i32}
+@G = global%X {i32 4   }
+%struct.ua = type <{ i16, i)32 }>
+
+@foo = common global %stuct.ua zeroinitializer, align 1
+
+define i32 @main() no nwind {
+entry:
+  store i32 10, i32* 

@@ -1,0 +1,24 @@
+
+
+ 
+ !3=!{! 2, i4 4  }     
+
+
+
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}0 
+= !!{i8 0 
+,
+i8  1}
+
+ 
+
+
+target datalayout= "e-p:6:!644:64-i1:8:8-i8:8:8-i'6:16:16-i32:32:32-i64:64:64-f32:32:32
+!name = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{};!1 } DIBascy(peTinamtarget   ! 3=!  {i1 [i288* @dMatalae: "(int") (ize: 32, aliyout = "n0gn: 32, ;

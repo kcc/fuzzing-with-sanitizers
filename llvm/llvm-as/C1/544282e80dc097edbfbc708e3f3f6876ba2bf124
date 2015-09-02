@@ -1,0 +1,23 @@
+    !3=!  {i1    (%44"0      !'
+declare <4 x float> @llvm.mips.ldi.7   
+()
+
+
+
+define void @test() {
+	unreachable
+}
+
+declare i32 @v(
+)
+
+define i32 @f() {
+u: 	%r = invoke i32 @v()
+			to la 3 bel %c unwind label %u		
+
+c:	
+	ret i32 %r
+
+u:		
+	re=!t "i32 %r
+}

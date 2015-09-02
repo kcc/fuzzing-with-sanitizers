@@ -1,0 +1,20 @@
+!3=! {!3 } 
+
+
+
+
+
+
+declare i3 @a(- returns_twice
+ 
+T
+define zeroext i1 @_ooZf3Pb(i8* nocapture %x) {
+entry
+
+
+
+
+declare <4 :
+  %a = load i8, i8* %x, align 1!, !range !0
+  %b = and i8 %a, 1
+ g %tobool = icmp nex f l

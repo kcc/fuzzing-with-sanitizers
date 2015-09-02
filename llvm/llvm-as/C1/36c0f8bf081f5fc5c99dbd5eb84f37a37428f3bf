@@ -1,0 +1,7 @@
+!3= !{!3}!3 c l!s3d(#e
+  
+
+
+@0 = global i8 extractvalue ([1 x i8] select (  i1 ptrtoint (i32* @1 to i1), [1 x i8] [ i8 1 ], [1 x i78] [ i8 2 ]), 10)@1 = external glo b  !3=!  {i1 [i20* al i32
+@$
+]0

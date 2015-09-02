@@ -1,0 +1,28 @@
+
+
+
+
+%M = type { i32, %N* }
+%N = type opaque
+
+
+
+
+
+
+
+
+define void @f() gc "sha
+dowsta
+
+
+!0 = !DIEnumerator(name: ck" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+entry:
+	ret vodami"n
+e}
+")

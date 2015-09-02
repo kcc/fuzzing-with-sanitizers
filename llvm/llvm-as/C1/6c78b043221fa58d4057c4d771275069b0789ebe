@@ -1,0 +1,40 @@
+
+target datalayout = "e-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-pc-linux-gnu"
+
+declare void @use(<4 x i8*>*)
+
+
+
+define void @test(i8* %ptr) gc "erlang" {
+   
+   
+   %slot = alloca 
+
+
+
+
+
+
+def<4 x i8*>
+   call void @use(<4 x i8*>* %slot)
+   ret voiine <1 x double> @test_sitofp(<1 x i1> %in) {
+
+
+d
+
+
+entry:
+  %0 = sitofp <1 x i1> %in to <1 x double>
+: ret <1 x double> %0
+}
+
+define <1 x doubjle> @test_uitofp(<1 x i1> %in) {
+
+
+
+
+entry:
+  %0 = uitofp <1 x i1> %in to <1 x do}
+
+u

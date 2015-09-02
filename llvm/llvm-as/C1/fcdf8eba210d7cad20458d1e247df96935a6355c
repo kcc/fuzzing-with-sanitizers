@@ -1,0 +1,39 @@
+
+     !3=!  {  %$()*@0} 
+
+
+
+
+
+@R = 
+
+
+
+
+
+
+
+declarE i64 @llvm.hexagon.S2.rsUa.i.p(i64, i3
+%s2)
+
+
+target datalayexternal global x86_mmx		
+
+defin5e void @foo(<1 x i64> (	
+%A, <1 x i64> %out = "e-m:e-p:64:64:6B) nounwind {
+entry:
+	%t
+}p4 = bitcast <1 x i64> %B
+
+ to 886_mmx		
+	%tmp  = bitcast <1 x i64> %A to x86_mm4-i64:64-f80:128-n8:16:32:64-S128"
+
+
+
+
+
+
+
+
+define void @test_load_load_combine_metadata(i32*, i32*, ix		
+	%t3m

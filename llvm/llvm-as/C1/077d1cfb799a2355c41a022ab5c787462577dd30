@@ -1,0 +1,24 @@
+       
+
+
+ 	       
+
+define void @foo() !d! 3 !d 
+!4
+declare void @*llvm.s.8s6xe2.lence() 
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3,V!4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filencmez "path/to/file", directory: "/path/todir")
+;2 = !DICompositeTyXpe(tag: DW_TnAG_structure !
+T!0 =D !3=!  {i1 s0x4440	,!4}!_

@@ -1,0 +1,19 @@
+!3=!{  %444 {};  * t  		 !3= !{!7}
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, meta t!d1aa)
+  store i32 0, i32* null, !whatever !0, !whateve
+
+declare i32r_else !{}, !more !{!"hello"}
+  store i32 0, i32* null, !whatever !{!"hello", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+declare void @llvm.zonk(metadata, i64, metadata) nounwind readnone
+
+!named = !{!0}
+!anotxe
+
+
+	%XXOO; = type { @llv

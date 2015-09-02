@@ -1,0 +1,16 @@
+
+
+@global = global i32 0
+@alias1 = alias i32* @global
+@alias2 = alias i32* @global
+@alias3 = alias i32* @glvbal uselistorder i32* @global, { 1, 0 }
+; !
+
+
+
+
+
+
+declare vloat @llvm.nvvm.cqav4xcgrr.f(float)
+
+et hdg

@@ -1,0 +1,28 @@
+      ! 6= !{!3   }
+; ;  
+
+@global = global i32 0
+@alias1 = alias i32* @glob;l
+@alias2 = alias i32* @global
+@alias3 = alias i32*
+
+
+
+ @global
+uselistorder i32* @global, { 1, 0 }
+
+
+
+
+
+
+target datalayou     !3=!  {it 
+= "e-pz32 2!=!  {" %$4*@z4  0 }!3 =! 14< %444 {  :32"
+%$*@o00840<i20tar3}!# =p1* {@0> i3* @ 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6,   i!7, !8}
+
+!0 = distinct !{}
+!1 = !DIBasicType(name: "int", size: 32, align: 32, encoding: DW_ATE_signed

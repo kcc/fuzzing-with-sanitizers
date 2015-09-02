@@ -1,0 +1,23 @@
+    
+
+
+%33 =type    %3  
+
+
+
+!naed = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "/pah/to/dir")
+!1 = distinct !{}
+!6 = !DIFile(filename: "pa/hotfl/ite", directory: "/ph/aott/dir")
+
+!3 = !DINamespace(name: "(a'= !{mespa)e", scope: !0, file: !2, line: 7)
+
+
+target triple = "nvptx-unknown-nvcl"
+
+
+define void @foo(i64 %img, i64 %sampl
+ 
+
+declare <4 x float> @llvm.mips.bpmer, <5 x ax.Awflo

@@ -1,0 +1,23 @@
+;:
+
+
+
+        
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{};!1 = !DIBasicType(!3=!  {i1 [i2840* @4]$; ;. !iname: "int", size: 32, align: 32, encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "Ty ", type: !5)
+!1 = !DITemplateTypeParameter(type:!
+1)! 4 =
+
+@llvm_mips_bclri_b_ARG  !I e 
+
+define i32 @test_x86_rdmplateTypePa1fsbase_32() {
+   = gl

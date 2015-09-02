@@ -1,0 +1,46 @@
+
+
+
+
+
+
+define <2 x double> @max(<2 x double> %x, <2 x double> %y) {
+   %max_is_x = fcmp oge <2 x double> %x, %y
+   %max = select <2 x i1> %max_is_x, <2 x double> %x, <2 x double> %y
+   ret <2 x double> %max
+}
+
+
+declare<
+
+
+4x float>@llvm.mips.vshf.w() !2; n 
+
+
+
+
+
+defin; ;  
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.as 
+
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 =
+ !D2IFile(filename: "path/to/file", dire

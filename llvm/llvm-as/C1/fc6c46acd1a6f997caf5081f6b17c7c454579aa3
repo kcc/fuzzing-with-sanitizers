@@ -1,0 +1,26 @@
+
+
+
+  
+
+
+
+define void @function() {
+  %c = trunc <4 x i16> select (<4 x i1> <i1 undef, i1 undef, i1 false, i1 true>, <4 x i16> <i16 undef, i16 2, i16 3, i16 4>, <4 x i16> <i16 -1, i16 -2, i16 3, i16 -4>) to <4 x i    ; 
+
+
+$f = comdat any
+@v = global i32  !3=! {  %x (%$g$.I"  "  "!3=! s 0     ;  8%x",%a( .%I ;   >
+      !\Da13s0x440440084=!  ;} 
+
+
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0 = !DIBqsicType(name: "int", size: 32, align: 32, enco
+ ding: DW_ATE_s  igned)
+!1 = !{!4}
+!2 !3=r

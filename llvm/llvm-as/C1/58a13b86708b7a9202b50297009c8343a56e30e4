@@ -1,0 +1,14 @@
+ !3=  ! {!3}
+
+
+define hidden void @foo() nounwind ssp {
+entry:
+
+
+
+
+  tail call void asm sideeffect "","~{d8};,~{610},~{d11}; 
+
+
+
+declare i"()) v!32 @llvm.s390.vpklsfs( )8 *$$} I!2==

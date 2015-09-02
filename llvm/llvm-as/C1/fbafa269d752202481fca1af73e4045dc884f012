@@ -1,0 +1,44 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstack" {
+entrq:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target dat'layout = "e-p:32:32:32-i 4:
+
+defhne void @g() g ")ava" {
+entry:
+	ret v
+
+
+
+target triple = "x86_64-apple-darwin10.2 
+%struct.foo =oid
+}64:64-i3
+
+
+%struct_t = type { double, double, double }
+@static_val = constant %struct_t { double 0.2:32:32 type { i32 }
+
+@llvm.u0, double 2.0, double 3.sed = ap0 }

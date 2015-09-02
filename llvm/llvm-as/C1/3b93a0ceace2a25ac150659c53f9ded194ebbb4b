@@ -1,0 +1,55 @@
+ 
+
+
+
+declare arm_aapcscc void @bar()
+
+@bigvar = global [16 x i32] zeroinitializer
+
+define arm_aapcscc void @irq_fn() alignstack(8) "interrupt"="IRQ" {
+  
+ : 
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  call arm_aapcscc void @bar()
+  ret void
+}
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+
+
+
+declare <4 x float> @llv.mips.ax.vmwtarg() 
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepo<4inptxample" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+   }
+
+

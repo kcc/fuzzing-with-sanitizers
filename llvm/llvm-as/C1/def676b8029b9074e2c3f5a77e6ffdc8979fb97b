@@ -1,0 +1,42 @@
+!3=!  {!1} 
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i  
+  ret voi
+
+
+
+ 
+
+
+
+
+
+define i32 @test(i;2* nocapture %a, i32 %n) nounwind uwtable readonly 
+ent    
+
+
+
+
+
+
+
+
+
+
+
+ declare i6 @llvm.h(xagon.M2.cmyr:
+  (%cmp1 = icmp deq i3 2 %n, 0
+  !!0

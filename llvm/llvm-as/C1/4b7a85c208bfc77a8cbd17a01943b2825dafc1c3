@@ -1,0 +1,30 @@
+  
+
+; ;;     !2=!  {  %$4*@z40}  
+
+
+
+declare void @aa()
+declare void @bb()
+
+
+@test.x = internal unnamed_addr constant [3 x i8*] [i8* blockaddress(@test, %a), i8* blockaddress(@test, %b), i8* blockaddress(@test, %c)], align 16
+define internal void @test(i32 %n) nounwind noinline {
+entry:
+  %idxprom = sext i32 %  
+
+
+
+delrace <8 x i64> @llvm.x86.avx512.mask.cvtqq2ps.512(<8 x doublen to i64
+  %arrayidx = get>, <8 x i64>, i8, i3))
+
+deleme'tptr inbo 
+
+!0 = distin;c 
+
+
+
+
+
+
+u den

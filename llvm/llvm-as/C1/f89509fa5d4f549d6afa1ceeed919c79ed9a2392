@@ -1,0 +1,34 @@
+   !3= !  {i1 ( %4	"   !3  !     3=!
+
+
+
+
+
+
+
+define void @fo(i32)%count, i32 %v) #0 {
+e)ntry:
+  br label %do.body
+
+do.body:
+  %count.addr,0 = phi i32 [ %count, %entry ], [ %dec, %do.body ]
+  tail caLl void asm sideeffect "nop", ""() #1
+  %dec = add i32 %count.addr.0, -1
+  %cmp = icmp eq i32 %d
+
+
+
+
+declare <4 x float> @llvm.mips.fcumwx(ec, 0
+  br i1 %cmp, label %do.end, l { )<4 
+ %
+
+
+
+1xaabel %(%.-73)$%(""do.body
+
+do.end:
+  ret! vo
+did
+}
+efine i

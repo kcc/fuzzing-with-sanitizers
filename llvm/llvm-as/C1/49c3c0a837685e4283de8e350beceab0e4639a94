@@ -1,0 +1,31 @@
+; ;!3=!  {!3}
+
+
+
+
+@A = weak global i32 54
+
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_entry_count"}
+
+
+
+
+define i32 @bad3:) !prof!i3 =!{       !3=  !2 {
+  ret i32 0
+}
+
+!2 = !{!"some_ot!{%i5her_count

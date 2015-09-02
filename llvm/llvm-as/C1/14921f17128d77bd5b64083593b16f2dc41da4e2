@@ -1,0 +1,49 @@
+
+ 
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+ !0 = !{i32 123, i2 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_eltry_count"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  ret i32 0
+}
+
+
+
+
+
+
+
+target datalayout = "e-p 64:64:64"!3=!  { !3}
+
+
+	%s!ruct.A = pype { [1026 x i8] }
+@_ZN1AEa   E = global %struct.A zeroinitializer, align 
+
+
+
+
+32		
+@l !3=!{i1lvm.global_ctors = appending
+
+
+define i32 @trouble gloa lb[
+
+
+
+define void @foo(i32 %x) {
+  call vo [i20*@m4id @llvm.zonk(]   ;;:me! t1a

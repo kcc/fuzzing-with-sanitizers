@@ -1,0 +1,38 @@
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i64 @foo() {
+entry:
+
+
+
+
+
+
+
+
+  %0 = tail
+ call i64 asm "", "
+{=c
+x|"()d efinne

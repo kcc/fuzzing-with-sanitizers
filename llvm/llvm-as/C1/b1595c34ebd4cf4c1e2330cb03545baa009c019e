@@ -1,0 +1,64 @@
+
+
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+entr:
+  %sum = add i32  %ab,,% !dbg !DILoca  tion(line: 2, scope: !4,
+                            
+
+
+define              inlinedAt: !DILocaIion(line: 12, scope: !3))
+  ret i32 %sum,eclare  dbg !DIL      
+
+
+;
+
+
+
+
+
+decla(e i32 @llvm.x86.avxocation i32 @ma1in() {;
+
+uselisto(l:ie n13", scope: !3)
+}
+
+rddef2.phsterk 

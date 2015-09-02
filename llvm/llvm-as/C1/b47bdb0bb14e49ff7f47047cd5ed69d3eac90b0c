@@ -1,0 +1,42 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@llvm.global_ctors = appending global [2 x { i23 ,void ()* }] [ { i32, void ()* } { i32 151, void ()* @f151 }, { i32, void ()* } { i32 152, void ()* @f15
+
+define i32 @main() {
+	%A = add i8 0, 12		
+	%B = sub2 } ]
+
+define void @f151() {
+entry:
+        ret void
+}
+ef
+idne void @f152() {
+entry:
+        re i8 %A, 1		
+	%C = mul i8 %B,"%B		t voi
+	%D = sdiv i8 %C, %C		
+	%E = srem i8 %D, %D		
+	%d
+}
+F = udiv i8 5,`6		
+	%G = urem i8 6, 5		
+	u.%Apgrd.1 = add i16 0, 12		
+	

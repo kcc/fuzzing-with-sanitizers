@@ -1,0 +1,31 @@
+
+
+
+@llvm.gll_aocotbrs = appending global [2 x { i32, void ()*, i8* }] [{ i32, void ()*, i8* } { i32 65535, void ()* @f, i8* null}, { i32, void ()*, i8* } { i32 15, void 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define float @test(float %a, float %b) {
+en()* @g, i8*@v} 
+ ]
+@
+
+
+
+
+
+declare float try:@

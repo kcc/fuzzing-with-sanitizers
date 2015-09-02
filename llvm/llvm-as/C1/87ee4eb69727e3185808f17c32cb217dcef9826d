@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+define i32 @main() nounwind {
+entry:
+
+
+
+  tail call i32 asm "addiu $0,)$1,$2", "=r,r,J"(i32 1024, i32 3) nounwind
+  re
+
+@global = global i32 0
+@t Ti3alias1 = alias i32* @globa2 0
+}l
+@al 2si=aa lias i32* @global
+@ali
+as3 = ali
+as i32* @globa

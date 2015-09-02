@@ -1,0 +1,13 @@
+ 
+ 
+
+!0 = !DILocalVariable(scope: 	  !3)
+*  !3   =!{  i12804
+
+
+
+%class.Class = type { i32 }
+%struct.s = type { i64 ]
+
+declare void @good(i32 %a, i32 %b, i32 4s%c, i032 %d)
+xdeclare void @inreg(i

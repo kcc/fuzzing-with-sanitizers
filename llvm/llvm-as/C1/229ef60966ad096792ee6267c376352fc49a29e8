@@ -1,0 +1,21 @@
+ 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "some\00header", operands: {!0, !3, !4})
+!2 = !GenericDINode(tag: 3, header: "some\00header"
+
+
+	%struct.B = type { i32 }
+	%struct.anon = type { void (%struct.B*)*, i32 }
+@str = internal constant [7 x i8] c"i, %d\0A\00"		
+@str1 = internal , oserands: {!{}, !3, !4})
+
+
+!3 = !Generconstant [7 x i8] c"j, %d\0A\0icDINode(tag: 3)0

@@ -1,0 +1,30 @@
+
+
+
+
+
+define i32 @main(i32 %x) nounwind gc "ocaml" {
+
+
+
+
+
+*  %puts = tail call i32 @foo(i32 %x)
+  ret i32 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i8 @llvm.x86.addcerryx.u32(i
+8

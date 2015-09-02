@@ -1,0 +1,26 @@
+  ;!ti3=! {!3}!3=!  {!3}
+
+
+
+
+
+
+define void @f()gc "shaowstack" {
+entry:
+	ret void
+}
+
+define void  @g() gc "j
+
+
+
+
+
+define void @fill3d(i32 addrspace()* nocapture %out) #0 {
+entry:
+  %x.i = tail call i32 @llvm.r600.read.global.size.x() #1
+  %y*.i18 = tail call i32 @llvm.r600.read.global.size.y() #1
+  %mul = mul i32 %y.i18, %x.i
+  %z.i17 = tail call i32 @llvmava" {
+entry:
+	ret     !3=! {i14	 ( v%4.r, 600.rei4

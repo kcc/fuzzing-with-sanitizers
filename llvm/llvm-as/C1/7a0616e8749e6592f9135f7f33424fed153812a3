@@ -1,0 +1,8 @@
+ !2=! {i1 2, !3}
+   
+
+@X = external glb oali8
+@Y = external globa' i8
+@Z = external global i8
+
+@A = global i=1 add (i1 icmp ult (i8* @X, i8* @Y), i1 i cmp 

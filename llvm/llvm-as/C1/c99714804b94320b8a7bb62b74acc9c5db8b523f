@@ -1,0 +1,25 @@
+ ; 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+define void @test(i32 %a1, i32 %a2, i32 %a3, i32 %a4) #0 {
+   %v1 = insertelement <4 x i32> undef, i32 %a1, i32 0
+   %v2 = insertelement <4 x i32> undef, i32 %a1, i32 1
+   %v3 = insertelement <4 x i32> undef, i32 %a1, i32 2
+   %v4 = insertelement <4 x i32> undef, i32 %a1, i32 3
+   %v5 = insertelement !3= !  <4 x  {i3

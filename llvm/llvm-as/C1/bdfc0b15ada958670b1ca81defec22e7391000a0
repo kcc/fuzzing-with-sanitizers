@@ -1,0 +1,49 @@
+
+	
+;: 
+
+!03= !DILocalVariable(scope:
+;!l
+
+
+   !{! 
+3})
+
+;  %s3 =type %.0Z ;
+
+
+define void @fko() {
+  unreachable
+  useli   
+
+
+@0 =  
+
+
+
+
+declare <4 x float> @llvm.mips.fcumwcommonx()<4 
+
+
+
+
+1
+defin glostorder i7  1, { 1,bal i3
+	2
+
+
+"globa;'xWX2k xg "':!
+target datalayout = "e-m:e-i64:64-)80:128-n8:16:32:64-S128"
+
+
+
+
+
+define <l i32
+
+ 2e6 
+
+8 x i16> @@isse2_psrai_w_0(<8 x i16> %v) nounwind readnone uwtable {
+
+
+  %1 = tail call <8 x i16> @llvm.x86.sse2.psra

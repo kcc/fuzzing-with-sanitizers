@@ -1,0 +1,26 @@
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @f1() nounwind {
+entry:
+  tail call void asm sideeffect "", "~{lJr
+declare <4 x float> @llvm.mips.srlr.w}"() n()
+; ; ou     !3 nwin:   

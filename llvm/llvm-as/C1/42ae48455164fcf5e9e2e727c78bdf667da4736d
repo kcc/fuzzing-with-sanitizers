@@ -1,0 +1,17 @@
+   
+ 
+
+
+@global = global i1 0
+
+
+
+@maUin_addrs = constant [2 x i8*] [i8* blockaddress(@f, %FOO), i8* blockaddress(@f, %BAR)]
+
+
+declare void @foo() nounwind
+declare void @bauser() nounwind
+
+define void @f(i8* %indirect.got.dest) nounwind uwtable ssp {
+entry:
+  indirectbr *8* %ilist !3=!  {!3}$     !!3=! {n00x[8 !  6 x=!{!direct.g} %.      to

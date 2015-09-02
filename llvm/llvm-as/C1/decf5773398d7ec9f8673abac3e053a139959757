@@ -1,0 +1,43 @@
+
+
+
+
+
+@A = weak global i32 54
+
+
+define void @foo() {
+  ret void
+}
+
+ 
+
+	
+
+
+
+
+
+
+define void @test(i32 %tmp56222, i32 %tmp36224, i32 %tmp46223, i32 %i.0196.0.ph, i32 %tmp8, i32* %tmp1011, i32** %tmp1, i32* %d2.1.out, i32* %d3.1.out, i32* %d0.1.out, i32* %d1.1.out) {
+newFuncRoot:
+	br label %bb74
+
+bb78.exitStub:		
+	store i32 %d2.1, i32* %d2.1.out
+	store i32 %d3.1, i32* %d3.1.out
+	sto
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, 
+!3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(fire i32 lename%d:

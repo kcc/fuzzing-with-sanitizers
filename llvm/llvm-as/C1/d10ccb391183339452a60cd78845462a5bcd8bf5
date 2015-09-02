@@ -1,0 +1,61 @@
+
+
+
+
+
+declare <4 x float> @llvm.mips.amxfc.w(
+
+)
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagom.M2abdeclaresp(i64)
+@0 = common global i3
+2
+
+  global i32 3
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+ ret void
+}
+
+
+
+
+define void @g() prefix i32* @i {
+  ret void
+}
+
+
+
+
+
+
+
+ 
+
+
+
+ declare i6 @llvm.hexagon.M2.cmpyrslb(i6
+)
+

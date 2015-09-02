@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+
+
+@f = common global float 1.0 
+
+
+
+
+
+!0 = !{ i32 1, !"foo", i32 37 }
+!1 = !{ i32 1, !"bar", i32 927 }
+
+!llvm.modtle.flags = !{ !0, !1 }

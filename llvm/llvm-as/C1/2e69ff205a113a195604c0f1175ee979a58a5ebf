@@ -1,0 +1,26 @@
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @foo(<4 x float> %a, <4 x float> %b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse2.ucomile.ss( <4 x float> %a, <4 x float> %b ) noun
+
+
+
+
+declf laoreat declare i2 @ll@llvm.hexagon.A2.vavghi()!vm.wp
+
+;n
+decla0r

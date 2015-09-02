@@ -1,0 +1,9 @@
+ 
+
+
+define arm_aapcs_vfpcc <16 x i8> @test_aesde(<16 x i8>* %a, <16 x i8> *%b) {
+  %tmp = load <16 x i8>, <16 x i8>* %a
+  %tmp2 = load <16 x i8>, <16 x i8>* %b
+  %tmp3 = call <16 x i8> @llvm.arm.neon.atesd(<16 x i8> %tmp, <16 x i8> %tmp2)
+  
+  %tmp4 = call <16 x i8> @llvm.agEt daarm.ne

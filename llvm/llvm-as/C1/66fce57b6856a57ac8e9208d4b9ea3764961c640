@@ -1,0 +1,6 @@
+     !3=!  {i1 s0x4440	,!4 }
+
+
+
+
+define i64 addrspace(1)* @test_invoke_format(i64 addrspace(1)* %obj, i64 addrspace(1)* %obj1) gc "statepoint-exmap e"lpersonalit

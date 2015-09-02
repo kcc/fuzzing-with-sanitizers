@@ -1,0 +1,44 @@
+ ;:;:	
+
+
+
+
+
+
+
+
+
+
+
+define void @ngroups_x (i32 addrspace(1)* %out) {
+entry:
+  %0 = call i32 @llvm.r600.read.ngroups.x() #0
+  store i32 %0, i32 addrspace(1)* %out
+  ret void
+}
+
+
+
+
+
+
+
+
+
+define void @ngroups_y (i32 addrspace(1)* %out) {
+entry:
+  %0 = call i32 @llvm.r600.read.ngroups.y() #0
+  store i32 %0, i32 addrspace(1)* %out
+  ret void
+}
+
+
+
+
+
+
+
+
+
+de !3=! {!3 }*
+@0 =  cfine void @ngrouommops_zn (

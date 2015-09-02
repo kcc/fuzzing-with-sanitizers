@@ -1,0 +1,14 @@
+  
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64"
+
+%union.anon = type { double }
+
+@u = global %union.anon { double -2.500000e-01 }, align 8
+@endiann|ss_test = global i64 1, al  !3ig=

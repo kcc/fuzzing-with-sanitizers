@@ -1,0 +1,33 @@
+  
+	; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct !{}
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "
+
+
+
+*
+
+
+
+
+
+   dec
+lare i64 @llvm.hexagon.-DNDEBUG", includePath: "/usr/include", isysroot: "/   !3=!  {i     !3= !{%i4** null}
+
+
+define <4 x float> @test_x86_cvtph2ps_128(<81 [i21 4484340444   ]   ! .A")
+
+!3 = !DIModule(sc
+ope:  !3=!{   x i16> %a0) {
+  
+  
+  
+  %res = calli1!0, <4 x 

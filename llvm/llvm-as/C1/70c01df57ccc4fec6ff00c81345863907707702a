@@ -1,0 +1,52 @@
+
+ 
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bavr(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                          inlinedAt: !DILocation(line: 12, scope: !3))
+  re!3=! t i32 %sum,eclare  !dfg DILocation(l:ie n13", scope: !3)
+}
+
+de{%e.}gfine li)
+nkon ce i32 @foo(

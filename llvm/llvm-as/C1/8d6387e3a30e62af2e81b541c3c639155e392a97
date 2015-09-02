@@ -1,0 +1,67 @@
+   
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                          ;nlioedAt: !DILocation(line: 12, scope: !3))
+  ret i32 %sum,ecl
+
+
+
+
+$v ar!2!  {  %$*@Ze  !dbg !DIL4ocation(l:ie n13", scope: !3)
+}
+
+define li)
+Fk= comdat loncargee i32 @foo(st
+
+
+
+
+
+
+
+
+ 
+
+%struct = type { i32, [4 x

@@ -1,0 +1,27 @@
+
+   
+
+
+
+
+  ! 1=!  {!3}
+
+
+
+
+global i32 3 	    !3=!  {  %$*@403};!3Load c c(#e=
+
+
+
+target   
+
+
+
+;define private
+
+
+
+define i32 @test_pcmpeq_b_256(<32 x i8> %a(, < 32 x i8> %b) {
+
+
+  %res = call i32 @llvm.x86.avx512.madask.talayout = "p

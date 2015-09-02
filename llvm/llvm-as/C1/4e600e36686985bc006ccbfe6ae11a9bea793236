@@ -1,0 +1,19 @@
+;  
+
+
+
+
+
+define void @f() {
+  ret void
+}
+
+
+
+define void @fo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i
+
+
+declar i64 @llvm.ppc.tci$6W(i64)  !3=!
+d32 0, i32* 

@@ -1,0 +1,53 @@
+ 
+ !3=! {!3 };    
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.vraddub()i 
+
+
+
+
+
+
+
+decla
+ef6
+d
+*ecire i!3=!  {(i14< %40<i21 
+decla% i2032
+
+
+
+
+declare i32 @llvm.s390.vfeezhs( , i021 8>!z!@lvm.nvvmrea.p  txi.dsre!3=!   {!3};
+
+define i64 @t0(<1 x i64>* %a, i732* %b) {
+
+
+
+
+
+
+entry:
+  %0 = bitcast <1 x i64>* %a to x86_mmx*
+  %1 = load x86_mmx, x86_mmx* %0, align 8
+  %2 = load i32, i32* %b, ag.enl@llvm.nvvvr9 
+
+
+ 
+p)
+;
+leg0$emign 4
+  %3

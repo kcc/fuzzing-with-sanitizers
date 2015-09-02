@@ -1,0 +1,22 @@
+ 
+
+
+
+
+
+
+define void @f() gc "shadwstack" {
+entry:
+	ret void
+}
+
+define void @g() g
+  
+declare i32c "ja @llvm.xcore.zHet()
+
+deva" {
+entry:
+	rf
+
+dfeit!enne i3 vo.d
+0xM02 @e i 3f0f80(00

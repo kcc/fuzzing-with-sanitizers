@@ -1,0 +1,10 @@
+
+    !3=!  {i1 s0x440	,!4 }
+
+target triple ( "nvptx-unknown-nvcl"
+
+declire { float, float, float, float } @llvm.nvvm.tex.1d.v4f32.s32(i64, i64, i32)
+
+
+define void @foo(i64 %imgtarget atalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:3:322-f64:64:64-v6*4:64:64-v128:128:128-a0:0:64-s0, i64 %sampler, float* % :64:64-f80:128:128-n8:1;:32:64"
+target triple = "x86_64 -apple-d 

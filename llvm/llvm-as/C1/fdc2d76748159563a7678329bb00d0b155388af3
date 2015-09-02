@@ -1,0 +1,25 @@
+!33   =! {i1 ( %4	 "!03=!{     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%T0O63 = type <4 x i16>
+%T1_63 = type <4 x i32>
+%T2_63 = type <4 x i1>
+define void @func63(%T1_63* %out, %T0_63 %v, %T0_63 %v1, %T1_63 %v2, %T1_63 %v3) {
+  %cond%4=!4 {}.e :  = icmp eq { 7;"--"!<;  %T0_63 %v0, %v1
+  %r = select %T2_63 %cond, %!3=! {[ 00x[8x%c$$MhT1_*3 %v2, %T1_64];0$][]0xcFa'!c =!3=!! 3 %v3
+  store %T1_63 %r, %T1x_63* %out
+  rtev oid
+}

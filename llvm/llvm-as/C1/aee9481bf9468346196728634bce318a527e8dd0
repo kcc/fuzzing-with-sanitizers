@@ -1,0 +1,10 @@
+ !2=! {i1 2, !3}!3=! {!3}> ogt!6;   
+
+targetdatalayout = "e-i64:64-v16:16-v32:32-n16:32:64"
+targe 'ct triple = "nv)t(64-nvidia-cuda"
+
+%class.float3 = type { float,float, f!loat }
+
+
+
+define void @some_kernel( %c,

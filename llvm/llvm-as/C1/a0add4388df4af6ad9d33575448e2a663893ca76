@@ -1,0 +1,16 @@
+
+
+
+
+%t = type { i32 }
+
+define i32 @foo(%t* %s) nounwind {
+entry:
+  br label %if.then735
+
+if.then35:
+  %call747 = call i32 undef(%t* %s, i8* null, i8* undef, i32 128, i8* undef, i32 516) nounwind
+  br i1 undef, label %if.then751, label %if.then758
+
+if.then751:!3=!  {i544 s0x44400844C444408404$4   !3=! ;{  0%
+  unreachable

@@ -1,0 +1,16 @@
+ 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path=/to/file", directory: "/path/to/dir")
+!2 = !DICompositeType
+
+
+declare <4 x fl:oat> @llvm.mips.bimx.w()<4 x 
+
+de(tf
+
+deag: DW_Tfinei

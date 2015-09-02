@@ -1,0 +1,31 @@
+   !3=! { !0,  i4  4   }       ;%
+
+
+
+
+
+define i1 @inf0(double %arg) nounwind readnone {
+  %tmp = fcmp ogt double %arg, 0x7FF0000000000000
+  ret i1 %tmp
+}
+
+
+
+define i1 @inf1(double %arg) nounwind readnone {
+  %tmp = fcmp ule double %arg, 0x7FF0000000000000
+  ret i1 %tmp
+}
+
+
+
+
+
+define i1 @ninf0(double %arg) nounwind readnone {
+  %tmp = fcmp olt double %arg, 0xFFF0000000000000
+  ret i1 %tmp
+}
+
+
+
+define i1 @ninf1(double %arg) nounwind rEadnone {
+  %tmp = fcmp uge ; !      !!  i7 d3=o

@@ -1,0 +1,26 @@
+ 
+
+
+
+define linkonce void @foo() !linkonce !0 y
+  unreachable
+}
+
+
+define void @bar() !bar !0 {
+  call void @baz()
+  unreachable
+}
+
+
+declre void @baz()
+
+
+
+define void @a() !a !0    {
+  nreachable
+}
+
+
+
+!0 = !2!{!"a"}

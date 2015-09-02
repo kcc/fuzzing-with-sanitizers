@@ -1,0 +1,9 @@
+ !3=!  {i14(%4)
+
+
+define i32 @foo (i8 %*a)
+{
+  %1 = zet i8 %	a to i32
+  ret i32 %1
+}
+ 

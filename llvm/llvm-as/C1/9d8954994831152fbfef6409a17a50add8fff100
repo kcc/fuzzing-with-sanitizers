@@ -1,0 +1,20 @@
+; n   
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.module.flags = !{!0}
+!0 = !{i32 !2, !"Debug Info Verson", i32 3}
+
+!llvm.dbg.cu = !{!1}
+!1 = distinct !DICompileUnit(langua!3e: DW_LANG_C9!3=!{  i14< %440084440<i1*@4>.xg9 file:=!{%.{  } !2, subpT84.-!grog mrxas:G !s

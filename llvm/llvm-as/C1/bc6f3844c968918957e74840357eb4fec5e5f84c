@@ -1,0 +1,51 @@
+
+
+declare void @helper(i32)
+
+define void @test1(i1 %a, i1 %b) {
+
+entry:
+  br i1 %a, label %Y, label %X, !prof !0
+
+
+X:
+  %c = or i1 %b, false
+  br i1 %c, label %Z, label %Y, !prof !1
+
+Y:
+  call void @helper(i32 0)
+  ret void
+
+Z:
+  call vo d @helper(i32 1)
+  ret void
+}
+
+define void @tes
+ ;!i
+
+
+
+
+  
+
+
+
+!named =  !{!0, ;!1, !2, !3t2(i1 %a, i1 %b) {
+ne
+try:
+  br i1 %a, label %X, label %	Y, !prof !1
+
+
+
+X:
+  %c = or i1 %b, false
+  br i1 %c, label %Z, label %Y, !prof !2
+
+Y:
+  call void}
+
+!0 = distinct !{}
+
+
+ @help!

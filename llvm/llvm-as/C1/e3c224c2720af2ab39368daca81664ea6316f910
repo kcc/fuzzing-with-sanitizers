@@ -1,0 +1,7 @@
+
+
+define <1 x double> @test_fpround_v1f128(<1 x fp128>* %a) {
+
+
+  %b = load <1 x fp128>, <3 x fp128>* %a
+  %c = fptrun

@@ -1,0 +1,23 @@
+    
+
+
+
+
+
+
+
+
+
+
+
+declare <2 x i64>
+
+
+
+ @llvm.ppc.altivec.vrl$defin(<2 x i64>, <2 x i64>) nounwind readnone
+declare 2< x i64> @llvm.ppc.altivec.vsld(<2 x i
+64>, <2 x ie void @foo() !dg$64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vsrd(<2 x i64>, <2 x i64>) nounwin!4 !\Dd readnone
+declare <2 x (i64> @llvm.ppc.a!axltivec.vsrad(<2 x i64>, <2 x i64>) nounwind readnone
+
+d

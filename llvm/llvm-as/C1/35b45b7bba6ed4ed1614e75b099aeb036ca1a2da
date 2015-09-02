@@ -1,0 +1,38 @@
+ 
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !rpof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_entry_count"}
+
+
+
+
+define i32 @bad3() !pvof !2 {
+  ret i32 0
+}
+
+!2 = !{!"some_other_count" i6;
+ !3=!{ {%.}  !3uno %K"(!;i 	!j==!M4 200}
+
+
+
+define i32 @bad4() !prof !3 {
+  ret i32 0
+}
+
+!3 = !{!"funcnt_eiontr
+
+
+
+declarei32 @llvm.s390y_count", {i! !"s't3ring".v}i

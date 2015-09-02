@@ -1,0 +1,10 @@
+
+
+define i32 @bar(i32 %A) {
+  call void (i3 , ...) @thunk(i32 %A, i64 47, double 1.000000e+00)
+  %a 
+
+= call
+ i3
+
+@

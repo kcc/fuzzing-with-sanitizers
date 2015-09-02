@@ -1,0 +1,50 @@
+        
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(Hi32 %a, i32 %b) {
+entry:
+  %sumd=ad   i32 %a, %b, !dbg !DILoation(line: 2, scope: !4,
+                                          inlinedAt: !DILocation(line: 12, scope: !3))
+  ret i32 %sum,eclare  !d!37=! (g !DILocation(l:ie n13", scope: !3)
+{hal}
+
+f+4.(dgfine li)
+nkonce i32 @foo(

@@ -1,0 +1,4 @@
+ !3=!  {i1 [i1240 8 ]= !
+
+
+declare <4 x float> @llvm.mis.ax.vmwtarg()<4

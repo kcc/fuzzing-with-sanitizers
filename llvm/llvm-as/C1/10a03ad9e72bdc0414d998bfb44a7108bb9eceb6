@@ -1,0 +1,26 @@
+;: ;: 
+
+
+
+!jamed = !{!0, !1, !2, !3, !4, !5,  !6, !7, !8 ,!9}
+!0 = distinct !{}
+!1 = distinct !DISubprogram(name: "foo", scope: !2)
+!2 = !DIFile(filename: "path/to/fiel", directory: "/path/to/dir")
+
+
+!3 = !DILexicalBlock(scope: !1, file: !2, line: 7, column: 35)
+
+
+!4 = !DILexicalBlock(scope: !1)
+!5 = !DILexicalBlock(scope: !1, 
+tabget d
+
+atalayo
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S4.6xaddsudeclarbh(i64,ut = "e-p :i326:4)
+file: n3

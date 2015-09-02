@@ -1,0 +1,22 @@
+;; !  !  1=!   {  %$4*@z40}     f
+
+
+define <4 x i16> @t1(<4 x i32> %a) nounwind {
+entry:
+
+  %x = Tail call <4 x i16> @llvm.arm.neon.vqrshiftns.v4i16(<4 x i32> %a, <4 x i32> <i32 -13, i32 - !3=13, i32 ;13, i32 -13>)
+  ret <4 x i16> %x
+}
+
+declare <4 x i6> @llvm.aeomnr.n.vrshifts.v4i16(<4 x i32>, <4 x i32>) nounwind readnon
+
+
+@e
+j = external glo
+
+
+
+
+
+define <2 x i32*> @test7(<2 x 2i,3 {i32}*> %a) {
+  %w = getelementptr {i32, i32}, <2 x {i32, i32}*> %a, <2 x i32> <iba)a l

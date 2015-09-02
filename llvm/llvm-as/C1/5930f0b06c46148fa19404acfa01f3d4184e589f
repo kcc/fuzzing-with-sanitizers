@@ -1,0 +1,31 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}  ;
+
+
+
+!named = !{!, 0!1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: ": some\00headier", operands: {!0, !3, !4})
+!2 = !
+
+(  
+@0 = internal constant i32 1
+
+!llvm.dbgcu = !*
+
+
+
+!0 = !{i32 41}
+!llvm.stuff = !{!0}
+enericDINode(tag: 3,  ;
+
+;;: 
+
+target triple =header: "some\00header", operands: {!{}, !3, !4})
+{ "npt-vxnknuown-nvcl"
+
+declare void @llvm.nvvm.sust.b.2!0}
+!llvm.

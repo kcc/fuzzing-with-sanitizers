@@ -1,0 +1,5 @@
+ !3=! {i1 3,  !3} ! 6=! {! "  
+
+
+declare <4 x float> @llvm.x86.avx2.gather.<(dpS64 x }  float>, i8*,
+             

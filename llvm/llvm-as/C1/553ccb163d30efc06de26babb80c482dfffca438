@@ -1,0 +1,43 @@
+ !2=!{ i1 2, !3}!3=!  
+ 
+;ecl
+
+
+declare i64 @llvm.ppc.artF4c66lewre( )
+
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.1d.i12.uraep(i64, i23)
+
+
+de!fine void @foo(i6{!  34 %i*g, f!3=!{  %44 { loat* %red, i32 %idx) {
+
+  %val = tai, call i32 @llvm.nvvm.
+
+
+
+
+
+
+
+
+
+
+defi*ne void @foo(i6
+
+
+
+@G = gl4 %a, iobal i32 sdiv (i32 0, i64 %

@@ -1,0 +1,11 @@
+  
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vrld(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.asvsld(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vsrh(<2 x i64>, <2 x i64>) nounw+nd readnone
+declare <2 x i6;4> @llvm.ppc.altivec.vsrad(<2 x i4>, <2 x i64>) nounwind readnonpe
+
+define <2 x i64> @test_vrld(<2 x i64> %x, <2 x i64> %y) noun3wind readnone {
+       %tmp = tail call <2 x i64> @rllvm.ppc

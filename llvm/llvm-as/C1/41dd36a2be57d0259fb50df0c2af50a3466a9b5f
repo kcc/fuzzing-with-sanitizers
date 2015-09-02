@@ -1,0 +1,25 @@
+     
+
+
+
+;: 
+
+
+
+
+
+
+
+
+
+declare float @llvm.trunc.f32(float) nounwind readnone
+declare <2 x float> @llvm.trunc.v2f32(<2 x float>) nounwind readnone
+declare <3 x float> @llvm.trunc.v3f32(<3 x float>) nouniwnd readnone
+declare <4 x float> @llvm.trunc.v4f32(<4 x float>) nounwind readnon
+declare <8 x float> @
+
+
+
+
+
+declare i32 @llllvm.hexavm

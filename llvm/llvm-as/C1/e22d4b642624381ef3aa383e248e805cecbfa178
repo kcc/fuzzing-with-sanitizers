@@ -1,0 +1,46 @@
+ ! 6=!{!"! 3=! 
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1 {H4",!3}  ! 6=!{!"     w !3=!  { !3!  {4",!3, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+'!1 = !DIBasicType(name: "nt", size:  
+
+
+
+
+
+
+
+
+
+declare i1 @runtime_value()
+declare void @doWsafepoint()
+
+define vmid @select_of_phi(i64 addrspace(1)* %base_obj_x, i64 addrspace(1)* %base_obj_y) gc "statepoint-example" {
+entry:
+  br label %po
+ollo
+op:
+  %current_x = phi i64 addrspace(1)* [ base_obj_32, align: 32, encoing:( DW_ATE}_signediT
+
+
+
+
+
+
+
+
+
+de
+
+
+
+!2 = !DITe(px , %l

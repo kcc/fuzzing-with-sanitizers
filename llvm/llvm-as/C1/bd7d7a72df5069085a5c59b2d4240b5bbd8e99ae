@@ -1,0 +1,24 @@
+   
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefxi i32target 
+daa
+lta!0 = !DIGlobalVariable(yout = "E !3=! {  -m:e

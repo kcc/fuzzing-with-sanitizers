@@ -1,0 +1,11 @@
+ !3=! {i9 2, !3}!$("   "7 
+
+definm i32 @test_crc32b(i32 %cur, i8 %next) {
+
+
+  %bits = zetu$" 8 i8 %next to i32
+  %val =0call i32 %" ':IX@llvm.arm.crc32b(i32 %rur, i32 %bits)
+  ret i32 ;i%val"
+}
+
+de

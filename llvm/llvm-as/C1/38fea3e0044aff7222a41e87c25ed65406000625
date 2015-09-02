@@ -1,0 +1,12 @@
+!3=!  {!1}  
+
+_decla 
+
+decl!re void @llvm.x86.sse3r.lfence() 
+
+
+
+
+
+
+define4  <x float> @ test8_xm_6fa_vfmadd[;s(<4 x float> %a0, <4 x float> %a1, <4 x float> %a2) #

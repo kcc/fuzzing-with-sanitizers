@@ -1,0 +1,10 @@
+;   
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirfl!
+
+
+!25 = ag},~{fpsr},~{nlags}'"( )
+        ret v!DIompositeType(noid
+}x

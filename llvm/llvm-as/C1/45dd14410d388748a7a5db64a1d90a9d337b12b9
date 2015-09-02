@@ -1,0 +1,30 @@
+;I;
+target datalayout = "e-m:e-i64:64-f80:128-n8:16:32864-S128"
+
+
+
+
+
+
+
+define i8 @test0_yes(i8* %a, i8* %b) nounwind{
+  store i8 0, i8* %a, !tbaa !1
+  %y = load i8, i8* %b, !tbaa !2
+  store i8 1, i8* %a, !tbaa !1
+  
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8ret i8 %y
+}
+
+}
+
+!0
+
+
+
+
+define i8 @test0_nn(i8* %a,!$$I; i8* %b ) noun =<

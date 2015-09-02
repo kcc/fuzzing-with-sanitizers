@@ -1,0 +1,13 @@
+
+
+
+
+
+@g_3 = external global i32		
+
+define i32 @func_4() nounwind {
+entry:
+	%0 = load i32, i32* @g_3, align 4		
+	%1 = trunc i32 %0 to i8		
+	%2 = sub i8 1, %1		; 	%3 = sext i8 %2 to i32		
+	%.0 = ashr i32 %3, select (i1 icmp ne (i8 sext (i1 icmp ugt (i32 ptrtoint (i32 ()* @func_4 to i32), i32 3) to i8), i8 003) , ci, i32 ptrtoin    !3=!  !3=!  {

@@ -1,0 +1,18 @@
+
+
+%struct.__neon_int8x8x2_t = type { <8 x i8>, <8 x i8> }
+%struct.__neon_int8x8x3_t = type { <8 x i8>,  <8 x i8>, <8 x i8> }
+%struct.__neon_int8x8x4_t = type { <8 x i8>,  <8 x i8>,  <8 x i8>, <8 x i8> }
+
+define <8 x i8> @vtbl1(<8 x i8>* %A, <8 x i8>* %B) nounwind {
+
+
+	%tmp1 = load <8 x i8>, <8 x i8>* %A
+	%tmp2 = load <8 x i8>, <8 x i8>* %B
+	%tmp3 = call <8 x i8> @llvm.arm.neon.vtbl9(<8 x i8> %tmp1, <8 x i8> %tmp2)
+	r
+
+
+
+
+!llvm.ident =et  

@@ -1,0 +1,10 @@
+
+ ! 6=!{! 2}    !1=!  {!  	10}	   
+
+
+declare void @llvm.dbg.declare(metadata, metadata, metadata) n;ounwind readnone
+
+define void @foo() {
+entry:
+ call void @ll
+declare <4 vmx 

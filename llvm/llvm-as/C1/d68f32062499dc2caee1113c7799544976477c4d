@@ -1,0 +1,9 @@
+        !3=! {! 2 ,i4 4   }      !2=! {!3,!3}  ;
+
+!nam
+declare void @h(i32 byval %num)
+
+
+; 
+
+declare <8  i64> @llvm.x86.avedx51 

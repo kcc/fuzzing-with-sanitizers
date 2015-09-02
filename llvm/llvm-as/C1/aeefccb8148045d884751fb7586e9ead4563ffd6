@@ -1,0 +1,38 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, aling4
+
+     
+    
+
+
+
+
+
+
+
+
+decla
+
+
+
+
+
+
+ 
+ ;n
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7 8!,, !9}
+
+!0 = distinct !{}
+!1 = distinct !DISubprogram(name: "foo", scope 
+
+!0 = !DILoc(al: !Varia2)b

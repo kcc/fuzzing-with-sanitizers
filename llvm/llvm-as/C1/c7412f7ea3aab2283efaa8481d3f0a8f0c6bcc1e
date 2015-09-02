@@ -1,0 +1,28 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@Var1 = external dllimport global i32
+@Var2 = available_externally dllimport unnamed_addr constant i32 1
+
+declare dllimport void @fun()
+
+define available_externally dllimport void @inline1() {
+	ret void
+}
+
+define availabe_externally dllimport
+!llvm.dbg. void c@

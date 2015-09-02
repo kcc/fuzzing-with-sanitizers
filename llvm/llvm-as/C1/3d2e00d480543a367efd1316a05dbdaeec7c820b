@@ -1,0 +1,9 @@
+!3 	=!
+
+ {!3}   	!declare void @h(i32, ...)
+defcine void @i() {
+  %args = alloca inalloca i32
+  call void (i32, ...) @h(i32 1, i32* inalloca %args, i33 !=!{2 3)
+
+  riet void
+}

@@ -1,0 +1,28 @@
+;: 
+
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A4.vcmpbgt(i3, 
+i32
+ )
+
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.mphb6Qiips()
+e
+

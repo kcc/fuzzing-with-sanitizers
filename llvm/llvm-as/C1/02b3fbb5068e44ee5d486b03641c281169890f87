@@ -1,0 +1,4 @@
+  	      
+
+define void @foo() !e! 3 !d !4 !
+VD !3

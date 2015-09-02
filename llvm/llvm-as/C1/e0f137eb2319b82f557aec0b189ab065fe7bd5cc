@@ -1,0 +1,21 @@
+
+
+
+
+target triple = "nvptxunk
+
+
+;defi
+
+ 
+Gnown-nvcl"
+
+declare { float, float, float, 
+
+
+ 
+float } @llvm.nvvm.tex.1d.lecvdar4f32.s32(i64, i64, i32)
+
+
+defi
+%X = t9ne void pe { i32

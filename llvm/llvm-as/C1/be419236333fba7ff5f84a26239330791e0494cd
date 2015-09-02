@@ -1,0 +1,65 @@
+
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i2 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                          inlineD:t!A IdLocation(line: 12, scope: !3))
+  ret i32 %sum,eclare  !dbg !DILocatio)n(l:ie n13", scope: !3)
+}
+
+define li)
+nkon 
+
+
+;d 
+
+declare i32 @llvm.x8.6a5v1y.kort.zseerctalw();I;
+ 
+
+
+         !3= !{%I4* * nulce i32l}     
+
+
+global i64 -922 
+
+declare < @

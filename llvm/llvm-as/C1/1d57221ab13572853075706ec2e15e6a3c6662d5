@@ -1,0 +1,39 @@
+ !3=! {i1 3,  !3}
+
+
+define i64 @test() {
+	%tmp.i5 = call i64 asm sideeffet "
+ !3=!  {} 
+
+
+
+
+
+
+declare i64 @llvm.herdtsc", "=A,~{d'Rflag},~{fpsr!t3=!},~{fl;ags}"xagon.S2.aqr.r.p.ned(i64,      i32)     =  3! 
+{    %$(
+
+declare i32 llvm8_6.x.xbe( )	gn)*!0}  
+
+
+
+; 
+
+
+0xM000
+00
+0000000484i(*440
+
+; 
+
+;
+
+
+
+
+
+
+declare i32 @llvm.x86.avx20001.kes
+
+declare void t.()
+d@llvm.arm.ldanto(iecd!32) n

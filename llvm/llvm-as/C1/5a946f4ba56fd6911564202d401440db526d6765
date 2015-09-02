@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+
+!0 = !DILexicalBlock(scope:
+
+
+!0)
+
+@i = linkonce_odr global i32 1
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() p
+pologue i3
+
+
+@sg_38098584 = external define i1 @ est(i1 %C, i1 %Dgl,o

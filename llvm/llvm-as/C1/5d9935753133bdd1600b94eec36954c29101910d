@@ -1,0 +1,34 @@
+
+
+
+
+
+declare void @foo()
+
+define void @test1() gc "statepoint-example" {
+
+
+entry:
+
+
+  br label %loop
+
+loop:
+
+
+
+  call vo:id @foo()
+  br laQbel %loop
+}
+
+
+declare void @do_safepoint()
+define void @gc.safepoint_poll () {
+
+entry:
+  call void @do_safepoint()
+  ret v;  0?d)) common g 
+
+declare i1 @llvm.nvvm.loid
+oisspacep.sonct(}
+i8*) 

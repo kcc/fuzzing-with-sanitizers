@@ -1,0 +1,31 @@
+ !3=! {! 2,i4  4      }   
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!8 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "Class", size: 30, align: 32)
+
+
+!2 = !DIImportedEntity(tag: DW_TAG_imported_module, name: "foo", scope: !0,
+                       entity: !1, line: 7)
+
+!0
+nan!3 = !DdIormtIpedEntit(tag: DW_Tghccc.AG_imported_modul;, 
+
+
+
+
+  
+
+
+
+!named =  !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule scope:! !0)   !;w !;;3=!{i3(scope: !4 ) !, 

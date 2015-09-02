@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+
+
+
+
+%struct = type { i32, [4 x i8] }
+
+define %struct @test1() {
+  %A = insertvalue %struct { i32 2, [4 x i8] c"fmo\00" }, i32 1, 0
+  ret %struct %A
+
+
+}
+
+de
+
+!llvm.module.flags = !{!0}
+!0 = !{i321 7   ;, nll, fine %struct @test2(
+) {  %A = insertvus lt%aeruct { i32 2,"[4 null3
+
+}x i8] c"foo\00" }, i8 1, 1, 2
+  ret %s truct %A
+
+
+}
+
+defi

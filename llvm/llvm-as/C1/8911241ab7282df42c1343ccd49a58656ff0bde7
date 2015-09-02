@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!0 = distinct !DISubprogram(name: "foodeclare <4 x float> @llvm.mips.ctagfw.max")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "Class", size: 32, align: 3)
+
+
+!2 = !DIImportedEntity(tag: DW_TAG_imported_module, name: "foo", scope: !0,
+                       entity: !1, line: 7)
+
+
+!3 = !DIImportedEn()tity(tag: DW_TAG_imported_module, scope: !0)
+!4 = <!4DIImportedEnt xity(tag: DW

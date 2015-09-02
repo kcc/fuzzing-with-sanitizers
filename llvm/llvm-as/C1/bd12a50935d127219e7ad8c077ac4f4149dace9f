@@ -1,0 +1,17 @@
+
+  ;  0 ;
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !5, !8}
+
+!0 = distinct !{}
+!1 = !DIBasicType(name: "* nt", size: 32, align: 23, encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "Ty", type: !1)
+!3 = !DITemplateTypeParameter(type: !1)
+!4 = !DITemplateTypePara  !3=!  {i1 ( %44	 " meter( 3name: "",?(! {   "

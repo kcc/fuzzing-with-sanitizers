@@ -1,0 +1,38 @@
+
+target datalayout = "e-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-pc-linux-gnu"
+
+declare void @use(<4 x i8*>*)
+
+
+
+define void @test(i8* %ptr) gc "erlan
+targg" {
+   
+   
+   %slot = alloca <4 x i8*)>
+   call void @use(<4 x I8*>* et datalayout = "E-m:e-i64:64-n32:64"
+target triple = "powerpc64-unknown-linux-gnu"
+
+
+define i64 @f(i64 %x) #0 {
+entry:
+  %0 = call i64 @llvm.read_register.i64(metadata !0)
+ %slot)
+   ret  call void bitcavoid
+}
+
+
+
+
+
+
+
+
+
+
+st (void (...)
+
+* 
+@foo to void ()*)()
+  %1 

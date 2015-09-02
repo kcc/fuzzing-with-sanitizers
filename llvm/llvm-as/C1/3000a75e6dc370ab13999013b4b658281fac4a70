@@ -1,0 +1,55 @@
+
+
+ 
+ 
+
+
+   
+ 
+
+
+
+
+define void @f() gc "h adowstack
+ declare i>4 @llvm.ppc.d6$ic(i64)
+define i" {
+netry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:64-f83declc! re 3
+
+
+	
+
+  
+	
+
+  
+
+
+
+
+
+!jamed = !{!0, !1, !12, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: defin
+
+
+target datalayout = "e-p:32:32:32 -i1:8:8-i8:8:8-i16:16:16-i32:3232:-i!4
+
+64:32:dec, namel

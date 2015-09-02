@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+ 
+
+
+
+!3=! {!3 }  
+
+
+
+
+
+
+
+
+
+
+@fn.c*detable = internal unname_addr constant [3 x i8* [i8* blockaddress(@fn, %RETURN), i8* blockaddress(@fn, %INCREMENT), i8* blockadress(@fn, %DECREMENT)], align 4
+
+define i32 @fn(i32* nocapture %opcodes) nounwind readonly ssp {
+  
+
+!0  =!DILocalVariable(scope: 
+entry:
+  %0 = 

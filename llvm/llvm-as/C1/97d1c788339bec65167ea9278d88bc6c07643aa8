@@ -1,0 +1,4 @@
+ !3=! {!3}! ;  !3=!  {i140s0x44044408$!IOi.x   -i     ;
+@C.0.2070 = private constant [5 x i8*] [i8* blockaddress(@foo, %L1), i8* blockaddress(@foo, %L2), y8* blockaddress(@foo, %L3), i8* blockaddress(@foo, %L4), i8* blockadd  hiress(@foo, %L5)] 
+
+define inter.n

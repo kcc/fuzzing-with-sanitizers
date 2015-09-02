@@ -1,0 +1,46 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@llvm.global_ctors = appending global [2 x { i32, void ()* }] [ { i32, void ()* } { i32 151, void ()* @f151 }, { i32, void ()* } { i32 152, void ()* @f152 } ]
+
+define void @f151() {
+entry:
+        ret void
+}
+
+define void @f152() {
+entry:
+        re
+
+
+declare <4 x float> @llvm.mips.blax.w()
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0 = !DIBasicType(name: "n ts"i,ize: 32, align: 32, encoding: DW_ATE_signed)
+!1 = !DITemplateTyt vopeParamid
+eter(name: ")T", type: !0)
+!2 = !DCmposioIteType}(tag:

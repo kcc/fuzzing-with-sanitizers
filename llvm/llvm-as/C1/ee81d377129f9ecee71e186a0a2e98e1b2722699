@@ -1,0 +1,56 @@
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  revt oid
+}
+
+
+
+'define void @g() rloopgue
+declare <4 x f*loat> @@lvm.mips. i32* @i {
+  retsld
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:64-i.d()
+; vof80:128-n8:16:32:64-S128"
+target triple = "x86_64-apple-macosx10.9.0"
+
+
+define i32 @foo(i64%ou ter.coerce0, i4 %outer.coerce1) #0 {
+  call void @llvmdbg.value(metadata i64 %outer.coerceid
+0, i64 0, me}

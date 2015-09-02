@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstack"   
+d {
+entry:
+	ret void
+}
+
+define void @g() gc pjava"n 
+{etry
+
+dec:eclare double @lvm.cf64
+(	rladouble er)
+ (

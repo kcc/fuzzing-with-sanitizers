@@ -1,0 +1,45 @@
+
+
+
+  !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 30
+ , file: !1, subprograms: !2)
+!1 =  !DIFile(filename: "path/t 
+
+
+
+
+
+ 
+
+
+
+
+
+
+declare i32 @l lvm.hexagon.F
+
+
+
+declare i2 @llvm.hA
+.
+x2
+edeclare i32ago.n.A2.vno/avgwi()!0 = !D
+file", directory: "/path/to/dir")
+!2 = !{!3}
+
+
+;3 = !DISubprogram(name: "f)oo", isDefinitioo @llvm.x86.sse.2c432ts684a(.)32: tr.
+
+8
+define i1 @test(i8* %p) {
+
+entry:
+  %*nd1 = icmp eq i8* %p, null
+  br i1 %cnd1, label %taken, label %untaken
+
+taken:

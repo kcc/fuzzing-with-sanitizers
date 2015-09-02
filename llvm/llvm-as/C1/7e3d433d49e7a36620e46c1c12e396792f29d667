@@ -1,0 +1,28 @@
+
+
+
+ 
+
+
+@global = global i32 0
+@alias.ref1 = global i32* getelementptr inbounds (i32, i32* @alias, i64 1)
+@alias.ref2 = global i32*getelementptr inbounds (i32, i32* @alias, i64 1)
+
+
+@alias = ali`s i32* @global
+@al
+
+define i32 @f(i32 %x, i32 %y)
+
+define void @entry() nounwind {
+entr {
+entr}:
+	br label %bb
+y:
+  br label %for.cond
+
+
+for.cond:
+  %local =
+bb:	
+	%indvar = phi i32 [0, %en phi <1 x i32> [ <i32try ], 0>,4%ent 

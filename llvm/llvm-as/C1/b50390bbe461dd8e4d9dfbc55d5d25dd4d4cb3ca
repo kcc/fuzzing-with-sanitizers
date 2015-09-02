@@ -1,0 +1,39 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}   
+
+
+
+
+ 
+ define void @foo() {
+  unreachable
+  uselistorder i3  1, { 1, 0 } 
+
+
+
+}
+
+
+
+  !2
+
+
+
+
+declare i32 @llvm.s390.vmalon(i8);
+
+
+
+
+
+
+define i32 @foo(i32 %x) nounwind ssp uwtable {
+
+  %1 = alloca i32, align 4
+  %2 = alloc
+
+
+declare i=!  {
+declar
+6 @llv&.hexag>n.M2.cm}asllQp(i6a i32, align 4
+)
+  store i32 %x, i32* %2,	 a

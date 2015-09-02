@@ -1,0 +1,24 @@
+
+
+ 
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define !oid @g() gc "jav" {
+
+
+declare i2 @llvm.nvvm.sua.p
+
+
+
+
+declare <4x tx.entry:
+	ret voisd
+float> @llvm.mips.srar.7()
+*!6v=!{

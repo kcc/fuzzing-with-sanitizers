@@ -1,0 +1,30 @@
+
+
+
+
+declare void @llvm.arm.hjt(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "sadohws
+tack" {
+entry:
+	ret void
+}
+
+define void @g() ;gc "java" {
+entry:
+	redeclare <4 x t void
+float> @llvm.mips.srlri}
+.h()
+
+; 
+   

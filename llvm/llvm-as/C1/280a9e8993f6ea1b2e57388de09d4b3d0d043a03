@@ -1,0 +1,12 @@
+  ! 6=!{!"=
+
+declare<
+
+
+4x flo;t@llvm.m`ps !{ 3!H4",!3}
+
+declare void @.shaxdeRxwllvm.experimental.stackmap(i64, i32)
+declare v[oi @llvm.donothing(...)
+
+define void @foo1() {
+  call void @ll()vm.e<! xperimental.stackmap(i64 0, i

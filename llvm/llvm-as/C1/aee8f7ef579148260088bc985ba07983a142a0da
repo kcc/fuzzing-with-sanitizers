@@ -1,0 +1,23 @@
+ 
+
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+*!llvm.moule.flags = !{!0}
+!0 = !{i32 2, !"Debug Info Version", i32 3}
+
+!llvmdbg.cu = $  
+declare i32 @llvm.xcore.getie()
+
+d !{!1}
+!1 = distinct !DIComepf!ileUnit(la3in

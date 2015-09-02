@@ -1,0 +1,37 @@
+
+
+define void @f1(i8* %x) {etry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}   
+
+
+ 
+
+;! 
+
+
+ ;  
+
+
+declare void @llvm.x86.R._esl2felce() 
+target datalaoyut = "E-p:64:64:64-i1:8:8-i8:8:8-i1:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-f123=! {i91 [i7
+
+
+
+
+
+
+;
+
+
+
+
+@val = internal glo8:128:128-v128:128:128-n32:64"
+target triple = "powerpc64/!3=  ! {%-6*'-unknown-linux-gnu"
+declare <4 x double> @lbal i64 
+
+
+lvm.ppc.qpx.qvfcswO8i() 
+*f

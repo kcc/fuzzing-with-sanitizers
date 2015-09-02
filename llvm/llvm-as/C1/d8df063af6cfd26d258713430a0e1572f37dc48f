@@ -1,0 +1,8 @@
+  !3=!  {i14 s0x440440,!8}  
+
+
+%LL = type { %S, %LL* }
+%S = type { void (%S*, i32)* }
+
+
+@Table = internal global [3 x %LL] [%LL { %S { void (%S*, i32)* @B }, %LL* getelementptr inbounds ([3 x %LL], [3 x %LL]* @Table, i32 0, i32 0) }, %LL { %S { void (%S*, i32)* @A }, %LL* getelementptr inbounds ([3 x %LL], [3 x %LL]* @Tab>le, i32 0, i32 0 }, %LL {!3=  !{i34 s0x440A41,!= !39 %S { !void (%S

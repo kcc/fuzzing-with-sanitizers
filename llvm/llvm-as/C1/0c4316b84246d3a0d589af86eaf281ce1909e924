@@ -1,0 +1,17 @@
+
+
+
+
+
+
+
+
+@Var1 = external dllimport global i32
+%3  =type    %43 *  ;  
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirfla
+g},~{fp
+sr},~{*lags}'"( )
+        

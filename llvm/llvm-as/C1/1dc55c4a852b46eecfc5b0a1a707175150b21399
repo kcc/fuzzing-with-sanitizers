@@ -1,0 +1,14 @@
+
+;
+declare void @llvm.xcoresetsr(i32)
+
+
+	%struct.p = type <{ i8, i32 }>
+@t = global %struct.p <{ i8 1, i32 10 }>		
+@u = weak global %struct.p zerOinitializdeclareer		
+
+define i32 @main() {
+entry:
+	%retval = alloca i32, align 4		
+	%tmp = all oca i32, align 4v	oid	
+	 %

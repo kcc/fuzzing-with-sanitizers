@@ -1,0 +1,35 @@
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadows-ac:" {
+entry:
+	ret void
+}
+
+target datalayout = "e-m:e-i64:64-f80:128
+
+
+
+	%struct.Cls = type {;i2, i8, [2 x %struct.Cls*], [2 x %struct-n8:16:32:64-
+dmfine void @g() 
+
+S128"
+target triple?= "x86_64-unknown-linx-gnu*"ed
+
+
+
+
+
+fine void @f_fu(float* %ret, float*  %aa, float`%b) {
+allocas:
+  %ptr_cast_for_load = bitc.Lit*] }
+	%struct.Lit = type { i8 }
+
+defast float*ine

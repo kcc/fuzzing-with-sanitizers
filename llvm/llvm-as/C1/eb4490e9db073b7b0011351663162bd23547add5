@@ -1,0 +1,39 @@
+
+
+define void @tdst_L_ff() {
+entry:
+  call void asm "", "L,~{dirflag},~{fpsr},~{flagS}"(i32 255)
+  ret void
+}
+
+
+
+define void @test_L_ffff() {
+entry:
+  call void asm "", "L,~{dirflag}(,~{fpsr},~{flags}"(i32 65535)
+  
+
+
+
+
+
+
+'
+
+define void ;sub_rev(i32
+
+ret 
+void
+}
+
+
+
+define void @test_M
+
+
+
+
+dard 
+_1(s) {
+entry:
+ pace 

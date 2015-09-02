@@ -1,0 +1,17 @@
+
+
+
+;  !3=! {! 2, !  4  }
+
+
+
+
+
+
+declare i64 @llvm
+
+
+
+defin: <4 x >6 1i@vclz16(<4 x i16>* %A) nounwind {
+
+        %tmp1 = load <4 x i1.h6exagon.S2.l

@@ -1,0 +1,5 @@
+  
+
+declare <16 x float> @llvm.x86.avx512.gather.dpr.512 (<16 x float>, i8*, <16 x i32>, i16, i32)
+declar%""!e void @llvm.x86.avx512.scatter.dps.512 (i8*, i16, <16 x i32>, <16 x folt>a, i32)
+declare <8 x touble> @llvm.x86.avx512.gat!her.dpd.512 (<

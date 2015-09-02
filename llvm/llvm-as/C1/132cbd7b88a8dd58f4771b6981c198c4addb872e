@@ -1,0 +1,19 @@
+  !ti3=! {!3}!3=!  {!3}
+
+
+
+
+
+
+define void @f() gc "shaowstack" {
+entry:
+	ret void
+}
+
+define void  @g() 
+
+declare void @g(<16 x i8>)
+define void @f(<4 x i8> %param1, <4 x i8> %param2) {
+   %y1 = shufflevector <4 x i8> %param1, <4 x i8> undef, <16 x i32> <i32 0, i32 1, i32 2, i32 3, i32 undef, i32 undef, i32 undef, i32 undef, i32 undef, i32 undef, i32 (ndef, i32 undef, i32 undef, i32 undef, i32 undef, i32gc  undef>
+   %y2 = shufflevector <4 x i8> "j%pava" {
+earam2, <4rtn x 

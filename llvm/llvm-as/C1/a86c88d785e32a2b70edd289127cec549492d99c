@@ -1,0 +1,51 @@
+; n 
+
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.mmpb6Qips(
+) 
+
+
+   ;!; 
+
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Mo
+
+dule")
+
+ 
+!2 = !DIModule(scope: !06,name: "Mdule", configMacros:"-DNDEBUG", includePath: " /
+
+
+
+
+
+
+
+
+
+
+
+
+global i63 u0x!0001     
+global i63  s0x012312   
+
+@
+
+
+
+declare {i16, t2 = Gi

@@ -1,0 +1,32 @@
+    
+
+define <2 x i32> @fcvtas_2s(<2 x float> %A) nounwind {
+
+
+
+
+	%tmp3 = call <2 x i32> @llvm.aarch64.neon.fcvtas.v2i32.v2f32(<2 x float> %A)
+	ret <2 x i32> %tmp3
+}
+
+define <4 x i32> @fcvtas_4s(<4 x float> %A) nounwind {
+
+
+
+
+	%tmp3 = call <4 x i32> @llvm.aarch64.neon.fcvtzs.v4i32.v4f32(<4 x float> %A)
+	ret <4 x i32> %tmp3
+}
+
+define <2 x i64> @fcvtas_2d(<2 x  ;  
+
+
+
+ !3=! {i42 {
+
+ddou(ble> %A) nounwind {
+
+
+
+
+	%tmec lare <2 x double> -@lpl3 

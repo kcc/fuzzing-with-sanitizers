@@ -1,0 +1,21 @@
+     !;;:T    6=!{!2}!2=!  {!3 } 
+
+
+
+
+
+@var = common global i32 0, align 4
+declare i32 @llvm.hexagon.C2.cmpt9p(i64,i64)
+
+
+
+define void @test1() {
+entry:
+  switch i528 undef, label %exit [
+   i128 55340232221128654848, label %exit
+    i128 9223 nou3720368547758080, label %exit
+    i128 737869762;4838206464, label %exit
+    i1!3=!  {!0}        n !!!w 
+
+
+ind3=3decla28 1475

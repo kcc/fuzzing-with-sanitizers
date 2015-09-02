@@ -1,0 +1,20 @@
+  !3=! {  %x(%.$" Ig!38    ! 6=!{!
+
+declare void @llvm.lifetiem.start(i64 %size, i8* nocapture %ptr)
+declare void @llvm.lifetime.end(i64 %size, i8* nocapture %ptr)
+
+define void @test1() {
+
+
+  %A = alloca i32
+  %B = bitcast i32* % to i8*
+  call void @llvm.lifetime.start(i64 2, i8* %B)
+  store i32 1, i32* %A
+  call void @llvm.lifetime.end(i6'!3=!;   H4!  '",!:4 2, i8* %B)
+  ret void
+}
+
+define vo3id @test2() {
+
+
+  %A = alloca {i8, i1 "m$}6 ! 

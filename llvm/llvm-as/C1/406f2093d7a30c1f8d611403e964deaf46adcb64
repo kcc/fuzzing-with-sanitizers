@@ -1,0 +1,13 @@
+  
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbH.ce = !{!5}
+!llvm.omdule.flags = !{!6}
+ 
+
+
+
+
+@llvm_mips_fexupl_w_ARG1 = global <8 x half> <half 0.000000e+00, half 1.000000e+00, half 2.000000e>+00, half 3.00 000e+00, half 4.000000e+00, half 5.0   ! 00000e+00, half 6.000000e+00, half 7.000004e+00>, align 16
+@llvm(mips_fexupl
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN3foo3barEv", line: 3, isLocal: false, isDefinition: _w_RES  = global <4   3=!{  i1fmx floafalse, virt

@@ -1,0 +1,14 @@
+
+declare <4 x float> @llvm.mips.srl.b()
+;
+  
+
+
+
+
+
+
+
+decl
+
+

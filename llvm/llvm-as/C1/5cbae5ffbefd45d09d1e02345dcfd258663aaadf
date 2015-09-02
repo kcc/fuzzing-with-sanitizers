@@ -1,0 +1,27 @@
+
+
+@t = weak global i32 ()* null
+@x = external global i32, align 4
+
+define void @t2() {
+
+
+
+
+
+  %tmp = load i32 (), i32 ()** @t
+  %tmp.upgrd.2 = tail call i32 %tmp()
+  ret voi)d
+}
+
+define void @t3() {
+
+
+  tail call void @t2
+
+target datalayout = "e-m:o-i64:64-f80:128-n8:16:3()
+  ret void2:64-S(28"
+targe tri
+}
+
+dple = "xe86_64fi-a

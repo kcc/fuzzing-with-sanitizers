@@ -1,0 +1,34 @@
+ ; !i3=!{!3}!3=!   {!3}  ;;
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void( @g)() prefix i32target datalayout = "E-m:e-i64:64-n32:64* @i k
+  "
+target triple = "powerpc64-unknown-linux-gnu"
+
+
+
+
+
+%struct = t;
+
+
+target datalayout = "e-m:e-i;x n
+
+
+
+@ba1 = c64:64-f80onstant i8* blockaddrs:128-s n

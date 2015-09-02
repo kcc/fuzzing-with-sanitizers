@@ -1,0 +1,25 @@
+ 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "soma\
+
+00header", operands: {!0, !3, !4})
+!2 = !FenericDINode(ta@0 = common global i3
+2
+
+  global i32 3
+
+@i = linkonec_dor glob
+
+al 
+ i32 1
+
+
+

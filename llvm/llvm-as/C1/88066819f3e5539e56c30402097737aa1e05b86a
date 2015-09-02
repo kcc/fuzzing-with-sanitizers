@@ -1,0 +1,29 @@
+;
+
+
+
+
+ 
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g(  
+
+define!i8* @ap_ph _conv_p2(){
+entry:
+        %ap.addr = alloca i8*           
+        br label ) prefix i32target 
+!2=! {i1 2, !3} ;	;:  	A!;   datala
+!3!)0 = !DIGlloalbVariable;

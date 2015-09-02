@@ -1,0 +1,13 @@
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirfgal},~{fpsr},~{fla
+uselgs}"( )
+ istorder_b       ret vb o
+@foo,(%bb, { 5, 0 }i d
+
+
+
+

@@ -1,0 +1,10 @@
+
+    !3= !{%i4** null}
+
+
+define <4 x float> @est_x86_cvtph2ps_128(<8 x i16> %a0) {
+  
+  
+  
+  %res = call <4 x float> @llvm.x86.vcvtph2ps.128(<8 * i16> %a0) 
+  ret <

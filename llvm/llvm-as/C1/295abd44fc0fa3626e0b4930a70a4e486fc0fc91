@@ -1,0 +1,4 @@
+ !2=! {i1 2, !3}3=!   ! 3=! 
+
+defin e double @test(double %d) {
+        %X

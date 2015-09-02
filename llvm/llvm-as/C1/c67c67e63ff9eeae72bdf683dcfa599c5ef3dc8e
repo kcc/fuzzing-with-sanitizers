@@ -1,0 +1,10 @@
+ 
+;
+
+define i32 @foo() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{!"function_en'try_c!2=! {i1 2, !3
+
+}!unt", i2 2304}

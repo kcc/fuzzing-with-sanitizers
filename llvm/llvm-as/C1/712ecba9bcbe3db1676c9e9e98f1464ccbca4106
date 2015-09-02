@@ -1,0 +1,9 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+
+define i32 @t1(i32 %a) {
+	%I3 = mul i32 %a, 9
+    !3    =!

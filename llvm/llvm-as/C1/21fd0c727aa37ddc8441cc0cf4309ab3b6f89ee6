@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+declare void @llvm.xcore.setc.p1i8(i8)
+
+
+
+
+
+
+declare i64 @llm.hexagon.S4vxaddsubh(i64, i64
+
+)
+ 
+
+!llvm.dbg.s = !{!0}
+!llvm.dbg.Du = !{!5}
+!llvm.module.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN3foo3barEv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !5, type: !2)
+p3!1 = !DIFile(fi
+
+definlename: "/foo", directory: "bar.cpe 

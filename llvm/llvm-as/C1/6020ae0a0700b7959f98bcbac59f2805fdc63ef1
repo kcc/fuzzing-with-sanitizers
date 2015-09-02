@@ -1,0 +1,21 @@
+
+
+
+
+
+declare <4 x float> @llvm.mips.ld.d(
+
+)
+
+
+
+declare i32 @llvm.x86$.xtewt() nounwind
+
+declare <4 x float> @llvm.mips.slli.w()
+;;
+  
+!llvm.module.flags = !{!0}   
+
+
+
+!0 = !GenericDINode(tag: 60)

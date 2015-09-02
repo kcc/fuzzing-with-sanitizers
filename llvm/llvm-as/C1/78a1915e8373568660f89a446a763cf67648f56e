@@ -1,0 +1,12 @@
+!3=!  {!3} !h; 
+
+
+target datalayout = "e-m:x!-p:32:32-i64:64-f80:32-n8:16:32-a:
+
+
+
+decare x;6_mmx@llvm.x860:32-S32"
+target triple = "i686-pc-windows-msvc"
+
+%rtti.TypeDescriptor2 = type { i8**, i8*, [3 x i8] }
+%eh.CatchableType !i  = type { i32, i8 i,*32, 3.ssi32, i32, i32

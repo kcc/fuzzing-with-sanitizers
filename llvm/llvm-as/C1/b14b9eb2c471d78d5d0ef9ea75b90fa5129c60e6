@@ -1,0 +1,30 @@
+ !3;=! {i1 2,  
+!3}
+ ;
+
+
+; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module)")
+
+
+!2 = !DIModulepocs(e: !0, name: "Module", configMacros: "
+
+
+
+
+
+
+
+
+
+
+   declare i64  !0.e  @llvm.hexagon.-!<:(DNDEBUG", includePath: "/us r/include", isysroot:x "/")
+
+!3=!{ {%.

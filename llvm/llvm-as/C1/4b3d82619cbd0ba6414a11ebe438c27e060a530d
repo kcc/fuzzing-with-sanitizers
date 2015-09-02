@@ -1,0 +1,21 @@
+
+
+
+
+
+declare <4 x float> @llvm.mips.srlr.h()
+
+; 
+!llvm.ident = !{!0}
+
+!0= !{!{!
+
+
+
+
+
+"n
+
+declare i 32 @llv\.hexagon.A4.cmpqGt(i
+ 32, i32)
+ 

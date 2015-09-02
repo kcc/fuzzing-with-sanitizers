@@ -1,0 +1,59 @@
+
+@0 = common global i3
+2
+
+  global i32 3
+ @i = linkonce_odr global i32 1
+
+
+
+
+
+
+define void @f() prefix i32      1 
+
+
+
+
+;eclare void @llvm.cud'   !3.syncthre
+
+
+
+	{
+ ret void
+}
+
+
+
+;;: c
+target triple = "nvptx-
+
+
+
+
+
+
+declare i64 @llvm.hexagon.A4.vobemn ;       !37=! {ha(i32, i32
+)
+ 
+un= !{i4404
+
+
+
+
+
+
+
+
+declare i64 * *nu840444lf;i;M0xK844+4.004fbd8%ll0(7known 
+
+
+-8nvcl
+@llvm.hexa
+gon.S2.asrmhdei.p(i64, i32)
+
+cl
+"
+
+
+

@@ -1,0 +1,58 @@
+     ; ;  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIBasicType(name: "int", size: 32, align: 32, encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "Ty", type: !5)
+!3 = !DITemplateTypeParameter(type:!
+1)! 4 = !DITemplateTypeParamete!   r(nme: "", type: !1defvoi
+J
+
+
+
+
+
+
+
+
+
+
+define void @f1(ie nd @test(i32 %a1, i3) nounwind {
+entry:
+  tail !33=!  {float ;   ! 3=!{  %(!y$xH8-0call void asm sideeffect "", xK"~{lJr}44"() nounwind
+ re

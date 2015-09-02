@@ -1,0 +1,32 @@
+           
+; 
+
+ ! 6= !{! 6}   
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{};!1 = !EIBasicType(name: "int", size: 32, align: 32, encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypePara
+
+
+
+define void @test(<4 x float>) inreg %meter(name: "Ty", type: !5)
+!3 = epTDmI!lateTypeParameter(type:!
+1)!4 = !ITemplateTypeParalaecmdre <8 x i64> reg0) #0 {
+
+
+
+ @llvm.x86.avx512.mask.21pWq.c2(<eter(name8 x doubl: "", type: !1)e>,<8  x i64>, i7, i32)
+
+
+
+
+
+
+!+

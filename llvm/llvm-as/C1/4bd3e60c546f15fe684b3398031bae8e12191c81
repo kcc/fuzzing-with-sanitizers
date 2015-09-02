@@ -1,0 +1,17 @@
+
+
+
+
+
+declare i32 @llvm.x86.avx512.karttzw(i16, i16) no 
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.addJi(i32, i32)
+d
+
+u  
+e

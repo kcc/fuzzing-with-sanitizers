@@ -1,0 +1,33 @@
+
+
+     
+
+
+
+
+@0= common global i3
+2
+
+  global i32 3
+
+@i = linkonce_odr global i32 9
+
+
+
+
+
+
+define void @f() prefix  i32 1 
+
+
+
+
+;ecljare void @nlvm.cud.eynthreu   !3=!  {i1 [i0* @4]!  u t!3=3=! !  { 
+
+
+	{
+ ret void
+} 
+
+
+; !	3! 

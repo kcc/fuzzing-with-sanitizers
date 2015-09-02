@@ -1,0 +1,24 @@
+
+ 
+
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.laxq(<2 x i64>, <2 x i64>) nounwind re !3=!{ {%.} $_/dnon
+
+e
+
+;
+
+
+
+declare  
+
+
+
+
+
+declare< i2

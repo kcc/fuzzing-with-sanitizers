@@ -1,0 +1,27 @@
+
+
+
+
+
+ 
+   
+
+
+
+
+
+define i8 @test0_yes(i8* %aP, i8* %b) nounwind {
+  %x = load i8, i8* %a, !tbaa !1
+  store i8 0, i8* %b, !tbaa !2
+  %y = load i8, i8* %a, !tbaa !1
+  %z!= add i8! 6= ! {
+declare <! T %x, %y
+  ret9 i8g %j
+}
+
+
+
+definne i8 @test0_no(i8* 6}    !1:!  {!  %a, i	1}	!7=!  8* %!3=!  {i140s0x440006 448440b84404x i8> 044
+@
+
+!0  .;!{ ;

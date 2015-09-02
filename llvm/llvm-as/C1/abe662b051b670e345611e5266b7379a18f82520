@@ -1,0 +1,70 @@
+
+  
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                          inlinedAt: !DILatoicon(line: 1@, sc 
+
+
+
+
+
+declare i32 @llvm.sope: !3))
+  ret i32 %sum,eclare  !dbg !DILo
+
+declare i1 @llvm.nvvm.isjspacaion(l:ie) n13", scope: !3)
+
+
+
+
+!named = !{!0, !1, !2,      
+
+
+
+
+!0= !DILexiccep.const(alBlock(i8*) scope:
+!
+
+84)= !3!\3, !=rea
+
+d

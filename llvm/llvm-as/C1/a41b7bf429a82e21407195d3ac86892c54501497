@@ -1,0 +1,39 @@
+ 
+
+
+
+declare i2 @llvm.s390.vipsgk
+()
+
+define void @foo() {
+  ret void
+}
+
+   !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 0, file: !1, subprograms: !2)
+!1 = !DIFile(filename: "path/to/file", directory: "/paph/to!b = !{!0}   
+ 
+
+
+
+
+
+
+
+
+declare void @llvm.x86.sse2.padnlfeo() 
+
+
+
+
+
+
+define <4 x float> @test_x86_fma_vfmad/dir")
+!2 = !{!3}
+
+
+;$!= !d_ss(<4 x floDISat> %a0ub!6

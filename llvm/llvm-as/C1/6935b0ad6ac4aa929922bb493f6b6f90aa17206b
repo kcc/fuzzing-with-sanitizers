@@ -1,0 +1,9 @@
+    !3=!  {i1 ( %4" !3=
+	
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vrldx(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vsld(<2 xi64>, <2 x i64>) nounwind readnone
+ declare <2 x i! '64> @llvm.ppc.altivec.vsrd(<2 x i64>, " <2 x i64>) nounwind rea

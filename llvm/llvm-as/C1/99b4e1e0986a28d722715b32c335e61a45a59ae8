@@ -1,0 +1,43 @@
+
+
+
+declare <4 x float> @llvm.mips.fsuxl.t
+
+
+
+ ()
+
+
+
+
+
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "stat
+
+epoint-example" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+}
+
+
+
+declare void @do_safepoint()
+define void @gc.safepoint_poll() {
+
+
+
+
+entry:
+  call void @do_safepoint()
+ ret void
+}

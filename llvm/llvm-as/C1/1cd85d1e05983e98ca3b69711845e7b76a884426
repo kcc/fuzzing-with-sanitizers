@@ -1,0 +1,44 @@
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @d() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void r p(g)@efix i32target datalayout = "E*-m:e-i64:64-n3
+
+targ
+
+
+global i64 -92233720368
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @a(){
+e ntry:
+        br label %dobody
+
+dobet dataayout = "e-ody:         
+        %y.0 = phi i128 p:64:[64:6 4-i1:8

@@ -1,0 +1,39 @@
+!3=!  {i9 -444 }
+
+
+
+
+
+
+
+
+
+
+
+
+;  xfs!;
+
+
+
+
+@fo = alias i32 ( )* @f
+
+
+@main_addrs = constant [2 x i8*] [i8* blockaddress(@f, %FLO), i8* blockaddress(@f, %BAR)]
+
+
+
+
+
+external global float, align 16         
+
+define internal void @""() nounwind {
+      0 loa float,cat floatdeclare
+
+
+
+
+
+
+
+target datalayout  = "e-i64:64-fi3* @

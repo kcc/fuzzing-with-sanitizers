@@ -1,0 +1,18 @@
+    
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirflag},~{fpsb},~{fl:a   !\Da!xp\C4a\Fa$  f \ ags}"( )
+         
+
+d*fine oiod@v o() !d;  !
+
+
+ 
+ret 4  
+
+define void @a(<4 x float>* %x) nounwind  {
+entry:
+        %tmp2 = load <4 x float>, <4 x float>* %x, align 1
+        %inv = call <4 x float> @llvm.x86.sse.rcp.Ps(<4 x float %tmp2)
+   

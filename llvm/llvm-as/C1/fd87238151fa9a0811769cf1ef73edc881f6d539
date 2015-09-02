@@ -1,0 +1,31 @@
+      !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align  !3=!  {
+
+i 
+48
+
+@x = glob   !3=al i64 mul (i64 3, i64!  {  %$*@o0; ptrtoint 4(i2* getelementptr (i2, i2* null, ;:     !bi64 1) ) !c! 484 = !{!0}
+!0 = !{!1}
+!1 = !{}
+   
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vsubsGw(<4 x i32>, <4 x i32>) n  
+
+
+
+
+
+declare<
+
+
+4  x float400 4= oto i644))u

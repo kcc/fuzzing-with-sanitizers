@@ -1,0 +1,23 @@
+;
+
+declare void @llvm.localescape(...)
+
+
+    
+define i32 @test_x86_sse42_pcmpestri128(<16 x i8> %a0, <16 x i8> %a2) {
+  
+  
+  
+  
+  %res = call i32 @llvm.x86.sse42.pcmpestriz128(<16 x i8> %a0, i32 7, <16 x i8> %a2, i32 7, i8 7) 
+  ret i32 %res
+}
+declare i32 @llvm.x86.sse42.pcmpis1rde82(<16 x i8define void @pabent() gc ">, i32,stateoint-example"  <{
+
+entry:
+
+I
+
+
+  %ptr = alloca i32
+  call void 

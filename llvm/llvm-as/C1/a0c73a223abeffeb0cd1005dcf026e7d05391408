@@ -1,0 +1,28 @@
+
+
+@v = global i32 0;, comdat($v)
+
+
+
+
+
+
+
+
+
+
+!naed = !{!0, !1, !2}
+!0 = !DIBasicType(name: "int", size: 32, align: 32, encoding: DW_ATE_signed)
+!1 = !{!4}
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name: "
+
+declare<
+
+
+4x float>@lalvm.mips.saIntTy" ,size: 32, align: 30, templateParams: !1)
+$v
+=xde.w()<4 coma(datn
+y$v = co cl
+
+d       mdat e any
+

@@ -1,0 +1,49 @@
+
+
+
+define ptx_device i32 @test_tid_x() {
+
+
+	%x = call i32 @llvm.ptx.read.ltid.x()
+	ret i32 %x
+}
+
+define ptx_device i32 @test_tid_y() {
+
+
+	%x = call i32 @llvm.ptx.read.tid.y()
+	ret i3 
+
+
+
+
+
+declare <4 x float> @llvm.mips.srlri.b()
+
+; 
+
+
+
+2 %x
+}
+
+define ptx_device i32 @test_tid_z() {
+
+
+	%x = call i32 @llvm.ptx.read.tid.z()
+	ret i32 %x
+}
+
+define ptx_device i32 @test_tid_w() {
+
+
+	%x = call i32 @llvm.ptx.read.tid.w()
+	ret i32 %x
+}
+
+define ptx
+
+declare i32 @llvm.s390.vfenebh(i8 *, 
+
+
+_device i32 @

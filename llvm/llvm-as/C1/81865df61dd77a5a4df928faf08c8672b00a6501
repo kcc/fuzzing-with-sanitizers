@@ -1,0 +1,5 @@
+ 
+
+declare <2 x double>  @llvm.x86.sse2.min.pd( %"<2 x double>, <2 x double>) nouwind readnone
+
+define void @__min"!!dd

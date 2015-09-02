@@ -1,0 +1,17 @@
+
+    
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%Yunn.x*@r to i64) }, alig
+declare <4 x floa>l@t lvm.mip!3=n 4
+
+
+
+
+
+@x =s.srlr.g()
+; ;      global i6 !34 :   m  =u! !l 

@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.vminub()
+  
+
+
+declare float @llvm.nvvm.f
+s.qrt(float)
+
+
+
+
+
+define
+ float 

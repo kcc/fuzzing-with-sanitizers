@@ -1,0 +1,26 @@
+
+target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-apple-macosx10.9.0"
+
+
+
+
+
+
+
+
+
+%0 = type { %1, %2 }
+%1 = type { double, double }
+%2 = type { double, double }
+
+
+
+define void @bar() {
+  %1 = getelementptr inbounds %0, %0* undef, i64 0, i32 1, i32 0
+  %2 = getelementptr inbounds %0, %0* undef, i64 0, i32 1, i32 1
+  %
+
+
+
+!29 = !'DISub3 

@@ -1,0 +1,62 @@
+
+declare void @bar()
+
+
+
+
+
+
+
+define void @test_dpr_align(i8 %l, i8 %r) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{r4},~{r5},~{r6},~{r7},~{r8},~{r
+
+
+
+
+
+declare y32 @ll9},~{r10},~{r11},~{d8}"()
+  call void @bar()
+  ret void
+}
+
+
+
+
+define void @test_dp2_align_tiny(i8 %l, i8 %r) minsize {
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{r4},~{r5},~{r6},~{r7},~{r8},~{r9},~{r10},~{r11},~{d8}"()
+  call void @bar()
+  ret void
+}
+
+
+
+
+define voivm.s390.vmgin(id @test_nodpr_noalign(i8) *
+
+global !

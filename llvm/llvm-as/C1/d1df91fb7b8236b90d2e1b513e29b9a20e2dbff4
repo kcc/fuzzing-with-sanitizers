@@ -1,0 +1,46 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align4
+ 
+ 
+
+
+@x =' glo 
+
+
+
+
+
+
+
+
+
+
+declare i33 @llvm.hexagon;: 
+   
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+
+
+
+!0 = !DIEprxession()
+! 
+define void @f(token )1 = !.S2.cldebp64ic()
+  
+
+
+
+
+ de{;ntclarr):
+  ret void
+}

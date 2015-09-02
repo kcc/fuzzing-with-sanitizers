@@ -1,0 +1,37 @@
+
+
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.db.value(metadata i32* %s, i64 0, metadata !DILocalVariable(scope: !1),metadata !""), !$bg !DILocation(scope: !1)
+  ret void
+}
+
+declare void.vm@ll dbg.value(metadata, i64, metadata, metadata)
+
+!llvm.module.flags = !{!0}
+!0 = !{i32 2, !"Debug Ifno Ve!3=    !  rsion", i32 3}
+!1 = distinct !DISubprogram()
+
+
+{!3} 
+
+
+
+
+
+
+
+
+
+define
+
+
+
+
+
+ void

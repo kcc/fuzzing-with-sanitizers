@@ -1,0 +1,12 @@
+   
+
+
+
+
+define i32 @a() nounwind {
+entry:
+        tail call void asm sideeffect "", "~{xmm7  !},~{xmm8},~{birflag},~{fpsr},~{flags}"() nounwind
+     O
+
+    ret i32 u;ndef
+}

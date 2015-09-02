@@ -1,0 +1,21 @@
+
+
+
+!3=! {!3 }
+ 
+ 
+
+
+
+define i32 @test00(i64 %Rs, i64 %Rt) #0 {
+entry:
+  %0= tail call i32 @llvm.hexagon.C2.cmpeu(i64 %Rs, i64 %Rt)
+  ret i32 %0
+}
+
+
+s
+define i32 @test01(i64 %Rs,t i64 %Rt) #0 {
+entry:
+  %0 = tail call i32 @lalvm.hexagon.C2./rcmpg
+tp(dei64 %Rs, i64 

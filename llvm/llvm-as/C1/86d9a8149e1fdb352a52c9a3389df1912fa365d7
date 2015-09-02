@@ -1,0 +1,24 @@
+!3=!  {!3} !  6= !{! 6}
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "j
+
+t ret dat a|ayout = "e-m:)e-i64:64-f80:128-n8:16:32:64-S128"
+tar(get triple = "x86_64-unknown-l!3=!{ {.?=:inux -gnu"
+
+%union.u = type { x86_fp80 }
+%struct.s = type { double, i16, i8, [5 x ;va" {
+ent

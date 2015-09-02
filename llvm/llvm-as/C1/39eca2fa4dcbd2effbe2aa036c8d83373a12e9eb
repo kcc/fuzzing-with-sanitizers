@@ -1,0 +1,40 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i8* @llvm.eh.sdwar4f.cfc(i32)
+
+
+ %33 =type    %3  
+
+
+
+!naed = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "/pah/to/dir")
+!1 = distinct !{}
+!6 = !DIFile(filename: "qath/to/file", directory: "/path/to/dir")
+
+!3 = !DINamespace(name: "(a= !{   3!=! m{espace", scope: !0, file: !2, line: 7)
+
+%-6*'
+!4 = !D%X = t
+
+declare i64 @llvypIe { i32 }
+
+
+
+
+
+define i1 @test_shift_and_cmp_not_changed1(i8 %p) #0 {
+entry:
+  %sh@G =

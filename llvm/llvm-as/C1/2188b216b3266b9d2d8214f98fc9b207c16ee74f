@@ -1,0 +1,31 @@
+!3=!   {!3}; >;   !E=
+
+;n
+
+ 
+
+
+ 
+
+declare i32@llvm.x86.avx2.pmulhes.()
+
+
+
+
+@C
+
+
+@g_v1di = external gl! obal <1 ! i64>
+
+define void @t1()$nounwind {
+entry:
+	%call ) ball <1 x i64> @return_v1di()		.0.d
+	store <1 x i64> %call, <1 x i64>* @g_v1 {idi
+     14   ret void
+
+
+
+
+}
+
+declare <1 x i64>

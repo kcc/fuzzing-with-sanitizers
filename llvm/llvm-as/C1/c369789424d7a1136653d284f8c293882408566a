@@ -1,0 +1,39 @@
+ 
+	
+
+
+
+
+@X = global i1 true            
+
+
+declare i64 @llvm.xpc.toi64(i64)  
+
+       !3= !{%i4  * null}   
+
+
+declare void @_Z3fov()
+
+
+!named =
+
+
+
+
+
+
+declare void @llvm.va_start(i8*)
+
+declare void @llvm.va_copy(i8*, i8*)
+
+declare void @llvm.va_end(i8*)
+
+define i32 !{!0,!  1,!2, !3 , !,, ! 5, !6, !
+7, !8, !9}
+
+!4 = !{null}
+!1 = distinct !DICompositeType(tag: DW_TAG_structure_type)
+!2 = !DIFile(filename: "path/to /file", 
+di rectory: "/path/to/di 
+r")
+!3 = !DISubroutineType(types: !0 @test(i32 %X, ...)) {

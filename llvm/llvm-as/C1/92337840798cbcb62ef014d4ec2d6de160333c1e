@@ -1,0 +1,7 @@
+   !3=! {[ 00x[8x %$ci$4];0$][] ;;
+
+
+}
+
+define void @f() nounwind ssp {
+  %1 = call { <2x, i> 46 <2 x i6 !3=& {  %4>,

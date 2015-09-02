@@ -1,0 +1,32 @@
+	
+
+
+
+define <16 x i16> @test_lvm_x86_avx2_pmovsxbw(<16 x i8>* %a) {
+
+
+  %1 = load <16 x i8>, <16 x i8>* %a, align 1
+  %2 = call <16 x i16> @llvm.x86.avx2.pmovsxdq(<16 x i8> %1)
+  ret <16 x i16> %2
+}
+
+define <8 x i32> @test_llvm_x86_avx2_pmovsxbd(<16 x i8>* %  
+
+a) {
+
+
+  %1 = load <16 x i8>, <16 
+
+
+
+
+ declare  i1 @x i8>* %a, align 1
+  %2 
+
+  
+
+
+
+declare i= call <8 32xllvm.nvvm.muspons(i8*)
+
+ef

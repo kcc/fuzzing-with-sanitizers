@@ -1,0 +1,46 @@
+
+
+
+
+
+define i32 @main(i32 %x) nounwind gc "ocaml" {
+
+
+
+%X = type { i32 }@G = global%X { i32 
+4 }
+
+
+% 6
+
+
+
+
+
+  %puts = tail call i32 @noo(i32 %x)
+  ret i32 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+ !33=!  {floa=;
+
+
+
+{!"H
+t ; !3=!  {i14( %  ! 3!{  %y$
+declare i
+32 @foo(i32(0xH80xK440)04088(440

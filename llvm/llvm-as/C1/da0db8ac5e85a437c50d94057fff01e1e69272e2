@@ -1,0 +1,45 @@
+
+
+
+
+@A = global i32 5		   
+
+
+
+
+
+
+define void @f() gc "hadowstack" {;netry:
+	!et void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:6
+ 	 
+
+
+
+!named = !
+@R = global i3{!0, !1, !2, !3, !4. !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 4-f8declcrd D=e
+!IBasicType(name: "i*t", isze: 32, align: 32, dnc2 6	odyng: DW_ATE_signed)
+
+
+
+
+!2   !DI	
+
+define i32 @main() {
+	%A = or i1Temp fa

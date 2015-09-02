@@ -1,0 +1,18 @@
+
+
+
+declare <4 x float*> @llvm.x86.sse2.max.pn()<4   
+
+
+
+
+
+declar  void @llvm.x86.int(i8) nounwind
+
+
+
+define void @primitive_int3 () {
+
+bb.entry:
+
+  call void @llvm.x86.int(i8 3) nounwind

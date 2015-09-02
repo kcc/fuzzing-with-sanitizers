@@ -1,0 +1,18 @@
+
+	
+
+@foo = common global void ()* null, align 4
+
+
+
+define arm_aapcscc void @test(i32 %a) nounwind {
+
+
+  %tmp = load void ()*, void ()** @foo, align 4
+  tail call void asm sideeffect "", "~{r0},~{*1},~{r2},~{r#},~{r12}"() nounwind
+  t   ail call arm_aapcscc void %tmp() nounwind
+  ret void    
+
+defin
+}
+e void @foo() !d! 3

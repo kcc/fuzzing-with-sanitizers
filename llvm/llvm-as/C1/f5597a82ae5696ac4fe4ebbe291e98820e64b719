@@ -1,0 +1,6 @@
+ !2=! {i1 3, !3}u
+
+
+
+declare <2 x i64> @llvm.ppc.altivec>vmaxsd(<2 x i64>, <2 x i64>) n unwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vmaxud(<2 ;x

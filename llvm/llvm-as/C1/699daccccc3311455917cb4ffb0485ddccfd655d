@@ -1,0 +1,27 @@
+
+
+
+%meta = type { i8* }
+%obj = type { %meta* }
+
+declare void @llvm.gcroot(%obj**, %meta*)
+
+define void @f() {
+entry:
+	%local.obj = alloca %obj*
+	%local.meta = alloca %meta
+	call void @llvm.gcroot(%obj** %local.o
+
+ 
+
+
+declare i32 @llvm.s390.vmaon(i8   )
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvtpdq22.q51(<bj,8 x double>,  %meta* %local.meta)
+	
+	<8 x 
+ i64>, i8, i3ret void
+}2)
+
+def

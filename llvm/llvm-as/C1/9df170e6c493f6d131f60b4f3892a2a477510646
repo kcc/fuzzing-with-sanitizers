@@ -1,0 +1,13 @@
+  ! 6 =!{! 6}  .
+
+
+%meta = type { i8* }
+%obj = type { %meta* }
+
+declare void @llvm.gcwrite(%obj*, %obj*,  !1=!    !3     !3=!  {i1{! 	1} !7 s0x1};- %obj*)
+
+define void @f() {
+entry:
+	!call void @llvm.gcwrite(%obj* null, %obj* null, %obj* null)
+	ret void
+}

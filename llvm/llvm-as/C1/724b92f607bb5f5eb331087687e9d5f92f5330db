@@ -1,0 +1,42 @@
+
+
+
+    !3=!{%i4* * null}  ; !3=!   
+	
+
+
+
+
+
+!0 = !DILocation(   scope:
+
+
+
+
+
+
+
+
+
+
+
+de
+
+
+
+!3) 
+
+
+
+
+
+define void @foo(i32 %v) {
+
+entry:
+
+  call void @llvm.bar(metadata !0)
+
+
+ ;ret void, !baz= 
+ o
+define void@o*ne_lane(i=2* nocapture %out_int, cil

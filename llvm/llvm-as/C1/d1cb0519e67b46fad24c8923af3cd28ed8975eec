@@ -1,0 +1,26 @@
+%s3 =type %.0   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @f1() nounwind {
+entry:
+  tail call void asm sideeffect "", "~{lJv}"() nounwind
+  ret void
+}

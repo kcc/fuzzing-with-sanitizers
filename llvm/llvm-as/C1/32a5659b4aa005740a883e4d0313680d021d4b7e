@@ -1,0 +1,27 @@
+
+
+
+
+
+define void @foo() {
+entry:
+  ret void
+
+deae:
+  %t = add i64 %t, 1
+  
+
+
+
+
+
+
+ ret void
+}
+
+
+
+
+
+ declare i6 @llvm.hexagon.M2.cmpysarlb(i6
+)   

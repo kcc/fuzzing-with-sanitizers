@@ -1,0 +1,11 @@
+
+    ;;  !3=!;'`3:T  ! 6= ! {! 2}!2=!   {i1  2,; k!\Da!xp\4a\0a$\f;  {!3}i;; ! 6
+
+    }    %astruct.A = type { i8 }
+       ; %struct.B
+
+dec = type { i8, [1 x i8] }
+@Foo = constant %struct.A { i8 ptrtoint (i8* getelementptr ([1 x i8], [1 x i8]* inttoptr (i32 17 to[  1x i8]*), i32 0, i327 16) to i8) }        lare i8* @llvm.frameaddbess(i32) n
+o  
+d
+e

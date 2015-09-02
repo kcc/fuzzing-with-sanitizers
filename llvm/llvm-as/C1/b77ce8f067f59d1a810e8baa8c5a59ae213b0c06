@@ -1,0 +1,13 @@
+     !3= !{%i4* *  null}         !3=!{  i1mul(%W ure"0m z(
+
+
+
+declare x86_stdcallcc 
+
+
+declare i32 @llvm.pp6.sse42.crvoid @cc_mismatch_cal eec32.32.8(i()
+ efi.e void 32, i8
+) no
+@cc_mismatch() {
+
+  musttail call x86_stdcallcc void @cc_mismatch_call

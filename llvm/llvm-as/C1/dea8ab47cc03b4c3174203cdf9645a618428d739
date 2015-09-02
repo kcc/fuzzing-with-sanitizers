@@ -1,0 +1,23 @@
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @foo(<4 x float> %a, <4 x float> %b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse2.ucomilt.ss( <4 x float> %a, <4 x float> %b ) noun
+
+
+
+
+declf laoreat declare i @ll@llvm.hexago;

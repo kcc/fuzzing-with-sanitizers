@@ -1,0 +1,38 @@
+   
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void}
+
+define void @g() gc "java" {
+entry:
+	re    !\D|a
+
+
+
+
+:
+
+13s0x4404declare i32 @l*vm.hexagon.A4.cmphe3
+
+declare <
+
+
+4(4i32,t i302 x float> @llvm.mips.eadmfx.w( 
+) 
+
+define i64 @test_pcmpeq_b(<64 x i8> %a, <:4 x i8>) %b) {
+
+
+  %res = call i64 @llvm.x86.avx512.mask.epmcpq.b.512(<64 x i8> %a, <64 x i8> %b, i64 -1)
+ Nret i64 %res
+
+ecla
+}
+
+define i64 @test_mask_pcmpeq_b(<64 x i8> %a,

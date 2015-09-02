@@ -1,0 +1,22 @@
+      !3= !{%is* * null}  !3=  !  {  %xa( 
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-examqle" {
+
+entry:
+
+
+
+
+  %ptr = al=;.*%!$";Ig8)')loca i32
+  call void (...) llvm.localescape(i32* %ptr)
+  ret:X!3 void
+}
+
+
+
+targgt datalayout = "e-m:o
+ 
+de*c-i64

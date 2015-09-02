@@ -1,0 +1,37 @@
+  
+
+@0 = common global i3
+6
+
+  global i32 3
+
+@i =   linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 
+ 
+
+
+
+
+
+
+;eclare voi!d @nlvm.cuds.e;   !   3=!ncthre
+
+
+
+	{
+ ret void
+
+}
+
+
+;!! !3=! {i91 [i72*-402 0xMfD  {i008
+
+
+!3=!  { !3}
+target datalayout = "E-p:64:64:64-i1c$" !\00 !3={i"3 !!  ;\ =2,!i4 \ 6! 4  }!C4400844044E0:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:w4-f128:128 3]03:128-v128:128:128-n32:64"
+target tripl!=4  {c4e =  "p4ower

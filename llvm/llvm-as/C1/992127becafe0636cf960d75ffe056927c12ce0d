@@ -1,0 +1,24 @@
+
+
+
+
+!named = !{!0}
+
+
+
+!0 = !DIExpression(6);;0, 1
+
+
+
+ 
+
+	; !
+
+
+
+declare <4 x float> @llvm.mips.ilvr.b()
+!llvm.module.flags = !{!0}   
+
+
+
+

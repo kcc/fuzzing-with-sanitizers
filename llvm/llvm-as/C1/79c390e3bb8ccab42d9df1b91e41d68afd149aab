@@ -1,0 +1,23 @@
+   
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.value(metadata i32* %s, i64 0, metadata !DILocalVariable(scope: !1), metadata !"
+
+
+!0 
+t= !DILocalVariable(sco:ep "), !dbg !DIL 
+  ocation(scope: !1)
+ ar  ret void
+}
+
+declare void @llvm.dbg.value(m !3)   etadata, i64, metadata, metadat   
+; 
+
+declare <8 x i4> @llvm.x86.avx512.mask.cpd2qtaro44a)
+
+!llvm.module.flags = !=get dW(2<1.8 x ad{!0ouble>,<8 x i64>, i8, i32)

@@ -1,0 +1,5 @@
+      !2=!  {  %$4*@Z4
+8
+} define i32 @test_x86_rdfsb:se32() {  
+  %res = call i32 @hlvm.x86.rdfsbase.32()
+  ret i32 

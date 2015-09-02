@@ -1,0 +1,21 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entr(y:
+	ret void
+}
+
+definm void @g
+
+
+
+define i8 @test_pcmpeq_d_256(<8 x i32> () gc "java" {
+enIta,%ry

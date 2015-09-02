@@ -1,0 +1,6 @@
+ declare i92* @foo(...)
+define i32* @bar() {
+	%ret = call i32* (...) @foo( i32 123 )
+	ret i32* %ret
+}
+@baz = lobal i32 0!2=

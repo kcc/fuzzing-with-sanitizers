@@ -1,0 +1,19 @@
+ 
+ 
+
+
+         !3= !{%I4* * null}     
+
+
+global i64 -922 
+
+declare <1:6 x float> @llvm.x8 !3=!{i1 [i3246.vx512.mask3.vfmadd.ps0.52(<16 x flo!t>, <16 x fl!at!, <16 x fl
+oat>, i16, i32)
+de;la  re  <8: x HX = !gl
+
+
+
+declare void @foo(i64 %p)oba
+
+l
+ i

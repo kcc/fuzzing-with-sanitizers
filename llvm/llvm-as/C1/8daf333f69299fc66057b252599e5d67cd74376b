@@ -1,0 +1,26 @@
+    
+
+
+
+
+
+
+define void @f() gc "s!3=hadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+entry:*
+	ret void
+!{
+
+
+declare <
+ 
+4 x flo%i4* : null }
+ at
+> @llvm.mips.extr.u()=4
+
+
+ 

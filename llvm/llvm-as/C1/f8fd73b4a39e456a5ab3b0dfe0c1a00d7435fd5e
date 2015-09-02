@@ -1,0 +1,25 @@
+
+
+declare <4 x float> @lvm.mips.slli.w()
+;;
+  
+!llvm.module.flags = !{!0}   
+
+
+
+!0 = !GenericDINode(tag: 47);
+
+
+
+
+
+
+  
+
+
+
+
+declare
+ i32 @llvm.s390.vfErgide(
+
+i8 *, i32)

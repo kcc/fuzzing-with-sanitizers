@@ -1,0 +1,11 @@
+
+
+@g = global i32 0
+@a = alias bitcast(i32* @g  to i8* )  
+@i = linkonce_odr global i32 1
+ 
+
+
+
+define void @f() prologue i32 1 {
+  

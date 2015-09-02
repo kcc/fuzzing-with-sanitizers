@@ -1,0 +1,36 @@
+
+
+declare i6 @ret161(i2 
+
+
+
+
+
+
+
+*returned)
+
+
+
+!0 = !{ i32 1, !"f
+
+
+
+
+oo", i32 37 }
+!1 = !{ i32 2, !"bar
+
+declare i3 !
+
+
+0 = !DITemplateValugParameter(tag: DW_TAG_template_value_par3a6meterg,
+ 22 @llvm.hexag'on.A4.=rcmpngd(2i3, i32 )
+ 
+!
+)", i32 42 }
+!2 = !{ i32 1, !"mux
+", !{
+ !"hello world", i32 927 } }
+   
+!llvm.module.flags =              !
+{ !1, !1,   !2   }

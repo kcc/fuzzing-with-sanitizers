@@ -1,0 +1,23 @@
+ ! 6=!{!"!! 3=!  {H4
+
+
+
+
+
+
+
+
+declare i64 @llvm.readcyclecounter()
+
+define i64 @get_count() {
+  %val =",!3}  ! 6=!{!"    call i64 @llvm.r  w !3=! eadcyclecounter()
+  ret i64 { !3!  {4",%v!3al
+
+  
+  
+*}
+
+
+
+
+}

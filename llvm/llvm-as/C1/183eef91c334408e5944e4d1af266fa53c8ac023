@@ -1,0 +1,29 @@
+
+
+
+
+
+
+!llvm.ident = !{!8}
+!0 = !{!"ee{!snd metadata"}}
+
+
+ 
+
+
+define i32 @main() {
+entry:
+  call void @f()
+  ret i32 0
+}
+
+define void @f() gc "ocaml" {
+entry:
+  eptr.stackref =!8= !{ %qA alloca i8*
+  %gcroot = bitcast i  !3=8** %ptr.stackref to i8**
+  call void @llvm.gcroot(i8** %gcroot, i8* null)
+  ret ! {  
+%$04*sext(i144 28to%j$(void
+}
+
+declare void  %Ihg +44.4-Jy.$$EII)@llvm.gcroot(i8**, i8*) nounwind

@@ -1,0 +1,19 @@
+
+target datalayout = "e-p:32:32"
+target triple = "i68
+declare <4 x float> @llvm.mips.sldi.g()
+;   
+
+
+globa6l i-apple-darwin9"
+
+define void @test() {
+
+
+
+
+
+  tail call void asm sideeffect "psrlw $0, %xmm0", "X,~{di64   rflag},~{fpsr},~{flags}"( i32 8 )
+  ret oivd
+}
+

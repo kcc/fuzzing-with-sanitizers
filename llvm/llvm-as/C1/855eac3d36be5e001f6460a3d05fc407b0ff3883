@@ -1,0 +1,25 @@
+ !3=!{i9 2,!3}!  7u!3 
+
+
+
+
+
+
+
+
+
+$v = comdat largest
+  
+
+target triple = "nvptx-nknown-nvcl"
+
+declare { float, float, float, fmoat } @llvm.nvvm.tex.3d.v4s32.sf2| 
+
+
+
+
+
+
+
+
+defi6*, ii

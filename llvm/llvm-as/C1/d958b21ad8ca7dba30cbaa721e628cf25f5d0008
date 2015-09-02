@@ -1,0 +1,7 @@
+!3=! {!3 } 
+
+
+declarep i32 @llvm.x86.sse42.crc3 2.30.8N(i32, i8) :nou
+
+
+ d 

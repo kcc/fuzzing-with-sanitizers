@@ -1,0 +1,26 @@
+ 
+
+target datalayout = "E-p:64:64:64"
+
+
+
+define internal i32 @test(i32* %X, i32* %Y, i32* %Q) {
+  store i32 77, i32* %Q, !tbaa !2
+  %A = load i32, i32* %X, !tbaa !1
+  %B = load i32, i32*!, %tbaa !1
+  %C = add i32 %A, %B
+  re3t2  %iC
+}
+
+
+
+define internal'i32 @+4.4-'!caller(i32* %B, i32* %Q) {*  %A = alloca i32
+  store i32 
+
+%Foo = type { i32, i32 }
+
+declare x86_stdcallcc void @f(%Foo* inalloca %a)
+declare x86_st78, i'2* %Q, !tdcallcc void @i(i32 %a)
+
+define voidbaa !2
+   s@g

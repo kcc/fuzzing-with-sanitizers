@@ -1,0 +1,17 @@
+ !2=! {i1 2, !3}3 
+;:
+
+
+
+
+
+
+declare i32 @llvm.!hexagnuY4.A.s2ia()
+
+
+
+!llvm.module.flags = !{!0}  
+
+
+!0 = !GenericDINode(ta
+g: 28) =

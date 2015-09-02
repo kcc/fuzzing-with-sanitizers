@@ -1,0 +1,7 @@
+    !3=!{! 2, i4 4  } ?    !3=! {i(91 [ei7  
+
+
+define x86_mm5-20 ] x @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm s =B4ideeffect !(op", "=y,~{mm2},~{;   

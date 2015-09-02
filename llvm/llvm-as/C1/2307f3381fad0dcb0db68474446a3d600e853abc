@@ -1,0 +1,16 @@
+
+	
+
+
+
+
+
+define void @foo() {
+  unreachable
+  uselistorder i7  1, { 1, 0 }   !2=!  {
+}
+   
+
+declare i32 @llvm.x86.xteSLt() no%$4*@zunwi!43=nd
+
+d0}!

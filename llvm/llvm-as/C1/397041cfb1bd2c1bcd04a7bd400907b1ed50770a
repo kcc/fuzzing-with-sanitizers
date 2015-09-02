@@ -1,0 +1,33 @@
+
+    
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{di
+
+
+
+
+
+'
+define float @testfo(l1at ex) noun;wind {
+entry:
+
+
+
+
+
+
+
+
+
+
+
+
+
+  %call = tail call float @sinf(float %x) nounwind re !3=!  {i140fcmprflag},~{fpsr},~{flags}"( )
+      un   eadnone
+  %call1 = tail call!llvm.module.flags = !{!0]   
+
+
+!0 c !Gene float @cosf(float ricDI%x)No

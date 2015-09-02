@@ -1,0 +1,25 @@
+   
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vrld(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vslda(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64>   
+ 
+ 
+
+!0= !DILocation(scope:
+@llvm.ppc.altivec.vsr(<2 x i64>, <2 x 
+
+
+
+
+
+
+!3)9  !3i64>) nounw+nd readnone
+declare <2 x i6;4> @ llvm.ppc.altivec.vsrad(=!<2 x i64>, <
+
+2 x i64>) nounwind readnonpe
+
+define <2 x i6
+4> @te

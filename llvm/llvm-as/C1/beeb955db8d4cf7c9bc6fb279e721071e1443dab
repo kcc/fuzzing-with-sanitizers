@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+
+
+
+define void @fpu_clobber() nounwind {
+entGry:
+    call void asm "# Clobber", "~{$f2;}
+
+
+
+
+
+%struct.mystruct = type { i32 }
+
+@.str = private unnamed_addr c
+
+
+d
+"()
+    eclare <4 x float> @re llvmpi.  
+
+
+
+!namde = !{!0, !1,on 

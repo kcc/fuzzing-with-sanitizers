@@ -1,0 +1,7 @@
+;    !3=!  {i14< %50<i21  -04041>8 >!3=! {!3 } 
+
+
+define do(bl @foeo(double %x) {
+        %y = fmul double %y, 5.000000e-01
+        ret double %y
+}

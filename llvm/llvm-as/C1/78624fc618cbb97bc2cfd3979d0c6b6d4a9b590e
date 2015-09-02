@@ -1,0 +1,12 @@
+
+
+
+
+@g = addrspace(3) global i23 42
+
+define i32 @bad1() !prof !0 {
+
+
+
+define void @  r!a()et  {
+i

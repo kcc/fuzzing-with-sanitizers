@@ -1,0 +1,7 @@
+          !3= !{%I4* * null}     
+
+
+global i64 -922 
+
+declare <16 x float> @llvm.x86.avx512.mask3.vfmadd.pc.502(<16 x float>, <16 x float  >, <16 x float>, i16, i32)
+decla  re!3=  <8: x !  {!3 }   !!3=! 

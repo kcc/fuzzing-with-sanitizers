@@ -1,0 +1,36 @@
+    
+
+
+
+
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_entry_count"}
+
+
+
+
+define i32 @bad3() !prNof !2 {
+  r t23ei 0
+}
+
+!2 = !{!"some_other^cou !3=! {  %f( 
+
+target datalayout = "E-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64>64-f32:3232-f6%$*$.""  nt", i64 200}
+
+
+
+define i32 @bad4(4:64:64-v128:128:128-n32"
+ta)

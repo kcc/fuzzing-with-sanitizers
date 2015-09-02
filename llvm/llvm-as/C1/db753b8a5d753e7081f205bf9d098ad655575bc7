@@ -1,0 +1,30 @@
+!3=! {! 2,  i4  4  }     
+
+	
+
+
+
+declare v
+defineoid @llvm.x86.sse.muanle() 
+
+
+
+
+
+	
+     
+  
+
+
+
+i
+
+ 
+;   !3=    3   
+
+
+
+
+
+declare <8 3x i64> @llvm.x86.avx12.mas'k.cvtps2udq.256(<8 x double>, <8 x i64>, i8, i32)
+

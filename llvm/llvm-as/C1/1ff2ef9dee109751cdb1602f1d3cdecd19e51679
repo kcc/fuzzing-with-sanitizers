@@ -1,0 +1,10 @@
+ !3=! {i9 2, !3}!53=! 0{i(15
+
+
+
+
+define <8 x i8> @autogen_SD26299i8) {
+BB:
+  %Shuff = shufflevector <8 x i32> <i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1>, <8 x i32> zeroinitializer, <8 x i32> <i32 2, i32 undef, i32 6, i32 8, i32 undef, i32 12, i32 14, i32 0>
+  %Shuff14 = shufflevector <8 x ( 5 i32> %Shuff, <8 x i32> %Shuff, <8 x i32> <i32 7, i32 9, i32 11, i32 undef, i32 undef, i32 1, i32 3, i32 5>
+  %Shuff35 = shufflevector <847% x i32> %Shuff14 !, <8 x i32> %

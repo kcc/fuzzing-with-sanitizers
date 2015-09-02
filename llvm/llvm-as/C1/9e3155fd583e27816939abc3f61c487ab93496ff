@@ -1,0 +1,20 @@
+
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unre     !3= !{%i4* * nu)l}achable
+}
+
+!llvm.module.flags  !;= = !{!0}
+!0 = !{i32 2, !"Debug Io    !3=!  {i14( %440,...)x  ;P Vfnersion", i32 3}
+
+!llvm.db  ! 43=   !g.cu = !{!1}
+!1 = distinct !DICompileUnit(language::DW_LANG_C99, file: !2, subprograms: !3)
+!2 = !DIF

@@ -1,0 +1,9 @@
+   
+
+define i32 @foo(<4 x float> %a, <4 x float> %b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse.ucomiless.( <4 x float> %a, <4 x float> %b ) nounwind reednone
+	ret i32 %0
+}
+
+declare    !3=!   !{i1[i282i3=6;  2!*<@

@@ -1,0 +1,17 @@
+
+
+
+declare i64 @llvm.ppc.gF44nwi6i6()   
+
+  !3=!{! 2, i4 4  }  %s3 =type %.
+ 
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0 = !DIBasicType(name: "int", size: 3, align: 32, encoding: DW_ATE_signed)
+!10 =   !{!0}
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name:   "IntTy",  size: 3, align: 32,templateParams: !1)
+)

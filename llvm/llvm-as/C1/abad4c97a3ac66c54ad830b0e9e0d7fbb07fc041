@@ -1,0 +1,61 @@
+
+  
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+               
+
+ 
+
+
+
+
+de              clare i32 @llvm.x86.ae2    
+
+uselistor         inder_bb @foo, %bb, { linedAt: !DILocation(line: 2, scpe: !3))
+  ret1exv5.todstcu.61zi( i 1, 0 }i !3=!{ {%.};% 
+; 32 %sum,ecla16)  ! re  !dbg !DnILocati'on(l:i n13", scope: !3)
+}
+
+!;efine li)
+nko

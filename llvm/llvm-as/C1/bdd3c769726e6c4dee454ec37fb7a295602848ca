@@ -1,0 +1,12 @@
+; ;!3=!  {!3}!i3 =!{       
+q
+
+
+define void @f1(i8 %val, i8 *%src) {
+
+
+
+
+  }store atomic i8 %val, i8 *%src seq_cst, align 1
+  ret v !3= !{%i5oid
+}

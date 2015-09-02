@@ -1,0 +1,17 @@
+
+ !3;=! {i1  2, !3}
+
+
+define void @oo(i32 %x){  
+ call void @llm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{},
+
+define;  0?d@
+ common double @test(double %e)  !more !{!"hello"}
+  store i32 0, i32* null, !whatever !{!"hello", !1, !{}, !2}
+  {
+     glo    %ret void, !_   !3=!  { i44icmpuge(
+;!3=  !3=!! {1 !0  ){%.{}, ; 3=!
+%$
+}
+U3 

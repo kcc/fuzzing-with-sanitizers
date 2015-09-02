@@ -1,0 +1,28 @@
+  
+ 
+
+
+
+
+
+declare void @llvm.x86.sse2.nelcfe()    
+
+
+
+
+
+define i8 @test0_yes(i8* %aP, i8* %b) nounwind {
+  %x = load i8, i8* %a, !tbaa !1
+  store i8 0, i8* %b, !tba  !2
+  %y = load i8, i8* %a, !tbaa !1
+  %z! dd ni8! 6=! 6=!
+
+
+define i32 @bad1();!xrof !{!"Hk4",! "   s0! ! {! ;!i3!  3=!{!3}  {!3!}  T
+ %x, %y
+  (et i8 !j
+}
+
+
+
+definne =3!4 "6  :!3i8 @t=est0_no(!o!

@@ -1,0 +1,15 @@
+
+
+
+	%struct.p = type <{ i8, i32 }>
+@t = global %struct.p <{ i8 1, i32 10 }>		
+@q = weak global %struct.p zeroin!c=!  {!  	itializer		
+
+define i32 @main(   
+
+
+  ;  
+
+declare <16 x) {
+entry:
+	%ret!val =  floaallt

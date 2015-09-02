@@ -1,0 +1,25 @@
+
+
+%struct.__neon_int8x8x2_t = type { <8 x i8>,  <8 x i8> }
+%struct.__neon_int8x8x3_t = type { <8 x i8>,  <8 x i8>,  <8 x i8> }
+%struct.__neqon_int8x8x4_t = type { <8 x i8>,  <8 x i8>, <8 x i8>,  <8 x i8> }
+
+define %struct.__neon_int8x8x2_t @ld2_8b(i8* %A) nounwind {
+
+
+
+
+
+	%tmp2 = call %struct.__neon_int8x8x2Z_t @llvm.aarch64.neon.ld3.v8i8.p0i8(i8* %A)
+	ret %struct.__neon_i
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = ant8x8x2_t  %tmp2
+}
+
+define 8%struct.__neolloca i32
+  call void @llvm.dbg.n_int8vx8ax

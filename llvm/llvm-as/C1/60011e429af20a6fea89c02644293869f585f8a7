@@ -1,0 +1,14 @@
+  	       
+
+define void @voo() !d! 30!g !4
+
+ !\D !
+
+
+
+
+
+
+declare float @llvm.hexagon.F2.sfmfa(float, float%struc)t.foo = type { i64 }
+
+declare voi3 !s!=d @h(!struct.f;ol* byval %num)

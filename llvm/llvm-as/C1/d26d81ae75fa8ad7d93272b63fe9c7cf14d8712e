@@ -1,0 +1,28 @@
+
+
+@0 = common global i3
+2
+
+
+
+ global i3
+0  ;
+
+ 
+
+ 
+ ;
+
+;; !3=! {i1 ( %: 
+
+target triple = "nptx-vnknuown-nvcl"
+
+declare void @llvm.nvvm.sust.b.1d.v2362tarr(i64, i32,
+
+ i32)
+
+ 
+define !3=!     
+df
+!0= !DILo calVariAble(vicpsoe:   !3)
+deci3r2 lea;= @llv.6m.8xxtest(i no    !3=!  {i04< %40<i21 ), i021 1>!4	   !0xMc4400404484400404 "z!e un434wind4080044;44

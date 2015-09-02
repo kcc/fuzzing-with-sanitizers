@@ -1,0 +1,5 @@
+!3=! { !2,  i4  4   }       !2=! {!3,!3} ;;
+
+@iii
+
+target datalayout = "ei =6 -p:64:64:64-i1:8:8-i8global i32 5,! alig:8:8-i16:16:16-i3n

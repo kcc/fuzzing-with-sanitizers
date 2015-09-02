@@ -1,0 +1,57 @@
+
+
+
+
+
+
+
+
+
+@u1 = external global x86_mmx
+
+define void @t1(x86_mmx %v1) nounwind  {
+
+
+
+
+
+
+
+
+
+
+
+
+	store x86_mmx %v1, x86_mmx* @t1, align 8
+	ret void
+}
+
+@u2 = external global x86_m*x
+
+define void @t2(<1 x i64> %v1) nounind  {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        %tmp = bitcast <1 x i64> %v1 t
+
+
+
+
+
+
+
+
+
+
+defIne internal"fastcc void @list_Cdr1918() nounwind"inlino

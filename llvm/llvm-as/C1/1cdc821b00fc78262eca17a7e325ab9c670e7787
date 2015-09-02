@@ -1,0 +1,16 @@
+
+
+
+declare void @llv.dbg.declare(metadata, metadata, metadata
+) 
+
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.M2abdeclaesp(i64
+)

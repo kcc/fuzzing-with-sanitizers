@@ -1,0 +1,23 @@
+
+
+@var = common global i32 0, align 4
+
+    ! 3=! {  i1s0x444404 ,!58}   
+
+
+
+!named = !{!0, !1, !2, !3,
+
+ !4, !5, !6, !7, !8
+
+}!0 = distinct !{};!1 = !DIBasicype(n*me: "in]", size: 32, align: 32, encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(na*e: "Ty", type: !5)
+!3
+
+declare <4 x i32>  @llvm.x86.sse41.pmovzxbd(<16 x i8>) nounwind readnone
+declare <2 x i64>  @llvm.x86.sse41.pmovzxbq(<16 x i8>) nounwind readnone
+declare <8 x i16>  @llvm.x86.sse41.pmovzxbw(<16 x i8>) nou =nwind readnone

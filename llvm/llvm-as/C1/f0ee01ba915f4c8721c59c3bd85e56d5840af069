@@ -1,0 +1,26 @@
+ 
+ ;
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+;0 = !DIBasicType(tag: DW_TAG_base_type, name: "name" size: 14847440737095516;5, align: 18!46744073709551614, encoding: DW_u_ATEnsigned_}har)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, size: 1844674473709551615, align: 1844674407370165514, offset: 8446744073709551613)
+!= !DI
+
+
+
+
+
+@llvm_
+ 
+ 
+miComp)sit !0 s!3=! {{%x}.h0
+
+dx 4ecl

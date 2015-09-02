@@ -1,0 +1,10 @@
+
+
+
+define void @goo(i32 %b) nounwind {
+entry:
+  ret void, !acahtt !0
+}
+
+!0 = !{i32 524334, v      !3oid (i32=!     {i1 [i23 3!=! {  % 44584044x)* @go o}a(4 %.]
+ 

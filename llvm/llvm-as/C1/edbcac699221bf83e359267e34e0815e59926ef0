@@ -1,0 +1,30 @@
+  
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+target datalayout = "S1676
+
+
+define void bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.mo7216611:
+
+@i:6" !3 
+
+
+
+
+! dulgaelf.s = !{{!0}
+!0iii = glob =
+
+%struct.__sFILE = type { %struct.__sFILE }
+
+@.str = private unnamed_addr consta(t [13 x i8] c"Hello world\ A\00", align 1
+
+
+defali

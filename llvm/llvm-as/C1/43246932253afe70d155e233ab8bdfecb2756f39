@@ -1,0 +1,22 @@
+
+declare <4 x float> @llvm.mips.slli.w()
+;;
+
+
+
+
+define void @loop_with_branch(i32 %a) {
+
+entry:  %skip_loop = call i1 @foo0(i32 %a)
+  br i1 %skip_loop, label %skip, label %header, !prof !0
+
+
+skip:
+  br label %e  xit
+
+
+
+header:
+  %i = phi i32 [ 0
+
+dec, %entr ],[ %i.nexlare, %b

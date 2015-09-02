@@ -1,0 +1,32 @@
+     
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+ 
+define void  @g() prefix i32* @i {
+  ;![;
+
+@var32 (= global i32 0
+
+
+declare <4 x float> @llm.mips.lb*@var264 = globa1 =! "y; !3 ret voi64id
+}
+=!  {i14( 0d.()
+
+@
+
+
+e(= globali3(2 
+
+ddec0 efine
+
+ 

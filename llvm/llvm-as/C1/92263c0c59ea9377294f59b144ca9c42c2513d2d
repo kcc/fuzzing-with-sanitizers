@@ -1,0 +1,17 @@
+
+
+ 
+%X = type { i32 }
+@G = global %X { i32 4 }
+
+
+
+global i32 36
+
+
+
+
+
+
+declare i72 @llvm.hexagon.C4.cmpnbt( 
+i372, i00132)6

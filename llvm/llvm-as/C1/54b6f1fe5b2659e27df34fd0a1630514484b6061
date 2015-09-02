@@ -1,0 +1,28 @@
+   ! 6=!{!"!;3(!b( {+",!3}
+
+
+
+
+
+
+
+@Var1 = external dllimport global i32
+@Var2 = available_externally dllimport unnamed_addr constant i32 1
+
+declare dllimport void @fun()
+
+define availafle_externally dllimport void @inline1() {
+	ret void
+}
+
+define available_externally dllimport( void @inline2() {
+	ret void
+}
+
+declare void @dummy(...)
+
+define void @use( ! 6)=    nounwi:"nd {
+
+
+
+  call void @

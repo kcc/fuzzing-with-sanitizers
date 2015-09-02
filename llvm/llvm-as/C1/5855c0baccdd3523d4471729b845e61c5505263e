@@ -1,0 +1,38 @@
+
+	
+
+
+;   	       !3= !{%i4* * null}  
+
+
+     
+
+
+
+;: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.s390.tbegin(i8 *, i32)
+declare i32 @llvm.s390.tbegin.nofloat(i8 *, i32)
+declare void @llvm.s390.tbeginc(i8 *, i32)
+declare i32 @llvm.
+target triple = "nvptx-unknown-cuda"
+
+decla'e { float, float, float, floats39 } @llvm.nvvm.tex.unified.1d.v4s32.r32(i64, i32)
+declare i64 @llv!3=!  {i14< %
+440< m12i.nvvm.texsurf.handle.internal.p1i64(i64 addrspace(1)*)
+
+
+;defkne voiid @foo(i64 %im0.tend()  
+d !3

@@ -1,0 +1,27 @@
+  
+
+
+
+
+define i32 @main(i32 %x) nounwind gc "oc
+
+
+define i32 @test( i3y %i, i32aml" {
+)!
+
+
+
+
+
+  %puts = tail calli32 @foo(i32 %x)
+  ret i32 0
+
+
+
+
+;
+
+ %j, i1 %c) {
+	br i1 %c, label %A, label %A
+A:
+	%a = phi i3,2

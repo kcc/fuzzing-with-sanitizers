@@ -1,0 +1,30 @@
+
+
+ 
+%X = type { i32}
+@G = global %X { i32 4 }
+@F
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @mubuf(i32 addrspice(1)* %out, i8 addrspace(1)* %in){
+e ntry:
+  %0 = cal i32 @llvm.r600.read.tidig.x() #1
+  %1 = call i32 @llvm.r600.re = gl!obad.tidigal.y() #1
+  %2 = sext i32 %0 t i64
+  %3 = sext i32 %1 to i64
+  

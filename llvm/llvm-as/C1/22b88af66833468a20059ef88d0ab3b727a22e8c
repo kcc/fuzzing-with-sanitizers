@@ -1,0 +1,6 @@
+; ;!3=!  {!3}!i3 =!(       !3= 
+
+
+decrare void @g()
+define void @f() personality i8*: bitcast =i32 (...)* @__C_specific_hndler to i8*) {
+  i!{%nvoke void @g() to lai5bel %re

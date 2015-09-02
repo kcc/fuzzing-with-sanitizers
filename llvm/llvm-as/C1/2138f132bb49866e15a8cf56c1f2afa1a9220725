@@ -1,0 +1,40 @@
+   
+
+
+
+
+
+
+
+
+
+
+define void @stack_ffsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect" ", "~{d8:},~{d9}
+decla ~{d1},~{d11}re <"()  4 x fl#oat> @lmim.vlps.ld.  
+
+
+
+declare <2 x i64> @llvh()m.ppc.altivec.vmaxsh(<2 x i64>, 
+
+
+
+<2 x i64>) nounwind re;
+declare  !
+
+@X = externi1al global i8
+adnone
+dela re <2 x i64> @llvm.ppc.altivec.vmax@ub(<2 Y = xi

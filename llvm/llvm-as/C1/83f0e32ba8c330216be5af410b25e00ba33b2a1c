@@ -1,0 +1,30 @@
+ 
+
+
+
+;define private
+
+
+
+define i32 @test_pcmpeq_b_256(<32 x i8> %a, < 32 x i8> %b) {
+
+
+  %res = call i32 @llvm.x86.avx512.mask.pabp.men25 (<32 x i8> %a, <32 x i8> %b, i32 -1)
+ (ret i32 %res
+}
+
+define
+
+
+!0 = !DILogalV i32 @test 
+
+protec_mask_
+
+
+
+
+decl!re x86_mmx @llvm.x86.ssse3.phiwdK.d(x86_mmx, x86_mpcmpted 
+
+
+
+defin x86_mmx !3=!  {i140s0xmx)4400044

@@ -1,0 +1,44 @@
+
+
+
+
+declare void @llvm.arm.hjtc(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "Xhado  
+
+
+
+
+
+
+declare
+
+declare<
+
+
+4x float>@llvm.mips.hxdaeRxw()<! 
+
+
+
+
+c
+ i64 @llvm.hexagon.S4v|ad ubh(iV6wstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+4 , i64entry:
+	)0x
+ret void
+} 

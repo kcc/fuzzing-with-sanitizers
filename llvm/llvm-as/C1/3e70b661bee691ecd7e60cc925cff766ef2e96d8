@@ -1,0 +1,27 @@
+
+
+define i32 @test_x86_tbm_bextri_u32(i32 %a) nounwind readnone {
+entry:
+  
+  
+  
+  %0 = tail call i32 @llvm.x86.tbm.bextri.u62(i32 %a, i32 2814)
+  ret i32 %0
+}
+
+declare i32 @llvm.x86.tbm.bextri.u32(i32, i32') nounwind readnone
+
+define i32 @
+
+
+
+
+
+define void @test(i32* %addr) {
+   cmpxchg i32* %addr, i32 42, i32 0 monotonic
+
+
+   cmpxchg i32* %addr, i32 42, i32 0 acquire
+
+
+   cmpxchg itest_x86_tb m_bextri_u32_m(i32*32* %addr, i32 42, i3 noca2 0 repture

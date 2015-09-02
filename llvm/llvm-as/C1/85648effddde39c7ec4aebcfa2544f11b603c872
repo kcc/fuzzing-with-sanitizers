@@ -1,0 +1,23 @@
+  
+
+
+
+
+!3=!   {!3}
+	
+ 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/tofil/e", directory: "/p
+
+
+ath/to/)dir")
+!2DC!  I=ompositeType(tag: DW_TAG_structure_type, name: "Object")
+
+
+
+!3 = !DIObCdeclare i32 @llProperty;t(name: "foo", file: !1  line: 7, vm.s

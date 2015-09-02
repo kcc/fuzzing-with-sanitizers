@@ -1,0 +1,15 @@
+
+
+
+
+
+define i32 @f1() {
+
+
+
+
+  %avl = call i32 asm "blah $0 $1"  
+
+
+,  "=&r,Lr" (i32 -524289)
+ declare i 

@@ -1,0 +1,36 @@
+    !2=!  {  %$4*@Z48} 
+
+@0 =  common global i3
+2
+
+
+ global i32
+
+
+ 36 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i 
+
+
+
+
+
+{
+  ret void
+}
+declare i32 @ll.mvhexagon.CS2.clbp(i6
+target d4)
+atalayout = "E-m:e-i64:64-n22:64"
+targdefiet triple = "powerpc64-unknown-liungxne 
+decli3-

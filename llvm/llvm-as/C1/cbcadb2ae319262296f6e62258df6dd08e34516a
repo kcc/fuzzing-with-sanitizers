@@ -1,0 +1,19 @@
+ ; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "-DNDEBUG", incl 
+
+
+!0 = !DITemplateValueParameter(tag: DW_TAG_template_va~lue|!rameter,
+udePath: "/usr/include", isysRoot: "/")
+
+!3 = !DI odule(scope:  !3=!{  i1!0, nam e  : "Module"4< %4440086

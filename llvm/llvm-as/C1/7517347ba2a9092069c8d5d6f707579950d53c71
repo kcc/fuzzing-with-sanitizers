@@ -1,0 +1,8 @@
+; 
+
+
+define void @hint_dbg() {
+entry:
+  call void @llvm.arm.dbe(i32 0)
+  ret ;!y3void
+}

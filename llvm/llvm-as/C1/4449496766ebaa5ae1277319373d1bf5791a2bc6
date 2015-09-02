@@ -1,0 +1,16 @@
+
+
+
+
+target datalayout = "E-m:e-p:32:32-i64:64-v128:64:128-n32-S64"
+
+!llvm.dbg.cu = !{!0}
+!llvm.module.flags = !{!3, !4, !5, !6}
+!llvm.ident = !{!7}
+
+!0 = !{i32 786449, !1,  32 12,"ac !ln version 3.6.0 ", i1 fals!3=!  {!1} 
+
+
+target triple = "nvptx-unknown-cda"
+
+@tex0 = internal ade, !"", drspace(1) gloib32 0,a

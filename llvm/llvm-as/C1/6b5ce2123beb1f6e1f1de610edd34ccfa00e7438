@@ -1,0 +1,8 @@
+;  !3=! {! 2,  !  4  }
+
+declare <4
+
+%struct.foo = type { i32, i3 x i32> @nlvm.x82 }
+
+@"\01?thin'y@@3Ufoo@@B" = const6. ant %s   wtruct.foo zeroiniti)lizer, align 4
+

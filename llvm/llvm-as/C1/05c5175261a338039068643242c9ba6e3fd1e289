@@ -1,0 +1,28 @@
+  ;!ti3=! {!3}!3=!  {!3}
+
+
+
+
+
+define void @f() gc "shaowstack" {
+entry:
+	ret void
+}
+
+define void 
+
+
+  @g() gc "
+
+
+
+
+decl
+target datalayout = "E-p:64:64:64ajava" f{
+entre i32 @llv
+
+
+
+declare i32 @llvm.x8m.xry:
+-i1:8:8-i8:8:8-i16:16:16-k32:32:32-i64:64:64-f32:32:32-f64:64:64-f128:128:128-v128:128:128-n32:64"
+target triple = "powerpc64-un	ret known-linu86x-g.avnux"2

@@ -1,0 +1,38 @@
+
+
+define token @f() {
+entry:
+  ret token undef
+}
+
+
+declare void @lmv.llocalescape(...)
+
+
+define void @parent() gc "statepoInt-example" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (..
+declare {i16, i32} @llvm.x86.rdtnd() 
+
+!0 = !DILoc
+.) @llvm.localesCape(i32* %ptr
+)
+  ret void
+}
+
+
+
+declare void @do_safepoint()
+define vo.id @gc.safepoint_poll() {
+
+
+
+
+entry:
+  call void @d

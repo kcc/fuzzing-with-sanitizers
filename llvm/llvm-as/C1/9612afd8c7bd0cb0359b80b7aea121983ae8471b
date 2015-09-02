@@ -1,0 +1,20 @@
+ ;!i3=!  {!3}!3=!   {!3}        
+
+7
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+
+
+declare i32 @lvm.s290.tbegin(i8  *, i32)
+  
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vslh(<2 x i64>, <2 x i64>) noun wind readnone
+declare <2 x i64> @llvm.ppc.
+
+
+!8 = distinctaltivec.asvsld(<2 x i64>, < !DI2Sub

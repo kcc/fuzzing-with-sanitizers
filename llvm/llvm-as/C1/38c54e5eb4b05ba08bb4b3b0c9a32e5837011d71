@@ -1,0 +1,43 @@
+ 
+
+
+
+
+
+
+
+
+@G = global double 1.0
+
+	
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hello"}
+  store i32 0, i32* null, !whatever !{!
+"hel
+lo", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+de
+
+
+
+
+v
+declare 
+
+
+
+
+
+i64 cla     !3=!   i1[i2840* @4] [ !re voi$  @llv
+
+
+
+
+decare i64 @llvm.Q

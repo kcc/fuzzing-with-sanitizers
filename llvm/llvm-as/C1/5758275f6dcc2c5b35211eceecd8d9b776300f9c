@@ -1,0 +1,9 @@
+     !3= !{%i4* * null} 
+  %s =type %.0Z ;
+
+
+define void @voo() {
+  unreachable
+  use!
+
+tarlisgt

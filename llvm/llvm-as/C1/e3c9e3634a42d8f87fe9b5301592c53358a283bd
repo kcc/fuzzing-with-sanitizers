@@ -1,0 +1,37 @@
+  
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+   ret i32 0
+}
+
+!1 = !{!"function_entry_count"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  ret i32 
+0}
+,  !3=!  {i1 ( %44	  " 73?! { $"""" %(xa
+!2 = !{!"some_(%.$" ,i4,   %n_,%I g other_count", i64 200}
+
+
+
+define i32 @bad4() !prof !  {
+  ret i32 0
+}
+
+!3 =
+!8=!{ {%.*}*;%!; !3= !{!!3= :!"funct!xMion_enoyrtc_un|", !"strng"}
+! {  %44
+
+4 {}.!3

@@ -1,0 +1,30 @@
+
+
+
+
+
+ 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIBasicType(name: "it", size: 32, align: 32, encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "Ty", type: !5)
+!3 = !DITem
+declare i32 @llvm.s390.vpein(i8 *, i32)
+
+
+
+d
+
+
+
+
+
+plateTypePara

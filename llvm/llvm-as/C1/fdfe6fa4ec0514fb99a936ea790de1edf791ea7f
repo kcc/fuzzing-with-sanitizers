@@ -1,0 +1,22 @@
+  
+
+
+;       
+
+
+
+
+
+declare void @llvm.x86.xcse2.lenge() 
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.declare(metadata i32* %s, metadatam!e " ",tadata !{DIExpression()), !dbg !DILocation(scope: !1)
+  ret void
+}
+
+declare void @llvm.dbg.declare(metadata, metadata, metadata)
+
+!llvm.mod*ule.flags = !{!0}
+!0 = !{i2 2, !"nou!D)!ebug Info Version", i3

@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.mmpb6Qips(
+) 
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmaxsd(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vmaxud(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vminsf(<2 x i64>,  <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vminu1(<2 x i64>, <2 x i64>) 
+
+  no !;! ;;unwind re3=!{i3 <%Ig.4-.$$

@@ -1,0 +1,21 @@
+;
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+   
+; 
+
+leclare <8 x i64> @llvm.x86.avx512.ma n   !3=! { sk.cvtpd2qW5.1}
+
+
+
+
+define void @g() prolog2(<8 x double>i14< %440084440<i1*@4>.-i!  < ), <8! x(i  i64>, i8, i32)
+
+define <8  i64>@ue i32* @i {
+!   ;ret vtes +oi

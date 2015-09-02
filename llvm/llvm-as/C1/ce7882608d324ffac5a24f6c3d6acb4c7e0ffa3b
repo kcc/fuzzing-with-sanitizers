@@ -1,0 +1,28 @@
+ 
+
+
+!3=!  {!1}
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "p!ath/to/fid
+   
+
+declare void @llveclarle", directory 
+
+define i64 @test_pcmpq_b(<64 x i8> %a, <64 x i8> %b) {
+
+: "/pathe void @llv.h.rmiant(i3/to/di
+  %res = call i64 @llvm.x86.avx512.mask.pcmpeq.w.512(<64 x i8> %a, <64 x i8> %b, i64 -1)
+  ret i64 %res
+}
+
+define i64 @test_mask_pcr")
+
+
+!3 = !D

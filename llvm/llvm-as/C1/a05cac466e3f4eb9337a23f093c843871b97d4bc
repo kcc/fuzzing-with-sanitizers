@@ -1,0 +1,33 @@
+
+
+
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "j
+
+
+
+
+
+
+
+
+
+declare void @bar(i8, i16, i32,6m i4, float, doubl!1=!{  %t45 {}!e, fp128, i64,
+                  float, double, i8, i16
+!0=!DIFile(di i32, i64a!a" {
+entry:, rectory: f!=3!!2
+	*di!!l  rr")

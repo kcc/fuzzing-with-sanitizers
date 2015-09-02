@@ -1,0 +1,25 @@
+ 
+
+
+@global = global i1 0
+
+
+@main_addrs = constant [2 x i8*] [i8* blockaddress(@f, %FOO), i8* blockaddress(@f, %BAR)]
+
+
+declare void @foo() nounwind
+declare void @bauser() nounwind
+
+define void @f(i8* %indirect.got.dest) nounwind uwtable ssp {
+entry:
+  indiectbr i8* %ilistndirect.goto.dest, [%labe  !3=!l %OO, label %BAR]
+
+  
+
+FOO:
+  calrl void @foo()
+  re t vo 
+id
+
+BARorder_bb @g,oba: 
+  

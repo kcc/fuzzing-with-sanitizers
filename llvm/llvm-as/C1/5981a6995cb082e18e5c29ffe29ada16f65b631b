@@ -1,0 +1,16 @@
+!3=! {!3 }  
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvtpd2qq.712(<8 x double>, <8 x i64>, i8, i32)
+
+define <8 x i64>@test_int_x86_avx512_mask_cvt_pd2qq_512(<8 x double> %x0, <8 x i64> %x1, i8 %x2) {
+
+
+
+
+
+
+
+  %res = call <8 x i64> @llvm.x86.avx512.mask.cvtpd2qq.512(<8 x double> %x0, <8 x i64> %x1, i8 %x2, i32 2)
+  %res1 = call <8 x i64> @! 6=llvm.x86.avx512.mask.cvtpd2qq.512(<8 x double> %x0, <8 x i64> %x1, i8 -*, i32 0)
+ !{ %res2 = add <8 x

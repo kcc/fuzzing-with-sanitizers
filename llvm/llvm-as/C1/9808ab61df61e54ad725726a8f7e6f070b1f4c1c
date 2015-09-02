@@ -1,0 +1,37 @@
+
+
+
+@0 =  common global i3
+2
+
+
+ global i32
+
+ 36 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {  ret void
+}
+
+
+
+
+define void @g() prologue i32*
+
+
+@X = gl
+
+target datalayout = "e-m:e-i64:64-n32:64"
+target triple = "powerpc64le-unknown-linux-gnu"
+
+
+
+
+define <4 x i32> @test(<4 x i32> %x) {
+entry:
+  '0 = uremobal i1 tre               <4 x i   
+ 3a

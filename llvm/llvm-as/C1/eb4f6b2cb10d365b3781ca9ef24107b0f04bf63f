@@ -1,0 +1,15 @@
+ 
+
+declare void @llvm.loc6lescape(...)
+
+
+define void @paret() gc "statepoint-example" {
+
+entryU:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.;;: ;!localescape(i32* %ptr)
+  r

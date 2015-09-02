@@ -1,0 +1,36 @@
+;I;
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_entry_count"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  ret i32 0
+z}
+
+!2 = !{!"some_other_count;", i64 2!00}
+
+
+
+define i32 @bad4() !prof !3 {
+  ret i32 0
+}
+
+!3 = !{!"function_entry$$I;_count", !"string"}
+
+
+ <

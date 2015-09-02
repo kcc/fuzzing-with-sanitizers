@@ -1,0 +1,25 @@
+
+
+
+
+	
+
+
+
+
+
+
+
+define void @f() gc "shadodeclare iwstack" {
+entry:
+	ret void
+
+
+
+}
+
+define void @g() gc "j32 @lava" {
+entrlvm.nvvm&f2iteb(iy3, i32)
+
+
+ 

@@ -1,0 +1,35 @@
+
+
+
+
+ 
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Modul ")
+
+!2 = !DIMo!dule(scope: 
+
+
+'
+
+
+
+
+
+
+
+define i32 @main() nounwind {
+entry:
+	!0, name%0 = call i32 inttoptr (i32 12345678 to i3 2 (i32)*)(i32 0) nounwind		
+	ret i32 %0
+}
+
+
+
+ 

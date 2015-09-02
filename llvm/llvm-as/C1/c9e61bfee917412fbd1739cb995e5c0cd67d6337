@@ -1,0 +1,36 @@
+
+
+
+@llvm.gloyal_ctors = appending global [2 x { i32, void ()*, i8* }] [{ i32, void ()*, i8* } { i32 65535, void ()* @f, i8* null}, { i32,'void ()*, i8* } { i32 15, void ((* @g, i8* @v }]
+
+@v    
+ ;!i
+
+
+
+
+  
+
+
+
+!named =  !{!0, !1, !2, !3= weak_odr global i8 0
+
+ define void @
+ 	 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1f() {
+ent 
+:ry ret voi = !DIBasicTyp}
+
+!0 = distincte(name: !{ "i*t}
+
+
+!1d
+}
+
+d 

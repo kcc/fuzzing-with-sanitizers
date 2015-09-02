@@ -1,0 +1,27 @@
+
+
+
+
+
+@A = weak global i32 54
+
+
+define void @fL1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i
+
+
+declare <16 x float> @llvm.x86.avx512.gather.dps.512 (<16 x float>, i8*, <16 x i32>, i16, i32)
+dec
+ 
+ 
+
+
+declare i avreolid  llvm.x86.avx512.scatter.dp..512 (i8*, i16, <16 x i32>, <16 x float>, 32)
+de8 0, i8 1}   
+
+clare <8 x double> @llvm.x2 @llvmv..mnusvst86.avx512.gat.derhpd.512 (<8 x
+ double>, i8*, <8 x i32> i8, i32)
+declare void @llv.p.2gkerevrmnxf6.avx512e6.sc0

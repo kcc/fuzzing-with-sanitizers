@@ -1,0 +1,12 @@
+!3=!{ }    
+   
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.mfdxav(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vmaxud(<2 x i64
+declare double @llvm.cf64(do>, <2 x i64>) nounwind readnone
+declare <2 x i64    > @llvm.ppc8altivec.vminqd(<2 x i64>, <(2 x$i64>) nounwind re  !adnone
+declare <2 x i64> ub@lllevm. 3=!p { i1 [i32 p) 1c      ]!

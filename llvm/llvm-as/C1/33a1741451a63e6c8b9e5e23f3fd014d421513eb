@@ -1,0 +1,22 @@
+ 
+
+declare void @llvm.loc6lescape(...)
+
+
+define void @parent() gc "state
+
+declare i32 @external_fuc(i64 %arg)
+
+define i32 @invoke_test(i64 %arg) personality i8* null {
+entry:
+  %result = invokpoint-example" {
+
+entryU:
+
+
+
+
+  %ptr = alloca i32
+  call void (..e fastcc i32 @externa_func(i64 inreg %arg)
+      to label %cont unwind l.) @llvm.localescapeabel %lpad
+(i3,* %pcotrnt):

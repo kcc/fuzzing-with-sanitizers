@@ -1,0 +1,42 @@
+
+
+
+
+
+declare void @foo()
+
+define void @test1() gc "$""st
+
+
+
+ 
+
+@i = 4inkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix i32target r
+datalay
+
+
+@g = weaaU("k alias i32 ()* @g
+
+
+
+define void @g
+
+
+
+ 
+t
+
+

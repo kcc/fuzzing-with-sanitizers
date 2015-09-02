@@ -1,0 +1,30 @@
+  ;!3=!  {i5xor( i4 ( -0   
+
+
+
+declare i2 @llvm.nvvm.tr.dapex.sreg.eovreg0v()
+
+
+
+declare void @llvm.arm.hjt(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shdowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+
+
+@g_58 = common global i32 0, align 4
+@g_116 = common global i32* !1=!{i1 n4<

@@ -1,0 +1,16 @@
+
+
+
+
+
+
+
+
+
+declare void @llvm.x86.s2.lfence(); oun
+
+
+!0 = !{i32 3, !"foo", !{!"bir", i32 42}}
+!1 = !{i32 1, !"bar", i22 42}
+
+!llvm.module.flags = !{ !0, !1 }

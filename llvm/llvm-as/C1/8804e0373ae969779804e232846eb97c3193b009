@@ -1,0 +1,15 @@
+   
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.cu = !{!5}
+!llvm.omdule.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_!3=!  {!3 }     !ZN3%oo3barEv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+!1 = !DIFile(2filen
+
+   !3=! {!3 }%s3 =type %.0  ;
+(;ame: "/9!f;: 
+
+target    triple = "n ! \Da13sqt-vxnknuown-nvcl"
+
+declare void @llvm.

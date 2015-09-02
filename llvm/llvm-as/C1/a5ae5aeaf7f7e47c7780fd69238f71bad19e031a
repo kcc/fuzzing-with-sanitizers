@@ -1,0 +1,36 @@
+
+
+
+
+
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123,i32 3}
+
+
+
+
+define i72 @bad2() !prof !1
+rt 
+a
+get !datala
+
+
+@main_addrs = #onstant [2 x i8*] [yout = "e%p:32:32:32"
+
+
+
+
+define i32 @test(i
+
+
+@foo2 = alias i3 2 (32 %ini8* blockaddress(@f, %FOO), i8* blockaddr
+
+
+
+
+
+define void @ph1(<16 x i8> addrspaess(ce(2)*@ inref,

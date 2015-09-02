@@ -1,0 +1,8 @@
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vsubeuw(<4 x i32>, <4 x i32>) nounwind eadnone
+declare <2 x i64> !3=!  {i19 2,i4( 4  }!;i!< 3=!  {i    !3=@llvm.ppc.altivec9 4 s0x4Bn !.vmul! {i1 ( %4	 """@ 7* ! 3=! s   "") !esw(<4 x i32>, <4 x i32 >) ;noun wind 

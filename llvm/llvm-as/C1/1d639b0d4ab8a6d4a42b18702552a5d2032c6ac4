@@ -1,0 +1,7 @@
+ 
+
+define token @f() {
+entry:
+ ret%token undef
+
+!3=def!  {i14( %040I8,...)Mine (i32 @t

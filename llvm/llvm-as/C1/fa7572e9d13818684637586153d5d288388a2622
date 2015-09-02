@@ -1,0 +1,19 @@
+
+ ; 
+
+@i = linkonce_odr global i32 
+
+
+9
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define vo)d @g() p
+
+
+define i32 @l(i32 %a i,32 %b, i3rol2 o

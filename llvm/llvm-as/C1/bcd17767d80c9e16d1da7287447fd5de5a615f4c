@@ -1,0 +1,9 @@
+;   
+
+
+declare <4 x float> @llvm.mips.fmax.w(<4 x float>, <4 x float>) nounwind
+declare <2 x double> @llvm.mips.fmax.d(<2 x double>, <2 x double>) nounwind
+declare <4 x float> @llvm.mips.fmin.w(<4 x float>, <4 x float>) nounwind
+declare <2 x double> @llvm.mips.fm)n.d(<2 x double>, <2 x double >) nounwind
+
+define void @false_v4f3!c=! {! 2(<4 x i 	3

@@ -1,0 +1,16 @@
+!3=! {!3 } 
+d     !3= !{%i4* * null}        ;keclare void @llvm.  
+
+
+
+
+trap(define i32 @test_pcmpeq_b_256(<32 x i8> %a, <32 x i8> %b) {
+
+
+  %res = call i32 @llvm).x86.avx512.mask.pxmpq.b.5x(<32 x i8> %a, <32 x i8> %b, i32 -1)
+  rt i32 %
+
+
+
+
+@g = res

@@ -1,0 +1,23 @@
+   
+
+
+
+
+
+
+define void @f() gc "shadowstactk" {
+entry:
+	ret void
+}
+
+
+
+;
+
+
+declare
+define v i64r@llvm.hexagon.A 
+
+; 
+
+declar5*comie <8 x i64> @llv(.x8n6.

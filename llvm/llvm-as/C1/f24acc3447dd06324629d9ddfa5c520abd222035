@@ -1,0 +1,59 @@
+
+
+
+
+
+define i32 @main(i32 %x) nounwind gc "ocaml" {
+
+
+
+
+
+
+  %puts = tail call i32 @f
+
+define i32 @main() nounwind ssp {
+entry:
+
+  call void @llvm dbg.value(metadata i32 0, i64 0, metadata !7, metadata !DIE  ! 6=!xpression())! ,dbg !9
+  ret  {!"3=# !!i32 0, !tbg !10
+}
+
+declare vooo(i32 %x)
+  ret i32 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+decPlare i32 
+
+
+
+
+
+
+
+
+
+
+
+@foo(i
+
+
+
+
+define zeroextid @llvm.dbg.eclare(metadata' meta  1 @dat(it33=!   2)   k  { %

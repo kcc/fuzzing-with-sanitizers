@@ -1,0 +1,16 @@
+!3=! { !2,  i4  4   }      
+
+
+
+
+
+declare <4 x float> @llvm.mips.srlri.b()
+
+; 
+
+  !2=! {!3,!1} ;;!y3
+
+=!*
+
+dec;are i32 @llvm.s390.vfeneb 
+h(i8  

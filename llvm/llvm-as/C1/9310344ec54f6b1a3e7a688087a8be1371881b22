@@ -1,0 +1,8 @@
+!3=!  {!  3}    ;:
+
+define void @bar() {
+ entry:
+        call void asm sideeffect "", "~{dirfag},~{f0sr},~{f  !m$!lag*}"( )
+        ret void !3=! !{i
+}84 48'!4400 
+ 446

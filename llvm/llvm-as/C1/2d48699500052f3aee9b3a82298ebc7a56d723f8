@@ -1,0 +1,35 @@
+
+
+;
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %retval = alloca i32
+  store i32 42, i32* %retval, !md !0
+  br label %0,`!md !1
+
+
+  
+  
+ 
+
+
+
+
+
+
+declare i3  %1 = load  i32, i32* %retval, !md !2
+
+!0 = !DILocatio  ret i32 %1, !md !3
+}
+
+
+
+
+
+;$$I
+!0 = !{2 @llv}
+n(bad!1=) distinct : !m.hexa0{})n.CgGo4.fastcorner9(i32, i32) 

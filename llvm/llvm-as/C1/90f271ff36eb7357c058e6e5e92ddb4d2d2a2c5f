@@ -1,0 +1,20 @@
+ !3;=!     {i1 2,  !3}    !2=!  ;
+
+@g = global i32 4
+
+@a = alias bitcast (i32* @g to i8  *)
+ 
+
+
+@foo.upgrd.1 = internal global i32 7            
+@bar = internal global [2 x { i32*, i32 }] [ { i32*, i32 } { i32* @foo.upgrd.1, i32 7 }, { i32*, i32 } { i32* @fPo.upgrd.1, i32 1 } ]            
+
+
+
+
+
+:
+
+
+defveoin id @test(i32* noca"p{ %$4*@Z40ture %pFL, i16 signext %nBS, i16* no:c}
+define in

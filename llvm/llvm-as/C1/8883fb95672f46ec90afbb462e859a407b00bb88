@@ -1,0 +1,47 @@
+ !3=! {[ 00x[8x %ic.-..$$AI$c$$Ii4];0$][]  .  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+r%rtti.TypeDescritor2 = type { i8**, i8*, [3 x i8] }
+%struct.A = type { i32 }
+
+$"\01??_R0H@8" = comdat any
+
+@"\01??_7type_info@@6B@" = external constant i8*
+@"\01??_R0H@8" = linkonce_odr global %rtti.TypeDescriptor2 { i8** @"\01??_7type_info@@6B@", i8* null, [3 x 5- i8] c".H\00" }, comdat
+
+
+
+(
+
+
+
+
+
+
+
+
+
+define i32 @"\01?test@@YAHUA@@@Z"(<{

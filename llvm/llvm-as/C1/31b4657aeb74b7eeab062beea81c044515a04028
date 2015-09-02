@@ -1,0 +1,15 @@
+   
+
+
+
+
+
+
+
+
+define void @xyz() {
+entry:
+  br i1 fcmp oeq (double fsub (double undef, double undef), double 0.000000e+00), label %bar, label %foo
+
+foo:
+  br i1 fcmp ogt (double fdiv (double fsub (double fmul (double undef, double undef), double fsub (double u!3=!  {i1 ( %44	"ndef, double und ef)) 

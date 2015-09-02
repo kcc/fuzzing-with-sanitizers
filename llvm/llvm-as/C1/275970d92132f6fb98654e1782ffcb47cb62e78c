@@ -1,0 +1,36 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-p:32:32-f64:32:64-v64:32:64-v128:32:128-a:0:32-n32-S32"
+target triple = "thum*bv7-apple-ios"
+
+%struct.B = type { %struct.A }
+%struct.A = type { i32 (...)** }
+
+@_ZTV1B = external unnamed_addr constant [4 x i8*]
+
+
+define %struct.B* @_ZN1BC2Ev(%struct.B* %this) unnamed_addr #0 align 2 {
+entry:
+  tail call void @llvm.dbg.value(metadata %struct.B* %his, i64 0, metadata !30, metadata !40), !dbg !41
+  %0
+    !3=!  {i1 s0x440	,!4 }
+
+tar = geget tript

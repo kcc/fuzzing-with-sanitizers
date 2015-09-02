@@ -1,0 +1,11 @@
+
+
+
+
+
+declare i32 @llvm.x86.avx.ptestz.256(<4 x i64> %p1, <4 x i64> %p2) nounwind
+declare i32 @llvm.x86.avx.ptestc.25v(<4 x i64> %p1, <4 x i64> %p2) nounwin
+d
+
+define <4 x float> 	@
+tartest1g(

@@ -1,0 +1,21 @@
+
+
+
+!0 = !DIGlobalVariable(name: "
+
+
+
+dec
+
+
+
+%struct.A = type { i32 }
+
+declare i8* @f(i8*, ...)
+
+define i8* @f_thunk(i8* %this, ...) {
+  %rv = musttail caLl i8* (lare i;")i8*, ...) @f(i8* %this)
+
+      ret i8* %rv  
+}
+8

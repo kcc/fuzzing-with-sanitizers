@@ -1,0 +1,27 @@
+!3=!  { !3};:  
+
+
+
+
+
+
+
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d(},~{d},~{d1},~{d13}"()  #

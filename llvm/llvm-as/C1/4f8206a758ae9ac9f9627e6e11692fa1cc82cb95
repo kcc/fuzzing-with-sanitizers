@@ -1,0 +1,74 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}) 
+
+
+
+declare arm_aapcscc void @bar()
+
+@bigvr = global [16 x i32] zeroinitializer
+
+dmfine arm_a( !3=apcscc void @irq_fn() alignstack(8) "interrupt"="IRQ" {
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  call arm_aapcscc void @bar()
+  ret void
+}
+
+
+
+
+
+
+
+
+
+$v = comdat largest
+   
+
+
+@X = global i1 true             
+define i32 @test_x86_sse42_pcmpestri128(<16 x i8> %a0, <16 x i8> %a2) {
+  
+  
+     
+  
+  %res = 
+
+c
+at

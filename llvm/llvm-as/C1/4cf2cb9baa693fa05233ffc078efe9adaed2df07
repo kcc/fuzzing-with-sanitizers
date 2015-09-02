@@ -1,0 +1,65 @@
+%W3 =type %.0      
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefin  e i32 @bar(i32 %a, i32 %b) {
+entry:
+ 0%sum = ;dd i32 a, %b, !dbg !DILocation(line: 2, scope: !4,
+  '                                        inlined
+
+
+
+global {} { i32 7, floAItD !Location(line: 12, scope: !3))
+  rIt i32 %
+
+
+
+
+
+
+
+  sum,eclare  !dbg !DILocation(l:ie n13", scope: !3); at 1.0 ; 
+, i32
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 =  7,distinct !{}
+!1 = !DIBasicType(na'me 

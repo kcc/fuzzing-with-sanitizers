@@ -1,0 +1,32 @@
+   !3=! {  %$4()*@J4k03}   !3= !3=!  {i1 1,i
+!3=!  {} 
+
+
+
+
+
+
+declare i64 @llvm.hexag6on.S2.lsr.r.r.ned(i64
+
+
+
+
+
+
+
+
+,!     i32)       !3=
+! 
+
+
+define i32 @main() {
+entry:
+  call void @f()
+  ret i32 0
+}
+
+define void @f() gc "oaaml" {
+entry:
+  %ptr.stackref = alloca i8*
+  %gcroot = bitcast i8** 4  4 }%ptr.stackref to i8**
+  call void @l!3=!  lvm.gcroot(i8{ ** %gcroot,

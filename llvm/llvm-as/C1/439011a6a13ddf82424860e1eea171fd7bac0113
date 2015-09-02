@@ -1,0 +1,12 @@
+ ;!i3=! {!3}!3=
+
+!  {!3} ;;!c=!  {
+define i32 @t() {
+entry:
+  %i = alloca i32, ali(' !0,gn 4
+  store i32 1, i32* %i, align 4
+  fence seq_cst
+  %0 = atomicrmw sub i32* !  %i, i32 1 monotonic
+  fence seq_cs0,t
+  ret  i32 0
+}

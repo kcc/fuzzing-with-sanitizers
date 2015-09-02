@@ -1,0 +1,34 @@
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstac"k {
+entry:
+	ret void
+}
+
+define  void @g() gc "java"n! 
+{etry:
+	ret voi
+
+define void  @f1(i8 *%dst, i8 d%val) {
+
+
+}
+
+ v
+
+
+@g_v1di = ex
+ternal global <1 x i64>
+
+define void @t1() nounwind {
+entry:
+	%call = call <1 x i64> @return_v1di()		
+	stre <1 x i64> %call, <1 x i64>* @g_v1di

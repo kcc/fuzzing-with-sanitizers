@@ -1,0 +1,36 @@
+ 
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+ !0 = !{i32 123, i2 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_eltry_count"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  ret i32 0
+}
+
+
+
+
+
+
+
+target datalayout = "e-p 64:64:64"!3=!  { !3}
+
+
+	%struct.A = ty;e 
+
+define { [1026 x i8] }
+@_ZN1AEaE = global %struct.Ai64 @t0(<1 x i6 z4ero

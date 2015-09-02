@@ -1,0 +1,36 @@
+  
+declare i32 @llvm.xcore.gIetid()
+
+
+
+
+
+       !3= !{%i4 * null}   
+
+
+declare void @_Z3foov()
+    
+
+target triple ="nvptx-qnknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.3d.i32.zrqp(i64, i32)
+	
+
+define <2 x i64> @test_x86_aesni_aesdec(<2 x  64> %a0, <2 x i64> %a1) {
+  
+  %res = call 
+
+!named = !{!0,!  1,<2 x i64> @llvm.x86.aesni.a!2, !3, !4, !esdec(<2 x5, !6,!7, 
+
+
+
+  
+
+
+
+
+
+
+
+target datalayout = "e-m:e-i6]4:64!8-f80:128-n8:16:32:64-S128"
+target triple =  i,"x86declare i32 @llv6m.s390.vacc

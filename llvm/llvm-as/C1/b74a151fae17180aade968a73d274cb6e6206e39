@@ -1,0 +1,25 @@
+    
+
+
+%33 =type    %3  
+
+
+
+!naed = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "/pah/to/dir")
+!1 = distinct !{}
+!6 = !DIFile(filename: "pa/hotfl/ite", directory: "/path/to/dir")
+
+!3 = !DINamespace(name: "(a
+
+'= !{mespa)e", scope: !0, file: !2, line: 7)
+
+
+target tiple = "nvptx-unknown-nvcldefine <8 x i8> @vabds8(<8 x i8>* %A, <8 x i8>* %B) nounwind {
+
+"
+
+
+define void @foo(i64 
+	%tmp1 = load <%img, i684  %x

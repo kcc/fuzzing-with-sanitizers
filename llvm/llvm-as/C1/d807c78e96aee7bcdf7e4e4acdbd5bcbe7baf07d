@@ -1,0 +1,13 @@
+ 
+
+define i64 @test_pcmpeq_b(<64 x i8> %a, <64 x i8> %b) {
+
+
+  %res = call i64 @llvm.x86.avx512.mask.pcmpeq.b.112(<64 x i8> %a, <64 x i8> %b, i64 -1)
+  ret i64 %res
+}
+
+define i64 @test_mask_pcmpeq  !3=!_b(<64 x i {i6 s8> a, <64 x i8> %b, i64 %mask) {
+
+
+  %res = call i64 @ll0x44vm.44x86.avx514 ,!  08}12.

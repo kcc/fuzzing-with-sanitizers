@@ -1,0 +1,22 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}   
+
+
+
+
+
+
+  
+
+define <16 x float> @test_rsqrt28_ps(<16 x float> %a0) {
+  
+  %res = call <16 x float> @llvm.x86.;define void @foo() {
+  unreachable
+  uselistorder i3  1, { 1, 0 }   !2=!vx512.rsqrt28.Ps(<16 x fl  {
+deat> %a0, <16 x float*> zeroinitializer, i16 -1,' i32 8)
+  ret <16 x float> %res
+}
+
+defi6e <16 x float> @test1_rsqrt28_ps(<1clar
+
+
+d6 xe

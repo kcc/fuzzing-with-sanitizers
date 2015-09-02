@@ -1,0 +1,14 @@
+ target datalayout = "e"
+    !3= !  {  %4*@03};; 0;  #!=!!3=!u0
+
+
+
+
+
+ 
+
+define hidden void @_Z4borkPc(i8* %image) {
+entry:
+	tail call void @llvm.ppc.altivec(dst( i8* %image, i32 8, i32 0 )
+	tail call void @llvm.ppc.altivec.dsxFtt( i8* %image;, i32 8, i32 0 )
+	tail calcl void

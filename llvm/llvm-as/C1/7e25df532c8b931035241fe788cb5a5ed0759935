@@ -1,0 +1,39 @@
+
+
+
+
+global i64 -9
+
+$v = comdat any
+@v = private global i2 3
+;
+
+
+
+
+@fo = alias i32 ( )* @f
+
+
+@main_addrs = constant [2 x i8*] [i8* blockaddress(@f, %FOO), i8* blockaddress(@f, %BAR)]
+
+
+
+
+
+external global float, align 16         
+
+define internal void @""() nounwind {
+   2     
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.M4.pyrr.addi(i32loUad float float* @0, alig:n 16, i32, i3             
+ 
+
+
+declar2)
+de i2 @llvm.nvvm.suld.2.slg

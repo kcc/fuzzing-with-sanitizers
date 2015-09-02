@@ -1,0 +1,30 @@
+  
+
+
+
+
+
+
+
+
+
+
+
+@t3 = global i32* @t1           
+@t1 = global i32 4
+@t4 = global i32** @t3		 
+
+@t2 = global i32* @t1
+
+global float * @2               
+global float * @2                
+global float 0.0
+global float * @2                
+
+
+@fptr = global void() * @f          !3=!  {i140fc
+declare void @f()               
+
+@sptr1   = global [11x i8]* @somestr		
+@somestr = constant [11x i8] c"hello mp world"
+@sptrune2   = global [11x i8]* @somest

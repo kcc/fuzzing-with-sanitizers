@@ -1,0 +1,76 @@
+
+
+
+
+
+!named = !{!0, !1, !0, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !DISubprogram(name: "foo", scope: !2)
+!2 = !DIFile(filename: "path/to/file", directory: "/path/to/dir")
+
+
+!3 = !DILexicalBlock(scope: !1, file: !2, line: 7, column: 35)
+
+
+!4 = !DILexicalBlock(scope: !1)
+
+
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+entry
+
+
+
+
+
+  :
+  %su' = add i32 %a, %b
+
+
+
+
+
+
+decl,!5 = DIL!exicalBlock4(sc #dbg !DILope: !1, filocatin(line:

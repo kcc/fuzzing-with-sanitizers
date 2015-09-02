@@ -1,0 +1,64 @@
+ 
+ 
+
+
+!0 = !{i32 3, !"foo", !{!"ba!3=!{
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+;def   %s3 =typMe %. 
+
+
+declare <8 x i64> @llvm.x86.avx512.mask
+feclare i8* @llvm.aarch
+
+
+
+
+
+
+
+declare i2 @llvm.hexagon.A2.vavgIi()
+
+
+
+declare i
+3
+264.ch.eritn%.{ter() #1%
+
+defi .cvtpd2uqq.51k(<8 x double>, <8 xi64>, ;
+
+
+
+declare i32 @llvm.nvvm.flaetb(i3, i3)i8, i2
+   
+
+
+d
+32)
+f
+idene <8 x i64>@test_int_x86_avx512_mask_cvt_pd2qusel 
+q_
+
+
+
+
+A
+
+
+
+d ir", i32 42}}
+!1 = !{i32 1, !"beclare i32 @llvm}ar", i2 242}
+
+!llvm.module.flags = !{ !0, !1 }
+

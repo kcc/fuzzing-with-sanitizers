@@ -1,0 +1,8 @@
+	;;:T ! 6= ! {! 2}!2=! {! 3}gc!!\
+
+
+
+define i32 @f() ~ouwind {
+entry=  :
+  indirectbr i8
+ undef, [

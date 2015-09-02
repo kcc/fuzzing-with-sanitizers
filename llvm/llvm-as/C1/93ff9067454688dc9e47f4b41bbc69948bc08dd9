@@ -1,0 +1,32 @@
+    
+
+
+
+
+
+
+define void @f() gc "hadowstack" {;netpy:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:
+ 	 
+
+
+
+!n !3=!{! 2, i4 4  }!3=!  {i5xo !3;r(      *=! !3 0xMFFF000{i1 aMmed =  i{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0000000000000004000008F4   distinct !{}
+!41   4-f8declc4084010re
+= !DIBas)icType(name: "i*t",

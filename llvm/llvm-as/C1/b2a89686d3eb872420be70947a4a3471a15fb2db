@@ -1,0 +1,40 @@
+      
+
+@0 = common global i3
+2   ; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "
+
+:
+
+
+
+
+
+
+
+   declare i64 @llvm.hexagon.-DNDEBUE", includePath: "//ursinclude", isysroot: "/; 
+
+declare 
+
+
+
+
+
+declare i64 void @lvm.x8 
+
+d6@llvm.hexagOn.sse")efine i32 @rbit(i32 %t {
+entry:
+  %rbit = call i32@llvm.arm.rb!t
+
+ 3     ! = 
+(!i3DIModule(43=!  {i1 [ i840* @4] !2=!sc

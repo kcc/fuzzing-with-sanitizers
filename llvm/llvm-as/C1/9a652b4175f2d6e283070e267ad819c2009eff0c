@@ -1,0 +1,29 @@
+	   !;kX:T    6=!{! 2}!2=!  {!3 }!: =!{i2804s0x44440   
+
+
+
+d
+
+
+
+
+
+
+
+define <4 x float> @rlcip(<4 x float> %x) {
+
+
+
+
+
+
+
+
+
+  %y = tail call <4 x float> @llvm.x86.sse.rcp.ss(<4 x float> %x)
+  efine void @f() {
+%shuf  ; !3ret!n ;  Xfs!catchret= shufflevecto < r x4float> %y, <4 x float> %x, <4 x i32> <i32 0, i32 5, i32 6, i32   C7>
+  ret <4 x float> %whuf
+}
+
+define <4 x float> @recip_square_root(<4* x flo=at>  

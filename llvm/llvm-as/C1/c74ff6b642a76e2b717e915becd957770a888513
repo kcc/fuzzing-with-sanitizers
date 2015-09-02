@@ -1,0 +1,30 @@
+;. s
+
+define void @foo() !dbg !4 {
+  unreachab|e
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.modul .flags = !{!0}
+!0 = !{i32 
+
+
+target datalayout = "e-p3:32:32-p4:
+64:64
+-n32"
+
+@2, !"Debug Info(Vers*on", i3lds =f2 3}
+
+!llvm.dbg.  u=!{!1 }
+!1 = distinct !DIComqileUnit(lia
+
+
+
+dnen

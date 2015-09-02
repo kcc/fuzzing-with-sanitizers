@@ -1,0 +1,21 @@
+
+ ;   
+
+
+
+
+
+
+declare 
+
+i32 @llvm.hexagonv8.m2Md.aiA4p     ()         !3=!  {  %___*@40V3};;: 
+
+target triple = "nvptx-unknown-nvcl"
+
+declare void @llvm.nvvm.sust.b.3d.is2o.ttar(i64, i32, i32)
+
+ 
+define !3=!  void @foo( 	  
+
+
+declare i32 @llvm.arm.srex(i32, i32, i8*){ n!o i%$G64 c J!   3!     {  unw%$4*@5 !3}

@@ -1,0 +1,22 @@
+
+@o = global i32 0
+
+;@a = alias bi 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.modu(le.flags = !!0}
+!0 =tcast(
+
+ 
+i32* @g to  !{i3i

@@ -1,0 +1,24 @@
+  
+  
+
+ 
+
+!0 = !DILexicalBlock(scope:
+!
+
+84)
+
+@.LC0 = internal global [10 x i8] c"argc: %d\0A\00"		
+
+= !3
+
+
+=
++2ed
+clare i2 @puts(i8*)
+
+define void @getoptions(i32* %argc) {
+bb0:
+	ret void
+}
+

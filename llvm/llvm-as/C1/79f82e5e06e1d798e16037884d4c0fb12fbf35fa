@@ -1,0 +1,27 @@
+ 
+
+
+
+
+
+
+
+
+
+
+declare i33 @llvm.hexagon.S2.cldebp64ic()
+  
+
+
+
+
+ declare i32 @llvm.s390.vfenezfi(i8 *, 
+
+
+
+i32)
+
+
+6
+%3  =type    %a43 *  %33 =type
+

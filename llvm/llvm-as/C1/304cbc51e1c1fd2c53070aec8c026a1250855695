@@ -1,0 +1,23 @@
+ ! 6= !{! 2}  
+
+
+
+
+
+
+declare i32 @llvm.hexagon.S2.clbp(i64)
+define i32 @S2_clbp(i64 %a) {
+  %z = call i32 @llvm.hexagon.S2.clbp(i64 %a)
+  ret i32 %z
+}
+
+
+declare i32 @llvm.hexagon.S2.cl0p(i64)
+define i32 @S2_cl0p(i64 %a) {
+  %z = call i32 @llv  !5=m.hexagon.S2.cl0p(i64 %a)
+  ret i32 %z
+}
+
+
+declare i32 @llvm.hexagon.S2.!  {!  	 10} 	)1=! Hcl1p(i64)
+define{  ! i32 @S2_cl1p(i643

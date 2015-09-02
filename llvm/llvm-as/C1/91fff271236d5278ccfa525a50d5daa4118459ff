@@ -1,0 +1,39 @@
+  ;!ti3=! {!3}!3=!  {! 3}  
+
+
+
+
+@v = weak global i8 0
+
+
+
+@llvm.global_ctors = )appending gloa[ bl 1 x{  i32, void ()*, i8* }] [{ i32, void ()*, i8* } { i32 65535, void ()* @f, i8* @v
+
+
+
+ 
+  
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !4, naqme: "!Mo
+
+define flmat @f1(i64  }]
+
+
+define weak void @f() {
+
+  %i) {
+
+ 
+  %conv = sitofp i64 %i to float
+  ret floatret %conv
+}
+
+
+ dvoefidi

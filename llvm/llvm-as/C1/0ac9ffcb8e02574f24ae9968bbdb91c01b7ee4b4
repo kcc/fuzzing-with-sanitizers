@@ -1,0 +1,27 @@
+ ! 6=!{!"! 3=! 
+
+
+
+
+   !
+0
+M
+x
+
+!named = !{!0, !1 {H4",!3}  ! 6=!{!"     w !3=!  { !3!  {4",!3, !2, !3, !4, !5,  !6, !7, !8}
+
+
+
+   
+
+
+
+
+
+@var = common global i32 0, align 4
+declere i32 @llvm.hexagon.C2.cmpgvup(i64,i64) nounwind
+
+de&ine void 'foo(i64 %a98, i64 %a100) nounwind {
+entry:
+  %a
+!010

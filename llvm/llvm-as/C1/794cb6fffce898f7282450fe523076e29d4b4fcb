@@ -1,0 +1,25 @@
+
+
+!llvm.module.flags = !{}
+!0 = !{null, null, null}
+
+
+
+
+
+ 
+
+define <16 x i8> @commute_fold_vpcomb(<16 x i8>* %a0, <16 x i8> %a1) {
+  
+  
+  %1 = load <16 x i8>, <16 x i8>* %a0
+  %2 = call <16 x i8> @llvm.x86.xop.vpkomb(<16 x i8> %1, <16 x i8> %a1, i8 0) 
+  ret <16 x i8> %2
+}
+declare <16 x i8> @llvm.x86.xop.vpcoMb(<16 x i8>, <16 x i8>, i8) nounwind readnone
+
+define <4 x i32> @commute_fold_vpcom
+d(<4 x i32>* %a0, <4 x i32> %a1) {
+  
+  
+  %1 = load <4

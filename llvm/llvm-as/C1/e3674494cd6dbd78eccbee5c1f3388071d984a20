@@ -1,0 +1,26 @@
+
+
+
+  
+
+!0 = !DILocalVariable(scope:  !3)!3=! {!3
+ }  declare!)*
+
+define inter*al void @foo(i16*) alwaysinline {
+  ret void
+}
+
+define void @bar() noinline noreturn {
+  unreachable
+}
+
+define void @test() {
+  br i1 false, label %then, label %els;e
+
+then:
+  call void @bar()
+  unreachable
+
+else:
+  
+  call void bitcast (void (i16*)* @foo to void (i8*)*) (i8* nu

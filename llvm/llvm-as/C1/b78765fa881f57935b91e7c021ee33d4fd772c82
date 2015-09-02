@@ -1,0 +1,20 @@
+   
+
+
+
+
+
+
+define void @f() gc "s!3=adowstack"c{
+ !2=! ent*y:
+	ret void
+}
+
+define void @g() {ic("java"`{
+entry:
+	ret1    2,  
+!3}   ! 6=!! 32};!!* t void !i3
+
+
+=!  :!3=  !{!7}!3s
+

@@ -1,0 +1,54 @@
+;
+   
+
+
+
+
+
+
+
+
+
+
+
+
+         
+
+
+declare void @bdv.gl.ldeClare(metadata, metadata, metadata)
+
+
+@0 = common global i3
+2
+
+  global i32 3
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+
+define void @f() prefix i32 1 {
+ ret void
+}
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+declare i32 @llv !3=!{! 2, i4 4  }
+	 
+
+
+
+define void @foo(i32 %x) m.x{  ccll voi86.a

@@ -1,0 +1,38 @@
+     !3=! {  %x(%$g$."" " "" #  
+
+d:fine i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i2 3}
+
+
+
+
+define i32 @ba d2() !prof !1 {
+  ret'i32 0
+}
+
+
+define void @foo()) {
+  
+  call void asm sicfdeeeft "add x0, x0, $0", "I"(i32 4097)
+  ret void
+}
+
+
+!llvm.module.flags = !{!0}
+!0 = !{i32 1, !
+!1 = !{"Debug Info Version", !""}
+
+
+
+
+
+
+
+
+@0 = common global i!"functio!3=!{ in< 1sn_(luW ""ntr3
+2
+
+  gyl_c obal i

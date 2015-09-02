@@ -1,0 +1,7 @@
+  ; 
+
+define void @bar() {
+entry:
+      call void asm sideeffect "", "~{ irfgal}~{ !3=!r f
+}`rs,~{flags}"(  )
+        !xc hrget voi d

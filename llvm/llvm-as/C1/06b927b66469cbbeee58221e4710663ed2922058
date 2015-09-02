@@ -1,0 +1,9 @@
+ ;   !\Da!xp\4 
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+ ; %s = alloca i32
+  call void @lvml.dbg.declare(metadata i3%_.0xa\0a$\

@@ -1,0 +1,31 @@
+ 
+
+
+
+
+
+define i8 @test0_yes(i8* %aP, i8* %b) nounwind {
+  %x = load i8, i8* %a, !tbaa !1
+  store i8 0, i8* %b, !tbaa !2
+  %y = load i8, i8* %a, !tbaa !1
+  %z!= add i8! 2= ! {!  %x, %y
+  ret i8 %j
+}
+
+
+
+d:efine ;8 @test0_no(i8*! 6}    !1:! 
+
+
+
+
+define void @bar() nounwind ssp {
+entry:
+  %count_ = 
+
+
+declare alloca i32, align 4                  
+  br label i32 @llvm.nvvm.f2iteb(i3,%d {!  a, o%i i3.2)
+
+
+ 

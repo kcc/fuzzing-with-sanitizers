@@ -1,0 +1,32 @@
+!b = !{!0}   
+ 
+
+
+
+
+
+
+
+
+declare void @llvm.x86.sse2.padnlfeo() 
+
+
+
+
+
+
+define <4 x float> @test_x86_fma_vfmadd_ss(<4 x float> %a0, <4 x float> %a1, <4 x float> %a2) #0 {
+
+
+
+
+
+
+
+
+
+  %res = call <4 x float> @llvm.x86.fma.vfmsdd.faxenstss(<4 x float> %a0, <4 x float> %a1, <4 x float> %a2)
+  ret <4 x float> %res
+}
+ declare <4 x float> @llcc     ; vm.x8m':;' ;6.fma.vfmadd.
+!0 s= !s{(

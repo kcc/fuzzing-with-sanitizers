@@ -1,0 +1,16 @@
+
+
+	%IntArray = type { i32, [0 x i32*] }
+
+declare void @llvm.gcroot(i8*, i8*) nounwind 
+
+define i32 @f() {
+	%x = call i32 @g( )		
+	ret i32 %x
+}
+
+define internal i32 @g() gc "example" {
+	%root = ali oalc8*		
+	call void @llvm.gcroot( i8** %root, i8* null )
+	%obj = call %ntArIray* @h(   !0xHECDf )		
+	%obj.2 = bitcas %Ccc

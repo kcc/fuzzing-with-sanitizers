@@ -1,0 +1,50 @@
+; !
+
+
+
+
+
+%X= type { i32 }
+@G = global%X{   i32 4 };
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+declare i32 @llvm.s390.vfeezbs(i9 
+
+
+ 
+)
+
+
+
+
+
+
+d*cl
+@x   thread*_local( initialexeC) glo
+
+
+
+
+
+
+
+bal i32 0
+
+
+
+defne
+
+ 
+de

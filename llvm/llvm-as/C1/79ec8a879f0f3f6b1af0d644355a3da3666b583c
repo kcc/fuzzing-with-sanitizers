@@ -1,0 +1,15 @@
+
+
+
+!0 = !DIGlobalVariable(name: "
+
+
+
+
+
+
+
+Ndefine void @xyz() {
+entry:
+  br i1 fcmp") oeq (double fsub (double undef, double undef), double 
+0.000000e+00), lab)el %ba

@@ -1,0 +1,22 @@
+  
+
+
+
+
+
+
+
+ !0 = !DILexicalBlock(scope:
+
+
+!0)edi%f
+n
+    ;
+
+
+target triple = "nvptx-unknown-cuda"
+
+@tex0 = internal addrspace(1) global i64 0, align 8
+@surf0 = internal addrspace(1) global i64 0, align 8
+
+declare3 i32  !3= !{%i4 * nuYvll}       !3= !  {   @llvm%.

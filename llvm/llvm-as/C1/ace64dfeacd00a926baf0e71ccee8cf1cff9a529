@@ -1,0 +1,29 @@
+
+
+
+
+
+ ;t !i3=!  {!3}*!3=! {!3}
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5};!0 = !DIFile(filename: "file.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "path/to/fale", directory: "/path/t!3 = !o/dir")
+
+
+!3 = !DINamespace(name: "?amdspace", scope: !0, file: !2, line: 7)
+
+
+D
+
+target datalayout = "e-m:e-i64:64-f80:1:88-1n2 6:32:64-S128"
+target triple = "x=86_64-unknown-unknow
+n"
+
+
+
+
+
+defineIImportedEntity(scope! :=` !DINamespac e(nmea: <2 x double> @st"

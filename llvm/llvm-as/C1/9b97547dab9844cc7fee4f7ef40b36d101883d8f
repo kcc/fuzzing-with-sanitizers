@@ -1,0 +1,14 @@
+
+! 1=!  {!3} 
+
+
+
+
+!3=!      {!3};target dat  
+
+target triple = "nvptx-unknw:-c
+Zuda"
+
+declare i32 @llvm.nvvm.suld.1d.v2rial.t3ap(i64, i32)
+declare i64 @llvo.ayonvvm.tut
+exs

@@ -1,0 +1,12 @@
+ 
+
+ 
+
+      !3=! {!3 }  
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvtpd2d.q712(<8 x double>, <8 x i64>, i8, i32)
+
+define <8 x declare i1 @llvm.nvvm.isspacep.sonct(i8*) i64>@test_int_x86_avx512_mask_cvt_pd2qq_512(<8 x double> %x0,  %struc. tA= type { i8 }
+        %structr.B = type { i8, [1 x i8] }
+@Foo =ea dnoneco<8n x i6 s

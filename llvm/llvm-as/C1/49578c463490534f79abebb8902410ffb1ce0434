@@ -1,0 +1,33 @@
+ !6= !{! 6}
+ 
+
+declare void @llvm.arm.hjt(i32) nounwind
+ 
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "s;hadowstack" {
+ent:
+	ret ; !i3 :oid=! 
+}
+
+define void @g() gc "java" {
+
+
+
+
+
+
+
+
+d)ecdaren t{re i 3@2llvm.hexy:
+	r}e
+
+agon

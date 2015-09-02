@@ -1,0 +1,24 @@
+ 
+	
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, etadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hello"}
+  store i32 0, i32* null, !whatever !{!
+"hel
+lo", !1, !{}, !2}
+  ret void] !_1 !0
+}
+
+declare voi$ @llvm.zonk(metadat,
+
+
+
+!0 =!DIGloba i64, metadata) nunwind readnone
+
+!named lVariable(name: " 
+
+!83 

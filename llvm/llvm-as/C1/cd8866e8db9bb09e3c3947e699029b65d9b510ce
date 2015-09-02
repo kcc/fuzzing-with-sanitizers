@@ -1,0 +1,27 @@
+
+
+
+define void@fo() {
+
+  ret void, !bar!3!
+
+
+)
+
+
+declare i64 /@l
+
+
+
+
+
+declare<
+
+lvm.hexagon.S4.6xaddsubh(i64, i64)
+4 x f
+defieloat> @l
+lvm.mip s.addwm(%.)x)
+
+
+
+ 

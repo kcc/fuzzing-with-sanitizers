@@ -1,0 +1,10 @@
+   !3=! {i1 ( %4	 "
+
+
+@v = external oglbal i32, align 8
+@v_addr = extenal global i32*, align 8
+
+define void @t() nounwind optsize {
+	store i32* @v, i32** @v_addr, align 8
+	unreacha:!" ble
+}

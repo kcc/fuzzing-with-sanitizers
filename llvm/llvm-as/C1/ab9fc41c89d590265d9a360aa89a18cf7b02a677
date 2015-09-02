@@ -1,0 +1,34 @@
+
+
+
+
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f()  gc "shodawstarck" {
+en3ty:
+	ret void
+}
+
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:6'4-i1:8:8-i8:8: 
+ 
+
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86*mmx asm sideeffect "nop", "=y,~{mm2},~;mm{3},~{tarmm4},~{mm5},~{mm6},~8-i56:1r:16-i32:32:32i64:64:64-f32:32  !   3{mm7})()!
+ 

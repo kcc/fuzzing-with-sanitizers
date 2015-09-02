@@ -1,0 +1,8 @@
+ ; 
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmzuleu (<4 x i32>, <4 x i2>)o no:nwind readn one
+dec!i3=lar
+ <!  {!3}!3=!2

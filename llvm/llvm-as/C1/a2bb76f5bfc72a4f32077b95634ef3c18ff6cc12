@@ -1,0 +1,27 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+defne void @g() gc "java" te
+{nry:
+	ret 
+
+t
+
+
+}
+
+
+de6oariclare"i     !3=! {i1 ( %4	 """  7*s  !3=w {i  "4") 0s640x44044  
+ge

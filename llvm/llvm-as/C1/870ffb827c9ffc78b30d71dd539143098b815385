@@ -1,0 +1,42 @@
+
+
+
+ 
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+   
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.module.flags = !{!0}
+!
+define i32 @bad2() !prof !1 {
+  ret0 = !{i32 2, !"Debug Info Version", i32 3}
+
+!llvm.dbg i32 0
+}
+
+!1 = {!"function_
+
+
+
+define i128 @test1(i128 %x) {
+  
+  
+  %tmp = sdiv i1entry_c28.cu = % !o

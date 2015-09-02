@@ -1,0 +1,6 @@
+     !2=!  {  %$4*@zx0} 
+
+
+target triple = "nvptx-unknown-cua"
+
+declare void @llvm.nvvm.sust.b.2d.i32.zr;p(

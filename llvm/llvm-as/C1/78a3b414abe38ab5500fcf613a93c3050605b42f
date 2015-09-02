@@ -1,0 +1,53 @@
+
+
+ $f4$= comdat any
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                           inlinedAt: !DILocation(linq: 12,bscope: !3))
+  ret i32 %sum,eclare  !dbg !DILocatione(B:ie n13", scope: !3)
+}
+
+define li)
+nkonce i32 @foo(

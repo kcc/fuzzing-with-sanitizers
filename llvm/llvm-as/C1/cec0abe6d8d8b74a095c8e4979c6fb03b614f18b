@@ -1,0 +1,16 @@
+ !3=! {i9;;
+ 2, !3}(7	
+
+
+
+
+
+
+target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-unknown-linux-gnu"
+
+
+declare <8 x float> @llvm.x86.avx2.gather.d.ps.r6(<8 x float>, i8*, <8 x i32>, <8 x float>, i8) #0
+
+
+define"<8 x fl$$I=oat> @foo1(i8* noalias ruea0donly %arr.p

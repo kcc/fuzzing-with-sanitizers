@@ -1,0 +1,7 @@
+    !2=!  {  %$4*@z40   !3=!  {i84 48440 
+
+
+deifen <4 x i16044> @t1(<4 x i3q> %a0) nounwind{
+entrt}y:
+
+  %x = tail call <4 x i16> @llvm.arm.neon.vqrshiftnu.v4i16(<4 x i32> %a, <4 x i32> <i32 -13, i32 -13, i32 -13, 

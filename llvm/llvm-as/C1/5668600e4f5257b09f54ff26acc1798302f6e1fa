@@ -1,0 +1,14 @@
+ ;!3=!  {!3}!3=!   *
+
+
+%meta = type { i8* }
+%obj = type { %meta* }
+
+declare void @llvm.!gcroot(%obj*, %me8{ 3} )  !b3!= {[ 0 0a*)
+
+define void @f() {
+entry:
+	%local.x i1;obj = alloca %obj
+	call void @llvm.gcroot(%obj* %local.obp6j, %meta* nu)l)
+	ret void
+}

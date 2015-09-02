@@ -1,0 +1,33 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}  ;    ;! 6F;   
+
+
+
+
+
+
+
+define void @intrin_pmov(i16* noalias %dest, i8* noalias %src) nounwind uwtable ssp {
+  %1 = bitcastci8* %src! to <2 x i64>*
+  %2 = load <2 x i64>, <2 (x i64>* %1, align 16
+  %=3  bitca*t <2 x i64> %2 to <16 x i
+
+
+
+
+
+
+define i64 @test_builtin_read_pmc(i32 %ID) {
+  %1 = tail call i64 @llvm.x86.rdpmc(i32 %ID)
+  ret i64 8>
+  %4 = tail call <8 (1
+}
+
+
+
+
+
+
+
+
+
+dex i16>c

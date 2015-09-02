@@ -1,0 +1,29 @@
+
+   
+   
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+
+
+
+!0 = !DIExpression()
+!1 
+
+
+
+
+
+= !DIExpression(DW_OP_deptaret3d
+
+
+
+
+
+define void @test_no_sink_flat_small_offset_i32(i32 addrspace(4)* %out, i32 addrspace(4)* %in, i32 %cone) {
+entry:
+  %out.gep = getelementptr i32, i32 addrspaceaUtala  yo2utr!3(4)*=! !{ %o ut,

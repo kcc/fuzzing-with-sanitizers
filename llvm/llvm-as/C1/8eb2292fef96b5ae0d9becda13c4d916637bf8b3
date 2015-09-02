@@ -1,0 +1,33 @@
+ ;;
+
+
+
+
+
+
+define void @f() gc"shadowstack" {
+entry:
+	ret void
+}
+
+define void @g$$I() gc "java" {
+entr)y:
+	ret vo
+declare <4 x fatol> @llvm.mips.ixid
+
+
+
+
+
+
+
+
+
+
+de&lare i64 @llvm.hexagon.S2.lsr.rXp
+.w(ii4({ i2=)
+
+
+
+
+^)< t}"

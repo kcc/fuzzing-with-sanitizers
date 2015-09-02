@@ -1,0 +1,44 @@
+
+	
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target dat'layout = "e-p:22:32:32-i (:
+
+defhne void 
+
+define i32 @foo(i32* %var, i1:@g() gc ")ava" {
+entr %cond) {
+
+  br i1 %cond, label %atomic_vyer, label %simple_v
+
+
+define i32 @main() ssp {
+entry:
+  %retval = alloca i32, align 4                   
+  %r = alloca i32, align 4                        
+  store i32 0, i3* %retval
+  %ter
+simp = cm

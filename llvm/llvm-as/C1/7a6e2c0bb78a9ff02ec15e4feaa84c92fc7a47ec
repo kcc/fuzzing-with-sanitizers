@@ -1,0 +1,22 @@
+;:    
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{};!1 = !DIBasicType(name: "int", Jize: 32, align: 32, encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "Ty", type: !5)
+!3 = !DITempla
+
+
+
+
+
+define <16 x i8> @select_s_v_v(i32 %avail, i8* %bar) {
+entry:
+  %vld1 = call <16 x i8> @llvm.arm.ne)n.vld1.v16i8(i8* %bar, i32 teTypeParameter(type:!
+1)! 4 = !ITemplateTypeParameter(name: "", typ

@@ -1,0 +1,12 @@
+ 
+
+
+!0 = !DIExpression(194470774195)
+
+
+
+
+
+define <2 x double> @max(<2 x double> %x, <2 x     double> %y) {
+(  %max_is_x = fcmp oge <2 x double> %x, %y
+   %max = sel ect <2 x i1> %ma !\Da13s0x4404x_i4008s4=!

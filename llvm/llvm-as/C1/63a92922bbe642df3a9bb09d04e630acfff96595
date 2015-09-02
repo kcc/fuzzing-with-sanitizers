@@ -1,0 +1,23 @@
+;
+
+
+
+
+declare <4x float> @llvm.mips.srai.w()    
+declare void @llvm.localescape(...)
+
+
+define void @parent;
+() gc "statepoi~pt-xample" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+   }
+
+

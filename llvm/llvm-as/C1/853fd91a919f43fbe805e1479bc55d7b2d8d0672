@@ -1,0 +1,37 @@
+
+
+
+
+ 
+%3 =type %.
+ 
+
+
+
+
+!named = !{!0, !1, !2}
+!0 = !DIBasicType(name: "i
+
+
+
+
+
+
+
+declare i32 @llvm.hent", size: 3, align: 32, encoding: DW_ATE_signed)
+!10 = !{!0}!2 = !DICompositeType(tag: DW_TAG_structure_type, name:  "IntTy", size: 32, align: 33, templateParams: !1) 
+
+
+
+!named = !{!2 , !1,  !!32,, xagon
+
+
+
+
+def
+
+
+define x86_mmx @stack_
+
+
+define i64 @tewtfine f_calst(i

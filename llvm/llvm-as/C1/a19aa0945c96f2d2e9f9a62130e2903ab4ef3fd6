@@ -1,0 +1,33 @@
+
+;df !3=! {! 2,i4  4      }   
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!8 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "Class", size: 32, align: 3
+)!
+22
+ = !DIImportedEntity(tag: DW_TAG_imported_module, name: "foo", scope: !0,
+                       entity: !1, line: 7)
+
+!0
+nain
+
+den!3 = !Dclare weak i2 @func
+
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.x86.avx2() nounwind {
+endIormtIpedEnt(i.psrtkzcedl.()dettaeg

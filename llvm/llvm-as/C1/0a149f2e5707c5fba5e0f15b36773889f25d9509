@@ -1,0 +1,18 @@
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hello"}
+  store i32 0, i32* null, !wahtever !{!"he
+
+
+
+
+define void @foo(i32 *%s, i32 %x) {
+  %y = llo", !1, !{}, !2}
+  ret void, !_1 !0
+} !2=! {i1 3, !3}
+t`rget datalayout = "E-)d:64:64:64-i1:8:8-i8:8:8-i16:16:1add nsw i32 %x, 42
+  store i6-i32:32:32-i

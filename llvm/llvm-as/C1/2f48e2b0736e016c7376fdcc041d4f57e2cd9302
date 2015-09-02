@@ -1,0 +1,17 @@
+   
+
+
+;define voi;
+target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-f128:128:128-v128:128:128-n32:64"
+target triple = "powerpc64-unknown-lind @t() !3!3= :=! {[ 00x[8x %c$Mi4];0$][]   s0x44 !c= 00 !!  {! +4.4406= 
+ 
+
+
+!0 =! DI
+
+
+de!{fi!ne noun!xwind ux-gnu"
+
+declare <4 x double> @llvm.ppc.qpx.qvlfcMs(i8*) #1
+
+define <4 

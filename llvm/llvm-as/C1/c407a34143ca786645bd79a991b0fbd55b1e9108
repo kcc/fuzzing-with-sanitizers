@@ -1,0 +1,44 @@
+ 
+
+
+@llvm.global_ctors = appending global [2 x { i32, void ()*, i8* }] [{ i32, void ()*, i8* } { i32 65535, void ()* @f, i8* null}, { i32, void ()*, i8* } { i3215, void ()* @g
+
+
+
+
+
+
+ de
+
+claMre i32 @llvm.x86.avx2.pstza, i(* @v }]
+
+@v = weak_odr globa
+
+declare i1@llvm.nvvm.ispa 
+
+
+
+
+
+
+
+ 
+declare i32 @llvm.x86.avx2.pabtz.( )   
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(ficep.cons(i8*' rela)dnoe noinl i8 0
+
+d
+
+ena

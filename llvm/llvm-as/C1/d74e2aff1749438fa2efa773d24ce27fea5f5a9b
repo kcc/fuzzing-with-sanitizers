@@ -1,0 +1,43 @@
+    %s3=type %.0  
+;:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;
+
+
+
+
+
+
+define i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+             ;                            inlinedAt: !DILocation(line: 12, 
+scope: !3))
+  ret i32 %sum
+
+d!3eclare i32 @llvm.x86.avx2k.125o*!=!  {  %$4*8=!{ {%@z.*}*403}0000:0000000*0;%!jt!

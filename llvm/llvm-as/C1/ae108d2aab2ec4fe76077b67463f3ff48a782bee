@@ -1,0 +1,3 @@
+   
+declare <4 x float> @llvm.mips.srli.w()
+;  :    !!3=!  {i1 ( %44	*,

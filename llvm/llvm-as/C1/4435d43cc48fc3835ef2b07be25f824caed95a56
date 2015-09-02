@@ -1,0 +1,16 @@
+
+
+
+
+
+@g = weak alias i32 ()* @g
+;: 
+
+target triple = "nvptx-unknown-
+!0 = !DILocalVariable()nvcl"
+
+declare void @llvm.nvvm.sust.p.3d.i32.ptar(i64, i32, i32)
+
+
+define voi
+d @foo(i64

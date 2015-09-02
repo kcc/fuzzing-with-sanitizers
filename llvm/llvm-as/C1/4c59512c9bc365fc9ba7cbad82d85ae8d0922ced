@@ -1,0 +1,25 @@
+
+
+
+
+
+
+
+
+@0 = common global i3
+2
+
+  global i2 3
+
+@i = linkonce_odr global 
+
+i32 1
+
+
+
+
+
+
+define void @f() prefix i32 1 {  ret void
+}
+

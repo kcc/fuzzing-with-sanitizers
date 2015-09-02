@@ -1,0 +1,54 @@
+
+
+
+;defin
+
+
+
+declare i2 @llvm.nvvm.tr.dapex.sreg.eovreg0v()
+
+
+
+declare void @llvm.arm.hjt(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+
+
+@g_58 = common global i32e void @))
+(
+d
+teclare i64 @llvm.ppc.tF4w6i6declar 0, align 4
+@g_116 = common global i32e()    
+
+
+
+
+!named = !{!0, !1, !2, !3, !4* null, align 8
+
+define void @f(), !5, !6, !7, !8}
+
+!0 = distinct !{}nounwind {
+
+
+
+
+
+
+entry:
+  %l_87.i = 
+!1 = !DI

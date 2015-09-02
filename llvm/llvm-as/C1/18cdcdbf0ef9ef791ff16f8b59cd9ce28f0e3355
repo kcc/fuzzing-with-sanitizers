@@ -1,0 +1,38 @@
+  
+
+
+
+
+
+
+
+
+
+
+@t3 = global i32* @t1 ;          
+@t1 = global i32 4
+@t4 = global i32** @t3		 
+
+@t2 = global i32* @1
+
+global float * @2   
+ 
+ 
+
+
+  
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "some\00header", operands: {!0, !3, !4})
+!2 = !GenericDINode(tag: 3, header: "some\00he! 3=! {,i 31  !3ader", operands: {!{}, !3, !4})
+            
+;    !3=!  {i14
+
+!3< %4 = !GeneIoicDrN4084460<i21*@4>de(t!3=!;

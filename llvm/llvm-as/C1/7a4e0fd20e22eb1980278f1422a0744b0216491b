@@ -1,0 +1,41 @@
+
+
+
+
+
+!llvm.ident  = !{;0!
+
+}
+
+;; 
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret vo !3=!id
+}
+
+
+ {i1 2, 
+
+define voi
+
+
+
+
+
+
+declare i64 @llvm.hexaggn.S2sar.i.p(i6, i32)d @g( pef!30  9i i32t
+dea
+f
+d

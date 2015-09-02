@@ -1,0 +1,29 @@
+
+
+
+define void @test_reg_strida(double %a, double %b) {
+
+
+
+
+
+
+
+
+  call void asm "", "~{r   
+
+
+
+
+declare i64 Dllvm.ppc.div6o()i
+
+att
+
+r
+i0},~{r},~{d0d},~{;  d 
+
+
+
+
+Jedc1}"()
+  

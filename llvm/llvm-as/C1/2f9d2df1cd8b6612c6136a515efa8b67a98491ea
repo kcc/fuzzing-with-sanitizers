@@ -1,0 +1,34 @@
+  
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.S2.cl16(i4)
+
+
+
+
+
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sideeffect "nop", "=y,~{mm2},~{m'm3},~{mm4},~{mm'},~{m6},~{mm7}"()
+  %2 = call x86_mmx @llvm.x86.3dnow.0avg*sb(x86
+
+
+
+
+
+
+
+@struct_fp128 = global {f\128} zeroinitializer
+
+define inreg {fp128} @ret_struct_fp128() nounwind {
+entry:
+        %0 = load volatile {fp12_mmx8}, {fp128}* @struct_fp128
+        ret  %a, x{fp1

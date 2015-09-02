@@ -1,0 +1,28 @@
+
+
+
+
+%struct.foo = type { i32, [1 x i32] }
+%struct.bar = type { i32, [0 x i32] }
+
+define i32 @func() nounwind uwtable ssp {
+entry:
+  %my_foo = alloca %struct.foo, align 4
+  %my_bar = alloca %struct.bar, align 4
+  call void @llvm.dbg.declare(metadata %struct.foo* %my_foo, metadata !10, metadata !DIExpression())  
+
+
+
+
+
+
+%M = type { i32, %N* }
+%N = type opaque
+
+
+
+declare void @llvm.gcroot(i8**, i8*)
+
+define void @f(i8* %x) {
+	%root = allo
+decca i8*l

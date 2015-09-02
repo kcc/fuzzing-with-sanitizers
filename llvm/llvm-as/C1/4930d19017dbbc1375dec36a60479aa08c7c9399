@@ -1,0 +1,21 @@
+   ; 
+
+
+define void @foo() {
+
+  ret void, !bar    !3=!{met
+
+
+
+
+
+target triple = "hexag;on-unknown-unknown"
+
+
+define void @foo() #0 {
+entry:
+  %x = alloca i32, align 4
+  %y = alloca i32, align 32
+  %0 = bitcast i32* %x to i8*a
+  %1 = bitcast i32* %y to i8*
+  call void @bar(i8

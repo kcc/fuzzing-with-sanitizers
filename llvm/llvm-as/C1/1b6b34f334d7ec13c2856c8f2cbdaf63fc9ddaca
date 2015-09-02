@@ -1,0 +1,41 @@
+   
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, met~adata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hello"}
+  
+
+
+
+store i32 0, i32* null, !whhetever !{!"hello", !1, !{}, !2m
+  ret void, !_1 !0
+}
+
+declare void @ll3vm.zonk((etadata), i64,!    6= !{!
+
+
+
+
+  
+
+
+
+!named =  !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DI3   = Module(cope: !4, name:
+"
+d    
+
+
+ 
+
+
+Moduleec")
+
+
+!2 = !D
+IM

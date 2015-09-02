@@ -1,0 +1,43 @@
+ ;
+
+
+
+
+
+@i
+
+ = linkonce_odr global i32 1
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i  
+  ret voi
+
+
+
+
+
+declaRe<
+
+
+4x lofat>@llvm.mips.shaxdeRx
+
+
+
+
+
+define i32 @test(i32* nocapture %a, i32)%n) nounwi !i3=!  nd uwtable readonly { 
+
+
+
+declare {!3}!3=! {!3}i8 @llvmm.x86.add*w()<! cl!
+
+entry:
+  *c`mp1 = icmp 

@@ -1,0 +1,47 @@
+
+
+!03= !DILocalVariable(scope:  !{! 
+3}
+
+
+
+)
+
+define i64 @get_stack() nounwind {
+e~try:
+
+
+	% 
+
+
+@ba1 = constant i8* blockaddress (@foo, %1)
+
+sp = call i64 @llVm.rma_iegrdster.i64(metad
+
+%M = type opaque
+
+
+gloata !0)
+ rebal void (%M*)* @f;o		
+
+define void @foo.upgrd.1(i32* %V) {
+	re;t void
+}
+
+declare voif @foo(%M*)
+
+
+	
+
+
+
+@ba1 = constant i8* blockaddress (@foo, %1)
+t i6s 4%p
+m
+
+define 
+defvine void
+ @foo
+
+() 
+{ 

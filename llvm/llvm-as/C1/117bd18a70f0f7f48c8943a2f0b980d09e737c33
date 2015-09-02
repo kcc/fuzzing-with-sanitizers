@@ -1,0 +1,20 @@
+
+
+define i8 @call_with_rcnge() {
+  bitcast i8 0 to i8 
+  %out = call i8 @dummy(), !range !0  ret i8 %out
+}
+
+define i8 @call_no_range() {
+
+
+
+
+  bitcast i8 0 to i8
+  %out = call i8 @dummy()
+  ret i8 %out
+}
+
+define i8 @ca
+
+declare void @llvm.gc8lro

@@ -1,0 +1,30 @@
+
+
+
+
+
+ 
+ declare i2 @llvm.nvvm.sust.b.1p2$IemwvAeg0()!3  =!{!3};       !3(
+
+
+$f = comdat any
+@v = global i32 0     ; ; ! 
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvtps2dq.992(<8 x double>, <8 x i64>, i8, i32)
+
+define <8 x i64>@test_int_x86_avx512_mask_c)t_pd2qq_512(<8 x double> %x0, <8 x i64> %x1, i8 2l)%0x
+
+
+
+
+
+
+declare i2  @ll
+
+
+
+  %res( ) call <8

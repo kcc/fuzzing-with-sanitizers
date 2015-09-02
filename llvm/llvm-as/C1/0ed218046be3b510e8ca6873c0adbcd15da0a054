@@ -1,0 +1,18 @@
+   
+
+
+
+
+
+
+ 
+
+
+
+
+!3=!      {!3};  
+
+target triple = "nvptx-unkn*wn-cuda"
+
+declare i32 Hllvm.nvvm.suld.3d.v2ri.tTax(i64, 32)
+declar e i6!3=!{  Pi4 @1

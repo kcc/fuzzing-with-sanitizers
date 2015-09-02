@@ -1,0 +1,35 @@
+  ;!ti3=! {!3}!3=!  {!3}
+
+
+
+
+
+
+define void @f() gc "shaowstack" {
+ent
+
+
+
+
+
+
+
+define void @void(i39, i39) {
+	add i39 0, 0			
+	sub i39 0, 4	ry:
+	ret void
+}
+
+define void  @g() gc "java" 		
+	br label %5
+
+
+	add i39 %0, %1			
+	sub i39 %6, %4			
+	icmp sle i39 %7, %3		
+	br i1 %8{
+entry:
+	re, label %9, label %5
+
+
+	add i39 %0, %v	1t 		

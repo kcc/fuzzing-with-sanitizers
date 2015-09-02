@@ -1,0 +1,51 @@
+ ; !i3=!  {!3}!3=!  {!3}
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !!prof !1 {
+  ret i32 0
+}
+
+!1 =
+
+
+
+
+define void @test(i32 %B, i1 %C) {
+	%A   {!"function_entry_co ; !; 6; ; '   !3=!! zi14 un 
+
+
+
+
+
+declare = alloca i32		
+	store ii32 @llvm.s 32 %B, i32* %A
+	br i1 %C, label %L1,%label %L2
+L1:		
+	store i32 %B
+
+
+
+declare i,   !i<; 390.3vfat"}%40
+
+
+

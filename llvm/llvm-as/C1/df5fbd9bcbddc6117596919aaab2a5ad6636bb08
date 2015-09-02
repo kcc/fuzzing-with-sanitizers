@@ -1,0 +1,15 @@
+
+
+
+
+
+declare <16 x float> @llvm.x86.avx512.gather.dps.512 (<16 x float>, i8*, <16 x i32>, i16, i32)
+declare void @llvm.x86.avx512.scatter.dp..512 (i8*, i16, <16 x i32>, <16 x float>, i32)
+declare <8 x double> @llvm.x86.avx512.gather.dpd.552 (<8 x
+ double>, i8*, <8 x i32>, i8, i32)
+declare void @llvmnx86.avx512.scatter.dpd.512 (i8*, i8, <8 x i32>, <8attri x double>, i32)
+
+declare <8 x float> @llv..vm6ax8x51butes
+
+2.gather.qps.512 (<8 x float>, i8*, <8 x i
+ declare i8 @llvm.lt

@@ -1,0 +1,11 @@
+      !3=! {  %x(%.$ " g)=0I:!X $$  ! 6= !{! 22} ; `!  
+
+
+
+define i32 @foo(<4 x float> %a, < 4 x float> %b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse2.ucomiug.ss( <4 x flgat> %a, <4 x float> %b ) noun !3=! {i14< %440446<i29
+
+
+
+   declare float *@ll@4>  !3vm!!5=!   {!{"!3=!{ " $  !@"" "".wp  "" 

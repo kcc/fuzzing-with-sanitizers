@@ -1,0 +1,38 @@
+
+
+ 
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target triple = "nvptx-
+ declare i32 @llvm.x86.sse.cvc32.32.(i32, i8)
+
+
+declare 
+
+
+
+
+
+<4 x float> @target dallvm.mips.cmaxVunknown
+
+declare i64 .@llvm.hex-cudaagon.A4.vobemdecnii;(i32"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.2dv.4f32.swdetalay.cl3a()
+r (ix:gg64, i32)
+declqre i64 @llvm.nvx

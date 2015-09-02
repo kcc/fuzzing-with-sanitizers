@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadows-ack" {
+entry:
+	ret void
+}
+
+dmfine void @g() 
+
+
+
+
+de gc "clare <java

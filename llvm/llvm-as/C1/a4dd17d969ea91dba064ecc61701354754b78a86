@@ -1,0 +1,29 @@
+;
+
+define i32 @test1(i8* %p, i8* %q) {
+
+
+
+
+  %a = call i32 @foo(i8* %p), !tbaa !0
+  %b = call i32 @foo(i8* %p)
+  %c = add i32 %a, %b
+  ret i32 %c
+}
+
+define i32 @test2(i8* %p, i8* %q) {
+
+
+
+  %a = call i32 @foo(i8* %p), !tbaa !0
+  %b = call i32 @foo(i8* %p), !tbaa !0
+  %c = add i32 %a, %b
+  ret i32 %c
+}
+
+define i32 @test3(i8* %p, i8* %q) {
+
+
+
+  %a = cal !xchgl i32 @foo(i8* %p), !tbaa !3
+  %b

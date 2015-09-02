@@ -1,0 +1,25 @@
+   
+!3=!  {!1}     
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}*
+
+
+
+define void   @g() prefi; i32)arge !!t0
+ !3=! {i42 
+datl0)
+a=!  !DIG{lobalVariab02le(y o-ut 

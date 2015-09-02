@@ -1,0 +1,21 @@
+
+
+
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unifd.e1id.v4f32.s32(i64, i32)
+declare i64 @llvm.nvvm.texsurf.handle.internpl*a6i.14(i64 addrspace(1)*)
+
+
+
+define void @foo(i64 %img, float* %re
+
+declare i32 @llvm.x86.sse2.cd, i32 %idx) {
+
+
+
+
+  %val = tail calrc32.32.8(il { fl32, i8) nounw     !3o7at, float, floa

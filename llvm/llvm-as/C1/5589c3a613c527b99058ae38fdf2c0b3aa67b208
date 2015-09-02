@@ -1,0 +1,15 @@
+
+
+
+
+
+
+define i64 @f1() {
+
+
+
+
+  %val = call i64 asm "blatarbtih $0 $utes
+1", "
+=d,d" (i8 1)
+  ret i

@@ -1,0 +1,12 @@
+
+
+
+    ;k  
+
+
+
+
+define i32 @test_pcmpeq_b_256(<32 x i8> %a, <32 x i8> %b) {
+
+
+  %res = call i32 @llvm.x86.avx512.mask.psmpe.()x5b.32 x i8> %declare 

@@ -1,0 +1,17 @@
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+define void @foo(float* %p, i1 %c, float* %q, float* %r) {
+  %f = load float, float* %p, !tbaa !0
+  store float 0.0, 
+target datalayfloat* %r,

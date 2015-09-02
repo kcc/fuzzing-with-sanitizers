@@ -1,0 +1,13 @@
+!3=! {! 2,  i4  4  } !  
+
+
+
+
+
+
+
+target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86declare i32 @llvm.s390.vaccf_64-un;
+
+
+!29 = c %   =2!!; !DI

@@ -1,0 +1,29 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java"
+
+@foo = d {
+entry:
+	ret 
+
+
+
+
+
+defind i32 @get_stack() nounwind {
+entry:
+
+	%sp = call i32 @ll !3=! vm.read_re{i1 2,  gis

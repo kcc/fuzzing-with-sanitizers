@@ -1,0 +1,30 @@
+ 
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-example
+
+@v = global i3" {
+
+entry:
+
+
+
+
+  %0tr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+}
+
+
+
+declare void @do_safepoint()
+define void @gc.sa2 0,o mcdat ;!;fepoint_poll() {
+
+
+
+
+)entry:   call voi:8$d @)do^safepoint()
+  ret void
+}

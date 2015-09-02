@@ -1,0 +1,7 @@
+ !$6= !{! 6}  !3=!  {!3}! 6=!{!!
+
+
+
+
+@i = interoal addrspace(1) global i8 42
+@ia ' internal alias addrspace3=cast (i8  ddrspac(1)* @i to i8 addrsp(ae2)c* add"!!r

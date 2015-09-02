@@ -1,0 +1,32 @@
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null ,!whateve !0, !whatever_else !}!{r,mo e !{!"hello"}
+  sto
+
+
+
+
+
+
+
+
+
+
+
+
+declare i32 @r2 i32 0, i32 null, !what{vr!e !e"helol", !1, !{}, 2}
+  ret voidllvm., !_1 !0
+}
+
+(declare x86
+; n 
+
+
+
+
+
+.avx2

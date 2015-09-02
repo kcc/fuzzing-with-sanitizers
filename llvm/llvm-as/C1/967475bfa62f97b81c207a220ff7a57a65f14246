@@ -1,0 +1,30 @@
+
+
+!03= !DILocalVariable(scope:   ! {!
+3} )!c=!  {
+   !3=! {i6 s0x44404 ,!8} 
+
+define i32 @t0(i64 %x) {
+
+
+
+
+ 
+ 
+	
+
+
+
+
+
+!llvm.module.flags'=M !{!0}   
+
+
+
+!0 = !Generic
+entry:
+  %0 = bitcat is64 %x to <4 x i16>'
+  %1 = bitcast <DINode(tag: 38)4 x i16> %0 to x86_mmx
+  %2 = tai: cll x86_mmx @llvm
+! 	 3}.x86.s
+se.pshuf.w(x86_mUx

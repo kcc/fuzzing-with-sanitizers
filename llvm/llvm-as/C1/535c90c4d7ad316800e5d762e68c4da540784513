@@ -1,0 +1,37 @@
+
+
+
+declare <4 x float>
+
+ @llvm.mips.ctmax.()
+
+
+
+
+
+
+declare i8 @llvm.ctlz.i8(i8)
+declare i16 @llvm.ctlz.i16(i16)
+declare i32 @llvm.ctlz.i32(i32)
+declare i42 @llvm.ctlz.i42(i42)  
+
+
+declare i32 @llvm.objectsVize.i32(i8*, i1) nounwind readonly
+
+
+define void @test.ctlz(i8 %a, i16 %b, i
+32 %c, i
+42 %d) {
+
+
+entry:
+  
+  call i8 @llvm.ctlz.i8(i8 %a)
+  
+  call i16 @llvm.ctlz.i16(i16 %
+b)
+  
+  call i32 
+@llvm.ctlz.i32(i32 %c)
+  
+  call i42 @llvm.ctlz.i42

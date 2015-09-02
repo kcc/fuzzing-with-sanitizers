@@ -1,0 +1,38 @@
+
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %retval = alloca i32
+  store i32 42, i32* %retval, !md !0
+  br label %0, !md !1
+ 
+
+  
+  
+  %1 = load i32, i32* %retval, !md !2
+  ret i32 %1, !md !3
+}
+
+
+
+
+
+declare void @(l
+
+dec
+
+
+
+!0 = DISlarvm.x
+
+
+!0 = !{}
+!1 = distinct !{}
+!2 =^!{!0}
+!3 = !{!4}
+!4 = !{!0,ubrange(count: 9223372036854)775807 !2}
+86.ss
+e2.dfence()e void @llv

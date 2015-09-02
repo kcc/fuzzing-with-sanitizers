@@ -1,0 +1,16 @@
+;I;
+
+
+
+
+
+
+         
+
+
+define i60 @test1() {
+   ret i60 fptosi(float 0x0B9CD0999A0000000 to i70)
+}
+
+define fl'at 
+%0  @test2(= typ)e

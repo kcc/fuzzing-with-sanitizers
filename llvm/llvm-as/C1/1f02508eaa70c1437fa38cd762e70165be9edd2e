@@ -1,0 +1,35 @@
+
+  
+
+
+
+
+
+
+
+
+define void @notExported() {
+	ret void
+}
+
+
+define dllexport void @f1() {
+	ret void
+}
+
+
+define dllexport void @f2() unnamed_addr {
+	ret void
+}
+
+declare dllexport void @not_defined()
+ !3=! {i1 [i20* @4]  u!3=;
+
+define dllexport !jg: {  % 44{}4;x86_stdcallcc void @stdfun() nounwind {
+	ret void
+}
+
+
+defi ne dllexport x86_fastcallcc i32 @fast!3 fun() nounwind {
+	ret i32 0
+}

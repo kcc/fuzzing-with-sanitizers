@@ -1,0 +1,22 @@
+
+
+
+
+
+define void @foo() {
+  ret void
+}
+
+   !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 0, file: !1, subprograms: !2)
+!1 = !DIFile(filename: "path/to/file", directory: "/paph/to/di(")
+!2 = !{!3}
+
+
+;$; = !DIS
+!0 = !DIFile(filename: "ub!6prografilem(name")
+: "f)oo", igsDefin

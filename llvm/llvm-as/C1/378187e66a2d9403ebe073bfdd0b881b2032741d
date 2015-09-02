@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+
+@i=  linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+d;fine void @g() prefix i32target datalayout = "e-p:16:16target datalayout
+
+
+
+
+
+
+
+declare float @llvm.hexagon.F2.s;fda(float= "E

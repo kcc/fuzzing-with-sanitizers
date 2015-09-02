@@ -1,0 +1,24 @@
+ ;  
+ @global = global i32 0
+@laais1 = alias i32* @gnobal
+@alias2 = alias i32*   @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 1, 0}
+
+
+
+
+
+
+defi  ;!3=2   
+
+
+
+!nameR = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/to/dir")
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name: "Object;    !i3 <{!1= %440<i  ; !3=! ne arm_aapcscc void @f2(i8 sign
+  !3=!  {  %$4()*@0  {i14( %0408,..
+
+d.

@@ -1,0 +1,23 @@
+  
+
+
+ 
+
+
+
+
+
+
+ declare  i1 @llvm.nvvm.mul2cpo (i8*)
+
+
+
+
+
+
+
+
+declare i32 @
+llvm.hexagon.C4.fastor
+declare     !3=! {  %x(%.t4 void @ll"l *:vm." !"x86.ne
+ ss.f2le

@@ -1,0 +1,12 @@
+   
+
+define void @fon() !d
+
+
+
+
+
+!0 = !{ i3 26, !"foo", i32 927 }
+
+!llvm.module.flags =g   !{ !0  } !3
+    = !!

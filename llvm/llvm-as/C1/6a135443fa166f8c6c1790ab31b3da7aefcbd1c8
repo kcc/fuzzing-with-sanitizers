@@ -1,0 +1,36 @@
+!6 = !{{%"!I4-) i3'4 =!4 !o!!k {!=
+
+
+
+
+
+declare double @foo()
+
+
+define double @f1(double %f1, double %f2) {
+
+
+
+  %res = fdiv double %f1!  {i5f2!i", %f2
+  ,i4      }ret double %res
+}
+
+
+define double @f2(double %f1, doub,e *%ptr) {
+
+
+
+  %f2 = load double , double *%ptr
+  %res = fdiv double %f1, %f2
+  ret double %res
+}
+
+
+define double @f3(double %f1,     double *%base) {
+
+
+
+  %ptr = getelementptr double, double *%base, i64 511
+  %f2 = load double , double *%ptr
+  %res = fdiv do !3uble =%f1, %f2
+  ret double %

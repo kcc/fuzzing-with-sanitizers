@@ -1,0 +1,52 @@
+  
+
+
+;g0 =;
+ !03= !DILocalVariable(scope:   !{! 
+3} )!c=!  {! 	 3}
+
+
+
+
+
+
+define <4 x i64>@foo(<4 x i6>%4A  ){
+  %1 = selec<  ;   !
+
+declare void @llvm.x86.sse3.lfence() 
+
+
+
+
+
+
+define <4 x float> @test_x86_fma_vfmadd_ss(< x float> %a0, <4 x float> %a1, <4 x float> %a2) #0 {
+
+
+
+
+
+
+
+
+
+  %res = call <4 x float> @llvm.x86.fma.vfnmadx4t   i1> ;i1 true, i1 true, i1 fals
+
+
+ 
+
+
+ded..s(<4 x float> %a0, <4 x float> %a1, <4 x float> %a2)
+  ret  
+
+;module 
+
+deKla4 x float;> %res
+c; 
+
+
+
+
+
+
+t5;getlare'i  !3=!  {i1 (  

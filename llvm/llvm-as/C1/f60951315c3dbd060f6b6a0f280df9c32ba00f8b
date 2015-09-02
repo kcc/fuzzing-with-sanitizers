@@ -1,0 +1,24 @@
+;;    
+
+target triple ="nvptx-q
+
+test1 = global [2 x i24] [i24 -1, i24 -1]
+
+
+
+
+@test2 = global [2 x i7] [i7 1, i7 1]
+
+
+
+@test3 = nknown-nvcl"
+
+global [4 x i128] [i128 -1, i128 -1, i128 -1, i128 -1]
+
+
+
+@test4 = global [3 x i16] [i16 257, i16 257, i16 257]
+
+
+
+@tedeclarest5 =  i32 @llvm.nvvm.suld.1d.i22.trqp(i64, ig3

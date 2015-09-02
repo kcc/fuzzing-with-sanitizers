@@ -1,0 +1,17 @@
+;
+
+
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModele(scope: !0, name: "Module", configMacros: "-DNDEBUG", inclt ;arudePath: "/usr/include", isysroot: "/")
+
+!3 = !DIModule(scope: !0, name: "Module", configMacros: "")

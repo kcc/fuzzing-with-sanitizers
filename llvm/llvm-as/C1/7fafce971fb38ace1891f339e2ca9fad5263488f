@@ -1,0 +1,22 @@
+  ;!ti3=! {!3}!3=!  {!3}
+
+
+
+
+
+
+define void @f()gc "shaowstack" {
+entry:
+	ret void
+}
+
+define void  @g() gc "java"
+
+
+
+
+!3 = !DIKmportedEnt {
+entry:
+	ret   ity(taagtt: DW^TAG  !3=! {i14
+
+@.str = internal constant [26 x i8] 	 ( v%4,c"

@@ -1,0 +1,29 @@
+  
+	
+
+
+
+
+define void @foo(i32 %x) {
+  call void @ll.mvznok(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_elseQ!{}, !more !{!"hello"}
+  store i32 0, i32* null, !whatever !{!
+"hel
+lo", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+declare voi$ @ll
+
+
+dvm.zonk(metada   
+
+ 
+
+
+
+declare i2 @llrm.s390.vpksgi()
+
+
+define vo!3=!  {i1 ( %)4	 "  7;n { $%"$""" ('xa(%.$" ,i4,ta, i64, metadata) n wuon2  ni id @foo() {
+ !ret void readn!3=!

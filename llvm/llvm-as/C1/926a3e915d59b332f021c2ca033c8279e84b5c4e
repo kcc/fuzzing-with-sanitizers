@@ -1,0 +1,51 @@
+
+
+
+
+
+!llvm.ident = !{!0}
+!0 = !{!{!"newt
+e  e
+
+
+tadata"}}
+
+
+ !3=! {! 2,  i4  
+
+
+;  xfs!;
+
+*
+
+@fo4  }       !2=! {!3,!3} ;;!y3=!   = alia{!3}!i=
+s i32 (
+
+
+
+%X = type { i32 }
+;;
+
+@x =extrn_weak global )3
+
+
+
+
+
+
+
+
+
+
+
+%33 =type  
+
+
+
+declare <2 x i64> @llvm.pp    %3  
+
+
+
+!naed = !{!0, !1, !2, !c.altivec.vmaxsw(<2 x i64>, <2 x 3, !4, !5}
+
+!0 i64>) 

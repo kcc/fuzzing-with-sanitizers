@@ -1,0 +1,38 @@
+
+
+
+!0 = !DIGlobalVariable(name:  "
+	
+
+
+
+
+
+!0 = !DILocation(scop3:
+
+
+
+
+
+
+
+!3) 
+
+
+
+
+
+define void @foo(i32 %v) {
+
+entry:
+
+  call void @llvm.bar(metadata !0)
+
+
+  ret void, !ba^= 
+ o
+pID !1
+}
+
+decl
+_")j!llvamr.

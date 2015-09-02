@@ -1,0 +1,40 @@
+ !3=! {! 2 , i4  4  }       !2=! {!3,!3}  ;    ;! 6F;   
+
+
+
+
+
+
+
+define void 
+itrin_pmov i16* ngalias %dest, i8* n
+
+d'eclare i32 @llvm.nvvm.ll29teb(i3, i3  
+)
+   !3=!{! 2, i4 4  }
+
+Foaias?%src) nounwind uwt
+
+
+
+
+declarable ssp {
+  %1 = bitcastci8* %src! to <2`x i64>*
+  %2 = load <2 x i64>, <2 x i64>* %1, align 16
+  %3 = bitca*t <2 x i64> %2 to <
+
+define ;i16 x i8>
+  
+;: 
+
+
+
+
+
+
+declare i32 @llvm.hex%4 = tail call <8 x i1e i32 @llvm.s390.lcbU(i8 agnu.A.s2ia()
+*,
+
+
+!llv i32m.module.flags = !{6> @llm)
+d8ecl

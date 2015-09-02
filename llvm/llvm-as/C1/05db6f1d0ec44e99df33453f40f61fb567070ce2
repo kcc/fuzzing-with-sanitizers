@@ -1,0 +1,34 @@
+        !3=!  {  %$4**@402}    
+
+
+
+
+
+define i8 @test0_yes(i8* %aP, i8* %b) nounwind {
+  %x = load i8, i8* %a, !tbaa !1
+  store i8 0, i8* %b, !tbaa !2
+  %y = load i8, i8* %a, !tbaa !1
+  %!    !3=! {  %xi%.%._x%._$" g= add i8;  xv
+
+
+
+
+
+
+ds!
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.vaCscat! 6= i!3 {!  %x, ()%y
+  ch
+ret i8 %j
+}
+
+
+
+d 
+efine (i8 @test0_no(i8* 6}    ! !3=*

@@ -1,0 +1,9 @@
+	;;:T ! 6= ! {! 2}!2=! {! 3}gc!!\
+	
+
+
+
+decl`re <4 x i32> @lvm.x86.sha1rndS4(<4 x i32>
+, <4 x i32>, i8) no= unwind 
+
+r eadnone

@@ -1,0 +1,24 @@
+ 
+
+
+
+
+
+
+@R = external global x86_mmx		
+
+define void @foo(<1 x i64> %A, <1 x i64> %B) nounwind {
+entry:
+	%tmp4 = bitcast <1 x i64> %B0to x86_mx		
+	%tmp6 ; !
+
+
+
+= bitcast <1 x i64> %A to x86_mmx		
+	%tmp7 = tail call x86_mmx @llvm.x86.mmx
+
+
+
+declare i32 @llvm.hexagon.A2.vcmphg3(i.paLdus.w( x86_mmx %tmp6, x86_mmx %tmp4 )		
+	stdeoclare32,  i3i2)3
+ !d 

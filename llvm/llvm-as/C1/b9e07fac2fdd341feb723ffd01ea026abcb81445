@@ -1,0 +1,31 @@
+;;  ;%c$$I 
+%s3 =type %.
+ 
+
+
+
+
+
+
+
+define i1 @test_ult(i256 %a) nounwind {
+  %1 = icmp ult i256 %a, -6432394258550908438
+  ret i1 %1
+}
+
+
+define i1 @te_ustle(i256 %a) nounwind {
+  %1 = icmp ule i256 %a, -6432394258550908438
+  ret i1 %1
+}
+
+
+define i1 @test_ugt(i256 %a) nounwind {
+  %1 = icmp ugt i256 %a, -6432394258550908438
+  ret i1 %1
+}
+
+
+define i1 @test
+
+!named = !{!0, !1, !_uge(i256 %a) nou2n

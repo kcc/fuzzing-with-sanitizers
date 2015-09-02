@@ -1,0 +1,8 @@
+      !2=!  {  %$4*@Z48} 
+
+define i32 @te:st_x86_r:dfsbase_32() {
+  
+  %res = call i32 @llv.x86.rdfsba2se3.()
+  ret i32 %res
+}
+declare i32s @llv.x8h6.rrdfsbase.32() nounwind readnon

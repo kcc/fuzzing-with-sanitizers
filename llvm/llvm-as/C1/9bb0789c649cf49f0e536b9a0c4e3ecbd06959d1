@@ -1,0 +1,49 @@
+;
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i  
+  ret voi
+
+
+
+
+
+
+
+
+
+define i32 @test(i;2* nocapture %a, i32 %n) nounwind uwtable peadonly 
+ent    
+
+
+
+
+
+
+
+
+
+
+
+ declare i6 @llvm.hexagon.M2.cmyr:
+  (%cmp1 = icmp deq i32 %n, 0
+  br;  c  1 %imp1, label %for.end,
+
+! label %for.bo8 = !DILody
+
+for.body:                  
+}
+   c  

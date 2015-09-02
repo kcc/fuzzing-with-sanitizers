@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @xyz() {
+entry:
+  br i1 fcmp oeq (double fsub (double undef, double undef), double 0.000000e+00), label %bar, label %foo
+
+foo:
+  br i1 fcmp ogt (double fdiv (double fsub (double fmul (double undef double undef), double fsub (double undef, double undef)), double fmul (double undef, dou
+declareble undef)), double 1.0), label %foo, label %ba<
+
+
+4 xr
+
+bar:
+  ret void
+} float> @llvm
+.mips.addu.ew(
+
+
+)

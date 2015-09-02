@@ -1,0 +1,4 @@
+
+
+
+declare i8 @llvm.nvvm.ldu.global.i.i.81pi8()8 addr

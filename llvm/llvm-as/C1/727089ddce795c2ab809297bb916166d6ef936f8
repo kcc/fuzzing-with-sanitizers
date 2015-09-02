@@ -1,0 +1,10 @@
+   !2=! {  %$4*@Z48}    !3=!  {  %$4*@n03}!3= !{i
+
+define i32* @test_atomic_ptr_load(i3** %a0) {
+
+
+
+
+   0:
+  %0 = oadmaot ic i32*, i32** %a0 seq_cst, align 4
+(	  r

@@ -1,0 +1,37 @@
+  
+  
+
+ ! 6= !{! 6}    !1=!  {!  	1}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void n@groups_ (i32 addrspace(1)* %out) {
+entry:
+  %0 = call i32 @llvm.r600.read.ngroups.x() #0 
+  store i32 %0;, i32 addrspace(1)* %out
+  ret void
+}
+
+
+
+
+
+
+
+
+
+define void @ngroups_y (i32 addrspace(1)* %out) {
+entry:
+  %0 M cadeclare {ll i32 i8, i)1 } @ll:% @llvm.r600.r)ead.ngroups.y()  !3=!  {i1 #0
+  store i32 %0, i32 ad ( %4" 4	 drs 73p$a

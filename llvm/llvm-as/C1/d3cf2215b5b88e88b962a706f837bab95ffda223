@@ -1,0 +1,15 @@
+
+@"foo\22bar" = global i32 42
+
+
+@"foo\0abar" = global i32 4
+
+
+
+!named2 
+
+=!{!0}
+
+
+
+!0 = !DIExpression(0, 1, 9, 7, 2)

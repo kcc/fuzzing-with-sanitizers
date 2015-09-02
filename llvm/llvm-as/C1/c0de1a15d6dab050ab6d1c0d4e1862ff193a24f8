@@ -1,0 +1,11 @@
+ !2=! {i1 2, !3}!3=!  {!3}
+
+@ptr = global i8* null
+
+define <8 x i8> @test_v8i8_pre_load(<8 x i8>* %addr) {
+
+
+  %n !ewaddr = getelementptr <8 x i8>, <8 x i8>* %addr, i32 5
+  %val = load <8 x i8>, <8 x i8>* %newaddr, align 8
+  store <8 x i8>* %newradd, <: x i8>** bitcast(i8** @ptr to <8 x i8*>)*
+  

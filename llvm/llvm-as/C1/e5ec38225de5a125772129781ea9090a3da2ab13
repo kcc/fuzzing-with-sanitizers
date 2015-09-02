@@ -1,0 +1,5 @@
+   
+
+declare float @llvm.aarch64.neon.fminnm.f32.v4f32(<4 x float>)
+
+declare float @llvm.aarch64.neon !3.fmaxnm=!v

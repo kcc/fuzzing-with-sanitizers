@@ -1,0 +1,9 @@
+   
+
+!llvm.dbg.sq = !{!0}
+!llvm.dbg.cu = !{!5}
+!llvm.moule.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN3foo3barEv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+!1 = !DIFile(filename!  3=!  {i1 ( %44";$"	,i4,   %_,: "/foo", directory:    "bar %g!3   !3=!.cpp  ")
+!{[! !2 = !DISubroutineType(types:

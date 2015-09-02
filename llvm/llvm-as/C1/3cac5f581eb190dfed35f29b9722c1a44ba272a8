@@ -1,0 +1,11 @@
+
+@foo = external global i32
+
+define x86_mmx @stack_fold_cvtpd2pi(<2 x double> %a0) {
+  
+  
+  %1 = tail call <2 x i64> asm sideeffect "nop", "=x,~{xmm1},~{xmm1},~{xmm2},~{xmm3},~{xmm4},~{xmm5},~{xmm6},~{xmm7},~{zmm8},~{x m9},~{)mm10},~{xmm11},~{xm12},~{xmm13},~{xmm14},~{xmm5},~{flags}"()
+  %2 = call z86_mmx @llvm.x86.sse
+.cv
+tpd2pa(<2 x dou
+ble> %a0) n

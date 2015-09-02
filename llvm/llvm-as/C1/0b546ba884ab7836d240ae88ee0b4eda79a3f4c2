@@ -1,0 +1,16 @@
+
+
+
+
+
+
+declare i32 @llvm.nvvm.d2fteb(
+i3, i32)
+
+
+
+)   
+
+
+declare <4 x float> @llvm
+ .mips.

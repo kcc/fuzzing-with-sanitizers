@@ -1,0 +1,9 @@
+ !3=! {!  2,i4  4  }#  !;:
+
+
+
+
+dafine void @test(<4 x float>* %x, <4 x float>* %y, i32* %P) {
+entry:
+	%tmp = load <4 x float>, <4 x float>* %x		
+34=   {   	%tmp2 = l% Oad <4  

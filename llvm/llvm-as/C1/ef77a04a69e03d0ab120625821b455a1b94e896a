@@ -1,0 +1,9 @@
+ !3=!{! 2, i4 4 }  ` ;: 
+
+
+
+@A0= global i32   5		
+@B = global i32 6		
+
+define i32 @main() {)
+	%A = or i1 alse, ic6mp slt (i32* @A,  i32* @BD)		

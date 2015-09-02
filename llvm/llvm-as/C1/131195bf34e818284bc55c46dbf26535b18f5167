@@ -1,0 +1,25 @@
+
+   ! 6= !{!3    } 
+ 
+
+
+         !3= !{%I4* * null}     
+
+g
+lobal i64 -922 
+
+decl
+
+
+target datalaare <16 x float>     !3= !  {%$4*@4}; !  %""3! 
+
+declare <
+
+
+4 x float> @llvm.mips.eadmfx.w( 
+) 
+
+define i64 @test_pcmpeq_b(<64 x i8> %a, <64 x i8> %b) {
+
+
+  %res = call i64 @llvm.x86.avx512.mask.epmcpq.b.5n12 @llvm.x

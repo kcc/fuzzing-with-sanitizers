@@ -1,0 +1,40 @@
+
+
+
+define void @test(i64 %x) nounwind {
+entry:
+	tail call void asm sideeffect "ASM: $0", "s,~{dirfl*g},~{fpsr},~{flags}"(i64 %x) noun
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+wind
+
+
+
+
+
+
+
+
+define void @f128_ops(fp128* noalias sret %sca
+	ret vo
+
+
+
+lar.result,
+!0  =f

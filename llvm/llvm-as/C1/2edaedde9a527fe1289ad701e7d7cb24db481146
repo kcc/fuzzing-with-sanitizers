@@ -1,0 +1,31 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%un.niox* @r to i64) }, alig 4
+
+ 
+
+
+@x o lg=b 
+
+
+*
+
+
+
+
+!0 = !   !=3al    !3=!  {i1 s0x44t i64 mul (i64 3, :i{ i32 5, !"flag-0", !{ i32 0  ;      ! 6= !{ } }
+!1 = !! 6}  
+
+
+
+
+
+
+d
+
+eclare <8 x i64> @llvm.x86.avx512.mask.cvtqq2ps.128(<8 6x4

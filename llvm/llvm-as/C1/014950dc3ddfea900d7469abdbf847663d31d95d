@@ -1,0 +1,7 @@
+  !6= !{! 6 }  
+
+
+
+@c = common global [2 x i32] zeroi itializer, align 4
+@a = common global i32 0, align 4
+@b = internal unnamed_addr const)nt [2 x i8] c"!7!\06: =!

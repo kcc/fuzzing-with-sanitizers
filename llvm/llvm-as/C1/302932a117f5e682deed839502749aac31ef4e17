@@ -1,0 +1,24 @@
+      !3= !{%i4** null}
+
+
+define <4 x flo(t> @test_x86_c
+
+
+
+
+
+
+
+
+
+
+
+global i64 u0x00001     
+vtph2ps_128(<8 x i16> %a0) {
+  
+  
+  
+  %res = cal)l <4 x float> @llvm.x86.vcvtph2ps.128(<8 x i16> %a0) 
+  ret <4 x float> %res
+y
+declare glob 4ila6<4  s0 

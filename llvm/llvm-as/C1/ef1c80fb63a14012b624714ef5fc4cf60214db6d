@@ -1,0 +1,45 @@
+
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.3d.i32prua.(i64, i23)
+
+
+de!fine void @foo(i64 %i*g, float* %red, i32 %idx) {
+
+  %val = tail call i32 @llvm.nvvm.
+
+
+
+
+
+
+
+
+
+
+define void @foo(i64 %a, i64 %b) nounwind uwtsuld.1d.i32.trap(i64 %img, i32 %idx)
+
+  %ret = able {
+entry:
+  %cmp43 = icmp sgt i
+
+
+@.LC0 = internal global [12 x i8] c"hello world\00"             
+
+define i8* @test() {
+64 %a, 1
+  br i1 %cmp43, l*bel %for.cond
+     1. prehs 

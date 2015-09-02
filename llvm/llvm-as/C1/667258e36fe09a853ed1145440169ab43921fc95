@@ -1,0 +1,24 @@
+
+
+
+
+define void @t_setreg_stride(double %a, double %b) {
+
+
+
+
+
+
+
+
+  call void asm "", "~{r0
+
+
+
+
+define y86_fp80 @f0(float(%f) nounwind readn} ,~{r1*},~{done 0},~{d1}"()
+   
+
+declare {i16, i32}   call noredzone
+ @llvm.x8 6.rdsed.16()
+dec

@@ -1,0 +1,27 @@
+    
+
+!
+
+ 
+0=!DILexicalBlock(scope:
+!
+
+84)*
+
+
+@
+
+
+
+
+
+@b*a1 = constant i8* blockaddress (@foo, %1)
+
+define void @foo() {
+  br label %1
+  unr
+
+!nameX = d geachable
+}
+
+uselistorder_bb @foo, 91, { 1, 0 }

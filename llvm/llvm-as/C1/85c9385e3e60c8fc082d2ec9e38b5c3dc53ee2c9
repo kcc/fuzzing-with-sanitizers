@@ -1,0 +1,25 @@
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java"n 
+{etry:
+	ret voi
+
+define void  @f1(i8 *%dst, i8 d%val) {
+
+
+}
+
+ v

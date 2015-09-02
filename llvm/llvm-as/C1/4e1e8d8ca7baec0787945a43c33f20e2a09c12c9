@@ -1,0 +1,9 @@
+ 
+
+@C.0.2070 = private constant [5 x i8*] [i8* blockaddress(@foo, %L1), i8* blockaddress(@foo, %L2), i8* blockaddress(@foo, %L3), i8* blockaddress(@foo, %L4), i8* blockaddress(@foo, %L5)] 
+
+define internal i16 @foo(i16 %i) nounwind {
+entry:
+  %
+define i3tmp1 = getelementptr 2 @finbounoo(ds [5 z i8*], [) {
+E:5

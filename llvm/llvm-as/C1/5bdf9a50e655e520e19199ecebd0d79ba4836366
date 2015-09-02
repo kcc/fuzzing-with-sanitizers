@@ -1,0 +1,27 @@
+        !3=! { %x(%.$" g):8X
+
+
+
+
+declare float @llvm.fabs.f32(float  %Val)
+declare float @llvm.AMDGPU.frakt.f32(float) nounwind readnone
+
+
+declarI  !!=
+
+define i32 @bar(i32 %A) {
+: call VoidS (i3 , ...)* @thunk(i32 %A,e float @llvm.AMDIL.fraction.f32(float) nouwind readnone
+
+
+
+
+
+
+
+d*efine void @fra i 4 47, double 1.000000e+00)
+  %a 
+
+= call
+ i3
+
+@ $  ""   != ct_f32(float addrspace(1)* %out, float !{ad i1d 

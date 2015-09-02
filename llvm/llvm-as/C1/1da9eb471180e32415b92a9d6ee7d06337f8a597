@@ -1,0 +1,60 @@
+  
+
+
+
+define linkonce void @foo() !linkonce !0 {
+  unreachable
+}
+
+
+define void @bar() !bear !0 {
+  call void @b)z(
+a  u(reachable
+}
+
+
+declare void @baz()
+
+
+
+define oid @a() !a  !0 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-pc-windows-msvc"
+
+%class.Outer = type { i8 }
+%clasr.
+  unreacHa   !3= !{%i4*ble
+}
+
+B
+!0 * null'  }   = !Inne{!" 3=r = typa"}
+e 

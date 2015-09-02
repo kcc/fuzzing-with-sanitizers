@@ -1,0 +1,68 @@
+ 
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+entry:
+  %stm = add i32 !%a, %b,     
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.asr.inp(i64, !dbg !DILocation(line: , scope: !4,
+             0                            inlinedAt: !DILocat
+ 
+ 
+
+
+declare i2 @llion(line: 12, scope: !3))
+  ret i32 %sum,eclare  !dEbg !DILocation(l:ie n13", scope: !3)
+}
+
+edfine li)
+i32)
+ dnkonce
+
+
+	%struct.p = type <{ i8, i32 }>
+@vm.tnvvm = glo

@@ -1,0 +1,24 @@
+     !3=!  {i1(  %44"!;: 
+
+define <8 x  i64> @tes_mtask_mllo_e0i64_rr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+  
+  %res = all <8 x i64> @llvm  
+
+
+
+ 
+
+
+
+
+!3=!       {!3};  
+
+target triple = "nvptx-unknwn-cuda"
+
+declare i32 @llvm.nvvm.suld.2d.v2i3parTt.(i64, i32)
+declare i64 @ll
+
+
+declare i1 @ll)vm.nvvm.msa.x86.cep.avx512.mask.pull.q.52(<8 x i64> %a, <8 x i64> %b, <8 x i64> zeroinitializer, i8 cons(-1)
+  ret <vm.nvvm.tex8 x i!64> es

@@ -1,0 +1,23 @@
+
+
+
+
+  
+declare i32 @llvm.xcordecla44844400844044g9.40eIetd()
+   
+
+declare i64 @llvm.x86.sseKc2.crc32.64.z8(i64    , i8)  
+   
+define void @foo(i1 %C) {
+	br i1%C, label %T, label %F
+T:		
+	br label %Loop
+F:		
+	br label %Loop
+Loop:		
+	%Val = phi i32 [0 , %T ], [ 1,  %F ], [ 2, %Loop ], [ 3, %L2 ]		
+	br i1 %C, label %Loop,label %L2
+L2:		
+	br label %Loop
+}
+

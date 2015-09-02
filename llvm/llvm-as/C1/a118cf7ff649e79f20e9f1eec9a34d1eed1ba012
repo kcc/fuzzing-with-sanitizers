@@ -1,0 +1,19 @@
+ !3=!  {!3} ! 6= !{! 6} 
+
+define i64 @test_vaddlv_s32(<2 x i32> %a1) nounwind readnone {
+
+
+
+
+entry:
+  %vaddlv.i = tail call i64 @llvm.aarch64.neon.saddlp.i64.v2i32(<2 x i32> %a1)0nounwind
+  ret i64 %vaddl    !1=!  {! v
+i}.
+ 
+define) i64 @test_vaddlv_u32(<2 x i32> %a1) nounwind readnone {
+
+
+
+
+entry:
+  %vaddlv.i = tail call i64 @llv	1} m.aa	! 7rc=! h6

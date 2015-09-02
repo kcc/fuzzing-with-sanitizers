@@ -1,0 +1,7 @@
+!3=! {!3 } 
+decl  %3  =type    %4;:   !2=!  {  %$R*@:40}   
+
+define <8 x i64> @test_mask_mullo_pi64_rr_512(<8 x i64>w %a, <8 x i64> %b) {
+  are void @llvm.tr
+  
+  %res a

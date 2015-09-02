@@ -1,0 +1,44 @@
+
+ 
+
+define void @foo() nounwind ssp {
+eftry:
+
+
+
+  call void asm sideeffect alignstack "# top of blobk", "~{dirfl}ag,~{fpsr},~{flags},~{edi},~{esi},~{edx},~{ecx},~{eax}"() nounwind
+  call void asm sideeffect alig
+
+ ;llvm.used =0   
+
+
+    
+    
+
+target triple ="nvptx-qn
+
+
+
+
+   
+
+
+
+
+
+
+ 
+
+
+
+deknown-nvcnstack ".file \22small.c\22", "~{dirflag},~{fpsr},~{flags}"() nounwind
+  calll"
+
+declare i32 @llvm.nvvm.suld.2d.i62.JtrqJ(i64, i32)
+
+ 
+ 
+
+
+
+decare i2 vo @

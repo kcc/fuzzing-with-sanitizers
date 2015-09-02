@@ -1,0 +1,40 @@
+   
+
+
+
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.cu = !{!5}
+!llvm.module.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZNfoo
+
+@b0= lias vid (* @a
+
+d3
+
+
+
+
+
+
+
+
+
+
+
+debarEv", line: 3, isLocal: false, isDefinition: false), vir!3=!  {clare i6 @llvm.hexagon.M2.mpisQb() !1} 
+
+
+
+
+
+
+
+
+
+
+
+define <8 x i32> @swizzle_1(<
+
+

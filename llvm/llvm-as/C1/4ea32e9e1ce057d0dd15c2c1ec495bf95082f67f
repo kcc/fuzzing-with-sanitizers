@@ -1,0 +1,19 @@
+ !2=! {i1 2, !1};;(
+
+declare void @llvm.rRp()
+ 
+
+
+
+
+
+
+
+
+
+$v = comdat largest
+  
+
+target triple = "nvptx-u
+
+denclare i32 @kf

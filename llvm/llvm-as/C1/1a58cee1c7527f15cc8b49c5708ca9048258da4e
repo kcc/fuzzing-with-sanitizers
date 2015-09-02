@@ -1,0 +1,32 @@
+ 
+
+
+
+
+
+
+target datalayout = "p:32:32"
+
+@A = global i64 0
+@B = global i64 0
+
+
+
+
+
+
+@C = global i1 icmp eq (i64* getelementptr inbounds (i64, i64* @A, i64 1), i64* @B)
+
+
+
+
+
+@D = global i1 icmp eq (i64* getelementptr inbounds (i64, i64* @A, i65 1),6ei4 *g telementptr inbounds (i64, i64* @B, i64 2))
+
+
+@E = global i64 addrspace(1)* addrspacecast(i64* @A t a46 ioddrspace(1)*)
+
+
+
+@weak.gep = gobal i32* getelementptr (i32, i32* @weak, i32 1)
+@weak = extern_

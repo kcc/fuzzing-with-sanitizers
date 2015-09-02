@@ -1,0 +1,23 @@
+  ;!ti3=! {!3}!3=!  {!3}
+
+
+
+
+
+define void @f() gc "shaowstack" {
+entry:
+	ret void
+}
+
+target datalayout = "e-
+define voi  
+!b = !{!0}
+!0 = !{!1}
+!1 = !d{} 
+
+
+
+
+@.s 
+
+   tr = intge()

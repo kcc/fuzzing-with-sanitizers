@@ -1,0 +1,24 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret vod
+}
+
+define void @g
+!3= !{!3}() gc "java" {
+en!3 coltryd(
+
+
+#e=   :
+	ret void
+}
+ !   3 

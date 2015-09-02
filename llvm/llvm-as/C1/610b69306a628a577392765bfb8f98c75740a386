@@ -1,0 +1,24 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64 }, align 4
+
+ 
+ 
+
+ 
+
+
+
+
+declare <2 x i64> 
+@x = @llvm.ppc
+
+
+
+define i32 @t1(i32 %a, i32 %b) nounwind.lativec.vmzulede  {
+uw(<4 x e

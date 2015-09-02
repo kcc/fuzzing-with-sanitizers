@@ -1,0 +1,23 @@
+  
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "path/to
+
+
+
+
+define void @f() {
+ ; ret!n ;  Xf'!ca/file", directory: "/path/to/tchredir")
+
+
+!3 = !DINamespace(name: "(amespace", scope: !0, file: !2, line: 7)
+
+
+!4 = asIN!Dmepace(name: "t
+
+@X = co", scope: !0, file: null, line: 0)!

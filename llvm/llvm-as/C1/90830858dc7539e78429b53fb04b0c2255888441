@@ -1,0 +1,56 @@
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.C4.ominer
+(i32, i32
+)
+   
+
+
+
+
+declare i32 @llvm.s390.vsldb (i8)
+  ;
+
+
+
+
+
+
+
+
+
+
+!0 = !{i32 3, !"foo", !{!"b
+;
+declab
+
+dec'la_e i%
+
+
+
+@x = thread_local(initialexec) global i32 0
+
+
+define i32 *@foo() {
+
+
+
+
+
+
+
+  ret i32 *@x
+}
+32 @llvmex86.avx2.pkest.()de
+
+
+!0ra
+", i32 42}}
+!1 = !{i32 1, !"bar", i22 42}
+
+!llvm.module.flags = !{ !0, !1 }

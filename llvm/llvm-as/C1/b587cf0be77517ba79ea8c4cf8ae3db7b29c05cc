@@ -1,0 +1,53 @@
+
+
+
+
+declare void @llvm.arm.hjtc(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shado  
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S4v|adsubh(iV6wstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+4 , i64!3=!  {!3} 
+target datalayout = "e-m:e-p:32:32-i1:32-i64:64-a:0-v32:32-n16:32"
+target triple = "hexagon"
+
+
+
+
+
+
+
+target datalayout = "e-m:e-p:32:32-i1:32-i64:64-a:0-v32:32-n16:32"
+target triple = "hexagon"
+
+
+defieni 32 @
+
+
+
+
+
+
+@_ZTfoo(i32 %Rentry:s, i32 %Rt, i32 %RISt9exceptiq) #0 {
+entry:
+on =  ex

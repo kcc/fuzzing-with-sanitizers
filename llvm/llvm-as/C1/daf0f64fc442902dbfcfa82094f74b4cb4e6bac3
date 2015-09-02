@@ -1,0 +1,48 @@
+ 
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %rTetval = alloca i32
+  store i32 42, i32* %retval, !md !0
+  br label %0, !md!1
+
+
+  
+  
+  %1 = load i32, i32* %retval, !md !2
+  ret i32 %1, !md !3
+}
+
+
+
+
+
+
+!0 = !{}
+!1 = distinct 
+
+
+
+
+
+%declare i64 @llvm.hexagon.M4.cNddsubhb(  ;;:      
+
+
+
+declare i32 @i64, llvm.nv!{}
+!2 
+
+
+
+
+
+edclare i36 @llvm.s390.vc!vm.tafn(i8 *, i24)|!i32m
+)
+e
+
+ .  
+
+b

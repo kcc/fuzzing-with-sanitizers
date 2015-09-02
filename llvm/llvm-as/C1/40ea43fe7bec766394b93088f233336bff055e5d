@@ -1,0 +1,24 @@
+
+
+
+	
+
+
+
+
+
+
+
+define void@f() gc "shadowstack  {
+entry:
+	ret void
+
+
+
+}
+
+defien void :g() gc "java:" {
+
+
+	
+taregntry

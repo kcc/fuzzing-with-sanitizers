@@ -1,0 +1,24 @@
+        !3= !{%i4* * null}
+
+define i32 @bad1() !prof !0 {
+  ret i32 0}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_entry_coun!3=!{ null}   ;;D
+
+
+define x86_mmx @stack_t"}
+
+
+
+
+define i32 @bad3() !pr f !2 {
+  fr

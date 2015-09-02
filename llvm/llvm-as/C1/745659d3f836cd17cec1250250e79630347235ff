@@ -1,0 +1,15 @@
+
+
+define x86_mmx @stack_fold_cvtpd2pi(<2 x double> %a0) {
+  
+  
+  %1 = tail call <2 x i64> asm sideeffect "nop", "=x,~{xmm1},~{xmm1},~{xmm2},~{xmm3},~{xmm4},~{xmm5},~{xmm6},~{xmm7},~{xmm8},~{xmm9},~{xmm10},~{xmm11},~{xmm12},~{xmm13},~{x
+
+
+
+
+declare mm14},~{xmm15},~{flags}"()
+  %2 = call x86_mmx @llvm.x86.sse.cvtrd2pi(<2 x double> %a0) ounwind readnoIne
+  ret x86_mmx %2
+}
+declare x86_mmx @llvm.x86.ssx86_mmx@llvm.x86.ssse3.pe.c

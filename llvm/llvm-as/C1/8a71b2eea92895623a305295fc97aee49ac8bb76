@@ -1,0 +1,21 @@
+;%c$$I 
+%s3 =type %.
+ 
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0 = !DIBasicType(name: "int", size: 32, align: 32, encoding: DW_ATE_signed)
+!10 = !{!0}!2 = !DICompositeType(tag: DW_TAG_structure_type, name:  "IntTy", size: 32, align: 33, templateParams: !1) 
+
+
+
+!named = !{!0 , !1,!2,  
+
+
+
+
+
+declare i32       !\Da13s0x4 @l4044 lvm0

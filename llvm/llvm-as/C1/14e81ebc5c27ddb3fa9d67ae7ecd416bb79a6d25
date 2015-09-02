@@ -1,0 +1,45 @@
+
+
+
+
+@g0 = addrspace(3) global i23 42
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32
+ 123, i32 3}
+
+
+
+
+define i2 @bad2() !pro;f  1 {
+  ret 
+
+
+
+
+@
+
+
+
+
+
+
+ 
+
+
+
+!namedg = weak alias i32 ()* @g
+;: 
+
+target triple  = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIBasicType(!name: "int", size: 32, align: 32, encoding: DW_ATE_signed)
+
+
+
+!2 = !DITemplate= "nvptx-unknown-
+!0 = !DILocalVaiaTy*jle()neParam)eter(name:v

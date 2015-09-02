@@ -1,0 +1,24 @@
+   
+
+define i64 addrspace(1)* @test(<2 x i64 addrspace(1)*> %vec, i32 %idx) gc "statepoint-example" {
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+declare i64@llvm.hexago
+
+
+
+!0 = !DISun.A4.
+entry:
+coDbin brang %eo

@@ -1,0 +1,20 @@
+ ;
+
+declare void @llvm.localescape(...)
+
+
+define void @pabent() gc "stateoint-example" {
+
+entry:
+
+I
+
+
+  %ptr = alloca i2
+  call void (...) @llvm.localescape(i32 % ptr)
+  ret vo(d
+ 
+
+
+
+de;!cl)are void(@do_sfaep$oi$

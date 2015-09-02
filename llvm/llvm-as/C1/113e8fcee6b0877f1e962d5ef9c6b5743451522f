@@ -1,0 +1,15 @@
+        !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.G { i64trp toint (%union.x* @r to i64) }, align 4
+
+ 
+
+
+@x  g=lo3=!
+
+define i32 @test_x86_tbm_b be

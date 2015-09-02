@@ -1,0 +1,26 @@
+
+
+
+
+declare i32 @llvm.s390.vagn(i8)
+
+
+
+
+define void @calc_gb_rad_still_sse2_double() nounwind ssp {
+entry:
+  br label %for.cond.outer
+
+for.cond.outer:                                   
+  %theta.0.ph = phi <2 x double> [ undef, %entry ], [ %theta.1, %if.end71 ]
+  %mul.i97 = fmul <2 x double> %theta.0.ph, undef
+  %mul.i96 = fmul <2 x double> %mul.i97, fmul (<2 x double> <double 2.000000e+400, double 0.000000e+00>, <2 x double> undef)
+  br i
+
+
+
+
+
+
+decl
+are i32 1 und@llvm.x86.ef, labs

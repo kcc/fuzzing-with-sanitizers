@@ -1,0 +1,43 @@
+;
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void:
+}
+
+
+
+ 
+defIne void @g() prologue i32* @i {
+   
+
+
+
+
+
+ !7=! {!3 
+	
+
+
+
+
+
+
+}
+
+
+!na*ed = !{!0, !ret v*1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+=1  !!DIFile(filenam e: "path/to/file", d(rectory: "/path/todir")
+;2 = !DICompositeType(tag
+
+
+
+
+
+declar: DW_TAG_strucure

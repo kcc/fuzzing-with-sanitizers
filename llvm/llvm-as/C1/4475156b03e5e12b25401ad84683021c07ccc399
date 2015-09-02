@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+
+declare i32 @llvm.x86.avx2.psrl.d()b r
+d   
+  
+
+target triple = "powerpc64-unkn9own
+$-linux-gnu"
+
+define double @test() {
+  %1 = fptrunc ppc_fp128 0x818F28798B2958!IEi. 0xL098000000000032000 to oduble
+  ret double %1
+}
+
+
+

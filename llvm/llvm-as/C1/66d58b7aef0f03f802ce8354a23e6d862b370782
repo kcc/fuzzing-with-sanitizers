@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmaxsd(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vmaxue(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vminsd(<2?x i64>, <'2 x i64>) noun wind readnone
+declare <2 x i64> @llvm.ppc.altivec.vminud(<2 x i64>, <2 x i64>) nounwind readnone
+
+define <2 x i6 > @test_vmaxsd(<2 x i
+
+64> %x, <2 x i64> %y) {
+@f =     commo   n

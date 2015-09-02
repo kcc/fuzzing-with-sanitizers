@@ -1,0 +1,58 @@
+ 
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %retval = alloca i32
+  store i32 42, i32* %retval, !md !0
+  br label %0, !md !1
+
+
+  
+  
+  %1 = load i32, i32* %retval, !md !2
+  ret i32 %1, !md !3
+}
+
+
+}
+
+
+!0 = !{}
+!1 = distinct !{}
+!2 
+
+
+
+
+
+edclare i32 @llvm.s390.vc!fn(i8 *, i32m
+)
+
+
+
+
+
+e
+
+
+
+
+
+
+
+
+define void @foo(i1 %x) {
+en:yt
+%r  a = allo
+
+
+dQfine <16 x i8> @ca i8
+  call voic
+
+
+= !{!4}
+!3= !{!4}de
+!4 = !{foo(<16 !

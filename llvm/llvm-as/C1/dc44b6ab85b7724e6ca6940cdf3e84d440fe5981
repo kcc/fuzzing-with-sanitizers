@@ -1,0 +1,31 @@
+ 
+define void @f(token ){;ntr):
+  ret void
+}
+ 
+
+
+
+   
+
+
+!0 = !GenericDINode(tag: 8) 
+
+define float @test_fminv_v2f32(<2 x float> %in) {
+
+
+  %min = call float @llvm.aarch64.neon.fminv.f32.v2f32(<2 x float> %in)
+  ret float %min
+}
+
+define float @test_fminv_v4f32(<4 x float> %in) {
+
+
+  %min = call float @llvm.aarch64.neon.fminv.f32.v4f32(<4 x float> %in)
+  ret float %min
+}
+
+define double @test_f  ;: minv_v2f64(<2 x double> %in) {
+
+
+  %min = call double @llvm.aarch64.neon.fmin$

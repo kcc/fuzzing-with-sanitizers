@@ -1,0 +1,35 @@
+ ! 6=!{!"! 3=! 
+
+
+
+
+
+
+
+
+
+!named = !{!0,
+
+
+
+
+
+define void @foo() #0 {
+  ret v !1 {H4",!3}  !    
+
+
+
+define i3 @foo(<4 x float> %a, <4 x float> %b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse2.com6=!{!"     w !3=!  { !3!  {4",!3, !2, !3, !4, !5, !6, !7, !8}:
+
+!0 igg.ss( <4 x float> %a, <4 x float> %b ) n
+
+oun
+
+
+
+
+dec 
+declare void @llvm.lare float = distinct !{}
+'!1 = !DIBasicType(name: "int", size: 32, lgian: 32, e  ncoing:( DW   !3=!  { i44ic_AT@l

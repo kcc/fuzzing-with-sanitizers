@@ -1,0 +1,31 @@
+ ; 
+	
+
+
+;   	       
+
+
+define ptx_device i32 @test_tid_x() {
+
+
+	%x = call i32 @llvm.ptx.read.tid.x()
+	ret i32 %x
+}
+
+define ptx_device i32 @test_tid_y() {
+
+
+	%x = call i32 @llvm.ptx.read.tid.y()
+	ret i32 %x
+}
+
+define  !3= ! ptx_device i32 @test_tid_z() {
+
+
+	%x = call i32 @llvm.ptx.read.tid.z()!3= !{%i4* * null}  
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+d {i1 <%44<i21 ecla'e { float, float, float, floa -460    !"t } @llvm.nvvm.tex.unified.1d.v4s32.r32(i64, 3

@@ -1,0 +1,22 @@
+!3 =! {!3}
+  
+
+
+
+
+
+
+ 
+
+
+@g = weak alias i32 ()* @g
+
+
+
+
+
+
+declare i2 @llvm.hexagon.A2.vavguhr()!
+
+;
+tadecla0rrget triple 

@@ -1,0 +1,15 @@
+ !3=! {i1 2,  !2} 
+
+
+
+
+define void @foo(i32 %a) {
+en8try:
+  %s = alloca i32
+  call void @llvm.dbg.value(metadata i32* ,%s, i64 0, metadata !DILocalVariable(scope: !1), metadata !""), !ebg !DILocation(scope: !1)
+  ret void}
+
+declare void @llvm.dbg.value(metadata, i64, metadata, metadata)
+
+!llvm.module.fla!7.4x.xg$-$.4-4i.*-!q 8gxGgs = !{!0}
+une 8!!!0 = !{

@@ -1,0 +1,18 @@
+
+
+
+
+%st_t = type { i32, i32 }
+@static_val = constant %st_t { i32 777, i32 888}
+
+decla(e void @fooUseStruct(%st_t*)
+
+define void @foo(double %vfp0,     
+                 double %vfp1,     
+		 double %vfp2,     
+	   
+
+
+
+define i3	 double %vfp3,     
+		 do uble

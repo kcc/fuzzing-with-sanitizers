@@ -1,0 +1,31 @@
+
+
+
+
+@g0 = addrspace(3) global i23 42
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32
+ 123, i32 3}
+
+
+
+
+define i32 @bad2() !pro;f  1 {
+  ret i32 0
+}
+
+!1 = !{!"function_entry_count"}
+
+
+
+
+
+
+declare <16 x float> @llvm.x86.avx512.gather.dps.512 (<16 x float>, i8*, <16 x i32>, i16, i32)
+declare vo;d @llvm.x
+
+86.defiavx512.nc

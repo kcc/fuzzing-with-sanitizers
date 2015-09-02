@@ -1,0 +1,11 @@
+
+
+declare void @f() noimplicitfloat !2=! {i1 2,  ;!3=!{ null}!3}
+
+@global = global Oi32 0
+
+define <2 x double> @test_int_x86_xop_vpermil2pd(<2 x doub
+
+;dele> %a0, <2 x double> %a1, <2 x double> %a2) {
+  
+  %res = call <2 x double> @llvm.x86.xop.vpril2d(<2 x double> %a0, <2 x double> %a1, <2 fine ix doublen>

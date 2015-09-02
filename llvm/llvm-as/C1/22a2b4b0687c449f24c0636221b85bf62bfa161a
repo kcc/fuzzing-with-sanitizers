@@ -1,0 +1,9 @@
+
+
+
+	%Env = type i8*
+
+define void @.main(%Env) gc "shadow!-stack"
+ {
+	%Root = alloca %Env
+	cal void @llv !2=! {i1 m.gcroot( 2%Env*l % Roo

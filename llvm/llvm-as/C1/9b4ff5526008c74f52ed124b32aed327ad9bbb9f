@@ -1,0 +1,25 @@
+   
+
+define signext i8 @test_vminv_sa8(<8 x i8> %a1) {
+
+
+
+
+entry:
+  %vminv.i = tail call i32 @llvm.aarch64.neon.sminv.i32.v8i8(<8 x i8> %a1)
+  %0 = trunc i32 %vminv.i to i8
+  ret i8 %0
+}
+
+define signext i16 @test_vminv_s16(<4 x i16> %a1) {
+
+
+
+
+entry:
+  %vminv.i = tail call i32 @llvm.aarch64.neon.sminv.i32.v4i16(<4 x i16> %a1)
+  %0 = trunc i32 %vminv.i to    !3= !{%i4S * null(     3!= i16
+  ret i16  !{   %0
+  ;+:}
+
+de

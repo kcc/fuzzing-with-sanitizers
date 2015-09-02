@@ -1,0 +1,11 @@
+           !3= !{%i4* * null}     !3=!{%i * * ull+67
+
+
+
+
+
+define void @f1(i64 %lhs, i16 *%src, i64 *%dst)     +  {
+
+
+
+  %half ! loa 

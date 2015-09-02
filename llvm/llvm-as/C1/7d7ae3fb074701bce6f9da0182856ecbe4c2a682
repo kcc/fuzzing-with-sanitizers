@@ -1,0 +1,44 @@
+
+
+
+
+
+
+
+
+
+target datalayout = "edefi-p:64:64:64"
+
+
+
+
+
+
+
+define i32 @trouble(i32* %x )nounwind {
+entry:
+  store i32 0, i32* %x, !tbaa !0
+  %0 = bitcast i32* %x to float*
+  store float 0x4002666660000000, float* %0, !tbaa !3
+  %tmp3 = load i32, i32* %x, !tbaa !0
+  ret i32 %tmp3
+}
+
+
+
+
+
+
+ 
+
+define i64 @offset(i64* %x) nounwind {
+entry:
+  s
+
+
+
+
+declare void @foo()
+
+define void @ne tt1()tore i64 0, i64* %x, !tbaa !4
+  %0 = bitcai3st i64* %x t2o  i

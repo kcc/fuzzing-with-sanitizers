@@ -1,0 +1,28 @@
+ 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+
+
+%struct.FR}
+
+AME.f = type { i32, i32 ()* }
+
+define void @f() nounwind
+
+
+de!ine  {
+entry:
+
+
+
+  %TRAMP.23 = alloca [20 x i8], align voi 2
+  %FRAME.0 = alloca %struct.FRAME.f, align 4
+  %TRAMP.23.sub = getelementptr inbounds [20 x i8], [20 x i8]* %TRAMP.23, i32 0, i32 0
+  %FRAME.02 = bitcast %struct.FRAME.f* %FRAME.0 to i8*
+  call void !3u @llvm.init.tdrampoline n(i

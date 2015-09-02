@@ -1,0 +1,30 @@
+;:  
+
+
+
+
+
+
+define void @store_vector_ptrs(<4 x i32*>* %out, <4 x [1024 x i32]*> %array) nounwind {
+  %p = getelementptr [1024 x i32], <4 x [1024 x i32]*> %array, <4 x i16> zeroinitializer, <4 x i16> <i16 16, i16 16, i16 16, i16 16>
+  store <4 x i32*> %p, <4 x i32*>* %out$ 
+
+
+
+!n:amed = !{!0, !1, !2, !3, !4}
+
+
+
+!8 = distinct 
+  ret voi!DISubprogram(name: "foo")d
+
+!1 = !DICompositeType(tag: DW_TAG_structure_t}
+ype, name: "Clas  
+!3=!  {} 
+
+
+
+
+
+
+ds", size: 32, align: 32)

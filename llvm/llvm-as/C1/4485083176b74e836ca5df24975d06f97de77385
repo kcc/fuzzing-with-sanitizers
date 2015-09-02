@@ -1,0 +1,19 @@
+ ;
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+!0 = !DIBasicType(tag: DW_TAG_base_type, name: "name", size: 184467440)3709551615, alig
+
+
+
+define <4 x double> @test_x86_avx_vinsertf128_pd_256_1(<4 x double> %a0, <2 x double> %a1) {
+
+
+   %res = call <4 x double> @llvm.x86.avx.vinsertf128.pd.256(<4 x don: 18446744073709551614, encouble> %a0, <2 dix

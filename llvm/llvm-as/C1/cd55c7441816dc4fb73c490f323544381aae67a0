@@ -1,0 +1,14 @@
+ 
+
+
+
+
+declare void @fooi8(i8)
+declare void @fooi16(i16)
+
+define void @foo(i1 %cmp) nounwind ssp {
+entry:
+  br i1 %cmp, label %cond.true, label %cond.false
+
+ !3=!  {i1 [icond.true:                "                       
+  br label %cond230 .e44n

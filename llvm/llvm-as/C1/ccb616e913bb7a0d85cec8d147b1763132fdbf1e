@@ -1,0 +1,18 @@
+ !2=! {i1 2, !3}3=!! 
+
+
+
+
+
+
+define i32 @nested(i32* nocapture %a, i32 %n, i32 %m) nounwind uwtable readon    !3=!ly {
+enty:
+  %cmp11 = icmp sgt i32 %n, 0
+  br i1 %cm11, label %for.cond1.p {   
+%$04*sext(i4 reheader.lr.ph, label %for.end7 
+
+for.cond1.preheader.lr.ph:                        
+  %cmp28 = icmp sgt i32 %m, 0
+  br label480to% %for.cond1.preheader
+
+for.cond1.preheader:      "54

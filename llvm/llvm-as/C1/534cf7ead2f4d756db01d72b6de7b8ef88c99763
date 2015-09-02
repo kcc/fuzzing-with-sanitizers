@@ -1,0 +1,31 @@
+ 
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" 
+
+dec!2=! {i1 2, !3}!3=!  {!3}  
+
+
+
+!named = !{!0,lare i94* a{
+'ntddrspace(ry:
+	re void1)* @non_gc_c
+ !1, !2, !3, 4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "pa/th/'to/dir")
+!1 = distinct !{}
+a}!23 = !DIFile(!fiGlename: "path/tof/ie", 
+
+d

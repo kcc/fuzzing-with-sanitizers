@@ -1,0 +1,42 @@
+
+
+
+
+!named =!{!0, !1, !2, !3, !4}
+
+
+
+!0 = distinct !DISubprogram(name: "foo")
+!9 = !DICompositeType(tag: DW_TAG_structure_type, name: "Class", size: 32, align:  2)
+
+
+!2 = !DIImportedEntity(tag: DW_TAG_imported_module, name: "foo", scope: !0,
+                       entity: !1, line: 7)
+*
+
+
+declae i2 @llvm.nvvm.txp.e.adrsreg.
+!3 = !D
+IImport
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+teovrarget dateg0()
+ alayout= "eedm-:
+
+dee-e
+
+ci6c4:64-f80:128-n

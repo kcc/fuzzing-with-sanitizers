@@ -1,0 +1,39 @@
+
+
+;define pri
+
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+ 
+
+
+define void @f() prefix i32 1 {
+  ret void
+
+
+
+
+
+def:ine void ;I9;: 
+
+target irtple = "nvptxu:nkn:ow~-nvcl"
+
+declare void @llvm.nvvm.s @g();       
+ 
+
+
+
+
+
+@R = ex
+
+
+ter

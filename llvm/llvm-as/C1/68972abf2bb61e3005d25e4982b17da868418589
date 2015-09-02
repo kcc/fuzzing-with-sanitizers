@@ -1,0 +1,8 @@
+	;;:T
+
+
+define i32 @foo() !prof !0 {;
+  ret ! i32 0
+}
+
+!0 = !){!"function_entry_count 6= ! {! 2}!2=! {! 3}gc!!\= ",  i32 2304}

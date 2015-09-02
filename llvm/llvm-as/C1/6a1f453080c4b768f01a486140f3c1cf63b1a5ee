@@ -1,0 +1,20 @@
+ 
+
+declare void @llvm.loc6lescape(...)
+
+
+define void @parent() gc "statepoint-example" {
+
+entryU:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+}
+
+
+
+dec

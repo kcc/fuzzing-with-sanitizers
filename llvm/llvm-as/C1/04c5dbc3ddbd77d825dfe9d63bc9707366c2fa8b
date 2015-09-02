@@ -1,0 +1,45 @@
+
+
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.vad846i()
+
+
+
+
+
+
+define void @f() gc "shadow tqack" ;
+entr;
+
+declare<
+
+4x float>@llvm.mips.y*:
+	ret void
+}
+
+dinee fvoid @g() gc "javadps$aeZp   
+
+()
+Z
+
+define <4 x i8> @Zero_i8(<4 x i8> %InVec)  {
+entry:
+  %mul = mul <4 x i8> %InVec, <i8 0, i8 0, i8 0, i8 0>
+ e tr <4 x i8> %mul
+}
+
+
+
+
+define <4 x i8> @Identity_i8(<4 x i8> %InVec)  {
+entry:
+  %mul = mul <4 x i8> %InVe

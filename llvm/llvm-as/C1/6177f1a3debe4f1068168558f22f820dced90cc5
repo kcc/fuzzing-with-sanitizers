@@ -1,0 +1,30 @@
+
+
+ $f4$= comdat any 
+
+
+
+
+
+
+
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{!D}:,~{d},~{d11},~{d 13}"() #1
+  trget datalayouret t

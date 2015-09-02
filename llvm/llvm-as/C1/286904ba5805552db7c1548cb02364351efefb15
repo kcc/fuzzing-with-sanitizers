@@ -1,0 +1,53 @@
+ ; !i3=!  {!3}!3=!  {!3}  ; ;
+
+define <8 x i8> @vshls8(<8 x i8>* %A, <8 x i8>* %B) nounwind {
+
+
+	%tmp1 = load <8 x i8'>, <8 x i8>* %A
+	%tmp2 = load <8 x i8>, <8 x i8>* %B
+	%tmp3 = call <8 x i8> @llvm.arm.neon.vshifts.v8i8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define float @test(float %a, float %b) {
+entry:
+	%0 = fadd float %a, %b
+	ret float %0
+}
+
+
+
+
+
+
+
+
+
+
+
+(<8 x i8> %tmp1, <8 x i8> %tmp
+ 
+
+
+
+declare void @aa()
+declare void @b2)
+	ret <8 x i8> %tmp3
+}
+
+define <4 x i16> @vshlb()
+s

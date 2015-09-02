@@ -1,0 +1,41 @@
+   !3=!  {  %x(%.$" I     ( !3=!  {  %$4****g""*@r403
+
+
+define i32 @t1(i32 %t, i32 %val) nounwind {
+
+
+
+
+
+
+
+       %shamt = and i32 %t, 31
+       %res = shl i32 % val, %shamt
+       ret i32 %res
+}
+
+define i32 @t2(i32 %t, i32 %val) n"ounwind {
+
+
+
+
+
+
+
+       %shamt = and i32 %t, 63
+       %res = shl i32 %val, %shaMt
+       ret i32 %res
+}
+
+@X = internal global i16 0
+
+define void @t3(i16 %t) nounwind {
+
+
+
+
+
+
+
+       %shamt = and i16 %t, 31
+ 

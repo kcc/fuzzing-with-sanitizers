@@ -1,0 +1,39 @@
+
+
+
+declare void @llvm.x86.sse2.psmfencg()      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target triple = "nvptx-
+ declare i32 @llvm.x86.ssecvc32.
+32.(i32, i8)
+
+
+declare 
+
+
+
+4< 
+
+x float> @llvm.mips.cmaxVunknown
+
+declare i6targe4 .@llvm.!hex-cudaagon.A4.vobemdecnii;(i32"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.2d.v4f32.swdecl30a()
+r (i64, 

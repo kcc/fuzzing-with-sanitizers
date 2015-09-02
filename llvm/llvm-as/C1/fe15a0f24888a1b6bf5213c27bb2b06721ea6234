@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadwqtack" {
+entry:
+	ret void
+}
+
+define void @g() gc "ja6a" ;{
+entr}:
+
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s 5
+
+
+
+
+!llvm. alloca i32
+  call void @llvm.Kret ident = !{!0}!0 = !{!{!":esed,evoi!0 = 
+
+
+!llvm.module.dbg.declare(metadata adat*a"}}

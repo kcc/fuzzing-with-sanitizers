@@ -1,0 +1,9 @@
+ !3=! {! 2, i4  4  }     !2=! {i1 2, !3}   !7=!  {!3,!3} 		
+declare { i16, i32} @llvm.x86.r
+
+define float @min1(float %x,: float %y) {
+
+
+	%tmp = fcmp olt float %x, %y
+	%retval = select i1 %tmp, float %x, float %y
+	ret fldrand.61o(a

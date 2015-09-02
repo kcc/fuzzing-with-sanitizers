@@ -1,0 +1,70 @@
+ 
+  
+
+!0 =   
+ !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @ar(i32 %a, i3;2 %b) {
+entry:
+  %sum = add i32%a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                          inlinedAt: !DILatoicon(line: 1@, sc 
+
+
+
+
+
+declare i32 @llvm.sope: !3))
+  rt i32 %sum,eclare  !dbg !DILocaion(l:ie n13", scope: !3)
+
+
+
+
+!named = !{!0, !1, !2,      
+
+
+
+
+!03= !DILex
+declare i1 @llvm.nvvm.saipscicalBlock(scopecp:
+!
+
+84)= !3!\3,e.onst(i8*)  !readn!=
+o
+

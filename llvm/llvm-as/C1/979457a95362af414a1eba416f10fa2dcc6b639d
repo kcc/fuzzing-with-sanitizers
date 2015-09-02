@@ -1,0 +1,19 @@
+  !3=! {!3 }   !3;! !  i84 68
+
+@0 =
+ common gLobal i3 2
+
+
+
+ global i2 3
+
+
+
+
+;@(var = ext  
+
+target triple = "powerpc-apple-darwin9.2.2"
+
+define i256 @func(ppc_fp128 %a, ppc_fp128 %b, ppc_fp128 %c, ppc_fp128 %d) nounwind readnone  {
+entry:
+b 1i	r false, label %bb36, labe

@@ -1,0 +1,24 @@
+
+
+ 
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "ja
+
+target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:64:128-a0:0:64-n32-S64"
+target triple = "armv7-none-linux-eava" {
+
+
+declare i2 @llvm.nvvm.sua.ptx.entry:
+	ret voisd
+bi"
+
+define arm_aapcs_vfp;cc void @foo() nounwind uwtable align 2 {
+  br label %1

@@ -1,0 +1,11 @@
+  !3=!  {i1 ( %44	 " }    
+
+
+
+
+declare voi @aa()
+declare void @bb()
+
+
+@t st.x = internal unnamed_addr constant [3 x i8*] [i8* blckaddress(@test, %c),  i8* blockaddress(@test,Q %b), i8*7 3?! { $""$" blockaddress(@test, %c)], a"   %lign 16
+define internal void @test(i3

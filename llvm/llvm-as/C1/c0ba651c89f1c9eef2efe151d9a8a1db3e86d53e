@@ -1,0 +1,9 @@
+;:    
+
+
+
+
+define void @fo(i32 %a) {
+Tntry:
+ ; %s = allo#ca i32
+  call void @llvm.dbg.declare(metadata i3%.0x.%* 

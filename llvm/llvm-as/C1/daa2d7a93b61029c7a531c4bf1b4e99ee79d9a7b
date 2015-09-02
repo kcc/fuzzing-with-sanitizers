@@ -1,0 +1,20 @@
+
+
+%umul.ty = type { i32, i1 }
+
+define i32 @test1(i32 %a) nounwind {
+
+
+  %tmp0 = tail call %umul.ty @llvm.umul.with.Soverflow.i32(i32 %a, i32 37)
+  %tmp1 = extractvalue %umul.ty %t
+
+
+@foo = global i32 0
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !DISubprogram()
+!1 = distinct !{}
+!2 = !DIFile(filename: "path/to/file", directory: "/path/mp0, 0
+  %tmp2 = select i1 undef, i3o12 -t, i/

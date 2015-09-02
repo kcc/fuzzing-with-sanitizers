@@ -1,0 +1,38 @@
+
+
+
+
+
+
+
+
+
+
+%s3 =type %. 
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvtpd2udq.128(<5 x double>, <8 x i64>, i8, i32)
+
+define <8 x i64~@tes_int;x86_avx51@ba1 = constant i8* blockaddress 1(@bu1afn, _mask_cvt_pd2qq_512(<8 x `ouble0 
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M 
+
+
+
+decla2. >mph %bbb6ips()%x0, <8 x i6
+4)> re i8 @llvm.x86.addceryx.u32(i8, i32, i32,%x i8*1, i8 %x2))
+ {
+
+
+
+
+
+
+
+ 
+de f

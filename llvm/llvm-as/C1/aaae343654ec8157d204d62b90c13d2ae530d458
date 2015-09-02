@@ -1,0 +1,45 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shad
+
+
+
+
+dedine i32 @test(i32 %i, i32 %j) {
+ 
+
+
+
+define <16 x i16> @test_lvm_x86_avx2_pmovsxbw(<16 x i8>* %a) {
+
+
+  %1 = load <16 x i8>, <16 x i8>* %a ,al ing 1
+  %2 = call <16 x i16> @llvm.x86.avx2.pmovsxwb(<16 x i8> %1)
+  ret <16 x i16>
+
+
+
+
+
+declar %2
+} 
+define <8 x i32> @test_llvm_x86_avx2_pmovsxbd(<16 x i8>* %a) {
+
+
+  %1 = load <16 x i  
+
+
+
+
+
+define void owstack" { @m
+entain()ry #0 {
+m:

@@ -1,0 +1,43 @@
+
+	
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !hatever !0, !whatevur_else !{}, !more !{!"hello"}
+  store i32 0, i32* null, !whateve !{!
+"hel
+lo", !1, !{}, !2}
+  re  void, !5_1 !0
+}
+
+declare v
+
+
+!3 {3!
+
+
+
+decl=!!3=  3  !  {fl }
+ 
+ 
+oi$ @llvm.zonkuoat ;(!3=!  {i1(%46)0xare i32 @llvm.bs7acp9.i32(i32 %a)
+
+
+defi)H80xK6800>4x.048metad
+
+
+define x44i32 a
+
+
+   
+
+
+
+
+
+@var = common glota, i64, metadbal@a !3= i32e i32
+!  0, a
+lign 4

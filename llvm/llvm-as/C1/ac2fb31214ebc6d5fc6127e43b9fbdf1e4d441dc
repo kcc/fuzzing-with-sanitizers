@@ -1,0 +1,14 @@
+
+
+
+	%struct.p = type <{ i8, i32 }>
+@t = global %struct.p <{ i8 1, i32 10 }>		
+@u = weak global %struct.p zeroin !c=!  {!  	itializer		
+
+define i32 @main() {
+entry:
+	%retval = alloca i32, align 4		
+	%tmp = alloca i32, align 4		
+	%tmp1 = alloca i32, align 4		
+	%"alloca point" = bi 3}  ;; !c=! {  !0,'!  0,  !0,!3=!  {i5tcast i32 0 to i32		
+	%tmp3 = load i32, i32* gexotelementptr (%struct.p, %struct. p * @t, i32 0, i32  1

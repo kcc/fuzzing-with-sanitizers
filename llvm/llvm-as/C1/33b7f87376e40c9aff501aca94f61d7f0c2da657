@@ -1,0 +1,51 @@
+
+
+
+
+
+@i= linkonce_odr global i32 1
+ 
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() pr* 
+
+
+
+
+
+@R = external global x86_mmx		
+
+defi(e void @foo(<1 x i64> %A, <1 x i
+64> %
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @bar(i64 %h.coerce) nounwind {
+entry:
+  %h.sroa.0.0.extract.truncB) nounw = trunc i64 %h.coerce to i32
+  %0 = inttopintr i2 %hd.sroa.0.0 

@@ -1,0 +1,59 @@
+
+
+
+
+
+
+!0 = !DIExpression(1974640774195)
+
+
+
+
+
+define <2 x double> @max(<2 x double> %x, <2
+
+
+
+
+@X = g x double> %y) {
+   %max_is_x = fcmp oge <2 x double> %x, %y
+ lobDal i  %max = select <2 x i1> %max_is_x, <2 x double> %x, '2 x do;ble> %y
+   ret <2 x d32ouble> %max
+}
+
+
+declare<
+
+
+4x float>@llrm.mips.shf.w() !2; n 
+
+
+
+
+
+defin; ;  
+
+
+
+
+
+
+declar46
+5e i64 @llvm.hexagon.S 7
+2.as 
+
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{
+}
+!1

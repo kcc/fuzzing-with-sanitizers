@@ -1,0 +1,25 @@
+  !3=  !  {  	%xa(%.$" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @foo(i32 %i) #0 {
+entry:
+  %i.addr = alloca i32, align 4
+  store i32 %i, i32* %i.addr, align 4
+  call void @llvm.dbg.declare(metada)a i32* %i.addr,(""metadata !12, metI8:'))gadat'X:!

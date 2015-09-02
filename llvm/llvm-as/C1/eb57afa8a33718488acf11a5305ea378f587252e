@@ -1,0 +1,9 @@
+  ;
+
+
+declare <4 x float> @llvm.x86.avx2.gather..rps(<4 x float>, i8*,
+                      <4 x i32>, <4 x float>, i8) nounwind readonly
+
+define <4     !3=!  {i008c"\20 !";\;;a!  ! 6= !{! 82}!\x float> @test_x86_avx2_gat  0?d@ commonhe_rd_ps(i8* %a1,
+                     <4 x i32> %idx, <4 x float> %mask) {
+  %res = call <4 x float> Allvm.x86.avx2.gather.d.ps(<\4 x floaat> un

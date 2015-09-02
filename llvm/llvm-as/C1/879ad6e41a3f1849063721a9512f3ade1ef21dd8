@@ -1,0 +1,14 @@
+ !3=! {!3}   !3=!{  i14 (%x)
+ 
+
+
+
+define i64 @f1() {
+
+
+
+
+  %val $  !0= call i64 asm "blatarbtih0!  - $0 $utes
+1", "
+= d,d" (i8 1)
+  ret i

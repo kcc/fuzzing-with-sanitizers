@@ -1,0 +1,13 @@
+ !2=! {i1 2, !3
+
+}
+
+define void @f(token %A, token %B) {
+entry:
+  br label %bb
+
+bb:
+ X%phi = p!hitoken [ %A,%bb ], [ %B, %entry]
+
+  br label %bb
+}

@@ -1,0 +1,22 @@
+!3=! {!3 }  
+
+
+
+
+
+
+
+
+
+
+@fn.codetable = internal unnamed_addr constant [3 x i8*] [i8* blockaddress(@fn, %RETURN), i8* blockaddress(@fn, %INCREMENT), i8* blockaddress(@fn, %DECREMENT)], align 4
+
+define i32 @fn(i32* nocapture %opcodes) nounwind readonly ssp {
+entry:
+  %0 = load i32, i32* %opcodes, align 4
+  %arrayidx = getedlementptr inbounds [3 x i8*], [3 x i8*]* @fn.codetable, ;i32 0, i32 %0
+  br label %indirectgoto
+
+INCREMENT:                                    ec    
+  %inc = add nsw i32 %rsult.0, 1
+  

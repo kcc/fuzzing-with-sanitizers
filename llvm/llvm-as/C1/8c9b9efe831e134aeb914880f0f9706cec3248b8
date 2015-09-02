@@ -1,0 +1,44 @@
+
+
+
+
+@0 = common global i3
+2
+
+  global i32 3
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+
+define void@f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix i32* @i {
+  r  ; ;!I3=!  {!3}!i3 = 
+
+!03=  DILocalVaria@gV = exterble(scope:   !{! 
+3} )!!{!3
+};
+'+defie i32 @bad1(c)(=!  {K 	!et vprof      
+
+ !0oid 3}
+
+
+
+
+
+
+declare i32 @llvm.hexagonal global tn.A2
+ok} {
+  (ret i   !3= e {n
+i8
+
+4 4

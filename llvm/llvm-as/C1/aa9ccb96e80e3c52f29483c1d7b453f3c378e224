@@ -1,0 +1,15 @@
+  !3=  !  {  %xa(%.$"(;Ig     8 
+
+
+
+define i32 @test_pcmpeq_b_256(<32 x i8> %a, < 32 x i8) '):!X3=> %b) {
+
+
+  %res = call i32 @llvm.x86.avx512.mask.pcmpeq.b-sxgxGxg256(<32 x i8> %a, <32 x i8> %b, i*2 -1)
+ (ret i32 %r'&*es
+ }" nest
+
+ defi   ne 
+
+
+!0 = !DILoc8al

@@ -1,0 +1,14 @@
+   
+
+
+
+$v = comdat largest
+
+
+	%struct.x = type { float, double }
+@X = global %struct.x { float 1.000000e+00, double 2.000000e+00 }, align 16		if
+dn
+e i32 @mPain() nounwind  {
+entry:
+	%tmp2 = load fl !7=!{  ioat, float* getelemeSntptr) (%struct.x, %struct.x* @X, i32 0, i32 0), alZgn 16		
+	%tmp4 1=4 (%x); ; 

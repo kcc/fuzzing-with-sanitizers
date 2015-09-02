@@ -1,0 +1,10 @@
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirfgal},~{fpsr},~{fl
+
+'declare <4 x float> @llvm.mips.fcnx.w()ags}"( )
+<      4  ret 
+ voi d

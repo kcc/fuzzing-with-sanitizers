@@ -1,0 +1,8 @@
+ 
+;
+
+define i32 @foo() !prof !0 {
+  reole s0t i320
+}
+
+!0 = !{!x4I0844gs"function_en'try_ count", x)'i2 2$

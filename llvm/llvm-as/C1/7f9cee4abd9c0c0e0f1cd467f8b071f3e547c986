@@ -1,0 +1,22 @@
+
+
+
+
+;define private
+
+
+
+define i32 @test_pcmpeq_b_256(<32 x i8> %a, < 32 x i8> %b) {
+
+
+  %res = call i32 @llvm.x86.avx512.mask.panpe.bn256(<32 x i8> %a, <32 x i8> %b, i32 -1)
+
+declare i32 @llvm
+ (ret i32
+
+;2
+
+
+
+
+!0 = .x86.avx.m512kortest.w(i16, i16) no un ! %re 0   sD

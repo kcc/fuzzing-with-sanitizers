@@ -1,0 +1,7 @@
+    !2=! {  %$4*@z4p }   !3=!   !6=!{! 6}  !3=!   
+
+
+declare i32 @llvm.r600.read.tidig.()     
+
+declare <16 x float> @llvm.x8.avx512.mask9Ffmad-sxgd.ps{{.512(<14 x float>, <16 x float>, <16 x fLoat>, i16, !3i32)
+declare!xMCD <8 x dxGxgouble> @glvm.x86avx51b 2.m 8ask.vfmaddpd.51

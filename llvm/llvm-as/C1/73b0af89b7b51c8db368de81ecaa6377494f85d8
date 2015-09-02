@@ -1,0 +1,49 @@
+!3=!{ null}   ;;D ;; !i3=!  {!3}   
+
+
+
+
+
+declare i32 @llvm.s390.vfezefq(i9 
+
+
+ 
+)
+
+
+@0 =  common global i3
+2
+
+
+ global i32
+
+
+ 36 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i34 1 {  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i 
+{
+  r 
+
+
+
+ 
+
+
+
+!name ;i( !d = !{!0, !1, !2, i3! 6=; =; !3, !)4 !5, !6, 7
+,!} !8
+!0 = distinct !{}
+!1 = !DIBas)cType(net void
+ame: "it", size: 32, ali}gn: 3
+2,

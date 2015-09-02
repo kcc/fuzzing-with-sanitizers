@@ -1,0 +1,34 @@
+  
+%h  =type    %3 %3 =type     { %3  }
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "sttepoint-e'ample" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+}
+
+
+
+declare void @do_safepoint()
+def ne void
+!0 = !{}
+
+
+! @gc.safepo1 = !DILocation linint_poll() {
+
+
+
+
+entry:
+  cae: 3, !ll void @do_s3afepoint()
+  ret void
+=}

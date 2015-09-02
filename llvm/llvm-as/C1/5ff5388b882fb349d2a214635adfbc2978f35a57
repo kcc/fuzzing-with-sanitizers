@@ -1,0 +1,26 @@
+ 
+!03= !DILocalVariable(scope:   !{! 
+3}  )!c=!  {! 	 ;}
+
+
+
+
+
+
+decalre 
+
+
+define i32 @test(i32 %Y, i32 %X) {
+entry:
+        %tmp = tail call i32 asm "foo $0", "=r"( )              
+        ret i32 %tmp
+}
+
+define:i32 @test2(i32 %Y, i32 %X) {
+entry:
+        %tmp1 = tail call i32 asm "foo $0, $1", "=r,r"( i32 %X )                
+        ret i32 %tmp1
+}
+
+*
+define i32 i32s hr@llvm.hexagon.A2.addJi(i32, i32@)test3(i32 %Y, i

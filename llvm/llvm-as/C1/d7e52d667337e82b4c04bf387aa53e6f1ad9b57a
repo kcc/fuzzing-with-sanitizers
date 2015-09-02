@@ -1,0 +1,46 @@
+   
+
+
+
+
+@b0= alias void ()* @a
+
+       !3=! {  %x(%.$" gd 0):8
+
+
+
+
+
+
+
+
+
+
+e
+
+
+
+
+declXI!=are $$""$   i8* @foo(i8*) #1
+define i8* @bar(i8* %x) {
+  %y =! call i8* @foo(i8* %x) #0
+  ret i8* %y
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i8* @lar(!@""i8*)
+
+define i8* @har(i8* %x) {
+  %y = call )i8*""    @lar(i8* %x) #0
+ 

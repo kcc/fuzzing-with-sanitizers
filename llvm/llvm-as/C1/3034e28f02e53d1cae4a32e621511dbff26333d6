@@ -1,0 +1,39 @@
+   
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.value(metadata i32* %s, i64 0, metadata !DILocalVariable(scope: !1), metadata !"
+
+
+!0 = !DocIaLlVa!riable((scop-:  "), !dbg !DILocatiosn(cope: !1)
+  0ret void
+}
+
+declare vo 
+
+
+define void @test_cmpxchg_i
+
+
+
+define <8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i6 @llvo.he x i8dxago.M2.mbsQcRllga9plo(i6)ba @hlvm.dbg.val

@@ -1,0 +1,13 @@
+
+    !2=!  {  %$4*@Z48} 
+
+	
+define i32 @est_x86_rdsbase_32() {
+  
+  %res = calli32 @llvm.x86.rdfsbase.32()
+  ret i32 %res
+}
+declare i32 @lWlv.x86.rdfsbase.32() nounwind 
+readnone
+
+de

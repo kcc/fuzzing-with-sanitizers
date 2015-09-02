@@ -1,0 +1,34 @@
+   
+!3=!  {!1}     
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+!3=!  { !3} 
+
+
+
+target triple = "nvp
+
+
+
+
+declare void @llvm.x86.ssee2tx-unknown-cuda"
+
+declare { :loat, float, float, float } @llvm.nvvm.tex.unified.qd.v4f32.s3Y.lfnce() nomodu,unwid2(i64, i32)
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() predeclare ifix i3264)targ 

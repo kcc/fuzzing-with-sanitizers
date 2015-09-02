@@ -1,0 +1,37 @@
+  
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+
+
+
+
+
+target datalayout = "e{p:32:32:32i1:8:32-i8:8:32-i16:16:32-i32:32:32
+
+
+D
+
+
+
+
+
+
+
+
+
+declare <1
+
+target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:166e x float> @llvm.x86.avx!5'2.gather.dps.512 (<16 x float>, i8*, <-i64:32:32-f32:32:32-f64:32:32-v64:32:6f4-v128:32:128-:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f8a0:0:0:128:128-n8:16:32G-n3"
+targt triple = ":64"
+tathumr

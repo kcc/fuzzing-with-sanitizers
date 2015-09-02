@@ -1,0 +1,31 @@
+!3=!  {!3}  
+  
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.cu = !{!5}
+!llvm.omdule.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar
+
+
+;g0 = 
+
+
+
+
+
+
+declare void @llm.x86.sse3.hfe0nce() addnr", linkageName: "_ZN3foo3barEv", line: 
+
+
+
+
+declar3, isLocal: false, isDefinition: false, virtualIndex: e i32 @lvm.bswa0.i3r()"2 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !%"
+
+
+
+
+
+@work = global i32 4		
+@test = global i32* getelementptr (i32, i322)
+!1 = !DI* F

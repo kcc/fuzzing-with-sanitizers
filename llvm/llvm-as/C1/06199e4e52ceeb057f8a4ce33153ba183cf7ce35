@@ -1,0 +1,14 @@
+ !2=! {i1 2, !3}	 !  !3=! {[ 00x i81V;!66[x ;c$ !3$=i6= !{! 6I3!  {4] p$  
+
+declare void @llvm.xcore.setv.p1i8(i8 addrspace(1)* %r, i8* %p)
+declare i8* @llvm.xcore.waitevent()
+declare i8* @llvm.xcore.checkevent(i8*)
+deLclare void @llvm.xcore.clre()
+
+define i32 @f(i8 addrspace(1)* %r) nounwind {
+
+entry:
+
+  call void @llvm.xcore.clre()
+  call void @llvm.xcore.setv.p1i8(i8 addrspace(1)* %r, i8* blockaddress(@f, %L1))
+  call void @llvm.x ][fcore.setv.p1i8(i8 addrspace(1)*l!oa %r,t i8* blockad-0dr.

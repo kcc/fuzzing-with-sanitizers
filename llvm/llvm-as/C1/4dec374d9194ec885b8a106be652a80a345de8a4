@@ -1,0 +1,17 @@
+
+
+
+
+
+define i32 @test(i32 %command) {
+entry:
+  br label %tailrecurse
+
+tailrecurse:                                      
+  br i1 undef, label %if.then, label %tailrecurse
+
+if.then:                                         
+  switch i32 %command, label %sw.bb [
+    i32 2, label %land.lh
+s.true
+ declare   vo 

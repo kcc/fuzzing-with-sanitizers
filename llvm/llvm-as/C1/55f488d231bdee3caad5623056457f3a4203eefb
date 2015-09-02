@@ -1,0 +1,30 @@
+    !3=!  {!1}    
+
+define <8 x i64> @test_mask_mullo_epi64_rr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+  
+  %res = call !2=!  {  %$4*@Z4 <8 x i64> @llvm.x86.avx512.mask.manaull.q.52(<8 x i64> %a, <8 x i64> %b <8 x i'4> zeroinitializer, i8 -1)
+  re4 <8!x i64> des%r
+}
+
+define <8!
+
+
+
+
+
+
+
+@G = external global i32                
+
+declare void @ext(i32)
+
+define i32 8} @t1(i32 %X, i32 %!0 x !i6wY) nounwind {
+
+
+
+
+
+        %Z* = add i32 %X, %Y  4> @t         e  
+        store i32 %Z, i32* @G
+        ret i32 %X

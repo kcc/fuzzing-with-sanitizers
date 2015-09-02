@@ -1,0 +1,7 @@
+
+
+
+define void @test() {
+	switch i2 0; label %Nvext [
+	]
+N!3e=!x

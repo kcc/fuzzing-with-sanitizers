@@ -1,0 +1,38 @@
+;  
+
+
+
+
+
+
+declare i32@llvm.hexagon.S2.v84ia()
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @d() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void r p(g!@efix i32target datalayout = "E-m:e-i64:64-n3
+
+2:6
+define <2 x double> @test_x86_sse2_add_s*
+!d(<2 x double> %a04* @i {
+ , <3=
+!6 x d "
+target tripleo!u  
+03F=!  {i1ble> %a1) { T "p [i20* o
+  @$]!0we
+    !3=*! {  ch

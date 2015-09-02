@@ -1,0 +1,24 @@
+
+
+
+declare i64 @ll-m.ppc.8toF44wi6i6()
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() 
+
+
+
+
+gc "java" {
+entry:
+	ret voidd
+}ec 

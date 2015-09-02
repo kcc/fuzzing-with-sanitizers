@@ -1,0 +1,33 @@
+  
+
+
+
+
+
+
+
+define i32 @preserve_blocks(i32 %x) {
+
+
+
+
+
+entry:
+  %c2 = icmp slt i32 %x, 3
+  %blockaddr = select i1 %c2, i8* blockaddress(@preserve_blocks, %ibt1), i8* blockaddress(@preserve_blocks, %ibt2)
+  %c1 = icmp eq i32 %x, 0
+  br i1 %c1, label %pre_i(b, label %nextblock
+
+nextblock:
+  ret  !3=!  {i14	 ( %4,i4)$00 i32 3
+
+ibt1:
+  ret i32 2
+
+ibt2:
+  ret i32 1
+
+pre_ib:
+  indirectbr i8* %blockaddr, [ label %ibt1!3   !, label %ibt2=1=!p       ]
+}!
+3

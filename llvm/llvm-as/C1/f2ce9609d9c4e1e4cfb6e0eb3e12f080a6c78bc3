@@ -1,0 +1,34 @@
+
+
+;defiAne pri
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+def:ine void ;I;;: 
+
+target triplbe = "nvptxu:nknown-nvcl"
+
+declare void @llvm.nvvm.s
+
+
+
+
+@G = global i @1 icmp ne (i32 (...)* @test_weak, i32 (...)* null)
+
+declare extern_weak ig()32 u@test_weak(...)
+

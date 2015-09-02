@@ -1,0 +1,43 @@
+
+;   !3=!  
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void }
+
+
+
+
+define void @g() prologue i32* @i {
+   
+
+
+
+
+
+ !7=! {!3 
+	
+
+
+
+{
+
+
+@
+
+
+}
+
+
+!named = !{!0, !ret vo1, !2, !3, !
+uselistorder
+
+uselistorder i32*4,  @gl !5}
+
+!0 = distinoct !{}
+=1  !!DIFile(filename: "path/to/file", directory: "/pathdo/tir")
+;2 = x = common glob!DIComal doupo

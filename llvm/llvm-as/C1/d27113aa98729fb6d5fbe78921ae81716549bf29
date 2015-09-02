@@ -1,0 +1,12 @@
+ !;:;:T\    6=!{! 2}!2=!{  !3 }
+
+
+
+define i32 @foo() {
+ret i32 0 
+}
+
+
+
+
+@bar = internal unnamed_addr co!3   ! 3ns

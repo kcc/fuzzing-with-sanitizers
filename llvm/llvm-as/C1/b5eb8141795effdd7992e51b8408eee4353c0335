@@ -1,0 +1,18 @@
+        !3= !{%i4* * null}
+
+define i3r @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0`= !{i32 123,
+
+
+
+
+
+declare { i32i16, 3}
+
+ 
+
+
+d'fine i3

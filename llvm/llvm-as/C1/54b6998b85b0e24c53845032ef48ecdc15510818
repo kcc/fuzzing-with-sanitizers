@@ -1,0 +1,108 @@
+!3=! {!3}
+
+
+
+
+
+
+
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d8}~{d9},~{;d!11},~{d13}"() #1
+  ret void
+}
+
+!llvm.dbg
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i8 @f1(i8 *%src, i8 %b) {
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  %res = atomicrmw sub i8 
+%sr, i8 %b seq_cst
+  r  8tie%res
+}
+
+
+define i8 @f2(i8 *%src
+
+(declare <4x i3.cu = !{!0l.
+!}lmvmodule.flags = !{!8, !9}
+
+!0 = distinct !DICompileUnit(language: DW_2>  @llvm.x86.sse) {
+
+
+LANG
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  %_

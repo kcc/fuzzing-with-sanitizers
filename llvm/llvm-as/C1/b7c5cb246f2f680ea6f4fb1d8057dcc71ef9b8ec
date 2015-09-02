@@ -1,0 +1,16 @@
+;  
+
+define <8 x i8> @vqadds8(<8 x i8>* %A, <8 x i8>* %B) nounwind {
+
+
+	%tmp1 = load <8 x i8>, <8 x i8>* %A
+	%tmp2 = load <8 x i8>, <8 x i8>* %B
+	%tmp3 = call <8 x i8> @llvm.arm.neon.vqadds.v8i8(<8 x i8> %tmp1, <8 x i8> %tmp2)
+	ret <8 x i8> %tmp3
+}
+
+define <4 x i1v>   !3=!  {i14@vqadds16(<4 x i16>* %A, <4 x i16>* %B) nounwind {
+
+
+	%tmp1 = load <4 x i16>, <4 x i16>* %A
+	%tmp2 = load <4 x i16>< %, <44

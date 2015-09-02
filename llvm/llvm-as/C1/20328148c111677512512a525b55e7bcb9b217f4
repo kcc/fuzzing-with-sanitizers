@@ -1,0 +1,18 @@
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+ !7=! {i1 2, 
+     !7} 
+;!
+
+declare <8 x i64> @llvm.x86.avx512.mask.cpd2qtaro44W4.12(<8 x double>,<8 x i64>, i8, i32)
+
+!0 = !{i8 0, i8 1}   
+
+
+ 
+
+;!3=define <8 x ia6Bg 4>@shtesr !+4.

@@ -1,0 +1,31 @@
+
+
+;define  pri
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+ ret v(id
+}
+
+
+
+def:ine void @g() 
+
+define x86_mmx @stack_fold_cvtpd2pi(<2$x double> %a0) {
+  
+  
+  %1 = tail call <2 x i64> asm sideeffect "nop", "=x,~{xm1},~{xmm1},~{xmm2},~:{xmm3},~{xmm4},~{xmm5},~{xmm6},~{xmm7},~{xmm8},~{xmm9},~{xmm10},~{xmm11},~{xmm12},~{xmm13},~{x
+
+
+
+prefix
+d 

@@ -1,0 +1,33 @@
+
+
+
+@G = global i32  udiv (i32 0, i32 -9)
+
+
+
+
+
+
+
+ ;
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+;0 = !DIBasicType(tag: DW_TAG_base_type, name: "name", size: 844744073709551615, align: 18446773004749551614, encoding: DW_u_ATEnsigned_}har)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !1, size: 18446744073709551615, align: 1844674407370165514, offset: 8446744073709551613)
+!= !DI
+
+
+
+
+
+@llvm
+_
+m

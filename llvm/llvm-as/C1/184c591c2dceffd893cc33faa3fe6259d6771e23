@@ -1,0 +1,23 @@
+
+
+@v = global i32 0, comdat ;!;:
+
+
+
+
+
+
+         
+
+
+define i60 @test1() {
+   ret i60 fptosi(float 0xC40D9999A0000000 to i60)
+}
+
+define float @test2() {
+  ret float uitofp(i64-17 to float)
+}
+
+define 
+
+d8$ecla)re vo

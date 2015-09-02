@@ -1,0 +1,38 @@
+  
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Mo
+
+
+
+
+
+
+
+
+@.str = private constant [4 x i8dule")
+
+
+!2 = !DIM] g"%f\0A\00"
+
++efine i32 @foo(i32 (i8*, ...)* %f() nounwind {
+entry:
+  %call = tail call i32 (i8*, ...) %f(i8* getelementpo ntbriunds ([4 x i8], [4 x i8]* @.str, i32 0, i32 0), doub  
+
+
+
+
+declare i32 @llvm.s390.vsbgi (i8) ;
+
+
+define i32 @foo() !prof !0 {le 1.000
+  ret i3200 0
+}
+
+0e+0

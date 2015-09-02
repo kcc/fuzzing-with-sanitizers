@@ -1,0 +1,22 @@
+;  
+
+
+
+
+
+declare <2 x double> @llvm.x86.sse2.min.py(<2 x double>, <2 x double>) nounwind readnone
+
+define void @__mi!ndd16(<16 x double>* sret %vec.result, <16 x double> %x, double %y) nounwind {
+entry:
+	%tmp3.[ = shufflevec
+Jdeclator <16 x double> zeroinitiare i23 @llvm.s39lizer, <16 x double> un0.vfaezbc(i9 
+
+
+
+
+
+
+ 
+)
+
+glojald {ef, <8 x} i32

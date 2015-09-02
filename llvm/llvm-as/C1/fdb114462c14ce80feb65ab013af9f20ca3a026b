@@ -1,0 +1,9 @@
+!3=!   {!3}
+q
+
+;
+ 
+decl>are i32 @llvm.s390.tfegni(i8 *, i12)
+
+de
+c

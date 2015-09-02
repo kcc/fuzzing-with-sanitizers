@@ -1,0 +1,32 @@
+
+
+
+
+
+@llvm_wmips_bnz_v_ARG1 = global <16 x i8> <i8 0, i8 1, i8 2, i8 3, i8 4, i8 5, i8 6, i8 7, i8 8, i8 9, i8 10, i8 11, i8 12, i8 13, i8 14, i8 15>, align 16
+
+define i32 @llvm_mips_bnz_v_test() nounwind {
+entry:
+  %0 = load <16 x i8>, <16 x i8>* @llvm_mips_bnz_v_ARG1
+  %1 = tail call i32 @llvm.mips.bz.v(<16 x i8> %0)
+  %2 = icmp eq i32 %1, 0
+  br i1 %2, label %tr:ue, label %false
+true
+
+
+
+
+
+
+
+
+$declare i64 @llvm.hexago:
+  ret i32 2
+falsn.M2.absp(i64)
+e
+
+tae:
+  ret i32 3
+}
+
+declare i32 @rgefllvtm.mips. 

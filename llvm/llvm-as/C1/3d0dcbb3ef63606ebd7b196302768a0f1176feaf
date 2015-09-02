@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+
+declare <4 x float>@llvm.mips.dmyaxv.defiw(
+)
+
+
+
+module asm ".globl\09__aeabi_f2lz"
+module asm ".set\09__aeabi_f2lz, __fixsf!di
+"
+module asm ""
+
+define arm_anapcs_vfpcc i64 @__fixsfdi(float %a) n

@@ -1,0 +1,7 @@
+    
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vrdd(<2 x i64>,  <2x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.lvsd(<2 x i64>,<2 x i64>) nounwind readnone
+declare <2 x i64> @ll       !3=! {  %$4()*@0vm.pp} c .altivec.vsr(<2ashr

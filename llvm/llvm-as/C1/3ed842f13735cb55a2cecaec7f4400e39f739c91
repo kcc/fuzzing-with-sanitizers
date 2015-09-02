@@ -1,0 +1,38 @@
+      !3= !{%i4* * null} 
+
+
+
+
+
+
+define void @extractvalue([4 x i8] %x1, [4 x [4 x i8]] %x2, {{i32, float}} %x3){
+entry:
+
+  %res1 = extractvalue( [4 x i8] %x1, 0
+
+
+  %r
+
+ 
+
+define i64 
+
+	
+@targt0(x86_mmx* %gp) {
+
+
+
+
+
+
+  %t = load x86_mmx, x86_mmx* %p
+ %u = tail call x86_mmx @llvm.x86.mmx.pades2 = extractvalue [4 x [4 x i8 ]] %x2, 1
+
+
+  %res3 = extractvalue [4 x [4 x i8 ]] %x2, 0, 
+
+
+  %res4 = extractvalue {{i32, float}} %x3, 0,  dah.q(x86_mmx %t!c=!  , x86_mmx; {! 	%t)
+r  %s = bitcast_m8*  1
+
+  retm 

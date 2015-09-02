@@ -1,0 +1,28 @@
+
+define void @f(token ){;ntr):
+  ret void
+}
+
+
+declare <4 x float> @llvm.mips.sld7.(
+
+)
+
+
+;
+
+target datalayout = "e-p:32:32"
+target 
+
+triple = "i686-apple-darwin8.7.B2"
+
+@x = weak global i32 0
+
+
+@"\01Ly" = private global i8 0
+
+
+@llvm.used = appending global [2 x i8*] [ i8* bitcast (i32* @x to i8*
+),
+    
+        i8* @"\01Ly" ]

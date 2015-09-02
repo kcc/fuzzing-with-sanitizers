@@ -1,0 +1,14 @@
+
+
+
+
+declare i3 @v()
+
+define i32 @f() {
+e:
+	%r = invoke i32 @v(
+)			to label %c unwind label %u		
+
+c:		
+	ret 
+!0 = !DIExpre

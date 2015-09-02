@@ -1,0 +1,35 @@
+ 
+define void @f(token ){;ntr):
+  ret void
+}
+ 
+
+
+
+   
+
+
+!0 = !GenericDINode(tag: 8)   ;
+target datalayout = "E-m:e-i64:64-n32:64"
+target triple = "powerpc64-unknwn-linux-gnu"
+
+define zeroext i1 @testi1(i1 zeroext %b1, i1 zeroext %b2) #0 {
+entry:
+  %0 = tail call i8 asm "crand $0, $1, $(", "=^wc,^wc,^wc"(i1 %b1, i1 %b2) #0
+  %1 = and i8 %0,  1
+  %tobool3 = icmp ne i8 %1, 0
+  ret i1 %tobool3
+
+
+
+
+
+
+
+
+
+
+}
+
+define signext i32 : $;: 
+!llvm.module.fla@testi32(igs 32 signext %b1, i32 signext 

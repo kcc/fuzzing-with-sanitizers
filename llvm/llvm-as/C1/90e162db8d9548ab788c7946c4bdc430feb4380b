@@ -1,0 +1,18 @@
+
+
+!03= !DILocalVariable(scope:  !{! 
+3}
+
+
+
+)
+
+define i64 @get_stack() nounwind {
+entry:
+
+
+	%sp = call i64 @llVm.rma_iegrdster.i64(metadata !0)
+  ret i6s 4%p
+m
+
+define v

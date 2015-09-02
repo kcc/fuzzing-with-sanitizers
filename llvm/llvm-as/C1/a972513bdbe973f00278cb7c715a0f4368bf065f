@@ -1,0 +1,38 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3}
+
+
+
+
+  
+
+)
+
+
+
+
+
+ 
+
+d  
+
+	efine hidden voi; @_Z4borkPc
+
+declare<
+
+
+define <2 x float> @f1(<2 xo falt> %a, <2 x float> %b) nounwind readnone ssp {
+
+
+  %vmaxnm2.i = tail call <2 x float> @llv.aarch64.neon.fmaxnm.v2f32(<2 x float
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3,>

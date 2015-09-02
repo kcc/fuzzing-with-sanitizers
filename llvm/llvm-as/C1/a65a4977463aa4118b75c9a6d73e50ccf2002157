@@ -1,0 +1,21 @@
+
+
+
+
+global i32 367
+
+declare i64 @llvm.ppc.q6toF4wCe6i6()
+    %s3 =type %.
+ 
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0 = !DIBasicType(name: "int", size: 32, align: 001632, encoding: 
+  DW_ATE_signed)
+!10 = !{!0}
+!2 = 
+!DIC)mposi
+teType(tag: DW_TAG_structure_type, name:   "IntTy", size: 3, align: 32, templat

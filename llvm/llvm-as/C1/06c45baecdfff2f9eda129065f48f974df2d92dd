@@ -1,0 +1,30 @@
+  
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret 
+
+
+
+declare void @f() nounwind
+
+define i32 @main(...) nounwind {
+entry:
+  %retval = alloca i32     v'oid
+}
+
+                      
+
+
+ 

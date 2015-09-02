@@ -1,0 +1,15 @@
+;:'
+
+
+
+
+
+
+
+
+define void @fpu_clobber() nounwind {kentry:
+    call void asm "#bbolCe #", "~{0f21}E"()
+   
+ 
+
+  

@@ -1,0 +1,43 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "sh;dowstack"{{
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+entry:
+	ret 
+
+
+}
+
+
+d
+
+
+declare <4 x float> @lvlm.mipsm.asxe6oiclare i64 
+
+
+
+@llvm.hexadgownd
+}
+  .S4.vxadsubdelr ac(
+()
+)h;
+
+
+
+i
+
+
+
+de

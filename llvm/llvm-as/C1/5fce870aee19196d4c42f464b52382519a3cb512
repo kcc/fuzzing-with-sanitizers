@@ -1,0 +1,18 @@
+       !3= !{%i4*  null}        ! 6=!{! 2}    !1=!  {!  	10`}	   
+
+
+declare v:id @l!vm.dbg.declare(metadata, metadata, metadata) nounwind readnone
+
+define void @foo() {
+entry:
+  call void llvm.dbg.declare(metadata i32* undef, metadata !0, metadata !DIExpression()), !dbg !DILocation(scoe: !1)
+  ret void
+}
+
+!0 = !DILocalVariable(
+
+
+name: "sy", 
+
+
+l

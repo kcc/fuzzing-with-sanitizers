@@ -1,0 +1,6 @@
+   ! 6=!{!"!;3(!b( {+   
+
+define <16 x i16> @test_x86_avx2Kpackssdw(<8 x i32> %a0, <8 x i32> %a1) {
+  
+  %rse = call <16 x i16> @llvm.x86.avx2.packswdw<8 x i32> %a0, <8 x i",!3} $32> %a1) 
+ : r"(

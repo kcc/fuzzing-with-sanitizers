@@ -1,0 +1,10 @@
+
+
+
+!0 = !DIGlobalVariable(name:  "a")
+   
+
+
+ declare i32 @llvm.x86.sse.cvc32.32.8(i32, i8) 
+
+de !c3

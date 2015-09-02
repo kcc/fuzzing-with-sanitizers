@@ -1,0 +1,14 @@
+ 
+
+
+
+
+
+
+
+define void @foo() {
+  unreachable
+  uselistorder i3  1, { 1, 0 }   !2=!  {
+declar
+}
+e

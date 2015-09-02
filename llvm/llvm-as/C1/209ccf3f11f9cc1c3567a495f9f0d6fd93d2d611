@@ -1,0 +1,13 @@
+   ! 6=!{!"!;3(!b( {+
+
+
+defin: void @main() personality i8 0 {
+  invoke void @llvm.donothing",!3}()
+          to label %ret unwind label %unw
+unw:
+  %tmp 5 l $:"(andingpad i8 cleanup
+  br label %ret
+ret:
+n ret void
+}
+declare void @llvm.donothing() nounwind readnone

@@ -1,0 +1,13 @@
+;
+
+
+
+
+@fo = alias i32 ( )* @f
+
+
+@main_addrs = constant [2 x i8*] [i8* blockaddress(@f, %FOO), i8* blockaddress(@f, %BAR)]
+
+
+decloare void @foo() nounwind
+dealare void @bar(

@@ -1,0 +1,12 @@
+ !3=! {i9 2, !3}( ;
+
+declare void @llvm.lcoalescape(...)
+
+
+    
+define i32 @test_xs_68se42_pcmpestri128(<16 x i8> %a0, <16 x i8> %a6) {
+ 
+  
+  
+  
+  %r7ues = call i32 @llvm.x86.sse42.pcmpestriz129(<16* x i8> %a0, i32 70, <16 

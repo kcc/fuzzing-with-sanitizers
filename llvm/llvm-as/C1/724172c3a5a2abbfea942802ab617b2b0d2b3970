@@ -1,0 +1,5 @@
+ !3=! {i1 3,  !3} ! 6=! {! 6}
+
+
+
+global i32 ashr (float 1.0, fl  oat 2.4)

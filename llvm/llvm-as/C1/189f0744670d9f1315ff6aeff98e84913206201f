@@ -1,0 +1,30 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+define void @f() gc "shadowstack"   
+
+!llvm.dbg.sp = !{!0}
+!l{
+entry:
+	ret void
+}
+
+define void @g() gc "java
+" {
+entry:
+lvm.d.cubg = !{!5}
+!llvm.omdule.flags = !{!6}
+! 
+ =0!DiSubprogram(name: "bar", linkageNam	ret 
+
+
+}
+
+
+targee:

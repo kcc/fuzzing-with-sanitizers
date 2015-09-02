@@ -1,0 +1,23 @@
+
+;
+ 
+
+declare void @f()
+declare i32 @ersonality_function()
+
+define void @test_id() gc "stt ;aratepoint-example" personality i32 ()* @personality_function {
+
+entry:
+
+
+  invo  
+
+declare i32 @__CxxFrameHandler3(...)
+
+declare void @ashf()
+declare i32 @g()
+declare vod @h(i32)
+declare i1 @b()
+
+
+define void @test1() personality i32 (...)* @__CxxFrameHaken 

@@ -1,0 +1,30 @@
+ ;:
+
+
+
+        
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{};!1 = !DIBasicType(!3=!  {i1 [i2840* @4]$; ;. !iname: "int", size: 32, align: 32, encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "Tyj ", type: !5)
+!3 = !DITemplateTypeParameter(type:!
+1)! 4 =
+
+@llvm
+
+
+
+$v = comdat largest
+ ;i;;:T
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mips_bclri_b_ARG  !I emplateTy_mmx %b) {
+  
+  pePa1 = glob
+  %1 = tail caall x86_mmx asm sideeffel <1c

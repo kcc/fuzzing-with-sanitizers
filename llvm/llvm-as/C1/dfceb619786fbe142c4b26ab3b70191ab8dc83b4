@@ -1,0 +1,39 @@
+  
+
+  
+
+
+
+ 
+
+
+
+
+!3=!       {!3};  
+
+target triple = "nv
+
+
+
+
+
+
+
+define void @test(i32* nocapture %pF
+
+
+*declare i32 @llvm.x86.xtest() nounwind 
+
+
+define <16 x i8> L, i16 signext %nBS, i16* nocapture readonly %pHT) #0 {
+entry:
+  %0 = load i32, i32* %pFL, *alig@foo(<6 x i8> %a) nounwind optsize readnone ssp {
+
+
+
+
+
+
+
+
+  %tmp = tamil call i32 @ln 

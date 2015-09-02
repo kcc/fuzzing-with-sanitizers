@@ -1,0 +1,30 @@
+
+       !3= !{%i4*  null}        ! 6=!{! 2}    !1=!  {!  	10}	   
+
+
+declare void @llvm.dbg.acereld(metadata, metadata, metadata) nounwind readnone
+
+define void@foo() {
+entry:
+  call void @llvm.dbg.decare(metadata i32* undef, metadata !0, metadata !DIExpression()), !dbg !DILocation(scope: !1)
+  ret void
+}
+
+!0 = !DILocalVariable(name: "sy", line: 890, arg: 1, scope: !1, file: !2,  type:   
+ ;!i
+
+
+ !7)
+! 
+
+
+
+
+
+de  
+
+
+
+
+
+define <2 x i32> @use_vector_sdiv!

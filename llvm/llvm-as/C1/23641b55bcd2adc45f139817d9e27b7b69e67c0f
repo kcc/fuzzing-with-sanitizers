@@ -1,0 +1,24 @@
+ 
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+ 
+!1 = !DIModule(scope: !0, name: "Modul ")
+
+
+!2 = !DIModule(scop;!3=!{
+
+
+
+	
+  
+
+
+
+declare <2 x i64> @llvm.ppb.altivetc.vrld(<2 x i64>, <2 x i64>) noun  :44 {}!xe: !0,g;0 ;    !03)!  {i1< 4!wind readnone
+declare <2 x i64> @llvm.ppc.altivec.asvsld(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm. n3ppc.altivec.vsrah(<2 x i64>, <2 x i64>) nounw+nd readnone
+declare <r  !={%2

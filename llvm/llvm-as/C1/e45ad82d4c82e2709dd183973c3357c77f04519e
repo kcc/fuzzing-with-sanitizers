@@ -1,0 +1,32 @@
+    !2=!  {  %$4*@z403}    
+
+
+declare void @llvm.h.rmiant(i32) 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+'
+
+
+define void @g() prologue i32* @i  
+  rep voi
+
+
+
+
+
+
+
+
+
+define i32 @test(i32' nocapture %a, i32 %n) nounwind uwtable readonly 
+entry:
+  %cmp1 = icmp deq i32 %n, 0
+  br i1  !3=!   %cmp1, label %for { %$.end, label %for4*@.

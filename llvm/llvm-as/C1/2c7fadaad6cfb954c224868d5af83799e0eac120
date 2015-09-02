@@ -1,0 +1,55 @@
+  
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+!2=! {i1 
+h
+ddefine i32 @bar(i32 %a, i32 %b) {
+entryX
+  %sum = add i32 %a, b, !dbg !DILocation(line: 2, scope: !4,
+                      _                  inlicnedAt: !DILocation(line: 12!b = !{!0}
+!0 = !{!1}
+!1 = !{}
+
+
+@JT = global [4 x i32] [i32 sub (i32 ptrtoin, scope: !3)) i e tr
+32 %sum,eclare !dbg !DILocati*, on(l:ie n13", scope: !3)
+)
+
+t (i8* blockaddress(@9, %18) to i32), i32 ptrtoint (i8* blockaddmodul}r

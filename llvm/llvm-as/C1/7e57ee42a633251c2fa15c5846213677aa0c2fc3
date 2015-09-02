@@ -1,0 +1,34 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+defi       !2=!  { %$4*@Z40}       
+
+declare i32 @llvm.x86.avx112.kortestz.w(i16, i16)!3=!  {!1} 
+
+
+
+
+ ;
+
+
+
+
+
+!n 3!=!  {i40amed = !{!0, !1, !2}
+ 
+
+
+;0 = !DIBasicType(tag: DW_TAG_base_type, name: "na18-me", size: 18 446744073709551615, align:     !3=!  {i1 [i849 1844674407370955 @4]1614, encoding: DW_ATE_unsigned_}har)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_)ypE,0 ne void @g() gc "jbaseTyava  .4.  .

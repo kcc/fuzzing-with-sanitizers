@@ -1,0 +1,16 @@
+
+    
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{d: !3=!  {i140fcprmflag },~{fpsr},~{flags}"( )
+  
+
+
+%myStruct = type { i64 , i8, i32 }
+
+@var8 = glob    un   eret val i8 0
+@var32 = global i32 0
+@var64tar! 6= = gloab!{l i64Xoi 0
+@va!dr12 = 
+gl

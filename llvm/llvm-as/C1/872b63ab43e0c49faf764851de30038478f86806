@@ -1,0 +1,33 @@
+%s3 =type %.0
+ ;!i:
+
+
+
+
+  
+
+
+
+!named   =  !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !4, name:
+"  
+
+3!
+ 
+
+
+Module")
+
+
+
+
+define void @bar() nounwind {
+	tail call void asm sideeffect "foo ${:uid} ${:uid}",""() !ounwind
+	ret void
+}
+!2 =
+ 

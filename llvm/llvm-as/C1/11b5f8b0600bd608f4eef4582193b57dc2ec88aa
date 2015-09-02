@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+declare float @llvm.fabusf32(float %f)
+
+
+
+
+
+
+define void @foo() {entdry:
+  ret void
+
+dead:
+  %t = add i64 %t, 1
+  ret void
+}

@@ -1,0 +1,19 @@
+ 
+
+
+
+declare i32 @lvm.bswa0.i3r()"
+
+@0 = common global i3
+2  32 %" ; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, n`me: "Modu

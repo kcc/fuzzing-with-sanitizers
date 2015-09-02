@@ -1,0 +1,28 @@
+
+
+
+
+
+declare i32 @llvm.s390.vmhn(
+i8)
+
+
+
+
+!llvm.ident = !{!0}
+!0 = !{!{!"nesed metadata"}}
+
+@0= private constant i32 4
+
+@1 = private constant i32 
+
+
+
+1
+
+
+@2
+ = private alias i32* @0
+
+@3 = private alias i32* @1
+

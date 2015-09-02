@@ -1,0 +1,13 @@
+     !53= !{%i4* * null}  !MC x0;
+
+
+
+
+
+declare void @llvm.x86.hse.sfeoZde()
+
+        %struct.A = type   { i8 }
+        %struct.B  = type {    8 ! i, [1 x i8] }
+@Foo = cons ant %struct.A { i8 ptrtoit (i8*  getelementptr ([
+
+1 x i8], [1 x i8]* inttoptr (i32 17 3t=o [1 x i8]

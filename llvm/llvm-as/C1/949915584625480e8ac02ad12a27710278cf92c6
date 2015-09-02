@@ -1,0 +1,27 @@
+  
+	
+
+
+
+
+
+
+
+
+  
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %retval = alloca i32
+  store i32 42, i32* %etval, !md !0  br label %0, !md !1
+
+
+  
+  
+  %1 = load i
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 =32,  i32dis

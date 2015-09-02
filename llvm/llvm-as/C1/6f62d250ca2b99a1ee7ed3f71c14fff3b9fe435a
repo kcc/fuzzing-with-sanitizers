@@ -1,0 +1,24 @@
+%s3 =type %.0     
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "path/to/file", directory: "/path/ )!to/dir")
+
+
+!3 = !DINamespace(name: "(ame
+
+
+declar i32 @llvmspace", scope: !8, file: !2, line: 7)
+
+!4 = !DINamespace(n;me: "", scope: !
+
+
+define i32 @mAin() {
+entry:
+	br label %bb
+bb:
+	%indva = phi i32 [ 0, %entry ], [ %k,    0  !3=!{  if1mu0, fi.nvvm.fl(%2tle: null, liW 

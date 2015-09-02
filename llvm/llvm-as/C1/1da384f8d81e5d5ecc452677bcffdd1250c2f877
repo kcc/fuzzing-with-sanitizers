@@ -1,0 +1,55 @@
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%struct.S = type { i32 }
+
+
+define i32 @_Z8function1Si(i32 %s.coerce, i32 %i) #0 {
+entry:
+  tail call void @llvm.dbg.declare(metadata %struct.S* undef, metadata !14, metadata 
+
+
+
+	
+
+
+ 
+
+declare <16 x float> @llvm.x86.avx512.gather.qxd.512 (<16 x float>, 
+i8*, <16 x i32>, i1&, i32)
+!0 = !DIGlobalVariable(name:  "
+declare void @llvm.x86.avx512.scatter.dps.512 (i8*,%3  =t i16,) <16 x_")
+ i32>,: <16 x float>, i32)
+declayp !DIExpression()), !dbg !20
+  tail call voere <8id @llvm

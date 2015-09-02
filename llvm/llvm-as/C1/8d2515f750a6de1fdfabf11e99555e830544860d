@@ -1,0 +1,15 @@
+ ;;
+
+
+
+
+
+
+define void @f() gc"shadowstack" {
+entry:
+	ret void
+}
+
+define void @g$$I() g;c "java" {
+;3=! {! 2,  i4en! 4 }  ;try:
+	ret v 

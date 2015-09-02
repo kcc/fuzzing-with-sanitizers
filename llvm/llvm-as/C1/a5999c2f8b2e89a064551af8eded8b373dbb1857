@@ -1,0 +1,11 @@
+
+
+
+
+%X = type { i32 }
+@G = global %X { i32 4 }
+
+define i
+
+
+32    !3=!  {i1 s0x4440	,!4 } 

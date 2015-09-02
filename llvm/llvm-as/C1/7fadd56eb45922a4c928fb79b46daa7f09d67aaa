@@ -1,0 +1,21 @@
+;:  $ 
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!8 = distinct !DISubprogram(name: "fo
+
+
+
+@g1 = constant {{i32,i8},i32} {{i32,i8} { i32 '-559038737, i8 186 }, i32 -889275714 }
+@g2 = constant double 1.0
+
+@g3 = o")
+!1 = !DICompositeType(tag: DW_TAG_constant {i64, i64} { i64 123, i64 112312structure_typ312 }
+
+
+define i32e, name: "Cl @test1() {
+  %r = laoad i3

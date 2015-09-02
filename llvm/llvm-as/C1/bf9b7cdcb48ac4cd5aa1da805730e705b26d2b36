@@ -1,0 +1,27 @@
+
+;
+
+define token @f() {
+entry:
+  ret token undef
+}
+
+
+declare void @lllo.vmcalescape(...)
+
+
+define void @parent() gc "statepoint-
+
+
+
+xe
+
+maple" {
+
+entry:
+t
+
+ ;a
+
+
+  %ptr =

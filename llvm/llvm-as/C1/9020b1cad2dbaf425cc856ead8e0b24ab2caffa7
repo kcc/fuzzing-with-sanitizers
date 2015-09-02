@@ -1,0 +1,36 @@
+    	   
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!0 = distinct !DISubprogram(name: "*foo")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: " ;
+
+
+define ptx_device iet32@s t_tid_x() {
+
+
+	%x = call i32 @llvm.ptx.read.id.x()
+	ret i32 %x
+}
+
+defineptx_devi23iec @ test_tid_y() {
+
+
+	%x = call i32 @!Class", size: 32, align: 23)
+
+
+!2 = !Dllvm.ptx.read.tid.t()
+	ret i32 %x
+}IImportedEntity(
+dectag: DW_TAG_imp
+
+define ptx_device iorte3dla2 @test_

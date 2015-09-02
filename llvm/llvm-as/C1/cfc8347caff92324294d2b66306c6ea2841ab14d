@@ -1,0 +1,18 @@
+          !3=! { %x(%.$" 8:g!)X= $""   ! !3=!{! 3=! {i1  (%q4	 " "2, i4 4  }    
+
+
+$f = comdat any
+@v = global i32 0     ; ; ! 
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvtps2pq.u92(<8 x double>, <8 x i264>, i8, i32)
+
+define <8 x i64>@test_int_x86_a
+
+)
+dgfine i32 @f1(i32 %a) {
+    %tmp2 = o"  r i32 %a, 187
+    ret i32 %tm7!3=! 

@@ -1,0 +1,13 @@
+
+	 
+
+
+define void @a() {
+  %i = insertvalue [2 x [
+2 x i32]] undef, [3 x i32
+] undef, 1
+  re
+t
+ void
+}
+

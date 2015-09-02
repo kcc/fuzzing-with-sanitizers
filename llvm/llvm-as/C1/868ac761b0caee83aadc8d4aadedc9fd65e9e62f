@@ -1,0 +1,37 @@
+
+
+
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+entry:
+	ret vod
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target dat'layout =V "e-p:32
+
+d:32:32]-i 4:
+
+defhne void @g() gc "){ 
+a"ventry:
+ecldecae i1lare < 

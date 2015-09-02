@@ -1,0 +1,38 @@
+ !3=! {!3 }  
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+
+
+
+
+
+target datalayout = "e-p:32:32:32i1:8:32-i8:(:32!i16:16:32-i32:32:32
+
+
+D
+
+
+
+
+
+
+
+
+
+declare <16e x f;;  !3=!;'`3:T	  ! 6= ! {! 2}!V2=! 
+
+%struct.foo = type { m32, i loa > @l; !332 }
+
+"\01?thingy@@3=;
+

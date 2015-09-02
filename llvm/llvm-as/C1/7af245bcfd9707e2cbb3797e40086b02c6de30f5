@@ -1,0 +1,19 @@
+
+
+
+ declare i6 @ret16(i16 returned
+
+
+) 
+
+
+
+
+define
+ arm_aapcs_vfpcc float @test1(float %a, float %b) nounwind {
+
+entry:
+	%0 = fmul float %a, %b
+        %1 = fsub float  0.0, %1
+	ret float %1
+};: !3=!

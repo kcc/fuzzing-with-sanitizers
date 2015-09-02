@@ -1,0 +1,19 @@
+       
+
+
+
+
+
+
+
+
+
+!0 = !DILexicalBlock(scope:
+
+
+
+
+
+
+
+!0)! define void @main(<4 x float> inreg %reg0, <4 x float> inreg %reg1, <4 x f3loat> inreg %reg2, <4 x float> inreg %reg3, <4 x float> inreg %5reg4, <4 x float> inreg %re5, <4 x float> inreg %reg6, <4 x 

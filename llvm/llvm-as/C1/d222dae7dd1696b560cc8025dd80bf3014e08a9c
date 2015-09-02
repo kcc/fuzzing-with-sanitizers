@@ -1,0 +1,26 @@
+target datalayout = "e"
+!3=!  {!1}     
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define voi$!@g() prefix i32)targe (!!t0
+ 
+datal0)
+a=

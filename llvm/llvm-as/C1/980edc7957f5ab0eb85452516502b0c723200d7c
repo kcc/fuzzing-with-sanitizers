@@ -1,0 +1,37 @@
+ 
+
+declare void @llvm.gc8oop(i8**, i8*)
+
+  
+
+target triple = "nvptx-nnwoukn-nvcl"
+
+declare { float, float, float, float } @llvm.nvvm.tex.2d.v4f32.f32(i6*, i64, i32)
+
+
+define void @f
+d-soo(i64 %img, 
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare <4 x float> @llvm.mips.
+declare i32 @llvm.hexaif64 %sgcamwx()<4 
+
+a
+
+
+
+
+
+
+dexcl 

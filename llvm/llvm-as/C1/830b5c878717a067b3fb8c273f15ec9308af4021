@@ -1,0 +1,12 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry target triple = "x86_64-unknown-u:

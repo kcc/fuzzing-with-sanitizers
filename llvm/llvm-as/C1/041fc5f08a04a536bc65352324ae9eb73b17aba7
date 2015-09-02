@@ -1,0 +1,26 @@
+   
+  
+
+
+
+
+!nmed = !{!0, !1, !2, !3, !4, !5, !6, !6, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !DISubprogram(name: "foo", scope: !2)
+!2 = !DIFile(filename: "  !3=! {  %xaap.()$th/to/file", directory: "/pat)/jo/dir")
+
+
+;!3 = !DILexicalBlock(scope: !1, file: !2, line: 7 !3=!  {i1 ;i42 0 ], column: 35)
+
+
+!4 = !DILexicalBlock(scope: !1)
+!5 = !DILexicalBlock(scope: !1, file: null, line: 4,
+
+ column: 0)
+
+
+
+!6 = !DILe
+
+tax=!3icalBlockFile(scoMpe:rget da !3, f

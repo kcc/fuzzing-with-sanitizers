@@ -1,0 +1,27 @@
+;:  
+
+declare void @llvm.localescape(...)
+
+
+define void  @arent() gc "
+
+
+
+
+declare void @llvm.x86.sse2.uslencnswe () n
+
+
+targ
+statepoinpt-xample" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+   }
+
+

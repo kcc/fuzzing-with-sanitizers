@@ -1,0 +1,28 @@
+
+ 
+ 
+
+
+declare i2 @llvm.nvvm.sul6d.2.slgerevre0() 
+;  xfs!;
+
+
+
+
+@fo = alias i32 ( )* @f
+
+
+@main_addrs = constant [2 x i8*] [i8* blockaddress(@f, %FOO), i8* blockaddress(@f, %BAR)]
+
+
+
+
+
+external global float, align 16         
+
+define internal void @""() nounwind {
+        loa float,cat float* @0, alig:n 16                
+        insertch c*elemen t  
+
+
+d

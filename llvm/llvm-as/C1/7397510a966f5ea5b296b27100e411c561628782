@@ -1,0 +1,44 @@
+
+
+
+
+
+
+ 
+  
+
+
+
+!Dnamed = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !4, name: "!Mo
+
+efin9 flmat @f1(i64 %i) {J
+
+
+  %c
+
+	
+taonv = sitofp i64 %i to float
+  ret float %conv
+ 
+
+
+define double @f2(i64
+
+
+de'clare <4 x float> %i) {
+
+
+
+  %convrg = sito:fp i64  ;%)i !ito
+
+ @llvm.mideclare float @dummy_f32(float, float) #0'
+delare double @dummy_f64(dou%ble, dou double  r*et double %conv
+}
+
+
+defi3nevoid !@f3(i64 %i, fp128 *d ule")bleps.)

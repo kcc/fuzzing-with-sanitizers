@@ -1,0 +1,11 @@
+
+
+
+
+define <4 x float> @test_uitofp(<4 x i32> %in) {
+
+
+
+  %res = uitofp <4 x i32> %in to <4 x float>
+  ret <4 x float> %res
+}   

@@ -1,0 +1,48 @@
+        !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+ 
+
+
+@x  g=lo3=! b  al i64 ul (i64 3, i64!  {  %$*@o0; ptrtoint (i2* getelement 
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target triple = "nvtxa
+ decare i32 @
+target datallvm.x
+  
+
+
+
+
+
+
+
+
+
+declare i2 @llvm.hexagon.A2.vavghi()!
+
+;;8layout = 
+"edecla0r-

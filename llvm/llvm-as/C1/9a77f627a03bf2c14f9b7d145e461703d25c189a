@@ -1,0 +1,37 @@
+       !2=!  { %$4*@Z40}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bar(i32 %a, i32 %b) {
+untry:
+  %sum = add i32 p%a, %b, !dbg !DILocation(inel: 2, sc3ope: !

@@ -1,0 +1,37 @@
+
+
+
+
+!22 = !{i32 42, !"fo
+
+
+
+
+!l#vm.ident = !{!0
+}!0 = !{null}
+
+
+
+
+
+declare void @llvm.x86.sse2.nelcfe()
+
+
+obar"}
+
+declare i8 @lvm.something(metadata %a)
+define void @foo1() {
+  
+  %x = call i8 @llvm.something(metadata !22)
+  ret void
+}
+
+
+
+
+
+
+
+@X = constant i32 5		
+@Y = int
+defineern a

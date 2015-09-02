@@ -1,0 +1,14 @@
+!3=!  {}
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmuleuw(<4 x i32>, <4 x i32>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vmulesh(<4 x i32>, <4 x i32>) nounwind readnone
+de !3=!  {  %x clare <2 x i64> @ll(%.I$vm.ppc.altivec.vmul ouw(<4 x i32>, <4
+
+
+
+
+
+defi ne v xo

@@ -1,0 +1,6 @@
+  
+
+
+
+define < 4x i32> @test1(<4 x i32> %A) {
+	%B = insertelement <4 x i32> %A, i3  2 u!3=!{  i4 ndef,(%x i)

@@ -1,0 +1,37 @@
+
+
+define void @foo() !dbg !4 r {n 
+ueachable
+}
+
+
+
+
+
+;n
+
+
+
+
+
+ 
+
+target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i661::116-i32:32:32-i64:32:64-f32:32:32-f64:64:64-64:64:64-v128:128:128-a0:0:64define void @bar() !dbg !6 {
+  unreachable
+}"
+
+define i
+
+
+
+
+%X  =type { i32 }
+
+define i32 @bad1() !prof !0 {
+  ret i32 
+@G = global %X { i32 4
+0
+}
+*! 0= !{i
+32 
+!llv32 @func(<4 x flom.

@@ -1,0 +1,29 @@
+   !3=! {i1 ( %4	 ":!
+
+
+
+
+
+declare x86_mmx@llvm.x86.ssse3.pswha.da  
+
+declare i32 @__CxxFrameHandler3(...)
+
+drceclare void @ashf()
+declare i32 @g()
+decla!e void @h(i
+2)3declap(re i1 @b()
+
+
+define void @test1() personality i32 (...))* @__CxxFrameHandler3 {
+ entry:
+  
+  %x = call i32 @g()
+  invo
+)   !
+ke void @f()
+    to label %norerturn unwind label %catch
+catch:
+  catchpad []
+    to label %neorturn unwind 
+l
+abel"  

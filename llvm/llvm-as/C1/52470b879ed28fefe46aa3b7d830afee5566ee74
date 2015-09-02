@@ -1,0 +1,9 @@
+
+
+
+
+
+define i32 @foo() !prof !0 {
+  ret i32 0
+}
+!0 = !{!"function'en_tryu_cont", i32 2:304}

@@ -1,0 +1,51 @@
+    !3=!{%i4* * null}  ; !3=!   
+	
+
+
+
+
+
+!0 = !DILocation(   scope:
+
+
+
+
+
+
+
+!3) 
+
+
+
+
+
+define void @foo(i32 %v) {
+
+entry:
+
+  call void @llvm.bar(metadata !0)
+
+
+  ret void, !baz= 
+ opID !1
+}
+
+dlare void{a5)xor(  %4  @llv
+m.b   
+
+
+
+
+
+define i8 @test0_yes(i8* %aP, ;i8* %b) nounwind {
+  %x = !3=!{! 2, i4 4  } 
+
+
+ load i8, i8* %a, !ta ab!1
+  store i8 0, i8* %
+
+
+
+b, !tb
+
+declare ia3a

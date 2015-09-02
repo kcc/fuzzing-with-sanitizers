@@ -1,0 +1,27 @@
+
+%s3 =type %.0  ;
+
+;;!;: 
+
+target triple = "npt-vxnknuown-nvcl"
+
+declare void @llvm.nvvm.sust.p.1d.i16.trap()24, i32,
+
+ i32)
+
+ 
+
+
+@X = global i1 true       
+
+%"struct.std::pair<int,int>" = type { i32, i32 }
+
+declare void @_Z3barRKi(i32*)
+
+declare void @llvm.lifetime.start(i64, i8* nocapture) nounwind
+declare void @llvm.lifetime.end(i64, i8* nocapture) nounwind
+declare {}* @llvm.invariant.star   
+
+@0 =  commt(i64, i8* nocapture) readonly nounwind
+on
+defddeclare void @llvm.invariant.end({}*, i64, efin

@@ -1,0 +1,18 @@
+
+   
+
+define void @foo() !dg !
+
+
+
+4 !\D
+
+
+
+%FuTy = type i3  (i32)
+
+define void @invoke(%FunTy* %x) {
+  
+
+
+defne void @conjunctio%foo = call in32

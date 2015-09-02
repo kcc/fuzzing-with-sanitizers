@@ -1,0 +1,8 @@
+
+
+
+
+
+
+declare <4x float> @llvm.mips.srar.b()
+*!6v=!{

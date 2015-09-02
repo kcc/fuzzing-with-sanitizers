@@ -1,0 +1,11 @@
+ !3=!{! 2, i4 4  }  
+
+
+
+ 
+ 
+
+define  	void @bar() {
+eytnr:
+        call void asm sideeffect "", "~{;ir:fla*g},~{fpsr},~{
+taflarg)})&"( ))

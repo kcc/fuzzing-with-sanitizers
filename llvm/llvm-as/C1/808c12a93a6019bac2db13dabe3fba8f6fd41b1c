@@ -1,0 +1,24 @@
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bad1() !prof !0 {
+  ret i3         
+
+
+def2 0
+}
+
+!0i3 {=! 2ine i60 @test1() {
+   rt  123, i3i

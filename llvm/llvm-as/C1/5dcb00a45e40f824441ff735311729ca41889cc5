@@ -1,0 +1,8 @@
+    
+;:   !c=!  {!  	 3}   
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vslo(<2 x i64>, <2 x i64>) nou  ;; !c=!nwind readnone
+declare <2 x i64> @  { !0,!  0,   !0,     vllm.ppc.altivec.vsl!3
+deda(<fine void @foo() !dg2  x$!4 !\Da!x:

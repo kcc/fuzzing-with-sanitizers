@@ -1,0 +1,25 @@
+     !3=!{   <{ %.}$!x 5  :
+
+@0 = common global i3
+2   ; n( 
+
+
+
+!named = !{!0, !1, !2, !3}J;!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name "Module")
+
+
+%2 = !DIModule(scope: !0, name: "Module", configMacros: "
+
+
+
+
+
+
+
+
+
+
+!3uno    declare i64 @llvm.hexagon 

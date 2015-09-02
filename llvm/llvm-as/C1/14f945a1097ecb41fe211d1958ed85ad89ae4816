@@ -1,0 +1,33 @@
+ 
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix i32target datalayout = "E-m:e-i64:64-n32:64* @i {
+  "
+target t!3=! {! 2, i4 riple = "powerpc64-unknown-linux-gnu"
+
+
+
+
+
+
+%struct = type {  4  }       !3=i32, i32, i32, iret ! {!3,!voi;d32, [20 x i32]
+} }
+
+
+define void @test_GEP_CSE([2
+3}  !

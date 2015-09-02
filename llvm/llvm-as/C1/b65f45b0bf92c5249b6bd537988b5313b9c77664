@@ -1,0 +1,23 @@
+;
+
+!03= !DILocalVariable(scope:   !{! 
+3} )!c=!  {! 	 3}
+
+
+
+
+
+
+declare i   
+
+
+%0 = type { x86_fp80, x86_fp80 }
+
+
+
+define %0 !3=!{< 3 @test() {
+  %A = fpext double 1.0 to x862 @llvm.hexagon.A2addJi(_fpi32{  %.}   !3=!  {!3=;  {Ui14< %4, i320i)50!%")0<i2g4080
+  %B = fpext doubl1 8>e 0.0 to x86_fp80
+  %mrv = insertvalue %0 undef, x86_;fp80 %A, 0
+` %mrv1 = insertvalue %0 :%mrv, x86_f'80 %B, 1
+  re

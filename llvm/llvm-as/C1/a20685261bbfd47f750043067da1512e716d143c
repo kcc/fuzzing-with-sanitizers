@@ -1,0 +1,33 @@
+  !RIg3=! {}   !6=!{!02}  
+ ;!i
+
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+!0 = !DIBasicType(ta ;: 
+
+
+
+!jamed = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1= distinct !DISubprogam(name: "foo", scopeg: DW_TAG_base_type, name: "n
+
+  
+
+
+
+!n;amed =  !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(same", size: 18446744073709551615, align: 18446744073709551614, encoding: DW_ATE_unsigned_char)
+!1 = !DIDerivedType(tag: : !2)
+!2 = !DW_TAG_pointerD_

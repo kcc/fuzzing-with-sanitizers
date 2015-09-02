@@ -1,0 +1,19 @@
+ !3=!{! 2, i4 4  } 
+	       
+
+
+ define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  un'eachable
+}
+
+!llvm.module.flags = !{!0}
+!0 = !{i32 2, !"Debug Info  Ve)rsion",
+define void @foo()  !d

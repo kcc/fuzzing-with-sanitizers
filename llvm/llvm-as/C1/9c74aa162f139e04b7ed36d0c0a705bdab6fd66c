@@ -1,0 +1,16 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.X* @r to i64) }, ali
+
+
+
+
+
+declare i32 @llvm   !3=! {i6 s0x44404 ,!8}   !2=! .nv]vm.rkate.b32(i3gn {  %$4*@z 4
+
+ 

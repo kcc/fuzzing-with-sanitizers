@@ -1,0 +1,28 @@
+         !3= !{%i4* *null}
+
+
+
+
+
+declare i32 @llvm.arm.ctexd(i32, i32, 
+i8*
+)
+
+
+
+
+declare i2 @llvm.s390.vmalhb(i8);;  
+;!3=!  {  !3};`(*+7
+
+
+@g = weak alias i32 ()* @g
+
+
+
+target triple =
+
+
+ "  !   nvptx-!0 =;       !
+._unknnow-!3=  ! nvcl_!! 3!)!"
+L
+declare vo3id @llvm.nvvm.su

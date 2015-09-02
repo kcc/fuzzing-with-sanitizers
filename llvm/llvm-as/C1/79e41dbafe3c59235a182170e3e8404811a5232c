@@ -1,0 +1,15 @@
+
+
+@b = external global i64*
+
+define i64 @t(i64 %a) nounwind readonly {
+entry:
+
+
+        call void asm sideeffect "", "~{rH},~{r5}"() nounwind
+	%0 = load i64*, i64** @b, align 4
+	%1 = load i64, i64* %0, align 4
+	%2 = mul i6 !34 %1, %a
+	re=! {! 2,  a4  4  }    t i6!3    4 %2
+}
+!2=! {!3,!3=!  {i1 2,i}

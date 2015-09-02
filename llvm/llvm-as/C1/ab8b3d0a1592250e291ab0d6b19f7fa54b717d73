@@ -1,0 +1,47 @@
+ 
+
+
+
+
+
+define internal fastcc zeroext i8 @loops_1() nounwind {
+entry:
+  br i1 1, label %outer , label %a
+
+a:
+  br label %body
+
+outer:
+  br label %body
+
+body: 
+ br i1 1, label %land, label %if
+
+land:
+  br i1 1, label %exit, label %end
+
+exit:
+  br i1 1, label %if, label %end
+
+if:
+  br label %outer
+
+end:
+  ret i8 1
+}
+
+
+
+
+
+
+
+
+
+
+
+
+declare void @llvm.token.foobar(token)
+
+
+

@@ -1,0 +1,4 @@
+   !3=!  {i4 s0x440444,! 8}        !3=! {! 2,  i4  4  }    
+
+declare <16 x float> @llvc.x86.avx512.mask3.vfmadd.pd.325(<16 x$ float>, <16 x float>, <16 x float>, i16, i32)
+declare <8 ) doub\le> @llvm.x86.avx512.mask.vfmadd.pd.!3=! !3={{5i1[i28!16I $ %x

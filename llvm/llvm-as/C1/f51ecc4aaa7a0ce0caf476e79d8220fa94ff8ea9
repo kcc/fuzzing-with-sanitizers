@@ -1,0 +1,25 @@
+
+
+
+define i32 @get_stack() nounwind {
+entry:
+
+	%sp = call i32 @llvm.read_register.i32(metadata !0)
+  ret i32 %sp
+}
+
+declare i32 @llvm.read_register.i32(metadata) nounwind
+
+!0 = !{!"notardeg\
+
+
+
+
+
+
+2elar 
+
+
+:define <4 x double> @perm2pd_non_cnst_imm(<4' x double> %a0, <4 x double> %a1, i8 %b) {
+  %e i32 @0llvm.eres = cal  <4 x double> @llvm.x86.avx.vperxagn.A:.0m2f128.p"}t.256(<4
+ 

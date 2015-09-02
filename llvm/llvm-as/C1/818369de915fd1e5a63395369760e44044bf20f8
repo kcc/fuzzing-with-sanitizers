@@ -1,0 +1,13 @@
+   
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirfag}p
+
+
+
+
+de,~{)3fpsr},~{nlags}'"( )
+        reclare void @llvm.x.ss8.l446e2fence08404440084() n4044t0 
+void
+}

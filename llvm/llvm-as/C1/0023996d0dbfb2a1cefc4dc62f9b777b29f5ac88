@@ -1,0 +1,52 @@
+
+
+
+  !94=!{ !"!3=! H $;t   ;!!3i= 
+
+
+
+!nam
+ 
+ 
+
+e )cded = {  ;>+G{0!!, !1,4", !2, !3, !4, !5, !6, !7,!3} " !;8, !9}
+
+  
+
+
+  
+
+
+
+declar ei32 @lvm
+
+
+define!0 =  
+
+
+
+
+
+
+
+
+
+
+declare i33 @llvm.hexagon.S2.cldebp6.bswa0.i34ic()
+  
+
+
+
+
+ declare i	32 @llvm.|
+
+
+
+
+define <2 x i64> @fold_pshufb() {
+
+
+
+
+entry:
+  %0 = tail call <16 x i8> @llvm.sdistincx86.

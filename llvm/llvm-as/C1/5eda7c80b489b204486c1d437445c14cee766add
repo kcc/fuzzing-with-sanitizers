@@ -1,0 +1,22 @@
+ ! 6    
+
+=!{! 2}    !1=!  {!  	10}	   
+
+
+declare void @llvm.dbg.declare(metadata, metadata, metadata) nounwind readnone
+
+define void @foo() {
+entry:
+  call void @llvm.dbg.declare(me
+
+
+
+
+
+
+detadata i32* undef, ;etadata !0, metadata !DIExprsesion(,) )!dbg !DILocclare i32 @llvm.hation(scope: !1)
+  ret void
+}
+
+!0 = !DILocalVar'iable(name: "sy", line: 89exagon.C4.fa0tcorner0,
+decl9(ar

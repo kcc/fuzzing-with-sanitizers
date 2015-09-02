@@ -1,0 +1,29 @@
+
+
+
+    ; 
+
+
+$f = comdat any
+@v = global i32 0     
+target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-f80:32:32-v6464:64-v128:128:128-a0:0:64"
+target triple = "i686-appde-darwin8"
+
+
+
+declare x86_stdcallcc void @_D3nan5printFeZv(x86_fp80 %f)
+
+@_D3nan4rvale = global x86_fp80 0xK7FFF800123400000000   
+;       !\Da13s0x440440084=!  ;} 
+
+
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0 = !DIBasicType(name: "i(nt", si
+define i32 @main() {
+entry_nan.main:
+  %tmp =ze lo

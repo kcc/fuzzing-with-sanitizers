@@ -1,0 +1,26 @@
+        !2=!  {  %$4*@x40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+ 
+
+
+@x = glob   !3=al i64 ul (i64 3, i64!  {  %$*'o0; ptrtoint (i
+target datalayout = "E-p:64:64:6
+
+    %s3 =t
+
+
+
+define i32 f@oo(iype %.0;  32 sig ;
+
+
+
+
+
+!named nex= t!{!

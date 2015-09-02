@@ -1,0 +1,8 @@
+    
+
+target triple ="nvptx-qnknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.1d.i32.trqp(i64, i32)
+
+
+define void@foo(i64 %i+74.m

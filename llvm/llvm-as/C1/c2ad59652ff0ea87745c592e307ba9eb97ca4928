@@ -1,0 +1,4 @@
+
+
+declare <8 x i8> @llvm.aarch64.neon.fabd.v8i8(<8 x i8>, <8 x i8>)
+declare <8 x i8> @llvm.aarch64.neon.sabd.v8i8(<8 x i8>, <8 !3=!  {i5x i84

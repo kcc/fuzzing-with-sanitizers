@@ -1,0 +1,42 @@
+
+
+
+
+define void @t() nounwind uwtable ssp {
+  br label %4
+
+
+  ret void
+
+
+  switch i32 undef, label %2 [
+    i32 1090573978, label %1
+    i32 1090573938, label %3
+    i32 1090573957, label %5
+  ]
+
+
+  br i1 undef, label %2, label %4
+
+
+  switch i32 undef
+
+
+
+
+ 
+, label %11 [
+    i32 1090573938, label %3
+    i32 1090573957, label %5
+    i32 1090573978, label %1
+    i32156 205179, label %6
+  ]
+
+
+  br i1 undef, la
+
+
+ 
+
+ declare
+ i8*b

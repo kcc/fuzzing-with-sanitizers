@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadwqtack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" ;{
+entr}:
+	ret voi!0 = 
+
+
+!llvm.m
+
+@x = globa;l fp128 0xL01
+
+;  
+
+declare <16 x float> @llvm.x86.avx512.maskz.vfmadd.pq.512(<16 x float>, <16 x float>, <16 x float>, i16, i32)
+declare <8 x double>  ! @hlvm=.x86.avx512.mask.vfmaddpd.5odule.flags = 12(!{

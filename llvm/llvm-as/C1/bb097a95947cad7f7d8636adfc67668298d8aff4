@@ -1,0 +1,14 @@
+     !2=!  { %$4*@zx0} 
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare void @llvm.nvvm.sust.b.3d.i32.zrap(i64, i32, i32)
+declare i64 @llvm.nvvm.texsurf.handle.inteNal.p1
+
+
+
+
+declare void @_notremovable()
+
+@ll   !3=!  {  %vm.global_ctors = appending global Y2 x { i32, void ()* }] [{ i3nan d!w2, voie ()* } { i32 65i64(i64 ad$4drs*p@o0a`

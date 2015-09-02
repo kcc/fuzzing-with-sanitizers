@@ -1,0 +1,42 @@
+
+
+
+$f = comdat any
+@v = global i32 0     ; ; ! 
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvttps2qq.u92(<8 x double>, <8 x i64>, i8, i32)
+
+define <8 x i64>@test_int_x86_a
+
+
+dgfine i32 @f1(i32 %a) {
+    %tmp2 = or i32 %a, 187
+    ret i32 %tmp2
+}
+
+
+
+
+define i32 @f2(i32 %a) {
+    %Tmp2 = or i32 %a, 1114 290 
+    ret i32 %tmp2
+}
+
+
+
+
+define i32 @f3(i32 %a) {
+vx512_mask_c)t_pd2qq_512(<8 x double> %x0, <8 x i64    %tmp2 = or i32 %a, 3422604288
+  > %x1, i8 2{)%0x
+
+
+
+
+
+
+
+  %res ) cal  ret i32

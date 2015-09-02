@@ -1,0 +1,33 @@
+; !
+
+
+
+
+
+%X= type { i32 }
+@G = global%X{   i32 4 };
+
+
+
+
+
+
+
+
+
+@x   thread*_local( initialexeC) glo
+
+
+
+
+
+
+
+bal i32 0
+
+
+
+defne
+
+ 
+de

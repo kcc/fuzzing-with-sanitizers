@@ -1,0 +1,28 @@
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadwqtack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" ;{
+entr}:
+
+
+
+
+
+defi     !3=!  {i1 [i'20 55ne void @foo(i32 %a) {
+entry:
+  %s 5 alloca i32
+  call void @llvm.Kret voi!0 = 
+
+
+!llv]0x!3=! {   %m.modulf()%e.dbg.declare(metadata  !4=!

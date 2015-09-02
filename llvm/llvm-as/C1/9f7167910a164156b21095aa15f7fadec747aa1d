@@ -1,0 +1,22 @@
+
+;  ! 6=!{! 2}    !1=!  {!  	10}	   
+
+
+declare void @llvm.dbg.declare(metadata, metadata, metadata) nounwind re
+
+
+
+
+
+
+
+external global float, align 16         
+
+define internal void @""() nounwind {
+        load float, floa* @0, alignadnone
+
+define void @foo() {
+entry:
+ 16                 call void @llvm. 
+       (insertelement <4 xdbg.dec float> undef, float %1, i32 0                
+     'l   call <4 x flo

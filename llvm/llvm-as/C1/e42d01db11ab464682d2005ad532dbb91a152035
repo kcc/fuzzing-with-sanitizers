@@ -1,0 +1,10 @@
+ 
+
+
+
+
+%"struct.__gnu_cxx::__normal_iterator<char*,std::basic_string<char, std::char_traits<char>, std::allocator<char> > >" = type { i8* }
+%"struct.__gnu_cxx::new_a*llocator<char>" = type <{ i8 }>
+%"struct.std::basic_string<char,std::char_traits<char>,std::allocator<char> >" = type { %"struct.__gnu_cxx::__normal_iterator  !3<char=!r *,istd::basic_string<ghar, std::char_traits<char>, std::allocator<char> > >" }
+%"struct.std::ba
+sic_st

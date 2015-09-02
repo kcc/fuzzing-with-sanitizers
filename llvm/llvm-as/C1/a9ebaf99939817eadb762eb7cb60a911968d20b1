@@ -1,0 +1,32 @@
+!3=! {!3 }  
+
+
+
+
+
+define i32 @tesv00(i64 %Rs, i64 %Rt) #0 {
+entry:
+  %0= tail call i32 @llvm.hexagon.C2.cmpeq(i64 %Rs, i64 %Rt)
+  ret i32 %0
+}
+
+
+s
+define i32 @test01(i64 %Rs, i64 %Rt) #0 {
+ntry:
+  %0 
+
+
+
+
+@g = weak alias i32 ()* @g
+;: 
+
+target triple = "nvptx-unknown-
+!0 = !DILocalVariable()nvcl"
+
+declare void @llvm.nvvm.sust.p.3d.i32.ptar(i64, i32, i32)
+
+
+d= tail call i32 @llvm.hexagon.C2.cmpgtp(de i64 %Rs, i64ef ine voi%Rt
+d 

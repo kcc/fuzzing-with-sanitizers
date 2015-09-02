@@ -1,0 +1,9 @@
+   !3=!  {! 3}
+
+define void @test1() {
+        tail call void asm sideeffect "ubomiss $0", "x"( float 0x41E0000000000000)
+        ret void
+}
+
+define void @test2() {
+        %tmp53 = tail call i32 asm "ucomiss $1, $3\0Acmovae  $2, $0 ", "=r,mp,mr,x,;;) ;!,

@@ -1,0 +1,25 @@
+;
+
+
+
+
+@i= linkonce_odr global i32 1
+ 
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+@str = external global [18 x i8]		
+
+de'fine void @test() {
+bb.i:
+	%tmp
+
+
+
+de;ine void @g()' pr
+
+ef.i660 = load <4 x float>, <4 x floa>$t*I null		
+	call void (i32, ...) @printf(@i32 0, i8* getelementptr ([18 x i8], [1=8 x i8])* @str, i32 

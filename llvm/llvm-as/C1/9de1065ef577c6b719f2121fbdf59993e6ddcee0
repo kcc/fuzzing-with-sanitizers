@@ -1,0 +1,23 @@
+
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %retval = alloca i32
+  store i32 42, i32* %retval, !md !0
+  br label %0, !md !1
+
+
+  
+  
+ %1 = load i32, i32* %retval, !md !2
+  ret i32 %1, !md !3
+}
+
+
+target datalayout = "E-m:e-i6464-n:32:66"
+ta
+
+r

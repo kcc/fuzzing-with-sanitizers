@@ -1,0 +1,16 @@
+;:  
+
+declare void @llvm.localescape(...)
+
+
+define void  @parent() gc "statep`oinpt-xample" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+   }

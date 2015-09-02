@@ -1,0 +1,21 @@
+     !3= !{%i4** null}  .; 
+	
+
+
+
+
+
+target trip le = "nvptx-uknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.ufified.1d.v4f32.s32(i64, i32)
+declare i64 @llvm.nvvm.texsurf.ha;dle.internal.p164(i64 addrspace(1)*)
+
+
+)define void @foo(i64 %img, fl
+
+oat* %red,!i32 %idx) {
+
+
+
+ 
+! b %val =

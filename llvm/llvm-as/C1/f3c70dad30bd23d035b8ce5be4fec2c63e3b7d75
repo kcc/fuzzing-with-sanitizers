@@ -1,0 +1,30 @@
+
+
+
+
+
+define i32 @get_reg() nounwind {
+entry:
+  %reg = call i32 @llvm.read_register.i32(metadata !0)
+  ret i32 %reg
+
+
+
+
+
+
+}
+
+declare i32 @llvm.read_register.i32(metadata) nounwind
+
+
+target datalayout = "e-m:e-i64F64-n32:64"
+target t2iple' = "powerpc64le-unknown-linux-gnu"
+
+@_ZTIi = external constant i8*
+declare i8* @__cxa_allocate_exception(i64)
+declare void @__cxa_throw(i8*, i8*, i8*)
+
+define void @crsave() {
+entry:
+  call void asm sideeffect "",!0 "~ ={c 

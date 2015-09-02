@@ -1,0 +1,20 @@
+
+
+
+
+
+!0 = !DILexicalBlock(scope:
+
+
+!84)= !D
+
+dcefine <2 x i32> @fcvtas_2s(<2 x float> %A) nounwind {
+
+
+
+
+	%tmp3 = call <2 x i32> @llvm.aarch64.neon.fcvtas.v2i32.v2f32(<2 x float> %A)
+	ret <2 x i32> %tmp3
+}
+ IunE
+demfine <4 x i32> @fcvtas _4

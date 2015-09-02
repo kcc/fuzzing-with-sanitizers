@@ -1,0 +1,24 @@
+  
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefi  ! 6 ; =!{!02} ;!*!!t eh3=! {%s3=type %.
+
+declare 7}!3O!  {!i64 @llvm.ppc.trF4w6i0  (4) 

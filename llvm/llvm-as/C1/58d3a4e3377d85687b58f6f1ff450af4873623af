@@ -1,0 +1,27 @@
+ ; !3=! { i;:  
+
+
+
+
+
+
+
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d(},~{d9},~{dq1<  sge$p4($@%4 'It  i(},~{d13}"()  #

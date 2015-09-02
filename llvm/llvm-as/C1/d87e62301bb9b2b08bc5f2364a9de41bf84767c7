@@ -1,0 +1,57 @@
+       !3= !{%i * null}     !2=!  {  %$4*@Z48} 
+
+@0 =  common global i3
+2
+
+
+ global i32
+
+
+ 36 
+
+@i = linkonce_odr global i32  0
+
+
+
+
+define void @f() prologue i32 1 {  
+
+
+
+
+
+
+
+
+
+
+
+
+define
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+ret void
+}
+
+
+
+
+define void @f() prdfix i32 1 
+
+define vo  ret voi linkonce_odd
+r void @f() {
+  ret void
+}
+
+
+

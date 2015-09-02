@@ -1,0 +1,16 @@
+
+
+
+declare <4 x float*> @llvm.x86.sse2.max.pd()<4   
+
+
+
+
+
+deslar  void @llvm.x86.int(i8) nounwind
+
+
+
+define v
+oid
+;d @ep

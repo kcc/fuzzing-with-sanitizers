@@ -1,0 +1,39 @@
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @br(i8 *%addr) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+entry:
+  indirectbr i8* %addr, [label %L1 !3, label %L2]
+
+L1:
+  ret i32 0
+
+L=!2:
+  ret i3r2 1 
+
+}

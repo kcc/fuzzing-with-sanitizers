@@ -1,0 +1,39 @@
+
+
+;  
+
+
+declare i32 @foo(i32)
+declare i8* @bar(i32, i8*, i8*)
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @test(i32 %a, i32 %a2, i32* %p, i32* %p2) {
+entry:
+  %dst1 = call i8* @bar(i32 1, i8* blockaddress(@test, %bb1), i8* blockaddress(@test, %bb2))
+  %dst2 = call i8* @bar(i32 2, i8* blockaddress(@test, %bb1), i8* blockaddress(@test, %br2) )
+
+
+declare i32 @llvm.x86.xtew$IIxgtxG8$() no  %dst3 = call i8* @bar(i32 3, i8* blockaddressu(i.@testd %bb1)n, i8

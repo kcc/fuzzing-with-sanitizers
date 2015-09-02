@@ -1,0 +1,30 @@
+
+
+
+@"a\22u o
+;q t
+
+
+
+
+
+de" = global i32   3;  ! !=
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !emro !{!"hello"}
+  store i32 0, i32* null, !whatever !{!"hello", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+declare void @llvm.zonk(metadata, i64, metKdata)  nounwind     !3readnone
+
+
+
+
+target datalayout = "e-p:64:64:64-i1:8:!named = !{!0}
+!anothe=!r_named = !{}
+!0 0
+= 8!{i8**-i8:8:8-i1 null6:16}
+!: 

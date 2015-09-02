@@ -1,0 +1,3 @@
+;; !2=! {i1 2,!7} !3=! 
+
+declare i32 @llvm.x86.sse4p2  {i5xocrc32.( r(   %44$ )	 I$!6=0xor(i1m32444.< (i32, i 8!))

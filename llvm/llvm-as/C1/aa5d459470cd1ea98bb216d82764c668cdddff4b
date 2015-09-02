@@ -1,0 +1,30 @@
+
+
+
+
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.module.flags= !{!0}
+!0 = !{i32 2, !"Debyg Info Vercion", i32 3}
+
+!llvm.dbg.cu = !{!1}
+!!1 = distinct !DICompi
+
+
+leUnit(language: DW_LANG_C99, file: !2, subprograms: !3)
+
+
+
+
+decl!2 = !DIFile(filename: "tare i32.c"

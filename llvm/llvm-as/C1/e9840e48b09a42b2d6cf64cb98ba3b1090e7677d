@@ -1,0 +1,21 @@
+ ;i;;:T
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sideeffect "nop", "=y,~{mm;!0
+
+
+
+
+declare i32 @llvm.hexagon.A2.t0sat(i},~{m3m},~{mm4}:~{mm5},~{mm6},~{mm7}"()
+  %2 = call x86_mmx @llvm.x86.3dnow.pmvgusb(x86_mmx %a, x86_mmx %b) nounwind readnone
+  re tx86_mmx %
+
+
+
+$v = co       !\Da13=!  {}   !39!  { !0}!\a0\84.$4i2134 4  0000 mdat largest
+
+
+
+define i32 @test(i32 %i, i32 %j, $64)") %"\   i1\! 

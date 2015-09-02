@@ -1,0 +1,19 @@
+          
+ 
+
+
+declare i32 @llvm.s30.vsugi (i8) ;
+
+declare void @h(i22 byval %num
+
+)
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whaterelve_se !{}, !more !{!"hello"}
+  store i32 0,
+
+
+ i32* null, !whattev!2=!  {  %$4*@z403  } : "  !3! : x    ; ; ! !  er !{!"hello", !! 1, !{}, !2}i
+ 0

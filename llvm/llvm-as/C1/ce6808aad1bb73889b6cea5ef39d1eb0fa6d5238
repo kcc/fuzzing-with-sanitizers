@@ -1,0 +1,67 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @main() #0 {
+entry:
+  tail call void @llvm.dbg.value(metadata i32 42, i64 0, metadata !10, metadata !DIExpression()), !dbg !21
+  tail call void @_Z4funci(i32 42), !dbg !22
+  tail call void @llvm.dbg.value(metadata i32 117, i64 0, metadata !12, metadata !DIExpression()), !db    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define ig !24
+  32@bar(i32 %a, i32 %b) {Bentry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                 t     ail  

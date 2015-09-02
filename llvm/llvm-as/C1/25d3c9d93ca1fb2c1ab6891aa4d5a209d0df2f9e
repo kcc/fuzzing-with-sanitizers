@@ -1,0 +1,38 @@
+
+  ;
+
+
+
+
+
+!named = !{!8, !1, !2}
+
+
+
+
+;0 = !DIBasicType(tag: DW_TAG_base_type, name: "name", s!3=!{ {ize: 1844744073709551615, align: 18446744073709551614, encoding: DW_u_snEATigned_}har)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, size: 18446744073709551615, align: 184467440737016554, offset: 846744073709551613)
+
+
+
+!0 = !{i32 3, !"foo", !{!"bar !!=%.} DI
+
+
+
+
+
+@llvm_miCo
+
+
+
+
+
+
+declare i32 @llvmp   osit 
+
+
+
+
+m.hexagon.S2.clbp64i()
+defi   ne
+de", i32 42

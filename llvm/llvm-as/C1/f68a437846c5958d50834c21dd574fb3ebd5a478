@@ -1,0 +1,24 @@
+
+
+declare<
+
+
+4x float>@lvm.mips.sphFadex()
+ 
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoinpt-xample" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+   }
+
+

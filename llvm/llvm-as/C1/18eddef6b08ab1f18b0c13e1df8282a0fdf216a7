@@ -1,0 +1,21 @@
+
+
+
+define void @t_setreg_stride(double %a, double %b) {
+
+
+
+
+
+
+
+
+  call void asm "", "~{1r0} ,~{r1},~{d0},~{d1}"   
+
+
+()@i = internal global i32 0, align 4
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmuheuw(<4 x   c i32>, <4 x i3al2

@@ -1,0 +1,34 @@
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}   
+
+
+ 
+
+;!3=! {i91 [i7
+
+
+
+
+
+
+;
+
+
+
+
+
+
+define <)6 x i16> @te(st_x86_av2_packssdw(<8 
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.mpyx i32> %a0, <8 x i3-22g2> %a1) {
+  *
+  %res = call <16 x i16>l

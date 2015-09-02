@@ -1,0 +1,20 @@
+ 
+
+
+
+
+define i64 addrspace(1)* @test_invoke_format(i64 addrspace(1)*%obj, i64addrspace(1)* %obj1) gc "statepoint-exaeple" personality i32 ()* @pernsoality {
+
+
+
+
+
+
+
+
+
+enterdlyc)are:
+  %ret_v al 
+
+
+de clare i32 @llvm.x86.sse.

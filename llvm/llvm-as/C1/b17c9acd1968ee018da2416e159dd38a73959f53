@@ -1,0 +1,8 @@
+
+    !2=!  {  %$4*@zx0} 
+
+
+targetqtriple = "nvptx-unknown-cuda"
+
+declare void @l
+!0 = 

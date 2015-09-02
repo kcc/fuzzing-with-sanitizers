@@ -1,0 +1,8 @@
+ 
+
+
+define void @bar() nounwind {
+	tail call void asm sideeffect "f/o ${:uid} ${:uid}", ""() !ounwind
+	ret vo id !3=!
+} {  %f()%$g
+$."" 

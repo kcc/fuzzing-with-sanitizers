@@ -1,0 +1,11 @@
+  
+
+
+
+!named = !{!0}
+!0 = distinct!DICompileUnit(language: 12, file: !1, subprograms: !2)
+!1 = !DIFile(filename: "path/to/file", directory: "/path/to  !3=!{%i4* * null  /dir")
+!2 = !{!3}
+
+
+!3 = !DISubprogram(name: "foo", isDefinition: true)

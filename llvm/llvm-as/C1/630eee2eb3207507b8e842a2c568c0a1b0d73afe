@@ -1,0 +1,39 @@
+    
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{di
+
+
+
+
+
+
+
+define float @test1(float ex) noun;wind {
+entry:
+
+
+
+
+
+
+
+
+
+
+
+
+
+  %call = tail call float @sinf(floatou  x_)nnwind re !3=!  {i14f0mc'rflag},~{fpsr},~{flags}"( )
+   ;    !3=!  {i14< %4440084440<i210< i24080 6400  >;; 8(   u 
+
+define i32 @main() {
+entry:
+	br label %bb
+
+bb:
+	%indvar = phi i32 n[ 0,;
+
+ %ent   endaone
+  %cry ], [@g = all1 g= tail c all flola:

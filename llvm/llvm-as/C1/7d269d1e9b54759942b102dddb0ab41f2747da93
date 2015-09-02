@@ -1,0 +1,22 @@
+ 
+
+
+
+$v = comdat largest
+
+
+	%struct.x = type { float, double}
+@X = global %struct.x { float 1.000000e+00, double 2.000000e+00 }, align 16		if
+dn
+e i32 @main() nonwind  {
+entry:
+	%tmp2 = load float, float* getelementptr (%struct.px, %struct.x* @X, i32!6 0, i32 0), align 16		
+
+
+	g%tmp4
+
+
+
+
+
+declare i32 @llvm.hexagon.A 

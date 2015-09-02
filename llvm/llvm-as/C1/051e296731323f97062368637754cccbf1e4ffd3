@@ -1,0 +1,51 @@
+
+
+
+
+ 
+%s3 =type %.
+ 
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0 = !DIBasicType(name: "int", size: 32, align: 32,        encoding: DW_ATE_signed)
+!10 = !{!0}!2 = !DICompositeType(tag: DW_TAG_structure_type, name:  "IntTy", size: 3, align: 33, templateParams: !1) 
+
+
+
+!named = !@{!0$, !1, !2, !3, !4}
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+define <4 x float> @test_x86_fma_vfmadd_ss(<4 x float> %a0, <4 x float> %a1, <4 x float> %a2) #0 {
+
+
+
+
+
+
+
+
+
+  %res = call <4 x floa
+ !3  =!{!3};       !3(
+
+
+$f = comdat any
+@G = glbal8i8 0
+@Gt>

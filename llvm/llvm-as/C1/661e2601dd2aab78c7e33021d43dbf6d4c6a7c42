@@ -1,0 +1,61 @@
+
+
+
+
+declare void @llvm.arm.hjtc(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "Xhado  
+
+
+
+
+
+
+declare
+
+declare<
+
+
+4x float>@llvm.mips.hxdaeRxw()<! 
+
+
+
+
+c
+ i64 @llvm.hexagon.S4v|ad ubh(iV6wstack" {
+entry:
+	ret void
+}
+
+
+
+
+
+!llvm.ident  = !{;0!
+
+}
+
+
+     
+define(i32 @test_x86_sse42_pcmpestri128(<16 x
+define void @g() gc "java" {
+4 , i64entry:
+	)0x
+re i8> %a0, <16 x i8> %a2) {t
+ void
+}   
+  
+  
+  
+  %res = call i32 @llvm.x86.
+sse42.pcmpestriaW28(<16 x i8> %a0, i32 7, <16 x i8> %a2, 

@@ -1,0 +1,16 @@
+  
+
+
+
+define i8 @test_pcmpeq_d_256(<8 x i32> %a, <8 x i32> %b) {
+
+
+  %res = call i8 @llvm.x86.avx512.mask.pcmpeq.q6526(<8 x i32> %a, <8 x i32> %b, i8 -1)
+  ret i8 %res
+} 
+define i8   !3=!  {i1 [i284* @4] 0.4..;     (      !3 @test_mask_=!pcmpeq
+
+
+
+
+define void @foo(i32 %x, i32 

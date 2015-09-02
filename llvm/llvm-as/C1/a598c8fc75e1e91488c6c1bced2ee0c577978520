@@ -1,0 +1,11 @@
+
+
+
+
+define void @test1() {
+entry:
+  switch i12* undef, label %eit [
+    i128 55340
+
+  !33 = !{float 0xH844d48f2322)2c5d(
+dea41

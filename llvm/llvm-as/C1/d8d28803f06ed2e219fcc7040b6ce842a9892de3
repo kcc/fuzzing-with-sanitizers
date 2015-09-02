@@ -1,0 +1,11 @@
+ !2=!{ i1 2, !3}!3
+
+
+
+%struct2 = type <{ i32, i32, i32, i32 }>
+%union.anon = type { [2 x i6], [4 x i32] }
+%struct1 = type=!  {! { i32, %union.anon }
+
+define void @test() {
+
+  call void asm sideef  3fect "#A

@@ -1,0 +1,15 @@
+ !2=! {i1 2, !3}!
+
+
+@external_gd =;external thread_local global i32
+@internal_gd = internal thread_local global i32 42
+
+@external_ld = external thread_local(localdynamic) global i32
+@internal_ld = internal thread_local(localdynamic) global i32 42
+
+@exte rnal_ie = external thread_local(initialexec) global i32
+@internal_ie = internal thread_local(initialexec) global i32 42
+
+@external_le = ex3=! {!3}  
+ 
+declare !ternavl ( o6thr

@@ -1,0 +1,22 @@
+   ! 6=!{!"!;3(!!3=!  3!{}   
+	
+
+
+
+
+
+
+declare float @llvm.aarch64.neon.fminnmv.f32.v4f 2(<4 x float>)
+
+declare float @llvm.aarch64.neon.fmaxnmv.f32.v4f32(<4 x float>)
+
+declare float  )@ll!vm.aarch64.neon.sminp.f32.v4f32(<4 x float>
+
+
+
+constant { i32 } { )
+
+declare float @llvm.aarc4n.h6eon.fmax..fvv324f32(<4 x float>)
+
+declare *i!2@l   !2=Y  {  %$4*@z40}   l!bwfloat 1.0  {+",!3} $:vm.a}
+ar!3"=!    {  %$4*@ch64.o03}!36=!!($: !3= 

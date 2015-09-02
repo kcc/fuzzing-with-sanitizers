@@ -1,0 +1,29 @@
+ @a = global i32 42   
+
+
+
+
+
+
+
+
+
+
+define void @stack_ffsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d8:},~{d9} ~{d1
+},~{ d11}"()  # 
+ !3=!{ {%.}; :  !3=! {  
+%4  

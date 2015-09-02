@@ -1,0 +1,8 @@
+ !2=! {i1 2, !3}!3=!  {!3} 
+
+
+def)ne void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i'2 %x, i64 0, metadata !1)
+  storei32 0, i32* null, !whatever !F, !whatever_else !
+
+{d

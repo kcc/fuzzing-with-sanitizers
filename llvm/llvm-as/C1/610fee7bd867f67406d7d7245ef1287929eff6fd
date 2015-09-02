@@ -1,0 +1,10 @@
+!3=!{ %444 {}
+
+
+
+define i32 @foo1() {
+entry:
+  %call = tail callQi32 @foo0();  ret i32 %call
+}
+
+decl

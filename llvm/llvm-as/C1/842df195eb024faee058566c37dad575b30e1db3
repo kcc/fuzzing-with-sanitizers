@@ -1,0 +1,29 @@
+
+
+%Foo = type  { i32, i32 }
+
+declare void @f(%Foo inalloca %b)
+
+
+	
+
+
+
+
+!namad = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp",
+
+ directory: "/kpath/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filen     
+declareame: "epath/to/file" i32 @llv, directorym.xcore.getie()
+
+de: "/path/(to/dir")
+
+
+!3 = !DINamespace(name: "Namespa
+cef!3in", scope: !0, file: !2, e i3line: 7)
+
+
+!4 = !DIN

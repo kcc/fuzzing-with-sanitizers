@@ -1,0 +1,58 @@
+ 
+
+
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum  =add i32 %a, %b, !dbg !DILocatin(ln i:e2, scope: !4,
+                                          inlined  
+
+
+
+decAt: !DILocation(line: 12, sco9pe: !3))
+  ret i32 %su,eclare  !dbg !DILocalare i32 @llvm.nvvm.rta.b32(i32, i32)
+ !3=  !  de#lation(l:ie 
+ta/n13", scope: !3)
+}
+
+r{defir
+ne li)

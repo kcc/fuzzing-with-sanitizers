@@ -1,0 +1,20 @@
+ !b = !{!0}
+!0 = !{!1}
+!1 = !{} 
+
+
+
+
+
+@.str = internal constant [4 x i8] c"%d\0A\00"		
+
+define i32 @main(i32 %argc, i8** %argv) {
+entry:
+	%tmp32 = tail call i32 (i8*  , ...) bitcast (i32 (i8*, ...)  * @printf to i32 (i8*  , ...)  *)( i8* getelementptr ([4 x i8], [4x 
+
+
+i8]* @.sr, i32 0, i32 6)  , i32 0 ) nounwind 		
+	ret i32 undef
+}
+
+declare i3

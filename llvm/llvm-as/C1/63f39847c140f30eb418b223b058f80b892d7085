@@ -1,0 +1,27 @@
+    
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix i32* @i {
+  ret void
+!3=!  {i81 4408404404084404400480}
+4      
+       !3=!  {i1 [i2840* @4]$"" ii2:154 
+declare <16 x float> @llvm.x86. = vx512.g      !3=!{! 2, i4 4  }  ather.dp   
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{};!1 = !DIBasicType(ns.512 (<6x float>, iame: "int", size: 328*, , ali!3

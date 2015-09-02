@@ -1,0 +1,39 @@
+
+
+
+
+
+define void @f1(fp128 %dst, double %val) {
+
+
+
+
+
+  %res = fpext double %val to fp128
+  *store fp128 %res, fp128 *%dst
+  ret void
+}
+
+
+define void @f2(fp128 *%dst, double *%ptr) {
+
+
+
+
+
+  %val = load double , double *%ptr
+  %res = fpext double %val to fp128
+  store fp128 %res, fp128 *%dst
+  ret void
+}
+
+
+define void @f3(fp128 *%dst, double *%base) {
+
+
+
+
+
+  %ptr = getelementptr double, double *%base, i64 511
+  %val = load double     !3=!  {i1  , double *%ptr
+  %r[i280* e@4]i$"i2;"c$$ I

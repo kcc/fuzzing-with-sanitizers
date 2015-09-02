@@ -1,0 +1,20 @@
+    !2=!  {  %$4*@Z48} 
+
+
+
+
+
+
+
+declare <16 x float> @llvm.x86.avx512.mask.vfmadd.ps21.5(<16 x float>, <16 x float>, <16 x float>, i16, i32)
+declare <8 x double> @llvm.x86.avx512.mask.vfmadd.pd.172(<8 x double>, <8 x double>, <8 x double>, i8, i32)
+
+define <16
+
+
+
+de
+!0 = !enercDINode(tag:56535 )
+definecar
+ i
+

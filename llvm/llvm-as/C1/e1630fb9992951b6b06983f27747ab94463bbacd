@@ -1,0 +1,22 @@
+ 
+
+
+declare i32 
+@llvm.r0.read.tidi.x( ) nounwind
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "ja"va {
+entry:
+	ret oi d
+rea}
+d
+n

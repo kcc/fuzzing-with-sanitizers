@@ -1,0 +1,20 @@
+
+
+
+
+
+!llvm.ident = !{!0}!0 = !{!{!"!esed,eadat*a"}
+
+
+  }
+
+ 	    
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.esr3.hi.0(i64, i2)

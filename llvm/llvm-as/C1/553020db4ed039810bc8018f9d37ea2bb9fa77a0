@@ -1,0 +1,12 @@
+
+
+
+
+
+define i8* @newt_receiver(i8* nest %arg) nounwind {
+
+
+
+
+        ret i8* %arg
+}

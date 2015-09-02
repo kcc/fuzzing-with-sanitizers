@@ -1,0 +1,39 @@
+; !
+!3=!   {!3}; >;   !E   
+   
+
+
+
+
+
+
+declare i32 @llvm.hexagon.S2.ctlb (i64)    
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i3 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefipx i32* @i {
+  ret void
+!3=!  {i81 44084
+
+
+declare04404 
+
+
+ <4 x flo
+defi !3=n(e i8@ f1(i8 *%src) {
+
+
+
+
+  %val = load=at> @llv!  {i14 atomic i8 , mi.

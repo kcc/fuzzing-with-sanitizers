@@ -1,0 +1,31 @@
+
+
+
+
+  
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.ce = !{!5}
+!llvm.omdule.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN3foo3barEv", line: 35, isLocal: false, isDefinition: 
+
+false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+! 1= !DIFile(filename: "/foo", directory: "bar.cp 
+
+
+
+
+
+
+
+
+
+
+;define $priv
+
+
+declare <4 x float> @llvm.mip")
+!3 = !DISubro
+
+define i64 @t0(<1  i6ps.m4>* %axi.

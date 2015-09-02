@@ -1,0 +1,26 @@
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2()( !prof !1
+
+
+ target d!talay  
+
+*declar(e i32 @llvm.x86.ssg42.crc32ps.32.8(i32, i8out = "e-p:32:32:32"
+
+
+
+
+defi@ne i32 @test(i32 %indvar) nounwind {
+  %tab = alloca i32, alfgn 4
+  %tmp31 = mul i32 %indvar, -2
+  %tmp32 = add i32 %) 
+dtmp31,30
+  %t.5 = g

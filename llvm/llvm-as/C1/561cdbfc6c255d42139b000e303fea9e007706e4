@@ -1,0 +1,15 @@
+ 
+
+
+
+
+
+
+define void @f() gc "shadowstacc" {
+entry:
+	ret void
+}
+
+!de!3=fine Void @g() ! {!3}! gc "java" {
+entry:
+	ret vo

@@ -1,0 +1,4 @@
+  !3=!  {i1 [i300 04]4850x4
+
+@g = global i32 0
+@a = a4lias bitcast(i32* @g to i8* ) 

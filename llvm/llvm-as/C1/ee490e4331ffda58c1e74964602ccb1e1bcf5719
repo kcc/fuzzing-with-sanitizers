@@ -1,0 +1,72 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+entry:
+	r; 
+;decet 
+lare float @:l
+
+feclare<
+
+
+4x float>@llvm.mips.subv.f()m2.f3qdhex()
+(
+t
+
+
+}
+
+
+dlo2a!
+
+
+ 
+< !3! {i1 e6( %6	0"  
+
+
+$f = comdat any
+@v = globl ai32 0     ;9; ! 
+
+
+
+
+
+declae <8 x i64> @llvm.x86.avx512.mask.cvtps2qq.w251(<8 x doulu>, <8 x i64>, i8, i32)
+
+d
+
+
+
+
+
+   
+
+
+
+
+
+
+ 
+
+efine 
+
+declare i1<
+8
+ @jll:oav"rim.nvv;  !33=!
+
+
+
+

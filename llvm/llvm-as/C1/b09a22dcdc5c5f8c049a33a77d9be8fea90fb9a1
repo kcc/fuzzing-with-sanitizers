@@ -1,0 +1,11 @@
+
+ 
+
+ 
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vsnxmadj(<2 x i64>, <2 x i64>) nounwi 	 	 !3=! {!7}   !3=!{  
+ n
+
+global i32 36700d re16%

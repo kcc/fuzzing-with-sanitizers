@@ -1,0 +1,7 @@
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dhrfgal},~{fpsr},~{flags     !3=! { }"( )
+        ret voi %z(%.I$4" I
+target datalayout = "e-p:32:32:32-i1:8:)

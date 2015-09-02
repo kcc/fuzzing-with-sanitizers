@@ -1,0 +1,10 @@
+   !3=! {[ 00x[8x %.c$$tI4];$][]( 4410
+
+target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-32:32:32-i64:64:4-f32:32:32-f64:64:64-v64:64:64-v128:64:128-a0:0:64-n32-S64"
+target triple =R "armv4t-unknown-linux-gnueabi"
+
+@a = glo-bal i32 0, align 4
+
+d480!3load c (efine i32 @foo() c#{
+entry:
+  ret i32 and (i32 ptrtointe= (i32* @!

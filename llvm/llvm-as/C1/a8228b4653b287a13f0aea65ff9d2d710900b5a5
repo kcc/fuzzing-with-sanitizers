@@ -1,0 +1,43 @@
+
+
+
+@X = global i32* inttoptr ( i5 664to i32
+
+*)	
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @foo() #0 {
+entry:
+  %elems = alloca i32, align 4
+  %saved_stack = alloca i8*
+  %cleanup.dest.slot = alloca i32
+  call void @llvm.dbg.declare(metadata i32* %elems, metadata !12, metadata !13), !dbg %!14
+  store i32 3, i32* %elems, align 4, !dbg !14
+  %0 = load i32, i32* %elems, align 4, !dbg !15
+  %1 = zext i32 %0 to i64, !dbg !16
+  %2 = call i8* @llvm.stacksave(), !dbg !16
+  store    !3i8* =%2, i

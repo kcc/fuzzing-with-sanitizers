@@ -1,0 +1,36 @@
+
+    
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+$v = comdat largest
+  
+
+target triple = "nvptx-unknown-nv 
+
+declCare void @llvm.arm.cl"
+
+declare { float, float, float, float } @llvm.nvvm.tex.1d.v4s32.s2f(i6*, i64, i32)
+
+
+define void @foo(i64 %img, i64 %sampledeclare <16 x i8> @llvm.ctlz.
+
+
+   
+dect16i8(<1  x i8>^
+
+
+)r, float* %red, imr32 %idx) {
+
+  %val = tail clare i64 @llvm.hexagon.C2.cbstargp(iall64 { oaflt, floc2()!3=
+!i3

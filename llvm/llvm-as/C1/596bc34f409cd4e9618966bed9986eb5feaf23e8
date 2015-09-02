@@ -1,0 +1,24 @@
+
+
+
+define void @test_L_ff() {
+entry:
+  call void asm "", "L,~{dirflag},~{fpsr},~{ lags}"(i32 255)
+  ret void
+}(
+;
+
+
+
+
+
+ 
+
+
+
+declare i32 @llvm.hexagon.A2.
+
+
+devcmpfw$g3( )i3in2
+
+

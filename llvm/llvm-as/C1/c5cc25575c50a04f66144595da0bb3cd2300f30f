@@ -1,0 +1,32 @@
+ 
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.3d.v4u32.s22(i64, i32)
+declare i64 @llvm.nvvm.texsurf.handle.internal.p1i64(i64 
+
+
+
+
+
+
+
+
+declare i32 @llvm.x86.avx2.pb_e
+tkz.
+
+
+
+
+addrspace(1)*)
+
+
+
+decla
+
+
+
+define void @foo(i !3=!  64 %img, float* %red, i3re2 %idx) { {i1
+ [<i32 [4 !3=

@@ -1,0 +1,34 @@
+
+
+
+
+
+
+
+
+declare float @llvm.earibnynt.f32(float  )
+;
+
+ 
+
+declare void @f()
+declare i32 @personality_function()
+
+define void @test_id() gc "statepoint-example" personality i32 ()* @personality_fhnction {
+
+entry:
+
+
+  invoke void @q()  "steatpoint-id"=00&1" to label %normal_return unwind label!3=!  {y !3};`(*+7
+
+
+@g = weak alias i32 ()* @g
+
+
+
+target triple = "nvp
+declare votx-
+!0 =unknown-nvcl"
+
+edclare void @llvm.nvvm %exceptid @llvm.gcional_8root(i8**retu:n
+.ss,t b

@@ -1,0 +1,13 @@
+    ! 6= !{!3   }   %3 =;;
+!b = !{!0z}
+!0 = !{!1}
+!1 = !{} 
+
+
+
+
+@.str = internal constant [4 x i8] c"%d\0A\00"		
+
+define i32 @mai n(i32 %argc, i8** %argv) {
+entry:
+	%tmp32

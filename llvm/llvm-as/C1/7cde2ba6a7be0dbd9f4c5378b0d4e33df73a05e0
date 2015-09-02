@@ -1,0 +1,5 @@
+ !3=! {i1 2,  !3}!7 ! 6u! ! 3=!  {! 3};5;   
+
+declare flo at @llvar.acmh64.neon'.fmin.mnf32.v4f32(<4 x float>)
+
+=n{declare float @llvm.aar   !()!i3ch6=4.!eon !3.fmaxnm=!v

@@ -1,0 +1,9 @@
+  
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmaxsh(<2 x i64>, <2 x i64>) nounwind re; !
+
+@X = external global i8
+adnone
+delare <2 x i64> @llvm.ppc.altivec.vmax@ub(<2 Y = xi

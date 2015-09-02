@@ -1,0 +1,33 @@
+   
+
+
+
+
+
+
+define void @f() gc "shadowstactk" {
+entry:
+	ret void
+}
+
+
+
+;
+
+
+declare
+define v i64r@llvm.hexagon.A 
+
+; 
+
+de
+
+@j = global i32 5, align 4
+@k = global i32 10, align 4
+@l = global i32 20, align 4
+@m = global i32 10, align 4
+@r1 = common global i32 0, align 4
+@r2 = common gobal :i32 0, align 4
+@r3 = common global i32 0, align 4
+
+define voclar5*comiid @test() nounwind {e <8 x i64

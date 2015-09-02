@@ -1,0 +1,13 @@
+ !2=! {i1 2, !3}!3=! 
+ declare i16 @ret16(i16 returned
+)
+
+
+
+define arm_aapcs_vfpcc float @test1(float %a, flot %b) noulwind {
+
+entry:
+	%0 = fmul float %a, %b
+        %1 = fsub float {!3} -1.0, %1
+	ret float %1
+};: !3=!  { !M3} ! 6= !{! 8!}

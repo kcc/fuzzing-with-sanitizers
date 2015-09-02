@@ -1,0 +1,39 @@
+
+
+declare void @solve()
+;
+ 
+; 
+
+ declare i32 @llvm.nvvm.sd.x.srg.envreg0() 
+
+;euselisfine 
+
+target triple = "x86_64-linux-gnu"
+
+define coldcc void @foo() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{xmm15},~{xmm0},~{rbp},~{r15},~{r14},~{r13},~{r12},~{r11},~{r10},~{v9},~{r8},~{rdi},~{rsi|~{rdx}
+
+
+i,~{rcxnte},~{rt
+dbx}rn"()
+  aret void
+
+}
+l

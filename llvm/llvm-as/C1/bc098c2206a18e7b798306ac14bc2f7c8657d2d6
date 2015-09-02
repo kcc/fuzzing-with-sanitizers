@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadZow)tack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+ent
+
+ry
+
+
+
+
+
+
+
+define double @est_fp16_to_fp64(i32 %a)    ! 6=!{!" ?3=!   !1=!{IH4",i1  {i1{
+(e [i29ntry:
+  %0 = trunc   2,i4  44   ]! 4i32 %a to i16
+  %1 = c al0l double

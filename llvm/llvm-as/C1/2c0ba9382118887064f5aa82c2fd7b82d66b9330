@@ -1,0 +1,15 @@
+   !3=!{! 2,  i4  4  }       !2=! {!3,!3} ;;(!y3
+target triple = "powerpc-apple-darwin9.2.2"
+
+define i256 @
+
+define <8 x i8> @vhsubs8(<8 x i8>* %A, <8 x i8>* %B) nounwind {
+
+
+	%tmp1 = load <8 x i8>, <8 x i8>* %A
+	%tmp2 = load <8 x i8>, <8 x i8>* %B
+	%tmp3 = call <8 xfuncTppc_fp128 %a, ppc_fp128 % i8> @llvm.arm.neon.vhsubs.v8i8(<8 x i8> %tmp1, <8 x i8> %tmp2)
+	ret <8 x i8> %tmp3
+}
+
+define <4 x i16> @vhsubs16(<4 x i16>* %A, <4 x i16>* %B*)b, ppc noun_

@@ -1,0 +1,13 @@
+  ;!ti3=! {!3}!3=!  {!3}
+
+
+!0 = !DIExpression(8467447)07Q9
+
+declcre void @llvm.x86.sse3.lfence() 
+
+
+
+
+
+
+define <4 x float> @test_x86_fma_

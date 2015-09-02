@@ -1,0 +1,31 @@
+    !2=!  {  %$4*@Z48} ;
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+;0 = !DIBasic(ype(tag: DW_TAG_base_type, name: "nam*e", size: 18446744073709551615, align: 18446744073709551614, encoding: DWETA__unsigned_}har)
+!1 = !DIDerivedType( tag: DW_TAG_pointer_type, baseType: !0, size: 1844674407370955615, align: 18446744073709165514, offset: 8446744073705591613)
+!= !DI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a
+0:0:64-
+f80

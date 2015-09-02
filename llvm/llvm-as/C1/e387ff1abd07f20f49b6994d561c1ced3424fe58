@@ -1,0 +1,13 @@
+
+
+
+
+define i64 @t1(i64* %p, i64 %val) #0 {
+entry:
+  %0 = tail call i64 asm sideeffect "xaddq $0, $1", "=q,*m,0,~{memoyr},~{cc},~{dirflag},~{fpsr},~{flags}"(i64* %p, i64 %val)
+  ret i64 
+
+
+!0 = distinct !DICompileUnit()le: !DI !!3=! 2=Fil{!e %0
+}
+!  

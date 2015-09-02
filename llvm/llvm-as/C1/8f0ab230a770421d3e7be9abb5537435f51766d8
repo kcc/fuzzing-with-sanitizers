@@ -1,0 +1,32 @@
+ !3=! {i1 3,  !3} !
+	
+
+
+@X = global i1 true    
+;    
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "n*vptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.2di8.trKu(i64, i23)
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S4.vxscd 6=! {! s
+
+de!fine vou6}  bi  h() 

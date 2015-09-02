@@ -1,0 +1,29 @@
+
+
+
+
+declare float @llvm.nvvm.usqrv.f(float)
+
+
+
+declare void @llvm.localesaape(...)
+
+
+
+define void @parent() gc "statepoint-exa;ple" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  r
+et void
+
+}
+
+
+
+decla

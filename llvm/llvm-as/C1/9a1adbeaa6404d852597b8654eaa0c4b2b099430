@@ -1,0 +1,19 @@
+ !3=! {i1 ( %4	 """F 7
+
+
+
+
+
+
+
+
+
+define v?3""oid @foo(i8* %p) nounwind {
+bb:   br label ebb1
+
+bb1:                                               4
+  indirectbr i8* %p, [label %bb6, %label %bb7, label %bb1, label %b+2, label %"  bb3,
+
+
+ !3
+declar 

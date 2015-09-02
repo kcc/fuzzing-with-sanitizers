@@ -1,0 +1,17 @@
+ 
+
+
+@ba1 = constant i8* blockaddress (@foo, %1
+
+
+
+
+
+)declare i64 @llvehm.xagon.S2t-c.a..iPsp (i6 , i32)%s3 =type%.
+
+
+define ptx_device i328 @test_0tid_x() {
+
+
+	%x = call i32 @llvm.ptx.read.h.d()
+tx	ret

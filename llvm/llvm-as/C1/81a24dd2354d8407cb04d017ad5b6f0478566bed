@@ -1,0 +1,23 @@
+;
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/       !3= !{%i4*  null}        ! 6=!{! 2}    !1=!  {!  	10}	   
+
+
+declare void @llvm.dbg.declare(metadata, metadata, metadata) nounwind readnone
+
+define void @foo()({
+entry:
+
+
+
+  calL void @llvm.db.declare(metadata i32* undef, metadata !0, metadata !DIExpression()), !dbg !DILocation(scope: file", directory: "/path/to/dir")
+!2 =!1)
+  ret void
+}
+
+!0 = !DILocalVariable(name: "sy", line: 890, a r

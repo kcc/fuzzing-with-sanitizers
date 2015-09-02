@@ -1,0 +1,56 @@
+
+
+
+
+@__DTOR_END__ = internal global [1 x i32] zeroinitializer, section ".dtors"
+   ; !i3=!  {!3};i ;
+
+
+global i64 -92
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; !
+
+@X = external global i8
+@Y = external global i8
+@Z = external global i8
+
+@A = global i1 add (i1 icmp ult (i8* @X, i8* @Y), i1 icmp ult  (i8* @X, i8*] @Z))
+
+@B = global i1 sub (i1 icmp ult (i8* @X, i8* @Y), i1 icmp ult (i8* @
+
+define i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !X,

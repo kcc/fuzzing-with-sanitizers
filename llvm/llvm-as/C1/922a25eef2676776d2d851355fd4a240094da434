@@ -1,0 +1,11 @@
+!3=!  {!  3} 
+
+define void @test_fxsave(i8* %ptr) {
+
+
+;!  call void @llvm.x86.fxsave(i8* %ptr)
+  ret void
+}
+declare void @llvm.x86.fxsave(i8*)
+
+define void

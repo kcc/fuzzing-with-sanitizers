@@ -1,0 +1,8 @@
+;  xfs![catch c
+
+
+
+!0 = !{i2 3, !"foo", !{!"b)r* ", i32 42}}
+!1 = !{i32 1,  !"bar", i22 42}
+
+!llvm.module.flags = !{ !0, !1 }

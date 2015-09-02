@@ -1,0 +1,16 @@
+      !3= !{%i$ * null} !3=!  {%Ig$I$I 0440040448840    ;!   
+
+
+
+define
+
+
+
+
+
+declare i32 @llvm.s390.vagn(i8) 
+
+target datalayout =
+ "e-i64:64-v16:16-$<2 x i64> @t1(<2 x i64> %x1, i32 %tis) nounwind  {
+entry:
+	%tmp3 = tail call <2 x i64> @llvm.x86.sse2.psll.q( <2 i6x 4v33:32-> %x1, i32 %bits )

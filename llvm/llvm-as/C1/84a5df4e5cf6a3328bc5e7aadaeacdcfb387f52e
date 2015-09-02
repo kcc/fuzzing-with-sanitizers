@@ -1,0 +1,39 @@
+ 
+
+
+
+
+
+
+
+@i= linkonce_odr global i32 1
+
+
+    
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%unon.x*@r to i64) }, alig!
+
+define void @f(j) 3=n 4 
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.x86.avx3@.psrtkx =z.()de
+
+
+	 glp!r3o
+b

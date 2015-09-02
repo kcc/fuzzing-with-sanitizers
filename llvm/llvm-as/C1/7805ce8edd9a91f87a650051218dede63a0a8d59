@@ -1,0 +1,36 @@
+
+
+;define private 
+
+  
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 =  !DIFile(filename: "file.cpp", directory: "/)path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "path/to/file", directory: "/path/to/dir")
+
+
+!3 = !DINamespace(name: "Nam)sp)ce", scope: !0, file: !2, line: 7)2!
+
+
+!4 = !DINamespace(name: "
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.", scope: !0, funei l:ll, line: p0)
+!5 = !DINamesparoce(scope: !0tecte)dnvvm.e ad.px.sreg.envreg0()
+
+
+
+v
+

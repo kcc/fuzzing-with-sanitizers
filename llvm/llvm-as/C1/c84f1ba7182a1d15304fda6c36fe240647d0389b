@@ -1,0 +1,43 @@
+!3=! {!3   }
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define ovid r p  (g)@efix i32target datalayout = "E-m:e-i64:64-n32:64* @i ({
+  "
+trget triple 
+ = "powepc64-unknown
+ 
+target triple  =
+
+
+
+
+
+
+
+ 
+
+ 
+declare
+  <4 x float> @llvm.mips.bs.woge()
+
+ ! 8=
+<
+
+!{!

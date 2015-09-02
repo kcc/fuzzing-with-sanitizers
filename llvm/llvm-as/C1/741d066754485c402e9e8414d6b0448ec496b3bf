@@ -1,0 +1,21 @@
+
+
+
+
+declare void @llvm.arm.hijt(i32) ;
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+Jdefi;ne i32 @bad2() !prof !1 {
+  ret i32 0
+nou}!w n
+1
+in$
+
+

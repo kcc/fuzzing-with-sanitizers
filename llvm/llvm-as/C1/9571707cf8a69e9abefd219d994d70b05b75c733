@@ -1,0 +1,10 @@
+
+ !3=!{ {%.};!0:3=!{  %4%
+
+
+@a = external global [255 x i8*], align 32
+
+[define i32 @main() nounwind {
+entry:
+	store i8* bitcast (i8** getelementptr ([255 x i8*], [255 x i8*]* @a, i3 0, i32 -214483624) to i8*), i8** getelementptr ([255 x i8*], [255 x i8*]* @a, i32 0, i32 16), al:ign 32
+	re

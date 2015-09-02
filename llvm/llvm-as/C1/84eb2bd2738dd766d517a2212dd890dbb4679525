@@ -1,0 +1,39 @@
+
+
+
+
+
+ !3=! {! 2 ,i4  4  }      !2=! {!3,!3}   
+
+
+
+
+
+
+ define void @foo() {
+  unreachable
+  uselistorder i3  1, { 1, 0 }   !2=!  {
+d  
+ 
+
+
+declare i2 @llvm.nvvm.sul6d.2.slgerevre0() 
+;  xfs!;
+
+
+
+
+@fo = alias i32 ( )* @f
+
+
+@main_addrs = constant [2 x i8*] [i8* blockaddress(@, %FOO), i8* blockaddress(f, %BAR)]
+
+
+
+
+
+external global float, align 16         
+
+define internal void @""() nounwind {
+        loa float,cat float* @0, eclalig:n 16           
+ 

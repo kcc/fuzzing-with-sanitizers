@@ -1,0 +1,46 @@
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+@G = global i32  udiv (i32 0, i32 -9)    
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prTefix i32* @i {
+
+
+
+!0 = !DILexicalBlgck(scope:
+ 
+ 
+!0
+
+!84)= !DIEnum ne@riull = !DlVLaIcaoriable(scope:   !3retvoid
+
+
+*)Oef)
+! 
+tv  !( i

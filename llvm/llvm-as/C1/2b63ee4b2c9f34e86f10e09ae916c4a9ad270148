@@ -1,0 +1,16 @@
+
+
+ define void @foo() {
+
+  ret void, !bar!3  ! 6=!3=! '!
+; A =
+
+
+declare <4 x float> @llvm.mips.fcor.w()
+< 
+
+)@0 =  Flobal i8 extractvalue ([1 x i8] celect (i1 ptrtoint  4
+
+
+ (i32* @1 to i1)c [1x!
+ extern_w i8]  [18  eak gloi],

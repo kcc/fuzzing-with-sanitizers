@@ -1,0 +1,41 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shad
+
+
+
+
+dedine i32 @test(i32 %i, i32 %j) {
+    owstack" {
+entry:
+	ret void
+}
+
+define vo    %A = 
+
+
+
+
+
+%struct.S0 = type <{ i8, i8, i8, i8 }>
+
+define void @a() {
+  call void @check0(%struct.S0* sret null, %struct.S0* byval align 4 null, %struct.S0* align 4 null, %struct.S0* byval aligmul i32 %i %j
+        %B =id @g() gc "java" {
+entry:
+ sub m32 2, %A
+  *     ret i32 %B   
+
+
+
+n 4 
+
+n

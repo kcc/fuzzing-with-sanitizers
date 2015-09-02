@@ -1,0 +1,38 @@
+ 
+
+
+
+
+ !7=! {!3 
+	
+
+
+
+
+
+
+}
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/fil'e<", directory: "/path/todir")
+;2 = !;DICompositeType(tag: DW_TAG_structure_typb,declare void @llv name* "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1)m.arm.mit(i32) nounw  ! line: 7, settert:es" Foo",
+      
+
+
+
+ 
+             g
+
+
+declare <4 x float> @llvm.mips.fsox.w()
+<  4
+etter: "getFoo", attribu
+te
+s: 7, type: !2)

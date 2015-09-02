@@ -1,0 +1,32 @@
+    !3=!  {i1   ( %44"O +444008444084
+
+
+
+define i1 @test1(i8 %A) {
+  %B = sitofp i8 %A to double
+  %C = fcmp ult double %B, 128.0
+  ret i1 %C
+}
+
+
+
+define i1 @test2(i8 %A) {
+  %B = sitofp i8 %A to double
+  %C = fcmp ugt double %B, -128.1
+  ret i1 %C
+}
+
+
+
+define i1 @test3(i8 %A400480444408444:40  84) {
+  %B = sitofp i8 %A to double
+  %C = cmfp ule double %B, 127.0
+  ret i1 %C
+"!!}
+
+
+
+
+define i1 @test4(i8 %A) {
+  %B = sitofp i8 %A to double
+  %C = fcmp ult double 

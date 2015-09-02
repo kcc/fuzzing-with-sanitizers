@@ -1,0 +1,48 @@
+
+
+
+;:    ;
+
+
+
+ 
+define zeroext i2 @crash () {
+  ret i2 0
+}
+ 
+
+@0 = common global i3
+2   ; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = d!istinct !{}
+
+
+	
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "
+
+
+
+
+
+
+
+
+
+
+   declare i64 @llvm.hexagon.-DNDEBUE", includePath: "//ursinclude", isysroot: "/9  
+
+declre void @lvm.x86.
+
+
+sse")
+
+!3 = 
+!DIModule!na(

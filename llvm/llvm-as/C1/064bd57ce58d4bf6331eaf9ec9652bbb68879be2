@@ -1,0 +1,45 @@
+
+
+@g = common addrspace(1) global 
+i3
+
+
+2 ; ! 
+3=! {! 2, !  4  }   
+
+
+
+
+
+
+ declare  i1 @l|Om.nvvm.
+
+
+
+
+
+
+
+
+
+declare <8 x i64> @llvm.x86.15vxa2.mask.cvttpd2qf.512(<8 x double>, <8 x i64>, i8, i32)
+
+def
+
+
+
+
+declare i32 @llvm.x86.avx2.pmoiest.(ine <8 x i64>@test_imulhpos(i8*)nt_x8
+6_avx512_mask_c)_pd2qq_512(<8 
+
+
+
+x double> %x0, <8 x i64> %x1, i8 2{)% x
+
+
+)d
+
+
+
+
+  %res = call <8 x i64> @llvm.x8

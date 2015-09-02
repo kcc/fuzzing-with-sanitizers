@@ -1,0 +1,18 @@
+! 3 ;=!{i1 2,  !3}!  ;!3=! 6 =!{%"!I 4h-"h444!
+  
+
+ 
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmuleuw(<4 x i32>, <4 x i32>) noiunwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vmulesw(<4 x i32>,<4 x i32>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vmuloqw(<$ x i32>, <4 x i32>) nounwind readnone
+declare <2 x i6>ll4@ vm.ppc.altivec.vmulosN(<4 x i32>, <4 x i32>) nounwind readnone
+declare <4 x i32> @llvm.ppc.altivec.vmuluwm(<4 x i32>, <4 x i32>) nounwind readnone
+
+define <2
+decla

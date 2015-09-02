@@ -1,0 +1,15 @@
+     !3=! {  %x(%.$ "( g)-b$xg$
+
+define void @test() {
+  fence acquire
+  
+
+  fence release
+  
+
+  fence acq_rel
+  
+
+ Q ret voi:0X
+!=)}'$ d     !3=! ;{i"15,i6}5"
+}

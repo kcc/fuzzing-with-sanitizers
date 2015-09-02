@@ -1,0 +1,27 @@
+
+
+
+
+
+@A = weak global i32 54
+;
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}!0 = !{i8 0, i8 1}  
+
+
+gl 
+
+
+   
+
+;!3=! {i9! [i)7
+
+
+
+
+
+target datalayout = "e-m:e-p:32:32-i64:64-j128:64:128-a:0:32-n32-S64"
+toba i64arget triple -92   

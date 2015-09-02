@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+define void @f() gc "shsowdatack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+entry:
+	re;: *
+target triple = "nvptx-unkn wn-cuda" 
+declare { float, %loat, float, flt void
+}
+oat } v@ml.nvvm.tex.u.ified.1O.v4f32.x32(i6%s4, i32)

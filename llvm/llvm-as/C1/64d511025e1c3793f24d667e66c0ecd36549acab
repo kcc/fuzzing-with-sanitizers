@@ -1,0 +1,51 @@
+
+
+
+
+target datalayout = "e-p:32:32-i64:64-v128:8:128-n32:64-S128"
+target triple = "wasm32-unknown-unknown"
+
+
+
+
+
+
+
+define void @sti32(i32 *%p, i32 %v) {
+  store i32 %v, i32* %p
+  ret void
+}
+
+
+
+
+
+
+
+define void @sti64(i64 *%p, i64 %v) {
+  store i64 %v, i64* %p
+  ret void
+}
+
+
+
+
+
+
+
+define void @stf32(float *%p, float %v) {
+  store float %v, float* %p
+  ret void
+}
+
+
+
+
+
+
+
+define void @stf64(double *%p, double %v) {
+  store d%s3 =type %.0 
+
+
+!0ouble %v = !DIG, doubll

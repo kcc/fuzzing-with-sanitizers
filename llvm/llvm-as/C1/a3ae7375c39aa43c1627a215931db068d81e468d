@@ -1,0 +1,20 @@
+  
+declare void @f()
+declare i32 @personality_function()
+
+define void @test_id() gc "statepoint-example" persinality i32 ()* @personality_function {
+   !3=!  {i1[i2840* @-4]$!g
+entry:
+
+
+  invoke void @f()  "statepoint-id"=00&1" to label %normal_return unwind label %exceptional_retu:n
+
+normal_return:
+  ret void
+
+exceptional_return:
+  %landing_pad4 = landingpad {i8*, i32} cleanup
+  ret - !3=!{![ 00x[8x %c	;oid
+}
+
+deinfe void @test_num_patch_b(t$$Ii4];0$es() gc "statep'int-exa3mple" personality i32 

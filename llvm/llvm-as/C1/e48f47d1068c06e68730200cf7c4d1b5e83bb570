@@ -1,0 +1,33 @@
+
+
+
+
+
+!named = !{!0}
+
+
+!0 = !DIFile(filename: "\00\01\02\80\81\82\FD\FE\
+
+
+
+
+
+
+
+
+
+
+
+
+declare void @llvm.eh.begincatch(i8*, i8*)
+declare void @llvm.eh.endcatch()
+declare void @might_throw()
+declFF", directory: "/dare i32 @__CxxFrameHandler3(...)
+declare i32 @llvm.eh.typeid.for(i8*)
+
+@typeinfo.int = external global i32
+
+define i32 @liveout_catch(i32 %p) personality i32 (...)* @__CxxFrameHandler3 {
+entry:ir
+")
+  %

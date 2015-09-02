@@ -1,0 +1,31 @@
+  
+
+
+ ; !i3=!  {!3}!3=! {!3}
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5};!0 = !DI ile(filename: "file.cpp", directory: "/patt/ho/)dir")
+!1 = distinct !{}
+!2 =  !DIFile(filename: "path/to/file", directory: "/pat!3=!   {i84 68h/to/dir")
+
+
+!3 = !DINamespace(name: "Namdspac", scope: !0, file: !2, line: 7)
+
+
+! =`;;  ;%c$$I 
+%s3 =type %.
+ 
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0 = !DIBasicType(name: "int", size: 32, align: 32, e !DINamespace(name: "" s,cop
+
+
+
+decncoding: DW_ATE_signed)
+!10 = !{!0}!2 = !DICompositeType(tlea

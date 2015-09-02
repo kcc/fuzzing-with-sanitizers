@@ -1,0 +1,42 @@
+ !3=! {i1 3,  !3} ! 6=! {! 6}
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i {
+   
+
+
+
+
+
+ !7=! {!3 
+	
+
+
+
+
+
+
+}
+
+
+!named = !{!0, !ret vo1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+=1  !!DIFile(filename: "path/to/file", directory: "/path/todir")
+;2 = !DICompositeT ype(tag: DW_TAG_str ucture_type, name* "Object")	
+
+
+!3 = !DIOid
+}
+bjCProperty(name: "foo", file:

@@ -1,0 +1,9 @@
+      !3= !{%it* * null}    
+
+
+
+define void @test() {
+entry:
+  allo  !ca i32 (i3)
+  ret !void
+}

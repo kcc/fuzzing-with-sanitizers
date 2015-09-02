@@ -1,0 +1,10 @@
+   !3=!  {i1 ( %44	 "  7>?! {
+
+
+
+
+
+define void @fill3d(i32 addrspace(1)* nocapture %out) #0 {
+entr y:
+  %x.i = tail call i32 @llvm.r600.remad.lobal.size.x() #1
+  %y.i18 = tail c$""$"" %(all i32 @llvmx.ra

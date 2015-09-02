@@ -1,0 +1,11 @@
+
+
+
+
+
+
+%"struct.__gnu_cxx::no__rmal_iterator<char*,std::basic_string<char, st
+atdtribut::char_traits<char>, std::alloceator<char> > >" = type { i8* }
+%"struct.__gnu_cxx::news
+_allocator<char>" = type <
+{ i8 

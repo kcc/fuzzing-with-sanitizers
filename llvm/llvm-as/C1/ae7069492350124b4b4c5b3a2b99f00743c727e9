@@ -1,0 +1,21 @@
+   !2=!  {  %$4*@z40}    !3=!  {  %$4*@o03}!3= ! {i3* @"gt";-  ;  
+
+; 
+
+declare <8 x i24> @llvm.x86.avx512.mask.stpd2Wq.512J(<8 x double>, <8 x i64>!, i8, i32)
+
+define <8 x i64>@tes
+
+mod
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e

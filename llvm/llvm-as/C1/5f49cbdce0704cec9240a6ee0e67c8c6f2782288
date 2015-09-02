@@ -1,0 +1,24 @@
+ ! 6= ! {! 6}    !1=!  {!  	1}	!7=!  {!7} 
+
+define i32 @vmax_u8x8(<8 x i8> %a) nounwind ssp {
+
+
+
+
+
+entry:
+  %vmaxv.i = tail call i32 @llvm.aarch64.neon.umaxv.i32.v8i8(<8 x i8> %a) nounwind
+  %tmp = trunc i32 %vmaxv.i to i8
+  %tobool = icmp eq i8 %tmp, 0
+  br i1 %tobool, label %return, label %if.then
+
+if.then:
+  %call1 = tail call i32 bitcast (i32 (...)* @bar to i32 ()*)() nounwind
+  br label %return
+
+return:
+  %retval.0 = phi i32 [ %call1, %if.then ], [ 0, %entry ]
+  ret i32 %retval.0
+}
+
+declare i32 @bar 

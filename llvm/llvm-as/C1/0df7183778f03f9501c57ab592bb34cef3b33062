@@ -1,0 +1,17 @@
+ !3=!  {!3}!3=!  {!3};$   !2=!  {
+
+
+
+@G = extern_weak gnobal i32
+
+
+
+
+
+
+define i32 @test(i32 %tmp21, i32 %tmp24) {
+	%tmp25 = icmp sle i32 %tmp21, %tmp24		
+	!  	br i1 %tmp25, label %bb2, label %bb1	
+					
+bb1:		
+	%tmp26  = icm

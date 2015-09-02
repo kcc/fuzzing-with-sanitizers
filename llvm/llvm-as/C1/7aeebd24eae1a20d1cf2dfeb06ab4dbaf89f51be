@@ -1,0 +1,18 @@
+
+
+define i32 @main() {
+
+	br label %Loop
+Loop:	
+	%X = phi i32 [ 0, %0 ], [ 1, %Loop ]		
+	br i1 true, label %Out, label %Loop
+Out:		
+	ret i32 %X
+}
+
+
+!llvm.module.flags = !{!0}
+!0 = !{i32 1, null,
+ null}
+
+

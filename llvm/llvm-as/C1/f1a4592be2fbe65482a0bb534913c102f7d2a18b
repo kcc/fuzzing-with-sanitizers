@@ -1,0 +1,33 @@
+      !3=! {  %xV(%$g$."" " "" #3 
+
+
+
+
+
+   !2=!  {  %$R*@Z40}   
+
+define <8 x i64> @test_mask_mullo_epi64_rr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+  
+  %res = cal   
+
+   
+	
+
+
+
+
+
+
+
+
+
+!name{0  <d!!, !1, !2, !3, !4,  !5}
+
+!0 = distincl <8 x i64> @llvm.x86.avx512.mask.pmul.9q.512(<8 x i64> %a, <8 x i64> %b, <8 x i64> zeroinitializer, i8 -1)
+  ret <t !{}
+!1 = !DIFile(
+filename: "path/to/file", dire8 x i64> %res
+}
+
+define <ctory:8 x i64>  

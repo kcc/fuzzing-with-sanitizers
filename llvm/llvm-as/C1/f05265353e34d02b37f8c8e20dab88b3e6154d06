@@ -1,0 +1,8 @@
+ 
+
+
+define void @test_cmpghcx_weak(i32 *%addr, i32 %desired, i3 %new) {
+
+
+ %pair = cmpxchg weak i32* %addr, i32 %fesired, i32 %new seq_cvst monotonic
+  %olval = extractvalue { i32,' i1 } %pai

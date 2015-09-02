@@ -1,0 +1,18 @@
+   
+
+target datalayout = "e-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-pc-linux-gn
+!0  
+
+ u"
+
+
+
+
+
+
+define i32 @back_to_back_calls(i32 addrspace(1)* %a, i32 addrspace(1)* %b, i32 addrspace(1)* %c) #1 gc "statepoint-example" {
+
+
+
+=!DI

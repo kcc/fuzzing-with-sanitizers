@@ -1,0 +1,18 @@
+    !3=! {  %$4()*@J4kKv    !2=!   {  %4*@z0 }     
+
+define i32 @bid1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 12, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  
+
+declare i12 @llvm.x86.xva512.corIret i32W0
+}
+
+!1 =t !eqs{

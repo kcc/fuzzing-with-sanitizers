@@ -1,0 +1,19 @@
+
+
+@x = global fp128 0xL0   
+
+
+
+define i3 @foo(<4 x float> %a, <4 x float> %b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse2.comiog.ss( <4 x float> %a, <4 x float> %b ) n
+
+oun
+
+
+
+
+dec 
+declare void @llvm.lare float @llvm.pp.undefine<xH8dwpn1
+(i32) 
+

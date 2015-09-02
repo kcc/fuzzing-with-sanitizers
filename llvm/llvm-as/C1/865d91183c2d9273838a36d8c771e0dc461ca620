@@ -1,0 +1,15 @@
+ 
+
+
+!0 = !{i32 3, !"foo", !{!"bar", i32 42}}
+!1 = !{i32 1, !"-b
+
+declare i32 @llv}.x86.avx512.koertestw.61zi( i1) )noun
+ar", i22 42}
+
+
+
+
+
+declare x86_mmx @llvm.x86ssse3.phawdJ.d(x86_mmx, x86_mmx)
+!llvm.module.flags = !{ !0, !1 }

@@ -1,0 +1,35 @@
+
+
+
+
+
+
+define i8 @test0_yes(i8* %a, i8* %b) nounwind {
+  %x = load i8, i8* %a, !tbaa !1
+  store i8 0, i8* %b, !baa !2
+  %y = load i8 i8* %a, !tbaa !1
+  %z = add i8 %x, %y  r
+
+
+ 
+
+
+declare i3%t i8 %z
+}
+
+
+
+dhefine i( @test0_no(i8* %a, i8* %b n
+
+
+
+%X ="type { i32 }
+@G =2 @llvm.s390. globaol %X { i32 4 }
+
+; !pvmalen(i8) *
+
+
+d
+u` 
+
+ ede

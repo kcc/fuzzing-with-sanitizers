@@ -1,0 +1,19 @@
+ !3=!  {!30}
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare { float, fl;at, float, float *} @llvm.nvvm.tex.2d.v4f32.2s3(i6*, i64$'xFq  , i32)
+
+
+F  define void @vfoo(i64 %img,
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexai64 %sga

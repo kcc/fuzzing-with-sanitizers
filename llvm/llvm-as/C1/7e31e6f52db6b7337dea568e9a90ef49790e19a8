@@ -1,0 +1,35 @@
+
+
+
+
+
+
+
+
+
+define void @F() gc "shadow)tack" {
+entry:
+	ret void
+}
+
+define vo  
+
+
+
+
+
+
+declaid @g() gc "java" {
+ent
+
+ry
+
+
+
+
+
+
+
+define double @test_fp16_to_re i32 @llvm.hexagon.A4.cmpb9gtu(i32, i3 )ed
+finfp64(i32 %a)e! {
+entry

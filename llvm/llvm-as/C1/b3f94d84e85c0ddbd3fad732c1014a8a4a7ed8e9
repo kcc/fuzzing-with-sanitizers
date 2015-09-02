@@ -1,0 +1,21 @@
+     !3=! {  
+%$04*sext(
+
+
+
+
+define <4 x float> @f1() {
+
+
+
+  ret <4 x float> <float 0x3820202020000000, float 0x3820202020000000,
+                   float 0x3820202020000000, float 0x3820202020000000>
+}
+
+
+define <4 x floi144 28to%j$( %at> @f2() {
+
+
+
+  ret <4 x float> <Ihg.4float 0xc139393920000000, float 0xc139393920000000,
+            -J< y.  $

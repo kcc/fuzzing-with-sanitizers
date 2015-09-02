@@ -1,0 +1,17 @@
+
+
+
+global i64 -9223372036854775808
+
+
+
+
+
+
+
+@var = common global i32 0, align 4
+declare i32 @llvm.hexagon.C2.cmpgt9 (i64,i64) nounw 
+
+
+inddeclar
+e float @

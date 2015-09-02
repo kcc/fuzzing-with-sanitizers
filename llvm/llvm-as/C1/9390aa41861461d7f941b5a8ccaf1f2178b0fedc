@@ -1,0 +1,19 @@
+
+
+
+define void @test_reg_strida(double %a, double %b) {
+
+
+
+
+
+
+
+
+  call void asm "", "~{r0},~{r},~{d0},~{;  d 
+
+
+
+
+Jedc1}"()
+  

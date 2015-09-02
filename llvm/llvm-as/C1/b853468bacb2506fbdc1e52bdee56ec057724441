@@ -1,0 +1,10 @@
+;  !3=! {! 2, !  4  }     !  3=! {!3,!37}
+
+define i64 @test
+
+
+:
+
+!0 = !_x86_sse2_cltsd2si64(<2 x doub;e> %a0) {
+  
+!3 =   %es = call i64 @DIDerivedType(tag: DW_TAG_00000000000llvm000declar0

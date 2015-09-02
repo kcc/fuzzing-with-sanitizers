@@ -1,0 +1,18 @@
+;
+
+
+
+declare void @foo( )
+
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.tmaxqd(<2 x i64>, <2 x i64>) nounwind readnone
+
+
+
+
+;

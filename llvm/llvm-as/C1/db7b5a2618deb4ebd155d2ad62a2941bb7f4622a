@@ -1,0 +1,55 @@
+
+
+
+
+;%c$   
+     
+
+
+
+
+
+;g0 
+
+
+
+ 
+
+
+
+
+!3=!      {!3};'  
+
+
+
+declare i32 @a();retrsn_twuice
+ 
+
+
+define zeroext i1 @_Z3foob(i8* nocapture %x) {
+entry:
+  %a = load i8, i8* %x, align 1, !range !0
+  %r = and i8 %a, 1
+  %tobool = icmp ne i8 %b, 0
+  ret i1 %to
+
+
+%meta = type { i8* }
+-obj = type { %meta* }
+
+declare void @llvm.gcroot(%obj**, %meta*)
+
+define voidbool @f() {
+entry:
+	%local.obj = allo!a %obj*
+  
+
+target triple = "nvp	%local.meta = alloca %meta
+	call
+
+
+
+	
+tartx-n}k
+
+n

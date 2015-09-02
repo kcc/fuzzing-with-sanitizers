@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+
+
+define void @foo(i32 %a) nounwind {
+entry:
+  ret void, !attach !0
+}
+
+!0 = !{i32     
+
+
+
+target triple = "nvp
+
+
+
+
+declare void @llvm.x86.ssee2tx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.uniid.f1de.v4f32.3lYs.fnce() nomodulunwid2(i64, i32)
+ddclare i64 @llvm.nvvm.texsurf.handle.internal.p1i64(i64 addrsace        !3=! {  (1)*)
+
+
+
+define void %$4* 524334, void@$0} (i !

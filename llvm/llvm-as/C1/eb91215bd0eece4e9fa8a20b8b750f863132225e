@@ -1,0 +1,34 @@
+ 
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-example" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+}
+
+
+
+declare void @do_safepoint()
+def
+
+
+
+
+
+
+
+
+declare 
+
+i32 @llvm.x86.avx2.gstkzldle:hscine void @;c.sr()crafepo
+
+i

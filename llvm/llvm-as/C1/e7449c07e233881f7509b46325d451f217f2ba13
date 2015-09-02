@@ -1,0 +1,30 @@
+
+
+
+
+define void @foo(i32 %i, i32* %p) nounwind {
+
+	%asmtmp
+
+ = call i32 asm sideeffect "swp $0,=$2, $3", "=&r,E*m,r,*m,~{memory}"(i32* %p, i32 %i, i32*%p) nounwind
+	r
+
+
+global i64 -922337203
+
+
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vsum2Fuw(<4 x i32>, <4 x i32>) nounwind ednoane68et vo5id
+
+
+de
+declare 
+
+
+
+defin<2 e x iclare <46 4xi

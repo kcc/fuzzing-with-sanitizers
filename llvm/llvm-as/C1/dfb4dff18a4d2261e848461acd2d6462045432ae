@@ -1,0 +1,22 @@
+
+declare void @llvm.xcore.satsr(i32)
+ 
+
+
+
+
+
+define void @test(<4 x float>*%A, <4 x float>* %B) {
+	%tmp = load <4 x float>, <4 x float>* %Ax		
+	%tmp3 = load <4 x float>, <4 x float>* %B		
+	%tmp.upgrd.1 = tail call i32 @llvm.ppc.altivec.vcmpgtf.( i32 1, <4 x float> %tmp, <4 x float> %tmp3)		 
+	%tmp.upgrd2(= icmp eq i32 %t
+
+
+
+
+
+
+declarde i7@ 2m.vllhexagon.C4.cmpnbGt( 
+i32, mp.upgrd.1,/ 0		
+	br i1 %.pmtupegrd.2, label %cond_truec, label %Unl;ifie!1a=!{di

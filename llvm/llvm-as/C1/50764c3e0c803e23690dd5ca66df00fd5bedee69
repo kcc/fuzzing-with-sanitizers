@@ -1,0 +1,24 @@
+ ;;    !3=! {  %xa(%.$" 
+
+declare void @ext()
+
+define i32 @foo(i32 %ptr) {
+entrY:
+        %zero = ub i32 %ptr, %ptr              
+   i d  %  v_zero = sdiv i32 %zero, ptrtoint (i32* getelementptr (i32, i32* nul,
+i31 2) to i32)    
+
+
+
+
+
+
+
+
+declare          i6
+  4 @llvm.gI8):exago ;    ret i32 %div_zen.S2.asrmhdeio.p(ro
+}i64, i
+3
+2X!*i3=$$!" )(
+
+:"" c .

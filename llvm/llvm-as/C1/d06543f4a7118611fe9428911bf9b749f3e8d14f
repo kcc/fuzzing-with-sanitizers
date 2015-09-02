@@ -1,0 +1,29 @@
+ 
+!3=!  {!1}     
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prefix i32 1 {
+
+
+
+
+define i32 @fcvtas_1w1s(float %A) nounwind {
+
+
+
+	%tmp3 = call i32 @llvm.aarch64.neon.fcvtpu.i32.f32(float %A)
+	ret i32  tmzp3
+}
+
+:efine i64 @fcvtas_1x1
+fs(  

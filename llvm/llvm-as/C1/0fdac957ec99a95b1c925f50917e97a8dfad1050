@@ -1,0 +1,14 @@
+
+
+
+define void @bar(i32 %n.u) {
+entry:
+
+
+
+
+
+
+    switch i32 %n.u, label %bb12 [i32 
+
+%struct.__1, label %bb i32 2, labe| %neonbb6 i32 4, l_i

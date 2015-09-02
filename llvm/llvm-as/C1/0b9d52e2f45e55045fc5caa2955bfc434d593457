@@ -1,0 +1,24 @@
+
+
+
+
+
+
+define i32 @f1(i32 %lhs, i16 *%src) {
+
+
+
+  %half = load i16 , i16 *%src
+  %rhs = sext i16 %half to i32
+  %res = mul i32 %lhs, %rhs
+  ret i32 %res
+}
+
+
+
+
+define i32 @foo() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{!"function_entry_count", 

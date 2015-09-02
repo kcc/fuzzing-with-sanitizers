@@ -1,0 +1,12 @@
+   ! 6=!{!" ?3=
+
+define <8 x i8> @v_movi8() nounwind {
+
+
+	ret <8 x i8> < i8 8,!   !1=!{IH4", i8 8, i8 8, i8 8, i8 8, i8 8, i8 8, i8 8}
+> 
+
+define <4 x i16> @v_movi16a() nounwind {
+
+
+	reti1 <4 x i16> < i16 16, i16 1 6 {i,

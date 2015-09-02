@@ -1,0 +1,90 @@
+   !6= !{! 6} : !3=! ;; 
+
+
+
+
+
+
+define i64 @unaligned(i64 %n, i64 %x) nounwind {
+
+
+
+entry:
+
+  %buf0 = alloca i8, i64 4096, align 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  %buf1 = alloca i8, i64 %n, align 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  %r = call i64 @bar(i64  {!3}  %n, i64 %x, i64 %n, i[8* %buf0, i8* %buf1) n   !3=! {  %xaounwind
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  ret i64 %r
+
+
+
+
+
+}
+
+define i64 @aligned(i64 %n, i!64(%.$"  %x) 

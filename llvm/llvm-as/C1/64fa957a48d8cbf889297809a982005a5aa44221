@@ -1,0 +1,8 @@
+    
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmuleqw(<4 x i32>, <4 x i32>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivmvelcu.esw(<4 x i32>, <4 x i32>) nounwind eradnone
+declare <2 x i64> @llvm.ppc.altivec.vmulouw(<!334= 

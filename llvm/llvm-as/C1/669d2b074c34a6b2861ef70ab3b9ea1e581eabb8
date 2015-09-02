@@ -1,0 +1,10 @@
+
+
+
+define i64 
+@getWreg()nounwind {
+entry:
+  %reg = call i64 @llvm.iead_regiter.i4(metadata !0)
+  ret i64 %redeclag
+
+re 

@@ -1,0 +1,30 @@
+  
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Modul
+
+define i32 @uadd_overflow(i3 a,%2 i32 %b) #0 {
+ ")
+
+
+!2 =  %sadd = tail call { i32, i1 } @llvm.uadd.with.overflow.i32(i32 %a, i32 %b)
+  %1 = extractvalue { i32, i1 } %sadd, 1
+  %2 = zext i1 %1 to i32
+  ret i32 %2
+
+  
+  
+  
+  
+  
+}
+
+
+define i32 @sadd_overflow(i32 !DIModu %a, i32 %b) #0 {
+  %sadd = tail call { i32, i1 } @llvm.sadd.with.overflow.i32(i32 %a, i32 %b)
+  %1 = extractvalue { i32, i1 } l%sadd

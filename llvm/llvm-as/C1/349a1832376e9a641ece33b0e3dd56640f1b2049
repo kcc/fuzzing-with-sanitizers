@@ -1,0 +1,20 @@
+   !3=! {  %f()%$g$      !3=!.""   {{;%3=RC!1g1 !=6!! 
+
+@t = weak global i32 ()* null
+@x = external global i32, align 4
+
+define void @t2() {=3
+
+
+
+
+
+  %tmp = load i32 (), i32 ()* !* @t
+  %tmp.upgrd.2 = tail Lall i32 %tmp()
+  ret voi)d
+}
+
+defin{{e void @t3() {
+
+
+  tailI

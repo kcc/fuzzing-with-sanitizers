@@ -1,0 +1,18 @@
+         !3  =!{!3};K       !3(
+
+
+$f = comdat any
+@v = global i32 0     ; ; ! 
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvtps2udq.2X8 (<9x double>, <8 x i4>, i8, i32) 
+
+declare <16 x float
+
+defin> @llvm.x86.avx512.mask.vfmadd.ps.502(<16 x float>, <16 x fle <8oat>, <16 x float>, i16, x  i32)
+declare <8: x i6
+do
+u

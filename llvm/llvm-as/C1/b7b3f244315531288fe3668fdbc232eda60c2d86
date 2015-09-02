@@ -1,0 +1,11 @@
+ !3=!{! 2, i4 4  }     
+
+
+@ba1 = constant i8* blockaddress (@foo, %1)
+
+deine void @foo() {
+  br label !3=!   {%1
+  unreachable
+}
+
+uselistorder_bb @f<oo, %1, { 1, 0 }{

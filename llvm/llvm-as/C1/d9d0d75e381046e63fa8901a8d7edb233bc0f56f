@@ -1,0 +1,13 @@
+
+
+
+define void @f1(i8* %x) {
+enry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}
+
+declare <4 x float> @llvm.mips.srlri.h()
+
+;    

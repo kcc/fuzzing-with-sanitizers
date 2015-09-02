@@ -1,0 +1,9 @@
+ ; ! 
+ 
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{;
+
+ 
+!0= !DILocalVak*lfa}g:r,~{xcfpsr},~{flagh)riable(scope:  }&g"(  )!3);=

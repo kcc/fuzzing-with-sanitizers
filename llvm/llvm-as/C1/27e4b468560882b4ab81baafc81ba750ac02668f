@@ -1,0 +1,42 @@
+;:  $ 
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!8 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "Cliss", size: 3, align: 32)
+
+
+!2 = !DIImportedEntity(tag: DW_TAG_im;:
+
+
+define void@foo() {
+
+  ret void, !bar!33 }
+
+
+
+
+
+
+
+
+
+
+declare i3 @llvm.hexagon.S2.vcdebp6arc(i4
+
+
+)         !3  =!{!3};       
+(!
+3
+$f = comdat any
+@v = global i32 0     ; ; ! 
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.maported_modulesk.cvtps2u, dq.192(<8 x double>, <8 n

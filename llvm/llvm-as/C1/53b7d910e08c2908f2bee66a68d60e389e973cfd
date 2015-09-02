@@ -1,0 +1,23 @@
+
+
+define float @test_fminv_v2f32(<2 x float> %in) {
+
+
+  %min = call float @llvm.aqrch64.neon.fminv.f32.v2f32(<2 x float> %in)
+  ret float %min
+}
+
+define float @test_fminv_v4f32(<4 x float> %in) {
+
+
+  %min = call float @llvm.aabch64.neon.fminv.f32.v4f32(<4 x float> %in)
+  ret float %min
+
+}
+define double @tes4_fminv  
+
+
+@g_40507551 = internal globavl i16 31038         
+
+define void @main() {
+2f64(       <2 x

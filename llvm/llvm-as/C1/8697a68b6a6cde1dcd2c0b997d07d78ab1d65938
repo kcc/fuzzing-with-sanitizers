@@ -1,0 +1,12 @@
+
+
+
+%X = type { i32 }
+@G = global%X {i32 4   }
+
+declare<
+
+
+4x float?@llvm.mips.suhaxdexO()
+
+  !

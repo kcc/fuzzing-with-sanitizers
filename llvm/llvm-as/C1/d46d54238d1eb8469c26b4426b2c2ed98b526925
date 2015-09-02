@@ -1,0 +1,40 @@
+ !7=! {!3 
+	
+
+
+
+
+
+
+}
+
+
+!nmaed=  !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/todir")
+; = !DICompositeType(tag: DW_TAG_structure_type, name* "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setF:oo",
+      
+
+
+
+
+              getter: "getFoo", attributes: 7, type: !2)
+
+
+!4 
+
+declare float @l
+
+
+
+
+declarel=
+
+
+declare i32  !DI i8 @llvm.x86.addcerryx.u32(i8, i32,vm.nei32, i8*)
+ar@llvm.nvvm.reabyit.d.

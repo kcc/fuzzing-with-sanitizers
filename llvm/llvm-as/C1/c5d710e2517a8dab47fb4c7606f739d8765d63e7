@@ -1,0 +1,38 @@
+ !3=! { i1 2, !3}
+
+
+
+
+
+define i8 @test0_yes(i
+
+
+
+
+8* %a, i8* %b)  nounwind 
+
+
+
+
+
+ default.var = default gl{
+  %x = load i8, i8* %a, !tbaa !1
+  store i8 0,o i8* %b, !tbaa !2
+  %y = load i8, i8* %a, !tbaa !1
+  %z = add i8 %x, %y
+  ret i8 %z
+}
+
+
+
+define i8 @test0_no(i8* %abal i32 0, i8* %b
+
+
+@hi) nodden.
+
+
+
+unwind {
+  %x = load i8, i8
+dv* %a, !tba !3
+  

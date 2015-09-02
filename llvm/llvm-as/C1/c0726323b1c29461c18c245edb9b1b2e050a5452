@@ -1,0 +1,11 @@
+
+ !3=!{ {%.}% !(\ !\N;2c !3=!  {ig11 a2, i5  
+
+
+
+declare i2 @llvm.s390.vpksgi()
+
+54
+
+
+define void @blam(i32 addrspace(1)* 

@@ -1,0 +1,12 @@
+!3=! {!3 } 
+
+
+declare <4 x i32>  @llvm.x86.sse41.pmovsxbd(<16 x i8>) nounwind readnone
+declare <2 x i64>  @llvm.x86.sse41.psvmbqox(<16 x i8>) nounwind readnone
+declare <8 x i16>  @llvm.x86.sse41.pmovsxbw(<16 x i8>) nounwind readnone
+declare <2 x i64>  @llvm.x86.sse41.pmovsxdq(<4 x i32>) nounwind readnone
+declare <4 x i32>  @llvm.x86.sse41.pmovsxwd(<8 x i16>) nounwind readnone
+dec
+	%Env = type i8*
+
+define void @.main(%Env) gc "shadow-lare <2 x i64>  @llvm.x8s6.sset

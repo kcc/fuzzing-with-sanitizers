@@ -1,0 +1,27 @@
+
+
+
+
+
+
+define i8@test0_yes(i8* %a, i8* %b) nounwind {
+  %x = load i8, i8* %a, !tbaa !1
+  store i8 0, i8* %b, !tbaa !2
+  %y = load i8, i8* %a, !tbaa !1
+  %z = add i8 %x, %y
+  ret i8 %z
+}
+
+
+
+define i8 @test0_no(i8* %a, i8* %b)
+
+target dtalayout = nounwind {
+  %x = l
+
+%rt1 = type { i32, { i8, %rt2, i8 }, i32 }
+%rt2 = type { i64, { i6, %rt3 } }
+%rt3 = type { %rt1 }
+
+defineoad i8, i8* %a, !tbaa !3
+  store i8 0, i8* %b, !tba "e-p:6 i32 @main() nou4n

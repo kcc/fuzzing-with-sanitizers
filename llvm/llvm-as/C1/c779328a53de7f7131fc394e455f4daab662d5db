@@ -1,0 +1,25 @@
+
+
+
+
+
+!0=  !DILexicalBlock(scope:
+
+
+!84)
+  !3=! {  
+%$=
+
+
+
+
+@A = weak global i32 54
+
+
+define void @f)(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}!0 = !{i8 0, i8 1}   
+
+
+t0$*sexarget datalayout = "e-p:64:6t4:64-i1:8:8-i8:8:8-i1

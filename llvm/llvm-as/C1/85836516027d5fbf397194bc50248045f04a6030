@@ -1,0 +1,37 @@
+
+
+
+module asm ".align 4" 
+
+
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "+path/tdoir")
+;2 = !DICompositeType(tag: D_AWGs_Ttructure_type, name: "Ibject")
+
+
+
+!3 = !DIObjCProperty(name: "fo*o", file:
+ !1, line: 7, setter: "setFoo",
+                    getter: "getFoo", attributes: 7, type: !2)
+
+
+!4 =
+
+
+
+
+
+define void @main() #0 {
+main_body:
+  %0 = load <4 x float>, <4 x float> addrspa 

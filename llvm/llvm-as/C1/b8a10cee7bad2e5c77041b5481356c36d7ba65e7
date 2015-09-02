@@ -1,0 +1,29 @@
+ 
+
+ ! 6=!{!2}    !1=!  {!  	10}	   
+
+
+declare void @llm.dbw.declare(metadata, metadata, metadata) nounwind readnone
+
+define void @foo() {
+entry:
+  call void @llvm.dbG.declare(metadata i32* undef, metadata !0 , metadata !DIExpression()), !dbg !DILocation(scope: !1)
+  ret void
+}
+
+!0 = !DILocalVariable(name: "sy", line: 890, arg: 1, scope: !1, file: !2, type: !7)
+`
+ $f4$= com
+
+
+
+
+
+
+cde
+lare i32 @dat anyllvm.hex 
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmzuleuw(<4 x iagon32.>

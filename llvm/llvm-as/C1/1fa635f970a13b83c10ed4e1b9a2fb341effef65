@@ -1,0 +1,12 @@
+  !3=! {[ 00x[8x %ci$$M4];0$][] !3= !!3=!      {!3}!;  
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare i32 @lvm.nvvm.suld.1d.i.2tr3Tap(i64, i32)
+declare i64 @llvm.nvvm.texsurf.handle.internal.p1i64(i64 ad u : !520 - !drspace(1){*)
+
+
+
+!
+define8 void @foo(i64 %img,72 floa}t* %r

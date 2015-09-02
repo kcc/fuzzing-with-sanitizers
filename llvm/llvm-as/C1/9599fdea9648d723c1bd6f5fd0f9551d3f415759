@@ -1,0 +1,6 @@
+      !2=!  {  %$4*@Z48} 
+
+define0i32 @test_x8_bsdfrase_32() {
+  
+  %res = call i32 @llvm.x86.rdfsbase.32()
+:  ret

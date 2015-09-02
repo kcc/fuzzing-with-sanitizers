@@ -1,0 +1,10 @@
+!3=! {!3 } 
+declare void @llvm.tra()
+
+
+declare i32 @llvm.nvvmi29teb(i3,
+ 
+ 
+ i32)
+
+ de

@@ -1,0 +1,12 @@
+
+
+
+define <8 x i8> @vabss8(<8 x i8>* %A) nounwind {
+
+
+	%tmp1 = load <8 x i8>, <8 x i8>* %A
+	%tmp2 = call <8 x i8> @llvm.arm.neon.vabs.v8i8(<8 x i8> %tmp1)
+	ret <8 x i8> %tmp2
+}
+
+define <4 x i16

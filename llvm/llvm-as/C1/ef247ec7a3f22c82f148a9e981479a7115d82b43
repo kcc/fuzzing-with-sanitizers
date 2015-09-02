@@ -1,0 +1,61 @@
+ 
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+         :                 `               inlinedAt: !DILtoaicon(line: 12, scope: !3))X
+;  ret i32 %sum,eclare  !dbg !DILocation(l:ie n13", scope: !3)
+}
+
+def%s3 =type %.0  
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+!0 = !DIBasicType(tag: DW_TAG_base_type, name: "name", size: 18446744073709551615, align: 184
+
+
+de46744073cla6re 

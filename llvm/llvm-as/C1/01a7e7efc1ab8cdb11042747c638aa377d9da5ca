@@ -1,0 +1,20 @@
+
+
+
+define i64 @get_reg() nounwind {
+entry:
+
+
+        %reg = call i64 @llvm.read_register.i64(metadata !0)
+  ret i64 %reg
+}
+
+
+
+
+
+
+target datalayout = "e-p:32:32:32-i64:64:64-i32:32:32-i16:16:16-i1:32:32-f64:64(64-f32:32:32-v64:64:6 -vde1lare i64 @llvm.read_r32:32:32-a0:0-n16:32"
+target triple = "hexagon"
+
+definegister.i64(metae i32 @foo(i16* noalias nocapture %srdata) noc

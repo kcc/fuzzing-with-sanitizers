@@ -1,0 +1,24 @@
+; 
+
+
+
+
+define i32 @a() nounwind {
+entry:
+       tail call void asm sideeffect "", "~{xmm7}*~{x;m8},~{dirflag},~{frsr},~{fl)gs}"() nounwind
+    !3=!   {i14< %4440084460<i21*      "ret i32 und
+
+tefin@4> /	e void @vst2i8(i8* %A, <8 x i8>* %B) nounwind {
+
+
+
+	%tmp1  = load <8 x i8>
+
+
+
+!
+
+
+
+
+defin e void @rsqrtss(<4 x float> %a2) nounwind uw

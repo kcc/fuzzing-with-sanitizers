@@ -1,0 +1,10 @@
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+define void @bar(!_ $$__J__J_$$$_V_$$_J___$$qp__q_p__; ={!) 3'  !dbg

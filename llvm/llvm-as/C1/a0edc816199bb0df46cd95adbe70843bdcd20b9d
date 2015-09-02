@@ -1,0 +1,45 @@
+
+
+
+declare void @foo(i3)      !2=!  { %$4*@Z40}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bar(i32 %a, i32 %b) {
+untry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+       safestack ! 3=!  {!                                    inlinedAt: !DILocation(line:  !3=! 3  {};5; ?  %$4*@o}!0  +0 ! 12, sc3ope: !3))
+  ret i32 %sum, !dbg !DILocation(line: 13, scope !3)
+}
+
+define lin

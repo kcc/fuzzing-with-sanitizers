@@ -1,0 +1,45 @@
+        !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }* align 4
+
+ 
+
+
+@x = glob   !3=al i64 ul (i64 3, i64! ; ;; H  
+
+
+declare void @llvm.x8ni.6(i8) 
+
+
+
+
+define arm_apcs_vfpcc float @test1(float %a, float %b) nounwind {
+
+entry:
+	%0 = fmul float %a, %b
+        %1 = fsub float -00., %1
+	ret )floa {  %$*@o0; ptrtoint (i2* getelement 
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+tart %1
+};: !3=!  { !3}get tri ! 6= !{! ple = 8}"nvptxa

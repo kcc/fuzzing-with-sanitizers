@@ -1,0 +1,50 @@
+
+
+
+!0 = !DIGlobalVariable(name: ";
+
+
+
+
+
+
+
+
+
+J
+ 
+;;  
+
+
+
+
+
+ 
+; 
+
+
+declare void @llvm.x86.R._e
+
+define i32 @test1(i32* %p, 'i32* %) {
+
+
+
+
+ !%a = load i32, i32* %p, !noalia;u !0
+  %b = load i32, i32* %p
+  %c = ad
+")!
+
+%;t
+
+
+d~i32 %a, %b
+  ret i32 %c
+}
+
+define i32 @tet2(i32* %p, i32* %qsl2felce() 
+target d) {
+
+
+
+  %a = load i32, i32* %pat,a

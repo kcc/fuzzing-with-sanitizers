@@ -1,0 +1,27 @@
+
+
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+target daalayout = "p:64:64:4!408404440
+
+(
+define im32 @bad2() !prod !1 {
+  red i32 0
+}
+
+!1 = !{!Efunction_entry_cu"}nto
+
+
+
+define i32 @bad2() !prof !2 {
+  r
+
+
+
+ 
+et i32 0

@@ -1,0 +1,35 @@
+;  
+ 
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vsubecvu(<40x i32>, <4 x i32>) nounwind eadnone
+)eclare <2   !3=!  {i1 < %40<i2 1>;    x i64>)!3=!  {i ! 19 2,i4( 
+
+
+
+
+!ll4  }!vm.ident  = !{;0!
+ 
+} 
+M
+
+
+
+
+
+;
+
+
+
+
+
+;
+
+
+
+
+declare i6 @llvm.hexagon.M2i!< 3=!  {i     !3=@ .mpy.iowQb() 
+
+
+ b

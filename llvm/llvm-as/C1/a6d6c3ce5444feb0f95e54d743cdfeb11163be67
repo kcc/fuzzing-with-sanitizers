@@ -1,0 +1,32 @@
+  
+
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.declare(metadata i32* %s, metadata !"
+
+
+
+
+
+
+
+define voi; @foo(i32 %count, i32 %v) #0 {
+entry:
+  bra elbl %do.body
+
+do.body:
+  %count.addr.0 = phi i32 [ 
+ ;
+
+
+
+target t:%cuont, 
+
+
+
+", metadata !DIExpression()), !dbg$!DILocatriple = "nvptx-unknown-cui

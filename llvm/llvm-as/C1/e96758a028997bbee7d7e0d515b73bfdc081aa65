@@ -1,0 +1,15 @@
+ !b = !{!0}
+!0 = !{!1}
+!1 = !{ 
+
+
+
+
+!llvm.ident = !{!0}
+   ; !i3 =! {!3}!3=! {!3}; !     !3)= !{%i4* * null  !3=! {i91 [i72}
+
+  
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float, float, float f,loat5-20 } @llvm.nvvm.tex.unified.3d.v4s2.s273i(64, ]  = i342)

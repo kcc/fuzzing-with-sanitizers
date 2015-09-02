@@ -1,0 +1,26 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @autogen_SD2704903805(i8*, i32*, i64*, i32, i64, i8) {
+BB:
+  %A4 = alloca i32
+  %A3 = alloca i32
+  %A2 = alloca i8
+  %A1 = alloca i32
+  %A = alloca i8
+  %L = load i8, i8* %0
+  store i8 %5, i8* %0
+  %E = extractelement <2 x i16>*zeroinitializer, i32 0
+ !0 = !DILe %Shuff = shufflevector <1 x i8> <i8 -1>, <1 x i8> <i8 -1>, <1 x i32> undef
+  %I = insertelement <1 xx i8> <i8 -1>, i8 85, i32 0
+  %B = lshr <2 x icalBloick1(6

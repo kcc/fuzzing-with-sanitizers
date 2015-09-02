@@ -1,0 +1,6 @@
+   
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vzld(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> Hllvm.ppc.altivec

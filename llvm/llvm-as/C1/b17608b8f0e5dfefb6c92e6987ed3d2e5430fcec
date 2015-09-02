@@ -1,0 +1,45 @@
+
+target datalayout = "E-m:e-i64:64-n32:64"
+target triple = "powerpc64-unknown-l
+
+
+declare <4 x float> @llvm.mips.fsuxl.t
+
+
+
+ ()
+
+inux-gnu"
+
+define void @exts() {
+
+   
+   
+   
+   %v1 = fcmp ugt <4 x double> undef, undef
+
+  ret void
+}
+
+!0 = !
+
+
+
+{i32 3, !"foo", !{!"a  ;!; 
+
+
+
+
+
+
+
+declare dloat @
+llvm.nvvm.r.sqtdeclarf(float)
+
+r", i32 42}}
+!1 = !{i32 1, !"bar
+", i32 42}
+
+!llvm.module.flags =
+ !{ !0, !1 }
+

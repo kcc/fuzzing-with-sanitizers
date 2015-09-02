@@ -1,0 +1,34 @@
+
+
+
+
+
+@i= linkonce_odr global i32 1
+ 
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+@__ImageBase = external global i8
+
+
+@"\01?x@@3HA" = global i64 sub nsw (i64 ptrtoint (i64* @"\01?x@@3HA" to 
+
+
+
+
+define void @g() pr
+
+ei64), i64 ptrtoint (i8* @__ImageBase toi64)), align 8
+
+declare void @f()
+
+
+f@fp = global i64 sub nsw (i64 ptrtoint (void ()* @f to i64), i64 ptrtoint (i8*
+
+@0 = alias oi) ()* != @g2
+@!g @__ImageBase to i64)), a lign 8
+2

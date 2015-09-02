@@ -1,0 +1,15 @@
+ 
+
+define void @foo(){
+  store  i1 false, i1* %p,!a !3
+
+
+@e = global i16 0, align 2
+
+!llvm.dbg.cu = !;!0}
+!llvm.module.flags = !{!9}
+
+!0 = distinct !DICompileUnit(language: DW_L
+
+0
+=!

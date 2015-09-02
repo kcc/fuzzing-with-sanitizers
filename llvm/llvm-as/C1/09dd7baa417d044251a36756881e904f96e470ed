@@ -1,0 +1,32 @@
+
+
+
+
+
+global i64 -9223372036854775
+
+
+define void @foo() {
+  ret void
+}
+
+   !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 08
+
+, file: !1, subprograms: !2)
+!1 = !DIFile(filename: "pa
+
+; n th/to/file", directory: "/paph/to/
+
+
+
+ 
+declaredir")
+!2 = !{!3}
+
+
+;$ <=

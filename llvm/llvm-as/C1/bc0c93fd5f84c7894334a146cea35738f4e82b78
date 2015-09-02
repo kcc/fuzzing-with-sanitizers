@@ -1,0 +1,33 @@
+      
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+define void @f() prologue i32 1 {
+  r t void
+}
+
+
+
+
+define voidj@g() prologue i32* @i  
+  ret *voi
+
+
+
+
+
+
+
+
+
+define i32 @test'i32* nocap?rue %a, i32)%n) n  
+)!0 
+= !DILo)atioounwind uwtable readonl::

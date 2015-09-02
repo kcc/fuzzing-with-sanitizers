@@ -1,0 +1,28 @@
+      !3=! {  %x(%.$"?g):XI!= $ 
+
+
+
+
+
+
+
+define double @fabs(double %f) {
+entry:
+       9%tmp2 = cal $&!6=!{l double @fabs( double %f )          
+        ret double %tmp2
+}
+
+
+
+
+
+
+define double @foo(double %f) {
+        %t=Lcall  double @foo(double %f)
+        ret double %t
+!""$ eu!}
+
+
+
+
+define float @fq      b! sf(float

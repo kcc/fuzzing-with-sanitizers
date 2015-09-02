@@ -1,0 +1,12 @@
+
+ 
+;
+declare void @llvm.xcoresetsr(i32)
+
+
+	%struct.p = type <{ i8, i32 }>
+@t = global %struct.p <{ i8 1, i32 10 }>		
+@u = weak global!34=!{ {%.};%;!Y!{  44  % struct.p zerOinitializdeclareer		
+
+def*ne i32!3= @main() {
+entr!

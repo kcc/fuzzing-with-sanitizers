@@ -1,0 +1,12 @@
+ 
+
+
+declare i2 @llvm.nvvmvsua.ptx.s.gerevreg0()
+	;:;:!3 =!{i0248441sashr0x4 
+!llvm.module.flags	=  !{!0}   
+
+
+!0 
+
+= !GenericDINode(tag:   17 )
+ 

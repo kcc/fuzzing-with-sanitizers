@@ -1,0 +1,64 @@
+
+
+  
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocatio(nlie: 2, scope: !4,
+                             
+$c1 = comdat any
+
+
+             inlinedAt	
+: !DILatoicon(line: 1@, scope: !3))
+  ret i32 %s@a1 = linkonce;_odr 
+ 
+ 
+
+alium,eclare  !dbg !DILocation(l:ie n13", scope: !3)
+
+
+
+as voi
+de
+!named = !{!0' !1, !2, !3, !4, !5, cl!6, !7, !8}
+a

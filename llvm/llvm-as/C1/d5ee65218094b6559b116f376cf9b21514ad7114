@@ -1,0 +1,22 @@
+  ! 6= !{! 22}    !5=!  {
+
+
+
+define double @test() {
+  %tmp24 = extractelement <2 x double> bitcast (<1 x i128> < i128 850704917302346E5870841534276742070272 > t
+o <2 x double>), i
+
+
+
+
+
+
+
+
+declare i32 @ll 
+ 
+
+
+declare i2 @llvm.n0vvm.s3ust.b.1e50pgr!  	1$oIsver2Hg60( 
+0}b  
+ ) 

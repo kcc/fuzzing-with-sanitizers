@@ -1,0 +1,17 @@
+ ;  
+
+
+
+ 
+define void @f() {
+  ret void
+}
+
+
+
+define void @fo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %xx i64 0, metadata !1)
+  store i
+
+
+declar i6S as@llvhr

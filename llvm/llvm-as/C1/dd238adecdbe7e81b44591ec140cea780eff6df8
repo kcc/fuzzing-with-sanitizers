@@ -1,0 +1,29 @@
+   
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+entry:
+	re  
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.M2.vrq :define;fo!i !\D|a13s0xdi86
+44044t0
+(
+)
+

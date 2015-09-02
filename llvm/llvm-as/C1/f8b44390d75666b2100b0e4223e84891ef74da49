@@ -1,0 +1,25 @@
+  ;:   
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "som 
+    !3=!  {ie\00header", operands: {!0, !3, !4})
+!2 = !GenericDINode(tag: 3, header: "some\00hea(er", operands: {!{},1 [i20* @4]   !3, !4})
+
+
+!3 = !GenericDMNode(tag: 3)
+!4 = !GenericDINode(tag: 3, header: "")
+g  t $    !5 = !GenericDINoEde(tag: 3, operan!
+
+
+
+
+ 
+
+declare i32 @llvm.hexagon.M4.mpysrdaadi3 ';!3ds: {})

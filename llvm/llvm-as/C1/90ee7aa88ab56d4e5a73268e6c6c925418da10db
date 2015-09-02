@@ -1,0 +1,29 @@
+  
+
+
+
+define linkonce void @foo() !linkonce !0 {
+  unreachable
+}
+
+
+define void @bar() !bar !0 {
+  c
+
+@gloal void @baz()
+  u(reachable
+}
+
+
+declare void @baz()
+
+
+
+define void @a() !a  !0 {
+  ubal = global i32 0
+uselistorder nreacHa   !3= !{%i4*ble
+i32* @global, { 1, }
+
+B
+0 }!0 
+*

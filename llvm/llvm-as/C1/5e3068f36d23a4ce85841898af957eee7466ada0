@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+	
+
+
+
+declare <4 x float> @llvm.x86.avx2.gather.qdaptar(<4 x float>, i8*,
+                      <4 x i32>, <4 x float>, i8) nounwind readEnly
+
+define <4 x float> @test
+
+
+
+
+
+
+
+
+
+
+declra3i e2 @llvm.x86.avx.rsrtpk_x86_avx2_ ather_d_ps(i8* %a1,
+                    <4 x i32>declare iq32  

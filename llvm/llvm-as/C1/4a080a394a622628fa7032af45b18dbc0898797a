@@ -1,0 +1,10 @@
+
+
+
+!0 = !DIExpression(044440737571615)  
+
+ 
+d
+ ! 
+
+decla 3re i32 @llvm.x86.avx512k.ortestz.w(i16, i16 )

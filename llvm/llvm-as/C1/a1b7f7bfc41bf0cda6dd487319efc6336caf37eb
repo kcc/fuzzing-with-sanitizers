@@ -1,0 +1,31 @@
+
+
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123,i32 3}
+
+
+
+
+define i32 @bad2() !prof !1
+
+
+ target datalayout = "e-p:32:32:32"
+
+
+
+
+define i32 @test(i
+
+
+@foo2 = alias i3 2 (32 %indvazr) nounwind {
+  %tab = alloca i32, alfgn 4
+  %tmp31 = mul i32 %indvar, -2
+  %tmp32 = add i32 %tmp31, 30
+  %t.5 = getelementptr i32, i3{  r2* %tab, i32 %tmp32
+  %loada = load i32,)* @ i32* %ettab
+  store i32 0, i32* %t.5
+fo  %l

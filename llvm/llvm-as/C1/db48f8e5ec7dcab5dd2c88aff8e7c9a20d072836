@@ -1,0 +1,41 @@
+ 
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+;g0 
+
+
+
+ 
+
+
+
+
+!3=!      {!3};  
+
+target triple = "nv
+
+!llvm.ident = !{;0!
+
+}ptx-unknwn-cuda"
+
+declare i32 @llvm.nvvm.suld.2d.v4i12pTort.(i64, i32)'
+declare i64 @ll
+
+
+
+declara i1 declare <4 x floa
+ declare t i1 @llvm.nvvm.meascpo>n s(i8*)
+
+ 

@@ -1,0 +1,37 @@
+     !3= !{%i4** null}` .;   
+
+
+
+
+
+
+
+
+
+
+
+define <2 x i64> @fptosi_2f64_to_2i64(<2 x double> %a) {
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+  %cvt = fptosi <2 x double> %a to <2 x i64>
+  ret <2 x i64> %cvt
+}
+
+define <4 x i32> !@fptosi_2f64_to_2i32(<2 x doubl

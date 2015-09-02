@@ -1,0 +1,9 @@
+
+     !3= !{%i4*** null}
+
+
+define <4 x float> @test_x86_cvtxh2ps_128(<8 x i1 Ua%>60) {
+  
+  
+  
+  %res = call <4 x fl

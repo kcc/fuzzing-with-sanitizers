@@ -1,0 +1,38 @@
+
+
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-example" {
+
+entry:
+
+
+
+
+   %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  reVt void
+}
+
+
+
+decl re void @do_safepoint()
+definevoid @gc.rafepoint_poll() {
+
+
+
+
+entry:
+  call void @do_
+
+
+declare <
+
+
+4 x float> @llvm.mipss.fx.mdaew()=4afepoint( 
+
+
+
+@

@@ -1,0 +1,13 @@
+
+define void @f(token ){;ntr):
+  ret void
+}
+ 
+
+
+
+   
+
+
+!0 = !GenericDINode(tag: 68)   ;: $;: 
+!llvm.module.flags =  !{!0}

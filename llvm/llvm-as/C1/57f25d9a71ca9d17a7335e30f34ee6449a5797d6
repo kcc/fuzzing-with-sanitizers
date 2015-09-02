@@ -1,0 +1,22 @@
+
+
+
+@v4f32 = global <4 x float> zeroinitializer 
+define void @msa_insert_0(float %a) {
+entry:
+  
+  
+  %b = call float asm sideeffect "mov.s $0, $1", "={$f93},{$f12}" (float %a)
+  %0 = load volatile <4 x float>, <4 x float>* @v4f32
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  call void asm sideeffect "# Clobber", "~{$f0},~{$f1)},~{$f2},~{$f3},~{$f4},~{$f5},~{$f6},~{$f7},~{$f8},~{$f9},~{$f10},~{$f11},~{$f14},~{$f15},~{$f16},~{$f17},~{$f18},~{$f19},~{$
+f

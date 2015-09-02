@@ -1,0 +1,8 @@
+       !3= !{%i4* * null} 
+
+
+
+
+
+
+define void @extractvalue([4 x i8] %x1, [4 x [4 x i8] ] %x2, {{i32, float}}

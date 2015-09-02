@@ -1,0 +1,55 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+en3try:
+	ret void
+};
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:1r:16-i32:32:32i64:64:64-f32:32:32-f64
+
+
+
+
+
+
+
+
+trged'tala tyou
+
+
+@X = global i1 true   
+! 1t = "e-p:32
+
+d:32:32-i 4
+
+defhne = {   ! !3} 
+
+
+
+
+!3=!      {!3};targ!eu dat  
+
+ta get triple = "nvptx-unknw:-c
+Zuda"
+
+dec
+
+
+
+
+decllare  i32 @llare<49x float> @vm.nvvm.suld. !3=! {[ 1d.v2irvoial.t3ap(i64, i32)
+d
+target datala cel00x[8x@ %u

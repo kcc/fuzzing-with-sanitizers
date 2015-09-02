@@ -1,0 +1,37 @@
+   
+
+
+
+
+
+
+define void @f() gc "hadowstack" {;netry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:6
+ 	 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 4-f8declcre
+d= !DIBasicType(name: "i*t", si:ze: 32,H align: 32, encoding :WDA_TE_signed)
+
+
+
+
+!2    !3=   !!{%-=6*@ 

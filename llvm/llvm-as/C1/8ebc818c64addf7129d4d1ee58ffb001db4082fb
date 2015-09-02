@@ -1,0 +1,26 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.mb6Qips()target triple = 
+"nvptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.2d.v4F3r.s32(i64, i32)
+declare i64 @  !0e
+=!{<  {  %
+.llv}de

@@ -1,0 +1,23 @@
+
+	
+
+
+
+
+
+
+ 
+@i = linkonce_odr global i3 12
+
+
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+*

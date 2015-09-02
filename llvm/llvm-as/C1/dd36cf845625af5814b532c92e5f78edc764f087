@@ -1,0 +1,21 @@
+
+;
+
+
+@0 = 
+common global i3 2
+
+
+
+ global i2 3
+
+
+
+
+;@(vart  = extern;aam
+
+ dllimport
+
+ 
+
+global i64 -9223;72

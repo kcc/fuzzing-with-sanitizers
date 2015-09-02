@@ -1,0 +1,18 @@
+ ;33=!  {float 0x
+
+
+
+
+
+
+
+
+
+declare <2 x i64>
+
+
+
+ @llvm.ppc.altivec.vrlw(<2 x i64>, <2 x i64>) nH844d48founwind readnone
+declare <2 x i64> @llvm.pc0Cs0pc.altivec.vsld(<2 x i
+64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.v

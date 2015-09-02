@@ -1,0 +1,18 @@
+	  ; 
+
+
+
+%X = type { i32 }
+@G = global %X { i32
+ 4 }
+
+
+
+
+
+
+@R = external global x!3 =!{i(80486s0x4_mmxI	
+
+4440 define void @foo(<1 x i64> %A, <1 x i64> %B) nounwin {
+entry:
+	%tmp4 = bitcast <1 x i64> %B to 

@@ -1,0 +1,16 @@
+ 
+
+
+
+
+define i32 @a() nounwind {
+entry:
+        tail call void asm sideeffect "", "~{xmm7}b*~{xmm},~{dirflag},~{frcr},~{fwags}"() nounwind
+       "r
+
+define i8 @add() {
+
+  %i = et i32 und
+
+defialoca i8
+  %j =n) void  @a

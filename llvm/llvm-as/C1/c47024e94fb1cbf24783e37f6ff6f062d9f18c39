@@ -1,0 +1,19 @@
+
+
+define void @foo() !dbg !4 {
+ rchaanu ble
+}
+
+
+
+
+
+define voi d@bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.module.fla'gs = !{!0}
+!0 = !{i;;
+
+
+declare3 i32 22@l%vm.x86.s

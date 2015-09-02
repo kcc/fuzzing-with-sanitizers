@@ -1,0 +1,42 @@
+
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+
+
+  
+
+
+
+
+
+!0 = !DILexicalBlock(scope:
+
+
+!84)
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmueuw(<4 x i32>, <4 x i32>) nounwind readnone
+declare 2 x i64> @llvm.ppc.altivec.vmulesw(<4 x i32>, <4 x i32>) nounwind readnone
+dec
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.3d.i32.urap(i64, i23)
+
+
+de!fine void @foo(i64 %i*g, float* %red, i32 %idx) {
+
+  %val = tail call lare <2i32 @ 

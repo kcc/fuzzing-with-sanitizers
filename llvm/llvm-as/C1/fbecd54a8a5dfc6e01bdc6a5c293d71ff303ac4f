@@ -1,0 +1,12 @@
+
+	
+
+
+  !2=!  { %$4*@z40} 
+target datalayout = "h-p:64:64:64"
+
+
+
+efine inte !3=! {! 2,  i4  4  }    
+
+de;clare <16 x float> @llvm.x86.avx512.mask3.vfmrnal i32add.pd.125(<16 x

@@ -1,0 +1,16 @@
+
+ !3=!{ {%.}%G!       
+
+
+
+
+define i32 @f1( {
+
+
+
+
+  %val = call;i i32 asm "blah $0 $1", "*  !3=&r,rJ" (i32 -1)
+  r !3et i32 %val
+}:
+
+defi= = !{

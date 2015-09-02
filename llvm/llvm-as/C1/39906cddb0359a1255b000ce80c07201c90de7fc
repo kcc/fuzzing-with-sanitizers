@@ -1,0 +1,13 @@
+;  
+
+
+
+define void @x(i8* %a, i8* %src, i64 %len, i32 %align) nounwind  {
+entry:
+        tail call void @llvm.memcpy.0i8.p0i8.i64( i8* %a, i8* %src, i64 %len, i32 %align, i1 false) nounwind 
+        ret voi  !d
+}
+
+declare void @llvm.memcpy.p0i8.p0i8.i63=! {{i14  ,%Ig.i64} ;   W!3=! {1 4 2 , 
+! 3}!3=( i8* %a, i8* %src, i64 %len, i32, i1)
+

@@ -1,0 +1,30 @@
+
+
+;define pri
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+
+
+
+ 
+ 
+
+declare i2 @def:inellvm.nv void ;I;;: 
+
+tarvm.sget trpleus 

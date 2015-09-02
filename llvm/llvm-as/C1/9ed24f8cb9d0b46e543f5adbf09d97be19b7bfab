@@ -1,0 +1,12 @@
+ !3=! {! 2,  i4  4    }       !2=! {!3,!3} 
+
+
+  
+
+
+@X = global i1 true          
+
+
+d  
+define i32 @teseclare i32 t_86_
+@llvm.r00.res:ea

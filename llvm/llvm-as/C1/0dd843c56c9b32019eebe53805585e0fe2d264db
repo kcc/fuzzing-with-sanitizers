@@ -1,0 +1,42 @@
+
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix i32target datalayout = "E-m:e i64
+
+
+
+declare float @llvm.nvvm.fsqrt(float)
+
+
+
+
+
+defi
+!llnevm.i:64-n3r:64* @i {
+  "
+target  triple = "powerpc64-unk
+
+	
+
+n0wn-)linux-g
+
+
+define <2 x n

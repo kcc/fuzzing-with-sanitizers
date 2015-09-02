@@ -1,0 +1,46 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarck" ;
+entry:
+	ret void
+}
+
+
+
+
+
+
+
+
+target datalayo%s3 =type %.0 
+
+
+define <16 x i16> @test_lvm_x86_avx2_pmovsxbw(<16 x i8>* %a) {
+
+
+  %1 = load <16 x i8>, <16 x i8>* %a, align 1
+  %2  = cut = "e-q:64:64:64-i1:8:8-i8:8:8-i16:1r:16-i32:32:32-i64:64:64-f32:32:32-fall <16 x i16> @llvm.x86.avx2.pmovXzbw(<16 x i8> %64
+
+
+
+1)
+  ret <16  !x i16> %2
+}
+
+define <
+
+
+
+
+targ:ed'tala tyou
+
+
+HX = globa  i1 true   8 x i32>
+! 1t 

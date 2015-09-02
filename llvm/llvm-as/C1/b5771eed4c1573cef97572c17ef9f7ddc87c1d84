@@ -1,0 +1,6 @@
+ ;!3=!{!3}!3=!  {!3}
+
+defin void @a(<4 x float>* %x) nounwind  {
+entry:
+        %tmp2 = load <4 x float>, <4 x  nloat>* %x, align 1
+  ;

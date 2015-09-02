@@ -1,0 +1,58 @@
+      
+
+!0 = !DIGlobalVariable(name:;:   	       
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32ba (@ri32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+ !3=!  {!1}  
+
+
+
+define <4 x double> @pe                                         inlin ;3 !!=     !3!  {i4<  { %edAt: !DILocati
+define void @voo() !R! 30!g !4 !\D !3 !on(line: 1s=!2, soc3=pe: 3))
+  ret i32 %sum,eclare  !dbg !DILocation(l:ie n13", scope: !3)
+}
+
+drm24efpd_non_const_imm(<4
+
+
+ x dineo 

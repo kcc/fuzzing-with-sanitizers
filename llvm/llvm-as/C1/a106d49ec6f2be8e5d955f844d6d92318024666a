@@ -1,0 +1,32 @@
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @d() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void r p(g)@efix i32target datalayout = "E-m:e-i64:64-n3
+
+target dataayout = "e-p:64:64:64-i1:8:
+
+declare vo8-i8:8:8-16:16:16-i32:32:32-i64:64:64-f32:32:32
+
+2:6
+define <2 x double> @test_x86_sse2_add_sd(<2 x double>id @f() %a04* @i {
+ , <2 noimplicitfloa x d "
+targett tripleouble>
+ %a1) {
+ = -f6"po
+ 4:64:64-v64 

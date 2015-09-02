@@ -1,0 +1,71 @@
+     
+
+
+
+;: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define { i64, i64, i64, i64 } @f1() {
+
+
+
+
+
+
+  ret { i64, i64, i64, i64 } { i64 0, i64 1, i64 2, i64 3 }
+}
+
+
+define { i64, i64, i64, i64, i64 } @f2() {
+
+
+
+
+
+
+
+  ret { i64, i64, i64, i64, i64 } { i64 0, i64 1, i64 2, i64 3, i64 4 }
+}
+
+
+define { double, double, double, doubdeclare i32 @llvm.hexagon.A4.cmpbgtui(  
+i322
+ )
+
+
+
+
+
+!  !3=!le } @f3() {  {
+
+
+
+
+
+
+
+
+
+
+  ret { double, double, double, double }
+      { d ouble 1.0, doub
+
+le 2.0, double 3.0, double 4.0 }
+}
+
+
+define { double2

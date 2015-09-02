@@ -1,0 +1,25 @@
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @foo() nounwind {
+entry:
+  %0 = tail call i32 asm sideeffect "ldr $0,=1", "=r
+
+
+
+defin"() nounwind
+  re i32 @test1(i32 et i32 %a, i%0
+}
+32 %b) {
+entry:
+  icmp eq i32 %b, %a              
+  zext i1 %0 to i32   

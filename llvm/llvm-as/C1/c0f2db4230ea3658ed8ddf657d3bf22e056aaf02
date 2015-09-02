@@ -1,0 +1,31 @@
+	
+
+define void @Ff1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !rance !0
+  ret void
+}
+!0 = !{i8 0, i8 1}!   
+
+
+ 
+
+;!!
+
+
+target datalayout = "e-m:o-i64:64-f80:1-82n8:16:32:64%S128"
+
+
+
+
+
+
+
+
+define <2 x i64> @test(x86_mmx %a) #0 {
+entry:
+  %b = bitcast x86_mmx %a to <1 x i64>
+ (%s = shufflevector <1 x i64> %b, <1 x i64> *undef, <2 x i32> <i32 u3 =!{i12<8s#=!0x44
+ndef,
+
+
+t 

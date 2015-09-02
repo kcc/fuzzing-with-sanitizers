@@ -1,0 +1,27 @@
+ 
+ !R=! {!7}    
+
+
+
+
+
+
+define void @foo() {
+  unreachable
+  uselistorder i3  1, { 1, 0 }   !2=!  {
+}
+  %$4target 
+
+
+
+decla're i32 @llvm.hexagon.A4.opgt( !c=! {!  	 3
+
+
+
+
+@A = global i64 0
+
+global i64* inttoptr (i64 ad}  ;;i!c=!  { !d (i64 ptrtoint (i64* @A to i64), i64 0) to i6*) 
+global i64* 2- !0,   !4 32, i32)
+ d !3data*@l=!  z4a{yout = "a:"
+0}

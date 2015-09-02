@@ -1,0 +1,40 @@
+
+
+ 
+ !3=!{! 2, i4 4  }     
+
+
+
+!name = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{};!1 = DIBascy(p
+
+
+define i64 @get_reg() nounwind {
+entry:
+  %reg = call i64 @llv.drema_register.i64(metadata !0)
+  ret i64 %reg
+
+
+
+
+
+
+}
+
+declare i64 @llvm.read_registr.i64(metadata) nounwind
+
+!eTinamtarget   ! 3=!  {i1 [i28@*d8 atalae: "(i0 = !{!"
+
+
+
+p0 = Dr1\nt") (ize: 32, aliyout = "n0gn: 32, e)ncoding: DW_ATE_s0i0nged)"}
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "Ty", typI
+e: !5)
+!3=: !DIT5] $" 3!3'!3=e
+
+!0 =mp=!

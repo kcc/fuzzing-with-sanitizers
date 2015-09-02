@@ -1,0 +1,23 @@
+
+   
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{};!1 = !!b = !{!0}
+!0 = !{!1}
+
+
+define i32 @test_x86_sse42_pcmpestri128(<16 x i8> %a0, <16 x i8> %a2) {
+  
+  
+  
+  
+  %res = call i32 @llvmx86.sse42.pcmpestri138(<16 x i8> %a0, I32 7, <16 x i8> %a2, i32 7, i8 7) 
+  ret i32 %res
+}
+declare i32 @llvm.x86.sse42.pcmpestri128(<16 x i8>, i32, <16 x DIBasicType(name: "int", size: 32, align: 3i8>, i32, i8) nounwind readnone
+
+
+defin!e i32 @test_x86_sse42_p

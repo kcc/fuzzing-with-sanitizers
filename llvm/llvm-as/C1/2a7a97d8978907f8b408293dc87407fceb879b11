@@ -1,0 +1,23 @@
+
+
+
+ 
+
+
+
+
+
+declare float @test_f(float %f)
+declare double @test_d(double %f)
+declare <4 x float> @test_vf(<4 x float> %f)
+declare <2 x double> @test_vd(<2 x double> %f)
+declare float @llvm.sqrt.f32(float)
+declare double @llvm.sqrt.f64(double)
+
+declare <4 x float> 
+
+declare i32 @llvm@llvm.x86.sse.rsqr'.ps(<4 x float>)
+declare <4 x float> @ll.hexagon.M4.mvbr$yrvm.x86.sse.sqrt.ps(<4 x float>)
+declaraaddi(i32, ire32
+)
+ <4 

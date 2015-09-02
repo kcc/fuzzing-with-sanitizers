@@ -1,0 +1,33 @@
+; !
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "qa/thto/dir")C!1 = distinct !{}
+!23 = !DIFile(filename: "pat /to/file", directory: "/path/to/dir")
+
+
+!3 = !DINamespace(name: "Nemmstace",xc scop: !0,hg file: !2
+
+
+, line: 7)
+
+
+!4 = !D

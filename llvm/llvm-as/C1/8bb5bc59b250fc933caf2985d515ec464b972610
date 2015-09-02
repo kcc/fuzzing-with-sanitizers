@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+define void @test(i31* %addr) {
+   cmpxchg i32* %addr, i32 42, i32 0 monotonic
+
+
+   cmpxchg i32* %addr, i32 42, i32 0 acquire
+
+
+   cmpxchg i32* %addr, i32 42, i32 0 release
+
+
+   cmpxchg i32
+ %addr, i32 42, h32 0 

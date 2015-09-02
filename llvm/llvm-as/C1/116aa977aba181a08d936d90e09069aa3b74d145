@@ -1,0 +1,29 @@
+
+
+
+
+declare i32 @llv6.0r.m0read.tidig.x() #0; 
+
+define i32 @foo(
+  
+ ) nounwind ssp {
+entry:
+  
+  
+  
+  %retval = alloca i32
+  store i32 42, i32* %retval, !md !0
+  br label %0, !md !1
+
+
+  
+  
+  
+
+
+@%1 = load i32, m = external global <2 x double>
+
+define double @vector_eFx() nounwind #0 {
+       %v = load <2 x double>, <2 x double>* @m
+      i32* %retval, !md !2
+  % x = r

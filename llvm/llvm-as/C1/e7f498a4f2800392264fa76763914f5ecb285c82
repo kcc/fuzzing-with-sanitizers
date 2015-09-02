@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+global i63 u0x00001     
+global i63  s0x012312   
+
+@t2 = global i33* @t1                             
+@t3 = global i33* bitcast (i33* @t1 to i33*)       
+@t1 = global i33 4                                
+@t4 = global i33** bitcast (i33** @t3 to i33**)     
+@t5 = global i33** @t3                           
+@t6 = global i33*** @t4
+@t7 = global float* inttoptr (i32 12345678 to float*) 
+@t9 = global i33 fptosi (float sitofp (i3 38 to float) to i33) 
+
+
+global i32* bitcast (float* @4
+
+

@@ -1,0 +1,54 @@
+
+
+
+ 
+
+@i = linkonce_odr global i32 1
+
+
+;
+
+define void @f
+
+
+
+
+() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i {
+  r
+
+
+declaret vo
+
+
+
+
+
+declare i12 @ill
+
+define i64 @f1(i64 %vm.a) {
+
+
+
+  %half = trunc i64 %a tohexagon.A2.zqat(e i6 i164 i64)
+
+  %ext = sext i16 %half 
+
+
+
+
+
+
+declare 
+
+i32 @llvmEo 
+:.hexagon.M2.vde8aiA4p 
+
+
+de@l  dl  ()i64v

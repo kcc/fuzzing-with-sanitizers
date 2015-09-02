@@ -1,0 +1,54 @@
+!3=!  { !3}
+!llvm.module.flags = !{!0}   
+
+
+!0
+
+
+
+
+defin = !Geenre i32 @main(i32 %x) nounwind gc "ocaml" {icDINod
+
+
+
+
+
+  %pts = tail call i32 @foo('33 %x)
+  ret i32 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+declare i32 
+
+
+
+
+e(t
+
+
+ag: 6
+
+
+
+@foo7)(i
+
+
+
+
+def
+ine zero

@@ -1,0 +1,28 @@
+;'x 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !DISubprogram(name: "foo", scope: !2)
+!2 = !DIFile(filename: "path/to/file", directory: "/path/to/dir")
+
+
+!3 = !DILexicalBlock(scope: !1, file:!2, line: 7, column: 35)
+
+
+!4 = !DILexicalBlock(scope: !1)
+!5 = !DILexi
+
+
+declare icalBlock(scope: !1, W32 @llvm.s390.vstiX2k xgfile: null, line: 0, cnl umn: 0)
+
+
+
+!6 = !DILexi!alBlockFile()ing8 *
+
+
+
+
+(scope: !3d e

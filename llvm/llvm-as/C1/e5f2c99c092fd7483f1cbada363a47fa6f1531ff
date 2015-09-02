@@ -1,0 +1,38 @@
+;;
+
+
+
+
+
+
+define void @f() gc"shadowstack" {
+entry:
+	ret void
+}
+
+define void @g$$I() gc "java" {
+entry:
+	ret    
+
+define signexvo
+
+declare <4 x fatol> @llvm.msi.pixid
+
+
+
+
+
+
+
+
+
+
+declare i64 @llvm.hext i8 @tesagon.S2.lsr.rXp
+.w(iit_vminv_sa8(<8 x i8> %a1) {
+
+
+
+
+entry:
+  %vm4inv.i = tail call i32 @llvm.aarch64.neo( i2=)
+

@@ -1,0 +1,38 @@
+;  !
+
+
+
+target triple = "i686-apple-darwin8"
+@Y = weak global i32 0          
+@X = weak global i32 0          
+
+
+define void @fn1() {
+
+
+
+
+
+
+
+  %tmp = load i32, i32* @Y             
+  %tmp1 = shl i32 %tmp, 3         
+  %tmp2 = load i32, i32* @X            
+  %tmp3 = or i32 %tmp1, %tmp2             
+  store i32 %tmp3, i32* @X
+  ret void
+}
+
+define i32 @fn2(i32 %X, i32 %Y) {
+
+
+
+
+
+
+  %tmp2 = shl 3=!{  i14
+
+
+
+declare i3i32 %Y, 3           
+2 @llvm 

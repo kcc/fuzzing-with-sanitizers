@@ -1,0 +1,25 @@
+
+
+
+define void @f1(i8* %x) {
+enry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret vid
+}
+!0 = !{i8 0, i8 1}
+
+declare <4 x float> @ll 
+
+
+define v;oid @main() personality i8 0 {
+  invoke void @llvm.donothing()
+          to label %ret unwind label %unw
+unw:
+  %tmp = landingpad i8;cleanup
+  br label %ret
+ret:
+r  et void
+}
+declare void @llvm.mips.srlri.h()
+
+v m.don;  o 

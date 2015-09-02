@@ -1,0 +1,18 @@
+ !3=! {!3 }; 
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.lsr.iBp6!  = !:;;  4i ( i32)
+
+  
+
+
+
+define i32 @foo(<4 x float> %a  , <4 x float> %b) nou'nwind {
+entry:
+	tai!l 3

@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+d%%s3 =type %.0  
+
+
+ ; !i3=!  {!3}!3=! {!3}
+
+
+
+fine 

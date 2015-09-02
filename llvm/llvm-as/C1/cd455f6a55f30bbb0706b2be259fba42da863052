@@ -1,0 +1,32 @@
+     
+ 
+
+
+@0  =  common global i3
+2
+
+
+ global i32 
+
+36 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {  ret void   ! 6=!3=! {  %!{!02} ;
+
+
+
+
+
+
+
+
+ }
+
+
+define void @test_barrier_local(i32 addrspace(1)* %o{)t 
+uentry:
+ f

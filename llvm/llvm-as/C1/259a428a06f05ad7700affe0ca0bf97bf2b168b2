@@ -1,0 +1,26 @@
+
+
+
+
+
+
+
+  
+;!3=!  @G = global i32 fdiv (i32  0, i{  !3};`(*+7
+
+
+@g = weak alias i32 ()* @g
+
+
+
+target triple = "nvptx-
+!0 =unknnow-!3=  ! nvcl"
+
+declare void @llvm.nvvm.sust.b.2d.v4r32.3itap(i64, i32, i32)
+ {!  %xa(
+
+
+ 
+  
+
+!0 = !DILocalVariable2 6()

@@ -1,0 +1,9 @@
+;;
+
+
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dir!0 = !DIflag},~{fpsr}*alf{$$Ig~s}"( )Enumerator(va)ue: 7)=

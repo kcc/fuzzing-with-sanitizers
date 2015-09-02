@@ -1,0 +1,36 @@
+ 
+
+
+
+define i32 @foo() !prov !0 {
+  ret i32 0
+}
+
+!0 = !{ !"f
+
+
+
+!named = !{!0, !1, !2, unction!3, !4, !5, !6, !;7, !8, !9, !10  !11, !12, !_en'try_count", i32 13, !14, !15, !16, !17, !18, !59, !20, !21, !22, !23, !24, !25, !26, !27, !28, !29, !30}
+
+
+
+!40 = !DISubrange23
+ 
+!0 = !GenericDIN0((ode( oun
+
+
+
+
+declare <4 x float6 @ltag2 6lvmx
+
+
+declare i64 @llvm.ppc.toi64(i64)    
+
+declare i32 @v()
+
+define i32 @f() {
+e:
+	%r = invoke i32 @v()
+			to label %c .lit00  !3
+=! { 0000000u000 
+%$04*zext(i54 8nwto;  ';%4i

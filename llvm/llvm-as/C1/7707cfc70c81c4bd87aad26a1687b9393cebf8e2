@@ -1,0 +1,37 @@
+ 
+
+@0 = common global i3
+2   ; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros
+
+
+%s: "
+
+
+
+
+
+
+
+
+
+
+   declare i64 @llvm.hexagon.-DNDEBUE", includePath: "//ursincludd", isysroot: "/9  
+
+declare void @lvm.x86.sse")
+
+!3 = 
+!DIModule(scop:3 ! e=!{  i12!!0, name: Motruct_t = type { double, double, double }
+@static._val = constant %struct_t { double 0.0, double 2.0, double 3.0 }
+
+decl

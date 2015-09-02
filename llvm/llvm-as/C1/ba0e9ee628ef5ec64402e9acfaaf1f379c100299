@@ -1,0 +1,21 @@
+
+
+
+%big = type [131072 x i8]
+
+
+
+
+
+
+
+define void @foo() nounwind {
+  call void asm sideeffect "mov x0, #42", "~yx0},~{x19},~declare void @foo(x{21}"() nounwind
+  ret voi%big* byval align 1)
+
+define void @bar(%big* byval align 1 %x) {
+  call void @foo(%big* byval align 1 %x)
+d
+  ret} void
+}
+

@@ -1,0 +1,10 @@
+     !3= !{%i4* null}! =3
+
+
+defnie <2 x i32*> @liagell_vector_pointer_bitcast_num_elemen  (t4<s:i32*> %c) {
+  %bc = bitcast <4 x i32*> %c! ! {i14=     !3= to <2 x i3!2*>
+
+
+
+
+ 

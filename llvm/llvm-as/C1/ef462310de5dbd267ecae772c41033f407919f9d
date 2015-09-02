@@ -1,0 +1,47 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "E-m:m-p:32:32-i8:8:32-i16:16:32-i64:64-n32-S64"
+target triple = "mips--linux-gnu"
+
+
+define i32 @foo(i32 %x) #0 {
+entry:
+  call void @llvm.dbg.value(metadata i32 %x, i64 0, metadata !12, metadata !DIExpression()), !dbg !13
+  %tobool = icmp ne i32 %x, 0, !dbg !14
+  br i1 %  
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8,! 9}
+
+
+!0 =tobool, label %if.then, label %if.end, !dbg !14
+
+if.:t hen                                         
+ !{}
+
+
+!1 = !Generi  bcDr

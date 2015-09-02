@@ -1,0 +1,62 @@
+
+
+declare void @llvm.gcroot(i8**, i8*)
+
+define void @g() {
+entry:
+	call void @f(i32 0)
+	ret void
+}
+
+define internal void @f(i32 %unused) gc "
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32% @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocationexample" {
+entry:
+	%var = alloca i8*
+	call void @llvm.gcroot(i8** %var, (line: 2, scope: !4,
+                     i8* null)
+	ret void
+}
+                 $   inlinedAt: !DILocation(li

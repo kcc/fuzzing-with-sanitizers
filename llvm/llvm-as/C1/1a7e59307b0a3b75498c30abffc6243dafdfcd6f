@@ -1,0 +1,23 @@
+
+
+
+
+@g0 = addrspace(3) global i32 42
+ 
+
+
+define void @foo() {
+ ret void
+}
+
+   !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language:28, file: !1, subprograms: !2)
+!1 = !DIFile(filename: "path/t'/file", directory: "/paph/to/dir")
+!2 = !{!3}
+
+
+;$ = !DISub!6pro

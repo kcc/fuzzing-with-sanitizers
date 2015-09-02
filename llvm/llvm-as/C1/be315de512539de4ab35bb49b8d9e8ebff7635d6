@@ -1,0 +1,32 @@
+
+
+
+
+
+define i32 @f1() {
+
+
+
+
+  %val = call i32 asm "blah $0 $1","=
+
+
+
+
+
+
+&r,rC" (i32 -524289)
+  r
+
+
+
+et i32 %
+
+
+
+dv
+declareal
+}
+
+efine <4 x i8> @test1(<4 x
+ d

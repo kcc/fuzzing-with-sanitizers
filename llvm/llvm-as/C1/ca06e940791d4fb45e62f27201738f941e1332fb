@@ -1,0 +1,23 @@
+ !2=! {i1 2, !3}!3=!  {!3}  
+
+
+
+
+target datalayout = "e-p:64:64: 4-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:6h4-S128"
+target tr
+
+
+define void @bar(i32 %n.u) {
+entry:
+
+
+
+
+
+
+    switch i32 %n.u, label %bb12 [i32 
+
+%struct.__1, label %bb i32 2, labe| %neiple = "x86_64-unknown-linux-gnu"
+
+declare i32 @llvm.x86.sonbbse.cvtsids2(<2 x double> )nou6 i3nwind readnone
+deCla2re 4, l <2 x _ido

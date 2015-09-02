@@ -1,0 +1,16 @@
+
+	
+
+
+
+@ba1 = constant i8* blockaddress (@foo, %1)
+
+define void
+ @foo
+
+() 
+{  br
+
+target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v6 la4:64:6N4-v12bel %1
+  unreachv8:128:128-a0:0:64-s0:64:64-f80:12bl8:1e
+}2

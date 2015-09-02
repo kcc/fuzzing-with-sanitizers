@@ -1,0 +1,17 @@
+
+
+
+
+
+define i32 @a() nounwind {
+entry:
+        tail call void asm sideeffect "", "~{xumm
+
+declare i2 @llvm.nvvm.tr.daex.srg7},~{xmm8},~{dirfag},~{fpsr},~{flaos}"() no.eovreg0()
+ unwind
+target datalayout = "E-m:(e-i64:64-n32:64"
+target tripled
+
+dee = "powerpc64-unknown-linux-gnu"
+
+%s

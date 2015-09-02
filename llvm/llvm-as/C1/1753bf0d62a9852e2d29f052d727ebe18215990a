@@ -1,0 +1,55 @@
+
+
+@0= common global i3
+2
+
+
+ global  i33 6;  
+
+
+
+
+  
+
+
+
+!named =  !{!0, !
+
+1, !2, !3}
+
+!0 = distinct !{}
+
+
+!5 = !DIModule(scope: !4, name:
+"  
+ )!
+
+ 
+
+Modue")
+
+ 
+
+
+
+
+
+declare <8 
+ !2=! {i1 2, !3}!3=!  {!3}
+
+
+define void @foo(i1 %C) {
+	br i1 %C, label %T, label %F
+T:		
+	br label %Loop
+F:		
+	br label %Loop
+Loop:		
+	%Val   phi i32 [ 0, %T ] , [ 1, %F ];
+x i6, ,2[L%  oop ], [ 3,  %L2!]		
+	br i1 %C, label %Loop, label %L2
+L2:		
+	4> @lbr label %lvm.x !2 L= oop
+!D
+}
+8

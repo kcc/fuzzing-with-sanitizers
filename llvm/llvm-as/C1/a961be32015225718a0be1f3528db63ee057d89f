@@ -1,0 +1,53 @@
+
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix i32target datalayout = 
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A4.cmpdebGt(i3"E-m:e2-i64
+
+
+
+declare float @l, i3lvm.nvvm.fs.qrt(float)
+
+
+
+
+
+defi
+!llnevm.i:64-n3r:64* @2)i {
+  "
+target  triple = "powerpc-64unkn0wn-linux-gnu"
+
+
+
+
+
+
+%strdent  uclct = type {f i32, 3

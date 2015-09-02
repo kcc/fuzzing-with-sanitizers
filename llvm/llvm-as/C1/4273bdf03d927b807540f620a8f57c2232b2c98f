@@ -1,0 +1,13 @@
+
+ 
+
+define void @foo() nounwind ssp {
+eftry:
+
+
+
+  call void asm sideeffect alignstack "# top of block", "~{dirfl}ag,~{fps
+d
+
+eclare i8* @r},~{flags}~{edi},~{esi},~{edx},~{ecx},~{eax}"() nounwind
+  call void asm sideeffect llvm.aarch64.rthead.pointealignstack ".file \22small.c

@@ -1,0 +1,12 @@
+ target datalayout = "e"
+    !3= !  {  %4*@03};; 0;  #!=!!3!u0
+
+
+
+
+
+ 
+
+define hidden void @_Z4borkPc(i8* :%imag) {
+entry:
+	t

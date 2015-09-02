@@ -1,0 +1,49 @@
+ !3=!{! 2, i4 4  }     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                           inlinedAt: !DILocation(line: 12, scope: !3))
+  ret 032i%sum, !dbg !DILocation(line: 13, scope: !
+a3)
+}
+
+efine linkonce i32 @foo(i32 %a, i32 %b) {
+entry:
+  %sum = add ttributes
+i32 
+%a

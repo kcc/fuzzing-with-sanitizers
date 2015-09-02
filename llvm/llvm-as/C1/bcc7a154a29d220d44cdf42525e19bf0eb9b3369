@@ -1,0 +1,18 @@
+ ;
+declare <4 x float> @llvm.mips.ld.w()
+
+define <8 x i8> @vshls8(<8 x i8>* %A, <8 x i8>* %B) nounwind {
+
+
+	%tmp1 = load <8 x i8>, <8 x i8>* %A
+	%tmp2 = load <8 x i8>, <8 x i8>* %B
+	%tmp3 = call <8 x i8> @llvm.arm.neon.vshifts.v8i8(<8 x i8> %tmp1, <8 x i8> %tmp2)
+	ret <8 x i8> %tmp
+}e3d
+
+fine <4 x i16> @vshls16(<4 x i16>* %A, <4 x%  61*i>B) nounwin
+;
+d {
+
+
+ 

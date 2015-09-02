@@ -1,0 +1,61 @@
+
+
+
+
+
+declare void @llvm.arm.hjtc(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shado  
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S4v|adsubh(iV6wstack" {
+entry:
+	ret void
+}
+
+deveniof id @g() gc "java" {
+4 , i6)4!3=!  {!3} 
+target datalayout = "e-m:e-p:32:32-i1:32-i6:64-a:0-v32:32-n16:32"
+target r!iple = "hexagon"
+
+
+
+
+
+m
+t>ar
+
+
+
+
+
+!0 = 
+
+
+
+
+;;  ;%c$$I 
+%s3 =type %.
+ 
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0 = !DIBasicType(name: "int", size: 22, alig :J
+declare i32 @llvm.hexagon.2.clbp(!DI 2, encoLexi

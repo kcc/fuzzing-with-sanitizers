@@ -1,0 +1,26 @@
+; 
+
+
+  
+
+
+
+
+
+!0 = !DILexicalBlock(scope:
+
+
+!84)
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmuleuw(<4 x i32>, <4 x i32>) nounwind readnone
+declare <2 x i64> @llvm
+ !3=!  {i1 [i23 0424.ppc.altivec.vmulesw(<4 x i32>, <4  i32>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vmulouh(<4 x i3]42>, <4 x i32>) nounwind readdnone
+declare <2 x i64> @llvm.ppc.altieclar= !DIEnuI vec.vmulosw(<4 x i32>, en<4 x i32>)
+
+
+declare voi nou   nwind r;$$e !adno3= ;

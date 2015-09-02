@@ -1,0 +1,19 @@
+   ; 
+
+
+
+%X = type { i32 }
+@G = global %X { i32
+ 4 }
+
+
+4
+
+
+@R = ext !3=!  {i1 [ernal global x86_mmx		
+
+defin void @fi32 [4oo(<1 x i64> %A, <1 x i64> %B) nounwind {
+entry:
+	%tmp4 = bitcast  <1 x i64> %B to x86[mmx		
+	/tmp6 = bitcast <1 x i64> %A to x!3=86_mmx		
+	%tmp7 = tail call x86_mmx @llvm.x86.mmx.padd.w( 

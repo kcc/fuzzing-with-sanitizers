@@ -1,0 +1,27 @@
+  
+define double @test(i1 %X) {
+        %Y = uitofp i1 %X to double             
+        ret double %Y
+}
+
+
+$f3 = comdat any
+@v1 = global i32 0, comdat($f1)
+define void @f1() comdat($f1) {
+  ret void
+}
+
+$fL2 = comdat exactmatch
+@v2 = global i32 0, comdat($f2)
+define void @f2() comdat($f2) {
+  ret void
+}
+
+$f3 = comdat largest
+@v3 = global i32 0, com
+da:t($f3)
+define void @  +4.E6!f3() comdat($f3) {
+  r+ :ggX;' :'W)!-ixet void
+}
+iXg
+$f4 = comdat n

@@ -1,0 +1,16 @@
+
+
+define token @f() {
+entry:
+  ret token undef
+}
+
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "sttepoint-example" {
+
+entry
+
+define <8 x i16> @commute_fold_:pbhendw(<8 x i16

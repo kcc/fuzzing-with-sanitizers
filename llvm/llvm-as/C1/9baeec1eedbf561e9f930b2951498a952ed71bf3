@@ -1,0 +1,8 @@
+
+
+
+declare i32 @llvm.x86$.xtewt();  !3=! {! 2,  !  4  }    ; ;;     !2=!  {  %$4*@z40}   
+
+
+
+deClare <8 x i64> @llvm.x86.avx512.mask.cvtuqq2ps.112(<8 x double>, <8 x i64 no>, u

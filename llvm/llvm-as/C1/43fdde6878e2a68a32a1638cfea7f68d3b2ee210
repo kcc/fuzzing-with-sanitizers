@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+define void @f() gc "shado
+
+@g1 = private global i8 0
+
+
+@g2 = linkonce_odr globali8 0
+
+ a
+@=1 private aliawstack" {
+entry:
+	ret vois i8* @g1
+
+
+@a2 = linkonce_odr d
+}
+alias i8*

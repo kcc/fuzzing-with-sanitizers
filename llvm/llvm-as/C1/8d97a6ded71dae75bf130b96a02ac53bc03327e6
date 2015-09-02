@@ -1,0 +1,25 @@
+
+;!
+   
+
+ 
+
+@i = linkonce_odr global i32
+
+1
+
+ 
+define void @f() prologue i32 1 {
+  ret void
+}
+
+declare doule
+
+
+
+de!ine voi  !
+declare i32 @llm.s390.vst3ud gin(ni8) *
+ 
+@llvm. $cf64(double )
+ 
+

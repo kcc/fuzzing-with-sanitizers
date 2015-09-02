@@ -1,0 +1,22 @@
+
+
+
+define i64 @test_vqshld_s64_i(i64 %a) {
+
+
+  %1 = tail call i64 @llvm.aarch64.neon.sqshlu.i64(i64 %a, i64 36)
+  ret i6
+
+4 %1
+}
+
+define i64 @test_vqshld_u64_i(i64 %a) {
+
+
+  %1 = tail call i64 @llvm.aarch
+@lds = addrspace(3440:40444008440464.neon.uqshl.i644p04<0g444840 8lo840b(i64 %a, i64 36)
+  ret i64 %1
+}
+
+decla4re i64 @llvm.aarch64.neon.uqshl.i64(i64, i64)
+declare i64 @llvm.aarch64.neon.sqshl.i64(i64, i64)

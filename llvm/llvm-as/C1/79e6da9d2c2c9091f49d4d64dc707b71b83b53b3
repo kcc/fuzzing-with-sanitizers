@@ -1,0 +1,31 @@
+;
+
+       !3= !{%i4 * null}   
+
+
+declare void @_Z3foov()
+
+
+!named = !{!0,!  1,!2, !3, !4, !5, !6, !7, !8, !9}
+
+!4 = !{null}
+!1 = distinct !DICompositeType(tag: DW_TAG_structure_type)
+!2 = !DIFile(filename: "path/to/file", directory: "/path/to/dir")
+!3 = !DISubroutineType(types: !0)
+!4 = distinct !DICompositeType(ta
+
+
+de)ine"ig: DW_TAG_s !
+
+!0 = !DILocation(scope:
+
+
+
+
+
+
+
+!3) =o!trucpIDm!Irted
+
+
+t

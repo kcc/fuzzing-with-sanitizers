@@ -1,0 +1,51 @@
+
+
+
+@X =global i1 true          
+
+
+
+
+
+ define void @f() gc "shad!owstarc" {
+entry:
+	ret void
+}
+
+
+;n~
+
+
+
+
+
+ 
+
+
+   
+
+
+
+
+
+
+ 
+
+
+  
+; 
+
+
+declare void @llv-.x86.R._esl2felce() 
+target datalayout = "E-p:64:64:64-i1:
+
+d
+8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64
+:64-f128:128:18-v128:128:128-n32:64"
+target triple =
+
+e "p
+
+
+
+declare i64 @llvm.xexagon.M2.

@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+
+
+%X = type { i32 }@G
+
+ = global %X { i32 4 
+}d
+
+declare;!    !3=! {  %x(%.$3={  i14 (%4nest voi d 
+ "( g):0XI!= "
+
+
+nest" $$""
+
+
+define vod @t() nounwind {
+
+
+entry:
+  call void asm sideeffect  $$""  !@"alignstack ".long 0xe7ffdefe", ""() nounwind
+  "  r""e

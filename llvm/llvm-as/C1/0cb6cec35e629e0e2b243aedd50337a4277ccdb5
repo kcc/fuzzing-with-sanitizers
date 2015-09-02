@@ -1,0 +1,26 @@
+
+
+
+define void @foob() {
+
+ ret void, !bar!3
+
+
+
+ 
+
+ 
+
+
+!0 = !DIGlobalVariable(name:"!
+0/ 
+ ; =
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.cu = !{!5}
+!llm.module.flags =! !{6}
+
+!0 = !DISubprgram(name
+=!
+: #bar" linkageName: "
+"d_ZN3 oo3barEv*, line: e3, isLo;al: false, isDefiniti<on:

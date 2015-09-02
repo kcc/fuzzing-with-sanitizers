@@ -1,0 +1,25 @@
+!3=!   {!3}; >  
+
+
+%struct.s0 = type { x86_fp80, x86_fp80 }
+
+
+define i8* @args_fail(%struct.s0* byval nocapture readonly align 16 y) {
+  %1 = bitcast %struct.s0
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}* %y to i8*
+  ret i8* %
+!1 = !DIFile(1
+filename: "pa}th
+/to/fil

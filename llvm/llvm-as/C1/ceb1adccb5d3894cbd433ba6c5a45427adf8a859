@@ -1,0 +1,30 @@
+
+
+
+
+%X = type { i32 }
+@G = global %X { i32 4 }
+
+
+
+  
+
+
+
+
+
+!0 = !DILexicalBlock(scope:
+
+
+!84)
+
+\
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmuleuw(<4
+
+
+ x i32>, <4 x i32>) nounwind rGeadnone
+declare <2 x i64> @llvm.ppc.altivec.vmulesw(<4 x i32>, <4 x i32>) nounwind readnone
+d
+eclare <2 x i64> @llvm.ppc.altivec.vm

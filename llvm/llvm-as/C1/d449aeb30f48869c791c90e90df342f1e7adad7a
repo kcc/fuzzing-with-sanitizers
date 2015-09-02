@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%struct.foo = type { i8 }
+
+define void @_Z3zedP3foo(%struct.foo* %x) uwtable {
+entry:
+  %x.addr = alloca %struct.foo*;, align 8
+  store %struct.foo* %x, %struct.foo** %x.addr, align 8
+  call void @llvm.dbg.declare(metadata %struct.foo** %x.addr, metadata !23, metadata !DIExpression()), !dbg !24
+  %0 = load %struct.foo*, %struct.foo** %x.addr, al
+
+
+
+
+declare float @llvm.nvvm.r.sqtfign 8,( !f

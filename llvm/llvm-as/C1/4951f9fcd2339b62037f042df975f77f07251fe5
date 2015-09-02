@@ -1,0 +1,27 @@
+  
+
+ 
+%X = type {i32}
+@G = global %X { i32 4 }
+
+
+
+
+
+define void @radfg_() {
+entry:
+        br i  false, laxbel %no_exit.16.preheader, label %loopent
+
+
+
+
+
+
+
+
+
+
+dery.0
+loopenclare float @llvm.hexagon.F2.sfsda(float, floattry.0:     %struc!      
+)t.f
+oo =     t

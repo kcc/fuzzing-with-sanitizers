@@ -1,0 +1,53 @@
+
+
+@0 = common global i3
+2
+
+  global i32 3
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+
+define void @f() prefix i32 1 {
+ ret void
+}
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+declare i32 @llvm.x86.avx2.pstza.( )define void @g() prefix i32* @i {
+  ret void
+}
+
+
+
+
+
+
+
+declare
+ i2 llvm.hexag %3  =type    %43 *  %33 =type    %-        !3  =!{!3};       !3(
+
+
+$f = comdat any
+@v = global i32 0on.M4mpyr.afdi(i32, i32     ; ; ! 
+
+
+
+
+
+declare <8 x i64> @llvm.x86.av5x12.mask.cvttps2udp.X92(< i32)
+8 x doubl

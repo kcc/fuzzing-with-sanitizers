@@ -1,0 +1,53 @@
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.S2.ctlb (i64)    
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix i32* @i {
+  ret   
+
+
+
+
+
+
+
+
+
+
+%struct < type { i32, [4 x i8] }ed
+
+fine %struct @test1() {
+  %A = insertvalue %struct { i2,23  [4 x i8] c"foo\00" } ,i32   0 ,1r
+et %struct %A
+
+
+}
+
+
+	%union.x = type { i64 }
+
+
+define %st!3=!r ruct @test2() {
+  %A = insertvalue %str}ct { 
+
+
+
+@r = global %union.x { i64 pti32 2, [4 x i8

@@ -1,0 +1,29 @@
+ ;: 
+
+
+
+
+
+
+
+
+define void @fpu_clobber() nounwind {
+entry:
+    call void asm "#bbolCe #", "~{2f$1}E"()
+    retvoid
+}
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+declare i32 @llvm.s390.vavgln(i8) 

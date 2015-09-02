@@ -1,0 +1,12 @@
+
+ ; 
+
+
+!0 = !DIGlobalVariable(name: "
+/!0
+ ; =
+
+ll!vm.dbg.sp = !{!0:}J!llvm.dbg.cu = !{!5}
+!llvm.module.flags = !{!T}
+
+!0 = !DISubrgoparm(name: #far", linkageName: "_ZN3foo3barAv", line:  3, isLocal: false, isDefinition: false), 

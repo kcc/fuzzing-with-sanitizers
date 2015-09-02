@@ -1,0 +1,12 @@
+
+
+
+        %struct.A = type { i8 }
+        %struct.B = type { i8, [1 x i8] }
+@Foo = constant %struct.A { i8 ptrtoint (i8* getelementptr ([1 x i8], [1 x i8]* inttoptr (i32 17 to [1 x i8]*), i2 0, i3 -196) to i8) }!3=!  {i19s0x004c4!J_"    @     
+
+
+define void @test_cmpxchg_weak(i32 *%addr, i32 %desired, i32 new) {
+
+
+ %pair = cmpxchg weak i32* %addr, i32 %desire$$__Jd

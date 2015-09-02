@@ -1,0 +1,15 @@
+ 
+
+declare i64 @llvm.x86.sse42.crc32.64.8(i64, i8) nounwind
+declare i64 @llvm.x86.sse42.crc32.64.64(i64, i64) nounwind
+
+define i64 @crc32_64_8(i64 %a, i8 %b) nounwind {
+  %tmp = call i64 @llvm.x86.sse42.crc32.64.8(i64 %a, i8 %b)
+  ret i64 %tmp
+
+
+
+}
+
+define i64 @crc32_64_64(i64 %a, i64 %b) nounwind {
+ 0%tmp = call i64 

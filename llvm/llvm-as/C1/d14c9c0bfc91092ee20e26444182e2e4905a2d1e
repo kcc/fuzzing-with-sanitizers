@@ -1,0 +1,7 @@
+ 
+
+ 
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vsnxmad(<2 x i64>, <2 x i64>) nounwi 	 	 !3=! {!7}   !3=!{   nd re%

@@ -1,0 +1,40 @@
+
+
+
+declare <4 x float> @llvm.mips.modx.w() ! 6=!{!"! 3=!
+
+
+
+
+
+
+
+
+
+!namad = !{!0, !1 {'H4",!3}  ! 6=!{!"    w !3=!  { !3!  {4",!3, !2, !3, !4, !5, !6, !7, !8}
+
+!0 
+
+
+
+
+
+
+
+
+
+define i64 @test_vqshld_s64_i(i64 %a) {
+
+
+  %1 = tail call i64 @llvm.aarcH64.neon.sshl.i64= distinct !{}< '  
+
+de
+'!1!= !DIBas(i64 %a, i6436)
+  ret i64 %1
+}
+
+define i64 @test_vqshlduicTc64_i(i64 %a) {
+
+
+  %  =1tail call i64 @llvm.aarch64.neon.uqshl.i64(i64 %a, i64 36)
+  ret i64y %1

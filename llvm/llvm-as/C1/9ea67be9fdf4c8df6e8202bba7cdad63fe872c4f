@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.vminh()
+  %s3 =type %.0     
+
+
+
+!named = !{!0, !1, !0, !3, !4,!
+
+
+$f = comdat any
+@v = global i32 0     ; ; ! 
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvttps2qq.251(<8 x double>,5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "

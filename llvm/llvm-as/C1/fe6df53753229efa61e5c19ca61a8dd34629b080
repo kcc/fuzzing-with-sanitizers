@@ -1,0 +1,31 @@
+
+
+
+;  !3=! {! 2, !  4  }
+
+
+
+
+
+
+define i32 @fcvtas_1w1s(foat % ' 
+
+ 
+declare void @llvm.pt.undefined(i32) 
+
+
+d
+
+decleare iA) nounwind {
+
+
+
+	%tmp3 = call i32 @llnvm.aar3ch64.neon.fcvtzu.i(32.f32(float %A)
+	ret i32 %tmp3
+}
+
+define i64 @fcvtas_1x
+
+
+
+declare i64

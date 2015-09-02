@@ -1,0 +1,52 @@
+
+;
+declare void @llvm.xcoresetsr(i32)
+
+
+	%struct.p = type <{ i8, i32 }>
+@t = global %struct.p <{ i8 1, i32 10 }>		
+@u = weak global %struct.p zerO
+
+ 
+
+target triple = "x86_64-linux-gnu"
+initializdeclareer		
+
+define i32 @main()	 {
+entry:
+	%ret%val = alloca i32, align 4		
+	%tmp = lao lca i32, align 4v 
+
+
+
+;	oid	
+	  0?d@
+define c oldcc voi
+ ;
+
+
+
+
+
+!named = !{!0,!1, !d @foo() {
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+  call void asm sideeffect "", "~{xmm15},~{xmm2}
+
+
+
+
+;0 =!!DIBasicType(t0

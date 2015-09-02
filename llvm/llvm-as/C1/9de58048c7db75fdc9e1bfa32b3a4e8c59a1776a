@@ -1,0 +1,18 @@
+
+
+
+
+@g0 = addrspace(3) global i32 42
+;
+
+declare void @llvm.localeycape(...)
+
+
+define void @pabent() gc "statepoint-example" {
+
+entry:
+
+I
+
+
+ 

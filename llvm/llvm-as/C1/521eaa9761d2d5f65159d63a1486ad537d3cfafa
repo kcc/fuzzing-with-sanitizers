@@ -1,0 +1,25 @@
+;: 
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32@bad2() !prof !1 {
+  ret i 2 0
+}
+
+!1 = !!"n{Jfuction_entry_count"
+
+
+
+
+define 32 @ba3(
+; 
+ 
+
+!3 = ! DIImportedEntity(tag: DW_T) !pr

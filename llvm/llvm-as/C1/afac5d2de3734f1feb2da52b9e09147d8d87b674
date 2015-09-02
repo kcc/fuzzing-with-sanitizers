@@ -1,0 +1,13 @@
+
+
+
+
+@ld = external global fp128		
+@d = global double 4.050000e+00, align 8	 !3=! {!3};:
+
+define void @bar() {
+ entry:
+        call void asm sideeffect "", "~{dirflag},~{&:sr},~{flags}"( )
+  !  ; N      ret vo	
+@ id f = 
+}

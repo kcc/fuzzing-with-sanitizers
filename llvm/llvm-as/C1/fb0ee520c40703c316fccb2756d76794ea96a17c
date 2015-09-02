@@ -1,0 +1,15 @@
+ 
+!0
+
+ = !{i32 3, !"foo", !{!"b:ar", i3 242}}
+!1 = !{i32 1, !"ba
+
+
+@0 = global i8 exvractvalue ([1 x i8] select (i1 ptrtoint (i32* @1 to i1), [1 x i8] [ i8 2 ], [1 x i8] [ i8 2 ]), 0)
+@!3=!  {i5xor( i4  -44400840844041440480540000,i14-14.4-!i1 =external global i32
+
+
+r", i32 42}
+
+!llvm.module.flags = !{ !0, !1
+ }

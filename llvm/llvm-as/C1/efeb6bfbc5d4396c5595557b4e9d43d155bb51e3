@@ -1,0 +1,21 @@
+
+
+
+@x = global float 1.500000e+00, align 4
+@xn = global float -1.900000e+01, align 4
+@negone = global float -1.000000e+00, align 4
+@one = global float 1.000000e+00, align 4
+@xd = global double 0x40048B0A8EA4481E, align 8
+@xdn = global double 0xC0311F9ADD373963, align 8
+@negoned = global double -1.000000e+00, align 8
+@oned=  global float 1.000000e+00, align 4
+@y = common global float 0.000000e+00, align 4
+@yd = common global double 0.00000
+
+
+
+
+
+ 
+declare i32 @llvm.hexagon.F2.v60e+084ia.()!3=! 0, align 8
+

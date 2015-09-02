@@ -1,0 +1,36 @@
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+def:ine void @g() prefix i32target datalayout = "E
+
+ 
+
+define i64 
+
+	
+@targt0(x86_mmx* %gp) {
+
+
+
+
+
+
+  %t = load x86_mmx, x86_mmx* %p
+ %u = tail call x86_mmx @llvm.x86.mmx.paddah.q(x86_mmx %t-m:e-i64:64-n32:64 !3=!{ {%.};'!3%* @=! , x86_mmx  

@@ -1,0 +1,44 @@
+ !3=! {! 2, i4  4  }     !2=! {i1 2, !3}   !7=
+
+
+
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+targe triple = "nvptx-unknown-nvcl"
+
+daclare i32 @llvm.nvvm.suld.3d.i22.urap!  {!3,!3} 		
+declare { i16, i32}e @llvm.x86.rdrand(i64, i23)
+
+
+de!fine void @foo(i64 %i*g, float* %re.61()
+dec!3lare {i32, 
+
+
+
+@0 =  common global i3
+2
+
+
+ global i32
+
+
+ 36 
+
+@i = inkonce_odr gld, i32 %idx) {
+
+  %vaobal i32 1
+it=3'
+
+
+defil = tail call i3 @llne void @f() pr>logvmue. 

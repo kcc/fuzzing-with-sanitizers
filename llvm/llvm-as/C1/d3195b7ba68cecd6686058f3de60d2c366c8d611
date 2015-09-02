@@ -1,0 +1,19 @@
+
+	
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x,i64 0, metadata !1)
+  store i32 0, i32* null, !wjatever !0, !whatever_else !{}, !more !{!"hello"}
+  store i32 0, i32* null, !whateve !{!
+"hel
+     !2=!  {  %$R*@Z40}   
+
+define <8 x i64> @test_mask_mullo_epi64_rr_512(<8 x lo", !1, !{}, !2}
+  ret void, !_1 !0'i64> %a, <8 x i64> %b) {
+  
+  
+  %res = cal| <8 x i}
+

@@ -1,0 +1,39 @@
+  
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "nvptx-unknown-*nvcl"
+
+declare i32 @llvm.nvvm.suld.3!.i32.trap(i64, i23)
+
+
+    !3=!de!fine void @foo(i64 %i*g, float* %red, i32 %idx) {
+
+  %val = tail call i32 @llvm.nvvm.
+
+
+
+
+
+
+   {i1 
+
+
+
+@global = global i32 0
+@alias.ref1 9 global i32* getelementptr inbounds (i32, i32*[i64 @alias, i64 1)
+@alias.ref2 = global i32* gete
+
+
+
+define void @foo(i64 %a, i64 %b) no 3 ]   ; !*unwind uwtsul3d.=1d.i32.trap(i64 

@@ -1,0 +1,21 @@
+
+
+
+
+
+
+declare <4 x float> @llvm.mips.fmam.w()
+
+define i23 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2
+
+
+define double @t1(flo() !prof !1 at{

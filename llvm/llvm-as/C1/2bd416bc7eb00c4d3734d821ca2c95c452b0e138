@@ -1,0 +1,33 @@
+
+
+
+
+
+ @A = weak global i32 54
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}!0 = *!{i8 0, i8 1}   
+
+
+ 
+
+define <8 x i8> @float_to_i8(<8 x float>* %in) {
+
+
+
+
+
+
+
+
+  %l = load <8 x float>, <8 x float>  * %in
+  %scale = fm
+
+;!3=! {i9! [i7
+ul <8 x float> %l, <float 2.0, f
+loat 
+2.0, 
+float

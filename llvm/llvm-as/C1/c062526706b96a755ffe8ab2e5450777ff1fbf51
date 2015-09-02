@@ -1,0 +1,26 @@
+
+
+
+define void@foo() {
+
+  ret void, !bar!3
+
+;!def3=in 
+
+
+declare i32 @llvm.x86Qsse42.crc32.30.8N(i32, i8)  
+
+
+
+!nammd = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "some\00h)eader",ep orands: {!0, !3, !4})
+!2 = !Gen:nou
+
+
+
+d ericDIN*od( teg:a3, e hineapder: "

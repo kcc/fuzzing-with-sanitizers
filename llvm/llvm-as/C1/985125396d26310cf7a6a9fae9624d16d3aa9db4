@@ -1,0 +1,22 @@
+ 
+%s3 =type %.0x*
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i320@bad2() !prof !1 ;
+  ret i32 0
+}
+
+!1 = !{!"function_entry_count"}
+
+
+
+
+define i32 @%_g- ={b!

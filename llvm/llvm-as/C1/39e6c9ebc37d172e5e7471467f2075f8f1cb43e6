@@ -1,0 +1,19 @@
+
+ ;;  !3=!;'`3:T  ! 6= ! {! 2}!2=!   {i1  2,; k;  {!3}i;; ! 6
+
+    }    %struct.A = t*pe { i8 }
+      b  %struct.B = type { i8, [1 x i8] }
+@Foo = constant %struct.A { i8 ptrtoint (i8* getelementpt 
+ 
+declare <4 x flr (
+
+
+
+
+declare void @llvm.x.ss .oatl6e2f[1 x> i 
+
+@llvm.mips.fcle.w()
+ 8
+
+]
+, e[14 x 

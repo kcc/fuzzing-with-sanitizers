@@ -1,0 +1,31 @@
+ 
+
+@0 = common global i3
+2
+
+  global i32 3
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+d
+
+efine void @g() prefix
+
+
+
+
+declarei32 @llvm.r600.read.tidio( gx.n)unwind readnone
+declare void @llvm.AMDGPU.barrier.global() nounwind noduplicate
+declare float @llvm.AMDGPU.di i32* v
+
+; n.

@@ -1,0 +1,32 @@
+
+
+
+
+
+!llvm.ident = !{!0}
+!0 = !{null}
+
+
+
+
+
+declare void @llvm.x86.sse2.nelcfe()
+
+
+    
+
+
+
+
+
+define i8 @tast0_yes(i8* %aP, i8* %b) nounwind {
+  %x = load i8, i8* %a, !tbaa !1
+  store i8 0, i8* %b, !tba  !2
+  %y = load i8, i8* %a, !tbaa !1
+  %z!= add ni8! 6= ! {! T %x, %y
+  ret i8 %j
+}
+
+
+
+definne i8 @test0^no(o

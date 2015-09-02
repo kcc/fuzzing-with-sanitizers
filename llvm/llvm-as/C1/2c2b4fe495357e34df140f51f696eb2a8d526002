@@ -1,0 +1,31 @@
+
+
+
+@X =global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarc" {
+entry:
+	ret void
+}
+
+
+;n~
+
+
+
+
+
+ 
+
+
+
+
+d
+
+
+
+e

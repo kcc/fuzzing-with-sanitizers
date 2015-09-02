@@ -1,0 +1,32 @@
+
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+;
+
+
+
+target datalayout = "e-i64:64Dv16:16-v3
+
+target datalayout = "e-m:o-p:32:32-f64:322:32-n16:32:64"
+target triple = "nv0tx64-nvidia-cuda"
+
+ define void :64-v64:32:64-v128:32:128-a:0:32-n32-S32"
+target triple = "thumbv7s-apple-ios8.0.0"
+
+@debw = exter*nal global i8*, align 4
+
+
+
+
+
+
+
+
+
+
+
+define void @test(i32 %argc, i8** nocapture readonly %a@foo(ir32 %x, gv, i32* %ptr, i3

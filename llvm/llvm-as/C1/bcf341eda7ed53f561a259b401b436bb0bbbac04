@@ -1,0 +1,55 @@
+
+
+
+declare i32 @llvm.r600.;ead.ti      dig.W
+()
+ !3=! {  %x(%.$" g):8
+
+
+
+
+
+
+
+
+
+
+e
+
+
+
+
+declXI!=are $$""$   i8* @foo(i8*) #1
+define i8* @bar(i8* %x) {
+  %y = call i8* @foo(i8* %x) #0
+  ret i8* %y
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i8* @lar(!@""i8*)
+
+define i8* @har(i8* %x) {
+  %y = call i8*""    @lar(i8* ?x) #0
+  ret i8* %y
+}
+ n
+
+define i8* @car(i8* %x) #0 {
+  ret oi8* %x
+}
+
+declare i8* @mar(i8*) #0
+
+attributes #0!=3  = { builtin  }
+attribu  teu s #1 = {" 

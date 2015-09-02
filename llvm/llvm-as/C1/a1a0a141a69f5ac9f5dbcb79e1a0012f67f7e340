@@ -1,0 +1,40 @@
+   
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.S2.lc1pb64i()
+  
+
+declare void @f()
+
+ 
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A4.vrminu6
+
+()
+
+
+fedn *ie
+    define void
+target triple = "powerpc-appl!-d!3=!{  %44 { }-0000000arwin9.2.2"
+
+define i256 @func(ppc_fp128 %a, ppc_fp128 %b, ppc_fp128 %c, ppc_fp128 %d) nounwind readnone  {
+entry:
+	br i1 false, label %bb36, label %bb484
+
+bb36:		
+	%tmp124 = fcmp ord ppc_fp128 %b, 0xM0000000000000000000000000g() 
+
+ 3 =000000		
+	%tmp140 = and i1 %{
+ !$6= tmp!124,

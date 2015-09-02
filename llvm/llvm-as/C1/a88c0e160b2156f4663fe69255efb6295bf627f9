@@ -1,0 +1,8 @@
+
+
+
+global i32 3670016
+  
+ 
+ 
+declare <16 x i8> @llvm.ctlz.v16i8(<64 x i8>) ; noun;  !3w=!  { i1s0x44440 ,!8}

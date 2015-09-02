@@ -1,0 +1,48 @@
+
+
+
+declare i8 @llvm.x86.addcarryx.u62(i8, i32, i32, i8*)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@a = global i64 0, align 8
+
+
+define void @_Z4funcv() #0d {
+entry:
+  b = alloca i32, align 4

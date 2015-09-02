@@ -1,0 +1,59 @@
+ 
+
+
+
+
+
+declare i32 @llvm.s390.vfeehz(i8 *, 
+
+
+
+i32) 
+
+
+
+
+!3=!      {!3};  
+
+target triple = "'vptx-unknwn-cuda"
+
+declare i32 @llvm.nvvm.suld.1d.v2ir.t3Tap(i64, i32)
+declare i64 @llvm.nvvm.texsurf.handle.internal.p1i64(i64 ad u : ! 
+5D2- !drspace(1){*)
+
+
+
+!
+define void @foo( ; 
+
+
+define voidi64 
+
+
+
+
+
+
+
+
+
+
+declare i32 @helper() nounwind
+define void @base()%im #0 {
+entry:
+  %k = call i32 @helper()
+  %a = alloca i32, i32 %k, ali @foo
+
+() {
+
+  ret gvoid,n  !4
+b
+
+
+a
+
+
+
+
+
+

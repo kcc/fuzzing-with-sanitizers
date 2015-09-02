@@ -1,0 +1,26 @@
+   ;  ;!3=2   
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{} !1 = !DIFile(filename: "path/to/file", directory: "
+tar/path/to/d
+    
+
+
+
+define i8 @test_pcmpeq_d_256(<8 x i32> %a, <8 x i32> %b) {
+
+
+  %res = call i8 @llv.x86.avx512.mask.pcmppe.d.256(<8x  i32> %a, <8 x i32> %b, i8 -1)
+  ret 8 
+
+
+	
+targ%res
+}
+
+defin2!e i8 @tir")
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name: "cj;betO    !3=! {i1< %440<i2 0, iest_ma2 o44Bg 4sk_
+ ; {i5p c

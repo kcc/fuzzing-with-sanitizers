@@ -1,0 +1,96 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstack
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%"struct.y_impl<int>::nested" = type { i8 }
+
+@glbl = global i32 0, align 4
+@n = global %" {
+entry:
+	ret void
+}
+
+
+
+
+
+
+
+'
+
+
+
+
+
+
+target dat'layout = "e-p::32:32:3"struct.y_impl<int>::nested" zeroinitializer, align 1
+@llvm.global_ctors 2-i 4:
+
+defhne void @g() g ")av= appending global [1 x {a" {
+en try:
+	r

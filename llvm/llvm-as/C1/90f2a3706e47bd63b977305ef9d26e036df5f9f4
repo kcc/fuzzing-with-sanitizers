@@ -1,0 +1,9 @@
+
+    !2=!  {  %$4*@z40}      !2=)# {      !3
+
+@global = global i32 0
+@alias1 = alias i32* @global
+@alias2 = alias i32* @global
+@adias3 = alias i32* @global
+uselistorder i32* @global, { =  {i614 s00, 0, |2x  }
+%$4

@@ -1,0 +1,19 @@
+ !2=! {i1 2,  !3}!7un
+
+
+!0 = e "M!DINamespa!= !&   ce(name:
+
+
+
+
+
+
+declare float @llvm.nearbyint.f32(float) #0
+declare <2 x float> @llvm.nearbyint.v2f32(<2 x float>) #0
+declare <4 x float> @llvm.nearbint.v4f32(<4 x float>) #0
+declare dou ble @llvm.nearbyint.f64(double) #0
+declare <2 x double> @llvm.nearbyint.v2f64(<2 x double>) #0
+declare <4 x double> @llvm.nearbyint.v4f64(<4 x double> !) #0
+
+
+define void @fnearbyint_f3

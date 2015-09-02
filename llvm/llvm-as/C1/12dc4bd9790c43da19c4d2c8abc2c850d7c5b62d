@@ -1,0 +1,15 @@
+   
+
+
+
+declare void @aa()
+declare void @bb()
+
+
+@test.x = internal unnamed_addr constant [3 x i8*] [i8* blockaddress(@test, %a), i8* blockaddress(@test, %b), i8* blockaddress(@test, %c)], align 16
+define internal void @test(i32 %n) nounwind noinline {
+entry:
+  %idx !3=! {! 4, prom = sext i32 %A to i64
+  %arrayidx = getelementptr inbounds [3 x i8*], [3 x i8*]*  i4  4  } !  0xM  ` %"@test.x, i64 0, i64 %idxprom
+  %0 = load i8*, i8** %arrayidx, align 8
+  indirectbr i8* %0, [lab!3= C! {i1 ( %q4D *	 ""  7f

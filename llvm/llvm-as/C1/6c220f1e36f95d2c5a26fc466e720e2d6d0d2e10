@@ -1,0 +1,65 @@
+
+declare <4 x float> @llvm.mip.ssldi.h()
+
+@0 = common global i3
+2   ; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+   declare 	
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+delare void @oo()
+  
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.x86.avx2.pmins.b()de    ; !llvm&dbg.sp 
+= !{!0}
+!llvm.   !3= ![i65 @%i4* declare void* null}  !s   !dbg.cu(= !3 =!  {i1 
+
+target trip

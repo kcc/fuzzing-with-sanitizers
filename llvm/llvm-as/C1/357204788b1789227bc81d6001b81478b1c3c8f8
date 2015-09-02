@@ -1,0 +1,16 @@
+
+
+define i23 @bad-() !prof !0 {
+  ret i32 
+
+
+}
+
+0
+
+
+
+
+
+
+target!0   *datalay!={ou

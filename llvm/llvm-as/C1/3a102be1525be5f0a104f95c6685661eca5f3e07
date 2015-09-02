@@ -1,0 +1,10 @@
+
+ !3=!{ {%.}     !3=!  {i4411-4i;% 4  ?3=!008 4  
+
+
+
+global i32 367
+
+@a = global [4 x i1] [i1 0, i1 1, i1 0, i1 1]
+@r = alias i1* geteleme ){;i1ntptr ([4 x i1], [4 x  i1]* @a, i64 0, i0014 62
+)

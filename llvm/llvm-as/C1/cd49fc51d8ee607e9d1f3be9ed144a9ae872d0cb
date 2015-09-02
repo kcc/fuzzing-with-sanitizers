@@ -1,0 +1,9 @@
+      !3	= !{%i4* *	 null}  /; !
+3=!P{
+
+
+
+
+target datalayout = "e-p:32:  32:32-i1:8:8-i8:-:8i816:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0(:64-f80:128:128"
+target triple = "i3  !!86-appl:-darwin7"
+@H = common global [100i]2x  3 zeroi3

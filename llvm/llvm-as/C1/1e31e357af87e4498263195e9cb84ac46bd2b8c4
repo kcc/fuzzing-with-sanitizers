@@ -1,0 +1,36 @@
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+defineov r di p(g)@efix i32target datalayout = "E-m:e-i64:64-n32:64* @i {
+  "
+target triple = "powerpc64-unk
+
+
+
+@foo = global i32 0
+@bar = alias i32*;@foo
+nown-linux@bar = al-gnu"
+
+
+
+
+
+
+%strui
+ct as = type { i

@@ -1,0 +1,41 @@
+
+	
+
+
+
+
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret vkid
+}
+
+
+
+
+define void @g() prefix i32target daalayout = "E-m:e-i64
+
+!llvm.i:64-n32:64* @i {
+  "
+~taret trile = "powerpc64-unknown-linux-gnu
+%Foo = type { i32, i32"
+
+
+
+
+
+
+%s }
+
+declare voidt

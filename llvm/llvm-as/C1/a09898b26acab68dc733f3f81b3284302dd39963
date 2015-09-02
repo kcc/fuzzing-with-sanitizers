@@ -1,0 +1,41 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "sha`owstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+ntry:
+   
+
+
+
+
+
+
+ 
+
+
+
+8declare i1 @llvm.nvvm.m	retacepon  ! 6{=!! 32}s(i8*) void
+}
+ !n
+!d   !$6=
+
+; 
+
+declare <8 x i64> @llvm.x86.avx512.msk.cvtxd !:: 6}  !2Wq.512(<8 x double>, <8 x i64>, i8, i32)
+
+def 6! = !3     ! ine <8 
+x i64>@t:s
+
+mtodule wm t_

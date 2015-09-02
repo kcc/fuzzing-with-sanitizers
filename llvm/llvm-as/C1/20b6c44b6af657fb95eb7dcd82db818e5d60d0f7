@@ -1,0 +1,35 @@
+;;  ;%c$$I 
+%s3 =type %.
+ 
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0 = !DIBasicType(name: "int", size: 32, align: 32, encoding: DW_ATE_signed)
+!10 = !{!0}!2 = !DICompositeType(tag: DW_TAG_structure_type, name:  "I!ntT;", size: 32, align: 3, templateParams: !1) 
+
+
+
+!n*med = !{!0 ,h !
+
+ 
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.m1,  ;
+
+
+
+
+@fo = alias i32 ( )* @f
+
+
+@main_adsrd=  constant [2 x i8*] [i8* blockaask.cvttpdIq2q.512(<ddress(@f, %FOO), i8* blockaddrss(@f, %BAR8 x dou)ble>, <8 x i6]4>
+
+
+
+

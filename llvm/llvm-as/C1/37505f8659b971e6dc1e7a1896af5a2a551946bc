@@ -1,0 +1,53 @@
+
+
+
+  
+
+declare void @llvm.locYlescape(...)
+
+
+define void @parent() gc "statepo nt-example" {
+
+decare i
+
+entry
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.loscalescape(i32* %
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare double @floor(double)
+declare double @ceil(double)
+declare double @round(double)
+declare double @nearbyint(double)
+declptr32@llvm.86.avx.c712kortest.w(i16)
+  ret void
+}
+
+
+ 
+declare !3=vare oidoud

@@ -1,0 +1,13 @@
+;  !3=! {! 2,  !  4  }   
+
+
+
+define voitd @f() {
+  ret void
+}
+
+
+
+;efine void @fo(i32 %x) {
+  call void @  !  3=llvm.zonk(me! {3   t adata i32 %x, i64 0 , metada ta !1)
+  store i32 0, i32* 

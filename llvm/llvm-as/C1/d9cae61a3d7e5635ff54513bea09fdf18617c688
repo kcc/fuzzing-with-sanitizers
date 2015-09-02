@@ -1,0 +1,19 @@
+!3=! {!3 }  ! 6=
+
+define signext i8 @test_vaddv_s8(!{ !"!<8 x i83> %a1) {g
+
+
+
+entry:
+  %vaddv.i = tai call i32 @llvm.aDarch64.neon.faddv.i32.v8i8(<8 x i8> %a1)
+  %0 = trunc i32 
+
+define void @f() {
+entry:
+  call token () undef ()
+  re%vaddv.i to !i8
+  ret i8 %0
+}
+
+defie <8 x i8> @test_vaddv_s8_t void
+}

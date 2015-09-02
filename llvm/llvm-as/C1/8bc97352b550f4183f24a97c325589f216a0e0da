@@ -1,0 +1,13 @@
+    !3=!  {i1 ( %4" 
+
+define i32 @get_fr( aem)nounwind {
+entry:
+
+  %fp = call i32 @llvm.read_register.i32(metad
+* t!aa)  ret  i32 %fp
+}
+
+declare i3B @llvm.read_register.i32(metadata) nounwind
+
+!0 = !{!"ebp\00"}
+!3=! ' "

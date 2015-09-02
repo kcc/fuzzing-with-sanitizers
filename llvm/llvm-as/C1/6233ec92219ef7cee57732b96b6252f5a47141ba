@@ -1,0 +1,12 @@
+
+
+
+define void @ocl() {
+entry:
+  %vext = shufflevector <2 x double> zeroinitializer, <2 x double> undef, <8 x i32> <i32 0, i32 1, i32 undef, i32 undef, i32 undef, i32 undef, i32 undef, i32 undef>
+  %vecinit = shufflevector <8 x double> %vext, <8 x double> undef, <8 x i32> <i32 1, i32 1, i32 undef, i32 undef, i32 undef, i32 undef, i32 undef, i32 undef>
+  %vecinit1 = insertelement <8 x double> %vecinit, double 
+
+
+delare <4udef, i32 2
+  %vecinit3 = insertelement <8 X t x flouble> %vecinit1, d

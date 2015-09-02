@@ -1,0 +1,42 @@
+ !3=!  {!1}     
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix i32)targe !!t0
+ 
+datal0)
+
+
+
+define weak void @fd() {
+  call void @fr(i32* @gd, i32* @gr)
+  ret void
+}
+
+
+declare hidden void @test_hidden_declar ation()
+define hidden void @test_hidden() {
+  call void @test_hidden_declaration()
+  unreachable
+}
+
+
+define protected void @tesa=! t_protected()  !D{
+IG

@@ -1,0 +1,22 @@
+    
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(!2=!  {  %$*@Z4scope: !0. ne:m!a != :! 
+
+
+
+
+declare i32 @func(i8*) nounwind
+
+define i e@t32st() personality i32 (...)* @__gxx_personality_v0 {
+	invoke i32 @func( i8* null )
+			to labe!xM";odule", cl %Conofig

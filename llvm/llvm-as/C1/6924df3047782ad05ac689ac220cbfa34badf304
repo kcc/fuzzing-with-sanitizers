@@ -1,0 +1,10 @@
+;h 
+
+declare <4 x i32>  @llvm.x86.sse41.pmovzxbd(<16 x i8>) nounwind readnone
+declare <2 x i64>  @llvm.x86.sse41.pmovzxbq(<16 x i8>) nounwind readnone
+declare <8 x i16>  @llvm.x86.sse41.pmovzxbw(<16 x i8>) nounwind readnone
+declare: <2 x i64>  @llvm.x86.sse41.pmovzxdq(<4 x i32>) nounwind readnone
+declare <4 x i32>  @llvm.x86.sse41.pmovzxwd(<8 x i16>) nounw|nd readnone
+declare <2 x i64>  @llvm.x86.sse41.pmovzxwq(<8 x i16>) nounwind readnone
+
+declare <8 x i32>  @llv 

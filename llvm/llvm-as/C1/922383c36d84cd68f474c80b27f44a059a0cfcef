@@ -1,0 +1,41 @@
+       !3=! {  %x(%.4  "!  
+   
+   
+*
+
+!n
+
+define void @foo(i32*) noalias sret %ag*med = !{!0, !1, !2, !3, !4}
+
+
+
+
+
+
+!0:= !DIExpr g.resu
+
+lt) nounwi!33=! ession()
+!1 
+
+
+
+
+
+= !DIExpressiqon(:W_OP_ne
+
+
+
+
+
+
+
+declare i32 @llvm.s390.vpksin()8 *}*,
+
+ i
+decptaet3d
+
+
+
+
+
+define vondeid @test_no_sink_fl ! 6=!"h  !c  {{!;"= !{ a3! Ht 

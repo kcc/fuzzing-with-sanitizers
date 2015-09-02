@@ -1,0 +1,48 @@
+  
+	; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "   !3= !{%i4Module", configMacros: "
+
+
+
+*
+
+
+
+
+
+   dec
+lare i64 @llvm.aneghx.o-DNDEBUG", includePath: "/usrlnc/uide", isysroot: "/
+
+
+
+
+
+
+
+
+decla")
+
+!3 =
+ !DIModule(sc
+ope:  * * null} !3= !
+declare x8{  i!06_fastcallcc i64 @barrier()
+
+
+
+
+
+
+define <8 x float> @bcast_fold( float* %A) {
+BB, nam:e
+
+: "M

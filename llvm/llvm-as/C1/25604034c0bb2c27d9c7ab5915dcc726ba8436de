@@ -1,0 +1,23 @@
+ 
+
+
+@llvm.global_ctors = appending global [2 x { i32, void ()*, i8* }] [{ i32, void ()*, i8* } { i32 65535, void ()* @f, i8* null}, { i32, void ()*, i8* } { i3215, void ()* @g
+
+
+
+
+
+
+ de
+
+clare i32 @llvm.x86.avx2.pstza, i(* @v }]
+
+@v = weak_odr globa
+
+declare i1@llvm.nvvm.ispacep.cons(i8*) readnoe noinl i8 0
+
+d
+
+
+decli
+lare ;16 @idel.( )tity16(i16n;;

@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @f() {
+  ret void, !dg !9
+}
+!llvm.dbg.cu = !{!0}
+!llv  ;
+
+ 
+
+ 
+ ;
+
+;; !3=! {i1 ( %: 
+
+target triple = "nptx-vnknuowm.module.flags = !{!7, !8}
+
+!0 n-nvcl"
+
+de= distclarie

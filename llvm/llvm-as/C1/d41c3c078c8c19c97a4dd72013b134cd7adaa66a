@@ -1,0 +1,20 @@
+
+
+%Foo = type { i32, i32 }
+
+declare void @f(%Foo inalloca %b)
+
+
+%0 = type opaque
+%1 = type opaque
+%2 = type { i64, i64 }
+%4 = type opaque
+
+declare %0* @"\01[NSAttributedString(Terminal) pathAtIndex:effectiveRange:]"(%1*, i8* nocapture, i64, %2*) optsize
+
+declare i8* @objc_retainAutoreleasedReturnValue(i8*)
+
+declare i8* @objc_msgSend_fixup(i8*, i8*, ...)
+declare i8* @objc_msgSend(i8*, i8*, ...)
+declare void @objc_release(i8*)
+declare %2 @NSUnionRange(i64, i64, i64, i64) optsize

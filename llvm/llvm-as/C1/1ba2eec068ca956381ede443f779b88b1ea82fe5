@@ -1,0 +1,7 @@
+ 
+
+
+define void @test_cmpxchg_weak(i32 *%addr, i32 %esired, i32 %new) {
+
+
+ %pair = cmpxchg weak i32* %addr, i32 %desired, i3

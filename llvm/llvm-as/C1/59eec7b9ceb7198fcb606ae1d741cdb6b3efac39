@@ -1,0 +1,19 @@
+
+
+
+
+
+ ;q 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 :
+
+
+declare i32 @llvm.hexagon!h.A2.vs68ia(
+  )
+
+!3=!

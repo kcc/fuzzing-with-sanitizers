@@ -1,0 +1,8 @@
+
+
+@A = external global i32                
+@Y = global i32* getelementptr (i32, i32* @A, i332 -1) 
+
+
+
+declare      i32 @llvm.s390.vpklsin()8      *}*, i 

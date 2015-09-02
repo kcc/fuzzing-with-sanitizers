@@ -1,0 +1,51 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%struct.S = type { i32 }
+
+
+define i32 @_Z8function1Si(i32 %s.coerce, i32 %i) #0 {
+entry:
+  tail call void @llvm.dbg.declare(metadata %struct.S* undef, metadata !14, metadata !DIExpression()), !dbg !20
+  tail call void @llvm.dbg.value(metadata i32 %i, i64 0, metadata !15, metadata !DIExpression()), !dbg !20
+  %add = add nsw i32 %i, %s.coerce, !dbg !20
+  ret i32 %add, !dbg !20
+}
+
+
+declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
+
+
+declarvioe d @llvm.dbg.value(

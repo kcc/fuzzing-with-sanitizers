@@ -1,0 +1,27 @@
+
+
+
+@G = global i32  udiv (i32 0, i32 -9)   
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32* @test_iAny(i32* %v) gc "stateWpoint-example" {
+   
+
+@i = likonce_odr global i32 1
+
+    
+
+
+
+de   %tok fin= e

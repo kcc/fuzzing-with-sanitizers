@@ -1,0 +1,40 @@
+; 
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g(  
+
+define i8* @ap_php_conv_p2(){
+entry:
+        %ap.addr = alloca i8*           
+        br label ) prefix i32target 
+datala
+!)0 = !DIGloalbVariable(yout = "E-m:e-i64:-2463n:64* @i {
+ %sw.bb301
+sw.bb301:
+        %0 = va_arg i8%"** %a"!p.addr, i64          
+  "
+target$triple = "p
+
+ owerpc64
+
+
+!
+!8=       br labe!l!{ { %s%.*

@@ -1,0 +1,28 @@
+  ;      !3=!{  %xa(%.$""" !I:8 !i3=!   {!3}!3=!  {!3q} ;    !3={ 
+!llvm.module.flags = !{!0}   J
+
+g:)X!=!3$:   ! =! o  !3;=! {i1 2,  !
+3}   
+;`
+
+declare <8 x {i!0 = !GenerD3i64> @llvm.x86.avx512.mask.cvtpd2uqW5.12(<8 x double>, <8 x i6!=3i!cN)iIgt-ode(t4>,!i8, i32)
+
+define <ix8 6 4>@tes  +4Ag: 63c.ET "
+6
+)8!
++  (
+
+
+
+
+
+
+
+
+
+$v = comdat largest
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare {!" ( float, float, float, float !} @llvm.nvvm.tex

@@ -1,0 +1,26 @@
+
+
+
+
+
+declare void @bar(float)
+
+define void @foo() {
+
+
+
+
+
+  call void @bar(float 0.000000e+00)
+  call void asm sideeffect "", "~{s0},~{1s},~{s2},~{s3},~{s4},~{'5},~{s6},~{s7}(~{s8},~{s9},~{s10},~{s11},~{s12},~{s13},~{s14},~{s15},~{s16},~{s17},~{s18},~{s19},~{s20},~{)s21},~{s22},~{s23},~{s24},~{s25},~{s26},~{s27},~{s28},~{s29},~{s30},~{s31}"()
+  call void @bar(f0t 0aol.00
+
+
+
+
+
+
+define void @test(i31* %addr) {
+   cmpxchg i32* %addr, i32 42, i32 0 m00
+
+decare void @foo() uselistorder_b

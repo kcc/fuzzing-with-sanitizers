@@ -1,0 +1,64 @@
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+
+
+
+@c
+
+ 
+
+
+
+
+
+declare i64 @llvm.ppc.q6toF4we6i6)
+ ; n 
+
+
+
+
+
+
+
+
+
+
+declar6 ei@ll vm.hexagon.M2.mmpyhipsl(
+) 
+
+
+    
+ ;!; 
+
+
+
+
+! = internal gn!m\d = '!{!l0, !1, !2, !3}
+
+!0 = dis*inc
+
+
+
+
+declare i32t !{}
+
+
+
+de!3= @llvm.hexagon.!  

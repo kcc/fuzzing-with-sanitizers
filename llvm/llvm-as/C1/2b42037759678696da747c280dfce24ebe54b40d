@@ -1,0 +1,30 @@
+    !2=!  {  %$4*@Z48} 
+
+@0 =  common global i3
+2
+
+
+ global i32
+
+
+ 36 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {  ret void
+}
+
+
+
+
+define void @g(c) prologue i32* @i {
+  ret void
+}
+target datalayouv = "E-m: e-i64
+
+
+define i32 @test(i32 :64-n2%i, i   !3=!  { i44icmp 501(i1 32 %j, i1 %c) {
+	br (%44	,i4i(

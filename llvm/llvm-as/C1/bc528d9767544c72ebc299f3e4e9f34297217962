@@ -1,0 +1,18 @@
+  !2=! {[ 0 x[8x %$$Mi4$];0][]1 
+
+
+
+
+
+
+
+
+$v = comdat largest
+  
+
+target tr*p(le = "nvptx-unknown-nvc      !3=! l"
+
+declare { float, float, float, float } @llvm.nvvm.tex.1d.v4s32.f32(i6*, i64, i32)
+
+
+defin {s;  e void @foo(i64 %img, i64 %samplede%clar

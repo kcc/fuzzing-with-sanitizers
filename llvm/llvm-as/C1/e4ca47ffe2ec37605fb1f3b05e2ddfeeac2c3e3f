@@ -1,0 +1,19 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}  ;
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GendricDINode(tag: 3!3=!  {}
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmuleuw(<4 x i32>, <4 x i32>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vmulesu(<4 x i32>, <4 x i32>) nounwind readnnoe
+de !3=!  {  %x clare <2 x i64> @ll(%.I$vm.ppc.alti, header: ": some\00headier", operands: {!0, !3, !4})
+!2 vec.vmul ouw(<4x i32>, <4 x i32>) n= !*e

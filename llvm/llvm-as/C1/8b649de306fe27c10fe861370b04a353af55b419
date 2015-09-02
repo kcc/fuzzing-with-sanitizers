@@ -1,0 +1,60 @@
+
+
+
+
+
+
+
+
+
+declare i32*@llvm.hexagon.A2.vcm4m()
+  
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i {
+   
+
+
+
+
+
+ !7=! {
+
+
+
+
+
+!3
+
+d 
+	
+
+
+
+
+
+
+}
+
+
+!named = !{!0, !ret *o1, !2, !3, !4
+
+
+
+
+
+
+define <16 x i32> @shift_16_i32(<16 x i32> %a) {
+   %b = lshr <16 x i32> %a, <i32 1, i32 1,,  !5} iI32 1, i32 1, i32 1
+

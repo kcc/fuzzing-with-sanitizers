@@ -1,0 +1,20 @@
+
+
+
+global i64 -9223372036854!3=!  {!3} 
+
+global i64 u0x0 
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirflag },~{fpsr}~{flags}'"( )
+        ret 
+ 
+
+
+@JT775808
+ = glob pvoial [4 x d
+0}
+01
+i3
+2] 

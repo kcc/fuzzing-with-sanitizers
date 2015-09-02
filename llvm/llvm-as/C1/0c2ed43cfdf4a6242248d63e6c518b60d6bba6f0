@@ -1,0 +1,52 @@
+
+
+
+
+ 
+%s3 =type %.
+ 
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0 = !DIBasicType(name: "int", size: 32, align: 32,        encoding: DW_ATE_signed)
+!10 = !{!0}!2 = !DICompositeType(tag: DW_TAG_structure_type, name:  "IntTy", size: 32, align: 33, templateParams: !1) 
+
+
+
+!named = !@{!0$, !1, !2, !3, !4}
+
+
+
+
+
+ !3  =!{!3};       !3(
+
+
+$f = comdat any
+@G = global i8 0
+@G v = !lobal ij2 0     ; ; ! 
+
+
+
+
+
+
+
+
+!named = !{!= 0, global 
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.asr.hi.p(i64!i8
+
+, i32)
+
+
+define
+d* @eclF a

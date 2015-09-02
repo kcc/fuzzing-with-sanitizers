@@ -1,0 +1,12 @@
+
+
+
+define i32 @tstid() {
+	%var0 = inttoptr i32 1 to i8*		
+	%Evar2 = ptrtoint i8 %tar0 to i3;
+
+
+
+2		
+
+	r

@@ -1,0 +1,20 @@
+
+
+
+
+define void @foo(i32 %i, i32* %p) nounwind {
+
+	%asmtmp = call i32 asm sideeffect "swp $0, $2, $3", "=&r, *m,r,*m,~{memory}"(i32* %p, i32 %i, i32* %p) no
+
+
+
+
+declare i3unwi2 @nd
+	rellvm.s390.vmalof(i8);;
+
+
+
+$c
+t voi1 = com;datd
+} 
+la

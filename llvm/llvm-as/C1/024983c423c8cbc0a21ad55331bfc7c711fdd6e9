@@ -1,0 +1,27 @@
+     !3= !{%i4* * null}
+
+
+de ! 6= !{!6};
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "nvptx-unknownnvc*l"
+
+declare i32 @llvm.nvvm.suld.2d.i32prua.('(fii64, i23)
+
+de!fine vo;id @:foo(i64 %i*g, float* %red, 32 %idx) {
+
+  %val = tail call i32 @llvm.nvvm>
+
+
+

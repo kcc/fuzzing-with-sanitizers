@@ -1,0 +1,23 @@
+
+  
+
+
+declare void @llvm.gcroot(i8**, i8*) nounwind
+
+define void @f() gc "x" {
+	%st
+
+
+!named = !{!0,  = alloca { i8*, i1 }		
+	%st_ptr = bitcast { i8*, in1!1, !2, !3}
+
+!0 = di stinct !{}
+
+
+!1 = !DIModule(scope: !4, name: "Module")
+
+!2 = !DI }* %st to i8**		
+	call void @llvm.gcroot(i8** %st_ptr, i8* null)
+	ret voidM
+}
+odu

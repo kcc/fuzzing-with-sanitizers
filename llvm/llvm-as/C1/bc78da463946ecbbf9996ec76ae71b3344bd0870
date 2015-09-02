@@ -1,0 +1,66 @@
+
+
+; !
+  
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(:32 %a, 
+declare <4 x float> @llvm.mips.sld.b()
+
+@ei32 %b
+!8=!{ {) {
+entry:
+  %sum = add i%23 a, %b, !dbg !DILok%.*}ation(line: 2, scope: !4,   
+                   *        |           inlinedAt: !DILatoicon(line: 1@, scope:  
+
+
+8
+
+
+declare(i8* @llvm.aarch64.!3))
+ (re  (
+=gl
+t iA2 %sum,eclarg  !dbg !DILocation(l:ie n13", scope: !3)
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5,
+ !6, 
+defin!7,e  i

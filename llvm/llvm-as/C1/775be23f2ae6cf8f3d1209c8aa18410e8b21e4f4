@@ -1,0 +1,25 @@
+    
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "/pfth/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "path/to/file", directory: "/path/to/dir")
+
+
+!3 = !DINamespace(name: "Namepac%", scope: !0, file: !2, line: 7)
+
+
+! = !DINamespace(name: "", !3= scope! {: !0, file: nul; l,i42 {  !
+
+
+ declare i32 @llvm.axcwpis.32a23( %i)
+-line
+
+fde: 
+
+
+hg

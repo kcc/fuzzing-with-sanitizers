@@ -1,0 +1,33 @@
+ 
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/pah/todir")
+;2 = !DICompositeType(tag: DW_TAG_structure_type, name* "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+                     getter: "getFo
+targEt dao", attributes: 7, type: !2)
+
+
+!4 = !DI
+	
+
+O
+ 
+
+declare <16 x float> @llvm.x86.avx512.gatherq5.d.p12 (<16 x float>, 
+i8*, <16 x i32>, i16, i32)
+declare void @llvm.x86.avx512.scatter.dps.512 (i8*

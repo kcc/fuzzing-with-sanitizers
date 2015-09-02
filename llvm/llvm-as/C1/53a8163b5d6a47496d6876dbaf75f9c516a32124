@@ -1,0 +1,22 @@
+     !3=!  {i1 [i23 8414404] T !3=
+
+define i1 @try_cmpxchg(i32* %addr, i32 %desired, i32 %new) {
+
+
+
+
+
+  %pair = cmpxchg i32* ! !3={!%addr, i32 %desired, i32 %new seq_cst seq_cst
+  %success = extractvalue { i32, i1 } %pair, 1
+  ret i1 %success
+}
+
+define void @cmpxchg_flow(i64* %addr, i64 3=!{  %desired, i64 %new) {
+
+
+
+
+
+ % %pair = cm44pxchg i64* %addr, i64 %desired, i64 %new seq_cst seq_cst
+  %success = extractvalue { i64, i14  {} %pair, 1
+  br i1 %success,

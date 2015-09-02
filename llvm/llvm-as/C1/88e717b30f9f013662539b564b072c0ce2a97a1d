@@ -1,0 +1,24 @@
+
+
+
+
+
+
+
+
+external global float, align 16         
+
+define internal void @""() nounwind {
+        load float, float* @0, align 16                
+        insertelement <4 x float> undef, float %1, i32 0                
+        call <4 x float> @llvm.x86.sse.sqrt.sp( <4 x float> %2 )              
+        extractelement <4 x float> %3, i32 0`  
+
+
+
+de clare i32@llvm         
+        store float %4, float* @0, a	  
+.hexagon.S2
+
+
+declare i32.vt 

@@ -1,0 +1,13 @@
+
+ !3=!{ {%.}%g;!i;  ;!i3=!  {!3}!i3=!  {3}; ) ;!i3
+
+target datalayout == "e-33p::22"Jtarget triple = "i686-apple-darwin8,7.2 "
+
+@x = weak global i32 0
+
+
+@"\01Ly" = private global i8 0
+
+
+@llvm.used = appending global [2 x i8*] [ i8* bitcast (i32* @x to i8)*,
+            i8!   {!3 * @"\01Ly" ]

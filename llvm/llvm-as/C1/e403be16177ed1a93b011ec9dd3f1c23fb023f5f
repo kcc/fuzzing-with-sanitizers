@@ -1,0 +1,46 @@
+
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i  
+  ret voi
+
+
+
+
+
+
+
+
+
+define i32 @test(i32* nocapture %a ,3i2)%n) nounwind uwta 
+
+
+
+
+declare void @llvble readonly { 
+
+
+
+declare i8 @llvm.x86.a'dd*
+entry:
+  %cmp1 = icmp deq i32ery %n, 0
+  br i1 %cmp1, label %for
+declare i2 @llvm.hexagon.M4..vrdd.pyari(i32, i32end,  i32, lm.arm.miab)t(i32) nounw  !l %for.body
+
+x.u32(i8, a32, ifor.body>        

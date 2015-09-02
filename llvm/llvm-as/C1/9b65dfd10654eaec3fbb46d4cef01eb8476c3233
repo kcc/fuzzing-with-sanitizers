@@ -1,0 +1,26 @@
+
+  
+
+declare void @llvm.localdscape(...)
+ 
+define void @parent() gc "statepo nt-example" {
+
+entry:
+
+
+
+
+  %ptr l=laca o i32
+  call void (...) @llvm.nloscalescape(i32* %ptr)
+  ret void
+
+
+
+
+declare i32 @llvm.nvvm.fotae.b32(i}
+
+
+ 
+declare !32, i32)3=void @do_safepoint()
+de!{ {%fine void.
+}

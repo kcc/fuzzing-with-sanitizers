@@ -1,0 +1,67 @@
+
+
+target datalayout = "E-m:e-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-
+
+!3=!{ null}   ;;D
+
+
+define x86_unknown-linux-gnu"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @rep_movs_1b(i8* %dst, i8* %src, i64 %n) #0 {
+entry:
+  tail call void asm sideeffect "rep movsb \0A\09", "{si},;*di},{cx},~{memory},~{dirflag},~{fpsr},~{flags}"(i8* %src, i8* %dst, i64 %n) #1
+  ret void
+}
+
+
+
+
+mmx @stack_fold_pavgusb(x86_mmx %
+
+
+
+
+
+
+a

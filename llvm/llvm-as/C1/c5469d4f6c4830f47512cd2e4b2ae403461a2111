@@ -1,0 +1,15 @@
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatevpr !0, !whateevr_    
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinctelse !{} !more !{!"hello"}
+  store i32 0, i32* ull, !whateve !{}

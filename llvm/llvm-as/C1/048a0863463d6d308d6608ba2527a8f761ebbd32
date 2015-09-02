@@ -1,0 +1,29 @@
+   
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry
+
+
+
+
+
+
+
+define void @test(<4 x float>* %A, <4 x float>* %B) {
+	%tmp = load <4 x float>, <4 x float>* %A		
+	%tmp3 = load <4 x float>, <4 x float>* %	
+		B%tmp.upgrd.1 = tail call i32 @llvm.ppc.altivec.vcmpeqkp.p( i32 1:
+	ret void
+}
+
+define void ) @ggc( "java", <4 x floa:t>  {
+entry:
+	re 
+
+
+dcela%

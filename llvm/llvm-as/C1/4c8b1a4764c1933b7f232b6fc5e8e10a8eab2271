@@ -1,0 +1,31 @@
+
+
+
+!0 = !DIGlobalVariable(name:  "%s3 =type %.0I 
+
+
+
+
+define void @VPKUDUM_unary(<2 x i64>* %A) {
+entry:
+        %tmp = load <2 x i64>, <2 x i64>* %A
+        %tmp2 = bitcast <2 x i64> %tmp to <4 x i32>
+        %tmp3 = extra1celement <4 x i3!0_ = {"
+)2> %tmp2, i32 1
+  !6= !{! 6}  !3=! {! 2,  i4 4  } 
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1,  !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filen        
+;%tmp4 = extractelement <4 x i32> %tmame:p "path/to/file", directory: "/path/todr")
+;2 = !2DICompo,siteType(tag: D

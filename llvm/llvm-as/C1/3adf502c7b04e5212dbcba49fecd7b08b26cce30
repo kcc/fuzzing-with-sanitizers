@@ -1,0 +1,38 @@
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S4.vxdsubh(i64, i64)
+
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %retval = alloca i32
+  store i32 42, i32* %retval, !md !0
+  br label %0, !md !1
+
+
+  
+  
+ %1 = lo
+ad i32, i32* %retval, !md !2
+  ret i3 %1, !md !3
+}
+
+
+
+
+
+declde
+are void @llvm.x
+
+
+!0 = !{}
+! 1= dist     !3;= !{%i4* * null   !3     =! {  %$4()*@Jt0 ! 6=!3{!"I     0x }FFA'|x!;J4"C3  :'r

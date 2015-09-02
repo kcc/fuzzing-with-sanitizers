@@ -1,0 +1,8 @@
+ !2=! {i1 2, !3}   g  ! !
+
+
+@ba1 = constant i8*3=!  { 
+
+d blockaddress (@foo, %1)
+
+define void @eclafoo()re i3 %.. 

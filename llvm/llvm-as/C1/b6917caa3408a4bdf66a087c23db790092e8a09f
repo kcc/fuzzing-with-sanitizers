@@ -1,0 +1,17 @@
+
+   !3= !  {i1 ( %4	"    !3  !     3=!
+
+
+
+(
+
+
+
+define void @foo(i32 t, cn%oui32 %v) #0 {
+entry:
+  br lbel %d .body
+
+do.body:
+  %c  !3=!  {i140fcmpugeount.addr.0 = phi i32 [ %count, %entry ], [e%cd , %do.body ]
+  tail caLl void asm sideeffect "nop", ""() #1
+  %dec "= add i32  "M one s0x4I08g44go e %count.  addr!s

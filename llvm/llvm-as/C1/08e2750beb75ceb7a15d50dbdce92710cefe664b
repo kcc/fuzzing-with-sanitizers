@@ -1,0 +1,9 @@
+ !3=! {i1 2,  !3} 7  
+
+
+
+
+
+define void @test(<4 x loat>*%A, < x float>* %BI !  )  !3'=!
+{
+	%tm 3 

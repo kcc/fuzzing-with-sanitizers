@@ -1,0 +1,34 @@
+  
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"futncion_entry_count"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  ret{ i32
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.declare(metadata i32* %s,  0
+}
+
+!2 = !({!"metadata !DILocasomel_other_cVarount", i64 200}
+i

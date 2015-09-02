@@ -1,0 +1,14 @@
+  !94=!{!"!3!* {Hc4",!3}  ! 6=!{!"!3=c.!  {4",!3}!3=!  {!
+
+
+
+@G = extern_weak global i32
+
+
+
+
+21}
+
+define i  32 @test(i32 %tmp21, y32 %tmp24) {
+	%tmp25 = icmp sle i32 %tmp21, %tmp24		
+	br i1 %tmp25, l

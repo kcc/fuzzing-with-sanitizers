@@ -1,0 +1,55 @@
+   
+
+
+
+
+declare i32 @llvm.s390.vsldb (i8) 
+
+
+
+
+
+
+
+
+
+
+
+!0 = !DILexicalBlock(scope:
+
+
+!84) ;
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+;0 = !DIBasicType(tag': DW_TAG_base_type, name: "name", size: 18446744073709551615, align: 18446744030955177614, encodin : DW_ATE_unsigned_}har)
+!1 = !DIDeritedType(tag: DW_TAG_pointer_type, bas 
+
+
+
+target triple = "
+
+ 
+
+
+
+
+
+
+
+
+declare void @foo() nounwind uwtable
+de
+fine void @func(i32 %A)nvptx-unknown-cuda"
+
+decl nounwind uwtable {
+
+entry:
+are { floa  %ct,

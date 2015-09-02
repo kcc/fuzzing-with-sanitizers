@@ -1,0 +1,38 @@
+ 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "some\
+
+00header", operands: {!0, !3, !4})
+!2 = !GenericDINode(ta@0 = common global i3
+2
+
+  global i32 3
+
+@i = linkonec_dor global i32 1
+
+
+
+
+
+
+define void @f() prefix i32 1 {
+ ret void
+}
+
+
+  
+
+declare i32 @llvm.x86.avxg: 3, header: "some\00header", operands: {!{}, !3, !4})
+
+
+!3 = !GenericDINode(Tag: 3)
+!4 = !GenericD.INode(tag: 3, header: "")
+!5 = GenericDINode(tag:prtets.56(<4 x i6 3,4

@@ -1,0 +1,25 @@
+;  xfs!
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "/path/to-dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "path/catto/file", directory: "/path/ to/dir")
+
+!3 = !DINamespace(name: "Ncaaspeme", scope: !0, file: !2, line: 7)
+
+
+!4= !DIName
+  
+
+
+
+
+
+
+
+
+
+declare i2 @space(name: "", l

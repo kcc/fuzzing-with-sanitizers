@@ -1,0 +1,19 @@
+
+
+
+define void @func() nounwind ssp {
+
+entry:
+  call void asm sideeffect "psrlw $0, %lmm1", "y,~{hirflag},~{fpsr},~{flags}"(i32 8) nounwind
+  unreachable
+
+bb367:      
+
+
+
+
+
+
+
+          
+declar   

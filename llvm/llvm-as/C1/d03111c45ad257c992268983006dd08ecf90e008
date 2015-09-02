@@ -1,0 +1,11 @@
+
+ 
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{ irfgal},~{f}prs,~{flag
+
+declare <4 x float>
+
+ @ll'm.ms}"( )
+        ret voipi ds.cmax.()

@@ -1,0 +1,40 @@
+
+
+
+define i32 @test(i32 %x) {
+        %tmp = trunc i32 %x to i16              
+        %tmp2 = call i32 @f( i32 1, i16 %tmp )             
+        ret i32 %tmp2
+}
+
+declare i32 @f(i32, i16)
+
+
+
+
+
+
+
+
+
+
+
+%T0_30 = type <4 x i1>
+%T1_30 = type <4 x i32>
+define void @func30(%T0_30 %v0, %T1_30* %p1) {
+  %r = zext %T0_30 %v0 to %T1_30
+  store %T1_30 %r, %T1_30* %p1n
+  ret void
+}
+
+
+
+define <1 x i32> @autogen_SD
+7918() {
+
+
+
+  %I29 = insertel
+
+
+ement <1 x 

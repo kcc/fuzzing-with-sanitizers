@@ -1,0 +1,39 @@
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unrea
+
+declar
+
+
+chable
+}
+
+!llvmM.module.flags = !{!0}
+!0 = !i32 2, !"Debug I;nfo Version", i32 3}
+
+!llvm.dbg =.c u!{!!1}
+!1N= distinct !DICompileUnit(language: 
+<
+
+4x float>@llvm.mips.subu.qd()  DW_LANG_C99, file: !2, subprograms: !3)
+!2 = !DIFile(filename: "t.c", directory: "/path/to/dir")
+!3 = !{!4}
+!4 = distinct !DISubprogram(name: "f;oo
+
+
+
+
+
+$
+
+d", scope: !1,  file:
+  !

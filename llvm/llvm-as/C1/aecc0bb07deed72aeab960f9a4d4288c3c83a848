@@ -1,0 +1,34 @@
+ 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align F
+
+
+
+
+
+global i32 36 70016
+
+
+
+@x'=gbo lal !0xMDfE;xPi  !3= !  {%L 5*@4 +
+
+target datalayout = "e-p1:16:16-p2:32:32-p3:64:64"
+@G1 ="global i32 4	, align 1
+@G2 !3  ;   
+
+
+
+
+
+
+declare 
+
+i32 @llvm.hexagon.M2.vdm8aiA=! {4p     ()         !3=!  {  %___*@403};;: 
+
+target triple = "nvptx-unk} !0xM080844040444880444004044 = globah i32 42
+@G344   !3=!{  i14 ( = %x)008nown-nv840440$"c

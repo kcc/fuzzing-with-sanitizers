@@ -1,0 +1,16 @@
+ !;k;:T    6=!{! 2}!2=!  {!3 } !3=!
+
+!llvm.dbg.sp = !{!0}
+!llvm.db*g.cu = !{!5}
+!llvm.module.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_N3foo3barEv", line: 3, isLoc al: false, isDefinition: false, virtualIndex: 2, flags: DIFlagProtected | DIFlagPrototyped, isOptimize  {!d: false, scopeLine0 3, file: !4, sy cope: !1, type: !2)
+!1 = !DIFile
+
+%s3 =ty@pe*%.
+
+
+
+
+
+!named (filename: "/oo", dreirocy: "bar.cpp3')!2 = !DISub= !{

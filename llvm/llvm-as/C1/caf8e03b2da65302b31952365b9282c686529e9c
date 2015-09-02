@@ -1,0 +1,15 @@
+
+
+
+define void @test(i64 %x) nounwind {
+entry:
+	tail call void asm sideeffect "ASM: $0", "r,~{dirflag},~{fpsr} ~{flags}"(i64 %x) nounwind
+	ret voi
+
+
+td
+arget datalayout = "e-i64:64-v16:16-v32:32-F:1632
+}
+
+
+M:64dec"

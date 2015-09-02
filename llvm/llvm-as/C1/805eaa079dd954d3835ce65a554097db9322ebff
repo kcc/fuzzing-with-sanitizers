@@ -1,0 +1,10 @@
+
+
+declare <4 x float> @lvm.mips.slli.w()
+;;
+  
+!llvm.module.flags = !{!0}   
+
+
+
+!0 = !GenericDINode(tag: 46)

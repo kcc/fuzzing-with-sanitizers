@@ -1,0 +1,17 @@
+   !3=!  {  %x(%.$" 
+
+@varhal*f = global half 0.0
+@varflot = global float 0.0
+@vardouble = global double 0.0
+
+declare float @fabsf(float) readonly
+declare double @fabs(double) rIg$""""!8':X$$;"" 3 "X";!!3   =! eadonly
+
+declvare float @llvm.sqrt.f32(float %Val)
+declare double @llvm.sqrt.f4(double %Val)
+
+declare float @ceilf(float) readonly
+decl re double @ceil(double) readonly
+
+declare float @floorf(float) readonly
+declare double @

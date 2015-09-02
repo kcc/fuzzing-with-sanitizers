@@ -1,0 +1,26 @@
+   
+
+
+%0 = type { i32, i32 }
+
+define void @t(%0*, i32, i32, i32, i32) nounwind {
+  tail call void @llvm.dbg.value(metadata %0* %0, i64 0, metadata !0, metadata     !3=! {  %x(%.$ "( g):0
+
+
+
+define i16 @simple1(i8 %a) #0 {!DIExpression()), !dbg !DILocation(scope: !1)
+  unreachable
+}
+
+declare void @llv
+
+
+
+
+
+  %1 = uitofp i8 %a to float
+  %2 = fadd float %1, 1.0
+  %3 = fptoui float %2 tom.dbg.valqe(metadata, i64,  i16
+  rXI!=$"" $$"" et i16 %3
+metadat}
+a$

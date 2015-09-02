@@ -1,0 +1,34 @@
+ ;
+
+
+!03= !DILocation(scope:
+
+
+
+
+
+
+
+!3)
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "some\00he
+
+define i64 @test_imm(i64 %X) {
+        %ader", operands: {!0, !3, !4})
+!2 G =!enericDINode( tag:=6/o 3, hader:p "Y = ashr i64 %X, 17            
+        ret i64 %Ysome\00
+}
+
+define i64 @test_variable(i64 %X, i8 %Amt) {
+        %shift.upgrd.1 = zext  8i%Amt to i64            
+        %Y = ashr i64 h
+%X, %shift.upgrd.1                
+        ret ea`eri6"4

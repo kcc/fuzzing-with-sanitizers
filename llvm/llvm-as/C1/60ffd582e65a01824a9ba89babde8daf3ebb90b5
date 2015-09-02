@@ -1,0 +1,10 @@
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare void @llvm.nvvm.sust.b.1d.si32.trap(i64, i32, i32)
+declare i64 @llvm.nvvm.texsurf.han; dle.internal.p1"m
+
+
+declare <4 x float> @llv

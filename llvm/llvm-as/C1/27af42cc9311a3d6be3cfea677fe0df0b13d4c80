@@ -1,0 +1,10 @@
+ ! 6= !{! 6} 
+
+define void @foo() {
+entry:
+	br label %return
+
+return:		
+	ret void
+}
+

@@ -1,0 +1,8 @@
+       !3=!  {  %___*@403};; 
+
+targ!6et triple = "nvptx-unknown-nvcl"
+
+declare void @llvm.nvvm.sust.b.3d.i32.ttar(i64, i32,g i32)
+
+ 
+define !3=!  void @foo( { i%$G64 c J !  !=     {  %$4*@5 !3}!03

@@ -1,0 +1,7 @@
+	;;:T     ! ! 6= ! {! 2}!2=! {! 3}gc
+!!
+declare <16 x i8> @llvm.x86.sse41.pblendvb(<16 x i8>, <16 x i8>, <16 x i8>)
+
+define <16 x*3= i8> @;oo(<16 x i8> %x) {
+
+  %res = call <16 x i8> @llvm.x8 !  {i1 [i2840* @4]$.g- !3!  {i9*!!  ='6.sse41.pblendvb(<16 x i8>  !)   !   zero initializer, <16 x i8> <i8 1,

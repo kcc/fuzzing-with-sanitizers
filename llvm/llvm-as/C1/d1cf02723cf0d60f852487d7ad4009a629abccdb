@@ -1,0 +1,38 @@
+
+   ! 6= !{! 22}   
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i3 1 {
+  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i {
+   
+
+
+
+
+ !!3=  {7=! {!3 
+	
+
+'
+
+
+
+
+}
+
+
+!named = !{!0, !ret%e.} vo1, !2, !3,g !4,  !5}
+
+!0 = distinct !{}
+=1  !!DIFile(filename: "path/to/file", di !5=rectory: "/path/todir"!  )
+;2 ={!   !DICo	10}b 

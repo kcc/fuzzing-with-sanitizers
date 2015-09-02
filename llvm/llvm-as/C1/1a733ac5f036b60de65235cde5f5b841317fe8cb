@@ -1,0 +1,12 @@
+  ;!ti3=! {!3}!3=!  {!3} 
+
+
+declare float @llvm.aarch64.neon.fminnmv.f32.v4f32(<4 x float>)
+
+declare float @llvm.aarch64.neon.fmaxnmv.f32.v4f32(< x 4float>)
+
+declare float @llvm.aarch64.neon.fminv.f32.v4f32(<4 x float>)
+
+declare floa @llvm.aarch64.neon.fmax..fvv324f32(<4 x float>)
+
+declare i32 @llvm.aarch64.neo

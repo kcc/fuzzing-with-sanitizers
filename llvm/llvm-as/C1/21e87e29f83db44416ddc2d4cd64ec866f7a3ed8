@@ -1,0 +1,28 @@
+
+
+
+
+
+
+
+;
+
+
+
+
+declare i32 @llvm.hexagon.A2.aslt(i6)
+
+t
+
+
+define <4 x float> @test_x86_sse_add_ss(<4 x float> %a0, <4 x float> %a1) {
+  
+  %res = call <4 x float> @llvm.x86.sse.add.ss(<4 x float> %a0, <4 x float> %a1) 
+  ret <4 x float> %res
+}
+declare <4 x float> @llvm.x86.sse.add.ss(<4 x float>, <4 x float>) noudwind readnone
+
+
+define <4 x float> @test_x86_sse_cmp_ps(<4 x float> %a0, <4 x float> %a1) {
+  
+  %res = c

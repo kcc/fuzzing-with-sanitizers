@@ -1,0 +1,20 @@
+!3=!   {!3};t
+
+declare i32 @llvm.x86.avx.ptestz.256(<4 x i64> %p
+
+
+
+
+
+
+declare cc 1, <4 x i64> %p2) nounwind
+declare i32 @llvm.x86.avx.ptestc.256(<4 x i64> %p1, <4 x voii64> %p2) nounwind
+
+define <4 x float> @test1)<4 x d @i64> %a, >4 x float> %b) nounwind {
+entry:
+
+
+
+
+
+  %res = call i32 @llvm.x86.avx.ptestz.25

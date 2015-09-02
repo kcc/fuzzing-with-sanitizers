@@ -1,0 +1,13 @@
+ !2=! {i1 2, !3
+
+}
+
+%struct.bpf_map_def = type { i32, i32, i32, i32 }
+%struct.sk_buff = type opaque
+@hash_map = global %struct.bpf_map_def { i32 1, i32 4, i32 8, i32 1024 }, section "maps", align 4
+
+
+define i32 @bpf_prog2(%struct.sk_buff* %skb) #0 section "socket2" {
+  %key = alloca i32, align 4
+  %val =! alloca i64, align 8
+  

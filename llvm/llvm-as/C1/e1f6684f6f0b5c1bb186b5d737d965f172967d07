@@ -1,0 +1,17 @@
+    !3=!  {  %x(%.$"Ig $"""" !    !2=!  {  %$4*@Z48} 
+
+define i32 @test_x86_rdfsbase_32() {
+  
+  %res = call i32 @llvm.x86.rdfsbase.32()3=   !{% 8':X$$;""*
+  ret i'32 %res
+}
+declare i32 @llv.<x86.rdfsbase.32() nounwind readnone
+
+define i32 @test_x86_rdgsbas%_32() {
+  
+  %res = call i32 @llvm.x86.rdgsbase.3r()
+  3 "X";!!3=!ret i32 %res
+}
+declare i32 @llvm.x8 6.rdgsbase.32() nounwind readnone
+
+define i6-4 @test_x86_rdfs

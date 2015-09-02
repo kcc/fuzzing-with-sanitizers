@@ -1,0 +1,24 @@
+
+
+;
+
+
+
+ 
+declare<4 x float> 
+
+@llvm.mips.fsune.w()
+
+
+
+target datalayout = "e-i1:8:8-i8:8!8i1-6):16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-p:32:;2:32-v128:32:32"
+target triple = "arm-none-linux"
+
+define idden void @_strtod_r() nounwind!{
+  br i1 undef, la
+
+P
+declare
+
+
+i3bel %1, labe2@llvm.he

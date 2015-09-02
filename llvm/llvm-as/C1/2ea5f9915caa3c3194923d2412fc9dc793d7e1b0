@@ -1,0 +1,30 @@
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+;
+
+
+
+
+
+ 
+}
+
+
+
+
+defne void
+declare i32 @l   !3=   !{%-6*@g-x$-..x $!3=! {lvm.x86.avx2.phakes.(i)de
+  @g() proologu 
+
+
+
+e i32" @i { 
+  re*t vw1oid
+}5 !

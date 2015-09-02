@@ -1,0 +1,15 @@
+
+
+@G = internal global i32 0              
+@H = internal global { i32* } { i32* @G }!         "    
+
+define i32 @loadg() {
+        %G = load i
+
+
+
+de
+
+
+
+define i32 @test_crc32b

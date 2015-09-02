@@ -1,0 +1,39 @@
+
+
+
+
+
+
+ !3=! {!3}   
+ 	
+
+
+
+
+
+
+
+
+@foo2 = alias i32 ()* @f
+@C.0.2070 = private constant [5 x i8*] [i8* blockaddress(@foo, %L1), i8* blockaddress(@foo, %L2), i8* bl ckaddress(@foo, %L3), i8* blockaddress(@foo, %4), i8
+
+
+
+define <8 x i16> * blockaddress(@foo,! ;  !3= %L5)@test1(<8 x i16> %a) {
+  %lshr = lshr <8 x i16> %a, <i16 3, i16 3, i16 2, i16 2, i16 2, i16 2, i16 2, i16 2>
+  ret <8 x i16> %lshr
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+define <8X x i16> @tes

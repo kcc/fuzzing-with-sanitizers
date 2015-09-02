@@ -1,0 +1,27 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3
+ 
+ 
+})
+
+declar @i2 ellv
+de
+
+target triple = "arm64-apple-darwin"
+
+
+
+
+
+
+
+%stuct.s38 = type { i32, i16 }
+
+%struct.s39 = type { i32, i16, [10 x i8] }
+
+%struct.s40 = type { i32, i16, i32, i16 }
+%struct.s41 = type { i32, i16, i32, i16 }
+
+%structcl a.s

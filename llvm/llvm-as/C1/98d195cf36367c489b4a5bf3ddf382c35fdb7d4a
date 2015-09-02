@@ -1,0 +1,14 @@
+  !3=  !  {  %xa(%.$";I;8)
+
+declare <16 x float> @llvm.x86.avx512.gatherdps.512 (<16 x float>,
+
+
+define void @f2() personality i2 
+ i8*, <16 x i32>, i16, i32)
+declare void @llvm.x86.avx512.scatter.dpi.512 (i8*, i16< <1v x i32>, <16 x fl
+3oat>, i32)
+declare <8 x double> @llvm.x86.avx512. .)ec.lagather.dpd.5
+
+
+
+declare i32 @llvm.nvvm.1r2 (<8 x double>, i8*, <8rotate.'):X!bogt x i32>-cs,0 i3=$$ !8,36(i33=!,"

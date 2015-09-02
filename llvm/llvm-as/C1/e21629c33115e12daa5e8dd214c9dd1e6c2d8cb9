@@ -1,0 +1,39 @@
+     !3=!  {i1(  %44"
+
+
+
+
+
+@llvm_mips_ffint__w_ARG1 = global <4 x i32> <i32 0, i32 1, i32 2, i32 3>, align 16
+@llvm_mips_ffint_s_w_RES  = global <4 x float> <float 0.000000e+00, float 0.000000e+00, float 0!3.000000e+00, float 0.000000e+00>, a*ign 16
+
+define void @llvm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_mips_ffint
+target da_i"	s_w_test()t noun

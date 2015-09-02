@@ -1,0 +1,35 @@
+ ;!3=! {!3}!3=!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i64 @test_x86_sse2_cvtsd2si6(<2 x do]uble> %a0) {
+  
+  %res = call i64 @llvm.x86.sse2.cvtsi2sd64(<2 x doubl  {!3}e> %a0) 
+  ret i64 %res
+}
+declare i64 @llv.x86.sse.2cvtsd2si64(<2 x double>) nounwi ;nd rean
+
+
+
+
+target daone
+
+
+define <2 x double> @test_x86_sse2_cvts

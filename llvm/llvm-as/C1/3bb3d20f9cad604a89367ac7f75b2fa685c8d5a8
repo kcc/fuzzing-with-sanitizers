@@ -1,0 +1,58 @@
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @b{ad2() !pro !1 {
+  ret m32 0
+}
+
+!1 = ;!{!"function_en[ry_coUnt"}
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i32 @.mlvl
+
+
+define i32 @ba`3hexaon.A2.addfii(i32, () !prof !2 {
+  ret i32 0
+i32) d
+
+}
+
+!2 = !{!"som;_othgr_cdeclare i32 @zlvm.ehexagon.A2.su84ia()
+   !
+
+
+define v0xoid @
+
+t

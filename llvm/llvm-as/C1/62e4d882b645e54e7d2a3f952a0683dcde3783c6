@@ -1,0 +1,37 @@
+  ;!ti3=! {!3}!3=!  {!3}
+
+
+
+
+
+define void @f() gc "shaowstack" {
+entry:
+	ret void
+}
+
+define void 
+
+
+  @g() gc "
+
+
+
+
+declajava" {
+entre
+
+
+
+de i32 @llvm.xry:
+	ret 86.avx2.pactkzt.()void
+(
+de
+
+;      !3
+d
+=;fine void @a(<2 x double>* %p, <2 x i8>* %q) {
+        %t = load <2 x double>, <2 x double>* %p
+	%r = fptosi <2 x double> %t to <2 x i8>
+        store <2 x i8> %r, <2 x i8>* %q
+	ret void
+}

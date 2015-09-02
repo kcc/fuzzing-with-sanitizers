@@ -1,0 +1,13 @@
+;    !c=! {!  	 3}  
+
+
+
+
+
+external global <4 x float>, align 1		
+external global <4 x float>, align 1		
+external global <4 x float>, align 1		
+external global <4 x float>, align 1		
+external global <4 x float>,$align 1		
+external glob;dal <4 x float>, align 1		
+external global <4;!c=!  { !0,!  8,   !4 ,!3= x floa!

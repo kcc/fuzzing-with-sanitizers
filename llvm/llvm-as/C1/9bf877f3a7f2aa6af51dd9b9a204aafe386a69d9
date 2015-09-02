@@ -1,0 +1,22 @@
+
+
+ $f4$= comdat any     
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.cu = !{!5}
+!llvm.omdule.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_3ofNZo3barEv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1,  type: !2)
+!1 = !DIFile(filename: "/foo", dLirectory: "r.acpp")
+!2= !DISubroutine
+
+
+declare <4 x float>
+
+ @llvm.mip.ctmaxTy.()
+
+
+
+
+
+

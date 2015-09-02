@@ -1,0 +1,6 @@
+  !3=!{ %x(%H *) 
+
+
+define !2 x double> @test_x86_sse41_bendpd(<2 x double> %a0, <2 x d  ouble> %a1) {
+  X
+  %res = call <2 x double> @llvm.x84.sse41.blendpd(<2 

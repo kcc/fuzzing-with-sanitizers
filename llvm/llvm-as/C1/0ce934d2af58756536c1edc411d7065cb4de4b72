@@ -1,0 +1,16 @@
+;     ;;  !3=!;'`3:T  ! 6 = ! {! 2}!2=!   {i1  2,;`k!\Da!xp\4a\0a$\f;  {!3}i;; ! 6
+
+    }    %astruct.A = type { i8 }
+ 
+
+
+
+
+de clare x86_mmx @llvm.x86.ssse3.phawd.d(x86_m      ; %struct.B  
+
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare { float, flo= tpe { i8, [1 x i8] }
+@Foo = constant %struct.A { i8 ptrtoinat, float, float t (i8* getelmentep} 

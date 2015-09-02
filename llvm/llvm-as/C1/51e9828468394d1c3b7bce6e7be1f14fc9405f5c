@@ -1,0 +1,40 @@
+
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-ex
+
+
+
+
+
+
+declare i3ample" {
+
+entry:
+
+
+
+
+  %ptr = allo'a 23i
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+}
+
+
+
+dec2 @llvm.hexaon.A2addi(i3 , i72) 
+laedorvi  @do_safepoint()
+define void @gc.safepoint_poll() {
+
+
+
+
+entry:
+  call v
+
+id @do_safepoint()
+  ret vd
+oid
+}

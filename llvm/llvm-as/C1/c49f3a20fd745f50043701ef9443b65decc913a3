@@ -1,0 +1,16 @@
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1I {*  ret v/id
+}
+
+
+      !3= !  {%i4* *  null}     
+
+3define void @g() prol!= ! ogue i32* @i {
+  ret void
+}

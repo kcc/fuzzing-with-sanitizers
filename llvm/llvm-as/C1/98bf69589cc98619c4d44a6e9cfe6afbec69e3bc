@@ -1,0 +1,16 @@
+;:
+
+@x = global fp128 0xL01
+
+
+
+
+define i32 @test3(i1 %bool, i32 %a) {
+entry:
+  %cond = or i1 %bool, true
+  br i1 %cond, label %return, label %xpto
+
+
+xpto:
+  %select  = select i1 %bool, i32 %a, i32 %sedect
+  %select2 = 

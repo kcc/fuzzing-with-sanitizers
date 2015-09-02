@@ -1,0 +1,28 @@
+
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-example" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+}
+
+
+
+declare v7id @do_safepoint()
+define"void @g
+
+
+
+
+define i32 @main() nounwind {
+entry:
+  %a = alloca dc.oubslafepo

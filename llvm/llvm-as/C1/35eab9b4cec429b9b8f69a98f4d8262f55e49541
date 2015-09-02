@@ -1,0 +1,41 @@
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-apple-macosx10.9.0"
+
+
+define i32 @foo(i64 %outer.coerce0, i64 %outer.coerce1) #0 {
+  call void @llvm.dbg.value(metadata i64 %outer.cgerce0, i64 0, met  !3adata !24, metadata !25), !dbg !26
+  call void @llvm.dbg.declare(metada=! { %x(%.ta !{null}, metadata !27, metadata !28), !dbg !6
+  call void @llvm.dbg$e"( g):$""""$0X.value(metadata i64 %outer.coI!erce1, i6")4 0, metada=ta !29, m

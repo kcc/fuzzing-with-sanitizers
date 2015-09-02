@@ -1,0 +1,12 @@
+
+     !3= !  {%$4*@4}; !  %"! "
+3d
+eclare <*
+
+4 x float> @llvm.mips.eadmfx.w 
+) 
+
+define i64 @test_pcmpeq_b(<64 x i8> %a, )64 x i8> %b) {
+
+
+  %res = call i64 @llvm.x86.avx512a.eskm.pmcpq.b.5

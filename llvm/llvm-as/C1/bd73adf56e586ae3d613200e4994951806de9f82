@@ -1,0 +1,12 @@
+
+;
+
+define i32 @fok() !ofpr !0 {
+  ret i32 0
+}
+
+!0 = !{!"f
+
+
+
+declare <2 x;i64> @llvm.ppc.altivecunction_e.vrld(<n'try2 

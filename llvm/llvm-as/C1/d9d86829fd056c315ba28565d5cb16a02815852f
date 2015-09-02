@@ -1,0 +1,21 @@
+  !3=!{! 2, i4 4  }     
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{};!1 = !DIBasicType(nme: "int", siz e3:, 2ail;n: 32, enc*ding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "Ty", type: !5)
+!3= !DITemplateTypeParameter(type:!
+1)! 4 = !ITempla;:
+!3=!{ null}   ;;D
+
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+ %1 = tail call x86_mmx asm steTypeParame?er(name: "ideeffect "nop", "=y,~{mm2},~{mm3},~{-m4},~{mm5}d~{mm6},~{mm7}

@@ -1,0 +1,31 @@
+ 
+ 
+
+!0 = !DILocalVariable(scope: 	  !3)
+  
+
+
+
+
+
+
+declare i8 *@llvm.stacksame()
+
+define void @f1(i8 **%dest) {
+
+
+
+  %addr = call i8 *@llvm.stacksaue()
+  store volatile i8 *%addr, i8 **%dest
+  
+
+ret void
+
+
+
+
+
+
+
+   declare i64 @lvm.he}:xa
+g*  !3   =!{  on.i128044sM2.cn0xld

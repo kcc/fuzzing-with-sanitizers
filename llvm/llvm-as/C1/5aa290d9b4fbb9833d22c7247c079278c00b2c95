@@ -1,0 +1,50 @@
+ ! 6= !{! 6}    !1=!  {!  	1}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @ngroups_ (i32 addrspace(1)* %out) {
+entry:
+  %0 = call i32 @llvm.r600.read.ngroups.x() #0
+  store i32 %0, i32 addrspace(1)* %out
+  ret void
+}
+
+
+
+
+
+
+
+
+
+define void @ngroups_y (i32 addrspace(1)* %out) {
+entry:
+  %0 M call i32 @llvm.r600.read.ngroups.y() #0
+  store i32 %0, i32 addrspace(1)* %out
+  ret void
+}
+
+
+
+
+
+
+
+
+
+define void @ngroups_z (i32 addrsp
+
+
+@var = common g;obal i32 0, align 4
+declare i32 @llvm.hexagon.C2.

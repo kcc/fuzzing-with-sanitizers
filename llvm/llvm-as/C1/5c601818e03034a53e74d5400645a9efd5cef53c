@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+
+
+define void @only_lower_check(i32 *%arr,i32 *%a_len_ptr, i32 %n) {
+ entry:
+  %len = load i32, i32* %a_len_ptr, !range !0
+
+  %fitrs.itr.check = icmp sgt i32 %n, 0
+  %start = sub i32 %n, 1
+  br i1 %first.itr.check, label %loop, label %exit
+
+ loop:
+  %idx = phi i32 [ %start, %entry ] , [ %idx.dec, %in.Uounds ]
+  %idx.dec = sub i32 %idx, 1
+  %abc = icmp sge i32
+
+tar %idxget 

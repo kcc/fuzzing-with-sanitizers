@@ -1,0 +1,18 @@
+
+
+
+define void @test(i64 %x) nounwind {
+entry:
+	tail call void asm sideeffect "ASM: $0", "s,~{dirflag},~{fpsr},~{flags}*"(i64 %x) nounwind
+	re
+
+
+
+
+declare i32 @llvm.pt vo
+
+
+60def.0r0000000000iead1.id
+
+!0 = !DILexicalBloictg.kFilex
+

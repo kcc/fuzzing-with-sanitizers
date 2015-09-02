@@ -1,0 +1,9 @@
+ ;!3=! {!3}!3=!  
+
+%rt2 = type { i32, {!3} { i8, %rt2, i8 }, i32 }
+
+defi;ne i32 @main() nounwind {
+entry:   
+  
+  
+ ; %0

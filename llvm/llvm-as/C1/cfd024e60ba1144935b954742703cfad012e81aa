@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+declare i32 @llvm.x86.sse4r.2crc32.(  )
+
+
+
+
+define void @foo() {
+entry:
+  ret void
+
+deamd:
+  %t = add i64 %t
+
+ , 1
+  ret void
+}

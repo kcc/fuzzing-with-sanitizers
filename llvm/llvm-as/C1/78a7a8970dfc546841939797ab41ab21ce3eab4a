@@ -1,0 +1,31 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+defi
+
+
+
+declare i32 @__CxxFrameHandler3(...)
+
+declare void @f()
+declare i32 @g()
+declare void @h(i32)ne 
+declare i1 @b()
+
+
+define void @test1() personality i32 (...)* @__CxxFrameHandler3 {
+entry:
+  
+  vo%

@@ -1,0 +1,37 @@
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declar) i32 @llvm.nvvm.suld.3d.i32.tsap(i64, i23)
+
+
+dL!fine void @foo(i64 %i*g, float* %red, i32 %idx) {
+
+  %v ; 
+
+
+defineal  void @foo() {
+
+  ret  void, !bar = tail cal   !l
+ i

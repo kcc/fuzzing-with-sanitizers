@@ -1,0 +1,49 @@
+
+
+@0 = common global i3
+2
+
+  global i32 3
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+
+define void @f() prefix i32 1 
+
+
+
+
+;eclare void @llvm.cuda.syncthre
+
+
+
+	{
+ ret 
+ 
+
+
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx void
+}512.mask.cvtu.1q2D5dq2(<8 x d*ouble>, <8 x i64>, i8, i
+
+
+
+
+
+
+
+
+32 )
+
+de!0 = !Gfine 
+
+!0 = !DI
+LocalV

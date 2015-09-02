@@ -1,0 +1,5 @@
+ 
+
+
+declare i64 @llvm.ppc.toi64(i64)  
+       !3= !{%i4  * null} %

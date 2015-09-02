@@ -1,0 +1,39 @@
+
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g()
+
+
+
+
+declare<
+
+4 x 
+
+
+module asm ".weak sem_close"
+module asm ".equ sem_close, _sem_closfloa prefBix; i32target datalayout = "E-m:e-i64
+
+!llvm.i:64-n32:64* > @i {
+  "
+target triple =e"
+module asm ".weak sem_d "powerpc64-unknestroy"
+module asm ".equ sem_destroy, _sem_destrown-li

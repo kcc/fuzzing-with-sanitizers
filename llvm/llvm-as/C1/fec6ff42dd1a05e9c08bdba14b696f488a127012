@@ -1,0 +1,5 @@
+ !3=! {i1 3,  !3} 
+
+%0 = type  i32, void}() * *
+@llvmglobal_cO ! 6=! {! 6} j tors = appending global [0 x %0] zeroinitializer
+

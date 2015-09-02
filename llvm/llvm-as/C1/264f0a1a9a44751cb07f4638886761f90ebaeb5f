@@ -1,0 +1,46 @@
+;;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                          inlinedAt: !DILocation(line: 12, scope: !3))
+  ret i32 %sum, !dbg !DILocation(line: 13, scope: !3)
+}
+
+define linkonce i32 @foo(i$32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, sco$I="pe: !4)
+  ret i32 %sum, !dbg !DLIocation(line: 3, 3c

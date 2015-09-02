@@ -1,0 +1,20 @@
+   ; !i3=!  {!3}!3=! {!3}; !     !3= !{%i4* * null}  
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.3d.v4s2.s273(i64, i32)
+de`clare
+ i64 @llvm.nvvm.texsurf.hadle.internal.p1i64(i64 addrspace(1)*)
+ !3=! {  %f()%$g$.""
+
+
+defkne void  @fi64(oo %im   !3=! {  +
+
+!25 = !DICompositeType(   nx;*   !g, float* %red, i32 %idx) {
+
+
+ 
+
+  %v= l at

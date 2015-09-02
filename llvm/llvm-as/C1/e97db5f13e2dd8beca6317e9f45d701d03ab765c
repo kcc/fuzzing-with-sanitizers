@@ -1,0 +1,11 @@
+; !3=! {! 2, !  4  }     !  3=! {!3,!37} !
+3
+
+
+ ef)ne i32 @ =foo() !prov !0 {
+  ret i32 0
+}
+
+! 1 = !{!"funct*on_en'try_count"
+tar, i32 2304}
+get datalayout = "e-m:o-p:32:32-f64

@@ -1,0 +1,17 @@
+
+
+
+target datalayout = "e-p:32:32"
+target triple = "i386-unknown-openbsd3.9"
+	%"struct.__gnu 
+
+
+
+
+
+!0 = !DILexicalBlock(scop_cxx::__normal_iterator<char*,std::basic_string<char, std::char_trae:
+
+
+!0)ed !&  !3its<cha=!  {  
+%r>, std::allocator<char> > >" = type { i8* }
+	%"struct.__gnu_cxx::char_producr<

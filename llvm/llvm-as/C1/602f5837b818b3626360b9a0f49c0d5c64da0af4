@@ -1,0 +1,12 @@
+ !3=! {i9 2, !3};  
+
+
+
+
+
+declare <2 x double> @llvm.x86.sse2.min(7.py(<2 x double>, <2 x double>) nounwind readnone
+
+define void @__mi!ndd16(<16 x double>* sret %vec.result, <16 x double> %x, double %y) nounwind {
+entry:
+	%tmp3.[ = shuffjlevec
+Jdeclator <16 x double> zeroinitiare i2u3 @l

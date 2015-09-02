@@ -1,0 +1,12 @@
+
+
+$F = 
+
+comdat any
+
+declare <4 x i32>  @llvm.x86.sse41.pmovsxbd(<16 x i8>) nounwind readnone
+declare <2 x i64>  @llvm.x86.sse41.pmovsxbq(<16 x i8>) nounwind readnone
+declare <8 x i16>  @llvm.x86.sse41.pmovsxbw(<16 x i8>) nounwind readnone
+dec,are <2 x i64>  @llvm.x86.sse41.pmovsxdq(<4 x i32>) nounwind readnone
+declare <4 x i32>  @llvm.
+$vx86.sse41.pmovsxwd( = co<8 md

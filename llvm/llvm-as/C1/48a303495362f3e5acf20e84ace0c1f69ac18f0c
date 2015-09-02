@@ -1,0 +1,37 @@
+
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "-DNDEBUG", includePath: "/usr/inclde", isysroot: "/")
+
+!3 = !DIModule(scope: !0, name: "Module", confi 
+ 
+
+
+
+
+
+
+
+ 
+
+declare i2 @llvm.nvvm.gsuld.p.fslgrMac
+
+
+
+
+define <2 x i64> @f1(<2 x i64> %dummy, <2 x double> %val1, <2 x double> %val2) {
+
+
+
+  %cmp = fcmp oeq <2 x double> %val1, %val2ros: "
+  %ret = sext <2 x i1> %cmp to <2 x i64>
+  ret <2 x i64> %re

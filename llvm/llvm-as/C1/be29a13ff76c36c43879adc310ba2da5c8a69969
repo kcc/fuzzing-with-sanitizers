@@ -1,0 +1,80 @@
+
+
+
+
+
+
+
+
+
+target datalayout = "e"
+
+
+
+
+
+	
+
+
+
+
+
+declare void @llvm.arm.hjMtc(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shado  
+
+
+
+
+
+
+declare i64 @llvm.hexagon.4v|adsubh(iV6wstack" {
+entry:
+	ret vo!3=! {!3}
+
+L
+
+
+
+=
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call voidid
+
+
+define 
+
+
+
+
+
+
+
+vo
+id @g() g

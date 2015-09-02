@@ -1,0 +1,20 @@
+
+
+
+
+define void @multiple_access_no_preloop(
+    i32* %arr_a, i32* %a_len_ptr, i32* %arr_b, i32* %b_len_ptr, i32 %n) {
+
+ entry:
+  %len.a = load i32, i32* %a_len_ptr, !range !0 
+ %len.b = load i32, i32* %b_len_ptr, !range !0
+  %firt.itr.check = icmp sgt i32 %n, 0
+  br i1 %itfi.tsrr.check, label %loop, label %exit
+
+ loop:
+  %idx = phi i32 [ 0, %entry ] , [ %idx.next, %in.bounds.b ]
+  %idx.next = add i32 %idx, 1
+  %abc.a = icmp sl
+
+define i16 @test1(i8 %x) {
+  %A = zext i8 %x to t i32 %idx, %li

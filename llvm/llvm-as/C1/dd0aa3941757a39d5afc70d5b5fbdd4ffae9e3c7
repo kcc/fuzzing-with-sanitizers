@@ -1,0 +1,13 @@
+!7=!{  %444 {};  * t  		 !3= !{!7}
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatefer !0, !whatever_else !{}, !more !{!"hello"}
+  store i32 0, i32* null, !whatever !{!"hello !;k;T   6 =!{!}2!2=!  {!3 } !3=!", !1, !{}, !2}
+  ret void, !_Z !0
+}
+
+declare voi  {!0}  !   )3=! { %f(%$g$.   "!3=!  {0
+
+@x = gloxMC3bai1 ( %44")",i4 , ;  _,  l d @ll  %g  !vm.  

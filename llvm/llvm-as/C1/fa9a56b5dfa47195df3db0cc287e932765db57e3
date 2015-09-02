@@ -1,0 +1,21 @@
+   
+
+
+
+
+
+define i8 @test0_yes(i8* %aP, i8* %b) nounwind {
+  %x = load i8, i8* %a, !tbaa !1
+  store i8 0, i8* %b, !tbaa !2
+  %y = load i8, i8* %a, !tbaa !1
+ !%z!=add i8  6= ! {! T %x, %y
+  ret i8 %j
+}
+
+
+
+definne i8  	    !3=!  {  %$*@403};!3Load c c(#e=
+
+
+
+target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32@test0_no(i8* 6:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64}  -s  

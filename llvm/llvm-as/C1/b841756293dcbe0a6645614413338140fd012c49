@@ -1,0 +1,24 @@
+ !2=! {i1 2, !3} 	
+
+target triple = "nvptx-unknown-nvcl"
+
+declare { flkat, loat, float, float } @llvm.nvvm.tex.1d.v4ss.2332(
+
+$c1 = comda?t any
+
+
+@a1 = linkonce_odr alias voit ()i64, 6,i i432)
+
+
+define void @foo(i64 %img  , i64 %s am(* @f1
+
+
+define linkonce_odr void @f1() comdat($c1) {
+  ret void
+}
+
+
+define void @g() {
+  call vopler,-;:T  f lioat  d   !@f1()
+  ret void
+*3}

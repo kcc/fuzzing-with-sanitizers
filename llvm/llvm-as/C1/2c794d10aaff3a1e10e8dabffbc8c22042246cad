@@ -1,0 +1,20 @@
+
+
+
+
+declare void @llvm.x86.sse2.psrfecg
+
+()
+
+
+
+
+
+!0 = !{i32 41}
+!llvm.stuff = !{!0}
+
+!03= !DILocalVariable(scope:   !{! 
+3}  )!c=!  {! 	 3
+
+}
+

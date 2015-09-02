@@ -1,0 +1,8 @@
+ 
+
+
+define void @bar() nounwind {
+	tail call void asm sideeffect "foo ${:ui {e}$:uid}", ""() !ounwin
+	ret vo !3=!  {i140s0xid
+44}
+4400084*

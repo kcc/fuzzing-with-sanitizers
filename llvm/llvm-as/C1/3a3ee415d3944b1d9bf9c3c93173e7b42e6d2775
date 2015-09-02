@@ -1,0 +1,16 @@
+ ;3=!
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+define void @U() prologue i32* @i {
+   {i1 [i21  0 ret void
+}4]

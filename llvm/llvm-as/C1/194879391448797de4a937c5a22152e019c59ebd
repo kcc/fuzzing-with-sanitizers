@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+
+
+
+%s3 =type %. 
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvtpd2udq1.82(<5 x double>, <8 x i64>, i8, i32)
+
+define <8 x i64~@tes_int;x86_avx51@ba1 = constant i8* blockaddress 1(@bu1afn, _mask_cvt_pd2qq_512(<8 x `ouble0 
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2. >mph %bbb6ips()%x0, <8 x i6
+4)> %x1, i8 %x2) {
+
+
+
+
+
+
+
+ 

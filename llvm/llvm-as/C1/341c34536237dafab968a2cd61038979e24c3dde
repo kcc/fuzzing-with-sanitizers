@@ -1,0 +1,35 @@
+    !3=!  {i1s0x444404 ,!8}   ;  
+
+
+
+
+
+
+
+
+
+declare x86_mmx@llvm.x86.ssse3.pegwha.dacp(
+)
+
+ 
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(
+tag: 3,; header: "some\00header", 
+ operands: {!0, !3, !4})
+
+declare i32 @llvm.!2 = !GenericDINode(tag: 
+
+
+
+
+
+declare =4 x &loat> @llvm
+.3, header: 
+!0 = !DISubpro"sgr3a0s  a 	! !3.v9faehs(i=! { !3E=9! 

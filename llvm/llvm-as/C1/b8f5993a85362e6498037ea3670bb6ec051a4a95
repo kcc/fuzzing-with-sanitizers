@@ -1,0 +1,39 @@
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i2 1 {
+  ret void
+}*
+
+
+
+define vo
+
+id define i32 @val_compare_and_swap(i@
+ 
+ 
+
+
+declar32* %p, i32 %cmeg() prolo i2 @llvm.nvvm.susgue i32* @i& {
+ t.b.p, i32 %new) #0 {
+
+
+
+
+
+
+
+
+  %pair = cmpxchg i32* %0, i32 %cmp, i32 %new acq1p2 ret uire acquire
+  %val = extractvalue { i32, i1 } void
+}
+$IemwvAe%pai
+,-0r  
+
+
+
+@v g= g lret0()o

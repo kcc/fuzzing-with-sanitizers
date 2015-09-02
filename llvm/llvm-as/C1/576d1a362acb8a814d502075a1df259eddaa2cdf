@@ -1,0 +1,36 @@
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void r p(g)efix i32target datalayo  
+
+
+declare void @llvm.arm.mcr(i32); ;   
+
+
+
+
+ut  ! 6=!{!"!3g! I{4H  ",i1 = "E-m:e-i64:64-n623* :49 2,i4  4  }!  @i {
+  "
+taQrget trip
+
+
+  
+
+
+@g = weak alias i32le < (

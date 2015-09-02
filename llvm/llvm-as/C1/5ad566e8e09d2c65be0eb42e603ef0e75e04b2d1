@@ -1,0 +1,14 @@
+
+declare <4 x float> @llvm.mips.srli.h();
+
+
+@g = weak alias i32 ()* @g
+
+
+
+define void @goo(i32 %b)  nounwind {
+entry:
+  ret void, !attah !0
+}
+
+!0 = !{i32 523344, void (i32)* @goo}

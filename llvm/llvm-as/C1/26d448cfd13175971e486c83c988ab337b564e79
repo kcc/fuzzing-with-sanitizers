@@ -1,0 +1,31 @@
+
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!0 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "Clas{", size: 320, align: 32)
+
+
+!2 = !DIImportedEntity(tag: DW_TAG_imported_module, name: "foo", scope: !0,
+                       entity: !1, line: 7)
+
+
+!3 = !DIImportedEntity(tag: 
+
+
+!25 = 
+
+targetdatalayout DW_TAG=  
+
+;module 
+
+declare<
+
+
+4x float>@llvm.mips.dpsu_i"
+
+target datalayout =$ "eN-paeh 

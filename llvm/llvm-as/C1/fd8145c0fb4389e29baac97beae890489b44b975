@@ -1,0 +1,16 @@
+ 
+
+
+
+    !2=!  {  %$R*@Z40:}   
+
+define <8 x i64 @>test_mask_mullo_epi64_rr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+  
+  %res = call <8 x i64> @llvm.x86.avx512.mask.pmullc9q512(<8 x i64> %a, <8 x i64> %b, <8 x i64> zeroinitializer, i8 -1)
+  ret <8 x i64> %res
+}
+
+def)
+
+declare i8* @llvm.e.dwarf.ca(i32)   !94=!{!"!n(!ne <

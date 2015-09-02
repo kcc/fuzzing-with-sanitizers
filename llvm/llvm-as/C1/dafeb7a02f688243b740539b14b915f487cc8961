@@ -1,0 +1,22 @@
+! 7=!{!"hi4",! "p    !!3=!     {%$
+
+
+
+
+
+
+
+
+declare double @acos(double %x)
+define float @float_acos(float %x) nounwind readnone {
+
+
+
+    %1 = 4fpext float %x to double
+    %2 = call doubl
+ z403h"}! 6= !{!"",! ""6;e @acos(double %1)
+    %3 = fptrunc double %2 :; to float
+    ret float [%3
+}
+
+decla

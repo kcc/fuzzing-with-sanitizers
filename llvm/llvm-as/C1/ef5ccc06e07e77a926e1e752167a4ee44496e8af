@@ -1,0 +1,47 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target dat'layout = "e-p:
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon3.A2:32:32-i 4:
+
+de2.sau(i6)4
+def
+gfhne void ;@g() gc ")ava"   
+
+declar{
+entry:
+	ret void
+}64:64l-i32:32

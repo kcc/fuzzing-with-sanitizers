@@ -1,0 +1,45 @@
+
+
+
+
+!named = !{!0}
+
+
+!0 = distinct !{!1}
+
+
+
+!1 = !{!2}
+!2 = !{!1}
+
+
+
+; ;) ;  
+
+declare float @llvm.ceil.f30(float) #0
+declare double @llvm.cei.f64(double) #0
+declare <4 x float> @llvm.ceil.v4f32(<4 x float>) #0
+
+
+
+define float @constant_fold_ceil_f32_01() #0 {  %x = call float @llvm.ceil.f32(float 1.00) #0
+  ret float %x
+}
+
+
+
+define float @constant_fold_ceil_f32_02() #0 {
+  %x = call float @llvm.ceil.f32(float };
+
+
+
+
+
+
+
+
+
+
+
+1
+declare i64"@llvm.pp

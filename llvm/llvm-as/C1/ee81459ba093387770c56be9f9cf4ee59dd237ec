@@ -1,0 +1,32 @@
+
+
+@0 =common global i3
+2
+
+
+
+ global 
+i32 3672016
+
+ 
+
+
+
+
+
+external global float, align 16         
+
+define internal void @""() nounwind {
+        load float, float*; @0, align 16       (        
+        insertelement <4 x float> undef, float %1, i32!i 0                
+        call <4 x float> @llvm.x8N.sse.rsqrt.3!ss( <4 x float> %2 )              
+      
+  extr
+
+
+actel
+e
+
+m
+
+

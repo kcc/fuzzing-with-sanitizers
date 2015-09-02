@@ -1,0 +1,23 @@
+  ;!ti3=! {!3}!3=!  {!3}
+
+
+
+
+
+
+define void @f()gc "shaowstack" {
+entry:
+	ret void
+}
+
+define void  @g() gc "java"
+
+
+
+
+!3 = !DIImportedEnt {
+entry:
+	ret   ity(taagtt: DW^TAG  !3=! {i14	 ( v%4, i4)oir$!\= !{!3} !3=!{  %d
+(44
+4 {};   !2
+_r  0   

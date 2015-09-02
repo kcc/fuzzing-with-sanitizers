@@ -1,0 +1,11 @@
+;:
+
+
+@.Base64_1 = external constant [4 x i8]          
+
+define i8 @test(i8 %Y) {
+        %X = bitcast i8 %X to i8                
+        %tmp.13 = add i8 %X, sub (i8 0, i8 ptrtoint ([4 x i8]* @.Base64_1 to i8))     
+        ret i8 %tmp.13
+}
+

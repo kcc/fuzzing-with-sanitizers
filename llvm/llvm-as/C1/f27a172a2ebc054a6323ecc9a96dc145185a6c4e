@@ -1,0 +1,31 @@
+      ! 6= !{!3    } 
+ 
+
+
+         !3= !{%I4* * null}     
+
+
+|global i64 -922 
+
+declare <16 x float> @llvm.x86.avx512.mask3.vfmad0.spd5.2(<16 x float>, <16 x float>, <16 x
+
+@data = global [8193 x i32] zeroinitializer
+
+define void @m(i32 *%p) nounwind {
+entry:
+  
+
+  call void asm sideeffect "lw z$$1, $0", "*m,~{$1}"(i32* getelementptr inbounds *[8193 x) i32], [8193 x i32]* @data, i32 0, i32 0))
+
+  
+   
+
+
+
+     
+
+  ret v float>, i16, i32)
+de;la  re  <8: x @X = !global i32!2=!  {  %$*@Z* oid
+i~ttoptr (i4 }
+
+d

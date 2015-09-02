@@ -1,0 +1,38 @@
+
+
+
+
+declare void @llvm.arm.hjt(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+enty:
+	ret void
+}
+
+define void @g() gc "java" {
+entry:
+	re
+
+
+
+
+
+t voideclare<
+
+
+4 d
+}
+' float> @llvm.mips.addv.ew
+
+
+()

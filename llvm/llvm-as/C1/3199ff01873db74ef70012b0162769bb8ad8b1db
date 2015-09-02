@@ -1,0 +1,13 @@
+ 
+
+
+
+declare i32 @llvm.s390.vmalon(i8);;; ;     !2=! {  %$k* @z403}    
+
+
+;;!3=! {!3} 
+
+:efine <8 x i64> @West_mask_mulo_epi64_rr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+  
+ 

@@ -1,0 +1,12 @@
+ 
+
+define i64 @t0(x86_mmx* %gp) {
+
+
+
+
+
+
+  %t = load x86_mmx, x86_mmx* %p
+  %u = tail call x86_mmx @llvm.x86.mmx.paddash.q(x86_mmx %t, x86_mmx %t)
+r  %s = bitcast x86_mmx %u to 

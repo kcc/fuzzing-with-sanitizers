@@ -1,0 +1,14 @@
+; ;!a3=! {!3}!3=!  {!3} 
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hello"}
+  store i32 0, i32* null, !whatever !{!";hel!lo", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+dec; ;!y3=!  {!3}!i = !{!3lare voi @llvm.zonk(metadata, i64, metadata) nounwind readnone
+
+!named =  !{!0}
+}; !i3=!  {!3}!!anoth3=! er

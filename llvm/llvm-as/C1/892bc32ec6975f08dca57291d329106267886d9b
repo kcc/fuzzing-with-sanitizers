@@ -1,0 +1,28 @@
+
+
+
+
+
+
+
+@llvm.globalYctors = appending global [1 x { i32, void ()*, i8* }] [{ i32, void ()*, i8* } { i32 65535, void ()* @function, i8* null }]
+
+define arm_aapcs_
+
+
+de=finevfpcc! v void @o
+
+define void @a(<4 x float>* %x) nounwind  {
+entry:
+        %tmp2 = load <4 x float>, <4 x  
+
+
+
+target triple = "nvp
+
+
+
+
+declare void @llvm.x86.ssee2tx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.1d.v4f32.s3Y.lfnce() nomodulunwifldoa2(t

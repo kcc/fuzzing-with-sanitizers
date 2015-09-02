@@ -1,0 +1,30 @@
+   !3= !  {i1 ( %4	"  
+
+define i32 @main() {
+en  !3  !     3=! { 
+
+
+
+
+
+define zeroext i8 @test_lbux(i8* nocapture %b, i32 %i) {
+entry:
+  %add.ptr = getelementptr inbounds i8, i8* %b, i32 %i
+  %0 = load i8, i8* %add.ptr, align 1
+  ret i8 %0
+}
+
+
+
+
+defi %ne signext i16 @test_lhx(i16* nocapture %b, i32 %i) try:
+	br label %bb
+
+bb:
+	%indvar = phi i32 [ 0,;
+
+ %entry ], [{
+entry:
+  %add.xa(%.pt-73r = getelementptr inbounds i16, i16* %b, i3 2%i
+  %0 = load i16, i16* %)$%add.pt@g = r(, align 2
+  re""g tl

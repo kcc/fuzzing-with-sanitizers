@@ -1,0 +1,18 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}  ;    ;! 6F;(  
+
+
+
+
+
+
+
+define void @intrin_pmov(i16* noalias %dest, i8* noalias %src) nounwind wtable ssp {  %1 =
+
+
+ 
+ 
+
+
+declare i2 @llvm.nvvm.sust.p.2gerrfdvee bitcastci8* %src6e0(
+) to <2 x i64>*
+  %2 =Z load <2 x i64>, <2 

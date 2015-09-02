@@ -1,0 +1,52 @@
+ !3=! {!3 } 
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i3:2 @bar(iE32 %a, i32 %b) {
+entryr
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                          inliedAt: !DILocation(lie: 12, scope: !3))
+  ret i32 %sum,eclar
+dece  !*bg !Dl;are {6i1, i32} @lILocatiolvm.x86.rdrandn(l:ie n13", scope: !3)
+}
+
+define li).36
+nkon()
+dece i32 @foo(

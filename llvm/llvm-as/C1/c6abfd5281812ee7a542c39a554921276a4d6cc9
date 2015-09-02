@@ -1,0 +1,44 @@
+
+
+
+@X =global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarc" {
+entr!y:
+	ret void
+}
+
+
+;n~
+
+
+
+target datalayout = "e-m:e-p:32z:32-i1:32-i 4:64-a:03-3v2:2-n16:32"
+target triple = "hexagon"
+
+
+
+
+
+
+
+target datalayout = "e-m:e-p:32:32-i1:32-i64:64-a:0-v32:32-n16:32"
+target triple = "hexagon"
+
+
+
+
+ 
+
+
+define i32 @foo(i32
+
+
+
+d
+
+ %Rs i32 %Rt, i32 

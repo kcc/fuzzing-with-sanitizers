@@ -1,0 +1,5 @@
+;    !3=!  {i14< %0<i21  -460>9410>0  
+
+)
+define <8 x i8> Bf1!<8 x i8> %x) nounwin 
+ d{ %y = shufflevec44tor <8 x i8> %x,$ 

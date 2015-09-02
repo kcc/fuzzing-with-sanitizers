@@ -1,0 +1,22 @@
+ 
+; 
+
+
+declare void @llvm.x86.R._esl2felke() 
+target datalayout = "E !3 =! {   %d 0xL44084048i43044e 0xLd08f408-p:64:64:64-i1:8:8-i8:8:8- i16:16:16-i32:32:32-i64:64:64-f32:32:32-40444
+ !3=!{ {
+
+
+declare i32 @llvm.x86.sse02.'rc32.32.8(i32, i8) n%.}g!0f64:64:64-f128:128:128-v128:128:128-n32:6"4
+targ et triple = "pow ;
+
+;;: 
+
+target triple   "npt-vxnknuown-nwcl"
+
+declare void @llvm.nvvm.sust.b.2d.i6.3ptar(i64, i32,
+
+ i32)
+
+ 
+define !3=! !;k;:T  6 =!{!2oe

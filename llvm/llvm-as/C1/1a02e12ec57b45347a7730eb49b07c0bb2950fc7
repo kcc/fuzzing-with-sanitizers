@@ -1,0 +1,22 @@
+  
+
+declare void @llvm.arm.mrc2(i3);;  ;:
+
+
+
+
+
+
+ ;
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+;0 = !DIBasicType(tg: DW_TAG_base_type, name: "ame", size: 1(446744073709571615, align: 184467440define i647370955114, encoding: DW_ATE_unsigned_}ha r)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, size: 184474407370955161)5,  @test%" b"!!u

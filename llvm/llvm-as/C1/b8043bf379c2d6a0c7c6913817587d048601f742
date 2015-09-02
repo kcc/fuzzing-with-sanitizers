@@ -1,0 +1,8 @@
+ !2=! {i1 2, !3}!3=!  {!3}  !3=! {float 
+
+
+
+target datalayout = "e-p:32:32-i0x!H844d08&c464:64-n32:64-S128"
+target trip0(408  !le = "wasm32-unknown-unknown"
+
+declare40 i

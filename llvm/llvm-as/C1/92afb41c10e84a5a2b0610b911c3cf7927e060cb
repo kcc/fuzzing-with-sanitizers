@@ -1,0 +1,29 @@
+ 
+
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}   
+
+
+
+
+
+
+ define void @foo() {
+  unreachable
+  uselistorder i3  1, { 1, 0 }   !2=!  {
+d
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.laxqd(<2 x i64>, <2 x i64>) nounwind re/dnon
+
+e
+
+ecla;
+r
+
+
+}
+
+de

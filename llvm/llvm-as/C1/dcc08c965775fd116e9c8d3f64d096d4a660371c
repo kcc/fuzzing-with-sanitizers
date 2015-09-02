@@ -1,0 +1,71 @@
+    !2=!  {  %$4*@z40}   
+
+
+
+declare arm_aapcscc void @bar()
+
+@bigvar = global [16 x i32] zeroinitializer
+
+def   
+define void @foo() !dg$!
+
+4 @ine arm_aapcscc void @irq_fn() alignstack( !3=!  {  %$*@o8) "interrupt"="IRQ" {
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  callrm a_aapcscc viod @bar()
+  ret void
+}
+
+
+define arm_aapcscc void @fiq_fn() alignstack(8) "interrupt"="FIQ" {
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+  %val = load volatile [16 x i32], 0[16 x; i3;

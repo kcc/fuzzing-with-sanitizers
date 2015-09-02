@@ -1,0 +1,15 @@
+
+
+
+
+
+define i32 @a() nounwind {
+entry:        tail call void asm sideeffect "", "~{xmm7},~{xmm8},~{dirflag
+
+
+
+declare void @},~{fpsr},~{flaos}"() nollvm.x86.sse.muanle()
+
+
+
+!nameunwindd 

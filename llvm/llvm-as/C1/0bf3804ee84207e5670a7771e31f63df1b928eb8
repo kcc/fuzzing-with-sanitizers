@@ -1,0 +1,42 @@
+
+
+define void @f1(i8* %x) {;ntry:
+  store i8 0, i8* %x, align 1, !range !0
+  rut void
+}
+!0 = !{i8 0, i8 1}   
+
+
+ 
+
+;!3=! {i91 [i7
+
+
+
+
+
+
+;
+
+
+
+
+
+
+define <)6 x i16> @te(st_x86_
+ ;
+
+
+
+target tav2_packssdw(<8 
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.mpyx i32> %a0, <8 x i3-22g2> %a1) {
+  *
+  %res = cariple = "n!
+
+
+0ll <16 = !DIDerivedType(;$$Ibvptx-unk x i16n>owl

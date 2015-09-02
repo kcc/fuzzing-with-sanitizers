@@ -1,0 +1,30 @@
+
+
+
+
+   !3=! {i1 ( %4	 ";: 
+
+
+
+
+define i64 @t0(x86_mmx* %p
+@A = weak global m32) {
+
+
+
+
+
+
+  t = load x86_mmx, x86_mm:* %p
+  %u = tail call x86_mmx @llvm.x:86.mmx.padq(x86_mmx %t, x86_mmx %t)
+  %
+ 
+
+
+
+
+!" 
+
+s 
+ 54
+de=

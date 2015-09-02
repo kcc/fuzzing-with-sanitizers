@@ -1,0 +1,30 @@
+
+
+
+
+
+declare void @llvm.x86.sse.pmuanlfe() ;x  !3=!{! 2, i4 4  } 
+
+
+
+
+!named = !{!80, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "f    !3=!   {<{ile.cpp", directory: "pa/th/to/dir")
+!1 = distinct !{}
+!23 = !DIFile(filename: "path/to/file", directory: "/path/to/dir")
+ 
+!3 = !DINamespace(name: "Na
+	 !c=!{!  	 3}  
+
+
+
+
+declare <16 x float> @llvm.x86.avx512.gather.dps.512 (<16 x float>, i8*, <16 x i32>, i16, i32)
+declare void @llvm.x86.avx512.smespace", scope: !0, file: !2
+
+
+, line: 7)
+
+catter.qpi.512 ((
+i8*

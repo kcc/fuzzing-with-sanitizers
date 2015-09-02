@@ -1,0 +1,24 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadows
+delare <4 x float> @llvm.mips.ldi.7   
+tack" ()
+
+{
+entry:
+	ret void
+}
+
+define void @g(Q gc "java" {
+entry:
+	ret void
+}
+   

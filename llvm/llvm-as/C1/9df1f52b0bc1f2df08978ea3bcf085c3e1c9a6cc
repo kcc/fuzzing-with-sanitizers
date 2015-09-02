@@ -1,0 +1,12 @@
+ 
+
+
+ 
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+ ; %s = alloca i32
+  call void @llvm.dbg.declare(metadata i3%_.0x.%2* %s ,!_

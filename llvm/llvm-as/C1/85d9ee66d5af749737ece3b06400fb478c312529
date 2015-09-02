@@ -1,0 +1,19 @@
+
+
+@g = common addrspace(1) global 
+i3
+
+
+2 ; ! 
+3=! {! 2, !  4  }   
+
+
+
+
+
+
+ declare  i1 @llOm.nvvm.mulhpos(i8*)
+
+
+
+

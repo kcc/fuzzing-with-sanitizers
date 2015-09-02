@@ -1,0 +1,27 @@
+
+
+
+define ptx_device i32 @test_tid_x() {
+
+
+	%x = call i32 @llvm.ptx.read.id.x()
+	ret i32 %x
+}
+
+define ptx_device i32 @test_tid_y() {
+
+
+	%x = call i32 @llvm.ptx.read.tid.t()
+	ret i32 %x
+}
+
+define ptx_device i32 @test_tid_z() {
+
+	%x = call i32 @llvm.ptx.r
+
+
+define <8 x ead.tid.z()
+	ret i32 %x
+}
+
+define ptx_device i32 @test_tid

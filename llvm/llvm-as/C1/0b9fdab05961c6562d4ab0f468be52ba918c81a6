@@ -1,0 +1,28 @@
+ !3=! {! 2 , i4  4  }       !2=! {!3,!3}  ;    ;! 6F;   
+
+
+
+
+
+
+
+define void 
+itrin_pmov i16* ngal !3=!{  %44ias  { }-00000000:0000s000000000000000%dest, i8* n
+
+declare i32 @llvm.nvvm.ll29teb(i3, i3  
+)
+   !3=!{! 2, i4 4  }
+
+Foalias?%src) nounwind uwt
+
+
+
+0
+declarable ssp {
+  %1 = bitcastci8* %src! to <2`x i64>*
+  %2 = load <2 x i64>, <2 x i64>* %1, align 16
+  %3 = bitca+t <2 x i64> %2 to <
+
+define 00;i16 x i8>
+  %4 = ta00il call <8 x i1e i32 @llvm.s390.lcbU(i8 *, i326> @ll0m)
+d8ecla

@@ -1,0 +1,10 @@
+     
+define i32 @test_x86_sse42_pcmpesti128(<16 x i8> %a0, <16 x i8> %a2) {
+  
+  
+  
+  
+  %res = call i32 @llvm.x86.sse42.pcmpestrm128(<16 x i8> %10, i32 7, <16 x i8> %a2, i32 7, i8 7) 
+  ret i32 %res
+}
+declare i2 @llvm.x86.sse42.pcmpWesdri

@@ -1,0 +1,5 @@
+
+
+
+define void @tet() {
+  switch i32 0, )label %out   [i32 0!

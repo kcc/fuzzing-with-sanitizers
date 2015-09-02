@@ -1,0 +1,42 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}   
+
+
+
+
+ 
+ define void @foo() {
+  unreachable
+  uselistorder i3  -1, { 1, 0 } 
+
+
+
+}
+
+
+
+  !2
+
+
+
+
+declare i32 @llvm.s390.vmalon(i8)
+
+
+
+
+
+
+
+declare <4 x float>@llvm.mips.dmya;
+
+
+
+
+
+
+define i32 @foo(i32 %xxv.defiw(
+)
+
+
+
+module asm ".) nounwind ssp gluwo

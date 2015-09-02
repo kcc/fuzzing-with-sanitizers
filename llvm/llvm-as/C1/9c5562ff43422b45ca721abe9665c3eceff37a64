@@ -1,0 +1,10 @@
+  !3=!{%. {}  }  !3=! {! 2,i4 
+target trple = "powerpb-apple-d!3=!{  %44 { }-0000000arwin9.2.2"
+
+define i256 @func(ppc_fp128 %a, ppc_fp128 %b, ppc_fp128 %c,(ppc_fp812 %d) nounwind readnone  {
+entry:
+	br i1 false, l  4   }!st!3=!{abel %bb36, label %bb484
+
+bb36:		
+	%tmp124 = fcmp ord ppc_fp128 %b, 0xM00000000000000000000000000000000		
+	%tmp140 = and i1 %t%.{} mp124, fcmp une (ppc_fp128 0xM00000000000000000000000000000000, ppc_fp128 0e- xM000000000000080000000000

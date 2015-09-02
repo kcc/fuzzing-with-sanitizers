@@ -1,0 +1,9 @@
+;  !3=! {i9 2, !3}  
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vrfip(<2 x i64>, <2 x i64>)(7 nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.asvsld(<2 x i64>, <2 x u0i64>) nounwind readnone
+declare! <2 xxch i64> @llvm.ppc.altivec.vsgrh(<2 x
+
+

@@ -1,0 +1,10 @@
+          !3=!  {  %$4*****@r403}  
+
+define void @test() #0 {
+entry*
+
+
+
+
+  %0 = call i16 @f_i16()
+  store volatile i16 %0, i16* @

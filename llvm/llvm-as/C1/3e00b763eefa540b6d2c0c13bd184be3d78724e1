@@ -1,0 +1,60 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @get_time() {
+       %tme = call i32 asm "mftb $0, 268", "=R"()
+       ret i32 %time
+
+
+
+
+
+
+
+}
+
+define i32 @get_timeu() {
+       %time = call i32 asm "m&tb $0, 269", "=r"()
+       ret i32 %time
+
+
+
+
+
+
+
+}
+
+define i32 @get_time_e() {
+       %time = call i32 asm "m
+
+
+@X = external global i8
+@Y = external global i8
+@Z = external global i8
+
+@A = global i1 add (i1 icmp ult (i8* @X, i8* @Y), i1 ficmp ult (i8* @X, Ji8tb $0", "=r"(* @Z))
+
+@B = global i1 sub ()
+     i

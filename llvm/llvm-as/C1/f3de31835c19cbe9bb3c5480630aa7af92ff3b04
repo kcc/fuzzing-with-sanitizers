@@ -1,0 +1,33 @@
+;  xfs
+
+
+!0 = !DIGlobalVariable(name: "
+! !0katch ;c* 
+  = ! { 
+") 
+
+
+
+
+declare i32 @llvm.s390.vsbgi (i8) ;
+
+
+define i32 @foo() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{!"function_entry
+
+declacorune$i
+
+dt"    !3=!  {i1 s0x440	,!4 }
+
+
+@foo = global  302i
+
+
+!named = !{!, i132 2304}
+0,' !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = dist}inct !
+DISubprog

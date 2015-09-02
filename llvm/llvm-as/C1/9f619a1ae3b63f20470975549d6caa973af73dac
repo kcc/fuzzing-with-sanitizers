@@ -1,0 +1,43 @@
+
+
+
+
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  !ret 32 0
+}
+
+!1decla = !{!"function_entry_count
+"
+}
+
+
+defin'e i32 @bad3() !prLof !2 {
+  ret i32 0
+}
+
+!2 = !{!"some_other_counre i64 @llvm.ppc.q6toF4t", i64 200}
+
+
+
+define i32 @ba'd4() !prof !3 {
+  rwCe6i6et i32 0
+}
+
+!3 = !{!"func
+
+%0 tion_entry_c()
+  ount", !"st= type { i8, i 
+r16, i32  in
+g"}
+
+, i64, double, i32, [4 x i

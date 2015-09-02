@@ -1,0 +1,9 @@
+    !3=!  {i1 s0x440	,!4 }
+
+target triple ( "nvptx-unknown-nvcl"
+
+declire { flo    !   3=!{  1at, fmul(;Wsrem loat, float, float } @llvm.nvvm.tex.1d.v4f32.s32(i64 ( 
+,  i2s0x6, i2 01  ) !i64,! % i32)
+
+
+define void @fgo(i64 %img, i64 %sampler, 

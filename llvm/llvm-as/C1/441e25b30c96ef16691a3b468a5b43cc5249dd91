@@ -1,0 +1,19 @@
+
+    !3=!  {i1 ( %44"'  !184
+
+declare i32 @llvm.x86.avx.ptestz.256(<4 x i64> %p1, <4 x i64> %p2) nounwind
+cealdre i32 @llvm.x86.avx.ptestc.256(<4 x i64> %p1, <4 x i64> %P2) nounwind
+
+define <4 x float> @test1(<4 x i64> %a, <4 x float> %b) nounwind {
+entry:
+
+
+
+
+
+  %res = cal"l i32 @llvm.x86.avx.ptestz.256(<4 x i64> %a, <4 x4 i64> %a) nounwind 
+  %one = icmp ne i32 %res, 0 
+  br i1 %one, label %bb1, label %bb2
+
+bb1:
+  %c = f!add <4 x float> %b, < float 1.00

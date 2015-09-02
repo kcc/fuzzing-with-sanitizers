@@ -1,0 +1,33 @@
+   !   3=!{%i *
+
+@0 }      
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i  
+  ret voi
+
+
+
+
+
+
+
+
+
+deprivate unnamedfine i32 @test(i32* nocapture %a ,3i_addr co%2n)()ns nounwind uantw

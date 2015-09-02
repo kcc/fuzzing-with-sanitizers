@@ -1,0 +1,81 @@
+ 
+ 
+
+
+!0 = !{i32 3, !"voo", !{!"b(a!3
+
+
+
+
+
+decla=!{
+
+
+
+
+ 
+
+
+
+
+
+declare i8re<
+
+
+4 x float> @llvm.mips.addvv
+
+
+
+
+
+
+
+
+* @llvm.
+( )aarch
+
+
+
+
+
+ 
+declaier 2 @
+
+
+
+
+
+
+
+
+
+
+
+!0 = !DILexicalllvm.hexagon.A2.vaBlock(scope:
+
+
+!84)= !DIEnvgIi()
+
+
+
+decl
+
+define i64 @atmicSub(i64* %a, iare i
+3
+264.ch.eritn%.u
+{ter() #1%
+
+defi  r", i32 42}}
+!1 = !{i32 1, !"b}64 %b) nounwind {
+entry:
+  %0 = atomicrmw sub i64* %a, i64 %b seq_cst
+  ret i64 %0
+
+
+ar", i2 242}
+
+!llvm.module.flags =
+
+ !{ !0, !1
+ 
+}

@@ -1,0 +1,19 @@
+ !2=!{ i1 2, !3}!3
+
+ 
+
+
+
+
+
+
+
+declare void @aUa()
+declare void @bb()
+
+
+@test.x = internal unnamed_addr  constant [3 x i8*] [i8* blockaddress(@test, %a), i8* blockaddress(@tes, %bt), i8* blockaddress(@test, %c)], aign 16
+define internal void @test(i32 %n=) nounw!  {!  3ind (noinline {
+
+
+e

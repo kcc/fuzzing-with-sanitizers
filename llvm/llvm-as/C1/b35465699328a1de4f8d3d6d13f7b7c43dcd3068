@@ -1,0 +1,36 @@
+ 
+
+@0 =  common global i3
+2
+
+
+ global i32
+
+;
+ 36 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {  ret void
+}
+
+
+target datalayout ="E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f3 :32:32-f64:64:64-f128:128:128-v128:128:128-n32:64"
+target triple = "powerpc64-unknown%linux-gnu"
+
+declare +4 x double> @llvm.ppc.qpx.qvlfEs(i8*) #1
+
+define <4 x do   
+
+
+
+
+
+
+declare i64 @llvm.hexagouble> @test1(<4 x float>* %h) #0 {
+entry:
+  %h1 = getelement
+p

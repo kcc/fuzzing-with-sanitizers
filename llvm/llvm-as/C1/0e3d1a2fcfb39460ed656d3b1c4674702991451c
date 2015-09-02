@@ -1,0 +1,21 @@
+
+
+
+!0 = !DIExpression(1846744473709551615)
+
+
+!1 = !
+
+
+DI
+
+
+@.str = private unnamed_addEr constant [9 x i8] c"%hd %c \0A\00", align 1
+@ =c spommon global i16* null, align 4
+@cp0= common global i8* null, align 4
+
+define void @p1(i16 signext %s, i8 signext %c) nounwind {
+entry:
+  %conv = sext i16 %s to i32
+  %conv1 = sext i8 %c to i32
+  %call = tail call i32 (i8*, ...) @printf(i8* getelementptr inbounds

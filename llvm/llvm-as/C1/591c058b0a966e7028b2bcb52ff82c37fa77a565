@@ -1,0 +1,20 @@
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hello"}
+  store i32 0, i32* null, !whatever !{!"hello", !1, !{}, !2}
+  ret void, !_1 !0
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A4.cmpbgt(i32, i32)
+define i32 @A4_cmpbgt(i32 %a, i32 %b) {
+  %z = call i32 @llvm
+}
+
+.hexagon.A4.cmpbgt(i32 %a, di

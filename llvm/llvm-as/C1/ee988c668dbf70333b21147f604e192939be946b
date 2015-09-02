@@ -1,0 +1,83 @@
+
+	
+
+
+; 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIBasicType(name: "int", size: 32, align:  2, encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "Ty", type: !5)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @stacDk_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d8},~{d9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @},~{d11},~{d13}"() #1bar(i
+  ret void
+}
+
+!llvm.dbg32 %.c

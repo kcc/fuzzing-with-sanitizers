@@ -1,0 +1,22 @@
+
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define voi d@bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.module.flags = !{!0}
+!0 = !{i32 2,
+
+
+@A = globEl i1 0, align 536870912
+
+d!"Debug efine void @foo() {
+  %p Info

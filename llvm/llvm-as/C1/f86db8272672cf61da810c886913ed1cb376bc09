@@ -1,0 +1,40 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @test(float addrspace(1)* %out, float %x) #1 {
+   %cos = call float @llvm.cos.f32(float %x)
+   store float %cos, float addrspace(1)* %out
+   ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @testv(<4 x float> addrspace(1)* %out, <4 x float> inreg %vx) #1 {
+   %cos = call <4 x float> @llvm.cos.v4f32(<4 x float> %vx)
+   store <4 x float> %cos, <4 x float> addrspace(1)* %out
+   ret void
+}
+
+declare float @llvm.cos.f32(float) readnone
+declare <4 x float> @llvm.cos.v4f32(<4 x float>) readnone

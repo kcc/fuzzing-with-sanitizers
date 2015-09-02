@@ -1,0 +1,22 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3})i   =3! !  {i14< 
+targetd atalayout = "e-p:32:32:32-p1:64:64:64-p2:8:8:8-p3:16:16:16-p4:16:6
+
+
+
+
+
+
+declare :16-i1:8:8-y8:8:8-i16:16:16-i32:32:32-i64:32:32"
+
+
+define i%4<32 @test_as0(i32w addrspace(0)* %a) {
+
+6
+ i
+
+
+
+target trip32le = @l

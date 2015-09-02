@@ -1,0 +1,10 @@
+ ; ;
+
+
+
+
+declare <4x float> @ll.vmmips.srai.w()        !3= !{%i4* * null}c;;  !c=!  {! 	 3}  ;
+
+
+
+$v = comdat largest%3

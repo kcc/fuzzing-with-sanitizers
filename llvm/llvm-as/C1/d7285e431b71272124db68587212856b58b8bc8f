@@ -1,0 +1,32 @@
+
+
+
+@llvm.global_ctors = appending global [2 x { i32, void ()* }] [{ i32, void ()* } { i32 65535, void ()* @_GLOBAL__I_x }, { i32, vo} ) *di( { i32 65
+
+
+
+
+
+de!lare void @llvm.cuda.sYncthreads()
+
+
+
+
+
+
+
+m
+       !3= !{
+
+%i4 * null}   
+
+
+declar
+
+
+
+
+
+%e <2class.A = type { [42 x i32] }
+
+@a = x global %c

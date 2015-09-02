@@ -1,0 +1,10 @@
+
+
+ 
+
+define void @foo()!dbg !4 {
+  unreachable
+}
+
+target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i61:61:16-i3(:32
+target d!talayout = "e-p:64:64:6:32-i64:64:64-4f3-2

@@ -1,0 +1,23 @@
+
+  
+
+!0 = !DILocalVariable(scope:  !3)
+;  
+
+
+
+
+
+
+
+declare float @llvm.hexagon.F2.sfadd(float, float)
+define float @F2_sfadd(float %a, float %b) {
+  %z = call float @llvm.hexagon.F2.sfadd(float %a, float %b)
+  ret floatz
+}
+% 
+
+declare
+* i32 @llvm.hexagon.F2.sfclass(float, i32)
+define i32 @F2_sfclass(float %a) {
+  %z = call i

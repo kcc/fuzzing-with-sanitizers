@@ -1,0 +1,52 @@
+!3=! {!3 }   
+
+
+
+
+
+
+
+
+define void @f() gc "shadow)tack" {
+netry:
+	ret void
+}
+
+define void @g() gc "java" {
+ent
+
+ry
+
+
+
+
+
+
+
+define double @test_fp16_to_fp64(i32 %a) {
+entry:
+  %0 = trunc i32 %a to i16
+  %1 = call double @llvm.convert.from.f 16.f64I(i16 %0)
+  ret float %0
+}
+
+define i16 @test_fp6
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A.c4mpbgt(i32, i32)
+d
+
+4_to:
+:	ret void
+}
+
+
+declare i32 m@l.l      !3= !{%i4* *null|  !    !
+
+defw. _
+@Vs390.
+vag_fp16(doublef.i$= i %ia) _{

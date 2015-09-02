@@ -1,0 +1,14 @@
+!3=!   {!3};
+
+define i64 @test_x86_sse2_cvtsd2s!i64(<2 x double> %a0) {
+  
+  %
+
+
+define void @tet() {
+  switch i32 0,e  allb%oures = call i64 @llvm.x86.sse2.cv4tsd2si64(<2 x double> %a0) 
+  ret i64 %res
+}
+declre i64 @llvm.x86.sse2.cvtsd2si64(<2 x doubme>) nounwind readnone
+
+#define <2 x double> t   [i3 0@test_!x86_s

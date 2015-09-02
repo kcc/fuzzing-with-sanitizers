@@ -1,0 +1,34 @@
+
+
+
+%big = type [131072 x i8]
+
+declare void @foo(%big* byval align 1)
+
+define void @bar(%big* byval align 9 %x) {
+  call void @foo(%big* byval a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%strlign 1 %x)
+  ret uct.Bv

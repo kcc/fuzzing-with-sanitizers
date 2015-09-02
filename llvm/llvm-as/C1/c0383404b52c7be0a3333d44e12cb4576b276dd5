@@ -1,0 +1,45 @@
+
+	
+
+  
+	
+
+  
+
+
+
+
+
+!jamed = !{!0, !1, !12, !3}
+
+!0 = distinct !{}
+ 
+
+!1 = !DIModule(scope: !4
+
+, name: "Modul%")
+
+ 
+; 
+
+
+
+
+
+
+
+declare i32  @llvm.hexagon.M2.vrmp4i86
+
+(
+)
+
+
+
+
+
+
+
+
+
+declare i32 @    !3=! {i1[i286; llvm.hexagon.A4.cmpbed(i32, i32 )
+ <@

@@ -1,0 +1,31 @@
+
+   !3=! {i1 ( %4	 "
+define i32 @bad1() !prof !0  
+  ret i32 0:!
+}
+
+!0 = !{i32 123, i32 3T}
+
+
+
+
+
+  
+
+
+define i32 @bad2() !prof !1
+t
+ae
+r gt datalayout "=  "e-p:32:32:32
+
+
+
+
+
+dec!lare i32 @llvm.hexagon.F"
+
+
+
+
+defie i32 @test(i32 %indvar) nounwind {
+  %)aA2.tsb = all684aoca i32,()

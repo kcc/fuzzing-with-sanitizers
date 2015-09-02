@@ -1,0 +1,36 @@
+; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "-DNDE,UG", includePath: "/usr/include", isys
+
+
+
+
+declare float @llvm.fabs.f32(float  %Val)
+declare float @llvm.AMDGPU.fract.f32(float) nounwind readnroot: "/")
+
+!3   !DIModule(scoe:  !3=!{  i
+
+
+
+
+define i32 @main(i32 %x) nounwind gc "ocaml" {
+
+
+
+
+
+
+  %puts = tail call (i31!0, name: "Moon
+e
+
+declare fl;dulate" @l

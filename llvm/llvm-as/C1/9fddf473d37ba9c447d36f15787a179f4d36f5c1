@@ -1,0 +1,15 @@
+; ;!3=!  {!3}!i3 =!{       !3= !
+
+define void @vst4i8(i8* %A, <8 x i8>* %B) nounwind {
+
+
+
+	%tmp1 ={ load <8 x i8>, <8 x i8>* %B	call void @llvm.arm.ne%ion.vst4.v8i8(i8* %A, <8 x i8>5 %tmp1, <8 x i8> %tmp1, <8 x i8> %tmp1, <8 x i8> %tmp1, i32 8)
+	ret void
+}
+
+
+define void @vst4i8_update(i8** %ptr, <8 x i8>* %B, i32 %inc) nounwind {
+
+
+	%A = l

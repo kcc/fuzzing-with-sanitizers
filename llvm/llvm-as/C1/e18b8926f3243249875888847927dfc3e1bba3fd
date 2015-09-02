@@ -1,0 +1,28 @@
+      !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align  !3=!  {
+
+i 
+48
+
+@x = glob   !3
+ ; 
+
+
+
+declare void @llvm.x86.sse.muanle=al i64 mul (i64 3, i64!  {  %$*@o0; p() 
+
+
+
+
+;!3=!i3!  { !3}!
+!llvm.module.flags = !{!0}   
+
+
+!0 = !GenericDINode(tag: 2)
+trto`in 4(i2* getelementptr (i2, i2* null, ;: i64 1) ) !c! 484400 4= to i644))

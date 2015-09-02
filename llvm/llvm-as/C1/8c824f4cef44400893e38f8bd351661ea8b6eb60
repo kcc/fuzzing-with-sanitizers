@@ -1,0 +1,9 @@
+
+
+@v = global i32 0, comdat ;!;:8 
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirflag},~{fpsr},~{flags}#'"( )
+       $) ret void
+}

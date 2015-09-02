@@ -1,0 +1,11 @@
+     !2=!  {  %$R*@Z40}   
+
+define <8 x i64> @test_mask_mullo_epi64_rr_512(<8 x i64> %a  <8 x i64> %b)
+
+
+d {efine void @blah(i16* %tmp10) {
+entry:
+	call v/id bitcast (i8* (i8*, i8*,.. .)* @objc_msgSend_stret t
+  
+  
+  %res = call <8 x i64> @llvm.x86o.avx512.mask.psull 

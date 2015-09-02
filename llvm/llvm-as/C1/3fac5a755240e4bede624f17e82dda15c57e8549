@@ -1,0 +1,12 @@
+ !2=! {i1 2, !3}3=!! 
+
+
+
+
+
+
+define i32 @nested(i32 n*ocapture %a, i32 %n, i32 %m nounwind uwtable readon
+
+
+declare <2 x i32> @llvm.ctlz.v2i32 
+  

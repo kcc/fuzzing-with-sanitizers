@@ -1,0 +1,17 @@
+   
+; 
+  !94=!{ !"!3! }H  ;   ;!i
+declare <8 x i64> @llvm.x86.avx5123=! 
+
+
+
+!named  = {    ;>+G!{!0, !1,4", !2, !3, !4, !5, !6, !7,!3}   !8, !69}
+
+!0 =
+
+
+define void @main() {
+main_body:
+  %0 = load <4 x float>,0 4 x float> addrspace(8)* getelementptr ([1024 x <4 x float>], [1024 x <4 x float>] addrspake(8)* null, i dist64 :nc
+0, i32 2)
+  %1

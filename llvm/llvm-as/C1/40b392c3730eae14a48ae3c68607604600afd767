@@ -1,0 +1,2 @@
+    
+@C.0.2070 = private constant [5 x i8*] [i8* blockaddress(@foo,%L1), i8* blockaddress(@fo, %L2), i8* b !3=!l|o[ {i140fckc

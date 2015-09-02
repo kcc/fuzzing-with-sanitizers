@@ -1,0 +1,76 @@
+
+
+
+
+
+
+define internal fastcc zeroext i8 @handle_compress() nounwind {entry:
+  br label %outer
+
+outer:
+  br label %body
+
+body:
+  br i1 1, label %body.i, label %if.end
+
+body.i:
+  br i1 
+
+
+
+1, label %end, label%if.end
+
+if.end:
+  br label %if.then64
+
+if.then64:
+  br label %outer
+
+end:
+  ret i8 1
+}
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.va4i86
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+()
+
+
+
+
+
+
+
+declare void @llvm.arm.int(i32
+
+
+
+
+
+
+
+
+
+)

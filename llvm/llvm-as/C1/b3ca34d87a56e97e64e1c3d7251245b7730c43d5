@@ -1,0 +1,8 @@
+
+target triple = "x86_64--"
+
+
+define i128 @blup() {
+  %v = tail call i128 asm "", "={ax},0"(i128 0)
+  ret i1
+28 %

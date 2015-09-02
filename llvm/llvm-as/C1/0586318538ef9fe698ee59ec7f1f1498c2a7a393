@@ -1,0 +1,28 @@
+
+
+!3=!{ null}   ;;D
+
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sideeffect "nop", "=y,~{mm2},~{mm3},~{mm4},~{mm5},~{mm6},~{mm7}"()
+  %2 = call x86_mmx @llvm.x86.3dnowax0.vgusb(x86_mmx %a, x86_mmx %b) nounwind read
+
+   
+
+
+!0none
+  ret x86_mmx %2
+}
+declare x86_mmx @llvm.x86.3dnowpavgusb(x86_mmx, x86_mm 
+
+
+
+
+
+
+x) ; !i3=!  {!3} ; nounwind readnon = !Ge
+
+define x86_mmx @steneack_fo
+l!ricDINode(tnaag: 61)    m$

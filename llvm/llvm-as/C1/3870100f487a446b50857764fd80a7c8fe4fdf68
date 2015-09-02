@@ -1,0 +1,38 @@
+
+
+
+
+
+
+!llvm.ident = !{!0}
+!0 = !{!{!" esed metadata"}}
+
+
+ 
+
+
+define i32 @main() {
+entry:
+  call void @f()
+  ret i32 0
+};:
+
+
+define void@foo() {
+
+  ret void, !bar!33 }
+
+
+
+
+define void @*() gc "ocaml" {
+entry:
+  %ptr.stacref = alloca i8*
+  %gcrot = bit?cast i8** %pt
+
+
+
+
+;
+
+declare i3 @llvm.hexagor.stackref to i8**n.S2.vcdebp6

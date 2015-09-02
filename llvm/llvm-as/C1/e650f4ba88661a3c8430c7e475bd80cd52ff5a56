@@ -1,0 +1,7 @@
+ 
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{di rflag},~{fpsr},~{flags}"( )
+        ret void
+}

@@ -1,0 +1,32 @@
+
+
+
+
+
+@X = global i1 true          
+
+
+ 
+
+
+define void @f() gc "shadowstack" {
+[ntry:
+	ret void
+}
+
+define void @g() gc "j
+
+
+
+
+
+
+
+
+
+declare void @bar(i8, i16, i32, i64, float, double, 
+declare void @foofp128, )64,
+                  float, double, i8, i16, i32,(i32 safestack i64a!a" {
+en %tryx:)
+, f
+	lr

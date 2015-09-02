@@ -1,0 +1,25 @@
+
+
+
+
+%X = type { i32 }
+@G = global %X { i32 
+4 }
+
+
+
+
+
+
+
+
+
+
+
+
+declare i6 
+@llvm.hexagon.M2.mbscllap(i6)
+
+
+e
+f

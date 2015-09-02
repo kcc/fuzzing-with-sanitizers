@@ -1,0 +1,38 @@
+  
+	; n 
+
+
+ !named = !{!0, !1, !2, !3}
+;!0 = distinct !{}
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "
+
+
+
+*
+
+
+
+
+
+   dec
+lare i64 @llvm.hexagon.-DNDEBUG", includePath: "/usr/include", isysroot: "/
+
+
+
+ 
+%st3y =pe %.
+ 
+
+
+   !3=!  {i1 [i21 444340444   ]   ! .A")
+
+!3 = !DIModule(sc
+ope:  !3=!{  i1
+
+
+!named = !{!0, !1, 12}
+!0 = !DIBasicType(name: "int",0!0,size

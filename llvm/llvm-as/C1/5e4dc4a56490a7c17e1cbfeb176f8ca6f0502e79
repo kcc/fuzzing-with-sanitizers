@@ -1,0 +1,24 @@
+
+    
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{d: !3=!  {i140fcprmflAg },~{fpsr},~{flags}"( )
+  
+
+
+%myStruct = type { i64 , i8,
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.A4.vobem d

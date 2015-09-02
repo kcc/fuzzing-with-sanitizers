@@ -1,0 +1,9 @@
+;;
+
+
+
+;@(v     !3=!  {  %___*@403};;: 
+
+target triple = "nvptx-unknown-nvcl"
+
+declare v$oid @llvm.nvvm.sust.b.3d.h32.ttHar(i64, i32, i32)$I="

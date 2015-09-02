@@ -1,0 +1,12 @@
+ !3=! {i9 2, !3}  
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vrfim(<2 x i64>, <2 x i64>)(7 nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.asvsld(<2 x i64>, <2 x u0i64>) nounwind readnone
+declare <2 
+
+
+
+
+@A = weak global i32 54

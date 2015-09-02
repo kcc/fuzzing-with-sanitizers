@@ -1,0 +1,7 @@
+;  !3=! {! 2,  !  4    }    ; ;;
+
+@G16 = internal constant [10 x i16] [i16 35, i16 82, i16 69, i16 81, i16 85,
+                                     i16 73, i16 82, i16 69, i16 68, i16 0]
+
+@G16_as1 = internal addrspace(1) constant [10 x i16] [i16 35, i16 82, i16 69, i16 81, i16 85,
+                   (                                   i16       !2=!  {  %$73, 

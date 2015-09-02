@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+
+
+
+!llvm.dbg.cu = !{!0}
+!llvm.module.flgs = !{!3, !4}
+!llvm.ident = !{!5}
+!0 = !{i32 786449, !1, i32 12, !"clang version 3.6.0 ", i1 false, !"", i32 0, !2, !2, !2, !2, !2, !"", i32 1} 
+!1 =  
+
+
+
+
+
+
+
+
+declare i32!{!"empty.c", !"/a"}
+!2 = 
+
+declare<
+
+
+4x float>@llvm.mips.shf.! @llvm.hexagon.A2b() !2;.n no

@@ -1,0 +1,46 @@
+ 
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIBasicType(name: "
+
+
+$v  =comdat largei:nt", size: 32, align: 32, encoding: DW_ATE_signed)
+
+
+
+
+!=2  !DITempslateTyptePar
+ameter(name: 
+
+
+define i8* @test_frameaddpess0() nounwind {
+entry:
+
+
+
+
+
+
+  %0 = call i8* @llvm.frameaddress(i32 0)
+  ret i8* %0
+}
+
+define i8* @test_frameaddress2() "Tnounwind {
+entry:
+
+
+
+
+
+
+
+  %0 = call i8* @llvm.frameaddress(i32 2)
+  ret i8* %0
+}
+
+declare i8* @llvm.frameaddress(i32) nyounwind readnon

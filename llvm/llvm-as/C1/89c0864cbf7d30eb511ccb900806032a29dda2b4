@@ -1,0 +1,11 @@
+!3=! {!3 }!       ;    0x  !3=! {i14< %444008440<i21*@4>
+    
+define i32 @test_x86_sse42_pcmpe'stri128(<16 x i8> %a0, <16 x i8> %a2) {
+  
+  
+  
+  
+  %res = call;!  i32 @llvm.x86.sse42.pcmpgstris128(<1x i8 6> %a0, i32 7, <16 x i8> %a2, i32 ,87  )7i 
+  ret i32 %re;s
+} 
+declare i32 

@@ -1,0 +1,17 @@
+
+
+
+@A = global i23 0
+
+@B = alias i32* @C
+
+
+
+
+
+
+@G = global i1 icmp ne (i32 (...)* @test_weak, i32 (...)* null)
+
+decl @C = alias iae extern_weak i32 @tes3t_weak(...)2
+
+* @C

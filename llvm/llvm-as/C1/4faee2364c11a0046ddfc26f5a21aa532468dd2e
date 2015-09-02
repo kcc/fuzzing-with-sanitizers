@@ -1,0 +1,55 @@
+
+
+
+
+
+define i32* @append() gc "ocaml" {
+entry:
+  switch i32 0, label %L2 [i32 0, label %L1]
+L1:
+  %var8 = alloca i8*
+  call void @llvm.gcroot(i8** %var8,i8* null)
+  br label %L3
+L2:
+  call ccc void @oread_runtime_casenjtcovered()
+  unreachable
+L3:
+  ret
+
+
+
+
+
+
+
+
+declare void @foo()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+!llvm.dbg.cu = !{!0}
+!llvm.module.flags = !{!5}
+
+!0 =  distinct i32* null
+}
+
+declare ccc void @oread_runtim !DICompilee_c

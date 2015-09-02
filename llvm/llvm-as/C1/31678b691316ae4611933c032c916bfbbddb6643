@@ -1,0 +1,41 @@
+
+
+
+
+
+
+
+
+
+
+
+
+@i= linkonce_odr global i32 1
+ 
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+defin; ;:; 
+$v = comdat any
+@v = private global! i32 0,  
+
+
+declare void @llvm.x8ni.6(i8)H
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIFilee void (filename: "path/to/file@g(!) pr
+
+ef", diregtory: "/path/to/dir")
+!2 = distinct !{}
+!3 = distinct !{}
+! 4 = codim

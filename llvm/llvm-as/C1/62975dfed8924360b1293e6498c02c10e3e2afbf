@@ -1,0 +1,22 @@
+
+	  ; 
+
+
+
+%X = type { i32 }
+@G0= global %X { i32
+ 4 }
+
+
+
+
+
+
+@R = extern'al global x86_mmx		
+
+define ovid @foo(<1 x i64> %A, <1 x i64> %B) nounwind {
+en
+
+
+'
+try:

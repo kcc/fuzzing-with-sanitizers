@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+def:ine void @g() prefix i32target datalayout = "E-m:e-i64:64-n32:64 !3=!{ {%.};'!3%* @=!  

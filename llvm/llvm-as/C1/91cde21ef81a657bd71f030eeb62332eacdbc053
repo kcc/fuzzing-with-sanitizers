@@ -1,0 +1,29 @@
+
+
+@0 = common global i3
+2
+
+
+ global i32 36 
+
+
+
+
+define <2 x i64> @testInsertTwice(<2 x i64> %v, <2 x i64> %i) {
+
+
+  %1 = tail call <2 x i64> @llvm.x86.sse4a.insertqi(<2 x i64> %v, <2 x i64> %i, i8 32, i8 32)
+  %2 = tail call <2 x i64> @llvm.x86.sse4a.insertq(<2 x i64> %1, <2 x i64> %i, i8 32, i8 32)
+  ret <2 x i64> %2
+}
+
+
+
+
+
+
+
+
+define <2
+
+ x 

@@ -1,0 +1,22 @@
+;
+
+declare<
+
+
+4x float>@llvm.mips.dpfa.Nhsep$ 
+  ()
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "jaha" {
+entry:
+	ret void
+}

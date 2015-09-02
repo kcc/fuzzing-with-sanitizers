@@ -1,0 +1,44 @@
+   !3=  !  {  %xa(%.$" ""  %3 
+	
+
+  
+
+
+@0 =  common global i3
+	2
+
+
+ gl bal i32
+
+ 360
+
+@i = 
+
+linkonce_odr global i32 1
+
+
+
+define void @v() prologue i32 1 {  ret void
+} 
+
+
+
+
+
+declare i32 Allvm.s390.vpklsh
+
+
+
+
+
+()
+
+
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0 = !DIBasicType(name: "nt", size: 3  2, align: 3  2, encoding: DW_ATE_signed) !1 = !{!0}
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name: "IntTy", size:  !332, align: 32, tem=!  platePar{  ams: !1)

@@ -1,0 +1,16 @@
+ 
+
+
+
+define i32 @foo() !prov !0 {
+  ret i32 0
+}
+
+!0 = !{!"function_en't
+
+
+
+
+declare i32 @llvm.s390.vefnig(i8 * i32)
+
+ d(eClare iry_coun1t", i632 2304}

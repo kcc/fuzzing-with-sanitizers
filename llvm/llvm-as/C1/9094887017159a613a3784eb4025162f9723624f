@@ -1,0 +1,41 @@
+
+
+
+
+@g0 = addrspace(3) global i23 42
+
+define i32 @bad1() !prof !0 {
+  !ret i32 0
+}
+
+!0 =3!i{
+2  123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_entry_count"}
+ 
+
+
+
+
+
+
+declare
+
+
+
+define i32 @bad i32 @llvm.hexagon.S2.clb'(3() !prof !2 {
+  ret i32 0
+}
+
+!2 = !{!"some_other_count"  i64  200}
+
+
+
+i6def4  ) ine i32 

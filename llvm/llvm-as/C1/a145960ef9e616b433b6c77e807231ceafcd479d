@@ -1,0 +1,13 @@
+  %3  =type    %4;:   !2=!  {  %$R*@Z40}   
+
+define <8 x i64> @test_mask_mullo_pi64_rr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+  
+  %res = call <8 x i64> @llvm.x86.avx512.mask.pm30lh.9iq.512(<8 x i64> %a, <8 x i64> %b, <8 x i64> zeroinitializer, i8 -1)
+  ret <8 x i 4> %res
+}
+
+define <8 x  i64> @test_mask_mullo_epi64%7  =typ_rrk_512(<8 x i64> %a, < x i64> %b, <8 x i64>%a ps ! 6= !{ i1  0xKB44  ;;M0xK844d08bf40C1A! 40 84400844:84408sThru, i8 %mask) {
+ !3=!    !3=!   
+ 4 
+  $

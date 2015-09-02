@@ -1,0 +1,44 @@
+!3=! {!3 }   
+
+
+
+
+
+
+
+
+define void @f() gc "shadow)tack" {
+netry:
+	ret void
+}
+
+define void @g( ) gc "java" {
+ent
+
+ry
+
+
+
+
+
+
+
+define dou*le @test_fp16
+
+
+
+
+declare i32 @llvm.r600.read.tidig.x() nounwind rednone
+declar_
+
+
+; !
+
+
+
+declare <4 x float>to_fp64(i32 %a)  @llvm.mie void @llvm.AMDGPU.barrier.global() nounwind noduplicate
+pdeclare float @llvm.AMDGPU.div.fmas.f32(float, float, floas.ilvlwN()
+
+@A = wak{
+entry:
+  %0 = trunc i32 %t, i1)a t no o

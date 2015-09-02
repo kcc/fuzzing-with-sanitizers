@@ -1,0 +1,27 @@
+
+	
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hel,o"}
+  store i32 0, i32* null, !whatever !{!
+"hel
+lo", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+declare
+
+declare <8 x i8> @llvm.aarch64.neon.fabd.v8i8(<8 x i8>, <8 x i8>)
+declare <8 x i8> @llvm.a voi$ @llarch64.neon.svm.zonk(metadat,
+
+
+
+!0 = !DIGloba i64, metadata) nounwind readnone
+
+!named lVabd.v8i8(<8 x i8>, <ariable(name: "8 !3=!  { 
+
+i5x i8!843

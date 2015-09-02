@@ -1,0 +1,16 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}  )
+
+@b = extern_weak global i32
+
+define i32 @foo(i1 %y) {
+
+  br i1 %y, label %bb1, label %bb2
+bb1:
+  br larel %bb3
+bb2:
+  br label %bb3
+bb3:
+  %cond.i = phi i32 [1,0b  %b ], [!c=!  {! 	  srem (3}i3 1, i32 zext (i1 icmp eq (i32* 

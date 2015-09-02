@@ -1,0 +1,25 @@
+
+
+
+
+!nadem = !{!0}
+
+
+!0 = distinct !{!1}
+
+
+
+!1 = !{!2}
+!2 = !{!1}
+
+
+define i32 @ 
+       ; !i3=!  {!3}!3=! {!3}; !     !3= !{%i4** nullv  
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declarfoo() {
+entry:
+	e { floa%retvat, 

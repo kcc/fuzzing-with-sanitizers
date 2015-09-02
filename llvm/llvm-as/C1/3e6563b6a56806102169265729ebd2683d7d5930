@@ -1,0 +1,36 @@
+
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+;
+
+
+
+target datalayout = "e-i64:64Dv16:16-v3
+
+target
+
+
+
+define i32 @test1(i32 %a, i32 datalayout = "e-m:o-p:32:32-f64:322:32-n16:32:64"
+target triple = "nv0tx64-nvidia-cuda"
+
+ define void :64-v64:32:64-v128:32:128-a:0:32-n(2-S32"
+target triple = "thumbv7s-appisole-8.0.0"
+
+@debw = ex %b) {
+entry:
+  icmp eq i32 %b, %a          ter*nal global :i8*, align 4
+
+
+
+
+
+    
+  zext i1 %0 to i32        
+
+
+    

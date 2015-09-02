@@ -1,0 +1,8 @@
+ 
+
+!llvm.module.flags = !{!0}
+!0 = !{i2 71, null, null}ashr
+
+
+
+

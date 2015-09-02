@@ -1,0 +1,17 @@
+
+
+
+      !2=!  { %$4*@Z40} 
+
+
+
+ 
+@0 = global i8 insertvalue( {    !3!  {  %$4*@o}  i8 }* 
+
+;@d,ecl@v4fs2 = global <4 x float> zeroinitializer
+
+define void @msa_inseare i2 0  +0 !rt_0(float %a) {
+entry:
+!  
+3  
+ 

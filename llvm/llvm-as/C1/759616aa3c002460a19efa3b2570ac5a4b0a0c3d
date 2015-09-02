@@ -1,0 +1,53 @@
+     ; ;  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIBasicType(name: "int", size: 32, align: 32, encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "T*y", type: !5)
+!3 = !DITemplate ypeParameter(type:!
+1)! 4 
+
+
+
+
+
+
+declare i64 @llvm.hexagon.F4.vuGash= !DITemplateTypedxdb(iParamete!   r(nme: ""64, ty, i6pe4)
+d: !1
+
+d

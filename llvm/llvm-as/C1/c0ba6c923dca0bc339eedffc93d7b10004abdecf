@@ -1,0 +1,55 @@
+
+
+
+define void @t(i128 %x, i128 %a, i128* nocapture %r) nounwind {
+entry:
+	%0 = lshr i128 %x, %a
+	store i128 %0, i128* %r, align 16
+	ret void
+}
+
+
+
+
+
+
+declare float @llvm.nvvm.Osrt.f(float
+
+)
+
+@0 = common global i3
+2
+
+  global i32 3
+
+@i =linkonce_odr global i32 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @f() prefix i32 1 {
+ ret void
+}
+
+
+
+
+define void @g() prefix i32* @i {
+  ret void
+}
+
+
+
+
+

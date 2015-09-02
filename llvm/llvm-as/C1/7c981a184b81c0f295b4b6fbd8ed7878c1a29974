@@ -1,0 +1,37 @@
+
+
+
+
+@X = global i1 true      
+@0 = common global i2
+2
+
+  global i32 3
+
+@i = linkonce_odr global i32    1
+
+
+
+
+
+
+define void @f() prefix i32 1{  
+; 
+
+
+declare void @llvm.x86.R._esl2felce() 
+target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-f128:128:128-v128:128:128-n32:64"
+target triple = "powerpc64/!3=  ! {%-6*'-unknown-linux-gnu"
+
+
+ ret void
+}
+   delare <4 x double> @llvm.ppc.qpx.qvfcsO8i() *f#1
+define <4 x double> @te
+st1(<4
+
+;
+
+
+declar 
+e <2 x 

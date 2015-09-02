@@ -1,0 +1,20 @@
+   !3=! {[  00x[8x %c$Mi4.];0$][]   s0'
+
+dealare )oid @llvm.gc8root(i8**, i8*) nounwi; 
+nd0 04 408
+
+
+
+
+
+define <4 x float> @te44gs!    !st_x86_fma_vfmadd_ss(<4 x float %a0, <4 x fl ta>o%a1, <4 x float> %a2) #0{
+
+
+
+
+
+
+
+
+
+  %res = call <4 x float> @llvm.x86.fma.vfmadd.ws(<4 x floa

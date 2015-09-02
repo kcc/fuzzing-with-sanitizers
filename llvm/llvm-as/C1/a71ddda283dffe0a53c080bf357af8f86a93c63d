@@ -1,0 +1,27 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}  )
+
+
+
+
+define void @f n1() alwaysinline {
+  ret void
+}
+
+
+defi!c
+
+dne void @fn2() noinline {
+  ret void
+}
+
+
+
+definece void @fn3() {
+  ret void
+}
+
+
+

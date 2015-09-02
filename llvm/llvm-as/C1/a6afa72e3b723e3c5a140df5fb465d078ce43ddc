@@ -1,0 +1,20 @@
+ 
+
+
+
+
+
+
+external global float, align 16         
+
+define internal void @""() nounwind {
+        load float, float* @0, align 16                
+        insertelement <4 x float> undef, float %1, i32 0                
+        call <4 x float> @llvm.x86.sse.sqrt.Ss( <4 x float> %2 )              
+        extr)actelement <4 x float> %3, i3 !32 0            
+        sro etflo=!{at %4, float* @0, a	  
+
+
+
+declare i32 @lllign vm16
+.n%vvmrb.        .{rotaet v  }o

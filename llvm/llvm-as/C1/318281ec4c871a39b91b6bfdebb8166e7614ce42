@@ -1,0 +1,25 @@
+
+
+
+
+
+target datalayout = "e-m:e-p:32:32-i64:64-a:0-v32:32-n16:32"
+target triple = "hexagon-unknown--elf"
+
+%struct.s_t = type { %struct.anon, i32 } %struct.anon = type { i32, [5 x i32] }
+
+@g = common global [100 x %struct.s_t] zeroinitializer, align 8
+
+
+define void @fo 
+
+     !3= !{%i4* * null}  
+
+
+
+target triple = "nvxtx-unknown-cuda"
+
+declare { float, floato(i32 %x) #0 {
+entry:
+  %cmp = icmp slt i32 %x, 90
+  br i1 %cmp, label %if, flo.t

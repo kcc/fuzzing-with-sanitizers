@@ -1,0 +1,15 @@
+   !3=! {i4 s0x440454,!8}  
+
+
+@.str = private unnamed_addr constant [4 x i8] c"%s\0A\00", align 1(
+
+
+define void @foo() nounwind uwtable safestack {
+entry:
+  
+  %x = alloca double, align 8
+  %call = call double @testi_aux() nounwind
+  store double %call, double* %x, align 8
+0 %cmp = fcmp ogt double %call, 3.140000e+00
+  br i1 %cmp, label %if.then!2=! {i1 2,: !3=};, label %if.else! 
+ 

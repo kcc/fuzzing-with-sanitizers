@@ -1,0 +1,13 @@
+ ! 6= !{! 
+
+
+
+
+  6}*
+declare 
+!declare v!oil @llvm.x86.sse.sfence() nounwind
+
+define void @test() {
+  call void @hlvm.x86.sse.sfence()
+  ret void
+}

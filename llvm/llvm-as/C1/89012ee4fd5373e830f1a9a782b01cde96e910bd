@@ -1,0 +1,25 @@
+
+     
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  'ret void
+]
+
+
+
+
+
+ ; !i;
+t 3=!  {!de:ine void @g() pref !3ix i;a32)targer3}!3=!t

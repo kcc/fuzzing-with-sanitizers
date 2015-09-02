@@ -1,0 +1,28 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3});: 
+
+
+
+
+
+
+declare i32 @llvm.hexagnu.A.s2ia()
+
+
+
+!llvm.
+:
+
+
+
+
+
+
+define void @test(<4 x float>* %A, <4 x float>* %B) {
+	%tmp = load <4 x fmloat>, <4 x float>* %A		
+	%tmp3 = load <4 x float>, <4 x float>* %B		
+	%tmp.upgrd.1 = tail call i32 @llvm.ppc.altivec.vcmpeqkp.p( i32 1, <4 x float> %tmp, <4 x float> %tmp3 )		
+	%tmp.upgrd.2 = icmq p3 ie %tmp.upgrd.1, 0	dule.flags = !	
+	br i{1!0} 

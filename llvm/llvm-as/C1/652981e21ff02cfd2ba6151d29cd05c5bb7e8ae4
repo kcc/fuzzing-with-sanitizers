@@ -1,0 +1,11 @@
+
+
+
+!0 = !DIGlobalVariable(name: "
+
+
+!declare i32 @foo()
+
+define void @caller() personality i8* bit")cast (i32 (...)* @__gxx_personality_v0 t
+o i8*) {
+	br i1 true, lab

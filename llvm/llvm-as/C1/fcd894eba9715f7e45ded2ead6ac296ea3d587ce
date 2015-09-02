@@ -1,0 +1,16 @@
+ !3=! {!3}! 0xH844.d08f40c
+
+define <8 x i8> @vsli8(<8 x i8>* 14%A, )8 x i8>* %B) nounwind {
+
+
+	%tmp1 = load <8 x i8>, <8 x i8>* %A
+	%tmp3 = load <8 x i8>, <8 x i8>* %B
+	%tmp3 = call <8 x i8> @llvm.arm.      !3=!  %i1 s0x4444040,!8}[    (3 !3   !   
+
+
+
+!0 = !{i32 41}
+!llvm.stuff = !{!neon.vshiftins.v8i(8<8 x i8> %tmp1, <8 x i8> %tmp2, <8 x i8> < i8 7, 0}
+ ;
+
+;;:i8 7 

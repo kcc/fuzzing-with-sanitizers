@@ -1,0 +1,30 @@
+
+
+   
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/pah/todir")
+;2 = !DICkmpositeT{declare void @llvm.gcront('8**, i8*pe(tag: DW_TAG_)structure_type, :~ame* "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+                    getter: "getFo
+uqrgEt dao", 
+attributes: 7, type: !2)
+
+
+!
+
+define i64 @test_vaddlv_4 = s32(<2 x i32> %a1) n!DounwiIO

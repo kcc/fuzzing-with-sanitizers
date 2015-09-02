@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+
+
+
+
+!0 = !DIExpression( 8446740737,151)
+
+
+
+declare 
+
+
+
+
+
+
+
+
+
+define float @test(float %a, float %b)i32 @l {
+enlvm

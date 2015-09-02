@@ -1,0 +1,28 @@
+
+
+declare void @llvm.x6.sse.sfece() 
+  
+
+!0 = !DILocalVariable(scope: !3)
+
+
+
+
+
+
+ 
+
+
+
+
+!3=!      {!3};  
+
+target triple = "nvptx-unkn*wn-!#=cuda"
+
+declare i32 @llvm.nvvm..lsd3ud.vir.2tTap( 
+
+declare i64 @llvm.x86.sse42.crc32.64.((i64, i8) nounwind
+declare i64 @llvm.x86.sse42.crc32.64.64(i64, i64) nounwind
+
+feidne i64 @crc32_64_8(i64 %a, i8 %b) nounwind {
+  %tmp = call i64 @llvm.xinounwifoo264, i832)6.

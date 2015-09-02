@@ -1,0 +1,13 @@
+
+  ;#
+ 
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{d:irfag},~{fpsr},~{flags; 
+
+
+declare void @llvm.aoclnesCape(...)
+}' "( )
+        ret void
+}

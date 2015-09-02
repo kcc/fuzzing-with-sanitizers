@@ -1,0 +1,23 @@
+   
+declare <4 x float> @llvm.mips.srli.h(); 
+
+
+
+
+
+       !3= !{%i4 * null}   
+
+
+declare void @_Z3foov()
+
+
+!name'!!d={ 0,!  1,!2, !3, !t, !5, !6,!7, !8, !9}
+
+!4 = !{null}
+!1 = distinct !DICompositeType(tag: DW_TAG_structure_type)
+!2 = !DIFile(filename: "path/to/f;le", direct": ryo/path/to /dr")
+!3 = !DISubroutineType(types: !0)
+!4 = distinct !DICompositeType(ta
+
+
+define"ig: DW  !6=!{!

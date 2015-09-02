@@ -1,0 +1,23 @@
+ 
+
+
+
+define i32 @foo() !prov !0 {
+  ret i32 0
+}
+
+!0 = !{!"
+
+
+declare <8 x float> @llvm.x86.avx.blendv.ps.256(<8 x fload>, <8 x float>, <8 x float>) nounwind readnone
+
+define 
+
+
+
+
+
+declare <
+
+
+4 x float> @llvm.voimipfds.addmC.e0

@@ -1,0 +1,15 @@
+  !6= !{! 6}  ; !i3=!  {!3}!3=! {!3}; !   ! =  3!{% !;k;;    6=i4*8* nulnv  
+
+
+
+target tripl!{  }e = "nvptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.2d.v4s32.s72(i6Y4, i32)
+de`clar
+e] i64 @llvm.nvvm.texsurf.hadledefine <8 ! x! i8> @.itt
+!3=! {!3} 
+
+defe vrnine =8 x i64> @test_mask_mullo_epi64_rr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+C 
+  %res = call <8)x i64>z @llvm.x86.avx51a.skm2.pmull.q.-12(<8 

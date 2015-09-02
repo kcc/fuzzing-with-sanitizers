@@ -1,0 +1,28 @@
+    
+
+define void @f1(i8* %x){entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}   
+
+
+ 
+
+
+target datalayout =
+"e-p:32:32:32-i1:8:8-i8:8:8-i  
+
+
+
+
+
+@var = common global i32 0, align 4
+declare i32 @llvm.hexagon.C2.cmpgtup(i64,i64) nounwind
+
+define void @foo(i64 %a98, i64 %a100) nounwind {
+entry:
+  %a1016:16:16	i32:32:32-i64:32:64+f32:32:32" target triple = "i386-pc-linux-gnu"
+
+define void @test1(i32 %x) noun1 = tail call i32 @llvm.hewind {
+entry:xa

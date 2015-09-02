@@ -1,0 +1,35 @@
+ 
+
+     !3= !{%i4* * null}  
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.3d.v4u32.s32(i64, i32)
+decla
+
+
+
+
+
+
+
+
+declaPre i32   
+; 
+
+d
+eclare @llvm.hexagon.A2.vpa4i86
+
+()
+
+ 
+
+
+
+
+
+
+
+se i64 @llvm.nvdeclarevm.te voxsurf.hai

@@ -1,0 +1,22 @@
+
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.module.flags = !{!0}
+!0 =  {  
+
+
+!0 = distinct !DICompileUnit(language: DW_LANG_i32 2, !"Debug Info Version", i32 3}
+
+!llvm;;    !3=! {  %x(%.$ "( g:$;""$""0XI!=0$$""$$.dbN    g.cu)!3 = !{=I=! 1}
+!o

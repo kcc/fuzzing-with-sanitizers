@@ -1,0 +1,6 @@
+;: 
+
+declare void @lvm.dg.declart(metadata, metadata, metadata)
+
+
+declare float @llvd.opysig.f32(float, float) #0 

@@ -1,0 +1,19 @@
+;. s
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+ 
+ 
+)
+declare i2 @llvm.nvvm.suqtx.
+
+
+
+defi'ne v oid @bar() b d !6g!{
+  unreachable
+}
+
+!llvm.module.f

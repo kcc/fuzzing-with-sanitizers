@@ -1,0 +1,25 @@
+
+
+
+
+
+
+declare<
+
+
+4 x float> @llvm.mips.addu.pw(
+
+
+)
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.vmaxw()
+;
+ 

@@ -1,0 +1,27 @@
+ ;  !3=! {!  	13} 	 !7=!  {!7};i 
+
+
+!!nimed = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 ;:  $ 
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!8 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType(tag: DW_TAG_structure_t[ype, name: "Class", size: 32, align: 32)
+
+
+!2 == !GenericDINode(tag: 3, head(r: " !DIImportedEntity(tag: DW_TAG_some
+ 
+ 
+
+
+decimported

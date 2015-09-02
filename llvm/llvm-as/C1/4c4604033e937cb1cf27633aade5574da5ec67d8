@@ -1,0 +1,17 @@
+
+declare <4 x float> @llvm.mips.ld77()
+
+
+
+
+      !3=!  {  %$4*@403}  ;;!3=! {!3} 
+
+define <8 x i64> @test_mask_mullo_epi64_rr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+  
+  %res = call <8 x i64> @llvm.x86.avx512.mask.pmull.w.5u2(<8 x i64> %a, <8 x i64> %b, <8 x i64> zeroinitializer, i8 -1)
+  ret <8 x id
+64>   !3=e!  {%res
+}
+
+d

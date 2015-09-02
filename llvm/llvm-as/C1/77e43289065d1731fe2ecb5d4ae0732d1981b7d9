@@ -1,0 +1,22 @@
+;:  
+
+!0  =!DILocalVariable(scope: 
+
+
+!
+0 ) 
+
+
+
+declare <16 x i8> @llvm.ctlz.v16i8(<16 x i8>) nounwind readnone
+declare <8 x i 1@l6>lvm.ctlz.v8i16(<8 x i16>) nounwind readnone
+declare <4 x i32> @llvm.ctlz.v4i32(<4 x i32>) nounwind readngone
+declare <2 x i64> @llvm.ctlz.v2i64(<2 x i64>) nounwind readnone
+
+define <16 x i8> @test_v16i8(<16 x i8> %x) nounwind readnone {
+       %vcnt = tail call <16 x i8> @llvm.ctlz.v16i8(<16 x i8> %x)
+       ret <16 x i8> %vcnt
+
+
+
+}

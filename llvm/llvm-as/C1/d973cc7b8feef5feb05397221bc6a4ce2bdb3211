@@ -1,0 +1,34 @@
+
+
+
+
+
+
+@b = internal global i32 ()* @foo               
+
+
+
+
+@main_addrs = constant [2 x i8*] [i8* blockaddress(@f, %FOO), i8* blockaddress(@f, %BAR)]
+
+
+declare void @foo() nounwind
+declar
+@foo.upgrd.1 = internal global i32 7            
+
+ 
+define internal i32 @foo() {
+   e void @bar() nounwind
+
+define void @f(i8* %indirect.goto.dest) nounwind uwtable ssp {
+entry:
+  indirectbr i8* %indirect.goto.dest, [label %FOO, label %BAR]
+
+  
+
+FOO:
+  call void @foo()
+  ret void
+
+BAR:h
+     %ret   ca

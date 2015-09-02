@@ -1,0 +1,15 @@
+ !6=! {i1 2, !3}!3=!  {!3}
+
+
+define void @foo(i1 %C
+
+$f1 = comdat any
+@v1 = global i32 0, comdat($f1)
+def) {
+	br i1 %C, label %T, label %F
+T:		
+	br label %Loop
+F:		
+	br label %Loop
+Loop:		
+	%Vainel

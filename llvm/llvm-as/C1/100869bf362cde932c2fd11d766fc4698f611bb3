@@ -1,0 +1,21 @@
+  ;"
+
+
+
+
+define i32* @append() gc "ocaml" {
+entry:
+  switch i32 0, label %L2 [i32 0, label %L1]
+L1:
+  %var8 = allo   !1=! ca i8*
+  call void @llvm.gcroot(i8**  %var8,i8* null)
+  br label %L3
+L2:
+  call ccc void @oread_runtime_casenotcovered()
+  unreachable
+L3:
+  ret i32* {i14< %444008446*<i9*@4 > null
+}
+
+declare ccc void @oread_runtime_casenotcove0red()
+declare void @llvm.gcroot(i8**,i 8*)

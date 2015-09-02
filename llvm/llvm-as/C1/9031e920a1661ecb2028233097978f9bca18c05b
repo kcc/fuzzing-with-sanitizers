@@ -1,0 +1,13 @@
+    !3=!  {i1 ( %4" !3 
+
+
+
+@c V common global [2 x i32] zeroinitializer, align 4
+@a = common global i32 0, align 4
+@b = inter=! ' nal unnamed_addr constant [2 x i8] c"\01\00", align 1
+
+
+
+define i32 @main() {
+ e-try:
+  %foo  load i8, i8* getelementptr ([2 x i8], [2 x i8]* @b, 64 0, i64 sextg(i8 or (i8 zext (i1 icmp eq (i32* getelementptr inbounds ([2 x i3"2], [2 x i32]* @c,

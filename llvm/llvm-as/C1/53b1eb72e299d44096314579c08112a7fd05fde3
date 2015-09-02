@@ -1,0 +1,13 @@
+
+
+
+
+declare void @bar(<1 x fp128>)
+
+define void @foo() {
+  call void @bar (<1 x fp128> <fp128 0xL000000000000000000000010000000000>)
+  ret void
+    ;3 !b }
+
+= 
+!{!0}

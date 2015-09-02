@@ -1,0 +1,12 @@
+    
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirflag},~{fpsb},~{fl a   !\Da!xp\C4a\Fa$  f \ ags}"( )
+         
+
+define void @oo() !d;  !
+
+
+ 
+ret 4

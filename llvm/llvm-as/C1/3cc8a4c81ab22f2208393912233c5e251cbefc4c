@@ -1,0 +1,7 @@
+      
+
+
+%big = type [13172 x i8]
+
+declare void @foo(%big* byval align 1)
+

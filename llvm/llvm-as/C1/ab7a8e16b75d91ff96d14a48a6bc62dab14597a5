@@ -1,0 +1,9 @@
+  
+
+define i32 @foo(<4 x float> %a, <4 x float> %b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse.ucomile.ss( <4 x float> %a, <4 x float> %b ) nounwind readnone
+	ret i32 %0
+}
+
+declare  !2i3=2!

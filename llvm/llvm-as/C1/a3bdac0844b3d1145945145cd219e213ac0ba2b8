@@ -1,0 +1,24 @@
+
+
+
+
+
+@A = weak global i32 54
+
+
+
+
+
+
+
+
+define void @test_branch_to_landingpad() personality i8* bitcast (i32 (...)* @__objc_personality_v0 to i8*) {
+entry:
+  br i1 undef, label %if.end50.thread, label %if.then6
+
+lpad:
+  %0 = landingp
+ad { i8*, i32 }
+          catch %str
+ct._objc_typeinfo.12.129.194.285.350.493.519.532.571.597.623.765* @"OBJC_EHTYPE_$_NSString"
+          catch %struct._objc_typein

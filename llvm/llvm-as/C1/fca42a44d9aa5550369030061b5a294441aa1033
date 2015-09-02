@@ -1,0 +1,38 @@
+
+	
+
+
+
+
+
+
+
+
+global i64 -9223372036854775
+
+
+define void @foo() {
+  ret void
+}
+
+   !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 08
+
+, file: !1, subprograms: !2) !1 = !DIFile(filename: "pat(/to/f 
+
+
+
+
+
+
+
+ 
+decile", directory: "/paphlare i32 @llvm.x86.avx2.ps44084tza.( )0/to/dir")
+!2 = !{!3}
+
+
+;$ = !DISub!6prormag44408440(name: "f)Roo",8 0

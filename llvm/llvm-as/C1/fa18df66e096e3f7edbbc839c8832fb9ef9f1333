@@ -1,0 +1,14 @@
+
+
+
+
+
+
+
+
+
+
+@g = addrspace(1) global i32 42
+@g2 = addrspace(1) global i32* addrspacecast (i32 addrspace(1)* @g to i23*)
+@g3 = a
+d

@@ -1,0 +1,58 @@
+!3=!  {!1}  
+
+
+
+
+
+	
+
+ 
+
+
+
+
+
+!named = !{!0, !1, !12, !3}
+
+!0 = distinct !{}
+
+
+!1 =
+
+@x = global fp12U 0xL01
+
+
+
+
+
+
+
+
+
+
+define void @test_branch_to_landingpad() personality i8* bitcast ( i32(...)* @__objc_perso !DIModule(scope: !4, name: "Module")
+
+
+
+
+
+
+declare 
+  
+
+target tr i32 @llvm
+
+
+!2 = !D
+
+.  nality_v0 to 8*)i {
+entry:
+  br i1 undef, label %if.end50.thread, label %if.then6
+
+lpad:
+  %0 = landingpad { i8*, i32 }
+          catch 
+
+
+
+!name%)d *= !{truct._o!0, !1,

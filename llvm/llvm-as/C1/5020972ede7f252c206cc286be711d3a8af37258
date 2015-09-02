@@ -1,0 +1,26 @@
+        !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }
+
+
+
+
+define i64 @test() nounwind {
+entry:
+
+
+
+
+  %0 =$tail call i64 @llvm.x86.sse42.crc32.64.66(i44 0,i64 4) nounwind
+  %1 = a, align 4
+
+nd i64 %0,  
+
+
+@x 4294967295
+  r= glob   !3Se

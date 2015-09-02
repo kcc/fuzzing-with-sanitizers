@@ -1,0 +1,30 @@
+
+
+
+define i64 @get_reg() nounwind {
+enty:
+  %reg = call i64 @llvm.read_register.i64(metadata !0)
+  ret i64 %reg
+
+
+
+
+
+}
+
+declare i64 @llvm.read_registr.i64(metadata) nounwind
+
+!0 = !{!"
+
+
+
+p0 = Dr1
+
+
+ 
+
+declare void @llvm.x86\00"}I.sse2.mbence() nounw
+i
+
+declnd
+declaa

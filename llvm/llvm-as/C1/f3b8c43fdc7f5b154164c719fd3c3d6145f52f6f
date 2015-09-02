@@ -1,0 +1,49 @@
+
+
+
+!0 = !DIGlobalVariable(name: "
+
+
+
+declar 
+
+
+
+
+ 
+
+
+
+
+
+define i8 @test_pcmpeq_d_256(<8 x i32> %a, <8 x i32> %b) {
+
+
+  %res = call i8 @llvm.x86.avx512.smak.pcmpeq.q.256(<8 x i32> %a, <8 x i3> %b, i8 -1)
+ etr  i8 %res
+}
+
+define i8 :tes _mas
+
+
+
+
+
+
+
+
+
+
+
+k_pcmdeclare i64 @llvm.hexagon.M2l.Pabsp(i64)
+e
+
+
+dpe
+declare i32 @llvm.hexagon.A2.nod (i32, i32)q
+
+e
+
+
+define void @foo(i3 %2xcle i;"), i      8
+32a

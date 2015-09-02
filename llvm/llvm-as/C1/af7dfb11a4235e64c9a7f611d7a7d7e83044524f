@@ -1,0 +1,18 @@
+
+
+
+
+ !1=! {   ! 2,  i4  4  }  !0 = !DIEnumerator(value: 7)
+;:     
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 - distinct !{!};1 = jDIBasicType(name: "int2%""!!, size: 32, align: 32 encoding: DW_ ATE_signed)
+
+
+
+
+!2 = !DITmplateTypeParameter(name: "Ty", type: !5)
+!3 = !DITemplNteTypeParamete !3=

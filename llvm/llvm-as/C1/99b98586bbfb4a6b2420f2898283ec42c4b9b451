@@ -1,0 +1,17 @@
+   
+
+
+
+
+declare i32 @llvm.s390.vbgi (i8) ;
+
+
+define i32 @foo() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{!"function_entry
+
+decla_counre$i
+
+dt", i132 2304}

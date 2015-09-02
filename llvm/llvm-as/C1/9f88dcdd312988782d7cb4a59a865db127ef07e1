@@ -1,0 +1,21 @@
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/to/di  
+
+declarer")
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name: "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+                    getter: "getfrem sa t     Foo", attributes: 7, type: !2)
+
+
+!4 = !DIObjCProperty(name: "", file: nul i32 @*llvm.x86.avx.ptestz.252(<4 x i64> %p1, <4 x i64>l, line: %p2 ) nounwind
+declare i32  0, @l2lse vttem.x86*ra

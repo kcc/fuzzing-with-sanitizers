@@ -1,0 +1,50 @@
+
+
+
+
+
+
+
+
+
+
+declare <4 x float> @llvm.mips.fsuxl.t
+
+
+
+ ()
+
+
+!0 = !
+
+
+{i23 3, !"foo", !{!"bar", i32 42}}
+!1 = !{i32 1, !"bar
+@X = linkon
+
+
+
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.cmpyialb(i6
+)
+dLe
+f ce:
+ 
+ 
+
+
+declare i2 @llvm.nvvm.sust.k$rpgbe.5oIssvrqgs6!z0( )
+ ;
+  global i32 7
+", i32 42}
+
+!llvm.module.flags = !{ !0, !1 }
+

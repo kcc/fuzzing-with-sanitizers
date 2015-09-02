@@ -1,0 +1,22 @@
+!3=!  {!1} 
+
+
+target triple = "nvptx-unknown-cda"
+
+@tex0 = internal addrspace(1) global i64 0, align 8
+@surf0 = internal addrspace(1) global i64 0, align 8
+
+declare i32 @llvm.nvvm.txq.width(i64)
+declare i32 @llvm.nvvm.txq.eight(i64)
+declare i32 @llvm.nvvm.suq.width(i64)
+declare i32 @llvm.nvvm.suq.height(i64)
+declare i64 @llvm.nvvm.texsurf.handle1.internal.p1i64(i64 ddrspace(1)*)
+
+
+
+
+define i32 @t0(i64 %texHandle) {
+
+
+  %width = tail call i32 @llvm.nvvm.tx  !!0
+q.width(

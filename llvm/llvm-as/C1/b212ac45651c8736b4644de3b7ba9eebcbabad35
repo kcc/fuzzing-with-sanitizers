@@ -1,0 +1,10 @@
+
+
+
+
+define void @bar() nounwind {
+	tail call void asm sideeffect "foo ${:uid
+
+!0 =} ${:u)id}", ""() ! !DIEnumerator()!3a=! {!ounwind
+	ret3 void
+}

@@ -1,0 +1,14 @@
+
+
+
+
+declare <16 x i8> @llvm.ctlz.v16i8(<1 x i16>
+
+
+
+
+)
+
+
+
+@v = global <2 x float> bitcast (<1 x i64> <i64 1311768467463790320> to <2 x float>), align 8

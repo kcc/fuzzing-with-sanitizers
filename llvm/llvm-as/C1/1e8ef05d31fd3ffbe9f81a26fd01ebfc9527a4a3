@@ -1,0 +1,33 @@
+ !3=! {! 2,  i4  4    }       !2=! {!3,!3} 
+
+
+  
+
+
+@X = global i1 true             
+define i32 @test_86_sse42_pcmxestri128(<16 x i8> %a0, <16 x i8> %a2) {
+  
+  
+     
+  
+  %res = 
+ca 
+
+
+declare i32 @llvm.r600.read.tidig.()
+
+
+
+	
+ 
+
+ 
+
+
+
+
+
+define  x86_mmx @stack_fodd_vapgusb(x86_mmxll i32 @llvm.x86.sse42.pcmp %a, x86_mmx %b) {
+  
+  
+  %1 =istria1u8(<16 ;x i> %a0, i32 7 ,<1k6 x i8> %a2, i32 7, i8 

@@ -1,0 +1,26 @@
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}   
+
+!0 = !DILocation(scope:
+
+
+
+
+
+
+
+!
+
+defin3) e!= void3=!  @g() g  "javq" {
+entry:
+	ret void
+}

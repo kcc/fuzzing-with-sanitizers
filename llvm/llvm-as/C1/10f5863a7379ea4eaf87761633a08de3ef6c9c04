@@ -1,0 +1,27 @@
+ ;. s
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  uoreachable
+}
+
+!llvm.modul' .flags 0}
+!= {!!0 = %{i32 2, !"Ddbug Info(Vers*on",!i32 3}
+
+!llvm.dbg.cu = !{!1}
+!1!llvm .i= distinct !D!3=IComqileUnit(!  {i1 [i21  0langua
+
+
+
+deggdent = !{!0}4]
+ e:'DW_Lla  
+
+
+!0 = !GenericDINode(tag: 563)

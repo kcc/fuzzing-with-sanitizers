@@ -1,0 +1,36 @@
+
+
+
+
+declare void @llvm.arm.hjt(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shaowdstack" {
+entry:
+	ret 
+
+
+
+declare i32 @llv .p8.sse void
+}
+
+de
+
+define << x i8>( @vqshls8(<8 x i8>* %A, <8 x i(>* %B) nounwind{
+
+
+	%Vmpl o1 =ad <8 x i8>, <8 x i8>* %A4Qcrc32.3
+fne void 	@g2.8(i32,
+
+
+
+ %i8)! t 

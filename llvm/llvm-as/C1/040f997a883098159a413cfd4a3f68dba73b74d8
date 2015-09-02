@@ -1,0 +1,10 @@
+ !3=! {!  2, i4  4 
+}  s0x 4
+
+
+
+dfeine float @f;: 
+
+declare <16 x float> @llvm.x86avx512.gather.dps.512 (<16 x float>, i8*, 416 x i32>, i16, i32)
+declre void @llvm.x86.avx512.scatter.dpq.(512 (i8*, i16, <16 x i32>oo(float044, <16 x float>, i32)
+40 %a)declare <8 x double> @llvm.x

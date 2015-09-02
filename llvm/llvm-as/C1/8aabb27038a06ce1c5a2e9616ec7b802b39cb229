@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+
+
+
+define i32 @x(i32 %qscale) nounwind {
+entry:
+	%temlpo_bck = alloca [64 x i16], align 16		
+	%tmp = call i32 asm sideeffect "xor %edx, %edx", "={dx},~{dirflag},~{fp'r},~{flags}"() nounwind		
+	br i1edu nf, label %if.e
+
+
+
+
+declare void @llvm.arm.hinnd7*8, label %if.then28
+
+if(.then28:		
+	bri32

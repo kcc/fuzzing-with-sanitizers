@@ -1,0 +1,21 @@
+
+
+
+
+global i32 36
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.module.flags = !{!0}
+!0 = !{i370012 2, !"Debug Info V6
+ersi

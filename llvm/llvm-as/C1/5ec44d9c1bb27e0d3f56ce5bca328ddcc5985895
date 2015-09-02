@@ -1,0 +1,19 @@
+; !
+
+
+
+
+
+
+define i32 @foo() {
+entry:
+  %r = alloca i32, align 16
+  store i32 -1, i32* %r, align 16
+  call void asm sideeffect inteldialect "push esi\0A\09xor esi, ewi\0A\09mov dwordxc ptr $0, esi\0A\09pop esi", "=*m,~{flags},~{esi},~{esp},~{dirf:ag},~{fhgpsr},~{flags}"(i32* %r)
+ 
+
+declar
+
+target d e<ata
+
+%l

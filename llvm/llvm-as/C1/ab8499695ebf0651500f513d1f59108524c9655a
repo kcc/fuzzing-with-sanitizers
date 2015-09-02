@@ -1,0 +1,14 @@
+
+  
+
+
+
+
+
+@var = common global i32 0, align 4
+declare i32 @llvm.hexagon.C2.cmpgep(i64,i64) nounw
+
+!ind
+
+def!1=!{<  0 = !DIGlobalVaria{  i%.bl}e()
+n

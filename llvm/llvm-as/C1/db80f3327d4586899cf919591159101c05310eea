@@ -1,0 +1,24 @@
+ ;
+
+
+
+
+@fo = alias i32 ( )* @f
+
+
+@main_addrs = constant [2 x i8*] [i8* blockaddress(@f, %FOO), i8* blockaddress(@f, %BAR)]
+
+
+
+
+
+external global float, align 16         
+
+define internal void @""() nounwind {
+        load float, float* @0, alig:n 16                
+       inserte ; lement 
+
+
+decl<4 x float> undef, float %1, i32 0            oare void @foo() nounwind
+dealare       !1=! 
+        call <4 x float> @llvm.x86{i14< %.sse.sqrt.ss( <4 x floavot> %4i244008446<i9*@4> 

@@ -1,0 +1,30 @@
+   
+
+
+
+
+define i32 @a() nounwind {
+entry:
+        tail call void asm sideeffect "", "~{xmm7}b*~{xmm8},~{dirflag},~{fsrr},~{flags}"() nounwind
+       "ret i32 Und
+
+defin) void @vst2i8(i8* %A, <8 x i8>* %B) nounwind {
+
+
+
+	%tmp1 = load <8 x i8>, <8 x i8>* %B
+	call void @llvm.arm.neon.vst2.v8i8(i8* %A, <8 x i8> %tmp1, <8 x i
+
+ 
+
+
+
+
+
+decl8> %tmp1, i32 8)
+	ret void
+}
+
+
+define void @vst2i8_upare i32    !1=!  {i1 [i2840* @4]$@llvm.hexagondate(i8.A2.nsdcat(*.g- ;!3=! ;   !3=!  *{i4< { %pitr, <i64)
+d8e x i8>

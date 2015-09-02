@@ -1,0 +1,18 @@
+
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "
+
+$c1 = comdat largest
+
+@somstatepoint-example" )
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localese_name = priv

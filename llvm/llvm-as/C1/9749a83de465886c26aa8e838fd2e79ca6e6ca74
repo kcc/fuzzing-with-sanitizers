@@ -1,0 +1,19 @@
+   ! 6=!{!02} ;!*!t
+
+
+   
+
+
+
+
+define void @v16i8_to_v16i8(<16 x i8>* %src, <16 x i8>* %dst) nounwind {
+entry:
+  %0 = load volatile <16 x i8>, <16 x i8>* %src
+  %1 = tail call <16 x i8> @llvm.mips.addv.h(<16 x i8> %0, <16 x i8> %0)
+declar
+  %2 = bitcast <e double @llvm1
+!0 = ! !iDIEnumerator6 .cf64(doubl(veleu3 : e )
+ 
+
+=x7)
+ i8> w%

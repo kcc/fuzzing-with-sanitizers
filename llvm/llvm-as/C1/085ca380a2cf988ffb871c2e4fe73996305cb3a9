@@ -1,0 +1,74 @@
+;  
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+/define i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, 
+
+
+
+
+
+
+
+
+define void test(label 
+
+
+0=; g 
+
+
+
+decl%b, !dbg !DILocatin(line: 2, scope
+
+addrspace(3) gl;bi: !4,
+                             l 
+          ( 
+
+
+declare <4 x i32>  @llinlinedAt: !DILocation(line:c12, scope: !3))
+  ret i32 %su
+
+
+declam,ecla reare  !dbg !DILvm.x86.sse41.pocation(li4 @l%blvm.:ie :13", scope: !3)
+}
+tvxcd(<16 x

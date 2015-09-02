@@ -1,0 +1,22 @@
+    
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirflag},~{fpsb},~{fl:a   !\Da!xp\C4a\F $  f \ ags}"( )
+         
+
+d*fine oiod@v o() !d;  !
+
+
+ 
+ret    
+
+define void @a(<4 x float>* %x) nounwind  {
+entry:
+        %tmp!3=!  { !3}
+!llvm.module.flags = !{!0}   
+
+
+!0 = !GenericDINode(tag: 32 = load <4 x float>, 6)
+<4 x float>* %x, align 1
+        %inv = call <4 x float> @llvm.x86.sse.rc

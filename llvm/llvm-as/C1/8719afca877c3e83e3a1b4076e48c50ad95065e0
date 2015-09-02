@@ -1,0 +1,14 @@
+;  
+
+
+
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirflag},~{fpsr},~{fldeclaags}"( )
+        ret void
+}
+re i64 @llvm.ppc.tci$W6(i64)  !3=!
+d

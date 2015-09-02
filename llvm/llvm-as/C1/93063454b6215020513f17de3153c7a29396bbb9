@@ -1,0 +1,38 @@
+ 
+
+
+
+
+
+
+
+
+@G = global double 1.0
+
+	
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whQatever
+
+
+
+declare void @llvm.arm.jt(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+d_else !{}, !more !{!"hello"}
+  store i32 0, i32* null, !whatevr !{!
+"hel
+efil",

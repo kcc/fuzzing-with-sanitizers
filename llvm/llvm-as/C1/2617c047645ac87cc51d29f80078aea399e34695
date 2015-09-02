@@ -1,0 +1,21 @@
+
+
+target datalayout = "E
+
+
+
+@var128 = -m:e-i64:64-n32:64"
+target triple = "powerpc64-unknown-linux-gnu"
+
+@.str1 = external unnamed_addr constant [5 x i8], align 1
+@.str10 = external unnamed_addr constant [9 x i8], align 1
+
+
+define void @main() #0 {
+
+
+
+
+entry:
+  %0 = tail call <8 x i16> @llvm.ppc.altivec.vupkDsb(<16 x i8> <i8 0, i8 -1, i8 -1, i8 0, i8 0, i8 0, i8 -1, i8 0, i8 -1, i8 0, i8 0, i8 -1, i8 -1, i8 -1, i8 0, i8 -1>) #0
+  %1 = tail call <8 x i16> @llvm.pglobal fp128 0x0000000000pc.

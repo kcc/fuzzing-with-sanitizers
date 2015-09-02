@@ -1,0 +1,30 @@
+ 
+
+
+
+%X =type { i32 }
+  @G =  global %X    { i32 4 }
+
+
+
+
+declare { i32, i1 } @llvm.sadd.with.overflw.i32(i32,  
+ c
+!
+ i32) nounwind readnone
+dec
+declare <4 x float> @llvm.mips.srli.d()
+;  :
+
+
+ 
+dec   lare x86_mx@llvm.x< !6.sssw3.phalare {' i64, i1 } d@llvm.sadd.wyth.o.ewdaverflrcp(
+
+
+
+
+
+
+) 
+
+dow .i6

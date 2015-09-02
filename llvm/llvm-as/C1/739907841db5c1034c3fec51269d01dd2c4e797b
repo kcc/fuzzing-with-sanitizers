@@ -1,0 +1,47 @@
+ 
+@0 = common global i3
+2
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+@G = global i32 udiv (i32 0, i32 -9)    
+
+@i = linkonce_odr global i3  1
+
+
+
+
+define void @f() prefix i32 1 {
+  *et void
+}
+
+ 
+
+
+
+
+%struct.A = type { i32 }
+
+declare
+
+;defie vo d @g() i8* @f( 98*, ...)
+
+define i8* @f_thunk(i8* %this) {
+  %rv = musttail call i8* (i8*, ...) @f(i8* %this, ...pr)
+e  ret i8* %rv
+fi}
+
+ 

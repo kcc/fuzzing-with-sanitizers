@@ -1,0 +1,13 @@
+
+
+!03= !DILocalVariable(scope:   ! {!
+3} )!c=!  {
+
+! 	 
+
+
+
+
+
+define void @test(<4 x float>* %A, <4 x float>*!%B) {
+	%tm = loa 3d 

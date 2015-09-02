@@ -1,0 +1,10 @@
+ 
+
+define i32 @main() {
+entry:
+	br label %bb
+
+bb:
+	%indvar = phi i32 [ 0,;
+
+ %entry ], [@g = g l

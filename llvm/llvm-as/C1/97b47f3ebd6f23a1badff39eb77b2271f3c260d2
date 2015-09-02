@@ -1,0 +1,32 @@
+
+
+
+
+
+;
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIBasicType(name: "int", size: 32, align: 32, encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "Ty", type: !1)
+!3 = !DITemplateTypeParameter(type: !1)
+!4 = !DITemplateTypeParameter(name: "    !33=!  {float ;(!3=!  {i1(%4", type: !1)
+
+
+
+
+!5 = !DITemplateValueParameter(name: "
+
+
+
+
+
+decla)0xH80xK6800>re i3 @llvm.hexagon.S2.vse4x.0bac(i4V", type: !21, value: i32 7)!6 4= !DIT8x44e

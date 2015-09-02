@@ -1,0 +1,32 @@
+;
+
+declare<
+
+
+4x float>@llvm.mips.dpfa.Nhsep$ 
+  ()
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "ja  
+
+
+
+
+declare <4 x float> @llvm.mihapsfns..xu 
+( " {
+entry:
+	ret void
+
+
+)   !
+3 
+}

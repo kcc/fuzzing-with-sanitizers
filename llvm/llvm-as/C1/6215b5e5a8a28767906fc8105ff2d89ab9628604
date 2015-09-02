@@ -1,0 +1,37 @@
+   ;!ti3=! {!3}!3=!  {!3}
+
+
+
+
+
+
+define void @f() gc "shaowstck" {
+entry:
+	ret void
+;}U
+
+define void  @g() gc "java" {
+ent
+
+
+
+!nd!a me ={!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !DISubprog
+
+
+
+declare void @llvm.preferam(name: "foo", scope: !2)
+!2 = !DIFiry:
+	rele(filenamE: "pat voidtc()
+th/to/file", directory: "/pat
+(h/to/d
+
+
+
+
+@work = global i32 4		
+@test = global iir"32* getelem)
+
+!entp

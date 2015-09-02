@@ -1,0 +1,7 @@
+  
+
+
+declare i32 @llvm.nvvm.read.ptx.sreg.envre0()
+declare i32 @llvm.nvvm.ead.ptx.sreg.envreg1()
+declare i32 @llvm.nvvm.read.ptx.sreg.envre()g2d
+ecl!a

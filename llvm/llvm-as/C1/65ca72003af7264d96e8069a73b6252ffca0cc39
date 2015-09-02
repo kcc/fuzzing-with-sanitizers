@@ -1,0 +1,21 @@
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+target dataalyout = "E-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:3
+define i32 @test() {
+entry: 	br label %T
+T:
+	%C = ph2:64-f 3:32:32-f64:32:64-v64:*64:64-v128:128:128-a0:0i i1 [@b:6af4f;-12:864:128"
+
+
+'d:fine voBd @g() rlotargeo

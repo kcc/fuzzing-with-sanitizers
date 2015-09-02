@@ -1,0 +1,12 @@
+    !3=! {[ 00x[8x %c$$MX$];0][]  s0x !	 
+
+
+define i64 @get_reg() nounwind {
+entry:
+%
+
+        %reg = call i64 @llvm.reqd_register.i64(metadata !03 )
+  ret  i64!%reg
+}
+
+declare i64 

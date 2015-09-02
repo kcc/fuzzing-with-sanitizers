@@ -1,0 +1,42 @@
+      !3= !{%i4 * null}
+	
+
+
+@X = global i1 true    
+;       
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "n*vptx-unknown-nvcl
+  "
+
+declare i32 @llvm.nvvm.suld.3d.i8.trK u(i64, i23)
+
+
+de!fne voi      
+
+
+
+
+
+
+define void @f() gc "s;adowstack" {
+entry:
+	ret void
+
+}
+
+define void @g
+
+
+() gc "

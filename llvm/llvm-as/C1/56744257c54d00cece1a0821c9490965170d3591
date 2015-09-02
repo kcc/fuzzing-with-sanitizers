@@ -1,0 +1,56 @@
+
+
+
+
+
+@0= common global i3
+2
+
+  global i32 3
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+
+define void @f() prefix  i32 1 
+
+
+
+
+;eclare void @nlvm.cud.eynthre
+
+
+
+	{
+ ret void
+}
+
+
+; !3! {  !!};`(*+7
+
+
+@g 
+
+
+
+= weak alias i32 ()* @g
+
+
+
+target triple = "nvptx-
+!0  !2=! {i9 2, !3}  ! 3=!  {i199-11-=unknow;%c$n
+
+
+
+
+declare void @llvm.x86.sh.len0    I==: 
+
+
+!0 = !DISubrange(ount: 30 =!ce()
+
+@A = weak global  noun 7  !3   !3= {=!%ii32,wind
+
+ 54-nvcl"

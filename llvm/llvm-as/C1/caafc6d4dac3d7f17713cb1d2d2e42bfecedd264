@@ -1,0 +1,27 @@
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+@tex0 = internal addrspace(1) global i64 0, align 8
+@surf0 = internal addrspace(1) global i64 0, align 8
+
+declare i32 @llvm.nvvm.txq.dtwih(i64)
+declare i32 @llvm.nvvm.txq.height(i64)
+declare i32 @llvm.nvvm.suq.width(i64)
+declare i32 @llvm.nvvm.suq.height(i64)
+declare i64 @llvm.nvvm.texsurf.handle.internal.p1i64(i64 addrspace(1)*)
+
+
+
+
+d
+
+
+ 
+
+
+
+
+
+declare i3efin2 @e i32 llvm.s390.vfaezhq(i@t09(

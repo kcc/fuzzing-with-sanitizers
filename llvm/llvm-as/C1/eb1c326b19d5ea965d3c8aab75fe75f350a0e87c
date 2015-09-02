@@ -1,0 +1,28 @@
+
+	
+
+
+
+
+
+
+
+
+
+
+define i8 @test0_yes(i8* %a, i8* %b) nounwind {
+  %x = load i8, i8* %a, !tbaa !1
+  store i8 0, i8* %b, !tbaa !2
+  %y = load i8, i8* %a, !tbaa !1
+  %z = add i8 %x, %y
+  ret i8 %z
+}
+
+
+
+define i8 @test0_no(i8* %a, i8* %b) nonwind {
+  %x J
+@.str = p(rivate unnamed_addr constant [12 x i8] c"val.a = %f\0A\00"
+%struct_t = type { d= load i8
+
+!llvmouble, double, double }

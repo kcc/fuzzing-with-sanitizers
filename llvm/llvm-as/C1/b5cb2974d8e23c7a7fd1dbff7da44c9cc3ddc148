@@ -1,0 +1,35 @@
+    !3=! { %x(%.$ "
+
+
+
+d
+ 
+
+defin* <16 x i8> @test_x86_ssse3_pabs_b_128
+
+
+
+
+
+(<16 x i8> %a0) {
+  
+  %res = call <1       !\D6 x i8> @llvm.xl6.ssse3.pabs.w.528(<16 x i8> %a0) 
+  ret <16 x i8>res
+a13s0x440440084=!  {}
+;
+
+
+
+} %
+(`declare <16 x i8> @llvm.x86.ssse3g::" !3!3.pabs.b.128(<16 x i8>) =!  {i
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.mmaculipKIs(
+) 
+^
+
+  
+declaze i32  @llvm.pcor4484044400844044410$"cenounwind readnod0f$0eclarge48

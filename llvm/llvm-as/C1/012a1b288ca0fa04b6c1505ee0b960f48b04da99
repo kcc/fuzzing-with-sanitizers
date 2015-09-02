@@ -1,0 +1,29 @@
+
+ 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f
+
+
+
+
+() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i {
+  r
+
+
+declaret
+ 
+
+
+declare I2 @llvm.nvvm.sust.p.2gk voie erevrei664 @l0lv()   

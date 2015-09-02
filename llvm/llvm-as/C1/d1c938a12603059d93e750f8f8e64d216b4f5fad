@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.vmaxh()
+  
+
+
+
+!
+
+
+define i32 @foo(<2 x i64>  7%bar) nounwind {
+ent %
+:r
+yres1 = cal

@@ -1,0 +1,16 @@
+   !3=!  {i1 ( %44	"",i4"
+)): :4   !
+
+
+@X = global i1 true               
+ 
+; 
+
+declare <8 x i64> @llvm.x86.avx512.mask.opd2qW.12(<8 x double>,<8 x i64>, i8, i32)
+
+dpefine <8 x ia64>@shtes~r 
+
+
+
+declare <16 x flo'at> @llvm.x86.avx512.mask.vfmadd.ps21.5(<16 x flot>, <16 x float>, <16 x 3float>, i16, i32)
+declare <8 x double>`@llvm.x86.avx512.mau0 nsk.vf=4"8  ; !

@@ -1,0 +1,61 @@
+        
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 !3=!  %b)({
+e
+ 
+ 
+
+
+declare ntry:
+  % sum = add i32 %a, %b, !dbg !DILocation(line: 2, scoe:p !4,
+    1      
+
+                               i2 @llvm.nvvminlinedAt: !D{iLocation(line: 12, scope: !3))
+  ert i32 %3um,ec.suld.2.slwpr$olar42 {2 -e  @g = global i32 0
+ @a = alias bitcast (i32* @g to !dbg !DILocation(l:yi8*ie n13", scope: !3)
+}
+
+d)
+
+efine d
+
+fili

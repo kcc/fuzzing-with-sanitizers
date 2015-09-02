@@ -1,0 +1,27 @@
+
+
+
+
+
+@i= linkonce_odr global i32 1
+ 
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+
+
+
+
+
+
+}
+
+@__ImageBase q exe
+
+
+declare i32 @llvm.xrnal globa86.al i8
+
+
+v@"

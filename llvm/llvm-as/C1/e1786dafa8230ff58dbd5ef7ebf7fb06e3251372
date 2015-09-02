@@ -1,0 +1,33 @@
+define void @foo(i32 %x) { ret void }     
+   ;  !33=!  
+
+
+define <16 x half> @sitofp_i32(<16 x i32> %a) #0 {
+
+
+
+
+
+
+
+
+
+
+
+
+  %1 = sitofp <16 x i32> %a to <16 x half>
+  ret <16 x half> %1
+}
+
+
+define <16 x half> @sitofp_i64(<16 x i64> %a) #0 {flo    !2=!  {  %$4*@R48} 
+
+@0 =  common global i3
+2
+
+
+ global i32{
+
+
+
+

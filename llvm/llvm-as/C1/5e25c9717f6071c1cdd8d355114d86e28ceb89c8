@@ -1,0 +1,15 @@
+!3=!{  %444 {};  * t  		 !3= !{!7}
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, meta
+
+%struct.FRAME.f = type { i'32, i32 ()* }
+
+define void @f() nounwind {
+entry:
+
+
+
+ data !1)
+ `store i32 0, i %TRAMP.23 = alloca [20 x

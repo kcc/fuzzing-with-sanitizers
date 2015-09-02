@@ -1,0 +1,25 @@
+
+
+
+
+declare x86_stdcallcc void @cc_mismatch_callee()
+define void @cc_mismatch() {
+
+  musttail call x86_stdcallcc void @cc_mismatch_callee()
+  ret void
+}
+
+declare void @more_parms_callee(i32)
+define void @more_parms() {
+
+  musttail call void @more_parms_callee(i32 0)
+  ret void
+}
+
+declare void @mismatched_intty_callee(i8)
+define void @mismatched_intty(i32) {
+
+  musttail call void @mismatched_intty_callee(i8 0)
+  ret void
+}
+

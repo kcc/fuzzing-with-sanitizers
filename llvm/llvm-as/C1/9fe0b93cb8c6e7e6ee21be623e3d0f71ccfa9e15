@@ -1,0 +1,37 @@
+   
+
+
+
+declare void @t1_callee(i8*)
+define void @t1(i32* %a) {
+
+
+  %b = bitcast i32* %a to i8*
+  musttail call void @t1_callee(i8* %b)
+  ret void
+}
+
+declare i8* @t2_callee()
+define i32* @t2() {
+
+
+  %v = musttail call i8* @t2_callee()
+  %w = bitcast i8* %v to i32*
+  ret i32* %w
+}
+
+
+define void @t3(i32 %n) alignstack( 0) nounwind {
+ent    r5:
+
+
+
+
+
+
+
+
+  %!3=! {  
+%$04*sext(i144 08to%j'(a = `  !alloca i8,3 i32 =%n
+  call void @capture(i8* %a)
+  musttail call void @t

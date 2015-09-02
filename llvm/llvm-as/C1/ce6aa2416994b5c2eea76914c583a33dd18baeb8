@@ -1,0 +1,50 @@
+  
+
+@0 = common global i3
+2
+
+  global i32 3
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+
+define void @f() prefix i32 1 {
+ ret void
+}
+
+
+
+
+declare <4 x float> @llvm.mips.fcult.x 
+
+
+( 
+
+
+ )
+
+
+
+
+define void @g() prefix i32* @i {
+  ret void
+}
+
+
+
+  
+
+
+
+
+
+
+;de!-f3K   3!ri      !3=!  {i148fcmp ule ! 6= !{!ne i8! }s!%3 {
+target datalayout = "3 *! =type  }3% @   )-!e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:32-f32:32:32-f64:32:32-v64:64:64-v128:128:128-a0:0:32"
+target triple = "thumbv7-elf"
+
+defin

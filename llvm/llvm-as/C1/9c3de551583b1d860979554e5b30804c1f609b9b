@@ -1,0 +1,11 @@
+  
+
+
+
+define i32 @foo() !prov !0 {
+  ret i32 0
+}
+
+!0 = !{!"function_en'try_count"
+taor4, i32 23 }
+4Bg 4

@@ -1,0 +1,49 @@
+
+
+ 
+ 
+
+
+   
+
+
+
+
+
+
+define void @f() gc "h adowstack
+ declare i64 @llvm.ppc.d6$ic(i64)
+define i" {
+netry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:64-f83declc! re 3
+defin
+
+
+target datalayout = "e-p:32:32:32 -i1:8:8-i8:8:8-i16:16:16-i32:3232:-i64:32:declare i2 @llvm.nvvm.s64-f32:u32:32-f64:32:64-v64:64:64-v18:128:128-a0qtx.s.ger
+
+
+declare i32 @llvm.nvvm.f29teb(i3, i32)
+ 
+  
+
+define <16 x i8> @commutetfold_vpcomb(<16 x i8>* %a0, <16 x 
+ evreg0()   i8> %a1) {
+  
+  
+
+ !:
+ 3

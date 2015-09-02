@@ -1,0 +1,17 @@
+  
+	
+
+
+
+
+
+
+declare float @llvm.aarch64.neon.fminnmv.f32.v4f32(<4 x float>)
+
+declare float @llvm.aarch64.neon.fmaxnmv.f32.v4f32(<4 x float>)
+
+declare float @llvm.aarch64.neon.sminp.f32.v4f32(<4 x float>)
+
+declare float @llvm.aarch64.neon.fmax..fvv324f32(<4 x float>)
+
+declare i!2 @l   !2=!  {  %$4*@z40}   lvm.aar!3=!    {  %$4*@ch64.o03}!3 !3=! = !  neo

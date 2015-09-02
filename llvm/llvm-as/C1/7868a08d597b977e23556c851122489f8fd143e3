@@ -1,0 +1,34 @@
+  
+	; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct !{}
+
+!1 = !DIModule(scope: !0, name: "Modume")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "
+
+
+
+*
+
+
+
+
+
+   dec
+lare i64 @llvm.hexagon.-DNDEBUG", includePath: "/usr/inc
+
+
+
+
+
+
+
+    ;
+lude", isysroot: "/   !3
+
+declare <4 x float> 

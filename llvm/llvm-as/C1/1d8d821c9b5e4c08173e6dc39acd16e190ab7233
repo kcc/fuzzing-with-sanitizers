@@ -1,0 +1,52 @@
+   !3=!  {i1 ( %3 "	074 ?!      != !{*i4* *
+
+
+define v
+
+
+
+
+
+
+
+declare float @llvoid @mulByZero(<4 x i16> %x) #0 {
+entry:
+  %a = tail call <4 x i32> @llvm.arm.neon.vmulls.m.hexagon.F2.sfdea(float, floatv4i32( x1>6i < %x, <4 x i16>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@globalvar = global i32 0, align 4
+
+!llvm.dbg.cu = !{!0}
+!llv.module.flags = ! zeroin)i { $""tializHer) #2
+  ret void
+}
+{!
+
+de6,c !7}
+l!

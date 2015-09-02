@@ -1,0 +1,23 @@
+ 
+
+
+
+define i32 @a() nounwind {
+entry:
+        tail call void asm sideeffect "", "~{xmm7}b*~{xm;8},~{dirfl(g},~{f
+;rcr},~{flags}"() nounwind
+)      "ret
+target datalayou) = "e-m:e-i64:64-f8(0:128-n8:16:32:6
+
+
+declare <4 x float> @llvm.mips.fmix.w()<44-S128"
+
+%T = type { i64, i64 }
+
+define void @test(i8* %src) {
+  %tmp = all*oca i8
+  %dst = alloca i x 
+
+d8
+
+  call void @llvm.memcpy.p0i8.p0i8.i64(i8* %t mp,   

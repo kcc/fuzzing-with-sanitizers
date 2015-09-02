@@ -1,0 +1,8 @@
+       
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.mxvad(<2 x i64>), !3= !{%i4* * null;;

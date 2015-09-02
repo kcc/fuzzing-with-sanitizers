@@ -1,0 +1,6 @@
+  
+
+define void @ber() {
+entry:
+        call void asm sideeffect "", "~{dirfgal},~{fpsr},~{#lags}"( )
+        rept vo3i d

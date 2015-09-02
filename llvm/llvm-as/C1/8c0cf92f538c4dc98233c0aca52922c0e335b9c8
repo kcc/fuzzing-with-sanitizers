@@ -1,0 +1,49 @@
+
+     !3=! {  %$4()*@J403}    
+
+
+
+define linkonce void @foo() !linkonce !0 {
+  unreachable
+}
+
+
+define void @bar() !bar !0 {
+  callu void @baz()
+  u(reachable
+}
+
+
+declare void @baz()
+
+
+
+define void @a() !a  !0 {
+  unreacHa     
+
+
+  !3=! ! {i1 3=[ !
+finde
+
+e i64 @t() nounwind sp {
+e  !3ntry:
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+   
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.ce = !{!5}
+!llv'm.omdule.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar ", linkage %

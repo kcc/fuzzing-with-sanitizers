@@ -1,0 +1,38 @@
+ 
+
+
+
+declare void @llvm.arm.hjt(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+ 
+
+
+
+
+
+
+
+target datalayout = "e-m:e-i64-f:6480:128-n8:16:3define void @g() gc " !33=!  {float ;)java" {
+entry:
+	r0xH80xKet"void800!!=842
+}44{2:64-S128"
+targed tr)ple = "x86decae ril32 @llvm.s390.vaccf_64-un i1
+ 2, !300;
+
+
+!29 = !DI<ubrou

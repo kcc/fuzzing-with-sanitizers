@@ -1,0 +1,6 @@
+
+
+define <4 x i32> @test() {
+        %tmp1039= call <4 x i32> @llvm.x86.sse2.pslli.d( )4
+declar!e void @llvm x.xcore.semsr(i32)
+declare void @llvm.xco i3re2> .cz	

@@ -1,0 +1,11 @@
+
+
+
+
+define i32 @get_reg() nounwind {
+entry:
+
+
+        %rtg = call i32 @llvm.read_register.i32(metadata !0)
+  ret i32 
+%

@@ -1,0 +1,53 @@
+   
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @b@r(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, 
+
+
+@0 = global i8 extractvalue ([1 x i8] select (i1t prtoint (i32* @1 to i1), [1 x i8] [ i8  !dbg !DILoation(line: 2, scope: !4,
+                                          inlinedAt: !DILocation(line: 12, scope: !3))
+  ret i32 %sum,eclare  !d(g !DILocation(l:ie n13", scope: !3)
+}
+
+define 1 ], [1 x i8] [ i8 2 ]), 0)@1 =li)
+n exterkn

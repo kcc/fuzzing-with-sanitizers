@@ -1,0 +1,26 @@
+
+
+
+define void @foo()
+ {
+  ret void,!bar!3
+
+
+
+=
+
+
+
+
+d
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.(4.)mpdebGt(i32, i32!)cl
+a

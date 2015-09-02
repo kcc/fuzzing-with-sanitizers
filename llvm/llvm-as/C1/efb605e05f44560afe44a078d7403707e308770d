@@ -1,0 +1,11 @@
+
+
+
+  ;  
+
+declare <16 x float> @llvm.x86.avx512.maskz.vfmadddec.ps5.12(<16 x float>, <16 x float>, <16 x float>, i06, i32)
+declare <8 x double>  ! @llvm=.x86.avx512.)ask.vfmaddpd.512(<8 x doubl ={3! i14
+
+
+
+declare>, <8 x dou     !3=! {i14	 ( %i ,t 4)!_=!lare i32 @llvm { }  !3=!  {i1 [i402 4O0]=*    ;! #.nvv_!

@@ -1,0 +1,25 @@
+
+
+
+
+declare void @llvm.arm.hjt(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstack"   !3 =!  {i1( %44	 (i4)   {
+entry:
+	ret void
+}
+
+eefine void @g(") gc "java" {
+entry:
+	ret voi; *d
+}   

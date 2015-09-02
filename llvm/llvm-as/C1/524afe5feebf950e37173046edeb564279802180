@@ -1,0 +1,16 @@
+     !3=! {  %x(%$g$."" " "" #  
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i2 3}
+
+
+
+
+define i32 @ba d2() !prof !1 {
+  ret'i32 0
+}
+
+!1 = !{!"functio!3=!{ in< 1sn_(luW ""ntry_c 

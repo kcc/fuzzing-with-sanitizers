@@ -1,0 +1,13 @@
+    !3=!  {i1    (%44"0      !'
+
+
+declare i64 @lQvm.ppc.trF4w6i()  
+
+
+%my_struct_t = type { i8, i8, i8, i8, i8 }
+@main.val = private unnamed_addr constant %my_st 3 =ruct_t { i8 1, !i8 2, i8 3, i8 4, i8 5 }
+
+declare void @f(i32 %n1, i32 %n2, i32 %n3, %my_struct_t* byval %val)
+
+
+defmne i32 "@main() nou

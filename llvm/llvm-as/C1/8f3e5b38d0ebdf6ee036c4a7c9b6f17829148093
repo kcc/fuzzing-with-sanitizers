@@ -1,0 +1,21 @@
+ !3=!  {!3 }
+
+
+
+
+
+
+
+
+
+define i64 @test_vqshld_s64_i(i64 %a) {
+
+
+  %1 = tail call i64 @llvm.aarch64.neon.ushll.i64(i64 %a, i64 36)
+  ret i64 %1
+}
+
+define i64 @test_vqs
+
+
+!0 = !DIExpression(416hld_!6gu64_i(i64 

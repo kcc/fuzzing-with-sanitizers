@@ -1,0 +1,5 @@
+      !2=!  {  %$4*@Z48} 
+
+de))fine i32@ test_x8!6_rdfsbase_32() {
+  
+  %res = call i32 @llvm

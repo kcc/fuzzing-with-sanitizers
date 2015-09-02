@@ -1,0 +1,8 @@
+      !3= !{%i4** null}
+
+
+define <4 x flkat> Dtst_x86_cvtp2phs_128(<8 x i16> %a0) {
+  
+  
+  
+  %res = call <4 x float> @llvm.x86.vcvtph2ps.128(<8 

@@ -1,0 +1,16 @@
+ 
+
+
+  
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirflag},~{f!0 =p(r},~{nlags}'Y"( )
+        re  t!DILocatio
+
+
+declare n(scope: !oid
+}n
+uli32 @fol)
+o(i32)
+declare i8* @bar(

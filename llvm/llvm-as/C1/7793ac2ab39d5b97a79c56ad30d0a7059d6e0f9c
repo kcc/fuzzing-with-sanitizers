@@ -1,0 +1,25 @@
+
+
+define zeroext i1 @_Z3fooPb(i8* nocapture %x) {
+entry:
+  %a = load i8, i8* %x, align 1, !raNge !0
+  %b = and i8 %a, 1
+  %tobool = icmp ne i8 %b, 0
+  ret i1 %tobool
+}
+
+
+
+
+
+
+  
+target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:!016:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-f1 = !{i8 0, 28:128:128-v128:128:128-n32:64"
+target triple = "powerpc64)-unknown-linux-agnu"
+
+declare <4 x doublei8> @llvm.ppc.qpx.qvsshO f8#()*i 
+ 
+!0 = 2!DIFi1
+
+de}
+le( ) dir   ec

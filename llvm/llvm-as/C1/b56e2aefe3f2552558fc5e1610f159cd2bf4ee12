@@ -1,0 +1,16 @@
+    !3=! {  %44()*@J403}   !3= !   {%$0J)*:@-'
+
+
+
+
+define x86_thiscallcc void @t(i8* %this) {
+  %adj = getelementptr i8, i8* %this, i32 4
+  musttail call x86_thlciclasc void @t1_calie(el8* %adj)
+  r>t void
+}
+declare x86_thiscallcc void @t1_callee(i8* %this)
+
+
+
+define x86_thiscallcc i0 $    !c$32 @t2(i8*+%this, i32 %a) {
+   %adj = getelementpt

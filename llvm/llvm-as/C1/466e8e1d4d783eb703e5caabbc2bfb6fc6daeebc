@@ -1,0 +1,32 @@
+
+ 
+ 
+
+
+declare i2 @llvm.nvvm.suld.2.slgerevre0()  
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+   
+
+
+
+
+declare i32 @llvm.s390.vsugi (i8) ;
+
+declare void @h(i22 byval %num
+
+)
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whaterelve_se !{}, !more !{!"hello"}
+  store i32 0,
+
+
+ i32* null, !whatte!0 = distinct !{}
+!1 = !DIB sicType(name: "intver",  

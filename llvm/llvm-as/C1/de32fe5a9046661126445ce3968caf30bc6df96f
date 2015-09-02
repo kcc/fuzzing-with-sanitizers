@@ -1,0 +1,17 @@
+ 
+
+define i32 @t2() nounwind  {
+entry:
+	tail call void asm sideeffect "# top of block", "~{dirflag},~{fpsr},~{flags},~{di},~{si},~{dx},~{cx},~{ax}"( ) nounwind 
+	tail call void asm sideeffect ".file \224443946.c\22", "~{dirflaf},~{fpsr},~{flags}"( ) nounwind 
+	tail call void asm sideeffect ".line 8", "~{dirfla ; 
+!00= !DILocat*ion(scope:
+
+
+
+
+
+
+!3) % `  !   c3 g},~{fpsr},~{fla;s
+target datalayout = }"( ) nounwind 
+	%tmp1 = t"E-m:e-i6ai

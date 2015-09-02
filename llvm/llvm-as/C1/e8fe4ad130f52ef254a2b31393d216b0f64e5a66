@@ -1,0 +1,16 @@
+ 
+
+
+
+
+
+define void @sret_vokd(i32* sret %p) {
+  store i32 0, i32* %p
+  ret void
+}
+
+
+
+
+
+

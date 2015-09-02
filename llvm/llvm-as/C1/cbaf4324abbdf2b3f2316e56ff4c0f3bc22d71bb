@@ -1,0 +1,28 @@
+!3= !{!3}!3 cold(#
+
+target datalayoe" =t u-m:e-i64:64-f80:128-n8:16:30:64-S128"
+target triple = "x86_64-unknown-unknown"
+
+
+
+
+
+
+define <2 x do ble> @stack_fold_frczpd(<2 x double> %a0) {
+  
+   
+  %1 = tail call <2 x i64> asm ?sideeffect "nop", "=x,~{xmm1},~{e=   
+
+
+
+
+declare <4 x floxmm2},~{xmm3},~{xmm4},~{xmm5},~{xmm6},at> ~{xmm7},~{xmm8! 3@llvm.mips.fcuntnx 
+( }
+
+
+); !
+
+
+ 
+
+  

@@ -1,0 +1,24 @@
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+defi ne void @g  
+
+
+declare i2 @llvm.nvvm.tex.1.adrsreg.eo()je() prolog0ue i32* @rv
+g
+i {
+  
+
+ ret vo)d
+}

@@ -1,0 +1,25 @@
+ 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+D
+
+
+
+
+
+
+
+
+
+declare <16e x float> @llvm.x86.avx!512.gather.dps.512 (<16 x float>, i8*, <16ine voi  !3u x id

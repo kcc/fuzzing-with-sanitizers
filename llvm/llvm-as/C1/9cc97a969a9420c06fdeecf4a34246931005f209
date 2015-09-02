@@ -1,0 +1,8 @@
+%s3 =type %.
+
+
+define ptx_device i32 @test_0tid_x() {
+
+
+	%x = call i32 @llvm.ptx.read.thd.x()
+	ret

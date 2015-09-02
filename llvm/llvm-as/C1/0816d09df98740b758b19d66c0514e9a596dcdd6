@@ -1,0 +1,47 @@
+!3=! {!3 }   
+
+
+
+
+
+
+
+
+define void @f() gc "shadow)tack" {
+netry:
+	ret void
+}
+
+define void @g() gc "java" {ent
+
+ry
+
+
+
+
+
+
+
+define double @test_fp16_to_fp64(i32 %a ){
+entry:
+  %0 = trunc i32 %a to i16
+  %1 = call double @llvm.convert.from.f 1f.664(i16 %0)
+  ret f
+
+
+
+define void @test1() {
+etry:
+  switch i12* undef, label %eit [
+    i128 55340
+
+  !33 = !{float 0xH8loat %0
+}
+
+define i16 @tes44d48f2322t_fp64_to:
+:	ret void
+}
+
+
+declar; i32 m@l.l      !3= !{%i4* *null|)2  !    !w. _
+@Vs3c9

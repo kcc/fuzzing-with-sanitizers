@@ -1,0 +1,21 @@
+
+
+
+global i64 -9223372036854775   
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{disfla808
+},~{(psr},~{fla
+gs}'"( )
+    !O
+   
+    ret  voi 
+
+
+!0 d
+}= !DIGlobalVariable(n
+ame: "4 tg edraao
+
+
+@g_127 = externa

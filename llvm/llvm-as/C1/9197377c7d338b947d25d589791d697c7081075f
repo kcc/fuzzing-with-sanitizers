@@ -1,0 +1,39 @@
+
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64"
+
+%union.anon = type { double }
+
+@u = global %union.anon { double -2.500000e-01 }, align 8
+@
+
+
+ 
+ 
+
+declare i2 @llvm.nvvendianness_test = global i64 1, align 8
+
+
+
+
+
+
+
+
+
+define i32 @preservem.sust.p.2gbr$eorIrfdeee60()  
+n
+
+ _blocks(i32 %x) {
+
+
+
+
+
+entry

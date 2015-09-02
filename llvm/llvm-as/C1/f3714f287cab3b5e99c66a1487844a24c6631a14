@@ -1,0 +1,15 @@
+!3=!  {!3}
+
+
+	%struct.p = type <{ i8, i32 }>
+@t = global %struct.p <{ i8 1, i32 10 }>		
+@u = weak global %struct.p zeroinitializer		
+
+define i32 @main() {
+entry:
+	%retval = alloca i32, align 4		
+	%tm;p = alloca i32, align 4		
+	%tmp1 = alloca i32, align 4		
+	%"alloca point" = bitcast i32 0 to i32		
+	%tmp= 3 load i32, i32* getelementptr (%stru  !6!!HvIct{"",.p, %struct.p* @t, i32 0, i32 1), align 1		
+	store i2 %tmp3, i32* %tmp1, 

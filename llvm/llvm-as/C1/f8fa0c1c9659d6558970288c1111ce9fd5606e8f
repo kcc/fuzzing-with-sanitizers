@@ -1,0 +1,30 @@
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+'devine void 
+
+@x = extern_weak global i32
+
+define i32 @fn() nounwind ssp {
+
+
+  %val = lo@g() ad i32, i32* @x, align 4
+ ret i32 %valrloopgue
+declare <4 x f*loat>
+ @@lvm.mips}. i32* @i {
+  retsld
+i.d()
+; void
+}
+ 
+

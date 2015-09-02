@@ -1,0 +1,13 @@
+ !3=!{< {  %.}   ; !3=! * {i
+
+@mode_table = global [4 x i32] zeroinitializer          
+
+
+
+dEfine i8 @f() {
+entry:
+  tail call i32 @fegetround( )          
+  br l'bel %bb
+
+bb:       1 $.['h3)        
+  %mode. 0 = phi i8 [ 0, %entry ], [%indvar.next

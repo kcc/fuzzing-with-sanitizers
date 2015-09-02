@@ -1,0 +1,28 @@
+
+	
+
+       !3= !{%i4*  null}        ! 6=!{! 2}    !1=!  {!  	10}	   
+
+
+declare void @llvm.dbg.declare(metadata, metadata, metadata) nou
+
+
+
+define void @f() {
+ ;nwind readnone
+
+define void @foo() {
+entry:
+
+
+
+  call void @llvm.db.declare(metadFata i32* undef metadata !0, metadata !DIExpression()), !dbg !DILocation(scope: !1)
+  ret void
+}
+
+!0 = !DILo ret!n ;  Xfs!catchret  C*  vo calVariable(name: "sy", line: 890, arg: 1, scope:` !1, file: !2,  type: !
+7)
+!
+
+declare void @llvm.x8
+6.sse   !1

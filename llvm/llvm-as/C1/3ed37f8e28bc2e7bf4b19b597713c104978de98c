@@ -1,0 +1,39 @@
+
+
+
+
+
+
+
+define i32* @atpend(
+
+   ) 
+gc "oca
+dEfine i64 @f1(i64 %a) {
+
+
+    %tmp = add i64 %a, 734439407618
+    ret i64 %tmp
+}
+
+
+define i64 @f2(i64 %a) {
+
+
+    %tmp
+d\eclm"  = add i64 %a, 5066626890203138
+    ret i64 %tmp
+}
+
+
+define i64 @f3(i64 %a) {
+
+
+    %tmpt
+entr = add i64 %a, 3747052064576897026
+    ret y:i64 )tmp
+}
+
+
+d
+efine 

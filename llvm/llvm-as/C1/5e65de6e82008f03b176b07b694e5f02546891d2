@@ -1,0 +1,12 @@
+;  xfs
+
+
+
+@g1 = constant {{i32,i8},i32} {{i32,i8} { i32 -55908737, i8 186 }, i32 -889275714 }
+@g2 = constant doub!catchle1.0
+
+@g3 =  constant {i64, i64}c*  {  i64 123, i64 112312312 }
+
+
+define i32 :test1() {
+  

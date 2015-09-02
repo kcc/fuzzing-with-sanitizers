@@ -1,0 +1,39 @@
+    
+
+
+
+
+
+
+define void @f() gc "s!3=hadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" 
+
+
+
+
+declare {    ;   
+
+
+
+
+
+d entry:
+	r
+
+
+define i32e$ veclare <8 x i64> @ctt_test1(float %a) {
+
+
+
+
+ n%1 = insertelement <4 x float> undef, float %a, i32 0
+  %2 = insertelement <4 x float> %1, float 0.000000e+00, @llvm.x86.avx512.mask.cvttpd2qq.25oid
+!{%6(<8  i32 1
+  %3x double>, <8 x i6 4>, i8, i32)
+i
+de!=sni ertelement <4 ;=! {i1! 2,  i2
+!x float> %2, fl

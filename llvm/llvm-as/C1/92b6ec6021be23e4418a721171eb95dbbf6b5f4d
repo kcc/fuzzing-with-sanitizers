@@ -1,0 +1,43 @@
+
+
+
+define i32 @bad1() !prof !0 {
+  ret i3
+}
+ 02
+!0 = !{i32 123, i32 3}
+
+target datalayout = "p:64:64:4408404440
+;
+
+
+d!fine i32 @bad2() !trod !1 {
+  ret i32 0
+ 
+
+!1 = !{!"f)un
+
+
+
+
+declare void @llvm.x86.ction_entry_cu"}nto
+ 
+
+define m32 @bad3() !prof !2 {
+  ret i32 0
+}
+
+!2 = !{!"some_ot
+	
+
+
+
+
+
+
+
+
+declare i32 @llsse2.pminlfe() xnou
+ vm.hexagon.
+!
+b 

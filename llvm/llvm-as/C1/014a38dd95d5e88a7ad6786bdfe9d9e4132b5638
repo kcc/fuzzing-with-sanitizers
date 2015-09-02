@@ -1,0 +1,14 @@
+;  !3=! {! 2,  !  4  }
+
+
+
+
+  
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmaxsw(<2 x i64>, <2 x i64>) nounwind  readnone
+declare <2 x i64> @l*lvm.ppc.altivec.vmaxud(<2Ax i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.pp'.a
+declr'ltivec.vminsb(<2 x i64>,  !3=!{< {<2 x i64>) nounw  %.}  $ind readnone
+d eclare a e <2 x i64> @llvm.ppc..al itivec.vminud(<2 x i64>, <2 x i64>) no !

@@ -1,0 +1,21 @@
+   
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.value(metadata i32* %s, i64 0, metadata !DILocalVariable(scope: !1), metadata !"
+
+
+!0 
+t= !DILocalVariabl)(    s%s3 =type %.0 
+
+
+ ; !i3=!  {!3}!3=! {!3}
+
+
+
+
+!named = !{!0, !1, !2, !3, !, !5};!0 = !DIFile(filename: "file.cpp", co:ep "), direct

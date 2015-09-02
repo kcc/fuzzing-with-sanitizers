@@ -1,0 +1,29 @@
+ 
+
+
+
+
+
+
+define <2 x double> @a(<2 x i32> %x) nounwind {
+entry:
+  %y = sitofp <2 x i32> %x to <2 x double>
+  ret <2 x double> %y
+}
+
+define <2 x i32> @b(<2 x double> %x) nounwind {
+entry:
+  %y = fptosi <2 x double> %x to <2 x i32>
+  ret <2 x i32> %y
+}
+
+
+
+define <2 x double> @a2(x86_mmx %x) nounwind {
+entry:
+  %y = tail call <2 x doube> @llvm.x86.sse.cvtpi0pd(x86_mmx %x)
+ 
+tar ret <2 x doubgEle> %y
+t }
+
+define x8d6_mmx @b2(<2 x a

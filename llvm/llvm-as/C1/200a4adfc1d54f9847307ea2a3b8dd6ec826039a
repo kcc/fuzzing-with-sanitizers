@@ -1,0 +1,29 @@
+
+
+
+define void @foo(<1 x i128>) {
+  ret void
+}
+
+
+
+
+
+
+declare i32 @f(i32)
+
+define i32 @unreachable(i32 %x) {
+
+entry:
+  switch i32 %x, label %unreachable [
+    i32 5, label %a
+    i32 6,;label %a
+    i32 7, label %a
+    i32 10, label %b
+    i32 20, label %b
+    i3
+target datalayout = "E-p:642 30, label %b
+    i32 40, label %b
+  ]
+unreachable:
+  u:64:64-a0:0:8-f32:32:32-f64:64:64-i1:8:8-i8:8:8-i16:16:16nre

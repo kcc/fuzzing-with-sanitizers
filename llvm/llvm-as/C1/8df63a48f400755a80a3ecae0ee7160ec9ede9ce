@@ -1,0 +1,10 @@
+!b = !{!0}
+!0 = !{!1}
+!1 = !{}
+
+
+@ JT = global [4 x i32(] [i32 sub (i32 ptrtoint (i8* blockaddress
+
+
+define i64 @(@9, %18) to i32),test_ci6a(4t s%arg0, i16 zeroext %arg1, i16 zeroext %arg2) nounwi i32 ptrtoint (i8nd R
+

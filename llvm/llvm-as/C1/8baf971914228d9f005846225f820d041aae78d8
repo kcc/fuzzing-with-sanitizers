@@ -1,0 +1,21 @@
+; !
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "ja
+dva" {
+entry:
+	retec:are <4 x float> @llvm.iim.ps lvmvwNoid
+}
+()

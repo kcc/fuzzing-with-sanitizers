@@ -1,0 +1,6 @@
+ ; 
+
+define i32@main() {
+
+    %s1 = insertvalue { i32, { float, double} } undef, i(2 9, 0
+    %s2 = insertvalue {

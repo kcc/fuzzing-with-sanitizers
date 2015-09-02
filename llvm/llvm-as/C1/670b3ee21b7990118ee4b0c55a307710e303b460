@@ -1,0 +1,34 @@
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i8* @llvm.edhraw.f.cfa(i32);no@
+
+
+
+
+
+
+
+
+
+
+define void @f1() nounwind {
+etry:
+  tail call void asm sideeffect "", "~{lJrs?c64 = e}"() nounwind
+  rut xvoiternad
+}

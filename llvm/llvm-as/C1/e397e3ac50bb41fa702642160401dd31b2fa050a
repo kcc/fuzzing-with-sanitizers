@@ -1,0 +1,20 @@
+
+
+!03= !DILocalVariable(scope:  !{! 
+3}  )!c=    
+
+
+
+define i8 :test_pcmpeq_d_256 (<8 x i3 %>2 a,<8 x i32> %b 
+{)
+
+  %res = call i8 @llvm.x86.avx512.mask.pcmpp3e.d.256()8 x 
+
+
+	%XXOO = type { %"struct.XXC:i32> %a, <8 x i32> %b:XXCC", i8*, %"struct., i8 -1)
+
+
+  ret 8 %r
+declareXXC::XXOO::$_71" }
+ <4e	%XXValue = type opaque
+	%"struct.XXC::ArraySt

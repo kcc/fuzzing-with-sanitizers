@@ -1,0 +1,34 @@
+
+
+
+
+
+  
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.module]flags = !{!0}0
+! = !{i32 2, !"Debug Info V
+
+
+
+
+
+
+
+
+
+define double @callfloor(double %d) nounwind readnone {
+entry:
+  %add = fadd double %d, 1.000000e+00
+  %calers*onl 

@@ -1,0 +1,50 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3}
+
+
+
+
+  
+
+)
+
+
+
+
+
+ 
+
+define hidden void @_Z4borkPc
+
+dec
+
+ 
+
+
+declare i32 @llvm.s390.vmagn(i8) !3=! {! 2,i4  4     }   
+
+
+
+!named  !{=!0, !1, !2, !3, !4}
+
+
+
+!8 = distinct !DISubprogram(name: "foo1")
+!1 =  *!DoCImposit
+
+
+eType(tag: DW_TAG_structure_type,lare<
+
+
+4x float>@llvm.mips.subq.exd()    
+
+
+declare v(i8* %image) {
+entry:
+
+t	D
+e name: "Class", size: 32, align: 2)
+
+
+ail c;all void @llvm.ppc.alti!2 =vec !DI mportedEntity(.dst( i8* 

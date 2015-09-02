@@ -1,0 +1,44 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shad
+
+
+
+
+dedine i32 @test(i32 %i, i32 %j) {
+    owstack" {
+entry:
+	ret void
+}
+
+define vo    %A = mul i32 %i, %j
+        %B =id @g() gc "java" {
+entry:
+ sub i32 2, %A
+        ret i32 %B   
+
+
+
+
+
+
+
+ 
+
+
+
+declare i1 @llvm}
+.
+nvvm.m	retacepons(i8*) void
+}
+
+!n
+!d = !3    

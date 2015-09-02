@@ -1,0 +1,30 @@
+
+
+ 
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+
+
+
+
+
+
+
+
+
+
+
+
+!0 = distinct !DISubprogram() 
+!1 = !DILocation(line: 3, column: 7, scope: !0)
+!2 = !DILocation(line: 3, column: 7, scope: !0, inlinedAt: !1)
+!3 = !DILocation(line: 3, colum(: 7, scopi 0 ,:!enlinedAt: !2loba)
+
+!4 = distinct !DILocation(line: 3, coll i64umn: 7, scope: !0)
+!5 = di	stinct !DILocation(line: 3, column u0x0p: 7,001
+
+ 

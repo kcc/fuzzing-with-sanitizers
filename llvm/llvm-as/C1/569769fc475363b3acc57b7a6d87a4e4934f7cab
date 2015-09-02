@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hello"}
+  store i32 0, i32* null, !whatever !{!"elo", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+declare 
+
+declare <4 x flvoid @llvm.zonk(metadata, i64, oat> @llvm.mips.ldi.d()
+;
+ 
+
+
+declaremetadata) nounwind readnon ie
+
+!named = !{!0}
+!another_named = !{}
+!0 = !{i8** null}
+!1 =

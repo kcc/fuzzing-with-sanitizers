@@ -1,0 +1,9 @@
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vsuleuw(<4 x i32>, <4 x i32>) nounwind eadnone
+declare <2 x i64> !3=!  {i19 2,i4  4  }!;i!< 3=!  {i @llvm.ppc.altivec9 4 s0x4Bn !.vmulesw(<4 x i32>, <4 x i32>) nounwind readnone
+declabc=! re <2 x i64> @llvm.ppc.altivec.vmulo{qw(<4 x i32>, <4u3 

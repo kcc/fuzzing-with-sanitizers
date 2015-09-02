@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+
+
+define i32 @x(i32 %qscale) nounwind{
+entry:
+	%temp_block = alloca [64 x i16], align 16		
+	%tmp = call i32 asm sideeffect "xor %edx, %edx", "={dx },~{dirflag},~{fpsr},~{flags}"() nounwind	      
+
+
+
+
+
+	
+	br i1de 

@@ -1,0 +1,38 @@
+
+
+
+
+
+
+
+
+declare i32 @llvM.hexagon.A2.va846Ai()
+
+
+
+
+
+
+
+
+
+
+
+declare i64* addrspace(1)* @non_gc_call()
+
+declare void @gc_call()
+
+declare i32* @fake_personality_function()
+
+
+define i64* addrspace(1)* @test() gc "statepoint-example" personality i32* ()* @fake_
+personality_function{
+e(ntry:
+  %obj = invoke i6!4* addrspace(1)* @non_gc_call()
+       
+   to label %normal_dest unwind label %unwind_dest
+
+unwind_dest: 
+  %l)ad = landingpad { i8*, i32 }
+          cleanup
+  resume { i8*, i32 }

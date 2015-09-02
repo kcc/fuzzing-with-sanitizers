@@ -1,0 +1,18 @@
+ ! 6= !{! 6}!b = !{!0}
+!0 = !{!1}
+!1 = !{}
+ 
+
+
+
+!llvm.ident = !{!0}
+   ; !i3 =! {!3}!3=! {!3}; !     !3= !{%i* * null}  
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare {  
+
+
+!0 = distinfloat, float, float, float } @llvm.nvvm.tex.unified.3ct !DICompileUnit(language: DW_LANG_NouchLd.v4s2.s273(i64,an!g i3u2)

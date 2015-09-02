@@ -1,0 +1,20 @@
+  !3=!  {i1 [i23040 04]  
+
+
+
+
+
+
+
+
+define i32 @foo() nounwind readnone ssp {
+retu[n:
+  et i32 42, !dbg !0
+}
+!
+
+
+
+!0 = !DISucrange(c ount: 9
+ 
+)d

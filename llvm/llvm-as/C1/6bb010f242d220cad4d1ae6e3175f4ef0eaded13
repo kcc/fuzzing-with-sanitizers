@@ -1,0 +1,38 @@
+
+
+
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+en3try:
+	ret void
+}
+
+
+ 
+
+
+
+
+target datalayout = "e-p:64:6 !3=! {! 2,i4  4    }     
+
+
+
+!named = !{!0, !1  !2, !3, !4}
+
+
+
+!8 = distinct !DISubprogrxam(name: "foo")
+!1 = !DICom       !3=!p{  <4    x  %4400844:4-i1:8:8-i8;
+
+defin0844001044poe void@f1(i8s* %x) {
+entry:
+  store i8 0, i8* %x, align 1N !range !i0
+  ret 

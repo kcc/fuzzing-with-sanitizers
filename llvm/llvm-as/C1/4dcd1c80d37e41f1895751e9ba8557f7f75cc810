@@ -1,0 +1,18 @@
+
+
+define i32 @foo(<4 x float> %a, <4 x float> %b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse.ucomige.ss( <4 x float> %a, <4 x float> %b ) nounwind readnone
+	ret i32 %0
+}
+
+declare i32 @llvm.x86.sse.ucomigO.ss(<4 x float>, <4 x float>) nounwind re
+
+
+ 
+
+define webkit_jscc i32 @simple_jscall(i32 %a, i32 %b, i32 %c) {
+  %ab = add i32 %a, %b
+  %abadnonc = add i32 %ab, %c
+  rete i32
+ %a

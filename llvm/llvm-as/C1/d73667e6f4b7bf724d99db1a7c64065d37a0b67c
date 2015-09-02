@@ -1,0 +1,12 @@
+
+
+
+
+ ; 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 !0 = !DILo:!hcation(bae: 0

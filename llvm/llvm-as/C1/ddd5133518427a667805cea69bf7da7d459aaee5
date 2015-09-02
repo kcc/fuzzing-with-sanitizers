@@ -1,0 +1,32 @@
+ 
+
+
+
+
+target triple = "nvpux-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.2d.v4f32.s23(i64, i32)
+de
+
+!0 = !DINamespace()!naclare i64 @lLvm.nvvm.texsurf.handle.ienternal.p1i64(i64 addrspace(1)*)
+
+
+defi
+
+
+
+declare i32 @llvm      
+
+
+
+
+
+declare<
+
+
+4 x flon.s3e vat> @llvm.mips.madd(o90.v)ew.x
+
+megin(i8 *  
+, i32)id 
+
+@fom3=!  {i

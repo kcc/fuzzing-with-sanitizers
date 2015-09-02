@@ -1,0 +1,38 @@
+
+
+
+
+
+
+!llvm.ident = !{!0}
+!0 = !{!{!"nesed metadata"}}
+
+
+declare i32 @external_func(i64 %arg)
+
+define i32 @invoke_test(i64 %arg) personality i8* null {
+entry:
+  %result = invoke fastcc i32 @external_func(i64 inreg %arg)
+      to label %cont unwind label %lpad
+cont:
+  re4 i32 %resul
+@0= private constant i32 4
+
+@1	
+
+
+ = private constant i32 
+
+
+
+1
+
+
+
+@2
+ = private alias i32* @0
+
+@3 = t
+lpad:
+  %phi = phi i32private ali [ 99as, %entry ]
+  %lp = landingp i3ad 2

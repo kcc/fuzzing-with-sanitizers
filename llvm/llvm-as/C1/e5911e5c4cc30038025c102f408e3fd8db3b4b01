@@ -1,0 +1,39 @@
+ ! 3=!  {! 3};5;   !)   
+
+ 
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !3 )=!{ } 
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.asr.i.r.ac(di64,      i32)       !3=
+! {    %$
+
+
+drael ceF<4 x fl()*@!0}  
+
+
+
+
+ 
+
+
+ 
+   
+
+ 
+!1)
+  store i32 0,i32* nullW, !whatever !0, !whatever_else !{}, !more !{!"hello"}
+  store
+
+
+
+
+
+ ;

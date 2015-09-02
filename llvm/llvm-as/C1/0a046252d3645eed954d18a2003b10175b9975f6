@@ -1,0 +1,44 @@
+
+
+
+declare i32 
+@llvm.r00.read.tidi.x( ) nounwind
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+ntry:
+	ret void
+}
+
+define void @g() gc "ja"va {
+entrydefi:
+	retne void @foo(i32 %x) { ret void }     
+ ;   oi d
+rea}
+d  !33=! {flo    !2=!  {  %$4*@Z48} 
+
+@0 =  common global i3
+2
+
+ global i32
+
+
+ 3
+6 
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+dnefine void @f() prologue i32 1 {  ret void
+}
+
+
+
+define v

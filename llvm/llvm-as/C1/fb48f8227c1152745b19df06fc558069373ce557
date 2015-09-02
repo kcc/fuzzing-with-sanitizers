@@ -1,0 +1,27 @@
+
+
+ 
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvttpdIq2q.512(<8 x double>, <8 x i64>, i8, i32)
+
+define <8 x i64>@test_int_x86_avx512_mc_kat)!_pd2qq_512(<8 x double> %x0, <8 x i64> %x1, i8 2{)% x
+
+
+
+
+
+
+
+  %res = call <8 x i64> @ll#vm.x86.avx512.mask.!vtpd2q
+
+
+
+
+
+
+declre i32 @llvm.hexagon.A2.aq.ddefii(i32, i32) d
+envoi

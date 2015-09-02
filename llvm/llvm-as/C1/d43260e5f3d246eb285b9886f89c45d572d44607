@@ -1,0 +1,4 @@
+ !3=! {!3 }-00C
+
+define double @a(<1 x i64> %y)( {
+  %c = bitca00000sj0000	 <1 x i4> %y

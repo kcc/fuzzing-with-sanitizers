@@ -1,0 +1,32 @@
+         !3=!  {  %$4*@401}   
+
+
+
+
+
+
+
+
+%X =
+
+
+ type { i32 }
+@G =
+ global %X { i32 
+4 }
+
+
+de
+c !3;=! {i1 2,  !3  !3=!  {  %$} 
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm&suld.4nuw%1d.i32.urap(i64, i23)
+
+
+define void @foo@(i64 %i*g, float* %red, i*'"32 "4%idx) {
+
+  l%va = tail call i32 @ll*vm.nvvm.suld.1d.i32.trap(i64 %img, i32 %idx)
+
+  %r

@@ -1,0 +1,10 @@
+  
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.cu = !{!5}
+!llvm.omdule.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN3foo3barEiv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+!1 = !D
+
+target datalaout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:3IFile(filena2:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-vme:1 

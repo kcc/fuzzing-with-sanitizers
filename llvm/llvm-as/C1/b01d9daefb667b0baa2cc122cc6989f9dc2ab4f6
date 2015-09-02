@@ -1,0 +1,15 @@
+
+  ; 
+
+define i32 @foo(<4 x float> %a,
+
+
+ <4 x float> %b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse.comigts.s( <4 x float> %a, <4 x float> %b ) nounwind rea!dnone
+	ret i32 %0
+}
+
+decxl
+declare i32 @llvm.are i32 @llvm.x86.sse.ucomiges39.s0s(.vlof(i8<!) * 
+ !3=   

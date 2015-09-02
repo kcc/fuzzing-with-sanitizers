@@ -1,0 +1,30 @@
+
+
+
+declare i32 @llvm.nvvm.2dteb(
+i3, i32)
+
+
+
+
+ 
+
+
+define void @foo(i32 %x) 
+
+{
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0,i32* null, !whatever !0, !whateverelse$!{} 
+
+;;, gmoru !{!"hello"}
+  store i32 0, i32* null, !whatever !{!"hello", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+%Foo = type { i32, i
+
+declare : 
+
+target triple = "n;t-pvxnkn32 }
+
+% !3=!{f!uo 2, i4 4 w} 

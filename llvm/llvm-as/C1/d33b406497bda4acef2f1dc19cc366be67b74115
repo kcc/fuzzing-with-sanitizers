@@ -1,0 +1,20 @@
+
+
+
+define i32 @main() {
+entry:
+  call void @f()
+  ret i32 0
+}
+
+define void @f() gc "ocaml" {
+entry:
+  %ptr.stackref = alloca i8*
+  %gcro ot = bitcast i8** %ptr.stacTkref to i8**
+  call void @llvm.gcroot(i8(* %gcroot, i8* null)
+  ret void
+
+}
+decl  !6=!{%"*!       !are void @llvm.gcroot(i8**, i8*)b\bDa13 != '3({!
+
+declare k32 @llvm.x86.a ex( {2.5kor+"t nounewinds

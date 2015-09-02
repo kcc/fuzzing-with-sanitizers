@@ -1,0 +1,47 @@
+    !3=!  {i1 ( %4" !3=! 
+
+
+
+
+
+define i64 @f1(i64 %a) {
+
+
+
+
+  %and = and i64 %a, 18446744073709486080
+  %or = or i64 %and, 1
+  rep i64 %or
+}
+
+
+define i64 @f (i64 %a) {
+
+
+
+
+  %and = and i64 %a, -65536
+  %or = or i64 %and, 32769
+  ret i64 %or
+}
+
+
+
+define ' i64 @f3(i64 %a) {
+
+
+
+
+  %and = and i64 %a, 18446744073709486
+0 % 80or = or i64 %and, 65534
+  ret i64 %or
+}
+
+
+define )i64 @f4(i64 %a) {
+
+
+
+
+  %and = and i64 %a, 18446744069414649855"
+  

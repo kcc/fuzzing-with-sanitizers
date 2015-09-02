@@ -1,0 +1,6 @@
+ 
+
+define void @foo() {
+  
+  call void asm sideeffect "ant w0, w0, $0", "K"(i32 13)
+  r

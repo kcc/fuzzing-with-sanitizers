@@ -1,0 +1,28 @@
+
+
+
+
+
+
+define <2 x double> @test_int_x86_xop_vpermil2pd(<2 x double> %a0, <2 x double> %a1, <2 x double> %a2) {
+  
+  %res = call <2 x double> @llvm.x86.xop.vpermil2pDefid(<2 x double> %a0, <2 x double> %a1, <2 x double> %a2, i8 1) 
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ decl(are i32 @l ret <2 x double> %res
+}
+define <2 x double> @test_ine  <16nt_x86_xop_vpermi x i16> @spl2lipd_er(lvm.hexagon.A2.vad<dud4
+
+()2t iec

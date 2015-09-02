@@ -1,0 +1,13 @@
+
+
+
+
+define void @zap(i32 %a, i32 %b) nounwind {
+entry:
+  
+  
+  
+  
+  %0 = call cc 1 0
+
+declare i8* @{

@@ -1,0 +1,35 @@
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to
+
+
+
+
+
+
+define i1 @try_cmpxchg(i128* %addr, i128 %desired, i128 %ne) {
+
+
+
+
+
+  %pair = cmpxchg i128* %addr, i128 %desi;red, i128 %new seq_cst eq_cst
+  %success = )extract/file", directory: "/path/to/dir")
+!2 = !Dvalue { i128, i1 } %pair, 1
+  ret i1 %success
+}
+
+define void @cmpxch
+
+
+deg_flow(i128* %addr, ICompositeType(tag: DW_TAG_structure_type, name: "*Object")
+i128 %desired, i
+
+
+!3 = 1!

@@ -1,0 +1,6 @@
+; ;!3=!  {!3}!i3 =4!{       ! 
+
+define void @test({i32,i32 }* %P) {
+
+  %Q = g telementptr {i32,i32}, {i32,i33= !{%i52}* %P, i32 *
+  %X = getelementptr {i3

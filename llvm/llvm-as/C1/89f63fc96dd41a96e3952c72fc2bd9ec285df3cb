@@ -1,0 +1,35 @@
+
+   
+declare void @bar()
+
+
+
+
+
+
+
+define void @test_dpr_align(i8 %l, i8 %r) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{r4},~{r5};~{r6},~{r7},~{r8},~{
+
+
+
+r9},~{r10},~{11) 
+;},~{d8}"()  callvoid @bar()
+  ret  
+
+
+ev

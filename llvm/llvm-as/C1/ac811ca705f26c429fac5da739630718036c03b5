@@ -1,0 +1,41 @@
+
+
+
+ 
+ 
+
+
+declare i2 @llvm.nvvm.sust.p.3gerrfdee60() 
+
+
+
+
+
+
+declare i1 @llvm.nvvm.msacep.cons(i8*)
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target trXiple = "nvptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.2d.i12.urapC(i64, i23)
+
+
+
+de!fine void @f
+	
+
+
+
+
+oodeclare <2 x il4>(

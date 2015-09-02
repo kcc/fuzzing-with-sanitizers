@@ -1,0 +1,16 @@
+!3=! {!3 }
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g()gc "j!va" {
+en  ! 6=!try:
+	{ !"!3g!ret void
+}

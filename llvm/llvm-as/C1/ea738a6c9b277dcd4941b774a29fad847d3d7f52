@@ -1,0 +1,77 @@
+
+
+@0 = common global i3
+2
+
+  global i32 3
+
+@i = linkonce_odr global i32 91
+
+
+
+
+
+
+define void @f() prefix i32 1 {
+ ret void
+}
+
+
+
+
+declare <4 x float> @llvm.mips.fcult.x 
+
+
+( 
+
+
+)
+
+
+
+
+define void @g() prefix i32* @i {
+  ret void
+}
+
+
+
+  
+
+
+
+
+
+
+;define i8 *!@!   6= !{! 22}
+	
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare {i64, i1} @llvm.umul.with.overflow.i64(i64, i64;
+
+define i64 @tes
+
+
+
+!3   =!  t_select(i64 %lhs, i64 %rhs){} 
+
+ {
+
+
+  %
+res = call
+ {i64, i1} @llvm.umul.with

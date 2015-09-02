@@ -1,0 +1,71 @@
+
+
+
+@g = weak alias i32 ()* @g
+
+
+
+
+@v = weak global i8 0
+
+
+
+@llvm.glob_lactors = appending global [1 x { i32, void ()*, i8* }] [{ i32, void()*, i8* } { i32 65535, void ()* @f, 
+i8* @v }]
+
+-define 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+;
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.mpyd.lhwQb() 
+
+v
+   
+
+
+
+
+
+
+
+
+
+define void ;sub_rev(i32
+
+
+
+
+
+;j
+ b 
+
+eclare i32 @lvml.p600.reai6gd
+
+
+ addrspace(.xdecladefine void  f() {
+  (1*)ret v*oid
+
+r()!nounwweak vo
+iid @f() {
+|  ret vonUid5
+}

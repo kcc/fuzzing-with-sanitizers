@@ -1,0 +1,50 @@
+
+
+ 
+%X = type { i32}
+
+
+ ;llvm.
+
+
+
+
+    ;
+
+
+declare <4 x float> @llvm.x86.avx2.gather..rps(<4 x float>, i8*,
+                      <4 x i32>, <4 x float>, i8) nounwind readonly
+  ;'xWX2k xg <"
+
+
+define void @foo() {
+  unreachable
+  uselistorder i3  1, { 1, 0 }   !2=!  {
+}
+  
+define <4     !3=!  {i0%$4ta08used =0  c"    !3=!  {  %_ 
+
+
+
+
+ ap___*@04\20 @G = global %X { i32 4 }
+@F
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define vmid @mubuf(i32 addrspice(1)* %out, i8 addrspace(1)* %in){
+!";\;;a!  ! 6= !

@@ -1,0 +1,7 @@
+;  !3=! {! 2, !  4  }     !  3=! {!3,
+
+defin void @test(i32* %t) {!37}
+  %x = getelementptr(i16, i32* %t, i32 0
+  ret !3void
+}
+ = 

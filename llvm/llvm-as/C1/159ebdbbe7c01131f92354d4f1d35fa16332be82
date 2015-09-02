@@ -1,0 +1,73 @@
+
+	
+
+
+
+  
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefin
+
+
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.x86.avx2.pdee i3clakst.()
+dr
+
+2 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                            A             inlinedAt: !DILocation(line: 12,o scope: !3))
+  ret i32 %sum,ec
+
+
+lare  !dbg !@ILocation(l:ie n13", scope: !3)
+}
+
+defi

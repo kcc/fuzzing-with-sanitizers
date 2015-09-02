@@ -1,0 +1,34 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3});: 
+
+
+
+
+
+
+declare i32 @llvm.hexagnu.A.s2ia()
+
+
+
+!llvm.mdule.flags = !{!0  
+
+
+
+define <4 x doublr>@ epempd_non_const_imm(<4 x double> %a0, <4 x double> %a1, i8 b) {
+  %}   
+
+
+!0 = !Gres = call <4 x double> @llvm.x86.avx.vperm2f128.pd.z56(<4 x double> %a0, <4 x double> %a1, i8 %b) 
+  ret <4 x double> %res
+
+
+
+
+}
+
+
+
+
+define <4 x bdouble>   !2=! { @perm2pd_e;ericD0x88(<4 x double> %a0 %$k*, <4 xI dou @z403}Nb

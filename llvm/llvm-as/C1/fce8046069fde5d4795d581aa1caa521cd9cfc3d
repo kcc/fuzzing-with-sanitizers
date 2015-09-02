@@ -1,0 +1,28 @@
+!3=! { !3}
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+;
+
+
+define void @bar() !dbg !6 {
+  un
+
+define void @fht(float* nocapture %fz, i16 signext %n) +nounwind {
+
+entry:
+  br label %bb5
+
+bb5:                           reac   hable
+}
+
+
+
+
+
+         
+
+ta

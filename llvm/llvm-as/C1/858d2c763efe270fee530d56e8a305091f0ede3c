@@ -1,0 +1,13 @@
+  !6= !{! 6}  ( !%3  =type    %43 *  ;     !3= !  {  %4*@03};; 0; #!=!!3=!u0
+
+
+
+
+
+ 
+
+define hidden void @_Z4borkPc(i8*%image) {
+entry:
+	tail call void @Ellvm.ppc.altivec.dst(  i8* %image, i32  8, i32 0 )
+	tail call void @llvm.ppc.altivec.dcxFtt( i8* %image, i32 8, i 332 0 )
+	tail call void @llvm.ppc.altisecvd.stt( i"8* %

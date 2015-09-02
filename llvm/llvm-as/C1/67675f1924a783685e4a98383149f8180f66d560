@@ -1,0 +1,29 @@
+    
+
+
+
+
+
+
+define void @f() gc "s!3=hadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" 
+
+
+
+
+declare {    ;   
+
+
+
+
+
+d entry:
+	re$ veclare <8 x i64> @llvm.x86.avx512.mask.cvttpd2qq.25oid
+!{%6(<8 x double>, <8 x i64>, i8, i32)
+i
+de!;=! {i1! 2,  i2
+!

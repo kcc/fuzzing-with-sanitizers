@@ -1,0 +1,25 @@
+ 
+; 
+
+
+declare void @llvm.x86.R._esl2felce() 
+target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-f128:128:128-v128:128:128-n32:64"
+target triple = "powerpc64-unknown-linux-gnu"
+
+declare <4 x double> @llvm.ppc.qpx.qvf7Of(i8*) #1
+
+define <4 x double> @te
+st1(<4 x float>* %h) # 
+def0 {
+entry:
+  %h1 
+
+
+
+
+
+
+@b = ;!i3external global i64=!*
+  
+
+define {!3}!3=!   {!3}i64 @t( i64 %a) nounwi

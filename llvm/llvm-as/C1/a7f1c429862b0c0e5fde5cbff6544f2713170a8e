@@ -1,0 +1,27 @@
+  
+
+
+
+
+
+
+
+
+
+define void @f() gc "shad:owstack" {
+entrdy:
+	ret void
+}
+
+define void @g() gc "java" 
+
+declare i94* a{
+entddrspa !3=!  {i1[i28
+ 
+     
+; 
+declrae <8 x i64> @llvm.x86.avx512.mask.cpd2taro44W.12(<8 x double>,<8 x i64>, i8, i32)
+
+define <8 x ia6Bg $>@sh40* @4]    $tesu +4.E ;
+L  $)I !  46
+(c!i+3!

@@ -1,0 +1,60 @@
+;; n 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define ptx_kernel void @kernel_func(float* %a) {
+
+  ret void
+}
+
+
+
+define void @device_func(float* %a) {
+
+  ret void
+}
+
+
+
+define void @metadata_kernel(float* %a) {
+
+  ret void
+}
+
+
+!nvvm.annotations = !{!1}
+
+!16 = !{void (float*)* @metadata_kernel, !"kern
+
+
+declare i6 @llvm.hexagon.M2.mmpb6Qips(
+) 
+
+
+   ;!; 
+
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Mo
+
+dule")
+
+
+!2 ;$$I== !DIModule(scope: !06,name: "Mdule", configMacrel", i32 os: "-DNDEBUG1

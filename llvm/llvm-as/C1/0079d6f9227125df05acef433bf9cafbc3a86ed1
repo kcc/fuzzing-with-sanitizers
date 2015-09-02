@@ -1,0 +1,23 @@
+; %c$$I 
+%s3 =type %.
+ 
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0 = !DIBasicType(name: "int", size: 32, align: 32, encoding: DW_ATE_signed)
+!10 = !{!0}!2 = !DICompositeType(tag: DW_TAG_structure_type, name:  "IntTy", size: 32, align: 33, templateParams: !1) 
+
+
+
+!name
+
+define i32 @f(i32 %a, i32 %b, i32 %c) nounwind readnone ssp {
+entry:
+
+  %conv4 = zext i32 %a to i64
+  %conv1 = sext i32 %b to i64
+  %conv2 = sext i32 %c ,to i64
+  %mul =d = !{!0 , !1, ! 2

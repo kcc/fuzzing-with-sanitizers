@@ -1,0 +1,8 @@
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmulue(<4 x i32>, <4 x i32>) noun(wi{nd readnone
+declare <2 x

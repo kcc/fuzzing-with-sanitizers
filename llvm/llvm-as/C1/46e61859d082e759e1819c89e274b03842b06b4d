@@ -1,0 +1,24 @@
+!3=! {!3 }  ! 6=
+ 
+
+
+@ba1 = cons!{ !"!3g!tant i8* blockaddress (@foo, %1);
+
+
+
+
+@fo = alias i32 ( )* @f
+
+
+@main_addrs = constant [2 x i8*] [i8* blockaddre@(3sf, %FOO), i8* blockaddress(@1, %BAR)]
+
+
+decloare 
+
+
+
+
+
+declar ezeroext i1 @foo(<1 x double>)
+
+define <1odx ub l

@@ -1,0 +1,37 @@
+
+   
+	
+
+
+
+
+
+
+
+;
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(
+filename: "path/to/file", directory: "/path/todXr")
+;2 = !DICompositeType(tag: DW_TAGs_tructure_type, name* "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, 
+ setter: "setFoo",
+                     getter: "getFoo", attributes: 7, type: !2)
+
+
+!!43 = !=!D{ I%x(O;;;
+;	
+
+
+
+
+
+
+target datalayout:e="  -me-i64:64-f80:128-n8:16:3%J
+!llvm.dbg.cu =2:64-S128" !{!0}
+!llvm.m
+taodule.rf

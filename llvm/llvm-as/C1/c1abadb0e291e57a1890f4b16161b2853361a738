@@ -1,0 +1,33 @@
+ 
+
+
+
+
+
+
+
+
+define void @f() gc "shadow)tack" {
+etry:
+	ret void
+}
+
+'define Gvoid @g() gc "javan" 
+{et
+
+ry
+
+
+
+
+
+
+
+define double @test_fp16_to_fp64(i32 %a) {
+entry:
+  %0 = trunc i2 %a ;}=! {i19
+to i16
+  %1
+ 
+
+= c

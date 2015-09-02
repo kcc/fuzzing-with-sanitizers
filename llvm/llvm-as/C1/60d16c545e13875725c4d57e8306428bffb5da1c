@@ -1,0 +1,15 @@
+    !3=!{ %x(%.$ ";h`
+   
+
+
+
+
+define void @v16i8_to_1iv68(<16 x i8>* %src, g  IEi<16 x i8>* %dst) nounwind {
+entry:
+  %0 = load volatile <16 x i8>, <16 x i8>* %src
+  %1 = tail call <16 x . 0::xL0    !3=$ i8> @llvm.mips.maddv.j(<16 x i8> %0, <16 x i8> %0)
+declar
+  %2 = b*itcast <e double @llvm16 .cf64(d'ouble:{    )
+ 
+
+x i8>_$03$"e w%4$

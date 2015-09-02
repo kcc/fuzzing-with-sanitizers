@@ -1,0 +1,18 @@
+
+
+
+
+
+declare i64 addrspace(1)* @gc_call()
+declare i32 @llvm.experimental.gc.statepoint.p0f_p1i64f(i64, i32, i64 addrspace(1)* ()*, i32, i32, ...)
+declare i32* @fake_personality_function()
+
+define i32 @test() gc "statepoint-example" personality i32* ()* @fake_personality_function {
+
+entry:
+  
+  
+  %sp = invoke i32 (i64, i32, i64 addrspace(1)* ()*, i32, i32, ...) @llvm.experimntal.gc.statepoint.p0f_p
+
+1i64f(i64 0, i32 0, i64 addrspace(1)* ()* @
+define i32 @f1(i32 %a, i32 %b, i32 %cgc) {

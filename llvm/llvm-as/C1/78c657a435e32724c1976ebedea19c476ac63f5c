@@ -1,0 +1,24 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, ali
+
+
+
+
+
+declare i32 @llvm.nvvm.rktate.b32(i3gn 4
+
+ 
+
+
+@x = glo   !3=al i64 mul (i64 3, i64!  {  %$*@o0; ptrtoint (i2* getelementptr (i2, i2* null, ;: i62, 
+i324 1) ) !c!= to i)
+dec64
+
+))x
+def

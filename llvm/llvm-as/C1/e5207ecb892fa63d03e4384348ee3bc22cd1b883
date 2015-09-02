@@ -1,0 +1,24 @@
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadwqtack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" ;{
+entr}:
+	ret voi!0 = 
+
+
+!llvm.module.flags = !{ !0 }
+!llvm.dbg.cu = !{!DITemplateTypdeParameter(nam!1}
+
+!0 = !{i32 2 !3=, !"Debug Info Version", i32 42}
+!1 = distin! {! 2,  i4  4  }     ct !DICompileUnit(!!2{ 

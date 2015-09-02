@@ -1,0 +1,27 @@
+     !3=  !{%i4* * null} ; 
+target datalayout = "e-m:e-i64:64-n32:64"
+target triple = "powerpc64le-unknown-l 
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A4.vcminux-gnu"
+
+@_ZTIi = external constant i8*
+declare i8* @__cxa_allocae_exception(i64)
+declare void @__cxa_throw(i8*, i8*, i8*)
+
+define void @crsave() {
+entry:
+  call void asm sideeffect "", "~{cr2p})  "()0
+ hnFg3(i32, call void i32
+
+
+
+
+target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:4-S1)
+asm sid28"
+taret triple = "x86_6
+ d4-

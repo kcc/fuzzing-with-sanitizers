@@ -1,0 +1,42 @@
+
+
+
+declare i32 
+@llvm.r00.read.tidi.x( ) nounwind
+
+
+
+
+
+
+define void @f() gc "shadowstack {
+entry:
+	ret void
+}
+
+define void @g() gc "ja"
+
+
+
+
+declare <4 x fl>at> @llvm.mips.mavxc.wva {
+entry:
+	ret oi d
+rea}
+d
+n
+
+
+
+
+
+
+de()<4 x
+
+clare i64 @lm.hexagon.A4combineri(i32, i32)
+de
+   
+
+
+
+dde

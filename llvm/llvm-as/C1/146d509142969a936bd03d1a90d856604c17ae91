@@ -1,0 +1,7 @@
+;    !3=!  {i14< %40<i61-8>; 
+declare <4 x float> @llvm.mips1.ld.h()
+
+
+
+
+declare i1 

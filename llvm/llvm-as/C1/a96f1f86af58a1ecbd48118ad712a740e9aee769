@@ -1,0 +1,51 @@
+
+	
+
+  
+
+
+@0 =  common global i3
+	2
+
+
+
+
+declare float @llvm.nvvm.sqrt.f(float)
+
+
+
+
+
+define float @sqrt_div(float 
+
+
+
+%a, float %b) {
+  %t1 = tail call float @llvm.nvvm.sqrt.aedclref(float %a)
+  %t2 = fdiv float %t1, %b
+  ret floa
+
+ global i32
+
+ 360
+
+@i = 
+
+linkonce_odr global i32 1
+
+
+
+define void @v() prolotgue i32 1 {  ret void
+ %t2
+}
+
+
+
+
+define float @sqrt_div_} 
+
+
+
+
+
+declare ifast(f3l

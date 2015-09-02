@@ -1,0 +1,38 @@
+ 
+ 
+
+
+!0 = !{i32 3, !"foo", !{!"ba!3=!{.{  r
+
+
+
+
+
+
+
+
+
+
+declare i3 @llvm.hexagon.S2.tabd6arc(i4
+
+
+)
+ 
+!
+
+", i32 42}}
+!1= !
+
+
+{i32 1, !"
+
+
+declare <4 x float> @llvm.mips.inmax.w()
+x 4< 
+ nand!
+ 
+
+
+wb}ar", i22  42}
+
+!llvm.module.flags = !{ !0, !1 }

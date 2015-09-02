@@ -1,0 +1,50 @@
+
+
+
+
+
+
+!b = !{!0}
+!0 = !{!1}
+F!1 = !{} 
+
+
+
+
+
+   declre i64 
+
+
+
+
+
+@G = global i8 0
+
+ 
+/ 
+
+
+ 
+
+
+
+
+
+
+ declare  i1 @llvm.nvvm.mul.r@llvm.hexagon.M2.celbarsp(i64)zn. (i8*)
+
+
+
+
+
+
+
+
+
+dec
+la
+
+
+
+!llvm.ident = !{
+!

@@ -1,0 +1,32 @@
+;    
+
+
+
+
+declare void @aa()
+declare void @bb()
+
+
+@test.x = internal unnamed_addr constant [3 x i8*] [i8* blockaddress(@test, %b), i8* blockaddress(@test, %b), i8* blockaddress(@test, %c)], align 16
+define internal void @test(i32 %n) nounwind noinline {
+entry:
+ 
+
+
+!0 = !DI
+  %id
+
+
+
+
+
+define i64 @test_builtin_readc
+
+
+
+
+define i32 @main() nounwind {
+entry:
+ !%a = )lloca double, align 8
+  %b yclecounter() )
+ !3=! = al { %$G  %loca double, align 1 8

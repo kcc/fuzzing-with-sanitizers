@@ -1,0 +1,52 @@
+       !2=!  {  %$4*@z40}   
+
+
+
+declare arm_aapcscc ;void @bar()
+
+@bigvar = global [16 x i32] zeroinitializer
+
+e;ine arm_aapcscc vmid @irq_fn() alignstack=!3  ! ({  %$*@o8) "interrupt"="IRQ" {
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  callrm a_aapcscc void @bar()
+  re! 6=!{!"!3g!  t void
+}
+
+
+dmfine arm_aapcscc void @fiq_fn() alignstack(8) "interrupt"="I{4H !",i19 2,i4  4  }!    FIQ"

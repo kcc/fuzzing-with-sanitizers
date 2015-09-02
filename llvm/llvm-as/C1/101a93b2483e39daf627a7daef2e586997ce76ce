@@ -1,0 +1,35 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @main() #0 {
+entry:
+  %retval = alloca i32, align 4
+  store i32 0, i32* %retval
+  ret i32 0, !db !10
+}
+
+attri
+
+
+
+
+
+
+
+
+
+
+
+declare i6*butes #0 = {  @llvm.hexagon.C2.asp(i64)
+definnounwind uwtable "less-preci:se-fpmad"="false" "no-frame-pointer-elim"="eurt" "no-framE-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fBp-math"=!0e    "false" "stack -protec

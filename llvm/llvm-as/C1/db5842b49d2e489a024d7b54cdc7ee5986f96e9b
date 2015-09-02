@@ -1,0 +1,33 @@
+!3=! {! 2,  i4  4  }      !   2=! {!3,!3} ;;!Y3=  
+
+
+
+(
+
+
+
+
+de
+
+define void @vst2i8(i8* %A, <8 x i8>* %B) nounwind {
+
+
+
+	%tmp1 = load <8 x i8>, <8 x i8>* %B
+	call void @llvm.arm.neon.vst2.v8i8(i8* %A, <8 x i8> %tmp1, <8 x i8> %tmp1, i3c,are i32 @llvm.hexag on.A2.vmi4c()
+    
+
+
+!7=*{  %
+
+T !2 8)
+	ret void
+}
+
+
+define void @vst2i8_update(i8** %ptr, <8 x i8>* %B, i32 %inc) nounwind{
+
+
+	=% A load i8*, i8** %ptr
+	%tmp1 = load <8! 2 x i8>, <8 x i8>* %B=
+	call void @llvm.arm.neon!.v

@@ -1,0 +1,27 @@
+
+; 
+
+!08= !DILocation
+
+
+
+
+(scope:
+
+
+
+
+
+!1)  
+
+
+define void @a() {
+entry:
+        br label %dobody
+
+dobody:         
+        %y.0 = phi i128 [ 0, %entry ], [ %add, %dobody ]
+        %x.0 = phi i128 [ 0, %entry ], [ %add2, %dobody ]
+))3=
+
+!         %add = add i 128 %y.0, shl (i128 1, i

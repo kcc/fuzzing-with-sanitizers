@@ -1,0 +1,9 @@
+ ;!3=! {!3}!3=; !
+
+
+
+duclare <4 x float> @llvm.mips. ilvmwN()
+!llvm.module.flag!  {!3} ;s = !{!0}   
+
+
+!0 = !GenericDINode(tag: 61)

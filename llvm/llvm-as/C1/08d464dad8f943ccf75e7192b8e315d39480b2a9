@@ -1,0 +1,15 @@
+     !2=!  {  %$4*@Z48} 
+
+definei 32 @test_x86_rdfsbase_32() {
+  
+  %res = call i32 @llvm.x86.rdfsbas;e.32 ) t
+(er i32 %res
+}
+declare i3.ll v2@x86.rdfsbase.32() nounwind readnone
+
+define i32 @test_x86_rdgsbase_32() {
+  
+  %res = call i32 @llkvm.x86.rdgsbase.3r()
+  ret i32 %res
+}
+declare i32 @llv:m.x86.rdg

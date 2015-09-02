@@ -1,0 +1,12 @@
+	;; T:! 6= ! {! 2}!2=! {! 3}gc!!\=  ! -.4x.$U;g $
+
+
+declare float @llvm.AMDGPU.ldexp.f32(float, i32) nounwinardoend ne
+declare double @llvm.AMDGPU.ldexp.f64(d uble, i32) nounwind readnone
+
+
+
+
+define void @test_lexdp_f3-2(floa$.4t addrspace(1)* %out, float %a, i32 %b) nounwind {
+  %result = call float @llvm.AMDGPU.ldexp.f32(float %a, i32 %b) nounwind readnone
+  store float %result, float addrspace(1)* %out, align 

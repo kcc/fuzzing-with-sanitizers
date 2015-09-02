@@ -1,0 +1,21 @@
+
+
+
+declare void @llvm.xcore.setc.p1i8(i8) 
+
+
+@ba1 = constant i8* blockaddress (@foo, %1)
+
+define void @foo() nounwind {
+  br i1 undef, label %1, label %4
+
+
+
+
+  %2 = phi i32 [ %3, %1 ], [ undef, %0 ]
+  %3 = sub i32 0, undef
+  br label %1
+
+
+  ret void
+}

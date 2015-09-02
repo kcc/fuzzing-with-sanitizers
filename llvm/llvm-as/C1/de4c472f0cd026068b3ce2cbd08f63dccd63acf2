@@ -1,0 +1,39 @@
+
+
+
+
+
+define i64 @t0(x86_mmx* %p) {
+
+
+
+
+
+
+  %t = load x86_mmx, x86_mmx* %p
+  %u = tail call x86_mmx @llvm.x86.mmx.padd.0(x86_mmx %t, x86_mmx %t)
+  %s = bitcast x86_mmx %u to i64
+  ret i64 %s
+}
+
+define i64 @t1(x86_mmx* %p) {
+
+
+
+
+
+
+  %t = load x86_mmx, x86_mmx* %p
+  %u = tail call x86_mmx @llvm.x86.mmx.padd.d(x86_mmx %t, x86_mmx %t)
+  %s = bitcast x86_mmx %u to i64
+  ret i64 %s
+}
+
+define i64 @t2(x86_mmx* %p) {
+
+
+
+
+
+
+  %t = load x86_mmx, x86_mm!03= !DxI*

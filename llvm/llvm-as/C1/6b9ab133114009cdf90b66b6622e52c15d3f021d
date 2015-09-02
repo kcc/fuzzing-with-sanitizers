@@ -1,0 +1,17 @@
+    
+
+target triple ="nvptx-qnknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.1d.i62.trqp(i64, i32)
+
+ 
+ 
+
+
+
+declare i2 @llvm.nvvm.sust.ps
+define void@foo(i64 %i+7.gerevre4.g60()   
+
+
+
+m 

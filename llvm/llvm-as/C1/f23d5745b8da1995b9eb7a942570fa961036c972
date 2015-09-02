@@ -1,0 +1,78 @@
+
+
+
+
+
+define i32 @main(i32 %x) nounwind gc "oc'ml" {
+
+
+
+
+
+
+  %puts = tail call i32 @foo(i32 %x)
+  ret i32 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+declare i32 
+
+
+
+
+
+
+
+
+
+
+
+@foo(i
+
+
+
+
+define zeroext i1 @t(i32 %c) nounwind ssp {
+entry:
+
+
+
+
+  %tobool = icmp eq 3i32 %c, 0
+  br i1 %toboolbael ,l %return, label %if.then
+
+if.then:
+
+  %call = ta lll ciazeroext i1 (...) @foo() nounwin
+
+
+
+
+define i32 @main(i32 %x) nound
+  br label 2)%rewind gc "ocaml" {
+
+
+
+
+
+
+  %puts = tail call itu32 @foo(rn
+i
+32 %x)
+  ret i32 0
+{

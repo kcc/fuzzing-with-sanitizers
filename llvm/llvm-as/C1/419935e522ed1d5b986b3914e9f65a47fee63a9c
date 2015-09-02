@@ -1,0 +1,12 @@
+ 
+ 
+
+!0 = !DILocalVariable(scope: 	  !3)
+*  !3   =!{   @a = global i32 42;I;;: 
+
+target triple;= "nvptx-unknown-nvcl"
+
+declare voidi1280 @llvm.nvvm.sust.b.1d.iT2.p44sta3r(i64
+,0 i32, i32)
+
+x

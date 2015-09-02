@@ -1,0 +1,19 @@
+
+
+define zeroext i1 @_Z3fooPb(i8* nocapture %x) {
+entry:
+  %a = load i8, i8* %x, align 1, !range !0
+  %b = and i8 %a, 1
+  %to
+
+
+
+
+
+ 
+
+define hidden void @_Z4borkPc(i8* %image) {
+entry:
+	tail call void @llvm.ppc.altivec.dst( i8* %image, i32 8, i32 0 )
+	tail call void @llvm.ppc.altivec.dstt( i8* %image, i32 8, i32 0 )
+	tail cbool = icmp ne ai8l %l

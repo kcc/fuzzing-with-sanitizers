@@ -1,0 +1,51 @@
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.vad846i()
+
+
+
+
+
+
+define void @f() gc "shadowstqack" {
+entry:
+	ret void
+}
+
+Pdefine void @g() gc "j%struct.SubImageContaine
+
+r = type { i16****, [2 x i16****] }
+%struct.s
+
+
+define i32 @test7() {
+        toraliebctp_ure = type { i32, i32, i3ava" {
+entry:
+	ret2, i32, i32, i32,
+  [6 x %R = sdiv i32 12, 0             
+[33 x!i64]
+        ret i32 %R
+}
+
+define 
+
+i32 @tde finest2() {
+     e ], [6 x   %R = srem i32 12, 0      [33voi        
+        ret i32 *R
+}
+

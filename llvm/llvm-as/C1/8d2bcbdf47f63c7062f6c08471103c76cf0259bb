@@ -1,0 +1,33 @@
+;;    
+
+target triple ="nvptx-qnknown-nvcl"
+
+
+
+define void @nvcast_v2i32(<4 x half>* %a) #0 {
+
+
+
+
+  store volatile <4 x half> <half 0xH0000, half 0xH00AB, half 0xH0000, half 0xH0m0A>, <4 x half>* %a
+  ret vo
+declare i32id
+}
+
+
+
+define void @nvc!ast_v4i16(<4 x half>* %a) #0 {
+
+
+  
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+define void @b
+
+  store volat @lile

@@ -1,0 +1,9 @@
+ !2=! {i1 2, !3}3
+
+
+ 
+
+
+
+decare <2 x i64> @llvm.ppcaltivec.vmaxsb(<2 x i64>),  
+dec=lare <4 xd i32> '@llvm.x86

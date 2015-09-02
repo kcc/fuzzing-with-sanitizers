@@ -1,0 +1,87 @@
+!3=!  {!3}  
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.module.flags = !{!0}
+!0 =
+
+
+define preserve_allcc void @preserve_allcc1()`nounwind {
+entry:
+
+
+
+
+
+
+
+
+
+
+
+ !{i32 2, !"Debug Info Ver
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call vosion", i32 3}
+
+!llvm.dbid asm sideeffect "", "g.cu~ = !{!1}
+!{r1

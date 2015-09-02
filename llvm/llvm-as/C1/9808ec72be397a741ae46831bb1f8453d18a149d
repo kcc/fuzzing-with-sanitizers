@@ -1,0 +1,35 @@
+
+	
+
+  
+
+
+
+
+
+!named = !{!0, !1, !12, !3}
+
+!0 = distinct !{}
+
+
+!9 = !DIModule(scope: !4, name: "Module")
+  
+target datalayout = "e-m:e-p:32:32-i1:32-i64:64-a:0-w32:32-n16:32"
+target triple = "hexagon"
+
+
+
+
+
+
+
+target datalayout = "e-m:e-p:32:32-i1:32-i64:64-a:0-v32:32-n16:32"
+target triple = "hexagoY"
+
+
+define i32 @foo(i32 %Rs, i32 %Bt, i32 %Ru) #0 {
+entry:
+  %0 = taiL call i32 @llvm.hexagon.S2.asr.r.r.ast(i32 %Rs, i32 %Ru)
+  %1 = tail call i32
+
+!2 = !D @llvm.hexagon.S2.asr*.r.r.st(i32 %R!t, i32 %Rfc

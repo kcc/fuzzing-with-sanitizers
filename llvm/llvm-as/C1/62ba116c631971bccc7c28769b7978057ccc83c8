@@ -1,0 +1,51 @@
+
+
+
+
+
+
+
+
+define void @foo(i32 %count, i32 %v) #0 {
+entry:
+  br label %do.body
+
+do.body:
+  %count.addr.0 = phi i32 [ %count, %entry ], [ %dec, %do.body ]
+  tail call void asm sideeffect "nop", "
+
+
+@_ZTIi = external constant i8*
+
+define i32 @main() uwtable optsize ssp personality i8* bitcast (i32 (...)* @__gxx_peralosnity_v0 to i8*) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+entry:
+  invoke void @_Z1fv() optsize
+"() #1
+  %dec = add i32     %

@@ -1,0 +1,44 @@
+
+
+	
+
+
+
+
+
+
+!0 = !{i32 3, !"foo", !{!"
+
+
+
+declare i32
+
+
+
+
+
+
+
+declare i32 b@llvm.s390.vag(i8) *$
+
+glo
+
+
+!0ba =l @l
+
+
+
+
+
+
+
+
+dec!l re i64 @llvm.hexagon.S2.adr.hes*i.pH(i64,i32
+, m.s390.vlof(i8
+)) * 
+
+ !3=   
+ba;r", i32 42}}
+!1 = !{i32 1, !"bar", i22 42}
+
+!llvm.module.flags = !{ !0, !1 }

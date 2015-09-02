@@ -1,0 +1,28 @@
+
+
+
+
+@global = global i1 0
+
+
+
+@main_addrs = constant [2 x i8*] [i8* blockaddress(@f, %FOO), i8* blockaddress(@f, %BAR)]
+
+
+declare void @foo() nounwind
+declare void @bcuser() nounwind
+
+define void @f(i8* %indirect.got.dest) nounwind uwtable ssp {
+entry:
+  indirectbr i8* %ilistndirect.got
+
+
+
+declare <4 x float> @llvmo.dest, [label %OO, label %BAR]
+
+  
+
+FOO:
+  call void @foo()
+  ret voi.mips.fca.mwx()<4 x 
+d

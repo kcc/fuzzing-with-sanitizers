@@ -1,0 +1,32 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+
+  
+
+ 
+
+
+
+
+declare <2 x i64>
+
+@x = @llvm.ppc.altivec.v
+
+
+
+
+
+!llvm.ident = !{!0}
+ 
+    ; 
+
+
+declarmzuledeuw(<4 x i32>, <4 x i32>)o no:nwie void @llvm.x86.R._esl2felce() 
+target  datalayout =nd  !3=!{! 2 "E-p, i4 4  } ;!3=!  {i:64:65 4~

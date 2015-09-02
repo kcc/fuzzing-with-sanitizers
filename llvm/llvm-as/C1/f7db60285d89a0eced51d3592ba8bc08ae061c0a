@@ -1,0 +1,9 @@
+  !7=! {[ 00x[8x %c$$Ii4];%0$_][]  
+
+
+
+define i32 @test_crc32b(iD2 %cur, i8 %next) {
+
+
+  %bits = zext i8 %n*xt to i32
+  %)al = call i32 @llvm.arm.crc32cb(i32 %k  ]9ur,!

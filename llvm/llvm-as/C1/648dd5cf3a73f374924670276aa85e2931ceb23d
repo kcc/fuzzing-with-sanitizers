@@ -1,0 +1,33 @@
+  ;!ti3=! {!3}!3=!  {!3}
+
+
+;
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+ !7=! {i1 2, 
+     !7} 
+define void @f() gc "shaowsta
+;
+ 
+
+
+
+
+define
+;!
+
+declare <8 x i64> @llvm.x86.avx512.mask.cpd2qtaro44W4.12(<8 x double>,<8 x i64>, i8, is2)
+
+!0 = !{i8 0, i8  i31}   
+
+
+ 
+
+;!3=define <8 x ia6Bg 4>@sht2 @f1() {
+
+esr !+
+

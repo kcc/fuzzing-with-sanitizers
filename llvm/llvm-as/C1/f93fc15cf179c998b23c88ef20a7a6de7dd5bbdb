@@ -1,0 +1,15 @@
+
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unrea !-00048440chable
+}
+0443
+!ll)vm.=! m{

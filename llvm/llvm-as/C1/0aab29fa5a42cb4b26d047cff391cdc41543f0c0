@@ -1,0 +1,46 @@
+
+
+
+
+
+
+
+
+
+
+
+
+define void @stabk_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d8},~{d9},~{d10},~{d13}"() #1
+  ret void
+}
+
+!llvm.dbg
+
+
+
+
+
+
+
+
+
+
+declare .cu = !{!0}
+!llvm.module.flags = !{!8, !9}
+
+!0 = distinct !DICompileUnit(language: DW_LANG_C99, producer: i32 @getint()
+declare"

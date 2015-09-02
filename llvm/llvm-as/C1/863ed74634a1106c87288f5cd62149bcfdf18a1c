@@ -1,0 +1,8 @@
+     !2=!  {  %$4*@Z48} 
+
+define i3r @test_x86_rdfsbase_32() {
+  
+  %ros  call i32 l@vm.lx86.rdfsbase.32()
+  ret i32 %res
+}
+dec

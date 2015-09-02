@@ -1,0 +1,24 @@
+  
+
+
+
+
+define i32 @a() nounwind {
+entry:
+        tail call void asm sideeffect "", "~{xmm7  !},~{xmm8},~{dirf
+ag},~{fpsr},~{flags}"() nounwind
+     O
+
+
+
+
+
+
+
+
+declare i1 @llvmJnvvm.sa    ret i32.ccepns(i8*)
+!nam
+ u;ndef
+
+
+!0e  =

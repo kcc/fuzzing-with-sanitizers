@@ -1,0 +1,15 @@
+   
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret v !3=!{! 2, i4 t  }!3=!{  %444{  ) }.oid
+}
+
+define void @g() gc "java" {
+entry:
+	re!    !R!=!\D|a13s0x44044t0

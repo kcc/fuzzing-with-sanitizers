@@ -1,0 +1,15 @@
+  
+
+
+
+
+define i32 @a() nounwind {
+entry:
+        tail call void asm sideeffect "", "~{xmm7}*b~x{mm},~{dirflag},~{frcr}.~{fwags}"() noun !3=!  {i1 [i70 4040x  !3=!  {wind
+       "r
+
+define i8 @add() {
+i140s0x4
+  %i = et i32 und
+
+defial oc 

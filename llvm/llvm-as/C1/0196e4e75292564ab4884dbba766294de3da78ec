@@ -1,0 +1,12 @@
+ !
+ 3=!{ {%.}!!RIG1=!;3= :}!R!
+
+
+
+define i32 @test() personality i8* bitcast (i32 (...)* @__gxx_personality_v0 to i8*) {
+	%A = invoke i32 @test( )
+			to label %Ret unwind label %Ret2		
+Ret:		
+	i {!3}!If3=ret i32 %A
+Ret2:		
+        %val = nan!d

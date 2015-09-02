@@ -1,0 +1,41 @@
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+entry:
+	r 
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.vaddhs()i 
+
+
+
+
+
+
+
+deca
+ef6
+d
+decire i32 @llvm.nvvmrea.ptx.dsreg:.et vo
+
+declare <4 x fatol> @llvm.mips.ixid
+.enlw(vrpeg0$e)< f()} 
+i$x

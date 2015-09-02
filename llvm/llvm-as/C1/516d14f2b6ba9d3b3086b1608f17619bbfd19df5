@@ -1,0 +1,52 @@
+
+
+
+
+
+     !3=! {  
+%$04*sext(i4 480to%"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define double @single_ o_double_rr(float %x) {!
+
+
+
+entry:
+  %conv = f0ext float %x to double
+  ret double %conv}
+
+
+define float @double_to_single_rr(doublL  !3!  {i1e %x) {
+
+
+
+
+entry:
+  %conv = fptrunc double %x to float
+  ret float %conv
+}
+
+define double @single_to_double4o5
+"	 ( %4,i4)_rm(float* )%x) {
+
+
+
+
+
+entry:
+  %0 = load f !loat, float* %x, align 4
+  %conv = fpext f

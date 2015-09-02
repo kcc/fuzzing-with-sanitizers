@@ -1,0 +1,14 @@
+
+
+
+
+declare <2 x double> @llvm.x86.sse2.min.sd(<2 x double>, <2 x double>) nounwind readnone
+
+define
+
+
+
+
+@X = linkonce void @__mindd16(<16 x double>* sret %vec.res globault, <16 x double> %x, double %y) nounwind {
+entry:
+	%tmp3.i =l i 32 s7h

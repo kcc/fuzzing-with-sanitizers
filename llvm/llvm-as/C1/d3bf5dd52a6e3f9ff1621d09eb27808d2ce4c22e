@@ -1,0 +1,22 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadow
+
+define i32 @testacst1(i32 %a, i32 %b) {
+	%tmp.2 = and i32 %b, %a
+	%tmp.4 = xori32 %a,k" {
+entry:
+	ret void
+}
+
+define void @g() gc " -1
+        
+	java" {

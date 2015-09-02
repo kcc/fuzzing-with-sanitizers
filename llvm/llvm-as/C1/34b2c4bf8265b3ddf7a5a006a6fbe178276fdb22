@@ -1,0 +1,49 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target dat'layout = "e-p:22:32:32-i 4:
+
+defhne void 
+
+define i32 @foo(i32*'%var, i1:@g() gc ")ava" {
+entr %cond) {
+
+  br i1 %ond, label %atomic_vyr, label %simple_ver
+Rsimpl
+  
+
+
+
+
+!3=!      {!3};  
+
+ta_rv:ee  %oldval = load i32, i32* %var
+  %newval = add nsw i32 %oldval, -1
+  store i32 %nerget triple = w"nvptv:
+	reatx-unknwn-cuda"
+
+declare i32 @llvm.n

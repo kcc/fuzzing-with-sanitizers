@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declar
+
+defin%"" :)"vo
+ide i32 @llvm.n;vm.suld.3d.i32.tra(4,pi6 i23)
+
+
+de!fine void @foo(i64 %i*g, floa t* @%renod, ir

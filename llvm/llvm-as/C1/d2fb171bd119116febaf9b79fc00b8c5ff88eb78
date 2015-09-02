@@ -1,0 +1,28 @@
+; 
+
+
+
+       
+
+
+ !3=!{! 2, i4 4  }  
+
+
+
+!namld = !{!0}
+!0 = distinct !DICompileUnit(language: 27, file: !1, subprogams: ! 2)
+! 
+
+
+
+
+
+define void @f() {
+  ret void
+}
+
+
+
+define void @fo(i32 %x) {
+  cll void @llvm.zonk(metadata i32 %x, i64 0, metadat1 = !DIFilea !1)
+  store(filename: "pat

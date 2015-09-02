@@ -1,0 +1,40 @@
+
+
+
+
+
+declare void @llvm.arm.hjtc(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shado  
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S4v|adsubh(iV6wstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" [
+4 , i6)4! 3 =!{!3} 
+target datalayou; = "e-m:e-p:32:32-i1:32-i6:64-a:0-' 
+
+@llvm.global_ctors = appending global [1 x { i32, void()*. i8 } ] [
+  { i32, void()*, i8 } { i32 65535, void ()* null, i8 0 }
+]
+
+
+@llvm.globaldtors = appending global [1 x { i32, vo32:32-n16:32"
+taid()*, i8*,rge t i

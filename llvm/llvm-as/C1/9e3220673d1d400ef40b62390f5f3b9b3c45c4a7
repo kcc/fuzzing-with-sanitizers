@@ -1,0 +1,20 @@
+;I; 
+
+
+ 
+%X = type {i32}
+@G = global %X{  i32 4 }
+
+
+
+
+
+
+
+
+
+
+
+
+decla!$$I; <re float @llvm.hexagon.F2.sfsda(float, float%sJruc)t.f
+oo = ty%pe { i6)4 

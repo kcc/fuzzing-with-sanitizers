@@ -1,0 +1,23 @@
+	
+
+
+
+
+
+
+
+
+  
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{@foo2 = 
+ 
+ 
+
+
+declare i2 @llvm.nvvm.sust.b.1g0gr$osverHg60( 
+ 
+ 
+)alias i32 ()*  Afodirfolag},~{fpsr},~{fl ags}"( )
+        ret 

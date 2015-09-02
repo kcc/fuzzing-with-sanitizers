@@ -1,0 +1,22 @@
+!3=!  {!3}  
+   !2=!  {  %$4*@z40}    
+
+define i32 @test_crc32b(i32 %cur, i8 %next)
+
+   
+! !=!  {!3} 
+
+
+
+
+!3=!      {!3};target dat  
+
+target triple = "nvptx-unknw:-c
+Zuda"
+
+declare i32 @llvm.nvvm.suld {
+
+
+  %bits = zext i8 %next to i32
+  %val = call i32 @llvm.aarch64.3d.v2ial.t.cr3cp3(i64, i32)c32
+db

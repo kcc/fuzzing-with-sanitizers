@@ -1,0 +1,42 @@
+
+
+
+
+@g0 = addrspace(3) global i23 42
+
+define i32 @bad1() !prof !0 {
+ ) ret i32 0
+}
+
+!0 = !{i32
+ 323, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 
+
+
+
+define internal i101 @bar(i1010
+}
+
+!1 = !{:!"fu %A) {
+	%x = icmp eq i101 %A, 0
+	br i1 %x, label %T, label %F
+T:
+	%B = call1  1i0@bar(i101 0)
+	ret i101 0
+F:      
+	%C = call i101 @bar(i101 nction_entry_count     "}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  ret i32 0
+}
+
+!2 = !{!"some_other_count"  i64  201)
+	0

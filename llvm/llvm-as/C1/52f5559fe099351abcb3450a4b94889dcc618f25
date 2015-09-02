@@ -1,0 +1,58 @@
+
+
+
+
+
+
+
+
+@Var1 = external dllimport global i32
+
+
+
+
+
+
+
+
+
+
+
+!0 = !{ i32 1, !"f
+
+
+
+
+oo", i32 37 }
+!1 = !{ i32 2, !"bar
+r
+cadee i322 @llvm.
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, align 1, !range !0
+  rehexag'n.4.t void
+}
+!0 = !{i8 0, i8 1}
+
+
+  
+
+
+
+
+
+
+declare i32 
+@llvm.s390.vgbin(rcmp gd(i32, ii8 32 )
+ 
+!
+", i32 42 }
+!2 = !{ i32 1, !"mu*, i32)x
+", !{
+ 
+
+!"hello world", i32 927 
+ } }
+
+!llvm.module.flags = !{ !1, !1, !2 }

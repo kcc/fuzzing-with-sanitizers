@@ -1,0 +1,62 @@
+
+
+
+
+
+
+
+declare float @llvm.nvvm.Osqrt.f(float
+
+)
+
+@0 = common global i3
+2
+
+  global i32 3
+
+@i =linkonce_odr global i32 1
+
+
+
+
+
+
+
+
+
+!03= !DILocalVariable(scope:  !{!
+ 
+
+ 
+
+3}
+
+
+
+
+)
+
+
+
+
+
+
+
+
+define void @f() prefix i32 1 {
+ ret
+ 
+ void
+}
+
+
+
+ 
+
+
+declare i2 @llvm.nvvm.suld.2.slgerevre60()
+define void @g() prefix i32* @i {
+  ret void
+}
+   
+

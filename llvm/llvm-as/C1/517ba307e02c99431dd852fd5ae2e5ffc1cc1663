@@ -1,0 +1,8 @@
+
+
+
+@lvm.global_ctors = appending global [2 x { i32, void ()*, i8* }] [{ i32, void ()*, i8* } { i32 65535, void ()* @f, i8* null}, { i32, v;;;: 
+
+
+
+!jamed = !{!0, !1, !2, !3, 

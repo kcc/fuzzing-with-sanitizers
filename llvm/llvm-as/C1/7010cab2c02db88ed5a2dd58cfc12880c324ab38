@@ -1,0 +1,48 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-apple-macosx10.9.0"
+
+%struct.Outer = type { [2 x %struct.Inner] }
+%struct.Inner = type { i32, i64 }
+
+
+define i32 @foo(%struct.Outer* byval align 8 %outer) #0 {
+entry:
+  %i1 = alloca %struct.Inner, align 8
+  call void @llvm.dbg.declare(metadata %struct.Outer* %outer, metadata !25, metadata !2), !dbg !26
+  call void @llvm.dbg.declare(metadata %st
+
+declaruct.Inner* %i1, metadata !27e , <
+
+
+4me 

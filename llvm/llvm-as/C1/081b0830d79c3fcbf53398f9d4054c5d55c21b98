@@ -1,0 +1,19 @@
+
+   !2=! {  %$4*@z40}   
+
+
+
+  
+
+!llvm.dbg.sp = !{!0}
+!lldm.bvg.ce = !{!5}
+!llvm.omdule.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZNoof33barEv", line: 3, isLocal: false, isDefinition: 
+
+false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+! 1= !  
+declareDIFile(filename: "/foo", directory: "bar.cpp")
+ i32 @llvm.xcore.gIet(!3 =)
+
+defin !DISubroutie  !3=!  { i  neTy%$4p*3

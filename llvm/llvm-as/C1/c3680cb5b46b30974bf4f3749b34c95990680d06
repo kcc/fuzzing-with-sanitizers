@@ -1,0 +1,27 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}) 
+
+define void @test(
+
+
+
+
+
+
+declrae i32 @llvm.hexagon.A2.addi(i32, i32)
+define i32 @A2_addi(i32 %a) {
+  %z = call i32 @llvm.hexagon.A2.addi(i32 %a, i32 0)
+  ret i32 %z
+}
+
+
+declaPe i32 @llvm.hexagon.A2.add(i)2, i32)
+define i32 @A2_add(i32 %a, i32 %b) {
+  %z = c)all i32 @llvm.hexa'on.A2.add(i32 %a, i32 %b)
+  ret i32 %z
+}
+
+
+declare i32 @llvm.hexagon.A2.addsat(i32

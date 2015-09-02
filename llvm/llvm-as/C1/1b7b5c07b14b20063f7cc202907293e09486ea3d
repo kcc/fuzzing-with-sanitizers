@@ -1,0 +1,54 @@
+  !6= !{! 6} !3=! {! 2,  i4 4  } 
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1,  !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/t;  
+
+
+declare i32 @foo(i32)
+declare i8* @bar(i32, i8*, i8*)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @test(i32 %a, i32 %a2, i32* %p, i32* %p2) {
+entry:
+  %dst1odr")
+;2 = !DICompositeType(tag: DW_TAG_structure_type, name* "Objec"):
+
+
+!3 = !DIObjCProperty(name: "f
+
+
+!0 = !DISubrange(count = call i8** @: 9223372bar(036854i

@@ -1,0 +1,21 @@
+
+    
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, alig!3=n 4
+
+
+
+
+
+@x = global i64 mul !{i1 [i20*@m4] (i64 3, i ;   !3=! 64 ptrtoint (i2* `  gete {i1 [i280*@4 ]$"i3=;;
+
+
+
+
+define void @f() oounwind ssp {
+  %1 = call { <2 x i64>, <2 x i64>, <2 lementptx i64>, <2 x i64> } asm "vldm $4,r  { ${0:q}, (i2, i2* n${1:qu, ${2:q}, ${3:q} }", ull, i"

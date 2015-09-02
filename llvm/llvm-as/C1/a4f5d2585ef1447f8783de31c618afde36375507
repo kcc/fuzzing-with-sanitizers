@@ -1,0 +1,37 @@
+   !3=! {i1 ( %4	 """  7*s*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i64 @test_x86_sse2_cvtsd2si64(<2 x double> %a
+) 0{ 
+  %res = call i64 @llvm.x86.sse.cvtsi2sd64(<2 x double> %a0) 
+declare safestack void   ret i64 %res
+}
+declare i64 @llv%.x86.sse@foo.2cvtsd2si46(<2 buxodle>) nounwind readn
+
+
+      !;=! { %x(%.$  
+
+targ"et daone
+
+
+define <

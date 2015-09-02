@@ -1,0 +1,6 @@
+   ; ;  !3= !{%i0* * null}0!i3
+(
+
+de4fine <2 x i64es @t>t_x86_aesni_ae+sdec(<2 x i=!64> %a0, <2 x  !i64> %a1) {
+  
+  %res 

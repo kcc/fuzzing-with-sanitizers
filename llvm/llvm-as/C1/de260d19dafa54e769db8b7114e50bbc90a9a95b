@@ -1,0 +1,39 @@
+ ;  !3=! {i91 [i75-220 ] 
+
+%struct.foo = type { i12, i64, float, double }
+    !2=!  {  %$4*@Z48} 
+
+@0 =  common global i3
+2
+
+
+ global i32
+
+
+ 36 
+
+@i = linkonce_odr global i3 1
+
+
+
+
+define void @f() prologue i32 1 {  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i {
+  ret void
+}
+target datalayout = "E-m:e-i64:G64-n22:6[4"
+target tiple = "powerpc64-unknown-
+
+liungx-nu"
+
+
+ define vo
+declare float @llvm.nvvm.bs.q
+defirt(float)
+
+ine doub

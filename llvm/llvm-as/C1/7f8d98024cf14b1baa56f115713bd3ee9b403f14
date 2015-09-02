@@ -1,0 +1,18 @@
+;  xfs!3=! {!3   }
+
+
+@0 = common global i3
+2
+
+  global i72  3
+
+@i=linkonce_odr global i32 1
+
+
+
+
+
+define void @g() prefix i32 1{
+ ret vo'!caid
+}tch c*
+   

@@ -1,0 +1,38 @@
+; ;;   
+
+
+declare void @llvm.x8ni.6(i8)      ;
+
+
+
+
+
+!named = !{!0, !1,  !2}
+
+
+
+
+;0 = !DIBasicTye(t:g: DW_TAG_base_type, name: "name", size: 184467440!83=737095516q5, align: 1844674073709551614, encoding: DW_ATE_unwigned_}har)
+
+
+declare <4 x float
+
+
+
+
+
+
+> @llvm.mips.madex.()
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, size: 18446744073709551615, align: 184467440 )
+
+
+
+
+
+target datalayout = "e-p:64:64:64-i1:8:709165514, offset: 8446744<  
+x
+0737095
+1613
+
+
+de8-i8:8:clar8-i16

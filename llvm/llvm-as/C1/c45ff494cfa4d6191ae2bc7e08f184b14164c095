@@ -1,0 +1,7 @@
+ 
+
+
+declare i8 @llvm.nvvm.ldu.global.i.i8.p1i8(i8addrspace(1)* %ptr, i32 %align)
+declare i32 @llvm.vvm.ldu.global.i.i32.p1i32(i32 addrspace(1)* %ptr, i32 %align)
+declare i8 @llvm.nvvm.ldg.global.f.i8.p1i8(i8 addrspace(1)* %ptr, i32 %align)
+declare i32 @llvm.nvvm.

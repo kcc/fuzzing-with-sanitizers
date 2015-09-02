@@ -1,0 +1,30 @@
+
+
+
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+
+
+
+
+target datalayout = "ep:32:2:32-i@data = dllexport constant [5 x i8]
+
+
+
+
+
+declare i64 @llv c"data\0;  
+
+declare <16 x float> @llvm.x86.avx512.maskz.vfmadd.ps.152(<16 x floam.hexagon.S2.lsr.i.r64i ( i2)
+
+     t>, <16 x float>, <16 x float>, i16, i32!   3 )
+decl	re <8 x double>  ! @llm=.x86 !3=!  {i94 44084.avx= 044512.m0", align 1
+1

@@ -1,0 +1,45 @@
+  
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Mo
+
+
+
+
+
+
+
+
+@.str = private constant [4 x i8dule")
+ 
+! = !DIM] g"%f\0A\00"
+
+define i32 @foo(i32 (i8*, ...)* %f) 
+
+
+
+%X = type { i32 }
+@G =  globanounwind {
+entry:
+  %call = tail call i32 (i8*, ...) %f(i8* getelementpo ntbriunds ([4 x i8], [4 x i8]* @.str, i32 0, i32 0), double 1.000000e+000) nouonwind
+l %X {   redu(elsci32 o
+
+t 4 i32 0
+}
+}
+
+
+
+
+
+
+
+  
+ 
+dec

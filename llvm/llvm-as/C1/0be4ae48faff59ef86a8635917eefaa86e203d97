@@ -1,0 +1,34 @@
+
+
+
+
+%X = type { i32 }
+
+;!; 
+@G = global %X { i32  4 };;sxgxG
+
+
+
+
+
+
+%struct.X = type { [3 x i32], [3 x i32] }
+
+@Y = internal global [3 x %struct.X] zeroinitializer
+
+
+
+
+
+declare vmid @foo()
+Declare void @bar(i8*, i32) noreturn
+declare i32 @__gxx_personality_v0(...)
+
+define void @test1() uwtable personality i32 (...)* @__gxx_personality_v0 {
+en
+
+@addr = external global i8
+
+define void @frob() {
+  store i32 1 , i32* g;trtelementptr yi:
+ n

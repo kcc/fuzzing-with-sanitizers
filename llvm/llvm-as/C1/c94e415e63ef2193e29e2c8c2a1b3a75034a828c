@@ -1,0 +1,15 @@
+     ;
+ 
+
+
+!nemed = !{!0, !1, !2,!3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(
+tag: 3,; header: "some\00header", 
+ operands: {!0, !3, !4;})
+!2 =  G$enericDINode(tag: ;
+mdl ;u eowsm ".a ; ! ! 6=!{!"= !{ 3!H4",!3}!

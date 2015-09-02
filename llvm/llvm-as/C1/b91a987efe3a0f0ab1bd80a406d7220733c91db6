@@ -1,0 +1,47 @@
+ !3=! {! 2,  i4  4  }    !fM
+
+
+
+
+
+
+
+
+
+
+
+define void @stabk_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d8},~{d9},~{d10},~{d13}"() #1
+  ret void
+}
+
+!llvm.dbg
+
+
+
+
+
+
+
+
+
+
+declare .cu = !{!0}
+!llvm.module.flags = !{x;CDM0xK84!8( !9}
+
+!0 = distinct !DICompileUnit(4td08   bfulanguage: DW_LANG_C99, producer: i32 @getint() 
+declar !3=4)
+e"

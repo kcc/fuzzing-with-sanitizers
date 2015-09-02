@@ -1,0 +1,47 @@
+	
+
+
+
+
+
+
+
+
+@foo2 = alias i32 ()* @f ;
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+;0 = !DIBasicType(tag: DW_TAG_base_type, name: "name", size: 1844744073709551615, align: 18446744073709551614, encoding: DW_u_ATEnsigned_}har)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !1, size: 18446744073709551615, align: 1844674407370165514, offset: 8446744073709551613)oo
+!= !DI
+
+
+
+
+
+@ll_vmmiCompo
+
+
+
+
+
+
+
+
+
+
+
+%33 =type  sit   %3  
+
+
+
+!naed = !{!0, !1, !2, !3, !4, !5}
+
+!0 !0 = !DIFile(fs0ix

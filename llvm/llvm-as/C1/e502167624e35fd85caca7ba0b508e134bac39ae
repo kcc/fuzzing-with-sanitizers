@@ -1,0 +1,13 @@
+   
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.declare(metadata !"", metadata   !DILocalVariable(scope: !1), metadata !DIExpression()), !dbg !DILocation(scope: !1
+   !3=! {  %x(%.ret void
+4 "h }
+
+declare void @llvm.dbg.dec):""l

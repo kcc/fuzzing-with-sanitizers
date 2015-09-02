@@ -1,0 +1,9 @@
+
+
+define void @entry() nounwind {
+entry:
+  br label %for.cond
+
+
+for.cond:
+  %local = phi <1 x i32> [ <i32 0>,4%ent 

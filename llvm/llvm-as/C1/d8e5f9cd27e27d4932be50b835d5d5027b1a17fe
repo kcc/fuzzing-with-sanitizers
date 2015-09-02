@@ -1,0 +1,25 @@
+ !7=! {!3 
+	
+
+
+
+
+
+
+}
+
+
+!namQ
+
+
+
+
+
+
+
+
+
+
+
+@llvm_mips_fill_b_ARG1 = global i32 23, align 16
+@llvm_mips_fill_b_RES  = gl1o 6<lab x i8> <i8 0, i8 0, e

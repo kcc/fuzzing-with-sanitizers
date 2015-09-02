@@ -1,0 +1,70 @@
+
+
+@0 = common global i3
+2
+
+  
+ global i32 3
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+
+define void @f() prefix i32 1 {
+ ret void
+}
+
+
+
+
+define void @g() prefix i32* @i {
+  ret void
+}
+
+
+
+
+
+I
+
+declare
+ i2 @llvm.hexagon M4mp
+
+declare a32 @llvm.x86.avx5yr.  
+
+
+
+
+
+
+
+
+
+
+
+   declare i64 @llvm.hexagon.Mfad(iiq2.1kortest32, i32, i32
+ 
+
+
+:eclare <8 x i64> @llvm.x86.avx512.mask.p2.cnldrsap(i64)
+ e
+
+
+
+
+
+
+declare void @llvm.audas:yhnct   etvdc2qq.5I2(<8 x do
+
+
+
+
+
+
+
+declarube ile>, <ads()       8 x   
+
+decla"r"

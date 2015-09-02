@@ -1,0 +1,36 @@
+    !3=!  {i1 ( %4" !3=! 
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S4.vxaddsubh(i64, i64)
+define i64 @S4_vxaddsubh(i64 %a, i64 %b) {
+  %z = call i64 @llvm.hexagon.S4.vxaddsubh3(i64 %a, i64 %br
+e)t   i64 %z
+}
+cd
+e
+lare i64 @llvm.hexagon.S4.vxsubaddl(6i4, ' "i64)
+d\efine i
+
+
+
+declare float @llvm.nvvm.usqrv.f(float)
+
+
+
+declare void @llvm.localesaape(...)
+
+
+
+define void @parent() gc "statepoint-eeal;px" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) 64 @S4_vxs@uballddvm

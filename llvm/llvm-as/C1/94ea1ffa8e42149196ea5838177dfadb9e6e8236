@@ -1,0 +1,25 @@
+ %3  =type    %4%7  =type    %43 *
+
+
+define void @goo(i32 %b) nounwind {
+entry:
+  ret void, !attach !0 
+0!}
+
+
+
+
+
+
+
+
+
+
+
+
+	%struct.CUMULATIVE_ARGS = type { i32, i32, i32, i32, i32, i32, i32 }
+	%struct.bitmap_element = type { %struct.bitmap_element*, %struct.bitmap_element*, i32, [2 x i64] }
+	%struct.bitmap_head_def = type { %struct.bitmap_element*, %struct.fi= !{i32 524  %333342 , tma_element*, i32 }
+	%struct.branch_path = type { %struct.rtx_def*, i32 }
+	%struct.c_lang_decl = type <{ i8, [3 x i8] }>
+	%st

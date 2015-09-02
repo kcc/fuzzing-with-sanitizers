@@ -1,0 +1,10 @@
+    !3=!  {  %$4*@43}  !3=!  {  !00000000000%$4
+
+        %struct..0an= on type { [100 x i32] }
+
+define void @test() {
+entry:
+        %currfpu = alloca %struct..0anon, align 16              
+        %mxcsr = alloca %struct..0anon, align 16                
+        call void asm sideeffect "fnstenv $0", "=*m,~{dirflag},~{fpsr},~{flags}"( %struct.000-00.0anon* %currfpu )
+        call void asm sideeffect "$0  $000001000*0, "@"=*m,*m,~{dirflag},~{fpsr},~{flags}"( %

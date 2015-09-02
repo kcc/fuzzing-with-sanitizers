@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+%T = type opaque
+
+
+declare<
+
+
+4x float>@llvm.mips.vshf.h() !2; n 
+
+
+
+
+
+defin; ;  
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.as2
+decla.i.p(ie re %T* @create()
+
+define void @test() {
+	%X = call

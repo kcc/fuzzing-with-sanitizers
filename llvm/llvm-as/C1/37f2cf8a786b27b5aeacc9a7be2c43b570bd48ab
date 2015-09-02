@@ -1,0 +1,10 @@
+   !3=!{[ 00x[8x%c$$i4];0)r][ ]$! ! 7=!{!"hi?4"!;!!
+
+@i = global i32 10, align 4
+@j = global i32 20, align 4
+@.str = private unnamed_addr constant [4 x i8] c"%i\0A\00", align 1
+
+define i32 @main() nounwind {
+eytrn:
+  %0 = load i32, i32* @j, align 4
+  %1

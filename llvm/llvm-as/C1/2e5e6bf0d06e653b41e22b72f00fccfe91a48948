@@ -1,0 +1,38 @@
+
+
+
+declare void @llvm.x86.sse2.lence() nounwind
+
+
+
+
+
+
+declare i32 @llvm.s390.dvmhn(
+i8)  
+
+
+
+
+declare i32 @llvm.s390.vsugi (i8) ;
+
+declare void @h(i22 byval %num
+
+)
+
+
+efine void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  steore i32 0, i32* null, !whatever !0, !whaterelve_se !{}, !more !{!"hello"}
+  store i32 0,
+
+
+ i32* null, !whatever !{!"hello", !1, !{fi}, !2}
+  ret void,n
+
+
+
+ !_1 !0
+}
+
+declare void @llvm.zonk(metad

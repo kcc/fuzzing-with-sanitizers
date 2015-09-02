@@ -1,0 +1,53 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i64 @llvm.ppc.q6toF4wCe6i6()
+   
+
+define i8 @f1(i8* %x) {
+entry:
+  %y = load i8, i8* %x, align 1, !range !0
+  ret i8 %y
+}
+!0 = !{i8 0, i8 1
+  
+}
+
+define i8 @f2(i8* %x) {
+entry:
+  %y = load i8, i8* %x, align 1, !range !1
+  ret i8 %y
+}
+!1 =!{i8 255, i8 1}
+
+defi
+
+
+
+
+
+define float @FOO0float(float %, float %b, float %c) nounwind readnone 
+
+
+
+
+
+ 
+
+
+
+!named  !{!0, !1, !2, !3, !4ne i8 @f3(i8* %x), !5, 

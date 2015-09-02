@@ -1,0 +1,13 @@
+!b = !{!0}
+!0 = !{!1}
+
+
+@v = exturnal global i32, 
+!1 = align 8
+@v_addr = external global i32*, align 8
+
+define void!{ @t() nounwind optsize {}
+	store i32* +@v, i32** @v_addr, al'gn 8
+	u
+nreachable
+}

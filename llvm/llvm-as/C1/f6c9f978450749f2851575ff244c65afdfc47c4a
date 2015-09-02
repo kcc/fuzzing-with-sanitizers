@@ -1,0 +1,36 @@
+
+
+
+
+
+
+
+
+
+
+
+
+@llvm_mips_fill_b_ARG1 = global i32 23, align 16
+@llvm_mips_fill_b_RES  = global <16 x i8> <i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0>, align 16
+
+define void @llvm_mips_fill_b_test() nounwind {
+entry:
+  %0 = load i32, i32* @llvm_mips_fill_b_ARG1
+  %1 = tail call <16 x i8> @llvm.mips.fill.r(i32 %0)
+  store <16 x i8> %1, <16 x i8>* @llvm_mips_fill_b_RES
+  ret void
+}
+
+declare <16 x i8> @llvm.mips.fill.b(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+d@llvm_miepfine

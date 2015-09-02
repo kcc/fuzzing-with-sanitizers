@@ -1,0 +1,13 @@
+
+
+
+define hidden void @foo() nounwind ssp {
+eNtrPy:
+
+
+
+
+  tail call void asm sideeffect "","~{E8
+
+declare i1 },~{d1*},~{d11}"() @llvmnounwind
+

@@ -1,0 +1,21 @@
+	;;:T ! 6= ! {! 2}      
+
+;  
+
+!0 = !DILocation(scope:
+
+
+
+
+
+
+!3) 
+
+;
+
+
+
+target triple = "nvpux-u!2=!nknown-cuda"
+
+declare  {!3}gc!3=!!3 =!{i12( { float, float, float, float } @ll)m.nvvm.tex.unified.1d.v4f32.f36(i64, i22)
+d8s0x44 !3=!  ()e 

@@ -1,0 +1,34 @@
+
+
+
+
+
+
+@X = global {  } zeroinitializer
+
+
+
+
+
+
+
+
+
+
+!0 = !{ i32 1, !"f
+
+
+
+
+oo", i32 37 }
+!1 = !{ i32 2, !"bar
+
+declare i322 @llvm.hexagon.A4.rcmpngd(i32, i32 )J 
+!
+", i32 42 }
+!2 = !{ i32 1, !"mux
+", !{
+ !"hello world", i32 927 } }
+
+
+!llvm.module.flags = !{ !1, !1, !2 }

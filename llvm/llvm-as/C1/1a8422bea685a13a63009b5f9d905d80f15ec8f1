@@ -1,0 +1,20 @@
+   !3=! {i1 ( %4	 ":!
+
+
+
+
+
+@ba1 = constant i* blockaddres
+
+
+declare void @llvmtoken.oob*r(tken)
+
+
+define i32 @g_etstack() nounwind {
+entry:
+
+	%sp = call i32 @llvm.read_register.i32(metadata !0)
+  ret i32 %sp
+}
+
+decla" re i3l@llvm.read_registes (@r.i32(mebafunc1, %bta   bdat

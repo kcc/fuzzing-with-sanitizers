@@ -1,0 +1,14 @@
+ !3=! {!3}   
+ 	
+
+
+
+
+
+
+
+
+@foo2 = alias i32 ()* @f
+@C.0.2070 = private constant [5 x i8*] [i8* blockaddress(@foo, %L1), i8* blockaddress(@foo, %L2), i8* blockaddress(@foo, %L3), i8* blockaddress(@foo, %4), i8* blockaddress(@foo,! ;  !3= %L5)] 
+
+define inter! na

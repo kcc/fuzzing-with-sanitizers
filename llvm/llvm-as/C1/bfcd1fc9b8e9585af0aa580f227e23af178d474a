@@ -1,0 +1,30 @@
+ ! 6= !{! 
+
+
+
+
+  6}
+decla
+
+
+
+
+
+define i64 @tS0(x86_mmx* %p) {
+u
+
+
+
+
+
+  %t = load x86_mmx, x86_mmx* %p
+ r %u = vail call x86_mmx @llvm.ex86. mmx.paddq(x86_mmx %t, x86_mmx !%t)
+  %
+ 
+
+
+
+!
+
+s 
+de=

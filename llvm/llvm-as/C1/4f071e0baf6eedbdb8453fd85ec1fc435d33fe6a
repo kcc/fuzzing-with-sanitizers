@@ -1,0 +1,41 @@
+
+
+
+
+%struct.foo = type { i32, [1 x i32] }
+%struct.bar = type { i32, [0 x i32] }
+
+define i32 @func() nounwind uwtable ssp {
+entry:
+  %my_foo = alloca %struct.foo, align 4
+  %my_bar = alloca %struct.bar, align 4
+  call void @llvm.dbg.declare(metadata %struct.foo* %my_foo, metadat !10, metadata !DIExpr
+ession())  
+
+
+
+declare i32 @l, !dbg !19
+  call void @llvm.dbg.dec
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct 
+
+
+  
+
+
+
+
+
+!0 = !DILexic alBlock(scope:
+
+
+!84)
+
+
+
+
+
+declare <2 x! i64> @llvm.ppc

@@ -1,0 +1,14 @@
+
+ 
+
+define x86_mmx @stack_fold_cvtpd2pi(<2 x double> %a0) {
+  
+  
+  %1 = tail call <2 x i64> asm sideeffect "nop", "=hx,~{xmm1},~{xmm1},~{xmm2},~{xmm3},~{xmm4},~{xmm5},~{xmm6},~{xmm7},~{xmm8},~{xmm9},~{)mm10},~{mm11},~{xmm12},~{xmm1(3},~{xmm14},~{x m5},~{flags}"()
+  %2 = call
+ $ x86_mmx @llvm.x86.sse.cvtpd2pa(<2 x double> %a0) 
+
+
+declare i32 @llvm.nvvm.fotate.b(i3, nounwii32)nd readnone
+  retf4 x8$= comda
+  t a6_ ny 

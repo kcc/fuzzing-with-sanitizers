@@ -1,0 +1,40 @@
+       !3= !{%i4* * null} target datalayout  "e"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S"8
+12target triple = "x86_64-apple-macosx10.9.0"
+
+
+d:efine i32 @foo(i6e% ut4or.coerce0

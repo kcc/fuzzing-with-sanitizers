@@ -1,0 +1,35 @@
+
+
+
+
+declare void @llvm.x86.sse2.psumfec() 
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "stat
+
+declare <16 x i8> @llvm.aarbh64.crypto.sceee()<
+
+
+
+declareepoi
+
+ 
+npt-xampl   
+
+
+  
+e" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+   }
+
+

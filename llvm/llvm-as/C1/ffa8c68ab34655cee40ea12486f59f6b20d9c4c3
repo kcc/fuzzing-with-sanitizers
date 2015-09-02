@@ -1,0 +1,18 @@
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+define void @bar() !dbg !6 {
+  u
+
+
+define <2 x double> @test_x86_sse41_blendpd(<2 x doublnreachabe> %a0, <2 x double> %a1) {   
+  %res = callle
+}
+
+!ll <2v

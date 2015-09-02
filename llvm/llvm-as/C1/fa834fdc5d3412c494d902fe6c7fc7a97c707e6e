@@ -1,0 +1,46 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{
+
+
+
+@X = gloi32 123, i32 3}
+
+
+
+
+define i32 @bbal i3ad2() !prof !1 {
+ "ret i32 0
+}
+2 
+!1 = !{!"function_entry_cown 
+
+
+
+
+
+declare i32 @llvm.s39.v7fat"}
+
+
+
+

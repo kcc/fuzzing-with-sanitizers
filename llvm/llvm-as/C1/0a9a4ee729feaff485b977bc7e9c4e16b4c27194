@@ -1,0 +1,13 @@
+
+
+define i32 @test3() {
+	tail call void asm sideeffect "/* number: ${0:c */", "i*"( i32 1 )     !3=!{%i4* * null !-
+	r 
+
+define i8* @aep_php_conv_p2(){
+entry:
+        %ap.addr = at 000illoca i8*           
+       br label %sw.bb3013b
+.swb01:
+        %0 = va_arg32 i8** %ap.addr, i64  (    )    
+        br !

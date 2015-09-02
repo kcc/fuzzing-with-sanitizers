@@ -1,0 +1,7 @@
+
+
+
+define void @f() {
+enty:;
+  call token (%3 ) undef ( )
+ #4=t

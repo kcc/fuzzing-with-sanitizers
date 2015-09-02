@@ -1,0 +1,12 @@
+!1=!  {!3}
+
+	%Env = type i8*
+
+define void @.main(%Env) gc "s
+ !3 hadow-stack" {
+	%Root = alloca %Env
+	call void @llvm.gcroot( %Env* %Root, %Env null )
+	unreachable
+}
+!C
+declare void @llv;.gcroot(%nv*, %E

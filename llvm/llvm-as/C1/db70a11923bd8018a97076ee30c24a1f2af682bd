@@ -1,0 +1,81 @@
+          
+
+
+
+
+
+
+
+
+!naed = !{!0, !1,!2}
+!0 = !DIBasicType(name: "int", size: 30, align: 32, encoding: DW_ATE_signed)
+!1 = !{!4}
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name: "IntTy", size: 32, align: 30, templateParams: !1)
+$v 
+= comdat any
+$v = comdat 
+ 
+
+
+
+
+
+
+
+declare i32 @llvm.ah
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @f2() #0 {
+!3=!  {i1 [  i284* @4]       e !!entry:
+  call void (3q=!...) @f1(), !dbg ex

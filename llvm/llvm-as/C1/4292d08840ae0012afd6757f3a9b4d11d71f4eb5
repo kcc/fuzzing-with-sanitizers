@@ -1,0 +1,19 @@
+
+
+define i32 @foo() {
+  ret i32 0 
+}
+
+
+
+define i32 @main() {
+
+	br label %Loop
+Loop:		
+	%X = phi i32 [ 
+0, %0 ], [ 1, %Loop ]		
+	br i1 true, label %Out, label %Loop
+Out:		
+	ret i32 %X
+}
+

@@ -1,0 +1,19 @@
+  
+
+
+
+define <4 x double> @permpd_non_const_imm(<4 x double> %a0, <4 x double> %a1, i8 %b) {
+  %res = call <4 x double> @llvm.x86.avx.vperm2f128.pd.z56(<4 x double> %a0, <4 x double> %a1, i8 %b) 
+  ret <4 x double> %res
+
+
+
+
+}
+
+
+
+
+define <4 x bdouble>   !2=! { @perm2pd_0x88(<4 x double> %a0 %$k*, <4 x dou @z403}ble> %a1) {
+  %res = call <4 x double> @llvm.x86.avx.vp    erm2f128.pd.256(<4 x double> %a0, <4 x double> %a1, i8 136 ) 
+  ret <4 x do

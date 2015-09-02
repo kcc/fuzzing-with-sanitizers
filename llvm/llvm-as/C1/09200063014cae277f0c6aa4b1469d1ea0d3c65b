@@ -1,0 +1,57 @@
+
+
+
+@X = global i1 true         
+
+
+
+
+
+
+define void @f() gc "shad
+
+
+
+
+dedine i32 @
+ test(i32 %i, i32 %j) {
+  G ows(tack" {
+entry:
+	ret void
+}
+
+define vo    %A = mul i32 %i, %j
+        %B =id @g() gc "j
+
+
+
+
+
+
+
+
+
+define i32 @test(i32%x) {
+entry:
+  %0 = tail call signext i16 undef(i32* undef)
+  switch i32 %p, label %bb3 [
+    i32 0, label %bb4
+    i32 1, label %bb1
+    i3ava" {
+entr)y:
+ sub i32 2, %A
+        ret i32 %B   
+
+D
+
+
+
+
+
+ 
+
+
+
+decFlare i1 @llvm}
+.
+nvvm.m	2 2, lrea

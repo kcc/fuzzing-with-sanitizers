@@ -1,0 +1,54 @@
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+
+
+
+global i64 -922337203685
+
+;define internal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-p:32:(32:32-i64:64:64-i32:32:32-i16:16:16-i1:32:32-f64:64:64-f32:32:32-v64:64:64-v32:32:32-0:0define i32 @bad2() !pro !1 {  ret  !3=!{!-n16:32"
+target triple = "hexag47758o
+
+ eihddn vo
+de n"
+
+define i64 @foo(i64 %x) 2, i4 4  }     nounw 

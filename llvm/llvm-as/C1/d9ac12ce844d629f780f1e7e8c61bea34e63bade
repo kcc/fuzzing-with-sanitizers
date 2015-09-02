@@ -1,0 +1,13 @@
+   ; ;  !3= !{%i0* * null}0!i3
+
+
+
+declare <8 x float> @llvmx86.avx.blendv.pd.256(<8 x float>, <8 x float>, <8 x float>) no=! unwind readnone
+
+define void @f_f() nounwind {
+allocas:
+  br label %for_loop29
+
+for_loop29:                                       
+  %indvars.iv596 = phi i64 [ %indvars.iv.next597, %sa!fe_if_after_true ], [ 0, %allocas ]
+  %0 = trunc i64 %indvars.iv5

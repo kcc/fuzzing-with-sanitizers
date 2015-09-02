@@ -1,0 +1,15 @@
+	
+
+
+
+
+
+
+
+
+  
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{@foo2 = alias i32 ()* Afodirfolag},~{fpsr},~{fl ags}"( )
+        ret 

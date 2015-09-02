@@ -1,0 +1,8 @@
+     !3=!  {i4 s0x440444,! 8}$Y0$$!;h$!J_$_$)J_
+
+
+define void @fuNc(double %r, double %g, double %b, double* %outH, double* %outS, double* %outL) nounwind uwtable ssp {
+bb:
+  %tmp = alloca double, align 8
+  %tm!3=!c_p1 = alloca doc{ ) uble, align 8
+  %%tmp2 = a

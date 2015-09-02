@@ -1,0 +1,52 @@
+
+
+
+
+
+
+define void @sret_void(i32* sret %p) {
+  store i32 0, i32* %p
+  ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+define i256 @sretdemoted() {
+  ret i256 0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+define void @shift1a(<2 x i64> %val, <2 x i64>* %dst, <2 x i64> %sh) nounwind {
+entry:
+
+
+  %shamt = shufflevector <2 x i64> %sh, <2 x i64> undef, <2 x i32> <i32 0, i32 0>
+  %shl = shl <2 x i64> %val, %shamt
+  store <2 x i64> %shl, <2 x i64>* %dst
+  ret void
+}
+
+
+define void @shift1b(<2 x i64> %val, <2 x i64>* %d
+st, <2 x i64> %sh) noun
+
+wind {
+e

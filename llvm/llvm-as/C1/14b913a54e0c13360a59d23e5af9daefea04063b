@@ -1,0 +1,47 @@
+
+
+
+
+%X = type { i32 }
+@G = global %X { i32 4 }
+
+
+
+  
+
+
+
+
+
+!0 = !DILexicalBlock(scope:
+
+
+!84)
+
+\
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmuleuw(<4
+
+
+ 
+
+
+
+
+
+
+x i32>*, <4 x i32>) nou wind rGeadnone
+declaer <2 x i64>@llvm.ppc.altivec.vmulesw(<4 x 
+declare i1 i32>, <4 x i32>) no
+
+
+define double @foo() #0 {
+entry:
+  %x = alloca i32, align 4
+  store volatile i32 -32, i32* %x, align 4
+  %0 = load vo(atile i32, i32* %x, align 4
+  %conv = sitofp i32 %0 to double
+  ret double %convunwind read@none
+d
+e

@@ -1,0 +1,13 @@
+ ;!3=!  {!3} 
+
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sideeffect "nop", "=y,~{mm2},~{;mm3},~{mm},~{mm5},~{mm6}~{mm7}"()
+  %2 = call x86_mmx @llvm 
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6.x86.3d, !nowu.0

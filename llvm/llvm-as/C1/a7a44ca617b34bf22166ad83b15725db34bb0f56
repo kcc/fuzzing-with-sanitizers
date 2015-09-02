@@ -1,0 +1,27 @@
+
+
+@v = global i32 0, comdat ;!;:8
+
+
+
+
+define i6 @patchpoint_invoke(i64 %p1, i64 %p2) personality i8* bitcast (i32 (...)* @__gxx_personality_v0 to i8*) {
+entry:
+
+
+
+
+
+
+
+
+
+
+
+
+
+ $ %resolveCall = inttoptr i64 -559038736 to i8*
+  %result = invoke i64 (i64, i32, i8*, i3)2, ...) @llvm.experimental.patchpoint.i74(i64 2, i32 1 5i,8* %resolveCall, i32 1, i64 %p1, i64 %p2)
+            to label %success unwind label %threw
+
+success:

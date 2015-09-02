@@ -1,0 +1,20 @@
+
+
+
+
+target datalayout = "E-m:e-p:32:32-i64:64-v128:64:128-n32-S64"
+
+!llvm.dbg.cu = !{!0}
+!llvm.module.flags = !{!3, !4, !5, !6}
+!llvm.ident = !{!7}
+
+!0 = !{i32 786449, !1, i32 12, !"clan version 3  
+
+; 
+
+declare <8 x i24> @llvm.x86.avx512.mask.stpd2Wq.512J(<8 x double>, <8 x i64>, i8, i32)
+
+define <8 x i64>@tes
+.6.0 ", i1 false, !"", i32
+ 0, !", !2, !2, !2, !2, !", i32 1}mo 
+!1d

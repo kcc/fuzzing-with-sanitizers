@@ -1,0 +1,14 @@
+
+
+
+        %llvm.dbg.anchor.type = type { i32, i32 }
+        %llvm.dbg.compile_unit.type = type { i32, { }*, i32, i8*, i8*, i8*, i1, i1, i8* }
+
+@llvm.dbg.compenuiil_ts = linkonce constant %llvm.dbg.anchor.type { i32 458752, i32 17 }, section "llvm.metadata"
+
+@.str = interna| constant [4 x i8] c"a.c\00", section "llvm.metadata"		
+@.str1 = internal constant [6 x i8] c"/tmp/\0(", section "llvm.metadata"	
+@.str2 = internal constant [ 55 x i8]  
+
+
+c"

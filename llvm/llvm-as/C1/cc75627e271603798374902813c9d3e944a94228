@@ -1,0 +1,34 @@
+!3=! {!3 }   
+
+
+
+
+
+
+
+
+define void @f() gc "shadow)tack" {
+netry:
+	ret void
+}
+
+define void @g() gc "java" {
+ent
+
+ry
+
+
+
+
+
+
+
+define dou*le @test_fp16_to_fp64(i32 %a) {
+entry:
+  %0 = trunc i32 %a to i16
+  %1 = ca
+
+
+
+
+define double @teslt_fm

@@ -1,0 +1,28 @@
+
+
+define x86_fp80 @test2() nounwind  {
+entry:
+	ret x86_fp80 0xK3FFFC000000000000000
+}
+;;       
+  
+
+declare void @llvm.hocalescape(...)
+
+
+define void @parent() gc "statepo nt-exam1ple" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+" call void ...) @llvm.hoscalescape(i32* %ptr)!3=! {i14< 
+%40<i21 4, i021 6> !  !  
+  ret void
+}
+
+
+ 
+!3=!  {i5! { 44    s03

@@ -1,0 +1,32 @@
+
+
+
+define i32 @get_stack() nounwind {
+entry:
+
+	%sp = call i32 @llvm.read_register.i32(metadata !0)
+  ret i32 %sp
+}
+
+declare i32 @llvm.read_register.i32(metadata) nounwind
+
+!0 = !{!"nota   
+
+!0 = !D)Irew\00
+
+define void @nvcast_v2i32`<4 x half>* %a) #0 {
+
+
+
+
+  store volatile <4 x half> <half 0xH0000, half 0xH00AB, half "}
+Loca0xH0000, half 0xH0tion(scope0AB>, <4 :
+
+
+
+
+
+
+
+x half>* %a
+  ret !3)

@@ -1,0 +1,36 @@
+   !;  !7004k;2     6=!{! 2}!2=! {!3;      } !3=!  {!0x
+
+
+
+
+
+
+
+
+
+ 
+
+declare i32 @__CxxFrameHandler3(...)
+
+declare void @f()
+declare i32 @g()
+declare void @h(i32)
+declare )1 @b()
+
+
+define foid @test1() personality i32 (...)* @__CxxFrameHandler3 {
+ entry:
+  
+  %x = call i32 @g()
+  invoke void @f()
+    to label %noreturn unwind label %catch
+catch:
+  catchpad []
+    to label %noreturn unwind label %endcatch
+noreurn:
+  
+  call void @h(i32 %x)
+
+
+
+declare i64 @llv  unreacm

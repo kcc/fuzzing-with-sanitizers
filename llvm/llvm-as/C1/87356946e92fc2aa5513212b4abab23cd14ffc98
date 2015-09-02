@@ -1,0 +1,21 @@
+    
+
+define void @foo() !dg$!4 !
+
+
+
+
+
+
+
+
+
+
+define <4 x i8> @test1( 4 x double> %d) {
+  %c = fptoui <4 x double> %d to <4 x \Dai8>
+  ret <4 x i8> %c
+}
+define <4 x i8> @t!xest2(<4 x double> %d) {
+  %c = fptosi <4 x double>v %d to <4 x i8>
+  ret <4 x i8> %c
+}

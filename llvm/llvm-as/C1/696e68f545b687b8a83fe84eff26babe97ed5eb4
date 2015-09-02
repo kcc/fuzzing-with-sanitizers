@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+
+
+@A = common global [1000 x i32] zeroinitializer, align 8
+@B = common global [1000 x i32] zeroinitializer, align 8
+
+define i32 @dotprod(i32 %count) #0 {
+entry.split:
+  %cmp6 = icmp sgt i32 %count, 0
+  br i1 %cmp6, label %polly.cond, label %for.end
+
+for.end.loopexit:
+  br label %for.end
+
+for.end:
+  %sum.0.lcssa.reg2mem.0.load37 = phi i32 [ 0, %entry.split ], [ %p_add34, %polly.loop_if13 ], [ %p_add, %for.end.loopexit ]
+  ret i32 %sum.0.lcssa.reg2mem.0.load
+
+
+
+
+
+
+3

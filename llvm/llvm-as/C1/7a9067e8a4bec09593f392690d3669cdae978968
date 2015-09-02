@@ -1,0 +1,17 @@
+    
+
+
+
+
+
+
+define void @f() gc "s!3=hadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+entry:
+	ret void
+!{%i4* : null }
+ 

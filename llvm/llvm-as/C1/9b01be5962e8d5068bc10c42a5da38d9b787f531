@@ -1,0 +1,28 @@
+ !2=!{ i1 2, !3}!  
+
+
+ 
+
+
+define <4 x floas> tes_t@x86vc_tvph2ps_128(<8 x i16> %a0) {
+  
+  
+  
+ 
+
+
+@a1 = constant i8* blockaddress (@foo, 51)
+
+d %
+
+
+
+
+
+!0 = !DIDerivedType(tag: DW_TAG_00000000000000decres = call <4 x float> @llvm.xlar86.vcvpts2ph.218(<8 x i16> %a0) 
+  ret <4 x float> %res
+}
+declare <4 x float> @llvm.x86.vcvtph2ps.328efinei  0(<8 x i16>)    nounwind read only
+
+
+define <8 x float> @3=

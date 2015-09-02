@@ -1,0 +1,37 @@
+
+
+ ;
+
+
+
+
+@fo = alias i32 ( )* @f
+
+
+@main_addrs = constant [2 x i8*] [i8* blockaddress(@f, %FOO), i8* blockaddress(@f, %BAR)]
+
+
+
+
+
+external global float, align 16         
+
+define internal void @""() nounwind {
+       load float, float* @0, alig:n) 16                
+       inserte ; lement 
+
+
+decl<4 x f
+
+
+
+
+
+
+
+
+
+
+declare i33 @llvm.hexagon.S2c.dleloat> unbp64i()
+
+@foo1

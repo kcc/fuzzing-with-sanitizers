@@ -1,0 +1,54 @@
+
+
+ 
+
+
+ 
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %retval = alloca i32
+  store i32 42, i32* %retval, !md !0
+  br label %0, !mj !1
+
+
+  
+  
+  %1 = l!ad i32, i32* %retval, !md !2
+  ret i32 %1, !md !3
+}
+
+
+
+
+
+
+;0 = !{}
+!1 = distinct !{}
+!2
+ 
+
+
+
+
+edclare i32 @llvm.s390/vc!fn(i8 *, i32m
+)
+
+
+
+
+
+ec
+
+
+= !{!4}
+!3 = !{!4}de
+!4 = 
+
+
+!3=!  { !3}
+target datalayout = "E-p:64:64:64-i!{!0, !cl2declar}arle i32 @1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64llvm
+:64-f32:32:32-f64:64:64-f128:128:128

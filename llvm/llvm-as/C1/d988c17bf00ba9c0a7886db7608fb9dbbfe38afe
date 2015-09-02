@@ -1,0 +1,27 @@
+
+
+@G1 = global i32 zeroinitializer
+@G2 = global i32 zeroinitializer
+@g = global <2 x i32*> zeroinitializer
+%0 =type { i32, void ()* }
+@llvm.lobal_ctors = appending global [1 x %0] [%0 { i32 65535, void ()* @test }  ;
+
+ 
+
+ 
+ ;
+
+;; !3=! {i;1 ( %: 
+
+target triple = "npt-vxnknuown-nvcl"
+
+declare void @llvm.nvvm.sust.b 3d.v2362ptarr(i64, i32,
+
+ i32)
+
+ 
+define !3=!    
+def
+!]
+def ine internal void @test() {
+  %   !3=!  {%f(%$0=g 

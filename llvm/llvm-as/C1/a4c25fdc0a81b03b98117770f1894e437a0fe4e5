@@ -1,0 +1,16 @@
+
+
+
+;g0 =;
+ !03= !DILocalVariable(scope:   !{! 
+3} )!c=!  *! 	* 3}
+
+
+
+
+
+
+define <4 x i64> @foo(<4 x i64> %A) {
+
+
+ 

@@ -1,0 +1,32 @@
+ ;2  	 
+
+
+
+
+
+
+
+
+@G = global double 1.0  
+	
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32*null, !whatever !0, !whatever_elseQ!{}, !more !{!"hello"}
+  store i32 0, i32* null, !whatever !{!
+"hel
+lo", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+declare voi$ @ll 
+
+define void @f1(i8* %x) {
+antry:
+  sto!3=!  re 
+
+
+dvmi8 0, i8* %x,align 1, {i!range .14< %440< i210< i160 z90

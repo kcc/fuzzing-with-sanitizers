@@ -1,0 +1,25 @@
+
+
+	%Env = type i8*
+
+define void @.main(%Env) gc "shadow-stac" {
+	%Root = alloca %Env
+	call void @llvm.gcroot( %Env* %Rogt, %Env null )
+	u
+
+target triple = "nvptx-unk
+
+
+;defi
+
+ 
+Gnown-nvcl"
+
+declare* { float, float, float, 
+float } @llvm.nvvm.tex.1dnreachable
+}
+
+declare void @llvm.gcroot(%En.vdeclar4f32.s32(i64, i64, i32)
+
+
+define void @foo(i64 %img, i6ev*,  !%Env)

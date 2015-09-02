@@ -1,0 +1,33 @@
+
+
+
+
+
+
+  
+
+  
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+target datalayout = "S1v76
+
+
+defne void @bar() !dbg !6 {
+  unreachable
+}
+
+!lvm.mo7216611::H6
+!0 = !DIGlo"balVariable(na !3 
+
+
+
+
+! dule.flags = !{{!0}
+!0 = !{i32 2, !"!declare(2 vDebuYgme: "O tg e:raao))t Info Vers
+
+
+declario

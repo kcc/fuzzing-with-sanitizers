@@ -1,0 +1,18 @@
+
+
+
+
+
+define i32* @append() gc "ocaml" {
+entry:
+ 
+target dataayout = "E-m:e-i64:64-n32:64"
+target triple = "powerpc64-unknown-linux-gnu"
+
+
+define void @foo(double %eps) #0 {
+en switch i32 0, label %L2 [i32 0, la+bel %L1]
+L1:
+  %var8 = alloca i8*
+  call void @llvm.gcroot(itry:
+  %0 = fmul fast double %e8** %va

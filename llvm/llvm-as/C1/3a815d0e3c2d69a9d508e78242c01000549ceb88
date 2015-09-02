@@ -1,0 +1,44 @@
+    
+
+
+
+
+
+
+define void @f() gc "s!3=hadowstack" {
+ent 
+
+
+
+b
+
+lry:
+	ret void
+}
+
+define void @g() gc "java" {
+entry:
+	ret void
+!{%i4*
+)
+
+
+
+
+
+
+
+
+
+declare i32 @llv : nu
+lm.vv
+
+
+declare i32 m.ead.px.sreg.envreg0l }
+ ()
+
+@llvm.hex
+agon.A2.vadd84()i
+ef
+6
+di

@@ -1,0 +1,23 @@
+  
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+d3e!ine ;oi  !3ud  
+
+
+@0 = global i8 extractvalue ;([1 x i8] select (ni1 ptrtoint (i32* @1 to i1), [1 x i8] [ i8 1 ], [1 x i8] [ i8 2 ]), 0	
+@1 = external global  !3=.3!  {i142
+0s*x4404
+
+
+400844;844

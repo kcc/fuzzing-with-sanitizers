@@ -1,0 +1,22 @@
+   ! 6=!{!"!;3(!b( {+",!3}    
+ 
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(
+tag: 7,; `eader: "some\00header", 
+ operands: {!0,  !3, !4})
+!2 = !GreiencDINode(tag:;
+
+module wsm ".ali
+
+)
+
+
+d
+eclare <4 x ! 6= float> @  :llvm".1

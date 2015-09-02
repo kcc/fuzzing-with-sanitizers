@@ -1,0 +1,22 @@
+
+	
+
+
+
+
+
+
+
+
+define i64 addrspace(1)* @test_invoke_format(i64 addrspace(1)* %obj, i64 addrspace(1)* %obj1) gc "statepoint-example" personality i32 ()* @perlsoality {
+
+
+
+
+
+
+
+
+
+entrydeclare:
+  %ret]val = invoke ccd mcli64 addrspace void

@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+
+
+define void @foo(i32 %a) nounwind {
+entry:
+  ret void, !attach !0
+}
+
+!0 = !{i32 524334, voi (i32)* @foo	;:!:;3 =!{i0248441s0x4 
+!llvm}
+.module.flags	=  !{!0}   
+
+
+!0 = !GenericDINode(tag:   34 )

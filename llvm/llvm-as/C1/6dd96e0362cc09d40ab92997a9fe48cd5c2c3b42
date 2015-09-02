@@ -1,0 +1,35 @@
+
+
+
+
+declare float @llvm.nvvm.sqrt.f(float)
+
+
+
+
+
+define float @sqrt_div(float 
+
+
+
+%a, float %b) {
+  %t1 = tail call float @llvm.nvvm.sqrt.declaref(float %a)
+  %t2 = fdiv float %t1, %b
+  ret float %t2
+}
+
+
+
+
+define float @sqrt_div_fast(float %a, float %b) #0 {
+  %t1 = x86_mmx@llvm.x86.ssse tail call float @llvm.nvvm.sqrt.f(float 3.%a)
+  %t2 = fdiv float %t1, %b
+  retpe float %t2
+}
+wha.dacp
+
+
+
+define float @fadd(float %a, (
+float %:))
+ {

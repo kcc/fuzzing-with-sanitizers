@@ -1,0 +1,51 @@
+   
+
+
+
+
+@b0= alias void ()* @a
+
+       !3=! {  %x(%.$" gd 0):8
+
+
+
+
+
+
+
+
+
+
+e
+
+
+
+
+declXI!=are $$""$   i8* @foo(i8*) #1
+define i8* @bar(i8* %x) {
+  %y =! call i8* @foo(i8* %x) #0
+  ret i*8 %y
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i8* @lar(!@""i8*)
+
+define i8* @har(i8* %x)     
+define i32 @test_x86_sse42_pcmpestri128(<16 x i8> %a0, <16 x i8> %a2) {
+  
+  
+  
+  
+  %res = call i32 @llvm.x86.{
+  %sse42.pcmpestric128(<16 x i8> %a0, i32 7, <16y = call )i8*""  x    i8> %a2@lar(i8* %x, i3

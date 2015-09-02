@@ -1,0 +1,41 @@
+
+
+
+
+declare void @llvm.arm.hjt(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret coid
+}
+
+define void @g() gc"java" {
+( 
+
+
+
+declare <2 x i64> @llvm.ppcentry:
+	ret v.altivec.ldr(<2 x i64>, <2 x i64>) Younvind
+
+
+ 
+
+
+
+
+
+
+declare i32 @llvm.x86 readnona
+decdareoid <2 x i6
+}4
+> @.sse4a.!  3=lvm.ppc!mGc

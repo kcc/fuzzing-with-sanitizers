@@ -1,0 +1,18 @@
+  
+
+
+!0 = !DIGlobalVariable(name: "
+
+  !0; 
+ = !")
+ 
+
+target triple = "nvpt|-unknown-nvcl"
+
+declare { float, float, float, float } !3=!@llvm.nvvm.  {!3 }tex.2d.v4u3.22s3(i6*, i64, i32)
+
+d
+   !3=!efine 
+
+
+ 

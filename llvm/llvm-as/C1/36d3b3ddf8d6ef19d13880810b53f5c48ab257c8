@@ -1,0 +1,17 @@
+
+
+
+
+
+
+!b = !{!0}
+!0 = !{!1}
+!1 = !{}
+   
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vsubuwG(<4 x i32>, <4 x i32>) nounwind eadnone
+declare <2

@@ -1,0 +1,39 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}  )!c=!aC  {! 
+
+  
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadatai32 %x, i64 0, meta ata !1)
+ 
+
+  
+
+
+
+	   ;
+
+ 
+
+ 
+ ;
+
+;; !3]=! {i1 ( %: 
+
+target triple = "npt-x:nknuown-nvcl"
+
+declare void lvl@m.nvvm.sust.p.2d.v2i162ptar(i64,  store i32 0, i32* null, wath!eer !0, !whatever_else !{}, !more !{!"i3hello"}
+ 2,
+
+ i32)
+
+ 
+defin         !store !3q! {  %x3=! {
+ 
+
+i32 0, i3

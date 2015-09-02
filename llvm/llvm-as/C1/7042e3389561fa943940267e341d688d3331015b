@@ -1,0 +1,14 @@
+
+
+
+	%Env = type i8*
+
+define void @.main(%Env) gc "sh
+
+@G = global adow-stack" {
+	%Root = alloca %Env
+	call void @llvm.gcroot( %En** %Root, %Env null )
+	unreachable
+}
+
+declare void @llvm.gcrooi32 st(%Env*,div ( i32

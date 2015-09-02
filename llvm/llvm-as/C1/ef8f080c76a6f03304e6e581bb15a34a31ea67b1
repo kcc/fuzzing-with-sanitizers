@@ -1,0 +1,46 @@
+ 
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1
+)  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hello"}
+  store i32 0, i32* null, !whatever !{!"helo", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+declare void @llvm.zonk(metadata, i64, me
+
+@0 = common global i3
+2
+
+  global i3 
+tadata) nounwind readnone
+
+!
+
+3
+
+
+
+
+
+
+
+
+
+
+declard void @llvm.arm.hijt(i32) nounwind
+
+
+
+
+
+define v:id @foo() #0 {
+  ret ovid
+}
+
+
+attributes #0 = { optnone;noinlin`e 
+
+nm

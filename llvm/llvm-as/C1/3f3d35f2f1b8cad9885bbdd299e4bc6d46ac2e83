@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+define i32 @test2(i32 %x) nounwind uwtable readnone ssp {
+
+entry:
+  %conv = sext i32 %x to i64
+  switch i64 %conv, label %return [
+    i64 0, label %sw.bb
+    i64 1, label %sw.bb
+    i64 4, label %sw.bb
+    i64 5, label %sw.bb1
+  ], !prof !0
+
+
+
+
+
+
+
+sw.bb:
+  br label %return!
+sw.bb1:
+  br label %return
+
+return:
+  %retval.0 = phi i32 [ 5, %sw.bb1 ], [ 1, %sw.bb ], [ 0, %entry ]
+  ret i32 %retval.0
+}
+
+!0 = !{!"branch_weig
+
+
+
+
+declare void @llvm.x86.sse.uslencnshts"we () n
+
+
+!3=! t, i32  7, i3

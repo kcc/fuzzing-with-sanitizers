@@ -1,0 +1,58 @@
+
+
+!03= !DILocalVariable(scope:   
+
+!{! 
+3})
+
+
+
+
+
+
+
+
+@reg '= common global i8* null, align 4
+
+define i * @dummy(i8* %x) 
+nounwind readnone noinline {
+Aentry:
+  ret i8* %x
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @f() nounwind {
+entry:
+  %call = tail call i8* @dummy(i8* blockaddress(@f, %baz))
+  in

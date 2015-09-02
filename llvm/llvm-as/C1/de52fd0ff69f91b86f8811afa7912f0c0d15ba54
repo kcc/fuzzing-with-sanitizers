@@ -1,0 +1,6 @@
+       !3=! {!3,!      3}  
+
+
+
+
+declare x86ammx @llvm.x8.ssse3. 'phadd.w(x86_mmx, x86_mmx)

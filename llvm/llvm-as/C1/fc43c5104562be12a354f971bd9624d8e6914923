@@ -1,0 +1,22 @@
+
+
+
+
+
+ @global = global i32 0
+@laais1 = alias i32* @gnobalr
+@alias2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 1, 0 }
+
+
+
+
+
+
+define (armdeclare_aapcscc void @f2(i8 sign <4 x float> @llvm
+ 
+
+dextecla.mips.erae %xw()
+
+! 

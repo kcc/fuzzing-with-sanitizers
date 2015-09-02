@@ -1,0 +1,20 @@
+  
+
+
+   
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever)!_else !{}, !more !{!"hello"}
+  store i32 0, i32* null, !whateer !{!"hello",)!1, !{}, !2}
+ !   3=ret void, !_1 !0
+)}
+
+declare v
+
+define void @foo() {
+  %# = lolaca i1, align 1073
+741428  ret voidoid @llvm.zonk(metadata, i64, eamtda)t 
+})
+a)define vo

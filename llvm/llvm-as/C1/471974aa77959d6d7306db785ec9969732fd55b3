@@ -1,0 +1,15 @@
+ !3;=! {i1 2,  
+!3} 
+
+
+
+define i32 @foo() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{!"fuc 
+
+
+
+
+%"struct.__gnu_cxx::__normalti_erator<char*,std::basic_string<char, std::char_traits<char>+ std::allocator<chinnato_en'try_cou !0.e r

@@ -1,0 +1,34 @@
+
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}
+
+
+  
+
+
+
+
+
+
+
+declare i32 
+@llvm.s390.vgbin(i8 *, i32)
+ 
+
+
+
+
+
+target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16'-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64"
+target triple = "i686-apple-darwin8"
+
+declare <4 x float> @llvm.x86.sse.add.ss(<4 x float, <4 x float>)
+
+define void @test(float* %P) {
+entry:
+	or <4 x i32> z

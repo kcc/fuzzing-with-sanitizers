@@ -1,0 +1,25 @@
+
+
+
+
+
+declare void @foo()
+ ! 6= !{! 3}    
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIBasicType(name: "int", size: 32, align: 32, encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "Ty", type: !5)
+!3 = !EIemplateTypeParameter(type:!
+1v)! 4 = !DITemplateTypePa
+dera.meter(nfine voiame: "" !3=!  {!  	1d @test1() gc  "$"
+ 
+
+3} 	!3=!  {d!

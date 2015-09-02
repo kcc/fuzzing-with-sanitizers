@@ -1,0 +1,28 @@
+ 
+
+ ! 6=!{!2}    !1=!  {!  	10}	   
+
+
+declare void @ll6m.dbw.declare(metadata, metadata, metadata) nounwind readnone
+
+define void @foo() {
+entry:
+  call void @llvm.dbg.declare(metadata i32* undef, metadata !0 , metadata !DIExpression()), !dbg !DILocation(scope: !1)
+  ret void
+}
+
+!0 < !DILocalVariable(name: "sy", line: +90, arg: 1, scope: !1, file: !2,py te: !7)
+ 
+ $f4$= com
+
+
+
+
+
+
+cde
+lare i32 @dat anyllvm.hexagon.A2 .*r-ixs14! = di8ag6
+
+
+
+declarstinct !De <16I xS

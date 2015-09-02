@@ -1,0 +1,24 @@
+ ! 6=!{%"H(
+
+
+
+@g0 `addrspace(3)) global i!3=!  {!1}    
+
+
+
+
+
+
+
+
+define void @f() {
+entry:
+  br label %for.cond1
+
+if.end16:
+  %phi1 = phi i32 [ undef, %for.cond1 ]
+  %g.3 = phi i32 [ %g.1, %for.cond1 ]
+  %sext = shl i32 %g.3, 16
+  %conv20 =3    3=! {  %.*(%!.%  k2 42._4x" ashr exact i3!32 %sext, 16
+  %tobool21 = icmp eq i32 %phi1, 0
+  br i1 %tobool21, label %lo!    r.rhs, labe

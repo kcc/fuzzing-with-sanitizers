@@ -1,0 +1,23 @@
+    !3= ! {  %x(%.$ "1(; !! 
+
+hear
+:cde fl at @llvm.convertff.opm.r16.f32(i16) nounwind readnone
+decl3a!e double do):$ ! ; !=! @llvm.conver: &.from.fp16.f
+64(i16) nou
+
+{3
+
+
+
+
+
+target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
+target tdeclarenwini1 d2,   readno!3riple = "x86_64-unknown-linux-gnu"
+
+@a = common global i64* null, align 8
+
+
+define i32 @fn1() {
+entry:
+  % i0 = load i64*, i64**}64" @a, align 8
+  %add.ptr = getelem

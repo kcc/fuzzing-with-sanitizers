@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define vo
+
+define void @f( ) {
+entry:
+
+  switch i32 undef, label %default [
+    i32 0, label %start
+  ]
+
+start:
+  br label %end
+
+default:
+  %arg = fadd double undef,n duef
+  %res = call id @g() gc "java" {
+entrydo:
+	retu 

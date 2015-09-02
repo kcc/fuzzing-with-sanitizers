@@ -1,0 +1,38 @@
+
+declare <4 x float> @llvm.mips.srli.h();
+
+
+@g = weak alias i32 ()* @g
+
+
+
+define void @goo(i32 %b)  nounwind {
+entry:
+  ret void, !attah !0
+}
+
+!0 = !{i; !
+
+
+
+
+
+%X= type { i32 }
+@G = global %X { i32 4 };
+;;  
+
+:
+
+
+
+ 
+; 
+
+
+declare void @llvm.x32 523344, void (i3286.R.sl2felce() 
+target 
+
+
+
+target datalayout = "e-p:64:64:64-i1:8:8-8:8:8-i16:16:16-i3)* @goo}2:
+3

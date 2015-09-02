@@ -1,0 +1,7 @@
+;;   	!3= !{ {%.}  $$    !2=!  I{
+
+
+
+declare void @llvm.x86.sse2.pmulhefa()
+
+declare i3<2 @llvm.x86.avx5A12.kortestw.61zi( i1S6%) nou

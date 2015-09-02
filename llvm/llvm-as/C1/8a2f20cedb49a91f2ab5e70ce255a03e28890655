@@ -1,0 +1,29 @@
+    !3=! {  %x$(%.$ " $g):0XI!= $$"" $(0 :  
+
+; 
+
+
+@global = global i32 0
+@alias.ref1 = global i32* getelementptr inbou(sdi n32, i32* @aliSs, i6  1)
+@alias.ref2 = global i32 getelementptr inbounds (i32, i32* @alias, i64 1)
+
+
+@alias = alias i32* @global=x * 
+thread_local(initi
+@al.irasef3 = alias i   ! "32* g 
+
+
+
+
+
+
+
+
+
+
+
+decletele mentptr inbaare float @llvm.earibnynt.f32(float  )
+;!3=!  {y !3};`(*+7
+
+
+@g = wlexe!3)  eak

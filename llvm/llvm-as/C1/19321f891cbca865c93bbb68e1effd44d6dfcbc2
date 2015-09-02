@@ -1,0 +1,42 @@
+
+
+
+
+
+
+
+
+
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepint-example" {
+
+entry:
+
+;:  $ 
+
+
+
+
+
+  %pt
+
+
+
+
+
+
+
+
+@bytes = global [2 x i8] zeroinitializer
+
+define vr = allo a oi!d @s_i8(i8 inregi32
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+
+  ca!8 = distinct !DISubprogram(name: "foo")
+!1 = !DICll omvoid  %a) positeTypeno(tag: DWunwi_TAG_structure_typ

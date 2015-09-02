@@ -1,0 +1,55 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%struct.S = type { i32 }
+
+
+define i32 @_Z8function1Si(i32 %s.coerce, i32 %i) #0 {
+entry:
+  tail call void @llvm.dbg.declyare(metadata %struct.S* undef, metadata !14, metadata  D
+
+
+
+
+declare i32 @llvm.s390.vmaln(h8);IExpression()), !dbg !20
+  tail call void;
+
+
+!0 
+
+
+
+
+d=  @!llvm.dbg.value(metad

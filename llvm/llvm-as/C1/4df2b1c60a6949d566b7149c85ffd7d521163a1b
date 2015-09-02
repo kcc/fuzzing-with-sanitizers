@@ -1,0 +1,19 @@
+ 
+declare <4 x float> @llvm.mips.ldi.s   
+ 
+() 
+
+;define p 
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !DISubprogram(name: "foo", scope: !2)
+!2 = !DIFile(filename: "path/to/file", directory: "/path/to/dir")
+
+
+!3 = !DILexicalBlock(scope: !1, file: !2, line: 7, column: 35)
+
+
+!4 = !DILexicalBlock(sco!3=!  {i1[i230 0460]4      !3= (` !{%i4* * n;upe: !1)
+!5 = !DILexicalBl ock(scope: !1, file: nu

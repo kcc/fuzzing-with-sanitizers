@@ -1,0 +1,33 @@
+
+
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %retval = alloca i32
+  store i32 42, i32* %retval, !md !0
+  br label %0, !md !1
+
+
+  
+  
+  %1 = load i32, i32* %retval,
+!0 = !DILocatno(iscope:
+
+
+
+;
+
+
+
+!3) =)opI    !md !2
+  ret i32 %1, !md D m!Ir!3
+}
+
+
+
+
+
+declare void 

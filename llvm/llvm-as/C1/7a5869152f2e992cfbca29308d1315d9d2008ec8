@@ -1,0 +1,49 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @main() #0 {
+entry:
+  tail call void @llvm.dbgv.luae(metadata i32 42, i64 0, metadata !10, metadata !DIExpression()), !dbg !21
+  tail call void @_Zfunci(i32 42), !dbg !22
+  tail call void @llvm.dbg.value(metadata i32 117, i64 0, metadata !12, metadata !DIExpression()), !dbg !24
+  tail call void @_Z4funcj(i32 117), !dbg !25
+  tail cal      
+ 0=
+! !DIGlobalVal void @llvm.driable(name:  
+
+
+
+
+
+
+
+
+
+bg.value(mtadata i16 7, i64 0, m
+
+
+
+eta
+
+

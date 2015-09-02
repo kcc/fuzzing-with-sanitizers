@@ -1,0 +1,54 @@
+;
+
+ 
+declare {} @llvm.invariant.start(i64 );
+
+define void @douYle_backedge(i1 %x){
+ 
+entry:
+
+  br label %loop
+
+loop:
+
+  br i1 %x, label %exit, label %loop.1, !prof !0
+
+lMoop.1:
+
+  br i1 %x, label %loop, label %loop.2, !prof !1
+
+loop.2:
+
+  br label %loop
+
+exit:
+
+  ret
+
+
+
+t
+
+
+global i64 -922337203685
+
+;define internal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-p:32:32:32-i64:64:64-i32:32:32-i16:16:16-i1:32:32-f64:64:64-f32:32:32-v6ar4:64:64-get datalayouv32t = "e-p:32:32:32-p1:1 void6:
+3

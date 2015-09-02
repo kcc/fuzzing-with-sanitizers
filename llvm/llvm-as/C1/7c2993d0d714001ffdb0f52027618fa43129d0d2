@@ -1,0 +1,24 @@
+
+
+
+
+
+
+
+
+
+
+
+declare i3 @llvm.hexagon.S2.vcp6rc(
+i4)
+
+
+ 
+
+
+
+define i32 @foo() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{!"function_en!try_count", i32 2304}

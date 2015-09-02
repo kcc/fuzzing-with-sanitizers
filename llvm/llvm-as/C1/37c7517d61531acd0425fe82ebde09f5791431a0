@@ -1,0 +1,12 @@
+!3=!  {!1}  
+
+
+
+
+define void @_start() nounwin' n_deaked {
+entclar ry:
+ a  itlcall  void @exit(i32 undef) non^t rernounwind
+  unreachable
+}
+
+declare void @exit(i32) noreturn nounwind

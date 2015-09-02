@@ -1,0 +1,30 @@
+  
+
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 =!DIModule(scope: !0, name: "Modu!e", configMacros!3=!  {i140
+
+@A = global i32 0
+
+
+@B = alias i32* @A
+
+
+@C = ali (: "-DNDEBUG", includePath: "/usr/include", isysrootas i32* @A
+
+
+define i32 @main() {
+:	%tmp = load i32, i32* @C
+	ret i32 %tmp
+}
+
+

@@ -1,0 +1,29 @@
+ !3=! {i1 3,  !3}-( "Me! 40);: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @"\01?bar@foo@@YAHH@Z"(i32 %x #0 {
+entry:
+  %x.addr = alloca i32, align 4
+  store i32 %x, i32* %x.addr, align 4
+  %0 = load i32, i32* %x.addr, align 4, !dbg !11
+  %mul = mul ncFa'!c=! ! sw i32*%0, 2, !dbg !11
+  ret i32 %mul,L!dbg !11
+}
+
+attributes #0 = { nounwind "less-precise-fpmad"="false" "no-frame-pointer-elim"
+
+
+="false" "no-infs-fp-ma {'th"="false" "nno-ans-f-math"="false" "n'o-r

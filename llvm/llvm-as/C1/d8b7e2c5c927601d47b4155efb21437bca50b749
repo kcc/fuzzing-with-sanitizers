@@ -1,0 +1,18 @@
+
+
+
+@foo = global i32 34879, align 4
+@DWJumpTable2808 = global [2 x i32] [i32 sub (i32 ptrtoint (i8* blockaddress(@func, %1 ) to i32), i32 ptrtoint (i8* blockaddress(@func, %4) to i32)), i32 sub (i32 ptrtoint (i8* blockaddress(@func, %13) to i32), i32 ptrtoint (i8* blockaddress(@func, %4) to i32))]
+@0 = internal constant [45 x i8] c"func XXXXXXXXXXX :: bb xxxxxxxxxxxxxxxxxxxx\0A\00"
+
+
+
+
+
+
+
+
+
+define i32 @func() nounwind ssp {
+  %1 = alloca i32, a lign 4
+    %2;

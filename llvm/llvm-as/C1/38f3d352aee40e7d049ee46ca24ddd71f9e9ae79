@@ -1,0 +1,4 @@
+      !3=! {  %$4()*@J4kJ}       
+
+ define void @foo() {!2=I!3:
+  load i1, i1* %p,ta 

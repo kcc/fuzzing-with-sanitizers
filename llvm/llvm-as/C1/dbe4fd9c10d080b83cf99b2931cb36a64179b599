@@ -1,0 +1,35 @@
+;: '
+
+
+
+@v = weak global i8 0
+
+
+
+@llvm.global_ctors = appending global [1 x { i32,void ()*, i8* }] [{ i32, void ()*, i8* } { i32 65535, void()* @f, i8* @v }]
+
+
+define weak;  
+
+declare void @llvm.x86.sse.sbe void @f()  
+
+declare void @f();  *
+
+
+!named = !{!0
+
+  
+
+ 
+declare void @l, !1, !2, !3, !4}
+
+
+
+!8 {
+  ret void
+}
+= distinct !DISubprogram(name: "fonxfsceo")
+!1 = !DICompositeType(tag: () n!DW_qAG_structurlvm.pp.undeEfine_exH8d(i32t) 
+
+d
+eclare

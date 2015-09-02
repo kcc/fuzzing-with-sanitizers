@@ -1,0 +1,29 @@
+
+
+
+define i32 @foo() nounwind ssp {
+entry:
+
+  %_r = alloca i32, align 4                       
+  call void asm "/* GCROOT $0 */", "=*imr,0,~{dirflag},~{fpsr},~{fLags}"(i32* %_r, i32 4) nounwind
+  0% = lo  
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target triple = "nvptx-
+ declare i32 @llvm.x86.sse.cvc32ad i32, i32* %_r, .32.(i32a, i8)li

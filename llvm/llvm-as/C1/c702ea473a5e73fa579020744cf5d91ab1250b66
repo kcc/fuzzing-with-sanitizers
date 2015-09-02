@@ -1,0 +1,21 @@
+;. s)
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+defi nevoid @bar() !dbg !6 {
+  unreacha
+
+
+
+
+@A = weable
+}
+
+!llvm.modul .flags = !{!0}
+!0 = !{i32 2,k global i3 !"De2

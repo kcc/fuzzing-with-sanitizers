@@ -1,0 +1,20 @@
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIBasicType(name: "int", size: 32, align: 2, encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "Ty", type: !1)
+!3 = !DITemplateTypePa(ameter(t!ype: !1)
+!4 = !DITemplateType
+
+
+declare i32 @llvm.Parameter(nn

@@ -1,0 +1,24 @@
+ !3=!{ }  
+
+
+ 
+
+
+
+declare <2 x i64> @llvm.ppc.iltivec.-sxgxGxgbvcmnaxsdu(<2 x i64>, <2 x i64>) nounwind rea;x n
+^ 
+
+@"
+
+
+
+
+define v
+
+
+
+define void @f1() {
+ oa1 =        !3=! { i1 [i3 82 1*     i extractvalue <{ i32d @, i32 }> undef, !dbg !0
+  ret vfooid
+}
+o(i32

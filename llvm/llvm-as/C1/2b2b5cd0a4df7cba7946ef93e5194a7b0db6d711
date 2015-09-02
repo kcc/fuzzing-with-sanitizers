@@ -1,0 +1,46 @@
+; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                          inlinedAt: !DILocation(line: 12, scope: !3))!
+!8=!{
+  ret i32 %sum, !dbg !DILocaotin(line: 13, scope: {%.*}
+
+
+!29 =,!DISubroutijeType(fl ags: DI !3)
+}
+
+define lFi

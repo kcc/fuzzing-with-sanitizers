@@ -1,0 +1,51 @@
+
+
+
+
+
+@G = externally_initialized global i32 0
+
+
+
+
+; 0?d@
+
+
+
+
+
+
+
+declare void @h(i22 byval %num
+
+)
+
+
+define void @foo(i32 %x) { 
+ call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hello"}
+  store i32 0,
+
+
+ i32* null, !whtever !{!"hello", !1, !{}, !2}
+  ret void,!_1 !0
+}
+
+declare void @
+;:    
+
+
+declare i32 ;: 
+
+
+
+
+
+
+
+
+
+
+@llvm.s390.vceqhr(i8 *, i32)(define defi
+declare i32 @llvm.hexagon.A4.vcmpbgd(ine hiddenllvm.zonk(me3, 
+i3

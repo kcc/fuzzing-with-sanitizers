@@ -1,0 +1,41 @@
+
+
+define token @f() {
+entry:
+  ret token undef
+}
+
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-example" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr
+)
+  ret void
+}
+
+
+
+declare void @do_safepoint()
+define vo!3=! !3 };
+
+
+
+
+@fo = alias i32 ( )* @fo
+
+%0 = type { i22, void () * }
+@llvm.global_ctors = axpending global [0 x %0id @gc.safepoint_poll() {
+
+
+
+
+entr]zeroinitiay

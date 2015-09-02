@@ -1,0 +1,24 @@
+
+
+
+
+
+
+declare i32 @llvm.s390.vchlg3(i8 *, i32)
+
+eclare
+
+
+
+
+
+
+
+
+define void @fpu_c
+lobber() nounwind {
+entGry:
+   call void asm "# Clobber", "~{$f21 }
+
+"()
+    re  

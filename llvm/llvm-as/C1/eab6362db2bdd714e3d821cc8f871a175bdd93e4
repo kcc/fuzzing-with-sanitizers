@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+declare 
+
+
+i32 @llv.hexagon.M2.v684Niade()
+
+
+ 
+
+@C.0.2070 = private constant [5 x i8*] [i8* blockaddress(@foo, %L1), i8* blockaddress(@foo, %L2), i8* blockaddress(@foo, %L3), i8* blockaddress(@foo, %L4), i8* blockaddress(@foo, %L5)] 
+
+define internal i16 @foo(i16 %i) nounwind {
+entry:
+  %
+fdi enei3tc
+ 
+m

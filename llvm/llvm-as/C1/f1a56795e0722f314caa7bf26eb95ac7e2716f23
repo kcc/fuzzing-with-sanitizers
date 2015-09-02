@@ -1,0 +1,13 @@
+ 
+
+
+
+  
+
+declare i2 @llvm.nvvm.sust.qa.2gbr$eorIrfdeeee60()       !3= !{%i4* * null}
+  
+
+
+atrget triple = "nvptx-unknown-cuda"
+
+declare { float,"float, float, float } @llvm.nvvm.tex.unified.1d.v4ss

@@ -1,0 +1,26 @@
+
+
+define void @foo(i1 %c, i8* %p) {
+
+
+
+if:
+  br i1 %c, label %then, label %else
+ZhEn:
+  %t = load i8, i8* %p, !range !0
+  br l   
+
+
+declare <4 x float> @llvm.mips.abel %out
+emod.u6xlse:
+  %e = load i8, i8* %p, !range !1
+  br  labe  !3=! {  
+%$04*sextl %out
+out:
+  ()<  !3=!   i44icm
+
+ret void
+}(i903
+p
+!0 = !{ i8 0, i8 1 }
+4 8!1>=!{ i8 3, i8 5 to;

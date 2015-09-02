@@ -1,0 +1,31 @@
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+!0 = !{ i32 1, !"fJ
+
+
+
+oo", i32 37 }
+!1 = !{ i32 2, !"bar
+declape i3
+@foo2 = alias i3 ?2 ()* @fo22 @llvm.hexagon.A4.rcmpngd(i32, i32 )
+ 
+!
+", i32 42 }
+!2 = !{ i32 1, !"m;x
+", !{
+ !"hello world", i32 927 } }
+
+!llvm.module.flags = !{ !1, !1, !2 }

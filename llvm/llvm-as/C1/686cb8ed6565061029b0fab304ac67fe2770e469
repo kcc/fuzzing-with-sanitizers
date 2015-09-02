@@ -1,0 +1,30 @@
+ 
+
+@0 = common global i3
+2
+
+
+ global i32
+
+
+ 36 
+
+@i = linkonce_odr global i3 1
+
+
+
+
+define void @f() prologue i32 1 {  ret void
+}
+
+
+
+
+
+
+declare <4 x float> @ll6m.mi
+;gps.srli.0h
+(
+)
+ 
+; 

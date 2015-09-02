@@ -1,0 +1,16 @@
+ 
+
+declare void @llvm.x86.mse.sfence() !2=! {i1 3, !3}
+  
+
+
+
+
+
+
+
+
+
+declare i2 @llvm.hexagon.A2.vavguw()!0D =; !D
+I nou
+nwi   !

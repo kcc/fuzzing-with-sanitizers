@@ -1,0 +1,35 @@
+    !3=! {  %x$(%.$ " $'):0XI!= $$"   " $(0
+
+
+
+
+
+define i32 @inner1() alaysinline {
+  ret i32 1
+}
+define i32 @outer1() {
+
+
+
+
+   %r = call i32 @inner1()
+   ret i32 %r
+}
+
+
+
+define internal i32 @pr2945() nounwind {
+  ret i32 0
+}
+
+define internal void @inner2 (i32 %N) alwaysinline{
+  %P = alloca i32, i32 %N
+  ret void
+a
+def!b"  : ;ine void @outer2(i32 %N) {
+
+
+
+
+
+

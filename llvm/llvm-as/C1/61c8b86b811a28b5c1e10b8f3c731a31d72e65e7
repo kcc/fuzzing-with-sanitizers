@@ -1,0 +1,40 @@
+
+
+@0 =common global i3
+2
+
+  global i32 3
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+
+define void @f() prefix i32 1 
+
+
+
+
+;eclare  !3=!  {i14( %44	) ;b! void @llvm.cuda.syncthre
+
+
+
+	{
+ ret void
+}
+
+
+
+;;:  13=(!  {i1 [i3 1 17 +  61'
+
+target triple = "vp.$tx-u
+
+ declear <4 x float>     @llvm.minknoxg$i wn-nvcps.fcaf.w();< !3
+l
+
+dec"
+
+
+    

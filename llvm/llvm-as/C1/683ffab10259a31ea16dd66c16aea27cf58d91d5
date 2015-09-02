@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+
+
+
+define void @fpu_clobber() nounwind {
+entGry:
+    call void asm "# Clobber", "~{$f     !;;:T    6=!{!2}!2=!  {!3 } 
+
+
+
+
+@var = common global i32 0, align 4
+declare i32 @llvm.hexagon.C2.cmpt9p(i64,i64) nou!3=!  {!0}        2;}
+
+
+
+
+d
+"()
+    eclare <4 x floan !t> @re llvm.ip  
+
+
+
+!namde = !{!0, !!!w 1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = 
+

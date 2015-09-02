@@ -1,0 +1,27 @@
+ 	 
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S4vxaddsubh(i64, i64
+
+)
+ 
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.cu = !{!5}
+!llvm.module.flags = !{!6}
+
+!
+
+
+
+0 = !DISubprogram(name: "bar", linkageName: "_ZN3foo3barEv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !5, type: !2)
+p3! = !DIFile(filename: "/foo", director
+ 
+
+
+declare <y: "bar.cpp")8 x i64> @llvm.x86.avx512.mask.c
+'t!2

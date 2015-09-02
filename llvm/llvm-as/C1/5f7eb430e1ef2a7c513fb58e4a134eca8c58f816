@@ -1,0 +1,24 @@
+
+	
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vpkdx(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vsld(<2 x;   	       !3= !{%i4* * null}  
+
+
+
+target triple = "nvptx-unkno i64>, <2 
+  
+
+ x i64>) nounwind readnone
+declare <2wn-c
+declauda"
+
+declare { flo atre void @llvm.tp.undefined23i() 
+
+
+de
+, fl
+co

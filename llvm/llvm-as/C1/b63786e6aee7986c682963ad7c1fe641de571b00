@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(s
+declare ivdo @foo()
+
+define i32 @f1(i32 %a, i32 %b, i32* %v) {
+e)try:
+
+
+        %tmp = icmp eq i32 %a, %b               
+        br i1 %tmp, label %cond_true, label %return
+
+cond_true:              
+        call void @foocope: !0, name: "Module", configMacros: "-D()
+        store i32 0, i32* %v
+        ret i32 0
+NDEB&UG", includePath
+retur: "/usr/include

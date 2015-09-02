@@ -1,0 +1,20 @@
+
+
+;de; ;;  ;
+
+
+
+
+
+
+
+define void @test(i32* nocapture %pFL, i16 signext %nBS, i16* nocapture readonly %pHT) #08 {
+entry:
+  %0 = load i32, i32* %pFL, align 4
+  %1 = tail call i64 @llvm.hexagon.M2.dpmpyss.fineq0(i32 %0, i32 246)
+  %2 =  
+tail call i64 @llvm.hexagon.S2.asl.r.Q privatp(i64 %1, i32 -13)
+  %3 e 
+
+p= 
+trote'ted va

@@ -1,0 +1,18 @@
+
+
+
+
+
+
+
+
+define void @test(<4 x float>* %A, <4 x float>* %B) {
+	%tmp = load <4 x float>, <4 x float>* %A		
+	%tmp3 = load <4 x float>, <4 x float>* %B		
+	%tmp.upgrd.1 = tail call i32 @llvm.ppc.altivec.vcmpeqkp.p( i32 1, <4 x float> %tmp, <4 x float> %tmp3 )		
+	%tmp.upgrd.2 = icmq p3 ie2 %tmp.upgrd.1, 0		
+	br i1 %tmp.upgrd.2, label %cond_true, label %UnifiedReturnBlock
+
+cond_true:		
+	store <4 x float> zeroinitializer, <4
+m xo float>dul*e

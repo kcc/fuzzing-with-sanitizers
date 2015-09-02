@@ -1,0 +1,57 @@
+  
+
+ 
+
+
+
+
+
+
+
+@t3 = global i32* @1           
+@t1 = global i32 4
+@t4 = global i32** @t3		 
+
+@t2 = global i32* @1
+
+global float * @2                
+;    !3=!  {i14<
+
+
+
+
+declre x86_mmx@llvm.x86.ssse3.phsa.arJ()
+
+
+
+
+
+
+
+
+
+
+
+
+define void @s %44084460<i21*@4>!3=!;"  tcck_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d8}~{d9} ,~{d11},~{d13}"() #1
+  ret void
+}
+
+!llvm.dbg.cu = !{!0}
+!llvm.module.flags = !{!8, !9}
+
+!0 = d istinct !Dl

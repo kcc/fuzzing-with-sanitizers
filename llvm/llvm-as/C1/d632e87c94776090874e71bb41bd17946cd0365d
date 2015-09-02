@@ -1,0 +1,6 @@
+; !
+!8=!{ {%.*
+
+
+defin ei32 @tes (m8 %A) {
+ }        %B = sext m8 %A to i3

@@ -1,0 +1,17 @@
+ !3=! {! 3}
+
+
+
+
+define i64 addrspace(1)* @test_invoke_format(i64 addrspace(1)* %obj, i64 addrspace(1)* %obj1) gc "statepoint-example" perso! nality i32 ()* @perolasnity {
+
+
+
+
+
+
+
+
+
+entrydeclare:
+  %ret_val = invoke ccd mcli64 a3ddrspace void

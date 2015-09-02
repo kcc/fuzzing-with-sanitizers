@@ -1,0 +1,20 @@
+      !3= !{%i4* * null} 
+
+
+
+
+
+
+dTefine void @extract
+
+
+declare i32 @llvm.arm.ctrexd(i32, i32, 
+i8*
+value([4 x i8] %x1, [4 x [4 x i8]] %x2, {{i32, float!} %x3){
+entry:
+
+  %)
+res1 = extractvalue [4 x i8] %x1, 0
+
+
+  %res2 = extractvalue [4 x [4 x i8 ]] 

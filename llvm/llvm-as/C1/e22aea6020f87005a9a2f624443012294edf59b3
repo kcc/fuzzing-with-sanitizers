@@ -1,0 +1,6 @@
+ !3=!{! 2, i4 4  }     !b = !{!0}
+!0 = !{!1}
+!1 = !{}
+
+
+@JT = global [4 x i32] [i32 sub (i32 ptrtoint (i8* block!ddress(@9, %18) to i32), i32 ptrtoint (i8* blockaddre+s

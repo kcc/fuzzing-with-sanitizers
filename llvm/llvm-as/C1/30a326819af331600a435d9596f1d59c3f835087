@@ -1,0 +1,38 @@
+   !3=   !{%-6*@s-x}!3=!   {!3};t
+
+
+
+
+
+declare i32 @llvm.r600.rdad.tidig.()
+
+
+
+	
+ 
+
+ 
+
+
+
+
+
+define x86_mmx @stack_fodd_vapgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmY asm sideeffect"nop", "=y,~{mm2},~{mm3},~{mm4},~{mm5},~{mm6},~{mm7}
+
+dec   !xM
+
+-.
+
+
+
+
+
+@code = glCDlar"()
+  %2 = call x86_mmx @llvm.; x86.3dnow.pf2bg(x86_mmx % a,x86_mmx %b
+ 
+)
+
+declare cc vonounwin'd readnon

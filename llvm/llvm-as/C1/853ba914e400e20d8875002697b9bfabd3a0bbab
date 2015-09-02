@@ -1,0 +1,26 @@
+;:!
+
+
+!0 = !DIGlobalVariable(name: "
+ !0;     
+  !2=!  {  %$4*@z40} 
+	;%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, alig
+)
+ 4 
+
+
+@x = glob   *!32a= !{")
+}l i64 mul (i6    ;3 !!=
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { fl
+oat, float, floa

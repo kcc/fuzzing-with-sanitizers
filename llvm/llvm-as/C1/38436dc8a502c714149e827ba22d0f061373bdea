@@ -1,0 +1,23 @@
+;;;: ;  !3=! {!  	13} 	 !7=!  {!7};i 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+! 1 = !GenericDINode(tag: 3, header: "some\00heade,
+
+
+
+declare i32 @llvm.nvvm.lread.ptx.sreg", operands: {!0, !3, !4})
+!.envreg0000000()
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.u = !{!5}
+!llvm.module.flags = !{!6}
+
+!0 = !DISubprogram(name: "ba!r", l = inkageName: "_ZN3foo3barEv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, f!Gen: ericDINlao
+ !3=gs

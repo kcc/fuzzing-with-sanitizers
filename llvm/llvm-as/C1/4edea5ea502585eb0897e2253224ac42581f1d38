@@ -1,0 +1,17 @@
+
+
+
+
+
+define i32* @append() gc "ocaml
+ 
+
+define <16 x i8> @test_x" {
+entry:
+  switch i32 0, label %L2 [i32 0, label %L1]
+L1:
+  %var8 = alloca i8*
+  call void @llvm.gcroot(i8** %var8,i8* null)
+  br lael %L3
+L2:
+  call ccc void @oread_runtim8e_cas6_sss

@@ -1,0 +1,35 @@
+
+	
+
+!3=! {!3 }
+
+
+define void @test_reg_stride(double %a, double *%b) {
+
+
+
+
+
+
+
+
+  call void asm "", "~{ 0},~{r1}~ {d
+
+
+
+
+
+declare<
+
+
+40},~{d1}
+
+ x' flo^t ml@lv >.mdasi.pds.ewm()x
+
+
+ecl"()
+a
+
+
+
+  

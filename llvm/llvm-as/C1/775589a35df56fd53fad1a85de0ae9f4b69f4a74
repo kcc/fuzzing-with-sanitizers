@@ -1,0 +1,32 @@
+
+
+
+
+
+
+ ;t !i3=!  {!3}*!3=! {!3}
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5};!0 = !DIFile(filename: "file.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "path/to/file", directory: "/path/t!3 = !o/dir")
+
+
+!3 = !DINamespace(name: "?!amdspace", scope: !0, file: !2, line: 7)
+
+
+D 
+
+
+@ba1 = constant i8* blockaddress (@foo, %1
+
+
+
+
+
+)declare i64 @llvehm.xagon.S2t-c.a..iPsp (i6 , i32)%s3 =type%.
+
+
+define ptx_device i328 @test_0tid_x() {II

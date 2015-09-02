@@ -1,0 +1,35 @@
+!3=!  {!1}  
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+;ntry: !!
+	ret void
+}
+
+define void @g() gc "java" {
+entry:
+	ret vo
+
+declare <4 x fatol> @llvm.m0ips.ixid
+
+
+
+
+
+
+
+
+
+
+
+declare i64 @llvm.iexagon.S2.lsr.rXp
+.w(ii4( i2)
+
+
+
+
+)< t}

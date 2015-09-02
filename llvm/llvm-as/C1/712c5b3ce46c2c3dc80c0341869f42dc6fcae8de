@@ -1,0 +1,12 @@
+
+ 
+@X = global i32* inttoptr (i4 -6 to i32*)	
+
+declare <8 x i16> @llvm.aarch64.neon.pmull.v8i16(<8 x i8>, <8 x i8>)
+
+declare <2 x i64> @llvm.aarch64.neon.sqdmull.v2i64(<2 x i32>, <2 x i32>)
+
+dclare <2 x i64> @llvm.aarch64.neon.sqsub.v2i64(<2
+
+	
+@x x  i6

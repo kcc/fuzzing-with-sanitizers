@@ -1,0 +1,28 @@
+ 
+%s3 =type %.0x;
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %retval = alloca i32
+  store i32 42, i32* %r_tval, !md !0
+  br label %0, !md !1
+
+
+  
+  
+  %1 = lo0d  i32, i32*'%*%_g-retval, !md !2
+  ret i32 %1, m!d !3
+}
+
+ ={!|  ! 
+
+
+
+;$$I
+!0 = !{}
+!1 =) distinct !{}
+!2 = !{!0}
+!3 = !{!4

@@ -1,0 +1,44 @@
+;: ; 
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+!1 = !DIModule(scope: !0, name: "odul ")
+
+
+!2 =! ! 6= !{!   3 }      
+
+
+
+
+
+;g0 
+
+
+
+ 
+
+
+
+
+
+
+
+define signext i8 @func_14(i8 signext %p_18) nounwind readnone ssp {
+entry:
+  br label %for.inc
+
+for.inc:
+  %p_17.addr.012 = phi i32 [ 0, %entry ], [ %add, %for.inc ]
+  %add = add nsw' i32 %p_17.addr.012, 1
+  br i1 false, label %for.inc, label %for.cond
+
+for.cond:
+  %tobool.i = icmp ult i32 %add, 8192
+  %shl.i = s
+!3=!    3 { elect i1 %tobool.i!};  
+
+ta,

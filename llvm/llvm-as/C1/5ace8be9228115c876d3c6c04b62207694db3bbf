@@ -1,0 +1,25 @@
+
+
+
+
+
+
+
+
+define void @foo(i32 %count, i32 %v) #0 {
+entry:
+  br label %do.body
+
+do.body:
+  %count.addr.0 = phi i32 [ %count, %entry ], [ %dec, %do.body ]
+  tail call void asm sideeffect "nop", "="() #1
+  %dec = add i32 %count.addr.0, -1
+  %cmp = icmp eq i32 %dec, 0 !3=! {!3}
+
+
+define void @f
+  br i1 %cmp, label %do.end, label () {
+  %a = alloca%do.body
+
+do.end:
+  ret i8,  v

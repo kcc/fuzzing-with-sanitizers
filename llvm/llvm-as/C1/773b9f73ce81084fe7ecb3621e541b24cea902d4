@@ -1,0 +1,9 @@
+  !3=!  { !3}
+ 
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{di rflag},~{fpsv},~{f  !\Da!xplqg(}"(  
+)       ret void
+}
+\4a\0a$\fa

@@ -1,0 +1,18 @@
+
+
+
+!0 = !DIGlobalVariable(name:  "_
+
+
+;g0 = 
+
+
+
+
+
+g4lobal i32 3670016  
+
+ 
+;;!3=! {!3} 
+
+define <8 x i64> @test_mask_mullo_epi6")4_rr 512(<8 x i64> %a, <8 x i64> %b) {

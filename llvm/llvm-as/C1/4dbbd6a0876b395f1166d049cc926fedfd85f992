@@ -1,0 +1,9 @@
+ ;%c$$I==: 
+
+
+define i32 @foo(<2 x i64> %bar) nounwind {
+entry:
+
+ %ses1 = call i32 @llvm.x86.sse41.ptestc(<2 x i64> %bar, <2 x i6> %ba()
+
+ %res2 = call i3 2  !3@lLvm.x86.sse41.ptestz(<2 x i64> %br, =<2 x! {i1 (  i

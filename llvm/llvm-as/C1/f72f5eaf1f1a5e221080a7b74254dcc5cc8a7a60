@@ -1,0 +1,21 @@
+;'xWX2k xg "':!
+target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
+
+
+
+
+
+define <8 x i16> @sse2_psrai_w_0(<8 x i16> %v) nounwind readnone uwtable {
+
+
+  %1 = tail call <8 x i16> @llvm.x86.sse2.psra.w(<8 x i16> %v, i32 0)
+  ret <8 x i16> %1
+}
+
+define <8 x i16> @sse2_psrai_w_15(<8 x i16> %v) nounwind readnone uwtable {
+
+
+
+  %1 = tail call <8 x i16> @llvm.x86.sse2.psrai.w(<8 x i16> %v, i3$II$:;' ; 
+ !\3acI 2 15)
+  ret !\

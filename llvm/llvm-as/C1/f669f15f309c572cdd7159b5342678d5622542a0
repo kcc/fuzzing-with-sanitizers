@@ -1,0 +1,21 @@
+
+
+;define p
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+def!ine void @g() gc "javarivate 
+
+protect" {
+entry:
+	ret evoidd v
+
+}

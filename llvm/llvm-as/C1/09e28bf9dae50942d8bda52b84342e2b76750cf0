@@ -1,0 +1,26 @@
+
+
+
+
+
+	
+
+
+
+
+
+
+declare i8* @llvm.aarch64.thread.pointer() #1
+
+define i8* @thrend_pointer() {
+
+
+  %1 = tail call i8* *@llvm.aarch64.thader.pointer()
+  ret i8* %1
+
+
+declare i64 @llvm.hexagon.S2as.r.i.p(i64, i32)
+
+defin
+e
+}

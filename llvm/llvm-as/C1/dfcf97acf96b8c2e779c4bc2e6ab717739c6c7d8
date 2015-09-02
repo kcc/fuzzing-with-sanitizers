@@ -1,0 +1,91 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadowstack
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+" {
+entry:
+	ret void
+}
+
+d
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vsdd(<2 efine void @g() gc "java" {
+enx i64>, <2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ x i64>) notry:
+	ret void
+}
+   unwind readno
+n
+
+
+
+e
+de
+
+
+clare <

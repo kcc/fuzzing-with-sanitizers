@@ -1,0 +1,11 @@
+
+
+%ini = type { i32, void()*, i8* }
+@llvm.global_ctors = appending global [11 x %ini] [
+	%ini { i32 65535, void ()* @CTOR1, i8* null },
+	%ini { i32 65535, void ()* @CTOR1, i8* null },
+	%ini0 { i32 65535, void  
+
+ 
+
+def ()* @CTOR2, i8* nulin el}i  32 ,

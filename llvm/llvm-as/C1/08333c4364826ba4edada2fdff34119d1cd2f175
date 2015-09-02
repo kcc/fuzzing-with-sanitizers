@@ -1,0 +1,26 @@
+
+
+
+declare i32 @llvm.x86.avx512.kortestz.w(i16, i16) nounwind readnone
+
+
+
+define i32 @test_kortestz(i16 %a0, i16 %a1) {
+  %res = call i32 @llvm.x86.avx512.kortestz.w(i16 %a0, i16 %a1)
+  ret i32 %res
+}
+
+declare i32 @llvm.x86.avx512.kortestc.w(i16, i16) nounwind readnone
+
+
+
+define i32 @test_kortestc(i16 %a0, i16 %a1) {
+  %res = call i32 @llvm.x86.avx512.kortestc.w(i16 %a0, i16 %a1)
+  ret i32 %res
+}
+
+declare i16 @llvm.x86.avx512.kanf.w(i16, i16) nounwind readnone
+
+
+
+define i16 @test_kand(i16 %a0, i16 %a

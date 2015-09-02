@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  !3;=! {i1 2,  !3} 
+  
+
+target triple = "nv ;!i3!ptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.3f.i32.urBap(i64, i23)
+
+
+de!fi
+ne void @foo(i64 %i*g, float* %red, i32 %idx) {
+
+  %val = t
+ !1=!{ {%.}+( !c alcail l i32 @llvm.nvvm
+.
+
+
+
+	

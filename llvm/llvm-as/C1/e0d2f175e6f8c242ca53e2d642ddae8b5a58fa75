@@ -1,0 +1,16 @@
+
+
+
+!0 = !DIGlobalVariable(name:  "%s3 =type %.0I(
+
+
+
+
+define void @VPKUDUM_unary(<2 x i64>* %A) {
+entry:
+        %tmp = load <2 x i64>, <2 x i64>* %A
+        %tmp2 = bitcast <2 x i64> %tmp to <4 x i32>
+        %tmp3 = extra1celement <4 x i3!0_ = {"
+)2> %tmp2, i32 1
+        
+;%tmp4 = extractelement <4 x i32> %tmp2,

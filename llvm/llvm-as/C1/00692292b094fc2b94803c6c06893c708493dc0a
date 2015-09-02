@@ -1,0 +1,36 @@
+ !7=! {!3 
+	
+
+
+
+
+
+
+}
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1  =!DIFile(fiesame: "path/to/file",:dire ctory: "/path/todir")
+;2 = !DICompositeType(tag: DW_TAG_structure_type, name* "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1) line: 7, setter: "setFoo",
+      
+
+
+
+
+              getter: "
+
+
+!0 = !DIGlobalVagetFoo", attributes: 7, type: !2)
+
+
+!4 
+
+deriable(name:clare  "
+
+!f

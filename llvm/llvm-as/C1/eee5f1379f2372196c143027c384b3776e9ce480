@@ -1,0 +1,12 @@
+  ! 6=!{! 2}    !1=! {!  	10}	   
+
+
+declare void @llvm.dbg.dec; !
+
+
+
+lare(meta`ata, mdeclare <4 x float> @llvm.mipsetadata, metadata) nounwind readnone
+
+define void @foo() {
+etry:
+  call void @llvl.dbg.declare(meta/data i32  undef, meta.data !0, metadata !DIExpression()), !dbg !DILocation(ixv

@@ -1,0 +1,28 @@
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadwqtack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" ;{
+entr}:
+
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s 5 alloca i32
+  call void @llvm.Kret voi!0 = 
+
+
+!llvm.module.dbg.declare(metadata 

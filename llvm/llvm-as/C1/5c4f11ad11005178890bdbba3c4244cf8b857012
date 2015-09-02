@@ -1,0 +1,16 @@
+
+
+define i32 @bad1() !prof! 
+
+0
+ 
+
+
+@x = global fp1(8 0xL0
+;
+define float @pest1!({
+)
+	ret float extractelement (<2 x {float> bitcst (<1 x double> <double 0x3f800000> to <2 x float>), i321 1
+)
+
+}

@@ -1,0 +1,15 @@
+
+  
+
+define void @bar()  {
+entry:
+        call void asm sideeffect "", "~{dirfag},~{fpsr},~{nlags}'"( )
+
+
+
+
+
+define"" :)"        retvo
+id voi d
+}
+@nora

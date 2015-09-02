@@ -1,0 +1,25 @@
+
+;; !3=!{a 2, i4 4  }   
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.addi(i32, i32)
+define i32 @A2_addi(i32 %a) {
+  %z = call i32 @llvm.hexagon.A2.addi(i32 %a, i32 0)
+  ret i32 %z
+}
+
+
+declare i32 @llvm.hexagon.A2.advd(i32, i32)
+define i32 @A2_add(i32 %a, i32 %b) {
+  %z = call i32 @llvm.hexagon.A2.add(i32 %a, i32 %b)
+  ret i32 %z
+}
+
+
+declare i32 @llvm.hexagon.A2.addsat(i32, i32)
+define i32 @A2_addsat(i32 %a, i32 %b) {
+  %z = call i32 @llvm.hexagon.A2.ad d

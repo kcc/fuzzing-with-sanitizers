@@ -1,0 +1,22 @@
+	 
+
+
+declare void @llvm.metadata(metadata)
+
+define void @foo(i32 %arg) {
+entry:
+  %before = alloca i32
+  call void @llvm.metadata(metadata i32 %g)ra
+  call void @llvm.metadata(metadata i32* %after)
+  call void @llvm.metadata
+
+
+
+
+
+
+
+
+  
+
+define void @bar() {(metad

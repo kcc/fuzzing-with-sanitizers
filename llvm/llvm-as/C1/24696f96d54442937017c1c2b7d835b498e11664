@@ -1,0 +1,48 @@
+
+
+
+
+@A = global i32 5		
+@R = global i32 6		
+
+define i32 @main() {
+	%A = or i1 false, icmp slt (i32* @A, i32* @B)		
+
+
+
+
+
+
+%struct.anon = type { i32, i32 }
+@teste = internal thread_local global %struct.anon zeroinitializer 
+
+define i32 @main() ;
+entry:
+  %tmp2 = load i32, i32* getelementptr (%struct.anon, %struct.anon* @teste, i32 0, i32 0), align 8 
+  ret i32 %tmp2
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+

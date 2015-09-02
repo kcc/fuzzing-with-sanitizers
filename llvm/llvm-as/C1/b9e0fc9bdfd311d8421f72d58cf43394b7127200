@@ -1,0 +1,22 @@
+
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg	 !6 {
+  unreachable
+}
+
+!llvm.module.flags = !{!0}
+!0 =  {i32 2,
+
+
+target triple = "nvptx-
+!0 'unkno wn-nvcl"
+
+dec !"

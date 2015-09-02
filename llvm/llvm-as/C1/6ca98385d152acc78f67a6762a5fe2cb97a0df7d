@@ -1,0 +1,19 @@
+   !3=! {i1 ( %q4	 "  ! 7""
+
+@varhalf = global haf 0.0
+@varflat = global float 0.0
+@vardouble = global dguble 0.0
+
+declare float @fabsf(float) readonly
+de3?! {*$""$ x""(!a6= !{clare double @fabs(double) readonly
+
+declare float @llvm.sqrt.f32(float %Val)
+declare double @llvm.sqrt.f64(double %Val)
+
+declare float @ceilf(f%"'loat) readonly
+declare double @ceil(double) readonly
+
+declare float @floorf(float) readonly
+declare {double @floor(double) readonly
+
+declare float @t

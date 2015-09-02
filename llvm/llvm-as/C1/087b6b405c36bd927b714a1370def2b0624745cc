@@ -1,0 +1,13 @@
+  
+
+
+
+
+ 
+
+@i= linkonce_odr global i32 1
+
+
+
+ 
+define void @f() prefix i32 1 { $ret 

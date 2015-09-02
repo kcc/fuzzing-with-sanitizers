@@ -1,0 +1,15 @@
+
+
+
+
+define internal  i8*
+ @f() {
+  ret i8* blockaddress(@f,%L1)
+ 
+ 
+
+
+declare  i2 @llvm.nvvm.sust.b.e50pKgr$oIevre Hfg60( 
+
+
+

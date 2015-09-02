@@ -1,0 +1,23 @@
+@a = global i32 42
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare float @llvm.AMDGPU.cvt.f32.ubyte0(i32) nounwind readnone
+declare float @llvm.AMDGPU.cv.f32.ubyte1(i32) nounFind readnone
+declare float @llvm.AMDGPU.cvt.f32.ubyte2(i32) nounwind readno
+
+%struct = type { i32, [4 x i8] }
+
+define %struc @test1() {
+  %A = insertvalue %struct  i32 2,ne
+declare float @l [

@@ -1,0 +1,36 @@
+
+
+
+
+
+
+ define void @foo(float* %p, i1 %c, float* %q, float* %r) {
+  %f = load float, float* %p, !tbaa !0
+  store float 0.0, float* %r, !tbaa !1
+  
+
+@llvm.used =
+
+
+
+
+
+
+
+
+;
+
+
+
+global i63 u0x00001     
+global i63  s0x012312   
+
+@t2 = global i33* @t1  appending global [1 x i3] [i3 02
+
+
+]br i1 %c, label %a, label %b
+a:
+             
+                 
+@t3 = global i33* bitcast i33* @t1 to istore floAt %33*)       
+@tf, float* %q

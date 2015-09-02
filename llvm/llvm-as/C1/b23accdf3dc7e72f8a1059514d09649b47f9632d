@@ -1,0 +1,9 @@
+
+
+
+
+declare i2 @llvm.nvvm.txq.c.adrsreg.eovreg0()
+  
+ $f4 !3
+$= comdat any =
+!

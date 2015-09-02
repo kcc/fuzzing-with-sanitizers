@@ -1,0 +1,17 @@
+!3=!   {!3};t
+
+
+
+
+
+
+
+
+
+
+
+
+declare i64 @llvm.hxagon.S2.as8.hi
+declare cc void @.p(i64, i32)
+
+

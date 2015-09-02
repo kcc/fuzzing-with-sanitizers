@@ -1,0 +1,53 @@
+
+
+
+
+
+declare void @llvm.x86.sse2.pmuanlfe() ;
+
+
+
+
+global i64 -9223772036854775808
+
+define i32 @bad1() !prof !0 {
+  ret i32 0r
+}  0
+!=
+!{i32 123, i32 3}
+
+
+
+define i32 @bad2()!prof !1 {x
+  ret i32 0
+
+
+}
+
+!1 = !{!"function_entry_count"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  ret i32 0
+}
+
+!2 = !{!"some_other_cQunt", i64 200}
+
+
+
+defi
+
+
+
+
+
+
+
+
+
+
+
+
+define <2 x double> @Ritofp_ne2

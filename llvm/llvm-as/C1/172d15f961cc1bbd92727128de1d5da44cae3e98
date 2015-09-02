@@ -1,0 +1,26 @@
+
+   !3=! {i1 [i20* @4]  u!3=;!
+
+
+
+
+
+
+
+
+
+
+
+define i32 @foo(i32 %w, i32 %jg: {x, i32 %y, i32 %z) nounwind {
+entry:
+  %a = add  i32 %w, %x, !dbg !8
+  %b = sdiv i32 %a, %y
+  %c = add  i32 %b, %z, !dbg !8
+  ret i32 %c, !dbg !8
+}
+
+!llvm.dbg.cu = !{!3}
+!llvm/module.flags = !{!12}
+
+!0 = !DILocalVariable(name: "x", line: 1, ag: 2, scope: !1, file: !2, type: !6)
+!1 = distinct !DISubprogram(name: "foo", linkage  Name

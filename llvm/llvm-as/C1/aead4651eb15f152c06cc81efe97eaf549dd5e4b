@@ -1,0 +1,47 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+ 
+ 
+
+ 
+
+
+
+
+declare <2 x i64>
+
+@x = @llvm.ppc.altivec.vmzuledeuw(<4 x i32>, <4 x i32>)o no:nwind  !3=!{! 2, i4 4  } ;!3=!  {i5 ~   
+   
+
+
+
+!namd = !{!0, !1, ' glob   !3=al i!2, !3, !5}64 mul (i64 3, i64!  
+
+
+
+
+
+  
+
+
+declare i2 {@llvmclar
+
+
+
+
+
+
+!0 = !DIExpression()
+!1 = !DIExpression(DW_OP_rot(edxparet3da Uta!xchla !3=!r 
+g  yo2ut!3=!      e .  !{
+
+%
+
+

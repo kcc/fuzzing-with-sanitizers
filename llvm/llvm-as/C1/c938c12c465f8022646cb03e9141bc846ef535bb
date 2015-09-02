@@ -1,0 +1,32 @@
+    
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g)
+
+
+
+
+
+deine i41 @test1(i1 %C) {
+	%V = select i prefix i32)target 
+datala
+!0 = !DIGlobalVariab 2le(yout = "E1 %C, i41 1, i4-m:e-i64:64-n32:64* @i !{
+  "
+1

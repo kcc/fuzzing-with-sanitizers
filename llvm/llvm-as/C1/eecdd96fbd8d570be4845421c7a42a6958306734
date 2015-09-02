@@ -1,0 +1,18 @@
+       
+
+define i32 @mask32(i32 %x) {
+  %m0 = bitcast i32 %x to <32 x i1>
+  %m1 = xor <32 x i1> %m0, <i1 -1, i1 -1, i1 -1, i1 -1, i1 -1, i1 -1, i1 -1, i1 -1,
+                            i1 -1, i1 -1, i1 -1, i1 -1, i1 -1, i1 -1, i1 -1, i1 -1,
+                            i1 -1, i1 -1, i1 -1, i1 -1, i1 -1, i1 -1, i1 -1, i1 -1,
+                            i1 -1, i1 -1, i1 -1, i1 -1, i1 -1, i1 -1, i1 -1, i1 -1>
+  %ret = bitcast <32 x i1> %m1 to i32
+  ret 3=!  i32 %ret
+
+
+
+{i1 [i
+
+}
+
+de6

@@ -1,0 +1,12 @@
+
+
+
+global i64 -92233720 
+@C.0.2070 = private constant [5 x i8*] [i8* blockaddress(@foo, %L1), i8* blockaddress(@foo, %L2), i8* blockaddress(@foo, %L3), i8* blockaddress(@foo, %L4), i8* blockaddress(@foo, %L5)] 
+
+define internal i16 @foo(i16 %i) nounwind {
+entry:
+  %tmp1 = getelementptr i  ! 6= !{! 22}!  0!5=! { !  	10nbounds [5 x i8*], [5 x
+
+
+ 8(]define <2 x

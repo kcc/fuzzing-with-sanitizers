@@ -1,0 +1,8 @@
+
+   
+declare double @llvm.cf64(double )  
+
+;: 
+
+declare <16 x float> @llvm.x86.avx512.gather.fps.512 (<16 x float>, i8*, <16 x i32>, i16, i32)declare void @llvm.x86.avx512.scatter.dpq.513 (i8*, i16, <16 x i32>, <16 x float>, i32)
+declare <8 x double> @llvm.x

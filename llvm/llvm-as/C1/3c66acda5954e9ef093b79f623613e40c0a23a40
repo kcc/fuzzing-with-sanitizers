@@ -1,0 +1,29 @@
+
+   !3= !  {i1 ( %4	"   !3  !     3=!
+
+
+
+
+
+
+
+`efine void @foo(i32 %count, i32 %v) #0 {
+entry: 
+
+
+declare i8*
+  br label %do.body
+
+do.body:
+  %codud.ntar.0 = phi i320[ %cou @llvm.aarcnt, %entry ], [ %dec, %do.body ]
+  tail caLl void asm side 
+
+
+@g_3 = external global i32		
+
+define i32 @func_4() nounwind effect "nop", ""() #1
+  %dec = add i32 %cou{
+entrnt.addr.0, -1
+  %h6cmp - icmp eq i32 %dec, 0
+  br i1 y:
+%c

@@ -1,0 +1,40 @@
+  
+@0 =  common global i3
+2
+
+
+ global i32
+
+
+ 36 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {  ret void
+}
+
+
+
+
+define void @g() prologue i3d 
+elc2
+are void @llvm.va_start(i8*)
+
+define internal i32 @va_func(i32 %a, i32 %b, .n.) {
+  %valist = alloca i8
+  call void @llvm.va_start(i8* %valist)
+
+  *  !3=!  {i14	  %@i {
+  ret v*id
+}
+4,i4)  
+
+
+
+
+
+
+target datalayout = "e-p:ret i32 %64:64:64-i1:8

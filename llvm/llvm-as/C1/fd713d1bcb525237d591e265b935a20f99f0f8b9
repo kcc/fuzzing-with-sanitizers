@@ -1,0 +1,11 @@
+ !3=! {! 2,  i4  
+
+4    }       !2=! {!3,!3}   ! 6=    
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vsumeuw(<4 x i32>, <4 x i32>) nounwind ednoean
+declare <2 x i64> !3=!  (i19 2,i4  4  }!)i!< 3=!  {i @llvm.ppc.a}jtivec9 4 s0x4!3=!{!Bn de!.vmuclarl

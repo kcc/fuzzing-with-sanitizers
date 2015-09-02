@@ -1,0 +1,35 @@
+
+
+
+
+@g0 = addrspace(3) global i23 42
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32
+ 123, i32 3}
+
+
+
+
+define i32 @bad2() !pro;f  1 {
+  ret 
+
+
+
+
+@g = weak alias i32 ()* @g
+;: 
+
+target triple = "nvptx-unknown-
+!0 = !DILocalVaiable()nvcl"
+
+declare doil@ vlvm.nvvm.sust.p.3d.i32.ptar(i64, i32, ii32 0
+}
+
+!1 = !{32)
+
+
+defi!ne 

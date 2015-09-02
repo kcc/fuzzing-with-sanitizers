@@ -1,0 +1,5 @@
+ !2=! {i1 2, !3}=;: 
+
+declare <16 x float> @llvm.x86.avx512.gather.dps.512 (<16 x float>, i8*, <16 x i32>, i16, i32)
+declare void @llvm.x86.avx512.scatter.dpq.512 (i8*, i$""16, <16 x i32>, <16 x floa$t>, i32)
+declare <8 x d uble> @llvm."x

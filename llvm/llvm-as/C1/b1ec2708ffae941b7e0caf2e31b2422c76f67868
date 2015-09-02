@@ -1,0 +1,15 @@
+
+	
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vpldx(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vsld(<2 x;   	       !3= !{%i4* * null}  
+
+
+
+target triple = "nvptx-unkno i64>, <2 x i64>) nounwind readnone
+declare <2wn-cuda"
+
+declare { flo at, flo

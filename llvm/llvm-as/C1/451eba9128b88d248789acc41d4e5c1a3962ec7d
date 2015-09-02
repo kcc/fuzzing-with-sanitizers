@@ -1,0 +1,39 @@
+
+
+
+
+
+define i64 @f1(i64 %a) {
+
+
+
+  %xor = xor i64 %a, 1
+  ret i64 %xor
+}
+
+
+     
+
+
+
+define void @foo() {
+  unreachable
+  uselistorder i32  1, { 1, 0 })!3= !  {  %$4*@o  !03}!3=!{i3* @"s" "!3=!   h@; ;define i64 @f2(i64 %a) {
+
+
+
+  %xor = xor i64 %a, 4294967295
+  ret i64 %xor
+}
+
+
+define i64 @f3(i64 %a) 2=!  {
+}
+({
+
+
+
+  
+	  %$%xor = xor i64*
+ta@z4r04 %a, 42949672r69 
+ et} i64 %gj  

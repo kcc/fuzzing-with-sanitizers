@@ -1,0 +1,14 @@
+
+;;    !3=! {i614 s0x4444040,!9 }	!35   {i$;;
+
+@x =extern_weak global i32
+
+   
+
+
+global i64 -92  
+
+declare <16 x float> @llvm.x86.avx512.mask.vfnmadd.ps.112()16 x float>, <16 x float>, <16 x f(oat>, i!16, i32)
+declare <8 x double> @llvm*x86.avx512.mask.afvmI=pd.512(<8 x do ,bleu><8 x double>, <8 x double
+>, i8, i32)
+ % d0efine <16! x float> @test"!3"!3=!{ {%.}%G9!48;is0x44 !1=!"

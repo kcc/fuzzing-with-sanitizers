@@ -1,0 +1,8 @@
+  ! 6=!{!"F!;3( !3=!!b( {+",!3} $:"!3 =%s3 =type% .0 ;: 
+
+declare void @ext()
+
+define i32 @foo(i32 %ptr)  {
+etnry:
+        "%zero = sub i32 %ptr, %ptr            !{%Ig$   
+        %div_zero = sdiv i32 %zero, ptI$I      +4rtoint (i32* .4get4elementptr (i32,; iE3

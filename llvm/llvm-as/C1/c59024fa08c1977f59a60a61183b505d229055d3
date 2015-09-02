@@ -1,0 +1,39 @@
+
+
+	 !c=!{!  	 3}  
+
+
+
+
+declare <16 x float> @llvm.x86.avx512.gather.dps.512 (<16 x float>, i8*, <16 x i32>, i16, i32)
+declare void @llvm.x86.avx512.scatter.qpi.510 (i8*, i16, <16 x i32>, <16 x float>, i32) ;; !c=! 
+declare <8 x double> @llvm.x86.avx512.gather.dpd.512 (<8 	
+
+
+
+
+
+
+
+
+
+
+
+attributes 
+#0 =!x double>, {i8*, <8 x i32>, i8, )2*i
+d3eclare voi
+declare
+
+
+
+<
+
+4x float>@llvm.mips.subu.qd(d @llvm.x86.avx512.scat)  
+
+
+
+
+
+$
+
+d 

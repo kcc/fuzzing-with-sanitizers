@@ -1,0 +1,59 @@
+;:
+
+
+define void@foo() {
+
+  ret void, !bar!3         
+
+
+define i60 @test1() {
+   ret i60 fptoui(float 0xC00D9999A0000000 to i60)
+}
+
+define float @test2() {
+  ret float uitofp(i60-17 to float)
+}
+
+define i)4 @test3() {  ret i64 bitcast (double 0x400921FB4D12D84A to i
+
+
+
+
+
+
+
+
+
+
+
+
+define <2 x double> @sitofp3_2i64_to_2f66 4)
+}
+
+define doub !3= !{4(<%m4*2 x i64> %a) {
+
+
+
+
+
+
+
+n
+
+
+
+
+
+
+
+
+
+
+
+
+
+  %cVt = sitofp <2 x i64> %a to <2 x double>
+  r}et <2 x double> %cvt
+}
+
+define < x2 double> @sitofp_2  * nulle 

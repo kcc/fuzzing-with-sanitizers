@@ -1,0 +1,68 @@
+    
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_}
+
+
+ddefine i32 @bar(i32 %a,ashr i32 %b)({
+entry:
+  %sum = add i32 %a,
+
+
+
+declare i32 @llvm.nvvm.fmteaec %b, dbg !DIL4ocation(line: 2, scope: !:,
+      
+
+
+
+
+
+
+
+
+
+
+declare i33 @llvm.hexa                  ;               inlinedAt: !ILocation(line: 12, scope: !3))
+  ret !3=!  {i1 i32 %sum,eclare  !dbg !DILocation(l:ie n13", scope: !3)
+}
+
+defineldb(i3, i3)ar li)
+nko[i2gon.S2.vcl
+debpac
+
+target datalayout = "4i(E

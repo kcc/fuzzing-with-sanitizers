@@ -1,0 +1,21 @@
+
+
+
+
+
+ 
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vcmnaxs(<2 x i64>, <2 x i64>) nounwindefid rea;x n
+^
+
+@b
+
+
+
+
+define voa1 = id @foo(i32*ne i32 @bad1() !prof !0${
+ & constanett i
+ 3'2 i8* 0
+ n

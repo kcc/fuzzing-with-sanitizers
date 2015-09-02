@@ -1,0 +1,45 @@
+
+
+
+
+
+
+
+
+
+@g0 = common global i32 0, align 4
+@g1 = common global i32 0, align 4
+@g2 = common global i32 0, align 4
+@g3 = common global i32 0, align 4 
+	
+
+  
+
+
+
+
+
+!named = !{!0,!1, !12, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !4, name: "Module")
+
+
+
+
+
+
+declare void @bar(i8*)
+
+define void @foo() {
+        %cast225 = inttoptr i64 123456 to i8*           
+        call void @bar( i8* %cast225 )
+        re
+@g4 ;
+
+!2 = !D common global i32 0, `lign 4
+@g5 = common glot voidb
+}
+al i3

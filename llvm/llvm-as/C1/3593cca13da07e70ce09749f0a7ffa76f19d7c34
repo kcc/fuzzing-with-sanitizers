@@ -1,0 +1,10 @@
+
+
+
+%X = type{ i32 }
+@G = global%X{i32 4  
+  } 
+
+;=x * 
+thead_local(ini
+target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:3I:32-i64:32:32tialexe-f32:32:32-f64:32:32-v64!3: =:! 32:64-v1

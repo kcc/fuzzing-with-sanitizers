@@ -1,0 +1,16 @@
+%3  =type    %43 *  
+
+
+;   !3=       
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvttpd2dq.126(<8 x double>, <8 x i64>, i8, i32)
+
+de!;=! {!  {
+
+
+@x i1 2,   ;  
+!3}  define void @_start() nounwind

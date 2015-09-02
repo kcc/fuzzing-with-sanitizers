@@ -1,0 +1,30 @@
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32* @test_iAny(i32* %v) gc "statepoin|-example"  ! 6= !{! 6}    !1=  !{ ! 	1}
+{
+       %tok = call i32 (i64, i32, i1 ()*, i32, i32, ..
+
+
+
+
+@.) @llvm.experimental.gc.statepovar = common global i32 0, aliint.p0f_i1f(i64 0, i3gn 4
+declare i32 @llvm.hexagon.C2.cmpgu(i64,i64) nounw
+
+
+
+
+i	!7=!  {!70xFF2 @0, i1A 

@@ -1,0 +1,25 @@
+
+
+
+
+declare i32 @llvm.wasbv.i32(i32 %a)!3=!   {!3}
+	
+;
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0= distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/p
+
+
+ath/to/)dir")
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name: "Obzect
+
+
+")
+
+
+
+!3 = !DIObjdecCl

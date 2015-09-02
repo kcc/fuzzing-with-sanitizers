@@ -1,0 +1,43 @@
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+             ;                             inlinedAt: !DILocation(line: 12, 
+scope: !3))
+  ret i32 %sum
+
+declare i32 @llvm.x86.    !3=!  {i140fcmpavx2k.125 unorjtestz.w()i1 ,@e t, !dbg !DILoca+tion(

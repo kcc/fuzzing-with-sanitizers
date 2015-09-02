@@ -1,0 +1,25 @@
+ 
+
+
+
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-example" {
+
+entry:
+
+
+
+
+   %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  et void
+}
+
+
+
+declare
+	%struct = type void @do_safepoint()
+de { f

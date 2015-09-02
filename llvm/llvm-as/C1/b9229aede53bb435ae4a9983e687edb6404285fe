@@ -1,0 +1,41 @@
+  
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2Fsvavsd()
+
+
+
+  
+
+
+
+ ;:
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "som  
+
+
+
+
+
+declae\00header", operands: {!0, !7, !4})
+!2= !GenericDINdre < 2 xi64> @llvm.ppc.altivec.vwtmulwue(<4 x i32>, <4 x i32>)argtedat alayout oe(tag: 3, head
+de=clare i32 @!llvm.s390.vsbgi (i8) ;
+
+er: "some\0declare$i
+0he a!6derd",  o
+dper1ands: {'!{},*!3,g
+
+4)}! 

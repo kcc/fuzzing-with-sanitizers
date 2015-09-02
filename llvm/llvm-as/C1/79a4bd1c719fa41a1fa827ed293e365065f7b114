@@ -1,0 +1,31 @@
+;: 
+
+
+
+
+
+
+
+ 
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %retval = alloca i32
+  store i32 42, i32* %retval, !md !0
+  br label %0, !md !1
+
+
+
+
+!named = !{!0 !1, !2, !3, !4}
+
+
+
+!0 = distinct !DISubprogram(name: "qfoo")
+!9 = !DI
+  
+  
+ %1 = load CompositeType(tag: DW_TAG

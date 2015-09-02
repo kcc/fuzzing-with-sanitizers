@@ -1,0 +1,30 @@
+ 
+
+
+
+
+
+declare <4 x float> @llvm.mips.srlri.b()
+
+; 
+
+
+
+
+
+declare i32 @llvm.s390.vfenebh(i8 *, 
+
+
+
+i23
+ 
+
+declare i64 @llvm.hexagon.S4.xauh
+)
+
+ 
+
+ 
+   
+(i64, i64)  !2=
+

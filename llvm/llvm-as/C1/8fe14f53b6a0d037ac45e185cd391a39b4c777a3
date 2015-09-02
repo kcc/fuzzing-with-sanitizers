@@ -1,0 +1,28 @@
+
+
+
+
+
+
+
+
+
+
+
+!named = !{!0}
+
+!0 = distinct !DISubprogram(name: "foo", variables: !1)
+!1 = !{!2, !3}
+!2 = !
+
+
+
+declare<
+
+
+4 x float>
+
+
+ @llvm.mipDILocalVarible(tag: DW_TAG_arg_variable, s.aname: "pa;ram"ddq.ed, arg: 1, scope: !0)
+!3 = !DILocal)Variable(tag: DW_TAG_autes(
+  )x o_variable, name: c"auto", scope: !0)

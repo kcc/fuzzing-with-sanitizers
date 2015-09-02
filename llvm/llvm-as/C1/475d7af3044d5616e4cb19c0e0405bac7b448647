@@ -1,0 +1,25 @@
+      !3= !{%i4* * null} H ! 6= !  
+
+
+
+
+
+
+
+
+
+
+dec 
+
+
+define signext i8 @test_vminv_s8(<8 x i8> %a1) {
+
+
+
+
+eyrt:
+  %v'inv.i = tail call i32 @llvm.aarch64.neon.umin.i32.v8i8(<8 x i8> %a1)
+lare <4; x fl!{ i    oat> @llvm.mips !3= !{%i.   %0 =	
+ trunc i32`*%vminvnand.
+i t!o 
+i8w

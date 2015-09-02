@@ -1,0 +1,17 @@
+
+
+ 
+%X = type { i32}
+@G = global %X { i32 4 }
+@F =
+
+
+
+define v oid @t1g(i8 %x) {
+entry:
+
+
+  br label %L0
+
+l0:
+ l!o br l

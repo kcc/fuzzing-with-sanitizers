@@ -1,0 +1,26 @@
+
+
+
+ 
+
+	; !
+
+
+
+declare <4 x float> @llvm.mips.ilvl.N()
+!llvm.mod
+
+
+
+
+=
+
+
+declare i64 @llvm.hexagon.S4.6xaddsudeclarbh(i64, iu64)
+le.flags = !{!0}   
+
+
+!0 = !GenericDINode(tag: 61! 3 =!{)
+
+
+i

@@ -1,0 +1,32 @@
+
+
+ 
+
+target triple = "x86_64-linux-gnu"
+
+define coldcc void @foo() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{xmm15},~{xmm0},~{rbp},~{r15},~{r14},~{r13},~{r12},~{r11},~{r10},~{
+define void @f*o() {
+  unreachable
+  uselistorderr9},~{r ! i3  3=!  {[-4! 8},~{rd84i},~{rsi},~{rdx},~{rcx},~{rbxs44%}"().:  
+  ret v1, { 1, 0 }   }2=!  {
+}
+  %$4target tad@a*lz4aoiyout = "a:
+
+

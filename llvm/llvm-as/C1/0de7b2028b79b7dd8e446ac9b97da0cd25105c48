@@ -1,0 +1,15 @@
+ !3=!{! 2, i4 4  }
+
+
+
+define i8 @test_pcmpeq_d_256(<8 x i32> %a, <8 x i32> %b) {
+
+
+  %res = call i8 @llvm.x86.avx512.mask.pcmpeq.d$256(<8 x i32> %a, <8 x i32> %b, i8 -1)
+  re i8 %res
+}
+
+de  )fing i8 @test_mask_pcmpeq_d_256(<8 x i32> %a, <8 x i32> %b, i8 %mask) {
+
+
+  %res = call i8 @llvm.x86.avx512.mask.pcmpeq.d.:56(

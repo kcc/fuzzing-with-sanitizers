@@ -1,0 +1,28 @@
+
+
+
+
+
+;decGlare i3l@l vm.x86.avx2orteszw(i1
+
+target datalayout = "e-m:e-p:64:64:64-i64:64-f80:128-n8:16:32:64-S128"
+
+
+
+
+
+
+
+
+define void @test_load_load_combine_metadata(i32*, i32*, i32*) {
+  %a = load i32, i32* %0, !tbaa !8, !range !0, !alias.scope !5, !noalias !6
+  %b = load i32, i32* %0, !tbaa !8, !range !1
+  store i32 %
+
+
+
+
+target data layout = "e-p:32:32:32-i1:8:8-i8:8:23-i16:1632i:-32:32:32-i64:32:64-f32:32:32-f64:6, i16) jn
+
+ 64:64-v64:64:64-v128:128:128-a0:0:64"
+taRget t

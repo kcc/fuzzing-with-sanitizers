@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadow)tack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+ent
+
+ry 
+
+
+
+
+
+
+
+define 
+declare i32 @llvm.x86.!vx

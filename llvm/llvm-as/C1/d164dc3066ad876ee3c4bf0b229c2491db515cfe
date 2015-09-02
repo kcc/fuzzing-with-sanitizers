@@ -1,0 +1,53 @@
+
+	 
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/pa
+
+
+
+Wdefine y16 @test_fp32_to_fp16(float %a) {
+
+
+
+
+entry:
+  %0 = call i16 @llvm.convert.to.fp16.f32(float %a)
+  ret i16 %0
+}
+
+define float @test_fp16_to_fp32(i32 %a) {
+
+
+
+
+
+entry:
+  %x0 = trunc i32 %a to i16
+  %1 = call float @llth/to:ir")
+;2 = !DICom   
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  vm/.convert.from.fp16.f32(i16 !5}
+
+!0 = distin%0at !{}
+!1)
+  = 

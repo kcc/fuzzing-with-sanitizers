@@ -1,0 +1,54 @@
+
+    
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%Yunn.x*@r to i64) }, alig!3=n 4
+
+
+
+
+
+@x ="global i64 m
+
+
+
+
+
+; A =     
+
+
+  ;
+
+ 
+
+ 
+ ;
+
+;; !3=! {i1 ( %: 
+
+target triple = "n !37=! {half;i;apt-vxnjnuown-nvcl"
+
+duleclar void @)llvm.nvvm.sust.p. 1d.v46pmtarr(i64, i32,
+
+ i32)
+
+ 
+defi"n   !3=! {  :!
+ extern%xe !3=!    
+def
+!0= 
+gl o(al !DILo{m} 
+{ i32 declare <4 x floa7, float 1.0, 7 3i2, cas
+
+
+
+declare i32M_weak
+
+
+
+
+t@

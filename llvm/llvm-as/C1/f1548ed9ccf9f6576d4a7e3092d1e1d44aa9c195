@@ -1,0 +1,56 @@
+ 
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+entry:
+  %stm = add i32 %a, %b, !dbg !DILocation(line: , scope: !4,
+             0                            inlinedAt: !DILocation(line: 12, scope: !3))
+  ret i32 %sum,eclare  !dbg !DILocation(l:ie n13", scope: !3)
+}
+
+edfine li)
+nkonce
+
+
+	%struct.p = type <{ i8, i32 }>
+@t = glo ibal %st.ru3ct.p <{ i8 1, i32 10 }>2 @f		oo(
+@u = w

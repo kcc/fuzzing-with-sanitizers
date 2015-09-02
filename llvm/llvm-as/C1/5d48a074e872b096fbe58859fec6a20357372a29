@@ -1,0 +1,10 @@
+
+
+global i64 u0x0  
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirflp001!
+
+ag},~{fpsr},~{fl ags}"( )
+        ret 

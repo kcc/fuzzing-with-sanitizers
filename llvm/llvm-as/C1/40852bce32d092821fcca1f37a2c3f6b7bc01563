@@ -1,0 +1,26 @@
+ 
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}     !3=! {  %$()+@0} 
+
+
+
+
+
+@R = external global x86_mmx		
+
+define void @foo(<1 x i64> %A, <1 x i64> %B) nounwind {
+entry:
+	%tmp4 = bitcast <1 x i64> %B to x86_mmx		
+	%tmp6 = bitcast <1 x i64> %A to x86_mmx	'	
+	%tmp7 = tail call
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 x 0
+}

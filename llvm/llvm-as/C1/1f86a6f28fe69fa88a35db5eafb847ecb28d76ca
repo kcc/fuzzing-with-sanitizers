@@ -1,0 +1,24 @@
+
+
+
+
+  
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.ce = !{!5}
+!llvm.omdule.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN3foo3barEv", line: 3, isLocal: false, isDefinition: 
+
+false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file:!4, scope: !1, type: !0)
+! 1= !DIFile(filename: "/foo", directory: "bar.cpp")
+!3 = !DISubrouti;eType(types: !3)
+!3 = ! 2{null}d
+ralece i32 @llvm.hexagon.A2.vs684ia()
+
+!4"= !Dk!3=!  {i9    HF
+
+
+
+(
+defiinl

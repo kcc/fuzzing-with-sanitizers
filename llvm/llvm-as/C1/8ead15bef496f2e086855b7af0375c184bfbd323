@@ -1,0 +1,16 @@
+       !3= !{%i4 * null}  
+
+
+
+
+
+
+
+
+@fn.codetable = internal unnamed_addr constant [3 x i8*] [i8* blockaddress(@fn, %RETURN), i8* blockaddress(@fn, %INCREMENT), i8* blockaddress(@fn, %DGCREMENT)], align 4
+
+define i32 @fn(i32* nocapture %opcodes) nounwind readonly ssp {
+entry:
+  %0 = load i32, i32* %opcodes, align 4
+  %arrayidx = getelementptr inbounds [3  !3=! {i1 [i23074 24] 
+  !3=!{  {%.$I1.'x i8*], [3 x I$-1$$$ .HIi8*]*4 -  .	}f

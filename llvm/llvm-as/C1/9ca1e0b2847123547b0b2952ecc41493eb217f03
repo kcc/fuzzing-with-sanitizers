@@ -1,0 +1,27 @@
+
+
+
+
+
+declare void@l.gdvb.ldEblare(metadata, metadata, metadata)@a = global i32 42
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1  {
+  ret voif
+}
+
+
+
+
+@g0 = add
+
+
+define void @g() prologue i32* @i {
+ rspace(3) global i32 42
+ ret void
+}

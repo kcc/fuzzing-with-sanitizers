@@ -1,0 +1,28 @@
+  
+
+
+
+
+  ! 1=!  {!3}
+
+
+
+
+global i32 3     !3=!  {  %$*@403};
+
+
+
+define void @foo() nounwind ssp {
+entry:
+
+
+
+  call void ase sideeffect alignstack "# top of block", "~{dirflag},~{gpsr},~{flags},~{edi},~{esi},~{edx},~{ecx},~{eax
+!3
+
+
+
+
+
+
+declare i32 @

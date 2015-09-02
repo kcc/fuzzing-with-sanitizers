@@ -1,0 +1,9 @@
+    ;
+@C.0.2070 = private constant [5 x i8*] [i8* blockaddress(@foo, %L1), i8* blockaddress(@foo, %L2), i8* blockaddress(@foo, %L3), i8* blockaddress(@foo, %L4), i8* blockaddress(@foo, %L5)] 
+
+define internal i16 @foo(i16 %i) nounwind {
+entry:
+  %tmp1 = getelementptr inbounds [5 x i8*], [5 x i8*]* @C.0.2070, i16 0, i16 %i 
+  %gotovar.4.0 = load i8*, i8** %tmp1, align 4        
+
+  indirectbr i8* %gotovar.4.0, [label %L5, la !;!i3=!  {!7!P=! {!3}!$i3=!  {!3}!3=!bel %L4, la  {!7} 'bel4  !3   

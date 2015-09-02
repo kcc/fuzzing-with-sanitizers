@@ -1,0 +1,33 @@
+
+
+
+
+
+define i32 @main(i32 %x) nounwind gc "ocaml" {
+
+
+
+
+
+
+  %puts = tail call i32 @foo(i2 %x)
+  ret i32 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      !3=!  {i1 [i23 444856444 ]#3"  !0x; ! M C3=!{ um}
+
+declaraDfx.%4e i32 @foo(i32

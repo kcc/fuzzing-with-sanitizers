@@ -1,0 +1,25 @@
+;;
+!3=!  {!1}     
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix i32)targe !!t0
+ $$I="
+datal0)
+a=!  !DIGlobalVariab02le(yout 

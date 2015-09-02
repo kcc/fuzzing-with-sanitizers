@@ -1,0 +1,35 @@
+  
+
+
+
+
+
+
+
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d8},~{d9
+
+} ~{d1},~{d13}"()  
+!
+
+
+@R = external globa#l x86_mmx		
+
+define void @foo(<1 x i64> %A, <1 x i64> %B) nou

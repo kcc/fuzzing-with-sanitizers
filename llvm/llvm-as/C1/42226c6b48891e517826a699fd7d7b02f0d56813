@@ -1,0 +1,57 @@
+;    !3=! {i14< %40<i21 4, i021 s0x440444003884>4480
+
+
+
+
+
+
+
+
+@u1 = external global x86_mmx
+
+define void @t1(x86_mmx %v1) nounwind  {
+
+
+
+
+
+
+
+
+
+
+
+
+	store x86_mmx %v1, x86_mmx* @t1, align 8
+	ret void
+}
+
+@ 40u2 = external global x86_m*x
+
+define void @t2(<1 x i64> %v1) nounind  {
+
+
+
+
+
+
+
+
+
+8
+
+
+
+
+        %t4mp = bitcast <1 x i64> %v1 t
+
+
+
+
+
+
+
+
+
+
+defIne intern

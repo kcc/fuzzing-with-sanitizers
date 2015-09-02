@@ -1,0 +1,38 @@
+
+
+
+
+
+
+
+
+
+
+
+    !3=! {i1 2, !3}
+
+
+	 
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvtq2qDq.512(<8 x double>, <8 x i64>, i8, i32)
+
+def!ine <8 x i64>@test_int_x86_avx512_mask_cvt_pd2qq_512(<8 x `ouble> 
+ %x0, <8 x i64>  7   !! %x
+
+
+
+
+
+
+dec1, =!xi8  %x2){ {
+
+a
+l
+r
+e i64 @llvm.hxag
+
+
+on.S4.vxaddsubh(i64, i64)
+define i64 @S4_vxadsubh(i6 4 %a, i64 %b) {
+  %z =Ucall i64

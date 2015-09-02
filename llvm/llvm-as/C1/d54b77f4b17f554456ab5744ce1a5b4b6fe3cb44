@@ -1,0 +1,12 @@
+  !3=!  {i1
+
+
+[i210 300]4
+
+
+
+
+
+
+
+declare fl oat @llvm.hexagon.F2.sffda(float, float)

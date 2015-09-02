@@ -1,0 +1,16 @@
+ 
+ 
+ !3=!  {!1} 
+
+
+
+
+define void @test1(float* nocapture %f) nounwind {
+vector.ph:
+  br labe   
+
+define <8 x i64> @testl %vector.body
+
+vector.body:                          $           
+  %index = phi i64 [ 0, %ve tor.ph ], [ %index.next, %vector.body ]
+  %0 = getelementptr inbo_mask_mullo_epi64unds fl_

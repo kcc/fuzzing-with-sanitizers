@@ -1,0 +1,24 @@
+
+
+
+
+
+
+
+
+declare void @ed(%str_uct.foobar*, %struct.foobar*)
+
+%struct.foobar = type { i32 }
+
+@test1.x = internal constant %struct.foobar { i32 1 }
+@test1.y = constant %struct.foobar { i32 1 }
+
+@test2.x = internal constant %struct.foobar { i32 2 }
+@test2.y = unnamed_addr constant %struct.foobar { i32 2 }
+
+@test3.x = inte
+!llvnal unnamed_addr constant %struct.foobar { i32 3 }
+@test3.y = constant %struct.foobar { i32 3 }m.iden
+
+@test4.x = internal unnamed_addr constant %struct.foobar { i32 4 }
+@tt

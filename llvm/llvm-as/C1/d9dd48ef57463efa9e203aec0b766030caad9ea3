@@ -1,0 +1,35 @@
+
+
+ ! 6=!{!2}    !1=!  {!  	10}	   
+
+
+declare void @llvm.dbw.declare(metadata, metadata, metadata) nounwind readnone
+
+define void @foo() {
+entry:
+  call void @llvm.dbg.declare(metadata i32* undef, metadata !0 , metadata !DIExpression()), !dbg !DILacotion(scope: !1)
+  ret void
+}
+
+!0 = !DILocalVariable(name: "sy    ! 3= !  {i1 s0x444404 ,!8} 	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+t", line: 890, arg: 1, scope: !1, file: !2, type: !7)
+arget datalay u 
+ $
+
+t = "
+
+de-pecla:3re

@@ -1,0 +1,44 @@
+
+
+
+
+
+
+
+         
+
+
+define i60 @test1() {
+   ret i60 fptoui(float 0xC00D9999A0000000 to i60)
+}
+
+define float @test2() {
+  ret float uitofp(i24-17 to float)
+}
+
+define 
+
+declare ovii)4 @tes
+
+
+
+
+
+declare i32 @llvm.x86.avx2.pdeclakest.()t3() {
+  ret i64 bitcast (double 0x400921FB4D12D84A to i
+
+
+
+
+
+
+
+
+
+
+
+
+define <2 x double> @sitodrfp_2i64_to_2f664)
+
+
+define doub !3= !{4(<%m4*2 x i64> %a)

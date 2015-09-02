@@ -1,0 +1,38 @@
+
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prologue i32* @4  
+  ret voi
+
+
+
+
+
+
+
+
+
+
+define i32 @tes;de
+
+
+
+
+declare i32 @llvm.s390.vfgni(i8 *, i32)fine t(i32* nocaptuvo
+re %a,i i32)%n) no(nwin

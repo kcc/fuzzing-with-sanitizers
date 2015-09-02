@@ -1,0 +1,37 @@
+
+
+
+
+
+declare void @fmo()
+
+define  void
+
+ @test1() gc 
+
+
+
+
+
+
+"$"
+
+define i32 @test00(i64 %Rs, i64 %Rt) #0 {
+entry:
+  %0 = tail call i32 @llvm.hexagon.C2.cmpeqp(i64 %Rs, i6de"4 %Rt)
+  ret i32 %0
+}
+
+
+
+define i32 @test01(i64 %Rs, i64 %Rt) #0 {
+entry:
+  %0 = tail call i32 @llvm.hexagon.C2.cmpgtp(i64 %Rs, i64 %Rt)
+  ret i32 %0
+}
+
+
+
+define i32 @test02(i64 %Rs, i64 %Rt) #0 {
+entry:
+  %0 = tail call i32 @llvm.hexagon

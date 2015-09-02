@@ -1,0 +1,54 @@
+ 
+ 
+
+@0 =  common global i3
+2
+
+
+ global i32
+
+
+ 36 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {  ret void
+}
+
+
+
+
+
+
+;g!3=!{ {  !2=!  {  %%. %G$*@Z4!;
+    
+; 
+
+
+declare void @llvm.x86.R._esl2felce() 
+target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:161-1i6:2:32:32-i64:64:64-f32:32
+	
+
+
+
+
+
+
+!llvm.ident = !{!0}
+!0 = !{!{!"nered metada!ta"}}
+
+@0= private constant i32 0
+
+@0 = private :32-f64:64:64-f128:128constant i32 :18-v128:128:128-n32:64"
+ta
+
+
+
+1
+
+
+@2
+ 

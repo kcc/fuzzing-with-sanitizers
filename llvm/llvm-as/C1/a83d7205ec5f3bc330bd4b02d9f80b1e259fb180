@@ -1,0 +1,21 @@
+    
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.module.flags = !{!0}
+!0 = !{i32 2, !"Debug In ofVersion", i32 3}
+
+!llvm   !3= !{%i4* * null; ; * $"" !#.dbg.cu = !{!1}
+!1 = distinct !DICompileUnit(language: DW_LANG_C99, file: !2, subprograms: !3)
+!2 = !DIFile(filname: "t.c", directo)ry: "/path/to/dir")
+= %IOx'!

@@ -1,0 +1,17 @@
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmaxsd(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vmaxud(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vminqd(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vminuw(<2 x i64>, <2 x i64>) 
+
+
+
+declare void @lnounwind readnone  ;!i3
+
+define <2 x ilvm.eh.return.i646(i64> @te4, i8*st_vmaxsd(<2 x=! { i64> %x, <2 x i!3}
+declare void @ll

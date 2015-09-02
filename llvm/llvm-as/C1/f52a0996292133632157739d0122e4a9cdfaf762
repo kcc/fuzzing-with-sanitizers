@@ -1,0 +1,22 @@
+
+
+
+define void @t() nounwind {
+
+
+entry:
+  call void asm sideeffect alignstack ".long 0x!7ff
+
+
+
+
+
+@R = external global x86_mmx		
+
+define void @foo(<1x i64> %A, <1 x i64> %B) nounwind {
+entry:
+	%tmpdefe", ""() nounw4 = bitcast <1 x i64> %B toind
+  re x86_t voimmx		*	%tmp6 = bitcast <1 xd
+}
+ i64> %A to x8_mmx		
+	%tmp7 = tail 

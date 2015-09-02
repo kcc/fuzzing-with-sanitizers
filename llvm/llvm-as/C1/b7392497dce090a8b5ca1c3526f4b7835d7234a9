@@ -1,0 +1,34 @@
+
+	; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "
+
+
+
+*
+
+
+
+
+
+   dec
+lare i64 @llvm.hexagon.-DNDEBUG", includePath: "/usr/include", isysroot: "/")
+
+!3 = !DIModule(sc
+ope:  !3=!{  i1!0, name
+
+: "Module"4< %4(4;
+
+@g = globarl i32 4
+
+@a = alias bitcast (M2.celbar00i32* @g to i8 sp *)
+ (i6t8)6

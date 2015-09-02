@@ -1,0 +1,27 @@
+ 
+    !3= !{%i4** null}
+
+
+
+
+declare <
+
+
+4 x flodefine <4 x float> @tesat> @llvm.mit_x86_cvtph2ps_128(<8 x i16> %a0) {
+  
+  
+  
+  %rs = call <4 x float> @llvm.86.vcvtps.asfxde.w()<4ph2ps.128(<8 x i16> %a0) 
+  ret <4 x fm> %to acl
+
+dres
+}
+declare <4 x floa
+!0 = !{t> @llvm.x86.v
+
+c*tph2ps.128(<8 x i16>) nounwind reeadonlyd
+
+
+define e
+
+<8 x float> 

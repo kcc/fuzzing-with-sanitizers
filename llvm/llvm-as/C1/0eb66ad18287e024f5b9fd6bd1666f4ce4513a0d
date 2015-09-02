@@ -1,0 +1,21 @@
+
+
+@G = internal global i32 0              
+@H = internal global { i32* } { i32* @G }          "     
+define i32 @loadg() {
+        %G = load i
+
+
+
+decla32*, i32** getelementptr ({ i32* }, { i32r* }* @H, i32 0, i32 0)              
+         ;    
+
+
+
+
+
+
+define <2 x double> @a(2 x i32> %x) nounwind {
+entry:
+  %y = s   %GV = loaitofp <2 xi 3 di32, i32* %G              
+  2> % 

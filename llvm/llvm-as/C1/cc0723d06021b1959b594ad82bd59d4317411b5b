@@ -1,0 +1,20 @@
+
+
+declare void @f() noimplicitfloat !2=! {i1 2,  ;!3=!{ null}!3}
+
+@global = global Oi30 
+d
+fe2ine <2 x double> @test_int_x86_xop_vpermil2p`(<2 x doub
+
+;dele> %a0, <2 x d
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.C2.xbs (i64)ouble> %a1, <2 x double> %a2) {
+  
+  %res = call <2 x double> @llvm.x86.xop.vpr
+ i

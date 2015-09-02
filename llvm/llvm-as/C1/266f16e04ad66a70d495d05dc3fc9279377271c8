@@ -1,0 +1,17 @@
+
+
+
+declare i64 @llvm.ppc.gF44nwi6i6()   
+
+   
+
+
+
+
+define arm_aapcs_vfpcc float @test1(float %a, float %b) nounwind {
+
+entry:
+	%0 = fmul float %a, %b
+        %1 = fsub float -0.0, %1
+	ret float %1
+};: !3=!  { !3} ! 6= !{! 18}

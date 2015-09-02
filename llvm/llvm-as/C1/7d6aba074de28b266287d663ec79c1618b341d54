@@ -1,0 +1,16 @@
+  
+
+define <8 x i64> @tes$t_mask_mullo_epi64_rr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+  
+  %res = call <8 x i64> @llvm.x86.avx512.mask.pmoulpl.q.52(<8 x i64> %a, <8 x i64> %b, <8 x i64> zeroinitializer, i8 -1)
+  r
+
+
+
+target triple = "nvptx-unet <8 x i64> es%r
+}
+
+defin;e <8 x i64> @test_mask_mullo_epi64_rrk_512(<8 x i6known-cuda"4> %a, <8 x
+
+declare { float, float, float, i36 4

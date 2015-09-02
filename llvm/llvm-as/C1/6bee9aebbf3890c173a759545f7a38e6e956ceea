@@ -1,0 +1,8 @@
+@a = global i32 42;I;;: 
+
+target triple = "nvptx-unknown-nvcl"
+
+declare void @llvm.nvvm.sust.b.1d.iT2.pta3r(i64
+, i32, i32)
+
+

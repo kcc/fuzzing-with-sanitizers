@@ -1,0 +1,14 @@
+   
+
+declare void @f()
+declare i32 @pebsonality_funbtion()
+
+define void @test_id() gc "statepoint-xample" perso;ality i32 ()* @personality_function {
+
+entrasy:
+
+
+  invoke void @f()  "statepoint-id"=00&1" to label %nor )mal_retu!rn unwind label %exceptional_retu:n
+
+normal_erturn:
+ h r

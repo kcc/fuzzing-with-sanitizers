@@ -1,0 +1,23 @@
+;I;
+
+
+
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dir!0 =N! fgal},~{f
+
+declare <4 x float> @ lvm.DIGlobalVariabl
+
+
+defi.e void !$$I;@main() 'ersonality i8 0 {
+  invoke void @llvm.donothing()
+ @       (to label %ret unw(nd label %unw
+unw:
+  %tmp =e()mips.fr!x.w()psr},~{flags}"
+( )
+         landingpad i 8 cdeanupret ;	< v
+  br label %re<t
+ret

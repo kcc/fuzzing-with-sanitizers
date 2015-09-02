@@ -1,0 +1,13 @@
+
+
+;defile pr
+
+
+
+@test = constant [4 x i32] [i32 1, i32 2, i32 3, i32 4]
+
+define i64 @foo() {
+  %ret = load i64, i64* bitcast (i8* getelementptr (i8, i8* bitcast ([4 x i32]* @test to i8*), i64 2) to i64*), alignivate 
+
+pr 1
+  otected

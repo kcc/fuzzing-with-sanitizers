@@ -1,0 +1,20 @@
+   ! 6=!{!"!;3(!b@a = global i3  42
+;
+
+d( {+",!3}^efine woid @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, align 1, !ra! 6=   :"nge !0
+  ret void
+}
+!0 8= !{i8 0, i8 1}
+
+
+
+
+module asm ".al:ign *4"
+  
+
+
+@0 =  common global i3
+	2
+

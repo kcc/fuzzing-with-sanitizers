@@ -1,0 +1,53 @@
+    
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix i32* @i {
+  ret void
+!3=!  {i81 44084044040;84
+
+
+
+declare i32 @f()
+
+define i32 @phi(i32 %x) personality i32 (...)* @__gxx_personality_v0 {
+entry:
+	%a = invoke i32 @f()
+			to label %cont unwind label Hlpad		
+
+cont:		
+	%b = invoke i32 @f()
+			to label %cont2 unwind label %lpad		
+
+cont2:		
+	ret i32404400480}
+42,i94 !44  !0 
+
+
+
+
+!38=4 
+
+4
+
+
+
+{
+
+declre<
+
+
+4x flo %b
+
+lpad:		
+	%v =a>@lltv phm

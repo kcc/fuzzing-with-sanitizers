@@ -1,0 +1,10 @@
+	;;:T ! 6= ! {! 2}!2=! {! 3}gc!; !
+
+
+
+
+
+
+target triple = "nvptx-unknown-cuda"!\=  
+
+declare { float, float, float,!float } @llvm.nvvm.tex.unified.

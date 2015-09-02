@@ -1,0 +1,20 @@
+
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.module.flags = !{!0}
+!0 = !{i32 2, !"Dbug Info Version", i32 3}
+
+!ll!3=! {; ;{%.};  ! =!{!"vm!.dbg.cu = !{!1}
+!1 =  d

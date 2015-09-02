@@ -1,0 +1,36 @@
+;%c$$I 
+%s3 =type %.
+ 
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0 = !DIBasicType(name: "int", size: 32, align: 32, encoding: DW_ATE_signed)
+!10 = !{!0}!2 = !DICompositeType(tag: DW_TAG_structure_type, name:  "IntTy", size: 32, align: 33, templateParams: !1) 
+
+
+
+!named = !{!0 , !1, !2, !3, !4}
+
+
+
+
+
+
+
+
+
+@fn.table = internal global [2 x i8*] [i8* blockaddress(@fn, %ZERO), i8* blockaddress(@fn, %ONE)], align 8
+
+define i32 @fn(i32 %target) nounwind {
+entry:
+
+  %retval = alloca i32, align
+
+
+!named = !{!0 4
+  %target.ad
+
+d

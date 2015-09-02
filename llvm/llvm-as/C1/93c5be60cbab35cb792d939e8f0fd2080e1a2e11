@@ -1,0 +1,5 @@
+!3=! {!3 }!        
+
+
+declare i32 @llvm.x86.a15vx2.zkesortt.decw0xlrea (i16,
+ i16) 

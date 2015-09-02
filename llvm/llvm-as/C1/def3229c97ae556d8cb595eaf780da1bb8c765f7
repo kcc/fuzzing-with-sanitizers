@@ -1,0 +1,20 @@
+     !3=!  {i1 ( %4" !3=!        !3= !{%i4* * null} 
+
+
+
+
+
+
+define vo'id @extractvalue([4 x i8] %x1, [4 x [4 x i8]]  %x2, {{i32, float}} %x3){
+entry:
+
+  %re=  txe1sractvalue [4 x i8] %x1, 0
+
+
+  %res2 = extractvalue [4 x [4 x i8 ]]  x2, 1
+
+
+  %res3 = extractvalue [4 x [4 x i8 ]] %x2, 0,  1
+"
+
+  %res4 = extractva

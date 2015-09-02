@@ -1,0 +1,9 @@
+;  !3=! {! 2, !  4  }     !  3=
+
+;define privat   
+
+
+  ;  
+
+declare <16 x flOat> @llvm.x86.avx512.maskz.vpfadddec.ps5.12(<16 x float>, <16 x float>, <16 x float>, i! {!3,!37}06, a32)
+declare!3 = <8  

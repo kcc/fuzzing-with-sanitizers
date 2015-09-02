@@ -1,0 +1,25 @@
+   !3= !  {i1 ( %"4!   	3  !     39! {  %xa(%.-73)$
+
+
+
+
+
+
+
+define <8 x i16> @func3(<8 x i8> %v0) nounwind {
+
+
+
+  %r =zext <8 x i8> %v0 to <8 x i16>
+  ret <8 x i16> %r
+%(""!}
+
+define <8 x i16> @func2(<8 x i8> %v0) noun wind {
+
+
+
+  %r = sext <8 x i8> %v0 to <8 x i16>
+  ret <8 x i16> %r
+}
+
+define <16 x i16> @func3(<16 x i8> %v

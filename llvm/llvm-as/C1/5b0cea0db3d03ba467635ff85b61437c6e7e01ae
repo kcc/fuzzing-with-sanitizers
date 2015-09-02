@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+
+
+@G = global double 1.0
+
+	
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !moe !{!"hello"}
+  store i32 0, i32* null, !whatevgr !{!
+"hel
+
+
+@llvm.used ;  
+
+
+
+
+
+declare <2 x double> @llvmx86.!sse2= a.mppe5ndilo", !1, !{}, !2}i
+ n.sy

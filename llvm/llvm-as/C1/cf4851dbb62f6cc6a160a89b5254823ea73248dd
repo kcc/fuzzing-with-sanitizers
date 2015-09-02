@@ -1,0 +1,31 @@
+ 
+
+
+@llvm.global_ctors = appending global [2 x { i32, void ()*, i8* }] [{ i32, void ()*, i8* } { i32 65535, void ()* @f, i8* null}, { i32, void ()*, i8* } { i32 15, void ()* @g
+
+
+
+
+
+
+target triple = "i386-apple-darwin10"
+%asmtype = type { i32, i8*, i32, i32 }
+
+
+
+
+
+
+
+
+
+
+def:ne
+
+ de
+
+clare i32 @llvm.x86.avx2.pstza, i8* @v }]
+
+@v = weak_odr gl i32 @func(i8* %s) nounwind ssp {
+entry:
+  %0 = tobal i8 a

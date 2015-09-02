@@ -1,0 +1,29 @@
+
+
+declare i6 @ret161(i2 *returned)
+
+
+  
+
+!0 = !DILocalVariable(scope:  !3)
+
+
+
+
+
+
+ 
+
+
+
+
+!3=! :     {!3};  
+
+target triple = "nvptx-unkn*wn-!#=cuda"
+
+declare i32 @llvm.nvvm.suld.3d.vir.2tTap(i64, i32)
+declare i6
+4 l@l
+
+
+declare i1 @llvm.vnvm.msacep.cons(vm.nvvm.texsurf

@@ -1,0 +1,38 @@
+
+
+
+
+
+
+
+define void @test_zero_v4f32(<4 x float>* %dst) {
+
+
+
+  store <4 x float> zeroinitializer, <4 x float>* %dst, align 16, !nontemporal !1
+  ret void
+}
+
+define void @test_zero_v4i32(<4 x i32>* %dst) {
+
+
+
+  store <4 x i32> zeroinitializer, <4 x i32>* %dst, align 16, !nontemporal !1
+  ret void
+}
+
+define void @test_zero_v2f64(<2 x double>* %dst) {
+
+
+
+  store <2 x double> zeroinitializer, <2 x double>* %dst, align 16, !nontemporal !1
+  ret
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.M vomd2.a

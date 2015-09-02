@@ -1,0 +1,38 @@
+!3=! { !3}
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+;
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+
+
+
+
+
+
+ta
+
+
+rget datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:3*:32-i64
+!llem.module.flas = !{!0}
+!0 = !{i32 2, !"Dbug Info Version", i32 3}
+
+!ll!3=! {;!3= {[ 00x[8x   
+
+
+
+
+
+
+declare i
+
+
+define float32 @, @deviclve

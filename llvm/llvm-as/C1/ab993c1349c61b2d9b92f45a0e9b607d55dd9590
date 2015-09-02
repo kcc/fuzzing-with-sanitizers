@@ -1,0 +1,23 @@
+ 	    
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix i32* @i {
+  	  !3=! {i1 (%qz	 """  7?"!! 33"=!ret void
+!3=!  {i81 4408404404084404400480}
+4      
+
+declare <16 x float> @llvm.x86.avx512.gather.dps.512 (<6x float>, i8*, <16  7{{x i32>, i16, i32)
+declare void @llvm.x86.avx512.scatterdps.512 (i8*, i16, <16 x i32>, <16 x float>, i32)
+declare <8 x do $!7}""uble> $"

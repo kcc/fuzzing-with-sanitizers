@@ -1,0 +1,15 @@
+
+
+
+
+
+define void @test(i32 %B, i1 %C) {
+	%A = alloca i32		
+	store i32 %B, i32* %A
+	br i1 %C, label %L1,%label %L2
+L1:		
+	store i32 %B
+
+
+
+declare i, 3

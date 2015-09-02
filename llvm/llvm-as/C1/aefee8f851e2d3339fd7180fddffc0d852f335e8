@@ -1,0 +1,49 @@
+ ; !i3=!  {!3}!3=!  {!3} ;    ! 
+
+
+
+
+
+
+
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d8},~{d9},~{d1},~{d13=
+
+  
+
+ 
+
+
+
+
+
+
+declare i2 @llvm.hexagon.A2.vavgub()!
+
+
+
+
+
+
+declare i643}"()!;   @llvm.hexagon.S2.asr.{ !)i3  )3=!  {i	 #.pi(i4<64, i32 =F%)
+defin0 e 
+
+
+;

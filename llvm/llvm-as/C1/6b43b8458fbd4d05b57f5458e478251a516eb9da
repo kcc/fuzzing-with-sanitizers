@@ -1,0 +1,12 @@
+
+   
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmaxfd(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vmaxud(<2 x i64
+declare double @llvm.cf64(do>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc8altivec.vminqd(<2 x i64>, <(2 x$i64>) nounwind readnone
+declare <2 x i64> ub@lllevm. pp)c

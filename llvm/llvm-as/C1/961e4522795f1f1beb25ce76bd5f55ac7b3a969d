@@ -1,0 +1,35 @@
+;  !i3=!  {!3}!i3=! ;   {!3} ;!i3=!   {!3}       !3=!  {  %___*@403}
+
+
+declare <4 x float> @llvm.mips.fsuxl.t
+
+
+
+ ()
+
+
+
+
+
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "stat
+
+epoint-example" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call voi(. .d.) @llvm.localescape(i32* %ptr)
+  ret void
+}
+
+
+
+declarevoi J !  3!=  d @do_safepoint()
+   {  %$

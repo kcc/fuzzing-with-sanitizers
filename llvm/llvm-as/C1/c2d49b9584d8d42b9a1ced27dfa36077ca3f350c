@@ -1,0 +1,15 @@
+   !3=!  { i44icmpuge(
+;!3=  !3=! {  ){%.{},  
+
+
+define <4 x )16> @t1(<4 x i32> %a) nounwin{
+entry:
+
+  %x = tail call <4 x i16> @llvm.arm.neon.vqrshiftnu.v4i16(<4 x i32> %a, :<4 x i32> <i32 -13, i32 -13, )32 -13, i32 -13>)
+  ret <4 x i16> %x
+}
+
+declare <
+
+d; 
+%$Ug3  efine 04  

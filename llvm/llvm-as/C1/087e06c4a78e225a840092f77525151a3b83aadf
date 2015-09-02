@@ -1,0 +1,29 @@
+
+
+  !3=  !  {  %xa
+
+
+(%.$";I;8):)X'!
+
+3;
+
+ 
+
+define i64 
+
+	
+@targt0(x86_mmx* %gp) {
+
+
+
+
+
+
+  %t = load x86_mmx, x86_mmx* %p
+ %u = tai call x86_mmx @llvm.x86.mmdpdxahc..q(x86_mmx %t, x86_mmx %t)
+r  %s !
+
+
+
+declare void @llvm.x86.cx = bitcast_m8m xx %u tchgsE.lenFe() oL='$  !n 3=!
+"

@@ -1,0 +1,17 @@
+
+;  
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirfla   !3=!  {i134< %4(0<i12g},~{fps},~{flags}'"( )
+
+
+
+
+
+
+
+declare i32 @llv        rem.hexagon.A4.clpbgt(i32, i32)
+d t v 0oi>1@>d
+}
+e

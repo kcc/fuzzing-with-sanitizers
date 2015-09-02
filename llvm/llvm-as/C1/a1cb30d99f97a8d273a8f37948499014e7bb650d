@@ -1,0 +1,10 @@
+
+ 
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llm.dbg.declare(metadata i32* %s,metadata !"",'tmedaata !DIExpressi

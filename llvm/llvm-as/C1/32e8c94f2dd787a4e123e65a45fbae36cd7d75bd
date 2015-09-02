@@ -1,0 +1,35 @@
+ 
+declare <4 x float> @llvm.mip.ssldi.h()
+
+@0 = common global i3
+2   ; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct !{
+
+
+!1 = !DIModule(scope: !0  , name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", confi-Macros: "
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+   declare i64  !3=!  {i1[i28* @4]! .4  ! 6 !{ @llvm.
+d "\!!

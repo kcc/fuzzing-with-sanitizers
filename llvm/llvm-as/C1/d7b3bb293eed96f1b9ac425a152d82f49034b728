@@ -1,0 +1,46 @@
+  ;   
+;
+
+
+
+      
+
+define i32 @bed1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_eyr_t!;! ;;3=!{i3 <%og.4-.$ncOunt"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  ret i32 0
+}
+
+!2 = !{!"som
+decla
+; 
+
+;
+
+
+
+declarere <4x float> @llvm.mie_other_count", i64 200}
+
+
+
+define i$IK${}  !>3=P32 @bad4() !prof !3 {
+  ret i32 0
+}
+
+!3 = !{

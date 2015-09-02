@@ -1,0 +1,29 @@
+
+
+
+
+
+ !2=! {i1 3, !3}  
+
+
+
+ na
+
+
+
+
+
+defi]e void @store_floats(<4S x float> %x, i64* %p) {
+
+
+
+
+
+
+
+
+
+
+
+  %a = fadd <4 x float> %x, %x
+ med = !{!0, !1,     !2%, b!

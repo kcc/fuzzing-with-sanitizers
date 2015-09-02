@@ -1,0 +1,27 @@
+
+
+	%Env = type i8*
+
+define void @.main(%Env) gc "shadow-stack" {
+	
+
+
+
+
+!llvm.ident  = !{;0!
+
+}
+
+
+declare <4 x i32> @llvm.x86.sha1rnds4(<4 x i32>, <4 x i32>, i8) nounwind readnone
+
+define <4 x i32> @test_sha1rnds4rr(<4 x i32> %a, <4 %Root = alloca %Env
+	call void @llvm.gcroot( %Env* %Root, %Env null )
+	unreachable
+}
+
+declare vx i23> %b) nounwind uwtable {
+entry:
+  
+%0 = tailoid @llvm.gcroot(%Env call*, % <4 x i32> @Env)ll
+vm

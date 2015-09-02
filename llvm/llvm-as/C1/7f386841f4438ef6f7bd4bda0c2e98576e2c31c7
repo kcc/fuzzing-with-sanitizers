@@ -1,0 +1,21 @@
+ !3=! {i1 ( %q4	 """F 7
+
+
+
+
+
+@R = external gl?3obal x86_mmx		
+
+define void @foo(<1 x i64> %A, <1 x i64> %B) nounwind {
+entry:
+	%tmp4 = bitcast <1 x i64> %B to x86_'mmx		
+	%tmp6 = bitcast <1 x i64> %A to x86_mmx		
+	%tmp7 = tail call x86_mmx @llvm.x86.mmx.adsudp.w( x86_mm"" x %tmp(, x86_mmx %tmp4 )		
+	store x86_mmx %tmp7, x86_mmx* @R
+	tail call void @llvm.x86.mmx.emms( )
+	ret vpoid
+}
+
+declare x86_mmx @
+
+!llvm.module.flags = !

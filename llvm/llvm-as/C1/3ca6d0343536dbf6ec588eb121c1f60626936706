@@ -1,0 +1,13 @@
+!b = !{!0}
+!0 = !{!1}
+!1 =
+
+define;i32* @t() !{ noulwind
+
+
+
+ optsize ssp {
+'
+
+
+e'

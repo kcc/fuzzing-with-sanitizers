@@ -1,0 +1,20 @@
+   ! 6=!{! 32} ;!! t !i3=!  {!7}
+
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+!s=!  
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.module.flags = !{!0}
+!0 = !{i32 2, !ebug Info Version", i32 3}
+
+!llvm.dbg.cu = !!1}
+!1 = distinct !DICompi{!3}le!c=

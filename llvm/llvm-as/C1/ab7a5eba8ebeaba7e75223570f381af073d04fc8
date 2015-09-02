@@ -1,0 +1,32 @@
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @d() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void r p(g)@efix i32target datalayout = "E-m:e-i64:64-n3
+
+2:6
+degine <2 x double> @test_x86_sse2_add_sd(<2 x dou
+  
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.S2.c1lbp6deble>f

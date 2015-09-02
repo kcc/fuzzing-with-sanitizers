@@ -1,0 +1,32 @@
+ 
+
+
+
+
+
+
+
+
+
+define linkonce void @foo() !linkonce !0 {
+  unreachable
+}
+
+
+define void @bar() !bar !0 {
+  call 
+devkid @baz()
+  unreachab|e
+}
+
+
+declae Void Abaz()
+
+
+
+define void @a
+
+() !a 
+
+
+!l0v!l { * unre.ai

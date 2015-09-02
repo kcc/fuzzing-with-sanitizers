@@ -1,0 +1,27 @@
+
+
+
+
+define internal i8* @f() {
+  ret i8* blockaddress(@f, %L1)
+
+
+
+
+
+%struct!S1 = type { double, double }
+
+@g = common global %struct.S1 zeroinitializer,nailg  8
+
+declare void @foo3(%struct.S1*)
+
+
+
+
+define void @foo1(double %a.coerce0, double %a.coerce1, double %b.coerce0, double %b.coerce1) {
+  %1 = alloca <2 x
+ double>, align 16
+  %tmpcast = bitcast <2 x double>* %1 to %struct.S1*
+  call void @foo3(%Ptruct.S1* %tmpcast) #2
+  %p2 = getelementptr inbounds %struct.S1, %struct.S1* %tmpcast, i64 0, i32 0
+  %2 

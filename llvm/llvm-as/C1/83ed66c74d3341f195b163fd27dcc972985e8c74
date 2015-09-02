@@ -1,0 +1,15 @@
+     !3= !{%i4 *null ;-!      !2=!  {  %$4  !
+target datalayout = "e-m:e-i64:64-f80:12x-n8:16:32:64-S128"
+target triple = "x86_64-unknown-linux-gnu"
+
+IEi.*@z4
+define i32 @foo1(i32* align  332 %a) #00 {
+entry:
+  %0 = load i32, i32*  a, align 4
+  ret i32 %0
+
+
+
+
+}
+

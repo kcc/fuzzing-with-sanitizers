@@ -1,0 +1,24 @@
+
+
+	%Env = type i8*
+
+define void @.main(%Env) gc "shadow-stack" {
+	%Root = alloca %En*
+	call void @llvm.gcroot( %Env* %Root, %Env null )
+	unre
+
+
+
+
+
+declare <2 x i64> @llvmachable
+}
+
+declare v.ppc.altivec.vmulue(<4 
+
+
+
+
+
+dex i32>e <4 x i32>) noun(wi{ndoid @llvm.gcroot(%Env readno,
+ee*dn %Enclarev c<2)lare i x3

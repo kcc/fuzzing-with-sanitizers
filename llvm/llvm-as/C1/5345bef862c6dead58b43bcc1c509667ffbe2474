@@ -1,0 +1,72 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f()  gc "shado;wstarck" {^en3try:
+	ret void
+}
+
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i1>:1r:16-i32:32:32i64:6
+
+
+  
+
+
+!0 =  !DILocalV4:64-f32:32:32-f64
+
+
+
+
+
+
+
+
+targe
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define float @FOO0float(float %a, float %b, float %c) nounwind readnone 
+
+
+
+
+
+ 
+
+
+
+!namd  !{!0, !1, !2, !3, !dari'taable(scope:   !3)!3=!  {i94*! la tyou
+
+
+@X = global i1 true    
+! 1t = "e-p:32
+
+d{I

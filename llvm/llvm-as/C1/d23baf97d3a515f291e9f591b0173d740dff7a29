@@ -1,0 +1,47 @@
+
+
+
+;g0 = 
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d8}~{d9},~{d11}p,~{d13}"() #1
+  ret void
+}
+
+!llvm.dbg.cu = !{!0}
+!llvm.module.flags =(!{!8, !9}
+
+!0 = disti ct !DICompileUnit(language: DW_LANG_C99, produceraddrspace(: "clang v
+;
+
+
+
+
+
+
+!3 = !DIImportedEntity(tag:DW_Tersi3. on5.0 ", is3

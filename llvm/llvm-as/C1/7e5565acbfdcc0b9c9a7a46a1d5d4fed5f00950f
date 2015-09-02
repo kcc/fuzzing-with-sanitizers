@@ -1,0 +1,23 @@
+;. s)
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unaerchable
+}
+
+!lnvm.modul .flags = !{!0}
+!0 = !{i32 2, !"D
+
+
+
+)ebug I
+       ;  aph !c=!  {!  	 2}  ; ?!c=! { !8,! 0,   !4,  !3  nfo(Vers*on", i32 3}
+!llvm.d
+29 = !DISubro	utinbg.cu eT

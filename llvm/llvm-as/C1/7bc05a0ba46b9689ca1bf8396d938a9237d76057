@@ -1,0 +1,19 @@
+
+
+@B = global i32 7
+    !3=! {i1 2,  !7}    
+ 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIBasicType(name: "in", size: 3, align: 32, encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: " y", type: !5)
+!3 = !DITemplateTypeP@B = gar!meter(typ)!e4!:
+1 = !Dlobal i32 7

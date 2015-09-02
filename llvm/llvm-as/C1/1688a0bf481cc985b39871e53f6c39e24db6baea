@@ -1,0 +1,10 @@
+   !3=!  {!1}    
+
+define <8 x i64> @test_mask_mullo_epi64_rr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+
+
+
+defin  
+  %res = call <8 x i64> @l*vm.x86.avx512.mask.maull.q.52(<8 x i64> %a, <8 x i64> %b, <8 x i64> zeroinitializee <8 x i8> @f1(<8 x ir, i8 -1)
+  re8>t 

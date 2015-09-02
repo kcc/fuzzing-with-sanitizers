@@ -1,0 +1,34 @@
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+dfe
+
+
+ine void @g() prefix i32target r
+datalay
+
+
+)@g = weak alias i32 ()* @g
+
+
+
+define void @goo(i32 %b)  nounwind {
+entry:
+  ret void, !attach !0
+target datalayout = "e-p:32:32:32-i1:8:
+}
+
+!0 8-i8=

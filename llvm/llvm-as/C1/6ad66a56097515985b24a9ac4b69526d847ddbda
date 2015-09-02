@@ -1,0 +1,27 @@
+
+
+
+
+ 
+
+	; !
+
+
+
+declare <4 x float> @llvm.mips.ilvr.b()
+!llvm.module.flags = !{!0}   
+
+
+!0 = !
+
+
+declare floGenericDINode(tag: 61at @llvm.nvvm.ms!qrv.f( 3 =!{)
+
+
+floati)
+
+
+@foo1 =
+
+
+

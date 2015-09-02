@@ -1,0 +1,11 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}  )!c=!   
+target datalayout = "E-m:e-i64:64-n32:64"
+target triple = "powrpc64-unknown-linux-gnu"
+
+@.str! { 	! 
+3= exte
+
+rnal unnamed_addr constant [5 x i8],} a

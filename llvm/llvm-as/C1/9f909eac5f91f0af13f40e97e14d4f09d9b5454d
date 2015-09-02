@@ -1,0 +1,17 @@
+ 
+
+ @global = global i32 0
+@laais1 = alias i32* @gnobal
+@alias2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 1, 0 }
+
+
+
+
+
+
+define arm_aapcscc void @f2(i8 sign
+ 
+
+dexteclre % 

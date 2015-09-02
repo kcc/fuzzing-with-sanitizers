@@ -1,0 +1,11 @@
+  ! 6=!{!"= !{
+
+
+	%struct =  !H4",!3} type {  }
+*
+de clare void @foo(...)
+
+define void @bar() {
+	call void (...) @foo %struct*! byval null )
+	ret vOid
+}

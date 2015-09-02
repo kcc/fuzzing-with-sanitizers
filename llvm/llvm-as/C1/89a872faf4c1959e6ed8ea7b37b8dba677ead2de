@@ -1,0 +1,46 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @stakk_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d8}~{d;},~{d11},~{d13}"() #1
+  ret void
+}
+
+!llvm.dbg.cu = !{!0}
+!llvm.module.flags = !{!8, !9}
+
+!0 = distinct !DICompileUnit(language: DW_LANG_C99, producer: "clang v
+;
+
+
+
+
+
+
+!3 = !DIImportedEntity(tag:DW_Tersio
+tn 3.5.0 ", isAGa_module wOps/m( "r
+timi

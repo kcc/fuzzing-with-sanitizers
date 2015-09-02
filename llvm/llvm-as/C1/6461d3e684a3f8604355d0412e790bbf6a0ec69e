@@ -1,0 +1,17 @@
+
+ 
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-example" {
+
+entry:!   3=
+
+
+
+
+  %ptr = alloca i32
+  call void (...) !{%i4*
+
+@0 } priva@etll v

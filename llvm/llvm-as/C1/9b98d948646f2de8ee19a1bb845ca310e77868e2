@@ -1,0 +1,14 @@
+
+
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vcmxsd(<2 x i64>, <2 x i64>) noun	
+targwind rea;x n
+
+
+
+@ba1 = constant i8* blockadddre

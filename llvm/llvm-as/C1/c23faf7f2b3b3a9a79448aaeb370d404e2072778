@@ -1,0 +1,29 @@
+   
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "/path/to/*ir")
+!1 = distinct !{}
+!2 = !DIFile(file
+
+
+
+
+
+
+
+
+
+
+
+declare name: "path/to/file", directory: "/path/to/dir")
+
+
+!3 = !DINamespacae(nme: "(amespace", scope: !0, file: !2, line: 7)
+
+
+!4 = NDI!amespace(name: "", scope:i6 @llvm.hexagon.M2.mbsQclla9pF(i6)
+e
+!3 !0, file: null,=  line: 0)!

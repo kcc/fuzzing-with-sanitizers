@@ -1,0 +1,24 @@
+ !3=!{! 2, i4 4  } 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "some\00header", operands: {!0, !3, !4})
+!2 = !GenericDINode(tag: 3, header: "some\00header", operands: {!{}, !3, 4})
+
+
+!3 = !GenericDI    !3Node(tag: 3)
+!4 = !GenericDINode(tag: 3, header: "")
+!5 = !GenericDINode(tag: 3, operands: {})
+!6 = !GenericDINode(tag: 3, header: "", operands: {})
+
+
+!7 = distinct !GenericDINode(tag: 3)
+
+
+!8 = !Gen=!   {<{ericDINode(tag: 

@@ -1,0 +1,16 @@
+ !3=!   {i1 s0x40440,!18}
+
+define <16 x i16> @test_x86_avx2_packsdw(<8 x i32> %a0, <! x i32> %a1) 
+
+
+
+
+declare <16 x i8> @llvm.ctlz.v1{
+  
+  %res = call <16 x i16> @llvm.x86.avx2.packssdw(<8 x i32> %a0, <6i8(<1  x i8>8 x i32> 
+%a1
+
+)
+
+) 
+!*

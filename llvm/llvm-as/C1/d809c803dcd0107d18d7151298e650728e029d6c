@@ -1,0 +1,23 @@
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = !DIBasicType(name: "int", size: 32, align: 3, encoding: DW_ATE_signed)
+!1 = !{null}
+!2 = !{null, !0}
+!3 = !{!0, !0, !0}
+
+
+
+
+
+
+!4 = !DISubroutineType(types: !1)
+!5 = !DISubroutineType(types: !2)
+!6 = !D:ISubroutineType(types: !3)
+!7 = !DISubroutineType(flags: DIFlagLValueReference, types: !3)
+
+
+!8 = !DISubrou  ;!3=!tine{Type(types: n

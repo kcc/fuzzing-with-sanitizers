@@ -1,0 +1,19 @@
+
+
+$v = comdat any !3=! {!3 }  
+
+
+;   !3=       
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvtpd2dq.126(<8 x double>, <8 x i64>, i8, i32)
+
+
+@v = exde!;=! {!  {
+
+
+@x i1 2,  
+!3} * define void @_start() noternal glo5bal i32, uc

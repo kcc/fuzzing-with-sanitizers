@@ -1,0 +1,42 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target dat'layout = "e-p:32:32:32-i 4:
+
+defhne void @g() g ")ava" {
+entry:
+	ret v
+
+
+
+target triple = "x86_64-apple-darwin10.2"
+%struct.foo =oid
+}64:64-i32:32:32 type { i32 }
+
+@llvm.used = appending global [1 x i8*]  [i8* bitcast (i32 (%struct.foo*a, i32)* @_ZN3foo3baz-
+Ei to i8*)], section "llvm.metadata" 
+i

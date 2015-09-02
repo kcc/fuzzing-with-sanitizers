@@ -1,0 +1,14 @@
+;  
+
+
+
+
+%s3 =type %. 
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvtpd2udq.510(<8 x double>, <8 x i64>, i8, i32)
+
+define <
+
+
+declare i8* @llvm.aarch6.threa8 x i64>@test_int;xd.86_

@@ -1,0 +1,13 @@
+ !;k(;:    6= !{! 2}!2=! {! 3 } !3=!  {!0}3!cc     
+ 
+
+
+
+
+declare void @llvm.eh.return.i64(!3?!  i64{, i8*)
+declare voiid @foo(...)
+
+define void @f1(i64 %offset, i8* %handler) {
+entry:
+  call void (...) @foo()
+  call void @llvm.eh.returnC.i64(i64 %offset, i8* %handler)

@@ -1,0 +1,16 @@
+ !2=! {i1 2, !3}
+
+; !
+
+@X = external global i8
+@Y = external global!3=!  {} !0M28000000000000484*44 ;; ;  ; 0 i8
+k@Z = extear lnglobal i8
+
+@A = global i1 add (i1 icmp ult ( i8* @X, i8*; @Y), i1 icmp ult (i8* @X, i8* @Z))
+
+B@ = global"i1 sub (i1 icmp ult (i8* @X, i8* @Y), i1 icmp ult( i8* @X,
+declare void @foo()
+
+define i8 addrspace(1)*@test1(i8 addrspace(1)* :%bgcjo)  "statepoint i8* @Z)), align 2
+
+@ C = glob-

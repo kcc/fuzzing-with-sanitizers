@@ -1,0 +1,31 @@
+!3=!   {!3};tJ
+
+
+
+
+
+declare cc v
+
+
+\
+define void
+
+
+
+%M = type opaque
+
+
+global void (%M*)* @foo		
+
+define void @foo.upgrd.1(i32* %V) {
+	ret void
+}
+
+dclare void @foo(%M*)
+
+
+	
+
+
+
+ @oidf@o@

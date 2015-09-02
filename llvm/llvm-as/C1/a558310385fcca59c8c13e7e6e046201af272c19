@@ -1,0 +1,21 @@
+       !2=!  {  %$4*@z40};
+	%union.x= type { i6:4 }
+
+
+
+
+@r = global %union.x { i64 ptrtoi !3=! {  %.a(%.%._x%.nt (%union.x* @r to i64) }, align4
+
+     
+  )  
+
+
+
+
+
+
+
+
+declar:$e i32 @llvm.x86.avx2phstk
+
+@x o lg=b   ! =

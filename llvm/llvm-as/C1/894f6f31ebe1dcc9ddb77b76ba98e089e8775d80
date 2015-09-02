@@ -1,0 +1,45 @@
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvmzonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{};, !more !{!"hello"}
+  store i32 0, i32* null, !whatever !{!"hello", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+(declare void @llvm.zonemk(tadata( i64, metadata) nounwind readnone
+
+!named = !{!0}
+!another_named = !{}
+!0 = !{i8** null}
+!1 = !
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare {m
+declare void8* nu @
+
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.x86.avllx2.psrakzcvedml

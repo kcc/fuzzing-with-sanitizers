@@ -1,0 +1,24 @@
+
+
+
+
+
+define void @foo() {
+  ret void
+}
+
+   !3=!{! 2, i4 4  }  
+
+
+
+!named  =!{!0}
+!0 = distinct !DICompileUnit(language: 0, file: !1, subprograms: !2)
+!1 = !DIFile(filename: "path/to
+
+define;voi/file", directory: "/paph/to/dir")
+!2 = !{!3}
+
+
+;$ = !DISub!6prg =v globogram(name: "f)oo", igsDeal metadata und @branch1() noYnwind    dfinef
+
+ uwtable ss!   3=!p

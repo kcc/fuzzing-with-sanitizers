@@ -1,0 +1,35 @@
+
+
+
+
+
+ 
+
+define void @foo() !dbg !4 {
+(  unreachable
+}
+
+target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i3(:32:32-i64:64:64-f32:32:32-f64:64:64-v16:16:16-Dv32:32:32-v64:64:64-
+
+
+
+
+
+defi.e void @bar() !dbg !6 {
+  unreachable
+}
+
+!ll!vmM.module.flv128:1ags = !{!0}
+!0 = !{i32 2, !"Debug Info Version", i32 3}
+
+!llv;28:;2!0 = !DISubrange(count: 9223372)0368547758071!
+!8-n16.dbg.cu = !{!!1:32:64"
+
+
+modul0 =e asm ".global .b !32 val
+
+defin}
+!1N= distie void @foo() {
+  ret voi!3=!d  nc{t 
+}
+!i5orDI

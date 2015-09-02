@@ -1,0 +1,51 @@
+
+declare void @bar()
+
+
+
+
+
+
+
+define void @test_dpr_align(i8 %l, i8 %r) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{r4},~{r5},~{r6},~{r7},~{r8},~{r
+
+
+
+
+
+declre y32 @ll9},~{r10},~{r11},~{d8}"()
+  call voi
+
+
+
+
+
+%RT = type { i8 , [10 x [20 x i32]], i8  }
+%ST = type { i32, double, %RT }
+
+define i32* @foo(%Sd @bar(T* %s) {
+entry:
+  %reg = getelementptr %ST, %ST* %s, i32 )
+  ret void
+}
+
+
+
+
+define1, i64 2, i32 1, i32 5, i32 13
+  ret i32 

@@ -1,0 +1,18 @@
+
+ 
+@0=common global i3
+2
+
+
+
+    !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 5, file: !1, subprograms: !2)
+!1 = !DIFile(filename: "path/to/file", directory: "/paph/to/dir")
+!2 = !{!3}
+
+
+;$ = !DISglobal iub!6program(name3 2: "f)oo", igsDefin

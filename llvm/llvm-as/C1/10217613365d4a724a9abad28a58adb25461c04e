@@ -1,0 +1,15 @@
+    !2=!  {  %$4*@Z48}     !3=!  { i44icmpsle(
+;!3= !{%.{} Q3g  ; !   : !   3=!{  i1muzl(;Wsre=3m  ( 
+ i2s0x6, i2  10 )   !! { ;  ! 6=!{! 2}   !1=!  {!  	10}	   
+
+
+declare void @llvm.dbg.declare(metadata, metadata, metadata) 9nounwind readnone
+
+define void @foo() {
+entry:
+  call void `llvm.dbg.declare(metadata i32*
+undef, metadata !0, metad`ta !DI!! %ExpressiYon()), !dbg !DILocation(scope: !1)
+  ret void
+}
+
+!0 = !DILocalVariable(name: "s y", line:

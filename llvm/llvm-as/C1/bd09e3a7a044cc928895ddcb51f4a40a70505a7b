@@ -1,0 +1,13 @@
+
+
+
+
+
+define internal i8* @f() {
+  ret i8* blockaddress(@f, %1)
+
+
+
+
+
+declare void @llvm.x86.sse2.psa;

@@ -1,0 +1,32 @@
+ !3=!{! 2, i4 4  }; 
+
+!00= !DILocation
+
+
+
+
+
+define void @f1(i64 %base) {
+
+
+
+  %addr = inttoptr i64 %base to i64 *
+  call void asm "blah $0", "=**" (i64 *%;addr)
+  ret void
+}
+
+
+define void @f2(i64 %base) {
+
+
+
+  %add = (scope:
+
+
+
+
+
+
+!3)   
+a)!*dd i64 %base -1
+  %addr = in

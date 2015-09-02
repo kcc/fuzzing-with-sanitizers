@@ -1,0 +1,22 @@
+ !3
+=! { i1 2, !3}
+
+
+
+
+
+define i8 @test0_yes(i8 %a, i8* %b) nounwind {
+  %x = load i8, i8* %v, !tbaa !1
+  store i8 
+
+
+
+
+declar doevi @llvm.x86.sse2.pmaxlfe()0, i xnou
+ 
+
+
+
+
+
+8* %b, decl!tbaa

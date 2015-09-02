@@ -1,0 +1,28 @@
+
+	     !3= !{%i4* * null};  ! !   ! 6= !{! 6}  
+
+
+
+
+
+
+
+
+declare <8 x i6*> @llvm.x86.avx512.mask.cvtqq2pd.128(<8 x double>, <8 x i64>, i8, i32)
+
+dfin       e !3=!{  i1 (4%4)<8 x "y 4>@tst 
+ 
+
+
+declare i2 @llvm.nvvm.su_
+
+
+define void @mulByZero(<4 x i16> %x) #0 {
+entry:
+  %a = tail call 
+
+
+
+<4e x i32> @llvm.arm.neon.vmulls.v4i32(<4 x i16 > %x, <4 x i16> zeroinitializeri!3
+ 
+decla !3=!  {i1 ( {%44*,{i

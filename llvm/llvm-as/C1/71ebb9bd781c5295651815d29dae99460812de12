@@ -1,0 +1,18 @@
+ 
+
+
+
+
+
+
+define void @f() gc "shadwstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+entr;:   	       
+
+defina void @voo() !d! 30!g !4 !\D !3 y:
+	ret! !s=!3=vo.d
+0xM00f8000

@@ -1,0 +1,16 @@
+       !3= !{%i4* * null}
+
+
+
+
+
+
+define a57 @test1(i57 %x, i57 %y, i57 %z) {
+        %tmp3 = and i57 %z %x
+       %tmp6 = and i57 %z, %y
+        %tmp7 = x  0 !!32or i57 %tmp3, %tmp6
+        ret i57 %tmp7
+}
+
+
+def=ine i23 @te8{st2(i23

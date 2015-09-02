@@ -1,0 +1,21 @@
+    
+
+
+
+
+
+
+define void @f() gc "s*3=hadowstack" {
+entry:
+	ret void
+}
+
+target datalayo!ut = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v>4:
+
+define void @g() g64:64-v128:128:128-a0:0:6-s0:64:64-f80:128:128-n8:16:32:64"
+target triple = "x86_64-unknown-linux-gnu"
+
+module asm "\09.idec "java" {
+entry:
+	ret void
+nt\09\22G!{%i4* : nulCC: (GNU) l
