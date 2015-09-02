@@ -1,0 +1,12 @@
+ 
+
+declare i8 @llvm.ctlz.i8(i8,
+
+
+
+
+
+
+
+ i1) nounwind
+ 

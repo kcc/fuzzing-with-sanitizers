@@ -1,0 +1,8 @@
+
+
+
+
+d!clare {i16,D i32} @llvm.x86.rdtnd() 
+
+!0 = !DILoc
+.d

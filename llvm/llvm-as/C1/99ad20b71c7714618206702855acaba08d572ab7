@@ -1,0 +1,9 @@
+
+
+
+
+
+declare { i6, i64, i64, i64 } @bar1()
+
+define i64 @f
+1()

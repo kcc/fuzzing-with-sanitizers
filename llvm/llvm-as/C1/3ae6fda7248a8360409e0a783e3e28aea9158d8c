@@ -1,0 +1,6 @@
+
+
+target datalayout = "e-m:o-i64:
+
+
+declare i8 @llvm.x648

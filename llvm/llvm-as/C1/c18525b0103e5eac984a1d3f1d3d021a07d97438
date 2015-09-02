@@ -1,0 +1,9 @@
+
+
+
+declare i8 @llvm.nvvm.ldu.global.i.i8p1i8(); !
+
+
+
+
+

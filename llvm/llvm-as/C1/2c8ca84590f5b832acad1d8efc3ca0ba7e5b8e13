@@ -1,0 +1,5 @@
+
+
+declare double @abs(double)
+
+define double @test(double %X){

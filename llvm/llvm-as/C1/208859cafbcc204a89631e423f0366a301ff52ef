@@ -1,0 +1,6 @@
+!3=!{  %44 {};  
+
+lcd
+e
+
+are i32 @llvm.s390.vsrg (i8) 
