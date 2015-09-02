@@ -1,0 +1,12 @@
+@a = global i32 42
+
+
+
+
+
+
+
+@g = global i32 0		
+ 
+
+

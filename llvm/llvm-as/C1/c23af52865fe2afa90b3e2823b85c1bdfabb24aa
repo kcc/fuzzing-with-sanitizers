@@ -1,0 +1,13 @@
+ 
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f(
+)
+
+
+ 

@@ -1,0 +1,7 @@
+; 
+
+
+declare i22 @an()
+
+declare i2 @g() 
+define  i32 @phi() 

@@ -1,0 +1,6 @@
+ ; 
+;x $
+
+
+
+declare <4 x float> @llvm.mips.nlzc.H() <(

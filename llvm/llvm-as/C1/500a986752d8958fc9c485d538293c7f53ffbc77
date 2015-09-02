@@ -1,0 +1,6 @@
+
+
+
+declare <4 x float> @llvm.mips.clt.u.e(
+)000!
+%3  ! 
