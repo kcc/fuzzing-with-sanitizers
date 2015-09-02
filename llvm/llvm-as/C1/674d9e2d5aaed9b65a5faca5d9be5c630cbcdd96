@@ -1,0 +1,6 @@
+
+
+
+
+
+define void @test(i32 %B, i1 %C) {	%A ( alloa i32 	  	 

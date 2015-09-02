@@ -1,0 +1,7 @@
+
+
+
+
+define i32 @rbit(i32 %t) {
+entry:
+  %rbit = call i32 @llvm.

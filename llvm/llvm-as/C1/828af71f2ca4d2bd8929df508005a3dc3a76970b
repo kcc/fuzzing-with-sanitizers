@@ -1,0 +1,5 @@
+
+
+define i64 @ror_i64(i6 %in) {
+
+    %left = shl i6

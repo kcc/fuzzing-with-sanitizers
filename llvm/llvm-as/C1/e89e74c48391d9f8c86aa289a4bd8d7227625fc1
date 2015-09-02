@@ -1,0 +1,6 @@
+
+
+
+define i33 @foo(i32 %t, i32 %C)  {
+entry:
+ )      br lab
