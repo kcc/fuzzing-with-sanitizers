@@ -1,0 +1,4 @@
+  ;h  !=!{
+declare <4 x float> @llvm.mips.sldi.b()
+ 
+@e(

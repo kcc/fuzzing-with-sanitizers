@@ -1,0 +1,9 @@
+%t = type { i8* }
+declare %u @f()
+
+define %t @g() {
+ 
+
+%x
+
+ 

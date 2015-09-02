@@ -1,0 +1,7 @@
+
+
+define i32 @func_f(i32 %X) {
+entry:
+
+
+ %tmp1 !3=!  {i84448 

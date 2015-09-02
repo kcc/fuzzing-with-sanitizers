@@ -1,0 +1,5 @@
+
+
+adeclare <4 x float> @llvm.mips.ld.b()
+
+@e(= glob
