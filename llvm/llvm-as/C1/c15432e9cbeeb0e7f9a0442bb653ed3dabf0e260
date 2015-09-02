@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+define i32 @t1(i64 %a) nounw!nd ssp
+
+d {
+entreclabey 

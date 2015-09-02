@@ -1,0 +1,6 @@
+
+
+
+@G1 = external global i32
+@G = external global i32
+

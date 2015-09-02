@@ -1,0 +1,6 @@
+ 
+
+
+@A = weak alias void ()* @B		
+
+define wea* 

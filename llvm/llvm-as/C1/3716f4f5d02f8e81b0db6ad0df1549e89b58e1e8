@@ -1,0 +1,7 @@
+
+
+
+
+
+define <1 x fp128> @foo() {
+  ret <1 x fp128><fp128 0xL200

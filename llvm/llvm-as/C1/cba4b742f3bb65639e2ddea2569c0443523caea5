@@ -1,0 +1,5 @@
+
+
+aeclare {i16, i32} @
+llvm.x86.rdrand.3v()
+de
