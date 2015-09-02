@@ -1,0 +1,5 @@
+
+
+define void @test() {
+entry 0:
+      !3=   br labe, !%

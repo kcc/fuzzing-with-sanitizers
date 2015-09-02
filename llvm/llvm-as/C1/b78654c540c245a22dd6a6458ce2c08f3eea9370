@@ -1,0 +1,8 @@
+  
+
+
+
+
+declare void @bcr()
+
+define i32 @foo()
