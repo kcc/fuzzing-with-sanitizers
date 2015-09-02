@@ -1,0 +1,4 @@
+!3=!  {!1}   
+
+declarei 32 @llvm !!0
+.x@a = global8

@@ -1,0 +1,8 @@
+
+
+
+
+
+
+define void @f1g(i32 %lhs, i16 *%src, i32 *
+%dst) 

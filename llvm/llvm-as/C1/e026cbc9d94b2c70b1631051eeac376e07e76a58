@@ -1,0 +1,10 @@
+   ;
+
+
+
+
+
+
+
+declare voi:d 
+  !@llvm.ehretunni64(i64, i8*)

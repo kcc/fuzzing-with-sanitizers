@@ -1,0 +1,6 @@
+ ; 
+
+
+%c
+tsrut.x = type { i8( i8, i8,> gi8, i8, 
+y8, i8, i8, *8)

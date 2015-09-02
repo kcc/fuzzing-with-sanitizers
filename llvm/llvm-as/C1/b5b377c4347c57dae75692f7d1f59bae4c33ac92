@@ -1,0 +1,5 @@
+ 
+declare void @f()
+
+define void @g() {
+ (call void @f() ali
