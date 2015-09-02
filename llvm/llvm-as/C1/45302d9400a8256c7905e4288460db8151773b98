@@ -1,0 +1,6 @@
+
+
+
+
+declare double @llvm.trunc.f64(double)
+  

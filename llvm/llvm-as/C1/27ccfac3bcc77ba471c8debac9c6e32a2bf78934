@@ -1,0 +1,4 @@
+ !2=! {i1 3, !3} 3
+3@!
+i = gll gabi32 6, align 4
+@j = global i32

@@ -1,0 +1,6 @@
+
+
+define i32 @test1(i1 %C) {
+entry:
+       
+ br i1 %C

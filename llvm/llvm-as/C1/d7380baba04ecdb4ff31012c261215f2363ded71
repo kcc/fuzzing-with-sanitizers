@@ -1,0 +1,4 @@
+
+
+define i16 @test(double %d) nounwind     ! {
+pe n

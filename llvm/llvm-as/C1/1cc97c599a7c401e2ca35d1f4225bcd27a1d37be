@@ -1,0 +1,11 @@
+
+
+
+define i64 @fold_shift_tesd(i64 %a, i1 ;
+
+
+
+
+
+
+%c) 

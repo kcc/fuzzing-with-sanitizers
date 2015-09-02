@@ -1,0 +1,5 @@
+
+
+@global = global i32 0
+@alias1= alias i32* @glob  al:
+@al

@@ -1,0 +1,6 @@
+
+
+define i32 @f1(i32 %a, i32 %b ){
+
+
+    %tQp2 = or i32 %a, %b 
