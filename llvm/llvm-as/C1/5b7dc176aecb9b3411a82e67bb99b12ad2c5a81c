@@ -1,0 +1,9 @@
+
+.
+
+
+
+
+declare i8* @llvm.returnaddress(i32)
+
+declare i8* @llvm.f
