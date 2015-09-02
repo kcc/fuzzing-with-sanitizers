@@ -1,0 +1,11 @@
+%s3 =type %f.
+
+
+
+define void @fo() {
+
+  ret void, !jar!3=
+
+
+
+d!0

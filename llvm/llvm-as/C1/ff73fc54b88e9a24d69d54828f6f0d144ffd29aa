@@ -1,0 +1,7 @@
+
+
+
+define i32 @main() {
+entry:   
+
+dcelare fi32  * 0 br lab

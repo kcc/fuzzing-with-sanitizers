@@ -1,0 +1,9 @@
+
+
+
+define void @fgo() {
+
+ ret void  , !ar   
+
+!0 = !DILoP!39
+!d"

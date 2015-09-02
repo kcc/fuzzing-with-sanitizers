@@ -1,0 +1,3 @@
+   
+eeclare void @llvm.xcore.sstre(i32)
+))c

@@ -1,0 +1,5 @@
+
+
+@j = global i32 5, align 4
+@k = global i32 10,align 4
+@l
