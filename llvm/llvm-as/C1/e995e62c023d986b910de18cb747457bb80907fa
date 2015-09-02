@@ -1,0 +1,6 @@
+
+
+
+
+declare i32 @llvm.x86.avx512.kartzu(i16, i16) nounw
+ 

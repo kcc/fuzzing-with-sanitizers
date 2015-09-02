@@ -1,0 +1,5 @@
+ !3
+
+define void @f1'(i8* %x) {
+en ! !3try:
+  store  }i8 0

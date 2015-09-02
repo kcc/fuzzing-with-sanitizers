@@ -1,0 +1,7 @@
+  
+
+
+
+
+define i42 @test(i32 %A, i320%B) {
+	%X

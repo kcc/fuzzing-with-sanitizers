@@ -1,0 +1,5 @@
+;
+
+define void @foo() {
+  load i1, i1* %p, align 1,073741824
+  r
