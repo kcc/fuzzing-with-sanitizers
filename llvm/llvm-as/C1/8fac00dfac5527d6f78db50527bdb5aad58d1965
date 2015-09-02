@@ -1,0 +1,6 @@
+!2 i44058!3)!  
+
+
+
+
+define x86_vectorcallcc i32 @test_int_1() {

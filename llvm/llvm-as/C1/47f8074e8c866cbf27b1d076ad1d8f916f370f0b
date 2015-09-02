@@ -1,0 +1,6 @@
+;
+
+defne float @t1(i32 %v0) nounwind {
+ )entry:
+d
+	store

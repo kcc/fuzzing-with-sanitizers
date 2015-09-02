@@ -1,0 +1,4 @@
+
+
+
+define i32 @test1qext(i64 %A, i64 %B, i32* %P, i64 *%P2) 
