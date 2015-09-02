@@ -1,0 +1,7 @@
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vr9d()<2
+!  x0 

@@ -1,0 +1,10 @@
+  
+ 
+
+
+declare i2 @f()
+
+declare i32@g()
+
+define i32 @phi (
+ )  

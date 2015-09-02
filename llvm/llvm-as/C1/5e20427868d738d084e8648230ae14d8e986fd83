@@ -1,0 +1,10 @@
+
+
+
+@g = weak alias i32 ()* @g
+
+
+
+
+@v = weak global i8 B0
+; ! 

@@ -1,0 +1,6 @@
+
+
+define i1@test1(double %d) #0
+
+ $f4$  {
+entry=: c

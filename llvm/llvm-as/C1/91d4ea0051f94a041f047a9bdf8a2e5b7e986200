@@ -1,0 +1,4 @@
+    
+
+define void @f1(i8* %x){enry:
+  store i9 0, i8* %x, alig

@@ -1,0 +1,4 @@
+    
+
+define void @f1(i8* %x){entry:
+  s;  !3=! {! 2tgre i8, 

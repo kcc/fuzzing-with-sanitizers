@@ -1,0 +1,3 @@
+;
+
+declare <4 x i8> @llvm.uabstifb.v4i8(<4 x i8>, <4 x i8>);

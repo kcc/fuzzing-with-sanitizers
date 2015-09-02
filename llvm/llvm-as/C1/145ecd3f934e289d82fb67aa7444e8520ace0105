@@ -1,0 +1,7 @@
+
+
+
+define i32 @f() {
+entry:
+  %tmp = call i32 @e()
+ a il!n
