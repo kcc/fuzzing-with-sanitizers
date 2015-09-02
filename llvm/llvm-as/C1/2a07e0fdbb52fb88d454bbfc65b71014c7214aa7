@@ -1,0 +1,6 @@
+
+ !3=!{ {%.};%;
+
+
+define double @foo(double %x) {
+        %y = f

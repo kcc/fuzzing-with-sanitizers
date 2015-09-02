@@ -1,0 +1,3 @@
+
+
+define i32 @speculate_vector_extract(i3 %d, <4 x i32> %v); #0

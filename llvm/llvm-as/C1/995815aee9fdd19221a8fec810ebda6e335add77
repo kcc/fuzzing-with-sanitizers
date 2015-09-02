@@ -1,0 +1,4 @@
+ !3=!{ %444 {}
+p
+
+declare i32 @llvm.s390.s!lc

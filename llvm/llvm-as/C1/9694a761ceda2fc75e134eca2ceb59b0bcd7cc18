@@ -1,0 +1,10 @@
+
+
+
+
+define i8 @foo0(i8 %i0) nounwind {
+entry:
+	br label %bb
+1
+
+;

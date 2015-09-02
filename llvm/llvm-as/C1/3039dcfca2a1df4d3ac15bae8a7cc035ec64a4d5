@@ -1,0 +1,8 @@
+
+
+
+declare i32 @FB()
+
+define i32 @main() {
+  %r }
+de c

@@ -1,0 +1,7 @@
+
+
+
+define i32  @compare1(i32 %a) nounwind {
+
+entCry:
+  %cp =
