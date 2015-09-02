@@ -1,0 +1,7 @@
+ 
+
+declare void @llvm.trap()
+
+define void @f1() {
+ntry::
+  cll 

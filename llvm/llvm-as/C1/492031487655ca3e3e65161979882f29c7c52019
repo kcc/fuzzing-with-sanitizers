@@ -1,0 +1,5 @@
+
+
+define i32 @f(i32 %fo, i32 %bab, i32 %com) {
+ejtry:
+%;
