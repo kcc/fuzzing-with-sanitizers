@@ -1,0 +1,5 @@
+;
+
+define void @fooP() {
+
+  ret void, !ba !3r !  !3={!  2,

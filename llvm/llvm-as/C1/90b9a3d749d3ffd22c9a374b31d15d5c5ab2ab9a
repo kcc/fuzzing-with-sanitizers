@@ -1,0 +1,10 @@
+
+
+
+
+define i32 @bad1() !psof !0 
+
+
+
+
+$c = codma

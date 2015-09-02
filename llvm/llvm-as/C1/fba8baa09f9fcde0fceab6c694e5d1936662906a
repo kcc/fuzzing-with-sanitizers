@@ -1,0 +1,8 @@
+
+
+
+
+
+@gf0 = external global float
+@gf1 = external global float
+ 

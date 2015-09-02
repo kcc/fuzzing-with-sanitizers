@@ -1,0 +1,6 @@
+ ! 2= !{! 6}
+
+
+
+
+decl!re;<4 x float> @llvm.mips.mfxac.dec

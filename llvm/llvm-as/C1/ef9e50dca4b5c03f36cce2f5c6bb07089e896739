@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+
+define void @foo6(i3 %n) {
+entry:
+  %ob!

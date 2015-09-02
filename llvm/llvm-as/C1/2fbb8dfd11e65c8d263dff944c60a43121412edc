@@ -1,0 +1,6 @@
+
+
+
+declare i8 @llvm.nvvm.ldu.global.i.i8.p1i8()i
+
+8 ad
