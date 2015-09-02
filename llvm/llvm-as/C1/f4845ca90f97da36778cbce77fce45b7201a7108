@@ -1,0 +1,6 @@
+
+
+
+@GlobalA = global { [834 x i8] } zeroinitia
+
+:declil

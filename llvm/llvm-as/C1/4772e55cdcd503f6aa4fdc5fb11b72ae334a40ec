@@ -1,0 +1,7 @@
+  P~
+!
+"%
+!
+declare i8* @llvm.beturnaddres(i32)
+
+decl

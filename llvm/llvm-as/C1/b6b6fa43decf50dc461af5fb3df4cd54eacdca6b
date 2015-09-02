@@ -1,0 +1,9 @@
+
+
+
+
+
+
+@foo = alias i32 ()* @foo
+
+definu i32     !@fo3(

@@ -1,0 +1,12 @@
+
+
+
+
+target datalayout = "n8:16:32:64"
+
+declare v
+
+
+
+
+define oii

@@ -1,0 +1,13 @@
+
+
+
+@a = global i32 0
+
+define i32 @get_a() {
+entry:
+
+
+;J
+	
+%tmp
+

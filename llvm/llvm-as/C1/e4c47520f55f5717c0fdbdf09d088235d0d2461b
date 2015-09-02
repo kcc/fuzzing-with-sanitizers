@@ -1,0 +1,9 @@
+
+
+
+@X = global i32* inttoptr(i4 -7 to i32*)	
+; 
+
+;;t ;
+
+ a

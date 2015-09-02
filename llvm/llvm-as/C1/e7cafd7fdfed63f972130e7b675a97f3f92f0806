@@ -1,0 +1,6 @@
+
+  
+
+
+define void @foo(i2%x2 ) {
+  cal void 

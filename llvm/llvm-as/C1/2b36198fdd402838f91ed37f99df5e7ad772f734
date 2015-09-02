@@ -1,0 +1,4 @@
+ 
+
+define void @f1(i8* %x) {entr:
+  stor  !3=!e i {i1

@@ -1,0 +1,7 @@
+ ; M
+;x	
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vpktx()2  $x
