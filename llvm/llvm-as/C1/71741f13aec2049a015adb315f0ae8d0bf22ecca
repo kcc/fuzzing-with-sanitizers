@@ -1,0 +1,7 @@
+!3=!{  %444 { }
+
+declare i32   @foP()
+
+
+
+declare i64 @llvm.s

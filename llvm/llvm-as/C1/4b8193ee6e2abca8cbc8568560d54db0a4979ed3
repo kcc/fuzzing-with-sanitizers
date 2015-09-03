@@ -1,0 +1,12 @@
+
+
+ 
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.ldr
+
+
+
+
+()<2 x i64>

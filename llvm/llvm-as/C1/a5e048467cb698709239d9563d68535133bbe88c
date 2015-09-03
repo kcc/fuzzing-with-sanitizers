@@ -1,0 +1,10 @@
+ 
+
+
+declare float @llvm.nvvm.!s.qrt(float)
+
+
+
+
+
+lefine

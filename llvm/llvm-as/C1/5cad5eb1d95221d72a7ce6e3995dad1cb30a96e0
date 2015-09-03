@@ -1,0 +1,13 @@
+;atreg
+
+
+
+
+
+
+
+ 
+
+define void
+ @b1(i8* %x) {
+entry:  store i

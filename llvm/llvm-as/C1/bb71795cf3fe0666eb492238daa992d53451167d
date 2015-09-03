@@ -1,0 +1,9 @@
+
+
+
+define i32 @do() {
+G:
+   br label %B E:B ! 
+3=!{ 1
+];
+ 
