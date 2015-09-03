@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+defi.e float @test1(float %x) {
+
+
+
+  %t1 = fmul 

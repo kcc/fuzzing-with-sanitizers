@@ -1,0 +1,8 @@
+
+
+
+
+
+
+define void @STWBRX(i32 %i, i8* %ptr, i32  %off) {
+      

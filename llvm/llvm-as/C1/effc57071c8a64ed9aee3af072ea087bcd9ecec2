@@ -1,0 +1,13 @@
+ 
+	%union.x = type { i64 }
+
+
+
+
+@r = global %union.
+
+
+
+
+
+x {

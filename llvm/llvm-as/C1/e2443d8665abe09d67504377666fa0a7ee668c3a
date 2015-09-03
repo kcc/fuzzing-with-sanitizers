@@ -1,0 +1,6 @@
+%s3 =type %.0S 
+
+
+
+define void @test() {
+	%A = add i72 %A, 0		
