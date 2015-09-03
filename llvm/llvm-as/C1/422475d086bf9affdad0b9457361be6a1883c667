@@ -1,0 +1,8 @@
+
+
+
+
+
+define i32 @foo0(i32 %i0) nounwind {
+entry:
+	br label %bb

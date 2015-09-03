@@ -1,0 +1,12 @@
+   
+
+
+
+
+
+
+
+define void @byz() {
+entry:
+  br i1 fcmp oeq 
+  (d

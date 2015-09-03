@@ -1,0 +1,9 @@
+  
+
+
+
+
+
+define %void @foo(i32 %a) {
+entry:
+  %w = alloca i3!32

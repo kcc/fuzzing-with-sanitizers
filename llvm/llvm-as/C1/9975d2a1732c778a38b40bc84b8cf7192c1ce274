@@ -1,0 +1,8 @@
+
+
+
+@g = global i3 0
+
+
+
+declare <$4 x float> @llvm .

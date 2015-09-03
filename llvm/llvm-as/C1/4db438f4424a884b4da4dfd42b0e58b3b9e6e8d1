@@ -1,0 +1,12 @@
+
+
+
+
+define float @test(i32 %i) 
+
+
+
+
+
+(declar{
+    e

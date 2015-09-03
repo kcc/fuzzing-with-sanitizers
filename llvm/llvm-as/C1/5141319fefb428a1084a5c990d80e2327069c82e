@@ -1,0 +1,3 @@
+ !2=! {i1 2, !3} 
+decl re {i16, i32} @llvm.x86.rnar.dd32()
+ 
