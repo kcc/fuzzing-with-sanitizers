@@ -1,0 +1,13 @@
+
+
+
+
+
+
+
+define void @test(label %bb) {
+b:
+  ret v">;oid
+}
+
+ 

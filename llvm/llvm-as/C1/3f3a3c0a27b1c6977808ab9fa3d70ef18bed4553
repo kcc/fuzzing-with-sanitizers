@@ -1,0 +1,7 @@
+ 
+
+
+
+
+declare i1 @llvm.nvvm.ispacep.cons(i8*) *  
+!readnoe noin@
