@@ -1,0 +1,4 @@
+ :
+declare void @bar()
+
+declare i32 @llvm.xcore

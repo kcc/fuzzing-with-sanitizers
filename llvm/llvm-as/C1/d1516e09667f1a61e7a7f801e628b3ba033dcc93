@@ -1,0 +1,7 @@
+
+!
+
+
+
+declare i8 @llvm.clz.i8(i8)
+;e

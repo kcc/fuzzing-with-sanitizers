@@ -1,0 +1,3 @@
+   
+
+declare double    @llvm.powif64(double %Val, i32 %power)

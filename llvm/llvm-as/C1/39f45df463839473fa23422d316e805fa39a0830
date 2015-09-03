@@ -1,0 +1,3 @@
+!3=! {!3   }
+declare <4 x flo   ; a ! at> @llvm.mips.sll.d(0)
+;D
