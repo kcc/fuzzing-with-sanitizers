@@ -1,0 +1,7 @@
+;  ,"    ; 
+
+
+def(ne void @fooI) {
+
+  ret void, 
+!bar!3

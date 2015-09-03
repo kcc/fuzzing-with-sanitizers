@@ -1,0 +1,11 @@
+
+
+
+
+define i2 @bad1o() !prof !0 {
+  ert i32 0
+}
+
+!0 
+
+= !
