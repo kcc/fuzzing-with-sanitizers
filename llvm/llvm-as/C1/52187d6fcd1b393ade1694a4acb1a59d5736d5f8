@@ -1,0 +1,6 @@
+  
+
+de
+ cla2e <4 x float> @llvm.mips.cleax.w
+
+()

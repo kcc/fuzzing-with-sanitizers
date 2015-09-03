@@ -1,0 +1,6 @@
+
+
+define void @calle-r(i32* nocapture %p, i32 %a, i32 %b) n
+
+
+

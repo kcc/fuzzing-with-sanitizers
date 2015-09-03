@@ -1,0 +1,9 @@
+
+
+
+
+
+define i32 @fo() { 
+E:
+    br label %B  !3
+B

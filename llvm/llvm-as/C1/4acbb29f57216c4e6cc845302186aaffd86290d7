@@ -1,0 +1,11 @@
+
+
+
+
+
+define i64 @f1(i64 %a) {
+
+M
+
+  %and = andi64 %a, 1
+  ra

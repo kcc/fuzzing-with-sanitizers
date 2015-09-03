@@ -1,0 +1,5 @@
+!3=!{ {%.}
+
+declar {i16,
+
+$v= co!lda i32} (@llvm.x86.rdrt 

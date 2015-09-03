@@ -1,0 +1,8 @@
+
+
+
+
+@var = global i32 0, align 32define i32 @main() 
+
+
+decla

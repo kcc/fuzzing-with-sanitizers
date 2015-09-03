@@ -1,0 +1,9 @@
+
+
+
+
+declare void @baz()
+
+declare void @bar()
+
+define void @foo()

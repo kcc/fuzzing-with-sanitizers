@@ -1,0 +1,7 @@
+!3=!{  %44 { }
+
+
+declare i64 
+
+
+@llvm.ppc.rdci$(i64)  !3=! 

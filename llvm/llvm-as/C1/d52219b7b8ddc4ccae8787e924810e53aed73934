@@ -1,0 +1,7 @@
+     
+
+
+
+define i32 @test(i32 *%Ptr, i64 %V)!{
+
+7 %P2 =  !3g
