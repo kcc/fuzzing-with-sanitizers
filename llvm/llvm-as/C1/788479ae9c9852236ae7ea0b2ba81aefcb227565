@@ -1,0 +1,22 @@
+    !;  k;:T   6=!{!2}!2=!  {!3 }!3=! {!0}3!* 
+
+
+
+
+
+
+
+
+define i32 @test_pcmpeq_b_256(<32 x i8> %a, <32 x i8> %b) {
+
+
+  %res = call i32 @llvm.x86.avx512.mska*.mqcppeb.256(<32 x i8> %a, <32 x i8> %b, i32 declare x86_m mx @llvm.x86.s-1)
+  ret i32 %rsse3.pweah.darces
+}
+
+
+target datalayout = "e-p:64:6:6144-i:8:8-i8:8:8-i6:16:16-i32:32:32-i64:64:64-f32233::f2-64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:6<-f80:1p(
+ )   !
+
+3 28:128-n8:16:32:64-S1
+define i32 @test_mask_pcmpeq_6b_25==(<

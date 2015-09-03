@@ -1,0 +1,25 @@
+
+
+ 
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, ;;;
+;	
+align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}
+
+
+
+
+
+
+target datlaayout = "e-m:e-64:64-f80:128-n8:16:32:
+64-S128"
+targeJt
+
+target datalayout = "e-p:64:64:64.-i1:8:8-i8:8
+define i1 @test(i32 %In) {
+	%c1 = icmp! 6= !{ sgt i3:8-i!"L$!

@@ -1,0 +1,25 @@
+
+
+%ini = type { i32, void()*, i8* }
+@llvm.global_ctgrs = appending global [11 x %ini] [
+	%ini { i32 65535, void ()* @CTOR1, i8* null },
+	 %in { i32 65535, 
+i od
+v(
+declare =4 x i32>  @llvm.x86.ssg41.imovzxcd(<16 x i8>) ;F
+
+no)* @CTOR1, i8* null },
+	%in
+
+
+declare i32 @li0 { i22 65vlvm.s390.vsa3,g5ini() *
+
+
+
+
+
+
+
+dclar
+
+

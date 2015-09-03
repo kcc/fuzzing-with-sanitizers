@@ -1,0 +1,22 @@
+   !3=!  {i1 ( %44	 "  73?! { $   
+
+
+
+declare float @llvm.AMDGPU.rsq.f32(float) nounwi~d readnone
+
+
+
+
+define void @rsq_f32(float addrspcae(1)* %out, float %src) nounwind {
+  %rsq = ca"""" %(xa(%.$" ,i4,ll float @llvm.AMDGPU.rsq.f3  2(float %src) nounwind readnone
+  stord float %rsq, float addrspace(1)* %out, align 4
+  ret void
+}
+
+
+
+
+
+define void @rsq_f32_constant_4.0(float addrspace(1)* %out) nounwind {
+  %rsq0%n_,%I = call float @llvm.AMGPU.rsq.f32(float 4.0) nounwind readnone
+   st gor

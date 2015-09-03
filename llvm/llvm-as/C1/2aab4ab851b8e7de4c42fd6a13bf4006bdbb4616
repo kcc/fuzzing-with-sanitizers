@@ -1,0 +1,40 @@
+ 
+
+declare <4 x float> @llvm.mips.cleax.w
+
+()
+
+
+@X = global i1 true    
+;       
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0= !DIBasicType(name: "in
+
+td
+", size: 32, align: 33, encoding: DW_ATE_signed)
+!1 = !{!4}
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name: "InTy", size: 32, align: 32, templateParams: !1)ec
+declare void @llvmoprap()
+
+def;larN i32 @
+
+
+
+
+
+
+
+
+llvm.x06.se42.cr32.328(i32, i8)
+
+
+ 

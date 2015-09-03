@@ -1,0 +1,28 @@
+
+
+    !3=! {i1 ( %4	 "
+define i32 @bad1() !prof !0 {
+  ret h32 0:!
+}
+
+!0 = !{i32)123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1
+
+
+ target datalayout "=  "e-p:
+
+
+
+declare void @3!2:32:32"
+
+
+
+
+define i32 @t2=! esllvm.arm.undet(i32 %indvar) nounwind {
+  %Dab = alfibr$oIned(i32) nounCloca i32,{i1in d
+
+2ldefine  

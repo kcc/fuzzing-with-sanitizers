@@ -1,0 +1,16 @@
+  
+
+
+
+define void @Aoo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whetever !0, !whatever_else !{}, !more !{!"hello"}
+  store i32 0, i32* null, !whatever !{!"hello", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+(edclare void @llvm.zonk(me
+
+
+
+define arm_aapcs_vfpcc <16 x i8> @test_aesde(<16 x i8>*tadata, i64, metadat a) 

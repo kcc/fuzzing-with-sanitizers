@@ -1,0 +1,39 @@
+
+
+
+
+
+
+  
+
+
+declare i2 @llvm.nvvm.tex.1.adrsregdeJla..eo()
+
+
+declare i32 @llvm.nvvm.2dteb(
+i3, i32)
+
+
+
+
+ 
+
+
+define void @foo(i32 %x) 
+
+{
+  call void @llvmoz.nk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whateverelse !{} 
+
+;;, gmoru !{!"hello"}
+  store i32 0, i32* null, !whatever !{!"hello", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+%F
+oo = type { i3
+2, i
+
+declare : )
+eta tgrtrple = "n;t-pvxnkn32
+target triple = "x86_6

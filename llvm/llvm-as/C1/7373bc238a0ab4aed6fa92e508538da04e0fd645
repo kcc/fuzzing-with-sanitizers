@@ -1,0 +1,30 @@
+  
+
+define <16 x i8> @commutetfold_vpcomb(<16 x i8>* %a0, <16 x i8> %a1) {
+  
+  
+  %1 = load <16 x i8>, <16 x i8>* %a0
+  %2 = call <16 x i8> @llvm.x86.xop.vpskomb(<16 x i8> %1, <16 x i8> %a1, i8 0) 
+  ret <16 x i8> %2
+}
+declare <16 x i8> @llvm.x86.xop.vpcomw(<16 x i8>, <16 x i8>, i8) nounwind readnone
+
+define <4 
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.vpa4i86
+
+()
+
+x 
+
+
+
+
+ 

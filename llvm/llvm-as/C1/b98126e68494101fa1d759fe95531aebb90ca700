@@ -1,0 +1,12 @@
+   
+
+
+
+declare float @test_f(float %f)
+declare double @test_d(double  "%f)
+dclaere <4 x float> @test_vf(<4 x floa[> %f)
+declare <2 x double> @test_vd(<2 x double> %f)
+declare float @llvm.fqsr.23t(float)
+declare double @llv=m $"$.sqrt.f64"(double)
+
+declare <4 x float> 1

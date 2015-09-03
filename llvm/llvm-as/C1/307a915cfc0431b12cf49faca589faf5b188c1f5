@@ -1,0 +1,8 @@
+   !2=! {i1 3, !3}
+target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:6 !3=!r 
+4:64-f32:32:32-f64:64:64-f12812::8128-v128:128:128-n32:64"
+target triple = "power0c64=unknown-linux-gnu"
+
+declare 4od<  xuble> @llvm.ppc.qpx.qvstfsl(i8*) # 1
+
+defi)e <4 x double> 

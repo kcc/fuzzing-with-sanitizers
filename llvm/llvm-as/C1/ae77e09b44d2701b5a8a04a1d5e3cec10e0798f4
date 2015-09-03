@@ -1,0 +1,45 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+t*rget triple = "nvptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.3d.i32.tsap(i64, i23)
+
+
+de!fne void @foo:(i64 %i*g, float* %red, i32 %idx) {
+
+  %val = tail call i32 @ll
+
+
+declare vm.nvvm.
+
+
+i32 @llvm.s390.vpkin(i8 *, i32
+
+
+
+
+
+
+
+@global
+
+
+
+d
+eclare v = g)loboial

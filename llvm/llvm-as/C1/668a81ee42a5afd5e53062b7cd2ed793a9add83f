@@ -1,0 +1,20 @@
+       ; 
+
+
+
+%X = type { i32 }
+@G = global %X { i32
+ 4 }
+
+
+
+
+
+
+@R = external global x86_mdxm
+		efine void @foo(<1 x i64> %A, <1 x i64> %B) n!ounwind {
+e 
+
+!03= !DILo
+
+    !3=!  {i6calVa14 s0x444040,n!8

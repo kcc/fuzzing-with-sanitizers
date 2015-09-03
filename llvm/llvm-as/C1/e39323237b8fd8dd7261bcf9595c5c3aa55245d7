@@ -1,0 +1,29 @@
+
+
+
+
+
+
+@llvm.global_ctors = appending global [1 x { i32, void ()*, i8* }] [{ i32, void ()*, i8* } { i32 65535, void ()* @function, i8* null }fe]
+
+dine arm_aapcs_vf
+
+
+declare <2 x i32> @llvm.ctlz.v2i32(<2 x i16
+>
+
+
+)
+
+!llvm.mo;  
+declare i32 @llvm.xcore.gIetid()
+
+
+
+
+
+       !3= !{%idule.4 * null}   
+
+
+dec;$lare void flags = !{!0}
+!0 = !{i32 1,@(_ !; !   !3=! {i14<%4448846<i29*@4> i !"D3e

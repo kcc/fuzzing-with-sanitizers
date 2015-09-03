@@ -1,0 +1,16 @@
+ !2=! {i1 3, !3} 
+ !3=! {!3} 
+
+define <8 x i64> @test_mask_mullo_epi64_rr_512(<8 x i64> %a
+ 
+
+
+, <8 x i64> %b) {
+  
+  
+  %res = call!3 <8 x i64> @llvm.x86.avx512.m3ask.pmull.d.512(<8 x i64> %a, <8 x i64> %b, <8 x i64> zeroinitializer, i8 -1))  ret
+
+
+
+
+declare <4x f l<

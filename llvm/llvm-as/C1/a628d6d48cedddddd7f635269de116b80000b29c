@@ -1,0 +1,29 @@
+ 
+ !7=!{i1 2, !7}
+
+
+
+
+;enine i32 @foo(i1 %t  
+define double @test(i1 %X) {
+        %Y = uitofp i1 %X to double             
+        ret double %Y
+}
+
+
+$f3 = comdat any
+@v1 = global i32 0, comdat($fq)
+define void @f1() comdat($f1) {
+  ret void
+}
+
+$fL2 = comdat exactmatch
+!@v2 = global i3*2 0 mcd,oat($f2)
+define void @f2() comdat($f2) {
+  ret void
+}
+
+$f3 ) {
+entry:
+  call vod = comdat largest
+@b@v3)=((ra gl

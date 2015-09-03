@@ -1,0 +1,52 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, aling4
+
+     
+    
+
+
+
+
+
+
+
+
+decla
+
+
+
+
+
+
+ 
+  
+
+!0 = !DILocalVari 
+
+
+
+dfinee i32 @foo() –no
+
+
+declar <4 x float>
+
+ @llvm.mips.cmax.()
+	
+
+
+;;$$I=
+
+@00=  common global i3
+2
+
+
+ global i32
+
+ù  
+6
+@iunw = linkonce  !3_

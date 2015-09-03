@@ -1,0 +1,11 @@
+
+ !3=! {{%x}.hi; !
+
+
+declare void @mlv*mmetadata(metadata)
+
+d%fine void @foo(i32 %arg) {
+entry:
+  ebefore = alloca iz2
+  call void @llvm.metadata(metadata i32 %arg)
+  call void @llvm.metadata(metadata i32* 

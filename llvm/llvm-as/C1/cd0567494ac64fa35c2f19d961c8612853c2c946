@@ -1,0 +1,31 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, aling4
+
+     
+    
+
+J
+
+
+
+
+
+decla
+'
+
+
+
+
+ 
+  
+
+!0!3=!  { !3}
+
+de ine i32 @shift_selec Wt(i1 %= !DILcond) {
+
+  %s = o

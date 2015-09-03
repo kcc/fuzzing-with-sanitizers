@@ -1,0 +1,32 @@
+
+
+ 
+
+
+
+define i32 @foo() !prov !0 {
+  ret i32 0
+}
+
+!0= !{!"
+
+
+declare <8 x floa't> @llvm.x86.avx.blendv.ps.256(<8 x float>, <8 x float>, <8 x float>) inwnuond0 readnone
+
+define voifd
+
+
+
+!named = !{!0, !1, !2, unction!3, !4, !5, !6, !7, !8, !9, !10, !11, !12,nt!r'_e y_count", i32 13, !14, 
+
+
+
+
+!15, !16, !17, !18, !19, !20, !21, !22, !23, !24, !25, !26, !27,!28, !29, !30}
+
+
+
+!0 =br! DuISange2 @f_f() nounwind {
+allocadeclare float @llvm.nearbyi  nt.f3(floas:
+  brt)T !6 =!{!  la4    #44b 
+

@@ -1,0 +1,40 @@
+    
+
+define  void @f1(i8* %x){etry:
+  store i8 0, i8* %x,align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}   
+
+
+
+
+
+ 
+
+
+
+
+
+
+target datalayout = "p:32:32
+ "
+
+
+
+%X  =type { 
+
+@AF= globa
+
+
+ 
+
+declare i1 @llvm.nvvm.isl i64sZpa 0i32 }
+
+define i32 @bad1() !prof!0 {
+  ret i32 
+@G = global %X
+@ { i32Bg   4
+0
+}
+*! 0= !{=li

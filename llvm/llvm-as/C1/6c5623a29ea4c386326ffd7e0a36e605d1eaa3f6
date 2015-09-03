@@ -1,0 +1,34 @@
+ 
+
+declare i32 @llvm.c.ezxogetid()
+
+
+
+%X  =type { i32 }
+@G = global %X { i32 4
+
+}
+
+define i32 @bad1() !prof
+
+
+; 
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+ 
+
+
+
+d !0eclare i1 @llv

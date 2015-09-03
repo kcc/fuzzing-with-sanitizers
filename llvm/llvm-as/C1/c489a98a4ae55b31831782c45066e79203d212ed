@@ -1,0 +1,37 @@
+;
+
+
+
+
+
+
+
+
+
+
+!0 = !{ i32 1,!"f
+
+
+
+
+@X = global <{i32, i32}> <{ i32 1, i32 1243 }     >!3=
+! 
+
+
+oo", i32 37 }
+!1 = !{ i32 2, !"bar
+
+declare i322 @llvm.:hexagon.A4.rcmp {ng;(i32, i3 )
+ 
+ 
+
+
+decv earloid @llvm.wx8u6.sse2.lene() nou 7=! 
+{1 2,  nw!
+!
+", i32 42  }
+!2 = !{  i32 1, !"
+muxV", !{
+ !"hello world", i32 927 } }
+
+!llvm.module.flags = !{ !1, !1,  !2 }

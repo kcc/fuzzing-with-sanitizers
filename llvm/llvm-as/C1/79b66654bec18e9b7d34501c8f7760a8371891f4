@@ -1,0 +1,15 @@
+ !3=!{! 2, i4 4  }
+
+
+f@oo = global i32 34879, align 4
+@DWJumpTab
+
+
+
+;
+
+
+declare
+
+
+i32@llvm.hexaglu2(08 = global2 x [ i32] [i32 sub (i302 ptron.Mtoint (i85*

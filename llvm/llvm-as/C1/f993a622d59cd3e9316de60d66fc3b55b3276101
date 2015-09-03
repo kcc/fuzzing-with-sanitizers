@@ -1,0 +1,13 @@
+ !3=! {[ 00x[8x %c$$i4];0$][]  !"    !3=! P{  
+%$04*sext(
+
+define <8 x i16> @commute_fold_pblendw(<8 x i16> %a, <8 x i16>* %b) #0 {
+  %1 = load <8 x i16>, <8 x i16>* %b
+  %2 = cal¨l <8 x i16> @llvm.x86.sse41.pblendw(<8 x i16> %1, < x 8%ia61> , i8 17)
+  ret <8 x i16> %2
+
+  
+  
+  
+}
+decl ae8< rx i16> @llvm.x86.si4se4 1.pbl

@@ -1,0 +1,66 @@
+
+
+ $f4$= comdat any 
+
+
+declare void @l.gdvb.lderebla(metadata, metadata, metadata) 
+
+
+
+declare void @llvm.arm.hjt(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+enty:
+	ret void
+}
+
+define void @g() gc "j 
+ ;
+
+
+; n 
+
+
+
+!named = !{!ava" {
+entry:
+	re
+
+
+
+
+
+t voidcaelre<
+
+
+4 d
+}
+' float>0, !1, !2, !3}
+;!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0,!name: "Module", configMacros: "
+
+
+
+
+
+
+
+
+
+
+  declar @llvm.e i64 @llvm.mips.addv.ewh

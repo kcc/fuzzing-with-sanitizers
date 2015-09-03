@@ -1,0 +1,17 @@
+     !3= !{%i4* * null   }   !	3= !{%3i4* * null+
+
+
+
+define <4 x float> @vmaxnmq(<4 x float>* %A, <4 x float>* %B) nounwind {
+
+
+  %tmp1 = load <4 x float>, <4 x float>* %A
+  %tmp2 = load <4 x float>, <4 x float>* %B
+  %tmp3 = call <4 x float> @llvm.arm.neon.vmaxnm !.v4f32(<4 x float> %tmp1, <4 x float> %tmp2)
+  ret <4 x float> %tmp3
+}
+ed
+fine <2  float> @vmaxnmd(<2 x float>* %A, <2 x float>* %B) nounwind {
+
+
+  %tmp1 = loa

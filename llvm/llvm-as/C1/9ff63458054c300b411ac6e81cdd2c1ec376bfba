@@ -1,0 +1,40 @@
+;
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+define <8 x i8> @sqadd8b(<8 x i8>* %A, <8 x i8>* %B) nounwind {
+
+
+	%tmp1 = load <8 x i8>, <8 x i8>* %A
+	%tmp2 = load <8 x i8>, <8 x i8>* %B
+	%tmp3 = call <8 x i8> @llvm.aarch64.neon.sqadd.v8
+!0 = !DILocation(scoi8(<8 x i8> %tmp1, <8 x i8> %tmp2)
+	ret <8pe:
+ 
+
+
+
+ x i8> %tmp3
+}
+
+define <4 x i16> @sqadd4h(<4 x i16>* %A, <4 x i16>* %B)nounwind {
+
+
+	%tmp1 = load <4 x i16>, <4 x i16>* %A
+	%tmp2 = load <4 x i16>, <4 x i16>* %B
+	%tmp3 = call <4 x i16> @llvm.aarch64.neon.sqadd.v4
+
+!3)
+
+i16

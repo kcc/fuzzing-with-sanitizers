@@ -1,0 +1,68 @@
+    
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddfine i32 @bair(32 %a,ashr i30 %b) {
+entry:
+  %su = add i32 %a, %b, !dbg !DIL4ocation(line 2, scope: !:,
+                        ;                inlinedAt: !ILocation(line: 12, scope: !3))
+  ret 
+
+
+declare<
+
+
+4x fl!3=!  {i1u3%  is2m,eclare  !dbg !DILocation(l:ie ;n13", scope: !3)
+}
+
+define li)
+nko[i203 4]0!4= n
+
+
+
+;   !3=    :   
+
+
+
+
+
+declare ÷<4 x i32>  @llvm.x86.sse41.pmovzxdb(<16 
+
+declare <8 xoat>@x i

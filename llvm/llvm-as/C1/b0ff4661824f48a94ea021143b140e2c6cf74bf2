@@ -1,0 +1,24 @@
+  %s3 =type %.0   !2=!  {  %$4*@z40}    
+
+define i32 @tet_crc32b(i32 %cur, i8 %next) {
+
+  %bFits = zext i8 %next t
+ 	 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIBasicType(name: "i*t", size: 32, align: 32, encoding: DW_ATE_igsned)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "Ty", type: !5)
+!3 = !DIT
+
+
+declare void @llvm.x86.sse2.emplateTy!=peParameter(type:!
+1)! 4 = !DITempateTypePo i32
+  %val = arameter(name:c

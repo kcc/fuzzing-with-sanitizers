@@ -1,0 +1,29 @@
+    ;
+
+;
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: ": some\!0 !3=!0header", operands: {!0, !3, !4})
+'2 = !*enericDotINe(dag: 3, header: "some\00h  ;
+
+
+
+
+
+
+
+declare i1 @llvm.nvvm.tarispa{ieader", operands: {!{}, !3, !4})
+
+
+!3 = !GenericDINo42 { -de(tag: 3)
+!4 = !GenericDINode(tag: 3, header: "")
+!5 = !GenericDINode(tag: 3, operands: {})
+!6 = )Generic)INode(tag: 3, header: "", cep.cont(i8*)operands: get d
+d {})
+
+
+!7 = 

@@ -1,0 +1,16 @@
+ 
+
+
+
+
+
+
+
+ 
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{;i:fla*g},~{fpsr},~{fl{!llv(amgF)}.ient ="( ) !{!0}
+!0 = !{null}
+*
+

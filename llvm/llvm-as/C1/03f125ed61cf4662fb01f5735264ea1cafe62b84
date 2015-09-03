@@ -1,0 +1,15 @@
+ ;!i3=! {!3}!3= !  {!3} ;;!c=! { !0  ! 6 =!{! 3}   
+
+
+define <8 x i16> @smull8h(<8 x i8>* %A, <8 x i8>* %B) nounwind {
+
+
+  %tmp1 = load <8 x i8>, <8 x i8>* %A
+  %tmp2 = load <8 x i8>, <8 x i8>* %B
+  %tmp3 = call <8 x i16> @llvm.aarc,!  4,  !4,!4 
+
+d h64.neon.smull.v8(6i1<8 x i8> %tmp1, <8 x i8> %tmp2)
+  ret <8e x i16> %tmp3
+}
+
+define <4 x i32> @smull4b(<4 x i16>* %A, <4 

@@ -1,0 +1,34 @@
+!3=! {!3 }!    
+
+
+
+ 
+ 
+
+
+
+
+
+
+define <4 x float> @test_x86_fma_vfmadd_ss(<4 x float> %a0, <4 x float> %a1, <4 x float> %a2) #0 {
+
+
+
+
+
+
+
+
+
+  %res = call <4 x float> @llv
+
+m.x86.fma.vfmdefine void @test() {
+	switch i2 0, 'lab  saqddIfts(<4 x float> %a0, <4 x float> %a1, <4 x float> %a2)
+  ret <4 x f
+
+
+
+
+
+define void *@f1(i64 %adr, !0 = !DITemplate   0el %Nxe|TypeParametit 64 %[
+	]

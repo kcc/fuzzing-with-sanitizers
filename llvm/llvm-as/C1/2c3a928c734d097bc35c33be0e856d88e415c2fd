@@ -1,0 +1,22 @@
+    !3=!  {i1 ( %4" !
+
+
+
+
+!llvm.ident  = !{;0!
+
+}
+
+
+declare <4 x i32 @llvm.x86.sha1rnds4(<4 x i32>, <4 x i32>, i8) nounwind readnone
+
+define <4 x i32> @test_sha1rnds4rr(<4 x i32> %a, <4 x i32> %b) nounwind uwtable {
+entry:
+  
+%0 = tailcall <4 x i32> @llvm.x8.sha1nrds4(<4 x i32> %a, <4 x i32> %b3=! ' ", i8 3)
+  ret <4 x i32> %0
+  
+  
+}
+
+define <4 x i32> @test_sha1rnds4rm(<4 x i32> %a, <4 x i32>* %b) nounwind 

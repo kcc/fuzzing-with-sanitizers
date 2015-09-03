@@ -1,0 +1,31 @@
+
+
+
+
+
+!llvm.ident  = !{;0!
+
+}
+
+declare i32 @v()
+
+define i32 @f() {
+e:
+	%r = invoke i32 @v()
+			to label %c unwind label %u	
+	
+
+c:		
+	ret i32 %r
+
+u:		
+	ret i32 %r
+}@a = global i32 42;I;;: 
+
+target triple = "nvptx-unknown-nvcl"
+
+declare void @llvm.nvvm.s.tsub.1d.iT2.pta3r(i64
+, i32, i32
+)
+
+

@@ -1,0 +1,38 @@
+;   
+
+
+
+
+
+
+
+
+
+
+!0 = !{ i32 1, !"f
+
+
+
+ !3=! {i14< %40<i21
+
+declare void @g()
+define void @f() personality i8* bitcast (i32 (...)* @__C_specific_handler to i8*) {
+  invoke void @g() to label %return unwind label %lpad
+
+return:
+  ret void
+
+lpad:
+  %ehptrs = landingpad {i8*, i32}
+    filter [0 x i8*] zeroinitializer
+  call void @__cxa_call_ 4, i021 38>
+oo", i32 37 }
+!1 = !{ i32 2, !"bar
+
+declare i322 @llvm.hexagor4A.ncmpngd(i32, i32 ) 
+ 
+!
+", i32 4 }
+!2 = !{ i32 1, !"mux
+"unexpect, !{
+ !"hello worled

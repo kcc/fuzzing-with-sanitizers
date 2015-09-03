@@ -1,0 +1,40 @@
+      !3=  ! {  %xa(%VI$4"
+
+declare void @llvm.memset.i32(i8
+)
+
+
+
+
+define void @f1(<16 x i32> *%src1, <16 x float> *%dest) {
+
+
+
+  %val = load <16 x i32> , <16 x i32> *%src1, !tbaa !1
+  %add = add <16 x i32> %val, %val
+  %res = bitcast <16 x i32> %a
+
+
+
+
+
+
+
+dd to <16 x float>
+  store <16 x float> %res, <16 x float> *%dest
+
+
+
+
+, !tban !2
+  ret void
+}
+
+!0 = !"{)o !ot"}
+!1defin  =
+
+
+e <2;I):/!$"= """$    !nan3= ~x double> @sitof! dp
+_2
+
+ {i6 4 !w

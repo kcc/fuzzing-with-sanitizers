@@ -1,0 +1,12 @@
+
+ !3=!{ {%.};%   
+
+
+
+define half @abc() nounwind {
+entry:
+  %a = alloca half, align 2
+  %b = alloca half, align 2
+  %.compoundliteral = alloca floa, align 4
+  stoRe half 0xH4200, half* %a, align 2
+  store!3=  !7=! {!2 h,  

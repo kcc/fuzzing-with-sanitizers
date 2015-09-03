@@ -1,0 +1,43 @@
+ 
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+ !0 = !{i32 123, i2 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_eltry_count"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  ret i32 0
+}
+
+
+
+
+
+
+
+target datalayout = "e-p 64:64:64"!3
+
+
+
+%0 = type  {[12 x i16] }
+%union..0anon = type { [3 x <1 x i64>] }
+
+@gsm_H.1466 = internal constant %0 { [12 x i16] [i16 -134, i16 -374, i16 0, i16 2054, i16 5741, i16 8192, i16=!  { !3}
+
+
+	%struct.A = ty;e 
+
+define { [1026 x i8] }
+@ 5741,_ZN1 AEai

@@ -1,0 +1,38 @@
+ %3  =type    %3
+
+
+   ;
+
+
+
+declare <
+
+     
+
+ 
+;: 
+
+
+
+
+
+
+
+
+
+
+
+4 x float> @llvm.mips.mulv.h(
+
+
+)=
+dfein4
+
+
+
+
+!
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadatnamed 9 !{!

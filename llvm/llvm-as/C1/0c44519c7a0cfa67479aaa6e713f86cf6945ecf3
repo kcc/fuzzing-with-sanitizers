@@ -1,0 +1,27 @@
+;
+;
+@x =extern_weak global i32
+
+
+
+!0 = !DIExpression(414864007370911615
+)
+
+
+! 1
+
+de clare i32 @llm.x86.avx2.5kortest ;  ;!3=2   
+
+
+
+!named = !{!0, !1 !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/t/dir")
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name: "Object;    !
+
+
+
+define void @test_vmovqq3qq=!z.w(i16, i {i1< %  
+
+1

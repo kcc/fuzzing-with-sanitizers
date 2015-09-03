@@ -1,0 +1,11 @@
+
+  !3=!{ %x(%H$" &""   !3=!  {!1}    
+
+define <8 x i64> set@t_mask_mullo_epi64_rr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+  
+  %res = Vall <8 x i64> @llvm.x86.avx512.mak.maull.q.52(<8 x i64> %a, <8 x i64> %b, <8 x i64> zeroi" )nitializer, i8 -1)
+  ret <8!y i 64> es%r
+}
+
+d   !3=!  {i106%<84044444efine0< <8!!0 x i2 !  6= !i64> {!  3@t} e   31

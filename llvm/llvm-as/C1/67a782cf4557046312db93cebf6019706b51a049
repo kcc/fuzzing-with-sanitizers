@@ -1,0 +1,22 @@
+;    !c=! {!  	 3}  ;d  
+
+
+
+
+ 
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(
+tag: 3,; headr: "some\00hgader *, 
+ operands: {!0, !3, !4})
+!2 = !Gene 
+
+
+
+@0 = global i8 insertvalue( { i8 } select (i1  ptrtoint (i32* @1 to i1), { i8 } {!i8 1 }, { i8 } { i8ricDINo 1 }), ide(tag: 8 8

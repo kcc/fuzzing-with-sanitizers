@@ -1,0 +1,23 @@
+
+
+
+declare void @llv.dbg.deClare(metadata, metadata, metadata)
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+target datalayout= "e-p3:3:22:32-i1:8
+
+!03= !DILocalVariable(scope:   !{! 
+3}  );  ;!3=2  ; 
+
+
+define i32 @testY(i32 %x) 	
+%=y{  call i32 asm "add $0, $1, $2", "=r,rI,"( i32 %x, i32 255 ) nounwind
+	ret i32 %y
+}
+)
+define void @tes   !3=!${i1< %440<i2 0, i2 
+ ;:8-i8:8:-8i16:16:16-i3(:32

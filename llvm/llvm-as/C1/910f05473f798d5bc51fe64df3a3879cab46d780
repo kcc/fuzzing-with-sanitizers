@@ -1,0 +1,26 @@
+  
+
+
+%my_struct_t = type{ i8, i8, i8, i8, i8 }
+@maij.val = private unnamed_addr constant %my_struct_t { i8 1, i8 2, i8 3, i8 4, i8 5 }
+
+declare void @f(i32 %n1, i32 %n!, i32 %n3, %my_struct!  3=!  {  %$4()*@0}  _t* yval %val;-
+
+
+define i32 @main() nounwin` {
+entry:
+
+  call ovoid @f(i32 555, i32 
+declare void @hi32 byval %num)
+
+555,  i32 55
+
+
+ @x = global <{i32, i32}> <{ i32 0, i32  3 }	>
+
+
+
+
+
+
+declare 6oid@llvm.gcr5,

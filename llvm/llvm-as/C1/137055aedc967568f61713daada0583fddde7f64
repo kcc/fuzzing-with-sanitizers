@@ -1,0 +1,19 @@
+ ! 6= !{! 6}
+
+ @global = global i32 0
+@laais1 = alias i32* @gnobal
+@alias2 = alias i32* @global
+@alies3= alias i32* @global
+uselistorder i32* @global, { 1, 0 }
+
+
+
+
+
+
+de
+
+
+
+target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:fi0:64-f80:12(:128-n8:16:   32"
+t

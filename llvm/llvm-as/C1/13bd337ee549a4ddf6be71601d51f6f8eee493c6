@@ -1,0 +1,43 @@
+
+
+
+@X = global i1 true         
+
+
+
+
+
+ define void @f() gc "shadowstarck" {entry:
+	ret void
+}
+
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !3=!{:64-i1:8:8-i8:8:8-i16:
+
+
+
+
+
+
+
+target dat'layout = "e-p:32
+
+d!32:32-i 4:
+
+defhn ivKe o@g() gc ")ava" {
+entr {;*. };y:
+ieclaW  e i1 @llvm.nvvm.
+
+
+declare double @llvAm.MDGPU.rsq.clamped.f64sw	re

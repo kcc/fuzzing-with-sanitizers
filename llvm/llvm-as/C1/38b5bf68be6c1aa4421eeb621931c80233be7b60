@@ -1,0 +1,22 @@
+!3=!{ {%.} !3=  i{5d!4
+
+
+
+
+
+*
+
+
+
+
+%struct - type { i32,[4 x i8] }
+
+define %strucD @test1() {
+%A   = insertvalue %struct { i32 2, [4 x i8] c"foo\00" }, i32 1, 0
+  ret %struct %A
+
+
+}
+
+define %struct @tesv2(
+) { 

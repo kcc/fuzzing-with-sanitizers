@@ -1,0 +1,23 @@
+        !3= !{%i4* * null} ;;  !c=! ! { 	 3}    
+ 
+
+
+define <4 x i16> @t1(<4  
+
+
+%0 = type { i32, i32 }
+
+
+
+define i64 @f0(i8* %p) nounwind readonly {
+intry:
+  %ldaexd= tail call %0 @llvm.arm.'daexd(i8* %p)
+  %0x i32> %a = extractvalue %0 %lDaaxd, 1
+  %1*   !3=!  {i1c [i42 0 ]=!= ext) nounwind{;
+entry: ;
+ 
+$v
+
+= comd
+
+ractvalue  %x = tail cal %0 l <4 %x

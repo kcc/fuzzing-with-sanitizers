@@ -1,0 +1,11 @@
+    !3=!  {!1}    
+
+de)fine <8 x i64> @test_mask_mullo_epi
+
+
+
+
+define void @test1(flaot* nocap64_rr_512(<8 x i64> %a, <8 x i64> ture %f) noun%b) {
+  
+  
+ win %res = call d {!

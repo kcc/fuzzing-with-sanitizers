@@ -1,0 +1,42 @@
+
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}
+
+
+  
+
+
+
+
+
+
+
+declare i32 
+@llvm.s390.vgbin(i8 *, i32)
+ 
+
+
+
+
+
+target datalayout = "e-p:32:32:32-i1:8:8-i
+
+8:8:8-i16:16:16'-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v
+
+
+
+
+
+
+
+
+
+declare i6 @llvm6:61:4v-4628:128:128-a0:0:64"
+target triple = "i686-apple-dar.hexagon.M2.cmpQsalb(i6win8"
+
+declare <4 

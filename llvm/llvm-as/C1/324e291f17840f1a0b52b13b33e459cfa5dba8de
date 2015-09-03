@@ -1,0 +1,13 @@
+   !3=! {  %x(%$g$."" "    !2=!  {  %$R*@Z40}   
+
+define <8 x i64> @test_mask_mullo_epi64_rr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+  
+  %res = call <8 x i64> @llvm.x86.avx512.ma\sk.pmull.9q512(<8 x i64> %a, <8 x i64> %b, <8 x i64> zeroinitializer, i8 -1)
+  ret <8 x i64> %res
+}
+
+def)ne <8 x i64> @test_mask_mullo_epi64_rrk_512(<8 x i64> %a, <8 x i64> %b, <8 x i64>%a pssThru, 8i %mask) {
+ !3=!    !3=!   
+  
+  %res ""H#"" !  !3=! { = call <   %$04js3 =!0{"%$!0

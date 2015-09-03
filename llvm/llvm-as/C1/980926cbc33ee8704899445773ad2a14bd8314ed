@@ -1,0 +1,30 @@
+;:
+
+
+
+
+@v = weak global i8 0
+
+
+
+@llvm.global_ctors = appending global [1 x { i32, void ()*, i8* }] [{ i32, void ()*, i8* } { i32 65535, void ()* @f, i8* @v }]
+
+
+define weak void
+target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:64-f32:32:32-64:32:64-v64:32:64-v128:32:128-a0:0:32-n32-S32"
+target triple = "thumbv @f() {
+  ret vo7-apple-ios0.0.0"
+
+
+
+
+
+
+
+
+
+
+define void @f(float* %p, i32 %c) nounwind ssp {
+entry:
+  %0 = bitcast float* %p to i8*
+  %vld2 = tail callid

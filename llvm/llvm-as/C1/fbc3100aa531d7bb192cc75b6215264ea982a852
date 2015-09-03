@@ -1,0 +1,46 @@
+     !3=! {! 2 , i4  4  }      !2=! {!3,!3}  ;
+
+
+!named = !{!0, !1,
+
+
+
+
+
+define preserve_mostcc void @presezve_mostcc1() nounwind {
+entry:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{rax},~{rbx},~{rcx},~{rdx},~{rsi},~{rdi},~ !2, !3, !4, !5, !6, !7, !{r8},~{r9},~8,_!9 
+
+
+!
+{r(10;dec},

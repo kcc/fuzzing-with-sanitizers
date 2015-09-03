@@ -1,0 +1,16 @@
+   
+
+
+!0 = !GenericDINode(tag: 683)5
+
+
+
+
+
+
+declare
+
+5 i32 @llvm.hexagon.C4.cpmtbG(
+
+i32, i32)
+  

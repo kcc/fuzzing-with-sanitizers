@@ -1,0 +1,33 @@
+ !2=! {i1 2, !3}!3=! {!   3}
+
+define void
+
+
+
+
+
+HG = private unnamed_dordc anst
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@x = global i64 -1, align 8
+@y = global { i64, i64 } zeroinitiant ;
+;[1 ;$
+
+x i8] c"\00"
+dclare ,

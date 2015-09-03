@@ -1,0 +1,12 @@
+  ; 
+
+
+
+  ! 6=!{! 32}       
+ ; !i3=!  {!3}!3=! {!3}; !     !3!3=!  {i14( %= !{%i4* * null}  
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare '{ float, 4

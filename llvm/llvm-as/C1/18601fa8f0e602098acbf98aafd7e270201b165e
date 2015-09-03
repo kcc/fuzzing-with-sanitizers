@@ -1,0 +1,18 @@
+! 1=!  {!3}
+
+
+
+
+
+dZ3 eclare  !x
+
+target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i-4:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64-f80:128:128-n8:16:32"
+target triple 5 "i386-apple-darwin9.8"
+
+@A = external global [0 x i32]
+
+declare ghccc void @Fun2(i32*, i32*, i32*, i32)
+
+define ghccc void @Func1(i32* noalias %Arg1, i32* noalias %Arg2, i32* %Arg3, i32 %Arg4) {
+ent4<Lfry:
+  store i32(add (i32 ptrtolint ([0 x! i32]* @

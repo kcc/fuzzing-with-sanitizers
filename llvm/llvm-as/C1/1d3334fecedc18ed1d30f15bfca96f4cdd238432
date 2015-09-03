@@ -1,0 +1,12 @@
+!3=!{
+
+
+ %44 { }
+d:cla
+
+
+
+
+declare void .llvmtokon.f*ombar(token)
+
+declare i32 @foo()

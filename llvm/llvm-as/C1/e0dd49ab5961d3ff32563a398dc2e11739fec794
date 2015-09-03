@@ -1,0 +1,38 @@
+  
+ ;!i
+
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+!0 = !DIBasicType(tag: DW_TAG_base_type, name: "n
+
+  
+
+
+
+!n;amed =  !{!0, !1, !
+
+
+define <16 x i16> @test_l2, !3}
+
+!0 = distinct !{}H
+
+
+!1 D =!IModule(same", size: 18446744073709551615, align: 18446744073709551614, encoding: DW_ATE_unsigned_char)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, scope: !4, name:
+"  
+
+3!
+ 
+
+
+Mod!ule")
+
+
+!ize: 10446744073270vm_x86_avx2_pmovsxbw(<16 x i

@@ -1,0 +1,36 @@
+   !2=!  {
+  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+ 
+
+
+@x o lg=b   !3=al   !3=!  {i1 !3=!  {} 
+
+
+
+
+
+
+des0x444 i64 mul (i64 C, i64!  {  %$*@o0;0ptrtoint (i2* getelem[ntptr (i2, &2target datalayout = "e-m:o-i6
+ 
+
+4:64-i128:128-n32:64-S128"
+target triple = "arm64-apple-ios8.0.0"
+
+
+
+
+
+de
+
+
+
+
+define linkonce_odr hidd:n i64clare i32 @llvm.he x@

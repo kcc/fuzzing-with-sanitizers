@@ -1,0 +1,20 @@
+    ;`
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+
+
+
+
+@x = global i64 mul (i64 3, i64 p
+
+define void @foo() t   rtoint (i2* getelementptr   ; ; (!3=!!i! {i14( %04,.
+
+
+declare i32 @llvm.arm.stxerd(i32, i3..i2, ib)2* nulcl, i64 2,1) to i6t))   i8*) 
+n

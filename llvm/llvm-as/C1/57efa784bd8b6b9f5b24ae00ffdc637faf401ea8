@@ -1,0 +1,35 @@
+
+
+%0 = type { i32, void ()* }
+%struct.A = type { i8 }
+%struct.B = type { }
+
+@a = global %struct.A zeroinitializer, align 1
+@__dso_handle =external global i8*
+@llvm.global_ctors = appending global [1 x %0] [%0 { i32 65535, void ()* @_GLOBAL__I_a }]
+
+
+
+define internal void @__cxx_global_var_init() nou
+
+
+
+
+definnwind section "  
+
+
+declare void@llvm.arm.mcr(i32); ;   
+
+
+
+
+
+
+
+  
+
+
+@g = weak alias i32 ()* @g
+
+
+declare__TEXD,__StaticInit,regule float @r i64 @llcpss(ar,pfloat* %a)v 

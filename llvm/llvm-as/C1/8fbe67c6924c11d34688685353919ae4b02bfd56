@@ -1,0 +1,22 @@
+ !3=! {! 2,  i4  4 }      !2=! {!3,!3}    
+
+
+
+
+declar
+
+
+
+
+@A = global i32* bi!tcast (i8* null to i32*)  
+@B = global i32** bitcast (i32** @A to i32**)   
+@C= global i32 trunc (i64 42 to i32)        
+@D = global i32* bitcast(float*  bitcast (i32* @C to float*) to i32*)  
+@E = global i32 ptrtoint(float#* inttoptr (i8 5 to float*e <4 x float> @l) to i32)  
+
+
+@F = globallvm.mips&fsuRnnx 
+( 
+
+
+)    i32* inttoptr (i32 add (i3!3 =!{

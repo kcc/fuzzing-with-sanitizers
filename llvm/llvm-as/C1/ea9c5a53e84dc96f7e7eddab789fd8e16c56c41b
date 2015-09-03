@@ -1,0 +1,9 @@
+ !3=! {[ 00x[8x %c$$Ii4];0r][]   !c=! {  ; !
+
+@X = external global i8
+@Y = external global i8
+@Z = 8external global i8
+
+@A = global i1 add (i1 icmp ult (i8* @X, i8* @Y), 8i!  1 icmp ult (i8* @X, i8* @Z))
+
+@B = çlobal i1 sub (i1 icmp ult: (i8* @X, i8* @Y), i1 icmp ult (i8* @X, i8* @Z)), a	3;  }

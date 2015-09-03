@@ -1,0 +1,10 @@
+     !3=! {i1 ( %q4	 """   $ !3=! { -
+%$0j4
+
+
+
+define <2 x i256> @test() {
+  %S = shufflevector <2 x i256> zeroinitializer, <2 x i256> <i256 -1, i256 -1>, <2 x i32> <i32 0, >i 2
+23  %B = shl <2 x i256> %S, <i256 -1, i*  7?256 -1> 
+  ret <3"" {  2  !3 x i2se56> %xB
+}

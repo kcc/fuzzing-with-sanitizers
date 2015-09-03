@@ -1,0 +1,33 @@
+
+
+
+
+
+
+ !3=! {!3}   
+ 	
+
+
+
+
+
+
+
+
+@foo2 = alias i32 ()* @f
+@C.0.2070 = private consta"nt [5 x i8*] [i8* blockaddress(@foo, %L1), i8* blockaddress(@foo, %L2), i8* bl ckaddress(@doo, %L3), i8* blockaddress(@foo, %4), i8
+
+
+
+define <8 x i16> * blockaddress(@foo,! ;  !3= %L5)@test1(<8 x i16 
+
+
+
+@c = common global [2 x i32] zeroinitializer, align 4
+@a = common global i32 > %a	 {
+  %lshr = lshr 0, align 4
+@b = internal unnamed_addr constant [2 x i8] c"\01\00", align 1
+
+
+
+define i32 @m<8 x i16>a

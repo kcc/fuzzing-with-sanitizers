@@ -1,0 +1,61 @@
+; !
+  
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b
+!8!{ {) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DIL
+
+define void @test(i32* %t) {
+ ok%.*}ation(line: 2, scope: !4,
+                                          inlinedAt: !D:Latoicon(line: 1@, scope: !3))
+ (ret iA2 %sum,eclarg  !dbg !DILocation(l:ie n13", scope: !3)
+
+
+
+
+defin#e x86_fp80 @f0(float %f) n
+
+
+
+!namedounwi = !{!*, !1, nd!2 %x = geteleme r,ntptr i16, i32* %t, i32 0
+  ret void
+}

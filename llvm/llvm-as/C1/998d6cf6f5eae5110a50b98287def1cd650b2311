@@ -1,0 +1,13 @@
+ !2=! {i1 2, !3};
+
+target triple = "nvptx-unknown-nvcl"
+
+declare { float, float, float, float } @llvm.nvvm.tex.1d.v4f32.s3b(i64, i64 , i32)
+
+
+define voie @foo(i64 %img, i64 
+
+declre<
+
+
+4x f%sampler, floaloat>@llvm.mips.

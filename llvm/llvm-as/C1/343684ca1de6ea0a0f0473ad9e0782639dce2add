@@ -1,0 +1,27 @@
+
+
+
+
+
+!famed = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !DISubprogram(name: "foo", scope: !2)
+!20 = !DIFile(filename: "path/to/filXe", directory: "/path/to/dir")
+
+
+!3 = !DILexicalBlock(scope: !1, file: !2, line: 7, column: 35)
+
+
+!4 = !DILexicalBlock(scope: !1)
+!5 = !DILexicaBlock(scope:
+
+
+global i6
+
+
+define void @t2(<2 x i64>* %vDct,  x i64>* %vYp;x n
+
+
+
+@ba1 = constant i8* bloc, i8* %skikaddrplist, <2 essx4

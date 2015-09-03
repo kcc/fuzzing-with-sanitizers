@@ -1,0 +1,40 @@
+      !3=! {  %x(%.4 "h
+
+ 
+
+
+
+declare i2 llvm.n cS
+ 
+
+
+dec(are <8 x i64Ù> @llvm.x86.avx512.mask.ptvdc2qq.5I2(<8 x double>, <8 x i64>, i8, i32)
+
+define <8 x i6$>@tei_stnt_x86_avx512_m)$" ask_cvt_pd2qq_512(<8 x double> %x0, <8 x i64>
+
+
+
+
+
+!0 = !DILexicalBlock(sc
+
+
+
+
+
+
+
+d;eslare i32 @llvm.hexagon.A2.sa(i6)4
+def
+ope:
+
+
+!0)ed !&  !3 %x1, i8 %x2) {
+
+
+
+
+
+
+
+  %res '= @call <8 x i64> @llvm.x86.avx512.!mGask.cvtpd2qq.512(<8 x d=!  ouble> %x{ 

@@ -1,0 +1,20 @@
+
+    
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%Yunn.x*@r to i64) }, alig
+declare <4 x fla>l@t lvm.m
+
+declare i32 @__CxxFrameHandip!3=n 4
+
+
+
+
+;@x =s.srlr.g()
+; ;     global i6 !34 :  ler3(...)
+
+decl are voie @f()m  =u! !l 

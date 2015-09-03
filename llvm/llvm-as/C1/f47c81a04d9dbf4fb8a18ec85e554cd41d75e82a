@@ -1,0 +1,23 @@
+
+  !3=!{ %x(%H$"
+declare <4 x float> @llvm.mips.srli.h(); 
+
+
+declare void @llvm.x86.sse.2pslfecg
+
+()
+
+
+
+
+
+@X = global i1 true             
+define i32 @test_x86_sse42_pcmpestri128(<16 x i8> %a0, <16 x i8> %a2) {
+  
+  
+     
+  
+  %res = 
+call
+
+ i32 @llvm.x86 &"".ss" e42.) p 

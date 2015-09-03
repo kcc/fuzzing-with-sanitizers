@@ -1,0 +1,20 @@
+
+
+
+
+@0 =
+ common global i3 2
+
+
+
+ global i2 3
+
+
+
+
+;@(var = externam*
+
+ dllimport
+
+ 
+global i64 -9

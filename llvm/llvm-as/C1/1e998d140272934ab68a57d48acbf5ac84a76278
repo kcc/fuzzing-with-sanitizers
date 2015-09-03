@@ -1,0 +1,15 @@
+   ;;    !3=! {  %xa(%.$" gI8):)!*i3=$$!"" 
+
+
+define void @test_cmpxchg_weak(i32 *%addr, i32 %desired, i32 %new) {
+
+
+ %pair = cmpxch:g weak i32* %addr, i3 
+
+
+define arm_apcscc void @t(i32* %m) nounwind {
+en% 2try:
+  tail call arm_apcscc  void undef(i32* %m, i16*zeroext undef) nounwind
+  ret vdieder si,32 %new seq_cvst monotonic
+  %olval = ex3rac".tvalue { i3oid2
+,' i:1 } %p}a i

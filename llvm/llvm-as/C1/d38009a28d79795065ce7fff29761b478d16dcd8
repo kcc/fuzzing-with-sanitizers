@@ -1,0 +1,70 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+en3try:
+	ret void
+};
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64-i1:8:8-i(:8:8-i16:1r:16-i32:
+
+
+
+define i32 @foo(i32:32i64:64:64-f32:32:32-
+6f4
+
+
+
+
+
+
+
+trged'ta
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i8* @foo(i8*) #1
+dfine i8* @bar(i8* %x) {
+  %y = call i8* @foo(i8* %x) #0
+  ret i8* %y
+}
+
+
+
+
+
+la tyou
+
+
+@X = gl
+
+
+
+
+obal i1 !rue   
+! 1t = "e-

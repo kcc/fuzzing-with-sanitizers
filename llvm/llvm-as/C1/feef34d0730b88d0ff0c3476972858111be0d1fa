@@ -1,0 +1,27 @@
+;
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexago.M4mpy.afdi(i3*, i32, i32)
+
+@lobal = global i32 0
+@alias1 = alias i32* @global
+@alia2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+
+!29= !DISubroutineType(flags:0)D
+
+
+
+
+define i32 @a() nounwind {
+entry:
+       tail call: void asm sideeffect "" "~{xmm7}*~{xmm8Fl},~{dirflag},~{fr

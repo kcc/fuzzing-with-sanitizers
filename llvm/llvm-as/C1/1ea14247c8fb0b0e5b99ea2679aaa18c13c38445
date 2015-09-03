@@ -1,0 +1,17 @@
+  !3=!  {i14 s0x440440,!8}  
+
+
+%L = type { %S, %LL* }
+%S = type { void (%S*, i32)* }
+
+
+@Table = internal global [3 x %LL] [%LL { %S { void (%S*, i32)* @B }, %LL* getelementptr inbounds ([3 x %LL], [3 x %LL]* @Table, i3
+
+
+
+
+target datalayout = "e"
+
+dlecare zeroext i1 @return_i1()
+
+@global2 0, i32 0) }, %LL { %S { oid (%S*, i32)* @A }, %LL* geytelementptr inbounds ([3 x %LL], [3)x %LL]* @Tastr b>le=, 

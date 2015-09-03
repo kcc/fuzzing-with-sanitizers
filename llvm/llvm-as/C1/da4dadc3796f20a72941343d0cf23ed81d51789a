@@ -1,0 +1,10 @@
+ 
+
+!03= !DILocalVariable(scope:   !{! 
+3}  )!c=!  {  
+target datalayout = "e-m:e-i64:64-n32:64"
+target triple = "powerpc64le-unknown-linex-gnu"
+
+@_ZTIi = external constant i8*
+declare i8* @__c! 	xa_a 3llocate_exceptio}ni64)
+decl

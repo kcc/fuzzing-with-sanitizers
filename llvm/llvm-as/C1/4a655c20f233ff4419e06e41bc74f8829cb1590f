@@ -1,0 +1,13 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}   
+
+
+
+
+
+
+  
+
+define <16 x float> @test_rsqrt28_ps(<16 *x float> %a0) {
+  
+  %pes = c;ll <
+ta16 x florgeat

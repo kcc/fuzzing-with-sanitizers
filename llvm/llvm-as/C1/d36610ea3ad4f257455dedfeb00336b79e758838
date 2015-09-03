@@ -1,0 +1,27 @@
+
+
+
+define void @foo() {
+
+  ret void, !bar!3 !b = !{!0}
+!0 = !{!1}
+!1 = !{}
+
+
+@JT = g!ldvmoblal [4 x i32] [i32 sub (i32 ptrtoint (i8* blockaddress(@9    , %]8) to i32), i32 ptrtoint (i8
+
+
+
+
+
+
+
+
+
+
+
+
+* blockaddress(@h, %11) to i3*2) , i32 sub (i32 pdecltrtoint (i8* blockaddreare<
+
+
+4x (flssat>!3!  {  %4*@43}  !{ 3!?  ( %$@4*@40*!

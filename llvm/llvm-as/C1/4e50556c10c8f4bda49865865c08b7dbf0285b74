@@ -1,0 +1,26 @@
+ ! 6= !{! 6}
+ @global = global i32 0
+@laais1 = alias i32* @gnobal
+
+@alias2 = alias i32* @global
+@alies3= alias i32* @global
+uselistorder i32* @global, { 1, 0 }
+
+
+
+
+
+
+de
+
+
+
+target datalayout = "e-p:32
+
+
+
+
+define x86_mmx @stack_fold_pavgusb(x8:6_mmx %a, x86_b x) mm%32:32-{
+  
+  
+  %1 =a tii

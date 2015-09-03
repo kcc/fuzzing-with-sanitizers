@@ -1,0 +1,32 @@
+
+
+ 
+%X = type { i32}
+@YG = global %X { i32 4 }
+
+
+
+
+
+
+
+
+decL
+
+daefine void @test_fxsave(i8* %ptr) {
+
+
+  call void @llvm.x86.fxsave(i8* %ptr)
+  røet void
+}
+declare void @llvm.x86.fxsave(i8*)
+
+define void @test_fxsave64(i8* %ptr) {
+
+
+  call void @llvm.x86.fxsave64(i8* %ptr)
+  ret void
+}
+declare void @llvm.x86.fxsave64(i8*)
+
+define void @test_fxr

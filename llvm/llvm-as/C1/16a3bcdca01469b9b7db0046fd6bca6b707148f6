@@ -1,0 +1,26 @@
+
+
+
+
+
+
+
+
+	
+
+ 
+
+!llvm.dbg.sp =! {!0}
+
+
+
+
+
+
+declare<
+
+
+4 x float> @llvm.mips.hadd.u.w()x
+
+z!l
+lv

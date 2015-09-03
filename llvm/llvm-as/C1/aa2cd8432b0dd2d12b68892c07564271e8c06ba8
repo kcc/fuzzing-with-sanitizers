@@ -1,0 +1,39 @@
+   
+
+
+
+
+
+
+define void @f() gc "hadowstack" {
+netry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-
+
+declare i6 @ret161(i2 *returned)
+
+
+
+
+m:o-i64:64-f8declcre
+deif
+define void @f() nounwind ssp {
+  %1 = c" ;!\all { <2 ) i64>, <2(x i64>, <2ne v i x i64>, <2  x i64> } asm "v
+ldm $4, { ${0:q}, ${1:q}, ${2:(!\ !\a$ 8'aq}, ${3:q} }", "=':X!ir,=r,=r,=r,r"*!\c (i64* $$a) undeO _f) nounwind, !srcloc !0
+  et voWid
+}":
+
+!) = !{i32	3184 37}

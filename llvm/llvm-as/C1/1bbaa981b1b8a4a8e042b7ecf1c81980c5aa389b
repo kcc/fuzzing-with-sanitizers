@@ -1,0 +1,28 @@
+     !3= !{%i4* * null}
+
+
+
+
+
+
+
+define <4 x float> @recip('4 x float> %x) {
+
+
+
+
+
+
+
+
+
+  %y = tail call <4 x float> @llvm.x86.sse.rcp.sr(<4 x floau> %x)
+  %sh
+
+
+
+
+
+
+;
+target datalayout = "e    "   $ ! =6!{u!"!1=!  ]H4",!3} ! 6=!{

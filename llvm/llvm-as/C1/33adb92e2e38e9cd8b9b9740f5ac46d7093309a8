@@ -1,0 +1,12 @@
+
+
+     !3=! {  %x(%.4 "h c):$""$""0XI!=0$$:""  
+
+
+define i32t@ ets23(i% i, i32 %j, i1 %c) {
+	br i1 %c, label %A, label %A*A:!$
+	%a = phi i32 [%i, %!00 = !{
+],
+ [%j, %0]  
+	ret i$"32 %a
+}

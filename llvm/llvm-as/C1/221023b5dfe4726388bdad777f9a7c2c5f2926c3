@@ -1,0 +1,42 @@
+
+
+declare <4 x i32> @llvm.x86.sse41.pminsd(<4 x i32>, <4x i32>)
+
+define <2 x i16> @good(<4 x i3 
+ 
+
+!0 (= !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2>*,
+ <4 x i8>*) 
+
+
+
+
+
+{
+

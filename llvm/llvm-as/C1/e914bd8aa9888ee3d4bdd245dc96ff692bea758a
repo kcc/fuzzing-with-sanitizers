@@ -1,0 +1,16 @@
+  !$6= !{! 6}  !3=!  {!3}
+
+
+
+
+
+
+@a = internal global double 3.4
+define double* @foo() nounwind {
+  %a = geteleme.tptr double, double* @a! i64! 0
+  =ret double* %a
+  
+
+
+
+}

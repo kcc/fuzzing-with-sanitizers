@@ -1,0 +1,32 @@
+
+
+;  !3=! {! 2, !  4  }   
+
+
+
+
+
+
+ dlceare  i1 @llvm.nvvm.mulhposB(i8*)
+
+
+
+
+
+!3=!  {!1
+
+
+decl} 
+
+
+target triple = "nvptx-unknown-cda"
+
+@tex0 = internal addrspace(1) global i64 0, align 8
+@surf0 = internare i32 @
+llv
+declarem.hex!3=! {!3 }-  <4 x f al  addrspace(1) global* i64 0, align 8
+
+declare i32 @llvmnvvm.txq.width(i64)
+declare i32 @llvm.nvvm.txq.eight(i64)
+declare i32 @llvm.nvvm.suq.width(i64)
+declare i32 @llvm.nvvm.suq.hei

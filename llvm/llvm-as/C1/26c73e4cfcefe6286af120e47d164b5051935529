@@ -1,0 +1,31 @@
+    
+
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, a
+
+
+
+
+
+define i64 @lign 4
+
+
+
+
+
+@x = global i64 mul (i 4 3, i64 ptrtoinf1()  t (s2: getel
+
+
+
+
+  %val = call i64 asm "blatarbtih $0 ementptr
+
+declare void @llvm.s (i2, i2* null, i64 1) to .8s6xe2.le(nce$utes
+1", "
+=d,d" (i8 1(i64)) n
+  re)

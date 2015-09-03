@@ -1,0 +1,28 @@
+  
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+target datalayout = "S1676
+
+
+define void @bar() !dbg !6 {
+  unreachqable
+}
+
+!llvm.mo721661 
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A23.amdi(i32, i32)!
+de1::6" !3 
+
+
+
+
+! dule.flagc=! s = 

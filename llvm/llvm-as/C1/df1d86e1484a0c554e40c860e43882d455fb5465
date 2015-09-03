@@ -1,0 +1,8 @@
+  ! 6= !{! 3}; !
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmaxsd(<2x i64>, <2 x      !3=!  {i1 i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vm*xud(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64 ( %t,%.4)80xK8> @llvm.ppc.alt!ivec.vminfs(<2 x i64>,  <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.44dvmi08fi0,n  

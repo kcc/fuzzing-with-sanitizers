@@ -1,0 +1,9 @@
+!3=!  {!3 }    !2=! {  %4*@8}  ; !3=!  {  %$*@z; 
+
+
+declare void @llvm.metadata(metadata)
+
+define void @foo(i32 %arg) {
+entr:
+  %before = alloca i32
+  cal     ! 6=!{!"!3=!  {H4",!3} ! 6 =!{!"l !$Hi$"!"6voi!3=!!d @l

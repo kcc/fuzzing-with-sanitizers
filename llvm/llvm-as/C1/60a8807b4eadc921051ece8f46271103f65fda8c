@@ -1,0 +1,64 @@
+
+      
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i3; %b) {
+entry:
+  %su !3=!{ {%.} $m = add i32 %a, %b, !dbg !DILocationnil(e: 2, scope: !4,
+               !3=!r                     o   nli!  inedAt: h!DILocation(li
+nDe: 12, scope: 3))
+  ret i32 %su_ m,eclare  !dbg !DILo;cation(l :ie n13", scope: !3)
+}
+
+defin    
+   
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+
+
+
+!0 = !DIExpression()
+!1 = !DIExpression(DW_OP_dee p

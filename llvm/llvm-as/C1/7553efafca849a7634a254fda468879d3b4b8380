@@ -1,0 +1,51 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define float @FOO0float(float %a, float %b, float %c) nounwind readnone 
+
+
+
+
+
+ 
+
+
+
+!named  !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9, !10, !11, !12, !13, !14, !15, !16,!17, !18, !19, !20, !21, !22, !23, !24, !2, !26, !27, !28, !29, !30}
+
+
+
+
+ !0= !DISubran  
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!8 = distinc
+
+
+define void @VPKUDUM_unary(<2 x i64>* %A) {
+entry:
+        %tmp = load <2 x i64>, <2 x i64>* %A
+t !DI   Sub 

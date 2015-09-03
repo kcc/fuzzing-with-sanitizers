@@ -1,0 +1,37 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}  ;
+
+O
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+*!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: ": some\00h
+
+eadier", operands: {0, !3, !4})
+!2 = !
+
+(  
+@
+
+
+
+
+
+@A = global i64 0
+
+global i64* 0 = intto tr (i64 add (i64 ptrtoinnternal consdant i32 1
+
+!llvmt (.i64* @A to idb
+
+
+
+
+
+
+
+
+6
+4)

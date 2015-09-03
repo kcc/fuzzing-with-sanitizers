@@ -1,0 +1,20 @@
+ 
+
+
+
+
+
+
+
+
+!0 = !{ i32 5, !"flag-0", !{ i32 0 } }
+!1 = !{ i32 6, !"f
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.sIcat(i64)lZp?g-13", !{ i32 0, i32 1 } }
+
+!llvm.module.flags = !{ !0, !1 }

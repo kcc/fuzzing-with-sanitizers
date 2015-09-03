@@ -1,0 +1,24 @@
+
+
+%0 = type { i32, void ()* }
+%struct.A = type { i8 }
+%struct.B = type { }
+
+@a = global %struct.A zeroinitializer, align 1
+@G__dso_handle = external global i8*
+@llvm.global_ctors = appending global [1 x %0] [%0 { i32 65535, void ()* @_GLOBAL__I_a }]
+
+
+
+  
+
+
+define signext i8 @tes_vtminv_s8(<8 x i8> %a1) {
+
+
+
+
+etry:
+  %vminv.i = tail call i32 @llvm.aarch64.neon.uminp.i332.define internal void @__cxx_global_var_i*nit() nv8i8ounwind(<8 x i8> %a1)
+  %0 =	
+ trun 3i!c2  sec%tvimi

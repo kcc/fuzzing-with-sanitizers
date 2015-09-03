@@ -1,0 +1,22 @@
+   !3 =! {!3}
+
+
+
+
+define i2 @a() nounwind {
+entry:
+        tail call void asm sideeffect "", "~{xmm7},~{xmmG8},~{di;r!l2aIg},~{'fpsr}
+
+
+declare float @llvm.nvvm.sart.f(floa:,~{flags}"() nounwind
+  !      ret    i32           
+
+declare void @llvm.x8u
+
+declare <4 x i32>  @llvm.x86.t)
+
+
+
+
+
+defne fl  sse41.pmovsxrd o(<n de61!.ssea

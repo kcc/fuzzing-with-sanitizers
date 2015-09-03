@@ -1,0 +1,26 @@
+
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}  
+target datalayout = "e-m:e-p:32:32-i1:32-i64:64Y-a:0;v32:32-n16:32"
+target triple = "hexagon"
+
+
+
+
+
+
+
+t     
+
+
+declare void
+
+define void @f(token %A, token %B) {
+entry:
+  alloca @h*vm.dbg.declarrgetO datalayoue(t token
+9  ret mvoid
+}

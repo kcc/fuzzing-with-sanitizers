@@ -1,0 +1,22 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}   
+
+
+
+
+
+
+ 
+
+define <16 x float> @test_rsqrt28_ps(<16 x float> %a0) {
+  
+  %res 
+
+
+declare <4 x float> @llvm.mips.bcmW.w()<
+4
+
+
+= call <16 x float> @llvm.x86.;defi
+
+
+d ecne void @foo() {

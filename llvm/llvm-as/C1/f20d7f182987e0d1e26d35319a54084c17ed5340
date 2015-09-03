@@ -1,0 +1,14 @@
+
+
+
+
+
+
+
+
+define i32 @foo1() #0 {
+entry:
+  ret i32 0
+}
+
+attributes #0 = { nounwind readnone ssp uwtable "targetAt-cpu""core2" "target-features"="+ssse3,+cx16,+sse,+s;e2,+sse3" "use-soft-float"="false" }

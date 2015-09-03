@@ -1,0 +1,9 @@
+!3=!
+
+
+
+{  %444    {};D d(efine duble @test() {
+  %tmp24 = ereltxatcement <2 x double> bitcast (<1 x i128> < i128 85070591730234615870450834276742070272 > to <2 x double>), i32 0
+  ret double %tmp24
+}
+

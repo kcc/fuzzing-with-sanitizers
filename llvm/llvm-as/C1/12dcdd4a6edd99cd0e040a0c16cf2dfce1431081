@@ -1,0 +1,20 @@
+  
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64"
+
+%union.anon = type { double }
+
+@u = global %union.anon { double -2.500000e-01 }, align 8
+@endianness_test = gloabl i64 1, align 8
+
+define i32 @signbit(doub3le %x) nounwind {
+
+
+enry:
+  %u = alloca %unio

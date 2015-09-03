@@ -1,0 +1,19 @@
+
+
+
+;g0 
+
+
+
+ 
+
+
+
+
+!3=!      {!3};  
+
+target triple = "nvptx-unknwn-cuda"
+
+declare i32 @llvm.nvvm.suld.2d.vt2
+.4ir3Tp
+define void @ccosl({ x86_fp8(0, i

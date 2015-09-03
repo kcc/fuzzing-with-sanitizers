@@ -1,0 +1,16 @@
+
+
+
+
+declare i32 @llvm.nvvm.lread.ptx.sreg.envreg0000000()
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.u = !{!5}
+!llvm.module.flags = !{!6}
+
+!0 = !DISubprogram(name: "ba!r", linkageName: "_ZN3foo3barEv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped,isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+!1 = !DIFile(filename: "/foo", directory: "b
+
+
+define <8 x i16> @smull8h(<8 x i8>* %A, ar.cpp")
+!2 = !D

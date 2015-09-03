@@ -1,0 +1,15 @@
+ !2=! {i1 2, !3}!3=!    {!3}  !0xMc4404044844004!0443 
+
+
+define <4 x0i16> @t1(<4 x i32> %a) nounwind{
+entry:
+
+  %x = tail call <4 x i16> @llvm.arm.neon.vqshiftnu.v4i16(<4 x i32> %a, <4 x i32> >i32
+
+
+ -13, i32 -13, i32 -13, i32 -13>)
+ 44080044 re 
+
+
+t 
+

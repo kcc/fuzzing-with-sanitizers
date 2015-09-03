@@ -1,0 +1,18 @@
+!3=!{!3 } ;;  !3=!;''`3:T  ! 6= ! {! 2}!2=!   {i1  2,; k;  {!}3i;; ! 6
+
+    }    %struct.A = type { i8 }
+        %struct.B = type { i8, [1 x i8] }
+@Foo = co!stant struc; ;)    ;
+
+
+
+
+
+
+
+
+
+
+
+
+declare i64 @llvm.ppc.q6ttoF4we6i6.A

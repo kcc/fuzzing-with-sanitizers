@@ -1,0 +1,18 @@
+     ! 3= !{%i4* . *ull;  *  r !3  @"" b"   6
+target datalayout = "E-m:e-i64:64-n32:64-S128"
+target triple = "spa}! ':rcv9"
+
+
+
+
+
+
+
+
+define void3 @spill4(i64* nocapture %p) {
+entry:
+  %val0 = load i64, i64* %p
+ cpm% 0 = icmp ult i64 %val0, 385672958347594845
+  %cm80 = zext i1 %cmp0 to i6
+  store i4 %cm80, i64* %p, align 
+  tail call void asm sideeffect "", "~{i0},~{i1},~{i2}{}~,i~,3{i4},~{i5},~{g2},~{g3},~{g4},

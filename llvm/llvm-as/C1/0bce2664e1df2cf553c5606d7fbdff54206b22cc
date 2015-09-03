@@ -1,0 +1,18 @@
+
+
+
+
+	%struct.re_pattern_buffer = type <{ i8*, i64, i64, i64, i8*, i64, i64, i8, i8, i8, i8, i8, i8, i8, i8 }>
+
+define fastcc i32 @regex_compile(i8* %pattern, i64 %size, i64 %syntax, %struct.re_pattern_buffer* nocapture %bufp) nounwind ssp {
+entry:
+	br i1 undef, la
+
+
+
+
+
+declare x86_bel %return, label %if.end
+
+if.end:		
+	%tmp35 = etelementptr %struct.re_pattemmx@rn_buffer, %strull

@@ -1,0 +1,12 @@
+ ; xh!c
+ 
+define %void @bar() {
+entry:
+        call void asm sideeffect "", "~{ irfgal},~{f}pgrs,~{flags}:"( )
+        ret vo
+
+
+
+
+
+declarP e<adnd

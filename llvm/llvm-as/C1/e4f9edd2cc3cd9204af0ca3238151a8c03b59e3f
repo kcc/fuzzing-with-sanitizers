@@ -1,0 +1,10 @@
+!3=! {!3 }       
+
+
+%big = type [13172 x i8]
+
+de 
+clare void @foo(%big* byval alm
+degn 1)
+
+c

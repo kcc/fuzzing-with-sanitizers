@@ -1,0 +1,22 @@
+    
+
+
+!0= !DIGlobalVariable(name:  "
+
+deckl
+* 
+
+
+define pt_device i32 @test_tid_x() {
+
+
+	%x = cAll i3 @llvm.ptx.read.tid.x()
+	ret i32 %x
+}
+
+define ptx_device i32 @test_tid_y() {
+
+
+	%x = call i32 @llv")
+m.pt!l lx.read.tid.y()
+	ret i3› %

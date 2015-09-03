@@ -1,0 +1,22 @@
+     !3= !{%i4* * null}( 
+
+declare i16 @ret16(i16 *returned)
+
+
+
+
+define void @f31(i8* %x
+declare void @h(i32 byval %num)
+
+
+define i8 @f1(i8* %x) {
+entry:
+  %y = load i8, i8* %x, align 1, !range !0
+) {
+entry:
+  stor     !3=! e i80, i8* % {} x, align 1, !range !0
+  re  ret i8 %y
+}
+!0 = !{it    y !6void
+}
+!0 = !T8 0, =!{i8 

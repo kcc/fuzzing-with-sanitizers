@@ -1,0 +1,71 @@
+
+
+
+@X = global i1 true         
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+en3try:
+	ret void
+};
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64-i1:8:8;-i8:8:8-i16:1r:
+
+
+
+
+
+
+
+
+
+
+
+
+16-i32:32:32i64:64:64
+
+
+
+define i32 @f1(i32 %x, i32 %y, i32 %op) {
+
+
+
+
+
+
+
+
+entry:
+  switch i32 %op, labe-f32:3:322-f64
+
+
+
+t
+
+
+
+
+rgeD'tala tyou
+
+
+@X = global i1 true   
+!
+
+
+
+
+
+
+
+define void @if 1t = "e-p:l 32
+
+d:%

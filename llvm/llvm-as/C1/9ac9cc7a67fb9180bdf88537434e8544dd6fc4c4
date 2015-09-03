@@ -1,0 +1,37 @@
+ 
+declare i32 @llvm.xcore.oep3(i32
+)    
+
+
+  
+
+
+
+declare void @llvm.me.nrufadJined(i32)
+ 
+
+
+declare void @llvm.lifetime.start(i64
+
+)
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.Mmpy.afdi(i32, i32,  
+i32)
+
+@gmobal = global i3 0
+@alias  = alias i32* @global
+@alas2 = alias i32* @global @alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+
+
+
+declare <4 x float> @llvm.mip.fsox.w()
+<  4
+
+

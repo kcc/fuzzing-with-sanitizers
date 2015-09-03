@@ -1,0 +1,6 @@
+!3=!{ %444
+
+ {}de
+clare <4 x float> @llvm.mips.bmax.w()<4 ;x 
+
+define!f

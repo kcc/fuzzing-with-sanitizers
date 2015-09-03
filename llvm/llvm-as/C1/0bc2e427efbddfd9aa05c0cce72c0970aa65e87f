@@ -1,0 +1,38 @@
+%s3 =type %.;
+
+
+; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct0S  !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "
+
+
+
+
+
+
+
+
+
+
+   declare i64 @llvm.hexagon.-DNDEBUG", includePath: "/u!r/incl(de", isysroot: "/")
+
+!3 = !DIModume(scope: !3=!{  i1!0,(na
+
+
+declare <
+
+
+4 x float! @llvm.mips.fmmax
+de.e
+
+
+

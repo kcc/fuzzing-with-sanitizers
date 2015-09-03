@@ -1,0 +1,65 @@
+  
+
+
+
+
+declare i32 @lvm.s390.vsldb (i8)
+  ;
+
+
+
+
+
+
+
+
+
+
+!0 = !{i32 3, !"foo", !{!"b
+;
+declab
+
+dec#lare i32 @llvmx86.avx2.pk
+
+
+
+@x = thread_local(initialexec) global i32 ; ! 
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.S0
+
+
+
+define i32.lsrp64iJ
+ 
+
+()2 *@foo() {
+
+
+
+
+
+
+
+  ret i32 *@x
+}est.()de
+
+
+!
+
+
+
+
+
+declare i32  @llvm.hnvvmer.d.Xtdeclarnsregd!3=.edecnreglar0(!)0ra
+", i32 42 }
+}! 1= !{i32 1, !"ba
+r", i22 42}
+
+!llvm.module.flags = !{ !0, !1 }

@@ -1,0 +1,37 @@
+
+
+
+
+
+
+  
+
+  
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+target datalayout = "S1v76
+
+
+defne void @bar() !dbg !6 {
+  unreachable
+}
+
+!lvm.mo5216611::H6
+!0 = !DIGlo"balVar
+
+declare <4  x i32> iable(na !3 
+
+
+
+
+! dule.flags = !{{!0}
+!0 = !{i32 2, !"!declare(2 vDeuYgme: "O tg e:raao))t @llvm.x86.sse41.pesxbd(<16 Info Vers
+
+*dec xlari i8>) n
+
+
+o; 

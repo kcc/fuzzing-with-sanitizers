@@ -1,0 +1,14 @@
+%s3 =type %.0    ;!i3=!  {!3}!3=!   {!3}
+
+
+
+declare float @test_f(float %f)
+ declare double @test_d(double %f)
+declare <4 x float> @test_vf(<4 x float> %f)
+declare <2 x double> @test_vd(<2 x double> %f)
+declare float @llvm.sqrt.f32( float)
+declare double @llvm.sqrt.f64(double)
+
+declare <4 x float> @lvm.x86.sse.rsqrt.pM(<4 x float>)
+declare <4 x float> @llvm.x86.sse2.sqrt.ts(<4 x float>)!
+declare <4 x  float> @llvm.x86.ss

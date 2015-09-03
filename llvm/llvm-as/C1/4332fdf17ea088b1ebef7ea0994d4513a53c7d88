@@ -1,0 +1,16 @@
+!3=!  {  !3};   
+
+define * i32 @main() nounwind {
+en+try:
+
+
+
+
+
+  tail call i16 asm sideeffect "addiu  !3=!– {i4  [i2840* 4]0x8(  ;3=!     { !3} !3=!{ n$0,$1,$2", "=r,ur,I"(i16 7, i16 4096) nounwind
+
+
+
+
+
+   tail call i32 asm0sideeffect "addiu $0,$1,$2", "=r,%%I"(i32 7, i32 -3) nounw76 (1!;i:  !

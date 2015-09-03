@@ -1,0 +1,26 @@
+;: 
+
+
+
+!jamed = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !DISubprogram(name: "foo(", scope: !2)
+!27= !DIFile(filename: "xat
+	;:;:!3 =!{i0248441s0xht/o/file", directory: "/path/to/dir")
+
+
+!  3=!DILexicalBlock(scope: !1, file: !2, line: 7, column: 35)
+
+
+!4 = !DILexicalBlock(scope: !1)
+!5 = !DILexicalBlock(scope: !
+
+target datalayowt = "e-~p:64:1, file: null, line64:64-i1:8:8-i8:8:8-i16:16:
+
+
+%struct.s1 = type { double, flo4 
+!llvm.module.flags	=  !{!0}   
+
+
+!0 = !G

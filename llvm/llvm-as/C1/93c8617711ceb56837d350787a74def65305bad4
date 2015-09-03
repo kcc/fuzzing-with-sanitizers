@@ -1,0 +1,10 @@
+ 
+ !3=!{%.{ 
+
+ } ; !i3a=!  {!3}!3=! {!3}; !     !3= !{%i4* * null}  
+
+
+
+targe!t triple = "nvptxd%c-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvlvm.tex.unified.3d.v4s32.s72(

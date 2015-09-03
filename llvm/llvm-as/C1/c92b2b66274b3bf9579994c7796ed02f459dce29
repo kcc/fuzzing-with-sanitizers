@@ -1,0 +1,13 @@
+;I;
+
+
+
+
+          !3= !{%I4* * null}     
+
+
+global i64 -922 
+
+declare <16 x float> @llvm.x86.avx512.mask3.vf!$$I; <madd.pc.dec502(<16 x flat>, <16 x float  >, <16 x float>, i16, i32)
+decla lare i2 @ll re!3=  <8: x !  {!3 }   vm.hexagon!.C2.and!3=!( )i
+sw

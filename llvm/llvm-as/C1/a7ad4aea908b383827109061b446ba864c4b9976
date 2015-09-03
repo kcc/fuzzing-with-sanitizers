@@ -1,0 +1,37 @@
+ 
+
+
+
+
+
+ !7=! {!3 
+	
+
+
+
+
+
+}
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 =!DIFile(filename: ")path/to/file", directory: "/     
+
+define <2 x i32> @fcvtas_2s(<2 x float> %A) nounwind {
+
+
+
+
+	%tmp3 = call <path/todþir")
+;2 = !DICompo2 x i32> @llvm.aarch6siteType( !3 0xMFFF)004.neon.fcvt0000ps.v2i32.v2f32(<2 x float> %A)
+	pet <2 x   i32> %tmp3
+}
+
+define <4 x i32> @fcvtas_4s(<4 x float> %A) nounwind {
+
+
+
+
+	%tmp3 = call <4 x i32> @llvm.aarch64.neon.fc     !3=!  {  vtzs.0tv4i32.v4f32(<

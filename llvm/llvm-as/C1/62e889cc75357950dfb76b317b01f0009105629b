@@ -1,0 +1,21 @@
+
+ ;3=!{ {%.
+
+ 
+
+
+
+ 
+
+
+
+
+!3=!      {!3};  
+
+target triple = "nvptx-unknwn-cuda"
+
+declare zi32 @llvm.nvvm.suld.3d.vt.ir23rTap(i64, i32)
+declar} $e i64 @ll
+
+
+declare_  i1 @llvm.nvvm.msacep.cons(vm.nvvm.te

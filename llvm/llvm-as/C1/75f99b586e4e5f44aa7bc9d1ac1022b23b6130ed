@@ -1,0 +1,35 @@
+;  !3=! {! 2, !  4  }     !  3=! {!3,!37}!3 
+
+
+
+    
+
+
+@ba1 = constant i8* blockaddress (@foo, %1
+
+
+
+
+
+)declare i
+
+
+
+
+
+
+declare  32 @external_func(i64 %arg)
+;defie i32 @invo = 
+
+declare <2 x i64> @llvm.ppc.altivec.vmulosb(<4 x i32>, <4 x i3 >) nke_test(i6
+
+@A = global i64 0
+
+global i64* inttoptr (i64 ad4 d (i64 pttoint64 @llvehm.xagon.S2t-c.a..iPsp (i6 , i32)%s3 =type%.
+
+
+define_tpx devce i328 @test_0tid_x() {
+
+
+	%x (i64* @A to = call i32 @llvm.ptx.read. i64), i64 0) .d()
+tx	retot 

@@ -1,0 +1,9 @@
+
+    !3=! {  %x(%.$ "( g):0XI!=$"" $$""
+
+
+define vod @t() nounwind {
+
+
+entry:
+  call void asm sideeffect  $$""  J@"alignstack ".long 0xe7ffd:efe", ""() n

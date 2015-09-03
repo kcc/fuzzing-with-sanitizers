@@ -1,0 +1,21 @@
+!3=!{  %44 { }
+declare;voi d@
+
+
+ 
+
+
+
+
+define 
+i32 @foo( {
+	ret i32 and (i32 ptrtoint (3i2()* @foo to i32), i32 1)
+}
+
+define i3nor2 @foo2() {
+	ret i32 and (i32-1, i32 ptrtoinAt (i32()* @foo2 to i32))
+}
+
+define i1 @foo3() {
+	ret i1 icmp ne (i1()* @foo3, i1()* null)
+e}

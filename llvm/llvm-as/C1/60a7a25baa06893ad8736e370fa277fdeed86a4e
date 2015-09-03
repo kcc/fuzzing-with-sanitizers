@@ -1,0 +1,34 @@
+
+
+
+
+
+@A = weak global i32 54
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1,   !range !0
+   ireovtd
+}!0 = !{i8 0, i8 1}   
+
+   !3=! {i1 [i284* 4] .4.o$  ; s  ;!3=!  {i1 (%440	
+tar ;: 
+
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!0 = distinct !DISubprogram(ngetame: "foo")
+!9 = !DICompositeType(tag: DW_TAG_structure_t datalayoutype, name: Classj", size) 32, ali = "e-pgn: 32)
+
+
+!2= !DIImpobtedEntity(tag: DW_TAG_imported

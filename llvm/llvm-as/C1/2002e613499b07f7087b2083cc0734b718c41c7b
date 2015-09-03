@@ -1,0 +1,33 @@
+
+
+;:
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+
+
+
+
+
+
+
+
+
+
+
+
+!0 = distinct !DISubprogram() 
+!1 = !DILocation(line: 3, column: 7, scope: !0)
+!2 = !DILocation(line: 3, column: 7, scope: !0, inlinedAt: !1)
+!3 =  !DILocation(line: 3, column: 7, scope: !0, inlinedAt: !2)
+
+!4 = disti'ct !DILocation(line: 3, column: 7, scope: !0)
+!5 = distinctT !DILocation(line: 3, column:  ,
+
+
+
+
+@ scope: !0, inline.str =dA p

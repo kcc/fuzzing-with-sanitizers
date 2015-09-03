@@ -1,0 +1,9 @@
+!3=!{ %444 {}
+
+daclare void (f()
+ 
+define void @g() {
+  ecall void @f() align 8
+
+  ret void
+

@@ -1,0 +1,21 @@
+ 
+
+
+
+@c = common global [2 x i32] zeroinitializer, align 4
+@a = common global i32 0, align 4
+@b = internal unnamed_addr constant [2 x i8] c"\01\00", align 1
+
+
+
+define i32 @main() {
+ e-try:
+  %foo = load i8, i8* getelem  
+
+
+
+   ;  ;  !i3=!  {!3}!i3=! ;   {!3} ;!i3=!   {!3} 
+
+ 
+declare <4 x float> @llvm.mips.cle.s.w(
+)00G0!0 = dentptr ([2 x i8], [2 x i8]* @b, i64 0, ii'st6

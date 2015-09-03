@@ -1,0 +1,28 @@
+       !3= !{%i * null}     !2=!  {  %$4*@Z48} 
+
+@0 =  common global i32
+
+
+
+ global i32
+
+
+ 36 
+
+@i = linkonce_odr global i32  0
+
+
+
+
+define void @f() prologue i32 1 {  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i {
+  
+t
+
+
+@ba1 = constant i8* blockaddresarget ts (@fra)

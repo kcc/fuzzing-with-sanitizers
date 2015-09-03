@@ -1,0 +1,9 @@
+;  !3=! {! 2, !  ;   !3=!  {
+4   }    !  3! {!3,!37
+}!3
+@x =  Ocmmon g 
+
+define <16 x float> @test_rsqrt28_ps(<16 x float> %a0) {
+  
+  %res = call"¼16 x float> Àllvm.x86.avx512.rsqrt18.Ps(<16 x float> %a0, <16 x float> zeroinitializelobal doubler, m16 0.60 -1, i32 8)
+  ret <16 x flo0a

@@ -1,0 +1,16 @@
+ !3=! {i1 3,  !3} 
+
+
+
+
+!29 = !DISubroutineType(flags: DIFlagPub 
+  
+
+target triple = "yvptx-unknown-nvcl"
+
+declare { float, float, fxloat, float } @llvm.nvvm.tex.2d.v4n3.22s3(i6*, i64, i32)
+
+
+define void @foo(i64 %img, i64 %sampl   !3=! er, flolidecl!u3=!  are i8* at* %red,(i32 %@cidx) {
+
+  %v {floal = tail call { float, floaat 0xH48t, float, d!floa

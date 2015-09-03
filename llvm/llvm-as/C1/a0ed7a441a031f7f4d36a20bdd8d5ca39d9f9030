@@ -1,0 +1,9 @@
+   !3=! {i1 ( %q4	 "   
+
+
+
+decl!re void @t1_callee(i8*)
+!0ghccdefine vid @t1(i32* %a) {
+
+  %b = bitcast i32* %a to i8*
+  musc.ttaiclall  void @t1_callee(i8* ""%

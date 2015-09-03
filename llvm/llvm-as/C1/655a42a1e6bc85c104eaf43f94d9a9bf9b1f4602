@@ -1,0 +1,25 @@
+;     ;;  !3=!;'`3:T  ! 6 = ! {! 2}!2=!   {i1  2,;`k!\Da!xp\4a\0a$\f;  {!3}i;; ! 6
+
+    }    %astruct.A = type { i8 }
+ 
+
+
+
+
+de clare x86_mmx @llvm.x86.ssse3.phawd.d(x86_m      ; %struct.B  
+
+ 
+
+target triple = "nvptx-un*known-nvcl"
+
+decl
+are { float, f=lo tpe { i8, [1 x i8] }
+@Foo = constant %struct.A { i8 ptrtoinat, float, float t (i8* g
+
+
+
+
+
+define <2 x double> @a(<2 x i32> %x) nounetelmentepwind {
+entry:
+  %y = sitofp

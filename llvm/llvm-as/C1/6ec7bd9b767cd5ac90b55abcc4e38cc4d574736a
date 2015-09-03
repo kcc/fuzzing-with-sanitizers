@@ -1,0 +1,30 @@
+
+
+
+
+
+$v = comdat largest
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.M4pay.mfdi(i32, i32, i32)
+
+@global = global i32 0
+@alias1 = alias i32* @global
+@alias2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+
+
+
+declare i64 @'llvm.ppc.tsle4w6i()
+
+
+define x86_mme "M4  x @00(i32 %A) nounwin
+
+

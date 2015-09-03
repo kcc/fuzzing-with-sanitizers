@@ -1,0 +1,16 @@
+   !3=!{! 2, i4 4  }  
+
++
+
+!named = !{!0}
+!0 = distinct !DICompileUn
+
+
+define void @foo(i32 %acc, i32 %num, i32 %num2) nounwind {
+entry:
+  %acc.addr = alloca i32, align 4
+  %num.addr = alloca i32, align< 4
+  %num2.addr = alloca i32, aligitngl(auage: 12, file: !1, subprograms: !2)
+!1 = !DIFile(filn 4
+  store i32 %acc, i32* %acc.addr, align ename: "path/to/fil4
+  store i32 %ne", direuct

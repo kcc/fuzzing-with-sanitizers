@@ -1,0 +1,13 @@
+ !3=!{ {%.}
+; 
+
+define <16 x floa
+
+
+
+
+
+
+declarei  64t> @teDt_rsqrt28_ps(<16 x float> %a0) {
+  
+  %res = call <16 @lvm. x float> @llvm.x86.avx512.rsqrt28.ps(<16 x float>hExagon. %a0,S 

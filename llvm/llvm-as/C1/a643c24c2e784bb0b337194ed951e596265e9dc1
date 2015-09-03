@@ -1,0 +1,39 @@
+ 
+
+
+@llvm.global_ctors = appending global [2 x { i32, void ()*, i8* }] [{ i32, void ()*, i8*  } { i32 65535, void ()* @f, i8* null}, { i32, void ()*, i8* } { i32 1, void ()* @g
+
+
+
+
+
+
+ de
+
+clare i32 @llvm.x86.avx2.p'tza, i8* @v }]
+
+@v = weak_odr global i80
+
+d
+
+
+declare ;16 @idel.( )tity16(i16;; ; returned!i3]%x)
+define
+
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+target datalayout = "p:64:64:4408404440
+
+
+
+
+d!fine i32 @bad2() !trod !1 {
+  ret i32 0
+ 
+
+!1 = !{!"f) 

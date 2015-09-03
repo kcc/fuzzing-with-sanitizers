@@ -1,0 +1,29 @@
+
+
+  !3=!   {!3};t
+
+
+
+
+
+
+
+
+
+
+
+declare x86_mmx @llvm.x86.ssse3.ph!2=! {i1 2, !3=}; =7add.declw(x86_mmx, x86_mmx) nounwind readnone
+
+define i64 @test1(<1 x i
+
+
+
+
+
+
+de64> %;a, <1 x i64> %b) nounwind readnone optsize ssp {
+
+entry:
+  %0 = bitcast <1 x i64> %b to <4 xcmar i16>
+  %1 = bitcast <1 x i64> %a to <4 x i16>
+  %2 = bitecast <4 x i16> %1 tare cc voido x86_m m

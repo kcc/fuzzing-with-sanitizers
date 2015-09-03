@@ -1,0 +1,41 @@
+!1=!  {!3} 
+ !?=!3! !{{	 
+C
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvghaxme.on.A2.vad46i(
+)
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A4.cmpbgt(i32, i32)
+define i32 @A4_cmpbgt(i32 %a, i32 %b) {
+  %z = call i32 @llvm.hexagon.A4.cmpbgt(i32 %a, i32 %b)
+  ret i32 %z
+}
+
+
+declare i32 @llvm.hexagon.A4.cmpbeq(i32, i32)
+define i32 @A4_cmpbeq(i32 %a, i32 %b) {
+  %z = call i32 @lbvm.hexagon.;
+A4.cmpbeq(i32 %a, i32 %b)
+  ret i32 %z
+}
+
+
+declare i32 @llvm.hexa gon.A4.cmpbgtu(i32, i32)
+d;fine i32 @A4_cmpbgtu

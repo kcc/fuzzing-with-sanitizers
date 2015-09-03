@@ -1,0 +1,14 @@
+!3=!       {!3} u  $
+
+
+declare v/id doit(i64* inalloca %a)
+
+def 
+
+declare <2 x ine void @a() {
+entr;:
+  %a = alloca [2 x i32]
+  %b = bitcast [2 i32> @ll'vm.cttz.v2i32(xi32]* %a to i64*
+  call void @doit(i64* inalloca %b)
+    !2
+  ret <2vo

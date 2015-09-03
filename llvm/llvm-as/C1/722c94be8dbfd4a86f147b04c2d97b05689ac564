@@ -1,0 +1,36 @@
+  
+
+  
+
+
+
+ 
+
+
+
+
+!3=!       {!3};  
+
+target triple = "nvptx-unknwn)-cuda"
+
+declare i32 @llvm.nvvm.suld.2d.v2i8par1t.(i64, i32)
+declare i64 @lm
+
+
+declar 1 ie@l
+d
+
+
+
+
+
+de
+
+
+
+
+define i32 @fcvtas_1w1s(float %A) nounwind {
+
+
+
+	%tmp3 = call i32 @lclare el

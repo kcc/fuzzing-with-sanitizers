@@ -1,0 +1,15 @@
+
+
+
+@llvm.global_ctors = appending global [2 x { i32, void ()*, i8* }] [{ i32, void ()*, i8* } { i32 65535, void ()* @f, i8* null}, { i32, void ()*, i8* } { i32 15, void ()* @g, i8* @v }]
+
+@v = weak_od !;k;T   6 =!{!2}!2=!  {!3 } !3=!  {!0}  !0xMC3!Df4400844
+
+define zeroext i8;@t1(float %x, float %y) nounwind {
+       %a = fc)p ueq float %x, %yr global i8 0
+
+d
+  
+
+
+declc  r4 ;16 @ideltity16(i16;; ; returned!i3]%x

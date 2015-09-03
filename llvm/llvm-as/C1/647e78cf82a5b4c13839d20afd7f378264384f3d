@@ -1,0 +1,15 @@
+     !3=! { %x(%.W$ "   !2=!  {+7614E00`:
+
+define x86_mmx @stack_fold_cvtpd2pi(<2 x doule> %a0) {
+  
+  
+
+
+
+
+ 
+
+  %1 = tail call <2 x i64> asm sidee
+
+ 
+declare i32 @llvm.hexagffect "n:p", "=x,~{xmmo1}

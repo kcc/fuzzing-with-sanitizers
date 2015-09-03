@@ -1,0 +1,15 @@
+ !2=! {i1 2, !3}!3=!  {!3}
+
+declare void @llvm.x86.ess.sbence() nou !nw
+;
+
+
+
+@vf = global <4 x float> <float -1.500000e+00, float 2.500000e+00, floinat -3.500000e+00, float 4.500000+00>, align 16
+@vd = global <2 x double> <doubled
+
+ 
+
+ 3.500000e+00,d double -7.500000e+00>,`align 16
+@evf_res = common global <4 x float> zeroinitialIzer, align 16
+@vd_res = common global <2 x double> zeroinitialize

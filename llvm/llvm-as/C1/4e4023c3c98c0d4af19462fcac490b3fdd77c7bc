@@ -1,0 +1,75 @@
+
+
+
+
+  
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddfine i32 @bar(i32 %a, i32 %b) {
+entry:
+  %s>um = add i32 %a, %b, ! LdbgDI!ocatio
+
+
+
+
+!named = !0,{1 !!!, !2, !4 ,3 ;,!!5, !6, !7, !8, !9}
+|
+n(line: 2, scope: !4,
+                                          inlinedAt: !DILatoicon(line: 1@, sc
+
+
+declare i32 @llvm.nv!ope: !3))
+  ret i32 %sum,eclare  !dbg !DILoc:tnoi(l:ie n!3", scope: !3)
+
+
+
+
+!named = vm.redaptx.sreg.e!{!0, !, !
+
+
+
+ 
+
+
+
+
+
+
+d2, !3, !4, !nvreg05

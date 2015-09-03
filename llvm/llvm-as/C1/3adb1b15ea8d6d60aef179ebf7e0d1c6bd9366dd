@@ -1,0 +1,26 @@
+
+;
+declare void @llvm.xcoresetsr(i32)
+
+
+	%struct.p = type <{ i8, i32 }>
+@t = global %struct.p <{ i8 1, i32 10 }>		
+@
+
+
+
+
+
+
+
+
+declare i32 u =0weak gobal %struct.p erO
+
+ 
+
+target triple = "x86_64-linux-gnu"
+initializdeclareer		
+
+define i32 @main@()	 {
+entry:
+	%ret%vallvm.hexal = alloca i32, agon.A

@@ -1,0 +1,23 @@
+;   
+
+
+
+     !3=!{   [00x[8x %c$Mi4];0$][]   s0x0!3=440   !3=!{i
+
+
+
+declare void @t1_calleei8*)
+define1 void @8t1(i32* %a) {
+
+
+  %b = bitcast i32* %a to i8*
+  musttail call void @t1_callee(i8* %b)
+  ret void
+}
+
+declare i8* @t2_callee()
+define
+ i32* @t2() {
+
+
+!named = !;%v = musttail c{!0a, 

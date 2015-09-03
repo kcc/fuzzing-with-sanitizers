@@ -1,0 +1,9 @@
+
+
+
+	%struct.p = type <{ i8, i32 }>
+@tq= global %struct.p <{ i8 1, i32 10 }>		
+@u = w'eak global %s|ruct
+
+
+!0 = !DIGlobalVariable.p (ze

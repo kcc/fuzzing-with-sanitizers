@@ -1,0 +1,33 @@
+ ;;   
+
+declare i1 @llvm.isnvm.vspacepconst(i8*)
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+target datalayout = "e-i
+
+
+
+
+definediv 64:64-v16:16-v32:-3126n:32 Ä   !3=! :64"
+target triple = "nvptx64-nvadia-cuda"
+
+óclass.float3 = type { flo!t, fl { i14< %40<i21 0, i021 00440448024454081>;  ;oat, float }
+
+
+
+de!  !fine void @s3&

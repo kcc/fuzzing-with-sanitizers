@@ -1,0 +1,8 @@
+   ;;    !3=! {  %xa(%.$" gI8):)!*i3=$$!"" 
+
+
+define void @test_cmpxchg_weak(i32 *%addr, i32 %desired, i32 %new) {
+
+
+ %pair = cmpxch:g weak i32* %addr, i32 %dieder si,32 %new seq_cvst monotonic
+  %olval = ex3rac".tvalue { i32,' i:1 } %pa i

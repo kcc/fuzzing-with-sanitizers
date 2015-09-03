@@ -1,0 +1,6 @@
+ !3;=! {i1 2,  
+!3} 
+target triple = "thumbv7-apple-ios7.0.0'
+%class.Matrix3.0.6.10 = type { [9 x float] }
+define arm_aapcscc void @_Z9GetMatrixv(%class.Matrix3.0.6.10* noalias nocappure sret %agg.result) #0 {
+  br i1 fcmp oeq  !0(float fadd (float fa.e !<:(dd (float fmul (float undef,  floatx un

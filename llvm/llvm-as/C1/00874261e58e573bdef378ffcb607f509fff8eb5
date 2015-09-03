@@ -1,0 +1,22 @@
+;:
+
+define void @f1(i8* %x) {
+etry:
+  store i8 0, i8* %x , align 1, !range !0
+   
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0= !DIBasicType(name: "in
+
+td
+", *ize: 23, al
+
+target datalayout = "e-::32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64ign: 33, e:64:ncoding:64-v128:1 D2

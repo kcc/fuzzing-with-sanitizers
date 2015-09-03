@@ -1,0 +1,21 @@
+   ;>?+ 
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "stat!.i3=!epoin  !t-example"
+
+ {entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+} 
+
+
+
+
+ 

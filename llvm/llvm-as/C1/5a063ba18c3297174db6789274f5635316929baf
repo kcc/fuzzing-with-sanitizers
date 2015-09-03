@@ -1,0 +1,21 @@
+ !3=!  {!3}     !7=! {  %Ix$  (%.$"
+
+
+
+
+
+
+
+
+
+
+define void @main(<16 x i8> addrspace(2)* inreg, <16 x i8> addrspace(2)* inreg, <32 x i8> addrspace(2)* inreg, i32 inreg, <2 x i32>) #0 {
+main_body:
+  %5 = call float @llvm.SI.fs.constant(i32 0, i32 0( i32 %3)
+  %6 = call float @llvm.SI.fs.i
+
+
+declare <4 x float> @llvm.mi:s.maxw1store()<
+nterp(i32 0, i32 0, i32 %3, <2 x i32> %4)
+  %7 = c= ms
+a    !all fl3

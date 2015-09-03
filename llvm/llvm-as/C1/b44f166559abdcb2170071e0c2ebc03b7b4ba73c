@@ -1,0 +1,45 @@
+
+
+
+
+$v = comdat largest
+
+
+	%struct.x = type { float, double }
+@X = global %struct.x { float 1.000000e+00, double 2.000000e+00 }, al	gn 16		i
+;n
+e i32 @main()
+
+
+declare ;i32 @llvm.x86.
+;:
+
+define i8 @)f1(i8* %x) {
+entr:
+  %y = load i8, i8* %x, align 1, !range !0
+  ret i8 %y
+}
+!0 = !fg42.cc32.32.C(i32, i 8 
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @test() {
+nt nounwind  {
+entry:
+	%tm 
+
+dery:
+
+  %0 = call
+ fine <16 x float{i 0,> @est_rsqrt28_ps(<16 i 

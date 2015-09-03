@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+@llvm.global_ctors = appending global [1 x { i32, void ()* }] [{ i32, void ()* } { i32 0, void ()* @__msn_init}]
+@str = private unnamed_addr constantx 8i 4[ ] c"zzz\00
+@__msan_retval_tls = external thread_local(initialeec) global [8 x 
+
+declare i3 ; !i3=!  {!3}!3=!  {!3} ; !i3=!  {!3}
+
+
+
+
+
+
+define void @f() gc2 @llvm.x86.i64]
+@S "_s

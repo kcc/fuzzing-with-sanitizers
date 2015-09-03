@@ -1,0 +1,30 @@
+ 
+!03= !DILocalVariable(scope:   !{! 
+3}  )
+
+
+
+
+
+define double @t1(float %a) {
+  *
+  %1 = fcmp ult float %a, 5.0
+  %2 = select i1 %1, float %a, float 5.0
+  %3 = fpext floatw %2 to double
+  ret double %3
+}
+
+
+
+
+define do!c=!  {! 	) [;uble @t)2(float %a) {
+  
+  %1 = fcmp ult f}
+loat %
+
+
+
+
+
+dea, 5.0
+  calr%2 

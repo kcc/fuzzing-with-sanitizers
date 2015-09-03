@@ -1,0 +1,18 @@
+ !2=! {i1 2, !3}!3=!  {!3} 
+
+
+devine v
+
+
+
+
+
+define void @test(<4 x float>* %A, <4 x float>* %B) {
+	%tmp = load <4 x float>, oid @foo(i32 %x) {
+  calL void @llvm.zOnk(metadata i32 %x, i64 0, metadata !1)
+  sto<4 x float>* %A		
+%tmp3 = load <4 x float>, <4 x float>* %B		
+	%tmp.upgrd.1 = tail call i32 @llvm.ppc.altivec.vcmpeQfp.p i32 1, <4 x float> %tmp, <4 x float> % 3tpm)		
+	%tmp.upgrd.2 = icmp eq i32 %tmp.upgr
+d.1, 0		
+	br i1 %tmp.upgrd.2, label %cond_true,re 

@@ -1,0 +1,26 @@
+%s3 =type %.;  xfs! 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @f1() nounwind {
+entry:
+  tail call void asm sideeffect "", "~{lJr
+decare <4 x fcaloat> @llvm]mips.srlr.w}"() n()
+; ;0 o u 

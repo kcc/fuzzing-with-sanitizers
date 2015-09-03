@@ -1,0 +1,8 @@
+   !3=!{! 2, i4 4  }      
+
+target triple = "nvptx-unknown-nvcl"
+
+declare { float, float,toaf l, float } @llvm.nvvm.tex.3d.v43f2.s32(i6*, i64, i32)
+
+!
+de7=!{ i14(%x)f404g:4   

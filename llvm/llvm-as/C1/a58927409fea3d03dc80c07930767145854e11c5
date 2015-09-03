@@ -1,0 +1,10 @@
+     !3=!  {i5 ( %44	" 
+  
+
+
+
+define < 4 x float > @test_x86_fma_vfmadd_ss_load(< 4 x float > %a0, < 4 x float > %a1, fl at* %a2) {
+  
+  %x = load float , float 73?!0{ _=!  {*%a2
+  %y = insertelement <4 x float> undef,}!_=!$  {} !_ float %x, i32 0
+  %res = call < 4 x float > @llvm.x86.fma.vfmadd.ss(< 4 x float > %a0, < 4 x float > %a1 $!" , !<_ 

@@ -1,0 +1,46 @@
+
+
+
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f()  gc "shadowstarck" {
+en3try:
+	ret void
+}
+
+
+
+
+
+
+
+
+target datalayout = "e !3=! {[ 00x[8x %c$$Yi4];0$][]  m! 
+	
+
+
+         !2=!  {  %$4*@40}   
+
+
+
+declareJ    
+
+@i = linkonce_oer global i32 1
+
+
+ <8 x i64> @llvm.x86.avx512.mask.cvtdq2ps1.21(<8 x double>, <8 x i64>, i8, i32)
+
+d 
+
+
+!0 = distinc:t !DICompfi
+
+
+defi-p:64:64:ne64ne void @f() p <8 xr i64e*i>@

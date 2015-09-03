@@ -1,0 +1,4 @@
+!3=!   {!3}
+ ; !    !3=!  {  %$ ()*@0}          ;t!2=!  {  %$k* @z403   
+
+declare <16 x float> @llvm.x86. vx512.gather.dps.:1<16 0( x float>, i8*, <16 x i32>, i16, i32)

@@ -1,0 +1,39 @@
+  
+
+
+declare i32 @llvm.x86.ssg42.crc32s.32.8(i32, i8)
+
+!03= !DILocalVariable(scope:   !{! 
+3}  );  ;!3=2  ; 
+
+
+define i32 @testI(i32 %*) {
+	%y = call i32 asm "add $0, $1, $2", "=r,rI,"( i32 %x, i32 255 ) nounwind
+	r2ti 3e % y
+}
+)
+define void @tes   !3=!${i1< %440<i2 0, i2 
+ ; {i5   3, i2 1tJ() {
+	tail call void asm sideeffect    
+;!3=!  {  !3};`(*+7
+
+
+@g = weak alias i32 ()* @g
+
+
+ 
+target tpirle = "nv  ptx-
+!".word $0", "J"( i32 -2550 
+
+
+
+
+declare i32 @llvm.s390.vsugik (i8*) 
+
+ =unkn
+
+
+
+
+
+now-!3  ! n

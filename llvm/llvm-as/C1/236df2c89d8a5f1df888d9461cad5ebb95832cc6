@@ -1,0 +1,33 @@
+ !2=! {i1 2, !3}=  !3=! {   00x i16;6![8x %c$$Ii4]  0$] !3=! {! 2,i4  4      }   
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!8 = distinct !DISubprcogram(name: "foo1")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "Class", size: 32, align: 2)
+
+
+!2 = !DIImportedEnt[ity(tag: DW_TAG_imported_module, name: "foo", scope: !0,
+                       entity: !1, line: 7)
+
+!0
+nan!3 = !D
+
+
+
+declardIormtIpedEntit(tag: DW_Tghccc.AG_imported_e i32 @llvm.p
+
+
+
+
+
+
+
+
+
+
+
+

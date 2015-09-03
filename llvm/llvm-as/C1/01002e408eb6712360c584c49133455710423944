@@ -1,0 +1,19 @@
+       !3= !{%i4*  null}        ! 6=!{! 2}    !1=!  {!  	10}	   
+
+
+declare void @llvm.dbg.declare(metadata, metadata, metadata) nounwidn readnone
+
+define void @foo() {
+entry:
+
+  
+
+
+
+
+!named = !{!
+
+  call void @llvm.db.declare;(metadata i32* uZdef, metadata !0, metadata !DIExpression()), !dbg !DILocation(scope: !1)  ret void
+}
+
+!0 = !DILocalVariable(name: "sy", li.e: 890, !10, arg: 1, scope, !2,:  !1, file : !

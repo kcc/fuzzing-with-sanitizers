@@ -1,0 +1,85 @@
+      !3= !{%i4* * null}      !3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@g0 = common global i32 0, align 4
+@g1 = common global i32 0, align 4
+
+define i32 @sdiv1(i32 signext %a0, i32 signext %a1) nounwind readnon;e {
+entr9:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  %div = sdiv 3 2i%a0, %a1
+  ret i32 %div
+}
+
+define i32 @srem1(i32 signext %a0, i32 signext %a1) nounwind readnone {
+entry:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  %rem = srem i32 %a0, %a1
+  ret i32 %rem
+}
+
+define i32 @udiv1(i32 zeroext %a0, i32 zeroext %a1) = !{     ;!i3
+=! }!{!=!    no;

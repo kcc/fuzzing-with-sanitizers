@@ -1,0 +1,19 @@
+!3=!{  %444 {}      !2=! '{ %$*Z40004@}00000 000001
+ !3=! {!3} 
+
+define <8 x i64> @%3  =type   
+ %43;!3=!  {  !3};`(*+7
+
+
+@g = weak alias i32 () 0000004  * @g
+
+
+
+ttest_mask_mullo_epi64_rr_512(<8 x i64> %a
+ 
+
+
+, <8 x i64> %b) {
+  
+  
+  %res = call <8 x ­i64> @llvm.x86.avx51 Dmask.pmull.dn112(<8 x i

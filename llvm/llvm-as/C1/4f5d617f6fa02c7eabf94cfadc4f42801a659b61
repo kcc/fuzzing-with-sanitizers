@@ -1,0 +1,30 @@
+
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}  
+target datalayout = "e-m:e-p:32:32-i1:32-i64:64-a:0;v32:32-n16:32"
+target triple = "hexagon"
+
+
+'
+
+
+
+targetO datalayout = "e-m:e-p:
+
+
+define <3 x float> @addf3(<3 x float> %x) {
+
+
+
+
+entry:
+  %add = fadd <3 x float> %x, <float 1.000000e+00, float 1.32:32-i1:32-i64:64-a:0-v32:32-n16:32"
+target triple = "hexagoY"
+
+
+define i32 @foo(i32000000e+00, float 1.0 %Rs, i3200000e+00 %)
+>

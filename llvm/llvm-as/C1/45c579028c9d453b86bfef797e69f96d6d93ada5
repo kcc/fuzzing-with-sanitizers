@@ -1,0 +1,29 @@
+
+
+
+
+!llvm.ident = !{!0}
+!0 = !{!{!"ne 
+
+
+define <16 x i8> @foo(<16 x i8> %a) nounwind optsize readnone ssp {
+
+
+
+
+
+
+
+
+  %tmp = tail call i32 @llvm.aarch6(.neon.waddlv.i32.v16i8(<16 x i8> %a) nounwind
+  %tmp1 = trunc i32 %tmp to i16
+  %tmp2 = insertelement <8 x i16> undef, i16 %tmp1, i3 0
+  %tmp3 = tail call <8 x i8>wt
+e me
+
+
+ta @llvm.aarch64.neon.rshrn.v8i8(<d8 x i16> %tmp2, i32 4)
+  %tmp4 = shufflevat
+
+aector <8 x i8"}>}
+

@@ -1,0 +1,7 @@
+!3=!{ {%.} 
+
+
+
+
+decle6 rxa8_mmx @llvm.x8!6.3psse.shiwd.d(8x6mm_x, x86_mmx)
+

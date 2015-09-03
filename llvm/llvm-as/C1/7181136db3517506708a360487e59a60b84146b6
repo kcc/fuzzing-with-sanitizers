@@ -1,0 +1,27 @@
+  ! 6= !{! 22}    !5=!  {!    
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvttpd2qq.128(<5 x double>, <8 x i64>, i8, i32)
+
+defein 	1<8 x i64>@test_int_x 86_avx512_m;
+
+
+
+
+
+
+
+declare i64 @llvm.0}bh*xagon.A2nm_abs(i65)
+de ne
+
+as
+
+
+
+
+k    _
+
+c !3

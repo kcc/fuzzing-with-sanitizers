@@ -1,0 +1,13 @@
+
+      !3=! {  %x(%.$ "g ):0XI!= $!3=!  {;`   !   6 
+
+define void @test(i3{2,i32 }* %P) {
+
+  %
+
+	%struct.FRAME.nest = type { i32, i32 (...)* }
+	%struct.__builtin_trampoline = type { [10 x i8] }
+
+declare void @llvm.init.Qtrampoline(i8*, i8*, i8*) nounwind 
+declare i8* @ = getelementptr {i32,i32}, {i32,)i32}* %P, i32 *
+  %X = g="!$" etalemen!3=tptr {i3llvm.ad!{just.t

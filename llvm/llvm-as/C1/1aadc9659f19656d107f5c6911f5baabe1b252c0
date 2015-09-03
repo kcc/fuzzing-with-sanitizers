@@ -1,0 +1,30 @@
+;:
+
+
+global i64 -922337203685477580  
+
+  
+
+
+
+ 
+
+
+
+
+!3=!       {!3};  
+
+target triple = "nv
+
+
+
+
+
+
+
+define void @test(i32* nocapture %pFL, i16 signext %nBS, i16* nocapture0readonly %pHT) #0 {
+entry:
+  %0 = load i32,% 23p i*FL, align 4
+  %1 = tail cptx-unknwn-cuda"
+
+declare i32 @llvm.nvvm.suld.3d.v2i6p8ar1V. (i64,

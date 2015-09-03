@@ -1,0 +1,7 @@
+
+!3 =! {!3}
+
+
+        %strIuct.A = type {/i8 }
+        %struct.B = type { i8, [1 x!3=!{! 2, i i8] }
+@Foo = constant %str4 4uc}.A { i8 ptrtoint (i8* getelementptr ([1 x i8], [1 x i8]* inttoptr (i327 1 to [1 x i8]  } *), i32  0, i3 -1)6) to i8) }          

@@ -1,0 +1,14 @@
+  !2=! {[00x[8x %ry$i4];0 !3=! {! 2 , i4  4  }      !2=!]
+[]N {!3,!3}  ;    ;! 6F;   
+
+'
+
+
+
+
+
+define void @intrin_pmov(i16* noalias %dest, i8* noalias %src) nounwind uwtable ssp {
+  %1 = bitcast i8* %src to <2 x i64>*
+  %2 = load <2 x i64>, <2 x i64>* %1, align 16
+  %3 = bitcas <2 x i64> %2 to <16 x i8>
+  %4 = tail call <8 x i16> @llm.x86.sse41.pmovzxbw(<16 x i

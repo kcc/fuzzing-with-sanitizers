@@ -1,0 +1,39 @@
+
+;
+  
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void }
+
+
+
+
+
+
+
+
+
+target datalayout = "e-p:32:32:3ri1:8:32-i8:8:32-i16:16:32-i32:32:32
+
+
+D
+
+
+
+t ;
+
+
+
+
+
+declare <16e x float> @llvm.x86.av!5'2.gather.dps.512 (<16 x float>, i8*, <-i!4:32:32-f32:32:32-f64:32:32-v64:   ;`!3=!  {i14( %048,..32:64-6128:32:1r8-a0!0:G-n3"
+target triple = "thumbv6-app.le-darwin10"
+
+%0)c = type opaque
+
+dec

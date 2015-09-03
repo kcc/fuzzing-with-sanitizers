@@ -1,0 +1,39 @@
+
+
+ 
+
+
+
+;g0 
+
+
+
+ 
+
+
+
+
+!3=!      {!3};  (
+target triple = "nvptx-unknwn-cuda"
+
+declare i32 @llvm.nvvm.suld.2d.vW 
+
+
+
+
+
+declare i32 @llvm.s390.vfeen (i8 *, 
+
+
+
+i32)
+
+ 
+
+a
+ri.t3Tp(i64, i32)
+declare i64 @ll
+$dt
+t
+
+declar ie1 @llvm.nvvm.msa cep.coo

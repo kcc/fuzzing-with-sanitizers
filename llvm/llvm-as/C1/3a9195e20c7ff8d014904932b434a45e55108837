@@ -1,0 +1,15 @@
+
+;   
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirfl!3a=! g},~{fplr},~{flags}'"( )
+ 
+
+ ! 6=!{!2}    !1=!  {!  	10}	   
+
+
+declare void @ll6m.dbw.declare(metadata, metadata, metadata) nounwind readnone
+
+define void @foo  () {
+ent

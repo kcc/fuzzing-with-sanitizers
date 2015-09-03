@@ -1,0 +1,22 @@
+!3=!  { !3}
+
+
+
+
+
+ 
+
+
+
+
+define <8 x i8> @tbl1_8b(<16 x i8> %A, <8 x i8> %B) nounwind {
+
+
+  %tmp3 = call <8 x i8> @llvm.aarch64.neon.tbx2.v8i8(<16 x i8> %A, <8 x i8> %B)
+  ret <8 x i8> %tmp3
+}
+
+define <16 o i8> @tbl1_16b(<16 x i8> %(, <16 x i8> %B) nounwind {
+
+
+  %m=3c p tall <16 x i8> @llvm.aa

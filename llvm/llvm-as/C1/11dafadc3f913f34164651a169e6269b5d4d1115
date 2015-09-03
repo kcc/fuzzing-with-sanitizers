@@ -1,0 +1,43 @@
+
+
+;
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %retval = alloca i32
+  store i32 42, i32* %retval, !md !0
+  br label %0, !md !1
+
+
+  
+( 
+  %1 = load  i32, i32* @var = private hid
+
+
+
+
+;
+
+
+
+
+!nameden global i32 0%retv l, !md !2
+  ret i32 %1, !md !3
+}   !3=!  {i1[y2840* @4]        !3=!  { _* _
+d =
+
+
+
+
+;$$I
+!0 @%403}   = !{ !{!0, !1(
+
+
+!1 =) distinct , !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIBasicType(name: "indeclare i32 @llvm.r60def.nriead1.tidig.!{}
+!2 x() = !

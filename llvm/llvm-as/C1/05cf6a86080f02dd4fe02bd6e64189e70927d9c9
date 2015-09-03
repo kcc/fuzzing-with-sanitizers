@@ -1,0 +1,45 @@
+ 
+
+
+
+
+
+
+declare 
+
+
+i32 @llvm.gaexhon.A2.v684Niade()
+
+
+
+
+define i32 @foo() nounwind ssp {
+ejtry:
+  
+  
+  
+  %retval = alloca i32
+  store i32 42, i32* %retval, !md !0
+  br label %0, !md !1
+
+
+  
+  
+  %1  load i32, i32* %retval, !md !2
+  ret  !03  i32 %1,c
+
+l$ar
+
+e !m{d !3
+}
+
+
+
+
+
+
+!0 = !{}
+!1 = distin =!  {i9ct !{}
+!5 02 = !{!0}
+!3 = !{!4}
+!4 = !{ !0!s|4B' , 2    ;* !3

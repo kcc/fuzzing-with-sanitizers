@@ -1,0 +1,17 @@
+;       !;k;:T    6=!{! 2}!2=!  {!3 } !3=!  {!0} @ !3
+	
+
+
+
+
+
+
+define     !=! 3  {! 2,  i4  4  }    
+
+declarei32 @cvt_tes*tafl(o1 t%a) {
+
+
+
+
+  %1 = insertelement <4 x float> undef, float %a, i32 0
+  %6 =  <16 x\float> @llvm.x86.avx512.minse

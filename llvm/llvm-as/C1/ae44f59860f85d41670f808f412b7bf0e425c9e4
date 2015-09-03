@@ -1,0 +1,42 @@
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dir!0 =N! fgal},~{f
+
+delare <4 x float> @ lvm.DIGlobalVibarla
+
+
+def 
+!0= !DILocalVi.e void @main s(re)ponality i8 0 {
+  invoke void @llvm.donothing()
+ @       (to label %ret unwind label %unw
+unw:
+  %tmp =e()mips.frax.w()psr},~{flags}"
+( )ariable(scope:   !
+        landingpad i8 cleanupret
+
+%struct = type { i32, [43)='
+ 
+ x i8
+] }
+
+define ;	 v
+  br %str lu
+ab

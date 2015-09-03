@@ -1,0 +1,11 @@
+     !3=! {i1 ( %44	 " "" 37? { $""$" " (!
+
+
+
+ 
+
+
+@x = common global [8 x i32] zeroinitializer,aa-,$ "   alig? 32
+@y = com     ;mon global [8 x i32] zero!initializer, align 16
+
+%sitruct.0__neon_nti2:x2x4*t

@@ -1,0 +1,51 @@
+ !3=! {! 2, i4 4  }     !2=! {i1) 3=! 2, !3} 
+
+decla re i32 @fo)(o !7=
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bar(i32 %a, i32 eb) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+        
+d      ;                             inlinedAt: !DILocation(line: 12, 
+scope: !3))
+  ret i32 %sum
+
+declare i32 @llvm.x86.avx2k.125orjtestz.w()i16,@ t, !dbg !DILocation(line: 13, scope: !3)
+V}
+
+define linkonc i32 @foo(i 32 %a, i32 %b) {
+entry:
+  %sum = add i3e2 %a, %b, !dbg !DILocatio

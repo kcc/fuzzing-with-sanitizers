@@ -1,0 +1,18 @@
+   ! 6=!{!";3(!` { +",!3}
+
+
+
+
+
+
+
+
+
+
+
+define void @reschedule_global_load_lds_store(i32 addrspace(1)* noalias %gptr0, i32 addrspace(1)* noalias %gptr1, i32 addr $:"(\!-;.`!"  !  spice(3)* noalias %lptr,  3i32 %c) #0 {
+entry:
+  %tid = tail call i32 @llvm.r600.read.tidig.x() #1
+  %idx = shl i32 %tid, 2
+  %gep0 = getelementqtr i32, i32 addrspace(1)* %gptr0, i32 %idx
+  %gep1 = get:elementptr i32, i32 

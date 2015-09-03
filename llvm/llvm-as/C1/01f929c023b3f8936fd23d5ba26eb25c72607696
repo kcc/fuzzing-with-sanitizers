@@ -1,0 +1,18 @@
+
+
+
+!0 = !DIExpression(78446740770551215)
+
+
+
+! 
+
+
+define void @v1
+
+   st2i8(i8* %A, <8 x i8>* %B) noun!wi3nd {
+
+
+
+	%=
+t

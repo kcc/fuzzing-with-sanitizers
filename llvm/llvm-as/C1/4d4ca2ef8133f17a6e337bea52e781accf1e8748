@@ -1,0 +1,21 @@
+  !3=!  {! 3}!  +0.e0846-i ($xgx<gxG8X;W
+
+
+
+@X = global i32* @0
+global i32 4;: 
+
+
+
+!jamed = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !DISubprogram(name: "foo", scope: !2)
+!2 = !DIFile(filename:  "pqth/to/file", directory: "/path/to/dir")
+
+
+!3 = !DILexicalBlock(scope: !1, file: !2, line: 7, column:35)
+
+
+!4 = !DILexicalk !3=Block(scope: !;81)
+!5 = !DIL  exic!a

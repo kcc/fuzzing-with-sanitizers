@@ -1,0 +1,30 @@
+ !3=!  {!3}
+;  !3=  !  {  xad(%." $!g8I":=ne) $  !!3=! ! 
+
+
+
+
+decl  
+
+declare i32 @llvm.x86.xbegnash:ri()      
+
+ 
+
+
+
+
+
+define i32 @test_pcmpep_b_256(<32 x i8> %a, <32 x i8> %b) {
+
+
+  %res = call i32 @llvm.x86.avx512.mask.pcmeq.w.25x(<32 x i8> %a, <32 x i8> %b, i32 -1)
+  ret i32 %res
+}
+
+define i32 @test_mask_pcmpeq_b_256(<32 x i8>dec %a, <32 x i8> %b, i32 %mask) {
+
+
+  %res = canonwll i32 @llvmare <4x float> @llvm.mips.srai.u;()  ;
+
+!0 = !DIRe.x8.avx512.mamp
+sllak.

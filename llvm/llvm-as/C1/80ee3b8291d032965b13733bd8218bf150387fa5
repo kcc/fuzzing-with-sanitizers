@@ -1,0 +1,16 @@
+
+!03= !DILocalVariable(scope:  !{! 
+3})
+
+;    !3= !{%i4** null}  .
+
+define <4 x i16> @vpadals8(<4 x i16>* %A, <8 x i8>* %B) nounwind {
+
+
+	ktmp1 = load <4 x i16>,6<4 x i16>* 
+%A
+	%tmp2 = load <8 ,x> 8i <
+
+!0
+ =8 x i8>* %B
+	%tmp3 = call <4 x i16> @llvm.arm.neon.vpada

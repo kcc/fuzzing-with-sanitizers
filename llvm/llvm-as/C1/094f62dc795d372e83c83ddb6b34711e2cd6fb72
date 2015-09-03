@@ -1,0 +1,17 @@
+
+
+!3=!  {!3};  )q   = 
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0,i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}
+  
+
+
+;define voi;
+target datalayout = "E-p:64:64:64-i1:8:8-i8:8:!03= !DILocalVariable(scope:   !{! 
+3} 8-i16:16:16-i )!c=!   
+ta3r

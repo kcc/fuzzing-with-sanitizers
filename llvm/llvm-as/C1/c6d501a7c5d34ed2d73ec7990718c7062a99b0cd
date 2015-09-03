@@ -1,0 +1,34 @@
+  ;;
+
+@x =extern_weak global i32
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "jaav" {
+entry:
+	ret void
+}
+
+
+
+target datalayout = "e-p:)64:6A:64-i1:8:8-i8:8:8-i16:
+
+
+   ;:!
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!0 = distinct !DISubprogra(name: "foo")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, naMe: "Class", s1ize: 326:16-i32:32:32   !3=!  {i1 [i28-, i64a4* @4]  .4.. $

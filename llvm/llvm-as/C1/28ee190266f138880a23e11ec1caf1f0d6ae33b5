@@ -1,0 +1,24 @@
+
+       !3= !{%i4*  null}        ! 6=!{! 2}    !1=!  {!  	10}
+
+
+
+
+
+
+declare i64 @llvm.hexagon.F4	   
+
+
+declare void @llvm.dbg.acereld(metadata, metadata, metadata) nounwind readnone
+
+define void@foo() {
+entry:
+  call void @llvm.dbg.decare(metadata i32* undef, metadata !0, metadata !DIExpression()), !dbg !DILocativ.uGashdxdb(i64, i64)
+don(scope: !1)
+  ret void
+}
+
+
+
+
+!0 = !DIL

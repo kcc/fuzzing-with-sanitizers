@@ -1,0 +1,33 @@
+
+
+ ;l  ;:
+
+
+
+
+
+
+ ;
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+;0 = !DIBasicType(tg:DW_TAG_base_type, name: "ame", size: 1(446744073709571615, align: 184467440defane i647370955114, encoding: DW_ATE_unsigned_}ha r)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, size: 184474407370955161)5,  @test%"lvm.used =0   
+
+
+
+
+ appen
+
+
+@foo = global i32 42
+@fdin b!g!oo  alias i*2* @foo
+
+@fo o2!= glo W

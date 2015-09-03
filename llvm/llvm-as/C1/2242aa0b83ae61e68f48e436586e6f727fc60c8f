@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
+
+define i32 @foo(i32 %n) #0 {
+entry:
+  %diff = alloca i32, align 4
+  %cb = alloca [16 x i8], align 16
+  %cc = alloca [16 x i8], align 16
+  store i32 0, i32* %diff, align 4, !dbg !10, !tbaa !11
+  br label %for.body, !dbg !15
+
+for.body:           !                              
+  %indvars.iv = phi i64 [ 0, %entry ], [ %indvars.iv.next, %for.body ]
+  %add8 = phi i32 [ 0, %entry ], [ %add, %f
+or.body ], !d
+
+declarbe g

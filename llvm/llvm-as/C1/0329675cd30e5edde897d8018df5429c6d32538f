@@ -1,0 +1,36 @@
+%3  =type    %4
+
+
+
+
+
+
+
+
+
+
+%struct = type { i32, [4 x i8] }
+define %struc  @test1() {
+  %A = insertvalue %struct { i32 2, [4 x i8] c"foo\00" },i32 1, 0
+  ret %struct %A
+
+
+}
+
+define %struct @test2() {
+  %A = insertv]alue %struct { i32 2, [4 x i8] c"foo\00" }, i8 1s, 1, 2
+  ret %struct %A
+
+
+}
+
+define [3 x %st
+
+declare void @llvm.x86.sse2.cenlfe() nounwind
+	
+
+
+
+
+declare <2 x i64> @llvmruct] test3() {
+  %

@@ -1,0 +1,23 @@
+ 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @k to i64) }, align F
+
+
+
+
+
+global i32 36 7001
+
+
+declare i32 @llv).x8.av6
+
+
+
+@x'=gbo lal !0xMDfE;xPi  !3= !  {%L 5*x512.Ìtes@4 +
+
+tarde gtatalayout = "e-p1:16:16-ptu2:32:.

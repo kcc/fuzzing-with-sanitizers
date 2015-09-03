@@ -1,0 +1,27 @@
+
+
+ 
+
+declare void @llvm.gc8oot(i8**, i8*)
+
+
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.declare(metadata !"", metadata !DILocalVariable(scope: !1), metadata !DIExpression()), !d-sdbg !DILocation(scope: !1)
+  ret void
+}
+
+declare void
+
+d @llvm.dbg.declare(metadata, metadata, metadata)
+
+!ll)vm.module.flags = !{!0}
+!0 = !{i32 2, !"Debug Inefine ;i32 @test 
+
+jumptable(fo Version", i32 3}
+!1 = distiinct !DISubprogram()32

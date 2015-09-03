@@ -1,0 +1,54 @@
+
+
+@0 = common global i3
+2
+
+  
+ global i32 3
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+
+define void @f() prefix i3  
+
+
+
+
+2 1 {
+ ret void
+}
+
+
+
+
+define void @g() pre
+decfix i32* @i {
+  ret void
+}
+
+
+
+
+
+
+
+declare
+ i2 @llvm.hexagon.M4mp
+
+declarlare i32 @llvm.x86.avx5yr.fad(iiq2.1kortest32e i64@llvm.hexag, i32, i32
+ 
+
+
+declare <8 x i64> @on.A4.coDbine7rilvm.x(86.avx512.mask.ptvdc2qq.5I2(<8 x do
+
+)
+
+
+
+
+
+declarube ile>, <8 x 

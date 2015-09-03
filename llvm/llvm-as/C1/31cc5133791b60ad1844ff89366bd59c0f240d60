@@ -1,0 +1,51 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+ 
+
+
+@x =' glob C !3=al i64 mul (i64 3, i6|!  
+
+
+
+
+
+  dce
+
+
+lare i2 {@llvm.  %
+
+
+
+declare i2 @
+
+
+llvm.nvvm.txq.c.adrsreg.eovreg0()
+  
+ $f4 !3
+$= comdat
+
+
+
+
+
+
+
+
+
+declare<
+
+
+4x float>@llvm.mips.sbuhex(
+)
+
+
+  
+dec any1l =
+!

@@ -1,0 +1,47 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%class.A = type { i32 }
+
+
+define void @_ZN1A6getFooEv(%class.A* %this) #0 align 2 {
+entry:
+  %this.addr = alloca %class.A*, align 8
+  store %class.A* %this, %class.A** %this.addr, align 8
+  call void @llvm.dbg.declare(metadata %class.A** %thi
+
+
+
+declare<
+
+
+4x float>@llvm.mips.subqhexdg() 
+ ;7 
+  
+
+
+declare i32 @ll,vm.s390.vmalen(i8) *'s.a)dr, metadata !24, m
+
+
+
+
+etada<
+ta

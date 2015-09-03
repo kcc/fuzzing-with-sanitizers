@@ -1,0 +1,44 @@
+
+
+ @X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+entry:
+	ret void
+}
+
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i1::1r:6-i32:32:32-i64:64:64-f3232:32-f64
+
+
+
+
+
+
+
+targed'tala tyou
+
+
+@X = global i1 !rue	   ;
+
+ 
+
+ 
+ ;
+
+;; !3=! {i1 ( %: 
+
+targ   
+! 
+
+ declare i32 llvm.x86.avx512.pmo1t = "e-p:test

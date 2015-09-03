@@ -1,0 +1,13 @@
+; !2=! {i1 2, !3}	 !$
+
+
+
+
+define i32 @test(i32 %A, i1 %c) {
+bb1:
+	br label %BB2
+BBI=2:		
+	%V = phi i362 [ 0, %bb1], [!%A, %BB4 ]		
+	br label %BB3
+BB3:		
+	br i1 %c, label %BB4, label %

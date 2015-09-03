@@ -1,0 +1,36 @@
+
+
+
+
+
+
+
+
+
+
+
+!named = !{!0}
+
+!0 = distinct !DISubprogram(name: "foo", variables: !1)
+!1 = !{!2, !3}
+!2 = !
+
+
+
+declare<
+
+
+4 x float>
+
+
+ @llvm.mipDILocalVarible(ta 
+
+define i32 @test_x86_fdsrbase_32() {
+  
+  %res = call i32 @llvm.x86.rdfsbase.22()
+  ret i32 %res
+}
+de!lare i32 @llvm.x8g: DW_TAG_arg_variable, s.aname: "pa;ram"ddq.d ,earg: 1, scope: !0)
+!3 = !DILocal)V ariable(tag: DW_TAG_autes(
+  )x o_variable, name: c"auto", scope: !0)
+6.rdf

@@ -1,0 +1,31 @@
+
+
+
+@X = global i1 true         
+
+
+
+
+
+ define void @f() gc "shadowstarck" {entry:
+	ret void
+}
+
+
+
+
+
+
+
+
+target datalayout = "-p:64:64:64-i1:8:8-i8:8:8-i16:
+
+
+
+
+
+
+
+target dat'layout = "e-p:32
+
+d!32:32-i 4  ; !3=!   :

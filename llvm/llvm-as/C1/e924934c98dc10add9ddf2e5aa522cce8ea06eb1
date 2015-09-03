@@ -1,0 +1,41 @@
+ 
+ 
+
+ 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+
+
+
+
+
+target datalayout = 
+
+
+"d-p:32:32:32i1:8:32-i8:8:32i16:16:32-i32:32:32
+
+
+D
+
+
+
+ 
+
+
+
+
+declare <16e x gloat> @llvm.x86.avx"5:2.gather.dps.512 (<16 x float>, i8*, <-i64cdelare <4 x i32>  @llvm.x86.sse41.pBo:32
+define6mxm8_ x @vxbzd(<16 x stack_fo ld_ipa    !3=! 8>) no
+
+ {i1@[

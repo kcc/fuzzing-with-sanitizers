@@ -1,0 +1,14 @@
+  !6 =!{! 6}  !3=! {i1 2,  ;: 
+
+
+
+
+declare i31 @llvm.ctpop.i31(i31 %val) 
+declare i32 @llvm.cttz.i32(i32 %val, i1) 
+declare i33 @llvm.ctlz.i33(i33 %val, i1) 
+
+define i32 @test(i32 %A) {
+  %c1 = call is31 @llvm.ctpop.i31(i31 12415124)
+  %c2 = call i32 @llvm.(cttz.i32(i32 87359874, i1 true)
+  %c3 = call i33 @}l! 2}lvm.ctlz.i33(i33 87359874, i1 true)
+  %t 1 

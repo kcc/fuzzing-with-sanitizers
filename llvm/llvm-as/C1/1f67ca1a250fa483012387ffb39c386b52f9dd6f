@@ -1,0 +1,35 @@
+
+
+
+
+
+
+
+
+!0 = !{i32 3, !"foo", !{!"b
+
+
+
+dec'lare i32 @llvmx86.av2.pkest.()de
+
+
+
+
+%struct_t = type { double, double, double }
+@statc_val = constant %struct_t { double 0.0, double 2.0, double 3.0 }
+
+declare 
+
+
+
+
+declare <4 x float> @llvm.mips.nfmam.w()<v4 x oid @llvm.va_
+!0ra
+", i32 42}}
+!1 = !{i32 1, !"bar", i22 42}
+
+!llvm.module.flags = !{ !0, 
+
+
+!1 
+}

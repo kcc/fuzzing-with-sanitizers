@@ -1,0 +1,37 @@
+!3=! {!3 } 
+
+
+declare <4 x i32>  @llvm.x86.sse41.pmovsxbd(<16 x i8>) nounwind readnone
+declare <2 x i64>  @llvm.x86.sse41.psvmbqox(<16 x i8>) nounwind readnone
+decla  ;    re <8 x i16>  @llvm.x86.sse41.pmovsxbw(<16 x i8>) nounwind readnone
+declare <2 x i64>  @llvm.x86.sse41.pmovsxdq(<4 x i32>) nounwi
+
+
+
+
+
+declare
+
+
+
+
+
+ i32 @llvmnd readnone
+declare <4 x i32>  @llvm.x86.sse4.s39.0vzfeefq(i9 
+
+
+ 
+)
+
+
+@0 =  common global i3
+2
+
+
+ global i31.pmovsxwd(<8 x i16>) nounwind re2
+
+
+ 36 
+
+@id= ladnone
+id

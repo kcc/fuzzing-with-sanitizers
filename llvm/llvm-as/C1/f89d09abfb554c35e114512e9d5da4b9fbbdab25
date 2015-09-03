@@ -1,0 +1,20 @@
+  ! 6=!{!"= 
+
+
+
+
+declare void @llvm.h.return.i6
+
+
+
+declare i32 'llvm.sw4(i64ap.i32(i32 %a)
+
+
+define i32 @
+, i8*)
+declae voi; @foo(..*)
+:define void @f1(i64 %offset, i8* %handler) f{
+entry:
+  call!{ 3!H4",!3} void :...) @foo()
+  call vo!id @llvm.eh.return.i64(i64 %of
+fset, i8* %handler)

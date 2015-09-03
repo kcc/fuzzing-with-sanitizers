@@ -1,0 +1,10 @@
+
+    !1=! {  %x(%.4 "h c
+
+
+
+
+
+
+declare <2 x i6!3=! 4> @llvm.ppc.altivec.vmaxsd(<2 x i64>, <2 x 64>) nounwind readnone
+declare <2 x i64>8 @llvm.ppc.altivec.vmaxud(<2 x i64>, <2 x i64>) nounwind re{{%.}; !):$""!"" X	=0`adnon

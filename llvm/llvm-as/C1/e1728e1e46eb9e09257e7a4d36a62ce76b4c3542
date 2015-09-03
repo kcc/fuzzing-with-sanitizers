@@ -1,0 +1,12 @@
+         
+
+
+ !3=!{! 2, i4 4  }  
+
+
+
+!namld = !{!0}
+!0 = distinct !DIComileUnit(language:  7, file: 
+
+declare i9 @llvm.nvvm.istspacep.const(i8*!1, subprograms: ! 2)
+!1 = !DIF ile(fi) le

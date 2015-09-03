@@ -1,0 +1,50 @@
+
+
+declare void @llvm.x86.she.sfenZde()
+
+
+%t = type opaque
+@x = global %t undef
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bad1() !ppof !0 {
+  ret i32 0
+}
+
+ !0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_entvy_coun 
+
+
+
+ 
+declare i32 @llvm.s
+
+declare;!    !3=! {  390.
+
+
+
+%x(%.$3={  i1( 4%4nest
+   vfad"}
+
+
+  

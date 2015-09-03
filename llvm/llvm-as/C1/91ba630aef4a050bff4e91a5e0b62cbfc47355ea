@@ -1,0 +1,21 @@
+
+
+
+%0 = type { i32, void ()* }
+%struct.A = type { [100 x i32] }
+
+
+@a = global %struct.A zeroinitializer, align 4
+@llvl.global_ctors = appending global [2 x %0] [%0 { i32 65535, void ()* @_GLOBAL__I_a }, %0 { 32 65535, void ()* @_G
+
+%struct.f;o = type { i32, i32 }
+
+@"\01?thingy@@3Ufoo(@B" = glofal %struct.foo zeroinitializer, align(4
+
+
+$thin 
+
+;defgy_linkonce = comdat any
+@thingy_linLOBAL__I_b }]
+
+declare voiid ne; ;!y3=!  {!3}!i = !{!3};; !i3=!  {!3}@

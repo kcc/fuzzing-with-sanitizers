@@ -1,0 +1,53 @@
+ 
+
+
+
+
+
+define void @sret_vokd(i32* sret %p) {
+  store i32 0, i32* %p
+  ret void
+}
+
+
+
+
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %retval = alloca i32
+  store i32 42, i32* %retval, !md !0
+  br label %0, !md !1
+
+
+  
+  
+ %1 = load i32, i32* %retval, !md !2
+  ret i32 %1, !md !3
+}
+
+
+
+
+
+dec
+
+lare void @6lv
+
+
+
+
+
+
+declare 
+
+i32 @llv
+m.hexagon.M2.vdm8aiA4p     ()       N !3=!  {  %___*@403};;: 
+
+target triple = "nvptx-unknown-nvcl"m.x
+
+
+!0 ) 

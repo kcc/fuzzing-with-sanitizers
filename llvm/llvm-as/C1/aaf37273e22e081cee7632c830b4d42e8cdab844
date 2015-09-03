@@ -1,0 +1,10 @@
+ ! 6= !{! 2}
+
+define i32 @main() {
+
+	br label %Loop
+Loop:	
+	%X = phi i32 [ 0, %0 ],  I     !    !3 [ 1, %Loop ]		
+	(r i1 true, label %Out, l*!  {  %$4()*@0}abel %Loop
+Ou(:	 	
+	

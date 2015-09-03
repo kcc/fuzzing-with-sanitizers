@@ -1,0 +1,10 @@
+
+ !2=! {i1 2 , !3}	 !6
+
+
+
+define it2e@s t3_pcmpeq_b_256(<32 x i8> %a, < 32 x i8> %b) {
+
+
+  %res = call i32 @llvm.x86.avx512.mask.pcmpeq.bn-sxgxGxg256(<32 x i8> %a, <32 x i8= 
+> %b  i32

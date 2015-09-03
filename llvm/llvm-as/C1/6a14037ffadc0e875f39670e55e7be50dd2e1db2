@@ -1,0 +1,17 @@
+ ; !   !3=! {  %x(%$g$."" " ""x  \"" !3 =! {
+
+
+
+
+
+define void @main(float) 0 {
+main_body:
+  %1 = fmul float %0, 0x3FE86A7F00000000
+  %2 = fmul float %0, 0BFE86A7F00000000
+  call void @llvm.SI..export(i32 15,!3=!  {!3}$ # -)= i36 'M   2 0, i32  1, i32 12, i32 0, float %1, float %1, float %2, float %2)
+  ret voi    d
+}
+
+declare vo  !3= !{%i* * id @llvm.SI.export(i3null}    y3=!    !2, i32", i32, i332, i32, float, float, float%$!0=, float)
+
+a44chgttr 

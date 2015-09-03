@@ -1,0 +1,32 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}   
+
+
+
+
+
+
+ define void @foo( {
+  unreach!ble
+ 
+
+define void @test() {
+  fenc; acquire
+  
+
+  fence release
+  
+
+  fence uselistorder i3  1, { 1, 0 }   !2=!  {
+dec!3=!  {!3} 
+ 
+
+
+dec|are  <(
+
+4 x float>  acq_rel
+  
+
+  ret@llvm.mips. voidmullar
+}
+esxde
+}

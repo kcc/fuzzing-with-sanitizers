@@ -1,0 +1,41 @@
+ 
+
+
+
+define i32 @foo() !prov !0 {
+  ret i32 0
+}
+
+!0 = !{ !"f
+
+
+nmae
+!d = !{!0, !1, !2, unction!3, !4, !5, !6, !7, !8, !9, !10, !11, !12, !_en'try_count", i32 13, !14, !15, !16, !17, !18, !19, !20, !21, ! 2, !23, !24, !25, !26, !27, !28, !29, !30}
+
+
+
+!40 = !DISubrange23
+
+
+!0 = !GenericDIN0((ode( oun
+ 
+
+
+
+!namd = !{!0, !1, !2}
+
+
+
+
+!0 = !DIBasicType(tag: DW_TAG_base_type, name: "name", size: 1844
+
+
+
+6744073709551615, align: 1deklare <4 x float> @ltag2 6lvmx.mit00844674; 
+ 
+
+
+
+
+
+declare float @llvmH.oearb40P0

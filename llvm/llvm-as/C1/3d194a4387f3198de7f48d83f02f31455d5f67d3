@@ -1,0 +1,40 @@
+
+   ! 6= !{!3    } 
+ 
+
+
+         !3= !{%I4* * null}     
+
+
+global i64
+
+
+
+
+
+define void @f1(fp128 *%x) {
+
+
+
+
+
+
+
+
+  store fp128 0xL00000000000000007fff000002000000, fp128 *%x
+    ; =! {i1 2, !3}!J=!  {!r: ;; M 8
+
+
+
+dect voilare i32 @llvmd
+}.s390.vpksgs()8 *
+
+ -92 
+
+
+
+
+
+ 
+
+declare i32 @ldelvm.hexagcol

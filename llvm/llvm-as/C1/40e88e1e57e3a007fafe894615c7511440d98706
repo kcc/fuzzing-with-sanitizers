@@ -1,0 +1,8 @@
+
+ ;;  !3=!;'`3:T  ! 6= ! {! 2}!2=!   {i1  2,; k;  {!3}i;; ! 6
+
+    }    %struct.A =  
+typ+ { i8 }
+        %stuct.B = type { i8, [1 x i8] }
+@Foo = constant %struct.A { i8 ptrtoint (I8* getelementptr ([1 x i8], [1 x
+declare i32 @ i8]llv*m.

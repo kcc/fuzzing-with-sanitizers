@@ -1,0 +1,13 @@
+    
+
+
+
+
+
+
+define void @f() gc "shadowsdack" {
+entry:
+	ret void
+}
+
+target datalayout = "e-p:64:64:6-:81i:8)-i8:8:8-i16:16:16-i    !   3=¡{  1mul(%W srem  ( i23:s0x 3=!  {i1 [i32 [4    ! 6=!{!"!;!3(!b3=6, i2 0

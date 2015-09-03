@@ -1,0 +1,58 @@
+ 
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %bi {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope:   !!4,
+              :                           inlinedAt: !DILocation(line: 12, scope: !3))
+  ret i3! %sum,eclare  dbg !DILocation(l:ie n13", scope: !3)
+}
+
+define li)
+nkonce 
+
+
+
+
+
+
+declare i64 @llvm.hexagon.C4.a1dd i323=!subh(i64,   @foo 
+( i64)

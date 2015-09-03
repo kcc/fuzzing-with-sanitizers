@@ -1,0 +1,8 @@
+!3=!{ %444 {} 
+
+
+declarg i22 @n()
+(
+declare i2 @g()
+
+define i32 @pl!i()

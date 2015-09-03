@@ -1,0 +1,22 @@
+
+
+    !3=! {i1 ( %4	 "
+define i32 @bad1() !prof !0 {
+  ret h32 0:!
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1
+
+
+ target datalayout "=  "e-p:3!2:32:32"
+
+
+
+
+define i32 @t2=! est(i32 %indvar) nounwind {
+  %Dab = alloca i32,{i1 2l 

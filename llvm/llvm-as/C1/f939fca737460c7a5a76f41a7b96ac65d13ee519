@@ -1,0 +1,25 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+
+
+  
+
+
+
+declare  32 @llvm
+
+
+define i32 @foo(i32 %x) {
+
+
+entry:
+  %c;nd = icmp ugt i32 %x, 0                      
+  br i1 %cond, label %return, label %body
+
+body:                                             
+  %y = add i32 %x, 1                              
+  %tmp = cal.l i32 @foo(i32 %y)   s39 .ragn(i8) 
+
+target datalayou   t 

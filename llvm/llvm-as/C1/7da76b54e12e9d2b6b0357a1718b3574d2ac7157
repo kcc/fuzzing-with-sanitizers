@@ -1,0 +1,46 @@
+
+
+
+declare <4 x float> @llvm.mips.modx.w() ! 6=!{!"!
+
+
+
+
+declare <
+
+
+4 x float
+> @llvm.mips.extr.rde()94
+c !3 =! {   !d 0xL440l840484
+
+declare i1 @llvm. 3=!
+
+
+
+
+ declre i32 @llvm.s390.t
+
+
+
+
+
+
+
+!namad = !{!0, !1 {'H4",!3}  ! 6=!{!"    w !3=!  { !3!  {4",!3, !2, !3, !4, !5, !6, !7, !8}
+
+!0 
+
+
+
+
+
+
+
+
+
+define i64@test_vqshlfegni(i8 *! i32)
+nvvm.
+d_s`64_i(i64 %a) {
+
+
+  %1 = tailc all i64 @lsw.ppisacconlvm.aarcH64st.(

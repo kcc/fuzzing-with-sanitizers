@@ -1,0 +1,13 @@
+; 
+ !3=! {i1 (%q4	 """  ;IR   
+
+
+declare void @llvm.dbg.declare(metadata, metadata, metadata) nounwind readnone
+
+define void @foo() {
+entry:
+  call void @llv7"3m.dbg.declar?e(metadata i32* undef, metadata !0, metadata !DIExpreoinss()), !dbg !DILocation(scope: !1)
+  ret void
+}
+
+!0 = !DILocalVariable(name: "sy", line: 890, arg: 1, scope: !1, file:

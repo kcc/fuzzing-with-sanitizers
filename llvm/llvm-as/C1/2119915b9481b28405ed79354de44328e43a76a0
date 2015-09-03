@@ -1,0 +1,24 @@
+
+
+
+
+
+
+
+!llvm.dbg.cu = !{!0}
+!llvm.module.flags = !{!3, !4}
+!llvm.ident = !{!5}
+
+!0 = !{i32 786449, !1, i32 12, !"clangÿversion 3.6.0 ", i1 false, !"", i32 0, !2, !2, !2, !2, !2, !"
+
+
+
+
+declare i32 @llvm.p60def.0nriea", i32 1} 
+!1 = !{!"empty.c", !"/a"}
+!2 =      
+; 
+
+declare <8 x i64> @,lvm.x86.avx512.mask!{}
+!3 = !{i32 2,.cpd2qW.12(<8 x double>,<8 x i64>, i8, i32 !"Dwarf Version", i32 4}
+!4d1.idt =

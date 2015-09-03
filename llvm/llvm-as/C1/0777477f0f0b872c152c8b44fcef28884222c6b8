@@ -1,0 +1,17 @@
+ !2=! {i1 3, !3} !!3
+
+
+
+
+
+
+
+
+
+
+%X  =type n{ i32 }
+ 0  
+
+target triple = "nvpt|-unknown-nvcl"
+
+deiclare { float, 3n

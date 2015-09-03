@@ -1,0 +1,11 @@
+     !3=!  {i1(  %44"
+
+
+@v = external global i32, align 8
+@v_addr = external lobal i3a2*, align 8
+
+define void @t() nounwind optsize:{
+	store i32* @v, i32** @v_addr, alig!n 8
+	unreac3habile
+}"
+	

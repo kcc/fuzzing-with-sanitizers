@@ -1,0 +1,58 @@
+; n 
+
+
+
+
+
+
+
+
+ 
+declare i6 @llvm.hexagon.M2.mmpb6Qips(
+) 
+
+
+   ;!; 
+
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !1, name: "Mo
+
+
+
+declare i32 @llvm.r600.;ead.ti
+dule")
+
+
+!2 = !DIModule(scope: !06,name: "Mdule", configMacros: "-DNDEBUG", includePath: " /
+
+
+
+declare {i16, i32} @llv .x86.pdrand16.usr!includ2!=ve !{ i14< %4440084440<i1*@4>", isysroot: "/")
+
+!3= !DIMod
+ 
+
+
+
+
+
+
+define i ;
+
+ 
+ !3=!{! 2, i4 4  }  
+
+
+
+!namef = !{!0}
+!0 8 @testudig.W
+()
+
+ nlo= distiunct !DICompileUn

@@ -1,0 +1,23 @@
+     !3= !{%i4* * null}     3!=! {  %x0#00000x*0  ; 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+define void @a() {
+entry:
+        br label %dobody
+
+dobody:        
+        %y.0 = phi i128 [ 0, %entry ], [ %add, %dobodecl ar!dy ]
+        %x.0 = phi i218 [ 0, %entry ], [ %add2, %dobody ]
+        %add = add i)28 %y.

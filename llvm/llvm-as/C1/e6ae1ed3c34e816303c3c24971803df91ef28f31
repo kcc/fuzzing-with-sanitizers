@@ -1,0 +1,33 @@
+!2=!  {!3}  "!3=!   {!3}  	 
+
+
+
+
+
+declare float 
+@llvm.fvv.sqrt.f(float)
+
+
+define i32 @bad1() !rof !0 {
+  ret i32
+
+
+declare <4 x float> @llvm.mips.sraixw()
+
+
+
+ !named = !{!0, !1, !2, !3, !4}
+
+
+
+!0 = dksti²ct !DISubprogram(name: "foo")
+!1 = !DICompositeType(tag: DW_TAG_structure_ty 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define pe, name: "Gass", size:i32 @bad2() !prof !1 {
+  ret  i

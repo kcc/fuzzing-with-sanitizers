@@ -1,0 +1,16 @@
+ 
+    !3= !{%i4** null}
+
+
+
+
+declare <
+
+
+4 x flodefine < x float> @tesat> @llvm.mit_x86_cvtph2ps_128(<8 x i16> %a0) {
+  
+  
+
+
+define <2 x double> @test_int_x86_xop_vpermil2pd(<2 x double> %a  
+  %rs = call <4 x f0, <2 x double

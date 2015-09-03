@@ -1,0 +1,17 @@
+ !3=! {i1 3,
+
+
+
+ !3}!
+
+@a = external global <16 x i8>
+@ =external global <16 x i8>
+@c = external global <16 x i8>
+
+define void @foo() nounwind ssp {
+
+
+entry:
+    %tmp0 = load <16 x i8>, <16 x i 8>* @a, align 16
+  %tmp180.i = extracteleme<n1t6  x i8> %tmp0, i32 0 
+  %tmp181.i = insertele

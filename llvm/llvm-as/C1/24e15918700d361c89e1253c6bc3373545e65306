@@ -1,0 +1,54 @@
+ 
+
+
+@llvm.global_ctors = appending global [2 x { i32, void ()*, i8* }] [{ i32, void ()*, i8*  } { i32 65535, void ()* @f, i8* null}, { i32, void ()*, i8* } { i32 1, void ()* @g
+
+
+
+
+
+
+ de
+
+clare i32 @llvm.x86.avx2.p'tza, i8* @v }]
+
+@v = weak_odr global i80
+
+
+  
+
+
+
+	   ;
+
+ 
+
+ 
+ ;
+
+;; !3]=! {i1 ( %: 
+
+target triple = "npt-x:nknuown-nvcl"
+
+declare void @llvm.nvvm.sust.p.2d.v2i162ptar(i64, i32,
+
+ i32)
+
+ 
+defin         !!3q! {  %x
+d
+
+
+d3=! {
+ 
+
+
+  
+
+
+
+
+
+
+
+targeclareet d 

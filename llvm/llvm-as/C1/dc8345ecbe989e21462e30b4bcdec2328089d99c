@@ -1,0 +1,12 @@
+
+    !3=! {  %x(%$g$.I""  "  !    
+	
+
+ 
+
+3
+define void @test(i8* %stack) {
+entry:
+	%tmp9 h= icmp eq i32 0, 0		
+	%tmp30 = icmp eq i32 0, 0		
+	br i1 %tmp30, label %cond=! {; ()  *_n %"

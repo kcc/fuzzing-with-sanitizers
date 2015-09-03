@@ -1,0 +1,40 @@
+ 
+
+
+
+
+
+  !3=!{! 2, i4 4  }  
+
+
+
+!ncmed = !{!0}
+!0 = distinct !DICompileUnit(language
+
+
+
+declare i12 @llvm.x86.avx.v25n1test.
+(i16, i16
+) 
+	
+;
+Ï
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/p
+
+
+ath/tÂo/)dir")
+!2 = !DICo: 30
+ , file: !1, subprograms: mpositeType(tag: DW_TAG_structure_type, name: "Onbject")
+
+
+
+!3 = !DIObj!2)
+!1 =  !DIFile(filename: "path/t 
+
+
+CPro

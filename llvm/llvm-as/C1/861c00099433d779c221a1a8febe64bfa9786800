@@ -1,0 +1,41 @@
+ 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "some\00hea!3=! {i1 2,   ! 3}
+
+
+ ;   ; 
+
+
+
+declare void @llvm.x86.sse2.psrli.q
+
+()
+
+
+
+
+
+
+
+target der", operands: {!0, !3, !4})
+!2 = !Generdatalayout =
+
+'
+	
+
+
+d "e-pz32:p!7u! 6= !icDINode(tag: 3, header: "some\00header", operands: {!{}, !3, !4})
+
+
+!3 = !GenericDINode(tag: 3)
+!4 = !GenericDINode(tag: 3, header: "")
+!9   ' !!5 = !GenericDINoEde(tag: 3, operands: {}3:!3=!   {i1 (T{)
+!6 =

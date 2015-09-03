@@ -1,0 +1,24 @@
+   
+
+
+
+
+
+
+
+
+
+
+
+define void @call_fs() #0 {
+  ret void
+}
+
+attributes #0 = { "ShaderT
+declare <4 oal fxt> @llvm.mips.ld.b()
+
+@e(= globali3(2 0
+;
+
+
+@y2p 1=!e"" "} 

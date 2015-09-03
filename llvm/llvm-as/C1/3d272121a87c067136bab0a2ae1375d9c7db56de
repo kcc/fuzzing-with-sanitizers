@@ -1,0 +1,17 @@
+
+
+ ; !i3=!  {!3}!3=! {!3}
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5};
+!0 = !DIFile(filename: "file.cpp", directory: "tpa/h/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "path/to/file", directory !3=!{ {%.: "/ ath/to 
+
+
+
+
+@X = external global i8
+@Y = external glo}ba $

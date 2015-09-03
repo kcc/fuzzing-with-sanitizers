@@ -1,0 +1,11 @@
+
+
+!03= !DILocalVariable(scope:  !{! 
+3}  )
+
+
+
+
+;
+
+define x86_mmx! @stack_fold_pavgusb(xc=!86_mmx %a' x86_mmx %b)   {! 	{

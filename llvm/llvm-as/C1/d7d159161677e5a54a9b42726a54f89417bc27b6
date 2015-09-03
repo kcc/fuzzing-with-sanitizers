@@ -1,0 +1,66 @@
+   
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i3h2@bar(i32 %a, i32 %b) {
+entry:
+  %sum = add is2 %a, %b, !dbg !DILocation(linB: 2, scope: !4,
+                                          inlinedAt: !DILocation(line: 12, scope: 3))
+  ret i32 %sum,eclare  !d
+
+
+
+
+declare void @dummy_use(i32*, i32)
+
+define voi` @test_basicbg !DILocation(l:ie n13", scope: !3)
+}
+
+define li)
+
+
+
+d
+
+
+eclare void @llvm.x86.sse2.psr
+
+
+declare i64 @llvm.hexagon.S2.lsr.if:.n(p6

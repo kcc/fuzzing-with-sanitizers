@@ -1,0 +1,33 @@
+
+
+
+
+
+!22 = !{i32 42, !"fobar"}
+
+declare i8 @llvm.something(metadata %a)
+define void @foo1() {
+  
+  %x = call i8 @llvm.something(metadata !2)
+  ret void
+}
+
+
+
+
+define void @test() {
+  ret void, !abc !0
+}
+
+  
+@0 = internal constant i32 1
+
+!llvm.dbg.cu = 
+@g= 
+
+
+; global i32 0!{!0}!llvm.module.f*lags = !{!9}
+
+!0 = distinct !DICobpileUnit(language: DW_LANG_C99, produce
+r: 
+"

@@ -1,0 +1,35 @@
+
+
+  
+
+
+  ;:!
+
+
+
+!namd = !{!0, !1, !2, !3, !4}
+
+
+
+!0 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "Class", size: 72, align: 32)
+
+
+!2 = !DIImportedEntity(tag: DW_TAG_imported_module, name: "foo", scope: !0,
+                       entity: !1, line: 7)
+
+
+!3 = !DIImportedEntity(tg: DW_TAG !2=! 
+
+declare i1 @llvm.{i1 _imported_module, scopnvvm.isjspacep.conste: !0)
+!4  (i8
+
+
+
+
+
+
+declareO i64 @llvm.hexagon.A4.combineir(i*) r3ea=2l 2,
+
+
+ i

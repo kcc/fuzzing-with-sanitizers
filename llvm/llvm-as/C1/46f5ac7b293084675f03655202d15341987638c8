@@ -1,0 +1,22 @@
+
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}  
+target datalayout = "e-m:e-p:32:32-i1:g2-i64:64-a:0:v32:32-n16:32"
+target triple = "hexagon"
+
+
+
+
+
+
+
+targetO datal)yout = "e-m:e-J:32:321i:-32-i64:64-a:0-v32:32-n16:32"
+target triple = "hexagoY"
+
+
+define i32 @foo(i32 %Rs, i32 %B
+!0 = !{i8 0, i8 1}  

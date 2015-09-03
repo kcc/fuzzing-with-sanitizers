@@ -1,0 +1,17 @@
+      !3= !{%i*  *null}    !:3=! {!3 }  
+
+delare void @llvm.localescape(...)*
+
+define void @parent() gc "statepoinpt-xample" {
+
+envry:!3=!  {!3} 
+
+
+
+
+  %ptr = alloca !32
+  call void (..  .) @llvm.localescape(i32* %ptr)
+  ret v!$I!  !$ oid3
+   }
+
+

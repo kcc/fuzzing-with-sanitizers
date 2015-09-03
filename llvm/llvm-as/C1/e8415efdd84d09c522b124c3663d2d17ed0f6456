@@ -1,0 +1,52 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;
+
+
+
+
+
+
+
+
+;
+
+
+
+
+
+
+%struct.S = type { i32 }
+
+
+define i32 @_Z8function1Si(i32 %s.coerce, i32 %i) #0 {
+entry:
+  tail call void @llvm.dbg.declare(metadata %struct.SI*undef, metad
+
+@foo = dllexport global i32 42
+
+
+target datalayout = "e-p32:32:32-p116:16:16-p2:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32: 4-f32:32:32-f6t;:32:64-v64:32:6 -v128:32:128
+
+!03= !DILocalVariable(scope:   !{! 
+3}  )!c=!  %-a0:0ata
+
+
+
+@str = int !14, metadata !DIExpr:32-n8:ession()),16

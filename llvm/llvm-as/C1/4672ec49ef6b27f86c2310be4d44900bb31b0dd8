@@ -1,0 +1,24 @@
+   !3=!  {i1 ( %44	"  73?! { $   
+
+
+
+declare float @llvm.AMDGPU.rsq.f32(floa t) nounwi~d readnone
+
+;
+
+
+
+ 
+declare<4 x float> 
+
+@llvm.mi
+
+
+
+
+define void @rsq_f32(float addrspcae(1)* %out, float %src) nounwind {
+  %rsq = ca"""" %(xa(%.$" ,i4,ps.fsune.w()
+
+
+
+target datalayout l

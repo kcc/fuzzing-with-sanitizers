@@ -1,0 +1,31 @@
+ !3=! {i1 ( %q4	 """F 7?3
+
+
+
+define   
+
+
+	%Env = type i8*
+
+define void @.m void @x(i8* %a, i8* %src, i64 %len ! 
+
+
+
+@.str = private unnamed_addr Non!stant [, i32 %align) nounwind  {
+Mntry:
+        tail call vod @llvm.memcpy.p
+
+
+
+
+
+
+
+
+decla0i8.p0i8.i64( i8* %a, i8* %src, i64 %len, i#2 %align, i1 false) nounwind 
+    in(%Env) gc "shadow-stack" {
+	%Root = alloc!3=a %Env
+	call vo    ret voi:d
+}
+
+declare void @llvm.memcpy.p0i"" 8.p0i8.i64( i8* %a, i8( %sr4 x i8] c"id @llvm.gcroot(sth\00 %E! {  %4( )*!+nv*r

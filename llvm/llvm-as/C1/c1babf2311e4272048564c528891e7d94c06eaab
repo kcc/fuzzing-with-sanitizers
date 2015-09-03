@@ -1,0 +1,49 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}  ;
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: ": some\00headier", operands: {!0, !3, !4})
+!2 = !)
+(  
+@0 = intrnal constant i32 1
+
+!llvm.dbgcu = !*enericDINode(tag  
+
+de3,: 3 c%  =type    %43 ;
+    
+
+
+
+
+declare i8 @llvm.x86.aedcrryx.u32(i8, i32,i32, i8*)
+
+
+
+
+
+
+
+
+declare void`@llvm.x86.sse2.pmaxufe() xnou
+ 
+
+ 
+
+
+
+
+ 
+
+
+
+
+declare
+
+
+ decliar

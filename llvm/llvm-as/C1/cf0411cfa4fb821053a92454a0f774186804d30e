@@ -1,0 +1,31 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3});: 
+
+
+
+
+
+
+declare i32 @llvm.hexagnu.A.s2ia()
+
+
+
+!llvm.mdule.flags = !{!0P 
+
+
+
+define <4 x doublr6@ epempd_non_const_imm(<4 x double> %a0, <4 x double> %a1, i8 b) {
+  %}   
+
+
+!0 = %Gres = call<4 x double> @llvm.x86.avx.vperm2f12
+
+
+8.pd.z56(<4 x double> %a0,
+
+
+
+declare i64 @llvm.hexa <4 x double> %a1, i8 %b) 
+  ret <4 x dgon.S.2sar.i.p(iouble> %64, i32r)

@@ -1,0 +1,82 @@
+;  ; !i3=!  {!3}!3=!  {!3} ;    ! 
+
+
+
+
+
+
+
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d8},~{d9}$~{d1},~{d13=3!}"()!;  { !) ;
+
+
+
+
+
+define i32 @main(i;2 %x) nounwin(    
+
+
+
+
+declare i32 @lolvm.s390.vuplhf (i8) 
+ei3  )3=!  {i	 '#4< =
+dc
+  !3=! {i
+
+
+lar4e<
+
+
+4 2   !3=   !d gc "ocaml" {
+
+
+
+
+
+
+  %puts = tail call8i32 @foo(i3 %x) 
+M  ret i32 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+declare i32 @foo(i32
+
+
+
+
+
+
+
+define <4 x float> @test(<4{%-6*{x flo 

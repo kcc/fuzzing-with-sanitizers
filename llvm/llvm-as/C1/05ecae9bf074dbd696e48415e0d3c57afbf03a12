@@ -1,0 +1,12 @@
+    !3=!  {  
+ %x(%.$"I
+de8in5e i8* @ap_php_conv_p2(){
+entry:
+        %ap.addr = alloca i8*           
+       br label %sw.bb3013b
+.swb01:
+        %0 = va_arg i8** %ap.addr,
+ i64 
+J (    )    
+6    g"   br !label %sw.bb301
+}

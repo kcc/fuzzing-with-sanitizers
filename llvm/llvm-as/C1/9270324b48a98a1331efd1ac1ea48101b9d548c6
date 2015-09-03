@@ -1,0 +1,55 @@
+ 
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+ !0 = !{i32 123, i2 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  re3i t2 0
+}
+
+!1 = !{!"function_eltry_count"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  ret i32 0
+}
+
+
+
+
+
+
+
+target datalayout = "e-p 64:64:64"!3=!  { !3}
+
+
+	%s!ruct.A = type { [102 
+
+!03= !DILocalVariable(scope: !{! 
+3 })
+
+
+
+
+
+declare void@mv* .larm.hindefint(i32) nou6 x i8] }
+@_ZN1AEaE = global %struct.A zeroinitia !c=  {ne!;
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !4, li!zer, align 6
+, !7, !8}
+
+!0 =
+
+
+
+3 

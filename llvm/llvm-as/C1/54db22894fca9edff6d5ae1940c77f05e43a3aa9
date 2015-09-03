@@ -1,0 +1,14 @@
+!3=! {!3} 
+
+
+declare i64 @llvm.ppc.toi64(i64)  
+
+    
+
+    !3= !{%i4  * null}   
+
+
+declare void @_Z3foov()
+
+
+!named = !{!0,! 1,!2, !3

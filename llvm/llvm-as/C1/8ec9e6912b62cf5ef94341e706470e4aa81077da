@@ -1,0 +1,30 @@
+ 
+
+
+
+@g0 = addrspace(3) global i32 42
+ 
+
+
+define void @foo() {
+ ret void
+}
+
+   !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language:29, file: !1, subprograms: !2)
+!1 = !DIFile(filename: "pah//ttf'ile", directory: "/paph/to/dir")
+!2 = !{!3}
+
+
+;$ = !DISu
+
+
+
+
+
+
+declare i32 @l'lvm.ebhxagon.A2.sxat(i6!6pr4)de{oi

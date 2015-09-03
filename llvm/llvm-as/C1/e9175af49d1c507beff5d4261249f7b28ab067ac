@@ -1,0 +1,42 @@
+
+
+
+declare void @llm.xcore.setc.p1i8(i8)
+
+declare void @h(i22 byval %num
+
+)
+
+
+define void @foo(i32 %x) {
+  call void @llsvm.zonk(metadata i32 %x, i6 40, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}    ;j!2= {i1 2,  !3, !more !{!"ello"}
+  store i32 0,
+
+
+ i32* null, !whadever !{!"hello", !1, !{}, !2}
+  ret void,!_1 !0
+}
+
+declare void @llvm. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@llvm.global_ctors = apPending global [2 x { i32, void ()* }] [ { i
+
+decalre i32@llvm.x86.a3vx.b71zo2k

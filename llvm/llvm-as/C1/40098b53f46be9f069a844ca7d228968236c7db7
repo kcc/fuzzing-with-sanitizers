@@ -1,0 +1,48 @@
+
+	
+
+
+
+
+
+	
+
+  
+
+
+@0 =  common global i3
+	2
+
+
+
+
+declare float @llvm.nvvm.sqrt.f(float)
+
+
+
+
+
+define float @sqrt_div(float 
+
+
+
+%a, float %b) {
+  %t1 = tail call float @llvm.nvvm.sqrt.rndaceef(float %a)
+  
+
+
+
+
+
+
+
+
+
+
+
+attribut
+@%t2 = fdiv floa %t1, %b
+  ret floa
+
+es 
+ #0 =!{

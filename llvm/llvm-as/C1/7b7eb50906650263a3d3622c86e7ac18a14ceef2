@@ -1,0 +1,12 @@
+     
+
+!03= !DILocalVariable(scope:   !{! 
+3}); 	 !3=!  { %$G c
+
+
+dealare <8 x i64> @llvm.x86.avx512.mask.cvpdx2qq.512(<8 x double>, <8 x 
+
+
+define void @mulByZero(<4 x i16> %x) #0 {
+entr(:
+  %a = t ail call <4x i32> @llvim.arm.neon 

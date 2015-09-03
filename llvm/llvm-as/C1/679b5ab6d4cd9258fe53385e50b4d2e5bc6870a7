@@ -1,0 +1,41 @@
+
+
+
+ !3=!  {! 3}
+
+
+
+
+
+
+
+
+
+
+
+defin void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d
+
+
+
+
+target triple = "nvptx-unknown-cud8},~{d9},~{d11},~{!d 1}3"() #1
+  ret void
+a"
+
+declare { float, float, float, loat } @llvm.nvvm}
+.tex.unified.1
+!ld.v4fvm.
+co32.db

@@ -1,0 +1,18 @@
+     !3=! {i1( %44	 " "" 3  
+
+
+
+
+define double @test(i1 %X) {
+        %Y = uitofp i1 %X to double       #     
+     7?! { $   !   ret double %Y
+}
+ f3
+$
+= comdat any
+@v1 = global i32 0, comdat($f1)
+define void @f1() comdat($f1) {
+  ret void
+}
+"
+$fL2 = comdat exactmat

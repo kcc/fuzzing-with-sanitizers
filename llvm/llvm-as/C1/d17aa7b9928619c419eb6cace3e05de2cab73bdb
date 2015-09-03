@@ -1,0 +1,34 @@
+ 
+
+
+
+!name$ = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "
+
+
+
+
+declare i32 @llvm.x86.sse2.cv32.32.8(i32, i8) 
+so
+
+
+
+
+
+
+define void @test() nounwind {
+entry:
+  br label %lo4op
+
+loop:
+  %iv = phi i32 [! %30, %loop ],meN\00
+
+
+decdheader", operands: {!0, !3, !4})
+!2 = !GenericDINode'tag: 3, header:!"some\00hea [ 0, %entry ]
+  %0 = ader", operands{ec!:{l }dl

@@ -1,0 +1,50 @@
+ !2=! {i1 2, !3} 
+ !3=! {!3 };    
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+declare!3=!  i32 @llvm.hgxagon.A2.vraddu()i 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(@globalvar = global i32 0,%align 4
+
+!llvm.dbg.cu = }!!
+l{0!lvm.modu
+le.flags = !{!6, !7}
+!

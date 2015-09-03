@@ -1,0 +1,55 @@
+
+
+
+  !94=!{ !"!3=! H $;t   ;!i3=! 
+
+
+
+!nam
+ 
+ 
+
+e )cded =
+
+
+
+
+
+
+
+
+
+declare <2 x i64>
+
+
+
+ @llvm.ppc.altivec.vrl$(<2 x i64>, <2 x i64>) nounwind rea {  ;>+G{0!!, !1,4", !2, !3, !4, !5, !6, !7,!3} " !;8, !9}
+
+  
+
+
+
+
+
+define!
+  
+= 
+0
+
+
+
+
+
+
+
+declare i33 @llvm.hexagon.S2.cdnone
+dldebp6eclare <2 x i64> @llvm.ppc.altivec.vsld(<2 x i
+64>, <2 x i64>) nounwind r4ic()
+  
+
+
+
+
+ declare i	32 @llvm.sdeadnone
+declare <2 x i64is> @lltinvm.ppc.altivec.vsrd(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x (i64> @llvm.c

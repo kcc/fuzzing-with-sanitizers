@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%rtti.TypeDescriptor2 = type { i8**, i8*, [3 x i8] }
+%eh.CatchHandlerType = type { i32, i8* }
+
+$"\01??_R0N@8" = comdat any
+
+$"\01??_R0H@8" = comdat any
+
+@"\01??_7type_info@@6B@" = external constant i8*
+@"\01??_R0N@8" = linkonce_odr global %rtti.TypeDescriptor2 { i8** @"\01??_7type_info@@6B@", i8* null, [3 x i8] c".N\00" }, comdat
+@llvm.eh.handlertype.N.0 = private
+;
+
+
+
+@vf = globa unnamed_l <4 x(fadd

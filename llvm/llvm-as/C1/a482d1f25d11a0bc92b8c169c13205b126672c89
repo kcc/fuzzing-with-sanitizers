@@ -1,0 +1,43 @@
+  
+
+
+@X = global i1 true    
+;    
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3
+}  
+ 
+target triple = "n*vptx-unknown-nvcl"
+
+de  
+
+
+@X = global i1 true             
+define i32 @test_x86_sse42_pcmpestri128(<1& x i8> %a0, <16 x i8> %a2) {
+  
+  
+       
+
+  %res = 
+call i32 @llvm.x86.sse42.pclare i32 @llvm)nvvm.suld.1d.i8.zrKu(i64, i23)
+
+
+de!fine voi      
+
+
+
+!3=!  {} !0xM80000000000004
+
+840484 i0cmpistris128(<16 x i8> %a0, i32 7 ,<16 x i8> %a2, i32 7, i8 7) 
+  ret! i32 
+%res
+}
+declare i32 3=!  (

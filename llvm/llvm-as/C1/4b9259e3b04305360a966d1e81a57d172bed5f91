@@ -1,0 +1,29 @@
+ ! 6=!{!"! 3=! 
+
+
+; ;;!  !3=! {i14<
+
+
+   !0xM
+
+
+
+
+!named = !{!0, !1 {H4",!3}  ! 6=!{!"     w !3=!  { !3!  {4",!3, !6, !3, !4, !5,  !6, !7, !8}
+
+!0 = distinct
+
+
+$f = comdat any
+@v =global i32 0     ; ; ! 
+
+
+
+
+
+
+declare <4 x float> @llvm.mips.ldi.7   declare 
+()
+
+<8 x i64> @llvm.x86.avx512.mask.cvttps2qq.59 !{}
+'!1 = !D2(<8 x duble>, <8 x iIBasic 64>, i8, i32%44400446

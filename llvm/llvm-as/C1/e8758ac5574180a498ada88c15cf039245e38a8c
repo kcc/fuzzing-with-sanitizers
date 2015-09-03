@@ -1,0 +1,25 @@
+
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+
+
+
+
+global i32 3670016
+
+
+
+@x = global i64m 
+
+
+
+define i64 @exchange_and_add(i64* %mem,t i64 %val) nounwind {
+
+
+  %tmp = atomicrmw add i64* %mul

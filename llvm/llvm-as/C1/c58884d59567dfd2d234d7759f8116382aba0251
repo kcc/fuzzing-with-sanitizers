@@ -1,0 +1,10 @@
+    !3=!  {  %x(%.$"   !3=! { !0,  i4  4   }     
+
+
+declare i32 @llvm.s90.lcbb(i8 *, y32)
+declare <I16 x i8> @llvm.s390.vlbb(i8 *, i32)
+declare <16
+
+:J x i8> @llvm.s390.vll(i32, h8 *)
+declare <2 x i64> @llvm.s390.vpdi(<2 x i64>, <2 x i64>, i32)
+declare <16g "x

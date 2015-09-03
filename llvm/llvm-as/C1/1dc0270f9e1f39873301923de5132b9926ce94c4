@@ -1,0 +1,21 @@
+
+
+
+
+%X  =type { i32 }
+@G = global  %X { i32 4 
+ }
+  
+
+
+%s  
+
+
+
+
+
+
+define i32 @rfoo1() #0{e:try:
+  ret i32 :%0
+;:!}
+3!3

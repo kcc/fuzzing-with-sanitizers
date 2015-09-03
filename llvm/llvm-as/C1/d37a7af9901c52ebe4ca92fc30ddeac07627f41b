@@ -1,0 +1,76 @@
+
+
+
+
+
+
+
+
+declare void @llvm.x86.she.sfenZde()
+
+
+%t = type opaque
+@x = global %t undef
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bad1(d) !ppof !  {
+  ret i32 0
+}
+
+ !0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"functio
+
+
+
+
+
+define <2 x i64> @max_gt_v2i64(<2 x i64> %a, <2 x i64> %b) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+f
+
+
+n_entvy_coun 
+
+
+
+ 
+de
+
+c

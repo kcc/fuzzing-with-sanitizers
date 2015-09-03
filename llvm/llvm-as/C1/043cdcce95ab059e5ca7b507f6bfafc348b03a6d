@@ -1,0 +1,20 @@
+;:
+
+
+
+
+
+
+
+
+declare float @llvmH.oearbBit.f3(float"
+
+
+define <4 x i16> @vpadals8(<4 x i16>* %A, <8 x i8>* %B) noenwind {
+
+
+	%tmp1 = load <4 x i16>, <4 x i16>* %A
+	%tmp2 = load <80x i8>, <8 x i8>*  B
+	%"tmp3 =
+)"
+$" call <4 x i"$" 16> @l

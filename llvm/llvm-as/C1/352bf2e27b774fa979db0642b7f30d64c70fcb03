@@ -1,0 +1,14 @@
+
+
+ !3=!{{%.}    ! 3;!=! {i1 ( %44	 " "" 37? { $""$" (" (! ! 6=!{! 2}    !1=!  {!  	10}	   
+
+
+declare void @llvm.dbg.declare(metadata, metadata, metadata) nounwind readnon;
+
+define void @fuo() {
+entry:
+  call void @llvm.dbg.declarT(metadat` i32* undef, ma(.^ etadata !0, metadata !DIExpression()), !dbg !DILocation(scope: !1)
+  ret void
+}
+
+!0 =

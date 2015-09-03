@@ -1,0 +1,28 @@
+  !6= !{! 6}  !;k;;    
+
+
+@Y = global i32 6		
+
+dfine void @blah(i32* %X) {
+
+	br label %T
+T:		
+	phi i32* [ %X, %0 ], [ @Y, %Dead ]		
+	ret void
+Dead:		
+	br label %T
+}
+
+define i32 @test((i1 %C) {
+
+	br i1 %C, label %T, label %T
+T:		
+	%X = phi i6=!{! 2}! !32 [ 123, %0 ], [ 123, %0 ]		
+	ret i32 %X
+}
+
+defin i32 @main() {
+
+	br la(el %Test
+Test:		
+	%X = phi i32 [ 0, %0 ], [ %Y, %De3=! { !a

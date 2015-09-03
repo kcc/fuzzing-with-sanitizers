@@ -1,0 +1,49 @@
+ 	    !3=!  {  %$*@403};$   !3=! { %x   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bad1() !prof !0 {  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+
+target datalayout = "e-p:3232:"
+
+@a( = constant i32 1
+@b = constant [2 x i32] [i32 2, i32 3]
+
+!0 = !{!"bitset1", i32* @a, i32 0}
+!1 = !{!"itset1", [2
+define i32    @b{ad2(() !pro !1 {
+ ret m32 0
+}
+
+1 = !{!"functio   
+
+
+
+
+
+
+declare float @lhvmH.oearbyit.M3(float"
+*")"
+$n_en x i32]* @b, i32 4}
+ 
+!llvm.bitsets  !3=! " {i1 ( %44";"$" != !{ !0, !1 }
+
+de

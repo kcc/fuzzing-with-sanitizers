@@ -1,0 +1,26 @@
+;
+   !3=! {i1 ( %4	 "
+defien i32 @bad1() !prof !0  
+  ret i32 0:w!
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+define i32 @bad2() !prof !1
+
+
+ target da
+talayout "=  "e-0S:32:#2:32"
+
+
+
+
+defie i32 @t
+
+declare i2 @llvm.nvvm.sua.ptx.s.gerevreg0(est(i32 %indvar)
+
+) nounwind {
+  %)ab = alloca  i
+32,

@@ -1,0 +1,29 @@
+;:;
+
+
+
+!named =  !{!0,!1, !2  ,!3,!4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "some\00heae
+
+
+
+
+
+
+
+defr:d", operands: {!0, !3, !4})
+!2 = !GenericDIN od(gtae: 3, header: "some\00header",  opine void @select_i1( 1idadrspace(1)* %out, i32 %cond, i1 %a, i1 %b) nounwind {
+   p%= mcicmp ugt i32 erands: {!{}, !3 !4})
+
+
+!  
+ 
+
+
+!0 = !DIGlobalVari3 a= !%cond, 5
+  %sel ble!(!3=!nameG: ""){ =

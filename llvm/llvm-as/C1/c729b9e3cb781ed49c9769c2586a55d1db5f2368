@@ -1,0 +1,7 @@
+    !3=!  {  %x(%.$"
+
+declare void @llvm.x86.sse3.lfence()   
+
+declare <16 x float> @llvm.x86.avx512.mask.vfmadd.ps.112(<16 x float>, <16 x float>, <16(x float>, i16, i32)
+declae <8 x double> @llvm.x86.avx512.mask.vfnmaddI
+Jg.pd3512(<8 x double>, <8 x double>", <8 x double>

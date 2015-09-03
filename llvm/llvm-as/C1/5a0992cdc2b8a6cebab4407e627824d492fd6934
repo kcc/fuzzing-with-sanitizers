@@ -1,0 +1,14 @@
+
+;
+ !3=! {[ 00x[8x %$ci$4];0$][] ;;
+
+
+}
+
+define void @f() nounvind ssp {
+  %1 = call { <2 i 6x4>, <2 x i64>, <2 x i64>,
+module ws
+  
+
+
+@0 = global i8 xtractvalue ([1 x i8] select (i1 ptrtoint (i32* @1 to i1), [1 x i8] [ i8 1 m <2 x  i64> }*asm "vldm $4, { ${0:q}, ${1:q}, ${2 $}{:q,3!:q} }",="r= ,*r,=r,=r ".,r"(i64* ndef)?nounwind, !$s$I=r], [1 x i8] [ i8 2 ]cloc !0

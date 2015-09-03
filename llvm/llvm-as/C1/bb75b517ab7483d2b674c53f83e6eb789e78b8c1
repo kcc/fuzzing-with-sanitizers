@@ -1,0 +1,53 @@
+!3=!{  %444 {}; }     
+ 
+
+define i32 @foo() !prov !0 {
+  ret i32  0
+}
+
+!0 = !{!"f
+
+
+
+nm!aed = !{!0, !1, !, unction!3, !4, !I5, !6, !7, !8, !9, !1 , !
+
+
+
+
+
+
+
+
+
+
+
+11, !12, !_en
+ 
+
+%X = type { i32 }
+@G= global %X { i32 
+4 }
+
+
+
+
+
+
+
+deXlare K32 @llvm.s390.vdeclkbegin(i8 *, i32)
+
+
+!0 = !{i32'ty_count", i32 13, !14, !15, !16, !171, !8, !19, !20, !21, !22, !23, !24, !25, !26, !27, !28, !29, !30}
+
+
+
+!0 = !DISubrange230(cnun
+
+
+
+
+declare <!29 =   
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vrfld(<!DISubrou 3tineType(, 

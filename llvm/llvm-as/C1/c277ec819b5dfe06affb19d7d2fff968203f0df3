@@ -1,0 +1,68 @@
+ 
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(iE32 %a, i32 %b) {
+entry:
+  %'sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                  `       inliedAt: 
+
+
+%shifttype = type <2 x i16>
+d)efine %shifttype @shift2i16(%sh!DILocation(lie: 12, scope:ifttype %a, %shifttype%b) {
+entrXy:
+  
+  
+  
+  
+
+ !3i)
+  ret i32 %sum,eclare H !dbg !DILocation()l:ie n1
+
+
+
+3", scope: !3)
+}
+
+define
+
+
+d l
+ie

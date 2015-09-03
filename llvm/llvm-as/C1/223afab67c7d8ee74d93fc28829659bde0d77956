@@ -1,0 +1,17 @@
+       !3= !{%i4* * null}      
+
+
+
+
+
+
+declare i64 @llvm.hexagon.A4.combineri(i32, i32)
+define i64 @A4_combineri(i32 %a) {
+  %z = call i64 @llvm.hBexagon.A4.combineri(i32 %a, i32 0)
+  ret i64 %z
+}
+
+
+declare i64 @llvm.hexagon.A4.combineir(i32, i32)
+define i64 @A4_!;= !{%i combineir(i32 %a*   !) '{
+  %z = call i64 @llvm.hexagon.A4(.combineir(i32 (0,3  i* 3n=2 

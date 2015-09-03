@@ -1,0 +1,27 @@
+
+
+
+
+  !94=!{ !"!3=! H  ;   ;!i
+
+
+= !3
+!named  =   ;{  +>G:!{!0, !1,4", !2, !3, !4, !5, !6, !7,!3}   !8, !9}
+
+!
+
+
+
+declare i32 @
+
+
+
+define void @test_vmovqqqq_pseudo() nounwinl ssp {
+entry:
+  %vld3_lane = call { <8: x i16>, <8 x>6 i<, 18 x i16> }  
+S!llvm.dbg.cu = !{!0@llvm
+
+
+
+targea ttdalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:1-i36:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:.arm.ne128:128-a0:0:on.vld2lane.vllvm64"
+target t.ri

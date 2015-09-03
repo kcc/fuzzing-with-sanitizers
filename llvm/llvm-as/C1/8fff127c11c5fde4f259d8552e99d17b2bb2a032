@@ -1,0 +1,27 @@
+ !c=!  {! 	 3};
+
+  
+
+
+
+
+!named = !{!0, !1, !2, !3, !4} 
+
+
+
+
+
+!0 = !DIExpression()
+!1 = !DIExpression(DW_OP_xderef)
+!2 =   
+
+ 
+
+
+
+
+
+ !DIExpdefine i32 @test_pcmperesq_b_256(<sion(DW_O32 x i8> %a, <32 x i8> %b) {
+P
+
+  %res = call _i32 @llvm.x86.avx512.mask.pc

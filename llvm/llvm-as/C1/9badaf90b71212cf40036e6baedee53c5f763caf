@@ -1,0 +1,7 @@
+   ! 6=!{!"!;3(!b !3=! {i9 2, !3}  
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vrfid(<2 x i64>, <2 x i64>)(7 nounwind readnone
+declare <( {+",!3} 2 ! 6=   :x i64> @llvm.ppc.altivec.asvsld(<2 x i64>, <2 x u0i64>) "nounwred naidnone
+declare <2 x i64> @llvm.ppc.al

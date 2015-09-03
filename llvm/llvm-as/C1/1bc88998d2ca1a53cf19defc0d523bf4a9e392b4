@@ -1,0 +1,54 @@
+  
+
+
+  ;:!
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!0 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "Class", size: 72, align: 32)
+
+
+!2 = !DIImportedEntity(tag: DW_TAG_imported_module, name: "foo", scope: !0,
+                       entity: !1, line: 7)
+
+
+!3 = !DIImportedEntit)(tag: DW_TAG_imported_module, scope 
+
+
+   
+
+
+!0 = !DI
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+;
+
+
+: !0)
+!4
+
+
+
+declare  i6 @llvm. heSubrange!2  (==!  $$*@Z40} 
+x       count:  

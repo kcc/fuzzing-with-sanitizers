@@ -1,0 +1,14 @@
+
+ !3=! {{%.}
+
+
+declare <4 x float
+
+
+
+
+
+
+> @llvm.mips.; mad!ex.w()<  
+x
+

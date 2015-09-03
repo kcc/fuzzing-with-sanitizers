@@ -1,0 +1,28 @@
+ !3=!   {i1 s0x40440,!18}
+
+define <16 x   
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define voii16> @test_x68_avx2_packssdw(<8 x i32> %a0, <8 x i32> %a1) {
+  
+  %res = call <16 x i16>d @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prefix i32target 
+datala
+!0 = !DIG @llvm

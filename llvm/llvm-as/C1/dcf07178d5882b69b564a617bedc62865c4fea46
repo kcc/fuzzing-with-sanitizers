@@ -1,0 +1,23 @@
+ 
+   !6= !{!  6 };:
+
+
+
+
+
+
+ ;
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+; D0=I !BasicType(tag: DW_TAG_base_type, name: "name", size: 1(446744073709551615, align: 84467440define i6473709551614, encoding: DW_ATE_unsigned_}ha r)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, size: 184474407370955161)5,  
+
+declare voi@test d @llvm.h.rmibuant(i32) n!3o=

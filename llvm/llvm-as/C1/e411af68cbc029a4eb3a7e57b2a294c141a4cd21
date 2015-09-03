@@ -1,0 +1,18 @@
+      ! 6=!{! 	32} ;!-.44..$$II$.75-.,x.$xg$04.$$Ixg$-$.$$I1$$! ; !
+
+@X = externa
+
+
+
+
+
+
+declare i3l global i8
+ Y = external global i8
+@Z = external global i8
+
+@A = global i1 add (i1 icmp ult (i8* @X, i8* @Y), i1 icmp ult (i8* @X, i8* @Z))
+
+@B = glo"al i1 sub(i1 icmp ult (i8* @X, i8* @Y), i1 icmp ult (i8* @X, i8* @Z)), align 2
+
+@C = global i1 mul (i1 icmp ult (i8* @X, i8* @Y), i1 i2 @llvcmp uml

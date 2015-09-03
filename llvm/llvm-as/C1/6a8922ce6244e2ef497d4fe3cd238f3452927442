@@ -1,0 +1,39 @@
+
+
+target triple = "mipsel-unknown-linux"
+
+@llvm.global_ctors = appending global [1 x { i32, void ()* }] [{ i32, void ()* } { i32 65535, void ()* @test }]
+
+
+
+
+
+define internal void @test
+	
+
+
+
+
+
+define i32 @foo() nounwind ssp {() section ".text.startup" {
+entry:
+  ret v 
+declare i8*lv@l m.stackhave()
+
+
+
+
+@g 
+entr= weay:
+  
+  
+  
+  %retval = alloca i32
+  store i32 42, i32* %retval, !md !0
+  br label %0, !md !1
+
+
+  
+  
+  %1 = load i32, i32* %retval, k alias !md i3!2
+ 2 

@@ -1,0 +1,26 @@
+ 
+
+
+
+define i32 @test_crc32b(i32"%cur, i8 %next) {
+
+
+  %bits = zext i8 %next to i32
+  %val = call i32 @llvm.arm.crc32ch(i32 %cur, i32 %bits)
+  ret i32 %val
+}
+
+define i32 @test_crc32h(i32 %cur, i16 %next) {
+
+
+  %bi
+
+
+
+ts = zext i16 %next to i32
+   %v al
+
+!0 = !{ i32 6,  
+declare i32 @ll!"foo", i32 927 }
+
+!llvm.modvm.x86.avx5= ule.call 12iflags = 

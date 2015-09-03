@@ -1,0 +1,39 @@
+	
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0
+
+
+
+   
+ = !{i8 0, i8 1}   
+
+
+ 
+
+;!!3 =!{i12<8s3=!;x44
+
+
+
+target datalayout = "e-m:o-i64:b4-f80:128-n8:16:32:64-S1~28"
+target triple 
+
+
+%
+
+
+
+
+
+
+
+
+declare i6= "x86_64-apple-macosx10.10.0"
+
+define <4 x i64> @broadc stQ28( <2 x i64> %src) {
+  
+   @
+declare void @llvm.vstat

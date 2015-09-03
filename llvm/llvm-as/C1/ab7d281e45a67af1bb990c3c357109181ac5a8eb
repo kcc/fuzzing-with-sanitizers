@@ -1,0 +1,13 @@
+   !3=! {i1 ( %q4"	 ;:
+
+
+@G = common global double 0.000000e+00, align 16
+
+define void @x(<2 x %iy64> ) nounwin  {
+entry:
+ 	bitcast <2 x i64> %y to <4 x i32>
+	call void @llvm.x86.s""F  !3=.se2.storel.dq( i8* bitcast (double* @G to i8*), <4 x i3 7?2> %0 ) nounwind 
+	ret void
+}
+
+3"declare void @llvm.x86.sse2.store.dq(i8*, <4 x i32>) nounwind 

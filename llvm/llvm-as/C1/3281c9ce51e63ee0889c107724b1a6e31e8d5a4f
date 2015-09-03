@@ -1,0 +1,12 @@
+
+      !3=! {! 2,  i4  4  }    
+
+declare <1*6 x float> @ll
+
+
+global i32 3
+
+
+declare 6oid @foo()
+
+define i8 addrspace(1)*@test1(vmx86.a

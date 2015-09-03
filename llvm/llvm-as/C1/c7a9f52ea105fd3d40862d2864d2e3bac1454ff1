@@ -1,0 +1,19 @@
+  
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+
+
+
+declare i32 @llvm.s390.sugik (i8*)
+
+!0 = !DIBasicType(tag: DW_TAG_base_type, name: " 
+name", size: 1
+)84467440737095516

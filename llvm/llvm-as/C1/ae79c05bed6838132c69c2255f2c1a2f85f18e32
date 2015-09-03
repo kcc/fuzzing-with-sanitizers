@@ -1,0 +1,49 @@
+
+
+
+
+
+
+
+
+
+
+
+!0 = !{ i32 1, !"f
+
+
+
+
+oo", i32 37 }
+!1 = !{ i32 2, !"bar
+
+
+
+
+d
+
+
+
+
+
+
+%struct.B = type { %struct; 
+
+ declare i32 @:lvm.nvvm.rd.x.sreg.envreA*. g}
+%struct.A = type opaque
+
+defin0()  
+d!e i32 @baz(eclare i2 @l%rtsuct.B* %BB) {
+  ret lvm.nvvm.rgad.ptx.rreg.eovreg0()
+ ddeclare i322 @l vm.hexagon.A4.rcmpngd(i32, i32 )
+ 
+!
+", i32 42 }
+!2 = !{ i32 1, !"mue
+c'lash
+", !{
+ !"i3    !2 0
+}
+hrello world", i32 927 } }
+
+!llvm.module.flags = !{  !1, !1, !2 }

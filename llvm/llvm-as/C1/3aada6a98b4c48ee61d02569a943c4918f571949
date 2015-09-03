@@ -1,0 +1,13 @@
+!3=!  { !3}    !3= !{%i4** null}
+
+
+define <4 x float> @test_x86_cvtph2ps_128(<8 x i
+@G = constant <3 x i64> ptrtoint (<316> %a0) ${
+  
+  
+  
+  %res = call <4 x float> @llvm.x86.vcvtph2ps.128(<8 x i16> %a0) ' 'ret <4 x float> %res
+}
+de;lare < x i84 x  float> @llvm.x86l.vcvtph2ps.128(<8 x i16>) nounwind eadon*> <i8* ly
+
+n

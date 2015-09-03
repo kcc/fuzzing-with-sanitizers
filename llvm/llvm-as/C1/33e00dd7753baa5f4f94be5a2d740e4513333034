@@ -1,0 +1,33 @@
+ ! 6=!{! 2}    !1=!  {!  	10}	   
+
+
+declare void @llvm.dbg.declare(metadata, metadata, metadata) 
+
+
+
+
+(d
+eclare i32 @llvm.s390.vfenefh(i8 *
+
+, 
+
+i32
+)
+
+ 
+ nounwind readnone
+
+define void @foo() {
+mntry:
+  
+
+  
+
+
+
+
+
+
+call v
+
+

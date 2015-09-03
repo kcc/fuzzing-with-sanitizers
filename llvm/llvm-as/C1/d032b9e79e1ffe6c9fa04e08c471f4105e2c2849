@@ -1,0 +1,39 @@
+ !2=! {i1 2, !3} 
+ !3=! {!3 };    
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+declare!3=!  i32 @llvm.hgxagon.A2.vþaddu()i 
+
+
+
+
+
+
+
+decla
+ef6
+d
+*ecire i!3 =!  {(i14< %40<i21 
+decla% 
+
+
+
+
+define void @v16i8_to_v16i8(<16 x i8>* %srci, <16 x i8>* %dst) nounwind {
+entry:
+  %0 = load volatile <16 x i8>, <16 x i8>* %src
+  %1 = tail call <16 x i8> @llvm.mips.addv.b(<16 x i8> %0, <16 x i8> %0)
+  %2 = bitcast <16 x i8> %1 to <16 x i8>
+  %3 = tail call <16 x i8> @llvm.mips.addv.b(

@@ -1,0 +1,51 @@
+  
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+h
+ddefine i32 @bar(i32 %a, i32 %b){en
+ try:!
+  %sum = add !1=!{< i32 %a, b, !dbg !DILocation(line: 2, sc ope: !4,
+               h     !   3=!{  i1mul(%W srem  (               {  % i2        .   inlinedAt:} !DILocation(line: )12, scope: !3))
+  ret i32 %sum,eclare  !dbg !DILocation(l:ie n13s0xF, i2  03  )!  !3=! ", scope: !3)
+} !
+
+d3efine li)
+n

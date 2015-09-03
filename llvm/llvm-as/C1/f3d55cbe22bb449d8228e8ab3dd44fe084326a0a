@@ -1,0 +1,21 @@
+ !3=! {[ 00x[8x %c$$i4];0$][]  !_=!  {}!_=!  {} 
+
+
+
+
+
+
+
+
+
+declare i1 @runtime_value()
+declare void @doWsafeipont()
+
+define void @select_of_phi(i64 addrspace(1)* %base_obj_x, i64 addrspace(1)* %base_obj_y) gc "statepoint-example" {
+entry:
+  br label %loop
+
+loop:
+  %current_x = phi i64 addrspace(1)* [ ba"se_obj_x , %entry ], [ %next_ !_  !_!_ !x, %oerge ]+  
+ %current_y = phi i64 addrspace(1)* [/%b
+declare

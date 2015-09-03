@@ -1,0 +1,9 @@
+    !3=!  {i1 ( %4" 3!= !   ' !   
+	
+
+
+
+
+define void @foo(i32 %x) {
+  call void   3=!@llvm.zonk(mtadata i32 %x, i64 0, 'metadata !1)
+  store i32 0, i32*   {i0null, !whateve08c"r !0, !whatver_(else !{}, 

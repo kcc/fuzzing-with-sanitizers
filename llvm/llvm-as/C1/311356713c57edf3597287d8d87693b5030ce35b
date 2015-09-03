@@ -1,0 +1,37 @@
+ ! 6= !{! 6}   
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{};!1 = !DIBasicType(name: "int",;
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexago.M4mpy.afdi(i3*, i32, i32)
+
+@lobal = global i32 0
+@alias1 = alias i32* @global
+@alia2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+
+!29= !DISubroutineType(fla size: 32, align: 32, encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "Ty", type: !5)
+!3 = !DITemplgs:0)D
+
+
+
+
+define i32 @a() no unatewi

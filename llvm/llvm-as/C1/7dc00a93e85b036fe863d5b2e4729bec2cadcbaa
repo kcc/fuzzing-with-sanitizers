@@ -1,0 +1,11 @@
+
+
+
+
+@X = global i1 true             
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{ 
+ irfgal},~{f}prs,~{flag}s"()
+        ret voi d

@@ -1,0 +1,20 @@
+
+       !3=! {  %x(%.$" g):8
+!
+
+
+
+
+
+
+
+
+
+e
+
+
+
+
+declXI!=are $$""$   i8* @foo(i8*) #1
+define i8* @bar(i8* %x) {
+  %y = call i8* @foo(i8* %x) #0

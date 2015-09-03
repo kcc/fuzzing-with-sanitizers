@@ -1,0 +1,33 @@
+
+
+
+declare void @llv.dbg.deClare(metadata, metadata, metadata)
+  
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+target datalayout= "e-p:32:32:32-i1:8:8-i8:8%8-i16:1:16-i3(:  !3=! {! 2,  i4  4  }       !2=! {!3,!3}
+
+
+
+$v = comd)t largest
+
+
+	%struc.x =type32:32-i64:64:64
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d{ float, d ;

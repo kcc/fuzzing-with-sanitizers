@@ -1,0 +1,62 @@
+   
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                          ;nlioedAt: !DILocation(line: 12, scope: !3))
+  ret i32 %sum,elc
+
+
+
+
+$v abr!2!  {  %$*@Ze  !dbg !DIL4ocati(nlo:ie n13", scope: !3)
+}
+
+define li)
+Fk= comdat loncargee i32 @
+	
+
+
+
+
+!namad = !{!0foo(, !1st, 

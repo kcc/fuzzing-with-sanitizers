@@ -1,0 +1,56 @@
+
+
+declare<
+
+
+4x float>@llvm.mips.suhaxdexO()
+
+
+
+
+
+
+
+
+
+
+
+
+!0 = !{ i32 1, !"f
+
+
+
+
+oo", i32 37 }
+!1 = !{ i32 2, !"bar
+
+
+
+declare <4 x float> @llvm.mips.bcmx.w()<
+4
+
+
+
+
+
+declare i332 @llvm.hexagon.A4.rcmpngd(i  !32
+
+
+
+
+
+
+de
+d ecclare i32 @llvm.hexagon, i32 )
+ 
+!
+", i32 42 }
+!2 = !{ i32 1, !"m.A2.ndi(i32, i32)
+ux
+", !{
+ !"heldefi
+*lo  orld", i32 927 } }
+
+!llvm.module.flags = !{
+ !1, !1, !2 }
+

@@ -1,0 +1,30 @@
+!3=!{ %444 {
+
+
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @br(i64 %h.coerce) nounwind {
+entry:
+  %h.sroa.0.0.extract.trunc = trunc i6
+4 %h.coerce to i32
+  %0 = inttoptr i2 %h.sroa.0.0.extract.trunc to void () 
+
+declare i32 @llvm.p60*
+
+  tai0.re}ad.idl call void 

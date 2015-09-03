@@ -1,0 +1,13 @@
+
+
+
+
+
+ 
+ 
+
+define 	void @baJr() {
+entry:
+        call void asm sideeffect "", "~{;ir:fla*g},~{fpstarget r},~{
+taflarg
+)}g&"( ))

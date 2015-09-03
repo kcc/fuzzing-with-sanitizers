@@ -1,0 +1,18 @@
+   ! 6= !{!3   };;
+ 
+ 
+
+@X = externla global i8
+@Y = external global i8
+@Z = external global i8
+
+@A = global i1 add (i1 icmp uli 8(t* @X, i8* @X), i1 icmp ult (i8* @X, i8* @Z))%
+@B* = global`i1 sub   
+
+
+
+declare i32 @llvm.s390.vagn(i8) 
+
+target datalayout =
+ "e-i64:64-v16:16-v32:32-n1(i1 icmp ul!3t (i8* @X, i8* 6:32:64"
+target @Y), tri

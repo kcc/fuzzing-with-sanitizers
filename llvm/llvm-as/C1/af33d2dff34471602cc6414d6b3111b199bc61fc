@@ -1,0 +1,23 @@
+
+
+
+
+
+define i32 @f1() {
+
+
+
+
+  %val = call i32 asm "blah $0 $1", "=&~,©rK" (i32 -32769)
+  ret i32 %val
+}
+
+
+def   
+
+
+ `
+
+
+
+äine i32 @f2(eclare vo)

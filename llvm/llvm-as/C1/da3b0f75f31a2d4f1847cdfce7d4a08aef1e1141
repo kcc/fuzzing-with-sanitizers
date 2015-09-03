@@ -1,0 +1,62 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}  )!c=!   
+target datalayout = "E-m:e-i64:64-n32:64"
+target triple = "powspc64-unknown-linux-gnu"
+
+@.str! [ 	! 
+
+@g = global i32 0
+
+
+
+declare <4 x float> @llvm.mips.c
+3= exte
+
+rnal eq.b()
+
+
+
+
+
+declare 
+
+
+
+void @llvm.x86.sse
+
+
+
+
+
+
+
+
+
+
+declare i33 @llvm.hexagon2.S2unnamed_addr consta.vc ldebp6arc4i.s<
+
+
+
+
+@a = alias bitl
+sencns
+
+
+
+!0 = !{i32 nt [5 41}
+()
+ !!llvm.sff =u wtcae!{!0}
+ ;
+
+ ) (st 6i;;: 
+
+t32* n
+
+@g tro%i8*)
+3d= 
+d
+
+
+e arget triple = "npt-vxnkx i8],} anuown-n

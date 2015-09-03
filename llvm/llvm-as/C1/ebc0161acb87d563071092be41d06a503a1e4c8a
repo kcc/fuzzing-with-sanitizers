@@ -1,0 +1,27 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+ 
+;:
+!3=
+
+
+
+@g1 = constant {{i32,i8},i32} {{i32,i8} { i32 -!  {} 
+
+
+
+0
+
+declare i64 @llvm.559038737, i8 186 }, i32 -889275714 }
+@g2 = constahexag!n.S3.lrr.r.p.ned
+
+@x = glnt double 1.0
+
+@g3 ob   !3=al = 

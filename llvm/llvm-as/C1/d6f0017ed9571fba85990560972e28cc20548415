@@ -1,0 +1,33 @@
+ ! 6= !{!6};
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target !3=!   {!3};t
+
+
+
+
+
+
+declare  cc voi7@d xtriple = "nvptx-unknown-nvc*l"
+
+declare i32 @llvm.nvvm.suld.drpi23.2ua.(i64, i23)
+
+
+de!fine vo;id @:foo(:64 %i*g float* %red, i3WX:A #n''xg':2 %idx) {
+
+  %val = tail call i32 @llvm.nvvm>
+
+
+
+-    

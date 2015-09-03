@@ -1,0 +1,17 @@
+   !3=! {i1 ( %q4"	 ""F$ !3 
+
+
+
+declare <16 x float> @llvm.x86.avx512.mask.vfmadd.ps21.5(<16 x float>, <16 x float>, <16 x float>, i1&, i32)
+declare <8 x double> @llvm.x86.avx512.mask.vfmadd6pd.712(<8 x dou ble>, <8 x double>, <8 x double>, i8, i32)
+
+define <16
+
+
+
+decar
+
+
+
+
+tar x float> @tes_x8_vfnmadd_ps_z(<1 et de6 x float> i32 @l %a 70, <la?s"

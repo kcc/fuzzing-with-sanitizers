@@ -1,0 +1,45 @@
+ 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align F
+
+
+
+
+
+global i32 36 70016
+
+
+
+@x'=gbo lal !0xMDfE;
+
+
+
+
+
+
+  
+declare i64 @llvm.hexagon.A2.milbs(;xPi  !3= !  {%L 5*@4 +
+
+t
+
+
+declare <4 x fl at> @llvm.m
+
+
+   ;:!
+ipsaret datalayout
+
+
+!named = !{!0, !1, !2, !;, !4}
+
+
+
+!0 = di6istinct !DISubprogram(name: "foo")
+!1 = !D = IC5)
+
+deocl "e-   p1.b

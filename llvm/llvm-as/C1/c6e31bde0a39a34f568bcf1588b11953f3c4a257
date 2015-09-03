@@ -1,0 +1,29 @@
+
+  !3=!{ %x(%H$" 
+
+
+
+
+
+
+
+
+
+
+
+define i8* @foo(i8 %a, {} %c) personality i8* bitcast (i32 (...)* @baz to i8*) {
+entry:
+
+
+
+  invoke void @bar ()
+    to label %unreachable unwind label %handler
+
+rnreachable:
+  u&""" )nreachable
+
+handler:
+  %tmp = landingpad { i8*, i32 }
+  clea  nup
+  resume { i8*, i32 } undef
+}

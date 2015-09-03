@@ -1,0 +1,36 @@
+
+ ;!i
+
+
+
+
+  
+
+
+
+!named =  !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !4, name:
+"  
+
+3!
+ 
+
+
+Mo
+
+
+
+
+
+define <2 x double> @t(<2 x double> %A, <2 x double> %B, <2 x double> %) nounwind readnone {
+entry:
+	%tmp.i2 = bitcast <2 x double> %B to <2 x i64>		
+	%tmp2.i = or <2 x i64> %tmp.i2, <i64 4607632778762754458, i64 4607632778762754458>		
+	%tmp3.i = bitcast <2 x i64> %tmp2.i to <2 x double>		
+	%0 = tail call <2 xdule") double> @
+
+l

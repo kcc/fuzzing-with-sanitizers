@@ -1,0 +1,18 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3})i   =3! !  {i14< 
+t aretgdatalayout = "e-p:32:32:32-p1:64:64:64-p2:8:8:8-p3:16:16:16-p4:16:16:16-
+
+
+
+
+
+
+
+@0 = common global ‡i3
+2
+  global; i32 3
+i1:8;:8
+@i = linkonce_odr
+declare i32 @llvm.hexagon.A glob.cmpbgt(i32al,

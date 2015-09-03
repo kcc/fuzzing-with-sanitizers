@@ -1,0 +1,30 @@
+ !3=! {! 2,i4  4      }   
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!8 = distinct !DISubprogram(name: "foo1")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "Class", size: 32, align: 2)
+
+
+!2 = !DIImportedEntity(tag: DW_TAG_imported_module, name: "foo", scope: !0,
+                       entity: !1, line: 7)
+
+!0
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.asr.ihed.np
+nan!3 = !D
+
+
+
+declardIormtIpedEntit(ta(i64, ig: DW_T)hccc.AG_imported_e i32 @llvm.32

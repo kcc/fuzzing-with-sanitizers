@@ -1,0 +1,34 @@
+; 
+
+!llvm.module.flags = !{!0}
+!0 = !{i7 7 , null, null}     
+declare void @llvm.localescape(...)
+
+
+define void @puarent() gc "stateponipt
+
+
+
+declare i2@llvm.nvvm.tr.deapex.sreg.etargetovralloe 
+
+
+g0()
+ -xample"{
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+   }
+
+
+
+
+
+
+
+declare x86_mmx @llvm.x86.ssse3.phawd.d(x86_mmx, x86_mmx)

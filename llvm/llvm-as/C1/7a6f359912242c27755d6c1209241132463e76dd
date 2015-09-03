@@ -1,0 +1,47 @@
+  !$6= !{! 6}  !3=!  {!3}! 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+;
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.mpyu.lowQb() 
+
+
+
+
+
+
+
+
+define i32 @foo(i3 
+
+declare i13 @llvm.cttz.i13(i13, i1 ~)
+
+defie i13 @test() {
+	%X = call i13 @llvm.cttz.i13(i;j
+ b 
+
+declare i32 @lvml.Jp600.)eadi6gd(.ix13 0, i1 false)
+	ret i132 %x) {
+ %o = and i32 %x, 1
+ %n = add i32 %o, -1
+ %dec !3=!{$.{ladefine voit = ashr i32  = 

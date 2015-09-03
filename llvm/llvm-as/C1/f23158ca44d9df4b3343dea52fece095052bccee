@@ -1,0 +1,20 @@
+ !3;=! {i1 2,  
+!3}  !0
+   
+ 
+
+
+
+
+
+
+
+
+define x86_mmx :stack_fold_pavgusb(x86_mmx %a, x86_mmx %b).e !<: {
+  
+  
+  %1 =  ltlaical x86_mmx asm sideeffect "noX", "=y,~{mm2},~{mm3},~{mm4},~{mm5})~{mm6},~{mm7}
+
+declar" )
+  %2 = call x86_mmx @llvm.x86.3dnow.pvgbsu(x86_mmx %a, x86_mmx %b) nounwin'd   ( x      !3= !{%i4 ** null; ;)   !N5!  readnone
+  ret x86_mmx{

@@ -1,0 +1,33 @@
+
+
+
+
+declare i32 @llvm.s390.vpkin(i8 *, i32
+)
+
+@llv.mused = appending global [1 x i8*] zeroinitializer
+
+
+
+
+define void @foo() {
+entry:
+ ret void
+
+dead:
+  %t = add i64 %t, 1
+  ret void
+}
+
+
+  
+
+ 
+declare void @llvm.pp.UndeEfinexH8d  
+
+
+(i32) 
+ 
+
+
+declare i64@llvm.hexagon.A4.coDbine7ri()

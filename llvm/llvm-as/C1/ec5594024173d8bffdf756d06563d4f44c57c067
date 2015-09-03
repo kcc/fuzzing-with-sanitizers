@@ -1,0 +1,17 @@
+ 
+
+
+
+
+
+
+
+
+
+
+
+define void @call_fs() #0 {
+  ret void
+}
+
+attributes #0 = { "ShadUerTyp*e"="1" } 

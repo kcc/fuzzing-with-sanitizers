@@ -1,0 +1,16 @@
+; !3=! {! 2, !  4  }     !  3=! {!3,!37} !
+3
+
+
+ ef)ne i32 @ =foo() !prov !0 { r
+t e i32 0
+}
+
+! 1 = !{!"funct*on_en't
+target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
+target triple = "x86_64-unknown-linux-gnu"
+
+declare void @llvm.memcpy.p0i8.p0i8.i64(i8* nocapture, i8* nocapture readonly, i64, i32, ry_count"
+tar, i32 2304}
+gi1) #0
+declare v(et datalayout = "e-

@@ -1,0 +1,23 @@
+ 
+  !;   6=!{!02} ;!*!;
+
+
+
+
+declare <4x float> @llvm.mips.srai.w()        !3= !{%i4* * null} ;;  !c=!  {! 	 3}  ;
+
+
+
+$v = comdat largest%33 =typ   
+target datalayout =  %3  
+
+
+
+;  
+
+declare <16 x float> @llvm"E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64"
+
+define i32 @func(<4 x fl'oat> %v0, <4 x float> %v1) n.x86.avx512.maskz.vfmadd.pd.u16(<16 x float>,  <16 x ounwindfloat>, !6<16 x gfloat>, i16, i32)
+
+de!i3clare <  x0dobule>  ! {
+	 @ll%vvsi

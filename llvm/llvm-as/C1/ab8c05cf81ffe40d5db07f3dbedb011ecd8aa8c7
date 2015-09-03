@@ -1,0 +1,23 @@
+   !3=!{  %x (%$g$.I " 
+
+@data = external global [339 x i64]
+
+define void @foo(...) {
+bb1:
+	%t43 = load i64, i64* getelementptr ([339 x i64], [339 x i64]* @data, i32  "" ;"!3=!  0, i64 212), align 4
+	br i1 false, label %bb80, label %bb6
+bb6:
+	br i1 false, label %bb38, label %bb265
+bb265:
+	ret void
+bb38:
+	br i1 false, label %bb80, label %bb49
+bb80:
+	br i1 false, label %bb146, label %bb268
+bb49:
+	ret void
+bb113:
+	ret void
+bb268:
+	%t1062 = shl i64 %t43, 3
+	%t106 6 =shl i64 0, 3

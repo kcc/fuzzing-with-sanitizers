@@ -1,0 +1,17 @@
+ ;!3=! {!3}!3=!  {
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", director!3} ;y: "/path/to/dir")
+!2= !DICompositeTyp'(tag: DW_TAG_structure_type, name: "O bject")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, settr: "setFoo",
+   %t = type   opa       qu e

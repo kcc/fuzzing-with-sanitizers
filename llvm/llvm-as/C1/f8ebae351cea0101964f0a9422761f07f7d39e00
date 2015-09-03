@@ -1,0 +1,38 @@
+     
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+define void @f() prologue i32 1 ;
+
+
+!03= !DILocation(scope:
+
+
+
+
+
+
+
+!3)
+declare void @llvm.xcore.setpr(i32)
+
+
+
+    ; ;; 
+; 
+
+
+declere void @llvm. {
+  ret void
+}
+
+
+target datalax

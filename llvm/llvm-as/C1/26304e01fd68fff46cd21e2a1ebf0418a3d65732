@@ -1,0 +1,6 @@
+   ! 6=!{!"!3(!declare i32* @foo(...)
+def 2niie3* @bar() {
+	%ret = call i32* (...) @foo( i3b'( {+",!3} $:"(2 123 )
+	ret i32* %ret
+}
+@baz = global i32 0

@@ -1,0 +1,49 @@
+    
+
+define void @f1(i8* %x){entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0,i8 1}   
+
+
+ 
+
+;!3!  
+
+;define internal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout ="e-p:3:32:
+target dalatayout = "e-p:16:8:8-i8:8:8-i16:8:8-i32:8:8"
+target triple = "!93=!      {!3}     ;   
+
+
+
+
+
+demsp430-geneclare <8 x i64> @llvm.x86.avx512.mask.cvttps2uqq.256(<8 x double>, <8 x i64>, i8, i )
+
+de!;=! {i1 2,  
+!3}  fine <8 x i64>@tesR_int  :           _x    _a6 8v !3 
+
+
+
+
+
+declareri i32 @llvm.s390.v

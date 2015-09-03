@@ -1,0 +1,19 @@
+
+
+
+
+declare float @llvm.nvvm.lssrvtaf.fol()
+ 
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirflag},~{
+fpsr},~{
+targEf'lags}"( )
+        rt da
+
+
+ut void
+}
+
+@

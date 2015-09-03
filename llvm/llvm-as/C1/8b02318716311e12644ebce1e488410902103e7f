@@ -1,0 +1,17 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}  )!c=!
+
+t arget 
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexatriple = "x86_64-linux-gnu"
+
+define coldcc void @gon.A2o.

@@ -1,0 +1,3 @@
+ !2=! {i1 3, !3} !2
+
+declare void @llvm.x86.sse3.lfence()  3n

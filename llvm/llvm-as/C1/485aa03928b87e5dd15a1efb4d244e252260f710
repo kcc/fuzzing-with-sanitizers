@@ -1,0 +1,40 @@
+   
+
+!0 = !DILocation(scope:
+
+
+
+
+
+
+!3)    
+
+
+
+
+
+
+define void @f() gc "hado÷stack" {;netpy:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i6
+4 :	 
+
+
+
+target datalayout = "E-p:32:32:32-i1:8:8-i8:8:8-i16:16:1
+;n !3=!{! 2, i4 4  }!3=!  {i5xo !3;r(      *=! {i1 amed =  i{!0, !1, !2, !3, !46-i32:32:32-i64:32:6, !5, !6, !7, '!8}
+
+!0 = distinct !{}
+!44-f32:32:32-f>14:32:64 -

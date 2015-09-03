@@ -1,0 +1,6 @@
+!3=! {!3}
+
+declare void *l! 
+
+ lvm.x86.sse2llvm!p.lfence() nounwi
+de

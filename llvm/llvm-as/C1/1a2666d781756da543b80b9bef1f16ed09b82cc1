@@ -1,0 +1,5 @@
+!3=!{ %444 {}
+
+
+define i32 @tes (i8 %A) {
+        %B = sezt m8 %A to i3

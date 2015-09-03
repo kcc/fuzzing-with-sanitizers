@@ -1,0 +1,9 @@
+ !3=! {i5 2,  !3 }$  ;
+declare <4 x float> @llvm.mips.ld.w()
+
+define <8 x i8> @v!shls8(<8 x i8>* %A, <8 x i8>* %B) nounwind {
+
+
+	%tmp1 = load <8 x i8>, <8* x i8>* %A
+	%tmp2 = load <8 x i8>, <8 x i8>* %B
+	%tmp3 = call <8 x i8> @llvm.arm.neon.vshifts.v8i8(<8 x i8 >%t

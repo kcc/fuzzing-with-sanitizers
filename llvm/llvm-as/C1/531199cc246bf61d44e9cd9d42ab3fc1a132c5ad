@@ -1,0 +1,59 @@
+
+
+
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+en3try:
+	ret void
+}
+
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:1r:16-i32:32:32i64:64:66-f3232:32-f64
+
+
+
+
+
+
+
+
+targed'vala tyou
+
+
+@X = glob i1la trUe   ! 
+1t = "e; n 
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.mmpyulQips(
+) 
+ ; ;!ti3=! {!3}!3=-p:32
+
+d:32:32-i 4
+
+defhne = {   ! !3} 
+
+
+
+
+!3=!   (  {!3}! 

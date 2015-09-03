@@ -1,0 +1,29 @@
+
+   
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9
+}
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "som:\00header", operands: {!0, !3, !4})
+!2 = !Gene
+
+
+
+
+
+target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-apple-macosx10.9.0"
+
+
+define void @test_sink(i8* %arg1, i32 %arg2, i8 %arg3) #0 {
+  %tmp1 = add i32 -2147483648, %arg2
+  %tmp2 = add i32 -2147483648, %tmp1
+  %tmp3 = getelementptr i8, i8* %arg1, i32 %arg2
+  br label %bb1
+bri
+1:bcDINode(tag: 3
+ ,  

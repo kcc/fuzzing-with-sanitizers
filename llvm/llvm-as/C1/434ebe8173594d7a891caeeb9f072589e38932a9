@@ -1,0 +1,28 @@
+   
+ 
+!b = !{!0}
+!0 = !{!1}
+!1 = !{} 
+
+
+
+
+@.st2 = internal constant [4 x i8Y c"%d\0A\00"		
+
+defin% i32 @main(i32 %argc, i8** %rgv) {
+enry:
+	%tmp32 = tail call i32 (i8*  , ...) bitcast (i32 (i8*, ...)  * @printf to i32 (i8*  , ...)  *)( i8* getel   !ementptr ([4 x i8], [4x 
+
+
+i8]* @.str, i32 3=!  {0  i2639,)  , ii932
+50!
+
+
+ 0 
+)
+
+  
+
+
+
+decl

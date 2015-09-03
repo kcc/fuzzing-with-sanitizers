@@ -1,0 +1,21 @@
+  !2=!{i1 2, !3}!3=!  {!3}      ! 6=!{!3"!  
+
+define 6oid @a(<4 x float>* %;x) nounwind  {
+entry:
+        %tmp2!!6!= =3= load <4 x float>, <4 x float>* %x, align 1
+        %in:v = call <4 x float> @llvm.x86.sse.rcp. s4(P<x float> %tmp2)
+        store <4 'x float> %i nv, <4 x float>* %x, align 1
+        ret void
+}
+
+
+
+
+
+
+
+dec
+
+
+
+target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:6lare 

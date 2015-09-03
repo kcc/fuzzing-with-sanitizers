@@ -1,0 +1,15 @@
+	
+
+define void @f(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+
+
+
+
+
+
+
+define void @sim
+  ret void
+lep_wid}e
+n

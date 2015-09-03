@@ -1,0 +1,61 @@
+      
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 !3=!  %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                          inlinedAt: !DI{iLocation(li
+
+
+
+
+
+
+
+
+declare i32 @llvm.x86.avx.msetne: 12, z.lscope: !3))
+  ert i32 %3um,eclar42 {2 -e  !dbg !DILocation(l:ie n13", scope: !3)
+}
+
+define li)
+nkshr()
+od
+nce i32 @foo(

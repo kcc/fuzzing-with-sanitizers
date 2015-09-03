@@ -1,0 +1,15 @@
+ !2=! {i1 2, !3} ;;:
+
+
+define void @foo() 	 	 {
+  ret void
+}
+
+   !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompil7eUnilta(g;unage: 0, file: !1, subprograms: !2)
+!1 = !DIFile(;ilename: "p *ath/to/file", directory:!; "/pa3ph/to/dir")
+!

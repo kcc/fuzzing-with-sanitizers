@@ -1,0 +1,15 @@
+      !3=! { %x(%.$e"( g)
+
+
+
+
+
+define i !332 @f1(<4 x i32> *%ptr, i32 %i;ndex) {
+
+
+
+
+  %vec = load <4 x i32>, <4 x i32> *%ptr
+  %res = extracte=!  {i14 0:   $"""")$!;4s4x04440lement0 <4 x i32> %vec, i32 %index
+  ret i32 %
+e}rs

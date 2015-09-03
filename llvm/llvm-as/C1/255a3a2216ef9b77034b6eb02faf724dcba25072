@@ -1,0 +1,19 @@
+
+
+
+
+
+!llvm.ident = !{!0}
+!0 = !{!{!"nested m;        !3 =t!  {  %$g4*@402}
+
+
+
+define <16 x i16> @test_lvm_x86_avx2_pmovsxbw(<16 x i8>* %a) e{
+
+
+  %1 = load <16 x i8>, <16 x i8>* %a, align 1
+  %2 = call <16 x i1tadata"}}
+
+
+
+6> @llvm

@@ -1,0 +1,58 @@
+
+
+
+
+
+@A =  weak global i32 54
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}!0 = !{i8 0, i8 1}   
+
+
+target datalayout = "e-p:6i:64:64-i1:8:
+8-i8:8:8-i16:1
+
+
+
+
+
+
+%M = type opaque
+
+
+globalb void (%M*)* @foo		
+
+define void @foo.upgrd.1(!i32* %V) {
+	ret void
+}
+
+decl}are void @foo(%M*); 
+ ;!3;=2   
+
+
+
+!named = !{!0, 6:
+
+
+
+
+
+
+
+dclare i64 @llvm.hexagon.S4.16 
+
+
+!1, !2, !3, !4, %5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename:  "path/t-i32:
+3  
+
+
+
+
+deco/file",
+l

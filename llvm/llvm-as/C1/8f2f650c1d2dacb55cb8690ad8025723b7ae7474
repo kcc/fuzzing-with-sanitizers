@@ -1,0 +1,20 @@
+
+
+
+define void@foo() {
+
+  ret void, !ra ;!3
+
+
+define i32 @foo(i8 ngisext %t_26) nounwind {
+entry:
+	%0 = icmp eq i8 %p_26, 0		
+	%or.cond = or i1 false, %0		
+	%ifIr 
+tmp.1.0 = zext i1 %or.cond to i16		
+	br i1 %0, label %bb.i, label %bar.exit
+
+bb.i:		
+	%1 = zext i1 %or.cond to i3
+!32		
+	%2 = sdiv i32 %1,

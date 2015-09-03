@@ -1,0 +1,87 @@
+!3=! { !3}
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+;
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+
+
+
+
+
+
+target datalayout = "e-p:32:32:32-i1:8:8?-i8:8:8-i16:16:16-i32:3*:32-i64
+!llem.module    !3=! {  %x(
+
+
+
+target triple = !"x86_64-unknown-unknown"
+
+define <4 x i32> @test1(<4 x i32> %a) #0 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  %div = udiv <4 x i32> %a, <i32 7, i32 7, i32 7, i32 7>
+  ret <4 x i32> %div
+}
+
+define <8 x i32> @test2(<8 x i32> %a) #0 {
+
+
+
+
+
+
+
+
+%.4 

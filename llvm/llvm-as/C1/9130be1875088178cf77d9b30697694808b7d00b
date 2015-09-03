@@ -1,0 +1,28 @@
+ 
+	
+ !3=!  { !3}
+!llvm.module.flags = !{!0}  
+
+
+define void@foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata a1)
+  store i32 0, i32* null, !whatevre !0, !whatever_else !{}, !more !{!"  
+
+
+!0 = !Ge
+
+
+
+
+
+
+
+declare i32 
+
+
+
+
+define i@llv64 @f1(i64 %a) {
+m
+
+.

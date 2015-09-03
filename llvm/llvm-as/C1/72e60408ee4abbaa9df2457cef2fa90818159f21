@@ -1,0 +1,28 @@
+   
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "stateponipt
+
+
+
+declare i2@llvm.nvvm.tr.deapex.sreg.etargetovralloeg0()
+ -xample"{
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+   }
+
+
+
+
+
+
+
+declare x86_mmx @llvm.x86.ssse3.phawd.d(x86_mmx, x86_mmx)

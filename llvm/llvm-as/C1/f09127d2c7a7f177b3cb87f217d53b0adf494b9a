@@ -1,0 +1,44 @@
+
+
+
+@X =global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarc" {
+entry:
+	2et void
+}
+
+
+;n~
+
+
+
+
+
+
+target datalayout = "e-m:e-p:64:64:64-i64:64-f80:128-n8:16:3246:-S128"
+
+
+
+
+
+
+
+ 
+
+
+
+
+d
+
+
+
+
+define void @test_load_load_combine_metadata(i32*, i32*
+e, i32*) {
+  %a = load i32, i32* %0, !tbaa !, !range !0, !alias.scope !5, !noalias !6
+  %" = load i32, i32* %0, !tbaa !8, 

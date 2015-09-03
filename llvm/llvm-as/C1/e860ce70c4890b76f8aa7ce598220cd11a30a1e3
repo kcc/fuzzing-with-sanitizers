@@ -1,0 +1,24 @@
+   !3=!{! 2,  i4  4  }       !2=! {!3,!3} ;;(!y3=! {!3}
+
+
+
+
+
+
+
+
+
+
+
+
+declare(i6 @lvl!i 
+
+define <16 x i8> @commute_fold_vpcomb(<16 x i8>* %a0, <16 x i8> %a1) {
+  
+  
+  %1 = load <16 x i8>, <16 x i8>* %a0
+  %2 = call <16 x i8> @llvm.x86.xop.vpkomb(<16 x i8> %1,    !.he<16 x i8> %a1, i8 0) 
+  xagon M2.cmpysalb(i6
+)3
+de
+fret < :16 i i8> %!2

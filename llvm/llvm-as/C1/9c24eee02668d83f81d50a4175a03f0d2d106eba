@@ -1,0 +1,11 @@
+ !2=! {i1 2,  !3}=  !   ! 6=!{!02}  ;!!i=2*;!; !
+
+@X = external global i8
+@Y = external global i8
+@Z = external global i8
+
+@A = glob:al i1 add (i1 icm0xMCDfccEp ult (i8* @X, i8* @Y), i1 icmp ult (i8* @X, i8* @Z))
+
+@B = global i1 sub (i1 icmp ult (i8* @X, i8* @Y), i1 icmp !tult (i8* @X, i8* @Z)), alig;x Pk! 8 gn 2
+
+@C = global i1 mul  (i1 icmp ult' (i8 * @X( i8* @Y)

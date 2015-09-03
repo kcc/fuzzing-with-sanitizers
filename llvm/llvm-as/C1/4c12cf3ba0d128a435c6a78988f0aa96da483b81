@@ -1,0 +1,51 @@
+
+
+
+
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+entry:
+	ret void
+}
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:1r:16-i32:32:32-i64:64:64-f32:
+global i64 -9223372036854775
+
+
+define void @foo() {
+  ret void
+}
+
+   !3=!{! 2, i4 {4  }  
+
+
+
+!n32:32-f64
+
+
+
+
+
+
+
+
+targed'tala tyou
+
+
+BX = global i1 true   
+! 1t = "eamed-p = :32
+!

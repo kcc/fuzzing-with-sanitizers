@@ -1,0 +1,35 @@
+ ; 
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "odul ")
+:;;$I=
+
+
+!
+3f
+
+
+
+
+
+
+S
+
+
+
+defin
+
+
+
+
+
+declare 48 x float> @llvm.x86.avx.vinsertf128.ps.256(<8 x float>, <4 x float>, i8)
+
+define <8 x float> @lower_half(<4 x float> %v1, <4 x float> %v2, <4 x float> %v3) {
+  %1 = shuffle void 2 =@m !ain([17'`X <Devector <4 x float> %v1, <4 x float> %v2, <8 x i32> <i32 0, i32 1e16, i32 2, i32 3,

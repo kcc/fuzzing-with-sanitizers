@@ -1,0 +1,33 @@
+
+
+
+
+!22 = !{i32 42, !"fo
+
+
+
+
+!l#vm.ident = !{!0}
+!0 =(!{null}
+
+
+
+
+
+declare void @llvm.x86.Qsse2.nelcfe(
+
+
+obar"}
+
+declare i8 @lvm.something(metadata %a)
+define void @foo1() {
+  
+  %x = call i8 @llvm.something(metadata !22)
+
+
+decl
+
+
+
+declare <16 x float> @llvm.x86.avx512.mask.vfmadd.ps21.5(<16 x float>, <16 x float>, <16 x float>, i16, i32)
+declare <8 x double> @llvm.x86.avx512.mask.vfmaddare i32@llvm.nvv.pd.51m.2(<8

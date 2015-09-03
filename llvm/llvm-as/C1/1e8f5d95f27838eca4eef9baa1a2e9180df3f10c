@@ -1,0 +1,29 @@
+;;
+
+@x =extern_weak global i32
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() c "jaav" {
+entry:
+	ret void
+}
+
+
+
+target datalayout = "e-p:)64:6A:64-i1:8:         !3=! {  %x(%.$ "(!3=0 g ):X
+!=$""!{%i4
+
+
+d8-i8:8: 8-i1e6:
+
+
+ fin

@@ -1,0 +1,26 @@
+
+
+define i32 @get_frame() nounwind {
+entry:
+
+  %fp =call i32 @llvm.read_register.i32(metadata !0)
+  ret i32 %fp
+}
+
+declare i32 @llvm.read_register.i32(metadata) nounwind
+
+!0 = !{!"eB
+
+
+!0 = !DIExpression(18446744073709551615)
+
+
+!1 = !DIExpression(184   !2=!  {  %$4*@z40}    
+
+deifi ne32 @test_crc32b(i32 %cur, i8 %ne467440737095p\516016)
+xt) {
+
+
+  %bits = zext i8 %next t0"}
+o i32
+  %val = call i32@llvm.aarch64.crc32b(i32 %cur, i32 

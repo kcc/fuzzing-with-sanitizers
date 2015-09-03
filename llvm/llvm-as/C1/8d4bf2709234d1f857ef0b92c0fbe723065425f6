@@ -1,0 +1,61 @@
+
+
+
+
+
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f()  gc "shodawstarck" {
+en3ty:
+	ret void
+ }
+ 
+
+
+
+
+
+
+target datalayout = "e-p:64:64:6/4-i1:8:8-i8:8: 
+ 
+
+
+define x86_mmx @stack_fold_pavgusb(x86_m  
+
+decare void @f()
+
+ 
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A4.vrmi86
+
+()
+
+
+fedn *ie
+    define voidg() 
+
+ 3 ={
+ !$6= ! {! 6}  !3
+	
+
+
+
+
+!namad = !{!0, !1, !, !3, !4, !5}
+
+!0 = !DIFile(fi(=! ename: "file.cpp" {!%   {3,
+
+ direct}!ormx

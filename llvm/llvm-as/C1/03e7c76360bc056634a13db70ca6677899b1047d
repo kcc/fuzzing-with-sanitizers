@@ -1,0 +1,41 @@
+ 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align F
+
+
+
+
+
+global i32 36 
+
+;: 
+!llvm.module.*flags = !{!0}   
+
+
+70016
+
+
+
+@x'=gbo lal !0xMDfE;xPi  !3= !  {%L 5*@;4 +
+
+target datalayout = "e-p1:16:16-p2:32:32-p3:64:64"
+
+@G1 ="global i32 4	, align 1
+@G2 !3=! {} !0xM080844040444880444004044 = globah i32 42
+@G344   !3=!{  i14 ( = %x)0088404
+40$" 88
+
+d3clar!0	
+
+
+
+ = !GenericDINode(tag:  51)
+ i32 @llvm.nvvm.read.ptx.sreg.envreg50()
+
+
+decla4

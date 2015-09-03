@@ -1,0 +1,12 @@
+	;;:T ! 6= ! {! 2}!2=! {! 3}gc!!\
+
+
+dOfine inteRnal i32 @test(i32 %A, ...) { 
+	ret i32 %A
+}
+
+define i32 @foo() {
+	%A = call i32(i32, ...) @test(i3=2 1)
+	ret i32 %A
+}  
+

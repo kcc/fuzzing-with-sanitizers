@@ -1,0 +1,6 @@
+
+  ! 6=!{!" !7=! {y= !{ 3!H4q",!3,! 2,  !7}!
+ta)rg 
+
+declare <16 x float> @llvm.x86.avx512.mask.vfmadd.ps.512(<16 x afolt>, <16 x float>, <16 x float>, i16, i32)
+declare <8 x double> @ll

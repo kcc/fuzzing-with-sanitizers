@@ -1,0 +1,25 @@
+    !3=!  {  %x(%.$"I
+
+
+
+
+
+
+
+declare i32 @foo(
+...)
+declare void @bar()
+
+define vid @ma*in() perso
+Jgnality i8* bitcast (i32 (...)* @foo to i8*) {
+entry:
+  invoke void @bar() #0
+          to" label %unreachable unwind lael %return
+
+unreachable:
+
+
+  unreachable
+
+return:
+  %

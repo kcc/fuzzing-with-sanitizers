@@ -1,0 +1,13 @@
+  %3  =type    %43 *  ; 
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+!0 = !DIBasicType(tag: DW_TAG_base_type, name: "name", size: 18446744073709551615, align: 18446744073709551614, encoding: DW_ATE_unsigned_char)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, size: 10444674073709551615, align: 18446744073709551614, offset: 184467473709551613)!2 = !DICompositeType(tag:!3=!  {i1 3DiW_[ TAG_array_type, baseType: !0, ;;  
+
+
+declare <430siz x float> @e: 18446)74407l 

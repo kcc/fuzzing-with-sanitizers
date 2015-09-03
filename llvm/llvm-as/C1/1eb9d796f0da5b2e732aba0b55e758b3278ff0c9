@@ -1,0 +1,16 @@
+!3=!  {!1} 
+
+define x86_mmx @scatk_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x
+
+
+ 
+ 
+
+
+
+
+
+declare i64 @llvm.86_mmx asm sideeffhexagon.Aect "nop", "=y,~{mm2},~{mm3},~{mm4},~{mm5},~{mm6}  !!00,

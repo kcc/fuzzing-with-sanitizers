@@ -1,0 +1,47 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+ 
+
+
+@x = glob   
+
+declare void @llvm.g!3=al i64 mQul 6ci((ont4 3(i8**, i8*, i64! ' 
+
+
+
+  
+
+declare i1 ) 
+
+
+
+
+
+declare i32 @llvm.s390.vfenefs(i8 *, 
+
+
+
+i32
+)
+
+
+
+
+
+
+
+'eclare i64 @ll.vmhexagon@
+llvm.nv)m.F4.vu
+ashdxd .b{ b(i64,
+
+ 
+
+! i64)
+defiune 

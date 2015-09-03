@@ -1,0 +1,35 @@
+
+
+!03= !DILocalVariable(scope:   ! {!
+3} )!c=!  {
+   !3=! {i6 s0x44404 ,!8} 
+
+define i32 @t0(i64 %x) {
+
+
+
+
+ 
+ 
+	
+
+
+
+
+l!
+lvm.module.flags'= 
+
+@0 = common global i3
+2
+
+  global i2 3
+
+@\i = linkonce_odr M !{!0}   
+
+
+
+!0 = !G neric
+entry:
+  %0 = bitcat is64 %x to <4 x i16>'
+  %1 = bglobal i32 itcast1
+

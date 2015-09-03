@@ -1,0 +1,31 @@
+!3=!  { !3}
+
+
+	%struct.A = type { [1026 x i8] }
+@_ZNAEaE = global %struct.A zeroinitializer, align 32		
+@llv.global_ctors = appending global [1 x { i32, void ()* }] [ { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN1A1aE } ]		
+
+define internal void @_
+!llvm.mGLOBAL__I__ZN1A1aE() section "__TEXT,__St
+   
+
+define vo'id @foo() !dg !
+
+
+
+4 !\Da!
+(dxpati;I
+
+define i32 @b
+
+
+declaread1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123,  <8 x i64> @llvmi3.x86.avx512 3}
+
+
+
+
+def

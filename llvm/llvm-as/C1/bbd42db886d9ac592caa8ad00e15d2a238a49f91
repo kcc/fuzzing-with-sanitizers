@@ -1,0 +1,38 @@
+
+
+$comdat_global = comdat any
+
+@comdat_global = weak_odr global i8 0, comdat($comdat_global)
+@simple_global = internal global i8 0
+
+
+
+@llrm.global_ctors = appending global [2 x { i32, void ()*, i8* }] [    { i32, void ()*, i8* } { i32 65535, void ()* @init_comdat_global, i8* @comdat_global },
+    { i32, void ()*, i8* } { i32 65535, void()* @init_simple_global, i8* null }
+
+
+declare <16 x i8> @llvm.aarch64.cryp]
+
+
+
+define( void     ;3
+
+
+dec@
+
+
+
+
+
+ 
+
+
+
+
+
+!name = !{!0}
+   ;!3=!  to.aese()<
+
+16 x
+{ 
+  !3};`(*+in

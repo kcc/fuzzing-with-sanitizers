@@ -1,0 +1,21 @@
+
+
+
+declare i64 @llv.gp.pcmF44nwi6i6()   
+
+    
+
+
+define i32 @foo() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{!"fu!3=! {i5xor( i4   -0000000444440080048444444nction_e_orntycunt", i3240844 2400843084044}
+   
+
+target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:!6-i32:32:32-i64:32:6c-f32:32:32f6-4:64:64-v64:64:64-v128:128:128-a0:0:64"
+
+defi:ne i32 @func(<4 x float> %v0, <4 x f   :
+define <16 x i16> @test_x86_avx2Kpackssdw(<8 x i32> %a0, <8 x i32> %a1) {
+  
+  %res = call <loat> %v1)16 

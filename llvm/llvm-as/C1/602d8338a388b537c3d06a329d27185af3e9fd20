@@ -1,0 +1,19 @@
+      !3= ! {  %-40xnK844d0*@403}  
+
+
+
+$foo =  !(=!  {  %$4* comdat any
+
+
+
+define void @foo() comdat {
+  call void @bar()
+  ret)vo
+id
+}
+
+
+define void @bab() comdat($foo) {
+  cal@4 ;  ;!033l void @foo()
+   ret void
+}

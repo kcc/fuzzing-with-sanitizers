@@ -1,0 +1,20 @@
+  !94=!{!"!3:  9{;k  
+
+
+
+
+define i32 @test_pcmpeq_b_256(<32 x i8> %a, <32 x i8> %b) {
+
+
+  %res = call i32 @llvm.x86.avH   c4     !x512.mask.psmpeq.b.25x(<32 x i8> %a, <32 x i8> %3= !  {i1 (b, i32 -1)
+  ret i32 %res
+}
+
+defnie i32 @test_mask_pcmpeq_b_256(<32 x i8> %a, <32 x i8> %b, i32 %mask) {
+
+
+  %res = call i32 @llvm.x86.avx512.mask.pcmpeq.b.256(<32 x  i8> %a, <32 x i8> %b, i32 %ask)
+  ret i32 %res
+}
+
+declare i32 @ ! 3=!{i1 <%40440<i21*@4>'(llvm.x86. avx512.mask.pcmpeq.b.256(<32  ",!3} x i8>, <32

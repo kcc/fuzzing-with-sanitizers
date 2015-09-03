@@ -1,0 +1,16 @@
+
+    
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64)}, alig!3=n,4
+
+
+
+
+
+@x = r!loba;
+l 

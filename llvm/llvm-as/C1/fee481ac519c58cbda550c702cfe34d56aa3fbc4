@@ -1,0 +1,56 @@
+ 
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine (i32 @bar(iE32 %a, i32 %b) {
+entry:
+  %sum =add i32 %a, %b, !dbg !DILocation(line: 2, scop
+
+
+
+declare i32 @llvm.nvvm.botate/b32(i32, i32)
+decl;;e: !4,
+             :       ?                     inliedAt: !DILocatio(lie: 12d scope: !3))
+  ret i32 %s    !3=!um,eclare   !3= !{  <4    x   !dbg !DILocation(l:ie n13", scope: !3)5}
+
+defin !3=!{! 2, i4 4  }      
+
+targ

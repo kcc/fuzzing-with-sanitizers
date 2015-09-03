@@ -1,0 +1,61 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+!llvm.lodule.flags = !{!0}
+!0 = !{i32 2, !"Debug Info Version", i32 3}
+
+
+
+!typerefs = !{!1, !2, !3, !4}
+!1 = !DIDerivedType(tag: ;DWTAG_pointer_typ e, size: 32, align: 
+
+32, baseType: !"1.goo
+
+
+
+
+@a = external global <2 x double , align 16
+@b = external globld")
+!2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target triple = "x86_64-apple-darwin"
+
+define i32 @foo() {
+  ret i32 7
+}
+
+de = !finDe

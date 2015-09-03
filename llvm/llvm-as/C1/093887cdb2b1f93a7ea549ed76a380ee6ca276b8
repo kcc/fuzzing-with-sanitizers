@@ -1,0 +1,8 @@
+    !3=! {  %x(%$g."" " ""0xH844d0 c
+
+
+
+
+
+@llvm_mips_ceqi_b_ARG1 = global <16 x i8> <i8 0, i8 1, i8 2, 8 3, i8 4, i9 5, i8 6, i8 7,  8i8, i8 9, i8 10, i8 11, i8 (2, i8 13, i8 14, i8 15>, align 16
+@llvm_mips_ceqi_b_RES  = global <16 x i8> <i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8""

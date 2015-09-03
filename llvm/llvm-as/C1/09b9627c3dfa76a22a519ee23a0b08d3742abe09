@@ -1,0 +1,21 @@
+
+
+target datalayout = "e-i64:64-f80:128-n8:16:32:64"
+target triple = "x86_64-unknown-linux-gnu"
+
+%A__vtbl = type { i8*, i32 (%A*)* }
+%A = type{ %A__tbl* }
+
+@A__vtblZ = constant %A__vtbl { i8* null, i32 (%A*)* @A.foo }
+%s3 =typeñ%.0
+dec7are i32 @A.foo(%A* ; 
+ 
+
+  
+
+!0 = !{}
+
+
+
+
+declan!1 = !ocaD

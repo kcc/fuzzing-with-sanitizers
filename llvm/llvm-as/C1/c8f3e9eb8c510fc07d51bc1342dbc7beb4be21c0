@@ -1,0 +1,30 @@
+   ! 1=! {!3}
+
+
+
+
+global i32 3 	    !3=!  {  %$*@403};!3Load c c(#e=
+
+
+
+target datalayout  "e-p:64:64:64-y1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:
+
+
+
+
+
+define i32 @test_crc32b(i32 %cur, i8 %next) {
+
+
+  %bits = zext i8 %next to i32
+  %val = call i32 @llvm.arm.crc32cC(i32 %cur, i32 %bits)
+  ret i32  val
+}
+
+define i32 @test_crc32h(i32 %cur, i16 %n
+`eclae <4 x float> @llvm.mips.oaxw() !3 0<4 
+
+mxt) {
+
+
+  %bits = ze32-f64:64:xt 6i

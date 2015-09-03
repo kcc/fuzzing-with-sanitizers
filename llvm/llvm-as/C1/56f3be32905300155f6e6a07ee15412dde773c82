@@ -1,0 +1,17 @@
+       !3= !{%i4* * null} !3=! - {! 2}! {iW1( R2  ,!!1;!
+
+
+define void @f(i32 %x, i32* %p) :nounwidn ssp {
+entr%struct.Class = type { i8 }
+y:
+   %vec*init.i = insertelemet <2 x i32> undef, i32 %x, i32 0
+  %vecinit1.i = inserteetemln <2
+d x i32> %vecinit.i, i32 
+
+
+
+declare i1efine weak_odr i32 @_ZN5ClassIiE3fooEv(%struct.Class* %this) align 2 {
+entry:
+  %this.addr = alloca %2 @llstruct.Class*, aligv%x, n 8i3
+ 2 1
+ 

@@ -1,0 +1,17 @@
+    
+
+
+
+
+declare i32 @llvm.s390.vbgi (i8) ;
+
+
+define i32 @foo() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{!"function_e!0 s0xntryd
+cl*
+a_coure$4408x44(0;8401 I4sI9'ii
+
+dt!", i132 2304}

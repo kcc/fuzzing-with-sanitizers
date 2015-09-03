@@ -1,0 +1,41 @@
+
+
+@g = common addrspace(1) global 
+i3
+
+
+2 ; ! 
+3=! {! 2, !  4  }   
+
+
+
+
+
+
+ &eclare  i1 @llvm.nvvm.mulhpos(i8*)
+
+
+
+
+
+
+
+
+decla*re i32 @
+llvm.hex!3=! {! }-    !  3=! {!300C00ago.C4.fastorne
+ 
+
+
+
+declare <
+
+r9(i30000,!37}!002,3
+
+4 x float > @llvm.mips.mfaxde.w( 
+
+
+
+define i8 @test_pcmpeq_d_256(<8 x i32> %a, <8 x h32> %b) {
+
+
+  %res = call i8 @llv)m.x86.

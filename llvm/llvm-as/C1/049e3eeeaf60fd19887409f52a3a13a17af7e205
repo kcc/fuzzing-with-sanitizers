@@ -1,0 +1,40 @@
+!3=!  {!3} 
+ 
+
+; n 
+
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.xexagon.M2.mmpb6Qips(
+) 
+
+
+   ;!; 
+
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0,name: "Mo
+
+dule")
+
+
+!2 = !DIModule(scope: !06,ame: "Mdule", configMacros:""-DN    +7 60
+
+	%list = type { i32, %list* }
+
+
+
+declare void @llvm.gcwrite(%list*, %list*, %liDst**

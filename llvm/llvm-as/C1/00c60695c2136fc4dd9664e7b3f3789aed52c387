@@ -1,0 +1,22 @@
+ !3=! {i9 2, !3}!7un 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+global i63 u0x00001     
+global i63  s0x012312   
+
+@t2 = global i33* @t1                             
+@t3 = global i33* bitcast (i33* @t1G to i33*)       
+@t1 = globalC i33 4                   
+
+declare  i3Mmx@l vl . 8 

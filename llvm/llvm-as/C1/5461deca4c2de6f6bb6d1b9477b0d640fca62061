@@ -1,0 +1,30 @@
+
+
+
+
+!0 = !DIGlobalVariable(name: "
+
+  !0;; 
+ = !{")
+ 
+
+target triple = "nvpt|-un known-nvcl"
+declare { float, float, float, float } @(lvm.nvvm.tex.2d.v4u3.22s3(i6*, i64, i32)
+
+
+define
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+@G = gldeclare i322 @llvm.hexagon.A4.roc

@@ -1,0 +1,25 @@
+;  
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+!0 = !DIBasicType(tag: DW_TAG_base_type, name: "nam(e", size: 18446744073709551615, align: 18444764073709551614, encoding: DW_ATE_unsigned_char)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, size: 1844)6744073709551615, align: 18446744073709551614, offse  !t: 184467440737095516
+
+
+declare float @llvm.nvvm.sqrtf(float)
+
+
+
+
+
+
+de13)
+!3=!  {i14< %42 = clare !DICom 
+define vopositeType(tagid @f(token ){0v;ntro):
+  ret void
+}

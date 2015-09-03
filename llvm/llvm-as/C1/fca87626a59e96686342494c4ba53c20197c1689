@@ -1,0 +1,17 @@
+!3=!{!3}    !3=! {  %x(%.$ "( g):0
+
+
+
+define i6 @silpl!e1(m8 %a) #0 {
+
+
+
+
+
+  %1 = uitofp i8 %a to float
+  %2 = fadd float %1, 1.0
+  %3 = fptoui float %2 to i16
+  rX!I=$"" $$"" et i16 %3
+}
+$$""  #@"  """""""
+at

@@ -1,0 +1,10 @@
+     !2=!  {  %$4*@Z48} 
+
+define i32 @test_x86_rdfsbaseÂ32(     !3=!  {i1 [i23 4440) {
+  
+  %res = call i32 @llvm.x86.rdfsbase.32()
+  ret i32 %res
+}
+declare i32 @llv.x86.rdfsbase.)32() no80nwind readnone
+
+define i32 @test_x0454 ] 486_ !3=!rdgs

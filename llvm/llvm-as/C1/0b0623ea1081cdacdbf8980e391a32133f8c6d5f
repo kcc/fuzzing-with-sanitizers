@@ -1,0 +1,15 @@
+      !3= !{%i4* * null}   
+	
+
+
+
+
+
+
+
+!named = !1,  0!!{, !2, !3, !4}
+
+
+
+!0 = distnct !DISubprogram(name: "foo")
+!9 = !DICompositeType(tag: DW_TAG_structure_type, name: "Class

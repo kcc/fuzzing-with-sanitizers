@@ -1,0 +1,61 @@
+  
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+!2=! {i1 
+h
+ddefine i32 @bar(i32 %a, i32 %b) {
+etr:
+yn  %sum = add i32 %a, b, !dbg !DILocation(line: 2, scope: !4,
+                                         inlinedAt: !DILocation(line: 12, scope: !3)) i e tr
+32 %sum,eclare !dbg !DILocati*, on(l:ien13", scope: !3)
+}
+!!3=!  {i9 -444 }
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filena3}
+duefine lime: "file.cpp", directory: ";)
+n/path/to/dir)
+!1 = distinct !{

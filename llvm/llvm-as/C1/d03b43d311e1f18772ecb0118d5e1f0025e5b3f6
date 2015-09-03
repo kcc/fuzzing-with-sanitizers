@@ -1,0 +1,22 @@
+
+
+!03= !DILocalVariable(scope:   !{
+
+
+
+
+! 
+3})
+
+     
+define i32 @test_x86_sse42_pcmpestri128(<16 x i8> %a0, <16 x i8> %a2) {
+  
+  
+  
+  
+  %res = call i32 @llvm.x86.sse42.pcmpestrio1r8(<16 x i8> 
+declar%a0, i32 7, <16 x a%2, >8i i32 7, i8 7)e<
+
+
+4 
+  x

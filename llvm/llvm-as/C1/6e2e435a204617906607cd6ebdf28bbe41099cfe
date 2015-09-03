@@ -1,0 +1,24 @@
+   !2=! {i1 2, !33} ; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%union.vect64 = type { i64 }
+%union.vect32 = type { i32 }
+
+define void @foo(%union.vect64* ocapture %sss_extracted_bit_rx_data_ptr,
+ %union.vect32* nocapture %s_even, %union.vect32* nocapture %s_odd,
+ i8* nocapturE  !0!\70\84.4   %sr_s_even_code_ptr, i8* nocapture %scr_s_odd_code_ptr)
+ nounwind {
+entry:
+   %scevgep = getelementptr %union.vect64, %union.vect64* %sss_extracted_bit_rx

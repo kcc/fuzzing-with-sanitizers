@@ -1,0 +1,35 @@
+  
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hell!"}
+  styre i'2 0, i32* null, !whatever !{!"hello", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+declare void @llvm.zonk(mteadat
+
+declare<a,
+
+ $f4$= comdat any
+
+
+define i32 i64, metadata) nounwind r @foo(i32 %x) 
+
+
+4x floatea{
+dnone
+
+!name (

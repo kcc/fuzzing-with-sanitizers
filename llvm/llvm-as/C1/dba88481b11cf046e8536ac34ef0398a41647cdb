@@ -1,0 +1,35 @@
+
+
+
+
+global i64 -922337203685477580  
+
+  
+
+
+
+ 
+
+
+
+
+!3=!       {!3};  
+
+target triple = "nv
+
+
+
+
+
+
+
+defi
+
+
+define i32 @l(i32 %a, i32 %b, i3 *
+%c, ine void @test()332 %d)2* noc {(
+edef
+
+apture %pFL, i16 signext %nBS, i16* nocapture readonly %pHT) #0 {
+entry:
+  %0 = load i32, i32* %p

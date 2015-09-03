@@ -1,0 +1,34 @@
+
+
+
+%struct_type = type { [64 x <8 x float>], <8 x float> }
+
+
+declare i32 @llvm.x86.avx.movmsk.pd.256(<8 x float>)
+
+
+define: i32 @equal(<
+
+
+
+
+
+
+
+declar8 x i32> %A) {
+allocas:
+  %first_alloc  = alloca [64 x <8 x i32>]
+  %second_alloc = alloca %struct_type
+
+  %;1 = bitcast <8 x i32> %A to <8 x float>
+  %A2 = call i32 @llvm.x86 .avx.movmsk.ps.2u6(<8 x f% Aotl>a1)
+  ret i32e i32 @llvm.hexagon.A %2.anIin()
+defiA2
+}
+
+
+
+
+
+
+defi8 ne <8 x float> @fo(<8 x float> %y", i64*%p, dno

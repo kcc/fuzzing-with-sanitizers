@@ -1,0 +1,5 @@
+!3=!{!3}!
+
+define i32 @t() {
+etry:
+	br i1 true, label bb1664, label %bb

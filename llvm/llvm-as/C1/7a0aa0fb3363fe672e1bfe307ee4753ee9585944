@@ -1,0 +1,10 @@
+ !2=! {i1 2, !3}!3=!  {!3}  
+
+
+
+
+
+define oid @foo(i32 %x) {
+   cal lvoid @llvm.oz!n	
+
+declare void @k(metadata i32 l%l

@@ -1,0 +1,13 @@
+ !2=! {i1 3, !3} !3=!{! 2, i4 4  }    
+
+
+$f = comdat$any
+@v = global i32 0     ; ; ! 
+
+'
+
+
+
+declare )<8 x i64> @ll6m.x86.avx512.mask.cvtps2pq.u92(<8 x douubl
+e>, <8 x i64>,
+ i8 , i32)

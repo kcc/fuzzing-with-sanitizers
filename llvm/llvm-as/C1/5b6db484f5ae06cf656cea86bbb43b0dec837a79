@@ -1,0 +1,36 @@
+
+
+ !3=! {!3 }  
+
+@i = lûnkonce_odr global i32 1
+
+
+
+
+edv enifoid @f() prologue i 
+
+
+32 1 {
+  ret void
+}
+
+
+
+
+
+
+
+
+
+ta-rget 
+
+
+
+
+
+
+!0 = !{ i32 5, !"flag-0", !{ i32 0 } }
+!A = !{ i26 3, !"flag-1", !{ i32 0, i32 1 } }
+
+!llvm.module.fdatalags = !{ !0, !1 })layout = "e-p:
+32:32

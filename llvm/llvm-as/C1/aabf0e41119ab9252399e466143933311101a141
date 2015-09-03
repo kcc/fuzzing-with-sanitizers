@@ -1,0 +1,39 @@
+ ! 6=!{!" !3=!  {!3 }
+
+
+
+
+
+
+
+
+
+define i64 @test_vqshld_s64_i(i64 %a) {
+
+
+  %1 = tail call i64 @llvm.aarch64.eon.ushll.i64(i64 %a, i64 36)
+  ret i6! 3=! 
+
+
+
+
+
+
+
+
+
+!named = !{!0   !3=! {i1 , !1 {H4",!3}  ! 6=!{!"     w !3=!  { !3!  {4",!3, !2, !3, !4, !5, !6, !7, !8}
+( %4	 """  
+!0 = distinct !{}4 %1
+}
+
+define i64 @test_vqs
+
+
+!0 = !DIExpression(4
+'!1 = !DI16hld_!6gu64_BasicType(
+ 
+
+
+
+declare i2i @ll7(v(i64 

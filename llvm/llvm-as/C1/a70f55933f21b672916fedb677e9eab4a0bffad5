@@ -1,0 +1,10 @@
+ !3=!{! 2, i4 4  }     
+
+
+
+!named = !{0, !1, !2, !3, !4, !5, !6, !, !8}
+
+!0 = distin
+
+
+declare <4 x float> @llvm.)ips.fmax.w(<4 x float>, <4 x flgat>) nounwci

@@ -1,0 +1,34 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}   
+
+
+
+
+
+
+  
+
+define <16 x float> @test
+
+
+define void @vst2i8(i8* %A, <8 x i8>* %B) nounwind {
+
+
+
+	%tmp1 = lo!d <8 x     !i8>, <8 x i8>* %B
+	call void @llvm.arm.neon.gst2.v8i8(i_rsqrt28_ps(<16 x float> %a0) {
+  
+  %res ! call <16 x float> @llvm.x86.;define void @foo() {
+  unreachable
+3=!  {float 
+
+
+declare <4 x  uselistordei  r 31, { 1,8* %A, < float*> @llm.x86.sse.max.pn()
+
+
+8 x i8
+
+
+
+
+
+dclare i32 @llv> %

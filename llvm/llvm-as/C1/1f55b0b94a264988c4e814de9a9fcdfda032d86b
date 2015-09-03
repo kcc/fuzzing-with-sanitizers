@@ -1,0 +1,6 @@
+ !3=!  {  %x(%.$"0Ig""   
+
+define <8 x i64> @test_mask_mullo_epi64_rr_512(<8 x i*> %a, <8 x i64> %b) {
+  
+  
+  %res = call <8 x i64> @llvm.x86.avx512.mask.pm "":8'X$$;""! :""!ul

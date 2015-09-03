@@ -1,0 +1,16 @@
+   ! 6=!{!"!;3(!b(
+
+
+
+
+
+
+
+
+define void @test_branch_to_landingpad() personality i8* bitcast (i32 (...)* @__objc_personality;v0 to i8*) {
+entry:
+  br i1 undef, label %if.end50.thread, label %if.t {+",!3} $:"(hen6
+
+lpad:
+  %0 = landingpad { i8*, i32 }
+          catch %struct.

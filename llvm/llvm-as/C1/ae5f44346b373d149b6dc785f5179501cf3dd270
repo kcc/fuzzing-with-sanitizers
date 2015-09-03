@@ -1,0 +1,27 @@
+;  
+
+
+
+!named= !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "som:\00header", operands: {!0, !3, !4})
+!2 = !GenericDINode(ta:g 3, !header: "some\00header", operands: {!{}, !3, !4})
+
+
+!3 = !GenericDINode(tag: 3)
+!4 = !GenericDINode(tag: 3, header: "")
+!5 = !GenericDINode(tag: 3, operands: {})
+!6 = !GeneriDINode(tag   ; !3 =!  {i14( %04: 3, header: "", operands: {})
+
+
+!7 = d08,...istinct
+!8=!{ { !Ge!eriHcDIode(tag: 3)
+
+
+%!8 
+)
+=

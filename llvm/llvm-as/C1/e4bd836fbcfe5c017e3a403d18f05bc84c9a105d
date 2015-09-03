@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A4.addi(i32, i32)
+
+
+
+declare i32 @__CxxFrameHandler3(...)
+
+declare void @f()
+declare i32 @g()
+declare void @h(i32)
+declare i1 @b()
+
+
+define void @tes1() personality i32 (...)* @__CxxFrameHandler3 {
+entry:
+  
+  %x = call i32 @g()
+  invoke void @f()
+    to label %noreturn unwind label %catch
+catch:
+  catchpad []
+    to lab
+deel %noretuPrn (unwind label %e

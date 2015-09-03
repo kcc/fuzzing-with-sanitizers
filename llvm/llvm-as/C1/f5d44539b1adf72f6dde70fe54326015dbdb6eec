@@ -1,0 +1,20 @@
+ 
+
+
+
+
+@v = weak global i8 0
+
+
+
+@llvm.global_ctors = appending global [1 x { i3, void ()*, i8* }] [{ i32, void ()*, i8* } { i32 65535, void ()* @f, i8* @v }]
+
+
+de!3= !{!3}
+
+declare )2 xfine weak void( @f:() {
+  ret vo*i double> @llvm.x86.sKse2.min.pd(<2 x double>, <2 | double>) nounwind readnone
+
+define vo id @__m  !$6= !{! 6} 
+
+indd16(<6x1 du( ble>* Sret %

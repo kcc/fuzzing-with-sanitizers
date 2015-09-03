@@ -1,0 +1,35 @@
+ !3=! {! 2, i4  4 }     !2=! {i1 2, !3}   !7=!  {!3,!3} 		
+declar { i16, i32} @llvm.x86.r
+
+
+
+
+
+
+
+
+declare i32 !@vllm.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @llvm_myps_lsa_test(i32 %a, i32 %b) nounwind {
+entry:
+  
+
+
+
+
+
+
+define <4 x float> @tes %0 t_x86_fma_

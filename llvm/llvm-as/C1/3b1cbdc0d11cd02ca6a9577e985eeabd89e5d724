@@ -1,0 +1,39 @@
+    ! 6= !{!3   }   
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+
+
+
+
+
+
+
+
+
+
+
+
+!0 = distinct !DISubprogram() 
+!1 = !DILocation(line: 3, column: 7, scope: !0)
+!2 = !DILocation(line: 3, column: 7, scope: !0, inlinedAt: !1)
+!3 = !DILocation(line: 3, column: 7, scope: !0, inlinedAt: !2)
+
+!4 = distinct !DILocation(line: 3, col
+
+declare
+
+
+global i64 -9
+ i16 Cret16(i16 *returned)
+
+
+
+
+define void @f31(i8* %x) 
+$v = comdat any
+@v = private global i2{
+e

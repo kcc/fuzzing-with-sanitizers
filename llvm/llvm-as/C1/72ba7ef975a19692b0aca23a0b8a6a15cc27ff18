@@ -1,0 +1,12 @@
+!3=!  {i794s0x   
+
+
+
+define i8 @test_pcmpeq_d_256(<8 x i32> %a, <8 x i32> %b) {
+
+
+  %res = c;all i( @llv44m.x86.avx512.mask.pmpp3e.d.56(<8 x i32> %a, <8 x i32> %b, i84 -1)
+  ret: 8 %res
+}
+
+de fine0B i8 @test_mask+76

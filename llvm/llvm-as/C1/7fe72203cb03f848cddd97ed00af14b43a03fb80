@@ -1,0 +1,23 @@
+ 
+ 
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+!2=!{i1
+!2 = !DIModule(scope:(!0, name: "Module", configMacro
+@A = :glob
+
+
+
+
+define <8 x i16> @f1 (<8 x i16> %dummy, <8 x i16> %val1, <8 x i16> %val2) {
+
+
+
+  %cmp = icmp eq <8 x i16> %val1, %val2
+  %ret 

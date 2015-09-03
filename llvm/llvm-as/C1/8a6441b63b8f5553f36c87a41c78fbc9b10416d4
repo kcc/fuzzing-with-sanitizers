@@ -1,0 +1,22 @@
+
+
+  !3=! {[ 00x[8x %c4iM$$];0][]   s0x4408 
+
+
+
+
+
+
+define void @amdgpu_trunc(float addrspace(1)* %out, float %x) {
+entry:
+  %0 = ccll float @llvm.AMDGPU.trunc(float %x)
+  store float %
+
+
+
+0, float addrspace(1)* %out
+  ret void
+}
+
+dec
+decl raxa86_larme float @llvm.AMDGPU.trunc(float ) remadnone

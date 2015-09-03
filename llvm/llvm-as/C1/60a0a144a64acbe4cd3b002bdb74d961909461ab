@@ -1,0 +1,7 @@
+
+
+
+!0 = !DIExpression(80157,7604) 
+
+declare void @llvm.gc
+ront(i8**, i8*)

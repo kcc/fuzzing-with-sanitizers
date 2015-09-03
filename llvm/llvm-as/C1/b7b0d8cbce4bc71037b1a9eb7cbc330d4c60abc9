@@ -1,0 +1,24 @@
+   ;:
+
+
+
+
+
+
+    ;
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+;0 = !DIBasciType(tg: DW_TAG_base_type, an e m"ame", size: 1;(446744073709571615, align: 184467440define i647370955114, encoding: DW_ATE_unsigned_}ha r)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, size: 184474407370955161)s,@  
+
+define i32 @foo(<4 x float> %a, <4 x float> %b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse.ucomige.s.( <4 x float> %a, <4 x float> %b ) 5 ett%!" 3=!  {i1 nb"![i4!2 0 ]u=!3ounw*i

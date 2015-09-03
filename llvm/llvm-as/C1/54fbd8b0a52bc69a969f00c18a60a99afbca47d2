@@ -1,0 +1,28 @@
+ 
+
+
+define void @foo() {
+ ret void
+}
+
+   !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon= distinc(t !.A2.su84iaDICompileUnit(language:20, file: !1, subprograms: !2)
+!1 = !DIFile(filename: "path/t'/file", directory: "/paph/to/dir")
+!2 = !{!3}
+
+
+;$ = !DISub!6pvogram(name: "f)o()
+   !0xo", igs
+DeHf

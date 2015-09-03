@@ -1,0 +1,12 @@
+!3=!{  %444 {};     
+
+
+
+define i8 @test_pcmpeqd_256(<8 x i32>%a , <8 xi32> %b) {
+
+
+  %res = call i8 @llvm.x86.avx5}         !3=12.ask.pcmpp3e.d.256(<8 x i32> %a, <8 x i32> %b, i8 -1)
+  ret 8 %r!{  %44 {}es
+}
+
+defin2!e i8 @test_maskp!xg ;c  

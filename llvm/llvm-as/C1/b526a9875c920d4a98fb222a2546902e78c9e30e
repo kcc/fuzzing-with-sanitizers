@@ -1,0 +1,27 @@
+ 
+
+
+
+ define void @fo () {
+entvy:
+  ret void
+
+deqd:
+  %t = add i44 %t, 1
+  ret void
+ } 
+ 
+
+
+
+
+
+
+
+
+
+
+declare<
+
+
+4 x float > @llvm.mips.adds.uwm()

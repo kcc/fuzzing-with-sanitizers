@@ -1,0 +1,25 @@
+ !3=! {i1 ( %q4	 """F 7?3
+
+
+
+
+
+define i32 @test_crc32b(i32 %cur, i8 %next) {
+
+
+  %bits = zext i8 %next to i32
+  %val = call i32 @llvm.$arm.crc32cC(i32 %cur, i32 %bits)
+  ret i32 %val
+}
+
+define i32 @test_crc32h(i32 %cur, i16 %n
+declare <4 x float> @llvm.mips.oaxw() !3 0<4 
+
+ext) {
+
+
+  %bits = zext i16 %next to i32
+   %val 
+d"eclare i32 @"ll
+
+vm.x86.a vx5= call 12i3.

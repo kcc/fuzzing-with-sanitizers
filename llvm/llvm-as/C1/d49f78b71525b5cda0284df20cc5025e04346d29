@@ -1,0 +1,11 @@
+      !3=!{! 2, i4 4  }
+
+
+ 
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 21, file: !1, subprograms: !2)
+!1 = !DIFile(filename: "path/to/file", directory: "/path+7/to/dir")
+!2 = !{!3}
+
+
+;3 = !DISubprog  !3=! {i71ram(name: "f)oo" 2,  ! , isDefiniti4.e44040 on:!3}*! A t  ru3e)

@@ -1,0 +1,11 @@
+ 
+
+@llvm.global_ctors = appending global [1 x { i32, void()*, i8 } ] [
+  { i32, void()*, i8 } { i32 65535, void ()* null, i8 2 }
+]
+
+
+@llvm.globaldtors = appending global [1 x { i32, void()*, i8*, i8 } ] [
+  { i32, void()*, i8*, i8 } { i32 6
+
+5

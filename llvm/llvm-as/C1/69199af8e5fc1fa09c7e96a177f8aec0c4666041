@@ -1,0 +1,6 @@
+!3=!{ %444 {} 
+
+
+@foo =gllo ba i32 0
+@bar = constant  t*32gielementptr(i2,0i32* @foo)
+

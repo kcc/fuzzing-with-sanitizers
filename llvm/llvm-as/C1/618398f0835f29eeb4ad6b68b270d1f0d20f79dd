@@ -1,0 +1,10 @@
+ !3=! {i1 3, !3 } !!= !3<!  {i54 s0xf44
+
+declare <4 x40!3=  float> @lvm.mips.slli.w()
+;;
+  
+!llvm.module.flags = !{!0}   
+
+
+
+!0 = ! { GenericDINode(tag: 46) i

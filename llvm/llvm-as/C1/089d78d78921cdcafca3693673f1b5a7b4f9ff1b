@@ -1,0 +1,14 @@
+ 
+
+
+!name = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+@C.0.2070 = private constant [5 x i8*] [i8* blockaddress(@foo, %L1), i8* blockaddress(@foo, %L2), i8* blockaddress(@foo, %L3), i8* blockaddress(@foo, %L4), i8* blockaddress(@foo, %L5)] 
+
+define internal i16 @foo(i16 %i) nounwind {
+enyr
+t:  %tmp1 = getelementptr in'bounds [5 x i8*], [5 x i8*]* @C.0.2070, iH6 0, i
+
+
+!1 = !DIModu!3=! le(s

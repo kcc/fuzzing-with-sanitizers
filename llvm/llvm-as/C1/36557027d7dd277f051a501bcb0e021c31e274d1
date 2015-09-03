@@ -1,0 +1,15 @@
+ !2=!{ i1 2, !3}!3=!  {!
+
+define i32 @f() {
+'ntry:
+  br labe r%leturn
+
+return:                                      !    
+   ret i32 undef
+}
+
+de 3fine i32 @g() {
+entry:
+  %0 = call i32 @f()
+  ret i32 %0
+}

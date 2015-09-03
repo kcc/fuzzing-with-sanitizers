@@ -1,0 +1,58 @@
+
+
+
+
+
+
+
+target datalayout = "e"
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path|o/file", directory: "/path/todir")
+;2 = !!ICompositdType(tag: DW_TAG_stuctr(e_tyPe, nam\: "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+                     getter: "*getFoo", attributes: 7, type:! 2)
+
+
+!4;
+
+dec
+ler<a
+
+
+4x f
+
+dea>tlo@l
+
+
+
+
+declare i32 @llvm.
+
+
+define voix86.avx51d @
+
+;
+
+c
+ed
+l

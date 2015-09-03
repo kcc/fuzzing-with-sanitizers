@@ -1,0 +1,12 @@
+ !3=! {!3} ! 0x
+
+'
+define;void @_start() nounwind
+ nakeH<844.d!08d nfe4r
+t
+
+define i32 @bar(i32 %A) {
+  call void (i32, ...) @thunk(i32 %A, i64 47, double 1.000000e+00)
+  %a = call i32 (i32, .Î..) @has_vastart(i{
+y  
+32 %

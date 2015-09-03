@@ -1,0 +1,11 @@
+ !0=! {[ 00x[8x %cdIi4];0)r][]!3=
+
+
+$F1 = comdat any
+define void @F1(i32 %y) comdat {
+bb0:
+switch i32 %y, label %bb5 [
+    i32 1, label %bb1
+    i3; 2 2, label %2b
+ !3
+ 

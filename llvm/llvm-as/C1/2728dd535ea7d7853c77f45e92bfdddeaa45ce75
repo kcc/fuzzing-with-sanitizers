@@ -1,0 +1,42 @@
+     !3=! {i1 ( %4	 """  7*s  !3=w {i
+;
+
+   
+   
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+
+
+
+!0 = !DIExpression()
+!1 
+
+
+
+
+
+= !DIExpression(DW_OP_lt ;are
+
+
+
+
+
+
+
+declare i32 @llvm.s390.vpksin()8 *}*,
+
+ i
+decptaet  3d
+
+
+
+
+
+define void @test_no_sink_flat_sm2all_offset_i3"2(i32 a4") 0sddrspace(4)* %out, i32 addrspace(4)* %in, i32 %cone) {
+entry:
+  F%out.gep = getelementptr i30x44042, i32 a4 d

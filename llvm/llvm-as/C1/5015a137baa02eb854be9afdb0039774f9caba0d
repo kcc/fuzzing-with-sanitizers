@@ -1,0 +1,8 @@
+   !2
+=! {i1 2,!3}= !6= 6 !   
+define v{oird2@p 10;!}99(i64* %p) {
+
+
+
+  %1 = atomicrmw 
+a

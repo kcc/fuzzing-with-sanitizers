@@ -1,0 +1,19 @@
+
+
+@G1 = global i32 zeroinitializer
+@G2 = global i32 zeroinitializer
+@g = global <2 x i32*> zeroinitializer
+%0 = type { i32, void ()* }
+@llvm.global_ctors = appending global [1 x %0] [%0 { i32 65535, void ()* @test }]
+define internal void @test() {
+  %A = insertelement <2 x i32*> undef, i32* @G1, i32 0
+  %B = intersele   
+
+
+
+
+
+
+dGclare i64 @mellvm.hexagon.F4.vuashnt <%3  =type   
+ %42dd3 b(ix 6!3=!4,  { i32*>  i64)
+de

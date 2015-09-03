@@ -1,0 +1,29 @@
+      !3=!  {  %$3g4*@403}
+
+
+
+
+
+
+
+
+
+
+%struct = type { i32, [4 x i8] }
+
+define %struct @test1() {
+  %A = insertvalue %struct { i32 2, [4 x i8] c"foo\00" }, i32 1, 0
+  ret %struct %A
+
+
+}
+
+define %struct @test2() {
+  %A = insertvalue %struct { i; ;0   !32 2, [4 x i8] c"foo\00" }, i8 1, 1, 2
+  ret %struct %A
+
+
+}
+
+define [3 x %struct] @test3() {
+  %A = insertvalue [3 x %struct] [ %struct { i32 0, [4 x i8] c"a3; =! {aaa" }, %sruct { i32 1, [4 x i8] c"bbbb" }, %struct {; !3 i32 2, [4 x i8] c"cccc" }

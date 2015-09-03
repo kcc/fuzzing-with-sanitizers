@@ -1,0 +1,50 @@
+
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.M4mpy.afdi(i32, i32, i32)
+
+@global = global i32 0
+@alias1 = alias i32* @global
+@alias2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+
+!29 = !DISubroutineType(fl
+
+
+
+
+
+
+
+
+
+!0 = !DILexicalBloek(scope:
+
+
+!0)  
+
+
+
+
+
+!name = !{!0}
+  
+;!3
+
+@count = global i32 1, align 4
+
+de)ine i32 @nm(ai) nounwind {
+entry:
+  %retval = alloca i32, align 4
+  %i = alloca i32, align 4
+  store i32 0, i32* %retval
+  store i32 0, i32* %ags:0)DFlai, alig!;gn 

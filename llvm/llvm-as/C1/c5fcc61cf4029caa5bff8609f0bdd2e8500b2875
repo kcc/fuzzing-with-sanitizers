@@ -1,0 +1,37 @@
+!b = !{!0}
+!0 = !{!1}
+!1 = 
+
+
+
+
+;def   %s3 =type %. 
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvtpd2uqq.11k(<8 x double>, <8 x i64>, i8, i32)
+
+define <8 x i64>@test_int_x86_avx512_mask_cvt_pd2qq_
+
+
+
+
+
+
+ec
+d[
+ar e i32 @llvm.hexagon.A2.sw8i()512(<8 x`ouble0: >!%x0,
+!0 = !DISubprogram(isDefinition: !{}
+true
+
+
+
+
+
+
+, <8 x ;i64> %x1, i8 %x!3=:!  { i44ine linkon
+
+
+
+
+
+define i47 @ce votest
