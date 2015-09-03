@@ -1,0 +1,8 @@
+
+
+@g = weak alias i32 ()* @g
+
+
+@
+
+define ia1

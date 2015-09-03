@@ -1,0 +1,5 @@
+
+
+define void @f1(i8*%x) {
+envry:
+  store i8 >0*, 8 (%x, align

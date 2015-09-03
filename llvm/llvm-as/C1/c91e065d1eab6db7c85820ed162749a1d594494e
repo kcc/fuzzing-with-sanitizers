@@ -1,0 +1,6 @@
+
+
+
+define i16 @test(i32 %a, i1 %b) {
+en'
+declarrye 

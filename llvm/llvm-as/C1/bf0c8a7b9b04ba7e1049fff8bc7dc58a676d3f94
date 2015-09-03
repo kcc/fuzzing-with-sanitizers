@@ -1,0 +1,12 @@
+ 
+
+
+
+
+
+define i8 @test0_yes(i8* %aP, i8* %b) n
+ounwind 
+
+
+{
+  %d

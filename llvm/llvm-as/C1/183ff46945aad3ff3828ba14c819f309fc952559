@@ -1,0 +1,9 @@
+
+
+define i32 @test1(i8* %p, i8* %q) {
+
+;
+
+  %a = call i3
+2 @
+f
