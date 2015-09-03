@@ -1,0 +1,9 @@
+
+
+define i32 @fo() {
+E:
+   br label %B 
+B1:
+ 
+
+declare <1 b6 

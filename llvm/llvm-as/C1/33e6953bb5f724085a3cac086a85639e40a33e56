@@ -1,0 +1,7 @@
+
+
+define i32 @foo() nounwind ssp {
+entry:
+   
+  
+ !3=

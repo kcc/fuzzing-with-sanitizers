@@ -1,0 +1,4 @@
+; a
+
+@a2 = alias void ()* @g2
+@g2 = inte  rnal glo!3;ba
