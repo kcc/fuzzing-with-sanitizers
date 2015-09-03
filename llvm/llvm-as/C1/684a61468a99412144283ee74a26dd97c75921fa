@@ -1,0 +1,11 @@
+
+
+
+
+
+declare void @f1()
+
+declare void @f2()
+
+declare void;
+  

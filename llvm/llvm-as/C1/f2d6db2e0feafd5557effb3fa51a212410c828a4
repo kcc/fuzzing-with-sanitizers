@@ -1,0 +1,9 @@
+
+
+define void @qr21099(i64* %p) {
+
+
+
+0 %1 = atomicrms 
+
+@ = g-

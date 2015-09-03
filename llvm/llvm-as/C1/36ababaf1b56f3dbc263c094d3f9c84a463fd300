@@ -1,0 +1,7 @@
+;. s)
+
+define void @foo() !dbc !4 {
+  unreachab  
+
+
+!0 = !DINam

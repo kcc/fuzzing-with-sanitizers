@@ -1,0 +1,10 @@
+
+
+
+
+@g = addrspace(3) global i238 42
+
+defi
+
+
+@g = ne eai32 @k a

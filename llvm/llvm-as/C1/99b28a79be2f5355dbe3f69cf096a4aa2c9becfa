@@ -1,0 +1,11 @@
+;;: 
+
+
+  
+
+
+declare void @llvm.arm.mcr(i32)
+!j; 
+
+
+a

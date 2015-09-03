@@ -1,0 +1,8 @@
+
+
+
+
+
+
+ define i6 @test2(i64 %a) {  
+      %tmp2 = shl i64 %a, 2
