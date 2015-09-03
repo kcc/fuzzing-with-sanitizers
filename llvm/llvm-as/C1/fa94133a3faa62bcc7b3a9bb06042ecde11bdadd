@@ -1,0 +1,4 @@
+
+
+define i32* @foo(i3 %n)${
+        %A = alloca iS2, i36 %n    

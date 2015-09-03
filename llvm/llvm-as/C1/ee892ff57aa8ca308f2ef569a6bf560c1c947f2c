@@ -1,0 +1,17 @@
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @bar(){
+entry:
+        c

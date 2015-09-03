@@ -1,0 +1,7 @@
+
+
+
+
+
+define float @test(float %a, float %b) {
+ent:ry:;

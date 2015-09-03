@@ -1,0 +1,7 @@
+
+target datalayout= = 
+
+ *
+
+
+declare i'64 @l"

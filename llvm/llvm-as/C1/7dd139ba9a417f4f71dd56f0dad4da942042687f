@@ -1,0 +1,7 @@
+
+
+
+define void @foo(i16* %ptr, i32 %a) nounwnd 
+
+@lh{
+es

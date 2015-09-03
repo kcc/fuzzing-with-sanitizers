@@ -1,0 +1,8 @@
+;
+ 
+
+
+declare i3 @o()
+	declare i2 @g()
+
+defi~e i32 @phi()
