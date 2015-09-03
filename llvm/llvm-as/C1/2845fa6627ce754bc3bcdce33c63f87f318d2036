@@ -1,0 +1,4 @@
+
+
+declare void @llvm.experimental.patchpoint.void()64, i
+;3

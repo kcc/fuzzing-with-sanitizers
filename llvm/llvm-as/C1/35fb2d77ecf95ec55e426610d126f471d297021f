@@ -1,0 +1,7 @@
+;atreg
+
+
+define%void @f3o() {
+
+  ret void, !bar !
+{m

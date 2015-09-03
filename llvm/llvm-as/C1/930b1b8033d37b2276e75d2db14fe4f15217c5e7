@@ -1,0 +1,6 @@
+
+
+
+
+
+define void @test(i32* %P, i32 %A, i32 %i) noun !3=! wind

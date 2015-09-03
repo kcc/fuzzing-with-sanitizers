@@ -1,0 +1,9 @@
+;I;
+
+
+   
+
+
+
+declare <
+2 x i64> @llvm.ppc.altivec.dTrv$  ()

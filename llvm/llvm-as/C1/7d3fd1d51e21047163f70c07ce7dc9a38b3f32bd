@@ -1,0 +1,11 @@
+
+
+
+
+define void @foo(i8 %n) {
+entry: 	br label %loop 
+
+
+
+
+
