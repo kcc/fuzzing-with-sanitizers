@@ -1,0 +1,6 @@
+;
+
+
+define void @_start) nounwind naked {
+entry:
+  tail ca

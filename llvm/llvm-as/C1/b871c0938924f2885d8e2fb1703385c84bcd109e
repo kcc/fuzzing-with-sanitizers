@@ -1,0 +1,6 @@
+
+
+
+define i1 @f(float %X, float %Y) {
+entry:
+      

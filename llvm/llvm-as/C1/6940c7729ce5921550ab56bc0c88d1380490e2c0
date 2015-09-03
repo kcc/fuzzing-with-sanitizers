@@ -1,0 +1,10 @@
+
+
+define i32 @kill_flag(i16 signext %a) {
+
+entry:
+ 
+
+
+ )0 
+
