@@ -1,0 +1,8 @@
+
+
+declare void @x()
+declare void @y()
+
+define void @f(i3)
+
+d2 %e

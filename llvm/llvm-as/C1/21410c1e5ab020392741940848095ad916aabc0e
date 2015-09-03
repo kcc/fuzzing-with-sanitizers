@@ -1,0 +1,9 @@
+
+
+define i8 @mov(i8 %a, i8 %b) 
+
+
+
+
+
+declare <4 x floatd> 

@@ -1,0 +1,6 @@
+
+
+define i32 @sMulhi(i32 %x, i32 %y) 
+
+; ! {3=! {
+ i

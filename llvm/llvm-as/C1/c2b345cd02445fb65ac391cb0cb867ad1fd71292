@@ -1,0 +1,7 @@
+
+tA
+*
+
+
+
+declare void @llvm.token.foobar(token)
