@@ -1,0 +1,5 @@
+ !3=!  {i14(%4) 
+
+
+
+declare i64Z@llvm.ppc.toi64(i64)  

@@ -1,0 +1,5 @@
+
+define i32 @bad1() !prof ! 0 
+{ reti32 0
+}u
+!0 = !{i32 1!23;=

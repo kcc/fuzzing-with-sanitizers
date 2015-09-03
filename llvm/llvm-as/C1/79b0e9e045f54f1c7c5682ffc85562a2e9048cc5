@@ -1,0 +1,7 @@
+
+
+
+declare i32 @f()
+
+define i32 @phi(i32 %x) per:onliai t3y2
+   

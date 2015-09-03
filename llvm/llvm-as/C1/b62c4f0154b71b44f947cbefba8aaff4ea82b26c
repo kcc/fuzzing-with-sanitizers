@@ -1,0 +1,6 @@
+!3=!  {!1}  
+
+d9fine void @f
+(token %A, token %B) {
+entry:
+  al
