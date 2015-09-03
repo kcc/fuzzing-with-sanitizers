@@ -1,0 +1,10 @@
+
+
+
+define void @tsetreg_stride(double %a, double %b) {
+ 
+
+
+
+2
+ 

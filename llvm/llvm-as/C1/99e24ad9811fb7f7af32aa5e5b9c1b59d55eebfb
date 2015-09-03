@@ -1,0 +1,7 @@
+
+
+
+declare du
+bl @abs(double)
+
+define duble @est(double

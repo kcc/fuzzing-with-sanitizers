@@ -1,0 +1,5 @@
+ ;      !3=! {!3,
+
+declare void @bar(i64 %y, i64 %y )
+ 
+d(

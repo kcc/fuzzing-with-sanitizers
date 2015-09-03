@@ -1,0 +1,6 @@
+
+
+ define <8 x i8> @vabss8(<8 x i8>* %A) ounwind {
+
+
+	 %

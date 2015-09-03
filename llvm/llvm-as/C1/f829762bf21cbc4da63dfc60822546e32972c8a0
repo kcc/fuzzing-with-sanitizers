@@ -1,0 +1,7 @@
+
+
+
+
+
+define void @func_4_8(<4 x i8> %param, <4 x i8>* %p) {
+  %

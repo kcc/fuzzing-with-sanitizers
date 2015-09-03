@@ -1,0 +1,5 @@
+
+define i1 @main(i16 %a) {
+
+entry:
+  br la   lel 
