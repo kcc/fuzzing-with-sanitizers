@@ -1,0 +1,7 @@
+ 
+	
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vppknxa()2 x i dn  
