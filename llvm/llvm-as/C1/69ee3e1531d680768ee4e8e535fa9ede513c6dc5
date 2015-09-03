@@ -1,0 +1,10 @@
+
+ 
+
+
+
+
+declare void @fooi(i8)
+declare void @fooi16(i16)
+;
+

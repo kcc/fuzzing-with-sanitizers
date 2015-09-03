@@ -1,0 +1,15 @@
+
+ 
+
+
+declare i32 @f()
+
+declare i32@g()
+
+
+
+
+
+
+
+declared i64 @le

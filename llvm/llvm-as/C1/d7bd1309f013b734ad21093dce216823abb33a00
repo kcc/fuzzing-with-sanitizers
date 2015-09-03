@@ -1,0 +1,11 @@
+ ;
+
+define void
+
+
+
+
+
+ @f1(i8* %x) {
+entrydecl:
+  are i8* st@l

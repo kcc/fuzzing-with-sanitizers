@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+define i22 @test(float %f) {
+!%tmp  = f

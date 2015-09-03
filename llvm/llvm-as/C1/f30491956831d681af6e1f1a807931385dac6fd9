@@ -1,0 +1,7 @@
+
+
+;d
+
+define float @fods(float %x, float %y) {
+treny:
+  %r 

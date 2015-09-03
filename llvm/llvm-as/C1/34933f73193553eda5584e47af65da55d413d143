@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+define i32 @test(float %f)  (
+
+decare { 
+	%tm

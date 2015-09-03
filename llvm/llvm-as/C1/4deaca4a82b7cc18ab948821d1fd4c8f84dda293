@@ -1,0 +1,7 @@
+
+
+;
+
+define void @Efoo() {
+  load i1, i1*@a
+ %p, ali = *;"glg

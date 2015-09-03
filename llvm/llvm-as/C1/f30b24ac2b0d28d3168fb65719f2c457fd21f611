@@ -1,0 +1,7 @@
+
+
+
+target datalayout = "n8:1X:32:64@"
+
+a = glob*
+defl

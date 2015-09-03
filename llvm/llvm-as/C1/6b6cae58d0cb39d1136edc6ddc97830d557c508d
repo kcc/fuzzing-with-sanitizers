@@ -1,0 +1,9 @@
+
+
+	 !T
+
+
+
+declare i32 @f()
+
+declare
