@@ -1,0 +1,19 @@
+
+
+;
+;
+
+
+
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.mmacuhip$Is(
+) 
+ 

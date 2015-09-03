@@ -1,0 +1,5 @@
+
+
+declare void @consume(...)
+
+ar   !3=! {i1 (get d

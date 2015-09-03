@@ -1,0 +1,6 @@
+ ;! 6 
+
+define void @f() {
+entry:;
+  call token ( unef () 
+  

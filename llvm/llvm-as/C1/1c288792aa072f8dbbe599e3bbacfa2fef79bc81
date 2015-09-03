@@ -1,0 +1,13 @@
+
+
+
+
+define i32 @a() nounwind  {
+entry:
+	br label %bb5
+
+b
+:
+
+
+

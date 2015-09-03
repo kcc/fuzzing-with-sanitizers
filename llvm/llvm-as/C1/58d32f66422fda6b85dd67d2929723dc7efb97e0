@@ -1,0 +1,4 @@
+
+ 
+define i32* @f(i8* %x) {wentry:
+        %tm: = call

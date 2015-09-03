@@ -1,0 +1,11 @@
+ 
+
+
+
+
+declare void @a()
+declare void @bb( )
+
+
+
+
