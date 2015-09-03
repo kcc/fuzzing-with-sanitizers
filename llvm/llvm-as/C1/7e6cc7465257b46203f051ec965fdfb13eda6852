@@ -1,0 +1,32 @@
+
+
+;define pri
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+
+
+
+ 
+
+
+
+declare float @llvm.nvvm.sqrv.f(
+ 
+
+declare i2 @def:inellvm.nv vof

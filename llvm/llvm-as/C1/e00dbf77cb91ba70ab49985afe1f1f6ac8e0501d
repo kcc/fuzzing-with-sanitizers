@@ -1,0 +1,20 @@
+  
+
+
+ ; !i3=!  {!3}!3=! {!3}
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5};!0 = !DI ile(filename: "file.cpp",       !2=!  { %$4*@Z40}    !3=!  {  %$4*@o}
+
+
+@main_addrs = constant [2 x i8*] [i8* blockaddress(@f, %FOO), i8* blockaddress(@f, %BAR)]
+
+
+declare void @foo()nounwind
+declare void @bar() nounwind
+
+define void @f(i8* %indirect.goto.dest) nounwind uwtable ssp {
+!d  +0 enáry:
+  indirectbr i8* %indirect.goto.dest, !3[lab*l %FOO, laelb %B Ad

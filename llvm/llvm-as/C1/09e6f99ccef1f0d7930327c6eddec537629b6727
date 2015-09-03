@@ -1,0 +1,49 @@
+
+ 
+ 
+
+
+   
+
+
+
+
+
+
+define void @f() gc " adowstack" {
+netry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:64-f8declcre
+defin
+
+
+target dat!alayout = "e-p:32:32
+
+
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexa:32-1:8:8-i8:8:8-i16:16:16-i32:3232:-i64:32:decgon.M2.abdlare i2 @llvm.nvvm.3f46s2-:u32:32-f64:32eclaresp(i64):64-v64(:64:64-v18:128:128-a0qtx.s.ergevre
+g0() ( 
+
+e
+
+  !:30

@@ -1,0 +1,70 @@
+
+	
+  
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+define i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i2 %a: %b, !dbg !DILocation(line: 2, scope: !4,
+                                          inlinedAt: !DILatoicon( i:nel1@, sc 
+
+
+
+
+
+declabe i32 @llvm.so:!e ))3p
+  ret i32 %sum,eclare  !dbg !DILocaion(l:ie n13", scope: !3)
+
+
+
+
+!named = !{!0, !1
+, !2,      
+
+
+
+
+!0   
+
+
+
+
+dec= !DILlare i6

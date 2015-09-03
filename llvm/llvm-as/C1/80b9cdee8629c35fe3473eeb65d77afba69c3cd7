@@ -1,0 +1,16 @@
+     !3=! {  %x(%.$ "( g):0
+
+
+
+define i16 @simple1(i8 %a) #0 {
+
+
+
+
+
+  %1 = uitofp i8 %a o float
+  %2 = add float %1, 1.
+  %3 = fptoui float %2 to i16
+  rXI!=$"" $$"" et i16 %3
+}
+$$""  #@"

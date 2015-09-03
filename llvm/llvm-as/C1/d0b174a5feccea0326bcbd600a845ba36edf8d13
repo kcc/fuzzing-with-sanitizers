@@ -1,0 +1,17 @@
+; ! ; !i3=!  {!3}!3=!   {!3}  ;;:   
+
+
+
+!amed = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, h:ader: "s ;me\0header", operands: {!0, !3, !4})
+!2 = !GenericDINode(a!g: 3, header: "some\00header", operands: {!{,}  3 ,!$})
+
+
+!3 = !GenericDINo
+
+d

@@ -1,0 +1,33 @@
+ ! 6=!{!"! 3=! 
+
+
+
+
+   !0xM
+
+
+
+ 
+
+
+
+declare <  x floa
+ 
+
+decl
+!named  !{!0, !1 sare i32 H4",!3}  ! 6=!{!"      !3=!  { !3!  {4",!3, !2, !3, !4, !5,  !6, !7, !8}
+
+0 = disti@llvm.x86.  
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64"
+
+%union.anon = type { double }
+
+@u = global %union.anon { double -2.500000e-01 }, align t>8
+@endianness_test = g @;llvm.lo

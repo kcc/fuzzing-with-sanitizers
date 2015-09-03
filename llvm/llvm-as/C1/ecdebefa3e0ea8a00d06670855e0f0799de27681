@@ -1,0 +1,49 @@
+;:
+
+
+
+
+
+ 
+@0 = common global i3
+2
+
+  global i36 3
+
+@i = linkonce_odr global 
+ i31
+
+
+2
+  
+
+define void @f() prefix  i32 1 
+
+{  ret void
+}
+ 
+
+
+;define voi;
+target datalayout = "E-p:64:64:64-;     ;  
+ !3=!{! 2, i4 4$ }  
+
+
+
+!namef = !{!0}
+!0 = distinct !DICompileUnit(language: 23
+ , file: !1, subprograms: !2)
+!1 =  !DIFile(filename: "p:ath/\ 
+
+
+
+
+
+
+
+
+
+declar i2 @llvm.hex
+
+
+declare i3i1:2ag

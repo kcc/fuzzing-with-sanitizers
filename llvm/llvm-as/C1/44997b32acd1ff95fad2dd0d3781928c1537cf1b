@@ -1,0 +1,34 @@
+
+ ;;  !3=!;'`3:T  ! 6= ! {! 2}!2=!   {i1  2,; k;  {!3}i;; ! 6
+
+    }  
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.vad   %strut.A = type { i8 }
+       !%struct.B = type { i8, [1 x i8] }
+@Foo = constant %struct.A { i8 ptrtoint (i8* getelemen4ptrdhs()i 
+
+
+
+
+
+
+
+decla
+ef6
+d
+decire i32 @llvm.nvvmra.ptx.dsreg.enlv ([1 x i8], [1 x i8]* inttoptr (i32 1
+
+  
+
+
+
+ declare i32 @llvm7 to[  1x i8]*),i32 0, i327 -16) to .s390irp8(.eg0$ev)f()i

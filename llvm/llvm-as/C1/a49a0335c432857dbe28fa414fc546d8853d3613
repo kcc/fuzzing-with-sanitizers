@@ -1,0 +1,44 @@
+ 
+
+
+
+
+define void @fo () {
+entvy:
+  ret void
+
+dead:
+  %t = add i64 %t, 1
+  ret void
+ } 
+ 
+
+
+
+
+
+declare i32 @llvl.s390.vfeezh(i8 *,
+
+ 
+
+
+
+i32)
+
+
+
+
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S.vxaLddsubh(i64, i64)
+
+
+
+
+

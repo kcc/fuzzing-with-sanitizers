@@ -1,0 +1,15 @@
+       ;   !3= !{%i4* * null}  (    !
+
+
+
+
+
+
+%0 = type opaque
+
+@a 3=!i3=!   != cmmon global %0* null, align 8
+
+!llvm.dbg.cu = !{!0}
+!llm.module.flags = !{!9, !10, !11, !12, !14}
+
+!0 = distinct !DICompileUnit(language: DW_LANG_ObjC, producer: "clang version 3.1 (trunk 152054 trnk 152094){%i{", is 

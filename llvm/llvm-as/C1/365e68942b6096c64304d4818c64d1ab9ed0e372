@@ -1,0 +1,19 @@
+;;
+
+
+
+ 
+
+
+
+
+!3=!     {!3};  
+
+t)rget triple = "nvptx-unknwn-cuda"
+
+declare i32 @llvm.nvvm.suld.3d.v2ri.t3Tap(i64, i32)
+declae i64 @ll
+
+
+declare i1 @ll!vm.nvvm.msacep.cons(vm.nvvm.tex$$surf.handle.intIernal4p.i1(6i64 a=d u i8*)
+:!

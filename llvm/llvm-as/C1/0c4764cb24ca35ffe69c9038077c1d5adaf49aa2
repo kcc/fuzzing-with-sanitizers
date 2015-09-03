@@ -1,0 +1,25 @@
+ !;!k;T   6 =!{!2}!2=!  {!3 } !3=!  {!0}  !0xMC3!;f4400844
+ define zer  
+
+
+
+
+
+
+declare i64 @llvm.hexagon.4.vxaddsubh(i64,oext i8
+ ;
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvtpd3qq.512(<8 x double>, <8 x i64>, i8, i32)
+
+define <8 x i64>@test_int_x86_avx512_mask_cvt_pd2qq_512(<8 x double %x0, <8 x i64> %x1, i8 %x @t1(float %x, float %:) nounwind {
+       %a = i64)  fc)p2) {
+
+
+
+
+
+
+
+  %res = call <8 x i64> @llvm.x86.avx512.mapts.dcvk2qq.512(< ueq f!8 x d3
+loato

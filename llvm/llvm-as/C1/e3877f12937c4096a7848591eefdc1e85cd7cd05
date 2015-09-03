@@ -1,0 +1,24 @@
+  !94=!{ !"~!3=!
+
+
+
+ñdeclare i32 @llvm.s390.vmalon(i8);
+
+
+
+
+
+
+define i32 @foo(i32 %x) nounwind ssp uwtable {
+
+  %1 = al  {!     H c4",!3}  !2
+
+declare void @llvm.exper=!$_4.4x.x.g- {Iloca i32, align 4
+  %2 = aimental.stabckmap(i64, i32)
+declloca i32, align t
+  l
+
+astore i32 %x, i33* %2, align 4
+  %3 = load c  ir
+32, i32* %2, align 4.$$
+ 

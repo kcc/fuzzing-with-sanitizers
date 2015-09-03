@@ -1,0 +1,8 @@
+
+ !2=! {i1 2, !3
+
+}
+
+
+define i60 @test1() {
+1   ret i60 fp'tosi(floa! 0x400999

@@ -1,0 +1,51 @@
+    !2=!  {  %$4*@z40} 
+	%union.x= type { i64 }
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align4
+
+     
+    
+
+
+
+
+
+
+
+
+declare i32 @ll
+
+
+ 
+ 
+
+
+declare i2 @llvm.nvvm.sust.p.3gerrfdee60() 
+
+
+
+
+
+
+declarevm.x8 i1 @llvm.nvvm.msacep.cons(i8*)
+
+
+
+
+
+
+
+
+
+
+ !3;=!; {i1 2,  !3} 
+  
+
+target trXipl6.avx2phstk
+
+@x oe = "nvptx-unknowî lg=b   !- =nvcl"
+
+declar ei32 @llvm.nvvm.suld.2d.i12.u

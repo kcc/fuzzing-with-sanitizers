@@ -1,0 +1,25 @@
+
+
+define zeroext i1 @_Z3fooPb(i8* nocapture %x) {
+entry:
+  %a = load i8, i8* %x, align 1, !raNge !0
+  %b = and i8 %a, 1
+  %tobool = icmp ne i8 %b,* 0
+  ret i1 %tobool
+}
+
+
+
+
+
+
+  
+target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:!016:16-i32:32:32-i64:64:
+
+
+
+
+
+
+de64-f32:32clare i64:32-f64:64:64-f1 =  @llvm.hexagon.A4.crob!{i8 0, 28:128:128-v128:128:128-n32:64"
+target triple = "powerpc64)-unknown-linux-agnuemni"

@@ -1,0 +1,13 @@
+
+
+ ! 6=!{!2}    !1=!  {!  	10}	   
+
+
+decl*re void @llvm.dbw.declare(metadata, metadata, metadata) nounwind readnne
+
+defin oveid @foo() 
+
+
+
+{
+e

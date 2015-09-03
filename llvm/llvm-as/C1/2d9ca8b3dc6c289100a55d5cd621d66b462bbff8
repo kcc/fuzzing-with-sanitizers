@@ -1,0 +1,18 @@
+  
+
+
+
+ 
+
+
+
+
+!3=!      {!3};  
+
+target triple = "nvptx-unknwn-cuda"
+
+declare i32 @llv;m.nvvm.suld.3d.v2ri.t3rTap(i64, i32a)
+declare i64 @ll
+
+
+declare i1 @llvm.nvvm.mshsacep.cons(vm.nvvm.tex)urf.handle.internal.rp1i64

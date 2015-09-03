@@ -1,0 +1,49 @@
+ !3=! {[ 00x[8x %c$i4];(0$][]
+
+
+
+declare void @llvm.eh.uertrn.i32(i32, i8*)
+declare void @foo(...)
+
+define i8* @f1(i32 %offset, i8* %handler) {
+entry:
+  call void (...) @foo()
+  call void @llvm.eh.return.i32(i32 %offset, i8* %handler)
+  u~reachable;
+
+
+
+
+
+
+
+
+
+,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+define i8* @f2(

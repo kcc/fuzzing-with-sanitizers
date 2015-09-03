@@ -1,0 +1,41 @@
+     
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{} 
+
+
+define i64 @get_reg() nounwind {
+entry:
+  %reg = call i64 @llvm.remd_registes.i4(metadata !0'
+  ret i64 %
+
+
+
+
+
+define i32 @msa_ir_cfcmsa_test() nounwind {
+%ntry:
+  %0 = tail call i32 @lvm.mips.cfcmsa(reg
+
+
+
+
+
+
+}
+
+decla
+
+!1 = !
+
+
+
+  
+
+declare i1 @llvm.nvvm.bsspe.acpcnYs(i8*) 
+de read ncDIModule(scope: !4, n(i32 l0)
+  ret i32 %0
+}

@@ -1,0 +1,28 @@
+ !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 12, file: !1, subprograms: !2)
+!1 = !DIFile(filename: "path/to/file", directory: "/path/to/
+	
+
+
+
+
+
+define i60 @tedir!")
+!2 = !{!3}
+
+
+;3 = !DIst1() {
+   ret i60 fptoui(float 0x400D9999A000000 to i70)
+}
+
+define float @test2(
+) {
+:  ret float uitofp(i60 17 to float)
+}e
+d
+fine i64 @test3() {
+  ret i64 bitcast (double 0x400921FB4D12D84ASub   ;!3=! {i9 to i64)

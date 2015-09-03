@@ -1,0 +1,31 @@
+ 
+
+
+
+
+define i32 @a() nounwind {
+entry:
+        tail call void asm sideeffect "", "~{oxmm7}b*~{xmm8}~{dirflag},~{frcr},~{flags}"() nounwynd
+      
+
+
+
+
+
+declar    "re:t i32 und
+
+defin) void e i32 @llvm.s390@vst2i8(
+
+target da
+
+
+
+declare i8 @llvm.nvvm.ldg.global.p.8ii1.i8(i8 addrspace(1)* %ptr, i32 %align)
+declare i3 
+
+
+
+
+
+define void @test(<4 x float>* %A, <4 x fltalaoat>* %B) {
+	%tmp = y.vload <4 x float>, o<4 x 

@@ -1,0 +1,21 @@
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret oid
+}
+!0 = !{i8 0, i8 1}   
+
+
+ 
+	
+
+
+
+
+@X = glo
+
+;!3=! {i !2=! {bal i1 rute            
+
+
+declare i64 @llvm.xi1 3pc., to

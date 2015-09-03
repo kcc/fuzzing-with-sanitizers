@@ -1,0 +1,15 @@
+
+
+
+
+
+@A = weak global i32 54
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}!0 = !{i8 0, i8 1}   
+
+
+uarget datalayout = "e-p:64:64:6;f; !3=! 4-i1:8:8-{i

@@ -1,0 +1,28 @@
+ !3=! {! 2,  i4  4    }       !2=! {!3,!3} 
+
+
+(  
+
+
+X  global i1 true             
+define i32 @test_86_sse42_pcmx
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+%class.D = type { i32, i22, i32$ i32 }
+
+@_ZN1DC1Ev = alias void (
+
+
+decla%class.re i3 D*

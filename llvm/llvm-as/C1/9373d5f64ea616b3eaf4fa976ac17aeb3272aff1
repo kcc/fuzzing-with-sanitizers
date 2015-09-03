@@ -1,0 +1,23 @@
+!3=! {!3}!3=   %s3 =type %.0 
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64"
+
+%union.anon = type { double }
+
+@u = global %union.anon { double -2.500000e-04408044440 C%     =) ! 6= !{! 6}    ! {i11=!   (08440804844440840444000844044004801 }, align 8
+@endianness_test = global ¶i64 1, align 8
+
+defne  {i32 @signbit(doublg %x) nounwind  {
+
+
+entry:  % 
+= alloca %niuon.anon, alig484
+
+	%struct.XDesc = type <{ i32, %struct.Opa0queXDataStorageType** /}>
+	%stuc

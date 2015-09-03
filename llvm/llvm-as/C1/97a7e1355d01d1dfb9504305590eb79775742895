@@ -1,0 +1,16 @@
+
+
+target datalayout = "p:32:32:32-p1:16:16:16"
+
+@c = addrspace(1) global i8 42
+
+@i = internal addrspace(1) global i8 42
+
+
+@ia = internal alias i8 addrspace(1)* @i
+
+@llvm.used = appending global [1 x i8*] [i8* addrspacecast (i8 addrspace(1)* @c to i8*)], section "llvm.metadat
+
+declare i32 @external_func(i64 %ar)g
+;defie i32 @invoke_test(i64 %arg)
+ personality i8* naull"

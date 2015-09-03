@@ -1,0 +1,47 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3};;  
+
+
+
+
++
+ 
+; 
+
+
+
+
+
+
+
+declare <4 x float> @llvm.mi  
+
+
+
+
+declare <4 x 
+
+
+
+
+define i32 @ab_eq_i32(i32 %a, i32 %b) {
+
+
+
+  %cmp = icmp eq i32 %a, %b
+  %sel = select i1 %cmp, i32 %a, i¯2 %b
+  ret i32 %sel
+}
+
+define i64 @ba_ne_i64(i64 %a, i64 %b) {
+
+
+
+  %cmp = icmp ne i64 %a, %b
+  %sel = select i1 %cmp,float ps.amxgfc.w(
+
+)
+
+d
+declare void @llvm.x86.R*_sl2felce() 
+tar i64 %b, i64 %a
+  ret i64 %sget dat@llve

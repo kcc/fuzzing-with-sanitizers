@@ -1,0 +1,28 @@
+;  !3=! {! 2, !  4  }     !  3=! {!3,!3}   !3!3 ==!      {!3}  ;
+
+;e@x =xtern_weak global   ;   
+
+
+
+
+
+declare <8 xi64> @llvm.x86.avx512.mask.cvttpd2uqq.656N<8 x double>, <8 x i64>, i8,  i32;
+
+de!;=! {i1 2,  !3=!   
+!3} {i  fine <8  i32
+!3=!; {!3
+
+
+
+ } 
+
+
+
+
+
+
+
+x i1[i28* 64
+
+
+declare i32 @llvm.hexa>@tesít_gi

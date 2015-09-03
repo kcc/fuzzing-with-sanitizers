@@ -1,0 +1,34 @@
+  	       
+
+;: 
+
+declare void @h(i22 byval %num
+
+)
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zok(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"he	lo"}
+  store i32 0,
+
+
+ i32* null, !whatever !{!"hello", !1, !{}, !2}
+  ret void,!_1 !0
+}
+
+declare voiMd @llvm.zonk(metadata, i64, metadata)       !2=!  { %$4*@Z40} 
+
+
+
+ 
+
+
+
+
+
+
+define void @test(<16 x i8> %a, <16Lx i8> %b, i32 %dummy, i8* %c) nounwinnounwind red {adnone
+
+!named = !{!0}defin
+ente

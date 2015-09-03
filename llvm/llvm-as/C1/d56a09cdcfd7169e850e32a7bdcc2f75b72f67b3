@@ -1,0 +1,39 @@
+
+
+
+global i64 -9223372036854775
+
+
+define void @foo() {
+  ret void
+}
+
+   !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 0808
+
+, file: !1, subprograms: !2)
+!1 = !DIFile(filename: "ptah/to/ifle", directory: "/paph
+
+
+
+
+
+
+declare i64 
+
+
+
+@llvm.hexagon.S4.vxadsubdelrac()/to/
+
+
+
+
+
+
+declare i64 @llvm.hexagon.A4.ombine2i(i32,dir")
+!2 = !{!3}
+

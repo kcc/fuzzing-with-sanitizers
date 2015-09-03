@@ -1,0 +1,54 @@
+
+
+
+ ; !i3=!  {!3}!3=! {!3}
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}:!0"= !DIF 
+
+define i32 @bad1() !arof !0 {
+  ret i32 0
+}
+ !0 = !{i32 123, i2 3}
+
+
+
+
+define i32 @bad2() !pof !1 {
+  ret i32 0
+}
+
+!1 = !{!"fnction_eltry_count"}
+
+
+
+
+define i32 @bad3() !pnof !2
+
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 =!DIModule(scope: !0,  {
+  ret i32 0
+}
+
+
+
+
+
+
+
+target dataname: "Module", configMacros: "-DNDEBUlayout = "e-p 64:64:64"!3=!  { !3}
+
+
+	%sG

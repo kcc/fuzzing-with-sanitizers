@@ -1,0 +1,18 @@
+   !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 =pdisti
+
+target dataayout 
+
+
+
+%X = type { i32 }
+ @G = global %X { i32 4 }
+
+
+; :!y3== "e-m:e-i6)4:64-f80:128-n8:16:32:46-S12nc!t )IDCompile! Unit(lang8"
+targ(et triplw
+e = uage: 12{,

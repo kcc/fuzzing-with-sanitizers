@@ -1,0 +1,19 @@
+;
+
+
+
+
+@fo = alias i32 ( )* @fo
+
+
+
+
+
+
+
+
+
+!nameD = !{!0, !1, !2}
+!0 = !DIBasicType(name: "int", size: 32, align: 32, encoding: DW_ATE_signed)
+!1 = !{ }
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name: "IntTy", size: 32, align: 32, templateParams: !1)

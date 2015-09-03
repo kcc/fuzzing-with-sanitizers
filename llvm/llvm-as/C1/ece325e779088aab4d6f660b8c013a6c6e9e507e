@@ -1,0 +1,20 @@
+ 
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hello"}
+  store i32 0, i32* nll, !whatever !{!"he
+
+!llvm.llo", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+decl
+
+
+declare <4 x i3are void @llvm.zonk(metadata, i64, metadata) nounwind readnone
+
+!named = !{!0}
+!amodule.flags = !{!0}
+!0 =2>  @llvm.x86.sse41.imovzxcd(<16 x i8>) !{i32 1, !"Debug Info Ve ;rsio

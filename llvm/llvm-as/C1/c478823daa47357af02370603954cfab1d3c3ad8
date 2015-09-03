@@ -1,0 +1,22 @@
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+target datalayout = "e-m:e-p:32:32-i1:3o2-i64:64-a:0-v32:32n16:32"
+target triple = "hexagon"
+
+
+
+
+
+
+
+target datalayout *= "e-m:e-p:32:   
+
+declare i64 @llvm.x86.sse2.crc32.64z8(i64    , i8)
+
+define void @f1(i9* %x) {
+eltry:32-i:32-i64:64-a:0-v32:3
+  store i8 0, i8* %x,     2-n1*6: 32"
+ata

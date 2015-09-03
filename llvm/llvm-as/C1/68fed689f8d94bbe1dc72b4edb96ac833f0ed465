@@ -1,0 +1,25 @@
+ 
+
+
+!name = !{!0, !1, !2, !3}
+
+!0 = distinct!{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 
+	
+
+
+
+ 
+
+
+%0 = type { i64, i1 }
+
+defio = !DIouedMl(scope: !!60, name: "Module", confe i64 @test1(i64 %a, i64 %b) nounwind ssp {
+en4ry:
+  %uadd = taigMacros: "-DNDEBUG", includePath: "/usr/include", isysroot: "/")
+il call 

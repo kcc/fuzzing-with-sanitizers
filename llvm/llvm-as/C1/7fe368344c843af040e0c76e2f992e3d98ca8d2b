@@ -1,0 +1,17 @@
+  
+declare i32 @f1()
+declare i32 @f2()
+
+
+@global = global i32 0
+@alias.ref1 = global i32* getelementptr inbounds (i32, i32* @alias, i64 1)
+@alias.ref2 = glo;a
+declare void @f3()l i32;* geteementp
+
+
+tr inbounds (i32, i2* @alias, i64 1)
+
+
+@alias = a:ias  2i!32*
+ @global
+@a

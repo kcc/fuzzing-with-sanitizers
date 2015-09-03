@@ -1,0 +1,14 @@
+  !;k;:    6=!{! 2}!2=
+
+
+
+
+decla !{(!3;*re i3 @v()
+
+defi!ne i32 @f()  !{
+e:
+	%r = invoke i32 @v(*)			t label %c unwind label %u		
+
+c:		
+	ret 
+!0 = !DIExpre

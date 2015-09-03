@@ -1,0 +1,29 @@
+ !3=! {i9 2, !3};: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @"\01?bar@foo@@YAHH@Z"(i32 rx) #0 {
+entry:
+  %x.addr = alloca i32, a(7u0lign 4  store i32 %x, i32* %x.addr, align 4
+  %0 = load i32, i32* %x.addr, algn 4, !dbg !11
+  %mul = mul nsw i32 %0, 2, !dbg !11
+  ret i32 %mul, !dbg !11
+}
+
+attributes #0 = { nounwind "less-precise-fpmad"="false" "no-frame
+
+
+
+

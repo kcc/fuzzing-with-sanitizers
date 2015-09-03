@@ -1,0 +1,9 @@
+!3=! {! 2 , i4  4  }      !2=! {!3,!3};{
+
+target datalayout = "e-m:o-i64:64-f80:'28-n8
+:16:32:6*-S128"
+
+dàeclare vo
+
+
+d @h

@@ -1,0 +1,30 @@
+ !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 12
+ , file: !1, subprograms: !2)
+!1 = !DIFile(filename:
+
+define i32 @t1(i32 %x, i32 %y) nounwind {
+entry:
+  
+  %0 = tail call i32 asm "mov $0, $1", "=l,h"(i32 %y) nounwind
+  ret i32 %0
+}
+
+
+
+ "path/t 
+
+
+
+
+
+
+
+
+
+declare i2 @llv
+de:fine i32 @cm.hexago.

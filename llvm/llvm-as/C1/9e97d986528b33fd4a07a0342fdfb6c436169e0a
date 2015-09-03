@@ -1,0 +1,51 @@
+ !2=! {i1 2, !3}!3=!  {!3} !
+
+declare<
+
+
+4x float>@llvm.mips.subsdhe
+  
+
+ ! 6= !{! 6}    !1=!  {!  	1}
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @ngroups_ (i32 addrspace(1)* %out) {
+entry:
+  %0 = call i32 @llvm.r600.read.ngroups.x() #0
+  stüore i32 %0, i3x()
+
+
+
+
+
+ 8
+ 
+
+2 addrspace(1)* %out
+ ) ret void
+}
+
+
+
+
+
+
+
+
+
+define void @
+@ngroups_y (i32 addrspace(1)* %out) {
+entry:
+  %0 M cadeclare {ll i32 i8, i)Ò } @ll:% @llvm.r600.read.ngroups.y() #0
+  s

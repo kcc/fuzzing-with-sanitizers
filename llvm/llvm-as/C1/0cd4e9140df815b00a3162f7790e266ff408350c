@@ -1,0 +1,38 @@
+    
+
+
+  ;
+
+ 
+
+ 
+ ;
+
+;; !3=! {i1 ( %: 
+
+target triple = "n !37=! {half;i;apt-vxnknuown-nvcl"
+
+declare void @llvm.nvvm.sust.p.1d.v262ptarr(i64, i32,
+
+ i32)
+
+  
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!
+defi n   !3=! {  :%xe !3=!    
+def
+!0= 
+gl obal !DILo{} { i32 7, float 1.0, i32 7, casM0la(llvm.moVi32 xK8h44+4.dule.flags = !{!0}
+!0 = zc4f8 }!{
+i32 2, !"Debug I

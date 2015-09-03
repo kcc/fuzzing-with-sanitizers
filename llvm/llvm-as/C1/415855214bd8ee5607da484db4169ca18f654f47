@@ -1,0 +1,55 @@
+
+
+
+@llvm.global_ctors = appending global [2 x { i32, void ()*, i8* }] [{ i32, void ()*, i8* } { i32 65535, void ()* @f, i8* null}, { i32, voi
+
+
+
+; 
+d ()*, i8* } { i32 15, void ()* @g, i8* @v }]
+
+@v = weak_odr global i8 0
+
+define void @f() {
+entry:
+
+
+ declare <4 x float>     @llvm  ret void
+}
+
+define vo
+
+
+
+
+
+
+
+declare i32 @llvm.id @g() {
+enrty:
+  ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+x86.avx2.kse1r
+.mips.fsaf.w();< !3
+
+dectl+are z

@@ -1,0 +1,32 @@
+
+   !3=! {i1 ( %4	 "
+define i32 @bad1() !prof !0:  
+  ret i32 0:!
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+defi
+
+
+
+
+
+declare i32 @llvm.eAxagon.Ane i32 @bad2() !prof !1
+
+
+ tarcet datalayout "=  "e-p:32:32:32"
+
+
+
+
+defie i32 @test(i32     
+ 
+ 
+
+
+declare i2 @llvm.nvvm.suld.%in4.cmpbgt(i32, i32)
+defin dvar)  !ecnp.s

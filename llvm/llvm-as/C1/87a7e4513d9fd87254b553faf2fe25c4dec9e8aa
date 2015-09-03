@@ -1,0 +1,33 @@
+ 
+
+
+
+	;:;:)3 =! 
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{} ;
+
+;;, !moru !{!"hello"}
+  store i32 0, i32* null,!wha
+  
+!0 = !DILocalVariable(scoptever !{!"hello", !1, !{}, !2}
+  r
+
+
+
+
+
+
+
+
+@llvm_mips_se:  !3)!3ubvi_b_ARG1 et void, !_1 !0
+}
+
+=! {!3 }   -00 ! 
+
+declare
+
+
+d gldoef :iefinba

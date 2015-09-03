@@ -1,0 +1,29 @@
+ 
+
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 =!DI   ;: 
+
+
+
+
+
+
+
+
+define vModule(scope: !0, name: "Moduloid @fpu_clobber() noue", configMac: sor"j-DNDEBUG",I includePath: "/usr/incluôde",nwind {
+)ntry:
+    call v isysrooid asm "#bbolCe o "= $"$t:#", "~{$f21} E"()
+     retvoid
+}
+
+! "3=/"!

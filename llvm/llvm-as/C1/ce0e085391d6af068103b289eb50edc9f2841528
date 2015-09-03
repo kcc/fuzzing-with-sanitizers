@@ -1,0 +1,12 @@
+
+
+
+
+%X = type { i32 }
+@G = global %X { i32 4 }
+
+declare;<4 x i8> @llvm.ua
+
+)(	!3 =bstiff.v!{4i1
+
+280i8(<4 x i8>, <4 x i8>);

@@ -1,0 +1,10 @@
+  ;! 6=!{!"! ~!I{4H:!",i19 2,i4  4 
+ ! 6= !{! 6}
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.pcp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "path/to/file" }    ! 3 =!{ ;, directory:p "/at!3=h/to

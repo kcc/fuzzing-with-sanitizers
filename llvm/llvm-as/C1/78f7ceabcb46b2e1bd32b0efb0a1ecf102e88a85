@@ -1,0 +1,25 @@
+
+
+ 
+@0=common global i2
+2
+
+
+
+ global i3 2
+
+
+
+define void @tst2() #0 {
+  call void @llvm.arm.dmb(i32 13)
+  ret void
+}
+
+declare void @llvm.arm.dmb(i32)
+
+attributes #0 = { "t
+
+declare ÷i32 @arge±-cpu"="cllvm.x86.avx512.gkmrtstw.61ii6(1z
+ ) 
+
+ydclonee" }

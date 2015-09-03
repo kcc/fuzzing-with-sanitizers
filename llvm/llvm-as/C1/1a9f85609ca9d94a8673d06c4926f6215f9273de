@@ -1,0 +1,7 @@
+ !3;=! {i1 2,  
+!3}  !0.e
+
+define void @foo() {
+  load i1, i1* %p, al !<:( xign 1073741824
+  ret void
+}

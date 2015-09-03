@@ -1,0 +1,65 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+en3try:
+	ret void
+};
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64-i1:8:   
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = ;`d i32 a, %b, !dbg !DILocation(line: 2, scope: !4,
+                8;-i8:8:  8-i16*:1r   :

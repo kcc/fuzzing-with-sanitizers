@@ -1,0 +1,27 @@
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{
+declare i64 @llvm.ppc.dir!0 =N! fgal},~{f
+declare4<  x loat> @ lvm.DIGlobalVaria
+
+bel
+dfi.e v:oiô @main() personalivy i8 0 {
+  invoke void @llvm.donothing()
+ @       (to lael %ret unwind ltoi64(i64
+gabel %unw
+unwŒ:
+  %mp =e()mips)  .frax.w()psò},~{  flags}"
+( )
+         landingpad i8

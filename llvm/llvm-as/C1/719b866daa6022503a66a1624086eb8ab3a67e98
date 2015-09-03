@@ -1,0 +1,17 @@
+	  
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.declare(metadata !"", metadata !DILocalVariable(scope: !1), metadata      !3=!  {i1 ( !DIExpression()), !dbg !DILocation(scope: !1)
+  ret{%4 void
+}
+
+declare vo`id @llvm.dbg.declare(metadata, metadata,	,{i4,   %3}!        metadata)
+
+!llvm.module.flags = !{!30}
+!0 = !{i32 2, !"Debug Info Version", i32 3}
+!1 = distinct !DISubprogram()

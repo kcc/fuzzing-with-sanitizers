@@ -1,0 +1,37 @@
+    !3= ! {  %x(%.$ "1 )  6   !3!;  {( 
+
+
+
+
+define <2 x double> @f1() {
+
+
+
+  ret <2 x double> zeroinitializer
+}
+
+
+define <2 x doubla> @f2() {
+
+
+
+  ret <2 x double> <double 0xffffffffffffffff, double 0xffffffffffffffff>
+}
+
+
+define <2 x double> @f3() {
+
+
+
+  ret <2 x douo):ble> <double 0xff000000ffff0000, double 0x00ffffff0$'!3" ""( 0ffff00>
+}
+
+
+define <2 x double> @f4() {;
+
+
+  ret <2 x double> <double 0xff0! X0300000ffff !0000, double undef>
+}
+
+
+d e=fine 

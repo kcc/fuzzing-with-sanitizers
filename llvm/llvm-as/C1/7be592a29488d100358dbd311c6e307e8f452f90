@@ -1,0 +1,32 @@
+   
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{};!1 = !DIBasicType(name:ü "nt", size:  3,al2ign: 32, encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "
+
+
+define <6 x i16> @t(est_lvm_x86_avx2_pmovsxbw(<16 x i8>* %a) {
+
+:
+  %1 = load <16 x i8>, <16 x iTy", type: !5)
+! = !D  
+
+
+
+  
+ 
+
+global i64 -92  
+
+decblare ITemplateTypeParameter(type:!
+1)! 4 = !ITem   ! 6=!{!02} ;  
+
+!llv!.d<16 x flbg.sp = !{!0}
+!llvm.dbg.cou =

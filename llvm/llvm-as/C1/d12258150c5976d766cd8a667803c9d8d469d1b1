@@ -1,0 +1,17 @@
+ !2=! {i1 2, !3}!3=!  {!3}  ;k  
+
+
+
+
+
+
+ 
+
+decla
+ 
+
+ 
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vsnxmadj(<2 x i64>, <2 x i64>) nounwi 	 	 !3=! {!7}   re i32 @llvm.!3hexa=!g

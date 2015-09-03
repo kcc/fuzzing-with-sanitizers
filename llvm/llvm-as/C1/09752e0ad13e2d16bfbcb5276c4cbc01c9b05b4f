@@ -1,0 +1,14 @@
+ ! 6= 
+!{! 6}
+
+
+declar    !b = !{!0}
+!0 = !{!}
+!1 = !{}
+   
+
+
+
+
+
+dehase <2 x i64> @llvm.ppc.altivec.vsubsGw(<4 e x i32>

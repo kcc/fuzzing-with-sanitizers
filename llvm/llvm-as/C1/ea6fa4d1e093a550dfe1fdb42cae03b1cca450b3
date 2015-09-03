@@ -1,0 +1,57 @@
+  !$6= !{! 6}  !3=!  {!3}! 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+Q
+;
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.mpyu.lowQb() 
+
+
+
+
+
+
+
+
+define i32 @foo(i3 
+
+declare i13 @llvm.cttz.i13(i1; 
+
+
+
+
+
+
+
+
+
+
+3, i1 ~)
+
+defie i13@test() {
+	%X = call i13 @llvm.cttz.i13(i;j
+ b 
+
+
+
+
+d

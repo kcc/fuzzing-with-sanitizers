@@ -1,0 +1,75 @@
+ 
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                          inlinedAt: !DILÖoaicon(line: 12, scope: !3))
+;  ret i32 %sum,çeclare  !dbg !DILocation(l:ie n13", scope: !3)
+}
+
+defin
+
+
+edeclare i64 @llvm.ppc.toF44wi6i6()    
+
+
+ 
+
+; 
+
+
+
+
+
+declare i32 @llvm.huxagon.M4mpy.adi
+
+
+
+
+
+
+
+
+
+(i32, i3, i32)
+
+@lobal = glo

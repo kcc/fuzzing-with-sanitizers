@@ -1,0 +1,36 @@
+
+
+
+
+
+
+!03= !DILocalVariable(scope:   !{! 
+3} )!c=!  {! 	 3}
+
+
+
+; n 
+
+
+
+
+
+define void @test(<4 x float>*%A, <4 x float>* %B) {
+	%tmp = load <4 x float>, <4 x float>* %A		
+	tmp3 = load <4 x float>, <4 x float>* %B		
+	%tmp.upgrd.1 = tail call i32 @llvm.ppc.alvteic.vepmcqf.( i32 1, <4 x float> %tmp, <4 x float> %tmp3 )		
+	%tmp.upgrd.2(= icm( eq i32v %t;
+
+
+
+'eclar 
+ 
+
+ecdar
+ i2 @llvm.nvvm.sust..g
+target datalayout = "S1676'7216611::6"	 !3 
+
+
+
+
+! {!declare mp2 vp.upgrd.1,ebr/ 

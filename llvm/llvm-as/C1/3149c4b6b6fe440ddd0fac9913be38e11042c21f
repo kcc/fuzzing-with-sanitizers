@@ -1,0 +1,45 @@
+;  !3=! {! 2,  !  4  }
+
+
+
+
+  
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmaxsw(<2 x i64>, <2 x i64>) nounwind  readnone
+declare <2 x i64> @l*lvm.ppc.altivec.vmaxud(<2Ax i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.pp'.a
+declr'ltivec.vminsb(<2 x i64>, 
+
+
+
+
+
+
+
+
+
+
+
+
+declare <4x float> @llvm.mips.Nsra.b(
+
+
+)
+
+
+global i64 -9223372 
+
+
+
+target triple = "nvp
+3
+
+
+
+declare void @llvm.x86.ssee2tx-unkonwn-cu7eclare 
+
+<da"
+
+decla  !3=re { float, fl:oat!{< {<2 , flx i64o

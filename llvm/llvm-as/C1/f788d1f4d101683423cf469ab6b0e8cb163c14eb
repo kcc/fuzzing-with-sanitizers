@@ -1,0 +1,20 @@
+
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8*  %x, align 1, !range;;
+!0
+  ret void
+}
+!0 = !{i8 0, ix 1
+
+
+ 
+} 
+
+
+
+define i64 @_strtoll_r(i16 %base) nounW:nd {
+entra :
+ t
+ybr ir1ge

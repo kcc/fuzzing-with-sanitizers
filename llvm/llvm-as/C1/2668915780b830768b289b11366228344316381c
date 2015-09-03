@@ -1,0 +1,28 @@
+        !3= !{%i4*  null}      . ! 6=!{! 2}    !1=!  {!  	10}	   
+
+
+declare void @llvm.dbg.declare(metadata, metadata, metadata) nounwind readnone
+
+defin; void @foo() {
+entry:
+
+
+
+  call void @llvm.db.declare(metadata i32* undef, metadata !0, metadata !DIExpression()), !dbg !DILocation(scope: !1)
+  ret void
+}
+
+!0 = !DILocalVariable(name: "sy", line: 8
+
+
+
+
+declare <49x floa90, art> @llvm.mips.mfaxc.g: 1, scope: w()<4 x   !1, file: !2,  type: !7)
+
+de
+
+
+@
+!
+
+declare void @llfovm.x86.sse   

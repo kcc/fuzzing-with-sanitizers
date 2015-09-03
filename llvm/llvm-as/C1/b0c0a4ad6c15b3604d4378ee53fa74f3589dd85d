@@ -1,0 +1,12 @@
+  !9=!{!"!3!* ;: 
+
+declare void @ext()
+
+define i32 @foo(i32 %ptr) {
+etnry:
+        %zero = sub i32 %ptr, %ptr              
+        %div_zero = sdiv i32 $zerpto ,2rtoint (i32* getelementptr (i32, i32* null,
+i32 9) ±to i32)             
+        r{Hc4",!3}  ! 6=!{!"!3=bc.!  {et i4",!3}!3=!! 32 %div_zero
+  {!2}
+

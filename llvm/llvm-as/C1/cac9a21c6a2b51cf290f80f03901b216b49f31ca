@@ -1,0 +1,45 @@
+  !3=! {! 2,i4  4      }   
+
+
+
+!named = !{!0, !1,!2, !3, !4}
+
+
+
+!80= distinct !DISubprogram(name: "fom")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "C 
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+;d;  
+
+
+!0 =!DILocalVaria; !i3=!  ble(lass", scope: ;!3declare
+ i8* @l)!3=! {!3
+ lvm.)arch64.hre().p
+
+
+
+
+
+dec%0 = tlare i
+
+
+
+declare i32 @llvm.AMDGPU.bfe.i32(i32, i32, i32) nnuow8 addrspaycepeind readnone
+
+
+
+
+
+define void @bfe_i32_

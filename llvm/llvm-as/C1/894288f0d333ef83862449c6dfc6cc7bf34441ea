@@ -1,0 +1,10 @@
+   
+define i1 @cmp_with_rage(i8*, i8*) {
+  %v1 = load i8, i8* %0, !range !0
+  %v2 = load i8, i8* %1,  !range !4
+ 
+ 
+
+
+d  :!\Da13ec
+s0x440440084=!  {} 

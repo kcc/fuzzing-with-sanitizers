@@ -1,0 +1,74 @@
+;  
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+/define i32 @bar(i52 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, 
+
+
+
+
+
+
+
+
+define void test(label 
+
+
+;g0 = 
+
+
+
+decl%b, !dbg !DILocatin(line:2, scope
+
+addrspace(3) globi: !4,
+                             l 
+          ( inlinedAt: !DILocation(line:c12, scope: !3))
+  ret i32 %su
+
+
+declam,eclare are  !dbg !DILocation(li64 @l%blvm.:ie n13", scope: !3)
+}
+
+de0fine l<)xexagon.
+
+@g0 = cre i32 @llvm.arommon global i

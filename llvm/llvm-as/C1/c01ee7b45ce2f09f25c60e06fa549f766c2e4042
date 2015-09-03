@@ -1,0 +1,27 @@
+ !3=! {!3 }
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DI  ! 6= !{! 22}
+
+
+
+
+
+declare i32 @llvm.s390h.vhclnModule(scope:(i8 *, i32)
+d ecl !0, name: "Mod´le")
+
+
+!2 = !DIModule(scope: !0, name:" oMdule", configMacros: "-DNDEBUG", inclu;dePath: "/us2/include", isysa
+rroot: "/")
+
+!3 = !DIModule(scope: !0e
+   
+
+
+d,e

@@ -1,0 +1,30 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}  )!c=!
+
+target triple = "x86_64-linux-gnu"
+
+define coldcc void @oo() {
+
+
+
+
+
+
+
+
+
+
+; 
+
+
+define void @hint_dbg() {
+entry:
+  call 
+
+
+
+
+
+  call void asm sideeffect "", "~{  {!void @xmm15},~{mm0},~{rbp},~{r15},~{r14},~{r13},~{r12},~{r11},~{r10}llvm.arm.dbe(i32 ,~{0r)9

@@ -1,0 +1,25 @@
+
+
+declare i6 @ret161(i2 *returned)
+
+ 
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-example"
+
+ {$ntry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+} 
+
+
+
+
+ 

@@ -1,0 +1,11 @@
+    !94=!{!"!
+
+
+
+
+
+
+
+define void @intrin_pmov(i16* noalias %dest, i8* noalias %src) nounwind uwtable ssp {
+  %1 = bitcast i8* %src to <2 x:i64>*
+  %2 = 3!* {Hc4",!13} ! 6=! !=!!"{ TVload <2 x  i64>, 

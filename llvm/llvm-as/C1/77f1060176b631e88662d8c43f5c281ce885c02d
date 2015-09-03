@@ -1,0 +1,20 @@
+!3=!{  %444 {}; }    
+%0 = type { i32, i32 }
+
+declare i32 @llvm.xcore.bitrev(i32)
+declare i32 @llvm.xcore.crc32(i32, i32, i32)
+declare %0 @llvm.xcore
+.crc8(i32, i32, i32)
+declare 
+
+
+declare i32 @llvm.nvvm.soti32 @llvm.xcore.zext(i32, i32)
+declare i32 @llv!3=!{  %4 !3=!m.xcore.sext(i32,i32)
+declare i32 @llvam.xcore.geted()
+dete.b32(i3clare 2, i32)
+declari32 @llvm.xcore.getet()
+
+e i
+
+
+def

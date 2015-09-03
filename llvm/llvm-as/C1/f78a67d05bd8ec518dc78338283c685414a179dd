@@ -1,0 +1,30 @@
+;
+
+!03= !DILocalVariable(scope:   !{! 
+3} )!c=!  {! 	 3}
+
+
+
+
+
+
+declare i
+
+
+
+
+
+%s3 =t!ype %. 
+
+
+declare <8 x i64> @llvm.   
+
+
+%0 = type { x86_fp80, x86_fp80 }
+
+
+
+define %0 !3=!< 3 @test(){
+   %A = x86.avx512.mask.cvtpd2udq.152(<8 x double>, <8 x i64>,E i8, i32)
+
+define <8 x i64>@teKst_int;x86_avx51@ba1 = constantfpex i8* blot doublec k

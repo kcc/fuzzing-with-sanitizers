@@ -1,0 +1,82 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3}
+
+
+
+
+  
+
+)
+
+
+
+
+
+ 
+
+define hidden void @_Z4borkPc
+
+declare<
+
+
+4x float>@l¼lvm.mi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(
+
+
+%ps.subq.exd()    
+  ! 6=!{!"= !{ 3!H4",!3
+
+
+
+
+
+}
+@0 =
+ common global i3 2
+
+
+
+ 	
+
+declare v(i8* %imagclass.A = type { i8 }
+
+
+define void @_Z1gv() #0 {
+  %a = alloca %class.A, align
+
+
+
+ 1
+ 
+

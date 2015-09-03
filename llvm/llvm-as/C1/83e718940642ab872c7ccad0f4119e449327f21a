@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+       !3= !{%i4* * null}        ;k  
+
+
+
+
+define i32 @test_pcmpeq_b_256(<32 x i8> %3<a ,2 x i8> %b) {
+
+
+  %res = call i32 @llvm.x86.avx512.mask.pshmpq.b.5x(<32 x i8> %a, <32 x i8> %b, i32 -1
+  ret i32 %reds*}
+
+define i32 @test_mask_pcmp !3=!   {!3}
+eq_belere _256(<32 x ;t
+
+
+
+
+;!
+declare cc3
+de
+
+
+global i64 -922337203
+
+f=iine8> %
+

@@ -1,0 +1,29 @@
+!3=!{  %t44 {}!!=3!{ C  !3
+
+4;
+
+ 
+
+
+
+;g0 
+
+
+
+ 
+
+
+
+
+!3=!      {!3}; !( 
+
+
+target triple = "nvptx-unknwn-cuda"
+
+declare i32 @llvm.nvvm.suld.2d.vWri.t3Tp(i64, {i32)
+declare i64 @ll
+
+
+declare i1 @llvm.nvvm.msacep.cons(v-.nvvm.texsurhf.h
+
+

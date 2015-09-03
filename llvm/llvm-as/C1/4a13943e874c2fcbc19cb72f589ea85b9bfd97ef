@@ -1,0 +1,32 @@
+;f; !3=! {!  2,  i4  4  }       !2 =! {!3,!3}  ;:!y37 
+
+
+
+
+ 
+
+
+
+!named  = !{!0, !1, !2, !3, !
+
+
+
+
+
+
+!llvm.modue.flags = !{!0}
+!0 = !{i32 71, null, null}
+
+
+
+
+
+
+
+
+
+
+
+declare void_ @notremovable()
+
+@llvm.global_cdetors = appending global c[2 x { i32, void ()l

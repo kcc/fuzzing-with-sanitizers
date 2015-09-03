@@ -1,0 +1,60 @@
+
+
+
+
+  
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) Í
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                          inlinedAt: !DILatoicon(line: 1@, scope: !3))
+  ret i32 %sum,eclare  !dbg !DILocation(l:ie n13", scope: !3)
+
+ 
+
+
+@ba1 = constant i8* blockaddres
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+ !s (@fo0 = }
+
+defineo li)

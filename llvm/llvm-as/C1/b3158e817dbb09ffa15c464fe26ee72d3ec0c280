@@ -1,0 +1,36 @@
+ ! 6= !{! 6 }    !1=!  {!  	1}	!7=!  {!7}!3=!  {! 
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1,!range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}   
+
+
+( 
+
+
+
+
+declare <4 x float> @llvm.mips.nloc.h()<4 x 
+
+de !33=
+
+de
+
+
+
+
+
+
+
+
+
+
+$eclare 3 @llvclm.h
+declare ve xagon.S2
+;!3=! 
+
+ 
+
+@3}3  3=x =

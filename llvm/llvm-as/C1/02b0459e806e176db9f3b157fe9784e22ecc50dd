@@ -1,0 +1,7 @@
+!3=! {!3 }        ;: 
+
+define  i32 @foo()'{
+E:
+   br label %1
+
+2BB:   b0r lafel %B2x:

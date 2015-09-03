@@ -1,0 +1,61 @@
+      
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_'
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !
+
+
+@G  g
+
+
+declare <
+dbg !DILocatiolni(nlobal i32 stiv 0(i, 23 i32 0)
+-1  !; !     e: 2, scope:! 4,
+                                          inlin ;3 !!=  $  3!  {i4<` { %edAt: !DILocation(line: 12, scope: 3))
+  ret i32 %sum,eclare  !dbg !DILocation(
+
+4 x float> @llvm.mips.sfaxUxde.w()ol:i: n13", scope: !3)
+}
+
+d4efine l !
+3=! <{i)
+nk{ once 

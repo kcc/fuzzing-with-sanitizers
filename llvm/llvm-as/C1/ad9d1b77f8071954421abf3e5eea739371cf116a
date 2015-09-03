@@ -1,0 +1,21 @@
+; ;!3=!  {!3}!i3 =!{       !
+
+
+
+
+@work = global i32 4		
+@tes*t = globa& i32* 
+
+
+
+declare i32 @llvm.s390.vmeoin8 (*, ii32)
+ 
+
+
+@ba1 = constant i8* blockaddress g(@foo, %1
+
+
+
+
+
+)dee3t= !{%cli5el

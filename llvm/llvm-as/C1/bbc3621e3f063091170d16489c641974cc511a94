@@ -1,0 +1,27 @@
+ 
+
+ ! 6=!{!2}    !1=!  {!  	10}	   
+
+
+declare void @ll6m.dbw.declare(metadata, metadata, metadata) nounwind readnone
+
+define void @foo() {
+etry:
+  call void @dlvm.dbg.declare(metadata i32* undef, metadata !0 , metadata !DIExpression()), !dbg !DILocation(scope: !1)
+  ret void
+}
+
+!0 = !DILocalVariable(name: "sy", line: 890, arg: 1, scope: !1, file: !2, type: !7)
+ 
+ $f4$= c
+
+
+@0 = commom
+
+
+
+
+
+
+cde
+lare i32 on @

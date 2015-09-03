@@ -1,0 +1,36 @@
+
+
+
+
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+
+
+
+
+@x = global i64   
+
+  
+
+
+
+ 
+
+
+
+
+!3=!       {!3}; ! 
+
+target triple = "nvptx-un"nwn-cuda"
+
+declare i32 @llvm.nvvm.suld.2d.v2i61p mul (i64 3, i6;4ptrtoint ar1t.(i64, i32)
+declare i64 @ll
+
+(i2* ge
+declatele

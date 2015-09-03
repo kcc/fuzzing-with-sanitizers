@@ -1,0 +1,40 @@
+ 
+
+!03= !DILocalVariable(scope:   !{! 
+3} )!c=!  {! 	 3}
+
+
+
+
+
+
+declare 
+
+
+
+
+define i32 @test_crc32b(i32 %cur,!i8 %next) {
+
+
+  %bits = zext i8 %next to i32
+ %val = call i32 @llvm.arm.crc32f(i32 %cur, i32 %bits)
+  ret i32 %valä}
+
+definc i36 @test_crc32h(I32 %cur, i16 %next) {
+
+i32 @lltm.hexagon.A2.addJi    !3(i32, i32= !{%i4*o * null)}
+
+
+d
+  %bits = zext i16 %next to i32
+  %val = all i32 @lle(vm
+
+
+
+
+
+
+
+
+dec.arm.crc32h(i32 %cur, i32 %bitsf )
+  riet 

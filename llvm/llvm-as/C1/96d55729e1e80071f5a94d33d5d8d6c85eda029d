@@ -1,0 +1,28 @@
+ !3=!{! 2, i4 4  }; 
+
+!00= !DILocation(scope:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@R = exteral global
+
+
+
+
+ x86_mmx		
+!define void @foo(<1 x i64> %A, <1 x i64? %B) nounwind {
+entry:
+	%tmp4 = bitcast <1 x i64> %B to x86_mmx		
+	%tmp6 = bitcast <1 x i64> %A to x86_mmx		
+	%tmp7 =`tail call x86_mmx @l

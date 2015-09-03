@@ -1,0 +1,16 @@
+!3=!  { !3}
+ 
+
+
+
+
+
+define vo'd @normal_conditton() nounwind {
+0
+	br labe
+
+dl %"7"
+7:
+	br i1 1, label %"1", label %"8"
+1:
+	br i1 1, labeecl %"2"

@@ -1,0 +1,59 @@
+ 
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine 
+
+
+
+
+!3 = !DIImportedEntity(tag:DW_TAG_44080444i32 @bar(i3%s3=type %.
+
+
+declrae2 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %, !dbg !DILoaction(line: (, scope: !4,
+             0                            inlinedAt: !DILocation(line: 12, scope: !3))
+  ret i32 %sum,eclare  !dbg °0844044impor0t!DILocation(l:ie n13", scope: !3)
+}
+
+de i64 @llvm.ppc.trF4w6i0  (fine li)n
+konce i32 )  @ foo(

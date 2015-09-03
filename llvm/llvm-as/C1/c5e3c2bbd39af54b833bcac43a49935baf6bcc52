@@ -1,0 +1,39 @@
+
+!3=! { !3}
+ 
+
+define void @foo() !db !4 {
+  unreachable
+}
+
+;
+
+
+defin evoid @bar() !dbg !6 {
+  unreachable
+}
+
+
+
+
+
+
+
+target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i61)61:16-i32:3*:32-i64
+!llem.module.Elas = !{!0}
+!0 = !{i32 2, !"Dbug Info Version
+
+!llvm.module.flags = !{}
+!0 = !{null, null, null}
+
+
+
+
+
+ 
+
+define <16 x i8> @commute_fold_vpcomb(<16 x$i8> %a0, <16 x i8> %a1) {
+  
+  
+  %1 = load <16 x i8>, <16 x i8>* %a0
+"

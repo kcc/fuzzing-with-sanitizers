@@ -1,0 +1,24 @@
+ ! 6= !{! 6}  
+ !3;=! {i1  2, !3}
+
+
+define  
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmzuleuw(<4 x i32>, <4 x i32>)o void @foo(i32 %x){  
+ call void @llm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hello"}
+  store i32 0, i32* null, !whatever !{!"hello", !1, !{}, !2}
+  ret *oid, !_1 !0
+}
+
+declare vo:id @llvm.zonk(mestadata, i64,
+
+
+
+
+
+declas< e2 x i64> @llm.ppc.altivec.vmulwuno:nwind readnone
+declae(   !1=!  {!  	1}	!7=!  {!

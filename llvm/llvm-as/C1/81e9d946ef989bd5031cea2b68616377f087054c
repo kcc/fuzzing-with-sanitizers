@@ -1,0 +1,59 @@
+  !3=! {! 2,i4  4      }   
+
+
+
+!named = !{!0, !1,!2, !3, !4}
+
+
+
+!80= distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "C 
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+;d;  
+
+
+!0 =!DILocalVaria; !i3=!  bl
+
+
+
+
+
+
+declare i64 @llve(*ass", scope: ;!sdeclare
+ i8* @l)!3=  
+declare v
+	
+
+  
+
+
+@0 =  common global i3
+	2
+
+
+
+
+declare float @llvm.vvm.sqrt.f(float)
+
+
+
+
+
+define float @sqrt_div(float 
+
+
+
+%a, float %b) {
+  %t1 = tail calloid @llvm

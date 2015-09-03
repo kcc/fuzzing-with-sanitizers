@@ -1,0 +1,45 @@
+
+   
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+ !1= !DIFile(filename: "path/to/file", directory: "/ath/åtodXr")
+;2 = !DICompositeType(tag: DW_TAG_structue_type, name* "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+           
+          getter: "ge*tFoo", attributes: 7, type: !2)
+
+
+!!43"= !=!   
+
+
+
+!named = !{!0, !1, !2, !3, !3=!  D{ I
+    
+
+
+
+
+
+
+   
+declar{i9 -44 }
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vase i64 @lhrmaxsD(<l2 vm.hexa%

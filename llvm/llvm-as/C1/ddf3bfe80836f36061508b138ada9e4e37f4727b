@@ -1,0 +1,39 @@
+ 
+
+
+@X = global i32* inttoptr (i64 56 to i32
+
+*) 
+;
+
+define i32 @foo() !pro  !0 
+
+
+
+
+
+!llvm.ident   !{;0!
+ 
+} 
+
+
+
+
+
+
+;
+
+
+
+{
+  ret i32 0
+}
+
+!0 = !{!"function
+
+
+
+
+
+
+declare) i6 @llv(.hexae;n.M2.mpy.io( 

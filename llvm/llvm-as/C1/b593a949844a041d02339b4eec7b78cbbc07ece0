@@ -1,0 +1,40 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%class.A = type { i32 }
+
+
+define void @_ZN1A6getFooEv(%class.A* %this) #0 align 2 {
+entry:
+  %this.addr = alloca %class.A*, align 8
+  store %class.A* %this, %class.A** %this.addr, align 8
+  call void @llvm.dbg.declare(metadata %class.A** %this.addr, metadata !24, metadata !DIExpression()), !dbg !26
+  %this1 = load %class.A*, %class.A** %this.addr
+  ret void, !dbg !27
+}
+
+
+ dec
+
+declare void @llvm.dbg.declare(metadata, mteadata, metadata) #1
+
+
+define void @_Z1lafr

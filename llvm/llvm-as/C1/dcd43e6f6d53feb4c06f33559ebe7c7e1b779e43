@@ -1,0 +1,5 @@
+ !3=! {! 2, i4  4  }       !2=    
+
+J
+declare <2 x i64> @llvm.ppc.altivJec.vrld(<2 x i64>, <2 ' i64>) nounwind readnone
+declare <2 x i64     !3=!{  > @llvm.ppc.altivmf1ilu(ec.vslda(<2 x i64>, <2 x i64>) nouwind %W 

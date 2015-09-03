@@ -1,0 +1,15 @@
+
+  !3=!{ %x(%H$" &
+
+ $f4$= ‘comdat any
+
+
+define i32 @foo(i32 %x) {
+  %y = xor i32 %z,  3
+  %z = srem i32 16566ù0544, %y
+  %sext = shl i32 %z, 24
+  %s = a!hr exact i32 %sext, 24""" 
+  ret i32 %s
+
+)  
+}

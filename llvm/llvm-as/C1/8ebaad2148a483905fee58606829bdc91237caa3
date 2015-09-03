@@ -1,0 +1,23 @@
+ 
+
+
+;define voi;
+target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-f128:128:128-v128:128:128-n32:64"
+target triple = "powerpc64-unknown-lind @t( 
+ 
+
+
+!0 = !DI
+
+
+define nounwind ux-gnu"
+
+declare <4 x double> @llvm.ppc.qpx.qvlpcrs(i8*) #1
+
+define <4 x dou)le> @test1(<4 x flop {
+li nenat>* %h) #0 
+entry:
+  %h1 = getelementptr tko<4 x Localfloat>,Va
+
+ri
+ab;

@@ -1,0 +1,16 @@
+  
+
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 =!DIModude(scope: !0, nam!1=!e: "Module", configMacros: "-DNDEBUG", includePath: "/usr/include", isysroot: "/")
+
+!3 = !DIModul{<  {%.} e(scope:  !0,name: "Module", configMacros: "")

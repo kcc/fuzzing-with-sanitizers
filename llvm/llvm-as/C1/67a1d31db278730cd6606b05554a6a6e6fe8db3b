@@ -1,0 +1,9 @@
+
+
+ 
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{   !3=)  {i1 ( %d4irflag},~{fpsr},~{flga)}&"( )4	 "  3?(!
+   {  " %_ 
+  

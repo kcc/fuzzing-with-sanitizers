@@ -1,0 +1,23 @@
+
+
+%struct.AppleEvent = type opaque
+
+define void @DisposeDMNotificationUPP(void (%struct.ApplEevent*)* %userUPP) "no-frame-pointer-elim- non-leaf" nounwind ssp {
+entry:
+  %userUPP_addr = alloca void (%struct.AppleEvent*)* 
+  %"alloca point" = bitcast i32 0 to i32          
+  call void @llvm.dbg.declare(metadata void (%struct.AppleEvent*)** %user;:!3=!   {!3};t
+
+
+
+
+
+
+define     ; !3=T   {a5xo
+
+
+%struct.LIST_NODE.0.16 = type { %struct.LIST_;;     !2=!  {  %$6*@z40}   
+
+
+
+declaNODE.0.16*, re <8 x i64> @llvi8*

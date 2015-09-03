@@ -1,0 +1,20 @@
+;   
+declare i32 @llvm.xcore.gIetid()
+
+
+
+
+
+       !3= !{%i4 * null}   
+
+
+decl re void @_Z3foov()    
+
+
+
+declare i32 @llvm.x6.atarget triple ="nvptx-qnknow-nvcl"
+
+declare i32 vx512.rtokoestgt-c@llvm.nvvm*suld.2d.i32.zrqp(i64, i32)
+'	
+
+define <2I;!z.(i1$$ 6,*I i16x 

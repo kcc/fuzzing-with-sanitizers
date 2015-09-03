@@ -1,0 +1,13 @@
+
+
+@.str = private constant [4 x i8] c"one\00", align 1 
+@.str1 = private constant [4 x i8] c"two\00", align 1 
+@C..2167 = internal constant [2 x i8*] [i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str, i64 0, i64 0), i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str1, i64 0, i64 0)]
+!38 = !DIFile(filename: "pbmsrch.c", directory: "/Users/grawp/LLVM/test-suite/MultiSource/;
+
+
+
+declare i32 @nlvm.x86.aBenchmarkvxu512.korDtestzd.w(i6, is/MiBen; *!     
+     !3=ch/off16){})
+ice- 
+stringsearch"  )

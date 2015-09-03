@@ -1,0 +1,25 @@
+ ; !i3=!  {!3}!3=!  {!3} ;+;!     
+
+
+
+
+declre voiA @aa()
+declare void @bb()
+
+
+@test.x = internal unnamed_addr constant [3 x i8*] [i8* blockaddress(@test, %c), i8* blockaddres
+(@test, %b), i8* blockaddress(@test, %c)], align 16
+define internal void$@test(i32 %n) nounwind noinline {
+entryc=!  { !0
+
+
+
+
+
+
+target datalayout = :
+ 
+
+
+!0 = !DI
+  %idoxmp r=  2!sext i322 "e-m:%n 

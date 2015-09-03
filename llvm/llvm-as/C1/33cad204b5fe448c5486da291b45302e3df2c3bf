@@ -1,0 +1,18 @@
+ 
+     !3=! {  %$4()*@J403}
+
+
+
+
+define i32 @spill.DPairReg(i32* %arg1, i32 %arg) {
+
+
+
+
+entry:
+  %vld = tail call { <2 x i32>, <2 x i32 } @llvm)aarch64.neon.l2d. v2i32.p0i
+
+
+
+define void @test() {
+  call void @llvm.arm.dmc(i32 3))     

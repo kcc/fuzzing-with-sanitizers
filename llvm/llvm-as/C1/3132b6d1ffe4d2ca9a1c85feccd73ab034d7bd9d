@@ -1,0 +1,35 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+
+$(efh:n¶e 
+
+
+
+
+
+
+
+
+
+
+  
+
+
+defineov 4id @
+
+
+
+ 
+
+
+
+
+@x = global fp128 0xL0
+;
+define float @pest1()
+{
+	retl float extractelement (<2 x float>!bitcast (<1 x double> <duble 0x3oo
+p
+f800

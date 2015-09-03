@@ -1,0 +1,6 @@
+ !2=! {i1 2, !3} 	(-!3=!  {!3 }    !2=! {  %4*@8}  ; !3=!  { *z $; @%
+
+
+declare void @llvm.metadata(metadata)
+
+defin

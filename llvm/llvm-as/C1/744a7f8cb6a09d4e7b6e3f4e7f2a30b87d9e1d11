@@ -1,0 +1,14 @@
+  ! 6=!{!"= !{ 3!H4
+
+
+
+
+
+
+declare i64 @llvehm.xagon.S2t-c.a..iPsp (i6 ",!3}, i32)%s3 =type%.
+
+
+define ptx_device i32 @test_0tid_x() {;
+
+	%x = call i32 @llv!m.ptx.read.htd.x()
+	ret

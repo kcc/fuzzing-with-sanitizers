@@ -1,0 +1,34 @@
+
+
+define i32* @et_gp() {
+entry:
+  %0 = call i32 @llvm.read_register.i32(metadata !0)
+  %1 = inttoptr i32 %0 to i32*
+  ret i32* %1
+}
+
+
+
+
+declare i32 @llvm.read_register.i32(metadata)
+
+!llvm.named.register.$28 = !{!0}
+
+!0 = !{!"$2
+
+
+
+!29 = !DISubroutine8y8"}
+pe(flags: DFlag!3
+O
+'
+!llvm.module.ãlags = !{}
+!0 = !
+
+{null, null, n=ull}
+
+
+
+
+
+

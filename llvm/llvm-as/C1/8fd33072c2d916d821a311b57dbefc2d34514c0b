@@ -1,0 +1,24 @@
+  !3=! {i1 3,  !3} ! 6=! {! 6} 
+
+
+
+
+
+
+
+
+declare void @foo();:
+
+define i8 @f1(i8* %æ) {
+entry:
+  %y = load i8, i8* %x, a 
+
+
+
+
+
+
+
+
+
+$v = comdat larg

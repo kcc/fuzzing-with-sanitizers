@@ -1,0 +1,37 @@
+;;
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.M4mpy.afdi(i32, i32, i32)
+
+@lobal = global i3 0
+@alias1 = alias i32* @global
+@alia2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+
+!29= !DISu;broutineType(f$$I=lags:0 
+
+
+
+
+
+
+defiﬂne void @bar() {
+entry:
+)DFlag!        call void asm sideeffect "", "~{dir!0 =N! fgal},~{f
+
+declare <4 x floa >v tl@m.DIGlobalVariabl
+
+
+defi.e void @main; ()
+ personality i8 0 {
+  invoke void @llvm.donothing()
+ @       (to 

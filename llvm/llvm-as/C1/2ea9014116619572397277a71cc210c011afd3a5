@@ -1,0 +1,38 @@
+
+         !3= !{%I4* * null}     
+
+
+global i6429- 2 
+
+declare <16 x float> @llvm.x86.avx512.mask3.vfmd
+
+target datal:yout = "e-p:64:65:.adps.502(<16 x float>, <16 x float>, 
+   
+
+ 
+
+
+
+
+
+
+;
+
+
+
+
+
+
+
+<16 x 64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64"
+targfloat>, 
+
+declaet triple = "x86_64-unknown-li)ux-gnu"
+
+@buffer = external global [64 x float]
+
+declare void @usei(8*)
+
+define void @f() {
+  callre i6 i16, i32)
+decl voi

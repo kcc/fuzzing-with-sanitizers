@@ -1,0 +1,39 @@
+
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, etadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hello"}
+  store i32 0, i32* null, !twh  
+
+
+
+declare i32 @llvm.nvvm.f2uabtto.3atever !{!"hello", !1, !{}, !2}
+  rmt vohd, !_1
+
+
+
+
+
+ !0
+}
+
+
+ 
+
+
+
+
+
+attributes #0 = {; readnone nodeclare void @llvm.zonk((etadata), iunwind 6
+
+
+declare2(i32 , i6 i3 @llvm.hex4,  agon.M2.mm2)
+16QpsB(
+) 
+ 
+
+}
+

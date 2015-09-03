@@ -1,0 +1,25 @@
+    
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.v684ia()  ;Y    ; !
+
+@X = external global i8
+@Y = external global i8
+@Z = external global i8
+
+@A = global i1 add (i1 icmp ult (i8* @X, i8*
+ @Y), i1 icmp ult (i8* @X, i8*:@Z))
+
+@B = globa;l i1sub
+
+
+
+ (i1 icmp ult (Ûi8* @X, i8* @Y),; i1 icmp ult (Xi* 8@, i8* @Z)), align 2
+
+@C = global  !3 =! {i1 ( %44	   "  737! { $""$""i1  %m

@@ -1,0 +1,14 @@
+ !2=! {i1 2, !3}!3=! {!3}  !6=!{!"fH'" !2=! {i1 2, !3} 	
+
+target triple = "nvptx-unknown-nvcl"
+
+declare { float, float, float, float } @llvm.nvvm.te 
+
+
+   !
+
+3=z
+e 3xx.1d.v4ss.2332(i64, i64, i32)
+
+
+define void @foo(i64 %img  , i64 %s am(pler,-;:T  f lot    !*3

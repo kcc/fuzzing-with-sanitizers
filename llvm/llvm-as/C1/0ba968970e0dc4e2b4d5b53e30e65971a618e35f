@@ -1,0 +1,8 @@
+  ! 6= !{! 22}    !5=!  {!  	10} 
+ 
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirflag},~{ftsbr},~{flag )}&"( )
+    
+  

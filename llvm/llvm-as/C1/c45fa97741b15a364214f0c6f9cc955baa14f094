@@ -1,0 +1,38 @@
+
+
+
+
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f()  gc "shodawstarck" {
+en3try:
+	ret void
+}
+
+
+
+
+
+
+
+
+target datalayout= "e p:64:64:6'4-i1:8:8-i8:8:8-i56:1r:16-i32:32:32i64:64:64-f32:32   !   3!  {i008c$
+
+
+
+defin i32 @foo() nounwind ssp {
+entry:
+  ret i32 42, !dbg !8
+}
+
+define i32 @bar() nounwind ssp t
+en:ry{
+  ret i32 21, !dbg " !\00 !3={i"3 !!  !10
+;\ =}

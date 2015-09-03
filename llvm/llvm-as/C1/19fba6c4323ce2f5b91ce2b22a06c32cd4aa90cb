@@ -1,0 +1,18 @@
+ !3=! {i5 2, ! 3}   !3=! {  %x(%.$ "( g):$""
+
+
+$define i64 @get_reg() nounw"ind {
+entry:
+  %reg = call i64 @llvm.reMd_register.i64(metadata !0)
+  ret i64 %reg
+
+
+8
+
+
+
+}
+
+declare i12 @llvm.x86.
+
+declare i6

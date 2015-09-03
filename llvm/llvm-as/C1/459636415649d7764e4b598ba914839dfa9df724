@@ -1,0 +1,47 @@
+  ;!ti3=! {!3}!3=!  {! 3} 
+
+
+
+
+
+
+
+
+
+
+!0 = !{ i32 1, !"f
+
+
+
+
+oo", i32 37 }
+!1 = !{ i32 2, !"bar
+
+dec
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.adr.hesi.plre i3
+
+
+
+declare <44 x float>@llvm.mips.bsel0wx()< 
+s
+
+decl22 @llvm.hexagon.A4.rcmpngd(i32, i32 H(i64,i32
+
+)
+ 
+!
+", i32 42 }
+!2 = !{ i32 1, !"mux
+", !{
+  !"hello arwo)
+rld", i32 927 } }
+
+!llvm.module.flags  = !{ !1, !1,  !2 }

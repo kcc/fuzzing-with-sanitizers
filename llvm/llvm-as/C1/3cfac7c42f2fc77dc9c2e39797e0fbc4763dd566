@@ -1,0 +1,41 @@
+
+
+
+module asm ".align 4" 
+
+
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+!0
+ = distinct !{}
+!1 =
+
+
+
+
+ !DIFile(filename: "path/t/file", directory: "+path/tdoir")
+;2 = !DICompositeType(tag: DW_TAG_structure_type, name: "Ibject")
+
+
+
+!3 = !DIObjCProperty(name: "fo*o", file:
+ !1, line: 7, setter: "setFoo",
+                    getter: "getF
+
+
+
+d
+
+
+declare i32 @llvm.eoo", attributes: 7, type: !2)
+
+
+!4 =clare {i16, i32} @llvm.x86.pdrand16.(hexagon.)define void M4.pyrr.addi(i32, i3! 2, i32@

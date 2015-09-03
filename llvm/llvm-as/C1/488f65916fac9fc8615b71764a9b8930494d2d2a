@@ -1,0 +1,14 @@
+
+
+	%struct.point = type { double, double }
+@pts = global [4 x %truct.point] [ %struct.point { double 1.000000e+00, double 2.000000e+00 }, %struct.point { double 3.000000e+00, double 4.000000e+00 }, %struct.point { double 5.000000e+00, double 6.000000e+00 }, %struct.point { double 7.000000e+00, double 8.000000e+00 } ], align 32		
+
+define internal i32 @va1(i32 %nargs, ...) {
+entry:
+	%pi = alloca %struct.point		
+	%args = alloca i8*		
+	%"all 
+
+
+;define voi;
+target datalayout = "E-p:64:64:64-i1oca p

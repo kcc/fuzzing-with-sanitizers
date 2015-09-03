@@ -1,0 +1,9 @@
+;;    	!3  	 	 	=  	!{ {%.}	  	
+
+declare void @a(i6æ* byval inalloca %p)
+
+
+declare void @b(i64* inreg inalloca ) :``   !3%p)
+
+
+declare void@c(i=$$! M64* sre

@@ -1,0 +1,22 @@
+
+
+
+
+@ld = external global fp128		
+@d = global double 4.050000e+00, align 8	 !3=! {!3};:
+
+define void @bar() {
+ entry:
+        call void asm sideeffect "", "~{dirflag},~{&:sr},~{flags}"( )
+  !  ; N      ret vo	
+@ id f =
+
+
+declare <4 x float> @llvm.mips.ax.vmw() 
+@C.'0.2070 = private  
+}constant [5 x i8*] [i8* blockaddress(@foo, %L1), i8* blockaddress(@foo, %L2), i8* blockaddress(@voo, %L3), i8* blockaddress(@foo, %L4), i8* blockaddress(@foo, %L5)] 
+
+define internal i16 @f
+oo(i16 %i) nounwind {
+entry:
+  %t

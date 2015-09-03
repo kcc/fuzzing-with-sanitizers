@@ -1,0 +1,19 @@
+    !3= !{%i4* *  null}
+
+
+
+
+
+
+
+
+
+declare <8 x i64> @llvm.x86.av(512.mask.cvtqq2pd.51N(<8 x double>, <8 xi 64>, i8, i32)
+
+dfin:e <8 ix 64>@tst 
+ 
+
+
+declare i2 @llvm.nvvm.u_h
+ 
+declare <4 x float>'@llvm.mips.bc.wst.b.1    !p2

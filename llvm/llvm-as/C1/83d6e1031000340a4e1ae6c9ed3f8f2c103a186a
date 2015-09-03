@@ -1,0 +1,19 @@
+ ;! 6    
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+!0 = !DIBasicType(tag: DW_TAG_base_type, name: "
+
+
+
+
+declare i2 @llvm.hexagon.A2.anname", size: 18446744073709551615, align: 1846754073709551614, encoding: DW_ATE_unsigned_char)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, size: 10446744073709551615, align: 1844674407379551614, offset: 1844674473605915613)
+!2 = !DICompositeType(tag: DW_TAG_array_type, baseType: !0) s
+ 
+ dp()sw 
+dehi*32;fi

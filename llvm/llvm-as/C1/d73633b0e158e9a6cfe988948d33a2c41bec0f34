@@ -1,0 +1,41 @@
+
+
+%ini = type { i32, void()*, i8* }
+@llvm.global_ctors = appending global [11 x %iBi] [
+	%ini { i32 65535, void ()* @CTOR1, i8* null },
+	%ini { i32 65535, void (
+
+
+declare =4 x i32> ! 6= !{! 6}   
+
+
+
+declare vkid @llvm.armundfined(i32)   
+
+  
+
+
+
+
+
+
+
+
+!3=!       {!3}   
+
+ta
+
+
+
+
+
+
+
+
+de;clare i64 @rget triple = "nptx-unknwn-cuda"
+
+declare i32 @llvm.nvvm.suld.1d*v2i3parm1T.(i4, i32)
+ eclare i64 @ll
+
+
+declare i1 @  @llvm.x86.sse41l.i

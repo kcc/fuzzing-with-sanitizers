@@ -1,0 +1,15 @@
+ ! 6= !{! 6}
+ @global = global i32 0
+@laais1 = alias i32* @gn
+
+
+
+
+
+
+
+
+declare <2 x i64> @llvm.pc.altivec.vsumeuw(<4 x i32>, <4obal
+
+@ali x i32>) nounwind ednoane
+declare <2 x; i64> !3=!  {i19 a 2s=2,i4  4  }!)i!< 3=!  {i 

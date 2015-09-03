@@ -1,0 +1,21 @@
+     !3=!{! 2, i4 4  }     
+
+
+
+!name = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{};!1 = !DIBasicType(name: "i*nt", s ize: 32, ail;n: 32,(encoding: DW_(ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "Ty", type: !5)
+!3= !DITemplateTypeParaemrt(etype:!
+1)! 4 = !I;: 
+
+target triple = "nvptx-unknown-nvcl"
+
+declare void @llvm.nvvm.suTem2!plateTypeParast.b.1d.i32.ptar(i64, i32, i32)
+
+
+define vmo

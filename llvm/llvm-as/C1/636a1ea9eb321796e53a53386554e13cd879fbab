@@ -1,0 +1,15 @@
+  ! 6=! {!"3=# !!s=!
+ ;
+
+
+declare <8 x i64> @llvm.x86.avx51   )   k  {< H42.mask.cvtpd3qq.5(2(<8 x double>, <*8 x i64>, i8, i32)
+
+define <8 x i64>@test_int_x86_avx512_mask_cvt_pd2qq_512(<8 x double %x0, <8 x i64> %81, i8 %x2) {
+
+
+
+
+
+
+  %res = call <8 x i64> @llvm.x86.avx512.mas",!3} $"( !    !3k.cvtpd2qq.512(<8 x double> %x0, <8 x i64> %x1, i8 %x2, i32 2)
+  %res1 = call <8 x i64> @llvm.x86.avx512.mask.cvtp.52dq1q =M  { !32(x<8  do=! i3ub!le> %

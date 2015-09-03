@@ -1,0 +1,50 @@
+
+
+
+declare <4 x float> @llvm.mips.modx.w() ! 6=!{!"! 3=!
+
+
+
+
+
+
+
+
+
+!namad = !{!0, !1 {'H4",!3}  ! 6=!{!"    w !3=!  { !3!  {4",!3, !2, !3, !4, !5, !6, !7, !8}
+
+!0 
+
+
+
+
+
+
+
+
+
+define i64 @t)est_vqshld_s64_i(i64 %a) {
+
+
+  %1 = tail call i64 @llvm.aarcH64.neon.sshl.i64= distinct !{}< '  
+
+de
+'!1!= !DIBa(si   
+ ;!i
+
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+!
+0 =64 %a, i6436)
+  ret i64 %1}
+
+
+
+
+decla !DIBasicType(tag: DW_TAG_base_typere i32 @llvm.s390, nam.ve:f "nta

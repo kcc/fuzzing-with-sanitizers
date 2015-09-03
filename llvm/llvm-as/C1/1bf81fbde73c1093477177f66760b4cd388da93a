@@ -1,0 +1,29 @@
+ 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align F
+
+
+
+
+
+
+
+define float @test1()
+{
+	ret float global i32 36 70016
+
+
+
+®xext'=gob lal !0ractelement
+
+()
+
+x
+mDfE;xPi  !3= !  {%
+
+L 5* *@4 +

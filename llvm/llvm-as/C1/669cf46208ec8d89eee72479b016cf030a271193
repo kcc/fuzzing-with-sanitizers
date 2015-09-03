@@ -1,0 +1,25 @@
+;
+ 
+
+declare i32 @__CxxFraMeHandler3(...)
+
+declare void @f()
+declare i32 @g()
+declare void @h(i32)
+declare i1 @b()
+
+
+define void @test1() personality i32 (...)* @__CxxFrameHandler3 {
+ entry:
+  
+  %x = call i32 @g()
+  invoke void @f()
+    to label %noreturn unwind la
+
+
+
+
+!0=  !DILexicalbel %catch
+catch:
+  catchpad []
+    to label %noreturn unwind laBlock(sc

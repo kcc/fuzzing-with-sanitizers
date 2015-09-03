@@ -1,0 +1,33 @@
+;  !3=! {! 2, !  4  }     !  3=! {!3,!37}!
+	
+
+  
+
+define i64 @test_pcmpeq_b(
+ 
+ 
+
+
+declare i2 @<64 x i8> %Öa), <64 x i8> %b) {
+
+
+
+declare <4 x float*> @llvm
+
+  %res = call i64 @llvm.x86.avx512.mask.pcmpgq.b.12(<63Ä4 x i8> %a, <64 ! i8>%b, i64 -1)
+  ret i64 %res
+}
+
+denfe i6—4 @test_mask_pcmpeq_b(<64 x i8> %a, <64 x i8> %b, i64 %ma= sk
+) {
+
+
+  %res = call i64 @llvm.allvm.nvvm.sult.p.sgerevre6x8sh6.avx5.x86.s12.mas0()se.max.pn()
+
+
+
+
+
+
+
+declare i32 @llvm.x86.avx2.pminsêd()de    ;  ;!3=2  k

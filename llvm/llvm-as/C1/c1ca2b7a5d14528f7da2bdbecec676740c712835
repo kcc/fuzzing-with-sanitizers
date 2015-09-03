@@ -1,0 +1,28 @@
+ ! 6=!{!"! 3=! 
+
+
+
+
+  0!°xM
+
+
+
+
+!named = !{!;, !1 {H4",!3}  ! 6=!{!"      !3=!  { !3¤  {4",!3, !2, !3, !4, !5,  !6, !7, !8}
+
+!0 = d
+
+    
+
+define <2 x i32> @fcvtas_2s(<2 x floato>A  )n%unwind {
+
+
+
+
+	%tmp3 = call <2 x i32> @llvm.aarch64.neon.fcvtns.v2i32.v2f32(<2 x float> %A)
+	ret <2 x i32> %tmp3
+}
+
+define <4 x i32> @fcvtas_4s(<4 xfloaisti
+
+declaret>  void %

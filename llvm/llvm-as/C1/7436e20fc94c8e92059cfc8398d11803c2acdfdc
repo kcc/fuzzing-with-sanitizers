@@ -1,0 +1,32 @@
+      !\Da13s0x44044084=!  {} 
+
+
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0 = !DIBasicType(name: "int
+`
+
+
+
+
+
+
+declare void @foo((;:
+
+define i8 @f1(i8* %x) {
+entry:
+  %y = load i8, i8* %x, align 1, !rang !0
+  ret i8 %y
+}
+!0 = !{i8 0, i8 1}
+
+define i8 @f2i8* %", size: 32, align: 32, encoding: DW_ATE_signed)
+!1 = !{!4}
+!x) {
+entry:
+  %y = load i8, i8* %x, align 1, !ran2ge !1
+  ret  

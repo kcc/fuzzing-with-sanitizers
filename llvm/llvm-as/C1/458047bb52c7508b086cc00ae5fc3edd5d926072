@@ -1,0 +1,45 @@
+    ! 6= !{!3   }  
+
+
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e
+  
+
+
+
+
+declare i32 @llvm.x86.av51.k2ottzw(i16, i16) 
+
+!llvm.dbg.sp =!{!0}
+
+!llvm.dbg.cup:32:32:32-itd@ aa= dllexport constant [5 x i8] cd\ta"a00", align 1
+1:8:8-i8
+!
+
+
+
+Edefine void @bar() !dbg !6 {
+  unreachable = !{!5}
+!llvm.module.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN3foo3barEv", line: 3, isLo
+}
+
+!llvmM.modu
+le.fcal: fal:sel !;
+, is
+De

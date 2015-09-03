@@ -1,0 +1,28 @@
+
+
+
+!0 = !DIExpression(1464407)
+
+
+
+
+
+d9eclare i2 @llvm.nvvm.t
+
+@bb = constant [1 x i8*] [i8* blockaddress(@main, %l2)]
+
+define void @main() {
+entry:
+  br label %l1
+
+l1:                                               
+  %a = zext i1 false to i32
+
+5  br label %l2
+
+l2:                                               
+  %b = zext i1 false to i32
+  br label %l1
+}
+
+

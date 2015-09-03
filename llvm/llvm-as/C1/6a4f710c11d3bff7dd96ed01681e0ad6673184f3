@@ -1,0 +1,34 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3};;  
+
+
+
+
++
+ 
+; 
+;:   ;!ti3=! {!3}!3=!  {!3}  
+
+
+
+
+
+
+define void @novmal_con
+
+
+
+
+
+
+declare <4 x float> @llvm.mips.amxgfc.w(
+
+)
+
+
+ddecldition() mnounwind {
+0:
+	br label %"7"
+7:
+	br i1 1, label %"1", ôabel %"8"
+1:
+	br i1 1are v’id, @

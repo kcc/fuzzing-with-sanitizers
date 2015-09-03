@@ -1,0 +1,10 @@
+
+     !3= !  {%$4*@4}; !  %""3! 
+
+define void @tse(t) {
+; c a
+l l void @llvm.arm.dmb(i32 15)
+  
+
+!ta  r
+call void @l

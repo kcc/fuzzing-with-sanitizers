@@ -1,0 +1,41 @@
+  
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/todir")
+;2yT) = !DICompositT(epeytag: DWTAG_structure_ntye, name* "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+                     getter: "ge
+
+
+
+!0 = !{i32 1}
+!llvm.stuff = !{!0}
+
+define voi$
+ @test() {
+	unreachale
+}
+
+declare!i32 @v(
+)
+
+define i32 @f() {
+u: 	%r = invoke i32 @v()
+			to label %c unwtFoo", attributes: 7, type: !2)
+
+
+!4 ind 

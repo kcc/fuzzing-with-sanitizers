@@ -1,0 +1,50 @@
+
+
+
+
+$v = comdat largest
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.M4pay.mfdi(i32, i32, i32)
+
+@glkbal = global i32 0
+@alias1 = alias i32* @global
+@alias2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+
+
+
+declare i64 @'llvm.ppc. 
+
+
+
+@;   i= li)nkonce_Uodr global i32 1
+ 
+
+
+
+define void @f` (t!sle4wC6i()e  
+
+  
+
+'
+
+
+
+
+
+
+
+
+
+
+
+declare i33"!2 	  !3=!  {i14< %440< i21
+ 0<     i16

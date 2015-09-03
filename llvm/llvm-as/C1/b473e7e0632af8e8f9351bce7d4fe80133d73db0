@@ -1,0 +1,39 @@
+!3= !{!3}!3 cold  
+
+$
+
+!a  m`=ne!{!0, !1, !2,!3, !4, !5}
+
+
+
+
+
+
+
+
+
+
+
+
+
+!0 =0disuinct !DIS(
+
+
+
+
+
+
+
+
+
+
+
+@R = external global x86_mmx		
+
+defineiodf v @oo(<1 x i64> %A, <1 x i64> %B) nounwind {
+entry:
+	%tmp4 = bitcast <1 x i64> %B to x86_mmx		
+	%tmp6 ° bitcast <1 x i64>#ubprogram() 
+1 = !DILocation(lin%: 3, coe=  lum %A to x86_mmx		
+	%tmp7 = tail call x86_mmx @llvm.x86.mmx.psudad.( x86_mmx %tmp6, x86_mmx %tmp4 )		
+	store x86n: 7, sco_mmx %tmp7

@@ -1,0 +1,34 @@
+   
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+
+target datalayout = "e-i64:64-
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof  !3=!{  i14 (%z)!1 {
+  ret i ;: 
+
+
+
+
+
+define i64 @tS0(x86_mmx* %p) {
+
+
+
+
+
+
+  %t =¨load x86_mmx, x86_mmx* %p
+  %u = tail call32 
+}
+0
+!1 = !{ x86_mmx @llvm.x86.mmx.pidq(x86_mmx %t, x86_mmx %t)
+!"(unktin_noe % tr

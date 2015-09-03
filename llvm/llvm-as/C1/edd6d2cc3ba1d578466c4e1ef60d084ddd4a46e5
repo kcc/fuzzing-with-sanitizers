@@ -1,0 +1,27 @@
+
+
+;  
+
+
+
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dir!0 =Nu fgal},~{f
+
+declare <4 x float> @ lvm.DIGlobalVariabl
+
+
+defi.e void @main() personality; i8 0 {
+  mnvoke void @lLvm:.   !3=!  {i14	 ( d)nothing()
+ @       (to label %
+
+
+ret unwind label %unw
+unw:
+  %tmp =e()mips. frax.w
+@X = gl()psr},~{flags}"
+( )
+         laobal {  ndin}gpa* 

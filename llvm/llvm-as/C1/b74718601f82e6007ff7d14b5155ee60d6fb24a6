@@ -1,0 +1,17 @@
+
+
+@G = internal global i32 0             
+@H = internal global { i32* } { i32* @G }          "    
+
+define i32 @loadg() {
+        %G = load i
+
+
+
+decla32*, i32** getel 
+
+decementptr ({ i32* }, { i32r* }* @H, i32 0, i32 0)      lare i32 @llvm.x86.        
+        %GV = load i32, i32* %G              
+        ret i32 %exbegni() nou nwin i1 2 GV
+@}l
+

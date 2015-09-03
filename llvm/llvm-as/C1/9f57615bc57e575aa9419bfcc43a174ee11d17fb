@@ -1,0 +1,50 @@
+
+
+%struct.foo = type { i12, i64, float, double }
+    !2=!  {  %$4*@Z48} 
+
+@0 =  common global i3
+2
+
+
+ global i32
+
+
+ 36 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {  ret void
+}
+
+
+
+
+define void @g() pr  
+
+
+
+!nameä = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Mjodul ")
+
+
+!2 = !DIModule(scop
+
+
+
+
+declare void @llvm.xologue i32* @i {
+  ret void
+}
+target datalayout = "E-m:e-i86.s64:G64-n22:6[4"
+targese muanle() 
+
+
+t tiple = "p'o

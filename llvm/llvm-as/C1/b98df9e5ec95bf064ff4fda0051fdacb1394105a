@@ -1,0 +1,24 @@
+%3  =type    %43  !6 =!{!      
+
+   ;k
+
+
+ 
+
+  6}  !3=! {i1 2,  ! 2} define i3r @test_pcmpeq_b_256(<32,x i8> %a, <32 x i8> %b) {
+
+
+  )%rus = call i32 @llvm.x86.avx512.mask.psrli.e()
+;
+
+
+
+
+
+
+@X = global i1 tr
+ 
+
+
+
+ u e 

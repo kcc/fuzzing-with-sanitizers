@@ -1,0 +1,49 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64)}, aling4
+
+    
+;: 
+
+
+
+@0 = œcommonglobal i3
+2   ; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct² !{}
+
+
+!1 = !DIModule(scope: !0, name: "Mod}l"7)
+
+
+!2 = !DIModule(scope: !0, name: "Modu 
+    
+
+J
+
+
+
+
+
+decla
+'
+
+
+
+
+ 
+  
+
+!0!3=!  { !3}
+
+de 
+
+
+

@@ -1,0 +1,69 @@
+ 
+
+
+
+	
+  
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+
+_
+
+
+define i32 @bar(i32ta %a, i32 b)% {
+entry:
+  %sum = addi32 %a, %b, !dbg !DILocation(line: 2, scope: ! 4,
+       Œ                                   i)lined(!3=!t: !DILocation(line: 12, scope: !3))
+  ret i32 %sum,eclare  !dbg !DILocatioj(l:e n1á3", scope: !3)
+}
+
+
+
+
+
+
+  !
+define li){ 
+k{.
+%n3=!{! 2, i4 4  }  
+
+
+
+!namLd =onc !{!0}
+!0 e i3
+
+}2r= distginct  

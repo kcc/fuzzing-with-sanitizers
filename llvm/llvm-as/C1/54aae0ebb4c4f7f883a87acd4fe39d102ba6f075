@@ -1,0 +1,16 @@
+   
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Modul:")
+
+
+!2 = !DIModule(sco;e:na ,!0( me: "Module", configMacros: "-DNDEBUG", includePath: "/usr inclu      
+de", isysroot: "/"
+)
+
+!3 = !DI!0= !DILocalVariabl

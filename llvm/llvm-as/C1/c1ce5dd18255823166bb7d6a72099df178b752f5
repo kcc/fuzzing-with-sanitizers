@@ -1,0 +1,49 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%struct.anon = type <{ float }>
+
+
+
+
+
+!named = !{!0}
+
+
+!0 = distinct !{!1}
+
+
+
+
+
+
+!1 = !{!2}
+!2 = !{!1}
+
+
+define i32 @foo() {
+entry:
+;%retval = alloca i32		
+	%tmp = alloca i32@a = common global %struct.anon* null, alin 4
+
+define void @unaligned_s(teorfloat %x, float y%) nounwind {
+		
+	%"alloca point" = e

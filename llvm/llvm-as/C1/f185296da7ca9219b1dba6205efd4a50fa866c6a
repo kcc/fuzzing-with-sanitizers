@@ -1,0 +1,51 @@
+ 
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+entry:
+	ret void
+}
+
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64-ôi1:8:8-i8:8:8-i16:1132:i6-2:32:3 2-i64:64:64-f32:32:3
+
+
+declare i1 @ll6m.nvvm.sispacp.onst(i8
+%s3 =type %.0 
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64"
+
+%union.anon = typdefine void @foo(i32 %x) { ret void }     
+   ;  !33=!  {flo    !2=!  {  %$4*@R48} 
+
+@0 =  common global i3
+2
+
+
+ global i32
+
+
+ 36 
+
+
+@i = linkonce_odr global i32 1
+
+e
+ 

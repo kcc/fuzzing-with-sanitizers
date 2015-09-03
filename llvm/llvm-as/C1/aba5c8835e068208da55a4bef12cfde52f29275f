@@ -1,0 +1,56 @@
+
+	
+
+;: ;        
+
+
+
+!naMed = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0  =distinct !{}
+!1 = !DIBasicType(name: "i>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void “foo(i64* %ptr) nounwind inlinehint {
+entry:
+  br label %loop
+loop:
+
+  %pair = cmpxchg i64* %ptr, i64 0, i4 1 monotonic monotonic
+  %r = 'xtractvalue { i64,  
+
+
+declare i32 @llvm.s39t"
+
+ 
+)
+
+
+
+
+
+
+!na0.vmaen(i8) *
+
+
+define voii1 } %pair, 0
+  %stored1  = icmed =mp eq i64 %r, 0
+  br i1 %stored1, label %dloop, l !{!0, !1, !2}
+
+
+
+ab
+!0 = !DIBasel %coni

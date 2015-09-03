@@ -1,0 +1,48 @@
+ ! 6=!{!"! 3=! 
+
+
+
+
+
+
+
+
+
+!named = !{!0
+
+
+
+
+
+
+declare void @llvm.AMDGPUbarrier.local() nodup;li,
+
+
+
+
+
+define void @foo() #0 {
+  ret v !1 {H4",!3}  ! 6=!{!"     w !3=!  { !3!  {4",!3, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+'!1 = !DIBasicType(name: "int", size: 32, lgian: 32, encoing:( DW_ATE}_signediToid
+}
+
+
+attributes ¼#0= { op
+ !8
+
+
+
+
+
+
+
+
+de
+
+
+
+!2 = !DITs(plateTypePavamettnoneer(name: "Ty"+ type!: !1)
+!3 = !DITeclarem nop i32 @llvlateTympiline }
+

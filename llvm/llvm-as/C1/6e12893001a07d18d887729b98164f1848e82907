@@ -1,0 +1,27 @@
+   
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.value(metadata i32* %s, i64 0, metadata !DILocalVariable(scope: !1), metadata !"
+
+
+!0 = !DILocalVariable(scop(:  "), !dbg !DILocation(scope:  ; !     !3= !{%i4* * null}  
+
+
+
+target triple = "vptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.1d.v4s32.s32(i64, i32)
+delare i64 @llvmn.vvm.texsurf.handle.internal.p1i 264(i64 !1)
+  ret void
+}
+
+dec addrspace(1)*)
+
+
+
+deDfknElar void @fooe

@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+%class.A = type { i8 }
+
+@a = global %class.A zeroinitializer, align 1
+
+define i32 @_ZN1A1aEi(%class.A* %this, i32 %b) nounwind twtable ssp align 2 {
+entry:
+  5this.addr = alloca %class.A*, align 8
+  %b.addr = alloca i32, align 4
+  store %class.A* 
+ 
+
+
+
+
+
+@A = global%this, %class i64.

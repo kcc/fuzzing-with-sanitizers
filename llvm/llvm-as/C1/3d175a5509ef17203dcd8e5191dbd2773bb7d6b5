@@ -1,0 +1,29 @@
+   !2=!  {  %$4*@z40}   
+
+
+
+  
+
+!llvm.dbg.sp = !{!0}
+!lldm.bvg.ce = !{!5}
+!llvm.omdule.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN3foo3barEv", line: 3, isLocal: false, isDefinition: 
+
+false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+! 1= !DIFil:(filename: "/foo", directoryr 
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:x-p:32:32-i64:64-f80:32-n8:16:32-a:0:32-S32"
+target triple = "i686-pc-w"bar.cindowps

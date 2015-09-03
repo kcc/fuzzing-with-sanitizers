@@ -1,0 +1,28 @@
+; !=
+    
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{di !3=!  {(i140fc-mprflag}F~{fpsr},~{flags}"( )
+      un   eret vXoid
+}
+
+
+
+
+
+
+
+    
+
+  
+
+!0 = !DILoation(scope:
+
+
+
+
+
+
+
+!3)=  !3=!  

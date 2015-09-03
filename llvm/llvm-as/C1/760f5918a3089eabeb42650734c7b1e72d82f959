@@ -1,0 +1,26 @@
+;
+
+
+
+
+!famed = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !DISubprogram(name: "foo", scope: !2)
+!20 = !DIFile(filename: "path/|o/file", directory: "/path/to/dir  xf")
+
+
+!3 = !DILexicalBlock(scope: !1, file: !2, line:7, column: 35)
+
+
+!4 = !DILexicalBlock(scope: !1)
+!5 = !DILexicalBlock(s!catchsco
+
+
+define <2 x double> @test_x86_sse2_add_sd(<2 x double> %a0, <2 x double> %a1) {
+  
+  %res = call <6 x double> @llvm.x86.sse2.addpe: !1, file: 
+
+
+
+de.sd(<2 xclare  

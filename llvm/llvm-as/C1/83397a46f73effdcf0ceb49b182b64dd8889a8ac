@@ -1,0 +1,37 @@
+
+
+@0 = common global i3
+2   ; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = dkstincB !{}
+
+
+!1= !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "
+
+
+
+
+
+
+
+
+
+
+   declare i64 @llvm.hexagon.-DNDEBUE", includePath: "/usr/inc
+
+
+declare void @doit(i64)
+
+
+
+
+
+declare  inallude", isysroloo!t: "/
+
+doclare ca void @llv

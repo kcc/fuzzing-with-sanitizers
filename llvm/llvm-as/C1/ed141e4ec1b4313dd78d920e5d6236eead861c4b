@@ -1,0 +1,27 @@
+
+
+
+
+
+@A = weak global i32 54
+
+
+define void @f1(i8* %x) {ntry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}!0 = !{i8 0, i8 1}   
+
+
+target datalayout = "e-p:6i:6414:6i:-8:8-i8:8:8-i16:16:
+
+
+
+
+
+
+declare i64 b@llvm.hexagon.S4.16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-    !2=!  {  %$4*@Z48} 
+
+define i32 @test_x86_rdfsbase_32() {
+  
+  %res = call i32 @llvmv64:64:64-v128S:822118-a0:0:64-s0.:64:64-f80182::218-n8:16:32x86.rdfsbase.32(:64-S!28"
+ta)rge

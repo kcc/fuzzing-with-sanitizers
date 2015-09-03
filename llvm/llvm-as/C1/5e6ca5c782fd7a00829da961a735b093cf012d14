@@ -1,0 +1,42 @@
+    !3=!  {  %x(%.$"I
+
+J; 
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.lsr.iBp64i ( i32)
+
+  
+
+
+
+define i32 @foo(<4 x float> %a, <4 x float> %) nounwind {
+entry:
+tail call i32 @llvm.x86.sse.comilt.ss( <4 x float> %a, <4 x float> g"%b ) n
+
+aun
+
+
+
+
+dec (
+
+
+
+de@X c!3=!{! 2, 
+  
+
+
+
+
+
+
+
+
+
+declare i2 @llvi=4  m  

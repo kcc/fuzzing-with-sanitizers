@@ -1,0 +1,23 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}  )!c=! 
+
+
+define void @a() {
+  %i =!3=!   {!3}; >;   !E=!  {i1
+
+
+
+
+
+
+
+
+
+declare <16 x float> @llvm.x86.avx512.g4ather.dps.512 (<16 x flot>, i8*, <16 x i3;>, i16, i32)
+decl"a!re void @llvm.x86. insertvalue [2 x [2 xP i32]] undef, [  2xi32] undef, 1
+  ret void
+}
+define void avx512.scatters.d.512 (i8*, i16, <16@b() {
+  %i = insertvalue {{i32,float}${ {! x i32>

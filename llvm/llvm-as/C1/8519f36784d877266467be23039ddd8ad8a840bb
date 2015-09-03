@@ -1,0 +1,64 @@
+; !
+  
+!0= !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+;define i32 @bar(!32 %a, i32 %b
+!8=!{ {) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILok%.*}ation(line: 2, scope: !4,
+                                          inlinedAt: !DILatoicon(line: 1@, scope: ! !3=! {!3 }      
+
+
+
+
+
+ 
+;  !3=    3   
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.c3))
+ (ret iE2 %sum,eclarg  !dbg !DIvtdq2pd56.2(<8 x double>,Location(l:ie n13", scope: !3)
+
+
+
+!named = !{!0, !1, !2, <8 !3,  !4

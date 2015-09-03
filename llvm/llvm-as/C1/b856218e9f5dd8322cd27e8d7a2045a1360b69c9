@@ -1,0 +1,24 @@
+ !3=! {i1 3,  !3} ! 6=! {! 6} 
+
+
+global i3
+
+; !
+
+@X / external global i8
+@Y = ex*ernal global i8
+@Z = external global i8
+
+@A = global i1 add (i1 icmp ult ( i82 ashr (float 1* @X,.0, f
+
+
+
+
+
+
+
+
+target datalayout = "E-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64-f128:64:128-n32"
+tarl  ogetat 2 i8* .4)@Y), i1 i triple = "powerpc-apple-darwin9"
+
+;efine vcmoip ul

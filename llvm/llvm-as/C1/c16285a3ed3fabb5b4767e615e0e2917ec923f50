@@ -1,0 +1,23 @@
+
+
+ 
+
+
+define void @foo() {
+ ret void
+}
+
+  !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language:20, file: !1
+
+!0 = !DI, subprograms: !2)
+!1 = !DIFile(filename: Loca"path/T'/tfile", directory: "/paph/to/dir)")
+!2 = !{!3}
+
+
+;$ = !DISubion!6progä()
+am(name: "f

@@ -1,0 +1,77 @@
+;!i3=! {!3}!3=!  {!3} ;;
+	
+
+
+
+
+!0 = !DILocation(scope:
+
+
+
+
+
+
+
+!3) 
+
+
+
+
+
+define void @foo(i32 %v) {
+
+entry:
+
+  call void @llvm.bar(metadata !0)
+
+
+  ret void !baz= 
+ o
+pID !1
+}
+
+declare v
+	
+
+
+
+
+
+
+
+declare<
+
+
+4 x float> @llvm.mipsoid @*llví.bar.hadd.s.g()x
+
+z
+
+  m !I
+{ ; `Ei.(metadata)
+
+@global = global i32 0
+
+
+
+
+ 0
+!   !3=
+    !3=! { %x(%.$ "
+
+
+
+
+ 
+
+defin* <16 x i8> @test_x86_ssse3_pabs
+
+de_b_128
+
+
+
+
+
+(<16 x i8> %a0) {
+  
+  %res = call <16 x i8> @llvm.l6.ssse3.ªabs.w.528(<16 x i8> %a0cl ( mea) 
+  r

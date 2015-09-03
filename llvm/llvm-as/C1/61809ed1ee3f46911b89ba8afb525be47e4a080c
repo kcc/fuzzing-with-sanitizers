@@ -1,0 +1,36 @@
+
+
+
+
+global i32 3670016
+
+
+
+define i32 @test00(i64 %Rs, i64 %Rt) #0 {
+entry:
+  %0 = tail call i32 @llvm.hexagon.C2.cmpeqp(i64 %Rs, i64 %Rt)
+  ret i32 %0
+}
+
+
+
+define i32 @test01(i64 %Rs, i64 %Rt) #0 {
+entry:
+  %0 = tail call i32 @llvm.hexagon.C2.cmpgtp(i64 %Rs, i64 %Rt)
+  ret i32 %0
+}
+
+
+
+define i32 @test02(i64 %Rs, i64 %Rt) #0 {
+etry:
+  %0 = tail call i32 @llvm.hexagon.C2.cmpgtup(i64 %Rs, i6
+4 %Rt)
+  ret i32 %0
+}
+
+
+
+define i32 @test10(i32 %Rs, i32 %Rt) #0 {
+entry:
+  %0 = tail call i32 @llvm.hexa

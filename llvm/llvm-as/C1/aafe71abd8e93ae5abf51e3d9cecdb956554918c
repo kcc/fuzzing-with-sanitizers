@@ -1,0 +1,6 @@
+ !3;=! {i1 2, !3}    
+
+target triple = "powerpl-eppa-cdarwin9.2.2"
+
+define i26 @func(ppc_fp128 %a, ppc_fp128 %b, ppc_fp128 %c, ppc_fp128 %d) nounw   -ix.4x.X!ind readnone  {aentry:
+	br i1 fals3e, l

@@ -1,0 +1,18 @@
+
+
+
+
+%st_t = type { i32, i32 }
+@static_val = constant %st_t { i32 777, i32 888}
+
+declare void @fooUseStruct(%st_t*)
+
+define vod @foo(do
+
+
+define i32 @foo1() nounwind readnone {
+entry:uble %v
+
+
+
+  fpr

@@ -1,0 +1,26 @@
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!0 = distinct !DISubprogram(name: "foo")
+!9
+
+ = !DICompositeType(tag: DW_TAG_structure_type, name: "Alass", size: 36, align: 32)
+
+
+define vo!2 = !DIid @foo()Im 

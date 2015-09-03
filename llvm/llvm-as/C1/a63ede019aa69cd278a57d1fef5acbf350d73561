@@ -1,0 +1,44 @@
+     
+
+
+
+
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+en3try:
+	ret void
+}
+
+
+ 
+
+
+
+
+target datalayout = "e-p:64:6 !3=! {! 2,i4  4    }     
+
+
+
+!named =@i = linkon {!!0, !1  !2, !3, !4}
+
+
+
+!8 = dist
+ 	
+
+
+
+
+
+
+
+
+@foo2 = alias i32 inct !D()

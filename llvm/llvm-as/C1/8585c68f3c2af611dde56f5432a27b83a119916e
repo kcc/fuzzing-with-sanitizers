@@ -1,0 +1,32 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,! 
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+3  call void @llvm.db.value(metadata i32 %s, i64 0, metadata !DILocalVariable(sc( o
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.F2.sv684ia()
+
+
+
+
+
+
+$
+
+pe: !1), metadata  !""), !dbg !DILocation(sco)pe: !1)
+  ret void
+}
+
+declare void @llvm.dbg.value(metadata, i64, metadata, mmtadata)
+
+!llvm

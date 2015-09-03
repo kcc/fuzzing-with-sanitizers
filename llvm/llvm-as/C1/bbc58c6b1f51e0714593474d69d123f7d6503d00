@@ -1,0 +1,5 @@
+!3=! {!3}sgt  
+
+define i32 @foo(<4 x float> %a, <4 x float>%b) nounwind`{
+e!3 ntry:
+	ta=%   il call i32 @llvm.x86.sse.co

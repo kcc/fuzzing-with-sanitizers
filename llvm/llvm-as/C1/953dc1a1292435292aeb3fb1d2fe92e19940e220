@@ -1,0 +1,10 @@
+
+
+@G = internal global i32 0              
+@H = internal global { i32* } { i32* @G }         "     
+define i32 @loadg() {
+        %G = load i
+
+
+
+decla32*, i32** getelementptr ({ i32* }, { i  !3=! i140s0x000032r* }* @H, i32 0, i3204400004f00   

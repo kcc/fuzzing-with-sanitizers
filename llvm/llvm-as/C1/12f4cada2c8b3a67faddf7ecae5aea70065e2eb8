@@ -1,0 +1,29 @@
+         !3=!{! 2, i4 4  }     
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{};!1 = !DIBsicType(name: "int", size: 32, align: 32, encodin   
+
+
+
+
+
+
+declare i32 @external_func(i64 %arg)
+;defie i32 @invo
+
+decg: DW_ATE_signgd)
+
+
+
+
+!2 =lare <2 x i64> @llvm.ppc.al !DITetivec.vmulesb(<4 x i32>, <4 x i3 >) nke_test(mplateTypeParameter(name: "Ty", type: !5)
+!3= !DITemplateTypeParameter(t9i64 %ape:!
+1)! 4$= !ITempl
+ 
+ 
+
+
+declare i2 @llvm.nvvm.sust.b.1e50pgr$oIsver2

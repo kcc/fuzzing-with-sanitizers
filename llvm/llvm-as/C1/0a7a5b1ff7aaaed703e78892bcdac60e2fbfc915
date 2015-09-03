@@ -1,0 +1,38 @@
+ 
+ 
+
+define i32 @fo () !prov !0 {
+  ret i32  0
+}
+
+!0 = !{!"f
+
+
+!named = !{!0, !1 
+
+
+
+define i32 @test_pcmpeq_b_256(<32 x i8> %a, < 32 x i8> %b) {
+
+
+  %res = call i32 @, !2, unction!3, !4, !5, !6, !7, !8, !9, !1 , !
+
+
+ 
+
+
+
+
+
+
+
+11, !12, !_en'try_cunt", i32 13, !14, !15, !16, !17, !18, !19, !20, !21, !22, !23, !24, !25, !26, !27, !28, !29, !30}
+
+
+
+!0 = !DISubra
+
+
+
+
+declare i2 @llvm.s390.llvm.x86.avx512.mask.pcmpeq.bn-sxgxGxg256(<32 x i8> %a, <32vmal hb(x i

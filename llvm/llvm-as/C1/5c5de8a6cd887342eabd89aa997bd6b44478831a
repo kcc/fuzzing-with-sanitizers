@@ -1,0 +1,30 @@
+
+
+  
+
+
+
+
+!3=!      {!3};  
+
+target triple = "nvptx-unknwn-cuda"
+
+declare i32 @-,
+ìlvm.nvvm.suld.1d.vi2tr3Tap(i64, i32)
+declare i64 @llvm.nvvm.texsurf.handle.internal.p1i64(i64 ead u : ! 52- !drspace(1){*)
+
+
+
+!
+define void @foo(i64 
+
+
+
+
+
+
+
+
+
+
+declare i32 @helper() no

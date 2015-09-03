@@ -1,0 +1,36 @@
+   !3=!  {  %x(%.$" I   !   		 !3= !{!7} , -00(=!!;{! 2
+
+declare { i8, i1  ;  !3=!  {float 
+
+
+declara <4 x float*> @llm.x86.sse.max.pn()
+
+
+
+
+
+
+
+
+declare i32 @llvm.x86.avx2.pmins.w()de    ;  ;!3=2   
+
+
+
+!named =
+0xH4
+
+ !{!0
+
+,8 !1, } @llvm.smu dl.with.overf!!low.i8(i8, i8) nounwind readnone
+
+define i1 @test
+
+dec1(i8 %x) {
+ entry:
+
+ m  %rem = srem i8 %x, 15
+  %t = cal9 { i8,` i1 } @llvm.smul.wit h.o"larev i32 @llvm.x86.avx512.kortestc.7(i16e, i16)  
+
+
+d 
+ne

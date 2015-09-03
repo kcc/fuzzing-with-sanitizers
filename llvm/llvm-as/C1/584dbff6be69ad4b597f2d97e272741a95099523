@@ -1,0 +1,83 @@
+   
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                h          inlinedAt: !DILocation(line: 1
+
+
+
+  
+
+declare i1 @llvm.nvvm).bae.ssppcn2, scope: 3))
+  ret i32 %sumYs(
+
+
+
+
+i8
+;;
+
+
+
+
+
+!0=  !DILexicalBlock(
+
+
+
+
+scope:
+
+
+!84)
+
+
+
+
+
+
+
+!am*,eclare  !dbg !DILocation(l:ie n13", scope: !3)}
+
+defined = !{!0, !1, !2,	!3, !4, !5, !6, e li)
+nkonc

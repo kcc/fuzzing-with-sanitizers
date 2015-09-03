@@ -1,0 +1,10 @@
+ 
+    !3= !{%i4** null}
+
+
+define <4 x floa %t> @test_x86_cvµph2ps_128(<8 x i16> %a0) {
+  
+  
+  
+  %rs = call <4 ""x !loat!!> @llvm.x86.vcvtph2ps.128(<8 i1x 6> %a0) 
+  r

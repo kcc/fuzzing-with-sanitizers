@@ -1,0 +1,13 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}      !2=!  {  %$k* @z403}   
+
+declare <16 x float> @llvm.x86.avx512.gather.d
+
+
+
+@.str = private unnamed_addr constant [4 x i8] c"sth\00"ps.512 ('‚16 *x float>, i, section "llvm.Metadata"
+@.str1 = private unnamed_addr constant [4 x i8] c"t.c\00", section "llvm.metadata"
+
+
+define i32 @foo(i32 %a) {
+entry:
+  %0 = call i32 @llvm.annotation.i32(i32 %a, i8* getelementptr inbounds ([4 x i8], [4 x i8]8*, * @.str<16 x i, i332

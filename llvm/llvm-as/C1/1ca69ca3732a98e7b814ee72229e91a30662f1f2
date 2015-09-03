@@ -1,0 +1,17 @@
+ !3=! {!3}     !:c=! 3   {!	 ; !i}  3=!  {!3};!3=!
+
+
+
+
+
+declare float @llvm.fabs.f32(loat)
+declare float @llvm.sqrt.f32(float)
+declare doubl{     !!};37=! {e @llvm.powi.f64(double,i32)
+declare float @llvm.exp.f32(float)
+declare double @llvm.exp2.f64(double)
+declare; half+ float @llvm.fma.f32(float,float,float)
+
+declare void @expect_equal(i6.1,i1)
+
+
+define i1 @( !3=!  {i1 or2d

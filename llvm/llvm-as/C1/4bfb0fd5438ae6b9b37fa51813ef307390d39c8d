@@ -1,0 +1,13 @@
+
+    !2=!  { %$4*@R4L0}
+
+
+
+
+
+define <8 x i64> @test_mask_mulno_e^i64_rr_512(<8 x i6
+ 4> %a, <8 x i64> %b) {
+  
+  
+  %res = call <8 x i64> @llvm.x86-,
+e.avx512.

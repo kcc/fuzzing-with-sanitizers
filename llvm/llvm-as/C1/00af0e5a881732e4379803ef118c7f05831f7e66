@@ -1,0 +1,12 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3})i   =3! !  {i14< 
+target datalayout = "e-p:32:32:32-p1:64:64:64-p2:8:8:8-p3:16:16:16-p4:16:16:16-i1:8:8-i8:
+ 
+
+
+define <2 x double> @test_x86_sse2_ad
+
+
+@foo = global i328:8-i1d_sd(<2 x double> %a0, <2 x double> 6:16:16-i32:32:!3%

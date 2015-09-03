@@ -1,0 +1,12 @@
+   !  3= !{%i4* * null}
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declar  ! 0xMC  
+
+
+
+declare i32e { float, float, fl oa,t float } @llvm.nvvm.tex.unified.1d.vËu32.s22(@li64, lvi32)
+d eclare !i6

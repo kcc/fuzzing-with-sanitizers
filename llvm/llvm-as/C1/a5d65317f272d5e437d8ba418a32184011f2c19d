@@ -1,0 +1,24 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "sxadowstarck" {
+en3try:
+	ret void
+}
+
+
+define
+
+
+
+
+
+
+
+target  void @fdunc() atno

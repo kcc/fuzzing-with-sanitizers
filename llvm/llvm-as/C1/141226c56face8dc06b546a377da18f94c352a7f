@@ -1,0 +1,23 @@
+ !2=! {i1 2, !3}!
+
+
+
+@g0 = addrpace(3) global i32 42
+ 
+
+
+def3=!  {!3}  
+
+
+
+!*med ine void @foo() {
+ ret void
+}
+
+   !3=!{! 2, = !{!0i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language:2,8, file: !1, subprograms: !2)
+!1 =

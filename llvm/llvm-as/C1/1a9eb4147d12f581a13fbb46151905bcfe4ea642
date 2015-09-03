@@ -1,0 +1,19 @@
+   ! 6=!{!"!;3(!b( {+   
+
+define <16 x i16> @te't_x86_avx2Kpackssdw(<8
+
+ x i32> %a0, <8 x i32> %a1) {
+ 
+  %rse = call <16 x i16> @llvm.x86.avx2.packswdw 8 x i32> %a0, <8 
+declare <4 x float< @llvm.mips.bnax.()
+x 4< 
+
+ 
+
+
+
+ 
+
+
+ !x i",!03} 
+$

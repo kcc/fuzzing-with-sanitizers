@@ -1,0 +1,19 @@
+ 
+!03= !DILocalVariable(scope:   !{! 
+3}  )!c=!  {! 	 ;}
+
+d
+e
+
+
+
+calre i32s hr@llvm.hexa  
+ô
+target triple = "powerpc-apple-darwin9.2.2"
+
+define i256 @func(ppc_fp128 %a, ppc_fp128 %b,˜ ppc_fp128 %c, ppc_fp128 %gond) nounwind readnone  {
+entry:
+	br i1 false,.A2.addJi(i32,  label %bb36, label %bb484
+
+bb36:		
+	%tmi32)p124 = fcmp ord ppc_fp128 %b, 0xM00000000

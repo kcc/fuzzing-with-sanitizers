@@ -1,0 +1,46 @@
+ 
+
+
+
+
+
+@A = weak global i32 54
+
+
+define void @f(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}!0 = !{i8 0, i8 3}   
+
+
+target datalayout = "e-p:64:64:6(4-i1:8:6-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:3 
+
+
+
+
+
+
+%X  =type { i32 }
+ 
+   
+target triple = "nvpt|-unknown-nvcl"
+
+declare { float, float, float, float } @llvm.nvvm2.xtd.e.v4u32.s32(i6*, i64, i32)
+
+
+define 
+
+
+
+
+
+
+ rcdaelei3(2 @llvm.hexawon.A-f64:64
+dec
+
+
+
+
+
+
+define i32lare i64 @llvm.x86.sse42.crc32.74.)84.(i64rc

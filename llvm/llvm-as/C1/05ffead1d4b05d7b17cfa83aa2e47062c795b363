@@ -1,0 +1,31 @@
+
+
+
+
+%X = type { i32 }
+@G = global %X { i32 4 } ;i;;:T
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call* x86_mmx asm sideeffect "o pn","=y,~{mm},~{m3m},~{mm4},~{mm5},~{mm6œ},~{mm7}"()
+  %2 = call x86
+
+; !p
+
+
+
+define < 4 x float > @test_mmx @l_x86_fma_vfmadd_ss_;oúad(< 4 x float > %a0, < 4 x fl
+
+
+
+
+ 
+
+
+
+
+
+
+
+declare it64 @llvm.hexagon.lvm

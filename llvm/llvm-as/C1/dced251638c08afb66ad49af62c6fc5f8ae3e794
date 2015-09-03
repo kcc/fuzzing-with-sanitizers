@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+
+
+
+!llvm.dbg.cu = !{!0}
+!llvm.module.flags = !{!3, !4}
+!llvm.ident = !{!5}
+
+!0 = !{i32 786449, !1, i32 12, !"clang version 3.6.0 ", i1 false, !"", i32 0, !2, !2, !2, !2, !2, !"", i32 1} 
+! 
+
+delare void @l1 = !;  
+
+ 
+
+
+
+declare float @llvm.nvvm.msq.f(f(oat)lvm.gc8oot(i8**, i8*)
+
+     !3=
+decl{!  { i44icmpu!"empty.c", !"/le(
+;a!3= !{%.{} ;Ug3   !   : !   3 !)=!  {i1 [i80* =!{  i1muzl(;Wsre3=d-sm  (@4\$"i;2";  
+ i2s0x68, i2 01"}
+!2 = !{}
+!  )   ! !3 

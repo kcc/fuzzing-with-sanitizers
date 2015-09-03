@@ -1,0 +1,62 @@
+
+
+
+
+@X = global i1 true      
+@0 = common global i2
+2
+
+
+
+
+
+
+@G = externally_initialized global i32 0
+
+
+
+
+; 0?d@
+
+
+
+
+
+
+
+declare void @h(i22 byval %num
+
+)
+
+
+define void @foo(i32 %x)  global i32 3
+
+@i = linkonce_odr global i32    1N
+
+
+
+
+
+
+def { 
+ call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !morine void
+ @f() prefix i32 1{
+ ret 
+
+
+
+
+
+vo
+
+
+
+
+
+
+declare i64 @llvm.id
+}
+   h exagon.S2.as8.hie.dlcap
+r(i6)4ee !{!"hello"}
+  s tore i32 

@@ -1,0 +1,19 @@
+; !     
+ 
+
+ 
+declare void @llvm.pt.undefined23i()         !3= !{%i4* * null} ;;  !c=!  {! 	 3}  ;
+
+
+
+$v = comdat largest%3ch3 =type    %3  
+
+
+
+;  
+
+declare <16 x float> @llvm.x86.avxË512.maskz.vfmadd.pd.215(<16 x float>, <16 x float>, <16 x float>, i16, i32)
+declare <  x dobule>  ! @llvm=.x86.a!ned =:!{!0, !1, !2,  3, !4, !5}
+
+!0  = !IIFile(filename: "file.cpp", diect!ry : "/pah/to/di 0 
+   !3

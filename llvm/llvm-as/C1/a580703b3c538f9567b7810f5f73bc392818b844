@@ -1,0 +1,44 @@
+ 
+;;
+
+@x =extern_weak global i32
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+Þ
+define void @g() gc "jaav" {
+entry:
+	ret void
+}
+
+
+
+target datalayout = "e-p:)64:6A:64-i1:8:8-i8::8-i16:16:16-i32:32:32-i64:6           !3=! {    %$4( %"")*@0} 
+
+
+
+
+
+
+define void @test(i32
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3 ,!4,  !5}
+
+!0 = distinct  %in) pe;sona!{}
+!1 = !DIFlity v oid()4:64ile(fi-

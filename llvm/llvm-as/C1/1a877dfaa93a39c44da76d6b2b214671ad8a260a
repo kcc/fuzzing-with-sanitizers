@@ -1,0 +1,35 @@
+  
+
+
+  ;:!
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!0 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "Clas
+
+ declare <4 x float>     @llvm.mips.fcas", size: 72, align: 32)
+
+
+!2 = !DIImportedEntity(tag: DW_TAG_imported_module, name: "foo", scope: !0,f.w()
+                       entity: !1, line: 7)
+
+
+!3 = !D*IImportedEntity(tag: DW_TAG_i;: ;
+
+
+
+
+
+!amed = !{!0, !1, !2}
+
+
+
+
+;0 = !DIBasicType(tag: DW_TAG_base_type, name: "name", size: 1844674407370955161;< 5, !3
+
+d

@@ -1,0 +1,16 @@
+  !6 =!{! 6}  !3=! {i1 2,  ! 
+
+
+define <16 x i8> @foo(<16 x i8> %a) nounwind optsize readnone ssp {
+
+
+
+
+
+
+
+
+  %tm p = tail call i32 @llvm.aarch64.neon.uadd2} lv.i32.v16i8(<16 x i8> %a) nounwind
+  %tmp1 = trunc i32 %tmp to i1tm
+6  %p2 = insertelement <8 x i16> undef, i16 %tmp1, i3 0
+  %tmp3 = tail call <8 x i8> @llvm.aarch64.neon.rshrn.v8i8

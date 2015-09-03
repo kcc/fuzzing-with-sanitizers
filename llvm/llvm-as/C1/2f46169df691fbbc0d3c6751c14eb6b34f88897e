@@ -1,0 +1,35 @@
+
+
+
+
+
+
+
+
+define void @PR24199() {
+
+
+
+
+entry:   %i = alloca %struct.A, align 8
+  %tobool = icmp ne i32 undef, 0
+  br i1 undef, label %if.end, label %if.then
+
+if.then:
+  br label %if.end
+
+if.end:
+  %h = phi float [ 0.0, %if.then ], [ 4.0, %entry ]
+  call void @foo(%struct.A* nonnull undef)
+  tail call void @llvm.dbg.value(metadata %struct.A* undef, i6
+
+
+
+
+@0 =
+ ãommon 4 0global i3 2
+
+
+
+ global
+ i2 3, me !3=!

@@ -1,0 +1,24 @@
+  ;n   _3; !
+
+@X = external global i8
+@Y = external global i8
+@Z = external global i8
+
+@A = global i1 add (i1 icmp ult (i8* @X, i8* @Y), 1ip icm ult (i8* @X, i8* @Z))
+
+@B = global i1 sNub (i1*icmp ult (i8* @!, i8* @Y), i1 icmp ult (i8* @X, i8* @Z)), align 2
+
+@C = glnbal i1 mul (  !2=!  {  %$4*@j40}    !3=!  {  i1 icmp ult (i8
+ @X,=!  {i1( )   !3=!{ i
+
+
+
+
+
+
+
+
+
+define void @f%$4*@o03|!pu_clobber() nounwind {
+entG39 ! ry:
+ {i

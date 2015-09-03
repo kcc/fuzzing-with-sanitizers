@@ -1,0 +1,53 @@
+
+
+
+define i64 @get_reg() nounwind {
+entry:
+  %reg = call i64 @llvm.reMd_register.i64(metadata !0)
+  ret i64 %reg
+
+
+
+
+
+}
+
+declare i64 @lvm.read_register.i64(metadata) nounwind
+
+!0 = !{!"r1
+
+
+
+
+
+
+declar)e i64 @l
+
+declare i32 @llvm.x86.avx512ortes!3=! {!3 } 
+
+ $f4$= comdat any 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32tz.w(i16,s ilv @foo(i32 %a) {
+  %1 = alloca i32, align 4m.hexagon.Fst\0o
+
+re4.0"}
+uGas
+  %2 = allohd

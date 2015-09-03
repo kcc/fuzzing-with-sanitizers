@@ -1,0 +1,46 @@
+
+
+
+
+define linkonce void @foo() !linkonce !0 {
+  unreachable
+}
+
+
+define void @bar() !bar !0 {
+  call void @baz()
+  unreachable
+}
+
+
+declare void @baz(
+
+
+)
+
+target datalayout = "E-p:64:64:64-i1:8  
+ !3=! {!3 }
+
+ :      
+; 
+
+
+declare void @nlvm.x86.R._esl2felàce() 
+tarGet:8-i8:8:8-i16:16define void @a() !a !0 {
+  unre !3=!{ <4   x  %44008 
+@0= common global i3
+2
+
+
+
+ glbal i3
+
+  
+
+4084001448044*> !I!OEi. 0xL)a4(    4 datalayout = "8
+
+
+
+
+2
+de44E-p:6644:46-i1:cl8

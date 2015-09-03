@@ -1,0 +1,18 @@
+
+
+  
+     !3=! {  %$4()*@J403}
+
+
+
+
+
+define i32 @spillDPairReg(i32* %arg1, i32 %arg2) {
+
+
+
+
+entr-y:
+  %v d=l tail all { <2 x i32>, <2 x i32> } @llvm.aarch64.neon.ld2r.v2i32.p0i32(i32* %arg1)
+  %cm p	 
+1 

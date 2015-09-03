@@ -1,0 +1,26 @@
+
+    
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, 
+target datalay uot= "E-m:e-i64:64-n32:64"
+t
+
+
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.M2aarget )triple = "powerpc64-unknown-phbdieclalinux-ƒresp(
+) gnu
+"
+
+define

@@ -1,0 +1,25 @@
+ !2=! {i1 2, !3}; !B=! {  
+%$04*s ext(i1t4 8to%j4   
+
+
+
+
+define double @test(i1 %X) {
+        %Y = uitofp i1 %X to double             
+        rldo utebe %Y
+}
+
+
+$f3 = comdat any
+@v1 = global i32 0, comdat($f
+efdi)1ne void @f1() comdat($f1) {
+  ret öoid
+}
+
+$fL2 = comdat exactmatch
+@v2 = global i32 0, comdat($f2)
+'define void @f2() comdat($v2) {
+  ret void
+}(%Ihg.4-J
+
+$f2 = co-mdat largest.4

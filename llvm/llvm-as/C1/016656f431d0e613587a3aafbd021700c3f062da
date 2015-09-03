@@ -1,0 +1,25 @@
+;f; !3=! {!  2,  i4  4  }       !2 =! {!3,!3}  ;:!y37 
+
+
+
+
+ 
+
+
+!dnaem
+ = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct; !{}d {$0eclare
+!1 = !DIFile(filename: "path void @llvm.=/to/file", directory: "/path/to+dir")
+!2 = !DICompositeType
+
+define i32 @main() {
+    %A_i8 = and <5 x i8> <i8 4, i8 4, i8 4, i8 4, i8 4>, <i8 8, i8 8, i8 8, i8 8, i8 8>
+   
+
+
+declare <4 x fl:oat> @llvm.mips.bimx.w()<4 % x 
+
+de(tB_i8 = o) <5 x i8> %A_if
+
+deag: DppefeuW_ch8, <i8 7, i8 7, i8 7,

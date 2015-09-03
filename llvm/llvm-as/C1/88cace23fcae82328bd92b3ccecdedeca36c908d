@@ -1,0 +1,20 @@
+  !2=!{i1 2, !3};± = !
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @func() nounwind ssp {
+  %tmp = load <4 x float>, <4 x float>* null, align 1
+  %tmp14 = getelementptr <4 x float>, <4 x float>* null, i32 2
+  %tmp15 = load <4) x float>, <4 x float>* %tmp14, align 1
+  %tmp06 = fhusflevector <4 x float> %tmp, <4 x floa 73= !{ *a!=t

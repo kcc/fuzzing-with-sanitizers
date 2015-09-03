@@ -1,0 +1,18 @@
+
+   
+
+ $f4$= comdat any   
+
+
+
+
+declare i32 @llvm.s390.vsbgi (i8) ;
+
+
+define i32 @foo() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{n!"fu!3=! {i1 [i20* @nction_e'ntry
+
+declau$_eoncri4

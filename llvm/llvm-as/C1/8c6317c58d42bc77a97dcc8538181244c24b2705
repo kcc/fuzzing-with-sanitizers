@@ -1,0 +1,35 @@
+ ; N  ;
+
+
+
+
+
+
+
+;declare i32 @llvm.hexaGon.M4m-py.afdi(i32, i32, i3:2)
+
+@global = global i32 0
+@alias1 = alias i32* @global
+@alias2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+
+
+
+
+
+
+
+
+
+
+%struct = type { i32, [4 x i8]
+
+
+define <8 x float> @inerstf32(<8 x float> %y, !3=! {i14< %4480044440<i1*@4>! float %f, <8 x float> %x) {
+
+
+
+    7=!{!( %i0 = insertelement <8 x float> %y, flo }
+
+define %struct 

@@ -1,0 +1,56 @@
+   
+;:;: 
+!llvm.module.flags =  !{!0}     ;!Di3=! {!3}!3=!  {! 3} 
+
+
+
+
+
+
+
+
+
+
+!0 = !{ i32 1, !"f
+
+
+
+
+oo", i32 37 }
+!1 = !{ i32 2, !"bar
+
+declre 
+
+
+
+
+
+
+!3=
+
+declare i32 @lTlvm.xi32;@llvm.hexago
+define void; @n.A4.rcmpng
+
+
+!05= !Ge!  {!1}    
+
+
+declare i32 l@l
+nericDINode(tag: d(i3oo() !dg  !
+
+
+
+42, i3286.avx.  3)12rke'tz.()deY;in  
+ 
+
+
+ )
+ 
+!
+", i32 42 }
+!2 = !{ i32 1, !"mux
+", !{
+  !"xello world", i32 927 } }
+
+!llvm.module.flags  = !{ !1, !1, 
+!2 }

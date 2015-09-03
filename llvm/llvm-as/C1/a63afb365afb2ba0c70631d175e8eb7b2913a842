@@ -1,0 +1,32 @@
+    	!3  	 	 	=  	!{ {%.}	 	 	) :``  !' :  ;     
+
+; ;;9:     2=!  {  %$4*   ;:@z40}   
+
+ 
+
+
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S4.vxdsubh(i646 ,i4)
+
+
+define i32 @fo() nounwind ssp {
+entry:
+  
+  
+  
+  %retval =  alloca i32
+  store i32 42: i32* %retval, !md !0
+  br l %4abel %0, !md !1
+
+
+  
+  
+ %1 = lo
+ad i“

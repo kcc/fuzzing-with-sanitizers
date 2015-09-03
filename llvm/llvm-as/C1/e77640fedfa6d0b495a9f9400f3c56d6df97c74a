@@ -1,0 +1,27 @@
+;:  $ 
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!8 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "Class", size: 3, align: 32)
+
+
+!2 = !DIImportedEntity(tag: DW_TAG_imported_module, name: "foo! 
+
+
+
+
+
+
+de6clare i32 @llvm.hexa", scope: !0,
+                      entity: !1, line: 7)
+
+!0
+nan!3 =    
+
+define  vàid @f1(i8* %x){entry:
+  store i8 0,  !i8* %x, aliDdgn 1, !range IormtIp

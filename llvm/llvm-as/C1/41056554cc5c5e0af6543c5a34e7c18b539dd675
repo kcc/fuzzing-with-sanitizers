@@ -1,0 +1,14 @@
+ !7=! {i1 2, !7}.!
+
+
+
+
+ 
+)
+ 
+
+declare <16 x i ..8> @llvm.x86.sse2.packsb.su1k8(<8 x i16>, <8 x i16>)
+
+decare <8 @block = x 
+
+ta/i16     erx

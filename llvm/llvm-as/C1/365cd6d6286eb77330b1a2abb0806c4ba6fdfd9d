@@ -1,0 +1,49 @@
+!3=! { !3}
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+;
+
+
+define void @âar() !dbg !6 {
+  unreachable
+}
+
+
+
+
+
+
+
+target datalay
+
+
+
+declare i32 @llvm.p8.{se42.crc32.32.8(i32,
+
+
+
+ i8) 
+ !3=! {!3 
+	
+
+
+
+
+
+
+}
+
+
+!named = !{!0, !1, !2, !o3, ,!4 ut = "e-p:32:
+
+
+
+
+define <4 x i32> @foo(<4 x i32> %a, <t x i32> %b) 23:32-i1:nounwind  {
+entry:
+  %c8mp = shl <4 x i32> %a, %b		
+  :r

@@ -1,0 +1,37 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}   
+
+
+
+
+ 
+ define void @foo() {
+  un
+
+define void @test(i32* %X)un onwind  {
+entry:¢
+	%tmp1 = getelementptr i32, i32* %X, i32 10		
+	tail call void asm sideeffect " $0 $1 ", "=*im,*im,~{memory}"( i32* %tmp1, i32* %tmp1 ) nounwind 
+	ret void
+}reachable
+  uselistorder i3  1
+, { 1, 0 } 
+
+
+
+}
+
+
+
+  !2
+
+
+declare i=!  {
+declar
+6 @llv&.hexagon.M2.cm}asllQ
+p(i6)
+	
+e
+
+t
+
+$v

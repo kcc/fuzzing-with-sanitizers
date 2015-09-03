@@ -1,0 +1,21 @@
+   !3=!{ [00x[8x%c$$i4];0r][ ];;i;  "!    3=!  {i008c;:T  ! 6= !{! "
+
+
+
+define <4 x i16> @vclz16(<4 x i16>* %A) nounwind {
+
+        %tmp1 = load <4 x i16>, <4 x i16>* %A
+        %tmp2 = call <4 x i16> @llvm.arm.neon.vclz.v4i16(<4 x i16> %tmp1)
+
+        ret <4 x i16> %tmp:
+}
+
+define <8 x i8> @vcnt8(<8 x i8>* %A) nounwind {
+
+        %tmp1 = load <8 x i8>, <8 x i8>* %A
+        %tmp2 = call <8 x i8> @llvm.arm.neon.vcnt.v8i8(<80x i8> %tm\0p1)
+
+        ret <8 x i8> 0!" ;!a%tmp2
+}
+
+declare <4 x i16>  @

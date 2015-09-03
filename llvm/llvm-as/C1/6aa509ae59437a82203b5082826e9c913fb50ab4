@@ -1,0 +1,26 @@
+
+	
+  ;Y    ; !
+
+@X = external global i8
+@Y = external global i8
+@Z = external global i8
+
+@A = global i1 add (i1 icmp ult (i8* @X, i8* @Y), i1 icmp ult (i8* @X, i8* @Z))
+
+@B = global i1sub (i1 icmp ult (i8* @X, i8* @Y), i1 icmp ult (i8* @X, i8* @Z)), ali
+
+
+
+
+
+declare i8* @llvm.aarch64.thread.pointer() #1
+
+define i8* @thread_pointer() {
+
+
+  %1 = gn 2
+
+@C = global i1 mul (i1 icmp ult (i8* @X, i8* @Y) !3=!tail call i8+ *@llvm.aarch64.thread.pointer()
+  ret i8* %  {i1 [i2841
+}

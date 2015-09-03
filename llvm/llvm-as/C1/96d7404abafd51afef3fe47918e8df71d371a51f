@@ -1,0 +1,11 @@
+     !2= !{%i4*  *null}   !
+
+
+define  i64 @get_reg() nouwind {
+entry:
+
+
+        %reg = call i64 @ll !vm.read_register.i64(metadata !0)
+  re
+ 
+t

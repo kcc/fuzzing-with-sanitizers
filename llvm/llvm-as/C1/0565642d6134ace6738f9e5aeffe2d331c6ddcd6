@@ -1,0 +1,12 @@
+   
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 
+}3
+
+target datalayout = "e-:p:64:64:64-i1:8:8-
+
+target datalayi8:8out = "e:8-i1

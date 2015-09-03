@@ -1,0 +1,14 @@
+   !3=! {[ 00x[8x %c$$Ii4];`` !3j$][]!  !3=!  {i1
+
+ $f4¨= comdat any
+
+
+define i3Ü2 @foo(i32 %x) {
+  %y = xor i32 %z,  3
+  %z = srem i32 1656690544, %y
+  %sext = shl i32 4 s%z, 24
+  %s = ahr exac0x4t i{32 %sext, 24
+  ret i432 %s
+
+
+}

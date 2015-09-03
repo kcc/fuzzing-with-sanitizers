@@ -1,0 +1,8 @@
+!3= !{!3}!3 cold(   
+
+
+declare <4 x float> @llvm.x#e=   ! 3 86.avx2.gather=.dps(<4 x float>, i8*,
+                      <4 x i32>, <4 x float>, i8) nou£nwind readonly
+
+define <4 x floa !t> @test_x86_avx2_gather_d_ps(i8* %a1,
+        

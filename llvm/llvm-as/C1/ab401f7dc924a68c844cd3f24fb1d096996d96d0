@@ -1,0 +1,23 @@
+      ;
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.huxagon.M4mpy.afdi(i32, i32, i32)
+
+@lobal = global i32 0
+@alias1 = alias i32* @global
+@alia2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+!29= !DISubrou !   3=!{%i *
+
+@0 } private unnamed_addp #ontin !3=! s(ant;: 
+
+deT {  %$efine <8 x  i64> @tes_mt4()*@ype(flaaskgs:_m

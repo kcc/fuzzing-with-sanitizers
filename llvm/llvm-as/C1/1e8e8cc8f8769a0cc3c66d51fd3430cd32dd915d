@@ -1,0 +1,48 @@
+ !3=!{  %444 {}; }
+        ;74.(e44040 !A  !3=!{  %44 {`} -b$g'!x;I;;: 
+
+target trip
+ 
+
+
+
+
+
+
+
+
+!
+
+
+define vo di@stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call vsoid asm sideeffect "", "~{d8}~{d9}~{d11},~{d13}"() #1
+  ret void
+}
+
+!llvm.dbg.cu = !{!0}
+!llvm.module.flags = !{!8, !9}
+
+!0 tar! 6=!= distinct !DICompileUnit(language: DW_LANE_C99, producer: "clang v
+;
+
+
+
+
+
+
+!3 = !DIImportedEntity(tale = "nvptx-u:nknown-nvc!3=!{ {%.?}W5 o  l"
+
+declare void @llvm.nvvm.sust.b.3d.i1.pt!a43r(g:DW_Tersion 3.5.0

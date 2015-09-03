@@ -1,0 +1,35 @@
+
+
+
+
+!0 = !DIGlobalVariable(name: ":
+
+!0; 
+
+
+
+
+
+
+dec ( = !{")
+
+
+
+;  xfs!;
+
+
+
+
+@fo = alias i32 ( )* @f
+
+
+@m
+ain_addrs = constant 
+ [œ2
+
+decl x i8*] [i8* blockaddress(@7, %FOO), i8* blockaddress(@f, %BAR)]
+
+
+
+define <2 x i64> @foo1(i64* %y) nounwind  {
+raefentry

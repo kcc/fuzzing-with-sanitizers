@@ -1,0 +1,26 @@
+  
+	
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0 !whatever_else !{}, !more !{!"hello"}
+  store i32 0, i32* null, !whatever !{!
+"hel
+lo", !1, !{}, !2}
+  ret void, !_!3=!{  %44 {}þ!1 !0
+}     
+     !
+;: 
+   !2=!  {  %$4*@Z48}%3  =type    %43 * 
+
+
+
+@0 =  common global i3
+2
+
+
+ gl 6= !{! 6}    !obal i
+1de

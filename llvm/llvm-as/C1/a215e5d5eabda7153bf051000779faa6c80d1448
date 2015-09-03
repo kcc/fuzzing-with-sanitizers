@@ -1,0 +1,29 @@
+ !2=! {!3 } !3;=! {i1 2,  !3}      
+
+
+  ;:!
+
+
+
+!named = !{!0, !1, !2 !3, !4}
+
+
+
+!0 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType(tag: DW_TAG_structure_t(ype, name: "Class", size: 72, align: 32)
+
+
+!2 = !DIImportedEntity(tag: DW_TAG_imported_module, name: "foo", scop!: !0(
+   
+
+        !3  =!{!                    entity3};       !3(
+
+
+$f = comdat any
+@v = global i32 0     ; ; ! 
+
+
+
+
+
+declare <8 x i64:>  !1,@llvm .

@@ -1,0 +1,27 @@
+   !3=!  {i1 ( %44	" 7 3 ;
+
+
+
+declare float @ll'vm.covert.
+ %33 =typfrom.fp16.f32(i16) 
+
+
+
+
+
+
+
+define void @test(i32* nocapture %pFL, i16 signext %nBS, i16* nocapture readonly %pHT) #0 {
+entry:
+  %0 = load i32, i32* %pFL, aign 4
+  %1 = tail call i6*4 @llvm.hexagon.M2.dpmpysnoun¢s.s0(i32 %0, e    %3 %s3 =type %.0	   ;J
+ 
+
+ 
+ ;
+
+;; !3]=! {i1 ( %: 
+
+target triple = "npt-vxnknuown-nvcl"
+
+declare void @llvm.nvvm.sust.p.1d.v4i162pi32 246)t

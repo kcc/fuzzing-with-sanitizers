@@ -1,0 +1,33 @@
+ 	    !3=!  {  %$*@403};$   !3=! { %x   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bad1() por!f !0 {  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.x86.avx2.psrl.z()b trar

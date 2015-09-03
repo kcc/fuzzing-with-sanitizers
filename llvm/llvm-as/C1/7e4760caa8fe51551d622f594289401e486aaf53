@@ -1,0 +1,44 @@
+        !2=!  {  %$4*@x40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align (
+
+ 
+
+
+@x = glob   !3=al i64 ul (i64 3, i64!  {  %$*'o0; ptrtoint (i
+target datalayout = "E-p:
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64"
+
+%union.anon = type { double }
+
+@u = global %union.anon { double -2.500o00e-01 }, align 8
+@
+
+
+* 
+ 
+
+declare i2 @llvm.nvvendiannes64:64:6
+
+    %s3 =t
+
+
+
+define i32 f@oo(iype %.0;  32 sig ;s_test = glob
+
+
+
+
+a

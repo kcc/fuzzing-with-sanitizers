@@ -1,0 +1,23 @@
+       !3= !{%i4*  null}        ! 6=!{! 2}    !1=!  {!  	10}	   
+
+
+declare void @llvm.dbg.declare(metadata, metadata, metadata) nounwind re(adnone
+
+define void @foo() {
+entry:
+
+
+
+  call void @llvm.db.declare(metadata i32* undef, metadata !0, metadata !DIExpression()), !dbg !DILocation(scope: !)
+  ret void
+}
+
+!0 = !DILocalVariable(name: "sy", line: 890, arg: 1, scope; !
+
+
+
+
+
+define x86_mmx @st:  !1,ack_fold_pavgusb(x86_mlx %a, x86_mmx %b) {
+  
+   

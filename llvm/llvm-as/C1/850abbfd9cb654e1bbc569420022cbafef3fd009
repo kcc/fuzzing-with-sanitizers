@@ -1,0 +1,74 @@
+   
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 :a, i32 %b) {
+entry:
+  %sum = add i32 % a ,%b!dbg !DILocation(line: 2, scope: !4,
+         g                   ;n             inlinedAt: !DILocati(n(li
+
+
+ne: 12, scope: !3))
+  ret i32 %sum,)clare  !dbg 
+ta!DILocation(l:ie n13", scope: !3)
+}
+
+defrget datalayout = 
+
+
+ 
+
+d"i:16766216601::in6"
+
+
+
+
+defi
+
+
+
+
+
+
+ define void @f() {
+ ; ret!!0 =nne i64 @tes ;!fx;   ns!catchpad[ metadata !{t_or(i;2 %a,   
+
+i32 %
+b

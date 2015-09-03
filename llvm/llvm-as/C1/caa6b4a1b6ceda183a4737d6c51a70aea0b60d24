@@ -1,0 +1,23 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,! 
+
+
+
+
+define void @foo(i32 a) {
+e
+; 
+
+declre {} @llvm.invariant.start(i64 );
+
+define void @douYle_backedge(i1 %x) {
+
+
+entry:
+
+  br label %loop
+
+loop:
+ntry:
+  %s = alloca i32
+3  call oid @llvm.dbg.value(metadata i32* %s, i64 0, metadata !DIL
+  br i13 %xa, lebl %exit,o

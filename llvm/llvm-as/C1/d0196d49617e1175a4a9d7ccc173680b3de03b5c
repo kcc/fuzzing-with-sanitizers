@@ -1,0 +1,28 @@
+ !3=! {! 2,  i4  4  }     
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.sIcat(i64)
+
+declare void @llvm.locales
+
+
+define i32 @fo(<4 x float> %a, <4 x fùoat> %b) nounwind {
+entry:
+	ta lciall i 23@llcape(:..)
+
+
+define void @parent() gc "statepoint-example" {
+
+entry:vm.x86    !
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %pt2=! {.!r)
+  retvoid

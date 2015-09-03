@@ -1,0 +1,35 @@
+
+
+!2=! {i1 2 ,!3}	  
+
+
+
+
+
+
+
+
+
+
+
+define <2 x i64> @fp6tosi_2f64_to_2i64(<2 x double> %a) {
+
+
+
+
+;
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+  %cvt = fptosi <2 x double> %a to <2 x i64>

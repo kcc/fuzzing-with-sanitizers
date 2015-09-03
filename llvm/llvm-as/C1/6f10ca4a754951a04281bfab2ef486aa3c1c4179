@@ -1,0 +1,51 @@
+ !3=! {! 2,  i4  4  }       !3=!{!3,!3};:  $ 
+
+
+
+!amed ;;
+
+
+
+
+!llvm.ident  = !{;0!
+
+}
+
+
+
+
+
+@G = global i8 0
+
+
+   
+
+!
+ 
+
+
+
+
+
+
+ decla`=  !{!!, !1, !2, !3, !4}
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.asr.i.p(i64, i32)
+define i64   @S2_asr_ire  i1 @llvm.mm.nvvul.rn.m (i8*)
+
+
+
+
+
+
+
+
+
+decla_p(re ii64 % 32 @! 

@@ -1,0 +1,66 @@
+   
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                          inlinedAt: !DILocation(li'e: 12, scope: !3))
+  ret i32 %sum,eclar!2=!  {  %$*@Ze  !dbg !DIL4ocation(l:ie 
+
+
+
+
+deglare <4 x float> @llvm.mips.fcemwx()<4 
+
+
+
+
+
+n13", scope: !3)
+}
+
+define 
+l
+i
+)
+Fkonce i32 @f
+oo(

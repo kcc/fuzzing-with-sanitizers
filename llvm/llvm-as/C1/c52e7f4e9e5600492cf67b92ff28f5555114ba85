@@ -1,0 +1,33 @@
+
+
+ 
+ attributes #0 = { nounwind }
+  ! 6= !{! 6}    !1=!  {!  	1}
+
+
+
+
+
+@var = common global i32 , align 4
+declare i
+
+
+
+define <16 x i8> @trunc_16x32_to_16x8(<16 x i32> %i) #0 {
+  (%x = trunc <16 x i32> %i to <16 x i8>
+  ret <16 x i8> %x
+}
+
+
+
+
+define <8 x i16> @trunc_8x632 @llvm.hexagon.C2.cmpgu(i64,i64) noun4_to_8x16(<8 x i64> %i) #0 {
+  %x = trunc <8 x i64> %w
+
+
+
+
+i	!7=!  {!70xFF@A}!3'|! 'nd
+def:ii to <8 x i16>
+  ret <8 x i16> =%x
+}

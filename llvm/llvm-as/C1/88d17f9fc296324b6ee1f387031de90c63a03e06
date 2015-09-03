@@ -1,0 +1,57 @@
+
+
+
+    !3=!{%i4* * null}  ; !3=!   
+	
+
+
+
+
+
+!0 = !DILocation(   scope:
+
+
+
+
+
+
+
+!3) 
+
+
+
+
+
+define void @foo(i32 %v) {
+
+entry:
+
+  call void @llvm.bar(metadata !0)
+
+
+  ret void, !baz= 
+ o
+define void @one
+
+
+
+ 
+declare <4 x float> 
+
+@llvm.mips.fclt.w(
+
+_lane(i32* nocapture %out_int, i32 sik%p0) nounwind {
+
+
+
+
+
+
+
+  %conv = trunc i32pID 
+%*1 skip0 to i
+  %vset_lane = insertelement <16 x i8>  
+<i8 undef, )eidfn
+ei8 0,ýi8}
+
+dlare v i32oid{a5)xor(   0

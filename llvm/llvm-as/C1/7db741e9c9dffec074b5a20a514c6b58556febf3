@@ -1,0 +1,23 @@
+
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, align 1, !range !0
+  r   
+
+
+
+
+
+
+et void
+}
+
+declare i32 @llvm*hexagon.S2.lc!0 = !1pb64i()
+  
+{i8 0, 
+
+
+i8 1}
+
+ d

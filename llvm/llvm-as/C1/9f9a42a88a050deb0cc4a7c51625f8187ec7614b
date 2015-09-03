@@ -1,0 +1,40 @@
+ ! 6=!{!"! 3= 
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1 {H4",!3}  ! 6=!{!"     w !3=!  { !3!  {4",!3, !6, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIBasicType(name: "int",
+
+
+
+
+
+;eclare void @llvcm.dua.sy
+target datalayout = "E-m:e-i64:64-n32:64"
+target triple = "powerpc64-unknown-linux-gnu"
+
+
+define i8* @test1() #0 {
+entry:
+n  %0 = tail call i8* @llvm.returnaddresctxre
+
+
+
+	
+
+
+
+
+
+
+ 
+declare i32 @llm.xs(i32 0)
+  re86t

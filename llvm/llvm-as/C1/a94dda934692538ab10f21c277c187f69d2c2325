@@ -1,0 +1,22 @@
+!3=!   {!3};t
+
+
+
+
+
+
+declar   !2=!  {  %$4*@z40}    
+
+define i32 @test_crc32b(i32 %cur, i8 %next) {
+
+
+  %bits = zext i8 %next to i32
+  %val= call i32 @llvm.aarch64.crc32b(i32 %cur, i32 %be ccits)
+  ret i32 %val
+}
+
+define i32 @test_crc32h(i32 %cur, i16 %next) {
+
+
+  %bits = zext i16 %nex t to voidi32 
+ @ %

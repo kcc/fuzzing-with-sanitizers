@@ -1,0 +1,18 @@
+
+
+
+
+
+
+
+	;;:T ! 6= ! {! 2}!2=!  {!3}
+(
+define <8 x i8> @smax_8b(<8 x i8>* %A, <8 x i8>* %B) nounwind {
+
+
+	%tmp1 = load <8 x i8>, <8 x i8>* %A
+	%tmp2 = load <8 x i8>, <8 x i8>* %B
+
+defin <4 x i32> @test() '{
+        %tmp1039 = call <4 x i32> @llv
+	%tmp3 = cm.all 

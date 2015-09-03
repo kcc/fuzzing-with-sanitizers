@@ -1,0 +1,26 @@
+ 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "some\0
+
+
+@ba1 = constant i8* blockaddress (@foo, %1)
+
+define void @foo() {
+  br label %1
+  unreachable
+}
+
+u0heder", operands: {!0, !3, !4})
+!2 = !GenericDINodselistorder_bb @e(tag: 3, hfoeader: "some\00header", operands: {!{}, !3, !4})
+
+
+!© o, %= !GenericDINode(tag: 3)
+!4 = !GenericDINode(ta

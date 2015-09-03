@@ -1,0 +1,11 @@
+ 
+
+
+   
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)   *tore i32 0, i32* null, !whatever !0, !what!3=!  ;!; 
+
+
+declare v {! 2  i4  4  }       oid @llvm.!3=! {!3,!3} ever_else !{} , !more !{!"aoclnesCape(.).h.e)

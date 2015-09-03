@@ -1,0 +1,29 @@
+!_=!  {} 
+
+
+
+
+declare <4 x float> @llvm.mips.amxfc.w(
+
+)
+ !1=!{ }  
+
+declare i32 @v()
+
+define i32 @f() {
+e:
+	%r = invoke":)
+
+
+@!g = global i32 0	_ !_ 	
+
+¬efine i32 @g() {
+	%t = load vol;:{%.}+  !c " i32 @v()
+			to label %c unwind label %u
+		
+
+c:	
+	ret i32  %r
+u:		
+	ret i32 %r
+}

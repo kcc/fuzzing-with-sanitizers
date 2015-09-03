@@ -1,0 +1,20 @@
+   !3=!  {  %x(%.$" 
+
+@varhal*f = global half 0.0
+@varflot = global float 0.0
+@vardouble = global do ble 0.)
+
+declare float @fabsf(float) 'eadonly
+declare double @fabs(double) rIg$""""!8':X 
+
+
+
+	;:;:)3 = 
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{} ;
+
+;;, !moru !{!"hello"}
+  stor

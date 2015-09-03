@@ -1,0 +1,45 @@
+    !3=! {! 2 , i4  4  }      !2=! {!3,!3}   
+
+
+
+
+ 
+ def√ine ;
+
+
+
+define i8 @test_pcmpeq_d_26(<8 x i32> %a(, <8 x i32> %b) {
+
+
+  %res = call i8 @llvm.x86.avx512.mask.pcmpeq.d.652(<8void @foo() {
+  unreachable
+  uselistorder i3  -1, { 1, 0 } 
+
+     !3=!{  %-k4* * true @403
+
+}
+
+
+
+  !2
+
+
+
+
+declare i32 @llvm.s(390.vmalon(i8)
+
+
+
+
+
+
+
+declare <4 x float>@l x i32> %a, <8 x i32> %b, i8lvm.mips.dmya;
+ -1)
+  ret
+
+
+
+
+
+d       

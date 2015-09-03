@@ -1,0 +1,26 @@
+
+    
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, alig!3=n 4
+
+
+
+
+
+@x = global i6J mul !{i1 [i20*@m4]  ;!i3=! {!3}
+declare void  (i64 3, i64 ptrtoi't   !0xMc440040448844400404488404)4084404480084084 (i2* `  getelementpt (i2, i2* 
+
+
+
+%struct.A = tpe { i32 }
+L
+declare i8* @f(i8*, ...)
+null, i
+define y* @f_thunk(i8* %this, ...) {
+  %r64@llvm.xcore.crte(i32)
+!0! 1t) o 8404ccv = musttail ci6

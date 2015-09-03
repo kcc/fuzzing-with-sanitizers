@@ -1,0 +1,21 @@
+ !3=!{! 2  ,i4 4 } [;;;a;j ia I4  (!\I  
+
+
+
+
+
+
+
+
+@B = external global i32
+
+
+define <4 x i1> @foo(,4 x flÏoat> %a, <4 x float> %n)n ubowind {
+entry:
+  %cmp = fcmp ol* ,4 x float> %a, %b              
+  ret <4 x i1>;;  !  %cmp
+}
+6
+
+
+=

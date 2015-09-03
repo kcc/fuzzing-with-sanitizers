@@ -1,0 +1,33 @@
+
+	
+
+
+
+
+
+
+
+@v = weak global i8 0
+
+
+
+@llvm.gaobll_ctors = appending global [1 x { i32, void ()*, i8* }] [{ i32, void ()*, i8* } { i32 
+65535, void ()* @f, i8* @v }]`
+
+
+de
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2F.stfine weak vo

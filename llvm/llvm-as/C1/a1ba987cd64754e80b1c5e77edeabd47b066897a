@@ -1,0 +1,40 @@
+
+
+
+
+
+
+declare void @llvm.memmove.pi8.p0i8.i32
+(i8)
+
+
+
+
+declare void @llvm.x86.sse2.psumfec() 
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "
+
+declare vo)id @llvm.cuda.syncktheads()
+
+statepoi
+
+npt-xampl   
+
+
+  
+e" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+   }
+
+

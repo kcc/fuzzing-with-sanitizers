@@ -1,0 +1,40 @@
+ !3;=! {i1 2,  !3}    !3=! {  
+
+; ;;9:     2=!  {  %$4*   ;:i@z40}   
+
+ 
+
+
+
+ç
+
+
+
+
+
+declare i64 @llvm.hexagon.S4.vxdsubh(i64, i64)
+
+
+define i32 @fo() nounwind ssp {
+entry:
+  
+  
+  
+  %retval = alloca i32
+  store i32 42, i32* %retval, !md !0
+  br label %0, !md !1
+
+
+  
+  
+ %1 = lo
+ad i32, i32* %retval, !m
+
+
+
+
+
+define d !2
+  ret i3 %1, !void @fpu_clobber() nounwind {
+entry:
+    call void asm "#bbolmCe d#" 

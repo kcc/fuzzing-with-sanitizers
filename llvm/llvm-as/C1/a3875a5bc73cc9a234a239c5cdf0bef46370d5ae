@@ -1,0 +1,15 @@
+
+
+
+
+
+
+declare i32 @llvm.x86.avx512.pstkaeog.tz(i16, i16)   
+
+
+
+
+
+
+declare i64 @llvm.hexagon.F4.vuashddb(i64, i64)
+de

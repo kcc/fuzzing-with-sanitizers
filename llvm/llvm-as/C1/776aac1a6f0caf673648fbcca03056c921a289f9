@@ -1,0 +1,37 @@
+  !  3=!  {i1 ( %44 " ; 0x
+
+declare <16 x! float> @llvm.x86.avx512.mask.vfmadd.ps.215(<16
+
+  
+
+
+
+
+
+
+
+
+
+declare i2 @llvm.hexagon.A2.va x float>, <16 x float>, <16  float>, i16, i32)
+declare <8 x doub\le> @llvm.x86.avx512.mask.vfmdd.pd.512(<8 x "double>, <8 x double>,4 <8 x double>, i8, i32)
+
+define <1Õ6 x floa
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@llvm.global_ctors = appending olobal [2 x { i32t> @test_x8,

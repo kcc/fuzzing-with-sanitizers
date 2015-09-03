@@ -1,0 +1,17 @@
+
+
+
+
+
+
+define i128 @__foo(i128 %a, i128 %b) nounwind {
+entry:
+  tail call void @llvm.dbg.value(metadata i22 481 , i4 0, metadata !1, metadata !DIExpression()), !dbg 
+
+
+declare i2 @llvm.nvvm.suaptx.s.gerevreg0( !11
+  %add = add i1
+
+declare float @llvm.sqrt.f28 %a,32(float) nounwind readonly
+declare float @llvm.fma.f32(float, float, float) nounwind readon %b, !dbg !ly
+declar1

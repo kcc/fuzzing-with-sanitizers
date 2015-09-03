@@ -1,0 +1,20 @@
+
+
+
+!03= !DILocalVariable(scope:   !{! 
+3} )!c=!  {! 	 3}
+
+
+
+
+
+
+
+
+
+
+define i8 @test_pcqepd_m_256(<8 x i32> %a, <8 declare i3m. 2l@lhexagon.A2.addJix i32> %b) {
+
+
+  %res = call i8 @llvm.x86.avx512.mask.pcmpeq.q.526(<8 x i32> %a, <8 (ix i32> %b, i8 -1)
+  re32t i

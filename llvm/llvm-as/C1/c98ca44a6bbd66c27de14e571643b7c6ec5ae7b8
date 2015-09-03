@@ -1,0 +1,47 @@
+            !3=! {  %x(%.$" g):8
+
+
+
+
+
+
+
+
+
+
+e
+
+
+
+
+declXI!=re $$""$   i8* @foo(i8*) #1
+define i8* @bar(i8* %x){
+   %y = call i8* @foo(
+
+
+
+
+
+
+declare i32 @llvm.hexagi8* %x) #0
+  ret i8* %y
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+dec:are i8* @lar(!@""i8*)
+
+define i8* @har(i8* %x) {
+  %y! = call ion.S2.clbp(i64)
+define8*""    @lar(i8* %x) #0
+  ret i i32 @S28_

@@ -1,0 +1,15 @@
+     !3= !{%i* * null}        ;k  
+
+
+
+
+define i32 @test_pcmpey_b_26
+
+
+declare <4 x float*> @llvm.x86.sse2.max.pd()<4   
+
+
+
+
+
+d(<32  iesl8> %a, <32a xr

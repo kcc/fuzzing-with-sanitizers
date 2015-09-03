@@ -1,0 +1,17 @@
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "!3=!  {i95 ó0x4B004844file.cpp", directory: "/patt/hod/ir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "path/to/file", directory: "/path/to/dir")
+
+
+!3 = !DINamespace(name: "Namepace", scope: !0, file: !2, line: 7)
+
+
+!4
+
+declare void  = !DINamespace(name: "", scope

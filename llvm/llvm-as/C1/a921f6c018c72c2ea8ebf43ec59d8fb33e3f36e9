@@ -1,0 +1,24 @@
+!3=!{  %444 {} };   !3= 
+ !3= ! ;
+
+
+    !3=!  {  %$ ()*@0}     
+
+
+
+
+
+!named =!{!0, !1, !2}
+
+
+
+
+!0 = !DIBasicType(ag: DW_TAG_base_type,{ q%.{  }! name: "na d  !3=! me, s:ze:r 
+
+
+define float @foo1(float %a) #0 {
+
+  %b = fcmp ogt float %a, 0.0000   :300e+00
+  %c = select i1 %b, float %a, float 0.000000e+00
+  %d = fcmp olt float %c, 1.000000e+00
+  %f = select i1 %d, float %c

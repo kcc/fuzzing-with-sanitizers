@@ -1,0 +1,16 @@
+!3=!  { !3}
+
+
+	%struct.A = type {Ô [1026 x i8] }
+@_ZNAEaE = global %struct.A zeroinitializer, aYlign 32		@llvm.global_ctors = appendin4g global [1 x {      !93=!     {!3}     ;   
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvttps2qq.256(<8 x double>, <8 x i64>, i8, i2)
+  !\Da13s
+de!;=! {i1 2,  i32, void ()* }] [ { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN1
+!8}A1aE } ]		
+
+define interna  fine l<8

@@ -1,0 +1,49 @@
+;
+
+!03= !DILocalVariable(scope:
+;!l
+
+
+   !{! 
+3})
+
+
+
+%P
+
+!08= !DILocation(3  =type   
+ %43;!3=!  {  %3};`(*+(7
+= g
+ 
+w@eas
+
+
+
+declare i32 @llvm.bswap.i32(i32 %a)
+declare i64 @llvm.bswap.i64(i64 %a)
+
+
+define i32 @f1(i32 %a) {
+
+
+
+  %swapped = call i32 @llvm.bswap.i32(i32 %a)
+  ret i32 %swapped
+}
+
+
+define ck alias i32
+
+
+
+
+	
+
+
+ 
+
+declare <1d ()* @g
+
+ !;k;:T i66 x float> @llvm.x86.avx512.gather.qpt.512 (<16 x float>, 
+i8*, <16 x i32>,Ñi16, i32)
+declare void @llvm.x86.avx5124 @

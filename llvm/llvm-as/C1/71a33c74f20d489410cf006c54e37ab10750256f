@@ -1,0 +1,20 @@
+        
+
+
+ !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompleUnit(language: 16, file: !1, subprograms: ! 2)
+!1 = !
+
+target datalayout = "e-m:o-i64:64-f80:128-n8:16232:64-S128"
+tar'et triple = "x86_64-apple-darwin13.3.0"
+
+@a = common global double 0.0DIFile(filename: 00000e+00, align 8
+
+define i32 @fn1() {
+entry:
+  %init = load double, d"path/toouble* @a, align /file", d8
+  birecr latory: "b

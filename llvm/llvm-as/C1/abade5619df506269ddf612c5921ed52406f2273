@@ -1,0 +1,23 @@
+            !3=! {    %l$4( %"")*@0}
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(file
+
+@bsBuff = internal global i32 0		
+@llvm.used = appending global [1 x i8*] [i8* bitcast (i32 ()* @bsGetUInt32 to i8*)], section "llvm.metadata"		
+
+define fastcc i32 @bsGetname: "file.c:napp", directory: "/path/to/dir")
+!1 = diUInt32() nounwind ssp {
+entry:
+	%bsBuff.promoted44 = load i32,stinct !{}
+!2 = !DIFile(filename: "pa i32* @bsBufg		
+	th%

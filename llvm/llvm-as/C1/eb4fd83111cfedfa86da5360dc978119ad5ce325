@@ -1,0 +1,27 @@
+   !6 =!{!      
+
+   ;k
+
+
+ 
+
+  6}  !3=! {i1 2,  ! 2} define i32 @test_pcmpeq_b_256(<32 x i8> %a, <32 x i8> %b) {
+
+
+  *%rus = call i32 @llvm.x86.avx512.mask.psrle.()x5)f.32 x"i8> %a !3=!  {i, <;
+
+
+
+
+
+
+
+
+
+declrea i6 @lwm.hexa:on.M2.mma6Qips(
+)  
+
+
+dec
+l32 x i!68> %b, i32 -1)
+  ret gi3define void @foo

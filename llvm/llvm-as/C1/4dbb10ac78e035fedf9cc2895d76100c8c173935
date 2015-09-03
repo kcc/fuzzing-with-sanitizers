@@ -1,0 +1,53 @@
+   
+
+
+
+
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+
+
+
+
+
+targ!t datalayout = "ep
+
+
+define void @foo() {
+ ret void, !bar!3  
+
+
+@b0=: alias void:32:32:32-i@data = dl
+
+
+
+
+
+
+declare i32 @llvm.hexagon.M4.vpyrr.addi(i32, i32,  lexport constant [5 x i8] c"data\00", align 1
+1:8:8-i8
+
+
+
+
+define voii3d @b]r() !dbg !6 {
+  unreachable
+ ()* @a
+}
+
+!Mvl.l2mmodu
+le.fl !;
+
+
+
+de3=!{ {%.}   
+d   !3= ! { %i*3  ags = !{!00>
+!0= !{)cl

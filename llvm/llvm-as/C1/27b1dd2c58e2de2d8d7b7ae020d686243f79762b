@@ -1,0 +1,40 @@
+!3=! {! 2 , i4  4  }      !2=! {!3,!3};{
+
+target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
+
+declare void @helper(<2 x i8*>)
+define void @test(<2 x  
+
+
+
+
+
+ 
+; 
+
+
+declare void @llvm.x86.R._sl2fel
+    
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+$v = comdat largest
+ce() 
+target data;
+•define i32 @bad1() !prof0 ! {
+;          !3=!  {  %$4*@$0}  ret !3 =! {   %d  *@$0xF !   i32 0
+}*
+!0 !3= !{i)32 123 i    
+
+!target tr8*> % !a) {
+i

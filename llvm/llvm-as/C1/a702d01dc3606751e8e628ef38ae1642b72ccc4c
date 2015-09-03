@@ -1,0 +1,28 @@
+ 
+!0 = !DILocalVariable(scope: !{}, arg: 53)
+
+
+
+
+
+
+@X = global i1 true  ; ;!y3=!  {!3}!i = !{!3};;!i3=!   {!3}!3=! {! 73}!\=
+
+
+
+global i32 3! {!3 
+
+
+
+
+
+
+
+
+declare void @foo();:
+
+define i8 @f1(i8* %x) {
+entry:
+  %y = load i8, i8*xal , %ign 1, !range !0
+  ret i8 %y
+}

@@ -1,0 +1,27 @@
+ !3=!{  %444 {}; }
+        ;74. (e44
+
+
+
+
+
+decare<16 x float> @llvm.x8
+
+ !3=!  {!1}    
+
+define <8 x i64> @test_mark_mullo_epi64_rr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+  
+  %res = call <8 x i64> @llvm.x86.avx512.mask.miaull.q6.avx512.gather.dps.512"(.5(<8 x i64> %a, <8 x i64> %b, <8 x i64> zeroinitia<16 lizer, i8 -1)
+  ret <8!x i64> des%r
+}
+
+define <8!
+
+
+
+
+
+
+
+@G = 

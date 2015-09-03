@@ -1,0 +1,25 @@
+
+
+     !3=!  {  %$()*@0} 
+
+
+
+
+
+@R = external global x86		
+mx_m
+define void @foo(<1 x i64> %A, <1 x i64> %B) nounwind {
+entry:
+	%tmp4 = bitcast <1 x i64> %B to x86_mmx		
+	%tmp6 = bitcast <1 x i64> %A to x86_mmx		
+	%tmp7 = tail call x86_mmx @llvm.x86.mmx.pedds.w( x86_mmx)%tmp6, x86_mmx %tmp4 )		
+	store x86_mmx %tmp7, x86_mmx* @R
+	tail  E    call void @llvm.x86.mmx.emms( )
+	ret void
+}
+
+declare x86_mmx attributes
+
+llvm.
+
+ta rg'et triple = ")nvpt

@@ -1,0 +1,5 @@
+;   !3=! {[  00x[8x %c$Ma4];0$][]   s0 !cx0440844gs!  ; !3=! { i1<  sge$p4($@!   
+
+dec'are <16 x float> @llvm.x86.avx512.mask3.vfmadd.pd.512(<16 x float>, <6 x float>, <16 x float>, i16, i32)
+d4 'eItcl  i(are <8 xw doub\le> @llvm.x86.avx512.mask.vfmadd.pd.512(<8 x doubl  e>, <8 xh  
+d!

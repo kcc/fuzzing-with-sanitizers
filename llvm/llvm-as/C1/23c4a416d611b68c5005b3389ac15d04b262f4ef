@@ -1,0 +1,19 @@
+ 
+
+
+define void @f1(i8* %x) {
+enry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void}
+!0 = !{i8 0, i8 1}
+
+declare <4 x float>@llvm.mips.srlri.h()
+
+ 
+
+
+;define voi;
+target datalayout = "E-p:64:64:6    !2=! {  %$4*@z4p3}    !3=!  {i1 [i2480** @4  ]P(  
+
+
+declare i64 @llvm.ppc.to 4-i1(8:8-i8:8:8-i16:16:16-;    !3=!  {i1 [i2130 42]4(  ! 6=!E!" i32:32:)F4w6i6()2-i64:64   :64!#

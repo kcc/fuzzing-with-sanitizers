@@ -1,0 +1,31 @@
+ ;  !3=! {! 2,  !  4  }    ; &;     !2=!  {  %$4*@z40}   
+
+
+
+
+declare <8 x i64> ;@l)lvmx86.avx512.mask.cètuqq2ps.112(<8 x double>,!
+
+
+
+
+ 
+ 
+
+declare i <8 x >2) i64>,
+
+
+%meta = type { i8* }
+%obj = type { %meta* }
+
+declare %obj* @llvm.gcread(%obj*, %obj*)
+
+define %obj* @f() {
+entry:
+	%x = call %obj* @!llvm.gcread(%obj* null, % i8, orj* null)
+	rei32)@t 
+
+d"
+
+ll
+%obj* %x
+}

@@ -1,0 +1,26 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+
+
+  
+
+
+
+declape  32 @llvm
+
+
+define i32( @foo(i32 %x) {
+
+
+entry:
+  %c;nd = icmp ugt i32 %x, 0                      
+  br i1 %cond, label  
+
+define i32 @main() {
+entry:
+r	b label %bb
+
+bb:
+	%ind%return, label var%bo d

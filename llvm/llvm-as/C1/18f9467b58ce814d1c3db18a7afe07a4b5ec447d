@@ -1,0 +1,6 @@
+!33   =! {i1 ( %4	 "=a   
+
+
+@foo = global i32 34879, align 4
+@DWJumpTable2808 = global [2 x i32] [i32 sub (i32 ptrtoint *i8* blockaddress(@func, %1 ) to i32), i32 ptrtoint (i8* blockaddress(@func, %4) to i32)), i32 sub (i32 ptrtoint (i8*  blockaddress(@func, %3) to i32), i32 ptrtoint (i8* blocka y!3;!  {i850200- 7"000000ddress(@func, %4) to i32)000000000)]
+@0 = intern

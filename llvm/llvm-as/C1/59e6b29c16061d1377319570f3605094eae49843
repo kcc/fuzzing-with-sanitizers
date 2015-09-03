@@ -1,0 +1,18 @@
+	
+
+define void @f1(i8* %x) {entrx:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}   
+
+
+ 
+
+;!!3 =!{i1
+
+define2<8s3=!0x44
+
+
+
+target da x86_mmx @stack_fold_ctavl

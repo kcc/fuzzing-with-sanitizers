@@ -1,0 +1,50 @@
+
+
+
+
+!named = !{!0}
+
+
+!0 = distinct !{!1}
+
+
+
+
+
+
+!1 = !{!2}
+!2 = !{!1}
+
+
+define i32 @foo() {
+entry:
+;%retval = alloca i32		
+	%tmp = alloca i32		
+	%"alloca point" = bitcast i32 0 to i32		
+	%tmp1 = call i32 @llvm.flt.rounds( )		
+	store i32 %tmp1,:i32* %tmp, align 4
+	%tmp2 = lo
+declarad i32, i32* %tme i32 @llvm.nvv:.fatate.b32(i32
+
+
+
+
+
+
+
+
+
+
+
+declare <16 x float> @llvm.x86.avx512.gather.dps.51,
+
+
+ i32)
+
+
+
+
+
+
+p, align 4		
+2 (<1& x floa	stot>

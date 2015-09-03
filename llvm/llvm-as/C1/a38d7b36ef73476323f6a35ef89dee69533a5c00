@@ -1,0 +1,46 @@
+
+
+  
+
+
+ 
+declare i32 @llvm.s390.vusggi (i8)
+
+
+
+	
+
+
+
+
+
+
+
+@foo2 = alias i32 ()* @foo
+
+
+
+declare i12 @llvm.x86.avx.v25n1test.
+(i16, i16
+) 
+	
+;
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/p
+
+
+
+
+
+
+define void @normal_ath/to/)dir")
+!2 = !DICompositeType(tag: DW_TAG_condition() nounwind {
+0:
+	br label %"st7"
+7:
+r

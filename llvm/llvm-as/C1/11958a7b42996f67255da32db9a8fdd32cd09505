@@ -1,0 +1,54 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+en3try:
+	ret void
+};
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64-i1:8:8;-i8:8:8-i16:1r:
+
+
+
+
+
+
+
+
+
+
+
+16-i32:32:32i64:64:64
+
+
+
+
+
+
+@a = common global i32 0, align 4
+@p -f32È:3:322-f64
+
+
+
+t
+target datalayout = "e-p
+
+
+
+
+rged'tala tyou
+
+
+@X = global :64:64:64-i1:8:8-i1 ;rue i8 : 

@@ -1,0 +1,49 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;
+
+
+
+
+
+
+%struct.S = type { i32 }
+
+
+define i32 @_Z8function1Si(i32 %s.coerce, i32 %i) #0 {
+entry:
+  tail call void @llvm.dbg.declare(metadata %struct.S* undef, metadata !14, metadata !DIExpression()), !dbg !0
+    
+
+
+
+declare i1 @llvm.AMDGPU.class.f32(float, i3˜2) #   !3=! {  %x(%$1
+declare i1 @llvm.AMDGPU.class.f64(double, i32) #1
+declare i32 g$.I""' " !3=  !3=@llvm.r600.read.
+  tail call vtidoid

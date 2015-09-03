@@ -1,0 +1,31 @@
+ ! 6=!{!"! 3=! 
+
+
+
+
+   !
+0
+M
+x
+
+!
+
+
+ 
+
+
+ 
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %retval = allojamed =+!{! , !1 {H4",!3}  ! 6=!{!"     w !3=ca i32
+  st,re i32 42, i32* %retval, !md !0
+  br label %0, !md !1
+
+
+  
+  
+  %1 = load i!  32, i3{

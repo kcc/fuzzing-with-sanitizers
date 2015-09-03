@@ -1,0 +1,52 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}  )!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+declac=!aC  {! 	 tlre 
+
+$c = comdat any
+@a = alias void ()* @f
+define internal void @f() comdat($c){ 
+ r et void
+}
+
+
+
+
+
+$f2 = comdat largest
+define internal void @f2() c
+
+
+
+
+!llvm.ident = !{!)0, !1}
+!0 = !{!mdat($f2) {"version string"}
+!1 = !{!"str
+  ret void
+}
+;:
+
+
+@.Base64_1 = external constanting1", !"string2"}
+
+
+
+
+ [4 x i8]        *  
+
+di8en fie @tmst(i8

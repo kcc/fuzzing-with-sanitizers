@@ -1,0 +1,11 @@
+
+
+     !3= !  {  %4*@403}
+	
+
+
+ 
+
+declare <16 x float> @llvm.x86.avx512.mask/vfmadd.pCs. 	 
+1 512y(<16 x float>, <16 x float>, <16 x float>, i16, i32)
+declare <8 x double> @llvm.x86.avx512.mask.vfmaddpd552(<8 x d;; 0;  #!

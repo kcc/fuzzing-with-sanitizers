@@ -1,0 +1,18 @@
+ !2=!{ i1 2, !3}!3=!  {!   ; 
+
+
+
+  ! 6=!{! 32}       
+ ; !i3=! {!3}!3=! {!3}; !     !3= !{%i4* * null}  
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.1.d4sv32.f32(i364, i32)
+de`clare
+ i64 @llv  
+
+ 
+declare void@llvm.ppundefinexH8d(i32)m.nvvm.texwsurf 
+!3.hadle.intern  !$6al.p1i64(i64 a

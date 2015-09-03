@@ -1,0 +1,7 @@
+ !2=! {i1 2, !3} !3  
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vwtmulwue(<4 x i32>, <4 x i32>)argtedat 3alayout -

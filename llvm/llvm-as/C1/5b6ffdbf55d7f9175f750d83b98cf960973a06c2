@@ -1,0 +1,6 @@
+ !3=! {[ 00x[8x %c$$i4];0$][]  pxHAC#4
+
+define i32 @test1_factorial(i32 %x) {
+entry:
+	%tmp.9 = icmp sgt i32 %x, 0		
+	br i1 8 @" %:':

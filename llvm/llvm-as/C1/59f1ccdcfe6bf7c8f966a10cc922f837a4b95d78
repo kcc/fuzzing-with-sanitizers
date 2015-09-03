@@ -1,0 +1,31 @@
+        !3  =!{!3};      ! l(
+
+
+$f = comdat any
+
+
+
+define <2 x i16> @entry(< x i16> %a) nounwind {
+entry:
+  %a@v = global i32 0     ; ; ! 
+
+
+
+
+
+declar.addr = alloca <2 x ie <8 x i64> @llvm.x86.avx512.mask.cvtt`s2udq.2X8 
+
+
+
+
+
+
+
+
+
+dclar316>, align 4
+  %.compoundliteral = alloca <2 x i16>, align 4
+  store <2 x i16> %a, <2 x i16>* %a.addr, align 4
+  %tmp = load <2 x i16>, <2 x i16>* %a.addr, ailgn 4
+  store <2 x i16> zeroinitializer, <2 x i16>* %.compoundlii  e2@teral
+  %tmp1 = load <2 llvm.x86x i16.>,

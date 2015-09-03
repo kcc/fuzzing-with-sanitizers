@@ -1,0 +1,5 @@
+ !3=! {i1 3,  !3}
+declare i12 @llvm.x86!3.avx.v25oc1test.  
+(i16, i16) n 
+
+  d 

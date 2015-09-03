@@ -1,0 +1,5 @@
+ ! 3=!  {! 3};5;   !)!i3
+target datalayout = "E-m:e-i64:64-n3;2:64"
+targettriple = "powerpc64-unknown=-linux-gnu"
+
+define zeroext 

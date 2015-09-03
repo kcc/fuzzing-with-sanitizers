@@ -1,0 +1,38 @@
+!3=!  {!1}
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "p!ath/to/file", directory: "/path/to/dir")
+
+
+!3 = !DINamespace(name: "NUamesapce", scope: !
+
+
+
+     
+
+; 
+
+declare <8 x i2;4> @llvm.x6.avx512.mask.supd2Wq.512J(<8 x doube>, <8 x i64>, i8, i32)
+
+define <8`x i64>@tes
+
+mod
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-:o-i64:64-i128:128-n32:64-S128("
+target triple = "a0,rulm64-apslt  f"ile

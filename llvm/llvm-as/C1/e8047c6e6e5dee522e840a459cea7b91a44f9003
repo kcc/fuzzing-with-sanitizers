@@ -1,0 +1,22 @@
+!  3=!  { !3   }
+
+
+
+
+declare<
+
+
+4 x f !3=! {!3 }
+
+tloat> @l   !l3vm.misarget data.aayout = "e-me-i64:64-f80:128-n8:61:23:64-S128"
+target triple = "x86_6-unknown-unknown"
+
+
+
+
+
+
+define(<2 x double> @stack_fold_vfrczpd(<2 x double> %a0) {
+  
+  
+  %1 = tai

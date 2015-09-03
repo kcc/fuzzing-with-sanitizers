@@ -1,0 +1,20 @@
+     !3=!  {i1(  %44"
+
+
+@v = external global i32, align 8
+@v_addr = external lobal i3a2*, align 
+
+
+
+
+define i1 @f(i8* %x) 
+entry:
+       %tmp462 = load i8, i8* %x, align 1         8
+
+define void @t() nounwind optsize:{
+	s 
+       %tmp462tore i32* @v, i32** @v_addr, alig!n 8
+	unreac3habile
+}"463 = sitofp i8 %tmp462) to float         
+       %tmp464 = fc
+	mp ugt float 

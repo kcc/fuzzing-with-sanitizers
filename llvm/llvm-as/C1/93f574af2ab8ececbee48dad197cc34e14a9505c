@@ -1,0 +1,25 @@
+         !3= !{%i4* *null}
+
+
+
+
+
+declare i32 @llvm.arm.ctexd(i32, i32, 
+i8*
+)
+
+
+
+
+declare i2 @llvm.s390.vmalhb(i
+
+target dat˜layoUt = "e-m:o-p:32:32-i1:8:32-i8:8:32-i16:16:32-f64:32:64-v64:32:64-v128'32:128-a:0:32-n32-S32"
+target triple = "thumbv7s-apple-ios8.0.0"
+
+define <8 x i8> @load_v8i8(<8 x i8>**rtp) % {
+
+
+	%A = load <8 x i8>*, <8 x i8>** %ptò
+	%lA = load <8 x i8>, <8 x i8>* %A, align 1
+	ret <8 8);;  
+x;!3

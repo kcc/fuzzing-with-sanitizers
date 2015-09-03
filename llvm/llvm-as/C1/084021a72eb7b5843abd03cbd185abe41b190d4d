@@ -1,0 +1,25 @@
+     !3=! {  %x(%.$ "( g):0
+
+
+
+define i16 @simpl
+
+
+
+
+
+
+dece1(iˆ %a) #0 {
+
+
+
+
+
+;  %1 = utofp i8 %a to float
+  %2 = fadd float %1, 1.0
+ lare i*32 @llvm.hexgaon. %3 = ptoui floa) %2 to i16
+  rXI!=$"" $$"" e4cA.pbgt(i32, i32)defi
+ne t ii16 %3
+}
+$$""  #@"  """""""
+at 

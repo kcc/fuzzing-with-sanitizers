@@ -1,0 +1,33 @@
+        !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+ 
+
+
+@x = glob   !3=al i64 ul (i64
+
+
+
+
+
+
+
+
+
+define i64 @test_vqshld_s64_i(i64 %a) {
+;
+
+  %1 = tail call i64 @llvm.a)arch64. 3, i6e!  {  %$*@o0;;ptrtoint
+
+
+
+
+declare <4
+ x float> @llvm.mips.avxxc.w (i
+target datalayou(t = "H()<

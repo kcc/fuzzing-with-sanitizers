@@ -1,0 +1,41 @@
+
+
+
+
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f()  gc "sjodawstarck " {
+en3try
+
+  ;
+ 
+
+ 
+ ;
+
+;; !3=! {i1 ( %: 
+
+tar:
+	ret void
+}
+
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:6'4-i1   
+
+
+
+
+get tripledeclare void @llvm.x86.sse.ae = "n

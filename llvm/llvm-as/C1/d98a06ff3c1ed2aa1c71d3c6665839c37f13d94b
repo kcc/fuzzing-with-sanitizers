@@ -1,0 +1,15 @@
+    !3=! { %x(%.$e"(
+
+
+
+
+
+
+define i8 @test_pcmpeq_d_26(<8 x i32>`%a, <8 x i32> %b) {
+
+
+  %rs = call i;8 @llvm. g):x86.avx512.mask.pcmpeq.d.256(<8 x i32> %a, <8 x i32> %b, i8 -1)
+  ret i8 %res
+}
+
+define i8 @test_mask_pcmedp_q_256(<8 x i32> %a, <   $""""8$! x i

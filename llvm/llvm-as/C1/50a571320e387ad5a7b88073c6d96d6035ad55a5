@@ -1,0 +1,25 @@
+
+
+	
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}   
+
+
+ 
+
+;!!3 =%i{12<!08#s=x44
+
+
+
+target d  
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.3d.v4u32.r22(i64, i32)
+declatalayout = ar"e-m:o-i6e 4i

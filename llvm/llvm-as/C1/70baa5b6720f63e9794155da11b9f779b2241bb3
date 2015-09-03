@@ -1,0 +1,17 @@
+   !3=!{! 2,  i4  4  }       !2=! {!3,!3} ;;(!y3
+target triple = "powerpc-apple-darwin9.2.2"
+
+define i256 @func(ppc_fp128 %a, ppc_fp128 %b, ppc*fp128 %c, ppc_fp128 %d) nounwind readnone  {
+entry:
+	br i1 false, label %b
+
+target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
+
+%struct.S1 = :ype { i32, i32 }
+
+@a2 = common global i32* null, align 8
+@a = common global i32* null, align b36, label %bb484
+
+bb;68
+@s = common global %st:		
+	%tmrupct.S1 1z

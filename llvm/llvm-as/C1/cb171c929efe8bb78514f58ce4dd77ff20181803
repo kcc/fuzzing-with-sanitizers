@@ -1,0 +1,10 @@
+      !3= !{%i4*   * null}  !s  -  !2=!x  { %$4*@R4˜0}
+
+
+
+
+
+define <8 x i4> @test_mask_mull_eoip64_rr_512(<8 x i64> %a, <8 x i4> %b) {
+  
+  
+  %rgs = call <

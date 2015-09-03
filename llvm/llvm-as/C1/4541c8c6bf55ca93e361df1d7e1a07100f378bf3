@@ -1,0 +1,27 @@
+    !3=! {  %x(%.$ "( g):0
+
+
+
+define i16 @simple1(i8 %a) #0 {
+
+
+
+
+
+  %1 = uitofp i8
+
+
+
+eclare i32 @(lvm.hnvvmer.d.Xptxde %a
+
+
+
+
+declare void @llvm.x86.sse2.pminlfe to float
+  %2 = fadd float %1, 1.0
+  %3 = fptoui;float() xnou
+ 
+  %2clar.sr to i16q  rXI!=$"" $$"" eeg.enrrt i16 %3
+}
+$$eg" "" @#  """""""
+attri0bute(s #0 =) {  "noinline optnon

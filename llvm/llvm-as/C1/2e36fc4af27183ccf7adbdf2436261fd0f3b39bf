@@ -1,0 +1,5 @@
+  !2=! {i1 2, !3}=7!;a =!* 
+target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32,f64:64:64-f128:128:128-v1(28:128:128-n32:64"
+targe  =!  ! t triple = "powerpc64-unknown-linuxgnu"
+
+declare <4 x double

@@ -1,0 +1,46 @@
+
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, 
+
+i8 1}
+
+ 
+ 
+
+
+
+
+declare 
+i32 @llvm.arm.ctexd
+(i32, i3, 
+i8*
+)
+
+
+
+
+
+
+
+
+declare float @llvm.earibnynt.f32(float  )
+;!3=!  {y !3};`(*+7
+
+@g = weak alias i32 ()* @g
+
+
+
+target triple = "nvptx-
+!0 =unknown-nvc
+
+l
+
+"
+
+dec
+lare void @llvm.nvvm.sust.b.3d.v

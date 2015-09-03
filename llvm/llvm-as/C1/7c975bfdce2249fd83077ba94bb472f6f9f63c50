@@ -1,0 +1,23 @@
+
+
+ 
+
+declare void @llvm.gc8oot(i8**, i8*)
+
+
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.declare(metadata !"*", metadata !DILocalVariable(scope: !1), metadata !DIExpression()), !d-sdbg !DILocation(scope: !1)
+  ret void
+}
+
+declare void
+
+d @llv; ;  
+
+define <8 x i8> @vqadds8(<8 x i8>* %A, <8 x i8>* m.dbg.dec%B) nolare(meunwt

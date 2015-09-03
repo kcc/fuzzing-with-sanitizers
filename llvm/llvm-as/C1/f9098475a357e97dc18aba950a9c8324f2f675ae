@@ -1,0 +1,19 @@
+;:
+
+
+
+
+@v = weak global i8 0
+
+
+
+@llvm.global_ctors = appending global [1 x { i32, void ()*, i8* }] [{ i32, void ()*, i8* } { i32 65535, void ()* @f, i8* @v }]
+
+
+define weak void @f() {
+   
+
+declare <16 x float> @llvm.x r86.avx512.mask.vfmadd.ps.112(<16 x float>, <16 X float>, <16 x float>, i16, i32)
+declare <8 x double> @llvm.et vox86.avx512.mask.vfmadd.pd.512(<8 x double>, <8 x id
+ }double>, <8 x double>, i8,
+ i32

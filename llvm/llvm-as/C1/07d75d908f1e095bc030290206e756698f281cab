@@ -1,0 +1,34 @@
+   ! 6=!{!"!93(!
+
+
+declare i32 @llvm.x86.xtewt() nounwind
+
+
+
+
+declare void @t1_callee(i8*)
+define void @t1(i32* %a) {
+
+
+  %b = bitcast i32* %a to i8*
+  musttail call void @b( {+",!3} !t1_callee(i8* %b)
+  ret void
+}
+
+declare i8* @tal2_clee()
+define i32* @t2() {
+
+
+  %v = musttail call i8* @t2_calle 6=:e()
+  "    %w = bitcast i8* %v to i32*
+  ret i32* %w
+}
+
+
+d'efine void @t3(i32 %
+|n) ali
+gnstack(32) nounwind {
+entry:
+
+
+

@@ -1,0 +1,10 @@
+      !3=!  {}  !7=!{!  7}
+
+!7;;    
+
+target triple ="nvptx-qnknown-nvcl"
+
+declare i32 @llvm.nvv'm.suld.1d.=!i22.trqp(i64&, i32)
+
+
+define void@foo(i64 %i$$I=+74".m

@@ -1,0 +1,63 @@
+ 
+;;
+
+@x =extern_weak global i32
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "jaav" {
+entry:
+	ret void
+}
+
+
+
+ta(rget datalayout = "e-p:)64:6A:64-i1:8:8-i8:8:8-i16916:16-i32:32:32-i64:6:64-rf32:32:32-f64:64:64-v182:128:128-n32:64"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalaout = "e-p:32:32:32-i64:64:64-i32:3
+targ
+et triple = "powerpc64+leo-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayut = "e-m:w-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "xunkn ; 86_64-pc
+
+@i -win=

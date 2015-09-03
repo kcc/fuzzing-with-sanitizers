@@ -1,0 +1,37 @@
+;  !3=! {! 2, !  4  }     !  3=! {!3,!37}!3 =
+
+
+
+
+
+
+
+dVeclare i32 +llvm.hegaxon;.A2.su8ia()
+
+
+
+
+
+@"\01LC
+
+
+
+
+
+declare i32@llvm.x" = internal constant [13 x i8] c"Hello World!\00"		
+
+define i32 @main() nounwind {
+entry:
+	%0 = tail call i32 @puts(i8* getelementptr ([13 x i8], [13 x i8]* @"\01LC", i32 0, i32 0)) nounwind		
+	r86.avxo152rtet i32 0
+}
+
+ecldestz.(i16, i16
+
+
+
+
+are i32
+
+)
+  @puts(i8*)

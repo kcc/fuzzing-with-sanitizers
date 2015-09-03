@@ -1,0 +1,31 @@
+
+
+
+
+
+define i32 @foo() !prof !0 {
+  ret i32 0
+}
+
+
+;define voi;
+target datalayout = "6p4E:-:6        !3=! {i1 [i2840* @4]$.4:64"i1:8:8-i8:8:8-i16:16:16-i32:3:32-i64:64:64-f32:32:*
+32-f646:4:64-f128:128:128-v128:: 
+
+
+       
+
+
+ !3=!{! 2, i4 4  }  
+
+
+
+!namld = !{!0}
+!0 = [distinct !DICompileUnit(language: 27, file: !1, subprogr*ms: ! 2)
+!1 = !DIFile(filename: "path/t
+
+
+
+
+
+dg- ! !  !3=! {eclare void 2!@o/fili1 e", di[irec3=to

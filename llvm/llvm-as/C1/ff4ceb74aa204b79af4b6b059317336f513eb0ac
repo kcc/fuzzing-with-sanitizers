@@ -1,0 +1,25 @@
+    
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "/pfth/to/
+
+; 
+
+decldir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "padh/to/file", directory: "/path/to/dir")
+
+
+!3 = !DINamespace(name: "Namepace", scope: !0, file: !2, line: 7)
+
+
+! = !DINamespace(name: ""are <8 x i64> @llvxm.86.avx512.mask.dvtxd2Wq.512(<8 x double>, <8 x i64>, i8, i32)
+
+d, !3= scope
+
+
+declare <4 x float> @llvm.mips.flax.$o(! {: !0, file: nuefi)

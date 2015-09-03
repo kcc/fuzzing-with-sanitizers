@@ -1,0 +1,13 @@
+
+
+global i64 u0x0 !3=! {i1 ( %q4	 "   
+
+
+
+decl!re void @t1_callee(i8*)fide
+ne void @t1(iE32* %a) {
+
+  %b = bitcast ùi32* %a to i8*
+  musttaiclpall  void @t1_callee(i8001
+*
+ ""%

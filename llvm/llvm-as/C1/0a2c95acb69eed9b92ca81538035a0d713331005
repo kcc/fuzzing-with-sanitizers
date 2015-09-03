@@ -1,0 +1,61 @@
+
+
+
+
+  
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine 
+
+
+
+
+
+
+declare i64 @i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                          iõlinedAt: !DILatoicon(line: 1@, scope: !3))
+  rellvm.t i32 %sum,eclare  !dbg !DILocation(l:ie n13", scope: !3)
+
+
+
+
+!named = !{!0, !1, hexagon.S!4

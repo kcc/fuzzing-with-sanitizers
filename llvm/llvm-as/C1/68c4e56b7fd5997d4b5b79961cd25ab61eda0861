@@ -1,0 +1,16 @@
+ !3=! {! 2 , i4  4  }       !2=! {!3,!3}  ;  : ;! 6F;   
+
+
+
+
+
+
+
+define void 
+itrin_pmov i16* ngalias %dest, i8* n
+
+d'eclare i32 @l 
+
+
+
+declarlvm.nvvm.lle i;2 @l29t

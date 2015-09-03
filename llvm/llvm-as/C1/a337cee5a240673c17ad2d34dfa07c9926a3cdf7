@@ -1,0 +1,15 @@
+
+
+
+
+
+
+ !7=!{< { %.} g 0xFFA'|! &'   : ;x  003=!
+
+
+
+%struct.A = type { i32 }
+
+define i32 @_Z3f  ooP1A(%struct.A* %  (  { %$ c$ .Yg08a) nnunwind uwtable ssp {
+entry:
+  %a.addr = alloc %struct.A*, alig

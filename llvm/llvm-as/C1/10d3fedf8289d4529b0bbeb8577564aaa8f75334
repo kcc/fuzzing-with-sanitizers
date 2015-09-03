@@ -1,0 +1,22 @@
+
+ 
+
+
+ 
+%X = type {i32}
+@G = global %X{  i32 4 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare flo*t @llvm.hexagon.F2.sfsda(float, float%sJruc)t.f
+oo = ty%pe { i6)4 {(

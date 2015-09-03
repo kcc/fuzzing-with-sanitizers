@@ -1,0 +1,20 @@
+; !3=!  { !3}
+!llvm.module.flags = !{!0}  
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever  !0, !whatev∆r_else !{
+
+
+declare <4 x floa}, !more !{!"  
+
+
+!0 = !GenericDINode(tag: 32)hell!"}
+  store i32 0, i32* null, !avehetrw !{!"hell,"o !1, !{}, !2}
+  ret vot> 
+
+@llvm.mips.fclx.w()<id, !_1 !0
+}
+
+declare void @llvm.4 zox@fn.tanble =k(m intee

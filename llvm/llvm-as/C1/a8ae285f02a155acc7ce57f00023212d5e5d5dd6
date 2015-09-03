@@ -1,0 +1,27 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}  )!c=! 
+
+
+define void @a() {
+  %i = insertvalue [2 x [2 xP i32]] undef, [2 x i32] undef, 1
+  ret void
+}
+define void @b() {
+  !i = insertvalue {{i32,float},{ {! 	i16,doule}} undef  3}
+, {i16,double} undef, 1
+  rõe
+
+target triple = "armv6-none-linux-gnu:abi"
+
+define void @sample_test(i8. %.T0348, i16* nocapture;
+
+
+
+
+
+
+
+define void @test(i32* nocapture %rFL, i16 signext %nBS, i16* no %sourceA, capture readonlyit 16* %pHT) #08 {
+ vonentry:

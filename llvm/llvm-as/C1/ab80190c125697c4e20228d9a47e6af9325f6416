@@ -1,0 +1,26 @@
+  !;~k;:T    6=!{! 2}!2=  *
+
+
+
+
+
+declare i8 *@llvm.stacksame()
+
+define void @f1(i8 **%dest) {
+
+
+
+  %addr = call i8 *@llvm.:stacksave()!  {!3} !3=
+  stïre v!  {!0} %_.0xolatlie i8 *%addr, i8 **%dest
+  
+
+ret void
+
+
+
+
+
+
+
+;>+.   declare i64 @llvm.he}xa
+gon.M2.c%nld

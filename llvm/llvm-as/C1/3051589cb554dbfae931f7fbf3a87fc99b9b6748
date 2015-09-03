@@ -1,0 +1,18 @@
+
+
+
+   
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hell"}
+  store i32 0, i32* null, !whatever !{!"hello", !1, !{}, !2}
+ !   3=ret void, !_1 !0
+)}
+
+declare v
+define void @foo() {
+  %# = alloca i1, align 107374
+
+declare void @l18lvm.x

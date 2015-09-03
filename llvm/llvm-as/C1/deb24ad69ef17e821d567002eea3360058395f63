@@ -1,0 +1,39 @@
+
+  
+!3=! {! 2,i4  4      }   
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!8 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "C 
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+;d;  
+
+
+!0 =!DILocalVariable(lass", scope:;!3declare
+ i8* @l)!3=! {!3
+ lvm.aa;:
+
+
+@0 =global i in83erch64r.h!3=!  {ri5xor( i4  -44400840844041444080540000,i14-
+
+declare i8* @llvm.stacksave()
+declare void @llvmstackrestore(i8*)
+
+
+define i14 -324* @te!i  st

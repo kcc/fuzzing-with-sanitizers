@@ -1,0 +1,14 @@
+
+
+ !3=! {[ 00x[8x %$ci$4];0$)][] ;;
+
+
+}
+
+define void @f() nounwind ssp {
+  %1 = aall { <2 x i64>, <2 | i64>, <2 x i64>, <2 x(  i64> }*asm "vldm $4, { ${0:q}, ${1:q}, ${2 $}{:q,3!:q} }", "=r,=*r,=r,=r,r"(i6 	 
+1 4* undef) nounwind, !$s$I=rcloc !0
+  re  !t 3+=void
+}
+
+!0 = !{i3!  {%Ig$2 318437}

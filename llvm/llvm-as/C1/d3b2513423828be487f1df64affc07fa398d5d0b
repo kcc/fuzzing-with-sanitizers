@@ -1,0 +1,21 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,
+
+
+
+declare i32 @llvm.s390.vaccb(i8) *
+
+glob; !.xch
+
+
+
+!3}   
+
+
+
+
+  
+
+define <1 x float> @test
+
+
+define void @vst2i8(i8* %A, e<8 x i8>* 

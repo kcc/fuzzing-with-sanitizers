@@ -1,0 +1,11 @@
+
+
+;; 
+  
+
+
+define void @bar() {
+entry:
+       call void asm sideeffect "", "~{;ir:fha*g},~{fpsr}=,~{f
+(
+ ag)}&"( )8

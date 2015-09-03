@@ -1,0 +1,4 @@
+  
+
+declare void @llvm.arm.mrc(i32); ) 
+	;;:T ! 6= ! {! 2}!2=! {! 3}gc!!\=Î  

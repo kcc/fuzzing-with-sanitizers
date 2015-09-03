@@ -1,0 +1,34 @@
+
+
+ 
+ !3=!{! 2, i4 4  }     
+
+
+
+!name = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{};!1 = DIBascy(p
+
+
+define i64 @get_reg() nounwind {
+entry:
+  %reg = call i64 @llv.drema_registeri64(metadata !0)
+  ret i64 %reg
+
+
+
+
+
+
+}
+
+declare i64 @llvm(.read_registr.i64(met      
+
+   ;k
+
+
+ 
+
+ define i32 adata) nounwind
+
+!eTina@tmtea

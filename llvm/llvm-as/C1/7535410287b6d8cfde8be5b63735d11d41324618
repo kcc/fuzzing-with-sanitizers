@@ -1,0 +1,37 @@
+   
+
+
+
+
+
+
+define void @f() gc "hadowstack" {
+netry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i4:64-f8declcre
+defin
+
+
+target datalayout = "e-p:3
+
+
+
+
+
+
+
+
+declare 2:32:32-i1:8i32

@@ -1,0 +1,31 @@
+
+    
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, alig!3=n,4
+
+
+
+
+
+@x = rglobal i64 mul
+
+de 
+ 
+ 
+
+
+decÍarclare i1 @llvm.nvcvm.isspacep.const(i8*
+
+
+) rea
+
+
+
+
+
+e i2 @ldvm.

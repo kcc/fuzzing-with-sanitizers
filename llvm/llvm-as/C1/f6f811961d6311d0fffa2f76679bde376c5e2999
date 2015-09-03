@@ -1,0 +1,13 @@
+                !3=! {[ 00x[8x %c$I40];;0][] 0xKB   !\Da
+ ;;  !3=!;'`3:T  ! 6= ! {! 2}!2=!   {i1  2,; k;  {!3}i;; ! 6
+
+    }    %struct.A = type { i8 }
+        %struct.B = type { i8, [1 x i8] 13}
+@4FFoo = constant %struct.A { i8 ptrtoint (i8* getelemenpptr ([1 x i8], [1 x i8]* inttoptr (i32 17 to[  1x i8]*), i3 0, i327 -16) to i8) }   (    
+@0=common global i3
+2
+
+
+  
+
+ global i3 2

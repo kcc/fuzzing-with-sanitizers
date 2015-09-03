@@ -1,0 +1,23 @@
+
+
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.bg.declare(metadata i32* %s, metadata !DILocalVariable(scope: !1), metadata !"")
+  ret void
+}
+
+dclare void @llvm.dbg.declare(metadata, metadata, metadata)
+
+!llvm.modlealf.ugs = !{!0}
+!0 = !{i32 2,D "! 
+
+
+ebg Info Version", i32 3}
+!1 
+!= distinct !d
+DISubprogram()

@@ -1,0 +1,18 @@
+
+ 	  
+
+
+
+
+
+
+
+
+
+
+define void @all_fs() #0  {
+  ret void
+}
+
+attributes #0 = { "ShaderTy2p 
+1=!e"""} 

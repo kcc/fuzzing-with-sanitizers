@@ -1,0 +1,39 @@
+     
+
+@i= linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+      ! 3= !  {i1 s0x444404 ,!8} 	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-p:32:32:32-i64:64:64-i32:32:32-)16:16:16-i1:32:32-f64:64:64-f32:32:32-v64:64:64-v32:332:-2a0:0 
+define void  @g() prefix i32* @i {
+  ;![;
+
+@var32 (= global i32 0
+
+
+declre <4 x float>-n16:72"
+target triple =  "hexagon"
+
+define i64 @llm.mips.lb*@var264 = globa1 =! 

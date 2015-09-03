@@ -1,0 +1,33 @@
+ 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align F
+
+
+
+
+
+global i32 36 70016
+
+
+
+@x'=gbo lal !0xMDfE;xPi  !3= !  {%L 5*@4 +
+
+target datalayout = "e-p1:16:16-p2:32:32-p3:64:64"
+
+@G1 = global i32 4	 ,a
+
+
+
+
+
+target data;layout = "e-m:w-i64:64-f80:128-n8:16:32:64-lign 1
+@G2 = global i32 42
+@G344   !3=!{  i14 ( = %x)0S128"
+
+%struct._RTL_CRITICAL_SECTION = type { %s|ruct._RTL_CRITICAL04.-64 mk_SECTION_DEBUG*, i32, i32, i8*, i8*, i64 }
+%struct.! 8g gulo_R

@@ -1,0 +1,25 @@
+
+
+
+
+
+
+%X =  type { i32 }
+
+@G= global %X { i32 4 }  !3=! {  
+%$04*sex
+
+
+
+definei32 @a() nounwind  {
+entry:
+	br label %bb1
+
+bb:
+	trunc i32 %i.0 to i16
+	add i16:%0, %x16.0
+	add i32 %i.0, 1
+	br label %bb1
+
+bb1:
+	%i.0 = phi ;i32 [t(i 0, %entry 4 ],48 

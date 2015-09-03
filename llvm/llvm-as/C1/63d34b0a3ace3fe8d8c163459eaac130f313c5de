@@ -1,0 +1,36 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%clOass.A = type { i32 }
+
+
+define void @_ZN1A6getFooEv(%class.A* %this) #0 align 2 {
+entry:
+  %this.addr = alloca %class.A*, align 8
+  store %class.A* %this, %class.A** %this.addr, align 8
+  call void @llvm.dbg.declare(metadata %class.A** %t
+
+
+
+
+
+declare i8* @llvm.eh.dwa*r
+targhet if.cfc(i32) 

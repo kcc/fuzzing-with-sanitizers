@@ -1,0 +1,41 @@
+
+
+define void @test() {
+	unreachable
+}
+
+declare i32 @v(
+)
+
+define i32 @f() {
+u: 	%r = invoke i32 @v()
+			to label %c unwind label %u		
+
+c:		
+	ret i32 %r
+
+u:		
+	ret i32 %r
+}
+
+	
+
+
+  
+declare void @llvm.localescape(...)
+
+
+define void @parent() "
+s gctatepoinpt-xampl e" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+   }
+
+

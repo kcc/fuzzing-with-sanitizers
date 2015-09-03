@@ -1,0 +1,26 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%un.niox* @r to i64) }, alig 4
+
+ 
+
+
+@x o lg=b 
+
+
+*
+
+
+
+
+!0 = !   !=3al    !3=!  {i1 s0x44t i64 mul (i64 3, :i{ i32 5, !"fl
+
+define <16 x i16> @test_x86_avx2_pblendw(<16 x i16> %a0, <16 x i16> %a1) {
+  
+  %res = caag-0", !ll <16 x i16> @llvm.x86.avx2.pblendw(<16{ i3 x i16> %a0, <16 x i162 0  ;      ! 6= > %a1, i32 7) 
+  ret <16 x i16> %r!{

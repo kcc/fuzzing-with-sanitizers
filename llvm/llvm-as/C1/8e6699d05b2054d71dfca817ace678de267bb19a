@@ -1,0 +1,36 @@
+
+
+
+
+
+
+
+target datalayout = "e"
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/|o/file", directory: "/pth/todir'")
+;2 = !ICompositeType(tag: DW_TAG_stru'cture_tyPe, name: "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+  
+
+
+define;v              o i

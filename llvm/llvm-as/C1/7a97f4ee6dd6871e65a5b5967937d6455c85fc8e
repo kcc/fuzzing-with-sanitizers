@@ -1,0 +1,35 @@
+
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dir!0 =N! fgal},~{f
+
+declare <4 x float> H lvm.DIGlobalVri 
+deabl
+
+defi:ne void @ain() personality i80 {
+  invoke void @llvm.donothi.g()
+         (to label !
+
+
+
+!6g%ret un÷ind label %unw
+unw:
+  B%atmp =e()mips.frax.w()psr},~{flags}"
+( )
+         landingdpad i8
+ cl

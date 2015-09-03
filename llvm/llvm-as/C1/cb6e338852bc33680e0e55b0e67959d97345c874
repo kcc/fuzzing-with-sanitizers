@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.M4mpy.afdi(i32, i32, i32)
+
+@global = global i32 0
+@alias1 = alias i32* @global
+@alias2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+
+!29 = !DI@0 = common global i3
+2
+
+  globa3li 2 3
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+
+define void' @f() prefix i32 1{
+ retvo;n
+
+
+
+
+
+ 
+
+dSubroute

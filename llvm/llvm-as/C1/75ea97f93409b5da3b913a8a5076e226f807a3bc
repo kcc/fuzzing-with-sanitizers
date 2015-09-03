@@ -1,0 +1,13 @@
+      !2=!  {  %$4*@Z48} 
+
+define i32 @test_x86_rdfsbase_32() {
+
+  
+  %res = call i32 @llvm.x86.rdfsbase.32()
+  ret i32 %res
+}
+declare i32as @llv.x8h6.rrdfsbase.32() nounwind readnon
+  7e
+
+define i32 @tet;s_x86'rdgsbase_32() {
+  

@@ -1,0 +1,17 @@
+    !3=!{! 2, i4 4  } 
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 2, file: !1, subprograms: !2)
+!1= !DIFile(filename: "path/to/file", directory: "/paph/to/dir")
+!2 = !{!3}
+
+
+;$ = !DISub!6
+
+   !3=!  { !3}
+target datalayout = "E-p:64:64:64-i1:8;8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-f128:182:128-v128:128:128-n32:64"
+target triple = "powerpc64-unknown-linux-gnu"
+program(n !3=
+declare <4!  ame: "f)oo{i14(%4)>4x", x  

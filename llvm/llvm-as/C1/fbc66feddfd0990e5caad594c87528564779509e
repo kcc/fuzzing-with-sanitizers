@@ -1,0 +1,33 @@
+ !3=!{! 2,  i4  4    }       !2=! {!3,!3} 
+
+
+(  
+
+
+X  global i1 true             
+define i32 @test_86_sse42_pcmx
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+%class.D = type { i32, 	 
+
+
+
+
+
+
+declare i64 @llvm.hexago i32, i32$ i32 }
+
+@_ZN1DC1Ev = alias void (%class.'D*)* n.A4.b

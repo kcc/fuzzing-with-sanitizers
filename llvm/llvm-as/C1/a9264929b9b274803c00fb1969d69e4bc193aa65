@@ -1,0 +1,18 @@
+
+;
+!03= !DILocalVariable(scope:  !{! 
+3 }) !cã
+
+
+
+
+
+
+
+
+
+
+
+@llvm_mips_cop:_s_b_ARG1 = g,obal <16 x i8> <i8 0, i8 1, i8 2, i! 3, i8 4, i8 5, i8 6, i8 7, i8 8, i8 9, i8 10, !  i8 11,{! 	 
+
+target i8  datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-:32:32:32-i64:64:64-f32:32:32-f64:64:64-

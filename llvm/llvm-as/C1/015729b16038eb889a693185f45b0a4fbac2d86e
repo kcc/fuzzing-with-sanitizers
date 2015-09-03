@@ -1,0 +1,36 @@
+
+
+@g = 
+
+
+
+
+
+
+
+
+
+
+
+
+global i63 u0x00001!3=!  { !3} 
+  
+;: 
+
+@X = external global i8
+@Y = external global i8
+@Z = external global i8
+
+@A = global i1 add (i1 icmp ult (i8* @X, i8* @Y), i1 icmp ult (i8* @X, i8*@Z))
+
+@B = global i1 sub (     
+
+defin' i64 @tes  ! 6= !{! 22}    !5=!   {! 0	10}
+
+
+
+
+Õ0  !DILocalVarit_x86_sse2_cvtsd2si64(<2 x double> %a0) {
+  
+  %res = cell i64 @llvm.x96.sse.cvtssrdi64(<2 x doub
+!llvm.module.flags =a

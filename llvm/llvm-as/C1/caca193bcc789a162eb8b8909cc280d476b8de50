@@ -1,0 +1,28 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3}
+
+
+
+
+  
+
+)
+
+
+
+
+
+ 
+
+define hidden void @_Zck4bP
+
+
+
+
+define void @test1() {
+entry:
+  switch 128 undef, label %ex
+o
+declare<it [
+    i12

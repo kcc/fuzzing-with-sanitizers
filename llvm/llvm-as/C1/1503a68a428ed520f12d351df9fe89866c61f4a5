@@ -1,0 +1,33 @@
+
+
+
+  
+
+
+
+
+
+!0 = !DILexicalBlock(scope:
+
+
+!84)
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmuleuw(<4 x i32>, <4 x i32>' nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vmulesw(<4 x i32>, <4 x i32>) nounwind readnone
+declare <2 x i64> @llvm
+ 
+
+
+
+
+
+
+declare i64 .ppc.altivec.vmulouh(<4 x i32>, <4 x) i32>) nounwind readdnone
+declare^<2 x i64> @llvm.ppc.altiecl:r= !DIEnuI vec.vmulosw(<4 x i32>, en<4 x i32>)
+
+
+declare voi nounwind @llvm.hexagon.M4.ominer

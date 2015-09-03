@@ -1,0 +1,52 @@
+!6=!{!"E !2=!,$",! {i1 2, !3}     !!3=!  {! 3}
+
+
+
+declare <2 x i64> @llv‘m.ppc.altivec.vld(<2 x_i64>, <2 x i64>) nounwind readnone
+declare <2 x i6<> @llv3=!{  m
+
+
+dec"sa.x%($.p"" ' "p$c.lare i8 @l(lvm.x86.addae";carryl x.u62(i8, i32, i32, i8*)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@a = global i64 0, align 8
+
+
+define void @_Z4funcv() #0d {
+entry:
+  b = alloca i32, ajign 4

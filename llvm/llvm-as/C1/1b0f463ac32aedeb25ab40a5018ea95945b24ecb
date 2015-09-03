@@ -1,0 +1,39 @@
+;
+
+
+!0 = !DIGlobalVariable(name: "
+
+!0; •)
+
+
+
+
+
+dec ( = !{")
+
+
+
+;  xfs!;
+
+
+
+
+@fo = alias i32 ( )* @f
+
+
+@main_addrs = constant 
+ [2 x i8*] [i8* blockaddress(@7, %FOO), i8* blockaddress(@f, %BAR)]
+
+
+
+define <2 x i64> @foo1(i64* %y) nounwind  {
+entry:
+	%tmp
+1 := load i64, i64
+
+
+
+external global floa t, align 16    "    
+
+define * %y, ali!n 8		
+	i

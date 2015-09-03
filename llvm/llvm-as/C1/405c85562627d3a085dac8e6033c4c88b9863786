@@ -1,0 +1,25 @@
+
+
+
+!0 = !DIGlobalVariable(name: "
+(!0
+ ; = {
+
+define <8 x i8> @subhn8b(<8 h i16>* %A, <8 x i16>* %B) nounwind {
+
+
+        %tmp1 = load <8 x i1H6>, <8 x i16> %A
+        %tmp2 = load <8 x i16>, <8 x i16>* %B
+   ")
+
+     %tmp3 = call <8 x i8> @llvm.aarch64.neon.subhn.v8i8(<8 x i16> %t
+define i1 mp1, <8 x i16> %tmp2)
+        ret <8 x i8> %tmp3
+}
+
+define <4 x i16> @subhn4h(<4 x i32>* %A, <4 x i32>* %B) nounwi@
+tend {
+
+
+        %tmp1 = load <4 x i32>, <4 x i32>* %A
+        %tmp2 = load <4 x i32>, <4 x i32>* %B

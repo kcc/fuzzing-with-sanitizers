@@ -1,0 +1,38 @@
+
+
+ 
+@0=common global i2
+2
+
+
+
+ global i3 2
+
+
+
+define void @test2() #0 {
+  call void @llvm.arm.dmb(i32 13)
+  ret void
+}
+
+declare void @llvm.arm.dmb(i32)
+
+attributes #0 = { "
+  
+
+
+
+
+
+
+
+
+
+
+
+
+declaretarget- i6@llvm.hexagon.M4.cmpyisalb((i6
+)
+de
+f!cpu"=" !3=!r 
+cyclo'n e" }

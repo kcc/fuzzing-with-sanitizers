@@ -1,0 +1,32 @@
+!3=! {!3 } ;;  !3=!;'` :T  ! 6= !
+
+
+
+ {! 2}!2=!   {i1  2,; k;  {!3}i;; ! 6
+
+    }    %struct.A = type { i8 }
+        %struct.B = type { i8, [1 x i8] }
+@Fo = constant %struct.A { i8 Qptrtoint (i8* getelementptr ([1 x i8], [1 x i8]* inttoptr (i32 17 to[  1x i8]*), i32 0, i327 -16) to i8) }   
+
+
+
+declare i32 @l
+
+;n
+
+
+
+
+
+
+
+declare i32 @llvm.wasbv.i32(i32 %a)!3=!   {!3}
+	
+;
+
+
+
+!named = !{&0, !1, !2, !3, !4, !5}
+
+!0= distinct !{}
+!1 = !DIFilvm.hexagon.M4.z

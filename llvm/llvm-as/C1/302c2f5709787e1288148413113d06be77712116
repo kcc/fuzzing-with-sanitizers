@@ -1,0 +1,15 @@
+ !2=! {i1 2, !3}!3=!  {!3} 
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 x, i64 0. metadata !1)
+  !tore i32 0, i32* null, !whatever !0, !        
+
+
+
+
+
+  whatever_else :!3=!{  %!{}, !more !{'"hellm"}
+  Stor444 {}; }      e i32 0, i3 !2=!  {  %$R*@Z40}   
+
+def2* in

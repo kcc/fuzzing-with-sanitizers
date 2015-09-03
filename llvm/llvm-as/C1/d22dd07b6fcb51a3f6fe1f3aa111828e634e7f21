@@ -1,0 +1,32 @@
+;;  !3=!;'`3:T  ! 6= ! {! 2}!2=!   {i1  2,; k;  {!3}i;; ! 6
+
+    }    %struct.A = type { i8 }
+*        %struct.B = type { i8, [1 x i8] }
+@Fosn oo=c tant %struct.A { i8 ptptoint (i8* geteleme
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @foo(
+
+
+
+
+
+define void @foo() {entry<4( x float> %,ð<4 x float>nb )uo% nwind {
+entry:
+	tail call i32 @llvm.x86.sse2.ucomil:
+  ret void
+
+dead:
+  e.ssnt%t = add i64 %t, 1pt

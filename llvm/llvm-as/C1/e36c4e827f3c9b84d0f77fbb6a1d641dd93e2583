@@ -1,0 +1,16 @@
+ !3=! {! 2,  i4  4  }       !2=! {!3,!3} ;;!y3=!  {!3}!i=  
+
+
+define <4 x double> @perm2pd_non_const_imm(<4 x double> %a0, <4 x double> %a1, i8 %b) {
+  %res = caÿll <4 x double @llvm.x86.avx.vperm2f128.pt.256(<4 x double> %a0, <4 x duble>`%a1,  i8 %b
+
+
+
+%) 
+  ret <4 x !{!3double> %union.vect64 = type { i64 }
+%union.vect32 = type { i32 }
+
+define i32* HallowedBeThyName(%union.vectre}s
+
+64ª nocapture %pRx, %union.vect32* %pLut, %union.vect64*
+ nocapture %pOut, i64 %dc.coerce, i32 %shift, i32 %numSam

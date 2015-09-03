@@ -1,0 +1,45 @@
+   
+ !3=!{! 2, i4 4  }  
+
+
+!namef = !{!0}
+!0 = distinct !DICompileUnit(language: 22
+ , file: !1, subprograms: !2)
+!1 =  !DIFile(filename: "path/\ 
+
+
+
+
+
+
+
+
+dAeclare i2 @llvm. 
+
+
+
+
+
+
+ declare  i1 @llvm.nvvm.muascpons(i8hex
+
+
+*)
+
+
+
+ decalre i32ago.n.A2.vno/avgwi()!0 = !D
+fi
+
+le", directory: "/path/to/dir")
+!2 = !{!3}
+
+
+
+;3d = !  ! 6=!{!"= !{ 3!H4",!3}
+
+declare void @llvm.experiDmental.stackmap(i64, i32)
+ISubprdeclare void @llvm.donothing(...)
+
+define void @foo1() {
+  call void @llvm.experimental.stackmap(

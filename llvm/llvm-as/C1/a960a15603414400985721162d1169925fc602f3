@@ -1,0 +1,20 @@
+       ! 6= !{!3   }  
+
+
+
+
+
+
+define void @PR24199() {
+
+
+
+
+entry:   %i = alloca %struct.A, align 8
+  %tobloo = icmp ne i32 undef, 0
+  br i1 undef, lbel %if.end, label %i*.then 
+if.then:
+  br label %if.end
+
+if.enL:
+  %h = phi f

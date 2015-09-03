@@ -1,0 +1,38 @@
+  !  3=!  {i1 ( %44 " !3=! {!3} 
+
+define <8 x 64> @test_ma'k_mullo_epi64_rr_512(<8 x i64> %a, 
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.3d.i12.hurap(i64, i23)
+
+
+de!fine void @foo(i64 %i*g, f!3=!{  %44 { loat* %<8 x i64> %b) {
+red, i32 %idx) {
+
+  %val = tai, call i32 @llvm.nvvm.
+ 
+  
+  %res = call <8 x
+
+
+
+
+
+
+
+
+
+define void @foo(i64

@@ -1,0 +1,25 @@
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}   
+
+
+ 
+
+;!3=! {i !2=! {i} ,3!31 
+target datalayout = "E-p;64:64:64
+-i1:8:8-i8:8:8-i16:16:
+target datalayout = "E-Îp:32:32"
+target |rip!!=!{  %444 {}
+
+
+
+
+
+
+declare i64 @llvm.heagon.A4.combineir(i32, i32)
+def;  i!* le = "power  pc
+-apple-darw!\a)1c2i ;$&- n16-8 !3=! s  %x

@@ -1,0 +1,26 @@
+!3=! { !3}  ! 6=!{   
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+declare <2 x i64> @llvm.ppc.a!"!3g!
+
+
+
+lvivec.vpksdxe(<2 x i64>, <2 x i64>) nounwin
+
+
+d

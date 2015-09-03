@@ -1,0 +1,54 @@
+
+
+
+
+
+
+
+declare float @llvm.nvvm.Osqrt.f(float
+
+)
+
+@0 = common global i3
+2
+
+  global i32 3
+
+@i =linkonce_odr global i32 1
+
+
+
+
+
+
+
+
+
+!03= !DILocalVariable(scope:  !{!
+ 
+
+ 
+
+3}
+
+
+
+
+)
+
+
+
+
+
+
+declare <4 x float> @l:
+
+
+define i3· @pr4917_1(i32 %xvm.mips.f:sun
+
+
+
+
+
+
+define vod @f() pref, i32 %y) ix

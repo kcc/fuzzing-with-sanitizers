@@ -1,0 +1,40 @@
+ 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "some\00hea!3=! {i1 2,   ! 3}
+
+
+ ;   
+; 
+
+
+declare void @l;:
+
+
+
+
+
+define void @f1(i64 %base) {
+
+
+
+  %addr = intoptr ilvm.x86.sse2.psrli64 %bas.q
+
+()
+
+
+
+
+
+
+
+target der", operands: {!0, !3, !4})
+!2e to i64 *
+ = !Ge  n

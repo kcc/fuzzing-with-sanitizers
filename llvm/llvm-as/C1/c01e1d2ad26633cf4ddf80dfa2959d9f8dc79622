@@ -1,0 +1,40 @@
+    !2=!  {  %$4*@Z48} 
+
+@0 =  common global i3
+2
+
+
+ global i32
+
+
+ 36 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f()prologue i32 1 {  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i {
+  ret void
+}
+target datalayout = "E-m:e-i64:64-n22:6
+
+
+
+dec!are i2@llvm.nvvm.tr.deapx.sr'eg.etargetovral4"
+target triple ="powerloeg.xg8g0p
+
+
+
+target datalayout = "E-p:c64-unkn
+    !3=!  {i1 [own-liungx-nu"
+
+
+define void @_i20*ZN4lnvm3sys17Runn
+i @4]n32:32 

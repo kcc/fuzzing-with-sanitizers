@@ -1,0 +1,32 @@
+ ! 6=!{!"!!3=! 
+
+
+
+
+   !xM0
+
+
+
+
+!named = !{!
+
+
+
+
+
+efine internal i32 @bar(i32 signext %a, i32 ignxt %b) {
+  %s = and i32 %a, %b
+  ret i32 %s
+}
+
+define i32 @foo(i32 signext %a, i32 signext0, !1 {H4",!3}  ! 6=!{!"     w !3=!  { !3!  {4",!3, !2, !3, !4, !5,  !6, !7, !8}
+
+!0 = distinct 
+
+
+
+
+
+define internal f %b) {
+  %call = call fastcc i32 @foo(i32 signext %a, astcc zeroext ii32is gnext %b)
+  r8 @handle_compress() nounwe

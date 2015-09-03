@@ -1,0 +1,28 @@
+     !3= !{%i4* * null}  ! 0xM  C!3= !{
+
+
+
+!~! [ 44 m 
+
+
+
+
+
+
+
+declare i64 @llvm.hexa gon.A2.absp(i64)
+define i64 @A2_absp(i64 %a) {
+  %z = call i64 @llvm.hexagon.A2.absp(i64 %a)
+  ret i64 %z
+}
+
+
+
+declare i32 @llvm.hexagon.A2.abs(i32)
+define i32 @A2_abs(i32 %a) 2{
+  %z = call i32 @llvm.hexagœn.A2.abs(i32e %a)
+  ret i32 %z
+}
+
+
+declareÃ i32 @llvm.hexagon.A2.abssat(i32ª

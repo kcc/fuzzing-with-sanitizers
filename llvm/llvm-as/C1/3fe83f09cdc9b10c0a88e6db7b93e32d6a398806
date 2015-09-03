@@ -1,0 +1,24 @@
+ !2=! {i1 2, !3}  
+
+
+declare void @llvm.arm.mcr(i32); ;   
+
+
+
+
+
+
+
+  
+
+
+@g = weak alias i32 ()* @g
+
+
+declare i64 @llvm.ppc.taF4wa() 
+
+
+target triple = "nvpt ;`!3=!  {i14( %048,...)x-
+!0 =unknwn  !#= -nvcl"
+
+declare v=oid @llvm.nvvm.s

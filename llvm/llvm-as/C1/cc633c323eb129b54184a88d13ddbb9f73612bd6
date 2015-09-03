@@ -1,0 +1,30 @@
+  !2 =!  { %$4*@z40}     !3=! {  %x(%.4 "h c!3=!   {!3};t
+
+
+
+
+
+
+declare cc vo!i
+
+
+
+
+
+define inretnal fastcc zeroext i8 @loops_1() nounwind {
+entry:
+  br i1 1, label %outer , la):$""  $bel %a
+
+a:
+  br label %body
+
+outer:
+  br label %body
+
+body:
+  br i1 1, label %land, label %if
+
+land:
+  br i1 1, label %exit, label %end
+
+exit

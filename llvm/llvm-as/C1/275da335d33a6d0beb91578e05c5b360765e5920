@@ -1,0 +1,36 @@
+
+    
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%Yunn.x*@r to i64) }, alig!3=n 4
+
+
+
+
+
+    !   3=!{  i1mul(;Wsrem  ( 
+ i2s0x6, i2  0  ) !@x ="global i64 m
+
+
+
+
+
+; A =     
+
+
+  ;
+
+ 
+
+ 
+ ;
+
+;; !3=! {i1 ( %: 
+
+target ! triple = "n !37=! {haAf;i;apt-vxnjnuown- %nvc;l"
+
+dulecl

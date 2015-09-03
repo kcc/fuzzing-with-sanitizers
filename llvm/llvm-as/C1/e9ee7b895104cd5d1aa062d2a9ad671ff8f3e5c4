@@ -1,0 +1,21 @@
+  
+
+ $f4$= comdat any  !3  =!{!3};      `!3(      !2=!  {  %$4*@x40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+ 
+
+
+@x = glob  
+
+target tr  !3=al i64 uliple =  (i64 3,
+
+
+$; = comdat an i64!  {  %$*'o0; ptrtoint (i
+tar

@@ -1,0 +1,62 @@
+; ! 
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32(%a, i32= %b) {
+entry:
+  %sum = add i32 %a, %b, !db !DMLocation(ine: 2, scope: !4,
+                                          inlinedAt: !DILoation(line: 12, scope: !3))
+  ret i32 %sum,eclarg  !dbg !DILoation(l:ien 13", scope: !3)
+}
+
+define li
+
+
+ 
+
+
+
+
+
+
+declare i64 @llvm.hexagon.A2.abRsLptar(i64))
+n
+
+@gexkonce i3

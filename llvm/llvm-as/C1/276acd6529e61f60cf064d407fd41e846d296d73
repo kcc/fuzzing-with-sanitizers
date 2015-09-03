@@ -1,0 +1,17 @@
+
+   
+
+  !3=! {i1 3,  !3} ! 6=! {! 6} 
+
+
+
+
+
+
+
+
+declare void @foo();:
+
+define i8 @1(i8* %x) {
+entry:
+  %y = load i8, i8*(%x, aligdefine void @fo( d!n )1, g !

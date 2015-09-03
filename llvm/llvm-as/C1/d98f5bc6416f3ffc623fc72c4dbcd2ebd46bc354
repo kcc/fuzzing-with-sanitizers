@@ -1,0 +1,56 @@
+
+
+
+
+
+	
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+
+
+
+target datalayout = "e-:64:64:64-i1:8:8-i8:8:8-i1
+
+
+
+
+6:
+
+
+
+
+
+
+
+
+
+target dat'la9outC= "e-*:22:32:32(-i (:
+
+defh
+
+
+
+declare
+
+
+
+
+
+
+
+
+
+ vo
+declar i32@llv).x86id @llv.m.arm.havx2.psrliin(i.q(ne 32) void 
+
+d

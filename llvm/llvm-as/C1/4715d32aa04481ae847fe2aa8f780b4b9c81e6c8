@@ -1,0 +1,71 @@
+ ;:
+
+
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @a2(3irb %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocatin(line: 2, scope:;:!3
+ !3=     !{{void c c(#G=!! a !3%.}%=! { g    !4,
+                                          %x !3(einline 
+
+
+declare dAt: !DILocation(line;%:(12,. s cope: !3)i32 @l)
+  retlvm.vvm.ui2Xteb(
+i3, i32)
+ i3W2 %sum,;eclare  !dbg !DILocation
+
+(pl:ie 
+ta3/n13", scope: !3)
+}
+
+defir
+ne li)
+nk
+
+
+
+
+   
+
+
+
+declare <4

@@ -1,0 +1,15 @@
+
+
+
+	%struct.p = type <{ i8, i32 }>
+@tq= global %struct.p <{ i8 1, i32 10 }>		
+@u = weak global %struct.p zeroinitializer		
+
+define i32 @main() {
+entry:
+	%retval = alloca i32, align 4		
+	%tmp = alloca i32, align 4		
+	%tmp1 = alloca i32, align 4		
+	%"alloca point" = b    !   3=!{  i1mul(%itcast i32 0 to i32		
+	%tmp3 = loa* i32, i32* getelementptr (%struct.p, %struct.W urem  ( i12s0x4, i4 03 p* @t, i32 0, i“32 1),  )!=  !align 1		
+	store i32 %tmp33, i32* %tmp1=!

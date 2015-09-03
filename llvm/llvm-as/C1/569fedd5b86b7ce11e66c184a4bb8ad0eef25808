@@ -1,0 +1,15 @@
+
+
+
+   ;   	       !3= !{%i4* * null}  
+
+
+
+:arget triple = "nvptx-un*nown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.1d.v4s32.r32(i64, i32)
+declare i64 @lv!3=!  {i14< %440< i21m.nvvm.texsurf.handle.internal.p1i64(i641a[drspace(19*)
+
+
+
+defkne voiid @foo(i64 %im   !3=! {  +   ;*   !g,: float* %red%, i323  %

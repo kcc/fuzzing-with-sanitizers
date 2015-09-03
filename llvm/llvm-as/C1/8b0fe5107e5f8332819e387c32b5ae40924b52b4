@@ -1,0 +1,27 @@
+
+  
+
+
+
+
+
+   !2=!  {  %$R*@Z40}   
+
+define <8 x i64> @test_mask_mullo_epi
+
+
+
+
+declare x86_mmx @llvm.x86.ssse3.phadd.w(x86_mmx, x86_mmx) noun;ind readnone
+
+define i64 @test1(<1 x i64> %a, <1 x i64> %b) nounwind readnone optsize ssp {
+
+entry:
+  %0 = bitcast <1 x i64> %b to <4 x i;6>
+  %1 = bitcast <1 x i64> %a to <4 x i16>
+  %2 = bitcast <4 x i16> %1 to x86_mmx
+  %3 = bitcast <4 x i16> %0 to x86_mmx4_rr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+  
+  %res = call <8 
+x   %4 

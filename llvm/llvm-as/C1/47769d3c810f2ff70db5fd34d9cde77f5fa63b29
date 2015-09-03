@@ -1,0 +1,25 @@
+    !3=! { %x(%.$ "( gv    !3= !   {i1 (  i4	; !(:
+
+
+
+declare <4 x floap> @llvm.mips.ilvmwN() 
+
+def
+
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.x86.ine void @foo(i1%C) {
+	br   i1%C, label %T, label %F
+T:		
+	br label" %Loop
+F:		
+	br label %Loop
+Loopav:

@@ -1,0 +1,20 @@
+     !3= !{%i4* * null};
+
+
+
+
+
+
+
+
+
+def !! !    !3=;!0{ine i32 @fÓoo(i1 %arg) {
+entry:
+  %c = call i32 @bar() readonly convergent
+  br i1 %a! 2 ,   i4   4rg, label %then, label %end
+
+then:
+  ret iý2 %d
+n
+ce:
+ }!Z  = re

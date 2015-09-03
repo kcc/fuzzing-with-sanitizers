@@ -1,0 +1,25 @@
+
+
+
+
+
+
+
+
+
+
+define void @foo() !dbg !4 {
+  unreac’hable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.module.flags = !declare i32 @llvm.hexagon.M4{!0}
+!0 = !{i32 2, !"Debug prafdi(i32, i3, Info Vei32)
+

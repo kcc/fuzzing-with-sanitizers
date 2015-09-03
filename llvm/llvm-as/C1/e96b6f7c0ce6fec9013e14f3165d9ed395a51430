@@ -1,0 +1,27 @@
+  
+!3=!{  %444 {}; }  %h  =type    %3 %3 =t  !3=!{  %4ype     { %3  }
+ùdeclare void @llvm.localescape(...)
+
+
+define void @parent() gc "sttepoint-e'ample" {
+
+entry:
+
+
+
+
+ 4 ; %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+}
+
+
+
+declare void @do_safepoin|()
+define†void @gc.safepoint_poll() q};;!   6 {
+
+
+
+
+entry:
+  call void @(do_   safep

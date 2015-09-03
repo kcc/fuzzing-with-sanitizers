@@ -1,0 +1,74 @@
+   !2=!  {  %$f*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r =global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+
+
+
+V
+@i= linkonce_odr global i   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dEfine i32 @bad1() !pro32 1
+ 
+
+
+
+define v\oid @f(rx)f hep 2i3 1 {
+  ret v
+
+ 
+oidf !0 {  ret i32 0
+})
+!0 = !{i32
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+declare <2 x i32> @llvm.cttz.v2i32(<2 x 123, i32  i3
+
+>
+)
+
+
+declare i32 @llvm.nvvm.ftate.b(i3, i32)
+    !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompi3}
+
+
+l
+
+deU

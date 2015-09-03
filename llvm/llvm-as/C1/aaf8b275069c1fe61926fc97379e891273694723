@@ -1,0 +1,31 @@
+
+
+
+
+
+declare void @subtract() nounwind uwtable
+
+
+
+
+
+define i32 @fn2() noinline {
+  ret i32 1
+
+
+}
+
+declare <4 x float> @llvm.mips.sli.w()
+;;
+  
+!llvm.module.flags = !{!0}   
+
+
+!0 =
+
+ !GenericDINode(tag:
+ 64)
+
+
+
+

@@ -1,0 +1,23 @@
+     !3= !{%i4* * null} ; 
+
+@0 = common global i3
+2
+
+
+
+ oglbal i3
+0!b = !{!é0}
+!0 = !{!1}
+!1 = !{} 
+
+
+
+
+!llvm.ident = !{!0}
+   ! i; 3 =! {!3}!3=! {!3}; !     !3= !{%i4* * null}  
+
+
+
+target triple = "nvptx-unkwonn-cuda"
+
+declare { float, float, float, float }    !3=!  {i1 4< %4@0

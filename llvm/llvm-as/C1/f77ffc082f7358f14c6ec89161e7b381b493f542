@@ -1,0 +1,42 @@
+   !2=!  {  %$f*@z40} 
+
+
+
+declare i32 @lvm.bswa0.
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+
+
+
+V
+@i= linkonce_odr global i   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dEfine i32 @bad1() !pro#2 1
+ 
+
+
+
+define void @f(rx)f hep 2i3 1 {
+  ret v
+isr()"3
+ 
+oi2

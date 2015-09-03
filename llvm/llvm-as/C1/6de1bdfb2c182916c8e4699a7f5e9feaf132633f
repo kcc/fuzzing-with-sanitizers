@@ -1,0 +1,65 @@
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "-m:e-i646*-f80:128targetdatalayout-n8:16:32:64-S128"
+target t:)ple = "x86_64unknown-linux-gnu"
+
+module asm ".globa9l global_asm_sym"
+mod   !7=! {!3 
+	
+
+
+
+
+
+
+}
+
+
+!named < !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distincule asm "global_asm_|ym:"
+mo
+ 
+
+
+
+
+
+
+declret !{}
+!1 = !DIFile(filename: "path/to/file", 'irectory: "/path/todir")
+;
+
+
+
+2 = !Ddeclare float @llvm.fabs.f32(float) #1
+declare float @llvm.floor.f32(float) #1I

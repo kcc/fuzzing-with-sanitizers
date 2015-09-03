@@ -1,0 +1,28 @@
+
+
+
+@llvm.global_ctors = appending global [2 x { i32, void ()*, i8* }] [{ i32, void ()*, i8* } { i32 65535, void ()* @f, i8* null}, { i32, void ()*, i8*    
+
+
+
+
+
+
+@var =  common global
+
+
+
+
+
+
+
+
+declare i32 @
+
+
+target datalayout = "E-p:32:32"
+target triple = "powerpc-apple-darwin8.7.0"
+
+define void @glgRunProcessor() {
+entry:
+	br i1 false, labllvm.p60def.nrie i32 0, align el4

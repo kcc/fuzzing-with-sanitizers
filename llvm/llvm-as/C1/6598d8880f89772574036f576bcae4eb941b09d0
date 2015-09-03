@@ -1,0 +1,33 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+
+
+
+ 
+
+
+
+
+
+define internal fastcc zeroext i8 @han(dle_compress() nounwind {entry:
+  br label %outer
+
+outer:
+  br label %body
+
+
+target datalayout = "e-p:32:32"
+target trip
+body:
+  br i1 1, label %body.i, label %if.end
+
+body.i:
+  le = "bri686-apple-darwn8.7.2"
+
+@x=   i1 *
+
+
+1, label %weaek 

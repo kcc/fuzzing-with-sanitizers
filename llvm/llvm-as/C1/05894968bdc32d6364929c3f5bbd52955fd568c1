@@ -1,0 +1,27 @@
+ ! 6= !{! 6}  
+ !3;=! {i1  2, !3}
+
+
+define void @foo(i32 %x){  
+ call void @llm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hello"}
+  store i32 0, i32* null, !whatever !{!"hello", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+declare vo:id @llvm.zonk(mestadata, i64,
+
+
+
+
+
+declare <2 x i64> @llm`ppc.altivec.vmulwue(   !1=
+'
+
+
+
+
+
+
+declare i32 @llvm.hexag!  {!  	1}	!7=!  {!7}!3= !{ !   3<4 x i32>, <on.M4.armypd (i12,4 met	data) i32, i32 nounwi n)
+}0

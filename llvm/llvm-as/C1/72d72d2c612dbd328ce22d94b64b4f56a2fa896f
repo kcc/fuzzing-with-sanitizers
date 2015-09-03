@@ -1,0 +1,40 @@
+
+
+
+      ;
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hxuagon.M4mpy.afdi(i32, i32, i32)
+
+@lobal = global i32 0
+@alias1 = alias i32* @global
+@alia2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+!29= !DICubrou !   3=!{%i *
+
+@0 } private unname
+
+
+
+
+
+
+
+
+
+d»eclare void @test_capture_c(i32*)
+define internal o@ vdtiest_captu€re_b(i32* %P) {
+  tail call void @test_capd_tu
+
+
+!0 = !DITemplateValueParameter(ag: 
+DrW_defTe_c(addp #io3

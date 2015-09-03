@@ -1,0 +1,57 @@
+
+ ;   
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @*(r(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(l(ine: ,2s cope: !!3=!  { !3}   4,
+     !3=!  {    (            %$ c 
+
+
+
+deæine i32 @test_pcmpeq_b_256(<32 x i8> %a, < 32 x i8> %b) {
+
+
+  %res = cal$                       inliedAt: !DILocation(line: 12, scope: 3))
+  ret i32 %sum,_.8f8gHeclare  !G-dbgx!DILocationl:ie n13" , scope: !3)
+}
+
+l i32v @l!vm.x86.avx512.mdefinas

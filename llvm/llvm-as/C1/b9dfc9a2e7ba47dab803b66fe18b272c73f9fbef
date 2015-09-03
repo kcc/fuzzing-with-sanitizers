@@ -1,0 +1,23 @@
+   !3=! {i4 s0x440454,!8}  !2=! {i1 2,: !3=}3
+
+
+
+
+define float @rcpss(float*!   %a) {
+
+
+
+
+
+
+
+
+
+    %ld = load float, float* %a
+    %ins = insertelement <4 x float> u~def, float %ld, i32 0
+    %res = tail call <4 x float> @llvm.x86.sse.rcp.ss(<4 x float> %ins)
+    %ext = extractelement <4 x float> %res, i32 0
+    ret float %ext
+}
+
+def

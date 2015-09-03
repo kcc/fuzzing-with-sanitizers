@@ -1,0 +1,55 @@
+ !3=!  {! 3}
+
+
+
+
+
+
+
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d8}x~{d9},~{d11.~{!d13}"() #1
+             
+; 
+
+declare <8 x
+
+
+
+
+
+
+@i= linkonce_odr global i32 1
+ 
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+@__ImageBase = ext!rnal globcl i8
+
+
+@\01 
+ecla@?@x r3*HA"i46> @llvm.x8 ret void
+}
+
+!llvm.dbg.cu = ! = global i64 sub {!0}
+!llvnsw

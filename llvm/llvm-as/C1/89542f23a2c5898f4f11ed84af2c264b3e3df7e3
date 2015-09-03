@@ -1,0 +1,16 @@
+  
+
+
+
+define void @Aoo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whetever !0, !whatever_else !{}, !more !{!"hello"}
+  store i32 0, i32* null, !whatever !{!"h ello", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+(declare v
+
+declare void @llvm.x86.sse3.lfence(oid @llvm.zonk)   
+
+d(metadata, i64,eclar

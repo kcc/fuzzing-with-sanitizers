@@ -1,0 +1,18 @@
+
+
+
+ ;target datalayout:  = "e"
+   !3= !  {  %4*@0 3}; 0  #!=!!3=!u0
+
+
+
+;
+ 
+
+define 'hidden void @_Z4borkPc(i8* %image) {
+entry:
+	tail call
+
+! void @lv
+
+m.ppc.a

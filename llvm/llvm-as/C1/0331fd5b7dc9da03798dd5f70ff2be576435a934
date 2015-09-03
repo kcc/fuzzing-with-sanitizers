@@ -1,0 +1,29 @@
+
+
+
+
+
+@A =  weak global i32 54
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}!0 = !{i8 0, i8 1}   
+
+
+target datalayout = "e-p:6i:64:64-i1:8:
+8-i8:8:8-i16:1
+
+
+
+
+
+
+%M = type opaque
+
+
+globa
+target triple = "powerpc-apple-d!3=!{  %44 { }-0000000arwin9.2.2"
+
+defne2i5 6 @func(plb pc_fp128 %a, ppc_fp12voi8

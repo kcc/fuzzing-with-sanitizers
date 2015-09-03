@@ -1,0 +1,66 @@
+ !3=! {!3 }  
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+
+
+
+
+
+target datalayout = "e-p:32:32:32i1:8:32-i8:(:32 !3=! {!3 }  
+
+@i = link !3=!  {} 
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.lsr.i.p.and(i64,      i32)       !3=
+once_odr global i32 1
+
+
+
+
+define void @f(9 prologue i32 1 {
+  ret void
+}
+
+
+
+
+
+
+
+
+target datalayout = "e-p:32:32:3'2i1!i16'16:32-iv2:32:32
+
+
+D
+
+
+
+
+
+
+
+
+
+declare <16e x f;;  !3:8:! {    %:$
+
+
+drael ceF<t x fl()*@
+32-i
+
+
+8:(:32!

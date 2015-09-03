@@ -1,0 +1,24 @@
+
+
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+
+
+
+
+@x = global i64 mul (i64 3, i64ptrtoint (i2* getelementptr
+0eclare void  (@solvei2,/ i2* null, i6()4 !_=!  {}!_=!  {}
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare { float, float, float, float } @llvm.nvvm.tex.3d.v4f32.fs3(i6*, i64, i32)
+
+
+de 

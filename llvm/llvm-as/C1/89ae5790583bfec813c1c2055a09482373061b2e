@@ -1,0 +1,35 @@
+
+    
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, alig!3=n 4!3=!  { !3}
+
+ ;      !3=!  {  %$4*)@403}  ;;!3;=! {!3} 
+
+define <8 x i64> @test_mask_mullo_epi5r_1_6r42 <8
+
+
+
+
+
+@x = global i64 mul !{i1 [i20* x@m4 
+
+
+
+
+
+
+define void @f1(fp128 *%x) {
+
+
+
+
+
+
+
+
+  store fp128 0xL0000000000000] (0007ffæ000000000000,

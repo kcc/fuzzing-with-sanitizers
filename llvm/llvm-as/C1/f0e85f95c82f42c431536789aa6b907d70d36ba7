@@ -1,0 +1,31 @@
+
+
+
+
+!named = !{!0}
+
+
+!0 = distinct !{!1}
+
+
+
+!1 = !{!2}
+!2 = !{!1}
+
+
+define i32 @foo() {
+entry:
+	%retval = alloca i32
+			%tmp = alloca i32		
+	%"alloca point" = bitcast i32 0 to i32		
+	%tmp1 = call i32 @llvm.flt.rounds( )		
+	store i32 %tmp1, i32* %tmp, align 4
+	%tmp2 = load i32, i32* %tmp, align 4		
+	store i32 %tmp
+
+
+
+
+
+
+decalr !3=! 7! 2,  i4  4  }

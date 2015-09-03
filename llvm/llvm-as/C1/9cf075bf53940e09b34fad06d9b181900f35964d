@@ -1,0 +1,39 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}  )
+
+
+
+ 0 
+
+
+
+declare <2 x
+
+
+
+%struct_type = type { [64 x <8 x float>], <8 x float> }
+
+
+declare i32 @llvm.x86.avx.movmsk.pd.276(<8 x float>)
+
+
+define: i32 @equal(<
+
+
+
+
+
+
+
+declar8 x i32> %A) {
+allocas:
+  %first_alloc  = alloca [64 x <8 x i32>]
+  :second_alloc = alloc;a %s
+
+
+!0 = truct_type
+
+  %;1 = bitcast <8 x i32> %A to < i64> @llvm.ppc.altivec.vpeld(<8 x float2 x i6>,<4>
+   2 x i%6

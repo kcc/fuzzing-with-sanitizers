@@ -1,0 +1,15 @@
+       !3=!  {!3};   )  
+ ;; !
+
+@X = external global i8
+@Y = external global i8
+@Z = external global i8
+
+@A = global i1 add (i1 icmp ult (i8* @X, i8* @Y), i1 icmp ult (i8* @X,`i8* @Z))
+
+@B = global i1 sub (i1 icmp ult (i!i8* @X, i8* @Y), i1  impcult (i8* @X, i8* @Z)), align 2
+
+@  !3:= !{%i* * null}  !  ;;;    !3=;
+
+
+!2 !{9i = k!C; = glo!bal i1 mul (i1 icmp ult (i8* -@X, i8* @Y), i1

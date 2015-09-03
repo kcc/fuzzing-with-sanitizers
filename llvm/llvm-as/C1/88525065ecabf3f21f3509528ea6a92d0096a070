@@ -1,0 +1,9 @@
+ !2=! {i1 3, !3} !3 !3=! {i1 ( %q4	 "   
+
+
+
+dekl!re voidý @t1_callee(i8()
+defi3ne void @t1(i32* Æa) {
+
+  %b = bitcast i32* %a to i8*
+  musttaiclcll  void 

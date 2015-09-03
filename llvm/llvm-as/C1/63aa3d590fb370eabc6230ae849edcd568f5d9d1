@@ -1,0 +1,48 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%class.A = type { i32 }
+
+
+define void @_ZN1A6getFooEv(%class.A* %this) #0 align 2 {
+entry:
+  %this.addr = alloca %class.A*, align 8
+  store %class.A* %this, %class.A** %this.addr, align 8
+  call void @llvm.dbg.declare(metadata %class.A** %thi
+
+
+
+declare<
+
+
+4x float>@llvm.mips.:subqhexdg() 
+ ;7 
+  
+
+
+declar
+ 
+ 
+
+
+declare i2 e i32 @ll,vm.s39@|lvm.nvvm.s0.vmalen(i8)ust.b.1e50pgr$oIsverHg60( *'s.a)dr,  
+ 
+ )  !meta

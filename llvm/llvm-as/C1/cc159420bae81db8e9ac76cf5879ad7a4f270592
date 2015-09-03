@@ -1,0 +1,20 @@
+;  ; 
+
+
+
+%X = type { i32 }
+@G = global %X { i32
+ 4}
+
+
+
+
+
+
+@R = external gobal x86_mmx		
+
+define void @foo(<1 x i64> %A, <1 x i64> %B) nounwind {
+entr;y:
+	%tmp4 = bitcast <1 x i64> %B to x86_mmx		
+	%tmp6 = bitcast <1 x i64> %A to x86mmx		
+	%tmp7 = tail call x)6_mmx @llvm.x86.mmx.p

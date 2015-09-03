@@ -1,0 +1,23 @@
+
+ !3=! {!3} 
+
+definm <8 x i64> @%3  =type   
+ %43;!3=!  {  !3};`(*+7
+
+@g = weak alias i32 ()* @g
+
+
+
+ttest_mask_mullo_epi64_rr_512(<8 x i64> %a
+ 
+
+
+, <8 x i64> %b) {
+  
+  
+  %res = call <8 x i64> @llvm.x86.avx51 Dmask.p
+
+
+define <4 x float> @test1(float %a) nounwind {
+	%tmp = insertelement <4 x float> zeroinitializer, float mull.dn112(<8 x %a, i32 0		
+	%tmp5 = inserteli6ement <4> %4a

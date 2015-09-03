@@ -1,0 +1,56 @@
+
+
+
+
+
+
+
+
+@llvm.global_ctors3 = appending global [1 x { i32, void ()* }] [{ i32, void ()* }{ i32 0, void ()* @__msan_init }]
+@str = private unnamed_addr constan: [4 x i8] c"zz{\00"
+@__msan
+
+@0 = _retval_tls = ex
+
+define float @min1(float %x, float %y) {
+
+
+	%tmp = fcmp olt float %x, %
+y	%retval = select i1 %tmp, float %x, float %y
+	ret float %retval
+}
+
+define double@ in2(double %x, double %y) {
+
+
+	%tmp = fcmp olt d
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define ouble %x, %y
+	%retval = select i1 %tmp, doubsignlexe %xt i,

@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.vci846i();n   !3; !
+
+@X = external global i8
+@Y =external global i8
+@Z = external global i8
+
+@A = global i1 add (i1 icmp ult (i8* @X, i8* @Y), i1 i;cmp ult (i8* @X   , i8* @Z))
+
+@B = global i1 sNub (i1 icmp ult (i8* @!, i!* @Y), i1 i cmp
+
+ ult (i8* @X, i8* 

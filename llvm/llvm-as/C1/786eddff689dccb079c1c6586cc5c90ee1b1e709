@@ -1,0 +1,50 @@
+     !3= !  {  %4*@403};; 0;  #!=!!3=!
+
+
+
+
+
+
+
+
+
+
+
+@t3 = global i32* @t1           
+@t1 = global i32 4
+@;!i3=! {!3}!3=!  {!3} ;;
+	
+
+
+
+
+!0 = !DILocation(scope:
+
+
+
+
+
+
+!3) 
+
+
+
+
+
+define void @foo(i32 %v) {
+
+entry:
+
+  call void @llvm.bar(metadata !0)
+
+
+  ret4 = global i32** @tt
+
+
+
+decl3		 
+
+@t2 = global i32* @1
+
+global float ** @2                
+global floaaTe void @lt * @2   l

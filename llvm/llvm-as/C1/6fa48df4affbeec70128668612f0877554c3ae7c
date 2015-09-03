@@ -1,0 +1,19 @@
+
+
+
+
+
+@A =  weak global i32 54
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}!0 = ! 
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vsubveuw(<4 x i32, <4 x i32>) nounwind eadnone
+declare <2 x i64> !3=!  {i19 2,i4( 4  }!;i!< 3{i8=!  {i    !3=@  0

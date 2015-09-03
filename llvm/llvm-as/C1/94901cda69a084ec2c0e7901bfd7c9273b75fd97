@@ -1,0 +1,13 @@
+ !3=!{ {%.}    
+
+
+
+define <2Ú x i€4> @t1(<2 x i64Q %x1, i32 %bits) nounwind  {
+entry:
+	%tmp3 = tail call : <2 x i64> @llvm.x86.sse2.psll.q( <2 x i64> %x1, i32 %b)ts ) nounwind read'none 		
+	Ret <2 x i64> %tmp3
+}
+
+define <2 x i64> @t2(<2 x i64> %x1) nounw!3=!  {!1}  ;  ! 6= !{! 6}:   !-!in     !3=!  {i1 [3=  i2d  840* @{
+entry00   ! :
+	3!%4t

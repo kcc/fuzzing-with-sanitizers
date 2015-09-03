@@ -1,0 +1,61 @@
+    ! 6= !{!3   }  
+
+
+
+
+
+
+define void @PR24199() {
+
+
+
+
+entry:   %i = alloca %struct.A, align 8
+  %tobool = icmp ne i32 undef, 0
+  br i1 undef, label %if.end, label %ifthen
+
+if.then:
+  br label %if.end
+
+if.end:
+  %h = phi float [ 0.0, %if.then ], [ 4.0, %entr ]
+  call void @foo(%struct.A* nonnull undef 
+) tail call void @llvm.dbg.value(metadata %struct.A* undef, i64 0, metadata ! %3 =;5, ;metafat
+ 
+
+
+
+
+
+
+ 
+
+
+   
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+!name = !{!0}
+   ;!3=  {  !3};`(*+7
+
+
+@g = 
+
+weaa (

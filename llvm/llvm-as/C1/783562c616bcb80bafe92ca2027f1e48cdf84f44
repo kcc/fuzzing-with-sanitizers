@@ -1,0 +1,55 @@
+ 
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = :{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_eltry!3=! {!3 } 
+
+
+
+
+
+
+declare i3 @a() returns_twice
+ 
+
+
+define zer_count"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  ret i32 0
+}
+
+
+
+
+
+
+
+target  !3=! {!3 }
+ @0 = common global i3
+2
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.as8.hi.p(i64, i32)
+
+  global i32 3
+
+@idatalayout = "e-p  = l64:64:ink6

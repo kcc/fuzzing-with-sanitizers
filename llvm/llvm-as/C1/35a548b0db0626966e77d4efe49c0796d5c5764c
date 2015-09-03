@@ -1,0 +1,5 @@
+ !3=! {! 2,  i4  4 }       !2=! {!3,!3}   
+
+
+
+declare! 6!{! 2} i  ;32 !*!@llvm.nv vm.ead.ptx.sreg.envrteg0()

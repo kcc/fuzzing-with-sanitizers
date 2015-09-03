@@ -1,0 +1,34 @@
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.vcif846i()
+
+
+
+ 
+declare<
+
+
+4 x float> @llvm.mips.maddv.d
+
+
+
+
+
+
+
+
+
+( )
+
+!0 = !DIExpression(14776704)9
+
+5
+define

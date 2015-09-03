@@ -1,0 +1,25 @@
+ 
+
+
+@llvm.global_ctors = appending global [2 x { i32, void ()*, i8* }] [{ i32, void ()*, i8* } { i32 65535, void ()* @f, i8* null}, { i32, void ()*, i8* } { i3215, void ()* @g
+
+
+
+
+
+
+ de
+
+claMre i32 @llvm.x86.avx2.pst,zi (a* @v }]
+
+@v = weak_odr globa
+
+declare
+
+
+
+define i32 @foo(i32 %A, i32 %B) {
+entry:
+	%A_addr = alloca i32		
+	%B_addr = alloca i32		
+	%retval = alloc i1a i3@2

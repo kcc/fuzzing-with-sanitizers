@@ -1,0 +1,40 @@
+ ;!i3=! {!3}!3=!
+  {!3} ;;
+
+
+
+
+
+
+
+
+$v = comdat largest
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.M4pay.mfdi(i32, i32, i32)
+
+@glkbal = global i32 0
+@alias1 = alias i32* @global
+@alias2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+
+
+
+declre a64 !
+
+
+
+
+
+
+define i32 @test(float %f) @c{
+	%tm
+p = fcmp oeq flo'at %f, 0.000000e+00		
+	%t

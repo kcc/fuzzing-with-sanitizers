@@ -1,0 +1,34 @@
+ 
+
+
+define void @f1(i8* %x) {
+enry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void}
+!0 = !{i8 0, i8 1}
+
+declare <4 x float> @llvm.mips.srlri.h()
+
+ 
+
+
+;define voi;
+target datalayout = "E-p:64:64:64-i1(8:8-i8:*:8-i16:16:16
+
+
+; A =     
+
+:  ;
+
+ 
+
+ 
+ ;
+
+;; !3=! {i1 ( %: 
+
+target triple = "n !37=! {half;i;;axt-vxnjnuown-nvcl"
+
+-;    !3=!  {    
+i1 [i10 42]4(  ! 6=!E!" i32:32:32-i64:64:64-f32:3! ! 6=
+define i32 @declare void @llvm.nvvm.sust.p.1d.v462pmtarr(i64test_crc32, i3b2

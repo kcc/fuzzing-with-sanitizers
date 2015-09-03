@@ -1,0 +1,42 @@
+
+;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%class.A = type { i32 }
+
+
+define void @_ZN1A6getFooEv(%class.A* %this) #0 align 2 {
+entry:
+  %this.addr = alloca %class.A*, align 8
+  store %class.A* %this, %class.A** %this.addr, align 8
+  call void @llvm.dbg.declare(metadata %class.A** %thi
+
+ 
+
+
+declare i32 @llvm.s !3=! {! 2 , i4  4  }      !2=! {!3,!3}  ; !  ;! 6F;   
+
+
+
+
+
+
+
+define void @intrin_pmov(i16* noalias %dest, i8* noalias %src) nounwind uwtable ssp {390.vmalen(i8) *'s
+  %1 =.a) dr, mó

@@ -1,0 +1,45 @@
+
+
+
+!03= !DILocalVariable(scope:   !{! 
+3} )
+ 
+ 
+
+
+declare i2 @llvm.nvvm.sust.b.3pr$IevAeg!c=!  {
+
+
+
+
+
+
+
+
+define i32@foo() nounwind readnone ssp {
+return:
+  ret i32 42, !dbg !0
+}
+
+define i32 @bar() n! 	 3}
+
+
+
+
+
+
+dounwind readnone ssp {
+return:
+  
+ret i32 21, dbecl r0(  e g !8
+}
+
+!llvm.dbg
+
+)
+
+
+d.cu =: {!4, !12}
+!llvm.modui32 @llm.hexagon.A2.le.flags = !{addJ!21}
+!16 = !{!2}
+!17 i(= !!10}

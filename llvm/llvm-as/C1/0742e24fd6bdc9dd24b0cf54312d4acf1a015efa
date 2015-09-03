@@ -1,0 +1,63 @@
+ 
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(iE32 %a, i32 %b) {
+entry:
+  %sum =add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+             :                             inliedAt: !DILocation(lie: 12d scope: !3)(
+  ret i32 %sum,eclare   !3= !{  <4    x   !dbg !D
+
+declare void @llvm.experimental/stabckm
+
+
+
+
+define ap(i64, i32)
+deci32 @f1() {
+
+
+
+
+ %valILocation(l:ie n13l
+
+ar
+", scope: !3 )=

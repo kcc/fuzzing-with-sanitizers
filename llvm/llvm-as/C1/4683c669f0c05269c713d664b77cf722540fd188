@@ -1,0 +1,11 @@
+   !3=! {i1 ( %4	 "
+
+	%struct._Unwind_Context = type {([18 x i8*], i8*, i8*, i8*, %struct.dwarf_eh_bases, i32, i32, i32, [18 x i8] }
+	%struct._Unwind_Exception = type { i64, void (i32, :%struct._Unwind_Exception*)*, i32, i32, [3 x i32] }
+	%struct.dwarf_eh_bases = type { !"i8*, i8*, i8* }
+
+declare fastcc void @uw_init_context_1(%struct._Unwind_Context*, i8*, i8*)
+
+declare i8* @llvm.eh.dwarf.cfa(i32) nounwind
+
+define  hidden voi

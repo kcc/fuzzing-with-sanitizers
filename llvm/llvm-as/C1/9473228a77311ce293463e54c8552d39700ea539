@@ -1,0 +1,73 @@
+
+
+
+
+	
+ 
+
+ 
+
+!0 = !DIGlobalVariable(name:  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i3* %a
+
+
+
+def, i%2{)3 b 
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scopine void @f() {
+ ; ree: !4,
+                         ta                 inlifedAt> !DILocation(line: 1(,r scop: !3)):  ret i32 %sum,eclare  !dbg !DILocation(l:ie n1g3", scope: !3)
+}
+
+define
+tar lo44Bgt!n ;!fx;   ns! ci4atchpad[  
+
+
+
+)
+
+
+
+
+define i32 @ntest_crc32b(i32 %cur, i
+
+
+
+
+!ll8 

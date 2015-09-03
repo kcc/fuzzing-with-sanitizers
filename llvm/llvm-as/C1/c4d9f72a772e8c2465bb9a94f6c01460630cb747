@@ -1,0 +1,59 @@
+!3=! { !3}
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+;
+
+
+define void @bar() !dbg !6 {
+ 'unreachabl e
+}
+  
+
+
+      !2=!  {%$4*@Z40}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @ba
+
+r(i32 %a, i32 %b) {
+untry:
+  %~sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+   
+
+
+                                       inlinedAt: !DILocation(line:  !3=!  

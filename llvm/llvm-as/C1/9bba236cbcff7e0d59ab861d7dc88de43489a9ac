@@ -1,0 +1,62 @@
+  !7=! {i1 2, !47}-.  
+
+   
+
+
+
+
+declare i64 
+@llvmppc.divwe()i
+0
+
+
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "nv
+ptx:-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.3d.i32prua.(i64, i23)
+
+
+de!;ine void @foo(i64 %i*g, float* %red, i32 %idx) {
+
+  %vl = tail call i32 @llvm.nvvm.J
+
+
+
+
+
+
+
+
+
+	
+
+
+@X = global i1 true    
+;    
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "n*vptx-unknown-n

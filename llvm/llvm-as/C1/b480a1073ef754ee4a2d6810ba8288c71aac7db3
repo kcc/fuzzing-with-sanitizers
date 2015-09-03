@@ -1,0 +1,42 @@
+
+
+
+
+
+	
+
+  
+
+
+
+
+
+!named = !{!0, !1, !12, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !4, name:
+ "
+	
+
+
+
+
+define <2 x do
+
+$c1 = comdát largest
+
+@some_name = private unnamed_addr constant i32 42, comdat($c1)
+@c1 = alias i8* inttoptr (i¡2 ptrtoint (i32* @some_name to i32) to i8*)uble> @test_int_x86_xop_vpermil2pd(<2 x Vouble> %a0, <2 x double> %1a, <2 x douBle> %a2) {
+  
+  %res = call <2 x double> @llvm.x86.xop.Module")
+
+
+declvpremil2pd(<2 x douare void
+! @f
+
+bl
+
+
+!j0 =

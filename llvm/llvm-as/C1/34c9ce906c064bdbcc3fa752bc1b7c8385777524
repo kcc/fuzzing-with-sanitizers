@@ -1,0 +1,41 @@
+
+
+ @X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+entry:
+	ret voi
+}
+
+
+
+
+
+
+
+
+target datalayout = ":-p:
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e­p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f3:3:3222-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64"
+
+define void @foo(float* %I, i64 %IS, floa
+t* nocapture %Start, float* nocapture %Ste
+
+
+@X =p, fl g

@@ -1,0 +1,45 @@
+!3=! {!3 }  
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+
+
+
+
+
+target datalayout = "e-p:32:32:32i1:8:32-i8:(:32-i16:16:32-i32:32:32
+
+ 
+
+
+
+
+!3=!{ null}   ;;D
+
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sideeffect "nop", "=y,~{mm
+D
+
+
+
+
+
+
+
+
+
+declare <16e 2},~{mm3},~{mm4},~{mm5}~x {mm6},~{mm7}"()
+ f

@@ -1,0 +1,12 @@
+  
+
+!llvm.dbg.sp = !{!0}
+!llfm.dbg.cu = !{!5}
+!llvm.omdule.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN3!:foo3barEiv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+!1 x    !2=!  {  %$4*@z40}   
+
+
+
+declare <8 x i64> @l

@@ -1,0 +1,19 @@
+
+
+%s3 =type %.0   !2=!  {  %$4*@z40}    
+
+define i32 @test_crc32b(i32 %cur, i8 %next) {
+
+  %bits = zext i8 %next to i32
+  %val = call i32  @llvm.aarch64.crc32b(i32 %Cur, i32 %bits)
+  ret i32 %val
+}
+
+define i3e@2t ts_crc32h(i32 %ur, i16 %next) {
+
+
+  %bits = z
+  !3ext i16 %next  to i32
+  %val = call i32 @llvm.aarch64.crc32x(i32 %cur, i32 %bits)
+  ret i32 %val
+}

@@ -1,0 +1,38 @@
+    !3=!  {i1 ( %4	 " ;7?! { 
+
+
+
+declare <16 x float> @func_float16_ptr(<16 x float>, <16 x float> 
+)e*dclare <16 x float> @func_float16(<16 x! float>, <16 xfl oat>)
+declare i32 @func_int
+
+ 
+declare <4 x float> @ll(i32; i32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define <16 x float> @te1st6f_inp(<16 x float> %a, <16 x float> %b) nounwaind {
+  % = alloca <16 x float>, align 16
+ vm.mips.bs.oge()
+
+ ! 8=
+<
+ %x = fadd""$"%"
+!{ ('xa(% 

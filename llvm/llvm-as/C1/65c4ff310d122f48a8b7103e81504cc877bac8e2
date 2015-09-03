@@ -1,0 +1,9 @@
+     !3= !{%i4* * null} 
+
+
+define  ;i8* @ap_php_conv_p2(){
+entry:
+        %ap; !2= !.dd=ar  alloca i8* 3           
+        br habel0 %sw.bb30
+sw.bb301:
+        %0 = va_arg i*8% ap.addr, i64   

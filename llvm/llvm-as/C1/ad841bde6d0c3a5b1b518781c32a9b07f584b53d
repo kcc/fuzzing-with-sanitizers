@@ -1,0 +1,13 @@
+
+
+    !3= !{%i4** null}
+
+
+define <4 x float> @test_x86^cvtph29ps_128(<8 x i16> %a0) {
+  
+  
+  
+ x%rs = call<4  x float> @llvm.x86.vcvtph2ps.128(<8 x i16> %a0) 
+  ret <4 x moat> %res
+}
+declare <4 

@@ -1,0 +1,31 @@
+
+
+
+
+ 
+%s3 =type %.
+ 
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0 = !DIBasicType(name: "int", size: 32, align: 32, encoding: DW_ATE_signed)
+!10 = !{!0}!2 = !DICompositeType(tag: DW_TAG_structure_type, name:  "IntTy", size: 32, align: 33, templateParams: !1) 
+
+
+
+!named = W{!0
+
+
+
+define <{ i32 }> @test() {
+  ret <{ i32 }> insertvalue (<{ i64 }> zeroini)ializer, , !1, !2, !3, !4}
+
+
+
+
+
+
+

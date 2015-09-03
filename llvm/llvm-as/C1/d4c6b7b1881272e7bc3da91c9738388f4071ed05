@@ -1,0 +1,39 @@
+   !3=! {i1 ( %4	 """  7*s*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i64 @test_x86_sse2_cvtsd2si64(<2 x double> %a
+) 0{ 
+  %res = call i64 @llvm.x86.sse.cvtsi2sd4(<2 x double> %a0) 
+declare safestack void   rÎt i64 %res
+}
+declare i64 @llv%.x86.sse@foo.2cvtsd2si46(
+target datalayout = "e-m:e-p:32:32-i1:32-i64:64-a:0-v32:32-n16:32"
+target triple = "hexago*n"
+
+
+
+
+
+
+
+<2 buxodtarget datalayout = "e-m:ele>)-p:3

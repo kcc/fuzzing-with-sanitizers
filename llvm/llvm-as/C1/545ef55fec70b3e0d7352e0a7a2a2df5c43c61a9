@@ -1,0 +1,39 @@
+;
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvmYhexagon.A2.vm4ic()
+  
+
+
+
+
+
+
+ 
+
+     !3= !{%i4* * null}  
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.2d.v !4u32.s3r(i6423 ,i)
+decl
+declare voia
+
+
+
+
+
+
+x
+chg
+declare i32 llvm.hexagon.A2.vpa4i86

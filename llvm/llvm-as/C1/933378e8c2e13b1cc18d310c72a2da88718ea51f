@@ -1,0 +1,13 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}   ; 
+
+declare void @llvm.gcroot(i8**, i8*)
+
+define void @f(i8* %x) {
+	%root = alloca i8*
+	c *,J
+
+!named = !{!0, !1, !2, )3,all voi`  !4}
+
+
+
+@!llvm8 =.

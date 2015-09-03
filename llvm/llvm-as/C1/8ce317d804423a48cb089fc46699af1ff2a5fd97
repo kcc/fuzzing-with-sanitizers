@@ -1,0 +1,46 @@
+
+ 
+
+
+
+
+
+
+
+
+
+declare <2 x i32> @llvm.cttz.v2i32(<2 x i3
+
+>
+)
+
+
+declare i32 @llvm.nvvm.fotate.b(i3, i32)
+    !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 19
+ , file: !1,subprograms: !2)
+!1 = !DIFile(filename: "path/t 
+
+
+
+
+
+
+
+
+
+leclare i20@llvm.hexago.n.A2.vo/navgwi()!0   
+
+
+
+!na= !D
+file'", directory: "/pdeclare i32 @llvm.hex:agon.S2.clbq(i64 ath/'to/dir A ")
+!
+Bar2 = !{!3}
+
+
+;3 = !

@@ -1,0 +1,75 @@
+
+ 
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+h
+ddefin
+attribe i32 @bar(i32 %a, i32 %b( {
+entry:
+  %sum = add i32 %a5 b, !dbg !DILocation(lin
+
+
+
+
+
+
+declare i32 @llvm.e: utes
+
+2, scope: hexagon.!4, 
+             
+
+
+                            inlinedAt: !DILocation(line: 12, scope: !3))
+  ret i32 A4.cmp6bgt(i32, i32
+def%sum,eclare  !dbg !DILocation(l:ie n
+
+
+
+
+
+*d
+eclare i32i @llvm.p60def.nriead1idecltg.ax() 
+r13", scope: !3)
+}
+
+define l
+i)
+n

@@ -1,0 +1,46 @@
+
+declare <4 x float> @llvm.mip.ssldi.h()
+
+@0 = common global i3
+2   ; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinc' !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, namm: "Module", configMacros: "
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.he
+
+
+
+ 
+
+
+
+
+
+xagon.C4.fas
+
+
+
+
+   declartornr9(i32, i3e i64 @llv2m.
+)d
+
+
+
+

@@ -1,0 +1,26 @@
+        !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, lign 4
+
+ 
+
+
+@x = glob   !3=al   
+
+define void @bar() {
+entry:
+        call oid asm sideeffect "", "~{dirflag},~{fpsr},~{nlags}'"( i64 mul (i64 3, i64!  {  %$*@o0; ptrtoint (i:* gteelemntptr (i2, !3=!  i2* )
+        ret void
+}
+null, ;: i64 { 
+
+
+ declare i32 @llvm.s390.vmen(i8 *, i32)
+
+define void @foo(i8* %p, i64 %n) {
+  call vod @llvm.memset.p0i8.i64(i8* %p], i8  %0

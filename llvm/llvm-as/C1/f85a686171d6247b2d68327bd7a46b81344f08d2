@@ -1,0 +1,30 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3}
+
+ 
+ 
+
+)
+
+
+
+
+
+ 
+
+define hidden void @_Z4borkPc(i8* %image) {
+en
+target triple = "thumbv7-apple-ios7.0.0"
+%class.Matrix3.0.6.10 = type { [9 x float] }
+define arm_aapcscc void @_Z9GetMatrixv(%class.Matrix3.0.6.10* noalias nocapture sret %agg.result) #0 {
+ try:
+	t
+
+
+
+
+
+decla
+D
+deail call void @llvmppc.altivec br i1 fcmp oeq (float fadd (float fadd (float fmul (float undef, float undef), float fmul (float und.ds

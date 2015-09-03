@@ -1,0 +1,18 @@
+
+
+
+
+define <4 x i16> @vclz16(<4 x i16>* %A) nounwind {
+
+        %tmp1 = load <4 x i16>, <4 x i16>* %A
+        %tmp2 = call <4 x i16> @llvm.arm.neon.vcls.v4i16(<4 x i16> %tmp1)
+
+    
+
+
+
+@ = constant i32 5		
+@Y = internal global [2 x i32*] [ i32* @X, i32* @X ]  !3=!  {i140s0x4404400844;       !3  =!{!3};       !3(
+
+
+$f = c   $reomdat't

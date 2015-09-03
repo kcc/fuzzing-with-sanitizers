@@ -1,0 +1,17 @@
+
+
+
+ !2=! {i1 2, !3};I;
+
+
+:
+
+
+         
+
+
+:define i60 @test1() {
+   ret i60 fptosi(float 0x0B9CD0999A00000 0 to i70)
+}
+define fl'at 
+%0  @test2(= !3= typ) e

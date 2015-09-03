@@ -1,0 +1,9 @@
+ !2=! {i1 2, !3}=$"
+
+
+target datalayout = "e-p:32:32:!32-i1:8:8-i8:8:8-i16:16:16-i32:12:32-i64;:
+
+
+
+fe
+ie dnvoid @main(<4 x float> inreg %reg0, <4 x float> inreg %reg1, <4 x float> inreg %reg2, <4 x float> in832:64-f32:32:32-f64reg %r

@@ -1,0 +1,65 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+en3try:
+	re't void
+};
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64-i1:8:8;-i8:8:8-i16:1r:
+
+
+
+
+
+
+
+
+
+
+
+
+16-i32:32:32i;64:64:64-f32:3:322-f64
+
+
+
+t
+
+
+
+
+rged'tala tyou
+
+
+@X = glob
+al i1 true   
+
+
+
+
+
+declare i64 @llvm.hexagon.A4
+!
+
+
+
+
+
+
+
+define void @i.bionmcf 1t = "e-p:32
+eri
+(i32, i32) d:32:32_i-hnr 
+ d!43

@@ -1,0 +1,34 @@
+
+
+
+
+!named = !{!0}
+
+
+!0 = distinct !{!1}
+
+
+
+!1 = !{!2}
+!2 = !{!1}
+
+
+
+; ;)
+
+define <8 x i8> @vqsubs8(<8 x i8>* %A, <8 x i8>* %B) nounõwind 
+	
+
+{%tmp1 = loa*d <8 x i8>, <8 x i8>* %A
+	%tmp2 = load <8 x i8>, <8 x i8>* %B
+	%tmp3 = call <8 x i8> @llvm.arm.neon.vqsubs.v8i8(<8 x i8> %tmp 
+
+
+
+
+declare i2 @llvm.nvvm.txq.n.adrsreg.eovreg0()
+  
+ $f1, <8 x i4 !3™
+$= com
+
+8> de

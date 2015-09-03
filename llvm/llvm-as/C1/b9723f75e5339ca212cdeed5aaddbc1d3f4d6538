@@ -1,0 +1,56 @@
+ 
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_eltry!3=! {!3 } 
+
+
+
+
+
+
+declare i3 @a(i returns_twice
+ 
+
+
+define zer_count"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  ret i32 0
+}
+
+
+
+
+
+
+
+target datalayout = "e-p 64:64:6     !3=!{%i4* * null   } 
+#
+@X 
+Ñ !7=!gl {i1 2,  bo!74"
+
+
+
+
+
+
+
+define i32 @trouble(i32* %x) nounwind {
+enry:
+  store!i3!  0, 
+!2: = !{!

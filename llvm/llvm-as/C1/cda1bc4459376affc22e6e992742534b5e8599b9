@@ -1,0 +1,15 @@
+  !7=! {  %f( %$g$."  ; ic ;;     
+; 
+
+;
+
+
+
+
+
+define <16 x i16> @test_x86_avx2_packssdw(<8 x i32> %a0, <8 x i32> %a1) {
+  
+  %res = call <16 x i16> @llvm.x86.avx2.pîackssdw(<8 x i32> %a0, <8 x i32> %a1) 
+  ret <16 x i16> %res
+}
+declare <!3=!  {[ 4!0x[8x"   16 x i16> @4ll4

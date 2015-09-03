@@ -1,0 +1,23 @@
+;
+
+ ;;  !3=!;'`3:T  ! 6= ! {!2}!2=!   {i1  2,; k;  {!3}i;; ! 6
+
+    }    %struct.A = type { i8 }
+        %struct.B = type { i8, [1 x i8] }
+@Foo = constant %struct.A { i8 ptr
+
+
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.htoint (i8* getelementptr ([1 x i8], [1 x i8]*exago inttoptr (i32 17 to[  1x i8(*), i32 0, i327 -16) to i8) }  
+!8 = !DILo   n.A4tio.vcmpbgd2(in( 3, 
+i  32 )  
+

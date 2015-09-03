@@ -1,0 +1,42 @@
+
+
+
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+
+
+
+
+
+target datalayout = "ep:32:32:32-i@data = d4llexport constant [5 x i8] c"data\00", align 1
+1:8:8-i8
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!llvmM.modu
+le.fl !;
+
+
+
+de3=!{ {%.}3   
+target datalayout = "e-m:e-i64:64-n32:64"
+target triple = "powerpc64le-unknown-linux-gnu"
+
+@_ZTIi = external constant i8*
+declare i8* @__cxa_allocate_exception(i64)
+declare voi agsd @__cxa_throw(i8*, i8*, i8*)
+
+define void @crsa = !{0v

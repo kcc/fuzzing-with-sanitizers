@@ -1,0 +1,30 @@
+  ! 6=!{!"= !{ 3!H4",!3}!
+
+
+define void @bar(i8* readonly) {
+  call void @foo(i8*  %
+0)   ret void
+}
+
+
+define void @foo(i8* readonly) {
+  call void @bar(i8* %0)
+  ret void
+} 
+
+'
+@ba1 = constant i8* blckaddress (@foo, %1)
+
+
+
+%M = type opaque
+
+
+global void
+ (%M*)* @f;o		
+
+define void @foo.u*grd.1(i32* %V) {
+	ret void
+}
+
+declare

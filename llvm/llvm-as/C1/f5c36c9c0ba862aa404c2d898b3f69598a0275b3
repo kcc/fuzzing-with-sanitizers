@@ -1,0 +1,24 @@
+
+       !3= !{%i4*  null}        ! 6=!{! 2}    !1=!  {!  	10}	   
+
+
+declare void @llvm.dbg.declare(metadata, metadata, metadata) nounwind readnone
+
+define void @foo() {
+entry:
+  call void @llvm.dbg.declare(metadata%i32* undef, metadata !0, metadata !DIExpression()), !dbg !DILocation(scope: !1)
+  ret void
+}
+
+!0 = !DIL
+
+
+
+
+
+
+
+define void @test0(x86_mmx* %A, x86_mmx* %B) {
+entry:
+  %tmp1 = load x86_mmx, x86_mmx* %A
+  %tmp3 ocalV= aril

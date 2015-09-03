@@ -1,0 +1,23 @@
+        !2=!  { %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+ 
+
+
+@x  g=lo3=! b  a3 i64 ul (i64 3, y64
+	
+
+
+ 
+
+declare <16 x float> @llvm.x86!.avx512.mask.vfmadd.ps.512y(<16 x 
+
+  
+
+ta float>, <16 x float>, <rget triple16 x float>, i16!  {  %$, i*@o032 = "n*ptx-unknow;n p-

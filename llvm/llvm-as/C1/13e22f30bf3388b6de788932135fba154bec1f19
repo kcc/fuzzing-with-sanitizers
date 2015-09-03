@@ -1,0 +1,33 @@
+   ;>?+ 
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "stat!.i;=!epoin  !t-example"
+
+ {entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+} 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.mphb6Qips(
+)

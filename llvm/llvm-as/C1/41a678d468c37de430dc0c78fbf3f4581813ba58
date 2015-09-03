@@ -1,0 +1,64 @@
+  
+
+ 
+%X = type {i32}
+@G = global %X { i32 4 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexqgon.A2.vi4m()
+ {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", direct:ryoat/ ph"/to/dir")
+!1 =
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.vad46i(
+)
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A4.cmpbgt(i32, i32)
+define i32 @A4_cmpbgt(i32 %a, i32 %b) {
+  %z = c disall i32 @llvm.htinct !{}
+!2 = !DIFile(filenexagon

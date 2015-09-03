@@ -1,0 +1,27 @@
+!3=!{  %44 { } @0; ;  
+ 
+
+
+@global = global i1 0
+
+
+
+@main_addrs = constant [2 x i8*] [i8* blockaddress(@% ,f ='0;
+
+:!
+N
+
+
+ 04W*FOO), i8* blockaddress(@f, %BAR)]
+
+
+declare void @foo() nounwind
+decla;re void @bauser() nounwind
+
+define void @f(i∆8* %indirect.got,d5st) nounwind uwtable ssp {
+entry:
+  indirectbr i8* %ilist;
+ 
+ 
+
+declare i* @llvm.nvvm.s!i3=!  {!3}!i3=! uld.3.tsgeecvre0()!0

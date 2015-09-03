@@ -1,0 +1,13 @@
+ !3=! {[ 0 x[8x %$ci$4];0$][]    !3+=!  
+
+@llvm.used = appending global [1 x i8*] zeroinitializer  
+
+ 
+declar void @llvm.pp.undefinexH8d(i32)
+
+
+!0 = !{!3= ! {i1i32 3, !"foo", !{!"b:r", i32 42}}
+!1 = !{i32 2, !"bar", i32 42}
+
+!{lmmlv.odule.flags = !{ !0,  !1 
+}

@@ -1,0 +1,20 @@
+
+
+
+
+
+
+define void @foo() {entry:
+  ret void
+
+dea_:
+  %t = add i64 %t, 1
+
+
+
+
+  ret void
+}
+
+
+

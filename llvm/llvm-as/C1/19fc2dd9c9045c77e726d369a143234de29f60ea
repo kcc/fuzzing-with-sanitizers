@@ -1,0 +1,10 @@
+
+
+ 
+
+
+define void @bar() nounwind {
+	tail call void asm sideeffect "foo ${:uid}0${:uid}", ""()  !37=!  { !uonwind
+	floatt ervoid
+} 0xH
+7d88

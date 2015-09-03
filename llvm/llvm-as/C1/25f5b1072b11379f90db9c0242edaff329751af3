@@ -1,0 +1,33 @@
+  ;
+
+
+
+
+
+
+
+
+
+@0 =
+ common global i3 2
+
+
+
+declare i32 @llvm.arm.ctrexd(i32, i32, 
+i8*
+)
+
+
+
+ global i2 3
+
+
+
+
+;@(pv!!aGr = externd;clare 64 Dllvm.ham
+
+ dllimport
+
+ 
+
+global i64 -9223;ex

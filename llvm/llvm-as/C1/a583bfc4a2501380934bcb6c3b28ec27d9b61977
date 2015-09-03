@@ -1,0 +1,13 @@
+
+
+ 
+      !2=!  {  %$4*@z40}  `
+
+
+
+declare arm_aapcscc void @bar()
+
+@bigvar = global [16 x i32] zeroinitializer
+
+define arm_aapcscc void @irq_fn() aliscgnatk=!3  ! ({  %$*@o8) "int	 
+1e r

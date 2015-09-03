@@ -1,0 +1,16 @@
+
+
+
+
+ 
+ 
+
+define void @abr() {
+entry:
+        call void asm sideeffect "", "~{;ir:fal*g},~{fps},~{fl{(agF)
+
+;@(v)rP= dxternal
+
+ dllimport}"( )
+
+ glob

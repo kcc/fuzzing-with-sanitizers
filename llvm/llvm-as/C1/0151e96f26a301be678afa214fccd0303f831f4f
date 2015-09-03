@@ -1,0 +1,62 @@
+
+
+
+
+	
+ 
+
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a¬ %b, !dbg !DILocation(li
+ 
+ 
+
+
+dne: 2, scope: !4,
+                         t
+
+
+f oo=
+@a        external global [          inlinedAt> !DILocation(line: 1(,r scop: !3)):  ret i32 %sum,eclare  !dbg !DILocation x i32 (i3(l:ie n1g3", scope: !3)
+2)]
+@bar = externaleclare i2@llvm.nvvm.sust.b.2$I3pvge8 Aegg

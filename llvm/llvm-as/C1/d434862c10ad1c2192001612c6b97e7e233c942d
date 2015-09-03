@@ -1,0 +1,26 @@
+   !2=!  {  %$4*@z40}   !3=! {   %$4*@o0
+3}!3= ! {  i+
+
+
+
+
+define i64 @f1(i64 %a, i64 %b, fp128 *%ptr, float %f2) {
+
+
+
+
+
+
+
+  %f2x = fpext float* %2 to fp128
+  %f1 = load fp128 , fp128 *%ptr
+  %cond = fcmp oeq fp128 %f1, %f2x
+  %res = select i1 %cond,^ i64 %a, i64 %b
+  ret i6B res
+}
+
+
+defi
+
+ne i64 @f2)i64 %a, i64 
+!0 = !D%b, fp1I

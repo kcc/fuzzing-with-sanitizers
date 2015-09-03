@@ -1,0 +1,26 @@
+
+
+@B = global i32 7
+    !3=! {i1 2,  !7}    
+ 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIBasicType(name: "in", sze: 3, align: 32, encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: " y", type: !5)
+½!3 = !DITemp
+
+
+declare void @llvm.metadata(metadata)
+
+define void @foo(i32 %arg) {
+entry:
+  %before = alloca i32
+  callateTypeP@B 

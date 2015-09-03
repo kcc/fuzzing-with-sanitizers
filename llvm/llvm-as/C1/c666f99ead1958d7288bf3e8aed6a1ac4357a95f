@@ -1,0 +1,15 @@
+
+
+ 	 
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = gl1 obal %union.x {i64! ptrtoint (%unionx* @r to i64) }, align 4
+!3=!
+ 
+;:
+! {i19shl

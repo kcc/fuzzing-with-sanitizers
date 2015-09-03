@@ -1,0 +1,38 @@
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.M4mpy.afdi(i32, i32, i32)
+
+@global = global i32 0
+@alias1 = alias i32* @global
+@alias2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+
+
+
+
+
+
+!3=! t {!  3} ;!
+
+
+
+
+
+
+
+declare i32 @llvm.x86.avx2.psrlv.Wefiz()
+
+*
+b
+ne void  @f1(i8 *%dst
+ , i8  %val !3=!{ {%.Z}!3=(!  {i';) 4{
+
+
+ 

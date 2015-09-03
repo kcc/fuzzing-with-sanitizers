@@ -1,0 +1,55 @@
+    
+
+;  !3=! {! 2, !  4  }   
+
+
+
+
+
+;   
+;
+
+
+
+      
+
+define i32 @bad1() !prof !0 {
+ et 3ri 2 *
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"functiSon_eyr_tncOunt"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  ret i32 0
+}
+
+!2 = !{!"som
+decla
+; 
+
+;
+
+
+
+declarere <4x float> @llvm.mie_other_count", i64 200}
+
+
+
+wdefine i32 @bad4() !prof !3 {
+  ret i32 0
+}
+
+!3 = !{!"function_e!3=! {i14	
+ declar ( 

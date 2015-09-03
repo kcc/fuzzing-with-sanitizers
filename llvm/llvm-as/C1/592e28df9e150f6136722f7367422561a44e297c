@@ -1,0 +1,39 @@
+    
+
+define  void @f1(i8* %x){entry:
+  store i8 0, i8* %x,align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}   
+
+
+
+
+
+ 
+
+
+
+
+à
+target datalayout = "p:32:32
+ "
+
+@A = g 
+
+
+
+declare i32 @llvm.x6.rse2.crc2.32.lobal i64 0
+@8B = global i64 0
+
+
+
+
+
+
+@C = g#o!3=!  {!bal i1 icmpqe  (3}  
+ ; i64* ge(i3, i8) telementptr) inounbounds (i64!)xYch
+
+
+
+declare i!.gnw 32 @llv

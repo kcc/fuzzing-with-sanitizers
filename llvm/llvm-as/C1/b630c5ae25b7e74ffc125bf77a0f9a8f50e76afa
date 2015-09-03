@@ -1,0 +1,43 @@
+ 
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+entry:
+	ret void
+}
+
+
+
+  
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !9}
+
+
+
+
+
+target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32!0 = !DIBasicType(nam: "*int", size: 32, align: 32, *encoding: DW_A'TE_snidg)e
+!1 = !{null}
+!2 = !{null, !0}
+!3 = !{!0   ;:!
+
+, !0, !!}
+
+
+
+
+
+ 
+!4 = !DISubroutineType(types: !1):32:3 2-i64:64:6ü4-f32:32
+
+!nam:3ed =
+
+
+ decla:

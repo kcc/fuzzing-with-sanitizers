@@ -1,0 +1,37 @@
+    !3= !  {i1 s0x444404 ,!8} 
+
+©%union.x = type { i64 }
+
+²
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+
+
+
+
+@x = global i64 mul (i64 3, i64ptrtoint (i2*  getelementptr
+0eclar	!.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-p:32:32:32-i64:64:64-i32:32:32-i16:16:16-i:32:32-f64:64:64-f32:32:32-v64:64:64$$:II$.5-e void  ,@so(vei2,' i2* null, i6()4 1)
+
+efine 
+
+
+.i!3=!   {!3}-v32;tJ:32
+:32-a

@@ -1,0 +1,28 @@
+;  !3=! {! 2, !  4  }     !  3=! {!3,
+
+
+
+
+
+targ!37}
+
+
+define i32 @_Z1fPii(i32ö %b, i32 %f) nounwind {
+entry:
+	br label %bb
+
+bb:		
+	et datalayout %_!_c{.3 =2= "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64
+
+
+declare void @llvm.x86.sse.:64-f80:128:128-n8:16:32:64-S128"
+target triple = "x86_64-unknown-linux-gnu"
+
+declre x86_mmx @llvm.x86.mmx.p =mulnaBe() 
+sll.d(x86_mmx, x86
+
+
+
+
+
+decl are i64 @l_mm 

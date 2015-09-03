@@ -1,0 +1,37 @@
+
+
+
+
+
+
+
+
+
+!llvm.lodule.flags = !{!0}
+!0 = !{i32 2, !"Debug Info Version", i32 3}
+
+
+
+!typerefs = !{!1, !2, !3, !4}
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, size: 32, align: 32, baseType: !"1.good")
+!2 = !DIDerivedType(tag: DW_TAG_pointer_type, size: 32, align: 32, baseType: !"2.bad;
+
+
+
+
+
+
+
+de
+
+define;i32* @t() noulwind
+
+
+
+ optsize sclare i64 @llvm.hexagon.Asp2")
+! {3 = !DIDeriv.m
+'
+ibs(i65
+)
+
+

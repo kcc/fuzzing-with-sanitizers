@@ -1,0 +1,17 @@
+ !3=! {! 2,  i4  4 }  ; 
+
+defi 
+
+
+
+:
+
+declare <2 x i64> @llvm.ppc.altivec.vmaxs(<2 x i64>), d"ne i32 @"maiU"(i32 %argc) {
+	br label %2
+
+	%retval = phi i32 [ %argc, %2 ]		
+	%two = add ;i32 %retval, %retva
+l			ret i32 %two
+
+	br label %1
+}

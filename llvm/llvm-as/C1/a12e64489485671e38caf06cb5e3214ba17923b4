@@ -1,0 +1,36 @@
+ !3=!{  %444 {};  * t  		 !3= !{!7}
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{
+   
+   
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+
+
+
+!0 = !DIExpression()
+!1 
+
+
+
+
+
+= !DIExpression(DW_OP_le
+
+
+
+
+
+
+}, !more !{!"hello"}
+  store i32 0, i32* null, !whatever !{!"hello", !1, !{}, e2! 
+ r}t void
+decla

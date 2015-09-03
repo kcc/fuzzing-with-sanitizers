@@ -1,0 +1,15 @@
+    !3=!  {i1 s0x4440	,!4 }
+
+defi'e void @bar() {
+entry:
+        call void asm sideeffect "", "~{di}flgra,~{fpsr},~{f lags}"( )
+
+
+
+
+    
+
+
+declare i    ret v64 @llvm.hexagon.S2.esr.i.p(oi di64, i32)
+defin
+e

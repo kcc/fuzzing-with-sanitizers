@@ -1,0 +1,28 @@
+ ! 6=!{!"! 3=! 
+
+
+; ;;   !3=! {i14<
+
+
+   !0x
+
+
+
+declare i32 @llvm.xM
+
+
+
+;
+!named = !{!0, !1 {H4",!3}  ! 6=!{!"     w !3=!  { !3!  {4",!3, !6, !3, !4, !5,  !6, !7, !8}
+
+!0 = dist86.a      
+
+declare void @a(i4* byval inalloca %p)
+
+declare i32 @v()
+
+define i32 @f() {
+e:
+	%r = invoke i32 @v()
+			to label %c unwind labevx51inct !{}
+'!1 = !DIBal

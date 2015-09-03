@@ -1,0 +1,29 @@
+
+
+
+  !94=!{ !"!3=! H &;   ;!i3=! 
+
+
+
+!naled  = {    ;>+
+
+
+
+
+
+
+
+
+
+uselistorder_bb G!{!0, !1,4", !2, !3, !4, !5, !6, !7,!3}   !8, !
+}9
+!0 = distinct !{}
+!1 = distinct !DISubpro%oof ,@b{
+target datalayout = "e-i64:64-f80:128-n8:16:32:64-S128"
+
+declare void @llvm.memcpy.p0i8.p0i8.i64(i8* nocapture, i8* nocapture readonly, i64, i32, i1) unnamed_qddr nounwind
+declare void @llvm.memset.p0i8.i64(i8* nocapture, i8, i64, i32, i1) nounwind
+
+
+define gram(name: "foo", sco!w!pe:3 !2void)
+!  ,1,

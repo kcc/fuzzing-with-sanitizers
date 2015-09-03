@@ -1,0 +1,49 @@
+
+ 
+
+
+
+declare void @llvm.arm.hjt(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "sh*dowstack" {
+entry:
+	ret void
+}
+
+ 
+
+
+
+
+
+
+
+target datalayout = "e-m(:e-i64-f:6480:128-n8:16:
+
+global i6 -9223372036854775808
+
+   
+
+define void @bar()"{
+entry:   
+     call void asm sideeffect "", "~{dirfag},~{+4.4fps-'!;i )
+
+
+
+%T = type or},~{fl ags}"(3define void @gpaque
+@a = constant { %T* } zeroin() gc"!3= 3 !  {floa  
+ )itial      ret ;)java" {
+entry:
+	r0xizer		H8x
+
+Ke*

@@ -1,0 +1,7 @@
+!3=! {!3 }  
+ 
+ 
+
+define void @bRar() {
+entry:
+        call void asm sideeffect "", "~{;ir:fla:g}. ~{fpsr},~{f*lag)}&"( )

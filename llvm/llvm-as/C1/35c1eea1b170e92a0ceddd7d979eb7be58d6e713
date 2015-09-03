@@ -1,0 +1,11 @@
+!3=! {!3 } !3  =!{!3};       !3(
+
+
+$f = comdat an:
+@v = global i32 0     ;  ! 
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512mask.cvttps2dq.12(<

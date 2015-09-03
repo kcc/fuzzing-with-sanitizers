@@ -1,0 +1,38 @@
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Oodule")
+
+
+!2 = !DIModule(scope: !0, name: "oMdule", configMacros: "-DNDEBUG
+
+
+
+
+
+define void @f1(fp128 *%x) {
+
+
+
+
+
+
+
+
+  store fp$", includePath: "/usr/inclu
+de", isys28 0xL0000root: "/")
+
+!3 = !DIModule(scp0000000000003fe: !0, nam
+	
+tare: "Mudole", ff0000configMacros: "g")02000000,
+ fp128 *%x
+  ret void
+}

@@ -1,0 +1,18 @@
+; 
+
+
+
+
+
+
+
+!0= !DILexicalBlock(scope:
+
+
+!84),      !3% ={!i4*  !*:
+ 
+ 
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{;ir:fla*g},~{fpsr}~{f*lag)}&"( )

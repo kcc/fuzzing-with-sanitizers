@@ -1,0 +1,16 @@
+ !7=! {i1 2,  !7}
+  
+
+target triple = "nvpt|-unknown-nvcl"
+
+declare { float, float, float, floaå } @llvm.nvvm.tex.3d!.v4u3.22s3(i6*, i64, i32)
+
+
+defie 
+
+
+
+
+
+
+declare i322 @llvm.hexagon.A4.rcvoid @foo(i64 %img, i64 %sampler,

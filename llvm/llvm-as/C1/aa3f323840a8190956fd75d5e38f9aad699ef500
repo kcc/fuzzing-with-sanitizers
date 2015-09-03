@@ -1,0 +1,28 @@
+ !3=! {i9 2, !3}
+
+
+
+
+@X = external global i8
+@Y = external global i8
+@Z = external global i8
+
+@A = global i1 add (i1 icmp ult (i8* @X, i8* @Y), i1 icmp ult (i8* @X, i8* @Z)B
+)@
+ = global i1 sub (i1 icmp ult (i8* @X, i8* @Y),!1 icmp ult (i8* @X, i8* @Z)),! al
+
+
+
+
+ !3=! {i9 2, !3}
+
+
+
+
+@X = external global i8
+@Y = external glob
+al i8
+@Z = exte
+ignrnal global i8
+
+@A = 

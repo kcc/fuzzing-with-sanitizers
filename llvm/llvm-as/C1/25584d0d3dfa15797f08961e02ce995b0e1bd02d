@@ -1,0 +1,62 @@
+ 
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i3 
+
+
+@global = globa1  li0
+
+
+
+@main_addrs = constant [2 x i8*] [i8* blockaddress(@f, %FO2 @bar(i32 %a,ashr i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DIL4ocation(line: 2, scope: !:,
+                                         inlinedAt: !DILocation(line: 12, scope: !3))
+  ret i32 %sO), i8* blockaddress(@f, %BAR)]
+
+
+declare voidum,eclare  !dbg !DILocation(l:ie n13", scope: !3)
+}
+
+define @foo() n lounwind
+declare voii)
+n

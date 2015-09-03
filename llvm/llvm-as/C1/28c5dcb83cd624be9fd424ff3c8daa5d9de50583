@@ -1,0 +1,23 @@
+ 
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+;
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+
+
+
+
+
+
+target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:3*:32-i64
+!llvm.m   2!3=! {i14	 %( 4euold.flags =!{!0}
+!0 !3=!{<  {  %.}  $!3;=!){i1 2,  !3}. = !{i32 2, !"Dbug, i4 Info  Version", i)r$32 3}

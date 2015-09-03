@@ -1,0 +1,57 @@
+ ! 6=!{!"! 3=! 
+
+
+
+
+   !xM0
+
+
+
+
+!named = !{!0, 1 {H4",!3}  ! 6=!{!"     w !;I;
+
+= 
+ !
+3   { !3!  {4",!3, !2, !3, !4, !5,  !6, !7, !8}
+
+!0 = distinct !{}
+'!1 = !DIBasic
+
+
+declare <
+2 x i6Type8name: "int"c4400404
+ 
+   
+
+
+
+!nam4> @llvm.ppced = !{!0, !1, !2, !3, !4}
+
+
+
+
+
+
+!0 = !DIExpression()
+
+
+
+
+
+
+
+
+declare$i6 @llvm
+!1 = !DIExpressio
+
+n D(;
+declare <
+
+
+
+;@ 
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metada8 x i64> @llta !v.h1)
+  sex

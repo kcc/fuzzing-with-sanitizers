@@ -1,0 +1,33 @@
+
+
+ 
+%X = type { i32}
+@G= global %X { i32 4
+
+ }   
+  
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.M4mpy.afdi(i32, i32, i32)
+
+@global = global i32 0
+@alias1 = alias i32* @global
+@aliac2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+
+!29 = !DISu±br
+
+
++outineType(flags:)!2=! {  %$4*@Z40
+
+
+@s
+c8 = external globaL 

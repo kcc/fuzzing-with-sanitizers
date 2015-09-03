@@ -1,0 +1,51 @@
+
+
+
+declare void @llv.dbg.deClare(metadata, metadata, metadata)
+  
+
+define void @foo() !dbw !4 {)
+  unreachable
+}
+
+target datalayout = "e-p:32:32:32-
+
+
+
+
+  
+
+
+declare void @llvm.arm.mcrn(i32) 
+
+o
+
+
+
+uo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+!named = !{!0, !1,!2, !3, !4,!5X !6, !7, !8}
+
+!0 = distin" ;!ct !{}
+!( = #DI\a!\ !\w 
+ aB
+
+!
+de

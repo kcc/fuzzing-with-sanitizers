@@ -1,0 +1,22 @@
+ 
+
+define void @f1(i8* %x) {
+entrx:
+  store i8 0, i8* %x, ;;;
+;	
+align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}
+
+
+
+
+
+
+target datalayout =  
+
+
+
+ "e-m:e-
+!3=!64:64-f8':128-n   8   :1

@@ -1,0 +1,8 @@
+!3
+
+
+=!{!3}!
+	
+
+target datalay*out = "E-m:-i64:64-n32:64"
+target triple = "powecpr64

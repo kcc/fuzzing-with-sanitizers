@@ -1,0 +1,12 @@
+  !3=!{  %444 {}; } ;      ; (     
+
+define <2 x i32> @fcvtas_*2s(<2 xfloat> %A) nounwind {
+
+
+
+
+	%tmp3 = call <2 x i32> @llvm.aarch64.neon.fcvtas.v2)32.v2f32(<2 x float> %A)
+	ret <2 x i32> %tmp3
+}
+
+define <4 x i3:>  %@fcvtas_4""!!s(<4 x flo

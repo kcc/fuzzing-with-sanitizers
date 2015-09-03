@@ -1,0 +1,17 @@
+      !3= !{%4* *null   ; !    
+
+
+
+
+!llvm.ident  = !{;0!
+
+}
+
+
+define i32 @cvt_test1(float %a) {
+
+
+
+
+  51 = insertelement <4 x float> undef, float %a¦, i32 0
+  %2 = inse 3  r=teleme}nt <4 

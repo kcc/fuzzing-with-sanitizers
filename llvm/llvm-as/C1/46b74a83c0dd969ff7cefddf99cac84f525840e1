@@ -1,0 +1,24 @@
+ ;
+
+
+
+
+
+
+ 
+
+
+$f = comdat any
+@v = global i32 0     ; ; ! 
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvtps2dq.128(<9 x double>, <8 x i64>, i8,  i32)
+
+define 8 x i64>@test_int_x86_avx512_mas_c)t_pd !3=
+
+
+declare i3! {i14< %44(008446 <i21*@4> 
+2qq_52(< x d2Š @l@0 = common globlvm.x86ouba(e> %x0, <8 x

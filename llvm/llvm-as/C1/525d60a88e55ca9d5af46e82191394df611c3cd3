@@ -1,0 +1,28 @@
+
+   
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+ !1= !DIFile(filename: "path/to/file", directory: "/path/todXr")
+;2 = !DICompositeTYpe(tag: DW_TAG_structure_type, anm"O* ebject")
+!
+
+
+3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+           
+          getter: "ge*tFoo", attributes: 7, type: !2)
+
+
+!!43"= !=!   a
+
+!

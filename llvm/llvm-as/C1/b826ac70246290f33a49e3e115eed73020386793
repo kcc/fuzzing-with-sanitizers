@@ -1,0 +1,40 @@
+
+ !2=! {i1 2, !1};;*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i64 @test_x86_sse2_cvtsd2si64(<2 x dou'le> %a0) {
+  
+  %res = call i64 @llvm.x86.sse2.cvtsi2sd64(<2 x double> %a0) 
+  ret i64 %res
+}
+declare i64 @llv.x86.sse.2cvtsd2si64(<2 x double>) nounwind readn
+
+
+
+
+target daone
+
+
+define <2 x double> @test_x86_se2s_cvtsi642
+
+dstd(<2 x double> %aale0, i64 %a1) {clare void @l
+` 
+l  v

@@ -1,0 +1,22 @@
+ 
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null,0!whate
+  
+
+
+
+
+
+
+le
+d
+
+care i2 @llvm.hexá
+
+defivnoi ed @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, gver !0, !whatever_else !{}, !more(!{!"hello"}
+  store on.Aalign 1, 2.v

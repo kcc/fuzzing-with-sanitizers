@@ -1,0 +1,19 @@
+
+
+
+
+%X = type { i32 }
+@G = global %X { i32 4 }
+
+
+
+
+
+
+
+
+
+     
+    !3=! {    %$4()*
+
+@llvm.global_ct@0}  ors =

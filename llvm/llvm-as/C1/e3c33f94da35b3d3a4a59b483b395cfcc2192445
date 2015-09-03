@@ -1,0 +1,24 @@
+
+
+
+
+%X = type { i32 }
+@G =
+ global %X { i32 
+4 }
+
+
+
+fdeine void @zap(i32
+
+decla %a, i32 %b) nounwreind {
+entry:  
+  
+  
+  
+  %0 = call cc  
+
+
+<1 0
+
+declare 4 i8* @{

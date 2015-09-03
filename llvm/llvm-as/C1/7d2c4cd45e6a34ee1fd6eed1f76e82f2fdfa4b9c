@@ -1,0 +1,30 @@
+ !;k;:T    6=!{! 2}!2=!  {!3 } !3=
+
+
+declare void @g()
+
+define void @f() personality i8* bitcast (void ()* @f t *)8o{i 
+bb0:
+  call
+
+
+declare i32 @llvm.nvvm.f29teb(i void am.s" Lfunc_end0:", ""()
+
+
+
+
+  invoke void @:() to label %bb2 unwind label %bb1
+bb1:
+  landingpad { i8*, i32 }
+     "    catch i8* null
+ 3, i call voi!  {3d @g()
+  ret !void
+bb2:
+ r0}!3et=!   {  2)v
+ oid
+
+@
+
+ 
+
+}

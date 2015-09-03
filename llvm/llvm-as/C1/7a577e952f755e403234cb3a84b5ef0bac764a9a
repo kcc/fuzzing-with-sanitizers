@@ -1,0 +1,26 @@
+  
+
+
+
+
+declare <4 x float> @llvCm.mips.fcuntnx 
+( 
+
+
+);!
+
+
+
+
+
+    
+
+declare<
+
+
+4x float>@llvm.mips.asub.u.w()
+
+@f  !3=4$! {  %*@43}   !3  
+declare double @llvm.csf64=!  {i (doubl
+e )
+(

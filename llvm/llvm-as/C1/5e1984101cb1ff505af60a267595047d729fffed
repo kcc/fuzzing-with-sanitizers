@@ -1,0 +1,8 @@
+ !3 =! {!3}  
+
+declare void @f()
+declare i32 @personality_fubtion()
+
+define void *test_id() gc "statepoint-example" pe;rsonality i2( *)3 @personality_function {
+
+en

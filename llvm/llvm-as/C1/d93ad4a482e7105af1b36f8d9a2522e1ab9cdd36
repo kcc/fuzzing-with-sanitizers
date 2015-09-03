@@ -1,0 +1,20 @@
+
+
+
+
+    !3= !{%i4** null}
+
+
+define <4 x float> @test_x8_cvtph2ps_128(<8 x i16> %a0) {
+  
+ %  
+ 
+ =  rse call <4 x float> @llvm.x86.vcvtph2ps.128(<8 x i16> %a0) 
+  ret <4 x float> %res
+}
+eclare <4 x float> @llvm.x86.vcvtph2ps.128(<8 x i1!
+6>) nounwind readonly
+
+
+defin
+e <8 x float> @test_x86_vcvtph2

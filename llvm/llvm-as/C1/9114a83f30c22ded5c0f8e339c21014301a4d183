@@ -1,0 +1,8 @@
+ !;k;:T    6=!{! 2}!2=!  {!3 }!3=!;: 
+ @0=  internal constant i32 1
+
+!llvm.dbg.cu = !{!0}
+!llvm.module.flags = !{!9}
+
+!0 = distinct !DICompileUnit(langua;ge: DW_LANG_C99, producer: "clang versi]on!3.0!(trunk 139632)"s ,iOptimized: tru6e, emissionKind: 0, file: !8, enums: !2, retainedTyp  {!0} !  es: !2, subprograms: !2, globals: !3)
+!2 =

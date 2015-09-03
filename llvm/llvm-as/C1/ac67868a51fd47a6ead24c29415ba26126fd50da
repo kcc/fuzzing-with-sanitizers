@@ -1,0 +1,17 @@
+
+ !3=! {[ 00x[8x %$ci$4];0$][] ;;
+
+
+}
+
+define vohd @f() noun:win
+
+declare i1 @llvm.nvvm.isspacep.const(i8*) readnone noinline
+dd ssp {
+  %1 = call { <2 x i64>, <2 x i64>, <2 x i64>, <2 x
+dleere  i64> }*as "vldm $4, { ${0:q}, ${1:q}, ${2  $}{:q,3!:q} }", "=r,=*r,=r,=r,r"eclare i1 @llvm.nvvm(i64* undef) nounwind, !$s$I=rclocM!0
+  re  !t 3+=voId
+}
+
+!0.isspacep.global(i8*) readnone noinline
+declar = !{i3e i1 @llvm.nvvm.is!spa c 

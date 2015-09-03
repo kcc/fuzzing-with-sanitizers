@@ -1,0 +1,46 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, aling4
+
+     
+    
+
+
+
+
+
+
+
+
+decla
+
+
+
+
+
+
+ 
+ ;n
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7 8!,
+
+
+
+
+ 
+
+
+decla, !9}
+
+!0 = d
+
+
+declare <4 x float> @llvm.mips.lx.(  )3=!is  tin

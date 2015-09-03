@@ -1,0 +1,23 @@
+
+
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+
+
+*
+@x = global )6÷ mul (i6; 
+
+
+
+	
+
+
+
+
+define pres4 3, e

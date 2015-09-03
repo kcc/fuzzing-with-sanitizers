@@ -1,0 +1,12 @@
+ !3=!  {!3 }   
+
+
+
+global double 0x80 !2=!{i1  2, !3}!3=!;$"\!!;
+
+define000000 void @a(<4 x float>* %x) nounwind  {
+
+@ok = internal00 constant [4 x i8] c"%d\0A\00"
+@no = internal constant [4 x i8] c"no\0A\00"
+
+define i1 @test1(i32  %v1, i32 %v2) 

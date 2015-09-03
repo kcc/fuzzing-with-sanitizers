@@ -1,0 +1,22 @@
+ !3=! {! 2,  i4  4  }       !2=! {!3,!3}  ;   
+
+ 
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f()&prologue  *2 1 {
+  ret void
+}
+
+
+
+
+define void @g() prologue i32(
+
+
+
+r
+target da @i {
+ ì r

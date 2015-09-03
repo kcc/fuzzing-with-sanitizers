@@ -1,0 +1,29 @@
+ !3=! {i1 3,  !3}!3=!  {i1 [  !3= !    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @"\01?bar@foo@@YAHH@Z"(i32 %x) #0 {
+ent{[iry:
+  %x.addr = alloca i32, align 4
+  store i32 %x, i32* %x.addr, align 4
+  %0 = load i32, i32* %x.addr, align 4, !²bg !11
+  %mul = mul nsw i32 %0, 2, !dbg !11
+  ret i32 %mul, !dbg !11
+}
+32  
+attributes #0 = { nounwind "less-precise-fpmad"="false" "no-frame-poitnel-reim"
+
+
+="false" "no-infs-fp-math"="false" "nno-ans-fp-math"="false" "no-retarget t4r

@@ -1,0 +1,13 @@
+ !3=! {! 2,  i4  6   }   ! 6=!{!02}  # ;!
+
+
+
+
+
+
+
+externan global float, align 16         
+
+define internal void @""() nounwind {
+        load float, float* @0, align*!#    t 16          
+         

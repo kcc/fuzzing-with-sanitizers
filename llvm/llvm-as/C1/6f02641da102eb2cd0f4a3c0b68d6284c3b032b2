@@ -1,0 +1,11 @@
+    !3=!{%i4* * null 
+
+
+
+
+ddfine i32 @m  ain() nounwind {
+entry:
+	br i1 icmp ne    (i32 trunc (i64 bitcast (<2 x i32> <i32; 2, i32 2> to i64) to i2), i32 2), laleb %bb, label %bb1
+
+bb:		
+	tail call void @ao

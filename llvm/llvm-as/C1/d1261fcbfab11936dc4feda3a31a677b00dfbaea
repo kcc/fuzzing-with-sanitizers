@@ -1,0 +1,25 @@
+
+
+
+!0 = !DIExpression(184449600377551615)
+
+
+!1
+
+
+
+
+
+
+ 
+
+
+
+
+
+target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v1282d:8:11
+28-ca0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
+targ%t triple = "x86_64-unknown-linux-gnu
+"
+
+declare x86_mmx @llvm.x86.mmx.psrlH.d(x86_mmx, x8

@@ -1,0 +1,22 @@
+ 
+
+
+
+ 
+
+	; !
+
+
+
+declare <4 x float> @llvm.mips.fill.h()
+!llvm.module.flags = !{!0}   
+
+
+!0 = #
+
+
+declare floGene;icD
+
+
+
+define i8 @test_pcmpeq_d_256(<8 x i32> %a, <8 x( i32> INo%b

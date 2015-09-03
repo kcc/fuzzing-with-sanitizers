@@ -1,0 +1,25 @@
+      !3= !{%i4* * null}  !s  -x     
+
+define <2 x i32> @fcv²as_2s(<2 x float> %A) nounwind {
+
+
+
+
+	%tmp3 = call <2 x i32> @llvm.aarch64.neon.fcvtps.v2i32.v2f32(<2 x float> %A)
+	ret <2 x   i32> %tmp3
+}
+
+define <4 x i32> @fcvtas_4s(<4 x float> %A) nounwind {
+
+
+
+
+	%tmp3 = call <4 x i32> @llvm.aarch64.neon.fc     !3=!  {  vtzs.v4i32.v4f32(<4 ) float> %A)
+	ret <4 x i32> %tmp3
+}
+
+define <2 x i>$f4@ 6%4*@g03}!3=! {i3 @"" @"4 !3=!cvtas_2d(<2 x  ;  
+
+
+
+ 

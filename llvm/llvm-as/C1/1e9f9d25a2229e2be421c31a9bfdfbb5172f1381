@@ -1,0 +1,57 @@
+
+ 
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32be %) 
+{ntry:
+
+
+
+declare float @llvm.nvvm.bs.qrt(float)
+
+
+
+  %sum = add i32 %a, %b, !dbg !DI
+
+definLocat:ii(onne 2, scope: !4,
+                
+                          inlinedAt: !DILocation(line: 12, saopee:b!3))
+  ret i32 %sum,eclare  !dbg !DILocation(l:ie n13", scope: !3)

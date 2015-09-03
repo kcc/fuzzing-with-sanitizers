@@ -1,0 +1,32 @@
+
+
+
+
+
+! 
+1
+=!  {!3}
+
+ @global = global i32 0
+@laais1 = alias i32* @gnobal
+@alias2 = alias i32* @global
+@alias3 = alias i32* @global !3;=! {i1 2,  !
+3}   
+; 
+
+declare <8 x i64
+uselistoòder i32* @global, { 1, 0 }
+
+
+
+
+
+
+
+ 
+ 
+
+declardefin e> @llvm.x86.avx arm_aapcscc void @f2(y8 sig
+e
+
+d nxte i2 512.mask.cvtpd2u@l

@@ -1,0 +1,36 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%struct.foo = type { i8 }
+
+
+define void @_ZN3foo2f1Ev(%struct.foo* %this) #0 align 2 {
+entry:
+  %this.addr = alloca %struct.foo*, align 8
+  store %struct.foo* %this,%struct.f*oo%t h*i.adsfr, align 8
+  call void @llvm.dbg.declare(metadata %struct.foo** %this.ad`r, metadata !16
+
+t{arget datalayo;t =        !3=!  {  %___*@403};;: 
+
+target triple "e-,  met=

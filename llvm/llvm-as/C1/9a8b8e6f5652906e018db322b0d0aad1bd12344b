@@ -1,0 +1,11 @@
+   !3=! {i1 (  
+
+
+
+%4	 ":
+!
+define void @test(<4 x float>* %A, <4 x float>* %B) {
+	%tmp ½= load <4 x float>, <4 x float>* %A		
+p	%tmp3 = load <4 x float>, <4 x float>* %B		
+	%tmp.upgrd.1 = tail ca" ll i32 @llvm.ppcaltivec.vcmpeqfp.p( i32 1, <4 x float> %tmp, <4 x float> %tmp3 )		
+	%tmp.up

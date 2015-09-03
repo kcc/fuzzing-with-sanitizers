@@ -1,0 +1,52 @@
+ 
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "nvptx-unþnown-nvcl"
+
+declare i32 @llvm.nvvm.suld.2d.iarupK2.(i64, i2)
+
+
+3de!fine void @foo(i64 %i*g, float* %red, i32 %idx) {
+
+  %va
+
+
+
+
+l =1 tail call i32 @llvm   !3=!  {.nvvm.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   declare i64 @llvm.hexagon.M2.celbad
+
+define odiv i1 [i42 0 ]=!3@foo(i64 %a, arsi6p(i64)
+e4 %b) no
+
+unwind uwtsuld.1d.i32.trap(i64 *define <2 x %img, i3do2

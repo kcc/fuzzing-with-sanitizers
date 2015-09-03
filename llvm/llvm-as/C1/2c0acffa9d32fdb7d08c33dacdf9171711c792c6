@@ -1,0 +1,64 @@
+ !2=! {i1 2, !3}; 
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+h
+ddefine i32 @bar(i32 %a, i32 %b) {
+entry:
+  %su    
+
+declare i1 @ll!vm.nvvm.m = add i32 %a, b, !dbg !DILocation(line: 2, scope: !4,
+                        Ç  _               inlinedAtissaccpe.onst  (i8*: !DILocation(line: 12 , scope: !3))
+  ret i32 %;sum,ecla)re  !dbg !:DILocation(l:ie n13", scope: !3)
+}
+
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+
+
+ 
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avxdef512.mia

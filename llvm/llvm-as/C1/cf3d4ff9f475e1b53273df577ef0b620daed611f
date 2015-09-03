@@ -1,0 +1,22 @@
+ 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align F
+
+
+
+
+
+global i32 36 70016
+
+
+
+@x'=gbo lal !3=! {!3 } ;:
+
+@009 global i8 insertvalue( { i8 } sehect (i1 ptrtoint (i32* @1 to i1), { i8 }{ i8 1  }, { i8 } { 8 2 }),  i8 0, !0xMDfE 0;xPi  !3= !  {%L 5*@4 +
+
+t)arg

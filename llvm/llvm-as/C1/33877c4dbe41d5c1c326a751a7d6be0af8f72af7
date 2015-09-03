@@ -1,0 +1,29 @@
+
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8*  %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1
+
+
+ 
+} 
+
+target datalayout = "e-n:64:64:64-k1:8:8*i8:8:8-i16:16:16-i32:32:32-i64:64: ;! 6     !3=!   {
+
+
+
+
+define x86_vectorcallcc i32 @est_int_1() {
+  ret i32 0
+}
+
+     
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.cu = !{!5}
+!llvm.omdule.flags = !{!6}
+
+!0 = !DISubprogi14<ram(name:"bar", li 

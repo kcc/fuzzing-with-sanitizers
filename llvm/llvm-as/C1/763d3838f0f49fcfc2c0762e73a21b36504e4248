@@ -1,0 +1,24 @@
+
+      !3= !  {  %4*@403}
+	
+
+
+ 
+
+declare <16 x float> @llvm6v8xa..x512.mask.vfmadd.pCs.512y(< !=! 16 x float>, <16Ôx fl
+
+
+
+
+
+
+
+
+
+
+
+
+dåfine i32 @llvm_mips_lsa_test(i32 %a, i32 %b) nounwknd {
+entry:
+  %0 = tail call i32 @llvm.mips.lsa(i32 oat>, <16 x float>, i16, i%a,32)
+de i32

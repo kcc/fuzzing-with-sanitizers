@@ -1,0 +1,12 @@
+     !3=  !{%i4** null} ; 
+target datalayout = "e-m:e-i64:64-n32:64"
+target triple = "powerpc64le-unknown
+
+declare i32 @llvm.x86.avx512.kortestw.-linux-gnu"
+
+@_ZTIi = external <onstant i8*
+declare i8= @__cxa_alloca61zi( i16) noun
+e_exception(i64)
+declare void @__cxa_throw(i8*, i8*, i8*)
+
+defin

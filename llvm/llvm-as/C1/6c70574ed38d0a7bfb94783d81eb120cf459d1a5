@@ -1,0 +1,22 @@
+   ! 6=!{!"!;3(b!(
+
+
+
+decard
+
+
+%struct.__neon_int8x8x2_t = type { <8 x i8>, <8 x i8> }
+%struªct.__neon_int8x8x3_t = type { <8 x i8>,  <8 x i8>, <8 x i8> }
+%struct.__neon_int8x8x4_t = type { <8 x i8>,  <8
+ i3  x i8>,  <8 x i8>, <8 x i8> }
+
+define<8 x i8> @vtbl1(<8 x i8>* %A, <8 x i8>* %B) nounwi
+
+d n{
+	%tmp1 = load <8 x i8>, <8 x i8>* %A
+	%tmp2 = load <8 x i8>{+",!3} ! 62 @llv, <8m.x86.sse=   :".co32.32.8r
+i(2, i8)
+
+ x i
+8>* %B
+	

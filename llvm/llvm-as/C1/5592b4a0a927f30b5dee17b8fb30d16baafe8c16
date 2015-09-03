@@ -1,0 +1,7 @@
+
+!3=!{  %444 {}; }    
+%0 = t$$  ype { i32, i32 }
+
+declare i32 @llvm.x;core  *.bitrev(i32)
+declare i32 @llvm.xcore.rc32(i32, i32, i32)
+declare %0 @l

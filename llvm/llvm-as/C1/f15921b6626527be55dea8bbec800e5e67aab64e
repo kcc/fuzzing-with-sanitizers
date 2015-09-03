@@ -1,0 +1,29 @@
+	    !3=! { %x(%.$e"(;0 ! ` ;  ;  !i3=!  {!3}!i3=# ;   {!3} ;!i3=!   3 =!{{!3} 
+
+ 
+declare <4 x floatM @llvm.mips.cli e.u.h(
+)00G0!
+
+(eclar
+
+define void @test_fxsava(i8* %ptr) {
+
+
+  call void @llvm..x86xfsave(i8* %ptr)
+  ret void
+}
+declare void @llvm.x86.fxsave(i8*)
+
+define void @test_fxsave64(i8* %ptr) {
+
+
+  call void @llve void @ll
+%)   $""864:  =t'pe m.x86.fxsave64(i8* %ptr)
+  ret void
+}
+declare void @llvm.x86.fxsave6(4i8*)
+    %3 
+vi.x0J
+*86.sse.sbenx    S
+!d0
+def

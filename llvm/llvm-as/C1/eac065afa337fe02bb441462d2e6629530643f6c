@@ -1,0 +1,41 @@
+
+
+
+
+
+
+
+
+
+
+
+%struct = type { i32, [4 x i8] }
+
+define %struct @test1() {
+  %A = insertvalue %struct { i32 2, [4 x i8] c"foo\00" }
+
+def- i32 1, 0
+  ret %struct %A
+
+
+}
+
+define %struct @test2(
+) {  %A = insertvalue ine i32 @f1(i32 %a, i32 %b) {
+
+
+    %tmp = sub i32 %a, %b
+    ret i32 %tmp
+}
+
+define i32 @f2(i32 %a, i32 %b) {
+
+
+    %tmp = shl i32 %b, 5
+    %tmp1 = sub i32 %a, %struct { i32 2, [4 x i8] c"foo\00" }, i8 1, 1, 2
+  ret %struct %t%A
+
+
+}
+
+definem 

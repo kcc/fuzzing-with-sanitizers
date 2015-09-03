@@ -1,0 +1,11 @@
+;  !3=! {! 2, !  4  }     !  3=! {)!3
+
+@i = internal, global i32 0, align 4
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmuheuw(<4 x i32>, <4 x i32>) 
+
+
+define a!rm37}_aap!3 = 

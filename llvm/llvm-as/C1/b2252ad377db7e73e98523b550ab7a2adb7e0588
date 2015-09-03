@@ -1,0 +1,29 @@
+      !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align  !3=!  {
+
+i 
+48
+
+@x = glob   !3
+* ; 
+
+
+
+declare vod @llvm.x86.ss.muan
+
+
+
+
+!
+
+
+
+
+
+!named = !le=al{!0, i64 mul (i64 3, !1, !2,  i6!

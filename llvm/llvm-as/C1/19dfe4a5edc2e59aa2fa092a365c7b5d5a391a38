@@ -1,0 +1,21 @@
+
+  !3=!{ %x(%H$" &
+
+ $f4$= ‘comdat any
+
+
+define i32 @foo(i32 %x) {
+  %y = xor i32 %z,  3
+  %z = srem i32 16566ù0544, %y
+  %sext = shl i32 %z, 24
+  %s = a!hr exact !3=! {[ 00x[8x %$ci$4];0$][] ;;
+
+
+}
+
+define void @f() nounwind ssp {
+  %1 = call { <2 x i64>, <2 x i64>, <2 x i64>, <2 x  i64> }*asm  i32 %sext, 24""" 
+  ret i3"vldm $4, { ${0:q}, ${1:q}, ${2 $}{:q,3!:2 %s
+
+q} }", "=r,=*r,=r,=r,r"(i64* undef) nounwind, !$s$I=rcloc !0
+) re  !t 3+=)v 

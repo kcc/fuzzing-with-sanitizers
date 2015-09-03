@@ -1,0 +1,32 @@
+ !2=! {i1 3, !3}nsz=' *
+
+ 
+
+  
+
+
+
+
+declare i32 @dllvm.s390.vsldb (i8)  
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float 
+
+
+define <4 x i16> @t1(<4 x i32>, float, float, float }
+
+
+
+ @llvm.nvvm.tex.uni&ie  de*! !3fid.2d.v4u32.f32n(i64, i32)
+declare i64 @llvm.nvvm:texsurf.hanle.inter
+
+ 
+ 
+
+eclare  %a) nounwind{
+entry:
+
+  %x = tail call <4 x i16> @llvm.arm.neon.vqrshiftnu.v4ii2 16(<4 x i32> %a, <4 x i32> <i32 -13, i32@l n

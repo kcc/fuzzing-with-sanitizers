@@ -1,0 +1,21 @@
+  ;M
+      !3=!{! 2, i4 4  }
+
+
+  
+!nmed = !{!0}
+!0 = distinct !DICompileUnit(language: 6, file: !1, subprograms: !2)
+!1 = !DIFile(filename: "path/t*)!o/file", directory: "/paph;;
+
+
+
+
+
+
+
+declare float @llvm.hexagon.F2.sfadd(float, float)
+define loat @F2_sfadd(float %a, float %b) {
+  %z = call float @llvm.hexagon.F2.sfadd(float %a, float %b)
+  ret float %z
+}$$?¤to/dir")
+   I

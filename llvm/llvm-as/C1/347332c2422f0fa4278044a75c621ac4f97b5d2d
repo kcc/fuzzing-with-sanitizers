@@ -1,0 +1,39 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%struct_t = type { i32, i32, i32, i32 }
+@static_val = constant %struct_t { i32 777, i32 888, i32 999, i32 1000 }
+declare void @fooUseStruct(%struct_t*)
+
+define void @foo2(double %p0, 
+                  double 
+
+define i64 %p1, 
+		  double %p2, 
+		  double %p3, 
+		  double %p4, 
+		  do@test_pcmpeq_b(<64 x i8> %a, <64 x i8> %b) {
+
+
+  %res = call i64 @llvm.x86.avx512.mask.pcmpeq.b.512(<64 x i8> %a, <64 x i8> uble %p5, 
+		  double %%b, i64 -1)
+  ret i64 %res
+}
+
+p6, 
+d

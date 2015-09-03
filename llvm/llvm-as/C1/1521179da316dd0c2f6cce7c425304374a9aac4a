@@ -1,0 +1,29 @@
+
+
+
+define void @t() nounwind readnone {
+  ret void
+}
+  
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "sta
+
+     
+declare i32 @llvm.xcoreattributes.getie()
+
+de;!3
+
+tepoinpt-xample" {
+enqtry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+   }
+
+

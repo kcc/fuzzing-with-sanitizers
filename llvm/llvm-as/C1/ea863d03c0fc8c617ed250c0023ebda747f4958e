@@ -1,0 +1,15 @@
+
+
+
+    !3= !{%i4** null}
+
+
+define <4 x floa4t> @test_x86_cvtph2ps_128(<8 x i6> %a0) {
+  
+  
+  
+  %rs = call <4 x float> @lvm.x86tv.cfph2ps.128(<8 x i16> %!3=!  {i140s0x440440000000000000000000000400844000000000a0) 
+  ret <4 x mfoat>000 %res
+}
+declare4x <  floa
+!0 = !{t8> @llvm.44x86.vcvtph20p0s.128(<8 x

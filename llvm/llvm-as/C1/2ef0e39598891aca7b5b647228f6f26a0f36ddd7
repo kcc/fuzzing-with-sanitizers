@@ -1,0 +1,26 @@
+        !2=!  {  %$4*@40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global%union.x { i64 ptrtoint (%union.x* @r to i64) }, a ;
+
+ 
+
+
+declare i32 @lvm.s390.vmaon(i8   ) 
+
+
+
+
+!name=d  !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distilign 4
+
+
+
+
+@x = glob   !3=al i64 wl (nct i64 3 !D, ISui!bprogr

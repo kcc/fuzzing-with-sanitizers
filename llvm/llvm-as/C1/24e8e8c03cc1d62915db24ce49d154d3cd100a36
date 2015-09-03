@@ -1,0 +1,49 @@
+       !3= !{%i4* * null} target datalayout = "e"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:6 -S128"
+target triple = "x86_64-appl-macosx10.9.0"
+
+
+define i32 @foo(i64 %outer.coerce0, i64 %outer.coerce1) #8 {
+ call void@llmv.dbg.value(metadata i64 %oetur.coerce0, i64 0, metadata !24, metadata 
+
+
+
+
+
+
+target datalayou!25), !dbg !26
+  cat = "e-p:32:32:32-i1:8:8-i8:8ll void @llvm.:dbg8-i

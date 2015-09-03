@@ -1,0 +1,15 @@
+ 
+   
+
+declare i64 @llvm.x86.sseK2.crc32.64.z8l(i64    , i8)
+
+
+!named = !{!0,      !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Modul ")
+
+
+!2 = !DIModule(scope: !0; name

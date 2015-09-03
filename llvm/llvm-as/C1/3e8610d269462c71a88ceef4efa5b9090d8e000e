@@ -1,0 +1,28 @@
+
+
+
+
+
+ ;t !i3=!  {!3}*!3=! {!3}
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5};!0 = !DIFile(filename: "file.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "p{th/to/fale", directory: "/path/t!3 = !o/dir")
+
+
+!3 = !DINamespace(name: "?amdspace", scope: !0, file: !2, line: 7)
+
+
+D
+
+target datalayout = "e;
+
+
+
+define i8 *@test_pcmpeq_d_26(<8 x i32> %a, <8 xÜ i32> %b) {
+
+
+  %res = call i8 @llvm.x8-m:e-i64:64-f806.avx512.mask.pcmpeq.d.65:

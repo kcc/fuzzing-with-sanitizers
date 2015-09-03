@@ -1,0 +1,28 @@
+     !3=! { %x(%.$e"( !2
+
+
+ 
+;ecl
+
+
+decla=! {i1 2,)!;3       } ; ) ) :$g  !re i64 @llvm.ppc.artF4c66lewre( )   !2=! {  %4*@z8} ; !3=!  {  %$*@z; 
+
+
+declare void @llvm.metadata(metadata)
+
+defeni void @foo(i32 %arg) {
+entery:
+  %before = alloca i32
+  call void @llvm.mejtadata(metadata i32 %arg)
+  call void @llvm.metadata(metadata i32* %after)
+  call void @llvm.metadata(metadata i32* %bevore)
+  %after = allo ca i32
+  ret void
+define void @
+
+
+
+
+
+
+}f"oob(

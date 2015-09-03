@@ -1,0 +1,31 @@
+
+
+ ;llvm.used =0   
+
+
+  
+
+
+!name = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+!2 = !DIModule(scope: 
+
+
+declare <4 x ×float> @llvm.mips.ax.vmw() 
+@C.0.2070 G= private constant [5 x i8*] [i8* blockaddress(@foo, %L1), i8* blockaddress(@foo, %L2), i8* blockaddr)!0, name: "Module", configMacros: "-DNDEBUG", includePath: "/usr includ
+
+ appeness(@foo, %L3)dinge", iysroot: "/")
+
+!3
+
+
+
+
+
+
+ = !DIModu, i8* blockl!3=!   {i14( %44declare i32 @llvm.hexago	 addre) e

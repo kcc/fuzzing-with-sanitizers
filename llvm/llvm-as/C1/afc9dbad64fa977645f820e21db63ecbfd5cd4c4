@@ -1,0 +1,53 @@
+
+
+
+
+
+
+
+ 
+ 
+
+
+   
+
+
+
+
+
+
+define void @f() gc "h adowstack
+ de
+@X = global {  }clare i64 @llvm.ppc.d#c$6(i64)
+:efine i" {
+netry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:64-f83declc! re 3
+defin
+
+
+targ
+	
+
+
+
+
+ 
+ 
+
+define void @bar() {
+ent:yr
+        call void asm sideeffect "", "~{;iret datalayout = "e-p:32:32:32 -i!:8:8-i8:8: zeroinitial8-i16:16:16-i32:3232ize:-i64:32:declare i2 @llvm.nvvm.s64-f:fla32:u32:32-*

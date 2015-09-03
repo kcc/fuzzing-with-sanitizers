@@ -1,0 +1,31 @@
+
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8*  %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1
+
+
+ 
+} 
+
+target datalayout = "e-p:64:64:64-i1:8:8-i8:88-i16:16:16-i32:32:32-i64:64:64    
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, )6, !7
+  
+@0 = internal consta
+
+
+targetnt i32 1
+
+!llvm.db, !8}
+
+!0 = dis'tinct !{}
+ !1 = ! tripl !3=! {! 2,     i4  4 };>+.!i!35!   3({e = "nvptx-u!3}#i3=! ;DIBnknown-cuda"
+
+decnar* e asi cT yp !gvo{!3}3ci

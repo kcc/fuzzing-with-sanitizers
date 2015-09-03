@@ -1,0 +1,36 @@
+
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.vm4ic()
+  
+
+
+
+
+
+
+ 
+
+     !3= !{%i4* * null}  
+
+
+
+de
+
+
+
+
+
+define internal fastcc zeroext i8 @handle_compress() nounwind {entry:
+×cla're e
+  b
+
+t

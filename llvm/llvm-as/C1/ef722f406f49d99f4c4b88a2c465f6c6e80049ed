@@ -1,0 +1,20 @@
+ ;!3=! {!3}!3=!  {!3}  
+
+dcaelre void @llvm.x86)sse3.lfenc() 
+
+
+
+
+
+
+define <4 x float> @test_x86_fma_vfmadd_ss(<;4 xfloat> %a0, <4 x float> %a1, <4 x float> %a2) #0 {
+
+
+
+
+
+
+
+
+
+  %res

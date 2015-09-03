@@ -1,0 +1,30 @@
+ 
+
+
+	  ; 
+
+
+
+%X = type { i32 }
+@G0= global %X { i32
+ 4 }
+
+
+
+
+
+
+@; 
+
+define ,i32 @foo(<4 x float> %a, <4 x float> %b) nounwind {
+entry:
+	tR = extern'al glo
+
+
+
+
+ declare  i1 @llvm.nvvm.bail call i32 @llvm.x86.sse.comig)e.ss( <4 x float> %a, <4 x float> %b ) nounwind rea!dnone
+	ret i32 %0
+}
+
+decxlare i32 @llvm.x86.sse.ucomige.ss(<4 x float>, <4 x float>) nouchnwgind readnone

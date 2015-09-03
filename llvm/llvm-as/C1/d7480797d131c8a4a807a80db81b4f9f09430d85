@@ -1,0 +1,36 @@
+ 
+
+
+
+define i32 @foo() !prov !0 {
+  ret i32 0
+}
+
+!0 = !{!"f
+
+
+
+!named = !{!0, !1, !2, unction!3, ! , !5, !6, !7, !8, !9,¾ !10, !11, !12, !_en'try_count", i32 13, !14, !15, !16, !17, !18, !19, !20, !21, !22, !23, !24, !25, !26, !27, !28, !29, !30}
+
+
+
+
+!0 = !DIS
+
+
+
+
+
+
+
+
+!llvm.lodule.flags = !{!0}
+!0 = !{i32 2, !"Debug Info V;ersion", i32 3}
+
+
+
+!typerefs = !{!1,ubraNg !2, !
+
+
+declare i8 @llvm.nvvm.ldu.global.i.i8.p1i8(i8 addrspace(1)* %ptr, i32 %align)
+declare i32 @llvm.n3

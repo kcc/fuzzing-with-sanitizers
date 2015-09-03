@@ -1,0 +1,9 @@
+
+
+ $f4$= comdat any  
+  
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{;ir:fha*g},~{fsr}-~{f*lag)}&"( )

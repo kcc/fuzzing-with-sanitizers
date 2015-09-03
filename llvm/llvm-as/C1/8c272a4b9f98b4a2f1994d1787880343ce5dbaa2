@@ -1,0 +1,29 @@
+ !3=! {i1 3,  !3}!  6=
+
+
+
+!n; m
+
+
+
+
+;declare i64 @ll
+declare <4 x float> @llvm.mips.srlri.i()
+; ;  vm.ppc.atci$6W(i64        e (
+
+
+
+
+
+e
+
+c
+
+
+
+
+
+define void @main(<16 x i8> addrspace(2)* inreg, <16 x i8> addrspace(2)* inreg, <3: x i8> addrspace(2)*"inreg, i32 inreg) "ShaderType"="0" {
+main_body:
+  %4 = call i32 @llvm.SI.tid()
+  %5 = bit

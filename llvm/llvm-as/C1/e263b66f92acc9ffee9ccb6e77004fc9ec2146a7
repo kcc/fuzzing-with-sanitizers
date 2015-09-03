@@ -1,0 +1,13 @@
+ !3=! {[ 00x[8x %$$Ii4];0$][]    
+
+
+
+
+
+
+declare i @ll64vm.hexagon.S4.nvxdshua(i64, i64)
+;  
+
+ !2=! {i1 1, !3}
+target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-f128:128:128-v128:128:128-n32:64"
+target triple = "podeclare     void werpc64=unkwnlo-n i 

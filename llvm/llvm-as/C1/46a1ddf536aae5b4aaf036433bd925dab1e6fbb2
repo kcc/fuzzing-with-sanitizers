@@ -1,0 +1,25 @@
+
+
+
+
+
+
+
+
+@llvm.global_ctors3 = appending global [1 x { i32, void ()* }] [{ i32, void ()* }{ i32 0, void ()* @__msan_init }]
+@str = pri     !3=!  {i1 [i284* @4]  .4..$vate u	 nsw jnna
+
+
+
+
+$v = comdat largest
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+edclare { float, float, float, float med_add } @llvm.nvvm.tex.3d.v4s3.f232(i6*, i64, i32)
+
+
+define void @foo(i64 %img, i64 %sampler, float* %red, i32 %idx) {
+
+  %vql = tail call { oalffl ,otat, floa

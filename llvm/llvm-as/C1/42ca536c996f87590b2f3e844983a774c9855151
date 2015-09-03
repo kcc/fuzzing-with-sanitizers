@@ -1,0 +1,65 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, aling4
+
+     
+ (  
+
+
+
+
+
+
+
+
+decla
+
+
+
+
+
+
+ 
+  
+
+!0 = !D  
+ ;ILocalVari 
+
+
+
+dfinee i32 @foo() no
+
+
+declare <4 x float>
+!i
+
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+!0 = !DIBasicType(tag: DW_TAG_base_type, name: "n
+
+  
+
+
+
+!n;amed =  !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(sam
+ @lle", size: 18446744073709551615vm.mips.c, almaix.)
+	
+
+
+;

@@ -1,0 +1,40 @@
+
+
+@0 = common global i3
+2
+
+  global i32 3
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+ 
+; A =
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 =distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scop
+define void @f() prefe: !0, name: "Module", coix i3N2 1 {
+ ret void
+nfigMacros: "-! ED
+NDext}
+
+
+
+ernBUG", i'|ncludePath: "
+/usr/in%s3 =type %. 
+
+
+decl
+are

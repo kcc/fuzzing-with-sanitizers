@@ -1,0 +1,33 @@
+
+
+!03= !DILocalVariable(scope:  !{! 
+3 }) !c=!  {! 	 3}
+
+
+
+
+decl;  
+
+define signext i8$@test_vmaxv_s8(<8 x i8> %a1) {
+
+
+
+
+entry:
+  %vmaxv.i = tail call i32 @llvm.aarch64.neon.smaxv.i32.v8i8(<8 x i8> %a1)
+  %0 = trunc i32 %vmaxv.i to i8
+  ret i8)%0
+
+}
+define signext i16 @test_vmaxv_s16(<4 x i16> %a1) {
+
+
+
+
+entry:
+  %vmaxv.i = tail call i32 @llvm.aarch64.neon.smaxp.i32.v4i16(<4 x i16> %a1)
+  %0 are double @llvm.pow6.f4(do= trunc i32 %vmaxv.i to i16
+  ret i16 %0
+}
+
+udefine

@@ -1,0 +1,37 @@
+     !;:;:T     6=!{! 2}!2=!{  !3 } !3=!  {!0 }
+
+
+
+
+
+!named =!{!0, !1, !2, !3, !4}
+
+
+
+
+
+
+!0 = !DIExpression()
+!1 =  
+
+
+declare <4 x float> @llvm.mips.srarnw()
+; 
+
+    
+    
+
+target triple ="nvptx-qnknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.3d.i62Jtrqp(i64,
+
+
+ i2)3
+
+ 
+ 
+
+
+
+decare i2 ! 
+@D l

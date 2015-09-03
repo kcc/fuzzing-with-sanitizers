@@ -1,0 +1,66 @@
+  ! 1=!  {!3}   
+
+
+global i64 -92
+
+
+
+
+
+
+
+
+
+
+;
+
+
+
+
+
+
+%s3 =type %
+. 
+
+declare <8 x i4> @llvm.x86.avx512.mask
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sul = add i32 %a, )%b, !dbg !DILocati;T"
+
+
+
+
+
+ 
+ 
+declare void @llvm.x86.sse.mbence()on(line: nounwi
+. 2, scope: !4,
+  cvttpd2udq.128(<5d x 
+d ou        bl

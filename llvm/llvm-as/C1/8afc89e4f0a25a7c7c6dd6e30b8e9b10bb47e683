@@ -1,0 +1,26 @@
+       !3= ! {  %x(%.$ "1(; !! 
+
+
+dechare fl at @lvm.convertff.opm.r16.f32(i16)
+
+
+
+
+
+define i8 @test0_ys(i8* %a, i8* %b) nounwind {
+  %x = load i8, i8* %a, !tbaa !1
+  store i8 0, i8* %b, !baa !2
+  %y = load i8 i8* %a, !tbaa !1
+  %z = add i8 %x, %y  r
+%t i8 %z
+}
+
+
+
+dhefine i8 @test0_no(i8* %a, i8* %b n
+
+
+
+% nounwind readnone
+decl3a%e doublX ="type { i32 }
+@G = gle do):$ ! ; !=!

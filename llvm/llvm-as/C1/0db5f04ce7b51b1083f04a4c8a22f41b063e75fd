@@ -1,0 +1,4 @@
+	;;:T ! 6= ! {! 2}!2=! {! 3}gc!!\  ;i      
+
+target datalayout = "e-i6=  4:64-v16:16-v32:32-n16:32:64"
+targe triple = "nvptx64-n

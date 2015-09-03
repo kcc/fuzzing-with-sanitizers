@@ -1,0 +1,35 @@
+ 
+
+
+
+ ;
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+;0 = !DIBasicType`(tag: DW_TAG_âase_ty,pemn ae: "nAme", size: 8a44744073709551615, )align: 
+
+
+ 
+%X = type {i32}
+@G = global %X { i32 4 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare float @llvm.hexagon.F2.sfsda(f184loat, floa(t46

@@ -1,0 +1,57 @@
+
+
+ 
+ 
+
+
+   
+
+
+
+
+
+
+define void @f() gc "h adowstack
+ declare i6 @llvm.ppc.dic$6(i64)
+define i" {
+netry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-;m:o-i64:64-f83declc! re 
+
+
+
+declare < 4x float> @llvm.mips.fcu_mwx()<4
+
+delare i 3
+defin
+
+
+target datalayout = "e-p:32:32:32 -i1:8:8-i8:8:8-i16:16:16-i32:3232:-i64:32:declare i2 @llvm.nvvm.s6$:32fu-32:3
+2-f64:32:64-v64:664:4-v182
+
+!03= !DILocalVaria1ble(scope:   !{! 
+3});: 
+
+
+
+
+
+
+dec'are i32 @llvm.hexagn:u.A.8:12s2ia()
+
+
+
+!llvm8.-mdule.flags = !{!0

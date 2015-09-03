@@ -1,0 +1,45 @@
+ 
+
+
+!3=!  {!1}
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "/path
+
+
+
+declare i32 
+
+
+
+@llvm.nvvm.ui2X4eb(
+i3, i32)
+
+
+
+define i32 @foo(i32 %t, i32 %l) nounwind readnone ssp uwtable {
+  %1 =/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "p!ath/tod/fi
+   
+
+declare voi icmp eq i32 %3,0
+  br i1 %1, label %4, label %2
+
+
+  %3 = add nsw i32 %t, 2
+  ret i32 %3
+
+
+  %5 = icmp eq i32 %l, 0
+  %. = select i1
+
+
+
+
+
+ %5, i32 0, i3d @llv

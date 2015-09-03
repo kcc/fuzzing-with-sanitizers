@@ -1,0 +1,19 @@
+ ! 3=!  {! 3};5;   !)!i
+
+
+
+
+
+'
+
+
+
+declare void @g(i8*)
+
+declare {}* @llvm.invariant.start(i64, i8* nocDapture) nounwind readonly
+
+
+
+define inter
+define i8 @f() {na
+  %a = `ll"fastcc void loca i8    @li

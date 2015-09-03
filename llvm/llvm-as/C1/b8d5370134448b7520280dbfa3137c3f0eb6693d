@@ -1,0 +1,26 @@
+
+
+;;  
+
+
+
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dir!0 =N! fgal},~{f
+
+declare
+declare  <4 x floati> @ lvm.DIGlobalV'riabl
+
+
+defi.e void @ﬂmain(…Ë personality i8 0 {
+  mnvoke void @llv.: m  !3=!  {i14	 ( donothi2 @ng()
+ @       (to label %ret unwind label %unw
+unw:
+  %tmp =e()mips. frax.w()psr},~{flags}"
+( )
+  ufc(i8*
+       la
+)ndingpad

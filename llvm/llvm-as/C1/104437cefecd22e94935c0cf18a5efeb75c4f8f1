@@ -1,0 +1,11 @@
+
+  ;   	       !3= !{%i4* * null}  
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.1d.v4s32.r32(i6  
+
+define i32 @foo(<4 x float> 4,)%a, <4 x flo32)
+d'eTclare i64  llv!3=!  {i14< %at> %b) 4

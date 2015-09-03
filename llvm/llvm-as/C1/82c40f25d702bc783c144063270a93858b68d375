@@ -1,0 +1,33 @@
+
+
+
+
+
+
+!03= !DILocalVariable(scope:   !{! 
+3} )!c=!  
+
+
+
+$F1 = comdat any
+defne void @F1(i32 %y
+
+
+$f = comdat any
+@v = global i32 0     ; ; ! 
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvttps2qq.u92(<8 x double>, <8 x i64>, i8, ) comdat {
+bb4i32)
+
+define <8 x:
+switch i32 %y, label %bb5 [
+ 0 ; i32 1, i64>@test_int_x86_a
+
+
+dgf label %bineb1
+ i32 @f1(i32 %a) {
+    %t  

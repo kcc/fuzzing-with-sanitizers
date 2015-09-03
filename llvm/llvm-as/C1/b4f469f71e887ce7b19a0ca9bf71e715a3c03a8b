@@ -1,0 +1,52 @@
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @bar() {
+entry:
+       call void asm sideeffect "", "~{*ir!0 =N! fgal},~{f
+Ideclare <4 x float> @ lvm.DIGlobalVari 
+dea 
+
+
+
+
+
+declare<
+
+
+4 x float> @llvm.mips.addu.qw(
+
+
+)
+
+
+
+
+
+
+
+
+
+declare i32 @lbl
+
+
+define void @main() persnality i8 0 `{
+  invoke v[oid @llvm.donothing()
+         (to label %ret    
+lvm
+define vunwind label %unw
+unw:
+  B%tmp =e()mips.frax.spr}w(),~{flags}"
+( )
+   oid @foo() !Ødg$!4      landingpad i8 cle !\Da.hexagon.A2.vmaxw( !3=! {i1 [i2307 2 0] a!nu!4)4  6x

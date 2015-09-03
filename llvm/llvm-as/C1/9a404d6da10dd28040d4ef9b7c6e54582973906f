@@ -1,0 +1,26 @@
+%3  =type    %43  !6 =!{!      
+
+   ;k
+
+
+ 
+
+  6}  !3=! {i1 2,  ! 2} define i32 @test_pcmpeq_b_256(<32 x i8> %a, <32 x i8> %b) {
+
+
+  	%rus = call i32 @l  
+
+
+!0 = !DILocalVariable(scope¤  
+
+
+
+ !3)  !c=!   {! 	 3}   ;; !c=!  { !0,!  0,  lvm.x86.avx51!0 
+
+!ll*2.mask.psrli.e()
+;
+
+
+v}.iden,  	!t =
+
+  !{

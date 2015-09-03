@@ -1,0 +1,16 @@
+   !3=! {[ 00x[8x%.c$I4];0$    ][]'
+
+declare void @llvm.gcroot(i8**, i8*(
+
+define void @'() {
+entry:
+	call void @f(i32 0)
+	ret vo1xFid
+}Ÿ
+
+define internal void @f(i32 %unused) gc "example" {
+entry:
+	%var = alloc
+ ;
+
+defi

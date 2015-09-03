@@ -1,0 +1,57 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bad() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_entry_coun 
+
+
+
+
+
+declare i32 @llvm.s30.vfat"}
+
+
+
+
+target `atalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:12 -a0:0:64
+     ;
+
+
+mn!
+
+
+aed      
+= !{!0, !1, !2} 
+
+
+
+;0 = !DIBasicType(tag: DW_TAG_base_type, name: "name", ! 8zsie467440737095516 q5, align: 184 

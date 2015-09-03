@@ -1,0 +1,24 @@
+
+
+
+
+%X = type { i32 }
+@G = global %X { i32 4 }   l
+
+!
+ 
+
+define void @foo()Ã !dbg !4 {
+  unreachable
+}
+
+;
+
+
+definevo id @bar() !dbg !6 {
+  unreachable
+}
+
+
+
+dec

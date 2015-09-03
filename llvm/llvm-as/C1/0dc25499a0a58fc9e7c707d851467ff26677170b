@@ -1,0 +1,14 @@
+   ! 6=!{!02}  ;!!i=2*;!; !
+
+@X = exterlalgn ob
+
+tareet datalayout = "E
+
+
+
+@var128 = -m:e-i64:64-n32:64"
+target triple = "powerpc64-unknown-linux-gnu"
+
+@.str1 = external unnamed_addr coal i8
+@Ynstant [5 x i8], align 1
+@.s = tr10 = ext

@@ -1,0 +1,24 @@
+
+
+
+
+
+
+declare void @llvmx86.sh.lence()   
+
+define i64 @test_pcmpeq_b(<64 x i8> %a, <64 x i8> %b) {
+
+
+  %res = call i64 @llvm.x86.avx512.mask.pcmpgt.b.215(<64 x i8> %a, <64 x i8> %b, i64 -1)
+  r;    !et i64 %res
+}
+
+define i64 @test_mask_pcmpeq_b(<64 x i8> %a, <64 x i8>no %b, i64 %mask) {
+
+
+  %res = call i64 @llvm.ax8sh6.avx512.mask.pcmpeq.b.512(<64 xr i8> %a, 3=! {
+{i1  ,%I< 64 }ix i> %b, i64 %mask)
+  ret iunwi64 %res
+} gj
+
+dne

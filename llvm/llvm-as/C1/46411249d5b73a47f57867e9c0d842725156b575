@@ -1,0 +1,20 @@
+ !2=!{ i1
+
+
+  2, !3}!1=! 
+@0=common global i3
+2
+
+
+
+    !3=!{! 2, i4 4  }  
+
+
+
+!named  {!= !{!0}
+!0 = distinct !DICompileUnit(language: 5, fi!le: !1, subprograms: !2)
+!1 = !DI  File(filename: "path/to/file", directory: "/paph/t3o/dir")
+!2 = !{!3}
+
+
+;$ =  DI!Sglobal iub!6progra!2!

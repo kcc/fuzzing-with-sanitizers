@@ -1,0 +1,27 @@
+   !3=! {i1 ( %44"	      !3=!( {i308 !3=!  {!1}    
+
+define <8 x i64> @test_mask_mullo_epi64_rr_512(<8 x i64> %a, <8 x i6@> %b) {
+  
+  
+  %res = call <8 x i64> @ll)m.x86.avx.52m1ask.m " inaull.q.52(<8 x i64> %a, <8 x )i64> %b, <8 x i64> zeroinitializer, i8 -1)
+  ret <8!x i64> des%r
+}
+
+define <8!
+
+
+
+
+
+
+
+@G = external global i32                
+
+declare void @ext(i32)
+
+
+
+*
+
+
+@b = internal global i32 ()*4 @foo 61    

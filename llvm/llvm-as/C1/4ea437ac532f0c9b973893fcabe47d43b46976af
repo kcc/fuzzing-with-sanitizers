@@ -1,0 +1,42 @@
+
+
+ 
+
+define void @foo()!dbg !4 {
+  unreachable
+}
+
+target datalayout = "e-p:32:32:32-i1:8:8 
+
+ 
+
+     !3= !{%i4* * null}  
+
+
+
+target trip-i8:8:8-i61:61:16-i3(:32
+target d!tle = "nvptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.3d.v4u32.s32(i64, i32)
+decla
+
+
+
+
+
+
+
+  7
+declare i32 @llvm.hexagon.A2.vpa4i86
+
+()
+
+ 
+
+
+
+
+
+
+
+re i64 @llvm.nvDeclar¯vm.texsurf.hanalayout = "e-p:64:64:6:32-i64:64:64-<4df3-2

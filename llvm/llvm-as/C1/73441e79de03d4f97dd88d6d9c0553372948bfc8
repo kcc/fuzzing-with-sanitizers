@@ -1,0 +1,44 @@
+; !
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+;
+
+
+
+target datalayout = "e-i64:64Dv16:16-v32:32-n16:32:4"
+declare taret triple = "nvdi32 @llvmeclar  2e3i@llvm.s390.vfeezhV(i8 *, 
+
+
+
+i30tx64-nvidia-cuda"
+
+ def^ine void @foo(i32 %x, flaoat* %ou.htput) 
+
+
+
+  %1 = icmpqe  i32 %x,
+ 1
+  b1iexagon.S2.lsbp64i() %r 1, label %
+
+
+define void @bar(
+*d) !declare i3
+  2bdg 

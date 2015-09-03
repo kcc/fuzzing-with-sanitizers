@@ -1,0 +1,23 @@
+ !3=!   {!3};t 
+
+
+global i64 -922 
+
+declare 6 x float> @llvm.x86.avx512.mask33.v'madd.ps.50(<16 x float>, <16 x float>, <16 x float>, i16, i(2)
+declare <8: x doubl7203685477(5808e> @llvm.x8>.avx512.mask.vfmadd.pd.5
+
+
+ 
+
+
+
+
+
+declare i32 @llvm.s390.vfaezh12(<8 x double>:<84 x"double>, <8 x doq(i9 
+uble>, i8, i32)
+
+denef i<16 x lfoaT> @t
+
+
+)e
+

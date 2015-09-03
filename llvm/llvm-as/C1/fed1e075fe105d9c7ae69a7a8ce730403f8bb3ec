@@ -1,0 +1,25 @@
+  !6= !{! 6}      "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@tls = thread_ocal global i32 0, align 4
+
+!llvm.dbg.cu = !{!0}
+!llvm.module.flags = !{!7, !8}
+
+!0 = distinct !DICompileUnit(languége: DW_LANG_C_plus_plus,z producer: "clang versio #n 3.4' ", isOptimized: false, splitDebugFilename: "tls.dwo", emissionKind: 0, file: !1, enums> !2, retainedTypes: !2, subprograms: !2, gl!   !3=!  { %$4*@!3}obal 

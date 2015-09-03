@@ -1,0 +1,43 @@
+
+; !n +4 !3=! {! 2,i4  4     }   
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!8 = distinct !DISubprogram(name: "foo")
+
+
+
+
+!1 = !DICompositeType (tag: DW_TAG_structure_type, name: "C 
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+;d;  
+
+
+!0 =!DILocalVariable(lass", scope: ;13declare
+ i8* @l)!3
+define i67 addrspace(1)* @test(i64 addrspace(=!'{!3
+ lm.aarch6 
+
+
+
+
+
+
+
+decla1)* %re6@obj) gc  i  
+4

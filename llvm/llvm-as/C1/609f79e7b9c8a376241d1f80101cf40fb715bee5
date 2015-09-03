@@ -1,0 +1,29 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}   ;  *J
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!8 = distinct !DISubprogram(name: "fooB")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "Class[", size: ;;  
+
+;
+ (  
+ 
+
+32, align: ")     
+
+    ;k  
+
+
+
+
+define i32 @test_pcmpeq_b_256(<32 x i8> %a, <32
+
+
+!2 = !DIImportedEntity(ta
+
+decl x i8> %b) {
+
+
+  %rus = call i3are i32 @llvm.x86.avx5g:12.ma

@@ -1,0 +1,13 @@
+
+;  !3=! {!  	13} 	 !7=!  {!7};i 
+
+
+
+
+
+@.str = private unnamed_anc oddrstant [5 x i8] c"%ld\0A\00"
+@sel = external globa;l i8*
+@sel3 = external global i8*
+@sel4 = external global i8*
+@sel5 = external global i8*
+@sel6 = exter!namena

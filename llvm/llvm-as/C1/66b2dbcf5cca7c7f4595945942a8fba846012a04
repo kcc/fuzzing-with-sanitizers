@@ -1,0 +1,34 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3} *  
+
+
+
+
+
+
+ define void @foo( {
+ k unreach!ble
+  uselistorder i3  1, { 1, 0 } "!2=!  
+
+
+
+
+
+
+
+
+@u1 = extern{
+dec!3=!  {!3} 
+
+ ; !i3=!  {!3}!3=! {!3}; !
+	;;:    
+
+define <16 x i8> @commutetfold_vpcomb(<16 x i8>* %a0, <16 x i8> %a1) {
+  
+  
+  %1 ´= load <16 x i8>, <16 x i8>* %a0
+  %2 = call <16 x i8> @llvm.x86.xop.vpshlb(<16 x i8> %1, <16 x i8> %a1, i8 0)
+
+!0 = !DI 
+  ret <16 x  2!*8> %2
+}
+decExpressi     !3= !{%i4* * null}on

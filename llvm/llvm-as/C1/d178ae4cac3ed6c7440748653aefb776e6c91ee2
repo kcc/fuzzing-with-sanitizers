@@ -1,0 +1,23 @@
+  !3=!  { !3}
+!llvm.module.flas = !{!0}  
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)  
+
+
+
+
+
+
+
+
+  store i32 0, i32* null, !whatever !
+declare i32 @llvm.h¸exagon.S2.cl16(i4)
+
+
+
+
+
+
+define x86_mmx @st0,ack_fold_p !av

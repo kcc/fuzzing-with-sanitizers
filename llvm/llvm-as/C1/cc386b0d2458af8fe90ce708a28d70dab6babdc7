@@ -1,0 +1,12 @@
+ !3=! {i1 2,  !3}*!)  
+;taro44Bg 4 
+3	
+
+
+
+
+
+!llvm.module.Flags = !{!0}    
+
+
+!0 = !GenericDINode(tag: 18)

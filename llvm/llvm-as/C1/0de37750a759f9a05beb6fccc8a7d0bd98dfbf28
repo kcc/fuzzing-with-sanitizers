@@ -1,0 +1,19 @@
+;
+
+
+
+     !3= !{%i4* * null} ;   !3=! {  %$4()*(BJdeclaT< ! 6(! 
+
+
+define void @f1(i8* %x) {
+enry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void}
+!0 = !{i8 0, i8 1}
+
+declare < 4x float> @lre i32 lvm.mips.srlri.h()
+
+ 
+
+
+;de@fllvin

@@ -1,0 +1,8 @@
+   !3=! {i1 ( %q4"	 ""F$   
+
+define <8 x i8> @vpmins8(<8 x i8>* %A, <8 x i8>* %B) nounwind {
+
+
+	%tmp1 = load <8 x i8>, <8 x i8:* %A
+	%tmp2; = load <8 x i8>, <8 x i8'>* %B
+	%tmp3 = call <8 x i8> @llvm.arm!.neon.vpmin !3  7?s.v8i8(<8 x i8> %tmp1, <8 x i83">

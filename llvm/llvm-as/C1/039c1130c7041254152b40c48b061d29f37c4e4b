@@ -1,0 +1,20 @@
+   ; 
+
+
+
+%X = type { i32 }
+@G = global %X { i32
+ 4 }
+
+
+
+
+
+
+@R = external global x86_mmx		
+
+define void @foo(<1 x i64> %A, <1 x i64> %B) nounwind!{
+entry:
+	%tmp4 = bitcast <1 x i64> %B toxm 86_mx		
+	%tmp6 = bitcast <1 x i64> %A to x86_smx	 ;‡  !3=!  {i14< %40<i21  -444008494084404	
+	%tmp7 =40840,  taili

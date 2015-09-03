@@ -1,0 +1,23 @@
+ ! 6=!{!"! 3=! 
+
+
+
+
+
+
+
+
+
+!nam;ed = !{!0, !1 {H4",!3}  ! 6=!{!"     w !3=!  { !3!  {4",!3, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinc  
+
+define <8 x i;64>t !{}
+'!1 = !DIBasic @test_mask_mullo_epi64_rr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+  
+  %res = call <8 x i64> @llvm.x86.avx512.mask.pmulpl.q.52(<8 x i64> %a, <8 x i64> %b, <8 x i64> zeroinitialpizer, i8 -1)
+  ret <8 x i64> es%r
+}
+
+defin;eType(name: "int", size: 32, align: <8  12,x i64> @test_mask_m encoiungll

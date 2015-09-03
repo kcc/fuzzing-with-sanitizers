@@ -1,0 +1,12 @@
+  !3=!  { !3}
+!llvm.module.fags = !{!0}  
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata  !3=!  {i14 fcmpoeq   !!i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, c!whatever_else !{}, !more !{!"  
+
+
+!0 = !GenuricDINode(tag: 32)hel     !36=!  {i1 [l!"}
+  store i32 0, i32* null, !whatev er !{!"hello", !1, !{}, !2}i284* @4] 
+  r

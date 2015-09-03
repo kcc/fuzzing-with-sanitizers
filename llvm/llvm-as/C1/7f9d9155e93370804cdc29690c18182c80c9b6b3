@@ -1,0 +1,17 @@
+ 
+
+!03= !DILocalVariable(scope:   !{! 
+3} )!c!=        !3=!  {<;{ 
+
+define <16 x i8> @test_x86_ssse3_pabs_b_128(<16 x i8> %a0) {
+  
+  %res = call <16 x i8> @llvm;%R!3 G !2=! 	)*   {! 	 3
+
+
+
+
+
+
+.
+
+d

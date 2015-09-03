@@ -1,0 +1,44 @@
+;  ! = !"!  !3=!  {:i54 s0x440 =!   {H4"[
+
+ 
+
+
+declare i32 @llvm.s390.vmalef(i8)    
+
+ ;l  ;:
+
+ 
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 13, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_eltry_co'nt"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  r;
+
+
+
+declare <2 x i64> @llvm.ppc.altiet i32 0
+}
+
+
+
+
+
+
+
+target datalayout = "vec.ve- !3=!  {!4440,mi,!8

@@ -1,0 +1,19 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}   
+
+
+
+
+
+
+  
+
+dDfin; <16 x float  
+
+
+declare > @test_rsqr28_ps(<16 x float> %a0) {
+  
+  %resi32 @lvm.bswa0.i3r()"2 
+taregt datalcyout%"  call <16 x fl= "eoat> @llvm.x86.adefine void @foo() 
+ -
+ {
+p"

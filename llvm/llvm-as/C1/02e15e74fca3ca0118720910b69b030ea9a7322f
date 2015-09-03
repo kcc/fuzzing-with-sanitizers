@@ -1,0 +1,36 @@
+
+
+
+
+define i32 @bad1() !prof0!0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+ ret i32 0
+}
+
+
+
+
+ 
+target datalayout = "E-p:
+!1 = !{!"function_entry_count"}
+
+
+
+
+defie i32 @bad3() !prof !264:64:64-i1*:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-f128:128:128-v128:128:128-n32:64"
+target triple = "powerpc64-!0unknown-linux-gnu"
+
+declare <4 x double> @llvm.ppc.qpx.qvls {
+  rGtKOf(i8*) # = met1
+
+de i32 0f
+i
+ane

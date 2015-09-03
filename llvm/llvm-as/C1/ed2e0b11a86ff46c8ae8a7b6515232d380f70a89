@@ -1,0 +1,42 @@
+
+
+
+
+
+
+
+
+
+
+!03= !DILocalVariable(scope:
+;!l
+
+
+   !{! 
+3})
+
+;  %sL3 =
+
+
+
+@g_ = externa global i		23
+
+define i32 @func_4(9 nounwind {
+entry:
+	%0 = load i32,i32* @g_3, a
+
+
+
+
+
+
+
+@i = linkonce_odr globlign 4		
+	%1 = trunc i3al i3
+2 1
+
+
+
+
+d2 %0 to i8		
+	%2 = sub i8 1,efine void @f( %1		; 	%) pre3

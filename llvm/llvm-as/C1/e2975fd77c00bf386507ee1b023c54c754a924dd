@@ -1,0 +1,62 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;
+
+
+
+
+
+
+%struct.S = type { i32 }
+
+
+define i32 @_Z8function1Si(i32 %s.coerce, i32 %i) #0 {
+entry:
+  tail call void @llvm.dbg.declare(metadata %struct.S* undef, metadata !14, metadata !DIE    
+
+ 
+declare void @llvm.ppxpres.undefinVed(sion()), !dbg !20:
+  tllai cal voidm@llvm.dbg.valu(metadata i32 %i,   ;; 
+
+
+
+declaire
+
+
+
+
+
+
+declare float @llvm.oear 3byit.f3(float"
+")
+!3=! {!3 } ;: 
+!llvm.module.flags = !{!0}  !
+
+
+!0 = !Ge2nericDINode(tagf:¹  24)

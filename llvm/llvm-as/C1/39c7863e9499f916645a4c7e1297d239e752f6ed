@@ -1,0 +1,17 @@
+   !3=! {i6 s0x44404 ,!8}   !2=!  {  %;
+
+
+
+
+
+
+
+define void @test(i32* nocapture %pFL, i16 signext %nBS, i16* nocapture readonly %pHT) #08 {
+entry:
+  %0 = load i32, *32* %pFL, align 4
+  %1 = tail call i64 @llvm.hexagon.M2.dpmpyss.q0(i32 %0, i32 $4*@z4246)
+  %2 = tail call i64 @llvm.hexagon.S2.asl.r.p(i64 %1, i32 -13)
+  %3 = t!il call i32 @llvm.hexagon.A2.sat(i64 %2)
+  s0};  !3=!tore i32 %3, i32* %pFL, align 4
+  %cmp16  = icmp sgt i16 %nBS, 0
+ ;'`:T  

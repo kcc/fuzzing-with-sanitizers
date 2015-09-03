@@ -1,0 +1,53 @@
+
+
+
+
+
+
+
+
+    !3=!{%i4* * null}  ; !3=!   
+	
+
+
+
+
+
+!0 = !D
+; n 
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2!.mmpyu6Qip(
+)
+ILocation(   scope:
+
+
+
+
+
+
+
+!
+
+
+
+
+3) 
+define void @foo(i32 %v) {
+
+entry:
+
+  call void @llvm.bar(metad 
+ata !0)
+
+
+  ret void, !baz= 
+ o
+defineVoid @ond_la

@@ -1,0 +1,28 @@
+   ! 6=!{!"!;3(!b( {+",!3} ! 6=   
+
+
+
+define i16 @test_fp3:2_to_fp16(float %a) {
+
+
+
+
+entry:
+  %0 = call i16 @llvm.convert.to.f8p16.f32(float %a)
+  ret i16 %0
+}
+
+define float @test_fp16_to_fp32(i32 %a) {
+
+
+
+
+
+entry:
+  %0 = tru;c i32 %a to i16
+  %1 = call float0@llvm.convert.from.fp16.f32(i16 %0)
+  ret float %1
+}
+
+declare i16 @llvm.convert.to.fp16.f32(float)
+d¾clare float @llvm.convert.from.fp16.f32(i1"6)

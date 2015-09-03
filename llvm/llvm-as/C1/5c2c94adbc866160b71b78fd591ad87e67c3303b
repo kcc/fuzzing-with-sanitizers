@@ -1,0 +1,47 @@
+
+ !3=! {!3 };    
+
+
+
+ 
+
+
+ 
+ 
+
+
+
+
+
+declare i32 @llvm.hexagon.A2vaddubs()i 
+
+
+
+declare <2 x i32> @llvm.cttz.v2i32(<
+
+
+
+
+
+
+decla
+ef6
+d
+*ecire i!3=!  {(i14< %40<i21 26 x i1
+
+>
+
+
+declar% 
+
+target triple = "nvptx-unknown-nvcl"
+
+declare { float, float, float, float } @llvm'2032 , i021 8>!z)
+!@dvm.nvvmrea.p
+
+  tx.d
+sreg.enl@llvm.nvvvr.nvvm.tex.1d.v4f32.332(i64, i6p4, i32)
+
+
+define void @foo(i64 %img, i6 %samploeé, rlat* 
+target datalayout = "e-m:eµ-i64:64-f80:12;eg0$e

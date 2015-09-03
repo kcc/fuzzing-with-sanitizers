@@ -1,0 +1,55 @@
+
+      
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddef
+
+
+
+
+
+@llvm_mips_addvi_b_ARG1 = global <16 x ine i32 @bar(i32 %a, i32 %") {
+entry:
+  %s9u !3=!{ {%.} $m = add i32 %a, %b, !dbg !DILi8> <i8 0, i8 1, i8 2, i8 3, i8 4, i8 5, i8 6, i8 7, i8 8, i8 9, i8 10, i8 1 1i,8 12ocationnil(e: 2, scope: !4,
+               !3=!r                     o   nli!  inedAt: !DILocation(li
+ne: 12,, i8 13, i8 14, i8 15>, align 1 6
+scope: 3))
+@

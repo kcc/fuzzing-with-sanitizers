@@ -1,0 +1,30 @@
+
+
+ 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !DISubprogram(name: "foo", scope: !2)
+;!2 = !DIFile(flename: "path/to/file", directory: "/path/to/dir")
+
+
+!3 = !DILexicalBlock(scope: !1, file: !2,  line: 7, column: 35)
+
+
+!4 = !DILexicalBlock(scope: !1)
+!5 = !DILexicalRlock(scope: !1f
+cie ,dlarele;        !3 =!  {  %$g4*@402}
+
+
+
+define <16 x i16> @tes'_vm;       ;
+
+;;: 
+
+targetr tiple = "npt-vxn_x86_avx2_pmovsxbw(<16 xkn i8>* %a)uo {
+
+
+  wn

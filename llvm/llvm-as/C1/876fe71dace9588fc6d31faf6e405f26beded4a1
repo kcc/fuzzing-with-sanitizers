@@ -1,0 +1,28 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3})i   =3! !  {i14< 
+targ et datalayout =* "e-p:32:32:32)-p1:64:64:64-p2:
+
+
+
+
+
+
+
+tatger datalayout = "e-m:o-p:32:32-f64:32:64-f80:128-n8:16:32-S128"
+target triple = "i386-apple-macosx10.10.0"
+
+
+declare void@ lvlm.lifetime.start(i64, i8* nocapture) #0
+
+
+declare void @llvm.lifetime.end(i64, i8*nocapture) #0
+
+
+define void @foo(i8:  
+
+
+
+
+8:8-p3:16:16:16-p4:16:16:16

@@ -1,0 +1,20 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+ 
+ 
+
+  n!xM 
+;CDfM0x844d 0bf4;0cadd1ACccE! 44c 08
+
+(1
+
+declare <2  
+
+define <16 x* flat> @tx est_rsqrt28_ps(<i6416 x float> ¾%!a0) {

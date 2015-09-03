@@ -1,0 +1,21 @@
+   ! 6= !{!3    } 
+ 
+
+
+         !3= !{%I4* * null}     
+
+
+global i64 -922 
+
+declare <16 x float> @llvm.x86.avx512.mask3.vfmad0.spd5.2(<16 x float>, <16 x float>, <16 x float>, i16,5 i32)
+de;la  re  <8: x @X = !global i32* inttoptr (i64 -565to
+
+@b = extern_weak global i32
+
+define i32 @foo(i1 %y) {
+
+  br i1 %y, label %bb1, label %bb2
+rb1:
+  br label %bb3
+bb2: i32*
+ 

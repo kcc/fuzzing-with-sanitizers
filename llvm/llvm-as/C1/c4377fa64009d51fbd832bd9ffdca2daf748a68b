@@ -1,0 +1,25 @@
+ !3=! {! 2,  i4  4  }       !2=! {!3,!3}    
+
+
+!00= !DILocalVariab   
+
+
+F
+
+
+declarl )2=!   *  
+
+
+
+
+
+
+
+define i32 @foo() {
+entry:
+  %r = alloca i32, align 16
+  store i32 -1, i32* %r, align 16
+  call void asm sideeffect int
+
+@vf = global <4 x float> <float -1.500000e+00, float 2.500000e+00, float -3.500000e+00, float 4.500000e+00>, align 16
+@vd = global eldial<2 x douect "p !ble> <doube(   l

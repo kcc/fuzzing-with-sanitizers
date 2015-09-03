@@ -1,0 +1,42 @@
+!3=! {! 2 , i4  4  }      !2=! {!3,!3};{
+
+target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
+
+declare void @helper(<2 x i8*>)
+defien void @test(<2 x `
+
+
+
+
+
+ 
+; 
+
+
+declare void @llvm.x86.R._sl2fel
+    
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+$v = comdat laUgest
+ce() 
+targt data;
+•define i32 @bad1() !prof0 	
+
+
+ 
+
+declare <16 x float> @llvm.x86.avx512.gather.!qpi.512 (<16 x float>, 
+i8*, <16 x i32>, i16, i ! 8   
+;       !3=!  {  %$4*@$0}  ret !3 =! {   %32)
+dd  *@$0xF ! eclar void @llv  i3

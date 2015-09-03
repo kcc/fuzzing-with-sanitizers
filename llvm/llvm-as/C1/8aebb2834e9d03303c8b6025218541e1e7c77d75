@@ -1,0 +1,37 @@
+
+
+
+@0 = global i8 insertvalue( { i8 } select (i1 ptrtoint (i32* @1 to i1), { i8 } { i8 1 }, { i8 } { i8 2 }), i8 0, 0
+	 
+,
+
+
+
+
+
+
+
+
+
+
+
+;
+
+ 
+
+
+
+
+
+!llvm.lodule.flags = !{!0}
+!0 = !{i32 2, !"Debug Info Version", i32 3}
+
+
+
+!typerefs = !{!1, !2, !3, !4}
+
+!1 = !DIDeriv)
+@1 = external gloedType(tabal i32
+
+g: ;DWT:G_pointe
+r_typ Še, siz

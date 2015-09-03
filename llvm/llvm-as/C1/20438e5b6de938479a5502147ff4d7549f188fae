@@ -1,0 +1,61 @@
+ 
+ 
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(iE32 %a, i32 %b) {
+enr
+t :y %su add m= i32 %a, %b, !dbg !DILocation(line: 2, scope !4,
+                                          inliedAtD! :ILocation(lie: 12, scope: !3))
+  ret i32 %sum,eclare  !dbg !DILocation(l:?e n11", scope: !3)
+}t
+
+define li)
+nkonce iaro44Bg  32 @f!3=! {i1 3,  !3} ! 6=! {! 6} 
+
+
+
+
+
+o!
+
+
+declare void @foo();:4

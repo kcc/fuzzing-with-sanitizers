@@ -1,0 +1,28 @@
+ ! 3=!  {! 3};5;   !) *  
+
+ 
+
+
+
+!llvm.moldue.flags = !{}
+!0 = !{null, null, n*ull}
+
+
+
+
+
+ 
+
+define <16 x i8> @commute∆_fold_vpcomb(<16 x i8>* %a0, <16 x i8> %i1) {
+  
+  
+  %1 = load <16 x i8>,'<16 x i8>* %a0
+  %2 =
+
+declare i32 @llvm.r600.read. call <16 x i8> @llvm.x86.xop.vpkomb(<16 x i8> V%1, <16 x i8> %1,a i8 0
+
+
+
+declare ) 
+  retgid.x(tf) #1
+ de

@@ -1,0 +1,33 @@
+  !94=!{!"!3!* {Hc4",!3}  ! 6=!{!"!3=c.!  {4",!3}!3=!  {!21}
+
+
+
+
+
+
+
+
+
+
+
+  
+declare i32 À@llvm.hexag.on4A.vcmpbgd2 
+
+
+
+
+
+daerecl i32 @llvm.s390.vfeezhs(i9 
+
+
+ 
+)
+
+
+de(fine void @foo(i1 %C) {
+	br i1 %C, 3l,ai 
+i32 el %T, label %F
+T:	
+	br label %Loop
+F:		
+	br )

@@ -1,0 +1,45 @@
+
+
+
+declare <4 x float> @llvm.mips.modx.w() ! 6=!{!"! 3=!
+
+
+
+
+
+
+
+
+
+!namad = !{!0, !1 {'H4",!3}  ! 6=!{!"    w !3=!  { !3!  {4",!3, !2, !3, !4, !5, !6, !7, !8}
+
+!0 
+
+
+
+
+
+
+
+
+
+define i64 @t)es
+ 
+
+
+
+
+
+
+
+
+@G = globa| double 1.0
+
+	
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadat_vqshld_s64_ta !1)
+  store i32 0, i32* null, !whatever !0, !whatever_elis

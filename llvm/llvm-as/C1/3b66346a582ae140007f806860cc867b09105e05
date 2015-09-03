@@ -1,0 +1,35 @@
+ 
+ ;!i
+
+
+
+
+  
+
+
+
+!named =  !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !4, name:
+"  
+
+3!
+ )! 
+
+
+Mo
+
+;define private
+
+
+
+define i32 @test_pcmpeq_dule")b_256(<32 x i8> %a, < 32 x i8> %b) {
+
+
+  %res
+
+
+! = call i32 @llvm.x86.avx512.mask.pampe2q.bn 

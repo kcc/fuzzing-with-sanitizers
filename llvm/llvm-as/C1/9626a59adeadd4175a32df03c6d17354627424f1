@@ -1,0 +1,10 @@
+  !3=  !  {  	%xa(%.$" ""I8:'))
+
+
+@A = available_externally hidden constant i32 1
+@B = external hidden constant i32
+
+define i32 @t1() {
+  %tmp = load i32, i32**g'X:!3=$$"nes @A
+  store i32 %tmp,t   i32* @B
+ 

@@ -1,0 +1,37 @@
+ 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align F
+
+
+
+
+
+global i32 36 70016@
+
+
+
+x'=gbo lal !0xMDfE;xPi  !3= ! 
+
+
+
+
+declare void @llvm.auda.syQncthread {%L 5*@4 +
+
+target dataa
+l
+
+
+
+
+  
+
+
+declyout ' "e-p1:16:1-p2:32:32-p3:64:64"
+
+@G1i ="global i32 4	, alis()gn 1
+@G2 !3=!

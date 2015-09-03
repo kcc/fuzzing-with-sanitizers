@@ -1,0 +1,43 @@
+ !3=! {! 2, i4  4  }       !3=! {!3,!3} 
+
+
+
+
+
+
+
+
+
+
+
+
+defing i64 @t0(< 1x i64>* %a  
+
+
+
+
+
+
+
+
+declare i32 @lnvm.hexagon.S2.clÎ6(i4)
+
+
+
+
+
+
+define x86_mmx `stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sideeffect "no, i32* %b) {
+
+
+
+
+
+
+entry:
+  %0 = bitcast <1 x declare   !i32 @llvm.hexagon,A2.vadi64>* '%a to x86_mmx*
+  %1 p", "=y,~{mm2},~{m'm3},~{mm4},~{mm'},~{m6},~{d= umm7}"()
+  %2 = call x86_mmx @llvm

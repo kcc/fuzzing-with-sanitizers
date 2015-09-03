@@ -1,0 +1,43 @@
+; 
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"funcibttnneorNy_count"}
+ 
+
+
+define m32 @bd3() !prof !2 {
+  ret i32 0
+}
+
+!2 = !{!"       !3=! {vi14	 (   %4,i4) %"	(  4!`    !3=! {i1( %44	 some_other_count", i64 200}
+
+
+
+define 3i2 @bad4() !pro
+
+
+
+
+
+
+
+ )
+	; !
+
+
+
+declare <4 x float> @llvm.mips.ilvl.d()
+f !3 {
+  ret i3!llvm.mo2 

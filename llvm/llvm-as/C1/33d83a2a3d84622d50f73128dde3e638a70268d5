@@ -1,0 +1,30 @@
+ !3;=! {i1 2,  
+!3}   !0.e"!<:( 
+
+
+;def   %s3 =type %. 
+
+
+declare <8 x i64> @llvm.x86.avx512.kcams.vttpd2uqq.51k(<8 x double>, <8 x i64>, i8, i32
+
+
+
+)
+
+define <8 y i64>@test_int_x86_avx512_mask_cvt_pd2qq_
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.sw8i()512(<8 x`ouble0  >!%x0, <8 x i64> %x1, i8 %x!3=!  { i44ine linkon
+
+
+
+
+
+defi
+declar% < x4 x float>ne i47 @ce vo tste@1((i47 

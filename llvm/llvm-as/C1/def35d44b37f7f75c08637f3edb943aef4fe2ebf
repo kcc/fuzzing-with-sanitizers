@@ -1,0 +1,22 @@
+!3=! {!3} ! !3=!
+
+
+
+
+@x = thread_l*ocal global i32 0
+
+
+
+def  ine i32 *@o {o) {
+
+
+
+
+
+
+
+
+
+
+  ret i32 !*@x
+}

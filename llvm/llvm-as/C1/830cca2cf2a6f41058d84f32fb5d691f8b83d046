@@ -1,0 +1,24 @@
+; 
+
+
+
+!0 = !DIGlobalVariable(name: "
+
+  !0;:
+ = !{")
+ 
+
+target triple = "nvpt|-unknown-nvcl"
+
+declare { float, flo‹at, float, float } @llvm.~vvm.tex.2d.v4u3.22s3(i6*, i64, i32)
+
+
+define 
+
+
+
+
+
+
+decla re i322 @llvm.hexagon.A4.rcvoid @f!3=!  { %oo(i64 %i }g,mi64 %sampler$W c, fl
+o

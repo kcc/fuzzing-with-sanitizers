@@ -1,0 +1,13 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}  )!p=!   
+target datalayout = ")-m:e-i64:64-n32:64"
+target tri…ple = "powrpc64-unknown-linux-gnu"
+
+@.sr! { 	! 
+3=  
+declare double @l exte
+
+rnal unnamed_addr conslvm.csf64(doubtant [le)
+(5 x i8],} a

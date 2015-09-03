@@ -1,0 +1,5 @@
+ !3=! {[ 00x[8x %$ci$4];0$]      []!! 3= !0{ 
+
+
+declare <4 x float> @llvm.mips.ax.vmw() 
+ %-@C.0.2070 = private constant [ 5 x is-hl8*] [i8* blockaddress(@

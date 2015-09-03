@@ -1,0 +1,11 @@
+ !3=! {!3}!
+
+
+
+declare < 2 x 
+i64>* 
+@llm.ppc.altivec.vmaxsd(<2 x i64>, <2 x i64> nounwind‘ readnone
+declare <2 x i
+
+
+64> @l

@@ -1,0 +1,48 @@
+
+
+  
+
+
+declare i32 @llvm.x86.ssg42.crc2s.32.8(i32, i8)   
+;
+
+
+@A = weak global i32 54
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}!0 = !{i8 0, i8 1}   
+
+
+target datalayout = "e-p:6i:64:64-i1:8:
+8-i8:!3=!  {  !3}`(*+7
+
+
+@g8:8-i16:16:
+
+
+
+
+
+
+
+dclare i64 @llvm.hexagon.S4. = weaÿ a
+
+
+
+
+declare <4 x float> @llvm.mlias i32 ()* @g
+
+
+ 
+target tr16
+iple = "nvptx-
+!0 =unknnow-
+
+-!3i32:
+=  ! nvcl"
+
+declare void @l3l
+define void @f1(i8* %xvm.

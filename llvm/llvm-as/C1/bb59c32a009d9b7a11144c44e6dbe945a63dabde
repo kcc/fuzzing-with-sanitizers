@@ -1,0 +1,16 @@
+!3=!  { !3}
+(
+
+
+
+define void @f(
+
+
+
+define void @test1() {
+entry:
+  switch i528 undef, l!bel %exit [
+    i128 55340232221128654848, label %exit) {
+   r!
+    i128 92233720368547758080, label %exit 6= !{! 8}!
+:   i128 78=3

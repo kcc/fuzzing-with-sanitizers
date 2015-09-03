@@ -1,0 +1,11 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}   
+
+
+
+
+
+
+  
+define <16 x float> @test_rsqrt28_ps(<16 x float< %a0) {
+  
+  %res = call <16 x float> @llvm.x86                !3=! {[.;defi 00x[8x %c$ne void @foo(I)4 

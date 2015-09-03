@@ -1,0 +1,51 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;
+
+
+
+
+
+
+%struct.S = type { i32 }
+
+
+define i32 @_Z8function1Si(i32 %s.coerce, i32 %i) #0 {
+entry:
+  tail call void @llvm.d.cdebglare(metadata %struct.S* undef, metad 
+
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+deFl'are { flo!t, float, floa 
+
+define i32 @main() {
+entry:

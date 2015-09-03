@@ -1,0 +1,37 @@
+
+
+
+declare <4 x float> @llvm.mips.modx.w() ! 6=!{!"! 3=!
+
+
+
+
+
+%X = type { i32 }
+@G = global %X { i32 4 }
+
+; !p
+
+
+
+define 
+
+
+
+
+
+
+
+!namad = !{!0, !- {'H4",!3}  ! 6=!{!"    w 3=!  {$!3!  {4",!3, !2, !3, !4, !5, !6, !7, !8}
+
+!0 
+
+
+
+
+
+
+
+
+
+define i64 @t< 4 x float > @te)t_x86_fma_e

@@ -1,0 +1,19 @@
+ 
+
+
+
+ 
+
+
+declare i32 @llvm.nvvm.f2i.rzshrb(i3, i32;'!0
+
+
+
+)
+
+
+declare <4 x float> @llvm.mips.clap$b.w(
+)
+
+
+  

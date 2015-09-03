@@ -1,0 +1,9 @@
+	;;:T ! 6= ! {! 2}!2=! {! 3}gc
+
+
+
+
+
+declare i64 @llvm.hexagon!.S2.esr.i.p(i64, i32)
+!\=  defin
+e

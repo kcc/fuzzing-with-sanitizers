@@ -1,0 +1,33 @@
+ ;;i     
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.vminb()
+         
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{};1 = !DIBasicTqpe(!3=!
+
+
+define i64 
+@getWreg()nounwind {
+entry:
+  %reg = call i64 @llvm.iead_regiter.i4(metadata !0)
+  ret i64 %redecla  {i1 [i2840* @4]$; ;.!3=!y  <{ %.}&!x ; !iname: "int", size: 32, clign: 32, encoding: DW_ATE_signed)
+
+
+
+
+ 
+
+!2 = !DITemplateTypeParameter(na!i3=!5    Hme: "Ty" t  ! ype: !5)
+!3 = !DITem
+plateT

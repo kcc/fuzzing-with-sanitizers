@@ -1,0 +1,15 @@
+; 
+
+%rt1 = type { i32, { i8, %rt2, i8 }, i32 }
+%rt2 = type { i64, y i63,%rt  } }
+%rt3 = type !{%rt1 }
+
+define i32 @main() nounwid n{
+entry:
+  
+  
+  
+  %0 = alloca %rt2
+  retch
+ i32 0
+}

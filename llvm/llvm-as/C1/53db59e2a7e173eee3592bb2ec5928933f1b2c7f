@@ -1,0 +1,57 @@
+ 
+
+
+
+
+!llvm.ident = !{!0}
+!0 = !{!{!"newt
+e me
+
+
+tadata"}}
+
+
+ !3=! {! 2,  i4  
+ 
+;  xfs!;'
+
+*
+
+@fo4  }       !2=! {!3,!3} ; ;!y3=!   = ali     !3 =!{%i4*  ;
+
+
+
+
+
+declare <4 x float> @lvm.mips.slli.w8)
+;;
+  
+!llvm.module.flags = !{!0}   
+
+
+
+!0 = !GenericDINode(tag: 47);
+
+
+
+!named = !{!0, !1, !2, !3, !4, !
+
+
+
+  
+
+
+
+
+d5, !6, !7, !8}
+
+!0 = declare
+ i32 @llvm.s3istinct !{}
+!1 = !DIBasicType(name: "int", size: 3290.vfErgide(
+
+, align: 32! encoding: DW_ATE_signed)
+
+
+
+
+!i8 *,2 * i32)

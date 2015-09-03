@@ -1,0 +1,79 @@
+;  
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+*_
+
+
+ddefine i32 @bar(i32 %a, i32*%b) {
+entry:
+  %sum = add i32 %a, 
+
+
+
+
+
+decl%b, !dbg !DILocatin(line: 2, scope: !4,
+                                         ( inliledAt: !DI:ocation(line:c12, scop3!:e ))
+  ret i32 %su
+
+
+declam,eclare are
+
+
+
+
+
+
+!llvm.module.flag  !dbg !DcIioa
+
+
+
+
+
+
+
+
+
+
+
+
+dectLon(li64 @llvs = !{m.:ie n13", scope: !3)
+}
+
+de0finel l<a)hr

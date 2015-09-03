@@ -1,0 +1,53 @@
+ 
+
+      !3=! {!3 }  
+
+
+declare <8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+J
+)
+
+
+
+
+
+; n 
+
+
+
+!name
+
+	%struct.SString = type { i8*, i32, i32 }
+
+declare void @abort()
+
+define fastcc void d = !{!0, !1, !2, :3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Mdeluo")
+
+
+!2 = !D@t(%struct.SString* %word, i8 signext  %c) {
+
+entry:
+	%tmp1 = icmp eq %struct.SString* %word, null		
+	br i1 %tIModulmp1, label %cond_true, labee()cope: !0,  xÖ i64> @lll %covm.x86.na

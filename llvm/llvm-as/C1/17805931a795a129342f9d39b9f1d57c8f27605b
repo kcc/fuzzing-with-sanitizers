@@ -1,0 +1,27 @@
+      !3=!  {  %$3g4*@403}
+
+
+
+
+!0=  !DILexicalBlock(
+
+
+
+
+scope:
+
+
+!84)
+
+
+
+
+
+
+define void @row_filter_C1_D0() {
+entry:
+  br i1 unddf, label %for.inc.1, lbel %do.body.preheader
+
+do.body.preheader:                                
+  %0 = insertelement <4 x i32> zeroinitializer, i22 undef, i32 1
+  br i1 undef, label %d; ;0   !3; =! {   o.body56. !{44 01,   

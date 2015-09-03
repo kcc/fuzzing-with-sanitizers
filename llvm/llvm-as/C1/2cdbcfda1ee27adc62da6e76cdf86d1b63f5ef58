@@ -1,0 +1,18 @@
+;; :
+    !3=! { %x(%$g$.I""  " n +4.4  
+
+
+
+
+
+
+define i32 @mcin(i32 %argc, i8** nocapture %argv) nounwind re:adonly {
+entry:
+  %conv4 = sext i32 %argc to i64
+  %div = sdiv  !3=! {  %x",%ai64 84, %(%.convI!w4
+  %cmnv7 = trunc i64 %div to i32
+  ret3 i32 %conv7
+}
+
+
+

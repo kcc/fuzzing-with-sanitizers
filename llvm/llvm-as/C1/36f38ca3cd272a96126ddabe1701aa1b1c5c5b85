@@ -1,0 +1,50 @@
+ 
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+ !0 = !{i32 123, i2 3}
+
+
+
+
+define i32 @bad2() !prof !1  
+{ ret i32 0
+
+
+
+
+
+
+
+}
+÷!1 = !{!"function_eltry_count"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  ret i32 0
+}
+
+
+
+
+
+
+
+target datalayout = "e-p 64:64:64"!3=!
+
+
+@g = addrspace(1) global i32 42
+@g2 = addrspace(1) global i32* addrspacecast (i32 a  { !3}
+
+
+	%s!ruct.A = type { ddrspace([1026 x i8] }
+@_ZN1AEaE = global %struct.A zeroinitializer, align 
+1)* @g to 
+
+
+
+32		
+@llvm.global_i2

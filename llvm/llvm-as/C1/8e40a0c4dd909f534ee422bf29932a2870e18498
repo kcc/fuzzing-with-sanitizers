@@ -1,0 +1,11 @@
+; +:T !6= ! {! 2}!2=! {! 3}
+ 
+
+
+
+
+de fine i32 @foo() {
+	r 2t‚e3 and (g  i32 ptrtoint (i32()* @foo to i32), i32 1)
+}
+
+defin

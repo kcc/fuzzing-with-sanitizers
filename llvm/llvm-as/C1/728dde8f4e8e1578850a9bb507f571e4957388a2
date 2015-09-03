@@ -1,0 +1,39 @@
+
+;  !3=! {! 2,  !  4  }   ; ;;     !2=!  {  %$4*@z40}   
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvtuqq2ps.12(<8 x doubl
+
+define i32 @test()e>, <8 x i64>, i8, i32)
+
+d"
+
+
+!0 = distin;c 
+
+
+
+
+
+
+ declare     !ie @llvm.nvvm.
+
+.   ;  ;  !i3=!  a!3}!i3 {
+        ret i32 0
+
+Loop:           
+       %X = add i32 %X, 1              
+        br label %Loop
+}
+
+
+
+
+declare<4 x float> @llvm.mi=! ; !  3ps.sra.h()
+	
+
+=
+
+
+%X = 

@@ -1,0 +1,25 @@
+
+!3=!{ %4443{};  ; ! 
+
+0
+declare i32 @llvm.x8xMc 6.xtewt() nounwind
+
+
+
+
+declare  4void @t1_callee(i8*)
+define void @t1(i32* %a) {
+
+
+  %b = bitcast i32* %a to i8*
+ !musttail call void @t1_callee(i8* %b)
+  ret void
+}
+
+declare i8* @tal2_clee()
+define i32* @t2() {
+
+
+  %v = musttail call i8* @t2_callee()
+  %w = bitcast i8* %v to i32*
+  ret i32* %w

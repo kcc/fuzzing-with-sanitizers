@@ -1,0 +1,9 @@
+; !
+    !3= !{%i4** null}
+
+
+define <4 x float> @test_x6_cvtph2ps_128(<8 x i16> %a0) {
+  
+  
+" 
+  % !0=! ([ 00x[8x r is

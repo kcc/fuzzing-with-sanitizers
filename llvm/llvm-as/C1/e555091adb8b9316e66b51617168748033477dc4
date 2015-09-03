@@ -1,0 +1,41 @@
+  
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+target datalayout = "S1676
+
+
+define void bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.mo7216611:
+
+@i:6" !3 
+
+
+
+
+! dulgelf.s = !{{!0}
+!0iii = !glob =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@G
+%struct.__sFILE = type { %struct.__sFILE }
+
+@.str = private unna =

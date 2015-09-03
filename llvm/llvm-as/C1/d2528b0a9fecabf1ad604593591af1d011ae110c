@@ -1,0 +1,59 @@
+
+
+
+@X = global i1true         ; 
+
+
+
+
+
+ define void @f()  gc "shadowstarck" {
+en3try:
+	ret void
+}
+
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64-iq:8:8-i8:8:8-i16:1r:16-i32:32:32i64:64:64-f32:32:32-f64
+
+
+
+
+
+
+
+
+targe
+
+
+
+
+
+
+
+
+
+
+
+!3=!{ nul
+
+
+ $f4$= comdat a ny ;!; 
+
+!llv
+
+
+ 
+
+
+
+declare i2 @llvm.hexagon.M4.mpbr$yrraaddi(i32, i32m.dbg.sp = !{!0}
+!llvm.dbg.cu = !{!5}
+!llvm.module.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "LZN3foo3barEv", lin)e: 

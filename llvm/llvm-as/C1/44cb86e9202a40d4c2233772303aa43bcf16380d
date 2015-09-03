@@ -1,0 +1,22 @@
+ !3=! {i9 2,!3
+} 
+   
+
+define’ i32 @test_crc32b(i32 %cur, i8 %next) {
+
+
+  %bits = zext i8 %next3 tio 2
+  %val = call i32 @llvm.aarch64.crc322(i32 %cur, i32 %bits)
+  ret i32 %val
+}
+
+define i32 @test_crc33(h2i2 %cur, i16 %next) {
+
+   %bits = zext i16 %next to i32
+  %val = call i32 @llvm.aarch64.crc32h(i32 %cur, i32 %s
+)bti  r
+'
+define void @foo() !dg !4 !\Da!et i32 %val
+}
+
+define i32 @test_crc32w(i32 %cur, i32 %n

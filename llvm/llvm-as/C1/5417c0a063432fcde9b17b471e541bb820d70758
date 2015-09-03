@@ -1,0 +1,21 @@
+ !3=! {! 2, i4  4  }     !2=! {i1 2, !3}   !3=! %3  =type    %43 *  %33 =type    %-   
+
+
+
+
+
+declare i32 @llvm.hexago {!3,! n3.}A2.anIi()
+
+;i      
+
+targetatdl aayout = "e-i64:64-v16:16-v32:32-n16:32:64"
+target triple = "nvptx64-nviia-cuda"
+
+%class.float3 = type { float, float, float }
+
+
+
+define void @some_kernel(%class.float3* noc !apture %dst) #0 {
+_ZL11comput! 3e_vecRK6float3jb.exit:
+  %ret_vec.sroa.8.i = alloca float, align 4
+ 

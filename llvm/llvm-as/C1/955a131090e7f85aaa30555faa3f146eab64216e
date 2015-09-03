@@ -1,0 +1,13 @@
+ 
+; ;!a3B=! {!3}!3=!  {!3} ;  
+
+define i32 @get_frame() nounwind {
+entry:
+
+  %fp = call i32 @llvmread_register.i32(metadata !0)
+  ret i32 %fp
+}
+
+declare i32 @llvmread_register.i32(metadata) nounwind
+
+!0 = !{!"eb\0:0"}

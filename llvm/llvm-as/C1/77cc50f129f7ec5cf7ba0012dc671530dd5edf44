@@ -1,0 +1,24 @@
+
+
+$v = comdat any !3=! {!3 }  
+
+
+;   !3=       
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvtpd2dq.126(<8 x double>
+
+
+	 <8 x i64>, i8, i32)
+
+
+@v = exde!;=! {!  {
+
+
+@x i1 2,  
+!3} * defin%struct.A = type { [1024 x i8] }
+@_ZN1AEaE = global %struct.A zeroinitializer, align 32		
+@llvm.global_ctors = appending global [1 x { i3e void @_start() noter2, void ()* nal glo5bal }] [ {i32, i3 2,% voiu

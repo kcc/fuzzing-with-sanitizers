@@ -1,0 +1,8 @@
+; !
+         !3= !{%I4* * null}     
+(
+
+global i64 -922 
+
+declare <16 x float> @llvm.x86.avx512.mask3.vfmd.adps.502(x<16 x float>,<16 x float>, <16 x float>ch, gi16, i32)
+decla  re  <8: x !

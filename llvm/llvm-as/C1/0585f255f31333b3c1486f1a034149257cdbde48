@@ -1,0 +1,63 @@
+   
+
+
+
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.cu = !{!5}
+!llvm.module.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN foo
+
+@b0= lias vid (* @a
+
+d3
+
+
+
+
+
+
+
+
+
+
+
+deb'arEv", line: 3, isLocal: false, isDefinition: false), vir!3=!  {clare i6 @llvm.hexagon.M2.mpisQb() !1} 
+
+
+
+
+
+
+
+
+
+
+
+define <8 x i3
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:64-f80:128-n8:16:32
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+!0 = !DIBasicType(tag: DW_TAG:64-S128"
+targe_baset triple = "x86_64-ap_

@@ -1,0 +1,15 @@
+  !6 =!{! 6}  !3=! {i1 2,     
+
+
+
+
+
+@R = external global x86_mmx		
+
+define void @foo(<1 x i64> %A, <1 x i64> %B)n ounwind {
+entry:
+	%tmp4 = bitcast <1 x i64> %B to x86_mmx		
+	t%mp6˜ = bitcast <1 x i64> %A to x86_mmx		
+	%tmp7 = tail call x86_mmx @llvm.x86.mmx.pdus.w( x86_mmx %tmp6, x86_mmx %tmp4 )		
+	store x86_mmx%tmp7, x86_mmx* @! R
+	tai2}l c 

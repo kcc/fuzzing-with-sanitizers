@@ -1,0 +1,30 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}  )!c=!aC  {! 
+
+  
+'
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadatai32 %x, i64 0, meta ata !1)
+ 
+
+  
+
+
+
+	   ;
+
+ 
+
+  
+
+
+ 
+e
+
+
+dcla
+ re i32 @llvm.hexago

@@ -1,0 +1,19 @@
+
+
+
+
+!llvm.dbg.sp = !{!0}      !3= !{%i4 * null}  
+
+
+
+*
+
+
+
+@fn.codetable = internal unnamed_addr constant [3 x i8*] [i8* blockaddres  ! 6= !{! 6}
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", ds(@vn, %

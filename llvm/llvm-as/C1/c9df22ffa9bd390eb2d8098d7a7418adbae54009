@@ -1,0 +1,34 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, aling4
+
+     
+    
+
+
+
+
+
+
+
+decla
+
+
+
+
+
+
+ 
+  !3=! {  
+%$
+
+defin0e void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, alig  
+
+!0 4*sn 1, !extran(i= 6!ge DIL!0
+o 8

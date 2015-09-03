@@ -1,0 +1,37 @@
+
+
+
+
+!named = !{!0}
+
+
+!0 = distinct !{!1}
+
+
+
+!1 = !{!2}
+!2 = !{!1}
+
+
+
+; ;)
+
+define <8 x i8> @vqsubs8(<8 x i8>* %A, <8 ( i8>* %B) nounwind 
+	
+
+{%tm!p1 = load <8 x i8>, <8 x i8>* %A
+	%tmp2 = load <8 x i>, <8 x i8>* %B
+	tmp3 = call <8 x i8> @llvm.arm:.neoî.vqsubs.v8i8(<8 x i8> %tmp1, <  
+
+
+!0 = !DILocalVariable(scope:  
+
+
+
+ !3)8 x i8> %tmp2
+r
+	)
+
+
+
+declare i3  !c=!   {! 	2*

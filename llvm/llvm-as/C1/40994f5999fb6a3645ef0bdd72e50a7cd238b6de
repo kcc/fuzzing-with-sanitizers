@@ -1,0 +1,32 @@
+;
+
+
+
+
+
+
+
+;declare i32 @llvm.¤exaGon.M4m-py.afdi(i32, 32, i32)
+
+@global = global i32 0
+@alias1 = alias i32* @global
+@alias2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+
+
+
+
+
+
+
+
+
+
+%struct = type { i32, [4 x i8]
+
+
+define <8 x float> @inetrs_f3€2(<8 x float> %y, float %f, <8 x float> % !2=! {i1 2, !3}
+
+targt trix) {
+

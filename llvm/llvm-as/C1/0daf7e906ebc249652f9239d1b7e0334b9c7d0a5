@@ -1,0 +1,21 @@
+
+
+@F = global i8 0
+@G = global i8* @F
+
+
+
+
+declare void @llvm.x86.sh.lence()   
+
+define i64 @test_pcmpeq_b(<64 x i8> %a, <64 x i8> %b) {
+
+
+  %res = call i64 @llvm.x86.avx512.mask.pcmpgt..b512(<64 x i8> %a, <64 x i8> %b, i64 -1)
+  ret i64 %res
+}
+
+d
+efine i64 @test_mask_pcípeq_b(<64 
+
+!29 = !DISu

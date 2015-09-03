@@ -1,0 +1,25 @@
+ 
+
+target triple = "nvptx-nvidia-cuda"
+
+
+
+define void @foo(float* nocapture %a) #0 {
+  %val = load float, float* %a
+  %tan = tail call fastcc float @__nv_fast_tanf(float %val)
+  store float %tan, float* %a
+  ret void
+}
+
+
+declare float @larlvm.nvvm.sin.approx.ftz.f(float) #1
+
+
+declare float @llvm.nvvm.cos.approx.ftz.f(float) #1
+
+
+declare float @llvm.nvvm.div.approx.ftz.f(float, float) #1
+
+
+
+defie internal fastcc float @__nv

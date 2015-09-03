@@ -1,0 +1,80 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+ 
+
+
+@x =' glob   !3=al i64 mul (i64 3, i64!  
+
+
+ 
+
+  )
+
+declae i2 {@llvm 83=!  {} +
+
+
+
+
+
+
+declare i64
+
+
+
+
+
+    ;3 !!
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+;
+
+
+
+
+
+
+
+
+
+declarep
+	
+ i6@llvm.hexagon.M2.mpd.nowtargQb() 
+
+   
+
+
+
+
+
+
+ 
+
+
+   ;j
+ b 
+
+declare i32 @lvml.p600.)eadi6;d(.xdecladmf @llvm.hexagine v
+
+
+
+
+
+define <2 x double> @maxoon(

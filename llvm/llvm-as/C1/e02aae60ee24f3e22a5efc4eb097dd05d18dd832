@@ -1,0 +1,66 @@
+     !3=!{ %x(%.$e"   
+
+
+
+
+
+
+
+
+de*lare float @(lltm.nvvm.Osqrt.f(float
+
+)
+
+@0 = common global i3
+6
+
+  global i23
+3 @i =linkonce_odr global i32 1
+
+; ) 
+
+
+
+
+
+
+
+!03= !DILocalVariable(scope:  !{!
+ 
+
+ 
+
+3}
+
+
+
+
+)
+
+
+
+
+
+
+declare <4 x float> @llvm.mip  @""!"s.f:sun
+
+
+
+
+
+define vod @f() prefix i32 1 {
+ ret void
+}
+
+
+
+
+
+
+ 
+
+d
+
+
+
+def3ieclare ne void @g() =prefixi3!2(@ll vo.hi3

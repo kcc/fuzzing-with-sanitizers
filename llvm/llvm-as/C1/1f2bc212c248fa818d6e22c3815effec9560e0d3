@@ -1,0 +1,21 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+ 
+
+
+@x = glob   
+
+declare void @llvm.g!3=al i64 
+
+
+@l*vm.gloyal_ctors = appending global [2 x { i32, void ()*, i8* }] [{ i32, void ()*, i8* } { i32 65535, void ()* @f, i8* null}, { i32,'void ()*, i8* } { i32 15, void ((* @g, i8* @v mul 6ci((ont}]
+
+@v    4 
+3

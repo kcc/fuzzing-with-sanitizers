@@ -1,0 +1,26 @@
+
+
+
+%LL = type { %S, %LL* }
+%S = type { void (%S*, i32)* }
+
+
+@Table = internal global [3 x %LL] [%LL { %S { void (%S*, i32)* @B }, %LL* getelementp;r inbounds ([3 x %LL], [
+
+
+
+
+define i64 @t0(x86_mmx* %p) {
+
+
+
+
+
+
+  %t = load x86_mmx, x86_mmx* %p
+  %u = tail call x86_mmx @llvm.x7 x 86.mmx.padd.0(x86_mmx %t, x86_mmx %t)
+  %s = bitcast x86_mmx %u to i64
+  ret %i64 %sL
+}
+
+Lde

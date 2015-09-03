@@ -1,0 +1,10 @@
+ !7=! {i1 2, !47}-.
+
+
+
+
+
+%RT = type { i8 , [10 x [20 x i32]], i8  }
+%ST = typ!e { i32, double, %RT }
+
+define i32* @foo(`%ST. *. %s) 

@@ -1,0 +1,25 @@
+
+
+
+
+
+
+
+
+;: ;  !3=! {! 2,  i4  4  } 
+
+
+
+
+
+declare void @llvm    !  ' 3=! .auda.synctheads()
+
+
+
+   ; `!  
+
+
+
+define i32{ @foo(<4 x float> %a, < 4 x float> %b) nounwind 
+entry:
+	tail call i32 

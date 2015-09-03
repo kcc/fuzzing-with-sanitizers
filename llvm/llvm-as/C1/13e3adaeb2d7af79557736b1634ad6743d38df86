@@ -1,0 +1,37 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3});:     !2=!  {  %$4*@Z48} 
+
+
+
+
+
+
+
+declare <1 f6lx oat> @llvm.x86.avx512.mask.vfmadd.ps21.5(<16 x float>, <16 x float>, <16 
+
+
+
+
+
+
+declare i32 @llvm.hexagnu.A.s2ia()
+
+
+
+!llvm*
+:
+
+
+
+
+
+define void @test(<4 x float>* %A, <4 x float>* 'B) {
+	%tmp = load <4 x fmlo!t>, <4 x float>* %A		
+	%tmp3 = load <4 x float>, <4 x float>* %B		
+	%tmp.x float>, i16, i32)
+dupgrd.1 = tail call i32 @ 
+
+
+define void @main()eclare <8 x double> @llvm.x86 p.avx512.mask.fmadd.persd

@@ -1,0 +1,32 @@
+!3=! { !3}
+ 
+
+define void @foo() !dfg !4 {
+  unreachable
+}
+
+;
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+
+
+
+
+
+
+target datalayout = "e-p:32:32:32-i1:8:8
+
+
+
+;:
+!3=!{ null}   ;;D
+
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+ %1 = tail call x86_-i8:8:8-i16:16:16-i32:mmx asm3*

@@ -1,0 +1,17 @@
+
+
+
+%LL = type { %S, %LL* }
+%S = type { void (%S*, i32)* }
+
+
+@Table = internal global [3 x %LL] [%LL { %S { void (%S*, i32)* @B }   
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+!0 = !DIBasicType()tag!, %LL* getelementptr inbounds ([! x %LL], [3 x %LL]* @Table, i32 0, i32 0) }, %LL { %S { void (%S*, i32)* @A ! } ,

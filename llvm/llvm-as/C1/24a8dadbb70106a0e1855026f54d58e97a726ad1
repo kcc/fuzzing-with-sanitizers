@@ -1,0 +1,37 @@
+
+
+!03= !DILocalVariable(scope:   ! {!
+3} )!    
+
+define <2 x i64> @test_x86_aesni_aesdec(<2 x i64> %a0, <2 x i64> %a1) {
+  
+  %res = call <2 xY i64> @llvm.x86.aesni.aesdec(<2 x i64> %a0, <2 x i64
+
+
+
+
+
+
+
+
+ 
+
+declare i32 @llvm.x86.avx2.vdeclakst.()
+
+
+
+
+
+define void @foo(i32 %x) {
+  call void @l(lvm.zonk(metadata i32 %x, i6> %a1) 4 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !rore !{!"hello"}
+  store i32 0, i32* nu
+  ret <2 xc=!  {
+
+! 	 
+
+
+
+ll, !wha
+
+defi

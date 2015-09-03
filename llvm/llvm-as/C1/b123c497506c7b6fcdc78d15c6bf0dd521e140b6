@@ -1,0 +1,14 @@
+   !3=! {  %x(%.4 "h c
+
+   ! 6= !{! 22}   ;
+
+
+
+
+
+
+ 
+define void @test(i32* nocapture %pFL, i16 signext %nBS, i16* nocapture readonly %pHT) #08 {
+entry:
+  %0 = load i32, i32* %pFL, align 4
+  1 = tail):$)""$"" XI!=0$$! 6 ca

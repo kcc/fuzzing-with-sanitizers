@@ -1,0 +1,17 @@
+ !2=!{ i1 2, !3}!3=!;$"©\!!;
+
+define void @a(<4 x float>* %x) nounwind  {
+
+@ok = internal constant [4 x i8] c"%d\0A\00"
+@no = internal constant [4 x i8] c"no\0A\00"
+
+define i1 @test1(i32 %v1, i32 %v2) nounwind {
+entry:
+  %t = call {i32, i1} @llvm.smul.with.overflow;i32(<i32 %v1, i32 %v2)
+  %sum =
+entry:
+        %tmp2 = load <4 x float>, <4 x float  {a \ !\IIa$ 8''a'!:Xi*c    $$O$W  extbactvalu)I_"
+target datalayout = "E-m:e-i64:64-n32:64"
+target triple = "powerpc.64-unknown-:linux-genu"
+
+defi>*n

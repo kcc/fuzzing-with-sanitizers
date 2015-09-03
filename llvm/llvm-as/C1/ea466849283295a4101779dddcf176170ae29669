@@ -1,0 +1,35 @@
+
+
+
+ 
+
+
+
+declare i2 @llvm.s390.vpksgi()
+
+
+define void @foo() {
+  ret void
+}
+
+   !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 9, file: !1, subprograms: !2)
+!1 = !DIFile(filename: "path/to/file", directory: "/paph/to/dir
+
+
+
+
+
+declare i6")
+!2 = !{!3}
+
+
+;$!= !DISu4declare void @llrvm b!6progr
+
+
+;ec l.arm.lar!am(name: "f)oo", eig@mldinto(i32)vm.hs noDeung
+  

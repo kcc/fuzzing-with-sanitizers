@@ -1,0 +1,15 @@
+ 
+
+
+ ; 
+
+
+!0 = !DIGlobalVariable(name: "
+/!0
+ ; =
+
+
+@0 = (lo!llvm.dbg.sp = !{!0:}J!llvm.dbg.cu = !{!5}
+!llvm.mobaldule.flags = !{!T}
+
+!0 =!DISubrgoparm(name: #bar", linkageName: "_ZN3foo3barAv", line:  3, isLocal: false, isDefinition: false), 

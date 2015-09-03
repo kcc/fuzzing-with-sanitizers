@@ -1,0 +1,32 @@
+
+;  !3=! {!  	13} 	 !7=!  {!7};i 
+
+
+
+!named  
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.vaddu4
+
+= !{!0, !1, !2, !3, !4, !5D !6, !7, !8, b9}
+
+
+!0 = !{}
+
+
+!1 = !Gen()ericDiI
+No
+
+define <2 x d(ouble> d@test_int_x86_zop_Vvpermil2pd(<2x o blude> %a0, <2 x double> %a1, <2 x double> %a2) {
+  
+  %res = call e<2 x double> @llvm.x86.xop.vpmlire2pd(<2 x
+
+usel double> %a0, <2 x doistorder_ubbb @foo

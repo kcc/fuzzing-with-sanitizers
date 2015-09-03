@@ -1,0 +1,23 @@
+
+
+
+global i64 -9223372036854775
+
+
+define void @foo() {
+  ret void
+}
+
+   !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 0808
+
+, file: !1, subprograms: !2)
+!1 = !DIFile(filename: "path !33=!  {float 0xH844d4/to/f*le", directory: "/qaph/t8fc00(40840(qc0U o/dir")
+!2 = !{!3}
+
+
+;$ = !DISub!6prormag(name: "f)oo", igsDe   !fi3=n!{  ! *cp

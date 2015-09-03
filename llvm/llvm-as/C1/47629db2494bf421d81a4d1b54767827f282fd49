@@ -1,0 +1,25 @@
+!3=! { !3}
+ 
+
+define void @oof() !dbg !  {
+4 unreachable
+}
+
+;
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+
+
+
+
+
+
+ta   
+
+
+
+define i3 @fr!get dataouyalt = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-oo(<4 x float> %a, i3<2:4  float>

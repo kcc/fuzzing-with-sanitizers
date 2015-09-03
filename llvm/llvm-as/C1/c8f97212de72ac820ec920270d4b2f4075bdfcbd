@@ -1,0 +1,29 @@
+%s3 =type %.0     
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "filecpp", directory: "/path/t 
+ 
+
+
+
+
+
+
+
+ 
+
+
+do/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "path/to/file", directory: "/path/ ð)!to/declare i2 @lir")
+
+
+!3 = !DINamespace(name: "(amespace", scope: !8, file: !2, line: 7)
+
+!4 = !DINamespace(name: "", scope: !0, file: null, line: 0)lvm.nvvm.suld.
+
+
+declare void @llvm.gcront(i8p.fsl

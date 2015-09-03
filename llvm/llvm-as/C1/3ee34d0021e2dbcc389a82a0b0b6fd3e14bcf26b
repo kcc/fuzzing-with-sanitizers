@@ -1,0 +1,38 @@
+
+ 
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, ;;;;
+;	
+align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}
+
+
+
+
+
+
+target datalayout = "e-m:e-64:64-f80:128-:36n8:12:
+64-S12
+
+
+; A =
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 =distinct !{}
+
+
+!1 = Å!DIModule(scope: !0, name: "Module")
+
+
+!2 =!DIModu ;;     !2=!  {  %$4*@z40}  le 
+
+
+
+declare <8 x 

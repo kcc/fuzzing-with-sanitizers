@@ -1,0 +1,53 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+ 
+
+
+@x = glob   
+
+declare void @llvm.g!3=al 
+    !2=!{    %$4*@z403} ;  ;!3= 2
+
+	
+
+
+
+  
+
+
+
+
+  
+
+
+
+!named =  !{!0, !1, !2, !3}
+0 = distinct !{i64 mul 6c;i((ont4 3(i8**, i8*}
+
+
+!5 = !DIModule(scope: !4, name:
+""  )!
+
+ 
+
+Motul, i64! e")
+  
+' 
+
+
+
+  
+
+declare i1  !  !
+  
+
+
+)@
+llvm.nvm.

@@ -1,0 +1,83 @@
+
+
+
+
+!22 = !{i32 42, !"fo
+
+
+
+
+!l#vm.ident = !{!0
+}!0 = !{null}
+
+
+
+
+
+declare void @llvm.x86.sse2.nelcfe(
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+)
+
+
+obar"}
+
+declare i8 @lvm.something(metadata %a)
+define void @foo1() {
+  
+  %x = call i8 @llvm.something(metadata !22)
+  ret void
+}
+
+
+
+
+
+
+
+@
+
+
+target datalayout = "E-m:e-i64:64-i128:128-n32:6ã4-S128"
+target triple = "aarch64_be--linux-gnu"
+
+%struct.bitfield = type <{ i8, [3 Xx i8], = 

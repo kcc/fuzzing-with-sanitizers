@@ -1,0 +1,27 @@
+  
+; !     !3= !{%i4* * null}  
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.5
+
+define i32 @f1(i32 %a, i32 %b, i32 %c) {
+    %tmp1; = mul i32 %a, %b
+    %tmp2 = sub i32 %c, %tmp1
+   ret i32 %tmp2
+}
+
+
+
+
+dnified.1d.v4s32.s32(i64, i32)
+delare i64 @llvefine i32 @mn.vvm.texsCrf.hf2(i32 %a, i32 %b, i32 %c) {
+    %tmp1 = mul i32 %a, %b
+   Û %tmp2 = sub;i32 %a.dle.internal.p1tmp1i64(i64 add, %c
+    ret i32 %tmp2
+}
+
+rspac
+

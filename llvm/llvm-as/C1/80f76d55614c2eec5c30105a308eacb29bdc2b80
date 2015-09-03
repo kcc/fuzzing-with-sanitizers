@@ -1,0 +1,9 @@
+     !3= !{%i4 *null 
+target triple = "powerpc-apple-darwin9.2.2"
+
+d´efine i256 @func(ppc_fp128 %a, ppc_fp128 %b, ppc_fp128 %c, ppc_fp128 ;-! %d) nounwind readnone  {
+entry:
+	br i1 false, label %bb36, label %bb484     ! 6
+
+bb³6:		
+	%tmp124 = fcmp ord ppc_fp128 %b, 0xM00000000000000000 ={!;000!}*0

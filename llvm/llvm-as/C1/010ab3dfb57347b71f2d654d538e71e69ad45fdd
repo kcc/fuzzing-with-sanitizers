@@ -1,0 +1,31 @@
+! ;k;:T'    6=!{! 2}!2=}!  {!3 } !3=!  {
+
+
+
+
+
+
+dec!0} !larE i64 @ll 
+
+
+
+
+
+
+ declare  i1 @llvm.nvvm.meascpons(i8*)
+
+ 
+
+
+
+
+declare i32 @a(vm.hexagon.S2.sr) returns_twice
+ 
+
+
+define zeroext i1 @_Z3fooPb(i8* nocapture %x) {
+entry:
+  %a = load i8, i8* %x, align 1, !range !0
+ 
+ a =b% nd i8 %a, 1
+  %tobool = icmp ne i.hi.8p

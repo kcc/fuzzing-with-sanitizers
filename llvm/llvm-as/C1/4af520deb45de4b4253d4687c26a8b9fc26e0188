@@ -1,0 +1,49 @@
+
+
+
+declare i32 @llvm.nvvm.i2dteb(
+i3, i32)
+
+
+
+
+ 
+
+
+define void @foo(i32 %x) 
+
+{
+  call void @llvmzonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_ese !{} ;
+
+;;, gmoru !){!"hello"}
+  store i32 0, i32* null, !whatever !{!"hello", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+declae : 
+
+target triple = "n;t 
+
+
+
+
+
+
+
+
+declar-pvxnknuo;n-nvcl"
+
+declare void @Llvm
+
+.
+
+
+!0 
+
+     !3=! {  %$()*@0} 
+
+=!!DIExnvvv!0 =o !DINpar
+
+
+declare <e4 x fsse l

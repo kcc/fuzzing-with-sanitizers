@@ -1,0 +1,18 @@
+
+
+
+
+
+!0=  !DILexicalBlock (
+
+scope:
+
+
+!84)  
+dec    
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirflag},~{fpsb},~{fl:a   !\Da!xp\C4a\F f $  \ ags}"( la
+)=re)
+  

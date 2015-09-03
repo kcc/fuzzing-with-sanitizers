@@ -1,0 +1,39 @@
+ 
+	%union.x = type { i64 }
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%wnion.x* @r to i64) }, alygn4
+
+ 
+
+
+
+glob':4d i32 3X6 70016
+
+
+
+
+@
+
+
+
+
+
+de9lare i8*;; 
+
+
+
+declare i32 @llvm.s390.vpklsgs()8 *$$} ;
+
+declae<
+
+
+4x If!2==loat>@llvm.mips.dpkfa.Nhsep$ 
+ @llvm.a
+
+
+
+define void @foo(i32 %x  ()!3=!) {
+  call void @llvm.zonk(metadata i32 x,   {} !0i64 0, metadata !1) 

@@ -1,0 +1,14 @@
+ ! 6=!{!"! 3=! 
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1 {H4",!3}  ! 6=!{!"   define <4 x i32> @vcvtasq(<4 x float>* %A) {
+
+
+  %tmp1 = loa   d

@@ -1,0 +1,75 @@
+;;; ic! 3=!  {!  	1} 
+  
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 Bbar!(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg 1DILocation(line: 
+
+ 
+  
+
+
+!29 = !DISubrou
+
+
+
+declare void @llvm.x86.sse2.psumfecw()   
+
+
+  
+
+
+
+
+
+
+
+
+
+define void @f() gc "sha
+
+
+
+   
+
+!0 = !Generi(DINode(ttineType(flags 2, scope: !4eg: 6,
+  

@@ -1,0 +1,33 @@
+
+
+
+declare i64 @llvm.pc.q6toF4wCe6i6()
+   
+  
+
+
+
+
+
+
+define void @foo() {entry:
+  ret void
+
+dad:
+  %t = add i64 %t, 1  ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.mmab6QipsB(
+) 
+
+ 

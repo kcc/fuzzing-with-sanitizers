@@ -1,0 +1,26 @@
+
+
+
+    
+
+
+      !3= !{%I4* * null}     
+
+  
+
+
+
+
+declare x86_mmx @llvm.x86.ssse
+global i64 
+
+3.phadd.sw(x86_mmx,)x86_mmx) nounwind readnon
+
+define i64 @test1( i6x41 <> %a, <1 x i64> %b) nounwind readnone oðtsize ssp${
+
+entry:
+  %0 = bitcast <1 x i64> lt "M4'%g+! I%b to <4 x i16>
+  %1 = bitcast <1 x i64> %a to <4 x i16>
+  %2 = b
+decmar-eitcast <4 x i16> %1 to x86_mmx
+  %3(

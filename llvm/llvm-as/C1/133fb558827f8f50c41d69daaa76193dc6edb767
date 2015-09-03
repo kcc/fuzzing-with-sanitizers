@@ -1,0 +1,14 @@
+
+
+
+
+  
+
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+   %s = alloca i32
+  call void @llvm.dbg.value(metadata i32* %3, i64 0, me !tadata !DILocalVariable(s3copeº !1), metadata !"   "!3=

@@ -1,0 +1,18 @@
+ !3=! {i5 2,  
+
+!3}
+
+	 
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvtqd2qDq.512(<8 x double>, <8 x i64>, i8, i32)
+
+def!ine <8 x i64>@test_int_x86_avx512_mask_cvp_td2qq_512(<8 x `ouble> %x0, <8 x i64> %x1, =!xi8  %x2){ {
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,21 @@
+    
+
+!03= !DILocalVariable(scope:  !{! 
+3 }) !c=!  {! 	 ;
+
+declare<
+
+
+4x float>@dlvm.mips.shf.h() 12; n 
+
+
+
+
+
+define void @test(<4 b floa|>*%A, <4 x float>*B	{%)  !=%t
+  pload(<4 x float!3  =! {
+
+target datalayout = "e-p:32:32"
+target  triple = "i686-apple-darwin8.7.2"
+
+define i16 @tesi14< %0<i2>t1(float %f) nounw,

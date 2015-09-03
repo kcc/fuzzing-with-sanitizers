@@ -1,0 +1,28 @@
+@a = global i32 42
+ !3=!  {!1} 
+
+
+
+
+;
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+;0 = !DIBasicType(tag: D_TAG_base_type, name: "name", size: 184!3= :!!x46744073709551615, align: 18446744073709551614, encoding: DW_ATE_unsigned_}har)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, size: 18446744073709551615, align: 18446740743701165514, offset: 8446744073789551613)
+!
+
+@vf = global <4 x float> <float -1.500000e+00, float 2.500000e+00, float -3.500000e+00= !DI
+
+
+
+
+
+, 

@@ -1,0 +1,67 @@
+
+
+  
+
+!1 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32ai@rb (32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                          inlinedAt	
+: !DILatoicon(line: 1@, scope: !3))
+ `ret i32 %s 
+
+
+
+define void @0() {
+  ret void
+}
+
+
+
+um,edefine void @lare  !dbg !DIL7cation(l:ie n13", scope: !3)
+
+
+
+
+!named = !{!0, !1, !2, !
+3fo(i32 %x) {
+ call void @llvm.zonk(metadata i32 %x, i64 0, mXtadata !1)
+  store i3

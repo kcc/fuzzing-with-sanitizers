@@ -1,0 +1,23 @@
+ ;  !3=! {! 2,  !  4  }    
+declare void @h(id!32  byval %num)
+
+
+; 
+
+declare <8 x i64> @llvm.x86.ax512.mask.svpd2q.    !3=!  {i140fcmp 2(<8 x double>, <8 x i64>, i8, i32)
+
+define <8 x i64>@tes
+ mod;
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:64-i128:128-n32:64-S128"
+target triple = "uarulm !  3=! {364-a !3=  e!: { %.}%g!i         !3 pple-io= {qs"
+  

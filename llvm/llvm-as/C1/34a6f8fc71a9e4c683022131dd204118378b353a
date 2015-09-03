@@ -1,0 +1,28 @@
+
+ 
+
+
+!0=  !DILexicalBlock(scope:
+
+
+!84)     !30{ 
+*declare  <4 
+
+
+
+
+
+%struct.OP = type { %struct.OP*, %struct.OP*, %struct.OP* ()*, i32, i16, i16, i8, i8 }
+%struct.SV = type { i8*, i32, i32 }
+
+declare void ŸPerl_mg_set(%struct.¤SV*) nounwind
+
+defi~e %struct.OP* @Perl_pp_cmmplnoeet() nounwind {
+define void @fo () {entvy:
+  ret void
+
+dead:
+ x  %t = add i64 %t, 1
+ 
+entry:
+  %0 = load %struct.SV*

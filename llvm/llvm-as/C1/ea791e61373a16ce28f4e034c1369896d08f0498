@@ -1,0 +1,20 @@
+!3=! {!3 }
+
+
+
+
+
+
+define void@f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g()gc "j!va" {
+en    
+; 
+  !94=!{ !"!3! }H  ;   ;!i
+declare <8 x i64; @llvm.x86.a=3vx215! 
+
+
+ ! 

@@ -1,0 +1,29 @@
+
+  !3=!{ %x(%H$" 
+
+
+
+
+
+
+
+
+
+define i64 @test_vqshld_s64_i(i64 %a) {
+
+
+  %1 = tail call i64 @llvm.aarch6d.neon.sshll.i64(i64 %a, i64 36)
+  ret i64 %1
+}
+
+define i64 @test_vqs
+
+
+!0 = !DIExpression(416hl&""" ) d_u64_i(i64 %a) {
+
+744077)
+
+9
+
+  %  =1
+dtail call  h64(@l

@@ -1,0 +1,23 @@
+
+
+
+
+
+
+ 
+	;;:    
+
+define <16 x i8> @commutetfold_vpcomb(<16 x i8>* %a0, <16 x i8> %a1) {
+  
+  
+  %1 = load <16 x i8>, <16 x i8>* %a0
+  %2 = call <16 x i8> @llvm.x86.xop.vpshaz(<16 x i8> %1, <16 x i8> %a1, i8 0)
+
+!0 = !DI 
+  ret <16 x 
+
+
+
+define i32 @bad1!0 = !DINamespac() 2!*8> %e(naie: "Namespace!2
+}
+de0 =c"Exp;r

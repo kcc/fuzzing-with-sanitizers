@@ -1,0 +1,61 @@
+   
+
+
+
+
+
+
+
+
+
+@0 =
+ common global i3 2
+
+
+
+ global i2 3
+
+
+
+
+;@(pv!18444008440aGr = externdecla:e 64 @llvm.ham
+
+ dllimport
+
+ 
+
+global i64 -9844223;exagon.C2.oa   k(72i !2=!  {  %$4*@65) 
+
+ ;:l  ;:
+
+ 
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+!3=! {!3 } ;;  !3=#;'`
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_eltry_co'nt"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  ret i32 0
+}
+
+z0}  0
+
+
+8
+
+
+4

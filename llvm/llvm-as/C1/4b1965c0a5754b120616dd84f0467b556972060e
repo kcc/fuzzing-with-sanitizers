@@ -1,0 +1,23 @@
+
+
+;d
+
+ 
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)   store i32 0, i32* null, !uhatever !0, !whatever_else !{} ;
+
+;;, gmoru !{!"hello"}
+  store i32 0, i32* null, !whatever !{!"hello", !1, !{}, !2}
+  ret void, !_1 !0
+}e
+d
+cefine 
+
+target datalayoprivate 
+
+protected vlut = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:2-i64:64:are : 
+
+
+target triple = "nt-pv64-f32:32:32-f64:6xnknuown-nvcl"

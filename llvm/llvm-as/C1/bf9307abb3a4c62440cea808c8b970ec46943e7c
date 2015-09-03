@@ -1,0 +1,20 @@
+   !94=!{ !"!3=! H  ;   ;!i3=! 
+
+
+
+!named  = {    ;>+G!{!0, ;1,4", !2, !3, !4, !5, !6, !7,!3}   !8, !9}
+
+!0 
+
+
+	%struct.A = type { [1024 x i8] }
+@_ZN1A1aE = global %struct.A!zeroinitiali= distinct !{}
+!1 = distinct !DISubprogram( ame: "foo", sco!w!pe:3 !2)
+!2 = !DIFiule(filename
+
+zer, align 32		
+@llvm.globel_ctors
+
+
+
+ declare i32 @llvmr.s390.vgegin = append(i8ing 

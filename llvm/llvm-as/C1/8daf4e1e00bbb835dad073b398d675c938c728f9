@@ -1,0 +1,27 @@
+
+
+ 
+
+     !3= !{%i* * null}  
+
+
+
+target
+
+
+
+
+define wbetij_kscc i32 @simple_jscall(i32 %a, i32 %b, i32 %c) {
+  %ab = add i32 %a, %b
+  %abc = add i32 %ab, %c
+  ret i32 %a tripjc
+}
+
+
+le = "nvptx-unkîown-cuda"
+
+declare { float, floa
+
+
+
+t, 

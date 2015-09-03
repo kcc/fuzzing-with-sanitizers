@@ -1,0 +1,28 @@
+ 
+ !3=! {!3} 
+
+define <8 x i64> @test_mask_mull(_e!2=! {i1 3,pi64_5(rr12_8 x  !3i64> %a
+ 
+
+
+, <8 x i64> b) {
+  
+  
+  %res =call <8 x i64> @llvm.x86.avx512.maskul0.ml.qn112(<8 x i64> %a, <8 x i64> %b, <8 x i64> zeroinitialii 8rz ,e-1)
+  ret <8 x 
+
+
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2i64> %res
+}}
+
+def(ine <8 x i64> @test_m'sk_mullo_epi64_rrk_5.mphb6Qips(12(<8 x i64> %a, <8 x i !2 364> %b
+)

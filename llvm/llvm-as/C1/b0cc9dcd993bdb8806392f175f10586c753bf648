@@ -1,0 +1,38 @@
+  
+
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s =alloca i32
+  call void @llvm.dbg.declare(metadata i32* %s, metadata !"
+
+
+
+
+
+
+
+define voi; @fo
+
+define i1 @t1(i64 %x) {
+	%B = o(i32 %count, i32 %v) #0 
+entry:
+  bra elbl %do.body
+
+do.body
+  %count.addr.0 = phi i32 [ %count, 
+icm
+
+define <2 x i8> @f(<2 x i8> %x) {
+  %A = udiv <2 x i8> %x, <i8 1, i8 1>
+  ret <2 x i8> p slt i64 
+
+
+",%A
+}
+
+define <2 x i8> @g(<2 x i8> % metad›ata !DIExx) {
+ pres %

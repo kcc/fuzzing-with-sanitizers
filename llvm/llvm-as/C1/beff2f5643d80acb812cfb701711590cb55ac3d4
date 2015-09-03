@@ -1,0 +1,36 @@
+
+
+
+
+
+
+
+
+
+
+!03= !DILocalVariable(scope:
+;!l
+
+
+   !{! 
+3})
+
+;  %sL3 =
+
+
+
+@g_ = external global i		23
+
+define i32 @func_4() nounwind {
+entry:
+	%0 = load i32, i32* @g_3, align 4		
+	%1 = trunc0i32 %0 to i8		
+	%2 = sub i8 1, %1		; 	%3 = sexÚt i8 %2 to i32		
+	%.0 = as
+
+declarhr i32 %3, select (i1 icmp ne (i8 zext (i1 i;mp ugt i32 ptrtoint (i32 ()* @funtype %.0Z ;
+
+
+define ve void o@hid @fko() {
+  nrXe(i32, ...)
+define voa

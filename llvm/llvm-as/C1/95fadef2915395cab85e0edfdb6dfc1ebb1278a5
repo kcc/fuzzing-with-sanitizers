@@ -1,0 +1,22 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+
+
+@A = weak global i32 54       
+
+
+
+
+
+ 
+;  !3=    3 !3=  
+
+
+
+
+
+declare <8 x i64> @llvm8.6.x!vx512.mas
+target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:32-f32:32:32-f64:32:32-v64:6  4  

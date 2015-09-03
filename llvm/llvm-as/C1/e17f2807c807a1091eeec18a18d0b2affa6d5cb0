@@ -1,0 +1,32 @@
+
+@A = global i32 0
+ 
+   
+   
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+
+
+
+!0 = !DIExpression()
+!1 
+
+
+
+
+
+= !DIExpression(DW_OP_neg
+
+
+
+
+
+
+
+declare i
+32

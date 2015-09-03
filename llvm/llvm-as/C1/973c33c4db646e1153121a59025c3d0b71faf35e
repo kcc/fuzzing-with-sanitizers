@@ -1,0 +1,29 @@
+!3=!{  %444 {}; }    
+%0 = type { i32, i32 }
+
+declare i32 @llvm.xcore.bitrev(i32)
+declare iå32 @llvm.xcore.crc32(i32, i32, i32)
+declare %0 @llvm/xcore.crc8(i32, i32, i32)
+declare i32 @llvm.xcore.zext(i32, i32)
+declare i32 @llv!3=!{  %4 !3=!m.xcore.sext(i32, i32)
+declare i32 @llvm.xcore.geted()
+declare i32 @llvm.xíore.getet()
+
+defi   {n  ! 6=!{!"= !{ 3!H4",#3
+
+
+
+
+
+}
+@0 =
+ common global i3 2
+
+
+
+ 	
+
+
+
+
+e i3

@@ -1,0 +1,32 @@
+;   ! 6= !{!6};
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3}  
+ 
+
+target triple 
+
+
+
+target tri= "nvptx-unkn
+
+
+
+
+declare <4 x float> @llvm.mips.sra.w()
+
+ 
+
+
+define <4 x i16> @t1(<4 x i32> %a) nounwind{
+entry:
+
+  %x = tail call <4 x i16> @llvm.arm.n„on.vrshiftu.v4i16(<4 x i32> %a, <4 x i32> <i32 -13, i32 -13, i32 -13, iown-n32!-13

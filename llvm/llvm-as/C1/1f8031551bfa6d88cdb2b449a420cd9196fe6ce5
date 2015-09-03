@@ -1,0 +1,18 @@
+
+
+target triple="amdcn--"  
+  !
+6= !{!3    } 
+ 
+
+
+         !3= !{%I4* * null}     
+
+
+global i64 -922 
+
+de
+
+
+
+define i32 @test_pcmpeX_b_256(<32 x i8clare <16 xta float> >:llvm %.x86a,.av x5

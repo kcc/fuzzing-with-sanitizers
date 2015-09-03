@@ -1,0 +1,35 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%un.niox* @r to i64) }, alig 4
+
+ 
+
+
+@x o lg=b 
+
+
+*
+
+
+
+
+
+
+
+
+define"void @test1() "min
+
+
+!0 = !   !=
+
+
+define i32 @get_stack() nounwin
+ {
+entry:
+
+	%sp = call i32 @llvm.read_registeO.i32(metadasti

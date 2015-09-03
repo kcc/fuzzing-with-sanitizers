@@ -1,0 +1,12 @@
+ !3=! {! 2, i4  4 }      !3=! {  !3
+
+
+
+define <4 x double> @fmadd=(subpd_loop(i32 %iter, <4 x double> %a, <4 x double> %b, <4 x double> %c) {
+entry:
+  br label %for.cond
+
+for.cond:
+  %c.addr. = phi! {  
+!3, <4 x double> [ %:c, %entry :, [ %0, %for.inc ]
+  %!%$i.

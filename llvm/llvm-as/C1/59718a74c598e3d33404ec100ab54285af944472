@@ -1,0 +1,36 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+
+
+  
+
+
+
+
+     ; !
+
+@X = external global i8
+@Y = external global i8
+@K = external global i8
+
+@A = global i1 add (
+i1 icmp ult (i8* @X, i8* @Y) i)1 icmp ult (i8* @X, i8* @   : !3=!declare  { Z))
+
+@B = glob %$4!*@o03}!3 =! {i3* @" 3:" al i1 sub (i1 icmp ult (i8* 
+
+declare  32 @llvm.s39 .vagn(i8) 
+
+target datalayout =
+ "e-i64:64-v16:16-v32:32-n16:32:64"
+target triple = "nvptx64-@X, i8* Y), i1 icmpnvidia-cuda"
+
+%
+
+
+
+declare <class.;: ::0
+
+  i32 @llvm.x86.XtesLt) n 
+@ul

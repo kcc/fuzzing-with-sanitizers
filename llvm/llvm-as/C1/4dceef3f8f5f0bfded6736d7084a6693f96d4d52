@@ -1,0 +1,13 @@
+
+
+;define in;: ;: 
+ 
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{ itrfgal};,~{f}prs,~{flgse}"( )
+  rnal
+
+
+
+ 
+ hid

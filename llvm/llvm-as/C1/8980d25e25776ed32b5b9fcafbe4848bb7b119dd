@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+declare i3 @llvm.nvvm.i2dteb(
+i3, i32)
+
+
+
+
+ 
+
+
+define void @fo(i32 %x) 
+
+{
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1) 
+ store i32 0, i32* null, !whatever !0, !whatever_else !{} ;
+
+;;, gmoru !){!"hello"}
+  store i32 0, i32* null, !whatever !{!"hellode", !1, !{}, !2}
+  ret void, !_1 !0
+
+
+
+
+
+declare {i16, i32} 
+}
+
+declade :
+
+ta
+declare void @bar()
+
+
+
+
+
+rgt triple = "n;t-pvxnkn@u

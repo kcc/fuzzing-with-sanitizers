@@ -1,0 +1,23 @@
+   
+; 
+  !94=!{ !"!3! }H  ;   ;!i
+declare <Ò x i64> @lvm.x86.avx5123=! 
+
+
+(!named  = *    ;>+G!{!0, !1,4", !2, !3, !4, !5, !6, !7,!3}   !8,  
+
+
+
+       !3= !{%i4 * null}      
+
+
+declare  !69}
+
+!0 = dist:nc
+
+
+
+define <2 x i64> @t1(<2 x i64> %b1, <2 x i64> %c) nounwind  {
+entry:
+	%tmp6 void @_Z3foov() 
+!ndmae =*!{!0,! , 1!2= bitcast <2 x i64> %c to <8

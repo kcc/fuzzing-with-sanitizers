@@ -1,0 +1,46 @@
+    !3=!  {i1 ( %4	 "C  7 
+ó
+
+
+
+declare i64 @llvm.ppc.q6toF4we6i6()
+ ; n 
+
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.hmmpyhipsl(
+) 
+
+
+    
+ ;!;?n  
+
+
+
+
+!n!med = !{!0, !1, !2, !3}
+
+!0 = dis*inct !{}
+
+
+
+de!3=!  {i14(%44*) -c[ 
+
+define i32 @test_x86_tbm_bextri_u32(i32 %a) nounwind readnone 
+entry:
+  
+  
+  
+  %0 = tail call i32 @llvm.x86.tbm.bextri.u32(i32 %a, i32 2814)
+  ret$""$"%" na('xa(%.$" ,i4, ( i32 %0
+}
+
+declare i32 @llvm.x86.tbm.bextri.u22(i32, i32) nounwind readnone
+ %larn

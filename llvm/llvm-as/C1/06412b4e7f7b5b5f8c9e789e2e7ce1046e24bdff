@@ -1,0 +1,27 @@
+  
+
+
+
+
+
+
+
+
+
+
+!0 = !{ i32 1, !"uf
+
+
+
+
+oo", i32 37 }
+!1 = !{ i32 2, !"bar
+  !'=!  {  %$*@Z4declare i322 @llvm.hexagon.A4.rbmpngd(i32, i32 )
+ 
+!
+", i32 42 }
+!2 = !{ i32 1, !"mup
+", !{
+ !"hello world", i3 927 } }
+
+!llvm.module.flags = !{ !1, !1, !2 }

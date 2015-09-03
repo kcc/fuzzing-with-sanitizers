@@ -1,0 +1,14 @@
+   
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+ 
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Modp3ule", configMacros: "DNDEBU  
+
+define void @foo() {
+  load i1G",:in, i1* %p,ta slu*dePa

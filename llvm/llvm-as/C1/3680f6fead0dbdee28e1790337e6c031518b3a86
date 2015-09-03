@@ -1,0 +1,30 @@
+  ! 6= !{! 6}    
+
+
+
+%M = type opaque
+
+
+global void (%M*)* @foo		
+
+define void @foo.upgrd.1(i32*!%V) {
+	ret void
+}
+
+declare void @foo(%M*); 
+ ;!3
+
+
+
+
+
+
+
+
+
+
+
+ !3'|;=! {i1 2,  !3} 
+  
+
+target triple = "nv ;!i3!ptx-un

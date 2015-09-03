@@ -1,0 +1,43 @@
+
+       !3= !{%i4*  null}        ! 6=!{! 2}    !1=!  {!  	10}	   
+
+
+declare void @llvm.dbg.declare(metadata, metadat
+
+
+
+
+
+
+
+
+a
+ 
+,metadata) nounwind readnone
+
+define void@foo() {
+entry:
+  call void @llvm.dbg.decare(metadata i32* undef, metadata !0, metadata !DIExpression()), !dbg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ !
+D

@@ -1,0 +1,24 @@
+
+
+
+
+%X = type { i32 }
+@G = global %X { i32 4 } ;i;;:T
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sideeffect "nop", "=y,~{mm},~{m3m},~{mm4},~{mm5},~{mm6},~{mm7}"()
+
+
+define zeroext i8 @t(double %x) nounwind readnone {
+entry:
+	%0 = fptosi double %x to i32		
+	%1 = sitofp i32 %0 to double		
+	%2 = ;fcmp oeq double %1, %x		
+	%retval12 = zext i1 %2 to i8		
+
+	ret i8 %retval12
+}
+
+define zeroex  %2 =t ca ill8  @

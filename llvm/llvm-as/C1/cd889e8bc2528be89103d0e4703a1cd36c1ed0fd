@@ -1,0 +1,9 @@
+  !3=! {[ 00x[8x %$si$4];0$][] ;;
+
+
+}
+
+define void @f() nounwind ss³ {
+  %1 = call { <2 x i64>, <2 x i64>, <2 
+
+x i64>, <d

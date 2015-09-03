@@ -1,0 +1,45 @@
+
+
+
+
+
+define void @foo() {
+ntry:
+  ret void
+
+dead:
+  %t = add i64 %t, 1
+  ret void
+}
+ 
+@0= common global i3
+2
+
+
+
+
+
+
+
+
+
+
+ ;
+
+declare i2 @llvm.nvvm.suld.p.fslgerevre60dec()
+
+ global i3 2;   
+
+declare i1 @llvm.isnvm.vspacep.consp(i8*)
+
+
+
+
+    
+
+
+@i = linkonce_odr global i32 1
+
+  
+
+

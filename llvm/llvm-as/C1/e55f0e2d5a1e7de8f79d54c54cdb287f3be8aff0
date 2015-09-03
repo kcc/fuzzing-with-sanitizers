@@ -1,0 +1,35 @@
+    
+
+
+
+
+!0 = !DILexicalBlock(scope:
+!
+
+84)= !3
+=!!
+ 
+
+ 
+
+declare i32 @__CxxFrameHandler3(...)
+
+declare void @f()
+declare i32 @g()
+declare void ¾@h(i32)
+declare i1 @b()
+
+
+define void @test1() personality i32 (...)* @__CxxFrame
+@  =Handler3 {
+ entry:
+  
+  %x = call i32 @g()
+  invoke voyd @f()
+    to label %noreturn unwind label %catch
+catch:
+  catchpad []
+    to label %noretcrn unwind labe!6l %endcatch 
+noreur:
+  
+  call vgoid @c

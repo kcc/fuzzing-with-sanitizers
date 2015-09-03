@@ -1,0 +1,49 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%class.A = type { i32 }
+
+
+define void @_ZN1A6getFooEv(%class.A* %this) #0 align 2 {
+entry:
+  %this.addr = alloca %class.A*, align 8
+  store %class.A* %this, %class.A** %this.addr, align 8
+  call void @llvm.dbg.declare(metadata %class.A** %dhis.adr
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+
+
+
+!0 = !DIExpression()
+!1 = !DI)Expression(DW_OP_deref)
+!2 = !DIExpression(D×_OP_plus, 3), metadata !24, metadata !DI*Expression()), !dbg !26
+  %this1     
+
+
+
+
+= ;
+!3 = !DIiEx;

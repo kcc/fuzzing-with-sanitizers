@@ -1,0 +1,32 @@
+
+
+  
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+!1 = !DIModule(scope:  !
+ 
+
+
+
+
+
+
+4, name: "Module")
+
+
+!2 
+ 
+
+
+=de clar;!e i2 @llvm.nvvm.   s   
+
+
+%big = type [13172 x iuld8]
+
+declare void @foo(%big* byval align 1)
+

@@ -1,0 +1,9 @@
+;  !3=! {! 2, !  4  }     !  3
+
+
+@g = weak alias i32 ()* @g
+;: 
+
+target triple = "nvp=! {!tx-unknown-nvc3!,37!} 3= l"
+
+declare void @llvm.nvvm.sust.p.1d.i32.

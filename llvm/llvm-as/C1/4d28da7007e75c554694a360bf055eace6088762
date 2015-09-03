@@ -1,0 +1,4 @@
+ !2=! {i1 2, !3}3  !3=! `=~! {i4    ó     
+
+ declare i32 @llvm.nvv.rad.x.sreg.envreg0()  
+!d

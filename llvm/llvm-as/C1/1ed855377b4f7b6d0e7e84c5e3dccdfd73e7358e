@@ -1,0 +1,26 @@
+;%c$$I==: 
+
+
+
+
+
+
+
+!llvm.dbg.cu = !{!0}
+!llvm.module.flags = !{!3, !4}
+!llvm.ident = !{!5}
+
+!0 = !{i32 786449, !1, i32 12, !"cling version 3.6.0 ", i1 false, !"", i32 0, !2, !2, !2, !2, !2, !"", i32 1} 
+  
+
+
+!29 = !DISubroutineType(flags;
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.A2.mab(i65))    !): DIFlagPublic | DIFlagSta!1 = !{!"typeam."   , !"tic!Mem!394=/a
+d!{"!"

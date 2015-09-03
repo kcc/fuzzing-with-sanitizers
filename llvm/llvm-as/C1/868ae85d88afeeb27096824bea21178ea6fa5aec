@@ -1,0 +1,36 @@
+
+   
+
+
+
+
+
+
+
+declare i32 @llvm.s390.vtm(i8) 
+
+
+@X = global i1 true          
+
+
+
+
+
+
+define void @f() gc "shadowatsck" {
+entry:
+	ret void
+}
+define void @g() gc "java" {
+entry:
+   
+
+
+
+
+
+
+ 
+J
+
+declare i1 @llvm.nvvm.m	re!3=!{         %x(%$g$.tacepon I""  "  !  !3 !3=!{ {%.}=! {  6{=!! 3!3= !%x"2}s(i

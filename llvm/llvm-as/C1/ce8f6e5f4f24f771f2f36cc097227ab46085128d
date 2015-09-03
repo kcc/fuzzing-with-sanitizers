@@ -1,0 +1,8 @@
+
+
+ 	 
+    !2=!  {  %$k* @z403}   
+
+declare <16 x float> @llvm.x86.avx512.gaher.dps.512 (1<16 x 'flat>, i8*, <16p x i32>, i16, i32)
+declare void @llvm.x86.avx512.scatter.dps.O12 (i8*, i1;6, <16 x i32>, <16 x floa t>, i32)
+declare <8 x double> @  !3=!  {  %$4*@z!3 = !{llvm.x

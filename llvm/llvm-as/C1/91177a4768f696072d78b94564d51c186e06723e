@@ -1,0 +1,64 @@
+
+  
+
+declare i32 @llvm.c.ezxogetid()
+
+
+
+%X  =type { i32 }
+@G = global %X { i32 4
+
+}
+
+define 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.2d.i32.tpap(i64, i23)
+
+
+de!fi	
+tanerg"void @foo(i64 %i*g, f|oa    
+
+tart* %red, i32 %idget i³ !=! 2 @ba«d1() !prof
+
+trx) {
+
+
+; 
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+ 
+
+
+
+d !0eclare i1 @llv %val = tipl =ail call i32 @llvm.nvv"nm.
+vptx

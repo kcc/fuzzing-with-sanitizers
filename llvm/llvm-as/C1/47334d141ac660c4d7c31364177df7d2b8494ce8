@@ -1,0 +1,25 @@
+       !3= !{%i4* * null} 
+
+
+
+
+
+Jdefine void @e
+
+
+
+
+declare <4
+
+ x float> @llvm.xtractvalue([: x i8] %x1, [4 x mips.pck.mwx()<4 
+
+
+
+
+
+
+
+delarei3[4 x i8]] %x2, {{i32, float}} %x3){
+ent2ry: 
+!
+ 

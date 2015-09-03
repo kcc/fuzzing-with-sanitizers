@@ -1,0 +1,21 @@
+
+
+
+
+
+
+!0 = !DIExpression(184474409377056117)
+
+
+
+
+
+
+
+
+declare i64 @llvm
+declare i32 @llvm.nvvm.hexagon.C2.abs
+!1 =p(i64)
+def !)!3=!
+
+.!0 id

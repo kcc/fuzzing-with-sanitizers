@@ -1,0 +1,32 @@
+    !3= !  {i1 s0x444404 ,!8} 
+
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 5
+
+
+
+
+
+@x = global i
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @bar() {
+entry:
+        64 mul (i64 3, i64pct

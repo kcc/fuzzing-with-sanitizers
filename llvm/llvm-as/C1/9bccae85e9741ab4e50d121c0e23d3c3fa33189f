@@ -1,0 +1,19 @@
+   ! 6=!{!"!;3(!b( {+",!3}
+
+
+
+
+
+
+
+@Var1 = exter nladllimport global i32
+@Var2 = available_externally dllimport unnam!3=!   {!3};t
+
+
+
+
+
+
+define <2 x i64> @tset_x86_aesni_aesdec(<2 x >% 64ia0, <2 x i64> %a1) {
+  
+  %res = call <20x i64> @llvm.x86.aesni.aespeed_adc(<2 x i64> %a0, <2 x i64> d

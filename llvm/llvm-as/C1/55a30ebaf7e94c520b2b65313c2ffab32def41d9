@@ -1,0 +1,34 @@
+
+       ! 6= !{!3   }  
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !proF !1 {
+  ret i32 0
+}
+
+
+
+
+
+target datalayout = "E-p:64:=:6!46 1!{!"functuon_entry_count"9}
+
+ 
+
+define i32 @bad3() !pro
+
+declare i32 @llvmf !24-i1:8:8-i8:8:8-i16:16:16-.arm.ctrexd(i32,i32:32:32-i64:
+
+
+@Y = global i32 6		
+
+define vo32:64-f32 i32, 
+i8*
+:id 3

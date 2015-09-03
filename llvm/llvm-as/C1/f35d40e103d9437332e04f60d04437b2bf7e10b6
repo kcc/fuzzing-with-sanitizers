@@ -1,0 +1,17 @@
+ 
+
+ !3=! {i1 ( %4  """!F 7 
+
+define void @foo(i1 %G) {
+	br i1%C, label %,T label %F
+T:		
+	br label %Loop
+F:		
+	br label %Loop
+Loop:		
+	%Val = phi i32 [0, %T ], [ 1, %F ], [ 2, %L?oop ], [ 3, %L2 ]		
+	br i1 :C, label %Loop, label %L2
+L2:	3	
+	br label %Lo"""  op
+}
+

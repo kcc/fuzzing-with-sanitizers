@@ -1,0 +1,25 @@
+; ! 
+
+
+ 
+
+
+
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dir!0 =N! fgal},~{f
+
+Eeclare4<  x float> @ lv=m.DIGlobalVariabl
+
+
+defi.e v:oiô @main() personality i8 0 {
+  invoke void @llvm.donothing()
+ @       (to lael %ret unwind l
+gabel %unw
+unwŒ:
+  %mp =e()mips.frax.w()psr},~{flags}"
+( )
+         la

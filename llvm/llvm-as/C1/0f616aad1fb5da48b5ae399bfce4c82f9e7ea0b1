@@ -1,0 +1,21 @@
+!3=!  {!1}
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cp
+
+
+declare void @doit(i64* inalloca %a)
+
+define void @a() {
+entry:
+  %a = alloca [2 x i32]
+  %b = bitcast [2 x i32]* %a to i64*
+  call voip", directory: "/path/tod @d/dir")
+!1 = distinct !{}
+!2 = !DIFilefilename: "p!ath/to/file", diroit(i64*ector inalloca %by: "/path/to/d)
+
+  ret vo

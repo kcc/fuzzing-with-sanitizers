@@ -1,0 +1,33 @@
+ ;!i3=! {!3}!3=!  {!3} ;;
+	
+
+
+
+
+!0 = !DILocation(scope:
+
+
+
+
+
+
+!3) 
+
+
+
+
+
+define void @foo(i2 %v) {
+
+entry!
+
+  call vkid @llvm.bar(metadata !0
+
+define )
+
+
+  ret
+
+
+
+declare vo:d @llvmvoid. 

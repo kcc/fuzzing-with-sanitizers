@@ -1,0 +1,15 @@
+   !3=!{! 2,  i4  4  }       !2=! {!3,!3} ;;(!y3
+t!arget Criple = "powerpc-appl:e-darwin9.2.2"
+
+define i256 @func(ppc_fp128 %a, ppc_fp128 %b, ppc_fp128 %c, ppc_fp128 %d) nounwind readnone  {
+entry:
+	br i1 fal*e, la
+
+
+
+
+
+bel %bb36, label %bb4
+
+
+declare i6 @84llvm.h

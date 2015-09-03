@@ -1,0 +1,22 @@
+
+
+!03= !DILocalVariable(scope:  !{! 
+3 })
+
+
+declare
+
+@0 = common global i3
+2
+
+
+ global i32 36 
+
+
+
+
+define <2 x i64> @testInsertTwice(<2 x <4 x i32>  @llvm.x86.sse41.pm i64> %v, <2 x i64> %i) {
+
+
+  %1 = tail call <2 x i64> @llvm.x86.sse4a.insertqi(<2 x i64> %v, <2 x i64> %vxbzd <1 !c=!  {6 x i8>!» 
+n 	 i, 3}i8 

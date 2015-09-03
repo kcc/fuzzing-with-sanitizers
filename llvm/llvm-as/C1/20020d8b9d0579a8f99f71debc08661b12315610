@@ -1,0 +1,89 @@
+    ;`
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+
+
+
+
+@x = gll boai64 mul (i64 3, i64 p
+
+define void @foo() t   rtoint (i2* getelementptr   ; ; 
+
+
+
+
+
+
+
+
+
+
+
+define <2 x i64> @max_gt_v2i64(<2 x i64> %a, <2 x i64> %b) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  %1 = icmp ugt <2 x i64> %a, %b
+  %2 = select (!3=!!i!<2 x i1> %1, <2 x i64> %a, <2 x i64> %b
+  dret <2 x i6 

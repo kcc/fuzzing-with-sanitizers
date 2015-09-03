@@ -1,0 +1,56 @@
+  ;;!i3=! {!3}!3=!  {!3} ;;Á
+	
+
+
+
+
+!0 = !DILocation(scope:
+
+
+
+
+
+
+!3) 
+
+
+
+
+
+define void @foo(i32 %v) {
+
+entry:
+
+  call void @llvm.bar(metadata !0)
+
+
+  ret
+
+
+
+declare void @llvm.x86.ssd2.psr
+
+
+
+
+
+
+declare i64 @llvm.hexagonfecg
+
+()
+
+
+
+
+!0 = !{i32 41}.S4.vxscd
+!llvm.stuff = !{!0}
+
+!03= !DILocalaria:le(scope:   !{! void,!i3=! {!3}!3=!  {!3} ;;!c=!  { !baz= 
+ o
+pID !1
+}
+
+declare void @llvm.b !0ar(metadat,!a)
+
+@glob 
+3}al = glo  )!c=!  b  as0

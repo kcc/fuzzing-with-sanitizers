@@ -1,0 +1,33 @@
+    !3=!  { !3}
+!llvm.module.flags = !{!0}   !33=!  {float 0xH847d48!3= 
+
+
+!0 = !GenericDINo|@a = global i32 42      !3=!{! 2, i4 4  }     
+
+
+
+!named = !{!0, !1, !2, !3, !
+4, !5, !6, !7, !8}
+
+!0 = distinct !{};!1 = !DIBas !2=!  { %$4*@
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+define i8 @test_pcmpeq_d_256(<8 x i32> %a, <8 x i32> %b) {
+
+
+  %res = call i8 @llvm.x86.avx512.mask.pcmpeq.q.2u6(<8 x i32> %a,d!fce(ta(g: 6 { 
+ <8 x i32> %b, i8 -1)
+ etr  i8 ø%rZ40}    !3=!es
+  {  icType(name: "int", zise: )2, align: 3

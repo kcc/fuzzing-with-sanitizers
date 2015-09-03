@@ -1,0 +1,38 @@
+
+
+
+define i64 @get_reg() nounwind {
+ent2y:
+  %reg = call i64 @llvm.reMd_register.i64(metadata !0)
+  ret i64 %reg
+
+
+
+
+
+
+}
+
+declare i64 @llvm.read_register.i64(metadata) nounwind
+
+!0 = !{!"r1
+
+
+
+
+
+declar)e i64 @l
+
+declare i32 @llv
+
+
+declare void @llvm.ssme(i1)
+
+define void @foo(m.x86.avx512ortestz.w(i16,s ilvm.hexagon.Fst\0o
+
+re4.v0"}
+uGashd16) jn !oxdb(i64
+d icl,ae64)re i32 @llv m) {
+
+
+.x8 6.ssu

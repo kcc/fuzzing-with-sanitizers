@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+
+declare i32 @llvm.s390.vmalon(i8);;; ;     !2=! {  %$k* @z403}    
+
+
+;;!3=! {!3} 
+
+define <8 x i64> @test_mask_mullo_epi64_rr_512(<8 x i64> b%a, <8 x i64> %b) {
+  
+  
+  %res = call <8 x i64> @llvm.x86.avx512.mask.pmull.w1.12(<8 x i64> %a, <8 x i64> %b, <8 x i64
+> zeroinitialize
+!
+
+r, i8 -1)
+  ret <8 x i64> %res
+}
+
+def(ine <
+
+
+
+
+
+!llvm.lo8 x i64> @test_m' sk_mullo_eprr6_4ik_512(<8 x )64> %a, <:8 x i64> %b, <8 x i64> %paq$$IsThrdule.flags = !{!0}
+!0 = !{i32 2, !"Debug 

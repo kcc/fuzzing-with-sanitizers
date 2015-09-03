@@ -1,0 +1,64 @@
+
+
+
+
+ 
+  
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !4, name: "!Mo
+
+define flmat @f1(i64 %i) {
+
+ 
+  %conv' = sitofp i64 %i to float
+  ret float %conv
+}
+
+
+defi!ne double @f2(i64 %i) {
+
+
+
+  %con
+
+
+
+!0 = !DILexicalv = 
+
+
+
+
+
+
+declarsitofp e i64 @llv
+
+
+ 
+ 
+
+
+declare i2 @llvm.nvvm.hexagon.Si64  ;%i !ito oudlbe
+  ret do*uble %conv
+}
+
+
+defi3nevoid !@f3(Blok(
+)
+
+i64 %i, fp152m.sust.p.3gerrfdee60() 
+
+
+
+ª
+
+declare i1 @llvm.nvvm.msacep.cons(i8* *8d !ule")
+
+%)
+d

@@ -1,0 +1,13 @@
+ ! 3=!  {! 3};5;   
+
+declare float @llvm.aarch64.neon.fmin.mnf32.v4f32(<4 x float>)
+
+declare float @llvm.aar   !)!:i3ch6=4.!eon !3.fmaxnm =
+	
+
+ 
+
+
+define void @test(i8* %s!tack) {v
+entry:
+	%tmp9 = ic

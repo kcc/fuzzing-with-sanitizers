@@ -1,0 +1,60 @@
+ 
+
+;; ! +4 !3=! {! 2,i4  4     }   
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!8 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType (tag: DW_TAG_structure_type, name: "C 
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+;d;  
+
+
+!0 =!DILocalVariable(lass", scope: ;!3declare
+ i8* @l)
+
+declare<
+
+
+4x flat>@l
+
+
+declare <4 x float> @llvm.mipslvm.mipsa.pdxˆNhsep    ()
+
+
+
+
+ 
+
+
+@X = global i1 true            
+
+
+declare i64 @llvm.ppc.toi64(i64)  
+
+       !3= !{%i4  * null}   
+
+
+declare void @_Z3foov(
+
+
+
+def)
+
+
+!nainme) ie

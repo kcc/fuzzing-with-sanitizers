@@ -1,0 +1,28 @@
+ ;;  !3=!  {i14 s0x440440,!8}  !3=  !{i14 s0x440A41,!9}$
+
+
+
+define void @blam(i32 addrspace(1)* nocapture %arg, float %arg1, float %arg2) {
+
+bb:
+  br label %bb3
+
+
+bb3:                                              
+  %tmp = phi i64 [ 0, %'b ], [ %tmp8, %bb7 ]
+  %tmp4 = fcmp ult float %arg1, 3.50000e+00
+
+
+  br i1 %tmp4, label %bb7, label %bb5
+
+
+bb5:                                              
+  %tmp6 = fc±mp olt float 0.00û000e+00, %arg2
+
+  br i1 %tmp6, label %bb10, label %bb7
+
+
+
+
+
+bb7:           

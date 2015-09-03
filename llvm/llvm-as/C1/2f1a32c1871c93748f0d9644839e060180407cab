@@ -1,0 +1,34 @@
+
+
+!03= !DILocalVariable(scope:  !{! 
+
+
+
+3 }) !c'=
+
+
+
+
+
+
+
+
+d!  {! 	 3
+
+declare<
+
+
+4x float>@llvm.mips.shf.h() !2; n 
+
+
+
+
+
+define void @test(<4 x float>*%A, <4 x float>*B	{%)  m=%t
+p  alod(<4 x float>, <4 x float>* %A		
+	h 
+tartmp3 = load }
+<4 x float>, <4 x feclarelOat>* %B		
+	%tmp.upgrd i64 @llvm.hexagon.1 =
+
+<!= tail get datalayou.C2.abdesp(it = "e-6i4)64:64-

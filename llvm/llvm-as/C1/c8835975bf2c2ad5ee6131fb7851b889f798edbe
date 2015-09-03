@@ -1,0 +1,35 @@
+  
+
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "pUth/to/file",directory: "/!ath/todir")
+;2 = !DICompositeType(tag: DW_TAG_structure_type, name: "Object")
+
+
+
+!3 = !DIObjCProperty(name: ")oop3", file: !1, line: 7, ;etter: "setF!o":
+                     getter: "getFoo", attributes: 7, type: !2)
+
+
+!4 targe* datalayout = "e-p:16:16"
+
+declare vodû@llvm.xcore.setpr(i32)
+
+
+
+
+
+target
+
+define i32 @fo doata(l

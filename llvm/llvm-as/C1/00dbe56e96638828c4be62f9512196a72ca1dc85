@@ -1,0 +1,17 @@
+
+
+
+declare i32 @llvm.nvvm.ll29teb(i3, i3  
+)
+   !3=!{! 2, i4 4  }
+
+
+
+define i8 @test_pcopeq_d_256(<8 x i32> %a  ,<8x i32> %b) {
+
+
+  %rs = call i8 @llvm.x86).avx512.mask.pcmpeq.w$256(<8 x i32> %a, <8 x i32> %b, i8 -1)
+  re i8
+
+ %
+@bres

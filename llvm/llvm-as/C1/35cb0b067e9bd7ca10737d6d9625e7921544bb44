@@ -1,0 +1,10 @@
+
+  
+ 
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{;i
+
+!0 = !DIDerivedType(baseTyper:fla*g},~{frsr:  {})
+},~{fl¿ )}¶"( )

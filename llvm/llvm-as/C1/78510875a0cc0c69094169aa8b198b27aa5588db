@@ -1,0 +1,61 @@
+
+
+ 	  
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = ;dd i32 a, %b, !dbg !DILocation(line: 2, scQope: !4,
+                                         inl
+@DX = IoieAndctD !Location(linen: 12, scope: !3))
+  ret i32 %
+
+
+
+
+
+
+
+  sum,eclare  !dbg !DILocation(l:ie n13", scope: !3);  ; 
+
+
+
+
+!named = !{!0, sta!1, !2, !3, !4, !5,nt [1  x

@@ -1,0 +1,11 @@
+!3=!  {!1}
+
+ 
+
+!named
+
+define i32 @bad1() 
+!prof !0  {
+  ret i3= !{20 0
+}
+

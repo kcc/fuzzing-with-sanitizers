@@ -1,0 +1,40 @@
+   !3=! {  %f( %$g$."
+
+
+
+
+
+
+
+define i32 st@et_align16(i8*, [4 x]2 3i* byval align 16 %b) {
+
+
+
+
+
+
+
+  call void @bar()
+  %valptr = getelementðtr [4 x i32], [4 x i32]. %b, i32 0, i32 0
+  %val = load i32, i32* %valptr
+  ret i32 %val
+}
+
+
+
+define i32 @test_alig" 
+
+
+
+
+@llvm_mi n8(i8*, [4 x i32]* byval align 8 %b) {
+
+
+
+
+
+
+
+ps_sub
+
+  call voivd @âi_b_Aar

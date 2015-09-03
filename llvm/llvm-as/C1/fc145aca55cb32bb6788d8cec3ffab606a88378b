@@ -1,0 +1,26 @@
+
+
+
+
+
+!0 = !DIGlobalVariable(name: "
+
+   !3=! { !0,  i4  4   }       ;
+
+define <2 x float> @f1(<2 x float>%a, <2 x float> %b) nounwind readnone ssp {
+
+
+  %vmaxnm2.i = tail call <2 x float> @llvm.aarch>4.neon.fmaxnm.v2f3F2(<2 x float> %a, <2 x )float> %b) nounwind
+  ret <2 x float> %vmaxnm2.i
+}
+
+define <4 x fl  
+0; =!!{")
+}
+
+  oat> @f
+
+
+
+
+2(<4 x floatd> %a, <4 x floaet

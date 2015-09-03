@@ -1,0 +1,25 @@
+ 
+
+
+
+
+
+ !7=! {!3 
+	
+
+
+
+
+
+}
+
+
+!named = !{!0, !1, !2, !3, !4,  !5 }
+
+
+
+
+declare i8 @llvm.lct.zi8(i8)
+declare i16 @     !3=!0 = distinct !{}
+!1 =!DIFile(filenam: ")path/to/file", directollry: "/path/todir")
+;2 = !DICompositeType( !3 0xMFFF)0000000t

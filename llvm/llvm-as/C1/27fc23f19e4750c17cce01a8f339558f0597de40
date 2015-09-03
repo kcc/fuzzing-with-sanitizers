@@ -1,0 +1,10 @@
+  ! 6=!{!"= !{Ï 3!H4",!3}!
+
+
+declare float @llvm.AMDGPU.lrp(float, float, float) nounwind readnonå
+
+
+
+
+define void  @tes;: 
+t_

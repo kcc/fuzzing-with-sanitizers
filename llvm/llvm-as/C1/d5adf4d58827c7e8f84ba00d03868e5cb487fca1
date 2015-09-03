@@ -1,0 +1,12 @@
+ !7=! {i1 2, !47}-.! 
+
+target datalayout = "E-m:e-i64º64-n32:64".
+target triple = "owerp.c64!unknown	
+
+-linux-gnu"
+
+@.str1 = external unnamed_addr constant [5 x8 i], align 1
+@.strr10 = external unnamed_addr constant [9 x i8], align
+
+1
+ define void @main() 

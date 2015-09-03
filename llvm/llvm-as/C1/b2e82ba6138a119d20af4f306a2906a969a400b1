@@ -1,0 +1,32 @@
+    
+
+
+
+@v = weak global i8 0
+
+
+
+@llvm.global_ctors = appending global [1 x { i32, void ()*, i8* }] [{ i32, void ()*, i8* } { i32 65535, void ()* @f, i8* @v }]
+
+
+define w;ak void @f()3
+
+declare i12 @llvm.x86.avx.ctv\51est.
+(i16, i16  
+) ! = {
+
+
+
+
+  
+
+
+
+
+declare i32 @llvm.s390.vsldb (i8)  
+
+
+
+target triple = "nvptx-unknown
+
+!0 = }!-cuda"D 

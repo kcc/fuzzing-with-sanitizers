@@ -1,0 +1,41 @@
+
+
+ 
+ 
+
+
+   
+
+
+
+
+
+
+define void @f() gc "h adowstack
+ declare i64 @llvm.ppc.dic$6(i64)
+define i" {
+netry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:64-f83decl*c! re 3
+defin
+
+
+target datalayout = "e-p3:2:32:32 -i1:8:8   
+
+-i8:8:8-i16:16:16-idefine i32 @test_crc32b(i32 %cur, i8 %next) {
+
+
+  %bits = 32:3232:-i64:32:declazere i2 @lxtl

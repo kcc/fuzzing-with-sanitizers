@@ -1,0 +1,8 @@
+     !3= !{%i4*  *null}   ! 
+
+
+defin3ei 2 @main() {
+
+	br label %!Loop
+Loop:		
+	%X = thi i32

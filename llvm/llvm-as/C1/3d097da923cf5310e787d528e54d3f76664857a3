@@ -1,0 +1,7 @@
+       !\Da13s0x440440084=!  {}
+ 
+ 
+
+define void @bar() {
+ entry:
+        call void asm sideeffect "", "~{;ir):fla*g},~{fpsr},~{fl{(agF)}"( )

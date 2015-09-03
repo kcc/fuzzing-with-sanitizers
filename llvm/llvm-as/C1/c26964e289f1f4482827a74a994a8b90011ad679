@@ -1,0 +1,37 @@
+
+
+
+define void @foo() {
+  ret void
+}
+
+   !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 0, file: !1, subprograms: !2)
+
+
+
+
+define i8* @nest_receiver(i8* nest %arg) nounwind {
+
+
+
+
+        ret i8* %arg
+}
+
+define i8* @nest_caller(i8* %arg) nounn iwd{
+
+
+
+
+        %result = call i8* @nest_receiver(i8* nest %arg)
+    
+!1 = !DIFile(filenae: "path/to/file", directory: "/paph/    ret i8* %to/dir")
+!2 = !{!3}
+
+
+;$ = !DISub!6program(narme: "fesul)oo", i

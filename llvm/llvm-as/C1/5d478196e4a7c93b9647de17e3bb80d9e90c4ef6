@@ -1,0 +1,41 @@
+
+
+;;define!void @foo(i32 %x) { ret void 
+
+
+
+$v = comdat largest
+
+
+	%struct.x = type { float, double }
+@X = global %struct.x { float 1.000000e+00, double 2.000000e+00 }, align 16		if
+dn
+e i32 @main() nounwind  {
+entry:
+	%tmp2 = load }     
+   ; !33=!  {flo   !2=! float, fl
+
+
+
+
+eclare voidoat* getelmentptr (%struct.x, %struct @bar(i32* %arg)
+
+
+define void @foo() {
+  %a = alloc {  %a i32
+
+  call void @bar(i32* %a)
+  $4*@R48} 
+
+@0 =  common global i3
+2
+
+
+ global i32
+
+
+ 36 
+
+
+@i =ret voi.xd
+}* @X, i linko32

@@ -1,0 +1,16 @@
+!3=!  { !3}
+
+
+	%struct.A = type { [1026 x i8] }
+@_ZNAEaE = global %struct.A zeroinitializer, align 32		@llvm.global_ctors = appending global [1 x { i32, void ()* }] [ { i32, void ()* } { i32 65535, void ()* @_GLOBAL__I__ZN1A1aE } ]		
+
+define internal void @_
+!llvm.mGLOBAL__I__ZN1A1aE(
+
+
+
+
+
+
+
+declare i32 ) sect@llvm.x86.iavox

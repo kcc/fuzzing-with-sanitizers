@@ -1,0 +1,25 @@
+ 
+
+ ;llv
+
+define i32 @main() {
+	ret i32 0
+}
+
+%3  =type   
+ %43!3=! {[ 00x[8x %$ci$];0$?][]
+  ;!3=!  {  !3};`(*+7
+
+
+@g = weak alias i32 ()* @g
+
+
+
+target triple = "nvptx-
+!0 =unk!own-nvcl"
+
+declare void @llvm.nvvm.sust.b.1d.v2i32.trap(i64, 23,i i33  =2)
+
+m.d
+ *  efine
+t!  vok

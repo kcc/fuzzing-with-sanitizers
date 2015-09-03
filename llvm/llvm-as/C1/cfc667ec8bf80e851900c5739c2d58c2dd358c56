@@ -1,0 +1,23 @@
+
+
+declare i64 @llvm.ppc.toi64(i64)    ;
+
+define void @f1(i8* %x) {
+ntry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}; ;!i3=!  {!3}!i3 = !{!3}; ;; !k3=!  {!3}!3  =
+target datalayout = "E-   
+
+declare <16 x float> @llvm.x86.`vx512.mask3.vfmadd.pd.215(<16 x float>, <16 x float>, <16 x float>, i16, i32)
+dcleare p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i6432:
+
+
+
+
+
+external global float, align 16    -     
+
+define internal vo64-f32:32:32-f64::64
+id @""() nounÌind {
+     <8 x d   loo

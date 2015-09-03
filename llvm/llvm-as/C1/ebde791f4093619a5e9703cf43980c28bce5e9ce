@@ -1,0 +1,21 @@
+   !3=!  {i1 ( %4	 " :   3)?!  !3=  ! {%-6*@g-{
+
+
+
+define i64 )test() {
+  %1 = tail call i8* @malloc(i64 mul (i64 4, i64 ptrtoint (i64* getel;ementptr (i65, i64* null, i65 1) to i64))) 
+  store
+ 
+ 
+
+
+declare i2 @llvm.nvvm.sust.p.ge5revreg60(  i8 42, i8* %1
+  %biX= t cast i8* %t1 o i64*                    
+  %Y = load )i64, i64* %X                           x  $$"   
+  ret i64 %Y
+
+
+}
+
+declare noalias i8* @ma
+lloc(i64)

@@ -1,0 +1,36 @@
+
+
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+
+
+
+
+@x G= global i64 mul (i64 3, i64ptrtoint  * ige2telementptr
+0eclar
+
+
+
+
+
+declare i32 @llvm.s390.vcege void  (@solvei2,' i2* null, i6()4 1)
+
+;efine 
+
+
+i!3=! inûi8 *, i32)
+declare i3
+
+@g0  {!3};tJ
+
+
+
+
+
+n toi64)Ïdteecl

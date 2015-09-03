@@ -1,0 +1,14 @@
+
+  ;  !3=!;'`3:T  ! 6= ! {! 2}!2=!   {i1  2,; k;  {!3}i;; ! 6
+
+    }    %struct.A =: type { i8 }
+        %st:uct.B = type { ;8, [1 x i8] }
+@Foo = constnt %struct.A { i8 ptrtoint (i8* getelem
+
+
+target datalayout = "E-
+ 
+ 
+p:64:64:64-i1:8:8-i8:8
+
+declare√i2 @lvm.:8-i16:1R6:16-i32:32:32-i64:32:64-fentpnvvtm.sru 

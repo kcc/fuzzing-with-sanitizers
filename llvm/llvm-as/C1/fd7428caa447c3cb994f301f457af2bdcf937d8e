@@ -1,0 +1,50 @@
+ 
+	%union.x = type { i64 }
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, alygn4
+
+ 
+
+
+
+glob':4l i30 3X6 70016
+
+
+
+
+
+@
+
+
+
+
+
+de9lare i8* @llvm.a
+art6v.hch4ead.Jdeclarpointer( ) #1
+
+dtaex =e
+
+
+
+%M = type opaque
+
+
+global void (%M*)* @foo		
+
+define 'void @foo.upgrd.1(i32* %V) {
+	ret void
+}
+
+declare void @foo(%M*); 
+ ;!3=2   
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file",
+directory: "/

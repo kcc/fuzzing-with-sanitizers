@@ -1,0 +1,44 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-a
+
+defin> i8* @test1() { ret i8* @tet1a }
+define void @test1a() { }
+pple-macosx10.10.0"
+
+%union.mfi_evt = type { %struct.anon }
+%struct.anon = type { i32 }
+
+
+define i32 @mfi_aen_setup() #0 {
+entry:
+  tail call void @llvm.dbg.declare(metadata %union.mfi_evt* undef, metadata !16, metadata !21), !dbg !22
+  tail call void llvm.
+
+
+
+
+
+
+
+
+dbg.v
+
+
+
+
+al

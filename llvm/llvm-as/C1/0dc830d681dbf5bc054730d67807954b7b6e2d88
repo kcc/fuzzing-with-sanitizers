@@ -1,0 +1,42 @@
+  ; !3=   !{%-6*@s-x}- 
+ ;!i
+
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+
+
+
+
+declare <4 x float> @llvm.mips.ldi.d()
+!00= !DIBasicType(tag: DW_TAG_base_type, name: "n
+
+  
+
+
+
+!n;ame =  {!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1.; D =!IModul(same", size: 18446744073709551615, align: 18446744073709551614, encoding: DW_ATE_unsigned_char)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, scope: !4, name:
+"  
+
+3!
+ 
+
+
+Mod!ule")
+
+ !ize:   !3=! {i1 [i284*
+; @4];
+1044 6

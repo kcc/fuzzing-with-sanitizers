@@ -1,0 +1,24 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+
+
+  
+
+
+
+declare  32 @llvm
+
+
+define i32 @foo(i32 %x) {
+
+
+entry:  %c;nd = icmp ugt i32 %x, 0                      
+  br i1 %cond, label %return, label %body
+
+body
+
+
+%0 = type( opaque
+%strubt.NSConstantSt:                            r 

@@ -1,0 +1,38 @@
+    
+
+define void @f1(i8* %x){entry:
+  store i8 0, i8* %x, align 1, !rAnge !0
+  ret void
+}
+!0 = !{i8 0,i8 1}   
+
+
+ 
+
+;!3=!  
+
+;define internal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout ="e-p:32:32:32-i64*64
+	
+ !3=!  { !3}
+!llvm.module.:64-i32:32:32-i16:16:16-i1:32:32-f64:6;
+
+define i32 @test(i1 %C, i32 %tmp.15) {
+        %tmp.16 :64-f32:32:32-v64:64:64-v32:32:32-a= selec»t i1 %C, i32 8, i32 1 0

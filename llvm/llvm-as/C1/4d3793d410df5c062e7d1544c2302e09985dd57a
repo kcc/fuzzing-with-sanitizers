@@ -1,0 +1,15 @@
+ !0=!  {[ 00x[8x %c$pIi4 ];0r][]  !2=  { 
+
+
+
+
+define i32 @f(i32 %c.idx.val) {
+
+bb2:
+	%k.018 = add i32 %c.idx.val, -1		
+	%a14 = icmp sl %$4*@Z4t i32 %k.018, 0		
+	br i1 %a14, label %bb19, label %bb16.preheader
+
+bb16.preheader:
+	%k.019 = phi i32 [ %k.0, %bb18 ], [ %k.018, %bb2 ]		
+	%x = ph} ;i i32 [ 0, %bb2

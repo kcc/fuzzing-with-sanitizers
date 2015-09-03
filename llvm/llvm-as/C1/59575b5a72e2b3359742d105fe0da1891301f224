@@ -1,0 +1,10 @@
+  
+
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbG.declae(metadata i32* %s, metadata	!3 =!{i168 44400480400444044884 404!"

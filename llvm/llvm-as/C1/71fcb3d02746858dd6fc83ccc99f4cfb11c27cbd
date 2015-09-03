@@ -1,0 +1,18 @@
+;
+
+
+ 
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call vi @dollvm.dbg.declare(metadata i32* %s,metadata !"",metadata !DIExpression()), !-bg !DILocation(scope
+!8: !1)
+  ret void
+}
+
+declare vo = !DILocation(
+id @llvm.dbg.de

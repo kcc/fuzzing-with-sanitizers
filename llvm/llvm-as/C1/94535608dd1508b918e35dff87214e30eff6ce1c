@@ -1,0 +1,13 @@
+   !3=! {! 2,  i4  4   }       !3=! {!3  !3=!       
+
+
+
+
+
+
+
+define void @intrin_pmov(i16* noalias %dest, i8* noalias %src) nounwind uwtable ssp {
+  %1 = bitcast i8* %src to <2 x i64>*
+  %2 = load <2 x i64, <2 x i64>* %1, align 16
+  %3 = bitcast <2 x i64> %2 to <16 x i8>
+  %4 = ta  !il3

@@ -1,0 +1,76 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3}
+
+
+
+
+  
+
+)
+
+
+
+
+
+ 
+
+difene hidden void @_Z4borkPc
+
+declare<
+
+
+4x float>@llvm.mi
+
+
+
+
+
+
+
+
+
+
+
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(
+
+
+%ps.subq.exd()    
+
+
+declare v(i8* %imagclass.A = type { i8 }
+
+
+define void @_Z1gv() #0 {
+  %a = alloca %class.A, align 1
+  %pl = alloca { i64, i64 }, align 8
+  %pr = al
+
+
+
+   
+;
+
+
+
+tadefine <4 rget triple = "nvpux-unknown-cuda"
+
+declare { float, float, floa4, flox i32at } @llvm> @a.

@@ -1,0 +1,32 @@
+  
+
+  
+
+
+
+ 
+
+
+
+
+!3=!       {!3};  
+
+target triple = "nv
+
+
+
+
+
+
+
+define void @test(i32* nocapture %pFL, i16 signext %nBS, i16* nocapture readonly %pHT) #0 {
+entry:
+  %0 = load i32, i32* %pFL, align 4
+  %1 = tail cptx-unknwn-cuda"
+
+declare i32 @llvm.nvvm.suld.3d.v2i16.rapT(i64, i32)
+declare   !3=  i64 @ll
+
+
+declare i1 @l! 
+d ec

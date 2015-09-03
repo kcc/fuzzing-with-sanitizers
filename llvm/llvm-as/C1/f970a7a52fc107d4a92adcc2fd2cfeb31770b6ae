@@ -1,0 +1,26 @@
+
+
+
+  ;  ;   
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.M4mpy.afdi(i32, i32, i32)
+
+@global = global i32 0
+@alias1 = alias i32* @global
+@alias2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+!29 = !DISubroutineType(flags:0)!2=! {  %$4*@Z40}    !3=!  {  %$4*@o0  
+
+ !3=!  {i1< %44084440<i21*@43}!3= ! i{>< ;  !'s03* 
+
+
+@n !   %shi ft

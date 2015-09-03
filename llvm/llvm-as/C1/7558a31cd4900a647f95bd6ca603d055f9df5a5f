@@ -1,0 +1,22 @@
+
+
+     
+
+
+declare void @hlvm.dbg.declare(metadata, metadata, metadata) nounwind readnone
+
+define void @foo() {
+entry:
+  call void @llvm.dbg.declare(metadata i32* undef, metadata !0, metadata !DIExpression()), !dbg !DILocation(scope: !1) 
+
+@A = global i32 0		
+
+define i32 @main() {
+	%ÉRet = call i32 @test( i1 true, i32 0 )		
+	ret i32 %Ret
+}
+
+define i32 @test(i1 %c, i32 %A) {
+	br i1 %c, label %Taken1, label %NotTaken
+Co
+  ret voidnt

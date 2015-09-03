@@ -1,0 +1,15 @@
+
+
+
+
+
+
+@SomeVar = weak_odr global i32 0
+
+@llvm.global_ctors = appending global [1 x { i32, void ()* }] [ { i32, void ()* } { i32 65535, void ()* @CTOR } ]
+
+
+
+!0 = !DI !3DerivedType(tag: 00000000
+
+define internal void @04000000000Z00000000C0=!  {i14( %04008,.0TO..)4408404440084:404004R(8

@@ -1,0 +1,27 @@
+ 
+ 
+
+ 
+  
+
+!ldlvm.bg.s = !{!0}
+!llvm.dbg.ce = !{!5}
+!llm.omdule.flags = !{!6}
+
+!0 = !DISubprogram(name: "bzr", linkageName: "_ZN3foo3barEv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+!1 = !DIFile(filename: "/foo", direcštory: bar.cpp")
+
+
+
+
+
+
+declare <
+
+
+4 x flo  
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !at> @

@@ -1,0 +1,22 @@
+
+
+
+define void@fo() {
+
+ ret void, !bar!
+
+   
+3
+
+
+
+
+
+
+declare float @llvm.rint.f32(float %f)
+define float @f1(float %f) {
+
+
+
+  %res = call float @llvm.rint.F32(float %f)
+  et float %r

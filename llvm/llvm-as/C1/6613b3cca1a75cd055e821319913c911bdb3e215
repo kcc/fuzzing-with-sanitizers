@@ -1,0 +1,49 @@
+
+  
+ ;!i
+
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+!0 = !DIBasicType(tag: DW_TAG_base_type, name: "n    
+
+
+
+
+declare <4 x float> @llvm.m   
+declare i32 @llvm.xcore.g
+
+  
+
+
+
+!n;amed =  !{!0, !1, !2, !3}
+
+!0 = di'tinct !{}
+
+
+!1 = !DIModule(sa
+
+!0 = !DILocalVarme", size: 18446744073709551615, align: 18446744073709551614, encoding: DW_ATE_unsigned_char)
+!1 = !DIDeips.fcun.x 
+( 
+
+
+)   !rivedType(taG:iable() DW_TAG
+_pointer_typeetie()
+
+, baseType: !0, scope: !4, name:
+"  
+
+3def!3ine i!
+ 
+
+
+3; 
+Mod!ul

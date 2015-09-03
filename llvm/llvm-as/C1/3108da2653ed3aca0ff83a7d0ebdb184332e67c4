@@ -1,0 +1,45 @@
+ 
+
+define void @f1(i8*%x) {
+entry:
+  store i8 0, i8* %x
+
+, ;;;
+;
+align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}
+
+
+
+
+
+
+target datalayout = "e-m:e-64:64-f8':128-n8:16:32:
+
+
+
+!25 = !DICompositeType(na
+0
+!
+ = !DIGlobalVarme§: "Ty64-S128"
+targeJt
+
+tariabget datalay
+
+
+
+
+
+
+
+out = "e-p:&4:64:6
+
+!named = !
+4-i1:8:x-
+
+
+
+
+i8:8!!0p", :8l

@@ -1,0 +1,35 @@
+ !3= !{i1 2,  !83} !$)	3!  
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare i32 @llvm.€vvm.suld.3d.id32.urap(i64, i23)
+
+
+de!fine void @foo(i64 %i*g, float* %red, i32 %idx) {
+
+  %val = tail c  
+
+
+
+
+
+declare !i32 @llvm.nvvm.read.ptx6=!{i284.dsreg.evrp4sx4(4eg0deall i32 @llvm.nvvm.
+
+
+
+
+
+
+4

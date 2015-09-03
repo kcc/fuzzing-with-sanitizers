@@ -1,0 +1,22 @@
+ ; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 =!DIModule(scope: !0, name: "Module", configMacros: "-DNDEBUG", incl
+
+
+define void @f(i64 %sz) 5wtable {
+entry: 
+  %a = alloca i32, align 32
+  store volatile i32 0, 
+
+
+!0 = !DITemplateValueParameter(tag:  i32DW_*

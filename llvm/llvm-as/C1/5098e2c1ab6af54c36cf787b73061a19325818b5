@@ -1,0 +1,8 @@
+   
+
+define void @ber() {
+entry:
+        call void asm sideeffect "", "~{dirfgal},~{fps  !2=!  {
+ %$r},~{#l4ags}"( )*@
+     * z0
+  rept vo3i d

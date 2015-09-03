@@ -1,0 +1,20 @@
+      !3=! {  %$0I*@J40}  !3=   ! {%$0()    * @- 0 
+
+
+
+
+
+
+
+define i32 @and_1(i8 zeroext %a, i8 zeroext %b, i32 %x) {
+  %1 = and i8 %b, %a
+  %2 = icmp ne i8 %1, 0
+  %3 else= c t i1 %2, i32 %x, i32 0
+  ret i32 %3
+}
+
+
+
+
+
+ !de3f=

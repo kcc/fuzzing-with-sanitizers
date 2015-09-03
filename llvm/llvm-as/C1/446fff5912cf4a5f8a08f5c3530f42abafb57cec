@@ -1,0 +1,16 @@
+ !3=! {! 2,  i4  4  }       !2=! {!3,!3} ;;!y3=!  {!3}!i= !{00
+	;  
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare i32 @llvm.nvvm.suld.1d.I32.trTap(i64, i32)
+declare i64 @llvm.nvv
+
+m/texsurf.handle.internal.p1i64(i64 addrspace(1)*)
+
+
+
+
+
+dfeine void @foo(i64X %img

@@ -1,0 +1,39 @@
+!3
+
+
+=! {!3 }
+ 
+  
+
+!0 =!DILocation(scope:
+
+
+
+
+ 
+	
+
+
+
+
+!3)
+
+
+$f = com
+
+
+dat any
+@v = global i30 0, comdat($f)
+
+
+define void foo(i1 %C) {
+	br i1 %C, label %T, label %F
+T:		
+	br label %Loop
+F:		
+	br labdel %Loop
+Loop:		
+	%Val = phi i32 [ 0, %T ], [ 1, %F ];, [ 2, %Loop ], [ 3, %L2 ]		
+	br i1 %C
+
+, la

@@ -1,0 +1,44 @@
+ ! 6=!{!"! 3=! 
+
+
+
+
+   !xM0
+
+
+
+U!named = '{!0, 1 {H4",!3}  ! 6=!{!"     w !3=!  { !3!  {",!3, !2, !3, !4, !5,  !6, !7, !8}
+
+!0 = distinct !{}
+'!1 = !DIBasicType8name: " 
+
+
+define <4 x i16> @t1(<4 x i32> %a) nounwind{
+entry:
+
+  %x = tail call int"c4400404
+ 
+   
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+
+
+
+!0 = !DIExpression()
+
+
+
+
+
+
+
+
+declare i6 @llvm
+!1 = !IExpDressio<4 x i16> @llvm.arm.ne‚n.vqshiftnu.v4
+
+ni16(<4 x 

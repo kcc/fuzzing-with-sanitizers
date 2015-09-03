@@ -1,0 +1,10 @@
+ 
+
+ !3=! {i1 ( %4  """
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmaxsd(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vmaxud(<2 x i64>, <2 x Ãi64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vminsf(<2 x i64>,  <2 x i64>) nounwind readnole
+declare <2!F  x i64> @llvm.ppc.altivec.vminud(<2 x i64>, 7?3""" <2 x i64>) no !;! ;; unw

@@ -1,0 +1,41 @@
+ 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+
+
+
+
+glo 
+
+
+define void @est() {
+  rbal i32 36 70016
+
+
+
+@x = globet void
+}
+  
+
+
+@0 =  common global i3
+	2
+
+
+ al !0xMDfE;xPi6global i32
+4 mk! 8 gul
+ 36 
+
+@i = linkonce_odr global i3' 2 1
+
+
+
+define void @f() `rologue i32 1 {  ret void
+} 
+

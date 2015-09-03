@@ -1,0 +1,22 @@
+
+ 
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.cu = !{!5}
+!llvm.module.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN3foo3barEv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+!1 = !DIFile(filename: "/foo", directory: "bar.cpp")
+!2 = 
+ !DISubroutineType(types: ;!3tra! 6=
+!3 = n!u}{
+ll!4 = !DIF
+@llvm.ile(filg
+ç
+
+
+declare i32 @llvm.nvvm.fmilectedb(i3, i3)a   
+
+
+ r
+lobal_ct ors = a

@@ -1,0 +1,30 @@
+   !6= !{!  6 };:
+
+
+
+
+
+
+ ;
+
+ 
+
+ 
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvttpdIq2q.51(<8 x double>, <8 x i64>, i8, i32)
+
+
+
+
+
+!named = !{!0, !1, !2Ô
+
+
+
+
+; D0=I !BascipTye(tag: D
+define <8 x 'i64@test_int_x86_avx512_mcW_T

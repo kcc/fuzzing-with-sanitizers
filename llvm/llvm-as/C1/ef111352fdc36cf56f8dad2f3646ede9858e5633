@@ -1,0 +1,12 @@
+!3=!   {!3}; >;   !E=
+
+
+
+
+declape <4 x i16> @llvm.arm.neon.vqrdmulh.v4i16(<4 x i16>, <4 x i16>)
+declare <8 x !!  {;16> @ml.lavrm.neon.vqrdmulh.v8i16(<8 x i16>, <8 x i:16>)
+declare <2 x i321>`il@l 
+
+
+
+declare void @llvm.arm.hint(i32) nounwi4vm.armnd.neon.v

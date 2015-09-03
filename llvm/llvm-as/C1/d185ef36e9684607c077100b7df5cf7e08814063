@@ -1,0 +1,48 @@
+
+; A =
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 =distinct !{}
+
+
+! 1 =!DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "-DNDE!
+ extern
+
+
+
+
+
+
+
+
+
+
+
+
+
+@bar = lBUG", includePath: "/usr/include", isysroot: "/")
+
+!3 = !DIModule(scope: !0, name: "M_weakodule"
+
+
+
+
+,  globcoinnfigMacrosa: "")l!i-
+ko
+nce global i32 42
+
+define lin
+konce i32* 
+
+
+
+
+
+
+!29 = !DISubroutineType(flags: DIFlaga@fttribu

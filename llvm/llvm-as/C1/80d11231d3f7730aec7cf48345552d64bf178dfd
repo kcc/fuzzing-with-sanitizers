@@ -1,0 +1,38 @@
+
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbo.cu = !{!5}
+!llvm.module.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN3foo3barEv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+!1 = !DIFile(filename: "/foo", directory: "bar.cpp")*! 
+
+
+
+
+
+ 
+
+    
+
+
+
+2 = !
+
+
+
+
+@A = w'ak global i32 5DISubrout4       
+
+
+
+
+
+ 
+;  !3=    3 !3=  
+
+
+
+
+
+declare <8 x i64> @llvmine.x86.avx512.masT

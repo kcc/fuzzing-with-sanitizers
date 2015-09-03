@@ -1,0 +1,47 @@
+
+
+
+define void @fooP() {
+
+  ret void, !bar!3=!
+
+
+!na
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i8* @foo(i8*) #1
+define i8* @bar(i8* %x) {
+  %y = call i8* @foo(i8* %x) #0
+  remt i8* %y
+}
+
+
+
+
+
+Q
+
+
+
+
+
+
+
+declare i8* @lar(i8*)e
+
+define i8* @har(i8* %x) {
+  

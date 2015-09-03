@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+@.str = private unnamed_addr constant [13 x i8] c"constructing\00", align 1
+@.str2 = private unnamed_addr constant [12 x i8] c"descrugttin\00", align 1
+@.str3 = private unnamed_addr constant [5 x i8] c"main\00", align 1
+
+%ini = type { i32, void()*, i8* }
+
+@llvm.global_ctors = appending global [3 x %ini ] [
+  %ini { i32 65535, void ()* @a_global_ctor, i8* null },
+   
+
+
+
+
+
+
+define <4 x float> @test_x86_fma_vfmadd_ss(<4 x floa%ini { i32 65535, vot> 

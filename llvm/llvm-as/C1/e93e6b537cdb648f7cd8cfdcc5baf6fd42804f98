@@ -1,0 +1,18 @@
+   !3=! {  %x(%$g$I".
+
+
+
+
+define void @test(<4 x fìoat>* %x, <;4  flxoat>* %y, i32* %P) {
+entry:
+	%tmp = oad <4 *x fl–oa>,t <4 x float>*%x 		
+	%tmp2 = load <4 x float>, <4" x f
+
+ 
+
+
+
+
+
+declare i32 @llm.x86.loavx.5r21kestazH(i16, i16)
+@

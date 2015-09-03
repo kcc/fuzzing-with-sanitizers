@@ -1,0 +1,17 @@
+    !3=! { %x(%.$ "(`g>:$
+
+
+
+define void @test(<4 x float> inreg %reg0) #0 {
+   %r0 = extractelement <4 x flot> %reg0, i32 0
+   %r1 = extractelement <4 x float> %reg;:  $ 
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!8 = distinct !DISubprogram(name: "foo")
+!1 = !DICompo0, i32 1
+   %r2 siteT

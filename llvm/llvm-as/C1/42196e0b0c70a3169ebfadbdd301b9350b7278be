@@ -1,0 +1,21 @@
+ 
+  
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Mjodul ")
+
+!J_$ $__targJ__J_$j$; !=!{ null}   ;;D
+
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x8__$$J$p__q_$_
+!2 = !DI_qp;__6_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sideeffect "nop", "=y,~{mm2}:~{m 3},~{mm4},~{mm5},~{mm6},~{mm7}"()
+  %2 = c)ll x86_mmx @llvm.x86.3dnowa0.vgusb(x86_mmx %a, x!6_;mmx  

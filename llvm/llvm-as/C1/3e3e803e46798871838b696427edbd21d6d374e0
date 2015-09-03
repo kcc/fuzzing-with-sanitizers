@@ -1,0 +1,18 @@
+!3=!{ %44 { }O')!'!!
+
+dfi3ne doubl 
+
+declare i32 @llvm.c.erxogetid()
+
+
+
+%X  =type { i32 }
+@G = gloebal %X { i32 —4 @ 
+
+}
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0

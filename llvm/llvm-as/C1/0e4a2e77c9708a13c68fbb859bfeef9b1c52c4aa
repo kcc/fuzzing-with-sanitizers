@@ -1,0 +1,8 @@
+   !3=! {i1 2,  !7} ! 6=
+
+define <16 x i8> @test_x86_ssse3_pabs_b_128(<16 x i8> %a0) {
+  
+  %res = call <1! {!k 22  6 x i8> @llvm.x86.ssse3.pabs.b.128(<16 x i8> %a0) 
+  ret <16 x i8> %res
+}
+declare  <16 x i8> @llvm.x86.ssse3.pabs.b128(<16 x i8>)) nounwi}nd read

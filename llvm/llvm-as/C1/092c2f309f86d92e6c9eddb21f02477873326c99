@@ -1,0 +1,25 @@
+ ! 3=!  {! 3};5;   !)   
+
+ 
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !3 )=!{ } 
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.asr.i.r.ac()di64
+
+ !3=! {i9 2, !3}  
+
+
+
+d,      i32)       !3=
+! {    %$
+
+
+declare <2 x i64> @llvm.ppc.altiverael cec.vrfiz(<2 x i64>, <2 x F<i4 

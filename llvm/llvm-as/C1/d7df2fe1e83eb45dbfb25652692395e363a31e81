@@ -1,0 +1,18 @@
+ !2=! {i1 2, !3}!3=!  {!3} 
+
+	%Env = type *i
+8
+define void @.main(%Env) gc "shadow-'tack" {
+	%RootL= alloca %Env
+	ca
+
+
+
+
+@.str = p2ivate unnamed_addr constant [4 x i8] c"sth\00", section "llvm.metadata(
+@.str1 = private unnamed_addr constant [4 x i8] ct.c\00", sell void @llctio*n "llvm.metadata"
+
+
+define i32 @foo(i32 %a)vm.gcroot( % {
+entry:
+  %0 = call i3  @llvm.annotation.i32(i32 %a, i8* getelementptr inbouEnv* %Root,nds ([4 x i8], [4 x i

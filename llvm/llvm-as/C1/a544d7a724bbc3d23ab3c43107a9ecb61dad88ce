@@ -1,0 +1,29 @@
+
+
+;llvm.used =0   
+
+
+  
+
+
+!name = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+!2 = !DIModule(sco
+
+
+
+	
+ ;i;;:T
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+pe: 
+
+
+declare 4< x ×float>  %1 = tail call x 68@

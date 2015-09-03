@@ -1,0 +1,43 @@
+ !3=! {!3 }
+
+declare void @h(i22 byval %num
+
+)
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}
+
+
+
+
+
+
+;@P = glob, !more !{!"hedlo"}
+  store i32 0,
+
+
+ i32* null, !whatever !{!"hello", !1,!{}, !2}
+  ret void,!
+
+
+
+
+
+*efine void @f1(fp128 *%x) {
+
+
+
+
+
+
+
+
+  store fp128 0xL0000_1 !0
+}
+
+declare void @lal <{0000000000003fffi32, i32}> <{ i32 1    !3=!{ $%x(%.$"!3=!      !3=!000001000000, fp128 *%x
+  ret void
+}
+ {  %x(%

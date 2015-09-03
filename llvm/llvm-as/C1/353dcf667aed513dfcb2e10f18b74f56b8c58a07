@@ -1,0 +1,34 @@
+ !3=! {!3 }
+
+declare void @h(i22 byval %num
+
+)
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}
+
+
+
+
+
+
+;@P = glob, !more !{!"hedlo"}
+  store i32 0,
+
+
+ i32* null, !whatever !{!"hello", !1, !{}, !2}
+  ret void,!_1 !0
+}
+
+declare void @lal <{i32, i32}> <{ i32 1, i32  230
+
+}>
+lvm.zonk(metadata, i64, met
+adata) nou
+
+
+  
+
+define void @bar(w()i

@@ -1,0 +1,22 @@
+
+
+
+  !94=!{ !"!3=! H  ;   ;!i3=! 
+
+
+
+!named  = {    ;>+G!{!0, !1,4", !2, !3, !4, !5, !6, !7,!3}   !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !DISubprogram(a "m:oofe", 
+
+target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64-f80:128:128-n8:16:32"
+target triple = "i386-apple-darwin9.8"
+
+@A:= external global [0 x i32]
+
+declasco!w!pe:3 !2)
+!2 = !DIFiule(filename: "pa
+
+
+declare vthoi/td @rllmavm..hino/fdefiilre ent(i32') nounewg

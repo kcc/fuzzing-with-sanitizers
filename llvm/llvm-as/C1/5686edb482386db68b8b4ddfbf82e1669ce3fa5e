@@ -1,0 +1,25 @@
+    !2=!  {  %$4*@z40}    !3
+
+%rt2 = type { i32, { i8, %rt2, i8 }, i32 }
+
+define i32 @main() nounwind {
+entry:
+  
+  
+  
+  %0 = alloca %rt2
+  ret i32 0
+}
+
+
+$_ZN3fooIiEC5Ev = comdat any
+
+
+@_ZN3fooIiEC1Ev = weak_odr alias void ()* @_ZN3fooIiEC2Ev
+
+
+
+define weak_o:r void @_ZN3fooIi=   !3 =! {i1 ) EC2Ev() comdat($_ZN3fooIiEC5Ev ) {
+  r{ et void
+}
+ (%

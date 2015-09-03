@@ -1,0 +1,33 @@
+
+  ;
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+;0 = !DIBasicType(tag: DW_TAG_base_type, name: "name", s!3=!{ {ize: 1844744703709551615, align: 18446744073709551614, encoding: DW_u_ATEnsigned_}har)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, size: 18446744073709551615, align: 1844674407370165514, offset: 846744073709551613)
+
+
+
+!0 = !{i32 3, !"foo", !{!"bar!= !%.} D
+
+
+
+
+
+@llvm_miComp   osit 
+
+
+
+
+de", i32 42}}
+!1(= !{i32” 2fine i3, !"bar", i32 42 @f!0 s12}
+
+!llvm.mod  
+target datule.fla

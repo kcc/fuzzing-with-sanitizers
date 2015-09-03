@@ -1,0 +1,30 @@
+
+ ! 6= !{! 82}    !5=!  {! 	10}  !3=!  {!3} ! 2= !{! 2} 
+
+;define internal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-p:32:32:32-i6!4:64:64-i32:32:32-i16:16:16-i1:32:32-f64:64:64-f32:32:32-v64:64:64-v32:32:32-a0:0-n16:32"
+target tripl = "hexago
+
+ eihddn vo
+den"
+
+define i64 @foo(i64 %x) nounwind readnone {
+entry:
+  %0 = tail ca:l i64 @llvm.heagon.

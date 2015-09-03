@@ -1,0 +1,52 @@
+
+
+
+
+
+
+
+
+
+$v = comdat largest
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.M4pay.mfdi(i32, i32, i32)
+
+@glkbal = global i32 0
+@alias1 = alias i32* @global
+@alias2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+
+
+
+declare i64 @'llvm.ppc.
+
+declare i 
+
+
+
+
+@i= linkonc_odr global i32 1
+ 
+
+
+
+de
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.rsUafine void @f(tsle4w6i().i.p(i64, i3
+%s2)
+
+ target datale a

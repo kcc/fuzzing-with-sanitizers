@@ -1,0 +1,23 @@
+ 
+
+define void @f1(i8* %x) {
+entry:
+  store i 0, i8* %x, ;;;
+;	
+align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}
+
+
+
+
+
+
+target datalayout = "e-m:e-64:64-f8':128-n8:16:32:
+64-S128"
+targeJt
+
+target datalayout = "e-!3=!   {!3};
+
+define i64 @tesp:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32*32:32-i64:64:64t_x86_-f³2:32:3sse22-f64_cv:6t4

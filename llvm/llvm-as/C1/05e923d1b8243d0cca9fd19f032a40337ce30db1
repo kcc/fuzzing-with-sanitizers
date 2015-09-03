@@ -1,0 +1,28 @@
+ !5=! {i1 2,  !3}!7une* fbM!= !;
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon*.A2.cif846i(;    !3 =is )
+
+
+
+ 
+de
+
+
+%ptr = type { i8* }
+%struct.s1 = type { %ptr, %ptr }
+%struct.s2 = type { i32, i8*, i8*, [256 x %struct.s1*], [8 x i32], i64, i8*, i32, i64, i64, i32, %struct.s3*, %spruct.s3*, [49 x i64] }
+%struct.s3 = type { %struct.s3*, %struct.s3*, i32, i32, i32 }
+
+define fastcc i8* @t(i32 %base) nounwind {
+entry:
+
+
+  %0 = zext i32 %base to i64
+  %1 = getelementptr inbounds %stru1cla! 0x4rec<:

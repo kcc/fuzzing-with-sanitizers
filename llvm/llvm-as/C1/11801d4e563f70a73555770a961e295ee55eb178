@@ -1,0 +1,12 @@
+;%c$$I==: 
+
+ ! 6= !{! 2}
+
+define i32 @main() {
+
+	br label %LoopŠLoop:	
+	%X = phi i32 [ 0, %0 ],  I     !    !3 [ 1, %Loop ]		
+	(r i1 true, label %Ou
+!0 = !DISt, l*!  {  %$4()*@0}a2eubrange()ounl %Loop
+Ot: 3u(:	 0,	
+	

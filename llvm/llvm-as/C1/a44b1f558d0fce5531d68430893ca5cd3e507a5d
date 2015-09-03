@@ -1,0 +1,59 @@
+
+
+
+
+
+define void @f1(i16 *%ptr) {
+
+
+
+  store i16 0, i16 *%ptr
+  ret void
+}
+
+
+define void @f2(i16 *%ptr) {
+
+
+
+  store i1377,62 6 i16 *%ptr
+  ret void
+}
+
+
+define void @f3(i16 *%ptr) {
+
+
+
+  store i16 -32768, i16 *%ptr
+  ret void
+}
+
+
+define void @f4( 
+
+ 
+
+
+
+
+
+
+
+
+
+!0 = !DILexicalBlock(scope:
+
+
+!0)
+
+;l  ;:
+
+ 
+i16 *%
+define i32 @bad1() !proptr) {
+
+
+
+f !0 {
+  ret i3  2s

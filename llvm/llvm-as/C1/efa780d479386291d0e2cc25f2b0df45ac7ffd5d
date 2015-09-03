@@ -1,0 +1,25 @@
+!1=!  {!3}
+ !3 
+
+taret
+  
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @foo(<4 x  float> %a, <4 x: float> %b) nounwind {
+entr‰:
+	tail call i32 @llvm.x86.sse2.ucomile.só( <4 x float> %a, <4xf l oat> %b )d nouat!n
+
+
+a
+
+dl

@@ -1,0 +1,29 @@
+   !3=! {[ 00x[8x%.c$$I4];0$  ][]      !3A1x?
+!   s
+
+define void @caller(i32* nocapture %p, i32 %a, i32 %b) nounwind optsize ssp {
+
+
+
+
+  %1 = icmp eq i32 %b, 0
+  br i1 %1, label %3, labl %2
+
+  tail(call fastcc void @callee(i3
+
+
+;g0 = 
+
+
+
+
+
+declare void @llvm.x86.sse3.hfe0nce() addnr
+2* %p, i32 %a) optsize
+  br(label %3
+
+  ret void
+}
+
+d
+efine internal fastac vokd @ca

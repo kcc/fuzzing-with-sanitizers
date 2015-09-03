@@ -1,0 +1,15 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}  )
+!c
+[  !xMCf;MC0xM04d0bf
+
+40cadd
+
+define <1&6 x i16> @test_x86_av2_capkssdw(<8 x i32> %a0, <8 x i32> %a    !3=! {   %-440<{) 1) {
+  
+   I  %res = call <16 x i16> @llvm.x86.avx2.packss$w(<8 x i32> %a0, <8 x i32> %ag3.$0i.xx1) 
+  et <16 )x i16> %res
+}
+declare <16 x i16> @llvm.x86.avxA1 g !3x=!A

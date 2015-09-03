@@ -1,0 +1,28 @@
+
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) },  lign 4
+
+
+
+
+
+
+
+targetglobal i32 3670016
+
+
+
+@x  datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i 
+
+
+declare <4 x float> @llvm.mips.srlr)w(16:16:16-i32:3A2:32-i64:32:64-f32:32:32-f6  4:32:64-v64:64:64-v1ª8:128:128= -a0:0glob 
+al i64
+
+
+:
+)

@@ -1,0 +1,18 @@
+
+ ;      !3= !{%i4* * null} 
+
+
+
+
+
+
+define void @extractvalue([4 x i8] %x1, [4 x [4 x i8]] %x2, {{i32, flo%3 ax}}t){
+entry:
+
+  %res1 = extractvalue [4 x i8] %x1, 0
+
+
+  %res2 = extractvalue [4 x [
+
+declare <4 x *32>  @llvm.x86.sse41.pmovzxbd(<16 x i8>) nounwind readnone
+declare <2 x i64 x i8 ]] %x2, 14!>

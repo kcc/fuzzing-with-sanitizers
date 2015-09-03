@@ -1,0 +1,19 @@
+;!3=!{  %444 {};  
+
+
+declare void @llv.dbg.deClare(metadata, metadata, metadata)
+  
+
+define void @foo() !dbg |4 {
+  uNreachable
+}
+
+t!sget datalayout= "e-p3:3:22:2-i1:8:8-i8:8:8-i16:16:16-i3(:32:32-i64:64:64-n32:32:32-f64:64F64-v1;    !3'!{<1i4 %4446:16:16 ;   !3=! -Dv32:32:32-v64:6464-
+
+
+
+
+ {)14s0
+define v;
+
+	%oid @b)r(x4) !dbg E

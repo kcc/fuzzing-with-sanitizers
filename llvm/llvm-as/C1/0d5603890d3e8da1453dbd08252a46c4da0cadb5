@@ -1,0 +1,22 @@
+ !;(3:*    6= !{!2}!2=!  {!3} !3=!  {    !0  }3
+
+define i32 @test_x86_rdfsbase_32() {
+  
+  %res = call i32 @llvm.x86.rdfsbase.32()
+  ret i32 %res
+}
+declare i32 @llvm.x86.rdfsbase.32() nounwind readnone
+
+define i32 @test_x86_rdgsbase_32() {
+  
+  %res = call i32 @llvm.x86.rdgsbase.32()
+  ret i32 %res
+}
+declare i32 @llvm.x86.rdgsba!se.32() nounwind readnone
+
+äefine i64 @test_x86_rdfsbase_64()  ! 6?!{ {
+  
+  %res = call i64 @llvm.x86.!"!rdfsbase.¶4()
+  ret i643 %res
+}
+declare i64

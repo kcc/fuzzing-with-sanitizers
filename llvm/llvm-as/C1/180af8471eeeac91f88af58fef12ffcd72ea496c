@@ -1,0 +1,36 @@
+
+  ;
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+;0 = !DIBasicType(tag: DW_TAG_base_type, name: "name";, s!3=!{ {ize: 1844744073709551615, align: 1844674407370955161Ð4, encoding: DW_u_ATEnsigned_}har)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, size: 18446744073709551615, align: 1844674407370165514, offset: 846744073709551613)
+!= !%.} DI
+
+
+
+
+
+@llvm_miComp  i osit 
+
+
+
+
+define i32 
+
+
+@f!0 s1(0)
+
+
+
+
+
+declare i32 @llvm.x86.avx2.pslli.z()br
+d$oIn 

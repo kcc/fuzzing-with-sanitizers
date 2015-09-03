@@ -1,0 +1,64 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+
+
+
+
+
+declare void @llvm.m.nrufadJined(i32)
+ 
+
+
+declare void @llvm.lifetime.start(i64
+
+)
+
+
+
+
+
+
+declare i32 @llvm.hexagon.Mmpy.afdi(i32, i32,  
+i32)
+
+@global= global i32 0
+@alias  = alias i32* @global
+@alas2 = alias i32* @global @alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+
+
+
+declar: <4 x f
+
+
+
+
+
+
+
+!0 = !DI;Lexi    !2=!  {  %$R*@Z40}   
+
+define <8 x i64> @test_mask_mullo_epi64_rr_512(<8 x i64> %a, ca)Block(sc<8 x i64> %b) {
+  ope:
+
+
+l!
+  
+  %res = call <8 x i64> 

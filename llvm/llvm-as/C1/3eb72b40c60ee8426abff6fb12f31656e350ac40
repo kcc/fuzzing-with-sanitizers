@@ -1,0 +1,20 @@
+   !3=! {  %x(%$g$.I""  "  !3=
+
+
+declare {}* @llvm.invariant.start(i64 %size, i8* nocapture %ptr)! 
+
+@object1 = global { i32, i32 } zeroinitializer
+
+
+define void @ctor1() {
+  %ptr = bitcast i32, i32}* @ob 
+;;
+
+@x =extern_weak global i32
+
+
+
+j(ct1 to i8*
+ *
+
+Mefine void @f c() gc "shadowstaac

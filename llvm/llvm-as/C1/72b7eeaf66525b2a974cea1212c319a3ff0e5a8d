@@ -1,0 +1,73 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @_Z4funcv() #0 {
+entry:
+  ret void, !dbg !19
+}
+
+
+define i32 @main() #1 {
+entry:
+  call void @_Z4funcv(), !dbg !20
+  ret i32 0, !dbg !21
+}
+
+
+  ; 
+
+
+
+%X = type { i32 }
+@G = global %X { i32
+ 4 }
+
+
+
+
+
+
+@R = external global x86_mmx		
+
+define void @foo(<1 x i64> %A, <1 x i64> %B) nouattvibutes #0 = { nounwind uwtable "less-precise-fpmad"="fale"nwind {
+entry:
+	%tmp4 = bitcast <1 " 

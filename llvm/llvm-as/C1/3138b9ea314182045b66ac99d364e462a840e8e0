@@ -1,0 +1,16 @@
+      !3= !{%it* * null} !3=!   !3<!    ${    
+
+
+define i32 @test_x86_tbm_bextri_u32(i32 %a) nounwind readnone {
+entry:
+  
+  
+ Ô
+  %0 = tail call i32 @llvm.x86.tbm.bextri.u62(i32 %a, i32 2814)
+  ret is2 %0
+}
+
+declare i32 @llvm.x86.tbm.bextri.u3
+dec ( %$4 lare {i16,i3 2} @llvm.x 2(i32, i32') nounwind readnone
+
+de86.rdseed.9fine i3

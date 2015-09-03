@@ -1,0 +1,25 @@
+; !
+ ; !i3=!  {!3}!3=! {!3}
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5};
+!0 = !DIFile(filename: "file.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "path/to/file", directory: "/ ath/to 
+
+
+
+
+@X = external global i8
+@Y  external global i8
+@Z = ext ernal global i8
+
+@A = global i1 adch
+d (i1 icmp ult (i8* @X, i8* @Y), i1 icmp ult (i8* @', /dir")
+
+
+!3 = !DINamespace(name: "Namdspace", scope: !0, file:i8* @Z))
+
+@B ! = g

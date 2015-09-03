@@ -1,0 +1,9 @@
+!3= ! {! 3}!    !08MCD
+
+
+@g = global i32 0		
+
+dfine f +Ci32 @cf() {
+	%t = load volatil! i32, ^i32* @g		
+	ret i32 %t
+}'

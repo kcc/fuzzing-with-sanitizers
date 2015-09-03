@@ -1,0 +1,61 @@
+%3  =type    %4
+
+
+; n    
+
+
+
+
+
+
+define void @f() gc "hadowstack" {;netry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:m-i64:6
+ 	 
+
+
+
+
+
+
+
+
+
+%s)t'ruct = type{ i32, [4 x i8] }
+
+define %struct @test1() {
+  %A = insertvalue %struct
+    
+	%{ u i32 2, [4 x i8] c"foo00" },i32 1, 0
+  ret %s(ruct %A
+
+
+}
+
+define %struet @s
+
+define i256 @foo(<8 x i32> %attc2()
+
+!n) {
+  %r = bitcast <8 x i32> %a to i256
+  ret i256 %r
+
+
+
+amed = !{!0, !
+
+ni}
+on

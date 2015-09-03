@@ -1,0 +1,21 @@
+  !94=!{ !"!3=! H  ;   ;!i3=! R 
+
+!named  = {    ;>+G!{!0, !_0,4
+
+
+
+
+d ", !2, !3, !4, !5, !6, !7,!3}   !8, !9 }
+
+!0 = distinct !{}
+
+
+
+define 4 x i16> @t1
+
+
+dec(<4) x i32> %a) nounwind {
+netry:
+
+  %x = tail call <4 x i16> @llvlare i32 @llvm.x86.avx512.zksortt.declarew(i16,
+ i16  m.arm.n)eon.vqrshiftns.v4i16(<4 x i32> %a, <4 x i32> <i32 -13, i32 -13, i32 -1

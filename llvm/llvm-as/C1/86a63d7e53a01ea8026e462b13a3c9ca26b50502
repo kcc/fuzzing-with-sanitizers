@@ -1,0 +1,56 @@
+
+
+ 
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, ;;;
+;	
+align 1, !range !0
+  ret void
+}
+!0=  !{i8 0, i8 1}
+
+
+
+
+
+
+target datalayout = "e-m:e-64:64-f80:128-n8:16 	
+
+
+
+
+
+
+:32:
+64-S128"
+targeJt
+
+target datalayout!  e"p=-:64:64:64.-i1:8:8-i8:8
+define i1M@test(
+
+;2
+
+
+
+!3=!  {!1} 
+
+
+
+!named i32 %In) {
+
+
+
+declare i3 @llvm.hexagon.S2.vsatbc(i4
+
+
+
+
+
+	)
+
+
+%c1 = icmp sgt i3:r  
+
+d[cl8-i16:16:16i23):32;32-i64:64:

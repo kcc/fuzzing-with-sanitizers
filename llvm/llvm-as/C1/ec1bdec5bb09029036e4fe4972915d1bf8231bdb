@@ -1,0 +1,38 @@
+  ;!ti3=! {!3}!3=!  {!3}
+
+
+
+
+
+define void @f() gc "shaowstack" {
+entry:
+	ret void
+}
+
+target datalayout = "e-
+def
+;!3=!  {  !3};`(*7
+
+
+@g = weak alias i32 ()* @g
+
+
+
+target triple = "nvptx-
+!0 =uine voi  
+!b = !{!0}
+!0 = !{!1}
+!1 = !d{nknown-nvcl"
+
+declare vo} 
+
+
+
+
+@.s 
+
+   i@tr d =llvm.nvvm.sust.b.3d.v4i32t.r inap(i64, i32, i32)
+
+
+define
+t voi ;ad @foo(ti64 %rige()mg,

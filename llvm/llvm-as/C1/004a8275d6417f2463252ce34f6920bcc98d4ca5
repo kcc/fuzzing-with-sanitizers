@@ -1,0 +1,16 @@
+
+
+
+global i64 -932237 
+
+ 
+
+
+declare<
+
+4 x float > @llvm.mips.addu.s.wa()x
+
+
+ 2 
+
+0

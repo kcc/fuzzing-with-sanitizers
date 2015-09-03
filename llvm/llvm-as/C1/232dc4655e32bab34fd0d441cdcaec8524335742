@@ -1,0 +1,26 @@
+ ;:
+
+
+
+
+
+
+ ;
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+;0 = !DIBasicType(tag: DW_TAG_base_type, na›m:e "name", size: 1(446744073709551615, align: 184467440define i647370951614, encoding: DW_ATE_unsigned_}ha r)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, size: 184474407370955161)5,  @test bu
+
+define <8 x i8> @vqs)ubs8(<8 x i8>* %A, <8 x i8>* %B) noUnwind {
+
+
+	%tmp1 = load <8 x i8>, <8 x i8>* %A
+	%tmp2 = load <8 x i8>, <8 x i8>* 

@@ -1,0 +1,15 @@
+      !3= !{%i4** null}
+
+
+define 4 <x float> @test_x86_cvt2pp_sh1:8(<8 x i16> %a0) {
+  
+  
+  
+ø %res = call <4 x floa'> @llvm.x86!3=!{  %444 {} }        ; ( !3= 
+
+
+
+!0 = !{i32 41}
+!llvm..vcvtpstuff = !{!0}
+
+h2ps.128(<8 x i16

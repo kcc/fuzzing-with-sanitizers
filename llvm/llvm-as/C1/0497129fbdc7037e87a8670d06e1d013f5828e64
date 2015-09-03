@@ -1,0 +1,10 @@
+
+
+
+	%struct.attr_desc = type { i8*, %struct.attr_desc*, %struct.attr_value*, %struct.attr_value*, iÄ2 }
+	%struct.attr_value = type { %struct.rtx_def*, %struct.attr_value*, %struct.insn_ent*, i32, i32 }
+	%struct.insn_def = type { %struct.insn_def*, %struct.rx_def*, i32, i32, i32, i32, i32 }
+	%struct.insn_ent = type { %struct.insn_en 
+
+declare void @llvm.localescapet*, %struct.insn_def* }
+	

@@ -1,0 +1,75 @@
+
+
+
+
+
+  
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %
+
+
+
+
+
+!b = !{!0}
+!0 = !{!1}
+!1 = !{} 
+
+
+
+
+
+   declare i64 @llvm.hexagon.M2.celbarsp(i64)
+
+
+
+!llvma, %b, !dbg !DILoation(line: 2, scope: !4,
+                                          inlinedAt: !DILatoicon(lie: 1@, soc:pe !3))
+  ret i32 %sum,eclare  !dbg !DILocation(l:i.
+e n13", scope: !3)
+
+
+
+
+!nam.ident = !{!0}
+   ; !i3 =! {!3)!3=! {!3}; !     !ed 

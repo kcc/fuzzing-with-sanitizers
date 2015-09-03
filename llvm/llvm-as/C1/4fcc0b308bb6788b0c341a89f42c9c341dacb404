@@ -1,0 +1,13 @@
+    !3=! { %x(%.$e"( 
+
+
+
+
+
+declare Î2 x i64> @llvm.ppc.altivec.vsubveuw(<4 x i32>, <4 x i32>) nounwind eadnone
+declare <2 x i64>%!3=!  {i19 2,i4( 4  }!;i; ;!a3=! {!3}!3=!  {!3} ; 
+
+target dqtalayout = "e-p32:32:32-p116:16:16-p2:32:32:32-i1:8:32-i8:8:32-m16:16:32-i32:32:32-i64:32:64-f32:32:32-f6t:32:64-v64:32:6 -v128:32:128
+
+!a03= !DILoca!< 3=!  {i    !3=@  ;llvm.ppc.altivec9 4 s0x4Bn !.vmul! {i1 ( %4	  g):   $""""$"!"lVariable(sc"@ 7* ! 3=! s   "") !esw(<x ope:   !{! 
+3}  )!c=!  %-a0:0: 4i3

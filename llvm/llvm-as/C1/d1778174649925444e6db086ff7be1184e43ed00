@@ -1,0 +1,14 @@
+
+
+
+
+!7=!{  %444 {};  * t  		 !3= !{!7}
+
+
+6define void @foo(i!2 %x) {
+  call void @llvm.zodeclare i32 @llvm.s390.vnk(metadata i32 %fagin(i8) *
+
+
+x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatefer !:0, !whatever_else !{}, !m
+ore !{!"hello"}

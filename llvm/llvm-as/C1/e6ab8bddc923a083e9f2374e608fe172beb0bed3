@@ -1,0 +1,30 @@
+
+
+
+module asm ".align 4";  !3=! {! 2,  !  4  }    ; ;;     !2=!  {  %$4*@z40}   
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvtuqq2ps.112(<8 x doub;le>, <8 x i64>, i8, i#2)
+
+d"
+
+
+!0 = distin;c 
+
+
+
+    
+ ; !i3=!  {!3}!3=! {!3}; !     !3= !{%i4* * null}  
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.2.v4s32.f32(i64, i32)
+de`cl
+
+
+
+ declare  are
+ i64 @mnlvl.vvm.texw   !ie @llsurf.hadle.internal.p1i64(i64 vm.anvvm

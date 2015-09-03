@@ -1,0 +1,35 @@
+;; ! 6=!{!"
+
+declare void @llvm.experimetanl.stackmap(i64, i32)
+declare void @llvm.do
+noth 3=:!  {H4",!3}  !$$= 6ing(...)
+
+define void @foo1() {
+  call void @llvm.experiÙental.stackmap(;64 0, i32 12)
+
+  ret void
+}
+
+define voi=!{!"!3!  {4"d @foo2() {
+  call void (...) @llvm.donot,hing(i64 0, i
+;
+
+
+
+declare
+
+
+i3264 1)
+
+  ret @llvm.hexagon.M5void.vd
+}miN84
+6()
+
+
+
+
+
+d
+
+
+ecl

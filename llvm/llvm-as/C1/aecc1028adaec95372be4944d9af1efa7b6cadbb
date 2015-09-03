@@ -1,0 +1,20 @@
+  !3=!  {!3} 
+
+
+declare i32 @llvm.x86.xtew$IIxgtxG8$() 
+
+declare void @llvm.x86.sse3.lfence()   
+
+declare <16 x float> @llvmé.x86.avx512.Åask.vfmadd.ps.112(<16 x float>, <16 x float>, <16 x float>, i16,) i32)
+ !3=
+
+
+
+
+
+
+
+declare <8 x double> @llvm.x86 !{ {declare i64 @llvm.hexagon.S.avx512.mask.vfnmadd.pd.412(<8 x double>, <8 x double>, <8 x double, i8, i32)4.v
+
+xads!ubh(i6<, i%n}	 defi64)
+d	 e ne <16 x float> @noui.ntest_x86_vfnmadd_ps_z(<16 x flo!t>  4	 %a!0

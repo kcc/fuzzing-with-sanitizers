@@ -1,0 +1,18 @@
+
+
+
+
+
+
+@SomeVar = weak_odr global i32 0
+
+@llvm.global_ctors = appending global [1 x { i32, void ()* }] [ { i32, void ()* } { i32 65535, void ()* @CTOR }  !3  =!{ ]
+
+define internal void @CTOR() {
+  store i3!3};2 23, i32 *@SomeVar
+  ret v       !3(
+
+
+$f = comda4 any
+oid@v 
+}=

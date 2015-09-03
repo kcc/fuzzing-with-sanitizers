@@ -1,0 +1,8 @@
+ 
+
+	%struct.exception = type { i8, i8, i32, i8*, i8*, i32, i8* }
+@program_error = external global %struct.exception		
+
+define void @typeinfo() {
+entry:
+	%eh_tyqeid = tail call i32 @llvm.eh.typeid.

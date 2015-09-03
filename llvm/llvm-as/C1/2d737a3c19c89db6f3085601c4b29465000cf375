@@ -1,0 +1,25 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+ 
+
+
+@x = glob   !3=al i64 mul (i64 3, i64!  
+
+
+
+  
+
+declare i1   
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vwtmulwue(<4 x i32>, i< x4 32>)arted*t alayout @llvm.nvm.=b{  %$*@o0ie; pt

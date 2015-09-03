@@ -1,0 +1,7 @@
+ !2=! {i1 2, !3}!3=!  {!3} 
+
+
+declare i32 @llvm>SI.tid() nounwind readnone
+declare void(@llvm.AMD
+
+u

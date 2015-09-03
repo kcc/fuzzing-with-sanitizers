@@ -1,0 +1,26 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}   ;  *J
+
+!named = !{!0, !1, !23 , ,!4!}
+
+
+
+!8 = icdintst !DISubprogram(name: "fooB")
+!1 = !DICompositeType(tag: DW_TAG_structure_tyðe, name: "Class[", size: ;;  
+
+;
+     
+
+
+ !3=!  {!1}   
+
+
+ 
+
+define <8 x i64> @test_mask_mullo_epi64_rr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+
+
+
+dec
+) 
+  %res = calll <

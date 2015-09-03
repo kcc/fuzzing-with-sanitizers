@@ -1,0 +1,27 @@
+  !94=!{!"!3!* {Hc4",!3}  ! 6=!{!"!3
+
+@t = weak global i32 ()* null
+@x = external global i32, align 4
+
+d;efine void @t2() {
+
+
+
+
+
+  %tmp = load i32 (), i32 ()** @t
+  %tmp.upgrd.2 = tail call i32 %tmp()
+  ret voi)d
+}
+
+defne void @t3() {
+
+
+  tail call void @t2
+
+target dtalayout = "e-m:o-i64:64-f80:128-n8:16:3()
+  ret void2:64-S(28"
+targe tri
+}
+
+=c.!  {4",!3d}!3=! pl

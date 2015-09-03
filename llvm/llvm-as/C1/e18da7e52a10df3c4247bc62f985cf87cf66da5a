@@ -1,0 +1,39 @@
+   
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.value(metadata i32* %s, i64 0, metadata !DILocalVariable(scope: !1), metadata !"
+
+
+!0 = !DILocalVariable(scope: × "), !dbg !DILoca
+
+!3=!  {} 
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.lsr.i.r.ned(i64,      i32)       !3=
+! {    %$()
+
+
+
+
+
+ 
+dec*@!0}  
+
+
+
+
+ 
+
+
+0xM800lare i32 @000
+000000084*44000llvm.x86.av0x2.p40slliz.()
+td

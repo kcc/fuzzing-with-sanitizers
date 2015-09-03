@@ -1,0 +1,50 @@
+
+
+
+
+ 
+%X = type { i32 }
+@G = global %X { i32 4
+ 
+}
+
+
+declare void @llvm.x86.she.sfenZde()
+
+
+%t = type opaque
+@x = global %t undef
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 Dbad1() !ppof !0 {
+ it3 er efine void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  o ievtzd
+}
+!0 = !{i8 
+2 0
+}
+
+ !0 = :!{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1
+dec = !{!"fulanr

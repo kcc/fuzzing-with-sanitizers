@@ -1,0 +1,8 @@
+!2=!{%64    {}nd 0!3= !{  <    x  %444004084408   !3=! { !0,  i4 4 4   }       ;; !
+
+@X = external global i8
+@Y ½ external glob010444al i8
+!Z = external global i8
+
+@A = global i1 add (i1 i*mp ult (i8* @X, i8S @Y), i1 icmp>0! ult (i8* @X, i8* @Z))
+

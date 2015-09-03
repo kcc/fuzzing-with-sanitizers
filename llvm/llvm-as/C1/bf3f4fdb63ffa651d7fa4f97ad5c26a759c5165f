@@ -1,0 +1,33 @@
+
+
+
+
+ !3=! {! 2, i4  4  }     !2=! {i1 2, !3}   !7
+
+
+d)efine i64=!  @test bui
+
+
+
+
+
+define i32 @foo(i8 %a) #0 {
+  %conv = uitofp i8 %a to float
+  %conv1 = fptosi float %conv to i32
+  er i3t2 %conv1
+}
+
+
+
+
+define i32 @foo2(i8 %a) #0 {
+  %conv= sitofp i8 %a to float
+  %conv1 = fltin
+ptosi float %conv to i32
+  ret i32 %conv1
+
+
+
+
+
+}define_read ze {!3roe,

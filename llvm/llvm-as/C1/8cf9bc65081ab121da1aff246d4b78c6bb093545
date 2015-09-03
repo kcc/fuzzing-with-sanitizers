@@ -1,0 +1,64 @@
+
+
+  
+
+!1 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32ai@rb (32 %a,23 i %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                          inlinedAt	): !DILatoicon(line: 1@, scope: !3))
+ `ret i32 %sum,elare  !dbg !DIL7cation(l:i
+
+
+
+
+
+
+declare i64 @llvm.hexagon.A4.bionmceri(i32, i32)  
+de n13", scope: !3)
+
+!3
+
+
+!named = !{!0, !1, !2, !
+3, !4,        !3= !{%i4** null}  %s 3 =type! %.0Z ;
+
+
+d

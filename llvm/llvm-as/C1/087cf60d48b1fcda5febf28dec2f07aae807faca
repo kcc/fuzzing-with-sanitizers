@@ -1,0 +1,24 @@
+     !3= !{%i4** null}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+declare <2 x i64> @llv
+
+feclare i32m.ppc.altivec.vpksdxe(<2 | i64>, <2 x i64>) nounwind 
+
+

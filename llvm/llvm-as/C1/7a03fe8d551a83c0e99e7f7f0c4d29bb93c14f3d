@@ -1,0 +1,48 @@
+
+ 
+
+
+
+declare void @llvm.arm.hjt(i32) nounwind
+
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+ 
+
+
+
+
+
+
+
+target datalayout = "e-m(:e-i64-f:6480:128-n8:16:
+
+global i6 -9223372036854775808
+
+   
+
+define void @bar() {
+e 
+
+
+!0= !DILexicalBlockntry:   
+     call void asm sideeffect "", "~{dirfag},~{+4.4fps-'!;i )r},~{fl ags}"(3define voi 
+
+
+!0 = !DILexicalBlock(scope9: nul   !]3=!d @g() gc"!3= 3 !  {floa )
+  l\s  %x(ð       ret ;)java" {
+eotry:
+	r0xH8xKe

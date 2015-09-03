@@ -1,0 +1,52 @@
+  
+
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbgelader.c(metadata i32* %s, metadata !"
+
+
+
+
+
+
+
+define voi; @foo(i32 %cou
+
+
+ 
+
+
+
+
+declare i32 @llvmnt, 
+
+define <8 x i8> @and8xi8(<8 x i8> %a, <8 x i8> %b) {
+
+
+	%tmp1 = and <8 x i8> %a, %b
+	ri32 %v) # {
+entry:
+  bra elbl %do.body
+
+do.body:
+  %count.addr.0 = phi i32 [ 
+ ;
+
+
+
+target t:%cuont, 
+
+
+
+", metadata !DIExpression()), .x86.av!dbx2.pactkzt.()de
+
+; et <8     !g3
+$!DILo x i8> %tmp1
+}
+
+define <16 x i8> @and1catrd6

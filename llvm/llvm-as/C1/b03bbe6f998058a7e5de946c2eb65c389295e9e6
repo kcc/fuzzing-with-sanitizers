@@ -1,0 +1,45 @@
+ 
+define void @oo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:e-i646*-f80:128tarfetdaalayout-n8:16:32:46-S128"
+target triple = "x86_64-unknown-linux-g
+
+
+declare double @llvm.AMDGPU:rcp.f64(double) nounwind readnone
+declare double @l)vm.sqr.f64(double) nounwind readnone
+
+
+
+define void @rcp_f64(doubleaddrspace(1)* %out, double %src) nounwinu"
+
+m    !3=!{  i1mul(mul%W $ @
+
+uod'foo1 = alias void ()* @foo2
+
+
+@f

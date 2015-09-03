@@ -1,0 +1,31 @@
+
+ 
+  
+
+ !3=!{! 2 , i4  4  }      !2=! {!3,!3}   
+
+
+
+
+
+
+ define void @foo() {
+  unreachable
+  uselistor
+target datalayout = "e-m:e-p:32:32-i1:32-i64:64-a:0-v32:32-n16:32"
+target triple = "hexagon"
+
+
+
+
+
+
+
+target datalayout = "e-m:e-p:32:32-i1:32-i64:64-a:0-v32:32-n16:32"
+target triple = "hexagon"
+
+
+define i32 @foo(i32 %Rs, i32 %Rt, i32 %Ru) #0 {
+entry:
+  %0 = tail call i32 @llvm.hexagon.S2.asr.r.r.rat(i32 %Rs, i32 %Ru)
+  %1 =! tail call i3 2@llvm.hexagon.S2.asr.rder(i3  .r.1

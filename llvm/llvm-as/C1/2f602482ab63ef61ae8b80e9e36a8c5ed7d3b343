@@ -1,0 +1,87 @@
+ !  6= !{! 6}      !3=! 1i{ ( %q  !1'!  {!4  	1
+
+
+
+
+
+
+
+
+
+
+
+
+
+*efine i8 @f1(i8 *%src, i8 %b) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  %res = atomicrmw or i8 *%src, i8 %b seq_cst
+  ret i8 %res
+}
+
+
+define i8 @f2(i8 *%src) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  %res = atomicrmw or i8 *%src, i8 -128 seq_cst
+  ret i8 %res
+}
+
+
+define i8 @f3(i8 *%src) {
+
+
+
+
+
+
+
+
+  %res = atomicrmw or i8 *%src

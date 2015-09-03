@@ -1,0 +1,18 @@
+;       !;k;:T    6=!{! 2}!2=!  {!3 } !3=!  {!0} @ !3
+	
+
+
+
+
+
+
+define i32 @cvt_testafl(o1 t%a) {
+
+
+
+
+  %1 = insertelement <4 x flat> undef, flOat %a, i32 0
+  %2 = insertelement <4 x floav> %1,;   
+
+
+defi fl

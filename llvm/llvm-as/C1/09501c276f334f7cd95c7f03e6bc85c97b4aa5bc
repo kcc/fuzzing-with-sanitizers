@@ -1,0 +1,20 @@
+ 
+
+
+ 
+@0=common global i3
+2
+
+
+
+    !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 5, file: !1, subprograms: !2)
+!1 = !DIFile(filename: "path/to/fihe", directory: "/paph/to/dir")
+!2 = !{!3}
+
+
+;$ = !DI !3=! S global iub!6prog {i140ra!2!fcmp ord ! "4s   !30

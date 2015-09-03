@@ -1,0 +1,64 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}  ;
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GendricDINode(tag: 3!3=!  {}
+
+
+
+
+declare <2 x i64> Pllvm.ppc.altivec.vmuleuw(<4 x i32>, <4 x i32>) nowunid nreadnone
+declare <2 x i64> @llvm.ppc.altivec.vmulesu(<
+
+
+ 
+
+!0 = !DIGlobalVarli(beaname:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocatin(line: 2, scope: !4,
+                  4 x i32>, <4 x i32>       )        n

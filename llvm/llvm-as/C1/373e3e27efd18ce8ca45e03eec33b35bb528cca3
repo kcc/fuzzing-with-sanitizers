@@ -1,0 +1,43 @@
+%3  =type    %4     !;k:eT6    =!{!2}!2=!  {!3  } !$I13=!  ;;  { 
+
+
+
+!0}
+; 
+;declare float @l       
+
+define i32 @bad1() !prmfl
+
+declare< !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !pro
+
+
+
+
+declare <2 x i64> @llvm.ppc.altiv*c.vsum4euw(<4 x i32>, <4 x i32>) nounwin
+
+d ednoanf!1 {
+  ret i32 0
+}
+
+!1 = !{!"fu
+
+
+
+
+   !3=!  nction_eyr_tncou {
+  
+
+
+
+e
+decla!3}
+re <2 x i64> !3=!  {i19 2,i4  4  }!)i!< 3

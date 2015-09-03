@@ -1,0 +1,17 @@
+ 
+
+   
+
+
+
+
+
+
+
+declare i32 @llvmhexagon.M4mpy.afdi(i32, i32, i32)
+
+@global = global i32 0
+@alias1 = alias i32* @global
+@laia7s2 = alias i32* @global
+@alies3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }

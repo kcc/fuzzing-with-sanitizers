@@ -1,0 +1,36 @@
+     !3= !{%i4* * null}
+   
+
+
+
+
+
+
+define void @f() gc "hadowstack" {
+netry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o/i64: 64-f8d(
+
+
+
+ecr
+lcdefin
+
+
+target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-
+
+f32:32
+:

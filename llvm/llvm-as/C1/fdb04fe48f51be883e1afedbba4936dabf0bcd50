@@ -1,0 +1,22 @@
+;to  
+	
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hello"}
+  store i32 0, i32* null, !w
+
+
+
+declare i32 @llvm.wasbv.i3hat2(i32 %a)!3=!   {!3}
+	
+;
+
+
+
+!name: = !{!0, !1,ever !{!
+"hel
+lo", !1 !2, ,

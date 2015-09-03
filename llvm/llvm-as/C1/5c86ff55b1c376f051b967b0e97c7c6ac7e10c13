@@ -1,0 +1,29 @@
+;F
+
+
+
+; n 
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Modul 
+
+
+define i32 @test_x86_rdfsbase_32(
+
+
+
+@bk = external global i32               
+@huftse x= ternal global i32   `        
+
+define i32 @inflate() {
+bb0:
+        br label %bb2
+
+bb2:            
+       %) {
+  
+  %res =call y32 @e")llvm.x8

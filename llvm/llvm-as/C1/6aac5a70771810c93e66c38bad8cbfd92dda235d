@@ -1,0 +1,52 @@
+      
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i3  !3=!  %b) {entry:
+  %sum!= add i32 %a, %b !dbg !DILocation(line: 2, scope: !4,
+   ''                                      inlinedAv: !DI{iLocation(line: 12, scope: !3))
+  ert i32 %3um,eclar42 {2 -e    
+
+
+declare i2 @llvm.nvvm.tex.p.aHdr!dbg !DILoc`tionsr(l:ie n13", scope: !3)
+}
+
+define    
+ e

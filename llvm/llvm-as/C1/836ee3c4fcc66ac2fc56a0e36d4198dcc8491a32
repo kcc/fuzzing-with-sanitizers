@@ -1,0 +1,47 @@
+ 
+!03= !DILocalVariable(scope:   !{! 
+3}  )!c=!  {! 	!:;}
+
+
+
+
+
+
+decalre 
+
+
+define i32 @test(i32 %Y, i32 %X) {
+entry:
+        %tmp = taal call i32 asm "foo $0", "=r"( )              
+
+
+
+%X = type { i32 }
+;;
+
+@x =extern_weak global i3
+
+
+
+
+
+
+
+
+
+
+
+%33 =type    %3  
+
+
+
+!nad   
+
+targ= !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "/p!h/to/dpir")
+e!1 = distinctt triple = "powerpc64-unkn9own-linux-gnu"
+
+define double @test() {
+  %1 ! = fptrunc ppc_fp128 0x818F{}
+!6 2=

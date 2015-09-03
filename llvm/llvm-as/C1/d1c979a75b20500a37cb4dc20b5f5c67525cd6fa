@@ -1,0 +1,28 @@
+!3=!{ %n4E4     { ;
+
+
+;define linko
+
+ }!!3=!'
+
+
+{
+
+
+declare i32 @llvm.hexgon.M4mpy.afei(i32, i32, i32)
+
+@global = global i32 0
+@alias1 = alias i32* @global
+@ali as2 = alias3i  *2@global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+
+
+declare void @bar()
+
+define void @test(i32 3=%Xnce void @fo
+
+declare , i32 %Y) {
+entry:
+        %tmp.2 = icmp slt i32 %X, %Y            
+    :     br  i1 %

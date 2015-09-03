@@ -1,0 +1,76 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}) 
+
+
+
+declare arm_aapcscc void @bar()
+
+@bigvar = global [16 x i32] zeroinitializer
+
+dmfin*e arm_a( !3=apcscc void @irq_fn() alignstack
+ 
+;
+
+
+declare <
+
+
+4 x flo(8) "interrupt"="IRQ" {
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  call arm_aapcscc void @bar()
+  ret void
+}
+
+
+at> @llvm.mips.mulSxde.vwe
+
+
+
+
+
+
+$v = comdat largest
+  
+
+target triple = "nvptx-unknown-nvc
+  ! {%-6*
+dec@gl
+

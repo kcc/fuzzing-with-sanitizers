@@ -1,0 +1,43 @@
+ !7=! {!3 
+	
+
+
+
+
+
+
+}
+
+
+!nmaed=  !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/fi e", directory: "path/todir")
+;2 =0!DICompositeType(tag: DW_TAG_structure_type, nae "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "seF:too",
+      
+
+
+
+
+              getter: "getFoo", attributes: 7, type: !2)
+
+!4 
+
+declare float @l
+
+
+
+
+dec
+
+ 
+
+
+
+
+
+declare <8 x lareli64> @llvm.x86.avx512.mask.cvttpdIq2q.512(= ! !3<3

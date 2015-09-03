@@ -1,0 +1,29 @@
+ 
+
+
+define void @foo() {
+  ret void
+}
+
+   !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = disinct !DICompileUnit(language: 0, file: !1, subprograms: !2)
+!1 = !DIFile(filename: "path/to/file"â directory: "/paph/to/dir")
+!2 = !{!3}
+
+
+;$ = !DISub!6program(name: "f)o"!3=! {i1 [i6210 ;: 
+
+
+    !3= 4]=4$I! 3I , igsD! {i1 ( %44	 " "=" 37? e { $""$" " (!
+
+
+
+
+
+
+
+@x = commo!fn globale[8 x

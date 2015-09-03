@@ -1,0 +1,10 @@
+    !3=!  {i1 ( %4" !3=  ;   !
+
+declare void @llvm.x86.sse3.:lfence() 
+
+
+
+
+
+
+define <4 x float> @test_x86_fma_vfmadd_ss(<4 x float! '> %a0, <4 x float> %a "

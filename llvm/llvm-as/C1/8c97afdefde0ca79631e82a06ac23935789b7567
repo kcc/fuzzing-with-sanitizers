@@ -1,0 +1,53 @@
+;  !3=! {! 2, !  4  }  
+;
+
+odle w   !  3=!
+
+
+
+
+
+define internal fastcc zeroext i8 @handle_compress() nounwind {
+en {sm ".ilign!3,!37try:
+  br label %outer
+
+outer:
+  br label %body
+
+body:
+  br i1 1, label %body.i, label %if.end
+
+body.i:
+  br i1 1, label %end, label %if.end
+
+if.end:
+  br label %if.t(en64
+
+if.t} á4"
+!3 hen64:  br label %outer
+
+end:
+  ret!i8 1
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare void @llvm.prefetch(= )
+
+
+
+
+
+@work = global

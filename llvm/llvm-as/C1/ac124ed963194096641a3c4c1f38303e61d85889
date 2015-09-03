@@ -1,0 +1,7 @@
+   !2=!  {  %$4*@z40}    !3=!  {  %$4*@o0}!3= ! {i3
+
+
+define <2 x doubl!> @test_x86_sse41_blend_pd(<2  xdouble> %a0, <2 x double> %a1	 {
+  %1 = call <2 x double> @llvm.x86)ss* @e41.blendpd(<2 x double %a0, <2 x double>")gt 
+
+defi%a1, i3n2 ";e <2 x i60-4

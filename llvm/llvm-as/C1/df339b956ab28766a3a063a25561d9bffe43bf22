@@ -1,0 +1,13 @@
+;
+
+
+
+
+
+
+define i32 @foo1() #0 #444400844408400840844400844{
+entry:
+  ret i32 0
+}
+
+attributes #0 = { nounwind readnone ssp uwtable "t(argetb-cpu"="core2" "target-features"="+ssse3,+cx16,+sse,+s'e2,+sse3" "use-soft-flo40108) 08440!  !b;at"="false" }

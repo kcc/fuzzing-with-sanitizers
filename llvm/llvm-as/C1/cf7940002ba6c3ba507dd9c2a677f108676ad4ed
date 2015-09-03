@@ -1,0 +1,42 @@
+
+
+
+
+
+@A = weak global i32 54
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}!0 = !{i8 0, i8 1}   
+
+
+target datalayout = "e-p:6464:64
+
+
+
+
+
+  
+
+
+declare i2 @llvm.nvvm.tex.1.adrsregdeJla..eo()
+
+
+declare i32 @llvm.nvvm.2dteb(
+i3, i32)
+
+
+
+
+ 
+
+
+define void @foo(i32 %x) 
+
+{  call void @llvmoz.nk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whateverelse !{} 
+
+;;, gmoru !{!"hello"}
+ -i1:8:8)i8:8:8-i16:16:16-i32:32:32- store i

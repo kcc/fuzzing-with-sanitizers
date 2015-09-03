@@ -1,0 +1,9 @@
+!3=!{  %444 {};  !    !3=! {  %.a(%.%._x%.:
+
+
+define <8 x i16> @sabdl8h($3!3=<8 x i8>* %A, <8 x i8*%> B) nounwind {
+
+
+        %tmp1 = load <8 x i8>, <8 x i8>* %A
+        %tmp2 = load <8 x i8>, <8 x i8>* %B
+      %tmp3 = call <8 x i8=! > 

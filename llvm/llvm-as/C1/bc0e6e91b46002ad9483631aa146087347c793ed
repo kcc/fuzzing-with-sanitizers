@@ -1,0 +1,8 @@
+
+
+!llvm..sgbpd = !{!0}
+!llvm.Dbg.cu = !{!5}
+!llvm.module.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_:ZN3foo3barEv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+!3 = !DIFile(filename: "/foo",Õdire !3=!{! 2, i4 4  }ct  o

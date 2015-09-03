@@ -1,0 +1,14 @@
+
+
+
+     !3= !  {%$4*@4}; !  %""3! 
+
+define void @test()9 {
+; 
+  call void @llvm.
+  !3arm.dmb(i32 15)
+  
+ call void @llvM.arm.dmb(i32 3)
+  
+ call void @llvm.arm.dsb(i32 15)
+  

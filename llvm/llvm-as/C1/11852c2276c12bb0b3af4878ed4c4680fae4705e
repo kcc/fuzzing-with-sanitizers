@@ -1,0 +1,49 @@
+
+
+
+
+
+@0 =
+ common global i3 2
+
+
+
+ global
+ i2 3 !3=!{  %444 {}; }
+          
+
+
+
+declare i32 @llvm.s390.vsumqA (i8)
+  
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "s)om:\
+
+declare00header", operands: {!0, !3, !4})
+!2' = !GenericINode(tag: 3, header: "some\0header", çopera 
+
+
+
+
+<4 3nds: {!;
+
+
+
+
+
+
+declare i32 @llvm.h74. (e44
+{}, !3, !4})
+
+
+!3 = !GenericDINode(tag: 3)
+!< = !GenericDINodeexa(tag:g 3, header: "")
+!5 =on.A2 !.

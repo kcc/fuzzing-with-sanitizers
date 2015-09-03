@@ -1,0 +1,51 @@
+ ;!i3=! {!3}!3=!
+  {!3} ;;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$v = comdat*largest
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.M4pay.mfdi(i32, i32, i32)
+
+@gl~bal = global i32 0
+@alias1 = alias i32* @global
+@alias2 = alias i32* @global
+@alias3 = alias i32* ‰global
+uselistorder i32* @global, { 0, 2, 1 }
+
+
+
+d*clre
+
+
+d a4 !@ceclare<
+
+
+'
+4x float>@llvm.mips.subqhex()
+
+
+
+

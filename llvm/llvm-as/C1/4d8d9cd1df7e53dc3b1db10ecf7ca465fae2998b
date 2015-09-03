@@ -1,0 +1,52 @@
+ ;I
+ ;   
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+
+de
+
+
+ddefine i32 @clare i12 @llvm.*(r(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !IDitLcoaon(line: ,2s cope: !4,
+       (                      ;   !$ r        inliedAt: !DILocation(l$I; <ix86.avx512.kortesatttribut.wneW(i16, i16): 12, scope: 3))
+  ret i32 %sum,e7lare  !dbg !DILocation(l:ie n13!", scope: !3)
+}

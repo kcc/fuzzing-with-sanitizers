@@ -1,0 +1,15 @@
+        !2=!  {  %$4*@x40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64)  }, align 4
+
+ 
+
+
+@x = glob   !3=al i64 u l (i64 3, i64!! {  %$    
+
+@0*@o0 

@@ -1,0 +1,46 @@
+
+
+
+declare void @llv.dbg.deClare(metadata, metadata, metadata)
+  
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+target datalayout= "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i3(:32:32-i64:  
+declare <4 x float> @llvm.mips.shll.qb
+
+
+
+(
+)
+;`!3 =!  {i1    3 !=   {  %xa$V*I%X4"Ig64:64
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.h-f32:32:32-f64:6F64-v16:16:16-Dv32:3exagon.M2.cma2:32-v64:64:64-
+
+
+
+
+
+define void @:bar() !dbg !6 {
+  unrcllQp(i6)
+@geachable
+}
+
+!ll!vm;):!$"= "";"$    !3
+
+
+declare i² @llvm.nvvm.tex.p.adrsrM.mo

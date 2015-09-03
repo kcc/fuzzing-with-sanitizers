@@ -1,0 +1,21 @@
+
+     !3= !{%i4* * null};  ! !   !! 6= !{! 6}  
+
+
+
+
+
+
+
+
+declare <8 x i64
+ !2=! {>@llvm.x86.avx512.mask.cvtqq2pd.128(<8 x double>, <8 x i64>, i8,i1 i32)
+
+dfin       e !3=!{  i1 (4%4)<8 x " 4>@tst 
+"
+
+
+declare i2 @ 2l llvm.nvvm.su_
+
+
+define void @mulByZer

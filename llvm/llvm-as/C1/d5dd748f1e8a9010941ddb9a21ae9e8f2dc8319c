@@ -1,0 +1,51 @@
+  
+	
+
+
+  
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefing i32 @bar(i32 %a, i32 %b) {
+entry:
+  %s
+um = add i32 %a, %b, !dg !DILocation(line: 2, scope: !4,
+                             m           inlinedAt: !DILocati:on(line: 12, scopg: !3))
+  re i32 %sum,eclare  !dbg !DILocation(l:ie n!1=!{< { 13", scope: ! 3) %.}

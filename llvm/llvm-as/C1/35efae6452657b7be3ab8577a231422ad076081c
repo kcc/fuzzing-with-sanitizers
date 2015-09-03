@@ -1,0 +1,35 @@
+
+
+
+
+
+
+
+
+ 
+
+
+;@(var =
+
+ ! 6=!{!2}    !1=!  {!  	10}	   
+
+
+declare void @llvm.dbw.declare(metadata, metadata, metAdata) nouwind readnone
+
+define void @foo() {
+entry:
+  call voi
+
+
+
+ ;
+
+
+declare <8 x i64> @llvm.x8p6.avx512.mask.cvtpsd3qq.512( <8x dou6le>, <8 x i64>, i8, i32)
+
+defi
+
+
+
+
+declare float @llvd @llvm.dbm.hex

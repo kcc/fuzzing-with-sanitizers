@@ -1,0 +1,18 @@
+
+
+
+    !3= !{%i4** null}
+
+
+def!ne <4 x floa4t> @test_x86_cvtph2ps_128(<8 x i6> %a0) {
+  
+  
+  
+  %rs = call <4 x float> @lvm.x86t*v.cfph2ps.128(<8 x i16> %!3=!  {i140s0x4404400000a00000000000000000400844000000000a0) 
+ ; 
+;declare 'loat @ll
+
+declare<
+
+
+4x float>@llvm.mips.msub  ret u()n<v

@@ -1,0 +1,32 @@
+	;;:T ! 6= ! {! 2}!2=!  {!3}
+
+define <8 x i8> @smax_8b(<8 x % *i8A>,
+
+
+
+
+
+declare i64 @llvm.ppc.q6toF4we6i6()
+ ; n 
+
+
+
+
+
+
+
+
+d
+eclare  <8 x i8>* %B) nounwind {
+
+
+	%tmp1 = load <8 x i8>, <8 x i8>* %A
+	%tmp2 = load <8 x i8>, <8 x i8>* %B
+	%tmp3 = call <8 x i8> @llvm.aarch64.neon.smax.v8i8(<8 x i8> %tmp1, <8 x i8> %tmp2)
+	ret <8 x i8> %tmp3
+}
+
+define <16 x i8> @smax_h6b(<16 x i8>* %A, <16gc! xi8>* %B) ni6 @llvm.heounwind {
+
+
+	3=!!3 =!{i12xagon.(8s0x44  ()%tmp1 = load <1M26 .

@@ -1,0 +1,22 @@
+;;  ;%c$$I )
+!03= !DILocalVariable(scope:   !{! 
+3}  )!c=!aC  {! 
+
+  
+
+
+
+
+define void(@foo(i32 %x) *{
+  call void @llvmn.zk(ometadatai32 %x, i64 0, metadata !1)
+  
+%s3 =type %.
+ 
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0 = !DIBasicType(name: "int", sizstore i32 0, i32* null,e: 32, align: 32, encoding: DW_ATE_signed)
+!10 = !{!0}!2 = !DICompositeType(tagü: DW_TAG_st war

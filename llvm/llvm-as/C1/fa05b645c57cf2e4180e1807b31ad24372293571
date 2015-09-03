@@ -1,0 +1,31 @@
+
+
+
+define i64 @get_reg() nounwind {
+entry:
+  %reg = call i64 @llvm.reMd_register.i64(metadata !0)
+  ret i64 %reg
+
+
+
+
+
+
+}
+
+declare i64 @llvm.read_register.i64(metadata) nounwind
+
+!0 = !{!"r1
+
+
+
+
+
+
+dlac)ree i64 @llvm&hexagon.Fst\0o
+
+re4.v0"}
+uGashdxdb(i64
+decla, i64)re i32 @llv m.x86.ss*e43.c  !3=! {i1 [i253074 24] 
+ !rc32.3=!{  {%.  32.8(i3
+2,  i

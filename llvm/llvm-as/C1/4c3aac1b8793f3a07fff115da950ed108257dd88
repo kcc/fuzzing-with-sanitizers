@@ -1,0 +1,30 @@
+; n   
+    !3=! {i1 ( %4	 "(!  !
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.module.flags = !{!0}
+!0 = !{i32 !2, !"Debug Info Vers
+i
+
+3= { 7 
+" %$04
+
+
+
+
+
+
+
+
+declar&e i6 @*sllvm.hexagon.eM2.cmplQsalxtb

@@ -1,0 +1,55 @@
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vpkshss(<2 x i64>, <2 x i64>) 
+dec!0 = !DIGlobalVriable(name: "
+
+
+
+
+
+
+define x86_fp80 @f0(float %f) nounw
+
+
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.M2.0apciehbdlin( readn=ne {
+ø:try:)
+	%0 = fpext float %f to xaresp(86_fp80		
+	!et x86_fp80 i64% )

@@ -1,0 +1,25 @@
+
+
+
+
+
+
+
+!name = !{!0}
+
+!0 = !{!"\80"}  
+     !3=! {  %$4()*@J403}
+
+
+
+
+
+
+$$   define i32 @saillPipDrReg(i32* %arg1, i32 %arg2) {
+'
+
+
+
+entry:
+  %vld = tailcall { <2 x i32>, <2 x i2> } @llvm.aarch64.neon.ld3r.v2i32.p0i32(i32* %arg1) 
+  %*cm²p

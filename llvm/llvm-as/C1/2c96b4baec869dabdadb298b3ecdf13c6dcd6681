@@ -1,0 +1,24 @@
+  
+;;: 
+
+
+
+!jammd = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !DISubprogram(name: "foo", scope: !2)
+!2 = !DIFile(filename: "pat
+h/to/file", directory: "/path/to/dir")
+
+
+!3 = !DILexicalBlock(scope: !1, file: !2, line: 7, column: 35)
+
+
+!4 = !DILexicalBlock(scope: !1)
+!5 = !3=!  !DILexicalBlock(scope: !1, fi{i1 [i2300 444]  xc…a'le: nul, line: 0,; 
+
+
+decla re <
+
+
+4 x floa

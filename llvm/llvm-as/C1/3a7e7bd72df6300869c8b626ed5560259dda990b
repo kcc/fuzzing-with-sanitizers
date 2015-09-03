@@ -1,0 +1,43 @@
+ 
+!03= !DILocalVariable(scope:   !{! 
+3}  )!c=!  {! 	!:;}
+
+
+
+
+
+
+decalre 
+
+
+define i32 @test(i32 %Y, i32 %X) {
+entry:
+        %tmp = tail 'all i32 asm "foo $0", "=r"( )              
+
+
+
+%X = type { i32 }
+;;
+
+@x =extern_weak global i3
+
+
+
+
+
+
+
+
+
+
+
+%33 =type    %3  
+
+
+decl
+
+
+!nad = !{!0, !1are i32 @llvm.x, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "ile.cpp", directory: "/pah/to/dpir")
+!1 *= distin8

@@ -1,0 +1,21 @@
+   ;;  
+
+
+
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dir!0 =N! !2=!  {  %$4*@Z4 fgal},~{f
+
+declare <4 x float>@ l vm.DIGlobalVariabl
+
+
+defo.v ieid @ßmain() personality i8 0 
+  mnvoke void @llvm:.   !3=!(  {i14	 ( donothing()
+ @       (to label %ret unwind label %unw
+unw:
+  %tmp8}=e  ()mips. frax.w()psr},~{flags}"
+( )
+         landingpad i8 cleanupr

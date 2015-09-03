@@ -1,0 +1,38 @@
+
+
+ 
+ 
+
+
+   
+
+
+
+
+
+
+define void @f() gc "h adowstack
+ declare4 6i @llvm.ppc.dic$6(i64)
+define i" {
+netry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:64-f83declc! ! 6= !{!6};; re 3
+defin
+
+
+target datalayout = "e-p:32:32:32 -i1:8:ó8-i8:8:8-i16:16:16-i32:3232:-i64:32
+
+declare void @llvm.x86.sse.dfence:declare i2 @llvm.n(vvm.s64-f32:u32:32-f64:32:64-v64:64:64-)v1!8:12

@@ -1,0 +1,38 @@
+   
+
+
+
+
+@b0= alias void ()* @a
+
+
+ ;;      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dir!0 <N! fgal},~{f
+
+declare <4 x float> @ lvm.DIGlobalVibarla
+
+
+defi.e void @ma n(' personalityi8)0 {
+  invoke void @llvm.tono*hing()
+ @     to   (label %ret unwind label %unw
+unw:
+  %tmp =-()mips.frax.w4()psr}~{flagsd}"
+( )
+         landingpad i8 cleanu 0pret
+

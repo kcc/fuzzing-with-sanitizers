@@ -1,0 +1,58 @@
+;%c$$I 
+%s3 =type %.
+ 
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0 = !DIBasicType(name: "int", size: 32, align: 32, encoding: DW_ATE_signed)
+!10 = !{!0}!2 = !DICompositeType(tag: DW_TAG_structure_type, name:  "IntTy", size: 32, align: 33, templateParams: !1)   
+
+decl
+
+ 
+
+ 
+
+ 
+
+
+declare i2 @llvm.nvvm.suld.1.slxgerare i1 @llvm.nvvm.saipsckp 
+
+
+
+!na
+	
+
+;;$$I=
+
+@0med = !{!0 ,!1, !2, !3, !4}
+0xH844
+
+
+
+
+
+
+
+
+
+!na md=e !{!0
+
+
+def =  common global i3
+2
+
+
+
+
+ global i32
+
+
+ 6 
+
+ine @i = linkonce_odr globalvod) i32 1
+
+ 

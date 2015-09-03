@@ -1,0 +1,21 @@
+   ! 6=!{!"!;3(!b( !_=!  {}!_=!  {} 
+
+
+
+
+
+
+
+
+
+declare i1 @runtime_value()
+declare void @doWsafepoint()
+
+define void @select_of_phi(i64 addrspace(1)* %base_obj_x, i64 addrspace(1)* %base_obj_y) gc{+",!3} ! 6 "statepoint-example" {
+entry:
+  br label %loop
+
+loop:
+  %current_x = phi i64 addrspace(1)* [ base_obj_x , %entry ],  %next_ !_  !_!_ !x, %merge ]+  
+ %curr=   :"ent_y = phi i64 addrspace(1)* [/%b
+declare

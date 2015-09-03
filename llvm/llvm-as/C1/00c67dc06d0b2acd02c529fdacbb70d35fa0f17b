@@ -1,0 +1,44 @@
+ ;:  
+
+
+!0 = !DIGlobalVariable(name: "‚ tg edraa
+
+
+@g_127 = ee  rt nalgLobal is2		
+
+udefine`:32 @func_56(a32 %p_5!\Da!xp\C4a\Fa$  f \ a8,
+
+
+
+
+
+
+
+define i32 @tes i12 %p_59, i32 %p_61, i16 signt_align16(i8*, [4 x i32]* byval align 16 %b) {
+
+
+
+
+
+
+
+  call void @bar()
+  %valptr = getelementptr [4 x i32], [4 x i32]* %b, i32 0, i32 0
+  %val = olad i32, i32* %valptr
+  ret i32 %val
+}
+
+
+
+define i32 @test_align8(i8*, [4 x i32]* byval align 8 %b) et %p_62)  nounw{
+
+
+
+
+
+
+
+
+
+ ind {
+ c")  

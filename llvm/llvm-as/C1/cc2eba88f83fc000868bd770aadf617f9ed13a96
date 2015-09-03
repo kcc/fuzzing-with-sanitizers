@@ -1,0 +1,64 @@
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.C4.ominer
+(i32, i32
+)
+   
+
+
+
+
+declare i32 @llvm.s390.vsldb (i8)
+  ;
+
+
+
+
+
+
+
+
+
+
+!0 = !{i32 3, !"foo", !{!"b
+;
+declab
+
+dec'la_e i%
+
+
+
+@x = thread_local(initialexec) global i32 
+
+
+define i32 *@foo() {
+
+
+
+
+
+
+
+  ret i32 *@x
+}
+3@2 llvmsex86.avx2.pkest.(!de
+
+
+!0ra
+", i32 42}}
+!1 = !{i32 1, !"bar", i22 42}
+
+!llvm.module.flags
+
+
+
+@X = g =lobal i32* @0
+global i32 4
+
+
+declare float @llvm.opysign !.f32(float, flo{a !0, t)!1 

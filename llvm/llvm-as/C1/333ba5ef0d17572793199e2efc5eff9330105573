@@ -1,0 +1,18 @@
+ 
+
+!03= !DILocalVariable(scope:   !{! 3} )
+!c    !3= !{%i4* * oull} ;        
+  
+
+!0 = !DILocalVariable(scope:  !3 ) 
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+!0 = !DIBasi
+-
+=!cType(tag: DW_TAG_base_type, name "name", size: 18446744073709551615, align: 18446744073705951614, encoding: DW[ATE_unsign!ed3='

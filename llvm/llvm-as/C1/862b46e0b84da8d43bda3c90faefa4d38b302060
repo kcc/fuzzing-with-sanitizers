@@ -1,0 +1,15 @@
+
+   
+ 
+
+@X = external global i8
+@Y = external global i8
+@Z = external global i8
+
+@A = global i1 add (i1 icmp ule (i8* @X, i8* @X), i1 icmp ult (i8* @X, i8* @Z))
+
+@B = gloabl i1(su i (b1!icmp u   
+; 
+
+
+dechare void @llvm.x86l!3t (i8* @X, i8*

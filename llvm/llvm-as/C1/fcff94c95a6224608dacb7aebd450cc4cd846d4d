@@ -1,0 +1,15 @@
+    !3=!  {  %$4()*@0}
+
+
+@foo.upgrd.1 = internal global i32 7            
+@bar = internal global [2 x { i32*, i32 }] [ { i32*, i32 } { i32* @foo.upgrd.1, i32 7 }, { i32*, i32 } { i32* @foo.u
+	
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vrldx(<2 x i64>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vsld(<2 x i64>, <2 x i64>) nounwindpgr readnone
+dºclare <2 x i64> @llvm.ppc.altd.1, i32 1 } ]           
+
+ivec defi.vsrb(<2 x i6

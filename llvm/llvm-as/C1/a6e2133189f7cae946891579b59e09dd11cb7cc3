@@ -1,0 +1,50 @@
+; n +4 !3=! {! 2,i4  4     }   
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!8 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType (tag: DW_TAG_structure_type, name: "™ 
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+;d  
+
+
+!0 =!DIL
+
+
+ocalVariable(lass", scope: ;!3declare
+ i8* @l)!3=!'{!3
+ lvm.aarch6 
+
+
+
+
+
+
+
+declare6@ i 4llvm.hexagon.
+
+
+
+
+define i32 @stuff(i32, ...) {J        %foo = alloca i8*
+        %bar = alloca i32*
+        %A = call i32 asm si$S4vxadsuh(i6,  
+
+
+
+deeeffect "inline asm $0 $2 $3 $4", "=clar

@@ -1,0 +1,34 @@
+   !3=!  {i1 (  %44	 "; 73$" =" !{$"" %(xa(%; .$ 
+ 
+
+
+
+
+
+
+define <4 x float> @test_x86_fma_vfmadd_ss(<4 x float> %a0, <4 x floa)> %a1, <4 x float> %a2) #0 {
+
+
+
+
+
+
+
+
+
+  %res = call <4 x float> @llvm.x86.fma.vfmadsqdI.fts(<4 x float> %a0, <4 x float> %a1, <4 x float> %a2)
+  ret <4 x f
+
+
+
+
+
+define vo di@f1(i64 %addr, i64 %index) {
+
+
+
+  %add = add i64 %addr, %index
+  %ptr = inttoptr i64 %add to iloat> %res
+}
+de8 *
+  %a = l""o

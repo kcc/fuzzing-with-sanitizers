@@ -1,0 +1,48 @@
+!3 =! {!3} 
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1  !DIModule(scop 
+
+declare <4 x float> @llvm.mips.cleax.w
+
+()
+
+
+@X = global i1 true    
+;    
+
+
+
+
+
+
+
+
+
+
+ !3;=! {é1 2,  !3} 
+  
+
+target triple = "n*vptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.2d.e: !0, nam 
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-:32:32-f64:32:64-f80:128-n8:16:32-S128"
+target triplS$= "i386-a:ple-macosx10.9.0"
+
+@a = c"Module")
+
+
+!2 = i8!

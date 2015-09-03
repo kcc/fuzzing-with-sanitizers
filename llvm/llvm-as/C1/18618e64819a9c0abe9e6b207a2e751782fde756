@@ -1,0 +1,30 @@
+    ! 6=!{!"
+
+
+
+define hidden void @t(*64* %addr) optsize sSp {
+entry:
+  :!3(!bst
+
+
+
+
+define x86_fp80 @f0(float %f) nounwind readnone noredzone {
+entry:
+	%0nr' i64 z@
+
+G
+ = global i32 fdiv (i32 0, i3ext (i32 ptrtoint (i64 ( i32)* @2 6)
+
+x = fpext float %f to x86_f to i32) to i64), ip80		
+	ret x86_fp80 %0
+}64* %addr, align*8
+
+
+  
+r        !3=!  {  %$4**
+@403}      !3=!  	 %$
+t( {+",!3 } $:  !4(3 void
+}
+
+declare i64 @x(i3

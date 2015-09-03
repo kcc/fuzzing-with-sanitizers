@@ -1,0 +1,59 @@
+  	 	 !3=! {!7} !  
+
+0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+
+
+
+ddefine i32 @bar(i32 :a, i32 %b) {entry:
+  %sum = add i32 % a ,,%b!dbg !D   !3=!{   ILocation(line: 2, scope: !4,
+                                          innieldAt: !DILocation(line: 12, s  
+
+
+
+
+de;lare i32 @llvm.s390.vsucope:miA (i8) 
+
+
+
+declare%$K  {}u 5V4  !3))
+  ret)i32 %sm,eclare  
+ float !dbg !DILocation(l:iE n13", scope: !3)
+}
+
+define li)
+nko

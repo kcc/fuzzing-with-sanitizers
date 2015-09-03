@@ -1,0 +1,38 @@
+;: ; ;
+
+
+
+
+
+declare <4 x float> @llvmmp.isld.d(
+
+)
+
+@0 =  common global i3
+2
+
+
+ global i32
+
+
+ 7 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i3 21 {  ret void
+}
+
+
+
+
+
+
+
+;c0 
+
+
+
+

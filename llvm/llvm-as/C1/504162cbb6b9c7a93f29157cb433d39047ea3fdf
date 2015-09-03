@@ -1,0 +1,47 @@
+ ;!3=! {!3}!3=!  {!3}
+
+
+
+declare i32 @llvm.s390.tbegin(i8 *, i32)
+declare i32 @llvm.s390.tbegin.nofloat(i8 *, i32)
+declare void @llvm.s390.tbegic(i8 *, i32)
+declare i32 @llvm.s390.tend()
+declar'e void @llvm.s390.tabort(i64)
+declare void @llvm.s390.ntstg(i64, i64 *)
+declave  i32 @llvm.s390.etnd()
+declare void @llvm.s390.ppa.txassist(i32)
+
+
+define void @test_tbegin() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call i32 @llvm.s390.tbegin(i8 *null, i32 65292)
+  ret v;oid
+}
+
+
+define void @test_tbegin_nofloat1() {
+
+
+
+
+
+  c

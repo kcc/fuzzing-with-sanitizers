@@ -1,0 +1,44 @@
+
+
+
+
+
+!llvm.ident = !{!0}
+!0= !{!{!
+
+
+
+
+"n
+
+declare i32 @llv\.hexagon.A4.cmpbGt(i
+ 32, 
+
+!0 
+
+
+
+= !i32
+definee sed mtadata"}}
+
+
+ 
+
+@0 = common global i3
+2
+
+  glob
+
+
+
+
+
+
+
+
+global i63 u0x00001     
+global i63  s0x012312   
+
+@t2 al i32 3
+
+@i = linkonce_odr = global i33* @gt1     

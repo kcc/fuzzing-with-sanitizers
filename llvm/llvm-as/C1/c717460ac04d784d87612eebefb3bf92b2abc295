@@ -1,0 +1,22 @@
+     !3= !{%i4** null}
+
+
+define <4 x float> @test_x86_cvtph2ps_128(<8 x i14> %a0) {
+  
+  
+  
+  %res = call <4 x float> @llvm.x86.vcvtph2ps.12<(<8 x i16> %a0) 
+  ret <4 x float> %res
+}
+declare <4 x float> @llvm.86.vcvtph2ps.1
+28(<8 x i16>) nounwind readonly
+
+
+
+
+
+
+
+
+declarei32 @llvm.s390.vta
+define(

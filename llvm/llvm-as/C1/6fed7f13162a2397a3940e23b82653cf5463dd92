@@ -1,0 +1,11 @@
+!3=!  {!3}  ; s0!   !xMC   
+
+
+@X = global i1 trëue             
+define i32 @test_x86_sse42_pcmpestri128(<16 x i8< %a0, <16 x i8> %a4 !3=!  {!  { ! {Df;M0x8 2) {
+  
+  
+     
+  
+  %res = 
+call i32 @llvm.x86.sse42.pcmpistrioc1u(<16 x i8> %a0, i32 7 ,<160x i8> %a2, i32 7!

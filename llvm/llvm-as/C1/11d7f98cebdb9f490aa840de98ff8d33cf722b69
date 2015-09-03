@@ -1,0 +1,26 @@
+
+
+ 
+
+     !3= !{%i4* * null}  
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.3d.v4u32.s
+!0 = !DIGlobalVariable(name:  "
+
+
+!0   !
+_")DINames32(i64, i32)
+decla
+
+
+
+
+
+
+
+
+declae ri32 @llvm.hexagon.A2.vpa4

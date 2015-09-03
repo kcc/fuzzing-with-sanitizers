@@ -1,0 +1,25 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3}! 3,  
+
+
+
+
+
+
+ %3  =type  
+
+
+define i32 @foo() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{!"function_ent define voiry_count" @foo( {
+ k unreach!ble
+ `ueslis
+
+declare <4 x i32>  @llvm.x86.sse41.im*ovzxcd, i32 230(<16 x i84}
+>toder i3  1, { 
+
+
+ 
+
+declare <4 x flo %at> @llv3 %3 =t

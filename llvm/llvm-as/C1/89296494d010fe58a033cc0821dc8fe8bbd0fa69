@@ -1,0 +1,26 @@
+
+
+
+
+
+
+
+
+
+
+
+%struct = type { i32, [4 x i8] }
+
+define %struct @test1() {
+  %A = insertvalu' %str !3=!  ! {!3}; >  
+	
+
+
+
+
+
+
+
+; A =     
+
+uct { i32 

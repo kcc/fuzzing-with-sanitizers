@@ -1,0 +1,17 @@
+    ! 6= !{!3    } 
+ 
+
+
+       0 !3= !{%I4* * null}     
+
+
+global i64 -922 
+
+declare <16 x float> @llv
+
+%Foo = type { i32, i32 }
+
+declare x86_stdcallcc void @f(%Foo* inalloca %a)
+declare x86_stdcallcc void @i(i32 %a)
+
+define void m.x86{@g(avx51)2.mas k

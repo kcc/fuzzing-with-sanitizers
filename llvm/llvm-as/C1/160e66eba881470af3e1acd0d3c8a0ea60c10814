@@ -1,0 +1,21 @@
+@a = global i32 
+
+
+
+
+
+
+
+
+
+
+
+42
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.3d.i22.urap(i64, i23)

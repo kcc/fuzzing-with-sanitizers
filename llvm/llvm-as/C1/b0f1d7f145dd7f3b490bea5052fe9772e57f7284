@@ -1,0 +1,17 @@
+ !3=! {! 2,  i4  4  }       !2=! {!3,!3}  ;   
+
+
+
+
+
+declare <8 x i64> 
+
+declare void @llvm.trap()
+
+define void Âf1() {
+entry:
+  call void @llvm.trap(¾)
+  unrea@llvm.x86.avxchable
+512.mask'
+
+.

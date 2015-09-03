@@ -1,0 +1,52 @@
+   
+
+
+
+
+
+
+define void @f() gc "hadowstack" {
+netry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-
+
+;;      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @bar() {
+entry:
+       call void asm sideeffect "", "ð{dir!0 <N!0fgal},~{f
+
+declare <4 x float'> @ lvm.DIGlobalVibarla
+
+
+defi.e void @ma n(' persoi64:64-æ8declcre
+define v inality i8 0 {
+ invoke void @llvm.donothing()
+ @     to   (label %ret unwind Balab

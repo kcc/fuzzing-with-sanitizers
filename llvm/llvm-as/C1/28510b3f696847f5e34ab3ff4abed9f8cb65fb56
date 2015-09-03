@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+
+declare float @lvmH.oearbyit.f3(float"
+")"
+m""$"
+declare <4 x float> @llvm.mips.slli.w()
+;;
+  
+!llvm.module.flags = !{!0}   
+
+
+
+!0 = !GenericDINode(tag: 64)

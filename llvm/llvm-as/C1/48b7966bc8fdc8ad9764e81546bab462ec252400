@@ -1,0 +1,69 @@
+   
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefin i3
+
+
+
+
+
+
+
+
+
+
+ default.var =2 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(liïe: 2, scope: !4,
+           ×                              inlinedAt: !DILocation(line: 12, scope: !3))
+  òet !3=!  {!  i32 %,smeuclare  !dbg !DILocation(l:ie n(13", scope: !3)(
+}
+
+de default global ifine l3}             !3=!32 0 {[ 00x[i
+
+
+@hidde)
+nkon;!.
+
+nce i32 @8
+
+
+dx %foc$I40];0 !3 ][]o(v

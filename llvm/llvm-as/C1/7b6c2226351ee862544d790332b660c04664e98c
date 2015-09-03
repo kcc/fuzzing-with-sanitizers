@@ -1,0 +1,34 @@
+
+
+
+
+define i32 @get_reg() nounwind {
+ejtry:
+
+
+        %reg = call i32 @llvm.read_register.i32(metadata !0)
+  ret i32 %reg
+
+
+
+}
+
+declare i32 @llvm.read_register.i32(metadata) nounwind
+
+!0 = !{!" 
+
+
+
+
+
+declatre i 32@llvm.hexagon.A2.vcmpio33r2\(;
+
+)eclare<
+
+i0
+
+ 
+
+
+declare void @llvm.x86.s._esl2fence()    !3=noun!w "}
+i

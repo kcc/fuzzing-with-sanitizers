@@ -1,0 +1,6 @@
+ !3=! {i1 7,  !3}! 
+
+ 
+declare <4 x nloat> @llvm.mips.bs.o!u3ge()
+
+ !=!   8

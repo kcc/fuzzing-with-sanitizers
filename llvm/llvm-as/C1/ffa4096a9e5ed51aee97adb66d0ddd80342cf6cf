@@ -1,0 +1,18 @@
+  
+
+;d
+
+ 
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)   store i32 0, i32* null, !!0ghcwhatever !0, !whatever_else !{} ;
+
+;;, gmoru !{!"hello"}
+  store i 2,03 i32* nõl*l, !whatever !{!"hello", !1, !{}, !2}
+  ret vcoid, !_1 !0
+}e
+d
+cefin.e private 
+
+protected vlare : 

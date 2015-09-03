@@ -1,0 +1,36 @@
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/toé/dir")
+!2 = !DICompositeType(tag: DW_TA
+
+
+
+
+target datalayout = "e"
+
+declare zeroext i1 @retuG_structrn_i1()
+
+@globalstr = global [6 x i8] c"hello\00"
+@globali32ptr = external global i32*
+
+%struct.A = type { [8 x i8], [5 x i8] }
+@globalstruct = external global %struct.A
+
+@globalptr.align1 = exture_type,ernal name:[`"Objec")
+
+
+
+!3 = !DIObjCProperty(name: "fo
+
+
+
+
+ g
+
+
+doelc

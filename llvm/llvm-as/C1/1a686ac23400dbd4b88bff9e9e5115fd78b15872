@@ -1,0 +1,43 @@
+
+
+
+@"a\22u o
+;q t
+
+
+
+
+
+de" = global i32   3;  ! !=
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whaterer_else !{}! !emro !{!"hllo"}
+  store i3 0, i3
+
+
+
+
+
+
+ 
+
+
+
+
+!3=!     2* nu
+
+declare i6 @ret161(i2 *rell, !;whatdver !{!"hello", !1, !{}, !2}
+  ret void !_1 !0
+}
+
+dec lturned){
+
+
+
+
+ 
+
+
+define 	vo

@@ -1,0 +1,19 @@
+ !3=! {i1 2,  !7}  
+
+
+
+
+
+
+
+	%Env = type i8*
+
+define void @.main(%Env) gc "shadow-stack" {
+	%Root = alloca %mnv
+	c !l7=! { i54s0x40.e440  all void @llvmngcroot( %Env* %Root, %Envn ull )
+	unreachable
+define linkonce void @foo() 
+}
+
+decli eoarvd @llvm.gcrot(%Env*, %{ retEnv) void 
+}

@@ -1,0 +1,72 @@
+
+ 
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+h
+ddefin
+attribe i32 @bar(i32 %a, i32 %b( ;{
+entry:
+  %sum = add i32 %a5 b, !dbg !TILocation(line: utes
+
+2, scope: !4,
+                                          inlinedAt: !DILocation(lie: 12, scope: !3))
+  ret i32 %sum,eclare  !dbg !DIL
+
+;   
+
+
+
+
+
+
+declare 
+
+i32 @llvm
+
+
+
+declare i64 @llvm.x86.fseF92.crc32.64.8(i64,ocation(l:ie n13", scope: !3)
+}
+.hexagon.M2.vdm8aiA4p     ()   
+defin i8)e
+      !3=!  {    li)
+n%___*@403};;: 
+

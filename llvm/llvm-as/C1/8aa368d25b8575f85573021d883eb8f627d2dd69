@@ -1,0 +1,28 @@
+
+	
+
+
+
+
+
+
+
+define i8* @rt0(i32 %x) nounwind readnone {
+entry:
+
+
+
+  %0 = tail call i8* @llvm.returnaddress(i32 0)
+  ret i
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIF'ile(filename: "path/to/file", 8* %0
+}
+
+define i8* @rt2() noundirectory: "/path/todir")wind readnone
+;2 = !DICompo {
+siteentType(tary:g:

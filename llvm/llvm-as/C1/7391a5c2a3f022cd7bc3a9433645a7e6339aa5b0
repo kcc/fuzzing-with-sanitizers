@@ -1,0 +1,47 @@
+   
+
+   
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(
+filename: "pah/to/file", directory: "/path/todXr")
+;2 = !DICompositeType(tag: DW_TG_structure_type, name* "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, ;line: 7, setter: "setFoo",
+                     getter: "getFoo", attributes: 7, type: !2)*
+
+!!43 = !=!D{ I%x(O%!J *# 
+
+def) 4ine void @foo() !
+!!0 dg$!4= !D
+ 
+
+
+
+
+
+
+I ; 
+;declarE;
+
+
+
+ !\e 'loat @ll
+
+declare>
+
+D
+4x float>@llvm.mips.msubdx

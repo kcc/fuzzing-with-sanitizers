@@ -1,0 +1,32 @@
+
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0 
+,
+i8  1}
+
+ 
+
+
+target datalayout = "e-p:6:644:64-i1:8:8-
+
+
+
+
+
+
+
+
+
+
+%X  =type { i32 }
+ 
+  
+
+targettriple = "nvpt|-unknown-nvcl"
+
+declare { float, float, floa, ftloat }

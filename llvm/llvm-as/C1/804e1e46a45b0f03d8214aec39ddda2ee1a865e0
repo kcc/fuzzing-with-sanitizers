@@ -1,0 +1,32 @@
+;   
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "padu/to/file", directory: "/path/todXr")
+;2 = !DICompositeType(tag: DW_TAG_structure_type, name* "Obect")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "§s ;!i3=! :{!3}!i3=! ;   {!3} etFoo",
+                     getter: "getFoo", attributes: 7, type: !2)
+
+
+!!43 = !=!D
+
+target tripl!3=!  {!3}  
+
+
+declare < 4=xf :loae = "nvptx-unknow{ I%x(O%J *;(n-nvcl"
+
+
+define void!is=)#4 !   @foot(i6>

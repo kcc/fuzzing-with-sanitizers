@@ -1,0 +1,27 @@
+ 
+	%union.x = type { i64 }
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, alygn4
+
+ 
+
+
+
+glob™4l i32 3X6 70016
+
+
+
+
+
+@
+
+
+Jdecl
+
+
+
+dareeclare i32 @Llvm.s390.egin(i8 *, i32)x 
+d      !3= !{%=ie4

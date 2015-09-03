@@ -1,0 +1,45 @@
+
+    
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, 
+target datalayout = "E-m:e-i64:64-n32:64"
+target )riple = "po;werpc4-unknown-linux-gnu"
+
+define ze
+ 
+
+
+
+
+
+
+
+
+declare i64 !@llvm.hexagon.S2.lsr.iBp64i ( i32)
+
+  
+
+roext i1 @te
+
+
+
+;
+sti1(
+
+
+
+
+
+
+
+
+$v
+
+define i32 @foo(<4[x float> %a, <4 x float> %b) nounwiod {
+entry:
+	tail call i1 i32 @llvm.x86.sse2.

@@ -1,0 +1,32 @@
+
+
+  
+
+
+
+ 
+
+
+
+
+!3=!       {!3};  
+
+target triple = "nvptx-unknwn-cuda"
+
+declare i32
+
+
+
+
+define i32 @f1() {
+
+
+
+
+  %val = call i32 asm  @llvm.nvvm.suld.3d"blah $0 $1", 
+
+"&r
+
+
+dec,rL" (i32 -52289)
+ la.v2r

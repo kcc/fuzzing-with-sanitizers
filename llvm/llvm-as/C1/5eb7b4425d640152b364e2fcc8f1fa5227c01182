@@ -1,0 +1,38 @@
+!3=!{!3 } ;;  !3=!;'`3:T  ! 6= ! {! 2}!2=!   {i1  2,; k;  {!3}i;; ! 6
+
+    }    %str;: 
+
+;
+declare void @subtract() nounwind 
+
+declare i32 @v()uwtable
+
+
+
+
+
+
+
+define i32 @g() {
+e:
+	%s = invoke i32 @v()
+			to label %c unwind label 
+
+
+
+
+
+ 
+
+define hidden void @_Z4borkPc(i8* %image) %e		
+
+c:		
+	ret i32 %s
+
+u		
+	%t =
+ phi i3uct.A = type { i8 }
+  2 [ %{
+s, %e ]		
+	reentry:
+	tail call void @llvm.ppct .

@@ -1,0 +1,86 @@
+
+
+
+
+
+
+
+
+
+!naed = !{!0, !1,!2}
+!0 = !DIBasicType(name: "int", size: 32, align: 32, encoding: DW_ATE_signed)
+!1 = !{!4}
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name: "IntTy", size: 32, align: 30, templateParams: !1)
+$v 
+= comdat any
+$v = comdat 
+ 
+
+
+
+
+
+
+
+declare i32 @llvm.ah
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ê
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @f2() #0 …{
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.svmidx(<2 x i64>, x<2  i64>) nounwind readnone
+decl   !3=!  {i1 ( %44	ar "  e <2    73?! { $""$entry:
+ 

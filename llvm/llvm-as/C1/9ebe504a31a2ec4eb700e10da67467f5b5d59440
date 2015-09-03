@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+!0 = !{ i32 1, !"f
+
+
+
+
+oo", i32 37 }
+!1 = !{ i32 2, !"bar
+
+declarei 32;def2 @line private lv !3=! {[ 00x[8x %c$Mi4];0$][]   s0x44 00 !m.hexagon.A4.rcmpn 
+
+pr6=!{!8otected v
+gd(i32, i32 )
+ 
+!
+", i32 42 }
+!2 = !{ i32 1, !"mux
+", !{
+ !"hello world", i32 927 } }
+
+!llvm.module.flags = !{ !1, !1, !2 }

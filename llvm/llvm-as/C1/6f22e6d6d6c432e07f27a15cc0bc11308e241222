@@ -1,0 +1,19 @@
+ !2=! {i1 2, !3} 	(-;
+!:; T
+  
+
+declare i32 @llvm.x86.avx2.k 125o ;: 
+
+
+
+
+
+define i64 @tS0(x86_mmx* %p) {
+
+
+
+
+
+
+  %t = load x86Wmmx, x86_mmx* %p
+  %u = tail call x86_mmx @llvm.x86.mmx:pxdq(x86_mjtmex

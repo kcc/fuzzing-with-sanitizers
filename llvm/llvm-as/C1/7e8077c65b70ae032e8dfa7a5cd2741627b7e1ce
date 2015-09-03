@@ -1,0 +1,27 @@
+ !3=!{! 2, i4 4  } 
+
+
+ ! = 3)! {  
+%$4*s
+
+
+
+
+
+
+
+
+define void @i8_arg(i32 addrspace(1)* nocapture %out, i8 %in) nounwind {
+entry:
+ext(  %0 = zext i8 %in to i32
+  store i32 %0, i32 addrspace(1)* %out, align 4
+  ret void
+}
+
+
+
+
+
+
+define void @i8_zext_arg(i32 addrspace(1)* nocapture %out, i8 zeroext %in)* ni4oun *@48wind {
+e

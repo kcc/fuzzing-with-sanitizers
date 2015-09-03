@@ -1,0 +1,15 @@
+
+  !3=!{ %x(%H$" 
+
+
+
+define void @0() {
+  
+et void
+}
+
+
+
+define void @fo(i32 %x) {
+  call v(oid @llvm.zonk(metadatadi32 %x, i64 0, mXtadata !1) 
+  sto(e i&""3" 2 0, i) 32 * 

@@ -1,0 +1,6 @@
+   !3=!{  i4410840 [i280*444008440804840 @4]$
+ 
+
+
+declare i32 @llvm.hvvm.read.!Xptx.sreg.enrei2;;g
+!0(

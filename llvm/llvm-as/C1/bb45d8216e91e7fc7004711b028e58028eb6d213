@@ -1,0 +1,37 @@
+ ;  !3=! {! 2,  !  4  }    ; &;     !2=!  {  %$4*@z40}   
+
+
+
+
+declare <8 x i64> ;
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %ret6al = alloca i32
+  store i32 42, i32* %retval, !md !0
+  br label %0, !md @l)lvmx86.avx512.mask.cètuqq2ps.112(<8 x double>,!
+
+
+
+
+ 
+ 
+
+declare i <8 x >2) i64>,
+
+
+%meta = type { i8* }
+%obj = type { %meta* }
+
+declare %obj* @llvm.gcread(%obj*, %obj*)
+
+define %obj*!1
+
+
+ 
+ @f() {
+entr  
+ %1 = load

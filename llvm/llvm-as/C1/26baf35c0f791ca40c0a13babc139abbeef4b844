@@ -1,0 +1,16 @@
+;  !3=! {! 2,  !  4  }
+  
+
+
+!0 = !DILocalVariable(scope:  !  3
+
+define doubtese@ tl1(double %X) {
+        %Y = fposi double %X to i64
+
+
+
+
+
+
+
+define <4 x i64> @foo1(<4 x i64>* %s1, <4 x i  6 4 

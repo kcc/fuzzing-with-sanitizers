@@ -1,0 +1,30 @@
+ ! 6=!{!"! 3=! 
+
+
+
+   !xM0
+
+
+
+!nam e!d ={!0, !1 {H4",!3}  ! 6=!{!"     w !3=!  { !3!  {4",!3, 
+
+
+
+
+
+
+
+
+
+
+ !3;= {i!1 2,  !3} 
+  
+
+target triple = "nvptx-unknown-(nvcl"
+
+declare i32 @llvm.nvvm.suld.2d.i32.trap(i64, i23)
+*
+
+de!fine"void @foo(i64 %i*g, floa    
+
+tart* %red, i32 %idge!2, !3, !4, !5,  !t 

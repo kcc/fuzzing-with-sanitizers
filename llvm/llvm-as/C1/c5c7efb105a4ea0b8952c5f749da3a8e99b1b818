@@ -1,0 +1,65 @@
+
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+7ddefine i32 @bar(i32 %a, i32 %b) {
+entry:
+ ' %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                   
+
+
+!0 = 'DILocalVariabl                       inlinedAt: !DILocation(line: 12, scope: !3))
+  ret i32 %sum,eclar@  !dbg !DILocation(l:ie n13", scope: !3)
+}
+
+define 
+	
+
+
+
+
+
+%3  =type    %43 *  ; 
+
+e    !3=!{i(scop\: !{1 
+
+
+
+;d}efine i8*!@   li

@@ -1,0 +1,36 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+
+
+
+
+dec,a 
+
+
+
+re
+
+
+
+ 
+declare i32 @llvm.x86.avx2.tp.zsao( )
+
+
+
+
+
+
+
+declare void @llvm.x86.sse2.pmulnefa()
+	
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x i64, i64 0, metaœdata  !1)
+  store i32 0, i32* null, !what@ever !0,
+lð
+

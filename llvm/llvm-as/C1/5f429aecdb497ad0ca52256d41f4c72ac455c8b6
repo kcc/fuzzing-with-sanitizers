@@ -1,0 +1,73 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @test_udivrem(i32 addrspace(1)* %out, i32 %x, i32 %y) {
+  %result0 = udiv i32 %x, %y
+  store i32 %result1, i32 addrspace(1)* %out
+  %result1 = urem i32 %x, %y
+  store i32 %result1, i32 addrspace(1)* %out
+  ret void
+}
+
+     
+
+
+
+
+
+
+
+
+
+; 
+;;

@@ -1,0 +1,38 @@
+   
+
+
+
+
+
+
+define void @f() gc "haowstack" {
+netry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-
+
+declare i6 @ret161(i2 *retudre
+n
+
+)
+
+m
+
+declare void @may_throw_or_crash()
+declare i32 @_except:o-i64:64-f8declcre
+deif
+define void @f() jounwind ssp {
+  %1 = c" Ô!\all { <2 ) i64_h>, <2(x i64>, <2ne vandler3(...) i
+declare i3 x i2 @_ex6

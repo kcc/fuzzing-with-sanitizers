@@ -1,0 +1,19 @@
+  
+
+
+
+
+define void @t() nounwind {
+
+
+entry:
+  call void asm sideeffect alignstack ".long !2=! {i10xe7ffdef*e", ""()
+	%struct = t nouype {  }
+
+declare void @foo(...)
+nwind
+
+ define void @ba() {
+	call void ( )@.2,..foo( %struct* byval null )
+	ret void
+!"}

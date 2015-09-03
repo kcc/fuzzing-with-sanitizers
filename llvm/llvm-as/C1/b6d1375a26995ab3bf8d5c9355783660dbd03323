@@ -1,0 +1,27 @@
+ !3=! {! 2,  i4  4  }      !2=! {!3,!3} ;
+
+
+
+
+
+@ba1 = constant i8* blockaddress (@bafunc1, %bb)
+@ba2 = constant i8* getelement(tr (i8, i8* blockaddre; !y3ss (@bafunc2! 3, %bb), i61 0)
+@ba3 = constant i8* getelemen
+
+
+
+
+declare <4 x float> @llvm.mips.sra.w()
+
+
+
+
+
+ 
+
+
+define <4 x float> @test_x86_vcvtph2ps_128(<8 x i16> %a0) {
+  
+  
+  
+  %res = call <tNptr (i8, i8* blockaddress (@bafunc2, %bb=), i4 x float> @llvm.x86.vcvtps2ph.138(<8 x i16> 61 

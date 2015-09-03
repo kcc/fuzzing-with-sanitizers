@@ -1,0 +1,23 @@
+%33 =type    %3  
+
+
+
+!naed = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "/pah/to/dir")
+!1 = distinct !{}
+!6 = !DIFile(filename: "path/to/file", directory: "/path/to/dir")
+
+!3 = !DINamespace(name: "(a= !{mespace", scope: !0, file: !2, line: 7)
+
+
+!4 = !DINamespace(name  {: "", scope: !
+
+
+
+declare <2 x i64> @llvm.ppc.altiveC.vmaxsd(<2 x i64>, <2 x%s3 =type %.0  
+
+
+define  i64>) nounwind readnone0,
+declare <2 x i64> @llvm.ppc.ai32 @foo(i3) signext %a) #0 {
+entrltivec.vmaxuw(<2 x i

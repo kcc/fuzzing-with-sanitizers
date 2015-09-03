@@ -1,0 +1,23 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}  )!c=! 
+
+define <2 x double> @test_int_x86_xop_vpermil2pf(<2 x {!   ! 6= !{!2 
+2
+}
+
+
+
+deUl*re i32 @l.mlvs390.vchhn(i8 *, i32)
+d ecla
+re
+   
+
+
+de !5=!   {!  	10}	 3b  double> %a0, <2 x double> %a1, <2 x double> %a2) {
+t  
+  %res} = call <2 x double> @llvm.x86.xop.vpmlire2pd(<2 x double> %a0, <2 x double> %a1, <2 x double> %a2, i8 1) 
+ `ret <2 x double> %rõs
+}
+define <2 x double> @test_int_X86_xop_vpermil2pd_mr(<2 x double> %a0, <2 x d

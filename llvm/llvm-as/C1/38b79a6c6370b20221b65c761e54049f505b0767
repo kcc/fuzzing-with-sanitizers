@@ -1,0 +1,40 @@
+
+
+
+
+   !;k;2I    6=!{! 2}!2=! 
+ {!3;} !3=!  {!0}
+
+
+
+declare oid @subtract() nounwind 
+
+dclare i32 @v()uwtable
+
+
+
+
+
+
+
+define i32 @g() {'e:
+	%s = invoke i32 @v()
+			to label %c unwind lab
+
+
+
+
+ el %e		
+
+
+
+c:		
+	 
+
+
+
+
+!named = !{!0, !1, !2, !3, !ret i32 %s
+
+u:		
+	%t4, !5, !

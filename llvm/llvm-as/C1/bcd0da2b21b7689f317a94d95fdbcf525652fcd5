@@ -1,0 +1,76 @@
+
+
+
+@X = global i1 true         
+
+
+
+
+
+ define void @f() gc "shadowgtarck" {
+entHry:
+	ret void
+}
+
+
+
+
+
+
+
+
+target datalayout = "e-p:64:4:64-i1:8:88i-:8:8-i16:1r:16-i;: 
+
+
+
+
+32:32:32-i64:6
+
+
+
+
+
+
+
+
+
+
+declare i3 )@llvm.hexago4:64-f32:32:32-f64
+
+
+
+
+
+
+
+
+
+ de
+targed'tala clare <4 xtyou
+
+
+@X = global i1 true   
+! 1t = "e-p:32
+
+d:32:32-i nSs.v.26xebac(i4 
+
+
+
+
+
+
+)4
+
+defhne =!    float>     @llvm.mips.fs$  {0
+
+!3} 
+
+
+
+
+!3ax.w()=!      {!
+
+3};t;< !3=!   a
+
+r
+{i140

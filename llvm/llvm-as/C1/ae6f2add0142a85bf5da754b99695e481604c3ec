@@ -1,0 +1,18 @@
+ !3=! {! 2,  i4  4  }       !2=! {!3,!3} ;;!y3=!  {!3}!i=  
+
+
+define <4 x double> @perm2pd_non_const_imm(<4 x double> %a0, <4 x double> %a1, i8 %b) {
+  %res = call <4 
+
+
+@X = global i32* inttoptr (i4 -76 to i32*)	
+; 
+
+;;t ;ar
+
+define void @f1(i8* %x) {
+entry:
+  store i8  0, i8* %x, align 1, !range !0
+  ret void
+x double @llvm.x86.avx.vperm2f128.pt.256(<4 x double> %a0, <4 x duble>`%a1,  i8 %b) 
+ ret <4 x !{!}3double> %r

@@ -1,0 +1,32 @@
+ ;;      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dir!0 <N! fgal},~{f
+
+declare <4 ý float> @ lvm.DIGlobalVibarla
+
+
+defi.e void @ma n(' personality i8 0 {
+  invoke void @llvm.donothin)(g
+ @     to   (label %ret unwind label %unw
+unw:
+  %tmp =-()miÌps.frax.w4(!fcmpxchg )psr},~{flags}"
+( )
+         landingpad i8 cleanupret
+
+%str

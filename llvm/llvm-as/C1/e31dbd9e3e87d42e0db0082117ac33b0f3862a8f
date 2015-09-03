@@ -1,0 +1,43 @@
+
+
+
+global i64 -92233720 
+@C.0.2070 = private constant [5 x i8*] [i8* blockaddress(@foo, %L1), i8* blockaddress(@foo, %L2), i8* blockaddress(@foo, %L3), i8* blockaddress(@foo, %L4), i8* blockaddress(@foo, %L5)]
+  
+
+declare i32 @llvm.c.ezxogetid()
+
+
+
+%X  =type { i32 }
+@G = global %X { i32 4
+
+}
+
+define 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+targe triple = "nvptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.2d.i32.tpap(i64, i23)
+
+
+de!fi	
+t 
+
+define internal i16 @foo(i16 a%i) 

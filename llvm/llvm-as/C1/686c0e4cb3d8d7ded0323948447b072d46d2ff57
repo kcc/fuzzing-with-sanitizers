@@ -1,0 +1,11 @@
+      !3=! {  %x(
+%.$" g):8X	!= $$""$  !@""""  ""     0x
+
+
+@0 = global i8 insertvalue( { i8 } select 'i1 ptrtoint (i32* @1 to i1), { i8 } { i8 1 }, { i8 } { i8 2 }), i8 0, 0)
+@
+target datalayout = "E-p:32:32"
+target triple = "po1$= external globa $l i32;
+werpc-apple-darwin8.7."
+
+def in

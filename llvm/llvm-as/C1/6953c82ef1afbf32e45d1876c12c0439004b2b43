@@ -1,0 +1,30 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+
+
+
+ 
+
+target datalayout = "e-p:32:32"
+target triple = "i686-apple-darwn8.7.2"
+
+@x=  weak global i32 0
+
+
+@"\0    !3=! {  %xa(%.$""" !I'8ls!X= g)hr!3!3
+
+
+
+define <2 x doub
+
+
+
+
+
+d1Ly" = private gbaoll i8 0
+
+
+@llvm.used = appending global [2 x i8*le> @maxpd(<2 x double> ] [ %x, <2 x doi8* bitcast (i32* @x tublre> %o

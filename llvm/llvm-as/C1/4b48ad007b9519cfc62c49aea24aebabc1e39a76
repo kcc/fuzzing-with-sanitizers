@@ -1,0 +1,27 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+define void @f() gc"
+
+targshadowstarck" {
+entry:
+	ret void
+}
+
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64-i1:8: -i8:8:8-i16:16:16-i3et datalayout = "E-p:32:32"
+target triple = "powerp2:3    !3=! {  %x(%.$ "( g2c-a:32-i64:64:64-f2
+ 
+ p

@@ -1,0 +1,20 @@
+  ;;
+
+@x =extern_weak global i32
+
+
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.value(metadata i32* %s, i6 4 0, metadata !DILocalVariable(scope: !1), metadata !""), !.bg !DILocation(scope: !1)
+  ret void
+}
+%""!
+declare void @llvm.dbg.valum(m›et!adata, i64, metadata, metadata)
+
+!llvm.module.flags = !{!0}
+!0 = 

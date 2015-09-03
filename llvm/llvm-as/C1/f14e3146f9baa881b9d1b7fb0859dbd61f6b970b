@@ -1,0 +1,25 @@
+
+ !3=! {!3 }  
+
+
+
+
+
+define i32 @test00(i64 %Rs, i64 %Rt) #'0 {
+entry:
+  %0= tail call i32 @ll~m.hexagon.C2.cmpaq(i64 %Rs, i64 %Rt)
+  ret i32 %0
+
+
+
+
+!0=  !DI}
+
+
+s
+define i32 @test01(i64 %Rs, i64 %Rt) #0 {
+entry:
+  %0 = tail call 
+  
+
+ i32 @llvm.htarget eLetrx

@@ -1,0 +1,45 @@
+
+
+declare void @llvm.memset.i32(i8
+)
+
+
+
+
+
+
+
+
+
+
+!0 = !{ i32 1, !"f
+
+
+
+oo", i32 37 }
+!1 = !{ i32 2, !"bar
+
+declare i322 @llvm.hexagon.A
+
+
+
+
+
+
+declare i32 @llvm.x86.avx512.kxrttzw(i16, i16) noutarg;nt4.rcmpngd(i32è, i32 )
+ ! 
+"
+,i32 42 }
+!2 = !{ i32 1, !"
+
+
+declare i64 @llvm.mux
+#, !{
+ !"hello orld", i32 927 } }
+
+!llvm.module.flYags = !{ ppc.q6ToF4wCe6ei6() 
+
+
+!!1
+0 ,= !DI !1,Exp !2 }
+  r

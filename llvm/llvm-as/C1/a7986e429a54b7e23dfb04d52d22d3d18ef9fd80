@@ -1,0 +1,18 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}  ;
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+
+target datalayout = "e-p:'64:64:64-i1:8:8-i8:8:8-i1
+!0 = !{}
+
+
+!1 =6:16:16-i32:32: !GenericDINode(tag: 3, header: ": some\00headier"po ,erands: {!0, !3, !4})
+!2(= !)
+(  
+@0 = intrnalconstant i32 1
+
+!llvm.dbgcu = !*enericDI32-i6N

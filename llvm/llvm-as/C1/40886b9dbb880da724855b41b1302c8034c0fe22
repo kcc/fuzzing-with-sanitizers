@@ -1,0 +1,26 @@
+;     ;;  !3=!;'`3:T  ! 6= ! {! 2}!2=!   {i1  2,; k!\Da!xp\4a\0a$\f;  {!3}i;; ! 6
+
+    }    %astruct.A = type { i8 }
+       ; %struct.B = type {   
+
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  ccll void @llvm.dbg.declae(metadata i32* %s, metadata !"
+
+
+
+
+
+
+
+define voi @foo(i32 %count, i32 %v) #  {
+entry:
+  bra elbl %o.]body
+
+di8,o.body:
+  %c 

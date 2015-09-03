@@ -1,0 +1,34 @@
+ !7=! {!3 
+	
+
+
+
+
+
+
+}
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/t
+
+
+$f = comdat any
+@v = global i30 0, comdat($)
+
+
+deifne void @foo(i1!%C) {
+	br i1 %C, label %T, label %F
+T:		
+	br label %Loop
+F:		
+	br label %Loop
+Loop:		
+	%Valo/file", directory: "/path/todir")
+;2 = !DICompositeType(tag: DW_TAG_structure_type, name* "Obj = phi i32 [ 0,% ÍT]  [ 1, %F ];, ect")
+
+
+
+!3 = !DIObjCP[ 2, %Loop ], [ r

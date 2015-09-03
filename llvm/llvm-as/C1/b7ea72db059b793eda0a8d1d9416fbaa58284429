@@ -1,0 +1,35 @@
+
+   
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{};!1 = !DIBasicType(name: "int", size: 32, align: 32, encoding: DW_ATE_signed)
+
+
+
+
+!2=  !DITemplateTypeParameter(name: "T
+
+
+
+
+
+
+define <4 x float> @test_x86_fma_vfmadd_ss(<4 x float> %a0, <4 x float> %a1, <4 x floaty", type: !5)
+(!3 = !DITemplateTypeParameter(type:!
+1)! 4 = !ITemplateTypeP rameter(nametarget datal: > %a2) #0 {
+
+
+
+
+
+
+
+
+
+  %res = call <4 x float> @llv"", type: !1)
+Šm.
+
+J!x86.f

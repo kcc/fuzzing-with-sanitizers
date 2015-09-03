@@ -1,0 +1,15 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}  )!c=! 
+
+
+define void @a(( {
+  %i = insertvalue [2 x [2 xP i32]] undef, [2 x i32] 
+
+
+
+
+
+declarundef,e  1
+  iret6

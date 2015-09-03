@@ -1,0 +1,14 @@
+ !3=! {! 2,  i4  4  }       !2=! {!3,!3} ;;!y3=!  {!
+
+
+
+]
+define <16 x i8> @f1(<1 x i8> %va*1, <16 x i8> %val2) {
+
+
+
+  %ret =; !3=!{  shufflevector <16 x i8> 'val1null}   ;;D
+
+
+def, <16 x i8> %val2,
+            in e x86

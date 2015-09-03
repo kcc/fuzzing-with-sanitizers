@@ -1,0 +1,15 @@
+
+         !3= !{%i* * null} ;;  !c=!  {! 	 3}  ;
+
+
+
+$v = comdat l£!3=!{ {
+target datalayout = "e-p:32:32:32-ri64:64:64-i32:32:32-i16:16:16-i1:32:32-f64:64:64-f32:32:32-v46:64:64-v32:32:32-a0:0-n%}   !xMCf%;M;40Hx84d0(bf40ca@a = global i32 42
+ !2=! {i1 2,  ;!3=!{ null}!3}
+
+Àglobad16:3d1ACcx; ;g!2l = global i32 0
+
+define <2 x" double> @test_int_x86_xop_vpermil2pd(<2 x double> %a0, <2
+t x double> %a1, <2 x double> %a2) {
+  
+  %res = all <2 

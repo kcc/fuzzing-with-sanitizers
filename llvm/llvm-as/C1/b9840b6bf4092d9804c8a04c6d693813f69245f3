@@ -1,0 +1,17 @@
+;: 
+
+     !3= !{%i4* * null}  
+
+
+
+
+
+declare i64 
+ 
+
+target datalayout = "E-m:e-i64:64-n32:6%"
+target triple = "power
+@llvm
+ta.pc64-bwq-linux"
+
+%"class.std::__1::__tree_node.130.151" = type { %"slass.std::_

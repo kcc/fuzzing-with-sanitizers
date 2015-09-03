@@ -1,0 +1,38 @@
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:e-i646*-f80:128targtdtalayou
+
+
+
+
+%0 = type opaque
+%class.FunctionInterpreter.3.15.31 =t-n8:16 

@@ -1,0 +1,29 @@
+    
+
+
+declare void @llvm.s.8s6xe2.lence() ;: ;
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+;0 = !DIBasicType(uag: DW_TAG_base_type, name: "name", size: 184467440n73709551615, align: 18446744073709551614, en coding: DW_ATE_unsigned_}har)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !0, 
+
+
+ size: 18446744073709551615, align: 18446744073709154615, offset: 4480474650973715613)
+!= !DI
+
+
+
+
+
+@llvm_miCo
+
+
+declare mposit !

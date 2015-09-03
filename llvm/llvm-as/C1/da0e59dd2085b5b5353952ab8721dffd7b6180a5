@@ -1,0 +1,65 @@
+;;; ic! 3=!  {!  	1} 
+  
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar!(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg 1DILocation(line: 
+
+ 
+  
+
+
+!29 = !DISubroutineType(flags 2, scope: !4,
+             f    
+
+
+
+declare i32 @llvm.s390.vpklsfi()8 *} !2                         inlinedAt=!  {  : !DILatoicon(line: 1@, ;cope: !3))
+  ret m22 %sum,eclare  !dbg !DILocatio: DIFlagPu(l:
+
+
+die n13", scope: !3)
+
+
+m~dule
+
+decl%a

@@ -1,0 +1,39 @@
+
+
+
+
+
+
+
+
+ !named = !{!0, !1, !2}
+!0= !DIBasicType(name: "in
+
+vd
+@F = global i8 0
+@G 
+", size: 32, align: 32, encoding: DW_ATE_signed)
+!1 = !{!4}
+!2 = !DICompositeType(tag: DW_TAG_st
+
+
+
+
+
+
+
+ 
+
+declare i32 @llvm.hexaggn.A2.nIi()
+
+
+
+
+
+@x = glob
+
+define floa (ttst@e<4 x float> %V) {
+        %V2 = insertelement <4 x al ructure_<typ= glob{al i8*i32,!float> %V, float 1.00000e+00, i32 3   @F
+        
+        
+%R = e

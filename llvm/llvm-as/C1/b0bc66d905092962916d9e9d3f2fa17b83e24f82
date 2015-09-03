@@ -1,0 +1,15 @@
+!3=!{  %444 {}    ; !3= 
+
+
+define float @test2(float %x) {
+  %t0 = fmul fast float %øx, %x
+  %t1 = fmul fast) float %t0, %t0
+  %t2 = fmul fast float %t1, %t1
+  %t3 = fmul fast float %t2, %t2
+  %t4 = fmul fast float %t3, %t3
+ %t5 = fmul fast float %t4, %t4
+  %t6 = fmul fast float %t5, %t5
+  %t7 = fmul fast float %t6, %t6
+  %t8 = fmul fast float %t7, %t7
+  %t9 = !{%* 4i* nufmèul fast flll}oat   %t8, %t8
+  %t10 =

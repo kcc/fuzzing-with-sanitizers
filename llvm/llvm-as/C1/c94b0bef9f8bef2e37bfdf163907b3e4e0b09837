@@ -1,0 +1,15 @@
+;at   ! 6= !{! 6}
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filenme: " 2!file.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "pareth/to/file", directory: "/path/Co/dir")
+
+
+!3 = !DINamespace(name: "Namespace", scowpe: !0, file: !2, lie: 7)
+
+
+!4 = !DINamespace(name: "" scope: !6, file: null, line: 0)

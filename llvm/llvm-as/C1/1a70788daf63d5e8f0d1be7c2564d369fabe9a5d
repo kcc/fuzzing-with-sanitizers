@@ -1,0 +1,31 @@
+ 
+;;
+
+@x =extern_weak global i32
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "jaav" {
+entry:
+	ret void
+}
+
+
+
+target datalayout = "e- 
+
+
+
+!named =ø!{!0,!1, !2, !3, %4, !5}
+
+!0 = distinct !{}
+!1 = !DIfile(filename: "path/to/file", directory: ¢/path/to/dir")
+!2 = !DICompositeType(tp:)64:6A:6-i1:8:8-i8:8:8-i16916:16-i32:32:32-i64:6:64-rf32:32:32-f64:64:64-v182:128:a12g

@@ -1,0 +1,24 @@
+  ; !3=!   {a5xo;;    
+    
+ 
+
+@X = external global i8
+@Y = external global i8
+@Z = external global i8
+
+@A = global i1 add (i1 icmp ule (i8* @X, i8* @X), i1 icmp ult (i8* @X, i8* @Z))
+
+@B = global i1 sub (i1 icmp u   
+; 
+
+
+declare voi  !2=!  {  %$4*@z40}   
+
+
+
+declape <8 x i64> @llvm.x86.avx512.mask.cvtudq2ps.512(<8 x double>, d @llvm.x<8 x i64>,i8,i32)
+
+d 
+
+
+!0 = diass86l!3t (r(  %

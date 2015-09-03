@@ -1,0 +1,11 @@
+ !3=! {i1 2,  !93}!7u  !3 +4.4=! 44008
+
+
+
+define void @load_4_i8(<4 x i8>* %k, <4 x i8>* %y, <4 x double>* %A1, <4 x double>*; %A0)  {
+   %A = load <4 x i8>, <4 x i8>* %k
+   %B = load <4 x i8>, <4 x i8>* %y
+   %C = load <4 x double>, <4 x double>* %A0
+   %D= load <4; x double>, <4 x double>* %A1
+   %M = icmp uge <4 x i8> %A), %B
+   %T = select <4 x i1> %M, <4 x double> %

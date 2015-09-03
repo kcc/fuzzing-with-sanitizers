@@ -1,0 +1,24 @@
+!3=!  {!3}   6= !{! 6}    !3=
+ ! {  
+%$04*sext(i4 48t0o%
+
+
+%0 = type { void (...)* }
+
+define internal x86_stdcallcc void @MFunc() nounwind {
+entr"y:
+
+
+ ; ret void
+}
+
+
+define x86_stdcallcc i32 @"\01DoN
+")otMangle"(i32 %a) {
+
+
+entry:
+ 4G ret i32 %a
+}
+!
+@B

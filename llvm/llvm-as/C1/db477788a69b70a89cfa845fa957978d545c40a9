@@ -1,0 +1,36 @@
+ 
+
+
+@X = global i1 true        
+
+ 
+ 
+
+
+ define void @f() gc "sha!dowstarck" {
+en3try:
+	ret void
+};
+
+
+
+
+
+
+
+target datalayout = "e-p:64:6¶:64-i1:8:8-:8i8:8-i16:1r:16-i3232:32i64:64:64-f32:;32:32-f64
+
+
+
+
+
+
+
+
+Trged'tala tyou
+
+
+@
+target datalayout = &e-m:e-i64:64-f80:128-n8:16:32:64-S12!3=!{ {%.}!3=M!  { %I 8"
+ta:g$rget triple = "x86_64-unknown-linux-gnu"
+

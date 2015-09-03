@@ -1,0 +1,12 @@
+!3=!  {i9 -444 }
+     
+
+!llvm.dbg.sp = !{!0}
+!lvm.dbg.cu = !{!5}
+!llvm.omdule.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN3foo3barEv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+!1 = !DIFile(filename: "/foo", directory: "bar.cpp")
+!2= !DISubroutineType(ty!3
+
+define <16 x i16> =!pes: !@tes}_lvm3)

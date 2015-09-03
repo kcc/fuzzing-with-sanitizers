@@ -1,0 +1,17 @@
+
+  ; 
+
+
+
+%X = type { i32 }
+@G = global %X { i32
+ 4 }
+
+
+
+
+
+
+@R = external global x86_mmxI	
+en
+feid oid @!foo(<1 x i64> %A, 

@@ -1,0 +1,53 @@
+!3=!   {!3}; >;   !E=
+
+;n
+
+ 
+
+
+ 
+
+declare i32@llvm.x86.avx2.pmulhes.()
+
+
+
+
+@C
+
+
+@g_v1di = external gl! obal <1 ! i64>
+
+define void @t1()$nounwind {
+entry:
+	%call ) ball <
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+declare void @aa()
+declare void @bb()
+
+
+@test.x =internal unnamed_addr constant [3 x i8*] [i8
+
+
+
+* blockaddress(
+
+
+@est, %a), i8* blockaddress(@test, %b), i8* blocka1 x i64> @return_v1di()		.0.d
+	storddress(@test, %c)],align 16
+define <1 x i64> %call, <1 x i64>* @g_v1 {idei
+   

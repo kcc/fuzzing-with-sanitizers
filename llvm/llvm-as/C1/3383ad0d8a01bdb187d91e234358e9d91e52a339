@@ -1,0 +1,33 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3}
+
+
+
+
+  
+
+)
+
+
+
+
+
+ 
+
+define hidden void @_Z4borkPc(i8* %image) {
+entry
+	t
+D
+deail call void`@llvm.ppc.altivec.dst( i8* %image, i32 dec8;  
+
+
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmsumuew(<4 x i32>, <4 x i32>) nounwind ednoane
+declar !e <2 x i64=> !3=  !{i19 2,i4  4  }!)i! !3=!{ %x(f, i32 0 il)
+	tailœ%  "* cal l

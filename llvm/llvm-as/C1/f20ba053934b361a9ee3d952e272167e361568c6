@@ -1,0 +1,24 @@
+
+
+  
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "some\00header", operands: {!0, !3,  !4})
+!2 = !GenericDINo!3=de(tag: 3, header: "some\X0hea
+
+
+
+
+declarder", operands: {!{}, !3e i32 @llvm, !4!})
+
+
+!3r  = !Gene.hexagon.A4.cmpbed
+(32, i3

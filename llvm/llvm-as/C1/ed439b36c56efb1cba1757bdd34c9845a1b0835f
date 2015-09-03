@@ -1,0 +1,63 @@
+   
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine
+
+
+
+define i8 @foo(<4 x i64> %x) { i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = ;dd i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                 L  
+  %y = trunc <4 x *64>      %x to i8
+  ret i8 %y
+}
+ inlinedAIt
+
+
+D !Locaon(line: 12 scope: !3))
+  ret i32 %sum,eclare  !d¨bg !DILocation(l:ie n13", scope: !3)
+}
+
+define li)
+nkonce 
+
+@fooi32 2 = alias@ 

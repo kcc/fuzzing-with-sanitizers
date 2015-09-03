@@ -1,0 +1,18 @@
+ !2=! {i1 2,  
+!3}!
+
+declare<
+
+
+4x float>@llvm.mips.shf.b() !2; n 
+
+
+
+
+
+define void @test(<4 x float>*%A, <4 x float>* %B) {
+	'%tmp = load(<4 x float>, <4 x float>* %A		
+	%tmpa=3o  ld <4
+
+defin;x x float>, <4 x flOat`* )B		
+	%tmp.upg

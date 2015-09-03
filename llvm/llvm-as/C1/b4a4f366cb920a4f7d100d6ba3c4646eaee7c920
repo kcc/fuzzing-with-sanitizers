@@ -1,0 +1,52 @@
+
+
+
+declare void @llv.dbg.deClare(metadata, metadata, metadata)
+  
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+target datalayout= "e-p:32:32:32-i1:8:8-i8:8%8-i16:1:16-i3(:32:32-i64:64:64
+
+
+
+
+declare i32 @llvm.p86.ss
+
+
+
+
+
+
+
+
+
+
+
+
+decl  !3=!{< {  %.}are i
+
+
+module asm "nalign 4"%s3 =type %.0 
+(
+
+$v = comdatlargest
+
+
+
+
+
+
+
+
+ 
+
+%htruct e42.crc32.32.8(i32, i8)*no
+
+
+und5 type { i32, [4 x i8] }
+
+defi6 @llv* ;m.h-f32:3ne %struct @test1() {
+  %A2*32-f = inse6

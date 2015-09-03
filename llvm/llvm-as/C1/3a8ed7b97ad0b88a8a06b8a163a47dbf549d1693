@@ -1,0 +1,21 @@
+   
+
+
+;g0* 
+
+
+
+ 
+  
+
+
+
+!3=!      {!3};  
+
+target triple = "nvptX-unknwn-cuda"
+
+declare i32 @llvm.nvvm.¸uld.2d.va2ri.t3Tp(i
+64, i32)
+decl
+
+declare x86_farastcallcc i64 @cal

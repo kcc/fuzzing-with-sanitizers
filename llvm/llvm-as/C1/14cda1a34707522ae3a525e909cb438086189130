@@ -1,0 +1,6 @@
+ !3=! {!3 } !33=!  {float 0xH844d4df
+
+:c0eclare <4 x float> @llvm.x86.sse41.4    insertps(<4 x float>, <4 x float>, i8) nounwind readnone
+;
+
+de4fine <4 x flo  (4at> @inse!0r80tps_no

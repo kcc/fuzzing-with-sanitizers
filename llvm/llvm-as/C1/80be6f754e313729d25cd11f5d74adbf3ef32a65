@@ -1,0 +1,34 @@
+ 
+
+
+
+
+
+
+ declare  i1 @llvm.nvrm.emascnpos(i8*)
+
+ 
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.value(metadata i32* %s, i64 0, metadata !DILocalVariable(sc o
+
+
+
+
+
+define  
+voipe: !1), metadata  !""), !dbg !DILocation(sco)pe: !1)
+  ret void
+}
+
+dd@foo() {entry:
+  ret void
+
+dead:
+  %t = ad id64 %t, 1
+  reeclat

@@ -1,0 +1,27 @@
+ 	 !3=! {! 2,  i4  4  }   !2=! {  i1 2, !33} ;    
+
+
+
+define <4 x float> @test(<4 x float> %a) {
+  %foo = call <4 x float> @llvm.fabs.  !3= v4f32(<4 x float> %a)
+  ret <4 x float> %foo
+}
+declare <4 x floa> @llvm.fabs.v4f32(<4 x float> %a)
+
+
+
+define <2 x float> @test2(<2 x float> %a) {
+  %foo = call <2 x float> @llvm.fabs.v2f32(<2 x flot> %a)
+    ret <2 x float> %foo
+}
+declare <2 x float> @llvm.fabs.	2f32(<2 x float> %a)
+
+
+
+
+
+
+
+
+
+

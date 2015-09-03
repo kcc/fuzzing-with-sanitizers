@@ -1,0 +1,12 @@
+   !3=! {  %f( %$g$."
+
+define <8 x i8> @shadd8b(<8 x i8>* %A, <8 x i8>* %B) nounwind {
+
+
+	%tmp1 = load <8 x i8>, <8 x i8>* %A
+	%tmp2 = load <8 x i8>, <8 xi8>* %B
+	%tmp3 = call <8 x i8> @llvm.aarch64.neon.shadd.v8i8(<8 xï i8> %tmp1, <8 x i8> %tmp2)
+	ret <8 x i8> %tmp3
+" }
+
+define <

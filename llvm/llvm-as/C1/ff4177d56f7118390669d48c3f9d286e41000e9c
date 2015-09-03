@@ -1,0 +1,36 @@
+  
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64"
+
+%union.anon = type { double }
+
+@u = global %union.anon { double -2.500000e-01 },;: 
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+
+
+
+
+
+
+
+
+
+
+
+!0 = distinct !DISubprogram() 
+!1 =  ali!

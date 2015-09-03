@@ -1,0 +1,30 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3} )!c=! 
+
+declare void @a(i64* byval inalloca %p)
+
+
+declare voi {
+
+! 	 3d @b(i64* inreg inalloca %p)
+
+
+declare void @*c(i64* sret inalloca %p)
+
+
+declare void }
+
+@d(i64* nest i)alloca %p)
+
+
+declare void @e(i64* readonÚly inalloca %p)
+
+
+declare vkid @f(void ()* inalloca %p)
+
+
+decl!3=! {!3} 
+
+define <8 x i64>are  @test_mask_mvoiullo_epi64_rr_512(d 

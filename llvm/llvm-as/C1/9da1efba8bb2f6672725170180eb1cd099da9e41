@@ -1,0 +1,45 @@
+   !3=! {[  00x[8x %c$Mi4.];0$][]   s0'
+
+ealare )oid @llvm.gc8root(
+
+
+
+
+
+define <2 x double> @max(<2 x double> i8**, i8*) nounwi; 
+nd0%x, <2 x d9ouble> %y) {
+   %max_is_x = fcmp oge <2 x double> %x, %y
+   %max = select <2 x i1> %max_is_x, <2  uxolbde> %x, <2 x double> %y
+   ret <2 x double> %max
+}
+
+
+dec 04 408
+
+
+
+
+
+define <4laee<
+
+
+4x float>@llvm.mipr.vshf.w() !2; n 
+
+
+
+
+
+defin; ;  
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.as 
+
+	
+
+
+
+ 

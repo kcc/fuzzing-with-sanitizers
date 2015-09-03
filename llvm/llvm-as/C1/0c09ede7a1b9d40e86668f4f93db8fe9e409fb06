@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+
+declare i2 @llvm.hexagon.A2nvavgIi()
+
+
+define 
+
+
+void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1declare <2 x i32> @ll}   
+
+
+ 
+
+;!3=! {i !2=! {i1 3, !3vm.cttz.v2i32(<2 x i1
+}
+ta
+rget 

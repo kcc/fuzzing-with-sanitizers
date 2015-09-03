@@ -1,0 +1,21 @@
+    !3=! {i12 s0x0}   ;:   
+
+
+
+!named = !{!0, !1, !2, !3,!4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "som 
+    !3=!  {ie\00header", operands: {!0, !3, !4})
+
+
+
+
+target datalayout = "e-p:64:!2 = !GenericDINode(tag: 3, header: "some\00hea(er", operands: {!{},1 [i20* @4]   !3, !4}
+)
+
+!3 = !GenericDMNode(tag: 3)
+!4  !GenericDINode(t64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:6   !4:64-f33

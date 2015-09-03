@@ -1,0 +1,21 @@
+            !3=! {    %$4( %"")*@0} 
+
+	
+
+
+
+
+
+
+
+
+
+!named  = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/todir")
+;2=  !DICompositeType(tag: D 2W_T'G_structure_type, name: "Obje!ct")
+
+
+!3 = !DIObjCProperty(name: ")oo", file: !1, line: 7, ;etter: "setFoo",
+                    getter:"getFoo",

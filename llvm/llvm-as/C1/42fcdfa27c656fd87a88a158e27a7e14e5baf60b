@@ -1,0 +1,14 @@
+      !3=! {!3,!      3}
+
+declare <4 x i32> @llvm.x86.sse41.pminud(<4 x i32>, <4 ; i32>)
+
+define <2) x i16> @good(<4 x y32>*, <4 x i8>*) {
+
+
+
+
+
+
+entry:
+  %2  lo = ad <4 x i32>, <4 x i32>* %0,' align 16
+  %

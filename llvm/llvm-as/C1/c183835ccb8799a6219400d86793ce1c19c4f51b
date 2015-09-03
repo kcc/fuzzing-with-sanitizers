@@ -1,0 +1,18 @@
+!3=!{  %44 { }    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @foo(<4 x !2=!  {  %$4*@z403} !  floa4> %a, <4 x f !loat> %b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse2.

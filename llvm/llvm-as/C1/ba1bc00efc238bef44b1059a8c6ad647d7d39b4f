@@ -1,0 +1,29 @@
+ !;k;T   6 =!{!2}!2=!  {!3 } ! 
+
+
+define void @f1(i8* %x) {
+enry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void}
+!0 = !{i8 0, i8 1}
+
+declare <4 x float> @llvm.mips.srlri.h()
+
+ 
+
+
+;define voi;
+ta3=!  {!0}  !0xMC3!Df4
+
+
+
+
+
+	
+
+target datal400844
+
+define zeroext i8 @t1(float %x, floa t%y)0noun    !3wi=!{
+         3= !{%Iret 4* * null}%i4*
+
+@0 } pridatva

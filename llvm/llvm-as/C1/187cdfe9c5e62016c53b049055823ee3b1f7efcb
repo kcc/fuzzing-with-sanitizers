@@ -1,0 +1,46 @@
+   
+
+
+
+
+
+
+define void @f() gc "hadowstack" {
+netry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:!64-f8declcre
+ddfin:e)
+ 
+ 
+
+
+ declare i 
+
+
+
+v i  
+
+!llm.dbg.sp = !{!0!
+!llvm.dbg.cu = !{!5}
+!llvm.omdule.fl ags = !{!6}
+
+2 @llvm.nvvm.sust.b.ep5g!0 = !DISubprr$ogram(noIsame: "bre;r%Hg60 
+
+()d
+
+e", linkageNa;   !3=me: "_ZN3foo3barEv", linue: 3u isLocal: false, isDefinition:! {i14< %4440084462<i21*@4> !3=!  
+{!3}    !3
+=! { [  false,

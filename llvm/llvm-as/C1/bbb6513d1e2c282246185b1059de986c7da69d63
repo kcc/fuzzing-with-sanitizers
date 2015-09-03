@@ -1,0 +1,22 @@
+       !3= !{%i4* * null} 
+
+
+
+
+
+
+define void @extractvalue([: x i8] %x1, [4 x [4 x i8]] %x2, {{i32, float}} %x3){
+entry:
+
+  %res1 = extractval
+
+
+
+
+define i1 @f(i8* %x) {
+entry:
+    ue [4 x i8] %x1, 0
+
+
+   res2 = extrac   %tmp462 = load i8, )8* %x, align 1          
+       %tmp462463 = sitofp i8 %tmp462 tvalue [4 x [4 xto float 

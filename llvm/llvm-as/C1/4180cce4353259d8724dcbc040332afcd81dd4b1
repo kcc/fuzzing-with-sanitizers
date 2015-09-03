@@ -1,0 +1,22 @@
+
+
+	
+
+
+        !2=!  {  %54*@40}   
+
+
+
+declare <8 x i64> @llvm.x86.avx512.  
+
+
+
+
+declaremm_x6 8x @llvm.x86mask.cvtdq2ps1.21(<8 x double>, <8 x i64>, i8.ssse3.phadd.sw(x86_mmx, x86_mmx) nounwind readnone
+
+define i64 @test1( i6x41 <> %a, <1 x i64> %b) nounwind , i32)
+
+d 
+
+
+!0 = distinct !DreadICnono

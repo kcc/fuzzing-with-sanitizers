@@ -1,0 +1,32 @@
+
+
+	
+
+
+
+
+
+
+!0 = !{i32 3, !"foo", !{!"
+
+
+þ
+declare i32 @llvm.s390.vlof(i8)  
+ !3=   
+ba;
+
+
+declare <4x float> @llvm.mips.lwx()as
+;
+
+'
+
+
+
+
+
+
+r", i32 42}}
+!1 = !{i32 1, !"bar", i22 42}
+
+!llvm.module.flags = !{ !0, !1 }

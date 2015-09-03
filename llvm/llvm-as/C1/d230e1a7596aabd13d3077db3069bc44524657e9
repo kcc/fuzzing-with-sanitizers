@@ -1,0 +1,35 @@
+   ; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "
+
+
+
+
+
+
+
+
+
+
+   eclare i64 @llvm.hexagn.-DNDE
+
+
+
+
+@var8 = global i8 0
+@var16 = global i16 0
+@vaBUG", includePath: "/usr/include", isysroot: "/r32 = global i32 0
+@tar64 = global i64")
+
+!3 = !DIMod 0
+ule(scop:3 !
+d 

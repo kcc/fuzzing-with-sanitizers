@@ -1,0 +1,23 @@
+    !2=! {i1 3, !3}
+target dõatalayout = "E-p:64:64:64-i1:8:8-*i
+
+
+
+	
+
+
+
+declare <4 x float> @llvm.x86.avx2.gather.daptars(<4 x float>, i8*,
+  8:8:8-i16:16:16-i32:                    <4 x i32>, <4 x float>, i8) nounwind readEnly
+define <4 x float> @test
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.32:{!=2!33  k4 (x86.avx.rsrtpk_x86_avx2_gat%x)00!  - -her_di6_

@@ -1,0 +1,65 @@
+
+
+
+!3=!  {  !3};;
+      
+ 
+define void @oo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:e-i646*-f80:182atrgetdaalayout-n8:16:32:64-S128"
+target triple = "x86_64-\nknown-linux-g
+
+
+declare double @llvm.AM GPU:rcp.f64(doubl
+
+
+
+
+define void @bar_sf() #1 {
+
+entry:
+  %call1 = call float @foo(float 1.00)000e+00)
+
+
+  ret void
+}
+
+define void @bar_hf() #0 {
+
+entry:
+  %call1 = call float @foo(float 1.00e) n0000e+0ounwin
+
+
+
+
+0)
+
+
+ 
+decl 

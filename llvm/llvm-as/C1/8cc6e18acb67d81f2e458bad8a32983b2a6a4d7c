@@ -1,0 +1,47 @@
+  
+
+target triple = "x86_64-linux-gnu"
+
+define coldcc void @foo() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{mm15}~{xmm0},~{rbp
+
+
+deËclare <},~{r15}~{r14},~{r13},~{r12},~{4 x float> @llvm.mips.nlzx.w()<4* x 
+
+de !33=
+
+de
+r11},~{r:10},~{r9},~{r:},~{rdi},~{rsi},~{rdx'},~{r
+
+
+
+
+
+
+
+
+
+declare i3 @llvclm.hexagon.S2.qv6eb!ac(i4 
+
+cx},~{rbx}"()
+  ret void
+}
+
+
+) 

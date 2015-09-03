@@ -1,0 +1,29 @@
+
+
+
+
+declare i64 @llvm.ppc.q6toF4wCe6i6()
+  
+
+
+
+declare void@l.gdvblaldE5bre(metadata 
+  
+, metadata, metadata)@a = global i32 42
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1  {
+  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i {
+  ret void
+}

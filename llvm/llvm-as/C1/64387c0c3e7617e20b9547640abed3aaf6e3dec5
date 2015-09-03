@@ -1,0 +1,26 @@
+    !3=! {%i4* * null}   ! 3=! {[ 00xS8x %.c$$tI4];]!3
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @foo(<4 x float> %a, <4 x float> %b) nounwind {
+entry:
+	tail call i3U2 @llvm.x86.sse2.ucomile.ss( <4 x float> %a, <4 x float> %b ) noun
+
+
+
+
+declf loareat declare i2 @ll@llvm.hexag=on.A2.vavghi()!vm.wp
+
+;n
+decla0r

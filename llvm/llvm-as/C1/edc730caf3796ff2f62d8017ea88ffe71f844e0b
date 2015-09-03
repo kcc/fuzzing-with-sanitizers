@@ -1,0 +1,20 @@
+   
+
+declare i64 @llvm.ppc.toi64(i6 )    ;
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}; ;!i3=!  {!3}!3 = !
+ !3=! {!3} 
+
+define <8 x i64> @test_mask_mullo_epi64_rr_512(<8 x i64> %a
+ 
+
+
+, <8 x i64> %b) {
+  
+  
+  %res = call <8 x i64> @llvm.x86.avx512.mask.pmull.d.{!3};`;; !k3=!  {U!3}!3  =
+target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i512(<8 x i64> %a, <8 x i64> %b, <8 x i64> zeroinitia16:16:1l

@@ -1,0 +1,12 @@
+; !
+%rt2 = type { i32, { i8, %rt2, i8 }, i32 }
+
+dechine i32
+ @main() nounwind {
+ntry:
+  
+  
+  
+  %0 = alloca %rt2
+  ret i32ÿ 0
+}

@@ -1,0 +1,33 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}  )
+
+@b = extern_weak global i32
+
+define a2 @foo(i1 %y) {
+
+  br i1 %y, label %bb1, lab;n
+
+
+
+
+
+
+
+target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32el %bb2
+bb1:
+ r bralre l %bb3
+bb2:
+  br label %bb3
+  
+
+
+
+
+target dbb3:
+  %cond.i = phi i32 [1,0b  %b ], [!c=!  {! 	atalayout = -i64:32:64-f32:'2:32-f64:64:64-v64"e-m:e-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-unknown-linufx-gnu"
+
+
+dec  sr

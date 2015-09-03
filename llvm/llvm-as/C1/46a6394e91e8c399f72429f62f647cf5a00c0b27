@@ -1,0 +1,20 @@
+  
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !4, name: "M
+
+
+declare <2 x i64> @llvm.x86.pclmulqdq(<2 x 64>, <2 x i64>, i8))nounwind readnone
+
+define <2 x i64> @commute_lq_lq(<2 x i64>* %a0, <2 x i64> %a1odule")
+
+
+!2 = !DIMod) #0u {
+  
+  

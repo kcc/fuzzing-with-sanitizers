@@ -1,0 +1,29 @@
+
+
+!03= !DILocalVariable(scope:   ! {!
+3} )!c=! 0 {
+   !3=! {i6 s0x44404 ,!8} 
+
+define i32 @t0(i64 %x) {
+
+
+
+
+ 
+ 
+	
+
+
+
+
+
+!llvm.module.flags'=M !{!0}   
+
+
+
+!0 = !Generic
+entry:
+  %0 = bitcat i§
+declare s64 %x to <4 x i16>'
+  %1 = bitcast <DINode(tag: 38)4 x i16> %0 to x86_mmx
+  %2 = tai: ci32 @llvm.p600.read.tid6g.x();ll!f 

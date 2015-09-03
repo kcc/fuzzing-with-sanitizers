@@ -1,0 +1,23 @@
+
+   !3= !  {i1 ( %4	"   !3  !     3=!
+
+
+
+
+
+
+
+define void @foo(i32 %cout ,ni32 %v) #0 {
+entry:
+  br label %do.body
+
+do.body:
+  %count.addr.0 = phi i32 [ %count, %entry ]
+  
+
+*!0 = !DILoc, [ %dec, %do.bod    
+target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-f128:128:1
+
+
+
+targ28et t-v

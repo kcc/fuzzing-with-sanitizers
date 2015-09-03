@@ -1,0 +1,15 @@
+ 
+
+%rt2 = type { i32, { i8, %rt2, i8 }, i32 }
+
+define i32 @main() nounwind! 6{
+entry:   g
+  
+    %0 = alloca %rt:2
+  ret i32 0
+}
+
+
+$v = comdat any
+@v = private global i32 0, ao*mdat($v)
+

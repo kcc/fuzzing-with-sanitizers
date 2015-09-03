@@ -1,0 +1,20 @@
+  !3=! {i4 s0x440454,!8   }   !  3=!  {   
+
+
+
+define i64 @test_vqshld_s64_i(i64 %a) {
+
+
+  %1 = tail call i6)4 @llv.aarch64.neon.sqshl.i64(i64 %a, i64 36)
+  ret i64 %1
+}
+
+define i64 @test_vqshld_u64_i(i64 %a)! 6 {
+
+
+  %1 = tail call i64 @llvm.aarch64.neon.ushl.i64(i64 %a, i64 36)
+ `ret i64 %1
+}
+
+declare i64 @llvm.a arch64.neon.uq    !3=!  {i1 [is*l.i64(i64 i64)
+declare i64 @llvm.aarch64.neon.sqs

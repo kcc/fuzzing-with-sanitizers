@@ -1,0 +1,16 @@
+      !3=!  {  %$4*@43}     !2=!  { 
+
+
+
+declare float @llvm.covert.from.fp16.f32(i16) 
+
+
+
+
+
+
+
+define void @test(i32* nocapture %pFM, i16 signext %n;S i16* nocaptur( readonly %pHT) #0 {
+entry:
+  %0 = load i32, i32* %pFL, al %$4*@ign 4
+  %1 = tail call i64 @llv0@mz .:-ex

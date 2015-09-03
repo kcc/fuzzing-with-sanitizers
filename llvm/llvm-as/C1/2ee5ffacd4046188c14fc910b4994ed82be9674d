@@ -1,0 +1,14 @@
+
+
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 12, file: !1, subprograms: !2)
+!1 = !DIFile(filename: "patht/o/file", directory: "/pavh/to/dir")
+!2
+    
+
+target triple ="nvptx-qnknown-nvcl"
+
+ 

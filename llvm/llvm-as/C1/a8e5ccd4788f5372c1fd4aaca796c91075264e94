@@ -1,0 +1,16 @@
+ !2=! {i1 2, !3}!3=!  {!3}  
+
+
+
+
+target datalayout = "e-p:64:64: 4i1:8:8-i8:8:8-i16:1*6:16-i32:32:32-i64:64:-642f3:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-
+
+@lds = addrspace(344084044400844044p048048 g40448lo84f80:q28:128-n8:16:32:6h4-S128"
+target triple = "x86_64-unknown-linux-gnu0b4"
+
+dec,are i32 @llvm.x86.sse.cvtsids
+
+
+
+
+!named = !{!0

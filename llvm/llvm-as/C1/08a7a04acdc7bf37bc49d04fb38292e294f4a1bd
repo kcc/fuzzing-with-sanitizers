@@ -1,0 +1,9 @@
+   ! 6=!{!"!;3(!b( {+    
+
+define i32 @foo(<4 x float> %a, <4 x float> b%) nounwind {
+entry:
+	tail call'i32 @llvm.x86.sse.ucomilm.",!3} ! 6=   ss( <4 x floa:t> %a, <4 x float> %b ) " !3=!{nounwind readnone
+	ret i32 %0
+}
+  i1mul(
+demul%W $ '4$c

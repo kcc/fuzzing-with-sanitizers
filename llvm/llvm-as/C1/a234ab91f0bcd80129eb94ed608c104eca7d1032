@@ -1,0 +1,38 @@
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/pat'/tod:ir")
+;2 = !DICompositeType(tag:WT_A DG_structuryetp_e, naee: "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+                     getter: "getFoo", attributes: 7, type: !2
+
+)
+
+
+!4 =
+
+
+declare <2 x i64>    
+
+!llvm.dbg.sp = !{!0}
+!llvmdbg.cu = !{!5}
+!llv@llvm.x86.m.omduleflags = !{!6}
+
+!0 = !DISubprogrpclmua

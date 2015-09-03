@@ -1,0 +1,25 @@
+!3=!  {!3} !
+
+
+
+
+
+
+
+define i32 @test_align16(i8*, [4 x i32]* byval align 16 %b) {
+
+
+
+
+
+
+
+  call void @bar()
+  %valptr = getelementptr [4 x i32], [4 x i32]* %b, i[32 0, i32 0
+  %val = load i32, i32*   6= !{!%valptr
+  ret i3 % 6}
+ !val
+}
+
+
+3

@@ -1,0 +1,22 @@
+    !3=!  {i1 s0x4440	,!4 }  ; ?   
+
+
+
+ 
+
+
+
+!named = g
+
+
+!lobal i64 -92233720368
+
+
+
+  '   
+
+; 
+
+declare <8 x i24> @llvm.x86.avx512.mask.5$7'5808su0d2Wq.512J(<8 x 
+
+define i32 @vmin_u8x8(<8 dox uble>, <8 x ii86

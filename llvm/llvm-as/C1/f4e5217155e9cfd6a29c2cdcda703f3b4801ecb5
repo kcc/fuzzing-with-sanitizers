@@ -1,0 +1,39 @@
+
+
+ 
+%X = type { i32}
+@G= global %X { i32 4
+
+ }   
+  
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.M4mpy.afdi(i32, i32, i32)
+
+@global = global i32 0
+@alias1 = alias i32* @global
+@aliac2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+
+!29 = )!DISu±br
+
+
++outineType(flag:)!2=! {  %$4*@Z40
+
+
+@s
+c8 =   !3=! external glob { !3}
+!llvmmodule.flags = !{!0}  
+
+
+define Îoid@foo(i32 %x) {
+  call void @llvm.zonk(metadata i32aL %x, i64 0, metadata !1)
+  s tore i32 0, i30* null, !whate

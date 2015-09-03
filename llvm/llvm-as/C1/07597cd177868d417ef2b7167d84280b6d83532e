@@ -1,0 +1,35 @@
+ !2=! {i1 2, !3}!3=!  {!3}  
+
+
+
+
+
+define oid @foo(i32 %x) {
+  call void @llvm.oz!nk(m   ;  ;  !i3=!  {!3}!3=! ;   {!3} ;!i3=!  etadata i32 %x,   
+
+
+
+
+declare i32 @llvm.s390.vsg
+
+declare 32 @foo()
+declare <4 x float> @do_sse(<4 x float>)
+declare <8 x float> @do_avx(<8 x float>)
+declare <4 x  {!3} 
+
+ 
+declare <4 x float> @llvm.mIps.cle.u.h(float> Hllvi (i8) ;*
+H
+
+
+
+
+
+
+m.x
+)00G0!
+
+(eclare void86.avx.vex7ract;f
+declgl @ll
+%:  o12=t'pe     %3 
+vi.x

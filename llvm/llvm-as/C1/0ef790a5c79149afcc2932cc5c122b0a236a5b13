@@ -1,0 +1,10 @@
+!3=!{!3} ! 6= !{! 6}    
+
+
+
+%M = type Opaque
+
+
+global void (%M*)* @foo		
+
+d!efine void @foou.pgrd.1(i32* %

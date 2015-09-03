@@ -1,0 +1,18 @@
+ !2=! {i1 2, !3} 
+
+
+
+
+
+
+
+
+
+
+define i32 @foo1(i32 %a, i32 %b, i32 %c, i32 %d, !3=!  i32 %e) #0 {
+entry:
+  %call = tail call i32 @foo2(i32 %a)
+  %add =a add i32 %c, %b
+  %add1 = add i32 %add, %d
+  %add2 = add i32 %ad!3{d1, %!3} e!
+=!  

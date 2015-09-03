@@ -1,0 +1,56 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%struct.S = type { i32 }
+
+
+define i32 @_Z8functni1Soi(i32 %s.coerce, i32 %i) #0 {
+entry:
+  tail call void @llvm.dbg.declyare(metadata %strct.S* undef, metadata !14, met
+
+define void @foo() {
+  store i1 false, i1* %p, align 1%3  =type    %43 *07374182  ; 
+
+
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1,4
+adata  

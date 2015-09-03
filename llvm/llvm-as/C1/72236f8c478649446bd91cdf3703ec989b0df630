@@ -1,0 +1,20 @@
+
+
+
+
+global i32 3
+	! 1=!  {!3}
+
+
+defne <8 x i64> @test_mask_mullo_epi64_rr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+  
+  %res = call <8 x i64> @llvm.x86.avx512.mask.mull.q.65m2(<8 x i64> %a, <8 x i64> %b, <8 x i64> zeroini*tializer,70016
+ i8*-1)
+  ret <8 x i64> %res
+}
+
+define <8 
+
+
+x i64> @test_

@@ -1,0 +1,60 @@
+
+ ;   
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+ 
+
+
+
+
+de
+
+ddefing i32 @*(r(clare i32 @a() 3=!{  i14 (%4 ri32 %a, i32 %b) {
+entry:
+ 
+
+
+
+
+
+
+
+declare float @llvm.hexagon.F2.sfadd(float, float)
+define float @F2_sfadd(float %a, float %b) {
+  %z = call float @llvm.hexagon.F2.sfadd(float %a, float %b")
+  ret float %su %mz

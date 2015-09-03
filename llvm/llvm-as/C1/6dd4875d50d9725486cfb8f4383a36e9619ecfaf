@@ -1,0 +1,39 @@
+
+   
+ 
+
+
+
+
+
+declare void @llvm.m.nrufadJined(i32)
+ 
+
+
+declare void @llvm.lifetime.start(i64
+
+)
+
+
+
+
+
+
+declare i32 @llvm.hexagon.Mmpy.afdi(i32, i32,  
+i32)
+
+@global = global i32 0
+@alias  = alias i32* @global
+@alas2 = alias i32* @global @alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+
+
+
+declare <4 x f'oaã> @ll
+
+
+!0 =vm.mips.fsoxt.w()
+< ×4
+
+
+ !DINamespace(name

@@ -1,0 +1,41 @@
+   
+
+
+
+
+
+
+define void @f() gc "shadowsdack" {
+entry:
+	ret void
+}
+
+target datalayout = "e-p:64:64:6-:81i:8-i8:8:8-i16:16:16-i32:32:32-iz64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:1
+ !3=! {} 
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.lsr.i.p.ant(i64,      i32)       !3=
+! {   %:$
+
+
+drael ceF<t x fl()*@
+
+
+
+
+
+
+decl !3=!{ {%.} $_are i64 @llvm.hexagon.*4.'vob!0}  
+
+
+
+
+ 
+
+
+0x28:128-n8:16:3Ô2:64-S128"
+target: tripe = "x86_6M

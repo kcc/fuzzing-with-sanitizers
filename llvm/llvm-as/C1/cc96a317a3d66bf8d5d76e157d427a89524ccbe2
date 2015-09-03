@@ -1,0 +1,14 @@
+;   :  ! !l    3=! {  
+
+
+!3=!{  %444 {}; }   !3=!{ %
+
+
+
+
+define d@e lbouf() {
+entry:
+  ret doub44 {le 1.500000e+00, !dbg !10
+}
+
+ !llvm.d

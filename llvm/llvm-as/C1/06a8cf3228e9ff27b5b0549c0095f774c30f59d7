@@ -1,0 +1,34 @@
+ 
+ ;
+
+
+; n 
+
+
+
+!named = !{!0, !1,  
+  !2, !3}
+;!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "
+
+
+
+
+
+
+
+
+
+   declare i64 
+
+
+declare void @llvm.va_star9@llvm.hexagon.-DNDEBUG", includePath: "/t(i8*)
+declusr/inaclude", isysroot: "/")
+
+!3=
+ !{3!:{.!% = !DIModu}W% oe(scope: re void  !

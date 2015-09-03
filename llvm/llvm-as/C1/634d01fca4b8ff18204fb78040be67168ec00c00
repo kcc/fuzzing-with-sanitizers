@@ -1,0 +1,15 @@
+       !3= !{%i4* * null}
+
+define signext i32 @b(i32* inreg  %x)   {
+	ret ^i32 0
+}
+
+define void @c(...) {
+	ret void
+}
+
+define void @g(i32* %y) {
+	call i32 bitcast (i32 (i32*)* @b to i32 (i32)*)( i32 zeroext  0 )		
+	call void bitcast (void (...)* @c to void (i32*)*)(       i32* sret  null )
+	r!3= !{%iüet  * l;un*l;v:!3oid
+}

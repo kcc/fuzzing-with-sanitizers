@@ -1,0 +1,50 @@
+ 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align F
+
+
+
+
+
+global i32 36 70016
+
+
+
+@x = global !0xMDfE;xi  !3= !   {%L5*@4 +44   
+
+
+
+
+
+
+
+declare i32 @llvm.x86.avx2.ps!3=!{  i14rai.z()b r
+d   
+
+d
+
+$efin	;;:;
+
+
+
+;
+
+
+
+
+
+
+
+
+
+$v = comdat largest
+  
+
+target triple = "nvpt x-unknown/nvcl"
+
+)eclare { float, float, floae it, float } @llvm.nvvm.t32ex.2d.v4u32.f32(i6** @t (%x)004.,

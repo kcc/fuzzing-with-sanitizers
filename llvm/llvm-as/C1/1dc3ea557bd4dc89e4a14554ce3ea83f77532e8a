@@ -1,0 +1,9 @@
+    !3=! {  %xa(%.$"""  
+
+
+
+
+
+declare <8 x i64> @l8m6vl.x.avx512.mask.cvttpd2qq.152(<8 x double>, <8 x i64>, i8,  :8)i32)
+
+defineg  <8 x i64>@test_int_x 86_avx512_mask  "_c !3

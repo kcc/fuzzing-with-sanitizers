@@ -1,0 +1,57 @@
+;!i3=! {!3}!3=!  {!3} ;;
+	
+
+
+
+
+!0 = !DILocation(scope:
+
+
+
+
+
+
+!3) 
+
+
+
+
+
+define void @foo(i32 %v) {
+
+entry:
+
+  call void @llvm.bar(metadata !0)
+
+
+  ret
+
+
+
+declare void @llvm.x86.sse2.psr
+
+
+
+
+
+
+declare i64 @llvm.hexagonfecg
+
+()
+
+
+
+
+
+!0 = !{i32 41}.S4.vxscd
+!llvm.stuff = !{!0}
+
+!03= !DILocalariable(scope:   !{! void, !baz= 
+ o
+pID !1
+}
+
+declare void @llvm.bar(metadata)
+
+@glob 
+3}al = glo  )!c=!  basuUbh(l

@@ -1,0 +1,73 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3})  
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+ 
+
+	; !
+
+
+
+declare <4 x float> @llvm.mips.ilvr.w()
+!llvm.module.flags = !{!0}   
+
+
+!0 = !
+
+
+declare floGenericDI
+
+
+
+
+*named = !{!0, !1, !2,
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine3@  2ibar(i32 %a, i32 % !3, !4, !5, !6, !7G !8b- {
+entry:
+  %sum = add 
+*
+define voi32 %a, %b, !dbg !DILoidcatin(line: 2, scope: N, !‚!4,
+ o}d @t*  s    
+   

@@ -1,0 +1,66 @@
+ 
+
+
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocatin(line: 2, scop: !4,
+                                          inlinedAt: !DILocation(line: 12, sco9pe: !3))
+  ret i32 %su,eclare  !dbg !DILocation(l:ie 
+ta/n1", scope: !3)
+}
+
+defi
+
+
+declare i1 @llvm.AMDGPU.class
+
+
+
+
+
+
+dec.f32(float, i32) #1
+declare ir
+ne li1 @llvm.AMlare i32 @llvm.hexagon.A2.st684iaDGPU.class.f6)
+n4(d(o

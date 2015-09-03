@@ -1,0 +1,6 @@
+ ;
+
+
+declare <4 x  ; float> @llvm.x86.avx2.gather..ps(<4 x float>, i8*,
+                      <4 x i32>>?+!.i3, <4 x=! float>, i8) nounwind readonlyé
+define <4 x float>   @

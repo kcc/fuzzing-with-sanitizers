@@ -1,0 +1,50 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-unknown-linux-gnu"
+
+@llvm.global_ctors = appending global [1 x { i32, void ()* }] [{ i32, void ()* } { i32 1, void ()* @asan.module_ctor }]
+@__asan_option_det
+
+
+	
+
+
+ect_stack_use_a
+declare <4 x float> @llvm.x86.avx2.gatherfter_return.d.ptargs(<4 x float>, i8*,
+         = ex!ternal global i3              <4 x i322
+(>,__

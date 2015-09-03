@@ -1,0 +1,38 @@
+
+
+declare void @llvm.memset.i32(i8
+)
+
+
+
+
+
+
+
+
+
+
+!0 = !{ i32 1, !"f
+    e d
+
+
+ clare void@ll
+
+£
+oo", i32 37 }
+!1 = !ï{ i32 2, !"bar
+
+declare22 3@li
+
+
+declare < x float> @llvm.x86.sse.max.ps()<4 x lvm.hexagon. 
+
+float
+A4.rcmpngd,( i3i322 )
+ ! )vm.ppundefinexH8d(i32) 
+!
+"
+,i32 42 
+
+
+declare <}

@@ -1,0 +1,54 @@
+!3=! {!3 }  
+
+
+
+
+
+
+
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prologue i3* @i {
+   
+
+
+
+
+
+ !7=! {!3 
+
+
+@fn.codetable = internal unnamed_addr constant [3 x i8*] [i8* blockaddress(@fn, %RETURN), (8* blockaddress(@fn, %INCREMENT), i8* blockaddress(@f
+	
+
+
+
+
+
+
+}
+
+!named = !{!0, !ret v
+
+
+
+
+declare <4 x float>@llvm.mips.bseHo1, !2, !3, !4, mwx()< 
+s
+
+d !5}
+
+!0 = distinct !{}
+=1  n, %DECREMENT!e

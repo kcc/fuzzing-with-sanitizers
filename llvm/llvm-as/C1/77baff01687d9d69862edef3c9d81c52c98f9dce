@@ -1,0 +1,20 @@
+
+
+
+
+%X = type { i32 }
+@G = global %X { i32 4 } ;i;;:T
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sideeffect "nop", "=y,~{mm},~{m3m},~{mm4},~{mm5},~{mm
+
+target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:36},~{mm7}"()
+  %2 = call x86
+
+; !p
+
+
+
+def2:64-f32:32:32-f64:3ê:64-v64:64:64-v128:128:128-ine < 4a0:0:64-f80:12 8x :1fl

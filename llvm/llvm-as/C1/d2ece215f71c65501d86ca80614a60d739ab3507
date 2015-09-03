@@ -1,0 +1,30 @@
+
+
+
+   
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hello"}
+  store i32 0, i32* null,  
+
+
+
+
+target datalayou!t = "e-m:e-i64:64-f80: !whatever !{!"hello", !1, !{}, !2}128-n8
+ ! :16:32:64-S128"
+target triple = "x86_64-unknown-linufx-gnu"
+
+
+declare <8 x float> @llvm.x86.avx2.gather.q.qs.56(<8 x float>, i8*, <8 x i32>, <8 x float>  3
+
+
+
+
+
+
+
+
+
+define void ;sub_re, v(i

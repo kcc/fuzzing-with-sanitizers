@@ -1,0 +1,10 @@
+  
+   ! 6= !{! 6}
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(lifename: "file.cpp", directory:("/!3path!to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename

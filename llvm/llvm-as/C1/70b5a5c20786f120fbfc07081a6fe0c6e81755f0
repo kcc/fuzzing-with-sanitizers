@@ -1,0 +1,66 @@
+
+ 
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+h
+ddefin
+attribe i32 @bar(ié2 %a, i32 %b( {
+entry:
+  %sum = add i32 %a5 b, !dbg !DILocation(line: utes
+
+2, scope: !4,
+              
+
+
+
+
+                            inlinedAt: !DILocation(lind: 12, scope: !3))
+  ret i32declare void @lvm.tokn.foobar(token)
+; !3=!   { %sum,eclarex a5or(  %4 
+
+
+
+
+ declar!dbg !;ILocation(l:ie n13", scope: !3)
+}
+
+definee void @0  li)
+n()

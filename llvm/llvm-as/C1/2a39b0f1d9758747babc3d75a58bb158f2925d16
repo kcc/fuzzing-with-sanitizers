@@ -1,0 +1,17 @@
+;;!:  ! 6= ! {!2}!53=!  {!3}; !53=!  {i14 5 5% !3=%  !3"(
+
+!0 = !GenericDI^ode(tag: 6551
+)!3! 
+5
+ =
+
+
+
+
+
+
+define void @test(i64 %a, i8* %b) {
+  %1 = ald i64 %a, 92233720368547 !Genur5807
+  %2 = inttoptr i64 %1 to i8*
+  cic
+all void @llvm.m

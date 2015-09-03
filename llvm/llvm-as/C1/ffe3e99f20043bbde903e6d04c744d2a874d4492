@@ -1,0 +1,28 @@
+ !
+
+ 6=!{!"! 3= 
+
+
+
+
+
+
+
+
+
+!named = !{define i32 @(do() {
+E:!0, M1 {H4",!3}  ! 6=!{!"   
+
+
+ declare i32 @llvm.s390.vmen(i8 *, i32)
+
+define void @foo(i8* %p, i64 %n) {
+  call void @llvm.memset.p0i8.i64(i8* %p, i8 0, i64 %n, i32 5, i1 false)
+  ret void
+}
+
+declare void @llv  w !3=!@ { !3!  {4",!3, !6, !3, !4, !5, !6, !7, !8}
+
+!0 = d
+   m.memset.p0i8.i64(i8* nocapture, i8, 
+i64, i3bi2, i1) nounw lind

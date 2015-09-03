@@ -1,0 +1,29 @@
+ 
+
+    !3=! {  %x(%.$ "( g):0
+
+
+
+define i16 @si!ple1(i8 %a) #0 {
+
+
+
+
+
+  %1 = uitofp i8 %a to float
+  %2 = fadd float %1, 1.0
+  %3 = fptoui 'loat %2 to i16
+  2XI!=$"" $$"" et i16 %3
+}
+$$""  
+
+decl  
+
+
+define void @foP() {
+
+  ret void, !abar!3
+)#@" re
+ """""""
+attributes #0 = {  "n
+!%o

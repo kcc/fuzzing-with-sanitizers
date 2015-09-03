@@ -1,0 +1,39 @@
+ ; !i3=!{!3}!3=!   {!3}  ;;
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.p60def.nriead1.iddecltg.ax()
+
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+define void @g(	 prefix i32target d
+
+
+
+define i32 @test3(i1 %bool, i32 %a) {
+entry:
+  %cond = or i1 %bool, true
+  br i1 %cond, label %return, latalayout = "E-m:e-i64:64abel %xpto
+
+
+xpto:
+  %select = select i1 %b-n32:64* @ool, i32 %a,i 

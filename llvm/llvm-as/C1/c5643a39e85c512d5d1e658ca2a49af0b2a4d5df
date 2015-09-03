@@ -1,0 +1,42 @@
+!3=!   {!3}; >  
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/pah/todir")
+;2 =!DICompositeT{pe(tag: DW_TAG_structur_type, name* "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setF)oo",
+                     getter: "get 
+uargEt dao", attributes: 7, type: !2)
+
+
+!4 =
+
+ 
+
+define i64 
+
+	
+@targt0(x86_mmx* % !gp) {
+
+
+
+
+
+
+  %t = loadD x8&_mmx, x86_mmx*
+
+
+!0 = !DISubrange(count: 30, lowerBound: %p 92)220

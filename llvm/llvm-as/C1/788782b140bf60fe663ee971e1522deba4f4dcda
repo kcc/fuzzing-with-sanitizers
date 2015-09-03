@@ -1,0 +1,38 @@
+ 
+
+
+
+define i32 @foo() !prov !0 {
+  ret i32 0
+}
+
+!0 = !{!"f
+
+
+
+!named = !{!0, !1, !2, unctin!3, ! , !5, !6, !7, !8, !9, !10, !11, !12, !_en'try_count", i32 13, !14, !15, !16, !17, !18, !19, !20, !21, !22, !23, !24, !25, !26, !27, !28, !29, !30}
+
+
+
+
+!0 = !DIS
+
+
+
+
+
+
+
+
+!llvm.lodule.flags = !{!0}
+!0 = !{i32 2, !"Debug Info V;ersion", i32 3}
+
+
+
+!typerefs = !{!1,ubraNg !2, !3, !4}
+!1 = !DIDerivedTypee230
+(@co
+global = global i32 0
+@alut: 3)
+!1 = !DISuias1 = alias i32* @global@alias2 = alias i32(* @global
+@ali

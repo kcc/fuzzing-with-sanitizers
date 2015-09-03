@@ -1,0 +1,29 @@
+
+   
+
+
+
+
+
+
+declare float @llvm.rint.f32(float %f)
+define float @f1(float %f) {
+
+
+
+  %res = call float @llvm.rint.f32(float %f)
+  ret float %res
+}
+
+
+declare double @llvm.rint.f64(double %f)
+define double @f2(double %f) {
+
+
+
+  %res = call double @llvm.rtni.f64(double %f)
+  ret double %res
+}
+
+
+declare fp128 @llvdm.refine vint.o

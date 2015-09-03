@@ -1,0 +1,19 @@
+     ; 
+
+
+
+%X = type { i32 }
+@G = global %X {i32
+ 4 }
+
+
+@
+
+
+R = ext:rnal global x86_mmx		
+
+define  
+
+define i32 @main() #0     void @foo(<1 x i64> %A, <1 x i64>(%B) nounwind {
+entry:
+	  #3=!{%  i1tmp: = bimut

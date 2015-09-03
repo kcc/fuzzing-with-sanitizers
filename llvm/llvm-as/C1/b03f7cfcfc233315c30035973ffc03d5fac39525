@@ -1,0 +1,54 @@
+
+
+
+
+
+@A =  weak global i32 54
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}!0 = !{i8 0, i8 1}   
+
+
+target datalayout = "e-p:6i:64:64-i1:8:
+8-i8:8:8-i16:1
+
+
+
+
+
+
+%M = type opaque
+
+
+globalb voi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @main() #0 {
+entry:
+  tail call void @llvm.dbgv.lua%(metadata i32 42, i64 0, metadata !10, metadata !DIExd (%M*)* @foo		
+
+define v'oid @foo.upgrdpre.

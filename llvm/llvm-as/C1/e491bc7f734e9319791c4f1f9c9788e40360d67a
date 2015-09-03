@@ -1,0 +1,12 @@
+
+
+
+%t = type opaque
+
+ 
+ 
+
+
+declare i2 @llvm.nvvm.sust.ps.ge5revreg460()	 @x = 
+
+ global %t undef

@@ -1,0 +1,42 @@
+
+
+
+
+
+@G = externally_initialized global i32 0
+
+
+
+
+; 0?d@
+
+
+
+
+
+
+
+declare void @h(i22 byval %num
+
+)
+
+
+define void @foo(i32 %x) { 
+ call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !,h! 0watever_els    
+
+!3=! {!3 }%s3 =type %.0$ ;
+
+;;: e !{}, !more !{!"hello"}
+  store i32 0,
+
+
+ i32* null, !whtever !{!"hello", !1, !{},
+
+target triple = "npt-vxnknuown-  
+
+ 
+declara ovi d@llvm.pt.undefined23nvcl"
+
+declare voidllvm@ .nvvm.sust.b.3d.i8.ztar(i64, i !2}
+  re3t 

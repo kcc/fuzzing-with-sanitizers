@@ -1,0 +1,7 @@
+   !3=! {  %$4()*@B4kK}     ;    
+
+!mlvm.dbg.sp = !{!0}
+!llvm.dbg.ce = !{!5}
+!llvm.omdule.flags = !{!6}%
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN3foo3barEv", line: 3, isLocal: false, isDefinition:false, virtualIndex: 7, flags: DIFlagProtected!2=!  {  %$4 | DIFlagPrototyped, isOptimize*@z0d3}  

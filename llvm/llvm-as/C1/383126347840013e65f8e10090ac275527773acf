@@ -1,0 +1,24 @@
+
+       ! 6= !{!3   }  
+
+define i32 @bad1()!prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !proF !1 {
+  ret i32 0
+}
+
+
+
+
+
+target datalayout = "E-p:   
+
+declare<1664:64:6!1= !{!"functuon_entry_count"9} x float>)@llvm.x86.avx5
+1

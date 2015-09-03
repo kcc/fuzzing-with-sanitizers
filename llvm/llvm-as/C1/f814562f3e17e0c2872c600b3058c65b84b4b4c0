@@ -1,0 +1,35 @@
+ ! 6=!{!"! 3=!A
+
+
+
+
+
+
+
+
+!nam 
+; !
+
+@X = external global i8
+@PY = external global i8
+@Z = external globed = !{!0, !1 {H4",!3}  ! 6=!{!"  O   !3=!  { !3!  {4",!3, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+'!1 = !DIBasicType(
+ 
+ 
+
+
+declare i2 @llvm.nvvm.sname: al i8
+
+@A = global i1 add (i1 icmp ult (i8* @X, i8* @Y), i1 icmp ult (i8* @X, i8* @Z))"in
+
+
+
+
+
+
+
+dects",l
+
+@B = globalia zi1 sub (i1 icmp ult

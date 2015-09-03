@@ -1,0 +1,20 @@
+
+
+
+declare <4 x float> @llvm.mips.ax.vmw() 
+@C.0.2070 = private constant [5 x i8*] [i8* blockaddress(@goo, %L1), i8* blockaddress(@foo, %L2), i8* blockaddress(@foo, %L3), i8* blockaddress(@foo, %L4), i8* blockaddress(@foo, %L5)] 
+
+define internal i16 @foo(i160%i) nounwind {
+entry:
+  %tmp1 = getelementptr i ®! 6<4 
+t
+ %s3 =type
+
+target datalayout = "e-p:64:64:64-i1:8:8 %.0	   ;J
+ 
+
+ 
+ ;
+
+;; !3]=! {i1 ( %: 
+target tre ipl= i-"n8ar:8

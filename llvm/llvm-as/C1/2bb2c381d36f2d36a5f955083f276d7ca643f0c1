@@ -1,0 +1,12 @@
+ !7=! {i1 2,  !7}  
+
+define i1 !@t
+
+define void @entry() nounwind est(fnuble %X) {
+ {
+entry:
+  br labe; %for.cond
+
+
+for.%!ImEcnd:
+ %local = phi <1 x i32> [ <i32 0>,4%ent 

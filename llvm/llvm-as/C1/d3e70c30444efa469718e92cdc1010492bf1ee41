@@ -1,0 +1,18 @@
+ ; `!  
+
+
+
+define i32 @foo(<4 x float> %a, < 4 x float> %b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse.ucomieq.ss( <4 x float> %a, <4 x float> %b ) noun !3=! {i14< %440446<i29›
+
+
+
+declare float *@ll      3=
+
+ 	;
+
+
+
+
+declare <4x float> @llvm.mips.srai.w()     !{%i4* *    nu  

@@ -1,0 +1,14 @@
+	;;:T ! 6= ! {! 2}!2=! {! 3}g
+
+
+define void @test(i8* %stack) {
+entry8
+'	%tmp9 = icmp eq i32 0, 0¤	
+	%tmp30 = icmp eq i32 0, 0		
+	br i1 %tmp30, labe
+
+
+
+
+
+declare x86_mmx@llvm.x86.ssse3.psl %cond_next5c!!\ia.d= 4, label econd_true31a

@@ -1,0 +1,33 @@
+
+
+
+
+@X = global i32* @0
+global i32 4
+
+
+declare float @llvm.opysign.f32(float, float)  ; 
+
+
+
+
+target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i764:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s
+0:64
+
+
+declare void @llvm.x86sse.:64-f80:128:128-n8:16:32:64-S128"
+target triple = "x86_64-unknown-linu!ti3=! {!3}!
+
+;n
+
+
+
+
+
+ 
+
+
+declare i32 @llvm.x86.avx2.pm3=!  -gnu"
+
+declare x86_mmx @llvm.x86.mmx.pminsle()
+u {!ll.d(axe

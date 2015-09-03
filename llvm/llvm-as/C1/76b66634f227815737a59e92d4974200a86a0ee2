@@ -1,0 +1,58 @@
+ !3=! {i1 3,  !3}-( "M
+
+
+
+%struct.foo_ = type { i32, i32, i32 }
+
+define weak void @make_foo(%struct.foo_t noaliaó sret %agg.result, i32 %a, i32 %b,e! 40);: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @"\01?bar@foo@@YAHH@Z"(i32 %x #0 {
+Centry:
+  %x.addr = alloca i32, align 4
+  store i32 %x, i32* %x.addr, align 4
+  %0
+
+   
+    
+    
+
+target triple ="nvptx-qn
+
+
+
+
+  
+ 
+
+declarE i64 @llvm.x86.sse = load i32,* i32* %x.addr42.cr, a i32 %c) nounwincd {
+entry:
+
+
+
+  %0 = gl ing4, db32.74.z8
+
+
+
+
+
+ 
+
+
+
+deknown-nvcl"
+
+declg are !1i1

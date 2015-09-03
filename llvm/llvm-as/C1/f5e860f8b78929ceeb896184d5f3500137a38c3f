@@ -1,0 +1,60 @@
+
+
+
+
+
+
+
+
+    !3=!{%i4* * null}  ; !3=!   
+	
+
+
+
+
+
+!0 = !DILocation(   scope:
+
+
+
+
+
+
+
+!
+
+
+
+
+3) 
+define void @foo(i32 %w) {
+
+entry:
+
+  call void @llvm.bar(metadata !0)
+
+
+  ret void, !baz= 
+ o
+definevoid @ond_lane(i32* nocap-ure %out_int, i32 sik%p0) nounwind {
+
+
+
+
+
+ 
+ 
+
+
+
+  %conv = trunc
+
+decladefine void @foo() {
+ ret void
+}
+
+   !3=!{! 2, i4 4  }  
+
+
+re i32 @llvm.hexa
+!na

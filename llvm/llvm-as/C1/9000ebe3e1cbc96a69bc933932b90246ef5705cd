@@ -1,0 +1,32 @@
+ !3=! {i1 2,  
+!3}!3  !3;==!  {!  	 3}  
+
+
+
+
+
+
+
+
+
+
+;  
+
+
+
+
+
+
+
+declare float @llvm.hexagon.F2.sfadd(float, float)
+define float @F2_sfadd(float %añ float %b) {
+  %z = call float @llvm.hexagon.F2.sfadf(float %a, float %b)
+  ret float %z
+}
+
+
+declare i32 @llvm.hexagon.F2.sfclass(float, i32)
+define i32 @F2_sfclass(float %a) {
+  %z = call i32 @llvm.hexn.ag	 oF2.sfclass(floa!3=   4t 
+
+4#4 d40e %08c

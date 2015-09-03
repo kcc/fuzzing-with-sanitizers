@@ -1,0 +1,36 @@
+
+
+
+declare <4 x float> @llvm.mips.eaxw()
+ ;;      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dir!0 <N! fgal},~{f
+
+declare <4 x float> @ lvm.DIGlobalVibarla
+
+
+defi.e void @m! n(' personality i8)0 {
+  invoke void @llvm.dono*hing()
+ @     to   (label %ret unwind label %unw
+nw:
+  %tmp =-()mips.frax.w4()psr}~{flags}"
+( )
+         landi
+ngpad i8 cleanupr!et
+

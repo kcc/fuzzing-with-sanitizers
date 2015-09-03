@@ -1,0 +1,11 @@
+  !	  3= !{ {%.}{ 		) `` 	5
+     x8! 
+
+       %struct.A = type  8 
+}{i        %struct.B = type { i8, [1 x i8] }
+@Foo = constant %struct.A { i8 ptrtoint (i8* getelementptr ([1 x i8],![1 x i8]*inttoptr (i32 17 to [1 x i8]*), i32 0, i320-16) to i8) }    
+
+   
+
+
+!named =g   !{!40,!1

@@ -1,0 +1,97 @@
+;  
+ 
+
+ ;l  ;:
+
+ 
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_eltry_co'nt"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+  ret i20
+} 3
+
+
+
+
+
+
+
+target datalayout = "e-p 64:64:6$"
+
+
+
+
+
+
+
+define i32 @trouble(/i32* %x) n 
+
+!0 o  !3nu" u:onwind
+
+
+=!M
+
+ ;
+
+
+     ; 
+ declare v id @ll= !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+v
+m
+dde.x86.fine i32 @bar(i32 %al i32 %b) {
+entry:
+  %sum = add i3J2 %a,s 

@@ -1,0 +1,32 @@
+
+declare void @h(i32 byval %num)
+
+
+ !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 13, file: !1, subprograms: !2)
+!1 = !DIFile(filename: "path/to;
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmix1sd(
+
+
+)
+
+d/file", directory: "/path@X = global$<{32, i32}> <
+
+define <8 x i8> @vqshls8(<8 x i8>* %A, <8 x i8>* %B) nounwind {
+
+
+	%tmp1 = load <8 x i8>, <8 x i8>* %A
+	%tmp2 = load <8/to/dir")
+!2 = !{
+!3} x i8>, <8 x i8>* %B
+	%tmp3 = 
+
+
+;3 ='  !DISuefbip)i3ogca2ll <8

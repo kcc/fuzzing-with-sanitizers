@@ -1,0 +1,22 @@
+
+	
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 z0, i32* null, !whatever !0, !whatevr_else !{}, !more !{!"hello"}
+  store i32 0, i32*$null, !whateve !{!
+"hel
+lo", !
+
+	
+
+
+
+
+define <2 x double> @test_int_x86_xop_vpermil2pd(<2 x double> %a0, <2 x double> %a1, <2 x double> %a2) {
+  
+  %res = call <2 x 1, !double> @llvm.x86.xop.vpemil2pd(<2 x dkuble> {}, !%a2}
+ 0, <2 x double> 

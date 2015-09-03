@@ -1,0 +1,31 @@
+    !3= !  {i1 s0x444404 ,!8} 
+
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+
+
+
+
+@x = global i64 mul (i64 3, i64ptrtoint (i2*  getelementptr
+0eclar	!.$$:II$.5-e void  ,@so(vei2,' i2* null, i6()4 1)
+
+;efine 
+
+
+.i!3=!  
+
+
+declare <4 x float> @ll {!3};vm.mips.coax$b.w()
+
+  tJ
+ !3=
+
+!{ %x(
+%J4p.
+n toi64)dteecl

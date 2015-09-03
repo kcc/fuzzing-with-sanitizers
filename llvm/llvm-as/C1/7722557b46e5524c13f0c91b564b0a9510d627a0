@@ -1,0 +1,31 @@
+ !3=! {! 2,     i4   4 }   
+
+
+
+
+
+declare void @llvm.x86.sseF.nelcfe()    
+
+
+
+
+
+define i8 @test0_yes(i8* %(aP, i8* %b) nounwind {
+  %x = load i8, i8* %a, !tbaa !1
+  store i8 0, i8* %b, !tba  !2
+  %y = loqd i8,   
+ !  $  
+  i8* %a,
+
+declare i64 @llvm.x86.fse42.crc32.64.8(i64, i8) 
+n !tbaa !1
+  %z!= add!1ounwind
+de
+
+=!{<  {  %> ni8!*
+ 6= ! {! T %x, %{
+  re!t i83 %j
+} 
+
+
+definne i8 @tset0_}no(o

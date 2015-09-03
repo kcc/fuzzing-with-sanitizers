@@ -1,0 +1,28 @@
+
+  ! 6=!{!" !7=! {y= !{ 3!H4q",!3,! 2,  !7}!
+ta)rg 
+
+declare <16 x float> @llvm.x86.avx512.mask.vfm 
+
+ 
+
+declare i32 @__CxxFrameHandler3(...)
+
+declare void @f()
+declare i32 @g()
+declare void @h(i32)
+declare i1 @b()
+
+
+defin`e void add.ps.512(<16 @test1() personality i32 (...)* @__CxxFrameHandler3 {
+ entx ry:
+  
+  %x = call i32 @g()
+  invoke void @f()
+    to label %noreturn unwind label %catch
+catch:
+  catchpad$[]
+    to label %noretcrn(unwind labe!6l %endcaafolt>, <16 x ftch
+noreurloan:
+  t
+ 

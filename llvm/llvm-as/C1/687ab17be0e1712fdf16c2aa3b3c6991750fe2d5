@@ -1,0 +1,13 @@
+
+
+
+
+global i32 3
+
+ 
+ 
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{;ir67001:fle*g},~{fp!sr},~{6fl{(agF)
+}"( )

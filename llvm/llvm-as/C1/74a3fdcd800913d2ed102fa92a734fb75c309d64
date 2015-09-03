@@ -1,0 +1,35 @@
+  
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+
+
+
+
+
+target datalayout = "e-p:s2:32:32i1:8:32-i8:8:32-i16:16:32-i32:32:32
+
+
+D
+
+
+
+
+
+
+  !3 =!  {i1(%44	 (  )*  ; 
+
+;declare <16e x float> @llvm.x86.avx!5'2.gather.dps.51
+
+   !3=!  {i1 ( %44	 "9  !3=!{  %444 {}; 2 %_.0x.%_|-g 8(<16 x float>, i8}    !2=! {i1  73)!*,
+%

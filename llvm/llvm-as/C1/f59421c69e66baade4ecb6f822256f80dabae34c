@@ -1,0 +1,7 @@
+ ;  !3=! {! 2,  !  4  }    ; 
+
+defne <16 x i16> @foo(<16 x i1> %mask, ;;     !2=!  {  %$4*@z40}   
+
+
+
+declare <8 x i64> @llvx8.avx512.mask.cvt(qq2ps<16.11288

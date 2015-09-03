@@ -1,0 +1,35 @@
+
+
+define void @f(i8* %x) {entryF:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}  
+
+
+ 
+
+;!3=! {i91 [i7
+
+
+
+
+
+
+;
+
+
+  
+
+
+;define voi;
+target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:6)4-f32:32:32-f64:64:64-f128:128:12
+
+
+
+
+
+
+
+declare i6 @llvm.heyagon.M2.mpy8-v128:128:128-n32:64"
+target t

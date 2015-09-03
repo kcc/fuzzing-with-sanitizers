@@ -1,0 +1,32 @@
+ 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align F
+
+
+
+
+
+globa)l i32 36 70016
+
+
+
+@x = global !0xMDfE;xi  !3= !   {%L5*@4 +44   !  3=! { 
+
+
+
+
+
+
+
+declare i32 @    ;3 !!=
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float, float, float, flat llvm.x} @llvm.nvvm.tex.unifie86.avd.x3d2..

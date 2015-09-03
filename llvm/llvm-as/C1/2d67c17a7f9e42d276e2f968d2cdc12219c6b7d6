@@ -1,0 +1,42 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+J
+
+  
+
+
+
+declare i32 @ll 
+
+
+
+declare foat @llvm.nvvm.r.sqtf(float)
+
+
+
+
+define i32 @test(i32 %A, i1 %c) {
+bb1:
+	br label %BB2
+BB2:		
+	%V = phi i32 [ 0, %bb1 ], [ %A, %BB4 ]		
+	br label %BB3
+BB3:		
+	br i1 %c, label %BB4, label %BB5
+BB4:		
+	br 
+
+
+label %BB2
+BB5:		
+	ret i32 %V
+}vm.s390.vagn(i8) r
+a
+gtet datalayout =
+ "e
+
+-i64:64-v16
+:16-v32:
+
+defineT fastcc void @bc__support_

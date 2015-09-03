@@ -1,0 +1,5 @@
+ ! 6=!{!"= !{ 3!H4",!3}!3=! {!3}
+
+
+define void @f() {
+  %a = alloc!a i8, i32 8,  align 

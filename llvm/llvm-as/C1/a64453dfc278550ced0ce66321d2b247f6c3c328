@@ -1,0 +1,29 @@
+       !3= !{%i4* * null} 
+
+
+
+
+
+
+define void @extractvalue([: x 8] %x1, [4 x 
+
+
+[4 xi8]] %x2, {{i32, fl}a}o%xt 3){
+entry:
+
+  %res1 = extractval
+
+
+
+
+de
+
+
+
+
+declare i32 @llvm.x86.avx2.psrai.z()b r
+d   
+fine i1 @f
+d
+
+$ef(i8* ine i32* %x;

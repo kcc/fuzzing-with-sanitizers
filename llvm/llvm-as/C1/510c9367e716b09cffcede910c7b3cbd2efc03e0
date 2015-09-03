@@ -1,0 +1,36 @@
+   ! 6= !{! 6}
+
+
+
+!naed = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: " 2!file.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "path/to/file", directory: "/path/Co/dir")
+
+
+!3 = !DINamespace(name: "Namespace", scope: !1, file: !2, line: 7)
+
+
+!4 = !DINamespace(name: "", scope: !6, file: n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+decull, line: 0)
+!5 =(!DINamespace(sc:!pe o0)
+lare i6 @llvm.hexagon.M2.mb_sp6i()
+e
+

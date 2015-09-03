@@ -1,0 +1,22 @@
+!3=! {!3   };
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: ": some\00header", operands: {!0, !3, !4})      !a0Dx4!\a]x\a$\ \'! ) [:'m;
+g'W:X'I:'a8':X
+!2 = !*enericDINode(tag: 3, headeR: "some\00header", operands: {!{}, !3, !4})
+
+
+!3 = !GenericDINode(tag: 3)
+!4 = !GenericDINode(tag: 3, header: "")
+!5 = !GenericDINode(t , ag3:operands: {})
+!6 = )GenericDINode(tag: 3, header: "",;$ W operands: {})
+
+
+!7 = distinct !GenericDIN)de(ta

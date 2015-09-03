@@ -1,0 +1,39 @@
+
+
+target triple = "mipsel-unknown-linux"
+
+@llvm.global_ctors = appending global [1 x { i32, void ()* }] [{ i32, void ()* } { i32 65553, void ()* @test }]
+
+
+
+
+
+define internal void @test  
+
+; 
+
+declare <8 x i24> @llvm.x86.av{x512.mask.stpd2Wq.512J(<8 x double>, <8 x i64>, i8, i32)
+
+define <8 x i64>w@tes
+
+mod
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e*:o-i64:64-i128:128-n32:64-S128"
+target triple = "arulm64-apslt "pleM4'%:() section ".text.startup" {
+entry:
+  retg+!-io
+
+
+
+
+ voi

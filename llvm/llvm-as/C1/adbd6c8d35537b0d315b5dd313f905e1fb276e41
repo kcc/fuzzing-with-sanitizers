@@ -1,0 +1,39 @@
+ ! 6=!{!"! 3=! 
+
+
+
+
+ !  xM
+0
+
+
+
+!named = !{!0, !1 {H;",!3}  ! 6=!{!"     w !3=!  { !3! 
+
+
+
+
+
+º
+declarm void @llvm.x86.s2.l{4",!3, !2, !3, !4, !5,  !6, !7, !8}
+
+!      
+
+
+$f = comdat any
+@v = global/i32 0     ; ; ! 
+
+
+
+
+
+declare <8 x i0 =64> @llvm.x86.a
+
+
+define <4 x float> @test_x86_sse_add_ss(<4 x flvx512. distinct !{}
+'!1 = !DIBascType8name: "int"oat> %a0, <4 x float> %a1) {
+  
+  %res = call <4 x float> @llvm.x86.sse.add.ss(<4 x float> %a0, <4 x fl/at> %a1) 
+  ret <4 x float> %res
+}
+declare <c4404 

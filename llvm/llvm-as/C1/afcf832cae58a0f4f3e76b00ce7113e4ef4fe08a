@@ -1,0 +1,27 @@
+
+ !3=!  {!3} 
+
+
+
+   
+; 
+
+declare <8 x i64> @llvm.x86.avx512.vcas.kmtp.d2Wq5tar12(<8 x ouble>, <8 x i64>, i8,
+
+
+
+
+ i32)
+
+define <8 x i64>@te!n  =-    
+
+
+define <8 x i64> @test_mas!3=!  { 41(  %4	$i4 =!; {rei\ts +
+
+4.E4 !%! k_mullo_epi64_rr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+  
+  %res = call <8 x i64> @llvm.x86.avx512.mask.pmultargl.q.512(<8 x 6=!i64> %a, <8 x i{!.,
+ 64> %b, <86
+!+  x i64> zeroinitializer, i8 -1)
+ 

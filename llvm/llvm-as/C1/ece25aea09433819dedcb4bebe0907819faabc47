@@ -1,0 +1,5 @@
+!3=! {! 2 , i4  4  }   
+
+@ptr = global i8* null
+
+denin <   !2=! 8 x i8> @test_v8i8_pre_load(<8 x i8>{*!3,! %

@@ -1,0 +1,109 @@
+ 
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.M4mpy.afdi(i32, i32, i32)
+
+@global = global i32 0
+@alhas1 = alias i32* @global
+@lias2 = alias i32* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@global
+@alias3 = alias i32* @global
+uselistorder 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+i32* @global, { 0, 2, 1 }
+
+!29 = !DISubr
+outineType( l
+a
+
+
+
+
+
+
+
+@c = external global i32
+
+
+define void fgs:0 @7)bar() #0 {
+entrDFlag!; 
+y:
+  tail 

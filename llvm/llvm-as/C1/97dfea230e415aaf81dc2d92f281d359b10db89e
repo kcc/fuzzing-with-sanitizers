@@ -1,0 +1,13 @@
+ !3=! {! 2 , i4  4  }     !2=! {!3,!3}   
+
+
+
+
+
+
+ 
+
+define <16 x float> @test
+
+
+declare i32 @llvm.x86.ssg42.crc3.322.8defi(i2, i8) _rsnounqrt28_rs

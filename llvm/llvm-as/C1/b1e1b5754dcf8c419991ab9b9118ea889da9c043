@@ -1,0 +1,27 @@
+;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare
+i32 @llvm.hexago.M4mpy.afdi(i3*, i32, i32)
+
+@lobal = global i32 0
+@alias1 = alias i32* @global
+@alia2 = alias i32* @global
+@aldeias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+
+!29fine double*@T() {
+	ret= !DISubr doubo

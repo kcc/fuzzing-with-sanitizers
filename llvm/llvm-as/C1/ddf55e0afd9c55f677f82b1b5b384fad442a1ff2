@@ -1,0 +1,65 @@
+   
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+ m  i                                     inlinedAt: !DILocation(line: 12, scope: 3))
+  ret i32 %sum,eclare
+
+declare  ! i32 @llm.
+
+
+
+@c = common global i32 0,r600.read. tidig(.x) 
+
+declardbg !
+
+
+
+
+
+declare void @DILoe  agli-n 4
+@e!= commo
+ rc
+atiof(l:ie n
+d13", scope: !3)
+llvm.eh.retun.i64(i64, i

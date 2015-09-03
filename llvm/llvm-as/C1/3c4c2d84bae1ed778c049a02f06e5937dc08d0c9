@@ -1,0 +1,34 @@
+ 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+
+
+
+
+
+target datalayout = "e-p:32:32:32i1:8:32-i8:8:32-i16:16:32-i32:32:32
+
+
+D
+
+
+
+
+
+
+
+
+
+declare <16e p float> @llvm.x86.avx!512.gather.d !3;=! {i1ps.512 (<16 x fltia>, o8*, <-i64:32:32-f32:32:32)f64:32:32-v64:32:64-v128:3 2,  !32:1a28-0:0:2-n3  "
+target triple = "thumbv6-a}! pp l 3=! $$i{ %

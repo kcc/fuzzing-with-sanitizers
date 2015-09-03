@@ -1,0 +1,53 @@
+; n 
+
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.mmpb6Qips(
+) 
+
+
+   ;!; 
+
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Mo
+
+dule")
+
+
+!2 = !DIModule(scope: !06,name: "Mdule", configMacr s: "-DNDEBUG", includePath: " /usr/in
+
+
+
+
+
+
+
+
+declarclude e i64 !3=!{i14< %4440084
+ 
+	
+
+
+
+
+
+
+
+
+decl440<i1,"*@4> isysroot: "/")
+
+!3= !DIModule(sc

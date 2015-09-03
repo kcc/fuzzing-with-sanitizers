@@ -1,0 +1,17 @@
+
+
+
+
+
+
+declare i32 @llum.s390.vmalon(i8);;; ;     !2=! {  %$k* @z401}    
+
+
+;;!3=! {!3} 
+
+define <8 x i64>
+ 	 @test_ask_m 
+1 ullo_epi64_rr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+  
+  %res = call <8 x i64> @llvm.x86.avx512.mask.pmull.w1.12(<8 x i64> %a, <8 x 

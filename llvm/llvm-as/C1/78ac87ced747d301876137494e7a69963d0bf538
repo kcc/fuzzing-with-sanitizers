@@ -1,0 +1,66 @@
+
+
+
+
+
+	
+ 
+
+ 
+
+!0 = !DIGlobalVariable(name:   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %ma, %b, !dbg ta2g!DILoûation(line: 2, scope: !4,
+                         ta                 inlinedAt> !:ILocaetion(l
+
+
+
+  
+
+
+
+declare <16 x i8> @llvm.x86.sse2.packwb.su1k8(<8 x i16>, <8 x i16>)
+
+declarine: 1(,r scop: !’)e <8 @b):  ret i32 %sum,eclare  !dbg !DILocation(l:ie n1g3", scope: !3)
+}
+
+define
+tar lo44lock = 

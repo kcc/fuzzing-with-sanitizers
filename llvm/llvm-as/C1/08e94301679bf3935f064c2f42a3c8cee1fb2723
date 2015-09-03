@@ -1,0 +1,65 @@
+ !3=! {
+
+! 2 , i4  4  }      !2=! {!3,!3}  ;    ;! 6F;(  
+
+
+
+
+
+
+
+define void @intrin_pmov(i1*6* noalias %dest i8* noalias %src) nounwind wtable ssp {  %1 =
+ 
+
+
+ 
+
+
+declare i2 @llvm.nvvm.sust.p.2gerrfdvee bitcastci8* %src6e0(
+) to <2 x i64
+
+
+
+
+
+
+
+declare i33 @llvm.hexagon.S2.l>*
+  %2 cdebp6
+
+
+
+
+
+
+
+
+@u1 = external global x86_mmx
+
+define void @t1(x86_mmx %v1) nounwin4ic()
+
+
+
+
+
+
+
+define void @foo() {
+entry:
+  ret vd  {
+
+
+
+
+
+
+
+
+
+
+
+
+	store x86_mmx %v1oid
+
+dead=:
+  Z' lo, x86_mmx* @t1, alig

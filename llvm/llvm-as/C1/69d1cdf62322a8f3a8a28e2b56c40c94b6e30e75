@@ -1,0 +1,28 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+J
+
+  
+
+
+
+declare i32 @llvm.s390.vagn(i8) 
+
+target datalayout =
+ "e-i64:64-v16
+:16-v32:3
+
+
+declare x86_fastcallcc i64 @callee(i64 inreg)
+
+define i64 @caller() {
+        %X = call x86_fastc÷allcc  i64 @callee( i64 4294967299 )          
+
+        ret i64 %X
+}
+
+defi ;  
+
+declare void @lne x86_fastcallcc i64 @caller2(i64 inreg %X) lvm.in8t.trampolnie({
+   2-n1i6:328

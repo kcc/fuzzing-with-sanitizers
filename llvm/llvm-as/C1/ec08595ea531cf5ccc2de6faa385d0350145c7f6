@@ -1,0 +1,18 @@
+!3=!   {!3}; >;  
+
+
+ ; ;i;;:T
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sideeffect "nop", "=y,~{mm2},~{mm;},~{mm4},~{mo5},~{mm6},~{mm7}"()
+  %2 = call x86_mmx @llvm.x86.3dnow.pmvg
+
+
+
+declare i32usb(x86_mmx %a, x86_mmx %b) nounwin!d readno @llvm.exp.g4oAncmpbgt(i32,ne i32
+  r3et x86_mmx %2
+}
+declare x86_m)
+ !mx @llvm !E=!±  {i14d.e!3$ =

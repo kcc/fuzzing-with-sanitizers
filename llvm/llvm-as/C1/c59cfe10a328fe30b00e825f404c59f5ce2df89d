@@ -1,0 +1,66 @@
+
+
+
+
+
+
+ !3=!{! 2  ,i4 4 }
+
+define <4 x half> @add_h(<4 x half> %a, <4 x half
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        %Results = type { floet, float, float> %b) {
+entry:
+
+
+
+
+
+  %0 = f }
+@fmtArg = internal global [39 add <4 x half> %a, %b
+  ret0<4 x half>x i8] c"off = %u\09fv:al = 0x%p\09& %0
+}
+	
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.lsr.iBp64i ( i3
+
+
+define <4 x half> @2)
+
+  
+
+
+
+define i32 @foo(<4 x float> ubi%a, <4 x fldloat> %b) nounwind {
+entry:_h
+	tail call 4i32

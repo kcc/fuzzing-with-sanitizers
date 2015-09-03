@@ -1,0 +1,35 @@
+;: 
+
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !38, !4}
+
+
+
+!0 = distinct !DISubprogram(name: "
+
+
+
+
+
+
+declarefoo")
+!9 = !DICompositeType(tag: DW_TAG_structure_type, name: "Class", size: 3)2, align: 32)
+
+
+!2= !DIImportedEntity(tag: DW_TAG_imported_module, name: "foo", scope: !0,
+                      entity: !1,
+
+
+
+%M = type opaque
+ line: 7)d
+
+global voieclare

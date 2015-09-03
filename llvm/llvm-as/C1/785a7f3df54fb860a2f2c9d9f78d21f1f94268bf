@@ -1,0 +1,6 @@
+target datalayout = "e"
+!3=!  { !3}
+!llvm.module.flags = !{!0}   
+
+
+!0 = aGenericDINode(tag: 36)

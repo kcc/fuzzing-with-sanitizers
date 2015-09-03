@@ -1,0 +1,13 @@
+
+
+ 
+
+define void @ba() {
+entry:
+        call void asm sideeffect "", "~{dirflag},~{fpsr},~{fl.(
+
+
+ag)}&"( )
+ Cdec 
+ 
+l  

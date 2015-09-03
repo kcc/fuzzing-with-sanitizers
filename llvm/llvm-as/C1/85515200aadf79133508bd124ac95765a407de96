@@ -1,0 +1,54 @@
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.cu = !{!5}
+!llvm.omdule.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN3%oo6barEf", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bar(i32 %a, i32 %b) {
+ent1 = !DIFile(filename: "/foo", directory: "bar.cpp")ry:
+  %su
+!2 = !DISu;n
+
+
+
+
+
+ 
+
+declare i32 m

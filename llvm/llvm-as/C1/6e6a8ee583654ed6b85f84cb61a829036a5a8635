@@ -1,0 +1,39 @@
+     !3= !{%i4* * null} 
+
+
+   
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_els;e !{}, !more!     !
+
+
+
+
+
+
+define i32 @main() nounwind uwtable {
+entry:{!"hello"}
+  store i32 0, i32* nu
+  %retval =ll, !whatever !{! alloca i32, align 4
+  store i32 0, i32* %retval
+  ret i32 0, !dbg !14
+}
+
+!llvm.dbg.cu    !2=eh "'cllo", !1, !{}( !2}
+ !   {  3
+
+
+
+
+
+
+
+
+
+define voi;
+
+declare<
+
+ 

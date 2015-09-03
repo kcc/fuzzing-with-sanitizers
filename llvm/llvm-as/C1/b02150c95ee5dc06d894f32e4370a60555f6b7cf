@@ -1,0 +1,22 @@
+   !3=!  {i1 ( %44 "  -  73!?!
+
+
+
+
+!llvm.ident  = !{;0!
+
+}
+
+
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.declare(metadata i3E* %s, metadata !4", metadata !DIExpres
+
+
+
+siglobaon())

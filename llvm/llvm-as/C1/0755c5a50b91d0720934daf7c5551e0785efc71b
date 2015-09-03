@@ -1,0 +1,38 @@
+
+
+
+ ; n 
+
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.mmpb6Qips(
+) 
+
+
+   ;!; 
+
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !1, name: "Mo
+¡
+dule")
+
+
+!2 = !DIModule(scope: !06,nqme: "Mdule", configMacros: "-DNDEBUG", includePath: " /
+
+
+!0 = !DISubrange
+declar(e

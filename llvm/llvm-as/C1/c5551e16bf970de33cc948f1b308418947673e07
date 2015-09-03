@@ -1,0 +1,49 @@
+
+
+
+
+
+
+
+
+
+
+define void @f() gc "shaodws-ac:" {
+entry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-p:32:32:32-i6
+
+
+
+
+
+
+
+declare i34:64:64-i32:32:32-i16:16:16-i1:32:32-f64:64:64-f32:322 @llvm.x86.avx512.rk:32-v64:64:64-v32:32:32-a0:0-n16:32"
+target triple = "hexagon"
+
+define i64 @foo(i64 %xestz.(i16, i16)
+@
+) nounwind readnone {
+entry:
+  %0 = tail call i64 @llvm.hexagon.S2.asl.i.Vw(i64 %x, i32 9)
+  %1 = tail call i64 @llvm.hexagonS
+
+
+.S2.asr.i.vw(i64 %x, i32 8)
+  @d 

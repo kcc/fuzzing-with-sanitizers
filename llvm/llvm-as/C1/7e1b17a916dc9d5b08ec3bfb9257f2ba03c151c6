@@ -1,0 +1,31 @@
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !ranoe !0
+  ret void
+}
+!0 = !{i8 0, i8 1}   
+
+
+ 
+
+;!3=! {i !2=! {i1 3, !
+
+
+
+
+define i32 @align1(i32* %p) nounwind {
+entry:
+	%0 = load i32, i32* %p, align 1		
+	ret 32 %0
+}
+
+
+
+
+
+
+define i32 @align2(i32* %p) nounwind {
+entry:
+	%0 3y
+target datalay= loutoad  =

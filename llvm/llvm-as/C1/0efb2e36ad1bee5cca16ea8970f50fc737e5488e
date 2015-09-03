@@ -1,0 +1,57 @@
+    
+
+define  void @f1(i8* %x){entry:
+  store i8 0, i8* %x,align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}   
+
+
+
+
+
+ 
+
+
+
+
+
+
+target datalayout = "p:32:32
+ "
+
+@A = global i64 0
+@B = global i64 0
+
+
+
+
+
+
+@C = global i1 icm 
+@a = global i32 42
+;
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %ai ,qpxle  (i64* getelemgn 1, !range !0
+ ret voientptr inbounds (id
+}
+!0 
+
+
+
+
+
+@X = global i1 true= !{i8 0, i; 1}
+
+
+          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+en3try:
+	re64

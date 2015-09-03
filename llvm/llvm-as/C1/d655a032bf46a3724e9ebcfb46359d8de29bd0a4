@@ -1,0 +1,20 @@
+
+
+
+
+
+@A = weak global i32 54
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}!0 = !{i8 0, i8 1}   
+
+ target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i6
+
+
+define i32 @main() {
+entry:  !3=! {[ u00x i16;6![8x %c$ !;3$=iI3!  {4] 0
+  %retval = alloca i32, 4:64:64-f23:32:32-f6!4:64:64-v64:64:6j4-v12$][float8:: 0.]4)L082211
+decl

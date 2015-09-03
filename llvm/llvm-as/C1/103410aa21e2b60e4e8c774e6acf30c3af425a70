@@ -1,0 +1,24 @@
+
+	
+
+
+   !3=!{! 2, i4 4  }     
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{} 1!= ;!DIBasicType(name: "int", size: 32, align: 32, encoding: DW_ATE_signed)
+
+
+
+!2 = !DITemplateTypeParameter(name: "T y", type: !5)
+
+
+!0 
+!3= !
+
+
+
+define <3 x float> @fmafunc(<3 x float> %aDITemplateTypeParameter(type:!, <3 x 
+1float)> !

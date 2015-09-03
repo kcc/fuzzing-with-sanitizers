@@ -1,0 +1,50 @@
+
+
+ 
+ 
+
+
+   
+
+
+
+
+
+
+define void @f() gc "h adowstack
+ declare i64 @llvm.ppc.dic$6(i64)
+efine i" {
+netry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:64-f83declc! re 3
+defin
+
+
+target datalayout = "e-p:32:32:32 -i1:8:8-i8:*:8-i16:16:16-i3
+
+define zeroext i2 @crash () {
+  ret i2 0
+}
+
+
+
+
+declare void @llvm.gcroot(i8**, i8*)
+
+define void @f(i8* %x) {
+	%root = alloca i8*
+	call void @llvm.gcroot(i8** %root, i8* null)
+	store i8* %x, i2:3232:-i64:8** %root32:

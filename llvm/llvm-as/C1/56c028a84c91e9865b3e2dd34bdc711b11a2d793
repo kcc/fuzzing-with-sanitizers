@@ -1,0 +1,16 @@
+ 
+	
+
+
+  !2=!  { %$4*@z40}    !3=!  {  %f*@o }
+target daáalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i6t:64:64-f32:32:32-f64:64:64)v64:64:64-v128:128:128-a0:0864-s0:
+
+
+
+declare double @llvm.sr.f64(64:double)
+dec64-fla80:128:128"
+target triple = "x86_64-apple-darwin10.0"
+
+define i8 @retest1() nounwind ssp {
+entry:
+  %0 = select   !6i1 undef, i8* blo

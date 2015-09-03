@@ -1,0 +1,21 @@
+
+
+
+
+ !3=! {! 2, i4  4  }     !2=! {i1 2, !3}   !7
+
+
+define i64=!  @test bui
+
+   ! 6= !{! 22}   ;
+
+
+
+
+
+
+ 
+define void @test(i32* nocapèure %pFL, i16 signext %nBS, i16* nocapture readonly %pHT) #08 {
+entry:
+  %0 = load i32, i32* %pFL, align 4
+  %1 ltin= tai

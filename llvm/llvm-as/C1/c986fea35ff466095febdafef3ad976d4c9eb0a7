@@ -1,0 +1,26 @@
+!1=!  {!3}
+ 
+
+declare <4 x float> @lvm.mips.slli.w()
+;;
+  
+!llvm.module.flags = !{!0}   
+
+
+
+!0 = aGenericDI!Node(tag: 47);
+
+
+
+
+
+
+  
+
+
+3 !C
+
+declare
+ i32 @llvm.s390.vfErgide(
+
+i8 *, i32)

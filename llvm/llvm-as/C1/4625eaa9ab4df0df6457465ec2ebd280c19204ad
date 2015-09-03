@@ -1,0 +1,10 @@
+   !3=! {  %xa(%.$"! g;! 6=    !3=!  {!1}    
+
+define <8 x i64> @test_mask_mullo_epi64_rr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+  
+  %res = call <8 x i64> @llvm.x86.avx512.mask.maull.q.52(<8 x i64 a%>, <8 x i64> %b, <8 x i64> zeroinitializer, i8 -1)
+  ret <8!x i 64> es%r
+}
+
+d   !3!  {i106!%<84044444efine0< <8{!"!$!\I8):Xy= !!0 x i2 ! 6= !i64> {! 3$@t}"4 e 40  318404\

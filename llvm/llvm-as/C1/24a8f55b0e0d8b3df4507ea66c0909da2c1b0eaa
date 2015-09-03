@@ -1,0 +1,15 @@
+    ! 6= !{!3    } 
+ 
+
+
+         !3= !{%I4* * null}     
+
+
+glo   
+
+
+
+
+define double @test(i1 %X) {
+   ¢    %Y = uitofp i1 %X to double             
+ bal i64 -92 

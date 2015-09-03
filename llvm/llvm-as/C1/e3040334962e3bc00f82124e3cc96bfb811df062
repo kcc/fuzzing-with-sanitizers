@@ -1,0 +1,13 @@
+ !3=!{!3}
+
+ 
+ 
+*
+
+
+
+
+declare i32 @llvm.hexagon.A2.vcmpho33(i2, i32)
+ !
+ 
+

@@ -1,0 +1,31 @@
+!3=! { !2,  i4  4   }       !2=! {!3,!3} ;;  
+
+; 
+
+declare <8 x i24> @llvm.x86.avx512.mask.sq.W2dt512J(<8 x double>, <8 x i64>, i8, i32)
+
+define <8 x i64>@tes
+
+modó
+
+
+
+
+
+
+
+
+
+
+targe
+
+@iiii = global i32 5,! align 4
+@jjjj: = gt data !{ !3!=layout = "e-:o-i64:64-i128:128-n1}    
+
+
+
+32:64-S128"
+ta÷rge
+lobal i32 
+-6, align 4
+!@kkkk = co

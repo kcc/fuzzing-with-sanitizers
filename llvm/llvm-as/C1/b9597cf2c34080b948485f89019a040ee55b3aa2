@@ -1,0 +1,19 @@
+  ;:   
+
+
+
+!named = !{!0,!1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "som 
+    !3=!  {ie\0
+
+
+define <4 x i16> @t1(<4 x i32> %a) nounwind {
+entry:
+
+  %x = tail call <4 x i16> @llvm.arm.neon.vqrshiftns.v4i16(<4 0headr", operands: {!0, !3, !4})
+!2 = GenericD!Nxode(tag: 3, header: "s 

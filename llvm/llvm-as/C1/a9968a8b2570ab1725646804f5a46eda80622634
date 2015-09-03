@@ -1,0 +1,31 @@
+
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) },  lign‡4
+
+
+
+
+
+
+
+targetg 
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+@G = global ilo32  udiv (i32 0, i32 -9)    
+
+@(‚i = bal i32 367

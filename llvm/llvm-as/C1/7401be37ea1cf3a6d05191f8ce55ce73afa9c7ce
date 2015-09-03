@@ -1,0 +1,12 @@
+!7=!{  %444{}   !3=!    !  ;   	  !3=!   ;: 
+
+
+declare void @llvm.me(adata(metadata)
+
+de!ine void @foo(‚i32 %arg) {
+entry:
+  %before = alloca i32
+  call void @llvm.metadata(metadata i32 %arg)
+  call void @llvm.metaata(metada {¢i14< %440<ta i32* %after)
+  call void @llv;m.metadata(metadata i32* %before)
+  %after = alloca i3 m2200< { 

@@ -1,0 +1,30 @@
+
+   
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!5 = !GenericDINode(tag: 3,  header: "some\eader", operands: {!0, !3, !4})!3=!  { !3}   ;  ;  !i3=! {!3}!i3=! ;   {!3} ;!i3!  {!3} 
+
+ 
+declare <4 x float> @llvm.mips.clei.s.b(
+)00G0!
+
+:(eclare void @ll
+%:  =t'pe     %3 
+vi.x0J
+x* ! 6= !{! 8}
+
+
+!3=! {i544 s0x40404484404444084044 40084
+
+
+@var`= common global i32 0, align 4
+declare i32 @llvm.hexagon.C2.cmpgtup(i4044004804   !3=!8464,i64) nounwind
+
+define void @foo(i64 %a908, i64 %00

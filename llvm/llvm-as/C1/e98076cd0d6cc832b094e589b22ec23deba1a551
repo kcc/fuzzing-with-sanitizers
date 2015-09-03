@@ -1,0 +1,10 @@
+ 
+
+define i32 @bad1() !prof !0 {
+  ret 
+
+define <16 x i16> @test_x86_avx2_packssdw(<8 x i3i32 0
+}
+
+!0 = !{i32 123, i32 2> %a3}
+0, <

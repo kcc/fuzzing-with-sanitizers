@@ -1,0 +1,31 @@
+ !3=! {! 2,  i4  4    }       !2=! {!3,!3} 
+
+
+  
+
+
+@X = global i1 true             
+define i3
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+;
+de2 @test_86_sse42_pcmxestri128(<16 fine i8 @test_pcmpeq_d_256(<8 x i32> %a, <8 x i32> %b) {
+
+
+  %res = call i8 @llvm.xx i8> %a0, <16 x i8> %a2) {
+  
+  
+  86.avx512.mask.pcmpeq.q.2u   
+  
+  %6(< x res

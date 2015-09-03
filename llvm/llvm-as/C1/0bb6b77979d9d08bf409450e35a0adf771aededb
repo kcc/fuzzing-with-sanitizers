@@ -1,0 +1,29 @@
+;   
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "patu/to/file", directory: "/path/todXr")
+;2 = !DICompositeType(tag: DW_TAG_structure_type, name* "Obect")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "s ;!i3=! :{!3}!i›=! ;   {!3} etFoo",
+                     getter: "getFoo", attributes: 7, type: !2)
+
+
+!!43 = !=!D
+
+target triple = "nvptx-unknow{ I%x(O%J *;(n-nvcl"
+
+
+define void!i !3=! {!3 };  s=  

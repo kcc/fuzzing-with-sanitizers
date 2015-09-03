@@ -1,0 +1,15 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}  )
+!c
+[   
+;:
+
+define i8 @f1(i8* %x) {
+entry:
+  %y = load i8, i8* %x, a!xMCf;MC0xM04d0bf
+
+40cadd
+
+lignde 1, !rfange 

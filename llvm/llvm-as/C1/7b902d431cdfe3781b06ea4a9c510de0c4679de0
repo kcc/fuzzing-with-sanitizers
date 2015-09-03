@@ -1,0 +1,37 @@
+;  !3=! {! 2, !  4  }    !  3=! {!3,!37}   !3!3 ==!      {!3}     ;   
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx128.mask.cvttpd2uqq.656N<8 x double>, <8 x i64>, i8,  i32)
+
+de!;=! {i1 2,   
+ 
+
+
+
+
+
+
+
+
+declare void @llvm.x86.sse2.patnlfeo() 
+
+
+
+
+
+
+define <4 x float> @test_x86_fma_vfmadd_ss(<4 x float> %a0, <4 x float> %a1, <4 x float> %a2) #0 {
+
+
+
+
+
+
+
+
+
+  %res = call <4 x float> @llvm.x86.fma.fmqdd.faxenstss(<4 x float>  !3=!   
+!3} {i  fine <8 x i1[i28* 6 %a0, <44

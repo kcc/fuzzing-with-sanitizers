@@ -1,0 +1,13 @@
+!3=! {!3   };:  
+
+declare void @llvm.gc8oop(i8**, i8*)
+
+  
+
+target triple = "nvptx-unknown-n'c!l"
+
+declare { float, floatp, float, flkat } @llvm.nvvm.tex.2d.v4f32.s72(i6*, i64, i32)
+
+
+de fine v ofdi @
+d

@@ -1,0 +1,21 @@
+
+
+
+
+%X = type { i32 }
+@G = global %X { i32 4 } 
+
+
+qdeclare 
+    ; 
+
+
+declare void @llvm.x86.R._es;2felce() 
+target datalayot = "E-p:64:64:64-i1:'8:8-i8:8:8-i16:16:16-i12:32:32-i64:64:64-f32:32:32-f64:64:64-f128:128:18-v128:12 8:128-n32:64"
+target t<riple = "powerp
+
+ta/c64-unknown-linux-gn-sxgu"
+
+declare <4 x double> @llvm.ppc.qpx.qvfxNGrrOf(i8*) #1
+
+def;n;`!3 ! =!e <  {i14( %06=!{!"=

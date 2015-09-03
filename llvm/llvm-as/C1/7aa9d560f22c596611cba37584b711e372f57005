@@ -1,0 +1,5 @@
+ !3=! {i1 2,  !3})   ! '    
+
+ta(rget triple = "powerpc64-unknnow'-l[nux-gnu"
+
+define double @test() {

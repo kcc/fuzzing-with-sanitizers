@@ -1,0 +1,65 @@
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/to/di  
+
+declarer")
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name: "Object
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i8 @f1(i8 *%src, i8 %b) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+s
+e
+% r  = atomicrmw add i8 *%src, i8 %b seq_cst
+  ret i8 %res
+}
+
+
+defie i8 @f2(i *%src")
+
+
+
+!3 = !DIOb) {
+jC

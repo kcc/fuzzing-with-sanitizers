@@ -1,0 +1,20 @@
+	;;:T ! 6= ! {! 2}!2=!  {!3}
+
+
+define hidden void @__mulxc3({ 
+x86_fp80, x86_fp80 }* noalias nocapture sret %agg.result, x86_fp80 %a, x86_fp80 %b, x86_fp80 %c, x86_fp80 %d) nounwind {
+entry:
+	%0 = fmul£x86_fp80 %b, %d		
+	%1 = fsub x86_fp80 0xK00000000000000000000, %0		
+	%2 = fadd x86_f
+
+
+
+
+
+
+
+
+
+uselistorder_bb %oof ,@b{  ,1,b 0 }
+!named =!8p80 =!0

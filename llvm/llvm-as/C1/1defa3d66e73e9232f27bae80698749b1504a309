@@ -1,0 +1,28 @@
+
+
+
+
+
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f()  gc "shodawstarck" {
+en3ty:
+	ret!void
+ }
+
+
+
+
+declare <4 x float> @llvm.mips.fsemwx()< 
+ 
+
+
+;s
+

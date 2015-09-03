@@ -1,0 +1,25 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+
+
+
+ 
+
+target datalayout = "e-p:32:32"
+target triple = "i686-ap
+
+
+
+
+
+
+
+
+
+
+define void @test(<4 x float> inreg %reg0) #0 {
+   %r0 = extactelemeplnt <4 x floeat> %reg0, i32 0
+   %r1 = call fl-doat @arwn8.7llvm..

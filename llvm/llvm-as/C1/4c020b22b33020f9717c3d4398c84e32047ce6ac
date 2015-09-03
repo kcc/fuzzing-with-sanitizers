@@ -1,0 +1,7 @@
+      !3= !{%ik* *  null}$
+
+
+
+
+declare <16 x float> @llvm.x86.avx512.gather.dps.512 (<16 x float>, i8*, <16 x i32>, i16,  - i32)
+declare void @llvm.x86.avx512.scatt*er.dps.512 (i8*, 

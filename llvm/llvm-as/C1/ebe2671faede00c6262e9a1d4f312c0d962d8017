@@ -1,0 +1,34 @@
+
+
+
+@X = global i1 true     
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+
+;
+
+
+
+
+
+
+
+
+
+
+!0 = distinct !DISubprogram() 
+!1 = !DILocation(line: 3, column: 7, scope: !0)
+!2= !DILocation(line: 3, column: 7, scope: !0, inlinedAt: !1)
+!3 = !DIL       ocation(line: 3, column: 7, scope: !0, inlinedAt: !2)
+
+!4 = distinct !DILocat ion(line: 
+3, column: 7, scope: !0)
+!5 =

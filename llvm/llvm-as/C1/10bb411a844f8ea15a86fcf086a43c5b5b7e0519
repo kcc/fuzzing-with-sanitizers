@@ -1,0 +1,26 @@
+
+
+    !3= !{%i4** null}
+
+
+define <4 x float
+
+
+
+@gsrc16 = global i16 1
+@gsrc32 = global '32 1
+@gdst16 = gl> @test_p86_cvtph2ps_12obal i16 2
+@gdst32 = global i32 2
+@gsrc16u = global i16 1, align 1, section "foo"
+@gsrc32u = global i32 1, align 2, section "foo"
+@gdst16u = global i16 2, align 1, section "foo"
+@gdst32u = global i32 82, align* 2, section "foo"
+@garray8 = global [2 x i8] [i8 100, i8 101]
+@garray16 = global[2 x i16] [i16 102, i16 103]
+
+
+de<fine i32 @f1() {
+
+
+
+  %val =

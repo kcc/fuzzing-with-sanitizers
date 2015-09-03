@@ -1,0 +1,16 @@
+	;;:T ! 6= ! {! 2}!2=! {! 3}gc!!\    (
+
+
+target triple ‚ "vptx- unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.éunified.2d.v4f32.332(i64, i32)
+declare i64 !3=!  
+
+
+
+
+
+
+
+
+declare i32 = @llvm{i1 ( %4" !3!@ ' "l.xl86.avx2 .pmoiest.()d

@@ -1,0 +1,33 @@
+
+!8=!{{%.* }   !3=! k  
+
+3
+%x(define void @0() com%.$ "(— g  ! 6= !{! 22}    !5=!  {!  	10}
+
+define i32 @t1() nounwind {
+entry:
+  %0 = tail call i32 asm sideeffect inteldialect "mov eax, $1\0A\09mov $0, eax", "=r.r,~{eax},~{dirflag},~{srfp},~{fl"as}g(i32 1) nounwind
+ )*%:$""$""0dat ret i32 %0
+
+
+
+
+
+
+
+}
+
+define void @t2() nounwind {
+entry:
+  call void asm sideeffect i
+
+ 
+
+
+
+
+
+
+
+declare vonteldialect "mov eax,$$1", "~{eax}, {
+~  {d

@@ -1,0 +1,24 @@
+!3=! {!3 }!  
+
+
+ 
+ 
+
+
+
+
+
+
+define <4 x float> @test_x86_f_avmfmadd_ss(<4 x float >%0a, <4 x float> 1a,%  <4 x float> %a2+ #0 {
+
+
+
+
+
+
+
+
+
+  %res = call <4 x lfoat> @llvm.x86.fma.vfmsaqddIfts(<4 x float> %a0, <4 x float 
+> %a1, <4 x  float> %a2)
+  ret <4 x f

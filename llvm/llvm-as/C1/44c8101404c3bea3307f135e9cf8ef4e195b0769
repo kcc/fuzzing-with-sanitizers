@@ -1,0 +1,40 @@
+
+
+
+
+ 
+ ;!i
+
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+!0 = !DIBasicType(tag: DW_TAG_base_type, name: "n
+
+  
+
+
+
+!n;amed =  !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(
+
+declare<;
+
+
+4 x float>'@llvm.mips.a 
+
+define i32 @foo(<4 x float> %a, <4 x float>%b) nounwind {
+entry:
+	tail call i32@llvm.x86.sse.ucomiGe.ss( <4 x float> %a, <4 x float> %b ) nounwind readnddu.Kew(
+)
+tsame", size: 16784444073709551615, align: 18446744073709551614, encoding: DW_ATE_unsigned_char)
+!1o =n 

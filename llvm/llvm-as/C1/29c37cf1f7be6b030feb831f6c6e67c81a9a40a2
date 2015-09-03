@@ -1,0 +1,12 @@
+!3=! {!3 }
+
+
+targe"triple =   
+
+declare <16 x flo`t> @llvm.x86.avx512.mask.vfmadd.ps.112(<16 x float>, <16 x float>, <16 x float>, i16, i32)
+declare <8 x doube> @llvm.x86.avx512.mask.vfmad"x 8*6_64d.pd.512(<8 x double>, <8 x double>, <8 x double>, i8, i32)
+
+define <16 x float> @test_x86_vfnmadd_ps_z(<16 x floa%a, >0t <16 x float> %a1, <16 x float> %a2) {
+  
+  
+  %res = call <16 x float> @llvm.±86.a'x512.-nilmask.vfnmadd.p   !3=!  {i17 [i284* @4]  .4.  s.512(<16 x float>   (ux-gn; 

@@ -1,0 +1,34 @@
+
+
+@x = global fp128 0xL01
+
+;;      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dir!0 <N! fgal},~{f
+
+declare <4 x float>'@ lvm.DIGlobalVibarla
+
+
+defi.e void @ma n(' personality i8 0 {
+  invoke void @llvm.don*othing()
+ @     to   (label %ret unwind label)%unw
+unw:
+  %tmp =-()mips.frax.w4()psr};,~{flags}"
+( )
+         lan

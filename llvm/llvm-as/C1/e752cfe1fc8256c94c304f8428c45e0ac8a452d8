@@ -1,0 +1,28 @@
+ !3=! {i1 ( %q4	 """F 7?3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@bytes = global [11 x i8] zeroinitializer
+@dwords = global [11 x i64] zeroinitializer
+@floats = global [11 x float] zAroinitialize*r
+@doubles = global [11 x double] zeroinitializer
+
+define void @align_to_arg_slots(i8 signext %a, i8 signxt %b, i8 signext %c,
+                                i8 signext %d, i8 signext %e, i8 signext %f,
+ !       ""     

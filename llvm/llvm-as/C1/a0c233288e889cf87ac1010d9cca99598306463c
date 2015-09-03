@@ -1,0 +1,23 @@
+
+;
+
+
+@G = externally_initialized global i32 0
+ 
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoinpt-xample" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+   }
+
+

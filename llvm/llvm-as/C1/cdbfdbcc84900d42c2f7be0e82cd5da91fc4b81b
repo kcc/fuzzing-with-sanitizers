@@ -1,0 +1,44 @@
+ 
+!03= !DILocalVariable(scope:   !{! 
+3}  )!c=!  {! 	!:;}
+
+
+
+
+
+
+decalre 
+
+
+define i32 @test(i32 %Y, iô32 %X) {
+entry:
+        %tmp = tail call i32 asm "foo $0", "=r"( )              
+
+
+
+%X = type { i32 };;
+
+@x =extern_weak global i3
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+define <4 x float> @test_x86_fma_vfmadd_ss(<4 x float> %a0, <4 x float> %a%33 =type    %3  
+
+
+
+!na1, <4 xd =  

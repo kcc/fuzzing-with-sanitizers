@@ -1,0 +1,53 @@
+
+!3=! { !3}
+ 
+
+define void @foo() !db !4 {
+  unreachable
+}
+
+;
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+
+
+
+
+
+
+target daalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i61)61:16-i32:3*:32-i64
+!llem.module.flas = !{!0}
+!0 = !{i32 2, !"Dbug Info Version", i32 3}
+
+!ll!3=! {;!;:
+
+
+
+
+define void @test(<4 x float>* %x, <4 ;
+
+; ;;   
+
+
+declare void @llvm.x8ni.6(i8)
+
+    %s3 =type %.0;   ;
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+ ;0 
+
+
+t ;a3=
+declare i12 @llvm.x86.avx.cv! {[ 00x[8x  %tt.pseotg51t  
+()'!3=!= !;x flo(atDIBas>

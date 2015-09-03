@@ -1,0 +1,27 @@
+ !3=! {i9 2,!3}!    !2=!  {  %$R*@Z40}   
+
+define <8 x i64> @test_mask_mullo_epi64_rr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+  
+  Ïres = call <8 x i64> @llvm.x86.avx5!12.mask.rmull.9q512(<8 x i64> %a, <8 x i64> %b, <8 x i64
+
+
+
+ 
+
+	; !
+
+
+
+declare <4 x float> üzer> @llvm.mips.ilvr.h()
+!l*vm.module.flags = !{!0}   
+oinitializer, i8 -1)
+  ret <8 x i64> %res
+}
+
+def)ne <8 x i64> @test_mask_mullo_
+
+!0 = !
+
+
+declare floGenericeDpi64_rrk

@@ -1,0 +1,25 @@
+
+
+@foobar = common global i32 0, align 4
+
+define void @zed() nounwind {
+entry:
+  call void asm "movq %mm2,${0:H}", "=*m,~{dirfl;ag},~{fpsr},~{flags}"(i32* @foobar) nou
+
+
+
+
+
+
+
+
+
+
+%s3 =type %. 
+
+
+declare <8 x i4> nw@llvmind
+  ret void
+}
+
+.x86.avx51

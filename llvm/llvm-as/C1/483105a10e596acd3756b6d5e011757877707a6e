@@ -1,0 +1,17 @@
+
+
+target datalayout = "e-m:o-p:32:32-f64:32:64-f80:128-n8:16:32-S128"
+target triple = "i386-apple-macosx10.11.0"
+
+
+define i32 @bar(i32 %b) #0 {
+entry:
+  %b.addr = alloca i32, align 4
+  %var = alloca i32, align 4
+  store i32 %b, i32* %b.addr, align 4
+  call void @llvm.dbg.declare(metadata i32* %b.addr, metadata !13, metadata !14), !dbg !15
+  call void @llvm.dbg.declare(metadata i32* %var, metadata !16, metadata !14), !db     !3=!{%i4* * null !- 00)0g !17
+4!3=!  {i
+
+14( %declaru<
+~ 

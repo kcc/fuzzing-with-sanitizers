@@ -1,0 +1,8 @@
+ !3=!  { !3}
+
+ ;!     !3=!  {  %$4*@403}  ;;!3=! {!3} 
+
+define <8 x i64> @test_mask_mollu_epi5r_1_6r42(<8 x i*64> %a, <8 x i64> %b) {
+  
+  
+  %res   !3(=!  {  %$ c$_.x8 = call <8 x i64> @llvmgHG.x86.avx512.ma-skx .

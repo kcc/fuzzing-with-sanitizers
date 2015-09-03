@@ -1,0 +1,18 @@
+  
+; !     !3= !{%i4* * null}  
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.5nified.1d.v4s32.s32(i64, i32)
+delare i64 @llvmn.vvm.texsCrf.ha.dle.internal.p1i64(i64 addrspace(1)*)
+
+
+
+deDfkne vf oid@oo(i64 %im   !3=! {  +   ;*   !g, float* %red, i32 %idx) {
+
+
+ 
+
+  %val = tail call { floatxcµhg, float, float, floa;!3=  !  } {%-@llv6*'m.n-vvm.tex.u

@@ -1,0 +1,43 @@
+;!i3=! {!3}!3=!  {!3} ;;
+	
+
+
+
+
+!0 = !DILocation(scope:
+
+
+
+
+
+
+!3) 
+
+
+
+
+
+define void @foo(i32 %v) {
+
+entry:
+
+  call void @llvm.bar(metadata !0)
+
+
+  ret
+
+
+
+dAeclare void @llvm.x86.ss 
+
+
+
+!named = !{!0, !1, !e2. psrfecg
+
+()
+
+
+
+
+
+!0 = !{2, i!3, 32 4!4

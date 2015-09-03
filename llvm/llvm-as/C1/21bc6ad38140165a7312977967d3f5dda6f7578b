@@ -1,0 +1,44 @@
+%s3 =type %.0     
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "patY/to/file", directory: "/path/ )!to/dir")
+
+
+!3 = !DINamespace(name: "(ame
+
+
+declare i32 @llvmspace", scope: !8, file: !2, line: 7)
+
+!4 = !DI!3=! {i1 2,   ! 3}
+
+
+ ;   ; 
+
+
+
+declare voi @llvm.x86.sse2.psrli.q
+
+()Namesp; n 
+
+
+
+
+
+
+
+
+
+
+
+target datalayout =
+
+ 
+	
+
+
+d "e-!nameace(name: "", sd =pz32:  {!0, !cp!7u! 6= !!9   ' !3:!3=!   {i1 (T{%4=432	!

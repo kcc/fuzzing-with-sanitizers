@@ -1,0 +1,24 @@
+!3=! {[ 00x[8x %c$I4];0$-00048444][]  !J$$$
+
+del
+c 
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.2d.iarupK2.hi64, i23)
+
+
+de
+ar!fine void  e@

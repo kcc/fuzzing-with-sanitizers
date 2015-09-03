@@ -1,0 +1,25 @@
+  
+
+@0 = common global i3
+2   ; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "
+
+
+
+
+
+
+
+
+      !3=!  {  %$3g4*@403};
+   declare i64 @llvm.hexagon.-DND!3=!  {i1 [i200  34EBUE ;0  3",!! f includePat]h: 

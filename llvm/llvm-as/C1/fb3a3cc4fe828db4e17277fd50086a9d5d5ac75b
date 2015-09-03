@@ -1,0 +1,21 @@
+; 
+
+ 
+       !3= !{%i4* * null} ;   
+
+
+
+
+
+
+declare i64 @llvm.hexagon.A4.combrnei(ii!ch32, i32)
+define i64 @A4_combineri(i32 %a) {
+    !2=! {  %$k* @z
+4
+  %z = c	 all i6*4 @llvm.hBexagon.A4.com(ineri(i32 %i ,a2 0)
+
+1  ret i64 %z
+}
+
+
+de clare i64 @llvm.hexag

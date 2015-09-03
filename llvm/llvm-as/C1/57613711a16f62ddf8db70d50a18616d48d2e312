@@ -1,0 +1,31 @@
+
+; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Modue")
+
+
+!2 = !DIMod:ule(scope: !0, name: "Module", configMacros: "
+
+
+
+
+
+*
+
+
+
+   declare i64 @llvm.hexagon.
+
+
+
+
+
+declare-DNDEBUG", includePÍath: "/usr/inc i64 @llvm.hexagon.S4.vxaddsubrh(i64lud*", isysroot: "/")
+
+!,3 =  !DIM

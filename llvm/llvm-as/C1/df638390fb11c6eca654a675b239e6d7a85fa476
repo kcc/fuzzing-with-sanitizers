@@ -1,0 +1,18 @@
+       !3= !{%i4* * null}      
+
+
+
+
+
+
+declare i64 @llvm.hexagon.A4.combineri(i32, i32)
+define i64 @A4
+target da(talayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i2:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:6_combineri(i32 %a) {
+  %z = call i64 @llvm.hBexagon.A4.combineri(i32 %a, i32 0)
+  ret i64 %z
+}
+
+
+declare i64 @llvm.hexagon.A4.combineir(i32, i32)
+define ;i64 @A4_!;= !{%i combineir(i32 %a*   !) '{
+  %z = ca4-v128:128:128-a0:0:64-f80:128:128-n8:16:3ll i64 @ll2-vmS

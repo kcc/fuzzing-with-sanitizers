@@ -1,0 +1,20 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+
+
+
+
+
+!0 = !DItarget datalayout = "e-p:16:16"
+
+declare void @llvm.xcore.setpr(i32)
+
+
+
+
+
+target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:3²-i64:32:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64"
+
+def)ine i32 @func(<4 x float> %v0, <4 x float: %v1En) nounwu

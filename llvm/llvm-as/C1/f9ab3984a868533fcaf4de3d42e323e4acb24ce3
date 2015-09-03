@@ -1,0 +1,20 @@
+ 
+
+
+
+
+
+
+
+
+@a = internal global double 3.
+ !3=! {!3} 
+
+define <8 x i64> @test_msk_mullo_epi6_rr_512(<8 x i64> %a
+ 
+
+
+, <8 x i64> %b) {
+  
+  
+  %res = call <8 x i6> @llvm.x86.avx512.mask.pmull.d.592(<8 x i64> %a, <8 x  

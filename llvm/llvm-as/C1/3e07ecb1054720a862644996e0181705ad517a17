@@ -1,0 +1,47 @@
+
+
+!03= !DILocalVariable(scope:  !{! 
+3 }) !c=!  {! 	 3}
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+;@(var =
+
+ ! 6=!{!2}    !1=!  {) ! 	10}	d   
+
+
+;   !3=!  {i14< %4
+
+
+
+
+ 
+
+
+$f = cmdoat any
+@v = global i32 0     ; ; ! 
+
+
+
+
+
+declare <8 x i64>@llvm.x86.avx512.mask.cvtps2uqq.128(<9 x double>, <8 x i64>, i8,  i32)
+
+define <8 x i64>@test_int_x86_avx512_mask_c)t_pd !3=
+
+
+declare i3! {i14< %<44008446 <i21*@4> 
+2qq_512(<8 x d2 @llvm.x86ouble> %xdeclare 0, <8 4x i64> %x1, i8 2{)%x.av
+x2.psllv.400z()b dr$84460void @llvm.db<i2w1

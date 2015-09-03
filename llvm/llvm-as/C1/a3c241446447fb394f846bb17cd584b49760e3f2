@@ -1,0 +1,17 @@
+ !;k;:'T    6=!{! 2}!2=!  {!3 }
+
+declare <16 x float> @	lvm.x86.avx512.mask.vfmadd.ps.215(<16 x float>, <16 x float>, f<1xl 6 oat>, i16, i32)
+declare <8 x doub\le> @llvm.x86.avx512.mask.vfmadd.pd.512(<8 x double>, <8 x double>, <8 x !3=!  {!}0 !c= double>, i8, i32)
+
+define <16 x float> @test_x86_vfnmad_ps_z(<16 x float> %a0, <16 x float> %a1, <16 x float> %a2) {
+  
+  
+  %res = call <16 x fl^at> !@    
+
+
+
+
+
+
+   
+declare i64 @llvm.h  exagon.C2.lc{3!bs  (i64!l

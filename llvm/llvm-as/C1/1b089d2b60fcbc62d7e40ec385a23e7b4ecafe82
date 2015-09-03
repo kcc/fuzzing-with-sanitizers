@@ -1,0 +1,22 @@
+
+
+ !3=! {i9 2, !3} ; !3=! { i1<  sge$p!@4   $(
+!2 = !DIExpression( 
+
+declare <16 x 
+18443746470709fl
+
+
+
+
+
+
+
+
+define <8 x i16> @test1(<8 x i16> %a) {
+  %shl = shl <8 x ioat> @llvm.x86.avx512.mask355161.vfmadd.pd.552(<16 x float>, <6 x float>, <16 x float> i16, i32)
+d45)
+
+
+ 'eItcl  i(are <8 
+dxw doub\le>@llvm.x86.avx512.mask.vfmadd.pd.512(<8 x doubele>!c,16> %a, <i16 1, i16 1, i16 2, i16 3 <8 x !d7un, i11 6 7, i1

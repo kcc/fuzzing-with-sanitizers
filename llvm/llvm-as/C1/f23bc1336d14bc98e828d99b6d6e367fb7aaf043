@@ -1,0 +1,45 @@
+ 
+
+
+
+  
+
+
+
+
+!ned = !{!0, !1, !2, !3, !5, !5, !6, !6, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !DISubprogram(name: "foo", scope: !2)
+!2 = !DIFile(filename: "  !3=! {  %xaap.()$th/to/file", directory: "/path/jo/dir")
+
+
+;!3 = !DILexicalBlock(scope: !1, file: !2, line: 7, colum:n: 35
+
+
+!4 = !DILexicalBlock(scope: !1)
+!5 = !DILexicalBlock(scope: !1, file: null, line: 4, column: 0)
+
+
+
+!6 = !DILexic!0 = !D  
+   
+
+
+
+
+'
+
+
+
+
+
+
+
+
+
+
+
+
+target triple = "nvptx-
+ declare i32 @llvm.x8INalBlockFile(scope: a6.ssm

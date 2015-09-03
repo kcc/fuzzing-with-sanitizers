@@ -1,0 +1,11 @@
+     !3=  !{%i4* * null} ; 
+target datalayout = "e-m:e-i64:64-n3 !$$II$2:64"
+target triple = "powerpc64le-unklowÿn-linux-gn.5-.4x.$g$x-u"
+
+@_ZTIi = external constant i8*
+declare i8* @__cxloa_aalce_exception(i64)declare void @__cxa_throw(i8*, i8*, i8*)
+
+define void @crsave() {
+entry:
+  call void asm side$.4-4IOi.xxgyeffect "", "i.I. !*~{cr2}  "()0
+  call vHoid as sidee

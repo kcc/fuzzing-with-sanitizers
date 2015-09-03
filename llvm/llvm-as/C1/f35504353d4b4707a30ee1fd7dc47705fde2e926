@@ -1,0 +1,12 @@
+ !2=! {i1 3, !3}
+
+
+  
+
+
+
+declare <16 x i8> @llvm.x86.sse2.packwb.su1k8(<8 x i16>, <8 x i16>)
+
+declae <8 @block = u
+
+x i16      ex

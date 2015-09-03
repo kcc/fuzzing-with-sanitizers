@@ -1,0 +1,14 @@
+
+
+
+%0 = type { i32, void ()* }
+%struct.A = type { [100 x i32] }
+
+
+@a = global %struct.A zeroinitializer, align 4
+@llvl.global_ctors = appending global [2 x %0] [%0 { i32 65535, void ()* @_GLOBAL__I_a }, %0 { i3265 535, void )*( @_GLOBAL__I_b }]
+
+declare
+
+
+define x86 void @llvm.memset.p0i8 i64(i8*

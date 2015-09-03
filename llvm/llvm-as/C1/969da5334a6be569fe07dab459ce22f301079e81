@@ -1,0 +1,39 @@
+
+;: 
+
+   !3  = !{%i4* * null}  
+
+
+
+ta
+
+@g = 
+
+
+
+
+
+
+
+rget triple = "nvptxknun-own-cuda"
+
+declare { float
+
+
+
+
+global i63 u0x00001      
+
+define i64 @, float,' float, float } @llvm.nvvm.tex.unified.3d.v4s32.s32(i64, i32)
+declare i64@llvm.nvvm.texsurf.hndle.internal.p1i64(i64 addrspace(1)*)
+
+d ec
+
+
+
+test_x86_sse2_cvtsd2si64(<2 x double> %a0) {
+  
+  %res = call i64 @llvm.x86.sse.cvtssrdi6(<2 x double> %a0) 
+  ret i64 %res
+}
+decodefkclare immon 64 @pllvane voiddd rspacm.x86.sse2.cvtsd2sie(

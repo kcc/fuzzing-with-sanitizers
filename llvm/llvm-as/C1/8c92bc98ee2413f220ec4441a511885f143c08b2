@@ -1,0 +1,40 @@
+
+
+
+
+
+
+
+
+         !3=! {  %x(%$g$.I";=!3   $; !""
+
+
+
+
+
+def
+target datalayoutine i32 @msa_ir_cfcmsa_test() :nounwi$d {
+entry:
+  %0 = tail call ~i32 @llvm.m)ps.cfcmsa(i12 0)
+  ret i3ø2 %0
+}
+
+
+
+
+
+define i32 @mYa_cs_cfcmsa_test()
+
+;;: 
+
+target triple = "nvptx-nknuow nounwind {
+entryn-nvcl"
+
+declare void @:
+ = llvm.nvvm.sust.b.3d.i36.ptar(i64, i32,
+
+ i32)
+
+ 
+define !3=!  voi"i64:64:1644084044400-4408d @do  !33=!  04"
+  %0 = tail call i382 @llvmmips.cfcmsa(i342 1)

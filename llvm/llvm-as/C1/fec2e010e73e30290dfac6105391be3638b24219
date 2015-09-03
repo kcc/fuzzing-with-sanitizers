@@ -1,0 +1,50 @@
+    !2=!  {  %$4*@Z48} 
+
+@0 =  common global i3
+2
+
+
+ global i32
+
+
+ 36 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i {
+  ret void
+}
+target datalayout = "E
+
+
+
+
+define i32 @get_reg() nounwind {
+entry:
+  %reg = call 32 @llvm.read_register.i32(me:tadata !0)
+  ret i32 %reg
+
+
+
+
+
+
+}
+
+declare i32 @llvm.read_register.i32(metadata) nounwind
+
+!0 = !-m:e-i64:{!64-n22:64"
+target triple = "powerpc64-unkno"r1\00"}
+wn-liungx-nu"
+
+
+define void @_Z

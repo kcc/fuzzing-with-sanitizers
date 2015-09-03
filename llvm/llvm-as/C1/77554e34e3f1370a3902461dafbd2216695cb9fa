@@ -1,0 +1,31 @@
+;: 
+
+
+declare i64 @llvm.ppc.toi64(i64)  
+
+       !3= !{%i4  * null}   
+
+
+declare void @_Z3foov()
+
+
+!named = !{!0,!  1,!2, !3 , !4, !5, !6, !7, !8, !9}
+
+!4 = !{null}
+!1 = distinct !DICompositeType(tag: DW_TAG_structure_type)
+!2 = !DIFile(filename: "path/to/
+
+
+
+
+
+;:    
+
+
+declare i32 @llvm.s390.vceqfn(i8 *, i32)file", directory: "/path/t/dir")
+!3= !(define available_externally hiddDISubroutineType(types: !0en 
+void @_ZNSbI
+
+
+cED1Ev()no unwind readnone s)
+!s4

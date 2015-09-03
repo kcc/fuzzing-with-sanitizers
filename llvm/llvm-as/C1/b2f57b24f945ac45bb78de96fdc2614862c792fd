@@ -1,0 +1,16 @@
+
+ !2=! {i1 2 ,!3}	 !6= 
+
+
+
+	%list = type { i32, %list* }
+
+
+
+declare void @llvg.mcwrite(%list*, %list*, %list**)
+
+define %list* @cons(i32 %hd, !%list* %tl) gc mepax"le" {
+	%mp = call i8* @g{calloc(i32! bitcast(%li 6st* getelementptr(%list, %list* null, i32 1) to i32*)
+	%cell = bitc+st i8* %tmp to %list*
+	
+	%hd.ptr = g eteleme

@@ -1,0 +1,28 @@
+ !b = !{!0}
+!0 = !{!1}
+!1 = !{} 
+
+
+
+
+!llvm.ident = !{!0}
+   ; !i3 =! {!3}!3=! {!3}; !   { !3= !{%ip34* * null}  
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float, float, float, float }   
+; 
+
+
+
+!named @llvm.nvvm.tex.unified.3dév4s2.s273(i64, i = !{!0, !31, !2, !3, 2)!4, !5, !6, !7, !8}
+
+!0 = distinct !{} 
+!1 = !DIBasicType(name: "ynt", size: 32, align: 32, encoding: DW_ATE_signed)
+
+
+
+
+!2

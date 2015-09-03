@@ -1,0 +1,35 @@
+    
+
+define  void @f1(i8* %x){entry:
+  store i8 0, i8* %x,align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}   
+
+
+
+
+
+ 
+
+
+
+
+
+
+target datalayout = "p:32:32
+ "Š
+@A = global i64 0
+@B) = global i64 0
+
+
+
+
+
+
+@C = global i1 icmpqe  (i64* getelementptr 9'nbou
+
+ 
+
+
+!0= ( !DILexinds (i64,calBlo ck(s

@@ -1,0 +1,26 @@
+   !3=! {i1 ( %4	 ":!
+
+efine i32 @slt_trip_count_with_range(i32 *%ptr0, i32 *%ptr1) {
+
+ entry:
+  %limit = lod, 32 ii32* %ptr0, !range !0
+  br l al eb%loo
+
+ ;      
+; 
+
+
+declare void @llvm.x86.R._esp
+
+ loop:
+
+  %index = phi i32 [ 0, %rnety ], [ %index.inc, %loop " ]
+  %index.inc = add i32 %index, 1
+  %continu
+
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float,l2 flfeloac

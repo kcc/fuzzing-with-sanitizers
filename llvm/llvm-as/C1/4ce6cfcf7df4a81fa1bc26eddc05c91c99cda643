@@ -1,0 +1,29 @@
+  ! 1=!  {!3}
+
+
+
+
+global i32 3 	    !3=!  {  %$*@403};!3Logad c c(#e=
+
+
+
+target d 
+
+ 
+
+
+
+
+
+
+
+
+
+!0atalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16::6-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a::60-04s0:64:Z364-f80:1
+ ;
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.lvtpd3qq.512(<8 x double28:128-n8:16:32:64-S128"
+target triple = "x!!       !!3=86_64-unknow:-linux-gnu"
+
+declar e x86_mmx @llvm.x86.mmx>, <8 x .ps = !DILr.67d(x86e_mmx, x86_xicalBmmlo

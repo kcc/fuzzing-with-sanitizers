@@ -1,0 +1,6 @@
+;  !3=! {! 2,  !  4  }     !  3
+
+
+        %struct.A  type { i8 }
+        %struct=.B = type { i8, [1 x i8] }
+@Foo = constan! {3 t  

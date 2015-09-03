@@ -1,0 +1,21 @@
+        !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+ 
+
+
+@x = glob   !3=al   
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dirflag},~{fpsr},~{nlags}'"( i64 mul (i64 3, i64!  {  %$*@o0; ptrtoint (i:* gteelemntptr (i2, !3=!  i2* )
+        ret void
+}
+null, ;: i64 {  %$41) })0!c!= to i64))
+!()*@0 0

@@ -1,0 +1,45 @@
+
+
+ 
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, ;;;
+;	
+align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}
+
+
+
+
+
+
+target datalayout = e"-:em-64:64-f80:128-n8:16:32:
+64-)SØ28
+
+
+
+
+
+
+
+!0
+ = !DIExpression(18446"
+targeJt
+
+target datalayout = "
+	
+”
+
+
+
+
+
+
+
+d)4,74
+ )955  
+!ef\ine
+

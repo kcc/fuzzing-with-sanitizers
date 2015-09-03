@@ -1,0 +1,28 @@
+;  ; ;!y3=!  {!3}!i = !{!3};;!i3= !  {!3}!3=! {! 
+3
+
+
+}7
+
+
+!
+
+
+%struct_t = type { double, double, double }
+@static_val = constant %struct_t { double 1.0, double 2.0, doubl e3.0 }
+
+dec)lare void @llvm.va_staRt(i8*) nounwind
+declare void @llvm.va_end(i8*) nounwind
+
+
+define void @test_byval_8_bytes_alignment(i32 %i, ...) {
+entry:
+
+
+
+ %g = alloca i8*
+  %g1 = bitcast i8** %g to i8*
+  call void @llvm.va_start(i8* %g1)
+
+
+

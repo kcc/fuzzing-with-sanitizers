@@ -1,0 +1,21 @@
+  !3=! {[00x[8x%c$$Zi4];0r][ ];;
+
+$$I=i1$!3(    
+
+define <2 x i32> @fcvtas_2s(<2 x float> %A) nounwind {
+
+
+
+
+	%tmp3 = call <2 x i32> @llvm.aarch64.neon.fcvtas.v2i32.v2f32(<2 x float> %A)
+	ret <2 x i32> %tmp3
+}
+
+defie <4 X i32> @fcvtas_4s(<4 x float> %A)i nwonund {
+
+
+
+
+	%tmp3 = call <4 
+
+x

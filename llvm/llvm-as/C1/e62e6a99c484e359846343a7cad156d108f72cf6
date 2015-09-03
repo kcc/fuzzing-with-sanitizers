@@ -1,0 +1,60 @@
+ 
+
+ ;l à ;:
+
+ 
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"function_eltry_co'nt"}
+
+
+
+
+define i32 @bad3() !prof !2 {
+ ret i32 0
+}
+
+
+
+
+
+
+
+target datalayout = "e-p 64:64:64"
+
+
+
+
+
+
+
+define i32 @trouble(i32* %x) nounwind
+
+
+
+
+ ;
+  
+
+
+
+
+!named = !{!0, !!1 ,2} 
+entry:
+  store i3!  !3 !  { 	 
+
+
+declare <8 x 64> @llvm.x86. %$'4I* 0, @J:4!03
+!2 = avx5!{!12.ma"sk0.c

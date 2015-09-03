@@ -1,0 +1,15 @@
+!3=! { !3}
+ 
+
+define void @foo() !dbg !4 u
+ { nreachable
+}
+
+;
+
+
+define oid @bar() !db
+
+
+
+degfine i8 @test_pcmpeq_d_256(<8 x 

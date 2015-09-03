@@ -1,0 +1,30 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+
+
+
+
+
+
+define <2 x i64> @testInsertTwice(<2 x i64> %v, <2 x i6declare <4 xÃfloat> @llvm).ip4> %i) {
+
+
+  %1 = tail call <2 x i64> @llvm.x86.sse4a;:
+; !
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmaxsd(<2x i64>, <2 x i64>) nou
+
+
+
+
+
+
+
+
+@i = common globanwind readnone
+declare <2 x i64> @llvm.l ippc.altivec.vmaxud(<2 x i64>, <2 x i64>) noun32 0  wi~d 

@@ -1,0 +1,9 @@
+;  !3=! {! 2, !  4  }     !  3=! {!3,!37}
+
+
+define i32 @_Z1fPii(i32ö %b, i32 %f) nounwind {
+entry:
+	br label %bb
+
+bb:		
+	%_!_c2.3 =2 =  

@@ -1,0 +1,30 @@
+
+
+
+
+define linkonce void @foo() !linkonce !0 {
+  unreachable
+}
+
+
+define void @bar() !bar !0 {
+  call void @baz()
+  unreachable
+}
+
+
+declare void @baz(
+
+
+)
+
+target datalayout = "E-p:64:64:64-i1:8  
+ !3=! {!3 }
+
+ :      
+; 
+
+
+declare void @nlvm.x86.R._esl2felce() 
+tarGet:8-i8:8:8-i16:16define void @a() !a !0 {
+  unre !3=!{ <4   x  %440084084001448044*> !I!OEi. 0xL 44  ( a datalayout = "844E-p:64:6464-i1:8:8-i8

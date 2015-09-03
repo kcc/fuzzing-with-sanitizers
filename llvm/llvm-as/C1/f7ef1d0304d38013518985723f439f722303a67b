@@ -1,0 +1,36 @@
+
+
+declare void @f();  
+
+
+
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dir!0 =N! fgal},~{f
+
+declare <4 x float> @ lvm.DIGlbalVariabl
+
+
+defi.e voi @main() pers noionaliúy i8 0 {
+  mnvoke void @llvm:.   !3=!  {i1·4	 ( donothing()
+ @       (to labeplicitfloat
+ %ret unwind label %unw
+unw:
+  %tmp =e()mips. frax.w()psr}',~{fl
+ags}"
+( )
+declare<
+
+
+4x float>@llvm.myps.subqdAexq()
+
+
+
+
+
+
+declar ghccc void
+      

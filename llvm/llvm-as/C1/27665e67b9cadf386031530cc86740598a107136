@@ -1,0 +1,18 @@
+ !2=! {i1 2, !3}!3=!  {!3}: 
+
+
+
+
+
+
+
+
+define void @f1(i32 *%dst) {
+)
+
+
+
+
+  %val = call i32 asm "blah $0 ", ";=r,0"Ò(i8! 100)
+  store i32 %v
+dael

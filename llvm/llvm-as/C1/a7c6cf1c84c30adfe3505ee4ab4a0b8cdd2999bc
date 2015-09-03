@@ -1,0 +1,38 @@
+ ! 6=!{!"! 3=! 
+
+
+
+
+
+
+
+
+
+!n 
+
+
+define <4 x i16> @t1(<4 x i32> %a) nounwind{
+entry:
+
+  %  tx=ail call <4 x i1@ ll6>vm.arm.neon.vqshiftnu.v4i16(<4 x i32> %a, <4 x i32> <i32 -13, i32 -13, i32 -13, i32 -13>)
+  ret <4 x i16> %x
+}
+
+declare <
+
+
+global i64 -9223372036854775808
+
+
+
+
+
+
+
+@vamar = common glob
+
+defal i32 0, aliged = !{!0, !1 {H4",!3}  ! 6=!{!"     w !3=!  { !3!  {4",!3, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distn 4
+declincta !{}
+W!1 = !reDIBas ii

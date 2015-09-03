@@ -1,0 +1,78 @@
+  
+
+
+declare void @llvm.x86.she.sfenZde()
+
+
+%t = type opaque
+@x = global %t undef
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+ !0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {  ret i32 0
+}
+
+!1 = !{!"function_entvy_coun 
+
+
+
+0e
+dclare i
+
+
+declare <4 x fl !0
+
+= !ÄILocalVariable(scope:   !3)*:
+oat>
+
+
+
+
+
+
+declare x86_mmx@llvm.x86.s @llvm.m32 º@llips.stma(.()
+
+
+
+
+
+
+
+fe
+vm(.s390
+
+
+decl.  sse3.pmwha.dacp(
+)
+
+
+
+
+
+t ar vfad"
+
+
+}
+
+
+

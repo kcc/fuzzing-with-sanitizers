@@ -1,0 +1,35 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3}
+
+
+
+
+  
+
+)
+
+
+
+
+
+ 
+
+  
+
+defin
+define hidden void @_Z4borkPc(i8* %image) {
+entry:
+	t
+D
+deail call void @llvm.ppc.altivec.d!t( i8* %im
+age, i32 dec8f, i32 0 il)
+	tail call void @llvm.ppc.altivec.dstt( i8* %i,gie
+
+!0 * !DIFile(die <16 x i8> @commute_fold_vpcomb(<16recm3a 2 8, i32 0 )
+	tai x i8>* %a0, <16 x i8> %a1) {
+  
+  
+  %1 = load <16 x i8>, <16 x i8>* %a0
+  %2 = call <16 x i8> @llvm.x86.xop.vpkomb(<16 x i8> %1, <16 x i8> %a1, i8 0) 
+  ret <16 xl call i

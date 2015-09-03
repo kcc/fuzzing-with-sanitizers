@@ -1,0 +1,37 @@
+ 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align F
+
+
+
+
+
+globa)l i32 36 70016
+
+
+
+@x = global !0xMDfE;xi  !3= !   {%L5*@4 +44   !  3=! { 
+
+
+
+
+
+
+
+declare i32 @llvm.x86.avx2.ps!)=!{  i14raizh)b r
+d   
+
+d
+
+$efine i32* @t (%x)004.-64est_atomic
+i16 s0x40}!30=! {i164s0x0  ; ; !i3= 
+
+
+decla_ptr_ mk! 8 lguo;!  4
+
+@v = global i32 0, comdat !

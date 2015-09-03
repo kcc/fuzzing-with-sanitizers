@@ -1,0 +1,25 @@
+      
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Moeldu")
+
+
+!2 = !DIModule(s
+declare ivdo @foo()
+
+define i32 @f1(i32 %a, i32 %b, i32* %v) {
+;!3=c;   !3=!  {i10< %444008e)try:
+
+
+        %tmp = icm!p eq i32 %a, 4460<i21*@4> i ;%b              
+       Ý br i1 %tmp, labed %con!3=(;  0 ! { 

@@ -1,0 +1,27 @@
+ 
+
+     !3= !{%i4* * null}  
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.3d.v4s32.s32(i64, i32)
+declare i64 @llvm.nvvm.texsurf.handle.intebnal
+
+
+
+
+declare.p1i64(i64 addrspace(1)*)d
+
+ec
+
+
+
+defkne void  i32 @llvm.s390.vm@foo(i64 %alnn()8)lare i2 @;;
+
+
+!0 llvm.s390.vp=ksgi()
+
+
+ 

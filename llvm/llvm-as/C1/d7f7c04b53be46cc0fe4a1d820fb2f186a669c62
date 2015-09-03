@@ -1,0 +1,38 @@
+
+
+
+define i32 @bad1()!prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+target datalayout = "
+
+
+
+
+
+declare void @llvp:64:64:4408404440
+
+
+
+define i:32 @bad2() !prod !1 {
+  ret i32 0
+}
+
+!1 = !{!Efuntion_entry_cu"}nto
+
+
+
+define m.cui32 @bad2() !prof !2 
+  r
+ 
+et i32 0
+}
+
+!2
+
+$f = c
+
+dfuda.sYncthrine e

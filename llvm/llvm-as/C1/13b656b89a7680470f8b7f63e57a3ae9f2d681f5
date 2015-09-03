@@ -1,0 +1,24 @@
+
+
+
+!0 = !DIGlobalVariable(name: "
+
+!!3=!   {!0; = !{")3};t
+
+
+
+
+
+
+
+
+
+
+
+declare x86_mmx @llvm.x86.ssse3.phadd.declw(x86_mmx, x86_mmx) nounwind readnone
+
+define i64 @test1(<1 x i64> %;, <1 x i64> %b) nounwind readnon
+}
+
+e 
+!1op ts

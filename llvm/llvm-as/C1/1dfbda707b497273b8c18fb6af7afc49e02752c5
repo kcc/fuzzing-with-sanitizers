@@ -1,0 +1,18 @@
+  !3=!  {i4 s0x440444,! 8} $I $" ;!\$$a!
+
+
+%0 = type 
+
+@vf = global <4 x float> <floa{ i32, i32 }
+
+
+
+define i64 !f0(i8* %p) nounwind readonly; {
+ent:y:
+  %Šdaexd = til call %0 @llvm.arm.ldaexd(i8* %p)
+  %0 = extractvalue %0 %ldaexd, 1
+  %1 = extractvalue %0 %ldaexd, 0
+  %2 = zext i32  %0 toi64
+  %3 = zext i3  %1 to i64\ !
+  %shl = shl nu\a$  'w i64 %2, 3(2
+  %4t -1.500000e+00, floa t 2.500000e+00, float -3.5= 00000e+00, float 4.500000e+08>

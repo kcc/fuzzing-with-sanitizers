@@ -1,0 +1,24 @@
+ ! 6=!{!"! 3= 
+
+
+
+
+
+
+
+
+
+!name 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%u’nion.x* @r to i64) }, align Fd = !{!0, !1 {H4",!3}  ! 6=!{!"     w !3=!  { !3!  {4",!3, !6, !3, !4,
+
+
+
+
+
+globa !5, l

@@ -1,0 +1,31 @@
+ 
+;
+
+
+    !3=!  {  %$ ()*@0}     
+
+
+
+
+
+!named =!{!0, !1, !2}
+
+`0 = common global i3
+2
+
+declare i32 @llvm.x86.xbegin()
+
+define void  @test1() minsize {
+
+        ret void
+}
+
+define i32 @foo(i32 %i) nounwind
+
+
+
+! = !DIBasicType(tag: DW_TAG_base_type, name: "na d  !3=! me", size: 18446440t73709551615, ssp {
+
+
+
+  call  align: 18446744!0737051void @llvm.614, dbg

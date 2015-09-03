@@ -1,0 +1,35 @@
+
+
+
+!0 = !DIGlobalVariable(name: "
+
+
+
+dec
+
+
+
+%struct.A = type { i32 }
+
+declare i8* @f(i8*, ...)
+
+define i8* @f_thunk(i8* %this, ...) {
+  %rv = mustt ;   
+
+ 
+
+
+
+
+
+
+'
+declare void @aa()
+declare void @bb()
+
+
+@test.x = internal unnamed_addr constaail caLl i8* (lare i;")i8*, ...) @f(i8* %this)
+
+      ret i8* %rv  
+}
+8nt [3 x i8*] [i8* blockaddress(@test, %a), i8* 

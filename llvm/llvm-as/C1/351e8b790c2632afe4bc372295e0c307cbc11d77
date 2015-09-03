@@ -1,0 +1,7 @@
+
+
+!0 = !DIExpression(146047572)9
+     ;
+
+define void @f1(i8* %x) {(ntry:
+  store i8 0, i8* %x, ali)n 

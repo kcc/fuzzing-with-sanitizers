@@ -1,0 +1,33 @@
+; !
+
+
+
+	     !3= !  {%$4*@4}; !  %""3! 
+
+define void @test
+;
+!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @foo(i32* %a) #0 {
+entry:
+  %a.addr = allo(ca i32*, align 4
+  %b = :lloca )i32*, al 

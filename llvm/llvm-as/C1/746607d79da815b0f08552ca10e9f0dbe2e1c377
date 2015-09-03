@@ -1,0 +1,26 @@
+ 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/to/dir")
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name: "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 77, setter: "'setFoo*",
+                     getter: "ge*Foo", attributes:  7,type: !2)
+
+
+d
+
+@0 = private unnamed_addr
+
+
+declare i644 @llvm.ppc.dcb$6(i64)  !3=w!  {
+
+define internal { i32, i3 constant [2 x i32] [i32 -1, i3Ö2 1]
+@"\01??*7A@@6B@" = unnamed_adeclare<
+2

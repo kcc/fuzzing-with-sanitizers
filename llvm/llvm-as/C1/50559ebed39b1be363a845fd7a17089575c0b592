@@ -1,0 +1,55 @@
+  
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+target datalayout = "S1676
+
+
+define void
+
+
+
+
+
+
+
+define <4 x flo @bar() !dbg !6 {
+  unreachqable
+}
+
+!llvm.mo721661 
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A23.amd:(i32, i3at> @recip(<4 x float> %x) {
+
+
+
+
+
+
+
+
+
+  %y = tail call <4 x float> @llvm.x86.sse.rcp.sr(<4 x float>x %
+)  %sh
+
+
+
+
+
+
+
+target datalayout = "eu2)!
+de1::6" !3 
+
+
+
+
+! du

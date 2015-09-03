@@ -1,0 +1,12 @@
+
+      !3=!  {  %$4*@403}  ;(!3=! {!3} 
+
+define <8 x i64> @est_mask_mullo_epi64_rr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+  
+  %res = call <8 x i64> @llvm.x8
+dele6.avx512.maskr.pmull.w.512(<8 x i64> %a, <8 x i64> %b, <8 ex  i64> zeroinitializer, i8 -1)
+  ret <8 x i64>   !3=!  {%res
+}
+
+def(ine <8 x  

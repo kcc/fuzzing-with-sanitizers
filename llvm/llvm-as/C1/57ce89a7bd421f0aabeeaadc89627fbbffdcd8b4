@@ -1,0 +1,16 @@
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 
+target triple = "powerpc64-unknown-linux-gnu"
+
+define void @autogen_SD10521() {
+BB:
+  %Shuff7 = shufflevector <16 x i16> 1}   
+ 
+ 
+
+;!3=! {i !2=zeroin! i?ia

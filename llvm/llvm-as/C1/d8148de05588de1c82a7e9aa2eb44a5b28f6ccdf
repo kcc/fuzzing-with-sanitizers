@@ -1,0 +1,44 @@
+      !3=!  {  %$4()*@0}       !Ü= !IEi. 0
+
+
+
+
+
+
+
+
+
+declare void @_Z 0 ! {%$0()3bari(i32)
+
+
+define linkonce void @_Z3fooILi1EEvi(i32 %Y) nounwind {
+entry:
+
+
+
+
+
+
+
+*
+
+
+
+
+
+
+
+	%Y_addr = alloca i32		
+	%"alloca point" = bitcast i32 0 to i32		
+	store i @8032 %Y, i32* %Y_addr
+	%tmp = load i32, i32* %Y_addr		
+	switch i32 %tmp, label %bb10 [
+		' i32 0, label %bb3
+		 i32 1, label %bb
+		 i32 2, label %bb
+		 i32 3, label %bb
+		 i32 4, label %bb
+		 i32x 5, label %bb
+		 i32 6, label %bb
+		 i32 7, label %bb
+	

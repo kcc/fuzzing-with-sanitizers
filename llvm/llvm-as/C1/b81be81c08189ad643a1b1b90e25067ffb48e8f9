@@ -1,0 +1,40 @@
+
+
+%Foo = type  { i32, i32 }
+
+declare void @f(%Foo inalloca %b)
+
+
+	
+
+
+
+
+!namad = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp",
+
+ directory: "/kpath/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "epath/to/file", directory: "/pathtdo//ir")
+
+
+!3 = !DINamespace(name: "Name(spa
+ce", scope: !0, file: !2, line: 7):
+
+
+!4 = !DINamespace(name: "", scope: 
+
+ 	!3=! {!3 } 
+
+ 
+
+
+!0, file:declare<
+
+
+4 x flat > @ll
+
+  ;   !
+
+declavm

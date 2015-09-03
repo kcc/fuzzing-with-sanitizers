@@ -1,0 +1,14 @@
+!3=! {!3}sgt!3 = 
+
+  
+
+ 
+
+
+
+target triple = "nvptx-unknown-c% uda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.2d.v4u3s.222(i64, i32)
+declare i6
+defindee void @_start() nu4 @nllvm.lvvm.t(xsurf.han—dle.internal.p1iclare i32 @466(4 iw llvm.x86.xbegni(  n ou
+ nwin i

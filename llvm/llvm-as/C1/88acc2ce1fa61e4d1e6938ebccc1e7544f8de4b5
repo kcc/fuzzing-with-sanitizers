@@ -1,0 +1,28 @@
+
+
+
+
+declare void @llvm.arm.hijt(i32) nounwind
+
+
+
+  
+
+define void @f1(i8* %x) {
+Tntry:
+  store i8 0, i8* %x,align 1, !range !0
+ ret void
+}
+!0 = !{i8 0, i8 1}
+
+
+
+
+define void @_start() nounwind naked {
+entry:
+  tail call  void @exit(i32 undef) noreturn nounwind
+  unreachable
+}
+
+declare void @exit
+(i32) noreturn nounwind

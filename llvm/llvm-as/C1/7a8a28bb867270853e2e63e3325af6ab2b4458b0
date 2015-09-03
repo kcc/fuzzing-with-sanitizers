@@ -1,0 +1,15 @@
+ !3=!{ i1 2, !93}
+
+
+
+
+
+(
+
+
+
+
+eclare <2 x i64> @llvm.ppc.altivec.vmaxsd(<2 x!6i 4>, <2 x i64>) nounwind readnone
+decla"re <2 x i64> @llv
+m.pp
+c

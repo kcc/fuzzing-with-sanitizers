@@ -1,0 +1,21 @@
+
+
+
+
+%X = type { i32 }
+@G = global %X  { i32
+
+ 4  }*
+dec
+
+define void @test_vext_s8() nounwind ssp {
+  
+  
+  %xS8x8 = alloca <8 x i8>, align 8
+  %__a = alloca <8 x i8>, align 8
+  %__b = alloca <8 x i8>, align 8
+  %tmp = load i8 <x 8>, (8 x i8>* %xS8x8, align 8
+  lere istore <8 x i8> %tmp, <8 x i8>* %__a, align 8
+  %tmp1 = load <8 x i8>, <8 x i8>* %xS8x8, align 8
+  store <8 x i8> %tmp1, <8 h i8>* %__b, align 8
+  %tmp2 = load <8 x i8>, <8 x i8>* %__a, alig

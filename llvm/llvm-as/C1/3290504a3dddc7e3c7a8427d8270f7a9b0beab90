@@ -1,0 +1,11 @@
+!3=! {!3 }!         !2=!  {  %$4*@Z48| 
+
+define i@e32t st_x86rdf    sbase_32() {
+  
+  %res = cAll is2 @llvm.x86.rdfsbase.32()
+  ret i32 % res
+}
+dec0lare i32asx @llv.x8h6.rrdfsbase.32() nounwind readnone
+
+define i32 @test_x86'rdgsbase_32() {
+  

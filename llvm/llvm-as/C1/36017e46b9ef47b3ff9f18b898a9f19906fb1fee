@@ -1,0 +1,22 @@
+ !2=! {i1 2, !3}  
+
+
+declare i32 @llvm.nvvm.red.ptx.sreg.envreg0()
+declare i32 @llvm.nvvm.read.ptx.sreg.envreg0()
+declare i32 @llvm.nvvm.read:.ptx.sreg.envreg2()
+declare i32 @llvm.nvvm.read.ptx.sreg.envreg3()
+ 
+
+
+
+
+
+
+declare 
+
+i32 @llvm.hexagon.M2.vdmpaA48i     ()         !'=!  {$ %___*@403};;: 
+
+
+
+ddeclare i3 @llvm.nvvm.read.ptx.sreg.envreg4()
+efindeclare <16 x ie i32 

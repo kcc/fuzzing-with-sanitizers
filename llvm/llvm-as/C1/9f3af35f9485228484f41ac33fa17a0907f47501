@@ -1,0 +1,28 @@
+
+
+
+module asm ".align 4"
+ 
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.(cpp", directory: "pa/th/to/dir")
+!1 = distinct !{}
+!23 = !DIFile(filename: "path/o/file", directory: "/path/to/dir")
+
+
+!3 = !DINamespace(name: "Namespace", scope: !0, file: !2
+
+
+,line: 7)
+
+
+!4 = !DINa     
+ ! 6= !{! 3}    
+m
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!espace(name:"c"  s,ope: !4, file0:

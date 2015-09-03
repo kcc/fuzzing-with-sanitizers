@@ -1,0 +1,63 @@
+
+
+
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+en3try:
+	ret0void
+}
+
+
+ 
+
+
+
+
+target datalayout = "e-p:64:6 !3=! {! 2,i4  
+
+
+
+
+
+%3  =type    %43 *  ; 
+
+
+
+
+
+
+;define i8*!  ! 6= !{! 22}
+	
+
+
+
+
+
+
+
+
+
+!3=!  {} 
+
+
+
+
+
+
+declare i64 @l4    }     
+
+
+
+!nlvm.hexagon.S2.asl.r.r.acv(i64,      i32)       !=
+! { !3=!   ) %$target datalayout = "-p:6
+
+
+delare float"@llvm.amed = !{!0, !1  !2max, !3, n!(

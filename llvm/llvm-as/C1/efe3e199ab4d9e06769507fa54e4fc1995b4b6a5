@@ -1,0 +1,41 @@
+;!i3=! {!3}!3=!  {!3} ;;
+	
+
+
+
+
+!0 = !DILocation(scope:
+
+
+
+
+
+
+
+!3) 
+
+
+
+
+
+define void @foo(i32 %v) {
+
+entry:
+
+  call void @llvm.bar(metadata !0)
+
+
+  ret void, !baz= 
+ o
+pID !1
+}
+
+declare void @llvm.bar(metadat   !v=! {i1 ( %4	 "(!  !3= { 7 
+" %$04*sea)
+
+@global = global i32 0
+
+
+
+
+!0= meadtaa t!{metadata !1, metadata !2, i32* @global, !c=!  {6' !0,! nuxt(

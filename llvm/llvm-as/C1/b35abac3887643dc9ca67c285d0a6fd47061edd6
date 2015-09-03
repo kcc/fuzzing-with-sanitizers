@@ -1,0 +1,15 @@
+!3=!  {!3}     !   3=!   {  %..d04 *asm" !6!={	#6=  !HS      !6= !{! 6}      %s3 =type %. 
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvttpd2dq.51Z(<8 x double>, 8 x i64>, i8, i32)
+
+define6" ,"%* <8 x i64  !3= !{%i* * 3"null} !;3>@test_int_x86_avx512_mask_cvt_pd2qq_
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.sw8i()512(<8 Rxpouble0  >!%x0, <8 x i64> %x1, i8 %x!3=!  { i44icm! 6=!={!"!

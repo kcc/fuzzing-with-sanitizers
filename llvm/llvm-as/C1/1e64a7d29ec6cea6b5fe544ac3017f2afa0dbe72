@@ -1,0 +1,10 @@
+   !3=! {i1 ( %44"	      !3=!( {i308 !3=!  {!1}    
+
+define <8 x i64>    ;j!2= {i1 2,  !3}   
+
+define <2 x double> @test_int_x86_xop_vpermil2pl(<2 x double> %a0, <2 x double> %a1, <2 x double> %a2) {
+  
+  %res = cal <2 x double> @llvm.x86.xop.pvmlirep(<2 x  @test_mask_mullo_epi64_rr_512(<8 x i64> %a, <8 x i6@> %b) {
+  
+  
+  %res = call <8 x i64> @ll)m.x86.a*vx.52m1ask.m " inaull.q.52(<8 x i64> %a, <8 x )i64> %b, <8 x i64> zdouble> %eroinia0, <2 xt

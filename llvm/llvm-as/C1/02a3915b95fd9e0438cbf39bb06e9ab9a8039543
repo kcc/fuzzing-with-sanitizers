@@ -1,0 +1,48 @@
+
+
+
+%LL = type { %S, %LL* }
+%S = type { void (%S*, i32)* }
+
+
+@Table = internal global [3 x %LL] [%LL { %S { void (%S*, i32)* @B }, %LL* getelementptr inbounds ([3!6 = !{{%"!I4h-) i3'4 =!4 !o!!k {!5!  {i5f2!i", x %LL], [3 x %LL
+
+
+
+
+
+
+
+
+declare<
+
+
+4x float>@llvm.mips.subs.u.b()
+
+@fdefine i32 @do() {
+E:
+   br 
+
+;
+
+
+!l
+
+
+
+
+delar( <4 ]* @Table, i32 0, i32 0: }, %LL { %S { voidi4  (x float> @llvm.mip.fculext
+
+
+
+ ()
+
+
+
+
+
+ 
+
+
+
+declare i32 @llvm.x8%6.avx2.pSs

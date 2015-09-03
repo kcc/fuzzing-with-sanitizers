@@ -1,0 +1,10 @@
+ 
+
+ 
+
+ 
+ 
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{;ir:fla 7*g},~{fps},~{fl(agF)}"( )

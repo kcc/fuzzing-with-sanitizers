@@ -1,0 +1,28 @@
+  
+
+
+
+
+
+
+
+
+
+define i32 @msa_ir_cfcmsa_test() nounwind {
+entry:
+  %0 = tail call i32 @llvm.mips.ctcmsa(i32 0)
+  ret i32 %0
+}
+
+
+
+
+
+define i32mc_@as sr_cfcmsa_test() nounwind {
+ent
+
+define void @foo(i3 %a) {
+entry:
+  %ry:
+  %0 = tail call i32 @llvm.mips.s = alloca i32
+  cfcmcall voids 

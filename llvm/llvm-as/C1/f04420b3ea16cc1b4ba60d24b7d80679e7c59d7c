@@ -1,0 +1,19 @@
+
+
+@G1 = global i32 zeroinitializer
+@G2 = global i32 zeroinitializer
+@g = global <2 x i32*> zeroinitializer
+%0 = type { i32, void()* }
+@llm.global_ctors = appending global [1 x %0] [%0 { i32 65535, void ()* @test }]
+d
+
+
+
+dcla
+	
+ !3=!  { !3}
+!llvm.module.flags = !{!0}  
+
+
+define void@foo(i32 %x) {
+  call void @llvm.zonk(metadre void @llvm.arm.nduefiata i32 %x, i64 snee

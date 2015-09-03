@@ -1,0 +1,33 @@
+   
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModu!3=!{!3 } 
+declare void @llvm.trap()     
+
+  
+
+
+
+ 
+
+
+
+
+!3=!       {!3};  
+
+target triple = "nvppx-unknwn-cuda"
+
+declarei32 @llvm.nvvm.suld.3fv2i1paler1T.(i64, i32)
+eclare i64 @ll
+
+
+declare i1 @l
+declare <4 x float> @ll)!vm.nvvm.msaCe(scopep>l:

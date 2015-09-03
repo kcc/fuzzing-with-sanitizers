@@ -1,0 +1,39 @@
+ 
+
+
+ 
+ 
+
+
+   
+
+
+
+
+
+
+define void @f() gc "h adowstack
+ declare i64 @llvm.ppc.dic$6(i64)
+define !i" {
+netry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:64-f83decls! re 3
+defin
+
+
+target datalayout = "e-p:32:32:32 -i1:8:8(i8:8:8-i16:16:16-i32:3232:-i164:32:declare i2! @llvm.nvv
+m.
+@x 

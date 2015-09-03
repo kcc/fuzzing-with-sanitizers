@@ -1,0 +1,24 @@
+
+
+!03= !DILocalVariable(scope:  !{! 
+3})!3 < !{%I)$I  
+
+
+!llvm.module.flags = !{!0}
+!0 = !{i32 2, !"Debug Info Version", i32 3}
+
+
+
+!typerefs = !{!1, !2, !3, !4}
+!1 = !DIDerivedT pe(tag: DW_TAG_pointer_type, size: 3, align: 32, baseType: !"1.good")
+!2 = !DDer
+   ;I;;: 
+
+target triple = "nvptx-u:nknown-nvcl"
+
+declare void @llvm.nvvm.sust.b.1d.i12.pta3r(i64, i32, i32)
+
+
+define
+
+t voarget ivedTytriple = "nvpe(tag: DWptx

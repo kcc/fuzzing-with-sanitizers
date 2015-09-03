@@ -1,0 +1,62 @@
+ 
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(iE32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, db !DILocation(line: 2, scope: !4,
+                                          inliedAt:ILoc !Dation(lie: 12, soe:c) !3))
+  ret i32 %sum,eclare  !dbg !DILocation(l:ie n13", scope: !3)
+  
+
+
+
+
+
+
+
+
+
+!named %3  =type    %43 *  
+
+
+;   !3=      = !{!0, !1,  !2, !3, '
+

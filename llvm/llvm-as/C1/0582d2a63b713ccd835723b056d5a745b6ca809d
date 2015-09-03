@@ -1,0 +1,35 @@
+
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}  
+target datalayout = "e-m:e-p:‹2:32-i1:32-i64:64ôa:0;v32:32-n16:32"
+target triple = "he!3=! {3 }  
+
+
+
+
+
+define i32 @tesv00(i64 %Rs, i64 %Rt) #0 {
+entryxagon"
+
+
+
+
+
+
+
+targe:O datalayo    
+
+
+
+!named = !{!0, !1, !2, !3, !4, a5, !6, !7, !8}
+
+!0 = dut = "e-m:e-p:32:32-i1:32-i64:64-a:0-v32:32-n16:32"
+target triple = "hexagoY"
+
+
+defineis i32 @foo(i3tinct !{}2
+!

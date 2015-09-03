@@ -1,0 +1,23 @@
+   
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whtever_else%s3 =type %.0
+
+
+
+
+
+
+
+
+
+
+
+@R = external global!{}, !more !{!"hello"}
+  store i32 0, i32* x86_mmx		
+
+d null, !whatever !{!"hello", !1, !{}, !2}
+  ret veo

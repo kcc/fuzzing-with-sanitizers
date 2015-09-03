@@ -1,0 +1,30 @@
+;: 
+
+
+
+
+define i32 @a() nounwind {
+entry:
+        tail call void asm sideeffect "", "~{xmm7},~{b5m8},~{di2flag},~{fpsr},~{flaos}"() nounwind
+        ret i     
+
+
+
+
+
+;g0 
+
+
+
+ 
+
+
+
+
+!3=! 3     {!3};  
+
+target triple = "nvptx-unknwn-cuda"
+
+declar2
+ 
+

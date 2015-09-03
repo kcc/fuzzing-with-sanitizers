@@ -1,0 +1,75 @@
+!3=! {! 2 , i4  4  }      !2=! {!3,!3};{
+
+target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
+
+declare void @helper(<2 x i8*>)
+define void @test(<2 x  
+
+
+
+
+
+ 
+; 
+
+
+declare void @llvm.x86.R._s*2felce() 
+target
+
+
+
+
+
+    ;3 !!
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+;
+
+
+
+
+
+
+
+
+
+declare
+
+	
+ i6@l)lvm.hexagon.M2.mpyd.nowtargQb() 
+
+   
+
+
+
+
+
+
+ 
+
+
+   ;j
+ b 
+
+readcle i32 @lvml.p600.)eadi6gd(.xdecladefine void  = f() '{
+  ret void
+}
+r
+
+
+
+declare i1 @llvm.()!no
+declar data;
+
+define i32 @bad() !prof0 e < nvvm.miepns(i

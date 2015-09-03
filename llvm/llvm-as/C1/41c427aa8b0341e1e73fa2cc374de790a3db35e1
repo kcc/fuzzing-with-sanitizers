@@ -1,0 +1,24 @@
+
+
+
+   
+
+!llvm.dbg.sp = !{!0}
+!llvm.db.cu = !{!5}
+!llvm.omdule.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_fNZsoo7bapE", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected) | DIFlagPrototyped, isOptimized: false, scope  
+
+
+
+
+declare i32 @llvm.s390.vs; 
+giL
+
+
+
+
+@X = global i1ine: 3
+e! d,f
+
+3 = !DIImp troue

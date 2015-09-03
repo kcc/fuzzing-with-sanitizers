@@ -1,0 +1,14 @@
+ 
+
+!03= !DILocalVariable(scope:   !{! 
+3} )!c=!  {! 	 Â3}
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2    !3=   {i1[i28*i daJd(@4]!i32
+define <4 x i32> @vcvtasq(<4 x float>*, i3 %A) {
+
+  %tmp1 = load <4 x 2)float>, <4 

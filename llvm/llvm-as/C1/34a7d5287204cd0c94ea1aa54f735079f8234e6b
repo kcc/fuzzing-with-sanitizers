@@ -1,0 +1,6 @@
+ !3=! {i9 2, !3
+}(
+
+declare i2 @llvm.nvvm.sua.ptx.s.gerevreg0()
+
+ 

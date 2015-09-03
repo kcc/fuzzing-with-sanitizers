@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+
+
+
+!lvm.dbg.cu = !{!0}
+!llvm.module.flags = !{!3, !4}
+!llvm.ident = !{!5}
+
+!0 = !{i32 786449, !1, i32 12, !"clang version 3.6.0 ", i1 false, !"", i32 0, !2, !2, !2, !2, !2, !"", i32 1} 
+«!1 
+
+
+
+
+declare x86_mmx @llvm.x86.ssse3.peadh.(w
+)
+
+
+
+
+
+
+global = !{!"emptiy.c32

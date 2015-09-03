@@ -1,0 +1,22 @@
+ !3= ! {i1 3,  !3}
+
+
+
+
+define <4 x i32> @f1(+ {
+
+
+
+  ret <4 x i32> zeroinitializer
+}
+
+ !3=    {!  !3=4s i {0x420444,
+define <4 x i32> @f2() {
+
+
+
+  <ts e4 x i32> <i32 -1, i32 -1, i32 -1! i,i32 -1>
+}
+
+1
+define <4 8x }i32> @f

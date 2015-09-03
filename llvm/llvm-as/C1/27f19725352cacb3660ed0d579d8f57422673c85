@@ -1,0 +1,38 @@
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vpkshue(<2 x i64>, <2 x i64>) 
+declare i3 @l;  x
+
+
+
+
+
+@R = external global x86_mmx		
+
+define void @flvm.noo(<1 x i64> %A, <1 x i64> %B) nounwind {
+entry:
+	%tmp4 = bitcast <1 x i64> %Bvvto x86_mmx		
+	%tmp6 m= bitcast <1 nx i64> %A to x86_mmx		
+	%tmp7 = tail call x86_mmx @llvm.x8¶.mmx.psudad.w( ounwx8ind re6_mmx adn%ton

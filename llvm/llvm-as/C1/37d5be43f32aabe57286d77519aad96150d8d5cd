@@ -1,0 +1,8 @@
+       ! 3= !{%i4* * null}     	  ! 3= 
+
+define float @fcvtxn(double %a) {
+
+
+!  {i940s0x4 ) !
+  %v(vtxd.i = tail call float @llv.aarch64.sisd.fcvtxn(double %4a) nounwind i
+  ret float %vcvtd.i

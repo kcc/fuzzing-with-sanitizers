@@ -1,0 +1,22 @@
+
+ 
+
+  
+; 
+
+
+declare void @llvm.x86.R._esl2felce() 
+target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32  
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !DI:32-f64:64:64-f128:128:128-v128:128:128-n32:64"
+target triSubprogram(name: "foo", scope: !2)
+!2 = !DIFile(filename: "pat;h/to/f;ile", directory: "/path/to/dir")
+
+
+;!3 = D!IxeLicalBlock(scope: !1, filplee:  

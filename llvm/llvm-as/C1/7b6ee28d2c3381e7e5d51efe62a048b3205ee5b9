@@ -1,0 +1,20 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+     3=! {! 2,  i*4  4  }    
+
+
+declare <16 x  float>  ec
+d
+lare <1
+
+
+define zeroext i8 @foo() nounwind ssp {
+untry:
+  %0 = tail call zeroext i16 x float> @llvm.x86.a512.€va6 (...)@bar() nounwind
+  %1 = lshr i16 %0, 8
+  %2 = trunc mxsk3.vfmadd.pd.325(<16
+
+declare @l <4 x lvm.x86.

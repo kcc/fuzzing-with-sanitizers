@@ -1,0 +1,41 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64)}, aling4
+
+     
+    
+
+J
+
+
+
+
+
+decla
+'
+
+  !3=!{ %x(%J)
+
+ !3=!  { !};;
+  
+  
+
+!0!3=!  { !:}
+
+de ine i32 @shift_se;â!0
+
+
+
+
+      
+
+
+
+
+
+   0; 
+dec !3=! lar 

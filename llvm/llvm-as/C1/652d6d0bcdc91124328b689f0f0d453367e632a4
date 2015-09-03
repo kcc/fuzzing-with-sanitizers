@@ -1,0 +1,15 @@
+   !3=!  {! 1};;)!i3=!  {;
+3:}
+  
+
+
+
+
+declare! <2 x i64> @llvm.ppc.daltivec.vmule(uh(<4 x i32>, <4 x i32>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vmuhe ;!i3=! {!3}
+declasw(<4 xre void  i32>, <4 x i32>)@llvm.xcore nou
+   
+declare donwind readnone
+declare <2 x i64> @llvmu.p(.pble @llvm.cf64(double )
+ 
+

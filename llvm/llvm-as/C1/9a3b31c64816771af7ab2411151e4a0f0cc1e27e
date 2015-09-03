@@ -1,0 +1,8 @@
+
+
+
+define void @func() nounwind ssp {
+
+entry:
+  call void asm sideeffect "psrnw $0, %mm1", "y,~{dirflag},~{fpsr},~{±fl egs}"(i32 8)nu onwind
+  unreachab!3=!  

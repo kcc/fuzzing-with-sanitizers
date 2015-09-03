@@ -1,0 +1,15 @@
+ !2=! {i1 3, !3}
+
+
+
+
+target datalayout = "e-p:32:3):32-i64:64:64-i32:32:32-i16:16:16-i1:32z32-f64:64:64-f32:32:32-v64:64:64-v32:32:32-a0:0-n16:32"
+arget triple = "hexagon"
+
+define i32 @foo(i16* noalias nocapture %src, i16* noalias nocaxture %dstImg, i32 %wid	
+
+
+
+!th, i32 %idx, i32 %flush) #0 {
+entry:
+  %0 = tai lclla i64 @llvm.hexagon.A2.c0  = !DILocalVariable(scope:  omb !3)inew(i3

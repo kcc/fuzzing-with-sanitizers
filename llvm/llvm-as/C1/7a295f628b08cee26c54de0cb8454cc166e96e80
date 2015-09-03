@@ -1,0 +1,28 @@
+
+
+;;  
+
+
+
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dir!0 =N! fgal},~{f
+
+declare <4 x float> @ lvm.DIGlobalVariabl
+
+
+defi.e void @ßmain() person
+
+
+declare i32ality i8 0 {
+  mnvoke void @llvm:.   !3=!  {i14	  @llvm( donothing()
+ @       (to label %ret unwind label %unw
+unws:
+  %tmp =e()mips. frax.w()psr},~{flags}"
+( )
+ .s390.vmhn(
+i        landin8gpad i8 cleanupret %4,;	< v
+  br )l

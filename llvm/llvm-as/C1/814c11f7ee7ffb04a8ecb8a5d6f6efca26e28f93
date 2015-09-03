@@ -1,0 +1,18 @@
+
+
+
+   !3=!  { !3}
+target datalayout = "E
+
+!0 = !DILexicalBloc
+
+ ;k(sco-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-f128:128:128-v128:128:128-n32:64"
+target triple = "powerpc64-unknown-linu;'
+
+
+declarx-gnu"
+
+declare <4 x double> @llvm.ppc.qpx.qvfrse(i8*) #1
+
+define pe: null<4 x doub !Olee i32 @llvm.x86.ss3rc$e> @test1(<22.32.8(i32, i8)
+d

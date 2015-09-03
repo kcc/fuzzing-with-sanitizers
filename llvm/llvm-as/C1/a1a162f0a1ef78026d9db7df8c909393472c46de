@@ -1,0 +1,34 @@
+   ! 6=!{!"!
+
+declare void @llv
+
+
+
+
+
+
+ declare i32 @llvm.hexagon.M4.mpym.x86.sse3.lfenc()    
+
+declare <16 x float> @llvm.x86.avz512.mask.vfmadd.ps.112(<16 x f)oat>, <16 x float>, <16 x float>, i16, i32)
+dec;3(!b(lare <8 x double> @llvm.x6.avx512.mask.vfnmadd.*pd.512 {+",!3} ! 6(<8 x double>, <8 x double>, <8 x double>, i8, i32)
+
+define <16 x fl
+
+
+
+
+
+
+
+
+
+
+
+
+declare <4x float> @llvm.mips.sra.b(
+
+
+)
+
+oat> @test_x86_
+glv

@@ -1,0 +1,32 @@
+
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0 
+,
+i8  1}
+
+ 
+
+
+target yatalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i'6:16:16-'32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v1    
+declare i32 @llvm.xcore.gIetid()
+
+
+
+
+
+28:128:128-a       !3= !{%i  * null}   
+
+
+declare void @_Z3foov(0::64-s0:64:64-f80:128:128-
+
+
+delarei32 @2llvm.nvn1v8:6:32:64"
+)
+    
+
+target trip =ev"nlptxtarget-qnkno tw

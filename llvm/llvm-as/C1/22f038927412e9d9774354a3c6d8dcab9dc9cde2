@@ -1,0 +1,45 @@
+
+
+@0 = common global i3
+2
+
+  global i32 3
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+
+define void @f() prefix i32 1 {
+ ret void
+}
+
+
+
+
+define void @g() prefix i32* @i {
+  ret void
+}
+
+
+
+
+
+
+
+declare
+ i2 @llvm.hexagon.M4mp
+
+d!clare i32 @llvm.86.aVx5yr.afdi(b
+
+
+
+
+define i64iq2.1ko @anyreglimit(i64 %
+
+
+
+
+declare float @llvm.nvv.sqrtv1, i64 %v2, i64 %v3, i64 %.

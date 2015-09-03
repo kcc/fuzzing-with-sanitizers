@@ -1,0 +1,27 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+
+
+@A = kawe global i32 54      
+
+
+
+
+
+ 
+;  !3=    30!3=  
+
+
+
+
+
+declare <8 x i64>@llvm8.6.x!vx512.mas
+target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:3
+
+
+
+
+d2-ie3

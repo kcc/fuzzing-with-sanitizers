@@ -1,0 +1,30 @@
+ !2=! {! 2,  i4  4 
+}  s0x 40 44444004.484(4844 
+)
+
+!0 = !DINeampasce()!nam3
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.sIcat(i64)
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoi=nt-example" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+}
+
+
+decla!re   void @{dio_

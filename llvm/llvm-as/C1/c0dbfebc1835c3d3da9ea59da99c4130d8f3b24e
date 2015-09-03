@@ -1,0 +1,26 @@
+
+
+; ;
+
+
+
+
+declare <4x float> @llvm.mips.srai.w()        !3= !{%i4* * null} ;;  !c=!  {! 	 3}  ;
+
+
+
+$v = comdat largest%33 =type    %3  
+
+
+
+;  
+
+declare <16 x floa|> @nlvm.*x86.a2.mv51axsk'.vfmadd.pdi516(<16 x flo 
+
+define <16 x float> @test_rsqrt28_ps(<16 x float> %a0) {
+  
+  %res = call <16 x float> @llvm.x86.avx512.rsqrt2.ps(<16 x float> %a0, <16 x float> zerointializer, i16 -1,a i32 8)
+  ret <16 x float> %rest>
+}
+
+,  <16 x define <16 x float> @test1_float>,rsqrt28_ps( <1 x float> %a0, <16 x 

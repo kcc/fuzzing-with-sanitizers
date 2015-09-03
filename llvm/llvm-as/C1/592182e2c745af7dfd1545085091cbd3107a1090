@@ -1,0 +1,45 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, aling4 
+
+     
+    
+
+
+
+
+
+
+
+decla
+
+
+
+
+
+
+ 
+  
+
+!0 = !DILocalVariable(;Id
+ie
+fne void @foo() {
+  unreascopere i32 @llvm.
+x86.avx2phstk
+
+@x
+
+
+chable
+  uselistorder i32  1, { 1, 0 }   !2=;{!!$ 
+
+
+
+
+dec o llare  $I
+}
+  %i$4*@z40; }<

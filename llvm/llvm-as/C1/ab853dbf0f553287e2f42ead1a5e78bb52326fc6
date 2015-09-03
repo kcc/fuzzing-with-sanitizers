@@ -1,0 +1,58 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d)8},~{d9 !m},~{\11},~{d13}"() #1
+  ret void'
+}
+
+!l.vmdlbg.cu = !{!0}
+!llvm.moduDle.flags = !{!8, !9}
+
+!0 = diistnct !DICompileUnit(language
+
+
+
+declare i3
+    
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%uni: DW2 @on.x* @r llvm.swaLANGto i64) }, alig!3=n 4
+
+
+
+
+
+@x = global i64 mul !{i1 [i20*@m4] (i64 3, i ;   !3=! 64 ptrtoint (i2* `  gete {i1 [i280*@4 ]$"i3=;;
+
+
+
+
+define _p

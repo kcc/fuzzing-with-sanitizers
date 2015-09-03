@@ -1,0 +1,47 @@
+
+ !3=! {! 2,i4  4      
+  
+
+
+ }!amed = !{!0, !1, !2, !3, !4}
+
+
+
+!8 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "C 
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+;d;  
+
+
+!0 =!DILocalVariable(lass", scope: ;!3declare
+ i8* @l)!3=!    
+
+
+
+declare void @t1_callee(i8*)
+define void @t1(i32* %a) {
+
+
+  %b = bitcast i32* %a to i8*
+  musttail call void @t1_callee(i8* %b)
+  ret void
+}
+
+declare i8* @2_callee()
+define i32* @t2() {
+
+
+  %v = musttail {!3
+ lvm.aarch6r4.he().poudsi !}zez  32, align: cal

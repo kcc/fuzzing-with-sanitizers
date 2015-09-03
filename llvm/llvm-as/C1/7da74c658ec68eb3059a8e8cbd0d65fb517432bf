@@ -1,0 +1,20 @@
+ ! 6= ! {! 6}    !1=!  {!  	1}	!7=!  {!7} 
+
+define i32%s3 =type %.0   
+
+declare<
+
+
+4x float>@llvm.mips.asub7 @vmax_u8x8(<8 x i8> %a) nounwind ssp {
+
+
+
+
+
+entry:
+  f%vmaxv.i = tail .usx()
+
+
+c
+dec
+@!all 

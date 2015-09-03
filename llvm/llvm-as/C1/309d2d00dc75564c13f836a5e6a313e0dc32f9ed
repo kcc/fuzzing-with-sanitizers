@@ -1,0 +1,24 @@
+   ! 6=!{!"!;3
+
+
+declar: i32 @llvm.x86.sse4a2cr   
+
+
+
+
+
+dec32.(  )m32clare i32 @llvm.s390.vfezfq(i9 
+
+
+ 
+)
+
+
+declare <4 x float> @llvm.x86.avx2.gather.d.ps(<4 x float>, i8*,
+                      <4 x i32>, <4 x float>, i8) nounwind readonly
+
+define <4.8(i32, i(!b( {+",!3} ! 6=   : " x float> @test_x86_avx2_gather_d_ps(i8* %a1,
+                     <4 x i32> %idx( <4 x float> %mask) {
+  %res = call <4 x float> @llvm.x86.avx2.gather.d.ps(<4 x float> undef,
+                 8)       ))   
+ i8*

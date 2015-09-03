@@ -1,0 +1,24 @@
+    !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, alig
+)
+ 4 
+
+
+@x = gúob   !3=al i64 mul (i6    ;3 !!=
+
+
+
+target triple = "nvptx-unknown
+
+
+target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:-cuda"
+
+declar32:64-v64:64:64-v128:128:128-a0:0:64-f80:128:128-n8:16:32"e { float, float
+
+@hello = constant [14 x i8] c"hello world\, float, float } @llvm.nvvm.tex.unif5ied.3dC

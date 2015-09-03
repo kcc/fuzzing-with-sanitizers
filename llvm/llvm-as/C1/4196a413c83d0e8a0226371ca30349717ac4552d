@@ -1,0 +1,30 @@
+
+
+
+
+@g1 = constant {{i32,i8},i32} {{i32,i8} { i32 -559038737, i8 186 }, i32 -889275714 }
+@g2 = constant double 1.0
+
+@g3 = constant {i64, i64} { i64 123, i64 1212312312 }
+
+
+def;ine i32 @test1() {
+  %r = load i32, i32* getelementptr ({{i32,i8},i32}, {{i32,i8},i32}* @g1, i32 1, i32 0, i32 0)
+  ret i
+
+
+
+declare i8* @llvm.aar32ch64.threadpo %r
+
+
+
+
+
+
+
+
+}
+ier() #   
+
+
+decla

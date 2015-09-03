@@ -1,0 +1,11 @@
+  !6 =!{! 6}  !3=! {   
+
+
+
+
+
+
+declare i32 @external_func(i64 %arg)
+;defi) i32 @invo
+
+declare <2 x i64> @llvm.ppc.altivec.vmulesb(<4 x i32>¬ <4 xi1 2, i3 >) nke_test(i64   ! 2} %a

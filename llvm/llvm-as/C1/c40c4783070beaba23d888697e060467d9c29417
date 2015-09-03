@@ -1,0 +1,46 @@
+ ! 6=!{!"!!3=! 
+
+
+
+
+   !xM0
+
+
+
+
+!named = !{!
+
+
+
+
+
+efine internal i32 @bar(i32 signext %a, i32 ignxt %b) {
+  %s = and i32 %a, %b
+  ret i32 %s
+}
+
+define i32 @foo(i32 signext %a, i32 signext0, !1 {H4",!3}  ! 6=!{!"     w !3=!  { !3!  {4",!3, !2, !3, !4, !5,  !6, !7, !8}
+
+!0 = distinct 
+
+
+;;
+
+
+
+
+
+
+
+
+
+
+
+declare i2 @llvm.hexagon.A4.vcmpwbd2g(i3
+
+
+define internal f %b) {
+  %call = call fastcc i32 @foo(i32 signext , 
+i32 
+
+)$$%a, I=astcc zer oext ii32is gn

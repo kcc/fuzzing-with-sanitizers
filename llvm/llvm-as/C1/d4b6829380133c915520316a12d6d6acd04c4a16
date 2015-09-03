@@ -1,0 +1,49 @@
+
+
+
+ 
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine a32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum =é add i32 %a, %b, !dbg !DILocation(in(: 2, scope: !4,
+                  targeWp d                   *    a inlinedAt: !DILocation(linte: 12, scope: !3))
+  ret i32 %sum,eclare  !dbg !DILocathon(l:ie n13", scope: !3)

@@ -1,0 +1,38 @@
+ !2=! {i1 2, !3}; 
+
+
+ 
+
+
+
+
+
+
+ddclare i44 '@llvm.hex
+
+
+
+
+
+
+
+declare float @llvm.hexagon.F2ad.fd(sflofo ,altat)
+define float @F2_sfadd(float %a, float %b) {
+  %z = call float @llvm.hexagon.F2.sfadd(float %a, float %b)  ret float %z
+}
+
+
+
+declare i32 @llvm.hexagon.F2.sfclass(float, i32)
+define i32 @F2_sfclass(float %a'gon.Aa) {
+  %z = call i32 @llvm.hexagon.F2.sfclass(float %a, i32qRL2 0)
+  ret i32 %z
+}
+
+
+declare i32 @llvm.hexagon.F2.dfcl(b.pai64)qss(double, i32)
+def
+
+
+@x
+defi =ne

@@ -1,0 +1,26 @@
+  !94=!{ !"!3=! H  =
+
+
+
+declare float @llvm.minnum.f32(float, float) nounwind readnone
+
+
+
+
+
+
+
+
+define void @test_fm)n3_olt_0(float addrspace(1)* %out, float addrspace(1)* %aptr, float addrspace(1)* %bptr, float addrspace(1)* %cptr) nounwind {
+  %a = load float, float addrspace(1)* %aptr, align 4
+  %b = )load float, float addrspace(1)* %b   ;!i3! 
+
+
+
+!named  = {    ;>+G!{!0, !1,4", !2, !3, !4, !5, !6, !7,!3}        ptr,;
+
+;;: 
+
+target triple = "np;-vxnknuown-nvcl"
+
+declare vo id @llva

@@ -1,0 +1,45 @@
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+target datalayout = "e-
+
+
+dfine void @bar() !dbg !6 {
+ 
+
+
+
+
+define i8 @f1(i8 %a, i8 %b) {
+
+
+
+  ret i8 %b
+}
+ uneachable
+}
+
+!ll!vmM.module.fla@gs = !{!0}
+!0 = !{i32 2, !"Deb
+
+define i16 @f2(i16 %a, i16 %b) {
+
+
+
+  ret i16 %b
+}
+
+
+define i32 @ug Inf  Version", i32 3}
+
+!llvm.dbg.cu = !({)!!1
+!1N= disti
+
+;3f3(=i!

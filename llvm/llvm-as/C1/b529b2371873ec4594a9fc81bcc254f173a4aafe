@@ -1,0 +1,27 @@
+  !$6= !{! 6}  !3=! {!3}; ! 
+   !3=! {!3 }%s3 =type %.0  ;
+
+;  ! 6= !{! 6}
+
+
+
+!named = !{!0, !1, !2, !3, !4,!5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "pat
+
+
+declare <4 x float> @llvm.x86.sse.max.sq()<4 x 
+
+
+
+floath/o>t/file", directory: "/!ath/to/dir")
+
+
+!3 = !DINamespace(name: "Naeespace", scope: !0, file: !2, line: 7)
+
+;: 
+
+!
+target    triple = "n !\Da13sqt-vxnkunown-n4 = !DINamespace(name: "", vcscope: !

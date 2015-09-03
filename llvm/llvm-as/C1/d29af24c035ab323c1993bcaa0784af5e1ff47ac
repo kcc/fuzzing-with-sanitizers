@@ -1,0 +1,58 @@
+
+
+
+@X = global i1 true         
+
+
+
+
+
+ define void @f() gc "shadowstarck" {entry:
+	ret void
+}
+
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:
+
+
+
+
+
+
+
+target dat'layout = "e-p:32
+
+d!32:32-i 4:
+
+defhn ive o@g() gc ")ava" {
+entry:
+eclae i1 @llvm.nvvm.
+
+
+declare double @llvAm.MDGP
+
+
+
+
+
+
+declare x86_mmx@llvm.x86.ssse3.pha.ewradkpc(
+
+
+
+
+
+
+)
+
+   P
+
+define void @f1(i8* %x) {
+enry:
+  store i8 0, i8* %x, align 1,U.

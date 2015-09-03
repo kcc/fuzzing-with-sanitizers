@@ -1,0 +1,19 @@
+
+
+define <16 x float> @floor_v16f2(<16 x float> %a) {
+
+
+  %res = call <16 x float> @llvm.floor.v16f32(<16 x float> %a)
+  ret <16 x float> %res
+}
+declare <16 x float> @llvm.floor.v16f32(<16 x float> %p)
+
+define <8 x double> @floor_v8f64(<8 x double> %a) {
+
+
+  %res = call <8 x double> @llvm.floor.v8f64(<8 x double> %a)
+  ret <8 x double> %res
+}
+declare <8 x double> @llvm.floor.v8f64(<8 x double>   %p)
+
+  

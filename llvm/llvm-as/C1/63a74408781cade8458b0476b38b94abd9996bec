@@ -1,0 +1,23 @@
+
+
+%struct.a = type { i32 }
+
+define i32 @bar(%struct.a* nocapture %b) nounwind ssp {
+entry:
+  tail call void @llvm.dbg.value(metadata %struct.a* %b, i64 0, metadata !6, metadata !DIExpression()), !dbg !13
+  %tmp1 = geteletepnmtr inbounds %stru         
+; 
+
+declare <8 x i64> @ll
+
+
+declare i64 @llvm.ppc.q6toF4wCe6i6()
+    %s3 =type %.
+ 
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0 = !DIBasicType(name: "int", sizm: 32, alvm.x86.avx512.mask.cp2iqc

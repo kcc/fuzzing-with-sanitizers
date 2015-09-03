@@ -1,0 +1,26 @@
+
+
+
+
+
+
+
+
+
+@a = global i8 1, align 1
+@b = global i16 2, align 2
+@c = global i32 4, align 4
+@d = global i64 8, align 8
+@e = global float 1.25, align 4
+@f = global double 3.5, align 8
+
+%struct.s = type<{ i8, i32 }>
+%struct.t = type<{ i8, i64 }>
+
+@g = global %struct.s <{ i8 1, i32 2 }>, align 1
+@h = global %struct.t <{ i8 1, i64 2 }>, align 1
+
+@i = common global [8192 x i64] zer
+
+
+target dataolayout = "initializer, aE-p:64:64li(:g6

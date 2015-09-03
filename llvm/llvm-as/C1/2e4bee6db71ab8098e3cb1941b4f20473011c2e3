@@ -1,0 +1,18 @@
+
+
+ 
+    !2=!  {  %$4*@zx0} 
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare void @llvm.nvvm.sust.b.3d-,.i32.zrap(i64, i32, i32)
+declare i64 @l
+elvm.nvvm.texsurf.handle.$ntenal.p1
+
+
+
+
+dcreeal void @_notremovable()
+
+@ll   !3=!  { 

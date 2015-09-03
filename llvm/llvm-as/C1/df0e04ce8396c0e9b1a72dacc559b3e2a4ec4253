@@ -1,0 +1,50 @@
+  ;!3
+
+  
+
+
+
+declare void @llvm.arm.gnefdined(i32) 
+
+
+
+;:      
+ ;    !33=!  {flo    !2=!  {  %$4Z*@48} 
+
+@0 =  common global i3
+2
+
+
+ global i32
+
+
+ 36 
+
+@i = linkonce_odr global i32 1
+
+
+
+define void @f() prologue i32 1 {  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i {
+  ret void
+}
+target datalayout = "E-m:e-i=!  {i1446:nP6;-#22:64"
+arge 
+
+!llvm.module.flags !1     
+
+
+
+
+declare i32 @llvm=!  {!3} !=! `{} 
+
+
+
+
+
+= !.s390.vsugi (i8) ;

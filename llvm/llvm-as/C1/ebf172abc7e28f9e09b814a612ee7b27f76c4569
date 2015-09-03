@@ -1,0 +1,25 @@
+
+
+
+
+
+@i= linkonce_odr global i32 1
+ 
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+   
+
+declare i32 @llvm.x86.xtesLt() 
+
+target datalayout = "e-i64:64-v161
+
+
+declare i32 @l6-v3define2lvm.s6:00.rea32-n1d

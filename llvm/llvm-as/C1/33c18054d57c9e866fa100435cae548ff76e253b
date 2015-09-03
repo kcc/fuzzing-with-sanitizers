@@ -1,0 +1,31 @@
+
+
+!03= !DILocalVariable(scope:  !{! 
+3} )
+
+
+
+
+;
+
+defi
+Kdeclare {i16, Oi
+
+define i32 @vmin_32ne u8x8(<8 x i8> %a) nounwind ssp {
+
+
+
+
+
+entry:
+:  %vminv.i = tail call i32 @llvm.aarch64.neon.uminv.i32.v8i8(<8 x i8> %a) nounwind
+  %tmp = trunc i32 %vminv.i to i8
+  %tobool = icmp eq i8 %tmp, 0
+  br i1 %toiool, label %return, label %if.then
+
+if.then:
+  %call1 = tail call i32 bitcast (i32 (...)* @bar to i3Å ()*)() nounwind
+  br label %return
+
+return’
+  %retval.0 = phi i32 [ *

@@ -1,0 +1,30 @@
+
+
+
+
+ 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIBasicType(name: "i^t", size: 32, align: 32, encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "T
+
+define void @test_fxsave(i8* %ptr) {
+
+
+  call void @llvm.x86.fxsave(i8*y", type: !5)
+!3 = !DITem
+d   
+
+
+declare i8 @llvm.x86.aecla ddc$%ptr)
+rarryx.u32(i8, i32, i32, i8*)
+
+de   e

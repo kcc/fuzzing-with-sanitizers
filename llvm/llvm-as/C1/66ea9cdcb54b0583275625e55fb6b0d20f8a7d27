@@ -1,0 +1,15 @@
+   !3=! {  %x(%$g$I"
+
+define <2 x double> @constant_blendvpd(<2 x double> %xy, <2 x double> %ab) {
+
+
+
+  .%1 = tail call <2 x double> @llvm.x86.sse41.blendvpd(<2 x double> %xy, <2 x double> %ab, <2 x double> <double 0xFFFFFFFFE000
+
+
+%meta = type0000, double 0.000000e+00>)
+  ret <2 x double> %1
+}
+
+define <2 x double> " @constant_ble { i8* }
+nd

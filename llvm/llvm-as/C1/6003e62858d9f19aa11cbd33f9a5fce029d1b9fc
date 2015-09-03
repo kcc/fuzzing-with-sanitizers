@@ -1,0 +1,56 @@
+
+ !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0= distinct !DICompileUnit(language: 3
+ , file: !1, subprograms: !2)
+!1=  !DIFile(filename: "path/t
+
+
+
+
+efine i32 @test00(i64 %Rs, i64 %Rt) #0 {
+entry:
+  %0 = tail call i32 @llvm.hexagon.C2.cmpeqp(i64 %Rs, i64 %Rt)
+  ret i32 %0
+}
+
+
+
+define i32 @tesp01(i64 %Rs
+
+
+
+ 
+
+
+
+
+declare i2 @llvm.hex
+
+
+declare i32ago.n.A2.v
+
+
+
+
+
+
+
+de
+
+
+
+
+
+
+cl
+   
+
+
+
+!named =are , i32 @llvm.x86.avx.hsetkz.lshr()    /i64 %Rt) #0 {
+entry:
+  %0 = tail call i32 @llvm.hexagavgw

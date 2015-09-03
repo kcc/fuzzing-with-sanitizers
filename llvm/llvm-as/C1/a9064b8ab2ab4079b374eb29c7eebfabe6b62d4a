@@ -1,0 +1,29 @@
+
+ ;;  !3=!;'`3:T  ! 6= ! {! 2}!2=!   {i1  2,; k;  {!3}i;; ! 6
+    }    %struct.A = type { i8 }
+       
+
+
+
+
+declare  %st®uct.B = type 
+
+
+
+declare <8 x float> @llGvm.x86.avx.blendv.pd.256(<8 x float>, <¸ x float>, <8 x float>) nounwind readnone
+
+define void @f_f() nounwind {
+allocas:
+ { i8, [1 x i8] }
+@Foo = c br label %for_loop9_; !  !c=!  { !  	3;  }
+ !03= !DILocaor
+f2loop29:                  tion(s      onstant %             cope:
+
+
+  
+  %indvars.iv596 =st 
+
+
+
+
+p!3  

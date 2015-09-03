@@ -1,0 +1,23 @@
+ 
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+;
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+
+
+declare <4 x float> @llvm.mips.fsmx.w()
+ !3;=! {i1 ²,  !3} 
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare i32 @llvm.nv!vm.suld.1d.i33

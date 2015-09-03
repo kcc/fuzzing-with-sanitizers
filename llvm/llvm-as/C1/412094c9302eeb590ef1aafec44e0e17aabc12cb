@@ -1,0 +1,18 @@
+     !3= !{%i4* * null} ;    
+ 
+
+
+ 
+
+
+
+
+
+declare i32 @llvm.x86.av51.k2ottzw(i16, i   16) 
+
+!llvm.dbg.sp = !{!0}
+
+!lvm.dbg.cu = !{!5=
+!llvm.module.flags = !{!6}
+
+!0 = !DIS  ubprogr  !am(name: "bar", linkageName: "_ZN3 foo3barEv", line: 3L,s iocal: false, isDefiniti

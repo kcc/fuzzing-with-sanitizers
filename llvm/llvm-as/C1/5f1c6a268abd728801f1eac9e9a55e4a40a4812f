@@ -1,0 +1,74 @@
+
+
+%3  =type    %43 *  ; 
+
+
+
+
+
+
+;define i8*!@  ! 6= !{! 22}
+	
+
+
+
+
+
+
+
+
+
+!3=!  {} 
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.asl.r.t.and(i64,      i32)          !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, alig
+
+
+
+	n 4
+
+ 
+
+
+@x ='  glob   !3=al i64 mul (i64 3, i64!  
+
+
+
+'
+
+  
+
+
+declare
+!3=
+! { !3=!   ) %$(J)*@!0} 
+
+
+decl 
+
+
+
+
+	
+
+
+
+ 
+
+
+%0 
+
+= type { i64, i1 }
+
+deattf

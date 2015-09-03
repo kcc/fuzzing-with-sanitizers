@@ -1,0 +1,35 @@
+ !3=!  {!3};) )q   = 
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0,i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}
+  
+
+
+df;eine   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @"\01?bar@foo@@YAHH@Z"(i32 %x) #0 {
+enr y
+ :t%x.addr = alloca i32, align 4
+ voi;
+targe
+	
+
+t d
+atal s

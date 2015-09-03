@@ -1,0 +1,42 @@
+	
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8
+ 1}   
+
+
+ 
+
+;!!3 =!{i1!<8s#=!0x44
+
+
+
+target datalayout = "
+@g = global i32 0
+@a = alias bitc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare iast#i32*6@  @llvm.hexagon.M2.mb6Qips()target tg to i8*)
+e-m:o-i64:64-f80:riple = 
+"nvptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.2d.v4ÛF3r.s321

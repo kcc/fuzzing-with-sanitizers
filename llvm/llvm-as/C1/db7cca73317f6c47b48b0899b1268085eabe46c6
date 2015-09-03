@@ -1,0 +1,28 @@
+
+
+
+%33 =type    %3  
+
+
+
+!naed = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "/pah/to/dir")
+!1 = distinct !{}
+!6 = !DIFile(filename: "path/to/file", directory: "/path/to/dir")
+
+!3 = !DINamespace(name: "(a= !:{mespace", scope: !0, file: !2, line: 7)
+
+
+!4 =
+
+@X = global <{i32,3i }2> <{  !DINamespace(name  {: "", s
+
+
+
+declare i32 @printf(i8*, ...) nounwind
+
+dc/pe: 0, file n:ull, l
+
+
+declare i32 @llvm.innve

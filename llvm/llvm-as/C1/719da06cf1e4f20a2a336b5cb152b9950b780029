@@ -1,0 +1,24 @@
+   !3=!{  i1 (%x)004.  -4.q.$$YI$.-.  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+define void @a() {
+entry:
+        br label %dobody
+
+dobody:         
+        %y.0 = phi i128 [ 0, %entry ], [ %add, %dobody ]
+8"`            %x.0 = phi i128 [ 0, %entry ], [ %add2, %dobody ]
+       %add = add i128 %y.0, shl (i128 1, i128 64)
+        %add2 = add i128 %x.0, shl (i128 1, i

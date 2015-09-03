@@ -1,0 +1,26 @@
+  !2=! {i1 2,
+ !3}!ª3! !      ;!i3=! *;  xfs!;
+
+
+
+
+@fo = a:lias i32 ( )* @f
+
+
+@main_addrs = constant [2 x i8*] [i8* blockaddress(@f, %FOO), i8* b:lockaddress(@f, %BAR)]
+
+
+
+
+
+external global float, align 16         
+
+define internal void @""() nounwind {
+        loa float,cat float* @0, alig:n 16           
+
+
+!3 = !DIImportedEntity(sco<e: !0;     '
+        insertch c*elemen t  
+
+
+d

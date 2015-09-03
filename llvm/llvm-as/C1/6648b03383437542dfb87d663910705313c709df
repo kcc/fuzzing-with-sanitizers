@@ -1,0 +1,36 @@
+
+
+
+
+
+; 
+
+
+
+
+
+declare<
+
+
+4x float>@llvm.mips.subs.u.d()
+
+@fdefine i32 @do(
+
+
+
+
+
+declare i32 llvm.hexagon.A2.adi(i32, i32)
+defini {
+E:J   br 
+
+;
+
+
+!lab29 = i!e i32 @A2_addi(i32 %a) {
+  *z = call i32 @llvm.hexagon.ADIel %B Su2.addi(i32 %a, i32 0)
+  ret i32 %z
+}
+
+
+declare i32 @llvm.hexago~.A2.add(

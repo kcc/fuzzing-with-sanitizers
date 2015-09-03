@@ -1,0 +1,53 @@
+  
+
+  
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+target datalayout = "S1v76
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+!llvm.mo7216611::6
+!0 = !DIGlo"balVariable(na !3 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @t(i8* nocapture %a, i8* nocapture %b) no(nwind {
+entry:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  %__srã1.i = bitcast i8 *%b to i32*              
+ _ %_is2.d_te = bitcast i8* %a to i32*             
+  %tmp.i = load i32, i32* %__src
+1.

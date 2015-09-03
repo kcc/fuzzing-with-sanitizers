@@ -1,0 +1,29 @@
+!3=! {! 2 , i4  4  }      !2=! {!3,!3};{
+
+target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
+
+declare void @helper(<2 x i8*>)
+define void @test(<2 x  
+
+
+
+
+
+ 
+; 
+
+
+declare void @llvm.x86.R._sl2felce() 
+target data;
+
+define i32 @bad1() !prof0 !
+
+Ô
+(efine  {
+;  ret i32 0
+}*
+!0 = !{i3hidden i64 @__fixunsdfdi(double %) nounwind readnone {
+entry:
+	%x14 = bitcast double %x to i64		
+	br i1 tr2 123 i8*> %a) {
+  %A = getue,, i 32 3}

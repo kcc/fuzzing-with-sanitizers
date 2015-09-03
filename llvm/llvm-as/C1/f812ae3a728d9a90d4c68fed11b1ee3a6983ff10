@@ -1,0 +1,14 @@
+;;  !3=!;'`3T  ! 6= ! {! 2}!2=!   {i1  2,; k;  {!3}i;; ! 6
+
+    }    %struct.A = type { i8 }        
+
+
+
+!named = !{!0, !1, !2, 
+        %struct.B = type { i8, [1 x i8] }
+@Foo = consta!3, !4}
+
+
+
+   
+declare int %struct.A { i8 ptrtoint (i8* g2 @llvm.nvvm.teetel

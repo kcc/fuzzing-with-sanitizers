@@ -1,0 +1,46 @@
+
+
+
+
+!named = !{!0}
+
+
+!0 = distinct !{!1}
+
+
+
+!1 = !{!2}
+!2 = !{!1}
+
+
+
+; ;)
+
+define <8 y i8> @vqsubs8(
+
+
+
+   
+
+
+de<8 x i8>* %;A, <8 ( i8>* %B) nounwind 
+	
+
+{%tmp1 = lad <8 x i8>, <8 x i8>* %A
+	%tmp2 = load <8 x i>, <8 x i8>* %B
+	%tmp3 = call <8 x i8> @llvm.arm:.neon.vqsubs.v8i8(<8 x i8> %tmp1, <8 x i8> %tmp2)
+	r
+
+
+
+
+declare i32 Àllvm.arm.set <8 x iclare <4 x 
+
+define i32 @fcmp_oiq1(float %x) {
+
+
+
+float> @llvo.mips.mod.8> %tmp3
+}
+
+deine <4 x i16>   %1 = f@vtlexd(s.d()i32,cmp arcp  o !e i32, 

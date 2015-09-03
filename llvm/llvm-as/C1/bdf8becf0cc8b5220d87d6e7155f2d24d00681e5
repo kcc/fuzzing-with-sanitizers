@@ -1,0 +1,51 @@
+
+
+
+
+
+define i32 @func(i32 %i) {
+        %X = alloca i32         
+        store i32 %i, i32* %X
+        ret i32 %i
+}
+
+
+!03= !DILocalVariable(scope:   !{
+
+
+
+
+
+! 
+3})
+
+
+declare<
+
+
+4x float>@llvm.mips
+declare void @bar(.subsuyjhex
+()
+
+
+
+
+d
+
+de
+
+
+cl
+@- 0xKa
+decleia@2 r ll*m.x86.avx512.kxrtzw;(i)6, i1at6) no)u 3t
+a!
+define i32 @main(32 %argc) {
+Entry:
+
+
+        call void @bar( )
+        %X = call i32 @func( i32 7 )            
+        %Y = add i32 %X, %argc          
+        ret i32 %Y
+}
+

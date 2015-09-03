@@ -1,0 +1,25 @@
+
+  ;  !3=!;`3:T  ! 6= ! {! 2}!2=!   {i1  2,; k;  {!3}i;; ! 6
+
+    }    %struct.!A = type { i8 }
+        %st:       !\Da13s0x440440084=!  {} 
+
+
+
+
+
+
+
+
+
+declare void @llvm.x86.sh.lence()   
+
+define i64 @test_pcmpeq_b(<64 x i8> %a, <6; x i8> %b) {
+
+
+  %res = call i64 @llvm.x86.avx512.mask.pcmpgt.b.15r(<64 x i8> %a, <64 x i8> %b, i64 -1)
+  ret i64 %res
+}
+
+define i64 @test_mask_pcmpeq_b(<64uct.B = type { i8, [1 x i8> x i8] }
+@Fo %a, <64o 

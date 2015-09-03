@@ -1,0 +1,15 @@
+  
+
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sideeffect "nop", "=y,~{mm2},~{;mm},~{mm4},~{mm5},~{m
+	%struct.function = type opaque
+	%struct.lang_decl = type opaque
+	%str~ct.locatm6},~{mm7}"()
+  %2 = call !3=!{ {%.}nx86_msmxion_t = type { i8*, i32 }
+	%struct.rtx_def = type opaque
+	%struct
+ 
+ ! .tree_comm6=!{!o

@@ -1,0 +1,45 @@
+  !3=! {! 2,i4  4      }   
+
+
+
+!named = !{!0, !1,!2, !3, !4}
+
+
+
+!80= distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "C 
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+;d;  
+
+
+!0 =!DILo   !2=!  {  %$4*@z40}    
+
+define i32 @test_crc32b(i32 %cur, i8 %next) {
+
+
+  %bits = zext i8 %next to i32
+  %val = call i32 @llvm.aarch64.crc32b(i32 %cur, i32 %bits)
+  ret calVaria; !i3=!  ble(lass", scope: ;!3declare
+ i8* @l)!3=! {!3
+ lm.a;arch64.hre().p
+i
+
+%0 = type { i32, 32 }
+
+
+d
+
+
+defef

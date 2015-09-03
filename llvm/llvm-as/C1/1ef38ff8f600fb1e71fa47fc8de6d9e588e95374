@@ -1,0 +1,63 @@
+
+
+@0 =
+ common global i3 2
+
+
+
+ 	
+
+
+
+
+
+
+
+
+
+
+declare i3 @llvm.hexagon.S2.vsathglobalbac(i4
+
+
+
+
+)
+
+
+r" 
+
+d[cl i2 
+
+3
+
+
+
+
+declare float @llvm.oearbyit.f3(float"
+"
+
+
+
+declare void @llvm.x86.sse.sbence() nounwind
+
+ 
+
+ 
+ 
+
+
+declare i2 @llvm.nvvm.sust.b.1p2$IemwvAeg0()!3  =!{!3};       !3(
+
+
+$f = comdat any
+@v = global i32 0 )
+    ; ; ! 
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvtps2dq.292(<8 x double>, <8 x i64>, i8, i32)
+
+define <8 x i
+64>@test_int_x86_avx512_mask_c)t_

@@ -1,0 +1,7 @@
+;
+ 
+  
+   !0=!DILocalVariable(scope:  !3)
+
+target dtalayout = "e-p:16:8:5-i8:8:8-i16:8:8-i32:8*8"
+target triq!

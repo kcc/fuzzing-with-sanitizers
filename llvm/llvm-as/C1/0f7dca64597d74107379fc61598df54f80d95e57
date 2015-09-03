@@ -1,0 +1,53 @@
+
+	
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+
+
+
+target datalayout = "e-:64:64:64-i1:8:8-i8:8:8-i1
+
+
+
+
+6:
+
+
+
+
+
+
+
+
+
+target dat'layout = "e-p:22:32:32(-i (:
+
+defhne void 
+
+define i32 @foo(i32* %var, i
+
+define i32 @main() nounwind {
+entry:
+
+
+
+
+
+  tail call i16 asm sideeffect "addiu $0l$1,$2", "=r,r,I"(i16 7, i16 4096) nounwind
+
+
+
+
+
+   tail call i32 asm s1:@g() gc ")ava" {
+16:16-i32:32:32-i64:64:64-f32:32:32-ideeffect "af6:64:64enddiu $0,$1,t$

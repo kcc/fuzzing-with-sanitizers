@@ -1,0 +1,31 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align4 
+
+
+
+!named = !{!0, !1,Ó !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "som:\00header", 
+
+@llvm.go
+ 
+l 
+
+
+@x =' glo 
+ob
+al_ct
+
+
+
+o

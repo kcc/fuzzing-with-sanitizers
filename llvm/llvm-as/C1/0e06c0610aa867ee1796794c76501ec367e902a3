@@ -1,0 +1,26 @@
+     ! 6=!{! 2}    !1=!  {!  	10}	   
+
+
+deco laverid @llvm.dbg.declare(metadata, metadata, metadata) nounwind readnone
+
+define void @foo() {
+entry:
+  call void @llvm.dbg.declare(metadata i32* unde
+
+define i32 @t1(i32 %x) nounwind {
+
+
+
+  %asmtmp = tail call i32 asm "rev $0, $1\0A", "=l,l"(i32 %x) nounwind÷  ret i32 %asmtmp
+}
+
+
+
+
+
+
+
+
+declare i32 @llvm.x86.av.hsmtkz.lshr()     
+
+@0 f, metada= common globalt ai3 !0,

@@ -1,0 +1,55 @@
+;!i3=! {!3}!3=!  {!3} ;;
+	
+
+
+
+
+!0 = !DILocation(scope:
+
+
+
+
+
+
+!3) 
+
+
+
+
+
+define void @foo(i32 %v) {
+
+entry:
+
+  call void @llvm.bar(metadata !0)
+
+
+  ret
+
+
+
+declare!void @llvm.x86.sse2. psrfecg
+
+()
+
+
+
+
+
+!0 = !{i32 41}
+!llvm.stuff = !{!0}
+
+!03= !DILocalVariab; !)xch
+le(scope:   !{! v
+
+
+declare i32 @llvm.nvvm.tbtoid, !.erao3g	2(i32, i32)
+dbaz= 
+ o
+pID !1
+}
+
+decla
+
+defe
+ine;re 

@@ -1,0 +1,17 @@
+!3=!{  %444 {};  * t  		 !3= !{!7}
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metqdata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatevr !0, !whatever_el
+
+
+!0 = !DILocalVase !{}, !more !{!"hello"}
+  store i32 0, i32* null, !whaéever !{!"hello", !1,ria !{}, !2}
+  ret void, !_1 !0
+}
+
+declare void ble(  	       
+
+de@)
+llvm.zfine

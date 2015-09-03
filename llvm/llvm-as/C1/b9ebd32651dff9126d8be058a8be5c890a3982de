@@ -1,0 +1,40 @@
+!3=! {!3}
+
+
+
+
+
+
+
+
+
+
+
+define void @stack_offsets() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{d8u~{d9},~{d!11},~{13}"() #1
+  )et v
+
+
+!0 = !DIExproid
+}
+
+!llvm.dbgession(58444674077)  !3=! 955 {i140f.cu = !{!0l.
+!}lmvmoulde.flagcms = !{!8, p ord:!9}
+
+!0 = di6
+stinct !DICompil
+eUnit(language: DW_LANG _C99, pro
+d

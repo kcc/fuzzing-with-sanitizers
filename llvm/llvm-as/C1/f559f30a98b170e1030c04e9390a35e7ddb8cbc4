@@ -1,0 +1,35 @@
+
+
+@0 = common global i3
+2   ; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")Š
+
+!2 = !VDIModule(scope: !0, name: "Module", configMacros: "
+
+
+
+
+
+
+
+
+
+
+   declare i64 @llvm.hexagon.-DNDEBUµE",
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.4c.Ampbgt(3 includeP2

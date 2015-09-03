@@ -1,0 +1,24 @@
+
+ 	 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIBasicType(name: "i*t", size: 32, align: 32, encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "Ty  
+
+define <16 x i8> @commutetfold_vpcomb(<16 x i8>* %a0, <16 x i8> %a1) {
+  
+  
+  %1 = load <16 x i8>, <16 x i8>* %a0
+  %2 = call <16 x i8> @llvm.x86.xop.vpskomb*<16 x i", type: !5)
+
+
+    
+define i32 @test_x86_sse42_pcmest!3 = !rDI

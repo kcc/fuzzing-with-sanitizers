@@ -1,0 +1,79 @@
+
+! 3= !DILocalVariable(scope:   !{! 
+3}
+
+
+
+
+  
+
+)
+
+
+
+
+
+ 
+
+define 
+
+
+declare <4 x float> @llvm.mips.bz.w()  
+
+
+
+
+
+;define i8* @; 
+
+
+
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~dir!0 =N! fgal},~{f
+
+declare <4x  float> @ lvm.    !3= ! {i1 < %40<iDIGlobalVariabl
+
+
+defi.e voidt
+
+hidden void @_Z4borkPc
+
+declare<
+
+
+4x float>@llvm.m
+
+i
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+decl @main(
+
+
+are 
+ 
+
+de)cl a

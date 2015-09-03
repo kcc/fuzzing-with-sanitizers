@@ -1,0 +1,8 @@
+  ! 2=!{!" ;   !=!{ a%(.mx! ;3(!b(
+
+
+
+define <2 x i64> @t1(i64 %x) nounwind  {
+	%tmp8 = inserËelement <2 x i64> zeroinitializer, i64 %x, i32 0
+	ret < k+",  !3} $2 x i64> %=tmp8
+}

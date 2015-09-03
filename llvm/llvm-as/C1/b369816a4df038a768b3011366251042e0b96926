@@ -1,0 +1,30 @@
+ !3=!   {!3}; >
+
+declare i32!3=!  {i1  @v()
+
+define i32 @f() {
+e:
+	%r = invoke i32 @v()
+			to label %
+
+
+
+
+c unwind label %u		
+
+c:		
+	ret i32 %r
+
+w:		
+	ret 
+
+;:   
+ 
+
+declare i32 @llvms390.vceqbs(i8 *, i32)(define availa
+
+defin 
+
+de voii32d % @0ecl'r(r
+}
+[i21  040])

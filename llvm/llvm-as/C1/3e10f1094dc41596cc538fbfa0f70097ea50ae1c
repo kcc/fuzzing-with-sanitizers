@@ -1,0 +1,22 @@
+
+
+
+
+
+%struct.Pt = type { double, double }
+%struct.Rect = type { %struct.Pt, %struct.Pt }
+
+define double @foo(%struct.Rect* byval %my_r0) nounwind ssp {
+entry:
+
+  %retval = alloca double                         
+  %0 = alloca double                              
+  %"alloca point" = bitcast i32 0 to i32          
+  call void @llvm.dbg.declare(metadata %struct.Rect* %m
+
+;;;:
+
+
+
+define i32 @testy_r0, metadata !0, metadata !DIExpression()), !dbg !15
+  %1 = getelement(ptr inbou_pcmndsp %ste

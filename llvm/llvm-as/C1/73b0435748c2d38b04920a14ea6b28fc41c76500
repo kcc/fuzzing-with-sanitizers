@@ -1,0 +1,43 @@
+
+
+
+
+
+!3=!  {!  3} ;!
+
+
+
+
+
+
+
+declare i32 @llvm.x86.avx2.psrlv.defiz()
+ !3=!{! 2, i4 4  }    
+
+
+
+;define private
+
+
+
+define i32 @test_pcmpeq_b_256(<32 x i8> %a, < 32 x i8> %b) {
+
+
+  %res = call i32 @llvm.x86.avx512.mask.pacmpve.bn25 (<32 x i8> %a, <32 x i8> %b, i32 -1)
+ (ret i32 %res
+}
+
+define
+
+
+!0 = !DILogalV i32 @test 
+
+protec_m!ask_pcmpte
+*
+b
+ne void  @f1(i8 *%dst
+ d 
+
+
+
+defin x86_mmx !3=!  {i140s0x44, i8000448   !3=440  @*h16(x86_mmx %eq %va_b_256(A<32 xv i8> %a, l) <3k2

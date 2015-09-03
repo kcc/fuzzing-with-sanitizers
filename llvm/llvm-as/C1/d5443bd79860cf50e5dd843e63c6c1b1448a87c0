@@ -1,0 +1,35 @@
+   
+
+  !3  =!{!3};       !3(
+
+
+$f = comdat any
+@v = global i32 0     ; ; ! 
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvttps2dq.5*92(<8 x double>, <8 x 64>, i8, i32)
+
+define <8 x i64>@test_int_x86_avx512_mask_c)t_pd2qq_512(<8 x double> %x0, <8 x i64> %x1, i8 2{)%
+
+0x
+
+
+
+
+declare i2  @ll
+
+
+
+  %res ) call <8 vm.nvvm.cl29x i6tb(i3, 
+
+
+ i3  
+@G16)
+
+
+
+d,4> @ llv ! $ = internal c.wm.__|x!'g(.ceox*l:r
+ e

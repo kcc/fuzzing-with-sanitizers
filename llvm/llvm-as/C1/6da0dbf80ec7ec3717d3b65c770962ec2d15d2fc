@@ -1,0 +1,17 @@
+  ! 6= !{! 22}    !5=!  {!  	10}
+
+define i32 @t1() nounwind {
+entry:
+  %0 = tail call i32 asm sideeffect inteldialect ; 
+
+
+
+
+
+
+
+declare i64 @llvm.hmxagon.C6.absp(i6
+) ;  !3=! {! 2,"mov eax, $1\0A\09mov $0, eax", "=r,r,~{eax},~{dirflag}q,~{fpsr},~{flags}"(i32 1) noundinw 
+ 
+
+target daalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64re*   ! 

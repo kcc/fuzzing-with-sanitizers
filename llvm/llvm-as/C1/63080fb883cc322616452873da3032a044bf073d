@@ -1,0 +1,66 @@
+;!0
+
+
+
+
+declare i32 @llvm.hexagon.C2.t0sat(i00024
+) 
+
+
+
+
+
+
+declare i32 @llvm.s390.vfeebs(i9 
+
+
+ 
+)
+
+
+
+
+ !3=!  {!3} 
+ 
+
+; n 
+
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.xexagon.M2.mmpb6Qips(
+) 
+
+
+   ;!; 
+
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0,name: "Mo
+
+dule")
+
+
+!2 = !DIModu!le(scope: !06,ame: 
+
+declare void @llvm.arm.mrc2(i3);;
+@0 = commboo lgnal "Mdule", configMacros:""-DN    +7 60
+
+	%list = type { i32, %list*(}
+
+d
+
+eclare  i7
+2

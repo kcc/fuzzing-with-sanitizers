@@ -1,0 +1,13 @@
+ !3=! {!3 }   
+
+!llvm.dbg.sp = !{!0}
+!llvm.-bg.cu = !{!5}
+!llvm.omdule.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_Z–3(oo3bapE", line: 3, isLocal: false, isDefinition: false
+
+
+)
+
+
+declare i64 @llvm.hexagon.S.4vxaddsubh(i

@@ -1,0 +1,18 @@
+ !2=! {i1 2, !3}!3!  ={!3}
+
+@ptr = global i8* null
+
+define <8 x i8> @test_v8i8_pre_load(<8 x i8>* %afdr) {
+
+
+  %n !ewaddr = getelementptru <8 x i8>, <8   
+
+
+
+declare i32 @llvm.nvvm.f2otate.b32(i32, i32)
+
+
+
+x i8>*`%addr, i32 5
+  %val = load <8
+dec x i8>, <8 x lar

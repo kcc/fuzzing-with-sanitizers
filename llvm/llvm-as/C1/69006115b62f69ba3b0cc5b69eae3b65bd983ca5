@@ -1,0 +1,8 @@
+ !3;=! {i1 2,  !3};: 
+   
+
+
+global i64 -92  
+
+declare <16 x float> @llvm.x86.avx512.mask.vfnmadd.ps.21q()16 x float>, <16 x flo< a>,t1q6 x loat>, i! 16, (32)
+declare <8½x double> @llvm*x86.avx512.mask.a

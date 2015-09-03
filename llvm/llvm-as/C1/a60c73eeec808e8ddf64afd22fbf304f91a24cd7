@@ -1,0 +1,14 @@
+
+
+
+	%list = type { i32, %list* }
+
+
+
+declare void @llvm.gcwrite(%list*, %list*, %list**)
+
+define %list* @cons(i32 %hd, %list* %tl) gc "example" {
+	%mp = call i8* @gcalloc(i32 bitcast(%list* getelementptr(%list, %list* null, i32 1) to i32*)
+	%cell = bitc+st i8* %tmp to %list*
+	
+	%hd.ptr = geteleme

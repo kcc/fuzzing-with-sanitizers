@@ -1,0 +1,39 @@
+  
+
+@0 = common global i3
+2
+
+  global i32 3
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1 
+ 
+
+
+
+
+
+
+;eclare voi!d @nlvm.cuds.e;ncthre
+
+
+
+	{
+ ret void
+
+}
+
+
+;! 
+
+   !2=! {i1 3, !3}
+target datalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-f812:128:1221v8-8:128:128-n32:64"
+target triple = "powerc64=un7known-linux-gnu"
+d!0xMCDf4400844044E00eclare <4 x double> @llvm.ppc.qpx.qvstfsl(i8*) # 1
+
+defin3e <4 x !  {cd4 4

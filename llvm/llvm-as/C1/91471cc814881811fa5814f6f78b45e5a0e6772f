@@ -1,0 +1,45 @@
+
+
+
+
+
+
+  
+
+  
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+target datalayout = "S1v76
+
+
+defne void @bar() !dbg   
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Mo
+
+
+
+
+
+
+
+
+@.str = private constant [4 x i8dule")
+
+
+!2 = !DIM] f%\"0gA\00"
+
++efin:6 {
+  e i32 @foo(i32 (i8*, ...)* %f() nounreachable
+}
+

@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+
+
+
+
+%struct = type { i32, [4 x i8] }
+
+define %struct @test1() {
+  %A = insertvalue %struct { i32 2, [4 x i8] c"foo\00" }, i32 1, 0
+  ret %struct %A
+
+
+}
+
+
+
+
+
+
+
+
+declare void @_Z3mixRrj(i32)
+
+define dereferendefine %struct @ceablteste(2( 4
+) 

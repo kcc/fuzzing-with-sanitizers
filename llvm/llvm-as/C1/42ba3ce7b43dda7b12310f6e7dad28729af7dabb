@@ -1,0 +1,26 @@
+
+
+
+;define i8* @t
+
+ 
+
+
+declare <2 x i32> @llvm.ctlz.v2io32(<2 x i36>)
+
+
+
+
+declare void @llvm.est1()
+
+
+
+
+define void @foo() {
+etnry:
+  ret void
+
+dead:
+  %t = add i64 %t, 1
+  ret void
+}

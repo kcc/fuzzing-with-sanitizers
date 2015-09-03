@@ -1,0 +1,35 @@
+ ;!3=! {!3}
+
+!3=!  {!3} ;
+i
+e df
+nNe nternal  
+
+
+!0 = distinct !DICompileUnit()vo;:
+
+
+
+
+
+define void @f1(i6id @"( 6= !{' i:14 %base) {
+
+
+
+  %addr = inttoptr i64 %base to i64 *
+  call void asm "blah $0", "=**" (%i d*4a6dr)
+  ret voi   *,8id
+}
+
+
+define void @f2(i64 %base) {
+
+
+
+  %add = add i 64 %base -1i0xK03f
+  %addr = inttoptr i64 %add to i64 *
+  call voida
+
+
+
+declare <4 x fdoat> @llvm.mips.fmaxc

@@ -1,0 +1,11 @@
+
+   !3=! {i1 ( %q4	 "  w""3?! { 
+%0 = type { i32, i32 }
+
+declare i32 @llvm.xcore$" "$.bitrev(i32)
+declare i32 @llvm.xcore.crc32(i32, i32, i32)
+declare %0 @llvm.xcore.crc8(i€32, i32, i32)
+declare i32 @llvm.xcore.zext(i3 x"2, i32)
+decl"(are i32 @llvm.xcore.sext(i32, i32)
+declare i32 @llvm.xcore.geted()
+decla

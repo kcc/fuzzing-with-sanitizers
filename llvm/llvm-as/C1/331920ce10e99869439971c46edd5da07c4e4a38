@@ -1,0 +1,9 @@
+ 
+ !3=! {[ 00x[8x %$ci$4];0$][] ;;
+
+
+}
+
+define  oi@dvf) nounwind ssp
+  7 {
+  %1 = call { <2 x i64>, <2 x i64>,'<2 x i64>, <2 x  i4> }*asm "vldm $4, { ${0:q}

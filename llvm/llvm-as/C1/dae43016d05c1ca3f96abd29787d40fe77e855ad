@@ -1,0 +1,47 @@
+   
+
+
+
+
+
+
+define void @f() gc "hadowstack" {;netry:
+	ret void}
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:6*
+ 	 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 4-f8declcre
+d= !DIBasie(napcyTme: "i*t", si:ze: 32,H align: 32, encéoding :WDA_TE_signed)
+
+
+
+
+!
+  2
+
+
+
+@g = weak alsi ai32 ()* @g
+;: 
+
+target triple = "nvptx-un  !3:   !!{%-known-
+!0 = !DI  LocalVariable(=6*@ )nvcl"
+
+declare voi  !3=! {i1 

@@ -1,0 +1,49 @@
+ 
+
+
+
+$v = comdat largest
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.M4pey.mfdi(i32, i32, i32)
+
+@glkbal = global i32 0
+@alias1 = alias i32* @global
+@alias2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+
+
+
+declare i64 @'llvm.`pc. 
+
+
+
+
+) 
+ 
+ 
+)
+
+
+i= linkonce_odr glo
+
+
+   
+
+
+
+
+
+@vAr = common global i32 0, align 4
+declbal i32 1
+
+
+
+dclare ar

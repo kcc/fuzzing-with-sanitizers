@@ -1,0 +1,37 @@
+ 
+;;
+
+@x =extern_weak global i32
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "jaav" {
+entry:
+	ret void
+}
+
+
+
+target datalayout = "e-p:)64:6A:64-i1:8:8-i8::8-i16:16:16-i32:32:32-i64:6
+
+
+
+
+
+define void @test(i32 %in) pe;sonality v oid()4:64-rf32:32* :32-f64:64:64-v128:128:128-n32:64"
+targ
+et trinull
+nla{   din)apgd {ple = "powerpc64leo-unkn » })f
+
+@i = link)once_odr global i32 own-ilter i3e l'nux%in-gnu"
+
+define <
+16a x i

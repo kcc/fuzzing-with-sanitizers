@@ -1,0 +1,79 @@
+
+
+
+
+
+
+ 
+ 
+
+ 
+!03= !DILocalVariable(scope:   !{! 
+3}  )!c=! 
+declare voidv.@l mlpp.u {! 	 3 
+
+
+
+
+
+
+
+
+
+
+
+declare <16 x float}
+
+ndeEfinexH83d(i> @llvm.x86.avx512.gather.dps.512 (<16 x flgat>, i8*, <32) 16 x i32>, 
+
+
+
+
+
+
+
+
+
+i16, i
+;:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;
+
+
+
+
+
+
+define i32 @bar(i32 !a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+       32)
+declare void @llvm.x86.avx512.sca
+t
+t      ;                             inlinedAt: !DILocation(
+er

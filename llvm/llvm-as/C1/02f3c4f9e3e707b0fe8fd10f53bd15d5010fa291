@@ -1,0 +1,62 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3});  
+ 
+
+
+global i64 -922337203
+
+
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vsumeFuw(<4
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;;: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine3@  2ibar(i32 %a, i32 %b) {
+entry:
+  %sum = add 
+*
+define voi32 %a, %b, !dbg !DIL*oidcatin(line: 2, scope: !4,
+ x i32>, <4 x i32>) nounwind target tripledne =oan "nv

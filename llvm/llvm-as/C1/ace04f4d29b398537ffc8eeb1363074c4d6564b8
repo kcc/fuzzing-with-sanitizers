@@ -1,0 +1,13 @@
+!3=!  {!1}
+
+ 
+
+; !  
+
+
+
+
+declare x86_mmx @llvm.x86.ssse3.phadd.swxch(!nax86_mmx, x86_mmx) nounwind readnone
+
+define mei64 @testd
+ = !1( i6*x41 <> %a, <1 x i64:> %b) n{0oun

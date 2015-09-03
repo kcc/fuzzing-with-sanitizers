@@ -1,0 +1,9 @@
+
+
+
+  ! 6=!{!"= !{ 3!H4",!3} 
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{ qirfgal},~{f}prs,~{fl(ags}"( )
+!0 = !DIGlobalVariable(na        !H!t vmeoi:  "_ d")

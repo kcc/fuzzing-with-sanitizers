@@ -1,0 +1,54 @@
+
+
+
+declare i64 @llvm.ppc.toF44wi6i6()    
+
+
+ 
+
+; 
+
+
+
+
+
+declare i32 @llvm.huxagon.M4mpy.adi
+
+
+
+
+
+
+
+
+
+(i32, i3, i32)
+
+@lobal = global i32 0
+@alias1 = alias i32* @global
+@alia2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+!2
+declare void @h(i32 b !3=!
+yval 
+
+
+
+
+
+!b = !{!0}
+!0 = !{!1}
+!1 = !{}
+   
+
+
+
+
+
+declare <2 x i6&> @llvm.ppg
+
+
+ {
+
+.al 

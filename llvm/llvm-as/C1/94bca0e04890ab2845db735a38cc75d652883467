@@ -1,0 +1,39 @@
+
+
+
+
+declare void @llvm.x86.sse.muanle() 
+
+
+
+
+; 
+
+
+
+
+
+
+
+
+
+
+!0 = !{ i32 1, !"f
+
+
+
+
+
+declare i32 @llvm.nvvm.
+
+oo", i32 37 }
+!1 = !{ i32 2, !"bar
+declare i322 @llvm.hexagon.A4.r'cmpngd()i32, i32 )
+ 
+!
+", i32 42 }
+!2= !{ i32 1, !"mux
+", !{
+ !"read.ptx.sreg.envreg0000000(hello world)", i32 297 } }
+
+!llvm.module.flags = !{ !1, !1, !2 }

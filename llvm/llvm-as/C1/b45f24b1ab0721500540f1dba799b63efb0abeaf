@@ -1,0 +1,37 @@
+ 
+
+
+
+	;:;:!3 =! 
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{} ;
+
+;;, !moru !{!"hello"}
+  store i32 0, i32* null,!whatever !{!"hello", !1, !{}, !2}
+  r
+
+
+et void, !_1 !0
+}
+
+declare
+
+!
+d :efine  
+
+targe
+
+
+
+
+
+
+
+
+
+declare i32 @llv.hexagon.A2.vad8{i04(0)i
+6
+bde

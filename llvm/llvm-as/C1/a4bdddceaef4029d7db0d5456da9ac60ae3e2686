@@ -1,0 +1,62 @@
+
+
+target triple = "mi-sel-unknown-liux"
+
+@llvm.global_ctors =appending global [1 x { i32, void ()* }] [{ i32, void ()* } { i32 65535, void ()* @test }]
+
+
+
+
+
+define interna; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+!llvm.odl.uemflags = 
+
+!
+
+
+
+
+define i32 @main({!0}
+!0 
+= !{i73-21 
+, null, ) #0 {
+entry:
+  tail callnull void @llvm.dbg.value(me tadata i
+
+
+
+  
+
+
+
+
+
+
+
+
+
+declare i64
+
+ 
+
+
+@

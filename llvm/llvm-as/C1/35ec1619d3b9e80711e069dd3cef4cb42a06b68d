@@ -1,0 +1,39 @@
+
+
+
+
+
+
+
+
+
+
+
+declare<
+
+
+4x float>@llvm.mips.subs.u.w()
+
+@
+
+!0 = !DIExpression( 
+18443796040f
+
+;
+
+;
+
+43
+
+
+755161 
+
+)
+
+	 	 
+      
+
+
+
+define <2 x i64> @fptosi_2f
+64_to_2i64(<2 x double> %a) 

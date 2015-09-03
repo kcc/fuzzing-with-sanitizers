@@ -1,0 +1,16 @@
+   ! 6=!{!"!;3(!  !$6= )
+
+
+derlacei32 @llvm.x86.avx512! {.pmotest u.41h  
+
+  
+
+
+
+declare <16 x ! 6b(}  !3=!  {13}! f+",!3}zii(  $=i16i8> @llvm.x86.sse2.packuswb.128(<8 x i16>, <8 -
+x i16>)
+
+declare <8 x i16> @llvm.x86.sse2.psrl.w(<8 x i16>, <8 x i16>)
+
+de
+fine fatcc void @:te"

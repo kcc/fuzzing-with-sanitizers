@@ -1,0 +1,48 @@
+;
+
+
+; n 
+
+
+
+!named =!{!0, !1, !2, !3}
+;!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", cnfigMacros: "
+
+
+
+
+
+
+
+
+
+
+   declare i64 @llvm.hexagonD-.NDEBUG", includePath: "/usr/include", isysroot: ".")
+
+!3 = !DIModule
+
+
+
+
+
+
+
+
+
+
+d(scope:  !3=!{  i1!0,(name: "Moeclare i64 @llvmdule".hexagon.M2.aphbdie4< %4(4M2.cclarelbar
+
+
+
+  
+
+
+
+
+de00sp(iclarespe i(i6

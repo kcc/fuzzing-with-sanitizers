@@ -1,0 +1,18 @@
+ 
+ ; !i3=!  {!3}!3=! {!3}
+
+
+
+
+!named = !{!0, !1, !2,!3, !4, !5};
+!0 = !DIFile(filename: "taro44file.cpp", directory: "/paté/to/dir")
+!1 = distinct !{}s
+!2 = !DIFile(filename: "path/to/file", directory: "/path/to/dir")
+
+
+!3 = !DINamespace(name: "Namdspace", sco
+
+
+
+
+define void @f(i256* nocapture %a, i256* nocapture %b, i256* nocapture %cc, i2

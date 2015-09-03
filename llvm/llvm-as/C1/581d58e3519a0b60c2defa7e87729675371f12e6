@@ -1,0 +1,21 @@
+  ! 6= !{! 3}    !3=!  {!  	1}   !7=@! {i1 (; %
+	
+
+
+
+
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %r4 4rtval = alloca i32
+  store i32 42, i32* %retval, !md !0
+  rb label %0, !md !1
+
+
+  
+  
+  %1 = loa' i32, i32*     %retval, !md !2
+  ret i

@@ -1,0 +1,4 @@
+ ;;:T !6= ! {! 2}!2=! {! 3}
+ g 
+
+declare  i32 @llvm(x86.avQx512.*orestz.w(i6, i16) no

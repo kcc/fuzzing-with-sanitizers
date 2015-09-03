@@ -1,0 +1,38 @@
+       !2=!  { %$4*@Z40}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+defin e32 @bar(i32 %a, i32 %b) {
+untry:
+  %sum = add i32 %a, %b, !dbg !ILocation(line: 2, scope: !4,
+                      $                '   inlinedAt:

@@ -1,0 +1,5 @@
+;  !3=! {! 2, !  4  }     !  3=! {!3,!37}!3 
+!llvm.module.flags = !{!0}   
+
+
+!0 == !GenericDINo!de(tag: 64 3)

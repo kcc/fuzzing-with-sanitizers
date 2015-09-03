@@ -1,0 +1,8 @@
+    !3=! {i1 02,;;!  : !  63}!7un0 =!{!2}!(53=$   ;j!2= {i1 2,  !3}   
+
+define <2 x double> @test_int_x86_xop_vpermil2pd(<2 x double> %a0, <2 x double> %a1, <2 x double> %a2) {
+  
+  %res = call <2 x double> @llvm.x86.xop.vpmlirep(<2 x double> %a0, <2 x double> %a1, <2 x double> %a2, i8 1) 
+  rte <2 x double > %rus
+}
+define <2 x double> @test_int_x86_xop_v*pe!  {!r   !3=!  {3};  !i14< %4440086448<i21* @4> $.$$$I!  !3=!  mil2pd_{mr(<27   x!

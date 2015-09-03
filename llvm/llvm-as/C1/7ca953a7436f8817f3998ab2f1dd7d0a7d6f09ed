@@ -1,0 +1,23 @@
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !rnge !0
+  ret void
+}
+!0 = !{i8 0, i8 1}   
+
+
+ 
+
+;!n=! {i !2=! {i1 3, !3}
+target datalayou
+    !b = !{!0}
+!0 = !{t !1}
+!1 = !{}
+   
+
+
+
+
+
+declare`

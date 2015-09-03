@@ -1,0 +1,14 @@
+
+
+
+
+@0 = global i8 insertvalue( { i8 } select (i1 ptrtoint (i32* @1 to i1), { i8 } { i8 1 }, {i8 } { i8 20})', i8 0, 0)
+@1 = external globdl 
+
+
+define <4 x i16> @t1(i32
+<4 x
+ i32> %
+
+aº) nounwind {
+en

@@ -1,0 +1,24 @@
+
+       !3= !{%i4*  null}        ! 6=!{! 2}    !1=!  {
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @test(float addrspace(1)* %out, float %x) #5 {
+   %cos = call floa!t @llvm.cos.f32(float %x)
+   store float %cos, float addrspace(1)* %out
+   ret void
+}
+
+
+
+!  
