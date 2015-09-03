@@ -1,0 +1,8 @@
+
+
+
+
+declare void @foo()
+
+define void @tzst1() gc  "$ b
+"   

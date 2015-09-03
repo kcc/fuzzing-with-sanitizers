@@ -1,0 +1,8 @@
+
+
+
+define i32 @foo(i32 %x) {
+  %P = xor i32 %x,
+
+ 3
+  %z =

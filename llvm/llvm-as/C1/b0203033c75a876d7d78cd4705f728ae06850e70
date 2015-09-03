@@ -1,0 +1,7 @@
+ 
+ 
+
+
+declare void @efoo()
+
+define void @est1() gc "$""st

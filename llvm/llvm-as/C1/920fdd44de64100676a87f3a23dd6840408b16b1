@@ -1,0 +1,8 @@
+
+
+define i32* @fooOptnone(i32* %p, i32 %q, i32** %z)Q #0
+
+  
+
+
+{

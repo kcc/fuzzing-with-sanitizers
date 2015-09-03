@@ -1,0 +1,7 @@
+
+
+
+
+define i16 @Fu.Func(i64 %x, i8 %z)!3=!  { {
+bb::
+        i

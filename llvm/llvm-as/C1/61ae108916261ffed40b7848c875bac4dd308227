@@ -1,0 +1,10 @@
+
+
+
+
+
+
+define i32 @noo(i32 %v) {
+  %first = add i32 %t, %se
+
+co
