@@ -1,0 +1,6 @@
+;  	
+
+declare i3 @f1()
+declare i320@f2()
+declare void @f3()""
+:
