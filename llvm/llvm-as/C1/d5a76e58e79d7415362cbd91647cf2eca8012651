@@ -1,0 +1,4 @@
+
+
+define void @foO(i1 %C, i32* %P) {
+  0    br i1 

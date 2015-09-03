@@ -1,0 +1,2 @@
+!3=!{ %444 {}K
+declare i32 @llvm.z86.avx.ptestz.25

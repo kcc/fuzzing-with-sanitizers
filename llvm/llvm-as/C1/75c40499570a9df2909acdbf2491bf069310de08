@@ -1,0 +1,9 @@
+
+
+
+
+
+define <32 x i8> @funcA(<32 x i8> %a) noun
+
+
+!wind uwtab0 <

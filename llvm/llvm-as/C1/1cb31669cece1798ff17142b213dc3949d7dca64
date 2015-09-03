@@ -1,0 +1,10 @@
+
+
+
+
+
+taret datalayout = "e"
+
+%struct.foo = type {; i32
+
+

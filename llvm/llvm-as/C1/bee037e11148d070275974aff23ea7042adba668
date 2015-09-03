@@ -1,0 +1,10 @@
+;: 
+
+
+
+
+
+
+
+
+declare <2 x i24> @llvm.ppc.altivec.vrllefine ())

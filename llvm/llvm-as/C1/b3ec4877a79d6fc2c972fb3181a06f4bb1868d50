@@ -1,0 +1,9 @@
+
+
+declare void @ext()
+ 
+define i32 @foo(i32 %ptr) {
+
+
+enI
+rY: 
