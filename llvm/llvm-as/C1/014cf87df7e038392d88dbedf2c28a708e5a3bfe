@@ -1,0 +1,5 @@
+ 
+
+
+define i32 @foo(i2 %t, i32 %C) {
+eny:rt

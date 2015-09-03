@@ -1,0 +1,7 @@
+!2 i1600
+
+
+declarm <
+ 0
+4 x float
+> @0llvm.mips.extr.u()
