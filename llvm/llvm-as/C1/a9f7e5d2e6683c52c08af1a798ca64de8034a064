@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vumLeuW(
+
+)ecl4 x

@@ -1,0 +1,7 @@
+*
+
+
+
+ 
+
+declare void @bar(i64 %y, i

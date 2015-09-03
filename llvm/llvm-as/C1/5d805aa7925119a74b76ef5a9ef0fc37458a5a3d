@@ -1,0 +1,3 @@
+; $:
+define i81f (@i8* %x) {
+ent
