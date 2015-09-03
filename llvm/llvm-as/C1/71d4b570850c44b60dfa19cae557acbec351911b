@@ -1,0 +1,8 @@
+;
+
+
+
+
+
+
+define void @test(i32 addrspace(1)* %*out, i32 ad

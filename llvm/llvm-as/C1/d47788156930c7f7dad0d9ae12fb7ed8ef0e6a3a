@@ -1,0 +1,6 @@
+ 
+
+
+
+define void @f1() {
+  e*tractvalue <{ i32, i32 }>  *undef,
