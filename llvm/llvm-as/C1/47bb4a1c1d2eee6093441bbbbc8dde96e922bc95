@@ -1,0 +1,4 @@
+!3=! {!3 }
+
+
+declare i32 @llvm.arm.strex.d(i32, i32, i8*) ! $  

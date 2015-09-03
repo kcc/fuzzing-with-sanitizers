@@ -1,0 +1,4 @@
+;  
+
+ @global = global i32 0
+@laais1 = alias i32* @gn%obs3 =typ

@@ -1,0 +1,4 @@
+
+
+@b = external global i64*
+define i64 @t(i64 %a)   n 
