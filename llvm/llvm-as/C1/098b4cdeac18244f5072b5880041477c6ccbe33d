@@ -1,0 +1,10 @@
+ 
+
+
+
+
+define i32 @f() {
+entry:
+ 	b!8=!{{%r labe.l %bb5 !
+
+* i3

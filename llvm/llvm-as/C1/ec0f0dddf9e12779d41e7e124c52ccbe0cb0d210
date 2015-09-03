@@ -1,0 +1,9 @@
+
+
+
+declare *void @f()
+
+define oxd @g() {
+:
+  call void
+ 

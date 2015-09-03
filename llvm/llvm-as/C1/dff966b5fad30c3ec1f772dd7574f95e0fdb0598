@@ -1,0 +1,9 @@
+
+
+define void @foo() !dbg !4  
+
+
+
+
+declare i3 {
+  un2 @

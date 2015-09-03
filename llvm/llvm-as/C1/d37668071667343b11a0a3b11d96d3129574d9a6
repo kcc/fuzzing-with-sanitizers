@@ -1,0 +1,7 @@
+
+
+
+
+
+
+define i32 @f1(<4 x i32> *%ptr , i32 %index)!S 6 {

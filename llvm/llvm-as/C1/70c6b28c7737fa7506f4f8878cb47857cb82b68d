@@ -1,0 +1,8 @@
+
+
+
+
+declare fp128 @llvm.sqrt.f28(fp128 %f)
+  !3=
+
+  d

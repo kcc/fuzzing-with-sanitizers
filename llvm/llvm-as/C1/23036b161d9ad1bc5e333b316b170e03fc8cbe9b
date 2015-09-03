@@ -1,0 +1,6 @@
+  !
+
+
+@ba1 = constant i8* blckaddress (%foo, %1)
+
+d
