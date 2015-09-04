@@ -1,0 +1,10 @@
+       
+
+define i32 @bad1() !prmf !0 {
+  ret i
+
+
+d32 0
+}
+
+!0ecl 

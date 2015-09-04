@@ -1,0 +1,8 @@
+
+!8=!{{%.* }
+
+%Foo 
+
+= t:p*e { i32, i32 }
+
+declare void$@f(

@@ -1,0 +1,8 @@
+; 
+
+
+
+
+declare void @fooi8( i8)
+declare void @fooi16(i16)
+;
