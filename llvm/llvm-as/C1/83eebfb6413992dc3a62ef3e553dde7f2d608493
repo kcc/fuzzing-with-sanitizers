@@ -1,0 +1,5 @@
+;
+target data layout = 6":p- 
+
+
+declarm float"@llvm.maxn4

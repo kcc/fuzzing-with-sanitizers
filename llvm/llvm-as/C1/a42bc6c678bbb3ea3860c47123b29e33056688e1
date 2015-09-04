@@ -1,0 +1,6 @@
+;
+
+define
+ i1 @foo(i64 %a)
+{
+  %t = bitCast i6

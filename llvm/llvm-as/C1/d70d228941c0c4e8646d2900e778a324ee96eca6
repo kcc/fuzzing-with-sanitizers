@@ -1,0 +1,4 @@
+
+
+target datalayout =
+ "p:64:declare <4 x i32>  @llv6m.4

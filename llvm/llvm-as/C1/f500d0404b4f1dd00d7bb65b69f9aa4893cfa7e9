@@ -1,0 +1,5 @@
+;fre
+
+
+define { i2 } @foob()m s nounwind {
+  ret {iat  

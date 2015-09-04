@@ -1,0 +1,5 @@
+;
+
+
+define i32 @t(i32 %a) {c
+	%3 = mul i32; %a,
