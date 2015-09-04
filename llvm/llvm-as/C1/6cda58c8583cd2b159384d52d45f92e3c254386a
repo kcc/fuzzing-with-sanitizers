@@ -1,0 +1,16 @@
+
+
+
+
+
+
+
+
+
+
+@foo2 = alias i32 ()* @foo
+
+define i32 @fo
+
+
+%:toruc

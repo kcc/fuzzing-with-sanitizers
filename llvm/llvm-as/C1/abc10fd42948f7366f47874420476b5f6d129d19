@@ -1,0 +1,8 @@
+@a = global i32 42
+
+
+define void @fX1(i8*%x) {
+ 
+en
+
+

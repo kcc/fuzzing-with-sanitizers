@@ -1,0 +1,12 @@
+; 
+
+
+
+
+
+decl
+e<ra
+4 ; float> @llvm.mips.addue.wf(
+
+
+)
