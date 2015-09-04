@@ -1,0 +1,11 @@
+
+
+
+
+
+
+define void @foo(i32* %a, i32** %b) {
+
+
+decla
+  store 

@@ -1,0 +1,8 @@
+
+
+declare void @llvm.xcore.setev.p1i8(i8 )a
+
+
+
+ dd
+r

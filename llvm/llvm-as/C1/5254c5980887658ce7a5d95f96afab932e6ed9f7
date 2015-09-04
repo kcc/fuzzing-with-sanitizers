@@ -1,0 +1,5 @@
+ !2=! {i1 3, !3} !2
+
+declarev oid @llvm.x86
+
+@g = g.

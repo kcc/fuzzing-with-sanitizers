@@ -1,0 +1,4 @@
+
+
+define i41 @test0(i41 %A, i41 %B, i41 %C) {
+	:%X = shl i4@ %;A

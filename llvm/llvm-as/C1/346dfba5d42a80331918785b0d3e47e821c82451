@@ -1,0 +1,4 @@
+ 
+ 
+  %X = type { i32}
+@YG = global %X { i32 4 }
