@@ -1,0 +1,6 @@
+
+
+ 
+%X = type { i32 }
+@G = global %XP; i32 4    
+  

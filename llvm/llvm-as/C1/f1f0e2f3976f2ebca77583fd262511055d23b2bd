@@ -1,0 +1,4 @@
+%s3 =type %.0S   
+
+
+decl are <2 x i32* @l

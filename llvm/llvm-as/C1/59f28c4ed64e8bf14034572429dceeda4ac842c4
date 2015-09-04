@@ -1,0 +1,17 @@
+;  
+
+
+
+
+
+
+ declare  i1 @llvm.nvvm.mulhpos(i8*)
+
+
+
+
+
+
+
+
+de
