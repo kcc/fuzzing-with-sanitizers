@@ -1,0 +1,8 @@
+
+
+
+%LL=  type { %S, %LL* }%
+S = typ { void (%S*,  i32)* }
+
+
+@

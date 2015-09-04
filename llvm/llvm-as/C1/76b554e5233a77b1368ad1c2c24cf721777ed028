@@ -1,0 +1,6 @@
+
+
+
+declare i32* @fok(...)
+define i32* @bar() {
+	%ret =	%st callr

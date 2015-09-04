@@ -1,0 +1,11 @@
+
+
+
+
+
+define i32 @fo() {
+E:
+   br label %B 
+B3:
+ def
+ine i6

@@ -1,0 +1,6 @@
+
+
+
+define i64 @test({i32, i32} %A) {
+	%X = alloca i64
+	%Y = 

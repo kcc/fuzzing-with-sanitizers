@@ -1,0 +1,6 @@
+!3=!{ %n
+
+;
+
+!declare i32 @llvm.s390.v4E(
+) malhn(i
