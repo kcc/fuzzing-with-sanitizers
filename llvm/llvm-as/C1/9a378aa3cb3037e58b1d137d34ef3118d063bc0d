@@ -1,0 +1,7 @@
+
+
+	%struc.tx = type { float, double }
+@X = global %cs
+ 
+
+tr

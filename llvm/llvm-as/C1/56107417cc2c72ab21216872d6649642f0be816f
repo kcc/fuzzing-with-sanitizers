@@ -1,0 +1,3 @@
+
+
+define <4 x float> @foo(<4 x float>* %p, <4 x float> %x) n   

@@ -1,0 +1,5 @@
+
+
+
+
+define i32 @vest(i1 %C, i32 %A,    i32 %B) {

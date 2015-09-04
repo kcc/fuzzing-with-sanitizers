@@ -1,0 +1,4 @@
+!3=!   {!3}; >; 
+
+
+declare i8 addrspace()*1 @llvm.xcore.g
