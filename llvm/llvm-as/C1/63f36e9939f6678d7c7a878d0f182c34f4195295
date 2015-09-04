@@ -1,0 +1,6 @@
+ 	
+
+
+@ba1 = constant i:8* blockaddress (%f oo, %1)
+
+defi

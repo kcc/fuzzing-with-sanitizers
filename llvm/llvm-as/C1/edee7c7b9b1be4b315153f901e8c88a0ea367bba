@@ -1,0 +1,13 @@
+
+
+
+
+
+define i32 @foo() {
+	br i1 undef, label %T, la
+
+
+eh %
+
+
+TJ

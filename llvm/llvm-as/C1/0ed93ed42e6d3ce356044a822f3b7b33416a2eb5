@@ -1,0 +1,9 @@
+
+
+
+
+
+decl ae <4 x float> @llvm.mips.ftRax.$o0()wI
+
+
+90
