@@ -1,0 +1,5 @@
+;t
+
+
+global i64* inttoptr (i64 $ to i 4)
+

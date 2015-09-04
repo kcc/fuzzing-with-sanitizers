@@ -1,0 +1,10 @@
+
+
+
+
+
+declare i64 @foo()
+
+
+define i64 @f1(i64 %a8, i64 %b) {
+

@@ -1,0 +1,4 @@
+ ;;
+
+declar x32 @llvm.x86. 
+avx.ptest;

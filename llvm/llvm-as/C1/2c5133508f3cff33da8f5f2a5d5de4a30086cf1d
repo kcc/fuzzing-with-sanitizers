@@ -1,0 +1,3 @@
+;
+
+delae *ouble    @llvm.powi.f64(double %Val, i32 %pow
