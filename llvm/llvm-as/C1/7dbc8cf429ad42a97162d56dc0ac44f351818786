@@ -1,0 +1,6 @@
+ !3=!   { !3};t 
+
+
+global 
+
+declare void @llvm.x86.sse.sqen
