@@ -1,0 +1,12 @@
+
+
+
+
+
+define void @f1(i32 *%dest, i32 %a) {
+
+
+
+
+enryt: 
+    

@@ -1,0 +1,4 @@
+
+
+define i32 @main(i32* %p, i32 %x, i12 %y) {
+block1

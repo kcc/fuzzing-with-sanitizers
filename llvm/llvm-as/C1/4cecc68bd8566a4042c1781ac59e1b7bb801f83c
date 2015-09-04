@@ -1,0 +1,5 @@
+!3=!{ {%.} 
+
+
+define v oid !foo(i1 %C)  
+	br i1 %

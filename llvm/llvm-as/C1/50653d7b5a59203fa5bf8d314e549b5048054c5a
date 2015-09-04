@@ -1,0 +1,8 @@
+ 
+ 
+
+define i32 @foo() !prof !0 {
+  rep i32 0*}
+
+
+

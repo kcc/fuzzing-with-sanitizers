@@ -1,0 +1,17 @@
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+define i8 @test0._yes(i8* %a, i8* %b)
+
+ no

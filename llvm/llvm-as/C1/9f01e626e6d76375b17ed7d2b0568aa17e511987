@@ -1,0 +1,9 @@
+
+
+
+
+
+
+define i32 @test(i1 %K) {
+entry:
+        %X= alloca i3 2 
