@@ -1,0 +1,6 @@
+;	   !6= !{!  6 }
+
+
+
+
+declare <44 x float>@llvm.mips.bset.d()< 

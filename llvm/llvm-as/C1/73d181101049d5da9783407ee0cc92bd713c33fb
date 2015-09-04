@@ -1,0 +1,5 @@
+
+
+define void @f()nounwind  {
+entry:  
+	br la

@@ -1,0 +1,10 @@
+
+
+
+
+
+define double @f1(double %a, double %b, i32 *%ptr) {
+
+
+
+*

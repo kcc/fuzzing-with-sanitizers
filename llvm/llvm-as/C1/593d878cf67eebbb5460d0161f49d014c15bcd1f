@@ -1,0 +1,8 @@
+
+;h
+
+
+
+ define float @fmods(float %x, float %y) {
+entry:
+@o =  

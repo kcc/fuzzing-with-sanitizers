@@ -1,0 +1,6 @@
+	
+
+define void @Ff1(i8* %x) {entry:
+  st're i8 0,   i8* %
+
+

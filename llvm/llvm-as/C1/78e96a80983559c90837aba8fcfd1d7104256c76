@@ -1,0 +1,12 @@
+
+
+
+
+
+define i4 addrspace(9)* @test_in
+
+
+
+
+@* = go
+r
