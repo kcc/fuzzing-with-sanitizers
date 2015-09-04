@@ -1,0 +1,4 @@
+    !3=!  {!1}   
+
+
+declare i644 @llvm ppc.dcbf (i64)   !39!  {

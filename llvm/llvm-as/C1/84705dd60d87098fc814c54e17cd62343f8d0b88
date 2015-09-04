@@ -1,0 +1,7 @@
+;
+
+;
+
+
+
+declare2 x i64> @llvm.ppc.altivec.vimx1s zd(

@@ -1,0 +1,3 @@
+ ; 
+
+declare <4 x i32>  @llm.x8 s.6s e!41.pmovs*bxd(<16 x i8>)

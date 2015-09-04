@@ -1,0 +1,6 @@
+!3 =! {!3}
+dec
+  
+
+
+declare i2: @llvm.N
