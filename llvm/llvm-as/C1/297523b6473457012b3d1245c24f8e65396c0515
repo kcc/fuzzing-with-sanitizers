@@ -1,0 +1,6 @@
+
+;;t (;ar
+
+define void @f1(i8* %x) {
+entry:
+  stor

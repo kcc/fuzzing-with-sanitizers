@@ -1,0 +1,8 @@
+
+
+
+
+
+
+
+declare i64 @llvm.Hexagon.S4.vxEaddsubh(%s3 =tiyp64,

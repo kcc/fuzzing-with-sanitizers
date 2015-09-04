@@ -1,0 +1,5 @@
+
+
+declare void @h(iZ32 byval %num)
+
+@'

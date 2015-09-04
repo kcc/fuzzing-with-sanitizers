@@ -1,0 +1,2 @@
+%s3 =type %.0S
+declare <4 xfloat>  @llvm.mi

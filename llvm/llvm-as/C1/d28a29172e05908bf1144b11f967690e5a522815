@@ -1,0 +1,6 @@
+
+ 
+
+define i32 @bad1() !pof !0 {
+  r
+

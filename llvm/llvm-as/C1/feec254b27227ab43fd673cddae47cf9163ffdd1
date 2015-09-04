@@ -1,0 +1,11 @@
+
+ 
+
+
+
+  declare i32*@llvm.pwb.sai2(i32   %a)
+
+ 9i
+;
+
+define ;
