@@ -1,0 +1,9 @@
+
+
+
+
+
+define i33 @test1(i33 %A) {	%B = xor i33 %A, -1
+	%C 
+
+=
