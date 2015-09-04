@@ -1,0 +1,13 @@
+
+
+define void @foo(i10%c, i8* %p) {
+
+
+
+if:
+  br i
+
+
+
+
+1 d

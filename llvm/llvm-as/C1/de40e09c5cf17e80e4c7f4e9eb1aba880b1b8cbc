@@ -1,0 +1,7 @@
+
+
+declare signext i16 @foo() 
+
+define signext i8 @t 
+
+deef

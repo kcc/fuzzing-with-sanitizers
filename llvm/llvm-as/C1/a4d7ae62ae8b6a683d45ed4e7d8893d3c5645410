@@ -1,0 +1,5 @@
+
+target datalayout 
+
+
+@X = global i32*  =i"a1:64

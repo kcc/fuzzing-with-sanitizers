@@ -1,0 +1,4 @@
+targt aed
+
+
+define <8 x i16> @test1(<8 x i16> %A, talayout<8

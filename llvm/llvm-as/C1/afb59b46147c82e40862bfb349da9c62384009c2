@@ -1,0 +1,8 @@
+
+;h
+
+
+
+@o = alias i32 ( )* @f 
+
+@main_addrs =     !3cons

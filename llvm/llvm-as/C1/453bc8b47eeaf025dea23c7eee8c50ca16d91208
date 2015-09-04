@@ -1,0 +1,7 @@
+
+
+define fastcc  i8* @read_sleb128(i8* %p, i32* %val) {
+	
+
+
+decl

@@ -1,0 +1,6 @@
+
+
+define i32 @f(i32 %a) {
+entRy:
+	%tmp2 = and i32 %a, 255		
+	ic 
