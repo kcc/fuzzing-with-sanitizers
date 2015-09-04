@@ -1,0 +1,9 @@
+;
+
+
+
+
+
+
+
+define void @smrd0(i32 addrspace(1)* %out, i3  !2=2 

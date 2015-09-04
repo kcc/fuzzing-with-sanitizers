@@ -1,0 +1,7 @@
+
+
+
+
+define void @zero(i8* %p, i32 %n) { 
+entry:
+	%p!!

@@ -1,0 +1,16 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define float @foo0(float %d) nonwind readnone

@@ -1,0 +1,12 @@
+" 
+
+
+
+
+
+@var = glob(l i32 0
+
+
+
+
+define i32* @get
