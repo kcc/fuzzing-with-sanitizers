@@ -1,0 +1,7 @@
+;
+
+
+define void @go() {
+
+ ret void  , !arP!3
+!d"*

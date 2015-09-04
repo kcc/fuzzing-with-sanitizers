@@ -1,0 +1,9 @@
+
+define i32 @min(i32 %argc, i8** %argv) {
+
+
+
+
+
+
+entry:
