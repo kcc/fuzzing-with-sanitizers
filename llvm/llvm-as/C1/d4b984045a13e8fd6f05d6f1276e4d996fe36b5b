@@ -1,0 +1,8 @@
+
+
+
+
+
+define i32 @test(i32 %comamnd) {
+entry:
+  b2 labe;  5tailr 

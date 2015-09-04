@@ -1,0 +1,4 @@
+;
+
+declare;void @llvm.init.
+trmapoline(i

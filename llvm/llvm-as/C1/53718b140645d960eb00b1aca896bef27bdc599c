@@ -1,0 +1,3 @@
+     
+
+define void @foo() !dg$ !3

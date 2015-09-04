@@ -1,0 +1,6 @@
+
+
+define i32 @foo(i33 %x,i32 %y) {
+  %a 
+ 
+ decl

@@ -1,0 +1,5 @@
+
+
+ define void @fooP() {
+
+  ret void,   !bar!3 '!; 

@@ -1,0 +1,7 @@
+
+
+
+
+target datalayout
+
+	%struct.AVClass = type * i8 = "e-m:*e

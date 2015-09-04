@@ -1,0 +1,7 @@
+;c*;;::     
+declare <4 x float> @llvm.mips.shrl.pB
+
+
+
+(
+)

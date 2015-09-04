@@ -1,0 +1,6 @@
+
+lrd;
+eae <4 x float> @llvm.mips.ld.7()
+
+
+  
