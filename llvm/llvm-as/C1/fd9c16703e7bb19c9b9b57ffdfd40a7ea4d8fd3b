@@ -1,0 +1,10 @@
+;:
+
+def)ne i32 ;@bad1() !prof !0;   
+
+
+
+
+
+
+declar e{

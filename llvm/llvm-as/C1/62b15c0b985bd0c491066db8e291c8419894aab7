@@ -1,0 +1,8 @@
+
+
+
+
+
+
+declare i32 @a() returns_twice
+ 

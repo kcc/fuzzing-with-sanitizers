@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vsuccuwt()<4ar

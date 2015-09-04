@@ -1,0 +1,7 @@
+; != 
+
+
+define void @fooP() {
+
+  ret void, !bas!3;
+;!3!!3=!{
