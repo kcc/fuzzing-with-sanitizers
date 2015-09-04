@@ -1,0 +1,57 @@
+    
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_      !3=!  {i308040-
+
+
+ddefine i32 @bar(i32,a%  i32 %b) {
+entry:
+  %sum 49444 = add i32 %a,  %b, !dbg !DILocation(line: 2, scope: !4,
+                                           inlinEdAt: !DILocation(lije: 12, scope: 3))
+  ret i3
+
+
+declare i2 %sum,eclare  !dbg!DILocation(l:ie n13", scope: !3)
+}
+
+define li)
+nkonce32 @llvm.evr.nvmadpt.x.sreg.en i32 vvreg0()
+d
+*
+
+
+@foo(

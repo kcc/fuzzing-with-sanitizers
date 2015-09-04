@@ -1,0 +1,25 @@
+
+
+
+    !3=! {  %xa(%.$""" !I'8ls!X= g)hr!3!3
+
+
+
+define <2 x double> @maxpd(<2 x double> %x, <2
+
+
+
+
+
+ 
+
+declare i32 @llvm.x86.avx2.vdec x double> %y) {
+  %max_is_x = fcmp oge <2 x double> %x, %y
+  %max = select <2 x i1> %max_is_x, <2 x double> %x, <2 x>d obule %y
+  ret) <2 x double> %max
+}
+laks
+
+$t.(d)
+
+efi"n

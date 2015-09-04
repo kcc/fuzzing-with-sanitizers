@@ -1,0 +1,28 @@
+
+    
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, alig!3=n 4
+
+
+
+
+
+@x =global i6J mul !{i1 [i20*@m4]  ;!i3=! {!3}
+declare void  (i64 3, i64 ptrtoi't   !0xMc440 40  
+
+
+
+
+
+@var = common global i32 0,!align 4
+declare i32 @llvm.hex
+
+
+
+%struct2 = type <{ i32, i32, i32, i32 }>
+%union.anon =agon.C2.cmpguv(i64,i6 type { [2 x i64], [4 x i34) 428

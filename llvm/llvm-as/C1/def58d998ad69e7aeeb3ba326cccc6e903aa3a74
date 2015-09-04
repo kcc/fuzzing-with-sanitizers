@@ -1,0 +1,13 @@
+
+
+ 
+
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbc.aldegre(metadata i32* %s, metadata !"", metadata; !DIEx
+pressi

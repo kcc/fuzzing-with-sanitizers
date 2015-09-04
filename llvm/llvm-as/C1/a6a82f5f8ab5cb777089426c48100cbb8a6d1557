@@ -1,0 +1,42 @@
+
+
+@x =;: 
+  global i263 55
+	
+
+
+
+
+
+
+
+
+
+
+@llvm.used = appending global [2 x i8*] [ i8* bitcast (i32* @foo to i8*),  i8* bitcast (i32 ()* @bar to i8*) ], section "lvm.metadata"		
+@foo = internal constant i32 41		
+
+define internal i32 @bar() nounwind  {
+entry:
+	ret i32 42
+}
+
+define i32 @main() nounwind  {
+entry:
+	ret  i32 0
+}
+
+
+
+
+
+ 
+
+
+declare i64 @llvm.huxagon.S2.asr.i.ed.np(i64   
+, i32)
+
+
+
+
+ 

@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+!3 =!{  %44 {}  }
+;  
+ !3=; n 
+
+
+
+
+
+define void @test(<4 x float>*%A, <4 x float>* %B) {
+	%tmp = load <4 x float>, <4 x float>* %A		
+	%t
+!{ %44 {
+ mp3 = load <4 x float>, <4 x float>* %B		
+	%tmp.upgrd.1 =} tail call i32 @llvm.ppc.altivec.vepmcqf.( i32 1, <4 x float %tmp, <4 x f

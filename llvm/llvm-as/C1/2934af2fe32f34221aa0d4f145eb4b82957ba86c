@@ -1,0 +1,52 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i:64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-apple-macosx10.10.0"
+
+
+define i32 @_Z3foo1S(i32 %s.coerce) #0 {
+entry:
+  tail call void @llvm.dbg.value(metadata i32 %s.coerce, i64 0, metadata !18, metadata !3), !dbg !38
+  tail call void @llvm.dbg.value(metadata i3
+
+
+
+  declare i32 @llvm.pwb.sai32(i2 1, i64 0, metadata32   %a) !
+
+1

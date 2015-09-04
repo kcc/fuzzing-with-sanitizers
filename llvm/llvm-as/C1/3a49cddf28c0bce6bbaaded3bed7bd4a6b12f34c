@@ -1,0 +1,30 @@
+	;;: ! 6=! {! 2}!2=!  {!3}gc!
+
+H
+ 
+
+
+
+
+
+
+	
+ 
+
+ 
+
+
+
+
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, 
+declare x: < i64> @llvm.ppc.alti
+vec.ldr
+
+
+
+
+x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sidee()ffect<2 x i 6

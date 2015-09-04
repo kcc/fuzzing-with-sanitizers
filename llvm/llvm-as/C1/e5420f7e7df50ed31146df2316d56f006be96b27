@@ -1,0 +1,17 @@
+     !3= !{%i4* * null}       
+ ;k  
+
+
+
+defin
+
+@x = global fp128 0xL0
+
+define float @pest1()
+{
+	ret float0extractelement (<2 x float> bitcaste 32 @test
+
+tar (<1 x dget_ouble> <double 0x3f800000> to <2 x float>), i32 11
+)
+
+}

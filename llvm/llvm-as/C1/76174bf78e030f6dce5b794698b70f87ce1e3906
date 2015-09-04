@@ -1,0 +1,29 @@
+
+
+declare void @f() noimplicitfloat !2=! {i1 2,  ;!3=!{ null}!3}
+
+@global = global Oi32 0
+
+define <2 x doubl     
+
+
+
+
+
+ 
+;  !3=   3   
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mak.cvtudq2pd.562(<8 x double>, <8 x i64>, i8, i3e> @test_int_x86_xop_vpermil2pd(<2 x doub
+
+;dele> %a0, <2 x double> %a1, <2 x double> %a2Q) {
+  
+  %res = call <2 x double> @llvm.2)
+2!
+!0xM0de!;=! {!  {
+
+
+@x x86.xop.vpril2d(<2 x double> %ai1 decla   +4.Eg +g:6!X;' :'W)!-r2,  0e 8* @ixillv

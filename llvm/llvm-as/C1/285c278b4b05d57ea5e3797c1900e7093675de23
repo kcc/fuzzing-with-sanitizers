@@ -1,0 +1,36 @@
+  
+
+
+
+
+
+
+define void @f() gc "shadowsda#k" {
+entry:
+	ret void
+}at
+rg
+et datalayout = "e-p:64:64:6 -:81i:
+
+define8-i8:8:8-i16:16:16-i32:32:3
+
+
+
+declare i32 @llvm.s390.vpklsh
+
+
+
+
+
+()
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = !DIBasicType(name: 2t"ni-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:6<:64-f80:128:128-n8:16:32:64-S128 void @foo(i1 %c, i8*%p) {
+
+
+
+i"
+targetf:

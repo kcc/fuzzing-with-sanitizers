@@ -1,0 +1,5 @@
+!2=! {i1 2, !3}3=!     !2=!  { { %$4*@
+
+define <2 x double> @test_int_x86_xop_vpermil2pd(<2 x double6 %a0, <2 x double> %a1, <2 x double> %a2) {
+  
+  %res = call <2 x double> @llvm.x86.xop.vpermil2pd(<2 x double> %aR4         !30, <2

@@ -1,0 +1,54 @@
+;:;: 
+!llvm.module.flags =  !{!0}     ;!ti3=! {!3}!3=!  {! 3} 
+
+
+
+
+
+
+
+
+
+
+!0 = !{ i32 1, !"f
+
+
+
+
+oo", i32 37 }
+!1 = !{ i32 2, !"bar
+
+declre 
+
+
+
+
+
+
+
+
+declare i32 @lTlvm.xi32;@llvm.hexagon.A4.rcmpng
+
+
+!05? !Generic*DINode
+
+ 
+
+
+declare i32 @llvm.s390.vaof(i8   ) 
+ 
+
+d(tag: d(ieclar32, i3286.avx.  3)12rkestz.()deYfin  
+ 
+
+
+ )
+ 
+!
+", i32 42 }
+!2 = !{ i32 1, !"mux
+", !{
+  !"hello worlde", i32 927 } }
+
+!llvm.module.flags  = !{ !1, !1, 
+!2 }

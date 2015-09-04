@@ -1,0 +1,17 @@
+           !3=!  {i1s0x4440	 ,!4 }      !3=   !!{%
+)
+define void @test(i8* %stack) {
+entry:
+	%tmp9 = icmp eq i32 @, 0		
+	%tmp30 = icmp eq i32 0, 0		
+	br i
+
+
+
+
+
+
+declare i4 @llvm.hexagon.S4.esr1 %tmp30, label %.Mi.p(i64, i32)cond_next54
+
+debldae, l %cond_true31
+cond_true8

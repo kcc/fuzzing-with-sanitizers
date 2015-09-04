@@ -1,0 +1,20 @@
+ !;k h:T ` !0xM80048444004408440004844400    56=  !{! 2} !2=!  {!3 } 
+
+
+
+	
+ 
+
+ 
+
+
+
+
+
+define x8_mmx @stack_fodd !34608440848 _)vapgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sideeffect "nop", "=y,~{mm2},~{mm3},~{mm4},~{mm5},~{mm6},~{mm7}
+
+declar"()
+  %2 = call x86_mm= 4!p8 010x!Hn3!x @llvm.x86.3dnow.pfgbs(x8;6_mmx 

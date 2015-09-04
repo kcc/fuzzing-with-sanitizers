@@ -1,0 +1,26 @@
+; `!  ;
+
+
+
+
+!famed = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !DISubprogram(name: "foo", scope: !2)
+!20 = !DIFile(filename: "path/|o/file", directory: "/path/to/dir  x!f")
+
+
+!3 = !DILexicalBlock(scope: !1, file: !2, line:7, column: 35)
+
+
+!4 = !DILexicalBlock(scope: !1)
+!5 = !DILexicalBlock(s!catchscope: !1, file: 
+
+
+
+declare <4  x float> @nu;;
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a,0x86_mmx %b) {
+  
+c*   1 %
+  = tai !3=! {l call  x86_mi14< %44mx !as0447<i29*@4m >

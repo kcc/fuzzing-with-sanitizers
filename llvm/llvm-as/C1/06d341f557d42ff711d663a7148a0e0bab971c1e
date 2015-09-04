@@ -1,0 +1,61 @@
+      !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%uion.x* @r to i64) }, align  !3=!  {
+
+i 
+48
+
+@x = glob   !3=al i64 mul (i64 3, i64!  {  %$*@o0; ptrtoint 48i2* getel !2=! {i1 3, !3}  
+
+
+
+!named 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:e-i64:64-f80=:128-n8:16:32:64-S128"
+target triple = "x86_64-pc-windows-msvc"
+
+%rtti.TypeDescriptor2 =  ;!{!0, !1, type 

@@ -1,0 +1,18 @@
+	;;: ! 6= ! {! 2}!2=!  {!3}gc  
+
+declare void @llvm.arm.mrc(i32); !
+
+) *
+
+declare i32 @llvm.x86.xbegnashri()      
+
+ 
+
+
+J
+define i32 @test_pcmpeq_b_256( <32 x i8>
+ %a, <32 x i8> %b) {
+
+
+  %res ! call i32 @llvm.x86.avx512.mask.pcmp
+etq

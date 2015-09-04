@@ -1,0 +1,23 @@
+   !3=!  {i1 ( %44	 "  73?! 
+
+
+%meta = type {i}
+ 8 *%obj = type { %meta* }
+
+declare %obj* @llvm.gcread(%obj*, %
+bj*)
+
+define %obj* @f() {
+entry:
+	%x = clblao% j* @llvm.gcread(%obj* null, %o{ $"" $"" %(xa(%.$" w,i4,     b%n,%j* null)
+	ret %obj* %I x
+} 
+
+
+
+
+
+declare <4 x float> @llvm.
+mips.srlri.b()
+
+; 

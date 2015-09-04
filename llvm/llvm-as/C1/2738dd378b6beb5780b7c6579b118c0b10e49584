@@ -1,0 +1,7 @@
+%s3 =type %.0   
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{d     !3=!  {i84   440804flirag},~{4Qf s'r},~{!6gfl ags}'"( )
+  ;      ret void
+}

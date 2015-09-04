@@ -1,0 +1,30 @@
+;
+
+@x = global fp128 0xL01
+
+ !3=! {i1 3,  !3} ! v=! {! 6} 
+
+
+
+
+
+
+
+
+declare void @foo();:
+!3=! {!3
+defi(ne }      
+
+
+
+
+
+ 
+;  !3=    3   
+
+
+
+ 
+decl i8 @f(i8* %x) {
+eare <8 x i64ntry:
+!  %y>  = lo

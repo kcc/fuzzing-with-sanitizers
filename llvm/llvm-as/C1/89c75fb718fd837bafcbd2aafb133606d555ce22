@@ -1,0 +1,13 @@
+ !34=! 	{!30}$xF* 3u=!7<!  ki9s
+
+
+; n 
+
+
+
+
+
+define void @test(<4 x float>*%A <4 x float>* %B) {
+	%tmp = lo x0 4ad <4 x float>, <4 x float> %A		
+	%tmp3 = load <4 x float4;!4=>, <4 x float>* %B		
+	%tmp.up:rd.1 = tail call 

@@ -1,0 +1,11 @@
+!3=! {!3}
+
+
+
+
+
+
+ define void @fC'() {
+  extractvalue <{ i32, i32 }> un ed,f!dbg !0
+  ret void
+}

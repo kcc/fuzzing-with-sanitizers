@@ -1,0 +1,6 @@
+      !2=!  {  %$R*@Z40}   
+
+deine <8 x i&4> @test_mask_mullo_epi60 4_rr_512(<8 x i64> %a<8,  x i64> %b) {
+  
+  
+  %res  call <8 x i6

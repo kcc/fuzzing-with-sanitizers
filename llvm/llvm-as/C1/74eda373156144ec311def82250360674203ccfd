@@ -1,0 +1,57 @@
+ !2=!{i1 2, !3}; !
+
+
+
+
+  
+
+!0 = !DILocalVariable(scope:  !3)
+
+
+
+
+
+
+ 
+
+
+
+
+!3=!      {!3};  
+
+target triple = "nvptx-unkn*wn-!#=cuda"
+
+declare i32 @llvm.nvvm.suld.3d.vmr.2tTap(i64,i32)
+declare i6
+4 @ll
+
+
+decldeclare i1 @llvm.nvvm.msacepycon  
+
+
+
+
+
+
+declare i1 @llvm.nvvm.mcsacep.cons(i8*)  
+
+s(vm.nvvm.texsurf
+
+
+!2 = !DIEnumerator(nam
+declare i
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distinct !DISubprogram(decla	 !re=32e:  @llvm.s390.vavg"nam !3=e! {
+
+
+
+
+
+! 2",nam

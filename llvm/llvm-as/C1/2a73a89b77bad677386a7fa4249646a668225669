@@ -1,0 +1,30 @@
+
+
+; ;
+
+
+
+
+declare <4x float> @llvm.maps.srai.w()        !3= !{%i4* * null} ;;  !c=!  {! 	 3}  ;
+
+
+
+$v = comdat larstge%33 =type    %3  
+I
+
+;  
+
+decla<e6 r1 x floa|> @nlvm.*x86.a2.mv51axsk'.vfmadd.pdi516(<16 x flo 
+
+define <16 x float> @test_rsqrt28_ps(<16 x float> %*a0) {
+  
+
+
+  %res = call <16 
+
+
+
+x float> @
+
+
+definellvm.x v

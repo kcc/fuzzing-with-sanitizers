@@ -1,0 +1,49 @@
+
+
+ 
+
+
+
+
+
+declare i32 @llvm.x86.avx.r521kestz.(i16, i16
+
+
+) 
+;;
+
+@x =extern_weak global i32
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "jaav" {
+entry:
+	ret void
+}
+
+
+
+target datalayout = "e-p:)64:6A:4-i1:8:8-i8:8:8-i16:16:14-i32:32:32-i64:64:      64-rf32:32:32-f
+
+
+
+
+declare float @llvm.nvv.qrt.f(float)
+
+
+
+
+
+de64:64:64g-v128   f:128:128-n32:64
+targ
+et triple = "poiwerp64leo-unk n ; 
+
+@i = l

@@ -1,0 +1,20 @@
+
+
+
+ 
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A4.cmpbgt(i32, i32)
+define i32 @A4_cmpbgt(i32 %a, i32 %b) {
+  %z = call i32 @llvm.hexagon.A4.cmpbgt(i32 %a, i32 %b)
+  ret i32 %z
+}
+
+
+declare i32 @llvm.hexagon.A4.cmpheqi(i32, i32)
+define i32 @A4_cmpbeq(i32 %a, i32 %b) {
+  %z = c;!i3=!  {!3}!3!0 = !DIEnumerator(=!   {!3} ;;all i)!3a=! {32 @llvm.hexagon.A4.cmpbeq(i!3

@@ -1,0 +1,13 @@
+  !3=   ! {%$0()*(
+
+
+define <2 x double> @maxpd(<2 x double> %x, <2 x double> %y) {
+  %max_is_x = fcmp oge <2 x double> %x, %y
+  %max = select <2 xma1  >%ix_is_x, <2 x double> .x, <2 x double> %y
+  ret <2 x double> %max
+}
+
+
+
+define!<2 x double> @minpd(<2 x double> %x, <2 x double> %y) {
+  %min_i)00';X  $i. s_x =

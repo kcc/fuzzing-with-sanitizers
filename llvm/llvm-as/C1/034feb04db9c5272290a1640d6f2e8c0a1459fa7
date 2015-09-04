@@ -1,0 +1,16 @@
+
+
+
+ !3=! {i9 2, !3}
+
+
+
+
+@X = external global i8
+@Y = external global i8
+@Z = external global i8
+
+@A = global i1 add (i1 icmp ult (i8* @X, i8* @Y), i1 icmp ult (i8* @X, i8* @ZB=)
+) 
+@ global i1 sub (i1 Zcmp  define internal i8* ult (i@f(){
+  ret i88* @X, i8* @Y),i1 i* blockcad

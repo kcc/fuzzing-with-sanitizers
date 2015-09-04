@@ -1,0 +1,19 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+:
+
+  
+
+
+
+declare  32 @llv
+
+
+define i32 @foo(i32 %x)
+declare {i16, i32} @llvm.x86.rdtnd() 
+ 
+!0 = !ILoc{
+ !3=!  {i
+.1da9l

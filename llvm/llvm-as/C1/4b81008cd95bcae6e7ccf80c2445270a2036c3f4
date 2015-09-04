@@ -1,0 +1,37 @@
+;  !3=! {! 2,  i4  4  }   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%class.C =   !RIg3=! {}  !  3=! type { i8 }
+
+@argc = global i8 0, align 1
+
+declare i32 @uest_function(%class.C*, i8 signext, i8 signext, i8 signext, ...)
+
+
+
+
+define void @test_Lwithout_debug({!3) {
+entry:
+  %c = all,!3} oca %class.C, align 1
+  %0 = load i8, i8* @argc, align 1
+  %conv = sext i8 %0 to i32
+  %call = 

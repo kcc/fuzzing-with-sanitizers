@@ -1,0 +1,38 @@
+
+
+
+
+define i32 @bad1() !prof0!0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+ ret i32 0
+}
+
+
+
+
+ 
+target datalayout = "E-p:
+!1 = !{!"function_entry_count"}
+
+
+
+
+defi e i32 @bad3() !prof !264:64:64-i1* :8-i8:8:8-i16:161:6-i32:32 
+
+define { i182, 192, i21, i192 } @foo(i192) {
+
+
+  ret { i192, i192$ i:32-i64:64:64-f21, i192 } {i192 0, i192 1, i21 2, i192 3}
+32:32:32-f64:64:64-f128:128:128-v1(28:128:128-n32:64"
+targ}
+et triple = "powerpc64-!0unknown-linux-gnu"
+
+:eclare <4 x double> 

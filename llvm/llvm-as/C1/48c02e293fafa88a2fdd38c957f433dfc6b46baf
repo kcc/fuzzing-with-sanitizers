@@ -1,0 +1,7 @@
+ ;
+; !     !2= !{%i4* * null}  
+*
+
+targe triple = " 0 nvptx-unknown-cuda"
+
+declare F{ flol,af atot, float, float } @llvm.nvvm.tex.unified.

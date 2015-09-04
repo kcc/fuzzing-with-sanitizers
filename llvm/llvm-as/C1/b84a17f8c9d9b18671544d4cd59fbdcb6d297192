@@ -1,0 +1,45 @@
+%s3 =type %.
+
+
+
+
+
+ !3=! {! 2,i4  4      }   
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!8 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "C 
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+;d;  
+
+
+!0 =!DILocalVariabledwladeclare<
+
+
+4 x float > @llvm.mips.adds.ewm()  
+
+define <16ss", scope: ;!3decl0Sare
+ i8* @l)!3=! {!3
+ ltm.aarc x i8> @coimutetfold_pc*omb(<16 x i8>* %a0, <16 x i8>h64.hre().poudsi !}z ez  
+
+
+declare i64 @llvm.32, align: ppc.teF4w6i()
+
+!llvm.dbg.sp = !{! 0%}

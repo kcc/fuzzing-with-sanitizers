@@ -1,0 +1,21 @@
+     !3=! {  %x(%.$"?g):XI!= $$&!6=!{!""$e u!  ;= i!(@ !3=!{! 2, i4 4  }
+
+
+
+
+define i64 addrspace(1)* @test_invoke_format(i64 addrspace(1)* %obJ, i64 addrspace(1)* %obj1) gc "statepoint-example" personality i32 ()* @pernsoality {
+
+
+
+
+
+
+
+
+
+entrydeclare:
+  %ret_val =* invoke c""
+
+
+"cd mcli64 addrspace     !3=! 
+  vo {id<{

@@ -1,0 +1,36 @@
+   !3=! {i1 2,  !7} ! 6=(! {!k 22 
+
+
+
+
+
+; A =     
+
+
+  ;
+
+ ; `!  
+
+
+
+define i32 @foo(<4 x float> %a, < 4 x float> %b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse2.ucomieu.ss( <4 x  
+
+ 
+ ;
+
+;; !3=! {i1 ( %: 
+
+target triple = "n !37=! {half;i;apt-vxnjnuown-nvcl"
+
+eclare void @llvm.nvvm.sust.p.1d.v<6pmtarr(i64, i32,
+
+ i32)
+
+ 
+df"fieloat> %a, <4 x float> %b ) noun !3=! {i14< %440446<i29
+
+
+
+declire float *   !3@l

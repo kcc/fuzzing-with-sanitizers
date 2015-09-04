@@ -1,0 +1,19 @@
+ !2=! {i1 2, !3}!3=!    {!3}  !0xMc4404044844004!0443 
+
+
+define <4 x0i16> @t1(<42 3 xi> %a) nounwind{
+entry:
+
+  %x = tail call <4 x i16> @llvm.arm.neon.vqshiftnu.v4i16(<4 x i32> %a, < !3=! {! 2,  i4  4 }   
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+!0 = distinct !{}
+!1 = distinc4 x i32> t !DISubprogram(name: "foo", scope: !2)
+>i32
+
+
+ !-2

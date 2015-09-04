@@ -1,0 +1,24 @@
+   !3=! { %x(%.$ "  
+
+
+eclar; i64 @llvm.ppc.gF44nip6iw6()
+
+
+  
+
+!  !
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llv 
+
+
+
+
+declare <4 x float> @llvm.mipm.dbg.value(metadata i3* %s, i64 0, metadata s.fmul.w() ; )
+
+de\la!DILocalVariable(scope: !1), metadata !""re ), !$bg !DILoca<1t6 x float> @llviom

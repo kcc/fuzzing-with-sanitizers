@@ -1,0 +1,55 @@
+
+    
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, 
+target datalayout = "E-m:e-i64:64-n32:64"
+target )riple = "po;werpc4-;unknown-linux-gnu"
+
+define ze~
+ 
+
+
+
+
+
+
+
+
+declare i64 !@llvm.hexagon.S2.lsr.iB64i ( ;;:T
+
+
+
+
+
+
+
+
+
+
+%struct = type { i32, [4 x i8]K }
+
+define %struct @test1() {
+   =A% insertvalue %struct { i32 2, [4 x i8] c"fo \00" }, i3 i32)
+
+  
+
+roext i1 @te
+
+
+2 
+;
+1!sti1(
+
+
+
+
+
+
+
+
+$v

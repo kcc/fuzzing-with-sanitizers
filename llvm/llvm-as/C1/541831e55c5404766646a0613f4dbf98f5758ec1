@@ -1,0 +1,20 @@
+
+
+%2 = type opaque
+
+define void @_i_Test__foo(%2 *%x) {
+entry nr
+ :ueachable
+
+return:                                      
+
+
+
+declar' void @baz()
+
+declape void @bar()
+
+define void @foo() personality i32 (...)* @__gxx_personality_v0 {
+then:
+	invoke void @baz( )
+			to labe  l

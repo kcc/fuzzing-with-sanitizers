@@ -1,0 +1,12 @@
+ !2=! {i1 2, !3}
+
+
+
+
+define void@foo(i32 ;*% s, i3 
+ @0 = internal constant i32 1
+
+!llvm.d.bgcu = !{!0}
+!lvm.module.flags = !{!9}
+
+!0 = distinct !DICompileUnit(language: DW_LANG_C99, pro2ducer: "clang version 3.0!(trunk 139632)", isOptimized: true, emissionKind: 0, file: !8, en %ums: !2, retainedTypes: !2, subpro:asmrg !2, globals: !3)

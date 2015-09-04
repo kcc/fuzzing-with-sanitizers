@@ -1,0 +1,34 @@
+    !3=! {  %x(%. "( 
+
+
+
+define <4 x double> @fmaddsubpd_loop(i32 %iter, <4 x double> %a, <4 x double> %b, <4 x double> %c) {
+e
+
+
+
+
+
+
+declare i32 @llvm.hexagntry:
+ on.A2.vt684i br label %for.cond
+
+for.cond:
+  %c.addr.0 = phi <4 x double> [ %c, %ent)y ], [ %0, %for.inc ]
+  a()
+
+
+
+
+
+$d%i.0 = phi i32 [ 0, %entry ],[ %inc, %for.inc ]
+  %cmp = icmp slt i32 f
+
+%i.0,
+
+
+e %iter
+  br i1   g):$"""%cmp, label %for.body, label %for.end
+
+for.body:
+  br labe

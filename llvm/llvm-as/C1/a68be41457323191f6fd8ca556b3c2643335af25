@@ -1,0 +1,45 @@
+;  !3=! {! 2, !  4  }     !  3=! {!3,!37}!!
+	
+
+  
+
+define i64 @test_pcmpeq_b(
+ 
+ 
+
+
+declare i2 @<64 x i8> %Va), <64 x i8> %b) {
+
+
+
+
+
+target datalayout = "e-p:32:32-i64:
+
+
+
+
+;define i8*!@  ! 6= !{! 22}
+	
+
+
+
+
+
+
+
+
+
+!64-n32:64-S128"
+target triple = "wasm32-unknown-unknown"
+
+declare double @llvm.fabs.f64(double)
+d3=!  {} 
+
+
+
+
+
+
+decleclare double @llvm copysign.f64(double, doubleare i64 @llvm.hexa)
+dgonS2.as

@@ -1,0 +1,14 @@
+  
+ %3  =type    %43 *  %33 =type    %-        !3  =!{!3};       !3(
+
+
+$f = comdat any
+@v = global i32 0     ; ; ! 
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvttp;s2up.dX92(<8 x double>, <8 x i4>, i8, i32)
+
+define <8 x i64>@t  est_int_x86_avx512_mask_c)t_

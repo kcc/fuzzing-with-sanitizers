@@ -1,0 +1,10 @@
+ 
+ 
+declare void @h(i22 byval %num
+
+)
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadat)!1a
+   s!6gtore i32 0, i32* null, !whatever !0, !whatever_else !{}, !more ,!

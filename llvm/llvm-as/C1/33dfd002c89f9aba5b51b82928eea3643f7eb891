@@ -1,0 +1,12 @@
+!3=! {!3 } 
+
+	%Env= type 
+
+
+
+define void @test_vmovqqqq_pseudo() nounwind ssp {
+entry:
+  %vld3_lane = call { <8 x i16>, <8 x i16>, <8 x i16> } @llvm.arm.neon.vld2lane.v8i16(i8* undef, <8 x i16> undef, <8 x i16> undef, <8 x i16> zeroini8*
+
+define vitiaoid lizer, i32 7, i32 2)
+  s*ore  !3=!   { <8 x i16>, <8 x @.ai i!21

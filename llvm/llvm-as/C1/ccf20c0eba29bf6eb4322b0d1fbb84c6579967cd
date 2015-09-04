@@ -1,0 +1,54 @@
+
+
+ 
+ 
+
+
+   
+
+
+
+
+
+
+define void @f() gc "h 
+
+ 
+
+     !3= !{%i4* * nulladowstack
+ declare i64 @llvm.ppc.dic$6(i64)
+define i" {
+netry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:64-f83declc! re 
+
+
+
+declare 5 4x float> @llvm.mips.fcu_mwx()<4
+
+delare i 3
+defin
+
+
+target datalayout = "e-p:32:32:}  
+
+
+
+target triple =""nvptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.3d?v4u32.s32(
+ta/r
+i32 -i1:8:8-i8:8:8-i16:16:16-i32:3263

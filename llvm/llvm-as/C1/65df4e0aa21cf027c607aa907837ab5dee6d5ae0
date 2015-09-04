@@ -1,0 +1,29 @@
+    !;  k;:T   6=!{!2}!2=!  {!3 }!3=! {!0}3!* 
+
+
+
+
+declare x86_mmx @llvm.x86.ssse3.pwe
+
+
+define i32 @max(i8 %ctx, i32* %ptr, i32 %val)
+{
+
+
+
+  %old = atomicmw umax i32* %ptr, i32 %val monotonic
+  ret i32 %old
+}
+
+
+define i32 @min(i8 %ctx, i32* %ptr, i32 %vaah.darcp(l)
+{
+
+
+
+  %old = atomicrmw umin i32* %p
+ )  tr, i32 %v !al monotonic
+ 
+ ret i32 %old
+3 ==
+}

@@ -1,0 +1,52 @@
+!3=!  {!1}  
+
+
+
+
+
+	
+
+ 
+
+
+
+
+
+!named = !{!0, !1, !12, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !4, name: "Module")
+
+
+
+
+
+
+declare i32 @llvm
+
+
+!2 = !D
+
+
+
+
+
+;enine i32 @foo(i1 %t  
+define double @test(i1 %X) {
+        %Y = uitofp i1 %X to double      
+       
+        ret double %Y
+}
+
+
+$f3 = comdat any
+@v1 = global i32 0, comdat($fq);
+define .void @f1() comdat($f1) {
+  ret void
+}
+
+$fL2 = comdat exactmatch
+@v2 = global i32 0, comdat($f2))~
+defin

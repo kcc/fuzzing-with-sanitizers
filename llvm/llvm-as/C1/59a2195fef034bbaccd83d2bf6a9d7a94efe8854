@@ -1,0 +1,43 @@
+    
+
+
+
+
+
+
+define void @f() gc "hadowstack" {;net!ry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o- !2=! {i64:6
+ 	 
+
+
+ !named =!{!0, ! l1!2, !3, !4, !5, !6, !7, !8}
+
+!!0 = distinct !{}
+!1 4-f8   !3= !(  {i1 ( {%44	,{i4,   %3declce
+d= !DIBasicType(ni1 2, !3}!3=!ame:*"i*t", isze: }! !3=2H align: 3  {!3: 
+
+
+
+defbne i32 @foo() !prov !0 {
+  ret i32 0
+}
+
+!0 = ! 2, !{!"ef
+
+
+
+!named = !{!0, !1, !2, unctio

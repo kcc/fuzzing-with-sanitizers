@@ -1,0 +1,53 @@
+ 
+
+;; n +4 !3=! {! 2,i4  4     }   
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!8 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType (tag: DW_TAG_structure_type, name: "C 
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+;d;  
+
+
+!0 =!DILocalVariable(lass", scope: ;!3declare
+ i8* @l)
+
+declare<
+
+
+ x flat>@llvm.mips.dp
+
+
+declare <4 x float> @llvm.mips.o'xaxNhsep    ()
+
+
+
+
+
+
+
+
+define i32 @test1(i32 %x) nounwind uwtable ssp {
+entry:
+  %retval = alloca i32., align 4
+  %x.addr = allw() !3 0<oca i32, align 4
+  
+
+
+!3sto4 x=!rx 

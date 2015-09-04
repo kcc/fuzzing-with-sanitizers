@@ -1,0 +1,20 @@
+
+
+declare void @h(i22 byval %num
+
+)
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i:64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{,} !mor        !3  =!{!3};       !3(
+
+
+$f = comdat any
+@v = global i32 0     ; ;  !
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.e !{!mask.cv*tps2udq.X92(<8 x doubl"

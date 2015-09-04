@@ -1,0 +1,53 @@
+
+
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+
+
+
+
+@x = global i64 mul (i64 3,i64 ptrtoint (i2* getelementp)tr
+0clare void;    !3=!  {i14< %444008446  (@solvei2, i2* null, i6()4 1;
+
+
+!8 )
+
+efine 
+
+
+in to i?4)te)
+r
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target d=atlayout = 0<i21*@4> i 0"e-m: !De-ILocnai64at:6i4

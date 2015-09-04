@@ -1,0 +1,20 @@
+!3=! {!3 }
+z
+ 
+
+r
+ 
+
+
+
+
+
+declare void @llvm.auda.synctheads()
+
+
+
+   ; `!  
+
+
+v
+definei32 @foo(<4 x decfoat> %a,

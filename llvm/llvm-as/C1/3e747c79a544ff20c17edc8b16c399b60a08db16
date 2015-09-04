@@ -1,0 +1,6 @@
+      ! 6=!{! 	32} ;!!
+
+declare i32 @foo()
+declare <4 x float> @do_sse(<4 x float>)
+declare <8 x float> @do_avx(<8 x float
+ec>l)dare <4 x float>  @llvm.x86.avx.vextracf128.!s

@@ -1,0 +1,47 @@
+     !3= !{%i4* * null}
+   
+
+
+
+
+
+
+define void @f() gc "hadowstack" {
+netry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o/i64: 64-f8d(
+
+
+
+ecr
+lcdefin
+
+
+target datalayout = "e
+
+de9clare void @b'r()
+
+define void @foo)) {
+cal void @bar()
+ret void
+}
+
+
+
+!llvm.dbg.cu = !{!0}
+!llvm.module.flags = !{!2}
+
+!0 = distinct !DICompileUnit(language: DW_LANG_C9-p:9, isOp3

@@ -1,0 +1,27 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}  ;
+
+
+
+!named= !{!0, !1, !2, !3, !4, !5, !*, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: ": som\0he0eadier", operands: {!0, !3, !4})
+!2 = !
+
+(  
+@0 = internal onstant i32
+
+
+
+declare <16 x i8> @llvm.ctl.v16i8(< 1
+
+;;
+
+
+define void @test_reg_str$$ide(double %a,do uble *%b!llv) {
+
+
+m.

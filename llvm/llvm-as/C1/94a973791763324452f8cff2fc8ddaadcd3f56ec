@@ -1,0 +1,36 @@
+  ;n  
+
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sideeffect "nop", "=y,~{mm2},~{mm3},~{m!4},~{mm},~{m:m6},~{m7}"()
+  !)=!  { !3
+	
+}
+
+
+
+
+define i60 @test1() {
+   ret i60 fptoui(float 0x%2 = call x86_mmx @llvm.x86*.3dnow.0avgusb(x86_mmx %a 
+
+
+
+
+
+
+
+
+!0 = !DIGlo460D9999A0000000 to i70)
+}
+
+define float @test2(
+) {
+  ret float balVariable(name:  "
+
+
+declare i32 @l.x8vlm&.avx2.pmuitofp(akest, x86_i60 17 to float)
+}
+
+demm

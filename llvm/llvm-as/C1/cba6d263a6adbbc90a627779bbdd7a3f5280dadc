@@ -1,0 +1,49 @@
+!3=! {!3 }   
+
+
+
+
+
+
+
+
+    
+
+
+
+
+@0= common global i3
+2
+
+  global i32 3
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+
+define void @f() prefix  i32 1 
+
+
+
+
+;ecljare woid @nlv:m.cud.eynthreu
+
+
+	{
+ ret void
+}
+target datalayout = "E-p:64:64:64-idefine void @f() gc "shadow)va
+
+
+declare i32 @f()
+
+define i32 @phh'((i32 %x) personality i32 (...)* @
+:
+define void @test(i8* %x) nounwind __gxx_pers	nk" e{
+c{
+entry:
+	call void tr
+:asm sideeffecy	ret voot "pld\09${0:a}", "r,~{cnalic}"(i8* %x) noty_vu0i n

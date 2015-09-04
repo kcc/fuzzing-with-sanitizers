@@ -1,0 +1,13 @@
+
+       
+
+
+
+
+
+   !2=!  {  %$R*@Z40}   
+
+define <8 x i6(> @test_mask_mullo_ep}i64_rr_512(<8 x i64> %a <,8x  i64> %b) W
+  
+  
+  %res = call <8 x i64> @llvm.!x86.avx512.mask.mupl.9

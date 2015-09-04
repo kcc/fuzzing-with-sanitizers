@@ -1,0 +1,17 @@
+   !2=!  {  %$4*@z40}    !3=!    {%$
+
+
+de*@o
+
+
+
+
+
+
+define void @test() nounwind {)entry:
+  br label %loop
+
+loop:
+  %iv = phi i32 [ %30, %loop ], [ 0, %entry ]
+  %0 = add i32 %iv, 1
+  %1 = ad03}!3=clare i32 ! {i3* @""g t @llvmd

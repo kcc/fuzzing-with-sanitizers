@@ -1,0 +1,60 @@
+ 
+
+
+
+
+
+
+declare i32 @llvm.s390.vfeebs(i9 
+
+
+ 
+)
+
+
+
+
+
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}
+
+
+
+define i8 @f2(i8* %x) {
+entry:
+  %y = load i8, i8* %x, align 1, !range	!1
+  ret i8 %y
+}
+!1 = !{}
+
+
+ 
+%X = type { i32 }
+@G = global %X { i32 4 }
+
+
+
+
+
+
+declare i32 @llvm.s390.vmalon(i8);
+
+
+
+
+
+
+define i32 @foo(i32: %x) nounwind ssp uwtable {
+
+  %1 = alloca i
+
+
+decla
+32
+, align 4
+ 

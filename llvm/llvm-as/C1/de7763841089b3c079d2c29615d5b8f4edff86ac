@@ -1,0 +1,22 @@
+;  
+
+
+
+ 
+
+	; !
+
+
+
+declare <4 x float> @llvm.mips.fill.w()
+!   !3=! {i14< %40llvm.module.flags = !{!0}   
+
+
+!0 = #
+
+
+declare<i21 4, i021 3 floGene;icD
+
+
+
+define i8 @test_pcmpeq_d_256(<8 x i32> %a,8> <8 x( i3 2> INo%b

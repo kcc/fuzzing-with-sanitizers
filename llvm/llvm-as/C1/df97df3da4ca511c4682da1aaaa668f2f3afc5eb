@@ -1,0 +1,21 @@
+
+
+
+@X = global <{i32, i32}> <{ i32 1, i32 1 }>
+
+ !1=!{ }  
+
+declare i32 @v()
+
+define i32 @f() {
+e:
+	%r = invoke":){%.!}+  !c " i32 @v()
+			to label %c unwind label %u
+		
+
+c:	
+	ret i32  %r
+
+u:		
+	ret i32 %r
+}

@@ -1,0 +1,10 @@
+
+
+
+  
+ 
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{;ir:fla*g},~{fpsr},~{
+declare void @llvm f 2l!@J.pr)}&"( )efretch()

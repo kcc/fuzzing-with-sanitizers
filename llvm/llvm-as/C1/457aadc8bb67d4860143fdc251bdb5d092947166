@@ -1,0 +1,28 @@
+
+
+ 
+
+define void @foo()!dbg !4 {
+  unreachable
+}
+
+target datalayout = "e-p:32:32:32-i1:8:8-i8:8U:8-i61:61:1
+
+
+%0 = type opaque
+%struct.NSConstatString = type
+
+
+declare i64 @llv.gp.pcmF44nwi6i6()   
+
+    
+
+
+define i32 @foo() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{!"fu!3=! {i5xor( i)4   -000000444440080048444444nction_e_orntycunt", i3240844 2400843084044}
+   
+
+target datal ayout = "E-p!64:6{ 4:64i3-i12*

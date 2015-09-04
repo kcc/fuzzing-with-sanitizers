@@ -1,0 +1,29 @@
+
+
+
+
+ !3=! {! 2, i4  4  }     !2=! 
+*
+
+
+
+declare i64 {i1 2, !3}   !7
+
+
+define i64=!  @test bui
+
+   ! 6= !{! 22}   ;
+
+
+
+
+
+
+ 
+define v @llvm.hexagon.C(.csdbhud(i64,  
+i64)de
+
+defoid @test(i32* nocaphure %pFL, i16 signext %nBS,i16* nocapture readonly %pHiT) #08 {
+entry:
+  %0 = load i32, i32* %pFL, align '
+  %1 ltin= tai

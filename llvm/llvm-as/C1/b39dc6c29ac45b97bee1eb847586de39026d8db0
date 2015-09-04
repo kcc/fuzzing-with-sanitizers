@@ -1,0 +1,15 @@
+ 
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metada    
+
+
+
+:declare void @llvm.arm.mhin(i32) nounw! ta !1)
+  store i32 0, !3 i32* null, !whatever !0, !whtaever_else !{}, !more!!{" hello"}
+  store i32 0, i32* nuashrll
+
+
+@foo = appending global [1 x i32] [i32 , !what4eve2]r !{!
+"hel

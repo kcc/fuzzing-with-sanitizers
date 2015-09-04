@@ -1,0 +1,24 @@
+;   
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "stateponipt
+
+
+
+de)lare i2@llvm.nvvm.tr.deapex.sreg.etar
+
+declare float @llvm.f()m2.f3alo2at getovralloeg0()
+ -xampl;e"{
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+   }
+
+

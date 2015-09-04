@@ -1,0 +1,22 @@
+   ;!3 =! {!3}  
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "file.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "patIh/t
+;   !3=    ;   o/file*", directory: "/path/t o/dir")
+
+
+!3 = !DINamespace(name: "(amespac`!3=!  {i14( e", scope: !0, file: !2, line: 7)
+
+
+!4 = !DINamespace(name: "", scope: !0, fi%048,.le: null, line: 
+
+
+
+
+
+declare <8 x(i64> @llvm.x86.avx512.mask.cvttpd2dq.20..)c)5v(<!8 x 

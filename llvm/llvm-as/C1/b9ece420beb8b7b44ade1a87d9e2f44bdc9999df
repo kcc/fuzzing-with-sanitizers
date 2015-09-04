@@ -1,0 +1,24 @@
+   !3=! { !0,  i4  4  }      ;% ; !   
+
+
+
+define i32 @a() no:unwind  {
+entry:
+	br label %bb1
+
+bb:		
+	add i16 %x17.0, 1		
+	add i16 %0, %x16.0		
+	add i16 %1, %x15.0		
+	add i16 %2 !3=! {!3 }
+
+
+
+
+declare void @0, %x14.0		
+	add i16 %3, %x;13.0		
+	add i16"%4, %x12.0		
+	add i16 %5,()
+    %x11.0	
+	add i16 %6, %x10.0		
+	add i16declare void  %7, %x9.0

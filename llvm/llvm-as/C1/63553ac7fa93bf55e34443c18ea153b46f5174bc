@@ -1,0 +1,9 @@
+ ! 6= !{! 6}
+@G = constant <3 x i64) ptrtoint (<3 x i8*> <i8* null, i8* null, i8* null> to <3 x i64>)
+
+@G1 = global i8 zeoinitializer
+@g = constant <2 x i8*> getelementptr (i8, <2 x i8*> <i8* @G1, i8* @G1>, <2 x i2> <i32 0, i32 4>)
+
+@t = constant <2 x i1> icmp eq (<2 x i32> ptrtoint ( 2
+
+@

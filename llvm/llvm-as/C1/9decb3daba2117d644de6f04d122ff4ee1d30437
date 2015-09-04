@@ -1,0 +1,36 @@
+ 
+
+
+ 
+%X = type {i32}
+@G = global %X{  i32 4 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare float @llvm.hexagmn.  
+
+
+;define voi;
+target datalayout = "E-p:6 !3=!  {i9 -444 }
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmaPxsD(<2 x i64>), d
+
+
+
+
+ !3=!0 {  
+%$04:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i644*:6se4x:

@@ -1,0 +1,39 @@
+
+
+ !7=! {!3 
+	
+
+
+
+
+
+
+}
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/todir")
+;2 = !DICompositeType(tag: DW_TAG_structure_type, nme* "Object")
+
+
+
+ !3=!{! 2, i4 4  }    
+
+
+
+;defind private
+
+
+
+define i32 @test_pcmpeq_b_25!3 = !DIObjCretPpoyr(name: "foo", file: !1, line: 7, setter: "setFoo",
+      
+
+
+
+
+   
+
+     
+deala 3eir2 @      ;      getter: "getFllvm.xcoreat0t6

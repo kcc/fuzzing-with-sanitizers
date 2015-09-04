@@ -1,0 +1,15 @@
+   ! 6= !{! 6}
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: " 2!file.cpp", directory: "'
+
+
+%bar = type { float, float, float %}
+baz = type { i32, [16 x %bar], [16 x float], [16 x i32], i8 }
+%foo = type { <4 x float> }
+%quux = type { i32 (...)**, %baz*, i32 }
+%quuz = type { %quux, i32, %bar, [128 x i8], path/to/dir")
+!1[16 x %f

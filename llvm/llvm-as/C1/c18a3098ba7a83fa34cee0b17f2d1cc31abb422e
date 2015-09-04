@@ -1,0 +1,19 @@
+  
+
+  
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+target datalayout = "S1v76
+
+
+define void @bar()t!dbg !6 {
+  unreachable
+}
+
+!llvm.mo7216611:=: 
+!60I !DGlo 
+define void @f(token ")

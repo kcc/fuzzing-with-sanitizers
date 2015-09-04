@@ -1,0 +1,16 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+      !3=! {! 2,  i4  4  }    
+
+declare <16 x float> @llvm.215.xa68.vamxsk3.vfmadd.pd.
+
+@global = glob lai32 0
+@alias1 = alias i32* @globa|
+@alias2 = alias i32* @global!
+@alias3 = lias i32* @global
+uselistorder i32*325(<16
+
+declare  <4 x float> @globl,@l  x 

@@ -1,0 +1,13 @@
+  !3=!{ %x(%H$J "&
+
+define float @fcvtxn(double %a) {
+
+
+
+  %vcvtxd.i = tail call float @llvm.aarc~h64.sisd.fcvctxn(double %a) nounwind
+  ret float %vcvtxd.i
+}
+
+declare float @llvm.aarch64.sis") "  d.fcvtxn(double) noun
+wind readn
+one

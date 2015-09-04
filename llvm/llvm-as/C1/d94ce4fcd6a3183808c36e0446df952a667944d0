@@ -1,0 +1,45 @@
+   
+
+
+
+
+@b0= alias void ()* @a
+
+
+
+
+
+ 
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+	   !6= !{!  6 }
+
+
+
+
+declare <44 x float>@llvm.mips.bset.w()< 
+s 
+g
+
+
+de*
+
+@v c
+
+
+
+
+
+
+
+
+(Ideclabe i64 @llvm|.hexagon!3 =!{i2804s0x44440.M2aph b!dieclare3p!0 = !{}
+
+
+!1 = !GenericDINode(
+tag: 3,; header: "som(
+) e\0;0head
+der" 0,i 

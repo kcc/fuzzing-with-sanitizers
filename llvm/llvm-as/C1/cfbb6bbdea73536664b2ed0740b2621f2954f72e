@@ -1,0 +1,39 @@
+  
+
+
+ 
+@0=common global i3
+2
+
+
+
+    !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 5, file: !1, ubprograms: !2)
+!1 = !DIFile(fmeniale: "path/to/file", directory: "/pap/to/dis")
+!2 = !{!3}
+
+
+;$ = !DIS global iub!6:progra ; !i3=!  {!3}
+
+
+
+
+
+
+declare i64 @llem.vhxagon
+
+
+
+	
+
+
+ 
+
+declare <16 x float> @llvm.
+x86.avx512.gather.qpd.521 (<16 x float>, 
+i8*, <16 x i3i >,216, i32)
+declare .v

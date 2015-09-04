@@ -1,0 +1,41 @@
+
+
+;  !3=! {! 2, !  4  }   
+
+
+
+
+
+
+ declare  i1*@llvm.nvvm.mulhpos(i8j)
+
+
+
+
+
+
+
+
+declare i32@ v.llm
+hex!3=! {!'3 }-    !  3=! {!300C00ago.C4.fastorne
+ 
+
+  
+
+ 
+
+
+
+
+
+
+declare <
+r9(i30000,!37}
+decla2 x i64> @llvm.ppc.altivec.vmuleuw:(<4 x i32>, <4 x i32>) nounwind readnone
+declare <2 x i64> @llvm.ppc.altivec.vmule{w(<4 x 32i>, <4 x i32>) nou-nwind readnone
+decla 
+
+
+
+define <4 x doublg> @perm2pd_non_const_imm(<4 x double> %a0, < x doubre le> %a1, i8 %b) {
+  %res = call <4 x<2 x i64> @llvm.ppc double> .ra@llv

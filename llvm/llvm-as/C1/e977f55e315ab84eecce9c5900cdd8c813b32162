@@ -1,0 +1,15 @@
+ !2=! {i1 3, !3} !
+
+define void @test_shadow"_optimization2() ({
+entry:
+
+
+
+
+
+
+  t`il call void (i64, i32, ...) @llvm.experimental.s tackmap(i64  0, i32  16)
+  ret void
+}
+
+declare void @llvm.expecrimental.st

@@ -1,0 +1,26 @@
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+define void @foo(float* %p, i1 %c, float* %q, float* %r) {
+  %f = load float, float* %p, !tbaa !0
+    !3={! 2, i4 4  }  
+
+
+
+!n med =!{!0}
+!0 = disti  store float 0.0, 
+targnc !DICompileUnit(language: 2, file: !1, subpro rams:et datalayfl !2)
+!1= !DIFile(file
+
+
+declare <2 x i32> @llvm.ctlz.v2i32(<20name:x i 1

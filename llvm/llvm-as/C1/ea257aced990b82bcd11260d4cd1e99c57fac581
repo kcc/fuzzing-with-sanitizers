@@ -1,0 +1,5 @@
+    !3=! { %x(%.4 "` ch
+
+@vf = global <4 x float><foat -1500000e+0, float 2.500000e+00, float -3.500000e+00, float 4.500000e+00>, align 16
+@vd = global <2 x double> <double 3.500000e+00, double -7.500000e+00>, align 16
+@vf_res :)= c $""qo$mmo

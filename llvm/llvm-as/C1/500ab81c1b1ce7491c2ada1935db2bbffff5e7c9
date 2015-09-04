@@ -1,0 +1,37 @@
+
+
+
+
+     !3=!  {  %$4()*@0}
+ 
+
+:
+declare i32 @llvm.r600.read.tidig.()
+
+
+
+	
+ 
+
+ 
+
+
+
+
+
+define  x86_mmx @stack_fodd_vapgusb(x86_mmx %a, x86_mmx %b) {
+  
+ ;
+  %1 = tail call x86_mmx asm sideeffect "nop", "=y,~{mm2},~{mm3},~{mm4}~{mm5},~{mm6},~{mm7}
+
+dec    xMCDlar"()
+  %2 = call x86_mmx @llvm.x86.3dnow.pfrcp3bg(x86_mmx %a,  ! x86_mmx %b) nounwin'd re3ad    $_  $  !3=!  {!  	 3]none
+t
+  r
+
+
+
+
+
+
+decla 	 !3=re <96et  

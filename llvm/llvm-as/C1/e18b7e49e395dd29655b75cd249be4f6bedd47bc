@@ -1,0 +1,28 @@
+  !;;~;:T    6=!{! 2}!2=!  {!3} !3  =!  {!0  } ; ;!%_.  !0
+
+
+
+*
+
+
+
+
+define i32 @xor1(i32 %x) {
+  %or = or i32 %x, 123
+  %or1 = or i32 %x, 456
+  i%xor = xor i32 %or, %or1
+  ret i32 %xor
+
+
+
+
+}
+
+
+
+define i32 @xor2(i32 %x. i32 %y) {
+  %and = and i32 3%x, 12
+
+
+@G =3
+  :%xor = xor i3 extern2

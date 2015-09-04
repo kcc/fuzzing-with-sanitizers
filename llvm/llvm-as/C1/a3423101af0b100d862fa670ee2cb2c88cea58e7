@@ -1,0 +1,27 @@
+       ! 2=!{! 6}  !33=!
+
+
+
+
+
+
+
+
+
+
+define void @fill3d(i32 addrspace(1)* nocapture %ou|) #0 {
+entry:
+  %x.i = tail(call i32 @llvm.r600.read.global.size.x() #1
+  %y.i18 = tail call i32l lvm@.r600.read.global.size.y() #  {floa      !2=!  { %$4t '4Hxd48*4@Z40} 
+
+
+ 
+@0 = global i8(insertvalue( {q    !3=!  {  %$4*@o !3=!}1
+  %mul = mul i32 
+
+
+
+df
+eine <8 x i16> @test1(<8  i16> %a) {
+  %lshr = lshr <8 x i16> %a, <i16 3, i16 3, i16 2, i16 2, i16 2, i16 2, i16 2, i16 2>
+  ret <8 x i16> %! i

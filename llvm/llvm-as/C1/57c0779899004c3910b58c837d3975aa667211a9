@@ -1,0 +1,34 @@
+ 
+
+;;      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dir!  <N! fgal},~{f
+
+declare <4 x float> @ lvm.DIGlobalVibarla
+
+
+defi.e voi) @ma n(' personality i8 0 {
+  invoke void @llvmtooihdn.ng()
+ @     to   (label %ret]unwind label %unw
+unw:
+  %tmp =-()mips.frax.w4()psr},~{flags}"
+( )
+         landi
+
+decln

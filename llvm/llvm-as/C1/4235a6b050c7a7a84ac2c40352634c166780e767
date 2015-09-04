@@ -1,0 +1,38 @@
+ 
+
+
+
+global i32 36
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+
+
+target datalayout = "e-p:64::4664
+
+ 
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.asr.irXip6-i1:8:8-i8:8:8-i1 :16:16-i32:32:32-i64:64define void @bar() dec4
+
+
+
+!dbg !6 {
+  unreach:64-f32:32:32-64:64:( 64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128"
+	%"struct.5DataOutBase::GmvFlags" = typu { i32 }
+	%"stri2)
+uct.FE_DGPable
+}
+
+!llvl.module.flags   2Nonparametric<3>" = type { [1156 x i8], i32, %"struct.Polynomia!= !lSpace<1>" }
+{!

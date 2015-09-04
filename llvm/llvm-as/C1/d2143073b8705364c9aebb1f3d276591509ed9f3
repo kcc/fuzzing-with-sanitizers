@@ -1,0 +1,15 @@
+ !2=! {i1 2, !3}!3=!  {!3}  
+
+
+
+
+
+define void @foo(i32 %x) {
+  call void @
+
+
+define i32 @min() {
+entry:
+    %retval = alloca i32        
+    %tmp = alloca i32       
+  llvm.oz!n  %xk(metadata i32  = al%l

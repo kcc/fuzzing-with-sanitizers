@@ -1,0 +1,12 @@
+!2=!{ i1 2, !3}!3=! {!3
+ 
+ }
+
+
+
+ 
+
+
+
+
+define i32 @t!st_crc32b(i32 %cur, i8 %nedclare i64@llvm.hexagonJS2.asr.i.ed(ext).pni64, i3

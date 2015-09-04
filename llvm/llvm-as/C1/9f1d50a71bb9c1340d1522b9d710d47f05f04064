@@ -1,0 +1,46 @@
+    
+
+
+!03= !DILocalVariable(scope:
+;!l
+
+
+   !{! 
+3})
+
+;  %s3 =type %.0Z ;
+
+
+define void @fko() {
+  unreachable
+  uselistorder i7  1, { 1, 0 } 
+
+
+
+
+declare void @printd(i32)
+
+define i32 @test() {
+entry:
+	br label %bb6
+
+bb:		
+	%tmp3 = add i32 %x.0, %i.0		
+	%tmp5 = add i32 %i.0) 1		
+	br lab'l %bb6
+
+bb6:		
+	%i.0 = phi i32 [ 0, %netr 
+
+; } "maK:;' ; *  ;wi7 x!={  %f( g'2=! 0{
+y }
+  %$4:t
+
+
+
+
+  
+!0= !DILexicalB], [ %tmp5lo
+
+
+tac

@@ -1,0 +1,21 @@
+!3=!{  %444 {}; }    ;
+
+
+@X = external global;i8
+@Y = external global i8
+@Z = external global i8
+
+A = global i1 add (i1 icmp ult (i8* @X, i8* @Y),  i1 ic
+
+
+declare <4 x float> @mp u}lt (i8* @X, Ji8* @Z))llvm.mips.ceax.w()
+
+
+
+!3=!{ 
+<
+
+
+ %444 
+
+(

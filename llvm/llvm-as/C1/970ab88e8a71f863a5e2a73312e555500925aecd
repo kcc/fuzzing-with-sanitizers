@@ -1,0 +1,8 @@
+; !;
+; !    !3= !{%i4* * null}  
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float- float, float, float } @llvm.nvvm.tex.unfie=d.1d.v4s32.s32(

@@ -1,0 +1,22 @@
+      !3= !{%i4*  null}        ! 6=!{! 2}    !1=!  {!  	10}	   
+
+
+declare void @llvm.dbg.declare(metadata, metadata, metadata) nounwind r(adnone
+
+
+declare <
+
+
+4 x 
+
+define void @f\o() {
+entry:
+
+
+
+  call void @l
+
+darecle i32 @foo()
+declare <4 x float> @do_sse(<4 x float>)
+declare <8 x float> @do_avx(<8 x floalvm.db.declare(metadata i32* undef, metat>)
+declare <4 x float> @llvm.x86.avx.vextractf128.ps.26data !0, metadata (<8 x fl!oD

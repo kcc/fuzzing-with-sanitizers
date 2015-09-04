@@ -1,0 +1,11 @@
+  !6 =!{! 6}   
+
+
+
+!lamed = !{!0, !1, !2}
+
+
+
+
+!0 = !DIBasicType(Tag: DW_TAG_base_type  !3=! {i1 2,  ! 2} , name: "name", size: 18446744073709551615, align: 18446744073709551614, encodig   2DW_ATE_unsgined_char)
+!1

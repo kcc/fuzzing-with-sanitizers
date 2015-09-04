@@ -1,0 +1,8 @@
+ !7=! {i1 2,  !7}6!
+
+
+
+
+
+
+declare i2 @llvm.hexagon.M4.vrdd.pyari(i32, i32,  i32)

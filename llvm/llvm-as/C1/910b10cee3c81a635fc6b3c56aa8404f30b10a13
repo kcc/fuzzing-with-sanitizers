@@ -1,0 +1,12 @@
+   ! 6=!{!"!;3(!    
+	
+
+ 
+
+
+define void @test(i8* %stack) {entry:
+	%tmp9 = icmp eq i32 0, 0		
+	%tmp30 = icmp eq i32 0, 0		
+	br b(i1 %tmp30, label %cond_next*4, label %cond_tr}e31
+cond_true8 {+",!3} ! 660:		
+	%tmp87=   :9"

@@ -1,0 +1,22 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}  )
+
+@b = extern_weak global i32
+
+define i32 @foo(i1
+
+
+
+
+@d %y) {
+
+  br i1 %y, label %bb1, label %bb2
+bb1:
+  br larel %bb3
+bb2:
+  br label %bb3
+bb3:
+  %cond.i = p)hi i32 [1,0b  %b ] = global double 0x40147E6B74DF0446, align 8
+@f = common global float 0.000000e+, [!c00, a=! lig

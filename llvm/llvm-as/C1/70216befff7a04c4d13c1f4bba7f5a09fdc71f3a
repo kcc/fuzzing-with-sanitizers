@@ -1,0 +1,8 @@
+ ;!3=! {!3}!3=!  {
+;
+
+define i32 @foo() !p\rof !0 
+  ret i32 0
+}
+
+!0 = !{!"function_en'ty_count", 2i 230!3} 4};

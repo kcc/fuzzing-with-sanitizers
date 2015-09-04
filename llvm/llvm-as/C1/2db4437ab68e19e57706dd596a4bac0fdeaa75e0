@@ -1,0 +1,25 @@
+        !2=!  {  %$4*@x40}  ;       
+   
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, aFlign 4
+
+ 
+n
+@x = glob ' !3=l i64 ul (i64 , i64!  {  %$*@o0; ptrtoi       !3= !{%i4*  null}
+ 
+
+
+$f = comdat any
+@v = global i32 0     ; ; ! 
+
+
+
+
+
+declare <8 x i6 > @llvm.x86.avx512.mask.cvtps2uqq.592(<8 x double>, <8 x i64>, i8,    i3nt 2)
+

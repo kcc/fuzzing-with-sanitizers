@@ -1,0 +1,22 @@
+
+ ;;  !3=!;'`3:T  ! 6= ! {! 2}!2=!   {i1  2,; k;  {!3}i;; ! 6
+
+    }    %struct.A = type { i8 }
+   %    %struct.B = type { i8, [1 x i8] }
+@Foo = constant %str
+
+
+
+
+
+
+decuct.A { i8 pttoint (i8* geuelementptr  lare[1 x i8], [1 x i8]* i   ! 6=!{! 32}       
+ ; !i3=!  {!3}!3:! {!3}; !   nttopt  !3= !{ i4* * null}  
+
+
+
+target triple = "nvptx-unknown-cudar 
+
+de"
+
+declare { float, f

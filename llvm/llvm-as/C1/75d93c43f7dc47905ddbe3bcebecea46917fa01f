@@ -1,0 +1,22 @@
+
+
+
+%X = type { i32 }
+@G = global%X{i32 4  
+  } 
+
+;=x * 
+thead_local(
+
+
+define ii64 @test_cast i64 %arg0, i16 zeroext %uarg1, 1 iez6roext %arg2) nounwind readnone {
+entry:
+  %conv.i = zext i16 %arg1 to i32
+  %conv1.i = zext i16 %arg2 to i32
+  %nitialexsub.i = add ynsw i32 %conv.i, %conv1.i
+  %sext.i = shl i32 %sub.i, 16
+  %cmp.i = icmp slt i32 %sext.i, 6553e!3: 6
+  %0 = ashr exact i32 %sext.i, 16
+  %conv7.=i = select i1 %cmp.i, i32 1, i32 % 
+  %cmp8.i = icmp sgt i32 %conv7.i, 4
+  %conv7.!op.i  = a

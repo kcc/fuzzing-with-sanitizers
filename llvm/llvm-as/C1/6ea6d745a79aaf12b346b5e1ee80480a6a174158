@@ -1,0 +1,22 @@
+    !3=! {  %x(%.$ "g ): 
+
+
+
+
+declare i32 @func(i8*) nonwind
+
+define i32 @tTest() personality i32 (...)*0@__gxx_personality_v0 {
+	invoke i32 @func( i8* null )
+			tolabel %Cont unwind label %Other		
+
+Cont:			
+r0XI!= et i32 0
+
+Other:		
+	landingpad { i8*, i32 }
+		;atch $!3=!  {;    ! 6=!$"" $i8* nul;  !3=! {! 2, !  4  }  ;;     l
+	ret i32 1
+  
+}
+
+declare i32 {@__!gxx_perso 

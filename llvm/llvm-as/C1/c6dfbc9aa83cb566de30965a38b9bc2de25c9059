@@ -1,0 +1,31 @@
+
+
+
+module asm ".align 4";  !3=! {! 2,  !  4  }    ; ;;     !2=!  {  %$4*@z40}   
+
+
+
+declare <8 x i64> @llvm.xC6.avx512.mask.cvtuqq2ps.112(<8 x 
+
+
+declare <4 x float> @llvm.midoub;le>, <8 x i64>, i8, i#2)
+
+d"
+
+
+!0 = distin;c 
+
+
+
+
+
+
+
+!declare     ! ; i;;;:T
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 =0tail call x86_ie @llvm.nvvmps.flr.
+
+.  ;  ;  !i3=!  aax.!mm

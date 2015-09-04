@@ -1,0 +1,11 @@
+  ! 6=! {!"3=# !!s=!   ) %s3 =type %.0    ;!i3=!  {!3}!3=!   {!3)
+
+
+
+declare float @test_f(float %f)
+ declare double @test_d(double %f)
+declare <4 x float> @test_vf(<4 x f  k  {
+declare 4 x f< H4loat> %f)
+declare <2 x double> @tesloat> @llvm.mips.sd.b()
+
+@",!3} $"( ! 

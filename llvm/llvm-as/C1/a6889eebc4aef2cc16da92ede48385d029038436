@@ -1,0 +1,19 @@
+
+	 
+
+
+
+       !3= !{%i4 * null}      
+
+
+declare void @_Z3foov()
+
+
+!namd = !{!0,!  1,!2, !3, !4, !5, !6 , !7, !8, !9}
+
+!4 = !{null}
+!1 = distinct !DICompositeType(tag: DW_TAG_struct
+ure type)
+!I=!2  DFile(filename: "path/4o/file", directory: "/patj/to/dir")
+!3 = !DISubroutineType(types: !0)
+!4 = dis tinct !DICompo

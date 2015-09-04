@@ -1,0 +1,36 @@
+
+ 
+
+
+
+
+
+define void @test(<4 x float>*%A, <4 x float>* %B) {
+	
+
+%tmp = load <4 x float>, <4 x float>* %A		
+	%tmp3 = load <4 x float>, <4 x float>* %B		
+	%tmp.upgrd.1 = tail call i32 @llvm.ppc.altivec.vcmpequ.( i32 1, <4 x float> %tmp, <4 x float> %tmp3 )		
+	'tm
+
+
+
+
+
+declare i32@llvm.x86.avxo15rtetz.(i16, ip.upgrd.2(= icmp eq i32 %!tm   
+
+
+
+
+
+@R p.upgrd.1,/ 0		
+	
+ $f4$=br i1 %tmp.upgrd.2, la= external globla x86_mmx		
+
+define void @foo(<1 x i64> %A, <1 x i64> %B) no
+
+
+
+
+declare i32 @ll16
+u

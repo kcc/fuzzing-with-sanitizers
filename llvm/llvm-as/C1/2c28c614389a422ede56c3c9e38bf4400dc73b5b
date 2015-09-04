@@ -1,0 +1,29 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+
+
+@A = kawe$global i32 54      
+
+
+
+
+
+ 
+;  !3=    30!3= 
+
+
+
+
+
+@llvm_mips_ffint_s_w_ARG1 = global <4 x i32> <i32 0, i32 1, i]32 2, i32 3>, align 16
+@llvm_mips_ffint_s_w_RES  = gl 
+
+
+
+
+
+declare <8 x i64>@llvm8.6.x!vx512.mas
+target datalayout = "e-p:32:obal <4 x float> <float 0.000000e+32:32-i1:8:300, float2 -i80

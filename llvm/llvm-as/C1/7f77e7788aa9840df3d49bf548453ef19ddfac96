@@ -1,0 +1,48 @@
+!3=! { !3}
+"
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+;
+
+
+define void @bar() !dbg !6 {
+  u~reachable
+}
+
+
+
+
+
+
+
+target datalayout = "e-p:32:
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i132:32-i1:8:8-i8:8:8-i16:16:16-i32:3*:32 2,  !3} 
+  
+
+target triple = "nv-
+
+
+
+
+
+declare {i1i64
+!llem.module.flas = !{!0}
+!0 = !{i32 2ptx-unknown-nvcl"
+
+declard *32 @llvm.nvvm.suld.3d.i32.urap(i64, i23)
+
+
+de!fine void @foo(i64 , !"Dbug In%i*g,

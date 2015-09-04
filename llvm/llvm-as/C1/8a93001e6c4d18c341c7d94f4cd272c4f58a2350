@@ -1,0 +1,21 @@
+  !3 =!{< {  %.} !*3g 
+
+
+declare i32 @llvm.r600.read.tidig.()
+
+
+
+	
+ 
+
+ 
+
+
+
+
+
+define x86_mmx @stack_fodd_vapgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sideeffect "nop", "=y,~{mm2},~{mm3},~{mm4},~{!3=
+  : !w3i1=[{mm5 !i}

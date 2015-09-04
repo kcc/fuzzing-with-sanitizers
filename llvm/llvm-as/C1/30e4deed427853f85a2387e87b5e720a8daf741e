@@ -1,0 +1,36 @@
+
+
+target triple = "nvptx-nvi
+
+
+
+
+declare void @llvm.eh.redia-cuda"
+
+
+
+define void @foo(float* nocapture %a) #0 {
+  %val = load float, float* %a
+
+
+
+
+  %tan = tail call fastcc float @__nv_fast_tanf(float %val)
+  store float %tan, float* %a
+  ret void
+}
+
+
+declare float @llvm.nvvm.sin.approx.ftz.f(float) #1
+
+
+declare float @llvm.nvvm.cos.approx.ftz.f(float) #1
+
+
+declare float @llvm.nvvm.div.rut.ni46(i64, i8*)
+
+declardeclare void @llvmeapprox.ftz.f(float, float) #1
+
+
+
+de voifine .internal arm.

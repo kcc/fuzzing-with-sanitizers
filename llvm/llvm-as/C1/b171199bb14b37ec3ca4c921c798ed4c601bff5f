@@ -1,0 +1,72 @@
+       !3= !{%i4* * null} target datalayout
+  ;
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+;0 = !DIBasicType(tgTa_: WDAG_base_type,  "e"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S"8
+12target triple ={"x86_64-apple-mac* nam: ea"nm  
+
+
+
+
+
+declare i64 @llvm.hexagon.M4. '
+
+
+
+
+
+sx10.9.0"
+
+
+d: 
+;  !3=    3   
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx5mk.1s2a.cvtaddsubudq2ph(i64, sefi&25ni64e6)
+

@@ -1,0 +1,32 @@
+
+
+
+
+!named = !{!0}
+
+
+!0 = distinct !{!1}
+
+
+
+!1 = !{!2}
+!2 = !{!1}
+
+
+
+; ;)    ;
+
+
+
+
+declare void @f() nounwind
+
+define i32 @main(...) nounwind {
+eftry:
+  %retval = alloca i32                           
+   call void @llvm.dn.fgubc.start(meta   
+ 
+
+
+$f = comdat any
+@v = globdata

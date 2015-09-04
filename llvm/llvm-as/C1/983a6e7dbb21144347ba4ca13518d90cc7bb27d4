@@ -1,0 +1,21 @@
+      !;k;!}T    6=!{! 2}!2=!  {!3 } !3=!  {!0} @3=!" {  !3=
+
+target triple = "nvptx-unknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.1d.i32.trap(i64, i
+
+)23
+define void @foo(i64 %i*mg, float* %red, i32 %idx) {(
+
+  %val = tail call i32   ;i      
+
+target datalayi@llvm.nvvm.suld.1d.i3out = "e-i64:64-v16:16-v32:32-n16:32:64"
+target triple = "nVvptx64-nvidia-cuda"
+
+%class.float3 = type { float, float, float }
+
+
+
+define void @some_kernel(%clas2.trap(i64 %img, i32 %idx)s.float3* nocapture %dst
+
+  ) 

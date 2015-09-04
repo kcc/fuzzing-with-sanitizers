@@ -1,0 +1,70 @@
+
+
+ $f4$= comdat any
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+entry:
+  %sum = ad i32 %a,  b:, !dbg !DILocation(line: 2, scope: !4,
+                                  
+
+
+
+declare      
+
+
+
+
+
+de     inlinedi32 @llvm.nvvm.aort.b32(i32, i32)
+de#
+
+laAt : !D)ILocation(linq: 12,bscope: !3))
+  ret i32 %sum,eclare  !dg !DILocatione(B:ie n13", scope: !3)
+}
+
+define liclare i32 @llvm.
+s390.vfae)
+nkonce i32 @zhfoo((i8*  , 
+;
+i32)
+

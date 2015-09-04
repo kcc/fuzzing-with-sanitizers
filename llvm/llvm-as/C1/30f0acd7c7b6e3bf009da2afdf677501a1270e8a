@@ -1,0 +1,18 @@
+!3= !{!3}!3 
+   
+ 
+
+
+
+
+
+
+
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+ 
+  %1 = tail call x86_mmx asm sideeffect "noX", "cold(#e=y,~{mm2},~{mm3},~{mm4{}m,~m5})~{mm6},~{mm7}
+
+=   ! 3 d=eclar"()
+  %2 = cal

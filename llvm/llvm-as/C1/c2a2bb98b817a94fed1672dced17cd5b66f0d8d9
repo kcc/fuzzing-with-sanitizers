@@ -1,0 +1,49 @@
+     
+ 
+ 
+
+
+   
+
+
+
+
+
+
+define void @f() gc "h adowstak" {
+netry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:64-f8declcre
+degin
+
+
+target datalcyout = "e-p:32:32:32-i1:8:8
+
+
+declare <4 x float> @llmpmv.is.a
+
+
+
+
+defx.vmw-i8:8:
+
+
+
+
+declare i32 @llvm.sine i32@f1(i32 %a, i32 %b, 
+ 
+i32%c);{390.vmhn
+

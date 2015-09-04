@@ -1,0 +1,54 @@
+ 
+	%union.x = type { i64 }
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, !3=! {!3 };    
+
+
+
+
+
+
+
+
+
+
+declare i32 @llm.vhexagon.A2.*ah(wd)udi 
+
+
+
+
+
+
+
+decla
+ef6
+d
+*ecire i!3=!  {i14< %40<i21 0 alyg
+ 
+n
+4
+
+
+glob':4l i32 3X6 70016
+
+
+
+
+
+@
+
+
+
+
+
+de9lare i8* @ll32 , i021 vm.a
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.znk(meta8>!z!e@lvm.nvvmrea.p  tx.dsreg.data i32 x, i64 0, metadata !1) 
+ s
+enlvrp;egto

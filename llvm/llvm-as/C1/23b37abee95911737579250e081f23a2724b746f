@@ -1,0 +1,53 @@
+ 
+
+define void @foo() !d1g !4 {
+  unreachable
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:e-i646*-f80:128targetdatalayout-n8:16:32:64-S128"
+targe triple = "x86_64-unknown-linu  
+
+
+
+
+declare i32 @llvm.s390.vsumqA (i8)
+
+
+declare 
+x-gnu"
+
+module!3=!  { !0xM0080484400 asm ".globa9l gl4408440obal_asm_sym"
+module asm "global_asm_|ym:"
+module asm "8 
+ %$ c484"loca
+
+sm_as_l
+<4 ym
+ :"
+mod
+ule a c4=

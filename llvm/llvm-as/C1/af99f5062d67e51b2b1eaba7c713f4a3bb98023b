@@ -1,0 +1,51 @@
+      !2=!  {  %44*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align  !3=!  {
+
+i 
+48
+
+@x = g!lob   !3=al i64 mul (i64 3, i64!  {  %$*@o0; 0trtoint 4(i2* wetelem
+
+
+
+
+
+
+declare i32@llvm.hexagon.Sentptr (i2, i2* null, ;:
+
+
+
+
+
+
+declare i32 @llvm.nvvm.d2l9teb(i3, i3  i64 1) ) !c!2.vt684ia()
+
+
+
+
+
+
+
+
+
+
+!0 = !{ i32 1, !"f
+
+
+
+
+
+* 484400 4oo", 
+
+)
+
+
+ i32 37= to i644)) }
+!1
+ = !{ i36

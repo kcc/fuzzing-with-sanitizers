@@ -1,0 +1,72 @@
+ ! 6=!{!"a 3= 
+
+
+
+
+
+
+
+
+
+!named =!!{!0 , !1 {H4",!3}  ! 6=!{!"     w !3=!  { !3!  {4",!3, !6, !3, !4, !5 
+ , !6, !7, !8}
+
+!0 = distinc t !{}
+!1 = !
+
+
+ 
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.vcm4m()
+  
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i {
+  
+ 
+
+
+
+
+ !7=! {
+
+
+
+
+
+
+
+d!3 
+y	
+
+
+!
+
+
+}
+
+
+!named = !{!0, DIBasicTypename: "  
+ 
+
+
+
+declare <4 x float> @llvm.mip!ret 

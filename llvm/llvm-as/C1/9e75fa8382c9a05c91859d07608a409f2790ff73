@@ -1,0 +1,24 @@
+;  !3=! {! 2, !  4  }     !  3=! {!3,!37}!
+ !3=! {'!3 }  
+
+
+
+
+
+defin i3 @test00(i64 %Rs, i64 %Rt) #0;  xfs
+
+
+
+
+
+
+
+  ;  ; 
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIBasicType(name!: "int", size: 32, alig: 32, encod!3=ing:! 

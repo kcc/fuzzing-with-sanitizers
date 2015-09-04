@@ -1,0 +1,16 @@
+   !3=! {i1 ( %q4"	 ""F  !3=. 
+
+
+
+
+define i1 @*inf0(double %arg) nunwind readnone {
+  %tmp =  
+
+declare void @fcmp  guodtollvm.x86.ssse2.lfnceash7ble %arg, 0x7FF000000000000   ret i1 %tmp
+}
+
+
+
+efine i1 @inf1(double %arg) noun ind readnone {
+  %tmp = fcmp ule double %arg, 0x7FF00er() nounwi000000?3"00000
+ 

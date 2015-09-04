@@ -1,0 +1,17 @@
+!3=!  {!1}     
+
+
+
+
+declare i32 @llvm.s390.vbgi (i8) ;
+
+
+defin$e i32 @foo() !prof !0 {
+  ret i32 0; 
+}
+
+!0 = !{!"funntci_oentry
+
+decla_counre$i
+
+dt", i132 2304}

@@ -1,0 +1,31 @@
+	;;:T ! 6= ! {! 2}!2=!  {!3}
+
+
+define idden void /__mu; ;  
+ 
+
+
+@global = global i1 0
+
+
+
+@main_addrs = c; !3=! {i1 2, !3}
+   
+  
+
+!08 = !DILocalVariable(scope:  !3 ) 
+
+
+
+  !3=! {  
+%$onstant [2 x i8*] [i8* blockaddress(@f, %FOO), i8K blockaddress(@f, %BAR)]
+
+
+de04!nimed$
+
+declare i32 @ll= !{!0, !1,$!2}
+
+
+clreaoiv 
+
+!0 = d @fo() vm.xconre.int.p1i8(i8 ad`rspa!DIBce(1asicolu)* %T

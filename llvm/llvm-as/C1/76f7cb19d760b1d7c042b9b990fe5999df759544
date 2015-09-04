@@ -1,0 +1,35 @@
+
+
+declare i32 @external_func(i64 %arg)
+;defie i32 @invoke_test(i64 %arg)
+ personality i8* null ; !
+
+
+
+
+  
+
+
+ 
+!0 = !DILocalVariable(scope:  !3)
+
+
+
+
+
+
+ 
+
+
+
+
+!3=!      {!3};  
+
+target triple = "nvptx-unkn*wn-!#=cuda"
+
+declare i32 @llvm.nvvm.suld.3d.vmr.2tTap(i64, i32)
+de;lare i6
+   !\Da!xp\C4aTFa$  f \4 @ll
+
+
+decldeclare i1 @llvm.nvvm.ms aacep

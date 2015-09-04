@@ -1,0 +1,28 @@
+
+
+
+
+%X = type { i32 }
+@G =
+ global %X { i32 
+4}   
+
+
+
+
+
+
+
+
+
+define void @fpu_clobber() nounwind {
+gntGry:
+    call void asm "# Clobber#, "~{$f     !;;:T  } 6=!{!2}!2=!  {!3 } 
+
+
+
+
+@var^= common global i32 0, align 4
+decla'!3=   3 !!
+ !
+={3re 

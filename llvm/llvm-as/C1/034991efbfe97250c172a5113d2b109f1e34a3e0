@@ -1,0 +1,22 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+J
+
+  
+
+
+
+declare i32 @llvm.s390.vagn(i8) 
+
+target datalayout =
+ "e-i6;4:64-v16
+:16-v32:3
+
+
+declare x8_fastcallcc i64 @calle
+
+
+!0 = !e(i64 inreg)
+
+def{i32 3, "foo", ine i!

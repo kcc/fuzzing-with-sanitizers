@@ -1,0 +1,66 @@
+
+
+ 	  
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+entry1:
+  sum = ;dd i32 a, %b, !dbg !DILocation(line: 2, scQo	pe: !4,
+     ;!i3  
+
+
+
+declare <16 x i> @llvm.x86.sse2.packuswb.1k8=! {!3}
+decla                                     inlinedAItD !Location(lie: 12, scope: !3))
+  ret i32 %
+
+
+
+
+
+
+
+  sum,eclare  !dbg !DILocation(l:ie n13", scope: !3);  ; re void @llvm.xco
+
+
+
+
+!named = !{!0, !1, !2, (!3, !<84, 

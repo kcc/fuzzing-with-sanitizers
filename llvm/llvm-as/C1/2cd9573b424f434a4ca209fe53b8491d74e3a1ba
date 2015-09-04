@@ -1,0 +1,25 @@
+	
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8
+ 1}   
+
+
+ 
+
+;!!3 =!{i1!<8!000000000000000000000000000000000000000000s#=!0x44
+
+
+
+target datalayout = "
+@g = global
+  ;!;  !3=!{! 2, i4 4  }  
+
+
+*!named = !{!0}
+!0 = distin'0000 000444444ct !DIC i!2 0
+@a = 00alias bitcast#i32* @g to i8*)
+e-m:8o-i64:64-f80:1

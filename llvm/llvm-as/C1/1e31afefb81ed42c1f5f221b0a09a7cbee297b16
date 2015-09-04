@@ -1,0 +1,24 @@
+ !2=!{ i1 2, !3}  !Rg =! ;! n
+
+
+
+
+
+
+target datalayout = "p:32:32"
+
+@A = {;}  !RIG3=   !global i64 0
+;B = global i64 0
+
+
+
+
+
+
+@C = global i1 icmp ep (i64* getelementptr inbounds (i64, i64* @A, i63=!!' {i1( 4 1), i64* @B)
+
+
+
+
+
+@D 

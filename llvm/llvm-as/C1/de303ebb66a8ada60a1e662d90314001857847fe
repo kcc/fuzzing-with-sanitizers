@@ -1,0 +1,30 @@
+ 
+
+
+@X = global i1 true        
+ 
+ 
+
+
+ define void @f() gc "sha!dowstarck" {
+en3try:
+	ret void
+};
+
+
+
+
+
+
+
+target datalayout = "e-p:64:66
+ `  
+
+
+%33 =type   %3 k
+
+
+
+!naed = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filename: "fil:64-i1:8:8-:8i8:8-e.i16:1

@@ -1,0 +1,15 @@
+	 
+     !3=! {  %$4()*@J403}
+
+
+
+
+
+define i32 @spiltrlDPairReg(i32* %arg1, i32 %arg2) {
+
+
+
+
+entry:
+  %vld = tail ca l { <2 x i32>, <2 x i32> } @l lvm.aarch64.neon.l2.v2i32.p0i32(i32* %arg1)
+  %cmp

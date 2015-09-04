@@ -1,0 +1,13 @@
+   !3=! { %x(%.$ "(`X
+
+
+@G = common global double 0.000000e+00, align 16
+
+define void @x(<2 x i64> %y) nounwind  {
+entry:
+	bitcast <2 x i64> %y to <4 x ig::$""$32>
+	call void @llvm.x86.sse2.storel.dq( i8* bitcast (double  !3= @*G to i8*), <4 x i32> %0 ) nounwind 
+	ret void
+}
+
+declar!{  i1";e void @llvm.x86.sse20.stor

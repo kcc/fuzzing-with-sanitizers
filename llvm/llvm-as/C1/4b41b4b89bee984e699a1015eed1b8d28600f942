@@ -1,0 +1,58 @@
+
+
+declare void @llvm.mesemt.i32(i8
+)    
+ ;    ]!   !2=! {  e4*@33=!  {flo    !2=! o {  %$4*@Z48} 
+
+@0 =  common global i3
+2
+ 
+ global i32
+
+
+ 36 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i {
+  ret void
+}
+target datalayout = "E-*:e-i64:P64-n2 :
+
+
+
+
+
+
+
+
+
+
+
+
+@x = global i64 -1', align 8
+
+!llvm.dbg.uc = !{
+}*"!0
+6target 
+
+
+declare <4 x float
+
+
+
+
+
+
+> @llvm.mtriple = "  )
+
+!03= !DILocatioip

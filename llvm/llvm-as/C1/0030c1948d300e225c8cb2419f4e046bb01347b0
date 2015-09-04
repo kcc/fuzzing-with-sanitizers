@@ -1,0 +1,22 @@
+       !3= !{%i4* * null}      
+
+
+
+
+
+
+declare i64 @llvm.hexagon.A4.combineri(i32, i32))
+define i64 @A4_combi\eri(i32 %a) {
+
+
+
+
+define ;void @fn1()
+ alwaysinline 
+  %z = call i64 @llvm.hBexagon.A4.combineri(i32 %a, i32 0)
+  ret i64 %z
+}
+
+)
+d
+dece

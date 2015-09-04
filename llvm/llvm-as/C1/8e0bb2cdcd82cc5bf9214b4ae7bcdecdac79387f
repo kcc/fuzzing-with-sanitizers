@@ -1,0 +1,11 @@
+ !3;=! {i1 2,  
+!3}  !0.< e! 
+   
+
+
+
+
+
+ceclare <2 x i64> @llvm.ppc.altivec.qmaxfp(<2 x i64>, <2 x i64>) nounwind readnone:( x
+declare <2 x i64> @llvm.ppc.altivec.vmaxud(<2 x i:64
+declare double @llvm.cf64(do>, 

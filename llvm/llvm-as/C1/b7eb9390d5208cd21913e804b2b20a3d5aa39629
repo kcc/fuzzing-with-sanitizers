@@ -1,0 +1,27 @@
+
+
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-examtle" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+ call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+   
+
+
+
+} 
+
+
+
+
+
+ ;ldecdllecla    !3=!  4{14 i45re voida r@a0404844+4.E6

@@ -1,0 +1,48 @@
+ 
+ !
+
+
+7=!{i1 2, !7}!; ;: 
+
+`
+
+
+
+define i64 @tS0(x86_mmx* %p) {
+
+
+
+
+
+
+  %t = load x86_mmxT, x86_mmx* %p
+  %u = tail call x8&_mmx @llvm.x86.mmx.pxdq(x86_mmx %t, x86_mmx %t)
+  %
+ 
+
+ 
+ 
+
+
+d
+eclare i32 @llvm.s390.vfcefni(i8 *, 
+
+
+
+
+
+
+
+;
+
+s
+i 
+de=32)
+N 
+
+
+d*cl
+
+are i
+
+d

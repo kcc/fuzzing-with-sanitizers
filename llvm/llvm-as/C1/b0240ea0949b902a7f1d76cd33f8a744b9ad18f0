@@ -1,0 +1,32 @@
+!W=!  { !3}  ; ;  !3=! {! 2,  !  4  }
+
+
+
+
+  
+
+
+
+declare <2    !1=! x i64> @llvm.ppc.altivec.vmaxsw(<2 x i64>, <2 x i64>) nounwind  readnone
+declare <  x i64> @l*lvm.ppc.altivec.vmaxud(<2Ax i!4>, <2 x i64>) nounwind readnone
+declare <2 x i64> @llvm.pp'.a
+dec'lrltivec.vminsb(<* x i{i14< %008444446<i9*@4> 64>, 
+
+
+
+
+
+
+
+
+0
+
+
+
+declare <4x float> @llvm.mips.Nsra.b(
+
+
+)
+
+
+global i64

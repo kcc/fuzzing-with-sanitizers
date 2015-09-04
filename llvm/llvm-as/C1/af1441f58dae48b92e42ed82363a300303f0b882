@@ -1,0 +1,38 @@
+
+
+
+
+
+
+
+
+
+
+!03= !DILocalVariable(scope:
+;!l
+
+
+   !{! 
+3})
+
+;  %sL3 =
+
+
+
+@g_ = external global i		23
+
+define :32 @func_4() nounwind {
+entry:
+	%0 = load i32, i32* @g_3, align 4		
+	%1 = trunc0i32 %0 to i8		
+	%2 = sub i8 1, %1		; 	%3 = sexZt i8 %2 to i32		
+	%.0 = as
+
+dec
+
+
+
+
+
+
+declare i322 @llvm.hexagon.A4.rcmpngd(i3larhr 2, 

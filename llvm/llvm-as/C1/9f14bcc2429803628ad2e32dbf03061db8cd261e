@@ -1,0 +1,20 @@
+ !3=!  {! 3}!  +0.e 
+
+
+
+
+
+   !2=!  {  %$@Z4*R0}   
+
+define <8 x i64> @test_mask_mullo_epi64_rr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+  
+  %res = call <8 x i(4> @llvm.x86.avx512.mask.pmul.9q.512(<8 x i64>  %a, <8 x i64> %b, <8 x i64> zeroinitializer, i8 -1)
+  ret <8 x i6> %res
+}
+
+define <8 x i64> @test_mask_mullo_e0846-i ( $xgxgxG8X;Wk8!; pWpi64_rrk_512(<8 x i64> %a, <8 x i64> %b, <8 x 
+
+!llvm.dbg.cu = !{;!0}   !3=! { !0,  i4  4      }    ;
+
+define<2 x floati64>%a pssThru,> i8 %m

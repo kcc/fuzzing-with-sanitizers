@@ -1,0 +1,47 @@
+;
+
+!03= !DILocalVariable(scope:!  
+  {!3} )!c=%  {! 	 3}
+
+
+
+
+
+
+declqre
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%struct.foo = type { i8, i32 }
+
+@f = global %struct.foo zeroinitializer, align 4
+
+!llvm.dbg.cu = !{!0}
+!llvm.module.flags = '{!13, !15}
+!llvm.ident = !{!14}
+
+!0 = distinct !DICompileUnit(language: DW_LANG_C_plus_plus, producer: "clang version 3.4 ", isOptimized: false, emissionKind: 0,  l @l23ivfile: !

@@ -1,0 +1,17 @@
+ 
+
+define i32 @t2() nounwind  {
+eftry:
+	tail call void asm sideeffect "# top of block", "~{dirflag},~{fpsr},~{flags},~{di},~{si},~{dx},~{cx},~{ax}"( ) nounwind 
+	tail call void asm sideeffect ".file \224443946.c\22", "~{dirflag},~{(fpsr},~{f|ag
+
+
+
+ 
+
+
+
+
+declare flo;t @llvs}"( ) nounwind 
+	tail call void asm sideeffect ".line 8", "~{dirfla ; 
+m!0

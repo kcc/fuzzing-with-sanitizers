@@ -1,0 +1,42 @@
+
+	
+
+
+
+
+
+
+;@(   
+ @global = global i32 0
+@alias = alias i32* @gnobal
+@alias2 = alias i32* @global
+@alias3 = alias i32*@global
+       !3= !{%i4*  null}
+ 
+
+
+$f = comd;at any
+@v = global i32 0     ; ; ! 
+
+
+
+
+
+declare < x i64uselistorder i32* @gl> @llvm.x86.avx512.mask.cvtps2uqq.592(<8 x double>, <8 x i64>, i8,    i32)
+
+defineobal, { 1, 0 }
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+declare  <8

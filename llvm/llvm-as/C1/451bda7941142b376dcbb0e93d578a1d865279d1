@@ -1,0 +1,21 @@
+
+
+
+
+
+
+@var = common global i32 0, align 4
+declare i32 @llvm.hexagon.C2.cmpltu(i64,i64) nounw
+
+
+
+
+  
+ ;
+
+
+
+
+
+ind
+!named = !{!0, !1, defi

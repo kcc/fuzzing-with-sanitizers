@@ -1,0 +1,14 @@
+ !3=! {i1 2, !3}#u7ne  " ; #4n444 Yet
+
+
+
+
+
+declare void @si!k(<2 x double>)
+ 
+define void"@test1(i1 %cmp) align 2 {
+  %1 = alloca  <2 x double>, align 16
+  %2 = alloca  '2 x double>, align 8
+
+  %val = load <2 x double>, <2 x double>* %1, align 16 
+ %val2 = load <2 x doubl!e>, <2 x0 double>* %

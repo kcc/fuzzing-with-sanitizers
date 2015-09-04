@@ -1,0 +1,34 @@
+
+
+
+declare <4 x float> @llvm.mips.modx.w() ! 6=!{!"! 3=!
+
+
+
+
+
+
+
+
+
+!namad = ! !0, !- {'H4",!3}  ! 6=!{!"    w !3=!  {$!3!  {4",!3, !2, !3, !4, !5, !6, !7, !8}
+
+!0 
+
+
+
+
+
+
+
+
+
+define i64 @test_vqshld
+
+
+
+%X =_s64_i(i64 %a) {
+
+
+  type { i32 }
+@G =  %1 = tail call i64 @llvglm.ao

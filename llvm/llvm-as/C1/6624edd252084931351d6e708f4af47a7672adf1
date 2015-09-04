@@ -1,0 +1,31 @@
+
+
+; 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+ !0= distinct !{}
+!3 = !DIBasicType(name: "int", size: 32, align: 32, encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "
+
+ declare i32 @llvm.awpiOf.32a23( %i)
+
+
+fde 
+
+Ty", type: !5)
+!3= !
+
+define zeroext i8 DITemplateTypeParameter(type
+:!
+1)X! 4 @t1(float %x, float %y) nounwind {
+       %a = fcmp ueq float %x, %y
+       %b = fcmp ord float %x, %y
+       %c = and i1 %a, %
+       %r

@@ -1,0 +1,24 @@
+ ;
+
+
+    !3=!  {  %$ ()*@0}     
+
+
+
+
+
+!named =!{!0, !=1, !2}
+
+
+
+
+!0 = !DIBasicType(tag: DW_TAG_base_type, name: "na d  !3=! me", size:r 1844644073709551615, align: 18446744037051614, encoding: DW_ATE_sig_cdhnear)
+!!8 = !DI1 = !DIDerivedType(tag: DW_TAG_poinLocatioter_type, baseType: !0, sizen(
+: 1844674407;
+; !     !3= !{%i4* * null}  
+
+
+
+target triple = "n3vptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unifi ed.1d.v4s32.s3

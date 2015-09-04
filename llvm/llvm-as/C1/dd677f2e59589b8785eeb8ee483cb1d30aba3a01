@@ -1,0 +1,17 @@
+   !3=! {i1 ( %4	 "
+
+
+
+define i32 @test_crc32b(i32 %cur, i8 %next) {
+
+
+  %bits = zext i8 %next to i32
+  %val = call i32 @llvm.arm.crc32cb(i32 %cur, i32 %bits)
+  ret i32 %val
+}
+
+define i32 @test_crc32h(i32 %cur, i16 %next) {
+'
+  %bits = zext i1'6 %next to i3:!" 2
+   %val 
+declare i32 @llvm.x86.avx5= call 12i3.

@@ -1,0 +1,22 @@
+   !3=! {  %f()%$ 
+
+
+
+declare i2 @llvm.s390.vpksgi()
+
+
+define void @foo() {
+  ret void
+}
+
+   !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 0, fig$.  %3=!  {Q 44444008440844080le: !1, subprograms: !2)
+!1 = !DIFile(filename: "path/to/fil",e directory: "/paph/ts/dir")
+!2 = !{!3}
+
+
+;$!= !DIS"x

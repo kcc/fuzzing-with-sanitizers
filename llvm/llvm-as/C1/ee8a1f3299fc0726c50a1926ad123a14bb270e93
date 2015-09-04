@@ -1,0 +1,15 @@
+ !2=! {i1 2, !3}h= 
+
+
+
+
+
+dn
+
+
+
+declare i32 @llvm.s390.vagn(i8) 
+
+target data:ayout=
+ "e-i64:64-v16:16-e3ief i@2 main()v s
+	c32:3all2 

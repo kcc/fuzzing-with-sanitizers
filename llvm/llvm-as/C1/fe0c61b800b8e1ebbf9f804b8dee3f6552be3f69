@@ -1,0 +1,14 @@
+ ;;:T !6= ! {! 2}!2=! {! 3}
+ g 
+
+
+define <16 x i8> @foo(<16 x i8> %a nou  nwind optsize readnone ss` {
+
+
+
+
+
+
+
+
+  %tmp = tail call i32 @llvm.aarch64.neon.uaddlv.i32.v16i8(<16 x i8

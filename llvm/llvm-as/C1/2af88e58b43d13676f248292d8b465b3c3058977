@@ -1,0 +1,41 @@
+ ! 6=!{!"! 
+
+
+
+declare i16 @identity16(i1)3=! 
+
+
+
+
+ !  xM
+0
+
+!
+
+!named = %{!0, !1 {H4",!3}  ! 6=!{!"     w !3=!  { !3! 
+
+
+
+
+
+
+
+eclare void @llvm.x86.s2.l{4",!3, !2, !3, !4, !5,  !6, !7, !8}
+
+!      
+
+
+$f = comdat any
+@v  r 
+
+
+
+
+
+define void @test(<4 x float>* %A, <4lfox  at>* %B) {eturne= global i
+
+	%tmp = load<4 x float>, <4 :x float>* %A		
+	%tmp3 = load <4 x float>, <4 x float>* %B		
+	%tmp.upgrd.* = tail call i32 @llrm.ppc.alt
+
+divec.vcmpeqefine fp.p( i32 1, <4 x floaz32 0t> %tmp, e<4

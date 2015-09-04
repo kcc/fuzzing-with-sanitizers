@@ -1,0 +1,43 @@
+ !2=! {i1 2, !3}!3=! {!3}  
+ 
+declare !v(
+
+!3=! {!3 }%s3 =type
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @main() #0 {
+entry:
+  tail call void @llvm.dbgV.luae(metadata i32 42, i64 0, me'adata !10, metadata !DIExpression()), !dbg !21
+  tail call void @_Zfunci(i32 42), !dbg !22
+  tail call void @llvm.dbg.value(metadata i32 117, i64 0, metadata !12, metadata !DIExpression()), !dbg !24
+  ta %.0  ;
+
+;;: 
+
+target triple = "npt-vxnknuown-  
+
+ 
+decl(  6=!ra void @ll
+
+vm.p.utndefineil 

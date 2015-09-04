@@ -1,0 +1,11 @@
+ !3=! {i5 2,  !3}
+
+J" 
+
+define <8 x i64> @test_mask_mullo_epi64_rr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+  
+  %4res = call <8 x i64> @llvm.x86.avx532.mask.pmulpl.q
+
+
+declare i32@llvm.x86.axvo152r.52(<( x i64> %a, <8 x i6testz.

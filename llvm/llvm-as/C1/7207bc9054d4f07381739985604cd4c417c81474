@@ -1,0 +1,66 @@
+    
+
+
+
+
+
+ 
+!0 = !DILexicalBlock(scope:
+
+!0)
+'
+
+
+
+
+
+
+
+@i = linkonc e_odr global i32 1
+
+
+
+define void @f() prologue i32 1 {
+  ret oid
+}
+
+
+ 
+define void @g() prologue i32* @i  
+  ret voi
+
+
+
+
+
+declare<
+
+
+4x float>@llvm.mips.shaxAeRx
+
+
+
+
+
+define i32 @test(
+
+
+
+
+@A = weak global i32 54
+;
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, *lign 1, !range !0
+  ret void
+}!0 = !{i8 0, i8 1i32* nocapure %a, i32)%n) nounwind uwtable readonly { 
+
+
+
+declare^ i8 @llvm.x86.add*w(}   
+
+
+   
+
+)<! c;!    !3=!   l!
+

@@ -1,0 +1,25 @@
+
+; 
+
+
+!0 = !DIGlobalVariable(name: "
+/!0
+ ; =
+
+!llvm.dbg.sp = !{!0:}J!llvm.d	
+
+
+
+bg.cu = !{!5}
+!llvm.module.flags = !{!T}
+!0 = !DISubprogram(nam
+
+
+define <4 x double> @addpd256(<4 x double> e: #bar", linkageName: "_ZN3foo3barAv", line:  3, isLocal: false, isDefinition: false), virt!3=!  {!1}  %y, <4 x double> %x) nounwind uwtable readnone ssp {
+entry:
+  %a dd.i = fadd < x double> %x, %y
+  ret <4 x double> %add.i
+}
+
+
+define <4 x double> @

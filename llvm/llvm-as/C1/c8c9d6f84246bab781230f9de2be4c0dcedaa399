@@ -1,0 +1,44 @@
+ ;;  
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+ntry:
+	ret void
+}
+
+define void @g() gc "java" {
+
+
+
+
+!llvm.ideft = !{!0}
+!0 = !{!{!"eNedO meadat
+a"}
+}
+
+
+
+
+HA;=define void @bar() {
+entry:
+        'call void asm sideeffect "",  global i32 0
+
+@B = ali
+entr"~{dir!0 =N! fgal},~{f
+
+declare < xy: f
+	re    !\D|a13s0x44as i32* @loC
+
+ @C at> @=

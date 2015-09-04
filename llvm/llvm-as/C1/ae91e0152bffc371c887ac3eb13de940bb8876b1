@@ -1,0 +1,30 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%un.niox* @r to i64) }, align 4
+
+ 
+
+
+
+;;
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = :tail call$x86_mmx asm sideeffect "$$op", "=y,~{mm2}~{mm3},~{mm4},~{mm5},~{mm6},~{mm7}"()
+  %2 = call x86_mmx @ll@x o lg=b 
+
+
+*
+
+
+
+
+
+!0 = !   !3=al    !3=!  {i1 s0x444 i64 vm.x86.3dnow.pavgusbb(x86_mmx %a, x86_mmx %b) nounwin raednone
+  ret x86_mmul (i6mx %

@@ -1,0 +1,14 @@
+ !2=! {i1 2, !3}!3=!  {!3} 
+
+
+define void @foo(i32 %x) {
+  call void @llvm.uzonk(metadata i32 %x, i64 0, met  
+
+atdaa !1)
+  tore i32
+
+
+ 0,
+declare i32 @llvm.hnvvmer.d.Xptxdeclar.sreg.enrr i3
+
+definee void @g02()

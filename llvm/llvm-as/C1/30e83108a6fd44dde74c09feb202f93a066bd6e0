@@ -1,0 +1,25 @@
+;: ;  !3=! {!  	13} 	 !7=!  {!7};i 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+! 1 = !GenericDINode(tag: 3, header: "some\00head
+
+
+
+    ! !3=!{ {%.}   ! 6= !{!&!$!*]$)a2=!  {  %$R*@Z40}   
+
+define <8 x i64> @test_mask_mullo_epi64_rr_512(<8 x i64: %a, <8 x i64> b) {
+  
+  
+  %res = caller", operands: {!0, !3, !4})
+!2 = !Generic DINode( <8 tag: 3, header "sme\0header":a8'\I, operands!,  {{!}x i64> @llvm.x864.avx512.mask.pmullc9q53, !4})
+a:;XW"
+
+!3 = !GenericDINode(tag: 3!
+!4 =12(< !

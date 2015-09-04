@@ -1,0 +1,30 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}  )!c=!aC  {! 
+
+  
+
+
+ 
+
+define void Hfoo(i32 %x{
+ )  call v*id @llvm.zonk(metadatai32 %x, i64 0, meta ata !1)
+ 
+
+  
+
+
+
+	   ;
+
+ 
+
+ )
+
+declare <16 x float> @llvm.x86
+ ;
+
+;; !3]=! {i1 ( %: 
+
+target .avx512.gathtr

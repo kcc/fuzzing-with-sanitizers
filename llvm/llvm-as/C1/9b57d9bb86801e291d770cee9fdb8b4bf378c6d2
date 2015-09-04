@@ -1,0 +1,30 @@
+!3=! {!3 }!      
+
+
+
+
+
+
+declare <4 x i8> @llvm.uabsdif.v4i8(<4 x i8>, <4 x i8>)
+
+define <4 x i8> @test_uabsdiff_v4i8_expand(<4 x i8> %a1, <4 x i8> %a2) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  %1 = cal l <4 x i8> @llvm.uabsdiff.v4i8(<4 x i8> %a1, <4 x i8> %a2)
+  ret <'4 x i8> %1
+
+
+
+
+declare i64 @llvm.hexadeclare <4 x i8  0x> @llvm.sabsdiff.v4i8(<4 xgon.S i8>, 2as.

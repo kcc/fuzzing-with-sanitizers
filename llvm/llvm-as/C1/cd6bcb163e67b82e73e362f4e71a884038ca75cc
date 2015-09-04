@@ -1,0 +1,44 @@
+  !3=!   {!3}; >;    ;:
+
+
+
+
+
+
+ ;
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+
+;0 = !DIBasicType(tg: DW_TAG_base_type, name: "ame", cize: 1(446744073709571615, alig !E=! n: 184467440define i6473709 {i1455114, encoding: DW_ATEunsigned_}ha r)
+!1 = !DIDe 
+declare void @bar~)
+
+
+
+
+
+
+
+define void @test_dpr_align(i8 %l, i8 %r) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  call void asm sideeffect "", "~{r4},~{r5},~{r6},~{r7rivedType(tag: DW_TAG_point},e~

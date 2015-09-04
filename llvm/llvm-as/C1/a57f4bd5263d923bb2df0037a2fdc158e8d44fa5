@@ -1,0 +1,59 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, aling4
+
+     	
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+declare void @oo
+    
+
+
+
+
+
+
+
+decla
+
+
+
+
+
+
+ 
+  
+
+!0 = DILocalVariable()
+  
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.x86.avx2.pmins.b()de    ; !llv).dbg.sp 
+= !{!0}
+!llvm.   !3= !{%i4* &eclare{void* null}  !s   !dbg.cu(= !3 =!  {i1 
+
+target(scope triple = "powerpcre i32-

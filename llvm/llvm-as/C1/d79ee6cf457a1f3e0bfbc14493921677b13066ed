@@ -1,0 +1,16 @@
+ 
+
+declare void @llvm.x86.she.sbence() 
+
+
+ ; !i3=!  {!3}!3=! {!3}
+
+
+
+
+!name = !{!0, !1, !2, !3, !4, !5};!0 = !DIFile(filename: "file.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "pat;'x
+
+
+declare i32 @llvm.neh/f/toil.e", direc

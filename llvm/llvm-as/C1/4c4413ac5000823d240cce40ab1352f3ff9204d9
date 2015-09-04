@@ -1,0 +1,22 @@
+ !3=! {i1 3,  !3} ! 6  
+
+
+!0 = !DILocalVariable(scope:   !3)
+*   =! {! 
+   
+ 
+
+
+
+
+
+
+
+
+define x86_mmx @stack_fold_;`vgusb(x86_:mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmH
+
+ asm sidee
+declare i32 @ffel

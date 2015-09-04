@@ -1,0 +1,49 @@
+!3=!{  %444 {}; }        ;   !3=! {i 
+
+
+
+
+target dtalayo= ut e-p:64:64:64-)1^:8:8-i8:8:-i16:16:1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @_Z4topA2EA(i32 %sa) #0
+
+
+
+
+
+
+
+
+declare 
+
+
+i320 {
+'e  t:r
+yn%sa.addr = qlloc6a2i3 -i32:314,<2 align 4
+  store i32 %sa, i32* %sa.addr, align 4
+  call viod @llvm.dbg.declare(metadata i32* %sa.addr, metadata !22, metadata !DIExpression()), !dbg !23
+  ret void, !dbg !24
+}
+
+@

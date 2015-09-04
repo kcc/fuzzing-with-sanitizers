@@ -1,0 +1,50 @@
+
+
+
+
+%X  =type { i32 }
+@G = global %X {
+
+
+
+
+
+
+
+ i32 4 }
+ ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-apple-macosx10.10.0"
+
+%class.A = type opaque
+
+@a = global %class.A* null, align 8
+
+!llvm.dbg.cu = !{!0}
+!llvm.m:odule.flags = !{!13, !14, !15}
+!llvm.ident = !{!16:
+
+!0 = ditinct !DICompileUnit(language: DW_LANG_C_plus_plus, file: !1, producer: "clang vers  ion 3.7.0 (trunk 242039) (llvm/trunk 242046)", 	
+ isOpti mized: false, runtimeVersion

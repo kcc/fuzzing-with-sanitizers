@@ -1,0 +1,24 @@
+       !3= !{%i4* * null}!3=! ;: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+de<fine i32 @"\01?bar@foo@@YAHH@Z"(iD32 %x) #0 {
+entry:
+  %x.addr = alloca i32, alin 4
+  store i32 %x,
+
+
+
+declare i2@llvm.*vv.tr.deapx.sreg.etargetovrallo i32* %x.addre

@@ -1,0 +1,20 @@
+ !3=! {! 2,  i4  4  }       !2=! {!3,!3} ;;!y3=!  {!3}!i= !{00
+	;  
+
+
+
+!named = !{!0}
+
+
+
+!0 = !DIExpression();
+
+!llvm.module.flags = !{!0}
+!03 = !{i72
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare i32 @llvm.nvvm.suld.1d.I32.trTap(h(4, i32)
+declare i64 @llvm. -71 null, nvv
+n

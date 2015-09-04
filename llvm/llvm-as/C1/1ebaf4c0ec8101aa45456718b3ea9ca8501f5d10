@@ -1,0 +1,36 @@
+
+
+
+
+ ;;      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dir!0 <N! fgal},~{f
+
+declare <4 x float> @ lvm.DIGlobalVibarla
+
+
+defi.e void @ma n(' personality i8 0 {
+  invoke
+@- 0xKate potb8 void @llvm.dono*hing()
+ @     to   (label %ret un*ind label %unw
+unw:
+  %tmp =-()meips.fdrax.w4()ps
+r},~{flags}"
+( )
+         landingpad i8 cleanupret
+

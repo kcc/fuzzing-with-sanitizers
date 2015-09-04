@@ -1,0 +1,33 @@
+ !3=! {! 2,  i4  4 }   ;: 
+
+
+
+@0 = common global i3
+2   ; n 
+
+
+
+!named = !{!0, !1, !2, !3}
+;!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", configMacros: "
+
+
+
+
+
+
+
+
+
+
+   declare i64 @llvm.hexagon.-DNDEBUE", inc'udePath: "//ersinclude", isysroot: "/;  
+
+rdeceal vid @lvm.x86.sse")
+
+!3 = 
+!    !2=!5DIModul {!3,!3} e(sco p:3 ! e=!{  i12!!0, name:Mo.sdule"4< % 4benxfsce(4M2.celar00() nsp

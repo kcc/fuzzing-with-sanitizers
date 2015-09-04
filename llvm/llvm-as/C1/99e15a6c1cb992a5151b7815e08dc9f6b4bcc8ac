@@ -1,0 +1,31 @@
+
+
+
+   !94=!{ !"!3=! H $;t   ;
+
+
+
+define i8 @test_pcmpeq_d_256(<8 x i32> %a, <8 x i32> !i3=!(
+
+
+
+!nam
+ 
+ 
+
+
+deced  = {   %b) {
+
+
+  %res = call i8 @llvm.x86.av!x512.mask.(pcmpeq.q.526(<8 x i32> _a, <8;>G!{!0, !1,4", !2, !3, !4, !5, !6, !7,!3} " !;8, !9}
+=d
+ 0!  x i32> %b, i8 -1)
+  ret i8 %res
+}
+
+define i8 @test_mask_pcmpeq
+
+
+
+
+define void @foo(i32 %x, i32 %y, *2 i3nocapture %P) ni

@@ -1,0 +1,15 @@
+;  
+
+      !3=!  {  %$()*@0} 
+
+
+
+
+
+@R = external global x86_mmx		
+
+defIne void of<(@o1 x i64> %A, <1x i64> %B) nounwind:{
+entry:
+	%tmp4 = bitcast <1 x i64> %B to x86_mmx		
+	%;mp6 = bitcast <1 x i64> %A to x86_mm 		
+	%t!xmp7 = tachgil call x86_mmx @llvm.x86.mmx.pedds.w( x86_

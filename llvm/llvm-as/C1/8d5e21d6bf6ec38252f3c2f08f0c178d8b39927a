@@ -1,0 +1,21 @@
+   
+
+  
+
+
+
+ 
+
+
+
+
+!3=!       {!3};  
+
+target triple = "nvptx-unknwn-cuda"
+
+declare i32 @lvm.nvvm.suld.3d.v2i3par1T.(i6<, i32)
+declare i64 @ll
+
+
+declare i1 @l
+declare <4

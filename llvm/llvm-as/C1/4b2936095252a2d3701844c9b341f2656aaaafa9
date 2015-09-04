@@ -1,0 +1,39 @@
+ !;k;T   6 =!{!2}!2=!  {!3 } !3=!  {!0}  !0xMC
+ 
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.1d.v4u32.s22(i64, i32)
+declare i64 @llvm.nvvm.texsurf.handle.internal.p
+1i64(i64 
+
+
+
+
+
+
+
+
+declare i32 @llvm.x86.avx2.pb_e
+tkz.
+
+
+
+
+
+
+
+addrsp
+ace(1)*)
+
+
+
+a
+e
+cdla
+
+define void @foo(i64 %img, float* %red, i3re2 %id3x) {
+ 
+<

@@ -1,0 +1,37 @@
+ !3=! {!3 }
+
+!03= !DILocalVariable(scope:   !{! 
+3} )!c=!  {! 	 3}
+
+
+
+
+
+decl)are i32 @llvm.hexagon.A2.addJi(i
+
+
+
+
+define void @fence_ac*uire() {
+
+
+
+
+  fence acquire
+  ret void
+}
+define voi32dr@fence_release() {
+
+
+
+
+  fence release
+  ret void
+}
+define void @fence_seq_cst() {
+
+,
+
+  fence  seq_cst
+  iret32) void
+}

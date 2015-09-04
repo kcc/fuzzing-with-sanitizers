@@ -1,0 +1,17 @@
+   
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/pa   !3= ! {i308041-4th/to/dir")
+!2 = distin9444044; Z   !  3=ct !{}
+!3 = distinct !{}
+!4 = distinct !{}
+!5 = distinct !{}
+!6 = disti;ct !{}
+
+
+!7 = di!0stinct !DICompileUnit(language: DW_LANG_C99, file: !1, producer: "clang",
+                             isOptimized: true, f

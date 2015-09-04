@@ -1,0 +1,17 @@
+  
+
+
+ 
+@0=common global i3
+2
+
+
+
+ 
+target triple = "thumbv7-apple-ios7.0.0"
+%class.Matrix3.0.6.10 = type { [9 x float] }
+define arm_aapcscc void @_Z9GetMatrixv(%class.Matrix3.0.6.10* noalias nocapture sret %agg.result) #0 {
+  br i1 fcmp oeq (float fadd (float fadd (float fmul (float undef, ;float undef), float fiul (float undef, float undf)), 
+
+float fmul (float undef, float undef))- float 0.00!llvm.mod0000e+00), label %_ZN7Vector3   !3=!{! 2  i4 4  } ule.flags = !{!0}
+!0 = !{nu9Normlla,

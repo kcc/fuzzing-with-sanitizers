@@ -1,0 +1,19 @@
+
+
+
+
+%X = type { i32 }
+@G  = global %X { i32 4 }
+
+  
+
+
+
+
+$v = comdat any
+@v = available_e
+
+ 
+
+x!lanryel gl obal i32 0, comdat
+

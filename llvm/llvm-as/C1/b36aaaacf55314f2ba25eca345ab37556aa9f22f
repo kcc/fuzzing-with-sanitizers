@@ -1,0 +1,41 @@
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+declare i32 @external_func(i64 %arg)
+;defie i32 @invo
+
+declare <2 x i64> @llvm.ppc.altivec.vmulesb(<4 x i32>, <4 x i3 >)
+
+
+ 
+
+
+
+
+
+
+
+
+
+target datalayout = "em:e--i646*-f80:12 nke_test(i68targetdatalayout-n8:16:3  !3=!  { 4!3} 

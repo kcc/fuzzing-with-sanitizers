@@ -1,0 +1,9 @@
+ !34=! 	{!30}$xFq 3u=
+
+@i = linkonce_odrB ! globad i32 1
+
+
+
+
+
+define void @f() prefix ^

@@ -1,0 +1,8 @@
+
+
+; 
+ 
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{:;irfla**},~{f)sr},~{ flag)}us*listorder i&"( )32* @global, { 1, 0 }

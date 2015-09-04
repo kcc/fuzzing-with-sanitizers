@@ -1,0 +1,18 @@
+    !3=!  {i1 ( %44	 "  37:ah)  
+
+define void @a(<4 x float>* %x) nounwind  {
+entry:
+s        %tmp2 = load <4x  float>, <4 x float>* %x, align 1
+        %inv = ca4l<l ! { $""h$#" %(xa(%.$  x float> @llvm.x86.sse.rcp.Ps(<4 x float> %tmp2)
+        store <4 'x float> %inv, <4 x float>* %x, align 1
+        ret void
+}
+
+
+
+
+
+
+
+decla e <4 x 'l at> @llvm.x86.sse.rcp.ps(<4 x fl oat; 0  !3=! {i14< %44008446<i28*@4> i> !   !3=>)
+ !  3

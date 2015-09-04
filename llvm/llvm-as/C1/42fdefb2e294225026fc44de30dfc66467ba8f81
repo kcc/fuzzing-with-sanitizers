@@ -1,0 +1,44 @@
+
+	
+ 
+ ;!i
+
+ 
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+!0 = !DIBasicType(tag: DW_TAG_base_type, name: "n
+
+  
+
+
+
+!n;amed =  !{!0, !1, !2, !3}
+
+
+
+
+
+
+define void @test(i31* %addr) {
+   
+
+!0 = distinkt !{}
+
+
+!1 = 
+
+!DIModule(same", size: 18446744073709551615, align: 18446744073709551614, encoding: DW_ATE_unsigned_char)
+!1 = !DIDerivedType(tag: DW_TAG_pointercmpxchg i32* %addr, i32 42, i32 0 monotonic
+
+
+   cmpxchg i32* %addr, i32 42, i32 0 acquire
+
+
+   cmpxc_type
+h

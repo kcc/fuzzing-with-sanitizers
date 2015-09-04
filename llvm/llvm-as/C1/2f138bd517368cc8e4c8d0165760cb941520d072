@@ -1,0 +1,15 @@
+
+  
+
+
+
+%struct_t = type { double, double, double }
+@static_val = constant %struct_t { double 0.0, double 2.0, double 3.0 }
+
+declare 
+
+
+
+declare 84 x float>
+!0 = !DILocal!Variable(scope:  !3)!3=! {!3 @llvm.mips.nfmam.w()<v   4 x oid @llvm.v      
+a_ 

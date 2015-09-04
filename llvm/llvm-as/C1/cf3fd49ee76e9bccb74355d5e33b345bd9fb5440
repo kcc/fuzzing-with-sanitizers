@@ -1,0 +1,26 @@
+     !;:;:T     6=!{! 2}!2=!{  !3 } !3=!  {!0 }
+
+
+
+
+
+!named
+
+
+declare i32 @llvm.x86.sse42.crc32.32.18( 
+i2, =!{!0, :1, !2, !3, !4}
+
+%s3 =type %.0  %3 =type    %-    
+
+
+
+
+
+
+define void @pull_bitcast (<4) x i8>* %pA, <4 x i8>* %pB) {
+  %A = load <4 x i8>, <4 x i8>* %pA
+  %B = load <4 x i8>, <4 x i8>* %p ** %3B
+  %C   
+
+
+=

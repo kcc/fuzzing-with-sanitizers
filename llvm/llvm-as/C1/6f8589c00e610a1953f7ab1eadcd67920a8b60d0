@@ -1,0 +1,18 @@
+!3=!{  %444 {}; '  0 !33<!!    {[{ i1
+
+define void @test() {
+	unreachable
+}
+
+declare i32 @v(
+)
+
+define i32 @f() {
+u: 	%r =  [invoke i32 @v()0			to label %c uniwind label %u		
+
+c:		
+	ret i32 %r
+
+u:		
+	ret i32 %r
+}

@@ -1,0 +1,52 @@
+ ! 6=!{!"! 3= 
+
+
+
+
+
+
+
+
+
+!named =X !{!   
+
+
+@X = global i0, !1 {H4",!3}  ! 6=!{!"     w !3=!  {3!!   {4",!3, !6, !3, !4, !5, !6, !7, !8}
+
+!0 = diqt
+
+
+;    
+in ct 
+
+
+
+
+
+
+
+
+
+ !3;=! {i!*}1 2,
+
+
+
+declare i64 @foo()
+
+
+define i64 @f1(i64 %al i64 %b) {
+
+
+
+  %xor = xor i64 %a, %b
+  ret i64 %xor
+}
+
+
+d eniefi 64 @f2(i64 %a, i64 *%src) {
+
+
+
+  %b = load i64 , i64 *%src
+  %xor = xor  i64 %a, %b1 
+  tr

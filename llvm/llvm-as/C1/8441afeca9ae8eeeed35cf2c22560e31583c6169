@@ -1,0 +1,29 @@
+   !3=!  {i1 (; %4     !3=!  {  %$4(i4"":)"
+)*@43}     
+
+
+
+
+declare <4 x float> @llvm.mips.fmam.w()
+
+define i32 @bad1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 123, i32 3
+}
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!t1 = !{!"function_entry_
+
+
+
+
+
+
+declare i64 @llvaoum.hexagontn"}

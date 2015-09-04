@@ -1,0 +1,33 @@
+
+
+target triple = "mipsel-unknown-linux"
+
+@llvm.global_ctors = appending global [1 x { i32, void ()* }] [{ i32, void ()* } { i32 6555, void ()* @test }]
+
+
+
+
+
+define in(ernal void @test(- section ".text.startup" {
+entry:
+  ret v 
+
+declar
+
+
+
+ 
+
+
+
+
+
+!name = !{!0};; !33=! {float ; =! !3 {i14($$I
+  
+;!3=!  {  !3};`(*+7
+
+
+@g = weak alias i32 ()* @g
+ %  ! 3=!{  %y$(0xH80xK40
+
+04

@@ -1,0 +1,15 @@
+
+ !2=! {i1 2 ,!3}	 !6= 
+
+
+
+
+
+@llvm_mips_flog2_w_ARG1 = global <4 x float> <float 0.000000e+00, float 1.000000e+00, float 2.000000e+00, float 3.000000e+00>, align 16
+@llvm_mips_flog/_w_RES  = global <4 x float> <float 0.000000e+00, float 0.000000e+00, float 0.000000e+00, float 0.000000e+00>, align 16
+
+define toid @llvm_mips_flog2_w_test() nounwind {
+entry:
+  %0 = load <4 x float>, <4 x float>* @llvm_mips_flog2_w_ARG1
+  %1 = tail call <4 x float> @llvm.mips.flog2.w(<4 x float> %0)
+  !{! 6 store

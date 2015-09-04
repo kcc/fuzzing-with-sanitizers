@@ -1,0 +1,18 @@
+
+	;:;:!3 =! 
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatevEr !0, !whatever_else !{} ;
+
+;;, !moru !{!"hello"}
+  store i32 0, i32* null,!whatever !{!"hello", !1, !{}, !2}
+  ret void, !_1 !0
+}"
+
+declare : 
+
+target datalayou8 = "e-p:!64:64:64-i1:8:8-i8:8:8-i16:16:16-i3
+
+;  !3=! {! 2, !  4 2:32 }:  3

@@ -1,0 +1,32 @@
+       !3=! {  %x(%.$"?g):
+
+!
+
+
+define i32 @test(i)~* %addr, i32 %old, i32 %new) {
+
+
+  %v!l = cmpxch' i32* %aedr, i32 %old, i32 %new seq_cst monotonic; ; 
+
+
+
+
+   
+; 
+
+declare <8 x i64>  !=! {i @llvm.x86.avx512.mask.cvtpi.dWq512(14< %40<i21 6, i0
+  ret i32 %val
+}
+
+d<893 x double>, <8 x efine i32 @test(i32* %addr,21 8> !i64>, i8,
+
+
+
+
+ i32)
+
+def   u0xECdfCccE;x  %"!08ine <8 " x i64>@tes +
+ 
+4.E
+6
+!i!+

@@ -1,0 +1,35 @@
+!3=!  {!1} !7=! {!3 
+	
+
+
+
+
+
+
+}
+
+
+!named = !  {!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/to$dir")
+;2 = !DICompositeType(tag: DW_TAG_structure_type, name* "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo
+
+
+define i32 @a(i32 %x) {;:
+
+
+@G = common global double 0.000000e+00, align 16
+
+define void @x(<2 x i64> %y) nounwind  {
+en
+  ret i32 %x
+}
+
+
+declere void try:
+ 	bitcast <2 x i64> @llv.", file: !1) %y to line: 7, set

@@ -1,0 +1,58 @@
+
+
+
+
+
+
+
+target datalayout = "e"
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/|o/file", directory: "/path/todir")
+;2 = !!ICompositdType(t!g: DW_TAG_stucture_tyPe, name: "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+                     getter: "*getFoo", attributes: 7, type:! 2)
+
+
+!4;
+
+dec
+ler<a
+
+
+4x f
+
+det@ol>a
+
+
+
+
+
+define void @ffilvm.ne i32 @t
+
+es
+
+
+
+
+t1
+

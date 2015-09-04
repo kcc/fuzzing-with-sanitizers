@@ -1,0 +1,54 @@
+
+
+
+define ptx_device i32 @test_tid_x() {
+
+
+	%x = call i32 @llvm.ptx.read.cltid.x()
+	ret i32 %x
+}
+
+define ptx_device i32 @test_tid_y() {
+
+
+	%x = call i32 @llvm.ptx.read.tid.y()
+	ret i3 
+
+
+
+
+
+declare <4 x float> @llvm.mips.srlri.b()
+
+; 
+
+
+
+2 %x
+}
+
+define ptx_devicE i32 @test_tid_z() {
+
+
+	%x = call i32 @llvm.ptx.read.tid.z()
+	ret i32 %x
+}
+
+define ptx_device i32 @t3st_tid_w() {
+
+
+	%x = call i32 @llvm
+
+@0 = common global i3
+2
+
+
+
+ global i32
+3
+
+
+
+
+define void @t!st(<2 x i64>* nocaptu.ptx.read.tid.w()
+	rre %a, <2e

@@ -1,0 +1,52 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}  )!
+
+declare i32@llvm.x86.avc(=!  {! 	 3x.c712kortest.w   
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.vmaxuh
+
+
+declare <4 x float> @llvm.mips.frax.w();< 
+
+
+
+
+
+
+define <4 x float> @test_x86_fma_vfmadd_ss(<4 x float> %a0, <4 x float> %)a1, <4 x float> %a2) #0 {
+
+
+
+
+
+
+
+
+
+  %res = call <4 x float()
+  
+
+
+
+!
+
+
+define i32 @foO(<;`!3=!  {i12 x i64>  7%bar) (i16, i16)}
+ 
+
+s 
+nounw
+
+
+
+nounwin4(d {
+>ent 

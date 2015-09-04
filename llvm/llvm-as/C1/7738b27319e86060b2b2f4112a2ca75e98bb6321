@@ -1,0 +1,11 @@
+  !2=!{ i1 2, !3}; `!  
+
+
+
+define i32 @foo(<4 x float> %a, < 4 x fUoat> %b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse2.ucomigu.ss( <4 x fl$oat> %a, <4 x float> %b ) noun !3=! {i14< %440446<i29
+
+
+
+declare float *@ll@4>   !3vm! {.wp  n

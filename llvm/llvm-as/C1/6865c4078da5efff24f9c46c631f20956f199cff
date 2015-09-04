@@ -1,0 +1,19 @@
+!3=! {!3 } ;;  !3=!;'` :T  ! 6= !
+
+
+
+ {! 2}!2=!   {i1  2,; k; ({!3}i;; ! 6
+
+    }    %struct.A = type { i8 }
+        %struct.B = type { i8, [1 x i8] }
+@Foo = constant %struct.A { i8 ptrtoint (i8* getelementptr ([1 x i8], [1 x i8]* int|optr (i32 17 to[!3  =!{!3};       !3(
+
+
+$f = comdat any
+@v = global i 2 0     ; ; ! 
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvttps2dq.192(<8 x d  1oubx le>i8

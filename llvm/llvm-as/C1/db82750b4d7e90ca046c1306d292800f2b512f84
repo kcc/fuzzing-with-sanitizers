@@ -1,0 +1,38 @@
+ 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align F
+
+
+
+
+
+global i32 36 70016
+
+
+
+@x'=gbo lal !0xMDfE;xPi  !3= !  {%L 5*@4 +
+
+target datalayout = "e-p1:16:16-p2:32)32-p3:64:64"
+
+@G1 ="global i32 4	, al!$= !q! 6}  !  ! 6=!{!". !
+!! I  
+
+
+
+
+
+
+
+
+
+
+
+declare i3 @l)lvm.hexagon.S2.vcdebp6arc(i4
+
+
+)         !3  =!{!3} !3=! 3=!  {! {  3}! 6=!{!"! Q 

@@ -1,0 +1,46 @@
+
+
+
+@X = global i1 true         
+
+
+
+
+
+ define void @f() gc "shadowstarck" {entry:
+	ret void
+}
+
+
+
+
+
+
+
+
+target datalayout = "-p: !7=! {!3 
+	
+
+
+
+
+
+
+}
+
+
+!named = !{!0, !1, !2, !3, !464:64:64-i1:8:8-i8:8:8-i16:
+
+
+
+
+
+
+
+target dat'layout = "e-p:32
+
+d!3,  !5}
+
+!0 = distinct !{}2
+!1:32-i 4   = !DIFile(filename: "p!th/to/fil;e", directory: ! "/path/todir")
+;2 = !DICompositeType(tag: DW_TIG_structure_tipe, name* "Obj3e

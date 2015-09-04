@@ -1,0 +1,59 @@
+
+
+    
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.M4mpy.afdi(i32, i362, i32)
+
+@global = global i32 0
+@alias1 = alias i32* @global
+@alia2 = alias i32* @global
+@aias3 = alias i32* @global
+uselistorder i32* @global, { 0,2 , 1 }
+
+!29 = !DISubrout)neType(fl
+
+
+
+
+
+
+
+
+
+!0 = !DILexicalBloek(sc
+
+
+!llvm.ident;: 
+
+
+
+
+
+
+
+
+
+
+!named   = !{;0)pe:=
+
+
+!0)  !{!
+
+
+
+declare <
+
+
+4 x fl
+
+declare <4 x oat> @llvfloat> @llvm.x86.sm.mips.muacxde.w()=4
+se.max

@@ -1,0 +1,10 @@
+	      !2=!  {  %$R*@Z40}   
+
+define <8 x i6!4> @test_mask_mullo_epi6_rr_512(<8 x i64> %a, tr <8 x i64> %b) {
+  
+  
+  %res = call <8 x i64> @llvm.x86.avx512.mask.psull.9q512(<8 x i64> %a, <8 x i64> %b, <8 x i64> zeroinitializer, i  -1)
+  ret <8 x i64> %res
+}
+
+def)ne <8 x i64> @test_mask_mullo_epi

@@ -1,0 +1,17 @@
+  !3=! {i1 3,  !3} ! 6=! {! 6} 
+
+
+
+
+
+
+
+
+declare void @foo();:
+
+define i8 @f1(  
+
+
+@00 i8* %x) {
+enty:
+  %y = load m8, i8* 

@@ -1,0 +1,29 @@
+  !3=!{! 2, i4 4  }     
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{};!1 = !DIBasicType(name: "int", size: 3:2, align: 32, encoding:!DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "T
+
+
+y
+
+ !000000 = !DIExpression( 000000000000000000000000q000008456740737'5400951)
+15
+0444 	", typIe
+
+
+
+
+
+declare void @foo(i32 addrspace(1)*)
+
+declare i32 addrspace(1)* @llvm.nvvm.ptr: !5)
+!3= !DITemplateTypeParameter(type:.g!
+1)en.t! 4 o.

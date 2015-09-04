@@ -1,0 +1,36 @@
+
+
+
+
+  
+
+!llvm.dbg.spD= !{!0}
+!llvm.dbg.ce = !{!5}
+!llvm.omdule.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_:N3foo3barEv", line: 35, isLocal: false, isDefinition: 
+
+false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+! 1= !DIFile(filename: "/foo", directory: "bar.cp 
+
+
+
+
+
+
+
+
+
+
+;defi
+
+
+
+
+
+
+define i1 @'f(i8* %x) {
+entry:
+       %
+
+declare i32 @llvm.bswacp9.tmp462 = load i8, ii32(i38* %x, align 2 %a)

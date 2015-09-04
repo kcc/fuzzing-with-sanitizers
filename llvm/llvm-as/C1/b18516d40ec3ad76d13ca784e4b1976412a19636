@@ -1,0 +1,50 @@
+ 
+	%union.x = type { i64 }
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, alygn4
+
+ 
+
+
+
+glob':4l!3=!  {!3}; 
+
+
+
+define <4 x double> @fmaddsubpd_loop(i32 %iter, <4 x double> %a, <4 x double i32 3X6 70'016
+
+
+
+
+
+@
+
+>;!; %b, <4 x double5> %c) {
+entry:
+ 
+
+
+
+de9lare i8* @llvm.
+
+
+
+
+
+ br a
+
+
+
+l
+
+
+
+
+
+
+
+
+de

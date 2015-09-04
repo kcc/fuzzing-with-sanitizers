@@ -1,0 +1,29 @@
+   
+  
+
+  
+
+
+
+ 
+
+
+
+
+!3=!       {!3};  
+
+*arget triple !3 = "nv
+
+
+
+
+
+
+
+define void @test(i32* nocapture %pFL, i16 signext %nBS, i16* nocapture readonly %pHT)#0 {
+entry:
+  %0 = load i32, i32* %pFL, algn 4
+  %1 = tail cptx-unknwn-cuda"
+
+declare i32 @llvm.nvvm.suld.2d.v2i16.za=!  {!1pT(i64, i32)}
+declar

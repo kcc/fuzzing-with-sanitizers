@@ -1,0 +1,66 @@
+
+
+  
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+ent 
+ :%qrsum = add
+
+
+
+
+declare i32 @llvm.r60def.0nriead1.tidig.x() i e32 %a, %b, !dbg !DIL:oation(line: 2, scope: !4,
+                                          inlinedAt	
+: !DILatoicon(line: 1@, scope: !3)!3):  ret i32 %sum,eclare  !dbg !DILocation(,:ie n13", scope: !3)
+
+
+
+
+!nam ed = !{!0, !1, !2, 4, ! !,3 !5, !6, !7, !8 
+
+
+
+
+
+
+define <4 x f}
+ !0 =n }

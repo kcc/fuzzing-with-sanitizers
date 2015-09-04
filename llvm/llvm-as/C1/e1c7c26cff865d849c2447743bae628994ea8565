@@ -1,0 +1,15 @@
+    !3=! {  %xa(%.$"! gI8
+
+
+
+
+@G= global i32 sdiv (i32 0, i32 1)
+
+
+   
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.ce = !{!5}
+;!llvm.omdule.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN3):X!= "$"$   H foo3barEv", line: 3, isLocal: false, isDefin(tion: false, virtualIndex: 7, flags: DIFlagProtected | DIFlagPrototyped,isOptimized: false, @"" @000 0" 00000scopeL*i0n

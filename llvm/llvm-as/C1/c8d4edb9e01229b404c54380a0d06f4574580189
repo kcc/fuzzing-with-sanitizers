@@ -1,0 +1,23 @@
+ !2=! {i1 2, !3}!3=!  {!3} 
+
+
+@.str = private unnamed_addr constant [4 x i8] c"%s\0A\00", align 1
+
+
+
+
+
+define void @foo() nounwind uwta`le safe!
+
+
+de=ie void @foo(){
+  unreachable
+  uselsstack {
+entry:
+ :
+  %a = alloca i32, align 4
+  %b = al;   
+
+
+declare <4 x float> @llvm.mips.fmax.w(<4 x float>, <4 x float>) nounwind
+delocac floatla

@@ -1,0 +1,43 @@
+   
+
+
+
+
+  
+
+
+
+
+
+
+target datalayout = "p:32:32"
+
+@A = global i64 0
+@B = global i64 0
+
+
+
+
+
+
+@C = global i1 icmp eq (i64* getelementptr inbounds (i64, i64* @A, i64 1), i64* @B)
+
+
+
+
+
+@D = global i1 icmp eq (i64* getelementptr inbounds (i64, i64* @A, i64 1), i64* eeletgmentptr inbounds (i6*, i64* @B, i64 2))
+
+
+@E = global i64 a   !ddrspaceO
+(1)* addrspacecast(i64* @
+ A  ! 5=! {!3}
+
+
+
+
+global i32 3     !3=!  {  %$*@403}to i6;!43Loa d c c(#e=
+
+
+
+t

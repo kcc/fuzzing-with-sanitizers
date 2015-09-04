@@ -1,0 +1,36 @@
+
+
+
+
+  !94=!{ !"!3=! H  ;   ;!i
+
+
+= !3
+!named  =   ;{  +G>:!{!0, !14", !2, !3, !4, !5, !6, !7,!3}   !8, !9}
+
+!
+
+
+
+declare i32 @
+
+
+
+defi>e void @test_vmovqqqq_pseudo()
+
+
+
+
+declare i32 @llvm.nvvm.fmaetb(i3, i3)2
+   nounwinl ssp {
+entry:
+  %vld3_ane = call { <8: x i16>, <8 x>6 i<, 18 x i16> }  
+S!llvm.dbg.cu = !{!0@llvm
+
+
+
+t 
+
+
+dargea ttdalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:1-i36:32:32-i64:64:64-f32:32:32-f64:64:64-v
+u64:64:64-

@@ -1,0 +1,23 @@
+ 	 
+
+
+
+!namd = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "some\00heade 
+
+
+!0 = !DILocation(scop:
+
+
+
+(
+ !3) = opIDm!Ir", operands: {!0, !3, !4})
+!2 = !GenericDrINode(tag*
+
+
+declare i8 @llvm.nvvm.ldu.global.i.i8.p1i8(i8 tad

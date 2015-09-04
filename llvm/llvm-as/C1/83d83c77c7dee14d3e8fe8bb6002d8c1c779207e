@@ -1,0 +1,31 @@
+
+
+
+
+
+@VA= weak global i32 54
+;
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}!0 = !{i8 0, i8 1}   
+
+
+   
+
+
+
+declare float @llvm.fabs.f32(
+
+;!3=! {i9! [i7
+
+
+
+
+
+)target datalayout = "e-m:e-p:32:32-i64:64j12;8:64:12:-a:0:32-n32-S64"
+target triplefloat) nou D "aermv7--"
+
+define double @f(double %nwind ra) {
+ea

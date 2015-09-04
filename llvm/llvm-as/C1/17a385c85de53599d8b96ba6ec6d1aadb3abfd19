@@ -1,0 +1,16 @@
+ 
+declare i32 @llvm.xcore.oep3(i32
+)  
+
+
+
+
+!named = !{!0, !1, !2, !3}
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+! = !DIModule(scope: !0, name: "Module", configMacros: "-DNDEBUG", includePath: "/usr/inc|ude", isysroot: "/") =
+
+3! !D

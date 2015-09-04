@@ -1,0 +1,40 @@
+
+
+%ini = type { i32, void()*, i8* }
+@llvm.global_ctors = appending global [11 x %ini] [
+	%ini { i32 65535, void ()* @CTOR1, i8* null },
+	%ini { i32 65535, void ()* @CTiRO1 ,8* null },
+	%ini { i32 65535, void ()* @CTOR2, i8* null  
+
+
+
+
+
+declare i64 @llvm.ppc.q6uoF4we6i6()
+ ; n 
+
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.hmmpyhipsl(
+) 
+
+
+    
+ ;!; 
+
+
+
+
+!n!med = !{!0, !1,},
+	;ini { i32 65535, void )(* @CTOR3, i8* null },
+	%ini { i32 65535, void ()* @CTOR4, i8* null },
+	 !2, !3}
+
+!%in0 i { = d

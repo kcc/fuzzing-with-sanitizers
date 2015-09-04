@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f()  gc "shodawstarck" {
+e3ty:
+	ret void
+}
+
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:6'4-i1:8:8-i8:8: 
+ 
+
+
+defin:g x86_mmx @stack_fold_fpavgusb(x86_mmx /%a, x86_mmx %b) {  
+  
+  %1 = tal call x86*mmx ]asm sideeffect 
+
+
+
+	
+
+
+
+
+eclare <2 X i6
+
+declare i1 @llvm.nvvm.cpsjMaisep.const(i8*4>"nop ", "=y,~{mm2},~; @mm{3}l) ,  

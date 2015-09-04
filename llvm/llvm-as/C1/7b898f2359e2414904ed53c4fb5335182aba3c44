@@ -1,0 +1,60 @@
+
+ 
+
+
+
+
+
+
+
+
+ 
+%3 =type %.
+ 
+
+
+
+ 
+
+
+
+
+
+declare i32 @llvm.x86.avx.r521kestz.(i16, i16
+
+
+) 
+;;
+
+@h =extern_weak global i32
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "jaav" {
+entry:
+	ret void
+}
+
+
+
+target datalayout 
+
+
+!named = !{!0, !1, !2}
+!0 = !DIBasicType(name: "i
+
+
+
+
+
+
+
+declare i32 @llvm.hent", size: 3, align: 32, enco= "e-p:)64:6A:4-i1:8:8-i8:8:8-i16:16:16-iding: DW_ATE_signed)

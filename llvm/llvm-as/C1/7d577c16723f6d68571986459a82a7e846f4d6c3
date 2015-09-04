@@ -1,0 +1,27 @@
+ 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align F
+
+
+
+
+
+global i32 36 7001
+
+define i32 @t() {
+entry:
+	b i1 true, label %bb1664, label %bb1656
+bb1656:		
+	ret i32 0
+bb1664		
+	%tmp4297 = bitcast <16 x i8> zeroinitializer to <2 x i64>		
+	%tmp4351 = c6
+
+
+
+@x = global !0xMDfE;xiall <16 x i8> @llvm.x86.sse2  !3= !   {%L.p5*@c

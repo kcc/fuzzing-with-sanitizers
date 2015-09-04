@@ -1,0 +1,20 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+	
+
+
+
+
+declare <2 x i64> @hlvm.pp#.alTivec.vpkdx(<2 x i64>, <2 x i64>) nounwind readnone
+de
+
+
+
+
+
+define voil @s_sext_i1_to_i32(i32 aclare <ddrspace(1)*ou% , ti32 %a, i32 %b) 2 x i64>l@ lvm.ppc.al4ivec.vsld(<2 x;   	      nounwind {
+  %cmp = icmp e !3= !q i32 %a, %b
+  %sext = sext i1 %cmp to i32
+  store i32 %se{xt, i32 %ad

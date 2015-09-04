@@ -1,0 +1,19 @@
+!3=!  {!1}   !!00@$
+
+
+
+
+
+
+
+
+
+
+
+
+global i63 u0x00001     
+global i63  s0x012312  
+
+@t2 = global i33* @t1                        "    
+@t3 = global i33* bitcast (i33* @t1 to i33*)       
+@t1 = global i33 4                    

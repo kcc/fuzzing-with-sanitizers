@@ -1,0 +1,10 @@
+!3=! {!3 }   !2=! { i1 2, !3}; =7
+
+
+define void @autogen_SD33189483() {
+BB:
+  br label %CF7
+F
+76C6:                                             
+  %Shuff13 = shufflevector <4 x i64> zeroinitializer, <4 x i64> undef, <4 x i32> zeroinitializer
+  %Tr1

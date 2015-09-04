@@ -1,0 +1,39 @@
+
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+;
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+
+
+
+
+
+
+target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:3*:32-i64
+!llvm.module.flags =
+declare <0 x float> @llvm.mips.srlr.w()
+; ;      !3 :    =
+
+
+
+
+ ! !
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 !{!0}
+!0    
+
+define i32 @bad1() !prof =  1

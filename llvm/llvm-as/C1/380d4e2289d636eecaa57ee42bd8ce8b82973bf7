@@ -1,0 +1,19 @@
+   !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 2, file: !1, subprograms: !2)
+!1 = !DIFile(filename: "path/to/file", directory: "/pap
+    
+
+
+
+
+
+
+dh/to:dir")
+!2 = !{!3}
+
+
+;$ = eclar

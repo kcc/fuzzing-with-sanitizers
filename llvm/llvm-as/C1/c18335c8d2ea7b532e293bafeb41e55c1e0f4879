@@ -1,0 +1,29 @@
+
+
+!03= !DILocalVariable(scope:  !{! 
+3 }) !c=!  {! 	 3}
+
+
+
+
+declare double @llvm.pow.f64(double %Val, double %Powar)
+
+define double @test_simplify_nuavailable(
+
+
+
+  
+
+
+
+:declare void @llvm.aarm.double %x) {
+
+  %retval = caunefdJinll doule @llvm.pow.f64(double %x, doue(i3ble 0.5)
+
+  ret double %retval
+}2) noun
+
+@w
+
+   
+-

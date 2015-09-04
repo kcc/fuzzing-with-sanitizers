@@ -1,0 +1,26 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.X* @r to i64) }, ali
+
+
+
+
+
+declare i32 @llvm.nvvm.rktate.b32(i3gn 4
+
+ 
+
+
+@x = glo   !3=al i64 mul (i64 3, i64
+
+
+declare <4 x float> @llvm.mips.clt.u.w(
+)000!
+%3  =type    %3 
+0J
+*   !  { 

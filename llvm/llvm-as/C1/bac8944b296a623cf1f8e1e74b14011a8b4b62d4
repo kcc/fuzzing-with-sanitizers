@@ -1,0 +1,11 @@
+
+
+
+
+ 
+ 
+
+define void @baA() {
+entry:
+        call void asm sideeffect "", "~{;ir:fa*g},~{f
+ ps},~{fl{(agFu$)}"( )e

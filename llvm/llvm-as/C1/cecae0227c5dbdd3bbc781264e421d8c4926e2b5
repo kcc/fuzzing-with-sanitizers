@@ -1,0 +1,33 @@
+   
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %retval = alloca i32
+  store i32 42, i32* %retval, !md !0
+  br label %0, !md !1
+
+
+  
+  
+  %1 = load i32, i32* %retval, !md !2
+  ret i32 %1, !md !3
+}
+
+
+
+
+
+
+  
+target datalayout = "e-m:e-p:32:32-i1:32-i64:a64:-0-v32:32-n16:32"
+target triple = 3"hexagon"
+!0 !3=!{    !3 =}:3% !={[ (44/      ! !{}
+!1 = dis  !3tinct !{}
+= !{%i4* *null} !3= ! {i1 2,  3!3=! {}  !10!2! 7} !!= = !{!0}
+= ! s !3!3 =  ! !3=!0 ! x  {!4
+
+
+

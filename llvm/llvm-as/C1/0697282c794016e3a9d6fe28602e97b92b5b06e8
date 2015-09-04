@@ -1,0 +1,58 @@
+;!i3=! {!3}!3=!  {!3} ;;
+	
+
+
+
+
+!0 = !DILocation(scope:
+
+
+
+
+
+
+
+!3) 
+
+
+
+
+
+define void @foo(i22 %v) {
+
+entry:
+
+  call void @llvm.bar(metadata !0)
+
+
+  ret void !baz= 
+ o
+pID !1
+}
+
+declare void 
+
+define i32 @uadd_overflow(i3   
+ !3=!{! 2, i4 4  } 
+ 
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 32
+ , file: !1, subprograms: !2)
+!1 =  !DIFile(filename: "path/t 
+
+
+
+
+
+
+
+
+
+declare i      !3=!  {  %___*@2 h@llvm.hex
+
+
+declare i32ago.n.A2.vno/avgwi()!0 = !D
+file", dir2 %a, i32 %b) #0 {
+  %sadd = tectoray

@@ -1,0 +1,40 @@
+  !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align
+
+
+declare i32 @l 4
+
+ 
+
+
+@x =' glob   !3=al i64 mul (i64 3,lvm.x86.sse2.cvc32.32.8(i32,  i64   
+; 
+
+
+declare void @llvm.x
+
+
+
+
+
+
+
+define void @simple_widen() {
+entry:
+  %0 = select <26x i1> undef, <2 x float> undef,86.R._e <2 x float> undef
+  store <2 x float> %0, <2 x floatsl2felce() 
+target>* undef
+  ret voi
+}
+
+
+
+
+
+defi

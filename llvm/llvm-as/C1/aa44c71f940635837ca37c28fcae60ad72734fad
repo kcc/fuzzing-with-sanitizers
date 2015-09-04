@@ -1,0 +1,34 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+ 
+
+
+@x o lg=b   !3=al    !3=!  {i1 s0x444 i64 mul 
+
+declare<
+ 
+4x float>@ll(i64 3, i64!  {  %$*@o0; pm.mipst.shf 
+define void @f(token ){;ntr):
+  ret void
+}
+ 
+
+
+
+ 
+  
+
+!0 = !GenericDINode(tag: 8)   ;: 
+
+
+
+declare i32 @llvm.s390.lcbb(i8 *e, i32)
+declare <16 x i8> @llvm.s390.vlbb(i8 *, i32)
+declare <16 x i8> @l

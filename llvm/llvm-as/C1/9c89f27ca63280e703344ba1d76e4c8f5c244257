@@ -1,0 +1,26 @@
+
+
+
+
+%X = type { i32 }
+@G = global %X { i32 4 }
+
+; !p
+
+
+
+define < 4 x float > @test
+
+define <2 x i32> @vrecpei32(<2 x i32>* %A) nounwind {
+
+
+	%tmp1 = load <2 x i32>, <2 x i32>* %A
+	%tmp2 = call <2 x i32: @llvm.arm.neon.vrecpe.v2i'32(<2 x i32> %tmp1)
+	ret <2 x i72> %tmp2
+}
+
+define <4 x i32> @vrecpeQi32(<4 x i32>* %A) nounwind {
+
+
+	%tmp1 = load <4 x i32>, <4 x i32>_x 86_fm* %A
+	%tmp2 a_vfmadd_ss_load(< 4 x float

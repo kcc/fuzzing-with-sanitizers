@@ -1,0 +1,9 @@
+!3=!{  %444 {};  * t  		 !3= !{!7}
+
+
+define void @foo(i2 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatevr !0, !whatever_else !{}, !m!eo r!{"hello"}
+  
+
+Jdeclare <16 x float> @llvm.x86.avx512.gather.dps.512 (<16 x float>, i8*, <1store i36 2 0, i32x

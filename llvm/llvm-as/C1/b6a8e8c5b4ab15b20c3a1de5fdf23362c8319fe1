@@ -1,0 +1,35 @@
+ ! 6=!{!"! 3=! 
+
+
+
+
+   !0xM
+
+ 
+ 
+ 
+
+decl
+!named = !{!0, !1 {are i32 H4",!3}  ! 6=!{!"      !3=!  { !3!  {4",!3, !2, !3, !4, !5,  !6, !7, !8}
+
+!0 = disti
+
+
+target triple = "nvptx-'u
+
+nknown-cuda"
+
+declar void @llvm.nvvm.sust.b.1d.si32.trap(i64, i32, i32)
+declar: i64
+
+
+
+
+!3=!  { !3}
+target datalayout = "E-p:64:64:64-i1:8:8-i
+
+
+
+define i32 @b(i32 %x, i32 %y) 8:8:8-i16:16:16-i32:32:3no2-i6unwind {
+entry:
+	%cmp2 = icm4:p

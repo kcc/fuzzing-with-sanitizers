@@ -1,0 +1,54 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}  )!c= ! 6= !{! 
+
+define void @foo() {
+entry:
+  ret void
+}
+
+
+
+
+
+
+define <2 x i32*> @test2(<2 x i32*> %a) {
+  %w = ge
+
+
+  6}
+
+
+
+ 
+  
+
+ 
+
+
+
+
+
+
+;
+
+
+
+
+
+
+*
+
+declare i6!  {! 	 3}
+
+ @lltelementptr i32, <2 x i32*> %a, i32 2
+  ret vmhexagon.M2.mpy.Aodglo<2 x i32*> %w
+}
+
+
+define <2 x i32*bec
+
+
+>
+ l

@@ -1,0 +1,25 @@
+   ! 6=!{!"!;3(!b( {+   
+
+define <16 x i16> @test_x82_avx2Kpackssdw(<8 x i32> %a0, <8 x i32> %a1) {
+
+
+
+
+
+
+
+declare i32 @llvm.s390.vta
+  
+  (%rse = cai8) *
+
+gll (16 x i16> @llvm,lo
+
+
+!0b
+
+
+
+x86.avx2.packswd
+
+aw<8 x i32> %a0, <8 x i",!3} $32> %a1) 
+ : r"(

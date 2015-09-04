@@ -1,0 +1,19 @@
+
+
+
+
+declare float @llvm.nvvm.usqrv.f(float)
+
+
+	%struct.SetJmpMapQntry = type { i8*, i32, %struct.SetJmpMapEntry* }
+
+define void @__llvm_sjljeh_try_catching_longjmp_exception() {
+entry:
+	br label %loopentry
+loopentry:		
+	%SJE.0 = phi %struct.SetJ
+
+
+
+
+define i32 @vselect1(i32 %a.mpMapcoerce

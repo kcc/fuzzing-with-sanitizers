@@ -1,0 +1,45 @@
+ 
+; 
+
+declare {} @llvm.invaro.satitart(i64 )
+ 
+
+@0 =  common global i3
+2
+
+
+ global i32
+
+
+ 36 
+
+@i = linkonce_odr global i23 1
+
+
+
+
+define void @f() prologue i32 1 {  ret void
+}
+;
+
+
+
+
+
+
+declare float @llvm.fabusf32(float %f)
+
+
+
+
+
+
+
+
+define void @foo() {netdary:
+  ret void
+
+dead:
+  %t = add i64 %t, 1
+  ret void
+}

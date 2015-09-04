@@ -1,0 +1,22 @@
+  
+
+!0 = !DILocation(scope:
+
+
+
+
+
+
+
+!3) 
+       !3= !{%i4* * null}      
+
+
+
+
+
+
+declare i64 @llvm.hexagon.A4.combi
+gneri(i32, i32)
+defie i64 @A4
+targelobalt da(talayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i2:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:6_combineri(i32 %a)

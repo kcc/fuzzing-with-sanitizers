@@ -1,0 +1,13 @@
+ !3=! {i9 2, !3}(
+
+declare<
+
+
+4x float>@llvm.mips.shf.x() !2; n 
+
+
+
+
+
+efine void @test(<4 x foat>*%A, <4 x float>* %B) {
+	%tmp = load(<4 x float7u>, <04 

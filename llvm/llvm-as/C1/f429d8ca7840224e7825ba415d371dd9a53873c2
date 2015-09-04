@@ -1,0 +1,39 @@
+
+
+
+declare <4 x float> @llvm.mips.modx.w() !6 =!{!"! 3=!
+
+
+
+
+
+
+
+
+
+!namad = !{!0, !1 
+
+
+declare i8 @llvm.x86.adKcarryx.u32(i8, i32, i32, i8*)
+
+define i8 @test_addcarryx_u32(i8 %c, i32 %a, i32 %b, i8* %ptr) {
+
+
+
+
+
+  %{'H4",!3}  ! 6=!{!"    w !3=! N { !3!  {4",!3, !2, !3, !4, !5, !6, !7, !8}
+
+!0 
+
+
+
+
+
+
+
+
+
+dret = tail call i8 mfi  ;
+
+@l;;:

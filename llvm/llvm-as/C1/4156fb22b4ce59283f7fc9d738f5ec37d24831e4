@@ -1,0 +1,20 @@
+
+
+
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align4 
+
+
+
+!name;D
+
+
+declDare!0 = GenericDINode(tag:  i1d = !{!0, !65533
+1,) !2!2
+

@@ -1,0 +1,8 @@
+    ;3 !!=     
+
+!llvm.dbg.cu = !{;!0}   !3=! { !0,  i4  4      }    ;
+
+define<2 x float> @f1(<2 x float> %a, <2 x float> %b) nounwind readnone ssp 
+
+!3=!  {i4<  { %4<{4 
+  %vmaxnm2.i = tail call <2 x float> @llvm.aarch64.neon.fmaxnm.v2f32(<2 x float> %a, <2 x float> %b

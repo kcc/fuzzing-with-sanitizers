@@ -1,0 +1,35 @@
+   
+
+
+
+
+
+
+define void @f() gc "h)adowstack" n;{etry:
+	ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:o-i64:6
+ 	 
+
+
+
+!named   
+
+
+
+
+*
+
+define void @f() gc "ha =!{!0, o!w

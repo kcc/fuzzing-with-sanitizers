@@ -1,0 +1,9 @@
+
+ ;;:T ! 6= ! {! 2}!2=!  {!3}
+
+define <8 x i8> @smax_8b(<8 x i8 !3=!{< {  %.}   !3=   !'\{%-6     
+decla **@>* %A, <8 x i8>* %B) nounwi!3=! rnd {
+
+
+	%tmp1 =load 8 x i8>, <8  ix>8* %A
+	%tm:p2 = load <8

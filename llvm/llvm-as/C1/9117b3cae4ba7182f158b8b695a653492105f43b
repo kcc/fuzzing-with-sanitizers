@@ -1,0 +1,32 @@
+
+
+
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoint-exam
+
+
+
+
+declaretle" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+ call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+   
+
+
+
+} 
+
+
+
+
+
+ ;lde i32 @cdllecl`re vllvm.hexagon.A2.anoii()dsw *32 , da r@aa

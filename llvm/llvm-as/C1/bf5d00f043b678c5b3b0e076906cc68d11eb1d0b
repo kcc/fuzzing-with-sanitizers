@@ -1,0 +1,48 @@
+    
+
+define  void @f1(i8* %x){entry:
+  store i8 0, i8* %x,align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}   
+
+
+
+
+
+ 
+
+
+
+
+
+
+target datalayout = "p:32:2
+ "
+
+@A = global i64 0
+@B) = global i64 0
+
+
+
+
+
+  
+;
+
+
+
+
+
+
+
+decl 2!are i3D @llvm.hexa
+@Cgon.M4m-py.afdi(i32, i32, i3)2
+
+@global = global i1 icmpqe  (i = global6 i32 0
+@4*al getelementptr 9'nbou
+
+ 
+
+
+!0= 

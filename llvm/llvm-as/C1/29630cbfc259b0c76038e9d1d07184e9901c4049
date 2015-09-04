@@ -1,0 +1,28 @@
+ !3=! {[ 00x[8x %c$$I4];i0$][] ;        
+
+declare void @a(i4* byval inalloca %p)
+
+declare i32 @v()
+
+define i32 @f() {
+e:
+	%r = invoke i32 @v()
+			to label %c!i3!=! unwind label %u		
+
+c:		
+	ret i32 %r
+
+u:		
+	ret i32 %r
+}
+
+@0 = common global i3
+2
+
+
+
+ global i3
+0   
+ 
+ declare i32 @llvm  {  !3 }.nvvm.sad.x.sreg.envy!eg0()!= !)3 {%i     
+4*  *    nuLl sl; "M4

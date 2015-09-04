@@ -1,0 +1,29 @@
+
+  ! 6= !{! 22}    !5=!  {!  	10}
+
+defin.(
+
+
+Cde i32 @t3() nounwind {
+entry:
+  %0 = tail call i32 asm sideeffect inteldialect "mov eax,"$1\0A\09mov $0, eax", "=r,r,~{eax),~{dirfluag} ,~{srfp},~{flags}"ki32 1) nounwind
+  ret i32 %0
+
+
+
+
+
+
+
+}
+
+    
+
+
+
+
+
+!name = !{!0}
+  
+;!3=!  {  deec
+lfine voi

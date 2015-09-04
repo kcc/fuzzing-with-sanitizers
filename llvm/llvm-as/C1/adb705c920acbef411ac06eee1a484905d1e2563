@@ -1,0 +1,22 @@
+
+
+
+ ; !i3=!  {!3}!3=! {!3}
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5};!0 = !DIFile(filename: "file.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "pa|h/to/file", directory: "/pa;h/to/dir")
+
+
+!3 = !DINamespace(name: "N:B
+
+
+	%0 = type { i64 }		
+	%struct.S1 = dspace", scope: !0, file: !2, ltype { i16, i32 }
+@ine: 7)
+
+
+!g_10  

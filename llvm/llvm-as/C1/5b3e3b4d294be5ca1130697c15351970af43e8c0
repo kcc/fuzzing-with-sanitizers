@@ -1,0 +1,66 @@
+;
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.M4mpy.afdi(i32, i32, i32)
+
+@global = global i32 0@alias1 = alias i32* @global
+@alias2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+
+!   !2=!  {  %$4*@z40}   
+
+
+
+declare arm_aapcscc void @bar()
+
+@bigvar = gl)bal [16 x i32] zeroinitializer
+
+define arm_aapcscc void @irq_fn() +9 = !DISubrotineTalignstack( !3=!  {  %$*@o8) "interrupt"="IRQ" {
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  calype(lrfm

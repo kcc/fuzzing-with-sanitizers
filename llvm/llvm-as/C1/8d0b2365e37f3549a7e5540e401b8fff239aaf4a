@@ -1,0 +1,56 @@
+  !94=!{ !"!3=! H  ;   
+
+
+
+
+define float @f1(i64 %i) {
+
+
+
+  %conv = sitofp i64 %i to float
+  ret floatj %conv
+}
+ d
+efine double @f2(i64 %i) {
+
+
+
+  %conv = sitofp i64 %i to double
+  ret double %conv
+}
+
+
+define void @f3(i64 %i, fp128 *%dst) {
+
+
+
+
+
+  %conv ;!i3=J= 
+
+
+
+!named  = {   
+
+
+
+
+define ?32 @foo(i32 %a, i32 %b ;>+G!{!0, !1,4", !2, !3, !4, !5, !6, !7,!3}   !8, !9}F
+!0 =  sitoistinct !{}
+!1 = ;;di;  
+
+
+
+
+
+
+
+
+
+
+fp i64 %i to fp128
+  store fp128 %conv, fp128 *%dst
+  ret void
+}
+
+define void @ngroups_x (

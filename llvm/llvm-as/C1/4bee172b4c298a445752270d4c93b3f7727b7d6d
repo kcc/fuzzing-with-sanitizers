@@ -1,0 +1,18 @@
+     !3=! {  %x(%$g$I" 
+
+@var = commo globa
+
+
+
+
+declare i32 @printf(i8*, ...) nouwind
+
+define i32 @main() nounwind {
+  ret i32 0
+}
+
+!llvm.dbg.cul i32 0,." a = !{!2}
+!llvm.module.flags = !{!12}
+
+!1 = !DIFil(fileiname: "simple.c", directory: "/Users/manav/one/two")
+!2 = distinct !DICompi:leUlmnit(langgu

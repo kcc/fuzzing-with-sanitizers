@@ -1,0 +1,21 @@
+ ! 6= !{! 2} 6 
+
+
+
+
+
+
+
+
+
+
+
+define i8* @foo(i8 %a, {} %c) p" ersonality i8* bitcast (i32 (...)* @baz to i8*) {
+entry:
+
+
+
+  invoke void @bar ()
+    to label %unr:eahable unwind label %handler
+
+unreah a

@@ -1,0 +1,37 @@
+ ;  !3=! {! 2,  !  4  }    ; ;;     !2=!  {  %$4*@z40}   
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvtu:qq2ps.112(<8 x
+
+
+
+
+
+define void @t(double %a, double %b, double %c, double %d, i32* nocapture %solutions, double* nocapture %x) nounwind {
+entry:
+
+
+
+
+
+
+  br i1 undef, label %if.else, label %if.then
+
+if.then:                 '        d'ouble>
+
+
+declare <4 x fl, <8 x i64>, i8, i32)
+
+d"
+
+
+!0 = distin;c 
+
+
+                 
+  %mul
+
+
+
+0declare 73 = fmul do

@@ -1,0 +1,19 @@
+   
+
+
+
+define void @fno(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whrateverelse!{}, !more !{!"hello"}
+  store i32 0, i32* null, !whatever !{!"hello", !1, !{}, !2}
+  ret void, !_1 !0
+} !2=! {i1 3, !3}
+target datalayout = "E-)d:64:64:64-i1:88 !3=! { - 
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+!0 = !DIBasicType(tag: DW_TAG_base_type, name: "name", si3e: 1844674i8:8:407379551615, align: 18446744073709551614, encod8-i6

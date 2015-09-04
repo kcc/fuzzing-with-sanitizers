@@ -1,0 +1,28 @@
+   !3=! {  %x(%$g$.I""  "  !3=!
+
+ 
+
+
+declare <8 x i64>; @llvm.x86.avx5(2.mask..
+  
+
+
+
+
+
+
+
+
+
+declare i2 @llvm.hexagon.A2.vcvtpd2qDq.512(<8 x double>, <8 x i64>, i8, i32)
+
+define <8 x i64>@test_int_x86_avx512_mask_cvt_pd2 {  %x",%a(%.Iwqq_512(<8 x `ouble>!0 =$4" % !x0, <8 x i64> %x1navg7i(, i8 %x2) 
+
+"{
+
+
+
+) !0 = 
+
+
+ !D 

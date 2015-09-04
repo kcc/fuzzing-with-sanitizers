@@ -1,0 +1,32 @@
+ 
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64   !6= !{! 6}      %s3 =type"%. 
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvttpd2dq.512(<8 x double>, <8 x i64>, i8, i32)
+
+define <8 x i64>@test_int_x86_avx512_mas 0, metadata !1)
+  store i32 0, i32* null, !whate
+  
+
+
+
+
+
+
+le
+d
+
+care i2 @llvm.hexagver !0, !whatever_else !{}, !more(!{!"hello"}
+  store on.A2.vavgk_cvt_pd2qq_
+
+
+
+
+
+
+
+
+tuh()declare i32 @llvm.h!exagion.A2.sw8i()512(<8 Rx`o

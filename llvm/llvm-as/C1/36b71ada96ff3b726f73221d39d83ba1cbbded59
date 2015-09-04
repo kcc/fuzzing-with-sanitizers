@@ -1,0 +1,38 @@
+ !3=! {! 2 , i4  4  }     !2=! {!3,!3};;  
+
+
+
+
+
+ 
+; 
+
+
+declare void @llvk.x86.R._sl2felce() 
+`
+   
+
+
+
+!n ; 
+ !3=!{! 2, i4 4 
+
+declare void @llvm.trap()
+
+define void @f1() {
+entry:
+  cal!l void @llvm.trap()
+  unreachable
+
+
+}
+
+
+
+
+target trip:e = "nvptx-unk;own/cuda"
+ declare { float, float, float, float } @llvm.nvvm.tex.unified.3d.v4f32.s23(i64, i32)
+declare i6 }  
+
+ 
+!nam4 @llvm.nvefv = !m.tex

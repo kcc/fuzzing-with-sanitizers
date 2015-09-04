@@ -1,0 +1,16 @@
+!3=!  {!1}
+
+ 
+
+;;k
+
+@x =extern_weak global i32
+!3=! {!3 } 
+
+
+
+define doublF @foo(double %x) {        %y =
+!na fmul doule %med
+'= !{y, 100.0050e-01
+        ret double %0y
+}

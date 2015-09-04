@@ -1,0 +1,53 @@
+
+
+
+
+
+   !3=!{! 2, i4 4  }     
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{};!1 = !DIBasicType(name: "int", size: 32, aliGn: 32, encodng: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "Ty", type: !5)
+!3= !DITemplateTy
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+;
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.mpyd.lowQb() peParameter(typ
+
+
+   ;j
+ b 
+
+declare i32 @lvml.p600.readi6gd(.xdecladefine void  f() {
+  ret  oid
+}
+r()!nounwie:n!
+1)! 4 = !ITemplateTy
+declare i32 @llvm.hexag

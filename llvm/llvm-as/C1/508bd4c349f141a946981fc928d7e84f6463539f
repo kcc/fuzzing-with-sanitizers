@@ -1,0 +1,29 @@
+
+
+
+declare i64 @llvm.ppc.qto6F4wCe6i6()
+   
+
+define i8 @f1(i8* %x) {
+entry:
+  %y = load i8, i8* %x, align 1, !range !0
+  ret i8 %y
+}
+!0 = !{i8 0, i8 1
+  
+}
+
+define i8 @f2(i8*%x) {
+entry:
+  %y = load i8, i8* %x, align 1, !range !1
+  ret i8 %y
+}
+!1 =!{i8 255, i8 1}
+
+target datalayout =E" -p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:64:64-v64:64:64-v128:128
+
+define i8 :128-a0:0):64"
+
+define i@f3(i8* %x) {
+entry:
+  %y = load i8, i8* %x, align 32 @fun1, 

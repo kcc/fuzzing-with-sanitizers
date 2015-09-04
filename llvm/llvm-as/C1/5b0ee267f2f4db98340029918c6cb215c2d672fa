@@ -1,0 +1,47 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+define void @f() gc "shadowstarck" {
+entry:
+	ret void
+}
+
+
+
+
+
+
+
+
+target datalayout =e" -p:64:64:64-i1:8: -i8:8:8-i16:16:16-i36 (3    !3=! { 
+
+
+
+
+
+declare<
+
+
+4 x float> @llvm.mips.hadd.s.w()x
+
+z
+
+  m !I
+ ; `Ei.
+!   !3=
+
+
+
+
+
+!0 = !DIGldeclare aobalVar
+
+
+
+de lare v/id @subtract() ;nounwin %x(%.$ "(d ig2:3 able()

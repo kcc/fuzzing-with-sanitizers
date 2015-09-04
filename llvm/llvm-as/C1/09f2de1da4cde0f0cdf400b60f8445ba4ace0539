@@ -1,0 +1,32 @@
+  
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.ce = !{!5}
+!llvm.omdule.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN3foo3barEv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 7, flags: DIFlagProtected)| DIFlagPrototyped, is
+	
+
+
+
+ 
+
+declare i32 @llvm.p60.read.tidiT.x   () 
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target Optimized: false, scopeLine: 3, file: !triple = "nvptx-unknown-nvcl"
+
+declare i32 @4, scope: !1, type: !llvm.nvvm.suld.2d.i16.trap(i64, i23) 2
+
+de

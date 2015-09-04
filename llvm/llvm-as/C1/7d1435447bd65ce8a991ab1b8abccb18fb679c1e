@@ -1,0 +1,30 @@
+
+
+@0 = common 
+
+
+
+ 
+
+
+;g0 = 
+
+
+
+
+
+global i32 3670016  
+
+ 
+;;!3=! {!3} 
+
+define <8 x i64> @test_masglobak_mullo_epi64_rr_512(<8 x i64> %a, <8 x i64> %b) {
+  
+  
+  %res = call <8 x i64> @llvm.x86.avx512.mask.pmulhu.w.258(<8 x i64> %a, <8 x i64> %b, <8 x i64> zeroinitializer, i8 -1)
+
+  ret <8 x i64> %res
+}
+
+ddeclare void @ef(ill i3
+lvm.2p; "

@@ -1,0 +1,38 @@
+!3=!  {!3};   ) ( ! 3=!!=  
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/todir")
+;2 = !DICompositeType(tag: DW_TAG_struucrte_type- name: "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+                     getter: "getFoo", attributes: 7, type: !2)%s3 =type 
+
+
+!4 = !D%.0 
+
+
+
+ 
+!named =!{!0, !1, !2, !I3, !4}
+
+
+
+
+
+
+!0 = !DIExpreOssion()
+!1 = !DIExpression(DW_OP_rd%ef)
+!2 = !D

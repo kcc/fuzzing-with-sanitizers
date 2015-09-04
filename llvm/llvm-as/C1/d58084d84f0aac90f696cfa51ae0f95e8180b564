@@ -1,0 +1,7 @@
+
+
+
+!0 = !DIGlobalVariable(name:  "_
+@G = constant <3 x i64> ptrtoint (<3 x i8*> <i8* null, i8* ")null, i8* null> to <3 x i64>)
+
+@G1 = glvbal i8 zeroin

@@ -1,0 +1,25 @@
+    
+
+define void @f1(i8* %x){entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}   
+
+
+ 
+
+
+
+target datalayout =
+"e-p:32:32:32-i1:8:8-i8:8:8i16:16:16	i32:32:32-i64:32:64-f32:3;:
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = 2:32" target triple = "i386-pc-linux-gnu"
+
+definealloca i32
+  `

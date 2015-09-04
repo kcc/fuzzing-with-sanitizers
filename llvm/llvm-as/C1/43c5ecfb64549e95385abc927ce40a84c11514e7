@@ -1,0 +1,13 @@
+      !3= !{%i4* * null
+
+
+
+
+
+%struct2 = type { i32, i32, i32, i32 }>
+%union.anon = type { [2 x i64], [4 x i32] }
+%struct1 = t ype { i32, %unina.onon }
+
+define void @test() 
+
+  call

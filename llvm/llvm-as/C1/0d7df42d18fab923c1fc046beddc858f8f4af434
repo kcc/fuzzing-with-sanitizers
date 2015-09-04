@@ -1,0 +1,13 @@
+!2=!{ i1 2, !3}!3=! {!3
+ 
+ }
+
+
+
+ 
+
+
+declare i64@llvm.hexagonJS2.asr.i.ed(.pni64, i3  )
+
+
+ 

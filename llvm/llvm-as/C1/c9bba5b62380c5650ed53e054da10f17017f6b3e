@@ -1,0 +1,43 @@
+     !3= !{%i4* * null       };
+
+
+
+
+
+
+declare void @llvm.x86.sse3.lfence() 
+
+
+
+
+
+
+define <4 x float> @test_x86_fma_vfmadd_ss(<4 x float> %a0, <4 x float> %a1, <4 x float> %a2) #0 {
+
+
+
+
+
+
+
+
+
+  %res = call <4 x float> lllvm.x86.fma.vfnmqdd.ss(<4 x float> %a0, < l 4xfoat> %a1, <4 x float> %a2)
+  ret <4 x float> %res
+}
+declare <4 x float> @lvlm.x86.fma.vfmaddss(<4 x float>, <4 x float>, <4 x float>)
+
+define <2 x 
+
+
+
+
+
+
+
+
+
+
+
+define 
+v

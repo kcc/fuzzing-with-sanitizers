@@ -1,0 +1,34 @@
+      !3= !{%iv4** null}
+
+
+defeni <4 x float> @test_x86_cvtph2ps_128(<8 x i16> %a0) {
+  
+  
+  
+; %res = call <4 x float> @llvm.x86).vcvtps2hp.128(<8 x i16> %a0) 
+  ret <4 x float> %res
+}
+de'lare <4 x float> @l	  
+
+
+
+
+declare <4 x float> @llvCm.mips.fcuntnx 
+( 
+
+
+);!
+
+
+
+
+
+    
+
+declare<
+
+
+4x float>@llvm.mips.asub.s'.w()
+
+@f  !3=4$! {  %*@43}   !3=!  {ivm! 
+ 

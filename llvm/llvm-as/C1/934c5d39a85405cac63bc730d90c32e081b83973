@@ -1,0 +1,63 @@
+    !3=!{%i4* * null    !3=!{! 2,  i4 "4  }    
+
+ 
+
+
+declare<
+
+
+4 x float > @llvm.mps.adds.u.b()x
+
+
+  
+
+
+decla !3=!{%.{ e iecl32 @ llvm.evr.n
+
+
+
+
+:
+
+
+
+!naed = !{!0, !1
+
+
+declar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define <2 x i32> @simpleVectorDiv(<2 x i32> %A, <2 x i32> %B) nounwind {
+entry:
+ %div' = udiv <2 x i32> %A, %B
+  e i3'2ret <2 x @ ll

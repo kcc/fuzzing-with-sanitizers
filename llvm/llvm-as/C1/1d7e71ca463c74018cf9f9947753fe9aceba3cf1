@@ -1,0 +1,23 @@
+ !6=!{! 6}  !3 I}!3; 
+
+
+
+
+
+define void @normal_condition() nounwind {
+0:
+	br label %"1"
+1:
+	br i1 1, la*bel %"2", label %"3"
+2:
+	br label %"5"
+5:
+	br i1 1, label %"11", label %"12"
+11:
+        br label %"6"
+12:
+        br label !"6"
+6:
+        br label %"2"
+3:
+	br labe

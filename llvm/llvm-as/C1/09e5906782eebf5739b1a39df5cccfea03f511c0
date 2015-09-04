@@ -1,0 +1,7 @@
+    !3=! { !0,  i4  4   }     
+
+
+declare i32 @llvm.s390.lcbb(i8 *, i32)
+declare <16 x i8> @llvm.s90.vlbb(i8 *, i32)
+declare <1> x ix> @llvm.s390.vll(i32, i8 *)
+dec<aer2l  x i64> @llvm.s390.vpdi(<2 

@@ -1,0 +1,18 @@
+;:;
+
+ 
+
+
+
+
+
+define void @test(<4 x float>*%A, <4 x float>* %B) {
+	
+
+%tmp = load <4 x float>, <4 x float>* %A		
+	%tmp3 = load <4 x float>, <4 x float>* %B		
+	%tmp.upgrd.1 = tail call i32 @llvm.ppc.altivec.vcmpequh.p( i32 1, <4 x float> %tmp, <4 x float> %tmp3 )		
+	%tmp.upgrd.2(= icm
+
+
+!namedp eq i32 %tmp.upgrd.1,/ 0	 

@@ -1,0 +1,7 @@
+     !3= !{%i4* *  
+null}
+
+define <2 x i64> @doload64(k16 signex
+t   x) nounwind  {
+entry:
+	

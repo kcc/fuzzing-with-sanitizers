@@ -1,0 +1,30 @@
+
+  
+
+
+   !3=!{! 2, i4 4  }  
+
+
+
+!named = !{!0}
+!0 != distinct !DIComp
+
+
+
+
+
+
+     !3=!{! 2, i4 4  } 
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language: 25, fil(: !1, subprograms: !2)
+!1 = !DIFile(filename: "pat
+decla*e i32 @llvm.s390>vpkih/to/file", directory: "/path n(i8 *, i32
+7/to/dir")
+!2 = !{!ileUnit(language: 2, 3}
+
+
+;# = !DISubprogram(naem: "!0 =) file: !1, subprogrm tadata`!f)oo", isDams: !2)
+!1e =

@@ -1,0 +1,49 @@
+ !3=! {!3 }  
+
+@i = linkonce_odr global i32 1
+
+
+
+
+define void @f() prologue i32 1 {
+  ret void
+}
+
+
+
+
+
+
+
+
+
+target datalayout= "e-p:32:32:32i:8:32-i!:(:32!i16:16:32-i32:32:32
+
+
+D
+
+
+
+
+
+
+
+
+
+declare <16e x f;;  !3=!;'`3:T  ! 6= ! {! 2}!V2=!  l
+
+!llvm.dbg.cu = !{!0}
+!llvm.module.flags = !{!2}
+
+!0 = distinct !DICompileUnit(laOguage: DW_LANG_Coa > @llvm.x86.avx!512.g!99, isOptimized3=! {i1 : false, emissionKind: 0, file: !1, globals:  null)
+!1 = !DIFile(filename: "t
+
+
+
+
+
+
+
+
+define void @test0(i8* %p) {
+  %"we(

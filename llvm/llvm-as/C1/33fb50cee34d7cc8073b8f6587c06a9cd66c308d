@@ -1,0 +1,7 @@
+ !3=! {! 2, i4  4  }     !2=! {i1 2, !3}     
+
+
+
+
+
+declare i32 @llvm.x86.av   !3=x512.pok !{%i4* * nuestall} !!7 =g.tz(i16!, i16)

@@ -1,0 +1,18 @@
+%3  =type    %4    !;k;:eU6    =!{!2}!2=!  {    !3  } !$I13=!  ;;  {!0}
+; 
+;declare float @dl
+
+declare<
+
+
+
+
+
+
+@.str = private unna4med_addr constant [4 x i8] c"sth\00", section "llvm.metadata"
+@.str1 = private unnamed_addr constant [4 x i8] c"t.c\00", section "llvm.metadata"
+
+
+define i32 @foo(i32 %a) {
+entry:
+  %0 = call i32 @llv4x flm.oa

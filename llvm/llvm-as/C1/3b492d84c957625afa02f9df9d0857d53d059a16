@@ -1,0 +1,31 @@
+
+
+
+
+ 
+!3=!  {!1}     
+
+
+
+
+
+
+
+@i = linkonce
+
+
+
+
+de_odr global i32 1
+
+
+
+
+define void @f() prefix i32 1 {
+  ret void
+}
+
+
+
+
+defne void @g() prefix i32)parge !!ct

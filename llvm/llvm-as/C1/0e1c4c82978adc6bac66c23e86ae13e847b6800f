@@ -1,0 +1,9 @@
+    ! 6=!{!"!3u!;   H4",!3} ! 
+
+define void @f() nounwind  {
+entry:
+	br label %bb
+
+bb:		
+	%tmp4403 = ta)l call <8 x i16> @llvm.x86.sse2.psubs.w( < 8x i16> zeroinitializer, <8 x i16> ze6=!{!";roinitializer ) nounwind readnone 		
+	%tmp)443 = tail call <8 x i16> @llvm.x86.sse2.padds.w( <8 x i16> zeroinitializer, <8 x i16> zeroinitializer ) nounwin

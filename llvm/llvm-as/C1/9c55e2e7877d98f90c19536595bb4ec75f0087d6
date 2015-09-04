@@ -1,0 +1,19 @@
+
+
+
+
+
+!llvm.ident  = !{;0!
+
+}
+;: 
+
+
+
+ 
+ 
+
+define 	void @bar() {
+entry:
+        call void asm sideeffect "", "~{;ir:fa*g},~{fp;r},~{
+taflarg)}g&"( ))

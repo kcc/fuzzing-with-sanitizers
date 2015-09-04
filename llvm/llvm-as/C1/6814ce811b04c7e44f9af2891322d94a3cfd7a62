@@ -1,0 +1,70 @@
+ 
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(iE32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                          inliedAt: !DILocation(lie: 12, scope: !3))
+  ret i32 %sum,ecla
+
+re  !dbg !DILocation(l:ie n13", scope: !3)5}
+
+global i64 -92237203685 ;: n) 
+
+%3  =type    %43 *  ; 
+
+
+
+ 
+;)defie i
+define li)
+nkon
+
+
+declare <ce i 8*!@  ! 6= !{! 22}
+	
+
+
+
+
+3@2f
+o4

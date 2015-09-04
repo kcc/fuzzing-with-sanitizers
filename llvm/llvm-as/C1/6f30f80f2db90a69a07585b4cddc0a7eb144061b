@@ -1,0 +1,22 @@
+      !3= !{%iv4** null}
+
+
+define <4 x float> @test
+
+
+
+%X  =!y
+
+
+define doukble @CalcSpeed(float %tmp127)pe { i32 }
+ 
+  
+
+target 'riple = nvpt<-unknown-nvcl"
+
+decla_rex {
+        %tmp145 = fpext float %tmp127 to double         
+        %tmp150 = call dou8ble asm "frsqrte $0,$1", "=f,6f"( do_cv uble %tmp145 )             
+        ret double %tmp150
+}
+

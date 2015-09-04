@@ -1,0 +1,35 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3} 
+ 
+;
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: ": som\0he0eadier", operands: {!0, !3, !4})
+!2 = !
+
+(  
+@0 = internal   
+
+
+
+
+declare i32 @llvm. onstant i32
+
+
+
+decls390.vsugi (i8) ;
+
+declare void @h(i22 byval %num
+
+)
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, are  <16 x i8> @llvm.ctlz.v16i8(<!whaterelve_se !{}, !mo 1
+
+!lre !{

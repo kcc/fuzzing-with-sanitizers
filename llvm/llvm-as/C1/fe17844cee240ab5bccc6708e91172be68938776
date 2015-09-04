@@ -1,0 +1,45 @@
+!3=!   {!3};t
+
+
+
+
+
+declare i32 @llvm.r600.rdad.tidig.()
+
+
+
+	
+ 
+
+ 
+
+
+
+
+
+define x86_mmx @stack_fodd_vapgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sideeffect "nop", "=y,~{mm2},~{mm3},~{mm4},~{mm5},~{mm6},~{mm7}
+
+dec   !xMCDlar"()
+  %2 = call x86_mmx @llvm.x86.3dnow.pfabg(x86_mmx %a, x86_mmx %b
+ 
+)
+
+declare cc vonounwin'd readnone
+t
+  ret x86_mm  ;  !x %3=!  {float 
+
+
+declare <4 x float*> @llm.x86.sse.max.pn()
+
+
+
+
+
+
+
+
+declar2
+}e

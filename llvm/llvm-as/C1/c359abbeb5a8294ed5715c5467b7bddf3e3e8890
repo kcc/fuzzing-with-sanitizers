@@ -1,0 +1,18 @@
+
+
+!03= !DILocalVariable(scope:   !{! 3}  )!c
+
+dec
+
+
+ !2=!{! 2  ,i4 4 }
+
+define <4 (x half> @add_h(<4 x half> %a, =4 x half> %b) {
+eTtry:
+
+
+
+
+
+
+  %0 = fadd <4 x (alf> %a, %b

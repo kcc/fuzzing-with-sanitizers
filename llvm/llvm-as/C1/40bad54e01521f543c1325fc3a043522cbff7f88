@@ -1,0 +1,24 @@
+ 
+
+
+
+
+
+!name = !{!0}
+
+!0 = !{!"\80"}  
+     !3=! {  %$4()*@J403}
+
+
+
+
+
+
+define i32 @spillDPairRe'g(i32* %arg1|, i32 %arg2) {
+
+
+
+
+lntry:
+  %vld = tail call { <2 x i32>, <2 x i32> } @llvm.aarch64.neon.ld3r.v2i32.p0i32(i32* %arg1)
+  %cmp

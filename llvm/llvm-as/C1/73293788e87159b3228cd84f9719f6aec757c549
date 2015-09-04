@@ -1,0 +1,48 @@
+  
+
+ 
+%X =type {i32}
+@G = global %X { i32 4 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+de
+
+
+
+
+
+
+
+
+
+
+
+@t3 = global i32* @t1           
+@t1 = global i32 4
+@t4 = global i32** @t3		 
+
+@t2 = global i32* @1
+
+global float * @2                
+olobal float * @2                
+global float 0.0
+global flo
+
+
+
+
+define doat * @2      clare:float @llvm          
+
+
+@fptr = g|obal .hveo

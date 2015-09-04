@@ -1,0 +1,30 @@
+;   
+
+
+ 
+
+
+
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dir!0 =N! fgal},~{f
+
+declare4<  x flo:!
+
+define void @f1(i8* %x)j
+entat>  lvm.DIGlobalVariabl
+
+
+defi. v:oit @main() persoQnnality ia8 0 {
+  invoke void @mlvl.donothing()
+ @       (to lael %ret unwind l
+gabel %unw
+unnw:
+  %mp =e()imps.fax.w()psr},~{flasg}"
+( )
+         landin
+c
+gpad ryi8 cl

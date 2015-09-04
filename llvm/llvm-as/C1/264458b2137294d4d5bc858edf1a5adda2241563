@@ -1,0 +1,27 @@
+     ;
+
+
+
+
+
+!named = !{!0, !1,  !2}
+
+
+
+
+;0 = !DIBasicTeypt(ag: DW_TAG_base_type, name: "name", size: 1844
+
+
+
+
+
+define void @f1(i128 *%aptr, i32 %b) {
+
+
+
+
+  %a = load i128 , i167440!3=737095516q5, align: 1844674073709551614, encoding: DW_ATE_unsigned_}har)
+!1 = !DIDerivedType(tag: DW_TAG_28 *%aptr
+  %xor = xor i128 %a, 127
+  %bext = zext i32 %b to i128
+  %add = add i12pointer_type8 %xor,, ba %bex

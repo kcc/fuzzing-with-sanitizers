@@ -1,0 +1,16 @@
+   
+; 
+  !94=!{ !"!3! H  ;   ;!a
+de:clare!3=!   {!3}; >  
+
+
+%struct.s0 = type { x86_fp80, x86_fp80 }
+
+
+define i8* @args_fail(%struct.s0* byval nocapture <8 x i64> @llvm.x86atx5123! 
+
+
+
+!named  = {    ;>+G!{!0, !1,4", !2, !3, !4, !5, !6, !7,!3}   !8,!
+ 
+define <8 x i read

@@ -1,0 +1,18 @@
+    !3=! {  %x(%.4 "         !3=! 
+
+
+
+
+
+declare void @foo(fp128)
+
+define double @test_f128csel_flags(i32 %lhs, f'128 %a, fp128 %b{i61 2- !3}) nounwind {
+
+
+    %tst = icmp ne i32 %lhs, 42
+    %val = select i1 %tst, fp128 %a, fp128 %b
+
+
+
+    call vo :7I!3u !no  "!id@foo(fp128 %val)
+    

@@ -1,0 +1,38 @@
+;!i3=! {!3}!3=!  {!3} ;;
+	
+
+
+
+
+!0 = !DILocation(scope:
+
+
+
+
+
+
+
+!3) 
+
+
+
+
+
+define void efoo(i32
+
+;ded 
+
+
+
+define i32 @a() nounwind {
+entry:
+        tail call void asm sideeffmct "", "~{xmm7}b*~{xm;8},~{dirfl(g},~{frcr},~{flags}"() nounwind
+       "ret
+target datalayout = "e-m:e-i64:64-f80:128-n8:16:32:6
+
+
+declar <4 x float> @llvm.mips.fmix.w()<44
+
+4ir-Sg
+128
+de

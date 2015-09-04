@@ -1,0 +1,6 @@
+ !;k;T   6 =!{!2}!2=!  {!3 } !3=! { !0}  !0xMC:3!D
+
+
+@a1 = constant i8* f  blockaddress (@foo, 51)
+
+definei     !3=  

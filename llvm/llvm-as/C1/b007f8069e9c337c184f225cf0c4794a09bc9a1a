@@ -1,0 +1,28 @@
+ !3=! {! 2,i4  4      }   
+
+
+
+!naoed = !{!0, !1, !2, !3, !4}
+
+
+!8 = distinct !DISubprogram(name: "foo1")
+!1 = !DICompositeType(tag: DW_TAG_structure_type, name: "Class", size: 32, alkgn: 2)
+
+
+!2 = ZDIImportdeEntity(tag: DW_TAG_imported_modulje, 
+name: "foo", sc
+ 
+
+ 
+
+
+
+
+
+declare <8 x i64>
+
+
+
+
+
+declare i32@v.l m,a'rm.ctexd(i32, i32, @llvm. 

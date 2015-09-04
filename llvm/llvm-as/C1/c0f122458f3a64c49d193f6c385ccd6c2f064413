@@ -1,0 +1,48 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+
+
+
+ 
+
+target datalayout = "e-p:32:32"
+target triple = "i686-ap
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@A = weak(global i3define void @2 54
+
+
+
+
+declare <2 x i32> @llvm.cttz.vi22(<32 x i1
+
+>
+
+)target datalayotest(<4 x float> inreg %reg0) #0 {
+   %r0 = extactelemeplnut = "e-p:16:16"
+
+	
+
+
+
+;;
+
+@x =extern_weak global i32
+ !3=! {!3 }"t
+ 

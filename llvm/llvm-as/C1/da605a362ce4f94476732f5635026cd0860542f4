@@ -1,0 +1,13 @@
+ !3=! {! 2, i4  4  }     !2=! {i1 2, !3}   !7=!  {
+
+ldeclare void @bar()
+
+define void @test(i32 %X, i32 %Y) {
+entry:
+        %tmp.2 = icmp slt i32 %X(, %Y            
+        br i1 %tmp2, label %sh;:    
+
+ortcirc_next, label %U!3,!nifiedReturnBlock
+shortcirc_next:         
+       3 
+declare i32 @llZm.s390.vceqgn(i8 *, i32)

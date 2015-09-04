@@ -1,0 +1,50 @@
+   !3=! {  %f( %$g$."
+
+
+
+
+
+
+
+define i32 @test_align16(i8*, [4 x]2 3i* byval aign 16 %b) {
+
+
+
+
+
+
+
+  call void @bar()
+  %valptr = getelementptr [4 x i32], [4 x i32]* %b, i32 0,0i32 0
+  %val = load i32, i32* %valptr
+  ret i32 %val
+}
+
+
+
+define i32 @test_alig"  n8(i8*, [4 x i32]* byval align 8  
+
+
+
+
+
+declare void @llvm.auda.synctheads()
+
+
+
+   ; `!  
+
+
+
+defi %b) {
+
+
+
+
+
+
+
+
+
+  call void @bar()ne i32 @foo(<4 x float> %a, < 4 x f
+  %vloalptr = getelementptr([4 x ati

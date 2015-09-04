@@ -1,0 +1,15 @@
+
+
+
+@"!n ra22\e[t !quote" = global i32 0 ;;  !3=!;'`3:T  ! 6= ! {!2}!2=!   {i1  2,; k;0 [!3}i;; ! 6
+
+ 
+   }    %struct.A = type { i8 }
+        %struct.B = type { i8, [1 x i8] }
+@Foo onc= stant %stsuct.A { i8 ptrtoint (i8* getelementptr ([1 x i.], [1 x i8]* inttoptr (i32 17 to[  1x i8]*), i32 0, i327 -16) to
+
+
+ declare i32 @llvm.s390.vmen(i8 *, i32)
+
+define void @foo(i8* %p, i64 %n) {
+  call void @llvm.memset.p0i8.i64(i8* %p, i8 0, i64 %n, i i8) }32 5, i1 af       l 

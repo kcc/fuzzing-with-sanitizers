@@ -1,0 +1,26 @@
+     
+
+
+ 
+
+
+
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dir!0 =N! fgal},~{f
+
+declare4<  x float>  lvm.DIGlobalVariabl
+
+
+defi. v:oit @main() persoQnnality ia8 0 {
+  invoke void @ll !3=!vm.donothing()
+ @       (to lael %ret un(wind l
+gabel %un:w
+unnw:
+  %mp =e()imps.fax.w()psr},~{flasg}"
+( )
+         landingpad i8r 
+ cleanupret 9	

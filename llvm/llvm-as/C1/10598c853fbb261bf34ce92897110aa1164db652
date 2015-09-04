@@ -1,0 +1,15 @@
+
+
+declare i64 @llvm.ppc.tF4w6i6declare()    
+
+
+
+
+!named = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+!2 = !DIModule(scope: !0, name: "Module", confiMacros: "-DEGNBE"U, incl 

@@ -1,0 +1,58 @@
+;;; ic! 3=!  {!  	1} 
+  
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, fiI32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocaton(line: 2, scope: !4,
+                                          inlinedAt: !DILatoicon(line: 1@, ;cope: !3))
+  ret i32 %su,eclare  !dbgDI! Loc
+
+
+
+decatio
+
+define i32 @test_x86_n(l:ie nlare i32 @l13", scope: !3)
+
+
+
+
+!named = !{!0, !1,l bm_bexvm.s3t

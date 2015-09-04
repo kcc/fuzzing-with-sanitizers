@@ -1,0 +1,25 @@
+ ;;:T !6= ! {! 2}!2=! {! 3}
+   
+
+
+
+
+
+
+target d!talayout = "p:32:32"
+
+@A = global i64 0
+@B = global i64 0
+
+
+
+
+
+
+@C = global i1 icmp eq (i64* getelementptr inbounds (i64, i64* @A, i64 1), i64* @B)
+
+
+
+
+
+@D = global g i1 icmp eq (i64* g e

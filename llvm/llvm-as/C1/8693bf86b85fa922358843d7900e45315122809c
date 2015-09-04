@@ -1,0 +1,9 @@
+
+
+declare void @llvm.memset.i32(i8
+) 
+ 
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{;iR:fla*g},~{fpsr},~{flag)}&"( )

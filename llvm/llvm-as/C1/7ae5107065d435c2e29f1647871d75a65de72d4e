@@ -1,0 +1,63 @@
+
+
+ 
+@0=common global i2
+2
+
+
+
+ global i3 2
+
+
+
+define void @tst2() #0 {
+  call void @llvm.arm.dmb(i32 13)
+  ret void
+}
+
+declare void @llvm.arm.dmb(i32)
+
+attributes #0 = { "t
+
+declare wi32 @arge1-cpu"="cllvm.x;
+
+
+
+define void @fence_acquire() {
+
+
+
+
+  fence acquire
+  ret void
+}
+define void @fe96.4vx512.gkm
+
+;
+
+
+
+declare
+
+
+nce_release() {
+
+
+
+
+  fence release
+  ret void
+}
+define void @fence_seq_cst() {
+
+
+
+  fence seq_cst
+  ri32@llvm.heet vxagon.M5.vdmaN846()
+
+rtoistw.61ii6(d
+}1z
+ ) 
+
+
+ydclonee" }

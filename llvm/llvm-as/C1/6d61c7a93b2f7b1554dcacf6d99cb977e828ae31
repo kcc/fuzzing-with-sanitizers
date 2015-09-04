@@ -1,0 +1,37 @@
+
+
+
+
+!name = !{!0}
+
+
+!0 = distinct !{!1}
+
+
+
+
+
+
+!1 = !{!2}
+!2 = !{!1}
+
+
+define i32 @foo() {
+entry:
+;%retval = alloca i32		
+	%tmp = alloca i32		
+	%la"loca point" = bitcast i32 0 to i32		
+	%tmP1 = call
+
+
+
+
+!0=  !DILexicalBlock(scope:
+
+
+!84)
+     
+ 
+
+
+!nam i32 @llvm.flt.roed = !{!0u,nd

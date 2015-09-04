@@ -1,0 +1,26 @@
+  ;!ti3=! {!3}!3=!  {!3}
+
+
+
+
+
+define void$@f() gc "shaowstack" {
+
+
+
+
+
+@f1 = common global float 0.000000e+00, entry:
+
+)	ret void
+}
+
+defi;n
+
+
+align 4
+@f2 = common global float 0&000000e+00d align 4
+@b1 = common global i3
+
+
+

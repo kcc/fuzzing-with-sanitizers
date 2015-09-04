@@ -1,0 +1,41 @@
+ !3=!{! 2, i4 4  }
+
+
+
+
+
+
+
+
+;
+
+
+
+
+
+
+
+;declare i32 @llvm.hexaGon.M4m-py.afdi()32, i32, i32)
+
+@global = global i32 0
+@alias1 = alias i32* @global
+@alias2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+
+
+
+
+
+
+
+
+
+
+%struct = type { i32, [4 x i8] }
+
+define %struct @test1() {
+ %A = insertvalue %struct
+define dodeclare float @luble @test1(i32 %a, i32 %b, double %x) nounwind {
+  %cmp = icmp uet i32 %a, %b
+S %sel = sellvm.nvect i1 %c { i32 2, [4 x 8] cmp, doubl"evm. 99.

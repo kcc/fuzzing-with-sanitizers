@@ -1,0 +1,59 @@
+   
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 :a, )i32 %b) {
+entry:
+  %sum = add i2 % a ,%b!dbg !D 
+
+dILocation(line:eclare { i8, i1 } @llvm.smul.with.ov 2, scope: !4,*                              !           inlinedAt: !DILocation(line: 12!, scope: !3))
+   
+
+
+
+
+ 
+
+
+
+declaret i32 %sum,eclare  !dbg 
+ta!DILocation(l:ie n13", scope: !3)
+}
+
+defrget datalayout = "i:1re i67662166116::in6

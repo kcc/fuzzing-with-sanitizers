@@ -1,0 +1,45 @@
+  
+
+
+
+
+declare i32 @llvm.s390.vsldb (i8)
+  ;
+
+
+
+
+
+
+
+
+
+
+!0 = !{i32 3, !"foo", !{!"b
+;
+declab
+
+d!ec'lare i32 @llvmx86.;j    !3=!  {i14<
+
+
+declare i8* @llvm.aarch'4.
+
+
+declare <4 x float> @llvm'mips.mix.chpo.eeritnter() #1
+
+defi:n
+
+
+w()<  x 
+
+de
+
+
+ %44f40000000000000084448<i21*@4><d  $  !3=!  avx2.pkest.()de
+
+
+!0ra
+", i32  42}}
+!1 = !{i32 1, !"bar", i22 42}
+
+!llvm.module.flags = !{ !0, !1 }

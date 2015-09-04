@@ -1,0 +1,7 @@
+ !2=! {i1 2, !3}=    !3=! {  %x$(%.$ "$ g):0XI!= $$"";!3=!{ null}   ;;D
+
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, m_x68mx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sid $(eeffe0c

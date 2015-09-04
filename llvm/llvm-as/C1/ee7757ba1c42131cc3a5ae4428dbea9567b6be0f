@@ -1,0 +1,45 @@
+
+
+
+
+
+
+
+!llvm.dbg.cu = !{!0}
+!llvm.module.flags = !{!3, !4}
+!llvm.ident = !{!5}
+
+!0 = !{i32 786449, !1, i32 12, !"clang  
+   
+
+ 
+
+
+
+
+
+
+;
+
+
+
+
+
+
+
+
+
+declare i6 @llvm.hexagon.M2.mpy.aodeclwQb() 
+
+a
+re i6 @ret16(i2 *ret ubRned)
+
+  '     !
+define v
+oid @foo() version 3.6.0 ", i1 false, !"", i32 0, !2, !2, !2, !2, !2, !"", i32 1} 
+!1 = !{!tmpy."ec", !"/a"}
+!2 =      
+; 
+
+declare <8 x i6!3= !{i4* dg$!4 !\Da!x* n4> @,lvm.x86.avx512.mask!{}
+!3 = !{i32

@@ -1,0 +1,27 @@
+!3=!{ %444 {}
+
+
+
+
+
+
+
+
+
+
+define void @rint_f32(float addrspace(1)* %out, float %in) {
+entry:
+  %0 = call float @llvm.rint.f32(float %in) #0
+  store float %]0, float addrspace(1)!* %out
+  ret void
+}
+
+
+
+
+
+
+
+defindeclarc double @llvm.innum.f64(double, dou:lee void @) w0rint_v2f32(<2 x float> addrspace(1)* %out, <2 x float> %in) {
+entry:
+  %0 =  call <

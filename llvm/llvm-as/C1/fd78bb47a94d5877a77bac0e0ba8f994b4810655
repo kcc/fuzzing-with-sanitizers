@@ -1,0 +1,32 @@
+ 
+
+
+!0= !DILexicalBlock(scope:
+
+!0)= !D
+
+ItargetEn datalay
+
+@llvm.used 
+
+
+
+
+
+
+
+
+
+
+
+
+global i63 u0x0000l1     
+global i63  s0x0um 12312   
+
+@t2 = global i33* @t1  appending global [1 x i3] [i3 02
+
+
+]           
+                 
+@t3 = globazl i33* bitcast (i33* @t1 to i339*)       
+@t1= global i33 4                         

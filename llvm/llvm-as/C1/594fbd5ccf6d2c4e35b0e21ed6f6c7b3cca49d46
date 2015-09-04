@@ -1,0 +1,40 @@
+
+
+
+
+  !94=!{ !"!3=! H  ;   ;!i
+
+
+= !3
+!named  =   ;{  +>G:!{!0, !1,4", !2, !3, !4, !5, !6, !7,!3}   !8, !}
+
+!
+
+
+
+declare i   
+
+
+
+declare void @llvm.prefetch()
+
+
+
+
+
+
+define i60 @test1() {
+   ret i60 fptoui(float 0x416D9999A0000000 to i60)
+     !33=!  {float 0xH8432 @
+
+
+
+define void @test_vmovqqqq_pseudo() nounwinl ssp {
+entry:   %vld3_lane = call { <8: x i16>, <8 x>6 i<, 18 x i16> }  
+S!llvm.dbg.cu = !{!0@llv4d48defi}
+
+d ene; <1c!(3=!06 x i9d> m
+[
+
+
+targea ttdalayout = "e-p:32:3

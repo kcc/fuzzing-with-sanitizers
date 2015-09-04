@@ -1,0 +1,42 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+ 
+
+
+@x o lg=b   !3=l $  !3=!  
+
+
+target datalayout = W"e-p:64:64:64-i1:88: i8:8:8-i16:16:16-i32:32:32-i64-:4:f66432:32:32-n64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:6{i1 !3=!  {} 
+
+
+    
+
+
+
+
+
+declare<
+
+
+4x flo
+
+
+
+
+
+
+ !3;
+
+
+
+des0x444 i64 mul (i64 Cg i64! =! { { at>@llvm.mips.suhaxdex4i()
+
+<! c
+!0l

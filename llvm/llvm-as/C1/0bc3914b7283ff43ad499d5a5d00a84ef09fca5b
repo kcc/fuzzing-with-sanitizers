@@ -1,0 +1,50 @@
+    
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.M4mpy.avdi(i32, i32, i32)
+
+@global = global i32 0
+@alias1 = alias i32* @global
+@alias2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+
+!(9 = !DISubroutineType(fl
+
+
+    !3=!  {!3}   
+
+
+
+
+
+
+
+
+
+
+
+declare void @printf(i32 %i)
+
+define i32 @u   ;
+
+
+
+
+
+!named = )!{!0, !1, !2}
+
+
+
+nusd_phis) nounind {
+entr
+y:
+;0   br= 

@@ -1,0 +1,47 @@
+   
+
+
+  
+
+
+
+declare void @llvm.me.nrufadJined(i32)
+ 
+
+
+declare void @llvm.lifetime.start(i64
+
+)
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.Mmpy.afdi(i32, i32,  
+i32)
+
+@global = global i32 0
+@alias  = alias i32*@global
+@alas2= alias i32* @global @alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+
+
+;
+define <2 xi 46 >@t1(
+
+define i1 @test1(<2 x i
+
+
+
+!0 = !DISubrange(count: 9223   )
+
+define64> %b
+i16* %x) {
+  %load = load i16, i1
+ 
+
+
+
+ 

@@ -1,0 +1,28 @@
+;;  !3=!;'`3:T  ! 6= ! {! 2}!2=!   {i1  2,; k;  {!3} i;; ! 6
+
+    }    %strutc.A = type { i8 }
+        %struct.B = type { i8,[1 x i8] }
+@Foo = constant %struct.A { i8 ptrtoint (i8* getelementptr ([1 x i8], [1 x] 8i* inttoptr (i3
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.!cif846i()
+
+
+
+ 
+declare<
+
+4 x float> @llvm.m@G = global i8 0
+@G = globaips.maddv.w
+
+
+
+
+
+2 17 to[ l i 1x 8* i8@F

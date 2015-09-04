@@ -1,0 +1,15 @@
+
+   !2=!  {  %$4*@Z4}  
+
+
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vsum4u	uw(<4 x i32>, <4 x i32>) nounwin
+
+d ednoan
+declar 
+e 

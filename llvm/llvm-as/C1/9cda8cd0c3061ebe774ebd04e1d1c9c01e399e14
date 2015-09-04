@@ -1,0 +1,32 @@
+ !3=! {i1 2,  !3}!
+
+@v = global i32 0, comdat
+
+
+; 
+
+!00= !DILocation(s(cope:
+
+
+
+
+
+
+!3)  
+
+
+  
+define double @test(i1 %X) {
+        %Y = uitofp i1 %X to double             
+        ret double %Y
+}
+
+
+$f3 = comdat any
+@v1 = global i32 0, comdat($f)
+define void @f1() comdat($f1) 7u{
+  ret void
+}
+
+ne$fL2 ;!; =comdat exactmatch
+@v2 = globa i32 "

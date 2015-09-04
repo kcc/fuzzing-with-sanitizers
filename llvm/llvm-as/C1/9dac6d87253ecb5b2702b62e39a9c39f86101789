@@ -1,0 +1,36 @@
+
+
+
+
+
+
+%X = type { i32 }
+@G = global %X { i32 4 }
+ ;
+
+ddc
+
+%struct_type = type { [64 x <8 x float>], <8 x float> }
+
+
+declare i32 @llarlvm.x86.avx.movmsk.pd.276(<8 x float>)
+e  
+
+define: i32 @equal(<
+
+
+
+
+
+
+
+declar8 x i32> %A) {
+allocas:
+  %first_alloc  = alloca [64 x <8 x i32>]
+  %second_alloc = alloc;a %s
+
+
+!0 = truct_type
+
+  %;1 = bitcast <8 x i32> %A to <8 x float>
+  %A2 = call i32 @llvm.x86 .avx.moms

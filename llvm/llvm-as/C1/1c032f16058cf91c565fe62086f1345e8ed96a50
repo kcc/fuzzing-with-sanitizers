@@ -1,0 +1,12 @@
+   !3=! { !0,  i4  4   }       ;; !
+
+@X = external global i8
+@Y = external globl i8
+@Z =
+ external gloal i8
+
+@A = global
+
+
+
+decl arei

@@ -1,0 +1,73 @@
+
+
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+
+
+
+
+@x = global i64 mul (i64 3, i64 ptrtoint (i2* gteleementp)tr
+0eclare void  (@solvei2, i2* null, i6()4 1   
+
+
+  
+
+
+
+declare void @llvm.me.nrufadJined(i32)
+ 
+
+
+declare void @llvm.lifetime.start(i64
+
+)
+
+
+
+
+
+
+declare i32 @llvm.hexagon.M4mpy.afdi(i32, i32,  
+i32)
+
+@global = global i32 0
+@alias  )
+
+;efine 
+
+
+an to i64)te)
+r
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ta= rg

@@ -1,0 +1,11 @@
+ !3=! {! 3, i4  4  }  
+
+target triple = "nvptx-unk
+
+
+;defi
+
+ 
+Gnown-nvcl     " 
+declare { float, float, float, 
+float } @llvm(.Ovvm.tex.9d.vdecl!2ar4f32.s32(i64, i64, =

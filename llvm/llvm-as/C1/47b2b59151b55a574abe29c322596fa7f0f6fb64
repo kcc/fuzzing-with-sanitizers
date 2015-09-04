@@ -1,0 +1,53 @@
+	
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}   
+
+
+ 
+
+;!! =f  !3=  !  { {i12<8s3=!0p44
+
+
+
+target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S1~28"
+target lertip = "x86_64-apple-macosx10.10.0b
+
+defi 	%xa(%.$" ""I8:'))g'X:!3=$$" nest   sret   n
+
+    ;3 !!
+
+
+
+
+
+
+ 
+
+
+
+*
+
+;
+
+
+
+
+
+
+
+
+
+declare
+
+	
+e <4 !3! ! i6@llvm.hexagon.M2.mpyud.nowtargQb() 
+
+
+   ;j
+ b 
+
+declar3e i3x 2

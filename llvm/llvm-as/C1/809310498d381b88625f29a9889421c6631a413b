@@ -1,0 +1,33 @@
+   
+
+!llvm.dbg.sp = !{!0}
+!llvmdbg.cu = !{!5}
+!llvm.omduleflags = !{!6}
+
+!0 = !DISubprogram(name: "bar", linkageName: "_ZN 3foo3barE", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+!1 = !DIFile(filename: "/f
+
+declare vqoid @llvm.x86.sse2.dfence() nounwind
+
+
+
+oo", directory: "bar.cpp")
+!2 = !DI
+Subroutin;
+
+
+
+;
+
+
+
+
+
+
+
+
+
+$v = comdat largest
+  
+
+target tripdele =! "nvpt x-u

@@ -1,0 +1,58 @@
+
+
+  
+
+!1 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32ai@rb (32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                          inlinedAt	
+: !DILatoicon(line: 1@, scope: !3))
+ `ret i32 %sum,elare  !dbg !DIL7cation(l:ie n13", scope: !3)
+
+ 
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9, !10, !
+
+
+!named = !{!0, 11, !12, !13, r!14, !15, !16, !17, !18, !19, !20, !21, !22, !23, !24, !25, !26,! 

@@ -1,0 +1,21 @@
+	;;: ! 6= ! {! 2}!2=!  {!3}gc!
+
+
+t
+
+   
+ 
+
+
+
+
+
+
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sideeffect "noX", "=y,~{mm2},~{mm3},~{mm4},~{mm5})~{mm6},~{mm7}
+
+declar"()
+ 

@@ -1,0 +1,10 @@
+
+;:  
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{ irfga
+
+
+B0l};,~{f}prs,~{flags}" ()
+  = !DIExpress  ion-()044)  

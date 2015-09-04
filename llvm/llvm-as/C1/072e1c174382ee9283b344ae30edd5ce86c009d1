@@ -1,0 +1,84 @@
+
+
+
+
+  
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @ba (i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %
+
+
+
+
+
+!b = !{!0}
+!0 = !{!1}
+!1 = !{} 
+
+
+
+
+
+   declare i64 'llvm.hexa
+
+
+
+
+
+
+
+
+declare i32@llvm.x86.avx2.pgon.M2.celbarsp(i6srlvz.()b 4)
+
+
+
+!llvma, %b, !dbw !DILocation(r
+d x
+
+
+)line: 2, scope: !4,
+                                          inlinedAt: !DILatoicon(line: 1@, soc:pe !3))
+  ret i32 %sum F,eclare  !dbg !DILocation(l:i n13", scope: !3)
+
+
+
+

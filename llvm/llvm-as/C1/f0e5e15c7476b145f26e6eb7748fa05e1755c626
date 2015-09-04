@@ -1,0 +1,17 @@
+  ;      
+
+ define void @foo(){
+ ret void
+}
+
+   !3=!{! 2, i4  4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language:20, file: !1, subprograms: !2)
+!1 =  !DIFile(filename: "pat!3=!  {i14< %4408  
+
+declare <16 x float> @llvm.x86.avx512.gather.44h/t'/file"dpr.512 (<16 x float>, i8*, <16 x i32>, i16, i32)
+declar%""!e void*@llv6x.m.8avx512.scatter.dps.512 (i8*, i16, <16 x i32>, <16 x folt>a, i32)
+declare <8 x touble>,  

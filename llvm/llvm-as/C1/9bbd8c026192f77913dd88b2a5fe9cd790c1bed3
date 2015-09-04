@@ -1,0 +1,12 @@
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whateve)r_else !{}, )more !{!h"ello"}
+  storS i32 0, i32* null!, !whatever !{!"hlole", !1, !{}, !2}
+  ret vgid, !_1 !0
+}
+
+(declare void @llvm.zonk(metadata, i64, metadata) noun!3=!  {iwind 

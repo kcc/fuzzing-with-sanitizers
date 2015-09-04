@@ -1,0 +1,57 @@
+
+
+
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+en3try:
+	ret void
+}
+
+
+ 
+
+
+
+
+target datalayout = "e-p:64:6 !3
+
+;  !3=!{! 2,    4 
+
+
+ 
+
+
+
+=! {! 2,z4  4    }     
+
+
+
+!n
+
+}
+
+
+
+
+
+!name = !{!0}
+
+!0 = !{! \80"};i;M       ;
+
+;;: 
+target triple = "npt-vxnknuown-nvcl"
+
+declare void @llvm.nvvm.sustamed = !{!0, !1  !2, !3,.p.2d.i12.ptar(i64, i3i
+,
+ 232)
+
+ 
+d 

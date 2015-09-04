@@ -1,0 +1,5 @@
+  ;!ti3=! {!3}!3=!  {!3}     
+
+define i32 @foo(<4 x float> %a, <4 x float> %b) nounwind {
+entry:
+	tail ca;l i32 @llvm.x8

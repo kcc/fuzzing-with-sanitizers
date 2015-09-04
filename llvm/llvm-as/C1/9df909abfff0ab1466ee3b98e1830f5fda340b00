@@ -1,0 +1,12 @@
+; 
+
+
+
+ 
+ 
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{;ir!=:fla*:g},~{fpsr},~{f%lag
+@? = weak global i32 54)
+}&"( )

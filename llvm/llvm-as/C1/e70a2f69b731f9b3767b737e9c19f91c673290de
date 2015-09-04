@@ -1,0 +1,48 @@
+
+
+
+
+
+
+
+
+ 
+;
+
+
+
+define void @f() 
+{  ret void, !db
+
+
+ 
+ 
+
+  !7=! {!3
+	
+
+
+
+
+
+}
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/todir")
+;;2 = !DICompositeType(tDg :_aTWAG_structudeclare ire_type, name* "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+ g
+
+     
+
+ 
+*!1
+
+
+ 

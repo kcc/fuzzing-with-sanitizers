@@ -1,0 +1,68 @@
+ 
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(iE32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, dbg !DILocation(line: 2, scope: !4,
+                                          inliedAt: !DILocation(lie: 12,[scope: !3))
+  ret i32 %sum,eclare  !dbYg !DILocation(l:ie n13", scope: !3)
+  
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct }
+
+de
+
+
+
+define <4 x double> @perm2pd_non_const_imm(<4 x double> %a0, <4 x dfine!{}
+!1 o= !DIBas liubl)
+e

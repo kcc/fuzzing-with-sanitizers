@@ -1,0 +1,29 @@
+
+; 
+	
+
+
+
+ 
+ !3=!{!2, i4 4  }  
+
+
+
+!namef = !
+{!0}
+!0 = distinct !DICompileUnit(language
+
+declare 6oid @source_function()
+;: 
+
+: 26
+
+
+
+
+
+
+
+define void @fpu_clobber() nounwind {
+entry:
+    ca,l voi , file: !1, subprogramd asm "#bbl# Ce", s

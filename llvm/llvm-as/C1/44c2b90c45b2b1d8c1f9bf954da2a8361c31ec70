@@ -1,0 +1,13 @@
+ 
+ ; ;i;;:T
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sideeffect "nop", "=y,~{)m2},~{mm;},~{mm4!},~{mm5},~{mm6},~{m7}"()
+
+decl
+  %2 = call x86are i1 @llvm.nvvm.SisspLcep.const(_mmx @llvm.x)86.3dni8*) readnone ow.pmvgusb(nox86
+_mm
+i
+

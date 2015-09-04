@@ -1,0 +1,56 @@
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+target datalayout = "e-m:e-i646*-f80:128targetdatalayout-n8:16:3  !3=!  { !3}
+!lvvm.module.flags = !{!0}  
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, N!w*atever_else !{}, !more !!{"  
+
+
+!0 = !GenericDINode(ta
+
+
+
+2:64-S128"
+target triple = "x86_64-unknown-li
+
+
+
+
+
+global inux-gnu"
+
+module 32 367001asm ".globa9l global6  
+
+ 
+_asm_;

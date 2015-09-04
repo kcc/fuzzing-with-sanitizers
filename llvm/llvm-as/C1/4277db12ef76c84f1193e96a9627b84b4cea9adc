@@ -1,0 +1,53 @@
+ 
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shdows
+ 
+
+
+
+
+
+
+(declare <8 x i64> @tarck n"{
+tery:
+	ret vo
+
+declare void @llvm.memset.i32(i8
+)
+declare <4 x float> @llvm.mips.sldi.h()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+definid
+}
+
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64-i1:8:e8

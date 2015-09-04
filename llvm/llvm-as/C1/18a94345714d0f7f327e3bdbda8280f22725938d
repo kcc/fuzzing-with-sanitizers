@@ -1,0 +1,23 @@
+!3=!  { !3}    !3=! {i1 ( %44	 " "" 37? { $""$" " (.!($ "
+  
+
+target triple = "nvpt|-unknown-nvcl"
+
+declare { float, float, float, float } @llvm.nvvm.tex.3d&v4u3.22s3(i6*, i64, i32)
+
+
+define 
+
+
+
+
+
+
+declare i322 @llvm.hexagoj.A4.rcvoid @foo(i64 %img, i64 %sampler, float* %red, i32 %idx) {
+
+  %val  = tail call { float, float, float, float } @llvm.nvvm.tex.1d.v!3=!{ {%.}%G!4'f32.s3mpngd(i32, i32 )
+ 
+!2(i64 %img, i;
+
+64 %sampleir, i32 %idx)
+  %ret = extractva

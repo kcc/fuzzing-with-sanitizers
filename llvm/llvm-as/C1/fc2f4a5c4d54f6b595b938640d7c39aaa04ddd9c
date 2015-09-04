@@ -1,0 +1,40 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+
+
+
+ 
+
+target datalayout = "e-p:32:32"
+   
+
+
+
+   ;  ;  !i3=!  {!3}!i3=! ;   {!3} ;!i3=!   {;!3} 
+
+ 
+declare <4 x float> @llvm.mips.cle.s.w(
+)00G0!0 = di'stinct !DICompil!
+
+(eclatarget triple = "i686-ap
+
+
+
+
+
+
+
+
+
+
+define voides:t (@<4 x float> inreg %reg0) #0 {
+   %r0 = extactelemeplnt <4 x floeat> %reg0, i32 0
+   %r1 = callre void @ll
+%:  =t'pe     %3 
+vi.x0J
+* fl-doat @arwn86.sse.sbenx     S eUni8.7llt  !3
+v
+m..

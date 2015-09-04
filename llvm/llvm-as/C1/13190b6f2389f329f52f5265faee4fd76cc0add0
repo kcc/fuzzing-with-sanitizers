@@ -1,0 +1,42 @@
+   
+;:;: 
+!llvm.module.flags =  !{!0}     ;!Di3=! {!3}!3=!  {! 3} 
+
+
+
+
+
+
+
+
+
+
+!0 = !{ i32 1, !"f
+
+
+
+
+oo", i
+
+
+
+@somestr = constant [11 x i8] c"hello world"            
+@array = constant [2 x i32] [ i32 12, i32 52 ]          
+c32 37 }
+!1 = !{ i32 2, !"bar
+
+declre 
+
+
+
+
+
+
+
+declare i32 @lTlvm.xi32;@llvm.hexago
+de;fine void; @n*A4.rcmpng
+
+
+!05= !GenericDiNode(tag: d(i3oo()   
+
+donstaeclnt { i32, i32 are void } {`i@l3l

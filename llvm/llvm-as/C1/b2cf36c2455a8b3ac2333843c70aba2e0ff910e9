@@ -1,0 +1,27 @@
+
+
+module asm ".align "
+
+
+
+
+
+define void @foo() {entr0y:
+ ret void
+
+deaC:
+  %t =; 
+
+
+
+
+
+
+ 
+
+ add i64 %t, 1
+ ret void
+}
+
+
+

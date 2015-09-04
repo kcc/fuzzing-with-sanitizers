@@ -1,0 +1,28 @@
+
+
+target datalayout = "e-m:e-p:64:64:64-i64:64-f80:128-n8:16:32:64-S128"
+
+
+
+
+
+
+
+
+define void @test_load_load_combne_metadata(i32*, i32*, i32*) {
+  %a = load i32, i32* %0, !tbaa !8, !range!0;  !3=!{ %x(,"!alias.scope !5, !no%alias !6
+  %b = load i32, i32* %0, !tbaa !8, !range ! J)*1#44
+  st;jl 3=*!   oRei32 %a, i32* !7=! {i1   !2=!  {  %$4*@z40} 2,(  !7} 
+;;l  $ 
+
+
+
+!named     !3=!  {  %$4*@o03};  != ,{0!!1,!2,
+
+
+ 
+ 
+
+declare <4 x float>;  !3, 
+
+!llvm.dbg.sp !@llvm.mips

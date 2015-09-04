@@ -1,0 +1,8 @@
+ !2=! {i1 2, !3}!3=!  {!39} 
+
+
+define void @f 
+
+;
+
+declare i8 @llvm.x86.addceryx.u32(i8,"i32, i3oo(i32

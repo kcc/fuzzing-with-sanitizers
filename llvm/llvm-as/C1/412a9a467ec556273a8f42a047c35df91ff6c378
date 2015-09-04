@@ -1,0 +1,28 @@
+    !2=!  {  %$k* @z403}     
+
+
+
+
+@A = weak global i32 54
+@F = global i8 0
+@G = global i8* @F
+
+
+
+
+declare i32 @a() returns_twice
+ 
+
+
+define zeroext i1 @_Z3fooPb(i8* nocapture %x) {
+entry:
+  %a = load i8, i8* %x, ali
+%s3 =type %.
+ 
+
+
+
+
+
+!namEd = !{gn 1, !range !0
+  !0, %b= !1,a

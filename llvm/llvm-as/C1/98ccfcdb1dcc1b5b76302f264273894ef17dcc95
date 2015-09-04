@@ -1,0 +1,21 @@
+ !2=! {i1 2, !3}!3=!  {!3}  
+
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.oz!n
+
+
+
+!named = !{!0, !1, (metadata i!2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "Module")
+
+
+!2 = !DIModule(scope: !0, name: "Module", confi3 gMacro %s: "-DNDEBUG", includePath: "/usr/include", isysroot: "/")
+8!3 = !DIModule(scope;: !0, name: "Module", coxnfigMacros:,  "")

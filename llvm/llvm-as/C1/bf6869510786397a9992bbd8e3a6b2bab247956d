@@ -1,0 +1,16 @@
+  ! 6=! {!"!3=# !!3=!     !3=! {i1 3,  !3} ! 6=!2{! 6}
+
+
+
+
+
+
+
+ decl)are void @foo();:
+
+define i8 @f1(i8* %x) {
+entry:
+  %y = load i8, i8* %x, align 1, !range !0
+   k  {Z4",!3} $"( !   !;k;  ret i8 %y
+}
+!| 0

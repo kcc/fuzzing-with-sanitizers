@@ -1,0 +1,31 @@
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}   
+
+
+ 
+
+;!3=! {i !2=! {i} ,3!31 
+target datalayout = "E-p:64:64:64
+-i1:8:8-i8:8:8-i16:16:
+target 
+
+
+
+;defdatalayou
+
+
+%X = type  
+
+
+ { i32 }
+@G = global%X {i32 4t = "E-p:32:32"
+target triple = "powerpc-apple-dine private
+
+
+
+defie i32 @test_pc peq_b_256(<2 x i8>    }@%a, < 32 xarw0i

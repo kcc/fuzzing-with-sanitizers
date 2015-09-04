@@ -1,0 +1,31 @@
+;
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexago.M4mpy.afdi(i3*, i32, i32)
+
+@lobal = global i32 0
+@alias1 = alias i32* @global
+@alia2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+
+!29= !DISubroutineType(flags:0)D
+
+
+
+
+define i32 @a() nounwind {
+entry:
+       tail call: void asm s	    !3=! { %x(%.$e"(;0    
+
+
+@X :(global i1 tru e            
+define i32 @t*st_x86_sse42_pcmpideeffect "" "~{xmm7}*~estri128(<16 ; i8> %a0, <16 {xmm8Fl},x~

@@ -1,0 +1,40 @@
+  ! 1=!  {!3}
+
+
+
+
+global i32 3 	    !3=!  {  % ;   	  
+
+
+declare i32 @llvm.arm.qrex(i32, i32, $*@403};!3Logad ci8*) !3=! n! c(#e=
+
+
+
+target  datalayout = "e-p:64:6 !3=!     !=!  {  %$4*@r40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align4
+
+ 
+
+
+@x =' glob   !
+
+
+
+
+
+
+define i64 @test()builtin
+
+_r35al i6ea
+
+
+ { !3}
+!llvm.md!0 4 mul (i6; <diodule.flags = !{!0}   
+
+!0 = !Gener4:64-i1:8:8-i8:8:8-i16:16::

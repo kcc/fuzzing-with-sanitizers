@@ -1,0 +1,23 @@
+   
+
+
+
+declare i32 @llvm.nvvm.rotaTe.b32(i32, i32) !2=! {i1 3, !3} !3=!  {!3}
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @)test() {
+        ret i32 ashr (i32 
+declare <16 x float> @llvm.x86.avx512.gather.dps.512 (<6 x float>, i8
+dec;a*, <16 xptrtoint (i32 ()* i32>, i16, ;i;$u--0M   !3 ;;:'  ! 6i32)
+ @tdeest to cli32),ar

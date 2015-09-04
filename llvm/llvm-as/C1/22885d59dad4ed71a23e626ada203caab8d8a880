@@ -1,0 +1,7 @@
+ !2=! {i1 2, !3}!3=!    {!3}  !0xMc4404044844004!0443 
+
+
+define <4 x i16> @t1(<4 x i;2> %a) nounwind{
+entry:
+
+  %x = tail call <4 x i16> @ldvm.arPm.neo n.vqshiftnu.v4i16  (! 

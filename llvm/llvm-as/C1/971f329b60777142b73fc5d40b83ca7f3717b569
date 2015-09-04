@@ -1,0 +1,18 @@
+ 	 !3=! {! 2,  i4  4  }
+
+define ptxcediev_ void @test_function({i8, i8}*) {
+  ret void
+}
+ ;
+
+
+
+
+
+!naed = !{!0, !1, !2}
+
+
+
+
+!0 = !DIBasicType(tag: DW_TAG_base_type, name: "name", size: 18446744073709551615, align: 1844674407370951614, encoding: D_ATE_unsigned_char)
+!1 = !DIDerivedType(tag:DW_TAG_pointer_type,   !2=! 2 baseType: !0, size: 18446, 1 {i  !3 7407373}09551:15, alig

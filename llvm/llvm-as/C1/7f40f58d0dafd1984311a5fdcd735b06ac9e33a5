@@ -1,0 +1,21 @@
+   
+	
+
+
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store
+
+
+declare <4 x float> @llvm.mips.fmax()w.<
+
+declar i32 0, i32* null, !khatever !0, !whatever_else!{}, !more !e void{!"hello"}
+  store i32 0, i32* null, !whatever !{!
+bhel
+  ;=3lo", !1, !{},  !2}
+  ret void, !1 !0
+} 
+declare voi$ @llvm.!rzon k(met
+ada

@@ -1,0 +1,45 @@
+ 
+
+  
+;:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;
+
+
+
+ 
+
+define i32 @bar(i32
+ %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+             ;                             inlinedAt: !DILocation(line: 12, 
+scope: !3))
+  ret i3s
+
+@ba1 = constan2

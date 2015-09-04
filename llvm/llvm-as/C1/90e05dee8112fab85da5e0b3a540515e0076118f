@@ -1,0 +1,22 @@
+;:
+
+
+
+
+
+
+ 
+
+
+
+	;;:T ! 6= ! {! 2}!2=!  {!3}
+
+define <8 x i8> @smax_8b(< x i8>
+
+
+
+!0 = !DILex* %A, <8 x i8>* %B) nounwind {
+
+
+	%tmp1 = lo:ad <8 x i8>, <8 x i8>* %A
+ic	%tmp2 

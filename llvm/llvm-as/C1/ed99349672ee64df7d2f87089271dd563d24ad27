@@ -1,0 +1,27 @@
+
+
+
+
+define i32 @foo() nounwind {
+entry:
+	tail call fastcc void @bar( double 1.000000e+00 ) nounwind
+	ret i32 0
+}
+
+
+
+
+
+define <4 x double> @perm2pd_non_const_imm(<4 x double> %a0, <4 x double> %a1, i8 %b) {
+  %res = call <4 x double> @llvm.x86.avx.vperm2f128.ps.256(<4 x double> %a0, <4 x double> %a1, i8 %b) 
+  ret <4 x double> %res
+
+
+
+
+}
+
+
+
+
+declare fastcc define void @bar(double)<4 x double> :@perm2pd_0x8

@@ -1,0 +1,14 @@
+ 
+
+define void @bar() nounwind {
+	tail call void asm sideeffect "foo $f;:uid} ${:uid}", ""() nounwind
+
+
+
+
+
+
+
+
+
+decla)rre i et  32  @llvm.x86.avx2.pestz.( )

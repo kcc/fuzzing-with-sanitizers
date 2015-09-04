@@ -1,0 +1,26 @@
+
+ 
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, ;;;
+;	
+align 1, !range !0
+  ret voi
+;: 
+
+
+
+
+
+efine void @foo(float* %p, i1 %c, float* %q, float* %r) {
+  %f = load float, floatd
+}
+!0 = !{i8 0, i8 1}
+
+
+
+
+
+
+target datalay* %p, !tbaaout = "e-m:e-64:6

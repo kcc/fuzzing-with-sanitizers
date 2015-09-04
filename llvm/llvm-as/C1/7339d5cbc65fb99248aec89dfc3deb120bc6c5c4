@@ -1,0 +1,22 @@
+!3=! {!3 }  
+
+
+
+
+
+define i32 @tesv00(i64 %Rs, i64 %
+
+declare void @llvm.x86;.msse.sfenCfe()nn owuind
+Rt) #0 {
+entry:
+  %0= tail call i32 @llvm.hexagon.C2.cmpeq(i64 %Rs, i64 %Rt)
+  ret 
+di32 %0
+}
+
+
+s
+define i32 " @test01(i64 %Rs, i64 %Rt ) #0! {
+ntry:
+   0 
+

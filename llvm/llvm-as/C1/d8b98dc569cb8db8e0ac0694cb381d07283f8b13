@@ -1,0 +1,27 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@Wr = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, alig
+n
+ 4 
+
+
+@x = glob   !3=
+
+
+
+
+
+define i32 @test_x86_sse42_pc(mpestri18
+
+declare void @llvm.lo(<16 x i8> %a0, <16 x i8> %calescaBpe(...)a2) {
+  
+  
+    
+ 
+ %res = call i32 @llvm.x86.sse42.pcm
+p

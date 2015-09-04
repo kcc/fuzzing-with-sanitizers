@@ -1,0 +1,30 @@
+
+
+;define private 
+
+
+
+
+
+declare x86_mmx@llvm.x86.ssse3.pewha.dacp(
+)
+ %s3 =type %.0   !2=!  {  %$4*@z40}    
+
+define i32 @tet_crc32b(i32 %cur, i8 %next) {
+
+  %bFits = zext i8 %next to i32
+  %val = call i32  @llvm.aarch64.crc32cw(i32 %cur, i32 %bits)
+  ret i3
+p2
+
+
+
+
+
+
+
+
+declareov id @_Z3 %vamixRrjl
+}
+
+definrotecte(:e id v

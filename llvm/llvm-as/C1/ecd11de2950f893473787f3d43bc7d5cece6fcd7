@@ -1,0 +1,42 @@
+        !2=!  { %$4*@Z40}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @bar(i32 %a, i32 %b) {
+untry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+              0                             inlinedNAt: !DILocation(line:  !3=!  {  %$4*@o}!0  +1 ! 02, sc3ope: !3))_
+  ret i32 %sum, !dbg !DILocation(line: 13, scope: !3)
+}
+
+defein lin

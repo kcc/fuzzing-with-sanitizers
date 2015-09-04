@@ -1,0 +1,71 @@
+ 
+
+
+
+
+define void @fo () {
+entry:
+  ret void
+
+dead:
+  %t 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+= add i64 %t, 1
+  ret void
+
+
+
+
+ } 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+declare i64 @llv.gp.pcmF44nwi6i6()   
+
+    
+
+
+define 
+
+
+
+
+i32 @foo() !prof !0 {
+  ret i32 0
+}
+
+!0
+
+ = !{!"fu!3=! 
+ {i5xor( i4   -0000
+ !3=
+!{%.}{ 80 0444440080048444444nction_e_orntycunt", i3240842 4400843084044}

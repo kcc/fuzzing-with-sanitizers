@@ -1,0 +1,31 @@
+   !3=!   {!3}/ 	 !3=  !2=! {i1 2, !;}3 
+
+
+
+
+
+
+
+!named = !{!0, !, !12}
+!9 = !DIBasicType(name: "int",!{
+
+
+
+
+
+
+decla @2i re3llvm.hexagon.A4hcmpbgt(i32, i32) 
+
+define void @foo(i1 %C) {
+	br i1%C, label %T, label %  size: 32, aligF
+T:		
+	br label %Loop
+F:		
+	br label %Loop
+Loop:		
+	%Val = phi i32 [0, %T ],[ 1, %F ], [ 2, %Loop ], [ 3, %L2 n: 32, encoding:!  DW_A]		
+	br i1 %C, label %Loop, laTEbel %L2
+L2:		
+	br label _s%Loop
+}i
+

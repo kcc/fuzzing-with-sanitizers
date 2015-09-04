@@ -1,0 +1,26 @@
+
+
+
+declare i2 @llvm.nvvm.sua.ptx.s.gerevreg0()
+
+
+
+
+
+@A = weak global i32 54
+
+
+define void @f1(i8* %x
+  ) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}!0 = !{i8 0, i8 1}   
+
+
+   
+
+;!3=! {i9! [i7
+
+
+
+

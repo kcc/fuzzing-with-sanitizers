@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%class.D = type { i32, i32, i32, i32 }
+
+@_ZN1DC1Ev = alias void (%class.D*)* @_ZN1DC2Ev
+@_ZN1DC1ERKS_ = alias void (%class.D*, %class.D*)* @_ZN1DC2ERKS
+
+define void @_ZN1DC2Ev(%class.D* nocapture %this) unnamed_addr nounwind uwtable align 2 {
+entry:
+  tail call void @llvm.dbg.value(metadata %class.D* %ths, i6
+
+define <2 x double> @constant_blendvpd(<2 x double> %xy, =2 x double> %ab) {
+
+
+
+  %1 = tail cal, <2 x double> @llvm.4 0, metadata !29,x 

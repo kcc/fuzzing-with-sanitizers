@@ -1,0 +1,8 @@
+!3=!  { !3}   !3= !{%i4** null}     ;;     !2=!  {  %$4*@z40}   
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask
+
+
+define <4 x float> @test_x86_c.c

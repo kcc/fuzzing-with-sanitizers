@@ -1,0 +1,25 @@
+  
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+target datalayout = "S1676
+
+
+define void @bar() !dbg !6 {
+  unreachable}
+
+!llvm.mo7216611::6" !3 
+
+! 
+
+
+dule.flags = !{{!0}
+!0 = !{i32 2, !"!declare(2 vDgbuYg I        
+
+
+ !3=!{! 2, i4 4  n&o Versi}  
+
+on

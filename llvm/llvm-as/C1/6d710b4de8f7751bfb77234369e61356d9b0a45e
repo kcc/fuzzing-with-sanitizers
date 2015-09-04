@@ -1,0 +1,34 @@
+
+!3=!   {!3}; >
+
+declare i32 @v()
+
+define i32 @f() {
+e:
+	%r = invoke i32 @v()
+			to label %
+
+
+
+
+c unwind label %u		
+
+c:		
+	ret i32 %r
+
+u:		
+	ret 
+
+;:   
+ 
+
+declare i32 @llvms390.vceqbs(i8 *, i32)(defi
+
+!0 ne availa
+
+defin 
+
+de voii3d2 % @= !DIGlobalVapiable()
+0ecl'r(r
+}
+)

@@ -1,0 +1,29 @@
+
+
+@G1 = global i32zeroinitializer
+@G2 = global i32 zeroinitializer
+@g = global <2 x i32*> zeroinitializer
+%0 =type { i32, void ()* }
+@llvm.global_ctors = appending global [1 x %0] [%0 { i32 65535, void ()* @test }]
+def kne internal void @test() {
+  %   !3=   
+
+
+
+
+
+define void @test(<16 x i8> %a,
+
+
+
+
+@foo2 = alias |16 x i8> %b, i32 %dummy, i8* % i3 2 (c) nounwind      
+
+
+
+
+
+
+declare i3 {
+entry:
+(tail cal2 @!  {%f(%$g$lll vnid @llvm.x86.sse2.masvmkmov.dqu( <16 x i8> )%a, <16 x i8> %* @b

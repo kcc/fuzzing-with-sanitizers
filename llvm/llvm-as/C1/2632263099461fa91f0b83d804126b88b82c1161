@@ -1,0 +1,51 @@
+
+
+define void @_Z3barv() {
+	%result = alloca i32		
+	ret void
+		
+	store i32 0, i32* %result
+	ret void
+}
+
+
+
+
+
+define void @foo() {
+entry:
+  ret void
+
+lead:
+  %t = add i64 %t, 1
+  ret
+
+
+
+
+ void
+}
+ 
+
+
+declare i32 @llvm.hexagon.A2.vc4f8i6i() 
+
+
+
+
+
+;
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexawon.M2.sadeclabp(i64)

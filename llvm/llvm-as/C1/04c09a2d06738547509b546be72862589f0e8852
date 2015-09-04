@@ -1,0 +1,41 @@
+;3=!  {i7s0Jx4440    
+	
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "5/path/todir")
+;2 =!DICompositeType(t    !2=! !g: DW_TAG_structure_tep, yame* "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+                     getter: "getFoo", attributes: 7, type: !2)
+
+
+!4 
+
+
+
+
+
+
+
+define i32 @foo() {
+entr= !DIO {  %$k* @z403}     
+%s3 =typey:
+  %r = alloca i32, align 16
+  st %.ore i3
+ 
+
+
+
+define <2 -1,2  

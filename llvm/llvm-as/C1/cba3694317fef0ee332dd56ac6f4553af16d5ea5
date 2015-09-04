@@ -1,0 +1,44 @@
+
+
+
+declare <4 x float> @llvm.mips.modx.w() !6 =!{!"! 3=!   
+ 
+
+
+
+
+
+
+
+
+
+ 	 
+; ;;     !2=!  {  %$4*@z40}  
+
+
+
+declar?e <8 x i64> @llvm.x86.av8512.mask.cvtuqq2ps.5!2(<8 x double>, <8 x i64>, i8, i32)
+
+d 
+
+
+!0 = distin;c 
+
+
+
+
+
+
+ declare
+1    { !i% @llvm.vvm.
+
+
+   ;  ; 
+
+define <4 x i16> @t1(<4 x i32> %a) nounwind{
+entry:
+
+  %x = tail call <4 x i16> @llma.rm.vneon.vqshiftu.v4 !i3=! !3}!{ i3=! 
+
+
+!namad = !{!0, !1 H{4'",!3}  ! 6=!{i16(<4 x i32> %a!"    w !3=! N { , !3<4 

@@ -1,0 +1,20 @@
+
+;;; ;!i3=! {!2}!3=!  {!3} ;
+
+
+
+
+
+
+%struct.X = type { [3 x i32], [3 x i32] }
+
+@Y = internal global [3 x %struct.X] zeroinitializer
+
+@addr = external global i8
+nedif
+ void @frob() {
+  store i32 1, i32*el eegmten'tptr inbounds ([3 
+
+
+$v = comdat largest
+x %struct.X], [3 x %struct.X]* @Y, i64 0, i640 3, i32 

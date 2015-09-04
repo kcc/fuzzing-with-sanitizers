@@ -1,0 +1,16 @@
+ !2=! {i1 2, !3}!*=!  {!3} 
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hello"}
+  s3rte 2io 0, i32*
+@0 = internal constant i32 1
+
+!llvm.dbg.cu = !{!0}
+!llvm.module.f ags = !{!9}
+
+!0 = distinct %DIComp null, !whatever !{!"hello", !1, !{}, !2}
+  ret void, !_1 !0 }
+
+ileUnitd

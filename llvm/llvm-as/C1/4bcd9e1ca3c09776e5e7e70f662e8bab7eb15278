@@ -1,0 +1,39 @@
+  !3=! {! 2,i4  4      }   
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!8 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType (tag: DW_TAG_structure_type, name: "C 
+
+
+
+	
+ !3=!  { !3}
+!llvm.module.flags = !{!0}  
+
+
+define void@foo(i32 %x) {
+  call void @llv
+
+
+
+
+
+ 
+
+ 
+8;d;  
+
+
+!0 =!DILocalVariable(lass", scope: ;!3declare
+ i8* @l)!3=! {!3
+ lvm.aarch6` 
+
+
+
+m.zonk(metadata i32 %x, i64 0, metadata !1)
+ declar 2e< x i64. @;llvm.ppc.altivec.vcf(ld<2 x i64>, <2 x i64>) n store i32 0, i32* null, !whatouever !0,

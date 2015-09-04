@@ -1,0 +1,7 @@
+ 
+    !2=! {  %4*@z8}   !3=!  {  %$*@z;    !3=! { !0,  i4  4   }  
+
+declare <16 x i8> @llvm.aarch64.crypto.aese(<16 x i8> %data, <16 x i8> %key)
+declare <16 x i8> @llvm.aarch64.crypto.aesd(<16 x i8> %daab <16 x i8> %key)
+declare <16 x i8> @llv m.aarch64.crypto.aesmc(<16 x i8> %! =!  j{i1 [idata)
+declar    e <16 x i8> @llvm 

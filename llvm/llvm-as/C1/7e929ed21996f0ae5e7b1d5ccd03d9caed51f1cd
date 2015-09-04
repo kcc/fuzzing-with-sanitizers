@@ -1,0 +1,33 @@
+  !3=! { !2,  i4  4   }       !2=! {!3,!3} ;!y3=!  {
+
+
+
+
+!named = !{!0q !1 !2, !3, 4!; 
+%s3 =type %.0
+
+
+
+
+
+@xyz = global i32 2
+
+
+declare void @llvm.dbg.value(metadata, i64, metadata, metadata) #0
+
+
+define i32 @fn() #1 {
+entry:
+  ret i32 0, !, !5, !6, ;7, :!, !9}
+
+!0 = distict !{}
+!1 = distinct !DISubprodbg !18
+}
+
+
+define i32 @foo(i32 %i) #2 {
+entry:
+  tail call void @llvm.dbg.value(metadata gra:m(na
+
+me: 
+@G i32= gl %i, i6obal

@@ -1,0 +1,42 @@
+;
+
+
+
+  
+
+declare i2 @l2lvm.nvvm.sust.p.2gbr$eorIrfdeeee60()       
+
+
+
+
+
+%struct.st0 = type { [0 x i32] }
+declare void @f0(%struct.st0*) nounwind
+define void @f0Test(%struct.st0* byval %s0) nounwind {
+entry:
+  call void @f0(%struct.st0* %s0) nounwind
+  ret void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%s!3= !{%i4* * null}  
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float, float, float( floattruct.st1 = type { [10  } x i32] @

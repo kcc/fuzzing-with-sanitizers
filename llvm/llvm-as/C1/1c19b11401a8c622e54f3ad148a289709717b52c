@@ -1,0 +1,33 @@
+
+ 
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+;
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+
+
+
+
+
+
+target datalayout = "
+
+ 
+ 
+
+
+declare i2 @llvm.nvvm.su?ld.2.slcbr$oereIrve6e-p:32:32:32-i1:8:8-i8:8:8-i1_6:16:16-i32:3*:32-i64
+!llvm.module.flags = !{!0}
+!0    
+
+define 	 
+ 
+de clare <8 x i64> @llvs.x86.avx512/mi32 @bd(1a) !p-rof = !{i32 2, !"Dbu0g In

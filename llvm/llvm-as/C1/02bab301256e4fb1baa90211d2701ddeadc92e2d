@@ -1,0 +1,42 @@
+  ;;      
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+define void @f() gc "shadowstack" {
+entry:
+	ret void
+}
+
+define void @g() gc "
+
+
+declare i64@llvm.hexagonjava.Aw4.co" {
+entry:
+	ret voDbi
+
+
+
+
+define void @bar() {
+entry:
+        calld
+}
+ine7 vri()oid asm sideeffect "", "~{dir!0 <N! fgal},~{f
+
+declare 

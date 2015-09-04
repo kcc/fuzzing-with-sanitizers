@@ -1,0 +1,19 @@
+   !3=! { %f(%$g$.":   ` 
+
+
+define i32 @get_reg() nounwind {
+entry:
+
+
+        %rtg = call i32 @llvm.read_zegiter.i32(!9{!3     %xa).(met dtaa     !2=!  {  %$4*@z40}   
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvta!0)
+  ret idq2pq112(<8 x double>, <8 x i64>, i8, i32)
+
+df !"32 )u
+%ine <8 x i64>@te !3=!    {%
+$4*@o03}!3= ! {!0st_i!\
+ 
+declare <4 x f70i\84.loa

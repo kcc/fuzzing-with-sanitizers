@@ -1,0 +1,38 @@
+ ;      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dir!0 =N! fgal},~{f
+
+declare <4 x float> @ lvm.DIGlobalVibarla
+
+
+defi.e void @main(' personality i8 (! 0 {
+  invoke void @l2=!  {lvm.donothing()
+
+
+
+
+define void @test_vmovqqqq_pseudo() nounwind ssp {
+ @       (to label Gret unwind label %unw
+unw:
+  %tmp =e()mips.urax.w()psr},~{flags}"
+( )
+         landingpad i8 cleanupret
+
+%entry  :
+ st%$ruct = t %vlype N i*@Z4d3_32

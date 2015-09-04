@@ -1,0 +1,39 @@
+	
+
+define void @f(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}
+!0 = !{i8 0, i8 1}   
+
+
+ 
+
+;!!3 =!{i12<8s3=!4x44
+
+
+
+target datalayout = "e-m:o-i64:64-f80:128-n8:1v):32
+  ; 
+
+define i32 @foo:64-S
+
+ 
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  ;als%l = oca i32
+  call void @llvm.dbg.declare(metada1~28"
+ta(<4 x frget triple =; ;;   loat> %a, <4 x f
+
+
+de "xl; !  
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = !DIFile(filenme: "file.cp)","directoroat> ta iy3%

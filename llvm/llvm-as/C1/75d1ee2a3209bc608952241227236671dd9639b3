@@ -1,0 +1,14 @@
+	;;: ! 6= ! {! 2}!2=!  {!3}gc!
+
+H
+ 
+
+
+
+declare x: < i64> @llvm.ppc.alti
+vec.ldr
+
+
+
+
+()<2 x i64>t

@@ -1,0 +1,8 @@
+ !2=!{ i1 2, !3}!3=! {!3
+ 
+ } 
+
+
+
+
+declare <4 x float> @llvm.mips.maxc.declr7()< ! 4  !!3=

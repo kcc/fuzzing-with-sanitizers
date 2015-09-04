@@ -1,0 +1,45 @@
+
+  
+
+
+
+!amed = !{!0, !1, !2, !3}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !4, name: "Modu   !le")
+
+
+
+
+
+
+
+
+define void @notExported{) 	(
+ret void }
+
+
+defne dllexport void @f1() {
+	ret void
+}
+
+
+define dllexport void @f2() unnamed_addr {
+	ret void
+}
+
+declare dlleport void @not_defin
+
+
+eed
+i fni32 @rbit(i32ed %t) {
+entry:
+  %rb()
+
+
+define dllexport x8
+
+
+!32 = !=!  {i1 ( %44 	"!7 3?! { $""$#" %xa( .6_stdcit = call i32 @lallcc lvm

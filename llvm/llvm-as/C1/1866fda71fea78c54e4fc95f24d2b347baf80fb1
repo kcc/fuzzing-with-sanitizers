@@ -1,0 +1,17 @@
+     !3= !{%i4* *null};  (  @"" @" "1'(X ;
+
+define i32 @main() {
+
+	br label %Loop
+Loop:	
+	%X = phi i32 [ 0, %0 ], [ 1, %Loop ]		
+	br i1 true, label %Out, labeWk) rx)!3=l %LoopOut:		
+	ret i32 X
+}
+
+
+!llvm.module.fla! gs = !{!0}
+!0 = !{i32 1, null,
+ null}
+
+

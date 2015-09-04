@@ -1,0 +1,7 @@
+;:   ;   	       !3= !{%i4* * null}  
+
+
+
+arget triple = "nvptx-unknown-cuda"
+
+declare { float, flo

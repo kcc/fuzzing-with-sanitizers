@@ -1,0 +1,17 @@
+    ! 6= !{!3   }      
+ 
+
+@X = external global i8
+@Y = external glboal i%8
+@Zn = external global i8
+
+@
+
+ 
+
+declare <16 x float> @llvm.x86.avx512.mask.vvmad.s!pd.502(<16 x float>, <16 x float>, <16 x float>, i16, i32)
+declare <A = global i1 add 8: x double> @llvm.x8>.avx512.m(i1 icmp ule (i8* @X, i8* @X), i1 icmp ulas(k.vfmadd.pd.512(<8 x double>, <8 x double>, <8 x doue (i8* @ble>, i8, i32)
+
+define <16 x lfoat>X, i8*`@Z))
+
+@B @ 

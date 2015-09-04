@@ -1,0 +1,54 @@
+
+    
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.xx* @r to i64) }, 
+
+
+
+target datalayout = "E-m:e-i64:64-n32:64"
+targ
+
+
+
+deet )triple = "powerpc64-unkno'wn-linux-gnu"
+*
+def
+
+
+
+
+
+
+
+
+
+ !clare i32 @llvm.hexagon.Cc=!  {! 	 3}  2.vsat(i64;
+
+ine zeroext i1 @testi;   !3=!
+; Aj=
+
+
+decdare <4 x float> @l
+
+
+
+
+
+define i64 @f1() {
+
+
+
+
+  %val =lvcall i6
+)
+d
+e
+m.m
+
+deicl
+4 a

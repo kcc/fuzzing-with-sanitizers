@@ -1,0 +1,63 @@
+
+
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b) {
+entr:
+  %sum = add i32  %ab,,% !dbg !DILoca  tion(line: 2, scope: !4,
+                                          inlinedAt: !DILocation(line: 12, scope: !3))
+  ret i32 %sum,ecla
+
+declare void @(b
+ar)
+define void @foo() {
+bb1:re  !dbg !DIL      
+
+
+
+
+
+
+
+
+declare i32 @llvm.x86.avxocation(l:ie n13", scope: !3)
+  %memtmp3.i = all
+}

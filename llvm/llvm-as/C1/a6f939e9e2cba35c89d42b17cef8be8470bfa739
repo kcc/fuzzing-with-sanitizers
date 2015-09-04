@@ -1,0 +1,22 @@
+ 
+
+     !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%un$ion.x* @r to i64) }, [lign  !3=!  {
+
+i 
+48
+
+@x = glob  declare void @ !3llvm.gc8root(i8**, i8*) n
+* ; 
+
+
+
+declare vod @llvm.x86.ss.muanle=al i64 mul (i64 3, i6ounwi; nd04!  {  %$*  @o0; 
+ 
+  

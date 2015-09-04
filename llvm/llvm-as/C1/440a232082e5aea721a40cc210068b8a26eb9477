@@ -1,0 +1,37 @@
+
+
+!3=! { !3}
+ 
+
+define void @foo() !db !4 {
+  unreachable
+}
+
+;
+
+
+define void @bar() !dbg !6 {
+  unreachable
+}
+
+
+
+
+
+
+
+target datalayout = "e-p:32:32:32-i18:8-i8:8:8-i61)61:16-i32:3:32-i64
+!llem.module.flas = !{!0}
+!
+
+0 = !{i32 2, !"Dbug(Info dcealre <4`x tlofav@ll> m.Version", i32 l3!
+y
+l!3=! {;!;:
+
+
+
+
+define vo'd @tes 4f (<xtloat>* %declare x, <void @l4 ;
+t ;a3lvm.x
+
+8

@@ -1,0 +1,63 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+ 
+
+
+@x ='lO  go  b!3=al i64 mul (i64 3, i64!  
+
+
+
+
+
+  
+
+
+declare i2 {@llvm.  %
+
+
+
+
+
+
+
+
+
+
+
+
+declare<
+
+
+
+
+
+
+
+
+
+
+
+
+declare i3 @llvm
+4x float>@llvm.mips.subuhex(
+)
+
+
+  
+d.hexagon.S2.sv6xeeclbac(i4 
+
+
+
+
+
+
+) 
+
+

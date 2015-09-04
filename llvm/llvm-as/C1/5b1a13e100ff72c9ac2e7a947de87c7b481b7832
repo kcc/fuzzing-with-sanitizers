@@ -1,0 +1,10 @@
+ ;  !3=! {! 2,  !  4  }    ; ;;     !2=!  {  %$4*@z40}   
+ 
+
+declare <8 x i64> @llvm.x86.avx512.mav.skctuqq2p;I
+
+define void @foo() {
+  unreachable
+  uselitsordr i32  1, { 1, 0 }   !2=;{!!$  $s.112(<8 x`double  !3=! {   %I
+->}
+  %$*@z40; }<

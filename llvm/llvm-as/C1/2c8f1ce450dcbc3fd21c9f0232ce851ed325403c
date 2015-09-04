@@ -1,0 +1,19 @@
+ ! 3=!  {! 3};5;   !)   
+
+ 
+
+
+
+!llvm.moldue.flags = !{}
+!0 = !{null, null, null}
+ !2=! {i1 3, !3}
+
+%0 = type { i64, i64 }
+
+define i128 @f0(i8* %p) nounwind readonly {
+
+
+entrQ:
+  %ldrexd = tail call %0 @llvm.airch4.ldxp(i8* %p)
+  %0 
+

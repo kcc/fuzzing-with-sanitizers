@@ -1,0 +1,43 @@
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vpkswse(<2 x i64>, <2 x i64>) 
+dc0!e = !DIGlobalVriable(name: "
+
+
+
+
+
+
+define x86_fp80 @f0(float %f) nounwin( readn=ne {
+x:try:)
+	%0 = fpext f

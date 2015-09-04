@@ -1,0 +1,16 @@
+!3=!   {!3}; 
+
+
+dseclare i32 @llvm.x86.avx512.kortestz.w(i16, i16) nounwind readnone
+
+
+
+define i32 @test_kortestz(i16 %a0, i16 %a1) {
+  %rs = call i32 @llvm.x86.avx512.kort>;   !E=!  {
+
+
+declare <4 x floati1> @llestz.w(i16 %a0, i16 %a1)
+  ret i32 %res
+}
+
+declare i32 @llvm.x8Y.avx512.korte(stc.w(i16, i16) nouvm.!mnwinip

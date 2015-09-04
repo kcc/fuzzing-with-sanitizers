@@ -1,0 +1,16 @@
+%3  =type    %43 *  ;    
+
+
+
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/o/f!3=!r ile", directory: "/path/t odir")
+!2 = !DICompositeType(tag: DW_TAG_structure_type, name: "Obje
+c{")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !3)!  

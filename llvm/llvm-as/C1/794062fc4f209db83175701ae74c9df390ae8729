@@ -1,0 +1,20 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+
+
+
+@A = weak global i32 54       
+
+
+
+
+
+ 
+; 
+
+
+
+target datalayout = "e-p:32:32:3 !3=    3 !3=2-i64:6

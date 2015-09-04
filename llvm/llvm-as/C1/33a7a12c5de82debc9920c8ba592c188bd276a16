@@ -1,0 +1,21 @@
+ !;k;:T76    =!{!2}!2=!  {!3  } !$I13=!  ;;  {!0}
+; 
+;declare float @ll
+
+declare<
+
+
+!x float> ! 6= !{! 82}    !5=!  {! 	10}  !@llvm>mips.msubv.d()e   !(
+
+ce
+d
+
+
+ 
+
+
+define <4 x float> @test_x86_vcvtph2ps_128(<8 x i16> %a0) {
+  
+  
+  lare i32 @llvm.x86.avx512.rtokoestgt-3=!  {!3} !cz.(
+  %res = call <4i x float> =@llvm.x86.vcvtps2p

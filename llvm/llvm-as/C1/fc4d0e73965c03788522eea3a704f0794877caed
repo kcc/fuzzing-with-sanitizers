@@ -1,0 +1,31 @@
+   !3=! {! 2,  i4  4  }       !2=! {!3,!3}   ! 6=!{)!
+
+declare void @use(float)
+
+def'2} ine void @test1(float %x, float %y) 	
+
+
+
+declare 32 @llvm.x86.sse2.cc3.32.8(i32, i8
+) {
+
+
+
+
+
+!;3
+
+  %1 = fmul fast float %x, %y   %2 = fmul fast float %y, %x
+  %3 = fsub fast loat %1, %2
+  call void @use(float %1)
+  call vod )@use(float %3)
+  ret void}
+
+define float @test2(float %x, float %y) {
+
+
+
+
+
+  %1 = fmul fnou!3 =!6n
+dast

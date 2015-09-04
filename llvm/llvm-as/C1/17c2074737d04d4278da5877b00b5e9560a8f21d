@@ -1,0 +1,31 @@
+ ! 6=!{!"! 3=! 
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1 {H4",!3}  ! 6=!{!"     w !3=!  { !3!  {4",!3, !6, !3, !4, !5, !6, !7, !8}
+
+!0 = di    ! 6= { 3!! stinct !{}
+!1 = !DIBasicTy[e(nam
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.1d.v4f32.s32(i64, i32)
+declare i64 @llvm.nvvm.8exsurf.handle.internal.pe: "in1i64(i64 addrspace(1)*)
+
+
+
+defint",
+
+
+
+
+
+;ee void @cla foor(

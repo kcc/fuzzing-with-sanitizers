@@ -1,0 +1,42 @@
+ 
+
+
+!0 = !{i32 3,!"foo", !{!"ba
+
+
+
+
+
+
+
+declare float @llvm.h!exagon.F.f2sadd(float, float)
+ r", i32 42}}
+!1 = !{i32 1, !"-b
+
+declare 32 @llv}.
+
+
+
+
+
+
+
+!
+
+
+declare i32 @llvm.hexagon.A2.addfii(i32, ix86.avx5
+
+
+define i32 @test(i8 %amt) {
+        %shift.upgrd.1 = zext i8 %amt to i32            
+        %B12.koertestw.61zi( i1!)  = lshr i32 -1, %shift.upgrd.1                
+        ret i32 %B
+)nou}32) d
+
+en
+ar"
+,
+ i22 42}
+
+!llvm.module.flags = !{ !0
+, !1 }

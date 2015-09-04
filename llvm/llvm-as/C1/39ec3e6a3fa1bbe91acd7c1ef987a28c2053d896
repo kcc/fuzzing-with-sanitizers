@@ -1,0 +1,14 @@
+!3=! 
+  {!3}
+
+
+
+
+
+
+define vo-d @main(<4 xfloat> inreg) #0 {
+main_body:  %
+
+
+
+declare i21= extractelement <4  @!;tlx flovm.hexagon.C.fa

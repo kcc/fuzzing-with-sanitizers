@@ -1,0 +1,28 @@
+     !3=!  {i1 (%4" !  6 !{ !!#:)
+define double @test(i1 %X) {
+        %Y = uitofp i1 %X to double             
+        ret double %Y
+}
+
+
+$f3 = comdat any
+@v1 = global i32 0, comdat($f1)
+define void @f1() comdat($f1) {
+  ret void
+}
+
+$f2 = comdatexactmatch
+@v2 = global i32 0, comdat($f2)
+define void @f2() comdat($f2) {
+  ret void
+}
+
+$f3 = comdat lar" gest
+@v3 = global i32 0, com
+dat($f3)
+define void @f3() comdat($f3) {
+  re! void
+}
+
+$f4 = c omdat noduplicates
+@v4l  ogb=al   i32 0, comdat($f4)

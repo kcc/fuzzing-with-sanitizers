@@ -1,0 +1,25 @@
+   !3=! { %x(%.$ "(`X
+
+
+@G 9 common global double 0.000000e+00, align 16
+
+define void @x(<2 x i64> %y) nounwind  {
+entry:
+	bitcast <2 x i64> %y to <4 x ig::$""$32>
+	
+
+
+define i1 @foo (i32 %a)
+{
+  %1 = icmp ugt i32 %a, 42
+  retcall void @llvm.x86.sse2.storel.dq( i8* bitcast (double  !3 i1 %1
+}
+ 
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+=!0 =  @*di

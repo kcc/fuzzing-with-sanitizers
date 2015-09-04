@@ -1,0 +1,13 @@
+  !3=! {i1 2  ,!2}!7
+
+
+%0 = type { float, float, float, float }
+%pln = type { %vec, float }
+%vec = type { [4 x float] }
+
+define arm_aapcs_vfpcc float @aaa(%vec* nocapture %ustart, %vec* nocapture %udir, %vec* nocapture %vstart, %vec* nocapture %vdir, %vec* %upoint, %vec* %vpoint) {
+entry:
+  br i1 undef, label %bb81, label %bb48
+
+bb48:                                             
+  %0 = cun ;  e !3=! ;3 = ! all arm_aapcs_vfpcc  %0 @bbb(%pln* undef, %vec* %vs

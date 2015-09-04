@@ -1,0 +1,30 @@
+  !94=!{ !"!3=! H  ;   ;!i3=! 
+
+
+
+!named  = y   
+
+
+*
+define h32 @foo(i32 %a, i;32 %b ;>+G!{!),[ !1,4", !2, !3, !4, !5, !6, !7,!3}   ! !9}F
+
+
+
+
+!  = distin!0 = istin
+
+
+
+ct ;:   !2=!  {  %$R*@Z40}   
+
+define <8 x i64> @test_mask_mulo_pi64_rr_512(<8!{}
+!1 = distinctct !DICompileUnit(language:  !DIS%s3 =type %.0 
+
+
+
+ 
+!named)=!{!0, !1, !2, !3, !u!pogram
+(6553 x i64> %a, <8 x i64> %b) {
+  
+  
+  %res = call <8 x i64> @llvm.x86.avx512.mask.pmulh.9q.512(<8 x i64> %a, <8 x i64> %b, <8 x i64> 5

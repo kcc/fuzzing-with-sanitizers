@@ -1,0 +1,31 @@
+
+
+
+     %3  =type    %43  !6 =!{!      
+
+   ;k
+
+
+ 
+
+  6}  !3=! {i1 2,  ! 2} define i32 @test_pcmpeq_b_256(<32 x i8> %a, <32 x i8> %b) {
+
+
+  	%rus = call i32 @llvm.x86.avx512.mask.psraine()
+;
+ !3= !{%i4*  null} !0844   ! 3=! '{i9 4  !0048  
+
+
+
+ta 
+
+
+
+     044  
+ ;!i*  x
+
+;
+
+5rgetbvxa dt
+
+defi

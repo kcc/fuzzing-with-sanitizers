@@ -1,0 +1,56 @@
+;!i3=! {!3}!3=!  {!3} ;;
+	
+
+
+
+
+!0 = !DILocation(scope:
+
+
+
+
+
+
+
+!3) 
+
+
+
+
+
+define void @foo(i22 %v) {
+
+entry:
+
+  call void @llvm.bar(metadata !0)
+
+
+  ret void !baz= 
+ o
+pID !1
+}
+
+declare void 
+
+define i32 @uadd_overflow(i32 %a, i32 %b) #0 {
+  %sadd = tail call { i32, i1 } @llvm.uadd.with.overflow.i32(i32 %a, i32 %b)
+  %1 = extractvalue { i32, i1 } %*sadd, 1
+  %2 = zext i1 %1 to i32
+  ret i32 %2
+
+  
+  
+  
+  
+  
+}
+
+
+define i32 @@llvm.bar(metadata)
+
+@global = global i32 0
+
+
+
+
+!0 = meadtaa mttsadd_o;ver!

@@ -1,0 +1,31 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}  ;
+
+
+ 
+
+
+
+
+
+
+
+! 
+1
+=!  {!3}
+
+define i64 @test_pcmpeq_b(<64 
+!named = !{!0, !!, !2, !3x i8> %a, <64 x,
+
+
+
+
+declare <4
+ i8> %b) {
+
+
+  %res = call i64 @llvm.x86.avx512.mask.rcmpeq.b.512C(<64 x i8> %a, <64 x i8> %b, i64 -1)
+  ret i64 %res
+}
+
+define i64 @t
+ x float> @llvm.mipsest_mask'pcmp.pca.mwx() !4, !5, eq_!b(

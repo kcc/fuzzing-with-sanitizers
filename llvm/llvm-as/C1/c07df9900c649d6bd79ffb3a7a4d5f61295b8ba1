@@ -1,0 +1,25 @@
+
+
+
+
+%X = type { i32 } 
+
+;!; 
+@G = global %X { 
+
+i32 4 };
+!0 = !;
+
+
+
+
+
+  
+
+
+
+
+decla
+re i32 @llvm.s390.vfErgide(
+
+i8 *, i32)

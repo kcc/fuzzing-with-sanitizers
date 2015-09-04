@@ -1,0 +1,74 @@
+!3=! {!3 }!         
+%s3 =type %.0  ;
+
+;;
+;: 
+
+target triple = "npt-vxnknuown-nvcl"
+
+declare void @llvm.nvvm.sust.b.1d.i16.trap(i24, i32,
+
+ i32)
+
+ 
+
+
+@X = global i1 true          
+
+@0 =  common
+defdefine ne!35 pri vate 
+
+prot!global i3
+2
+
+
+ global i32
+
+
+ 36 
+
+@i = linkonce_odr   
+global i32 1
+
+
+
+
+define void @f() prologue i32 1 {  ret void }
+
+
+
+
+define void @g() prohogue i32* @i {
+0x  ret void
+}
+
+ 
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+;g0 
+
+
+
+
+ 
+
+
+
+
+!3=!      {!3};  
+
+
+
+declare  void @llvm.ex

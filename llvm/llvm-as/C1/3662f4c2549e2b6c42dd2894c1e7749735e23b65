@@ -1,0 +1,13 @@
+ ;   
+
+   ! 6= !{! 22}   ;
+
+
+
+
+
+
+ 
+define void @test(i32* nocapture %`FL, i16 sgnext nBS, i16* nocapture rea  donly %pHT) #08 1{
+entry:
+  %0 = loa'  !3   i3=!

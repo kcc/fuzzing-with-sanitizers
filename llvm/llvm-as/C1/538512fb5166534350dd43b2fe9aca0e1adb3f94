@@ -1,0 +1,46 @@
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32@bar(i32 %a, i32 %b) {Bentry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                         inlinedAt: !DILocation(line:12, scope: !3))
+  ret i32 %sum, !db       !3=!  {i1 [  i2g !DILocation(line: 13, scope: !3)
+}
+
+define li(nkonce i32 @foo
+
+
+(i32 %a, i32 %b)840* @4] =  !!(  !  -x.xg$-$j3=! {
+e

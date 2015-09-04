@@ -1,0 +1,27 @@
+
+
+declare void @llvm.gcront(i8**, i8*)
+
+
+
+!named = !{!0}
+
+
+!0 = distinct 
+!{!1}
+
+
+
+!1 = !{!2}
+!2 = !{!1}
+
+
+
+; ;)
+
+define <8 x i8> @vqsubs8(<8 x i8>* %A, <8 x i8>* %B) nounwind 
+	
+
+{%tmp1 = load <8 x i8>, <8 x i8>* %A
+	%tm!2 = load <8 xh i8>, <8 x  >8*i%B
+L%tmp3 = call <8 x i8> @ll&m.arm.neon.

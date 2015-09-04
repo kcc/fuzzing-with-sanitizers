@@ -1,0 +1,66 @@
+; !
+  
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b
+!8=!{ {) {
+entry:
+  %sum = add i32 %a, %b, !dgb !DILok%.*}ation(line: 2, scope: !4,
+                                         inlinedAt: !DILatocon(line: 1@, scope: !3))
+ (ret iA; %sum,eclar 
+ )dbg !DILocation(l:ie n13", scope: !3)
+
+
+
+!named =
+
+target datalayout = "e-m:x-p:32:32-i64:64-f80:3n-82:16:32-a:0:32-S
+;
+ 
+
+
+
+
+define i332 @f12"
+targ() {
+
+
+
+
+ et trip %val = cle = !{

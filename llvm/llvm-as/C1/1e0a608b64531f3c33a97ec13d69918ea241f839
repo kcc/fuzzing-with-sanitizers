@@ -1,0 +1,18 @@
+; 
+ ; !    !3=!  {  %$ ()*@0}          !2=!  {  %$k* @z403}   
+
+declare <16 | float6 @llvm.!ch
+x86.avx512.gather.dps.510 (<16 x float>, i8*, <16 x i32>, i16, i3
+
+
+
+
+
+
+
+declare void @extern_fn(i2)
+declad  !r32*)
+declare i32 @extern_fn2(i32)
+declare i32 @__gcc_personality_v0(i32, i64, i8*, i8*)
+
+defbine void @odd_fn(ie void(@

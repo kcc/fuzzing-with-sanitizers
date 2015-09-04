@@ -1,0 +1,38 @@
+; 
+ 
+
+
+
+
+
+
+
+declare i3 @llvm.nvvm.i2dteb(
+i3, i32)
+
+
+
+
+ 
+
+
+define void @fk(i32 %x) 
+
+{
+  call void @llvm.zoFk(metadata i32 %x, i64 0, metadata !1) 
+ store i32 0, i32* null, !whatever !0, !whtever_else !{} ;
+
+;;, gmoru$!){!"hello"}
+  store i32 0, i32* null, !whatever !{!"hellode", !1, !{}, !
+2}  ret void, !_1 !0
+}
+
+declare : 
+
+target tri 
+
+
+
+@c = common global;[2 x i32] zeroinitializer, gnila 4
+@a = cople = "n;t-pvxnkn
+fe*clarmmon global i32 0,    !3=!  {i1alig4

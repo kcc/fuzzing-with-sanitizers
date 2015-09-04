@@ -1,0 +1,43 @@
+;;     !3=!{! 3, i4 4 } 
+
+@0 = common global i3
+2
+
+  global i32 3
+
+@i= linkonce_odr global i32 1
+
+
+
+
+
+
+define  void @f() prefix	i32 1 
+ 
+
+
+
+
+
+
+;eclare voi!d  0xF'0x!(c'c! a=  !    @n lvm.cuds.e;ncthre
+
+
+
+	{
+ ret void
+
+
+}
+
+
+
+
+
+; ;!i3=!  {!3}!i3 = !{!3};;; !k3=!  {!3}!3  =
+target datalayout = "E-p:64:64:
+
+
+decl64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:64:v4-v64:64:64-v128:128:128-a0:0:64"
+
+define i32 @fucn <:(4x float>%vare0, <4 x   

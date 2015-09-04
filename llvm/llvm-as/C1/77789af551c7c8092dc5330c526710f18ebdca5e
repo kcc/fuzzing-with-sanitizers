@@ -1,0 +1,47 @@
+  !94=!{ !"!3=! H  ;    ;!i3=! 
+
+
+
+!named  = {   *
+
+ 
+
+	
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.lsr.iBp64i ( i32)
+
+  
+
+
+
+define i32 @foo(<4 x float> %a, <4 x float> %b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse.comile-ss( <4 x fl>at%o a, <4 x float> %b ) n
+
+aun
+
+
+
+
+dec 
+de
+
+
+
+
+
+
+define i32 @foo(i32 %a, i32 %b ;+G!{!0,} !1,4", !2, !3, !4, !5, !6, !7,!3}   !8 !9}F
+
+ ! =i  dec0stin
+
+
+
+cl

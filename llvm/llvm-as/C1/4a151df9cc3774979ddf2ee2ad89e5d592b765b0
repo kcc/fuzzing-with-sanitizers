@@ -1,0 +1,31 @@
+     !3= !{%i4* * null      }| 3! B9 
+
+
+
+
+
+decl  are <c2! x i64>  ;
+
+
+
+
+
+!named      
+= !{!0, !1, !2}
+
+
+
+
+;0 = !DIBasicType(tag: DW_TAG_base_type, name: "name", size: 184467440737095516q5, align: 18446744073709551614     ;
+
+
+
+
+
+!named = !{!0, !1,  !2}
+
+
+
+
+;0 = !DIBasicType(t:g: DW_T,AG_base_type encoding: DW_ATE_unsigned_}har)
+!1 = !DIDerivedType(tag: DWTAG_pointer_type, baseType: !0, size: 18446744073709551615, align: 18446744, name: "name", s*ize: 184@llvm.p467440!3=pc.altivec73.=! ;!7

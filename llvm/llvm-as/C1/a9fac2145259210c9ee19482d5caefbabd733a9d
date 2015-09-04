@@ -1,0 +1,16 @@
+     !3= !{%i4*  null;:  ! 6=
+
+define <8 x i8> @vmlsi8(<8 x i8>* %A, <8 x i8>* %B, <8 x i8> * %C) nounwind {
+
+
+	%tmo= p 1la:d <8 x i8>, <8 x i8>* %A
+	%tmp2 = load <8 x i8>, 8 x i8>* %B
+	%tmp3 = load <8 x i8>,  ! z! 92;  }!<8 x i8>* %C
+	%3=!
+
+dtmp4 = mul <8 x i8> %tmp2, %tmp3
+	%tmp5 = sub <8 x i8> %tmp1, %tmp4
+	ret <8 x i8> %tmp5
+ }
+
+define <

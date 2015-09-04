@@ -1,0 +1,22 @@
+   !3=! {i1 ( %4	 ":!    
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @foo(i64* %ptr) nounwind inlinehint {
+entry:
+  br label %loop
+loop:
+
+  %pair = cmpxchg i64* %ptr, 46 i0, i64 1 monotonic monotonic
+  %r = extractvalue { i64, i1 } %pair, 0
+  %stor(d1  = icm" p eq i64

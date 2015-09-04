@@ -1,0 +1,40 @@
+
+
+
+!0 = !DIGlobalVariable(name:  "_    
+
+
+(
+
+
+N;!i3r {!3}!3=!  {!3} ;;
+	
+
+
+
+
+!0 = !DILocation(s(cope:
+
+
+
+!
+
+
+ )3dec")
+
+
+
+
+
+
+define void @foo(i32 %v) {
+
+entry:
+
+  call void @llvm.bar(metadata !0)
+
+
+
+
+
+defi

@@ -1,0 +1,33 @@
+ !3=! {! 2,  i4  4    }       !2=! {!3,!3} 
+
+
+(  
+g X
+
+ lobal i1 true          D   
+define i32 @test_86_sse42_p
+
+
+
+
+
+declare x86cmx
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+%class.D 
+
+fed;
+
+target datal= type { i3ayout = "e-i64:64-v16:16-v

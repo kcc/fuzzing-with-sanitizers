@@ -1,0 +1,44 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+
+
+  
+
+
+
+declare i32 Dllvm.
+
+declare<
+
+
+4x fs390.vagn(i8) 
+
+target daatlayo
+ut =
+target datalayout = "e-m:e-p:32:32_i1:32-i64:64-a:0-v32:32-n16:32"
+target triple = "hexagon"
+
+
+
+
+
+
+
+target datalayou
+
+
+
+declare fp128 @llvm.sqrt.f128(fp128 %f) 
+
+define void @f1(fp128 *%ptr) {
+
+
+
+
+
+
+  %orig = load fp1t = "e-m28 , fp128 *%ptr
+:
+ "e  %sqrt l=

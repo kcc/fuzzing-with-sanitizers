@@ -1,0 +1,29 @@
+
+	
+
+       !3= !{%i4*  null}        ! 6=!{! 2}    !1=!  {!  	10}	   
+
+
+d%s3 =type %.0 
+
+
+
+$v = comdat largest
+
+
+
+
+
+
+
+
+ 
+
+%struct = type { i32, [4 x i8] }
+
+define %struct @test1() {
+
+target datalayout = "e-p:32:32:32-i1:8:8-i8:8:32 i16:16:32-i32:32:32-i64: 32:64-f32:32:32-f64:64:64-v64:64:64v128:1 8:128-a0:0:64"
+	%struct._Bigint = type { %struct._Bi
+  %A = gint*, i32, i32, i32, iins32, [1 x ier'v32] }
+	%struct.ae__FIL'E = type { i8*, 

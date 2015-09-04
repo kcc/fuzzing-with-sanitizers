@@ -1,0 +1,10 @@
+ ;  !3=
+
+ @noo.upgrd.1= internal global i32 7            
+@bar = internal global [2 x { i32*, i32 }] [ { i32*, i32 } { i32* @foo.upgrd.1, i32  7}, { i32*, i32 } { i32* @fo.upgrd.1, i32 1 } ]    !{! 2, i4 4  }
+
+
+
+
+!named = !{0 !1, !2, ! !3}
+;!0 = di  s 

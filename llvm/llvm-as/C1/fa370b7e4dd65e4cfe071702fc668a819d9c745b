@@ -1,0 +1,42 @@
+     
+
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.M4mpy.afdi(i32, i32, i32)
+
+@global = global i32 0
+@alias1 = alias i32* @global
+@alias2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+
+!29 = !DISubroutineType(f
+
+define !3i32 @f1(i32 %a.s) {
+entry:
+
+
+
+
+    %tmp = icmp eq i32 %a.s, 4
+    %tmp1.Q = select i1 %tmp,lags:0+DFla i32 2, i32 3
+    ret i=!  {i1 [i284* @1]  .4.;
+  )  2 !=! 3g!; 
+2 %tp.m1s
+}
+
+defin 
+e i32 @f2
+(i32 %a.s) {
+en
+
+
+define double @fold(i1 %a, dde

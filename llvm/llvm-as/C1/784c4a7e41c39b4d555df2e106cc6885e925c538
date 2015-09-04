@@ -1,0 +1,35 @@
+ !3=! {!3 
+	
+
+
+
+
+
+
+}
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distnct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/todir")
+;2= !DICompositeType(tag: DW_TAG_structure_type, name* "Objct")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+                    getter: "getFoo", attributes: 7, type: !2)
+
+
+!4 = !DI 
+
+
+
+!nemed = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filenaOme: "
+ ;
+
+
+declar* <8 x i64> @llvm.x86.path/to/filavxe", 512d.mask.lvtpi

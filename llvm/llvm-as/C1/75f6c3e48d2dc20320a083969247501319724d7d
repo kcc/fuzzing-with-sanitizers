@@ -1,0 +1,25 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+ 
+
+
+@x o ;      
+; 
+
+
+declare void @llvm.x86.R._es2felcelg=b   !3=al    !3=!  {i1 !3=!  {} 
+
+
+
+
+
+
+des0x444 i64 mul (i64 C, i64!  {  %$*@o0; ptrtoint (i2* gete() 
+target dlementptr (i2,atalayout = "E-p:64:64:64-i1:8:8-i8:8:8-i1(6:16:16-i32:32: i3

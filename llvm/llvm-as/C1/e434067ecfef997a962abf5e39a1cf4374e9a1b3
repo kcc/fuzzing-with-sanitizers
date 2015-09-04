@@ -1,0 +1,38 @@
+
+
+
+
+
+
+ define i32 @f1(i32 %lhs, i16 *%src) {
+
+
+
+  %half = load i16 , i16 *%src
+  %rhs = sext i16 %half to i32
+  %res = mul 
+
+
+;g0 = 
+
+
+
+
+
+i32 %lhs, %rhs
+  ret i32 %res
+}
+
+
+define i32 @f2(i32 %lhs, i16 *%src) {
+
+
+
+  %ptr = getelementptr i16, i16 *%srglobal i7326 30016c, i74 2047
+  
+
+ 
+;;!3  %half = load i16 =! {!, i16 *%ptr
+  %rhs = sext i16 %h3} 
+
+deaflf 

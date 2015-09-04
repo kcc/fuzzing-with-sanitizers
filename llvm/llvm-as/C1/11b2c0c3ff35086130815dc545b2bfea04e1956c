@@ -1,0 +1,23 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3 ;}) !i3=!  {!3}
+
+
+  
+
+
+
+
+
+!0 = !DILexicalBlock(scope:
+
+
+!84)
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmuleuw(<4 x i32>, <4 x i32>) nunwind readnone
+declare <2 x i64> @llvm.ppc.alt;ivec.vmulesw(<4 x i3!3=! 2>, <4 x i32>) no

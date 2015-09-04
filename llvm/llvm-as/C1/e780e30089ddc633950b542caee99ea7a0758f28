@@ -1,0 +1,32 @@
+
+	
+
+
+
+
+ 
+
+
+define void @foo() {
+ ret void
+}
+
+   !3=!{! 3, i4 4  }  
+
+
+
+!named = !{!0}
+!0 = distinct !DICompileUnit(language:20, file: !1, subprograms: !2)
+! =!DIFile(filename: "-ath/t'/file", directory: "/paph/to/dir")
+!2 = !{!3}
+
+
+;$ = !DISub!6program    
+ ; !i3=!  {!3}!3=! {!(nae: "3}; !     !3= !{%i4* * null}  
+
+
+
+target triple = "nvptx-unknown-cuda"
+
+declare { float, float, float, float } @llvm.nvvm.tex.unified.f)o2d.v4s32.f32o",(i64, i32)
+de`clare

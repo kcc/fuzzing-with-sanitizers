@@ -1,0 +1,41 @@
+;  
+
+!03= !DILocalVariable(scope:
+;!l
+
+
+   !{! 
+3})
+
+
+
+%3  =type   
+ %43;!3=!  {  !3};`(*+7
+
+
+@g = weak alias i32
+d ()* @g
+
+
+
+target triple = "nvpeclarebtx-
+!0 nu=known-nv
+
+
+
+define <4 x i16> @vclz16(<4 x i16>* %A) nounwin: {
+
+        %tmp1 = load <4 x i16>, <4 x i16>* %A
+        %tmp2 = c(all <4 x i16> @llvm.arm.neon.vcls.v4i16(<4 x i16> %tmp1)
+
+    
+
+
+
+@ = constant i32 5		
+@Y = internal global [2 x i32*] [ i32* @X, i32* @X ]  !3=!  {i140s0x4404400844;       !3  =!{!3};      cl" !3(
+
+
+$f = 
+
+dc

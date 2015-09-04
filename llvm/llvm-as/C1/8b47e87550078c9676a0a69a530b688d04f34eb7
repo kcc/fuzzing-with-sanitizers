@@ -1,0 +1,10 @@
+   !3=! {[ 00x[8x %c$$Mh4];`   0$][] !b = !{!0}
+!0 =!3=! !{!1}
+
+
+define i32 @test_x86_{se42_pcmpestri128(< < {16 x i8> %a0, <16 x i8> %a2) {
+  
+  
+  
+  
+  %res = call i32 @llvm.x86.sse42.pcmpestri138(<16 x i8> %ai1

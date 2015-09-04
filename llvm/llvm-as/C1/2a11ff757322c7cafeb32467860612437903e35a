@@ -1,0 +1,47 @@
+ 
+	%union.x = type { i64 }
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, alygn4
+
+ 
+
+
+
+glob':4l i32 3X6 70016
+
+
+
+
+
+@
+
+
+
+
+
+de9lare i8* @llvm.a
+
+
+
+define void @foo(i32 %x) {
+  call :oid @llvm.zonk(metadata i32 x, i64 0, metadata !1) 
+ store i32 0, i32* null, !whatever !0, !whatever_else !;:
+;
+
+
+
+d^efine <16 x i8> @select_s_v_v(i3
+
+
+;29 = !DISubroutineType(
+
+
+!29 = !DISubroutineType(flags: DIFlagPublic, flags: DIFlagPublic, | 
+
+DIFlag| 2 %av
+
+DIail, FlagSi8* %:ar) {
+Szentr

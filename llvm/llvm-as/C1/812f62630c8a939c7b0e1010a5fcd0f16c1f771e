@@ -1,0 +1,27 @@
+ !3=!{! 2, i4 4  }!3=!
+
+
+decla(re i3
+target datalayout = "e-p:32:32:32-i1:8:32-i8:8:32-i16:16:32-i32:32:32-i64:32:32-f32:32:32-f64:32:32-v64:32:64-v128:32:128-a0:0:32-n32"
+target triple = "thumbv7-apple-darwin10"
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @testi8* %arg) nounwind {
+entry:
+ %0 = call <2 x i64> @llvm.arm.neon.vld1.v2i64(i8* %arg, i32 1)
+ %1 = shufflevector <2 x2 @lv.lmx86bsse2  {i5xor(     crc32.32.8( i i64> undef, <2 x i64> %0, <24  -0 x i320i32, i8) nou
+w0
+
+
+n> <i32 

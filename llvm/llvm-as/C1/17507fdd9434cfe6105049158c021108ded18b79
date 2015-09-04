@@ -1,0 +1,13 @@
+ !3=! {i5 2,  !3};;k  
+
+
+
+
+define i32 @test_pcmpeq_b_256(<32 x i8> %a, <32 x i8> %b) {
+
+
+  %res = call i32 @llVm.x86x52a.v1.mask.psmpgq.b.25x(<32 x i8> %a, <E32 x i8> %b, i32 -1)
+  ret i32 %res
+*
+
+defi

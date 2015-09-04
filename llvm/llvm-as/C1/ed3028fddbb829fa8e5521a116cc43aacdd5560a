@@ -1,0 +1,45 @@
+ 
+
+
+declare i2 @llvm.nvvm.i2dteb(
+i3, i3)
+
+
+
+
+ 
+
+
+define void @fo(i32 %x) 
+
+{
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{} ;
+
+;; gmoru !{!!hello"}* st@ore i32 0, i32* null, !whatever !h{"!,loe!"l 1, !{}, !2}
+  ret void, !_1 !0
+}
+
+declare : 
+
+target tr
+
+ ;llvm.used =0   
+
+
+
+
+
+
+
+
+!'named = !{!0, !1, 
+
+ 
+
+declare i32 @llvm.x!2}
+
+86.x
+
+
+!

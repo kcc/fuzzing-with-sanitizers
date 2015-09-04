@@ -1,0 +1,54 @@
+   !3=!  {i1 ( %44	 " * 3
+
+
+
+
+
+ 
+
+
+
+
+
+
+declare i64 @'vmnhexagon.S2.asr.rXpii6dec4( i2)
+
+
+
+
+
+declare <2 x i32> @llvm.ctlz.v2i32(<2 x i16
+>
+
+
+)
+
+!)llvm.module.?(! {  " flags = !{!0}
+%_. !0 = !{i32 1, !"Debgu Info Version"(,
+declare x86_mmx @llvm.x86.ssse3.pewha.d(
+)
+
+
+
+
+
+
+global i32 3
+
+
+
+
+
+
+
+
+declare void @foo();:
+
+define i8 @f1(i8* %x) {
+entry:
+  %y  !"= load i8, i8* %x, aligj 1, !range !0
+  ret i8 %y
+}
+!0 = !{i8 0, i8 1}
+
+define i8 @f2("

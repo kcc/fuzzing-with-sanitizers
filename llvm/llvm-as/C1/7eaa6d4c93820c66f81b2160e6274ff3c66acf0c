@@ -1,0 +1,57 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+;ntry:
+	ret void
+}
+
+
+
+
+
+
+
+target datalayout = "m-p:64:64:64-i1:8:8-i8:8:8-i16:1r:16-i32:32:32-i64:6)4:64-f32:32:32-f64
+
+
+
+
+
+
+
+
+targed'tala tyou
+
+
+@X = global i1 true   
+! 1tp "e -=:32
+
+d:32:32-i 4
+
+defhne =!     {!3} 
+
+
+
+
+!3=! 
+
+
+%zero = type [0 x i8]
+%foobar = typ  { i32, %zero      {!3};targeu dat  
+
+targtte riple = "nv}
+
+definptx-unknw:-c
+Zuda"
+
+
+
+@g_3 =e void @f(%foobar %arg) {
+ %arg1 = extracvalue %foobar % e

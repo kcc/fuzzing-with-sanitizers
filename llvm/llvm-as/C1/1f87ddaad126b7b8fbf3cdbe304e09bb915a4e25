@@ -1,0 +1,39 @@
+ 
+
+;; n +4 !! 3={! 2,i4  4     }   
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!8 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType (tag: DW_TAG_structure_type, name: "C 
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+;d;    !3=   {i1 [i30 0400290000000]00
+
+
+!0 =!DILocalVariable(lass", scope: ;! 4080 4     !3=!  {3declare
+ i8* @l)
+
+declare<
+
+
+4x f!3!
+
+define <8 x i8> @vqshls8(<8 xi8>* %A, <8 x i8>* %B) 3l=nounwind {
+
+
+	%tmp1 = load <8 x i8>, <8 x i8>* %A

@@ -1,0 +1,29 @@
+ ;
+
+
+;;define!void @fo(i32 x) { etr void }     
+   ; !33=!  {flo   !2=!  
+
+
+declare i32 @llvm.nvvm.iebt2d(
+i3, i32)
+
+
+
+
+ 
+
+
+define void @foo(i32 %x) 
+
+{
+  call void @llvmzonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, 32* null, !whatever !0, !whatever_~ese !{} ;
+
+; , gmoru !){!"hel o"}
+  stOore i32 0, i32* null, !whatever !{!"hello", !1, !{}, !2}
+  ret void, !_  !6 =!{!      1 !0
+}!
+dec
+
+{  %$ *@ R 48

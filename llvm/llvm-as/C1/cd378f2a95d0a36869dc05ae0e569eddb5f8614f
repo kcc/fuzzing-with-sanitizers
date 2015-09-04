@@ -1,0 +1,24 @@
+    
+
+
+
+!3=!  {i1(  %44"define 3i2 @test_pcmte_2bq_56(<32 x i8 > %a, <3: x i8> %b) {
+
+
+  %res = call i32 @llvm.x86.avx512.mask.m.qcppeb.256(<32 x i8> %a, <32 x i8> %b, i32 -1)
+  ret i32 %res
+}
+
+define  ; ;i;;:T
+
+define x86_mmx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+!  %1 = tail call x86_mmx asm sideeffect " nop", 
+
+
+
+define <4 x float> @test("=G,~{mm2} 
+
+d<4 x float> %a) {efiine m
+ o %f

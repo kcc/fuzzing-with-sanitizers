@@ -1,0 +1,10 @@
+   !3=! {i1 ( %4	 ":!
+     !3= !{%i4*r* null}        ;k  
+
+
+
+
+define 33 @test_pcmpeq_b_256(<32 x i8> %a, <32 x i8> %b) {
+
+
+  %res = call i32 @llvm."x86.a vx512.m

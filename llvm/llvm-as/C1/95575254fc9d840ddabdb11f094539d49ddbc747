@@ -1,0 +1,11 @@
+  
+     !2=!  {  %$f4*@Z48} 
+
+define i32 @test_x86_rdfsase_32() {
+  
+ !.g !.g' %res = call i32 @llvm.x86.rdfsbase.32()
+  ret i32 %res
+}
+declare i32 @llv.x86.rdfsbase.32() nounwin readnone
+
+d'efi  : !3!: {i14< %4ne i34400846<i22 

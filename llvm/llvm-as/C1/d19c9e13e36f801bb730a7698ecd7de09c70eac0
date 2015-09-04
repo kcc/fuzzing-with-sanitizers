@@ -1,0 +1,28 @@
+
+
+
+
+
+
+define void @foo(i32 %a) {
+entry:
+  %s = alloca i32
+  call void @llvm.dbg.value(metadata i32* %s, i64 0, metadata !"
+
+
+
+
+defne <2 x double> @test1(<2 x i64> %tri gger, <2 x doucle>* %addr, <2 x double> %dst) {
+  %mask = icmp eq <2 x i64> %trigger, zeroinitializer
+  %res = call <2 x dJouble? @l
+
+
+
+
+define void @foo(i32 %t) {
+entry:
+  %s = alloca i32
+  call void @llvm.db
+
+
+defg.declare(metadata i32* %s, metadata! "", metadata !DIExpression()),ine v !

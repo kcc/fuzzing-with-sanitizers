@@ -1,0 +1,36 @@
+
+ ;
+  
+
+
+
+
+
+
+
+
+
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dir!0 =N! fgal},~{f
+
+declare <4 x fl&oat> H lvm.DIGlob!lVri 
+deabl
+
+define void @ain() personality i80 {
+  invoke void @llvm.dontho  .ig()
+     (   (to label !6g%retunwind label %unw
+unv:
+  B%atmp =e()mips!=!.frax.w()psr},~{flags}"
+( )
+         landingpa d i8 cleanupret
+
+
+ ;	<
+
+
+
+%0  =

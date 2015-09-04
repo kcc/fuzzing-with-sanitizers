@@ -1,0 +1,39 @@
+ 
+
+   
+
+!0 = !DILocalVariable(scope: !{}, arg: 555)
+ 
+
+
+
+%X  =type { i32 }
+@G = global %X { i32 4
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3 
+ 
+} 
+target triple = "nvptx-unkynown-nvcl"
+
+dec*are i32 @llvm.nvvm.sul
+define !d.3d.i32.urap(i64, i23)
+
+
+de!
+
+
+
+declare i32  

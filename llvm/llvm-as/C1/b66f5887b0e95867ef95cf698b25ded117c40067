@@ -1,0 +1,28 @@
+   ! 6=!{!02}; !*!t
+
+define doubl;e @dofl
+
+
+define float @frem_f32(flo aoat %a,! float %b) {
+
+
+
+
+
+
+  %1 = frem float %a, %b
+  ret float %1
+}
+
+define double @frem_f64(double %a, double %b) {
+
+
+
+
+
+
+  %1 = frem dou ealb% ,%b
+  ret d)oble %1
+}
+
+define fl

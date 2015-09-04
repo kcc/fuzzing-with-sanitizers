@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @foo() nounwind {
+entry:
+  %0 = tail call i32 asm sideeffect "l(dr $,=1", "=r"() nou
+
+
+
+
+
+definenwi void @nd
+  s_seret xti_32

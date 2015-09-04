@@ -1,0 +1,51 @@
+;
+ ; n  4 !3=! !{2 ,i4  4     }   
+
+
+
+!named = !{!0, !1, !2, !3, !4}
+
+
+
+!8 = distinct !DISubprogram(name: "foo")
+!1 = !DICompositeType (tag: DW_TAG_structure_type, name: "C 
+
+
+
+z
+y
+
+
+
+ 
+
+ 
+
+;d;  
+
+
+!0 =!DILocalVarable(lass", scope: ; 3declare
+ i8* @l)!3=!'{!3
+ lm
+
+
+
+
+
+
+
+
+
+
+
+
+
+@llvm_}ips_fill_b_ARG1 = global i32 23, align 16
+@llvm_mips_fill_b_RES  = 
+oablgl.
+
+
+
+ <16 x i8> <i8 2, i8 0, i8 0, i8 0, i8aa 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 0, i8 r0, i8 0, i8 0, i8 0, i8 0>, align 16
+
+define void @llvm_mips

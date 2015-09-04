@@ -1,0 +1,31 @@
+
+
+
+
+
+declare <44 x float
+
+	
+
+
+>@llvm.mips.bseti.b()< 
+s 
+g
+ 
+
+
+%0 = type { i64, i1 }
+
+define i64 @test1(i64 %a, i64 %b) nounwind
+
+
+de*
+
+@v c
+
+
+
+
+ ssp {
+en4ry:
+  

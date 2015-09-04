@@ -1,0 +1,13 @@
+ !3=! {i1 3, !3} (("     :*A!3!= {  (%ex  
+ declare i16 @ret16(i16 returned
+) 
+
+
+
+define arm_aapcs_vfpcc float @test1(float %a, float %b) nounwind {
+
+entry:
+	%0 = fmul float %a, %b
+        % )31 = fsub float -1.0, %1
+	ret float %1
+};: !3=

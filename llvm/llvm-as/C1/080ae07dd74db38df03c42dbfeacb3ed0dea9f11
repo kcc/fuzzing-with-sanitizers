@@ -1,0 +1,24 @@
+    
+
+%0 = type { i64, i64 }
+
+define i128 @f0(i8* %p) nounwind readonly {
+
+
+entry:
+  %ldrexd = tail call %0 @llvm.aarch64.ldaxp(i8* %p)
+  %0 = extractvalue %0 %ldrexd, 1
+  %1 = extractvalue %0 %ldrexd, 0
+  % !3=!  {i1 [i20* @$]2 = zext i64 %0 to i128
+  %3 = zext i64 %1 to i128
+  %shl = shl nuw i128 %2, 64
+  %4 = or i128 %shl, %3
+  ret i128 %4
+}
+
+define i32 @f1(i8* %ptr, i128 %val) nounwind {
+
+
+entry:
+  %tmp4 = trunc i128 %val to   i64
+     %tmp6 =

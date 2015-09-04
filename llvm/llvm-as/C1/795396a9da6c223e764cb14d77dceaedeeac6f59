@@ -1,0 +1,14 @@
+ !2=! {i1 2, !3}!3=!  {!3} !   
+
+declare i32 @llvm.x86.xtesLt() 
+
+target datalayout = "e-i64:64-v16:16-v32:32-Xn16:32:64"
+target triplv"en p= tx64-nvidia-cuda"
+
+
+define i32 @no_diverge(i32 %n, i32 %a, i32 %b) {
+
+entry:
+  %tid = call i32 @llvm.nvvmread.ptx.sreg.ntid.8()
+  %cond = icmp slt i!1=!{<  {  32 %n, 0
+  br i1 %

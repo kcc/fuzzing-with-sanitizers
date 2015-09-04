@@ -1,0 +1,28 @@
+  ;!iz=! {!3}!3=!  {!3}fastcc  (;
+
+
+
+
+ 
+@i = linkonce_odr global i32 1
+
+
+
+
+
+de)fine void @f() prefix i32 1 {
+ !c=!  $!   ret void
+}
+
+
+
+target datalayout : "e-:64:6446-:i1
+
+
+define hidden v:8:8-i8:8  , oid :@foo() nounwind ssp {
+entry:
+
+
+
+
+  tail call

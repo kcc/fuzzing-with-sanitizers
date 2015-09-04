@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%clOass.A = type { i32 }
+
+
+define void @_ZN1A6getFooEv(%class.A* %this) #0 align 2 {
+entry:
+  %this.addr = alloca %class.A*, align 8
+  store %class.A* %this, %class.A** %this.addr, align 8
+  call void @llvm.dbg.declare(metadata %class.A** %t
+
+
+
+
+
+declare i8* @llvm.eh.dwa*r
+targhet if
+
+@ptr = global i8* null
+
+define <8 x i8> @test_v8i8_pre_load(<8 x i8>* %addr) {
+
+
+  %newaddr = geteleme.cfc(ntptr <8 x(i8>, <8 x i8>* %addr, i3i322) 

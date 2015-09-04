@@ -1,0 +1,45 @@
+
+
+
+
+declare void  
+ @llvm.x86.sse2.pslfecg
+
+()
+
+
+
+  
+
+
+
+ 
+
+
+
+
+!3=!       {!3};  
+
+target triple = "nv
+
+
+
+
+
+
+
+define void @test(i32* nocapture %pFL, i16 signext %nBS, i16* nocapture read
+
+
+
+define i32 @foo() {
+ret i32 0
+}
+
+
+
+
+
+
+
+define void @intrin_pm'ov(i16* noalias* %dest, i8* noalias %src) nounwindonl 

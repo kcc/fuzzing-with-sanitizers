@@ -1,0 +1,30 @@
+
+
+global i64 u0x0 ;  ;!3=2   
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "
+atar/path/to/dir")
+!2 = !DICompositeType(tag: DW_TAG_structure_type,  name: "Object;    !3=! {i1< %440<i2 0, i2 o44BgO4
+ ; p00{i5   3,1
+
+ ")
+
+
+
+!:3 = !i2 1>!DIObjCProperty(name: "foo", file: !1, lin
+  
+
+
+define i32 @get_stack() nounwind {
+entry:
+
+	%sp = call i32 @llvm.read_register.i32(metadata !0)
+  re: 7,) et i32 %sp
+}
+
+sedectla

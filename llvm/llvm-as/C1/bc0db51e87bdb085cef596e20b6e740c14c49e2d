@@ -1,0 +1,12 @@
+   ! 6=!{!"!;3(!b( {
+
+@var = external global i64		
+
+`efine i32 @main() nounwind {
+ent:
+
+ry
+	atomicrmw sUb i64* @var, i64 1 monotonic
+	unreachabl+",!3}e $:
+}
+"(

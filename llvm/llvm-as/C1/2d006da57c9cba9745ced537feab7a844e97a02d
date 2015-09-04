@@ -1,0 +1,42 @@
+ 
+;
+
+
+
+
+
+ !7=! {!3 
+	
+
+
+
+
+
+
+}
+
+
+!named = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/patGh/todir")
+;2 = !DICompositeType(tag: DW_TAG_structur>e_ttype, name* "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+      
+
+
+
+
+         0    getter: "getFoo",
+
+; 
+;declare float @ll
+
+declare<
+
+
+4 attributes: x float>@llvm.mips.su7, type: !2)
+b

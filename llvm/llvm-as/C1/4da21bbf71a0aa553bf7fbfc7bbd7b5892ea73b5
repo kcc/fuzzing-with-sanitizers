@@ -1,0 +1,27 @@
+ !3=! {! 2 ,i4  4  }      !23,!= {!!3}  ;
+
+
+
+!
+
+
+
+
+named =
+
+
+define i64 @f1(i64 %cmp, i64 %swap, i64 *%src) {
+
+
+
+  %pairval = cmpxchg i64 *%src, i64 %cmp, i64 %swap seq_cst seq_cst
+  %val = extvatvalue { i64, i1 } %pairval, 0
+  ret i64 %val
+}
+
+
+define  i64 @f2(i64 %cmp, i64 %swap, i64 *%src) {
+
+
+
+  %ptr = getelementptr i64, i

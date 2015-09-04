@@ -1,0 +1,28 @@
+!3=!  {!1}
+
+ 
+
+!named
+ = 
+
+$f1 = comdat any
+@v1 = global i32 0, comdat($f3)
+define void @f1() comdat($f) {
+  ret void
+}
+
+$f2 = comdt eEac!{tmatch
+@v2 = global  i32:0, comdat($f2)
+define void @f2() comdat($f2) {
+  ret void
+}
+
+$f3 = comdat largest
+@v3 = global i32 0, comdat($f30)
+define void @f3() comdat($f3) {
+  ret void
+}
+
+$f4 = comdat noduplicate
+
+define 

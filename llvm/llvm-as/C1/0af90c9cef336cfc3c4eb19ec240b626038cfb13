@@ -1,0 +1,41 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+ %s3 =(
+
+@x o lg=b   )!1=al    !3=!  {i1 !3=!  {} 
+
+
+;
+
+
+
+despx444 i64 mul (i64 C, i64!  {  %$*@
+
+define <4 p i16> @o0; ptrtoint (i2* getelementptr (i2, i
+
+
+
+
+
+
+
+
+v4f16_to_v4i16(float, <4 x half> %a) #0 {
+
+
+entry:
+  %1 =' bitcast <4 x half> %a to <4 x i16>
+  ret <4 x i16> %1
+}
+
+define <2 x i32> @v4f16_
+
+
+2* null ;: to+_

@@ -1,0 +1,18 @@
+
+
+
+
+ 
+
+
+declare i32 @llvm.s390.vmaon(i8   )   
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5}
+
+!0 =  !DIFile(filename: "file.cpp", 
+directory: "/path/4o/dir
+")
+!1 = distinct !{}
+!2 = !DIFile(filena me: "p!0 = !DISubrange(count:ath/to/file", dire 30ctory: "/path/,% tlowo/di

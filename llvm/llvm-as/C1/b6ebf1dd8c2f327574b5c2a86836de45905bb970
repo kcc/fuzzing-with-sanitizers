@@ -1,0 +1,24 @@
+
+
+;
+;  
+
+
+
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dir!0 =N! fgal},~{f
+
+decl!`are <4 f xloat> @ lvm.DIGlobalVariabl
+
+
+defi.e void @main() personality i8 0 {
+  mnvoke void @llvm:.   !3=!  {i14	 ( donothing()
+ @ (   ! (to label %ret unwind la@var = private hbel %u7w
+unw:
+  %tmp =e()mips. frax:w()psr},~{flags}"
+( )
+         landingpidden global i32 ad i8 cl0

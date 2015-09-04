@@ -1,0 +1,29 @@
+!3= !{!3}
+ 
+
+
+!nmed = !{!0, !1, !2, !3, !4, !5, !6, !7, 
+!8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(
+tag: 3,; headar: "so!3 col!s3d(#m%T00header", 
+ operands: {!0, !3, !4})
+!2 = !
+ arget dGe
+
+@X = global <{i32, i32}> <{ i32 1, i32 1 }>
+
+;: 
+!llvm.module.flags = 
+!{!0}   
+!	
+0
+
+
+
+
+ = !GenericDINondea(tag:  11)

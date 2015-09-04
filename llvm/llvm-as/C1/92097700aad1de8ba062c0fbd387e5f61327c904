@@ -1,0 +1,25 @@
+! ;k;:T    6=!{! 2}!2=!  {!3 } !3=!  {!0}; "m
+
+
+declare <4 x float> @llvm.mips.bnmax.w()
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.vad846i()
+
+
+ 
+
+
+define void @f() gc "shado!Kwstqack  {
+entr;
+
+declar:e<
+
+4x float>@llvm.mips.y

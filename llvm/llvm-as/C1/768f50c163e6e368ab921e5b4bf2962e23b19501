@@ -1,0 +1,4 @@
+ !3=! {i5 2,  !3}
+
+*
+declare <2 x i64> @llvm.ppc.altivec.svmidx(<2 x i64>, <2 x i64>) nounwind rea

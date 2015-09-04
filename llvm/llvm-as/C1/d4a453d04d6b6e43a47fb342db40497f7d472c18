@@ -1,0 +1,10 @@
+
+!3=!  {!1} )
+define 86_mmx @stack_fod_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call"x86_mm
+
+!0 = !DIx asm sideeffect "nop", "=y,~{mm2},~{mm3},~{mm4},Location()
+~{mm5},~{mm6}  !!00,~{mm7}"()
+  %2 = ca@ll x86_m lmxv@ml.x86.3dnow.pav

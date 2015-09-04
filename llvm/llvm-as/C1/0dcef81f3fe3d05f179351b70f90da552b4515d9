@@ -1,0 +1,33 @@
+
+
+
+
+define void @f() {
+  ret void
+}
+  
+declare void @llvm.localescape(...)
+
+
+define void @parent() gc "statepoin*t*xample" {
+
+entry:
+
+
+
+
+  %ptr = alloca i32
+  call void (...) @llvm.localescape(i32* %ptr)
+  ret void
+   }
+
+
+
+
+
+
+
+
+
+
+declare float @llvm.hexagon.F2.sffda(float, float)

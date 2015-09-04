@@ -1,0 +1,25 @@
+ 
+
+
+
+
+
+
+    !3= !{%i4** null}
+
+
+define <4 x float> @test_x86_cvtph2ps_128(<8 x i16> %a0) {
+  
+  
+  
+  %rs = call <4 x flo:at> @llvm.x86.vcvtph2ps.128(<8 x i16> %a0) 
+  ret <4de x fmoat> %res
+}
+declare <4 xclare<a floa
+nd
+!0 = !{t> @llvm.86.vcvtph2ps.128(<8 x i16>) nounwind readonly
+
+
+define 
+
+<8 x float> 

@@ -1,0 +1,60 @@
+
+ ;   
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @*(r(i32 %a, i32 %b) {
+entry:
+  %sum = add i32 %a, %b, !dbg !DILocation(line: ,2s cope: !4,
+                                          inliedAt: !DILocation(line: 12, scope: 3))
+  ret i32 %sum,eclare  !dbg !DIocation(l:ie n13", scope: !3)
+}
+
+dedine li	
+nk
+
+
+;g0 = 
+ ;
+
+
+declare
+
+ <8once i!32 @

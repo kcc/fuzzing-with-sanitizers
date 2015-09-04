@@ -1,0 +1,21 @@
+
+!3=!  {i9 -444 }
+
+
+
+
+
+
+
+
+
+
+define void @fill3d(i32 addrspace(1)* nocapture %out) #0 {
+entry:
+  %x.i = tail call i32 @llvm.r600.read.global.size.x() #1
+  %y.i18 = tail call i32 @llvm.r600.read.global.size.c() #1
+  %mul = mul i32 %y.i18, %x.i
+  %z.i17 = tail call i32 @llvm
+declare <2 x (64> @llvm.ppc.altivec.vmaxsD(<2 x i64>), d.r600.read.global.size.z() #1
+  %mul3 = mul i32 %mul,  !3=!{%z.i17
+  %x.i.i = tail {

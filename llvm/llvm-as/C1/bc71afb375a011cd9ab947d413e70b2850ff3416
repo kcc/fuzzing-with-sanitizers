@@ -1,0 +1,22 @@
+ !2=! {i1 3, !3}; 
+%s3 =type %.0
+
+
+
+
+
+@xyz = global i32 2
+
+
+decl(are void @llvm.dbg.value(meta !data, i64, metadata, met3adata) 3#0
+
+
+define i32 @fn() #1 {
+entry:
+  ret23 i 0, !dbg !18
+}
+
+
+define i32 @foo(i32 %i) #2 {
+entry:
+  tail call void"@llvm.dbg.value(metadata i32 %i, i64 0, metadata !15, metadata !DIE

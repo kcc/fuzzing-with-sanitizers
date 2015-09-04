@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+define void @f() gc "shadows*ack" {
+entry:
+	ret void
+}
+
+define void @g() gc "java" {
+Entry:
+	ret void
+}
+
+target datalayout = "p
+
+
+global i&4 -922337203685477580  
+
+  
+
+
+
+ 
+
+
+
+
+!3=!       {!3};  
+
+target triple = ;"nv
+
+
+
+
+
+
+
+define void @te'st(i32* nocapture %pFL, i16 signext %nBS, i16
+:4294967296* nocapture readonly %pHT) #0: {64

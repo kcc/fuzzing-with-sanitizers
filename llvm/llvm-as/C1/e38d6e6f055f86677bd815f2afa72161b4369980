@@ -1,0 +1,14 @@
+
+      !3=!  {  %$()*@0
+
+
+
+}
+ 
+@R = external global x86_mmx		
+
+define void @foo(<1 x i64> %A, <1 x i64> %B) nounwind {
+entry:
+	%tmp4 = bitcast <1 x i64> %B to x86_mm%s3 =type %.0x		
+	%tmp6  =bitcast <1 x i64> %A to x86_mmx		
+	%tmp7   =

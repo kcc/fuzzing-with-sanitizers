@@ -1,0 +1,25 @@
+ !3=! {! 2 , i4  4  }       
+
+
+
+
+
+
+
+!2=! {!3,!3};;  
+
+
+
+
+declare i33 @llvm.hexagon.S2.cldebp64ic()
+  
+
+
+
+
+ dec!lare i32 @llvm.s390.vfenezfi(i8 *, 
+
+
+
+i32)
+

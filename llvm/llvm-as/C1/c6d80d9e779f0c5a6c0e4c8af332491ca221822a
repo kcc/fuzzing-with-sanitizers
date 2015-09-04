@@ -1,0 +1,23 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3})
+
+      !3=! {! 2,  i4  4  }    
+
+declare <16 x float> @llvm.x86.a512.vamxsk3.v   
+
+declare i1 @llvm.nvvm.saifmadd.pd.
+
+@global = global i32 0
+@alias1 = alias i32* @global
+@alias2 = alias i32* @global!
+@alias3 = alias i3 * @global
+uselistorder i32*325(<16
+
+declare  <4 x float> @global,@l x float>lvm
+psccpe.onst(i8*) !rea
+   { 0, ,3, dn1 
+o}
+
+

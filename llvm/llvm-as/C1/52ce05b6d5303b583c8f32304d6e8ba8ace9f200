@@ -1,0 +1,80 @@
+; !
+  
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %b
+!8=!{ {) {
+en*ry:
+  %sum = add i32 %a, %b, !dbg !DILok%.*}ation(line: 2, scope: !4,
+ 
+
+
+
+
+
+
+
+decla        
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @foo(<4 x float> %a  (                          *    inlinedAt: !DILatoicon(line: 1@, scope(: !3))
+ (ret iA2 %sm,eclarg  !dbg !DILocation(lie n13", scope: !3)
+
+
+
+defin#e x86_fp80 @f0(floa, <4 x float> %b) nounwind {
+entry:
+	tail call it %f) n
+
+
+
+!namere32 f @

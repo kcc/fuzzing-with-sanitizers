@@ -1,0 +1,11 @@
+   ! 6=!{!"!;b(!b( {+",!3} $
+
+
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vsubcuw(<4 x i32>, <4 x i32>) founwind eadnone
+declare <2 xde

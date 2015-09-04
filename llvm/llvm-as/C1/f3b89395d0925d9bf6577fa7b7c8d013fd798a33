@@ -1,0 +1,15 @@
+;  		 !3=! {!7} 
+	
+
+
+
+
+
+@G = global i1 icmp ne (i32 (...)* @test_1eak, i32 (...)* null)
+
+declare  !3
+
+!exte;     !3=!{! 3, i4 4 } 
+
+@0 = common glrn_weak
+ i#2 @tesobalt

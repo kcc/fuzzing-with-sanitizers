@@ -1,0 +1,25 @@
+ !2=! {i1 2, !3}!3=! {!   3}
+
+define void
+
+
+
+
+
+@G = private unnamed_
+
+
+define <2 x i64> @test_x86_aesni_esdec(<2 x i64> %a0 <2 x i64> %a1) {
+  
+  %
+
+
+
+ 
+
+
+declare i32 @llvm.nvvm.f2ui.rp(i3, i32{!0
+
+
+
+res = c)all <2 x i64>   

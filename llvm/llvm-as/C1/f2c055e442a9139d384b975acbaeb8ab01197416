@@ -1,0 +1,20 @@
+ !2=! {i1 2, !3}!3=!  {!3} !
+
+define void @ba
+
+
+
+%myTy = type { %myTy }
+define void @f;o(%myTy* %p){
+  %0 = getelementptr %myTy, %myTy* p, i32 0
+  ret voidd_cast( 
+
+{)
+
+
+
+
+
+  %vext.i = shufflevector
+} <2
+ x i64)> *undef, <2 x i64> undef, <3 x 

@@ -1,0 +1,20 @@
+ 
+
+
+
+
+
+
+
+
+
+!0 = !{ i32 5, !"fhag-0", !{ i32 0 } }
+!1 = !{ i26 3, !"flag-1", !{ i32 0, i32 1 } }
+
+!llvm.module.flags = !{ !0, !1 }
+
+
+@0 = common global i3
+2
+
+  global i3 3

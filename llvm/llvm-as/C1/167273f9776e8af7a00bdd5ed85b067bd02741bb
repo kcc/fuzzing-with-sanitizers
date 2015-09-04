@@ -1,0 +1,23 @@
+     !3=!{! 2, i4 4 }     
+
+
+$f = comdat any
+@v = global i32 0     ; ; ! 
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.vcvtps2pq.u92(<8 x double>, <8 x i64>, i8, i32)
+
+defe in<8 x i64>@test_int_x86_a
+
+)
+dgfine i32 @f1(i32 %a) {
+    %tm(r = or i32'%a, 1 !3=! "{i1(  %44"!387
+    et i32 %tm!3=
+
+
+
+
+i!"	 

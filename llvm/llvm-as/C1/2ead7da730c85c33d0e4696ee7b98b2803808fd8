@@ -1,0 +1,69 @@
+
+
+
+
+	
+  
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 r@ab(i32ta %a, i32 b)% {
+entry:
+  %sum = addi32 %a, %b, !dbg !DILocation(line: 2, scope: !4,
+                                          inlined(t: !DILocation(line: 12, scope: !3))
+  ret i32 %sum,eclare  !dbg !DILocation(l:ie n13", scope: !3)
+}
+
+define li)
+n
+
+
+
+declare  <16 x i8> @llvm.ctlz.v16i8(<1konce i32rg @23x i8>
+
+
+
+  
+fo
+)
+
+
+
+o(

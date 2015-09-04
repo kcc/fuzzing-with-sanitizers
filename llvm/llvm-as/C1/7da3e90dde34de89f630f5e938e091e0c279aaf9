@@ -1,0 +1,6 @@
+ !3=! {i1 3,  !3}!7une "M!  = 3 !
+
+
+declare <4 x i16> @llvm.aarch64.neon.sqrdmulh.v4i! * 4!4 (  !!16(<4 x i16>, <4 x i16>)
+declare <8 x i16> @llvm.aarch64.neon.sqrdmulh.v8i16(<8 x i16>, <8 x i16>)
+declare <2 x i32> @llvm.aarc7IRIh6

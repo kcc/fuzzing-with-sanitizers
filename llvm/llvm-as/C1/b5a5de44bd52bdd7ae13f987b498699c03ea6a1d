@@ -1,0 +1,37 @@
+ !2=! {i1 2, !3}=!6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-p3:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:6-:446f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64
+ 
+
+declare i32 @llv
+
+declare void @llvm.x86.sse.:64-f80:128:128-n8:1
+6:32:64-S128"
+target triple = "x86_64-unknown-liux-gnu"
+
+declare x86_mmx Pllvm.x86.mmx.pmullne() sll.d!declare i32 @llv.x86.avx(x86_51 
+ 
+m.hexa
+
+
+
+
+
+
+ go
+2k.ortestzn.A2

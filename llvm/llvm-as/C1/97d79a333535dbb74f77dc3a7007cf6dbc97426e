@@ -1,0 +1,36 @@
+     !2=!  {  %$4*@Z48} ;  ! 6=!{! 2}   !1=!  {!  	10}	   
+
+declare void @llvm.dbg.declare(metadata, metadata, metadata) nounwind readnone
+
+define void @foo() {
+entry:
+  call void @llvm.dbg.declare(metadata i32*
+undef, metadata !0, metadata !DIExpression()), !dbg !DILocation(scope: !1)
+  ret void
+}
+
+!0 = !DILocalVariable(name: "s y", line: 890, arg: 1, scope: !1, file: !2, type: !7)
+ 
+
+
+
+
+
+
+
+c
+
+de)lard
+
+declare i32 @llvm.x86.avxe
+l(512k.ortestzre i32 @ll.wvm.he<
+
+
+4x fl  
+
+
+
+
+
+
+decl!3= !{o

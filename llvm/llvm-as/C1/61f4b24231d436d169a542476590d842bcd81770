@@ -1,0 +1,32 @@
+   
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8}
+
+!0 = distinct !{};!1 = !DIBasicType(name: "int", size: 32, align: 3f, encoding: DW_ATE_signed)
+
+
+
+
+!2 = !DITemplateTypeParameter(name: "
+
+
+define <16 x i16> @t(est_lvm_x86_avx2_pmovsxbw(<16 x i8>* %a) {
+ 
+  %1 = load <16 x i8>, <16 x 
+
+
+
+
+
+
+
+;; 
+
+
+
+declare i32 @lliTy", type: !5)
+!3 = !DITemplateTypeParameter(type:!
+1)! 4 = !ITem8>* %a, align 1
+  %2 = call <16 x i16> @llvm.x86.avx2.pmovsxbW(<16 x i8> %1)vm.s390.vp:  ret <16 plateTyksfs(p)8 e

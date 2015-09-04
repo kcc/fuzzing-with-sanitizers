@@ -1,0 +1,26 @@
+
+
+declare i32 @llvm.x86.avx512.mgkrtestw.v61zi( i16
+)      ! 3= !  {i1 s0x444404 ,!8} 	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+target datalayout = "e-p:32:32:32-i6::64464-i32:32:32-i16:16:16-i1:32:32-f64:64:64-f32:32:32-f64:64:64-v32:32:32-a0:0-n16:72"
+target triple = "hexagon"
+
+define i64 @foo(i64
+
+
+
+ 

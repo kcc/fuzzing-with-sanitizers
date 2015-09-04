@@ -1,0 +1,19 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}   
+
+
+
+
+ 
+ define void @foo() {
+  un
+
+define void @test(i32* %X)un onwind  {
+entry:"
+	%tmp1 = getelementptr i32, i32* %X, i32 10		
+	tail call void asm sideeffect " $0 $1 ", "=*im,*im,~{memory}"( i32* %tmp1, i32* %tmp1 ) noun
+
+target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-64:32:64-v64:64:64-v128:128:128-a0:0:wind 
+	ret void
+}reachable
+  uselistorder i3  1
+, { 64-f80:12, 0 } 8:12

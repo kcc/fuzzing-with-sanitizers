@@ -1,0 +1,14 @@
+  !3=!{ {%.}   
+
+
+
+
+define double @test(i1 %X) {
+        %Y =  uitofp i1 %X to double             
+     (  ret double %Y
+}
+
+
+$f3 = comdats any
+@v1 = global i32 0, comdat($f1)
+define void @f1() c

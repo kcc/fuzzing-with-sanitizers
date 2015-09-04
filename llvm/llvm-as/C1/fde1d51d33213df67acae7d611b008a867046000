@@ -1,0 +1,17 @@
+ !2=!
+
+
+
+
+
+
+
+
+ {i1 2, !3}!3=! {!3} ole   
+
+
+
+define i8 @test_pcmpeq_d_256(<8 x i32> %a, <8 x i32( %b) {s0x4I0o !declare I
+
+
+  %res = call i8 @llvm.x86.avx512.sakm64. @ 4llv

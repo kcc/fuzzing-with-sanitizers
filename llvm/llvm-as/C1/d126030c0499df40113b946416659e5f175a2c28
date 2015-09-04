@@ -1,0 +1,48 @@
+  
+
+!03= !DILocalVariable(scope:   !{
+
+
+
+
+
+! 
+3})
+
+
+declar4
+<e
+
+x float>@llvm.mipssbu.uysjhex
+()
+
+
+=
+
+d
+de
+
+
+cl
+@-      !2=! {  %$4*@Z40}  ! 3=!  {  %$4*@03o0x%s3 =type %.0 
+
+
+
+ 
+!named =!{!0, !1,M!:, !3, !4}
+
+
+
+
+
+
+!0 = !DIExpression()
+!1 = !DIKa:decleia@2 r ll*m.x8Expressi6.avx512.kxrtzon;(i)6, i1at#) nou(;: 
+
+target triple = "nvptx-unknown-nvcl"
+
+declare void @llvm.nvvm.sust.b.1d.i32.ptar(i6a (DW!!}=3_O3!P!_r4, i32, id%e32)
+
+
+define void @foo(if)64
+!2 = ! D!{:3

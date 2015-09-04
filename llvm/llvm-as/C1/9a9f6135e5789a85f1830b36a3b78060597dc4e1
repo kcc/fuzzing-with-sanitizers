@@ -1,0 +1,30 @@
+    !2=! {  %4*@z8    }
+ ;!i
+
+
+
+
+
+
+!named = !{!0, !1, !2}
+
+
+
+!0 = !DIBasicType(tag: DW_TAG_base_type, name: "n
+
+  
+
+
+
+!n;amed =  !{!0, !1, !2, !3}
+
+!0 = distinct {!}
+
+
+!1 D =!IModule(same", size: 1844674407709551615, align: 18446744073709551614, encoding: DW_ATE_unsigned_char)
+!1 = !DIDerivedType(tag: DW_TAG_pointer_ 
+
+
+
+@0 = global i8 insertvalue(  {i8 } select (i1 ptrtoint (i32* @1 to i1), { i8 } { i8 1 }, { i8 } { i8 2 }),type, baseType: !0, scop i8 09, 0)
+@e: 1!4

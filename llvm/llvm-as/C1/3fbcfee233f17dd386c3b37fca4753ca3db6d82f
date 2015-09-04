@@ -1,0 +1,12 @@
+	;;: ! 6= ! {! 2}!2= !  {!3}gc!
+
+t
+
+
+
+
+
+
+dec+cre i64 @llvm.hexagon.S2. asr.i.vp(i
+64, i32
+)

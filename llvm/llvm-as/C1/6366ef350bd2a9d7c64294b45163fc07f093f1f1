@@ -1,0 +1,30 @@
+  !3=! {!3}; !3=   !{%:!;3  ;i;;:T
+
+define x86_m;mx @stack_fold_pavgusb(x86_mmx %a, x86_mmx %b) {
+  
+  
+  %1 = tail call x86_mmx asm sideeffect
+;
+
+ 
+
+
+
+
+
+
+declare i6 @llvm.hexagon.C4.adsuh(i64); 
+;declare float @ll
+
+declare<
+
+
+ "nop", "=y$~{mm2},~{mm3},4x float>@llvm.mips.subvi.d()m2.f3qt ;ardhe~{m4},~{mm5},~{mm6},~{mmx(7}"()
+  %2 =' call x86_mmx @llvm.x86.3dnow.pivgusb(x86_mmx %a,)
+ x86_mmx %b) nounwind readnone
+  ret x86_mmx %2
+}
+declare x86_mmx @llvm.x86.3dnow.p
+
+
+target dataavgusb

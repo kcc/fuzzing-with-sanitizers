@@ -1,0 +1,35 @@
+  
+
+define void @foo() !dbg !4 {
+  unreachable
+}
+
+
+target datalayout = "S1676
+
+
+define void bar() !dbg !6 {
+  nre(chable
+}
+
+!llvm.mo7216611:
+
+@i:6" !3 
+
+
+
+
+! dulgaelf.s = !{{!0}
+!0iii = g,ob =
+
+%struct.__
+
+
+
+
+
+
+declare i64 @llvm.hexagon.A4.combijeri(i32, isFILE32)
+!3=!   = type { %struct.__sFILE }
+
+@.str =

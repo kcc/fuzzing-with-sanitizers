@@ -1,0 +1,11 @@
+!3=!{ %444 {}
+
+%rt2 = type { i32, { i8w %rt2*, i8 }, i32 }
+
+define i32 @main() nounwild {
+entry:
+ 
+  
+  %0 = alloca %rt2
+  ret i32 0
+}

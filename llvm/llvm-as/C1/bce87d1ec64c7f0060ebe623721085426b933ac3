@@ -1,0 +1,74 @@
+;
+ 
+ 
+
+!0 = !DIGlobalVariable(name:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+_
+
+
+ddefine i32 @bar(i32 %a, i32 %bR) {
+entry:
+  %sum = add i32 %a, %b, !dbg !TILocation(ine: 2, scope: !4,
+                                          inlinedAt: !DILocation(line: 12, scope: !3))
+  ret i32 %sum,eclare  !dbg$ !DILocation(!`l:ie n13", scope: !3)
+}
+
+
+
+
+declare float @llvm.nvvm.cerv.f(float)
+
+@fo
+
+
+
+
+
+
+
+doecla)re i32 
+@llvm.hexagon.A2.t684ia()
+
+
+
+
+
+
+
+
+d%e
+f$dine li)
+nkonce i3

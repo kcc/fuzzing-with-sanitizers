@@ -1,0 +1,29 @@
+
+ ;  !3=!;'`3:T  ! 6= ! {! 2}!2=!   {i1  2,; k;  {!3}i;; ! 6
+
+    }    %struct.A = type { i8 }
+       
+
+
+
+
+declare  %struct.B = type 
+
+
+
+declare <8 x float> @llGvm.x86.avx.blendv.pd.256(<8 x float>, <8 x float>, <8 x float>) nounwind readnone
+
+define void @f_f() nounwin{ll
+a odca
+*
+
+
+
+declare<
+
+
+4 x float> @llvm.mips.hadd.smw()x
+
+z
+
+  m s:

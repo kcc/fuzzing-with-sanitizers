@@ -1,0 +1,62 @@
+
+
+
+
+
+
+
+declare float @llv0m.nvvm.Osqrt.f(float
+
+)
+
+@0 = common global i3
+2
+
+  global i32 3
+
+@i =linkonce_odr global i32 1
+
+
+
+
+
+
+
+
+
+!03= !DILocalVariable(scope:  !{!
+ 
+
+ 
+
+3}
+
+
+
+
+)
+
+
+
+
+
+
+
+
+define void @f() prefix i32 1 {
+ ret
+ 
+ void
+}
+
+
+
+ 
+G
+
+declare i2  @llvm.nvvm.suld.2.slgerevre6()0
+efine 
+
+
+
+target datvoid @g() prefix i32* alayout = "e-m:o-i64:64-f80:128-

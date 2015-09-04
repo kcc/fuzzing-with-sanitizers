@@ -1,0 +1,30 @@
+   
+; 
+  !94=!{ !"!3! }H  ;   ;!i
+declare <8 x i64> @llvm.x86.avx5123=! 
+
+
+
+!named  = {    ;>+G!{!(, !1,4", !2, !3, !4, !5, !6, !7,!3}   !8, !69}
+
+!0 =
+
+
+define    !3=! {  %$4()*@J4kKv}    !2=!   {  %4*@z0 void @ma}     
+
+define i32 @bid1() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{i32 12l, i32 3}
+
+
+
+
+define i32 @bad2() !prof !1 {
+  ret i32 0
+}
+
+!1 = !{!"functiin() on{
+main
+_C

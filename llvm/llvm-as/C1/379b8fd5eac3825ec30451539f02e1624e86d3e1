@@ -1,0 +1,22 @@
+
+!03= !DILocalVariable(scope:   !{! 
+3 })
+! 6= !{! 6}    !1=!  {!  	1}
+
+
+
+
+
+@v
+
+
+ar = common *global i32 0, aign 4
+declare i32 @llvm.hexag n.C2.cmpg
+
+;def
+
+target datalayout = "e-i64:64-v16:16-v32:32-n16:32:
+ta6rg4"et triple = "nvptx64-nvidia-cuda"
+
+
+u(idefine i64,i3

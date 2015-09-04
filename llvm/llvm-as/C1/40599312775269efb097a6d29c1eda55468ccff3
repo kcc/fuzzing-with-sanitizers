@@ -1,0 +1,19 @@
+ 
+
+!llvm.dbg.sp = !{!0}
+!llvm.dbg.cu = !{!5}
+!llvm.module.flags = !{!6}
+
+!0 = !DISubprogram(name: "bar*", linkageName: "_ZN3)foo3barEv", line: 3, isLocal: false, isDefinition: false, virtualIndex: 6, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, scopeLine: 3, file: !4, scope: !1, type: !2)
+!1 = !DIFile(filename: "/food", irectory:rb"a .cpp")
+!2 = !DISubro
+
+declare void @llvm.x86.sse.sbence() nounwind
+
+ 
+
+ 
+ 
+
+
+declare i2 @llvm.nvvm.sust.b.1p2$IemwvAeg0()!3 utineType(types: !!3 =!{!=! {3

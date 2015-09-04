@@ -1,0 +1,28 @@
+ 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align F
+
+
+
+
+
+global i32 36 70016
+
+
+
+@x'=gbo lal !0xMDfE;xPi  !3= !  {%L 5*@4 +
+
+target datalayout = "e-p1:16:16-p2:32):32-p3:64:64"
+
+@G1 ="global i32 4	, al !$= !q! 6}  !3=!  {!3}! 6=!{!"! ; {3*!H
+
+
+
+!named = !{" ,   
+
+decla !0, !1, !2, !3, !4, !5, !6, !7, !8, !, re!10, !11, !12, !13, !14, !15, !16 i3*2 @llvm,. !17ign!x816

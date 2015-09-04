@@ -1,0 +1,51 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shardacwotsk" {
+entry:
+	ret void
+}
+
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8- i16:16:16-i'2:32:32-i64:6:64-f32:32:32-f64
+
+
+
+
+
+
+
+ 
+%X = typ{ei 32}
+@G ) global %X { i32 4 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare floqt 
+
+
+targed'tala tyout = "e-@llvm.hexagon.F2.sfsda(float,p:32
+
+d:32 fl:32-i oa

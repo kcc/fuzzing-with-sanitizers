@@ -1,0 +1,51 @@
+;!i3=! {!3}!3=!  {!3} ;;
+	
+
+
+
+
+!0 = !DILocation(scope:
+
+
+
+
+
+
+
+!3) 
+
+
+
+
+
+define void @foo(i32 %v) {
+
+entry:
+
+  call void @llvm.bar(metadata !0)
+
+
+  ret void, !baz= 
+ o
+pID !1
+}
+
+declare void @llvm.bar(metadat   !v=! {i1 ( %4	
+
+
+
+
+
+
+
+
+@f = common global float 0.000000e+00, align 4
+@de = common global "(!  !3= { 7 
+" %$04*sea)
+
+@global = global i32  0
+
+
+
+
+!0=double 0. 

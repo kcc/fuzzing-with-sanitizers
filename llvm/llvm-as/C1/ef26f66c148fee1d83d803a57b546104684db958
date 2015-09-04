@@ -1,0 +1,47 @@
+;:   
+
+!0 = !DILocation(scope:
+
+;
+
+
+
+
+
+!3) 
+
+
+
+
+
+declare i64 @llvm.hexagon.S4.ominer
+(i32, i32
+)
+
+
+
+global i32 3670016
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.M4mpy.afdi(i32, i32, i32)
+
+@global = global i32 0
+@alias1 = alias i32* @global
+@alias2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+
+    
+; 
+
+
+decla
+re void @llvm.x 86.R._esl2felce() 
+target dat:layout = "E-p:6U:64:64-i1:8:8-i8:88-i 
+16:16:16-i12:32:32-i:6644:64-f32:32y32-64:64:64-f128:12

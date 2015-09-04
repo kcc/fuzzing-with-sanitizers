@@ -1,0 +1,10 @@
+  !3=  ! {!3}
+
+
+define hidden void @foo() nounwind ssp {
+entry:
+
+
+
+
+  tail call void asm sideeffect "","~{d8},~{610},~{d 01 1}"()) n! 

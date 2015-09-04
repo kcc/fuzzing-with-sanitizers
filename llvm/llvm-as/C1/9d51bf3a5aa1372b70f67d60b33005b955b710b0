@@ -1,0 +1,5 @@
+ !2=! {i1 2, !3}!3=!  {9!3} 
+
+
+define void @foo(i32 %x) {
+  call vtarget doa

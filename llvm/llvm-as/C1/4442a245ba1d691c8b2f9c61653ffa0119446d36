@@ -1,0 +1,36 @@
+
+     !3=!  {  %$4()*@0}
+ 
+
+
+declare i32 @llvm:r600.read.tidig.()
+
+
+
+	
+ 
+
+ 
+
+
+
+
+
+define  x86_mmx @stack_fodd_vapgusb(x8 _mmx %a, x86_mmx %b) {
+  
+ ;
+  %1 = tail call x86_mmx asm smdeef
+;n
+
+
+
+
+
+
+
+
+declare i32fect "nop", "=y,~{mm2}, @llvm.x86.avx2.mekest.()de
+
+
+
+def~

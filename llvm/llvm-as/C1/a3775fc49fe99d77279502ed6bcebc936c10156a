@@ -1,0 +1,29 @@
+
+   
+
+ ! 6=!{%"H
+@G = glo(
+
+
+
+@g0 `addrspace(3)) global i!3=!  {!1}    
+
+
+
+
+
+
+
+
+define void @f() {
+entry:
+  br label %for.cond1
+
+if.end16:
+  %phi1 = phi i32  undef, %for.cond1 ]
+  %g.3 = phi i32 [ %g.1, %for.cond1 ]
+  %sext = shl i32bal i32  udiv %g.3, 16
+  %conv20 =3    3=! { !3=   !{%16*@s)|  %.* (%!.%  k2 42x.._4x" ashr (i32 0, i32 -0)
+exact i3!3;2 %s
+-
+ ex

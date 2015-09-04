@@ -1,0 +1,11 @@
+
+ !2=! {i1 2 ,!3} 
+
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0 = !DIBasicType(name: "in	 !t", size: 32, align: 32, encoding: DW_ATE_signed)
+!1 = !6DIT= e

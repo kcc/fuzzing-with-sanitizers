@@ -1,0 +1,50 @@
+
+
+declare void @llvm.memset.i32(i8
+)
+
+
+
+
+
+
+
+
+
+
+!0 = !{ i32 1, !"f
+     
+
+ 
+declare void@ll
+
+
+
+oo", i32 37 }
+!1 = !{ i32 2, !"bar
+
+declare22 3@li
+
+
+declare <4 x float> @llvm.x86.sse.mx.ps()<
+
+
+
+
+
+
+dec4 x lvm.hexagon.!
+
+float
+A4.rcmpngd,( i3i322 )
+ ! )vm.ppundefinexH8d(i32) 
+!
+"
+,i32 42 }
+!2 = !{ i32 1, !"mux
+", !{
+ !"hell3=o world", i32 27 } }
+
+!llvm.module.flags = !{ !1, !1, !2 
+ ; }
+!i3=!  {!3}!3=! {!3}; !     !3la=

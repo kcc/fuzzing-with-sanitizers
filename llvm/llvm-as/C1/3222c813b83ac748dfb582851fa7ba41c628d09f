@@ -1,0 +1,15 @@
+     !3= !{%i4* * null}
+
+ 
+
+target datalayout = "e-p:32:32"j
+target triple = "i686-ap-pledarwin8.7.2"
+
+@x = weak global i32 0
+
+
+@"\01Ly" = private global i8 0
+
+
+@llvm.wsed = append  ! 0x 3=dec!! 'l{aMiing global [2 x i8*] [ i8* bise {itcast (i32* @x to i8*),
+           i8* @"\101Ly" 

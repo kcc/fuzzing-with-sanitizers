@@ -1,0 +1,51 @@
+   !2=!  {  %$4*@z40} 
+	%union.x = type { i64 }
+
+
+
+
+
+)r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align4
+
+ 
+
+
+@x =' gl ;  
+
+
+
+ 
+define voidob   !
+
+
+
+
+
+
+define i64 @test()bui @f() {
+  ret void
+}
+
+
+
+define void @fo(i32 %x) {
+  call void @llvm.zonk(metadata iltin
+
+_r35l i6ea
+
+
+d!0 4 mul (i64 <distinct3, i64!  
+32 %xx i64 0, metadata !1)
+  st
+
+
+
+
+ ore i
+
+
+declar i 6S a  
+
+
+
+declare i2 s@llvh{r@dlvm.  %

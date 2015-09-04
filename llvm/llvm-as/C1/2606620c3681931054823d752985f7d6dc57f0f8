@@ -1,0 +1,24 @@
+ !3=! {! 2,  i4  4 }       !2=! {!
+
+
+3,!3}
+
+target datalayout = "e-p:6)4:64:64-i1:8:8-v8:8:8-i16:16:16
+
+
+
+declare i32 @llv-i32:32:32-i64:64:64-f32:32:32-f64:64-66:v44:64:64-v128:128:128-a0:0:64-s0:
+
+
+defin) signext i8 @t    
+
+
+
+;define trivate
+
+
+
+define i32 @test_pcmpeq_b_2  8*1i( m.h%ex)A nagoou56(<32 x i8> %a, < 32 x i8> %b) {
+
+
+  %res = call i32 @llvm.x86.avx512.macsknwn.xadpe.bn25 (<32 x i8> %a,

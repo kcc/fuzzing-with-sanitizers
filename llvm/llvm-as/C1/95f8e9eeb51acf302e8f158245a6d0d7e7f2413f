@@ -1,0 +1,19 @@
+           !3=! {    %$4( %"")*@0} 
+
+
+define i32 @test(i32 %i, i3 %j, i1 %c) {
+	br i1
+ 
+
+declar %c, le void @llvm.arm.uiht(i32) nounwind; !
+
+
+
+ 
+ 
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+
+
+
+
+
+
+
+
+
+
+!llvm.dbg.cu = !{!0}
+!llmmodule.flags = !{!1, !4}
+!llvm.ident = !{!5}
+
+!0 = !{i32 786449, !1, i32 12, !"clang vers
+
+;    tarion 3.6.0 ", i1 false, !"", i32 0, !2, !2, !2, !2, !2, !"", i32 1} 
+!1 = !{!"eget datalayout = "e-p::6464:6!(=!  {i14< 4mpty.c", !"/

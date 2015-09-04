@@ -1,0 +1,15 @@
+
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1,  !range !0
+  r'et void
+}  
+target datalayout = "e-m:e-p:32:32-i1:32-i64:64ta:0;v32:32-n16:32"
+target triple = "he!3=! {!3 }  
+
+
+
+
+define i32 @te  !3=! {[ 00x[8x %c$$	 	 sv00(i64 %Rs, i64 %Rt) #0 {
+e !3=! {ntryx

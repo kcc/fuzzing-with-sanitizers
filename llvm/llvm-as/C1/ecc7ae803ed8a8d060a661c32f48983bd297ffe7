@@ -1,0 +1,36 @@
+ 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align F
+
+
+
+
+
+global i32 36 70016
+ 
+
+
+@x = gl	
+
+  
+
+
+
+
+
+
+ declare  i1 @llvm.nvvmups.mons(i8*)
+
+
+
+
+
+  
+
+!llvo.obal !0xMDfE;xPi  !3= !   {%Ldbg.s5*@4 +44  p = !{!0}
+!ll !v

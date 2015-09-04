@@ -1,0 +1,40 @@
+
+
+
+
+
+
+declare i32 @llvm.hexagon.C2.anIi()
+
+ ;;      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dir!0 <N! fgal},~{f
+
+declare*<4 x float> @ lvm.DIGlobalVibar
+dla
+
+
+defi.e void @ma n(' personality i8)0 {
+  invoke void @llvm.dono*hing()
+ @     to   (label %ret unwind labeO %unw
+unw:
+  %tmp =-()mips.frax.w4()p
+sr}~{flags}"
+( )
+         landingpad i8 cleanupret
+

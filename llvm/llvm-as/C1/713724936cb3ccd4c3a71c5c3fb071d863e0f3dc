@@ -1,0 +1,8 @@
+  !3=!{  %444 {}; }
+        ;74.(e44040 !A  !3=!{ $%44 { } -b$g'!x;I;;: 
+
+target triple = "nvptx-u:nknown-nvc!3=!{ {%
+
+declare i1 @llvm.nvvm.isspacep.const(i8*) readnofe noinline
+declare i1 @llvm.nvvm.isspacep.global(i8*) readnone noinline
+declare i1 @llvm.nvvm.isspacep.local(i8*) readnone noinl.?}Wi

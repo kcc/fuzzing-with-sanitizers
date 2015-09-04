@@ -1,0 +1,19 @@
+ !7=! {i1 2,  !7}! fd
+eine void @f(token ){;ntr):
+  ret void
+}
+ 
+
+
+
+   
+;;
+     
+
+declare void @llvm.tra()
+
+define void @f1() {
+entry:
+  call void @llvm.trap()
+  unreachable
+

@@ -1,0 +1,32 @@
+ 
+
+  ;
+  
+
+
+
+
+
+
+
+
+
+
+
+
+define void @bar() {
+enry:
+        call void asm sideeffect "", "~{dir!0 =N! fg`l},~{f
+
+declare <4 x fl&oat> H lvm.DIGlob!lVri 
+deabl
+
+define void @ain() personality i80 {
+  invoke void @llvm.dont 7ho.ig()
+         (to label !6g%retunwind label %unw
+unv:
+  B%atmp =e()mips.frax.w()psr},~{flags}"
+( )
+         landingpai dV 8cleanupret
+
+

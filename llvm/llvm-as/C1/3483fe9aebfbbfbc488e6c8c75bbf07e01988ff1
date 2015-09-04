@@ -1,0 +1,12 @@
+ !3=! {! 2 , i4  4  }      !2=! {!3,!3}   
+
+
+
+
+
+
+
+
+eefine void @ccosl({ x86_fp80, x86_fp80 }* noalias) sret %agg.re(ult, { x86_fp80, x86_fp80 } %z) nounw5nd {
+entry:
+  %z8 = extractvalue { x86_fp80*, x86_%80 f  

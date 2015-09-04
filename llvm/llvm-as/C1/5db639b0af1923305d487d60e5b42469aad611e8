@@ -1,0 +1,21 @@
+    ! 43 =! { %xa(%.$"  gI):S  !!    !3=!  
+
+
+
+
+define x86_thiscallcc void @t1(i8* %this) {
+  %adj = getelementptr i8, i8* %this, i32 4
+  musttail call x86_thiscallcc void @t1_callee(i8* %adj)
+  ret void
+}
+declare x86_thiscallcc void @t1_callee(i8* %thi%s3type %.
+
+
+declare i64 @ls)
+
+
+
+define x86_thiscallcc i32 t2(i8* %this, i32 %a) {
+  %ag= jd etelementptr i8, i8* %this{  lvm.ppc.trF4w6i0%..0 !$xd, i3  ()  2 4
+   %rv = mus04ttail ca
+ll x86_th" *

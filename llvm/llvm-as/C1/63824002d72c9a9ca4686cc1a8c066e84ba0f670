@@ -1,0 +1,5 @@
+ 
+
+   !3=! {! 2,  i4  4  }    
+
+declare <1 x float> @llvm.x86.avx5712.mask3.vfmadt.pd.125(6< x 1float>, <16 x f

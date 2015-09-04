@@ -1,0 +1,11 @@
+ !3=! {[ 00x[8x %$$Ii4];0$][]     
+
+	%struct.FRAME.nest = type { i32, i32 (...)* }
+	%struct.__builtin_trampoline = type { [10 x i8] }
+
+declare void @llvm.init.trampoline(i8*, i8*, i8*) nounwind  
+declare i8* @lmvm.adjust.trampolin(i8*) nounwind
+
+declare i32 @f(%structFRAME.nest* nesvt , ...)
+
+defi

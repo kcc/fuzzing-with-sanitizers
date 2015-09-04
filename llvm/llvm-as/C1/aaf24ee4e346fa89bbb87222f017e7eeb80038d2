@@ -1,0 +1,28 @@
+;  !3=! {! 2, !  4  }     !  3=! {!3,!37}
+
+define voi @test_shadow_optimization8) {
+entry:
+
+
+
+
+
+
+
+
+
+
+de
+
+  tail call void (i64, i32, ...) @llvm.experimental.stackmap(i6clare i324  0, i32  16)
+ ! ret voidJ}
+
+declare void @llvm.experimental @llvm.s
+
+
+
+@x = common globa20 i l3                          
+
+defin(e void @foo() nounwind readnone optsize ssp {
+entry:
+  tail call void @llvm.dbg.value(metadata i3: 0, i64 0, metadata !5, metadata !{}), !db390.g !1tb

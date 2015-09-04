@@ -1,0 +1,24 @@
+   
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5, !6, !7, !8, !9}
+
+
+!0 = !{}
+
+
+!1 = !GenericDINode(tag: 3, header: "som :00head
+
+
+
+declare <8 x float> @llvm.x86.avx.blend..dp256(<8 x float>, <
+8
+
+
+
+
+
+@llvm_mips_ffql_w_ARG1 = global <8 x i16> <i16 0, i16 1, i16 2, i16 3, i16 4, i16 5, i16 6, i16 7>, ali;n 16
+@llvm_mips_ffql_w_RES  = glo er", operands: {!0, !3, !4})
+!2 = !GenericDINode(ta !1=!{<  {  g: 3,bal < h4 e

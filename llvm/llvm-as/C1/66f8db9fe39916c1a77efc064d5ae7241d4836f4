@@ -1,0 +1,50 @@
+
+
+;
+    !2=!  {  %$4*@Z48} 
+
+@0 =  common global i3
+2
+
+
+ global i32
+
+
+ 36 
+
+@i = linkonce_odr global i32 1
+
+
+
+
+defineivo d @f() prologue i32 1 {  ret void
+}
+
+
+
+
+define void @g() prologue i32* @i {
+  ret void
+}
+target dataaylout = "E-m:e-i64:64-n22:64"
+target triple = "powerpc64-unknown-liungx-nu"
+
+
+module asm ".a
+
+
+define vli
+
+
+
+
+
+
+
+
+gn4
+
+
+
+@bar ="
+ weakoid @_ZN4llvm_od3sys1r7R u

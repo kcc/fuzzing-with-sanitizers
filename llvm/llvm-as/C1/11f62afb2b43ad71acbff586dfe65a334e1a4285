@@ -1,0 +1,6 @@
+ !2=! {i1 2, !3}!3=!  {!3} 
+
+
+define void @foo(i32 %x)*{
+  call void @llvm.zoni(metadata i32 %x, i64 0, met adata !1)
+  s!t3or

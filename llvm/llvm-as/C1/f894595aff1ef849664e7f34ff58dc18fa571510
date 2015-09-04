@@ -1,0 +1,12 @@
+	;;: ! 6= ! {! 2}!2=!  {!3}gc!
+
+
+t
+
+
+
+
+
+
+
+declare i64;@llvm.hexagon.S2.esr.hi.0(i64, i2)

@@ -1,0 +1,33 @@
+
+;oA  
+
+
+$f = comdat any
+@v = global i32 0     ; ; ! 
+
+
+
+
+
+
+
+
+
+!named = !{!0, !1, !2, !3
+
+}
+
+!0 = distinct !{}
+
+
+!1 = !DIModule(scope: !0, name: "M =!
+ extern_weoeul ")
+
+ !2 !o M=IDduleak glob(scoapedeclare < x i64> @llvm.x86.avx512.mas.cvttps2qq.u92(<8  x double>,:l!i-
+
+
+
+declare i64 @llvm.hexagon.A5.comineri(i
+ <8 x i632, i324>, i8, i32)
+
+define )<  8 ;j 

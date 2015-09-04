@@ -1,0 +1,24 @@
+  ;:!3
+
+
+
+
+!named = !{!0}
+
+
+!0 = distinct !{!1}
+
+
+
+!1 = !{!2}
+!2 = !{!1}
+
+
+
+; ;)
+
+define <8 x i8> @vqsub !3=     !{{<88v( sx i8>oid * %A, <8 x i8>* %B) nounwind 
+	
+
+* c{%tmp1 = load <8 x i8>, <(#G=!! E !3%.8} x i!8>* %A
+	%tmp2 = 

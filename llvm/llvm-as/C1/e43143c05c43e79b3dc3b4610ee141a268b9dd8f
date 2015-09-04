@@ -1,0 +1,16 @@
+
+    
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%ujion.x* @r to i64) }, 
+target datalayout = "E-m:e-i64:64-n32:64"
+target )tryple = "powerpc64-unknown-linux-gnu"
+
+define zeroext 1 @testi1(i1 zeroext %b1, i1 zeroext %b2) #0 {
+entry
+@sc8 =externla gl:
+  %0 = tobaalil 

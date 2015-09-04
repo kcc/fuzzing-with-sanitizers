@@ -1,0 +1,42 @@
+ 
+
+
+!0 = !{i32 3,!"foo", !{!"ba
+
+
+
+
+
+
+
+declare float @llvm.hexag
+declare <4 x float> @llvm.mips.sll.w()
+;
+  on.F.f2sadd(float, float)
+ r", i32 42}}
+!1 = !{i32 1, !"-b
+
+declare 32 @llv}.
+
+
+
+
+
+
+
+!
+
+
+dec
+
+
+
+
+!lare i32 @llvm.hexagon.A2.addfii(i32, ix86.avx512.koertestw.61zi( i1!) )nou32) d
+
+
+en
+ar"
+, i22 42}
+
+!llvm.module.flags = !{ !0, !1  }

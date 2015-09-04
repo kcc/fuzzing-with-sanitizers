@@ -1,0 +1,30 @@
+ 
+
+!03= !DILocalVariable(scope:   !{! 
+3} )!c=!  {! 	
+  
+
+target triple = "nvptx-unknown-nvcl"
+
+declare { float, float, float, float  @llvm.nvvm.tex.3d.v4f3.2 3
+
+
+decl2s3(i6*   
+
+
+
+declare <
+2 x i64> @llvm.ppc.altivec.ldTrv()<2 x, i64, i32)
+
+
+define void @foar ie <4 x float> @
+
+
+
+;   !3 =   ; o(i64  
+
+
+
+
+ %img, i664
+ 4>d%

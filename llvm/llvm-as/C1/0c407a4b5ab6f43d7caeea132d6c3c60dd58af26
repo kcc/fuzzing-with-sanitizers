@@ -1,0 +1,38 @@
+
+ 
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+!0 = !DILexicalBlock(scope:
+
+
+!0)
+
+;l  ;:
+
+ 
+
+define i32 @bad1() !prof !0 {
+  ret idefine i8 @add8(i8* %p) {
+
+32 0
+} 
+
+  %1 = atoicrmw add i
+
+8* %p i8 0 mon

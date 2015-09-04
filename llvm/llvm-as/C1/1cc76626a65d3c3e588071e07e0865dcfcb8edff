@@ -1,0 +1,23 @@
+!3=!{  %444 {};  * t  		 !3= !{!7}
+
+
+define void @foo  (i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !more !{!"hello"}
+ ot sre i32 0, i32* null, !whate  
+
+target triple ="nvptx-qnknown-nvcl"
+
+declare i32 @llvm.nvvm.suld.1d.ki
+
+
+
+
+
+
+declare*ccc void @ccc()
+
+
+declare fastcc void @fastcc32.trqp(i6, ()
+ 
+declverare co !l

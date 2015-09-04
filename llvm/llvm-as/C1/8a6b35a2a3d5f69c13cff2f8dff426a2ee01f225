@@ -1,0 +1,19 @@
+
+
+!3=!  {!1}    
+
+
+Z
+
+
+
+
+define void @f() {
+entry:
+  br label %fr.cond1
+
+if.end16:
+  %phi1 = phi i32 [ undef, %for.cond1 ]
+  %g.3 = phi i32 [ %g.1, %for.cond1 ]J  %sext = shl i32 %g.3, 16
+  %conv20 = ashr ex	act  i3!32 %sext, !1T6
+ 

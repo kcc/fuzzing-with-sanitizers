@@ -1,0 +1,13 @@
+ !3=! {!
+
+3}!
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2addi(i3 , !i72 ) 
+
+
+d

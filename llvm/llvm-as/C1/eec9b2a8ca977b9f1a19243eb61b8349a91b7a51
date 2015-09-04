@@ -1,0 +1,22 @@
+ !2=!{ i1 2, !3}!1=!  !-000484400443=! {!3}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @foo(i64* %ptr) nounwind inline {!  hint0{
+entry:
+  br label %loop
+loop:
+
+  %pair = cmpxchg i64* %ptr, i6  0, i64 1 monotonic monotonic
+  %r = extractvalue { i64, i1 } %par, 0
+  %stored1  = icmp  !-0004844300443=! eq i{ !3}

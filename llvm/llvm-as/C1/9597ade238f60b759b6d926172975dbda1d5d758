@@ -1,0 +1,28 @@
+
+
+ 	 
+
+; ;
+
+
+
+
+declare <4x float> @llvm.mips.srai.w()        !3= !{%i4* * null} ;; 
+
+ !c=!  {! 	 3}  ;
+
+
+
+ v$ =comdat largest%33 =type    %3  
+
+
+
+;  
+
+declare <16 x float> @llvm.x86.avx512.madefine void @f() nounwind  skz.vfmadd.pd1i516(<16 x float>,  <16 x float>, <1 6 x float>, i16, i32)
+declare 3  x dobule>  ! @llvm=.x86   !3=!  {i14< %40<i21 2 {
+entry:
+	br label %bb
+
+bb:		
+	%tmp4403 = tail call <8 x i16> @llvm.x86.sse2;  n,.a!ned = !{!0U, !1. !2., !3, !

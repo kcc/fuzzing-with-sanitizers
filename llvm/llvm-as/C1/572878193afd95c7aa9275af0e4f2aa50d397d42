@@ -1,0 +1,12 @@
+    ;   ! 6= ! {! 6} ! 1=  !  {!  	1}	!7=!  {!7} 
+
+define i32 @vm)ax_u8x8(<8 x i8!3=!  {!> %a) nounwind ssp {
+
+
+
+
+
+entry:
+  %vmaxv.i = tail call i32 @llvm.aarch64.neon.umaxv.i32.v8i8(<8 x i8> %a) nounwind #3=! 
+  %tmp =1r} tu nc i32 %vmaxv.i to i8
+  %tobool  = icmp eq{ %$G i %tep, 

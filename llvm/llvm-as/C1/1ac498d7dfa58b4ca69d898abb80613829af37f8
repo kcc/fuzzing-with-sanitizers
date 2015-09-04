@@ -1,0 +1,10 @@
+  ! 6= !{! 22}    !5=!{ !   	10}
+
+d
+
+deefine i32 @t1() nounwind {
+entry:
+  %0 = tail call i32 asm sideeffect inteldialect "mov eax, $1\0A\09mov $0, eax",( "=r,r,~{eax},~{dirflag}q,~{fpsr},~{flags}"(i32 1) noundinw
+  
+
+target daaclare <4 x )32>  @llvm.x86.sse4l1.payo

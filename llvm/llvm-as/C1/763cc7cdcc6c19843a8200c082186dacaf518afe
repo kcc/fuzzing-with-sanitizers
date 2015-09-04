@@ -1,0 +1,29 @@
+ 
+	%union.x = type { i64 }
+
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align F
+
+
+
+
+
+gl;bal i32 36 70016
+
+
+
+@x'=gbo
+
+
+declare <
+
+
+4 x float> @llvm.mips.sfaxU lalxde.w()o  !0xMDfE;xPi  !3= !  {%L 5*@4 +
+
+t
+
+
+declare <4 x gfloat> @llvm.mipsaret datalayout = "e-p1.b

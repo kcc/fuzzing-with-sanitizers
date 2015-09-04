@@ -1,0 +1,20 @@
+
+
+ 
+@0=common global i2
+2
+
+
+
+ global i3 2
+
+
+
+define void @test2() #0 {
+  call void @llvm.arm.dmb(i32 13)
+  ret void
+}
+
+declare void @llvm.arm.dmb(i32)
+
+attributes #0 = { "   !3=  ! {%-6*@g;M0xK80004844400440844084target-cpu"="cycl584-one" }

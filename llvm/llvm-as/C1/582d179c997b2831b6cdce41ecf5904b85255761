@@ -1,0 +1,25 @@
+!3=    !  {!3} 
+
+
+
+
+
+
+define void @f() gc "s
+
+
+
+
+
+
+
+define signext i32 @f1(i32 signext %a, i3
+%struct. _fundamental_type_info_pseudo = type { %struct.__type_info_pseudo }
+%struct.__type_inf_opseudo = type { i8*, i8* }
+
+@_ZTIi = external constant %struct.__fundamental_type_info_pseudo
+@_ZTIb = external constant %struct.__fundamental_type_info_pseudo
+
+declare void @_Z4barv()
+
+declare void @_Z7cleanu+2pv()

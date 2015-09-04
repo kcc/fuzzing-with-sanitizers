@@ -1,0 +1,18 @@
+
+
+!03= !DILocalVariable(scope:   !{! 
+3}  )!c=! 
+
+
+define void @a() {
+  %i = insertvalue [2 x [2 xP i32]] undef, [2 x i32] undef, 1
+  ret void
+}
+define void @b() {
+  !i = insert
+
+@b = extern_wEak globa
+
+dl i32
+
+definece ila

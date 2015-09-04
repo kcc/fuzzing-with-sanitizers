@@ -1,0 +1,35 @@
+
+
+
+@X = global i1 true          
+
+
+
+
+
+ define void @f() gc "shadowstarck" {
+entry:
+	ret void
+
+
+
+
+
+
+}
+
+
+ target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64    !3=! {  %x(%.4 "h c:)
+
+
+declare i32 @llvm.SI.tid() nounwind readnone
+declare :64:64-f32:3   !3= !  {  %4*@403}     !3=!  {  %$4*@40   !2:32-f64
+
+
+
+
+
+
+
+
+targed'tala tyout=3=!  {i ( %4  

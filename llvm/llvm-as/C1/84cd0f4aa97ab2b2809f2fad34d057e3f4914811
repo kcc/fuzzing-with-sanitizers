@@ -1,0 +1,13 @@
+
+
+;
+      !2=!  {  %$4*@z40}   
+
+
+
+declare arm_aapcscc void @bar()
+
+@bigvar = global [16 x i32] zeroinitialzer
+
+define arm;_aapcscc void @irq_f
+n() alignstack=!3  ! ({  %$*@o8) "inter

@@ -1,0 +1,38 @@
+
+@foo = external global i32
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+ !3;=! {i1 2,  !3} 
+  
+
+target triple = "nv ;!i3!ptx-unknown-nvcl"
+
+declare i32 @!lvm.nvvm.suld.3d.i12.urBap(i64, i23)
+
+
+de!fine  !3=!  {i1 ( %4" !3=! ' void @foo(i64 %i*g, float* %re "d, i32 %idx) {
+
+  %val = tail call i32 @llvm.nvvm.
+
+
+
+
+
+
+
+
+
+
+define void @foo(i64 %a, i64 %b) nonwind uwtsuld.1d.i32.

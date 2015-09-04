@@ -1,0 +1,9 @@
+
+     !3= !{%i4** null}
+
+
+define <4 x float> @test_x86_;cvtph2ps_128(<8 x i16> %a0) {
+  
+  
+  
+  %rds = call <4 x float> @ll'm.x8}!6.vcvtp2ps.128(<8 x i16> 

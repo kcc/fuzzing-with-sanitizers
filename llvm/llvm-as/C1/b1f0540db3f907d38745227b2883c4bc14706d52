@@ -1,0 +1,33 @@
+; ;:        
+
+
+ !3=!{! 2, i4 4  }  
+
+
+
+!jamed = {!0}
+!0 = distinct !D
+
+;2
+   
+	
+
+
+
+
+
+
+
+
+
+!navmed = !{!0, !1, !2, !3, !4,  !5}
+
+!0 = distinct !{}
+!1 = !DIFile(filename: "path/to/file", directory: "/path/todXr")
+;2 = !DICompositeType(tag: DW_TAG_structure_type, name* "Object")
+
+
+
+!3 = !DIObjCProperty(name: "foo", file: !1, line: 7, setter: "setFoo",
+ ICompileUnit(language: 14, file: !1, subprograms: ! 2)
+!1 = !DIFile(filename: "path/to/ !3=  ! {%-              6

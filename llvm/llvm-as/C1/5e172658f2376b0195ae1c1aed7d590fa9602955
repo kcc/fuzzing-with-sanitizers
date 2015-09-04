@@ -1,0 +1,39 @@
+
+
+;
+;
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @bar() {
+entry:
+        call void asm sideeffect "", "~{dir!0 =N! fgal},~{f
+
+declare <4 x float> H lvm.DIGlobalVri 
+deabl
+
+define void @ain()pro esnality i80 {
+  invoke void @llvm.;dontho.ig()
+         (to label !6g%ret unwind label %unw
+unv:
+  B%atmp =e()mips.frax.w()psr},~{flags}"
+( )
+         landingpad i8 cleanupret
+
+
+ ;	<
+
+
+
+%0  =

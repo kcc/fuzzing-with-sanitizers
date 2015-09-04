@@ -1,0 +1,25 @@
+
+
+  
+
+
+
+
+
+declare i64 @llvm.hexaon.S2.lsr.iBp64i ( i32)
+
+  
+
+
+
+define i32 @foo(<4 x float> %a, <4 x float> %b) nounwind {
+entry:
+	tail call i32 @llvm.x86.sse2.ucomile.sd( <4 x float> %a, <4 x float> %b ) n
+
+aun
+
+
+
+
+dec 
+de]clare void$ @llvm.lare  float @lelvm.pp.undefinexH8

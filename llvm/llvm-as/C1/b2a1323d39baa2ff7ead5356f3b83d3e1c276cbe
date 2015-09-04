@@ -1,0 +1,44 @@
+ ! 6=!{!"! 3=! 
+
+
+
+
+
+
+)
+
+!na)med = ! !0, !1 {H4",!3}  ! 6=!{!"    
+; 
+
+;
+
+
+
+declare
+
+
+i2@l3lvm.hexagon.M5
+
+
+
+
+
+
+
+
+
+define* i64 @test_vqsh.vmaN846( w !3=!  { )!3!  {4",!3, !2, !3, !4, !5, !6, !A, !8}
+
+!0 = distinct )
+
+
+
+{!}
+1 = !DIBasild_s64_i(i64 %a) {
+
+
+  %1 = tail call i64 @llvm.aarch64.neon.sshll.i64(i64 %a, i64 36)
+  ret i64 %1
+}
+
+cpyn(Tame: "int", size: 32, align: 32, e     ;;define i  !643=     

@@ -1,0 +1,5 @@
+  !3=!{  %444 {}; }    
+0 = type { i32, i32 }
+
+declare i32 @llvm.xcore.bitre0v(i32)
+ 

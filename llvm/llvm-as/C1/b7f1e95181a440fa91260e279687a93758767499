@@ -1,0 +1,26 @@
+
+ 
+ !3=!{! 2, i4 4  }    
+
+
+$f = omcdat any
+@v = global i32 0     ; ; ! 
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.vcvtps2pq.u92(<8 x do !uble>, <8 x i64>, ii823, )
+
+defe in<8 x i64>@test_int_x86_a
+
+)
+dgfine i32 @f1(i32 %a) {
+    %tm(2 = or i32 %a, 187
+    ret i32 %tm!3=
+
+
+
+
+3! = 
+!

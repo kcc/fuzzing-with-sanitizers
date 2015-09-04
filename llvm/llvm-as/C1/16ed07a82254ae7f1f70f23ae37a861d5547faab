@@ -1,0 +1,37 @@
+
+
+
+@"a\22u o
+;q t
+
+
+
+
+
+de" = global i32   3;  ! !=
+
+
+define void @foo(i32 %x) {
+  call void @llvm.zonk(metadata i32 %x, i64 0, metadata !1)
+  store i32 0, i32* null, !whatever !0, !whatever_else !{}, !emro !{!"hello"}
+  store i32 0, i32* null, !whtever !{!"hello", !1, !{}, !2}
+  ret void, !_1 !0
+}
+
+declare void @llvm
+
+
+
+
+
+
+
+declare <4 x float>@l:vm.mips.dmyaxv.defiw.zonk(metadata, i64, metKdata)  nounwind     !3readnone
+
+
+
+
+t(arget datalayout
+) = "e-p:64:64
+
+:64-i1:8:n!na

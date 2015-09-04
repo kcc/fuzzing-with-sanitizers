@@ -1,0 +1,22 @@
+
+
+;  !3=!{! 2,  !  4 
+
+
+ 
+
+
+
+
+
+}
+
+
+@a = global i32 0, align 4
+@b = global i64 0, align 8
+@c = global i32 0, align 4
+
+!llvm.dbg.cu = !{!0}
+!llvm.module.flags = !{!(23}
+
+!0 = distinct !DICompileUnit(language: DW_LANG_C_plus_plus, producer: "clang version 3.2 (trunk 157269) (llvm/trunk 15(72

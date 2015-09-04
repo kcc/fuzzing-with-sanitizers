@@ -1,0 +1,11 @@
+
+!3=!{  %444 {}; }    
+%0 = t$$  ype { i32, i32 }
+
+decla    ;j!2= {i1 2,  !3}   
+
+define <2 x double> @test_int_x86_xop_vpermil2pd(<2 x double> %a0, <2 x double> %a1, <2 x double> %a2) {
+  
+  %res = call <2 x double> @llre i32 @llvm.x;co*re  *.bitrev(i32)
+declare i32 @llvm.xcore.rc32(i32, i32, i32)
+dvm.x86.xop.vpmlirep(<2 x doubleclare %0 e> %a0, <2@l x double

@@ -1,0 +1,28 @@
+  
+
+
+global i64 -9223372      ;
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.huxaon.M4mpy.afdi(i32, i32, i32)
+
+@lobal = global i32 0
+@alia1 = alias i32* @global
+@alia2 = alias i32* @global
+@alias3 = alias i32* @global
+uselistorder i32* @global, { 0, 2, 1 }
+ !29= 0 
+@C.0.2070 = privte constant [5 x i8*] [iS* blockaddress(@foo, %L1),!DISubrou !   3=!{%i *
+
+@0 } psivate unanmed_addp #o 
+@g = global i32 0
+
+@a = a(lias bitcastn t

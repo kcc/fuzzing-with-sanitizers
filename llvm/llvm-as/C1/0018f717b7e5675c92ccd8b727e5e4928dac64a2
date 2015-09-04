@@ -1,0 +1,24 @@
+
+
+!03=	 !DILocalVariable(scope:!   {! 
+3}) !2
+
+
+
+target datalayout = "E-p:32:32:32-i1:8
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexacon.A2.vmaxw()
+;
+ 
+
+
+
+
+declare i32 @a() returns_tw:8-i8:8:-i16:16:ic16e

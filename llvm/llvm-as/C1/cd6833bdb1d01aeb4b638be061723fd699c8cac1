@@ -1,0 +1,25 @@
+
+
+
+define zeroext i1 @_Z3fooPb(i8* nocapture %x) {
+entry:
+  %a = load i8, i8* %x, align 1, !range !0
+  %b = a 
+
+@0 =common global i3
+2
+
+
+
+ global 
+i32 3672016
+
+ 
+
+
+
+
+
+external global nd i8 %a, 1
+  %vobool = icmp ne i8 %b, 0
+  refloatt,  i1 %ta

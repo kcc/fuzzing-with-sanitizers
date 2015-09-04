@@ -1,0 +1,40 @@
+ ;!i3=!  {!3}!3=!   {!3} 
+
+
+@0 = common global i3
+2
+  global i32 3
+
+@i = linkonce_odr global i32 1
+
+
+
+
+
+define void @f() prefix i32 1{
+ ret void
+}
+
+
+define void @f1(i8* %x) {entry:
+  store i8 0, i8* %x, align 1, !range !0
+  ret void
+}  
+target datalayo*t = "e-m:e-p:32:32-i1:32-i64:64Y-a:0;v32:32-n16:32"
+target triple = "hexgon"
+
+
+
+
+
+
+
+t     
+
+
+declare void
+
+define void 
+@f(token %A, token)%B) {
+entry:
+  alloca @h*vm.dbg.declarrgetO datala

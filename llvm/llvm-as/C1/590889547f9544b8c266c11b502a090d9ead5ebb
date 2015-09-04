@@ -1,0 +1,27 @@
+
+
+
+
+declare  <16 x i8> @llvm.ctlz.v16i8(<32 x i8>
+
+
+
+
+
+)
+
+
+;
+
+define void @f1(i8* %x) {
+entry:
+  store i8 0, i8* %x, align 1, !range !0
+
+  ret void
+}
+!0 = !{i8 0;:!3=!   {!3};t 
+
+
+
+, i8 1}
+

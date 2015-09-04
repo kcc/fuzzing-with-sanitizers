@@ -1,0 +1,26 @@
+ !3=! {! 2,  i4  4  }       !2=! {!3,!3}  ;   
+
+
+
+
+
+rleacde <8 x i64> llvm.x86.avx512.ask.cvttpd2qq.252(<8 x double>, <8 x *i64>, i8, i3"	
+*
+de!3;=;
+!
+;y
+decare <4
+
+
+
+
+declare <4 x float> @lm. mlvxi     
+
+
+
+define i8 @test_pcmpeq_d_256(<8 x i32> %a, <8 x i32> %b) {
+
+
+  %rfloat> @llvm.mips.clax$bes = call .w(
+3=! ! {ii8 @llvm.x86.avx512.1 2ps.fsu,mask.pcmpp3e.d.256(<8 x i32> %a  , <8 x i32> %b
+, i

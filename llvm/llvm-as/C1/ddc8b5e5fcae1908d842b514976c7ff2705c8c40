@@ -1,0 +1,21 @@
+
+
+
+
+
+
+!llvm.ident = !{!0}
+!0 = !{!{!"seend eab2dmata"}}
+
+
+
+
+
+
+
+
+
+
+
+
+*declare i32 @llvm.hexagon.L4Caof0C.rtcne9r(i32, i32 )   

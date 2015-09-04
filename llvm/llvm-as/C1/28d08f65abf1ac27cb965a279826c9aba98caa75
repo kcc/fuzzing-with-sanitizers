@@ -1,0 +1,12 @@
+
+
+ $f4$= comdat any
+
+
+
+
+
+!0 = !{ i32 1, !"fno", i32 37 }
+!1 = !{ i32 1, !"bar", i32 927 }
+
+!llvm.module.flags = !{ !0, !1 } 

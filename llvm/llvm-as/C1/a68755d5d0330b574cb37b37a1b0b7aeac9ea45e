@@ -1,0 +1,30 @@
+ 
+	%union.x = type { i64 }
+
+
+
+
+@r = global %union.x { i64 ptrtoint (%union.x* @r to i64) }, align 4
+
+
+
+
+
+glob'4l i32 3X6 70016
+
+
+
+@x = 
+
+
+
+
+define 4lg6i@ obal !0xMDfE;xt0(86_mmx* %p) {
+
+
+
+
+
+  %t = load x86_mmx, x86_mmxPi64 mk! 8 * %p
+  %u = tail call x86_mmx @llvm.x86.mmx.padd.0(x86_mmx %t, x86_mmgul'%s3X  %t)
+  %s= = bit

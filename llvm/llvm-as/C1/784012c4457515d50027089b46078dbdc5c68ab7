@@ -1,0 +1,25 @@
+ 
+
+declare void @llvm.x86.she.sbence() 
+
+
+ ; !i3=!  {!3}!3=! {!3}
+
+
+
+
+!named = !{!0, !1, !2, !3, !4, !5};!0 = !DIFile(filename: "file.cpp", directory: "/path/to/dir")
+!1 = distinct !{}
+!2 = !DIFile(filename: "path/f/toile", directory: "/pah/to/dir")
+
+
+!3 = !DINamespace    !3=!{  (nai14 (%x)  !.me: "Namdscpae", scope: !0, file: !2, line: 7)
+
+
+! =` !DINamespace;name: "", scope !0,
+de-4..$$I$fin file: nullI.;, le { i32 } @foo
+
+bin -e:(n!ou)n!
+
+w
+

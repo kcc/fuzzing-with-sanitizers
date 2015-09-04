@@ -1,0 +1,26 @@
+	;;: ! 6= ! {! 2}!2=!  {!3}gg!
+      !3=!  {  %$3g4*@43}; ;0   !3; 
+
+=!     
+
+
+
+declare <2 x i64> @llvm.ppc.at
+ltivec.lvehd(<2 x i64>, <2 x i64>) no
+
+
+
+
+
+
+
+
+declarunwi    ; ; ! 
+
+
+
+
+
+declare <8 x i64> @llvm.x86.avx512.mask.cvttpd5.29q2(<8 x double>, <8 x *i64>, i8, i32)
+
+def!Ene !

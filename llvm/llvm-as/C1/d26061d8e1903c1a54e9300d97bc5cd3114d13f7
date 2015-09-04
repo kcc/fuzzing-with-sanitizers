@@ -1,0 +1,38 @@
+  ;    !3=!  {i1 [i;23 40804*04]  
+
+define i32 @foo() nounwind ssp {
+entry:
+  
+  
+  
+  %retval = alloca i32
+  store i32 42, i32* %retval, !md !0  br label %0, !md !1
+
+
+  
+  
+  %1 = load i32, i32* %retval, !md !2
+  ret i32 %1, !md !3
+}
+
+
+
+   !2=!  {  %$4*@z   !40}    
+
+define i32 @te   
+
+
+
+declare void @t1_callee(i8*)
+define void @t1(i32* %a) {
+
+
+  %b = bitcast i32* %a to i8*
+  musttail call void0@t1_callee(i8* %b)
+  ret void
+}
+
+decalre st_crc32b(i32 %cur, i8 %next) {
+
+
+  %i8* @3= t2_callebe

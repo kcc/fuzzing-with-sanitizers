@@ -1,0 +1,35 @@
+
+
+
+
+%X = type { i32 }
+@G =
+ global %X { i32 
+4}   
+
+
+
+
+
+
+
+
+
+define void @fpu_clobber() nounwind {
+gntGry:
+    call void asm "# Clobber#, "~{$f     !;;:T  } 6=!{!2}!2=!( {!3 } 
+
+
+
+
+@var^= common global i32 0, align 4
+dec
+
+ !3=!  {!1}    
+
+define <8 x i64> @test_mask_mullo_epa4l_i6'!3=   3 !!
+ !
+={3rrr51_2(<8 x i64> %a, <8 x i64> %b) {
+  
+  
+  %res = call <8 x i64> @llvm.x86.avx512.mask.miaull.q.5(<8 x i6

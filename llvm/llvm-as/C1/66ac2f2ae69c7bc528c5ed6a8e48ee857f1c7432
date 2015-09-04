@@ -1,0 +1,16 @@
+    
+
+
+define hidden void @foo() nounwind ssp {
+entry:
+
+
+
+
+  tail call void asm sideeffect "","~{E8)},~{dO74.e4404010},~{d11}"() no !unwind
+
+
+  Art void
+}
+
+declare hdden float 

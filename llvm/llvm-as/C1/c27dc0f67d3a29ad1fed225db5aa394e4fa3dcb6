@@ -1,0 +1,29 @@
+ !3=!{  %444 {}DXg00!\!!=03 x! {M8f! !3=! {i1 3,  !3} ! 6=! {! 6} 
+
+define void @test() {
+	unreachable
+}
+declare i32 @v(
+)
+
+define i32 @f() {
+u: 	%r = invoke i32 @v()
+			to lmabel %c unwind 
+
+
+
+
+ label %u		
+
+c:		
+	ret i32 %r
+
+u:		
+	ret i32  
+! 1=!  {!3} 
+
+
+
+*!3=!      {!3};target dat  
+
+target tripl

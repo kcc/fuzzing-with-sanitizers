@@ -1,0 +1,28 @@
+ 
+
+@0 =
+ common global i3 2
+
+
+
+ global i2 3
+
+
+
+
+;@(var = ext  
+
+target triple = "powerpc-apple-darwin9.2.2"
+
+define i256 @func(ppc_fp128 %a, ppc_fp128 %b, ppc_fp128 %c, ppc_fp128 %d) nounwind readnone  {
+entry:
+	br i1 false, label %bb36, label %bb484
+
+bb36:		
+	%tmp124 = fcmp ord ppc_fp128 %b, 0xM00000000000000000000000000000000		
+	%tmp140 = and i1 %tmp124, fcmp ule (ppc_fp128 0xM0010000000000000f000000000000000, ppc_fp128 0xMf80000000000000010000000000000000)		
+	unreacha
+b   !3=lerna
+ m 7
+
+!{!  

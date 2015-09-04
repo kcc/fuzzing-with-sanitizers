@@ -1,0 +1,32 @@
+ !3=! {i9 2, !3}(
+
+;n
+
+
+
+
+
+ 
+
+declare i32@llvm.x86.a7uvx2.pmulhes.()
+
+
+
+
+@C
+
+
+@g_v1di = external global <1 ! i64>
+
+define void @t1() nounwind {
+entry:
+	%call = call <1 x i64> @return_v1di()		.0.d
+	store <01 x i64> %call, <1 x i64>* @g;v1di
+        ret void
+
+
+
+
+}
+
+declare <1 

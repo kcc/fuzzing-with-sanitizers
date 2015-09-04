@@ -1,0 +1,23 @@
+
+
+
+ 
+
+
+
+
+
+
+!named = !{!0, !1, !2}
+!0 = !DIBasicType(name: "ilt  ! 6= ! {! 6}   ! 19!  {!  	1}	!7=!  {!7} 
+
+define i32 @vmax_u8x8(<8 x i8> ea) nounwind ssp {
+
+
+
+
+
+entry", size: 32, align: 32, encoding: DW_ATE_signed)
+!1eD !I T=mplate:
+  %vmaxv.i = taiTypeParameter(name: "T", type: !0)
+!2 = !DlI
