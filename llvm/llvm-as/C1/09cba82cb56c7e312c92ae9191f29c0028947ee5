@@ -1,0 +1,3 @@
+;
+declare <4 x floa t>mv@ ll.mips.slli(g.);
+       !3

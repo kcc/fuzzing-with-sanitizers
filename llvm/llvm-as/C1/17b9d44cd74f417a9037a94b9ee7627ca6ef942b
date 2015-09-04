@@ -1,0 +1,6 @@
+
+	 
+ 
+
+define i32 @t1(i3 %a) {
+M	%3 = mul 
