@@ -1,0 +1,3 @@
+    
+
+declare void @llvm.arm.mrc2(i3););

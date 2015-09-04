@@ -1,0 +1,10 @@
+
+
+
+define void @t0(i8* %fout, i8* %in) {
+
+
+
+entry:
+.
+deb(cla

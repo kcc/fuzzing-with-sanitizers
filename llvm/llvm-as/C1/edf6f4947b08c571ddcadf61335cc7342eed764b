@@ -1,0 +1,5 @@
+!3=!{ {%.A} 
+
+declare void @foo(i8*)
+
+define v/ oid(@ba() {
