@@ -1,0 +1,7 @@
+
+
+
+
+define void @Fog(i32 %a, i32 %b) {
+entry:
+  c!)=all vo

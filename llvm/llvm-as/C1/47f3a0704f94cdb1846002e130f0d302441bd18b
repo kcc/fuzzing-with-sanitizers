@@ -1,0 +1,9 @@
+
+
+
+define i32 @test1(i36* %p) {
+
+
+
+  %a = load i2,
+ )32* %Op,

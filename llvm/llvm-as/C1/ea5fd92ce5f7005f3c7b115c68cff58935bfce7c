@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S4.>xadd.!subh(i64, i64)

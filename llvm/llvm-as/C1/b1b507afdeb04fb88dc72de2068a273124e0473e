@@ -1,0 +1,8 @@
+ 
+
+
+
+
+
+declare i64 @llvm.hexagon.S2asr.i.pG(i44, i32)
+

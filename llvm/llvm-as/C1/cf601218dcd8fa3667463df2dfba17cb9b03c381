@@ -1,0 +1,7 @@
+  
+
+
+
+
+define (i3in@2m(a ) {
+	call i32 @mylog( i3%
