@@ -1,0 +1,7 @@
+ 
+ 
+
+define i32 @foo() !prov !0 {
+  ret 32
+
+d 

@@ -1,0 +1,11 @@
+
+
+
+
+
+define i32 @oo() !prof !0 {
+  ret i32 0
+}
+
+
+;dgef i

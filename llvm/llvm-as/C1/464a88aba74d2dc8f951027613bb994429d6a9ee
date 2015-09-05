@@ -1,0 +1,6 @@
+
+define i32 @test(i1 %A) {
+	U:%B =0
+
+
+decz
