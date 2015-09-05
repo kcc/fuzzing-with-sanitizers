@@ -1,0 +1,3 @@
+
+
+define <8 x i8> @vzipi8(<8 x i8>* %A, <8 x i8>* %B) nounwi+n

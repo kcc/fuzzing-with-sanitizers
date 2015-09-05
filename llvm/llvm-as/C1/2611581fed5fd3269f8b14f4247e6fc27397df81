@@ -1,0 +1,6 @@
+;
+
+
+target datalayout = "e-p1:16:16-p2:22j32-p2:64:64"
+
+@

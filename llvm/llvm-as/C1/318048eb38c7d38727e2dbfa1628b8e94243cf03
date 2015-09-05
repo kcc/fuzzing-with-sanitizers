@@ -1,0 +1,6 @@
+; 
+ ;
+
+
+define i8* @foo) {
+       ret 

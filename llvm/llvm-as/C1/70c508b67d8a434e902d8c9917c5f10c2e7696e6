@@ -1,0 +1,4 @@
+!3=!{ {%.}d
+
+@g = globql i32  
+ @a = alias sbitcast (i32

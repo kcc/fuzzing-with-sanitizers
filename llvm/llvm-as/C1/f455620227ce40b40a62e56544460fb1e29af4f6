@@ -1,0 +1,7 @@
+
+
+;
+
+define i32 @foo() !prf !0 {
+
+declare   v
