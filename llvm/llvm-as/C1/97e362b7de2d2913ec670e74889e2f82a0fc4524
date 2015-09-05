@@ -1,0 +1,8 @@
+   
+
+
+declare i32 @en()
+
+declare i2 @N()
+
+define i32 @phi() (!

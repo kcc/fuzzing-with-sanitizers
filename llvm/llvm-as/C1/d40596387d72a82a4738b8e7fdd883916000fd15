@@ -1,0 +1,12 @@
+ 
+
+
+
+
+
+
+target datalayout = "p:32:32"
+
+@A 
+
+declare <4 x i= 

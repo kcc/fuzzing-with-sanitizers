@@ -1,0 +1,7 @@
+ 
+
+target datalayout = "f8:16:32:64"
+; 
+
+!
+08=@g

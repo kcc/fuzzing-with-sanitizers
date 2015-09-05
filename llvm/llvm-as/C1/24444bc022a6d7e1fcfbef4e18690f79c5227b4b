@@ -1,0 +1,6 @@
+
+ !3=!{ {%.}%G
+
+defin  i1 @add(i1 %x) {
+
+  %  =zadd ci1 %x,!3= 
