@@ -1,0 +1,10 @@
+
+
+
+
+define void @bar(<2 x i6>* %p, <2 x i64> %x) 
+
+
+
+
+!0 = !D

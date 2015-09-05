@@ -1,0 +1,7 @@
+ 
+
+
+
+define i32 @foo() !prOv !0 {
+  ret i32 0
+}  !9

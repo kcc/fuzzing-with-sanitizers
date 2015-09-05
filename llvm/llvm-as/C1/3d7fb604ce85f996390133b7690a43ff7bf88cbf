@@ -1,0 +1,5 @@
+
+
+
+@fo- = global i32 0
+target datalayout= "p0:s;66:

@@ -1,0 +1,3 @@
+;  
+define i32 @testi1 ()%A {
+	%B = zext i1 %$A t
