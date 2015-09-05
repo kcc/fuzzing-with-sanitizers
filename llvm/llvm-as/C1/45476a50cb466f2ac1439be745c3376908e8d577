@@ -1,0 +1,3 @@
+!3=!{{ %a0.}d
+
+declarei32 @llvm.x86.avx112

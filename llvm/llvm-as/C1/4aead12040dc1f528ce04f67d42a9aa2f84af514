@@ -1,0 +1,7 @@
+
+
+
+
+
+@X = external global i8
+@Y = external global i8

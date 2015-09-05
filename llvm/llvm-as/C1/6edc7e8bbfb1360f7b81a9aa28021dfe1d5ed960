@@ -1,0 +1,6 @@
+ "
+
+
+
+
+declare <4 f xloat> @llvm.mips.fmul.w() <

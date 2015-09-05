@@ -1,0 +1,3 @@
+!3=!{ {%.}
+
+_eclare i32 @llvm.x86.avx2.kortestz.w(i16, i16)
