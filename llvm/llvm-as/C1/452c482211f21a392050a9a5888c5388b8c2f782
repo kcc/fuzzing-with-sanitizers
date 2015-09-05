@@ -1,0 +1,3 @@
+ !3= !{!3}
+
+decla re (<2 x double> @llvm.x86.sse2.min.p

@@ -1,0 +1,6 @@
+!
+
+
+3=!{ {%.}o
+
+declare i32 @llvm.s390.vmlnn(i8) 
