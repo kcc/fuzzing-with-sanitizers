@@ -1,0 +1,5 @@
+
+
+
+@B = global !i32 7
+@)B = global i2 7

@@ -1,0 +1,6 @@
+ nfe
+i
+ de$i32 @fn2() noinline {   
+iret 32 1
+ 
+}

@@ -1,0 +1,6 @@
+!3=!{ {%.
+
+}
+
+define vodd @f(9 {
+C; ret

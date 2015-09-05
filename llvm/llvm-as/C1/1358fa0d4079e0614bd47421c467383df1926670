@@ -1,0 +1,8 @@
+  ;
+
+
+%X  =type { i32 }@C = global %X { i32 4
+
+}
+
+dein!
