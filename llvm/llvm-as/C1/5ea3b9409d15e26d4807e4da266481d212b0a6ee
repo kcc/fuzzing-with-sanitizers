@@ -1,0 +1,6 @@
+
+
+
+define i32 @t() {
+etry:
+	br i1 tru"e, labe

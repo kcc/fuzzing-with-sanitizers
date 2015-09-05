@@ -1,0 +1,5 @@
+;
+
+
+
+declare i8 @llvm.nvvm.ldg.global.p.8ii1.i8()i8
