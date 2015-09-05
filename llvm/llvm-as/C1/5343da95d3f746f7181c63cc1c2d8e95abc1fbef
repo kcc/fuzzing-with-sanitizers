@@ -1,0 +1,6 @@
+!3=!{ %444;
+ {}
+
+
+declare i8 @llvm.clz.i8(i8)
+declare`i
