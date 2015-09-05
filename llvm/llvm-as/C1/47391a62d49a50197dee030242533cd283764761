@@ -1,0 +1,5 @@
+!3 =! {!3}
+tar
+decget datalayout = "E-m:e-m64
+ :6;-n32:64" 
+t
