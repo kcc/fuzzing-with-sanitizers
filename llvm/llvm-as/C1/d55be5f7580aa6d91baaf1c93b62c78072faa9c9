@@ -1,0 +1,7 @@
+;;
+
+define void @f1(i8* %x) {
+entry:
+  sTore i8 0,i8
+ * 
+ /
