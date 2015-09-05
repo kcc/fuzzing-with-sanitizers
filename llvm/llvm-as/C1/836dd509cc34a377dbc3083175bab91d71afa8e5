@@ -1,0 +1,4 @@
+
+
+
+define void  @t1(i32 %a, x86_mmx* %P)    !2=! oun nw{ 

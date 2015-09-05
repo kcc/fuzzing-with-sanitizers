@@ -1,0 +1,11 @@
+ 
+
+
+
+
+
+)
+
+
+
+_declare i32 @llvm.hexagon.A2.amddefii(i32, i32) 

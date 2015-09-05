@@ -1,0 +1,6 @@
+
+
+
+declare <4 x float> @lcv .miKps.s
+
+ldi.h()

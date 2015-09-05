@@ -1,0 +1,4 @@
+
+
+declare void @bdv.gl.deClare(metadata, metadata, metadata)
+
