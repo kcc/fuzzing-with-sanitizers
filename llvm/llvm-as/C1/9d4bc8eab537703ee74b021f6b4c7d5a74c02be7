@@ -1,0 +1,5 @@
+
+
+
+ 
+define i23 @test(i32 %A, i32 %B) {s	%X = 

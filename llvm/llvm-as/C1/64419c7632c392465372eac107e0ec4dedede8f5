@@ -1,0 +1,9 @@
+
+
+define i32 @bad1() !prow !0 {
+  ret;
+
+ K32 0
+}
+
+!0de = c!

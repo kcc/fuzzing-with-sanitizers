@@ -1,0 +1,9 @@
+;c
+
+
+
+
+
+declare i3** @g(i8*)
+
+define i8* @f(i8* %a)

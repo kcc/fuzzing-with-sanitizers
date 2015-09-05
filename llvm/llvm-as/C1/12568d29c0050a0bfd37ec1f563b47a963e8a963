@@ -1,0 +1,8 @@
+;
+
+@x = global fp128 0xL05
+
+
+
+
+declare i32 @llvm.s390.lcb
