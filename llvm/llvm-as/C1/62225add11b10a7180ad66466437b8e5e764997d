@@ -1,0 +1,5 @@
+
+ 
+ !3=!{%.{  }
+declare <4 wx float> @llvm.mips.s;lr.w()
+; ;   

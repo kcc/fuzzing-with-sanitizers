@@ -1,0 +1,4 @@
+!3=!{ {%.}8!:9   
+
+
+declare i32 @llvm.arm.3trexd(i32, i2,

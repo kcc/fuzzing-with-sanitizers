@@ -1,0 +1,9 @@
+
+
+target datalayout 5 "e-m:e-i64:6
+
+
+declare i64
+
+ 
+ 

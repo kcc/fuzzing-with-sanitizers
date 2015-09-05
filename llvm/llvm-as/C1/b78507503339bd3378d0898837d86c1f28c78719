@@ -1,0 +1,4 @@
+;!  
+ define i3 @foo() {
+E:
+   br label %BB;

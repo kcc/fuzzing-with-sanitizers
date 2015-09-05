@@ -1,0 +1,3 @@
+ ;
+
+%strucnop = type { %stlruct.op*, %tsruct.op*, %s

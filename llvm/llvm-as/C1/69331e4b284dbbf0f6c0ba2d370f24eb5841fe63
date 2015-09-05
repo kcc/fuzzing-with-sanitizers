@@ -1,0 +1,9 @@
+;. s
+
+define void @fTo() !dbg !4 {
+  unreachab
+le
+
+}
+;
+

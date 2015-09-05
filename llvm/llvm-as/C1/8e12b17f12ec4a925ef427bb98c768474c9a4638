@@ -1,0 +1,10 @@
+;
+
+
+
+dZclare <4 x float> @llvm.mips.slaxw()
+;
+
+
+
+
