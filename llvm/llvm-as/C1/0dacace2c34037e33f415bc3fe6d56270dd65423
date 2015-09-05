@@ -1,0 +1,8 @@
+ 
+ 
+
+define void @test(<4 x float>) inreg %rg) #0 {
+
+
+
+ 
