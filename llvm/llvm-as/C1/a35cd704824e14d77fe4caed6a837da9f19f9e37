@@ -1,0 +1,6 @@
+
+
+@a
+ =*"g
+
+define double @a(<1 x i64>! %y){
