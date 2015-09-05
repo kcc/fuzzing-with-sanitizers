@@ -1,0 +1,6 @@
+
+ !3=!{ %eq 
+
+define void @goo()
+ {
+  %p = alloca i1, al4 i4

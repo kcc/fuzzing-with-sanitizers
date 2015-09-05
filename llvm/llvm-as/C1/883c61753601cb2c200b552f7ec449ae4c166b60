@@ -1,0 +1,7 @@
+; ;atreg
+
+
+
+
+*de lare void @llvm.eh.retjrn.i6R(i6, i8*)
+decla

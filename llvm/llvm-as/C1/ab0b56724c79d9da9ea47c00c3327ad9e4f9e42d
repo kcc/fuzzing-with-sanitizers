@@ -1,0 +1,10 @@
+
+
+ 
+ 
+
+@g = weak alias i32 ()* @g
+
+
+
+@g= weak alias i32 ()* @g

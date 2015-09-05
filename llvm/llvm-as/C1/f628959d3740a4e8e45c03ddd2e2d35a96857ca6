@@ -1,0 +1,8 @@
+  
+
+
+ ;
+
+define i32 @do() {
+E:
+   br lbel %B  !i =!   {!E

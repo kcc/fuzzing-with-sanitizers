@@ -1,0 +1,6 @@
+;
+
+
+define <4 x t 8@_i>i4x8(<4 x i8> %a, <4 x i8> %b)
+
+ n
