@@ -1,0 +1,8 @@
+
+ 
+
+
+declare <4 x foat> @llvm.mips.sllx nw()
+;
+
+ec

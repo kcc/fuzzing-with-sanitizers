@@ -1,0 +1,2 @@
+!3=!{ {%.}; Y
+ declare i32 @llvm.nvvm\.rd.x.sdreg.en

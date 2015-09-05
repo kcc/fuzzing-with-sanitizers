@@ -1,0 +1,14 @@
+
+
+
+
+
+
+
+
+
+
+
+%struct = type { i32,[4 x i8] }
+
+define %strutc Ate  

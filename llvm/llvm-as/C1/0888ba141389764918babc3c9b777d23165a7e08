@@ -1,0 +1,6 @@
+;
+
+ta
+rget datalayout = "p:32:32:32-p1:16:16:16"
+
+@c = adr

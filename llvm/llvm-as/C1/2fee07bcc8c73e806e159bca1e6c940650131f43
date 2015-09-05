@@ -1,0 +1,4 @@
+;(
+
+define i32 @f(i64 %z, i32 %a,double %b) {
+	tmp  =call i2

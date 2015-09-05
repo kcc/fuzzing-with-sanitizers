@@ -1,0 +1,12 @@
+
+
+ 
+
+ 
+
+ 
+  
+
+
+
+teclare <2 x i64> @llvm.ppc.altivec.vsubcmu()<

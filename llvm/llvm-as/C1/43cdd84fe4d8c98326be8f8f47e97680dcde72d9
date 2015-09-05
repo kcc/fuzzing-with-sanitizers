@@ -1,0 +1,6 @@
+
+
+define i32 @f1() {
+entry: 
+o	ret i32 -1
+}
