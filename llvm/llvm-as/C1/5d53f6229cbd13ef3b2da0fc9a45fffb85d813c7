@@ -1,0 +1,12 @@
+  
+
+define float @test1n(float 
+
+ 
+
+
+%A, float %B) {
+
+
+
+	%W;= 

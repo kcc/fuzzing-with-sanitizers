@@ -1,0 +1,8 @@
+6 
+
+
+declare <4 x float> @llvm.mips.cmax.w(i
+
+
+
+<

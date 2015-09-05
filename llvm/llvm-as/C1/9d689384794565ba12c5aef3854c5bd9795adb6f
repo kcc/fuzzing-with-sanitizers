@@ -1,0 +1,4 @@
+; 
+
+define i1 @test1(i16* %x) {
+  %loa 
