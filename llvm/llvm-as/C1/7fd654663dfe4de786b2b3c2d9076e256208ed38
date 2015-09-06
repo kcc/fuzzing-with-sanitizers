@@ -1,0 +1,2 @@
+;*;
+define i12 @test(i1 %AN) 

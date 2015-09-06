@@ -1,0 +1,4 @@
+;
+
+
+global i64* inttoptr (i64 0 o i64)

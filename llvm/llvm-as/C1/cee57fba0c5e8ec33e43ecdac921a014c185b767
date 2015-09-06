@@ -1,0 +1,4 @@
+ !2=! {i1 2, !3}!3
+ 
+
+declare <16 x i8> @llvm.a=! ar

@@ -1,0 +1,8 @@
+
+
+
+target datalayout = "n8:16:2:64"
+
+
+
+defne i32 @foo(i3 !RI2

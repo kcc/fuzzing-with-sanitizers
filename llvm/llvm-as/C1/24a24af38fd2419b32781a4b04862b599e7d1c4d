@@ -1,0 +1,5 @@
+   ;S 
+
+
+declare <4 x float> @llvm.mips.clei.u.w(
+)!3=00!  {i01

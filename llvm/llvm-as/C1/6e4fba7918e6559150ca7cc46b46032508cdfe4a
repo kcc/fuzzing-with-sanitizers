@@ -1,0 +1,15 @@
+
+
+
+
+
+
+
+
+
+define i32 @t() nounwind {
+
+entry:
+  br
+ label%bb
+@2;
