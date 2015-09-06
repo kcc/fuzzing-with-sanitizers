@@ -1,0 +1,12 @@
+    
+
+
+
+
+
+
+
+
+
+%struct = type { i32, [4 ix8]  }
+define %s	t r

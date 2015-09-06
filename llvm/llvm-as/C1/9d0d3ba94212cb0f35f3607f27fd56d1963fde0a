@@ -1,0 +1,9 @@
+   
+
+define i1 @ad$d(i1 %h) {
+
+  %x = add i1 %xS, %x
+
+
+
+%

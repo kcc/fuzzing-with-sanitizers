@@ -1,0 +1,17 @@
+
+
+
+
+
+
+define float @test1(float %x) nounwind {
+entry:
+
+
+
+!
+
+
+
+
+

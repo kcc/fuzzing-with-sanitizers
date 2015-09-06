@@ -1,0 +1,8 @@
+c
+;
+
+
+
+
+define inte rnal i8*@() {
+  re i8* b

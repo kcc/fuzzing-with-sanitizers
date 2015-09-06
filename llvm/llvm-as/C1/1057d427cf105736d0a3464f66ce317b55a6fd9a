@@ -1,0 +1,3 @@
+
+
+define void @test1(i32 %v, i16* ;  %ptr)  
