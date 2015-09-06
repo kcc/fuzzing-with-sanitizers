@@ -1,0 +1,4 @@
+
+!R
+ 
+declare V$oid @llvm.x86.msefscne() nounw  Q 

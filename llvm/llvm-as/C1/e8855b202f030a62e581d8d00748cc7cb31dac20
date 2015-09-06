@@ -1,0 +1,7 @@
+
+
+
+
+ 
+define i32 @test(i32  %A, i32%B) {
+	%X = sh l

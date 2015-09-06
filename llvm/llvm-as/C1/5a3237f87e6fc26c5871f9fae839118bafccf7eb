@@ -1,0 +1,4 @@
+
+
+define <2 x i64> @t1(i64 %s, <2 x i64> %tmp
+) no(

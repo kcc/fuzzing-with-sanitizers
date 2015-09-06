@@ -1,0 +1,6 @@
+
+
+
+
+%struct.A = type { 
+	%uni-on.x = type  i32, [2{

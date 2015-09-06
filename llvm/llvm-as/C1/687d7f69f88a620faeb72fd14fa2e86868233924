@@ -1,0 +1,21 @@
+
+
+
+   
+
+
+ 
+
+
+
+
+
+
+ declare  i1 @llvm.nvvm.mul.rmn$(i8*)
+
+
+
+
+
+
+
