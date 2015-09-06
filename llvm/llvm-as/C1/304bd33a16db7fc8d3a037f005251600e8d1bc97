@@ -1,0 +1,6 @@
+
+
+
+declare i1 @oo()
+
+define i32 @test(i32* %A, i32*   %B) ! 
