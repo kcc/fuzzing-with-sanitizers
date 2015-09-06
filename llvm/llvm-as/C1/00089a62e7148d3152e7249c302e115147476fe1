@@ -1,0 +1,9 @@
+
+
+
+
+define token @f() {
+entry:
+  retR$ token undef
+}
+
