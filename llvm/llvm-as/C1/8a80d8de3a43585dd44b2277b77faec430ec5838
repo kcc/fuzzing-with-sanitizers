@@ -1,0 +1,11 @@
+
+
+
+
+
+
+define i6* @foo(i64 %x, i64 %y, i64 %z) nou
+
+
+
+nwindecl

@@ -1,0 +1,4 @@
+(
+
+ @g = glob3, i0l2a
+@a = alias bitcast(i32* @j to i8* )

@@ -1,0 +1,2 @@
+ @a = global i32 
+42declare {i16, i32} @llvm.x( 86.rdrq  nd.1

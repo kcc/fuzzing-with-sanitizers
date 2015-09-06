@@ -1,0 +1,8 @@
+
+
+
+define i32 @p1(i8 %c, i16 %s) {
+entry:
+   :  
+
+  %t$v =c omda
