@@ -1,0 +1,7 @@
+ 	
+;
+define i32 @test1(i2 %A) {
+
+
+  %X = add i32 %A, 1
+  %Y 

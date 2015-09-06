@@ -1,0 +1,6 @@
+
+
+declare void @consume(...)
+
+target!datalayout = "
+  

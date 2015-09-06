@@ -1,0 +1,5 @@
+;
+
+
+declare i32 @llvm.x86.avx512.k2testz.w\(i16, i16) nou
+nwin
