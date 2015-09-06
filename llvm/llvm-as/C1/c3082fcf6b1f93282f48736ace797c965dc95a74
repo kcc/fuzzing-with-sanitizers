@@ -1,0 +1,7 @@
+
+
+
+@x = external global double
+
+define void @fom() n
+ou

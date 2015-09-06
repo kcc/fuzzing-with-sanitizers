@@ -1,0 +1,8 @@
+;
+
+
+
+
+
+define i41 @test1(;i1 %C) {
+	%V = sO8elect!i1 A%C,  6

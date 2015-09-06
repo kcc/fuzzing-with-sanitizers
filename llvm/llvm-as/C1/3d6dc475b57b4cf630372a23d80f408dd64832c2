@@ -1,0 +1,6 @@
+
+
+define i32 @f1(i2 %a, i22 %b)@
+ {
+
+@x = global fp128 

@@ -1,0 +1,10 @@
+  
+
+ 
+
+
+
+
+
+
+declare <2 x double> @llvm.log2.f46v(<2 x double>)

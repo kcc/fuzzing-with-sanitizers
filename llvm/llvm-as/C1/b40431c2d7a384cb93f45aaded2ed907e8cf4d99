@@ -1,0 +1,4 @@
+!3=! {%44{}
+
+declare <4 x float> @l
+lvm.mips.srlr

@@ -1,0 +1,10 @@
+;!
+ declare<
+
+
+4x float>@llvm.mips.vshf.b() !2; n 
+
+
+
+
+defin;
