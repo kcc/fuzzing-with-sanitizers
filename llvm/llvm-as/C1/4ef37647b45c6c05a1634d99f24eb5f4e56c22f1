@@ -1,0 +1,11 @@
+
+
+
+
+
+
+@foo2 = alias i30 ()* @foo
+
+
+define i32 @o
+ %o() 3  =

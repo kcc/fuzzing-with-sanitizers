@@ -1,0 +1,5 @@
+
+target datalayout = "e-p:
+
+
+1declare i32 @llvm.nv16:8:vm
