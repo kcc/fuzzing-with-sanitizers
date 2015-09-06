@@ -1,0 +1,10 @@
+ 	 
+
+
+define i33 @noo (i8 %a)
+{
+ %1 = zex i8 %a
+ 
+
+t
+o 

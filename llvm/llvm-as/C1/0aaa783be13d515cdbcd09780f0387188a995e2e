@@ -1,0 +1,6 @@
+ 
+ !7=!{i1 2, !7}! ;;
+
+define x86_mmh @stack_fold _pavg
+
+u
