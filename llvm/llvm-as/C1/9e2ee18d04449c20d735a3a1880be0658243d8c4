@@ -1,0 +1,11 @@
+;! n
+
+
+
+
+
+
+target datalayout = "p:3::32"
+
+@A = global   
+ 

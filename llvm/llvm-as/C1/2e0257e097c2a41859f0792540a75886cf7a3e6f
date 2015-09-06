@@ -1,0 +1,7 @@
+o
+
+
+
+decl"are i32 @llvm(swap.i32(i32 %a))
+
+;efine i3

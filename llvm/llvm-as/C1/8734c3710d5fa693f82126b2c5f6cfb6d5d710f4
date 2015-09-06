@@ -1,0 +1,17 @@
+
+
+
+define void@fo() {
+  ret void, !bar!
+
+
+
+3
+
+
+
+
+
+
+decl!rm
+N 
