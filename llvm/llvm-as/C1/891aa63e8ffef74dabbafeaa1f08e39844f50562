@@ -1,0 +1,10 @@
+
+
+
+
+define void @f1(i16 %val, i16 *%src)
+
+
+!0  !DI {
+
+

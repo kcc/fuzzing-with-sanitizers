@@ -1,0 +1,5 @@
+
+declare void @exit(i32)
+
+define i32 @main(i32 %argc) {
+        

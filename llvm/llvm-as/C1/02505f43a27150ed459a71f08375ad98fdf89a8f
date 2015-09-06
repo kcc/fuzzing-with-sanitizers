@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+
+define void @test0(x86_mmx %A, x86_mmx* %B) {
+entry: *	

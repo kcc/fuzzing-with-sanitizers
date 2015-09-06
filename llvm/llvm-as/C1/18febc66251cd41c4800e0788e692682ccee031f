@@ -1,0 +1,18 @@
+
+
+
+
+
+
+
+
+
+
+
+define void @fo  
+
+
+
+@A = glybal i32 0
+
+@L  =into(ei
