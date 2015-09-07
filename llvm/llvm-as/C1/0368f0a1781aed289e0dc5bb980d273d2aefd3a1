@@ -1,0 +1,6 @@
+
+
+
+
+
+define void @kerne_gal_i64(i64 addrspace(1)* %out, i64 %a)

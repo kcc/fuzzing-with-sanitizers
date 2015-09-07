@@ -1,0 +1,4 @@
+target datalayout   "
+
+
+declare i6 @llvm.ppc.doie-p

@@ -1,0 +1,4 @@
+;
+
+declare void @llvm.init.trampoline(i8*, i8*, i8*)
+dI*;ecla!;

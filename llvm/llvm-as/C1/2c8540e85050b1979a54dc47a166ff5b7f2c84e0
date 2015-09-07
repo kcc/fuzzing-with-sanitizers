@@ -1,0 +1,4 @@
+
+
+define i32 @test0(i32 %X) {
+  %tmp.1 = add   2!3i00`%X

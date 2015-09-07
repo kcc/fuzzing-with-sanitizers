@@ -1,0 +1,7 @@
+
+
+
+@foo = global i32 0
+
+
+t rget ;
