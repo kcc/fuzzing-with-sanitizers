@@ -1,0 +1,12 @@
+
+
+
+
+
+
+define i1 @test1
+
+
+
+(i8 %A) {
+ %B ; si)tofp

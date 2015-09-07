@@ -1,0 +1,2 @@
+;'
+ declare <4 x float> @llvm.x86.s;s.max.ps

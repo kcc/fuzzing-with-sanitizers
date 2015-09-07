@@ -1,0 +1,8 @@
+
+
+
+@llvm.global_ctors = appending global; [2 x { 
+i3
+
+
+2

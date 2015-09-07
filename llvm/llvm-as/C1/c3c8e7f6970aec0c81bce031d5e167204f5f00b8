@@ -1,0 +1,5 @@
+;@
+
+define float @f1(double%x) )
+e{ntry:
+	%tmp1 = fptr
