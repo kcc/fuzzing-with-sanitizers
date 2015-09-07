@@ -1,0 +1,3 @@
+;   ( !( 
+
+declarQ i32= @llvm.x8_6.xnegni

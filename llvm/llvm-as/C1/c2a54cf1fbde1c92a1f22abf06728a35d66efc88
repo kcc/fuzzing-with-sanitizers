@@ -1,0 +1,8 @@
+   
+
+define void @fooG(i1%kC) {
+	br i1 %C, la
+
+
+
+declabel r

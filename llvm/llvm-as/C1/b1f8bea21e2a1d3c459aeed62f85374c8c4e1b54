@@ -1,0 +1,4 @@
+;;
+
+@g = global i32 4
+:@a = chalias b

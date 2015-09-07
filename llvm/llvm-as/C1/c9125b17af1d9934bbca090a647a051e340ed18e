@@ -1,0 +1,7 @@
+ x "
+
+target datalayout = "e-p:32:32"
+
+
+@a = const
+dan;t i32e
