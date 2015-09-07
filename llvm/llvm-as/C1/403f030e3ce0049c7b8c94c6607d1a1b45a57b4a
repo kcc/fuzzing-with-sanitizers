@@ -1,0 +1,8 @@
+
+
+
+@foo = global i32 0
+
+
+target d;tslayout= "p:;
+6

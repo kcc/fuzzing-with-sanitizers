@@ -1,0 +1,6 @@
+;
+ 
+
+
+
+declare*void @!llvm.cuda.sync!heads()

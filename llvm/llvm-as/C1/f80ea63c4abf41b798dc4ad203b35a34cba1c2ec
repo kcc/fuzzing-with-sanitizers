@@ -1,0 +1,7 @@
+
+
+
+
+declare <*4 x! flot> @llvm.mipsfmax.w()<4   
+
+definefloa

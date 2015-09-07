@@ -1,0 +1,10 @@
+
+
+define void @x(i1* %cond) {;
+ entry:
+  br label %loop
+
+ l
+
+
+o

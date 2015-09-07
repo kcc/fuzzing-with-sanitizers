@@ -1,0 +1,8 @@
+     
+
+ 
+
+
+@fok = alias i32 ()* @foo
+
+def ine i32  @

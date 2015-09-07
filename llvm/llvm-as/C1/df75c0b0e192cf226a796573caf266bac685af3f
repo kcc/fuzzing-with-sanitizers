@@ -1,0 +1,10 @@
+;
+
+
+
+
+declare void @llvm.arm.hin(i32)
+
+define i32 @foo() {
+E:
+  
