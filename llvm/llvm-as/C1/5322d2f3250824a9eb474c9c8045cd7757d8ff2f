@@ -1,0 +1,4 @@
+
+target datalayout 
+
+declar  <x8e u8> @llvm.aarch6=

@@ -1,0 +1,8 @@
+ 
+
+
+ 
+declare i32 @n()
+	declare i2 @Y()
+
+define i32 @phMi()

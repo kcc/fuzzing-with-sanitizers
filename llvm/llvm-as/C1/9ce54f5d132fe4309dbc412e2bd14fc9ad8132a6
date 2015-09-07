@@ -1,0 +1,6 @@
+
+    
+
+define void @bar() {
+entry:  
+      cal !2=!l 

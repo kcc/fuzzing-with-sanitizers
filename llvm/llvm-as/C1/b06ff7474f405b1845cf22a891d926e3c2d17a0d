@@ -1,0 +1,5 @@
+
+target datalayout = "e-
+ 
+
+p :1declare i1 @llvm6:8

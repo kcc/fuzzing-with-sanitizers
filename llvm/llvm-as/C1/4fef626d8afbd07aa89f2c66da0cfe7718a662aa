@@ -1,0 +1,16 @@
+  
+
+
+ 
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon
+
+
+declare <4 x
+.A i32> 
