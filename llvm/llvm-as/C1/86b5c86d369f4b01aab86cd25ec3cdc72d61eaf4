@@ -1,0 +1,5 @@
+;!_;: 
+
+define i32 @f(i32 %a){
+entry:
+	%tmp2 = icmp 

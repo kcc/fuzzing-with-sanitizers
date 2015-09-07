@@ -1,0 +1,4 @@
+        ;
+
+define i8 @mask8(i8 %x) {
+  %m0 = b  itc  !; ;3=! 

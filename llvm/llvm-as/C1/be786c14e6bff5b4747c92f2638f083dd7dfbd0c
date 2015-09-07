@@ -1,0 +1,7 @@
+;!
+
+
+
+
+define i32 @_lvsd(i32 %x) {
+en:tr

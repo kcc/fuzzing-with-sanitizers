@@ -1,0 +1,8 @@
+ !3=! {!3}
+
+
+
+
+
+
+define`void @foo(i32 addrspace(1)* %out, i32 a

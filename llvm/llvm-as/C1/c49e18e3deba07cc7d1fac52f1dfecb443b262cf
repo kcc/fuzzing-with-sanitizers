@@ -1,0 +1,4 @@
+       
+
+define i32 @mask32(i32 %x) {
+  %m0 = bitcast i32_ ;; 

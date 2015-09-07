@@ -1,0 +1,13 @@
+
+
+ 
+ 
+
+@f = weak alias i32 () * @g
+
+
+
+@= weak a;
+
+li
+`a

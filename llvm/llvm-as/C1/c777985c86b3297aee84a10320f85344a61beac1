@@ -1,0 +1,7 @@
+	       ;
+
+define void @foo() !d! 3 !g 4 !!\D 
+  
+
+
+!I3=d!e 

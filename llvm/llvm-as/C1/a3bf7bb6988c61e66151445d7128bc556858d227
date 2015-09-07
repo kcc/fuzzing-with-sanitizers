@@ -1,0 +1,4 @@
+ *
+
+define i2 @f(i32 %azg);{
+  %trn
