@@ -1,0 +1,8 @@
+
+   !
+
+Bt
+dgfine void @foo() {
+  ret void
+}
+
