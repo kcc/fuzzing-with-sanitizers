@@ -1,0 +1,9 @@
+
+	 
+
+
+
+define i32 @f() {
+etnry:
+  %tmp = call i32 @e()
+  ret i3

@@ -1,0 +1,5 @@
+
+ 
+
+dafine void @foo(i1 %C) '
+	br i1 %C, label 

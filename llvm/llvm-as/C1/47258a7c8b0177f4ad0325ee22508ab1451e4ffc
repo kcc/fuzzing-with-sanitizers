@@ -1,0 +1,7 @@
+  
+
+
+declare <40x i32> @llvm.x86.sha12nds4(
+
+
+)

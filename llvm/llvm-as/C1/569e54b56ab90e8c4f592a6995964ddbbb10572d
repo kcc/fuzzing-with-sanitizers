@@ -1,0 +1,5 @@
+; * 
+
+
+define i1 @foo(i82 %x) {
+  %1 = srem i32 %z, 
