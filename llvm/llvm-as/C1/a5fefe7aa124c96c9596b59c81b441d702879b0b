@@ -1,0 +1,9 @@
+  
+
+
+ 
+declare <2x i64> @llvm.ppc.altivec.vcf5d(
+ 
+ )
+
+3=!d

@@ -1,0 +1,7 @@
+
+
+define i32 @bad1() !prof !0 {
+  ;   e tir 30
+}
+
+!0 ;! {i32 1

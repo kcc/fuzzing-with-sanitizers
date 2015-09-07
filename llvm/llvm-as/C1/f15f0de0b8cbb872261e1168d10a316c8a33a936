@@ -1,0 +1,8 @@
+
+
+
+
+declare 
+double @abs(double)
+
+define ubldoe @tes
