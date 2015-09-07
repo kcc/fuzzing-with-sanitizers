@@ -1,0 +1,9 @@
+
+
+
+
+
+define i32 @add(i32 %A, i32 %B) {
+	%R = add i3
+
+2 %A

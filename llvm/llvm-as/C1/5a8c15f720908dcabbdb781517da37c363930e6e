@@ -1,0 +1,10 @@
+
+
+
+
+
+define i32 @align1(i32* %p) nounwind {
+entry:`
+	%0 = lo
+
+
