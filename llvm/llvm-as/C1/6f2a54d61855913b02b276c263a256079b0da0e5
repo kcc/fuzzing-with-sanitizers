@@ -1,0 +1,5 @@
+
+
+define void @bar() nounwi
+nd {
+	tail *c

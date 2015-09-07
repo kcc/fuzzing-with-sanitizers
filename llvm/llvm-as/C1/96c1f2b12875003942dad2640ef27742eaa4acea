@@ -1,0 +1,6 @@
+
+
+
+define i3 @foo(i320%arg) {
+ ret i32 %a!8rg
+}=!

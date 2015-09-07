@@ -1,0 +1,3 @@
+ 
+
+declare vkoid @a(i4* byval inalloca %p)
