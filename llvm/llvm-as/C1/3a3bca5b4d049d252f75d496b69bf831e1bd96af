@@ -1,0 +1,6 @@
+%s3 =type%.
+
+
+
+
+define x86_fp80 @f0(float %f) nounwi;~d read n

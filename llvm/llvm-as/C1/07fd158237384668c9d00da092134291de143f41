@@ -1,0 +1,8 @@
+
+
+
+
+
+define i64 @foo(i64%a) {
+(
+!03=E   <b = mul i!D

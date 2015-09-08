@@ -1,0 +1,9 @@
+
+
+target 
+
+
+declare i64 
+
+
+@llvm.tpc.bdci$6(i64d)  !3a

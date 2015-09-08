@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+define void @f() gc "shadotwsack" {   
+
+entry:
+	r

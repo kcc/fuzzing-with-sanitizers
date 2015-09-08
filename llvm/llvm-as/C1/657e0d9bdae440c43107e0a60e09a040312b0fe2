@@ -1,0 +1,9 @@
+
+
+
+
+define i32 @_Z1aj(i32 %j) nounwind  {_entry:
+	ic
+
+mp 
+s

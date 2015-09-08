@@ -1,0 +1,8 @@
+
+
+
+
+
+
+define i64 @foo(i64 %a) {
+    !3 %b = mul i64 %a,
