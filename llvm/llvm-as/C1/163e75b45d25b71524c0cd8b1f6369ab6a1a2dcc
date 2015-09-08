@@ -1,0 +1,10 @@
+
+
+
+
+define i32 @test1(i32 %a, i32 %b, i32 %x) {
+
+
+(
+
+declare  v

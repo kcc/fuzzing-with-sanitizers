@@ -1,0 +1,4 @@
+ !3=! {i9 2, !3}
+; ;! 
+
+declay3=!	re <4 x0float> @llvm.mips

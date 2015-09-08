@@ -1,0 +1,7 @@
+;v
+;
+
+
+
+%X = type { i32 }
+@G = global %VX { i32 4

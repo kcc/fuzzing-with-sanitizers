@@ -1,0 +1,6 @@
+ 
+ 
+declare void @f()
+declare void @g()
+declare void @h()
+
