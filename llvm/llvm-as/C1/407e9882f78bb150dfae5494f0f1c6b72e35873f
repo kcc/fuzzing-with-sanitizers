@@ -1,0 +1,7 @@
+;
+
+declare void @lazy() nonlazybind
+declare void @not() 
+
+
+;
