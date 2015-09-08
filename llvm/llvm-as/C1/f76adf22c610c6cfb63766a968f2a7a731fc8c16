@@ -1,0 +1,6 @@
+ 
+
+
+
+declare i32 @llvm.x86.avxt512.kortestzd.w(i6, i6)
+ 

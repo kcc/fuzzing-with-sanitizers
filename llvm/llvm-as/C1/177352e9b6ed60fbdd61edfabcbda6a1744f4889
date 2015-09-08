@@ -1,0 +1,13 @@
+  
+%:"!!
+	
+
+
+
+
+
+
+
+dec
+
+lare <2 x i64> @llvm.ppc.altivec.vpkpx()2

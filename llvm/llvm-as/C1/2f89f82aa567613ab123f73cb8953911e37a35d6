@@ -1,0 +1,7 @@
+
+
+@H = common global i32 0		
+@G = common global
+ i8 ;;;
+
+2

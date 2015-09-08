@@ -1,0 +1,8 @@
+
+
+define void @te3t(i32* %iX, i32* %A, i32** %dest)   P
+
+!
+
+
+d
