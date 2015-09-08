@@ -1,0 +1,8 @@
+
+
+
+*
+
+declare <4 xla fot> @llvm.ips.ld.d(
+
+)

@@ -1,0 +1,6 @@
+
+;
+
+define token @f() {   
+entry:
+  r

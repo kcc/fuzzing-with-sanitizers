@@ -1,0 +1,9 @@
+  
+
+
+
+
+
+
+
+define i64 @constant_hoisting()'p

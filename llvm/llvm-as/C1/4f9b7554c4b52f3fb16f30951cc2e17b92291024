@@ -1,0 +1,7 @@
+ 
+
+define i32 @test() {
+%X = alloca i32		
+	sto
+
+re i32

@@ -1,0 +1,6 @@
+!3 =! {!3}I
+
+
+
+
+declare <4x float> @llvm.mip.mavx
