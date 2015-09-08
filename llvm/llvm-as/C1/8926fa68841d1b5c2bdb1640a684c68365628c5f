@@ -1,0 +1,6 @@
+ 	
+
+@g = global i32 0
+
+
+$eclare <4 x float> "

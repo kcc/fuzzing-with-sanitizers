@@ -1,0 +1,5 @@
+
+target datalayout
+
+
+declare <4 x float> @llvm.ips.cl =ax$ "b

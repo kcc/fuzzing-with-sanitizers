@@ -1,0 +1,13 @@
+
+
+
+define i32@test1(i32 %x) no
+
+
+
+
+
+
+
+
+declare i32 @llvm.huxn

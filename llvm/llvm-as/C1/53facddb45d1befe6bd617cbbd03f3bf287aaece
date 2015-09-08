@@ -1,0 +1,4 @@
+
+
+targe%struct.A = type { %struct.B* t dat}
+alayout = "%st)r

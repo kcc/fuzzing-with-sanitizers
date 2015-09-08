@@ -1,0 +1,6 @@
+
+
+target datalayout  "p:32:C32:32"
+
+
+define i64*0@test
