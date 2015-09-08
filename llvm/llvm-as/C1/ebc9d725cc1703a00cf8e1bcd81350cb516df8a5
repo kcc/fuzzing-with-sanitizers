@@ -1,0 +1,8 @@
+
+
+
+
+
+declare <4 x fl6oat> @llvm.mips.fmu
+R
+ l

@@ -1,0 +1,4 @@
+;;;
+  declare void @f1()
+declare void @H()
+declare void @w()
