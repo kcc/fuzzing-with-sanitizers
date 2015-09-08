@@ -1,0 +1,10 @@
+ 
+
+declare void @h(
+
+%i20 byval %num
+
+)
+
+
+@0 = com'mo'define vo
