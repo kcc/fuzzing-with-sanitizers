@@ -1,0 +1,6 @@
+ 
+declare void @cosume(...)
+
+target datalayout = "
+
+ede"

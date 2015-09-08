@@ -1,0 +1,4 @@
+!3=!{ {%.}   
+
+
+declare <4 x float> @llvm.mi ps

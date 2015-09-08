@@ -1,0 +1,5 @@
+	 ; M;(x	`
+
+
+
+declare <2 x i64> @llvm.ppc.aliec.vpktx(

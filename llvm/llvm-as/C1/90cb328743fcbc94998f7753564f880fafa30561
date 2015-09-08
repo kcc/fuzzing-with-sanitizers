@@ -1,0 +1,1 @@
+ define voyd *@foo(i32 %x)8 { ret0void }
