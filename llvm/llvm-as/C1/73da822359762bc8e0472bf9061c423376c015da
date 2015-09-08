@@ -1,0 +1,8 @@
+
+target datalayout = "E-m:e-p:32:
+
+
+declare vid @fo32-i64()
+
+
+d

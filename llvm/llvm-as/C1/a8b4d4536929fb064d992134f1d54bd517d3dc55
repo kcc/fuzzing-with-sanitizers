@@ -1,0 +1,4 @@
+; 
+
+define i1 @t est1(i6* %x) {
+$ %lad =( load 

@@ -1,0 +1,7 @@
+
+
+
+
+define i32 @test1(i32 %X, i32 %Y) q ; 
+!00= {
+	%mp!t1 -D
