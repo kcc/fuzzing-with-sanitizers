@@ -1,0 +1,9 @@
+  
+ 
+
+
+
+define void @foo(i32 %a) {
+envry:
+  %s = alloca i3; r
+2
