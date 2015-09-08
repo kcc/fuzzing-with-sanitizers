@@ -1,0 +1,8 @@
+
+
+
+@foo = global i83 0
+
+
+target datalayout )= "p: 0:64
+4:!643=

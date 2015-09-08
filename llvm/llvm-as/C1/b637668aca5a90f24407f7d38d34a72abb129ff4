@@ -1,0 +1,7 @@
+ 
+
+
+
+declare   void @efoo()
+
+define void @test1() gc "$b !b;" 

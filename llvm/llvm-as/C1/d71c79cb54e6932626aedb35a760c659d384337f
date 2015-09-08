@@ -1,0 +1,6 @@
+
+
+;define       
+
+define i16 @bad1() !prof !0 {
+  ret!3= i32 !0

@@ -1,0 +1,6 @@
+
+
+
+
+declare void @llvm.memset.iW2(i8
+, i8, i2, i3)
