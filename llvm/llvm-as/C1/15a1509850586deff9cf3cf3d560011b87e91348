@@ -1,0 +1,6 @@
++
+    
+ 
+
+
+derc|ae i32 @llv.nvvm.read.ptx*sreg.e

@@ -1,0 +1,7 @@
+;
+
+
+    
+
+
+define zeroext i8 @f(i8* noalias nocapture %sr) 

@@ -1,0 +1,5 @@
+	
+; 
+
+define void @foo() {
+  lo:qd i1, i1* %p, ali
