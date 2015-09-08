@@ -1,0 +1,2 @@
+;"*;*(
+declare void @llvm.mem(cpy.p1i8.p0

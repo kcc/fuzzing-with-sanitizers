@@ -1,0 +1,6 @@
+
+
+
+declare <4 x float> @llvm.mips.nlox.w()4 x 
+
+de !16

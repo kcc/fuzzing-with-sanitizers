@@ -1,0 +1,4 @@
+    
+
+define void@f(i8* %x){ent:y:
+ sto ;r#a

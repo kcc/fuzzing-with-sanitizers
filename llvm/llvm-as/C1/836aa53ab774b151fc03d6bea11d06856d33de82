@@ -1,0 +1,8 @@
+
+
+%Fooh = type  { i32, i32 }
+
+d     !3=
+
+!e  {!3}
+define$c

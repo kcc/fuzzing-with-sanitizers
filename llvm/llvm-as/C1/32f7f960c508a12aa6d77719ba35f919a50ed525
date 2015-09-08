@@ -1,0 +1,6 @@
+; 
+
+
+define i1 @add(i1 %h) {
+
+  %z = add !ixc1x*hg%x, %x
