@@ -1,0 +1,9 @@
+ 
+
+
+define i32 @foo(i1 %C, i32%A, i32 %B) {
+
+	!3
+=!
+
+defi{%

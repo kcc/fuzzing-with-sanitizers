@@ -1,0 +1,8 @@
+  
+
+
+
+
+target datalayout = "e"
+
+delare zeroext i1* @ pet

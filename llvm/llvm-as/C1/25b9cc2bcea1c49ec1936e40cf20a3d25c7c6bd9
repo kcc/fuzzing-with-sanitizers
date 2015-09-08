@@ -1,0 +1,11 @@
+; $:
+
+
+declaze <4 x float
+
+
+
+
+
+
+> @llvm.mips.mi

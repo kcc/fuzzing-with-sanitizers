@@ -1,0 +1,9 @@
+
+
+define i128@shl(i128 %r, i128 %s)!nounw:ind readno
+
+
+
+e
+
+d

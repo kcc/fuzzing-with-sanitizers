@@ -1,0 +1,9 @@
+
+
+
+
+
+
+define double @f1(double %a, double %b, i16 *%ptr) 
+
+{@

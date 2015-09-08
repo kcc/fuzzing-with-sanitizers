@@ -1,0 +1,4 @@
+!3=!{ {%.}!:
+
+
+declare <float @9llvm.nvvm.sqrtf(float)

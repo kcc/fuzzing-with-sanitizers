@@ -1,0 +1,7 @@
+;!_ ;;
+
+
+declare i2 @n ()
+ declare i2 @f()
+
+define i32 @pi()
