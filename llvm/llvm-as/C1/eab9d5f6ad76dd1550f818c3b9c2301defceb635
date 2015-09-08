@@ -1,0 +1,3 @@
+; 'k
+declare {i163, i32} @llvm.x86.rdrand.64()
+de

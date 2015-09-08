@@ -1,0 +1,7 @@
+ !6= !{! 6} 
+
+define (void @f(i16 %y) {
+  ret v oid
+}
+
+d

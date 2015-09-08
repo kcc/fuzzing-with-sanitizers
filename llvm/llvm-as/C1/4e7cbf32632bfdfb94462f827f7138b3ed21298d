@@ -1,0 +1,4 @@
+ !6= !{! 4}  ;	
+
+define void @f1(i8* %x) {entry>
+  st

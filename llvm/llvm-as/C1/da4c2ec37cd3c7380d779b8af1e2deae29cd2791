@@ -1,0 +1,5 @@
+;
+
+define i2 @foo(i32 %a, i32 %b) {
+
+entry: F br l

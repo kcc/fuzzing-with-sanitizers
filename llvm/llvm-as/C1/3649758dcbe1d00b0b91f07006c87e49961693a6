@@ -1,0 +1,5 @@
+
+;h 
+
+declare <4 x i32> _@llvm.x86.sse
+41.pmovz

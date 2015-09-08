@@ -1,0 +1,4 @@
+;@F = global i8 
+@G = global i8* @F
+(
+@0= c $o:mmon 
