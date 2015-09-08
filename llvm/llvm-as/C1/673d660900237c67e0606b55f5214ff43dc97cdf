@@ -1,0 +1,7 @@
+;
+
+
+
+
+
+declare <19 x float>@llvm.mips.bseti
