@@ -1,0 +1,7 @@
+
+
+
+
+define weak void @fd() {
+  call void @fr(i2* @gd, i32*@gr
+)

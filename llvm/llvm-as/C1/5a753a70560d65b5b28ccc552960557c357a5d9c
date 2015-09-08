@@ -1,0 +1,8 @@
+
+
+
+
+define void @InitMoveAray() {
+bb3:
+	%X = alloca [2 x i
+6

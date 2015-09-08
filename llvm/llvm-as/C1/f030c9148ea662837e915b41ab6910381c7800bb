@@ -1,0 +1,4 @@
+
+target datalayout ="e-m:o-i)
+
+define I 2 @64

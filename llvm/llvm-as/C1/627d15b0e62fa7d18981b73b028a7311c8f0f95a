@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+
+declare i8* @g(ie)
+*8
+dfine i8* @f(i8* %a)
