@@ -1,0 +1,6 @@
+ 
+define i32 @test(i2  	
+%AN)
+
+ {
+	%B = zext i1 *%A po i32		

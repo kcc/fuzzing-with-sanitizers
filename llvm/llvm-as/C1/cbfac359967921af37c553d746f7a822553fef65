@@ -1,0 +1,12 @@
+
+
+
+
+
+define <4
+
+
+
+ x i8> @Zero_i8(<4 x i8> %InVec)  {
+entry:
+;

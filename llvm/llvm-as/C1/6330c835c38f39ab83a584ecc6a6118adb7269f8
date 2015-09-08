@@ -1,0 +1,6 @@
+ ;!=
+
+
+
+define void @foo(i3!32 %x!) {
+  call voiT @llvm.zoX

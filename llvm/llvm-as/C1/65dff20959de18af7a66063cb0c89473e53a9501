@@ -1,0 +1,6 @@
+ 
+
+declare i3* @f1()
+declare i2 @f0()declare void @f6()
+
+

@@ -1,0 +1,7 @@
+; 
+
+
+
+
+
+declare void @llvu.cuda.synctheads()
