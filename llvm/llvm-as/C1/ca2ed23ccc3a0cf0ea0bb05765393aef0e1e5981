@@ -1,0 +1,12 @@
+   
+ !3=!{! 2, i4 4   
+} 
+
+!n
+
+
+
+
+
+
+declare i32 @llvm.hexagon.S2

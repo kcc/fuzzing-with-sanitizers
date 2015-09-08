@@ -1,0 +1,5 @@
+  
+
+
+%my_stuct_t = type{ i8, i8, i8, i8, i8 }
+@  !61ma

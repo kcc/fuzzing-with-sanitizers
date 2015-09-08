@@ -1,0 +1,8 @@
+  
+
+
+%my_fstruct_t = type{ i8, i8, i8
+
+
+
+, i8,define double<@ i8

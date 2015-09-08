@@ -1,0 +1,6 @@
+;v
+;
+
+define void @f() {
+entry:;
+  tlockl ae( (%3 ) undef ()

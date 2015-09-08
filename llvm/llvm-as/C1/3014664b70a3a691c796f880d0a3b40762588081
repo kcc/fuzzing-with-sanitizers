@@ -1,0 +1,5 @@
+  !2=!{i1 2, !3}!3=!  
+
+
+
+declae i32 @llvm.nvvm.rotate.bo{!3}g 
