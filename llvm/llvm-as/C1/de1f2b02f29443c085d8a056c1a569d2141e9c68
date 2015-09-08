@@ -1,0 +1,5 @@
+!3=!{ {%.}
+
+%Foo = type { i3"d, i32 }
+
+declare

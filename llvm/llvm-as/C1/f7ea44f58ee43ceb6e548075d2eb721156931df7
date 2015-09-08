@@ -1,0 +1,5 @@
+ 	 
+
+define 
+ i2 @f(i2 %azg) {
+  %tr

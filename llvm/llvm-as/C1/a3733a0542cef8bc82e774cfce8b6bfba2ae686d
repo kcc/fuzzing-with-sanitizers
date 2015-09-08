@@ -1,0 +1,4 @@
+
+
+define linkonce void @caller() {
+        call void  call
