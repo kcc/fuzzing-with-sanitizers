@@ -1,0 +1,2 @@
+; 'k3 
+declare void @llvm.rap()

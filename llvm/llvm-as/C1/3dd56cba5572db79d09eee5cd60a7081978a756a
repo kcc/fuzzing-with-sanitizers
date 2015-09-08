@@ -1,0 +1,6 @@
+; 
+
+
+
+define void @foo(i32 %x) {
+  cal void @'llvk3m.zon(mate'

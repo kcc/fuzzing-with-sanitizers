@@ -1,0 +1,6 @@
+    !"2
+
+
+define;vo*id @_start() nounwind
+ naked {
+entr

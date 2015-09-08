@@ -1,0 +1,5 @@
+
+
+
+define i32 @test(i2 %f12) nounwid {
+	%tmp7.25 = lshr i32 ;%
