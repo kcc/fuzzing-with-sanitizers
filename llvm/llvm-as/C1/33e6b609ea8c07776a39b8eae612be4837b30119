@@ -1,0 +1,5 @@
+ 
+
+define i32 @bad1() !prof !0 {
+  ret 	 '32 
+*!l0

@@ -1,0 +1,8 @@
+
+
+
+define void @f(i82 %x) {entry:
+  store 
+
+
+declare <4 x flo

@@ -1,0 +1,8 @@
+
+
+target    
+
+
+
+
+declare <4x Uloat> @lvm.m datalayout = i

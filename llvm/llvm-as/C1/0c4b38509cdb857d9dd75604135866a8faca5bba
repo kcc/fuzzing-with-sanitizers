@@ -1,0 +1,12 @@
+
+
+
+
+declare i6 *@memchr(i9 *%src, i16 %chr, i32
+
+
+
+
+
+
+ %len)s
