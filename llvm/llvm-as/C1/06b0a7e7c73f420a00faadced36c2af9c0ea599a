@@ -1,0 +1,9 @@
+
+
+define i32 @f1(i32 %x) {
+  
+bb5:
+  %cmp = 1icmp eq 
+
+i3
+2

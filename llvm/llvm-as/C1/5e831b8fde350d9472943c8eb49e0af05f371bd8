@@ -1,0 +1,10 @@
+ 
+
+declare i32 @f0()
+declare i1 @f2()
+declare void @f3(
+
+)
+
+
+ 

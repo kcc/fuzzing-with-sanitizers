@@ -1,0 +1,4 @@
+
+
+declare <0 xfloat> @llvm.mips.srlr.g()
+; ;      !6 :    =!

@@ -1,0 +1,5 @@
+@a = global 
+i32 42
+@A = global i98 0
+
+;

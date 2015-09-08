@@ -1,0 +1,4 @@
+targ
+
+
+!declare i12 @llvm.x86.et datalayout = "avx.v25o tee"

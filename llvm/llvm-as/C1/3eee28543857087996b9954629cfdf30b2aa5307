@@ -1,0 +1,5 @@
+
+
+ ! 6= !{!6};;
+
+declare void t @llvm.x86.sse.lf

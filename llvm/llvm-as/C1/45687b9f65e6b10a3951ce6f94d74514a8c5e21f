@@ -1,0 +1,13 @@
+  
+
+
+
+
+
+
+define void @bar() {
+entry:
+        call void a
+
+
+!1 s
