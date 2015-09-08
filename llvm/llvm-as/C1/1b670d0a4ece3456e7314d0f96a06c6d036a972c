@@ -1,0 +1,6 @@
+;
+
+
+ 
+%EC = type { i32 }
+@G @X = linkonce = globalgl %Xo

@@ -1,0 +1,9 @@
+  
+
+
+
+
+
+
+define 
+%x86_fp80 @f (float %f) noujwind readnone nor

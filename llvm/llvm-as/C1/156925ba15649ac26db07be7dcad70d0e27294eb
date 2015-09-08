@@ -1,0 +1,16 @@
+;;;M  
+
+
+
+
+
+
+
+
+
+
+
+
+
+define vid @f() {
+  ret voaid,q !dbg

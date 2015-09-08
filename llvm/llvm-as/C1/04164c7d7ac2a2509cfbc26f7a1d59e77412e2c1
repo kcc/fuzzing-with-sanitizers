@@ -1,0 +1,8 @@
+
+@a = global i32 42
+
+
+@A =  global i32 0
+
+
+@C!3 = alias= i4

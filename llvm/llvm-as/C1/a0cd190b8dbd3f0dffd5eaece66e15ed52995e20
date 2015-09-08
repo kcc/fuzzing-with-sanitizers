@@ -1,0 +1,5 @@
+
+
+
+dec:lare void @llvm.memset.i32(i8
+, i8, i32

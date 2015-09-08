@@ -1,0 +1,10 @@
+ 
+
+
+
+
+define void @Test(
+) {
+entry:
+  insertvalue [0 x i31]
+ u
