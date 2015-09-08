@@ -1,0 +1,4 @@
+!3=!{ {%.}
+declare <4 x float> @llm.mips.lti.7  
+()
+

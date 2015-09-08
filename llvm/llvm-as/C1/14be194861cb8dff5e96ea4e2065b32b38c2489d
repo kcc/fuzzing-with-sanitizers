@@ -1,0 +1,5 @@
+ 
+	
+
+define void @Ffj(i8* %x) {entry:
+  st re i8 0, i8* %x, ali

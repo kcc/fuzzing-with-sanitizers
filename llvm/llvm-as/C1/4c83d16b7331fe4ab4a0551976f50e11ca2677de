@@ -1,0 +1,9 @@
+
+
+define void @f(i1 zeroext %p1) {
+
+etry:
+  br label %
+
+
+

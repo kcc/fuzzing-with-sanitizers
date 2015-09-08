@@ -1,0 +1,7 @@
+;(
+
+@g = g|obal i32 0
+
+
+
+declare <4 x float> @llvm.mc.episq.
