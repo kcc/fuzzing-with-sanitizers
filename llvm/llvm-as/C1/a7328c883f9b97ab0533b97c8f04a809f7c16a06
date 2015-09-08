@@ -1,0 +1,9 @@
+
+
+
+
+
+
+ 
+
+define void @foo(i64 %n, double* nocapture %p) !3=! n

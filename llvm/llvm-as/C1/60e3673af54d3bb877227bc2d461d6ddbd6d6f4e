@@ -1,0 +1,4 @@
+
+
+@i = lobal i32 6, align 4
+@v!< global i32 12, 8align 

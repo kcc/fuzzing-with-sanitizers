@@ -1,0 +1,8 @@
+ 
+
+
+
+
+declare void (i32)* @foo()z
+
+defenv ioid @ est(  !

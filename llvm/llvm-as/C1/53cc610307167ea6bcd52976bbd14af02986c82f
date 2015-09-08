@@ -1,0 +1,5 @@
+; 
+
+declare void @llvm.memmove.pi8.ip08.i32
+
+(i8)!
