@@ -1,0 +1,2 @@
+ ;H
+define void @f(i8* byval, i8* inalloca)

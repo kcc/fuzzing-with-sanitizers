@@ -1,0 +1,6 @@
+ 
+define i32 iA@(!2 %Size)){
+;
+
+
+  %A = al:loca i8, i32 *%
