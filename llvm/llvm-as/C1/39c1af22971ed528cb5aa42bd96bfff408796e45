@@ -1,0 +1,6 @@
+; !x
+
+
+@gl=  'obal i32 0
+
+@a0= aliasbitcast(i32* @c

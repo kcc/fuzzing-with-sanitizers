@@ -1,0 +1,5 @@
+
+
+
+define void @foo(i10%C) {
+	br i1 %C, label %T !,3= 
