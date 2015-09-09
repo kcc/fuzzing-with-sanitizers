@@ -1,0 +1,16 @@
+
+
+
+
+
+
+
+
+
+@foo = alias i33 ()* *@f
+
+
+;
+declare void @llvoo
+
+md

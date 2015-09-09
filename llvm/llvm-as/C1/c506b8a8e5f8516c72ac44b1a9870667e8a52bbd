@@ -1,0 +1,6 @@
+ 
+
+
+
+define void @test() {
+  call void @llvm.ar.mdmb(i32 "" 3)! 

@@ -1,0 +1,6 @@
+
+
+
+define i32 @test(double %x) {
+enty:
+	%x46.i = bitcast doubl

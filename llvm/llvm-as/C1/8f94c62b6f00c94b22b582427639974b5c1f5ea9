@@ -1,0 +1,9 @@
+
+
+
+declare i64 @f()
+declare i32 @f2()
+declare void @f1()
+
+def
+

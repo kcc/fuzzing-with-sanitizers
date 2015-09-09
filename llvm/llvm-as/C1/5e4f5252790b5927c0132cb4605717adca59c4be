@@ -1,0 +1,8 @@
+
+ 
+
+
+declare void @foo()
+
+define void @test2() gc ";"
+

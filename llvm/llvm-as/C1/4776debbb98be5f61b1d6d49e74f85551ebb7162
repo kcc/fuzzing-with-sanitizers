@@ -1,0 +1,9 @@
+
+
+define void @x(i1* %cond) {
+
+ etry:
+ br label %loo
+
+
+p

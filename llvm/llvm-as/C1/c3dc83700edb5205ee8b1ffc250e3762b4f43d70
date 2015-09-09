@@ -1,0 +1,9 @@
+
+
+
+
+define i32 @minint(i32 %i) {
+
+
+
+  %mul = mul i32 %i, -21474
