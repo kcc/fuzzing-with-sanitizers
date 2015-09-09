@@ -1,0 +1,16 @@
+
+
+
+
+
+
+
+
+
+@a = global i8 1, align 1
+@b
+
+
+
+ = global i16 
+1

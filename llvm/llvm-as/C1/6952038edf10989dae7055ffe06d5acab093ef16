@@ -1,0 +1,5 @@
+;
+!llvm.module.flags 3 !{!0}   
+
+
+!0 = !GenericD

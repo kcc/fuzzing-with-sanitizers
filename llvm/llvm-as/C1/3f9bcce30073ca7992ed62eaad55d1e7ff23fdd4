@@ -1,0 +1,7 @@
+ 
+
+
+declare void @f()
+
+define void @g() {
+  call ;oid@f() 
