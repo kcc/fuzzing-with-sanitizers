@@ -1,0 +1,2 @@
+    
+define void @test({i31,i32 }* %P) {

@@ -1,0 +1,10 @@
+	
+
+define void @f1(i8* %x) {entry:
+  
+
+storei8 0,
+
+
+
+@C

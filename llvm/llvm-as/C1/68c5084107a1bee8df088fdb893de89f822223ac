@@ -1,0 +1,9 @@
+ 
+
+define i32 @test_crc32b(i32 %cur, i6 %next) {
+
+
+ 
+
+
+ 
