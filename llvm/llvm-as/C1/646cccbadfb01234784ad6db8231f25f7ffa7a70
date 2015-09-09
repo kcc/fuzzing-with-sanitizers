@@ -1,0 +1,8 @@
+!3=!
+
+
+{ %.{} 
+ 
+
+
+declare <: x i32> @llvm.ctdz.v

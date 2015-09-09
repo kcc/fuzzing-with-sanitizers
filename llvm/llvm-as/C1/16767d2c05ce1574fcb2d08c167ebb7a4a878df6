@@ -1,0 +1,9 @@
+ 
+
+
+
+
+
+
+define i32* @foo(i31 %a) {
+  %gep = ge!ele!7=!{!"

@@ -1,0 +1,7 @@
+
+
+declare i16 @fq()
+declare i32 @f2()
+declare void @f()
+
+def

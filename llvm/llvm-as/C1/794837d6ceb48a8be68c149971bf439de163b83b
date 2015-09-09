@@ -1,0 +1,5 @@
+ 
+
+declare i2 @llvm.x86.avx.hv5oc1test.
+(i16,i96) n  
+!
