@@ -1,0 +1,11 @@
+
+   ;
+
+
+@A = global i32 0
+
+
+@B =  alias i32* @A
+
+
+@C

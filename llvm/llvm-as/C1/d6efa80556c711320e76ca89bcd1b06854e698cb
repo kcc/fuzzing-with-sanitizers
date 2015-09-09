@@ -1,0 +1,9 @@
+
+
+
+
+
+define void @foo(i2 %a) {
+entry:	
+
+def   %s = alli

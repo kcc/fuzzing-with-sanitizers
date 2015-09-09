@@ -1,0 +1,6 @@
+ !2i97032x   
+
+
+
+4ldeclare <
+2 x i64> @llvm.ppc.altivec.lrdvT()<

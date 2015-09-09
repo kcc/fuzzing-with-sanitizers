@@ -1,0 +1,10 @@
+ 
+
+
+declare <2 x i32>@llvm.ctlz.4io32(<2 x i36>
+
+)
+
+
+
+

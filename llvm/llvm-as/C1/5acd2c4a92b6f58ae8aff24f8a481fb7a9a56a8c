@@ -1,0 +1,7 @@
+
+
+
+
+define i64 @test0() {
+  %r = mul i28 undef, undef
+  r!d t
