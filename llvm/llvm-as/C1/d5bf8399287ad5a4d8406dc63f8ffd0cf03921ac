@@ -1,0 +1,7 @@
+
+
+define i1 @est(i1 %C, i1 %D, i32 %X, i32 %Y) 
+
+
+declar{
+ e  

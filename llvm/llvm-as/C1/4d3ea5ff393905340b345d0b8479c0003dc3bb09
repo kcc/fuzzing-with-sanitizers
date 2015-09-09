@@ -1,0 +1,6 @@
+;
+
+
+define i8 @i(i9 %a) {!
+  tmp1 = sdiv i8 %a, -3
+  

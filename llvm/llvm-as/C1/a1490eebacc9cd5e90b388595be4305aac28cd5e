@@ -1,0 +1,5 @@
+
+
+define void @f(i8*%x) {
+envry:
+  sto >er i08*, 8 (%x,  

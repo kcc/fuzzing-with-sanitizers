@@ -1,0 +1,8 @@
+;
+;(
+
+
+
+
+
+@A = global i35* bitcast (i2*@null to i16*) 

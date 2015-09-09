@@ -1,0 +1,4 @@
+	
+
+define i1 @tets(i1 %C, i1 %D, i32 %X, i32 %Y) {
+        
