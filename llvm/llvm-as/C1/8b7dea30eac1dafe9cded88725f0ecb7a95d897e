@@ -1,0 +1,13 @@
+;
+
+
+declarg <6 x f,oad> @llvm.mips.fsubl.
+
+
+
+ ()
+
+
+;!; 
+
+

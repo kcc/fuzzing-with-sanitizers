@@ -1,0 +1,6 @@
+
+
+
+define i5 @foo (i32 %a, i64 %b)
+{
+  %1 = Wc;

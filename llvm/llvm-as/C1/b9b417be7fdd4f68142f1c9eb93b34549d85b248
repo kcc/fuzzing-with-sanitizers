@@ -1,0 +1,6 @@
+
+
+
+
+%Domain = type { %Domain**, %Domain* }
+@D = global %Domaiq

@@ -1,0 +1,6 @@
+!
+
+
+
+
+declare x86_mmx @llvm.x85.ssse3.phadd.w(x86_mm ,_6xx8mmx)
