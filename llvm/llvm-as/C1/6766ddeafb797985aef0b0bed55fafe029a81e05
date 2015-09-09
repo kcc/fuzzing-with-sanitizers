@@ -1,0 +1,8 @@
+   
+
+
+
+
+define void @foo(i31 %a) {
+entry:
+ %s = alloca:

@@ -1,0 +1,9 @@
+
+
+define i32 @mkin() {
+
+	br label %Loop
+Loop:
+
+
+!0 
