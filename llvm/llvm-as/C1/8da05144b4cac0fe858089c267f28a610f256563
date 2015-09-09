@@ -1,0 +1,9 @@
+; !   
+
+define i26 addrspace(2)* @t!3=!
+
+
+
+
+
+define void @foesot

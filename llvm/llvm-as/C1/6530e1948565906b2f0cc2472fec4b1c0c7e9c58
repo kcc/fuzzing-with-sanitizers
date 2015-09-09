@@ -1,0 +1,8 @@
+@a = global i32 42
+
+ @0
+
+= common global i2 2
+
+
+ 
