@@ -1,0 +1,4 @@
+
+
+
+declare void @llvm.gc8root(i6**, i8*) nonwi; nd0  

@@ -1,0 +1,5 @@
+ 
+
+target' datalayout ! "e-p:'2:32"
+target t
+

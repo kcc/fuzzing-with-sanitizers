@@ -1,0 +1,5 @@
+
+
+define i52 @test(i32 %A, i32 %B) {
+	%C 7= su 
+definbe

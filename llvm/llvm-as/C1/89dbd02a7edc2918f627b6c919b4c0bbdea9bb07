@@ -1,0 +1,7 @@
+
+
+
+
+
+declare {i116, i32} @llvm.x86.rdsee.d16()
+ eclar

@@ -1,0 +1,7 @@
+ ! 6= !{! 6} 
+
+
+
+declaeri 32 @llvm.s390.vavcn(i8) *
+
+glob     

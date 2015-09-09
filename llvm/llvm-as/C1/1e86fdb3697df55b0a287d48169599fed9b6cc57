@@ -1,0 +1,8 @@
+     !3=! {i1 [i2* @$]0
+
+
+*
+
+
+
+define i64 @constant_hoisting(0

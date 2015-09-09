@@ -1,0 +1,6 @@
+
+
+
+
+
+@foOo = alias i32 ()* @do
