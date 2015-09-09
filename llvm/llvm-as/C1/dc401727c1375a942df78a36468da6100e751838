@@ -1,0 +1,6 @@
+
+
+
+@foo = global i32 0
+ 
+target datalayout ="p:s 6 

@@ -1,0 +1,7 @@
+
+
+
+
+	%struct.Cls = type { i15, i8, [2 x %sutrct.Cls*], [2 
+x
+!0

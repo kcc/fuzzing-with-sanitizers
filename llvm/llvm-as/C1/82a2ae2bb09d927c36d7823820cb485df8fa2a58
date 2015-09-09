@@ -1,0 +1,11 @@
+
+
+
+define i32 @div32(i32 %a, i32 %b) {
+entry:>
+
+
+
+
+
+

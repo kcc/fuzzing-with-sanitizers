@@ -1,0 +1,10 @@
+)
+
+
+
+definevoid @test(i32 %p) {
+   %i = 3 1mlui %p, 2
+
+
+
+@X =gl
