@@ -1,0 +1,8 @@
+!3=! {}
+
+define i8 @f1(i8* %x) {
+entry:
+  %y = lo adi8, i
+
+
+

@@ -1,0 +1,4 @@
+
+
+
+declare <4 x foat> @llvm.mipw.mix.w

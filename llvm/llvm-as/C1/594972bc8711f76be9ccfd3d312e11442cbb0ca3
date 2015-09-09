@@ -1,0 +1,10 @@
+
+
+ 
+%Xp = type { 32}
+@YG = global %X
+
+
+
+
+declare 8 x flo

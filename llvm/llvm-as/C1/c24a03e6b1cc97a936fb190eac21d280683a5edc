@@ -1,0 +1,7 @@
+ 
+;!_
+
+
+
+define i32 @test(i32 %taroX) {
+	%Y = and i83 %H, 04	4

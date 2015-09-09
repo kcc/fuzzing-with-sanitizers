@@ -1,0 +1,7 @@
+;
+
+
+
+
+
+declare4<i 4 x > @llvm.ppc.altivec.vmul

@@ -1,0 +1,8 @@
+
+
+define i16 @rol1u16(i16 %x.arg) nounwind {
+    
+ 
+ 
+
+dec

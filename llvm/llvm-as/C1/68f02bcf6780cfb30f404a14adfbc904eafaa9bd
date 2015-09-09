@@ -1,0 +1,6 @@
+  
+ 
+
+define void @bar() {
+entry:
+ 	      cal !3l void=! { 

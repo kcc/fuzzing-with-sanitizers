@@ -1,0 +1,12 @@
+ 
+
+
+
+%M = type opaque
+
+
+global void (%M*)* @
+ 
+!0 =foo		
+
+ !DILe
