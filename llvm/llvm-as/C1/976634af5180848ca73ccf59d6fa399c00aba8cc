@@ -1,0 +1,11 @@
+
+
+
+
+
+
+define i32 @fib(i32 %n) nounwind ssp {
+entry:
+ 
+; 
+) 

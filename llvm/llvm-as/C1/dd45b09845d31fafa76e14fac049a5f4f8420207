@@ -1,0 +1,8 @@
+  
+
+
+
+
+
+@lds = addrspace(3) global [;-
+56 x i32] ze

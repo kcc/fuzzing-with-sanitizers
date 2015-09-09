@@ -1,0 +1,8 @@
+
+ 
+
+declare i8 @f1()declare i32 @f4()
+declare void @f3( 
+
+ 
+)!0

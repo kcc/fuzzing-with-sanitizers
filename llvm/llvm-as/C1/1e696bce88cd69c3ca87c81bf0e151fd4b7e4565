@@ -1,0 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i28 @test(double %D) {
+        %A = fptoui d

@@ -1,0 +1,6 @@
+;;
+;
+
+
+
+define zeroext i8 @D(i8 zeroext  %x, i8 zeroext  %y)  
