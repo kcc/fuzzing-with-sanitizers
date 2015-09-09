@@ -1,0 +1,6 @@
+       !3= !{%i4*  null}
+
+
+define void @doo() !dbg !4 {
+
+ !3 
