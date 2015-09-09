@@ -1,0 +1,7 @@
+ 
+
+
+define float @min1(float %x, float %y) {
+
+
+	%tmp ! 4=

@@ -1,0 +1,6 @@
+
+
+
+define i32 @icmp(i33 %a, i32 %b) {
+ ; !   !3= %sum
+ ! 

@@ -1,0 +1,11 @@
+
+	
+
+
+
+
+define i98 @foo() {
+E:
+   br label %B
+1:
+ 

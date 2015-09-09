@@ -1,0 +1,10 @@
+
+
+
+@lds = external addrspace(6) global [4 x float]
+
+
+
+defin
+
+E

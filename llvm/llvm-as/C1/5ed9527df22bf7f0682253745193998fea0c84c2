@@ -1,0 +1,6 @@
+!3=!{ %ay
+
+*  
+
+
+declare i32 @llvm.rdmxa.d(i32, i32, i8*) noun

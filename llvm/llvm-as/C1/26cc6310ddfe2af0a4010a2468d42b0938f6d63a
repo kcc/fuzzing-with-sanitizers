@@ -1,0 +1,7 @@
+
+
+
+
+
+define i64 @f0(i64 %cmp, i64 %swap, i64 *%src) {
+

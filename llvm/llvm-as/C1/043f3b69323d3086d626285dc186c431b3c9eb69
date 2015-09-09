@@ -1,0 +1,7 @@
+
+
+
+
+
+define i32 @foo   () !prof !0 {
+  ret  

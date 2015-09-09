@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+define float @tst1(float %a, float %b)
+
+defi 

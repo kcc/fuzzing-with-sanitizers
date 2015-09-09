@@ -1,0 +1,9 @@
+ 
+
+define void @foo() !dbg !8 {
+  unreachable
+*
+
+
+
+declare i32
