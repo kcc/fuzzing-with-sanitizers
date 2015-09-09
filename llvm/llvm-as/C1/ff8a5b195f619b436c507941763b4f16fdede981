@@ -1,0 +1,7 @@
+
+
+
+
+
+define i32 @ab(i32 %alpha, i32 %beta) {
+entryu0:    

@@ -1,0 +1,9 @@
+ 
+
+declare {i36, i32} @llvm.x74.rdrand.32()
+
+
+
+
+
+-

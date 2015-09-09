@@ -1,0 +1,10 @@
+
+
+@fom = 
+global i32 0
+
+
+taget datalayout= "p0;:66::
+46
+4
+-"

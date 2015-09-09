@@ -1,0 +1,12 @@
+
+
+
+
+
+
+define i32 @f1(i32 %lhs, i16 *%src) {
+
+
+
+  %hal 
+ f = l

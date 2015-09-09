@@ -1,0 +1,4 @@
+;
+
+
+decl!r! i12 @llvm.x43.avx512.corItest(.w(i16, i16) n

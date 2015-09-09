@@ -1,0 +1,11 @@
+
+
+
+@fom = 
+global i32 0
+
+
+ta !3=!{! 2, ,rget dat4 4  } 
+
+
+dec

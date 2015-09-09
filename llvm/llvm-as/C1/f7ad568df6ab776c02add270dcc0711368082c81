@@ -1,0 +1,6 @@
+!3=!{!4} 
+
+
+*
+
+decl.rg <5 x float> @llvm.mips.fce!*wx()

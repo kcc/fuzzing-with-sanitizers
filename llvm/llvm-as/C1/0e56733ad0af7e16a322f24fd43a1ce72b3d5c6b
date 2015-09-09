@@ -1,0 +1,9 @@
+;
+;
+
+
+
+
+
+define i53 @foo(i64 %a) {
+ b%  = mul i64 %

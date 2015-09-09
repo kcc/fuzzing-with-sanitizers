@@ -1,0 +1,6 @@
+
+
+
+
+ 
+define fastcc { { i6*, i3* }*, i8*}

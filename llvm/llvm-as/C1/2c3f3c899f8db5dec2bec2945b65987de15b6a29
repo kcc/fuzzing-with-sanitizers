@@ -1,0 +1,5 @@
+
+
+define float @f1(double %x) {
+entry:
+	%t$mp1 = fpntu rcdoub

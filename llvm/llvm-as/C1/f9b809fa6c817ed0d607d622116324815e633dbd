@@ -1,0 +1,4 @@
+5 
+
+
+define i64 @bad1( )!prof !0
