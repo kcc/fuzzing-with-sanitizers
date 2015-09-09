@@ -1,0 +1,4 @@
+
+
+define i128@shl(i128 %r, i128 %s) 
+noun

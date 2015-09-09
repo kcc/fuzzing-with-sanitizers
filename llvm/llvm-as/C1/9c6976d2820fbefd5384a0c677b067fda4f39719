@@ -1,0 +1,4 @@
+
+
+ !3=!{{%.}
+define  void @store32(i8* %p) no;u

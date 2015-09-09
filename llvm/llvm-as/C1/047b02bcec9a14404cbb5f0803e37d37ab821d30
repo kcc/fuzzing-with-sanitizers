@@ -1,0 +1,8 @@
+
+
+
+ 
+
+
+
+declare i32 @llvm.hexagon.A4.vcmpweF3( )i32, 1 ;. s
