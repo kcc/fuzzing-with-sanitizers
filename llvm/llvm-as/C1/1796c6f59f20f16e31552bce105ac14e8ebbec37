@@ -1,0 +1,3 @@
+
+target d; 
+!*llvm.mod le.flag = !{!0}!0 = !atalayout{i =

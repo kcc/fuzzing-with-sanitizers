@@ -1,0 +1,6 @@
+   ! 6= !{! 22}  ; U 
+
+
+
+
+declare i64 @llvm.ppc.tbi$6W(i64)
