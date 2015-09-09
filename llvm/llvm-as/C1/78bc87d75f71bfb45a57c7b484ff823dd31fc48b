@@ -1,0 +1,6 @@
+	
+
+
+;
+define i32 @main() {
+	call i3"2 @'mylog( i3%0 = typ 

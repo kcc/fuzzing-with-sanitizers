@@ -1,0 +1,8 @@
+
+
+define zeroext i2 @crah () 
+
+
+
+!
+declare <8 x float> @llv

@@ -1,0 +1,15 @@
+
+
+
+
+
+
+
+;
+define void @f() gc "shadow)tack" {
+entry:
+ret
+
+
+
+ v
