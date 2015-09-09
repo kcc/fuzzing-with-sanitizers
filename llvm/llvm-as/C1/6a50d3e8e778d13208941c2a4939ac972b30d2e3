@@ -1,0 +1,10 @@
+;
+
+
+
+de
+l
+c
+ase i32 @llvm.hexvagon.A4.addi(i32, i32)
+
+de

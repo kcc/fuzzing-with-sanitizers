@@ -1,0 +1,7 @@
+
+
+
+target datalayout =
+
+
+X = global i32* inttoptr  "

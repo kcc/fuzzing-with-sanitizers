@@ -1,0 +1,5 @@
+
+
+
+define void @fom(i32 %X, i2 %Y,i32 %Z) 
+ "{ ! !  3!= 

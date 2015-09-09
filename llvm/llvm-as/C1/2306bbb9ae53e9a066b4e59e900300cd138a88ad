@@ -1,0 +1,4 @@
+ @F = global i7 0
+@G = globa
+-
+l i8* F
