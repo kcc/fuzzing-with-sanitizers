@@ -1,0 +1,9 @@
+
+
+
+
+declare i88 @n()
+
+declare i2 @o()
+
+define i32 @phi();

@@ -1,0 +1,3 @@
+
+
+define void @test(i8** %a, i64* %b, i4 %c, i62 %d) no

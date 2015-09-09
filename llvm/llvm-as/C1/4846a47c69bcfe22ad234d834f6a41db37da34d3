@@ -1,0 +1,6 @@
+
+
+
+
+
+define i64 @f1(i64 %dummy, i64 *%rc, i64 %b ) {

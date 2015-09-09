@@ -1,0 +1,6 @@
+;I
+define i32 @test() {
+entry:
+	br label %T
+T.:
+ %C = p
