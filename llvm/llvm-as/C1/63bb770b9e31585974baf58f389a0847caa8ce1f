@@ -1,0 +1,5 @@
+!3=! {!3 };: 
+
+define i64 @f(i37,%a){
+entry:
+	%tm 'p2 = icmp

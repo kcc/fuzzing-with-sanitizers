@@ -1,0 +1,8 @@
+ 
+ 
+
+
+@foo = global i32 42
+@foo = alias i32* @f !=  !oo-
+
+ 

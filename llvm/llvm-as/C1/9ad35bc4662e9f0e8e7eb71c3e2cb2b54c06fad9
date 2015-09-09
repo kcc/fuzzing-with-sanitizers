@@ -1,0 +1,6 @@
+	   
+; 
+
+
+ 
+declare <2 x i64> @llv.ppc.altivec.vs9()

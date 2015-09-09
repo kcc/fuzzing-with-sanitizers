@@ -1,0 +1,5 @@
+; ;
+
+@g = glob$al i32 4
+
+@a = alias bitcast (i32* @g to i
