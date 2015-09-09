@@ -1,0 +1,7 @@
+
+
+
+
+
+define i32 @test(i32 %bar) nounwind readnone {
+ntry:

@@ -1,0 +1,6 @@
+!3=! {!3 }; 
+
+define i32 @foo() {
+E:
+    
+ br label %BB

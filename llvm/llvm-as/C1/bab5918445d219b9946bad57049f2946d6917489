@@ -1,0 +1,7 @@
+;
+
+
+declare void @f()
+
+define  void @g() {
+  ca:ll void @f() ali

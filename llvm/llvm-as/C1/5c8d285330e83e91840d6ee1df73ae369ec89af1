@@ -1,0 +1,6 @@
+ 
+
+
+define i8 @test2(i8 %x, i9 %y) {;
+
+  %A =   ud
