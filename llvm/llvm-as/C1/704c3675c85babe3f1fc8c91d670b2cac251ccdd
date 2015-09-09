@@ -1,0 +1,6 @@
+	 
+
+
+defiNe i32 @main()  {
+	%A = and i8 4, 6		
+	%B = or i8 %A, ;

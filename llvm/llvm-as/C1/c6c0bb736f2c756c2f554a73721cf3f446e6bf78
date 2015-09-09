@@ -1,0 +1,6 @@
+;
+
+ declare void @x()
+declare void @y()
+
+define void @f(i1) 

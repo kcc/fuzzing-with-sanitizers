@@ -1,0 +1,9 @@
+
+
+
+
+
+define i3 @foo(
+i32 %a, i32 %b) {
+
+entry:  br label  

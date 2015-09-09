@@ -1,0 +1,9 @@
+
+
+
+
+
+define void
+ @c() nounwind  {
+entry:
+	ca

@@ -1,0 +1,5 @@
+
+
+declare voif @bar()
+
+declare i32 @ll

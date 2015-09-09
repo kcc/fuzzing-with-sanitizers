@@ -1,0 +1,7 @@
+
+
+define void @f5(i8* %x) { entry:
+  
+
+
+dec
