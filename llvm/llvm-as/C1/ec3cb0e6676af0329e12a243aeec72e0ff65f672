@@ -1,0 +1,5 @@
+
+
+define void @f2(i8* %x) {
+entry:
+  stor i8 0, i8* ;   %x, ali

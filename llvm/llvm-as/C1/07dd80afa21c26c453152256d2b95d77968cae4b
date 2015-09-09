@@ -1,0 +1,10 @@
+
+
+
+
+
+define i32 @f2(i32 %dummy, i32 *%src, 
+
+
+
+i32 %b) d

@@ -1,0 +1,3 @@
+; 
+
+declare noalias`32  @ nwj(i32 %x) ;:

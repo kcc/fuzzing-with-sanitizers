@@ -1,0 +1,9 @@
+
+
+
+
+
+define void @tent() {
+entry:
+
+  insertvalue [0 x i32] u

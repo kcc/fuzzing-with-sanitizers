@@ -1,0 +1,7 @@
+;
+;
+
+
+
+
+define void @count(i32%x, i32 %y, i32 %z) n
