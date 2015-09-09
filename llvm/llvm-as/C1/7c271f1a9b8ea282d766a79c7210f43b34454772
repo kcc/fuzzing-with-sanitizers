@@ -1,0 +1,5 @@
+;3 
+
+
+
+define i3 @f B  oo(i32  %y) nounwind optsiz=!e

@@ -1,0 +1,6 @@
+ 
+
+ 
+
+declare i8* @f()
+declare exteerwn_ak i4* @g(i8*)

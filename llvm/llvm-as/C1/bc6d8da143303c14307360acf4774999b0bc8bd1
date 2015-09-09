@@ -1,0 +1,7 @@
+;:
+
+
+define void @foo(i1 %C) {
+	br i
+
+!03= !DIL1oy(

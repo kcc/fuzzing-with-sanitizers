@@ -1,0 +1,6 @@
+;
+
+define double @dofloat(float %a) nounwind {
+entry:
+
+	pext fl

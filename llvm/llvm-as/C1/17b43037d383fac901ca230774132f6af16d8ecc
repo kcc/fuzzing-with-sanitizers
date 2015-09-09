@@ -1,0 +1,3 @@
+  ;  
+
+define x86_fp80 @test2() nounwin! 6 j{ 
