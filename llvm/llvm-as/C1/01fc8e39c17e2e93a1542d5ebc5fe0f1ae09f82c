@@ -1,0 +1,5 @@
+; y  !39   ;S 
+
+
+declare <4 x float> @llvm.mips.clei.u.7(
+)!

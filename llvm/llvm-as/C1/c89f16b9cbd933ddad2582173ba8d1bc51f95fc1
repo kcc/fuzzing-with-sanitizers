@@ -1,0 +1,6 @@
+  ;
+detclare <1 x float> @llvm.mips.st.w()
+;
+  
+;$$I=
+,0

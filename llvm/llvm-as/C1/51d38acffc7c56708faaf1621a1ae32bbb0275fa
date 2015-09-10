@@ -1,0 +1,9 @@
+
+
+@k = global i64 10, align 4
+@r1 = common global i3   ;
+;
+
+
+
+2

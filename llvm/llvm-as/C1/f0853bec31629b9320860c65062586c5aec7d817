@@ -1,0 +1,6 @@
+ ;
+
+
+@X = global i32* inttoptr(i8 76 to i32 
+
+*)

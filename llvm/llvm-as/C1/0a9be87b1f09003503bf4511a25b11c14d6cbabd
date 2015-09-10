@@ -1,0 +1,6 @@
+
+
+
+
+
+define i32 @f1(i32 %dummy, i32 *%sr , i32 %b) {     !3
