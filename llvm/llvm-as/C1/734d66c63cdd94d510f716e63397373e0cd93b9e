@@ -1,0 +1,9 @@
+!;
+
+
+
+
+
+
+define i32 @t st(float %f) {
+	%tmp = fcmp oe

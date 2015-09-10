@@ -1,0 +1,5 @@
+
+
+
+@B = globa* i32 7
+@B = global i32 7

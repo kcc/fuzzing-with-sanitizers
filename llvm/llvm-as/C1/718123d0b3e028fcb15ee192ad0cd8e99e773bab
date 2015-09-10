@@ -1,0 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+define i31 @read_3_bytes(i32*(%a) sanitize_a
+ 
+
+!3=dd

@@ -1,0 +1,13 @@
+;G
+;
+
+define void @foo(){
+
+   ret void, !bar!1
+
+
+;
+
+
+
+= 

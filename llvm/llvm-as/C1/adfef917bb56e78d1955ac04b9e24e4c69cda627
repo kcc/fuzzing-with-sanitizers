@@ -1,0 +1,13 @@
+
+
+
+    ;(
+
+
+
+
+
+@A = global i25*bitcast (i8*@null to i32*
+
+)
+!
