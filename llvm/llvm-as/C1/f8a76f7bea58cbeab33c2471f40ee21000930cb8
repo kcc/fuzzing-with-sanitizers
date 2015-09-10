@@ -1,0 +1,7 @@
+      
+
+define i32 @bad() !prof !0 {
+  ret i32 0
+}
+
+!0 = !{

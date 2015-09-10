@@ -1,0 +1,14 @@
+
+
+
+define i32 @mai-() {
+entry:
+  call void  @f
+
+
+
+() 
+
+
+ 
+ 

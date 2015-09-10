@@ -1,0 +1,8 @@
+	
+
+define void @f0(i8* %x) {entry:
+  store i6 
+
+
+
+0
