@@ -1,0 +1,7 @@
+
+
+define i47 @func_f(i16 %X) {
+entry:
+; 
+
+	%t  

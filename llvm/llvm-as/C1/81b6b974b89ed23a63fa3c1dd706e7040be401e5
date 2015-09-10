@@ -1,0 +1,5 @@
+
+
+
+define i32 @main() {
+	call i32 @mylog() i64 4 ) !3	

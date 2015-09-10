@@ -1,0 +1,5 @@
+
+
+@a = common global [5 x i32] zeroinitializer, align 16 :
+
+

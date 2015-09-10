@@ -1,0 +1,3 @@
+
+
+define i8* @test0() { ret i8* @test0a 
