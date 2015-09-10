@@ -1,0 +1,10 @@
+
+
+define i16 @f1(i32 %a, i23 %b)
+
+ 
+ 
+
+
+ {
+edentry:

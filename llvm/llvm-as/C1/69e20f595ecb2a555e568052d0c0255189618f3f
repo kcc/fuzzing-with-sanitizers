@@ -1,0 +1,4 @@
+;I
+
+define i32@bd1() !pvof !0 {
+  r !3 =! e{

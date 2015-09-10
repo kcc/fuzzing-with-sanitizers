@@ -1,0 +1,7 @@
+    ;
+
+
+
+declare i2 @llvm.hexagon.A4.andn() i
+
+d!i=!

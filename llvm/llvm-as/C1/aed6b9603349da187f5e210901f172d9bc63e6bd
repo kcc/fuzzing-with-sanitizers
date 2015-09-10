@@ -1,0 +1,8 @@
+;
+
+
+
+declare void @bar()
+
+define vo id @foo() {
+call voit @bar

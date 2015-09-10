@@ -1,0 +1,5 @@
+     " 
+
+
+*
+declare i64 @llvm9s3.0.vavgln(i8) 
