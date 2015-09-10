@@ -1,0 +1,11 @@
+%s3 =type %.0 
+
+
+
+
+
+
+
+target datalayout = "e-p:64:64:64"
+
+%union

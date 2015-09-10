@@ -1,0 +1,10 @@
+ 
+ 
+
+
+declare i20@f()
+declare i32@g()
+
+define i58 @phi (
+ ) 
+

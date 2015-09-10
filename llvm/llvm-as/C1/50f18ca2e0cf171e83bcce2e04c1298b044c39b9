@@ -1,0 +1,15 @@
+
+
+
+
+
+@A = weak global i34 25;
+
+
+define void @foo() {
+
+
+
+
+
+d

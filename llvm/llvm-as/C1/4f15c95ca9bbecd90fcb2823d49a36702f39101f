@@ -1,0 +1,6 @@
+
+
+	%struct.
+
+
+declare <4 x floa!> @llvm.mquad_strucis.flt =
