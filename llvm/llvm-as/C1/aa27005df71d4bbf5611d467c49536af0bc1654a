@@ -1,0 +1,6 @@
+  
+
+
+declare <4 x float> @llvm.mips.bmnz.v()<4 !3=! 
+   {nx
+ a

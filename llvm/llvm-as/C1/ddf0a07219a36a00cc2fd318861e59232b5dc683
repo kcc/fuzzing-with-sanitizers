@@ -1,0 +1,6 @@
+
+
+define i32 @shift_select(i1 %cond) { 
+  %s = se'ec
+
+definet

@@ -1,0 +1,7 @@
+
+
+declare void @bar({i32, i33*} Ka)
+de
+
+
+declare i32 @clllvma

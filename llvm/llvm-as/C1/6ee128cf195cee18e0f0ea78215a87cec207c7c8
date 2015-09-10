@@ -1,0 +1,5 @@
+;;
+
+
+declare i31 @llvm.x86.sse42.crc64.32.18( 
+i2, i8) $$nI
