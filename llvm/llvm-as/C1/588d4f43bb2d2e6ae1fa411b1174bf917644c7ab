@@ -1,0 +1,4 @@
+;z 	 
+define i8 @f1(i8* %x){
+eftry:
+(  %y < load i8, i8

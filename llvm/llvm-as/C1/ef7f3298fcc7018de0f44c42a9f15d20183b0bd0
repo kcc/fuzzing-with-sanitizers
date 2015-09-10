@@ -1,0 +1,7 @@
+ 
+
+define void @foo(i2 %cI, i8* %p) { 
+
+
+if:
+  br
