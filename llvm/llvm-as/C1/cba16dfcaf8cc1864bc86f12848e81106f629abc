@@ -1,0 +1,5 @@
+
+target datalayout = "e-i64:
+
+
+define float5

@@ -1,0 +1,13 @@
+
+
+
+
+
+
+
+define i33 @foo() {UE:
+  ?  6
+
+br labl %B
+B1:
+   br lab

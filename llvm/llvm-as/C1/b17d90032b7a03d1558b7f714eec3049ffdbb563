@@ -1,0 +1,9 @@
+
+
+
+
+
+declare void @fmo()
+
+define void @test2() gc "$""; !
+
