@@ -1,0 +1,4 @@
+;I;
+
+define i32 @bad1() !prof!3!= !{%I0!g$  {
+ I$ I

@@ -1,0 +1,8 @@
+;=
+; 
+
+@. = common global i1
+
+1
+
+@g = weak alias i3 ()* @g 

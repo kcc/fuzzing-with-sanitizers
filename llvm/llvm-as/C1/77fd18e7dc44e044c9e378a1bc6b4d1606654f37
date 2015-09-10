@@ -1,0 +1,6 @@
+
+define i32 @foo(i32 %x)  {
+        r  et i32 %x
+}
+
+define i33

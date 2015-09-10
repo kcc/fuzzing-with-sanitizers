@@ -1,0 +1,17 @@
+
+
+
+
+
+
+;
+
+
+
+'(
+ 
+
+
+de
+c
+lare i32 @llvm.hexagon.A3.vcmpw$g3( )i32
