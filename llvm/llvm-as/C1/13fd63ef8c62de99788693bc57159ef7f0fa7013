@@ -1,0 +1,5 @@
+  
+
+define void @f(i16 %y) {  
+ ret void
+}

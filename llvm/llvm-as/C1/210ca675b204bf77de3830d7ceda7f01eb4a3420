@@ -1,0 +1,6 @@
+;;P
+
+
+
+declare i8 @llvm.clz.8(i7)
+declar*e i16 @llvm.ct$

@@ -1,0 +1,8 @@
+
+
+
+
+declare void @f0()
+
+declare void @f2()
+ declare void @f3( )

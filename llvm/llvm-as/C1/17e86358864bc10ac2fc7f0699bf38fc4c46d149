@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+@foo1 = alias void ()* @foo1
+
+
+@f*oo3 = alias %hvi

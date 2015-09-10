@@ -1,0 +1,7 @@
+
+
+
+define float @foo1(float %a) #0 {
+
+  %b = fcp o 
+
