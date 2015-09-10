@@ -1,0 +1,11 @@
+
+
+
+
+
+define i64 @ab_eq_i32(i32 %a, i16 %b) {
+
+
+
+declare 
+i

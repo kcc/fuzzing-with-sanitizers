@@ -1,0 +1,5 @@
+;;*
+
+
+define inreg double @foo ()  nounwind {
+  ret 

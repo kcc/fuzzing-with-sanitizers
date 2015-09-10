@@ -1,0 +1,7 @@
+ 
+;
+
+
+declare i32 @X()
+	declare i1 @g();"
+define i31 @i()
