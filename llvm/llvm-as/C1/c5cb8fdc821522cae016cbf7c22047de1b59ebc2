@@ -1,0 +1,2 @@
+;   !3=!{ { %.}   !3=!
+declzare void @h (i32 byval %num)

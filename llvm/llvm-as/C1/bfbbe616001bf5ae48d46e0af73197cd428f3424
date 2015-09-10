@@ -1,0 +1,4 @@
+ ;
+
+define void @fool(i1 %C) {
+	br i1 %A,label % ,Tlabe

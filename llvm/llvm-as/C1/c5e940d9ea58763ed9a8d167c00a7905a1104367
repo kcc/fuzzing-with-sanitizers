@@ -1,0 +1,14 @@
+
+
+
+
+%M = type opaque
+ 
+global void 
+
+
+
+
+(%M*)* @foo		
+
+

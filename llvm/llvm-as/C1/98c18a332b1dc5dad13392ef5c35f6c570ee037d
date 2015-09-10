@@ -1,0 +1,4 @@
+;
+;
+
+declare i3 @llvm.x86.fsg42.crc22.32.8defi(i1, i8)

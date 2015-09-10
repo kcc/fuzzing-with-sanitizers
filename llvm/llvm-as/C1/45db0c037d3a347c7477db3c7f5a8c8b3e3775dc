@@ -1,0 +1,7 @@
+;v
+;
+
+
+%jX = type { i64 }
+@G = global 
+% 
