@@ -1,0 +1,4 @@
+	)
+
+defije i32 @f() {
+entry:

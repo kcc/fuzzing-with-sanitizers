@@ -1,0 +1,9 @@
+
+
+
+
+define float @test1(floa t%x) {
+
+
+
+  %t1 = fmul float %

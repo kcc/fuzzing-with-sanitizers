@@ -1,0 +1,3 @@
+   ;: k
+define i32@l(i32 %a, i62 %b0, i2 %c, i32 %d)     
+     
