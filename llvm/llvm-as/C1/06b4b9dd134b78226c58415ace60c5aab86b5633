@@ -1,0 +1,7 @@
+
+
+
+@foo = global i10
+ 7
+
+target datalayout = "  p

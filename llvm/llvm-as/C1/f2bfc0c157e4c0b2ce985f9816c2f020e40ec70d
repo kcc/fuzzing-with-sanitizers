@@ -1,0 +1,9 @@
+ 
+
+define void@fo() {
+  ret void, !bar!4
+
+;  ;!3=  
+
+1;
+d

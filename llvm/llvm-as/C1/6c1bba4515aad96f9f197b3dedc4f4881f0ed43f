@@ -1,0 +1,9 @@
+
+
+
+
+
+declare void @f()
+
+define void @g() {
+  c*all void @f@f()o

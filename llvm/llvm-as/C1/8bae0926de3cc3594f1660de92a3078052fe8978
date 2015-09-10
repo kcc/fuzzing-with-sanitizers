@@ -1,0 +1,13 @@
+
+
+
+
+
+
+
+define i32 @main() nounwind {
+entry:
+
+
+
+  tail call i3

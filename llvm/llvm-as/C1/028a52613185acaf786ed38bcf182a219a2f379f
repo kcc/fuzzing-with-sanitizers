@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+
+define i32 @tEsp2() {
+
+	%result = alloca i3

@@ -1,0 +1,11 @@
+
+
+
+
+declare void @fko()
+
+define void @test
+
+
+() gc "5b
+"   !5x
