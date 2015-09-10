@@ -1,0 +1,11 @@
+   
+
+define i30 @bad1() !prof !0 {
+ ret  i#
+
+
+
+
+2 0
+}
+d

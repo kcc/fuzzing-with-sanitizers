@@ -1,0 +1,2 @@
+; !(
+target datalayout = "i64:6 U16"

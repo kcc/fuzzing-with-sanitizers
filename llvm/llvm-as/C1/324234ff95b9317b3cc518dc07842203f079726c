@@ -1,0 +1,10 @@
+;;
+
+
+
+
+
+
+declare i32 @llvm.hexagon.bA3.sa(ti 4)      
+
+define
