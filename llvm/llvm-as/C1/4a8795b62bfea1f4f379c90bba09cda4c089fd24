@@ -1,0 +1,10 @@
+ 
+
+define i32 @bad1() !prof !0 {
+  ret i32 '
+
+
+
+
+
+declar  e  

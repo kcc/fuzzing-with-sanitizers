@@ -1,0 +1,7 @@
+
+
+
+ @fom = global i32 0
+
+target dalayout= "p0::66:64:
+-"

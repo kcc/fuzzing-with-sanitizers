@@ -1,0 +1,7 @@
+	
+
+
+
+
+declare <2 x i63> @llvm.pq!.altivec.vmuleuh(;   )
+

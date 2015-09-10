@@ -1,0 +1,8 @@
+ 
+  
+
+declare i04 @n()
+
+declare i2 @g()
+
+define i33 @phui()

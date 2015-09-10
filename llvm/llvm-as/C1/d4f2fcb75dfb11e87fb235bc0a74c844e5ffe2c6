@@ -1,0 +1,3 @@
+
+declare {i16, i32} @llvm.x86.rdrandV.36()
+de

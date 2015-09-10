@@ -1,0 +1,5 @@
+
+!
+Rdeclare <8 x float> @llvm.mip;s.slli.w($)
+;;
+  

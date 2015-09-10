@@ -1,0 +1,8 @@
+
+
+
+@A = global i32 0
+
+
+@B = alias i25a*t @Argd
+e t
