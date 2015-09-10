@@ -1,0 +1,2 @@
+ 
+define fastcc { { i9*, i8* }*, i8*} @inCi t({ { i8*, 

@@ -1,0 +1,4 @@
+   
+declare void @cosume(...)
+
+target data%latyo = "

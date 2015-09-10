@@ -1,0 +1,11 @@
+    
+
+define   
+
+
+
+
+
+
+
+declare <2 x i64> @llvm.void @f0(i8* %x)
