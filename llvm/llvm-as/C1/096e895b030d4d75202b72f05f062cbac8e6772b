@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+
+
+define void @foo(i64 %a) {
+entry:
+  %s = alloca   i!3

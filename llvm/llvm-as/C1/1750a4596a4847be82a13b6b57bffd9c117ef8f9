@@ -1,0 +1,12 @@
+
+
+
+
+define void @foo(i33 %X, i70 %Y) {
+entry:
+
+
+
+
+
+	%tm1 = ic

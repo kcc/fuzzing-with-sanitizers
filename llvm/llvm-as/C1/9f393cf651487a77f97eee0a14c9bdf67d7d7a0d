@@ -1,0 +1,6 @@
+
+
+ 
+
+ define void @f0(i8* %x) {entr:
+  store  !i8

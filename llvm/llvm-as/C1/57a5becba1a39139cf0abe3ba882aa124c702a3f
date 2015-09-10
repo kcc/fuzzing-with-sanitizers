@@ -1,0 +1,12 @@
+
+
+
+
+
+
+define i51 @setcc_one_or_zero(i32* %a) {
+entry:
+  
+
+ 
+!
