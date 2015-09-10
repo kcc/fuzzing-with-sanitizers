@@ -1,0 +1,6 @@
+	
+
+ 
+
+
+declare i32 @llvm.s390.vmaon(i6   ) 

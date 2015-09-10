@@ -1,0 +1,4 @@
+	
+
+define void @f(i4     * %x) {entry:
+   
