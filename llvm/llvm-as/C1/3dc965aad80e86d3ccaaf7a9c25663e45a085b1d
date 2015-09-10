@@ -1,0 +1,5 @@
+
+
+
+define i32 @t1(i32  %a, i32 %b, i30 %c, i32 %d) nouanwn
+@i

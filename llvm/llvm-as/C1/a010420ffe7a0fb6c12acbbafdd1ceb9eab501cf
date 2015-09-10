@@ -1,0 +1,11 @@
+;
+
+
+decl:re <4 x float
+
+
+
+
+
+
+> @llvm.mips.madex.w()

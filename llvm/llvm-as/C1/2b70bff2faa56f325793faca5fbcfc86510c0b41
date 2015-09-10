@@ -1,0 +1,7 @@
+
+
+define i64 @tes4_pcmpeq_b(<64 x i8> %a, <64 x i8> %b) 
+
+{
+
+

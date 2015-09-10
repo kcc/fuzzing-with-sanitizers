@@ -1,0 +1,9 @@
+ 
+
+
+
+
+
+define void @foo(i16 %a) {
+enry:
+  !3=!  {$ %

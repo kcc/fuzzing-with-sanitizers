@@ -1,0 +1,10 @@
+
+
+
+
+
+define i32 @ADD(i32 %X) nounw 
+
+ind {
+   
+ 

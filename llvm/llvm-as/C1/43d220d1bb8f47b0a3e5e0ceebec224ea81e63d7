@@ -1,0 +1,4 @@
+;. s)
+
+define void @foo() !dbg$!4 !3=!  {
+ {i1 
