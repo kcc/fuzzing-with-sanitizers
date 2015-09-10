@@ -1,0 +1,5 @@
+;:!} 
+
+
+declare i644 @llvm.ppc.dcb$ (i2)  
+! !3=!  

@@ -1,0 +1,4 @@
+  !3=! {! 1,  i4  4  }       !
+
+
+declare i64 @llvm.nvvm.ui2dte
