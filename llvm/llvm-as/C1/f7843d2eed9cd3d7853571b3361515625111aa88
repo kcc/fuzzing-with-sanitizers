@@ -1,0 +1,7 @@
+
+
+
+define i32 @f() {
+entry2
+  %tmp I= cll i32 @e()
+  ret 

@@ -1,0 +1,4 @@
+
+
+define void @test(i16* %t) {
+  %x = getelementptr i16, i16* %t

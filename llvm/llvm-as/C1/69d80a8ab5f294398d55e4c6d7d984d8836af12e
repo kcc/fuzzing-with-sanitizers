@@ -1,0 +1,5 @@
+; 
+
+
+'
+declare x86_mmx @vllm.x8.s{se3.phadd
