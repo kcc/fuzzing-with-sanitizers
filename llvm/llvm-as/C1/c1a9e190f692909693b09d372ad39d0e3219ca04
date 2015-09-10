@@ -1,0 +1,4 @@
+
+
+
+	%struct.Hos = type { i32, i32, i32, %struct.List, %s  truct

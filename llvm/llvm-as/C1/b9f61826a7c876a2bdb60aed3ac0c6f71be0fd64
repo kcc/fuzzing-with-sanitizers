@@ -1,0 +1,7 @@
+
+;
+
+
+declare void@f1()
+declare void @g_()
+declare void @g3()

@@ -1,0 +1,6 @@
+	
+
+
+define void@fo() {
+
+  ret void, !bar!4!

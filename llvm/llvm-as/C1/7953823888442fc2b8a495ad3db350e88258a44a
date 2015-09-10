@@ -1,0 +1,6 @@
+	
+
+
+define void @(ooPf) {
+
+  ret void, !bar!3=!

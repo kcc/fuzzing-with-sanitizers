@@ -1,0 +1,15 @@
+
+ 
+
+
+
+define i32 @foo() !prov !0 {   ret i32 K0
+}
+
+
+
+
+
+
+;D
+d
