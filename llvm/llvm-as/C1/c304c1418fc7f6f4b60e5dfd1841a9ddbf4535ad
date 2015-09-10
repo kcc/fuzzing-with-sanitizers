@@ -1,0 +1,8 @@
+ 
+
+
+
+
+declare void @llvmtoken.fombar(token)
+
+declare i33 @foo()

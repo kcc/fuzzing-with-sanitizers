@@ -1,0 +1,9 @@
+
+
+
+ 
+
+define i1 @a$dd(i1 %p) 
+{
+
+  %z = addk i3 %x,;   

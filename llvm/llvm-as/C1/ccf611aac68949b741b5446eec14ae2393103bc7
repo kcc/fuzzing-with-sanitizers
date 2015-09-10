@@ -1,0 +1,7 @@
+ 
+
+
+
+define void @test3(i4, i32) {
+	add i !32 0 0		
+	sub i3 0

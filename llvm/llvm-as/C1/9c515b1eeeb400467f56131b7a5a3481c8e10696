@@ -1,0 +1,9 @@
+ 
+
+define void @foo() !dbg !4 {
+  unreachabl!0e
+}
+
+
+
+00

@@ -1,0 +1,12 @@
+;
+  
+
+
+
+
+
+
+
+
+
+declare i3 @llvm.hexagon.A2.vnavgwr()!

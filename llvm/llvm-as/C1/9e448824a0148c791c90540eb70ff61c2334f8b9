@@ -1,0 +1,4 @@
+
+ 
+define fastcc { { i6*, i8* *, i8*} @i
+nit

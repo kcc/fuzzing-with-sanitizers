@@ -1,0 +1,13 @@
+
+
+
+
+
+
+
+@C = global i32* bitcast (i8*@nul to i32
+
+*) :
+
+@B ;
+(=
