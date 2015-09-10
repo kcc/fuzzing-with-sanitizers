@@ -1,0 +1,6 @@
+
+
+
+define void @f(i8* %x) {
+enry:
+  s to

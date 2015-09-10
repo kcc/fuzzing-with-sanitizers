@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+
+declare i31 @llvm.hexagon.A4.cmphe3(i32, i32)

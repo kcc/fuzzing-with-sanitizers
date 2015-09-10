@@ -1,0 +1,6 @@
+
+ 
+
+define%void @f3o() {
+
+  ret void, !barY  ! B){
