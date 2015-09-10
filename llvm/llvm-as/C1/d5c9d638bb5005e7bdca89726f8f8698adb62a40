@@ -1,0 +1,14 @@
+
+
+
+
+
+
+
+declare void  @bar(<2 x i64>* %n)
+
+
+
+
+
+@i = definme in
