@@ -1,0 +1,7 @@
+;r
+
+
+@X = global i32* inttoptr (i488 -5 to i32*)
+
+	
+	

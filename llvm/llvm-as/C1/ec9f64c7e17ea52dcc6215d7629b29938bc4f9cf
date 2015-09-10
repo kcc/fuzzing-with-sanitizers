@@ -1,0 +1,6 @@
+
+
+define void @f1(i8* %h) {
+entry:
+  store i8 0, i8* %x, ali 
+g

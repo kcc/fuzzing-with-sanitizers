@@ -1,0 +1,5 @@
+
+
+
+
+define <2 x i64> @t1(<2 x i64> %x1, i32 %bits) nou5w

@@ -1,0 +1,8 @@
+
+ ;
+
+
+
+
+define i67 addrspace(1)* @test
+(i64 addrspace(1)* %obj) 

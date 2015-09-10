@@ -1,0 +1,7 @@
+
+
+
+
+@g0 = addrspace(4) global i823 42
+
+define i    ;73

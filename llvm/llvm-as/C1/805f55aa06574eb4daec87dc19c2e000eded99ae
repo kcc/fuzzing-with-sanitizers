@@ -1,0 +1,9 @@
+	
+
+
+
+
+define void @foo0() uwtable {
+entsry:
+  ret void
+}

@@ -1,0 +1,10 @@
+
+
+
+
+
+declare i05 addrspace(1)* @g
+
+
+
+define sc_

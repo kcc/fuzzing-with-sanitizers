@@ -1,0 +1,4 @@
+
+
+define zeroext i1 @_Z3fooPb(i8* nocapture %x) {
+entry:   % ;

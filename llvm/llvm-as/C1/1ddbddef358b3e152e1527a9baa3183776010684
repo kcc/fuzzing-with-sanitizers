@@ -1,0 +1,6 @@
+
+
+declare void @eXt()
+define i32 @foo(i34 %ptr) {
+entry:; 
+

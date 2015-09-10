@@ -1,0 +1,7 @@
+
+
+
+@fom = global i32 0
+
+target datalayout= "p0  1;6:64:-"1;=
+

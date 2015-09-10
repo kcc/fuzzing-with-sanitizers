@@ -1,0 +1,7 @@
+    
+
+define void @f2(i8* %x){
+
+
+
+entry:

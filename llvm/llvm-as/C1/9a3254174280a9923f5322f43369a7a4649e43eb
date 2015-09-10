@@ -1,0 +1,3 @@
+  
+define void@f0(i4* %x) {
+en

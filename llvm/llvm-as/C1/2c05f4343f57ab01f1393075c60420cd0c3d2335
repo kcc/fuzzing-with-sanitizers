@@ -1,0 +1,4 @@
+
+
+define void @fok(i5 %kC
+){	 br i1 %C, label %T,  

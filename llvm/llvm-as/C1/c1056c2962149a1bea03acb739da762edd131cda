@@ -1,0 +1,6 @@
+
+  
+
+
+declare i622 @llvm.ppc.dcbf (i64)   
+ %3  = !3

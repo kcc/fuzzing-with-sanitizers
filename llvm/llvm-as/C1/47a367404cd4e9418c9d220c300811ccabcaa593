@@ -1,0 +1,6 @@
+
+
+
+
+define i32 @bad3() !prof !0 {
+ 

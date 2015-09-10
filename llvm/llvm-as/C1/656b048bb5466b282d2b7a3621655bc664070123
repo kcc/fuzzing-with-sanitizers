@@ -1,0 +1,10 @@
+ 
+
+ 
+
+ 
+ 
+
+define void @ar() {
+entry:
+        call void as ;

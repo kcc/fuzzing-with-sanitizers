@@ -1,0 +1,9 @@
+
+
+
+@foo = global i17 0
+
+
+target datalayout = "p:64::64:64
+
+)d"
