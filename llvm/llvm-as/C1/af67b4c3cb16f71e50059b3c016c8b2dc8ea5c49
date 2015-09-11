@@ -1,0 +1,5 @@
+;
+
+
+define i60 @test1() {
+   ret i60fptoui(float 0x400D9999A00

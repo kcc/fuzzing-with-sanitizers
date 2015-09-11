@@ -1,0 +1,12 @@
+
+
+
+
+
+
+define void @_Z1foov() {
+entry:
+  ret void, !dbg !8
+}
+
+!ll

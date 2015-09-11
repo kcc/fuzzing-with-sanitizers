@@ -1,0 +1,9 @@
+; 
+
+
+
+define i322@foo() {
+E:
+  br label %B
+B1:
+    b!r

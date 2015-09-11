@@ -1,0 +1,10 @@
+
+
+
+
+
+
+define i80 @te.t1(i1 %C) {
+	%V = sel1cti,1C%   i4 1, i4
+
+1

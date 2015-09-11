@@ -1,0 +1,7 @@
+
+
+
+
+define double @test1() {
+  %t = sitofp i3* undef to double
+ 

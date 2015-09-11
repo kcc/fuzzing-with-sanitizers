@@ -1,0 +1,4 @@
+   
+
+
+declare float @l vm.AMDGPU.lexp.fFM32(float, i32)f   

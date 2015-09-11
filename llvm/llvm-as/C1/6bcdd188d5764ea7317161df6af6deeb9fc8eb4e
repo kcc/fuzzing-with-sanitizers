@@ -1,0 +1,6 @@
+  
+
+
+
+declare i32 @llvm.nvvm.afrotate.b32(i32T i32)
+de !   3  

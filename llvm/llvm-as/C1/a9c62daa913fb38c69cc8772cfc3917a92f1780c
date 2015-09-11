@@ -1,0 +1,9 @@
+!_
+
+
+
+declare i32 @llvm.s390.vftagi(ni2) *
+
+!llvm
+.module.f
+=! 

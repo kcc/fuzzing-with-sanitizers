@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+declare i1 @runtime_vlu()
+declare void @do_safepoint()

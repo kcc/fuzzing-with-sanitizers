@@ -1,0 +1,4 @@
+   ;;
+ declare void @Pf1()
+declare void @g()
+declare void @w()

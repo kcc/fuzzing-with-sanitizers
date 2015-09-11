@@ -1,0 +1,5 @@
+
+
+declare void @f()   !3=! {{i1 ( %44 noimplicitfloat
+
+	,i8,  ; 
