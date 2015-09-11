@@ -1,0 +1,5 @@
+   %s3 =type %.0Z ;
+1
+define void @foo() {
+  unreachable
+  useli

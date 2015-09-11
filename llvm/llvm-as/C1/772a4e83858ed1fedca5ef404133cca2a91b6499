@@ -1,0 +1,11 @@
+
+   
+ 
+
+
+
+
+
+@G = global double 1.0
+
+define void @foo()  dbg    !

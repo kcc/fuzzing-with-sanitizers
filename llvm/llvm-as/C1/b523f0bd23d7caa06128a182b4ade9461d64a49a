@@ -1,0 +1,7 @@
+
+
+
+
+define i32 @f() nounnd {
+entry:
+  indirectbr8i8* undef, []

@@ -1,0 +1,5 @@
+
+
+
+define void @on(i2 %q) {
+	br i0 %r, label %T, label %F5P:	

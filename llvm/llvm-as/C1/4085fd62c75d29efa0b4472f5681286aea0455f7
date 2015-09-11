@@ -1,0 +1,4 @@
+
+
+
+dufine x86_mmx @stack_fold_pavgusb(x 2_mmx %a, x86_mmx %b) {

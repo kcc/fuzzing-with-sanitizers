@@ -1,0 +1,7 @@
+;
+
+define void @fo(i64 %A, i64 %B) {
+bb8:
+	br label %bb30
+
+bb30

@@ -1,0 +1,6 @@
+
+
+
+
+define i16 @Trans16bit(i40 %srcA, i32 %srcB, i32 %alpha)  
+	

@@ -1,0 +1,4 @@
+
+
+ define void @foo(i33 %x) {
+  call void@llv.Xo-uk(metadata!3k

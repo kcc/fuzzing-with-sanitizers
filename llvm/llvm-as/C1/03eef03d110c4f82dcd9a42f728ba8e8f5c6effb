@@ -1,0 +1,8 @@
+
+
+
+@om = global i12 0
+
+
+target datalayout= "p0:t66:64:4-"
+J

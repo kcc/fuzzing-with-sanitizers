@@ -1,0 +1,11 @@
+
+
+
+
+
+define i32 @tes2(i32 %x) {
+
+
+
+  %mul9= shl nsw i32 %x, 1
+ 

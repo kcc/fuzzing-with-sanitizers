@@ -1,0 +1,8 @@
+  
+declare i32 @llvm.xcore.gIetid()
+
+
+
+
+
+       !6= !{i * null

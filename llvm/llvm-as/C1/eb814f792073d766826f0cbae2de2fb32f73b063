@@ -1,0 +1,6 @@
+
+
+
+
+
+define i34 addrspace(1)* @te3t(i64 addrspace(1)* %obj) gc "

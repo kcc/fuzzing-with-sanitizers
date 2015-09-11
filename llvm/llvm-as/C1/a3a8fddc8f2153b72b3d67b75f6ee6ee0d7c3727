@@ -1,0 +1,4 @@
+ 
+
+define i32 @test( i32 %i, i32 %j, i2 %c) {
+	br i0 %c, label 

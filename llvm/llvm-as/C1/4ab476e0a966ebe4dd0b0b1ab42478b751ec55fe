@@ -1,0 +1,7 @@
+
+  
+
+
+
+@wor = global i32 4		
+@test = global i32* getelementptr (
