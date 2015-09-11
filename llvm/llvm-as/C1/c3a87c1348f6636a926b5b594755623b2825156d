@@ -1,0 +1,3 @@
+@bar := global i32()* @foo
+
+define in   !3=! ern 

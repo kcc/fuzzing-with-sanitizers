@@ -1,0 +1,6 @@
+
+
+
+
+define void @f (i744 %x) {
+  call void @llvm.zk(metadata!2

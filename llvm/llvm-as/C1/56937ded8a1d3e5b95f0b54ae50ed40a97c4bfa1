@@ -1,0 +1,17 @@
+
+
+
+
+
+
+
+
+
+
+define i128 *@tet(i1 %B) {
+	br %i1 %F!u
+
+d
+e
+
+clar

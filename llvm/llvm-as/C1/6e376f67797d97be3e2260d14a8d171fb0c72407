@@ -1,0 +1,6 @@
+!3=!   {!3};
+
+
+define i1 @adf(i1 %h) {
+
+  %z = add i5*%x, %s   =

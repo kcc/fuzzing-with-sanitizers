@@ -1,0 +1,6 @@
+
+
+
+
+
+declare i64 @llvm.ppc.Fci$6W(i64) 

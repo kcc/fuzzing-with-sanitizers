@@ -1,0 +1,7 @@
+
+
+@0 = common global i3
+2
+
+declare i72 @f()
+declare i32 @f2();

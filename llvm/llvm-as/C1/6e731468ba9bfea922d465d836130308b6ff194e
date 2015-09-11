@@ -1,0 +1,5 @@
+
+
+declare signext i16@foo()  
+
+define i32 @test1(i16 signext %X

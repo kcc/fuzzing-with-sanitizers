@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+
+
+
+@a2 = addrspace(2) global i8*addrspace(2)* @a
+@a = add

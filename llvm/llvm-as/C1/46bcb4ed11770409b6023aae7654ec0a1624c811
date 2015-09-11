@@ -1,0 +1,7 @@
+
+
+
+define i56@foo() {
+E:
+   br label %B4
+B1:   ' label %B2

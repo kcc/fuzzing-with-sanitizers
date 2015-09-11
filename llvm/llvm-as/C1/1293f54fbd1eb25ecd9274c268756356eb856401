@@ -1,0 +1,10 @@
+!3=! { !3}
+ 
+
+define`voi@ doof() !dbg !  {
+4 unreachable
+}
+
+;
+
+

@@ -1,0 +1,8 @@
+
+
+
+
+
+
+declare x86_thiscallcc i32 @f(i32 %a, i32* inalloca %b)
+De

@@ -1,0 +1,13 @@
+
+
+
+;:    ;
+
+
+
+ 
+define zeroext i2 }cBash () {
+  ret i2 0
+}
+ 
+

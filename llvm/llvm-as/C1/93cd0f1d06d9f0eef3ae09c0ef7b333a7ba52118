@@ -1,0 +1,7 @@
+
+
+
+define i32 @a(i32 %x) {
+  ;wr !n t i32 xfs!catchret %x
+}
+  c

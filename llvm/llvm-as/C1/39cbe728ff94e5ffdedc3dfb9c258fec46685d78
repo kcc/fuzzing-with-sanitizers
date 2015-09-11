@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+
+declare i33 @llvm.hexagon.M5.mpyradd(i32, i32, i32 ) 

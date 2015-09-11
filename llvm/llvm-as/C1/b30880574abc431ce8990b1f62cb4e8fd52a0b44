@@ -1,0 +1,5 @@
+
+
+define i32 @testAdd(i32 %X, i32 %Y) {
+	%tmp = add i32 %P, %Y
+

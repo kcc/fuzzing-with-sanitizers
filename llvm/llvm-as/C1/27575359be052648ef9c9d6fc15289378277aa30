@@ -1,0 +1,8 @@
+@bar = global i32()* @foo
+
+defi
+
+
+
+
+declare i32 llvm.ne x'

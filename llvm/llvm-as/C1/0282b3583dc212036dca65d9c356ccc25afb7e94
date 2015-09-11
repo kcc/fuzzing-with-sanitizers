@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+
+define void @oo(i32 %a) {
+enry:
+ %s = alloca i32
+  c*

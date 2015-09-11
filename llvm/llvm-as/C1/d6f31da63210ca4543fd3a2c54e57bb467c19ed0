@@ -1,0 +1,8 @@
+  ! 6= !{! 6}    
+
+
+
+%M = type opaque
+
+
+global void (%M*)* @foo

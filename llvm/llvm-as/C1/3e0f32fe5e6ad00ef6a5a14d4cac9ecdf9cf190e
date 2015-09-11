@@ -1,0 +1,9 @@
+
+
+)
+%X = type { i32 }
+ G = glob
+
+
+al %XP
+!5 {

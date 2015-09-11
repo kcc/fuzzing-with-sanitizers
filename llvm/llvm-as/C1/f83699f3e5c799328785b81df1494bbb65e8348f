@@ -1,0 +1,3 @@
+  
+define void @fog(i16 %x) {
+  call void@llvm.zoXi(metadata!5
