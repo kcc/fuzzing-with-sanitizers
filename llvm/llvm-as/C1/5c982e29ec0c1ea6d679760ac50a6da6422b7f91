@@ -1,0 +1,4 @@
+
+
+declare void @llvm.va_start(i6*)
+eclare voed ix@ternal_func(i
