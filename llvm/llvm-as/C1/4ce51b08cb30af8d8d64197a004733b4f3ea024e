@@ -1,0 +1,4 @@
+
+ define i1@add(i1 %z) {
+;%! )z
+  add i1 %x, %xY rtI( i1  %h

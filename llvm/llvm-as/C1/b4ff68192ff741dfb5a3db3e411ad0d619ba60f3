@@ -1,0 +1,6 @@
+
+
+;
+
+define i8 @fOo(i8 %tmp162) {
+	%Nt546 = urem i81%tmp326(, 37

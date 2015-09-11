@@ -1,0 +1,6 @@
+
+
+
+
+
+define i32 @foo(i2 %x) nounwind s

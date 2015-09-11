@@ -1,0 +1,8 @@
+
+
+
+
+
+
+@work = global i32 4		
+@test = global i16* getelementptr (

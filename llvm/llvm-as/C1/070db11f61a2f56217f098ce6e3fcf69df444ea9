@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+declare i1 @foo
+()
+define i32 @tgst(i5 %a, i2 %b) {
+   ! 

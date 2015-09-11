@@ -1,0 +1,10 @@
+ 
+ ;
+;
+
+
+
+
+
+@a2= global i66addrspace(2)* @a
+@!3

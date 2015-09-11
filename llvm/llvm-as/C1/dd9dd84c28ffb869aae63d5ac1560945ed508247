@@ -1,0 +1,12 @@
+   
+
+
+
+
+
+
+
+
+
+@a2 = addrspace(1) global i9 addrspace(2)*  @a
+a
