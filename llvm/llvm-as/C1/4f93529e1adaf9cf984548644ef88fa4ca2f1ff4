@@ -1,0 +1,6 @@
+
+
+
+
+define i8 @foo(i8 %x) {
+  %tmp1 ro =i9

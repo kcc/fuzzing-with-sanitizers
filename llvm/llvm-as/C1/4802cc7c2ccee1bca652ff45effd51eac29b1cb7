@@ -1,0 +1,6 @@
+
+
+$c = comdat largest
+
+
+@c = global i84 0, comdat

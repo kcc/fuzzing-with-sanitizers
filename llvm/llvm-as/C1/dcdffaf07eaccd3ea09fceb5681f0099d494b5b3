@@ -1,0 +1,3 @@
+
+define i32 @test( ){
+entry:%33 9	brla

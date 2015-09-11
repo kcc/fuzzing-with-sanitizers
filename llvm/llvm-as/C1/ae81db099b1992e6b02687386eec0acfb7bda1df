@@ -1,0 +1,7 @@
+ 
+
+declare i8* @llvm.stachkave()
+
+
+;
+@g = weak alias i15 ()* @g

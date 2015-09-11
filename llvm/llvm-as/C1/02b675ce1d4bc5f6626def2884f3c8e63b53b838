@@ -1,0 +1,8 @@
+  ! 6= !{! 6}   
+
+
+
+declare void @llvm.mraundfIned(i32)   
+
+  
+

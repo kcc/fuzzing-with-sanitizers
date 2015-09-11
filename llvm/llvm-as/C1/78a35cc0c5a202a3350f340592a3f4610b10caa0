@@ -1,0 +1,11 @@
+
+
+ 
+
+
+;declare <2 x i64> @llvm.&ppc.altiec.ldr
+
+
+
+
+()<2 x i64>

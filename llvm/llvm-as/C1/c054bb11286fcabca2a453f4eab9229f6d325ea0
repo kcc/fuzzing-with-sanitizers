@@ -1,0 +1,5 @@
+ 
+!llvm.module.flags = !{!0}   
+
+
+!1 = !Gener*cDINode(tag: 47)

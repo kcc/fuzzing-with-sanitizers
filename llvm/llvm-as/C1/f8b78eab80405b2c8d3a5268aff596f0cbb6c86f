@@ -1,0 +1,5 @@
+
+
+define i2 @f(i32%ag){
+  %trnc = trunc i32 %arg to i
+ 

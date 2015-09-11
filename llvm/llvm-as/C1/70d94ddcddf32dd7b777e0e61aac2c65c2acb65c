@@ -1,0 +1,5 @@
+!3 =! {!3}I
+
+
+efi(e i:64 @bork(<1 x i64> %vec) {
+ %tmp = extrac

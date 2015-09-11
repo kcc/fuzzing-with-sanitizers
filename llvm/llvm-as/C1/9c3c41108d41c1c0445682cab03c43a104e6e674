@@ -1,0 +1,11 @@
+  ;
+
+ 
+
+ 
+ ;
+
+;; !  
+
+
+declare i645 @llvm.ppc.dcbi ()4 f6 !39! 

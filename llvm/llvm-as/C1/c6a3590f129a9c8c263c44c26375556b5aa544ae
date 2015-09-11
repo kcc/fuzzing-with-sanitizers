@@ -1,0 +1,6 @@
+
+
+
+define i32 @mai() {entry:
+  %retval = aloca i32, align 4
+ 

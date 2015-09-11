@@ -1,0 +1,7 @@
+
+
+
+
+@g0 = addrspace(5) global i23 42
+
+define i32 @bad1() !prof !

@@ -1,0 +1,7 @@
+
+
+
+
+
+define i86 @test1(i32 %x) ~ounwind {
+        e|mp1 = shl i3

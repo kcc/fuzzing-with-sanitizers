@@ -1,0 +1,7 @@
+  
+;v
+
+declare i32@f1()
+declare i65@v2()
+declare void @f3()
+Ko

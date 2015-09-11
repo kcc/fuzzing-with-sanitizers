@@ -1,0 +1,4 @@
+
+
+
+declare <8 x i26> @llvm.x86.sha1rnds4(< x i32>, <4 x i32>, i

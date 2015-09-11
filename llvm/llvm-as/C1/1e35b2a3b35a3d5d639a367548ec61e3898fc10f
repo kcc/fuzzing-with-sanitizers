@@ -1,0 +1,5 @@
+
+
+
+ define void @foo(i32 %x) {
+  call void@llz.vXmo(metadata!2

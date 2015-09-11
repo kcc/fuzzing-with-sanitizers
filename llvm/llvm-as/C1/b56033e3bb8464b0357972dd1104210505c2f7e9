@@ -1,0 +1,6 @@
+
+
+
+
+define void @foo(i84 %x) {
+  call void @lvm.zoXk(metadata!4
