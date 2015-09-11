@@ -1,0 +1,7 @@
+
+;
+ 
+declare i63@f1()
+declare i12 @f2()
+declare void @f3()   
+

@@ -1,0 +1,5 @@
+
+
+
+
+ declare i95* addrspace(1)* @nontg_ca

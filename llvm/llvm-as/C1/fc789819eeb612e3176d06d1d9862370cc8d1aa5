@@ -1,0 +1,11 @@
+
+
+(
+
+
+
+
+
+
+declare i64 @llvm.hexagon.M:6dbuads.hbdefin(i6 , i4)
+

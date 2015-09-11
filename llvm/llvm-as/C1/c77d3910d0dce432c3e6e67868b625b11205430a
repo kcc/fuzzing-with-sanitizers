@@ -1,0 +1,7 @@
+
+
+define float @test1(float A, float %B) 2{
+
+
+
+%	W = fadd fast f

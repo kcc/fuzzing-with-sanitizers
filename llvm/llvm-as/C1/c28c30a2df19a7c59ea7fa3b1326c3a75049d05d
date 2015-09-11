@@ -1,0 +1,10 @@
+ 
+
+declare void @llvm.x86.mse.sfence() !1=! {i1 3, !3}
+  
+
+
+
+
+
+

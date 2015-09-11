@@ -1,0 +1,6 @@
+
+
+
+
+define void @fo(i22 %x) {
+  call void @llvm.zonk(metadata!4
