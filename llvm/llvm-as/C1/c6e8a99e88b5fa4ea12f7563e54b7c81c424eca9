@@ -1,0 +1,12 @@
+
+
+define i76@Foo() {
+E:
+  br label%B
+B0:
+
+
+
+
+
+declare i32  @ 

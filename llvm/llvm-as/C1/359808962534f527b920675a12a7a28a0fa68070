@@ -1,0 +1,11 @@
+ 
+
+
+module asm ".al:ign 4"
+  
+
+
+@0 =  common globali17	2
+
+ 
+ 

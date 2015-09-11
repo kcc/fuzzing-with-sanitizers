@@ -1,0 +1,11 @@
+
+
+define float @test0()
+{
+	ret float xtra*ctelement
+)
+
+
+
+
+(  *

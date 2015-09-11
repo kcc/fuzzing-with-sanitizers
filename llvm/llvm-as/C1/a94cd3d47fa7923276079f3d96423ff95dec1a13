@@ -1,0 +1,6 @@
+
+
+
+declare double @sin(double %f)
+
+define double @foo(double %e)

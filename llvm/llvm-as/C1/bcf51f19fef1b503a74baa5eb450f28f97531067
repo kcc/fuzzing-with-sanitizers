@@ -1,0 +1,9 @@
+ 
+
+
+
+
+
+
+declare i28 @llvm.hexagon.S2.asr.i.pned(i64, i16)
+

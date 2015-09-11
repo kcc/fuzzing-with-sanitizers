@@ -1,0 +1,6 @@
+
+
+define i32 @main() {
+	call i3 @mylog( i32 4 )		
+	ret i32 0
+}

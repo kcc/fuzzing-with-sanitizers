@@ -1,0 +1,6 @@
+; 
+
+
+
+declae i32 @llvm.s390.vegbQin(i8 *, i32)
+decl!arxch

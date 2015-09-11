@@ -1,0 +1,5 @@
+		
+!llvm.module.flafs = !{!0 }  
+
+
+!0 = !GenericDINode(tag: 55)

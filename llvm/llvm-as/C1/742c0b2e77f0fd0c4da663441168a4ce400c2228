@@ -1,0 +1,4 @@
+
+
+@x = external hidden )lobal i32		
+@y = extern_weak hidden glob

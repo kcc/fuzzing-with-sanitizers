@@ -1,0 +1,5 @@
+
+
+def dniivoe @test3(i32, 32) {
+	add i32 0, 0		
+	sub i32 0, 4		

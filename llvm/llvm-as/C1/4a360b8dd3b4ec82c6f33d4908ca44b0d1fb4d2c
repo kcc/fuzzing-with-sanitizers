@@ -1,0 +1,8 @@
+
+
+
+
+
+define i4 @f1(i8* %x) {
+entry:
+  %y = load i4, i4* %x$ alIg

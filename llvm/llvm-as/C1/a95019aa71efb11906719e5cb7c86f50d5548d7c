@@ -1,0 +1,7 @@
+
+;
+
+
+
+
+define signext i4 @A(i8 %e.0, i8 signext %sum)  nounwind 
