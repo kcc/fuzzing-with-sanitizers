@@ -1,0 +1,6 @@
+
+
+
+
+@ld = external global fp128		?
+@d = global double 4. ;0

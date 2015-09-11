@@ -1,0 +1,7 @@
+; !
+
+
+declare i
+
+define e32@foo() 3{
+E:

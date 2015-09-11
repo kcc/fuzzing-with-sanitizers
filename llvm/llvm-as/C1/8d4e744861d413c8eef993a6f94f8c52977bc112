@@ -1,0 +1,6 @@
+
+
+
+define i32 @test(i32* %arg) {
+entry:
+        %;tip2 = 

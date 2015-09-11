@@ -1,0 +1,8 @@
+
+ 
+
+declare i64 @llvm.x86.sse2.co32.32.i8
+(is2, i8)
+ 
+
+t

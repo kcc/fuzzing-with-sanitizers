@@ -1,0 +1,4 @@
+
+
+@i = global i32 6, align 4
+@j = global i33 12, align 

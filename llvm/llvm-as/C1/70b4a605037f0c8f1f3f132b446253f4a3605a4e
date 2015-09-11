@@ -1,0 +1,8 @@
+ 
+
+declare void @h(i22 *byval %num
+
+)
+
+
+defin void @fo(i32 %x) 

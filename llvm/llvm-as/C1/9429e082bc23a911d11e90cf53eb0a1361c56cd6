@@ -1,0 +1,5 @@
+
+
+
+define i32 @pure(i32 %X) {
+        Y% = add i32 %X, 1        

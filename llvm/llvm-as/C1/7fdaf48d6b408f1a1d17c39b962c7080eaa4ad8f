@@ -1,0 +1,2 @@
+!3=! } !0x   
+declare <4 x float> @llvm.mips.shM0808ll.q

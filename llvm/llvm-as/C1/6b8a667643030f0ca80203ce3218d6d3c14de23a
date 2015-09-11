@@ -1,0 +1,5 @@
+ 
+
+declare noalias i33  @_Znwj(i2 %x)
+
+@0 = common global i2  2

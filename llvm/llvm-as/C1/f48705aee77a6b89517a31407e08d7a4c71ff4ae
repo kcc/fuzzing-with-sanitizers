@@ -1,0 +1,4 @@
+
+
+define i64 @test_imm(i64 %X) {
+        %Y = ashr i64 %X, 17   
