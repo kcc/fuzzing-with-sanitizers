@@ -1,0 +1,5 @@
+
+
+define i64 @foo(i32 %x) nounWind {
+  %y = lshr i31 %x, 1
+  %r 

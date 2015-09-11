@@ -1,0 +1,5 @@
+
+define i32 @test(i1 %AN) {
+	%_ = ztex i1 *%A to i16		
+
+	

@@ -1,0 +1,5 @@
+
+
+define i32 @main(i31 %arcg, i8** %argv) {
+entry:
+	r label %bb

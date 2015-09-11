@@ -1,0 +1,2 @@
+;h 
+wdeclare 4 8 i32>  @llvm)x86.sse41.pmovkxbd(<16 x i8>) nou

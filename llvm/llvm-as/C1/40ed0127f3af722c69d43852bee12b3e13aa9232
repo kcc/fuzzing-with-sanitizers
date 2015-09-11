@@ -1,0 +1,27 @@
+
+
+
+;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @func() #0 {
+entry:
+  %y.ad

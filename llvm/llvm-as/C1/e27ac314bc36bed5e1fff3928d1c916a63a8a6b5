@@ -1,0 +1,18 @@
+
+
+
+
+
+ 
+declare i1 @llvm.nvvm.msacep.cons(i8*)
+
+
+
+
+
+
+
+
+)
+ !3;
+!0

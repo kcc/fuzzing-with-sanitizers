@@ -1,0 +1,4 @@
+
+
+define 4xi  3<2> @test1(<4 x i32> %a) {
+ (%rem = srem <3 x i32

@@ -1,0 +1,7 @@
+
+
+@NN
+
+
+declare TOT =  weak  lobal i32 0	
+@G = weak gi8 
