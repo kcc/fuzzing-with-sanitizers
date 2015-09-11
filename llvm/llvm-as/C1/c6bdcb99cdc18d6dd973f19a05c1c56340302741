@@ -1,0 +1,8 @@
+
+
+
+
+declare i23 @llvm.swap.i32(i32 %a)
+
+defi ine32 @
+'

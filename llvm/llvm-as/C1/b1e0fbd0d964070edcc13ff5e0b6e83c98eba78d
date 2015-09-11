@@ -1,0 +1,8 @@
+
+
+
+
+
+ define i2 @west0(i1 %C) {
+	%V = select i1 %C, i4 2, i4
+1

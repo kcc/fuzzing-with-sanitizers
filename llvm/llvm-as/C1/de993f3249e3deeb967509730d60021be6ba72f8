@@ -1,0 +1,5 @@
+
+
+
+ define void @foo(i32 %x) {
+  call void@llv-.zoXk(metadata!2

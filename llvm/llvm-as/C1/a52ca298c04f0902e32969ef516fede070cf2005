@@ -1,0 +1,10 @@
+ 
+
+@1 = common global i3
+2
+
+  globa i32 3
+
+
+
+@foo= global i16 0

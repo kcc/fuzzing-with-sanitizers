@@ -1,0 +1,10 @@
+
+
+
+
+define i32 @fPoo() {
+E:
+   br label %B
+B1:
+ " br label %B2
+B

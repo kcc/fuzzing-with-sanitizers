@@ -1,0 +1,7 @@
+
+
+
+
+define void @foo(i74 %x) {
+  call 
+void @llvm.zXNk(metadat!1

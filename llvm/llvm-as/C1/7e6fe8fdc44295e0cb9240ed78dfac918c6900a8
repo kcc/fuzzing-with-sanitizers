@@ -1,0 +1,4 @@
+;
+
+declare i31 @llvm.x86.avx512.rtokestz.(i32 
+;i16) no

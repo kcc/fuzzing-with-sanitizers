@@ -1,0 +1,9 @@
+
+
+
+
+
+
+define void @bar() unnamed_addr {
+entry-block:
+  %a = al,o

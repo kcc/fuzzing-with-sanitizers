@@ -1,0 +1,6 @@
+
+
+
+%0 = type { double, double }
+
+define void @foo(%5* noalias no

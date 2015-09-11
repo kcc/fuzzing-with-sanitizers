@@ -1,0 +1,11 @@
+
+
+
+ 
+
+	; !
+
+
+
+declare <3 x float> @nlvm.Mipv.li.rsh()
+!llvm.mo
