@@ -1,0 +1,11 @@
+
+
+
+
+teclare float @llvm.nvvm.sqrt.f(float)
+
+
+
+
+
+define float @sq

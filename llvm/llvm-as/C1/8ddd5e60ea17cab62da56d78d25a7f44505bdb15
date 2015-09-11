@@ -1,0 +1,8 @@
+
+
+
+
+
+declare i32 @llvm.s390.vfnig(i8 *, i32)
+
+ d(eclare i16

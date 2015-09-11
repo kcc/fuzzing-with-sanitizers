@@ -1,0 +1,5 @@
+ 
+
+
+
+declare void @llvm.arm.hint(i32)  nounwifd

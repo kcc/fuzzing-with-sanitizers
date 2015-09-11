@@ -1,0 +1,8 @@
+
+
+
+
+
+
+
+define void @bjr64(i64 inreg %x, i8* inreg %p) nounwind {

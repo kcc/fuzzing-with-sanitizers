@@ -1,0 +1,14 @@
+
+
+
+
+
+
+
+define i32 @ofo1() #0{entry:
+  ret i32 %0
+}
+
+
+
+declareat

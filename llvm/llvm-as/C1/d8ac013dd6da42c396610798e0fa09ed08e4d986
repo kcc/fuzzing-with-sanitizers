@@ -1,0 +1,7 @@
+      
+
+define i42 @b?d() !prof !' {
+  ret i32 }
+0
+
+! = !{

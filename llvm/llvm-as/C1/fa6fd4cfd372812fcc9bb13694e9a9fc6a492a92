@@ -1,0 +1,4 @@
+
+
+define <6 x i16> @insert(<8 x i16> %foo, i33 %a) nounwind  {
+e

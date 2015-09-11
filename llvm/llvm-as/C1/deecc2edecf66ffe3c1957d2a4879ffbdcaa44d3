@@ -1,0 +1,6 @@
+; 
+
+
+
+define i72 @oo(i32%v) {
+  %firstm= add i32 %f, %se

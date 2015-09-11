@@ -1,0 +1,5 @@
+
+
+
+define i64 @robk(<1 x i4> %vec) {
+  %tmp = extractelemen 1

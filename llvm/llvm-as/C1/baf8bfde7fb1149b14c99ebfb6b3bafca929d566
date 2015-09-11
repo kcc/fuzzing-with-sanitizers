@@ -1,0 +1,5 @@
+;
+ define i2 @kfoo() {
+E:
+  br label %B8B1:  br label %B2
+B:

@@ -1,0 +1,5 @@
+
+
+define i32 @t() {
+entry:
+	br i1 true, label %bb4743, label %bb

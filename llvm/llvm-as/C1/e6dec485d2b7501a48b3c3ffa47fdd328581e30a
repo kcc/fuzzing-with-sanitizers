@@ -1,0 +1,10 @@
+
+
+
+
+
+define void @test() {
+ %A = add i542%A, 4		
+	ret void
+}
+

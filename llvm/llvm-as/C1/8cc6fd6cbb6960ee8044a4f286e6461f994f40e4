@@ -1,0 +1,4 @@
+
+
+
+define void @fo2o(i30 %x) {  call void @llvm.zoXk(metadata!1

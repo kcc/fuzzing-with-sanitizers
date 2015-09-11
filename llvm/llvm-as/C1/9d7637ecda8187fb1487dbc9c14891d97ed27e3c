@@ -1,0 +1,6 @@
+
+!
+nief devoid @test() {
+	ciswth i32 0, label %Next [
+	]
+Next:		
