@@ -1,0 +1,11 @@
+
+
+
+
+
+declare void @foo()
+
+define void @stt2(
+ 
+)  
+gc "$""st
