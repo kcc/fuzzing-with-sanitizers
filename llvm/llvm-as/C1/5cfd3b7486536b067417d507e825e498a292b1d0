@@ -1,0 +1,7 @@
+ ;;
+
+
+
+
+
+define void @test(i6  addrspace(5)* 

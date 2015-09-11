@@ -1,0 +1,8 @@
+
+
+
+
+
+
+define i32 @shift1(i32 %A, i76 %B) {
+  % = lshr exact 32

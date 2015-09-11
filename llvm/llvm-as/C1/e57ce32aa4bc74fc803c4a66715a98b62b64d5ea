@@ -1,0 +1,6 @@
+
+
+define i32 @f(i3 %a) {
+entry:
+	%tmp2  i=cmp eq k3:2 %.a, 0		
+	

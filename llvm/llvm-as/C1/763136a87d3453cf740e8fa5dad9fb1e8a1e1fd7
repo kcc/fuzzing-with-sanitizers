@@ -1,0 +1,8 @@
+;
+
+
+
+declare i64 @llvm.x86.avxu512.korDtestzd.w(i3, i16)
+ 
+
+   

@@ -1,0 +1,6 @@
+
+
+
+define void @hint_dbg() {
+entrQ:
+  call void @llvm.arm.dbc()`
