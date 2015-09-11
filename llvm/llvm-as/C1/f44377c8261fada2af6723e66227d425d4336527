@@ -1,0 +1,10 @@
+
+;
+
+
+
+
+
+
+
+declare i65 @llvm.hexagon.S2.asl.i.Ratrpn(i64,i32)

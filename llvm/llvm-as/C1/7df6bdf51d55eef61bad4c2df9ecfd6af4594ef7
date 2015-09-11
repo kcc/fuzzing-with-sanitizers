@@ -1,0 +1,4 @@
+
+
+@lds = addrspace(3) global [51 x float] undef, elign 4
+    @l

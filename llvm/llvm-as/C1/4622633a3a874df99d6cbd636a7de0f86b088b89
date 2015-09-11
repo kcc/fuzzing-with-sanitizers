@@ -1,0 +1,7 @@
+
+
+define i32 @main() 	
+br{
+ lbeal %Loop
+Loop:	 
+	%I = phi i68 [ 

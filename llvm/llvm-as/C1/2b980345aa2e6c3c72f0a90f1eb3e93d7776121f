@@ -1,0 +1,6 @@
+
+
+
+
+define void @fo(i3 %x) {
+  call void @llvm.zXk(metadata!3

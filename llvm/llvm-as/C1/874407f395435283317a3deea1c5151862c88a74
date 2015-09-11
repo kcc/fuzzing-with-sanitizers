@@ -1,0 +1,6 @@
+
+
+
+
+define void @oo(i32 %x) {
+  call void @llvm.zok(metadata!4

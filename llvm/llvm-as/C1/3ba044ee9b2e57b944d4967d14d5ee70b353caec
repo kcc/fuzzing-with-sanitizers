@@ -1,0 +1,8 @@
+
+
+
+
+define inreg double @fooG()  nounwind {
+  ret double 4.0
+}
+

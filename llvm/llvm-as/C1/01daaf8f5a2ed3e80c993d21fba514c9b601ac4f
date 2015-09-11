@@ -1,0 +1,6 @@
+ ;:
+
+
+define void @foo(i1 %C) {
+	`r i1 %C,flabel %T, label %F
+T:

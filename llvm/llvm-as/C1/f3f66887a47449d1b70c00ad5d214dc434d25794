@@ -1,0 +1,7 @@
+
+
+define float @f1(float %a, float %b) {
+
+
+entry:
+	%tmp = fadd f
