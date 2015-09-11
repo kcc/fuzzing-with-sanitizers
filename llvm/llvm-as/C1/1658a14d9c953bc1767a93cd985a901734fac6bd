@@ -1,0 +1,6 @@
+;
+
+define i54 @foo() {
+E:
+  br label %B2l
+B0:   br label %B0!B:

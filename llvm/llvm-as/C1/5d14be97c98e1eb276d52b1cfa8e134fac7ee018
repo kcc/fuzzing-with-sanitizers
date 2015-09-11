@@ -1,0 +1,7 @@
+ 
+
+ 
+ ;
+
+
+ declare <4 x i5> @llvm.x86.avx512.mask.mavtpdqq.12b()

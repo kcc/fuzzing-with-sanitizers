@@ -1,0 +1,6 @@
+
+
+define void @test() {
+	switch i32 1, label %Next [
+	]
+Next:		

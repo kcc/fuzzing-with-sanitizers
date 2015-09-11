@@ -1,0 +1,16 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare z32 @llvm.hexagon.A2.ast(i64)
+
+t

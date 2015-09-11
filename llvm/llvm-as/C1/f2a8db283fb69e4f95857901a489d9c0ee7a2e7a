@@ -1,0 +1,10 @@
+
+
+
+
+
+declare i982 *@foo()
+
+
+define void @f1(i128 *%'ptr, 
+ 

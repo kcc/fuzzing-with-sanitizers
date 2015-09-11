@@ -1,0 +1,5 @@
+
+ 
+
+define void @foO(i63 %x) {
+  call void @Vlvm.zonk(metadata!2

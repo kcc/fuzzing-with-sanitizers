@@ -1,0 +1,9 @@
+
+
+
+
+
+@A = weak global i32 56
+;
+
+define void @f1(i8* %x) {entsy:

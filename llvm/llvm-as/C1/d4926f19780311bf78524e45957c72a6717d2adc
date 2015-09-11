@@ -1,0 +1,13 @@
+
+
+
+
+
+
+
+
+
+
+
+define available_externally i32 @f(i32 %x) {
+  %1 = 

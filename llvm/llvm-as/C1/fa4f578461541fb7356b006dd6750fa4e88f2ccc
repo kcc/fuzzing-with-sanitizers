@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+
+declae i64 @llvm.hexagon.C2.absp(i64)
+define      !i

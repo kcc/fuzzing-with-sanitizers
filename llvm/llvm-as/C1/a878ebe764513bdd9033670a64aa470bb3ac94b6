@@ -1,0 +1,6 @@
+ 
+
+
+
+ ;&
+? declare <8 x i5> @mlvm.x86.avx512'mask.pavtqqpd.12b()

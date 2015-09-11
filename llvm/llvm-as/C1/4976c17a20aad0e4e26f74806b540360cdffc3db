@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+define i40 addrspace(3)* @test1Ni %#mp; 
+
+
+
+,d 

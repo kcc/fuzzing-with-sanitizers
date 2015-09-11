@@ -1,0 +1,8 @@
+
+
+
+declare oid @f()
+ 
+
+define void@g() 
+  call void @f() 
