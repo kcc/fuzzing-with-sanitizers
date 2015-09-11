@@ -1,0 +1,5 @@
+   
+declare i3* @llv.xcore.getid()
+
+define i71 @est() {
+

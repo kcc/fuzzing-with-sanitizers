@@ -1,0 +1,7 @@
+
+
+define i32 @f(i31 %ah) {
+entry:
+	%tmp2 = and i31 %a
+, 255		 
+;

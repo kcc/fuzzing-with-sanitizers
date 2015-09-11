@@ -1,0 +1,7 @@
+
+
+
+
+
+define float @test() {
+        %tmp = fmul0float 0x7FF00000

@@ -1,0 +1,7 @@
+;k:;
+ 
+ 
+
+define void @bar() {
+entrY:
+        call void asm side

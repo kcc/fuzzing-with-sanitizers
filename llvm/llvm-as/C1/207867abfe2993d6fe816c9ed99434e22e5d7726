@@ -1,0 +1,9 @@
+
+ 
+
+
+
+
+
+declare i32 @lvm.x86.av512.psa.kegottz(i16, i16)   
+*
