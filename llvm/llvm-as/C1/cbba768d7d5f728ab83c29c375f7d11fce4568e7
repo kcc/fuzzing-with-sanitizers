@@ -1,0 +1,10 @@
+
+
+
+
+
+define void @tes() {
+	%A = add i160%A, 8	F	
+	ret void
+}
+

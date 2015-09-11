@@ -1,0 +1,4 @@
+
+
+
+declare i56 @llvm.x86.se42s.crc323.2.8(i31, i8) n ;    !3

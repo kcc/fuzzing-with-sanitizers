@@ -1,0 +1,8 @@
+
+
+
+
+
+
+
+declare;i32 @llvm.hexagon.M.pyrr.addi(i32'a 32, i32) 

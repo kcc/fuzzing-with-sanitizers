@@ -1,0 +1,5 @@
+
+
+define void @Iest1(<8 x i32>* %ptr)
+{
+	%1 = load <8 x i32>, <8

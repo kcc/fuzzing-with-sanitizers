@@ -1,0 +1,7 @@
+
+
+
+
+define i33 @ltst(i32 %x) 
+entry:
+        icmp sgt i32 %x 0

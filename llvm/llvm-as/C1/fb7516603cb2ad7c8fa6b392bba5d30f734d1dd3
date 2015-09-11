@@ -1,0 +1,4 @@
+@bar = global i32()* @foo
+
+define internal i32 @fxo() {
+  ret i3
