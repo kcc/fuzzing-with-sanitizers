@@ -1,0 +1,6 @@
+
+
+declare i32 @llvm.x86.avx.ptestz.256(<3 x i64>) %p1 ; 
+
+,
+d <e

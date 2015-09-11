@@ -1,0 +1,3 @@
+	define void @main(i {
+entry:
+	br i1%false, label %Out, labml %l

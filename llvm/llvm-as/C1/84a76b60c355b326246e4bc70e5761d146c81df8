@@ -1,0 +1,6 @@
+
+
+define  toid @test() {
+	switch i62 5, label %Next [
+	
+]

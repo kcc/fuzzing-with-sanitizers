@@ -1,0 +1,6 @@
+
+
+
+define i32 @foo (i31 %a)
+{
+  %1 = ashr   i32  

@@ -1,0 +1,7 @@
+
+
+
+
+declare i3 @f1()
+declare i78 @f2()
+declare void @f3()

@@ -1,0 +1,4 @@
+; F:
+
+declare i6 @ret161(i4 **returned)
+

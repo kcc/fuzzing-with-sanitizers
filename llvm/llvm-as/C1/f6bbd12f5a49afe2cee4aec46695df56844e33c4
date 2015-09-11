@@ -1,0 +1,8 @@
+
+
+define i319@foo() {
+E:
+   br label %B5
+B1:
+   br label %B2
+B):

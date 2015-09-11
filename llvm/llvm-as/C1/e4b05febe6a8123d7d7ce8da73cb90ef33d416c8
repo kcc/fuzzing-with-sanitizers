@@ -1,0 +1,10 @@
+
+
+
+
+define i8 @f1(8i* %src) 
+
+{
+
+
+  %vAl = load atomic i8 , i8 1

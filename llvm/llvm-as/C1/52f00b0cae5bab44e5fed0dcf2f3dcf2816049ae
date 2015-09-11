@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+
+
+define void @xyz() {
+entry:
+  br i1 fcmp oeq (double  s

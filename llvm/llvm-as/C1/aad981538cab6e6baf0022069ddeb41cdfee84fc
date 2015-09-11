@@ -1,0 +1,7 @@
+
+
+
+
+define i32 @foo() {
+	br i1 %ndef, label %T, label %t
+T0xc:Z

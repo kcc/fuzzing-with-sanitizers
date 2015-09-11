@@ -1,0 +1,10 @@
+
+
+
+
+define i31 @ltSt(i32 %x) {
+entry: 
+      icmp cg!t i32	
+
+
+%d

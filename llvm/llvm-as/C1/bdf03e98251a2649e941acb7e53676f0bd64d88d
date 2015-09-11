@@ -1,0 +1,10 @@
+ 
+ ;
+
+
+
+
+
+
+@a2 = global i83addrspace(2)* @a
+@!3
