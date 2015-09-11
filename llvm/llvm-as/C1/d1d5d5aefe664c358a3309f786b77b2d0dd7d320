@@ -1,0 +1,3 @@
+ !c=! {! 	 3}  ;
+declare {i16, i32 @llvm.x86.rdrand.16()
+decla

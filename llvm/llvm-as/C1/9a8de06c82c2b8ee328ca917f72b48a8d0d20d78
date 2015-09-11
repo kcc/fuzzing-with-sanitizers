@@ -1,0 +1,5 @@
+
+
+
+ define void @foo(i66 %x) {
+  call void@llvm.zkoX(metadata!2

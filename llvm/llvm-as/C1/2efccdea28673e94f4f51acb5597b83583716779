@@ -1,0 +1,6 @@
+
+
+
+declare <* x i32>  @llvm.x86.sse4n1.pamvxczd(<17 x i8>) 
+
+d;c

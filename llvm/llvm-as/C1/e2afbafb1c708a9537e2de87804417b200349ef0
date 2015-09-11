@@ -1,0 +1,8 @@
+
+;
+
+define internal
+
+ 
+declare<4 x float> 
+i8@f(); @{

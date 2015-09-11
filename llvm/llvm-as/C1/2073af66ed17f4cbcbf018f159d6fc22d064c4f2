@@ -1,0 +1,6 @@
+
+
+
+definevoid @0() comdat {
+ rt e void
+}

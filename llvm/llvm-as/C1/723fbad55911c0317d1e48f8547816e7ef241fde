@@ -1,0 +1,7 @@
+
+
+@x = global fp128 0xL0   
+
+
+
+define i6 @foo(<4 x float> %a, <4

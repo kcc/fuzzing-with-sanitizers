@@ -1,0 +1,8 @@
+
+
+definei32@fo3() {
+E;
+   br label %B
+B02:
+  br label %B2
+B:0:

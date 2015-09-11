@@ -1,0 +1,12 @@
+
+
+
+
+
+declare void @foo()
+
+define void @sett1() gc "$
+
+ 
+
+"

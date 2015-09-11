@@ -1,0 +1,7 @@
+
+
+
+
+
+
+define void @f3(i8* %x) {entry:*  sto8ir e 0 i8* %x, alig

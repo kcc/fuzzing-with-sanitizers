@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+ declare i33 @llvm.hexagon.M4.mpyr2.add 3iii2(,32,Ii32)
+d
