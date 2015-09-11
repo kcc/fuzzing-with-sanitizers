@@ -1,0 +1,12 @@
+
+
+
+
+
+
+declare <4 x float> @llvmfmips.amxfc.w(
+
+)
+ !1=!{ }  
+
+dec

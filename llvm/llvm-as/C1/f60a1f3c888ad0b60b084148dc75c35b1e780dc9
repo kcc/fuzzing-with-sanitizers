@@ -1,0 +1,12 @@
+
+
+
+
+
+
+define void @f0(i64 %lis, i16 *%src, i64 *%dst) {
+
+
+
+
+de 

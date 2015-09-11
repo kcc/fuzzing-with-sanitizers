@@ -1,0 +1,8 @@
+
+; 
+
+
+ 
+
+
+declare i0 @llvm.nvvm.`2fr0(3, i32;)a

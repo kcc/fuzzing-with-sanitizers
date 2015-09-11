@@ -1,0 +1,8 @@
+
+
+
+
+define i8 @nilpote.t(i8 %x) {
+
+  %tmp = xor i8 %x, %x
+  ret 

@@ -1,0 +1,9 @@
+
+
+
+define void @test() {
+	unreachable
+}
+
+
+@0 =  common global a6

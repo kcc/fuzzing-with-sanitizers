@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+define i1 @test_and1(i32 %x, i33 %n) {
+  %nn = and i32 %

@@ -1,0 +1,5 @@
+
+
+
+define i8 @test(i8* %A, i8* %B, i16 %L, i32 %Q, i32 %N.s) {
+e

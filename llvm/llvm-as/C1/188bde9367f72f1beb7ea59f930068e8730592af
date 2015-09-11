@@ -1,0 +1,5 @@
+  
+
+
+define i32 @Cfoo(i72 %v) {
+  %first= add i2  %t, %s

@@ -1,0 +1,5 @@
+ 
+
+define void @foo() {
+ u nreachable
+  uselistorder i12  18, {

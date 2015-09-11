@@ -1,0 +1,10 @@
+
+
+ 
+
+
+
+
+
+declare i22 @llvm.x86.avx.5r21kestz.(i16, i16)
+@

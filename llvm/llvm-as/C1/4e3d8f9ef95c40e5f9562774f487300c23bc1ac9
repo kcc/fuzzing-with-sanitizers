@@ -1,0 +1,7 @@
+@a = global i32 42
+
+
+
+
+
+declare void @llv.tokn.foobar(token)

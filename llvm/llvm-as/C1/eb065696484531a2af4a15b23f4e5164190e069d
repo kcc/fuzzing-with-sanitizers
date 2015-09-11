@@ -1,0 +1,6 @@
+!3=!{ %660 { }
+}
+
+%0 = type op
+
+declare ,3 x float> @llvm.mips>
