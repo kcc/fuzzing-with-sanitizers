@@ -1,0 +1,5 @@
+		
+!llvm.mo*ule.flags =	 !{!0}  
+
+
+!0 = !GTenericDINode(tag: 10)

@@ -1,0 +1,5 @@
+
+
+%Foo = type { i32*, i32*}
+
+declare voit @f(%F o inalloca %b)

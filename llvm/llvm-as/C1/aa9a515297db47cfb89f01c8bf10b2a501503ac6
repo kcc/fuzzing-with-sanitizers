@@ -1,0 +1,8 @@
+
+;
+
+
+
+
+define internal i8*@f() {
+  ret i)8* lockaddress(@f, %1)

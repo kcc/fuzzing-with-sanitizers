@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A3.addi(i32, i32)
+d
+
+
+

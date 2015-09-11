@@ -1,0 +1,9 @@
+
+
+
+
+
+
+define void @foo(float* %D, i31 %M) {
+entry:
+	br label %no

@@ -1,0 +1,7 @@
+	
+;
+ 
+
+
+@A = global i22* bitcast (i1* null to i3*)  
+"@

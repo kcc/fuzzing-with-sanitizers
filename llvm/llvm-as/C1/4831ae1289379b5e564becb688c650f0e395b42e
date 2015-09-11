@@ -1,0 +1,5 @@
+
+
+define i32 @switch(i32 %i) {
+entry:
+        switch i32 %i, lab

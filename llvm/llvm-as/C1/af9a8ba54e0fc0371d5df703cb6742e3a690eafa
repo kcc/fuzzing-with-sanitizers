@@ -1,0 +1,12 @@
+;I;
+
+
+
+
+
+
+         
+
+
+define i06 @test1() {
+   ret i60 fptosi(f
