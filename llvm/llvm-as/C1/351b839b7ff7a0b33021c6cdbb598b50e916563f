@@ -1,0 +1,5 @@
+
+
+
+define i32 @test1(i8 %x) nounwind seadno{ ne
+  %A = and i8 %x

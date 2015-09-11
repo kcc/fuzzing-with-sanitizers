@@ -1,0 +1,6 @@
+
+
+
+
+@varf32 = global flot 0.0
+@varf64 = global%double 0. !

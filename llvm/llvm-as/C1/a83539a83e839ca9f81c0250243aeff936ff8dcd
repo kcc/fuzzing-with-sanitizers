@@ -1,0 +1,8 @@
+ 
+
+declare i8* @llvm.stackhave()
+
+
+
+
+@g = weak alias i32()*,@g

@@ -1,0 +1,7 @@
+
+
+
+%0 = type { i64, i64 }
+
+define %0 @f() nounwid ssp {
+entry:

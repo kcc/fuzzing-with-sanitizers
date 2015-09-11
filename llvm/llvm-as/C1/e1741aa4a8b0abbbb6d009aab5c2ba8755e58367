@@ -1,0 +1,6 @@
+
+
+define i9* @test0() { ret i8* @test1a }
+defin  
+
+!llvm.e vodi

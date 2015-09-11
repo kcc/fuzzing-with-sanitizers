@@ -1,0 +1,16 @@
+
+
+
+declare i4* @llvm.aarch64.rthead.pointer
+
+
+() 
+
+
+
+
+
+
+
+
+e$v = 

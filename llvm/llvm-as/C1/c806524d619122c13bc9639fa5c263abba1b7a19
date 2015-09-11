@@ -1,0 +1,7 @@
+;: 
+
+
+
+
+declare i31 @llvm.ctpop.i31(i31 %val) 
+declare i32 @llvm

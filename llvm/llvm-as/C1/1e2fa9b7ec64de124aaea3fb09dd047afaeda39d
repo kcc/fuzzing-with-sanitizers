@@ -1,0 +1,4 @@
+!_=!  {} 
+
+define i30 @t1(i64 %x)!_ ! {
+	%B = icmp s-lt M_ 

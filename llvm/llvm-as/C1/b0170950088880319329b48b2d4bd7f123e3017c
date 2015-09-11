@@ -1,0 +1,7 @@
+@a= global i32 42
+
+
+@A = global i31 0
+
+
+

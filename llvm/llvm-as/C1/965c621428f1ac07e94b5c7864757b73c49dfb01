@@ -1,0 +1,5 @@
+  
+
+
+define i30 @Cfoo(i58 %v) {
+  %first= add i1  %t, %s

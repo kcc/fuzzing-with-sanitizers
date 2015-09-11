@@ -1,0 +1,4 @@
+
+
+declare i @lv.nvvm.isspacep.const(i8*) readnone noinline
+de

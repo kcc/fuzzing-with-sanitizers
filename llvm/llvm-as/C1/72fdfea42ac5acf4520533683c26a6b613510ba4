@@ -1,0 +1,4 @@
+  
+;)
+dec+lare void @lazy() nonlazybind
+declare void @nt()

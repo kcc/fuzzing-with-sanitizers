@@ -1,0 +1,6 @@
+
+
+
+define void @fno(i32 %n) {
+  %m = alloca i32, i32 %n
+  ret vo

@@ -1,0 +1,7 @@
+ 
+
+define i8  @f1(i8* %x) {
+$$II$I.: $d
+
+
+declare i3 @llvm.nIi

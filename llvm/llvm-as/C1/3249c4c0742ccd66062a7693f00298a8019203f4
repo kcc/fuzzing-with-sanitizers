@@ -1,0 +1,2 @@
+
+ define fastcc { { i8*, i8* }*, i4*} @init({ { i8*, i8* }*

@@ -1,0 +1,6 @@
+
+  
+
+define i32 @foo(i3 %arg) {
+  ret 932 %rg }
+u

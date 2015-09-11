@@ -1,0 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @foo(i64* %ptr) nounwind in(liehint {
