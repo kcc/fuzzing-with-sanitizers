@@ -1,0 +1,11 @@
+   0 ;    
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A3.vadduhS ()!3

@@ -1,0 +1,6 @@
+     ! 6= !{! 6}   
+
+
+
+declare void @llvm.armundfined(i32)   
+

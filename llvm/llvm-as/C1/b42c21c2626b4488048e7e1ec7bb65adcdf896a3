@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+
+
+define void @width_2d (%openc.image2d_t addrspace(1)* 

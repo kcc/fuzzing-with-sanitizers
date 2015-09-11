@@ -1,0 +1,14 @@
+
+
+
+
+
+define i4 addrspace(1)* @test_in
+
+
+
+
+@* =
+
+
+!0 = !DIL: :

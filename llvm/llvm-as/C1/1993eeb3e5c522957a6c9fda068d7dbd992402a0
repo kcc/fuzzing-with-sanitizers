@@ -1,0 +1,9 @@
+
+
+@x = global fp128 0xL0 
+ 
+;:
+
+define i8 @f1(i8*%x) {
+entry:
+ 

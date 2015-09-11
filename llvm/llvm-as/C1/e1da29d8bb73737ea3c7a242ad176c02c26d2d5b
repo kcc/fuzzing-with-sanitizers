@@ -1,0 +1,4 @@
+
+
+declare i7 @lhvm.ctl$.a8(i8)
+declare i32 @llvm.ctlz.17(i15)

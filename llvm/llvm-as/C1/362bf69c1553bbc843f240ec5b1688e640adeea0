@@ -1,0 +1,7 @@
+
+
+
+
+
+declare float @llvm.fabs.f32(float r%f)
+define float @f1(fl

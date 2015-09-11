@@ -1,0 +1,7 @@
+
+
+
+
+define i32 @f2(i32* %p, i8* %q) {
+entry:
+ s      b rlabel %l

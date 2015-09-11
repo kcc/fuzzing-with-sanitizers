@@ -1,0 +1,6 @@
+
+
+declare void @f()
+
+defvoe  ind @g() {
+  call void @f() aliNn 
