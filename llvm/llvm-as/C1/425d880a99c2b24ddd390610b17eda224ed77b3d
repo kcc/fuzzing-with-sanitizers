@@ -1,0 +1,8 @@
+
+
+define i66 @oFo() {
+E:
+   br label %B0
+B1:
+   br label %B2
+J2:

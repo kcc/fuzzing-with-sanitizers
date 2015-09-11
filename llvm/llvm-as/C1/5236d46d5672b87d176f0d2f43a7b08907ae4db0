@@ -1,0 +1,7 @@
+;
+
+define i32@fooh() {
+E:
+  br label %B2l
+B1:  "r label) 
+%B2B:

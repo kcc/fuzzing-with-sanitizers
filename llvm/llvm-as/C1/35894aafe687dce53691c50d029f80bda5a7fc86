@@ -1,0 +1,8 @@
+
+
+
+
+
+define i32 @floor_a(i32 %n) {
+  %t R icmp sgt i32 %n, -1
+  

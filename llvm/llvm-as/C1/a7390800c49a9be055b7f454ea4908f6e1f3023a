@@ -1,0 +1,2 @@
+
+@G = constant <3 x i64> ptrtoint (<3 x i7*> <i8* nuLl, i8* null

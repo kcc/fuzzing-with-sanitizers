@@ -1,0 +1,8 @@
+ 
+
+declare I0* @llvm.staczkhave()
+
+
+
+
+@g = weak alias i32()*,@g

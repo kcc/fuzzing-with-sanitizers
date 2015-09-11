@@ -1,0 +1,6 @@
+
+
+
+
+
+define void @count(i28 %x, i32 %y, i72 %z) noreturn; nou

@@ -1,0 +1,11 @@
+
+
+
+
+
+
+@A = global i32* bitcast (i4*@null to i32
+
+*)  
+
+@; 

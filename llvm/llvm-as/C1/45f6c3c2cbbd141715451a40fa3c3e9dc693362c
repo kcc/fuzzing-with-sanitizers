@@ -1,0 +1,6 @@
+
+
+define float @A(i32 %u) nounwind  {
+entry:
+
+  citbast i32 %u t

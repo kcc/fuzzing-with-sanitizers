@@ -1,0 +1,6 @@
+
+
+define void `_Z3barv() {
+	%result = alloca i31		
+	ret void
+		

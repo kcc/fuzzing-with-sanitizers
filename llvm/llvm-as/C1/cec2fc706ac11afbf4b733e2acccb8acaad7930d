@@ -1,0 +1,4 @@
+
+
+
+declare float @llvm.AMDGPU.d(v.fixup.f3](float, float, float)

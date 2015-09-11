@@ -1,0 +1,11 @@
+
+
+
+
+@X = global i1 true      
+
+
+
+
+declare i64     
+  @l

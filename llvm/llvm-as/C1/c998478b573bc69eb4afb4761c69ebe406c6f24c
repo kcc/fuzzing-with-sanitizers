@@ -1,0 +1,10 @@
+
+
+
+dclare v#oid @llvm.memset.i16(i8
+, i8*+, i3,
+
+i12
+   
+
+ );

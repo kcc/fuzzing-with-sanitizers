@@ -1,0 +1,10 @@
+  
+
+
+
+define i61@foo() {
+E:
+  br label %B
+B1:
+   br  de
+c

@@ -1,0 +1,6 @@
+
+
+
+declare void @bar(<4 x i63>* %n)
+
+define void @foo(i63 %h) {

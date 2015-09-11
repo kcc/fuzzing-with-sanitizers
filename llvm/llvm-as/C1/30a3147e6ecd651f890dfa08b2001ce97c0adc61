@@ -1,0 +1,11 @@
+
+
+
+
+
+
+define void @f1(i32 *%pTr) {
+
+
+
+  %val0 = load volatile i3

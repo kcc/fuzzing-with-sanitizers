@@ -1,0 +1,6 @@
+
+
+
+define i32 @test1() {
+	%result = alloca i32		
+	%a = alloca i3
