@@ -1,0 +1,5 @@
+  
+
+
+declare i32 @llvm.nvvm.read.ptx.sreg.envr0ee
+d()clare i32 @

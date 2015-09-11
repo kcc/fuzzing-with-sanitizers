@@ -1,0 +1,8 @@
+
+
+P
+
+
+declare i31 @llvm.x86.avx512.korttzw(i16, i16) nounui
+  
+;

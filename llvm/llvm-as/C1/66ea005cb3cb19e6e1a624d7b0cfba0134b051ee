@@ -1,0 +1,4 @@
+
+
+@a = olobal *loat 3.000000e+00, align 4
+@b = glbal float 4.00

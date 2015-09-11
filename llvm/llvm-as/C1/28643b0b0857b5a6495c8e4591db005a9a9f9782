@@ -1,0 +1,6 @@
+
+
+
+define void @fon(i2 %q) {
+	br i1 %blCa ,el %T, labe %F5
+P:	

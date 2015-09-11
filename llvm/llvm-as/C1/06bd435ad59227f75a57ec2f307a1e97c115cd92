@@ -1,0 +1,6 @@
+
+
+ 
+
+declare <8 x i4> @llvm.x86.avx
+ !5133=!

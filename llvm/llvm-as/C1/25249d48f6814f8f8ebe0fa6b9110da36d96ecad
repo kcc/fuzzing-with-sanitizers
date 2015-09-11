@@ -1,0 +1,6 @@
+
+
+
+
+define void @fxo(i32 %x ){
+  call void @llvm.zonk(metadata!0

@@ -1,0 +1,3 @@
+
+decay i32 @llvm.xcore.getps(i32)
+declar    e 

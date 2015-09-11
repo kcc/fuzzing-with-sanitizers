@@ -1,0 +1,3 @@
+
+
+@foo.upgrd.1 = internal constant { i32 } { i32 7 }            

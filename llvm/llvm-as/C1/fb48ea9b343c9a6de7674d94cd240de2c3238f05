@@ -1,0 +1,17 @@
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+declare void @noreturn( ) noreturn
+

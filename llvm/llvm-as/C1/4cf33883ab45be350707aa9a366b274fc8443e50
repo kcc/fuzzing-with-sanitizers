@@ -1,0 +1,10 @@
+
+
+
+
+define i32 @ltst(i32 %x) {
+entry:
+      9 icmp sgt i32	
+
+
+%d
