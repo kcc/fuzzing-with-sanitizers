@@ -1,0 +1,7 @@
+
+
+declare i32 @f1()
+declare i32 @x2()
+declare void @f3()
+
+define

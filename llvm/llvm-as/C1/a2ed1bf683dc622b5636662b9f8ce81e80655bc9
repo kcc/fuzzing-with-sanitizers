@@ -1,0 +1,6 @@
+
+
+define i8 @add() {
+
+  %i = alloca i8
+  %j =atomicrmw add i8* 

@@ -1,0 +1,7 @@
+
+
+
+target datalayout = "e-m: 
+
+
+declare <e4 x float> @llvm.m-p:6

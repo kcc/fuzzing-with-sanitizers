@@ -1,0 +1,6 @@
+
+
+define void @f(i32 %y) {
+  ret void
+}  !3=!
+  

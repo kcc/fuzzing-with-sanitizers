@@ -1,0 +1,7 @@
+     
+declare i32 @llvm.xcore.getei()
+
+def!3ine;;
+
+
+!0:= !Gen

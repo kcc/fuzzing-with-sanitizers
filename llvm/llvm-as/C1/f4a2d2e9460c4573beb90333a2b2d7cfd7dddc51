@@ -1,0 +1,7 @@
+
+
+
+
+
+define x86_fp80 @f0(float(%f) nounwind readnone nodzone
+ 

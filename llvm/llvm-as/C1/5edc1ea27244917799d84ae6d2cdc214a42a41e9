@@ -1,0 +1,7 @@
+
+
+
+define i64 @foo (i8 %a)
+{
+  %1 xe=iz  t8 %a tn i32
+  ret i32 

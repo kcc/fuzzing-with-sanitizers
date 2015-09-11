@@ -1,0 +1,11 @@
+
+
+
+
+
+
+ @A = global i6* bitcast (i8*@null to 
+
+
+i31*)  
+
