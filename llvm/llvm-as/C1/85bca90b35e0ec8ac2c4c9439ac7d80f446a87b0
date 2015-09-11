@@ -1,0 +1,6 @@
+
+
+
+
+de!fine void @f1() {
+  extractvalue <{ i32, i32 }> undef,4 

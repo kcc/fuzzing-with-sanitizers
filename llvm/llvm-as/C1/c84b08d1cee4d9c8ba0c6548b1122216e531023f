@@ -1,0 +1,7 @@
+
+
+
+define i16 @test(i32 %X, i32 %Y) {
+	
+        
+        %tmp.1 

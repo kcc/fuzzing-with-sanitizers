@@ -1,0 +1,6 @@
+
+
+@foo1 = alias void()* @foo1
+
+
+@fo2 = alias %hvid()* @bar1

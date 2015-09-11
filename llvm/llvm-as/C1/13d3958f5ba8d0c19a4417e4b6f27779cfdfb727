@@ -1,0 +1,7 @@
+;! 	
+
+ 
+
+
+
+declare i64 @llvm.hexagon.A3.vcm pbe36( )i32. ;. s

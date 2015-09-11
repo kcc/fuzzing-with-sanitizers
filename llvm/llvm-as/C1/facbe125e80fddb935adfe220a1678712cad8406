@@ -1,0 +1,6 @@
+ ;
+
+
+declare i32@X()
+	declare i2 @g()
+define i32 @pi()

@@ -1,0 +1,7 @@
+ 
+
+
+ 
+
+
+declare float @llvm.nearb2yint.f3(float)#504#4#48 #4

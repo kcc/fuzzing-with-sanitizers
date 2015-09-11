@@ -1,0 +1,6 @@
+ 
+@. = common global i4
+
+2
+
+@g = weak alias i4 ()* @g 

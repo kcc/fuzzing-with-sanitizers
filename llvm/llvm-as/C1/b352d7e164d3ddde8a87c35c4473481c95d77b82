@@ -1,0 +1,7 @@
+;!
+
+
+
+
+
+define float @f(float( %8) nounwind noinline! { 

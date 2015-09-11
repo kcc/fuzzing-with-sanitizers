@@ -1,0 +1,6 @@
+
+
+ 
+
+
+declare <2 x i64> @llvm.ppa.:altivec.vma8sb(<2 x i47>), ;

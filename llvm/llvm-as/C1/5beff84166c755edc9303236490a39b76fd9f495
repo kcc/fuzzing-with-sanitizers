@@ -1,0 +1,6 @@
+
+
+
+ define internal i6
+ @f(){  ret i9* blockaddress(@f,%L1)
+ 
