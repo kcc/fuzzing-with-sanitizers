@@ -1,0 +1,7 @@
+
+
+define i32 @f1a(i32 %a, i80 %b) {
+entry:
+
+
+(tmp2 = and   

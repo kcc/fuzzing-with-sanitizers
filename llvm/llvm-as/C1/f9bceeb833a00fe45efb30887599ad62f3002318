@@ -1,0 +1,7 @@
+
+
+
+
+
+define void @test(i32 %p, i32 %q) {
+   %i = udiv i32 %p, %q

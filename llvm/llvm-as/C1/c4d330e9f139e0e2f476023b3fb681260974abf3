@@ -1,0 +1,6 @@
+
+
+
+de
+@
+iclare <2 x i32> @ll = linkonce_odr glovm.ctlz.bv

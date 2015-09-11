@@ -1,0 +1,4 @@
+
+
+declare fastcc i16 @callee(i32 %arg)
+define fastic 23c @direst
