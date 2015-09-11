@@ -1,0 +1,13 @@
+
+
+ 
+declare <3 x float> 
+
+@llvm.mips.fclenw()4
+
+
+
+ 
+e
+
+x

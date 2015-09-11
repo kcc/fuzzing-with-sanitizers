@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+
+
+
+define i32 @fCoo(i32* nocapture %p, i8 nocapture %q) {

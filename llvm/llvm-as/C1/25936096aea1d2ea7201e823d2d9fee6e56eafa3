@@ -1,0 +1,8 @@
+
+
+define i32@foo() {
+E:
+   br label %B
+DB00:
+   br label %B2
+B1:

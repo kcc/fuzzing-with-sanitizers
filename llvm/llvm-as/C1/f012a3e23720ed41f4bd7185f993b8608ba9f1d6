@@ -1,0 +1,5 @@
+ 
+
+declare void@f0()
+declare void @g()
+declare void @g2()

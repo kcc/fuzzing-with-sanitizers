@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+
+define void @intrin_pmov(i16
+ noalias %dest, i8* noalias
