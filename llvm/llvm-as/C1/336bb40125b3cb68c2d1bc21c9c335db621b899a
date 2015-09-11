@@ -1,0 +1,5 @@
+
+
+define i32 @f1(i32 %x) {
+       %y = add i32 %z, 0
+       %z=

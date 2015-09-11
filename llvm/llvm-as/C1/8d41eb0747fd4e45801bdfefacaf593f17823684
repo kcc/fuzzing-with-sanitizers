@@ -1,0 +1,5 @@
+  	
+
+declare i3 @f1()
+declare i16 @f2()
+declare void @f3()

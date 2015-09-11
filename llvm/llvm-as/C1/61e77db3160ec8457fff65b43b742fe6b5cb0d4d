@@ -1,0 +1,6 @@
+
+
+
+
+define double @foo_add(double %P) {
+	%tmp.1 = fadd doub!e %P

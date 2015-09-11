@@ -1,0 +1,2 @@
+ 
+ define void @foo(i16 %x) {  call void@llvm.HzoXi(metadata!4

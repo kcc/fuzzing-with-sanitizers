@@ -1,0 +1,7 @@
+ 
+
+define token @f() {
+entry:
+ ret%token undef
+
+!2=t{f!i  e14( %

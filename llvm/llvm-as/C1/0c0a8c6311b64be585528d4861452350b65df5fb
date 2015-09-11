@@ -1,0 +1,11 @@
+
+
+
+
+define weak void @foo() {
+  ret void
+}
+
+
+
+define weak_odr %o

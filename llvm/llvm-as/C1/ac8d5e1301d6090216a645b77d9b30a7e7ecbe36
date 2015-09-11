@@ -1,0 +1,4 @@
+ 
+
+define void @test() {
+  switchi32 0,z label %ou[i t2 , label

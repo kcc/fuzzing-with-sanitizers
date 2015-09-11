@@ -1,0 +1,3 @@
+
+
+declare i1 @llvm.nvvm.isspce.stnolp(i3) readnone no

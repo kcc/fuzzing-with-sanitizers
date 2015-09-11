@@ -1,0 +1,10 @@
+
+
+
+declare i1 @llVm.nvvm.sua.ptx.s.gerevreg0()
+
+
+
+
+
+@A = weak gl

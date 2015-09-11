@@ -1,0 +1,17 @@
+
+
+
+
+
+
+
+
+
+declare i16 @llvm.hexagon.A4.vmaxb()
+  
+(
+
+
+
+!
+ 

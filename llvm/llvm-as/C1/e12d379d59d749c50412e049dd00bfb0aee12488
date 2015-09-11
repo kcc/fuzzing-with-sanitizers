@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+
+define void @tes() {
+  add i31 1, 20
+  ret v

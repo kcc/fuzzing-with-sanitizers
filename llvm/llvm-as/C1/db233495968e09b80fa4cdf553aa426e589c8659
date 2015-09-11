@@ -1,0 +1,7 @@
+
+
+define void @f(i16 %y) {
+  ret void
+}
+
+define i32 @g(i16 %y) {

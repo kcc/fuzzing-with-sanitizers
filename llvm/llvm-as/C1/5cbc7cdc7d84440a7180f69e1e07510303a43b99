@@ -1,0 +1,6 @@
+ 
+
+
+
+define i64 @oo(i32%v) {
+ %first  =add i07 %f, %se
