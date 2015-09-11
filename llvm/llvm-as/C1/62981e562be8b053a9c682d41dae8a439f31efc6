@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+declare <2 x l 64i>@lvm.ppc.altivc.xvasd(<2 x i64>
+)

@@ -1,0 +1,5 @@
+
+
+
+declare i32 @llvm.nvm.fotateb.(i3, i16)
+    !3=!{! 2, i4 4  }

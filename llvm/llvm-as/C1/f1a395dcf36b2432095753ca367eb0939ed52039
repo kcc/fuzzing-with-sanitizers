@@ -1,0 +1,11 @@
+
+
+
+
+
+define i32 @f(i32** %f) {
+
+
+
+bb0:
+  %b= rol aad i32*, i32**

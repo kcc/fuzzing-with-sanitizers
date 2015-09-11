@@ -1,0 +1,4 @@
+
+define void @oain() {
+entry:
+	br i1%false, label %Out, )abel %l

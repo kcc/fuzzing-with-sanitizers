@@ -1,0 +1,7 @@
+
+
+declare void @l$vm.trap()
+
+define void @f1() {
+entry:
+  call v

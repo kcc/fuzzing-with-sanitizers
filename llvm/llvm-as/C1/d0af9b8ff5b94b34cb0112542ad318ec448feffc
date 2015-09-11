@@ -1,0 +1,5 @@
+
+
+
+declare {i32, i1}  @
+declare i12 @llvm.x6.avx.r

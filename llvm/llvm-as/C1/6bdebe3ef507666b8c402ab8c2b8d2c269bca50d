@@ -1,0 +1,8 @@
+@a = global i32 4
+
+
+;
+@X  
+= global i64* @g
+0oblal i32 4
+
