@@ -1,0 +1,10 @@
+
+
+
+
+
+declare i4 @v()
+
+define i32 @f() {
+e:
+	%r = i

@@ -1,0 +1,6 @@
+
+lealar
+
+
+@G = global i64 efdiv (i32 *, i32 6)
+

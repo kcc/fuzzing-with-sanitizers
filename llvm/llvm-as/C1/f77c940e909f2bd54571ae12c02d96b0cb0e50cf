@@ -1,0 +1,7 @@
+
+;"*  
+;
+
+
+
+ declare i56 @llvm.s390.vmlon( i8)

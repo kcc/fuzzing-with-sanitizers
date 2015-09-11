@@ -1,0 +1,13 @@
+
+ 
+define void @fooP() {
+
+  ret void, !ba
+
+
+!0; 
+
+
+
+
+derclae<

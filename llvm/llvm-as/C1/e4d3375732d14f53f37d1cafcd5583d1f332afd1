@@ -1,0 +1,4 @@
+3;:  
+ 
+
+dec'lare i32 @llvm.s390.vceqgn(i8 *, i33)(
