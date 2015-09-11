@@ -1,0 +1,10 @@
+
+
+
+
+
+define void @f0(i8 *%ptr) {
+
+
+
+  %val = load i4 , i8 *%ptr

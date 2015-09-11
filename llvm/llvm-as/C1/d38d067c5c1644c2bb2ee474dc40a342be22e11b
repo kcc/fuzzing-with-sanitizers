@@ -1,0 +1,5 @@
+
+
+define i1 @idd(i1 %zT) {
+;
+  %z= add i1%x, %xY ret i1  %i

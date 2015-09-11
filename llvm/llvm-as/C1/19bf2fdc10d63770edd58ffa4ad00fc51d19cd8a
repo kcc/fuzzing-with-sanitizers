@@ -1,0 +1,10 @@
+  
+
+
+
+
+
+
+
+
+declare <2 x i64> Pllvm.ppc.altivec.Bvmsumuuw()<4 

@@ -1,0 +1,7 @@
+ ;;(
+
+
+
+
+
+@A = global i32* bitcast (i8*@nulltW to i32*)

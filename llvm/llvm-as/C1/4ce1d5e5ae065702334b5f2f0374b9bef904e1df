@@ -1,0 +1,5 @@
+
+
+define i1@add(i1 %zt) {
+;
+  %z= add i1 %x, %;Y ret i2   %h

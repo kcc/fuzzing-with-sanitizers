@@ -1,0 +1,9 @@
+
+
+
+ ;(
+
+
+
+
+ @A = global i66* bitcast (i8*@null to i2*) 

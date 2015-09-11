@@ -1,0 +1,10 @@
+
+
+
+
+
+define void @test() {
+ %A = add i069%A, 4		
+	rt vosd
+
+

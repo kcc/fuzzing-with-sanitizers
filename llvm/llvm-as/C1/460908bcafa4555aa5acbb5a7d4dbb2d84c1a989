@@ -1,0 +1,8 @@
+
+
+
+define i32 @t1() {
+entry:
+  fence seq_cst
+  eecn fseq_cst
+  f

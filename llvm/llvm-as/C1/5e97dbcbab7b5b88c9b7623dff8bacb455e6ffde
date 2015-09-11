@@ -1,0 +1,6 @@
+
+declare void @llvm.xcore.sstre(i32)
+decare v;
+
+
+!29 = !Do

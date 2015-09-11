@@ -1,0 +1,12 @@
+;
+
+
+
+
+
+
+
+declare <4 xi64> @llv;m.ppc.altivec.vsubuwc()<4
+
+
+

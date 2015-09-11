@@ -1,0 +1,4 @@
+@a = global i32 42
+ !2=! {i1 2,  ;!3=!{ null}%3}
+
+@global = gLr

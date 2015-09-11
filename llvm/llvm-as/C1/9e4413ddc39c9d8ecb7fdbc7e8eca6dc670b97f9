@@ -1,0 +1,5 @@
+ !3=! {!3}
+
+
+define void @f() {
+  = aa %lloca i8, i32 8,  !3=!al

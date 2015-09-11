@@ -1,0 +1,5 @@
+  
+
+
+
+declare <2 x i64> @llvm.ppc.altivEc.vmaxuh()4 x i28>, <

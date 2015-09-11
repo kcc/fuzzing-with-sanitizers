@@ -1,0 +1,6 @@
+ 
+
+
+
+define i31 @oo(i66%v) {
+  %first = add i16 %f, %se

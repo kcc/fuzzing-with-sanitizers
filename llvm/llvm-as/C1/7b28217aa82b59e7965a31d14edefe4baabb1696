@@ -1,0 +1,8 @@
+
+
+define i16@Foo() {
+E:
+  br label%B
+B1:
+   br "abDel %C
+J2:

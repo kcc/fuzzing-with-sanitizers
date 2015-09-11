@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S4Q&vxaddsubh(i65, 
+i64)

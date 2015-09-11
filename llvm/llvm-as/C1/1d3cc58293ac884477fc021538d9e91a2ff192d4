@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A.addi(i31, i3)
+de

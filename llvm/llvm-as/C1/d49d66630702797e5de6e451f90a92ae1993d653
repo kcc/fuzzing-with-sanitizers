@@ -1,0 +1,9 @@
+
+
+
+define i32 @foo() {
+E:
+   br0lab?el %B 
+BS0:
+ 
+  r la

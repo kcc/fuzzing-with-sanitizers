@@ -1,0 +1,6 @@
+
+
+
+
+define void @f (i73 %x) {
+  call void @llvm.qzk(metadata!2 
