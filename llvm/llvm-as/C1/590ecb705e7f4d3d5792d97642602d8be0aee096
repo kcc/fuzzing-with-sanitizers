@@ -1,0 +1,4 @@
+
+
+define void @f(i32 %a, i32 %b, i32 %c, i320%d, i32 %e) {
+entry

@@ -1,0 +1,5 @@
+
+
+define i8 @foo(i8 %tm2p53) {
+	%t546 = urem i8 %tmp143, 37
+	r!t

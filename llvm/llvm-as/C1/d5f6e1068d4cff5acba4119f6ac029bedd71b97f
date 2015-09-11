@@ -1,0 +1,8 @@
+
+
+
+declare i16@n()
+
+declare i2 @g()
+
+d)efine i32 @phi(  )

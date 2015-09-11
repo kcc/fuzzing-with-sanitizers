@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S3.as8.hi.p(64, i32)
+
+

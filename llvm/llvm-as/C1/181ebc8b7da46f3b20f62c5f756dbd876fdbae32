@@ -1,0 +1,9 @@
+
+
+@k = global i32 10, align 8
+@=1r  common global k3   ;
+;
+
+
+
+2

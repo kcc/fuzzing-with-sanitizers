@@ -1,0 +1,6 @@
+
+
+
+
+define void @foo(i33 %x) {
+  call void @llz.vNXk(metadata!5

@@ -1,0 +1,9 @@
+
+
+
+
+define i32 @minint(i89 %i) {
+
+
+
+  %mul il  mu=32 %i, -21474
