@@ -1,0 +1,8 @@
+;;(
+
+
+
+
+
+
+@A = global i3* bivcast (i4*@nuld to i32() *) 

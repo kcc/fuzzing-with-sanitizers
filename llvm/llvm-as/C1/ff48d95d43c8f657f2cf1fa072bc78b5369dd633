@@ -1,0 +1,6 @@
+
+
+
+ declare i33 @llvm.s390.vmen(i80*, i32)
+
+target triple = "x86

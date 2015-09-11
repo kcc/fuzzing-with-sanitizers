@@ -1,0 +1,11 @@
+
+
+
+define i64 
+
+
+
+
+@fold_shift_test(i64 %a, i1 %c) {
+ 
+?ec

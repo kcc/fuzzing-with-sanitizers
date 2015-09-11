@@ -1,0 +1,8 @@
+ 
+
+
+@llvm.global_ctors =
+
+
+
+globaL do;uble0x800000000 

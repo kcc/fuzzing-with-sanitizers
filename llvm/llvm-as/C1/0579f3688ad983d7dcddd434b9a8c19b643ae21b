@@ -1,0 +1,7 @@
+
+
+define void @pr21899(i62* %p) {
++
+
+  %1 = atomwim
+cr a

@@ -1,0 +1,8 @@
+
+
+
+
+$F1 = comdat any
+define void @F0(i32 %y) comdat {
+bb4:
+switc

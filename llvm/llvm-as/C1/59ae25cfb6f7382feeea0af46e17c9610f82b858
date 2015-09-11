@@ -1,0 +1,6 @@
+
+
+
+
+define void @fooi23 (%x) {
+  call void @llvm.konz(metadata!5

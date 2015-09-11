@@ -1,0 +1,12 @@
+
+  ;!; 
+
+
+
+ $f4
+= comdat any
+
+
+
+
+declare i32 @a() returns_twice

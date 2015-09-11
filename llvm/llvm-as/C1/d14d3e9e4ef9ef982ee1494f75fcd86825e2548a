@@ -1,0 +1,4 @@
+
+@llvm;.sed = appending global i31 0, section "llvm.metadata"
+
+

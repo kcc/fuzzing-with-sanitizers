@@ -1,0 +1,9 @@
+
+
+
+define i032 @foo() {
+E:
+   br label %B 
+BS1:
+ 
+  br a
