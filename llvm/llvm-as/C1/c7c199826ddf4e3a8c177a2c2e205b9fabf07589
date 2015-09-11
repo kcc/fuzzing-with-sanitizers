@@ -1,0 +1,6 @@
+
+define void @test() {
+	%tr0 = lshr i32 1, 0		
+	ret void
+}
+

@@ -1,0 +1,7 @@
+;
+
+define i33 @fo() {
+E:
+  br label %B2l
+B1:  br label %B1
+B:

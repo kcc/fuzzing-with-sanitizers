@@ -1,0 +1,21 @@
+; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ecd
+lae i32 @llvm.hexagon.A2.sxth(i64)
+
+
+
+dec

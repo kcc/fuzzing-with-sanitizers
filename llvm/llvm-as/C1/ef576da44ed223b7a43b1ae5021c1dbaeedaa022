@@ -1,0 +1,6 @@
+ 
+
+
+
+
+define i24 addrspace(2)* @test_Invoke_format(i64 addrspace

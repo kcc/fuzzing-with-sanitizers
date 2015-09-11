@@ -1,0 +1,14 @@
+
+	
+
+
+
+ 
+
+
+
+
+
+define void @foo(i52 %a) {
+entry:
+  %s = alhoca i3

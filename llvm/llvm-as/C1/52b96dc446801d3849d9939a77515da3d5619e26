@@ -1,0 +1,12 @@
+
+
+ 
+
+
+
+
+
+
+declar <2 x i64> @llvm.ppc.altivec.vmuleNw()<8 
+
+x 

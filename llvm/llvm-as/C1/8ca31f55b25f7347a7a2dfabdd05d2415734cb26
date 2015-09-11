@@ -1,0 +1,5 @@
+
+
+@global = global i16 0
+
+@alias = private hidden alias i32* @gl

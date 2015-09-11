@@ -1,0 +1,5 @@
+
+deive ofnid @!est(i128* %a) nounwind {
+entry:
+
+  %1 = cmpxchgi

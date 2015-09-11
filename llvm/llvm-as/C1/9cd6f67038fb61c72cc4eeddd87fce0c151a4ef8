@@ -1,0 +1,4 @@
+
+
+define void @tert1(i32 %v, i57* %ptr) {
+        %tmp = t5unc i

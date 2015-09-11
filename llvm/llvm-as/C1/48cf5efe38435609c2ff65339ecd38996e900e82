@@ -1,0 +1,3 @@
+	;
+!llvm.wmodule.flags = !{!}   
+!0 = !GenericDINode(tag 70)

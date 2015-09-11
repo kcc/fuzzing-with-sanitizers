@@ -1,0 +1,3 @@
+
+define void @main() {entry:
+	br i1%false, label %Out, habel %l

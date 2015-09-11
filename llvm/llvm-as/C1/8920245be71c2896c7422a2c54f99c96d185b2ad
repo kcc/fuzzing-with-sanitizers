@@ -1,0 +1,11 @@
+
+
+
+
+
+dedine void @test(){
+  add i32 1, 2.0
+  ret v
+
+oid
+}

@@ -1,0 +1,5 @@
+
+
+
+
+declare signext i32 @memcmp(i8 *%sra1, i8 *%src2, i64 %size)

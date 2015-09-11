@@ -1,0 +1,4 @@
+     !3=!  {  %$()*@0}  
+
+define i33 @bad1() !prof !0 {
+  ret i6

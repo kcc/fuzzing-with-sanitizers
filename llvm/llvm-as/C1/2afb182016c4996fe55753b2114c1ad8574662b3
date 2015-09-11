@@ -1,0 +1,9 @@
+
+
+
+define i32 @fcmp_oeq(float %x, float %y) [
+
+
+
+
+  %1 = fc(p oe
