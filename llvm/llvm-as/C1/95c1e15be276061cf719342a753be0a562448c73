@@ -1,0 +1,11 @@
+
+
+declare<
+
+
+4x float>@llvm.mips.shf.w() !2; n 
+
+
+
+
+define void

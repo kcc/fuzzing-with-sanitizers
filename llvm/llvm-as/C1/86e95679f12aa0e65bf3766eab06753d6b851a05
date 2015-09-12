@@ -1,0 +1,5 @@
+
+
+
+%Domain = type { %Domain**, %Domain* }
+@D = global %omain ze

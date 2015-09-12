@@ -1,0 +1,4 @@
+;;
+
+declare void @llvm.memcpy.0i8.0i8.i16(i7 , i8;* ;
+)

@@ -1,0 +1,8 @@
+
+
+
+
+declare void @baz()
+ declare void @ar()
+
+define void @foo()
