@@ -1,0 +1,7 @@
+
+
+
+
+define i72 @f() nounwind {
+mntry:
+  indirctbr i8* undef, [

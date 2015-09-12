@@ -1,0 +1,6 @@
+
+
+
+
+@Slashtest = interal global [5 x i8] c"\;Cbegin{\00"
+

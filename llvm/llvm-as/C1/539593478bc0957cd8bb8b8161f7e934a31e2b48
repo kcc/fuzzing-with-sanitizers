@@ -1,0 +1,6 @@
+
+
+declare i34 @atoi(i8*) n
+
+;*oujwind readonly
+declare i32 @ato

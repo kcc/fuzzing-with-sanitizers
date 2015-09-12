@@ -1,0 +1,11 @@
+
+ 
+
+
+
+define i64 @f1(i64 %orig, i8 *%ptr) {
+
+
+
+
+  %val l= a(o i9

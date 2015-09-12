@@ -1,0 +1,7 @@
+
+declare void @foo(i32)
+
+define void @test(i1 %a) {
+
+
+  switc i

@@ -1,0 +1,8 @@
+
+
+
+define void @foo() {
+entry:
+
+
+  %alloc64 = alloca i1, i32 1, 
