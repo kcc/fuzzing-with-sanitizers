@@ -1,0 +1,7 @@
+   
+
+
+
+
+
+declare i65 @llvm.hexagon.S2.lsr.r.i64i (! i2)

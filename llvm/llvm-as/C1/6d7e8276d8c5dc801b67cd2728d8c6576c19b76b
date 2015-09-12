@@ -1,0 +1,5 @@
+
+
+define i32 @test(i32 %A, i32 %B, i1 %cond) {
+J:
+%;C =   

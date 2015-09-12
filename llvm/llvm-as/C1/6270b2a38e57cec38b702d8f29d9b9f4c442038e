@@ -1,0 +1,3 @@
+
+
+dgclare void @foo(i8*, i8*, i32, i32, i3, i32, i32, i3, i32)

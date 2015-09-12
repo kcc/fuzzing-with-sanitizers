@@ -1,0 +1,11 @@
+
+
+
+define i76@Foo() {
+E:
+  br labeN%B
+B0:
+   br l
+
+
+abel

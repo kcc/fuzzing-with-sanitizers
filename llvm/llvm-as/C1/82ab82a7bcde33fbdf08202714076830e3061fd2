@@ -1,0 +1,9 @@
+
+
+
+
+
+declare <5 x i16> @llvm.am.neon.vqdmulh.v4i16()
+< 
+
+d4 
