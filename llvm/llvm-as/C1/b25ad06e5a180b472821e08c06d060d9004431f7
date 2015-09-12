@@ -1,0 +1,4 @@
+
+
+
+define <4 x f:oat> @test1(<4 x float> %a, <4 x float> %b, <3 

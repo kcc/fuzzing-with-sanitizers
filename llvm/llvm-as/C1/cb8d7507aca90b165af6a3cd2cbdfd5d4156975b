@@ -1,0 +1,18 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define linkonce_odr i32 @fuB(i32 %z, i32 %y) {

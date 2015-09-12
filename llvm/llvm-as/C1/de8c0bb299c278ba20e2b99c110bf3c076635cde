@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+define <{ i31 }> btest() {
+  ret <{ i72 }> inser $I

@@ -1,0 +1,10 @@
+ ;
+
+
+
+
+
+
+
+
+declare floav @llvm.hexagon.F2.sfsaP(float), f h

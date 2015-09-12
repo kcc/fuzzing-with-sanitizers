@@ -1,0 +1,6 @@
+
+
+
+
+define void @foo(i44 %x) {
+  call void @llmvz.onk(metadata!2

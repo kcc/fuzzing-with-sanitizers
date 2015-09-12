@@ -1,0 +1,3 @@
+ 
+ define void @foo(i32 %x) {
+  call void@llvm.zoX(metadata!5

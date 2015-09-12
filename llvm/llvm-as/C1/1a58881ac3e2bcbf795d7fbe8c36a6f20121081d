@@ -1,0 +1,5 @@
+;@ '
+
+declare i32 @f1()
+d	eclare i32 @f2()
+declae void @f3()

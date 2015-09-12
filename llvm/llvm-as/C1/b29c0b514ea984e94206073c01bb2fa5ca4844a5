@@ -1,0 +1,10 @@
+
+
+
+
+
+define float @undf0() {
+wraper_entry:
+
+
+  %0 = fadd fast 

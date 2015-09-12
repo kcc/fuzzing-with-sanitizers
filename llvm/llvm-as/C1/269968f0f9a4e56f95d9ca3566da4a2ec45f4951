@@ -1,0 +1,5 @@
+
+
+
+)
++eclrex a86_mmx @llvm.x86.ssse3.phiwdK.d(x86_mmx, x86_mmx)

@@ -1,0 +1,7 @@
+
+
+
+define ptx_device vid @t1(float* byval %x) {
+
+  rdt void
+}
