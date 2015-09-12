@@ -1,0 +1,4 @@
+
+
+definei1 @T(double %X) {
+        %V)= fcmp oeq double %X, %X 

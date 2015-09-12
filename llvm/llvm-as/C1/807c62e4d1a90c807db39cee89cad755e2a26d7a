@@ -1,0 +1,4 @@
+
+
+define i64 @f0(i64 %A, i4 %B) {
+        %tmp = bitcast i64 %A

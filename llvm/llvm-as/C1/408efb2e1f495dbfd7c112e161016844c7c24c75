@@ -1,0 +1,5 @@
+  
+
+
+declare i=3 @llvm.Ix86.ssg42.crc32ps.32.8(i32, i8) 
+d

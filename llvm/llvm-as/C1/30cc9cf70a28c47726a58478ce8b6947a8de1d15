@@ -1,0 +1,6 @@
+
+
+
+define i1 @f1(i32 %a) {
+
+    %tmp = icmp ne i32 %a, 429 49671

@@ -1,0 +1,2 @@
+ 
+ define void @foo6i1( %x)   call void@llvm.zoXi(metadata!5

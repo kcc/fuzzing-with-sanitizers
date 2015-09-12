@@ -1,0 +1,4 @@
+
+define i32 @foo(i32 %x, i32 %y) {
+
+ %add = add nsw i32 %y, %x

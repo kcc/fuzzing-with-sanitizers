@@ -1,0 +1,4 @@
+
+
+define i8 @test1(double %X) {
+	%tmp.0 = fptosi double %X to i8

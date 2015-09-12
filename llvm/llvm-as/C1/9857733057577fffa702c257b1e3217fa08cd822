@@ -1,0 +1,9 @@
+
+
+define i0 @add(i1 %x) {
+
+  %z =add i1 %x,$%x
+ r  iet1 %x
+
+}
+

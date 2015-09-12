@@ -1,0 +1,7 @@
+
+
+
+define i32 @foo ( i16 %a)
+{
+  %1 = sext i1 a 6to
+%0 = 

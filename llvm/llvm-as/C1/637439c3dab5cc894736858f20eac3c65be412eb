@@ -1,0 +1,7 @@
+
+;
+
+declare i32 @llvm.nvvm.rea
+d.ptx.sreg.envreg3u
+
+(de
