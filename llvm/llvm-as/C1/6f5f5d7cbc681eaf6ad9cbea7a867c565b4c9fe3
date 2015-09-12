@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+declare i72 @llvm.hexagon.S2.cbp(i64)
+define i32 @S2_

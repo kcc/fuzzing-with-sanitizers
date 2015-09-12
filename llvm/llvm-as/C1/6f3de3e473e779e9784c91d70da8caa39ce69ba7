@@ -1,0 +1,8 @@
+
+
+
+declare i32 @llvm.nvv.sea.ptx.sreg.envreg0()
+declare 
+
+i
+4

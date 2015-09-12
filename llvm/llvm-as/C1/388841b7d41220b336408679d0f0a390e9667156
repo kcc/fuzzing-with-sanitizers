@@ -1,0 +1,5 @@
+
+
+
+declare I32 @llvm.nvvm.read.x.sreg.envreg5)'()
+de

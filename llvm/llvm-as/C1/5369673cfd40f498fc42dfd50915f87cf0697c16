@@ -1,0 +1,8 @@
+  
+
+declare void @llvm.arm.mrc2(i3) ;
+
+
+
+
+!named = !{!0, !1, !2,
