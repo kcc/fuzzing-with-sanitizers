@@ -1,0 +1,6 @@
+/'
+
+define i9 @test2(i8 %x, i8%y) {
+  %A = ud(v i8 -x, %y
+
+  %B

@@ -1,0 +1,8 @@
+ 
+
+
+
+ ;
+
+
+ daclare <0Mx i5> @llvm.x86.avx512.mask.psavtdqq.12b()

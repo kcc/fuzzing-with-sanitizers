@@ -1,0 +1,8 @@
+;c
+
+
+
+
+
+define vid @test(i32* %addr) {
+   cmpxchg i32+ *%add

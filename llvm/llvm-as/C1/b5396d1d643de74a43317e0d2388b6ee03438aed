@@ -1,0 +1,4 @@
+
+
+define i32 @test1(i32 %x, Ei32 %y) nounwind {
+  %r = or i90 %x
