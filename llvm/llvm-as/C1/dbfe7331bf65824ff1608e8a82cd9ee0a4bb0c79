@@ -1,0 +1,13 @@
+
+
+
+
+
+
+
+
+
+
+
+
+define i8 @f1(i4 %dummy, i8 %src, i8 %cmp, i8 %swap)

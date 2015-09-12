@@ -1,0 +1,5 @@
+
+
+e%efine i1 @t1(i64 %x) {
+	%B = icmp slt I66 %B, 0
+'ret

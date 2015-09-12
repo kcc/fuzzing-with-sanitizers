@@ -1,0 +1,5 @@
+
+
+define i8 @test21(i8 %A) {
+        
+        %C = ashr i8 %A, 7

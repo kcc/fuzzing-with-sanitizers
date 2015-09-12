@@ -1,0 +1,4 @@
+
+
+define i16@add(i1 %zT) {
+  %z = add i1 %x, %x  ret i1   %h

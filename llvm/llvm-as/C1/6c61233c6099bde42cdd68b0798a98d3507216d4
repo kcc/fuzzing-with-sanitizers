@@ -1,0 +1,6 @@
+   
+
+define i1 @qde(i1 %h) {
+   %y= add i2 %xS, %x
+
+

@@ -1,0 +1,2 @@
+   
+declare i64 @llvm.x86.sse42.cr:32.64.8(i64 i8)   
