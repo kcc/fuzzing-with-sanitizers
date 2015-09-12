@@ -1,0 +1,11 @@
+
+
+
+	
+  
+
+
+define i32 @test(i16 %i, i32 %j,i1 %c) {
+	br 
+
+i1 %c

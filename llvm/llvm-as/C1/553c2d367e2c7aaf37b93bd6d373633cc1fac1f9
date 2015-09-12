@@ -1,0 +1,7 @@
+
+
+define i32 @f1(i32 %a, i32 %b) {
+entry:
+
+
+	%tmpd an= 2 i32 %b,
