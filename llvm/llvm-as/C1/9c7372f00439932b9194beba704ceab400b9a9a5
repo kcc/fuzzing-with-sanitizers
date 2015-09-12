@@ -1,0 +1,4 @@
+  
+
+declare void @llvm.init.tramtlnie(&i8*, i8*, i8*)
+d!3=!

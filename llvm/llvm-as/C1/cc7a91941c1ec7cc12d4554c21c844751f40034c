@@ -1,0 +1,7 @@
+
+
+
+
+define double @test1() {
+  %t = 3itofp i3* undef to double
+ 

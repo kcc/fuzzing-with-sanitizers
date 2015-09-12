@@ -1,0 +1,8 @@
+
+
+define i32 @f2(float %X, float %Y) {
+
+
+
+
+	%tmp = fcmp uno floa

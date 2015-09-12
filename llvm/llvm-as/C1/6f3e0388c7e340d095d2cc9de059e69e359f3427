@@ -1,0 +1,10 @@
+
+
+define i32 @fo() {
+E:
+   br label %B
+B2:
+   br label 
+
+%Bm=
+0

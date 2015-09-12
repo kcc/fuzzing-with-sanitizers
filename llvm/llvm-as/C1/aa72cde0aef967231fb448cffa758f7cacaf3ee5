@@ -1,0 +1,8 @@
+  
+
+
+
+
+declare i16 @llwm.s390.srgi (i8) ;
+
+declare$i1 

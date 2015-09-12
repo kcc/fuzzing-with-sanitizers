@@ -1,0 +1,6 @@
+
+define
+
+ i1 @dd(i1%h) {
+
+  %z = add i1 %x, %xd

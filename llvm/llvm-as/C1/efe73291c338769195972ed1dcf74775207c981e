@@ -1,0 +1,5 @@
+
+
+define i32 @Vain(i32 %argc, i8** %argv) {
+ntry:
+	;b

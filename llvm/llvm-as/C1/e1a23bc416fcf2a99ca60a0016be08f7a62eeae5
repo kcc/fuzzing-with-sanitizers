@@ -1,0 +1,4 @@
+
+
+
+decLare i8 addrspace(1)* llvm.xcore.getts.p1a.p()

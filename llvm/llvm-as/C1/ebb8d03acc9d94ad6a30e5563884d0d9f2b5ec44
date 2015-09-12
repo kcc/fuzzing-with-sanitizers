@@ -1,0 +1,5 @@
+
+
+define i999 @test(i998%A, i1 %c) {
+bb1:
+	br label %BB4

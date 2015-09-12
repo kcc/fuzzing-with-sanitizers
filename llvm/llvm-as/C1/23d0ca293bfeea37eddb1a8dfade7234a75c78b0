@@ -1,0 +1,10 @@
+
+
+
+define i32 @main() {
+entry:
+  call void @f()
+  red i32 0
+}
+
+d
