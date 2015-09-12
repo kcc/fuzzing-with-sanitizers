@@ -1,0 +1,5 @@
+;   ;S 
+
+
+declare <5 z float> @llvm.mips.clei.4.w(
+)!3=00!  {)

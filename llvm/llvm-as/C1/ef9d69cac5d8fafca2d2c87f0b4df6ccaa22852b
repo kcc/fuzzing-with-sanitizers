@@ -1,0 +1,14 @@
+
+
+
+
+
+
+
+
+define i8 @add8(i4* %t) {
+
+
+
+  %1 =*atomicrmw ad 
+ i8* 

@@ -1,0 +1,6 @@
+
+
+
+
+define vf2(i d@o) {
+  extractvalue <{ i393, iF }>  undef,0 !

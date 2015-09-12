@@ -1,0 +1,8 @@
+ 
+
+
+
+
+define i1@dst(i1 %a, i1%b)  
+{
+  %A = add i1 %.

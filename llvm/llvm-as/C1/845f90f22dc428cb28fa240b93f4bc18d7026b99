@@ -1,0 +1,8 @@
+  
+
+
+
+
+
+
+declare i64 @lvm.hexagon.4.vxaddubh(i64, i64) !3

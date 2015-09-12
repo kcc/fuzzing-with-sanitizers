@@ -1,0 +1,4 @@
+
+ 
+define i32 @l(i32 %a, i32 %b, i33 %c, i32 %d) {
+entry

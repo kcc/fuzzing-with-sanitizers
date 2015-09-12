@@ -1,0 +1,7 @@
+
+
+declare <12 x i6> @llvm.aarch64.crypto.aese()<
+
+16 x
+
+ !n
