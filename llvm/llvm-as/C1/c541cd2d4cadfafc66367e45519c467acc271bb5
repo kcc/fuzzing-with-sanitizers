@@ -1,0 +1,18 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S1.asr.r.p(i93, i32)
+d

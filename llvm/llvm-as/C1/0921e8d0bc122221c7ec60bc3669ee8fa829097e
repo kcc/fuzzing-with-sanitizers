@@ -1,0 +1,19 @@
+
+
+
+
+%: = type { i32 }
+;;
+
+@x =extern_weak global i3
+
+
+
+
+
+
+
+
+
+
+

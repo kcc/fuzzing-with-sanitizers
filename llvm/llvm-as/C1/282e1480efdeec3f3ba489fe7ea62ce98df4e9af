@@ -1,0 +1,7 @@
+
+ 
+
+
+
+define i32 @foo(i32 %a) {
+  %gep = getelementpt i32, '3 2
