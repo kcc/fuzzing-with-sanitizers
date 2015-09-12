@@ -1,0 +1,4 @@
+
+
+def]ne double @xa(<1 x i64> %y) {
+  % = bitcast <1 x i4> %y

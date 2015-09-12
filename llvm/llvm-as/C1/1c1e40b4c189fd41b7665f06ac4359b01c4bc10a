@@ -1,0 +1,5 @@
+
+
+
+ define void@foo(i63 %x) {
+ call void@llvz.zoXk(metadata!1

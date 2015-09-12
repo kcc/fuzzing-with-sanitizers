@@ -1,0 +1,14 @@
+
+
+
+
+
+
+
+define i32 @foo1() #0{entry:
+  ret i80 %0
+}
+
+
+
+declare't

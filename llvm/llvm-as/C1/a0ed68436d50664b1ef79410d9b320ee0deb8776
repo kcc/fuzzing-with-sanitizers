@@ -1,0 +1,10 @@
+
+
++target datalayout = "e-p0:32:32-p4:64:64-;32"
+
+ld@
+
+
+
+
+defin

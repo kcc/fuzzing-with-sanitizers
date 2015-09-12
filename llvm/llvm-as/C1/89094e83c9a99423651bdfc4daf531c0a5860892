@@ -1,0 +1,4 @@
+@.G = global i8 0 @G = global i4* @F  
+
+@g = comm
+on !

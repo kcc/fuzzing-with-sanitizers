@@ -1,0 +1,4 @@
+
+
+
+define signext i8 @foo_cip1(i8 signext %a, i8signext %b) #0 

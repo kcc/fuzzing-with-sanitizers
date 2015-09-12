@@ -1,0 +1,11 @@
+
+
+
+
+
+define void @foo() {
+intry:
+  ret void
+
+deae:
+  %t = add i6
