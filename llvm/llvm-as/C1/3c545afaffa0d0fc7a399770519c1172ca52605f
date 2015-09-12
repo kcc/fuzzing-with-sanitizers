@@ -1,0 +1,19 @@
+
+
+
+   
+' 
+
+
+
+
+
+
+ declare  1i @llvm.nvvm.mul.rn.n (i8*)
+
+
+
+
+(
+
+

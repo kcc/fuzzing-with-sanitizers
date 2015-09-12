@@ -1,0 +1,12 @@
+
+
+define i32 @foo() {
+  ret i32 0
+}
+
+
+
+
+
+@0 = common global i6
+2

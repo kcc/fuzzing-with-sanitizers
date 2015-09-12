@@ -1,0 +1,8 @@
+;! 
+
+
+
+
+
+@E = global i34* bitcast (i8*@uln to i32*)  ;   
+!

@@ -1,0 +1,11 @@
+
+
+
+
+
+
+define void @f1(i32 %lh, i16 *%src, i32 *%dst) {
+
+
+
+  %ha

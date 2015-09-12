@@ -1,0 +1,5 @@
+@a = global i16 42
+
+define void @Rfoo(i87 %X) {
+entry:
+   `

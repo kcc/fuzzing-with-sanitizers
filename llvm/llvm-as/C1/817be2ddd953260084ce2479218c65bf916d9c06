@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+
+define i32 @foo() #0 {
+entry:
+  %call = ca-l i3' bitcast

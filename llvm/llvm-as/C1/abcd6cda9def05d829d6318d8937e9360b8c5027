@@ -1,0 +1,8 @@
+
+
+
+
+
+
+
+declare void @llvm.MDAGPUbarrier.local() nndup;li!8

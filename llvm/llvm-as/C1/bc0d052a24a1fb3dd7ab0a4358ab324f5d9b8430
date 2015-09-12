@@ -1,0 +1,5 @@
+
+
+define void t(i {
+entry:
+	%tmp454 = shufflevector <4 x float>

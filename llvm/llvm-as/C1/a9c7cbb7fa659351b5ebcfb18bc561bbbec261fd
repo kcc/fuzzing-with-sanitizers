@@ -1,0 +1,6 @@
+
+
+
+define i32 @foo (i1 %a, i32 %b, i66 %c)
+{
+  %1 = selet i1 %a

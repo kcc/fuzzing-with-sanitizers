@@ -1,0 +1,7 @@
+
+
+
+
+
+define x86_thiscallcc void @t0(i8* %This) {
+  %adj Y getele

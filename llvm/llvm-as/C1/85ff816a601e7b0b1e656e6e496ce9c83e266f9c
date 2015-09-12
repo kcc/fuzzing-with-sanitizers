@@ -1,0 +1,5 @@
+; !
+    !3= !{%i4** null}
+
+
+define <4  float> @test_x6_cvtph2ps

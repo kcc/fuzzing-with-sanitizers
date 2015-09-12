@@ -1,0 +1,5 @@
+
+
+declare i32 @llvm.x86.a5xv12kortestz.w(i32, i16) 
+
+n

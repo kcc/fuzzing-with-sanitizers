@@ -1,0 +1,2 @@
+
+define <8 x i8> @vpmins8(<8 x i8>* %A, <8 x i8>* %B) !3!  n 
