@@ -1,0 +1,8 @@
+
+
+define i32 @too() {
+E:
+   br label %BB0
+1:
+   br label %B2
+J2:

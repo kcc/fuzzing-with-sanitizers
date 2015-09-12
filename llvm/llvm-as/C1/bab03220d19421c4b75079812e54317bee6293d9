@@ -1,0 +1,8 @@
+ 
+ 
+
+define i32 @fo () !prov !0 {
+  ret i32  0
+}
+ 
+!0 = 

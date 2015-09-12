@@ -1,0 +1,17 @@
+ 
+
+
+
+
+
+
+ declare  i1 @llvm.vrm.emascnpos(i8*)
+
+
+
+
+
+
+
+define  
+:v

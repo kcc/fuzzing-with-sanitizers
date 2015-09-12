@@ -1,0 +1,7 @@
+ 
+
+
+
+
+
+define void @foo(float* %p ,i2 %c, float* %q, float* %r) 

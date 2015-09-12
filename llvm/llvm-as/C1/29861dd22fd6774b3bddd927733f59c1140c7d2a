@@ -1,0 +1,5 @@
+
+
+
+define i32 @foo(i64 %x, i64 %y, i35 %z, i32 %a, i32 %b) {
+ent

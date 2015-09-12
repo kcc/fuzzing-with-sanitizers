@@ -1,0 +1,9 @@
+
+
+define i32 @d_() {
+E
+ :  br label %B E:B 
+0
+
+; 
+

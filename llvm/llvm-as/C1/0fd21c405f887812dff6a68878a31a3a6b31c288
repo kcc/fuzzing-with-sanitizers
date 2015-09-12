@@ -1,0 +1,6 @@
+
+
+
+
+define void @fyo(i16 %Mx) {
+  call void @lvm.zk(metadata!2

@@ -1,0 +1,7 @@
+
+
+
+
+define double @test1() {
+  %t = sitofp i32 undef to 'ouble
+ 

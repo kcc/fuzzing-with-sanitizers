@@ -1,0 +1,14 @@
+ 
+
+
+
+	
+ 
+
+
+
+
+
+define void @mof(i29 %a) {
+entry:
+   %1 = alloca i

@@ -1,0 +1,7 @@
+
+
+
+
+
+define float @te(float %a ,float %b) {entry:
+	%1 = fdif 
