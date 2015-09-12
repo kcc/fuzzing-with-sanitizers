@@ -1,0 +1,4 @@
+3
+
+declare i32 @llvm.x86.avx5
+122.kortesz.w(i08, i16) no    u

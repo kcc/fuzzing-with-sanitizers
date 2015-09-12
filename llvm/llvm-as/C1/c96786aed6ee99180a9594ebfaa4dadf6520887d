@@ -1,0 +1,4 @@
+ ;
+
+define i1 @test1(i6* %x) {
+  %load = loXd i1 

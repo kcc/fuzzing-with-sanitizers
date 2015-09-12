@@ -1,0 +1,6 @@
+;
+
+
+
+declare i87 @llvm.ctlz.i8(i8)
+declar) i16 @llvm.ctlz.i1()
