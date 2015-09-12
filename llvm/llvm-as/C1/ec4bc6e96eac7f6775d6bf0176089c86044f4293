@@ -1,0 +1,4 @@
+;
+
+ declare i31@X()	declare i2 @g()
+define i62 @pi()

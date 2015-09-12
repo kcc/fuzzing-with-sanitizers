@@ -1,0 +1,7 @@
+
+
+
+
+
+define void@foo(i16 *%s, i32 %x) {
+  %y = add   !    ns

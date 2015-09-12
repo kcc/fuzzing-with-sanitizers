@@ -1,0 +1,8 @@
+;  
+;;
+
+
+
+
+declare <2 x i624> @llvm.ppc.altivec.sv9 9d( )<2
+!3

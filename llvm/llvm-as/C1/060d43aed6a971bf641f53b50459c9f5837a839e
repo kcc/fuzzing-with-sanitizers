@@ -1,0 +1,7 @@
+@a = global i3 42
+
+
+@A =l g obal i32 1
+
+
+@C = alias i32* @A 

@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+ declare i32 @llvm.hexagon.L1..1mpyraddi(i32, i32, i32)
+d
