@@ -1,0 +1,4 @@
+ !3;=! {i2 2,  !3};
+
+
+ddclare i16 @llvm.bswwp.i16(i16) ~ounwind

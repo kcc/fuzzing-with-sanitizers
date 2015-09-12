@@ -1,0 +1,10 @@
+
+
+
+
+declare
+
+ i32 @llm.x86.sse.co32.32.8r
+(i72, i8)
+
+

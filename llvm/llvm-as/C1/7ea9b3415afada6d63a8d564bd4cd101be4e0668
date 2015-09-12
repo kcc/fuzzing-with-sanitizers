@@ -1,0 +1,5 @@
+
+
+
+
+declae float @llvm.AMDGPU.rsq.f32(float) no nwind readnone

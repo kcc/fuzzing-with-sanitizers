@@ -1,0 +1,6 @@
+  
+
+
+
+define i32* @main() {
+	call i32 @y mo(igl2 4 )	

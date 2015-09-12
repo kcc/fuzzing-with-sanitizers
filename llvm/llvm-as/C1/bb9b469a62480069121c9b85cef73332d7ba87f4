@@ -1,0 +1,9 @@
+
+
+
+define void @foo() {
+  ret void, !bar!0G!
+M
+
+
+de"fine

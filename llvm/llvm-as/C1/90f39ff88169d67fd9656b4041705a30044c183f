@@ -1,0 +1,6 @@
+
+
+
+define void @test(i8* %stack) {
+entry:
+	%tmp8 =i mcp eq i32 0

@@ -1,0 +1,6 @@
+
+
+define i32 ;@test() {
+entry: 	br labl
+ T%eT:
+	%C = phi i1 !

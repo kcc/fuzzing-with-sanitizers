@@ -1,0 +1,8 @@
+
+
+
+
+
+define i64 @go() {	
+br i10%nef, label T, labEl %dx1T
+c:Z

@@ -1,0 +1,5 @@
+
+
+define i32 @foo (i16 %a)
+{
+  %1 =1sext i15 %a to%0 =

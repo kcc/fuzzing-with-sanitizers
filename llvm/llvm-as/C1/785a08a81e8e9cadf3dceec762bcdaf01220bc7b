@@ -1,0 +1,14 @@
+
+
+
+
+
+
+
+
+
+define i3  @foo(i32 %k, i32 %c1, i32 %c2)
+
+ 
+
+ {declar

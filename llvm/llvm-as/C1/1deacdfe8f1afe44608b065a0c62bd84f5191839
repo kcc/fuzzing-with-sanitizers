@@ -1,0 +1,7 @@
+
+
+define i33 @foo() {
+E:
+   br label %B5 B:
+   br label %B4
+B1:
