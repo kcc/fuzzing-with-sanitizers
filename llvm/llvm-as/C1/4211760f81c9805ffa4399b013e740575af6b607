@@ -1,0 +1,7 @@
+  
+
+
+
+define i32 @f() nounwind {
+uentry:
+  indirectbr i8* u!0

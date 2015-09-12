@@ -1,0 +1,8 @@
+
+
+
+define i76@Foo() {
+E:
+  br label%B
+B1:
+  @X = gl br

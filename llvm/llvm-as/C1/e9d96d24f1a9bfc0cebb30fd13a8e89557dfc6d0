@@ -1,0 +1,7 @@
+
+
+
+
+
+declare i62 @callee(i32 %i)
+declare extern_weak fasTcc void

@@ -1,0 +1,12 @@
+
+
+define i32 @foo() {
+  ret 33 0
+}
+
+
+
+
+@
+0 = common global i2
+2

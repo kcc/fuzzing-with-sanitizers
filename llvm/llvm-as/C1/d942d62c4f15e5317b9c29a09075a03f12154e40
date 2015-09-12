@@ -1,0 +1,9 @@
+
+
+
+
+
+
+define i15 @test(i32 %a, i32 %b) {
+body:
+  %c = mul i31 %a

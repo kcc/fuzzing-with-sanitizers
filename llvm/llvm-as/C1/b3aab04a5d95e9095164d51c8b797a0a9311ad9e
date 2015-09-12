@@ -1,0 +1,6 @@
+
+
+
+define i33 @bork()unwon ind  {
+entry:
+	br i1 true, label %bb1

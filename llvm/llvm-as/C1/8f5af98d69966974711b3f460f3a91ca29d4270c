@@ -1,0 +1,3 @@
+
+declare <4 x float> D@llvm.mips.srli.g()
+;  :    !

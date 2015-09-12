@@ -1,0 +1,5 @@
+
+
+target datalayout = "g-p2:32:32-p4:64:64-n32"
+
+@lds = int rnal

@@ -1,0 +1,6 @@
+
+
+
+declare void @fo(i4) safestack ! 2=!  {! 3};
+
+@0 = common gl
