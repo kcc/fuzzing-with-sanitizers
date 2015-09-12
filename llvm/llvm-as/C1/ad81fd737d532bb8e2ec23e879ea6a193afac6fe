@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+
+declare i32 @llvmx86.avx2.psll.w()b
+!3=

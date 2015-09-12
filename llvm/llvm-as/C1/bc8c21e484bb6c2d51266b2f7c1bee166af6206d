@@ -1,0 +1,10 @@
+
+
+
+define void @f() {
+  %a = alloca i9, i32 8
+
+
+
+
+decla.

@@ -1,0 +1,8 @@
+
+
+
+
+define i32 @f1(i16 %x) {
+
+
+bb0:  cm =mcp ip ne i16 %x, 42

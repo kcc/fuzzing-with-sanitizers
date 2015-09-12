@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+define double @foo(double %a) nounwind readonly ss {
+ent

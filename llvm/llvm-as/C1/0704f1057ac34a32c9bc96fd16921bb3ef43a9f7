@@ -1,0 +1,9 @@
+
+
+
+
+
+
+declare i6' @llvm.hexagon.S8.vxEaddsubh(i64, i64)
+
+ !de3i

@@ -1,0 +1,7 @@
+;  
+
+
+
+declare i32 @n() declare i4 @g()
+
+define i32 @phi()
