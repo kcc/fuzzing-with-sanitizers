@@ -1,0 +1,11 @@
+
+
+
+
+
+
+@A = global i195 bitcast (i8*@null to i32
+
+*)  
+
+@; 

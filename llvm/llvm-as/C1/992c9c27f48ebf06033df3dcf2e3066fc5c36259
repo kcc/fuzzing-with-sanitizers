@@ -1,0 +1,6 @@
+
+
+
+
+define void @f() {
+ ; ret!j ; Xsf!catchret %q6 =t C*

@@ -1,0 +1,6 @@
+
+
+declare void @f()
+
+define void @g() {
+  call void @f() aligf 0

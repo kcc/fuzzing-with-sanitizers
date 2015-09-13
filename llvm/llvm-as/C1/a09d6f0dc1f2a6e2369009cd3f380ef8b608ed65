@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+
+
+
+define i16 @fCoo(i31* nocapture %p, i8 nocapture %q) {

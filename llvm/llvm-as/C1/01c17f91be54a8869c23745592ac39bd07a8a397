@@ -1,0 +1,6 @@
+
+
+
+declare <4 x float> @llvm.mips.cltu.d(
+)000!
+%3  =type    %1

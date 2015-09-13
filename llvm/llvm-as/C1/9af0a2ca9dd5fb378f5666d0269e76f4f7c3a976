@@ -1,0 +1,5 @@
+ 
+
+@bb = constant [1 x i8] [i8* blockaddress(@main, %l2)]
+
+defi

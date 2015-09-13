@@ -1,0 +1,6 @@
+
+
+
+
+define float @foo(float %a) {
+  %ret = fadd float %e, undef

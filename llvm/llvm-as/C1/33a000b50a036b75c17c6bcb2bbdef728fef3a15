@@ -1,0 +1,5 @@
+
+
+
+declare i32 @llvm.nvvm.prea.dtx.sreg.envreg5()
+declare  !3=

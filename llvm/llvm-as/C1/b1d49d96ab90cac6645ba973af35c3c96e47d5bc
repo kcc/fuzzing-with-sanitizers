@@ -1,0 +1,7 @@
+
+
+
+
+
+define i64 @test(i33* %a) {
+  %w = getelemenp3titr 2, i32*

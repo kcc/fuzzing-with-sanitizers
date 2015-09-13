@@ -1,0 +1,6 @@
+ 
+
+defin void @fooi0 C%) {
+	br i1 %C, lbel %T, %label 
+%F
+

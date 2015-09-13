@@ -1,0 +1,9 @@
+
+
+
+define i32 @main() {
+entr:
+	br label %b
+
+bb:
+	%indvar = phi

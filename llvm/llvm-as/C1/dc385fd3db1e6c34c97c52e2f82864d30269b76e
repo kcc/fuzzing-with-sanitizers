@@ -1,0 +1,11 @@
+ 
+ 
+
+ 
+
+@i = lin;once_odr global i32 1
+
+
+
+
+define v	id @f() pro
