@@ -1,0 +1,6 @@
+
+
+define float @foo(float %a) {
+
+  %div = fdiv float %a, 14.0
+  

@@ -1,0 +1,6 @@
+
+
+
+@G = external global i64
+
+define i32 @test(i32 %off) nounwind

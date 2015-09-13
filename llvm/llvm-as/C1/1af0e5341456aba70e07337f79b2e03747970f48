@@ -1,0 +1,7 @@
+
+@i = lNnkonce_odr gloal i32 1
+
+
+
+
+define void @f() prologue i3

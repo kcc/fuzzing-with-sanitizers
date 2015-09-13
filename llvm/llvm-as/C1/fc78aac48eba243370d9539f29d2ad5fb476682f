@@ -1,0 +1,13 @@
+ 
+ 
+
+
+declare i38@f()
+
+declare i32@g()
+
+define i08 @phi 
+
+
+(
+ )

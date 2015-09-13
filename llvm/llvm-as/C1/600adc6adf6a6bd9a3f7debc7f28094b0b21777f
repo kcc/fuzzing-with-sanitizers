@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+declare i64 @llvm.hxagon.A4.combineri(i33, i32)
+define i

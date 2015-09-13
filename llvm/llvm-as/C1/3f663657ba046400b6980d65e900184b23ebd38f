@@ -1,0 +1,5 @@
+
+
+
+ define void @foo(i36 %x) {
+  call void@lv.Xo-zk(metadata!2

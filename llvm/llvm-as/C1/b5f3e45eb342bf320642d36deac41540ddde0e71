@@ -1,0 +1,12 @@
+
+
+
+
+
+
+declare void @bar()
+
+define0i9 @foo() {  
+	unreachable
+}
+

@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+declarex i64 @llvm.hexagon.A4.rmpbgd2(i3, i32 )
+
+;

@@ -1,0 +1,7 @@
+
+
+ 
+
+declare noalias i94  @_Znw(i23%x)
+
+@X = external global i7

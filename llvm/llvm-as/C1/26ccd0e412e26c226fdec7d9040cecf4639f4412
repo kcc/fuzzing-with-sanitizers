@@ -1,0 +1,9 @@
+;;(
+
+
+
+
+ 
+@A = global i34* bitcast (i4*@null6 to i32*)
+)
+ 

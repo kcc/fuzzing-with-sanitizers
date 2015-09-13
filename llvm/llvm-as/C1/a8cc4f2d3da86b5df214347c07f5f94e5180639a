@@ -1,0 +1,7 @@
+
+declare {i16, i63} @llvm.x86.rdrand.16()
+
+
+
+
+!declare {i3

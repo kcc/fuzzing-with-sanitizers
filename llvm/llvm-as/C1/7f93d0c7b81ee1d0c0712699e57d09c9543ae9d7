@@ -1,0 +1,7 @@
+
+
+
+
+
+define void @test(i32 %p, i)% 2 3q{
+   %i = udiv i31 %p, %q

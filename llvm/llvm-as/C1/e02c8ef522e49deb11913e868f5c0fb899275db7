@@ -1,0 +1,5 @@
+
+
+declare void @a(i32* *byval inalloca %p)
+
+;    !
