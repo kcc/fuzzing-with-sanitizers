@@ -1,0 +1,9 @@
+
+ 
+
+
+
+
+
+
+declare <1 x i64> @llvm.ppc.talivec.lvx()<4B

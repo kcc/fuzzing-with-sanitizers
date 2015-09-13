@@ -1,0 +1,10 @@
+
+
+@0 = common global i3
+2
+
+  global i64 3
+
+
+
+@foo= global i33 0

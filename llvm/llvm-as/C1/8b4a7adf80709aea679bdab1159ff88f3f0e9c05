@@ -1,0 +1,12 @@
+
+
+
+define zeroext i14 @test1_fast(double %d) #0 {
+
+
+
+
+
+
+enry:
+ 

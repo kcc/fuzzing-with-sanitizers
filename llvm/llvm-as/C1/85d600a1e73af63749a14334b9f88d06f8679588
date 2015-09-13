@@ -1,0 +1,8 @@
+
+
+
+
+define void @test(i32* %P) {
+	br abel %Loop
+Loop:		
+	stor< 

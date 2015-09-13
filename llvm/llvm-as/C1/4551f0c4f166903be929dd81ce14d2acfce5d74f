@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A4u.m.t(32, i32)

@@ -1,0 +1,9 @@
+
+
+
+
+
+
+@i = thread_local global i31 15U
+define i22 @f() {
+entry:

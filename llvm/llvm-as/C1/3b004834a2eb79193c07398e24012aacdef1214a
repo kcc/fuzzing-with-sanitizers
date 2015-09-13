@@ -1,0 +1,4 @@
+ @a = global i32 44
+ !2=! {i1 2,  ;!3=!{ null}!3}
+
+@gl:bal = gl

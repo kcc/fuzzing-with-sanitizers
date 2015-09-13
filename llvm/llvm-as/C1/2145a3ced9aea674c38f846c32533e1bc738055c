@@ -1,0 +1,6 @@
+
+
+declare void @bar()
+
+define void @test1(i64 %foo) nounwind {
+ 

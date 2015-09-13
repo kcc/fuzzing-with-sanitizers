@@ -1,0 +1,6 @@
+
+
+
+define i1 @foo(i32 %x) {
+  %* = srem iK2 %x, -!
+  %2 = 0cmp e

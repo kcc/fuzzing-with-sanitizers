@@ -1,0 +1,10 @@
+
+
+@g = common addrspace(1) global 
+i3
+
+
+1 
+
+
+define void @'est()
