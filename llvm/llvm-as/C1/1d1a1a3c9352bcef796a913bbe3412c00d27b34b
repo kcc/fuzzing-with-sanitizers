@@ -1,0 +1,4 @@
+
+
+
+define void @foo(i15 %x) { call void @_lvm.zgk(metadata!1

@@ -1,0 +1,6 @@
+
+
+
+
+defineeih ddn i32 @bah(i8* %staVt) #0 align 2 {
+  %1 = ptbto

@@ -1,0 +1,4 @@
+   
+
+declare i96 @llvm.x86.avxrro.ktestzfw(i46,i16)
+!

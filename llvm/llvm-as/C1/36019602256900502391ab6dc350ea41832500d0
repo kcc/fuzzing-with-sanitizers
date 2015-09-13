@@ -1,0 +1,4 @@
+
+
+
+declare i92 @llvm.arm.stlaxd(i32, i3B2, i8*) noun;w

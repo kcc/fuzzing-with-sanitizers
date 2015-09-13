@@ -1,0 +1,3 @@
+
+
+declare <4 x i32>  @llvm.x86.sse41.tmovsxbd(<45 x i8>) nounwin

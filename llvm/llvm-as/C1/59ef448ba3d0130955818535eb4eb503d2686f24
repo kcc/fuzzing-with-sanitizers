@@ -1,0 +1,8 @@
+
+
+
+
+define void @Test() {
+entry:
+  insertvalue [5 x i32]
+ undf

@@ -1,0 +1,5 @@
+
+
+define float @eds(float %x, float %y) {
+entry:
+  %r = frem f!
