@@ -1,0 +1,6 @@
+define i75@Foo() {
+E:
+  br label%B
+B0:
+   br label %C
+ 1:

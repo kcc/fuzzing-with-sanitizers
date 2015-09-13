@@ -1,0 +1,6 @@
+ ;
+
+
+declare i32 @n()
+	declare i3 @g()
+define i32 @pi()

@@ -1,0 +1,6 @@
+
+
+declare void @test2()
+
+define i32 @test(i2 %cond, i31 *%P) {
+ 

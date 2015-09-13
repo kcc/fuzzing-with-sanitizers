@@ -1,0 +1,9 @@
+
+
+
+
+
+define <8 x i6>1 @f1(<8 x i16> %val) !J
+
+
+  %cmp = icmp slt

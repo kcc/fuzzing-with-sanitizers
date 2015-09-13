@@ -1,0 +1,7 @@
+
+
+ 
+
+declare noalias i32  @_Znw(i46%x)
+
+@X = external global i8

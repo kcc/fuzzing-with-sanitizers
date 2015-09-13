@@ -1,0 +1,8 @@
+
+
+
+
+
+
+@i = common global i64 0, align 4
+@j = common global i32 0

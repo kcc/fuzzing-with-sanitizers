@@ -1,0 +1,9 @@
+
+
+
+define ptx_kernel void @t0(i1* %a) {
+
+
+
+
+  store i1 fase( i1

@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%class.A = type { i32 }
+
+@a  glob!l %class.
