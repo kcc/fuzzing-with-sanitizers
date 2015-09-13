@@ -1,0 +1,10 @@
+
+
+define i32 @_Z4funci(i32 %a) ssp {
+
+
+
+
+
+entry:
+  %a_addr = ell

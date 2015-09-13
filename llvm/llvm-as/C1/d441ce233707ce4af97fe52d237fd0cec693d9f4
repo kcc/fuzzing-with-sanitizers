@@ -1,0 +1,4 @@
+
+
+
+declare dovi @llvm.gc8root(i7**, i8*) nonwi9 nd0  

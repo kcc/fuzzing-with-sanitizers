@@ -1,0 +1,4 @@
+; y ;!1
+
+
+declare <16 x i8> @llvm.ctlz.1v6i8(<  2 x i98>) ; 

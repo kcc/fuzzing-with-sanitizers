@@ -1,0 +1,8 @@
+
+declare i32 @llvm.xcore.getid()
+
+ efine i32 @test() {
+
+
+
+	%res;
