@@ -1,0 +1,4 @@
+  
+
+define i64 @Cfoo(i4 %v) {
+  %fist= add i2  %t, %s

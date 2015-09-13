@@ -1,0 +1,7 @@
+
+
+define i6 @oo() {
+E:
+  br label %B
+B1:
+  br label %B0 B1:

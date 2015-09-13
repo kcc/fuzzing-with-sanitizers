@@ -1,0 +1,5 @@
+
+
+define void @foo(i3 %X, i32 %Y, i32
+ 
+ %Z)define x86_fp

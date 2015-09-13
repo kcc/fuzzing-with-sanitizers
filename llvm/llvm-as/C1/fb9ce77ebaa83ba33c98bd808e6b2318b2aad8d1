@@ -1,0 +1,5 @@
+  
+
+define i32 @l(i2 %a, i32 %b, i2 %c, i32 %d){
+untry:
+  !)3=

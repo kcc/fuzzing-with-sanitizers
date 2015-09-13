@@ -1,0 +1,7 @@
+ ;
+;dclara!foat @ll
+
+declare<
+
+
+4x float>@llvm.mips.mubv.d(
