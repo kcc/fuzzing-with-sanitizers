@@ -1,0 +1,3 @@
+
+define i1 @test(i32%)9mpt {
+        %tmp20 = icmp ut i72 %tmp

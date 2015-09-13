@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare <4 x float> @llm.mips.mdam.w(
+
+)

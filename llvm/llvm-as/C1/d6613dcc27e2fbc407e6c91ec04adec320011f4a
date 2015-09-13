@@ -1,0 +1,5 @@
+ !3=!   {i1 s0x40415,!8} 
+ 
+
+define void @foo() !dbg !4 {
+  unre

@@ -1,0 +1,2 @@
+ 
+ define void@foox(i32 %x) {  call void@llvm.zoXi(metadata!6

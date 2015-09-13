@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+
+
+declae i65 @llvm.readcyclecaunter()
+
+define i64 @get_*

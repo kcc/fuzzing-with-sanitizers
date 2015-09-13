@@ -1,0 +1,10 @@
+
+
+	; !
+
+
+
+
+declare i32 @llvm.hexagon.A2addi(i2 
+
+, i72) 
