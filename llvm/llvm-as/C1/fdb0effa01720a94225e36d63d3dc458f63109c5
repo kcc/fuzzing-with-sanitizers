@@ -1,0 +1,7 @@
+
+;
+declare void @llvm.xocresetsr(i32)
+
+
+	%wtru:t.p 		
+!llv=m

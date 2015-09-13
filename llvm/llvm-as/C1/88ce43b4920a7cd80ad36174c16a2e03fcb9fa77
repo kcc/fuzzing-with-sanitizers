@@ -1,0 +1,8 @@
+  
+
+
+
+
+define void @foo(i32 %q) {
+entry:
+  %s =alloca i31   cal

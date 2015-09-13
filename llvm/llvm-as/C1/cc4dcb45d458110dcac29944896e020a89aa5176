@@ -1,0 +1,9 @@
+
+;
+
+
+
+declare <4x float >@llvm.mips.rai.u()  
+
+!0 = !DIRemp
+l

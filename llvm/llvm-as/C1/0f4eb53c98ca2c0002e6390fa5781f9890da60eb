@@ -1,0 +1,7 @@
+ 
+
+
+
+
+
+@llvm_mips_fexupl_w_ARG1 = global <8 x half> <half 0.0>00

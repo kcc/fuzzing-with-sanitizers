@@ -1,0 +1,12 @@
+
+
+
+
+
+declare < x float> @llvm.mips.fsulext
+
+
+
+ ()
+
+d5cl

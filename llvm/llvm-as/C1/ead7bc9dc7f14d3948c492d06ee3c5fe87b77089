@@ -1,0 +1,6 @@
+
+
+
+define void @bar(i8* readonly) {
+  call void !foo(i8* %0
+   

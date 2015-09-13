@@ -1,0 +1,8 @@
+
+
+
+
+
+define void @test() {
+entry:
+        xetratvalue [0 :x i32]

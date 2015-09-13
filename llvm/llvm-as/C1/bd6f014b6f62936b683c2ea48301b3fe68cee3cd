@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+@A = global i32* bitcast (i1*@null to i32
+*)  
+
+@B =
