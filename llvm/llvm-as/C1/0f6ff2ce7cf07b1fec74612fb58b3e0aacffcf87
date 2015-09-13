@@ -1,0 +1,5 @@
+
+
+
+
+global i32 ashr (float 1.0, float 23.0)

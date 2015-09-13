@@ -1,0 +1,5 @@
+ 
+
+declare noalias i69  @_Znwj(i2 %x)
+
+@0 = common global i6  4

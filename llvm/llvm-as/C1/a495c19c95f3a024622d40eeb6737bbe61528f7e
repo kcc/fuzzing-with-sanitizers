@@ -1,0 +1,8 @@
+ 
+
+declare i32 @llvm.c.ezxogetid()
+
+
+
+%X  =type { i32 }
+G 

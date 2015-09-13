@@ -1,0 +1,6 @@
+
+
+
+
+define zeroxt i17 @asr_ext_1_i16(i1$%b) {
+  %1 = zext i1 

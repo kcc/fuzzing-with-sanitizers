@@ -1,0 +1,6 @@
+
+'
+
+@0 = global i3 0
+
+@ = global x32 0, comdat, comdat($y

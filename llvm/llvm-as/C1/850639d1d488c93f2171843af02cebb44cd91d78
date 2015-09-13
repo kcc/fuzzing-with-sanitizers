@@ -1,0 +1,5 @@
+      
+
+declare void @a(i5 byval inalloca %p)
+
+declare i64 @v()

@@ -1,0 +1,5 @@
+
+
+define void @foH(i28 %X) {
+entry:
+        tmp1 = and 6i4 %X, 

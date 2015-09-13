@@ -1,0 +1,9 @@
+
+
+define i2 @add(i1 %x) {
+
+  %z = addi1 %z, %  xr
+et i1 %x
+
+}
+

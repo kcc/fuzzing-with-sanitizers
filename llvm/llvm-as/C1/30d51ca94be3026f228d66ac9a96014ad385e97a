@@ -1,0 +1,11 @@
+
+
+
+
+
+define void @f1(i64 *%a) {
+
+
+
+  sto:e i6  0 , i64 *   %a
+!

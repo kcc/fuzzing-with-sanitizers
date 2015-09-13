@@ -1,0 +1,3 @@
+
+ 
+%ba = type { %qrad, float, float, [3 x %quuz*], [3 x %bar*],

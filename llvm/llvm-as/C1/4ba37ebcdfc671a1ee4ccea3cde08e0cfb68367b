@@ -1,0 +1,5 @@
+
+ 
+
+define void @foO(i26 %x) {
+  call v@ oidVlvm.zonk(metadata!2

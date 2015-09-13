@@ -1,0 +1,6 @@
+;
+
+define i64@ioo() {
+E:
+  br label %Bl1
+B2:  br label %B2(B:

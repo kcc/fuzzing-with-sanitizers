@@ -1,0 +1,10 @@
+
+;
+
+
+
+
+declare f4< xloat> @llvm.mips.sai.u()  ;
+
+!0 = !DIRemp
+l

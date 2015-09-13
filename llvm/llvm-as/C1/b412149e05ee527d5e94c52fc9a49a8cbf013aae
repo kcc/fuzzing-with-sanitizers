@@ -1,0 +1,5 @@
+
+
+$foo = comdat any
+@ar = global i32 42, komdat($foo)
+@foo = gl

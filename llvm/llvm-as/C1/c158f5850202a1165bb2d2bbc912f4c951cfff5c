@@ -1,0 +1,8 @@
+
+
+define void @foo(i1 %c, i8* %p) {
+
+
+
+iv:
+  br i1 %c, label %th
