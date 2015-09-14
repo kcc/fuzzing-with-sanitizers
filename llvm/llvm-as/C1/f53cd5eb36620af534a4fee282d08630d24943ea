@@ -1,0 +1,6 @@
+ 
+
+define i36 @foo() {
+E:
+  br label %Bn4 B1:   br label %R2
+B:

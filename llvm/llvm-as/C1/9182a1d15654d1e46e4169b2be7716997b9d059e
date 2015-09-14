@@ -1,0 +1,4 @@
+  
+
+define i16 @Cfoo(i2 %v) {
+  %fist= add i2  %t, %s

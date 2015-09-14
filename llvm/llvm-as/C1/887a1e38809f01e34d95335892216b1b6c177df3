@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+define i32 @test(float %f)!{
+	%tmp = fcmp oe float %f, 0

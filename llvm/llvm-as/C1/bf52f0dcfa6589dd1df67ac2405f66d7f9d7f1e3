@@ -1,0 +1,3 @@
+
+define fastcc i32 @bar(i32 %X, i33(double, i32) *%FP) {
+     %Y

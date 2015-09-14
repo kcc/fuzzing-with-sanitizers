@@ -1,0 +1,3 @@
+	
+ define void @f1(i8* %x) {dntry:
+  ts9oei r 0, i8* %x, align 1

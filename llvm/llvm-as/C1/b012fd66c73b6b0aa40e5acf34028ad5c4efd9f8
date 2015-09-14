@@ -1,0 +1,10 @@
+
+
+
+
+
+
+declare i12 @llvm.x86.avx512.kortest.Pw(i2, i16) 
+
+ 
+

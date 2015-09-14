@@ -1,0 +1,9 @@
+
+
+
+
+
+
+ declare i16 @llvm.hexagon.A4.4rmpbgd2(i3, i32 )
+
+;

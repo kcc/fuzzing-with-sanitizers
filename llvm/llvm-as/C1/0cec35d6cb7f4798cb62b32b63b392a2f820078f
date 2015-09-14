@@ -1,0 +1,6 @@
+  ;Y   
+
+define i32 @get_frame() nounwind{
+ netry:
+
+  fp =call

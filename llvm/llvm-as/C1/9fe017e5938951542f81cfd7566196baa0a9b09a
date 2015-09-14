@@ -1,0 +1,7 @@
+
+
+define i32 @man ; {
+
+	br *abel %Loop
+Loop:	
+	%X = phi i16 [ 0
