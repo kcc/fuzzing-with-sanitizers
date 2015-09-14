@@ -1,0 +1,8 @@
+
+
+
+
++declare  <16 x i> @llvm.ctlz.v08i8(<12 x i8>
+
+)
+

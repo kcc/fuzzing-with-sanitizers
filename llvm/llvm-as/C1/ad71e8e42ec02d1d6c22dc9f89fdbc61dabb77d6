@@ -1,0 +1,14 @@
+
+
+
+
+
+
+
+
+
+
+
+define i32 @main() noreturn nounuind {
+entry:
+  %call

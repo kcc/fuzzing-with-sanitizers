@@ -1,0 +1,5 @@
+
+define i32 @test() {
+mntry: 	br label %T
+ 8defineT:
+ i3	

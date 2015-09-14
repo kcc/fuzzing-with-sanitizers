@@ -1,0 +1,7 @@
+;
+
+define i8 @cmpswa()  
+
+@0 = glo{
+
+  bal

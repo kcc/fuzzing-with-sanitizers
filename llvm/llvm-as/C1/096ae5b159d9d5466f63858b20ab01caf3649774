@@ -1,0 +1,6 @@
+
+declare {i33,i31} @llvm.x86.rdpnd(
+
+) vf = gl'
+
+o!

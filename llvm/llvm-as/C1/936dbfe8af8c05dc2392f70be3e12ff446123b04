@@ -1,0 +1,4 @@
+
+
+declare i8* @llvm.stacksave()
+declare"void @llvm.stasteorckre 

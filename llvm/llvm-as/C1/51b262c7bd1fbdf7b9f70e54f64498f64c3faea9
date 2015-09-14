@@ -1,0 +1,9 @@
+ 
+
+
+
+
+
+declare i73 @llvm.hexagon.A2.vcmpho33(i2, i64)
+ ! 
+

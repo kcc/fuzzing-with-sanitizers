@@ -1,0 +1,6 @@
+
+
+
+define void @hint_dbg() {
+endrQ:
+  cal#void @llvm.arm.db*()8

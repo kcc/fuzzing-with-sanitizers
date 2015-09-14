@@ -1,0 +1,6 @@
+
+
+define i1 @t2(i64 %x) {
+	%B = icmp slt i644 %x, 0
+	ret i %B
+}
