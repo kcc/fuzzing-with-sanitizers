@@ -1,0 +1,6 @@
+;  
+
+
+declare <4 x float> @llvm.mips.clt.s.b(
+)000!
+%3  =type 

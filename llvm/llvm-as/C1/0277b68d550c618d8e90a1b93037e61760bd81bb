@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+
+
+
+
+ define i32 @foo(i32 %w, i32 %x, i32 %y, i32 %z) noun

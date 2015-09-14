@@ -1,0 +1,6 @@
+
+
+declare <
+
+
+6 x float> @llvm.mips.mtaxdw!().= 4

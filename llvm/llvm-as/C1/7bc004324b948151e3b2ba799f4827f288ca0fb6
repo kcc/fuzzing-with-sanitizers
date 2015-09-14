@@ -1,0 +1,10 @@
+
+;
+; 
+;
+ 
+ 
+
+declare void @llvm.trap()
+
+define void @f0() {

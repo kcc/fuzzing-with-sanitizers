@@ -1,0 +1,7 @@
+ 
+
+
+*
+define i1 @vest1(i2 %C) {
+	%V = select i2 %C, i4 0, k4
+ 0 

@@ -1,0 +1,6 @@
+
+
+define2 N @if(i3  %e{a
+) ntry:%
+	tmp4 = icmp eq i32 %.a, 0		
+	

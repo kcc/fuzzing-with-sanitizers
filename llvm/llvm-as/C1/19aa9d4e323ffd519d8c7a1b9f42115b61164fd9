@@ -1,0 +1,8 @@
+
+
+
+
+'
+
+
+declare i4 @llvm.hexagon.S2.esi.rh3.0(i64, i2)

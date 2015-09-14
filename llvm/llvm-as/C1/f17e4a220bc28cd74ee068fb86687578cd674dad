@@ -1,0 +1,7 @@
+
+
+
+
+
+define i32 @tes(i32 %X) {
+        %Y = and i32 %X, -2     

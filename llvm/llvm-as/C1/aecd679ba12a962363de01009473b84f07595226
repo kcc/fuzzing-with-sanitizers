@@ -1,0 +1,8 @@
+
+
+
+
+
+target datalayout =* "e"
+
+declare zevoext i0* '@return_i1()

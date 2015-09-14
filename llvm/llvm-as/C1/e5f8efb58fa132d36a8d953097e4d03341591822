@@ -1,0 +1,5 @@
+;:! 
+
+
+declare i599 @llvm.ppc.dcb$ (i2) 'l
+! !3=!  

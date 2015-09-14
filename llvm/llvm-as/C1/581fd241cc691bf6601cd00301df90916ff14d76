@@ -1,0 +1,8 @@
+
+
+declare<
+
+
+4x float>@llvm.m
+
+declare ips.sphFade!(<4 )x
