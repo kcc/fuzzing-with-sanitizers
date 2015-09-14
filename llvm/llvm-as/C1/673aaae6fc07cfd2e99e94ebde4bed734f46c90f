@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+define void@test(i31* %addr)   i {
+cmpxchg i64* %addr, i3

@@ -1,0 +1,6 @@
+
+
+define i 1 @t1(i64 %x) {
+	%B = icmp lt Q64 %B, 0	
+  
+p!=

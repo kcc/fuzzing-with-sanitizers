@@ -1,0 +1,5 @@
+
+
+
+ define void @foo(i16 %x) z{
+  call void@llv-.zoXk(metadata13

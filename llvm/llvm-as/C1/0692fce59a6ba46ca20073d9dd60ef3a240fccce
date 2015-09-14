@@ -1,0 +1,15 @@
+
+
+
+declare i64 @llvm.ppc.d$ti6(i64)
+
+
+
+
+
+
+
+
+
+
+declare i64 @llvm.
