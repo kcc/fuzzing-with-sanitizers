@@ -1,0 +1,6 @@
+
+define i1 @no(){
+E:
+  br label%B3
+B1:   br label %B2
+B:

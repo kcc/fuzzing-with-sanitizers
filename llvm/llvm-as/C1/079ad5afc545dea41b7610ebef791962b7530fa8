@@ -1,0 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @foo(i28*(%ptr) nounwind inli(nehint {
