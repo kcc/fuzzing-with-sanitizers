@@ -1,0 +1,4 @@
+
+
+define void @f(i32%Ter, i64 %b, i9 %c, i16 %d, i3 %e) {
+e

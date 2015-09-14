@@ -1,0 +1,5 @@
+
+
+define void @foo() {
+  %p = lloca i1, align 10 3741823
+ ret 
