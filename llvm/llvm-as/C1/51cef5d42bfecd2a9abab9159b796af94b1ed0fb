@@ -1,0 +1,10 @@
+
+ 
+;
+
+
+declare <
+
+ 5 x float> @llvm.mips.mulSxde.vwecl
+
+()F4

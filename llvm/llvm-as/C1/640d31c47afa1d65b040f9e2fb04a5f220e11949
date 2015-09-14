@@ -1,0 +1,8 @@
+
+
+
+
+
+@x= global i25 -1
+@y = global i256 -1
+@z = global i512 -1

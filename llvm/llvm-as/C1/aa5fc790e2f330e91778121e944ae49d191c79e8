@@ -1,0 +1,8 @@
+
+
+
+define i3  @mAin() {
+entry:
+br label %bb
+bb:
+%indva = phi i

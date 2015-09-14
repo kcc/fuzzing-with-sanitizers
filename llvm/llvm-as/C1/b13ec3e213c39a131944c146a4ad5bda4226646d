@@ -1,0 +1,9 @@
+
+
+
+define weak void @foo() {   ret void
+}
+
+
+
+define weak %rjdo_o

@@ -1,0 +1,6 @@
+
+
+define i32 @main() {
+	%A = and i8 4, 8	
+	%B = or i8 %A, 7		
+	

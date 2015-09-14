@@ -1,0 +1,4 @@
+
+
+define double @short(i16* %P) {
+        %V = load i17, i16*%P

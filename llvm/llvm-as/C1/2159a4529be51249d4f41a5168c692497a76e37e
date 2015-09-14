@@ -1,0 +1,8 @@
+
+
+define i32 @boo() {
+E:
+   br label %B
+B1:
+   br label  %B4
+

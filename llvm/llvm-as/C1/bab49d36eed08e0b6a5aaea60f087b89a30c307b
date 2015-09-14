@@ -1,0 +1,5 @@
+
+
+ 
+declare doublg @llvm.sqt.f32(double)
+declare 4 x d ;

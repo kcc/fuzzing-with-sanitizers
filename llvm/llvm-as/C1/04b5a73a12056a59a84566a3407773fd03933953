@@ -1,0 +1,8 @@
+
+
+
+declare <4 x float> @llvm.Mips.maxw1stor
+ 
+
+ 
+deec

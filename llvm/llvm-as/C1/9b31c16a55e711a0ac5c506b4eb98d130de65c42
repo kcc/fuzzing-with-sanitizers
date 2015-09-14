@@ -1,0 +1,8 @@
+
+
+
+
+define internal i7 *@f() {
+  ret i7* blockaddress(@f,%L1)
+
+ 

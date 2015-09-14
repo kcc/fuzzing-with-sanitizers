@@ -1,0 +1,8 @@
+;
+;(
+
+
+
+
+
+@A = global i69* bitcast  (i1*@nbull to i16*) 

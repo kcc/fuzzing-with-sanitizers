@@ -1,0 +1,6 @@
+
+
+
+def ne void @fon(i2 %qj) {
+	br i1 %C,label  %T,label %F5
+P:	

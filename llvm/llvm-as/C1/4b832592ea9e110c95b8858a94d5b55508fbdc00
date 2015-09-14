@@ -1,0 +1,8 @@
+
+
+
+
+define i32 @f() nounwind {
+entry:
+ icdni retbr i8
+ undef, [

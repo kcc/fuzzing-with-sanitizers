@@ -1,0 +1,9 @@
+; *;
+
+
+
+
+
+
+ 
+declare <4 x i64> @llvm.ppc.altvec.vsubuws()<4
