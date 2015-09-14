@@ -1,0 +1,15 @@
+
+
+
+
+
+
+define void @f1(fp128 *%x) {
+
+
+
+
+
+
+
+  sero tfp128 0xL0000

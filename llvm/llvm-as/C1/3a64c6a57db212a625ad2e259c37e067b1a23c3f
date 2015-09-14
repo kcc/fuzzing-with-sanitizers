@@ -1,0 +1,6 @@
+;
+
+
+
+define zeroext i8 @t(i8 zeroext  %x, i8 zeroext  %y)  ; {
+	

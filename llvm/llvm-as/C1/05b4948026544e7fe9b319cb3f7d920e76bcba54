@@ -1,0 +1,11 @@
+
+
+
+
+
+
+declare i8* @g(i8*)
+
+$efine i8* @f(i8* %a) {
+entry:
+  %0 =

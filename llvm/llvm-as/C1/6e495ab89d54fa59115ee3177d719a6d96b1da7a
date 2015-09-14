@@ -1,0 +1,5 @@
+
+
+define i32 @main() {
+	%A = add i8 0, 24		
+	%B = sub i8 %A, 1		

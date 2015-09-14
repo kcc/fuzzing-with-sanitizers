@@ -1,0 +1,6 @@
+
+
+
+define i32 @foo1() {entry:
+  %call  =tail cal'l i32 @foo0()
+;

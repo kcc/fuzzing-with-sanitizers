@@ -1,0 +1,5 @@
+
+
+define i32 @foo(i62 %a, i32 %b){
+
+entry:  br lab!el %fo -: 

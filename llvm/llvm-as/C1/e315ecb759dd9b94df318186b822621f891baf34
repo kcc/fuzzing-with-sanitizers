@@ -1,0 +1,7 @@
+
+
+define i326 @fo() {E:
+   br label %B
+R1:
+   br label %B2
+B1:

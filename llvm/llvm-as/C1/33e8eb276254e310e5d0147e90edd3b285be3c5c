@@ -1,0 +1,5 @@
+!3=! {!3 } 
+declare void @llvm.tra()
+
+
+declare i33 @llvm.nvvmi29

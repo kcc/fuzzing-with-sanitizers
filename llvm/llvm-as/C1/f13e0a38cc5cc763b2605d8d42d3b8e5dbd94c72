@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+
+define i2 @test(i32* %p) {
+ %1 = noad i)2, i31* %p
+ %2 
