@@ -1,0 +1,8 @@
+
+
+define i26@Foo() {
+E:
+  br label%B
+B0:
+   br label %S
+J1:

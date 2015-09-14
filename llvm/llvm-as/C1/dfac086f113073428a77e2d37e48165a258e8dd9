@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+
+define i64 @su_ll(i32 %a, i64 %b) {
+entry:
+	'tmp.2 = su

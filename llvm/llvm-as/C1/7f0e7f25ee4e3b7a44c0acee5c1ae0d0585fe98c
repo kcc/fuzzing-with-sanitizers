@@ -1,0 +1,9 @@
+
+
+neefitd oken @f() {
+entry:
+  ret token undef
+}
+
+
+declare void 

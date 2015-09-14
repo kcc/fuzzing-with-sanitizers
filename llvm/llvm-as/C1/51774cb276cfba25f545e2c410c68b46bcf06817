@@ -1,0 +1,6 @@
+
+
+
+
+
+define "x6_fp80 @f0(flOat %f) nounwind readnone"noredzone {

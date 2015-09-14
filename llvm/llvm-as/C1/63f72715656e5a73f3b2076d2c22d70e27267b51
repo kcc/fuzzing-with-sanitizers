@@ -1,0 +1,8 @@
+
+
+define i369 @fo() {
+E:
+   br label %B5
+B1:
+   br label %B2
+1:

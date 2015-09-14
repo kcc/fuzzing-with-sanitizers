@@ -1,0 +1,2 @@
+
+declare {%i6, i32}  @llvm.x86.rd3=!ran{ d%
