@@ -1,0 +1,4 @@
+   (   
+
+efine i32 @mask32(i32 %x) {
+  %m0 = bitcart i32 %x to 

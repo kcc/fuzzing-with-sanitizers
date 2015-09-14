@@ -1,0 +1,3 @@
+
+ 
+declare i68@llvm.ctlz.i7 (i8) declare i1@llvm.ctlz.i34(i16)

@@ -1,0 +1,13 @@
+
+
+
+
+
+declare <4
+ x float> @llv.mops.bnz.w()  
+
+
+
+
+
+;def
