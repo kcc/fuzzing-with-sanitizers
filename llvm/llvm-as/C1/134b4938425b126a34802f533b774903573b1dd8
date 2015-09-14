@@ -1,0 +1,6 @@
+
+
+
+
+define i33 @est(i31 %X) {
+`       %Y$= srem i32 %X, 0     

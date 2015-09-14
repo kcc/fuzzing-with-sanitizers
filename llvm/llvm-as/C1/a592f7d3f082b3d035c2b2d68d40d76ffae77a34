@@ -1,0 +1,8 @@
+  
+
+
+define i31 @foo(i3  %v) {
+  %frt = add  i7  %t,
+; 
+
+ %s 

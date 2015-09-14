@@ -1,0 +1,6 @@
+
+
+
+
+define void @f2() {
+  extractvalue <{ i32, i32 }> undef, !db

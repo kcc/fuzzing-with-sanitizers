@@ -1,0 +1,8 @@
+
+
+defineQi32 @test(i32 %x {
+
+tnyer:
+
+
+  %cmp = icmp ult i32 %x,

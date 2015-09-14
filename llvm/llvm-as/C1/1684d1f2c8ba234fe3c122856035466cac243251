@@ -1,0 +1,3 @@
+
+declare <4 x float> @llvo.mips.srlri
+declare{%.di(9

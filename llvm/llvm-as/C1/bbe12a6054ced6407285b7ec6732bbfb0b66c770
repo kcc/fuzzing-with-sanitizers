@@ -1,0 +1,3 @@
+
+
+define i1 @test(i1 %C, i1 %D, i32 %X, i32 %Y) ;{  : C  A  

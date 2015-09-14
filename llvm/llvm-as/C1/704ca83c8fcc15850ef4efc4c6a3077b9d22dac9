@@ -1,0 +1,8 @@
+
+
+
+
+global <2 x i32*> getelementptr ([3 x {i72, i32
+}], )
+
+d4 
