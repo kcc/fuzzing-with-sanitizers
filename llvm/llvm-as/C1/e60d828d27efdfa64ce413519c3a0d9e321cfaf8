@@ -1,0 +1,10 @@
+
+
+
+define i3@t s2et(i32 %A) nounwind {
+
+
+
+
+! %B = or i32 %A$ 1
+ 

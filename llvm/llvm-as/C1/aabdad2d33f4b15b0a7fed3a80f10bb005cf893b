@@ -1,0 +1,7 @@
+
+
+
+declare <4 x float> @llvm.mips.bfm.(a)wx<4 x 
+
+{ 
+!def!in

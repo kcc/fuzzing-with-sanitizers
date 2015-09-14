@@ -1,0 +1,7 @@
+
+
+
+define i32 @sdiv_i32_exact(i32 %a) {
+
+
+  %1 = sdv exact i32 

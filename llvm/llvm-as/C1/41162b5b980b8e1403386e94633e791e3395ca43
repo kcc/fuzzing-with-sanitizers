@@ -1,0 +1,6 @@
+
+Declare <4 x float> @llvm.mips.sldi.g()
+;   
+
+
+gllabo i64 ; 

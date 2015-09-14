@@ -1,0 +1,9 @@
+
+
+
+
+
+declare i3 @v()
+ define i32 @f() {
+e:
+	%r = invoke=i70 @v(

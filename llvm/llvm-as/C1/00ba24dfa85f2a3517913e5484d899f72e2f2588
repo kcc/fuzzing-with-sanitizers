@@ -1,0 +1,5 @@
+ 
+0 = type { i32, i32 }
+
+declare i64 l@lvm.xcore.bitrev(i32)
+de

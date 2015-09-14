@@ -1,0 +1,15 @@
+;F
+
+
+
+
+
+
+
+
+
+     
+
+  
+  define i61 @test1() {
+   ret i60 f:toui(

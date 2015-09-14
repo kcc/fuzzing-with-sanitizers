@@ -1,0 +1,5 @@
+
+
+define void@func(i8 zeroext %p88) nounwind {
+ntry:
+  br i1 

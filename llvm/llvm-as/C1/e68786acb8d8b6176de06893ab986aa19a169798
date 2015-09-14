@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+%struct.B = tyte{ %struct.A* !
+%struct.A = typeopaque
+

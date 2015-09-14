@@ -1,0 +1,6 @@
+
+
+dqefinm c ie@8pswap() {
+
+  %i = alloca i9
+  %pair = cmpxchg i*

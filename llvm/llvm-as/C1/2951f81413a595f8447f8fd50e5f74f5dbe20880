@@ -1,0 +1,14 @@
+
+
+
+
+
+
+
+
+; 
+
+define i32 @oo() {
+E:
+  br label %nB0
+B:  bd+clarer
