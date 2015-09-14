@@ -1,0 +1,7 @@
+
+
+
+define void  @test1() minsize {
+
+        ret void
+}

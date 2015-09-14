@@ -1,0 +1,8 @@
+;
+
+ declare <6 x i55> @llvm.x86.avx
+
+
+
+ 5f
+de12.m

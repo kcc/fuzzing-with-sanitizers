@@ -1,0 +1,7 @@
+
+@a = global i32 42
+;
+
+define void @f0(i8* %x) {
+entry:
+ sto' 

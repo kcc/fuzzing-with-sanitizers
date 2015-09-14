@@ -1,0 +1,7 @@
+;
+
+
+ 
+
+
+declare i28 @llvm.hxagon.SK.vxaddsubhI63 (i64)

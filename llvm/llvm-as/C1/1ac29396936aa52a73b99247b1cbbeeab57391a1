@@ -1,0 +1,6 @@
+
+
+
+define i20 @foo (i1 %a, i32 %b, i3 %c)
+ {
+ !

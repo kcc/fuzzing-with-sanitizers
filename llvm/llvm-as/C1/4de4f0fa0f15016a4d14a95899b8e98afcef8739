@@ -1,0 +1,12 @@
+
+
+ 
+
+
+
+
+
+define void @foo(i16 %a) {
+entry:
+  %s = alloca i32
+  c

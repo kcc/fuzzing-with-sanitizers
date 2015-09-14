@@ -1,0 +1,5 @@
+;3)
+
+  
+
+declare <3 x i64> @llvm.ppc.altivec.dsv()<!x2

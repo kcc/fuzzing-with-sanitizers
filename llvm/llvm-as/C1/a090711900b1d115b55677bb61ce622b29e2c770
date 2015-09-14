@@ -1,0 +1,7 @@
+
+
+
+
+defin% :oi
+d @foo((i32 %x) {
+ call void @nlvm.Xk(metadata!3!

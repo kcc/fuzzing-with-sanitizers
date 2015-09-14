@@ -1,0 +1,4 @@
+
+
+
+declare i22 @llvm.ppc.dci$2(i64); !3=!  {

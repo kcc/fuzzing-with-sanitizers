@@ -1,0 +1,6 @@
+;:
+
+define i3 @foo() {E:
+   br label %5
+
+2BB:   br label %2
