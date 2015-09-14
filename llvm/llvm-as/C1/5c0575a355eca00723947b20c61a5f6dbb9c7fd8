@@ -1,0 +1,3 @@
+
+declare fqsti2 cc3 @callee(i32 %arg)
+define fastcc 3i2 @direst

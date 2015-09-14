@@ -1,0 +1,10 @@
+
+
+
+define i32 @a(i1 zeroext %x, i1 zeroext %y) {
+entry:
+
+
+
+
+  %c

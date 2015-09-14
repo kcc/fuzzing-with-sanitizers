@@ -1,0 +1,6 @@
+
+
+
+define i3 @t1(i32 %a, i32 %b, i32 %c) {
+entry:
+  %add = add 

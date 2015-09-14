@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+define i32 @test(i32 %n) {
+entry:
+  %cmp = icmp slt i64 %

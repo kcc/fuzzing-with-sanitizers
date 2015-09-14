@@ -1,0 +1,7 @@
+
+
+declare void @llvm.mx86.sse2lfence() n
+
+
+
+deocu

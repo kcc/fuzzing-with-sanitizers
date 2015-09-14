@@ -1,0 +1,7 @@
+
+
+
+define i34@foo() {
+E:
+   br label %B8
+S1:   ' label %B2
