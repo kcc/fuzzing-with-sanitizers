@@ -1,0 +1,10 @@
+  
+
+
+
+
+
+define void @fon(i3 %q) {
+	br i1 %C, label %T,N
+
+declal

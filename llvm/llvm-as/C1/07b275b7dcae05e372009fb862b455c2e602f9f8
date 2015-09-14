@@ -1,0 +1,5 @@
+
+
+
+
+declare signext i32 @eemcmp(i8 *%src1, i8 *%src2, i64 %size)

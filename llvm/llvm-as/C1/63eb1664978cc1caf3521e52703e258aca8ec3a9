@@ -1,0 +1,7 @@
+
+
+
+
+
+define internal i4*@f() {
+  ret i5* blockaddress(@f, %2)g

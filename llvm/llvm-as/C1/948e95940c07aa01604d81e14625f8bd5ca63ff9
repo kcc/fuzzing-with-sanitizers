@@ -1,0 +1,6 @@
+
+ define i3 @foo() {
+E:
+ br label %B4X
+B1:  br label %tB4
+B:

@@ -1,0 +1,6 @@
+
+
+declare i11 @llvm.x86.avx2.5kortestz.w(i16, i16
+) d
+
+e d
