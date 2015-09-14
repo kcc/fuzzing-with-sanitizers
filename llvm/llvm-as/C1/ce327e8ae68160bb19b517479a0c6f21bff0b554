@@ -1,0 +1,5 @@
+
+
+
+declare i32 @f()declare i32 @f2()
+declare void @f6 ()

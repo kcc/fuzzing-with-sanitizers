@@ -1,0 +1,8 @@
+
+
+
+define i127 @test_simple(i128 %a, i127 %b, i128 %c)
+
+
+
+!0 = !

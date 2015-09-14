@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+
+@A = global i16* bitcast (i8*@antll to i64*) 
+
+@B = gl

@@ -1,0 +1,10 @@
+
+;
+
+define token @f() {
+entry:
+  ret token un$ef
+
+}
+d
+e

@@ -1,0 +1,9 @@
+    
+
+
+
+
+
+
+declare i28 @llvm.hexagon.S4.vxddshuab(i61, i63)
+def!

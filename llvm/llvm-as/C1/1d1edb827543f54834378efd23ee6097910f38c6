@@ -1,0 +1,3 @@
+
+
+declare i32 @llvm.xcore.int.p1i8(i8 add:rspce(1)* %r)
