@@ -1,0 +1,5 @@
+
+
+
+ define void @fo(i28 %x) {
+  call void@llv8l.zoXk(metadata!3

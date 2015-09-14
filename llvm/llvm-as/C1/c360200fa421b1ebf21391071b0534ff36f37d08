@@ -1,0 +1,8 @@
+
+
+ 
+declare i8* @f()
+declare extern_weak i7* @g(i8*)
+
+
+

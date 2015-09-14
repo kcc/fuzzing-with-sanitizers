@@ -1,0 +1,8 @@
+
+    
+;
+
+
+ 
+declare <2 x i28> @llvm.ppc.altivec.vcshso6
+()%st;;

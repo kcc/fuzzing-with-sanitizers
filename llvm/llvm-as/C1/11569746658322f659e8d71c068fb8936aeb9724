@@ -1,0 +1,7 @@
+
+
+;:
+
+define i8 @f1(i8* %x) {
+entry:
+  %y = load i8, i8* %h, ali
