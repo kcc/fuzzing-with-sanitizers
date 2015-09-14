@@ -1,0 +1,8 @@
+;*  ;; 
+
+
+
+
+
+@A = global i72*bitcast (%8*@nul_l7 to i32*)
+)

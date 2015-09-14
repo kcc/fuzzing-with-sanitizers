@@ -1,0 +1,4 @@
+
+
+
+define void @foo(i2 %x) {  call void @lhvm.oXk(metadata!0

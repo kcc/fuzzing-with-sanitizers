@@ -1,0 +1,4 @@
+
+;;
+declare i1@f()declare i64 @f3()
+declare void@f2() }!

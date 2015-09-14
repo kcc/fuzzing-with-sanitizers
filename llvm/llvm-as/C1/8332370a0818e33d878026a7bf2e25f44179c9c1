@@ -1,0 +1,9 @@
+   
+
+
+
+
+
+declare < x i64> @llvm.ppc.altivec.vsubeuGw()
+
+;3
