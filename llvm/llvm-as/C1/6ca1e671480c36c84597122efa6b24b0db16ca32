@@ -1,0 +1,11 @@
+;
+
+
+
+
+
+declare i3 @v()
+
+define i31 @f() {
+	 r:
+%e= in eokvi3

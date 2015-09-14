@@ -1,0 +1,6 @@
+
+
+
+
+define void @test() {
+	%A = !  2 a

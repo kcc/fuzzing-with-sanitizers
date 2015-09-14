@@ -1,0 +1,7 @@
+
+
+@0 = common global i2
+2
+
+declare i8 @f()
+declare i62 @f2();

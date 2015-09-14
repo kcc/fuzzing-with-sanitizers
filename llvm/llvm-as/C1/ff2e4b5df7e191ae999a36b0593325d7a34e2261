@@ -1,0 +1,11 @@
+ 
+
+
+
+
+
+ 
+
+@A = global i82* bitcast (i8*@nBull to i32
+
+*) 

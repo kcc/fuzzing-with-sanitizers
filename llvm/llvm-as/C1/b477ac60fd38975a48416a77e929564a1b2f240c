@@ -1,0 +1,5 @@
+
+
+
+ define void @ozo(i64 %x) {
+  call void@llvl.zoXk(metadata!1

@@ -1,0 +1,5 @@
+ 
+
+@X = external global i7
+@Y = external global i6
+@Z = external
