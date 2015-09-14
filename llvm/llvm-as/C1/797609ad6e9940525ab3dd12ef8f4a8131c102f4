@@ -1,0 +1,9 @@
+  ;  " ; 
+-
+declare void @llVm.x86.sse2.psrli.w
+
+ 
+; 	 !3
+
+
+()

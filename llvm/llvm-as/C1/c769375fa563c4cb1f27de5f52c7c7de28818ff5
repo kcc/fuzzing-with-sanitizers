@@ -1,0 +1,3 @@
+
+ 
+declare void @llm.dbg.declare(metadata, metadata, metadata)

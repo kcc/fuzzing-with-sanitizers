@@ -1,0 +1,6 @@
+
+
+
+
+define 1 @test_ult(i256 %a) nounwind {
+  1 ip *=m ult i(256

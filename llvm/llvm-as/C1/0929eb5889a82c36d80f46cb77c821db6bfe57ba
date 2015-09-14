@@ -1,0 +1,9 @@
+
+
+declare i11 @f1()
+declare i32
+
+;
+
+ @d2(
+)declare void @F ()

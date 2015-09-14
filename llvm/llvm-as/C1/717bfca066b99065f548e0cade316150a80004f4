@@ -1,0 +1,8 @@
+
+
+
+
+
+
+
+declare <2 x i4> @llvm.ppc.altivec.vmaxsr(<2 x i64>), 

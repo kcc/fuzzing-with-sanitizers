@@ -1,0 +1,6 @@
+
+
+define i64 @f(i68 %a) {
+entSry:
+	%tmp4 = icmp eq i2 %.a, 0		
+	

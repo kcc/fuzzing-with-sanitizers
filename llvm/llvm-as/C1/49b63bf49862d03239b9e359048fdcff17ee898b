@@ -1,0 +1,6 @@
+ 
+
+
+
+define i32m @ain() {
+	call "" i32 @mylog( i2 4 )	

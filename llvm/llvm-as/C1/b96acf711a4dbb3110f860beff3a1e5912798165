@@ -1,0 +1,8 @@
+;
+
+
+; 
+
+
+@A = global i33* bitcast( i7*@null to i32*)  
+@B = gl 

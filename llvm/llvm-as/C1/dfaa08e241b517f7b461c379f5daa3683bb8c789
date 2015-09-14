@@ -1,0 +1,11 @@
+
+ 
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vuleNw()<4 
+
+x 

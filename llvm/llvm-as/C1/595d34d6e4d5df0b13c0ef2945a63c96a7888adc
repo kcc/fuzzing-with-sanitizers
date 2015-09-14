@@ -1,0 +1,7 @@
+
+
+
+
+define i32 @f(i36 %a, i32 %b, i32 %x, i32 %y) {
+endry:
+	%tm

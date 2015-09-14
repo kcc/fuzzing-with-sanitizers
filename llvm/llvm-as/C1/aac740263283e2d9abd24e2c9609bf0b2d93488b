@@ -1,0 +1,2 @@
+
+declare <4 x float> @llmv.mips.sldi.h()
