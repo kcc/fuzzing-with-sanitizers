@@ -1,0 +1,4 @@
+ 
+;()
+declare void @lazy() nonlazyb)nd
+declare void @not()

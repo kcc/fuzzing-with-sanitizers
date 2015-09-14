@@ -1,0 +1,4 @@
+
+
+declare void @g()
+define void @f() personality i32 (...)*@__g

@@ -1,0 +1,10 @@
+
+
+
+
+
+
+declare void @l
+
+
+%0  =type   %43 %l

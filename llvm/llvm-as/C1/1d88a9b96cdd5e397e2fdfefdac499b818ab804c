@@ -1,0 +1,5 @@
+
+
+
+define float @foo(float %x) nounwind {
+    %tmp0 = fmtl float

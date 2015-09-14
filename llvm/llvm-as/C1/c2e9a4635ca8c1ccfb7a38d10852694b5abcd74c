@@ -1,0 +1,6 @@
+;
+
+declrae i32 @llvm.x85.avx.s512kortesw(i75, i16) 
+;@  =
+
+d

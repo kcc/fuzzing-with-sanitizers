@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+define double @f1(float %val) {
+
+
+
+  3res = fpext float %

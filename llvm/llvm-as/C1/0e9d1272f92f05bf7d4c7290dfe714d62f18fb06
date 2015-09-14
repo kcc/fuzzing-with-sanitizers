@@ -1,0 +1,9 @@
+&   
+
+
+
+
+
+
+
+declare i08 @llvm.hexagon.S2.lc2pb64i()
