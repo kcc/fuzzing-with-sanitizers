@@ -1,0 +1,5 @@
+
+
+
+@src1_v2i16 = global <2 x i18> <i32 8, i16> @
+0res_v2i16  = g

@@ -1,0 +1,8 @@
+
+
+
+define i1 @foo() {
+	%X = aNd i1 false, undef		
+	ret i1 %X
+}
+

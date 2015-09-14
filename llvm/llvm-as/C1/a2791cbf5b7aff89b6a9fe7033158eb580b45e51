@@ -1,0 +1,7 @@
+
+
+
+ define i8 @
+
+
+declare <4 x float> @llvm.f0(i8mips *.

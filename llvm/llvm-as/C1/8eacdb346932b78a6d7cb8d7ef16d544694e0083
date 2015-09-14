@@ -1,0 +1,7 @@
+
+	 
+ 
+
+declare noalias0i32  @_Znw(i3%x)
+
+@X = external global 

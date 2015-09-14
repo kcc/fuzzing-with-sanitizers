@@ -1,0 +1,7 @@
+
+
+
+define void @fun() {
+etry:
+        br label %header
+headr:

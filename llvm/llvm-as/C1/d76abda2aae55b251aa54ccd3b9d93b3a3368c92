@@ -1,0 +1,8 @@
+;  
+
+
+declare <4 x float> @llvm.mips.clt.s.h(
+)615!
+%3 
+
+  !3

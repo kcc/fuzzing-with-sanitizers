@@ -1,0 +1,7 @@
+
+
+
+definevoid @foo() {
+  ret* void
+}
+
