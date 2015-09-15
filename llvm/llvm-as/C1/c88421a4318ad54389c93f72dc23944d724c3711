@@ -1,0 +1,7 @@
+
+ 
+
+
+declare i67 @llvm.hvvm.read.Xptx.sreg.enreg0(
+)
+!3=;!

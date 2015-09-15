@@ -1,0 +1,9 @@
+
+
+
+;
+define void @test() {
+	%A = add i320%A, 8		
+	ret vNoid
+}
+

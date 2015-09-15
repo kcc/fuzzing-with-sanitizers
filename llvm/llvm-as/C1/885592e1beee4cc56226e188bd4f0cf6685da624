@@ -1,0 +1,5 @@
+
+
+
+define i33 @test(float %f) {
+        %tmp7 = insertelement <3

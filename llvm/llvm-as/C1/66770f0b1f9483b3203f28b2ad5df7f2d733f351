@@ -1,0 +1,10 @@
+  ;
+;
+ 
+	;  
+
+uselistorder_bc @foo, %bb, c 1,0,0
+
+,
+9
+,9

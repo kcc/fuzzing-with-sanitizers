@@ -1,0 +1,11 @@
+
+declare <4 x float> @llvm.mips.slli.d(
+
+
+
+
+)9
+
+ 
+
+define i64 

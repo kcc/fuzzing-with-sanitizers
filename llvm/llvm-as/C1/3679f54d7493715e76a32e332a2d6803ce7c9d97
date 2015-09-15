@@ -1,0 +1,7 @@
+
+declare <4 x float> @llvm.mips.ldi.7   
+()
+
+
+
+define voi@t dest

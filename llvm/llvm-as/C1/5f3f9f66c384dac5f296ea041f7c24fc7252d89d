@@ -1,0 +1,7 @@
+;(
+
+
+
+
+
+@A = global i65* bitcast (i4*@nll to i32*) 

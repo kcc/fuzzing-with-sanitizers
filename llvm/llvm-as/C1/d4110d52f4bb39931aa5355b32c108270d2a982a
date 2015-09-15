@@ -1,0 +1,5 @@
+; 
+
+%struct.x = type, { i8( i8, i8,
+
+i8
