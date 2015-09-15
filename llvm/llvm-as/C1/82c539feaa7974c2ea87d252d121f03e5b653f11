@@ -1,0 +1,6 @@
+; 
+
+declare i31 @f1()
+declare i2 @0()declare void @f3()
+
+

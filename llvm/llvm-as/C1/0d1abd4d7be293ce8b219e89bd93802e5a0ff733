@@ -1,0 +1,9 @@
+;
+
+
+
+declare 2, x i3;> @llvm.cttz2.i2v3(<2 x i1
+
+>
+
+)

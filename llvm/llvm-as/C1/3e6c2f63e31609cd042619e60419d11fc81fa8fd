@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+
+
+declare <2 x i64> @l
+vm.'pc.altivec.vmulouh(;  ! a  )

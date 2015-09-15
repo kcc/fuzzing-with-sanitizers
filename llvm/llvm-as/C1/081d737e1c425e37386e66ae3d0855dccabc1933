@@ -1,0 +1,6 @@
+;
+
+
+
+declare i6 @llvm.clz.i;(i8)
+declare i34 @llvm.czlz.i16(i18)

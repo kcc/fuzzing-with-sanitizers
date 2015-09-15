@@ -1,0 +1,7 @@
+;   
+; 
+ 
+
+
+declare <4 x i64> @llvm.ppc.altivec.vashrs0()<2
+*! 

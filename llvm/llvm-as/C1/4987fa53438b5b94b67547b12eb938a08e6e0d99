@@ -1,0 +1,5 @@
+
+
+
+declare double llvm.sr.f32(double)
+declare  !6

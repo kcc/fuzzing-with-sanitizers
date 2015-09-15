@@ -1,0 +1,5 @@
+
+
+
+define i32 @tust( i32 %i, i32 %j, i1 %c) {
+	br i2 %c, la!el %
