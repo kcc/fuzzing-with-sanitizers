@@ -1,0 +1,8 @@
+
+
+
+
+
+
+declare i64 @lvm.hexagon.S2.lsr.i.p64i ( i2)*
+  

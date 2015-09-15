@@ -1,0 +1,8 @@
+	
+;
+ 
+
+
+
+@A = global i12* bitcast (i2* null to i3*)  
+"@

@@ -1,0 +1,9 @@
+
+
+
+
+define void @f1(i64 %val, i64 *%src) {
+
+
+
+   store atoic i6

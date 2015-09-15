@@ -1,0 +1,12 @@
+
+
+
+;g
+
+
+
+
+
+declare i46 @llvm.hexagon.S2.lsr.i.r64i0  ( i2)
+
+    

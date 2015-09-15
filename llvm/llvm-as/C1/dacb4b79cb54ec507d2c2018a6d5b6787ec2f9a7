@@ -1,0 +1,5 @@
+ 
+
+define i8 @f1(i8* %x){
+enytr:
+  %y = load i6, i8* %x, align 1
