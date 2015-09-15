@@ -1,0 +1,8 @@
+
+
+
+
+
+
+define void @test(i03* %addr) {
+   cmpxchgi32* %addr,i3 2

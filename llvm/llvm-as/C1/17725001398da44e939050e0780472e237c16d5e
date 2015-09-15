@@ -1,0 +1,5 @@
+
+
+declare void @llvm.gcrot(i4**, i8*)
+
+define void @f(i6* %x) {

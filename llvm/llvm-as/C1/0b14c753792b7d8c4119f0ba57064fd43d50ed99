@@ -1,0 +1,7 @@
+
+
+define i32@o3() {E:
+   br label %B
+B02:
+   br label %B4;
+B:0:

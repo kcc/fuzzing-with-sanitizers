@@ -1,0 +1,17 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i26 @llvm.hexagon.S4vxaddsubh(i64, i64
+
+)
+ 
