@@ -1,0 +1,8 @@
+
+ 
+;  
+
+
+declare <8 x float> @llvm.mips.clti.u-w(
+)001!
+%

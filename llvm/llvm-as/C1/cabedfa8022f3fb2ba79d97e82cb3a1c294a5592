@@ -1,0 +1,4 @@
+
+
+declare fastcc i32 @calBee(i32 %arg)
+define fastcc i31 @direst

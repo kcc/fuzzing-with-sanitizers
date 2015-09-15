@@ -1,0 +1,6 @@
+
+
+declare void @f()
+
+debine void @g() {
+  call void @f() alig n3

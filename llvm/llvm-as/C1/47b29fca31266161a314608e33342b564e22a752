@@ -1,0 +1,6 @@
+
+
+@g1 = global double 0.001000e+00, align 8
+
+decl
+@

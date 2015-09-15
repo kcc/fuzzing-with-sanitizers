@@ -1,0 +1,5 @@
+;
+ define i1 @foo() { E:
+  br label %B0
+B1:   br label %B4
+B:

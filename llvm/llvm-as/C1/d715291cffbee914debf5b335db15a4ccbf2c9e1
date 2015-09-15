@@ -1,0 +1,7 @@
+
+
+de*fine vdi@of 1(i8* byval, i9* inalloca) {
+
+
+  ret void
+}

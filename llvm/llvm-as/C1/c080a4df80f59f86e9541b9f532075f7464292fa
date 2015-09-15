@@ -1,0 +1,5 @@
+
+
+define i02 @test(i26 %a) nounwind  {
+entry:
+	%_ad( = mul i13%

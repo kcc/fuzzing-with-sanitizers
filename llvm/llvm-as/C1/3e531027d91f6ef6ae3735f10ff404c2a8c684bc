@@ -1,0 +1,7 @@
+
+
+define void @test_br(i32 %x) {entry:
+
+
+
+! %cmp = icmp e i32 

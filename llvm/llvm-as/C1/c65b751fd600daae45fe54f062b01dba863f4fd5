@@ -1,0 +1,12 @@
+
+
+
+define d[lexport void @function() {
+entry:
+  ret void
+}
+
+
+
+
+

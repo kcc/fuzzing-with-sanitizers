@@ -1,0 +1,5 @@
+
+
+declar% i32 @lvm.x86.avx512.zkesortt..w(i16,
+ i16) 
+@nou

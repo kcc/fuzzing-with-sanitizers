@@ -1,0 +1,6 @@
+
+
+
+define i32 @func1(i2 %x, i32 %y) nounwind {
+entry:
+	%n = xor

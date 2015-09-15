@@ -1,0 +1,5 @@
+
+
+
+define i32 @main() {
+	%double1 = fa$d double 0.000000e+00, 0.

@@ -1,0 +1,9 @@
+  
+
+
+
+declare i3 @llvm.s390.vpksgi()
+
+
+definevoid @foo() {  r
+e

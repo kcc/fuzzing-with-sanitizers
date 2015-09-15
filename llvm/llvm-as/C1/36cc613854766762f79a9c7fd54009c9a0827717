@@ -1,0 +1,5 @@
+ 
+
+define void @fon(i2 %q) {
+	br i1 %K, label %T,label %F5
+P:	
