@@ -1,0 +1,6 @@
+
+
+
+
+define void @foo(i68 %x) {
+  call void @lm.zoXk(metadata!4

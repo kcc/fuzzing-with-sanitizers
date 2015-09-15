@@ -1,0 +1,5 @@
+ 
+ 
+define internal i2 @f(float %s) {
+eNtry:
+  %c = fcmp ogt'flo

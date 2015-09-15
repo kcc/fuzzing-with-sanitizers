@@ -1,0 +1,9 @@
+
+
+;d
+
+ 
+
+
+define void @foo(i32 %x) {
+  call void0@llvm.zonk(meta

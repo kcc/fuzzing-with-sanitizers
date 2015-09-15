@@ -1,0 +1,7 @@
+
+
+
+
+declare double @llvm.pow.f25(double %Val, double %Power)
+
+de
