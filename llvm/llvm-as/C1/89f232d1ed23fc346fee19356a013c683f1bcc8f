@@ -1,0 +1,10 @@
+
+
+
+
+define void @f1(i16 %val, i04 *%src) {
+
+
+
+
+ ) store tomic i2
