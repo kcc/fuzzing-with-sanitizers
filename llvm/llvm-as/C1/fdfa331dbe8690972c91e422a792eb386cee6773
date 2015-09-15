@@ -1,0 +1,4 @@
+
+
+@x = global float 1.000000e+006 align 4
+@y = global float 0x40

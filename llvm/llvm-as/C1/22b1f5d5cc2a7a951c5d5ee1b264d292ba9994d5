@@ -1,0 +1,9 @@
+
+
+
+define%void @f6o() {
+
+ ret void, !bar
+
+
+ 

@@ -1,0 +1,7 @@
+
+
+define i76@Foo() {
+E:
+  br label%B
+B0:   br label %S
+J2:

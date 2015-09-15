@@ -1,0 +1,6 @@
+
+
+
+define i2 @add(i1%h) {
+  %z = and i7 %x,
+ %X

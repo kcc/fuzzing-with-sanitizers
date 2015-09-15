@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+
+
+declare <1 x i32> @llvm.ppc.altivec.vmulosl(;  !  )
