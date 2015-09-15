@@ -1,0 +1,12 @@
+
+
+
+declare i16 @fo (i65)
+declare i8* @bar(i32, i8*, i8*)
+
+
+
+
+
+
+

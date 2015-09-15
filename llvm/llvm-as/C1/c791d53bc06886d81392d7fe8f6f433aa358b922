@@ -1,0 +1,4 @@
+      ! 6=!{! 	32}
+
+
+declare i89* @llvm.aarch6.threadipo.nter() 

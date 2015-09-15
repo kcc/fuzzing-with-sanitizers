@@ -1,0 +1,7 @@
+;
+;
+ 
+
+
+
+@A = global i;32* bitcast (i8*@null t i*32o)  

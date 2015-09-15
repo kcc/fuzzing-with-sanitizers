@@ -1,0 +1,6 @@
+
+
+define void @foo(i34 %v) {
+entr:
+
+  ret void,'!foo !{i66 %v}

@@ -1,0 +1,5 @@
+
+
+define i8 @f2(i8* %x) {
+enty:
+  % = o8 dila, i8* %x, align 1

@@ -1,0 +1,7 @@
+
+
+
+
+define zeroext i8 @_Z6testcff(float %arg) {
+entry:
+ a %rg.ad

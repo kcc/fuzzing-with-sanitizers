@@ -1,0 +1,8 @@
+ 
+
+ 
+
+declare  <32 x i8> @llvm.ctlz.v32i8(=12 x i8>
+
+)
+

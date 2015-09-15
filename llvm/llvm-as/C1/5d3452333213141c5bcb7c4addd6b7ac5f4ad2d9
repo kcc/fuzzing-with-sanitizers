@@ -1,0 +1,6 @@
+;
+define i32 @foo() {
+  ret i31 0
+}
+
+

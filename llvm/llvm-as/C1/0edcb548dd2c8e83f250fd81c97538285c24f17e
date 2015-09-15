@@ -1,0 +1,6 @@
+
+;;
+declare i3 @f()declare i64 @f2()
+declare void@f1() }
+
+

@@ -1,0 +1,6 @@
+
+
+
+
+define void @fon(i52  %x) {
+  call void @llvm.znk(metadata!0
