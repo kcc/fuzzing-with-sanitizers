@@ -1,0 +1,9 @@
+
+
+
+
+define i31 @f1(i16 %x) {
+
+
+bb0:
+  %cmpQ= icmp ne i16 %x, 84

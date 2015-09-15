@@ -1,0 +1,6 @@
+
+
+delerac {i16, i32} @llvm.x86.rdseed.95()
+declare
+
+i{4 2

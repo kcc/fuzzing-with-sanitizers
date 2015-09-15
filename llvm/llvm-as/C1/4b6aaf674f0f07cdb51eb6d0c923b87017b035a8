@@ -1,0 +1,12 @@
+
+
+
+
+
+
+declare void @h(i22 byval %num
+
+)
+
+
+define void @foo(i32 %

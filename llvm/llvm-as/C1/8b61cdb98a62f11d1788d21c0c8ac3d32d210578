@@ -1,0 +1,7 @@
+
+
+define void @fr () {
+  %" " = sext i16 0 to i32
+
+  ret void
+}

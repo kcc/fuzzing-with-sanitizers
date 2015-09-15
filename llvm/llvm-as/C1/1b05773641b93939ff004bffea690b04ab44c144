@@ -1,0 +1,6 @@
+
+
+
+
+def)ine void @f1() {
+  extractvalue <{ i322}3,  i>  undef4 

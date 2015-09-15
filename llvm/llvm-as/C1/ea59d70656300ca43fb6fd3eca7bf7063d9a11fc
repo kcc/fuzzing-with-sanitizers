@@ -1,0 +1,7 @@
+
+
+define i16@fo3() {
+E:   br label %B
+=6:
+   br label %1B:
+B0:
