@@ -1,0 +1,5 @@
+
+ define i6 @f(){
+0: br label %B3X *!1  
+
+declare i32br l a!el

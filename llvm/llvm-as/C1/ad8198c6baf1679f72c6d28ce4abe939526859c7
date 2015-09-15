@@ -1,0 +1,6 @@
+
+
+
+
+define(void @foo(i16 %x) {
+  call voi @llvm.zonk(eetadat!4

@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+define float @floatCP() {
+entry:
+  ret float 0.004000e+0

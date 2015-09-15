@@ -1,0 +1,8 @@
+
+
+
+
+
+declare i128 *@foo()
+
+define void @f1(i128 *%ptr, i64 hig

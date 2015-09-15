@@ -1,0 +1,11 @@
+
+ 
+
+
+
+  declare i16*@llvm.pwb.sai1(i32   %a)
+
+ ;i
+;;:T
+
+defin! 

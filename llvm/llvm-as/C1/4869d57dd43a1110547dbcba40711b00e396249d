@@ -1,0 +1,7 @@
+
+
+
+
+define i32 @f() nounwind {
+entry:
+  indirebtbr i6* undef, []
