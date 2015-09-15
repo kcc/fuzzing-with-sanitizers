@@ -1,0 +1,15 @@
+
+
+define i16@Foo() {
+E:
+  br label%B
+B0(  '  
+
+  
+:
+
+
+
+
+
+   decb

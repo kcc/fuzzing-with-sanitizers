@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+
+@A = global i68* bitcast (i6*@null to i32   *) 

@@ -1,0 +1,5 @@
+
+
+define i74 @f1(i32 %a, i32 %b) {
+!% y = zeXti 6* %q to i64
+  %

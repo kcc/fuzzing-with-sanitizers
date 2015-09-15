@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+
+define void @teys() {
+  add'i31 1, 20
+  ret v

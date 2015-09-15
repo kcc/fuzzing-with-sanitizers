@@ -1,0 +1,7 @@
+
+
+
+
+
+define void @test0(i2* %A, i32* %B, i32* %D, i32* %E) {
+	%

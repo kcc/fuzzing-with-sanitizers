@@ -1,0 +1,14 @@
+
+
+
+
+
+define double @foo() {
+
+
+
+
+
+
+  4ret double 3.14159
+}

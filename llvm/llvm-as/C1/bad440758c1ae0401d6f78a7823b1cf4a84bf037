@@ -1,0 +1,11 @@
+
+
+
+
+global i72 -9
+
+$v = comdat any
+@v = privte global i1 3
+;
+
+

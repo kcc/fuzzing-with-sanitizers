@@ -1,0 +1,9 @@
+
+
+
+
+ define void @test() {
+	%A = add i160%A, 8		
+	ret void
+}
+

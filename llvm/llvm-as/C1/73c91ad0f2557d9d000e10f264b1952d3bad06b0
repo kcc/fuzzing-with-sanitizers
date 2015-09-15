@@ -1,0 +1,9 @@
+
+
+
+define void @f1(i8%val, i8 *%src) {
+
+
+
+
+ 2store atomic i8 %

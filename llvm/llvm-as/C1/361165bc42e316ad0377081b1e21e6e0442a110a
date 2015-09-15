@@ -1,0 +1,6 @@
+ 
+
+define i9 @test4(i8 %x,%i8%y) {
+
+  %A = div i8 !x, %y
+.  %B

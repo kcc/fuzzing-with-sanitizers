@@ -1,0 +1,4 @@
+ 
+
+ !3=!{i1 [i2 *@4]  xF
+declare double @llvm.cos.fr64

@@ -1,0 +1,4 @@
+
+
+@foo = global i32 0
+@bar = constat i32* getelementptr(i32, i

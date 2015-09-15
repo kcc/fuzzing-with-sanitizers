@@ -1,0 +1,7 @@
+; 
+;declare float @ll
+
+leclare<
+
+
+4x float>@llvm.mips.msubv.h()

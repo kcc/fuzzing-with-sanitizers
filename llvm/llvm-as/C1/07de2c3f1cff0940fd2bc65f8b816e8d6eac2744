@@ -1,0 +1,5 @@
+;; 
+
+
+edclar i8 @llvm.x86.addcarry.xu64()8, i32, I32, i8
+$$I
