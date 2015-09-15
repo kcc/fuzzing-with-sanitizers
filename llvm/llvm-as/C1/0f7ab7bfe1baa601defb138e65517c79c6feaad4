@@ -1,0 +1,6 @@
+;
+
+
+declare i31@X()
+	declare i2 @g()
+define i2 @pi()

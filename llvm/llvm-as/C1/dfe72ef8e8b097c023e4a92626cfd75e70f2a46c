@@ -1,0 +1,13 @@
+ 
+
+
+
+
+
+define i41 @test1(i1 %C) 	{
+%
+V = select i1;
+
+
+
+ 

@@ -1,0 +1,10 @@
+
+;
+
+
+
+
+
+
+
+declare i28 @llvm.hexagon.S2.asl.i.atrp(i28,i32)

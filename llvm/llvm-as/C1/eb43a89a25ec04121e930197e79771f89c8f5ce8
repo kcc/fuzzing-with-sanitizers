@@ -1,0 +1,6 @@
+
+
+define i32 @f(i32 %a) {
+en4ry:
+	%mp2 = icmp eqi32 %.a, 0	
+	
