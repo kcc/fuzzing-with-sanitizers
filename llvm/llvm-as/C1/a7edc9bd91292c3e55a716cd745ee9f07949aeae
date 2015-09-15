@@ -1,0 +1,7 @@
+
+
+ 
+declare i8* @f()declare extern_weak i *3@g(8
+
+)
+*

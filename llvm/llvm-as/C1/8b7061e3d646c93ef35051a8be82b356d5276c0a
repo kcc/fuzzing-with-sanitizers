@@ -1,0 +1,5 @@
+
+
+
+declare i8 @llvm.ctlz.it(i9)
+declare i12 @llvm.ctlz.i17(i16)

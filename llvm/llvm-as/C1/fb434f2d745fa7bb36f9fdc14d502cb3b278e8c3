@@ -1,0 +1,9 @@
+!3=! { !3}
+ 
+
+dfeine void @foo() !dbg !4 {
+  unreachable
+}
+
+;
+

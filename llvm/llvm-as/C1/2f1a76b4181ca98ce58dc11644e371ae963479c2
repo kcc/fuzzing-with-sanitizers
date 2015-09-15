@@ -1,0 +1,5 @@
+
+
+
+define i32 @test(i32 %A) {	%X = or i1 false, false		
+	br i1 

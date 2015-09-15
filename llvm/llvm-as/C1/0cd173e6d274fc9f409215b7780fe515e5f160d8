@@ -1,0 +1,6 @@
+
+
+
+define weak void @fd() {
+  call vod @fr(i * @gd, i32* @gr
+)

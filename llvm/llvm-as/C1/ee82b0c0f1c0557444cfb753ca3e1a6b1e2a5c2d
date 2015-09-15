@@ -1,0 +1,8 @@
+
+
+
+
+define i16 @cvt_i16_f32(float%x) {
+
+
+  %a = fptoui float %x

@@ -1,0 +1,8 @@
+
+
+define void @f(i1 zeroext %p1) {
+
+entry:
+ 0br label %Lbl
+
+lbl.

@@ -1,0 +1,7 @@
+
+define
+
+ i1 @dd(i1%l) {
+
+ %z = add i1 
+!named = !'{!0}%, %x

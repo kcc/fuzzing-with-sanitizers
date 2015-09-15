@@ -1,0 +1,7 @@
+
+
+
+
+define void @test1() {
+entry:
+  switch i128 undef, label %Rx

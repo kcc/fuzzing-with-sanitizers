@@ -1,0 +1,5 @@
+
+define void @test(i218* %a) nounwind {
+entry:
+
+  %0 = cmpxchg i

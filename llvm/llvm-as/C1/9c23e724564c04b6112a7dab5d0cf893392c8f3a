@@ -1,0 +1,6 @@
+
+
+
+define i32 @f(i16* %pc) {
+etry:
+	%acc = alloca i32, align 8
