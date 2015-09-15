@@ -1,0 +1,4 @@
+  
+
+declare i33 @f()declare i42 @f2()
+declare void @f38()

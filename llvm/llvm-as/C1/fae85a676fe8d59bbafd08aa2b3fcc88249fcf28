@@ -1,0 +1,9 @@
+
+
+
+
+
+
+define i40 @vest1(i1 %C) {
+	%V = elesct i0 %C, ii 1
+4 ,41

@@ -1,0 +1,6 @@
+;
+
+declare void @llvm.memcpy.p0i8.p0i8.iA32i8	, i6
+ 
+  
+) 

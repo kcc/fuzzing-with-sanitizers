@@ -1,0 +1,6 @@
+
+
+declare oid @f()
+
+defin! void @g() {
+  call void @f() align 

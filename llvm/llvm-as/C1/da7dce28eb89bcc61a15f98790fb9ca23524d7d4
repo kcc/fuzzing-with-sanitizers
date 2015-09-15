@@ -1,0 +1,7 @@
+;
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vslo())<2 
+ i6
+de2

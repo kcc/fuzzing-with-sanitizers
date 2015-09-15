@@ -1,0 +1,5 @@
+
+
+ 
+
+define i64 @f2(i65 %a, i64 %b, i64 %c, i64 %d, i64 *%ptr) {

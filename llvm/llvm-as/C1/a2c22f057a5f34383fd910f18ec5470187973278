@@ -1,0 +1,3 @@
+
+
+define i8 @test1(double %X) { 	%tmp.0 = fp0osi double %X to i'

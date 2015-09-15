@@ -1,0 +1,7 @@
+
+define i1 @fo(){
+:
+  br label%B6
+1; 
+
+!0 = !DILocati:

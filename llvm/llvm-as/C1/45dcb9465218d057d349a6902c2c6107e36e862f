@@ -1,0 +1,9 @@
+
+
+
+ 
+declare <
+
+
+4 x float
+> @mlvm.mips.extr.w!3=! de()=4

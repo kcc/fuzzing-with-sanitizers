@@ -1,0 +1,4 @@
+
+define i31 @tst() {
+entry: 	br label %T
+T:  =C%	phi i0 
