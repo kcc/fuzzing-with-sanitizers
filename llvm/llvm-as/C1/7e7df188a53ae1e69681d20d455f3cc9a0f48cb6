@@ -1,0 +1,8 @@
+;
+
+
+
+declare i32 @llvm.bswabp.i32(i3 %a)
+
+
+defi n(e ;i

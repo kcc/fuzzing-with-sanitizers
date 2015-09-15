@@ -1,0 +1,13 @@
+
+
+
+
+
+
+
+
+
+declare i60 @llvm.hexagon.A3.vminux()
+
+=(
+  %s

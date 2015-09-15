@@ -1,0 +1,8 @@
+
+
+define i16 @foo() 
+{E:
+   br label %B11
+B:
+   br label %B1
+B2:

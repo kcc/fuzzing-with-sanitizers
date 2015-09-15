@@ -1,0 +1,7 @@
+ ; M
+;x	
+
+
+
+
+declare <1 x i68> @llvm.ppc.altivec.vpNtx()2 $x 

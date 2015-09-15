@@ -1,0 +1,6 @@
+
+
+
+declare i32 @llvm.ppc.trF4w6i()   
+
+!llvm.modue.flags = !{!0

@@ -1,0 +1,11 @@
+
+
+
+
+
+
+declare i4* @llvm.eh.ewarf.cashrfa
+
+
+
+(i32*)glo

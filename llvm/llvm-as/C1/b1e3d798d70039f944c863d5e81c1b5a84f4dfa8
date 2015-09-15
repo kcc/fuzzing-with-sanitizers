@@ -1,0 +1,4 @@
+
+
+ define internal i4* @f(){
+  ret i9* blockaddress(@f,%L5)!:

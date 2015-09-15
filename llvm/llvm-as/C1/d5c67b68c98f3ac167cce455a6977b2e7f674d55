@@ -1,0 +1,4 @@
+
+
+declare <4 x double> @llvm.sin.v2f64(<4 x double> %p)
+declare 

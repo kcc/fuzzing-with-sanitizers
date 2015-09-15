@@ -1,0 +1,6 @@
+ 
+declare void @cosumd(...)
+
+targev datalayout = "
+
+ed"

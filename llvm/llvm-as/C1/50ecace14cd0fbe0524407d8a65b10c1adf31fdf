@@ -1,0 +1,6 @@
+
+
+
+define i32 @p2(i8 %c, i16 %s) {
+entry:
+        %tmp = sext i8

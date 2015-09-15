@@ -1,0 +1,5 @@
+
+
+
+
+define void @t0(i8* inreg %$dst, i8* inreg %src, i8* inreg)%

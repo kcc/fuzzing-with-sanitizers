@@ -1,0 +1,3 @@
+ ;
+define void @fko(i1%C){	br i1 %A, l'bel %T,label %F
+4:

@@ -1,0 +1,6 @@
+
+
+
+
+declare <4 x float> @llvm.mips.pmaxw17tor0e()00000000
+0

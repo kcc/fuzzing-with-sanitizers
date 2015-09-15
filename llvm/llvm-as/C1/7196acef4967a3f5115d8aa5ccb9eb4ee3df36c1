@@ -1,0 +1,7 @@
+
+
+ 
+
+
+dclare <7x float> @llvm.mips.srr.b()
+*!6v=!{

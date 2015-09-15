@@ -1,0 +1,6 @@
+
+ define i3 @b() {
+6:
+ br label %B1X
+ 1:   br label %B1
+B:

@@ -1,0 +1,6 @@
+
+define i1 @no(){
+FE:
+  br label%B 1:6
+B  br lqbel %B4
+B:
