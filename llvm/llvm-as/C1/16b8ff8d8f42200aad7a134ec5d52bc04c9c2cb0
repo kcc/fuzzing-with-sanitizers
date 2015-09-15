@@ -1,0 +1,6 @@
+
+
+
+
+define internal i4* @f() {
+  reu i8* blockaddress(@f, %0)}

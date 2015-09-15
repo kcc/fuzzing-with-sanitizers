@@ -1,0 +1,6 @@
+
+    
+
+
+
+declare i2 @llvm.AMDGPU.class.f32(float, i32) #   !3=! 

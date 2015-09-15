@@ -1,0 +1,5 @@
+
+
+
+define void @foo(i1 %Mx) {
+  call void @lvmzK(metyadata!6

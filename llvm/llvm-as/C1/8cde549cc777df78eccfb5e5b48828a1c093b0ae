@@ -1,0 +1,7 @@
+
+
+
+
+define void @Foo(i32 %a, i2 %b) {
+entry:
+  call void @llvm.

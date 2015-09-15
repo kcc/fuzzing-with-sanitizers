@@ -1,0 +1,7 @@
+
+
+define void @pr21099(i64* %p) {
+
+
+
+  %1 = atomicrmw frem hasat

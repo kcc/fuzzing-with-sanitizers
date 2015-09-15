@@ -1,0 +1,7 @@
+ 
+
+
+declare void @foo()
+
+define void @tes0T() gc ";"
+

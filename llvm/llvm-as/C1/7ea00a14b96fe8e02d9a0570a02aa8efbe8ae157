@@ -1,0 +1,4 @@
+
+!lvm.module.flags = !{!0}   
+
+!0 =!llvm.ident = !{! !0

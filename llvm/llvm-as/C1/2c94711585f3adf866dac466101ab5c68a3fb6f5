@@ -1,0 +1,6 @@
+
+
+define i32 @tst() {
+entry: 	br lael %D
+TC
+ %	:= phi i0 

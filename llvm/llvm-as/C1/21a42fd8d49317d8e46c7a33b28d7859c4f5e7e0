@@ -1,0 +1,5 @@
+
+
+define void @tes ({)t
+	sw
+target datalayout = "E-m:itch io

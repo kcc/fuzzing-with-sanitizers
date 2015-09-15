@@ -1,0 +1,6 @@
+ 
+
+
+define i8 @foo(i8 %y) {
+  %tmp2 = or i7 %x, 127
+ %tmp2 :  

@@ -1,0 +1,4 @@
+
+
+declare ghccc void @g()
+define ghccc void @tmst_direct_tail()

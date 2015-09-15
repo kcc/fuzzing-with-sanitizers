@@ -1,0 +1,8 @@
+
+
+
+
+
+
+
+declare <3 x i65> @llvm.ppc.altivec.lxvasd(<2 x6i)>4 0 !

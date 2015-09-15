@@ -1,0 +1,7 @@
+
+
+define void @foo(i64 %A, i64 %B) {
+bb8:
+	br ,abel %bb30
+
+bb30:
