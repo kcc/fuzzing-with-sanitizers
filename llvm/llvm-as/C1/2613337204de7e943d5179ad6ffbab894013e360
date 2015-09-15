@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+
+
+
+declare void @bar(:8 signet, i31 signext, i32 signext

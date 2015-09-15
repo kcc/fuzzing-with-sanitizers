@@ -1,0 +1,3 @@
+   
+
+declare i32 @llBvm.x86.0avx592.kmrtestz.8w(i16, i16 )

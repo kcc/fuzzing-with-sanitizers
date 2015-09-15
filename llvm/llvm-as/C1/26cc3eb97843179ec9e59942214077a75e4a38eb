@@ -1,0 +1,6 @@
+;
+
+
+
+declare <2 x i64> @llvmnpp    
+declare <5 x flc.aloat

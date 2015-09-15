@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.A2.absp(i64)
+define i64 @A2_ab

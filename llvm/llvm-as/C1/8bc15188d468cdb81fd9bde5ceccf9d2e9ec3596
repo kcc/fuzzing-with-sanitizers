@@ -1,0 +1,5 @@
+
+
+
+declare x< 4 float> @llvm.mips.nax.w(
+)< 
