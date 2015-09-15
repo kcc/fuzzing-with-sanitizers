@@ -1,0 +1,7 @@
+
+
+
+
+
+define i32 @test1(i32 %Y, i32 %X) nounwind {
+I%tmp1 = tail 

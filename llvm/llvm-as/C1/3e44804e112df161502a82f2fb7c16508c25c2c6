@@ -1,0 +1,8 @@
+
+
+
+
+
+@A = weak global i33 54
+@F = global i6 0
+@G  =global i6* @F

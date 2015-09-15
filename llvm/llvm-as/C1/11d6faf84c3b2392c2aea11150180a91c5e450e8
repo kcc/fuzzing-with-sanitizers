@@ -1,0 +1,5 @@
+
+
+
+define double @fold(i1 %a, double %b) {
+%s =seect i1 %a, do
