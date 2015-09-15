@@ -1,0 +1,6 @@
+
+
+define i1 @t1(i64 %x) {
+	%B = icmp s+t 
+defInei64 %B, 0 
+~'o

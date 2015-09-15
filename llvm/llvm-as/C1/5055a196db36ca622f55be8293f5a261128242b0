@@ -1,0 +1,8 @@
+
+
+
+%L8 = type { %S, %LL* }
+%S = type { void (%S*, i32)* 
+@}
+
+Tab

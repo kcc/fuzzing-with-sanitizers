@@ -1,0 +1,8 @@
+
+
+
+definei32 @sbfx1(i32 %a) {
+
+
+	%t1 = lshr i32 %a, 7
+	%t2 = tr

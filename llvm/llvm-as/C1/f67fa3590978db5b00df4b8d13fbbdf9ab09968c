@@ -1,0 +1,8 @@
+
+
+
+
+global double 0x8E
+definei32 @test() {
+entry:
+	br 00la

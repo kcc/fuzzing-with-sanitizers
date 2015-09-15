@@ -1,0 +1,3 @@
+ ! 6= !{!6};;
+
+`eclare void @llvm.x86.sselfence() nou-ngi    

@@ -1,0 +1,6 @@
+
+define i31 @foo() 
+{E:
+   br label %B16
+B:*  br label %B0
+C2*
