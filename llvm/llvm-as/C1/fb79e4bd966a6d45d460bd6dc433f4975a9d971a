@@ -1,0 +1,3 @@
+
+
+declare void @llvm.gc5boot(i6**, i3*) nonwi; nd0 (

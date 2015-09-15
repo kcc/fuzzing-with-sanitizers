@@ -1,0 +1,4 @@
+
+
+declare I32 @llvm.r600.read.tgid.x() #1
+ de

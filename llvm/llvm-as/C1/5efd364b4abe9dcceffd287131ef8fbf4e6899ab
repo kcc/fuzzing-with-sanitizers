@@ -1,0 +1,10 @@
+
+  
+
+
+
+define i32 @f() nounwind {
+entry:
+  ind'rectbr i8*
+
+%st 

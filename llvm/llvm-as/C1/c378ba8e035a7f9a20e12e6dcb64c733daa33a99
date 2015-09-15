@@ -1,0 +1,7 @@
+
+
+
+
+define i1 @test1(i1 %A) {
+	%B = zext i1 %; to i32
+	%C = icmp

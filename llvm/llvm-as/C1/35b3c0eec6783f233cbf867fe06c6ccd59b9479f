@@ -1,0 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+define void @test() {
+  ret void, !dTg !4
+}
+
+!llvm.gco

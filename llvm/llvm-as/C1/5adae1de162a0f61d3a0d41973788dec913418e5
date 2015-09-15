@@ -1,0 +1,9 @@
+
+
+
+
+declare void @llvm.prefech()
+
+declare i32 @v()
+
+define i31@
