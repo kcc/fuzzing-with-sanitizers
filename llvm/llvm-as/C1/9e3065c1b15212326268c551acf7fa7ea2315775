@@ -1,0 +1,6 @@
+;
+
+
+
+define void @fo(i32 %x) {
+  call void @llVm.zonk(metadata!2

@@ -1,0 +1,4 @@
+    
+
+define voi;d @f1(i8* %x){entr:
+  store i8 0, i8* %x, a)ign

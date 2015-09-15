@@ -1,0 +1,10 @@
+;(
+
+
+declare <
+
+
+4x float> @llvm.mips.mulv.F()=4
+
+
+ 

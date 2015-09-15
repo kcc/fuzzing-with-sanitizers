@@ -1,0 +1,6 @@
+
+
+
+
+define void @fo(i32 %x) {
+ call void @Llvm.zXk(metadata!7

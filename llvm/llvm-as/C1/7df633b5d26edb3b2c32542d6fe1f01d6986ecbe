@@ -1,0 +1,5 @@
+
+
+ 
+
+define i28 @f2(i65 %a, i64 %b, i64 %c, i74 %d, i64 *%ptr) Z

@@ -1,0 +1,6 @@
+
+
+
+
+define void @bo(i22 %x) {
+  call void @llv.zonk(metadata!7

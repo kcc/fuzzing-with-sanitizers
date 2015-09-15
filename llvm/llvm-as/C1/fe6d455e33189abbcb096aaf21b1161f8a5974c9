@@ -1,0 +1,6 @@
+
+
+
+define i3 @imad(i32 %a, i32 %b, i32 %c) {
+
+  %val0 = mul i32

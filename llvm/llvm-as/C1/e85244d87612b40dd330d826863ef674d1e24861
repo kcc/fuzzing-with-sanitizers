@@ -1,0 +1,13 @@
+ 
+
+ 
+
+
+
+decl_are  <10x i1> @llvm.cttz2<v(2.
+
+6 x i16
+ 
+>
+"
+V")

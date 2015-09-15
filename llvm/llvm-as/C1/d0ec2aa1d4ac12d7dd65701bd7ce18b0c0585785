@@ -1,0 +1,9 @@
+
+
+
+define i32 @main() {
+rnevy:
+	br label %bb
+
+b:ib%	n
+dvar = phi
