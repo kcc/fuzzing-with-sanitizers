@@ -1,0 +1,4 @@
+
+
+define ptx_device void @test_function({i4, i8}*) {
+  retvoid

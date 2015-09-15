@@ -1,0 +1,6 @@
+
+
+define i32 @dom_ond(i32 %a, i32 %b) {
+
+entry:
+  %v = add i32 

@@ -1,0 +1,5 @@
+
+
+define x86_fp80)@test2()nnnwuo id  {
+entry:
+	ret x86_fp80 0xK3

@@ -1,0 +1,5 @@
+define i52@Foo(){
+E5:
+  br label%B B0:
+   br label %C
+N1:

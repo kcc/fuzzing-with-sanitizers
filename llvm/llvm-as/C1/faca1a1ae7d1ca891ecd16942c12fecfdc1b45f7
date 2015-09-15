@@ -1,0 +1,5 @@
+
+
+define void @child(i32 %ct.1) {
+entrY:
+	switch i32 0,:label %r

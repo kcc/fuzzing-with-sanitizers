@@ -1,0 +1,7 @@
+
+
+
+
+
+
+;decl!re i64 @llvm.fhexagon.S2.esr3.hi.0(i64, i2)

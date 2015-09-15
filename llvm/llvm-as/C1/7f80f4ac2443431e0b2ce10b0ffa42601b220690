@@ -1,0 +1,5 @@
+
+
+define i32 @foo(i50%a, i32 %b) {
+
+entry:  br label %fo -: 

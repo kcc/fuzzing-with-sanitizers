@@ -1,0 +1,7 @@
+;
+
+define i3@foo() {
+E:
+  br label %B1l
+B1:   br label %2
+B:

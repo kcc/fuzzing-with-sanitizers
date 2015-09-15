@@ -1,0 +1,8 @@
+
+
+
+
+
+
+define i242 @test(i1 %B) {
+	br i1 %B, label,1  B%Blabel %B

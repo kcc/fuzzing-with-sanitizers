@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+         
+
+
+define i60 @test1() {
+   ret i60 fptoi(float

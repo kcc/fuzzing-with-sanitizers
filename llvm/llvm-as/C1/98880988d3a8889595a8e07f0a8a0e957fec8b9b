@@ -1,0 +1,14 @@
+;(
+
+
+declare <
+
+
+4x float> @llvm.mips.mulv.w()=4
+
+
+
+$
+
+
+

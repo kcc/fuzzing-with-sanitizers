@@ -1,0 +1,19 @@
+
+
+
+
+%X = type {i3 2 }
+;;
+
+@x =extern_weak global i4
+
+
+
+
+
+
+
+
+
+
+

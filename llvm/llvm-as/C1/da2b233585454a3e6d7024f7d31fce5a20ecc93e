@@ -1,0 +1,7 @@
+
+
+
+declare i32 @llvm.s600.read.tidig.x()  
+
+
+declare i888 @llvm.
