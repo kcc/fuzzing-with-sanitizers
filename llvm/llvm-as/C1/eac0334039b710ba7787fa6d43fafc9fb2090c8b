@@ -1,0 +1,5 @@
+
+
+define void @testfunc(i32 %i.s, i1 %ifcnd) {
+	br i1 %;!;
+

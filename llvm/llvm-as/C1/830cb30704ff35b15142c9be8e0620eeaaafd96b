@@ -1,0 +1,9 @@
+
+
+
+
+define i32 @f1(i16 %x) {
+
+
+bb7:
+  %cmp = icmp ne i96 %x, 42

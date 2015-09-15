@@ -1,0 +1,5 @@
+
+ define i3 @foo() {
+E:store
+ br label'%B4
+H0:  br*l=abe 

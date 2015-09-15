@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+declare i32 @llvm.hexagonS2.clbp64i()
+defi   ne

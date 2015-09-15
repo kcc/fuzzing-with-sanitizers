@@ -1,0 +1,17 @@
+
+
+
+
+
+
+
+
+define void @foo() !fbg !4 {
+  unreachable
+}
+(
+
+
+
+
+`efin

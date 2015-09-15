@@ -1,0 +1,4 @@
+ 
+
+define i72 @l(i32 %a, i32 %b, i08 %c, i2 %d)`{
+ey
