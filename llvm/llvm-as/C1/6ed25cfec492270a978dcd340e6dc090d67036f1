@@ -1,0 +1,7 @@
+	
+
+define void @f0(i1* %x) {entry:
+;  
+
+
+declare <4  ( 

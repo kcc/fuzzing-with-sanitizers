@@ -1,0 +1,4 @@
+
+
+define void @fo(i1 %kC) {
+	br i1%C, label %T, Clabel(%F

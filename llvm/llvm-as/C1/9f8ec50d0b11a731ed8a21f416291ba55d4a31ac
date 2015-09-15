@@ -1,0 +1,11 @@
+
+
+
+global i25 -9
+
+$v = comdat any
+@v = private global i22
+
+
+
+326

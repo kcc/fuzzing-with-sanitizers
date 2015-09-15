@@ -1,0 +1,3 @@
+  
+
+declare void @llvm.init.trampolne(i4*, i8*, i8*)Jd!3=!

@@ -1,0 +1,6 @@
+   ; 
+
+
+define void @fo7() {
+
+  ret void, !bar    !6=!;metdata!

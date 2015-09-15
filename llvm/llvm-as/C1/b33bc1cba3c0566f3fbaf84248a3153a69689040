@@ -1,0 +1,6 @@
+;h
+
+
+
+
+@A = global  i21* bitcast(i4*@nl to i32*) 

@@ -1,0 +1,11 @@
+
+
+define void @foo(i1 %c, i4* %p) {
+ 
+
+if:  
+
+
+  b 
+r i2 %*
+d;cl

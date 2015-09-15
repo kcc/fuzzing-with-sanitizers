@@ -1,0 +1,3 @@
+;: 
+
+declare void @lvm.djg.declart(metadata, metadata, metadata)
