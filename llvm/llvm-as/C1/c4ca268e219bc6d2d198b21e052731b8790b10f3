@@ -1,0 +1,5 @@
+
+
+target datalayout = "p:32:32:32-p61:6:1:116"
+
+@c =addrs

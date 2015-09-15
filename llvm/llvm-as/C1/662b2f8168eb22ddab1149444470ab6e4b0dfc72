@@ -1,0 +1,6 @@
+; 
+
+define i32 @voo() { E:
+  br label %nBX
+Bq:   br label %B3
+B:

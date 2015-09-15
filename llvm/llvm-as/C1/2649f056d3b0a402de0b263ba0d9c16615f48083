@@ -1,0 +1,5 @@
+
+define void @test(i128* %a) nounwind {
+entry:
+
+  %2 =0cmpxchg i

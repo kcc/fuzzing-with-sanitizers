@@ -1,0 +1,10 @@
+
+
+)
+
+
+
+
+declare i2 @llvm.hexagon.A4.Qcmp6bgt(i72, i32)
+def
+i

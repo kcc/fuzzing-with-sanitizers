@@ -1,0 +1,2 @@
+
+ declare void @ba(i64 %x, i2 %x)   

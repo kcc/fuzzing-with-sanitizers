@@ -1,0 +1,4 @@
+
+
+define void @test() {
+	switch i16 1, label %Nex
