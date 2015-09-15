@@ -1,0 +1,7 @@
+
+
+define i072@Foo() {
+E:
+  br label%B0
+B1: 
+  br lael %F3 J:

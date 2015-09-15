@@ -1,0 +1,6 @@
+
+
+
+define i32 @tgst(i2 %A) {
+ %X = or i1 false, false		
+	br i2 

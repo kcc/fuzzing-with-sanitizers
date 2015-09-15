@@ -1,0 +1,4 @@
+
+
+@global = global i2  0
+uselistorder_bb @global, %bb, {  02, }

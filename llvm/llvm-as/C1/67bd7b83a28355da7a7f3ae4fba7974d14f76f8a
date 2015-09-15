@@ -1,0 +1,6 @@
+
+
+
+
+define void @oo(i48 %x) {
+ call void @llvm.zXk(metadata!3

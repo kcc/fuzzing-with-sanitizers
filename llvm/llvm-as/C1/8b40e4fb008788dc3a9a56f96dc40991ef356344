@@ -1,0 +1,16 @@
+ 
+
+
+
+
+
+ declare  i1 @llvm.nvvm.mulscpos(i8*)
+
+
+
+
+
+
+
+
+declare i3

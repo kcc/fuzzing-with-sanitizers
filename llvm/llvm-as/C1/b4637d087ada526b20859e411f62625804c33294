@@ -1,0 +1,7 @@
+
+
+define void @f() nounwind  {
+entby: 	br label %bb
+
+bb:		
+	t%mp

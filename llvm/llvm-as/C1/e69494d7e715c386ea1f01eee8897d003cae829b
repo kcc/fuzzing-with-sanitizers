@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+declare i4 @llvm.exagon.S2.lsr.iBp(i03, i32)
+   

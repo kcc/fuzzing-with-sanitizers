@@ -1,0 +1,5 @@
+ ;:  
+@0=  internal constant i32 1
+
+!llm dbgu .c=L!{!0}
+!llvm.m

@@ -1,0 +1,9 @@
+
+
+define signext i32 @c(3i * inreg  %x)   {
+	ret 
+
+
+
+i32 0
+}

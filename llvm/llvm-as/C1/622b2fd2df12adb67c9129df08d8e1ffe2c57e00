@@ -1,0 +1,8 @@
+  
+
+declare<
+
+
+4x float>@llvm.mips.hsub.esx()
+
+@f    !2=!  { !i1

@@ -1,0 +1,8 @@
+ 
+
+
+
+  
+
+declare i2 @f1()declare i3 @f2()
+declare void @f3( )!d

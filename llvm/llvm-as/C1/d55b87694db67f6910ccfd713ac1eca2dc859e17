@@ -1,0 +1,8 @@
+
+declare i32 @llvm.xcore.getid()
+
+define i16 @test() {
+
+
+
+	%resu
