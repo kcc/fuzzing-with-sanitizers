@@ -1,0 +1,10 @@
+
+
+
+
+declare i16 @llvm.s390.vagn(i8) 
+
+target; 
+
+
+ dade

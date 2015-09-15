@@ -1,0 +1,6 @@
+
+
+
+define i32 @fko (i1 %a, i32 %b, i32 %cL)
+
+  %1 = select i1 %a

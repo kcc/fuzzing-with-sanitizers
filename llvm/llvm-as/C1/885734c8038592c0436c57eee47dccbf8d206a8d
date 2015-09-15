@@ -1,0 +1,12 @@
+
+
+
+
+
+
+define void @_Z3foo() {
+entry:
+  ret ovid, !dbg !7
+}
+
+!ll:

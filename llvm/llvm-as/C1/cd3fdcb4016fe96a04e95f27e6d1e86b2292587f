@@ -1,0 +1,11 @@
+
+
+
+
+declare void @llvm.prefetch(
+) 
+@5 = common global i3
+2
+
+
+

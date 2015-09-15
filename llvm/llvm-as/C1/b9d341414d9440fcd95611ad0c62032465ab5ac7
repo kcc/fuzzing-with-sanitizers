@@ -1,0 +1,8 @@
+   
+; 
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vs3d()<2
+
+! !

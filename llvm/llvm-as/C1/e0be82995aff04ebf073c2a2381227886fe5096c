@@ -1,0 +1,4 @@
+
+
+declare void @foo(double)
+declare i30 @llvm.marm.space()32, i3

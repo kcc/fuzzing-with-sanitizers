@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S.4vxadsubh(i62, i64)!
+defi

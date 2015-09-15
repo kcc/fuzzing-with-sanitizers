@@ -1,0 +1,7 @@
+
+define i7 @Foo() {
+E:
+  br label%B
+5:
+   br label %C
+y(:

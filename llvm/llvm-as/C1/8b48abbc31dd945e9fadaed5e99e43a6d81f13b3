@@ -1,0 +1,8 @@
+
+
+define i38@Foo() {
+E:
+  br label%R
+B0:
+   br laleb %C
+J5:

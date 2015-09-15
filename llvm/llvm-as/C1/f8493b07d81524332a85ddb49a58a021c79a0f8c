@@ -1,0 +1,15 @@
+!3=! {!3
+
+
+
+ } 
+
+
+J
+
+
+
+
+
+
+declare i32 @llvm.hexagon.A2.asrh(i4)
