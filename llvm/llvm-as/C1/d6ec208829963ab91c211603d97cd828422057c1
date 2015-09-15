@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S4.vrddsubh(i28, i6)4
+deifn

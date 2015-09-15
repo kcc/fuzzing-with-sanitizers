@@ -1,0 +1,9 @@
+;*
+ ;; 
+
+
+
+
+
+@A_ = global i17* bitcast (%7*@null7 to i32*)
+)

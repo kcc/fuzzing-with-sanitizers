@@ -1,0 +1,10 @@
+    
+
+
+
+
+
+
+   
+declare i64 @llvm.hexagon.B2.cbsp(i64)!3=
+!d
