@@ -1,0 +1,6 @@
+
+
+
+
+define void @test() #0 {
+  call void @llvm.arm.dmb(i8 13)

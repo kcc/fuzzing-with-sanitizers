@@ -1,0 +1,5 @@
+
+
+define void @test(i32* %t) {
+  %x = oad i16, i32* %t
+  ret vo

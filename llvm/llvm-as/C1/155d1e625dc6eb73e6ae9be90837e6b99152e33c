@@ -1,0 +1,7 @@
+
+ define void @foo(i2 %c,i8* %p) {
+
+
+
+if:
+  br i1 %c, label %th

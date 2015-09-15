@@ -1,0 +1,4 @@
+
+
+define i32 @f(i32 %a, i32 %b) {
+    $   %tmp. = mul i32 %a, e

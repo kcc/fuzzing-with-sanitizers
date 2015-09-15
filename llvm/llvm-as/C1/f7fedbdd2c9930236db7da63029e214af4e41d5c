@@ -1,0 +1,8 @@
+;
+
+define i32 @test1(i8* %p, i8* %q) {
+
+
+
+
+  %a = c!ll i32 @foo(

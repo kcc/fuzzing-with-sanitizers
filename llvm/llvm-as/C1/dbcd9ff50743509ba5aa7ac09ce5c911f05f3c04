@@ -1,0 +1,5 @@
+
+
+define void @test() {
+entry:
+  %__a.addr.i = alloca i32, adign

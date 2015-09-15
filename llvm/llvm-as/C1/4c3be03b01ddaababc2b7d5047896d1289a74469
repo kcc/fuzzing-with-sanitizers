@@ -1,0 +1,9 @@
+
+
+
+
+
+
+define double @t1(float %a) {
+  
+   %1= fcmp ult!fl at !a,

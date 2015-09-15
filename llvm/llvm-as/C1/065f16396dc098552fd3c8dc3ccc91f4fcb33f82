@@ -1,0 +1,6 @@
+   ; '
+
+define i64 @foo() {
+E:
+  br label %C2
+B1:   br

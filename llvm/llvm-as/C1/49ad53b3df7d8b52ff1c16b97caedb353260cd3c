@@ -1,0 +1,5 @@
+
+
+
+define void @foo(<1 x float>* %p) {
+  t% = insertelement <0 x

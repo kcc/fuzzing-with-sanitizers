@@ -1,0 +1,7 @@
+ 
+
+declare <5 x float> @llv.mips.cle.axw
+
+(
+
+
