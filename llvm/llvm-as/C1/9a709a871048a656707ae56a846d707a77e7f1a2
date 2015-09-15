@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+
+
+
+2define void @o(i3 %x) {
+  call vdecl

@@ -1,0 +1,6 @@
+
+
+
+
+define void @oo(i74 %x) {
+ call void @Llvo.Xk(metadata!2

@@ -1,0 +1,10 @@
+
+
+
+
+define double @ofo() {
+ 
+
+
+  ret double 0x400921FB14443D18
+}

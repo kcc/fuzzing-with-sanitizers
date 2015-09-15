@@ -1,0 +1,7 @@
+ 
+
+
+
+
+
+declare i8 @llvm.hexagon.S4.xau(i64, i64)  !2=

@@ -1,0 +1,9 @@
+
+
+
+
+
+
+declare <2 x i63> @llvm.ppc.altivec.veulm9uw()<4 
+
+x

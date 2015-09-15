@@ -1,0 +1,4 @@
+; (0?d@
+ 
+
+define void @foo(i36 %X, i3 %Y,i32 %Z)c 
