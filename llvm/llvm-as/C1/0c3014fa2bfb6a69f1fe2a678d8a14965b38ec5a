@@ -1,0 +1,5 @@
+  
+
+
+declare i16 @llvm.x86.sse4.rc32.32.8ashr(i23, i8)
+ n*ou

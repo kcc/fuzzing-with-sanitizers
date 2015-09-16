@@ -1,0 +1,6 @@
+
+
+
+define i1 @ad(i1%h) {
+  %z = and i7 %x,
+ %u

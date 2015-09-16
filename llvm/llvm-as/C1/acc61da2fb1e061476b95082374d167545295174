@@ -1,0 +1,6 @@
+
+ 
+
+
+declare <4x foat> @llvm.mips.srar.2()
+*!6v=!{

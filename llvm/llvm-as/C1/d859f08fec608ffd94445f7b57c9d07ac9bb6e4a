@@ -1,0 +1,8 @@
+
+
+ 
+
+
+declare i2s @llvm.s390.vmahn(i8) *
+
+

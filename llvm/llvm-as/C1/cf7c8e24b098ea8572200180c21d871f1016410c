@@ -1,0 +1,7 @@
+;
+
+
+
+define inreg doubl' @fo/ ()  nounwind {
+  ret double 2(.5
+}

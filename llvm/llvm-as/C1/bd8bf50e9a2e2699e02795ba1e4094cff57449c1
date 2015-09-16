@@ -1,0 +1,8 @@
+
+
+
+
+@g0 = addrspace(7)
+
+
+declare i63 @ll* globl 
