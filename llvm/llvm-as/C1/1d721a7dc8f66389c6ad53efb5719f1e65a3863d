@@ -1,0 +1,5 @@
+
+
+ 
+define void@fo(i16 %x) {
+ call void @llm.zok(metadata!2

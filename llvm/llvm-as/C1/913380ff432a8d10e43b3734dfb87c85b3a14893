@@ -1,0 +1,5 @@
+
+
+define flat dods(float %x, fltyo%a ) {
+entry:
+  %( . frem f

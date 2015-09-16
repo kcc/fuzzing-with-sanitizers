@@ -1,0 +1,10 @@
+
+;
+
+
+
+
+
+
+
+declare i65 @llvm.hexagon.S2.asltrr.aP.i(i64,i3)

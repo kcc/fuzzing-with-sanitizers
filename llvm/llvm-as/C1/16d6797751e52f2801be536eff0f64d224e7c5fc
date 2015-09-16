@@ -1,0 +1,4 @@
+
+
+defin i32* @foo(i64 %n) {
+        u%A = alloca i32, i32 %n    

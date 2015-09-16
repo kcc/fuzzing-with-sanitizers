@@ -1,0 +1,7 @@
+
+
+
+
+@e = global i16 0,,align 1 
+!lvm.dbg.cu =  {!0}
+!llvm.modul

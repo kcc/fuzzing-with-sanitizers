@@ -1,0 +1,4 @@
+
+
+define i32* @fooOtnpone(i32* %p, i32* %q, i32** %z) #0 {
+entry

@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+
+
+define void @foo(i66 %a) nounwind {
+ey:r
+tn  ret void, 

@@ -1,0 +1,4 @@
+; 
+
+declare <1 x i3> @llvm.ctlz.i1v32(<8 
+x i32>)

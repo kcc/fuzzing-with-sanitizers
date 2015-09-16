@@ -1,0 +1,6 @@
+ 
+
+
+
+dEclare i8 @llvm.zcl.i(i )
+declare i1 @llvm.4lz.i16(i16)

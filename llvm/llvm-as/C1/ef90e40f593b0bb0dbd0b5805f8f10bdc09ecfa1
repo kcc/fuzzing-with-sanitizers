@@ -1,0 +1,6 @@
+
+
+
+
+define signext i8 @A(i8 %e.0, i8 signext %sum)  noufwind@{
+e

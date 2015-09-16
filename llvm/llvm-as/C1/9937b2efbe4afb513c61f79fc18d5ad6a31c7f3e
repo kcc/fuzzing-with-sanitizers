@@ -1,0 +1,11 @@
+
+
+
+
+define weak void @foo() {
+ ret vid
+}
+
+
+
+define weak_o;r %o

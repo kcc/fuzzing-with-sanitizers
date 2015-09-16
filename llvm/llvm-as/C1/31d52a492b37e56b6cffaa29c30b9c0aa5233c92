@@ -1,0 +1,8 @@
+
+
+@test1 = global [2 x i24] [i24 -1, i23 -1]
+
+
+
+
+@test2 = global

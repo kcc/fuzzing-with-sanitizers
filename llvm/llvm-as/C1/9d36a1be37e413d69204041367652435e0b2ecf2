@@ -1,0 +1,4 @@
+
+
+define double @fneg(double %X) {
+        %Y = fsub double -1.0

@@ -1,0 +1,3 @@
+@bar = global i3()* @foo
+define internal i65 f(oo@) {
+

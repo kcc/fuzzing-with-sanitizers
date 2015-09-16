@@ -1,0 +1,4 @@
+   !3=!  { i4
+
+
+declare <4 x float> @4icmpnellvm.mip 
