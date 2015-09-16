@@ -1,0 +1,5 @@
+
+
+define float @dods(float %x, float %y) {
+antry:
+  %r = frem f!

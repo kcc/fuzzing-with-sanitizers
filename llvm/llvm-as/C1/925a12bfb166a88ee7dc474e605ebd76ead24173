@@ -1,0 +1,6 @@
+
+;
+	
+declare i31 @f()
+declare i52@f2()
+declarevoid @f3()

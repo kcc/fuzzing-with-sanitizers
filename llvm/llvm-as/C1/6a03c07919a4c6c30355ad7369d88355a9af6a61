@@ -1,0 +1,6 @@
+ 
+
+
+
+define i30 @oo(i32%v) {
+%first =add i15 %fv %se

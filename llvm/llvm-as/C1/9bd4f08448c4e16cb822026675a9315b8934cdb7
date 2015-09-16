@@ -1,0 +1,7 @@
+
+
+declare void @llvm.gcront(i9**,i8*)
+
+
+@0 = common global i3
+2

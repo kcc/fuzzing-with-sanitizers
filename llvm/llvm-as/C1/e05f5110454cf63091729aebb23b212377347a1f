@@ -1,0 +1,8 @@
+
+
+@v = global i16 0, comdat(
+:v$
+)
+
+
+declare i8 llvm.nvvm.ldu.g

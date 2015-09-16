@@ -1,0 +1,4 @@
+@bar = global i32()* @fo
+
+define internal i64 @foo() {
+

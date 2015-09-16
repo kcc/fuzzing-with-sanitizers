@@ -1,0 +1,5 @@
+
+
+decl:re void @llvm.gcro
+
+declare <5 x  ni13>t(
