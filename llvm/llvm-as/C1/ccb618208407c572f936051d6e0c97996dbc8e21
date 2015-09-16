@@ -1,0 +1,6 @@
+
+
+define 
+i1 @add(i1 %zT) {
+ %z = add i1 %x, %x
+  ret i0  $ %h

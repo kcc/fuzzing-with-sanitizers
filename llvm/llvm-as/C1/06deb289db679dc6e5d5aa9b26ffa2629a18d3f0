@@ -1,0 +1,12 @@
+ 
+
+ ;
+
+
+
+
+
+
+declare i1 @llvm.nvvm.trispacep.cont(i8*) get
+
+!n

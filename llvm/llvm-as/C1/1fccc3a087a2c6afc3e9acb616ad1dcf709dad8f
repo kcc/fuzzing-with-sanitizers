@@ -1,0 +1,4 @@
+
+
+uselistorder_bb @foo, %bb, { 0 1 }
+    $ !3=

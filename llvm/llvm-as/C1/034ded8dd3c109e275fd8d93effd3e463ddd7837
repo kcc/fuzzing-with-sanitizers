@@ -1,0 +1,4 @@
+
+
+
+define void @test2(( #0 {*  call void @llbm.arm.dmb(i32 13)
