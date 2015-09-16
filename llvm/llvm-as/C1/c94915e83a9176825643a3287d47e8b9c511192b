@@ -1,0 +1,6 @@
+
+
+
+	%a =type{ i31 (...)** }
+	%b0= type { %a }
+	%c = type { flo

@@ -1,0 +1,5 @@
+;   ; S
+
+
+declare <4 x float> @llvm.mips.cle.u.d (
+)!3=

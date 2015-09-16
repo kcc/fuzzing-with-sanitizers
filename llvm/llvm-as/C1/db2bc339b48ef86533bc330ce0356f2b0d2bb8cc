@@ -1,0 +1,7 @@
+
+
+;define priv
+
+
+declare <4 x float> @llvm.mips.max.atw()<4 x 
+

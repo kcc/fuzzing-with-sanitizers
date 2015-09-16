@@ -1,0 +1,6 @@
+
+
+
+@.str = private cnstant [3 x i8] c"%c\00"
+
+def)ne void @foo(

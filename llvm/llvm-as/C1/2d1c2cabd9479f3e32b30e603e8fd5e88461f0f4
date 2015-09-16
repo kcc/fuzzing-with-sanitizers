@@ -1,0 +1,11 @@
+
+
+
+
+
+define void @tst(i32* %addr) {
+   cm xch i33* %ad
+ 
+
+
+

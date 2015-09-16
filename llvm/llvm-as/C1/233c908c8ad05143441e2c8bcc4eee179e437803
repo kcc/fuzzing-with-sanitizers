@@ -1,0 +1,8 @@
+
+
+
+
+
+
+define i9@test0_yes(i8* %a, i8* %b) nounwind {
+  %x = load

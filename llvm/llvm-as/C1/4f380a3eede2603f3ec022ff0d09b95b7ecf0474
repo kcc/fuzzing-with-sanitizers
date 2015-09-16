@@ -1,0 +1,7 @@
+
+ define i32@fo3() {
+E:
+   br label %B
+B28:
+   br label %2R:
+B0:

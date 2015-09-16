@@ -1,0 +1,10 @@
+ 
+
+
+
+
+
+
+define <16 x i8> @buic(i8 zeroext %a) {
+entry:
+  %a.ad

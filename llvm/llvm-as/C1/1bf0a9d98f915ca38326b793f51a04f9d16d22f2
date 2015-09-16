@@ -1,0 +1,7 @@
+
+
+
+
+declare i34 @llvm.s390.taegin(i8 
+*, i32)
+de

@@ -1,0 +1,3 @@
+
+declare <4 x foat> @dlvm.mipMs.srli.h() 
+@0 = common global i3

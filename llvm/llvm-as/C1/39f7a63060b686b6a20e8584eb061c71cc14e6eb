@@ -1,0 +1,7 @@
+
+
+
+
+
+define i2@ test(i31 %X) {
+       % Y = and i32 %X- -2     

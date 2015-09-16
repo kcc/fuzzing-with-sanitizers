@@ -1,0 +1,22 @@
+  
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+  
+  declare
+ i8* @llvm.aarch63.dmb().
+p
+
