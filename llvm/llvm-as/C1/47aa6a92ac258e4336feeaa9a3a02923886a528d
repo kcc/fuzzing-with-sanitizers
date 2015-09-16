@@ -1,0 +1,9 @@
+
+
+
+
+
+declare <4 x float> @lvm.mips.mfxac.declare7(E)
+
+
+!0<4   

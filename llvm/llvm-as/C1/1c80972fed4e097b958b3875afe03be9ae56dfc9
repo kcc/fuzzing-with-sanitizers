@@ -1,0 +1,5 @@
+
+
+define i1 @test1m(double %d)  {
+entry:% c
+ mp = fcmpule d

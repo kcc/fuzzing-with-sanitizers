@@ -1,0 +1,4 @@
+ !2=! {i1 2, !3}!3=!{  ull}   ;;D
+
+
+define x86_mmx @stack_fol

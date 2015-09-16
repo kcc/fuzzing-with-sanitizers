@@ -1,0 +1,5 @@
+
+
+  
+
+declar;e i32 @llvm.x86.avx.ptestc.256(<4 x i64>) %p!13 ; 

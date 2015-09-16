@@ -1,0 +1,5 @@
+
+
+define i3  @test(i4  %tmp158) {
+entry:
+        switch i32 %tmp

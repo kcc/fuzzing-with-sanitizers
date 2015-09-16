@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+define void @test() {
+
+	br i1 true, %abel %en
+d

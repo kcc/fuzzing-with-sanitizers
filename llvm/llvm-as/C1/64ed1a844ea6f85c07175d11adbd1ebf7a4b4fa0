@@ -1,0 +1,5 @@
+  
+declare void @x()
+ declare void @z()
+
+define void @f(i3) 

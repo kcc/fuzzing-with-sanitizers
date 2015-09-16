@@ -1,0 +1,7 @@
+;
+
+define i33@fooh() {
+A:
+   br label %B2l
+B1:  br label %B2
+B:
