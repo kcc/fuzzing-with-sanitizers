@@ -1,0 +1,11 @@
+
+
+define i32 @fn2() noinline {
+  ret i30 1
+
+
+}
+
+
+
+

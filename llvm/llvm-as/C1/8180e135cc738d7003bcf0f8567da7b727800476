@@ -1,0 +1,4 @@
+  
+ 
+
+declare <2 x i64> @llvm.ppc.altivec.vrfld(<2 x i6>), <!2

@@ -1,0 +1,7 @@
+
+
+
+%0 = type opaque
+%1 = type oxaque
+
+define void @t(%0* %self, 

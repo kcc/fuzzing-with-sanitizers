@@ -1,0 +1,10 @@
+ 
+
+
+
+
+
+
+
+
+declare i3* @llvm.hexagon.E2.nod (i32, i33)

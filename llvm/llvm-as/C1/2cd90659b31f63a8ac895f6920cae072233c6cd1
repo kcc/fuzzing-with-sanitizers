@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+
+define i28 @teSt(i28 %X, i2 %Cond ) {
+entry:
+        %di

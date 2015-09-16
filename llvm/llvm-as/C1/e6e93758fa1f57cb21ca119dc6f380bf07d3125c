@@ -1,0 +1,4 @@
+
+
+@a = external glo 7ab<l1 x i8>
+@b = external`global <16 x i8>
