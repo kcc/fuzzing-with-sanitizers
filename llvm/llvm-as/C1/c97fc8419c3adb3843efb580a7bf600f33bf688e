@@ -1,0 +1,5 @@
+ 
+
+
+define void @fog(i16 %x) {
+  call void @llvm.zXk(metadata!1

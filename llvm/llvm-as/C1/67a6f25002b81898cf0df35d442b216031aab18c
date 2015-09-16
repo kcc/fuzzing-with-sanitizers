@@ -1,0 +1,6 @@
+ 
+
+
+
+define i32 @oo(i32%v) {
+ %fir  =add i15 %f, %s;

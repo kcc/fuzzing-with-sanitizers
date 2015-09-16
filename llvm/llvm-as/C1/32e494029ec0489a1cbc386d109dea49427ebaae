@@ -1,0 +1,4 @@
+
+
+
+declare i32 @llvm.x86.sse43.c2c32.32.8(i32, i8) no

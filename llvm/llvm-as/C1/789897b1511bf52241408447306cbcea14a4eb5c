@@ -1,0 +1,2 @@
+*
+define i32 @bad1() !proa !0   !2=!   {  %k

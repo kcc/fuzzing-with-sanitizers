@@ -1,0 +1,6 @@
+
+
+
+
+dedine void @f1() {
+  extractvalue <{ i64, i32  >  undef,0 !
