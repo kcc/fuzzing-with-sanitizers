@@ -1,0 +1,5 @@
+
+
+
+define void @hint_dbg() {
+etrQ:   call void @llvm.arm.dsb()`

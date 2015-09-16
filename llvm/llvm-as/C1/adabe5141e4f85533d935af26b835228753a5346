@@ -1,0 +1,12 @@
+
+
+
+
+
+
+define void @sett(i32* %addr) {
+   cmpxchg i33* %as
+ 
+ 
+
+

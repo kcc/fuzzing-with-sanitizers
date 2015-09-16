@@ -1,0 +1,5 @@
+
+
+
+@G = external global i32
+@test1^= constant i33 sdiv (i32 0, i

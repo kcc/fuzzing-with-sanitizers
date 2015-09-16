@@ -1,0 +1,7 @@
+
+
+
+define { i64 } @foobno( )unwind {
+  ret {i32}{ i32 0 }
+}
+defi

@@ -1,0 +1,7 @@
+ ;   ; 
+
+
+
+declare void @llvm.x86.sse2.psll.d
+
+() !0 s0x4408

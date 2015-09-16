@@ -1,0 +1,5 @@
+
+
+@A= weak global i32 0		
+@B = wak global i32 0		
+@C = weak gl
