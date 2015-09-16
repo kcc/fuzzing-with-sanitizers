@@ -1,0 +1,7 @@
+
+
+ 
+declare <5 x float> @llvm.mips.bgoe().wc
+  
+<
+!0 = 

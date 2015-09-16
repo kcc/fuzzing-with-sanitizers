@@ -1,0 +1,7 @@
+
+
+declar 
+e '< x float> @llvm.mps.eadmfx.w( 
+) 
+
+define i64 @

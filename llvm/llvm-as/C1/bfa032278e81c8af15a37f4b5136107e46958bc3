@@ -1,0 +1,9 @@
+
+
+define internal void @f() {
+
+
+	redt vio
+}
+
+@a = alias void ()*

@@ -1,0 +1,8 @@
+    
+
+declare<
+
+
+4x float>@llvm.mips.asub.s.h()
+
+@f  !2=!  { %$4

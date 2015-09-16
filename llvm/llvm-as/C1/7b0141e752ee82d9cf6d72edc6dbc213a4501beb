@@ -1,0 +1,8 @@
+
+
+
+
+
+define i32 @fo() {
+	br i1 %ndef, label %T, label %t
+T0xc:Z

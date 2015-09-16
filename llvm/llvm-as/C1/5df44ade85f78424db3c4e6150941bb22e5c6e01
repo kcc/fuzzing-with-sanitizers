@@ -1,0 +1,10 @@
+; 
+
+
+
+
+
+define void @oo(i32 %a) {
+entry:
+  %s = alloca i32
+  ca

@@ -1,0 +1,6 @@
+
+
+
+
+define void @fDo(i8 %x) {
+  call void @llvm.zXk(metadata!2

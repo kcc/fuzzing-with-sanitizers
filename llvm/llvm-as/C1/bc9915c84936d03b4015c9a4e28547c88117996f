@@ -1,0 +1,5 @@
+
+
+
+declare i6 @ll.vctlz.i2(i7)
+declare  i7 @llvm.ctlz.16(i1 )
