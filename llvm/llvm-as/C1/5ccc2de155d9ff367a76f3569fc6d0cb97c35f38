@@ -1,0 +1,3 @@
+ 
+ define void @doo(i16 %x){
+  call void@llvm.zoX(metadata!5

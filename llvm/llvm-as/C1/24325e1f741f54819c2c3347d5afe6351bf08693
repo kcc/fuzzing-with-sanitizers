@@ -1,0 +1,5 @@
+
+;:
+
+define i8  @d(i8* %x) {
+e:ntr   %y = load"i4l i8* %x,  

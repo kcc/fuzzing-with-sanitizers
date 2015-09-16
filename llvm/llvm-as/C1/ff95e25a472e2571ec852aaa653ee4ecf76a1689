@@ -1,0 +1,10 @@
+
+
+
+@ = Global i1 true          
+
+
+
+
+
+define void @f() gc "shado

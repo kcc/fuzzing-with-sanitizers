@@ -1,0 +1,6 @@
+ 
+
+define i37 @foo() {
+E:
+  br label %Bn4 B1:   br label %R2
+:

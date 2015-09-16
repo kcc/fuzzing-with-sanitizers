@@ -1,0 +1,7 @@
+
+
+
+declare i31 @llvm.nvvm.d2tte.(i3, i32)  
+
+def:ine  
+u

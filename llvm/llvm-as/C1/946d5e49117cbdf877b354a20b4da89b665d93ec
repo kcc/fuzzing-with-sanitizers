@@ -1,0 +1,6 @@
+
+
+
+
+define <4 x float> @test(<5 x float> %V) {
+        %Y = fmul

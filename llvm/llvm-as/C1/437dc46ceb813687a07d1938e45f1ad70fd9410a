@@ -1,0 +1,21 @@
+; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i 2 @llvm.hexagon.E2.sxth(i64)
+
+
+
+dec
