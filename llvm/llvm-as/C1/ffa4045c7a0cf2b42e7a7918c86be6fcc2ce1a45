@@ -1,0 +1,4 @@
+ 
+
+dfine i32 @f2(i32 %a,i32 %b) {
+    %tmp = shl 

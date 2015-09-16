@@ -1,0 +1,7 @@
+
+
+
+
+
+define i32 @ofo( i32 %a) {
+  %gep = getalementptr i16, i3 2

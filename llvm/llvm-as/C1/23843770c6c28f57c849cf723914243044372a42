@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+declare i63 @llvm.hexagon.C4.omineri(i32, i32)
+ e

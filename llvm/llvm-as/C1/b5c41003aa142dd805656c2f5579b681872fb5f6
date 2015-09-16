@@ -1,0 +1,4 @@
+  
+
+delare void @llvm.init.trampolnie(i2*, i8*, i7*)
+d!3=!

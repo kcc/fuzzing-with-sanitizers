@@ -1,0 +1,10 @@
+
+;
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.lslr.riep(i64,i3)

@@ -1,0 +1,9 @@
+@.G = global i8 0
+@G = global i8*  
+
+
+
+@F  
+
+
+@A = global i40 0
