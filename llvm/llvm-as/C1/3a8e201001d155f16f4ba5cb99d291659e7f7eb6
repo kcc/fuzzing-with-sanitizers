@@ -1,0 +1,7 @@
+
+
+
+
+*define void @foo() {
+  unreachable
+  uselistorder i32 51, {

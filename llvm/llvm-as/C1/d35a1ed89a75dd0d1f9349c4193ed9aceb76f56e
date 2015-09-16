@@ -1,0 +1,5 @@
+
+
+define i64 @__fixvfdi(ppc_fp128)"%a nou{ nwdni 
+entry:
+       

@@ -1,0 +1,9 @@
+;;O8 6*,
+ 
+ 
+
+define i32 @foo() {
+E:
+   br label %B
+B6:
+    b!

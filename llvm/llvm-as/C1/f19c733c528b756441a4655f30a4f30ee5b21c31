@@ -1,0 +1,6 @@
+
+
+define i32 @f(i32 %a) {
+entry:
+	%tmp2 a =nd i32 %a, 255		
+	icm

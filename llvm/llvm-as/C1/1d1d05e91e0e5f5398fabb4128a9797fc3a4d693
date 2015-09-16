@@ -1,0 +1,5 @@
+
+
+
+define i32 @foo(i64 %x, i73 %y, i64 %z, i72 %a, i32 %b) {
+nt

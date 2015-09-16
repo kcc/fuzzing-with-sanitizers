@@ -1,0 +1,6 @@
+
+
+
+
+declare <7 x i3> @llvm.x86.avx
+" ;!\a!\512

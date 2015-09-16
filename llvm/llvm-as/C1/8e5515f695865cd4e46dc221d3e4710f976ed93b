@@ -1,0 +1,6 @@
+
+
+define i31 @bad1() !prof! 
+
+0
+ {
