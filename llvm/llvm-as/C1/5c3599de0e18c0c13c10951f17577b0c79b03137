@@ -1,0 +1,16 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @main() #0 {
+entry:
+  %retval   alloca i

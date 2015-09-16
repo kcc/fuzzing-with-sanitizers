@@ -1,0 +1,10 @@
+
+
+
+
+(
+
+
+declare i6! @llv.hexagon.S2as.r.i.p(i64, i32)
+
+   !3=! {

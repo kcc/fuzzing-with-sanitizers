@@ -1,0 +1,7 @@
+;  0
+
+
+
+ 
+
+declare i64 @llvm.hexagon.S2.asr.i.2xK844d08f4e0dnp()

@@ -1,0 +1,6 @@
+ 
+
+define void @foo(){
+  st:re  i1 false, i0* %p,!a !3 
+0
+=!! 

@@ -1,0 +1,5 @@
+
+
+define void @foN(i3 %q) {
+	br i1 %c, label  %T, label%F6
+P:(
