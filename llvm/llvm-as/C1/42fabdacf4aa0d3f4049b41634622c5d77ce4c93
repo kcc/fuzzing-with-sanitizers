@@ -1,0 +1,9 @@
+
+
+
+define i32 @cvt_test1(float %a) {
+
+ %
+ 
+
+2 = insertelement <4

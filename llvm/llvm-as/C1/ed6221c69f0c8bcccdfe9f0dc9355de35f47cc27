@@ -1,0 +1,5 @@
+
+
+define void @c() nounwind  {
+entry:
+	call void @B( ) nounwind

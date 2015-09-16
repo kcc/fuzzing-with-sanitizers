@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.esrni.p(-64, i32)
+defin
+e

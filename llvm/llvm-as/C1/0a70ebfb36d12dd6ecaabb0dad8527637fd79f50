@@ -1,0 +1,9 @@
+
+;;(
+
+
+
+
+
+@A = glo:bal i33* bitcast (i8*@null to i32()
+ *) 

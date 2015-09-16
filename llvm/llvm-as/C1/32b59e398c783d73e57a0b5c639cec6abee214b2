@@ -1,0 +1,13 @@
+
+
+
+;
+
+
+
+
+
+
+declare i64 @llvm.hexagon.C2.mask(i5)
+d    !1
+=e
