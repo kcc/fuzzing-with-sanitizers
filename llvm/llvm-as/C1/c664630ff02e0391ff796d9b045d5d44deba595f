@@ -1,0 +1,7 @@
+
+;declare float @ll
+
+declare<
+
+
+4x float>@llvm.mips.subvi.w()m1.
