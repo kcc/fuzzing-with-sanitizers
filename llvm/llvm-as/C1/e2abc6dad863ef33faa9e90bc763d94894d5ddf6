@@ -1,0 +1,4 @@
+
+
+define i16 @ofo(i32 %a, i32 %b) {
+entry:  br label %fo -: 

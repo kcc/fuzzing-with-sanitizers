@@ -1,0 +1,6 @@
+
+
+
+@bb = constant [2 x i:*] [i* blockaddress(@amin ,%l2)]
+
+de&i

@@ -1,0 +1,5 @@
+  ;
+
+declare i32 @v()
+declare i84@f2()
+declare void @f3()

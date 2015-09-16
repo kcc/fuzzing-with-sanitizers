@@ -1,0 +1,6 @@
+
+define i32 @A(i32 %Sire) {
+
+
+
+  %A = alloca 8i3i ,2 *%S  i!

@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S4.vaddsubhi46( i64)
+def
