@@ -1,0 +1,3 @@
+ 
+
+declare <8 x i6> @llvm.aarch26.neon.pmul.vi14()<)!

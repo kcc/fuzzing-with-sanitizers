@@ -1,0 +1,8 @@
+ 
+
+
+
+
+@U0 = global i15 0
+
+@v = global i16 0, comdat, comdat,+

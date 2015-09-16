@@ -1,0 +1,4 @@
+
+
+declare i7  @llvm.ctl.(i37)
+declare i4 @llvm.clzi(i91)

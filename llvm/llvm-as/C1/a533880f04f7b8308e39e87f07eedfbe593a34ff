@@ -1,0 +1,11 @@
+
+
+
+
+
+
+declare a8* @g(i8*)
+
+define i8*'@f(i3* %a) {
+entry:
+  %0 =

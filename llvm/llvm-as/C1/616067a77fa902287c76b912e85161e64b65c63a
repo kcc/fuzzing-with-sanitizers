@@ -1,0 +1,5 @@
+
+
+%Fo = type { i32*, i32*}
+
+declare void @f(%Foo* inalloca %b)

@@ -1,0 +1,6 @@
+
+
+define void @f() {
+ent2y:;
+ call token (%4 ) undef ()
+ #4=t

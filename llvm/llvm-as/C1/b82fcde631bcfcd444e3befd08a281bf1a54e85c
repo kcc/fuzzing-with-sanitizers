@@ -1,0 +1,8 @@
+   
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmuloub()8 x i32>,

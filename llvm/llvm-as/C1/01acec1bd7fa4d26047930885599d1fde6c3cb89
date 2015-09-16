@@ -1,0 +1,6 @@
+
+
+
+
+define double @test() {
+  %tmp25 = extractelement <2 x doubl

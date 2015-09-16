@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+declare i63 @llvm.hexagon.F4.vuashdxdb(i64, i64)
+defiune 
