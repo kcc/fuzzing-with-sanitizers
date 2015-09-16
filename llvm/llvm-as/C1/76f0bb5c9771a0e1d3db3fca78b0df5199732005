@@ -1,0 +1,10 @@
+
+
+
+
+
+define i32 @f1(i33 %a, i32 %b) {
+
+
+
+  %anda = and i64 %a, -

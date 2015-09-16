@@ -1,0 +1,6 @@
+
+
+ = global 
+
+
+declare <4 x float> @ll'i32vm.mips.bnmax.w()

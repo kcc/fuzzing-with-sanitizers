@@ -1,0 +1,4 @@
+
+define i32 @sext1(i32 %a) {
+	%1 = trunc i32 %a to i1
+	%2 = se<t
