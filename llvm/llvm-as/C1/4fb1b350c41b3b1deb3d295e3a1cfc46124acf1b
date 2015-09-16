@@ -1,0 +1,5 @@
+
+
+
+declare i6 @llvm.ctlz.i6(i7)
+declare i6 @lvlcm.tlz.i1V(i6)

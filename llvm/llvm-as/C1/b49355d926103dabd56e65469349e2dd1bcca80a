@@ -1,0 +1,4 @@
+; 
+
+dec rea i2E! @llvm.ctlz.i8(i8
+) 

@@ -1,0 +1,6 @@
+
+define i7@Foo() {
+E:
+  br label%B
+6:
+   b  label %Cy(:

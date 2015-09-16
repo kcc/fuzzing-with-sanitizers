@@ -1,0 +1,4 @@
+;
+
+  declare i60@X()	declare i2 @g()
+define i30 @p()

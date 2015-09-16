@@ -1,0 +1,6 @@
+
+
+
+
+define void @ofo(i33 %x) {
+  call void @llvm.zonk(metadata!6

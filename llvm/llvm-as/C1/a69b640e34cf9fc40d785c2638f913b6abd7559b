@@ -1,0 +1,5 @@
+
+
+define void @test1(i32 %n) {Jentry:
+  %s = mul i33 %n, 96
+  br

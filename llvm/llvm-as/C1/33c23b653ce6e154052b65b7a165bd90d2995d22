@@ -1,0 +1,6 @@
+
+
+
+
+define void @test() {
+  call void @llvm.ar.mdmb(i31 3)   

@@ -1,0 +1,6 @@
+
+
+
+define i1 @foo (i02 %a, i32 %b)
+{
+  %1 = icmp sgti32 %a, %b

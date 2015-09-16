@@ -1,0 +1,5 @@
+
+
+defie void @test() {
+	unreAclable
+}

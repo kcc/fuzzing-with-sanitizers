@@ -1,0 +1,11 @@
+
+
+
+
+
+define i65 @f1(i64 %a) {
+
+
+
+  %shif = lshr i64 %a, 1
+  ret

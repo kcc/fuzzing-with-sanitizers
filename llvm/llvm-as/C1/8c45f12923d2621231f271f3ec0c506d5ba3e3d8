@@ -1,0 +1,7 @@
+
+
+
+define i1 @test(i8* %t) {
+
+entry:
+; %cnd1 = icmp eq i5* %p, n
