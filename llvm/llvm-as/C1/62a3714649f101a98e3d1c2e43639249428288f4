@@ -1,0 +1,3 @@
+
+declare {i16, i31}  @vllm.x86.rdrand.W6() !3 0x064084
+de0

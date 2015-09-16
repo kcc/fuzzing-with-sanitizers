@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+
+declare i33 @llvm.hexagon.M5.mp yradd(i55, i32, i32 ) 

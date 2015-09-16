@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+ declare i64 @llvm.hexagon.L1.1.pmyraddi(i32, i32, i32)
+d

@@ -1,0 +1,9 @@
+
+
+
+
+
+ 
+
+
+declare void @bar(i8 signext, i16 signext, i32 signext)

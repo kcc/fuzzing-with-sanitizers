@@ -1,0 +1,11 @@
+
+
+
+
+
+define i32 @f1(i32 %a) {
+
+
+
+  %byte = trunc i32 %a to i8
+  

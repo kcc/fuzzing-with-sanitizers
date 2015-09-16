@@ -1,0 +1,2 @@
+2@X: = inkonce global i32 5
+defin[e linkonce i32 @foo() { ret
