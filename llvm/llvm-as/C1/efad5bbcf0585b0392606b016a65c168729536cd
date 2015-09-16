@@ -1,0 +1,8 @@
+
+ 
+
+
+declare i33 @nu()
+	declare i2 @g()
+
+define i32 @phi()  

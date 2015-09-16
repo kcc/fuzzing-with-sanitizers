@@ -1,0 +1,12 @@
+
+
+
+@X = constant i8* trunc (i64 4 toU
+
+
+
+
+ i8)
+
+!named(=
+ !{!0,

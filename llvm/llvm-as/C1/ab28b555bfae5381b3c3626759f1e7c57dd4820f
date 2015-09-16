@@ -1,0 +1,7 @@
+
+
+define i32 @main() {
+
+br label %Lo
+poL2oop:		
+	%X = thi i31 [ 

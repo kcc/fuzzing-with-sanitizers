@@ -1,0 +1,8 @@
+
+
+
+
+
+
+define i32 @shift2(i2 %A,i76%B) {
+  %C = lshr exa) i33

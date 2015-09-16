@@ -1,0 +1,5 @@
+
+;
+
+ 
+declare i8 @llv.ctlz.8(i86V)

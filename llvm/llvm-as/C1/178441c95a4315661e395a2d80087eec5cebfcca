@@ -1,0 +1,9 @@
+         
+
+
+
+
+
+
+declare i3&3 @llvm.hexagon.2.add(i16, i32)
+def
