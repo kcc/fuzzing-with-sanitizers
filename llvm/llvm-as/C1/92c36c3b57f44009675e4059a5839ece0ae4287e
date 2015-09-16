@@ -1,0 +1,7 @@
+
+
+
+@b = external global [2 x { }]         
+
+define i1 @f() {
+  

@@ -1,0 +1,4 @@
+
+
+deine void @fo:() {
+ store i0 false, i13 %p,!align   !13

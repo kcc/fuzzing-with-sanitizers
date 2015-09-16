@@ -1,0 +1,6 @@
+
+
+
+ define void @fog() {
+
+  ret void, !bab$!3  !::I

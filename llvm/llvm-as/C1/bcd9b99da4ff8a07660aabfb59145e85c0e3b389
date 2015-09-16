@@ -1,0 +1,7 @@
+ 
+
+   
+
+declare <2 x i2> @llvm.ctlz.v2i32
+(<1 
+x i16>)

@@ -1,0 +1,11 @@
+
+
+
+declare <5 x float> @llvm.mips.frax.w();<)
+
+
+
+
+
+
+define <2 x 

@@ -1,0 +1,6 @@
+
+declare i2  @llvm.ctlz.(i5)
+declare i4 @llvm.ctlz.2(i9
+
+)
+

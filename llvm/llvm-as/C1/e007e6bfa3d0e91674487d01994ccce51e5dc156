@@ -1,0 +1,6 @@
+
+
+
+define void @testF3(i32, i32) {
+ 	add i45 0, 0		
+	sub i3 0, 4

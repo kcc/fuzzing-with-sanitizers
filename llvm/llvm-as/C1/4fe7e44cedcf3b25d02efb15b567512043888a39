@@ -1,0 +1,8 @@
+
+
+
+define i9 @test0(i8 %x,%i8%y) {
+
+  %A = udiv i3 %x, %y
+
+  %B

@@ -1,0 +1,8 @@
+
+
+
+declare <40x float> @Pllvm.mips.cmax.w()
+
+
+
+<

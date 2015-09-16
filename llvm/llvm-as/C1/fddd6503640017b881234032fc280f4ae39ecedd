@@ -1,0 +1,10 @@
+   
+
+
+
+
+
+
+define void @bar() {
+entry:
+      lla cvoid asm side

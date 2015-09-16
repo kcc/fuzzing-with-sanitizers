@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+define i1 @oo() {
+E:  br label%B
+B6:   br la
+b

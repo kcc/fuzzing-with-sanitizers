@@ -1,0 +1,9 @@
+   
+
+
+
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vsum4suw()<
