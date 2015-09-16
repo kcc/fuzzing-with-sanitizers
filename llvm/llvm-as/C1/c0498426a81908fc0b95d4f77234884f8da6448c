@@ -1,0 +1,6 @@
+
+
+
+define i31* @f(i8* %x) {
+entry:
+        %tmp = call i8* @m( i

@@ -1,0 +1,3 @@
+@a = global i32 
+42declare {i15  ?i32} @llvm.x86.rdrad.1D()
+d

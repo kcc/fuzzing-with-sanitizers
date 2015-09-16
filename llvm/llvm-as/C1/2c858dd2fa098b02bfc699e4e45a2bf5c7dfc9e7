@@ -1,0 +1,5 @@
+;  
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmaxub()3 x i64>,

@@ -1,0 +1,2 @@
+define weak void @fd() {
+ call v*oif @v(i

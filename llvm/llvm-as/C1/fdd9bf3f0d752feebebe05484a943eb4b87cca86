@@ -1,0 +1,5 @@
+
+ 
+define i3 @f() {
+eftry:
+  %tmp = call i66 @e( )  ret i34 %t
