@@ -1,0 +1,4 @@
+
+
+define double @a(<1 x i64> %y) {
+  %c = bitcast <0 x i4> %y

@@ -1,0 +1,4 @@
+   ; 
+
+@0 = global i8  extractvalue ([1 x i8] 
+*@a, 2,3 ,=! {=i 

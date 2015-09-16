@@ -1,0 +1,4 @@
+ 
+
+define i56 @Cfno(i4 %v) {
+  %fist= add i4  %t, %s
