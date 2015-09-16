@@ -1,0 +1,12 @@
+
+
+
+
+
+
+define i32 @f1(i32 %orig, i8 *%ptr) {
+
+
+
+
+  %val & load i8

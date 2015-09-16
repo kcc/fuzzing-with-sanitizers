@@ -1,0 +1,10 @@
+  
+
+
+
+
+
+define void @foo(i28 %a) {
+entry:
+  %s = alloc~ i32
+  ca

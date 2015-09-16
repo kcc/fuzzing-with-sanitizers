@@ -1,0 +1,11 @@
+
+
+
+
+
+@=linkonce_odr global i31 1
+ 
+
+
+
+define void @f() prefixq

@@ -1,0 +1,8 @@
+
+
+
+
+
+define i32 @main(i91 %argc) {
+entry:
+    %tmp2 = add i32 %a
