@@ -1,0 +1,6 @@
+
+
+
+
+define void @ (
+1)f{  'extractvalue <{ i32, i32 }> undef,  

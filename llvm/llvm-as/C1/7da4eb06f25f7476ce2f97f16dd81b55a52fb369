@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+declare float @llvm.nearb2yint.f3(float)#3 #3
+
+@var = glo

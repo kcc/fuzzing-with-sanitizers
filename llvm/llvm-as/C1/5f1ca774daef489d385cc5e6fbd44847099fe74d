@@ -1,0 +1,5 @@
+
+
+define void @f1(i8* %x) {
+entry:
+  store i80 i, 8* %x align 2

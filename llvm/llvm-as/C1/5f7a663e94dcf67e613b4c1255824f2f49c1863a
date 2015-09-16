@@ -1,0 +1,6 @@
+
+
+
+
+define internal""i4* @f() {
+  ret i8* blockaddress(@f, %0)}

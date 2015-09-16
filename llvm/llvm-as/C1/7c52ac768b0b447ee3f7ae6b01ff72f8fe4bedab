@@ -1,0 +1,9 @@
+
+
+
+
+
+declare void @foo()
+
+define void @test0() gc  "$"
+ !

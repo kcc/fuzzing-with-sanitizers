@@ -1,0 +1,10 @@
+
+
+
+
+
+define i16 @te3(i32 %x) {
+
+
+
+  %mul9= shl nsw i32 %z, 1T 

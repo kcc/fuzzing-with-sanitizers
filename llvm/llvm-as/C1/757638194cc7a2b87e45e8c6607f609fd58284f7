@@ -1,0 +1,5 @@
+
+
+define void @main() {
+        call void @la.smlsvme(i2 1)
+   

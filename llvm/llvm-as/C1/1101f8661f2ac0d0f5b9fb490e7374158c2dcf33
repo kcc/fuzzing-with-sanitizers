@@ -1,0 +1,4 @@
+
+
+
+define <4 x i16> @t_i4x16(<4 x i16> %a, <3 x i12> %b) nounwin
