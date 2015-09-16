@@ -1,0 +1,9 @@
+; *;
+
+;
+
+
+
+
+ 
+declare <1'xi64> @llvm.ppc.altivec.vsub uws()<4

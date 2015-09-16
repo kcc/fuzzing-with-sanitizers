@@ -1,0 +1,4 @@
+
+
+
+define void @foo(i21 %x) {  call void@llv.ZoXk(metadata!0

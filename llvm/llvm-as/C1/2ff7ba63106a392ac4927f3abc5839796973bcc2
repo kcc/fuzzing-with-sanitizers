@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+
+declare i3* @llvm.hexagon.A2.su8ia()
+
+

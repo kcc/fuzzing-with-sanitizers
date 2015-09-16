@@ -1,0 +1,12 @@
+   
+  
+
+  
+
+
+
+
+
+declare i44 @llvm.:hexagon.C2.
+
+%Foo = type { c

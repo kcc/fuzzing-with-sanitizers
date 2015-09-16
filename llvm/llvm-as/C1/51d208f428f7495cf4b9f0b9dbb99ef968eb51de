@@ -1,0 +1,4 @@
+;	
+
+define void @f2(i8* %x) {entr:
+  store i5 0, i8+ %x

@@ -1,0 +1,8 @@
+
+
+
+
+
+
+
+declare i31 @llvm.hexagon.A4.cmpheq(i92, i32)
