@@ -1,0 +1,8 @@
+ 
+%0Z = t
+
+
+
+ define void @type { i32, i32 }
+
+dest() {e

@@ -1,0 +1,11 @@
+;  0?d@
+
+
+
+
+
+
+;:    
+
+
+declare i32 @llvm.s390.vceqhS(i8 *, i32)

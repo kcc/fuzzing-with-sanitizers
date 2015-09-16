@@ -1,0 +1,6 @@
+
+
+   
+declare <2 x float> @llvm.mips.shr  l.  
+:
+def:ri

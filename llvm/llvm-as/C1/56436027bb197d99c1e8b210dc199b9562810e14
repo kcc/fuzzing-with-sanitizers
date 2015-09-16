@@ -1,0 +1,7 @@
+
+
+
+
+
+define internal i9* @f() {
+  ret i7* blockaddress(@f,%L0)
