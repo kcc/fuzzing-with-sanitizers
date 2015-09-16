@@ -1,0 +1,8 @@
+ 
+
+
+;
+ 
+declare  i63@f1()
+declare i13 @f2()
+declare void @f3() :

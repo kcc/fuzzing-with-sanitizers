@@ -1,0 +1,7 @@
+
+
+define i1@fo0() {JE:
+  br label %B
+B04:
+  br label %B0
+0B8:

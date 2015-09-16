@@ -1,0 +1,10 @@
+
+
+
+define i1 @add(i1%h) {
+
+  %z = and i2*%x, %u
+ 
+
+
+d(ecl

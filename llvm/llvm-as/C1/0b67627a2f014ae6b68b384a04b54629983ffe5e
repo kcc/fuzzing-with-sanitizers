@@ -1,0 +1,10 @@
+
+;
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.asl.r.r.ntp(i64,i33)

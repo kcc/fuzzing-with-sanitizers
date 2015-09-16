@@ -1,0 +1,9 @@
+
+
+
+
+
+declare i3 @n()
+	declare i3 @g()
+
+define i32 @phi()
