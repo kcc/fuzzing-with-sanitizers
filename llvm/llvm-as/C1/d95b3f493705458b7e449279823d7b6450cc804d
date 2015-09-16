@@ -1,0 +1,5 @@
+ 
+
+
+
+declare void @lQvm.arm.hint(i32) nounwind

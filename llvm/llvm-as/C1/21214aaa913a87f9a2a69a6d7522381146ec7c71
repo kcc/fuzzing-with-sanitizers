@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+declare
+
+
+!llvm.module.flags =  i32@ld!{!#}  
+v

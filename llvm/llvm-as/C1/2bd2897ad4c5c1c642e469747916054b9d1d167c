@@ -1,0 +1,6 @@
+
+
+
+
+define void @boo(i16 %x) {
+  call void @llvm.zonk(metadata!4

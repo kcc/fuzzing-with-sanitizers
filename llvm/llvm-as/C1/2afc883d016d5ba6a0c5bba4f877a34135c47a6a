@@ -1,0 +1,7 @@
+
+
+define i1 @test1(i64 %poscnt, i64%work) {
+entry:
+
+
+	%0 = lshr

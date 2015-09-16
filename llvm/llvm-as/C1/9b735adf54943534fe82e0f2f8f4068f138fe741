@@ -1,0 +1,9 @@
+
+@F = global i8 0
+@G = global i8* @F
+
+
+
+
+'
+d:clare { i32, i1 } D

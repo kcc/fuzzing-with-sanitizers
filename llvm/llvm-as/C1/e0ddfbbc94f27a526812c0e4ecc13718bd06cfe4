@@ -1,0 +1,9 @@
+
+
+
+
+declare void @llvm.prefetch()
+   
+
+
+define void @foo(i96 %x)

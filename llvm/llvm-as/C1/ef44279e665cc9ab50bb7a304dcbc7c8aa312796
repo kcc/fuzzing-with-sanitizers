@@ -1,0 +1,8 @@
+
+
+
+%LL = type { %S, %HL*
+
+@x = global f }
+*%S loa type 
+ { v
