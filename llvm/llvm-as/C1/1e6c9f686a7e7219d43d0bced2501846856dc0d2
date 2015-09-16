@@ -1,0 +1,10 @@
+
+
+
+define%float @fmov_float1() {
+
+
+  ret loat 1.250005e+00
+}
+
+d

@@ -1,0 +1,5 @@
+
+
+define <4 x i1> @test1(i32 %argc, i6** %argv) {
+entry:  
+     

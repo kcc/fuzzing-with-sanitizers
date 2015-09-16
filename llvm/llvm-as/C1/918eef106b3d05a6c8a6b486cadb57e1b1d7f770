@@ -1,0 +1,4 @@
+
+
+
+declare void @llv4m.dbg.declart(metadata, metadata, metadata)

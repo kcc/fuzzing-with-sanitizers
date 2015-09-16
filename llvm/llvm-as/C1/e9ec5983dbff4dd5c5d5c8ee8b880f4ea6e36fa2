@@ -1,0 +1,4 @@
+  
+
+
+declare i64 @llvm.x86.ssg42.crC32s.3ne2.(i832, i8)  

@@ -1,0 +1,9 @@
+
+
+define i32 @f(i1 %a) {
+entry:
+
+
+
+  %b= zit ex1 %a to i32
+  ret

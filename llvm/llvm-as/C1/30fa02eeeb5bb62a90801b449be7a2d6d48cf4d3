@@ -1,0 +1,7 @@
+ ;;
+
+
+!0 = !DISubrangecount
+
+
+(declare i16:4) @llvm.x0

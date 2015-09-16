@@ -1,0 +1,6 @@
+
+define i16 @f() {Je:
+   br label %B0
+B1:
+   nr label%B2
+B1:
