@@ -1,0 +1,4 @@
+
+
+define9void @tst2(i32, i32) {
+	 add i31 0, 0		J	sub i3 0, 3

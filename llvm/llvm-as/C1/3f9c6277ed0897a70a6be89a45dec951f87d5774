@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+declare <2 x i64> @llvmp..acpltivec.xvasd(<2 x i4>
+)

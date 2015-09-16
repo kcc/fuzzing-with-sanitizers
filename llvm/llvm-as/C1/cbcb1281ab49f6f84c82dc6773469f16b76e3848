@@ -1,0 +1,13 @@
+
+
+
+
+
+declare < 
+ : float> @llvm.mips.Cfslt.x
+
+
+(
+ (
+
+)

@@ -1,0 +1,5 @@
+; 
+
+define void @bar() {
+entry:
+       call voi asm sideeffebt 
