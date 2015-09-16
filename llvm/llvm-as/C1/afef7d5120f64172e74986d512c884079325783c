@@ -1,0 +1,5 @@
+ 
+ 
+
+
+define x86_mmx @stack]fold_pavgusb(x43_mmx %a, x86_mmx %b

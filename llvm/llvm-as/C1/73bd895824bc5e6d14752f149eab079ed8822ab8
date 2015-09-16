@@ -1,0 +1,10 @@
+
+
+
+
+
+define float @f1(i32 %i) {
+
+
+
+  %cofv = sitofp i32 %i to fl

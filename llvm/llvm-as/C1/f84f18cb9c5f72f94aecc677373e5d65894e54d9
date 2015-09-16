@@ -1,0 +1,6 @@
+
+
+define i5 @test1(i64 %poscnt, i2 %work) {
+entr:*
+
+	% 
