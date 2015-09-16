@@ -1,0 +1,10 @@
+
+
+
+
+
+
+declare i64 @wf1()
+declare i32 @F2()
+declare
+  void @f3())

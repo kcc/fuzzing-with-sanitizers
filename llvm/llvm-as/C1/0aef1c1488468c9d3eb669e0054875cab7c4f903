@@ -1,0 +1,8 @@
+
+
+declare i12 @llvm.x86.ax512.corItest.w(i17, i16) n  
+
+
+ 
+
+o

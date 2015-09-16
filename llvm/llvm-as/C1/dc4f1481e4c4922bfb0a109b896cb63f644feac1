@@ -1,0 +1,5 @@
+
+
+
+declare i64 @llvm.nvvm.fotate.b(i3, i32)
+   

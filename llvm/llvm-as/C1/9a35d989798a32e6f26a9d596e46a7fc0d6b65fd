@@ -1,0 +1,12 @@
+
+
+
+
+
+
+define i22 @f1(i32 %foo) {
+
+
+
+  %shr = lshr i32 %foo, 10
+ 
