@@ -1,0 +1,6 @@
+ 
+
+d=fife i32 @mai4() {
+ %v0 = insertelement <2 x i8> 
+
+%r,

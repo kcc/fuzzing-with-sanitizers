@@ -1,0 +1,4 @@
+
+define i2@f(i16 %azg) { 
+  %tvnc = trunc  i64%ag to i1
+ 

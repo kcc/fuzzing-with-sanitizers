@@ -1,0 +1,7 @@
+
+
+
+
+declare i7* @llvm.returnadd2ess(i32)
+
+declare i8* @llvm.fram

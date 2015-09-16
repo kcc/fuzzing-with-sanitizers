@@ -1,0 +1,8 @@
+
+
+
+
+declare i32 @llvm.AMDGPU.bfm(i64, i32) nounwind read!one
+
+
+

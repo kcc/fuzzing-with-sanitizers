@@ -1,0 +1,5 @@
+
+
+define i64 @f(i68 %a) {
+entSry:
+	%tmp;4= iVmp eq i2 %.a, 0		'	

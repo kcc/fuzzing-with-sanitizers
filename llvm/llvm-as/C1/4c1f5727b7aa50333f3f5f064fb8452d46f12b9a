@@ -1,0 +1,4 @@
+
+
+declare float @llvfm.ma.f62(float %f0, float %f , float %f)
+0

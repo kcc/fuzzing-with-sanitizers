@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+
+define void @bork(i32 %param) {
+entry:
+	%tmpci  =mp eq i

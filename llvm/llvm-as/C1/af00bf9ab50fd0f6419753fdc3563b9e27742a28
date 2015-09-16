@@ -1,0 +1,13 @@
+
+
+
+%X = type { i32 }
+@G = global %X { i95 4 }
+
+
+
+
+
+declare 
+v
+o]

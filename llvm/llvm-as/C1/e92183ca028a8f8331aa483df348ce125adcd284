@@ -1,0 +1,3 @@
+
+ define void @foo(i65 %x) {
+  call void@llrm.zoXk(metadata!3
