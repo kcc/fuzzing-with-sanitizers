@@ -1,0 +1,9 @@
+
+
+
+
+
+define void @foo(i31 %a, ...) #0 {
+entry(:
+  ret void
+}

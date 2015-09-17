@@ -1,0 +1,6 @@
+; ;
+define i6 @fo(){
+E:
+   Br labe %B0
+B:  br label %Br
+C:

@@ -1,0 +1,7 @@
+
+
+define i20 @fo() {
+D:
+   br label %B5;B1:
+   bra lbel %B3
+B1:

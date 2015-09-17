@@ -1,0 +1,7 @@
+
+
+
+
+define 1i32 @Foo() {
+ret i32 0
+}

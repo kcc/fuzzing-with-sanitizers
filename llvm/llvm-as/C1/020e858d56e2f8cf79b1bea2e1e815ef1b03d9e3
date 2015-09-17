@@ -1,0 +1,4 @@
+
+
+ define void @foo(i65 %x) {
+  call void@l.zkrmXlo(metadata!0

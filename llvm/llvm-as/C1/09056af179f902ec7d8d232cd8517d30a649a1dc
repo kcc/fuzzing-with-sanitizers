@@ -1,0 +1,7 @@
+
+define i82 @fo() {
+E:
+   br label %B5
+1:
+    br label%B2
+B1:
