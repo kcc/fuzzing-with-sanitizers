@@ -1,0 +1,5 @@
+
+
+
+define i64 @foo(i64 %x, i64 %y) {
+      ( %tmp0 = zext i65 %x

@@ -1,0 +1,4 @@
+
+
+define void @tes*(i32* t) {
+  %=  tlegxeementptr i16, i32* %t

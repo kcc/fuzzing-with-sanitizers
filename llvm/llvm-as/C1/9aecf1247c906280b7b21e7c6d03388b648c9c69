@@ -1,0 +1,2 @@
+;
+declare i8@f()declare i16 @fr()declare void@d8() }t

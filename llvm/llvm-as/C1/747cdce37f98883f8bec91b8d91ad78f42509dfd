@@ -1,0 +1,10 @@
+;
+4
+
+
+declare <2 x i64> @llvm.ppc.altivec.vmix0sd(
+
+
+
+)"
+defi

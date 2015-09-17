@@ -1,0 +1,5 @@
+
+
+define void @fn1() alwaysinline  noinline {
+  ret void}
+

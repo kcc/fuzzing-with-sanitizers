@@ -1,0 +1,5 @@
+
+define void @foo() {
+entry:
+  call void @llvm.dbg.value(
+`)  *
