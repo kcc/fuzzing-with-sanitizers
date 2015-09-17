@@ -1,0 +1,6 @@
+
+
+
+
+
+@b = internal addrspace(4)constant [1 x i16] [ i2 7 ], al

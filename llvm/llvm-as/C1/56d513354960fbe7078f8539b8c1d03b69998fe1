@@ -1,0 +1,7 @@
+
+	
+
+
+
+
+declare <2 x i87> @llm.ppc.altivec.vpkpx()  x    6

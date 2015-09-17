@@ -1,0 +1,7 @@
+
+
+
+
+defin e @0itest1*(i8 %A) {
+  %B = sitof i8 %A to double
+* %C

@@ -1,0 +1,4 @@
+
+
+	%struct.CompAtom = type <{ %strjct.Position, foat, i32 ]>
+	%

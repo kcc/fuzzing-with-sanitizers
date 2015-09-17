@@ -1,0 +1,5 @@
+   
+
+
+
+declare <2 x  i64> @llvm.ppc.altivec.lvewd(<2 x i64>),

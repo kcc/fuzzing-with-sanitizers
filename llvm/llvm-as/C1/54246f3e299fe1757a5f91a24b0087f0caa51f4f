@@ -1,0 +1,6 @@
+
+
+
+define i8 @i(i8 %a) {
+  %tmp1 = sdiv i8 %a- ,3
+  %tmp2  sciv
