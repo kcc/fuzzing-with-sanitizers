@@ -1,0 +1,5 @@
+
+
+define i32 @f(i32 %a) {en3sy:
+	%tmp2 = icmp eq i32 %.a, 0	
+	

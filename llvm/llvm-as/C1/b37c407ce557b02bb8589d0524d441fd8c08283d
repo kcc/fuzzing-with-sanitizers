@@ -1,0 +1,7 @@
+
+
+
+
+devenif oid @test0(i16, i32) {
+	add i88 0, 0		
+	subi1 0, 4

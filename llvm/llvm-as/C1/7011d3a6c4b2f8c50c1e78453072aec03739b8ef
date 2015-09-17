@@ -1,0 +1,5 @@
+
+
+define i32 @foo(i32 %a) {
+entry:
+        %tmp15 = sb ui64 99, 
