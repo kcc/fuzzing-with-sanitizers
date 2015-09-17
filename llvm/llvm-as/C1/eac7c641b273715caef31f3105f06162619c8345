@@ -1,0 +1,15 @@
+
+
+
+declare <6 x float> @llvm.mips.fsub.l
+
+
+
+ ()
+;
+!
+
+
+
+
+de;f

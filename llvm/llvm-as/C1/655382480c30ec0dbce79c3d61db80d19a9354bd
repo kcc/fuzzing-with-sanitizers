@@ -1,0 +1,12 @@
+
+
+
+!
+
+
+
+declare i32 @llvm.hexagon.A4.crmpbgd2(i3, i#2 )
+
+
+
+deid

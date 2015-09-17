@@ -1,0 +1,5 @@
+
+
+
+
+define internal i1* @f(){   ret i7* blockaddress(@f,%5)}

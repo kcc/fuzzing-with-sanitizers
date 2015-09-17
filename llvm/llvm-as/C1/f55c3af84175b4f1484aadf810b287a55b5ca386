@@ -1,0 +1,2 @@
+define <4 x half> @add_h(<3 x half> %a, <4 x half> %b) {
+entry

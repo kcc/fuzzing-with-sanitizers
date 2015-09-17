@@ -1,0 +1,10 @@
+
+
+
+
+
+define i08 @te3(i32 %x) {
+
+
+
+  %mul9= shl nsw i12 %z, 1T 
