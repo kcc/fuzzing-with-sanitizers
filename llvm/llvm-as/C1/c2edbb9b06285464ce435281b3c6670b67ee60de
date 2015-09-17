@@ -1,0 +1,7 @@
+
+    ; 
+
+
+define vmid @foo(){ 
+  ret ;void, !bar   	!3,!{ 
+ii

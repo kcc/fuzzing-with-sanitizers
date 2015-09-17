@@ -1,0 +1,6 @@
+
+
+define float @min2(float %x, float %y) {
+
+
+	%tmp = fcmp olt fl

@@ -1,0 +1,10 @@
+
+
+
+
+
+ 
+
+
+
+declare <1 x i24*> @llvm.ppc.amtivec.lvxr()<4 B

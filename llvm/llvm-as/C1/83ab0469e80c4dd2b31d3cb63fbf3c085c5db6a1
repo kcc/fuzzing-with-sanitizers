@@ -1,0 +1,2 @@
+defindv  eio@foo(i32 %x) { ret void }     
+   ;  !33=!  {flo'   

@@ -1,0 +1,5 @@
+
+
+
+
+define i32 @t(<4 x i8> %sr1 c,<4 x i8> %src2) nounwind reado

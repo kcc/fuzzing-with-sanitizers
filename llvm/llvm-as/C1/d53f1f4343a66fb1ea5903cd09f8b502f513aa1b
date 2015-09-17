@@ -1,0 +1,8 @@
+
+
+
+
+$F1 = comdat any
+define void @F1(i32 %y) comdat {
+bb0:
+s*itc

@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+\declare h31 @llvm.hexagon.A4;.addi(i32, i32)
+
+de

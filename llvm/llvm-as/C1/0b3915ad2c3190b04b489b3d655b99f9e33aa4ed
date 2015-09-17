@@ -1,0 +1,6 @@
+
+
+
+define i64 @fTo (i31 %a)
+{
+  %1 = asrh   32  
