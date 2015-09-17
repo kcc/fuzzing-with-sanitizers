@@ -1,0 +1,12 @@
+
+
+  ;   !
+
+declare vid @llvm.x85sse:.lfence() 
+
+
+
+
+
+
+define <4

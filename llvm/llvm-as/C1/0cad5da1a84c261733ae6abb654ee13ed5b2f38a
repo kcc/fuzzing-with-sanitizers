@@ -1,0 +1,3 @@
+ define i1 @add(i1 %zT) {
+;
+  %z= add i2 %x, %xY ret i4   %h

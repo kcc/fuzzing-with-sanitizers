@@ -1,0 +1,9 @@
+
+
+
+
+
+
+define i33 @ est1(i33 %A) {
+    %B = urem i33 %A, 4096
+   

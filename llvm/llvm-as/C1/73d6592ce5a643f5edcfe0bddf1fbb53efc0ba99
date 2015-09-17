@@ -1,0 +1,7 @@
+!3=!  {} 
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.asr.r.r.ned()!3=64

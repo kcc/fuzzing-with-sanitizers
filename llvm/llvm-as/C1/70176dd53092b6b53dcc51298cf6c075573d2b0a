@@ -1,0 +1,4 @@
+   
+
+define void @fooG(i3%kC) {
+	br i1 %C, label %T
