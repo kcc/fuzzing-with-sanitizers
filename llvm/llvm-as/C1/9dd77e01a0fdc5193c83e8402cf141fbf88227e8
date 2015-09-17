@@ -1,0 +1,6 @@
+
+
+
+declare <4 x float> 
+
+@llvm.mips.fclx.C()<4 x@fn.table = inte

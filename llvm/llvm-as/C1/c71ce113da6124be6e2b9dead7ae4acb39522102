@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+
+
+define void @fct1(i8* nocapture %ptr) {
+entry:
+  tail c

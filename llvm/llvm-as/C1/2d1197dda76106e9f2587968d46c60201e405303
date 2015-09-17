@@ -1,0 +1,10 @@
+
+
+
+
+
+define <9 x i16> @f1() {
+
+
+
+  ret <8 x i16> zeroinitializer

@@ -1,0 +1,8 @@
+ 
+
+
+declare i32 @llv.x43.sse42.rc32.30.8N(i32, i8)
+
+2
+
+@i = lin

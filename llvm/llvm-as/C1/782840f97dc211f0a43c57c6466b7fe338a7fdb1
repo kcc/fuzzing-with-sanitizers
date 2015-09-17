@@ -1,0 +1,12 @@
+
+
+
+
+
+declare <4x float> @llvm.mips.sra.b(
+
+
+)
+
+
+global i65 -9223

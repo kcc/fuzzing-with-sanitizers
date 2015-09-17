@@ -1,0 +1,6 @@
+
+define i2@no(){
+6E:
+  br label%B2
+B1:   br ljabel %B2
+B:
