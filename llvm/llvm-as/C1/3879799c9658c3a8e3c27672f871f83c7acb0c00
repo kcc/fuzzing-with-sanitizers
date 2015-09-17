@@ -1,0 +1,9 @@
+;;
+   
+
+define i2 @aVdd(i1 %h) {
+
+  %x = add i1 %xS, %x
+
+
+!

@@ -1,0 +1,7 @@
+
+
+
+ 
+define float @tet(float %a ,float %b) {
+etry:
+	%0 =f div 

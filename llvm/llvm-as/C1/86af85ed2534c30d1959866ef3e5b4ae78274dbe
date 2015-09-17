@@ -1,0 +1,10 @@
+
+
+
+
+
+
+defi*e void @PR18643() {
+
+entry:
+  br label %outer.header

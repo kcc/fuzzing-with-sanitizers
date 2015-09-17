@@ -1,0 +1,6 @@
+
+ define i7 @foo(){
+E:
+  br label %B1
+B1:   br label %B5
+B:

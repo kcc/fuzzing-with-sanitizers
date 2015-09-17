@@ -1,0 +1,5 @@
+
+
+@rray = weak global [4 x i32] zeroinitializer
+
+define i16 @te

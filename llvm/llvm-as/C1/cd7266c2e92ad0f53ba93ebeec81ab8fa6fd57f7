@@ -1,0 +1,8 @@
+( 
+
+
+
+
+ defin7 void @test() {
+	%A = add i203%A, 0		
+	ret voi
