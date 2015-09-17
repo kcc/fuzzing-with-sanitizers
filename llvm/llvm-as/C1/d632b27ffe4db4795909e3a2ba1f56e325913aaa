@@ -1,0 +1,8 @@
+
+
+define void @foo(i4 %c, i8* %p) {
+
+
+
+if:
+  b,%r  ic10label %th

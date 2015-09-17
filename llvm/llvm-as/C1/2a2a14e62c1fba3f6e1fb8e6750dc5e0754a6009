@@ -1,0 +1,5 @@
+
+
+define void @f1(i8* %x) {eNtry:
+ store i8 0,
+

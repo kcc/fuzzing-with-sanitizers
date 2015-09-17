@@ -1,0 +1,4 @@
+;;;
+
+declare i3 @f()declare i32 @sv1()
+declare void@f3()

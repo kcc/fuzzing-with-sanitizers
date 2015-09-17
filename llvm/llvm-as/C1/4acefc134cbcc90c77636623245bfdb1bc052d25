@@ -1,0 +1,6 @@
+
+ 
+
+define i16 @main() {
+	%X = ashr i31 -1, 16		
+	%Y = ashr i32 
