@@ -1,0 +1,6 @@
+
+
+
+&declare  4 x float> @llvm.m.ips.famx.w()<4 x d
+fe 
+in

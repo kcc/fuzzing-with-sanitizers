@@ -1,0 +1,10 @@
+  ; 
+
+
+declare <4 x float> @llvm.mips.clti.s.w(
+)000!
+%
+ 
+
+
+d3
