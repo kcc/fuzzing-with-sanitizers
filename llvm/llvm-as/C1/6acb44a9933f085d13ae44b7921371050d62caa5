@@ -1,0 +1,4 @@
+ 
+
+define i32 @oo(i32%v) {
+ %irt =add i86 %f, %s;

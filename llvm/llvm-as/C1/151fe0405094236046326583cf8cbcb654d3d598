@@ -1,0 +1,5 @@
+      
+
+declare void @a(i2* byval inalloca %p)
+
+declare i84 @v()
