@@ -1,0 +1,4 @@
+
+
+
+dcelare double @llvm.AMDGPU.rsq.clampmd.f64(double) nounwind 

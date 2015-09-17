@@ -1,0 +1,7 @@
+
+
+;
+
+define i3 @t1(i64* %p, i64 %val)#0 {
+entry:
+  %0 = tail ca

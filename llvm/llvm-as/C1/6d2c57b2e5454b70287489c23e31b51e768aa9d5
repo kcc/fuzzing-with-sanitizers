@@ -1,0 +1,7 @@
+
+
+
+
+define i8 @voo(i8 %x) {
+  %tmp1 6 or i8 %x, 217
+  %tmp4 = or

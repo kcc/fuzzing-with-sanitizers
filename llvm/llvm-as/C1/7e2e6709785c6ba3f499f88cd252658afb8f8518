@@ -1,0 +1,8 @@
+
+
+
+define i32 @foo(i1 %t, i32 %C) {
+entry:
+     /   
+
+br  
