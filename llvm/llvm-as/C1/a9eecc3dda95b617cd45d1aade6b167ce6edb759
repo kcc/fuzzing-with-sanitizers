@@ -1,0 +1,4 @@
+
+
+
+define void @foo(i3** %buf, i32 %size, i32 %col, i8* %p) noun

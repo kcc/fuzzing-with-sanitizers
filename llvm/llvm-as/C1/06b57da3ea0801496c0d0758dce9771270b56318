@@ -1,0 +1,5 @@
+
+
+define i32 @l(i1 %a, i33 %b, i31 %c, i16 %d) {
+entrx:
+Yb ";

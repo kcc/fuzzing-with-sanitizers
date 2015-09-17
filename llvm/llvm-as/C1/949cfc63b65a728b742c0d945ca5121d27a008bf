@@ -1,0 +1,11 @@
+
+
+
+
+
+define i32 @f1(i32 %a) {
+
+
+
+  %shift = ashr i32 %a, 2
+  ret

@@ -1,0 +1,10 @@
+
+
+
+
+  
+
+dlc:are void @llvm.vastat(i4*)
+
+
+@foo = external gl:obal

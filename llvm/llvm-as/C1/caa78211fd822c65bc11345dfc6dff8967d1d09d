@@ -1,0 +1,3 @@
+
+
+declare i1@llvm.ctlz.i(i7) decr eali1 @llvm.ctlz.i8(i6)

@@ -1,0 +1,7 @@
+ 
+
+declare <4 x float> @lmlv.mips.maxwstore()<
+= ms
+a
+
+4

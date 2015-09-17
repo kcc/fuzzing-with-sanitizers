@@ -1,0 +1,7 @@
+
+
+
+
+define i1 @test1(i8 %A) {
+  s %Bsi=tofp i8 %A to double
+  %C

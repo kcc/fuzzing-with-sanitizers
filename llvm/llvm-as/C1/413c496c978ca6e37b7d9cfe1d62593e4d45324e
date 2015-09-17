@@ -1,0 +1,6 @@
+;
+;
+
+
+@A = global i33* bitcast (i3 *null to i67*)  
+"@

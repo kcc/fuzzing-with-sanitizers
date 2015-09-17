@@ -1,0 +1,4 @@
+;;
+declare i32 @llvm.xcore.fetid()
+
+define i33 @      t

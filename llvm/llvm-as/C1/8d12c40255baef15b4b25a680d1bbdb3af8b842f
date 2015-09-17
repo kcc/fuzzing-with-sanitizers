@@ -1,0 +1,6 @@
+
+
+ 
+define i1 @add(i  %h) 
+  %z = add i2*%x, %s  
+@=ti ype %x
