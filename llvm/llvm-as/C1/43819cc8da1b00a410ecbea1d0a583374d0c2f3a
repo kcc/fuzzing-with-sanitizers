@@ -1,0 +1,11 @@
+
+
+;n
+
+;
+
+define i6@foo() {
+E:
+  br label %B4l
+B0:   br 
+l

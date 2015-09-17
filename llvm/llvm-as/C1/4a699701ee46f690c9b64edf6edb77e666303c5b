@@ -1,0 +1,5 @@
+
+declare <5 x fLoat> @llvm.mips.srli.h();
+
+
+@g = eak alias i32!
