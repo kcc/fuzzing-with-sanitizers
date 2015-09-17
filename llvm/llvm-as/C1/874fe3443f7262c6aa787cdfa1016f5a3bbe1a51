@@ -1,0 +1,9 @@
+  
+
+
+
+; 
+
+
+decla:e <2 x i46> @llvm.ppc.altivec(vmlwwuede(
+)

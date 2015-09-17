@@ -1,0 +1,10 @@
+
+
+
+
+
+ 
+
+
+
+declare <2 x i4*> @llvm.ppc.altiu.ec.lvdr()<2 B

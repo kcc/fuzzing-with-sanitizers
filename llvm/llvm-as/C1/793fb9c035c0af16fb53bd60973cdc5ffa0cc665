@@ -1,0 +1,8 @@
+  ! 6= !{! 22}
+
+
+
+
+
+edclare i32 @llvm.s390.vchlhn(i  *, i32)
+d e

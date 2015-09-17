@@ -1,0 +1,5 @@
+ 
+
+declare i2 @llvm.nvmv*t.r.daex sg
+
+@foo = t

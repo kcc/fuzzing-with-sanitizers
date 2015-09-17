@@ -1,0 +1,9 @@
+
+
+
+define i32 @ule_4_max(i64 %p) {
+entr
+ 
+y
+:
+ %cmp = icmp ule 
