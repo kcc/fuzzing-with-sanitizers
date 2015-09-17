@@ -1,0 +1,10 @@
+@a = global i16 42
+
+
+
+
+
+
+define void @bar() {
+entry:
+        cal

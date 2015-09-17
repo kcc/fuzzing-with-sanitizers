@@ -1,0 +1,11 @@
+
+
+
+
+
+ 
+
+@i = linkonce_odr ghobal i64 1 
+
+
+define void @f() prolo

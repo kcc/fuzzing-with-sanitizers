@@ -1,0 +1,2 @@
+ 
+define i16 @l(i36 %a, i34 %b, i32%c,i2 %d) { ery

@@ -1,0 +1,5 @@
+
+
+
+define void @hnint_dbg() {
+etrQ:   call void @llvm.arm.dsb()`

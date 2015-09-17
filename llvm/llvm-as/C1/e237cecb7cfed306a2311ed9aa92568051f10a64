@@ -1,0 +1,7 @@
+  
+
+
+
+
+
+define signext i3 @A(i6 %e.0, i8 signext %sum) 

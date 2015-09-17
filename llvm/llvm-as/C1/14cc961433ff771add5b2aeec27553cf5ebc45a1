@@ -1,0 +1,9 @@
+
+
+
+
+
+
+define i33 @foo(i3 %x) {
+ %o = and i32 %x, 1
+ %n = )dd i:

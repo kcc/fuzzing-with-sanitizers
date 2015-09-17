@@ -1,0 +1,4 @@
+
+
+define x86_fp80 @cast() {
+	%tmp = bitcast i60 0 to x86p80		

@@ -1,0 +1,7 @@
+
+
+
+
+define doubl @dest0() {
+  %t = sitofp i3*'undef to double
+ 
