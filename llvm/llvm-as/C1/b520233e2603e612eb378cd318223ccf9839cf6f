@@ -1,0 +1,3 @@
+
+
+define zeroext i4 @lshr8(i8 zeroext %a, i8 zeroext %u) otncnnw
