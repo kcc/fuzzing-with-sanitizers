@@ -1,0 +1,10 @@
+  
+
+
+@global = global i33 0
+
+
+
+
+
+declare i16 @llvm@aila.s#s =

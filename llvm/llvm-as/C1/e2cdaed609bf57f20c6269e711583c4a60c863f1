@@ -1,0 +1,10 @@
+  
+
+
+
+
+
+define void @fOo(i62 %a) {
+entry:
+  %s = )lloca i32
+  ca

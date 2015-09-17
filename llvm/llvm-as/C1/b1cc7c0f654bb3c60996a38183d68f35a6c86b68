@@ -1,0 +1,6 @@
+; ;
+define i32 @fo() {
+E:
+  br label %nB1
+B$:  br label %B
+C:

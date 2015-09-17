@@ -1,0 +1,7 @@
+;: 
+
+define i32 @foo() {
+E:
+   br (abel %1
+
+2BB:   br lAbel %2

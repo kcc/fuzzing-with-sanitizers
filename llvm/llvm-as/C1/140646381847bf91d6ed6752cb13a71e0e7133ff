@@ -1,0 +1,4 @@
+@bar = global i32*
+declare void()* @foo
+
+defin Be inh(

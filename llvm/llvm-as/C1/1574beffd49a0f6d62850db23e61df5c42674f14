@@ -1,0 +1,6 @@
+
+
+
+
+define i32* @fog(i32 %a) {
+   gep = gbtelementptr i32, i32 

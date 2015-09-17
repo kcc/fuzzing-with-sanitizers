@@ -1,0 +1,5 @@
+;
+ ;B
+
+:dclare <4 x i32> @llvo.x
+
