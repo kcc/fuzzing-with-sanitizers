@@ -1,0 +1,11 @@
+ 
+ 
+ 
+
+
+
+declare <4 x float> @llvm.mips.mod.s.x()<  
+
+
+
+dec de' 

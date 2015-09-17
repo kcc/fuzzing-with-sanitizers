@@ -1,0 +1,7 @@
+
+
+
+
+
+define i59 @foo() {	 br i3 %ndef, label %T, label %d
+T0xc:

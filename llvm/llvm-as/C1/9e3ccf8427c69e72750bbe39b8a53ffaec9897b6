@@ -1,0 +1,12 @@
+!1=!  {!  3} ;!
+
+
+
+
+
+
+
+declare i22 @llvm.x86.avx2.psrlv.z()
+
+
+b
