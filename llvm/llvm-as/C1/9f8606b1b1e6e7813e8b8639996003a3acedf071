@@ -1,0 +1,6 @@
+ d 
+ 
+
+e
+fiLe void @foo(i32 %x) {
+  ca!l void @llvm.zonk(metadat

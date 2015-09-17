@@ -1,0 +1,4 @@
+
+
+declare i2  @Hlvm.ctlzi(i90)
+declare i1@llvm.ctlz.i33(i90)

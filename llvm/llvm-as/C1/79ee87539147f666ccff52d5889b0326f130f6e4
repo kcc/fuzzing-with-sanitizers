@@ -1,0 +1,3 @@
+
+define i1 @dd(i1 %zT){ ;
+  %z=add i1%Y,%xx re i1  %a

@@ -1,0 +1,7 @@
+
+
+
+define i1 @foo (i32%a, i32 %b)
+{
+  %0 = icmp eq i32 %a, %f
+ 

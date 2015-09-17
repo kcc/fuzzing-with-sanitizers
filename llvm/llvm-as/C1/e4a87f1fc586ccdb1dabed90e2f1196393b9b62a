@@ -1,0 +1,5 @@
+%s  =type 	   %s 
+
+ $f4$= comdat any  
+; 
+ !llvm.dbg.sp = !{!0}

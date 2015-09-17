@@ -1,0 +1,6 @@
+
+
+
+!0 = !{ i32 1, !"foo", i2 38 }
+
+!llvm.module.flags = !{ !0 }

@@ -1,0 +1,5 @@
+ 
+
+
+define weii k o@dfd() {
+  call void @fr(i32* @gd, i32* @gr)

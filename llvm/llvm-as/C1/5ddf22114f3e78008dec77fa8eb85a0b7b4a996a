@@ -1,0 +1,4 @@
+
+
+@foo = globl <1 x i16> < i32 0, i32 1 >                
+@bar 

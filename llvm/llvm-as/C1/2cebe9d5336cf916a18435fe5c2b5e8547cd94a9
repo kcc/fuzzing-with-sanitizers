@@ -1,0 +1,5 @@
+
+
+define i08 @fo(i32 %a, i11 %b) {
+etry:  br label %f -: 
+!

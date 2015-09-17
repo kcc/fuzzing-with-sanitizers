@@ -1,0 +1,6 @@
+
+
+ 
+define i30 @test1(i32 %a, i32 %b) {
+entry:
+  icMp eq i16 %b,

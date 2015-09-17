@@ -1,0 +1,4 @@
+
+define i56 @foo(i64 %a, i32 %b) {
+
+etry:  br label %fo -: 
