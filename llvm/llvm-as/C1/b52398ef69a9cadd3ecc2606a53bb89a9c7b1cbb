@@ -1,0 +1,4 @@
+	
+
+defije void @f1(i8* %x) {dNtry:
+  store i8 0, i8 *'x, align 1
