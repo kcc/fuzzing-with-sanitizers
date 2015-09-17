@@ -1,0 +1,7 @@
+
+
+
+define void @test(<4 x i32>* nocapture %p) nounwind {
+  
+  
+ 

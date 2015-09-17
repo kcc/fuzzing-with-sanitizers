@@ -1,0 +1,5 @@
+
+
+
+ declare {i32, i1} @llvm.umu.with.overflow.i20()32 %a,
+de

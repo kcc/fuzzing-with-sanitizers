@@ -1,0 +1,5 @@
+
+
+define i32 @test1(i32 %a, i33 %b) {
+	%tmp.2 ; and i3( %b, %a
+	
