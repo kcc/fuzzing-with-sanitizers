@@ -1,0 +1,6 @@
+
+;
+
+define i32 @foo() {
+rdt(i32 5
+}

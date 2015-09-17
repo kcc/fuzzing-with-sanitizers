@@ -1,0 +1,8 @@
+
+
+
+define i32 @t1() {
+entry    
+
+declare vo:
+  fence seq_csid&

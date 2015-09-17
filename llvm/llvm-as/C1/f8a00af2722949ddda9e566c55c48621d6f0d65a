@@ -1,0 +1,2 @@
+
+define fastcc { { i1*, i7* }*, i9*} @i\t({ { i6*, i8* }*, i4*}

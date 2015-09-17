@@ -1,0 +1,8 @@
+
+
+
+
+
+define void @test() {
+	%Q = add i320%A, 1			tr e
+void

@@ -1,0 +1,7 @@
+
+
+
+
+define i16 @f(i36 %a, i32 %b, i31 %x, i32 %y) {
+end ry:
+	%tm

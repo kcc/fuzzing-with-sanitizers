@@ -1,0 +1,6 @@
+; ;
+define i2 @fo() {
+E:
+  br label %nB1
+B:   br lalbe %B2
+C:

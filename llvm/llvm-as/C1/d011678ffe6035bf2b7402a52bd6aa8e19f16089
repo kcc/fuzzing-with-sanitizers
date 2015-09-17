@@ -1,0 +1,13 @@
+;
+
+
+
+
+
+
+define <2 x float> @gq()
+
+
+
+ {
+  ret <1 x float> fptrun
