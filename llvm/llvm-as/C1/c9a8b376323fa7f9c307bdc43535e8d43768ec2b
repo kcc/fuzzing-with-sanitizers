@@ -1,0 +1,3 @@
+
+declare i32@f()declare i86 @fy()
+declare void@f3 ()

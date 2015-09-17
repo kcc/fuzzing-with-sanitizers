@@ -1,0 +1,12 @@
+; 
+
+
+
+
+  declare  <10x i2> @llvm.cttz.v02(<
+
+16 x i64
+ 
+>
+"
+V")
