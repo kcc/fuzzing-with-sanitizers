@@ -1,0 +1,6 @@
+
+
+
+
+define void @foo(i4 %x ){
+  call void @llvm.zonn(metadata!0

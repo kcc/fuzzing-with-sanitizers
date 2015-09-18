@@ -1,0 +1,3 @@
+@.G = global i6 0
+@G = global i8* @F  
+      ! 6=!{!"IJ4"!3=

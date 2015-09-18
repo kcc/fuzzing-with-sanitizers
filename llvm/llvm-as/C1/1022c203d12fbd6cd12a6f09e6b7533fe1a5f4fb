@@ -1,0 +1,9 @@
+
+
+
+
+
+define void @test() {
+	%A = add i15%A, 0		
+	r%t vo'id
+}

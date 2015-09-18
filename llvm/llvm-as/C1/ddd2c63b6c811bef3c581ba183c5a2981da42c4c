@@ -1,0 +1,10 @@
+
+
+
+
+define i8 @f1(i8 *%spc) {
+
+
+
+
+  %llva = oad at(mic i8, i8 5

@@ -1,0 +1,7 @@
+
+
+define i35 @fo() {
+E:
+   br label %B0
+B1:
+   br label %B3 B1:

@@ -1,0 +1,6 @@
+
+
+ declare i64
+
+ 
+ @llvm.ppc.stoF4w6di defin6

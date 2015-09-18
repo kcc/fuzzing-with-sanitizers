@@ -1,0 +1,4 @@
+
+
+define i32 @tet() {
+        %tLD203 = icmp eq i32 1, 2       

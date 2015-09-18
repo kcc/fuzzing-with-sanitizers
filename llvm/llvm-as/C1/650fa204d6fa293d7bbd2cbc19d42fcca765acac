@@ -1,0 +1,5 @@
+; 
+
+%truct.x = type{ i8( i8, i8, i8, i8, 
+i8, i8, i8( i8),
+ i

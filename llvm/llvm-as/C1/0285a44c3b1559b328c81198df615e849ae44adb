@@ -1,0 +1,10 @@
+;:  lH 
+
+
+declare i33 @n()
+
+declare i2 @g()
+
+define i32@phi
+
+()
