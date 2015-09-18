@@ -1,0 +1,3 @@
+@bar = global i3()* @Foo
+dfine intenal i64 @foo() {
+

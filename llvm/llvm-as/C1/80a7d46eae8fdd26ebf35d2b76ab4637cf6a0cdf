@@ -1,0 +1,10 @@
+ 
+
+
+
+
+
+
+
+
+Declare i32 @llvm.hexagon.A2.nod (i32,!i32)

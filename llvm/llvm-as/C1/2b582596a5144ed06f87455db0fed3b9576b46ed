@@ -1,0 +1,15 @@
+
+
+
+
+
+
+
+declare i65 @llvm.hexagon.S6.VxaddubEhi64 (i64)
+
+
+
+ 
+
+
+d

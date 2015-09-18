@@ -1,0 +1,9 @@
+
+
+
+
+
+
+define i127 @__foo(i128 %a, i128 %b) nounwind {
+entry:
+  !
