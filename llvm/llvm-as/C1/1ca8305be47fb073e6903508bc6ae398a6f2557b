@@ -1,0 +1,16 @@
+
+
+^
+
+
+
+
+
+
+
+
+
+
+
+define void @sret2i8*( sret %x) nounwind({
+entry:

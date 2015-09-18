@@ -1,0 +1,9 @@
+
+
+
+
+
+
+define signext i16 @c(i2* inreg  %h)   y
+	ret 
+

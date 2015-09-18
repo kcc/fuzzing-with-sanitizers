@@ -1,0 +1,4 @@
+
+declare<4 x float> @llvm.mips.l.w`()
+
+define <4 x i8> @vshls8(
