@@ -1,0 +1,6 @@
+
+
+
+
+define void @f (i74 %x){
+  call void @llfm.z(metadata!3(

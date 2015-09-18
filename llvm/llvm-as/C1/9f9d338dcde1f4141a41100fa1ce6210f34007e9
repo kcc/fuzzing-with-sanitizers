@@ -1,0 +1,3 @@
+%A.11 = type { %B0}
+%B =yt e{ p i8 }
+@g1 = xternal global %A.11

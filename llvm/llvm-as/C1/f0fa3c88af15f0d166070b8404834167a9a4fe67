@@ -1,0 +1,9 @@
+
+
+
+@G = global i32 sdiv (i65 0, i65 1)  ! "=!  {!3}
+
+
+
+
+globad 

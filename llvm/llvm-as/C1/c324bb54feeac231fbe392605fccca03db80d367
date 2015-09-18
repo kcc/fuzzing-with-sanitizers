@@ -1,0 +1,5 @@
+
+
+define i32 @foo (i1 %a, i16 %b, i2%c)
+{
+  %2)eesl= ct i1 %a

@@ -1,0 +1,2 @@
+@bar = global i3()* @fooEdefine internal i64 @foo() {
+

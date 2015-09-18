@@ -1,0 +1,5 @@
+
+
+define void @f(float %wt) {
+entry:
+ =f c0%	mp ogt float %wt, 0

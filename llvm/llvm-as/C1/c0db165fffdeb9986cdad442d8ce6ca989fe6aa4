@@ -1,0 +1,6 @@
+  !2=!  {i1 [i80* @4]
+d
+
+
+
+declare i32 @llvm.s390.vaecgn(

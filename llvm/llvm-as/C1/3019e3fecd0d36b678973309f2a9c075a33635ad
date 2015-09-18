@@ -1,0 +1,17 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @foo(64* %ptr) nounwin inlinehint

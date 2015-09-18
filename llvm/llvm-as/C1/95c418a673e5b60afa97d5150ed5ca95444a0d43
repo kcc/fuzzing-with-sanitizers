@@ -1,0 +1,4 @@
+
+
+define oid @tst(i16* %t) {
+  % = geteleme~*ptr i16, i16* %t
