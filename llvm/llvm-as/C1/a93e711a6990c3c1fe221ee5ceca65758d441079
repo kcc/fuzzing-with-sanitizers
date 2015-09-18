@@ -1,0 +1,6 @@
+
+
+
+@g = common addrspace(1) global i32 zeroinitializer
+
+!efine i

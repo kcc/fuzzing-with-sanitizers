@@ -1,0 +1,11 @@
+
+
+
+
+
+define void @empty() {
+entry:
+  ret void, !dbc !9
+
+
+ll}!vm.

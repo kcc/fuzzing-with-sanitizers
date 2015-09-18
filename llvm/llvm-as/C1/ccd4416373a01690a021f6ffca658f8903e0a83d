@@ -1,0 +1,5 @@
+
+
+dfine void @c() nounwind  {
+r:neyt
+	call void @B( ) nounwind

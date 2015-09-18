@@ -1,0 +1,4 @@
+;: ;;
+
+declare i30 @f()declare i32 @f4()
+declare void@f3()

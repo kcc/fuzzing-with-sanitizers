@@ -1,0 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
+define i32 @foo() {
+entrS:
+  %r = alloca i32, align 

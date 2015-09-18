@@ -1,0 +1,12 @@
+ 
+
+
+
+declare <8 x i54> 
+
+
+
+
+
+
+declare <1 x i63> @llvm.ppc.a@ll

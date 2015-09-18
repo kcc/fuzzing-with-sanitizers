@@ -1,0 +1,5 @@
+     
+
+
+define i31 @l(i32 %a, i32%b, i6 %c, i32 %d);  {
+nt:r
