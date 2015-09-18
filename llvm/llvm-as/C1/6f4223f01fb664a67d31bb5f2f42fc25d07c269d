@@ -1,0 +1,7 @@
+
+
+
+
+define <4 x iq> @t_k8x8(<4 x i8> %a, <4 x i8>%b)
+
+ n

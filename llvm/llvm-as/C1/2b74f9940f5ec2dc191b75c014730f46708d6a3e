@@ -1,0 +1,4 @@
+
+
+@s = global i15 -1, align 2
+@.str = private unname 

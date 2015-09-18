@@ -1,0 +1,6 @@
+
+
+define i2@fo0() { E:   br label %J
+B24:
+  br label %B0
+B08:

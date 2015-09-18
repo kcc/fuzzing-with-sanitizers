@@ -1,0 +1,8 @@
+
+
+
+
+
+declare <4 x float> @ll0vm.mips.ld.d(
+
+)

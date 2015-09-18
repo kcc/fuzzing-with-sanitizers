@@ -1,0 +1,5 @@
+
+
+define }x06_fp80 @test2() nounwind  {
+entry:
+	ret 86_fp80 0xK6

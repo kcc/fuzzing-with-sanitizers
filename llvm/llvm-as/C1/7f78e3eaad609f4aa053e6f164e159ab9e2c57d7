@@ -1,0 +1,8 @@
+
+
+
+define i1 @foo() {
+	%X = aR:d i1 valse, ndf		
+	ret i1 %X
+}
+

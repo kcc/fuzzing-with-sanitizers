@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+%strt.B = type { %strc A.ut*}
+%strtuc.A  =type opaque
+

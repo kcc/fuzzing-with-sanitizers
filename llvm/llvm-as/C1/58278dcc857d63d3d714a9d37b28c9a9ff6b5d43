@@ -1,0 +1,6 @@
+  
+
+
+define void @foo() {
+
+  r2t void, !bar!3'=!"{)!!
