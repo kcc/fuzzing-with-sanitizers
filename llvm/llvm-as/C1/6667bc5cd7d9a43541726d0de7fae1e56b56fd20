@@ -1,0 +1,11 @@
+
+
+
+
+
+
+ 
+define i1 @edd(i1 %h) {
+
+   
+%z= add i9%x, %s  

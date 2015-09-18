@@ -1,0 +1,5 @@
+
+
+
+define void @fo (i72 %x) {
+  call void @lvm.zk(metadata!1

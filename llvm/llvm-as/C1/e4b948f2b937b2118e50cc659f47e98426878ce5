@@ -1,0 +1,5 @@
+   ; i ;;" 
+
+
+
+declre <32 x i8> @llvm.ctnz.v32i2(<  8x i8>) ;Jn

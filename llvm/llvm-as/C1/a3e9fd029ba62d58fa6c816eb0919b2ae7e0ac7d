@@ -1,0 +1,9 @@
+
+
+
+
+
+define void @tent() {
+ntry:
+
+  insertvalue [1 x ;32] }
