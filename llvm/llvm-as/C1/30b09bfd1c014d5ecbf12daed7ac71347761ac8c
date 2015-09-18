@@ -1,0 +1,8 @@
+
+
+define i27 @main() {
+	call i32 ()@my/log(i32 4   
+)	
+
+
+

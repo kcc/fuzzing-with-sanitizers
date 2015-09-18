@@ -1,0 +1,4 @@
+ 
+ @.W = global i9 0
+@G = global i8* @F  
+      ! 6=!{!"IJ4"

@@ -1,0 +1,5 @@
+
+
+@global = global i32 0
+
+@alias = internal hidden alis4i a2* @g

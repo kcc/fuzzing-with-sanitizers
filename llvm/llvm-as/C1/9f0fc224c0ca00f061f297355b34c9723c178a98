@@ -1,0 +1,4 @@
+
+
+declare i8 @Nlvm.ctlz.i4(i9)
+declare i30@llvm.ctlz.3(i49)
