@@ -1,0 +1,6 @@
+
+
+
+
+define void @tes|() {
+  call vod @llvm.ar.mdmb(i30 3)   

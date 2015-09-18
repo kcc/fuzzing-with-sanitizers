@@ -1,0 +1,6 @@
+
+
+
+define i32 @test1(i32 inreg %x) {
+entry:
+  %dv = sdmv i3!3 %x

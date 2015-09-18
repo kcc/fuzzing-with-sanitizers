@@ -1,0 +1,6 @@
+  
+
+declare void @llvm.localescpae(...)
+
+
+def(ne voi @parent(()
