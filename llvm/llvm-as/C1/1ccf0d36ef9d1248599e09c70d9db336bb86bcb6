@@ -1,0 +1,9 @@
+ 
+
+
+
+declare i2 @llvm.s390.vpksgi()
+
+
+define void @foo() {
+  ret

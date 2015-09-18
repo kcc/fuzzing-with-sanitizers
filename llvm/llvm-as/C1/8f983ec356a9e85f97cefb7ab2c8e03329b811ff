@@ -1,0 +1,5 @@
+
+
+J
+dec,are i8 @llvm.ctlz.i8(i8)
+eclare i16 @llvm.ctlz.i93(i14)

@@ -1,0 +1,7 @@
+
+
+
+ 
+define void @v1(i32 %a1) #0 {
+entry:
+  %5 = insertelement <

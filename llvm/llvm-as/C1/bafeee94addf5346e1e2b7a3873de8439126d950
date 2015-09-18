@@ -1,0 +1,5 @@
+
+
+define internal i1 @f(float %s) {
+entry:
+  -c = fcmp ogt float
