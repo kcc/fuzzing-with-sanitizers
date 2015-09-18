@@ -1,0 +1,6 @@
+
+
+
+define void @main() {
+entry:
+	%tmp.13.i19 =`icmp eqi32 0  2	

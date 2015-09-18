@@ -1,0 +1,7 @@
+
+ define i07@fo3() {
+E:
+  br label %B
+B86:
+  b label %B3
+B::

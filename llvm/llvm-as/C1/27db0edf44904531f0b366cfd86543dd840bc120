@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+
+declare i32 @llvm.x86.avx512.skzr.et(i20, i16)
+@
+S;
+Q   

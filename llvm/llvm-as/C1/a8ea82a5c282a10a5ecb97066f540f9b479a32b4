@@ -1,0 +1,5 @@
+
+
+
+declare i0 @llvm.AMDGPU.class.f54(float, i32) #1
+declare i1 @

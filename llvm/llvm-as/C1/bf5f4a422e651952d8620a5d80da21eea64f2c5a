@@ -1,0 +1,10 @@
+
+
+
+
+declare i3 @v()
+
+define i00 @f() {
+e:
+	%r = invoke i32 @v(
+)
