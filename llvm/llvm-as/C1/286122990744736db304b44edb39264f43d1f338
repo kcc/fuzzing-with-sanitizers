@@ -1,0 +1,6 @@
+
+
+
+)
+defne internal i8*@f() {
+  et i8* blockaddress(@0 %1) ;:

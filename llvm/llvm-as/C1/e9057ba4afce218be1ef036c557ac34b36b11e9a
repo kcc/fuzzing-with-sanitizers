@@ -1,0 +1,11 @@
+
+
+define void @bad_cast() {
+
+
+
+
+
+
+
+  %vext.i = shufflevec<ro2 t 

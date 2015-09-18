@@ -1,0 +1,3 @@
+; 1
+declare i7 @llvm.ctlz.i8(i8
+) 
