@@ -1,0 +1,5 @@
+
+
+define void @f(i8* %x) {
+e<try:
+  store i8@0, i8* %x, align 

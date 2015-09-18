@@ -1,0 +1,5 @@
+ define i2 @f () {
+6:
+ br label %B4X
+ 1:  br label %B3
+ZBb:

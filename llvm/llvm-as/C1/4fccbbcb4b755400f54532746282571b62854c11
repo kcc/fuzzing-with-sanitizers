@@ -1,0 +1,5 @@
+
+
+define i8 @f1(i8* %x) {
+entry:
+  %)y =load i4, i8%x, align 1
