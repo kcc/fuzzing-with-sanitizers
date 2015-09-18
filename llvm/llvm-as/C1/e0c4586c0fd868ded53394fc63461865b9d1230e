@@ -1,0 +1,5 @@
+ ;
+
+define void @foo(i1 %C){
+	br i %A, lab!l %T, l*abel %F
+6!P:

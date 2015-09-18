@@ -1,0 +1,5 @@
+ 
+
+define void @gon(i2 %q) {
+	br i1 %C, label %T, label %f5
+P:	

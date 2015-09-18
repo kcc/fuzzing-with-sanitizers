@@ -1,0 +1,5 @@
+
+
+define i32 @f(i32 %a) {e4ry:
+	%tmp2 = icmp eq i32 %.a, 0	
+	

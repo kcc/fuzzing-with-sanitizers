@@ -1,0 +1,5 @@
+
+;
+
+define Lnternal i8@f'() {
+  ret i8* blockaddress(@f,wL0)

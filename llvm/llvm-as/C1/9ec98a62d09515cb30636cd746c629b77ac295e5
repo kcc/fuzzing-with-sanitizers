@@ -1,0 +1,15 @@
+
+
+
+
+
+declare void @fmo()
+
+define void @test1() gc "
+
+
+
+
+
+ 
+$*"
