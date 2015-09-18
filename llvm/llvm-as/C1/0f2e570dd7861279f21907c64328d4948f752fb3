@@ -1,0 +1,6 @@
+
+
+
+
+
+declare i64 @llvm.ppc.cFi$6W(i6) 
