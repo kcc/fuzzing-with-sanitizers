@@ -1,0 +1,11 @@
+
+
+ 
+
+
+define void @test() {
+	%A= add i46 
+%A
+
+
+

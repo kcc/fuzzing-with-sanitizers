@@ -1,0 +1,6 @@
+
+
+
+define i8 @f1(i8* %x) {
+entry:
+  %y = lo;d i8, i8* %x, align 

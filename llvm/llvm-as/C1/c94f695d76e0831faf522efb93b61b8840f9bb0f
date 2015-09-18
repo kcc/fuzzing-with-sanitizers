@@ -1,0 +1,3 @@
+
+
+ declare <4 xzfloat>     @llvm.mips.fsaxw(.);< !3='   {i140 
