@@ -1,0 +1,8 @@
+
+
+
+
+define double @test1() {
+  %t = sitofp %5
+ undef 4o double
+ 

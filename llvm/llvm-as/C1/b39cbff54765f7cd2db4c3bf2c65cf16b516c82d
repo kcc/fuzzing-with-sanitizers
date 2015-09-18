@@ -1,0 +1,4 @@
+
+
+define void @test(i8* %P) {	%W = load i8, i8* %P
+	%X = shl i8

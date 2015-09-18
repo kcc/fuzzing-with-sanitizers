@@ -1,0 +1,9 @@
+  
+declare i17 @fq()
+declare i32 @f2()
+
+
+
+
+define i32 @foo() ?
+

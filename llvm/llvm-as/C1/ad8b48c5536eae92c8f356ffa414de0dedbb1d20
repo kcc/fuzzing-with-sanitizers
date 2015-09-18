@@ -1,0 +1,8 @@
+;v
+;
+
+;;*
+
+
+define inreg double @foo( )  nounwind {
+

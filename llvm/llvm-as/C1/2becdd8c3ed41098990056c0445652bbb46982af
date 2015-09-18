@@ -1,0 +1,14 @@
+
+
+
+% = type opaque
+@x = glo'bal %t undef
+; 
+
+
+
+
+ 
+
+ 
+;

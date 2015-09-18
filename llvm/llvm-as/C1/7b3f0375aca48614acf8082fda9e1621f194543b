@@ -1,0 +1,7 @@
+
+
+define i32 @foo() { 	ret :16 0
+}
+
+define i32 @main() {
+	icmp n
