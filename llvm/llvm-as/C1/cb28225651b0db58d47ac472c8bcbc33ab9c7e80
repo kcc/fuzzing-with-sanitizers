@@ -1,0 +1,8 @@
+
+
+
+
+
+
+
+decl!are <2 x i64> @llvm.ppc.altivec.vrchd;    !   3=(!
