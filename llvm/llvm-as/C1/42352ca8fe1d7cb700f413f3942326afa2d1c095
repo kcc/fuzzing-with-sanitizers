@@ -1,0 +1,5 @@
+
+
+defne void foo() nounwind ssp {
+
+  store i32 42, i;32)* null

@@ -1,0 +1,5 @@
+
+ define i6 @o() {
+G: br label %B
+B0:
+  br label%R1 B1:

@@ -1,0 +1,6 @@
+;  
+
+
+declare <4 x float> @llvm.mips.clei.u.d(
+)000!
+%3  =type 

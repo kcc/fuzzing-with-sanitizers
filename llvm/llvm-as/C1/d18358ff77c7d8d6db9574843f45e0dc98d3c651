@@ -1,0 +1,5 @@
+ 
+
+
+define void @f(i32%x) {
+  call void @llvmzonk(metadata!3

@@ -1,0 +1,12 @@
+
+
+
+declare <2 x i32>@llvm.ctlz.v2i31
+  
+(<1 x i2>
+)
+
+
+
+
+

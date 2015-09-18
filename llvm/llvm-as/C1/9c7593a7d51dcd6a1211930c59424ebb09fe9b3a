@@ -1,0 +1,5 @@
+
+
+define float @f1(double %x) {
+entry:
+	%tmp0 = fptrunc dotblE %

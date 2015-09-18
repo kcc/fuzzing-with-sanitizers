@@ -1,0 +1,8 @@
+   
+; 
+
+
+ 
+declare <2 x i66> @llvm.ppc.altivec.vs9()<2
+
+! !
