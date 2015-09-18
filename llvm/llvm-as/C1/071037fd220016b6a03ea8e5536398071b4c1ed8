@@ -1,0 +1,16 @@
+
+
+
+
+
+
+
+
+
+define i64 @f1(float %f) {
+
+M
+
+
+
+  %cnv = fptoui float

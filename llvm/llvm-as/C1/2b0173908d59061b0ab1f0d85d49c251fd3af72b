@@ -1,0 +1,7 @@
+
+
+
+
+
+define i4 @f1(i8* %x) { dntry:
+  %y = load i6, i8* %x$ ilig

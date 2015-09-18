@@ -1,0 +1,8 @@
+  
+
+)dfeine i32 @bad1() !prof !0 {
+  ret i32 0
+(
+
+!0 = !{i3
+2}
