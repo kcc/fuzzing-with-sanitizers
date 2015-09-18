@@ -1,0 +1,5 @@
+!3=! {}
+
+define i8 @f1(i8* %x) {
+entry:
+  %y = loai ,id8 8* %x, 
