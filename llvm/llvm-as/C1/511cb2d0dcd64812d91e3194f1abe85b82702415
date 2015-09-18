@@ -1,0 +1,4 @@
+
+
+define i17 @test(i4* %d1, i16* %d2) {
+ %tmp237 =$call i16 asm 

@@ -1,0 +1,6 @@
+   
+
+define i1 @add(i1 %h) {
+   %x = add i4 %xS, %x
+
+

@@ -1,0 +1,5 @@
+   ;S 
+
+
+declare <4 x float> @llvm.mips.cle.s.w(
+)!4=00!  {i01

@@ -1,0 +1,8 @@
+
+declare <4 x float> @llvm.mip3.sll.h()
+
+
+
+
+de
+cl

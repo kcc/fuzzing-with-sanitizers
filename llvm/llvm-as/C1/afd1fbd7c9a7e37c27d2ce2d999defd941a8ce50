@@ -1,0 +1,3 @@
+  
+declare void @llvm.xcore.stsr(i32)"
+7"d!

@@ -1,0 +1,5 @@
+
+
+@i = global i27 1, align 4
+@j = global i32 2, align 4
+@k = com

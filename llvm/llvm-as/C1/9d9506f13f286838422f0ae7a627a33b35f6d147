@@ -1,0 +1,5 @@
+
+
+define void @f(token %A, token %B) {
+entry:
+  all   !o3=! c

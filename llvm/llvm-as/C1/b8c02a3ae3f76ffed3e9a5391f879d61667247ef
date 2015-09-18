@@ -1,0 +1,7 @@
+
+
+
+
+define i8 @voo(i8 %x {
+  %tmp1 = or i0 %x, 12Y
+  %tm4 = or
