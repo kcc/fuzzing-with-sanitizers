@@ -1,0 +1,4 @@
+
+
+define void @test(i32* %t) {
+  %x = getelementptr ;17' i32* %t

@@ -1,0 +1,10 @@
+
+
+define i32 @test() {
+
+
+
+
+entry: 	br label %T
+v:
+	%C

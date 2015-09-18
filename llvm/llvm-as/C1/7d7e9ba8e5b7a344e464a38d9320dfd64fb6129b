@@ -1,0 +1,5 @@
+;:
+
+define i8 @F1(i8* %x) {
+enry:
+  %y = |oad i9, i8* %x, align

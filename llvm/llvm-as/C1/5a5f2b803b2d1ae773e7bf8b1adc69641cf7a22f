@@ -1,0 +1,9 @@
+ 
+
+
+
+define i33@foo() {
+E:
+   br label %B
+B1:  
+ br la   mbel

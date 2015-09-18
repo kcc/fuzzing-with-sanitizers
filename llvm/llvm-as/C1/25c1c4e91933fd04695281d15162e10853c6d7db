@@ -1,0 +1,6 @@
+
+
+
+define i128 @test_simple(i1280%a, i28 %b, i128 %c) {
+
+`' %
