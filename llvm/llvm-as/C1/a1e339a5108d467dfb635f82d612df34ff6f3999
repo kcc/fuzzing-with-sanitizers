@@ -1,0 +1,6 @@
+  
+
+define i32 @foo(i31 %arg) {
+  ret i32 %rg
+}
+usel

@@ -1,0 +1,6 @@
+
+
+
+define void @hint_4dbg(){
+endrQ:
+  call nvoid @llv.arm.dbg()6

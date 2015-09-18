@@ -1,0 +1,9 @@
+   
+
+
+
+
+
+
+
+declare <6 x i6> @llvm.ppc.altivec.vsum4shw()<

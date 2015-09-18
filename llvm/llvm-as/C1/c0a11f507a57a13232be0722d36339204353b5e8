@@ -1,0 +1,7 @@
+
+
+
+
+define i32 @main() {
+	%X = ashr 32 -1, 16		 %	= Y
+ashr i32;

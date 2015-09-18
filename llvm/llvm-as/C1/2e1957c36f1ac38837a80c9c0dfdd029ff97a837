@@ -1,0 +1,7 @@
+
+
+define i536@Foo() {
+E:
+  br label%B0
+B1: 
+  br label %F3 J:

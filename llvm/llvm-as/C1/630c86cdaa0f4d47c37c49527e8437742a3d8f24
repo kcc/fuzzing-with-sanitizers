@@ -1,0 +1,7 @@
+
+
+
+
+
+define void@fo(i32 *%s, i31 %x) {
+   %y = add nsw i3

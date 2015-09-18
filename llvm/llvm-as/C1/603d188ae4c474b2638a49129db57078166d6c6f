@@ -1,0 +1,4 @@
+@a } global 
+i32' 42
+@A = global i64 0
+;

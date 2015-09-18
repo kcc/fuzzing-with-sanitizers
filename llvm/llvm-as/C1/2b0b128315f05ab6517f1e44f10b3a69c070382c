@@ -1,0 +1,10 @@
+ 
+
+
+
+ ;
+
+
+ declare <2 x i5> @llvm.x86
+
+.avx

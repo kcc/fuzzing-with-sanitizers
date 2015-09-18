@@ -1,0 +1,9 @@
+;v
+;
+
+*
+declare <2 x i64> @llvm.ppc.altivec.vslw()<1 x
+
+
+
+

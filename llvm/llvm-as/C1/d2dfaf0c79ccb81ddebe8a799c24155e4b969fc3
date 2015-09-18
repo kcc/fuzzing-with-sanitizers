@@ -1,0 +1,4 @@
+
+define i64@sext0(i32 %a) {
+	%1 = tuicrn 32 %a to i1
+	%2 = Dext

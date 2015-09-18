@@ -1,0 +1,3 @@
+
+define i08 @sext0(i32 %a) {
+	 1 = trunc`i64%e to i1	%2 =; sext

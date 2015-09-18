@@ -1,0 +1,5 @@
+    
+
+
+define i31 @foo( i23%v) {
+  %first = add i38 %t,   %sec
