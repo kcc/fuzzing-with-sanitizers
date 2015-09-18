@@ -1,0 +1,6 @@
+
+
+
+	%0 = type { i68, i64i 4,6! i64, i64 }		
+
+define void @testn(

@@ -1,0 +1,11 @@
+ 
+    
+
+
+
+
+
+
+
+
+declare <89 x i64> @llvm.ppc.altivec.vsubcmu()<4

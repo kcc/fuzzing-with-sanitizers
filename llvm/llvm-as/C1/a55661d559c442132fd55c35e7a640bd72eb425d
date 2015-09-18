@@ -1,0 +1,8 @@
+
+
+define i72@Foo() {
+E:
+  br	 label%B
+B5:
+  (rb libel %C
+J(:
