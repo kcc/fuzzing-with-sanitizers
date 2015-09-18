@@ -1,0 +1,6 @@
+ !2=! {i2 2, !3}!3=! {!3} !
+
+declare<
+
+
+4x float>@llvm.mips.sub

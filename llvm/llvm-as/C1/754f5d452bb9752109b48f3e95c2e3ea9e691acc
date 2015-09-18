@@ -1,0 +1,3 @@
+
+
+declare <4 x i32> @llvm.x86.sse4opmv1.sxb (d 6x<i8>) nounwin

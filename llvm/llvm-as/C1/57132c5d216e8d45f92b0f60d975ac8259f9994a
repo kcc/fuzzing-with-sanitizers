@@ -1,0 +1,10 @@
+; 0%R N
+
+
+
+
+
+
+
+
+declare i32 @llvm.x86.avx2.pminu.w()
