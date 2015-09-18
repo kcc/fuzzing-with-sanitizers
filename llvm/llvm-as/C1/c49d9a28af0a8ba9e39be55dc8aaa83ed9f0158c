@@ -1,0 +1,8 @@
+;  !3=)  {!1}  
+
+
+
+
+
+
+declare i16   @llvm.hexagon.F2.sfcmpga()

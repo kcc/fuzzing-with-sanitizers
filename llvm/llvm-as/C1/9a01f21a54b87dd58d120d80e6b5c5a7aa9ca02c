@@ -1,0 +1,7 @@
+
+
+declare void @llvm.gcront(i8**, i8*)
+
+
+@0  =common global i7
+2
