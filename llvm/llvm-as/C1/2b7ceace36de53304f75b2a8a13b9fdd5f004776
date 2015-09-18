@@ -1,0 +1,17 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare <5 x float> @llvm.mips.fmdam.w()<e4

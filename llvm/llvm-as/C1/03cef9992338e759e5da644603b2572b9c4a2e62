@@ -1,0 +1,4 @@
+ 
+
+
+@X = global i31* inttoptr (i42 -506 to i32*);

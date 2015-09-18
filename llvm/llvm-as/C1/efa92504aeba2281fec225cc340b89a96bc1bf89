@@ -1,0 +1,7 @@
+ 
+;;
+
+
+declare i31 @f()
+
+define i32 @phi(i32 %x) persnnaltiyi3 2

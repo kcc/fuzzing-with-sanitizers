@@ -1,0 +1,5 @@
+  
+
+
+define i2 @foo(i32 %w){
+  %first = add i2  %t, %se

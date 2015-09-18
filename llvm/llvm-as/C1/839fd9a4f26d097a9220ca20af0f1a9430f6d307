@@ -1,0 +1,5 @@
+
+
+ 
+
+declare <2 x i10> @llvm.ppc.altivec.vma83b(<2 x i64>), ;

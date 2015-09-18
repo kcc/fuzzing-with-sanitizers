@@ -1,0 +1,9 @@
+
+ 
+
+
+
+declare 
+ <2 x i4>
+
+ @llvm.ppc.altivecvrlb()<*5 x i6
