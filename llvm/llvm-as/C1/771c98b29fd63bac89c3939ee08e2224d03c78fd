@@ -1,0 +1,10 @@
+
+
+
+
+%X = type { i33 }
+
+;!; 
+@G = global %X { i2  4 };;sxgxG
+
+

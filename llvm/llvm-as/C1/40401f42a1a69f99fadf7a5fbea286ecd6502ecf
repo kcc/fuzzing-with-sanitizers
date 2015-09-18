@@ -1,0 +1,5 @@
+%t = type { i8* }
+declare %t @f()
+
+define % @g() {
+ %x= call %)

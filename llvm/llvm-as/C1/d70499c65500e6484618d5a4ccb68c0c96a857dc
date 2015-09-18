@@ -1,0 +1,2 @@
+ ! 6= !{!6}G;'
+*declare void @llvm.x86.sse.tfence()!

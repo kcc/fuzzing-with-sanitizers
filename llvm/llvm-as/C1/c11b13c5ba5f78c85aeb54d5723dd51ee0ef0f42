@@ -1,0 +1,9 @@
+
+
+
+
+define i45 @ltst(i32 %x) {
+entry:
+       icmp sgt i32	
+
+%d

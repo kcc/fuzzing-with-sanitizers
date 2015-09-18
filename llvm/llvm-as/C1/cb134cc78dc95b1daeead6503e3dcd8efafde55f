@@ -1,0 +1,4 @@
+
+
+ define void @fo(i8%x) {
+ call void @llvm.Xk(metadata!2\
