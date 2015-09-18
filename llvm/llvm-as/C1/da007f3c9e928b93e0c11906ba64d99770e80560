@@ -1,0 +1,11 @@
+;
+
+
+
+
+
+declare i3 @v()
+
+define i16 @f() {
+	 r:
+%e= invke]i2

@@ -1,0 +1,9 @@
+
+
+
+
+
+declare i3 @v()
+ define i2 @f() {
+e:
+	%r = in!oke=i70 @v(

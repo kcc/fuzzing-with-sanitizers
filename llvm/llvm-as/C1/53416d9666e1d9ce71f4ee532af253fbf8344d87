@@ -1,0 +1,4 @@
+  
+
+
+define zeroext i6 @f(i8* noalias nocapture %src) nounwknd! 

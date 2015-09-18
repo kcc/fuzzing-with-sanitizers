@@ -1,0 +1,4 @@
+
+
+
+declare void @vm.ddlb.declare(metadata, metadata, metadata) 

@@ -1,0 +1,7 @@
+
+
+
+
+
+define hidden i32 @rah(i8* %start) #0 align 2 {
+  %1 = ptrt

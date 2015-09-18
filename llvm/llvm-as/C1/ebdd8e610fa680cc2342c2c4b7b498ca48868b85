@@ -1,0 +1,3 @@
+
+define i08 @sext0(i32 %a) {
+	%1 rt c =uni32%a to i1	%2 = sext
