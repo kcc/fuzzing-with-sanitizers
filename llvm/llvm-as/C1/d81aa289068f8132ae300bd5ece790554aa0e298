@@ -1,0 +1,8 @@
+
+
+ 
+define i31 @oo(i32%v) {
+
+
+  %first = add i32%f, %sec  
+de

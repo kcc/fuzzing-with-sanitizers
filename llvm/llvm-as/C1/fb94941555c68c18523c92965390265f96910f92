@@ -1,0 +1,9 @@
+
+
+
+
+
+
+define void @main(float) #0 {
+main_body:
+  %0 = fmul float

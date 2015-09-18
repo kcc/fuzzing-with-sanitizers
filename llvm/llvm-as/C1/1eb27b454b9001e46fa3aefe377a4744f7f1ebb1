@@ -1,0 +1,4 @@
+
+@i1_s = external global i1		
+@i3_s = external global i2		
+@i3_s

@@ -1,0 +1,5 @@
+
+
+
+
+define i32 @West(i1 %C, i33 %A, i74 %B)  !xMC

@@ -1,0 +1,5 @@
+
+
+define void @test0(i32 %n) {entry:
+  %s = mul i32 %n, 96
+  br
