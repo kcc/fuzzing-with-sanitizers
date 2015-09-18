@@ -1,0 +1,5 @@
+
+
+define i2 @foo(i15 %a, i32 %b){
+
+enry: br label %fo -:0

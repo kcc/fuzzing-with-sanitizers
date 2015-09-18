@@ -1,0 +1,5 @@
+
+
+
+declare i5@llvm.ctlz.i7(i1)
+declare i58@llvm.ctlz.i51(i1*)

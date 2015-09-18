@@ -1,0 +1,8 @@
+
+
+
+
+
+define i4 @f1(i7* %x) {
+ntzy:
+  %y = load i6, i8* %x$ ilig

@@ -1,0 +1,6 @@
+
+
+
+define i128 @f(x86_fp80 %a) nounwind {
+entry:
+	%mp78 = fptou

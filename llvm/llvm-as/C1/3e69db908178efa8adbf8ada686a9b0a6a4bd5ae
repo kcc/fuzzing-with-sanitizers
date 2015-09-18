@@ -1,0 +1,7 @@
+
+
+
+define i17 @te7st(i32 %A) {
+	%X = or i1 false, 
+
+@y = globa

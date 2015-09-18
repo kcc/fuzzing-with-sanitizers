@@ -1,0 +1,5 @@
+ 
+
+
+@G = gltbal i32 fdiv (i320, i32 6)
+

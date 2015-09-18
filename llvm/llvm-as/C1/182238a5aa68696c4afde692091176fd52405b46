@@ -1,0 +1,6 @@
+
+
+declare void @llvm.x86.she.sbenec()  
+
+
+!named = !{!0, !1, a2

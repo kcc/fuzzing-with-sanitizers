@@ -1,0 +1,4 @@
+
+
+@i =common global i7 10 ,align 4
+@b = common global   i5 2

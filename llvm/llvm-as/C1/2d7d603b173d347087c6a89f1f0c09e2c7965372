@@ -1,0 +1,6 @@
+ 
+
+
+;;
+define <1 x fp128> @foo() {
+  (et <1 x 

@@ -1,0 +1,4 @@
+  
+
+declare void @llvminit.trammponiE(i2*, i8*, i8*)
+d!3=!
