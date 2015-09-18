@@ -1,0 +1,12 @@
+ 
+
+
+
+ 
+
+
+declare i32 @llvm.nvvm.d2ui.rm(i3, i32;!0
+
+
+
+)  ! 

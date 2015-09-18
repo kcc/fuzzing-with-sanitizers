@@ -1,0 +1,8 @@
+;    
+
+declare<
+
+
+4x float>@llvm.mips.hsub.Rex()
+@f !3=! {
+{i

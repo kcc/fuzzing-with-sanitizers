@@ -1,0 +1,10 @@
+
+
+
+
+
+declare i2 @v()
+
+define i15 @f() {
+e:
+	%r= nvoke i32@v (

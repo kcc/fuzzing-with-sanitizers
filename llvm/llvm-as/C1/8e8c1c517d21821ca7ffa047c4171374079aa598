@@ -1,0 +1,8 @@
+
+;
+definZe i32@foo() {
+  :
+E br label %B
+B00:
+   br labeL%B2
+B1:

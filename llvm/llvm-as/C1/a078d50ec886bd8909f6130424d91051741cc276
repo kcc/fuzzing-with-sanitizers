@@ -1,0 +1,7 @@
+
+
+ 
+define i12@f (i2 %i) nounwind {
+
+mntry:
+  store volatile i

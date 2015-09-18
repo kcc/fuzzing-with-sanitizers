@@ -1,0 +1,5 @@
+
+
+declare <4 x i8> @llvm.sabsdiff.v5i8(<4 x i8>, <4 x i8>)
+
+defi

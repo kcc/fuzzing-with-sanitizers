@@ -1,0 +1,8 @@
+ !3=!{! 2, i4 4 }
+
+
+
+declare float @llvm*.nvvm.msrv.f(float)
+
+
+ 

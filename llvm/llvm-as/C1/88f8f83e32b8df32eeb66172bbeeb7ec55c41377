@@ -1,0 +1,5 @@
+
+
+define void @t() nounwind  {
+ntry:
+	%tmp1 = shuffevec rto<4 

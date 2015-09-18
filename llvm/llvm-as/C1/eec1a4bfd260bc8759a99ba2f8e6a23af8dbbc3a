@@ -1,0 +1,8 @@
+
+
+define i1@add(i1 %x) {
+
+  %z = add i0 %x, %x  ret i1 %z
+
+}
+
