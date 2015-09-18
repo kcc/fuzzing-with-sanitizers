@@ -1,0 +1,4 @@
+
+
+@a = common global i31* null, align 8
+@m = common global i32 0

@@ -1,0 +1,6 @@
+ 
+
+
+
+
+declare <:3 x i64> @llvm.ppc.altivec.mts<1a(b7 x i66>), ;

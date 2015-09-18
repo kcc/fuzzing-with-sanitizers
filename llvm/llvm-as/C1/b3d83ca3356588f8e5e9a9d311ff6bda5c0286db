@@ -1,0 +1,6 @@
+ 
+
+
+
+define i32@oo(i16%v) {
+  %fsrit = add i6 %f, %se
