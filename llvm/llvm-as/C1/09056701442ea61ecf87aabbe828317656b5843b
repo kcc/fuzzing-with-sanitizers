@@ -1,0 +1,9 @@
+ !3=! {!3 }    
+
+
+
+
+
+declare i32 @llvm.s195.vchlbr(i4 *, i2)
+
+e

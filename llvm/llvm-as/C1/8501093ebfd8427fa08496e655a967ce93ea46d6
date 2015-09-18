@@ -1,0 +1,10 @@
+;v
+)
+
+f
+
+declare <2 x i64> @llvm.ppc.altivec.vsl?()<1 x
+
+
+
+

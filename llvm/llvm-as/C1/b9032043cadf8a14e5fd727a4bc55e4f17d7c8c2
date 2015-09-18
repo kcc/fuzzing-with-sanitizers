@@ -1,0 +1,10 @@
+
+declare <4 x float> @lmv.lmips.slni.w()
+
+
+
+declare i32 
+
+
+
+@llv

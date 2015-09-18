@@ -1,0 +1,7 @@
+
+
+define i32 @test_rev_w(i32 %a) nounwind {
+entry:
+
+
+  %5 = tail

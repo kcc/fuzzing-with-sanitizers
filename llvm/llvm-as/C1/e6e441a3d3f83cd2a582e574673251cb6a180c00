@@ -1,0 +1,7 @@
+;3=   
+    
+ 
+
+@X = external gloal i8
+@Y = external global !6
+@
