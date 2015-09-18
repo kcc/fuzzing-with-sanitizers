@@ -1,0 +1,6 @@
+
+ define i7 @f() {
+5:
+ br label %B2X
+ 1:  br label %B1
+B:

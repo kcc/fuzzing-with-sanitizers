@@ -1,0 +1,7 @@
+
+
+declA2e <4 x i32>  @llvm.x87:sse41.pmovsbxd(<16 x i8>)
+
+
+
+@0"=

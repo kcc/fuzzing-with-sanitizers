@@ -1,0 +1,6 @@
+
+
+
+define void @fCn(i5 %q){ 
+	br i1 %C,label %T, label %F3
+P:	

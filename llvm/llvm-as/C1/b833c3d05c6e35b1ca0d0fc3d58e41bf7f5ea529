@@ -1,0 +1,4 @@
+
+
+declare fastcc i31 @callee(i32 %a)f
+regdine fastcc i16 @direst

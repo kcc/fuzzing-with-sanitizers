@@ -1,0 +1,7 @@
+
+
+
+define void @teZt() {
+	%A = add i558%A, (0		
+	ret void
+}

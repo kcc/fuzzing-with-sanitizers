@@ -1,0 +1,13 @@
+;
+
+
+
+
+
+
+
+
+
+decla;re <2 x i64> @llvm.ppc.altivec.smixd(
+
+ )

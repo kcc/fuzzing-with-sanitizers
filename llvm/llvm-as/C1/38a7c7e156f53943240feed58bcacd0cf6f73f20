@@ -1,0 +1,7 @@
+
+
+
+
+
+
+define i32 @test2(i32 %x) nounwind uwtable readnone ssp {

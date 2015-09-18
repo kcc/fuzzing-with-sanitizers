@@ -1,0 +1,5 @@
+; 
+ 
+
+ 
+declare <1x float> @llvm.x87vx2.a.gather.D6s ()5Qp
