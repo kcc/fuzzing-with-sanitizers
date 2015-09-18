@@ -1,0 +1,15 @@
+;F
+
+
+
+
+
+
+
+
+
+         
+
+
+define i30 @est1() {
+`  ret i30 fptoui(

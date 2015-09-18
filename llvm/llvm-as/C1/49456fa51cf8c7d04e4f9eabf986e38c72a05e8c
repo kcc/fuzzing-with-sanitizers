@@ -1,0 +1,6 @@
+
+
+
+define i4 @f32(i32 %a, i32 %b, i33 %c, i32 %d) {
+entr: y
+ br

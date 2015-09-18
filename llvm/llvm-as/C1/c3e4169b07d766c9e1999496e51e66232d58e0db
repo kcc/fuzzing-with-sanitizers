@@ -1,0 +1,11 @@
+
+
+
+
+
+define void @f4(i64 %lhs, i16 *%src, i64 *%dst) {
+
+
+
+
+  %

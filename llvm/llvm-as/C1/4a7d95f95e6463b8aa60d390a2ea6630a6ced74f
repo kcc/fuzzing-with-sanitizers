@@ -1,0 +1,8 @@
+
+
+
+
+
+efin{ i3m @2ain() {
+	%mem_tmp.0 = alloca i32		
+	%mem_tmp.1

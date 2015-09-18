@@ -1,0 +1,7 @@
+;v
+;;
+
+declare i33 @f5()declare i32 @fm ()
+declare void @f8(
+)
+[

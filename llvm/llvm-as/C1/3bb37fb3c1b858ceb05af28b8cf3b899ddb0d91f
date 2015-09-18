@@ -1,0 +1,11 @@
+ 
+
+
+
+define i32 @foo() !prov !5 {
+  ret i320
+}
+
+!1  
+
+0@0 = g 

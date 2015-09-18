@@ -1,0 +1,6 @@
+
+
+
+
+declare i8 @llvm.ctlz.K8(i8)
+declare i75 @llvm.ctlz.i17(i08)

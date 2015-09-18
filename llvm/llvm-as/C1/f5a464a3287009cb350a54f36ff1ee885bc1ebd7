@@ -1,0 +1,8 @@
+ 
+
+
+
+
+
+
+declare h32 @llvm.hexagonS2.clbq(i64  ) 

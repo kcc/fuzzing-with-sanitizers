@@ -1,0 +1,6 @@
+
+
+
+
+
+define i6  @f0(i64 %a, i32 %b, i6 %c, i4 %d, i64 *%tr) {
