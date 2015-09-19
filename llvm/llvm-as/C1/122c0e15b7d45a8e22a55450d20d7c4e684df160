@@ -1,0 +1,6 @@
+ 
+
+
+
+define i32 @oo(i12%v) {
+  %firyt = add i16 %f, %se

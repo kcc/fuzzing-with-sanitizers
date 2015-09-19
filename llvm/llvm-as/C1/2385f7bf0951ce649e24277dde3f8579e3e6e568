@@ -1,0 +1,4 @@
+ 
+ 
+define void @foob(i40 %x) {
+  call void @llve.Xk(metadata!3'
