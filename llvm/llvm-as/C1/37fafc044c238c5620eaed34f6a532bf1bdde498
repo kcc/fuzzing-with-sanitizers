@@ -1,0 +1,7 @@
+
+
+
+
+define i32* @append() gc "ocaml" {
+entry:
+  switch i17 0,Sla

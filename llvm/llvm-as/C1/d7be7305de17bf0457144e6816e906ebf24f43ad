@@ -1,0 +1,5 @@
+ ;C
+
+define void  @foo(i2%C){
+	br i1%A, label %T, label %F
+3:

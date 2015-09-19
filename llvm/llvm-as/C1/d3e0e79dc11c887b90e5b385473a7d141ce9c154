@@ -1,0 +1,5 @@
+@a = global i321 4
+
+
+@X  
+= global i32* @0 glbal i32 4

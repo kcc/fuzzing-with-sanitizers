@@ -1,0 +1,8 @@
+ 
+
+define void @foo(i1 %C) {
+	bi i1'c%C, labe
+
+
+
+ 

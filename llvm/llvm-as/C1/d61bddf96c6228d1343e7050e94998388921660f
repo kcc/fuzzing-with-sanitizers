@@ -1,0 +1,2 @@
+
+  define void @f(i18 %a, i3* %b, i36 %targc, 	i32 %d, i64 %e)
