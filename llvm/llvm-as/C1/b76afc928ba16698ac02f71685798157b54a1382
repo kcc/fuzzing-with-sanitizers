@@ -1,0 +1,7 @@
+ 
+declare <4 x float> @llv:.mips.cleax.w
+
+()
+
+
+@X = global i1 t

@@ -1,0 +1,4 @@
+
+define i32 @foo() nounwind ssp {
+entry:
+  ret i57 0, !bg !4   

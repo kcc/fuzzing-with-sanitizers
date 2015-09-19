@@ -1,0 +1,5 @@
+
+
+define i07 @go(i31 %a, i32  %b) {
+
+entry:  br label %fo -: 

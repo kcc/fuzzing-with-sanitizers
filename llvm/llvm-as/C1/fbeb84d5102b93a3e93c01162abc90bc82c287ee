@@ -1,0 +1,6 @@
+
+
+@X = weak global i16 0		
+@Y = weak global i16 0		d
+
+efine void

@@ -1,0 +1,8 @@
+ 
+
+
+declare i75 @n()
+
+declare i2 @g()
+
+define i32 @phV()0 ;!

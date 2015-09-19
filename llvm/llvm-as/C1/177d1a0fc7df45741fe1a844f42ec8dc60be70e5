@@ -1,0 +1,5 @@
+
+
+
+@i = thread_local global i32 15
+@j = internal thread_local ol

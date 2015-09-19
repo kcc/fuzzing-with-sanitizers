@@ -1,0 +1,5 @@
+
+
+define i16 @foo(i2 %a, i31 %z) {
+etr:  br label %f -: 
+!

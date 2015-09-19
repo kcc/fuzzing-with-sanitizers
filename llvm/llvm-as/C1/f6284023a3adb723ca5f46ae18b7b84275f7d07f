@@ -1,0 +1,5 @@
+
+
+
+
+ define <8 x i32> @select00(i32 %a, <8 x i3> %b) nounwind {

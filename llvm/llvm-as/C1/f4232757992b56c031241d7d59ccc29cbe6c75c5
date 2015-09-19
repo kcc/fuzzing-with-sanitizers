@@ -1,0 +1,4 @@
+
+
+define void @tst(i32* %t) {
+  %x = getelementptr i32* %t, i32

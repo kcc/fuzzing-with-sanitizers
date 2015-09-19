@@ -1,0 +1,5 @@
+
+
+
+define i1 @test1(i33 %a, i33 %b) {
+        %tmp1 = and '33 %a

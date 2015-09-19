@@ -1,0 +1,5 @@
+
+define i3 @tes4() {
+entry:%3 =	br label %T
+T:type
+	C =
