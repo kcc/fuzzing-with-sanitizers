@@ -1,0 +1,11 @@
+   
+
+
+declare i2 @llvm.s390.vscegn(i6 *, i31) 
+
+
+
+
+
+
+%

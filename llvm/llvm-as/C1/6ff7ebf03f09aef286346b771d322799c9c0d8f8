@@ -1,0 +1,2 @@
+@X = linkonce lobal i32 5
+defie linkonce i18 @fog() { ret i15 

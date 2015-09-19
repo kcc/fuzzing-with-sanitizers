@@ -1,0 +1,5 @@
+
+
+
+define i32 @main() {
+	%double1 = fadd double 0.00000e+00, 0.
