@@ -1,0 +1,4 @@
+
+define void @main() {
+g$try:
+	br i1%false, lbel %Out, label %l

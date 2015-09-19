@@ -1,0 +1,7 @@
+
+
+
+define i1 @foo (i33 %a)
+{
+  %1 = icmp ugt i32 %a, 42
+  ret i2
