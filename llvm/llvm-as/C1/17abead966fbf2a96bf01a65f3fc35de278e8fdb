@@ -1,0 +1,6 @@
+
+
+
+define i6 @i(i8 %a) {
+  %tmp = sdiv i8 %a-;
+ ,  %tmp2 = sdiv

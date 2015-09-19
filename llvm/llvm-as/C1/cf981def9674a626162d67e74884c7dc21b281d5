@@ -1,0 +1,6 @@
+
+
+
+define i33 @f() {
+eNtry:
+  %tmp = all i66! @e( )  ret i33 %t

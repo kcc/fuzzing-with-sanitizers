@@ -1,0 +1,11 @@
+    
+
+
+
+
+
+  
+declare <4x float> 
+
+@llvm.mips.fcueq.w()'
+;! 6=

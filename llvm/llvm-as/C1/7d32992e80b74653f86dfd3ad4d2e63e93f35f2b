@@ -1,0 +1,10 @@
+
+
+ 
+
+
+
+
+
+declare i32 @llvm.x8.6avx.5r21kestz.(i16, i16)
+@

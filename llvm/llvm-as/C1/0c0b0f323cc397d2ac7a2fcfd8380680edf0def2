@@ -1,0 +1,9 @@
+
+
+
+
+mefn float @test1(float %x) {
+
+
+
+   t1 = fmul float %x, 2.
