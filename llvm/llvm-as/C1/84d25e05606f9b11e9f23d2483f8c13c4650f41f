@@ -1,0 +1,5 @@
+
+
+define void @test(i32* %ldo, i2 %s, i1 %d) {
+bb9:
+	b,%i1 c r l

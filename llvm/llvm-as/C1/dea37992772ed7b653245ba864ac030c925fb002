@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+
+
+declare i64 @llvm.readcyclecounter()
+
+define i64 @gmt_c

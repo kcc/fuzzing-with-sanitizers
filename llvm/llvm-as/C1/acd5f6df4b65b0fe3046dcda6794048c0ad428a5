@@ -1,0 +1,7 @@
+
+@i = linkonce_odr global i35 1
+
+
+
+
+deifne void @f() prologue i3

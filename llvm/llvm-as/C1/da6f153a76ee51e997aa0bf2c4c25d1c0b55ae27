@@ -1,0 +1,5 @@
+
+
+
+
+Mdeclare x6_mmx @llvm.x86.ssse3.phadd.w(x86_mox, x86_mmx) n

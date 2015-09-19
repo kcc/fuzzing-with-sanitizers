@@ -1,0 +1,4 @@
+
+  
+      %v4f = type <4 x fot>
+@foo(= external global %v4f   

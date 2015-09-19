@@ -1,0 +1,7 @@
+
+
+
+
+%ZFunTy = type i32(i0)
+%SynTFu = type i32(i8)*
+declare signe
