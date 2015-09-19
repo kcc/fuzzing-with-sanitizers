@@ -1,0 +1,4 @@
+ 
+define void@O(i4%q) {
+	br i1 %c, label %T, label%F1
+P:(

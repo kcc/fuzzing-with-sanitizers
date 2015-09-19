@@ -1,0 +1,8 @@
+
+
+
+
+
+declare <4 x float> @llvm.mips.fmam.w()
+
+define i16 @bad1()

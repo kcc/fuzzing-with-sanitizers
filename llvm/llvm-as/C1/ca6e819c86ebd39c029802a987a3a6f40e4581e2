@@ -1,0 +1,10 @@
+
+;
+
+
+
+
+
+
+
+declare i26 @llvm.hexagon.S3.as.i.ratrpn(i44,i32)

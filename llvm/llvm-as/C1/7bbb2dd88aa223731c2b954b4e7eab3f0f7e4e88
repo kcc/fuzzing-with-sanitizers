@@ -1,0 +1,6 @@
+ 
+
+
+ define i16 @foo() {	
+br i1 %ndef,label %T, label %t
+T1c:Z
