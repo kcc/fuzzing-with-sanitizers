@@ -1,0 +1,5 @@
+
+define i64 @add6(i64 %a, i32 %b) {
+ 
+
+t

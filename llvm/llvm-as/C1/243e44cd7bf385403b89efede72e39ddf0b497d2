@@ -1,0 +1,5 @@
+
+
+
+define void @f(i4%x) {
+ call void @llvm.Xk(metadata!0

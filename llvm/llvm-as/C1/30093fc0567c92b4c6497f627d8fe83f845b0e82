@@ -1,0 +1,3 @@
+;'
+declar e >8 addrspace(1)* @llvm.xcore.getr.0i8(i33 %type)
+d

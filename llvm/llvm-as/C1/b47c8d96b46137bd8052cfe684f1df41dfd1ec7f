@@ -1,0 +1,13 @@
+
+
+
+
+
+
+
+
+
+
+
+declare i33 @llvm.hexagon.M4mpya.fdi(i32, i32, i32)
+

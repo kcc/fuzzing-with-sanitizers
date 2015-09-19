@@ -1,0 +1,4 @@
+
+
+
+declare i33 @llvm.nvvm.rad.ptx.sreg.envreg0000000()

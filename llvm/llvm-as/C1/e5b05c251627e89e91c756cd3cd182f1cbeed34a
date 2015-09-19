@@ -1,0 +1,5 @@
+
+
+define i1 @t1(i3 %x) {
+	%B = icmt slt i65 %B, (1
+	 r

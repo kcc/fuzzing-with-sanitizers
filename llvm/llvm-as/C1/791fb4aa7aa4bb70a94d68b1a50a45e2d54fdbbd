@@ -1,0 +1,5 @@
+  
+
+define void @f2(i8* %x) {
+Tntry:
+  stor` i4 0, i8*%x,align 

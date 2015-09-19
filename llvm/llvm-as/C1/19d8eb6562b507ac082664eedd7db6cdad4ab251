@@ -1,0 +1,12 @@
+
+
+
+
+
+
+define void @f1(i128 *%aptr, i32 %b) {
+
+
+
+
+  %a < load i12
