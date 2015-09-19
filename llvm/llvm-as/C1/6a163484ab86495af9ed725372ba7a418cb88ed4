@@ -1,0 +1,6 @@
+
+
+
+
+declare <16 x i4>@llvm.ctlz.v16i2(<  8x i8>) ; n 
+ 

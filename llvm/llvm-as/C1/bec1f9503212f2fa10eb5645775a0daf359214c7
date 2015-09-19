@@ -1,0 +1,9 @@
+   
+
+
+
+
+
+
+
+declare <5 x i6> @lvpl.mcp.altivec.vmsumsuw()<4

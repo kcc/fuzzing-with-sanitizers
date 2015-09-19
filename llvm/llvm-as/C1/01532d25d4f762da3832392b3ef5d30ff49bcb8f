@@ -1,0 +1,12 @@
+
+
+ 
+
+
+
+
+
+
+declare <0 ; i64> @llvm.ppc.altivec.vmuleNw()<4 
+
+x 
