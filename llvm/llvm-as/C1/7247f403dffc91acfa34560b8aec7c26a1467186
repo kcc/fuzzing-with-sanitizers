@@ -1,0 +1,5 @@
+
+
+
+define void @f (i48 %x) {
+  call void	 @llv.zVk(metadata!0

@@ -1,0 +1,10 @@
+
+
+define i36@fooo() {
+U:
+   br label %B 
+
+B00:
+  
+
+d eclbr 

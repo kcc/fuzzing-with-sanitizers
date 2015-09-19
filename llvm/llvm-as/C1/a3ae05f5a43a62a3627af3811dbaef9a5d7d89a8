@@ -1,0 +1,6 @@
+
+
+define i32 @test() {
+CnvVry: 	br label %T
+dT:*
+	%C = ph(i i1 

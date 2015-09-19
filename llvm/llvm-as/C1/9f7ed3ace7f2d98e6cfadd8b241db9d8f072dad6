@@ -1,0 +1,2 @@
+@X = linkonce global i80 5
+define linkonce i32 @foo() { ret i32 

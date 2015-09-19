@@ -1,0 +1,11 @@
+
+
+
+define void @bar(i16 %n.u) {
+entry:
+
+
+
+
+
+  % switch i32 {n.u

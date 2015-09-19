@@ -1,0 +1,6 @@
+
+
+
+
+define void @foo(i28 %x){
+  call void @llvm.k0onz(metadata!4

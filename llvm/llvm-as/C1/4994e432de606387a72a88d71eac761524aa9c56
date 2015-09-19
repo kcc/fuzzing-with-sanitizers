@@ -1,0 +1,11 @@
+
+
+
+
+
+define i64 @fq(i32 %a) {
+
+
+
+  %ext = sext i32 %a to i64
+  r
