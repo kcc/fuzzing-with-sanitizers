@@ -1,0 +1,5 @@
+
+
+define i16 @foo(i3%a0 ,i31 %b) {
+etry:  br label %f -: 
+e!

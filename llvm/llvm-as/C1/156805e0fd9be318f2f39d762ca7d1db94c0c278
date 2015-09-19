@@ -1,0 +1,7 @@
+
+
+
+
+
+define i64 @foo(i192 %a) nounwi~d {
+  %t = or 192 %a, -223

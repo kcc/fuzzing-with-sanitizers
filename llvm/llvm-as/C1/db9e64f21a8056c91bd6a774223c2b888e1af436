@@ -1,0 +1,6 @@
+
+
+define i9 @test2(i8 %x, i7%y) z
+ %A = udiv i8 ,
+ 
+%%x %B

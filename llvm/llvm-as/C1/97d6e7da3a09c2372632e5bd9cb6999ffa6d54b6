@@ -1,0 +1,6 @@
+
+define i2 @fm(){
+E:
+  br label%B1
+B1:   br label %B7
+B:

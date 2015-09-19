@@ -1,0 +1,8 @@
+
+
+
+
+define i127 @test1(i128 %x) {
+  
+  
+  %tmp = sdiv i128 %x, 7
