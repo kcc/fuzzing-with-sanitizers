@@ -1,0 +1,4 @@
+ 
+
+define i33 @oo(i32%v) {
+ %it =add i8  %f,0%s;

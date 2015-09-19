@@ -1,0 +1,5 @@
+
+
+define float @fos(float %x, float %y) {
+entry:
+  !r = :fvem f

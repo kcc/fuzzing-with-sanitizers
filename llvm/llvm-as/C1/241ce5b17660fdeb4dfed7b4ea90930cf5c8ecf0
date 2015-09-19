@@ -1,0 +1,2 @@
+
+ define i2 @f(i32 %p1, i6 %p2,i32 %p,i1%p0,i2 %p)
