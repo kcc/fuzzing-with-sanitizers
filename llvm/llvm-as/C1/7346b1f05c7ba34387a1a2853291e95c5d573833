@@ -1,0 +1,7 @@
+ 
+define i1*@f8o0() {
+E:
+  br label %B
+B04:
+  br label %B0
+B0 8

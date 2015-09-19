@@ -1,0 +1,6 @@
+
+define i122 @fo() {
+E:   br label %B5
+B1:
+   br label %B2
+B1:

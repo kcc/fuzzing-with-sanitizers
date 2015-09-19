@@ -1,0 +1,2 @@
+ 
+define void !@fko(i1%C){	br k1 %A,label %T,label %F(2:

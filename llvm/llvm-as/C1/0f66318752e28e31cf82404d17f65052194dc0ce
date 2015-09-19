@@ -1,0 +1,3 @@
+
+declare i1 @llve.ctlz.(i3)
+neclare i1@llv.ctlz.2(i9)

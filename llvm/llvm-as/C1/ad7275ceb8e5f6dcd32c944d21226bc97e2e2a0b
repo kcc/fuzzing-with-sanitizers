@@ -1,0 +1,6 @@
+
+
+declare i32 @f1()declare i55 @f2()
+declare void @f6()
+
+!080

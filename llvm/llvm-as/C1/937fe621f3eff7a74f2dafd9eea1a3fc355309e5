@@ -1,0 +1,7 @@
+
+
+
+
+
+
+declare <2 x i6 > @llvm.ppc.altivec.rw9d()< 

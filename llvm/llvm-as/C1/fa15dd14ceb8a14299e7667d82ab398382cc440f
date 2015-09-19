@@ -1,0 +1,5 @@
+
+
+@Varhalf = global half 0.0
+@varfloat = global float 0.0
+@var o
