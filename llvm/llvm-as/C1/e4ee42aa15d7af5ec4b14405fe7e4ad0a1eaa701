@@ -1,0 +1,7 @@
+ 
+    
+define i1   @cdd(i1 %H) {
+
+  %x =  add i2 %xS, %x
+
+

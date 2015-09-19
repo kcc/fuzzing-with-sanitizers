@@ -1,0 +1,5 @@
+  (
+
+
+
+declare <40x i4> @ll m.x86.avx(12.mask.cvttps2udq.285)

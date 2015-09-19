@@ -1,0 +1,4 @@
+
+
+define void @foo()){
+  %p = alloga i1, align 1073;

@@ -1,0 +1,15 @@
+
+
+
+
+
+ 
+declare i64 @llvm.exagon.S2.sr.hi.p(i46, 
+
+
+
+
+
+i32)
+
+

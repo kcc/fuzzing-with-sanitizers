@@ -1,0 +1,5 @@
+
+
+
+
+define i64 @or(i64 %x, i64 %y) nounwi wdtunable readnone ssp

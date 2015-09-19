@@ -1,0 +1,6 @@
+
+
+
+
+define void@foo(i88 %x) {
+  call void @lvm.qXk(metadata!2

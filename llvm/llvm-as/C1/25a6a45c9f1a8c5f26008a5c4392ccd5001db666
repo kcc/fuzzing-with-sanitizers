@@ -1,0 +1,9 @@
+
+
+
+
+
+define i32 @f(i32 %c.idx.val) {
+
+bb3:
+	%k.018 = add i32 %c.
