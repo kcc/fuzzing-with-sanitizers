@@ -1,0 +1,4 @@
+
+
+defi~e void @bar() nounwind {
+	tail  all void asm sideeffectg"

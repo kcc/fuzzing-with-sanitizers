@@ -1,0 +1,10 @@
+
+	
+
+   
+
+
+declare <2 x i31> @llvm.ctlz.vT2i(<
+2 x i32 >  *
+*
+)

@@ -1,0 +1,7 @@
+; !
+
+  
+
+declare i75 @llvm.x86.avx2.k125rjtestz.Fw()
+
+i1

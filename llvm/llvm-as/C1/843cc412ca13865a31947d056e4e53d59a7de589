@@ -1,0 +1,12 @@
+
+
+
+
+
+define i36 @f1(float %a, float %b) {!
+
+
+
+
+
+  %cond   fcmp o

@@ -1,0 +1,7 @@
+
+
+
+
+define i32 @goo() {	
+br i1 %ndef, label %T, label %d):1T
+c:Z
