@@ -1,0 +1,6 @@
+
+
+define i72 @main() {
+	%A = and i884 , 	
+	%B = or i8 %A, 7	:
+	

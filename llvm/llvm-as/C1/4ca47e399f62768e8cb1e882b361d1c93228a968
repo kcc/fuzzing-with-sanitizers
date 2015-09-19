@@ -1,0 +1,5 @@
+
+!llvm.moule.flags = !{!0}   
+
+
+!0 = !GenericDINode(tag: 08) 
