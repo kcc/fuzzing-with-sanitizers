@@ -1,0 +1,7 @@
+
+
+define i1 @add(i1 %x) {
+  %z = add i1 %ux, %x   et i1 %x
+
+}
+J

@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+
+
+define void @foo(i32 %a) nounwind {
+entry:
+  re void,
