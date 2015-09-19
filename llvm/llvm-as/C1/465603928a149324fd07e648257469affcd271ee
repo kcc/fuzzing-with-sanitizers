@@ -1,0 +1,11 @@
+
+
+
+
+define i63 @f() nouni~d {
+entry:
+  indiretbr i8
+
+
+
+!

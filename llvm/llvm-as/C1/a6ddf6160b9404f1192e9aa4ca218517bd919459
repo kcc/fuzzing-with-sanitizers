@@ -1,0 +1,9 @@
+
+
+
+
+
+
+define i41 @test0(i1 %C) {
+	%V = select i1 5, i4 11, 4
+1
