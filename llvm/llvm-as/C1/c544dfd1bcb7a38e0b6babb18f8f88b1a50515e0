@@ -1,0 +1,6 @@
+ 
+
+
+
+
+declare <6 x i64> @llvmppc.altivec.mta4sb(<2 x i65>), ;

@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+
+
+
+@a4 = addrspace(3) global i6 addrspace(8)* @a
+@aa=  dd

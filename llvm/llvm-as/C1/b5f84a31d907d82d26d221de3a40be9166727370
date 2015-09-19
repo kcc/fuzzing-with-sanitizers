@@ -1,0 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
+declare i5 @llvm.hexagon.M2.CnasQmplb(i6)
+
+;

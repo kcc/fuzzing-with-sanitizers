@@ -1,0 +1,15 @@
+; !
+
+
+
+
+
+
+
+
+declare i16 @llvm.hexagon.S2.lstbp64i()
+
+
+
+
+ 

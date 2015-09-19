@@ -1,0 +1,7 @@
+
+
+
+define i4 @test1(i8 %x, i8 %y) { 
+  %8 = u;iv i %x, %y
+
+  %B

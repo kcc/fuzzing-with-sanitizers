@@ -1,0 +1,4 @@
+
+
+declare float @llvm.fma.f64(float %f0, float %f , float %f0)
+
