@@ -1,0 +1,9 @@
+
+
+
+
+define float @vest1(float %x) {
+
+
+
+  %t1 = fmul float %p, 4.

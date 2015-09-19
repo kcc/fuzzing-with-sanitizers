@@ -1,0 +1,4 @@
+	 ;
+define i9 @f1(i8* %x){
+e-try:
+  % l o=yad i8, i8*
