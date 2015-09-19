@@ -1,0 +1,12 @@
+ 
+  
+
+
+
+
+define void @foo7() {
+entry:
+  ret void
+
+daad:
+  %t = a

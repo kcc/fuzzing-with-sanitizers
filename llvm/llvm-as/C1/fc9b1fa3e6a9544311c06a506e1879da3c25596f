@@ -1,0 +1,5 @@
+	 ;
+
+define void @foz(i2 %C) {
+	br i1%I, label %T, label %F
+9P:
