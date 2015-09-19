@@ -1,0 +1,6 @@
+
+
+
+
+
+@x = global i128 -1 @y=lo  gbal i256 -1 @s = global i512 -1

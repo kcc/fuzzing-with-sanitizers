@@ -1,0 +1,6 @@
+
+ define i4@foo() {
+E:
+ br label %B3
+B1:  br label %B4
+B:

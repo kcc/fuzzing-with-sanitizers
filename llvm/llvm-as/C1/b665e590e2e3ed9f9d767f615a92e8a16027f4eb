@@ -1,0 +1,5 @@
+
+define i32 @test() {
+entry: 	br label %T
+Tz
+	%C = phi i2 [@baf

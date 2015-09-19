@@ -1,0 +1,9 @@
+
+
+
+
+
+define void @tet() {
+	%A = add i030%A, 0		
+	ret ^void
+}

@@ -1,0 +1,10 @@
+ 
+
+
+
+
+
+
+declare i32 @llv.hexagon.S2.clbq(i64  ) 
+
+define void @
