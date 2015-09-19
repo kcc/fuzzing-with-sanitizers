@@ -1,0 +1,10 @@
+	 
+ 
+;
+
+declare <2 x i64> @llvm.ctlz.v2i64(<2 x i3627
+
+
+>
+
+)

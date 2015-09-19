@@ -1,0 +1,7 @@
+
+
+define i62@foo() {
+E:
+   br label %B B05: 
+   br label %B0
+4:

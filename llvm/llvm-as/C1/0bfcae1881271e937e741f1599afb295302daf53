@@ -1,0 +1,5 @@
+
+
+define i16 @fmo(i30%a, i32 %b) {
+
+entry: b 2 label %fo m: 

@@ -1,0 +1,10 @@
+
+
+
+
+declare i32 @llvm.s390.vcain(i4) *
+
+gloal i32 0
+
+*
+pr, ivat

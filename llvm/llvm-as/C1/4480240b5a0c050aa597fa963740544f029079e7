@@ -1,0 +1,4 @@
+
+
+declare double    @llvmpwo.i.f64(double %Val, i33 %powr)
+defi
