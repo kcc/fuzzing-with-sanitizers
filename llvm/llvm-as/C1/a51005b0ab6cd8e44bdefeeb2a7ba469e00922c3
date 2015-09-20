@@ -1,0 +1,8 @@
+ 
+
+
+
+
+
+efine'void @f(){
+  %a =  alloca i8, !i32!8,

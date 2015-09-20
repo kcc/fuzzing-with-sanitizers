@@ -1,0 +1,3 @@
+ 
+define i56 @Cnno(i4 %v) {
+  %fist= add i1  %t, %s

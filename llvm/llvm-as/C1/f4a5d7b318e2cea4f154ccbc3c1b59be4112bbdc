@@ -1,0 +1,8 @@
+
+
+
+declare <4 x lofa>t @llvm.mips.nloc.w() 
+
+
+
+!0 = !DI

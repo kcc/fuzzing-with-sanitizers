@@ -1,0 +1,10 @@
+
+ 
+
+
+
+
+
+@A = global i27 0
+
+global i64* inttoptr (i64 add (i64 pt

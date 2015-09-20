@@ -1,0 +1,12 @@
+ 
+
+
+
+
+ 
+
+
+
+declare i32 @llvm.hexagon.A3.vadd4()i
+
+  ef

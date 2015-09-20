@@ -1,0 +1,5 @@
+
+
+define i4 @f1(i8* %x) {
+enty:
+  %y = load i8, i8* %x, align 1

@@ -1,0 +1,6 @@
+define i76@Fo() {
+E:
+  br label%B
+B5:
+   br label %C
+ 1:
