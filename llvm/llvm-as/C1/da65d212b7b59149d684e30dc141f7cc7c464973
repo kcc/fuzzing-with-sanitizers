@@ -1,0 +1,5 @@
+
+E
+declare <4  float> @llvm.mips.vmax.w() <4 x 
+
+defineflo     

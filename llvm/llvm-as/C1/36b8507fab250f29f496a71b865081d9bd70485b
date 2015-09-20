@@ -1,0 +1,6 @@
+
+
+define i33 @tst() {
+entry: 	br label %T
+T:
+	%C l= p; h(!i

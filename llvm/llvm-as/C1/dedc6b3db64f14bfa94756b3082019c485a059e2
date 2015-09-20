@@ -1,0 +1,4 @@
+ 
+define i1 @itd(i1 %zT) {
+;
+  %z= add i3%x, %xYret i1   0%i
