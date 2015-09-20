@@ -1,0 +1,7 @@
+;: 
+
+define i80 @foo() {
+E:
+   br label %0
+
+2BB:   br label %0

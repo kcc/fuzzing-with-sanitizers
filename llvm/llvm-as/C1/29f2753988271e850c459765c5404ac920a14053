@@ -1,0 +1,8 @@
+
+
+declare void @llvm.x87.sse.cfenc()
+
+
+
+
+@G =eglobal i1 icmp ne
