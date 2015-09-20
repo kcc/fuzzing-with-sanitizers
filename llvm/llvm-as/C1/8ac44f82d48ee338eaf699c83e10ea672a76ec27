@@ -1,0 +1,5 @@
+; 
+
+declare i32 @f1()
+declare i6 @f2()
+declare void @f6();*n q

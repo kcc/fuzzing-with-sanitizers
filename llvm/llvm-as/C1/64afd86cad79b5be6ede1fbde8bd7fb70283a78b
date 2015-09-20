@@ -1,0 +1,9 @@
+
+
+
+
+
+define i72 @foo() {
+	br i1 undef, label %T, label %T
+T:		
+	

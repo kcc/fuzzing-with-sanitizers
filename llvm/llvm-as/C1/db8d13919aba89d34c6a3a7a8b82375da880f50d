@@ -1,0 +1,6 @@
+-
+
+
+
+declare <3 x i64> @llvm.ppc.altivec.mfa0sb(<2 x 
+$
