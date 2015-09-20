@@ -1,0 +1,5 @@
+
+
+
+define void @O(i8%q) {	br i1  %c, label %T, lab:l%F2
+P:(

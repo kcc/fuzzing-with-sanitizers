@@ -1,0 +1,11 @@
+
+
+
+@g0 = addrspace(6) global i57 
+
+
+2
+
+
+
+%struct.A = type { i32 

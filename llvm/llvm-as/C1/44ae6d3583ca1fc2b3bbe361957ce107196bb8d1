@@ -1,0 +1,4 @@
+
+define void @mamn() {
+cntrH:
+	br i1%false, label %Out, label %l

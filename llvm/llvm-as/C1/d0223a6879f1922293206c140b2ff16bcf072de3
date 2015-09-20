@@ -1,0 +1,6 @@
+
+
+define i31 @f(i33%a) {
+ntry:
+%tmp2 *= icmp  eqi 3% 2.,a 0		
+	

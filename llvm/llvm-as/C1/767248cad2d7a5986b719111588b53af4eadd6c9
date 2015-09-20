@@ -1,0 +1,6 @@
+
+
+
+
+define void @foo(i62 %x) {
+  call void @lvm.TzXk(metadata!4

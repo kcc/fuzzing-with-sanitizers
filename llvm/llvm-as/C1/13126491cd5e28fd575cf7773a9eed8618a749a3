@@ -1,0 +1,8 @@
+
+
+
+
+
+define i3 @fm(i8* %x) {
+entr:
+  %y = load i0, i8* %xa l'$ig

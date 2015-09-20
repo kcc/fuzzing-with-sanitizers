@@ -1,0 +1,6 @@
+ 
+
+define double @test1() {
+  %t = sitofp %3
+ undef ;o ouble
+ 

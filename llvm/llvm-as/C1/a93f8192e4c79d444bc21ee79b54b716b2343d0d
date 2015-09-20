@@ -1,0 +1,6 @@
+
+
+
+define void @ocl() {
+entry:
+  %vext = shufflevector <2 x doub

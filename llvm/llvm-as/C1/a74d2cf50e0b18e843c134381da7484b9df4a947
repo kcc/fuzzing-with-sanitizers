@@ -1,0 +1,9 @@
+   
+
+
+
+
+declar i32 @llvm.s390.vbgi (i8) ;
+
+
+define i32 @foo() !

@@ -1,0 +1,6 @@
+
+define i1@fo(){
+E:
+  br label%B2
+B1:   br lLabel  %B2
+B:

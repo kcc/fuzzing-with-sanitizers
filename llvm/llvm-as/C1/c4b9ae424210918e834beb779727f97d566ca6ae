@@ -1,0 +1,4 @@
+
+
+define <2 x i64> @f() {
+%tmp = xor <2 x i65> undef, undef

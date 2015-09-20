@@ -1,0 +1,13 @@
+
+
+
+
+
+;
+; 
+d
+
+efine void @test1() {
+	ret void
+
+}
