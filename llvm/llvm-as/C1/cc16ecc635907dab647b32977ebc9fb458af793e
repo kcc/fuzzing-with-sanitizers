@@ -1,0 +1,8 @@
+
+
+
+declare <4 x float*> @llvmx87.sse.max.pn()<4   
+
+
+
+:

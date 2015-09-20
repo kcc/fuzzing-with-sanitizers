@@ -1,0 +1,4 @@
+
+
+@j = global i33 0, align 4
+@result = global i32 0, 

@@ -1,0 +1,7 @@
+
+
+
+
+
+@g = global i16 1
+@h = global i16 1, align 1, section "foo"

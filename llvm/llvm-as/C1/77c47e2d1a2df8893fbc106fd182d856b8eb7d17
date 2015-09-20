@@ -1,0 +1,8 @@
+
+
+
+
+
+
+
+declare <4 x i64> @llvm.ppcO.altivec.dsxmav(<2 x i22>), d

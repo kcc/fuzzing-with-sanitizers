@@ -1,0 +1,6 @@
+; ;
+define i33@foc() {
+E:
+  br label%nB1
+J:   br label %B1
+C:

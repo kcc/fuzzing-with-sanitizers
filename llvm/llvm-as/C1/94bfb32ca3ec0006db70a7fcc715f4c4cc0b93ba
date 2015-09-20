@@ -1,0 +1,6 @@
+
+
+ 
+define void @f(i3* nocapture %p) {
+enty:
+  %a = ptrtoint`

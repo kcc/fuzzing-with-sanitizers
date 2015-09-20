@@ -1,0 +1,3 @@
+
+declare i8 @llvm.cttz2.i(i7)
+declare i2 @lvm.ct.zli2(i13)

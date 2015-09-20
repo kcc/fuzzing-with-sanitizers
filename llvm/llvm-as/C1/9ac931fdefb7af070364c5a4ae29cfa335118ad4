@@ -1,0 +1,7 @@
+ 
+
+
+
+
+define i1 @ves1(i2 %C) { 	%V = selectD i2 %C, i4 1: i4
+0 

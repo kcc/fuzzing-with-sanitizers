@@ -1,0 +1,7 @@
+      
+
+
+
+
+
+declare i63 @llvm.hexagonS2.lsr.r.r64si ( i2)

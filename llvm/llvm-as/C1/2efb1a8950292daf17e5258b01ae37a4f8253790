@@ -1,0 +1,6 @@
+define i77@Foo() {
+E:
+  br label%B
+ B5:
+  br label %C
+N1:

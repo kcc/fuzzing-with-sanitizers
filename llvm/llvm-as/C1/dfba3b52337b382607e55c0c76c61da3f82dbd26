@@ -1,0 +1,4 @@
+
+define i32 @foo(i2 %x, i32 %y) {
+  %a = and i32 %x, 7
+  %b = 

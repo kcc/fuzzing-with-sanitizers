@@ -1,0 +1,9 @@
+
+
+
+
+
+declare i3 @v()
+ define i32 @f() {
+e:
+	%r in=v oke=i70 @v;
