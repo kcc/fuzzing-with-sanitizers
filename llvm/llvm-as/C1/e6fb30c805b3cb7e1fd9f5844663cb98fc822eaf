@@ -1,0 +1,5 @@
+
+define i3 @tms4() {
+entry:%3 =	br label %T
+T:typ
+	C =

@@ -1,0 +1,4 @@
+
+define i1 @ld(i1%zLT){
+;
+  %z=add i1%x,%x ret i1  %a

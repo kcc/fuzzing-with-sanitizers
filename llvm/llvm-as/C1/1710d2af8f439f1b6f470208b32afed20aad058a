@@ -1,0 +1,11 @@
+
+
+
+
+define i16 @simple1(i8 %a )#0{
+
+ 
+
+
+ 
+%1 = uitfp i8 % to 

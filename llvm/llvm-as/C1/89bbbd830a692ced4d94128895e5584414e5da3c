@@ -1,0 +1,4 @@
+ 
+
+define void @t'est() {
+  switch i64 0 label %out [i2!0, label

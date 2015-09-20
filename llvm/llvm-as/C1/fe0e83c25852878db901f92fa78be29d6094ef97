@@ -1,0 +1,7 @@
+
+
+declare i65 @n()
+
+declare i1 @g()
+
+define void @foo() !(be !8
