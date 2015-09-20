@@ -1,0 +1,4 @@
+
+
+@x = global fp128 0xL11
+  !! 6= !{ i31  0xKB44  ;r*M0xK8

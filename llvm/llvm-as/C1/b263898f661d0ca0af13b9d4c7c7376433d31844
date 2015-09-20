@@ -1,0 +1,5 @@
+;$* 
+
+
+define i1 @foo(i8 %x) {
+~D  %1 = srem i31 %z, 

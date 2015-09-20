@@ -1,0 +1,7 @@
+
+
+
+
+define void @f(float %wt) {
+entry:
+	%0 = fcmp o;*g

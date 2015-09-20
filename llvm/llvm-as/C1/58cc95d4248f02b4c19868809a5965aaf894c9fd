@@ -1,0 +1,5 @@
+@a = global i18 26
+
+
+
+declare void @llv.toOkn.foobar(token)
