@@ -1,0 +1,10 @@
+
+
+
+
+define i16 @te(i11 %x) {
+
+
+
+  %mul9= shl nuw i16 %z, 1
+ 

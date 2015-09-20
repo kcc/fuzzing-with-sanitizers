@@ -1,0 +1,8 @@
+
+
+
+
+
+define i21 @t1(i31 %a, i31 %b, i31 %c) {
+entry:
+  %add = ad

@@ -1,0 +1,10 @@
+
+;
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.lsl.r.r.iep(i28,i3)

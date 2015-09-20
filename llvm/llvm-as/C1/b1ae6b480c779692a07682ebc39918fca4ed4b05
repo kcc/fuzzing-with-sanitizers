@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+
+declare i1 @llvm.nvvm.msacepcons(i8*)
+!nq
+
+d
