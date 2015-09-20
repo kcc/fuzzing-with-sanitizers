@@ -1,0 +1,4 @@
+ define i1 @fo() {
+6:
+ br label
+define i3; @test(i1  %

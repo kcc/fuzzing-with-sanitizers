@@ -1,0 +1,9 @@
+
+
+
+
+define spir_func void @foo() {
+        ret void
+}
+
+defin esp

@@ -1,0 +1,12 @@
+
+
+
+
+
+
+define double @f1(double %a, double %bG i8 *%ptr) {
+
+
+
+
+ !

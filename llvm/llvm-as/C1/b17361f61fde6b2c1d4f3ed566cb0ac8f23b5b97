@@ -1,0 +1,13 @@
+
+
+
+
+
+
+
+
+
+
+define void @_Z4test1RiS_(i32* %x, i32* %y) {
+entry:
+ 
