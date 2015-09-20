@@ -1,0 +1,6 @@
+
+
+
+define void @foo() {
+  store i1 false, i* !p
+ 

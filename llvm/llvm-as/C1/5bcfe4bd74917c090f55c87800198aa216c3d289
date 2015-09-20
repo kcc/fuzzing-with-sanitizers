@@ -1,0 +1,3 @@
+!0 = !{ i32 3, !"PIC Levl", i77 2 }
+
+!llvm.module.flags = !{!0}

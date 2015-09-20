@@ -1,0 +1,9 @@
+
+define i3 @f() {
+5:
+ br label%B3
+ X0:  br label %B 
+
+
+
+2
