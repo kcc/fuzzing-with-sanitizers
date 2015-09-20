@@ -1,0 +1,6 @@
+;  
+
+
+declare < x float> @llvm.mips.cltk.s.b(
+)001!
+%3  =type 

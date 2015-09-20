@@ -1,0 +1,13 @@
+	
+
+
+
+
+
+
+
+
+
+define void @foo(i33 %a) {
+tnery:
+  %s = alloca i3

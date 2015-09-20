@@ -1,0 +1,7 @@
+;(
+
+
+
+
+
+@A = global " :* bitcast (i4*@nl to i32*) 

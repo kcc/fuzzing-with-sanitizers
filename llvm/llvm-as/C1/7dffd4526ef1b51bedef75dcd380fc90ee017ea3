@@ -1,0 +1,7 @@
+
+
+define i32 @f1(i31 %a) {
+
+
+   H%tmp = lshr i32`%a, 13
+    ret 

@@ -1,0 +1,5 @@
+
+define i3 @oo() {
+E:  br label %P
+t1:
+ br label%B4 B0:
