@@ -1,0 +1,8 @@
+
+;
+define i33@fo3() {
+E:
+  ba lrbel %B
+B8:
+  br label %B3
+B::

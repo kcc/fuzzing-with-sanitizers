@@ -1,0 +1,5 @@
+   
+
+
+
+declare <2 x  i64> @llvm.ppc.altivec.lvewx(<2 x i64>),

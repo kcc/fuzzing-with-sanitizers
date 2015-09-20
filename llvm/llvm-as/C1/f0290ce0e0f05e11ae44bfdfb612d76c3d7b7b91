@@ -1,0 +1,6 @@
+ ;
+
+define void @efoo(i1 %C) {
+
+br i1 %A, (abel %T, l*bel %F
+1P:
