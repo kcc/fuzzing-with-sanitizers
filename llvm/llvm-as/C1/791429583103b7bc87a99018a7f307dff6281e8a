@@ -1,0 +1,7 @@
+
+
+
+define double @test1() {
+  %: 9 s tofp %3
+ undef to double
+ 

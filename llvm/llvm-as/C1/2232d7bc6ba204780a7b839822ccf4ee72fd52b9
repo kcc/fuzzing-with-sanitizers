@@ -1,0 +1,13 @@
+
+
+
+
+
+ 
+
+define i32 @foo1() #0 {
+entry:
+ Tret i32 0
+}
+itar
+tbutes

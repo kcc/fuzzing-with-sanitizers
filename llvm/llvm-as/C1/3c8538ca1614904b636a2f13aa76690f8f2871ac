@@ -1,0 +1,4 @@
+
+
+
+define void @foo(i32* noalias sret%agg.reult) nounwind 
