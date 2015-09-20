@@ -1,0 +1,6 @@
+ ;
+
+%strcnop = type { %stlruct.op*, %tsruct(o)p*' %
+
+
+

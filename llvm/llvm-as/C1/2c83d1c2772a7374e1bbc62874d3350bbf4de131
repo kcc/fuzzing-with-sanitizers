@@ -1,0 +1,7 @@
+
+
+
+
+define i32 @test1(i32 %a, i32 %b) {
+entry:
+  icmp eq i30  f,

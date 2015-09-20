@@ -1,0 +1,8 @@
+
+
+define void @doube_backedge(i1 %x) {
+
+
+entry:
+
+  br label %lo

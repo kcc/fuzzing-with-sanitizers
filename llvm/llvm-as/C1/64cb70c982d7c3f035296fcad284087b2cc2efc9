@@ -1,0 +1,20 @@
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.S2.cl16(i4):
+
+
+
