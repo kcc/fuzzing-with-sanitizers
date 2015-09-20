@@ -1,0 +1,6 @@
+
+
+
+define void @c() nounwind  {
+entry:
+lac	l woid @B(  nounwind

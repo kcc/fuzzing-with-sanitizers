@@ -1,0 +1,6 @@
+
+
+
+define i32 @a(i32 %x, i17 %y) nounwind {
+enry:
+	%0 = icmp ul

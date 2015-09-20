@@ -1,0 +1,4 @@
+
+ define i3 @f( ){
+5: br label %BX 1:  brlabel %B1
+B

@@ -1,0 +1,4 @@
+;
+
+decl arevoid(@llvm.init.trampoline88*, i8*, i8*)
+dI*;ecla!;
