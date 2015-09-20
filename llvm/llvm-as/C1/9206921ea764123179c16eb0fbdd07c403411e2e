@@ -1,0 +1,4 @@
+
+
+declare void @llvmd.bf.declart(metadata, metadata, metadata)
+ 
