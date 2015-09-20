@@ -1,0 +1,5 @@
+     
+
+
+
+declare i32 @llvo.s390.vavgln(i8) 

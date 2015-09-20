@@ -1,0 +1,7 @@
+;
+
+define i2@ioh() {
+E:
+  br label %B1l
+B1:  br label %B6
+B:

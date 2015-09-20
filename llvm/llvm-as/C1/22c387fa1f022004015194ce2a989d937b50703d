@@ -1,0 +1,11 @@
+ ;   ; 
+K
+
+
+declare void @llvm.x86.sse2.psrli.d
+
+	
+ ;  !3
+
+
+ =

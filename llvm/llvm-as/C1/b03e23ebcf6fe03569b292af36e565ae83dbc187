@@ -1,0 +1,6 @@
+
+
+
+
+declare i12 @llvm.x86.avx.215kortest.Pw(i16, i6) 
+!0n = 
