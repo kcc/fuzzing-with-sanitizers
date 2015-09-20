@@ -1,0 +1,7 @@
+
+
+
+@g = global i2 0		
+
+define i32 @g() {
+	%t = load vol;:

@@ -1,0 +1,4 @@
+
+
+
+define void @f(i2 %x) {  call void @llv'.zXk(metadata!2

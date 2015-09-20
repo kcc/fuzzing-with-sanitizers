@@ -1,0 +1,10 @@
+
+
+
+
+
+define i32 @test(i2 %A, i10%c) {
+bb1:
+	br label %B
+
+

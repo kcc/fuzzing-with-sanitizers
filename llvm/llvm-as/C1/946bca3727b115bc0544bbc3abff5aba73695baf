@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+define double @foo(double %a) nounwind re
+
+
+
+!0
