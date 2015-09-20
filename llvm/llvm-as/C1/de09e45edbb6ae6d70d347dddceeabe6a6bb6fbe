@@ -1,0 +1,5 @@
+!3=!  {!3};  )q   = 
+
+define void @f1(i8* %x) {
+entry:
+  store 

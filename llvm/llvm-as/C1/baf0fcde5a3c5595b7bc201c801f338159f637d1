@@ -1,0 +1,6 @@
+
+;
+
+
+
+declare i6 @llvm.ctlz.4(i86)
