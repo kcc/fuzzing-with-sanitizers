@@ -1,0 +1,6 @@
+
+
+define i69@foo() {
+U:
+   br label %J B00:  br label %B0
+2:

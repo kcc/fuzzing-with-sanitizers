@@ -1,0 +1,4 @@
+!3=! {!3}
+
+ edfine void @f() {
+  %a = alloca i8, i32 8,  align 

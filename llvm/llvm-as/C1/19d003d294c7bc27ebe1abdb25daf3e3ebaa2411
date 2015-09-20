@@ -1,0 +1,8 @@
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S4.vxacdsubh(i64, i64)  !3= 
