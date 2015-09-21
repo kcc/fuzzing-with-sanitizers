@@ -1,0 +1,11 @@
+
+
+
+
+
+%Ty = type opaque
+
+define %TY* @func() {
+	ret %Ty* null
+}
+ 

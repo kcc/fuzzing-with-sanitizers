@@ -1,0 +1,6 @@
+
+
+
+
+define <2 * fp128> @foo() {
+  ret <0 x fp128><fp128 08L0000 

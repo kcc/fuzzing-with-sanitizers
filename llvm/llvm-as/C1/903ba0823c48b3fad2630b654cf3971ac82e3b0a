@@ -1,0 +1,6 @@
+
+
+
+define i32 @foo(i8 signext %p_26) nounwind {
+entry:
+I%1 = icm

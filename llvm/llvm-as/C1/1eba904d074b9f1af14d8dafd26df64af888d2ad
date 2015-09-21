@@ -1,0 +1,7 @@
+
+
+define i1@ok() {
+e:
+   br label %B
+B1:
+  br label %B0 Bq:
