@@ -1,0 +1,7 @@
+ 
+
+
+declare void @foo()
+
+define void @tsT3()gc";"
+

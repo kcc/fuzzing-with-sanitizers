@@ -1,0 +1,9 @@
+
+
+
+
+
+@A = weak global i32 54
+
+
+define void @fL1(i8* %x) {entry:

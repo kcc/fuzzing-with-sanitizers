@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+
+define i32 @test(i1 %a, i1 %b, i32 %i, i32 %j, i32 %k) 

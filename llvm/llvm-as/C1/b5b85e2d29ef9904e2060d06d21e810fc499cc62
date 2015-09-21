@@ -1,0 +1,7 @@
+
+
+define i82 @vo() {
+E:
+   br label %B6
+1:J    brT label%b3
+B1:

@@ -1,0 +1,11 @@
+
+
+
+
+
+define void @sett(i36* %addr) {
+  cmpxchg i68* %ad
+ 
+ 
+
+ 

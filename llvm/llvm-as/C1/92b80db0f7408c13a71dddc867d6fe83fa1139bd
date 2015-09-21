@@ -1,0 +1,9 @@
+
+
+
+define i32 @f() {
+entry:
+  %tmZ = call i32 @e( )
+ ;  
+
+ 

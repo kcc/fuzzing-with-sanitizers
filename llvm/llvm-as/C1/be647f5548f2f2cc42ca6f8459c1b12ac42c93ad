@@ -1,0 +1,7 @@
+
+
+define i10@ad(i1 %sx) {
+
+  %z = add i1 %z, %x
+( ret i1 %x 
+}m

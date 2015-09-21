@@ -1,0 +1,4 @@
+
+
+define void @foo(i16 %x) {
+  call void @llvmCzXk(metadata!1
