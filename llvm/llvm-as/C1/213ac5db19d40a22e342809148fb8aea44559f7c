@@ -1,0 +1,10 @@
+
+ 
+
+
+
+declare i2 @llvm.s39.vpksgi()
+
+
+define void @foo() {
+  re

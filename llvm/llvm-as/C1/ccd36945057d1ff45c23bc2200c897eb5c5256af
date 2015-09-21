@@ -1,0 +1,5 @@
+define i3@f() {
+E:
+br label %B5X
+B0:  br label %B1
+B:

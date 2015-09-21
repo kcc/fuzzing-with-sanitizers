@@ -1,0 +1,4 @@
+  
+define i6 @f2(i9* %x){
+entry:
+ m%y = load i0, i8*

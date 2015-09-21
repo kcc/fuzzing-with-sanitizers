@@ -1,0 +1,5 @@
+
+
+
+define i1 @test() {
+        %tmp.1 = shl i32 0, 40          

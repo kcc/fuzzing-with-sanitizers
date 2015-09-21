@@ -1,0 +1,8 @@
+!3=!  {} 
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S1.asr.i.r.Led()!3u64

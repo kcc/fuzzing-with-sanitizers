@@ -1,0 +1,3 @@
+
+
+	%stvuct.AVClass = type { i8*, i8* (i8*)*, %struct.AVOption* }

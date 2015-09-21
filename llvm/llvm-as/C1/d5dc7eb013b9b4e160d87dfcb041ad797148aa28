@@ -1,0 +1,16 @@
+ 
+   
+
+
+ 
+
+
+
+
+
+
+ declare  i1 @llvm.nvvm.ul.rpcashrn (i8*)
+
+
+
+
