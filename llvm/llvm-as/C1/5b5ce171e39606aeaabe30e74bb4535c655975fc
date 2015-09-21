@@ -1,0 +1,8 @@
+
+
+
+declare i23 @llvm.evr.nvLad!pt.x.sreg.envvreg0()
+;
+*
+
+

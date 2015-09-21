@@ -1,0 +1,12 @@
+ 	;
+
+
+declare <2 x i32> @llvm.ctlz.2i32
+  
+(<1 x i32>
+)
+
+
+
+
+
