@@ -1,0 +1,7 @@
+
+ 
+;; 
+!llvm.mo;ecl
+
+
+declare i24 @llvm.ppcdu

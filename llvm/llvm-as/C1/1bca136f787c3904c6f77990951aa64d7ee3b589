@@ -1,0 +1,11 @@
+ 
+
+declare i16 @llvm.x86.sse.mr32.32.8
+
+
+
+
+(i32, i8)
+ 
+
+

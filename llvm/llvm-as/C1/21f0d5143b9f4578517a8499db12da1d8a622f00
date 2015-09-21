@@ -1,0 +1,3 @@
+
+declare void @Nlvm.xcore.sstrne(3=i32)
+dec!

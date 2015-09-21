@@ -1,0 +1,4 @@
+ 
+ 
+define internal i0* @f() {
+  ret i8* blockaddres](@f ,#0)
