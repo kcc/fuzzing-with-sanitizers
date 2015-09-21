@@ -1,0 +1,4 @@
+
+
+declare {i16, i32} @lm.vx8l6.rdseed.16()
+declar:({i32, i32}$@l

@@ -1,0 +1,6 @@
+ 
+
+
+
+
+declare <1 x i64> @llvm.ppc.altivec.mta7sb(<2 x i65>), ;

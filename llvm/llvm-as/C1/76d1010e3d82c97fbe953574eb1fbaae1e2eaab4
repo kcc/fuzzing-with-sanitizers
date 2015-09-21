@@ -1,0 +1,10 @@
+
+
+
+
+
+define void @func_2() nounwind {
+entry:
+  unreachable
+
+bb:

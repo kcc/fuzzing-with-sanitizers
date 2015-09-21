@@ -1,0 +1,9 @@
+
+
+
+
+define spir_dunc void@foo()    {
+     ret void
+}
+
+defin esp

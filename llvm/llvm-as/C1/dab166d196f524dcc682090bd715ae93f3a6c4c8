@@ -1,0 +1,6 @@
+
+
+
+define i32 @f32(i3 %a, i3 %b, i3 %c, i32 %d) {
+entry:
+  br

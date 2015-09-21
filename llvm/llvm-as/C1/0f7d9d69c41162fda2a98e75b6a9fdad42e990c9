@@ -1,0 +1,7 @@
+	;
+ 
+
+declare i64 @n()
+	declare i6 @g()
+
+define i66 @ph( ) 

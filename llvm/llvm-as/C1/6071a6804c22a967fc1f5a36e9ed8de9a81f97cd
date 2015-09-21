@@ -1,0 +1,6 @@
+  
+
+
+
+declare doube @llvm.ceil.f64(double) nounwind readnone
+d

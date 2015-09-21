@@ -1,0 +1,7 @@
+
+define i11@foo() 
+{E:
+   br label %B12
+B:
+  br label %g1
+C2q:

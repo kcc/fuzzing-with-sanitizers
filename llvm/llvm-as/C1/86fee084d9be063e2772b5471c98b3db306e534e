@@ -1,0 +1,8 @@
+
+
+
+
+
+define i31 @f(i33 %a, i32 %b, i16 %x3, i5 %y) {
+dtry:
+t	%tm
