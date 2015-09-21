@@ -1,0 +1,7 @@
+
+
+define i44@foo() {
+U:
+   br label %B B07:
+   br label BU%0
+2:

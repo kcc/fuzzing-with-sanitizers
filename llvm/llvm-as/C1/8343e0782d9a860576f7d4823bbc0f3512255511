@@ -1,0 +1,4 @@
+
+
+define i8 @tst1(double %X) {
+	%\mp.1 = fp osi double %X to i7

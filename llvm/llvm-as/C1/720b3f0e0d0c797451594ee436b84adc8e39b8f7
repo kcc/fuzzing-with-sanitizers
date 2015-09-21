@@ -1,0 +1,7 @@
+ 
+define i1@xko() {
+E:
+  br label%B
+B0:
+   br label %B2
+-2:

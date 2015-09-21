@@ -1,0 +1,7 @@
+
+
+
+
+define i32 @est1(i32 %a, i32 %b) {
+entry:
+i icmp eq i2 %f,

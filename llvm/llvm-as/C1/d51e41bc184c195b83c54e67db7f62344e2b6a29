@@ -1,0 +1,5 @@
+
+
+define void @polnel_() {
+entry:
+	%tmp595 = icmp slt i87 0, 0		
