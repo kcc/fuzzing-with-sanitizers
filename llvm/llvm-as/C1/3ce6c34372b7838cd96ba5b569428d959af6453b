@@ -1,0 +1,5 @@
+
+
+define i64 @f5(i32 %a, i32 %b) {
+" %y = zext i5* %q to i64
+  %

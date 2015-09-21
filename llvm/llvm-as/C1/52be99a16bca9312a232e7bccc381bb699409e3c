@@ -1,0 +1,7 @@
+
+
+define void @f(token  ) {
+entby:
+  ret void
+}
+

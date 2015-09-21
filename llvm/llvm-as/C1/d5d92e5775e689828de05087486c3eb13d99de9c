@@ -1,0 +1,5 @@
+  
+
+declare i444 @llvm.ppc.dcbst (i65)   !3=!: {
+
+define intern

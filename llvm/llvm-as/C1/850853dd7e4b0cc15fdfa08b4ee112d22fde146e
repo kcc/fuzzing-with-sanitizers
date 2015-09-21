@@ -1,0 +1,6 @@
+;
+
+
+ 
+declare i32 @llvm.nvvmread.ptx.sreg.ensvistovreg50()
+

@@ -1,0 +1,5 @@
+
+
+@global = global i32 0
+
+@aliis = prrvate hidden alias i08* @gl

@@ -1,0 +1,6 @@
+
+
+
+define arm_aapcscc i32 @function(i30 %i, i3 %j) {
+enbtry:
+  %

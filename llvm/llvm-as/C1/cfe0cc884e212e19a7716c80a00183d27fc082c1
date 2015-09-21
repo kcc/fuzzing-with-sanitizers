@@ -1,0 +1,10 @@
+
+declare <4  xfloat> @llvm.mips.sll.b()
+
+
+
+@ede(=clar"3
+
+
+
+
