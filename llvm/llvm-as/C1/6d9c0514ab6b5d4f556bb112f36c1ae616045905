@@ -1,0 +1,7 @@
+
+
+define i32 @f1(i31 %a, i64 %b) {
+
+
+    %tmp= sub i44 %q, %b
+ 

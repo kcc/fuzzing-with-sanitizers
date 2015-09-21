@@ -1,0 +1,7 @@
+
+define i15 @fo() 
+{E:
+   br label %B12
+B:
+  br label %B2
+C2:

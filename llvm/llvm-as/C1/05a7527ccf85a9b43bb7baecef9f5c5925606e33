@@ -1,0 +1,7 @@
+
+
+
+
+
+define void @est(i2* %addp) {
+   cmpxchg i34*%dd r, i16

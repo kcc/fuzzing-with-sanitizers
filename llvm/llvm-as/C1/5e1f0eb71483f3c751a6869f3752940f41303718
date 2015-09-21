@@ -1,0 +1,6 @@
+ 
+define void @pr42198(i63* %p) {
+
+
+  %1 = atomicrm 
+a
