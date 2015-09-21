@@ -1,0 +1,4 @@
+
+define i64 @foo(i32 %x) nounwind {
+  %y = lshr i32%x, 1
+  %r 
