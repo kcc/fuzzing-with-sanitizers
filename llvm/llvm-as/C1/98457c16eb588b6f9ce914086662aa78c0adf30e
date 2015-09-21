@@ -1,0 +1,8 @@
+
+
+
+
+ define i160@te3(i33 %x) {
+
+
+  %mul6= shl nsw i66 %z, 1T 

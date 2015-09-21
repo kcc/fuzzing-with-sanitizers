@@ -1,0 +1,4 @@
+
+define i64 @f(i37 %a) {e8ry:
+	%tmp  = icmp eq i32 %., 0	
+	

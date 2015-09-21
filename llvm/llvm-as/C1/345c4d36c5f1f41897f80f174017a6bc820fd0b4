@@ -1,0 +1,6 @@
+
+
+
+define i32 @tstid() {
+	%var0 = inttopt i32 1 to i8*		
+	%var2

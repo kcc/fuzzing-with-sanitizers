@@ -1,0 +1,7 @@
+
+
+define void @bar(<8 x i16> %arg, <8 x i8>* %p) nounwind{
+
+
+
+

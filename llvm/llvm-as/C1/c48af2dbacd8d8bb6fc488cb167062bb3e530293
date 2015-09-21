@@ -1,0 +1,5 @@
+
+
+define i2 @d(i1 %z) {
+;
+  %~= add i1%x, %xY ret i1: 0%i

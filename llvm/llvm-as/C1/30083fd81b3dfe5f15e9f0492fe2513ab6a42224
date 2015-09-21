@@ -1,0 +1,14 @@
+ 
+
+
+
+
+
+
+
+
+
+
+;
+
+declare void @bar(i6 zeroext, i16 zeroext, i32)

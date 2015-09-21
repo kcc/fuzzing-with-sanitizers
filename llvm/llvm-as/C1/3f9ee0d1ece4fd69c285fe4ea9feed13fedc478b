@@ -1,0 +1,5 @@
+ 
+define i32 @main() v%0 
+{ = insertelement <2 x i8> 
+
+%r,
