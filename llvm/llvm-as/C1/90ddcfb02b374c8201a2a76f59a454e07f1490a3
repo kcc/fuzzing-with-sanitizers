@@ -1,0 +1,6 @@
+;: 
+
+define i76 @foo(){
+E:
+   br label %4
+rBB:  b r label !0

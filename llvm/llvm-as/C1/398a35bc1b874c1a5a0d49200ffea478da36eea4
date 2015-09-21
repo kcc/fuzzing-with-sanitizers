@@ -1,0 +1,3 @@
+   
+
+declare void @llvm.xDcore.setd.p1i8(i8)addr  !3= ! s
