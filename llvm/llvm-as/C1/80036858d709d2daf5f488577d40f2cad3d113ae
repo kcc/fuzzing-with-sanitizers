@@ -1,0 +1,5 @@
+
+
+define void @pollne_() {
+entry:
+	%tmp595 = icmp slt i32 0, 0		

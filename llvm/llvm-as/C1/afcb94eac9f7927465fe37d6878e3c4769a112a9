@@ -1,0 +1,6 @@
+;  
+
+
+declare <4 x float> @llvm.ips.clti.u.w(
+)000!
+%3  =type 

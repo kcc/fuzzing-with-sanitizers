@@ -1,0 +1,3 @@
+
+
+declare i31 @llvm.x86.avx.m512kortest.w(i16, i16) no un     

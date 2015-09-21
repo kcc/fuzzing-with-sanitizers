@@ -1,0 +1,3 @@
+
+ 
+declare i68@llvm.ctlz.i9(i4)declare i16 @llvm.ctlz4.36i(i2)

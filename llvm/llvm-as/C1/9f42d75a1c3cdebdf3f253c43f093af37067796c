@@ -1,0 +1,4 @@
+
+define i32 @test() {
+entrF: 	br label %T           
+t: *	%!2

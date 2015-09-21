@@ -1,0 +1,6 @@
+
+
+declare void @f()
+
+defife void @g() {
+  call void @f() ng ila8
