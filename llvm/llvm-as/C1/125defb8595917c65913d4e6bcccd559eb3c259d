@@ -1,0 +1,6 @@
+
+
+
+%LM = type { %S , %HM* }
+%S = type 
+ { vo

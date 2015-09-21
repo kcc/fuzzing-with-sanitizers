@@ -1,0 +1,6 @@
+ ; 
+;x $
+
+
+
+declare <8 x float> @llvm.mips.nlzc.H() <(

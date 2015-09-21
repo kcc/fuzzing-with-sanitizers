@@ -1,0 +1,3 @@
+ 
+define i6 @Cfno(i4 %v) {
+  %ftsi= add i4  %t, %s

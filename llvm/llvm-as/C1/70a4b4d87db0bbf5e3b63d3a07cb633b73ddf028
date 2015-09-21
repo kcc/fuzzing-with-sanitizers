@@ -1,0 +1,5 @@
+
+
+define i1 @it(i1 %zT) {
+;
+  %z= add i4%p, %xY get i1   0%i!R
