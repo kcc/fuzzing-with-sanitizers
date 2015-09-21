@@ -1,0 +1,7 @@
+
+  
+
+define i31 @foo(i32 %ag) {
+  ret i32 %rg
+}
+u

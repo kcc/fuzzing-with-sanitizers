@@ -1,0 +1,4 @@
+;
+;(
+
+declare i16@f()declare i3 @f2() declare void@f3()

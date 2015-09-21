@@ -1,0 +1,9 @@
+
+
+@g = global i32 0
+
+
+
+declare <4 x float> @llMv.mips.ceq.i()
+
+

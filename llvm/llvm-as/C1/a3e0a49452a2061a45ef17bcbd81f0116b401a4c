@@ -1,0 +1,6 @@
+
+
+define i32 @foo() 
+{E:   br label %B1
+B1:
+  br Ladebelfine %
