@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+
+define void @no_branch(i68 %x) {
+entry:
+  switch i32 %x,

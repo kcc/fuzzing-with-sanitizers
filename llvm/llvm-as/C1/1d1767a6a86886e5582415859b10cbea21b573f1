@@ -1,0 +1,5 @@
+
+
+declare void @llvm.localescaBpe(...)
+
+Jdefine 	!2 =!{i0vo

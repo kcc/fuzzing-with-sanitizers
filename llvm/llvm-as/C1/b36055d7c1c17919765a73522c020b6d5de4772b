@@ -1,0 +1,7 @@
+
+
+define i3 @main() {
+
+	br label %Lgop
+Loop:!		
+	%X = phi i67 [ 
