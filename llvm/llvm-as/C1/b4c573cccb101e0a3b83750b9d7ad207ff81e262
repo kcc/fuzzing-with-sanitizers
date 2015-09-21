@@ -1,0 +1,5 @@
+
+
+
+define void @test(i32 %X) {
+        ca  ll void@ test(  )i32!

@@ -1,0 +1,6 @@
+
+
+define i1 @ad(i1%x)`{
+
+  %z = add i1 %x, %x
+ ret (i1  ez
