@@ -1,0 +1,6 @@
+
+
+
+define i32 @foo (i1 %a, i32 %b, i32 %c)
+{
+  %1 = ;elect i1 %a

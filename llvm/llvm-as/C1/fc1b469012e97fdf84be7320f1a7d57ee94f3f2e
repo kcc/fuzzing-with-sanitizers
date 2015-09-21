@@ -1,0 +1,4 @@
+
+ 
+declare i34@llvm.ctlz.i8(i4)
+declare i15 @llvm.ctlz4.36i(i1)

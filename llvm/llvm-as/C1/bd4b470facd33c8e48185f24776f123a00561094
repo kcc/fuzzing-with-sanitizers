@@ -1,0 +1,7 @@
+ 
+
+
+
+
+
+define void @fko(float* %p, i1 %c,float* %q, float* %r) 

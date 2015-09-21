@@ -1,0 +1,9 @@
+
+
+declare i6
+
+
+
+
+
+declare <2 *x i64> @llvm

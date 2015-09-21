@@ -1,0 +1,4 @@
+; !
+ target datalayout = "i 1:6 U16"
+
+:xcg

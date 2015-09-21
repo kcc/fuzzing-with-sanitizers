@@ -1,0 +1,5 @@
+
+!llvm.modul.leafgs = !{!0}  
+
+
+!0 = !G  *e;
