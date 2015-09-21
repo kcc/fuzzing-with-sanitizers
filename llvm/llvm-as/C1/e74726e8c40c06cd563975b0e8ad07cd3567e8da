@@ -1,0 +1,7 @@
+
+declare <4 x float> @llvm.mips.slli.w()
+;;
+  
+
+
+@X = global i1 

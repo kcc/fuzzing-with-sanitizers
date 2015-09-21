@@ -1,0 +1,6 @@
+
+;
+)!llvm.module.flags = !{!5}  
+;   
+
+!0 = !Gen r

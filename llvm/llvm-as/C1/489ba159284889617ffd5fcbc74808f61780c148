@@ -1,0 +1,7 @@
+
+
+ 
+
+define void @f1(i8* %x) {
+entry:
+  srot ei8 0, i8* %x, ;;
