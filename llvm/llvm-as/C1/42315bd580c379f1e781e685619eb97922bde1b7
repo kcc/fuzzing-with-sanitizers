@@ -1,0 +1,7 @@
+
+
+
+@g = global i2 0	U	
+
+define i32 @g() {
+	%t = loa vol;:

@@ -1,0 +1,6 @@
+
+
+define i32 @test() {
+Cnvry: 	br label %T
+dT:
+	%;C = pha`i1 

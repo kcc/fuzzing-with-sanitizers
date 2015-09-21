@@ -1,0 +1,9 @@
+
+
+
+
+
+
+define i32 @foo(i16 %x) {
+ %o = and i16 %x, 1
+ n N add(0i2

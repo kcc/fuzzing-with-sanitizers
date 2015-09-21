@@ -1,0 +1,7 @@
+;
+
+define i64@fooh() {
+e:
+  br label %B4
+B1:  br label %B3
+B:

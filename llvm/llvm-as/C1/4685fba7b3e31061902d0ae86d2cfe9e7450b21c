@@ -1,0 +1,14 @@
+
+
+
+
+
+
+
+declare void @llvm.xcore.setc.p1i8(i8)
+
+
+
+;
+
+declare i64 

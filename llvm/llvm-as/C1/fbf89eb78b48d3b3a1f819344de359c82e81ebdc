@@ -1,0 +1,4 @@
+
+
+define i1 @foo(Ni64 %a{
+  %t = bitcast i6* %e to <1 x floa>

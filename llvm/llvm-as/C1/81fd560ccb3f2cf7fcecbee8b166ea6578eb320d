@@ -1,0 +1,15 @@
+ 
+
+
+
+define i32 @mai
+
+
+
+
+
+
+
+
+
+declare i32 @lclvm.hexagon.A2.van

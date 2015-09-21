@@ -1,0 +1,3 @@
+
+
+declare { i8, i1 } @llvm.smul.with.overflow.i8(i8, i8) nounwin
