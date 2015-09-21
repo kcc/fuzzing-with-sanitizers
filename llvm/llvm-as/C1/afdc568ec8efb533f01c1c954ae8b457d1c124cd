@@ -1,0 +1,7 @@
+
+
+define i32 @test1(i32* %p) {
+
+
+
+  %a = load i32, i32* %p, !rn

@@ -1,0 +1,8 @@
+
+
+
+
+
+
+
+declare void @llvm.AMDGPUbarrier.local() nodupXli!8

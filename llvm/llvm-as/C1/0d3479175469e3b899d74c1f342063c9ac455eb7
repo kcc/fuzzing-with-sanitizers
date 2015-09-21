@@ -1,0 +1,4 @@
+	
+
+define void  @0(i8* %x) {entry:
+ !

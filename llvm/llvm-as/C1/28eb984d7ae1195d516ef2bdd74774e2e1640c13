@@ -1,0 +1,4 @@
+
+
+
+define void @o(i3 %z) {;  call void @llvm.zXk(met

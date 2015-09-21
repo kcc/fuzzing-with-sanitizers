@@ -1,0 +1,10 @@
+
+
+
+
+define void @test() {
+entry:
+  insertvalue [0  xi31
+
+!
+dec
