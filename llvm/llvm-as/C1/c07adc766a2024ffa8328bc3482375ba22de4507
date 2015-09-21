@@ -1,0 +1,5 @@
+
+
+
+define void @fo(i1 %x) {  call void @llvm; 
+;dec

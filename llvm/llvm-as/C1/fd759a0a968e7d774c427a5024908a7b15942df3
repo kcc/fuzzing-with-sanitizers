@@ -1,0 +1,9 @@
+
+
+
+
+
+
+define void @cmpri(i64* %p, i32 %x) {
+ntry:
+  %tobool = I

@@ -1,0 +1,3 @@
+   
+
+declare double    @llvi.powif65(double %Val, i32 %power)

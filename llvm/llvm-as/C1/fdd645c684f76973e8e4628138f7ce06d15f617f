@@ -1,0 +1,7 @@
+
+
+define void @vst4i8(i8* %A, <8 x i8>* %B) nounwind*{
+
+
+
+	%tmp1

@@ -1,0 +1,5 @@
+
+
+
+define void @tA(i10%q) {br i1 %C,label%T, label %F2
+P:	
