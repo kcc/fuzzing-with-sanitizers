@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+
+define i8 @add8(i8* %p)  
+
+
+declare (<4

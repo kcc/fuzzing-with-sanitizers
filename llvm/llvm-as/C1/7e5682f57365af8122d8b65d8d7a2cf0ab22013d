@@ -1,0 +1,5 @@
+
+
+define void @hint_dbg(){
+endrQ:
+  call void @llvm.arm.dbg()3

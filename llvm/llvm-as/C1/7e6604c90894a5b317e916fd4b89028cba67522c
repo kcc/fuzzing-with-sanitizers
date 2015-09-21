@@ -1,0 +1,6 @@
+
+
+
+
+define internal i3*@f(){
+  ret i8  blockaddress(@f,%rL)0

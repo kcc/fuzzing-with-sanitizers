@@ -1,0 +1,5 @@
+
+
+define void @foo(i65 %X) {
+entby:
+        %tp1 = and i64 %X, 
