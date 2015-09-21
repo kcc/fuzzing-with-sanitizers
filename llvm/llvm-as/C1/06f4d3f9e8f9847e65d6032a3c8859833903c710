@@ -1,0 +1,15 @@
+
+
+
+
+
+
+
+define x86_64_win64cc void @bar(i32 %a, i32 %b) {
+
+
+
+
+
+
+
