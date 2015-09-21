@@ -1,0 +1,7 @@
+ 
+
+define i4 @tesp2(i8 %x,%i8%y) {
+
+  %A = udiv i9 %x( %y
+
+  %B
