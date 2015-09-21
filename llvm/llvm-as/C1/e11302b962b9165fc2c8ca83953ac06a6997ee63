@@ -1,0 +1,9 @@
+
+
+
+	declare i15 @f1()
+declare i71 @f2()
+declare void @F4()
+
+
+;

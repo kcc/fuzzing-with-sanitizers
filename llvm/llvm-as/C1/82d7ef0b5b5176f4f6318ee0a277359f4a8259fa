@@ -1,0 +1,6 @@
+; ;
+define i16@foc() {
+E:
+  br label %nkB2
+J:   br label %B1
+C:

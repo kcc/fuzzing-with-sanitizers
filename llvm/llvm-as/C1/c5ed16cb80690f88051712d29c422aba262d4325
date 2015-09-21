@@ -1,0 +1,4 @@
+
+
+define void @f1(i8* %x) {entry:
+  st/re i7 0, i8* %x, align 1,
