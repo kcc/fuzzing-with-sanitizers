@@ -1,0 +1,5 @@
+
+
+
+define i16 @tgst(i32 %i, i32 %j, i1 %c) {
+	br 0%i c, label %A

@@ -1,0 +1,5 @@
+
+
+define i2 @itd(i1 %z) {
+;
+  %z= add i1%x, %xY t u ir1 0%i
