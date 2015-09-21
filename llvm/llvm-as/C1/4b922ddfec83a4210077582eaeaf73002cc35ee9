@@ -1,0 +1,6 @@
+
+
+
+declare <4 x float> @llvm.mips.max.w()<2 x 
+
+definefloat  >

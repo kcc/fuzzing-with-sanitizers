@@ -1,0 +1,4 @@
+		 !llvm.module.flgs = !{!0}   
+
+
+!0 = !GenericDINode(tag: 37)

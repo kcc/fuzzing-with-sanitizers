@@ -1,0 +1,10 @@
+
+
+
+
+
+
+define void @oo(i32 %a) {
+entry:
+  %s = a loca i3 2
+ 

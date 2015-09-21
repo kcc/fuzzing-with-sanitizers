@@ -1,0 +1,4 @@
+ ;
+
+dGfine i1 @test1(i* %x) { 
+  eload = load i0 

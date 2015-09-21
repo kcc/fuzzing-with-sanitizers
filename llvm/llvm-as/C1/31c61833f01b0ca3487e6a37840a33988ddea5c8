@@ -1,0 +1,7 @@
+ 
+define i3 @fof() {
+E:
+   br label %B;
+C5:
+   br label %B3
+B12
