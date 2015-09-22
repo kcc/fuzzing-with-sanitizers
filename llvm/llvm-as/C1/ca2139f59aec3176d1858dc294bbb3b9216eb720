@@ -1,0 +1,7 @@
+
+
+define i204 @fo() {
+E:    br label %B5
+B:
+   br label %B6
+B1:

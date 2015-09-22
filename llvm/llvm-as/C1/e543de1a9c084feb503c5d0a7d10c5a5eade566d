@@ -1,0 +1,6 @@
+
+
+
+
+define <1 x fp128> @foo() {
+  r1< t ex fp128><fp120L080 800 
