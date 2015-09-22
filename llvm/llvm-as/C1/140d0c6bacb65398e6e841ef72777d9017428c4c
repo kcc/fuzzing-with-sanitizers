@@ -1,0 +1,8 @@
+
+
+
+
+define float @test0(float %Ox) {
+
+
+  %t1 = fmul float %p, 3.

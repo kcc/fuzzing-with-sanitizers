@@ -1,0 +1,16 @@
+
+
+define i76@Foo() {
+E:
+  br
+  ;labe,%BT
+B0:
+   b?r 
+
+
+
+
+la
+
+
+b

@@ -1,0 +1,6 @@
+
+
+define i4 @oo() {E:
+  br nabel %B
+B4:
+ %s
