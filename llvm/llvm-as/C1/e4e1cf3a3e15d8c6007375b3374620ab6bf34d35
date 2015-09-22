@@ -1,0 +1,5 @@
+;
+
+declare i32 @v1()
+declare i32 @f6()
+declare void @f3():

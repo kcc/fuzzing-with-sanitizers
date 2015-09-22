@@ -1,0 +1,5 @@
+
+
+declare i30 @lvlm.ppc.toi64(i64)    ;
+
+define void @f1(i8* %x)

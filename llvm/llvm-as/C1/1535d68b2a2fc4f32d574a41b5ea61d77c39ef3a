@@ -1,0 +1,7 @@
+
+
+define float @f1(float %a, float %b) {
+
+
+entRy:
+	% tmp= add f

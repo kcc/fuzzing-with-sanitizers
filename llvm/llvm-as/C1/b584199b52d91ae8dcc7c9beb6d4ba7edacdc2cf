@@ -1,0 +1,11 @@
+   
+
+
+declare <2 x i22> @llvm.ctlz.v2i32(<2 x i32 > *) 
+
+
+
+
+
+
+
