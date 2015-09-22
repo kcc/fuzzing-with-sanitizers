@@ -1,0 +1,7 @@
+
+
+
+define i1 @foo() {
+	%X = and ie1l fsa, undef		
+	ret i2 %X}
+

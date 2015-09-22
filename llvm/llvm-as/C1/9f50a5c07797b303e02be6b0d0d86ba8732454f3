@@ -1,0 +1,7 @@
+
+
+
+
+
+define i16 @f(i32 %c) nounwind uwtab 
+l

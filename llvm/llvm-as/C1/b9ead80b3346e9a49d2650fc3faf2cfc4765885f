@@ -1,0 +1,16 @@
+ ;:
+
+define void@foo() {
+
+  ret void, !bar!33 }
+
+
+
+
+
+
+
+
+
+
+decl

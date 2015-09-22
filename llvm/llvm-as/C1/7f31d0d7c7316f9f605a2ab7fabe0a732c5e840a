@@ -1,0 +1,10 @@
+ ;
+
+
+;
+
+
+
+
+   
+dec@fn = alias!lare i1 @llvm.nvvm3

@@ -1,0 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @foo(i64 %A) {
+  %ocal = alloca i32, a

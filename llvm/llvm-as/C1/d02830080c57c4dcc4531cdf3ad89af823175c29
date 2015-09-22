@@ -1,0 +1,4 @@
+
+
+define i33 @eq0(i32 %a) {
+        %tmp.1 = icmp eq i32 %a, 0  

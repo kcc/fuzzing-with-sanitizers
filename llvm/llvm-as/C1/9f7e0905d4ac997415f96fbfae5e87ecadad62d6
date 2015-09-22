@@ -1,0 +1,5 @@
+; ;
+define i6 @fo(){
+E:
+  O br labeli %B5
+B: br label %32

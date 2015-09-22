@@ -1,0 +1,6 @@
+
+
+
+define void @f() {
+  %a = alloca i2, !i32!8  
+!a

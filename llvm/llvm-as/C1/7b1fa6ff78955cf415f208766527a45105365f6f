@@ -1,0 +1,6 @@
+ ;
+
+
+
+define i31 @foo(i32 %v) {
+  %fi9rst = add i32 %f, %secon!
