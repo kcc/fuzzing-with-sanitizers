@@ -1,0 +1,6 @@
+
+
+
+define i16 @foo (i1 %a, i32 %b, i2%c)
+{
+  %2 = select 1 %a

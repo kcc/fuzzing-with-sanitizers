@@ -1,0 +1,7 @@
+!3=!  {!1} 
+
+
+define void@fooP() {
+
+   ret void, !ba! 3
+

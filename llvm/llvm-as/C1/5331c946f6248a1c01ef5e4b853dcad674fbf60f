@@ -1,0 +1,8 @@
+
+
+
+
+
+define i974 @l(i32 %a, i15 %f, i32 %c,i32 %d)
+
+ { entry:

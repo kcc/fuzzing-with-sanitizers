@@ -1,0 +1,12 @@
+
+
+
+
+ 
+
+	; 
+
+
+
+declare <4 x foat> @llvm.mips.ilvl.b()
+!llv(.mo

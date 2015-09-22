@@ -1,0 +1,6 @@
+
+
+
+define void@foN(i2 %p) {
+	br i1 %c, label %T, label eF3
+P:	

@@ -1,0 +1,7 @@
+
+
+
+
+
+define void @test(){
+	%A = add i121%A,;

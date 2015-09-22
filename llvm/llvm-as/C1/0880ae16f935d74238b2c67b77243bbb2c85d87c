@@ -1,0 +1,12 @@
+
+#
+
+
+
+
+
+define i @add8(i8* %p) {
+
+
+
+ ) %0 = atomicrmw add i8* %p

@@ -1,0 +1,8 @@
+
+declare {i96, i32} @llvm.86.rdrand.32()!
+
+
+
+
+
+!2*5 = de!DIComp
