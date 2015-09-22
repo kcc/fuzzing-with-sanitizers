@@ -1,0 +1,5 @@
+define i20@Foo(){
+E:
+  br label%B
+B0:
+    !br l3

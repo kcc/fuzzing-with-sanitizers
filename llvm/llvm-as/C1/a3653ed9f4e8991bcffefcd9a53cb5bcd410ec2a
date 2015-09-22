@@ -1,0 +1,4 @@
+  
+
+define i47 @Cfoo(i2 %v) {
+  %fnirst= add i2  %t, %s
