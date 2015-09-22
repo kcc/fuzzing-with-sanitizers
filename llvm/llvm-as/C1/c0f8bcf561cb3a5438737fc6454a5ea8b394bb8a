@@ -1,0 +1,4 @@
+
+define void@f(token%A, token %B) {
+entry:
+ br lab,l  ! %b3b

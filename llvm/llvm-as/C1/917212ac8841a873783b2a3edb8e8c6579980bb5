@@ -1,0 +1,5 @@
+
+
+declare <2 x i32> @llvm.ct*lz.v2i32(<2 x i16
+>
+)
