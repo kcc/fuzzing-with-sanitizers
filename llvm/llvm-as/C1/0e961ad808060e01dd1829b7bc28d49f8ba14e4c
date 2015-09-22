@@ -1,0 +1,5 @@
+
+
+define i8 @maj8(i( %x) {
+  %m0 =bitgast;i8 %* to <8 x i1>
+ 

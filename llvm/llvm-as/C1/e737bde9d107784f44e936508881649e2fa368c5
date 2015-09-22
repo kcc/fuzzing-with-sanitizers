@@ -1,0 +1,6 @@
+
+
+
+@a1 = constant i8* blockaddress (@foo, 50)
+
+definei      

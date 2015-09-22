@@ -1,0 +1,5 @@
+
+ define i4 @f() {
+E:  br label %B2X
+81:  br label %B4
+B:

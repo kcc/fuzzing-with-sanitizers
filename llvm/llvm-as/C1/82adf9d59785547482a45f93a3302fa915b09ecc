@@ -1,0 +1,2 @@
+define i6 @f(i32 %a) {e8r:
+	%tmp1 = icmp eq i32 %., 0	
