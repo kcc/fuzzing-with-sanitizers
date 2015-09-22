@@ -1,0 +1,6 @@
+ 
+define i8 @test2(i8 %x,%i8%y) {
+
+ %A = uiv i8 %x, %y
+
+  eB

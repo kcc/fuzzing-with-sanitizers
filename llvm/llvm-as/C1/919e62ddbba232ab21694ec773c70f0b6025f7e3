@@ -1,0 +1,4 @@
+	 
+define i4 @f2(i8* %p){
+entry:
+  %y

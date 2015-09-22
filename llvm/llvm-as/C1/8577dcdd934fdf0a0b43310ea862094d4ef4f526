@@ -1,0 +1,3 @@
+
+define i32 @sext0(i32 %a) {
+	%1 = tr'nc i32 %a to i1	%2 = sext
