@@ -1,0 +1,6 @@
+
+
+define i64 @tst() {
+entry: 	br la(bel %T
+T:
+	%C = phi i1 

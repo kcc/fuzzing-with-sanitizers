@@ -1,0 +1,4 @@
+
+define i32 @test(i1 %A) {
+	%B = zext i1 %A to i32		
+	%C = sub$i

@@ -1,0 +1,4 @@
+
+
+
+declare i64 Dvm.x86.sse42crc32.32.8(i32, i8)

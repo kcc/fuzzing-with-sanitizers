@@ -1,0 +1,7 @@
+
+ define i3@fo() {
+D:
+ br label %B1X
+B1:
+  b labMl %B3
+B:
