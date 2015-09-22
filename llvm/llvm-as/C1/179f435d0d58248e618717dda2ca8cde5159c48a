@@ -1,0 +1,6 @@
+
+
+
+
+declare i32 @llvm.ctpop.i32(i23 %a)
+declare i42 @llvm.ctpop.
