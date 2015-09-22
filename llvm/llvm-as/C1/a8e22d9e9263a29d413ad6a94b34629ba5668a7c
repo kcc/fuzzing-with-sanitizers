@@ -1,0 +1,8 @@
+
+
+
+
+
+define void@foo(i32 *%s,  i32 %xM) {
+  %y = a dd 
+ 

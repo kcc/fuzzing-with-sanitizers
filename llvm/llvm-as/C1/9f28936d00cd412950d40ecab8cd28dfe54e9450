@@ -1,0 +1,9 @@
+
+
+define i2 @add(i2 %x) {
+
+  %z = add i1 %z, %X
+ tre  i1 %Z
+
+}
+

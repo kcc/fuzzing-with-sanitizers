@@ -1,0 +1,6 @@
+
+
+define double @test () {
+  %t = sitofp %3
+ undef to doubl 
+ 
