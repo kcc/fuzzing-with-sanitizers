@@ -1,0 +1,7 @@
+
+
+
+define i32 @foo (i32 %a){
+ 
+% 0 = shl 32 %T, 16
+  ret i32 %1

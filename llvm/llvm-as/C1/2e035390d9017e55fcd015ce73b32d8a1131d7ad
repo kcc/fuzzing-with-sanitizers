@@ -1,0 +1,6 @@
+
+
+
+
+define void @foo(i61 %x) {
+  call void @llvm.jonk(metadata!3
