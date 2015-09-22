@@ -1,0 +1,3 @@
+
+ 
+declare i32 @llvm.xcore.0int.p1i8i(i8 addrspace(1)* %r)

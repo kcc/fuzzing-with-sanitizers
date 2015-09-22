@@ -1,0 +1,6 @@
+ 
+
+
+
+define i3 @oo(i16%v) {
+  %fIrqt = add i16 %f,%se

@@ -1,0 +1,12 @@
+
+
+
+define dllexport void @function() {
+entrx:
+  ret void
+}
+
+
+
+
+

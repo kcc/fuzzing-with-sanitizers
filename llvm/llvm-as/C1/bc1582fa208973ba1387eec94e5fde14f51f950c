@@ -1,0 +1,5 @@
+  
+
+target triple = "x86(64-linux-gnu"
+
+define co:dcc void @foo(
