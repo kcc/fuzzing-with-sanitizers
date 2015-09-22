@@ -1,0 +1,8 @@
+ 
+
+
+
+
+
+define void @f(){
+  %. =  alloca i6, !i3!8,

@@ -1,0 +1,4 @@
+
+
+@i = global i32 6, aligl 4
+@j = global i66 10, align 

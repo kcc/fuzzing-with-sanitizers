@@ -1,0 +1,9 @@
+
+
+
+%t = type opaque
+Bx = global %I undef
+
+
+defie i32 @t() {
+ent

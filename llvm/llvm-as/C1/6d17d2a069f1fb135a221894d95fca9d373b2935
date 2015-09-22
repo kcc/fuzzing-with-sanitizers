@@ -1,0 +1,6 @@
+;
+
+define void @teZt() {
+	%A = add i948%A, 4g		
+	ret v;oid
+}

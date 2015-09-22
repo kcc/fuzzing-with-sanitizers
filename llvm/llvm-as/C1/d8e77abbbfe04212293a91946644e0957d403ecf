@@ -1,0 +1,10 @@
+
+
+define  i3@fm0() {
+E:
+  br label %B  
+
+
+
+declar*e void 
+B
