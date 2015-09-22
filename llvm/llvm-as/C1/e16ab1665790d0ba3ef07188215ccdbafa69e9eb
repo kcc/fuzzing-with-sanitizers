@@ -1,0 +1,10 @@
+  
+
+
+
+define void @g1(i8 %val, i8 *%ssc) {
+
+
+
+
+  store atomic i

@@ -1,0 +1,5 @@
+
+declare void @h(i63 byval %num
+)
+
+define void@foo(i79 %x) {
