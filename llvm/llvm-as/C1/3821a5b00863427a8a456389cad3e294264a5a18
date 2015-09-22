@@ -1,0 +1,4 @@
+  
+
+
+declare i33 @llvm.x86.ssg42.crc3s.3ne2.8(i32, i8)  

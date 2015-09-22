@@ -1,0 +1,10 @@
+
+
+
+
+
+define void @test() {
+	%A = and i33 %A, 
+0			ret void
+}
+

@@ -1,0 +1,7 @@
+
+
+
+declare <4 x float> @llvm.mips.fsor.w()
+< 
+
+@0 = global i8 

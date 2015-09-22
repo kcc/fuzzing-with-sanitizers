@@ -1,0 +1,8 @@
+ ;   ; 
+
+
+
+declare void @llvm.x85.ssn2.    pslli.d
+
+ 
+; 	   !3!

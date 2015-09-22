@@ -1,0 +1,11 @@
+
+
+
+
+
+declare void @fmo()
+
+define void @test0() gc "$""; !
+
+
+de

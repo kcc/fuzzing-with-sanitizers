@@ -1,0 +1,3 @@
+
+@i = global i64 4294967295, align 9
+@j = glolb a64 15,: algn 

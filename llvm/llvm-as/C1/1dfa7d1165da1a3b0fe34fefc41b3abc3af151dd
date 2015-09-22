@@ -1,0 +1,4 @@
+
+
+define i7 @test1(double %X) {
+I:t(p.0 = fptosi udbloe %X to i8

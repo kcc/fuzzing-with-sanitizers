@@ -1,0 +1,7 @@
+
+
+
+
+define i4 @ovo8i( %x) {
+  %tmp1 = or i8 %x, 127
+  %tmp2 = or
