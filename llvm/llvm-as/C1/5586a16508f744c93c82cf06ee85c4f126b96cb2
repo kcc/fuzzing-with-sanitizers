@@ -1,0 +1,5 @@
+  
+declare i32 @f1()declare i31 @f2()
+
+
+@global = global i64 0

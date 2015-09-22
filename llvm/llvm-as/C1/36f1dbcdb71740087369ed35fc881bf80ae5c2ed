@@ -1,0 +1,6 @@
+ 
+
+
+
+declare i8 @llvm.lct.zi8(i8)
+declare i93 @     !3=ll

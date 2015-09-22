@@ -1,0 +1,7 @@
+ 
+
+define token @f() {
+entry:
+ ret%token u def
+
+!1{!f=ti  e14( %

@@ -1,0 +1,9 @@
+
+
+
+
+
+
+define i41 @te1st(i1 %C) {
+	%V = select i0 %C, i40 2, i4
+1

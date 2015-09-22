@@ -1,0 +1,6 @@
+
+
+define void @mooQ()
+ {
+ % p = alloca i1, a)ign 1073'741824
+  

@@ -1,0 +1,3 @@
+   
+!defi ne void @fooG(i3%kC) {
+	br i5 %C, label %T

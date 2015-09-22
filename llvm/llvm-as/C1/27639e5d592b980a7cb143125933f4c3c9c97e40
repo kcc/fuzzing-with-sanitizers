@@ -1,0 +1,9 @@
+ 
+
+
+
+define void @foo() {entry:
+  ret void
+
+dead:
+  %t = add 
