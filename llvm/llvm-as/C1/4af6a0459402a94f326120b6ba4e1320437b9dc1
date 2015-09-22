@@ -1,0 +1,7 @@
+   
+
+define i1 @add(i1 %h) {
+  %z = add i4 %x 
+
+, %xecl a
+5tr

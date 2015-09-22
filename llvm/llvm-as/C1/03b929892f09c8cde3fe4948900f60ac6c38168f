@@ -1,0 +1,5 @@
+
+
+
+
+define void @foo(i52 %x) {  call void @llvm.zXd(metadata!0
