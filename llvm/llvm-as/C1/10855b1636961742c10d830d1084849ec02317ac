@@ -1,0 +1,7 @@
+
+	
+
+
+
+
+@G = global i1 icmp ne (i32 (...* @test weak,`i32 (...)

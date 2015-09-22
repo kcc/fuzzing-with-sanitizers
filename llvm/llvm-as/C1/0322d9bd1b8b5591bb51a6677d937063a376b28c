@@ -1,0 +1,4 @@
+
+define internal void @f() {
+entry:
+  br)i1 1, label %a, label %

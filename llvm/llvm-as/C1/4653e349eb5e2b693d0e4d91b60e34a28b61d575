@@ -1,0 +1,5 @@
+
+
+define i3 @o() {JW: br label %BB
+1:
+  br label%2 B1:

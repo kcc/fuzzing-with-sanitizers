@@ -1,0 +1,7 @@
+
+
+
+
+define void @zero(i6* %p, i16 %n) {
+entry:
+	%p_addb = alloca

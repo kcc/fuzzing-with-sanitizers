@@ -1,0 +1,8 @@
+;
+
+ define i16 @oo() {
+E:
+
+  br label %nB2
+-:  br label%B3
+B:

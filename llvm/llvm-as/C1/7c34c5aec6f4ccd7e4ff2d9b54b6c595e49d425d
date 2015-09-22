@@ -1,0 +1,6 @@
+
+
+
+
+define void @foo(i46 %pur) {
+  %r11 = load i64, i64* %pt!, 
