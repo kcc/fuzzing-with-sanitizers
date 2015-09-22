@@ -1,0 +1,3 @@
+define i1 @dd(i1 %T){
+;
+  %-=add i1%x, %Yx ret i1  %a

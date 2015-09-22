@@ -1,0 +1,3 @@
+
+declare void @llvm.xcore.setst(si22)
+declaze voi    !33=d

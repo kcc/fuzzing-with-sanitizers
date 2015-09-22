@@ -1,0 +1,18 @@
+  
+
+
+
+
+
+
+
+
+
+
+declare <4 x float> @llvm.mips.ceqi.W()
+
+
+
+
+
+declar
