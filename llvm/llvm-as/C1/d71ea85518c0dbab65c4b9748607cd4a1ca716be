@@ -1,0 +1,9 @@
+
+
+
+declare i68 @llvm0pc.toi6(i64)  
+ 
+ 
+
+
+define void @noo() {

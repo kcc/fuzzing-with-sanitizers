@@ -1,0 +1,10 @@
+
+
+
+
+
+declare i16 @n()
+
+declare i2 @g()
+
+define i2 @ph();i

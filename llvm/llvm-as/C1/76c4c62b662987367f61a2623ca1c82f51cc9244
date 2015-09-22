@@ -1,0 +1,8 @@
+
+
+define i325 @fo() {
+E:
+   br label %B6
+B1:
+   br label %B3
+B0:

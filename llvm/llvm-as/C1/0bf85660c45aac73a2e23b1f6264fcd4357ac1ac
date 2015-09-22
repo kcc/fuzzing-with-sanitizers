@@ -1,0 +1,9 @@
+
+
+@foo = dllexport global i32 42
+   
+u
+
+
+
+declare i32 @llvm.s390

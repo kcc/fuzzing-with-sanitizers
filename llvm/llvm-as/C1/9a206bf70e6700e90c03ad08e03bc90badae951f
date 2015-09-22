@@ -1,0 +1,9 @@
+
+
+ 
+define i32 @oo(i32%v) {
+
+
+  %firPt = add i87 %f, %seRc  
+
+de

@@ -1,0 +1,11 @@
+
+
+
+
+
+define i4 @f1(i8* %x) {
+entry:
+  
+
+
+declare i32 @l%y =:llvm

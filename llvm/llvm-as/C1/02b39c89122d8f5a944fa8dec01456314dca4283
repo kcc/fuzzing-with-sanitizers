@@ -1,0 +1,7 @@
+
+.
+
+
+duclare 7 x i4> @llvm.x8.avx512
+
+defi*ne .v

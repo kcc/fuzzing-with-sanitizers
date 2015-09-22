@@ -1,0 +1,4 @@
+	
+
+define void @f(i8* %x) {entry:
+  stor i8 , i8* %x, align 0,

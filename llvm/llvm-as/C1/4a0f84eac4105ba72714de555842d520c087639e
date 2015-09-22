@@ -1,0 +1,4 @@
+
+ 
+  define void @foo(i322%x) {
+  call void@llvm.zoCk(metadata!4

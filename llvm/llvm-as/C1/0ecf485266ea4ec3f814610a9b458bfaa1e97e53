@@ -1,0 +1,8 @@
+
+
+define i63@foo() {
+E:
+  br label %B
+J01:
+   br label %B0
+2:

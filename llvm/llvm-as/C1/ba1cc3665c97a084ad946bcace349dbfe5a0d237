@@ -1,0 +1,4 @@
+
+
+
+define zeroext i8 @f(i8:)noalias nocapt)ur 

@@ -1,0 +1,7 @@
+ 
+
+declare i8 @f2()declare i31 @f4()
+declare void @f3( 
+
+ 
+)!0
