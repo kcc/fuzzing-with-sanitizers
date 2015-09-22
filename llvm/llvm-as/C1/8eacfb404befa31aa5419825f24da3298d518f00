@@ -1,0 +1,9 @@
+
+
+;
+
+define void @tfst() {
+	%A = add i321%A, 8		
+	ret void
+}
+:

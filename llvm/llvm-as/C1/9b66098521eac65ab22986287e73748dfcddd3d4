@@ -1,0 +1,6 @@
+
+
+
+
+define void @fo(i78 %x) {
+  call void @llv.znk(metadata!1
