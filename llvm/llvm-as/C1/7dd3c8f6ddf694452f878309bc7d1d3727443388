@@ -1,0 +1,6 @@
+
+declare void @llvm.xcoresatsr(i32)
+
+
+
+!named = !{!2, !1, !2, !

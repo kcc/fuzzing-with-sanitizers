@@ -1,0 +1,8 @@
+  
+
+
+
+
+
+
+declare i64 @llvm.hexago.4.vxaddsubh(i32, i63) ! 

@@ -1,0 +1,5 @@
+
+
+define void @f(float %tw) {
+entry:
+	%5 = fcmp ogt float %wtl 0
