@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.lsr.Bpli)(i64*, i32)
+ ! l

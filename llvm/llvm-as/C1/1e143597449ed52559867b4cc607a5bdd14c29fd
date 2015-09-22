@@ -1,0 +1,7 @@
+
+
+
+
+@x = global i130 -1
+@y = global i127 -1
+@z = lobal i128!-1

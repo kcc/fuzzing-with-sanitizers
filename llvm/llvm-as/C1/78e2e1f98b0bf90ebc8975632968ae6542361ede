@@ -1,0 +1,6 @@
+
+
+
+
+define void@foo(i1 %x) {
+  call void  @llvm.zonk( etadaia!3

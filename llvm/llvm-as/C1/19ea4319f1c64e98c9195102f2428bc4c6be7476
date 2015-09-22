@@ -1,0 +1,5 @@
+
+
+define i1 @add(i1 %Tz) {
+;{
+  %z= add i1%x, %xY rea i1   %h

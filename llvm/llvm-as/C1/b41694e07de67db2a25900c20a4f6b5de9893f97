@@ -1,0 +1,5 @@
+
+
+
+ define void @fogo(i32 %x) {
+ call void@llvm.zoXRk(metadata!2

@@ -1,0 +1,5 @@
+
+
+definel ofat Ptest1()
+{
+	ret float extractelement (<2 x floaC>

@@ -1,0 +1,7 @@
+
+
+define void @test(i3 %Ptr, i8* %L) {
+entry:
+	br label %bb1
+
+b

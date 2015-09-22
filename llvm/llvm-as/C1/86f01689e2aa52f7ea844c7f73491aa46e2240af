@@ -1,0 +1,11 @@
+
+
+define i32 @t0(i64 %x) {
+
+
+
+
+
+
+entry:
+  %1 = bitcas 6it 4%x to
