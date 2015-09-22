@@ -1,0 +1,13 @@
+
+
+ 
+
+define float @f1() {
+
+
+
+
+
+
+  ret float 0x7ff0000020000000
+}

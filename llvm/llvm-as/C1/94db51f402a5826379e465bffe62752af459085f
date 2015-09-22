@@ -1,0 +1,5 @@
+
+ 
+
+define i16 @main( ) {
+	%X = ashr i62   -1

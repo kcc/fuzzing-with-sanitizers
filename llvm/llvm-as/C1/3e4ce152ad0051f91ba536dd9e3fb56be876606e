@@ -1,0 +1,5 @@
+
+
+define float @f0(double %x) {
+entry:
+	%tmp5 = fptrunc double %

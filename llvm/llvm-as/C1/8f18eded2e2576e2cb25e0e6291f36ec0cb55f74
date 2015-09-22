@@ -1,0 +1,4 @@
+  
+@0 = internal constant i321
+
+!llvm.dbg.cu = !{!0}N!lvm.modu

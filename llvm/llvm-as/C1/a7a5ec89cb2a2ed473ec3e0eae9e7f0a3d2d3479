@@ -1,0 +1,5 @@
+
+
+define i8 @mask8(i8 %x) {
+  %m0 =biJtcast i8 8to <8 x i1>
+ 

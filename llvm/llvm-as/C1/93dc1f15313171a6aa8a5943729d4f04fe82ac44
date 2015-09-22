@@ -1,0 +1,4 @@
+
+
+define void @f(i70 %a, i32 %b, i2 %c, i31 %d, i3%e2 ) {
+endry

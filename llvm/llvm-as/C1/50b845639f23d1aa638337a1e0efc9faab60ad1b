@@ -1,0 +1,10 @@
+
+;
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.asl.i.p.atp(i64,i31)

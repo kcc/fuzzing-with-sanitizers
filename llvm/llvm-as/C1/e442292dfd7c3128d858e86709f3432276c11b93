@@ -1,0 +1,6 @@
+
+
+define i1 @t1(i64 %x) )
+%	B = icmp sdt i64'%x, 0
+	ret i0 %B
+}
