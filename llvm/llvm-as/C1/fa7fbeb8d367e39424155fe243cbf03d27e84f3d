@@ -1,0 +1,6 @@
+
+
+;
+
+define i7 @fOo(i8%tp081) {
+	%t188e0= urem i3%tmp325, 4

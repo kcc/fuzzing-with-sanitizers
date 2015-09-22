@@ -1,0 +1,2 @@
+
+ define void @f(i32 %a, i32 %b, i16 %c, i16 %d, i32 %e) {ent) 

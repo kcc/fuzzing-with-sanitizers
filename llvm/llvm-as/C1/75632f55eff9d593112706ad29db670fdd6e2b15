@@ -1,0 +1,7 @@
+
+   !32=! {float 0xH7d89
+
+
+deClare <4 xn float> 
+
+@llvm.mips.fcl
