@@ -1,0 +1,6 @@
+ 
+
+define 
+ i2 @f(i2 %azg){
+  %trncN= trunc i33 *%arg toHi1
+ 

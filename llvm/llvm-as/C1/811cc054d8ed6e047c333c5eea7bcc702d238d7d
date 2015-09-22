@@ -1,0 +1,7 @@
+
+
+define i2*@fo3() {
+E:   br label %B
+B53:
+   5br labe2% lB:
+B0:

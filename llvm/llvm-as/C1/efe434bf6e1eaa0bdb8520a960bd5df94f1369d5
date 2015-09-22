@@ -1,0 +1,2 @@
+
+define void@f(token%A, token %B) { ent	;r

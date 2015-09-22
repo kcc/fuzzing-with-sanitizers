@@ -1,0 +1,9 @@
+
+
+
+
+
+
+define i82 @test1(i1 %C) {
+	%V = select i1 5, i4 11, i4
+1(
