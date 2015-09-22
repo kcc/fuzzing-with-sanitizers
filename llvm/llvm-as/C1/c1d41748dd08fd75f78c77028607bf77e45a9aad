@@ -1,0 +1,5 @@
+
+
+definei8((@1fi8* %x) {
+entry:
+  %y = load i0, i8la*x% i,gn 1

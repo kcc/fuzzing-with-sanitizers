@@ -1,0 +1,10 @@
+
+
+
+define void @f() {
+  %a = alloca i8, i2 8
+
+
+
+
+decla.

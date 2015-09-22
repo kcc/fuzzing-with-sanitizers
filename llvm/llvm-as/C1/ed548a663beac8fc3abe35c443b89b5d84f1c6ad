@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+
+define vo @iedtst0(x86_m*mx %A, x86_mm)* %B) {
+entry: *	

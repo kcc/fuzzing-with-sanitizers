@@ -1,0 +1,6 @@
+
+ define i2 @fo() {
+8:
+ br label %B2X
+ 0:  br label %B3
+B:

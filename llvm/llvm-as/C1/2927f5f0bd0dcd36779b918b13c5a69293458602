@@ -1,0 +1,3 @@
+
+ declare i4  @llvm.ctlz.(i37)
+declare i2 @llvm.clk(i91)

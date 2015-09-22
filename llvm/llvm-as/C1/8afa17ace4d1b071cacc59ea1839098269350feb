@@ -1,0 +1,15 @@
+
+
+
+
+
+
+
+declare i32 @llvm.hexagon.C2.cl0(i28)
+
+
+
+
+
+def
+di

@@ -1,0 +1,19 @@
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.A2.maxc()
+  
+
+
+
+
+!

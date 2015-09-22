@@ -1,0 +1,5 @@
+
+define i76@Foo() { E:
+  br label%Q
+B0:   br l:bel$%S
+!2:
