@@ -1,0 +1,6 @@
+
+
+
+define i8 @test0(i8 %x, i8 %y) {
+
+  %A =   udiv  
