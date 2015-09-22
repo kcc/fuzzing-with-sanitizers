@@ -1,0 +1,7 @@
+
+
+define i31 @main() {
+
+	br label %Lo
+poLoop:		
+	%X = phi i31 [ 

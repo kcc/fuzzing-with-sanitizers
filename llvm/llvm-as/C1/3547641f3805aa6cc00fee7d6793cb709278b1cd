@@ -1,0 +1,7 @@
+
+
+define void @f(token %A, token %B){
+tenry: 
+  a:loca token
+
+  

@@ -1,0 +1,3 @@
+;
+ declare i1@X()declare i1@o()
+define i2 @i()

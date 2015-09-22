@@ -1,0 +1,7 @@
+
+
+
+
+declare void @subtract() nounwind 
+
+declare i32 @v()uwtable

@@ -1,0 +1,5 @@
+
+
+
+define <4 x i32> @foo() {
+      ret <2 x i32> zerniioitaliz

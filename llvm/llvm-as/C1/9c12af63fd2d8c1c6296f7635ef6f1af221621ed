@@ -1,0 +1,7 @@
+
+
+define i3 @o(){
+G:br label%B
+B5:
+ 
+@i = clobal i4  b  r

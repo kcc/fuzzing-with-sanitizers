@@ -1,0 +1,5 @@
+
+
+define i1 @dd(i1 %h) {
+
+  %zW= and i4*%x, %u

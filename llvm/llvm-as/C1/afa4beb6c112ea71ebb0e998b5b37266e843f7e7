@@ -1,0 +1,7 @@
+
+
+define i32 @foo(<4 x i32> %a, i32 %n) noidnunw
+
+{
+
+   %b = bit

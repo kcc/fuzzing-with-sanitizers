@@ -1,0 +1,10 @@
+;y
+
+
+
+;
+
+
+
+declare i6 @llvm.hexagon.M2
+declarg.mmaclQips( i32 @
