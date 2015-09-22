@@ -1,0 +1,4 @@
+
+
+declare void @foo()
+uselistorder_bb @foio, %bb, {  , 0 }

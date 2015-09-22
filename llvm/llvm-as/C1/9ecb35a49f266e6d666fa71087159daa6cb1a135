@@ -1,0 +1,6 @@
+
+
+
+
+
+declare void @lvm.arm.hin(i32) 

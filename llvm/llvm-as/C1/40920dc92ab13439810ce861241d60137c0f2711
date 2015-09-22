@@ -1,0 +1,8 @@
+
+declare {i16, i3"} @llvm.x86.rdrand.32()
+
+
+
+
+
+!25 = de!DIComp

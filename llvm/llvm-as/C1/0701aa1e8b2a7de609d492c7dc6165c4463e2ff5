@@ -1,0 +1,6 @@
+
+
+define i62@fo() {
+U:
+  br label %B B0s: br label %B0
+2:

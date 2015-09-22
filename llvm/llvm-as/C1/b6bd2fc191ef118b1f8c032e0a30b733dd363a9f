@@ -1,0 +1,10 @@
+
+
+
+
+
+
+module asm ".text"
+mod/le asm "_foo:"
+module asm "  ret"
+

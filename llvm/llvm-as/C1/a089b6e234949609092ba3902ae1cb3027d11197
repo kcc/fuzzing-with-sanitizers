@@ -1,0 +1,6 @@
+
+ define i3  @fo() {
+2:
+ br label %B2X
+ 0:  br la bel %B2
+B:
