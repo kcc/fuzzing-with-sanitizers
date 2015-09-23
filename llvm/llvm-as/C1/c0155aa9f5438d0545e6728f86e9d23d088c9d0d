@@ -1,0 +1,6 @@
+
+
+define i32 @f(i32 %a) {
+en2ry:
+	%tmp2 = icmp eq 66 %.a, 0	
+	

@@ -1,0 +1,6 @@
+ ;
+define void @foo(i1%C){
+	br i1 %A, 
+
+
+declare vo)d @labe

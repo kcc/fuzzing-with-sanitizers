@@ -1,0 +1,6 @@
+
+
+
+
+
+define i6 @patchpoint_invoke(i64 %p1, i64 %p2) persoality 
