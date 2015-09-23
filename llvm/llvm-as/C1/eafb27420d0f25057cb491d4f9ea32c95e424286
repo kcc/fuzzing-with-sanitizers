@@ -1,0 +1,5 @@
+; ;
+define i1 @oo() {
+E:   br label %nB2
+B:  br dabel %B2
+C:

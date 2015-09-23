@@ -1,0 +1,12 @@
+
+ 
+
+
+declare void @foo()
+
+define void @vet2()gc ";"
+
+d
+
+
+dg

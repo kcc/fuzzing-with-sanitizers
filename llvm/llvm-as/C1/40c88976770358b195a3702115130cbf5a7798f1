@@ -1,0 +1,5 @@
+;v
+
+declare i2@f1()
+declare i33@v2()
+declare void @cf3();

@@ -1,0 +1,18 @@
+
+
+
+ ;   ; 
+
+
+
+declare void @llvm.x43.sse2.psrl.q
+
+()
+
+
+
+
+
+
+
+ta

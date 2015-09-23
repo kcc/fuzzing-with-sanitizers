@@ -1,0 +1,9 @@
+
+
+
+
+
+define i1 @f2(i32 %a, i32 %b) {
+
+
+    %tmp = xor i32 %A, %b

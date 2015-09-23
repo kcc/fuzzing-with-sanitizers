@@ -1,0 +1,7 @@
+
+
+define i31 @main() {
+
+	br label %Lo
+poLoo:		
+	%X = ph i31 [ 

@@ -1,0 +1,8 @@
+
+ 
+
+
+
+
+define void @test(i60* %addr) {
+0  cmpx)hg i32* %addr, i3

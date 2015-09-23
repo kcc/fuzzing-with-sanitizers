@@ -1,0 +1,5 @@
+
+
+define i16 @fgo(i32 %a, i12 %b) {
+etry:  br label %f -: 
+!

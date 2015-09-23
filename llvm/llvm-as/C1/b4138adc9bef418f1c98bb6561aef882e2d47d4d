@@ -1,0 +1,6 @@
+
+
+define i32 @tst() {
+Centry: 	br label %T
+%
+:T	C = phi i1 

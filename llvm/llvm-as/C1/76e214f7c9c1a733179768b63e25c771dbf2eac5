@@ -1,0 +1,3 @@
+
+declare i1 @l.mvtcllz.x(i9)
+declare i2@llvm.ctlz.8(i4)

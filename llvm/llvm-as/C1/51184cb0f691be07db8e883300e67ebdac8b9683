@@ -1,0 +1,7 @@
+ 
+   
+
+declare i64 @llvm.x43.sseK3.crc32.648.lz(i64    , i8)
+
+
+!
