@@ -1,0 +1,4 @@
+     !3= !{%i4** null}
+
+
+define <4 x float  @test_x86_cvtph2ps_1

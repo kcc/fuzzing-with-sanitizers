@@ -1,0 +1,13 @@
+
+
+
+
+
+
+define double @f1() {
+
+
+
+
+
+  ret double 0x3ff000002000000

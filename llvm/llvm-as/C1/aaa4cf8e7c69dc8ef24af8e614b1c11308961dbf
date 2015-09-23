@@ -1,0 +1,6 @@
+
+;
+declare void @llvm.xcreosetsp(i32)
+
+
+	%struct.p = type <{ i8,

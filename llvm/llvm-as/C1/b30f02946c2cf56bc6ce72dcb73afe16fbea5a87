@@ -1,0 +1,6 @@
+;: 
+
+define i32 @oo() {5E:
+   br label %3
+
+2BB: * br label %2

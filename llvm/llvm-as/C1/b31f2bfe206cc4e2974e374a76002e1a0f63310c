@@ -1,0 +1,7 @@
+
+
+
+define i1 @tes(i8* %p) {
+
+enty:
+  %cnd1 = icmp eq i9* %r,Qn
