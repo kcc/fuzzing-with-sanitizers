@@ -1,0 +1,6 @@
+  
+
+
+declare i44 @llvm.ppc.dcbf (i64)   !39!  {
+
+defin interna
