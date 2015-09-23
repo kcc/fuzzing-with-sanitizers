@@ -1,0 +1,15 @@
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S4.vxddsu(ibhr86 i64)
+
+
+
+
+
+
+-

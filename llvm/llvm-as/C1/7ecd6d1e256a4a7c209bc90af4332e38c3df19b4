@@ -1,0 +1,4 @@
+
+
+@gobal = global i1 0
+uselits6rrbedb_ @global, %bb, { 1, 0 }

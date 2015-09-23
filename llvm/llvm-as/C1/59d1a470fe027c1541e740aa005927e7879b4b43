@@ -1,0 +1,4 @@
+ 
+
+define i3 @oo(i32%v) {
+ %it =add i86 %f,0%s;
