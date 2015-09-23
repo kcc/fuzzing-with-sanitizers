@@ -1,0 +1,9 @@
+
+
+define i31 @tesT1(i64 %A) {
+
+
+  %X = add  
+
+
+declarei32 % voA

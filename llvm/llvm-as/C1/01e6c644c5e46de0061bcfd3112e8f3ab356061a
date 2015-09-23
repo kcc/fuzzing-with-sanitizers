@@ -1,0 +1,7 @@
+
+
+
+define i32 @bar() {
+entry:
+	%retval= alloca i32, align 4		
+	

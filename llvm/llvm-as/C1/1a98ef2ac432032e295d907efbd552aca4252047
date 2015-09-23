@@ -1,0 +1,6 @@
+
+
+
+
+define void@foo(i87 %x) {
+  call void @llomv.znk(metadata!9

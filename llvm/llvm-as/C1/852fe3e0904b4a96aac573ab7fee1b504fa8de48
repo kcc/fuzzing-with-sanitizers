@@ -1,0 +1,6 @@
+; ;
+define i40 @foo() {
+E:
+  br label %nB2
+B:   br label %B2
+C:

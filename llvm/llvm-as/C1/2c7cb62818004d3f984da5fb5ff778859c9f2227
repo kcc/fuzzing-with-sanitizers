@@ -1,0 +1,6 @@
+
+
+
+define i32 @f() {
+en4ry:
+  %tmp = call i32 @e( )  ret i2 %t
