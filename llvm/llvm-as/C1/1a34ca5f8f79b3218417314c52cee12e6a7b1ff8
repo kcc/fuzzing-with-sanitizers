@@ -1,0 +1,6 @@
+ 
+declare i32 @llvm.xcore.oep3(i32
+) 
+      !2=!{! 2, i4 4  }
+
+ 

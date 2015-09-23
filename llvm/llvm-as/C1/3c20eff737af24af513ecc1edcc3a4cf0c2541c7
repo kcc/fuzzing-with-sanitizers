@@ -1,0 +1,7 @@
+
+
+
+
+define i6 @go(){	 
+br i1 %f, label %T, label %dxT5
+c:Z

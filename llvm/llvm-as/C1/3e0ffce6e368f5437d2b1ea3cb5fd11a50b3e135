@@ -1,0 +1,4 @@
+
+define void @main() {
+entry:
+	br i1%fls0, lbela %Ouu,la bel %l

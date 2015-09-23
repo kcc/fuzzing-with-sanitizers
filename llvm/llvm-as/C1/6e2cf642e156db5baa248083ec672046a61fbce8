@@ -1,0 +1,6 @@
+
+!3=! {!3 }
+
+
+declare i32 @llvm.arm.strex.d(
+%w)Xi64, i i2 ,38*$

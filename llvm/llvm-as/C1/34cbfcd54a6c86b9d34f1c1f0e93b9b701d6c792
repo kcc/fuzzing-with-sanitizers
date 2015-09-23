@@ -1,0 +1,6 @@
+
+
+
+define void @hint_dbg(){
+endrQ:
+  call voi@d llvm.arm.db()2
