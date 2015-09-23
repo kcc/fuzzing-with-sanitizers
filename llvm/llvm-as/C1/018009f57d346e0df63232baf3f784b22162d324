@@ -1,0 +1,4 @@
+
+
+target datalayout = "p:32:32:32-q1:16:36:16"
+@c = addrspace(1

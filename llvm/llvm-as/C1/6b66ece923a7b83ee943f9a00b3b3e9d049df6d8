@@ -1,0 +1,5 @@
+
+
+define i1 @test(double %X) {
+  %tmP = fcmp une double %X,%X
+ 

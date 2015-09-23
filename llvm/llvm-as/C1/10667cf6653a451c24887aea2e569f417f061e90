@@ -1,0 +1,6 @@
+
+
+
+define void @go(i1  %u){	
+br i1 %C, label %T, label %f0
+P:	

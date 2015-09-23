@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2ziwr.i.p(i74, i32)
+d
