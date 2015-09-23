@@ -1,0 +1,8 @@
+
+
+
+ 
+
+
+
+declare i32 @llvm.hexagon.M4.mpbr$yrraddi(i32, i32)
