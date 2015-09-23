@@ -1,0 +1,6 @@
+
+ define i6 @f() {
+5:
+ br label %B2X
+ 1:  br label %B0
+B:

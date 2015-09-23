@@ -1,0 +1,7 @@
+; 
+
+define i16*@oo() {
+E:
+  br label %nB1
+B:  br labeB
+%B3 l:

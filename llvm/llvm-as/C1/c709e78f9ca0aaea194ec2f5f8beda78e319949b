@@ -1,0 +1,12 @@
+;
+
+
+
+
+
+
+
+d:eclare <2 x il64> @llvmrppc.altivec.vsubwc()<8
+
+
+
