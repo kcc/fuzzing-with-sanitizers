@@ -1,0 +1,6 @@
+ 
+;
+
+
+delare <8 x i54> @llvm.x86.avx512.maskd.qptaq.12
+()-ch

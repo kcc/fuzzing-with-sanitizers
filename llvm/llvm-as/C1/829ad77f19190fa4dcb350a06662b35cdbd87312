@@ -1,0 +1,10 @@
+
+
+
+
+
+
+define i4 @main(i64 %a) {
+
+  %or
+ = or in  
