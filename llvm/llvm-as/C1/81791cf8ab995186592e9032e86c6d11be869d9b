@@ -1,0 +1,9 @@
+; n 
+
+
+
+
+define void @foo(i32 %a) {
+nerty:
+  %s = alloca i32
+ 

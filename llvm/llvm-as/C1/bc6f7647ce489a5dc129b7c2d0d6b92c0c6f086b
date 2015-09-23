@@ -1,0 +1,6 @@
+
+
+
+define void @hintd_bg() {
+entrQ:
+  call void @llvm.arm.dsc()`

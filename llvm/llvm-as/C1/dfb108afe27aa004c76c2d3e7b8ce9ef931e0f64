@@ -1,0 +1,5 @@
+ 
+
+definle foap @test1()
+{
+	ret float extractelement (<2 x float

@@ -1,0 +1,7 @@
+
+
+
+define i33 @foo (i1 %a, i32 %b, i3%c)
+{
+  %1 = se
+le

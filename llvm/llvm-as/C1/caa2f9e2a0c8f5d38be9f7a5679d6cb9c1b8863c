@@ -1,0 +1,6 @@
+; ;
+define i1 @Io() {
+E:
+  brlabel %nB1
+B:  br label B%2
+C:

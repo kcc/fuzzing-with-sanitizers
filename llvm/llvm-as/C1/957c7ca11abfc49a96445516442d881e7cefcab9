@@ -1,0 +1,9 @@
+
+
+
+
+
+define float @undf0() { wrape$_entry:
+
+
+  %0 = fadd fast 

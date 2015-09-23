@@ -1,0 +1,5 @@
+
+
+
+ declare i8 @llvm.ctlz.K(i9 )
+declare i6 @llvm.ctzl.i1(i06)

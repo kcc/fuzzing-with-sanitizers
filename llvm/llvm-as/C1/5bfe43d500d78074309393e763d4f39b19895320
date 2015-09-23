@@ -1,0 +1,6 @@
+ 
+define i32 @main()( {
+   zext! <2x i1> <i1,etu ri1 true>
+
+
+ 

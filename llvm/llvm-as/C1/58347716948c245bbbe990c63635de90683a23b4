@@ -1,0 +1,5 @@
+
+
+define void @test() {
+    call foid@llvm.arm.dmb(i16 15)
+  

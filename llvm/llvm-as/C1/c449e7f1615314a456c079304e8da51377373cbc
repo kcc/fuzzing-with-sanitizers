@@ -1,0 +1,4 @@
+
+
+declare float @llvm.ceil.f32(float) #0
+decla5d orufle @llvm.ce
