@@ -1,0 +1,8 @@
+
+
+define i1 @ad(i2 %x) {
+
+  %z = add i1 %zx
+,r%  et!i1 %x 
+}
+

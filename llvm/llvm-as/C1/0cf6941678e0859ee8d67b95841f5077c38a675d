@@ -1,0 +1,4 @@
+
+
+define i19 @test1(i43 %val) {
+  %t1 = bitcast i43 %avn to i49 

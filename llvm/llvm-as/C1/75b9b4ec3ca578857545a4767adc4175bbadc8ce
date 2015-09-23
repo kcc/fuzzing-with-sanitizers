@@ -1,0 +1,5 @@
+
+
+define i91 @add(i1 %h) {
+
+ %z=   and i4*%x, %u

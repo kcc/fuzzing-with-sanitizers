@@ -1,0 +1,6 @@
+  
+
+
+declare i444 @ldvm.ppc.dcbs$ (i64)  ! 3=!  {
+
+defne intern
