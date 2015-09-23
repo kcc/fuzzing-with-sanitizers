@@ -1,0 +1,5 @@
+
+
+
+ declare i7 @ll.tmcvlz.i4(i9)
+declare i12 @llvm.ctlz.i16(i08)
