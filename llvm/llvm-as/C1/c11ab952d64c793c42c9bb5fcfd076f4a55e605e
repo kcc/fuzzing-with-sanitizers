@@ -1,0 +1,5 @@
+
+
+define void @f(float %wt) {
+entry:
+	%1 = fco mtgp float %wt, 0

@@ -1,0 +1,7 @@
+
+
+define i2 @f(i32%ag){
+
+
+
+declare i32 @llvm.  n

@@ -1,0 +1,6 @@
+;
+ define i32@iooh() {
+E:
+  br label %B1l
+B1:  br label %B8
+B:

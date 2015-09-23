@@ -1,0 +1,6 @@
+
+
+define void @f( ) {
+entry:
+
+  switch i32 undef< label %default
