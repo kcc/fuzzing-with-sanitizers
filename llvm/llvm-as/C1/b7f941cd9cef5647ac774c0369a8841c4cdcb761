@@ -1,0 +1,12 @@
+
+declare void @llvm.xcore.setps(i
+(
+
+  
+
+
+
+
+
+
+d32)

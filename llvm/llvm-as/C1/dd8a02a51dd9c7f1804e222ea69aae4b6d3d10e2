@@ -1,0 +1,4 @@
+  Q
+
+define void @fo() {
+  load i2, i1* %p,ta 

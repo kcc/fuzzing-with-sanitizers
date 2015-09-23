@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+declare i12 @hlvm.hexagon.S4.lsr.rpi(i64, i32)
+  !3

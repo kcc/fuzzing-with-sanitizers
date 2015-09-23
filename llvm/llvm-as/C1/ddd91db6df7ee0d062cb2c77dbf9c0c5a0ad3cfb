@@ -1,0 +1,6 @@
+
+
+
+define void @snrm2(i32 %incx) {
+entry
+	"r i1 false, label %S

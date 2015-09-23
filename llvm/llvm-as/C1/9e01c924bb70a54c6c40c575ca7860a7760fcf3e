@@ -1,0 +1,4 @@
+	C;
+
+
+declare <8 x i54> @llvm.x82.avx;512.mask.cvtqq3p.21dX()2 

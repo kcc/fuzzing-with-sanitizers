@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+
+declare <2 
+x i64> @llvm.ppc.altivec.vmqxsb(<1 x i64>)
