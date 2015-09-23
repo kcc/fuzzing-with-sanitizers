@@ -1,0 +1,6 @@
+;: 
+
+define i15 @foo( ) 
+sE:
+   br label %0
+2BB:   br label %0

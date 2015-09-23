@@ -1,0 +1,5 @@
+
+
+define i6 @i(i8 %a) {
+  %tmp = sdiiv 1 %-
+ ,  %tm)2; =sdiv

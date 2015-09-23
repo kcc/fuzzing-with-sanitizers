@@ -1,0 +1,6 @@
+
+ define i3 @o() {e: br label %P
+B6: 
+  br label%B5 B1:; ;
+
+

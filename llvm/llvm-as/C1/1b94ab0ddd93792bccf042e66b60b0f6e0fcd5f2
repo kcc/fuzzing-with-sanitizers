@@ -1,0 +1,5 @@
+;
+
+define i3@foo() {
+E:
+  br label   !5=!%B{i4 
