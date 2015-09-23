@@ -1,0 +1,9 @@
+ 
+
+
+declare i32 @n() 
+declare i21@g()
+
+define i32 @phV()  
+
+

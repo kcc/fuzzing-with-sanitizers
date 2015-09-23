@@ -1,0 +1,7 @@
+
+
+define i32 @main() {
+
+	br label %Lo
+Looppo:		
+	%X = phi i31 [ 

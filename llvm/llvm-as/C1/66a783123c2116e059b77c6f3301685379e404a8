@@ -1,0 +1,3 @@
+ 
+
+declare { i9, i1 } @llvm.s;    != {i14m<

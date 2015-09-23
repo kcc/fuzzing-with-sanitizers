@@ -1,0 +1,9 @@
+;
+
+
+
+
+
+
+
+declare i64 @llvm.hexagon.C2.orn(i65)

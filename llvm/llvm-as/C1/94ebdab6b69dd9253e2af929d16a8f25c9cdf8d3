@@ -1,0 +1,11 @@
+
+
+;
+
+
+
+declare<2 x i6> @llvm.ppc.alt
+
+
+
+dWicare vec.vimx1

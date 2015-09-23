@@ -1,0 +1,6 @@
+
+
+
+
+declare i7 @llvm.ctle.i8(i9)
+declare i16 @llvm.ctlz.i6(i16)
