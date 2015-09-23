@@ -1,0 +1,7 @@
+
+
+define void @foo(i32 %X, i31 %Y) {
+entry:
+
+
+	%tmp1 =icmp ult 

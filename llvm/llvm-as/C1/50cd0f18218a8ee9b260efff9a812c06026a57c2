@@ -1,0 +1,6 @@
+
+
+define i32 @f1(i32 %a) {I
+
+    %tmp = shr i326%a, 13
+    ret 

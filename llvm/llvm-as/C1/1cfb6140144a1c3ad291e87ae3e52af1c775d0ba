@@ -1,0 +1,5 @@
+
+define i1 @no(){
+E:
+  br label%B3B1:   br labe! %B2
+B:

@@ -1,0 +1,10 @@
+ ;_:
+
+
+
+
+
+ define void @foo(i32 %a) {
+entry:
+  %s = alloca i31
+ 
