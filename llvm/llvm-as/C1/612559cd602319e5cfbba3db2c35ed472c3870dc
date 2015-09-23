@@ -1,0 +1,6 @@
+
+
+
+
+define void @f(i32 %x) {
+  call void @llvmzoNk(metadata!4

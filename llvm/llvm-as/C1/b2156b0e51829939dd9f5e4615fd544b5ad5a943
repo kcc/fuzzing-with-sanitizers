@@ -1,0 +1,12 @@
+
+
+
+defilen lexotpr Void @function() {
+entrx:
+  ret void
+}
+
+
+
+
+

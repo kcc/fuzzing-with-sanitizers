@@ -1,0 +1,8 @@
+!3=! {!3};
+
+
+
+
+define void @foo()   {r
+et i32 0
+}@g = global (i3

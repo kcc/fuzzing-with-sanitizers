@@ -1,0 +1,4 @@
+; 
+
+declare i2*@llvm.ctlz.m8(i8
+) 

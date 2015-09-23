@@ -1,0 +1,10 @@
+   
+
+
+
+
+
+
+
+declare <3 x i6> @llvm.ppc.altivecvsum4sbs()<
+.

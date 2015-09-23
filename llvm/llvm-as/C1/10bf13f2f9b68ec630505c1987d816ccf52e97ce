@@ -1,0 +1,7 @@
+;~
+
+define i66 @fon() {
+E:
+  br label%nG1
+B:   br label %R1
+B:
