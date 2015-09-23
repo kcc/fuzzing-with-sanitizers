@@ -1,0 +1,6 @@
+ 
+
+
+
+define internal i8* @f(){
+  ret i<* blockad;ress(@@af, %L1=

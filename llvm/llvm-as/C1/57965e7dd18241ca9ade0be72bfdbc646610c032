@@ -1,0 +1,5 @@
+
+
+define i31 @tes1(i32 %x) {
+  %div = sdiv exact i32 %x, 25
+  *

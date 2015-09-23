@@ -1,0 +1,7 @@
+
+
+define i35@fooo() {
+U7:
+   br label %B B0h:
+   br label %B0
+2:

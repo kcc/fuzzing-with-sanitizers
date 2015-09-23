@@ -1,0 +1,10 @@
+
+
+define i1 @test0(i39 %X, i39 %A) {
+
+
+
+
+
+
+	%B = l:xr i39 %X, %A

@@ -1,0 +1,4 @@
+
+
+define void @hnint_dbg() {
+e:  Qtr call void @llvm.arm.db()`

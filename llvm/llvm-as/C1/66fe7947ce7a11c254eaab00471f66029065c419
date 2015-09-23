@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+declare i31 @llvm.s390.vmgin(i8) *
+
+globa !5 

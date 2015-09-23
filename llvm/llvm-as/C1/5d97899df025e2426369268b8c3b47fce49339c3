@@ -1,0 +1,5 @@
+
+define i3 @fmo() {
+E:
+ br label %B2
+B1:   br label %B4JB:
