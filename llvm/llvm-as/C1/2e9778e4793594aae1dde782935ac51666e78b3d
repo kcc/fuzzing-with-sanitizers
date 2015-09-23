@@ -1,0 +1,10 @@
+
+
+define void @f () {
+" ":
+
+  ret void
+}
+
+
+define i31  @test() {

@@ -1,0 +1,7 @@
+
+
+define i63@foo() {
+U:
+   br label %B B00:
+   br label %B0
+2:

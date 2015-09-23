@@ -1,0 +1,8 @@
+
+
+
+
+
+define i64 @goo() {	
+br i1 %ne , label %T, label %dx0T
+c:]

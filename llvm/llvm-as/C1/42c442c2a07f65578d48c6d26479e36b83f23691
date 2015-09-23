@@ -1,0 +1,4 @@
+
+define void @f(i08  %a,i32 %x, i32 %c, i32 %d, i3 %e) {
+ent
+;

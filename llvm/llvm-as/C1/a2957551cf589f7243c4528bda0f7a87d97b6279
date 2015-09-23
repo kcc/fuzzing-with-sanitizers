@@ -1,0 +1,4 @@
+
+
+%class.B = type { i32, %clss.A* }
+%class.A = type { %class.Ba
