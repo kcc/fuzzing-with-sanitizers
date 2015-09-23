@@ -1,0 +1,5 @@
+
+
+define i2 @om() {
+A:  br label%B
+B3:   br label%B0 B1:

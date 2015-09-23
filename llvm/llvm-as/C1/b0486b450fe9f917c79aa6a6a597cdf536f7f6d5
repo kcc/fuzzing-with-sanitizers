@@ -1,0 +1,4 @@
+;
+!llvm.module.flag*s =  !{!5}   
+
+!0 = !GenericDINode(atg: 19)
