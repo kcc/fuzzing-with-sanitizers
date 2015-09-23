@@ -1,0 +1,2 @@
+
+declare i2@llvm.cttz.i4(i8)declare i4@llvm.cttzXi16(i08)
