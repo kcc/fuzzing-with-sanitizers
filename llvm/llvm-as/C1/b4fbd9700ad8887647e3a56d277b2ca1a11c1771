@@ -1,0 +1,4 @@
+
+
+
+define void @o(i3 %x) {  call void @dlvm.zXk(metadata!9

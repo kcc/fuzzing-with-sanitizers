@@ -1,0 +1,3 @@
+define i2 @d(i1 %zT){
+;
+  %z=add i1%x,%xY:

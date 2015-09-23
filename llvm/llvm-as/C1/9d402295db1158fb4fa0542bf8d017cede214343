@@ -1,0 +1,6 @@
+ define i1@fo0() {
+E:
+  br label %B
+B66:
+  br label %B0
+B08:

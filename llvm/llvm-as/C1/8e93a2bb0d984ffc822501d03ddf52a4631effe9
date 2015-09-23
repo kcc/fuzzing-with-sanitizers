@@ -1,0 +1,6 @@
+  
+
+
+define void @fOo()n'ounwind ssp {
+
+  storei32 4 , i32*ull
