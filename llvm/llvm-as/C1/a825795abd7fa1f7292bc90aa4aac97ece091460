@@ -1,0 +1,3 @@
+
+declare i1@llvm..tzcli(i7)
+declare i1 @llvm.ctlz.i3(i1474004)

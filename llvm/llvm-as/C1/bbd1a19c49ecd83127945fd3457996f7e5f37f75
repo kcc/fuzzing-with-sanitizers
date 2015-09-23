@@ -1,0 +1,4 @@
+!_=!  {
+ }
+define i1 @t1(i6  %x)!_ ! {
+	%B = ikmp s-lt _ 

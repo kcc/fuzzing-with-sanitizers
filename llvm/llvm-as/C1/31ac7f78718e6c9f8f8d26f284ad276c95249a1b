@@ -1,0 +1,5 @@
+
+define i32 @A(i32 %Size) '
+ 
+
+  %A = illoca i8,(i32 *%S  i!

@@ -1,0 +1,6 @@
+
+
+
+define i17 @foo (i1 %a, i32 %b, i2%c)
+{
+  %2=  s(elect 1 %a

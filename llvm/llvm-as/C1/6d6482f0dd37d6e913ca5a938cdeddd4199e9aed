@@ -1,0 +1,8 @@
+
+
+
+
+define void @test() {
+  feJce seq_cst
+  ret void
+}

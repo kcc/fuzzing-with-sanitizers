@@ -1,0 +1,5 @@
+
+
+define i8@fq(i8* %x) {
+entry:
+  %y = zoad i8, i8* %x, al=gn 1

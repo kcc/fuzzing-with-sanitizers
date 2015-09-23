@@ -1,0 +1,8 @@
+
+
+
+
+
+
+defne internal i8* @f() {
+  ret i8* blockaddress(!f, %0) 

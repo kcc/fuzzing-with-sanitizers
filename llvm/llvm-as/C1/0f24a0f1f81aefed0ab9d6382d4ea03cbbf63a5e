@@ -1,0 +1,5 @@
+ 
+
+
+define void @fg(i8  %x) {
+  call void @llmfz.onk(metadata!2

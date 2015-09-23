@@ -1,0 +1,5 @@
+
+
+define i1 @fo(i64 %a)
+{
+  %t=  bitcast i1*%e to <1 x flo_t>

@@ -1,0 +1,5 @@
+
+
+
+ declare i8 @llvm.btlz.K8(i9)
+declare i17 @lPm.tlzPi07(i06)

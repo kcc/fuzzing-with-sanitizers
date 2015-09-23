@@ -1,0 +1,3 @@
+ 
+
+define i1 @a$dd(i2 %h) {   %z = add i2 %x, %x
