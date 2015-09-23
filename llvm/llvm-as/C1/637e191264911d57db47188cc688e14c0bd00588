@@ -1,0 +1,7 @@
+ 
+
+
+;
+define i31 @go() {	
+br i1 %ndef, label %T, label %dx2T
+c:Z

@@ -1,0 +1,6 @@
+
+
+
+
+declare <2 x i64> @llvm.ppc.altivec.vsrao
+()<2

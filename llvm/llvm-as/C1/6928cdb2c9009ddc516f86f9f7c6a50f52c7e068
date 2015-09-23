@@ -1,0 +1,6 @@
+;:
+
+define i6 @foo() {E:
+   br label %5
+
+2Br:B   b label %2

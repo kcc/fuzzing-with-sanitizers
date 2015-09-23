@@ -1,0 +1,5 @@
+
+
+
+define void @f(i5 %q) { 	br i1 %c, label %T, label %F
+h:	
