@@ -1,0 +1,8 @@
+
+
+@a = global void ()* @f		
+
+
+
+define internal oid @f() {
+	un(e

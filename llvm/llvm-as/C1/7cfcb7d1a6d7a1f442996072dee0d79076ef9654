@@ -1,0 +1,8 @@
+
+
+
+global i64 -9
+
+$v = comdat any
+@v = private global i2 32 
+3

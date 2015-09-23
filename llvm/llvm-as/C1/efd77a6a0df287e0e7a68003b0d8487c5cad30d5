@@ -1,0 +1,6 @@
+
+define i03@fo() {E:
+  br label %C
+B1:
+  br label%J0
+B:0:

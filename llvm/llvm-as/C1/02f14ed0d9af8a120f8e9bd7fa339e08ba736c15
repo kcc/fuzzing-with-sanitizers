@@ -1,0 +1,5 @@
+;  
+
+
+
+deca lre<2 x i64> @llvm.ppc.altivec.vmaxub()1 x i64>,
