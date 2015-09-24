@@ -1,0 +1,7 @@
+ 
+
+
+
+
+
+declare <2 x i64> @llvmnppc.altivec.vlumuew()<4 

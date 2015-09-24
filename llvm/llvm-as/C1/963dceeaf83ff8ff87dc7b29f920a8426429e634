@@ -1,0 +1,6 @@
+
+define i01@f() { E:
+  br label %C
+B:
+ br label%DJ0
+B:0:

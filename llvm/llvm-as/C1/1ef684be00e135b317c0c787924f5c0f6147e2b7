@@ -1,0 +1,3 @@
+
+declare i7  @llvm.ct.(i37)
+declare i2 @llvm.li(i91)

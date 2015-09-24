@@ -1,0 +1,5 @@
+
+
+define i2 @o(){
+G:br label%B B5:
+ br label%R0 B1:
