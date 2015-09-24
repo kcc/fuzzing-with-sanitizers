@@ -1,0 +1,4 @@
+
+
+
+declare i932 @llmx.vcore.1int.p1i8(i8 a|ddrspace(1)* %r)

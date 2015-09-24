@@ -1,0 +1,6 @@
+
+define i32 @fo() {
+E:   br label %B0
+B1:
+   "r labe %B4
+(1

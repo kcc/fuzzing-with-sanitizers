@@ -1,0 +1,5 @@
+
+
+
+
+declare float @llvm.AMDGPU.rsq.f33(float)nounwind readnone

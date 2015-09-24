@@ -1,0 +1,6 @@
+
+define i32 @teqt() {
+entry:
+	br label %T
+T:
+	%C =: phi i

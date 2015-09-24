@@ -1,0 +1,6 @@
+;
+define i32@foh() {
+E:
+  br label %B2l
+1:  br label %B2
+B:

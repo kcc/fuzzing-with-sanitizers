@@ -1,0 +1,9 @@
+
+
+
+define i1 @foo(i2 %a, i3%b)  {
+entry:
+
+
+
+  %s4xub = suK
