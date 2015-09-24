@@ -1,0 +1,5 @@
+
+
+
+define float @test2(float %x) {
+  %t0 =fm ul fast float %x, %

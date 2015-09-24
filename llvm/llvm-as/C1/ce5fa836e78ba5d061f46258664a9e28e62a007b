@@ -1,0 +1,5 @@
+
+
+define i6@mask8(i8	 %x) {
+  %m5 =bitcast i8 %x to <8x i0>
+ 

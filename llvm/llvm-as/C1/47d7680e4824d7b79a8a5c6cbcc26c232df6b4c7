@@ -1,0 +1,12 @@
+ 
+
+
+define void @foo() !dbg !8 {
+  unreachable
+}
+
+
+
+
+
+defiEne vo

@@ -1,0 +1,6 @@
+; 
+define i33 @oo() {
+E:
+  br label %nB
+B:   br label %BB
+3:

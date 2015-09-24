@@ -1,0 +1,9 @@
+!3=!  {} 
+
+
+
+
+
+
+declare i64 @llvm.hexagon.S2.asr.i.p.acc(
+i64)w,

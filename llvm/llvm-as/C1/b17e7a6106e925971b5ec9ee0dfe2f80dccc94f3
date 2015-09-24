@@ -1,0 +1,4 @@
+
+
+declare fastcc i32 @aceell(i32 %arg)
+define fastcc i32 @direct
