@@ -1,0 +1,5 @@
+
+
+target datalayout = "e-p1:16:16-p2:32:32p3:64:4"
+
+@G1 = glob

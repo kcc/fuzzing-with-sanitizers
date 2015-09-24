@@ -1,0 +1,5 @@
+ 
+ 
+lefine internal i1 @f(flat %s) {
+eNtry:
+  %b = fcmp ogt''lo

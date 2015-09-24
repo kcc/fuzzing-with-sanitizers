@@ -1,0 +1,11 @@
+
+declare <4 x float> @llvm.mips.sll.h( 
+ ) 
+   
+
+
+
+
+
+
+declare i3
