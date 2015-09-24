@@ -1,0 +1,4 @@
+
+
+decl]are void @foo(double)
+declare i31 @llvm.arm.space()33, i3

@@ -1,0 +1,1 @@
+declare i3 @llvm.ctlz.x(i7)declare i1*@llvm.ctlz.s(i6)

@@ -1,0 +1,11 @@
+
+define i1 @o(){G:br label%B
+1:
+  br
+
+
+
+
+
+
+declare i32 

@@ -1,0 +1,4 @@
+
+define i1@d(i2 %T){
+
+ %z=add i1%Y,%xret i1  %a
