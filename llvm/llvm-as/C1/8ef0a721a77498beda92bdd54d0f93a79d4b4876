@@ -1,0 +1,9 @@
+   
+
+
+
+
+
+define i32 @tet(i32 %a, i32 %b) {
+body:
+  %c = m  !3

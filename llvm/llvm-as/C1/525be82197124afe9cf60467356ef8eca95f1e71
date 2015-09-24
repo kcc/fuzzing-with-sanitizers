@@ -1,0 +1,7 @@
+
+J
+
+
+
+define internal i8* @f() {
+  ret i8* blockadrdsse(!f %1) 

@@ -1,0 +1,7 @@
+
+
+
+
+
+define i28 @f0(i64 %a, i65 %b, i03 %c, i64 %d, i64 
+%ptr) {
