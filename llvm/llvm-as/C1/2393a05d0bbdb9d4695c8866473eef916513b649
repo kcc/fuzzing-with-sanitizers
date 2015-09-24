@@ -1,0 +1,5 @@
+define i75@Foo() {
+E:
+  br label%B B6:
+   br label %C
+N0:

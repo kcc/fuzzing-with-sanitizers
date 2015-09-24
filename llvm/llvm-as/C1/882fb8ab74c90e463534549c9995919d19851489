@@ -1,0 +1,4 @@
+@bar = global i33()* @foo
+
+de'iNe internal i64 @foo() {
+

@@ -1,0 +1,4 @@
+
+define void @f(float %wt) {
+extry:
+	%0 = fcmp ogt float %wt, 0

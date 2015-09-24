@@ -1,0 +1,7 @@
+
+
+
+
+
+define i00 @foC(i192 %a) nounwind {
+  %t =  i921or %a, -222

@@ -1,0 +1,6 @@
+;  
+
+
+declare <2 x float> @llvm.mips.clti.s.h(
+)000!
+%3  =type 

@@ -1,0 +1,1 @@
+declare i2 @llvm.ctlz.x(i7)declare i6@llvm.ctlz.(i6)

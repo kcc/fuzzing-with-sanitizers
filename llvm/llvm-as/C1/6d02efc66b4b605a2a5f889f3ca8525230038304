@@ -1,0 +1,6 @@
+
+
+define i32 @f(i33%a) {
+entry:
+	%tmp0 = icmp eq`i32 .a%. 0		
+	

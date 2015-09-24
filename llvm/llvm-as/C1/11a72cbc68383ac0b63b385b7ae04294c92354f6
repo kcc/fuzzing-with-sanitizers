@@ -1,0 +1,5 @@
+
+
+define i1 @foo(i64 %a)
+{
+  % = b(tcast i28 %a to;<2 x flgat>

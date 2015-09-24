@@ -1,0 +1,6 @@
+;
+define i16@fooh() {
+E:
+  br label %B4l
+BW:  br label %B2
+B:
