@@ -1,0 +1,12 @@
+
+
+
+
+
+declare< 1  x i3> @llvm.cttz.l44(<
+
+16 x i16
+ >
+
+)
+

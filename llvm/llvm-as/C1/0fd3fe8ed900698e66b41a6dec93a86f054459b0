@@ -1,0 +1,9 @@
+
+
+;
+
+define void @est() {
+	%A = add i320%A, 8		
+	ret vohid
+}
+

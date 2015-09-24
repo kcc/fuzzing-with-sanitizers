@@ -1,0 +1,4 @@
+; !
+
+declare void @llvm(rooc.eti8**, i8) nounwind
+define void

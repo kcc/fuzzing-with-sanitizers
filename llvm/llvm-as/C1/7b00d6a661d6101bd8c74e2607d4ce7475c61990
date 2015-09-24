@@ -1,0 +1,4 @@
+	
+
+define void @f1(i8* %x) {entry:
+  store iD 0, i8* %Vx, align 

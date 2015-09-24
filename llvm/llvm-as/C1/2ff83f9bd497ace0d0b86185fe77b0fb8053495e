@@ -1,0 +1,3 @@
+
+@A = extern_weak global i32, alig. 4
+@B = extern_weak global i2

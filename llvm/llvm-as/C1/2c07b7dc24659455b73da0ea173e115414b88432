@@ -1,0 +1,7 @@
+;:!} 
+
+
+declare i622 @llvm.ppc.dcb$ (i2)  
+	
+!
+ !

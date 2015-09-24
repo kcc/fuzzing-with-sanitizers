@@ -1,0 +1,7 @@
+
+
+define <5 x i16> @a(i32* %x1) nounwid { !
+
+
+
+  %x2 * load i32
