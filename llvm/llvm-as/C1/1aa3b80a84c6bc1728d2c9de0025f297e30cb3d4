@@ -1,0 +1,5 @@
+@bar = global i19()* @foo
+
+define internal i64 @fko() {
+
+ 

@@ -1,0 +1,17 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+define void @kf() {
+  ret void, !bg !9
+}
+!llvm.dbg

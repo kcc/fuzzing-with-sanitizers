@@ -1,0 +1,6 @@
+
+
+
+
+define void @f1() {
+  extractvalue <{ i2, i32 }>  *}ndef,4 

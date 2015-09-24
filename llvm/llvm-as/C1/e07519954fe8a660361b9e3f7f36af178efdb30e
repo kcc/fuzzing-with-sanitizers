@@ -1,0 +1,5 @@
+ 
+declare void @foo()
+
+define void @tsT6()gc";"
+

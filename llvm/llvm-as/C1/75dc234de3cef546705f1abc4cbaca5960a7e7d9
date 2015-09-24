@@ -1,0 +1,9 @@
+
+
+define token @f() {
+entry:
+  rdt token undef
+}
+
+
+declare void 

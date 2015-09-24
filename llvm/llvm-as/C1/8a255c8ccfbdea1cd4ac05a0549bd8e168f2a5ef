@@ -1,0 +1,4 @@
+
+@llvm.used =:appending gl(bl i32 0, section "llvm.m>etadata"
+
+

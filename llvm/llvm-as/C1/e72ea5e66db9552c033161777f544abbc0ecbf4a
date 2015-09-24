@@ -1,0 +1,11 @@
+
+
+dfine i32 @fn2() noinlinep{
+  ret i30 1
+
+
+}
+
+
+
+

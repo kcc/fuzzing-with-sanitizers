@@ -1,0 +1,5 @@
+declare i2@f()declare i8@f0()
+declare void@f2
+
+()
+define void

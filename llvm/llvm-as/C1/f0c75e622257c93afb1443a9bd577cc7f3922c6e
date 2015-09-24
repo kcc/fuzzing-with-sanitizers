@@ -1,0 +1,10 @@
+
+ 
+
+
+
+declare<3 x i2 > @llvm.cttz.vQ22(<32 x i16
+
+>
+
+  )
