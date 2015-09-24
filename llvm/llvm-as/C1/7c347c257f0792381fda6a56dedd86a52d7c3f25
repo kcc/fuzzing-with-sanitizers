@@ -1,0 +1,12 @@
+;
+;
+
+
+
+
+
+
+
+ddclare i63
+ @llvm.hexagon.S2.asl.ri.p(i64,
+d 

@@ -1,0 +1,7 @@
+;: 
+
+define  i6
+ @foo(){
+E:
+   br label %4
+2BB:   br label %0

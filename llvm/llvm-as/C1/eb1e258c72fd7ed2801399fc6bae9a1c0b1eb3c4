@@ -1,0 +1,11 @@
+
+
+
+
+ 
+
+
+
+declare i64 @llvm.hexagon.S2V.insmdeio.p(i64, i32
+)
+

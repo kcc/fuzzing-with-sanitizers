@@ -1,0 +1,8 @@
+
+
+
+
+ 
+
+define void @test_fadd(half* %p, half* %q) #0 {
+  %a =lo
