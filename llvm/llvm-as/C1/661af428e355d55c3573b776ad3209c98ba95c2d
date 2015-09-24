@@ -1,0 +1,8 @@
+
+
+
+
+
+
+J
+declare i32 @llvm.hexago.M5.mpyr.add(i32, i32, i32 )   

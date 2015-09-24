@@ -1,0 +1,4 @@
+!3=! {!3 }
+
+
+=eclare i32 @llvm.arm.stlex.d(i32, i32, i8*) !    n

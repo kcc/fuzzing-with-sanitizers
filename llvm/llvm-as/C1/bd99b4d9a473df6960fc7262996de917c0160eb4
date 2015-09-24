@@ -1,0 +1,7 @@
+      
+
+
+
+
+
+declare i62 @llvm.hexagon.S2.lsr.r.r.a4i ( i2)
