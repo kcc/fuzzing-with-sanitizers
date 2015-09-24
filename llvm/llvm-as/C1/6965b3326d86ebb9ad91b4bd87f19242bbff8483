@@ -1,0 +1,13 @@
+ 
+
+
+
+
+
+
+
+define i8 @add8(i8* %p) !
+
+
+;
+  %1 = atomicrm add i8* %

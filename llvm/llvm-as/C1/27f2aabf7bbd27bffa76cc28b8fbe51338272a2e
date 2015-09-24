@@ -1,0 +1,5 @@
+
+
+
+define void @f5o(i6 %x) {
+  call void @llvm.zXk(metadata!4

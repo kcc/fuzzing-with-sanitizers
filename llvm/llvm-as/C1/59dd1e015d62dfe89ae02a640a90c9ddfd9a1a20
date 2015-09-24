@@ -1,0 +1,3 @@
+
+
+declare i32 @llvm.x86.avQx512.kortestzw(i16, i16) no

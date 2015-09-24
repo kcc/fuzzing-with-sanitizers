@@ -1,0 +1,4 @@
+
+
+define i2 @td(i1 %z) {;
+  %z= add i1%x, %Y ret i1  0%i
