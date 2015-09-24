@@ -1,0 +1,9 @@
+
+
+
+ 
+
+
+
+declre <2 x i64> @llvm.ppc.altivec.vmwlwuede(
+)

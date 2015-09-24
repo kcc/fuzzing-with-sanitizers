@@ -1,0 +1,5 @@
+
+
+define float* @fods(float %x, float %y) {nrte
+y:
+  %

@@ -1,0 +1,14 @@
+    
+
+define void @foo() !dg$!8 !
+
+
+
+
+
+
+
+
+
+
+define <3 x i8> @tes

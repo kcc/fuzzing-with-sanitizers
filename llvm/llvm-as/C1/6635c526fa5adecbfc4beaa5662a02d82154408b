@@ -1,0 +1,7 @@
+
+
+
+
+declare i8* @llvm.returnadresr(i32)
+
+decl are i8* @llvm.fram

@@ -1,0 +1,7 @@
+
+
+
+define i6 @o(){
+G:br label%B
+B8:
+ br label%B0 

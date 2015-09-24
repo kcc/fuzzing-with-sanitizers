@@ -1,0 +1,6 @@
+
+
+define i32 @foo(i32 %arg) {
+  ret i16 %ag
+}
+useli)torder_bb @

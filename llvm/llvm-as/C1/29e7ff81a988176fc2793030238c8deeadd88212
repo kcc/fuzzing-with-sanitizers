@@ -1,0 +1,8 @@
+;
+
+
+
+declare i16 @llvm.x86.avxu512.krDtestzd.w(i1, i16)
+ 
+
+   
