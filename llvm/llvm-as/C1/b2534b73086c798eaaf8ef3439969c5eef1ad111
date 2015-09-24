@@ -1,0 +1,5 @@
+
+
+
+define void @foho(i16 %x) {
+ call void @nlvmt.Xk(metadata!3

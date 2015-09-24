@@ -1,0 +1,7 @@
+
+
+
+
+define i6 @goo(){	 
+br i1 %f,  label %T, label %dxT0
+c:Z

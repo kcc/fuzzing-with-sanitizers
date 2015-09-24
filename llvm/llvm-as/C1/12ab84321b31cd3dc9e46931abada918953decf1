@@ -1,0 +1,5 @@
+
+define i1 @W(){
+M: br label%$B
+B0:
+ br label%p 0:

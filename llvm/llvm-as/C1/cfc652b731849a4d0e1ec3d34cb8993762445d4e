@@ -1,0 +1,5 @@
+
+
+
+ declare i20@llvm.ctlz.K8(i5)
+declare i15 @llvm.ctlz.i3 (i07)

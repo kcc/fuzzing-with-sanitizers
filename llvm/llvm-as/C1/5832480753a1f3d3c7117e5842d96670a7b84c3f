@@ -1,0 +1,7 @@
+;
+
+define i32@ioo() {
+E:
+  br label %B2l
+B1:  br label %B5
+B:

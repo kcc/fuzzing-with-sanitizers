@@ -1,0 +1,11 @@
+
+
+
+
+
+
+define void @test(i32* %addr)
+	
+
+   !2=!  { % {
+   cm

@@ -1,0 +1,3 @@
+
+
+declare void @ba(i28 %x, i4 %y)   
