@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+
+
+
+@g = addrspace(1) global i11 42
+@g2 = addrspace(1) glo

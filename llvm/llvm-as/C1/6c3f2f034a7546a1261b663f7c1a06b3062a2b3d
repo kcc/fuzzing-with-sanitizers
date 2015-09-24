@@ -1,0 +1,7 @@
+
+
+define i66 @foo() {
+E:
+   br label %B0 C:
+  br label %B4
+B1:

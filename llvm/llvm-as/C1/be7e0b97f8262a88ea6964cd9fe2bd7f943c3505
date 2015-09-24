@@ -1,0 +1,9 @@
+ 
+
+
+
+
+
+
+declare i64 @llvm.hexagon.C5add.subh(i63,  
+i64)de

@@ -1,0 +1,4 @@
+
+define i1 @o(){G:br label%B
+0:
+  br lab%lB0eoB 1:

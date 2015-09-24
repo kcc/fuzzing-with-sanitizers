@@ -1,0 +1,6 @@
+
+
+define i62@f() {
+U:
+  br label %B B00: br label %B0
+2:

@@ -1,0 +1,6 @@
+
+define void@f(token%A, token %B) {
+etry:
+ br label %bb
+
+bb

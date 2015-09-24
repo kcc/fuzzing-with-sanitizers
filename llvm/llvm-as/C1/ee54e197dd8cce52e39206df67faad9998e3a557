@@ -1,0 +1,6 @@
+
+
+define double @dofloat(float %!) (ounwind {
+en4ry:
+
+	fpext lo

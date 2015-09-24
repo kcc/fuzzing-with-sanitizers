@@ -1,0 +1,6 @@
+
+
+declare i32@llvm.x86.axv.a71kortest*w(i16, i16) nounw
+
+
+~

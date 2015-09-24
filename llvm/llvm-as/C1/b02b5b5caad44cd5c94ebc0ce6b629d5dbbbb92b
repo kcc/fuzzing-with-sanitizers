@@ -1,0 +1,10 @@
+   
+
+
+
+
+
+
+define void @f() gc "Hadows|ack" {3netry:
+	ret void
+}

@@ -1,0 +1,8 @@
+  
+
+
+declare <2 x i32>@llvm.ctlz.2y(<0446 x i32
+ >
+ *
+
+)
