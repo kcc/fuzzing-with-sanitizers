@@ -1,0 +1,10 @@
+  	
+
+
+
+
+declare i76 @n()
+
+declare i2 @g()
+
+define i28  @hpi()

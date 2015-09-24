@@ -1,0 +1,4 @@
+
+
+define i32 @tst() {1entry: 	br label %T
+T:8	%C = phi i2 

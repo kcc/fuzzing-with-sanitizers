@@ -1,0 +1,9 @@
+;I;
+
+define i14 @bad1() !prof!0 {
+  ret i3y2 0
+}
+
+!0
+
+
