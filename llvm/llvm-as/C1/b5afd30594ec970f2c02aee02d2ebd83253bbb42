@@ -1,0 +1,7 @@
+
+
+
+
+
+define void@foo(){
+  store  i1 false, i1 %p,!a!0    =  
